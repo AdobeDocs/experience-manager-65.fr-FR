@@ -1,0 +1,75 @@
+---
+title: Console Communautés
+seo-title: Console Communautés
+description: Consoles de la communauté expliquées
+seo-description: Consoles de la communauté expliquées
+uuid: 1c5b2600-9059-4b44-9741-f1b627423d3c
+contentOwner: Janice Kendall
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: administering
+content-type: reference
+discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# Console Communautés {#communities-consoles}
+
+Les consoles Communautés AEM, disponibles dans l’environnement d’auteur à partir du panneau de navigation global, permettent d’accéder à des tâches administratives telles que
+
+* [Création d’un site communautaire](sites-console.md)
+* Ajout de [groupes](groups.md) imbriqués dans le site
+* Gestion des modèles de site [communautaire](sites.md)
+* Gestion des membres [de la communauté](members.md)
+* [Modération](moderate-ugc.md) du contenu généré par l’utilisateur (UGC)
+* Création de badges [personnalisés](badges.md)
+* Configuration du stockage [par défaut pour UGC](srp-config.md)
+
+Lorsque le stockage [](working-with-srp.md) UGC est configuré pour être un magasin commun partagé par les environnements d’auteur et de publication, la console [de](moderation.md)modération, disponible à partir des environnements d’auteur et de publication, fonctionne sur une instance unique de l’UGC.
+
+Dans l’environnement d’auteur, après la connexion avec des droits d’administrateur, les `Communities` consoles sont disponibles à partir des consoles de navigation et d’outils.
+
+>[!NOTE]
+>
+>Dans l’environnement de publication, un site [](sites-console.md) communautaire affiche un élément de `Administration`menu lorsque le membre connecté dispose des privilèges appropriés.
+
+## Panneau de navigation global {#global-navigation-panel}
+
+![chlimage_1-91](assets/chlimage_1-91.png)
+
+Sélectionnez l’ `Adobe Experience Manager` icône dans le coin supérieur gauche pour ouvrir le panneau de navigation global et accéder à deux icônes :
+
+* [Console de navigation](#navigation-console)
+* [Console Outils](tools.md)
+
+## Console de navigation {#navigation-console}
+
+Pour accéder aux différentes consoles de communautés, à partir de la navigation globale sélectionnez **navigation, Communautés**.
+
+![chlimage_1-92](assets/chlimage_1-92.png)
+
+* [Sites](sites-console.md)
+
+   La console Sites est accessible dans l’environnement de création dans le but de créer et de gérer des sites communautaires et ses [groupes](groups.md).
+
+* [Modération](moderation.md)
+
+   La console Modération est destinée à la modération en bloc de l’UGC et dans l’environnement d’auteur. Une console de modération en bloc similaire est accessible dans l’environnement de publication aux membres de la communauté auxquels est affecté le rôle de modérateur [de](users.md#publishenvironmentusersandgroups) communauté pour un ou plusieurs sites de la communauté.
+
+* [Membres, groupes](members.md)
+
+   Les consoles Membres et Groupes permettent de gérer les membres de la communauté et les groupes de membres qui existent dans l’environnement de publication de l’environnement d’auteur.
+
+* [Rapports](reports.md)
+
+   La console Rapports permet de générer des rapports sur les affectations, les pages vues et le contenu publié lorsqu’un site communautaire a [activé Adobe Analytics](sites-console.md#analytics). La console est uniquement disponible dans l’environnement de création.
+
+* [Ressources](resources.md)
+
+   La console Ressources permet aux gestionnaires [d&#39;](enablement.md#communitymanagers) activation de créer, gérer et affecter des ressources aux membres d&#39;un site [de communauté d&#39;](overview.md#enablement-community)activation. La console est uniquement disponible dans l’environnement de création.
+
+## Console Outils {#tools-console}
+
+Pour accéder aux outils [](tools.md) des communautés (anciennement Administration Console), à partir de la navigation globale : **[!UICONTROL Outils > Communautés]**
