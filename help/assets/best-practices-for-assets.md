@@ -1,0 +1,25 @@
+---
+title: Meilleures pratiques pour les ressources
+description: Selon votre déploiement AEM Assets et les fonctionnalités que vous utilisez pour l’intégration des ressources, la génération du rendu et l’extraction des métadonnées, l’identification et le respect des meilleures pratiques dans divers domaines renforce considérablement la stabilité et les performances du système en présence d’une charge élevée.
+contentOwner: AG
+translation-type: tm+mt
+source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+
+---
+
+
+# Meilleures pratiques pour les ressources {#best-practices-for-assets}
+
+Adobe Experience Manager (AEM) Assets est essentiel pour fournir des expériences marketing numériques de qualité qui contribuent à la réussite des objectifs commerciaux en augmentant la vélocité du contenu. Si vous travaillez avec un grand nombre de ressources dans AEM Assets ou si vous téléchargez régulièrement/périodiquement de nombreuses ressources, y compris des vidéos et des médias dynamiques, l’optimisation de votre expérience de gestion des actifs numériques est essentielle pour l’efficacité du système.
+
+Selon la place qu’occupe AEM Assets pour votre organisation et les fonctionnalités que vous utilisez pour l’intégration des ressources, la génération du rendu et l’extraction des métadonnées, l’identification et le respect des meilleures pratiques dans divers domaines renforce considérablement la stabilité et les performances du système en présence d’une charge élevée.
+
+Les guides suivants vous permettront d’acquérir les connaissances et de connaître les outils requis pour créer et gérer un système de gestion des actifs qui répond aux besoins de votre organisation :
+
+* The [Assets Performance Tuning guide](/help/assets/performance-tuning-guidelines.md): This guide includes a set of best practices that can be followed at any point in your implementation, even after you go live, to ensure that you get the most out of your system.
+* The [Assets Sizing guide](/help/assets/assets-sizing-guide.md): When drawing up estimates for an Assets implementation, it is important to ensure that there are sufficient resources available in terms of asset storage, CPU, memory, IO and network throughput. Pour dimensionner un grand nombre de ces éléments, il est nécessaire de connaître le nombre de ressources à charger dans le système. Ce guide contient les meilleures pratiques qui aident à déterminer des mesures efficaces pour estimer l’infrastructure et les ressources nécessaires au déploiement des ressources AEM, ainsi qu’un outil de dimensionnement.
+* The [Assets Migration guide](/help/assets/assets-migration-guide.md): If you want to migrate assets from your legacy system to AEM Assets, there are several steps to consider to streamline the migration process. Le guide de migration contient les bonnes pratiques relatives aux tâches que vous effectuez pour importer les ressources dans AEM au niveau de la phase. Cela implique l’application de métadonnées, la génération de rendus et l’activation de ressources pour publier des instances.
+* Le document [Considérations concernant le réseau Assets](/help/assets/assets-network-considerations.md) : lorsque vous manipulez des instances AEM, il est important de connaître la topologie du réseau pour comprendre les performances du réseau, identifier les goulets d’étranglement et décrire l’expérience utilisateur attendue. Le document Considérations concernant le réseau Assets aborde les éléments à considérer vis-à-vis du réseau lors de la conception de votre déploiement AEM Asset.
+* The [Assets Monitoring guide](/help/assets/assets-monitoring-best-practices.md): After your AEM instance is deployed, you should monitor certain tasks and the system in general to ensure system integrity and efficiency of operations. Le Guide de surveillance comprend les meilleures pratiques pour contrôler les différents aspects de votre système.
+* [Bonnes pratiques](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app-best-practices.html)de l&#39;application AEM pour bureau : L’application de bureau AEM associe votre solution de gestion des actifs numériques (DAM) à votre bureau afin que vous puissiez ouvrir les fichiers disponibles dans l’interface utilisateur Web d’AEM directement sur le bureau. Le flux de travail convivial de l’application de bureau est activé à l’aide de la technologie de partage de réseau fournie par les systèmes d’exploitation de bureau. Ce guide décrit les fonctionnalités essentielles et l’utilisation recommandée de l’application de bureau AEM.
+* [Bonnes pratiques](/help/assets/aem-cc-integration-best-practices.md)en matière d’intégration d’AEM et de Creative Cloud : Vous pouvez intégrer votre instance AEM à Creative Cloud de plusieurs manières. En suivant les meilleures pratiques pour simplifier votre intégration et vos workflow de transfert des ressources, vous bénéficiez d’une efficacité maximale. Ce guide inclut les meilleures pratiques concernant l’intégration d’AEM Assets à Adobe Creative Cloud.
