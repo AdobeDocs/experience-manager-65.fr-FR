@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 9532c1fb8af37b29285007bc72e86d42d5eb9c4d
+source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
 
 ---
 
@@ -27,7 +27,7 @@ Un composant tally personnalisé peut être créé en étendant la classe tally 
 
 [La notation](rating-basics.md) est une mise en oeuvre de la mesure qui utilise un système d&#39;étoiles pour exprimer une gamme d&#39;opinions allant du positif au négatif.
 
-Depuis AEM 6.1, le composant [d’interrogation](poll-basics.md) n’est plus disponible.
+Depuis AEM 6.1, le composant d’interrogation n’est plus disponible.
 
 [Reviews](reviews-basics.md) est un composant SCF qui est un hybride de [commentaires](essentials-comments.md) et de [cotation](rating-basics.md).
 
