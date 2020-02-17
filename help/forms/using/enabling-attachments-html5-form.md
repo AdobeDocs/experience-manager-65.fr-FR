@@ -1,0 +1,59 @@
+---
+title: Activation des pièces jointes à un formulaire HTML5
+seo-title: Activation des pièces jointes à un formulaire HTML5
+description: Par défaut, la prise en charge de pièces jointes des formulaires HTML5 est désactivée.
+seo-description: Par défaut, la prise en charge de pièces jointes des formulaires HTML5 est désactivée.
+uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+topic-tags: hTML5_forms
+discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
+translation-type: tm+mt
+source-git-commit: 00e14be8a0775149b3ee7ce8cd781dd7f1e49e4f
+
+---
+
+
+# Activation des pièces jointes à un formulaire HTML5 {#enabling-attachments-for-an-html-form}
+
+Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
+
+1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec la propriété de chaîne à choix multiple `mfAttachmentOptions`.
+1. In the custom profile, specify properties `fileSizeLimit`, `multiSelect`, and `buttonTex`t to configure options of the file attachment widget. Si nécessaire, vous pouvez également spécifier d’autres propriétés personnalisées.
+
+1. Dans le profil personnalisé, utilisez les configurations suivantes :
+
+   * **multiSelect**-> vrai ou faux (vrai par défaut)
+   * **fileSizeLimit** -> value_in_mb (par exemple 5) (2 Mo par défaut)
+   * **buttonText** -> Texte du bouton pour la fenêtre contextuelle (&quot;Joindre&quot; par défaut)
+   * **accept** -> types de fichiers à accepter (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; par défaut)
+   >[!NOTE]
+   >
+   >Microsoft Internet Explorer 9 permet aux utilisateurs de joindre un fichier plus volumineux que la limite spécifiée. Il s’agit d’un problème connu.
+
+1. Utilisez [l’éditeur de métadonnées](/help/forms/using/manage-form-metadata.md) pour sélectionner le profil personnalisé que vous avez créé ci-dessus pour les formulaires HTML5.
+1. Générez votre modèle de formulaire avec un profil personnalisé et l’icône de pièces jointes apparaît sur la barre d’outils Formulaires.
+
+   >[!NOTE]
+   >
+   >Hors zone, le portail de formulaires fournit un profil personnalisé avec la fonctionnalité de pièces jointes et de brouillons activée. Pour obtenir plus d’information sur le profil **Save as Draft**, consultez [Enregistrement des formulaires HTML5 en tant que brouillon](/help/forms/using/saving-html5-form-draft.md).
+
+1. Cliquez sur l’icône de pièce jointe, une boîte de dialogue de sélection de pièce jointe apparaît. Recherchez et sélectionnez la pièce jointe et cliquez sur **Joindre**.
+
+   >[!NOTE]
+   >
+   >Pour afficher l’aperçu d’une pièce jointe, cliquez sur le nom de la pièce jointe. 
+
+   >[!NOTE]
+   >
+   >L’option Aperçu du fichier n’est pas disponible pour les utilisateurs anonymes.
+
+## Format d’envoi de pièce jointe {#attachment-submission-format}
+
+Lorsque les pièces jointes sont activées, le formulaire HTML5 envoie des données multipartie. The multi-part submission data has two parts **dataXml** and **attachments**.
+
+>[!NOTE]
+>
+>For backward compatibility, if `mfAllowAttachments` option is turned off, then the HTML5 forms does not send the multi-part data. It sends simple data xml in **application/xml** format.
+
+Si l’indicateur mfAllowAttachments est activé, le [service proxy du service d’envoi](/help/forms/using/service-proxy.md) traite également les données multipartie avec les données Xml et les pièces jointes.
