@@ -7,7 +7,7 @@ discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
 
 ---
 
@@ -459,7 +459,7 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 | Lors de la recherche d’images visuellement similaires, une image non pertinente s’affiche. | Comportement de recherche visuelle. | AEM affiche autant de ressources potentiellement pertinentes que possible. Les images moins pertinentes, le cas échéant, sont ajoutées aux résultats, mais avec un classement de recherche inférieur. La qualité des correspondances et la pertinence des ressources recherchées diminuent lorsque vous faites défiler les résultats de la recherche. |
 | Lors de la sélection et du fonctionnement des fichiers recherchés, tous les fichiers recherchés ne sont pas exploités | L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les 100 premiers résultats de recherche en mode Carte et les 200 premiers résultats de recherche en mode Liste. |  |
 
->[!MORE COMME ÇA]
+>[!MORELIKETHIS]
 >
 >* [Guide de mise en oeuvre des recherches AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuration avancée des prédicats de recherche de plusieurs valeurs et de balises](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
