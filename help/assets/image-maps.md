@@ -3,7 +3,7 @@ title: Ajout de zones cliquables avec des hyperliens vers des images numériques
 description: Découvrez comment ajouter une zone cliquable à une image à l’aide d’hyperliens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: e547dde53011003a2db4814916c3e923da947cce
 
 ---
 
