@@ -2,12 +2,9 @@
 title: Recherche de ressources et d’images numériques dans AEM
 description: Découvrez comment rechercher les ressources souhaitées dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
-docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
+source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
 
 ---
 
@@ -62,11 +59,15 @@ Vous pouvez découvrir plus rapidement les ressources de votre choix à partir d
 
 Vous pouvez exécuter des recherches de mots-clés à partir du champ OmniSearch. La recherche de mots-clés n’est pas sensible à la casse et est une recherche en texte intégral (dans les champs de métadonnées les plus utilisés). Si plusieurs mots-clés sont recherchés, l’opérateur par défaut entre les mots-clés correspond `AND` à la recherche par défaut et `OR` lorsque les ressources sont balisées intelligemment.
 
-Les résultats sont triés par pertinence, en commençant par les correspondances les plus proches. Pour plusieurs mots-clés, les ressources qui contiennent les deux termes dans leurs métadonnées génèrent des résultats plus pertinents. Dans les métadonnées, les mots-clés qui apparaissent sous forme de balises actives sont classés plus haut que les mots-clés qui apparaissent dans d’autres champs de métadonnées. AEM permet de donner un terme de recherche particulier un poids plus élevé. Il est également possible de [renforcer le classement](#searchrank) de quelques ressources ciblées pour des termes de recherche spécifiques.
+Les résultats sont triés par pertinence, en commençant par les correspondances les plus proches. Pour plusieurs mots-clés, les ressources qui contiennent les deux termes dans leurs métadonnées génèrent des résultats plus pertinents. Dans les métadonnées, les mots-clés qui apparaissent sous forme de balises actives sont classés plus haut que les mots-clés qui apparaissent dans d’autres champs de métadonnées. AEM permet de donner plus de poids à un terme de recherche particulier. Il est également possible de [renforcer le classement](#searchrank) de quelques ressources ciblées pour des termes de recherche spécifiques.
 
-Pour rechercher rapidement les ressources appropriées, l’interface riche fournit des mécanismes de filtrage, de tri et de sélection. Vous pouvez filtrer les résultats selon plusieurs critères et afficher le nombre de fichiers recherchés pour différents filtres. Vous pouvez également réexécuter la recherche en modifiant la requête dans le champ Omnisearch. Lorsque vous modifiez les termes ou filtres de recherche, les autres filtres restent appliqués pour préserver le contexte de la recherche. Lorsque les résultats sont supérieurs à 1 000, AEM n’affiche pas tous les fichiers recherchés et affiche plus de 1 000 comme nombre de fichiers recherchés. Cela permet d&#39;améliorer les performances de la recherche. Lorsque vous faites défiler l’écran pour afficher d’autres fichiers, au-delà de 1 000, le nombre augmente progressivement en quelques étapes de 200.
+Pour rechercher rapidement les ressources appropriées, l’interface riche fournit des mécanismes de filtrage, de tri et de sélection. Vous pouvez filtrer les résultats selon plusieurs critères et afficher le nombre de fichiers recherchés pour différents filtres. Vous pouvez également réexécuter la recherche en modifiant la requête dans le champ Omnisearch. Lorsque vous modifiez les termes ou filtres de recherche, les autres filtres restent appliqués pour préserver le contexte de la recherche.
 
-Il arrive que des ressources inattendues apparaissent dans les résultats de la recherche. Pour plus d’informations, voir Résultats [](#unexpectedresults)inattendus.
+Lorsque les résultats sont de nombreux actifs, AEM affiche les 100 premiers dans la vue Carte et 200 premiers dans la vue Liste. Lorsque les utilisateurs font défiler le contenu, d’autres fichiers sont chargés. Ceci est pour améliorer les performances.
+
+>[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+
+Il arrive que des ressources inattendues apparaissent dans les résultats de la recherche. Pour plus d’informations, voir Résultats [](#troubleshoot-unexpected-search-results-and-issues)inattendus.
 
 AEM peut effectuer des recherches dans de nombreux formats de fichier et les filtres de recherche peuvent être personnalisés en fonction des besoins de votre entreprise. Contactez votre administrateur pour connaître les options de recherche disponibles pour votre référentiel DAM et les restrictions de votre compte.
 
@@ -243,7 +244,7 @@ Vous pouvez transmettre les paramètres de requête suivants dans une URL pour d
 | assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Utilisez cette option pour filtrer les types de ressources en fonction de la valeur indiquée. |
 | root | &lt;chemin_dossier> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Ici, le sélecteur de ressources ne vous permet de sélectionner qu’une seule ressource enfant (directe/indirecte) sous le dossier racine. |
 
-Pour accéder à l’interface du sélecteur de ressources, accédez à `https://[AEM server]:[port]/aem/assetpicker`. Recherchez le dossier souhaité, puis sélectionnez une ou plusieurs ressources. Vous pouvez également rechercher le fichier souhaité dans la zone Omnisearch, appliquer le filtre suivant vos besoins, puis le sélectionner.
+Pour accéder à l’interface du sélecteur de ressources, accédez à `https://[aem_server]:[port]/aem/assetpicker`. Recherchez le dossier souhaité, puis sélectionnez une ou plusieurs ressources. Vous pouvez également rechercher le fichier souhaité dans la zone Omnisearch, appliquer le filtre suivant vos besoins, puis le sélectionner.
 
 ![Parcourir et sélectionner un fichier dans le sélecteur de ressources](assets/assetpicker.png)
 
@@ -258,7 +259,7 @@ La fonctionnalité de recherche dans AEM Assets présente les limites suivantes 
 * AEM peut continuer à afficher le terme de recherche après avoir sélectionné les propriétés d’un fichier à partir des résultats recherchés, puis annuler la recherche. <!-- (CQ-4273540) -->
 * Lors de la recherche de dossiers ou de fichiers et de dossiers, les résultats de la recherche ne peuvent être triés sur aucun paramètre.
 * Si vous appuyez sur Entrée sans taper quoi que ce soit dans la barre Omnisearch, AEM renvoie une liste de fichiers uniquement et non de dossiers. Si vous recherchez spécifiquement des dossiers sans utiliser de mot-clé, AEM ne renvoie aucun résultat.
-* A l’aide de la case [!UICONTROL Sélectionner tout] , vous pouvez uniquement sélectionner les 100 premiers fichiers recherchés en mode Carte et les 200 premiers fichiers recherchés en mode Liste.
+* A l’aide de la case [!UICONTROL Sélectionner tout] , vous pouvez uniquement sélectionner les 100 premiers fichiers recherchés en mode Carte et les 200 premiers fichiers recherchés en mode Liste. Si vous faites défiler et chargez plus de fichiers dans l’interface utilisateur, vous pouvez en sélectionner plus à l’aide de l’option [!UICONTROL Sélectionner tout] .
 
 La recherche visuelle ou par analogie présente les limites suivantes :
 
@@ -457,7 +458,7 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 | Le filtre/prédicat de recherche n&#39;est pas disponible | <ul><li>Le filtre de recherche n&#39;est pas configuré.</li><li>Il n’est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contactez l’administrateur pour vérifier si les personnalisations de recherche sont disponibles ou non.</li><li>Contactez l’administrateur pour vérifier si votre compte dispose des droits/autorisations nécessaires pour utiliser la personnalisation.</li><li>Contactez l’administrateur et vérifiez les personnalisations disponibles pour le déploiement d’AEM Assets que vous utilisez.</li></ul> |
 | Lors de la recherche d’images visuellement similaires, il manque une image attendue. | <ul><li>Image non disponible dans AEM.</li><li>L’image n’est pas indexée. Généralement, lorsqu’il est récemment téléchargé.</li><li>L’image n’est pas balisée de manière intelligente.</li></ul> | <ul><li>Ajoutez l’image aux ressources AEM.</li><li>Contactez votre administrateur pour réindexer le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur pour baliser intelligemment les ressources appropriées.</li></ul> |
 | Lors de la recherche d’images visuellement similaires, une image non pertinente s’affiche. | Comportement de recherche visuelle. | AEM affiche autant de ressources potentiellement pertinentes que possible. Les images moins pertinentes, le cas échéant, sont ajoutées aux résultats, mais avec un classement de recherche inférieur. La qualité des correspondances et la pertinence des ressources recherchées diminuent lorsque vous faites défiler les résultats de la recherche. |
-| Lors de la sélection et du fonctionnement des fichiers recherchés, tous les fichiers recherchés ne sont pas exploités | L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les 100 premiers résultats de recherche en mode Carte et les 200 premiers résultats de recherche en mode Liste. |  |
+| Lors de la sélection et du fonctionnement des résultats de recherche, toutes les ressources recherchées ne sont pas exploitées | L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les 100 premiers résultats de recherche en mode Carte et les 200 premiers résultats de recherche en mode Liste. |  |
 
 >[!MORELIKETHIS]
 >
