@@ -185,7 +185,7 @@ If a workflow model is present in Classic UI, but missing in the selection popup
 
 1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Sélectionnez **[!UICONTROL Demande d’activation]**, puis **[!UICONTROL Modifier]**.
 
-1. Sélectionnez **[!UICONTROL Modifier]**, ouvrez le menu Informations **[!UICONTROL sur la]** page, puis sélectionnez **[UICONTROL Open Properties]** et accédez à l’onglet **[!UICONTROL Basic (s’il n’est pas déjà ouvert).]**
+1. Sélectionnez **[!UICONTROL Modifier]**, ouvrez le menu Informations **[!UICONTROL sur la]** page, puis sélectionnez **[!UICONTROL Ouvrir les propriétés]** et accédez à l’onglet **[!UICONTROL Basique (s’il n’est pas déjà ouvert).]**
 
 1. Ajouter `Workflow : DAM` au champ **[!UICONTROL Balises]** . Confirmez la sélection à l’aide de la case à cocher (cochez).
 
