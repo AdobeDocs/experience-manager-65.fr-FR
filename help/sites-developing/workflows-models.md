@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
 
 ---
 
@@ -174,19 +174,25 @@ Lorsque vous exécutez un workflow en mode [transitoire](/help/sites-developing/
 
 ## Mise à disposition des modèles de workflow dans l’interface utilisateur tactile {#classic2touchui}
 
-Si un modèle de workflow présent dans l’interface utilisateur classique est absent du menu contextuel de sélection dans le rail Chronologie de l’interface utilisateur tactile, effectuez la configuration pour la rendre disponible. La procédure suivante illustre l’utilisation des modèles de workflow AEM Assets appelés **[!UICONTROL Demander l’activation]** et **[!UICONTROL Demander la désactivation]**.
+If a workflow model is present in Classic UI, but missing in the selection popup menu in the **[!UICONTROL Timeline]** rail of Touch UI, then follow the configuration to make it available. Les étapes suivantes illustrent l’utilisation du modèle de processus appelé **[!UICONTROL Demande d’activation]**.
 
-1. Vérifiez que le modèle n’est pas disponible dans l’interface utilisateur tactile. Access an asset using `/assets.html/content/dam` path. Sélectionnez la ressource. Ouvrez **[!UICONTROL Chronologie]** dans le rail gauche. Cliquez sur **[!UICONTROL Démarrer le processus]**. Vous pouvez constater que les modèles **[!UICONTROL Demander l’activation]** et **[!UICONTROL Demander la désactivation]** ne figurent pas dans la liste contextuelle.
-1. Cliquez sur **[!UICONTROL Outils > Général > Balisage]**. Sélectionnez **[!UICONTROL Workflow]**.
-1. Cliquez sur **[!UICONTROL Créer > Créer une balise]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Cliquez sur **[!UICONTROL Envoyer]**.
+1. Vérifiez que le modèle n’est pas disponible dans l’interface utilisateur tactile. Access an asset using `/assets.html/content/dam` path. Sélectionnez un fichier. Ouvrez **[!UICONTROL Chronologie]** dans le rail gauche. Cliquez sur **[!UICONTROL Démarrer le processus]** et vérifiez que le modèle **[!UICONTROL Request for Activation]** n’est pas présent dans la liste contextuelle.
 
+1. Accédez à **[!UICONTROL Outils > Général > Balisage]**. Sélectionnez **[!UICONTROL Workflow]**.
+
+1. Select **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** as `DAM` and **[!UICONTROL Name]** as `dam`. Sélectionnez **[!UICONTROL Envoyer]**.
    ![Créer une balise dans le modèle de workflow](assets/workflow_create_tag.png)
 
-1. Cliquez sur **[!UICONTROL Outils > Workflow > Modèles]**. Sélectionnez **[!UICONTROL Demander l’activation]** (ou **[!UICONTROL Demander la désactivation]**). Cliquez sur **[!UICONTROL Modifier]**.
-1. Dans le sidekick, accédez à l’onglet **[!UICONTROL Page]**. Ouvrez **[!UICONTROL Propriétés de la page]**.
-1. Add `Workflow : DAM` to **[!UICONTROL Tags/Keywords]** field. Cliquez sur **[!UICONTROL OK]**. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Navigate to **[!UICONTROL Tools > Workflow > Models]**. Sélectionnez **[!UICONTROL Demande d’activation]**, puis **[!UICONTROL Modifier]**.
 
+1. Sélectionnez **[!UICONTROL Modifier]**, ouvrez le menu Informations **[!UICONTROL sur la]** page, puis sélectionnez **[UICONTROL Open Properties]** et accédez à l’onglet **[!UICONTROL Basic (s’il n’est pas déjà ouvert).]**
+
+1. Ajouter `Workflow : DAM` au champ **[!UICONTROL Balises]** . Confirmez la sélection à l’aide de la case à cocher (cochez).
+
+1. Confirmez l’ajout de la balise avec **[!UICONTROL Enregistrer et fermer]**.
    ![Modifier les propriétés de page du modèle](assets/workflow_model_edit_activation1.png)
+
+1. Terminez le processus par **[!UICONTROL synchronisation]**. Le processus est désormais disponible dans l’interface utilisateur tactile.
 
 ### Configuration d’un workflow pour la prise en charge multi-ressource {#configuring-a-workflow-for-multi-resource-support}
 
