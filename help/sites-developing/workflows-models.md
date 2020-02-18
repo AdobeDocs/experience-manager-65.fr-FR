@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
+source-git-commit: 9f260d3ccb98409790cd18b2540329fc36a07c05
 
 ---
 
@@ -48,8 +48,9 @@ Pour créer un workflow avec l’éditeur, procédez comme suit :
 >Si vous créez des modèles par programmation (à l’aide d’un module crx), vous pouvez également créer un sous-dossier à l’intérieur de ceux-ci :
 >
 >`/var/workflow/models`
-
+>
 >Par exemple, `/var/workflow/models/prototypes`
+>
 >Ce dossier peut ensuite être utilisé pour [gérer l’accès aux modèles qu’il contient](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
 ## Modification d’un workflow {#editing-a-workflow}
@@ -89,7 +90,8 @@ Lorsque vous ouvrez un [modèle par défaut et/ou hérité](/help/sites-developi
 * Il est possible d’effectuer des modifications.
 
 >[!NOTE]
-Pour plus d’informations, voir [Emplacements des modèles de workflow](/help/sites-developing/workflows-best-practices.md#locations-workflow-models).
+>
+>Pour plus d’informations, voir [Emplacements des modèles de workflow](/help/sites-developing/workflows-best-practices.md#locations-workflow-models).
 
 ![wf-22](assets/wf-22.png)
 
@@ -102,7 +104,8 @@ Lorsque vous modifiez un modèle, les étapes disponibles sont affichées dans l
 ![wf-10](assets/wf-10.png)
 
 >[!NOTE]
-Pour plus d’informations sur les principaux composants d’étape qui sont installés avec AEM, voir [Référence des étapes du workflow](/help/sites-developing/workflows-step-ref.md).
+>
+>Pour plus d’informations sur les principaux composants d’étape qui sont installés avec AEM, voir [Référence des étapes du workflow](/help/sites-developing/workflows-step-ref.md).
 
 Pour ajouter des étapes à votre modèle de workflow, procédez comme suit :
 
@@ -144,7 +147,8 @@ Vous pouvez **configurer** et personnaliser le comportement d’une étape de wo
 
    * Double-cliquez sur l’étape.
    >[!NOTE]
-   Pour plus d’informations sur les principaux composants d’étape qui sont installés avec AEM, voir [Référence des étapes du workflow](/help/sites-developing/workflows-step-ref.md).
+   >
+   >Pour plus d’informations sur les principaux composants d’étape qui sont installés avec AEM, voir [Référence des étapes du workflow](/help/sites-developing/workflows-step-ref.md).
 
 1. Configurez les **propriétés des étapes** suivant vos besoins ; les propriétés disponibles dépendent du type d’étape. Plusieurs onglets peuvent également être disponibles. For example, the default **Participant Step**, present in a new workflow as `Step 1`:
 
@@ -170,7 +174,8 @@ Vous pouvez créer un modèle de workflow [Transitoire](/help/sites-developing/w
    Pour plus d’informations, voir [Synchronisation de votre workflow](#sync-your-workflow-generate-a-runtime-model).
 
 >[!NOTE]
-Lorsque vous exécutez un workflow en mode [transitoire](/help/sites-developing/workflows.md#transient-workflows), AEM ne stocke aucun historique de workflow. Par conséquent, [Chronologie](/help/sites-authoring/basic-handling.md#timeline) n’affiche aucune information relative au workflow. [](/help/sites-authoring/basic-handling.md#timeline)
+>
+>Lorsque vous exécutez un workflow en mode [transitoire](/help/sites-developing/workflows.md#transient-workflows), AEM ne stocke aucun historique de workflow. Par conséquent, [Chronologie](/help/sites-authoring/basic-handling.md#timeline) n’affiche aucune information relative au workflow. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Mise à disposition des modèles de workflow dans l’interface utilisateur tactile {#classic2touchui}
 
@@ -214,7 +219,8 @@ Vous pouvez configurer un modèle de workflow pour la [Prise en charge multi-res
 Les [phases de workflow](/help/sites-developing/workflows.md#workflow-stages) vous aident à visualiser la progression d’un workflow lors de la gestion de tâches.
 
 >[!CAUTION]
-Si les phases de workflow sont définies dans **Propriétés de la page**, mais qu’elles ne sont utilisées pour aucune étape du workflow, aucune progression ne sera affichée dans la barre (quelle que soit l’étape actuelle du workflow).
+>
+>Si les phases de workflow sont définies dans **Propriétés de la page**, mais qu’elles ne sont utilisées pour aucune étape du workflow, aucune progression ne sera affichée dans la barre (quelle que soit l’étape actuelle du workflow).
 
 Les phases qui doivent être disponibles sont définies dans les modèles de workflow ; les modèles de workflow existants peuvent être mis à jour afin d’inclure des définitions de phase. Vous pouvez définir un nombre illimité de phases pour le modèle de workflow.
 
@@ -340,7 +346,8 @@ To illustrate some of the possibilities for creating a workflow, the following e
    * Activez **Avertir l’utilisateur par courrier électronique**.
    * Select `Administrator` ( `admin`) for the **User/Group** field.
    >[!NOTE]
-   Pour que les courriers électroniques soient envoyés, [les informations relatives au service de messagerie et au compte utilisateur doivent être configurées](/help/sites-administering/notification.md).
+   >
+   >Pour que les courriers électroniques soient envoyés, [les informations relatives au service de messagerie et au compte utilisateur doivent être configurées](/help/sites-administering/notification.md).
 
 1. Appuyez sur la coche pour confirmer les mises à jour.
 
@@ -393,7 +400,8 @@ Pour définir une règle OU, procédez comme suit :
    `/apps/myapp/workflow/scripts`
 
    >[!NOTE]
-   The scripts must have a [function `check()`](#function-check) that returns a boolean.
+   >
+   >The scripts must have a [function `check()`](#function-check) that returns a boolean.
 
 1. Modifiez le workflow et ajoutez la **Division OU** au modèle.
 1. Modifiez les propriétés de la **Branche 1** de la **Division OU** :
@@ -403,7 +411,8 @@ Pour définir une règle OU, procédez comme suit :
    * As **Rule**, set the path to the script. Par exemple :
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
-   Vous pouvez changer l&#39;ordre de la branche si nécessaire.
+   >
+   >Vous pouvez changer l&#39;ordre de la branche si nécessaire.
 
 1. Modifiez les propriétés de la **Branche 2** de la **Division OU**.
 
@@ -418,7 +427,8 @@ Pour définir une règle OU, procédez comme suit :
 #### Fonction Check() {#function-check}
 
 >[!NOTE]
-Voir [Utilisation d’ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+>
+>Voir [Utilisation d’ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
 
 The following sample script returns `true` if the node is a `JCR_PATH` located under `/content/we-retail/us/en`:
 
