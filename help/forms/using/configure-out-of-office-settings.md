@@ -57,8 +57,9 @@ Désormais, les éléments qui vous sont affectés pendant la période d’absen
 ![Absence du bureau](assets/out-of-office.png)
 
 [!NOTE]
->(Pour les éléments de flux de travail centrés sur Forms uniquement) Activez l’option **Autoriser les personnes désignées à déléguer à l’aide des paramètres** &quot;Absence du bureau&quot; de l’étape **Attribuer la tâche** dans le flux de travail. Seuls les éléments pour lesquels l’option susmentionnée est activée sont délégués à d’autres utilisateurs.
-> 
+>
+> (Pour les éléments de flux de travail centrés sur Forms uniquement) Activez l’option **Autoriser les personnes désignées à déléguer à l’aide des paramètres** &quot;Absence du bureau&quot; de l’étape **Attribuer la tâche** dans le flux de travail. Seuls les éléments pour lesquels l’option susmentionnée est activée sont délégués à d’autres utilisateurs.
+
 ## Restrictions {#limitations}
 
 * L’affectation d’éléments à un groupe n’est pas prise en charge.

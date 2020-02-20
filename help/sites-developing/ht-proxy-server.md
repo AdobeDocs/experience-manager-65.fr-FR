@@ -86,7 +86,7 @@ Une demande de page web peut par exemple ressembler à cette entrée :
 
 * C signifie que cette entrée provient du client (il s’agit d’une demande de page web).
 * 0 correspond au nombre de connexions (le nombre de connexions commence à 0).
-* # 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
+* &#x200B;# 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
 * `[GET <?>]` correspond au contenu de la demande. Dans cet exemple, il s’agit de l’un des en-têtes HTTP (url).
 
 Lorsqu’une connexion se ferme, les informations suivantes sont consignées :

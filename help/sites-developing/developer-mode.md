@@ -36,16 +36,13 @@ Ils aident les développeurs à :
 >
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
-   >
-   >    
-   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
 >
-* nécessite les permissions/privilèges appropriés :
-
-   * L’accès au mode Développeur est attribué aux utilisateurs disposant d’un accès en écriture sur `/apps`.
-
-
-
+>    * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
+>
+>* nécessite les permissions/privilèges appropriés :
+>
+>    * L’accès au mode Développeur est attribué aux utilisateurs disposant d’un accès en écriture sur `/apps`.
+>
 
 >[!CAUTION]
 >

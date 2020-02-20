@@ -138,11 +138,9 @@ Pour ouvrir votre fragment à des fins de modification :
    >[!NOTE]
    >
    >1. Un message s’affiche si le fragment est déjà référencé dans une page de contenu.
-      >
-      >
-      >
-
-   2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
+   >
+   >
+   >2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
 
 
 1. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :

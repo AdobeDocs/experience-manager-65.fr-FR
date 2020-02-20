@@ -432,6 +432,7 @@ Pour créer la classe Java `HelloWorld` dans le bundle Test :
      }
      }
    ```
+
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
 ### Création d’un bundle {#building-a-bundle}

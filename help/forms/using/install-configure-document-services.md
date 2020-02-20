@@ -415,6 +415,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Enregistrez et fermez le fichier 
 
 ### Configuration du service de gestion de polices  {#configuring-the-font-manager-service}

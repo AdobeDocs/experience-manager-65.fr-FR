@@ -282,19 +282,18 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 >
 >L’éditeur de texte enrichi utilise un élément DOM de conteneur avec un ID de `CQrte`, qui peut être utilisé pour fournir différents styles pour l’affichage et la modification :
 >
->
-```>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
-
-
+>```
+>
 
 ### Spécification des styles disponibles dans la liste contextuelle {#stylesindropdown}
 

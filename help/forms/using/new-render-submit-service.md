@@ -159,5 +159,5 @@ Oui ; étant donné que le rendu précédent et les services d’envoi associé
 
 Si vous aviez modifié les services liés aux formulaires PDF de rendu/d’envoi existants ou aviez créé des services personnalisés (par exemple, custom1) et souhaitez maintenant utiliser la même fonctionnalité pour un rendu HTML : Vous devez répliquer le nouveau service de rendu/d’envoi (par exemple, en tant que custom2) et appliquer des personnalisations identiques. Désormais, modifiez le profil d’action de votre formulaire XDP afin de commencer à utiliser les services custom2, au lieu des services custom1 pour le rendu ou l’envoi.
 
-#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?
-#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?  [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
+&#x200B;#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?
+&#x200B;#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?  [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)

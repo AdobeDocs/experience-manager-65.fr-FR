@@ -1318,11 +1318,11 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    >
    >Il s’agit des mêmes définitions :
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >Lorsque la fonction renvoie simplement la valeur qu’elle reçoit.
 
 1. Définissez votre conception de rapport. Par exemple `osgireport[cq:Page]` sous `/etc/designs/reports`.
@@ -1389,13 +1389,13 @@ Il est désormais possible de créer une instance de votre nouveau rapport :
    >
    >Puisque cet exemple ne contient pas de colonnes pouvant être groupées, les graphiques ne sont pas disponibles. To see charts, set `groupable` to `true`:
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Configuration des services de structure de rapport {#configuring-the-report-framework-services}
 

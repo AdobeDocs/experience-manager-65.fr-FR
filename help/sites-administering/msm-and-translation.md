@@ -60,11 +60,8 @@ Pour les cas d’utilisation plus avancés, MSM peut également être utilisé d
 >Dans tous les cas, il est recommandé de lire les meilleures pratiques suivantes :
 >
 >* [Meilleures pratiques MSM](/help/sites-administering/msm-best-practices.md), en particulier :
-   >
-   >  
-* [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+>
+>  * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
 >  * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-   >
-   >
-* [Meilleures pratiques de traduction](/help/sites-administering/tc-bp.md)
-
+>
+>* [Meilleures pratiques de traduction](/help/sites-administering/tc-bp.md)

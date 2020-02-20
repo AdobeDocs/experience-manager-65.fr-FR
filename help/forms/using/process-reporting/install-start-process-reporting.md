@@ -52,10 +52,10 @@ Effectuez les étapes suivantes pour modifier le calendrier de publication :
 >Si vous exécutez l’implémentation d’AEM Forms sur une grappe, effectuez les étapes suivantes sur chaque noeud de la grappe.
 
 1. Arrêtez l’instance du serveur AEM Forms.
-1. 
+1.
 
-   * (Pour Windows) Ouvrez le `[JBoss root]/bin/run.conf.bat` fichier dans un éditeur.
-   * (pour Linux, AIX et Solaris) `[JBoss root]/bin/run.conf.sh` dans un éditeur.
+    * (Pour Windows) Ouvrez le `[JBoss root]/bin/run.conf.bat` fichier dans un éditeur.
+    * (pour Linux, AIX et Solaris) `[JBoss root]/bin/run.conf.sh` dans un éditeur.
 
 1. Ajout de l’argument JVM `-Dreporting.publisher.cron = <expression>.`
 

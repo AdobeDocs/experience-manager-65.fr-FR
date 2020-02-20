@@ -153,8 +153,9 @@ Pour supprimer un paragraphe :
 >
 >Si vous avez défini vos [Propriétés de l’utilisateur pour afficher la barre d’outils d’édition globale](/help/sites-classic-ui-authoring/author-env-user-props.md), vous pouvez également réaliser certaines actions sur les paragraphes à l’aide des boutons **Copier**, **Couper**, **Coller** et **Supprimer** disponibles.
 
->Divers [raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) sont également disponibles.
 >
+>Divers [raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) sont également disponibles.
+
 ## Couper/Copier/Coller un composant {#cut-copy-paste-a-component}
 
 Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez copier, couper et/ou coller un composant à l’aide du menu contextuel.

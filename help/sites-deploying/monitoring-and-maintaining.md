@@ -359,27 +359,33 @@ par exemple, `logs/myLogFile.log`
 
          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
-   * une taille maximale de fichier
-   * une planification heure/date
-   pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
-   * Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   * Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
-   La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
-   Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
-       | `&#39;.&#39;
-    aaaa-MM`|Rotation au début de chaque mois|
- |—|—|     | `&#39;.&#39;aaaa-ww`|Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
-       | `&#39;.&#39;aaaa-MM-jj`|Rotation à minuit tous les jours. |
-       | `&#39;.&#39;aaaa-MM-jj-a`|Rotation à minuit et midi de chaque jour. |
-       | `&#39;.&#39;aaaa-MM-jj-HH`|Rotation en haut de chaque heure. |
-       | `&#39;.&#39;aaaa-MM-jj-HH-mm`|Rotation au début de chaque minute. 
- |    
-      
-Remarque : Lors de la spécification d’une heure/date :       1. 
- Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);       ceci permet d’éviter que certains caractères ne soient interprétés comme des lettres de modèle.
-       1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
-   
+   >
+   >`org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
+   >
+   >* une taille maximale de fichier
+   >* une planification heure/date
+   >
+   >pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
+   >
+   >* Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
+   >
+   >La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
+   >
+   >Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
+   >
+   >      | `&#39;.&#39;aaaa-MM`|Rotation au début de chaque mois|
+   >      |---|---|
+   >      | `&#39;.&#39;aaaa-ww`|Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
+   >      | `&#39;.&#39;aaaa-MM-jj`|Rotation à minuit tous les jours. |
+   >      | `&#39;.&#39;aaaa-MM-jj-a`|Rotation à minuit et midi de chaque jour. |
+   >      | `&#39;.&#39;aaaa-MM-jj-HH`|Rotation en haut de chaque heure. |
+   >      | `&#39;.&#39;aaaa-MM-jj-HH-mm`|Rotation au début de chaque minute. |
+   >
+   >      Remarque : Lors de la spécification d’une heure/date :
+   >      1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
+   >      ceci permet d’éviter que certains caractères ne soient interprétés comme des lettres de modèle.
+   >      1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
 
 1. Lisez votre nouveau fichier journal avec l’outil sélectionné.
 

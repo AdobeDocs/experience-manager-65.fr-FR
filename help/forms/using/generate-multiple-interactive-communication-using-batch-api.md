@@ -190,6 +190,7 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
           <scope>provided</scope>
        </dependency>
    ```
+
 1. Ouvrez le projet Java, créez un fichier .java, par exemple CCMBatchServlet.java. Ajoutez le code suivant au fichier 
 
    ```java

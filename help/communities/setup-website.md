@@ -37,11 +37,9 @@ Le code de ce didacticiel s’appuiera sur le nom du dossier principal pour l’
 >* Les noms affichés dans CRXDE sont des noms de noeud qui forment le chemin d’accès au contenu adressable.
 >* Les noms de noeud peuvent contenir des espaces, mais lorsqu&#39;ils sont utilisés dans un URI, l&#39;espace doit être codé en &quot;%20&quot; ou &quot;+&quot;.
 >* Les noms de noeud peuvent contenir des tirets et des traits de soulignement, mais ils doivent être codés lorsqu’ils sont référencés comme nom de package dans un fichier Java. Les tirets et les traits de soulignement sont placés en séquence d’échappement avec un trait de soulignement suivi de leur valeur Unicode :
-   >
-   >  
-* trait d’union devient &quot;_002d&quot;
+>
+>  * trait d’union devient &quot;_002d&quot;
 >  * trait de soulignement devient &quot;_005f&quot;
-
 
 ## Configuration du répertoire des applications (/applications) {#setup-the-application-directory-apps}
 
