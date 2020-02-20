@@ -138,7 +138,7 @@ Générer un formulaire par valeur à l’aide de l’API Forms (Java) :
 
 **Voir également**
 
-[Rendu des formulaires par valeur](/help/forms/development/render-forms-render-forms-render-forms-render-forms-value-render-forms.md#render-forms-by-value)
+[Rendu des formulaires par valeur](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
 
 [Démarrage rapide (mode SOAP) : Rendu par valeur à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
