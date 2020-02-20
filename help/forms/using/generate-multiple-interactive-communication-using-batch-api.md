@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 3ba9308f7a6252f7ea6ae0de6455ab3e97e3b8dd
+source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
 
 ---
 
@@ -174,6 +174,22 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
 
 1. Connectez-vous à votre instance AEM et créez une communication interactive. Pour utiliser la communication interactive mentionnée dans l&#39;exemple de code ci-dessous, [cliquez ici](assets/SimpleMediumIC.zip).
 1. [Créez et déployez un projet AEM à l’aide d’Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) sur votre instance AEM.
+1. Ajoutez le SDK client [AEM Forms version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure et la dernière version [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) dans la liste des dépendances du fichier POm de votre projet AEM. Par exemple :
+
+   ```XML
+       <dependency>
+           <groupId>com.adobe.aemfd</groupId>
+           <artifactId>aemfd-client-sdk</artifactId>
+           <version>6.0.122</version>
+       </dependency>
+       <dependency>
+          <groupId>com.adobe.aem</groupId>
+          <artifactId>uber-jar</artifactId>
+          <version>6.5.0</version>
+          <classifier>apis</classifier>
+          <scope>provided</scope>
+       </dependency>
+   ```
 1. Ouvrez le projet Java, créez un fichier .java, par exemple CCMBatchServlet.java. Ajoutez le code suivant au fichier 
 
    ```java
@@ -271,7 +287,7 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
                            throw new Exception("Invalid JSON Data. File name : " + filePath, ex);
                        }
                    }
-                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/testsample/mediumic").build();
+                   BatchInput batchInput = batchBuilderFactory.getBatchInputBuilder().setData(inputJSONArray).setTemplatePath("/content/dam/formsanddocuments/[path of the interactive communcation]").build();
                    BatchConfig batchConfig = batchBuilderFactory.getBatchConfigBuilder().setBatchType(BatchType.WEB_AND_PRINT).build();
                    BatchResult batchResult = batchGeneratorService.generateBatch(batchInput, batchConfig);
                    List<RecordResult> recordList = batchResult.getRecordResults();
@@ -338,9 +354,7 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
    * Lorsque vous spécifiez les options IMPRESSION et WEB, les documents PDF et un fichier JSON par enregistrement sont générés.
 
 1. [Utilisez maven pour déployer le code mis à jour sur votre instance](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)AEM.
-1. Appelez l’API de traitement par lot pour générer la communication interactive. L’impression par lot API renvoie un flux de fichiers PDF et .json en fonction du nombre d’enregistrements. Vous pouvez utiliser le fichier JSON pour [préremplir un modèle](#web-template)Web.
-
-   Si vous utilisez le code ci-dessus, l’API est déployée dans `http://localhost:4502/bin/batchServlet`. Si vous utilisez l’exemple de communication interactive fourni à l’étape 1, vous pouvez utiliser [records.json](assets/records.json) pour générer une communication interactive. Par exemple, `http://localhost:4502/bin/batchServlet?filePath=C:/aem/records.json>.` il imprime et renvoie un flux d’un fichier PDF et un fichier JSON.
+1. Appelez l’API de traitement par lot pour générer la communication interactive. L’impression par lot API renvoie un flux de fichiers PDF et .json en fonction du nombre d’enregistrements. Vous pouvez utiliser le fichier JSON pour [préremplir un modèle](#web-template)Web. Si vous utilisez le code ci-dessus, l’API est déployée dans `http://localhost:4502/bin/batchServlet`. Le code imprime et renvoie un flux de fichiers PDF et JSON.
 
 ### Préremplissage d’un modèle Web {#web-template}
 
