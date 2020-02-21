@@ -122,7 +122,7 @@ DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
-Essayez de spécifier l’utilisateur comme étant spnegodemo@um.lc.com :
+Essayez de spécifier l’utilisateur comme étant spnegodemo@um.lc.com&nbsp;:
 
 ```as3
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
