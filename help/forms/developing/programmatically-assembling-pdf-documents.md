@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
 
 ---
 
@@ -100,7 +100,7 @@ Le fichier map.pdf et le fichier directions.pdf doivent être placés dans un ob
 
 >[!NOTE]
 >
->Un `AssemblerResult` objet, qui contient un objet de collection, est renvoyé si vous appelez l’ `invokeDDX` opération. Cette opération est utilisée lorsque vous transmettez au service Assembler plusieurs documents PDF d’entrée. Cependant, si vous transmettez un seul fichier PDF d’entrée au service Assembler et que vous attendez un seul document de retour, appelez l’ `invokeOneDocument` opération. Lors de l’appel de cette opération, un seul document est renvoyé. Pour plus d’informations sur l’utilisation de cette opération, voir [Assemblage de documents]PDF chiffrés (/help/forms/Developing/assembling-encrypted-pdf-documents-assemblage.md#assemblage-encrypted-pdf-documents-assemblage).
+>Un `AssemblerResult` objet, qui contient un objet de collection, est renvoyé si vous appelez l’ `invokeDDX` opération. Cette opération est utilisée lorsque vous transmettez au service Assembler plusieurs documents PDF d’entrée. Cependant, si vous transmettez un seul fichier PDF d’entrée au service Assembler et que vous attendez un seul document de retour, appelez l’ `invokeOneDocument` opération. Lors de l’appel de cette opération, un seul document est renvoyé. Pour plus d’informations sur l’utilisation de cette opération, voir [Assemblage de documents](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)PDF chiffrés.
 
 **Définition des options d’exécution**
 
