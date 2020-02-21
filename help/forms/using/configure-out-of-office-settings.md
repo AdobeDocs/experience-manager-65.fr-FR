@@ -4,7 +4,7 @@ seo-title: Configuration des paramètres d’absence du bureau
 description: Configuration des paramètres d’absence du bureau
 seo-description: Configuration des paramètres d’absence du bureau
 translation-type: tm+mt
-source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
+source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
 
 ---
 
@@ -48,7 +48,7 @@ Effectuez les étapes suivantes pour activer le paramètre d’absence du bureau
 
    Répétez l’étape pour ajouter d’autres personnes désignées. <br>
 
-   [!NOTE]
+   >[!NOTE]
    >L&#39;ordre des personnes désignées est important. Lorsqu’un élément est affecté à un utilisateur qui a activé le paramètre d’absence du bureau, il est évalué par rapport à la liste des personnes désignées spécifiée dans l’ordre d’ajout des personnes désignées. Lorsqu’un élément correspond aux critères, il est affecté à la personne désignée et la personne désignée suivante n’est pas cochée.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. Ce paramètre prend effet à la date et à l’heure de début spécifiées. Si vous vous connectez pendant que vous êtes absent du bureau, vous êtes toujours considéré comme absent du bureau jusqu’à ce que vous ayez modifié vos paramètres.
@@ -56,9 +56,8 @@ Effectuez les étapes suivantes pour activer le paramètre d’absence du bureau
 Désormais, les éléments qui vous sont affectés pendant la période d’absence du bureau sont automatiquement affectés à la personne désignée.\
 ![Absence du bureau](assets/out-of-office.png)
 
-[!NOTE]
->
-> (Pour les éléments de flux de travail centrés sur Forms uniquement) Activez l’option **Autoriser les personnes désignées à déléguer à l’aide des paramètres** &quot;Absence du bureau&quot; de l’étape **Attribuer la tâche** dans le flux de travail. Seuls les éléments pour lesquels l’option susmentionnée est activée sont délégués à d’autres utilisateurs.
+>[!NOTE]
+>(Pour les éléments de flux de travail centrés sur Forms uniquement) Activez l’option **Autoriser les personnes désignées à déléguer à l’aide des paramètres** &quot;Absence du bureau&quot; de l’étape **Attribuer la tâche** dans le flux de travail. Seuls les éléments pour lesquels l’option susmentionnée est activée sont délégués à d’autres utilisateurs.
 
 ## Restrictions {#limitations}
 
