@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90d69ef0ed0fb38bec75a3d36982f80b85dd43af
+source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
 
 ---
 
@@ -575,15 +575,17 @@ Pour parvenir à la suppression des classes compilées à partir des pages JSP, 
 >Depending on whether you actually make use of JSP code in `/libs` (i.e. include JSPs from there), you will need to refine which JSPs are copied for compilation.
 >
 >E.g. if you include `/libs/foundation/global.jsp`, you can use the following configuration for the `maven-resources-plugin` instead of the configuration above which completely skips over `/libs`.
->```
+>
+>
+```
 > <resource>  
->      <directory>src/main/content/jcr_root</directory>  
->      <includes>  
->          <include>apps/**</include>  
->          <include>libs/foundation/global.jsp</include>
->    </includes>  
->  </resource>  
->  ```
+>           <directory>src/main/content/jcr_root</directory>  
+>           <includes>  
+>                   <include>apps/**</include>  
+>                   <include>libs/foundation/global.jsp</include>
+>       </includes>  
+>   </resource>  
+>```
 
 ### Utilisation des systèmes SCM {#how-to-work-with-scm-systems}
 
