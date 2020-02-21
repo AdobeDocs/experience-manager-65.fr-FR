@@ -75,7 +75,7 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
       Ordre personnalisé : $2 $1 (renvoyer le second groupe concaténé au premier groupe, capturé par un caractère espace)
 
-   * Pour extraire « adupont@orgexemple.fr » de « smtp:adupont@orgexemple.fr »
+   * Pour extraire «&nbsp;adupont@orgexemple.fr&nbsp;» de «&nbsp;smtp:adupont@orgexemple.fr&nbsp;»
 
       **Regex :** smtp:(.&amp;ast;)
    Pour plus de détails sur l’utilisation des expressions régulières, reportez-vous au [Didacticiel Java sur les expressions régulières](https://java.sun.com/docs/books/tutorial/essential/regex/).
