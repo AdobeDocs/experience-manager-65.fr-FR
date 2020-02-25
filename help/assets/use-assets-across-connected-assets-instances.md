@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a107f3d3f10e2f5b5aed7722aee467a838f9d13d
+source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
 
 ---
 
@@ -27,9 +27,9 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 * utilisateurs faisant partie de groupes d’utilisateurs appropriés sur chaque déploiement.
 * Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. AEM Assets 6.5 fonctionne avec AEM en tant que service Cloud. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)Cloud.
 
-   |  | Sites AEM en tant que service cloud | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
+   |  | AEM Sites en tant que Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
    |---|---|---|---|
-   | **AEM Assets as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
+   | **AEM Assets en tant que Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur AMS** | pas de prise en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur site** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
 
@@ -171,7 +171,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 * Tous les auteurs Sites disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en n’ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
 * Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
-* Il n’est pas possible d’utiliser une ressource distante comme miniature pour une page Web dans l’onglet [!UICONTROL Miniature] des Propriétés [!UICONTROL de la] page en cliquant sur [!UICONTROL Sélectionner l’image].
+* Il n’est pas possible d’utiliser une ressource distante comme vignette de page dans l’interface utilisateur des propriétés [!UICONTROL de] page. Vous pouvez définir une miniature d’une page Web dans l’interface utilisateur Propriétés [!UICONTROL de la] page à partir de la [!UICONTROL miniature] en cliquant sur [!UICONTROL Sélectionner l’image].
 
 **Configuration et licence**
 
