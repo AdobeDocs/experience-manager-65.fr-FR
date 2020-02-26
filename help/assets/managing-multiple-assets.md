@@ -3,7 +3,7 @@ title: Gestion de plusieurs ressources et collections
 description: Découvrez comment modifier les métadonnées de plusieurs ressources et collections simultanément pour propager rapidement les modifications courantes des métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
 
 ---
 
@@ -44,31 +44,11 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
 
 1. Pour sélectionner un schéma de métadonnées différent pour les ressources, appuyez/cliquez sur l’icône **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma souhaité.
 1. Enregistrez les modifications.
-1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Tap/click **[!UICONTROL Submit]**.
+1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs qui contiennent plusieurs valeurs, sélectionnez le mode **[!UICONTROL Ajouter]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
 
    >[!CAUTION]
    >
-   >Pour les champs à une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ même si vous sélectionnez **[!UICONTROL Mode d’ajout]**.
-
-## Edit metadata properties of multiple collections {#editing-metadata-properties-of-multiple-collections}
-
-1. Dans la console Collections, sélectionnez les collections à modifier.
-1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the properties page for the selected collections.
-1. Modifiez les propriétés de métadonnées des collections sélectionnées dans les différents onglets.
-
-   >[!NOTE]
-   >
-   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections, à l’exception des balises. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
-
-1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
-
-   >[!NOTE]
-   >
-   >* Dans la page des propriétés de collection, vous pouvez supprimer des collections de la liste des collections en les désélectionnant. La liste des collections contient toutes les collections sélectionnées par défaut. Les métadonnées des collections que vous supprimez ne sont pas mises à jour.
-   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
-
-
-1. Enregistrez les modifications.
+   >Pour les champs à une valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ, même si vous sélectionnez le **[!UICONTROL mode Ajouter]**.
 
 ## Configuration du nombre maximal de paramètres pour la mise à jour des métadonnées en masse {#configlimit}
 
@@ -76,4 +56,9 @@ Pour éviter une situation similaire à DOS, AEM limite le nombre de paramètres
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Pour modifier le nombre maximal de paramètres, accédez à la console Web (**[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**), puis changez le **[!UICONTROL nombre maximal de paramètres POST]** dans la configuration OSGi de **[!UICONTROL gestion des paramètres de requête Sling Apache]**.
+Pour modifier cette limite, accédez à la console web ( **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**) et modifiez la **[!UICONTROL valeur maximale des paramètres POST]** dans la configuration OSGi **[!UICONTROL Gestion des paramètres de requête Sling Apache]**.
+
+>[!MORELIKETHIS]
+>
+>* [Modification des propriétés de métadonnées de plusieurs collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+
