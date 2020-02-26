@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que téléc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
 
 ---
 
@@ -354,13 +354,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    ![chlimage_1-218](assets/chlimage_1-13.png)
 
-1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans AEM.
-
-   YouTube requiert que les balises soient publiées et comportent un lien vers YouTube (si un lien approprié peut être trouvé).
+1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans AEM. YouTube requiert la publication de balises. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >Pour créer des balises, vous devez disposer d’une autorisation d’écriture `/content/cq:tags/default` dans le référentiel CRX.
+   >Pour créer des balises, vous devez disposer de l’autorisation d’écriture `/content/cq:tags/default` dans le référentiel CRX.
 
 1. Pour obtenir une évaluation de la ressource, appuyez/cliquez sur l’onglet **[!UICONTROL Avancé]**, puis appuyez/cliquez sur l’étoile à l’emplacement approprié pour affecter l’évaluation de votre choix.
 
