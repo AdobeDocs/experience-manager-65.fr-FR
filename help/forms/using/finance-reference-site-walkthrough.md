@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -788,13 +788,13 @@ Sarah Rose prévoit d&#39;investir dans un fonds commun de placement. Elle est d
 
 #### Fonctionnement {#how-it-works-17}
 
-Le prospectus du Blue Chip Growth Fund est une communication interactive. Il utilise des textes, des images, des graphiques et des composants de tableau (fragments de document) pour afficher le résumé du produit, le style de stock, les performances du fonds, les détails du fonds et d’autres informations connexes. [ Vous pouvez consulter la communication interactive en mode d’édition à l’adresse https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+Le prospectus du Blue Chip Growth Fund est une communication interactive. Il utilise des textes, des images, des graphiques et des composants de tableau (fragments de document) pour afficher le résumé du produit, le style de stock, les performances du fonds, les détails du fonds et d’autres informations connexes. Vous pouvez consulter la communication interactive en mode d’édition à l’adresse `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`
 
-Les graphiques et les tableaux récupèrent les données d’un modèle de données de formulaire. Le modèle de données de formulaire se connecte à des sources de données configurées, une base de données dans cette présentation, pour récupérer des informations spécifiques au fonds. Vous pouvez consulter le modèle de données de formulaire à l’adresse https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/patrimoine-management
+Les graphiques et les tableaux récupèrent les données d’un modèle de données de formulaire. Le modèle de données de formulaire se connecte à des sources de données configurées, une base de données dans cette présentation, pour récupérer des informations spécifiques au fonds. Vous pouvez consulter le modèle de données de formulaire à l’adresse `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management`
 
 #### Démonstration  {#see-it-yourself-15}
 
-Accédez au portail Web.Finance à l’adresse https://[publishHost]:[publishPort]/wefinance, appuyez sur Gestion de patrimoine, développez Fonds par catégorie d’actifs, puis appuyez sur We.Finance Blue Chip Growth Fund. Le prospectus du Fonds de croissance de la puce bleue We.Finance s&#39;ouvre.
+Accédez au portail Web.Finance à `https://[publishHost]:[publishPort]/wefinance`, appuyez sur Gestion de la richesse, développez Fonds par catégorie d’actifs et appuyez sur We.Finance Blue Chip Growth Fund. Le prospectus du Fonds de croissance de la puce bleue We.Finance s&#39;ouvre.
 
 ### Sarah explore le prospectus du Fonds de croissance de la puce bleue pour en savoir plus sur le fonds {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
@@ -806,11 +806,11 @@ Sarah explore les onglets Aperçu, Prix et Performance, Gestion de portefeuille,
 
 La communication interactive du Blue Chip Growth Fund utilise des panneaux parents et enfants pour séparer les informations connexes en différentes sections. Le panneau parent organise tous les panneaux enfants en onglets.
 
-La disposition de l’onglet parent est définie sur Onglets en haut pour convertir tous les panneaux enfants en onglets. [ Vous pouvez consulter les panneaux de la communication interactive en mode d’édition à l’adresse https://]authorHost[: authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+La disposition de l’onglet parent est définie sur Onglets en haut pour convertir tous les panneaux enfants en onglets. Vous pouvez consulter les panneaux de la communication interactive en mode d’édition à l’adresse `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
 
 #### Démonstration  {#see-it-yourself-16}
 
-[ Rendez-vous sur la communication interactive du Blue Chip Growth Fund à l&#39;adresse https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Explorez tous les onglets.
+Allez à la communication interactive du Blue Chip Growth Fund à l&#39;adresse `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled`. Explorez tous les onglets.
 
 ### Sarah affiche et envoie par courrier électronique la version PDF de la page Fonds pour la croissance de la puce bleue {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
@@ -820,15 +820,15 @@ Sarah se rend à la campagne le week-end. Elle a l&#39;intention de discuter ave
 
 #### Fonctionnement {#how-it-works-19}
 
-Le prospectus du Blue Chip Growth Fund est une communication interactive. Il comporte un canal Web et PDF. La communication interactive s’intègre aux processus AEM pour envoyer la version PDF par courrier électronique. [ Vous pouvez consulter le modèle de processus à l’adresse https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+Le prospectus du Blue Chip Growth Fund est une communication interactive. Il comporte un canal Web et PDF. La communication interactive s’intègre aux processus AEM pour envoyer la version PDF par courrier électronique. Vous pouvez consulter le modèle de processus à l’adresse `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html`.
 
 ![gestion du patrimoine](assets/wealth-management.png)
 
 #### Démonstration  {#see-it-yourself-17}
 
-[ Pour télécharger la version PDF, accédez à la communication interactive https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, appuyez sur Télécharger PDF.
+Pour télécharger la version PDF, accédez à la communication interactive Blue Chip Growth Fund `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`, appuyez sur Télécharger le PDF.
 
-[ Pour envoyer un PDF par courrier électronique, accédez à la communication interactive du Fonds pour la croissance des puces bleues https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html, appuyez sur EMAIL PDF. Spécifiez le nom **complet** et l’adresse **de** courriel. Cliquez sur **Envoyer un courriel**.
+Pour envoyer un PDF par courrier électronique, accédez à la communication interactive du Fonds pour la croissance des puces bleues `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`, appuyez sur EMAIL PDF. Spécifiez le nom **complet** et l’adresse **de** courriel. Cliquez sur **Envoyer un courriel**.
 
 ## Présentation de la demande d&#39;assurance automatique {#auto-insurance-application-walkthrough}
 
@@ -849,13 +849,13 @@ Conrad se connecte à l’instance AEM, ouvre le tableau de bord Assurance autom
 
 #### Fonctionnement {#how-it-works-20}
 
-La communication sur le renouvellement des polices d’assurance est une communication interactive. Conrad Simms utilise l’interface utilisateur de l’agent pour envoyer la communication de renouvellement de police d’assurance à Sarah. La communication comprend l&#39;impression (PDF) et le lien vers le canal Web de la communication interactive. La communication interactive utilise AEM Workflow pour envoyer le courrier électronique. [ Vous pouvez consulter le flux de travaux à l’adresse https://]authorHost[: authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+La communication sur le renouvellement des polices d’assurance est une communication interactive. Conrad Simms utilise l’interface utilisateur de l’agent pour envoyer la communication de renouvellement de police d’assurance à Sarah. La communication comprend l&#39;impression (PDF) et le lien vers le canal Web de la communication interactive. La communication interactive utilise AEM Workflow pour envoyer le courrier électronique. Vous pouvez consulter le flux de travaux à l’adresse `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
 
 ![auto-assurance-workflow](assets/auto-insurance-workflow.png)
 
 #### Démonstration  {#see-it-yourself-18}
 
-Connectez-vous au tableau de bord **d&#39;assurance automatique** We.Finance sous Conrad Simms (csimms/password). L’URL est https://[publisher]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Spécifiez l’ID **** du client. L’ID client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie joint, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique est envoyé à l’adresse électronique spécifiée. La politique proposée à Sarah Rose est une politique de prime.
+Connectez-vous au tableau de bord **d&#39;assurance automatique** We.Finance sous Conrad Simms (csimms/password). L’URL est `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Spécifiez l’ID **** du client. L’ID client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie joint, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique est envoyé à l’adresse électronique spécifiée. La politique proposée à Sarah Rose est une politique de prime.
 
 La présentation de l&#39;assurance automobile contient également un autre client, Alison Jones. L’ID de client d’Alison Jones est 900002. Lorsque vous envoyez la communication interactive à Alison Jones, une stratégie standard est envoyée. La différence entre la politique standard et la politique de prime est la suivante :
 
@@ -863,18 +863,18 @@ La présentation de l&#39;assurance automobile contient également un autre clie
 * La politique standard coûte moins cher que la politique de prime.
 * La politique de prime a une récompense anti-vol et la politique standard a une récompense intelligente.
 
-Les deux stratégies utilisent la même communication interactive. Les sections de la stratégie sont modifiées ou masquées en fonction de la condition de type de stratégie. You can access and review the auto insurance renewal interactive communication directly from https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal
+Les deux stratégies utilisent la même communication interactive. Les sections de la stratégie sont modifiées ou masquées en fonction de la condition de type de stratégie. Vous pouvez accéder à la communication interactive de renouvellement d&#39;assurance automobile et la consulter directement à partir de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **Utilisation de Microsoft Dynamics comme source de données**
 
 Le site de référence fournit également une communication interactive qui utilise Microsoft Dynamics comme source de données pour le modèle de données de formulaire. Effectuez les étapes suivantes pour configurer la communication interactive pour la présentation de l’assurance auto :
 
-1. Connectez-vous à https://[author]:[port]/crx/de en tant qu’administrateur.
+1. Connectez-vous à `https://[author]:[port]/crx/de as an administrator`.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Définissez la valeur de `FormFieldRequestParameter`sur `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Appuyez sur **Enregistrer tout**. Le site de référence est configuré pour utiliser la communication interactive qui utilise MS Dynamics comme source de données.
 
-Désormais, connectez-vous au tableau de bord **Assurance auto** We.Finance sous la forme Conrad Simms (csimms/password). L’URL est https://[publisher]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Spécifiez l’ID **** du client. L’ID client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie joint, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique est envoyé à l’adresse électronique spécifiée.
+Désormais, connectez-vous au tableau de bord **Assurance auto** We.Finance sous la forme Conrad Simms (csimms/password). L’URL est `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Spécifiez l’ID **** du client. L’ID client de Sarah Rose est 900001. Cliquez sur **Renouveler la stratégie**. La communication interactive s’ouvre dans l’interface utilisateur de l’agent. Dans l’interface utilisateur de l’agent, saisissez une adresse électronique valide pour envoyer le courrier électronique avec le document de stratégie joint, puis cliquez sur **Envoyer**. Un message, Envoi initié, s’affiche à l’écran, puis, en quelques secondes, un autre message, Envoi réussi, s’affiche. Un courrier électronique contenant l’objet de **votre renouvellement** d’assurance automatique est envoyé à l’adresse électronique spécifiée.
 
 >[!NOTE]
 >
@@ -902,7 +902,7 @@ Vous devriez recevoir un courrier électronique avec un fichier PDF joint. Le PD
 
 The **Renew Now** button in the email directs Sarah to the web version of the policy. Vous pouvez consulter l’URL suivante :
 
-https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
+`https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001`
 
 You can check the detailed summary of your auto insurance renewal and click **Renew Now** at the bottom of the page.
 
@@ -920,6 +920,6 @@ Le bouton Renouveler maintenant dirige Sarah vers la page de paiement. La page d
 
 Cliquez sur **Renouveler maintenant** pour accéder à la page de paiement. Fill in your Credit Card information, and click **Make Payment**. Vous pouvez accéder à la page de paiement dans l’instance de création à l’adresse suivante :
 
-https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;schema=fdm&amp;customerId=900001
+`https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001`
 
 Le message de remerciement s’affiche après avoir cliqué sur le bouton Effectuer le paiement.
