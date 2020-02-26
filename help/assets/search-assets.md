@@ -4,7 +4,7 @@ description: Découvrez comment rechercher les ressources souhaitées dans AEM �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
+source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
 
 ---
 
@@ -42,7 +42,7 @@ Familiarisez-vous avec l&#39;interface de recherche et les actions disponibles.
 
 *Figure : Présentation des parties de l’interface des résultats de la recherche Ressources*
 
-**** A. Enregistrez la recherche en tant que collection dynamique. **** B. Filtres (prédicats) pour limiter les résultats de la recherche. **C.** Afficher les fichiers, les dossiers ou les deux dans les résultats de la recherche. **** D. Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche. **** E. L’emplacement de recherche est DAM. **** F. Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **** G. Cochez cette case pour sélectionner tous les résultats de la recherche. **** H. Nombre de résultats de recherche affichés par rapport au total des résultats de recherche. ******I. Ferme la recherche** J. Basculez entre l’affichage carte et l’affichage liste.
+**A.** Enregistrez la recherche en tant que collecte dynamique. **B.** Filtres (prédicats) pour limiter les résultats de la recherche. **C.** Affichez les fichiers, les dossiers ou les deux dans les résultats de la recherche. **D.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est DAM. ************ F. Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **G. Cochez cette case pour sélectionner tous les résultats de la recherche.** H. Nombre de résultats de recherche affichés par rapport au total des résultats de recherche. **I. Ferme la recherche** J. Basculez entre l’affichage carte et l’affichage liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -113,7 +113,7 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 
 Vous pouvez améliorer la pertinence des mots-clés pour des ressources données afin d’améliorer les résultats de recherches basées sur ces mots-clés. En d’autres termes, les images pour lesquelles vous faites la promotion de mots-clés spécifiques apparaissent en haut des résultats lorsque vous lancez une recherche basée sur ces mots-clés.
 
-1. Dans l’interface utilisateur Ressources, ouvrez la page des propriétés du fichier. Cliquez sur **[!UICONTROL Avancé]** et cliquez/appuyez sur **[!UICONTROL Ajouter]** sous **[!UICONTROL Elever pour rechercher des mots-clés]**.
+1. Dans l’interface utilisateur Ressources, ouvrez la page des propriétés du fichier. Cliquez sur **[!UICONTROL Avancé]** et cliquez/appuyez sur **[!UICONTROL Ajouter]** sous **[!UICONTROL Élever pour rechercher des mots-clés]**.
 1. Dans la boîte de dialogue **[!UICONTROL Rechercher une promotion]**, indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image puis cliquez/appuyez sur **[!UICONTROL Ajouter]**. Vous pouvez spécifier plusieurs mots-clés de la même manière.
 1. Cliquez/appuyez sur **[!UICONTROL Enregistrer et fermer]**. La ressource que vous avez promue pour ce mot-clé apparaît parmi les principaux résultats de la recherche.
 
@@ -138,7 +138,7 @@ AEM fournit diverses méthodes, telles que des filtres qui s’appliquent aux re
 
 ### Rechercher des images similaires {#visualsearch}
 
-Pour rechercher des images visuellement similaires à une image sélectionnée par l’utilisateur, cliquez sur l’option **[!UICONTROL Rechercher des images similaires]** dans la vue Carte d’une image ou dans la barre d’outils. AEM affiche les images balisées intelligentes du référentiel DAM similaires à une image sélectionnée par l’utilisateur. Voir [comment configurer la recherche](#configvisualsearch)par analogie.
+Pour rechercher des images visuellement similaires à une image sélectionnée par l’utilisateur, cliquez sur l’option **[!UICONTROL Rechercher des images similaires]** dans le mode Carte d’une image ou dans la barre d’outils. AEM affiche les images balisées intelligentes du référentiel DAM qui sont similaires à une image sélectionnée par l’utilisateur. Voir [Configuration de la recherche par analogie](#configvisualsearch).
 
 ![Rechercher des images similaires à l’aide de l’option de la vue Carte](assets/search_find_similar.png)
 
@@ -151,7 +151,7 @@ From within the AEM user interface, users can search [Adobe Stock assets](/help/
 
 ### Fichiers de médias dynamiques {#dmassets}
 
-Vous pouvez filtrer les images de médias dynamiques en sélectionnant Contenu multimédia **[!UICONTROL dynamique > Visionneuses]** dans le panneau **[!UICONTROL Filtres]** . Il filtre et affiche des fichiers tels que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°.
+Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media > Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des fichiers tels que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°.
 
 ### Recherche à l’aide de valeurs spécifiques dans les champs de métadonnées {#gqlsearch}
 
@@ -217,7 +217,7 @@ Dans l’interface utilisateur AEM, les utilisateurs peuvent rechercher des ress
 
 ### Recherche de fichiers Contenu multimédia dynamique {#dynamicmedia}
 
-Vous pouvez filtrer les images de médias dynamiques en sélectionnant Contenu multimédia **[!UICONTROL dynamique]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]** . Il filtre et affiche des fichiers tels que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°. Lors de la création de pages Web, les auteurs peuvent rechercher des visionneuses dans l’outil de recherche de contenu. Un filtre pour les visionneuses est disponible dans un menu contextuel.
+Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des fichiers tels que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°. Lors de la création de pages web, les auteurs peuvent rechercher des visionneuses dans l’outil de recherche de contenu. Un filtre pour les visionneuses est disponible dans un menu contextuel.
 
 ### Recherche de fichiers dans Content Finder lors de la création de pages Web {#contentfinder}
 
@@ -408,7 +408,7 @@ Une fois que vous avez vu des fichiers recherchés qui correspondent à vos crit
 
 ### Trier les résultats recherchés {#sort}
 
-Le tri des résultats de recherche vous permet de découvrir plus rapidement les ressources requises. Le tri des résultats de la recherche fonctionne en mode Liste et uniquement lorsque vous sélectionnez **[!UICONTROL [Fichiers](#searchui)]**dans le panneau**[!UICONTROL  Filtres ]**. AEM Assets utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête de recherche. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
+Le tri des résultats de recherche vous permet de découvrir plus rapidement la ressource requise. Le tri des résultats de recherche fonctionne en mode Liste et uniquement lorsque vous sélectionnez **[!UICONTROL [Fichiers](#searchui)]**dans le panneau**[!UICONTROL  Filtres ]**. AEM Assets utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou sous forme de résultats d’une requête de recherche. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
 
 En mode Liste, vous pouvez trier les résultats de la recherche tout comme vous pouvez trier les fichiers de n’importe quel dossier. Le tri fonctionne sur ces colonnes — Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date) Créée, (Date) Modifiée, (Date) Publiée, Processus et Extrait.
 
@@ -420,7 +420,7 @@ Vous pouvez vérifier les informations détaillées d’une ressource recherché
 
 Pour afficher toutes les métadonnées d’un fichier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 
-Pour vérifier les commentaires sur l’historique d’un fichier ou d’une version d’un fichier, cliquez sur le fichier pour ouvrir un aperçu de grande taille. Ouvrez la chronologie dans le rail de gauche et sélectionnez **[!UICONTROL Commentaires]** ou **[!UICONTROL Versions]**. Vous pouvez également trier l’activité de la chronologie comme les commentaires ou les versions dans un ordre chronologique.
+Pour vérifier les commentaires concernant l’historique d’une ressource ou d’une version, cliquez sur la ressource pour ouvrir un aperçu de grande taille. Ouvrez le journal dans le rail de gauche et sélectionnez **[!UICONTROL Commentaires]** ou **[!UICONTROL Versions]**. Vous pouvez également trier le journal, par exemple par commentaires ou versions dans un ordre chronologique.
 
 ![Tri des entrées de chronologie pour un fichier de recherche](assets/sort_timeline_search_results.gif)
 
@@ -435,7 +435,7 @@ Vous pouvez télécharger les fichiers recherchés et leurs rendus au fur et à 
 
 Il est possible d’effectuer des mises à jour en masse des champs de métadonnées courants de plusieurs fichiers. Dans les résultats de la recherche, sélectionnez un ou plusieurs fichiers. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils et mettez à jour les métadonnées selon les besoins. Cliquez sur **[!UICONTROL Enregistrer et fermer]** lorsque vous avez terminé. Les métadonnées précédemment existantes dans les champs mis à jour sont remplacées.
 
-Pour les fichiers disponibles dans un dossier unique ou une collection, il est plus facile de [mettre à jour les métadonnées en bloc](/help/assets/managing-multiple-assets.md). Pour les fichiers disponibles dans plusieurs dossiers ou qui correspondent à un critère commun, il est plus rapide de mettre à jour les métadonnées en masse par le biais de la recherche.
+Pour les fichiers disponibles dans un seul dossier ou une collection, il est plus facile de [mettre à jour les métadonnées en bloc](/help/assets/managing-multiple-assets.md) sans utiliser la fonctionnalité de recherche. Pour les fichiers disponibles dans plusieurs dossiers ou qui correspondent à un critère commun, il est plus rapide de mettre à jour les métadonnées en masse par le biais de la recherche.
 
 ### Collections dynamiques {#collections-1}
 
@@ -444,7 +444,7 @@ Une collection est un ensemble ordonné de ressources pouvant inclure des ressou
 * Liste de référence statique de ressources, de dossiers et d’autres collections.
 * Liste dynamique (collection dynamique) qui renseigne les fichiers de la collection en fonction de critères de recherche.
 
-Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]** , sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection]** dynamique. Voir [Gestion des collections](/help/assets/managing-collections-touch-ui.md).
+Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gestion des collections](/help/assets/managing-collections-touch-ui.md).
 
 ## Résolution des problèmes et des résultats de recherche inattendus {#troubleshoot-unexpected-search-results-and-issues}
 
