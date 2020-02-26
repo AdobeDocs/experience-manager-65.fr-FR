@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 9f3129aff8a3e389231b0fe0973794e5d34480a0
 
 ---
 
@@ -335,7 +335,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (service Web) :
 
    * Valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Valeur `TransformTo` enum qui spécifie le type de préférence HTML. Par exemple, pour générer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez-les `null`. (Voir [Préremplissage de formulaires avec des mises en page]à disposition souple (/help/forms/development/render-forms-render-forms prepopulating-forms-fleable-layouts-prepopulating.md#prepopulating-forms-with-fleable-layouts).)
+   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez-les `null`. (Voir [Préremplissage de formulaires avec des mises en page](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)à disposition souple.)
    * Objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Valeur de chaîne qui spécifie la valeur d’ `HTTP_USER_AGENT` en-tête ; par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
    * Objet `URLSpec` qui stocke les valeurs URI requises pour générer un formulaire HTML. (voir [Spécification des valeurs](/help/forms/developing/rendering-interactive-pdf-forms.md)URI).
