@@ -1,9 +1,9 @@
 ---
-title: Vérification de collections et de ressources situées dans un dossier
+title: Révision de collections et de ressources situées dans un dossier
 description: Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -47,12 +47,12 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![review_name](assets/review_name.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
+1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
 1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à l’IU Assets. To approve assets, tap **[!UICONTROL Notifications]** and then select the review task from the list.
 
    ![Notification de ressources](assets/aemAssetsNotification.png)
 
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
+1. Dans la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
 1. In the **[!UICONTROL Review Task]** page, select assets, and tap **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
 
    ![review_task](assets/review_task.png)
@@ -91,9 +91,9 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
+1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
 1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à la console Ressources. To approve assets, tap **[!UICONTROL Notifications]** and then select the review task from the list.
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
+1. Dans la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
 1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Select the assets and tap **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 
    ![review_task_collection](assets/review_task_collection.png)
@@ -102,7 +102,9 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation pour les ressources apparaissent dans les modes Carte et Liste.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
+
    *Figure : Affichage Carte*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
+
    *Figure : Affichage par liste*
