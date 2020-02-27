@@ -3,7 +3,7 @@ title: Importation et exportation des métadonnées de fichier par lot
 description: Importation et exportation des métadonnées de fichier par lot
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -22,7 +22,7 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
 
 1. Accédez à l’IU Assets et appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans le menu, sélectionnez **[!UICONTROL Métadonnées]**.
-1. In the **[!UICONTROL Metadata Import]** page, tap/click **[!UICONTROL Select File]**. Sélectionnez le fichier CSV contenant les métadonnées.
+1. Dans la page **[!UICONTROL Importation des métadonnées]**, appuyez/cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
 1. Spécifiez les paramètres suivants :
 
    | Paramètres d’importation de métadonnées | Description |
@@ -56,9 +56,10 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 1. Dans le champ **[!UICONTROL Propriétés à exporter]**, indiquez si vous voulez exporter toutes les propriétés ou des propriétés spécifiques. Si vous choisissez Propriétés sélectives à exporter, ajoutez les propriétés souhaitées.
 
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Exporter]**. Un message confirme que les métadonnées ont été exportées. Fermez le message.
-1. Ouvrez la notification de boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV contenant les métadonnées, appuyez/cliquez sur **[!UICONTROL Téléchargement CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
+1. Ouvrez la notification de la boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV avec les métadonnées, appuyez/cliquez sur **[!UICONTROL Téléchargement CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
 
    ![Boîte de dialogue de téléchargement du fichier CSV contenant les métadonnées exportées en bloc](assets/csv_download.png)
+
    *Figure : Boîte de dialogue de téléchargement du fichier CSV contenant des métadonnées exportées en bloc*
 
 >[!MORELIKETHIS]
