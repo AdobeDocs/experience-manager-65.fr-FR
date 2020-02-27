@@ -3,12 +3,12 @@ title: Gestion des droits numériques dans AEM Assets
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# Gestion des droits numériques pour les ressources numériques {#digital-rights-management-in-assets}
+# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
 
 Les actifs numériques sont souvent associés à une licence qui prévoit les conditions et la durée de leur utilisation. Les ressources Adobe Experience Manager (AEM) étant entièrement intégrées à la plate-forme AEM, vous pouvez gérer efficacement les informations d’expiration et les états des ressources. Vous pouvez également associer des informations de licence à des ressources.
 
@@ -18,11 +18,15 @@ L’expiration de ressources est un moyen efficace de faire respecter les exigen
 
 Vous pouvez afficher l’état d’expiration d’un fichier dans la console Ressources en mode Carte et Liste.
 
-![expired_flag_card](assets/expired_flag_card.png)<br> *Figure : En mode Carte, un indicateur sur la carte indique un fichier arrivé à expiration.*
+![expired_flag_card](assets/expired_flag_card.png)
+
+*Figure : En mode Carte, un indicateur sur la carte indique un fichier arrivé à expiration.*
 
 **Mode Liste**
 
-![expired_flag_list](assets/expired_flag_list.png)*Figure : En mode Liste, la colonne **[!UICONTROL État]**affiche la bannière **[!UICONTROL Expiré]**.*
+![expired_flag_list](assets/expired_flag_list.png)
+
+*Figure : En mode Liste, la colonne[!UICONTROL État]affiche la bannière[!UICONTROL Expiré].*
 
 Vous pouvez consulter l’état d’expiration d’une ressource dans la chronologie. Sélectionnez la ressource et choisissez Chronologie dans le menu de navigation globale.
 
@@ -59,7 +63,7 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Cliquez/appuyez sur l’option **[!UICONTROL Etat d’expiration]** pour accéder aux informations.
+1. Cliquez/appuyez sur l’option **[!UICONTROL État d’expiration]** pour la développer.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -73,14 +77,14 @@ Si vous modifiez la date d’expiration d’une ressource publiée à une date a
 
 En outre, si un problème ou une erreur empêche le planificateur de détecter les ressources expirées dans le cycle en cours, le planificateur réexamine ces ressources lors du cycle suivant et identifie leur statut expiré.
 
-To enable the Assets console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in AEM Configuration Manager.
+Pour activer la console Ressources afin d’afficher les ressources composites de référence avec les sous-ressources expirées, configurez un processus de **notification d’expiration Adobe CQ DAM** dans le gestionnaire de configuration AEM.
 
 1. Ouvrez AEM Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. Une fois la tâche terminée, les ressources qui possèdent des sous-ressources expirées et des ressources référencées sont affichées à l’état expiré dans les résultats de la recherche.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
-1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. Par exemple, l’expression exemple &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; déclenche la tâche à 00 heures.
+1. Pour exécuter régulièrement la tâche, effacez le champ **[!UICONTROL Règle du planificateur temporel]** et modifiez la durée en secondes dans le champ **[!UICONTROL Planificateur périodique]**. Par exemple, l’expression d’exemple ’0 0 0 &amp;ast; &amp;ast; ?’ déclenche la tâche à minuit.
 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
@@ -134,15 +138,15 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
 1. Appuyez sur Retour, puis sur **[!UICONTROL GlobalNav]** pour afficher le panneau Rechercher.
-1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
+1. Dans le panneau Rechercher, appuyez/cliquez sur **[!UICONTROL Publier l’état]** et sélectionnez **[!UICONTROL Publié]** pour rechercher des fichiers publiés dans AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
+1. Appuyez/cliquez sur **[!UICONTROL État d’approbation]** et cliquez sur l’option appropriée pour rechercher des fichiers approuvés ou rejetés.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. To search for assets based on their expiration status, select **[!UICONTROL Expiry Status]** in the Search panel and choose the appropriate option.
+1. Pour rechercher des fichiers en fonction de leur état d’expiration, sélectionnez **[!UICONTROL État d’expiration]** dans le panneau Rechercher et choisissez l’option appropriée.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -172,12 +176,12 @@ Une ressource est considérée comme protégée si l’une des conditions suivan
 ### Téléchargement de fichiers protégés par DRM {#downloading-drm-assets}
 
 1. In the Card view, select the assets you want to download and click **[!UICONTROL Download]**.
-1. Sur la page **[!UICONTROL Gestion des droits d’auteur]**, sélectionnez la ressource que vous souhaitez télécharger dans la liste.
+1. Dans la page **[!UICONTROL Gestion des droits d’auteur]**, sélectionnez le fichier à télécharger dans la liste.
 1. Dans le volet Licence, sélectionnez **[!UICONTROL Accepter]**. Une marque de sélection apparaît en regard de la ressource dont vous avez accepté le contrat de licence. Tap/click the **[!UICONTROL Download]** button.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Download]** button is enabled only when you choose to agree to the license agreement for a protected asset. However, if your selection comprises both protected and unprotected assets, only the protected assets are listed in the left pane and the **[!UICONTROL Download]** button is enabled to download the unprotected assets. Pour accepter le contrat de licence de plusieurs ressources protégées en même temps, sélectionnez-les dans la liste puis cliquez sur **[!UICONTROL Accepter]**.
+   >Le bouton **[!UICONTROL Télécharger]** n’est activé que lorsque vous acceptez le contrat de licence pour une ressource protégée. Toutefois, si votre sélection comprend des ressources protégées et non protégées, seules les ressources protégées sont répertoriées dans le volet de gauche et le bouton **[!UICONTROL Télécharger]** est activé pour télécharger les ressources non protégées. Pour accepter simultanément des contrats de licence pour plusieurs ressources protégées, sélectionnez les ressources dans la liste, puis **[!UICONTROL Accepter]**.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
