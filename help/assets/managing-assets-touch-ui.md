@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que téléc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -689,7 +689,9 @@ Vous pouvez également ajouter des zones cliquables à l’aide de l’éditeur 
 
 La frise chronologique permet d’afficher différents événements d’un élément sélectionné, comme les workflows actifs pour une ressource, les commentaires/annotations, les journaux d’activité et les versions.
 
-![Tri des entrées de chronologie pour un fichier](assets/sort_timeline.gif)*Figure : Tri des entrées de chronologie pour un fichier*
+![Tri des entrées de chronologie d’un fichier](assets/sort_timeline.gif)
+
+*Figure : Tri des entrées de chronologie pour un fichier*
 
 >[!NOTE]
 >
