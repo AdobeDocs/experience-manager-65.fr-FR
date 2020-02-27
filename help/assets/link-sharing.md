@@ -3,7 +3,7 @@ title: Générer une URL vers des ressources partagées
 description: Cet article décrit comment partager avec des tiers externes des actifs, des dossiers et des collections dans AEM Assets sous forme d’URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, 
 >
 >Vous devez disposer de l’autorisation Modifier la liste de contrôle d’accès sur le dossier ou la ressource que vous souhaitez partager en tant que lien.
 
-## Partager des ressources {#sharelink}
+## Partage de ressources {#sharelink}
 
 Pour générer une URL pour les ressources que vous souhaitez partager avec des utilisateurs, utilisez la boîte de dialogue Partage de lien. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
 
@@ -31,7 +31,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    ![Boîte de dialogue avec le partage de lien](assets/Link-sharing-dialog-box.png)
 
-   *Figure:Boîte de dialogue avec le partage de liens*
+   *Figure : Boîte de dialogue avec le partage de liens*
 
    Vous pouvez également effectuer les étapes 3 à 7 de cette procédure pour ajouter des destinataires de courrier électronique, configurer le délai d’expiration du lien et l’envoyer à partir de la boîte de dialogue.
 
@@ -47,14 +47,14 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    >[!NOTE]
    Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez le lien et partagez-le de nouveau avec les utilisateurs.
 
-1. From the web console, open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against each:
+1. Dans la console web, ouvrez la configuration de l’**[!UICONTROL externaliseur de liens Day CQ]** et modifiez les propriétés suivantes dans le champ **[!UICONTROL Domaines]** avec les valeurs mentionnées pour chacune d’elles :
 
    * local
    * author
    * serveur 
    Pour les propriétés local et author, saisissez respectivement l’URL du site local et l’URL de l’instance d’auteur. Les propriétés local et author ont la même valeur si vous exécutez une instance d’auteur AEM unique. Pour la propriété publish, indiquez l’URL de l’instance de publication.
 
-1. Dans la boîte de dialogue de l’adresse électronique du **[!UICONTROL Partage de lien]**, saisissez l’ID de message électronique de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez également partager le lien avec plusieurs utilisateurs.
+1. Dans la zone Adresse électronique de la boîte de dialogue **[!UICONTROL Partage de liens]**, saisissez l’ID de courrier électronique de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez également partager le lien avec plusieurs utilisateurs.
 
    Si l’utilisateur fait partie de votre entreprise, sélectionnez son ID de message électronique dans la liste des ID de message électronique suggérés, affichée sous la zone de saisie. Dans le cas d’un utilisateur externe, saisissez l’ID de message électronique complet puis sélectionnez-le dans la liste.
 
@@ -85,7 +85,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    Pour passer en mode Liste, cliquez/appuyez sur l’option de mise en page dans la barre d’outils.
 
-1. Pour générer un aperçu de la ressource, cliquez/appuyez sur la ressource partagée. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. Si vous avez partagé un dossier, cliquez/appuyez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
+1. Pour générer un aperçu de la ressource, cliquez/appuyez sur la ressource partagée. Pour fermer l’aperçu et revenir à la page **[!UICONTROL Experience Cloud]**, cliquez/appuyez sur **[!UICONTROL Précédent]** dans la barre d’outils. Si vous avez partagé un dossier, cliquez/appuyez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
@@ -97,7 +97,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
 1. Pour afficher les ressources que vous avez partagées sous forme de liens, accédez à l’interface utilisateur Ressources et appuyez sur le logo Experience Manager. Choose **[!UICONTROL Navigation]** from the list to display the Navigation pane.
-1. Dans le panneau Navigation, sélectionnez **[!UICONTROL Liens partagés]** pour afficher la liste des ressources partagées.
+1. Dans le volet de navigation, choisissez **[!UICONTROL Liens partagés]** pour afficher la liste des ressources partagées.
 1. To un-share an asset, select it and tap/click **[!UICONTROL Unshare]** from the toolbar. Un message de confirmation s’affiche. L’entrée du fichier est supprimée de la liste.
 
 ## Configuration du service service de messagerie Day CQ {#configmailservice}
@@ -118,9 +118,9 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 Lorsque vous téléchargez des ressources via le lien partagé avec la fonction de partage de lien, AEM compresse l’intégralité de la hiérarchie de cette ressource depuis le référentiel et renvoie la ressource sous forme de fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. To secure the system from a potential denial of service attack due to this situation, configure the maximum size using the **[!UICONTROL Max Content Size (uncompressed)]** parameter for [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in Configuration Manager. Si la taille non compressée de l’actif dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
 
-1. Cliquez ou appuyez sur le logo AEM puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
+1. Cliquez/appuyez sur le logo AEM, puis sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
-1. Open the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration in edit mode, and modify the value of the **[!UICONTROL Max Content Size (uncompressed)]** parameter.
+1. Ouvrez la configuration du **[!UICONTROL serveur proxy de partage de ressources ad hoc Day CQ DAM]** en mode d’édition, puis modifiez la valeur du paramètre **[!UICONTROL Taille maximale de contenu (non compressé)]**.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 
