@@ -4,7 +4,7 @@ description: Découvrez comment rechercher les ressources souhaitées dans AEM �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -49,7 +49,6 @@ Familiarisez-vous avec l&#39;interface de recherche et les actions disponibles.
 Vous pouvez découvrir plus rapidement les ressources de votre choix à partir de la page des résultats de recherche en utilisant le nombre de résultats de recherche attendus mis à jour dynamiquement dans les facettes de recherche. Le nombre prévu de ressources est mis à jour avant même d’appliquer le filtre de recherche. L’affichage du nombre prévu par rapport au filtre vous aide à parcourir rapidement et efficacement les résultats de la recherche. Pour plus d’informations, voir [Recherche de ressources dans AEM](search-assets.md).
 
 ![Affichage du nombre approximatif de ressources sans filtrer les résultats de la recherche dans les facettes de recherche.](assets/asset_search_results_in_facets_filters.png)
-
 
 *Figure : Affichez le nombre approximatif de fichiers sans filtrer les résultats de la recherche dans les facettes de recherche.*
 
@@ -100,7 +99,6 @@ Pour recevoir des suggestions pour plusieurs mots-clés de recherche, continuez 
 
 ![Tapez plusieurs mots-clés pour afficher les suggestions qui les correspondent à tous](assets/search_suggestionsmanykeywords.gif)
 
-
 *Figure : Tapez plusieurs mots-clés pour afficher les suggestions qui les correspondent à tous*
 
 ### Classement et augmentation des recherches {#searchrank}
@@ -133,7 +131,6 @@ AEM fournit diverses méthodes, telles que des filtres qui s’appliquent aux re
 
 ![Limiter les résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres](assets/search_folder_select.gif)
 
-
 *Figure :Limiter les résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres*
 
 ### Rechercher des images similaires {#visualsearch}
@@ -141,7 +138,6 @@ AEM fournit diverses méthodes, telles que des filtres qui s’appliquent aux re
 Pour rechercher des images visuellement similaires à une image sélectionnée par l’utilisateur, cliquez sur l’option **[!UICONTROL Rechercher des images similaires]** dans le mode Carte d’une image ou dans la barre d’outils. AEM affiche les images balisées intelligentes du référentiel DAM qui sont similaires à une image sélectionnée par l’utilisateur. Voir [Configuration de la recherche par analogie](#configvisualsearch).
 
 ![Rechercher des images similaires à l’aide de l’option de la vue Carte](assets/search_find_similar.png)
-
 
 *Figure :Rechercher des images similaires à l’aide de l’option de la vue Carte*
 
@@ -248,7 +244,6 @@ Pour accéder à l’interface du sélecteur de ressources, accédez à `https:/
 
 ![Parcourir et sélectionner un fichier dans le sélecteur de ressources](assets/assetpicker.png)
 
-
 *Figure :Parcourir et sélectionner un fichier dans le sélecteur de ressources*
 
 ## Restrictions {#limitations}
@@ -290,7 +285,6 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des fichie
 
 ![Comportement de recherche avec et sans guillemets](assets/search_with_quotes.gif)
 
-
 *Figure :Comportement de recherche avec et sans guillemets*
 
 **Rechercher avec un caractère générique** astérisque : Pour élargir la recherche, utilisez un astérisque avant ou après le mot recherché pour faire correspondre n’importe quel nombre de caractères. Par exemple, la recherche d’une exécution sans astérisque ne renvoie pas de fichiers contenant une variante du mot (y compris dans les métadonnées). Un astérisque remplace tout nombre de caractères. Par exemple :
@@ -301,7 +295,6 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des fichie
 * `*run*` renvoie toutes les combinaisons possibles.
 
 ![Illustration de l’utilisation d’un caractère générique astérisque dans la recherche de ressources à l’aide d’un exemple](assets/search_with_asterisk_run.gif)
-
 
 *Figure :Illustration de l’utilisation d’un caractère générique astérisque dans la recherche de ressources à l’aide d’un exemple*
 
@@ -315,13 +308,11 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des fichie
 
 ![Illustration de l’utilisation du caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple](assets/search_with_questionmark_run.gif)
 
-
 *Figure :Illustration de l’utilisation du caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple*
 
 **Exclure un mot-clé**: Utilisez le tiret pour rechercher des fichiers qui ne contiennent pas de mot-clé. Par exemple, `running -shoe` la requête renvoie les fichiers qui contiennent `running`, mais pas `shoe`. De même, `camp -night` la requête renvoie les fichiers qui contiennent `camp` mais pas `night`. Notez que `camp-night` la requête renvoie des fichiers qui contiennent à la fois `camp` et `night`.
 
 ![Utilisation du tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu](assets/search_dash_exclude_keyword.gif)
-
 
 *Figure :Utilisation du tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu*
 
@@ -423,7 +414,6 @@ Pour afficher toutes les métadonnées d’un fichier, sélectionnez-le, puis cl
 Pour vérifier les commentaires concernant l’historique d’une ressource ou d’une version, cliquez sur la ressource pour ouvrir un aperçu de grande taille. Ouvrez le journal dans le rail de gauche et sélectionnez **[!UICONTROL Commentaires]** ou **[!UICONTROL Versions]**. Vous pouvez également trier le journal, par exemple par commentaires ou versions dans un ordre chronologique.
 
 ![Tri des entrées de chronologie pour un fichier de recherche](assets/sort_timeline_search_results.gif)
-
 
 *Figure :Tri des entrées de chronologie pour un fichier de recherche*
 
