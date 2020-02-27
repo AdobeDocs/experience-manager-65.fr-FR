@@ -3,7 +3,7 @@ title: Activation de la détection des ressources en double
 description: Découvrez comment activer la détection des ressources en double dans AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -17,7 +17,6 @@ Si vous essayez de transférer une ressource qui existe dans Adobe Experience Ma
 1. Select the **[!UICONTROL detect duplicate]** option, and click/tap **[!UICONTROL Save]**.
 
    ![Sélection de l’option de détection des doublons dans le servlet](assets/chlimage_1-377.png)
-
 
    *Figure : Sélectionnez l’option de détection des doublons dans la servlet.*
 
