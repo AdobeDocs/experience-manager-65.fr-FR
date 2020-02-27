@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ---
 
@@ -362,8 +362,10 @@ Des informations supplémentaires pour jusqu’à 10 clients (instances de seco
 
 ## Maintenance du référentiel Cold Standby {#cold-standby-repository-maintenance}
 
+### Nettoyage des révisions {#revision-clean}
+
 >[!NOTE]
-Si vous exécutez [Nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md) sur l’instance principale, la procédure manuelle présentée ci-dessous n’est pas nécessaire. Addittionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
+Si vous exécutez [Nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md) sur l’instance principale, la procédure manuelle présentée ci-dessous n’est pas nécessaire. Additionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
 
 >[!NOTE]
 N’exécutez pas le nettoyage de révisions hors ligne sur l’instance de secours. Cela n’est pas nécessaire et ne réduit pas la taille de l’entrepôt de segments.
