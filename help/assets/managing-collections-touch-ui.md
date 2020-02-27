@@ -150,19 +150,33 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 1. Dans la page **[!UICONTROL Métadonnées de la collection]**, affichez les métadonnées de la collection à partir des onglets **[!UICONTROL Simple]** et **[!UICONTROL Avancé]**.
 1. Modify the metadata, as necessary, and then tap/click **[!UICONTROL Save &amp; Close]** from the toolbar to save the changes.
 
-### Edit collection metadata in bulk {#editing-collection-metadata-in-bulk}
+## Modification des métadonnées de plusieurs collections en bloc {#editing-collection-metadata-in-bulk}
 
 Vous pouvez modifier simultanément les métadonnées de plusieurs collections. Cette fonctionnalité vous aide à répliquer rapidement des métadonnées communes dans plusieurs collections.
 
 1. Dans la console Collections, sélectionnez au moins deux collections dont vous souhaitez modifier les métadonnées.
 1. From the toolbar, tap/click the **[!UICONTROL Properties]** icon.
 1. Dans la page **[!UICONTROL Métadonnées de collection]**, modifiez les métadonnées sous les onglets **[!UICONTROL Simple]** et **[!UICONTROL Avancé]**, si nécessaire.
+1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
+
+   >[!NOTE]
+   >
+   >* Dans la page des propriétés de collection, vous pouvez supprimer des collections de la liste des collections en les désélectionnant. La liste des collections contient toutes les collections sélectionnées par défaut. Les métadonnées des collections que vous supprimez ne sont pas mises à jour.
+   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
+
+
 1. Tap/click **[!UICONTROL Save &amp; Close]** from the toolbar, and then close the confirmation dialog to complete the process.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
 
    >[!NOTE]
    >
-   >Le mode d’ajout fonctionne uniquement pour les champs qui peuvent contenir plusieurs valeurs. Pour les champs qui ne peuvent contenir qu’une seule valeur, les nouvelles métadonnées ne sont pas ajoutées à la valeur existante dans le champ, même si vous sélectionnez le mode **[!UICONTROL Ajouter]**.
+   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes pour ces collections. Utilisez le mode [!UICONTROL Ajouter] pour ajouter de nouvelles valeurs aux métadonnées existantes dans les champs pouvant contenir plusieurs valeurs. Les champs à valeur unique sont toujours remplacés. Any tags you add in the [!UICONTROL Tags] field, are appended to the existing list of tags in the metadata.
+
+To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
+
+>[!TIP]
+>
+>La méthode de modification en masse fonctionne pour les fichiers disponibles dans une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour [les métadonnées en masse après une recherche](/help/assets/search-assets.md#metadataupdates).
 
 ## Rechercher des collections {#searching-collections}
 
@@ -206,34 +220,6 @@ Lorsque vous téléchargez une collection, l’intégralité de la hiérarchie d
 1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, appuyez/cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. Sélectionnez l’option **[!UICONTROL Courrier électronique]** pour envoyer une notification électronique au propriétaire de la collection.
 
    Lorsque vous sélectionnez une collection à télécharger, l’ensemble de la hiérarchie de dossiers sous cette collection est téléchargé. To include each collection you download (including assets in child collections nested under the parent collection) in an individual folder, select **[!UICONTROL Create separate folder for each asset]**.
-
-## Edit metadata properties of multiple collections {#edit-metadata-in-bulk}
-
-Les ressources d’Adobe Enterprise Manager (AEM) vous permettent de modifier en bloc les métadonnées de nombreuses collections. Utilisez la page [!UICONTROL Propriétés] pour effectuer des modifications de métadonnées sur plusieurs collections, par exemple pour modifier les propriétés des métadonnées en une valeur commune ou ajouter ou modifier des balises.
-
-To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
-
->[!NOTE]
->
->Les méthodes de modification en masse fonctionnent pour les ressources disponibles dans une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour [les métadonnées en masse après une recherche](/help/assets/search-assets.md#metadataupdates).
-
-1. Dans la console des collections, sélectionnez les collections à modifier.
-1. From the toolbar, tap/click **[!UICONTROL Properties]** to open the [!UICONTROL Properties] page for the selected collections.
-1. Modifiez les propriétés de métadonnées des collections sélectionnées dans les différents onglets.
-
-   >[!NOTE]
-   >
-   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes de ces collections, à l’exception des balises. Any tags you add in the **[!UICONTROL Tags]** field, are appended to the existing list of tags in the metadata.
-
-1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
-
-   >[!NOTE]
-   >
-   >* Dans la page des propriétés de collection, vous pouvez supprimer des collections de la liste des collections en les désélectionnant. La liste des collections contient toutes les collections sélectionnées par défaut. Les métadonnées des collections que vous supprimez ne sont pas mises à jour.
-   >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
-
-
-1. Enregistrez les modifications.
 
 ## Création de collections imbriquées {#creating-nested-collections}
 
@@ -300,6 +286,5 @@ Vous pouvez exécuter un processus pour les ressources d’une collection. Si la
 >[!MORELIKETHIS]
 >
 >* [Configuration des notifications électroniques de ressources Experience Manager](/help/sites-administering/notification.md#assetsconfig)
->* [Modification des propriétés de métadonnées de plusieurs collections](managing-multiple-assets.md)
 >* [Création d’une tâche de révision pour les collections](bulk-approval.md)
 
