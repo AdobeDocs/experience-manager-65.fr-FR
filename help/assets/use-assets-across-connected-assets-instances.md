@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a7082bc47bea1b8514121f482911da44919da73c
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -27,24 +27,15 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 * utilisateurs faisant partie de groupes d’utilisateurs appropriés sur chaque déploiement.
 * Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. AEM Assets 6.5 fonctionne avec AEM en tant que service Cloud. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)Cloud.
 
-   |  | AEM Sites en tant que Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
+   |  | AEM Sites as a Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
    |---|---|---|---|
-   | **AEM Assets en tant que Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
+   | **AEM Assets as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur AMS** | pas de prise en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur site** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
 
 ### Formats de fichiers pris en charge {#mimetypes}
 
-Les auteurs peuvent rechercher des images et les types de documents suivants dans l’Outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components.
-
-* Microsoft Word (DOC et DOCX)
-* Microsoft Excel (XLS et XLSX)
-* Microsoft PowerPoint (PPT et PPTX)
-* Adobe PDF (PDF)
-* OpenDocument Text (ODT)
-* Rich Text Format (RTF)
-* Texte brut (TXT)
-* Pages Web (HTML)
+Les auteurs peuvent rechercher des images et les types de documents suivants dans l’Outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Pour obtenir la liste des formats pris en charge, voir Formats [pris en charge par les ressources](assets-formats.md#supported-document-formats)connectées.
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
 
