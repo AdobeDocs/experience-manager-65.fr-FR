@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: Liste des formats de fichiers pris en charge par AEM Assets et fonctions prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1e70a1a0f82bcdf698dec378df1c3d59815e692b
+source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
 
 ---
 
@@ -93,26 +93,26 @@ La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images 
 
 Les formats de document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
 
-| Format | Stockage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | Statistiques |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
-| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| ODT | ✓ | ✓ | ✓ |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |  |  |  |  |
-| RTF | ✓ | ✓ | ✓ |  |  |  |  |
-| TXT | ✓ | ✓ | ✓ |  |  |  |  |
-| XLS | ✓ | ✓ | ✓ |  |  |  |  |
-| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  |
-| ODS | ✓ | ✓ | ✓ |  |  |  |  |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ODP | ✓ | ✓ | ✓ |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
-| PS | ✓ | ✓ |  |  |  |  |  |
-| QXP | ✓ | ✓ |  |  |  |  |  |
-| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| Format | Stockage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | Statistiques | Ressources connectées |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
+| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| ODT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| RTF | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| TXT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| XLS | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
+| ODS | ✓ | ✓ | ✓ |  |  |  |  |  |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| ODP | ✓ | ✓ | ✓ |  |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
+| PS | ✓ | ✓ |  |  |  |  |  |  |
+| QXP | ✓ | ✓ |  |  |  |  |  |  |
+| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
 Les formats de document pris en charge pour les fonctionnalités de média dynamique sont les suivants :
 
@@ -272,5 +272,4 @@ See also [Enabling MIME type-based Assets/Scene7 upload job parameter support](/
 >[!MORELIKETHIS]
 >
 >* [Activation de la prise en charge du paramètre de tâche de téléchargement Assets/Scene7 basé sur le type MIME](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
->* [Formats pris en charge pour la fonction Ressources connectées](/help/assets/use-assets-across-connected-assets-instances.md)
 
