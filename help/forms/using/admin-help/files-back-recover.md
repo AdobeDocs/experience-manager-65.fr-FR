@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -134,7 +134,7 @@ Voir les sections [Stratégies de sauvegarde](https://articles.techrepublic.com.
 
 Utilisez MySQLAdmin ou modifiez les fichiers INI dans Windows pour configurer votre base de données MySQL pour qu’elle s’exécute en mode de consignation binaire (Voir [Connexion binaire MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)). Un outil de sauvegarde à chaud pour MySQL est également disponible à partir du logiciel InnoBase (Voir [Sauvegarde à chaud avec Innobase](https://www.innodb.com/hot-backup/features.md)).
 
-**Remarque**: *Le mode de connexion binaire par défaut pour MySQL est Instruction, qui est incompatible avec les tables utilisées par Content Services (obsolète). L’utilisation de la connexion binaire dans ce mode par défaut fait échouer Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de connexion mixte. Pour activer la connexion mixte, ajoutez l’argument suivant au fichier my.ini :*
+**Note**: *The default binary logging mode for MySQL is &quot;Statement&quot;, which is incompatible with tables used by Content Services (Deprecated). L’utilisation de la connexion binaire dans ce mode par défaut fait échouer Content Services (obsolète). Si votre système inclut Content Services (obsolète), utilisez le mode de connexion mixte. Pour activer la connexion mixte, ajoutez l’argument suivant au fichier my.ini :*
 `binlog_format=mixed log-bin=logname`
 
 Vous pouvez utiliser l’utilitaire mysqldump pour effectuer la sauvegarde intégrale de la base de données. Les sauvegardes intégrales sont nécessaires, mais ne sont pas toujours pratiques. Elles génèrent des fichiers de sauvegarde volumineux et leur exécution prend du temps. To do an incremental backup, ensure that you start the server with the - `log-bin` option as described in the previous section. A chaque fois que le serveur MySQL redémarre, il cesse d’écrire dans le journal binaire courant, en crée un nouveau, qui devient dès lors le nouveau journal binaire courant. You can force a switch manually with the `FLUSH LOGS SQL` command. Après la première sauvegarde intégrale, les sauvegardes incrémentielles suivantes sont effectuées en utilisant l’utilitaire mysqladmin avec la commande `flush-logs`, qui crée le fichier journal suivant.
@@ -154,7 +154,7 @@ Le répertoire racine de stockage de contenu contient le référentiel Content S
 
 Le répertoire racine de stockage de contenu est créé à l’installation de Content Services (obsolète). Le processus d’installation d’AEM Forms détermine l’emplacement du répertoire racine de stockage de contenu.
 
-The default location for the Content Storage Root directory is *[aem-forms root]*/lccs_data.
+The default location for the Content Storage Root directory is `[aem-forms root]/lccs_data`.
 
 Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
 
@@ -176,7 +176,7 @@ Lors de l’installation de Content Services (obsolète) dans un environnement o
 
 **Répertoire racine d’index :** répertoire créé sur chaque nœud de la grappe et ayant toujours les mêmes chemin et nom.
 
-The default location for the Content Storage Root directory is *[GDS root]*/lccs_data, where *[GDS root]* is the location described in [GDS location](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
+The default location for the Content Storage Root directory is `[GDS root]/lccs_data`, where `[GDS root]` is the location described in [GDS location](files-back-recover.md#gds-location). Sauvegardez les répertoires suivants situés dans le répertoire racine de stockage de contenu :
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ The default location for the Content Storage Root directory is *[GDS root]*/lccs
 
 Si le répertoire /backup-lucene-indexes est absent, sauvegardez le répertoire /lucene-indexes (également situé dans le répertoire racine de stockage de contenu). Si le répertoire /backup-lucene-indexes existe, ne sauvegardez pas le répertoire /lucene-indexes car cela pourrait générer des erreurs.
 
-The default location for the Index Root directory is *[aem-forms root]*/lucene-indexes on each node.
+The default location for the Index Root directory is `[aem-forms root]/lucene-indexes` on each node.
 
 ## Polices personnalisées {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ Sauvegardez séparément les polices supplémentaires éventuellement installée
 
 >[!NOTE]
 >
->By default, the Adobe fonts installed with AEM forms are located in the [aem-forms root]/fonts directory.
+>By default, the Adobe fonts installed with AEM forms are located in the `[aem-forms root]/fonts` directory.
 
 Si vous réinitialisez le système d’exploitation sur l’ordinateur hôte et que vous souhaitez utiliser des polices du précédent système d’exploitation, le contenu du répertoire des polices système doit également être sauvegardé. (Pour plus d’instructions, reportez-vous à la documentation de votre système d’exploitation).
