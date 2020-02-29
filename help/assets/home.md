@@ -4,7 +4,7 @@ seo-title: Guide de l’utilisateur d’AEM 6.5 Assets
 description: Ce guide porte sur toutes les tâches d’AEM Assets, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 seo-description: Couvre toutes les tâches AEM Assets, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: b90343874d5afd9858d8a6d82828eabdfa1d3ccd
 
 ---
 
@@ -39,11 +39,11 @@ Ce guide porte sur toutes les tâches d’AEM Assets, telles que la création, l
 
 ## Ressources AEM clés
 
-* [Didacticiels AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Didacticiels vidéo AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [Forum de la communauté AEM Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guide de l’utilisateur du répartiteur](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Guide de l&#39;utilisateur des composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
