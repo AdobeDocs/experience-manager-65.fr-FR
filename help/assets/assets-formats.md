@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: Liste des formats de fichiers pris en charge par AEM Assets et fonctions prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
 
 ---
 
@@ -93,7 +93,7 @@ La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images 
 
 Les formats de document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
 
-| Format | Stockage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | Statistiques | Ressources connectées |
+| Format | Stockage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Statistiques](touch-ui-asset-insights.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
