@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -43,7 +43,7 @@ Les valeurs suivantes illustrent des exemples de valeurs URI :
 
 >[!NOTE]
 >
->Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur Web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur Web https://[serveur]:port[/référentiel]serveur. Vous pouvez vérifier les résultats de démarrage rapide associés à la section Utilisation du référentiel AEM Forms à l’aide d’un navigateur Web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez le voir dans un navigateur Web. (See [Quick Start (SOAP mode): Writing a resource using the Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur Web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur Web `https://[server name]:[server port]/repository`. Vous pouvez vérifier les résultats de démarrage rapide associés à la section Utilisation du référentiel AEM Forms à l’aide d’un navigateur Web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez le voir dans un navigateur Web. (See [Quick Start (SOAP mode): Writing a resource using the Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 L’API du référentiel fournit un certain nombre d’opérations que vous pouvez utiliser pour stocker et récupérer des informations du référentiel. Par exemple, vous pouvez obtenir une liste de ressources ou récupérer des ressources spécifiques stockées dans le référentiel lorsqu’une ressource est nécessaire dans le cadre du traitement d’une application.
 
