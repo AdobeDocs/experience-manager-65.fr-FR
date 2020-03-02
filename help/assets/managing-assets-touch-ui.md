@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que téléc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
 
 ---
 
@@ -384,7 +384,7 @@ Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressour
 
 Quelques attributs uniques à une copie spécifique d’une ressource ne sont pas reportés. Voici quelques exemples :
 
-* Chemin relatif, ID de la ressource, date et heure de création, versions et historique des versions. Some of these properties are indicated by the properties `dam:relativePath`, `jcr:uuid`, `jcr:created`, and `cq:name`.
+* ID du fichier, date et heure de création, versions et historique des versions. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
 * L’heure de création et les chemins référencés sont uniques pour chaque ressource et chaque rendu.
 
