@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -963,7 +963,7 @@ Le type de données complet du type complexe AEM Forms est affecté à la balise
 Les champs de la classe ActionScript correspondent aux champs appartenant au type complexe AEM Forms. Les six champs situés dans la classe ActionScript du client correspondent aux champs qui appartiennent à `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
-Une bonne méthode pour déterminer les noms de champ appartenant à un type complexe Forms consiste à afficher le fichier WSDL d’un service dans un navigateur Web. Un WSDL spécifie les types complexes d’un service et les membres de données correspondants. Le fichier WSDL suivant est utilisé pour le service clientèle : *https://[votreServeur]:[votrePort]/savon/services/CustomerService?wsdl.*
+Une bonne méthode pour déterminer les noms de champ appartenant à un type complexe Forms consiste à afficher le fichier WSDL d’un service dans un navigateur Web. Un WSDL spécifie les types complexes d’un service et les membres de données correspondants. Le fichier WSDL suivant est utilisé pour le service clientèle : `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 La classe ActionScript du client appartient à un package nommé customer. Il est recommandé de placer toutes les classes ActionScript qui correspondent à des types de données AEM Forms complexes dans leur propre package. Créez un dossier dans le dossier src du projet Flex et importez le fichier ActionScript dans le dossier, comme illustré ci-dessous.
 
