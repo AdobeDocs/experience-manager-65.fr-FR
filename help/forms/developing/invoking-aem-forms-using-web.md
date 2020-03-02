@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -368,7 +368,7 @@ Vous pouvez utiliser JAX-WS pour convertir un fichier WSDL de service Forms en c
 1. Installez JDK 1.6 ou version ultérieure.
 
    * Ajoutez le répertoire bin JDK à votre chemin de classe.
-   * Ajoutez le répertoire bin JRE à votre chemin de classe. Ce chutier se trouve dans le répertoire [*JDK_INSTALL_LOCATION*]/jre.
+   * Ajoutez le répertoire bin JRE à votre chemin de classe. Ce chutier se trouve dans le `[JDK_INSTALL_LOCATION]/jre` répertoire.
    * Définissez la variable `JAVA_HOME` d’environnement sur le répertoire dans lequel vous avez installé le JDK.
    Le JDK 1.6 inclut le programme wsimport utilisé dans le fichier build.xml. Le JDK 1.5 n’inclut pas ce programme.
 
@@ -558,7 +558,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
    * xalan.jar
    * xbean.jar
    * xercesImpl.jar
-   Ces fichiers JAR se trouvent dans le répertoire *[d’]* installation/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty directory.
+   Ces fichiers JAR se trouvent dans le `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` répertoire.
 
 **Voir également**
 
