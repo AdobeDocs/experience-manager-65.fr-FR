@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -191,7 +191,7 @@ L’exemple de code Java suivant fusionne deux documents source PDF nommés *map
 
 ## Démarrage rapide (mode SOAP) : Démontage d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du document DDX est *shell_disassemble.xml*. Chaque document PDF démonté est nommé *[ResultPDFNumber].pdf*. En d’autres termes, le premier document PDF désassemblé s’appelle *ResultPDF1.pdf.* Pour plus d’informations sur le document DDX *shell_disassemble.xml* utilisé dans cet exemple de code, voir Démontage [programmatique de documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
+L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du document DDX est *shell_disassemble.xml*. Chaque document PDF démonté est nommé `ResultPDF[Number].pdf`. En d’autres termes, le premier document PDF désassemblé s’appelle *ResultPDF1.pdf.* Pour plus d’informations sur le document DDX *shell_disassemble.xml* utilisé dans cet exemple de code, voir Démontage [programmatique de documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
 
 ```as3
  /*
