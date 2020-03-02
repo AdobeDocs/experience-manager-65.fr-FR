@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -32,7 +32,7 @@ Avant d’ajouter un rapport personnalisé, procédez comme suit :
 
 L’interface REST de CRX QueryBuilder expose les fonctionnalités du Créateur de requêtes de partage de ressources au moyen d’une API Java et d’une API REST. Découvrez comment utiliser l’interface [REST de](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder avant d’effectuer les étapes suivantes :
 
-1. Accédez à l’URL https://[server]:[port]/lc/bin/querybuilder.json
+1. Naviguer jusqu’à l’URL `https://[server]:[port]/lc/bin/querybuilder.json`
 1. Créez une requête basée sur la structure de noeud de stockage et les propriétés de noeud Process Reporting.
 
    Vous pouvez spécifier des paramètres facultatifs pour spécifier le décalage, la limite, les accès et les propriétés. Vous pouvez figer les arguments des rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
