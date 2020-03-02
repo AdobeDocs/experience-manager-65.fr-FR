@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -713,7 +713,7 @@ Si vous prévoyez de travailler sur des fichiers de dialogue ou de script XML, v
 Les fichiers de boîte de dialogue et de script résident dans le fichier appmondata.jar. Avant de pouvoir modifier ces fichiers ou ajouter de nouveaux fichiers de script ou de boîte de dialogue, vous devez décompresser ce fichier JAR. Supposons, par exemple, que vous souhaitiez ajouter la prise en charge de l’application EditPlus. Vous créez deux fichiers XML, nommés appmon.editplus.script.en_US.xml et appmon.editplus.script.addition.en_US.xml. Ces scripts XML doivent être ajoutés au fichier adobe-appmondata.jar à deux emplacements, comme indiqué ci-dessous :
 
 * adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Le fichier adobe-livecycle-native-jboss-x86_win32.ear se trouve dans le dossier d’exportation `[AEM forms install directory]\configurationManager`. (si AEM Forms est déployé sur un autre serveur d’applications J2EE, remplacez le fichier adobe-livecycle-native-jboss-x86_win32.ear par le fichier EAR correspondant à votre serveur d’applications J2EE.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (le fichier adobe-appmondata.jar se trouve dans le fichier adobe-generatepdf-dsc.jar). Le fichier adobe-generatepdf-dsc.jar se trouve dans le répertoire *[d’installation\de déploiement d’]* AEM forms.
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (le fichier adobe-appmondata.jar se trouve dans le fichier adobe-generatepdf-dsc.jar). Le fichier adobe-generatepdf-dsc.jar se trouve dans le `[AEM forms install directory]\deploy` dossier.
 
 Après avoir ajouté ces fichiers XML au fichier adobe-appmondata.jar, vous devez redéployer le composant GeneratePDF. Pour ajouter des fichiers XML de boîte de dialogue et de script au fichier adobe-appmondata.jar, procédez comme suit :
 
@@ -741,7 +741,7 @@ Après avoir ajouté ces fichiers XML au fichier adobe-appmondata.jar, vous deve
 
 Si vous souhaitez diriger des fichiers vers une nouvelle application native, vous devez créer un fichier XML de script pour cette application. Si vous souhaitez modifier la manière dont le service Generate PDF interagit avec une application native déjà prise en charge, vous devez modifier le script de cette application.
 
-Le script contient des instructions qui parcourent les éléments de fenêtre de l’application native et qui fournissent des réponses spécifiques à ces éléments. Le fichier qui contient ces informations s’affiche.*[appname]*.script.*[locale]*.xml. Par exemple, appmon.notes.script.en_US.xml.
+Le script contient des instructions qui parcourent les éléments de fenêtre de l’application native et qui fournissent des réponses spécifiques à ces éléments. Le fichier contenant ces informations est `appmon.[appname]``.script.[locale].xml`. Par exemple, appmon.notes.script.en_US.xml.
 
 #### Identification des étapes que le script doit exécuter {#identifying-steps-the-script-must-execute}
 
@@ -836,16 +836,16 @@ Si vous créez un script pour une application native qui n’était pas prise en
 
 >[!NOTE]
 >
->Dans ce contexte, le terme &quot;additionnel&quot; désigne le contenu de l’appmon.[applicationame].addition.[fichier locale].xml. Un tel fichier spécifie les remplacements et les ajouts au fichier XML de la boîte de dialogue.
+>Dans ce contexte, le terme &quot;supplémentaire&quot; désigne le contenu du `appmon.[applicationname].addition.[locale].xml` fichier. Un tel fichier spécifie les remplacements et les ajouts au fichier XML de la boîte de dialogue.
 
 Vous pouvez également modifier le fichier XML de boîte de dialogue supplémentaire pour une application native à ces fins :
 
 * Pour remplacer le fichier XML de boîte de dialogue d’une application avec une réponse différente
 * Pour ajouter une réponse à une boîte de dialogue qui n’est pas traitée dans le fichier XML de la boîte de dialogue pour cette application
 
-Le nom de fichier qui identifie un fichier dialogXML supplémentaire est commun.*[appname]*.addition.*[locale]*.xml. Par exemple, appmon.excel.addition.en_US.xml.
+Le nom de fichier qui identifie un fichier dialogXML supplémentaire est `appmon.[appname].addition.[locale].xml`. Par exemple, appmon.excel.addition.en_US.xml.
 
-Le nom du fichier XML de boîte de dialogue supplémentaire doit utiliser le format appmon.*[applicationame]*.addition.*[locale]*.xml, où le *nom d’application* doit correspondre exactement au nom de l’application utilisé dans le fichier de configuration XML et dans le script.
+Le nom du fichier XML de la boîte de dialogue supplémentaire doit utiliser le format `appmon.[applicationname].addition.[locale].xml`, où ** le nom de l’application doit correspondre exactement au nom de l’application utilisé dans le fichier de configuration XML et dans le script.
 
 >[!NOTE]
 >
@@ -898,7 +898,7 @@ Dans cet exemple, les données de configuration par défaut fournies avec le ser
 
 #### Création d’une variable d’environnement pour localiser l’application native {#creating-an-environment-variable-to-locate-the-native-application}
 
-Créez une variable d’environnement qui spécifie l’emplacement du fichier exécutable natif de l’application. La variable doit utiliser le format *[applicationame]*_PATH, où *applicationame* doit correspondre exactement au nom de l’application utilisé dans le fichier de configuration XML et dans le script, et où le chemin d’accès contient le chemin d’accès au fichier exécutable sous la forme de guillemets doubles. Un exemple de cette variable d’environnement est `Photoshop_PATH`.
+Créez une variable d’environnement qui spécifie l’emplacement du fichier exécutable natif de l’application. La variable doit utiliser le format `[applicationname]_PATH`, où le *nom d’application* doit correspondre exactement au nom d’application utilisé dans le fichier de configuration XML et dans le script, et où le chemin d’accès contient le chemin d’accès au fichier exécutable sous la forme de guillemets doubles. Un exemple de cette variable d’environnement est `Photoshop_PATH`.
 
 Après avoir créé la nouvelle variable d’environnement, vous devez redémarrer le serveur sur lequel le service Generate PDF est déployé.
 
@@ -907,7 +907,7 @@ Après avoir créé la nouvelle variable d’environnement, vous devez redémarr
 1. Sélectionnez **Panneau de configuration > Système**.
 1. Dans la boîte de dialogue Propriétés système, cliquez sur l’onglet **Avancé** , puis sur Variables **d’** environnement.
 1. Sous Variables système dans la boîte de dialogue Variables d’environnement, cliquez sur **Nouveau**.
-1. Dans la boîte de dialogue Nouvelle variable système, dans la zone Nom **de la** variable, saisissez un nom qui utilise le format *[applicationname]*_PATH.
+1. Dans la boîte de dialogue Nouvelle variable système, dans la zone Nom **de la** variable, saisissez un nom qui utilise le format `[applicationname]_PATH`.
 1. Dans la zone **Variable value** , saisissez le chemin d’accès complet et le nom de fichier du fichier exécutable de l’application, puis cliquez sur **OK**. Par exemple, saisissez: `c:\windows\Notepad.exe`
 1. Dans la boîte de dialogue Variables d’environnement, cliquez sur **OK**.
 
