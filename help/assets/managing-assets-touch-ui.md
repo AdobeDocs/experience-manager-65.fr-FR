@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que téléc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
+source-git-commit: 68692e7b82aecd81a21f3a970f3707f2ff39792a
 
 ---
 
@@ -627,7 +627,7 @@ En mode Carte, l’option **[!UICONTROL Sélectionner]** s’affiche sous forme 
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Lorsque vous parcourez un dossier ou une collection dans l’interface utilisateur Ressources d’un navigateur, vous pouvez sélectionner tous les fichiers à l’aide de l’option [!UICONTROL Sélectionner tout] située dans le coin supérieur droit.
+Lorsque vous parcourez un dossier ou une collection dans l’interface utilisateur Ressources d’un navigateur, vous pouvez sélectionner tous les fichiers affichés ou chargés à l’aide de l’option [!UICONTROL Sélectionner tout] située dans le coin supérieur droit. Si vous ne faites pas défiler l’écran ci-dessous, seuls 100 fichiers sont chargés en mode Carte et 200 en mode Liste. Sélectionner tout sélectionne uniquement ces nombreux fichiers.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
