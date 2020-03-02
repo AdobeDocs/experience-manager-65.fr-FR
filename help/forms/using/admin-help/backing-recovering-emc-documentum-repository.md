@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -189,22 +189,22 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
 1. Définissez le mot de passe du fichier de configuration comme suit :
 
-   * Open a command prompt, and change to *[NetWorker_root]*\Legato\nsr\bin.
+   * Ouvrez une invite de commande et passez à `[NetWorker_root]\Legato\nsr\bin`.
    * Run the following command: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
 1. Créez les fichiers de commande (.bat) exécutables utilisés pour sauvegarder la base de données (reportez-vous à la documentation de NetWorker). Définissez les fichiers de commandes en fonction de votre installation.
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom *d’utilisateur`-U`*[mot ]*de passe`-P`*[]*_de_passe&lt;nom_bdd>`-l full`**
+      `NetWorker_database_module_root` `-s`*&lt;Nom_serveur_NetWorker>*`-U``[username]`motde passe`-P`*[]*`-l full`*&lt;nom_bdd>*
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
-      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom *d’utilisateur`-U`*[mot ]*de passe`-P`*[]*_de_passe&lt;nom_bdd>`-l 1 -R`**
+      `[NetWorker_database_module_root]` `-s`*&lt;Nom_serveur_NetWorker>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;nom_bdd>*
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-      *[NetWorker_database_module_root]* `-s`*&lt;Nom_serveur_NetWorker>Nom *d’utilisateur`-U`*[mot ]*de passe`-P`*[]*_de_passe&lt;nom_bdd>`-l incr -R`**
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]``-P``[password]` `-l incr -R`*&lt;nom_bdd>*
 
       Où :
 
@@ -240,7 +240,7 @@ Après avoir réalisé une sauvegarde complète des données AEM forms, procéde
 >
 >les scripts de commande exigent que le chemin d’accès complet soit configuré sur le fichier nsrnmd_win.cfg créé dans la section [Préparation d’EMC Document Content Server pour la sauvegarde et la récupération](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Open a command prompt, and change to *[NetWorker_root]*\Legato\nsr\bin.
+1. Ouvrez une invite de commande et passez à `[NetWorker_root]\Legato\nsr\bin`.
 1. Exécutez la commande suivante :
 
    ```as3
@@ -266,4 +266,3 @@ Avant de restaurer les données de votre environnement AEM forms, procédez comm
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-
