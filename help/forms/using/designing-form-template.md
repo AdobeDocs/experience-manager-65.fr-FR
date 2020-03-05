@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -35,8 +35,12 @@ L’onglet Aperçu HTML est ajouté au mode de création pour permettre aux conc
 
 #### Signature à main levée {#scribble-signature}
 
-L’objectif clé des formulaires HTML5 est les périphériques tactiles. Par conséquent, une nouvelle commande de signature tactile est ajoutée à AEM Form Designer. Vous pouvez cliquer ou faire glisser le contrôle de signature tactile sur votre modèle de formulaire et le configurer. Il est rendu sous forme de champ de saisie tactile dans le rendu HTML5 et peut être utilisé pour apposer une signature tactile sur les périphériques tactiles. Sur les ordinateurs de bureau, elle peut être utilisée comme un champ de saisie tactile à l’aide de la commande de souris. For more information on how to use this feature, see [XFA Scribble Field](../../forms/using/scribble-signature.md).
+L’objectif clé des formulaires HTML5 est les périphériques tactiles. Par conséquent, une nouvelle commande de signature tactile est ajoutée à AEM Form Designer. Vous pouvez cliquer ou faire glisser et déposer le contrôle de signature tactile sur votre modèle de formulaire et le configurer. Il est rendu sous forme de champ de saisie tactile dans le rendu HTML5 et peut être utilisé pour apposer une signature tactile sur les périphériques tactiles. Sur les ordinateurs de bureau, elle peut être utilisée comme un champ de saisie tactile à l’aide de la commande de souris. For more information on how to use this feature, see [XFA Scribble Field](../../forms/using/scribble-signature.md).
 
 ![4](assets/4.png)
+
+#### Rich text format {#rich-text-format}
+
+Pour ajouter une liste d’options de formatage à un champ de texte dans le formulaire HTML5 rendu, vous pouvez définir un format de champ pour le champ de texte dans Forms Designer. Appuyez sur le champ de texte en mode **[!UICONTROL Création]**. Dans l’onglet **[!UICONTROL Champ]** , sélectionnez Texte **** enrichi dans la liste déroulante Format **[!UICONTROL de]** champ pour appliquer les paramètres. Le champ de texte affiche les options de formatage lors du rendu dans un formulaire HTML5.
 
 [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
