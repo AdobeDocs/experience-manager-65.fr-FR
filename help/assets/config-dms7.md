@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44c0b6c5a8e7688b597e4b9de857d7f54ff23d49
+source-git-commit: a986eb3154fba51de20e31b87e9082631f057d27
 
 ---
 
@@ -68,11 +68,13 @@ Feature Pack 18912 vous permet soit d’assimiler des fichiers en masse par FTP,
 
 Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md) des ressources en vrac.
 
-## Configuration des Services cloud Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Création d’une configuration de média dynamique {#configuring-dynamic-media-cloud-services}
 
-**Avant de configurer les services cloud Dynamic Media** : après réception de l’e-mail de mise en service contenant les informations d’identification Dynamic Media, vous devez [vous connecter](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) à Dynamic Media Classic pour changer votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que le service cloud Dynamic Media soit configuré avec les informations d’identification correctes.
+**Avant de configurer Contenu multimédia** dynamique : Une fois que vous avez reçu votre courrier électronique de mise en service avec les informations d’identification de Contenu multimédia dynamique, vous devez vous [connecter](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) à Contenu multimédia dynamique classique pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que le service cloud Dynamic Media soit configuré avec les informations d’identification correctes.
 
-Pour configurer les Services cloud Dynamic Media :
+![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+
+**Pour créer une configuration de média dynamique**
 
 1. In AEM, tap the AEM logo to access the global navigation console and tap or click the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Sur la page du navigateur de configuration de Dynamic Media, dans le volet de gauche, appuyez sur **[!UICONTROL global]** (ne sélectionnez ou n’appuyez pas sur l’icône de dossier située à gauche de **[!UICONTROL global]**), puis sur **[!UICONTROL Créer]**.
@@ -84,7 +86,7 @@ Pour configurer les Services cloud Dynamic Media :
    >
    >Une fois que vous avez reçu le courrier électronique de mise en service avec les informations d’identification Dynamic Media, [connectez-vous](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) à Dynamic Media Classic pour modifier votre mot de passe. Le mot de passe fourni dans le courrier électronique de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que le service cloud Dynamic Media soit configuré avec les informations d’identification correctes.
 
-1. Si la connexion est établie, vous pouvez également définir les éléments suivants :
+1. Une fois la connexion établie, vous pouvez également définir les éléments suivants :
 
    * **[!UICONTROL Entreprise]** : nom du compte Dynamic Media. Il est possible que vous disposiez de plusieurs comptes Dynamic Media pour différentes sous-marques et divisions ou différents environnements de test/production.
 
@@ -94,14 +96,22 @@ Pour configurer les Services cloud Dynamic Media :
 
    * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
 À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre entreprise ou un serveur spécial, Adobe Systems vous conseille de conserver ce paramètre tel que spécifié.
+
+   * **[!UICONTROL Synchroniser tout le contenu]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->Sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des fichiers de la synchronisation avec le contenu multimédia dynamique. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation de Contenu multimédia dynamique suivants :
+
+   * **[!UICONTROL Mode de synchronisation de média dynamique]**
+      * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifiquement à des fins d’exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
+      * **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Contenu multimédia dynamique.
+Pour marquer un dossier sélectionné pour la synchronisation avec le média dynamique, sélectionnez un dossier de fichiers, puis, dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**. Sur l’onglet **[!UICONTROL Détails]** , dans la liste déroulante Mode **[!UICONTROL de synchronisation des médias]** dynamiques, sélectionnez l’une des trois options suivantes. When you are done tap **[!UICONTROL Save]**. *N&#39;oubliez pas : ces trois options ne sont pas disponibles si vous avez sélectionné&#x200B;**Synchroniser tout le contenu**plus tôt.*
+         * **[!UICONTROL Hérité]** - Aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. L’état détaillé pour l’héritage s’affiche par le biais d’une info-bulle.
+         * **[!UICONTROL Activer pour les sous-dossiers]** : incluez tout dans cette sous-arborescence pour la synchronisation avec Contenu multimédia dynamique. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
+         * **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation vers Contenu multimédia dynamique.
    >[!NOTE]
    >
    >Le contrôle de version n’est pas pris en charge dans DMS7. En outre, l’activation différée ne s’applique que si l’option **[!UICONTROL Publier des ressources]** dans la page de configuration de Dynamic Media est définie sur **[!UICONTROL Dès l’activation]**, puis uniquement jusqu’à la première activation de la ressource.
    >
    >
    >Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
-
-   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 1. Pour afficher l’aperçu du contenu Dynamic Media en toute sécurité avant qu’il ne soit modifié, vous aurez besoin de placer en liste blanche l’instance d’auteur AEM à connecter à Dynamic Media :
@@ -569,7 +579,7 @@ Si vous utilisez Contenu multimédia dynamique pour l’imagerie et/ou la vidéo
    <td>Commence par <strong>video/</strong></td>
    <td>La "vidéo-filtre" prête à l’emploi :
     <ul>
-     <li><br /> Excluez de la réplication la vidéo d’origine et les rendus de miniatures statiques. <br /> </li>
+     <li>Excluez de la réplication la vidéo d’origine et les rendus de miniatures statiques.<br /> <br /> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -588,7 +598,7 @@ Si vous utilisez Contenu multimédia dynamique pour l’imagerie et/ou la vidéo
 
 1. Pour définir le type MIME du filtre, vous pouvez localiser le type MIME comme suit : 
 
-   Dans le rail de gauche, développez `content > dam > <locate_your_asset> > jcr:content > metadata`, puis dans le tableau, recherchez `dc:format`.
+   Dans le rail de gauche, développez `content > dam > <locate_your_asset> > jcr:content > metadata`, puis dans le tableau, localisez `dc:format`.
 
    L’illustration ci-dessous est un exemple de chemin d’une ressource vers `dc:format`.
 
