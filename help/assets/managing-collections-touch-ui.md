@@ -4,14 +4,14 @@ description: Apprenez à gérer des collections de ressources, telles que créer
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 27fdeaf50255379fd6e5bb45eaf593cec895cd04
 
 ---
 
 
 # Gestion des collections {#managing-collections}
 
-Une collection est un ensemble de ressources dans les ressources d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Le jeu peut être une collection statique ou dynamique basée sur les résultats de la recherche.
+Une collection est un ensemble de ressources dans les ressources d’Adobe Experience Manager. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou d’une collection dynamique basée sur les résultats de la recherche.
 
 Contrairement aux dossiers, une collection peut inclure des fichiers provenant de différents emplacements. Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
@@ -119,7 +119,7 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 
 ## Modification d’une collection dynamique {#editing-a-smart-collection}
 
-Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#editing-saved-searches).
+Smart collections are built by saving a search so you can alter their content by modifying the search parameters of the [saved search](#saved-searches).
 
 1. Dans l’interface utilisateur Ressources, appuyez/cliquez sur l’icône de recherche dans la barre d’outils.
 
@@ -170,7 +170,7 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
 
    >[!NOTE]
    >
-   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes pour ces collections. Utilisez le mode [!UICONTROL Ajouter] pour ajouter de nouvelles valeurs aux métadonnées existantes dans les champs pouvant contenir plusieurs valeurs. Les champs à valeur unique sont toujours remplacés. Any tags you add in the [!UICONTROL Tags] field, are appended to the existing list of tags in the metadata.
+   >Les métadonnées que vous ajoutez pour les collections sélectionnées remplacent les métadonnées précédentes pour ces collections. Utilisez le mode [!UICONTROL Ajouter] pour ajouter de nouvelles valeurs aux métadonnées existantes dans les champs qui peuvent contenir plusieurs valeurs. Les champs à valeur unique sont toujours remplacés. Any tags you add in the [!UICONTROL Tags] field, are appended to the existing list of tags in the metadata.
 
 To customize the metadata [!UICONTROL Properties] page, including adding, modifying, deleting metadata properties, use the Schema editor.
 
@@ -209,7 +209,7 @@ Vous pouvez modifier les paramètres d’une collection, tels que le titre et la
 
    >[!NOTE]
    >
-   >You can also delete smart collections by [deleting saved searches](#deleting-saved-searches).
+   >You can also delete smart collections by [deleting saved searches](#saved-searches).
 
 ## Téléchargement d’une collection {#downloading-a-collection}
 
