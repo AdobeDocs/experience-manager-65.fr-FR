@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
+source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
 
 ---
 
@@ -25,12 +25,12 @@ Pour les auteurs de sites, les ressources distantes sont disponibles en tant que
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
 * utilisateurs faisant partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. AEM Assets 6.5 fonctionne avec AEM en tant que service Cloud. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)Cloud.
+* Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. Les ressources AEM 6.5 fonctionnent avec AEM en tant que service Cloud. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)Cloud.
 
    |  | AEM Sites as a Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
-   | **Ressources AEM 6.5 sur AMS** | pas de prise en charge | Pris en charge | Pris en charge |
+   | **Ressources AEM 6.5 sur AMS** | Pris en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur site** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
 
 ### Formats de fichiers pris en charge {#mimetypes}
@@ -46,7 +46,7 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 
 | Rôle | Portée | Groupe d’utilisateurs | Nom d’utilisateur dans la présentation | Condition requise |
 |----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Administrateur AEM Sites | Local | Administrateur AEM | `admin` | Configurez AEM, ainsi que l’intégration au déploiement Assets distant. |
+| Administrateur des sites AEM | Local | Administrateur AEM | `admin` | Configurez AEM, ainsi que l’intégration au déploiement Assets distant. |
 | Utilisateur DAM | Local | Création | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
 | Auteur AEM Sites | Local | Auteur (avec les droits d’accès en lecture sur l’instance DAM distante et l’accès en tant qu’auteur sur les l’instance Sites locale) | `ksaner` | Les utilisateurs finaux sont des auteurs Sites qui utilisent cette intégration pour améliorer leur vélocité de contenu. Les auteurs recherchent et parcourent des ressources dans un système de gestion des actifs numériques distant à l’aide de l’outil de recherche de contenu et des images requises dans les pages Web locales. The credentials of `ksaner` DAM user are used. |
 | Administrateur AEM Assets | distant | Administrateur AEM | `admin` sur AEM distant | Configurez le partage des ressources cross-origin (CORS). |
@@ -165,11 +165,11 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 * Tous les auteurs Sites disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en n’ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
 * Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
-* Il n’est pas possible d’utiliser une ressource distante comme vignette de page dans l’interface utilisateur des propriétés [!UICONTROL de] page. Vous pouvez définir une miniature d’une page Web dans l’interface utilisateur Propriétés [!UICONTROL de la] page à partir de la [!UICONTROL miniature] en cliquant sur [!UICONTROL Sélectionner l’image].
+* Il n’est pas possible d’utiliser une ressource distante en tant que vignette de page dans l’interface utilisateur Propriétés [!UICONTROL de la] page. Vous pouvez définir une miniature d’une page Web dans l’interface utilisateur Propriétés [!UICONTROL de la] page à partir de la [!UICONTROL miniature] en cliquant sur [!UICONTROL Sélectionner l’image].
 
 **Configuration et licence**
 
-* Le déploiement des ressources AEM sur AMS est pris en charge.
+* Le déploiement d’AEM Assets sur AMS est pris en charge.
 * AEM Sites peut se connecter à un seul référentiel AEM Assets à la fois.
 * Une licence AEM Assets s’exécutant en tant que référentiel distant.
 * Une ou plusieurs licences d’AEM Sites s’exécutant comme un déploiement de création local.
