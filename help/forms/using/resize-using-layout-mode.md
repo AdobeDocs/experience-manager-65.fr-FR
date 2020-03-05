@@ -10,14 +10,14 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cc4b667bb20622949c71eee64b07d679109482c1
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
 
 # Utiliser le mode Mise en page pour redimensionner les composants{#use-layout-mode-to-resize-components}
 
-L’interface de création de canaux Web de formulaires adaptatifs et de communications interactives vous permet de redimensionner des composants en mode Disposition. Faites glisser et déposez des points bleus dans les colonnes pour définir les points de départ et d’arrivée pour positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille dynamique. La grille réactive se compose de 12 colonnes égales. L’ombrage blanc et bleu des colonnes de remplacement différencie une colonne de l’autre.
+L’interface de création de canaux Web de formulaires adaptatifs et de communications interactives vous permet de redimensionner des composants à l’aide du mode Mise en page. Faites glisser et déposez des points bleus dans les colonnes pour définir les points de départ et d’arrivée pour positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille dynamique. La grille réactive se compose de 12 colonnes égales. L’ombrage blanc et bleu des colonnes de remplacement différencie une colonne de l’autre.
 
 Vous pouvez utiliser le mode Disposition pour redimensionner les composants pour tous les types de périphériques, tels que les ordinateurs de bureau, les tablettes, les smartphones et d’autres périphériques plus petits. La tablette dérive automatiquement la configuration de la mise en page de la version de bureau et les périphériques les plus petits dérivent de la configuration de la mise en page du téléphone. Vous pouvez toutefois remplacer les configurations dérivées automatiquement pour définir une configuration différente pour chaque type de périphérique.
 
@@ -42,9 +42,9 @@ Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut 
 
    La barre d’outils qui s’affiche après avoir appuyé sur des composants se compose des options suivantes :
 
-   * **** Parent : Sélectionnez le parent d’un composant.
-   * **** Flotter sur la nouvelle ligne : Déplacez le composant vers la ligne suivante s’il existe plusieurs composants dans la même ligne.
-   Vous pouvez annuler toutes les modifications de redimensionnement et appliquer la disposition par défaut au panneau contenant des composants redimensionnés à l’aide de l’option **[!UICONTROL Rétablir la disposition]** du point d’arrêt ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)). Appuyez sur le parent du composant redimensionné pour afficher l’option.
+   * **Parent :** Sélectionnez le parent d’un composant.
+   * **Flotter sur la nouvelle ligne :** Déplacez le composant vers la ligne suivante s’il existe plusieurs composants dans la même ligne.
+   Vous pouvez annuler toutes les modifications de redimensionnement et appliquer la mise en page par défaut au panneau contenant des composants redimensionnés à l’aide de l’option **[!UICONTROL Rétablir la mise en page]** du point d’arrêt ( ![Rétablir le point d’arrêt](assets/reverttopreviouslypublishedversion.png)). Appuyez sur le parent du composant redimensionné pour afficher l’option.
 
    >[!NOTE]
    >
@@ -52,7 +52,7 @@ Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut 
 
 ### Exemple {#example}
 
-**** Objectif : Vous souhaitez insérer un composant de tableau et un composant d’image et les placer en parallèle dans une communication interactive.
+**Objectif :** Vous souhaitez insérer un composant de tableau et un composant d’image et les placer en parallèle dans une communication interactive.
 
 1. Insérez le tableau et les composants d’image en mode Edition dans le canal Web. Le composant d’image s’affiche après le composant de tableau.
 1. Passez en mode Disposition et appuyez sur le composant Tableau. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
@@ -76,6 +76,20 @@ Exécutez les étapes suivantes si vous souhaitez redimensionner l’ensemble du
 
 1. Faites glisser les points bleus pour définir la position du panneau dans la grille réactive.
 Vous pouvez répéter les étapes 1 et 2 et sélectionner ![Sélectionner le parent](assets/float_to_new_line_icon.svg) pour déplacer le panneau redimensionné vers la ligne suivante.
+
+## Définition d’une disposition à plusieurs colonnes pour un panneau
+
+Exécutez les étapes suivantes pour définir le nombre de colonnes d’un panneau :
+
+1. En mode **[!UICONTROL Edition]** , appuyez sur le panneau, sélectionnez ![Configurer](assets/configure_icon.png), puis sélectionnez **[!UICONTROL Réactif - tout sur la page sans option de navigation]** .
+
+1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+
+1. En mode **[!UICONTROL Disposition]** , appuyez sur l’un des composants du panneau à redimensionner, sélectionnez ![Sélectionner le parent](assets/select_parent_icon.svg)et sélectionnez la première option dans la liste déroulante, si le panneau est le parent immédiat du composant.
+
+1. Appuyez sur ![plusieurs colonnes](assets/multi-column.svg) et sélectionnez le nombre de colonnes dans la liste déroulante. Le nombre de colonnes peut être compris entre 1 et 12. Le panneau est divisé en une disposition à plusieurs colonnes.
+
+![plusieurs colonnes en mode de mise en page](assets/multi-column-layout.png)
 
 ## Activer la nouvelle grille réactive pour les anciennes mises en page réactives {#enableresponsivegrid}
 
