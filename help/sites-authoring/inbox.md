@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
@@ -24,7 +24,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris d
    * ces notifications peuvent également être créées à différents endroits de l’interface utilisateur AEM, par exemple, sous **Projets** ;
    * elles peuvent être générées par l’étape **Créer une tâche** ou **Créer une tâche de projet** d’un workflow.
 
-* Workflows :
+* Workflows:
 
    * tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page ;
 
@@ -75,16 +75,16 @@ Pour ouvrir la boîte de réception des notifications AEM :
 
 1. Cliquez/appuyez sur l’indicateur dans la barre d’outils.
 
-1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
-1. Le mode par défaut est le [mode Liste](#inbox-list-view), mais vous pouvez également basculer vers le [mode Calendrier](#inbox-calendar-view). Cette opération s’effectue à l’aide du sélecteur d’affichage (barre d’outils, en haut à droite).
+1. Sélectionnez **Tout afficher**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments issus des processus, des projets et des tâches.
+1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la [Vue Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
 
    Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux modes ; les options disponibles dépendent du mode actif.
 
-   ![wf-79](assets/wf-79.png)
+   ![wf-79](assets/inbox-list-view.png)
 
 >[!NOTE]
 >
->The Inbox operates as a console, so use [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) or [Search](/help/sites-authoring/search.md) to navigate to another location when you are finished.
+>La boîte de réception fonctionne comme une console. Utilisez donc la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) ou la [recherche](/help/sites-authoring/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
 
 ### Boîte de réception – Mode Liste {#inbox-list-view}
 
@@ -109,16 +109,16 @@ Vous pouvez :
 
 ![wf-91](assets/wf-91.png)
 
-### Boîte de réception – Paramètres d’affichage {#inbox-view-settings}
+### Inbox - Settings {#inbox-view-settings}
 
 Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et Calendrier) :
 
-* **Mode Calendrier**
+* **Vue Calendrier**
 
    Pour le **mode Calendrier**, vous pouvez configurer les paramètres suivants :
 
    * **Regrouper par**
-   * **Planification** ou **Aucun**
+   * **Planning** ou **Aucun**
    * **Taille des cartes** 
    ![wf-92](assets/wf-92.png)
 
@@ -126,9 +126,29 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
    Pour le **mode Liste**, vous pouvez configurer le mécanisme de tri :
 
-   * **Tri par**
+   * **Champ de tri**
    * **Ordre de tri**
-   ![wf-83](assets/wf-83.png)
+   ![wf-83](assets/inbox-settings.png)
+
+### Boîte de réception - Contrôle d’administration {#inbox-admin-control}
+
+Les utilisateurs qui font partie du groupe **workflow-administrateurs** peuvent afficher l’option Contrôle d’administration dans la liste. Grâce à cette option, les administrateurs peuvent :
+
+* Définissez des personnalisations pour le texte et le logo disponibles dans l’en-tête.
+
+* Contrôlez l’affichage des options de navigation disponibles dans l’en-tête et limitez les utilisateurs au passage en mode de création du flux de travail ou à l’aide ou à d’autres liens de solution.
+
+![admin-control](assets/admin-control.png)
+
+* **Personnalisation de l’identité graphique**
+
+   * **Personnaliser le texte de l’en-tête :** Spécifiez le texte de ce champ pour remplacer le texte **Adobe Experience Manager** existant affiché dans l’en-tête.
+
+   * **Personnaliser le logo :** Téléchargez une image dans Digital Asset Management (DAM) et référencez-la à l’aide de ce champ pour remplacer le logo Adobe Experience Manager affiché dans l’en-tête.
+
+* **Navigation de l’utilisateur**
+   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête, telles que l’option permettant d’accéder à d’autres solutions, le lien vers l’aide et les options qui s’affichent lorsque vous appuyez sur le logo ou le texte d’Adobe Experience Manager.
+* **Enregistrer :** Appuyez/cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
 
@@ -209,7 +229,7 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
    >
    >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
-1. Sélectionnez **Créer un projet** dans la barre d’outils pour ouvrir l’assistant.
+1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
 1. Sélectionnez le modèle approprié, puis **Suivant**.
 1. Spécifiez les propriétés requises :
 
