@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9c73abc3291f2847c705cb649d2993fb186b0993
+source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 
 ---
 
 
 # Publication de dossiers sur Brand Portal{#publish-folders-to-brand-portal}
 
-En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. For details, see [Configure AEM Assets integration with Brand Portal](/help/assets/brand-portal-configuring-integration.md).
+En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. For details, see [Configure AEM Assets with Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
 Une fois que vous avez publié un fichier ou un dossier, il est accessible aux utilisateurs dans le portail de marque.
 
@@ -77,7 +77,7 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
    Pour annuler rapidement la publication du dossier désiré sur Brand Portal :
 
    1. From the toolbar, select **Manage Publication**.
-   1. Dans **Action** , sélectionnez **Annuler la publication dans le portail** de marque, dans **Planification** **, sélectionnez Maintenant, puis cliquez sur Suivant.******
+   1. Dans **Action** , sélectionnez **Annuler la publication dans le portail** de marque, dans **Planification** , sélectionnez **Maintenant, puis cliquez sur Suivant.******
    1. Confirmez votre sélection dans **Scope** et cliquez sur **Annuler la publication depuis le portail** de marque.
    ![confirmer-annuler la publication](assets/confirm-unpublish.png)
 
@@ -96,5 +96,5 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
 
 >[!NOTE]
 >
->La procédure de publication/annulation de publication d’un fichier depuis/vers le portail de marque est similaire à la procédure correspondante pour un dossier.
+>La procédure de publication/annulation de la publication d’un fichier depuis/vers le portail de marque est similaire à la procédure correspondante pour un dossier.
 
