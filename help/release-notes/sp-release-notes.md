@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 | Version | 6.5.4.0 |
 | Type | Version du Service Pack |
 | Date | 5 mars 2020 |
-| URL de téléchargement | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| URL de téléchargement | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), distribution [de logiciels (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Eléments inclus dans Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -128,8 +128,6 @@ Pour obtenir la liste complète des fonctionnalités, des points saillants et de
 
 * Lorsque vous déplacez le contenu dans le même dossier, l’option de déplacement de page est désactivée (NPR-31840).
 
-* Lorsque vous accédez aux URL se terminant par /_jcr_content/.html ou /jcr:content/.html, les pics du processeur et AEM ne répondent plus (NPR-31837).
-
 * En mode de structure des modèles modifiables, la liste des composants autorisés dans le conteneur de dispositions affiche des résultats incorrects. Seuls les composants avec boîte de dialogue de conception s’affichent dans le conteneur de mise en page (NPR-31816).
 
 * Lorsqu’une page dispose d’autorisations en lecture seule pour un utilisateur, l’option Ouvrir les propriétés est visible dans sites.html, mais pas dans editor.html (NPR-31770).
@@ -179,8 +177,6 @@ Pour obtenir la liste complète des fonctionnalités, des points saillants et de
 ### Editeur de modèles WCM {#wcm-template-editor-6540}
 
 * En mode de structure des modèles modifiables, la liste des composants autorisés dans le conteneur de mise en page n’affiche pas le composant de bouton de lien (CQ-4282099).
-
-* Les pics du processeur et Experience Manager ne répondent plus lorsque des URL se terminant par `/_jcr_content/.html` ou `/jcr:content/.html` sont accessibles (CQ-4280770).
 
 ### WCM Page Editor {#wcm-page-editor-6540}
 
