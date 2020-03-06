@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 **Pour la plateforme[AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
-* installer les dernières mises à jour [AEM 6.5](#aem64updates)
+* installer les dernières mises à jour [d’AEM 6.5](#aem64updates)
 
 * si vous n&#39;utilisez pas les ports par défaut (4502, 4503), [configurez les agents de réplication](#replication-agents-on-author)
 * [répliquer la clé de chiffrement](#replicate-the-crypto-key)
@@ -90,7 +90,7 @@ AEM 6.5 Communities GA fournit un package Communities. Pour en savoir plus sur l
 
 ### Mises à jour d’AEM 6.5 {#aem-updates}
 
-À partir d’AEM 6.4, les mises à jour apportées aux communautés sont fournies dans le cadre des Fix Packs et Service Packs cumulatifs AEM.
+À partir d’AEM 6.4, les mises à jour apportées aux communautés sont fournies dans le cadre des Fix Packs et Service Packs cumulatifs d’AEM.
 
 Pour obtenir les dernières mises à jour d’AEM 6.5, voir [Adobe Experience Manager 6.4 Cumulative Fix Packs et Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
 
@@ -130,7 +130,7 @@ Les étapes nécessaires sont :
 
 1. répéter les étapes 3 et 4 sur toutes les instances d’auteur et de publication
 
-Pour plus d&#39;informations sur l&#39;installation des lots, consultez la page Console [](/help/sites-deploying/configuring-web-console.md#bundles) Web.
+Pour plus d&#39;informations sur l&#39;installation des lots, consultez la page Console [](/help/sites-deploying/web-console.md) Web.
 
 #### Exemple : Bundle MySQL Connector installé {#example-installed-mysql-connector-bundle}
 
@@ -147,7 +147,7 @@ Le moteur SCORM des communautés AEM est requis pour la fonctionnalité [d’act
 **Pour installer un package SCORM**
 
 1. Installez le package [cq-social-scorm-package, version 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) à partir du partage de package.
-1. Téléchargez `/libs/social/config/scorm/database_scormengine_data.sql` depuis l’instance cq et exécutez-la dans mysql server pour créer un schéma scormEngineDB mis à niveau.
+1. Téléchargez `/libs/social/config/scorm/database_scormengine_data.sql` à partir de l’instance cq et exécutez-la dans mysql server pour créer un schéma scormEngineDB mis à niveau.
 1. Ajoutez `/content/communities/scorm/RecordResults` dans la propriété Chemins exclus du filtre CSRF depuis `https://<hostname>:<port>/system/console/configMgr` les éditeurs.
 
 
@@ -157,7 +157,7 @@ Au fur et à mesure de l’installation, toute activité d’activation est gén
 
 Si vous le souhaitez, le niveau du journal peut être défini sur WARN pour le `RusticiSoftware.*` package.
 
-Pour utiliser les journaux, voir [Utilisation des enregistrements d’audit et des fichiers](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)journaux.
+Pour utiliser des journaux, voir [Utilisation des enregistrements d’audit et des fichiers](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)journaux.
 
 ### MLS AEM Advanced {#aem-advanced-mls}
 
@@ -178,7 +178,7 @@ Pour plus d’informations sur l’installation et les détails, consultez Confi
 
 Les liens vers les packages de cette page ne nécessitent aucune instance en cours d’exécution d’AEM, car ils sont destinés au partage de packages sur `adobeaemcloud.com`. Bien que les packs puissent être consultés, le `Install`bouton permet d’installer les packs sur un site hébergé par Adobe. Si vous prévoyez d’effectuer l’installation sur une instance AEM locale, la sélection `Install`entraînera une erreur.
 
-**Installation sur une instance locale AEM**
+**Installation sur une instance locale d’AEM**
 
 Pour installer les packages visibles dans `adobeaemcloud.com` une instance locale AEM, le package doit d’abord être téléchargé sur un disque local :
 
@@ -195,7 +195,7 @@ Pour plus d’informations, consultez [Comment utiliser des packages](/help/site
 
 ## Déploiements recommandés {#recommended-deployments}
 
-Dans les communautés AEM, un magasin commun est utilisé pour stocker le contenu généré par l’utilisateur (UGC) et est souvent appelé fournisseur de ressources de [stockage (SRP)](/help/communities/working-with-srp.md). Le déploiement recommandé consiste à choisir une option SRP pour la boutique commune.
+Dans les communautés AEM, un magasin commun est utilisé pour stocker le contenu généré par l’utilisateur (UGC) et est souvent appelé fournisseur de ressources de [stockage (SRP)](/help/communities/working-with-srp.md). Le déploiement recommandé se concentre sur le choix d’une option SRP pour la boutique commune.
 
 Le magasin commun prend en charge la modération de l’UGC et l’analyse de cette dernière dans l’environnement de publication, tout en éliminant la nécessité de [réplication](/help/communities/sync.md) de l’UGC.
 
@@ -228,7 +228,7 @@ Pour toutes les autres instances de publication (secondaires) dans une batterie 
 
    * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-* localisez la `AEM Communities Publisher Configuration`
+* localisez la variable `AEM Communities Publisher Configuration`
 * sélectionnez l’icône de modification
 * désélectionnez la case Editeur **** principal
 * sélectionnez **Enregistrer**
@@ -241,7 +241,7 @@ Pour l’éditeur principal, assurez-vous que la configuration [de l’agent de]
 
 Pour qu’un autre utilisateur dispose des autorisations appropriées, il doit être ajouté en tant que membre du groupe `administrators` d’utilisateurs (également membre de `Communities Administrators`).
 
-Deux agents de réplication dans l’environnement d’auteur doivent configurer correctement la configuration du transport.
+Il existe deux agents de réplication dans l’environnement d’auteur qui doivent configurer correctement la configuration du transport.
 
 * accéder à la console de réplication sur l’auteur
 
@@ -257,7 +257,7 @@ Deux agents de réplication dans l’environnement d’auteur doivent configurer
       1. select the **Transport** tab
       1. si ce n’est pas le port `4503`, modifiez l’ **URI** pour spécifier le port correct.
 
-      1. si vous n’utilisez pas `admin`, modifiez l’ **utilisateur** et le **mot de passe** pour spécifier un membre du groupe `administrators` d’utilisateurs.
+      1. si ce n’est pas l’utilisateur `admin`, modifiez l’ **utilisateur** et le **mot de passe** pour spécifier un membre du groupe `administrators` d’utilisateurs.
 
 Les images suivantes montrent les résultats du changement de port de 4503 à 6103 par :
 
@@ -271,11 +271,11 @@ Les images suivantes montrent les résultats du changement de port de 4503 à 61
 
 ### Service Tunnel sur l’auteur {#tunnel-service-on-author}
 
-Lorsque vous utilisez l’environnement d’auteur pour [créer des sites](/help/communities/sites-console.md), [modifier des propriétés](/help/communities/sites-console.md#modifying-site-properties) du site ou [gérer des membres](/help/communities/members.md)de la communauté, il est nécessaire d’accéder aux membres (utilisateurs) enregistrés dans l’environnement de publication et non aux utilisateurs enregistrés dans l’environnement d’auteur.
+Lorsque vous utilisez l’environnement d’auteur pour [créer des sites](/help/communities/sites-console.md), [modifier des propriétés](/help/communities/sites-console.md#modifying-site-properties) du site ou [gérer des membres](/help/communities/members.md)de la communauté, il est nécessaire d’accéder aux membres (utilisateurs) enregistrés dans l’environnement de publication, et non aux utilisateurs enregistrés dans l’environnement d’auteur.
 
 Le service tunnel fournit cet accès à l’aide de l’agent de réplication sur l’auteur.
 
-Pour activer le service tunnel :
+Pour activer le service de tunnel :
 
 * on **author**
 * Connectez-vous avec des droits d’administrateur.
@@ -285,7 +285,7 @@ Pour activer le service tunnel :
 
    * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-* localisez la `AEM Communities Publish Tunnel Service`
+* localisez la variable `AEM Communities Publish Tunnel Service`
 * sélectionnez l’icône de modification
 * cochez la **activer **case
 * sélectionnez **Enregistrer**
@@ -294,7 +294,7 @@ Pour activer le service tunnel :
 
 ### Répliquer la clé Crypto {#replicate-the-crypto-key}
 
-Deux fonctionnalités des communautés AEM exigent que toutes les instances de serveur AEM utilisent les mêmes clés de chiffrement. Il s’agit d’ [Analytics](/help/communities/analytics.md) et [ASRP](/help/communities/asrp.md).
+Deux fonctionnalités des communautés AEM exigent que toutes les instances de serveur AEM utilisent les mêmes clés de chiffrement. Il s’agit [d’Analytics](/help/communities/analytics.md) et [d’ASRP](/help/communities/asrp.md).
 
 Depuis AEM 6.3, le matériel clé est stocké dans le système de fichiers et ne figure plus dans le référentiel.
 
@@ -329,7 +329,7 @@ for example,
 
 #### Réplication du référentiel {#repository-replication}
 
-Le fait que le matériel clé soit stocké dans le référentiel, comme c’était le cas pour AEM 6.2 et versions antérieures, peut être conservé en spécifiant la propriété système suivante au premier démarrage de chaque instance AEM (qui crée le référentiel initial) :
+Le fait que le matériel clé soit stocké dans le référentiel, comme c’était le cas pour AEM 6.2 et les versions antérieures, peut être conservé en spécifiant la propriété système suivante au premier démarrage de chaque instance AEM (qui crée le référentiel initial) :
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -337,13 +337,13 @@ Le fait que le matériel clé soit stocké dans le référentiel, comme c’éta
 >
 >Il est important de vérifier que l’agent de [réplication sur l’auteur](#replication-agents-on-author) est correctement configuré.
 
-Avec le matériel clé stocké dans le référentiel, la manière de répliquer la clé de chiffrement de l&#39;auteur vers d&#39;autres instances est la suivante :
+Avec le matériel clé stocké dans le référentiel, la manière de répliquer la clé de chiffrement de l&#39;auteur à d&#39;autres instances est la suivante :
 
 Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * accédez à [https://&lt;serveur>:&lt;port>/crx/de](https://localhost:4502/crx/de)
 * select `/etc/key`
-* ouvrir `Replication` , panneau
+* ouvrir `Replication` l’onglet
 * select `Replicate`
 
 * [actualisation du lot Granite Crypto](#refresh-the-granite-crypto-bundle)
