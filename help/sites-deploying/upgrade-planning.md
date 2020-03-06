@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -136,7 +136,7 @@ Passez en revue les exigences techniques pour AEM 6.5 et vérifiez si votre log
 
 #### Observations relatives à la restructuration du contenu {#content-restructuring-considerations}
 
-AEM s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de telle sorte qu’elle ne nécessite pas de modifications du code au moment de la mise à niveau 6.5, bien qu’il soit recommandé de consulter les détails de la section [Restructuration du référentiel dans AEM](/help/sites-deploying/repository-restructuring-in-aem65.md) lors de la planification d’une mise à niveau.
+AEM s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de telle sorte qu’elle ne nécessite pas de modifications du code au moment de la mise à niveau 6.5, bien qu’il soit recommandé de consulter les détails de la section [Restructuration du référentiel dans AEM](/help/sites-deploying/repository-restructuring.md) lors de la planification d’une mise à niveau.
 
 ### Évaluation de la complexité de la mise à niveau {#assessing-upgrade-complexity}
 
