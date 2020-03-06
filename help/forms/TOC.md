@@ -5,7 +5,7 @@ sub-product: forms
 audience: end-user
 user-guide-title: AEM 6.5 Forms User Guide
 translation-type: tm+mt
-source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
+source-git-commit: 42a08dca17df382b875c5326a64b5584028741d8
 
 ---
 
@@ -62,7 +62,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
       + [Installation et configuration du service de conversion de formulaires automatisés](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Install AEM Forms on JEE {#jee-installation}
       + [Plates-formes prises en charge pour AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
-      + [Installation et déploiement d’AEM Forms sur JEE à l’aide de JBoss clé en main](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+      + [Installation et déploiement d’AEM Forms sur JEE à l’aide de JBoss clé en main](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [Installation et configuration du serveur Document Security d’AEM Forms](using/installing-and-configuring-the-document-security-server.md)
       + [Préparation à l’installation du serveur unique AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
       + [Installation et déploiement d’AEM Forms sur JEE pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
@@ -302,6 +302,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Présentation de Correspondence Management](using/cm-overview.md)
    + [Conception de la mise en page](using/layout-design-details.md)
    + [Dictionnaire de données](using/data-dictionary.md)
+   + [Fragments de document](using/document-fragments.md)
    + [Créer une lettre](using/create-letter.md)
    + [Création de correspondance](using/create-correspondence.md)
    + [Fonctions distantes du Générateur d’expression](using/expression-builder.md)
@@ -391,7 +392,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
    + [Aperçu des rapports de transaction](using/transaction-reports-overview.md)
    + [Affichage et compréhension des rapports de transaction](using/viewing-and-understanding-transaction-reports.md)
    + [API facturables des rapports de transaction](using/transaction-reports-billable-apis.md)
-   + [Enregistrer une transaction pour les implémentations personnalisées](using/record-transaction-custom-implementation.md)
+   + [Enregistrement d’une transaction pour des implémentations personnalisées](using/record-transaction-custom-implementation.md)
 + Aide pour l’administrateur d’AEM Forms sur JEE {#administrator-help}
    + Prise en main {#get-started}
       + [Paramètres généraux d’AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
@@ -604,7 +605,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
          + [API Java du service Generate PDF QuickStart (SOAP)](developing/generate-pdf-service-java-api.md)
          + [Démarrage rapide de l’API d’appel](developing/invocation-api-quick-starts.md)
          + [Démarrage rapide de l’API Java LiveCycleProcess (SOAP)](developing/livecycleprocess-java-api-soap-quick.md)
-         + [API Java Output Service - Démarrage rapide (SOAP)](developing/output-service-java-api-quick.md)
+         + [Démarrage rapide de l’API Java du service Output (SOAP)](developing/output-service-java-api-quick.md)
          + [PDF Utilities Service Java APIQuick Start (SOAP)](developing/pdf-utilities-service-java-api.md)
          + [Démarrage rapide de l’API Repository Service](developing/repository-service-api-quick-starts.md)
          + [API Java du service Signature QuickStart (SOAP)](developing/signature-service-java-api-quick.md)
@@ -645,7 +646,7 @@ source-git-commit: a8212a6af2a2f4a805dc2c256b741a8b45896f83
          + [Rendu de formulaires basés sur des fragments](developing/rendering-forms-based-fragments.md)
          + [Rendu des formulaires par valeur](developing/rendering-forms-value.md)
          + [Rendu des formulaires au format HTML](developing/rendering-forms-html.md)
-         + [Rendu des formulaires au client](developing/rendering-forms-client.md)
+         + [Rendu des formulaires au niveau du client](developing/rendering-forms-client.md)
          + [Rendu de formulaires HTML à l’aide de fichiers CSS personnalisés](developing/rendering-html-forms-using-custom.md)
          + [Rendu de formulaires HTML avec des barres d’outils personnalisées](developing/rendering-html-forms-custom-toolbars.md)
          + [Rendu de formulaires PDF interactifs](developing/rendering-interactive-pdf-forms.md)
