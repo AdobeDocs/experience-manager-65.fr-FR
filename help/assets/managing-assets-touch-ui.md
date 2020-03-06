@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que téléc
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f191f90f7a417387930d2d4cf7b9482aabbd6156
+source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
 
 ---
 
@@ -331,6 +331,24 @@ Pour prévisualiser un fichier, procédez comme suit.
    Tap **[!UICONTROL Reset]** to reset the view to the original size.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
+
+**Prévisualisation de fichiers à l’aide de touches du clavier uniquement**
+
+Pour prévisualiser un fichier à l’aide du clavier, procédez comme suit :
+
+1. Dans l’interface utilisateur Ressources, accédez à l’emplacement de la ressource à prévisualiser, à l’aide des touches fléchées `Tab` et des touches fléchées.
+
+1. Ouvrez le fichier souhaité.
+
+   In the preview mode, zoom and reset options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
+1. Pour effectuer un zoom avant sur le fichier :
+   1. Utilisez `Tab` la touche pour déplacer la cible d’action vers l’icône de zoom avant.
+   1. Utilisez `Enter` la touche pour effectuer un zoom avant sur l’image.
+   Pour effectuer un zoom arrière, utilisez `Tab` la touche pour déplacer la cible d’action vers l’icône de zoom arrière et appuyez sur `Enter`.
+
+1. Utilisez `Shift` + `Tab` touches pour recentrer la mise au point sur l’image.
+
+1. Utilisez les touches fléchées pour vous déplacer dans l’image agrandie.
 
 See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
