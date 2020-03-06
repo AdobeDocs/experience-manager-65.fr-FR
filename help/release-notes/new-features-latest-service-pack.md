@@ -4,14 +4,14 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d867ee46ca9cd5945c7413d42fc002b90332c3c
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
 
 # Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-En 2020, pour Adobe Experience Manager (AEM) 6.5, de nouvelles fonctionnalités et améliorations sont fournies dans les Service Packs trimestriels. Les clients profitent de cette nouvelle approche pour adopter les innovations plus rapidement.
+En 2020, Adobe Experience Manager (AEM) 6.5 fournit des fonctionnalités et des améliorations continues dans les Service Packs trimestriels. Les clients profitent de cette nouvelle approche pour adopter les innovations plus rapidement.
 
 La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2020**. Cet article présente les fonctionnalités offertes par le dernier Service Pack pour rendre votre voyage AEM plus enrichissant.
 
@@ -19,15 +19,16 @@ La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2
 
 ### Amélioration des performances dans divers domaines {#performance-improvements}
 
-* Réduisez le temps de chargement et d’initialisation de ContextHub dans un site (contexthub.kernel.js). Permet d’accélérer le chargement de la 1ère page lors d’une visite du site.
+* Réduction du temps de chargement et d’initialisation de ContextHub dans un site (contexthub.kernel.js). Le chargement d’une page est alors plus rapide lors d’une visite du site.
 
-* Dans l’éditeur de page, réduisez le temps d’actualisation de la page après avoir fait glisser et déposé des fragments d’expérience dans le canevas de page.
+* Réduction du temps d’actualisation d’une page après avoir fait glisser et déposé des fragments d’expérience dans le canevas d’un éditeur de page.
 
-* Dans Aperçu de la Live Copy, raccourcissez le délai de chargement des entrées lorsque le site comporte de nombreuses copies dynamiques (+200).
+* Dans Aperçu de la Live Copy, raccourcissez le délai de chargement des entrées lorsqu’un site comporte plus de 200 copies dynamiques.
 
-* Dans l’éditeur de modèles, améliorez la gestion des URL incomplètes/non valides susceptibles de ralentir l’éditeur de modèles.
+* Dans l’éditeur de modèles, amélioration de la gestion des URL incomplètes ou incorrectes susceptibles de ralentir l’éditeur de modèles.
 
-De plus, depuis AEM 6.5 SP4, le système de style a été amélioré, les styles peuvent désormais être également sélectionnés dans une boîte de dialogue de composant.
+En outre, AEM 6.5 SP4 comprend des améliorations du système de style. Vous pouvez désormais également sélectionner des styles dans une boîte de dialogue de composant.
+
 
 ## AEM Assets {#aem-assets}
 
