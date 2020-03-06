@@ -4,7 +4,7 @@ description: Découvrez comment rechercher les ressources souhaitées dans AEM �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c491b77dac1bf25b9e348ed12d16ed7894e5493e
 
 ---
 
@@ -32,7 +32,7 @@ Recherchez des ressources à l’aide du champ Omnisearch en haut de l’interfa
 
 Utilisez le panneau **[!UICONTROL Filtres]** pour affiner votre recherche en filtrant les résultats de recherche en fonction des différentes options (prédicats), telles que le type de fichier, la taille du fichier, la date de dernière modification, l’état du fichier, les données d’informations et les licences Adobe Stock. Vos administrateurs peuvent personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide de facettes de recherche.
 
-La fonctionnalité de recherche AEM prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir Collections [de](/help/assets/managing-collections-touch-ui.md)recherche.
+La fonctionnalité de recherche AEM prend en charge la recherche de collections et la recherche de ressources au sein d’une collection. Voir Collections [de](/help/assets/managing-collections-touch-ui.md)recherche.
 
 ## Comprendre l&#39;interface de recherche {#searchui}
 
@@ -42,7 +42,7 @@ Familiarisez-vous avec l&#39;interface de recherche et les actions disponibles.
 
 *Figure : Présentation des parties de l’interface des résultats de la recherche Ressources*
 
-**A.** Enregistrez la recherche en tant que collecte dynamique. **B.** Filtres (prédicats) pour limiter les résultats de la recherche. **C.** Affichez les fichiers, les dossiers ou les deux dans les résultats de la recherche. **D.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est DAM. ************ F. Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **G. Cochez cette case pour sélectionner tous les résultats de la recherche.** H. Nombre de résultats de recherche affichés par rapport au total des résultats de recherche. **I. Ferme la recherche** J. Basculez entre l’affichage carte et l’affichage liste.
+**A.** Enregistrez la recherche en tant que collecte dynamique. **B.** Filtres (prédicats) pour limiter les résultats de la recherche. **C.** Affichez les fichiers, les dossiers ou les deux dans les résultats de la recherche. **D.** Cliquez sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est DAM. **F.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **G.** Cochez cette case pour sélectionner tous les résultats de la recherche. **H.** Nombre de résultats de recherche affichés par rapport au total des résultats de recherche. **I.** Ferme la recherche **J.** Basculez entre l’affichage carte et l’affichage liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -60,7 +60,7 @@ Vous pouvez exécuter des recherches de mots-clés à partir du champ OmniSearch
 
 Les résultats sont triés par pertinence, en commençant par les correspondances les plus proches. Pour plusieurs mots-clés, les ressources qui contiennent les deux termes dans leurs métadonnées génèrent des résultats plus pertinents. Dans les métadonnées, les mots-clés qui apparaissent sous forme de balises actives sont classés plus haut que les mots-clés qui apparaissent dans d’autres champs de métadonnées. AEM permet de donner plus de poids à un terme de recherche particulier. Il est également possible de [renforcer le classement](#searchrank) de quelques ressources ciblées pour des termes de recherche spécifiques.
 
-Pour rechercher rapidement les ressources appropriées, l’interface riche fournit des mécanismes de filtrage, de tri et de sélection. Vous pouvez filtrer les résultats selon plusieurs critères et afficher le nombre de fichiers recherchés pour différents filtres. Vous pouvez également réexécuter la recherche en modifiant la requête dans le champ Omnisearch. Lorsque vous modifiez les termes ou filtres de recherche, les autres filtres restent appliqués pour préserver le contexte de la recherche.
+Pour rechercher rapidement les ressources appropriées, l’interface enrichie fournit des mécanismes de filtrage, de tri et de sélection. Vous pouvez filtrer les résultats selon plusieurs critères et afficher le nombre de fichiers recherchés pour différents filtres. Vous pouvez également réexécuter la recherche en modifiant la requête dans le champ Omnisearch. Lorsque vous modifiez les termes ou filtres de recherche, les autres filtres restent appliqués pour préserver le contexte de la recherche.
 
 Lorsque les résultats sont de nombreux actifs, AEM affiche les 100 premiers dans la vue Carte et 200 premiers dans la vue Liste. Lorsque les utilisateurs font défiler le contenu, d’autres fichiers sont chargés. Ceci est pour améliorer les performances.
 
@@ -83,7 +83,7 @@ Using smart tags adds an extra `OR` clause to find any of the search terms as th
 
 * Fichiers avec `woman` et `running` mots-clés dans les métadonnées (comportement par défaut).
 
-* Actifs balisés avec l’un des mots-clés (comportement Balises dynamiques).
+* Actifs balisés avec l’un ou l’autre des mots-clés (comportement Balises dynamiques).
 
 ### Search suggestions as you type {#searchsuggestions}
 
@@ -125,13 +125,13 @@ Vous pouvez l&#39;utiliser à votre avantage en augmentant le classement de cert
 
 AEM fournit diverses méthodes, telles que des filtres qui s’appliquent aux ressources recherchées, pour vous aider à localiser plus rapidement les ressources souhaitées. Quelques méthodes fréquemment utilisées sont décrites ci-dessous. Vous trouverez ci-dessous quelques exemples [](#samples) illustrés.
 
-**Rechercher des fichiers ou des dossiers**: Dans les résultats de la recherche, voir fichiers, dossiers ou les deux. Dans le panneau **[!UICONTROL Filtres]** , vous pouvez sélectionner l’option appropriée. Voir Interface [de](#searchui)recherche.
+**Rechercher des fichiers ou des dossiers**: Dans les résultats de la recherche, voir les fichiers, les dossiers ou les deux. Dans le panneau **[!UICONTROL Filtres]** , vous pouvez sélectionner l’option appropriée. Voir Interface [de](#searchui)recherche.
 
 **Rechercher des fichiers dans un dossier**: Vous pouvez limiter la recherche à un dossier spécifique. Dans le panneau **[!UICONTROL Filtres]** , ajoutez le chemin d’accès d’un dossier. Vous ne pouvez sélectionner qu’un seul dossier à la fois.
 
 ![Limiter les résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres](assets/search_folder_select.gif)
 
-*Figure :Limiter les résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres*
+*Figure : Limiter les résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres*
 
 ### Rechercher des images similaires {#visualsearch}
 
@@ -139,7 +139,7 @@ Pour rechercher des images visuellement similaires à une image sélectionnée p
 
 ![Rechercher des images similaires à l’aide de l’option de la vue Carte](assets/search_find_similar.png)
 
-*Figure :Rechercher des images similaires à l’aide de l’option de la vue Carte*
+*Figure : Rechercher des images similaires à l’aide de l’option de la vue Carte*
 
 ### Images Adobe Stock {#adobestock}
 
@@ -153,7 +153,7 @@ Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dyn
 
 Vous pouvez rechercher des fichiers en fonction des valeurs exactes de champs de métadonnées spécifiques, tels que le titre, la description et l’auteur. La fonction de recherche en texte intégral de GQL récupère uniquement les fichiers dont la valeur de métadonnées correspond exactement à votre requête de recherche. Les noms des propriétés (auteur, titre, etc.) et les valeurs sont sensibles à la casse.
 
-| Champ de métadonnées | Valeur et utilisation des facettes |
+| Champ Métadonnées | Valeur et utilisation des facettes |
 |---|---|
 | Titre | title:John |
 | Créateur | creator:John |
@@ -193,7 +193,7 @@ Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
 ## Recherche de ressources à partir d’autres offres ou interfaces AEM {#beyondomnisearch}
 
-Adobe Experience Manager (AEM) connecte le référentiel DAM à diverses autres solutions AEM afin de fournir un accès plus rapide aux ressources numériques et de rationaliser les processus de création. Toute découverte de ressources commence par la navigation ou la recherche. Le comportement de recherche reste largement le même sur les différentes surfaces et solutions. Certaines méthodes de recherche changent lorsque le public cible, les cas d’utilisation et l’interface utilisateur varient d’une solution AEM à l’autre. Les méthodes spécifiques sont documentées pour les solutions individuelles dans les liens ci-dessous. Les conseils et comportements universellement applicables sont décrits dans cet article.
+Adobe Experience Manager (AEM) connecte le référentiel DAM à diverses autres solutions AEM afin de fournir un accès plus rapide aux ressources numériques et de rationaliser les processus de création. Toute découverte de ressources commence par la navigation ou la recherche. Le comportement de recherche reste largement le même sur les différentes surfaces et solutions. Certaines méthodes de recherche changent lorsque le public cible, les cas d’utilisation et l’interface utilisateur varient d’une solution AEM à l’autre. Les méthodes spécifiques sont documentées pour les solutions individuelles dans les liens ci-dessous. Les conseils et les comportements universellement applicables sont décrits dans cet article.
 
 ### Recherche de fichiers à partir du panneau Adobe Asset Link {#aal}
 
@@ -205,7 +205,7 @@ Les professionnels de la création utilisent l’application de bureau pour rend
 
 ### Search assets in Brand Portal {#brandportal}
 
-Les utilisateurs et les marketeurs du secteur d&#39;activité utilisent le portail de marque pour partager efficacement et en toute sécurité les ressources numériques approuvées avec leurs équipes internes étendues, partenaires et revendeurs. See [search assets on Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
+Les utilisateurs et les marketeurs du secteur d&#39;activité utilisent le portail de marque pour partager efficacement et en toute sécurité les ressources numériques approuvées avec leurs équipes internes, partenaires et revendeurs étendus. See [search assets on Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### Recherche d’images Adobe Stock {#adobestock-1}
 
@@ -215,13 +215,13 @@ Dans l’interface utilisateur AEM, les utilisateurs peuvent rechercher des ress
 
 Vous pouvez filtrer les images Dynamic Media en sélectionnant **[!UICONTROL Dynamic Media]** > **[!UICONTROL Visionneuses]** dans le panneau **[!UICONTROL Filtres]**. Il filtre et affiche des fichiers tels que des visionneuses d’images, des carrousels, des visionneuses de supports variés et des visionneuses à 360°. Lors de la création de pages web, les auteurs peuvent rechercher des visionneuses dans l’outil de recherche de contenu. Un filtre pour les visionneuses est disponible dans un menu contextuel.
 
-### Recherche de fichiers dans Content Finder lors de la création de pages Web {#contentfinder}
+### Recherche de fichiers dans l’Outil de recherche de contenu lors de la création de pages Web {#contentfinder}
 
 Les auteurs peuvent utiliser l’outil de recherche de contenu pour rechercher dans le référentiel DAM les ressources appropriées et les utiliser dans les pages Web qu’ils créent. Les auteurs peuvent également utiliser la fonctionnalité Ressources connectées pour rechercher des ressources disponibles sur un déploiement AEM distant. Les auteurs peuvent alors utiliser ces ressources dans des pages Web sur un déploiement local d’AEM. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
 ### Rechercher des collections {#collections}
 
-La fonctionnalité de recherche AEM prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir Collections [de](/help/assets/managing-collections-touch-ui.md)recherche.
+La fonctionnalité de recherche AEM prend en charge la recherche de collections et la recherche de ressources au sein d’une collection. Voir Collections [de](/help/assets/managing-collections-touch-ui.md)recherche.
 
 ## Asset selector {#assetselector}
 
@@ -236,7 +236,7 @@ Vous pouvez transmettre les paramètres de requête suivants dans une URL pour d
 | suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL :[https://localhost:4502/aem/assetpicker.html/&lt;chemin_dossier>](https://localhost:4502/aem/assetpicker.html) | To launch the asset selector with a particular folder selected, for example with the folder `/content/dam/we-retail/en/activities` selected, the URL should be of the form: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
 | mode | single, multiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
 | mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) of an asset (wildcard also supported) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Utilisez-le pour filtrer les ressources basées sur le(s) type(s) de MIME |
-| dialog | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources sous forme de boîte de dialogue Granit. Cette option s’applique uniquement lorsque vous lancez le sélecteur de ressources via le champ Granite Path et que vous le configurez comme URL pickerSrc. |
+| dialog | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources sous forme de boîte de dialogue Granit. Cette option s’applique uniquement lorsque vous lancez le sélecteur de ressources via le champ Granite Path et que vous le configurez en tant qu’URL pickerSrc. |
 | assettype (S) | images, documents, multimedia, archives | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Utilisez cette option pour filtrer les types de ressources en fonction de la valeur indiquée. |
 | root | &lt;chemin_dossier> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Ici, le sélecteur de ressources ne vous permet de sélectionner qu’une seule ressource enfant (directe/indirecte) sous le dossier racine. |
 
@@ -244,7 +244,7 @@ Pour accéder à l’interface du sélecteur de ressources, accédez à `https:/
 
 ![Parcourir et sélectionner un fichier dans le sélecteur de ressources](assets/assetpicker.png)
 
-*Figure :Parcourir et sélectionner un fichier dans le sélecteur de ressources*
+*Figure : Parcourir et sélectionner un fichier dans le sélecteur de ressources*
 
 ## Restrictions {#limitations}
 
@@ -256,7 +256,7 @@ La fonctionnalité de recherche dans AEM Assets présente les limites suivantes 
 * Si vous appuyez sur Entrée sans taper quoi que ce soit dans la barre Omnisearch, AEM renvoie une liste de fichiers uniquement et non de dossiers. Si vous recherchez spécifiquement des dossiers sans utiliser de mot-clé, AEM ne renvoie aucun résultat.
 * A l’aide de la case [!UICONTROL Sélectionner tout] , vous pouvez uniquement sélectionner les 100 premiers fichiers recherchés en mode Carte et les 200 premiers fichiers recherchés en mode Liste. Si vous faites défiler et chargez plus de fichiers dans l’interface utilisateur, vous pouvez en sélectionner plus à l’aide de l’option [!UICONTROL Sélectionner tout] .
 
-La recherche visuelle ou par analogie présente les limites suivantes :
+La recherche visuelle ou la recherche par analogie présente les limites suivantes :
 
 * La recherche visuelle fonctionne mieux avec des référentiels plus volumineux. Bien qu’il n’y ait pas de nombre minimum d’images requis pour obtenir de bons résultats, la qualité des correspondances avec quelques images peut ne pas être aussi bonne que les correspondances d’un grand référentiel.
 * Vous ne pouvez pas modifier le modèle ni entraîner AEM à rechercher des images similaires. Par exemple, l’ajout ou la suppression de balises actives dans quelques ressources ne modifie pas le modèle. Les ressources sont exclues des résultats de recherche visuellement similaires.
@@ -275,7 +275,7 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 * La recherche de texte intégral prend en charge des opérateurs tels que -, ^, etc. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, utilisez &quot;Notebook - Beauty&quot; au lieu de &quot;Notebook - Beauty&quot;.
 * Si les résultats de la recherche sont trop nombreux, limitez la [portée de la recherche](#scope) à zéro dans les ressources souhaitées. Il fonctionne mieux lorsque vous avez une idée de la meilleure manière de rechercher les ressources souhaitées, par exemple un type de fichier spécifique, un emplacement spécifique, des métadonnées spécifiques, etc.
 
-* **Balisage**: Les balises permettent de classer les fichiers qui peuvent être parcourus et recherchés plus efficacement. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et processus. AEM propose des méthodes pour baliser automatiquement les ressources à l’aide des services intelligents artificiels d’Adobe Sensei, qui améliorent constamment le balisage de vos ressources avec l’utilisation et la formation. Lorsque vous recherchez des fichiers, les balises actives sont prises en compte si la fonction est activée sur votre compte. Il fonctionne avec la fonctionnalité de recherche intégrée d’AEM. Voir Comportement [de la](#searchbehavior)recherche. Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [augmenter le classement](#searchrank) de quelques ressources sélectionnées.
+* **Balisage**: Les balises permettent de classer les fichiers qui peuvent être parcourus et recherchés plus efficacement. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et processus. AEM propose des méthodes pour baliser automatiquement les ressources à l’aide des services intelligents artificiels d’Adobe Sensei, qui améliorent constamment le balisage de vos ressources avec l’utilisation et la formation. Lorsque vous recherchez des fichiers, les balises actives sont prises en compte si la fonction est activée sur votre compte. Il fonctionne avec la fonctionnalité de recherche intégrée d’AEM. Voir Comportement [de la](#searchbehavior)recherche. Pour optimiser l’ordre d’affichage des résultats de la recherche, vous pouvez [augmenter le classement](#searchrank) de quelques ressources sélectionnées.
 
 * **Indexation**: Seules les métadonnées et les ressources indexées sont renvoyées dans les résultats de la recherche. Pour une meilleure couverture et de meilleures performances, veillez à une indexation appropriée et suivez les bonnes pratiques. Voir [indexation](#searchindex).
 
@@ -285,18 +285,18 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des fichie
 
 ![Comportement de recherche avec et sans guillemets](assets/search_with_quotes.gif)
 
-*Figure :Comportement de recherche avec et sans guillemets*
+*Figure : Comportement de recherche avec et sans guillemets*
 
-**Rechercher avec un caractère générique** astérisque : Pour élargir la recherche, utilisez un astérisque avant ou après le mot recherché pour faire correspondre n’importe quel nombre de caractères. Par exemple, la recherche d’une exécution sans astérisque ne renvoie pas de fichiers contenant une variante du mot (y compris dans les métadonnées). Un astérisque remplace tout nombre de caractères. Par exemple :
+**Rechercher avec un caractère générique** astérisque : Pour élargir la recherche, utilisez un astérisque avant ou après le mot recherché pour faire correspondre n’importe quel nombre de caractères. Par exemple, la recherche d’une exécution sans astérisque ne renvoie pas de fichiers contenant une quelconque variation du mot (y compris dans les métadonnées). Un astérisque remplace tout nombre de caractères. Par exemple :
 
 * `run` renvoie des fichiers avec un mot-clé à exécution exacte
 * `run*` renvoie des fichiers avec exécution, exécution, exécution, etc.
 * `*run` renvoie oups, une nouvelle exécution, etc.
 * `*run*` renvoie toutes les combinaisons possibles.
 
-![Illustration de l’utilisation d’un caractère générique astérisque dans la recherche de ressources à l’aide d’un exemple](assets/search_with_asterisk_run.gif)
+![Illustration de l’utilisation d’un caractère générique d’astérisque dans la recherche de ressources à l’aide d’un exemple](assets/search_with_asterisk_run.gif)
 
-*Figure :Illustration de l’utilisation d’un caractère générique astérisque dans la recherche de ressources à l’aide d’un exemple*
+*Figure : Illustration de l’utilisation d’un caractère générique d’astérisque dans la recherche de ressources à l’aide d’un exemple*
 
 **Rechercher avec un caractère générique** de point d’interrogation : Pour élargir la recherche, utilisez un ou plusieurs &quot;?&quot; pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante,
 
@@ -308,13 +308,13 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des fichie
 
 ![Illustration de l’utilisation du caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple](assets/search_with_questionmark_run.gif)
 
-*Figure :Illustration de l’utilisation du caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple*
+*Figure : Illustration de l’utilisation du caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple*
 
 **Exclure un mot-clé**: Utilisez le tiret pour rechercher des fichiers qui ne contiennent pas de mot-clé. Par exemple, `running -shoe` la requête renvoie les fichiers qui contiennent `running`, mais pas `shoe`. De même, `camp -night` la requête renvoie les fichiers qui contiennent `camp` mais pas `night`. Notez que `camp-night` la requête renvoie des fichiers qui contiennent à la fois `camp` et `night`.
 
 ![Utilisation du tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu](assets/search_dash_exclude_keyword.gif)
 
-*Figure :Utilisation du tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu*
+*Figure : Utilisation du tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu*
 
 ## Tâches de configuration et d’administration liées à la fonctionnalité de recherche {#configadmin}
 
@@ -335,13 +335,13 @@ La recherche visuelle utilise le balisage intelligent et requiert AEM 6.5.2.0 ou
    * `refresh` de type `Boolean` avec la valeur `true`.
    Cette configuration permet d&#39;effectuer des recherches à partir de l&#39;index approprié.
 
-1. Pour créer l’index Lucene, dans CRXDE, créez un noeud nommé `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`de type `imageFeatures` `nt-unstructured`. Dans `imageFeatures` le noeud,
+1. Pour créer l’index Lucene, dans CRXDE, à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, créez un noeud nommé `imageFeatures` de type `nt-unstructured`. Dans `imageFeatures` le noeud,
 
    * Ajoutez `name` une propriété de type `String` avec la valeur `jcr:content/metadata/imageFeatures/haystack0`.
 
-   * Ajoutez une `nodeScopeIndex` propriété de type `Boolean` avec la valeur de `true`.
+   * Ajoutez `nodeScopeIndex` une propriété de type `Boolean` avec la valeur de `true`.
 
-   * Ajoutez une `propertyIndex` propriété de type `Boolean` avec la valeur de `true`.
+   * Ajoutez `propertyIndex` une propriété de type `Boolean` avec la valeur de `true`.
 
    * Ajoutez `useInSimilarity` une propriété de type `Boolean` avec la valeur `true`.
    Enregistrez les modifications.
@@ -365,7 +365,7 @@ Pour accélérer la découverte, AEM Assets propose des facettes de recherche à
 
 Vous pouvez configurer AEM pour extraire le texte des ressources lorsque les utilisateurs téléchargent des ressources, telles que des fichiers PSD ou PDF. AEM indexe le texte extrait et aide les utilisateurs à rechercher ces ressources en fonction du texte extrait. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
-### Prédicats personnalisés pour filtrer les résultats de recherche {#custompredicates}
+### Prédicats personnalisés pour filtrer les résultats de la recherche {#custompredicates}
 
 Les prédicats sont utilisés pour créer des facettes. Les administrateurs peuvent personnaliser les facettes de recherche dans le panneau Filtres à l’aide de prédicats préconfigurés. Ces prédicats peuvent être personnalisés à l’aide d’incrustations. Voir [Création de prédicats](/help/assets/searchx.md)personnalisés.
 
@@ -388,7 +388,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Codec audio | Libvorbis, Lame MP3, Codage AAC. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Débit audio | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 
-## Utilisation des résultats de recherche de ressources {#aftersearch}
+## Utilisation des résultats de la recherche de ressources {#aftersearch}
 
 Une fois que vous avez vu des fichiers recherchés qui correspondent à vos critères, vous pouvez exécuter les tâches standard suivantes avec ou exécuter les actions suivantes sur ces résultats de recherche :
 
@@ -407,15 +407,15 @@ Pour les limitations de la fonctionnalité de tri, voir [Limites](#limitations).
 
 ### Vérification des informations détaillées d’un fichier {#checkinfo}
 
-Vous pouvez vérifier les informations détaillées d’une ressource recherchée à partir de la page des résultats de la recherche.
+Vous pouvez vérifier les informations détaillées d’un fichier recherché à partir de la page des résultats de la recherche.
 
 Pour afficher toutes les métadonnées d’un fichier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 
 Pour vérifier les commentaires concernant l’historique d’une ressource ou d’une version, cliquez sur la ressource pour ouvrir un aperçu de grande taille. Ouvrez le journal dans le rail de gauche et sélectionnez **[!UICONTROL Commentaires]** ou **[!UICONTROL Versions]**. Vous pouvez également trier le journal, par exemple par commentaires ou versions dans un ordre chronologique.
 
-![Tri des entrées de chronologie pour un fichier de recherche](assets/sort_timeline_search_results.gif)
+![Tri des entrées de chronologie d’un fichier de recherche](assets/sort_timeline_search_results.gif)
 
-*Figure :Tri des entrées de chronologie pour un fichier de recherche*
+*Figure : Tri des entrées de chronologie d’un fichier de recherche*
 
 ### Téléchargement de fichiers recherchés {#download}
 
@@ -432,7 +432,7 @@ Pour les fichiers disponibles dans un seul dossier ou une collection, il est plu
 Une collection est un ensemble ordonné de ressources pouvant inclure des ressources provenant de différents emplacements, car les collections ne contiennent que des références à ces ressources. Les collections sont de deux types :
 
 * Liste de référence statique de ressources, de dossiers et d’autres collections.
-* Liste dynamique (collection dynamique) qui renseigne les fichiers de la collection en fonction de critères de recherche.
+* Liste dynamique (collection dynamique) qui renseigne les fichiers de la collection en fonction d’un critère de recherche.
 
 Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gestion des collections](/help/assets/managing-collections-touch-ui.md).
 
@@ -440,15 +440,15 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 
 | Erreur, problèmes, symptômes | Raison possible | Correction ou compréhension possible du problème |
 |---|---|---|
-| Résultats incorrects lors de la recherche de fichiers avec des métadonnées manquantes |  Lors de la recherche de fichiers qui ne contiennent pas les métadonnées obligatoires, AEM peut afficher certains fichiers qui possèdent des métadonnées valides. Les résultats sont basés sur la propriété de métadonnées indexées. | Une fois les métadonnées mises à jour, la réindexation est nécessaire pour refléter l’état correct des métadonnées des fichiers. Voir Métadonnées [](metadata-schemas.md#define-mandatory-metadata)obligatoires. |
+| Résultats incorrects lors de la recherche de fichiers avec des métadonnées manquantes | Lors de la recherche de fichiers qui ne contiennent pas les métadonnées obligatoires, AEM peut afficher certains fichiers qui possèdent des métadonnées valides. Les résultats sont basés sur la propriété de métadonnées indexées. | Une fois les métadonnées mises à jour, la réindexation est nécessaire pour refléter l’état correct des métadonnées des fichiers. Voir Métadonnées [](metadata-schemas.md#define-mandatory-metadata)obligatoires. |
 | Trop de résultats de recherche | Paramètre de recherche large. | Envisagez de limiter la [portée de la recherche](#scope). L’utilisation de balises intelligentes peut vous donner plus de résultats de recherche que prévu. Reportez-vous à la page Comportement [de la recherche avec les balises](#withsmarttags)actives. |
 | Résultats de recherche non liés ou partiellement liés | Le comportement de recherche change avec le balisage intelligent. | Comprenez [comment la recherche change après un balisage](#withsmarttags)intelligent. |
 | Aucune suggestion de saisie semi-automatique pour les ressources | Les fichiers nouvellement téléchargés ne sont pas encore indexés. Les métadonnées ne sont pas immédiatement disponibles en tant que suggestions lorsque vous commencez à taper un mot-clé de recherche dans la barre d&#39;Omniture. | AEM Assets attend l’expiration d’un délai d’expiration (une heure par défaut) avant d’exécuter une tâche d’arrière-plan afin d’indexer les métadonnées pour tous les fichiers nouvellement téléchargés ou mis à jour, puis ajoute les métadonnées à la liste des suggestions. |
-| Aucun résultat de recherche | <ul><li>Il n’existe aucun fichier correspondant à votre requête.</li><li>Vous avez ajouté un espace avant la requête de recherche.</li><li>Un champ de métadonnées non pris en charge contient le mot-clé que vous recherchez.</li><li>L’heure d’activation et de désactivation est configurée pour le fichier et la recherche a été effectuée pendant l’heure d’arrêt du fichier.</li></ul> | <ul><li>Recherchez à l’aide d’un autre mot-clé. Vous pouvez également utiliser le balisage (intelligent) pour améliorer les résultats de la recherche.</li><li>C&#39;est une limitation [connue](#limitations).</li><li>Tous les champs de métadonnées ne sont pas pris en compte pour les recherches. Voir [scope](#scope).</li><li>Recherchez les ressources requises ultérieurement ou modifiez leur heure d’activation et de désactivation.</li></ul> |
+| Aucun résultat de recherche | <ul><li>Il n’existe aucun fichier correspondant à votre requête.</li><li>Vous avez ajouté un espace avant la requête de recherche.</li><li>Un champ de métadonnées non pris en charge contient le mot-clé que vous recherchez.</li><li>L’heure d’activation et de désactivation est configurée pour le fichier et la recherche a été effectuée pendant l’heure d’arrêt du fichier.</li></ul> | <ul><li>Effectuez une recherche à l’aide d’un autre mot-clé. Vous pouvez également utiliser le balisage (intelligent) pour améliorer les résultats de la recherche.</li><li>C&#39;est une limitation [connue](#limitations).</li><li>Tous les champs de métadonnées ne sont pas pris en compte pour les recherches. Voir [scope](#scope).</li><li>Recherchez les ressources requises ultérieurement ou modifiez leur heure d’activation et de désactivation.</li></ul> |
 | Le filtre/prédicat de recherche n&#39;est pas disponible | <ul><li>Le filtre de recherche n&#39;est pas configuré.</li><li>Il n’est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contactez l’administrateur pour vérifier si les personnalisations de recherche sont disponibles ou non.</li><li>Contactez l’administrateur pour vérifier si votre compte dispose des droits/autorisations nécessaires pour utiliser la personnalisation.</li><li>Contactez l’administrateur et vérifiez les personnalisations disponibles pour le déploiement d’AEM Assets que vous utilisez.</li></ul> |
 | Lors de la recherche d’images visuellement similaires, il manque une image attendue. | <ul><li>Image non disponible dans AEM.</li><li>L’image n’est pas indexée. Généralement, lorsqu’il est récemment téléchargé.</li><li>L’image n’est pas balisée de manière intelligente.</li></ul> | <ul><li>Ajoutez l’image aux ressources AEM.</li><li>Contactez votre administrateur pour réindexer le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur pour baliser intelligemment les ressources appropriées.</li></ul> |
 | Lors de la recherche d’images visuellement similaires, une image non pertinente s’affiche. | Comportement de recherche visuelle. | AEM affiche autant de ressources potentiellement pertinentes que possible. Les images moins pertinentes, le cas échéant, sont ajoutées aux résultats, mais avec un classement de recherche inférieur. La qualité des correspondances et la pertinence des ressources recherchées diminuent lorsque vous faites défiler les résultats de la recherche. |
-| Lors de la sélection et du fonctionnement des résultats de recherche, toutes les ressources recherchées ne sont pas exploitées | L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les 100 premiers résultats de recherche en mode Carte et les 200 premiers résultats de recherche en mode Liste. |  |
+| Lors de la sélection et du fonctionnement des résultats de la recherche, toutes les ressources recherchées ne sont pas exploitées. | L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les 100 premiers résultats de recherche en mode Carte et les 200 premiers résultats de recherche en mode Liste. |  |
 
 >[!MORELIKETHIS]
 >
