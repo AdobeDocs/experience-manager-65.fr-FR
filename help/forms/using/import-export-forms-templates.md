@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -21,7 +21,7 @@ Vous pouvez déplacer des formulaires et des ressources, des thèmes, des dictio
 
 >[!NOTE]
 >
->* Dans AEM Forms 6.4, la structure et les chemins d’accès de crx-repository ont changé. Si vous importez des actifs d’une version précédente vers AEM Forms 6.4 et que le formulaire comporte certaines dépendances par rapport à l’ancienne structure, vous devez exporter manuellement les dépendances. Pour plus d’informations sur les modifications apportées à la structure et aux chemins d’accès du référentiel, voir Restructuration du [référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+>* Dans AEM Forms 6.4, la structure et les chemins d’accès de crx-repository ont changé. Si vous importez des actifs d’une version précédente vers AEM Forms 6.4 et que le formulaire comporte certaines dépendances par rapport à l’ancienne structure, vous devez exporter manuellement les dépendances. Pour plus d’informations sur les modifications apportées à la structure et aux chemins d’accès du référentiel, voir Restructuration du [référentiel dans AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 
@@ -63,7 +63,7 @@ Pour télécharger des actifs Formulaires et documents :
 1. Connectez-vous à l’instance AEM Forms.
 1. Tap Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) icon > navigation ![compass](assets/compass.png) icon> Forms> Forms &amp; Documents.
 1. Appuyez sur **Créer**>**Chargement de fichier**. Une boîte de dialogue de téléchargement de formulaires ou de package apparaît.
-1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner un document PDF, des fichiers XSD, des images, des feuilles de style et des formulaires XDP. Appuyez sur **Ouvrir**. Le dossier ou le nom de fichier sélectionné ne doit pas contenir de caractères spéciaux.
+1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner un document PDF, des fichiers XSD, des images, des feuilles de style et des formulaires XDP. Appuyez sur **Ouvrir**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
 
    On the dialog box, verify the details of assets being uploaded, and tap **Upload**.
 
@@ -202,7 +202,7 @@ Pour créer un dossier, procédez comme suit :
 1. Appuyez sur Créer > Dossier.
 1. Saisissez les informations suivantes :
 
-   * **** Titre : Nom d’affichage du dossier
+   * **Titre :** Nom d’affichage du dossier
    * **Nom :** *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
    >[!NOTE]
    >
@@ -239,7 +239,7 @@ Lorsque vous recherchez des actifs, AEM Forms affiche le panneau latéral. You 
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Recherche** B. Filtrer
+**A.** Recherche **B.** Filtrer
 
 ![Panneau latéral : filtres](assets/search_sidepanel.png)
 
