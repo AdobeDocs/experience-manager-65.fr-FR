@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Deploying Guide
 translation-type: tm+mt
-source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
+source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
 
 ---
 
@@ -56,6 +56,7 @@ source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
    + [Optimisation des performances](configuring-performance.md)
    + [Guide de performances des ressources](assets-performance-sizing.md)
    + [Articles sur la procédure de configuration](ht-deploy.md)
+   + [Configuration de la console Web](configuring-web-console.md)
 + Mise à niveau vers AEM 6.5 {#upgrading}
    + [Mise à niveau vers AEM 6.5](upgrade.md)
    + [Planification de la mise à niveau](upgrade-planning.md)
