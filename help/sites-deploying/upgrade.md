@@ -12,7 +12,7 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -31,7 +31,7 @@ Dans cette section, nous présentons la mise à niveau d’une installation AEM 
 * [Vérifications et dépannage après la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
 * [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)
 * [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md)
-* [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring-in-aem65.md)
+* [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md)
 
 Pour une référence conviviale aux instances d’AEM incluses dans ces procédures, les termes suivants sont utilisés tout au long de ces articles :
 
