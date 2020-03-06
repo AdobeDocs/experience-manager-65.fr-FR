@@ -3,7 +3,7 @@ title: Ressources connexes
 description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
 
 ---
 
@@ -12,7 +12,10 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 Les ressources d’Adobe Experience Manager (AEM) vous permettent de lier manuellement des ressources en fonction des besoins de votre entreprise à l’aide de la fonctionnalité des ressources connexes. Par exemple, vous pouvez mettre en relation un fichier de licence avec une ressource ou une image/vidéo portant sur un sujet similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources. Par exemple, si un fichier PDF est généré à partir d’un fichier INDD, vous pouvez mettre en relation le fichier PDF avec son fichier INDD source.
 
-Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et de rendre le fichier INDD haute résolution disponible uniquement sur demande.
+Grâce à cette fonctionnalité, vous pouvez partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et rendre le fichier INDD haute résolution disponible uniquement sur demande.
+
+>[!NOTE] Les utilisateurs disposant d’autorisations de modification peuvent établir des relations avec des fichiers et les dissocier.
+>
 
 ## Relate assets {#relating-assets}
 
