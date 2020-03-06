@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
@@ -28,14 +28,14 @@ En planifiant une mise à niveau, les parties suivantes de l’implémentation d
 
 ## Présentation {#overview}
 
-1. **Détecteur** de schémas - Exécutez le Détecteur de schémas comme décrit dans la planification de la mise à niveau et comme décrit en détail dans [cette page](/help/sites-deploying/pattern-detector.md) pour obtenir un rapport de détecteur de schémas contenant plus de détails sur les zones à traiter en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport Détection des schémas doit vous indiquer les incompatibilités éventuelles dans votre code. S’il n’en existe aucune, votre déploiement est déjà compatible avec la version 6.5, vous pouvez tout de même choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin uniquement pour maintenir la compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir a) Exécuter en mode de compatibilité et différer votre développement pour les nouvelles fonctionnalités 6.5 ou la compatibilité, b) Décider de développer après la mise à niveau, puis passer à l’étape 2. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
+1. **Détecteur** de schémas - Exécutez le Détecteur de schémas comme décrit dans la planification de la mise à niveau et comme décrit en détail dans [cette page](/help/sites-deploying/pattern-detector.md) pour obtenir un rapport de détecteur de schémas contenant plus de détails sur les zones à traiter en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport Détection des schémas doit vous indiquer les incompatibilités éventuelles dans votre code. S’il n’en existe aucune, votre déploiement est déjà compatible avec la version 6.5, vous pouvez tout de même choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin uniquement pour maintenir la compatibilité. En cas d’incompatibilités signalées, vous pouvez choisir a) Exécuter en mode de compatibilité et différer votre développement pour les nouvelles fonctionnalités 6.5 ou la compatibilité, b) Décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Please see please see [Backward Compatibility in AEM 6.5](/help/sites-deploying/backward-compatibility.md) for more details.
 
 1. **Développer la base de code pour la version 6.5 **- Créer une branche ou un référentiel dédié pour la base de code pour la version Target. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
-1. **Compiler avec 6.5 Uber jar **- Mettre à jour les POM de base du code pour pointer vers 6.5 uber jar et compiler le code contre cela.
+1. **Compiler avec 6.5 Uber jar **- Mettre à jour les POM de base du code pour pointer vers 6.5 uber jar et compiler le code par rapport à cela.
 1. **Mettre à jour les personnalisations** AEM* - *Toutes les personnalisations ou extensions d’AEM doivent être mises à jour/validées pour fonctionner dans la version 6.5 et ajoutées à la base de code 6.5. Comprend des formulaires de recherche d’interface utilisateur, des personnalisations de ressources, tout élément utilisant /mnt/overlay
 
 1. **Déploiement dans l’environnement** 6.5 : une instance propre d’AEM 6.5 (Auteur + Publication) doit être configurée dans un environnement de développement/AQ. La base de code à jour et un échantillon représentatif de contenu (de la production actuelle) doivent être déployés.
-1. **Validation d’assurance qualité et correction** de bogues : l’assurance qualité doit valider l’application sur les instances Auteur et Publication de la version 6.5. Tous les bogues trouvés doivent être corrigés et validés dans la base de code 6.5. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
+1. **Validation d’assurance qualité et correction** de bogues : l’assurance qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.5. Tous les bogues trouvés doivent être corrigés et validés dans la base de code 6.5. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
 
 Avant d’effectuer une mise à niveau, vous devez disposer d’une base stable de code d’application qui a été complètement testée par rapport à la version cible d’AEM. En fonction des observations effectuées durant le test, il existe des façons d’optimiser le code personnalisé. Cela peut inclure la restructuration du code pour éviter de parcourir le référentiel, l’indexation personnalisée pour optimiser la recherche ou l’utilisation des nœuds non classés dans le JCR, entre autres.
 
@@ -88,7 +88,7 @@ La création de l’IU classique est toujours disponible dans AEM 6.5, mais ell
 
 Pour faciliter les mises à niveau et s’assurer que les configurations ne soient pas remplacées au cours de celles-ci, le référentiel est restructuré dans la version 6.4 afin de séparer le contenu de la configuration.
 
-Therefore, a number of settings must be moved to no longer reside under `/etc` as had been the case in the past. To review the full set of repository restructuring concerns that must be reviewed and accomodated in the updated to AEM 6.4, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md).
+Therefore, a number of settings must be moved to no longer reside under `/etc` as had been the case in the past. To review the full set of repository restructuring concerns that must be reviewed and accomodated in the updated to AEM 6.4, see [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## Personnalisations d’AEM  {#aem-customizations}
 
