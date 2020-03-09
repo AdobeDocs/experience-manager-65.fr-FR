@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -53,9 +53,9 @@ Une fois votre projet AEM configuré, définissez la stratégie de création et 
 * AEM Forms vous permet de créer des formulaires adaptatifs qui reposent sur les modèles de formulaire suivants. Les modèles de formulaire ont un rôle d’interface destinée à l’échange des données entre un formulaire et un système AEM, et fournissent une structure XML pour le flux de données dans le formulaire adaptatif ou à l’extérieur. En outre, les modèles de formulaire imposent des règles et contraintes aux formulaires adaptatifs sous forme de schéma et de contraintes XFA.
 
    * **Aucun** : les formulaires adaptatifs créés avec cette option n’utilisent pas de modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
-   * **Schéma** XML ou JSON : Les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou consommées par le système principal de votre entreprise. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet du modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
+   * **** XML ou JSON : Les  XML et JSON représentent la structure dans laquelle les données sont générées ou consommées par le système principal de votre entreprise. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet du modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
    * **Modèle de formulaire XFA** : il s’agit du modèle de formulaire idéal si vous avez des investissements dans des formulaires HTML5 de type XFA. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les motifs.
-   * **Modèle** de données de formulaire : Il s’agit d’un modèle de formulaire préféré si vous souhaitez intégrer vos systèmes d’arrière-plan, tels que les bases de données, les services Web et le profil utilisateur AEM, afin de préremplir les formulaires adaptatifs et de réécrire les données de formulaire envoyées dans les systèmes d’arrière-plan. Un éditeur de modèle de données de formulaire vous permet de définir et de configurer des entités et des services dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Pour plus d’informations, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
+   * **Modèle** de données de formulaire : Il s’agit d’un modèle de formulaire préféré si vous souhaitez intégrer vos systèmes d’arrière-plan, tels que les bases de données, les services Web et les d’utilisateurs AEM, afin de préremplir les formulaires adaptatifs et de réécrire les données de formulaire envoyées dans les systèmes d’arrière-plan. Un éditeur de modèle de données de formulaire vous permet de définir et de configurer des entités et des services dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Pour plus d’informations, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
 
 Il est important de sélectionner avec soin le modèle de données qui correspond à vos besoins, tout en optimisant vos investissements existants dans les ressources XFA et XSD, le cas échéant. Il est recommandé d’utiliser XSD Model pour créer des modèles de formulaire car le fichier XML généré contient les données selon l’expression XPATH définie par le schéma. L’utilisation de XSD Model comme choix par défaut pour le modèle de données de formulaire est également utile, car il dissocie la conception de formulaire du système d’arrière-plan qui traite et consomme les données et il améliore les performances du formulaire en raison du mappage un-à-un du champ de formulaire. En outre, la valeur BindRef du champ peut être utilisée comme XPATH de sa valeur de données dans le fichier XML.
 
@@ -97,7 +97,7 @@ Consultez également les descriptions des composants et les meilleures pratiques
 
 ### Utilisation de règles dans les formulaires adaptatifs {#using-rules-in-adaptive-forms}
 
-AEM Forms fournit un [éditeur de règles](/help/forms/using/rule-editor.md) qui vous permet de créer des règles pour ajouter un comportement dynamique aux composants de formulaire adaptatif. Ces règles vous permettent d’évaluer les conditions et de déclencher des actions sur les composants, telles que l’affichage ou le masquage des champs, le calcul des valeurs, la modification dynamique de la liste déroulante, etc.
+AEM Forms fournit un [éditeur de règles](/help/forms/using/rule-editor.md) qui vous permet de créer des règles pour ajouter un comportement dynamique aux composants de formulaire adaptatif. Ces règles vous permettent d’évaluer les conditions et de déclencher des actions sur les composants, telles que l’affichage ou le masquage des champs, le calcul des valeurs, la modification dynamique des  déroulantes, etc.
 
 L’éditeur de règles fournit un éditeur vidéo et un éditeur de code destinés à la définition des règles. Lorsque vous définissez les règles à l’aide de l’éditeur de code, vous devez prendre en compte les éléments suivants :
 
@@ -176,7 +176,7 @@ For more information, see [Prefill adaptive form fields](/help/forms/using/prepo
 
 ### Signature et envoi de formulaires adaptatifs {#signing-and-submitting-adaptive-forms}
 
-Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par l’utilisateur. Une action Envoyer détermine la tâche exécutée sur les données que vous envoyez à l’aide d’un formulaire adaptatif.
+Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par l’utilisateur. Une action Envoyer détermine le  effectué sur les données que vous envoyez à l’aide d’un formulaire adaptatif.
 
 * Il existe plusieurs actions d’envoi disponibles prêtes à l’emploi dans les formulaires adaptatifs. For details, see [Configuring the Submit action](/help/forms/using/configuring-submit-actions.md).
 * Vous pouvez créer une action d’envoi personnalisée si les actions d’envoi par défaut ne remplissent pas votre cas d’utilisation. Pour plus d’informations, voir [Création d’une action Envoyer personnalisée pour les formulaires adaptatifs](/help/forms/using/custom-submit-action-form.md).
@@ -245,7 +245,7 @@ Certaines meilleures pratiques en matière de localisation des formulaires adapt
 
    `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-br), chinois (zh-tn), chinois-Taïwan (zh-tw) et coréen (ko-kr). Cependant, vous pouvez ajouter la prise en charge de nouveaux paramètres régionaux pour les formulaires adaptatifs à l’exécution.  Pour plus d’informations, voir [Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs](/help/forms/using/supporting-new-language-localization.md).
+* AEM Forms prend actuellement en charge les  de contenu de formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR). Cependant, vous pouvez ajouter la prise en charge de nouveaux paramètres régionaux pour les formulaires adaptatifs à l’exécution.  Pour plus d’informations, voir [Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs](/help/forms/using/supporting-new-language-localization.md).
 
 ## Préparation du projet de formulaires à des fins de production {#prepare-forms-project-for-production}
 
@@ -273,7 +273,7 @@ Certaines des meilleures pratiques de configuration d’AEM pour l’améliorati
 * Activez la compression de la bibliothèque client HTML pour Javascript et CSS à partir de la console Felix. See [Clientlibs explained by example](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
 * Cache all client libraries at `/etc.clientlibs/fd` and any additional custom client libraries on AEM dispatcher to increase the responsiveness and security of your published forms. Pour plus d’informations, reportez-vous à la section [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-* Ne mettez pas en cache `/content/forms/af/` ni `/content/dam/formsanddocuments/*` les chemins. pour plus d’informations sur la configuration de la mise en cache des formulaires adaptatifs, voir [Mise en cache des formulaires](/help/forms/using/configure-adaptive-forms-cache.md)adaptatifs.
+* Ne mettez pas en cache `/content/forms/af/` ni `/content/dam/formsanddocuments/*` les chemins d’accès. pour plus d’informations sur la configuration de la mise en cache des formulaires adaptatifs, voir [Mise en cache des formulaires](/help/forms/using/configure-adaptive-forms-cache.md)adaptatifs.
 
 * Activez l’HTML via le module de compression de serveur Web. Pour plus d’informations, reportez-vous à la section [Réglage des performances du serveur AEM Forms](/help/forms/using/performance-tuning-aem-forms.md).
 * Augmentez la configuration des appels par demande pour les formulaires volumineux. Reportez-vous à la section [Optimisation des performances des formulaires complexes et volumineux](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
