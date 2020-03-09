@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
 
 ---
 
@@ -132,22 +132,24 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
 ### Boîte de réception - Contrôle d’administration {#inbox-admin-control}
 
-Les utilisateurs qui font partie du groupe **workflow-administrateurs** peuvent afficher l’option Contrôle d’administration dans la liste. Grâce à cette option, les administrateurs peuvent :
+L’option Contrôle d’administration permet aux administrateurs d’effectuer les opérations suivantes :
 
-* Définissez des personnalisations pour le texte et le logo disponibles dans l’en-tête.
+* Personnaliser le texte et le logo de l’en-tête
 
-* Contrôlez l’affichage des options de navigation disponibles dans l’en-tête et limitez les utilisateurs au passage en mode de création du flux de travail ou à l’aide ou à d’autres liens de solution.
+* Contrôle de l’affichage des liens de navigation disponibles dans l’en-tête
+
+L’option Contrôle d’administration s’affiche dans le déroulant du sélecteur de  uniquement si vous êtes membre du groupe d’administrateurs ou d’administrateurs de processus.
 
 ![admin-control](assets/admin-control.png)
 
 * **Personnalisation de l’identité graphique**
 
-   * **Personnaliser le texte de l’en-tête :** Spécifiez le texte de ce champ pour remplacer le texte **Adobe Experience Manager** existant affiché dans l’en-tête.
+   * **Personnaliser le texte de l’en-tête :** Spécifiez le texte à afficher dans l’en-tête.
 
-   * **Personnaliser le logo :** Téléchargez une image dans Digital Asset Management (DAM) et référencez-la à l’aide de ce champ pour remplacer le logo Adobe Experience Manager affiché dans l’en-tête.
+   * **Personnaliser le logo :** Téléchargez une image dans Digital Asset Management (DAM) et reportez-vous à cette image pour l’afficher dans l’en-tête.
 
 * **Navigation de l’utilisateur**
-   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête, telles que l’option permettant d’accéder à d’autres solutions, le lien vers l’aide et les options qui s’affichent lorsque vous appuyez sur le logo ou le texte d’Adobe Experience Manager.
+   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte d’Adobe Experience Manager.
 * **Enregistrer :** Appuyez/cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
