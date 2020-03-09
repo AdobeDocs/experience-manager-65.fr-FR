@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
+source-git-commit: 93521f102596a7f5cb247ddc430626d352338ce8
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 En 2020, Adobe Experience Manager (AEM) 6.5 fournit des fonctionnalités et des améliorations continues dans les Service Packs trimestriels. Les clients profitent de cette nouvelle approche pour adopter les innovations plus rapidement.
 
-La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2020**. Cet article présente les fonctionnalités offertes par le dernier Service Pack pour rendre votre voyage AEM plus enrichissant.
+La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2020**. Cet article met en évidence les fonctionnalités que le dernier Service Pack  le  pour rendre votre voyage AEM plus enrichissant.
 
 ## AEM Sites {#aem-sites}
 
@@ -54,7 +54,7 @@ Vous pouvez créer une nouvelle intégration ou mettre à niveau vos paramètres
 
 ## AEM Forms {#aem-forms}
 
-### Générer une sortie imprimable dans les processus AEM Forms {#generate-printable-output}
+### Générer une sortie imprimable dans le AEM Forms {#generate-printable-output}
 
 Si vous souhaitez qu’une solution imprime plusieurs copies d’un fichier de modèle source et l’intègre à un fichier de données avec de nombreux enregistrements, une nouvelle étape de processus Générer une sortie imprimable est disponible dans AEM Forms. Par exemple, si vous souhaitez imprimer un formulaire source avec un nom différent chaque fois qu’il est imprimé, vous pouvez avoir ces noms dans le fichier de données et les intégrer à un fichier de modèle standard.
 
@@ -82,13 +82,13 @@ Avez-vous déjà ressenti le besoin de personnaliser les options disponibles dan
 
 Les utilisateurs appartenant au groupe **d’administrateurs** de processus peuvent désormais personnaliser le texte d’en-tête disponible en haut avec le texte de votre choix pour remplacer le texte existant d’ **[!UICONTROL Adobe Experience Manager]** .
 
-Vous trouverez la nouvelle option **[!UICONTROL Personnaliser le texte]** d’en-tête sous Sélecteur d’affichage (disponible en haut à droite de la barre d’outils) > Contrôle **** d’administration.
+Vous trouverez la nouvelle option **[!UICONTROL Personnaliser le texte]** d’en-tête sous le sélecteur de  de (disponible en haut à droite de la barre d’outils) > Contrôle **** d’administration.
 
 **Personnaliser le logo**
 
 Tout comme la personnalisation du texte d’en-tête, les utilisateurs appartenant au groupe **des administrateurs** de processus peuvent désormais personnaliser le logo disponible en haut de l’écran avec le logo de votre choix.
 
-Vous trouverez la nouvelle option **[!UICONTROL Personnaliser le logo]** sous Sélecteur d’affichage > Contrôle **[!UICONTROL d’administration]**.
+Vous trouverez la nouvelle option **[!UICONTROL Personnaliser le logo]** sous  de > Contrôle **[!UICONTROL d’administration]**.
 
 Pour plus d’informations sur cette fonctionnalité, voir [Votre boîte de réception](../sites-authoring/inbox.md).
 
@@ -96,15 +96,15 @@ Pour plus d’informations sur cette fonctionnalité, voir [Votre boîte de réc
 
 Les utilisateurs appartenant au groupe **des administrateurs** de processus ont la possibilité de faire fonctionner les utilisateurs sur AEM en mode restreint en fonction de leur rôle. Les administrateurs peuvent contrôler l’affichage des options de navigation disponibles dans l’en-tête et limiter les utilisateurs à passer en mode de création de flux de travail ou à accéder à l’aide ou à d’autres liens de solution.
 
-Consultez les nouvelles options **[!UICONTROL de navigation]** Masquer sous Sélecteur d’affichage > Contrôle **[!UICONTROL d’administration]**.
+Consultez les nouvelles options **[!UICONTROL de navigation]** Masquer sous  de > Contrôle **[!UICONTROL d’administration]**.
 
 Pour plus d’informations sur cette fonctionnalité, voir [Votre boîte de réception](../sites-authoring/inbox.md).
 
 ### Prise en charge du texte enrichi dans les formulaires HTML5 {#rich-text-support}
 
-Le champ de texte peut désormais afficher la liste des options de formatage dans le formulaire HTML5 rendu. Vous devez définir un format de champ pour le champ de texte dans Forms Designer afin d’appliquer les paramètres appropriés au champ.
+Le champ de texte peut désormais afficher un d’options de formatage dans le formulaire HTML5 rendu. Vous devez définir un format de champ pour le champ de texte dans Forms Designer afin d’appliquer les paramètres appropriés au champ.
 
-Pour utiliser cette fonctionnalité, appuyez sur le champ de texte dans la vue **[!UICONTROL de]** conception dans Forms Designer. Dans l’onglet **[!UICONTROL Champ]** , sélectionnez Texte **** enrichi dans la liste déroulante Format **[!UICONTROL de]** champ pour appliquer les paramètres. Le champ de texte affiche désormais les options de formatage lors du rendu dans un formulaire HTML5.
+Pour utiliser cette fonctionnalité, appuyez sur le champ de texte dans le de **[!UICONTROL conception]** dans Forms Designer. Dans l’onglet **[!UICONTROL Champ]** , sélectionnez Texte **** enrichi dans le déroulant Format **[!UICONTROL de]** champ pour appliquer les paramètres. Le champ de texte affiche désormais les options de formatage lors du rendu dans un formulaire HTML5.
 
 Pour plus d’informations, voir [Conception de modèles de formulaire pour les formulaires](../forms/using/designing-form-template.md)HTML5.
 
@@ -112,7 +112,7 @@ Pour plus d’informations, voir [Conception de modèles de formulaire pour les 
 
 Outre les nouvelles fonctionnalités, AEM 6.5 Service Pack 4 inclut les points forts suivants :
 
-* Seules les sous-arborescences de contenu sélectif peuvent désormais être synchronisées dans Scene7 au lieu de toutes les sous-arborescences `content/dam`.
+* Seules les sous-arborescences de contenu sélectif peuvent désormais être synchronisées en mode *Contenu* dynamique - Contenu Scene7 au lieu de toutes les sous-arborescences `content/dam`.
 
 * L’intégration du modèle de données de formulaire à l’aide du service Web SOAP prend désormais en charge les groupes de choix ou les attributs sur les éléments.
 
@@ -154,9 +154,9 @@ Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalit�
 
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
 
-* Mises à jour de l’interface de ligne de commande d’AEM Cloud ManagerAutomatisez les tâches de Cloud Manager à l’aide de l’outil de ligne de commande. Nous étendons continuellement l&#39;interface de ligne de commande - rejoignez [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+* Mises à jour de l’interface de ligne de commande d’AEM Cloud ManagerAutomatisation du Cloud Manager  à l’aide de l’outil de ligne de commande. Nous étendons continuellement l&#39;interface de ligne de commande - rejoignez [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
-* Sites AEM : Archétype de projet 23La meilleure façon de démarrer un nouveau projet AEM. Avec Archetype 23, nous [fusionnons l&#39;archétype de projet pour l&#39;application d&#39;une seule](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23)page et les sites réguliers, ce qui vous donne un thème par défaut pour lancer votre développement frontal.
+* Sites AEM : Archétype de projet 23Meilleure méthode pour d’un nouveau projet AEM. Avec Archetype 23, nous [fusionnons l&#39;archétype de projet pour les sites SPA et réguliers en un seul](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23), fournissant un thème par défaut pour lancer-votre développement frontal.
 
 * Sites AEM : Site de référence WKND [Tout nouveau projet](https://www.wknd.site/) de référence contenant les meilleures pratiques pour créer des sites avec AEM. Apprenez-en plus en lisant le didacticiel [WKND entièrement mis à jour et prenez le code depuis](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) GitHub [](https://github.com/adobe/aem-guides-wknd/releases).
 
