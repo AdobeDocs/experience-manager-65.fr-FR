@@ -112,7 +112,7 @@ Pour plus d’informations, voir [Conception de modèles de formulaire pour les 
 
 Outre les nouvelles fonctionnalités, AEM 6.5 Service Pack 4 inclut les points forts suivants :
 
-* Seules les sous-arborescences de contenu sélectif peuvent désormais être synchronisées en mode *Contenu* dynamique - Contenu Scene7 au lieu de toutes les sous-arborescences `content/dam`.
+* Seules les sous-arborescences de contenu sélectif peuvent désormais être synchronisées en mode ***Contenu*** dynamique - Contenu Scene7 au lieu de toutes les sous-arborescences `content/dam`.
 
 * L’intégration du modèle de données de formulaire à l’aide du service Web SOAP prend désormais en charge les groupes de choix ou les attributs sur les éléments.
 
