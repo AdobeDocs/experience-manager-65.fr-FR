@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -41,6 +41,6 @@ L’objectif clé des formulaires HTML5 est les périphériques tactiles. Par co
 
 #### Rich text format {#rich-text-format}
 
-Pour ajouter une liste d’options de formatage à un champ de texte dans le formulaire HTML5 rendu, vous pouvez définir un format de champ pour le champ de texte dans Forms Designer. Appuyez sur le champ de texte en mode **[!UICONTROL Création]**. Dans l’onglet **[!UICONTROL Champ]** , sélectionnez Texte **** enrichi dans la liste déroulante Format **[!UICONTROL de]** champ pour appliquer les paramètres. Le champ de texte affiche les options de formatage lors du rendu dans un formulaire HTML5.
+Définissez un format de champ de texte enrichi pour le champ de texte dans Forms Designer afin d’ajouter un d’options de formatage au champ du formulaire HTML5 rendu. Pour appliquer les paramètres, appuyez sur le champ de texte dans le **[!UICONTROL de conception]**. Dans l’onglet **[!UICONTROL Champ]** , sélectionnez Texte **** enrichi dans le déroulant Format **[!UICONTROL de]** champ. Le champ de texte affiche les options de formatage lors du rendu dans un formulaire HTML5.
 
 [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
