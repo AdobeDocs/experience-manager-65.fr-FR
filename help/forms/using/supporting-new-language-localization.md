@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
 
 ---
 
@@ -43,7 +43,7 @@ S’il n’existe pas de bibliothèque client pour le paramètre régional requi
 
 ## Ajoutez la localisation pour les paramètres régionaux non pris en charge{#add-localization-support-for-non-supported-locales} 
 
-AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-br), chinois (zh-tn), chinois-Taïwan (zh-tw) et coréen (ko-kr).
+AEM Forms prend actuellement en charge les  de contenu de formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR).
 
 Pour ajouter un nouveau paramètre régional lors de l’exécution des formulaires adaptatifs :
 
@@ -65,7 +65,7 @@ Pour ajouter un nouveau paramètre régional lors de l’exécution des formulai
 
 ### Ajouter la bibliothèque XFA client pour un paramètre régional {#add-xfa-client-library-for-a-locale-br}
 
-Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec catégorie `xfaforms.I18N.<locale>`, et ajoutez les fichiers suivants à la bibliothèque cliente :
+Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec des  de `xfaforms.I18N.<locale>`, et ajoutez les fichiers suivants à la bibliothèque cliente :
 
 * **I18N.js** définissant `xfalib.locale.Strings` pour le `<locale>` comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 
@@ -79,7 +79,7 @@ I18N.js
 
 ### Ajouter la bibliothèque cliente de formulaires adaptatifs pour un paramètre régional {#add-adaptive-form-client-library-for-a-locale-br}
 
-Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie comme `guides.I18N.<locale>` et les dépendances comme `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`. &quot;
+Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec les  de comme `guides.I18N.<locale>` et et les dépendances comme `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`. &quot;
 
 Ajouter les fichiers suivants à la bibliothèque client :
 
@@ -94,12 +94,12 @@ LogMessages.js
 
 ### Ajouter un support pour la langue du dictionnaire {#add-locale-support-for-the-dictionary-br}
 
-Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, `zh-tw`, `ja`, `ko-kr`.
+Perform this step only if the `<locale>` you are adding is not among `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
 1. Create an `nt:unstructured` node `languages` under `etc`, if not present already.
 
 1. Add a multi-valued string property `languages` to the node, if not present already.
-1. Ajoutez les valeurs de paramètres régionaux `<locale>` par défaut `de`, `es`, `fr`, `it`, `pt-br`, `zh-tn`, , , ,, si elles ne sont pas déjà présentes.`zh-tw``ja``ko-kr`
+1. Ajouter les valeurs de paramètres régionaux `<locale>` par défaut `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, , ,, s’ils ne sont pas déjà présents.`zh-tw``ja``ko-kr`
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
