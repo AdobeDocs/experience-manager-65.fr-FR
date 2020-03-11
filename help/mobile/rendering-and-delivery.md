@@ -1,6 +1,6 @@
 ---
-title: Rendu et livraison
-seo-title: Rendu et livraison
+title: Rendu et  de
+seo-title: Rendu et  de
 description: 'null'
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
@@ -9,12 +9,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
 
-# Rendu et livraison{#rendering-and-delivery}
+# Rendu et  de{#rendering-and-delivery}
 
 >[!NOTE]
 >
@@ -24,9 +24,9 @@ Le contenu AEM peut facilement être rendu par le biais des servlets [par défau
 
 Ces rendus prêts à l’emploi parcourent généralement le référentiel et renvoient le contenu tel quel.
 
-AEM, via Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés pour prendre le contrôle total du schéma et du contenu rendus.
+AEM, via Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés afin de prendre le contrôle total du et du contenu rendus.
 
-Les rendus par défaut de Content Services comblent le fossé entre les valeurs par défaut Sling prêtes à l’emploi et le développement personnalisé, ce qui permet de personnaliser et de contrôler de nombreux aspects du contenu rendu sans développement.
+Les rendus par défaut de Content Services comblent l’écart entre les valeurs par défaut standard de Sling et le développement personnalisé, ce qui permet de personnaliser et de contrôler de nombreux aspects du contenu rendu sans développement.
 
 Le diagramme suivant illustre le rendu des services de contenu.
 
@@ -93,7 +93,7 @@ Le tableau suivant présente les propriétés des configurations d’exportation
    <td>Chaîne[]</td>
    <td>exclure rien</td>
    <td>Préfixes de propriété</td>
-   <td>exclure les propriétés qui commencent par des préfixes spécifiés de l’exportation JSON</td>
+   <td>exclure les propriétés  avec des préfixes spécifiés de l’exportation JSON</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
@@ -133,7 +133,7 @@ Le tableau suivant présente les propriétés des configurations d’exportation
  </tbody>
 </table>
 
-### Remplacements des exportations de type de ressource {#resource-type-export-overrides}
+### Remplacements de l&#39;exportation du type de ressource {#resource-type-export-overrides}
 
 Créez un noeud de configuration sous */apps/mobileapps/caas/exportConfigs.*
 
@@ -157,7 +157,7 @@ Le tableau suivant présente les propriétés :
    <td>Chaîne[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Pour les types de ressource sling suivants, ne renvoyez pas l’exportation JSON CaaS par défaut.<br /><br /> Renvoyer une exportation Json client en restituant la ressource en tant que ; &lt;RESSOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Pour les types de ressource sling suivants, ne renvoyez pas l’exportation JSON CaaS par défaut.<br /> Renvoyer une exportation Json client en restituant la ressource en tant que ;<br /> &lt;RESSOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -226,7 +226,7 @@ Cette configuration étend la valeur par défaut pour inclure le regroupement de
 
 Reportez-vous aux ressources ci-dessous pour en savoir plus sur d’autres rubriques de Content Services :
 
-* [Développement de modèles](/help/mobile/models-in-repository.md)
+* [Développement de modèles](/help/mobile/administer-mobile-apps.md)
 * [Création de Content Services](/help/mobile/develop-content-as-a-service.md)
 * [Administration de Content Services](/help/mobile/developing-content-services.md)
 
