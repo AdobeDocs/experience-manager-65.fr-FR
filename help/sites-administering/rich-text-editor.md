@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,15 +20,21 @@ L’éditeur de texte enrichi peut être configuré pour activer, désactiver et
 
 Le workflow suivant illustre l’ordre dans lequel les tâches de configuration de l’éditeur de texte enrichi doivent être exécutées.
 
-![Séquence d’étapes pour apprendre à configurer rte](assets/rte_workflow_v1.png)*Figure : Séquence d’étapes pour apprendre à configurer RTE*
+![Séquence d’étapes pour apprendre à configurer le taux](assets/rte_workflow_v1.png)
+
+*Figure : Séquence d’étapes pour apprendre à configurer RTE*
 
 ## Présentation des IU tactile et classique {#understand-touch-enabled-ui-and-classic-ui}
 
 L’interface utilisateur tactile est l’interface utilisateur standard d’AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. L’IU diffère considérablement de l’IU classique original.
 
-![Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur](assets/chlimage_1-35.png)tactile *Figure : Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur tactile*
+![Barre d’outils d’éditeur de texte enrichi dans l’IU tactile](assets/chlimage_1-35.png)
 
-![Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur](assets/rtedefault.png)classique *Figure : Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur classique*
+*Figure : Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur tactile*
+
+![Barre d’outils d’éditeur de texte enrichi dans l’IU classique](assets/rtedefault.png)
+
+*Figure : Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur classique*
 
 >[!MORELIKETHIS]
 >
@@ -57,7 +63,9 @@ Les auteurs peuvent créer et modifier du contenu textuel dans AEM en utilisant 
 
 Une fois ouvert (avec une double pression ou un double clic lent), le contenu peut être modifié dans la page. Une barre d’outils compacte avec des options très basiques est présentée.
 
-![Modification en ligne avec barre d’outils de base dans l’interface utilisateur](assets/chlimage_1-36.png)tactile *Figure : Modification en ligne avec barre d’outils de base dans l’interface utilisateur tactile*
+![Modification en ligne avec une barre d’outils de base dans l’IU tactile](assets/chlimage_1-36.png)
+
+*Figure : Modification en ligne avec barre d’outils de base dans l’interface utilisateur tactile*
 
 Dans l’IU classique, un double clic lent sur le composant permet la modification en ligne, et le contenu est encadré en orange. Si l’outil de recherche de contenu est ouvert, une barre d’outils avec les options de mise en forme disponibles de l’éditeur de texte enrichi est affichée en haut de la fenêtre. Si l’outil de recherche n’est pas ouvert, les options de mise en forme n’apparaissent pas, et vous pouvez uniquement effectuer des modifications de base sur le texte.
 
@@ -67,15 +75,21 @@ Les composants AEM peuvent être ouverts dans une vue plein écran qui masque l
 
 En mode de boîte de dialogue plein écran, outre une barre d’outils détaillée d’éditeur de texte enrichi, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Il s’applique seulement aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
 
-![Barre d’outils RTE détaillée lors de la modification en mode plein écran dans l’interface utilisateur](assets/chlimage_1-37.png)tactile *Figure : Barre d’outils RTE détaillée lors de la modification en mode plein écran dans l’interface utilisateur tactile*
+![Barre d’outils détaillée d’éditeur de texte enrichi lors de la modification en plein écran dans l’IU tactile](assets/chlimage_1-37.png)
+
+*Figure : Barre d’outils RTE détaillée lors de la modification en mode plein écran dans l’interface utilisateur tactile*
 
 ### Modification dans une boîte de dialogue {#dialog-editing}
 
 Lorsque vous double-cliquez sur un composant, une boîte de dialogue apparaît pour modifier le contenu. La boîte de dialogue s’ouvre dans la partie supérieure de la page existante. Dans quelques scénarios spécifiques, la boîte de dialogue s’affiche comme fenêtre contextuelle. Par exemple, lorsqu’un composant Texte fait partie d’une colonne dans une mise en page de plusieurs colonnes et que la zone disponible pour la boîte de dialogue est inférieure.
 
-![Mode d&#39;édition de la boîte de dialogue dans l&#39;interface utilisateur](assets/dialog_editing_modetouchui.png)tactile *Figure : Mode de modification de la boîte de dialogue dans l’interface utilisateur tactile*
+![Mode de modification dans une boîte de dialogue dans l’IU tactile](assets/dialog_editing_modetouchui.png)
 
-![Boîte de dialogue de l’interface utilisateur classique qui contient la barre d’outils détaillée pour la modification](assets/chlimage_1-38.png)de la *figure : Boîte de dialogue de l’interface utilisateur classique contenant une barre d’outils détaillée à modifier*
+*Figure : Mode de modification de la boîte de dialogue dans l’interface utilisateur tactile*
+
+![Zone de dialogue dans l’IU classique qui contient la barre d’outils détaillée pour la modification](assets/chlimage_1-38.png)
+
+*Figure : Boîte de dialogue de l’interface utilisateur classique contenant une barre d’outils détaillée à modifier*
 
 ## À propos des modules externes d’éditeur de texte enrichi et des fonctions associées {#aboutplugins}
 
@@ -110,7 +124,7 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 | [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Miscellaneous tools allow authors to enter [special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list. |
 | Paraformat | paraformat | The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). Vous pouvez [ajouter davantage de formats de paragraphe](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) ou prolonger la liste. |
 | spellcheck | checktext | [Vérificateur orthographique sensible à la langue](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
-| styles | styles | Prise en charge du style à l’aide d’une classe CSS. [Ajoutez de nouveaux styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) de texte si vous souhaitez ajouter (ou étendre) votre propre plage de styles à utiliser avec du texte. |
+| styles | styles | Prise en charge du style à l’aide d’une classe CSS. [Ajouter nouveaux styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) de texte si vous souhaitez ajouter (ou étendre) votre propre plage de styles à utiliser avec du texte. |
 | subsuperscript | subscript superscript | Extensions aux formats de base, ajout de sous-scripts et de super-scripts. |
 | table | table removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | See [configure table styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles), if you want to add your own styles for either entire tables or individual cells. |
 | undo | undo redo | History size of [undo and redo](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) operations. |
@@ -295,7 +309,7 @@ Sur une page, vous pouvez inclure CoralUI 2 RTE clientlib ou CoralUI 3 RTE clien
 
 1. Incrustez les noeuds `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` sous `/apps`.
 
-   Supprimez la catégorie `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et ajoutez-la à `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
+   Supprimez les  de `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et ajoutez-les à `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
 
 1. Changez n’importe quelle autre dépendance incluse à la page de `rte.coralui3` à `rte.coralui2`. For example, after overlaying the node `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` under `/apps`, change any dependency on it from `rte.coralui3` to `rte.coralui2`.
 
