@@ -3,7 +3,7 @@ title: Ressources connexes
 description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
+source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
 
 ---
 
@@ -14,7 +14,7 @@ Les ressources d’Adobe Experience Manager (AEM) vous permettent de lier manuel
 
 Grâce à cette fonctionnalité, vous pouvez partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et rendre le fichier INDD haute résolution disponible uniquement sur demande.
 
->[!NOTE] Les utilisateurs disposant d’autorisations de modification peuvent établir des relations avec des fichiers et les dissocier.
+>[!NOTE] Seuls les utilisateurs disposant d’autorisations de modification peuvent établir des relations avec des fichiers et les dissocier.
 >
 
 ## Relate assets {#relating-assets}
