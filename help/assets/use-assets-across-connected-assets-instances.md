@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -35,10 +35,10 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 ### Formats de fichiers pris en charge {#mimetypes}
 
-Les auteurs peuvent rechercher des images et les types de documents suivants dans l’Outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. La liste des formats pris en charge est la suivante :
+Les auteurs peuvent rechercher des images et les types de suivants dans l’Outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom AEM component that extends the default `Download` or `Image` components. Les  de formats pris en charge sont les suivants :
 
 * **Formats** d’image : Les formats d’image pris en charge par le composant [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image sont pris en charge par les ressources connectées. Les images de médias dynamiques ne sont pas prises en charge.
-* **Formats** de document : Voir Formats [de document pris en charge par les ressources](assets-formats.md#supported-document-formats)connectées.
+* **Formats** de  : Voir [Formats](assets-formats.md#supported-document-formats)de pris en charge par les ressources connectées.
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
 
@@ -113,7 +113,7 @@ Les auteurs de site web utilisent l’outil de recherche de contenu pour se conn
 
 Les auteurs peuvent utiliser les ressources disponibles à la fois sur les instances DAM locale et distante, dans une page web unique. Utilisez l’outil de recherche de contenu pour basculer entre la recherche sur l’instance DAM locale ou sur l’instance DAM distante.
 
-Seules les balises des ressources distantes sont récupérées qui ont une balise correspondante exacte (avec la même hiérarchie de taxonomie) disponible sur l’instance Sites locale. Toutes les autres balises sont ignorées. Les auteurs peuvent rechercher des ressources distantes à l’aide de toutes les balises présentes dans le déploiement distant d’AEM, car AEM propose une recherche de texte intégral.
+Seules les balises des ressources distantes sont récupérées qui ont une balise correspondante exacte (avec la même hiérarchie de taxonomie) disponible sur l’instance Sites locale. Toutes les autres balises sont ignorées. Les auteurs peuvent rechercher des ressources distantes à l’aide de toutes les balises présentes dans le déploiement AEM distant, car AEM  une recherche de texte intégral  une recherche de texte intégral.
 
 ### Présentation de l’utilisation {#walk-through-of-usage}
 
@@ -127,19 +127,19 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
 1. Open the Assets tab and click **[!UICONTROL Log in to Connected Assets]**.
 1. Provide the credentials -- `ksaner` as user name and `password` as password. Cet utilisateur dispose d’autorisations de création sur les deux déploiements AEM.
-1. Recherchez la ressource que vous avez ajoutée dans DAM. Les ressources distantes s’affichent dans le panneau de gauche. Filtrez les images ou les documents, puis les types de documents pris en charge. Faites glisser les images sur un `Image` composant et les documents sur un `Download` composant.
+1. Recherchez la ressource que vous avez ajoutée dans DAM. Les ressources distantes s’affichent dans le panneau de gauche. Filtrez les images ou les documents, puis les types de documents pris en charge. Faites glisser les images sur un `Image` composant et  sur un `Download` composant.
 
    Les ressources récupérées sont en lecture seule sur le déploiement AEM Sites local. Vous pouvez toujours utiliser les options des composants AEM Sites pour modifier la ressource récupérée. La modification par composants est non destructive.
 
    ![Options de filtrage des types de documents et des images lors de la recherche de fichiers sur DAM distant](assets/filetypes_filter_connected_assets.png)
 
-   *Figure : Options de filtrage des types de documents et des images lors de la recherche de fichiers sur DAM distant*
+   *Figure : Options de filtrage des types de  de et des images lors de la recherche de ressources sur DAM distant*
 
 1. Un auteur de site est informé de la récupération asynchrone d&#39;une ressource et de l’échec d’une tâche de récupération. Les auteurs peuvent consulter les informations détaillées sur la récupération des tâches et des erreurs dans l’[interface utilisateur](/help/assets/asynchronous-jobs.md) des tâches asynchrones pendant, voire après la création.
 
    ![Notification concernant la récupération asynchrone en arrière-plan des ressources.](assets/assets_async_transfer_fails.png)
 
-   *Figure : Notification concernant la récupération asynchrone des ressources survenant en arrière-plan.*
+   *Figure : Notification concernant la récupération asynchrone des ressources survenant en arrière-plan*
 
 1. AEM affiche la liste complète des ressources utilisées sur une page lorsqu’elle est publiée. Veillez à bien récupérer les fichiers distants au moment de la publication. Pour vérifier l’état de chaque ressource récupérée, reportez-vous à l’interface utilisateur des[](/help/assets/asynchronous-jobs.md) tâches asynchrones.
 
@@ -160,7 +160,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 * Les ressources locales ne sont pas synchronisées avec les ressources d’origine sur le déploiement distant. Tout retrait, modification ou suppression d’autorisation sur le déploiement DAM n’est pas propagé en aval.
 * Les ressources locales sont des copies en lecture seule. Les composants AEM effectuent des modifications non destructives des ressources. Aucune autre modification n’est autorisée.
 * Les ressources récupérées localement sont disponibles à des fins d’écriture uniquement. Les workflows de mise à jour de ressources ne peuvent pas être appliqués et les métadonnées ne peuvent pas être modifiées.
-* Seules les images et les formats de document répertoriés sont pris en charge. Les fichiers de médias dynamiques, les fragments de contenu et les fragments d’expérience ne sont pas pris en charge.
+* Seules les images et les formats de répertoriés sont pris en charge. Les fichiers de médias dynamiques, les fragments de contenu et les fragments d’expérience ne sont pas pris en charge.
 * Les schémas de métadonnées ne sont pas récupérés.
 * Tous les auteurs Sites disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en n’ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
