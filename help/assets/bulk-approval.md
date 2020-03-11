@@ -3,7 +3,7 @@ title: Révision de collections et de ressources situées dans un dossier
 description: Mettez en place des workflow de révision pour les ressources dans un dossier ou une collection et partagez ce processus avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -41,7 +41,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
 1. Entrez une description, la priorité et la date d’échéance de la tâche de révision.
 
-   ![task_details](assets/task_details.png)
+   ![_details](assets/task_details.png)
 
 1. Dans l’onglet Avancé, entrez le libellé à utiliser pour créer l’URI.
 
@@ -55,18 +55,18 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 1. Dans la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
 1. In the **[!UICONTROL Review Task]** page, select assets, and tap **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
 
-   ![review_task](assets/review_task.png)
+   ![review_](assets/review_task.png)
 
 1. Appuyez sur **[!UICONTROL Terminer]** dans la barre d’outils. In the dialog, enter a comment and tap/click  **[!UICONTROL Complete]** to confirm.
-1. Accédez à l’interface utilisateur Ressources et ouvrez le dossier. Les icônes d’état d’approbation des ressources s’affichent en mode Carte et Liste.
+1. Accédez à l’interface utilisateur Ressources et ouvrez le dossier. Les icônes d’état d’approbation des ressources s’affichent dans les  de carte et les  de .
 
    **Mode Carte**
 
-   ![Vérifier l’état tel qu’il est affiché en mode Carte](assets/chlimage_1-404.png)
+   ![Vérifier l’état tel qu’il apparaît dans le de cartes](assets/chlimage_1-404.png)
 
    **Mode Liste**
 
-   ![Etat de révision tel qu’il est affiché en mode Liste](assets/review_status_listview.png)
+   ![Vérifier l&#39;état tel qu&#39;il est vu dans  de](assets/review_status_listview.png)
 
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
@@ -89,22 +89,22 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
 1. Entrez une description, la priorité et la date d’échéance de la tâche de révision.
 
-   ![task_details-collection](assets/task_details-collection.png)
+   ![_details-collection](assets/task_details-collection.png)
 
 1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
 1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à la console Ressources. To approve assets, tap **[!UICONTROL Notifications]** and then select the review task from the list.
 1. Dans la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
 1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Select the assets and tap **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 
-   ![review_task_collection](assets/review_task_collection.png)
+   ![review___collection](assets/review_task_collection.png)
 
 1. Appuyez sur **[!UICONTROL Terminer]** dans la barre d’outils. In the dialog, enter a comment and tap/click **[!UICONTROL Complete]** to confirm.
 1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation pour les ressources apparaissent dans les modes Carte et Liste.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figure : Affichage Carte*
+   *Figure :  de carte*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figure : Affichage par liste*
+   *Figure :*
