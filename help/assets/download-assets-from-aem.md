@@ -3,7 +3,7 @@ title: Téléchargement de ressources à partir d’AEM
 description: Découvrez comment télécharger des ressources à partir d’AEM et activer ou désactiver la fonctionnalité de téléchargement.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -20,13 +20,15 @@ To download assets, navigate to an asset, select the asset, and tap **[!UICONTRO
 
 Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionneuses de supports variés et Visionneuses de carrousel ne peuvent pas être téléchargés.
 
-![Options disponibles lors du téléchargement de fichiers à partir d’AEM Assets](assets/asset_download_dialog.png)*Figure : Options disponibles lors du téléchargement de fichiers à partir d’AEM Assets*
+![Options disponibles lors du téléchargement de ressources à partir d’AEM Assets](assets/asset_download_dialog.png)
+
+*Figure : Options disponibles lors du téléchargement de fichiers à partir d’AEM Assets*
 
 Vous trouverez ci-dessous les options d’exportation/de téléchargement disponibles. Les rendus dynamiques sont propres à Dynamic Media et vous permettent de générer des rendus à la volée, en plus de la ressource que vous avez sélectionnée (cette option est uniquement disponible lorsque Dynamic Media est activé).
 
 | Options d’exportation ou de téléchargement | Descriptions |
 |---|---|
-| [!UICONTROL Ressources] | Sélectionnez cette option pour télécharger la ressource dans son format d’origine sans aucun rendu. |
+| [!UICONTROL Assets] | Sélectionnez cette option pour télécharger la ressource dans son format d’origine sans aucun rendu. |
 | [!UICONTROL Rendus] | Un rendu est une représentation binaire d’une ressource. Les ressources possèdent une représentation principale, à savoir celle du fichier transféré. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource sélectionnée. |
 | [!UICONTROL Rendus dynamiques] | Un rendu dynamique génère d’autres rendus à la volée. When you select this option, you also select the renditions you want to create dynamically by selecting from the [Image Preset](image-presets.md) list. <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). |
 | [!UICONTROL Courriel] | Une notification électronique est envoyée à l’utilisateur. Les modèles standard de courrier électronique sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> Les modèles que vous personnalisez lors du déploiement doivent se trouver à ces emplacements : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |
