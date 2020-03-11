@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -24,7 +24,7 @@ AEM s’intègre dans PhoneGap pour vous aider à créer aisément des applicati
 
 >[!NOTE]
 >
->Avant de commencer à utiliser AEM Mobile à l&#39;aide d&#39;Adobe PhoneGap, assurez-vous de configurer votre environnement et de commencer à utiliser le tableau de bord [de l&#39;application](/help/mobile/phonegap-authoring-apps.md)AEM Mobile.
+>Avant de commencer à utiliser AEM Mobile à l&#39;aide d&#39;Adobe PhoneGap, assurez-vous de configurer votre  de  et commencez à utiliser led&#39;applications [AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
 
 Les ressources suivantes vous aideront à démarrer avec AEM Mobile à l&#39;aide d&#39;Adobe PhoneGap :
 
@@ -35,14 +35,14 @@ Les ressources suivantes vous aideront à démarrer avec AEM Mobile à l&#39;aid
 * [AEM Mobile Content Services : Aperçu](/help/mobile/develop-content-as-a-service.md)
 
    * Pour activer Content Services et les modèles de données, voir [Administration de Content Services.](/help/mobile/developing-content-services.md)
-   * Pour en savoir plus sur la création de modèles, voir [Développement de modèles](/help/mobile/models-in-repository.md)
-   * Pour en savoir plus sur le rendu et la diffusion, voir [Rendu et diffusion de Content Services](/help/mobile/rendering-and-delivery.md)
+   * Pour en savoir plus sur la création de modèles, voir [Développement de modèles](/help/mobile/administer-mobile-apps.md)
+   * Pour en savoir plus sur le rendu et les  de, voir [Rendu et de Content Services](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
 >Pour exécuter vos applications mobiles AEM sur n&#39;importe quel périphérique mobile iOS ou Android, reportez-vous à la page Démarrage rapide [mobile à l&#39;aide de l&#39;application](/help/mobile/phonegap-mobile-quickstart.md)AEM Verify.
 
-## En route {#getting-ahead}
+## En Tête {#getting-ahead}
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 
