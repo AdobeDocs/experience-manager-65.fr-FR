@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -138,15 +138,15 @@ L’option Contrôle d’administration permet aux administrateurs d’effectuer
 
 * Contrôle de l’affichage des liens de navigation disponibles dans l’en-tête
 
-L’option Contrôle d’administration s’affiche dans le déroulant du sélecteur de  uniquement si vous êtes membre du groupe d’administrateurs ou d’administrateurs de processus.
+L’option Contrôle d’administration n’est visible que pour les membres du groupe des administrateurs ou des administrateurs de processus.
 
 ![admin-control](assets/admin-control.png)
 
 * **Personnalisation de l’identité graphique**
 
-   * **Personnaliser le texte de l’en-tête :** Spécifiez le texte à afficher dans l’en-tête.
+   * **Personnaliser le texte de l’en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
 
-   * **Personnaliser le logo :** Téléchargez une image dans Digital Asset Management (DAM) et reportez-vous à cette image pour l’afficher dans l’en-tête.
+   * **Personnaliser le logo :** Spécifiez l’image à afficher dans l’en-tête sous forme de logo. Téléchargez une image dans Digital Asset Management (DAM) et référencez-la dans le champ.
 
 * **Navigation de l’utilisateur**
    * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte d’Adobe Experience Manager.
