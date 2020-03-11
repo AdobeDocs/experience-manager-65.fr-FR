@@ -3,7 +3,7 @@ title: Gestion des droits numériques dans AEM Assets
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -16,17 +16,17 @@ Les actifs numériques sont souvent associés à une licence qui prévoit les co
 
 L’expiration de ressources est un moyen efficace de faire respecter les exigences en matière de licence pour les ressources. Elle garantit que la ressource qui est publiée ne l’est plus lorsqu’elle arrive à expiration, ce qui évite tout risque de violation de licence. Un utilisateur sans droits d’administration ne peut pas modifier, copier, déplacer, publier ni télécharger une ressource arrivée à expiration.
 
-Vous pouvez afficher l’état d’expiration d’un fichier dans la console Ressources en mode Carte et Liste.
+Vous pouvez l’état d’expiration d’un fichier dans la console Ressources dans le  de la carte et du.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figure : En mode Carte, un indicateur sur la carte indique un fichier arrivé à expiration.*
+*Figure : Dans le  de la carte, un indicateur sur la carte indique un fichier arrivé à expiration.*
 
 **Mode Liste**
 
-![expired_flag_list](assets/expired_flag_list.png)
+![expired_flag_](assets/expired_flag_list.png)
 
-*Figure : En mode Liste, la colonne[!UICONTROL État]affiche la bannière[!UICONTROL Expiré].*
+*Figure : Dans  , la colonne[!UICONTROL Etat]affiche la bannière[!UICONTROL Expiré].*
 
 Vous pouvez consulter l’état d’expiration d’une ressource dans la chronologie. Sélectionnez la ressource et choisissez Chronologie dans le menu de navigation globale.
 
@@ -129,7 +129,7 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
 1. Dans la console Ressources, sélectionnez un dossier et créez une tâche de révision sur le dossier.
 1. Review and approve/reject the assets in the review task and click **[!UICONTROL Complete]**.
-1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas du mode Carte. En mode Liste, les états d’approbation et d’expiration sont affichés dans les colonnes appropriées.
+1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas du mode Carte. Dans le  , les états d’approbation et d’expiration s’affichent dans les colonnes appropriées.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
