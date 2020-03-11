@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
@@ -243,6 +243,8 @@ Pour une  complète des fonctionnalités, des points saillants clés et des fonc
 * Designer : Si l’option de balisage est activée, la bordure du sous-formulaire disparaît dans la sortie PDF générée (NPR-32547, NPR-31983, NPR-31950).
 
 * Designer : S’il existe des cellules fusionnées dans un tableau, le test d’accessibilité échoue pour le fichier PDF de sortie converti à partir d’un formulaire XDP à l’aide du service de sortie (CQ-4285372).
+
+* Foundation JEE : Le serveur qui est déconnecté d’une grappe ne parvient pas à se reconnecter en raison de problèmes de cache (NPR-32412).
 
 ## Install 6.5.4.0 {#install}
 
