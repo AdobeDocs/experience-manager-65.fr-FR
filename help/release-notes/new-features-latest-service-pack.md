@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
+source-git-commit: ed756d785864131c2e031aec4331388bc057576b
 
 ---
 
@@ -39,15 +39,17 @@ Vous pouvez créer une nouvelle intégration ou mettre à niveau vos paramètres
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-* Les cases à cocher à états mixtes comportent désormais un attribut à états multiples avec la valeur &quot;mixte&quot;, afin d’exposer leur état mixte aux lecteurs d’écran.
+Les ressources Experience Manager comprennent les améliorations d’accessibilité suivantes :
 
-* Les contrôles basés sur le clavier sont désormais pris en charge, à l’exception des mouvements basés sur les chemins, pour se déplacer dans les images zoomées.
+* Vous pouvez utiliser les touches fléchées du clavier pour déplacer et déplacer des zones dans des images agrandies. Pour plus d’informations, reportez-vous à la section [de fichiers à l’aide de touches du clavier uniquement](../assets/managing-assets-touch-ui.md#previewing-assets).
 
-* Des contraintes de format de date ont été fournies dans les libellés de champ pour que les utilisateurs utilisant uniquement le clavier puissent saisir manuellement la date.
+* Les cases à cocher à états mixtes (dans lesquelles, sauf si vous sélectionnez tous les prédicats imbriqués, les cases de premier niveau ne sont pas sélectionnées et sont enfoncées) dans le panneau  du sont lisibles par les lecteurs d’écran.
 
-* L’attribut Alt a été ajouté aux icônes décoratives et supprimé de l’attribut role=img, de sorte que ces icônes et images ne soient pas exposées aux utilisateurs de lecteurs d’écran.
+* Les contraintes de format de date et d’heure sont fournies dans les libellés de champ des champs de date, afin de permettre aux utilisateurs de saisir la date dans le format correct à l’aide du clavier.
 
-* L’attribut Alt a été ajouté aux icônes de fermeture afin d’indiquer aux utilisateurs de lecteurs d’écran lorsqu’ils le survolent.
+   Par exemple, `On Time (MM-DD-YYYY HH:mm)`. Ici MM est le mois dans un format à deux chiffres, AAAA est l&#39;année, JJ est le jour dans un format à deux chiffres, HH est l&#39;heure dans un format militaire à 24 heures et mm est la minute.
+
+* Le `X` symbole du bouton permettant de supprimer les balises actuellement sélectionnées est désormais annoncé par les lecteurs d’écran, ainsi que le nombre de balises sélectionnées.
 
 ## AEM Forms {#aem-forms}
 
