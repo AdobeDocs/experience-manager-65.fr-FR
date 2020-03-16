@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour d’AEM Sites
-description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.4 Sites.
+description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Sites.
 uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -33,7 +33,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
    * Déclarations de variables avec un ensemble de données :
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Paramètres de contrôle de liste et de répétition : begin, step, end :
+   * Paramètres de contrôle de  et de répétition : begin, step, end :
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identifiants pour le renvoi automatique des données :
@@ -97,7 +97,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 * Pour les configurations de déploiement qui utilisent PushOnModify, une meilleure gestion de l’opération de déplacement de page pour éviter des incohérences d’état
 * La création d’une nouvelle page dans la structure de livecopy créera désormais par défaut une page autonome.
-* Utilisez les fonctionnalités MSM dans les applications d’une seule page qui utilisent le SDK JS (également appelé éditeur d’applications monopages).
+* Utilisez les fonctionnalités MSM dans les applications d’une seule page qui utilisent le SDK JS (également appelé éditeur d’application d’une seule page).
 
 ## Lancements {#launches}
 
@@ -108,13 +108,13 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 * Le code JavaScript de la couche de données ContextHub et du moteur de règles côté client a été mis à jour pour utiliser jQuery 3 par défaut.
 
-## AEM et Adobe Target {#aem-amp-adobe-target}
+##  d’AEM et d’Adobe {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
 >at.js 2.x n’est pas pris en charge avec AEM au moment de la publication de la version AEM 6.5. Utilisez la version la plus récente de at.js 1.x
 
-* L’intégration Adobe Target peut désormais utiliser l’API Target Standard. Les versions antérieures d’AEM utilisent l’API HTTP Target Classic, désormais obsolète.
+* L’intégration Adobe Target peut désormais utiliser l’API Target Standard. Les versions antérieures d’AEM utilisent l’API HTTP  Classic, désormais obsolète.
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
 * `at.js` La version 1.5.0 est désormais incluse. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
@@ -133,7 +133,7 @@ Voir la [page de notes de mise à jour sur Communities](../release-notes/communi
 
 ## Module complémentaire Screens {#screens-add-on}
 
-* Utilisation des lancements pour planifier les modifications futures du contenu des signatures
+* Utilisation des lancements pour planifier les futures modifications de contenu pour le contenu de signalisation
 * Lecture mesurée dans un canal de séquence
 * Création automatique d’une structure de projet à l’aide d’un fichier source, une feuille de calcul Excel par exemple.
 
