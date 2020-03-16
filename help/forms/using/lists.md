@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -60,7 +60,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
    [ ![Barre d’outils](assets/advancedediting.png)
 
-   * **Lien** : Insérez un lien hypertexte dans le texte. Appuyez sur **[!UICONTROL Lien]**, spécifiez le lien dans le champ **[!UICONTROL URL]** , supprimez le nom d’objet par défaut du champ Texte **[!UICONTROL de]** remplacement, puis appuyez sur ![Enregistrer.](assets/save_icon.svg)
+   * **Lien**[](#insert-hyperlink) : Insérer un lien hypertexte dans le texte.
    * **Répéter** : Imprime l’élément Collection dans le dictionnaire de données au moyen d’un délimiteur.
    * **Condition** : cliquez pour insérer une condition. Insérez le texte en fonction de la condition. Si la condition est vraie, le texte est visible dans la lettre, sinon il ne l’est pas.
    * **Ajouter Description**: Ajouter une annotation à un bout de texte. Il s’agit de métadonnées visibles pour l’auteur mais pas d’une partie de la lettre créée.
@@ -131,6 +131,18 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
 1. Vous pouvez utiliser des conditions intégrés et la répétition afin que votre lettre soit hautement contextuelle et parfaitement structurée. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
 1. Appuyez sur **Enregistrer**.
+
+#### Insertion d’un hyperlien dans un texte {#insert-hyperlink}
+
+Pour créer un hyperlien dans un fichier texte, procédez comme suit :
+
+1. Sélectionnez le texte ou l’objet de modèle de données dans l’éditeur de texte.
+
+2. Appuyez sur **[!UICONTROL Lien]**. Appuyez sur le champ Texte **[!UICONTROL de]** remplacement pour supprimer le nom ou le texte de l’objet de modèle de données existant.
+
+3. Spécifiez l’URL et appuyez sur ![Enregistrer](assets/save_icon.svg).
+
+![Création d’un hyperlien dans un fichier texte](assets/text-create-hyperlink.png)
 
 #### Recherche et remplacement de texte {#searching-and-replacing-text}
 
