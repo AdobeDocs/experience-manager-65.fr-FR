@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
+source-git-commit: 64fe2634bae6289aa313dd1e5a135d1bdd654dbe
 
 ---
 
@@ -92,8 +92,9 @@ Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la mig
 
    * **[!UICONTROL Chemin d’accès au dossier racine de l’entreprise]**
 
-   * **[!UICONTROL Publication des ressources]** : l’option **[!UICONTROL Immédiatement]** signifie que lorsque les ressources sont téléchargées, le système les assimile et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources. L’option **[!UICONTROL Lors de l’activation]** signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
-
+   * **[!UICONTROL Publication de fichiers]** : vous pouvez choisir parmi les trois options suivantes :
+      * **[!UICONTROL Immédiatement]** , cela signifie que lorsque des fichiers sont téléchargés, le système les ingère et fournit instantanément l’URL/l’incorporation. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.
+      * **[!UICONTROL Upon Activation]** (Lors de l’activation) : signifie que vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.
    * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. En d’autres termes, une fois les rendus générés, AEM peut accéder de manière sécurisée aux rendus Dynamic Media distants et en afficher un aperçu (aucune donnée binaire n’est renvoyée à l’instance AEM).
 À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre propre société ou un serveur spécial, Adobe Systems vous conseille de conserver ce paramètre tel que spécifié.
 
