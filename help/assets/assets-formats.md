@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: Liste des formats de fichiers pris en charge par AEM Assets et fonctions prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
+source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
 
 ---
 
@@ -55,7 +55,7 @@ Les formats d’image pixellisée pris en charge pour les fonctionnalités de m�
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
- &amp;ast; L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+&amp;ast; L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Outre les informations ci-dessus, tenez compte des points suivants :
 
@@ -91,7 +91,7 @@ La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images 
 
 ## Formats de document pris en charge {#supported-document-formats}
 
-Les formats de document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
+Les formats de  pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
 
 | Format | Stockage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Statistiques](touch-ui-asset-insights.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -114,7 +114,7 @@ Les formats de document pris en charge pour les fonctionnalités de gestion des 
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-Les formats de document pris en charge pour les fonctionnalités de média dynamique sont les suivants :
+Les formats de  pris en charge pour les fonctionnalités de média dynamique sont les suivants :
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -188,24 +188,23 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 ## Autres formats pris en charge {#other-supported-formats}
 
-Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier.
+Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques standard, à l’exception des  de médias dynamiques, est prise en charge pour tous les fichiers.
 
 | Formats | Stockage | Création de versions | Processus | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (lorsque configuré avec son propre domaine de diffusion) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; Les autres formats sont pris en charge dans DAM pour le stockage, le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées.
+**&amp;ast;** Les autres formats sont pris en charge dans la gestion des actifs numériques pour  la , le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées.
 
 ## Types MIME pris en charge {#supported-mime-types}
 
 Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. AEM peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
 
-Une liste des types MIME pris en charge est disponible dans CRXDE Lite à l’adresse `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Un de types MIME pris en charge est disponible dans CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 Voir [Configuration de MIME en fonction du type pour la prise en charge des paramètres de tâche de téléchargement](config-dynamic.md).
 
