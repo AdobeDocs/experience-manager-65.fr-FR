@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed756d785864131c2e031aec4331388bc057576b
+source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
 
 ---
 
@@ -31,11 +31,12 @@ En outre, AEM 6.5.4.0 inclut des améliorations du système de style. Vous pouve
 
 ## AEM Assets {#aem-assets}
 
-### Intégration de Brand Portal via Adobe I/O Console {#assets-integration-bp}
+### Configuration d’AEM Assets avec Brand Portal {#configure-assets-bp}
 
-Vous pouvez désormais configurer AEM Assets avec Brand Portal via la console d’E/S Adobe. La console d’E/S Adobe fournit un jeton IMS pour l’autorisation du locataire du portail de marque. Auparavant, les ressources AEM étaient configurées avec le portail de marque dans l’interface utilisateur classique via la passerelle OAuth héritée. Les configurations utilisant la passerelle OAuth héritée seront prises en charge jusqu’au 6 avril 2020. Si vous ne modifiez pas l’intégration, les configurations existantes continueront à fonctionner.
+Le d’autorisations  entre les ressources AEM et le portail de marque est modifié. Auparavant, Brand Portal était configuré dans l’interface utilisateur classique via la passerelle OAuth héritée, qui fait appel à l’échange de jetons JWT pour obtenir un jeton d’accès IMS en vue de l’autorisation. AEM Assets est désormais configuré avec Brand Portal via Adobe I/O, qui fournit un jeton IMS pour autoriser votre client Brand Portal.
 
-Vous pouvez créer une nouvelle intégration ou mettre à niveau vos paramètres d’intégration vers la console d’E/S Adobe.
+Les étapes de configuration des ressources AEM avec le portail de marque sont différentes selon votre version AEM et selon que vous effectuez une configuration pour la première fois ou une mise à niveau des configurations existantes. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
+
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
