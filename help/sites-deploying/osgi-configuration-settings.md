@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0849cfdd0e4f9a614c455214e6520ead07ae6da0
 
 ---
 
@@ -36,25 +36,25 @@ Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont
 
 >[!NOTE]
 >
->L’outil [Détails de configuration AEM OSGi](https://www.aemstuff.com/osgi.html) peut être utilisé pour répertorier les configurations OSGi par défaut.
+>L’outil de différenciation de configuration OSGi, composant des outils [](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, peut être utilisé pour  les configurations OSGi par défaut.
 
 >[!NOTE]
 >
 >D’autres lots peuvent être nécessaires pour des zones spécifiques de fonctionnalité dans AEM. Dans ce cas, les informations de configuration figurent sur la page liée à la fonctionnalité en question.
 
-**Configuration du module d’écoute** d’événements de réplication AEM :
+**Configuration du module d’écoute** du de réplication AEM :
 
-* Modes d’ **exécution**, dans lesquels les événements de réplication seront distribués aux auditeurs. Par exemple, s’il est défini comme auteur, il s’agit du système qui &quot;initiera&quot; la réplication.
+* Modes d’ **exécution**, dans lesquels le de réplication sera distribué aux auditeurs. Par exemple, s’il est défini comme auteur, il s’agit du système qui &quot;initiera&quot; la réplication.
 
-* Le mode d’exécution **Publication** doit être ajouté si le code du projet traite les événements de réplication (réplication inversée) dans un environnement de publication. Par exemple, lorsque le répartiteur est utilisé pour vider de l’environnement de publication ou lorsque la réplication standard vers d’autres instances de publication se produit.
+* Le mode d’exécution **Publication** doit être ajouté si le code du projet traite le de réplication (réplication inverse) dans un  de publication. Par exemple, lorsque le répartiteur est utilisé pour vider du de publication  ou lorsque la réplication standard vers d’autres instances de publication se produit.
 
 **Configuration d’un écouteur** de modification du référentiel AEM :
 
-* Les **chemins**, emplacements pour écouter les événements de référentiel prêts à être distribués.
+* Les **chemins**, emplacements pour écouter les de référentiel  prêts pour la distribution.
 
 **Référentiel** client CRX Sling Configurez l’accès au référentiel de contenu sous-jacent.
 
-* Le mot de passe **** d’administration doit être modifié après l’installation afin de garantir la [sécurité](/help/sites-administering/security-checklist.md) de votre instance.
+* Le mot de passe **** d’administration doit être modifié après l’installation afin d’assurer la [sécurité](/help/sites-administering/security-checklist.md) de votre instance.
 * D&#39;autres modifications ne devraient pas être nécessaires et doivent être prises en compte car elles peuvent affecter l&#39;accès au référentiel.
 
 **Service** de messagerie Wiki Configurez les paramètres de messagerie pour les courriers électroniques envoyés par un wiki.
@@ -82,12 +82,12 @@ Pour plus d’informations, reportez-vous à [Journalisation AEM](/help/sites-de
 
 **Apache Sling Évolution du pool** de threads Configuration :
 
-* **Taille** minimale du pool et Taille **** maximale du pool, taille du pool utilisé pour contenir les threads d’événements.
+* **Taille** minimale du pool et Taille **** maximale du pool, taille du pool utilisé pour tenir  threads.
 
 * **Taille**de la file d’attente, taille maximale de la file d’attente de thread si le pool est épuisé.
 La valeur recommandée est `-1` la suivante : la file d’attente est définie sur illimitée ; si une limite est définie, des pertes peuvent survenir lorsqu&#39;elle est dépassée.
 
-* La modification de ces paramètres peut améliorer les performances dans les scénarios comportant un grand nombre d’événements ; par exemple, une utilisation importante de la gestion des actifs numériques AEM ou du processus.
+* La modification de ces paramètres peut améliorer les performances dans les scénarios comportant un nombre élevé de  ; par exemple, une utilisation importante de la gestion des actifs numériques AEM ou du processus.
 * Les valeurs spécifiques à votre scénario doivent être établies à l’aide de tests.
 * Ces paramètres peuvent affecter les performances de votre instance. Ne les modifiez donc pas sans raison et en tenant dûment compte.
 
@@ -111,17 +111,17 @@ Certains paramètres peuvent nuire aux performances et doivent être désactivé
 
    * Désactivez l’option **Générer les informations de débogage**
 
-**Programme d&#39;installation** JCR d&#39;Apache Sling Ces paramètres n&#39;ont probablement pas besoin d&#39;être configurés, mais ils peuvent être utiles pour le développement ou le débogage. Par exemple, le dossier d’installation peut être utile pour archiver/extraire ou créer un module.
+**Programme d&#39;installation** JCR d&#39;Apache Sling Ces paramètres n&#39;ont probablement pas besoin d&#39;être configurés, mais ils peuvent être utiles à connaître lors du développement ou du débogage. Par exemple, le dossier d’installation peut être utile pour archiver/extraire ou créer un module.
 
 * **Installation folders name regexp (Regexp nom de dossiers d’installation)** et **Max hierarchy depth of install folders (Profondeur de hiérarchie maximale des fichiersd’installation)** - spécifiez où et à quel niveau les fichiers de référentiel sont recherchées pour que les ressources soient installées. Lorsqu’un caractère générique est utilisé (comme dans .*/install) all appropriate matches will be searched, for example, `/libs/sling/install` and `/libs/cq/core/install`.
 
 * **Search Path (Chemin de recherche)** : la liste des chemins d’accès recherchés par jcrinstall pour l’installation des ressources, ainsi qu’un nombre indiquant le facteur de pondération pour ce chemin. 
 
-**Gestionnaire** d’événements de tâche Apache Sling Configurez les paramètres qui gèrent la planification de tâche :
+**Gestionnaire** de tâches Apache Sling Configuration des paramètres qui gèrent la planification des tâches :
 
-* **Intervalle** de nouvelle tentative, Nombre **maximal de tentatives**, **Nombre maximal de tâches** parallèles, **Temps d’attente** reconnu, entre autres.
+* **Intervalle** de nouvelle tentative, **** maximum, Tâches **parallèles** maximales, temps **** d’attente d’acceptation, entre autres.
 
-* La modification de ces paramètres peut améliorer les performances dans les scénarios comportant un grand nombre de tâches ; par exemple, une utilisation intensive de la gestion des actifs numériques AEM et des processus.
+* La modification de ces paramètres peut améliorer les performances dans les scénarios comportant un grand nombre de tâches ; par exemple, une utilisation intensive de la gestion des actifs numériques et des  AEM.
 * Les valeurs spécifiques à votre scénario doivent être établies à l’aide de tests.
 * Ne modifiez pas ces paramètres sans raison, mais modifiez-les uniquement après en avoir tenu compte.
 
@@ -180,7 +180,7 @@ Pour plus d’informations, reportez-vous à [Journalisation AEM](/help/sites-de
 
 * **les types MIME** pour ajouter ceux requis par votre projet dans le système. Cela permet d’effectuer une demande `GET` sur un fichier pour définir l’en-tête du type de contenu approprié pour lier le type de fichier et l’application. 
 
-**Filtre** de référents Apache Sling Pour résoudre les problèmes de sécurité connus avec la falsification de requêtes multisite (CSRF) dans CRX WebDAV et Apache Sling, vous devez configurer le filtre de référents.
+**Apache Sling  filtre** Pour résoudre des problèmes de sécurité connus avec le filtre CSRF (Cross-Site Request Forgery) dans CRX WebDAV et Apache Sling, vous devez configurer le filtre .
 
 Le service de filtre de référent est un service OSGi qui permet de configurer :
 
@@ -207,7 +207,7 @@ Pour plus d’informations, reportez-vous à [Journalisation AEM](/help/sites-de
 
 **Apache Sling Resource Resolver Factory** Configurez les aspects centraux de la résolution des ressources Sling :
 
-* **Chemin** de recherche de ressources, ajoutez des chemins spécifiques au projet (mais ne supprimez `/libs` ni `/apps`).
+* **Chemin** de recherche de ressources, ajoutez les chemins spécifiques au projet (mais ne supprimez `/libs` ni `/apps`).
 
 * **URL virtuelles** pour définir vos mappages URL Vanity.
 
@@ -225,7 +225,7 @@ Pour plus d’informations, voir : [https://cwiki.apache.org/confluence/display
 >
 >Dans le cas contraire, les modifications apportées aux **mappages d’URL** à l’aide de la console Felix peuvent être écrasées par AEM au prochain démarrage. 
 
-**Apache Sling Servlet/Script Resolver and Error Handler** (Résolveur de script/servlet Apache Sling) Le servlet Sling et le résolveur de script ont plusieurs tâches :
+**Apache Sling Servlet/Script Resolver and Error Handler** (Résolveur de script/servlet Apache Sling) Le servlet Sling et le résolveur de script ont plusieurs  :
 
 1. Il est utilisé comme `ServletResolver` pour sélectionner le servlet ou le script à appeler pour traiter la demande.
 
@@ -299,19 +299,19 @@ Lorsque vous utilisez des [groupes d’utilisateurs fermés](/help/sites-adminis
 * Testez **l’intervalle de tolérance des mauvais liens** pour déterminer la période après laquelle un lien externe ayant échoué est considéré comme étant mauvais.
 * Les **modèles de priorité de vérification des liens** pour définir les chemins d’accès à exclure de la vérification des liens. 
 
-**Tâche** du vérificateur de liens Day CQ Configurez les paramètres d’une tâche de vérification de lien unique (tâche qui vérifie un lien externe) :
+**de vérification des liens Day CQ** configurer les paramètres d’un de vérification des liens unique  (un  qui vérifie un lien externe) :
 
 * Vérifiez les intervalles définis dans les options **Intervalle de test d’un bon lien** et **Intervalle de test d’un mauvais lien**
 
 * Les différents paramètres liés aux proxys pour l’accès Internet et les NTLM nécessaires pour les accès externes lors de la vérification d’un lien.
 
-**Service** de messagerie Day CQ Configurez le nom d’hôte et les détails d’accès du serveur de messagerie. Reportez-vous à la section Configuration du service de messagerie.
+**Service** de messagerie Day CQ Configurez le nom d’hôte et les détails d’accès pour le serveur de messagerie. Reportez-vous à la section Configuration du service de messagerie.
 
 **Newsletter** MCM Day CQ Configurez les différents paramètres utilisés avec la newsletter.
 
 **Mappage** racine Day CQ Configuration :
 
-* **Chemin d’accès** cible pour définir vers quel emplacement une requête vers `/`&quot; sera redirigée.
+* **Chemin** de  pour définir à quel emplacement une requête vers &quot; `/`&quot; sera redirigée.
 
 Il existe deux interfaces utilisateur disponibles dans AEM :
 
@@ -434,11 +434,11 @@ Les propriétés suivantes s’appliquent uniquement si HTTPS est activé.
 
 * **Port** HTTPS, port pour écouter la demande HTTPS. La valeur par défaut est 433.
 * **NIO pour HTTPS**, Utilisation ou non de NIO pour HTTP. Valeur par défaut de la valeur NIO pour la propriété HTTP.
-* **Keystore**, chemin absolu vers le Keystore à utiliser pour HTTPS. Obligatoire si HTTPS est activé.
-* **Mot de passe** de stockage de clés, Mot de passe pour accéder au magasin de clés.
-* **Alias** clé, alias de la clé secrète dans le magasin de clés.
+* **Keystore**, chemin d’accès absolu au Keystore à utiliser pour HTTPS. Obligatoire si HTTPS est activé.
+* **Mot de passe** de stockage de clés, Mot de passe pour accéder au fichier de stockage de clés.
+* **Alias** de clé, alias de la clé secrète dans le magasin de clés.
 * **Mot de passe** clé, Mot de passe pour déverrouiller la clé secrète dans le fichier de stockage des clés.
-* **Certificat** client, exigence du client pour fournir un certificat valide. La valeur par défaut est none.
+* **Certificat** client, Obligation pour le client de fournir un certificat valide. La valeur par défaut est none.
 
 Voir aussi [Activation du protocole HTTP sur SSL](/help/sites-administering/ssl-by-default.md) pour plus d’informations sur les options liées au protocole SSL et pour obtenir une description complète de l’activation du protocole HTTPS pour CQSE.
 
