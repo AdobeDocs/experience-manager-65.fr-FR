@@ -1,8 +1,8 @@
 ---
 title: Utilisation des commentaires
 seo-title: Utilisation des commentaires
-description: La fonction Commentaires permet aux visiteurs du site connectés de partager leurs opinions et leurs connaissances
-seo-description: La fonction Commentaires permet aux visiteurs du site connectés de partager leurs opinions et leurs connaissances
+description: La fonction Commentaires permet aux du site connectés de partager leurs opinions et leurs connaissances
+seo-description: La fonction Commentaires permet aux du site connectés de partager leurs opinions et leurs connaissances
 uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,25 +11,25 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Utilisation des commentaires{#using-comments}
+# Utilisation des commentaires {#using-comments}
 
 ## Présentation {#introduction}
 
 La fonction Commentaires permet aux visiteurs connectés (membres) d’échanger leurs opinions et leurs connaissances concernant le contenu du site. Cette fonction est souvent déjà présente dans d’autres fonctions, mais peut être ajoutée à n’importe quel site web.
 
-Le document décrit :
+Le  décrit :
 
-* adding `Comments`to a page.
-* configuration settings for the `Comments`component.
+* Adding `Comments`to a page.
+* Configuration settings for the `Comments`component.
 
 >[!NOTE]
 >
->La publication anonyme d’un commentaire n’est pas possible. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer.
+>La publication anonyme d’un commentaire n’est pas possible. Les du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer.
 
 ### Ajout de commentaires à une page {#adding-comments-to-a-page}
 
@@ -73,7 +73,7 @@ Sous l’onglet **Commentaires**, indiquez la façon dont les commentaires seron
 
 * **Taille maximale du fichier**
 
-   Applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Cette valeur limite la taille du fichier téléchargé. La limite par défaut est de 10 Mo.
+   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. Cette valeur limite la taille du fichier téléchargé. La limite par défaut est de 10 Mo.
 
 * **Longueur de message max.**
 
@@ -81,7 +81,7 @@ Sous l’onglet **Commentaires**, indiquez la façon dont les commentaires seron
 
 * **Types de fichier autorisés**
 
-   Applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Liste d’extensions de nom de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés. La valeur par défaut n’est pas spécifiée, de sorte que** **tous les types de fichier sont autorisés.
+   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. d’extensions de nom de fichier séparé par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **Éditeur de texte enrichi**
 
@@ -93,7 +93,7 @@ Sous l’onglet **Commentaires**, indiquez la façon dont les commentaires seron
 
 * **Autoriser abonnement**
 
-   Si cette option est cochée, permettez aux membres de suivre les commentaires. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, autorisez les membres à suivre les commentaires. La valeur par défaut est désélectionnée.
 
 * **Afficher les badges**
 
@@ -101,9 +101,11 @@ Sous l’onglet **Commentaires**, indiquez la façon dont les commentaires seron
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
-Sous l’onglet **Modération utilisateur **, spécifiez la manière dont les commentaires publiés sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Under the **User Moderation** tab, specify how the posted comments are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
-* **Prémodération** Si cette option est cochée, les commentaires doivent être approuvés avant d’apparaître sur un site de publication. La valeur par défaut est désélectionnée.
+* **Prémodération**
+
+   Si cette option est cochée, les commentaires doivent être approuvés avant de s’afficher sur un site de publication. La valeur par défaut est désélectionnée.
 
 * **Supprimer les commentaires**
 
@@ -123,11 +125,11 @@ Sous l’onglet **Modération utilisateur **, spécifiez la manière dont les co
 
 * **Marquer la liste de motifs**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent un commentaire comme étant inapproprié. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, permettez aux membres de choisir, dans un  déroulant, la raison pour laquelle ils signalent un commentaire comme inapproprié. La valeur par défaut est désélectionnée.
 
 * **Motif de la marque personnalisée**
 
-   Si cette option est cochée, autorisez les membres à entrer leur propre raison pour signaler un commentaire comme étant inapproprié. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, autorisez les membres à entrer leur propre raison pour signaler qu’un commentaire est inapproprié. La valeur par défaut est désélectionnée.
 
 * **Seuil de modération**
 
@@ -135,11 +137,11 @@ Sous l’onglet **Modération utilisateur **, spécifiez la manière dont les co
 
 * **Limite de marquage**
 
-   Entrez le nombre de fois où un commentaire doit être marqué avant d’être masqué dans la vue publique. Dans le cas contraire, cette valeur doit être supérieure ou égale au **seuil de modération**. La valeur par défaut est 5.
+   Entrez le nombre de fois où un commentaire doit être marqué avant d’être masqué dans le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au **seuil de modération**. La valeur par défaut est 5.
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet **Paramètres de tri **, spécifiez le mode de tri des commentaires publiés lorsqu’ils sont affichés.
+Sous l’onglet Paramètres **de** tri, spécifiez le mode de tri des commentaires publiés lorsqu’ils sont affichés.
 
 * **Champ de tri**
 
@@ -155,7 +157,7 @@ En modifiant le type de ressource Commentaire, le système de commentaires ne g�
 
 Once the custom resource types are known, enter [Design Mode](/help/sites-authoring/default-components-designmode.md) and double click the placed `Comments` component to open a dialog with an extra tab.
 
-Under the **Resource Types **tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -163,13 +165,13 @@ Under the **Resource Types **tab, specify the custom resourceType for new instan
 
    Accédez à resourceType d’un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`
 
-   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un visiteur publie un commentaire.
+   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un publie un commentaire.
 
 * **Type de ressource de vote**
 
    Accédez à resourceType d’un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`
 
-   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un visiteur publie un vote.
+   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un publie un vote.
 
 * **Type de ressource système de commentaires**
 
@@ -185,10 +187,10 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 Lorsque le visiteur est connecté, selon la configuration, il peut :
 
-* publier un nouveau commentaire ;
-* modifier son propre commentaire ;
-* supprimer son propre commentaire ;
-* marquer les commentaires d’autres membres.
+* Publier un nouveau commentaire
+* Modifier son propre commentaire
+* Supprimer leur propre commentaire
+* Signaler les commentaires des autres
 
 #### Anonyme {#anonymous}
 
