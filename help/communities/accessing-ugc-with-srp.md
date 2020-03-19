@@ -11,30 +11,30 @@ content-type: reference
 discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Accès UGC avec SRP{#accessing-ugc-with-srp}
+# Accès UGC avec SRP {#accessing-ugc-with-srp}
 
 ## À propos de SRP {#about-srp}
 
 Tous les composants et fonctionnalités des communautés AEM sont construits sur le cadre des composants [sociaux (SCF)](/help/communities/scf.md), qui appelle l’API SocialResourceProvider pour accéder à tout le contenu généré par l’utilisateur (UGC).
 
-Avant de créer un site communautaire, le fournisseur de ressources de [stockage (SRP)](/help/communities/working-with-srp.md) doit être configuré pour sélectionner une implémentation compatible avec la [topologie](/help/communities/topologies.md)sous-jacente. Les implémentations SRP reposent sur trois options de stockage :
+Avant la création d’un site communautaire, le fournisseur de ressources de  de (SRP) [](/help/communities/working-with-srp.md) doit être configuré pour sélectionner une implémentation compatible avec la [topologie](/help/communities/topologies.md)sous-jacente. Les implémentations du SRP sont basées sur trois options  de  :
 
-1. [ASRP](/help/communities/asrp.md) - Stockage à la demande Adobe
+1. [ASRP](/help/communities/asrp.md) - Adobe à la demande 
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
-## A propos du stockage UGC {#about-ugc-storage}
+## A propos de l&#39; UGC {#about-ugc-storage}
 
-Ce qui est important à savoir sur le stockage des fichiers UGC, c’est que lorsqu’un site est configuré pour utiliser ASRP ou MSRP, le fichier UGC réel n’est pas stocké dans le magasin [de](/help/sites-deploying/data-store-config.md) noeuds d’AEM (JCR).
+Ce qui est important à savoir sur   de l’UGC est que lorsqu’un site est configuré pour utiliser ASRP ou MSRP, l’UGC réel n’est pas stocké dans le magasin [de](/help/sites-deploying/data-store-config.md) noeuds d’AEM (JCR).
 
 Bien qu’il puisse y avoir des noeuds dans le JCR qui cachent l’UGC pour fournir des métadonnées utiles, ces noeuds ne doivent pas être confondus avec l’UGC réel.
 
-Voir Présentation [du fournisseur de ressources de stockage.](/help/communities/srp.md)
+Voir [Présentation du fournisseur de ressources .](/help/communities/srp.md)
 
 ## Best Practice {#best-practice}
 
@@ -50,9 +50,9 @@ Méthodes à utiliser :
 
    * ne supposent pas qu’il existe des noeuds JCR
 
-* Evénements OSGi
+* OSGi
 
-   * ne supposent pas qu’il existe des événements JCR
+   * ne supposez pas qu’il existe des JCR 
 
 * [SocialResourceUtilities](/help/communities/socialutils.md#socialresourceutilities-package)
 * [SCFUtilities](/help/communities/socialutils.md#scfutilities-package)
@@ -60,19 +60,19 @@ Méthodes à utiliser :
 Méthodes à éviter :
 
 * API de noeud
-* Evénements JCR
-* lanceurs de processus (qui utilisent des événements JCR)
+*  JCR
+* lanceurs de processus (qui utilisent des  JCR)
 
 ### Utiliser les collections de recherche {#use-search-collections}
 
-Différents SRP peuvent avoir différentes langues de requête natives. Il est recommandé d’utiliser les méthodes du package [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter le langage de requête approprié.
+Différents fichiers SRP peuvent avoir différentes langues de natives. Il est recommandé d’utiliser les méthodes du package [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter la langue  appropriée.
 
 For more information, see [Search Essentials](/help/communities/search-implementation.md).
 
 ## Ressources {#resources}
 
-* [Stockage](/help/communities/working-with-srp.md) du contenu de la communauté - aborde les choix SRP disponibles pour un magasin commun UGC
-* [Présentation](/help/communities/srp.md) du fournisseur de ressources de stockage - présentation et présentation de l&#39;utilisation du référentiel
+* [de contenu de la communauté](/help/communities/working-with-srp.md) - aborde les choix SRP disponibles pour une boutique commune UGC.
+* [Aperçu](/help/communities/srp.md) du fournisseur de ressources  - présentation et utilisation du référentiel
 * [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Méthodes et exemples d&#39;utilitaires SRP
 * [Essentials](/help/communities/search-implementation.md) de recherche - informations essentielles pour la recherche UGC
 * [SocialUtils Refactoring](/help/communities/socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
