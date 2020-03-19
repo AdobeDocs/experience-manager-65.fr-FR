@@ -4,7 +4,7 @@ description: Utilisez des ressources sur plusieurs pages/dossiers qui sont déri
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: dc1a9eb4c02c7751b99ed074e0f3250193957c59
 
 ---
 
@@ -13,9 +13,9 @@ source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 La fonctionnalité Multi Site Manager (MSM) d’Adobe Experience Manager (AEM) permet aux utilisateurs de réutiliser du contenu créé une fois et réutilisé sur plusieurs emplacements web. Il en est de même pour les ressources numériques que pour la fonctionnalité MSM pour Assets. À l’aide de MSM pour Assets, vous pouvez :
 
-* Créer des fichiers une fois, puis effectuer des copies de ces ressources pour les réutiliser dans d’autres zones du site.
-* Conserver plusieurs copies dans la synchronisation et mettre à jour la copie originale maîtresse une fois pour transmettre les modifications aux copies enfants.
-* Effectuer des modifications locales en suspendant temporairement ou définitivement la liaison entre les ressources parents et enfants.
+* créer des ressources une fois, puis en effectuer des copies pour les réutiliser dans d’autres zones du site ;
+* conserver plusieurs copies dans la synchronisation et mettre à jour la copie originale maîtresse une fois pour transmettre les modifications aux copies enfants ;
+* effectuer des modifications locales en suspendant temporairement ou définitivement la liaison entre les ressources parents et enfants.
 
 ## Conditions préalables {#configprereq}
 
@@ -32,31 +32,31 @@ MSM entretient une relation dynamique entre la ressource source et ses Live Copi
 * les modifications apportées aux ressources source soient appliquées (déployées) aux Live Copies (les Live Copies sont synchronisées avec la source) ;
 * vous puissiez mettre à jour les Live Copies en suspendant la relation dynamique ou en supprimant l’héritage pour certains champs. Les modifications apportées à la source ne sont plus appliquées à la Live Copy.
 
-### Glossaire des termes MSM pour Assets {#glossary}
+### Glossaire des termes MSM pour Assets  {#glossary}
 
-**Source** Fichiers ou dossiers d’origine. Copie originale d’où sont dérivées les Live Copies.
+**Source :** Fichiers ou dossiers d’origine. Copie originale d’où sont dérivées les Live Copies.
 
-**Copie** en direct Copie des fichiers/dossiers source synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez comment créer des Live Copies.
+**Live Copy :** Copie des fichiers/dossiers source synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez comment créer des Live Copies.
 
-**Héritage** Lien/référence entre un fichier/dossier de copie dynamique et sa source que le système utilise pour se rappeler où envoyer les mises à jour. L’héritage existe à un niveau granulaire pour les champs de métadonnées. L’héritage peut être supprimé pour les champs de métadonnées sélectionnés tout en conservant les relations dynamiques entre la source et sa Live Copy.
+**Héritage :** Lien/référence entre une ressource/un dossier de copie dynamique et sa source que le système utilise pour se rappeler où envoyer les mises à jour. L’héritage existe à un niveau granulaire pour les champs de métadonnées. L’héritage peut être supprimé pour les champs de métadonnées sélectionnés tout en conservant les relations dynamiques entre la source et sa Live Copy.
 
-**Déploiement** Action qui pousse les modifications apportées à la source en aval vers ses copies dynamiques. Il est possible de mettre à jour une ou plusieurs Live Copies en une seule fois à l’aide de l’action de déploiement. Voir Déploiement.
+**Déploiement :** Action qui pousse les modifications apportées à la source en aval vers ses copies dynamiques. Il est possible de mettre à jour une ou plusieurs Live Copies en une seule fois à l’aide de l’action de déploiement. Voir Déploiement.
 
-**Règles de configuration** de déploiement qui déterminent les propriétés qui sont synchronisées, comment et quand. Ces configurations sont appliquées lors de la création de Live Copies ; elles peuvent être modifiées ultérieurement. De plus, un enfant peut hériter de la configuration de déploiement de sa ressource parent. Pour MSM pour Assets, utilisez uniquement la configuration de déploiement standard. Les autres configurations de déploiement ne sont pas disponibles pour MSM pour Assets.
+**Configuration du déploiement :** Règles qui déterminent quelles propriétés sont synchronisées, comment et quand. Ces configurations sont appliquées lors de la création de Live Copies ; elles peuvent être modifiées ultérieurement. De plus, un enfant peut hériter de la configuration de déploiement de sa ressource parent. Pour MSM pour Assets, utilisez uniquement la configuration de déploiement standard. Les autres configurations de déploiement ne sont pas disponibles pour MSM pour Assets.
 
-**Synchroniser** une autre action, en plus du déploiement, qui assure la parité entre la source et sa copie dynamique en envoyant les mises à jour de la source vers les copies dynamiques. Une synchronisation est lancée pour une Live Copy spécifique et l’action récupère les modifications de la source. Cette action permet de mettre à jour uniquement l’une des Live Copies. Voir Action de synchronisation.
+**Synchroniser :** Une autre action, en plus du déploiement, qui assure la parité entre la source et sa copie en direct en envoyant les mises à jour de la source vers les copies en direct. Une synchronisation est lancée pour une Live Copy spécifique et l’action récupère les modifications de la source. Cette action permet de mettre à jour uniquement l’une des Live Copies. Voir Action de synchronisation.
 
-**Suspendre** Supprimez temporairement la relation active entre une copie dynamique et son fichier/dossier source. Vous pouvez reprendre la relation. Voir Action de suspension.
+**Suspendre :** Supprimez temporairement la relation de production entre une copie dynamique et son fichier/dossier source. Vous pouvez reprendre la relation. Voir Action de suspension.
 
-**Reprendre** la relation en direct pour qu’une copie en direct recommence à recevoir les mises à jour de la source. Voir Action de reprise.
+**Reprendre :** Reprenez la relation en direct afin qu’une copie en direct soit de nouveau  recevoir les mises à jour de la source. Voir Action de reprise.
 
-**L’action Réinitialiser** la réinitialisation fait de la copie dynamique un réplica de la source en remplaçant les modifications locales. Elle supprime également les annulations d’héritage et réinitialise l’héritage sur tous les champs de métadonnées. Pour apporter dans l’avenir des modifications locales, vous devez à nouveau annuler l’héritage de champs spécifiques. Voir Modifications locales apportées à une Live Copy.
+**Réinitialiser :** L’action Réinitialiser fait de nouveau de la copie dynamique un réplica de la source en remplaçant les modifications locales. Elle supprime également les annulations d’héritage et réinitialise l’héritage sur tous les champs de métadonnées. Pour apporter dans l’avenir des modifications locales, vous devez à nouveau annuler l’héritage de champs spécifiques. Voir Modifications locales apportées à une Live Copy.
 
-**Détacher** supprime irrévocablement la relation de production d’un fichier/dossier de copie dynamique. Après une action de désolidarisation, les Live Copies ne peuvent jamais recevoir les mises à jour de la source et elles cessent d’être des Live Copies. Voir Suppression des relations.
+**Détacher :** Supprimez irrévocablement la relation de production d’un fichier/dossier de copie dynamique. Après une action de désolidarisation, les Live Copies ne peuvent jamais recevoir les mises à jour de la source et elles cessent d’être des Live Copies. Voir Suppression des relations.
 
 ## Création d’une Live Copy d’une ressource {#createlc}
 
-Pour créer une Live Copy à partir d’une ou de plusieurs ressources ou d’un ou plusieurs dossiers source, procédez de l’une des manières suivantes :
+Pour créer une Live Copy à partir d’une ou plusieurs ressources ou d’un ou plusieurs dossiers source, procédez de l’une des manières suivantes :
 
 * Méthode 1 : sélectionnez la ou les ressources sources, puis cliquez sur **[!UICONTROL Créer > Live Copy]** dans la barre d’outils supérieure.
 * Méthode 2 : dans l’interface utilisateur d’AEM, cliquez sur **[!UICONTROL Créer > Live Copy]** dans le coin supérieur droit de l’interface.
@@ -65,7 +65,7 @@ Vous pouvez créer des Live Copies d’une ressource ou d’un dossier à la foi
 
 Pour créer des Live Copies à l’aide de la première méthode, procédez comme suit :
 
-1. Sélectionnez des fichiers ou des dossiers sources. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer > Live Copy]**.
+1. Sélectionnez des fichiers ou des dossiers sources. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer > Live Copy]**.
 
    ![Création d’une Live Copy depuis l’interface d’AEM](assets/create_lc1.png)
 
@@ -103,9 +103,9 @@ Les deux méthodes suivantes fonctionnent pour les ressources et les dossiers :
 
 >[!TIP]
 >
-> Pour vérifier l’état de quelques copies en direct distinctes, utilisez la première méthode qui se trouve dans la page Propriétés. Pour vérifier l’état de nombreuses Live Copies, utilisez la seconde méthode, à savoir la consultation de la page **[!UICONTROL État de la relation]**.
+>Pour vérifier l’état de quelques copies en direct distinctes, utilisez la première méthode qui se trouve dans la page Propriétés. Pour vérifier les états de plusieurs copies dynamiques, utilisez la deuxième méthode, à savoir, consulter la page **[!UICONTROL État de la relation]**.
 
-### Informations et état d’une Live Copy {#statuslcasset}
+### Informations et état d’une Live Copy  {#statuslcasset}
 
 Pour vérifier les informations et les états d’une ressource ou d’un dossier de Live Copy, procédez comme suit :
 
@@ -125,11 +125,11 @@ Pour vérifier les informations et les états d’une ressource ou d’un dossie
 AEM fournit une console permettant de vérifier les états de toutes les Live Copies d’un dossier source. Cette console affiche l’état de toutes les ressources enfants.
 
 1. Sélectionnez un dossier source. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Vous pouvez également utiliser le raccourci clavier `p`.
-1. Cliquez sur la **[!UICONTROL source de la Live Copy]**. Pour ouvrir la console, cliquez sur **[!UICONTROL Aperçu de la Live Copy]**. Ce tableau de bord fournit un état de niveau supérieur de toutes les ressources enfants.
+1. Cliquez sur **[!UICONTROL Source Live Copy]**. Pour ouvrir la console, cliquez sur **[!UICONTROL Aperçu de la Live Copy]**. Ce tableau de bord fournit un état de niveau supérieur de toutes les ressources enfants.
 
    ![Affichage des états des Live Copies dans la console Live Copy de la source](assets/livecopy-statuses.png)
 
-   *Figure : Afficher les états des copies dynamiques dans la console Live Copy de la source*
+   *Figure : Etat  des copies dynamiques dans la console Live Copy de la source*
 
 1. Pour afficher les informations détaillées sur chaque fichier dans le dossier de la copie dynamique, sélectionnez un fichier et cliquez sur **[!UICONTROL État de la relation]** dans la barre d’outils.
 
@@ -163,7 +163,7 @@ Pour une Live Copy spécifique, cliquez sur **[!UICONTROL Modifier la Live Copy]
 
 *Figure : Suspendre la relation ou modifier la configuration de déploiement d’une copie dynamique spécifique*
 
-### Actions rapides pour une Live Copy depuis le rail Références {#refraillc}
+### Actions rapides pour une Live Copy depuis le rail Références  {#refraillc}
 
 Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informations et effectuer les actions suivantes directement depuis le rail Références :
 
@@ -171,13 +171,13 @@ Pour une ressource ou un dossier de Live Copy, vous pouvez afficher les informat
 * Ouvrir ou afficher une Live Copy spécifique dans l’interface utilisateur d’AEM.
 * Déployer les mises à jour.
 
-Sélectionnez un dossier ou une ressource Live Copy, ouvrez le rail de gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`.
+Sélectionnez une ressource ou un dossier de Live Copy, ouvrez le rail gauche, puis cliquez sur **[!UICONTROL Références]**. Vous pouvez également sélectionner une ressource ou un dossier et utiliser le raccourci clavier `Alt + 4`.
 
 ![Actions disponibles dans le rail Références pour la Live Copy sélectionnée](assets/referencerail_livecopy.png)
 
-*Figure :Actions disponibles dans le rail Références pour la copie dynamique sélectionnée*
+*Figure : Actions disponibles dans le rail Références pour la copie dynamique sélectionnée*
 
-## Propagation des modifications de la source vers les Live Copies {#rolloutsync}
+## Propagation des modifications de la source vers les Live Copies  {#rolloutsync}
 
 Une fois une source modifiée, les modifications peuvent être propagées aux Live Copies à l’aide d’une action de synchronisation ou de déploiement. Pour comprendre la différence entre les deux actions, voir le [glossaire](#glossary).
 
@@ -186,12 +186,12 @@ Une fois une source modifiée, les modifications peuvent être propagées aux Li
 Vous pouvez lancer une action de déploiement à partir de la ressource source et mettre à jour quelques ou toutes les Live Copies.
 
 1. Sélectionnez une ressource ou un dossier de Live Copy. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Vous pouvez également utiliser le raccourci clavier `p`.
-1. Cliquez sur la **[!UICONTROL source de la Live Copy]**. Cliquez sur **[!UICONTROL Déploiement]** dans la barre d’outils située en haut.
+1. Cliquez sur **[!UICONTROL Source Live Copy]**. Cliquez sur **[!UICONTROL Déployer]** dans la barre d’outils supérieure.
 1. Sélectionnez les Live Copies que vous souhaitez mettre à jour. Cliquez sur **[!UICONTROL Déployer]**. Pour déployer les mises à jour apportées aux ressources enfants, sélectionnez **[!UICONTROL Déployer la source et tous les enfants]**.
 
    ![Déploiement des modifications de la source vers quelques ou toutes les Live Copies](assets/livecopy_rollout_page.png)
 
-   *Figure : Effectuer les modifications de la source sur quelques copies dynamiques ou toutes les copies dynamiques*
+   *Figure : Effectuer les modifications de la source à quelques copies dynamiques ou à toutes les copies dynamiques*
 
 >[!NOTE]
 >
@@ -213,11 +213,11 @@ Une action de synchronisation récupère les modifications d’une source unique
 | Toolbar in the [!UICONTROL Properties] page | Lancez une synchronisation lorsque les propriétés de la Live Copy sont déjà ouvertes. | Voir [Synchronisation d’une Live Copy](#synclc) |
 | [!UICONTROL Console Aperçu de la Live Copy] | Quickly synchronize multiple assets (not necessarily all) when source folder is selected or [!UICONTROL Live Copy Overview] console is already open. L’action de synchronisation est lancée pour une ressource à la fois. Il s’agit toutefois d’une méthode plus rapide pour synchroniser plusieurs ressources simultanément. | Voir [Actions sur plusieurs ressources dans un dossier de Live Copy](#bulkactions) |
 
-### Synchronisation d’une Live Copy {#synclc}
+### Synchronisation d’une Live Copy  {#synclc}
 
-Pour démarrer une action de synchronisation, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]** et cliquez sur l’action souhaitée dans la barre d’outils.
+Pour démarrer une action de synchronisation, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]**, puis sur l’action souhaitée dans la barre d’outils.
 
-Pour afficher les statuts et les informations liés à une action de synchronisation, voir [Informations et statuts d’une Live Copy](#statuslcasset) et [Informations et statuts de toutes les Live Copies d’un dossier](#statuslcfolder).
+Pour afficher les états et les informations liés à une action de synchronisation, voir [Informations et état d’une Live Copy](#statuslcasset) et [Informations et états de toutes les Live Copies d’un dossier](#statuslcfolder).
 
 ![L’action de synchronisation récupère les modifications apportées à la source](assets/livecopy_sync.png)
 
@@ -231,15 +231,15 @@ Pour afficher les statuts et les informations liés à une action de synchronisa
 
 Vous pouvez suspendre temporairement la relation afin d’empêcher une Live Copy de recevoir les modifications apportées à la ressource ou au dossier source. La relation peut également être reprise pour que la Live Copy commence à recevoir les modifications de la source.
 
-Pour suspendre ou reprendre, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]** et cliquez sur l’action souhaitée dans la barre d’outils.
+Pour effectuer une suspension ou une reprise, ouvrez la page **[!UICONTROL Propriétés]** d’une Live Copy, cliquez sur **[!UICONTROL Live Copy]**, puis sur l’action souhaitée dans la barre d’outils.
 
-Vous pouvez également suspendre ou reprendre rapidement les relations de plusieurs ressources dans un dossier Live Copy à partir de la console **[!UICONTROL Aperçu de la Live Copy]**. Voir [Agir sur plusieurs ressources dans des dossiers de la Live Copy](#bulkactions).
+Vous pouvez également suspendre ou reprendre rapidement les relations de plusieurs ressources dans un dossier de Live Copy depuis la console **[!UICONTROL Aperçu de la Live Copy]**. Voir [Actions sur plusieurs ressources dans des dossiers de Live Copy](#bulkactions).
 
 ## Apport de modifications locales à Live Copy {#localmods}
 
 Une Live Copy est un réplica de la source d’origine lors de sa création. Les valeurs des métadonnées d’une Live Copy sont héritées de la source. Les champs de métadonnées conservent individuellement l’héritage avec les champs respectifs de la ressource source.
 
-Vous avez toutefois la possibilité d’apporter des modifications locales à une Live Copy afin de modifier quelques propriétés précises. Pour effectuer des modifications locales, annulez l’héritage de la propriété souhaitée. Lorsque l’héritage d’un ou de plusieurs champs de métadonnées est annulé, la relation de production du fichier et l’héritage des autres champs de métadonnées sont conservés. Aucune synchronisation ni aucun déploiement ne remplacent les modifications locales. Pour ce faire, ouvrez la page **[!UICONTROL Propriétés]** d’un fichier Live Copy et cliquez sur l’icône **[!UICONTROL Annuler l’héritage]** en regard d’un champ de métadonnées.
+Vous avez toutefois la possibilité d’apporter des modifications locales à une Live Copy afin de modifier quelques propriétés précises. Pour effectuer des modifications locales, annulez l’héritage de la propriété souhaitée. Lorsque l’héritage d’un ou de plusieurs champs de métadonnées est annulé, la relation de production du fichier et l’héritage des autres champs de métadonnées sont conservés. Aucune synchronisation ni aucun déploiement ne remplacent les modifications locales. Pour cela, ouvrez la page **[!UICONTROL Propriétés]** d’une ressource de Live Copy, cliquez sur l’icône **[!UICONTROL Annuler l’héritage]** en regard d’un champ de métadonnées.
 
 Vous pouvez annuler toutes les modifications locales et rétablir l’état de la source de la ressource. L’action de réinitialisation remplace instantanément et de façon irrévocable toutes les modifications locales et rétablit l’héritage sur tous les champs de métadonnées. Pour effectuer un rétablissement, depuis la page **[!UICONTROL Propriétés]** d’une ressource de Live Copy, cliquez sur **[!UICONTROL Réinitialiser]** dans la barre d’outils.
 
@@ -247,7 +247,7 @@ Vous pouvez annuler toutes les modifications locales et rétablir l’état de l
 
 *Figure : L’action Réinitialiser remplace les modifications locales et apporte la copie dynamique en partie avec sa source*
 
-## Suppression d’une relation dynamique {#detach}
+## Suppression d’une relation dynamique  {#detach}
 
 Vous pouvez supprimer complètement la relation entre une source et une Live Copy à l’aide d’une action de désolidarisation. La Live Copy devient une ressource ou un dossier autonome après sa désolidarisation. Elle s’affiche en tant que nouvelle ressource dans l’interface AEM, immédiatement après la désolidarisation. Pour désolidariser une Live Copy de sa source, procédez comme suit :
 
@@ -263,14 +263,14 @@ Vous pouvez supprimer complètement la relation entre une source et une Live Cop
    >
    >La relation est supprimée dès que vous cliquez sur **[!UICONTROL Désolidariser]** dans la boîte de dialogue. Vous ne pouvez pas annuler cette action en cliquant sur **[!UICONTROL Annuler]** dans la page Propriétés.
 
-Vous pouvez également désolidariser rapidement plusieurs ressources d’un dossier de Live Copy dans la console **[!UICONTROL Aperçu de la Live Copy]**. Voir [Agir sur plusieurs ressources dans des dossiers de la Live Copy](#bulkactions).
+Vous pouvez également désolidariser rapidement plusieurs ressources d’un dossier de Live Copy dans la console **[!UICONTROL Aperçu de la Live Copy]**. Voir [Actions sur plusieurs ressources dans des dossiers de Live Copy](#bulkactions).
 
 ## Actions sur plusieurs ressources dans des dossiers de Live Copy {#bulkactions}
 
 Si un dossier de Live Copy comporte plusieurs ressources, il peut être fastidieux de lancer des actions sur chaque ressource. Vous pouvez rapidement lancer les actions de base sur de nombreuses ressources dans la console de Live Copy. Les méthodes ci-dessus continuent de fonctionner pour chaque ressource.
 
 1. Sélectionnez un dossier source. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Vous pouvez également utiliser le raccourci clavier `p`.
-1. Cliquez sur la **[!UICONTROL source de la Live Copy]**. Pour ouvrir la console, cliquez sur **[!UICONTROL Aperçu de la Live Copy]**.
+1. Cliquez sur **[!UICONTROL Source Live Copy]**. Pour ouvrir la console, cliquez sur **[!UICONTROL Aperçu de la Live Copy]**.
 1. Dans ce tableau de bord, sélectionnez une ressource Live Copy dans un dossier Live Copy. Cliquez sur les actions souhaitées dans la barre d’outils. Les actions disponibles sont **[!UICONTROL Synchroniser]**, **[!UICONTROL Réinitialiser]**, **[!UICONTROL Suspendre]** et **[!UICONTROL Détacher]**. Vous pouvez rapidement lancer ces actions sur une ressource dans n’importe quel dossier de Live Copy ayant une relation dynamique avec le dossier source sélectionné.
 
    ![Mettez facilement à jour de nombreuses ressources dans les dossiers de Live Copy depuis la console Aperçu de la Live Copy](assets/livecopyconsole_update_many_assets.png)
@@ -318,7 +318,7 @@ Dans d’autres scénarios, MSM pour Assets correspond au comportement de la fon
 
 ## Bonnes pratiques {#bestpractices}
 
-Voici quelques bonnes pratiques pour les modules multimédias :
+Voici quelques bonnes pratiques relatives à MSM :
 
 * Planifiez les relations parents-enfants des ressources et des flux de contenu avant de commencer l’implémentation.
 
