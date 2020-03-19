@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -30,28 +30,28 @@ Commencez par accéder à l’URL affichée lors de la création du site, mais s
 * URL de l’auteur = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL de publication = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Si la page d&#39;accueil [par défaut a été définie](enablement-create-site.md#changethedefaulthomepage), il suffit de naviguer jusqu&#39;à [http://localhost:4503/](http://localhost:4503/) pour lancer le site.
+Si le  [par défaut a été défini](enablement-create-site.md#changethedefaulthomepage), il suffit de naviguer jusqu’à [http://localhost:4503/](http://localhost:4503/) pour lancer le site.
 
-Lors de son premier accès au site publié, le visiteur du site n’était généralement pas déjà connecté et était anonyme.
+Lors de sa première visite sur le site publié, le du site n’était généralement pas déjà connecté et était anonyme.
 
 **http://localhost:4503/content/sites/enable/en.html**
 
 ![chlimage_1-433](assets/chlimage_1-433.png)
 
-## Visiteur anonyme du site {#anonymous-site-visitor}
+## de site anonyme {#anonymous-site-visitor}
 
-Un visiteur anonyme du site se voit immédiatement présenter la page de connexion de ce site de la communauté d&#39;activation privée. Notez qu’il n’existe pas d’option d’auto-inscription ni de connexion avec Facebook ou Twitter.
+Un anonyme du site est immédiatement présenté avec la page de connexion de ce site de la communauté d&#39;activation privée. Notez qu’il n’existe pas d’option d’auto-inscription ni de connexion avec Facebook ou Twitter.
 
-Notez que cette page d&#39;accueil affiche quatre options de menu : `Assignments, Ski Catalog, What's New` et `Discussions`, mais aucun ne peut être atteint sans se connecter.
+Remarquez que ce  affiche quatre options de menu : `Assignments, Ski Catalog, What's New` et `Discussions`, mais aucun ne peut être atteint sans se connecter.
 
 >[!NOTE]
 >
->Il est possible d&#39;accorder un accès anonyme à un site d&#39;activation sans permettre aux visiteurs du site de s&#39;inscrire eux-mêmes.
->Si une ressource d&#39;activation est définie sur `show in catalog` et `allow anonymous access`, il sera possible pour les visiteurs anonymes du site d&#39;afficher les ressources dans le catalogue.
+>Il est possible d&#39;accorder un accès anonyme à un site d&#39;activation sans permettre aux du site de s&#39;inscrire eux-mêmes.
+>Si une ressource d&#39;activation est définie sur `show in catalog` et `allow anonymous access`, il sera possible pour les anonymes du site de de ressources dans le catalogue.
 
 ### Empêcher l’accès anonyme sur JCR {#prevent-anonymous-access-on-jcr}
 
-Une limitation connue expose le contenu du site de la communauté aux visiteurs anonymes par le biais de contenu jcr et json, bien que l’ **[!UICONTROL autorisation d’accès]** anonyme soit désactivée pour le contenu du site. Cependant, ce comportement peut être contrôlé à l’aide des restrictions Sling comme solution de contournement.
+Une limitation connue expose le contenu du site communautaire à des anonymes par le biais de contenu jcr et json, bien que l’ **[!UICONTROL autorisation d’accès]** anonyme soit désactivée pour le contenu du site. Cependant, ce comportement peut être contrôlé à l’aide des restrictions Sling comme solution de contournement.
 
 Pour protéger le contenu de votre site communautaire contre l’accès d’utilisateurs anonymes par le biais de contenu jcr et json, procédez comme suit :
 
@@ -70,7 +70,7 @@ Pour protéger le contenu de votre site communautaire contre l’accès d’util
 
    ![site-authentication-1](assets/site-authentication-1.png)
 
-1. Ajoutez le chemin de la page de connexion. Par exemple, `/content/......./GetStarted`.
+1. Ajouter le chemin de la page de connexion. Par exemple, `/content/......./GetStarted`.
 1. Publiez la page.
 
 ## Membre inscrit {#enrolled-member}
@@ -82,9 +82,9 @@ Connexion avec
 * `Username: riley`
 * `Password: password`
 
-Si le profil d’utilisateur n’a pas été créé par l’auto-inscription, la première fois qu’un membre se connecte, sa page Profil s’affiche afin qu’il puisse le vérifier et le modifier selon les besoins.
+Si le utilisateur n’a pas été créé par l’auto-inscription, la première fois qu’un membre se connecte, sa page d’ s’affiche afin qu’il puisse le vérifier et le modifier selon les besoins.
 
-La prochaine fois que le membre se connecte, la page d&#39;accueil, identifiée par le premier élément de menu, s&#39;affiche.
+La prochaine fois que le membre se connecte, le , identifié par le premier élément de menu, s’affiche.
 
 ![chlimage_1-434](assets/chlimage_1-434.png)
 
@@ -100,7 +100,7 @@ Chaque affectation fournit des informations de base sur
 * Détails pertinents pour le type d’affectation
 * Contact d’affectation, expert et auteur (le cas échéant)
 
-Le type d’affectation est indiqué par une icône dans le coin supérieur gauche de la carte. L&#39;image d&#39;une route est pour un parcours d&#39;apprentissage avec le nombre de ressources d&#39;activation incluses.
+Le type d’affectation est indiqué par une icône dans le coin supérieur gauche de la carte. L&#39;image d&#39;une route est celle d&#39;un parcours d&#39;apprentissage avec le nombre de ressources d&#39;activation incluses.
 
 ![chlimage_1-435](assets/chlimage_1-435.png)
 
@@ -110,15 +110,15 @@ La sélection des leçons *de* ski affiche les deux ressources d&#39;activation 
 
 La sélection de la leçon de *ski 1* ouvrira la page des détails de la ressource d&#39;activation.
 
-Sur la page des détails, le membre peut apprendre, [évaluer](rating.md) la leçon et ajouter des [commentaires](comments.md). Toute activité de membre sera reflétée dans la section Nouveautés du site.
+Sur la page des détails, le membre peut apprendre, [évaluer](rating.md) la leçon et ajouter des [commentaires](comments.md). Tout membre   sera reflété dans la section Nouveautés du site.
 
-Les interactions avec la ressource d’activation seront notées dans la section Rapport accessible dans l’environnement de création.
+Les interactions avec la ressource d&#39;activation seront notées dans la section Rapport accessible dans le  de l&#39;auteur .
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
 ### Catalogue de skis {#ski-catalog}
 
-La page Catalogue de skis est le catalogue des ressources d’activation balisées avec des balises de l’ `Tutorial` espace de noms. Les deux ressources *Ski Lesson* sont balisées avec la `Skiing` balise, de sorte que si des balises autres que `All` ou `Tutorial: Sports / Skiing` sont sélectionnées, rien ne s’affiche.
+La page Catalogue de skis est le catalogue des ressources d’activation balisées avec des balises du   de. `Tutorial` Les deux ressources *Ski Lesson* sont balisées avec la `Skiing` balise, de sorte que si des balises autres que `All` ou `Tutorial: Sports / Skiing` sont sélectionnées, rien ne s’affiche.
 
 Lorsqu’un membre n’a pas reçu de ressources d’activation, directement ou par le biais d’un parcours d’apprentissage, il est possible d’interagir avec les ressources d’activation situées dans un catalogue et de fournir des commentaires et des évaluations.
 
@@ -138,9 +138,9 @@ Notez qu’en plus de la modération en ligne, il existe des options pour partag
 
 ### Nouveautés {#what-s-new}
 
-L’élément de `What's New` menu est le titre, en fonction de la fonction [de flux d’](functions.md#activity-stream-function) activité dans la structure de ce site communautaire.
+L&#39; `What's New` option de menu est le titre, étant donné la fonction [de flux de ](functions.md#activity-stream-function) dans la structure de ce site communautaire.
 
-Toujours connecté en tant que Sidney, sélectionnez le `What's New` lien pour afficher l’activité.
+Toujours connecté en tant que Sidney, sélectionnez le `What's New` lien pour afficher le  .
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
@@ -157,13 +157,13 @@ Une fois connecté, notez qu’il existe une nouvelle option de menu `Administra
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
-La page d&#39;accueil est identifiée par le premier élément de menu, Affectations. Quinn est le modérateur et le contact avec les ressources d&#39;activation et n&#39;a été inscrit à aucune ressource d&#39;activation ou chemin d&#39;apprentissage. Il n&#39;y a donc rien à afficher.
+Le  est identifié par le premier élément de menu, Affectations. Quinn est le modérateur et le contact avec les ressources d&#39;activation et n&#39;a été inscrit à aucune ressource d&#39;activation ou chemin d&#39;apprentissage. Il n&#39;y a donc rien à afficher.
 
 ### Administration {#administration}
 
-Ce qu’il y a, c’est l’activité des deux apprenants `Riley Taylor` et la `Sidney Croft. By s`sélection du `Administration`lien pour accéder à la console de modération, Quinn peut utiliser la console [de modération en](moderation.md) masse pour modérer leurs publications.
+Ce qu&#39;il y a, c&#39;est   par les deux apprenants, `Riley Taylor` et `Sidney Croft`. En sélectionnant le `Administration` lien permettant d’accéder à la console de modération, Quinn peut utiliser la console [de modération](moderation.md) en bloc pour modérer ses publications.
 
-La sélection de l’icône du panneau latéral permet d’ouvrir les filtres utilisés pour rechercher du contenu de la communauté.
+La sélection de l’icône du panneau latéral permet d’ouvrir le utilisé pour rechercher du contenu de la communauté.
 
 Le survol d’une carte de commentaires affiche des actions de modération.
 
@@ -171,9 +171,9 @@ Le survol d’une carte de commentaires affiche des actions de modération.
 
 ## Rapports sur l&#39;auteur {#reports-on-author}
 
-Il existe deux manières d’accéder aux rapports sur les apprenants et aux ressources d’activation.
+Il existe deux façons d’accéder aux  sur les apprenants et les ressources d’activation.
 
-Sur l’auteur, accédez à la console **[Communautés,](resources.md)**Ressources, où sont gérées les ressources d’activation. Après avoir sélectionné un site de la communauté, il est possible de générer des rapports pour
+Sur l’auteur, accédez à la console **[Communautés,](resources.md)**Ressources, où sont gérées les ressources d’activation, et après avoir sélectionné un site de la communauté, il est possible de générer des rapports pour
 
 * Toutes les ressources d’activation et tous les chemins d’apprentissage
 * Une ressource d&#39;activation spécifique ou un chemin d&#39;apprentissage
@@ -181,10 +181,10 @@ Sur l’auteur, accédez à la console **[Communautés,](resources.md)**Ressourc
 Accédez à la console **[Communautés,](reports.md)**Rapports et générez des rapports selon les
 
 * Affectation aux ressources d’activation et aux chemins d’apprentissage
-* Publications sur un site communautaire pendant une période spécifique
-* Vues (visites du site) d’un site communautaire sur une période spécifique
+* Publications sur un site de la communauté pendant une période spécifique
+*  (visites de site) d’un site communautaire sur une période spécifique
 
-* Les publications et les vues peuvent être destinées à tout le contenu ou à un contenu spécifique :
+* Les publications et les  de peuvent être destinées à tout le contenu ou à un contenu spécifique :
 
    * Forum
    * Sujet du forum
@@ -197,16 +197,16 @@ Accédez à la console **[Communautés,](reports.md)**Rapports et générez des 
 
 ### Console Ressources {#resources-console}
 
-Avec un peu d&#39;activité et d&#39;interaction avec les Ressources sur la publication, l&#39;affichage des rapports sur l&#39;auteur vaut la peine d&#39;être vu.
+Avec un peu de   et d&#39;interaction avec les Ressources sur la publication, l&#39;affichage des rapports sur l&#39;auteur vaut le coup d&#39;oeil.
 
 * Sur l’auteur
 * Connexion avec droits d’administrateur
 * Accédez au menu principal **[!UICONTROL Collectivités > Ressources.]**
 * Sélectionner le `Enablement Tutorial` site
-* Sélectionnez l&#39; `Report`icône représentant un résumé de toutes les ressources
-* Sélectionnez une ressource, puis l&#39; `Report`icône d&#39;un rapport sur cette ressource.
+* Sélectionner l&#39; `Report` icône d&#39;un résumé de toutes les ressources
+* Sélectionnez une ressource, puis l&#39; `Report` icône d&#39;un rapport sur cette ressource.
 
-Notez qu’il est probablement trop tôt pour afficher les données d’Adobe Analytics, qui peuvent prendre de 1 à 12 heures pour apparaître. Toutefois, des rapports SCORM de base sont déjà disponibles.
+Notez qu’il est probablement trop tôt pour afficher les données d’Adobe Analytics, qui peuvent prendre de 1 à 12 heures pour apparaître. Toutefois, des  SCORM de base sont déjà disponibles.
 
 #### Rapport de ressources sur les leçons de ski {#ski-lessons-resource-report}
 
@@ -218,7 +218,7 @@ Notez qu’il est probablement trop tôt pour afficher les données d’Adobe An
 
 * Ouvrir la carte `Enablement Tutorial`
 * Ouvrir la carte `Ski Lessons`
-* `select Report, User Report`
+* Sélectionner `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
@@ -227,7 +227,7 @@ Notez qu’il est probablement trop tôt pour afficher les données d’Adobe An
 La console Rapports permet de générer des rapports sur
 
 * **Affectation** à tout site de la communauté d&#39;activation
-* **Vues** d’un site de la communauté
+* **** pour tout site communautaire
 * **Publications** pour tout site de la communauté
 
 Pour les rapports sur les affectations :
@@ -245,11 +245,11 @@ Pour les rapports sur les affectations :
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
-Pour les rapports sur les vues :
+Pour les rapports sur les  de :
 
 * Sur l’auteur
 * Connexion avec droits d’administrateur
-* Accédez à **[!UICONTROL Communautés > Rapports > Rapport Vues.]**
+* Accédez à **[!UICONTROL Communautés > Rapports > Rapport]**
 * Sélectionnez un **site **dans le menu déroulant (sélectionnez`Enablement Tutorial`)
 
 * Sélectionner le type **[!UICONTROL de]** contenu (sélectionner `all`)
