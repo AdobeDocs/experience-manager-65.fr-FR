@@ -1,8 +1,8 @@
 ---
 title: Fonction Calendrier
 seo-title: Fonction Calendrier
-description: Fournit des informations sur les événements de la communauté dans un format de calendrier
-seo-description: Fournit des informations sur les événements de la communauté dans un format de calendrier
+description: Fournit des informations de  de la communauté dans un format de calendrier
+seo-description: Fournit des informations de  de la communauté dans un format de calendrier
 uuid: 262f6afa-d8aa-4815-8440-a8ed5668c76d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Fonction Calendrier{#calendar-feature}
+# Fonction Calendrier {#calendar-feature}
 
 ## Présentation {#introduction}
 
@@ -24,8 +24,8 @@ La fonction Calendrier offre des informations relatives aux événements de la c
 
 Cette section de la documentation décrit :
 
-* l’ajout de la fonction Calendrier à un site AEM ;
-* configuration settings for `Calendar`components
+* Ajout de la fonctionnalité de calendrier à un site AEM
+* Configuration settings for `Calendar`components
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
 
@@ -49,67 +49,119 @@ Select the placed `Calendar`component to access and select the `Configure` icon 
 
 #### Onglet Settings {#settings-tab}
 
-Sous l’onglet **Paramètres **, indiquez si vous souhaitez autoriser l’application de balises aux entrées de calendrier.
+Under the **Settings** tab, specify whether or not to allow tags to be applied to calendar entries.
 
-* **Événements par page** Définit le nombre d’événements affichés par page. La valeur par défaut est 10.
+* **Événements par page**
 
-* **Modéré** Si cette option est cochée, les événements et les commentaires du calendrier doivent être approuvés avant d’être visibles sur un site de publication. Cette option n’est pas cochée par défaut.
+   Définit le nombre d’événements affichés par page. La valeur par défaut est 10.
 
-* **Fermé** Si cette option est cochée, le calendrier est fermé et n’accepte aucun nouvel événement ou commentaire. Cette option n’est pas cochée par défaut.
+* **Modéré**
 
-* **Éditeur de texte enrichi** Si cette option est cochée, les événements et les commentaires du calendrier peuvent être saisis avec une mise en forme. Cette option est cochée par défaut.
+   Si cette option est cochée, la publication des  du calendrier et des commentaires doit être approuvée avant qu’ils ne s’affichent sur un site de publication. Cette option n’est pas cochée par défaut.
 
-* **Autoriser le balisage** Si cette option est cochée, les membres ont le droit d’ajouter des libellés de balise à leurs événements (voir l’onglet **Champ de balise**). Cette option est cochée par défaut.
+* **Fermé**
 
-* **Autoriser les chargements de fichiers** Si cette option est cochée, des fichiers joints peuvent être ajoutés à un événement ou à un commentaire de calendrier. Cette option est cochée par défaut.
+   Si cette option est cochée, le calendrier est fermé aux nouvelles entrées et aux nouveaux commentaires . Cette option n’est pas cochée par défaut.
 
-* **Autoriser abonnement** Si cette option est cochée, les membres sont autorisés à suivre les événements publiés pour le calendrier. Cette option est cochée par défaut.
+* **Éditeur de texte enrichi**
 
-* **Taille** de fichier maximale pertinente uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 1 048 57 600 (10 Mo).
+   Si cette option est cochée, le de calendrier et les commentaires peuvent être saisis avec une annotation. Cette option est cochée par défaut.
 
-* **Types** de fichiers autorisés pertinents uniquement si `Allow File Uploads` l’option est cochée. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+* **Autoriser le balisage**
 
-* **Taille** max. du fichier image joint, applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152** **(2 Mo).
+   If checked, allow members to add tag labels to the events they post (see **Tag field** tab). Cette option est cochée par défaut.
 
-* **Types** d’image de couverture autorisés Liste séparée par des virgules des extensions de fichier image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
+* **Autoriser les transferts de fichiers**
 
-* **Autoriser les réponses à thème** Si cette option est cochée, les réponses aux commentaires sont publiées pour l’événement de calendrier. Cette option est cochée par défaut.
+   Si cette option est cochée, autorisez l’ajout de pièces jointes à un de calendrier ou à un commentaire. Cette option est cochée par défaut.
 
-* **Autoriser les utilisateurs à supprimer des commentaires et des événements** Si cette option est cochée, autoriser les membres à supprimer les commentaires et les événements de calendrier qu’ils ont publiés. La valeur par défaut est** **cochée.
+* **Autoriser abonnement**
 
-* **Autoriser le vote** Si cette option est cochée, la fonction de vote est ajoutée aux événements de calendrier. Cette option est cochée par défaut.
+   Si cette option est cochée, autorisez les membres à suivre les  publiées dans le calendrier. Cette option est cochée par défaut.
 
-* **Afficher le fil d’Ariane** Affiche le fil d’Ariane sur la page de l’événement. Cette option est cochée par défaut.
+* **Taille maximale du fichier**
 
-* **Filtre** de plage de dates Définit le nombre de jours ajoutés à la date actuelle afin de calculer la valeur &quot;À&quot; du filtre de page de liste des événements de calendrier. Le nombre par défaut est 30.
+   N’est pertinent que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 1 048 57 600 (10 Mo).
 
-* **Si cette option est cochée, l’idée peut être identifiée comme contenu**[](/help/communities/featured.md)phare. Cette option n’est pas cochée par défaut.
+* **Types de fichier autorisés**
 
-Sous l’onglet **Modération utilisateur **, spécifiez la manière dont les rubriques et réponses publiées (contenu généré par l’utilisateur) sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+   N’est pertinent que si `Allow File Uploads` est coché. d’extensions de fichier séparé par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+
+* **Taille max. du fichier image joint**
+
+   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152** **(2 Mo).
+
+* **Types autorisés d’image de couverture**
+
+   séparé par des virgules des extensions de fichier image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
+
+* **Autoriser les réponses à thème**
+
+   Si cette option est cochée, autorisez les réponses aux commentaires publiés dans le de calendrier. Cette option est cochée par défaut.
+
+* **Autoriser les utilisateurs à supprimer les commentaires et événements**
+
+   Si cette option est cochée, autorisez les membres à supprimer les commentaires et le de calendrier qu’ils ont publiés. La valeur par défaut est** **cochée.
+
+* **Autoriser le vote**
+
+   Si cette option est cochée, incluez la fonction de vote avec un de calendrier. Cette option est cochée par défaut.
+
+* **Afficher le fil d’Ariane**
+
+   Afficher le fil d’Ariane sur la page des événements. Cette option est cochée par défaut.
+
+* **Filtre de plage de dates**
+
+   Définit le nombre de jours ajoutés à la date actuelle afin de calculer la valeur &quot;À&quot; du filtre de page de liste des  du calendrier. Le nombre par défaut est 30.
+
+* **Autoriser le contenu proposé**
+
+   Si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)incitatif. Cette option n’est pas cochée par défaut.
+
+Under the **User Moderation** tab, specify how the posted topics and replies (user generated content) are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
-* **Refuser les publications** Si cette option est cochée, les membres modérateurs autorisés ont le droit de refuser des articles et, par conséquent, d’empêcher leur publication sur le forum public. Cette option est cochée par défaut.
+* **Refuser les publications**
 
-* **Fermer/rouvrir les événements** Si cette option est cochée, les membres modérateurs autorisés ont le droit de fermer un événement pour empêcher la publication d’autres modifications et commentaires, puis de le rouvrir. Cette option est cochée par défaut.
+   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher leur publication de s’afficher sur le forum public. Cette option est cochée par défaut.
 
-* **Marquer les publications** Si cette option est cochée, les membres ont le droit de marquer les événements ou commentaires d’autres membres comme étant inappropriés. Cette option est cochée par défaut**.**
+* **Fermer/rouvrir les événements**
 
-* **Marquer la liste de motifs** Si cette option est cochée, les membres ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué un événement ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les modérateurs de membres de confiance peuvent fermer un  pour apporter d’autres modifications et commentaires, et peuvent également rouvrir un  de. Cette option est cochée par défaut.
 
-* **Motif de la marque personnalisée** Si cette option est cochée, les membres ont le droit de préciser la raison pour laquelle ils ont marqué un événement ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut**.**
+* **Marquer les publications**
 
-* **Seuil de modération** Saisissez le nombre de fois qu’un événement ou un commentaire doit être marqué par les membres avant que les modérateurs n’en soient informés. La valeur par défaut est 1 (une fois).
+   Si cette option est cochée, autorisez les membres à signaler les  ou commentaires d&#39;autres personnes comme étant inappropriés. Cette option est cochée par défaut**.**
 
-* **Limite de marquage** Saisissez le nombre de fois qu’un événement ou un commentaire doit être marqué avant qu’il ne soit plus visible pour le public. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+* **Marquer la liste de motifs**
+
+   Si cette option est cochée, autorisez les membres à choisir, dans un  déroulant, la raison pour laquelle ils signalent un  ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+
+* **Motif de la marque personnalisée**
+
+   Si cette option est cochée, autorisez les membres à indiquer leur propre raison pour signaler un  ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut**.**
+
+* **Seuil de modération**
+
+   Entrez le nombre de fois où un ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
+
+* **Limite de marquage**
+
+   Entrez le nombre de fois où un ou un commentaire doit être marqué avant d’être masqué du  public. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
 
 #### Onglet Champ de balise {#tag-field-tab}
 
-Under the **Tag field** tab, the tags which may be applied, if allowed under the **Settings **tab, are limited according to namespaces chosen.
+Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, si l’option est activée dans l’onglet **Paramètres**, sont limitées selon les espaces de noms sélectionnés.
 
-* **Espaces de noms** autorisés Pertinents si `Allow Tagging` est coché sous l’onglet **Paramètres **Paramètres. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+* **Espaces de noms autorisés**
 
-* **Limite de suggestions** Entrez le nombre de balises à afficher comme suggestion destinée au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
+   Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres **onglet. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. Le de  inclut les balises standard (le par défaut) ainsi que l’option Inclure toutes les balises. La valeur par défaut n’est pas cochée, ce qui signifie que tous les  de  sont autorisés.
+
+* **Limite de suggestions**
+
+   Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. La valeur par défaut est **-**1 (aucune limite).
 
 >[!NOTE]
 >
@@ -117,9 +169,11 @@ Under the **Tag field** tab, the tags which may be applied, if allowed under the
 
 #### Onglet Traduction {#translation-tab}
 
-Sous l’onglet **Traduction **, si la traduction est activée pour le site de la communauté, la traduction peut être configurée pour traduire l’intégralité du fil (événement et commentaires) au lieu de publications spécifiques.
+Sous l’onglet **Traduction**, si la traduction est activée pour le site de la communauté, elle peut être définie de sorte à traduire le fil d’Ariane entier (événement et commentaires) au lieu de certaines publications.
 
-* **Tout traduire** Si cette option est cochée, l’événement et les commentaires sont traduits dans la langue par défaut de l’utilisateur. Cette option est cochée par défaut.
+* **Tout traduire**
+
+   Si cette option est cochée, le et les commentaires sont traduits dans la langue préférée de l’utilisateur. Cette option est cochée par défaut.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -139,13 +193,13 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 When the signed in user is a community member or [privileged member](/help/communities/users.md#privileged-members-group) (depending on configuration), they are able to select `New Event` to create and post a new calendar event.
 
-Plus précisément, il est autorisé à :
+Plus précisément, il est autorisé à:
 
-* créer un événement de calendrier ;
-* publier un commentaire pour un événement de calendrier ;
-* modifier son propre événement ou commentaire de calendrier ;
-* supprimer son propre événement ou commentaire de calendrier ;
-* marquer les événements ou commentaires de calendrier d’autres membres.
+* Créer un nouveau de calendrier 
+* Publier un commentaire sur un de calendrier
+* Modifier leur propre de calendrier ou leur propre commentaire
+* Supprimer leur propre de calendrier ou leur propre commentaire
+* Marquer le de calendrier ou les commentaires des autres
 
 ![chlimage_1-151](assets/chlimage_1-151.png) ![chlimage_1-152](assets/chlimage_1-152.png)
 
