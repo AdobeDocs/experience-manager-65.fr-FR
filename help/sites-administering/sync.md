@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
 
 ---
 
@@ -333,7 +333,7 @@ Si l’identifiant Sling est identique pour plusieurs instances de modification 
 
 Pour vérifier que toutes les valeurs d’identifiant Sling diffèrent, sur chaque instance de publication :
 
-1. browse to [https://*host:port*/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. naviguer vers `http://<host>:<port>/system/console/status-slingsettings`
 1. vérifiez la valeur de l’**identifiant Sling**
 
 ![](assets/chlimage_1-27.png)
@@ -351,7 +351,7 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
       * par exemple, sur un système Windows :
          `use windows explorer and search for *sling.id.file*`
 
-1. démarrage de l’instance de publication
+1. de l’instance de publication
 
    * au démarrage, un nouvel identifiant Sling lui est affecté
 
@@ -368,7 +368,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 
    * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-* localisez la `Apache Sling Distribution Packaging - Vault Package Builder Factory`
+* localisez la variable `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
    * `Builder name: socialpubsync-vlt`
 
@@ -549,7 +549,7 @@ To configure or enable user sync, go to step 1: [Apache Sling Distribution Agent
 
 Lorsqu’une instance de publication n’est plus disponible, elle ne doit pas être supprimée si elle doit être de nouveau en ligne à l’avenir. Les modifications sont mises en file d’attente pour l’éditeur et, une fois l’instance de nouveau en ligne, elles sont traitées.
 
-Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans l’environnement de création.
+Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée, car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans le de l’auteur  .
 
 Lorsqu’un éditeur est en panne, le journal de création comporte des exceptions similaires à :
 
