@@ -10,14 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Configuration MySQL pour DSRP {#mysql-configuration-for-dsrp}
 
-MySQL est une base de données relationnelle qui peut être utilisée pour stocker le contenu généré par l’utilisateur.
+MySQL est une base de données relationnelle qui peut être utilisée pour stocker le contenu généré par l’utilisateur (UGC).
 
 Ces instructions décrivent comment se connecter au serveur MySQL et établir la base de données UGC.
 
@@ -35,7 +35,7 @@ Ces instructions décrivent comment se connecter au serveur MySQL et établir la
 
 ## Installation de MySQL {#installing-mysql}
 
-[MySQL](https://dev.mysql.com/downloads/mysql/) doit être téléchargé et installé selon les instructions du système d’exploitation cible.
+[MySQL](https://dev.mysql.com/downloads/mysql/) doit être téléchargé et installé en suivant les instructions du système d&#39; du.
 
 ### Noms de table en minuscules {#lower-case-table-names}
 
@@ -69,9 +69,9 @@ Remplacez la base de données MySQL par défaut par UTF8 :
 
 ## Installation de MySQL Workbench {#installing-mysql-workbench}
 
-MySQL Workbench fournit une interface utilisateur pour exécuter des scripts SQL qui installent le schéma et les données initiales.
+MySQL Workbench fournit une interface utilisateur pour l’exécution de scripts SQL qui installent le  et les données initiales.
 
-MySQL Workbench doit être téléchargé et installé selon les instructions du système d’exploitation cible.
+MySQL Workbench doit être téléchargé et installé en suivant les instructions du système d’exploitation .
 
 ## Connexion aux communautés {#communities-connection}
 
@@ -91,7 +91,7 @@ Lorsque MySQL Workbench est lancé pour la première fois, à moins qu’il ne s
    * Nom d’hôte: `127.0.0.1`
    * username: `root`
    * Mot de passe: `no password by default`
-   * Schéma par défaut : `leave blank`
+   *  par défaut : `leave blank`
 
 1. Sélectionnez `Test Connection` pour vérifier la connexion au service MySQL en cours d’exécution.
 
@@ -118,17 +118,17 @@ Le script SQL est obtenu à partir du référentiel AEM :
 
    * For example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Sélectionnez le dossier /libs/social/config/datastore/dsrp/schema.
+1. Sélectionnez le dossier /libs/social/config/datastore/dsrp/
 1. Téléchargement `init-schema.sql`
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Une méthode de téléchargement du schéma consiste à
+Une méthode de téléchargement du  consiste à
 
-* Sélectionnez le `jcr:content`noeud du fichier SQL
-* Notez que la valeur de la `jcr:data`propriété est un lien d’affichage.
+* Sélectionner le `jcr:content` noeud du fichier SQL
+* Notez que la valeur de la `jcr:data` propriété est un lien .
 
-* Sélectionnez le lien d’affichage pour enregistrer les données dans un fichier local.
+* Sélectionnez le lien  du pour enregistrer les données dans un fichier local.
 
 ### Création de la base de données DSRP {#create-the-dsrp-database}
 
@@ -155,7 +155,7 @@ Dans l’image suivante, le `init_schema.sql` fichier est prêt à être exécut
 
 #### Actualiser {#refresh}
 
-Une fois le script exécuté, il est nécessaire d’actualiser la `SCHEMAS`section de la `Navigator` section afin de voir la nouvelle base de données. Utilisez l&#39;icône Actualiser à droite de &quot;SCHEMAS&quot; :
+Une fois le script exécuté, il est nécessaire d’actualiser la `SCHEMAS` section de la `Navigator` afin de voir la nouvelle base de données. Utilisez l’icône Actualiser à droite de &quot; :
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -185,11 +185,11 @@ Lorsque MySQL s’exécute sur un serveur différent d’AEM, le nom d’hôte d
 
       Spécifiez le serveur à la place de localhost si le serveur MySQL n’est pas identique à &quot;this&quot; le serveur AEM.
 
-      *communautés* est le nom par défaut de la base de données (schéma)
+      *communautés* est le nom par défaut de la base de données ()
 
    * **[!UICONTROL Nom d&#39;utilisateur]**: `root`
 
-      Ou saisissez le nom d’utilisateur configuré pour le serveur MySQL, si ce n’est &quot;root&quot;
+      Ou saisissez le nom d’utilisateur configuré pour le serveur MySQL, si ce n’est &quot;root&quot;.
 
    * **[!UICONTROL Mot de passe]**:
 
