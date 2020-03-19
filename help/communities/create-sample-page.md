@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
@@ -42,7 +42,7 @@ Dans la navigation globale sur une instance d’auteur, sélectionnez **[!UICONT
 
    * `Name`: Modèle de page unique
    * `Description`: Modèle constitué d’une fonction Page unique.
-   * select `Enabled`
+   * Sélectionner `Enabled`
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
@@ -107,14 +107,14 @@ Dans la console [Sites](sites-console.md)de la communauté, sélectionnez l’ic
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
-Sélectionnez l&#39;icône d&#39;ouverture du site pour afficher le site en mode d&#39;édition.
+Sélectionnez l&#39;icône d&#39;ouverture du site pour  le site en mode d&#39;édition.
 
 L’URL sera [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
-Sur la page d&#39;accueil simple, il est possible de voir ce qui est préconnecté via les fonctions et modèles de la communauté, et de jouer avec l&#39;ajout et la configuration des composants de la communauté.
+Sur le simple, il est possible de voir ce qui est préconnecté à travers les fonctions et modèles de la communauté, et de jouer avec l&#39;ajout et la configuration des composants de la communauté.
 
-## Afficher le site lors de la publication {#view-site-on-publish}
+## du site sur la publication {#view-site-on-publish}
 
-Après avoir publié la page, ouvrez-la sur l’instance [de](http://localhost:4503/content/sites/sample/en.html) publication pour tester les fonctionnalités en tant que visiteur anonyme du site, membre connecté ou administrateur. Le lien Administration visible dans l’environnement d’auteur n’apparaîtra pas dans l’environnement de publication, sauf si un administrateur se connecte.
+Après avoir publié la page, ouvrez-la sur l’instance [de](http://localhost:4503/content/sites/sample/en.html) publication pour tester les fonctionnalités sous la forme d’un de site anonyme, d’un membre connecté ou d’un administrateur. Le lien Administration visible dans l’environnement d’auteur n’apparaît pas dans le de publication  à moins qu’un administrateur ne se connecte.
