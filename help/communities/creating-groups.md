@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Groupes communautaires{#community-groups}
+# Groupes communautaires {#community-groups}
 
-La fonctionnalité des groupes communautaires permet à une sous-communauté d’être créée dynamiquement dans un site communautaire par des utilisateurs autorisés (membres de la communauté et auteurs) à partir des environnements de publication et d’auteur.
+La fonction des groupes communautaires permet à une sous-communauté d’être créée dynamiquement au sein d’un site communautaire par des utilisateurs autorisés (membres de la communauté et auteurs) à partir du  de publication et d’auteur et du  d’auteur.
 
 This ability is present when the [groups function](/help/communities/functions.md#groups-function) is present in the [community site](/help/communities/sites-console.md) structure.
 
@@ -32,33 +32,46 @@ The ability to create a new community group relies on the existence of a communi
 
 The examples that follow use the community site created from the `Reference Site Template` as described in the [Getting Started with AEM Communities](/help/communities/getting-started.md) tutorial.
 
-Page chargée lors de la publication lorsque l’option de menu **Groupes **est sélectionnée :
+This is the page that loads on publish when the **Groups** menu item is selected:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 Lorsque vous sélectionnez l’icône **Nouveau groupe**, une boîte de dialogue de modification s’ouvre.
 
-Sous l’onglet **Paramètres **, vous fournissez les fonctionnalités de base du groupe :
+Dans l’onglet **Paramètres**, spécifiez les fonctionnalités de base du groupe :
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-* **Nom de groupe** Le titre du groupe à afficher sur le site de la communauté.
+* **Nom du groupe**
 
-* **Description** Une description du groupe à afficher sur le site de la communauté.
+   Titre du groupe à afficher sur le site de la communauté.
 
-* **Invitation** Une liste de membres à inviter au groupe. La recherche par saisie anticipée suggère des membres de la communauté à inviter.
+* **Description**
 
-* **Nom de l’URL de groupe** Le nom de la page de groupe qui est intégré à l’URL.
+   Une description du groupe à afficher sur le site de la communauté.
 
-* **Ouvrir le groupe** La sélection `Open Group` indique que tout visiteur anonyme du site peut afficher le contenu et désélectionne `Member Only Group`.
+* **Invitation**
 
-* **Groupe** sélectionné uniquement par membre `Member Only Group` indique que seuls les membres du groupe peuvent afficher le contenu et désélectionnez `Open Group`.
+    de membres à inviter à rejoindre le groupe. La recherche par saisie anticipée suggère des membres de la communauté à inviter.
 
-Sous l&#39;onglet **Modèle **, vous pouvez sélectionner dans la liste des modèles de groupes de communautés qui ont été spécifiés lorsque la fonction de groupes a été incluse dans la structure du site de la communauté ou dans un modèle de site de la communauté.
+* **Nom de l’URL de groupe**
+
+   Nom de la page de groupe qui devient partie intégrante de l’URL.
+
+* **Ouvrir un groupe**
+
+   La sélection `Open Group` indique que tout anonyme du site peut le contenu et désélectionner `Member Only Group`.
+
+* **Groupe de membres uniquement**
+
+   La sélection `Member Only Group` indique que seuls les membres du groupe peuvent le contenu et désélectionne `Open Group`.
+
+Under the **Template** tab is the ability to
+select from the list of community group templates that were specified when the groups function was included in the community site&#39;s structure or in a community site template.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-Sous l’onglet **Image **vous pouvez télécharger une image à afficher pour le groupe sur la page Groupes du site communautaire. La feuille de style par défaut dimensionne l’image à 170 x 90 pixels.
+L’onglet **Image** permet de transférer une image à afficher pour le groupe sur la page Groupes du site de la communauté. La feuille de style par défaut dimensionne l’image à 170 x 90 pixels.
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
