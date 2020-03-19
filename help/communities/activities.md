@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Flux d’activités
 seo-title: Fonctionnalité Flux d’activités
-description: Activités d'un membre de la communauté qui s'est inscrit
-seo-description: Activités d'un membre de la communauté qui s'est inscrit
+description: '  d’un membre de la communauté connecté'
+seo-description: '  d’un membre de la communauté connecté'
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Fonctionnalité Flux d’activités{#activity-streams-feature}
+# Fonctionnalité Flux d’activités {#activity-streams-feature}
 
 ## Présentation {#introduction}
 
@@ -24,10 +24,10 @@ The activities of a signed in community member, such as posting to a forum or bl
 
 La possibilité de suivi ajoute une autre vue des activités lorsque des membres de la communauté suivent des publications d’intérêt ou suivent les activités d’autres membres de la communauté.
 
-Le document décrit :
+Le  décrit :
 
-* l’ajout du composant Flux d’activités à un site AEM ;
-* les paramètres de configuration du composant Flux d’activités.
+* Ajout du composant   flux à un site AEM
+* Paramètres de configuration du composant   flux
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
 
@@ -53,36 +53,46 @@ Dans l’onglet **Activités de l’utilisateur**, spécifiez les activités à 
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-* **Nombre max. d’activités** Le nombre d’activités à afficher.
+* **Nombre max. d&#39;activités**
 
-* **Chemin d’accès aux ressources de flux** Laissez ce champ vide pour qu’il adopte par défaut le site ou le groupe de la communauté. Le chemin d’accès aux ressources de flux identifie la source des activités. Par défaut, ce champ est vide.
+   Nombre de   à afficher
 
-* **Afficher la vue Activités de l’utilisateur** Si cette option est cochée, la page des activités inclut un onglet qui filtre les activités en fonction des activités générées au sein de la communauté par le membre actuel. Cette option est cochée par défaut.
+* **Chemin d&#39;accès aux ressources de flux**
 
-* **Afficher la vue Toutes les activités** Si cette option est cochée, la page des activités inclut un onglet qui comprend toutes les activités générées au sein de la communauté auxquelles le membre actuel a accès. Cette option est cochée par défaut.
+   Laissez vide pour que le site de la communauté ou le groupe de la communauté soit défini par défaut. Le chemin d’accès aux ressources de flux identifie la source des activités. Par défaut, ce champ est vide.
 
-* **Afficher la vue suivante** Si cette option est cochée, la page des activités inclut un onglet qui filtre les activités en fonction des activités que le membre actuel suit. Cette option est cochée par défaut.
+* **Afficher la vue Activités de l’utilisateur**
 
-### Vue suivante {#following-view}
+   Si cette option est cochée, la page  du  inclura un onglet qui desen fonction de ceux générés au sein de la communauté par le membre actuel. Cette option est cochée par défaut.
+
+* **Afficher la vue Toutes les activités**
+
+   Si cette option est cochée, la page  du  comprend un onglet qui comprend tous les  de générés au sein de la communauté à laquelle le membre actuel a accès. Cette option est cochée par défaut.
+
+* **Afficher la vue suivante**
+
+   Si cette option est cochée, la page  du  inclura un onglet qui lesen fonction de ceux que suit le membre actuel. Cette option est cochée par défaut.
+
+### suivant {#following-view}
 
 Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar, filelibrary etcommentaires.](/help/communities/calendar.md)[](/help/communities/file-library.md)[](/help/communities/comments.md)
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-Le bouton **Suivre **permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md)ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le **Suivre **bouton est sélectionné, il est possible d&#39;activer ou de désactiver une sélection. La `Email Subscriptions` sélection n’est présente que lorsqu’elle est configurée.
+Le bouton **Suivre** permet de suivre les entrées sous la forme  , [notifications](/help/communities/notifications.md)ou [](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La `Email Subscriptions` sélection n’est présente que lorsqu’elle est configurée.
 
 Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivant**. Pour des raisons pratiques, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
 
-Le **Suivre **bouton apparaîtra.
+Le bouton **Suivre** s’affiche.
 
-* lors de l’affichage du profil d’un autre membre
+* lors de l’affichage de la  d’un autre membre
 * sur une page de présentation principale, telle que les forums, la qualité de vie et les blogs
 
-   * suit toute l’activité de cette fonctionnalité générale
+   * suit tous les   pour cette fonctionnalité générale
 
 * pour une entrée spécifique, telle qu’un sujet de forum, une question QnA ou un article de blog
 
-   * suit toute activité pour cette entrée spécifique
+   * suit tous les   pour cette entrée spécifique
 
 ### Informations supplémentaires {#additional-information}
 
