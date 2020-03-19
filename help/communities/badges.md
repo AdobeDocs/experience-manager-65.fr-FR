@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Console Badges{#badges-console}
+# Console Badges {#badges-console}
 
 ## A propos des badges {#about-badges}
 
@@ -26,15 +26,15 @@ La console Badges communautaires permet d&#39;ajouter des badges personnalisés 
 
 Actuellement, les badges gagnent ou sont attribués à un membre de la communauté apparaissent avec son nom et son avatar aux emplacements suivants :
 
-* profils
-* [forums](/help/communities/forum.md)
+* Profils
+* [Forums](/help/communities/forum.md)
 * [Q&amp;R](/help/communities/working-with-qna.md)
-* [tableaux de bord](/help/communities/enabling-leaderboard.md)
-* [idéation](/help/communities/ideation-feature.md)
+* [Tableaux de bord](/help/communities/enabling-leaderboard.md)
+* [Conceptualisation](/help/communities/ideation-feature.md)
 
-Dans l’environnement de création, pour accéder à la console Badges
+Dans l&#39;auteur  , pour accéder à la console Badges
 
-* de la navigation globale : **Outils, Communautés, Badges**
+* Dans la navigation globale, accédez à Outils **[UIControl > Communautés > Badges]**
 
 Cette console affiche les badges actuellement disponibles et à partir desquels de nouveaux badges peuvent être ajoutés.
 
@@ -42,19 +42,27 @@ Cette console affiche les badges actuellement disponibles et à partir desquels 
 
 ## Créer le badge {#create-badge}
 
-Un badge est créé en téléchargeant une image appropriée (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/etc/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
+Un badge est créé en téléchargeant une image appropriée (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/etc/community/badging/images` et automatiquement répliquée dans le  de publication .
 
-Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer la synchronisation [utilisateur](/help/communities/sync.md).
+Si le de publication  est une batterie d’éditeurs, il est nécessaire de configurer la synchronisation [utilisateur](/help/communities/sync.md).
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-* **Télécharger l’image**(*obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp au format JPEG ou PNG.
+* **Télécharger l’image**
 
-* **Nom**(*obligatoire*) Nom du badge. Il s’agit du nom par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si le nom `Name` n&#39;est pas valide, il sera modifié.
+   (*Obligatoire*) Image de badge d’une taille recommandée de 32 x 32 pixels à 72 ppp au format JPEG ou PNG.
 
-* **Nom** d’affichage (*facultatif*) Nom à afficher pour le badge dans l’interface utilisateur. La valeur par défaut est le texte non modifié saisi pour le `Name`.
+* **Nom**
 
-* **Description**(*facultatif*) Description du badge.
+   (*Obligatoire*) Nom du badge. Il s’agit du nom par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si le nom `Name` n&#39;est pas un nom de noeud de référentiel valide, il sera modifié.
+
+* **Nom d’affichage**
+
+   (*Facultatif*) Nom à afficher pour le badge dans l’interface utilisateur. La valeur par défaut est le texte non modifié saisi pour le `Name`.
+
+* **Description**
+
+   (*Optional*) A description for the badge.
 
 ## Informations supplémentaires {#additional-information}
 
