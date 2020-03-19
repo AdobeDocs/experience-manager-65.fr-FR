@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
+source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
 
 ---
 
@@ -23,7 +23,7 @@ L’outil VLT s’exécute à partir de la ligne de commande. Ce document expliq
 
 ## Concepts et architecture {#concepts-and-architecture}
 
-Pour une vue d&#39;ensemble complète des concepts et de la structure de l&#39;outil Filevault, consultez la page [Filevault Overview](https://jackrabbit.apache.org/filevault/overview.html) et [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) de la documentation [officielle d&#39;](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault.
+Pour une vue d&#39;ensemble complète des concepts et de la structure de l&#39;outil Filevault, reportez-vous à la page [Filevault Overview](https://jackrabbit.apache.org/filevault/overview.html) et [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) de la documentation [officielle d&#39;](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault.
 
 ## Prise en main de VLT {#getting-started-with-vlt}
 
@@ -39,12 +39,12 @@ Pour utiliser VLT, vous devez effectuer les opérations suivantes :
 
 Pour utiliser l’outil VLT, vous devez d’abord l’installer. Il n’est pas installé par défaut, car il s’agit d’un outil supplémentaire. En outre, vous devez définir la variable d’environnement de votre système.
 
-1. Téléchargez le fichier d&#39;archive FileVault à partir du site Web [Apache Jackrabbit.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Téléchargez le fichier d’archive FileVault à partir du référentiel d’artefacts [Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >La source de l’outil VLT est [disponible sur GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Extrayez le fichier d’archives.
-1. Ajoutez `<archive-dir>/vault-cli-<version>/bin` à votre environnement `PATH` afin que les fichiers de commande `vlt` ou `vlt.bat` soient accessibles selon vos besoins. Par exemple :
+1. Ajouter `<archive-dir>/vault-cli-<version>/bin` à votre  de sorte `PATH` que les fichiers de commande `vlt` ou `vlt.bat` soient accessibles selon les besoins. Par exemple :
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -335,7 +335,7 @@ Le tableau suivant décrit toutes les commandes VLT disponibles. Reportez-vous �
 
 ### Export {#export}
 
-Exporte le système de fichiers Vault monté sur &lt;uri> vers le système de fichiers local sur &lt;local-path>. Un &lt;jcr-path> facultatif peut être spécifié pour exporter uniquement une sous-arborescence.
+Exporte le système de fichiers Vault monté sur &lt;uri> vers le système de fichiers local sur &lt;local-path>. Un &lt;jcr-path> facultatif peut être spécifié afin d’exporter uniquement une sous-arborescence.
 
 #### Syntaxe {#syntax}
 
@@ -403,7 +403,7 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 | `--force` | force l&#39;extraction à remplacer les fichiers locaux s&#39;ils existent déjà |
 | `-v (--verbose)` | sortie détaillée |
 | `-q (--quiet)` | imprime le moins possible |
-| `-f (--filter) <file>` | spécifie des filtres automatiques si aucun filtre n’est défini |
+| `-f (--filter) <file>` | spécifie le  automatique si aucun paramètre n’est défini |
 | `<uri>` | mountpoint uri |
 | `<jcrPath>` | (facultatif) chemin distant |
 | `<localPath>` | (facultatif) chemin local |
@@ -467,7 +467,7 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 | `-q (--quiet)` | imprime le moins possible |
 | `-u (--show-update)` | affiche les informations de mise à jour |
 | `-N (--non-recursive)` | fonctionne sur un seul répertoire |
-| `<file> [<file> ...]` | pour afficher l’état |
+| `<file> [<file> ...]` | fichier ou répertoire d’affichage de l’état |
 
 ### Mettre à jour {#update}
 
@@ -586,7 +586,7 @@ propget -q|-R <propname> <file1> [<file2> ...]
 | `-q (--quiet)` | imprime le moins possible |
 | `-R (--recursive)` | descend de manière récursive |
 | `<propname>` | nom de la propriété |
-| `<file> [<file> ...]` | pour obtenir la propriété à partir de |
+| `<file> [<file> ...]` | pour obtenir la propriété à partir du fichier ou du répertoire |
 
 ### Proplist {#proplist}
 
@@ -604,7 +604,7 @@ proplist -q|-R <file1> [<file2> ...]
 |--- |--- |
 | `-q (--quiet)` | imprime le moins possible |
 | `-R (--recursive)` | descend de manière récursive |
-| `<file> [<file> ...]` | pour répertorier les propriétés à partir de |
+| `<file> [<file> ...]` | pour des propriétés à partir du fichier ou du répertoire |
 
 ### Propset {#propset}
 
@@ -651,7 +651,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 | `-v (--verbose)` | sortie détaillée |
 | `-q (--quiet)` | imprime le moins possible |
 | `-N (--non-recursive)` | fonctionne sur un seul répertoire |
-| `--force` | force l’exécution de l’opération |
+| `--force` | force l’exécution de l’opération. |
 | `<file> [<file> ...]` | fichier ou répertoire local à ajouter |
 
 ### Supprimer {#delete}
@@ -670,7 +670,7 @@ delete -v|-q|--force <file1> [<file2> ...]
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
 | `-q (--quiet)` | imprime le moins possible |
-| `--force` | force l’exécution de l’opération |
+| `--force` | force l’exécution de l’opération. |
 | `<file> [<file> ...]` | fichier ou répertoire local à supprimer |
 
 ### Diff {#diff}
@@ -865,7 +865,7 @@ Chaque dossier de synchronisation stocke la configuration et l’état dans troi
 * `.vlt-sync-config.properties`: fichier de configuration.
 
 * `.vlt-sync.log`: fichier journal contenant des informations sur les opérations effectuées lors de la synchronisation.
-* `.vlt-sync-filter.xml`: qui définissent les parties du référentiel qui sont synchronisées. The format of this file is decribed by the [Performing a filtered checkout](#performing-a-filtered-checkout) section.
+* `.vlt-sync-filter.xml`:  qui définissent les parties du référentiel qui sont synchronisées. The format of this file is decribed by the [Performing a filtered checkout](#performing-a-filtered-checkout) section.
 
 The `.vlt-sync-config.properties` file allows you to configure the following properties:
 
