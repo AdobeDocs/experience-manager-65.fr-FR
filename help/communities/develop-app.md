@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -30,9 +30,9 @@ La première étape consiste à ajouter une propriété de super-type de ressour
 Utilisation de CRXDE Lite:
 
 <!--Resolve steps below-->
-    * Nom : `sling:resourceSuperType`
-    * Type : `String`
-    * Valeur : &quot;fondation/composants/page&quot;
+    Nom : `sling:resourceSuperType`
+    Type: `String`
+    Value: &quot;fondation/composants/page&quot;
 
 1. Cliquez sur le vert **[!UICONTROL [+]Ajouter]**
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**
@@ -41,7 +41,7 @@ Utilisation de CRXDE Lite:
 
 ### Scripts de tête et de corps {#head-and-body-scripts}
 
-1. Dans le volet de l’explorateur **CRXDE Lite** , accédez au fichier `/apps/an-scf-sandbox/components/playpage` `playpage.jsp` et cliquez deux fois dessus pour l’ouvrir dans le volet de modification.
+1. Dans le volet de l’explorateur **CRXDE Lite** , accédez au fichier `/apps/an-scf-sandbox/components/playpage` et cliquez sur le fichier `playpage.jsp` pour l’ouvrir dans le volet de modification.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -82,13 +82,13 @@ Utilisation de CRXDE Lite:
 </html>
 ```
 
-1. Le script de base `head.jsp` ne doit pas nécessairement être superposé, mais le script de base `body.jsp` est vide.
+1. Le script de base `head.jsp` ne doit pas être superposé, mais le script de base `body.jsp` est vide.
 
    Pour configurer la création, superposez `body.jsp` un script local et insérez un système de paragraphe (parsys) dans le corps :
 
-   1. navigate to `/apps/an-scf-sandbox/components`
-   1. sélectionner le `playpage`noeud
-   1. cliquez avec le bouton droit et sélectionnez `Create > Create File...`
+   1. Accédez à `/apps/an-scf-sandbox/components`.
+   1. Sélectionner le `playpage`noeud
+   1. Right-click and select `Create > Create File...`
 
       * Nom : **body.jsp**
    1. Cliquez sur **[!UICONTROL Enregistrer tout]**
@@ -112,7 +112,7 @@ Utilisation de CRXDE Lite:
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**
 
-**Affichez la page dans un navigateur en mode d’édition :**
+**de la page dans un navigateur en mode d’édition :**
 
 * Interface utilisateur standard : [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
@@ -130,11 +130,11 @@ Voici comment la page de lecture apparaît dans l’interface utilisateur classi
 
 ## Composants d’AEM Communities {#communities-components}
 
-Pour activer les composants Communities pour la création, suivez d’abord les instructions suivantes :
+Pour activer les composants Communities pour la création,  en suivant les instructions suivantes :
 
 * [Accès aux composants d’AEM Communities](basics.md#accessing-communities-components)
 
-Pour les besoins de ce sandbox, commencez par les composants **Communautés** suivants (activez-le en cochant la case) :
+Pour les besoins de ce sandbox,  avec ces composants **Communautés** (activez-le en cochant la case) :
 
 * Commentaires
 * Forum
@@ -157,9 +157,9 @@ En outre, sélectionnez des composants **[!UICONTROL généraux]** , tels que
 
 ## Page d’entrée {#landing-page}
 
-Dans un environnement multilingue, la page racine inclurait un script qui analyserait la requête du client pour déterminer la langue souhaitée.
+Dans un  multilingue, la page racine inclurait un script qui analyserait la requête du client pour déterminer la langue préférée.
 
-Dans cet exemple simple, la page racine est configurée de manière statique pour rediriger vers la page anglaise, qui peut être développée ultérieurement pour être la page d&#39;entrée principale avec un lien vers la page de lecture.
+Dans cet exemple simple, la page racine est configurée de manière statique pour rediriger vers la page anglaise, qui peut être développée dans le futur pour être le principal avec un lien vers la page de lecture.
 
 Remplacez l’URL du navigateur par la page racine : [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
@@ -174,4 +174,4 @@ Remplacez l’URL du navigateur par la page racine : [http://localhost:4502/edit
 
 Une fois le site publié, la navigation vers la page racine d’une instance de publication redirige vers la page anglaise.
 
-La dernière étape avant de jouer avec les composants SCF des communautés est d&#39;ajouter un dossier de bibliothèque client (clientlibs) .... **[⇒](add-clientlibs.md)**
+La dernière étape avant de jouer avec les composants SCF des communautés est d&#39;ajouter un dossier de bibliothèque client (clientlibs) .... [Ajouter Clienlibs](add-clientlibs.md)
