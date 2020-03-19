@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Guide de composants de communauté {#community-components-guide}
+# Guide de composants de communauté  {#community-components-guide}
 
-Le guide Composants communautaires est un outil de développement interactif pour le cadre des composantes [sociales (SCF)](scf.md). Il fournit une liste des composants AEM Communities disponibles ou des fonctionnalités plus complexes créées à partir de plusieurs composants.
+Le guide Composants communautaires est un outil de développement interactif pour le cadre des composantes [sociales (SCF)](scf.md). Il fournit un  des composants de communautés AEM disponibles ou des fonctionnalités plus complexes créées à partir de plusieurs composants.
 
 En plus des informations de base pour chaque composant, le guide permet d&#39;expérimenter le fonctionnement des composants/fonctionnalités SCF et la manière dont ils peuvent être configurés ou personnalisés.
 
@@ -34,7 +34,7 @@ Pour accéder au site Composants de la communauté, accédez à
 Les interactions avec les composantes des communautés varient selon les éléments suivants :
 
 * Le serveur (auteur ou publication)
-* Indique si le visiteur du site est connecté ou non
+* Indique si le du site est connecté ou non
 * Si vous êtes connecté, les privilèges attribués au membre
 * Indique si le SRP par défaut, [JSRP](jsrp.md), est utilisé ou non
 
@@ -52,9 +52,9 @@ Sur l’auteur, pour passer en mode d’édition, insérez soit `editor.html` , 
 >
 >En mode d’édition, les liens d’une page ne sont pas actifs.
 >
->Pour accéder à une page de composant, sélectionnez d’abord le mode Aperçu pour activer les liens.
+>Pour accéder à une page de composant, sélectionnez tout d’abord le mode  pour activer les liens.
 >
->La page de composant étant affichée dans le navigateur, revenez en mode d’édition afin d’ouvrir la boîte de dialogue de modification du composant.
+>La page de composant s’affichant dans le navigateur, revenez en mode d’édition afin d’ouvrir la boîte de dialogue de modification du composant.
 >
 >For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 >
@@ -62,7 +62,7 @@ Sur l’auteur, pour passer en mode d’édition, insérez soit `editor.html` , 
 
 ### Page d’accueil {#home-page}
 
-Le guide fournit une liste des composants SCF disponibles pour l’aperçu et le prototypage le long du côté gauche de la page.
+Le guide fournit une liste des composants SCF disponibles pour les  de et le prototypage le long du côté gauche de la page.
 
 Guide des composants affiché sur une instance d’auteur en mode d’édition :
 
@@ -70,21 +70,21 @@ Guide des composants affiché sur une instance d’auteur en mode d’édition :
 
 ## Pages de composants {#component-pages}
 
-Sélectionnez un composant dans la liste située le long du côté gauche de la page.
+Sélectionnez un composant dans le  le long du côté gauche de la page.
 
 ![chlimage_1-405](assets/chlimage_1-405.png)
 
 Le corps principal du guide s’affiche :
 
 1. Titre : Nom du composant sélectionné
-1. [Bibliothèques](#client-side-libraries)côté client : Liste d’une ou de plusieurs catégories obligatoires
+1. [Bibliothèques](#client-side-libraries)côté client :  d’un ou de plusieurs requis 
 1. [Inclus](scf.md#add-or-include-a-communities-component): Si le composant peut être inclus dynamiquement, l’état peut être basculé en mode d’édition Auteur :
 
    * Si vous l’ajoutez, le texte affiché est le suivant : &quot;Ce composant est inclus via son noeud par.&quot;
-   * Si inclus, le texte affiché est : &quot;Ce composant est inclus dynamiquement.&quot;
+   * S’il est inclus, le texte affiché est le suivant : &quot;Ce composant est inclus dynamiquement.&quot;
    * Si ce n’est pas le cas, aucun texte n’est affiché.
 
-1. Exemple de composant ou de fonction : instance active du composant ou de la fonction. Si un composant, il peut être modifié par les modifications apportées aux modèles, aux feuilles de style CSS et aux données fournies dans la section d’onglet.
+1. Exemple de composant ou de fonction : instance active du composant ou de la fonction. Si un composant est modifié, il peut l’être avec les modifications apportées aux modèles, aux feuilles de style CSS et aux données fournies dans la section d’onglet.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Le corps principal du guide s’affiche :
 
 Lors de l’utilisation du guide sur une instance d’auteur, il est possible de configurer un composant en ouvrant sa boîte de dialogue. Les informations destinées aux développeurs sont fournies dans la section Essentials [des](essentials.md) composants et des fonctionnalités de la documentation, tandis que les paramètres des boîtes de dialogue sont décrits dans la section Composants [des](author-communities.md) communautés pour les auteurs.
 
-Pour le guide Composants de la communauté, certains paramètres de la boîte de dialogue des composants sont superposés avec l’état de bascule [Incluable](scf.md#add-or-include-a-communities-component) . Pour basculer entre l’utilisation de la ressource existante ou d’une ressource incluse dynamiquement, en mode d’édition, sélectionnez le composant et le texte inclus, puis double-cliquez pour ouvrir la boîte de dialogue de modification :
+Pour le guide Composants de la communauté, certains paramètres de la boîte de dialogue des composants sont superposés avec l’état de bascule [Incluable](scf.md#add-or-include-a-communities-component) . Pour basculer entre l’utilisation de la ressource existante ou d’une ressource incluse dynamiquement, en mode d’édition, sélectionnez le composant et le texte inclus, puis -cliquez pour ouvrir la boîte de dialogue de modification :
 
 ![chlimage_1-406](assets/chlimage_1-406.png)
 
@@ -114,21 +114,21 @@ Sous l’onglet **Modèles** :
 
 ### Interactions de publication {#publish-interactions}
 
-Lors de l’utilisation du guide sur une instance de publication, il est possible d’expérimenter les composants et fonctionnalités en tant que visiteur du site (non connecté) et en tant que membres disposant de divers privilèges lors de leur connexion.
+Lors de l’utilisation du guide sur une instance de publication, il est possible d’expérimenter les composants et fonctionnalités en tant que de site (non connecté) et membres disposant de divers privilèges lors de leur connexion.
 
 >[!NOTE]
 >
->Sachez que si le SRP est laissé par défaut à [JSRP](jsrp.md), l’UGC saisi sur l’instance de publication est uniquement visible lors de la publication et *n’est pas *visible depuis la console de [modération](moderate-ugc.md) de l’instance d’auteur.
+>Sachez que si le SRP est laissé par défaut à [JSRP](jsrp.md), l’UGC saisi sur l’instance de publication est uniquement visible lors de la publication et *non* visible à partir de la console de [modération](moderate-ugc.md) de l’instance d’auteur.
 
 ## Bibliothèques côté client {#client-side-libraries}
 
 Les bibliothèques côté client (clientlibs) répertoriées pour chaque composant sont celles *requises* pour être référencées lorsque le composant est placé sur une page. Les clientlibs fournissent un moyen de gérer et d’optimiser le téléchargement du code JavaScript et CSS utilisé pour rendre le composant dans le navigateur.
 
-Pour plus d’informations, consultez [Clientlibs for Communities Components](clientlibs.md).
+Pour plus d’informations, consultez [Clientlibs for Communities Components](clientlibs.md)(en anglais).
 
 ## Emprunt d’identité {#impersonation}
 
-Dans l’instance d’auteur, où l’un d’eux est souvent connecté en tant qu’administrateur ou développeur, pour expérimenter le composant connecté en tant qu’autre utilisateur, utilisez la zone de texte à gauche du bouton **[!UICONTROL d’emprunt d’identité]** pour saisir le nom d’utilisateur ou effectuez une sélection dans la liste déroulante, puis cliquez sur le bouton. Cliquez sur Rétablir pour vous déconnecter et terminer l’emprunt d’identité.
+Dans l’instance d’auteur, où l’un d’eux est souvent connecté en tant qu’administrateur ou développeur, pour expérimenter le composant connecté en tant qu’autre utilisateur, utilisez la zone de texte à gauche du bouton **[!UICONTROL d’emprunt d’identité]** pour saisir le nom d’utilisateur ou effectuez une sélection dans le déroulant, puis cliquez sur le bouton. Cliquez sur Rétablir pour vous déconnecter et mettre fin à l’emprunt d’identité.
 
 L’instance de publication n’a pas besoin de s’incarner. Il vous suffit d’utiliser le lien Connexion/Déconnexion pour vous faire passer pour des utilisateurs variés, tels que les utilisateurs [de la](tutorials.md#demo-users)démonstration.
 
@@ -140,7 +140,7 @@ Une fois activé, chaque composant SCF est disponible pour le prototypage d’é
 
 >[!NOTE]
 >
->**Cet outil est en lecture seule**. Aucune des modifications apportées aux modèles, aux CSS ou aux données n’est enregistrée dans le référentiel.
+>**Cet outil est en lecture seule**. Aucune des modifications apportées aux modèles, aux pages CSS ou aux données n’est enregistrée dans le référentiel.
 
 Pour tester rapidement les personnalisations, la `scg:showIde`propriété doit être ajoutée au noeud JCR de contenu de la page de composant et définie sur true.
 
