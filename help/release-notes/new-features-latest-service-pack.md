@@ -4,14 +4,14 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
+source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
 
 ---
 
 
 # Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 offre des fonctionnalités et des améliorations continues grâce aux Service Packs trimestriels de cette année. La nouvelle approche profite à nos clients lorsqu&#39;ils adoptent les innovations plus rapidement.
+Adobe Experience Manager (AEM) 6.5 offre des fonctionnalités et des améliorations continues au moyen de Service Packs trimestriels. La nouvelle approche profite à nos clients lorsqu&#39;ils adoptent les innovations plus rapidement.
 
 La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2020**. Cet article met en évidence les fonctionnalités que le dernier Service Pack  le  pour rendre votre voyage AEM plus enrichissant.
 
@@ -19,11 +19,11 @@ La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2
 
 ### Amélioration des performances dans divers domaines {#performance-improvements}
 
-* Réduction du temps de chargement et d’initialisation de ContextHub dans un site (contexthub.kernel.js). Le chargement des pages s’en trouve accéléré lors d’une visite sur le site.
+* Réduction du temps de chargement et d’initialisation de ContextHub dans un site (`contexthub.kernel.js`). Le chargement des pages s’en trouve accéléré lors d’une visite sur le site.
 
-* Réduction du temps d’actualisation d’une page après avoir fait glisser et déposé des fragments d’expérience dans l’éditeur de page Sites.
+* Réduction du temps d’actualisation d’une page après avoir fait glisser des fragments d’expérience vers l’éditeur de page Sites.
 
-* Réduction du temps de chargement des entrées pour une page Sites avec plus de 200 copies dynamiques dans l’aperçu de la Live Copy.
+* Réduction du temps de chargement des entrées sur une page Sites avec plus de 200 copies dynamiques dans l’aperçu **[!UICONTROL de la]** Live Copy.
 
 * Amélioration de la gestion des URL incomplètes ou incorrectes. De telles URL peuvent ralentir l’éditeur de modèles.
 
@@ -56,120 +56,104 @@ Les ressources Experience Manager comprennent les améliorations d’accessibili
 
 ### Générer une sortie imprimable dans le AEM Forms {#generate-printable-output}
 
-Si vous souhaitez qu’une solution imprime ou enregistre plusieurs copies d’un fichier de modèle source et l’intègre à un fichier de données avec de nombreux enregistrements, une nouvelle étape de processus Générer une sortie imprimable est disponible dans AEM Forms. Par exemple, si vous souhaitez imprimer un formulaire source avec un nom différent chaque fois qu’il est imprimé, vous pouvez avoir ces noms dans le fichier de données et les intégrer à un fichier de modèle standard.
-
-Tirez parti de cette fonctionnalité en utilisant **Outils** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]** > **[!UICONTROL Créer, puis recherchez l’étape Générer une sortie imprimable.]******
+La nouvelle étape de flux de travaux Générer une sortie imprimable vous permet d’intégrer un fichier de modèle source à un fichier de données. Cette intégration vous permet d’imprimer ou d’enregistrer différentes copies du fichier de modèle. Par exemple, vous pouvez imprimer un formulaire source avec un nom différent chaque fois qu’il est imprimé. Enregistrez les noms dans le fichier de données et intégrez le fichier de données à un fichier de modèle standard. Pour plus d’informations sur cette fonctionnalité, voir Flux de travaux centrés sur [Forms sur OSGi - Guide de référence](../forms/using/aem-forms-workflow-step-reference.md)des étapes.
 
 ![Générer une sortie imprimable](assets/generate-print-output-demo.gif)
 
-Pour plus d’informations sur cette fonctionnalité, voir Flux de travaux centrés sur [Forms sur OSGi - Guide de référence](../forms/using/aem-forms-workflow-step-reference.md)des étapes.
-
 ### Prise en charge de plusieurs colonnes pour les formulaires adaptatifs et les communications interactives en mode Disposition {#multi-column-adaptive-forms}
 
-Vous pouvez désormais définir le nombre de colonnes d’un panneau dans les formulaires adaptatifs et les communications interactives.
+Vous pouvez désormais définir le nombre de colonnes d’un panneau dans les formulaires adaptatifs et les communications interactives. Passez en mode de mise en page pour utiliser la nouvelle option multicolonne. Pour plus d’informations, voir [Utilisation du mode Mise en page pour redimensionner des composants](../forms/using/resize-using-layout-mode.md).
 
-Vous pouvez trouver la nouvelle option en passant en mode Mise en page. Appuyez sur le panneau que vous souhaitez convertir en format à plusieurs colonnes, sélectionnez son parent et appuyez sur l’icône à plusieurs colonnes pour définir le nombre de colonnes du panneau.
 
 ![Mise en page multi-colonnes](assets/multi-column-layout.gif)
 
-Pour plus d’informations, voir [Utilisation du mode Mise en page pour redimensionner des composants](../forms/using/resize-using-layout-mode.md).
+
 
 ### Personnalisations de la boîte de réception AEM {#aem-inbox}
 
-Avez-vous déjà ressenti le besoin de personnaliser les options disponibles dans l’en-tête AEM ? Il est maintenant possible avec notre nouvelle version du Service Pack avec l&#39;introduction d&#39;une option **[!UICONTROL de contrôle]** d&#39;administration.
+La nouvelle option Contrôle d’administration permet aux administrateurs d’effectuer les opérations suivantes :
 
-**Personnaliser le texte d’en-tête**
+* Personnaliser le texte et le logo de l’en-tête
 
-Les administrateurs de processus peuvent désormais spécifier le texte d’en-tête de votre choix.
+* Contrôle de l’affichage des liens de navigation disponibles dans l’en-tête
 
-Vous trouverez la nouvelle option **[!UICONTROL Personnaliser le texte]** d’en-tête sous le sélecteur de  de (disponible en haut à droite de la barre d’outils) > Contrôle **** d’administration.
-
-**Personnaliser le logo**
-
-Comme pour la personnalisation du texte d’en-tête, les administrateurs de processus peuvent désormais spécifier le logo de l’en-tête de votre choix.
-
-Vous trouverez la nouvelle option **[!UICONTROL Personnaliser le logo]** sous  de > Contrôle **[!UICONTROL d’administration]**.
-
-Pour plus d’informations sur cette fonctionnalité, voir [Votre boîte de réception](../sites-authoring/inbox.md).
-
-### Contrôle de navigation utilisateur {#user-navigation-control}
-
-Les administrateurs de flux de travail ont désormais la possibilité de faire travailler les utilisateurs sur AEM en mode restreint en fonction de leur rôle. Les administrateurs peuvent contrôler l’affichage des options de navigation disponibles dans l’en-tête afin de limiter les utilisateurs à passer en mode de création de flux de travail ou à d’autres liens de solution.
-
-Consultez les nouvelles options **[!UICONTROL de navigation]** Masquer sous  de > Contrôle **[!UICONTROL d’administration]**.
-
-Pour plus d’informations sur cette fonctionnalité, voir [Votre boîte de réception](../sites-authoring/inbox.md).
+L’option Contrôle d’administration n’est visible que pour les membres du groupe des administrateurs ou des administrateurs de processus. Pour plus d’informations sur cette fonctionnalité, voir [Votre boîte de réception](../sites-authoring/inbox.md).
 
 ### Prise en charge du texte enrichi dans les formulaires HTML5 {#rich-text-support}
 
-Le champ de texte peut désormais afficher un d’options de formatage dans le formulaire HTML5 rendu. Vous devez définir le format du champ de texte dans Forms Designer pour appliquer les paramètres appropriés au champ.
+Vous pouvez désormais convertir un champ de texte d’un formulaire XFA en champ de texte enrichi lorsqu’il est généré dans un formulaire HTML5. Par conséquent, le champ de texte affiche un  d’autres options de formatage dans un formulaire HTML5. Pour plus d’informations, voir [Conception de modèles de formulaire pour les formulaires](../forms/using/designing-form-template.md)HTML5.
 
-Pour utiliser cette fonctionnalité, appuyez sur le champ de texte dans le de **[!UICONTROL conception]** dans Forms Designer. Dans l’onglet **[!UICONTROL Champ]** , sélectionnez Texte **** enrichi dans le déroulant Format **[!UICONTROL de]** champ pour appliquer les paramètres.
+### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
-Pour plus d’informations, voir [Conception de modèles de formulaire pour les formulaires](../forms/using/designing-form-template.md)HTML5.
+Experience Manager Forms comprend les améliorations d’accessibilité suivantes :
 
-## Principaux points saillants
+* Les utilisateurs peuvent déplacer la mise au point des onglets sans problème pour le thème de référence Ultramarine-Accessible d’un formulaire adaptatif.
 
-Outre les nouvelles fonctionnalités, AEM 6.5 Service Pack 4 inclut les points forts suivants :
+* Les lecteurs d’écran annoncent correctement les cases à cocher, les liens, le sélecteur de date et les champs de saisie de date dans un formulaire adaptatif.
 
-* Vous pouvez désormais synchroniser des sous-arborescences de contenu sélectif avec le mode *Contenu* dynamique - Scene7 au lieu de toutes les sous-arborescences disponibles dans `content/dam`.
-
-* L’intégration du modèle de données de formulaire avec le service Web SOAP prend désormais en charge les groupes de choix ou les attributs sur les éléments.
-
-* L’entrée ou la sortie SOAP et les structures de données complexes prennent désormais en charge la substitution de groupe dynamique.
+* Chaque page d’un formulaire adaptatif comprend désormais un titre et un libellé de repère principal.
 
 ## Principales fonctionnalités des Service Packs version 6.5 d’AEM
 
-### Smart Imaging for Dynamic Media {#smart-imaging}
+### Smart Imaging for Dynamic Media (6.5.3.0) {#smart-imaging}
 
-L’imagerie dynamique utilise les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
+L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images adaptées optimisées pour leur expérience, ce qui améliore les performances et l’engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
 
-### Recherche visuelle pour AEM Assets {#visual-search}
+### Recherche visuelle pour AEM Assets (6.5.2.0) {#visual-search}
 
 Les utilisateurs de ressources peuvent rechercher des images visuellement similaires. AEM affiche les images balisées intelligentes du référentiel DAM qui sont similaires à une image sélectionnée par l’utilisateur. See [Visual search](../assets/search-assets.md).
 
-### Partage et demande l’accès aux éléments de boîte de réception d’un utilisateur {#share-request-access}
+### Partage et demande d’accès aux éléments de boîte de réception d’un utilisateur (6.5.3.0) {#share-request-access}
 
 Vous pouvez partager vos éléments de boîte de réception avec un autre utilisateur. Une fois qu’un autre utilisateur a accès à vos éléments de boîte de réception, il peut demander et prendre les mesures appropriées sur les éléments partagés. De même, vous pouvez demander à d’autres utilisateurs l’accès aux éléments de la boîte de réception. Voir [Partage et demande d’accès aux éléments de boîte de réception d’un utilisateur](../forms/using/configure-shared-queues-osgi.md).
 
-### Configuration du paramètre d’absence du bureau pour vos éléments de boîte de réception {#configure-out-of-office}
+### Configuration du paramètre d’absence du bureau pour vos éléments de boîte de réception (6.5.3.0) {#configure-out-of-office}
 
 Si vous prévoyez d’être absent du bureau, vous pouvez indiquer ce qui se passe pour les éléments qui vous sont affectés pour cette période.
 Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Vous pouvez définir une personne par défaut à laquelle tous vos éléments sont envoyés. Voir [Configuration des paramètres](../forms/using/configure-out-of-office-settings.md)d’absence du bureau.
 
-### Générer plusieurs communications interactives à l’aide de l’API lot {#generate-multiple-ic}
+### Générer plusieurs communications interactives à l’aide de l’API Batch (6.5.3.0) {#generate-multiple-ic}
 
 Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API de traitement par lots combine les données avec un modèle pour produire une communication interactive. L’API est utile pour la production de masse de communications interactives. Par exemple, factures de téléphone, relevés de carte de crédit pour plusieurs clients. Voir [Générer plusieurs communications interactives à l’aide de l’API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)par lot.
 
-### Messages d’erreur de validation standard pour les formulaires adaptatifs {#standard-validation}
 
-Les formulaires adaptatifs peuvent désormais s’intégrer aux services personnalisés pour effectuer des validations de données. Si les valeurs d’entrée ne répondent pas aux critères de validation et que le message d’erreur de validation renvoyé par le serveur est au format standard, les messages d’erreur s’affichent au niveau du champ dans le formulaire. Si les valeurs d’entrée ne répondent pas aux critères de validation et que le message d’erreur de validation du serveur n’est pas au format de message standard, les formulaires adaptatifs fournissent un mécanisme pour transformer les messages d’erreur de validation en un format standard afin qu’ils s’affichent au niveau du champ dans le formulaire. Voir Messages d’erreur de validation [standard pour les formulaires](../forms/using/standard-validation-error-messages-adaptive-forms.md)adaptatifs.
 
 ## Principales versions depuis AEM 6.5 SP3
 
-Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalités suivantes, qui ne sont pas du livrable principal d’AEM :
+Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalités suivantes, qui ne font pas partie du livrable principal d’AEM :
 
-* AEM Cloud Manager 2020.1.0 et 2020.2.0 Améliorations mensuelles apportées à Cloud Manager. Les deux dernières versions ont porté sur l’amélioration de l’état du pipeline et la possibilité de télécharger des journaux pour les différentes étapes. Lisez les notes de mise à jour complètes ici :
+* AEM Cloud Manager 2020.1.0 et 2020.2.0Les mises à jour de la version améliorent l’état du pipeline et la capacité de télécharger des journaux pour différentes étapes. Pour en savoir plus, voir:
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
 
-* Mises à jour de l’interface de ligne de commande d’AEM Cloud ManagerAutomatisation du Cloud Manager  à l’aide de l’outil de ligne de commande. Nous étendons continuellement l&#39;interface de ligne de commande - rejoignez [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+* Mises à jour de l’interface de ligne de commande d’AEM Cloud Manager
 
-* Sites AEM : Archétype de projet 23Meilleure méthode pour d’un nouveau projet AEM. Avec Archetype 23, nous [fusionnons l&#39;archétype de projet pour les sites SPA et réguliers en un seul](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23), fournissant un thème par défaut pour lancer-votre développement frontal.
+   Les mises à jour de la version comprennent l’automatisation du Cloud Manager à l’aide de l’outil de ligne de commande. Voir [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
-* Sites AEM : Site de référence WKND [Tout nouveau projet](https://www.wknd.site/) de référence contenant les meilleures pratiques pour créer des sites avec AEM. Pour en savoir plus, lisez le didacticiel [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) WKND mis à jour et saisissez le code de [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+* Sites AEM : Archétype de projet 23
 
-* Sites AEM : Commerce CIF Core Components 0.7.0 et 0.9.0Intégration de sites AEM et de Magento Commerce. Nous [étendons continuellement des composants principaux dédiés et un Archétype de projet avec une attention particulière au commerce](https://github.com/adobe/aem-core-cif-components/releases).
+   La meilleure façon de  un nouveau projet AEM. Archetype 23 fusionne le [Project Archetype for SPA et les sites réguliers en un seul](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23) et fournit un thème par défaut pour  votre développement frontal.
+
+* Sites AEM : Site de référence WKND
+
+   [Nouveau projet](https://www.wknd.site/) de référence contenant les meilleures pratiques relatives à la création de sites avec AEM. Pour en savoir plus, lisez le didacticiel [mis à jour de](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)WKND. Vous pouvez prendre le code le plus récent de [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+
+* Sites AEM : Commerce CIF Core Components 0.7.0 et 0.9.0
+
+   Intégrer les sites AEM au commerce Magento. Voir [Extension des composants principaux dédiés et Archétype de projet avec une attention particulière sur le commerce](https://github.com/adobe/aem-core-cif-components/releases).
 
 * Ressources AEM : Application de bureau 2.0.1.1
-   [Obtenir un accès de bureau aux ressources](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)
 
-* AEM Screens : Feature Pack 202001Digital Signage directement depuis AEM. Profitez des dernières améliorations apportées à Feature Pack, cette fois-ci nous [activons la lecture synchrone sur plusieurs lecteurs](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202001.html)de médias.
+   Pour plus d’informations, voir [Obtention d’un accès de bureau aux ressources](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+
+* AEM Screens : Feature Pack 202001
+
+   Digital Signage directement depuis AEM. Installez les améliorations avec le dernier Feature Pack pour [activer la lecture synchrone sur plusieurs lecteurs](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202001.html)de médias.
 
 ## Ressources utiles
 
-* [Guides de l’utilisateur d’AEM 6.5](../user-guide/capabilities.md)
+* [Guides de l’utilisateur d’AEM 6.5](../user-guide/home.md)
 
 * [Notes de mise à jour générales d’Adobe Experience Manager 6.5](release-notes.md)
 
