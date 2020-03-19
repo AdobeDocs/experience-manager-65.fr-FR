@@ -1,6 +1,6 @@
 ---
-title: Console Communautés
-seo-title: Console Communautés
+title: Consoles de communautés
+seo-title: Consoles de communautés
 description: Consoles de la communauté expliquées
 seo-description: Consoles de la communauté expliquées
 uuid: 1c5b2600-9059-4b44-9741-f1b627423d3c
@@ -10,14 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Console Communautés {#communities-consoles}
+# Consoles de communautés {#communities-consoles}
 
-Les consoles Communautés AEM, disponibles dans l’environnement d’auteur à partir du panneau de navigation global, permettent d’accéder à des tâches administratives telles que
+Les consoles Communautés AEM, disponibles dans le de l’auteur  à partir du panneau de navigation global, permettent d’accéder aux d’administration, tels que :
 
 * [Création d’un site communautaire](sites-console.md)
 * Ajout de [groupes](groups.md) imbriqués dans le site
@@ -25,15 +25,15 @@ Les consoles Communautés AEM, disponibles dans l’environnement d’auteur à 
 * Gestion des membres [de la communauté](members.md)
 * [Modération](moderate-ugc.md) du contenu généré par l’utilisateur (UGC)
 * Création de badges [personnalisés](badges.md)
-* Configuration du stockage [par défaut pour UGC](srp-config.md)
+* Configuration du de  [par défaut pour l’UGC](srp-config.md)
 
-Lorsque le stockage [](working-with-srp.md) UGC est configuré pour être un magasin commun partagé par les environnements d’auteur et de publication, la console [de](moderation.md)modération, disponible à partir des environnements d’auteur et de publication, fonctionne sur une instance unique de l’UGC.
+Lorsque le [UGC ](working-with-srp.md) est configuré pour être un magasin commun partagé par l’auteur et la publication de  de, la console [de](moderation.md)modération, disponible à la fois auprès du de publication et de l’auteur, fonctionne sur une instance unique de UGC.
 
-Dans l’environnement d’auteur, après la connexion avec des droits d’administrateur, les `Communities` consoles sont disponibles à partir des consoles de navigation et d’outils.
+Dans le de l’auteur  , après la connexion avec des droits d’administrateur, les `Communities` consoles sont disponibles à partir des consoles de navigation et d’outils.
 
 >[!NOTE]
 >
->Dans l’environnement de publication, un site [](sites-console.md) communautaire affiche un élément de `Administration`menu lorsque le membre connecté dispose des privilèges appropriés.
+>Dans le  de publication , un site [](sites-console.md) communautaire affiche un élément de `Administration` menu lorsque le membre connecté dispose des privilèges appropriés.
 
 ## Panneau de navigation global {#global-navigation-panel}
 
@@ -52,23 +52,23 @@ Pour accéder aux différentes consoles de communautés, à partir de la navigat
 
 * [Sites](sites-console.md)
 
-   La console Sites est accessible dans l’environnement de création dans le but de créer et de gérer des sites communautaires et ses [groupes](groups.md).
+   La console Sites est accessible dans le de l&#39;auteur  pour créer et gérer des sites communautaires et ses [groupes](groups.md).
 
 * [Modération](moderation.md)
 
-   La console Modération est destinée à la modération en bloc de l’UGC et dans l’environnement d’auteur. Une console de modération en bloc similaire est accessible dans l’environnement de publication aux membres de la communauté auxquels est affecté le rôle de modérateur [de](users.md#publishenvironmentusersandgroups) communauté pour un ou plusieurs sites de la communauté.
+   La console de modération est destinée à la modération en bloc de l’UGC et dans le de l’auteur  . Une console de modération en bloc similaire est accessible dans le de publication  aux membres de la communauté auxquels est affecté le rôle de modérateur [de](users.md#publishenvironmentusersandgroups) communauté pour un ou plusieurs sites de la communauté.
 
 * [Membres, groupes](members.md)
 
-   Les consoles Membres et Groupes permettent de gérer les membres de la communauté et les groupes de membres qui existent dans l’environnement de publication de l’environnement d’auteur.
+   Les consoles Membres et Groupes sont destinées à la gestion des membres de la communauté et des groupes qui existent dans le  de publication  de l’auteur  le .
 
 * [Rapports](reports.md)
 
-   La console Rapports permet de générer des rapports sur les affectations, les pages vues et le contenu publié lorsqu’un site communautaire a [activé Adobe Analytics](sites-console.md#analytics). La console est uniquement disponible dans l’environnement de création.
+   La console Rapports permet de générer des rapports sur les affectations, les  de page et le contenu publié lorsqu’un site communautaire a [activé Adobe Analytics](sites-console.md#analytics). La console n’est disponible que dans le  de l’auteur .
 
 * [Ressources](resources.md)
 
-   La console Ressources permet aux gestionnaires [d&#39;](enablement.md#communitymanagers) activation de créer, gérer et affecter des ressources aux membres d&#39;un site [de communauté d&#39;](overview.md#enablement-community)activation. La console est uniquement disponible dans l’environnement de création.
+   La console Ressources permet aux gestionnaires [d&#39;](enablement.md#communitymanagers) activation de créer, gérer et affecter des ressources aux membres d&#39;un site [de la communauté d&#39;](overview.md#enablement-community)activation. La console n’est disponible que dans le  de l’auteur .
 
 ## Console Outils {#tools-console}
 
