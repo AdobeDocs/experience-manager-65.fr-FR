@@ -1,8 +1,8 @@
 ---
-title: Configuration initiale pour activation
+title: Configuration initiale pour l'activation
 seo-title: Configuration initiale
-description: Configuration initiale pour activation
-seo-description: Configuration initiale pour activation
+description: Configuration initiale pour l'activation
+seo-description: Configuration initiale pour l'activation
 uuid: 873ec41d-c088-41d9-a535-de5300661de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,12 +10,12 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Configuration initiale pour activation {#initial-setup-for-enablement}
+# Configuration initiale pour l&#39;activation {#initial-setup-for-enablement}
 
 ## Start Author and Publish Instances {#start-author-and-publish-instances}
 
@@ -23,19 +23,19 @@ Pour des raisons de développement et de démonstration, il sera nécessaire d�
 
 Suivez les instructions de base de [prise en main](../../help/sites-deploying/deploy.md#getting-started) d’AEM, ce qui entraînera
 
-* environnement de création sur [localhost:4502](http://localhost:4502/)
-* environnement de publication sur [localhost:4503](http://localhost:4503/)
+* Auteur   sur [localhost:4502](http://localhost:4502/)
+* Publier   sur [localhost:4503](http://localhost:4503/)
 
 Pour les communautés AEM,
 
-* L’environnement d’auteur est
+* L&#39;auteur  le  est pour
 
    * Développement de sites, de modèles, de composants, de ressources d’activation et de chemins d’apprentissage
    * Affectation de membres et de groupes de membres aux ressources d’activation et aux chemins d’apprentissage
-   * Génération de rapports sur les affectations, les vues et les publications
-   * Tâches administratives et de configuration
+   * Génération de rapports sur les affectations, les  et les publications
+   *  d’administration et de configuration
 
-* L’environnement de publication est destiné à
+*  de publication 
 
    * Formation/formation basée sur des sujets gérés par le Gestionnaire d&#39;activation
    * Commentaires et évaluation des ressources d’activation et des chemins d’apprentissage
@@ -63,7 +63,7 @@ Lorsque [Adobe Analytics est configuré pour le site](analytics.md)de la communa
 
 ## Configuration du courrier électronique pour les notifications {#configure-email-for-notifications}
 
-La fonctionnalité de notifications, disponible par défaut pour tous les sites créés à l’aide de la `Communities Sites` console, fournit un canal de courrier électronique pour les notifications.
+La fonctionnalité de notifications, disponible par défaut pour tous les sites créés à l’aide de la `Communities Sites` console, fournit un de courrier électronique pour les notifications.
 
 Ce qui est nécessaire, c&#39;est que le courrier électronique soit correctement configuré pour le site.
 
@@ -71,7 +71,7 @@ See [Configuring Email](email.md).
 
 ## Activation du service Tunnel {#enable-the-tunnel-service}
 
-Lors de la création d’un site communautaire dans l’environnement d’auteur, le service tunnel permet de créer et de gérer des utilisateurs et des groupes d’utilisateurs enregistrés dans l’environnement de publication (membres), d’attribuer des rôles aux membres de la communauté de confiance et d’affecter du contenu aux apprenants.
+Lors de la création d’un site de la communauté dans le  de l’auteur, le service de tunnel permet de créer et de gérer des utilisateurs et des groupes d’utilisateurs enregistrés dans le de publication, d’attribuer des rôles aux membres de la communauté de confiance et d’affecter du contenu aux apprenants.
 
 For more information see [Managing Users and User Groups](users.md).
 
@@ -79,7 +79,7 @@ Pour obtenir des instructions simples sur l’activation du service de tunnel, v
 
 ## Création de balises de didacticiel {#create-tutorial-tags}
 
-Créez des balises à utiliser pour les didacticiels d’interaction et d’activation, à l’aide de l’espace de noms de balise de `Tutorial`.
+Créez des balises à utiliser pour les didacticiels d’interaction et d’activation, à l’aide de la balise   de `Tutorial`.
 
 Utilisez la console [](../../help/sites-administering/tags.md#tagging-console) Balisage pour créer les balises suivantes :
 
@@ -103,13 +103,13 @@ Exemple de package de balises créé pour les didacticiels de prise en main des 
 
 ## Créer des membres et des groupes d&#39;activation {#create-enablement-members-and-groups}
 
-Pour un site de la communauté d’activation, les visiteurs du site ne doivent pas pouvoir s’ [auto-inscrire ni utiliser la connexion](sites-console.md#user-management)sociale.
+Pour un site de la communauté d&#39;activation, les du site ne doivent pas pouvoir s&#39; [auto-inscrire ni utiliser la connexion](sites-console.md#user-management)sociale.
 
-Au lieu de cela, avec le service [tunnel](#enable-the-tunnel-service) activé, la console [](members.md) Membres est utilisée pour enregistrer de nouveaux membres dans l’environnement de publication.
+Au lieu de cela, avec le service [tunnel](#enable-the-tunnel-service) activé, la console [](members.md) Membres est utilisée pour enregistrer de nouveaux membres dans le  de publication .
 
-Dans ce didacticiel, trois membres sont créés dans l’environnement de publication. Deux membres deviennent membres d’un groupe d’utilisateurs affecté à un parcours d’apprentissage, tandis que le troisième membre devient un contact de ressource d’activation.
+Dans ce didacticiel, trois membres sont créés dans le  de publication . Deux membres deviennent membres d’un groupe d’utilisateurs affecté à un parcours d’apprentissage, tandis que le troisième membre devient un contact de ressource d’activation.
 
-Un quatrième utilisateur est créé dans l’environnement d’auteur et a reçu les rôles Administrateur des communautés et Gestionnaire d’activation des communautés.
+Un quatrième utilisateur est créé dans l’ de l’auteur  et les rôles d’Administrateur des communautés et Gestionnaire d’activation de la communauté sont attribués.
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et a reç
 >
 >S’ils ont été créés par la suite, ils peuvent être ajoutés en tant que membres du groupe *de membres du* didacticiel d’activation pendant la création du membre.
 >
->A la place, plus tard, ils seront [affectés au groupe](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de membres.
+>Au lieu de cela, plus tard, ils seront [affectés au groupe](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de membres.
 
 ### Riley Taylor - Enrollee {#riley-taylor-enrollee}
 
@@ -143,7 +143,7 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et a reç
 
 ### Quinn Harper - Ressource d&#39;activation Contact et modérateur {#quinn-harper-enablement-resource-contact-and-moderator}
 
-[Créez un membre](members.md#create-new-member) qui sera ajouté au groupe de membres du site communautaire une fois le site créé. Cet abonnement permettra au membre d&#39;être affecté comme contact [de](resources.md#settings) ressource d&#39;activation lorsqu&#39;une ressource d&#39;activation est créée pour le site.
+[Créez un membre](members.md#create-new-member) qui sera ajouté au groupe de membres du site communautaire une fois le site créé. Cet abonnement permettra au membre d&#39;être affecté en tant que contact [de](resources.md#settings) ressource d&#39;activation lorsqu&#39;une ressource d&#39;activation est créée pour le site.
 
 * **ID**: quinn
 * **Courriel**: quinn.harper@mailinator.com
@@ -152,17 +152,17 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et a reç
 * **Prénom**: Quinn
 * **Nom**: Harper
 
-### Ajouter un groupe d&#39;utilisateurs - Classe de ski de communauté {#add-a-user-group-community-ski-class}
+### Ajouter un groupe d&#39;utilisateurs - Classe de ski de la communauté {#add-a-user-group-community-ski-class}
 
-[Ajoutez un nouveau groupe](members.md#create-new-group) nommé Community Ski Class.
+[Ajouter un nouveau groupe](members.md#create-new-group) nommé Community Ski Class.
 
 * **ID**: community-ski-class
 * **Nom**: Classe de ski communautaire
 * **Description**: un groupe d&#39;exemples pour l&#39;affectation de ressources d&#39;activation
-* **Ajouter des membres au groupe** &quot;ajouter&quot; :
+* **Ajouter Membres au groupe** &quot;ajouter&quot; :
 
-   *  riley
-   *  sidney
+   * riley
+   * sidney
 
 * Sélectionnez **[!UICONTROL Enregistrer]**
 
@@ -191,7 +191,7 @@ Créez un utilisateur sur *l’auteur*, auquel est affecté le rôle Administrat
    * Par exemple, nom d’utilisateur &quot;admin&quot; / mot de passe &quot;admin&quot;
 
 * Dans la console principale, accédez à **[!UICONTROL Outils, Opérations > Sécurité > Utilisateurs.]**
-* Dans le menu **[!UICONTROL Modifier]** , sélectionnez **[!UICONTROL Ajouter un utilisateur.]**
+* Dans le menu **[!UICONTROL Modifier]** , sélectionnez **[!UICONTROL Ajouter Utilisateur]**
 
 * Dans la `Create New User` boîte de dialogue, saisissez
 
