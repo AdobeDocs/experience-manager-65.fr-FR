@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
+source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
 
 ---
 
@@ -41,6 +41,12 @@ Voici quelques-unes des principales fonctionnalités et améliorations introduit
 * [Améliorations](new-features-latest-service-pack.md#accessibility-enhancements) de l’accessibilité dans les ressources d’Experience Manager.
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.10.8.
+
+* Vous pouvez désormais synchroniser des sous-arborescences de contenu sélectif avec le mode *Contenu* dynamique - Scene7 au lieu de toutes les sous-arborescences disponibles dans `content/dam`.
+
+* L’intégration du modèle de données de formulaire avec le service Web SOAP prend désormais en charge les groupes de choix ou les attributs sur les éléments.
+
+* L’entrée ou la sortie SOAP et les structures de données complexes prennent désormais en charge la substitution de groupe dynamique.
 
 Pour une  complète des fonctionnalités, des points saillants clés et des fonctionnalités clés introduites dans les Service Packs AEM 6.5 précédents, reportez-vous à la page [Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
 
