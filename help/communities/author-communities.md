@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aaa067e0718d15cedde46296c1be69d422359097
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Composants d’AEM Communities{#communities-components}
+# Composants d’AEM Communities {#communities-components}
 
 ## Présentation {#introduction}
 
@@ -65,13 +65,13 @@ See also the interactive [Community Components guide](/help/communities/componen
 | Message | [Message](/help/communities/configure-messaging.md) |
 | Liste des messages | [Message](/help/communities/configure-messaging.md) |
 | Q&amp;R | [Questions et réponses](/help/communities/working-with-qna.md) |
-| Recherche rapide | [Rechercher](/help/communities/search.md) |
+| Recherche rapide | [Recherche](/help/communities/search.md) |
 | Évaluation | [Évaluation](/help/communities/rating.md) |
 | Questions connexes | [Questions et réponses](/help/communities/working-with-qna.md) |
 | Révisions | [Révisions](/help/communities/reviews.md) |
 | Résumé des révisions (affichage) | [Révisions](/help/communities/reviews.md) |
-| Rechercher | [Rechercher](/help/communities/search.md) |
-| Résultat de la recherche | [Rechercher](/help/communities/search.md) |
+| Recherche | [Recherche](/help/communities/search.md) |
+| Résultat de la recherche | [Recherche](/help/communities/search.md) |
 | Nuage de balises sociales | [Nuage de balises sociales](/help/communities/tagcloud.md) |
 | Vote | [Vote](/help/communities/voting.md) |
 
