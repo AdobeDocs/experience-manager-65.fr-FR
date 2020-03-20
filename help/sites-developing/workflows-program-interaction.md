@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
 
 ---
 
@@ -37,30 +37,12 @@ La classe fournit également plusieurs méthodes d’intervention dans les cycle
 
 Le tableau suivant fournit des liens vers la documentation de référence de plusieurs objets Java clés à utiliser pour interagir avec des workflows par programmation. Les exemples suivants montrent comment obtenir et utiliser les objets de classe dans le code.
 
-<table>
- <tbody>
-  <tr>
-   <th>Fonctionnalités<a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th>
-   <th>Objets<br /> </th>
-  </tr>
-  <tr>
-   <td>Accès à un workflow<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Exécution et interrogation d’une instance de workflow<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Gestion d’un modèle de workflow<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Informations relatives à un noeud qui se trouve dans le processus (ou non) </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td>
-  </tr>
- </tbody>
-</table>
+| Fonctionnalités | Objets |
+|---|---|
+| Accès à un workflow | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Exécution et interrogation d’une instance de workflow | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Gestion d’un modèle de workflow | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Informations relatives à un noeud qui se trouve dans le processus (ou non) | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Obtention d’objets de workflow dans des scripts ECMA {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -74,11 +56,11 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 ## Utilisation de l’API REST Workflow {#using-the-workflow-rest-api}
 
-La console de flux de travail utilise fortement l&#39;API REST ; cette page décrit donc l’API REST pour les processus.
+La console de flux de travail utilise abondamment l&#39;API REST ; cette page décrit donc l’API REST pour les  de.
 
 >[!NOTE]
 >
->L’outil de ligne de commande curl vous permet d’utiliser l’API REST de Workflow pour accéder aux objets de workflow et gérer les cycles de vie des instances. Les exemples figurant sur cette page illustrent l’utilisation de l’API REST au moyen de l’outil de ligne de commande curl.
+>L’outil de ligne de commande curl vous permet d’utiliser l’API REST de flux de travail pour accéder aux objets de flux de travail et gérer les cycles de vie des instances. Les exemples figurant sur cette page illustrent l’utilisation de l’API REST au moyen de l’outil de ligne de commande curl.
 
 Les actions suivantes sont prises en charge par l’API REST :
 
@@ -111,11 +93,11 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Répertorie les instances de processus disponibles.</td>
+   <td> les instances de flux de travail disponibles.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crée une nouvelle instance de processus. <br /> Les paramètres sont les suivants : - <code>model</code>: l'ID (URI) du modèle<br /> de flux de travail correspondant - <code>payloadType</code>: contenant le type de la charge utile (par exemple <code>JCR_PATH</code> ou l’URL).<br /> La charge utile est envoyée en tant que paramètre <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
+   <td><p>Crée une nouvelle instance de processus. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> La charge utile est envoyée en tant que paramètre <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -128,7 +110,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
 
 | Méthode de requête HTTP | Actions |
 |---|---|
-| `GET` | Répertorie les instances de processus disponibles et leurs états ( `RUNNING`, `SUSPENDED`, `ABORTED` ou `COMPLETED`) |
+| `GET` |  les instances de flux de travail disponibles et leurs états ( `RUNNING`, `SUSPENDED`, `ABORTED` ou `COMPLETED`) |
 
 #### Gestion d’une instance de workflow en fonction de son ID {#managing-a-workflow-instance-by-its-id}
 
@@ -167,7 +149,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Répertorie les modèles de processus disponibles.</td>
+   <td> les modèles de flux de travail disponibles.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
@@ -371,7 +353,7 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Répertorie les tâches qui se trouvent dans la boîte de réception de l’utilisateur, qui est identifié par les en-têtes d’authentification HTTP.</td>
+   <td>les tâches qui se trouvent dans la boîte de réception de l’utilisateur, qui est identifié par les en-têtes d’authentification HTTP.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
