@@ -3,7 +3,7 @@ title: Gestion des droits numériques dans AEM Assets
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -118,9 +118,12 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. In the Advanced tab, and set an expiration date for the asset from the **[!UICONTROL Expires]** field under.
+1. In the Advanced tab, set an expiration date for the asset from the **[!UICONTROL Expires]** field.
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+   ![définir la date et l’heure d’expiration des ressources dans le champ Expire](assets/asset-properties-advanced-tab.png)
+
+
+   *Figure : Onglet Avancé dans les propriétés des ressources pour définir l’expiration des ressources*
 
 1. Click **[!UICONTROL Save]** and then click **[!UICONTROL Close]** to display the Asset console.
 1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. In the list view, the status of the asset is displayed as **[!UICONTROL Expired]**.
