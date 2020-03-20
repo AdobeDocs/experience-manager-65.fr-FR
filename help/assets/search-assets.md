@@ -4,7 +4,7 @@ description: Découvrez comment rechercher les ressources souhaitées dans AEM �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -30,9 +30,7 @@ AEM prend en charge les cas d’utilisation suivants dont cet article décrit l�
 
 Recherchez des ressources à l’aide du champ Omnisearch en haut de l’interface Web d’AEM. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in AEM, click search icon in top bar, enter search keyword, and press return. Vous pouvez également utiliser le raccourci mot-clé / (barre oblique) pour ouvrir le champ Omnisearch. Emplacement : l’option Ressources est présélectionnée pour limiter les recherches aux ressources DAM. AEM fournit des suggestions lorsque votre  taper un mot-clé de recherche.
 
-Utilisez le panneau **[!UICONTROL du]** pour restreindre votre recherche en filtrant les résultats de recherche en fonction des différentes options (prédicats), telles que le type de fichier, la taille du fichier, la date de dernière modification, l’état du fichier, les données d’informations et les licences Adobe Stock. Vos administrateurs peuvent personnaliser le panneau  du et ajouter ou supprimer des prédicats de recherche à l’aide des facettes de recherche.
-
-Notez que le filtre Type [!UICONTROL de] fichier du panneau [!UICONTROL de] comporte des cases à cocher à états mixtes, ce qui signifie que, sauf si vous sélectionnez tous les prédicats imbriqués (ou formats), les cases à cocher du premier niveau ne sont pas sélectionnées et sont barrées à la place.
+Utilisez le panneau **[!UICONTROL du]** pour restreindre votre recherche en filtrant les résultats de recherche en fonction des différentes options (prédicats), telles que le type de fichier, la taille du fichier, la date de dernière modification, l’état du fichier, les données d’informations et les licences Adobe Stock. Vos administrateurs peuvent personnaliser le panneau  du et ajouter ou supprimer des prédicats de recherche à l’aide des facettes de recherche. Le filtre Type [!UICONTROL de] fichier du panneau [!UICONTROL de] comporte des cases à cocher à états mixtes. Par conséquent, à moins que vous ne sélectionniez tous les prédicats imbriqués (ou formats), les cases à cocher de premier niveau ne sont pas sélectionnées et sont enfoncées à la place.
 
 La fonctionnalité de recherche AEM prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/managing-collections-touch-ui.md).
 
