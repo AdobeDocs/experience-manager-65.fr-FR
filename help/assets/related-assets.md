@@ -3,7 +3,7 @@ title: Ressources connexes
 description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,14 +14,16 @@ Les ressources d’Adobe Experience Manager (AEM) vous permettent de lier manuel
 
 Grâce à cette fonctionnalité, vous pouvez partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et rendre le fichier INDD haute résolution disponible uniquement sur demande.
 
->[!NOTE] Seuls les utilisateurs disposant d’autorisations de modification peuvent établir des relations avec des fichiers et les dissocier.
+>[!NOTE] Seuls les utilisateurs disposant d’autorisations de modification sur les ressources peuvent établir une relation et annuler la relation entre les ressources.
 >
 
 ## Relate assets {#relating-assets}
 
-1. From the AEM interface, open the [!UICONTROL Properties] page for an asset that you want to relate.
+1. From the AEM interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![ouvrir la page Propriétés d’un fichier pour associer le fichier](assets/asset-properties-relate-assets.png)
+
+   *Figure : Page des propriétés des ressources pour associer des ressources*
 
    Vous pouvez également sélectionner la ressource en mode Liste.
 
@@ -67,11 +69,14 @@ La création de relations source/dérivés entre des ressources à l’aide de l
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Si le fichier source est lié à un autre fichier, AEM Assets récupère l’élément référencé et l’inclut pour traduction.
+Si le fichier source est lié à un autre fichier, Experience Manager Assets récupère le fichier référencé et l’inclut pour traduction.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![la page Propriétés du fichier affiche le fichier source du fichier associé à inclure pour la traduction.](assets/asset-properties-source-asset.png)
+
+*Figure : Fichier source des ressources connexes à inclure pour la traduction*
 
 1. Traduisez les ressources du dossier source dans une langue cible en suivant les étapes de la section [Créer un projet de traduction](translation-projects.md#create-a-new-translation-project). Par exemple, dans ce cas, traduisez vos ressources en français.
+
 1. From the [!UICONTROL Projects] page, open the translation folder.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
