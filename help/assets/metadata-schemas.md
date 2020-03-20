@@ -3,16 +3,16 @@ title: Schémas de métadonnées
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
 
 # Schémas de métadonnées {#metadata-schemas}
 
-Dans Adobe Experience Manager (AEM) Assets, un schéma de métadonnées définit la disposition de la page de propriétés et les propriétés de métadonnées affichées pour les ressources qui utilisent ce schéma particulier. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc.
+Dans les ressources Adobe Experience Manager (AEM), un de métadonnées définit la disposition de la page de propriétés et les propriétés de métadonnées affichées pour les ressources qui utilisent le spécifique. Les propriétés de métadonnées incluent le titre, la description, les types MIME, les balises, etc.
 
-Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pour modifier des schémas existants ou ajouter des schémas de métadonnées personnalisés.
+Vous pouvez utiliser le de métadonnées  l’éditeur de formulaires pour modifier les  de existants ou ajouter desmétadonnées personnalisées.
 
 1. Pour afficher la page des propriétés d’une ressource, cliquez ou appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** dans les actions rapides sur la mosaïque de la ressource en mode Carte.
 
@@ -24,7 +24,10 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
 1. Modifiez différentes propriétés de métadonnées sous les différents onglets. Toutefois, vous ne pouvez pas modifier le type de ressource sur la page des propriétés.
 
-   ![chlimage_1-36](assets/chlimage_1-172.png)
+   ![vous ne pouvez pas modifier le type de fichier dans l’onglet de base Propriétés du fichier](assets/asset-properties-basic-tab.png)
+
+   *Figure : Onglet de base sur les propriétés des ressources*
+
 
    Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Si vous modifiez le schéma de métadonnées d’un certain type MIME, la disposition de la page des propriétés des ressources de ce type MIME et tous les sous-types de ressources sont modifiés. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. Si vous modifiez le schéma default, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
 
@@ -37,17 +40,17 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
       Les formulaires enfants suivants héritent des propriétés du formulaire par défaut :
 
-      1. **image**: Formulaire de schéma pour les fichiers de type MIME &quot;image&quot;, par exemple `image/jpeg`, `image/png`, etc.
+      1. **image**: Formulaire de  pour les fichiers de type MIME &quot;image&quot;, par exemple `image/jpeg`, `image/png`, etc.
 
          Le formulaire « image » possède les modèles de formulaire enfant suivants :
-         * **jpeg**: Formulaire de schéma pour les ressources avec un sous-type `jpeg`.
-         * **tiff**: Formulaire de schéma pour les ressources avec un sous-type `tiff`.
-      1. **application**: Formulaire de schéma pour les ressources de type MIME `application`, par exemple `application/pdf`, `application/zip`, etc.
-         * **pdf**: Formulaire de schéma pour les ressources avec un sous-type `pdf`.
-      1. **vidéo**: Formulaire de schéma pour les fichiers de type MIME `video`, tels `video/avi`, `video/mp4`, etc.
-   * **collection**: Formulaire de schéma pour les collections.
-   * **** contentfragment : Formulaire de schéma pour les fragments de contenu.
-   * **formulaires**: Ce formulaire de schéma concerne [Adobe Experience Manager Forms](/help/forms/home.md).
+         * **jpeg**: Formulaire  pour les ressources avec sous-type `jpeg`.
+         * **tiff**: Formulaire  pour les ressources avec sous-type `tiff`.
+      1. **application**: Formulaire de  pour les ressources de type MIME `application`, par exemple `application/pdf`, `application/zip`, etc.
+         * **pdf**: Formulaire  pour les ressources avec sous-type `pdf`.
+      1. **vidéo**: Formulaire de  pour les ressources de type MIME `video`, par exemple `video/avi`, `video/mp4`, etc.
+   * **collection**: Formulaire  pour les collections.
+   * **contentfragment :** Formulaire  pour les fragments de contenu.
+   * **formulaires**: Ce formulaire  concerne [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
@@ -82,7 +85,10 @@ Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulair
 
 1. Dans la page **[!UICONTROL Éditeur de schéma de métadonnées]**, personnalisez la page de propriétés de la ressource en faisant glisser un ou plusieurs composants de la liste des types de composants dans l’onglet **[!UICONTROL Créer le formulaire]** vers l’onglet **[!UICONTROL De base]**.
 
-   ![chlimage_1-40](assets/chlimage_1-176.png)
+   ![ajouter des composants du formulaire de création à l’éditeur de  de métadonnées pour personnaliser les propriétés du fichier](assets/metadata-schema-editor.png)
+
+
+   *Figure : Onglet de base de l’éditeur de de métadonnées*
 
 1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **Paramètres**.
 
@@ -129,9 +135,9 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 **Obligatoire** : utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire dans la page Propriétés.
 **Désactiver la modification** : Utilisez cette propriété pour rendre une propriété de métadonnées non modifiable dans la page Propriétés.
 **Afficher le champ vide en lecture seule** : utilisez cette propriété pour afficher une propriété de métadonnées sur la page Propriétés même si elle ne possède pas de valeur. Par défaut, lorsqu’une propriété de métadonnées ne possède pas de valeur, elle n’est pas répertoriée sur la page Propriétés.
-**Afficher la liste triée**: Utilisez cette propriété pour afficher une liste ordonnée de choix **de choix**: Utilisez cette propriété pour spécifier des choix dans une liste **Description** : Utilisez cette propriété pour ajouter une brève description du composant de métadonnées.
+**Afficher les  triées**: Utilisez cette propriété pour afficher un  ordonné de choix **de choix**: Utilisez cette propriété pour spécifier les choix dans un **Description** : Utilisez cette propriété pour ajouter une brève description du composant de métadonnées.
 **Classe** : classe d’objets à laquelle la propriété est associée.
-**Supprimer**: Cliquez sur cette icône pour supprimer un composant du formulaire de schéma.
+**Supprimer**: Cliquez sur cette icône pour supprimer un composant du formulaire .
 
 ![chlimage_1-41](assets/chlimage_1-177.png)
 
@@ -143,13 +149,15 @@ Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez reche
 
 ![chlimage_1-42](assets/chlimage_1-178.png)
 
-Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant s’affiche sous la forme d’une liste dans la page de propriétés des ressources auxquelles le schéma spécifique est appliqué. La liste comprend tous les autres onglets, à l’exception de l’onglet auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
+Si vous ajoutez le composant Métadonnées contextuelles à un onglet de n’importe quel formulaire de , le composant s’affiche sous la forme d’un dans la page de propriétés des ressources auxquelles le  spécifique est appliqué. Le comprend tous les autres onglets, à l’exception de l’onglet auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
 
 ![chlimage_1-43](assets/chlimage_1-179.png)
 
-Pour inclure un onglet sur la page Propriétés en plus de l’onglet auquel le composant Métadonnées contextuelles est appliqué, sélectionnez-le dans la liste. L’onglet est ajouté à la page Propriétés.
+Pour afficher un onglet de la page de propriétés en plus de l’onglet dans lequel le composant Métadonnées contextuelles est appliqué, sélectionnez l’onglet dans le  du. L’onglet est ajouté à la page Propriétés.
 
-![chlimage_1-44](assets/chlimage_1-180.png)
+![sélectionnez un onglet dans le de métadonnées contextuelles à afficher sur la page de propriétés.](assets/contextual-metadata-asset-properties.png)
+
+*Figure : Métadonnées contextuelles dans la page des propriétés des ressources*
 
 ### Specify properties in JSON file {#specify-properties-in-json-file}
 
@@ -177,7 +185,7 @@ Pour supprimer un formulaire, sélectionnez-le et cliquez sur l’icône Supprim
 <!--![chlimage_1-47](assets/chlimage_1-177.png) -->
 >[!NOTE]
 >
->Une fois que vous avez supprimé les modifications personnalisées apportées à un formulaire par défaut, l’icône en forme de verrou s’affiche à nouveau devant lui dans l’interface du schéma de métadonnées pour indiquer que le formulaire est revenu à son état par défaut.
+>Une fois que vous avez supprimé les modifications personnalisées apportées à un formulaire par défaut, l’icône en forme de verrou s’affiche à nouveau devant lui dans l’interface de  de métadonnées pour indiquer que le formulaire est revenu à son état par défaut.
 
 >[!NOTE]
 >
@@ -246,7 +254,9 @@ Si le dossier contient un sous-dossier, les ressources du sous-dossier héritent
 
 1. In the **[!UICONTROL Metadata Schema Editor]** page, add a text field to the schema form. For example add a field with the label **[!UICONTROL Category]**.
 
-   ![chlimage_1-50](assets/chlimage_1-186.png)
+   ![ajouter un champ de texte au de métadonnées  l’éditeur de formulaire](assets/text-field-metadata-schema-editor.png)
+
+   *Figure : Champ de texte ajouté au de métadonnées  éditeur de formulaire*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées.]**
 1. Cliquez/appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
@@ -276,7 +286,9 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
 1. Modifiez le formulaire personnalisé. Ajoutez un champ obligatoire. For example, add a **[!UICONTROL Category]** field and make the field mandatory.
 
-   ![chlimage_1-54](assets/chlimage_1-190.png)
+   ![ajouter un champ au formulaire de métadonnées et sélectionner Obligatoire dans l’onglet Règles pour le rendre obligatoire](assets/mandatory-field-metadata-schema-editor.png)
+
+   *Figure : Champ obligatoire dans le de métadonnées  l’éditeur de formulaire*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**. Sélectionnez le formulaire et cliquez/appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 
