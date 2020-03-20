@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
+source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
 
 ---
 
@@ -17,6 +17,8 @@ La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2
 
 ## AEM Sites {#aem-sites}
 
+AEM 6.5.4.0 comprend des améliorations du système de style. Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du composant.
+
 ### Amélioration des performances dans divers domaines {#performance-improvements}
 
 * Réduction du temps de chargement et d’initialisation de ContextHub dans un site (`contexthub.kernel.js`). Le chargement des pages s’en trouve accéléré lors d’une visite sur le site.
@@ -26,8 +28,6 @@ La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2
 * Réduction du temps de chargement des entrées sur une page Sites avec plus de 200 copies dynamiques dans l’aperçu **[!UICONTROL de la]** Live Copy.
 
 * Amélioration de la gestion des URL incomplètes ou incorrectes. De telles URL peuvent ralentir l’éditeur de modèles.
-
-En outre, AEM 6.5.4.0 inclut des améliorations du système de style. Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du composant.
 
 ## AEM Assets {#aem-assets}
 
@@ -116,16 +116,19 @@ Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et u
 
 Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API de traitement par lots combine les données avec un modèle pour produire une communication interactive. L’API est utile pour la production de masse de communications interactives. Par exemple, factures de téléphone, relevés de carte de crédit pour plusieurs clients. Voir [Générer plusieurs communications interactives à l’aide de l’API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)par lot.
 
-
-
 ## Principales versions depuis AEM 6.5 SP3
 
 Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalités suivantes, qui ne font pas partie du livrable principal d’AEM :
 
-* AEM Cloud Manager 2020.1.0 et 2020.2.0Les mises à jour de la version améliorent l’état du pipeline et la capacité de télécharger des journaux pour différentes étapes. Pour en savoir plus, voir:
+* AEM Cloud Manager 2020.1.0 et 2020.2.0
+
+   Les mises à jour de la version améliorent l’état du pipeline et la possibilité de télécharger des journaux pour différentes étapes. Pour en savoir plus, voir:
+
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * Mises à jour de l’interface de ligne de commande d’AEM Cloud Manager
 
