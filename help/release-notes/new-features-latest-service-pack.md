@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
+source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
 
 ---
 
@@ -16,6 +16,8 @@ Adobe Experience Manager (AEM) 6.5 offre des fonctionnalités et des améliorati
 La dernière version d’AEM Service Pack 4 (6.5.4.0) est publiée le 5 **mars 2020**. Cet article met en évidence les fonctionnalités que le dernier Service Pack  le  pour rendre votre voyage AEM plus enrichissant.
 
 ## AEM Sites {#aem-sites}
+
+### Améliorations du système de style
 
 AEM 6.5.4.0 comprend des améliorations du système de style. Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du composant.
 
@@ -122,7 +124,7 @@ Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalit�
 
 * AEM Cloud Manager 2020.1.0 et 2020.2.0
 
-   Les mises à jour de la version améliorent l’état du pipeline et la possibilité de télécharger des journaux pour différentes étapes. Pour en savoir plus, voir:
+   Améliorer l&#39;état du pipeline et la capacité de télécharger les journaux pour différentes étapes. Voir :
 
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
@@ -132,7 +134,7 @@ Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalit�
 
 * Mises à jour de l’interface de ligne de commande d’AEM Cloud Manager
 
-   Les mises à jour de la version comprennent l’automatisation du Cloud Manager à l’aide de l’outil de ligne de commande. Voir [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+   Automatisez le Cloud Manager à l’aide de l’outil de ligne de commande. Voir [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * Sites AEM : Archétype de projet 23
 
@@ -148,7 +150,7 @@ Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalit�
 
 * Ressources AEM : Application de bureau 2.0.1.1
 
-   Pour plus d’informations, voir [Obtention d’un accès de bureau aux ressources](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+   Voir [Obtention d’un accès de bureau aux ressources](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
 * AEM Screens : Feature Pack 202001
 
