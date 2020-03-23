@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: Liste des formats de fichiers pris en charge par AEM Assets et fonctions prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
+source-git-commit: 8431275c0e4de408e1ebafafafa94dcfae3c1127
 
 ---
 
@@ -37,10 +37,12 @@ Les formats d’image pixellisée pris en charge pour les fonctionnalités de ge
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**¹** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Les formats d’image pixellisée pris en charge pour les fonctionnalités de média dynamique sont les suivants :
 
@@ -51,11 +53,11 @@ Les formats d’image pixellisée pris en charge pour les fonctionnalités de m�
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-&amp;ast; L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+**¹** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Outre les informations ci-dessus, tenez compte des points suivants :
 
@@ -192,13 +194,14 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 
 | Formats | Stockage | Création de versions | Processus | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **²** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (lorsque configuré avec son propre domaine de diffusion) |  |  |  |  |  | ✓ |
 
-**&amp;ast;** Les autres formats sont pris en charge dans la gestion des actifs numériques pour  la , le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées.
+**²** Les autres formats sont pris en charge dans la gestion des actifs numériques pour  la , le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées.
 
 ## Types MIME pris en charge {#supported-mime-types}
 
