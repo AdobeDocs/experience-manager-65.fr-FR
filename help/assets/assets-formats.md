@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: Liste des formats de fichiers pris en charge par AEM Assets et fonctions prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8431275c0e4de408e1ebafafafa94dcfae3c1127
+source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
 
 ---
 
@@ -190,18 +190,15 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 ## Autres formats pris en charge {#other-supported-formats}
 
-Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques standard, à l’exception des  de médias dynamiques, est prise en charge pour tous les fichiers.
+Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques habituelle, telle que  la gestion des , des versions, des listes de contrôle d’accès, des flux de travaux, de la publication et des métadonnées, à l’exception des de médias dynamiques, est prise en charge pour tous les fichiers.
 
 | Formats | Stockage | Création de versions | Processus | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **²** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (lorsque configuré avec son propre domaine de diffusion) |  |  |  |  |  | ✓ |
-
-**²** Les autres formats sont pris en charge dans la gestion des actifs numériques pour  la , le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées.
 
 ## Types MIME pris en charge {#supported-mime-types}
 
