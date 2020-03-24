@@ -1,6 +1,6 @@
 ---
 title: Configuration Analytics pour les fonctionnalités des communautés
-seo-title: Configuration d’Analytics pour les fonctionnalités des communautés
+seo-title: Configuration Analytics pour les fonctionnalités des communautés
 description: Configuration d’Analytics pour les communautés
 seo-description: Configuration d’Analytics pour les communautés
 uuid: 5a083645-9de6-4ecd-a94e-a40143f92edf
@@ -16,7 +16,7 @@ source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 ---
 
 
-# Configuration d’Analytics pour les fonctionnalités des communautés {#analytics-configuration-for-communities-features}
+# Configuration Analytics pour les fonctionnalités des communautés {#analytics-configuration-for-communities-features}
 
 ## Présentation {#overview}
 
