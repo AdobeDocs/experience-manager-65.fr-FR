@@ -279,7 +279,7 @@ Pour activer le service de tunnel :
 
 * On **author**
 * Connexion avec droits d’administrateur
-* Si l’éditeur n’est pas localhost:4503 ou si l’utilisateur de transport ne l’est pas `admin`, [configurez l’agent de réplication](#replication-agents-on-author)
+* Si l’éditeur n’est pas localhost:4503 ou si l’utilisateur de transport ne l’est pas `admin`, [configurez l’agent de réplication.](#replication-agents-on-author)
 
 * Access the [Web Console](/help/sites-deploying/configuring-osgi.md)
 
