@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 9807bd4366315ad470128911cb67a31e7e9fd288
+source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
 
 ---
 
@@ -44,7 +44,7 @@ Améliorations de la dernière version de Smart Imaging :
 * L’imagerie intelligente peut être désactivée à l’aide du paramètre d’URL &quot;bfc&quot;.
 * TTL (Time To Live) indépendant. Auparavant, un TTL minimum de 12 heures était obligatoire pour que Smart Imaging fonctionne.
 * Auparavant, les images d’origine et dérivées étaient mises en cache et il s’agissait d’un processus en 2 étapes pour invalider le cache. Dans la dernière version de Smart Imaging, seuls les dérivés sont mis en cache, ce qui permet un processus d’invalidation du cache en une seule étape.
-* Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles (par exemple, &quot;Timing Allow &quot;, &quot;X-Robot&quot; comme suggéré dans [Ajout d’une valeur d’en-tête personnalisé aux réponses à l’image|Dynamic Media Classic](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) bénéficieront de la dernière version de l’imagerie dynamique, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente de l’imagerie dynamique.
+* Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles (par exemple, &quot;Timing Allow &quot;, &quot;X-Robot&quot; comme suggéré dans [Ajout d’une valeur d’en-tête personnalisé aux réponses à l’image|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) bénéficieront de la dernière version de l’imagerie dynamique, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente de l’imagerie dynamique.
 
 ## Are there any licensing costs associated with smart imaging? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
