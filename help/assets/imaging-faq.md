@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
+source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
 
 ---
 
@@ -88,7 +88,7 @@ En outre, si vos paramètres d’image prédéfinis sont utilisés pour renvoyer
 
 ## Will I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-L’imagerie dynamique fonctionne de manière transparente avec vos URL d’image et paramètres d’image prédéfinis existants. En outre, Smart Imaging n’exige pas que vous ajoutiez du code sur votre site Web pour détecter le navigateur d’un utilisateur. Tout ceci est géré automatiquement.
+Non. L’imagerie dynamique fonctionne de manière transparente avec vos URL d’image et paramètres d’image prédéfinis existants. En outre, Smart Imaging n’exige pas que vous ajoutiez du code sur votre site Web pour détecter le navigateur d’un utilisateur. Tout ceci est géré automatiquement.
 
 Comme nous l’avons déjà mentionné, Smart Imaging ne prend en charge que les formats d’image JPEG et PNG. Pour les autres formats, vous devez ajouter le `bfc=off` modificateur à l’URL, comme décrit précédemment.
 
@@ -115,11 +115,11 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle n’est pas activée automatiquement.
 
-1. Envoyez une demande de support technique (adresse électronique : s7support@adobe.com).
+1. Initiate a Technical Support request (email: `s7support@adobe.com`).
 1. Indiquez les informations suivantes dans votre demande de support :
 
    1. Nom, adresse électronique et numéro de téléphone du contact principal.
-   1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire images.company.com ou mycompany.scene7.com).
+   1. All domains to be enabled for smart imaging (that is, `images.company.com` or `mycompany.scene7.com`).
 
       Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
 
