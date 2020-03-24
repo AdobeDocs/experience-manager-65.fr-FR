@@ -71,7 +71,7 @@ La valeur par défaut est définie sur le verbe AJOUTER pour les composants QnA 
 
    La plage des scores avancés est définie par cette valeur (score maximum possible) et par 0 (score minimum possible).
 
-   La valeur par défaut est 100, de sorte que la plage de notation soit comprise entre 0 et 100.
+   La valeur par défaut est 100, de sorte que la plage de score soit comprise entre 0 et 100.
 
 * **Intervalle de décomposition d&#39;entité**
 
