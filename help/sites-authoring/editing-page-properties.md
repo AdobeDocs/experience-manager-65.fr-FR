@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
+source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
 ---
 
@@ -122,7 +122,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    >[!NOTE]
    >
-   >L’alias définit la `sling:alias` propriété pour définir un nom d’alias pour la ressource (cela n’affecte que la ressource, et non le chemin).
+   >L’alias définit la `sling:alias` propriété pour définir un nom d’alias pour la ressource (cela n’affecte que la ressource et non le chemin d’accès).
    >
    >Par exemple : si vous définissez un alias de `latin-lang` pour le noeud `/content/we-retail/spanish` de noeud, cette page est accessible via `/content/we-retail/latin-language`
    >
@@ -199,7 +199,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation  {#personalization}
+### Personnalisation   {#personalization}
 
 * **Configurations ContextHub**
 
@@ -208,6 +208,9 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 * **Configuration du ciblage**
 
    Sélectionnez [une marque pour spécifier la portée du ciblage](/help/sites-authoring/target-adobe-campaign.md).
+
+   >[!NOTE]
+   >Cette option nécessite que le compte utilisateur soit dans le `Target Adminstrators`groupe.
 
 ### Autorisations {#permissions}
 
@@ -259,9 +262,9 @@ Vous pouvez définir des propriétés de page :
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
 
-* À partir de l’éditeur de page :
+* Dans l’éditeur de page :
 
-   * Using **Page Information** (then **Open Properties**)
+   * À l’aide de l’option **Informations sur la page** (puis **Ouvrir les propriétés**)
 
 ### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
 
@@ -271,7 +274,7 @@ Cliquez ou appuyez sur **Propriétés** pour définir les propriétés de la pag
 
 1. Select the **Properties** option for the required page using either:
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * [mode de sélection](/help/sites-authoring/basic-handling.md#selectionmode)
    Les propriétés de la page affichées dans les onglets appropriés.
 
@@ -298,7 +301,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 
 ### À partir de la console Sites – Plusieurs pages {#from-the-sites-console-multiple-pages}
 
-Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utiliser l’option **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page ; on parle alors de modification en masse des propriétés de page.
+Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utiliser **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page. On parle alors de modification en masse des propriétés de la page.
 
 >[!NOTE]
 >
@@ -313,7 +316,7 @@ Vous pouvez sélectionner plusieurs pages en vue d’une modification en masse d
 
 ![epp-01](assets/epp-01.png)
 
-After selecting the pages and then clicking or tapping the **Properties option**, the bulk properties will be shown:
+Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’option **Propriétés**, les propriétés en bloc s’affichent :
 
 ![epp-02](assets/epp-02.png)
 
@@ -346,7 +349,7 @@ Une fois le mode de modification en masse activé, vous pouvez effectuer les op
       * Si le champ comporte plusieurs valeurs (Balises, par exemple), les valeurs ne sont visibles que lorsque *toutes* sont communes. Si seulement quelques-unes sont communes, elles sont visibles lors de la phase de modification.
    En l’absence de propriétés avec une valeur commune, un message s’affiche.
 
-* **Edition**
+* **Modifier**
 
    En cas de modification des propriétés de plusieurs pages :
 
