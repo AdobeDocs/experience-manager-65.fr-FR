@@ -139,7 +139,7 @@ Pour rechercher des images visuellement similaires à une image sélectionnée p
 
 ![Recherchez des images similaires à l’aide de l’option dans le de cartes](assets/search_find_similar.png)
 
-*Figure : Recherchez des images similaires à l’aide de l’option dans le de cartes*
+*Figure : Recherchez des images similaires à l’aide de l’option du de cartes*
 
 ### Images Adobe Stock {#adobestock}
 
