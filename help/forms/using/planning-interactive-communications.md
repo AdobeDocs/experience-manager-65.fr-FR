@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
@@ -40,8 +40,6 @@ Une communication interactive comprend les éléments suivants :
 ## Structure de la communication interactive {#anatomy-of-the-interactive-communication}
 
 Une fois que vous avez finalisé le contenu et les éléments utilisés pour créer votre communication interactive, vous pouvez créer une structure pour la communication interactive. Les informations de la structure doivent être répertoriées dans la section [Observations relatives à la planification](/help/forms/using/planning-interactive-communications.md#planning-considerations). En fonction de notre cas d’utilisation, voici un exemple de structure de facture mensuelle qu’un opérateur de télécommunications envoie à ses clients.
-
-Espace réservé pour la vidéo anatomique
 
 La structure comprend des données avec les modes de saisie suivants :
 
@@ -111,7 +109,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
   </tr>
   <tr>
    <td>Récapitulatif des frais</td>
-   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Condition sur le champ Frais de services à valeur ajoutée</p> </td>
+   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Condition sur le champ des frais de services à valeur ajoutée</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
      <li>Frais d’appel</li>
@@ -131,7 +129,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
    <td>Appels détaillés - Sortants</td>
    <td><p>Noms des colonnes :</p>
     <ul>
-     <li>Date</li>
+     <li>Date </li>
      <li>Heure</li>
      <li>Nombre</li>
      <li>Durée</li>
