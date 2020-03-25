@@ -1,9 +1,9 @@
 ---
 title: A propos des ressources AEM
-description: Découvrez ce qu’est la gestion des ressources numériques, ses cas d’utilisation et l’offre AEM Asset d’Adobe.
+description: Découvrez ce qu’est la gestion des ressources numériques, ses cas d’utilisation et l’offre d’actifs AEM d’Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
 
 ---
 
@@ -14,7 +14,7 @@ Assets est un outil de gestion des actifs numériques (DAM) entièrement intégr
 
 ## What is Digital Asset Management? {#what-is-digital-asset-management}
 
-Les ressources permettent le partage et la distribution des ressources numériques principales d’une organisation dans toute l’entreprise. Les utilisateurs d’une organisation peuvent stocker, gérer et accéder aux ressources numériques telles que les images, les graphiques, l’audio, la vidéo et les documents via une interface Web (ou un dossier CIFS ou WebDAV).
+Les ressources permettent le partage et la distribution des ressources numériques principales d’une organisation dans toute l’entreprise. Les utilisateurs d’une entreprise peuvent stocker, gérer et accéder aux ressources numériques telles que les images, les graphiques, l’audio, la vidéo et les  via une interface Web (ou un dossier CIFS ou WebDAV).
 
 Bien intégré à AEM, AEM Assets vous permet d’effectuer les opérations suivantes :
 
@@ -48,7 +48,7 @@ Lorsque vous décidez de placer une image dans AEM Assets ou d’utiliser le com
 
 ## What are digital assets? {#what-are-digital-assets}
 
-Un fichier est un document numérique, une image, une vidéo ou de l’audio (ou une partie de celui-ci) qui peut comporter plusieurs rendus et des sous-ressources (par exemple, des calques dans un fichier Photoshop, des diapositives dans un fichier PowerPoint, des pages dans un PDF, des fichiers dans un fichier ZIP).
+Un fichier est un numérique, une image, une vidéo ou de l’audio (ou une partie de celui-ci) qui peut comporter plusieurs rendus et des sous-ressources (par exemple, des calques dans un fichier Photoshop, des diapositives dans un fichier PowerPoint, des pages dans un PDF, des fichiers dans un fichier ZIP).
 
 Une ressource se compose principalement de données binaires + métadonnées + rendus + sous-ressources. Consultez le [Guide de performance DAM](/help/sites-deploying/assets-performance-sizing.md) pour plus d’informations.
 
@@ -72,15 +72,15 @@ Lorsque vous travaillez avec des ressources numériques dans AEM, vous devez con
 
 * **Rendus** Un rendu est la représentation binaire d’un fichier. Une ressource possède toujours une représentation principale, à savoir celle du fichier téléchargé. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir différentes tailles, différentes résolutions et un filigrane ou d’autres caractéristiques modifiées.
 
-* **Versions** Versioning crée un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. Voir Contrôle de version dans AEM Assets.
+* **Versions** Versioning crée un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **Sous-ressources** Les sous-ressources sont des ressources qui constituent une ressource, par exemple des calques dans un fichier Adobe Photoshop ou des pages dans un fichier PDF. Dans AEM Assets, vous pouvez gérer les sous-ressources comme les ressources.
 
 ### How to work with assets {#how-to-work-with-assets}
 
-Vous effectuez une action sur une ressource ou une collection. Les actions peuvent créer ou modifier des ressources, des collections et des rendus. La plupart des actions de base que vous effectuez sur les ressources (transfert, suppression, mise à jour, enregistrement des sous-ressources) déclenchent des processus préconfigurés. Ils sont automatiquement activés dans AEM Assets et sont décrits en détail dans les gestionnaires de médias AEM Assets.
+Vous effectuez une action sur une ressource ou une collection. Les actions peuvent créer ou modifier des ressources, des collections et des rendus. La plupart des actions de base que vous effectuez sur les ressources (téléchargement, suppression, mise à jour, enregistrement des sous-ressources) déclenchent des  préconfigurées. Ils sont automatiquement activés dans AEM Assets et sont décrits en détail dans les gestionnaires de médias AEM Assets.
 
-Tâches que vous pouvez effectuer avec ces processus préconfigurés :
+Le  que vous pouvez effectuer avec ces  de préconfigurés :
 
 * Enregistrer la ressource dans le référentiel ou la supprimer.
 * Extraire et enregistrer des métadonnées pour la ressource ; les différents éléments de métadonnées sont enregistrés au format XMP.
