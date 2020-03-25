@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7ae0055e09c3ae2ff2898ac4f6c537a825dc0cf0
+source-git-commit: 7345d629aa628c2e2e094a8194d9306d7c3d2d60
 
 ---
 
@@ -22,19 +22,19 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.10.6.
 
-* Experience Manager Assets prend désormais en charge les archives ZIP créées à l’aide de l’algorithme Deflate 64.
+* Adobe Experience Manager Assets prend désormais en charge les archives ZIP créées à l’aide de l’algorithme Deflate64.
 
-* Une nouvelle colonne pour la date de création, qui peut être triée, a été ajoutée en mode Liste DAM et dans les résultats de la recherche de ressources en mode Liste.
+* Une nouvelle colonne pour la date de création, qui peut être triée, a été ajoutée dans le de gestion des actifs numériques  les résultats de la recherche de ressources dans lede la gestion des actifs.
 
-* Le tri des ressources basé sur la colonne Nom a été activé en mode Liste.
+* Le tri des ressources en fonction de la colonne Nom a été activé dans  .
 
 * Les médias dynamiques prennent désormais en charge les fichiers vidéo de recadrage dynamique. Smart Crop est une fonction pilotée par l’apprentissage automatique qui recadre une vidéo tout en déplaçant le cadre pour suivre le point focal de la scène.
 
 * Dynamic Media prend en charge l’imagerie dynamique.
 
-* Possibilité de [définir des préférences d’absence du bureau](../forms/using/configure-out-of-office-settings.md) dans les processus AEM.
+* Possibilité de [définir les préférences d’absence du bureau](../forms/using/configure-out-of-office-settings.md) dans le AEM.
 
-* Possibilité de [partager des éléments](../forms/using/configure-shared-queues-osgi.md) de boîte de réception ou de boîte de réception avec d’autres utilisateurs dans les processus AEM.
+* Possibilité de [partager des éléments](../forms/using/configure-shared-queues-osgi.md) de boîte de réception ou de boîte de réception avec d’autres utilisateurs dans le  AEM.
 
 * Possibilité de [générer des communications interactives en mode](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)Batch.
 
@@ -46,39 +46,39 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Experience Manager Assets prend désormais en charge les archives ZIP créées à l’aide de l’algorithme Deflate 64 (NPR-27573).
 
-* Une nouvelle colonne pour la date de création, qui peut être triée, a été ajoutée en mode Liste DAM et dans les résultats de la recherche de ressources en mode Liste (NPR-31312).
+* Une nouvelle colonne pour la date de création, qui peut être triée, a été ajoutée dans le DAM  les résultats de la recherche d’actifs dans lede l’ d’ (NPR-31312).
 
-* Le tri des ressources basé sur la colonne Nom a été autorisé en mode Liste (NPR-31299).
+* Le tri des ressources en fonction de la colonne Nom a été autorisé dans   (NPR-31299).
 
-* Les fichiers GLB, GLTF, OBJ et STL prennent en charge l’aperçu des ressources dans la page Détails des ressources dans DAM (CQ-4282277).
+* Les fichiers GLB, GLTF, OBJ et STL prennent en charge les  de ressources dans la page Détails des ressources dans DAM (CQ-4282277).
 
-* L’événement ReplicationOnModifyListener est déclenché pour les noeuds de blocs lors du transfert de blocs dans le module Contenu multimédia dynamique (CQ-4281279).
+* Le ReplicationOnModifyListener est déclenché pour les noeuds de blocs lors du transfert de blocs dans le module Contenu multimédia dynamique (CQ-4281279).
 
 * Les médias dynamiques prennent désormais en charge les fichiers vidéo de recadrage dynamique. Smart Crop est une fonction pilotée par l’apprentissage automatique qui recadre une vidéo tout en déplaçant le cadre pour suivre le point focal de la scène (CQ-4278995).
 
 * Dynamic Media prend en charge l’imagerie intelligente (CQ-4222249).
 
-* La vue de recherche/navigation a été définie comme vue par défaut dans le sélecteur Foundation si les paramètres de requête sont transmis dans la requête (NPR-31601).
+* Le  de recherche/navigation a été défini comme par défaut  dans le sélecteur Foundation si les paramètres de l’ de la page de recherche/navigation sont transmis dans la requête (NPR-31601).
 
 **Correctifs**
 
-* Les métadonnées de certains documents PDF ne sont pas mises à jour et enregistrées dans le PDF lors de la modification de son titre (NPR-31629).
+* Les métadonnées de certains PDF ne sont pas mises à jour et enregistrées dans le PDF lors de la modification de son titre (NPR-31629).
 
 * Le partage des ressources ne fonctionne pas pour les ressources dont le nom contient le caractère &quot;+&quot; (NPR-31547).
 
 * Les modifications dans le formulaire de recherche par défaut Administration des ressources * Rail de recherche ne fonctionnent pas comme prévu (NPR-31502).
 
-* Les suggestions ne sont pas affichées lors de l&#39;utilisation d&#39;Omnisearch sur la vue des ressources pour la recherche de ressources (NPR-31496).
+* Les suggestions ne s&#39;affichent pas lors de l&#39;utilisation d&#39;Omnisearch sur le de ressources pour la recherche de ressources (NPR-31496).
 
 * Les références de ressources dans les collections ne sont pas mises à jour lorsque les ressources référencées sont déplacées vers un autre emplacement, dans les cas où les mêmes ressources sont référencées par une collection différente par différents utilisateurs (NPR-31486).
 
-* Les balises IPTC en double sont ajoutées aux métadonnées de fichier (NPR-31328).
+*  balises IPTC sont ajoutées aux métadonnées de fichier (NPR-31328).
 
 * Le nombre de résultats de la recherche dans le coin supérieur droit ne se met pas à jour correctement lorsque la recherche est déclenchée à partir du rail de filtre (NPR-31316).
 
 * Toutes les cases à cocher sont désactivées lorsque vous décochez les cases du second niveau dans le filtre Type de fichier, et le texte de la barre de recherche n’est pas synchronisé avec les propriétés sélectionnées/non sélectionnées (NPR-31287).
 
-* Tous les membres (utilisateurs/groupes) ne peuvent pas être supprimés de la section Membres d’un dossier ; lors de la tentative de suppression de tous les utilisateurs, l’utilisateur connecté est ajouté à la liste (NPR-31171).
+* Tous les membres (utilisateurs/groupes) ne peuvent pas être supprimés de la section Membres d’un dossier ; lors de la tentative de suppression de tous les utilisateurs, l’utilisateur connecté est ajouté au (NPR-31171).
 
 * Les fichiers dont le nom de fichier contient le symbole &quot;+&quot; ne peuvent pas être supprimés (NPR-31162).
 
@@ -86,7 +86,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * La sélection de dossier Créer > FichierTélécharger élément d’action est manquante lorsque la liste de contrôle d’accès pour Deny jcr:removeChildNodes et jcr:removeNode sur le chemin d’accès est appliquée à un utilisateur (NPR-30840).
 
-* Les flux de travaux de gestion des actifs numériques sont obsolètes lorsque certains fichiers mp4 sont téléchargés, ce qui entraîne l’obsolescence de tous les flux de travaux restants (NPR-30662).
+* Le DAM  dans l’état obsolète lorsque certains fichiers mp4 sont téléchargés, ce qui entraîne l’obsolescence de tous les restants (NPR-30662).
 
 * Une erreur de mémoire insuffisante est observée lorsqu’un fichier PDF volumineux (de plusieurs Go) est téléchargé vers la gestion des actifs numériques et que ses sous-ressources sont traitées (NPR-30614).
 
@@ -94,7 +94,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les noms des fichiers sont changés en minuscules lorsque vous déplacez des fichiers d’un dossier vers un autre dans AEM s’exécutant sur le mode d’exécution Contenu multimédia dynamique Scene7 (NPR-31630).
 
-* Une erreur s’affiche lors de la modification d’un jeu d’images distant, pour l’image résidant dans le dossier portant le même nom que le nom de l’entreprise Scene7 (NPR-31340).
+* Une erreur s’affiche lors de la modification d’un jeu d’images distant, pour l’image résidant dans le dossier portant le même nom que le nom de l’ de Scene7 (NPR-31340).
 
 * Les fichiers de médias dynamiques contenant des références ne sont pas publiés (NPR-31180).
 
@@ -110,13 +110,13 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Le flux de travaux vidéo de codage de médias dynamiques ne parvient pas à générer la miniature de la vidéo migrée de Scene7 vers Contenu multimédia dynamique - Mode d’exécution Scene7 (CQ-4282011).
 
-* IpsApiException a été observé lors de la migration de fichiers d’une instance vers une autre à l’aide d’identifiants d’entreprise Scene7 différents (CQ-4280548).
+* IpsApiException a été observé lors de la migration de fichiers d’une instance vers une autre à l’aide de différents ID de Scene7 (CQ-4280548).
 
 * La miniature des ressources 3D n’est pas informative lorsqu’un modèle 3D pris en charge est assimilé à AEM (CQ-4283701).
 
-* Les boutons de défilement s’affichent dans la visionneuse, si un fichier 3D présente peu de vues de caméra (CQ-4283322).
+* Les boutons de défilement s’affichent dans la visionneuse, si un fichier 3D comporte peu de  d’appareil photo (CQ-4283322).
 
-* Hauteur de conteneur incorrecte d’un modèle 3D téléchargé prévisualisé dans DimensionalViewer sur la page Détails du fichier (CQ-4283309).
+* Hauteur de  de incorrecte d’un modèle 3D téléchargé prévisualisé dans DimensionalViewer sur la page Détails du fichier (CQ-4283309).
 
 * Les vidéos ne peuvent pas être lues avec SmartCropVideoViewer dans Internet Explorer 11 et Safari (CQ-4281422).
 
@@ -124,7 +124,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Une vidéo déformée s’affiche sur les détails de la ressource lorsque le type MIME est autre que MP4 (CQ-4279704).
 
-* Les vidéos nouvellement assimilées dans des dossiers avec profil vidéo restent à l’état de traitement même après que le pourcentage de codage se termine à 100 % (CQ-4279389).
+* Les vidéos nouvellement assimilées dans des dossiers avec des  vidéo restent à l’état de traitement même après que le pourcentage de codage se termine à 100 % (CQ-4279389).
 
 * Le déplacement de fichiers d’un dossier crée un grand nombre de tâches Sling (appels d’API Scene7) plus que nécessaire (CQ-4278664).
 
@@ -138,13 +138,13 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Une erreur &quot;Groupe non répertorié par le sélecteur d’utilisateurs : la valeur &quot;false&quot; est attendue pour la valeur &quot;true&quot; lors de l’ajout d’un groupe d’utilisateurs fermé avec des éléments différents `principalName` et `authorizableId` (CQ-4278177).
 
-* L’affichage des colonnes de l’interface utilisateur des ressources affiche tous les chemins, quel que soit le chemin racine du barrage d’un client spécifique (CQ-4278175).
+* Le de colonnes de l’interface utilisateur des ressources affiche tous les chemins, quel que soit le chemin racine du barrage d’un client spécifique (CQ-4278175).
 
 * La recherche du sélecteur de ressources ne fonctionne pas comme prévu (CQ-4275886).
 
-* Les processus de rendu échouent (CQ-4271928).
+* Les  de rendu échouent (CQ-4271928).
 
-* La purge d’événement DAM supprime les dernières données d’événement (maxSavedActivities) et conserve les données créées précédemment (NPR-31336).
+* DAM  purge supprime les données de les plus récentes (maxSavedActivities) et conserve les données créées précédemment (NPR-31336).
 
 * La recherche tactile dans l&#39;interface utilisateur (effectuée par l&#39;intermédiaire d&#39;Omnisearch) fait défiler automatiquement la page de résultats vers le haut et perd la position de défilement de l&#39;utilisateur (NPR-31307).
 
@@ -157,19 +157,19 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Si l’héritage de LiveCopy est rompu, les pages de copie dynamique affichent des liens de copie de langue au lieu de liens LiveCopy (NPR-30980).
 * Pour un nouveau plan directeur, si le nombre d&#39;enregistrements est supérieur à 40, seuls les 40 premiers enregistrements sont affichés. Le plan directeur affiche des lignes vierges pour le reste des enregistrements (NPR-31182).
 * Lorsqu’un utilisateur ajoute des caractères japonais ou coréens dans la propriété description d’un menu, celui-ci affiche des caractères déformés pour le texte en japonais et en coréen. (NPR-31331).
-* RTE (Rich Text Editor) ne permet pas d’insérer un tableau incorporé comme élément de liste (NPR-30879).
+* L’éditeur de texte enrichi (RTE) ne permet pas d’insérer un tableau incorporé comme élément de  (NPR-30879).
 * Hors de la zone, l’éditeur de texte enrichi (RTE) s’adapte. applique la taille de police intégrée aux éléments de manière inattendue (NPR-31284).
 * Lorsqu’un utilisateur se concentre sur les champs du rail gauche et utilise un raccourci clavier pour coller du contenu, il colle le le contenu du Presse-papiers de l’éditeur de page au lieu du contenu copié à partir des champs du rail gauche (NPR-31172).
 * Lorsqu’un utilisateur ajoute un champ Téléchargement de fichier à un champ multichamp, le chemin d’accès à l’image est stocké dans le noeud de composant au lieu du noeud de champ multiple (NPR-30882).
 * L’API ResponsiveGridExporter ne renvoie pas l’interface com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter. Le package com.day.cq.wcm.foundation.model.impl est déclaré comme package privé (NPR-31398).
 * Lorsqu’une page contenant des fragments d’expérience est ouverte en mode non éditeur (dans Auteur sans préfixe et `editor.html` `wcmmode=disabled`, ou dans Editeur)., la requête se termine par le code d’erreur d’état HTTP 500 (NPR-30743).
-* Les utilisateurs ne peuvent pas modifier leur mot de passe ni accéder à leur page de profil (NPR-31161).
+* Les utilisateurs ne peuvent pas modifier leur mot de passe ni accéder à leur page de  de (NPR-31161).
 
 ### Interface utilisateur et de recherche {#search-ui-interface}
 
-* Lorsque vous passez de la vue Carte à la vue Liste sur une page de résultats de recherche, il y a un décalage avant que la page puisse être défilée (NPR-31286).
+* Lorsque vous passez du de cartes au de la page de résultats de recherche, il y a un décalage avant que la page ne puisse être parcourue (NPR-31286).
 
-* La case à cocher Tout sélectionner est masquée dans la vue Liste de l’interface utilisateur Sites (NPR-31614).
+* La case à cocher Tout sélectionner est masquée dans le de  sur l’interface utilisateur des sites (NPR-31614).
 
 * Le nombre Sélectionner tout sur une page de résultats de recherche est incorrect (NPR-31120).
 
@@ -187,9 +187,9 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les mises à jour de la configuration de la taille de la mémoire tampon pour le service HTTP basé sur Jetty ne sont pas enregistrées (NPR-30925).
 
-* QueryBuilder prend désormais en charge orderby ``fn:name()`` dans les requêtes xpath (NPR-31322).
+* QueryBuilder prend désormais en charge orderby ``fn:name()`` dans le xpath (NPR-31322).
 
-* Une arborescence d’activation en double est créée lors de la mise à niveau à partir d’AEM 6.3 (NPR-31513).
+*    arbre est créé lors de la mise à niveau à partir d’AEM 6.3 (NPR-31513).
 
 * Les requêtes transférées ne conservent pas les en-têtes de réponse définis lors de l’authentification sling (NPR-30013).
 
@@ -201,7 +201,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 ### Projets {#projects}
 
-* La permutation des vues du calendrier ne fonctionne pas (NPR-31271).
+* Le changement de  de calendrier ne fonctionne pas (NPR-31271).
 
 ### Brand Portal {#assets-brand-portal}
 
@@ -215,7 +215,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Lors de la création d’un dossier de contribution, un ou les deux sous-dossiers (NOUVEAU et PARTAGÉ) n’apparaissent pas dans le dossier de contribution (CQ-4282424).
 * Le système renvoie une exception si l’utilisateur tente de republier le dossier de contributions d’AEM vers le portail de marque après avoir reçu de nouveaux actifs dans le dossier de contributions à partir de la fin du portail de marque (CQ-4279740).
 * La création d’un dossier de contribution dans un dossier de contribution (dossier imbriqué) est interdite pour éviter toute complexité (CQ-4278391).
-* Le système renvoie une exception lors du transfert de la liste des utilisateurs du portail de marque (fichier .csv) importée à partir de la console d’administration AEM. Seuls les champs Courriel, Prénom et Nom du fichier .csv sont obligatoires (CQ-4278390).
+* Le système renvoie une exception lors du transfert du utilisateur du portail de marque (fichier .csv) importé à partir de la console d’administration AEM. Seuls les champs Courriel, Prénom et Nom du fichier .csv sont obligatoires (CQ-4278390).
 
 ### Communities {#communities}
 
@@ -223,7 +223,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les liens rapides permettant de gérer des groupes (Ouvrir/Modifier/Publier/Supprimer des groupes) ne sont pas visibles par les administrateurs de la communauté (administrateur du groupe/administrateur du site) (NPR-31627).
 * Un blog envoyé ne s&#39;affiche pas, sauf si la page est manuellement actualisée/rechargée (NPR-31599).
-* La requête JCR utilisée par la fonction &quot;Mentions&quot; est sensible à la casse et prend trop de temps pour renvoyer les résultats (NPR-31475).
+* Le  JCR utilisé par la fonction &quot;Mentions&quot; est sensible à la casse et prend trop de temps pour renvoyer les résultats (NPR-31475).
 * Le fichier UberJar AEM 6.5 renvoie une exception, `cq-social-translation` lot manquant du fichier UberJar AEM 6.5 (NPR-31186).
 * Les bibliothèques Jackson Databind ont été mises à jour vers la version 2.9.9.3 pour corriger de nouvelles vulnérabilités (NPR-30967).
 * Les titres des activités et des notifications sont contradictoires (NPR-30941).
@@ -298,7 +298,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * La fonctionnalité Ressources connectées a été améliorée afin d’ajouter la prise en charge de la récupération de documents à partir de déploiements DAM distants. Les auteurs de site peuvent désormais rechercher et filtrer les types de documents pris en charge dans l’outil Recherche de contenu. Les documents distants peuvent être ajoutés au composant Télécharger sur les pages web. Voir [Utilisation des ressources connectées](../assets/use-assets-across-connected-assets-instances.md).
 
-* Améliorez les filtres de type Document avec plus de types MIME pour prendre en charge les options à plusieurs valeurs.
+* Amélioration de type de document avec plus de types MIME pour prendre en charge les options à plusieurs valeurs.
 * Un processus de retraitement externe pour la prise en charge de ressources multiples a été mis en place.
 * Les performances de média dynamique ont été améliorées à l’aide des filtres de ressources par défaut pour la réplication.
 * Les options de recadrage/rotation des fichiers ont été restaurées pour DMS7.
@@ -338,7 +338,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * La fonction de partage de lien ne fonctionne pas sur l’instance AEM avec la configuration DMS7. NPR-30080, NPR-30492 : Correctif pour CQ-4273651
 * L’ajout du composant Dynamic Media Scene7 à la page, puis la publication de la page, ne déclenche pas la configuration de Dmscene7 à chaque fois. NPR-30641 : correctif pour CQ-4275962
 * Un IPSJobJournal a été ajouté dans AEM pour créer une seule tâche IPS (Intrusion Prevention Systems) par profil de traitement. NPR-30490 : correctif pour CQ-4273614
-* Contenu multimédia dynamique : Ajout de filtres par défaut pour empêcher la réplication des fichiers vers le noeud de publication AEM. NPR-30538 : correctif pour CQ-4274678
+* Contenu multimédia dynamique : Ajout d’un par défaut pour exclure les ressources de la réplication sur le noeud de publication AEM. NPR-30538 : correctif pour CQ-4274678
 * Un processus de retraitement externe a été mis en place pour la prise en charge de ressources multiples afin d’autoriser le dossier comme charge utile. Le workflow comporte deux étapes : retraitement des fichiers sans poignées via un mappage de métadonnées à l’étape suivante et retéléchargement de tous les fichiers sans poignée de ressources vers S7 dans une seule tâche IPS. Pour plus d’informations, voir Configuration des Services cloud Dynamic Media. NPR-30489 : correctif pour CQ-4272903
 * Le téléchargement d’un fichier CSV incorrect après un fichier CSV correct efface le fichier CSV correct. Correctif pour CQ-4277694, CQ-4277814
 * L’icône incorrecte spécifique aux dossiers de contribution est à supprimer. Correctif pour CQ-4277580
@@ -369,7 +369,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Si l’héritage de LiveCopy est rompu, les pages de copie dynamique affichent des liens de copie de langue au lieu de liens LiveCopy. (NPR-30980)
 * Pour un nouveau plan directeur, si le nombre d&#39;enregistrements est supérieur à 40, seuls les 40 premiers enregistrements sont affichés. Le plan directeur affiche des lignes vierges pour le reste des enregistrements. (NPR-31182)
 * Le module RTE (Rich Text Editor) du composant de texte affiche des caractères déformés pour le japonais et le coréen. (NPR-31331)
-* L’éditeur de texte enrichi (RTE) ne permet pas d’insérer un tableau incorporé en tant qu’élément de liste. (NPR-30879)
+* L’éditeur de texte enrichi (RTE) ne permet pas d’insérer un tableau incorporé en tant qu’élément . (NPR-30879)
 * L’Editeur de texte enrichi (RTE) d’échafaudage prêt à l’emploi applique de manière inattendue la taille de police en ligne aux éléments. (NPR-31284)
 * Lorsqu’un utilisateur se concentre sur les champs du rail gauche et utilise un raccourci clavier pour coller le contenu, il colle le le contenu du Presse-papiers de l’éditeur de page au lieu du contenu copié à partir des champs du rail gauche. (NPR-31172)
 * Lorsqu’un utilisateur ajoute un champ Téléchargement de fichier à un champ à plusieurs champs, le chemin d’accès à l’image est stocké dans le noeud de composant au lieu du noeud à plusieurs champs. (NPR-30882)
@@ -380,7 +380,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 **Améliorations apportées au produit**
 
-* Améliorez les filtres de type Document avec plus de types MIME pour prendre en charge les options à plusieurs valeurs. Correctif pour CQ-4270694
+* EnhanceType de document avec plus de types MIME pour prendre en charge les options à plusieurs valeurs. Correctif pour CQ-4270694
 
 ### Gestion des fragments de contenu {#content-fragment-management-6520}
 
@@ -500,7 +500,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 ### Assets
 
 * Mise à jour de l&#39;interface DAM DMGGateway pour la prise en charge multipartie S3. NPR-29740 : correctif pour CQ-4226303
-* L’aperçu des rendus génère `Only empty tenantId is currently supported` une erreur après la mise à niveau vers AEM 6.5\. NPR-29986 : correctif pour CQ-4272353
+* Le de rendus génère une `Only empty tenantId is currently supported` erreur après la mise à niveau vers AEM 6.5\. NPR-29986 : correctif pour CQ-4272353
 * La boîte de dialogue Supprimer n’est pas visible pour autoriser la suppression de tâches. NPR-29720 : correctif pour CQ-4271074
 * Après avoir ajouté le titre du fichier dans la page de propriétés, lorsqu’un utilisateur tente de fermer la page, AEM ouvre à nouveau la page de propriétés. NPR-29627 : correctif pour CQ-4264929
 * VersioningTimelineEventProvider doit fournir la version racine avec le nœud de type nt : version. Correctif pour GRANITE-26063
@@ -537,7 +537,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 ### Fragments d’expérience
 
 * Exportez des fragments d’expérience AEM vers Adobe Target. Correctif pour CQ-4265469
-* L’exportation des fragments d’expérience vers Target échoue avec l’image dynamique. Correctif pour CQ-4269606
+* L’exportation des fragments d’expérience vers le échoue avec l’image dynamique. Correctif pour CQ-4269606
 
 * L’utilisateur atteint une impasse lorsqu’il tente de déplacer les fragments d’expérience dans Omnisearch en mode d’affichage Carte. Correctif pour CQ-4263848
 
@@ -616,7 +616,7 @@ Les principaux points forts d&#39;AEM Forms 6.5.1.0 sont les suivants :
 * Lorsque AEM Forms est installé sur IBM WebSphere, la création d’un modèle de données de formulaire basé sur SOAP échoue. Correctif pour CQ-4251134
 * Activation de la prise en charge d’Active Directory Federation Services (ADFS) v3.0 pour l’intégration sur site de Microsoft Dynamics. Correctif pour CQ-4270586
 * Lorsque le titre d’une source de données est modifié, le modèle de données de formulaire n’affiche pas le titre mis à jour. Correctif pour CQ-4265599
-* Si le nom d’une entité ou d’un attribut contient un tiret ou un espace, les expressions ne parviennent pas à évaluer ces entités et attributs. Correctif pour CQ-4225129
+* Si le nom d’une entité ou d’un attribut contient un trait d’union ou un espace,   ne parvient pas à évaluer ces entités et attributs. Correctif pour CQ-4225129
 
 * Une sortie incorrecte est observée lorsqu’un deux-points est présent dans la sortie de chaîne primitive. Correctif pour CQ-4260825
 
@@ -641,7 +641,7 @@ Les principaux points forts d&#39;AEM Forms 6.5.1.0 sont les suivants :
 * Le modèle de communication interactive ne répertorie pas les composants d’en-tête et de pied de page dans la liste des composants autorisés. Correctif pour CQ-4237895
 * Lorsque vous créez un modèle d’impression de communication interactive contenant un champ d’image, le titre du graphique est défini sur vide. Correctif pour CQ-4264772
 * La couleur de ligne d’un graphique, une fois supprimée, est paramétrée comme non définie. Correctif pour CQ-4264762
-* Les modifications apportées au calque de mise en page sur le fragment de document disparaissent lors de l’exécution de la synchronisation des modifications. Correctif pour CQ-4266054
+* Les modifications apportées au calque de mise en page lors de l’ du fragment disparaissent lors de l’exécution de la synchronisation des modifications. Correctif pour CQ-4266054
 * L’élément de modèle de données de formulaire à l’intérieur d’un fragment de document lié à un champ de texte n’affiche pas d’icône d’héritage et permet la liaison. Correctif pour CQ-4261089
 * L’API de rendu de canal d’impression n’a pas la possibilité de transmettre des données en tant que paramètre dans l’API. Correctif pour CQ-4263540
 * Les paramètres de l’agent ne sont pas visibles, car la case à cocher Modifier par l’agent est décochée lorsque le type de liaison est modifié du fragment de texte en Aucun/Objet de modèle de données pour le champ/variable de chaîne. Correctif pour CQ-4261953
