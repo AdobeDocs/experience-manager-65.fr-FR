@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29a94f3ece1b96b24e1b77f4abe6f6f28924ae7b
+source-git-commit: 6cf69dc86ce70a43e77b00d6b3986fa40ae0a4ec
 
 ---
 
@@ -74,7 +74,7 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 >・ Base de données IBM DB2
 >・ Systèmes d’exploitation IBM AIX et Sun Solaris
 >
->Pour les nouvelles installations, dans la mesure du possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne pour tirer parti des dernières innovations concernant les formulaires adaptatifs réactifs pour les communications interactives mobiles, multicanaux et les intégrations de données d’arrière-plan à l’aide du modèle de données de formulaire.
+>Pour les nouvelles installations, dans la mesure du possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne pour tirer parti des dernières innovations concernant les formulaires adaptatifs réactifs pour les communications mobiles, les communications interactives à plusieurs et les intégrations de données d’arrière-plan à l’aide du modèle de données de formulaire.
 >
 >Nous reconnaissons que les utilisateurs existants doivent continuer à déployer la pile AEM Forms sur JEE. Dans ce cas de figure, Adobe exige le déploiement d’AEM Forms JEE sur l’infrastructure prise en charge, comme décrit dans cette documentation. Si vous effectuez une mise à niveau vers AEM Forms 6.5 et que vous utilisez une plateforme non prise en charge dans la version précédente d’AEM Forms, vous pouvez contacter le support technique d’Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
 
@@ -122,8 +122,6 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 
 ### Bases de données et persistance de CRX {#databases-and-crx-persistence}
 
-#### Prise en charge de persistance AEM {#aem-persistence-support}
-
 <table>
  <tbody>
   <tr>
@@ -137,7 +135,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0 </p> </td>
+   <td><p>MongoDB Enterprise 4.0  </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -154,7 +152,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 
 <tr>
    <td>Oracle Database 19c </td>
-   <td>Référentiel Microkernel</td>
+   <td>Référentiel</td>
    <td>Pris en charge</td>
   </tr>
   <tr>
@@ -167,12 +165,16 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Référentiel Microkernel</td>
    <td>R : Prise en charge limitée</td>
   </tr>
+    <tr>
+   <td>MySQL 5.7.19 </td>
+   <td>-</td>
+   <td>R : Prise en charge limitée </td>
+  </tr>
  </tbody>
 </table>
 
 * IBM DB2 n’est pas pris en charge pour les nouvelles installations. Elle est prise en charge uniquement pour les clients existants effectuant une mise à niveau vers AEM Forms 6.5.
 * MongoDB est un logiciel tiers qui n’est pas inclus dans le pack de licences AEM. Pour plus d’informations, consultez la page relative à la stratégie de gestion des licences MongoDB ([MongoDB licensing policy](https://www.mongodb.org/about/licensing/)).
-
 * Pour tirer pleinement parti de votre déploiement AEM, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle.
 * Vous obtiendrez auprès de l’assistance clientèle d’Adobe une aide adaptée aux problèmes admissibles relatifs à l’utilisation de MongoDB avec AEM. Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 * Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Notez que les performances du système de fichiers sont variables et ont une incidence sur les performances globales. Il est conseillé d’effectuer un test de charge d’AEM avec le système de fichiers distant/réseau.
@@ -180,50 +182,8 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 * La fragmentation MongoDB n’est pas pris en charge dans AEM. 
 * AEM Forms on JEE ne prend pas en charge MySQL pour la persistance de RDBMK.
 * Le module Document Security n’utilise pas Content Repository. Cela signifie que si vous utilisez uniquement Document Security et ne prévoyez pas d’utiliser Workspace HTML, les formulaires HTML5 ou les formulaires adaptatifs, vous n’avez pas besoin d’installer Content Repository.
+* AEM Forms sur JEE ne prend pas en charge l’utilisation de MySQL pour le référentiel AEM persistant (CRX-Repository).
 
-#### Prise en charge de BASE DE DONNÉES {#database-support}
-
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Plate-forme</strong></p> </td>
-   <td><p><strong> Description</strong></p> </td>
-   <td><p><strong>Niveau de prise en charge</strong></p> </td>
-  </tr>
-  <tr>
-   <td>IBM DB2 11.1</td>
-   <td>Référentiel Microkernel</td>
-   <td>R : Prise en charge limitée</td>
-  </tr>
-  <tr>
-   <td><p>Oracle Database 12c Version 1</p> </td>
-   <td><p>Référentiel Microkernel</p> </td>
-   <td><p>Pris en charge</p> </td>
-  </tr>
-  <tr>
-   <td>Oracle Database 18c</td>
-   <td>Référentiel Microkernel</td>
-   <td>Pris en charge</td>
-  </tr>
-    <tr>
-   <td>Oracle Database 19c</td>
-   <td>Référentiel Microkernel</td>
-   <td>Pris en charge</td>
-  </tr>
-  <tr>
-   <td><p>MySQL 5.7.19<br /> </p> </td>
-   <td><p>Référentiel Microkernel</p> </td>
-   <td><p>Pris en charge</p> </td>
-  </tr>
-  <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
-   <td><p>Référentiel Microkernel</p> </td>
-   <td><p>Pris en charge</p> </td>
-  </tr>
- </tbody>
-</table>
-
-* IBM DB2 n’est pas pris en charge pour les nouvelles installations. Elle est prise en charge uniquement pour les clients existants effectuant une mise à niveau vers AEM Forms 6.5.
 
 ### Pilotes de base de données {#database-drivers}
 
@@ -319,7 +279,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 
 #### Environnement virtualisé {#virtualized-environment}
 
-Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance technique d’Adobe pour une résolution. Pour les problèmes que vous ne pouvez pas répliquer sur un ordinateur physique, contactez votre fournisseur d’environnement virtuel.
+Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance technique d’Adobe pour une résolution. Pour les problèmes que vous ne pouvez pas répliquer sur un ordinateur physique, contactez votre fournisseur  de virtuel.
 
 #### Environnements de développement {#development-environments}
 
@@ -346,7 +306,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 1. AEM Forms on JEE ne prend pas en charge et JBoss sur SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
-1. CRX-repository prend en charge la persistance de type TarMK, MongoDB et des bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms sur JEE, vous pouvez utiliser MongoMK avec CRX-repository et une base de données relationnelle prise en charge avec le serveur d’applications.
+1. CRX-repository prend en charge la persistance de type TarMK, MongoDB et des bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Toutefois, sur un AEM Forms sur JEE , vous pouvez utiliser MongoMK avec CRX-repository et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’application WebSphere sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss.
 
@@ -359,7 +319,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 * AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 * AEM Forms on JEE ne prend pas en charge la mise en grappe verticale.
 * AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en grappes.
-* Pour obtenir la liste des plateformes supprimées ou mises à jour, reportez-vous au document Résumé [des nouvelles fonctionnalités d’](../../forms/using/whats-new.md) AEM Forms 6.5.
+* Pour plus d’informations sur le  des plateformes supprimées ou mises à jour, reportez-vous à la page  de résumé [des nouvelles fonctionnalités d’](../../forms/using/whats-new.md) AEM Forms 6.5.
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
 
@@ -559,7 +519,7 @@ Pour la configuration requise supplémentaire, voir :
  </tbody>
 </table>
 
-* Espace disque pour l’installation : 1,7 Go pour Workbench uniquement, 2,7 Go sur un seul lecteur pour une installation complète de Workbench, Designer et des exemples d’assemblage, 400 Mo pour installer les répertoires temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows) . si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez allouer un total de 1,5 Go lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
+* Espace disque pour l’installation : 1,7 Go pour Workbench uniquement, 2,7 Go sur un seul lecteur pour une installation complète de Workbench, Designer et des exemples d’assemblage, 400 Mo pour installer les répertoires temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows). si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez allouer un total de 1,5 Go lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
 
 * Mémoire pour l’exécution de Workbench : 2 Go de mémoire vive.
 * Configuration matérielle requise : Processeur Intel® Pentium® 4 ou AMD équivalent, processeur cadencé à 1 GHz.
