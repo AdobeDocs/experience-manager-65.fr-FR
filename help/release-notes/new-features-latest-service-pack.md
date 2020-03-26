@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
+source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
 
 ---
 
@@ -85,8 +85,6 @@ Convertissez un champ de texte d’un formulaire XFA en champ de texte enrichi d
 ### Accessibility enhancements {#forms-accessibility-enhancements-6540}
 
 Experience Manager Forms comprend les améliorations d’accessibilité suivantes :
-
-* Les utilisateurs peuvent déplacer la mise au point des onglets sans problème pour le thème de référence Ultramarine-Accessible d’un formulaire adaptatif.
 
 * Les lecteurs d’écran annoncent correctement les cases à cocher, les liens, le sélecteur de date et les champs de saisie de date dans un formulaire adaptatif.
 
