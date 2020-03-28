@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 61d1531c020b5a25207b5e3f1c2b0c14e2974e02
+source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
 
 ---
 
@@ -39,6 +39,10 @@ Le d’autorisations  entre les ressources AEM et le portail de marque est modif
 
 Les étapes de configuration des ressources AEM avec le portail de marque sont différentes selon votre version AEM et selon que vous effectuez une configuration pour la première fois ou une mise à niveau des configurations existantes. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
+
+### Problèmes connus {#known-issues-bp}
+
+* Les utilisateurs du portail de marque ne peuvent pas publier les ressources du dossier de contributions dans AEM Assets lors de la mise à niveau vers les E/S Adobe sur AEM 6.5.4.
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
