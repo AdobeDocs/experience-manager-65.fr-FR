@@ -1,6 +1,6 @@
 ---
-title: Ajouter un commentaire à l'exemple de page
-seo-title: Ajouter un commentaire à l'exemple de page
+title: Ajouter Commenter à un exemple de page
+seo-title: Ajouter Commenter à un exemple de page
 description: Ajouter des commentaires personnalisés à une page
 seo-description: Ajouter des commentaires personnalisés à une page
 uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Ajouter un commentaire à l&#39;exemple de page {#add-comment-to-sample-page}
+# Ajouter Commenter à un exemple de page {#add-comment-to-sample-page}
 
 Maintenant que les composants du système de commentaires personnalisé sont en place dans le répertoire de l’application (/apps), il est possible d’utiliser le composant étendu. L’instance du système de commentaires d’un site Web à affecter doit définir resourceType comme système de commentaires personnalisé et inclure toutes les bibliothèques clientes nécessaires.
 
@@ -24,7 +24,7 @@ Maintenant que les composants du système de commentaires personnalisé sont en 
 
 Les bibliothèques clientes nécessaires au style et au fonctionnement des commentaires par défaut sont également nécessaires pour les commentaires étendus.
 
-Le Guide des composants [de la communauté](/help/communities/components-guide.md) identifie les bibliothèques client requises. Accédez au Guide des composants et affichez le composant Commentaires, par exemple :
+Le Guide des composants [de la communauté](/help/communities/components-guide.md) identifie les bibliothèques client requises. Accédez au Guide des composants et  le composant Commentaires, par exemple :
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
