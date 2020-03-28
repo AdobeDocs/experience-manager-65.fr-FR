@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 The ability for a Community member to follow [activities](essentials-activities.md) as well as be followed is established through two components:
 
-Le `follow`composant doit être associé à une autre ressource, et cette association est déjà établie pour les membres et les fonctionnalités des communautés existantes dans un site [](overview.md#communitiessites)communautaire.
+Le `following` composant doit être associé à une autre ressource, et cette association est déjà établie pour les membres et les fonctionnalités des communautés existantes dans un site [](overview.md#communitiessites)communautaire.
 
-The `following`component lists the members that are either following the current member or are being followed by the current member. Ce graphique social des relations entre les membres est inclus dans le profil d’utilisateur établi pour un site de communauté.
+The `following` component lists the members that are either following the current member or are being followed by the current member. Ce graphique social des relations entre les membres est inclus dans le profil d’utilisateur établi pour un site de communauté.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -61,8 +61,8 @@ The `following`component lists the members that are either following the current
      <li>Type : booléen</li>
      <li>Valeur:<br />
       <ul>
-       <li><i>true </i>- le <code>following</code> composant répertorie les membres qui sont actuellement connectés au membre <code>follows</code></li>
-       <li><i>false </i>- le <code>following</code> composant répertorie les membres qui <code>follow </code>le membre actuellement connecté</li>
+       <li><i>True </i>- Le <code>following</code> composant les membres qui sont actuellement connectés <code>follows</code></li>
+       <li><i>False </i>- Le <code>following</code> composant les membres qui <code>follow </code>le membre actuellement connecté</li>
       </ul> </li>
     </ul> <p>La valeur par défaut est <i>true</i> si la propriété est absente. Actuellement, il n’est pas possible de définir cette propriété à l’aide de la boîte de dialogue de modification en mode création. La propriété doit être ajoutée à une instance du <code>following </code>noeud à l’aide de <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
@@ -71,11 +71,11 @@ The `following`component lists the members that are either following the current
 
 ### S’abonner {#follow}
 
-| **resourceType** | social/socialgraph/components/hbs/following |
+| **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
 | [**inclus **](scf.md#add-or-include-a-communities-component) | Non |
-| **templates** | /libs/social/socialgraph/components/hbs/following/following.hbs |
-| **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
+| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Personnalisations côté client](client-customize.md)
 
