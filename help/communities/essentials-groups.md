@@ -10,20 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
 # Essentials du groupe communautaire {#community-group-essentials}
 
-La fonction des groupes communautaires permet à une sous-communauté d’être créée dynamiquement dans un site communautaire par des utilisateurs autorisés à partir des environnements de publication et d’auteur.
+La fonction des groupes de la communauté permet à une sous-communauté d’être créée dynamiquement dans un site communautaire par des utilisateurs autorisés à partir de la publication et de l’auteur  .
 
 A compter du [Feature Pack 1](deploy-communities.md#latestfeaturepack)Collectivités, il est possible d’imbriquer des groupes dans d’autres groupes.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
-### Liste des membres des groupes communautaires {#community-groups-member-list}
+###  des membres des groupes communautaires {#community-groups-member-list}
 
 <table>
  <tbody>
@@ -85,7 +85,7 @@ A compter du [Feature Pack 1](deploy-communities.md#latestfeaturepack)Collectivi
 
 ### Fonction Groupes {#groups-function}
 
-Une structure de site de la communauté qui comprend une fonction [](functions.md#groups-function) Groupes permettra de créer de nouveaux sites `community groups` à partir des environnements de publication et d’auteur. Le groupe de communauté créé comprendra un `community groups member list` composant qui dressera la liste des membres du groupe.
+Une structure de site de la communauté qui comprend une fonction [](functions.md#groups-function) `community groups` Groupes permettra de créer de nouveaux sites à partir de la publication et de l’auteur  de l’. Le groupe de communautés créé comprendra un `community groups member list` composant qui  les membres du groupe.
 
 Un ou plusieurs modèles [de groupe](tools-groups.md)communautaire, qui fournissent la conception des pages de groupe communautaire, peuvent être configurés pour la fonction Groupes lorsque la fonction est ajoutée à un modèle [de site](sites.md) communautaire ou imbriquée dans un modèle de groupe communautaire.
 
@@ -97,10 +97,10 @@ Depuis le [FP1](deploy-communities.md#latestfeaturepack)Collectivités, il est p
 
 Lorsqu’un site de la communauté ou un modèle de groupe inclut la fonction Groupes, il est possible de
 
-* Création d’une sous-communauté dans l’environnement de création
-* Créez un groupe dans l’environnement de publication, lorsqu’il est configuré pour l’autoriser.
+* Création d’une sous-communauté dans l’auteur  
+* Créez un groupe dans le  de publication , lorsqu’il est configuré pour l’autoriser
 
-Lors de la création d’un groupe dans l’environnement d’auteur, vous devez d’abord publier le site de la communauté, puis le groupe. La publication du site de la communauté publiera les pages du groupe, sans créer les groupes de membres de la sous-communauté auxquels les listes ACL sont définies. Ainsi, un groupe restreint (secret) peut être visible jusqu’à ce que le groupe soit explicitement publié.
+Lors de la création d’un groupe dans l’auteur  , il est nécessaire de publier d’abord le site de la communauté, puis le groupe. La publication du site de la communauté publiera les pages du groupe, sans créer les groupes de membres de la sous-communauté auxquels les listes ACL sont définies. Ainsi, un groupe restreint (secret) peut être visible jusqu’à ce que le groupe soit explicitement publié.
 
 ## Liens et informations connexes {#links-and-related-information}
 
