@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a26bc4e4ea10370dd2fc3403500004b9e378c418
 
 ---
 
@@ -105,11 +105,11 @@ Lorsque le contenu du document est en ligne d’entrée (c’est-à-dire qu’il
 
    >[!NOTE]
    >
-   >La valeur de la propriété Taille maximale de la ligne d’entrée du document doit être identique pour l’environnement AEM Forms sur JEE et le lot AEM Forms sur OSGi inclus l’environnement AEM Forms sur JEE. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
+   >La valeur de la propriété Taille maximale de la ligne d’entrée de  doit être identique pour l’ AEM Forms sur JEE et le lot AEM Forms sur OSGi inclus led’AEM Forms sur JEE. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
 
 1. Redémarrez le serveur d’applications à l’aide de la propriété système suivante :
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=[*value specified in Step 2*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
@@ -161,7 +161,7 @@ Si vous exécutez Configuration Manager ou si vous essayez de générer le code 
    * (Linux and UNIX) `ejbdeploy.sh`
 
 1. Find the `-Xmx256M` parameter and change it to a higher value, such as `-Xmx1024M`.
-1. Enregistrez le fichier.
+1. Enregistrez le fichier .
 1. Exécutez la commande `ejbdeploy` ou effectuez de nouveau le déploiement à l’aide de Configuration Manager.
 
 ## Amélioration des performances de Windows Server 2003 avec le protocole LDAP {#improving-windows-server-2003-performance-with-ldap}
