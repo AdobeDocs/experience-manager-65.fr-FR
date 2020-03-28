@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -34,7 +34,7 @@ Le composant de commentaires établit un système de commentaires de sorte que c
    <td>Oui - les propriétés sont modifiables en <i>mode </i>de conception</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.vote</td>
   </tr>
   <tr>
@@ -69,9 +69,9 @@ D’autres fonctionnalités incluent déjà le système de commentaires. à savo
 
 ### Marquer la liste de motifs {#flag-reason-list}
 
-La liste des motifs de marquage peut être personnalisée en ajoutant flagreasonlist.hbs à votre application pour remplacer ce qui se trouve dans
+Le de motifs de marquage peut être personnalisé en ajoutant flagreasonlist.hbs à votre application pour remplacer ce qui se trouve dans
 
-* /libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs
+* `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
 Cela s’applique à tout composant qui étend un système de commentaires.
 
@@ -88,13 +88,13 @@ Cela s’applique à tout composant qui étend un système de commentaires.
 L’UGC doit être modérée à l’aide de l’une des méthodes standard de modération.
 Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
 
-Depuis les communautés AEM 6.1, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de stockage choisie (par exemple, ASRP, MSRP ou JSRP).
+Depuis la version 6.1 des Communautés AEM, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de   choisie (par exemple, ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format de l’UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources de stockage - Présentation de l&#39;utilisation du référentiel
+* [Aperçu](srp.md) du fournisseur de ressources  de - Présentation de l&#39;utilisation du référentiel
 * [SRP et UGC Essentials](srp-and-ugc.md) - Méthodes et exemples d&#39;utilitaires SRP
 * [Accès UGC avec SRP](accessing-ugc-with-srp.md) - Instructions de codage
 * [Réfactorisation](socialutils.md) de SocialUtils - Association des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
