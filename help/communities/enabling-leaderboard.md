@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Fonctionnalité de classement{#leaderboard-feature}
+# Fonctionnalité de classement {#leaderboard-feature}
 
 ## Présentation {#introduction}
 
@@ -26,8 +26,8 @@ Avant d’inclure le composant du tableau de bord dans une page, il est nécessa
 
 Cette section de la documentation décrit :
 
-* ajout du `Leaderboard` composant à un site [communautaire](/help/communities/overview.md#community-sites)
-* les paramètres de configuration du composant `Leaderboard`.
+* Ajout du `Leaderboard` composant à un site [communautaire](/help/communities/overview.md#community-sites)
+* Configuration settings for the `Leaderboard` component
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -51,7 +51,7 @@ Select the placed `Leaderboard` component to access and select the `Configure` i
 
 #### Onglet Settings {#settings-tab}
 
-Sous l’onglet **Paramètres **, indiquez les informations relatives au membre qui s’affichent :
+Sous l’onglet **Paramètres** , spécifiez les informations relatives au membre qui s’affichent :
 
 * **Nom d’affichage**
 
@@ -70,7 +70,7 @@ Cette option n’est pas cochée par défaut.
 
 * **Utiliser un avatar**
 
-   Si cette option est cochée, l&#39;avatar du membre est inclus dans le tableau de bord, en regard du lien du nom vers son profil de membre.
+   Si cette option est cochée, l&#39;avatar du membre est inclus dans le tableau de bord, à côté du lien de son nom vers son  membre.
 Cette option n’est pas cochée par défaut.
 
 #### Onglet Règles {#rules-tab}
@@ -79,21 +79,19 @@ Sous l’onglet **Règles** , le site de la communauté et ses règles de notati
 
 * **Emplacement des règles**
 
-   (obligatoire) Emplacement où la règle Scoring / Badging est configurée.
+   (Obligatoire) Emplacement où la règle Scoring / Badging est configurée.
 
 * **Règle de notation**
 
-   (obligatoire) Règle spécifique générant les scores à afficher.
+   (Obligatoire) Règle spécifique générant les scores à afficher.
 
 * **Règle d’attribution des badges**
 
-   (obligatoire) Règle spécifique générant le badge à afficher.
+   (Obligatoire) Règle spécifique générant le badge à afficher.
 
 * **Limite d’affichage**
 
-   Nombre de membres à afficher par page.
-
-   La valeur par défaut est 10.
+   Nombre de membres à afficher par page. La valeur par défaut est 10.
 
 ### Exemple : Tableau de bord des participants {#example-participants-leaderboard}
 
