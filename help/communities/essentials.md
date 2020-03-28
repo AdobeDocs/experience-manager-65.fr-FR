@@ -10,14 +10,14 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
-source-git-commit: 941ffeb40805c991eec6a601d01796cfc2cc95e4
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
 # Composants, fonctions et caractéristiques essentielles {#component-function-and-feature-essentials}
 
-Les fonctionnalités des communautés AEM exigent que les visiteurs du site deviennent membres et se connectent au site [de la](overview.md#communitiessites) communauté avant de pouvoir publier du contenu. Ainsi, les modèles [de site](sites.md)communautaire, à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion ainsi que des profils d’utilisateur, des messages, des recherches, de la modération et des traductions.
+Les fonctionnalités des communautés AEM exigent que les du site deviennent membres et se connectent au site [de la](overview.md#communitiessites) communauté avant de pouvoir publier du contenu. Ainsi, les modèles [de site](sites.md)communautaire, à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion, ainsi que des  d’utilisateurs, des messages, des recherches, de la modération et des traductions.
 
 Un site communautaire aidera les membres à créer des groupes communautaires lorsque la fonction [des groupes](functions.md#groups-function) communautaires est incluse dans le modèle de site communautaire sélectionné.
 
@@ -54,14 +54,14 @@ Vous trouverez ci-dessous des liens vers des informations essentielles sur les c
 
 * [Bibliothèques clientes](clientlibs.md)
 * [Sites communautaires](sites-for-developers.md)
-* [Événements OSGi de composant](events.md)
+* [OSGi composant](events.md)
 * [Chargement partiel des composants](sideloading.md)
 * [Message](essentials-messaging.md)
 * [Éditeur de texte enrichi](rte.md)
 * [Scores et insignes](configure-scoring.md)
-* [Rechercher](search-implementation.md)
+* [Recherche](search-implementation.md)
 * [Graphique des réseaux sociaux](essentials-socialgraph.md)
-* [Fournisseur](srp-and-ugc.md) de ressources de stockage `(SRP)`
+* [fournisseur](srp-and-ugc.md) de ressources `(SRP)`
 
 * [Balisage ](tag.md)
 
@@ -70,7 +70,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles sur les c
 Les javadocs [en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version 6.3 d’AEM.
 Les API de communautés sont dans `com.adobe.cq.social.*` des packages.
 
-Pour chaque [Feature Pack](deploy-communities.md#latestfeaturepack), un javadoc est disponible. Pour en savoir plus, consultez [Utilisation de Maven pour les communautés](maven.md#javadocs).
+Pour chaque [Feature Pack](deploy-communities.md#latestfeaturepack), un javadoc est disponible. Pour plus d&#39;informations, consultez [Utilisation de Maven pour les communautés](maven.md#javadocs).
 
 ## Informations supplémentaires {#additional-information}
 
@@ -78,7 +78,7 @@ Pour chaque [Feature Pack](deploy-communities.md#latestfeaturepack), un javadoc 
 
    * [Personnalisations côté client](client-customize.md)
    * [Personnalisations côté serveur](server-customize.md)
-   * [Présentation du fournisseur de ressources de stockage](srp.md)
+   * [Aperçu du fournisseur de ressources](srp.md)
 
 * [Consignes de codage](code-guide.md)
 * [Tutoriels](tutorials.md)
