@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Essentials des affectations{#assignments-essentials}
+# Essentials des affectations {#assignments-essentials}
 
 Lisez ce qui suit pour en savoir plus sur les informations essentielles pour travailler avec les fonctions d&#39;affectation des sites de la communauté [d&#39;](/help/communities/overview.md#enablement-community) activation.
 
@@ -48,7 +48,7 @@ La fonction des affectations permet d’affecter des ressources d’activation e
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>voir <a href="/help/communities/assignments.md">Fonction des affectations</a></td>
+   <td>Voir Fonction <a href="/help/communities/assignments.md">Affectations</a></td>
   </tr>
  </tbody>
 </table>
@@ -89,7 +89,7 @@ Une structure de site de la communauté qui inclut la fonction [](/help/communit
 
 * [API d&#39;activation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API de création de rapports](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API Analytics de création de rapports](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [API Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 
