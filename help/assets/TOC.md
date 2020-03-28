@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
+source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
 
 ---
 
@@ -12,19 +12,19 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
 # AEM 6.5 Assets User Guide {#assets}
 
 + [Guide de l’utilisateur Ressources](home.md)
-+ [Notes de mise à jour d’AEM 6.5 Assets](../release-notes/assets.md)
++ [Notes de mise à jour d’AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Meilleures pratiques pour les ressources](best-practices-for-assets.md)
 + Utilisation des ressources AEM {#using}
-   + [Expérience de la page d’accueil AEM Assets](assets-home-page.md)
-   + [Recherche de ressources dans AEM](search-assets.md)
+   + [Expérience  AEM Assets](assets-home-page.md)
+   + [Recherche de ressources dans AEM ](search-assets.md)
    + [Ressources multilingues](multilingual-assets.md)
    + [Utilisation de ressources Adobe Stock dans AEM Assets](aem-assets-adobe-stock.md)
    + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
-   + [Application de processus à des ressources](assets-workflow.md)
-   + [Ajout de zones cliquables](image-maps.md)
+   + [Appliquer des  aux ressources](assets-workflow.md)
+   + [Ajouter zones cliquables](image-maps.md)
    + [Réutilisation de fichiers à l’aide de MSM](reuse-assets-using-msm.md)
    + [Ressources liées aux sites AEM](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
@@ -71,10 +71,10 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Etendre les ressources {#extending}
    + [Personnalisation et extension des ressources AEM](extending-assets.md)
-   + [Traiter les fichiers à l’aide des gestionnaires de médias et des processus](media-handlers.md)
+   + [Traiter les fichiers à l’aide des gestionnaires de médias et des  de](media-handlers.md)
    + [Étendre la fonctionnalité de recherche](searchx.md)
    + [Installation et configuration d’ImageMagick pour une utilisation avec AEM Assets](best-practices-for-imagemagick.md)
-   + [Intégration de ressources au flux d’activités](extending-activity-stream.md)
+   + [Intégrer des ressources à  flux](extending-activity-stream.md)
    + [Etendre l’éditeur de fichiers](asseteditorx.md)
    + [API HTTP Assets](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](assets-api-content-fragments.md)
@@ -87,7 +87,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Partage des liens des ressources](link-sharing.md)
    + [Rapports de ressources](asset-reports.md)
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
-   + [Profils de traitement des métadonnées, images et vidéos](processing-profiles.md)
+   + [de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
    + [Métadonnées en cascade](cascading-metadata.md)
    + [Création et configuration des pages de l’éditeur de ressources](assets-finder-editor.md)
    + [Guide de dimensionnement des ressources](assets-sizing-guide.md)
@@ -121,7 +121,7 @@ source-git-commit: 9f923782d3d0a7bdf45b18e8025bd2d083acf77c
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gestion des balises actives](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuration des ressources AEM avec le portail de marque](configure-aem-assets-with-brand-portal.md)
+   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
    + [Publication de dossiers sur Brand Portal](brand-portal-publish-folder.md)
    + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
