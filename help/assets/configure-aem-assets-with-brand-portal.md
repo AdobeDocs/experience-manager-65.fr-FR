@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4f3928558641af89d138bfbf85ba099a4286b2f3
+source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
 
 ---
 
@@ -26,10 +26,15 @@ Adobe Experience Manager (AEM) Assets est configuré avec Brand Portal via A
 >Auparavant, Brand Portal était configuré dans l’interface utilisateur classique via la passerelle OAuth héritée, qui fait appel à l’échange de jetons JWT pour obtenir un jeton d’accès IMS en vue de l’autorisation.
 >
 >La configuration via application OAuth héritée n’est plus prise en charge à partir du 6 avril 2020 et est remplacée par la configuration via Adobe I/O.
+
+
+>[!TIP]
 >
->Si vous êtes déjà un utilisateur de Brand Portal avec une configuration sur passerelle OAuth héritée, il est recommandé de supprimer les configurations existantes et de créer une configuration sur Adobe I/O.
+>***Pour les clients existants uniquement***
 >
->Toutefois, les configurations existantes continueront à fonctionner si vous ne les modifiez pas.
+>Il est recommandé de continuer à utiliser la configuration héritée de la passerelle OAuth. Si vous rencontrez des problèmes avec la configuration héritée de la passerelle OAuth, supprimez la configuration existante et créez une nouvelle configuration via les E/S Adobe.
+
+
 
 Cette aide décrit les deux cas d’utilisation suivants :
 * [Nouvelle configuration](#configure-new-integration-65): Si vous êtes un nouvel utilisateur du portail de marque et souhaitez configurer votre instance d’auteur AEM Assets avec Brand Portal, vous pouvez créer une nouvelle configuration sur les E/S Adobe.
