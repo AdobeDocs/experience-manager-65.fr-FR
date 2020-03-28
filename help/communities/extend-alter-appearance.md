@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Modification de l’aspect (HBS){#alter-the-appearance-hbs}
+# Modification de l’aspect (HBS) {#alter-the-appearance-hbs}
 
-Maintenant que les composants du système de commentaires personnalisé dans le répertoire de l’application (/apps) sont en place, avec une ressourceSuperType référençant le système de commentaires par défaut et le modèle/affichage personnalisé enregistré, il est possible de modifier l’implémentation.
+Maintenant que les composants du système de commentaires personnalisé dans le répertoire de l’application (/apps) sont en place, avec une ressourceSuperType référençant le système de commentaires par défaut et le modèle/ personnalisé(e) enregistré(e), il est possible de modifier l’implémentation.
 
 Pour une démonstration simple, une fonction visuelle, l’avatar de l’utilisateur connecté qui publie un commentaire, est supprimé.
 
@@ -30,7 +30,7 @@ Pour une démonstration simple, une fonction visuelle, l’avatar de l’utilisa
 
 Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* open [/apps/custom/components/commentaires/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Ouvrir [/applications/custom/components/commentaires/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * commentez la balise qui inclut l’avatar pour un commentaire (~ ligne 21) :
 
@@ -40,7 +40,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* open [/apps/custom/components/commentaires/**commentaires.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Ouvrir [/applications/custom/components/commentaires/**commentaires.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * commentez la balise qui inclut l&#39;avatar pour la prochaine entrée de commentaire (~ ligne 44) :
 
@@ -50,7 +50,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* sélectionnez **Enregistrer tout**
+* Select **Save All**
 
 ### Répliquer l’application personnalisée {#replicate-custom-app}
 
@@ -58,7 +58,7 @@ Une fois l’application modifiée, il est nécessaire de reproduire à nouveau 
 
 Une manière de le faire est
 
-* du menu principal
+* Dans le menu principal
 
    * sélectionnez **Outils > Opérations > Réplication**
    * select `Activate Tree`
@@ -66,9 +66,9 @@ Une manière de le faire est
    * deselect `Only Modified`
    * select `Activate`button
 
-### Afficher le commentaire modifié sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
+### Commentaire  modifié sur l&#39;exemple de page publié {#view-modified-comment-on-published-sample-page}
 
-[En poursuivant l’expérience](/help/communities/extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connectée en tant que même utilisateur, il est maintenant possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
+[En poursuivant l’expérience](/help/communities/extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connecté en tant que même utilisateur, il est maintenant possible d’actualiser la page dans le  de publication  de de de la modification pour supprimer l’avatar :
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
 
