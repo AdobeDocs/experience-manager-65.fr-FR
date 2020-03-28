@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -55,7 +55,7 @@ La suppression du fichier JSP créé automatiquement est due au fait que le fich
       * **Étiquette**: *commentaires*
       * **Titre**: Commentaires *Alt*
       * **Description**: Style *alternatif des commentaires*
-      * **Super Type**: *social/commons/composants/hbs/commentaires*
+      * **Super Type**: *social/commons/components/hbs/commentaires*
       * **Groupe**: *Personnalisé*
    * Sélectionnez **[!UICONTROL Suivant]**
    * Sélectionnez **[!UICONTROL Suivant]**
@@ -139,7 +139,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ## Création d’un dossier de bibliothèques clientes {#create-a-client-library-folder}
 
-Pour éviter d’avoir à inclure explicitement cette bibliothèque cliente, la valeur des catégories pour la bibliothèque clientlib du système de commentaires par défaut peut être utilisée ( `cq.social.author.hbs.comments`), mais cette bibliothèque cliente sera également incluse pour toutes les instances du composant par défaut.
+Pour éviter d’avoir à inclure explicitement cette bibliothèque cliente, il est possible d’utiliser la valeur de  pour la bibliothèque clientlib du système de commentaires par défaut ( `cq.social.author.hbs.comments`), mais cette bibliothèque cliente sera également incluse pour toutes les instances du composant par défaut.
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -165,9 +165,9 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-## Enregistrer le modèle et la vue SCF {#register-the-scf-model-view}
+## Enregistrer le modèle et le  SCF {#register-the-scf-model-view}
 
-Lors de l’extension (remplacement) d’un composant SCF, resourceType est différent (l’incrustation utilise le mécanisme de recherche relatif qui effectue la recherche `/apps` avant `/libs` de sorte que resourceType reste identique). C’est pourquoi il est nécessaire d’écrire du code JavaScript (dans la bibliothèque cliente) pour enregistrer le modèle SCF JS et afficher pour le type de ressource personnalisé.
+Lors de l’extension (remplacement) d’un composant SCF, resourceType est différent (l’incrustation utilise le mécanisme de recherche relatif qui effectue la recherche `/apps` avant `/libs` de sorte que resourceType reste identique). C’est pourquoi il est nécessaire d’écrire du code JavaScript (dans la bibliothèque cliente) pour enregistrer le modèle SCF JS et le  pour le paramètre resourceType personnalisé.
 
 Entrez le texte suivant comme contenu de `customcommentsystem.js`:
 
@@ -193,7 +193,7 @@ Entrez le texte suivant comme contenu de `customcommentsystem.js`:
 
 ## Publication de l’application {#publish-the-app}
 
-Pour expérimenter le composant étendu dans l’environnement de publication, il est nécessaire de répliquer le composant personnalisé.
+Pour expérimenter le composant étendu dans le  de publication , il est nécessaire de répliquer le composant personnalisé.
 
 Une manière de le faire est
 
