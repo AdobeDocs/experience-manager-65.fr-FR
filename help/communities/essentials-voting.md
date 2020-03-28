@@ -10,18 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
 # Voter les fondamentaux {#voting-essentials}
 
-Le composant de vote, une sous-classe [de décompte](tally.md) , est un outil utile qui permet aux membres de noter un élément de contenu particulier en sélectionnant simplement des flèches vers le haut ou vers le bas pour exprimer leur opinion.
+Le composant de vote, une sous-classe [de décompte](tally.md) , est un outil utile qui permet aux membres d&#39;évaluer un élément de contenu particulier en sélectionnant simplement des flèches vers le haut ou vers le bas pour exprimer leur opinion.
 
 Le placement de plusieurs instances d’un composant de vote sur la même page est autorisé ; chaque instance doit être configurée avec une `tally name` propriété unique.
 
-La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteurs du site doivent s&#39;inscrire et se connecter pour participer au vote une seule fois. Le visiteur (membre) connecté peut changer son vote à tout moment.
+La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les du site doivent s&#39;inscrire et s&#39;inscrire pour participer au vote une seule fois. Le (membre) connecté(e) peut changer son vote à tout moment.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -60,7 +60,7 @@ La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteur
 
 * [API Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Points de terminaison des chiffres](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Points de terminaison du décompte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
@@ -69,13 +69,13 @@ La publication anonyme d&#39;un vote n&#39;est pas prise en charge. Les visiteur
 L’UGC doit être modérée à l’aide de l’une des méthodes standard de modération.
 Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
 
-Depuis les communautés AEM 6.1, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de stockage choisie (par exemple, ASRP, MSRP ou JSRP).
+Depuis la version 6.1 des Communautés AEM, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de   choisie (par exemple, ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format de l’UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources de stockage - présentation et présentation de l&#39;utilisation du référentiel
+* [Aperçu](srp.md) du fournisseur de ressources  - présentation et utilisation du référentiel
 * [SRP et UGC Essentials](srp-and-ugc.md) - Méthodes et exemples d&#39;utilitaires SRP
 * [Accès UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage
 * [SocialUtils Refactoring](socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
