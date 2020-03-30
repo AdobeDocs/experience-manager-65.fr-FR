@@ -9,12 +9,12 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Renforcement de votre environnement AEM Forms sur JEE {#hardening-your-aem-forms-on-jee-environment}
+# Renforcement de votre AEM Forms sur JEE  {#hardening-your-aem-forms-on-jee-environment}
 
 Découvrez divers paramètres de renforcement de la sécurité pour améliorer la sécurité d’AEM Forms sur JEE s’exécutant dans un intranet d’entreprise.
 
@@ -23,7 +23,7 @@ L’article fournit des conseils et des pratiques recommandées de sécurisation
 Cet article décrit des techniques de renforcement à appliquer au cours des étapes suivantes, lors du cycle de vie de l’installation et de la configuration :
 
 * **Préinstallation :** Utilisez ces techniques avant d’installer AEM Forms sur JEE.
-* **** Installation : Utilisez ces techniques pendant le processus d’installation d’AEM Forms sur JEE.
+* **Installation :** Utilisez ces techniques pendant le processus d’installation d’AEM Forms sur JEE.
 * **Post-installation :** Utilisez ces techniques après l’installation, puis régulièrement par la suite.
 
 AEM Forms sur JEE est hautement personnalisable et compatible avec de nombreux environnements. Il est possible que certains des conseils présentés ici ne soient pas directement applicables à votre entreprise.
@@ -60,7 +60,7 @@ Le tableau suivant décrit des processus classiques qui permettent de réduire l
   </tr> 
   <tr> 
    <td><p>Adresses IP privées</p> </td> 
-   <td><p>Utilisez le NAT (Network Address Translation) avec les adresses IP privées RFC 1918 sur le serveur d’applications AEM Forms. Attribuez des adresses IP privées (10.0.0.0/8, 172.16.0.0/12 et 192.168.0.0/16) pour rendre plus difficile pour un attaquant d’acheminer le trafic vers et depuis un hôte interne de NAT via Internet.</p> </td> 
+   <td><p>Utilisez la traduction d’adresses réseau (NAT) avec les adresses IP privées RFC 1918 sur le serveur d’applications AEM Forms. Attribuez des adresses IP privées (10.0.0.0/8, 172.16.0.0/12 et 192.168.0.0/16) pour rendre plus difficile pour un attaquant d’acheminer le trafic vers et depuis un hôte interne de NAT via Internet.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Pare-feu</p> </td> 
@@ -258,7 +258,7 @@ Lorsqu’AEM Forms sur JEE est installé, un compte utilisateur par défaut uniq
 1. Saisissez l’URL suivante dans un navigateur Web :
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
    Le numéro de port par défaut est l’un des numéros suivants :
@@ -278,7 +278,7 @@ Lorsqu’AEM Forms sur JEE est installé, un compte utilisateur par défaut uniq
 
 En outre, il est recommandé de modifier le mot de passe par défaut de l’administrateur CRX en procédant comme suit :
 
-1. Connectez-vous à `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` l’aide du nom d’utilisateur/mot de passe par défaut.
+1. Connectez-vous à `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` l’aide du nom d’utilisateur/mot de passe par défaut.
 1. Saisissez Administrator dans le champ de recherche, puis cliquez sur **Aller**.
 1. Select **Administrator** from the search result and click the **Edit** icon at the lower right of the user interface.
 1. Indiquez le nouveau mot de passe dans le champ **Nouveau mot de passe** et l’ancien mot de passe dans le champ **Votre mot de passe**.
@@ -291,7 +291,7 @@ La génération Web Service Definition Language (WSDL) doit être activée u
 1. Saisissez l’URL suivante dans un navigateur Web :
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
 1. Cliquez sur **Paramètres > Paramètres de Core System > Configurations de base**.
@@ -332,7 +332,7 @@ Sur Oracle, le compte de base de données que vous utilisez nécessite uniquemen
 
 #### Configuration de la sécurité intégrée dans SQL Server sur Windows pour JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Modifiez [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} pour ajouter `integratedSecurity=true` à l’URL de connexion, comme indiqué dans cet exemple :
+1. Modifiez [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} pour ajouter `integratedSecurity=true` à l’URL de connexion, comme indiqué dans l’exemple suivant :
 
    ```as3
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
@@ -344,7 +344,7 @@ Sur Oracle, le compte de base de données que vous utilisez nécessite uniquemen
 
 #### Configuration de la sécurité intégrée dans SQL Server sur Windows pour WebLogic {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
-1. Démarrez WebLogic Server Administration Console en saisissant l’URL suivante dans la ligne d’adresse d’un navigateur Web :
+1. de WebLogic Server Administration Console en saisissant l’URL suivante dans la ligne d’adresse d’un navigateur Web :
 
    ```as3
    https://[host name]:7001/console
@@ -521,7 +521,7 @@ Certaines URL sont présentées comme des applications Web accessibles par les u
   </tr> 
   <tr> 
    <td><p>/adminui/*</p> </td> 
-   <td><p>Page d’accueil de la Console d’administration</p> </td> 
+   <td><p> de la console d’administration</p> </td> 
    <td><p>Oui</p> </td> 
    <td><p>Non</p> </td> 
   </tr> 
@@ -637,50 +637,50 @@ Les caractéristiques suivantes sont communes aux cas de CSRF :
 * trompent le navigateur de l’utilisateur pour le faire envoyer des requêtes HTTP à un site cible ;
 * impliquent des requêtes HTTP ayant des effets secondaires.
 
-AEM Forms sur JEE utilise la fonction de filtrage des référents pour bloquer les attaques CSRF. Les termes suivants sont utilisés dans cette section pour décrire le mécanisme de filtrage des référents :
+AEM Forms sur JEE utilise la fonction de filtre  pour bloquer les attaques CSRF. Les termes suivants sont utilisés dans cette section pour décrire le mécanisme de filtrage  :
 
-* **** Référent autorisé : Un référent est l’adresse de la page source qui envoie une requête au serveur. Pour les pages ou les formulaires JSP, les référents sont généralement la page précédente de l’historique de navigation. Les référents pour les images sont généralement les pages sur lesquelles les images sont affichées. Vous pouvez identifier le référent autorisé à accéder aux ressources du serveur en les ajoutant à la liste des référents autorisés.
-* **** Exceptions aux référents autorisés : Vous pouvez restreindre la portée de l’accès pour un référent particulier dans votre liste de référents autorisés. Pour appliquer cette restriction, vous pouvez ajouter des chemins d’accès individuels de ce référent à la liste des exceptions aux référents autorisés. Les requêtes provenant de chemins d’accès dans la liste Exceptions de référents autorisés ne peuvent pas appeler de ressource sur le serveur Forms. Vous pouvez définir des exceptions aux référents autorisés pour une application spécifique et utiliser également une liste globale des exceptions qui s’appliquent à toutes les applications.
-* **** URI autorisés : Il s’agit d’une liste de ressources à fournir sans consulter l’en-tête du référent. Par exemple, les ressources telles que les pages d’aide, qui n’entraînent pas de changements d’état sur le serveur, peuvent être ajoutées à cette liste. Les ressources de la liste des URI autorisés ne sont jamais bloquées par le filtre Référent, quel que soit le référent.
-* **** Référent nul : Une requête de serveur qui n’est pas associée à une page Web parente ou qui ne provient pas de celle-ci est considérée comme une requête d’un référent de valeur NULL. Par exemple, lorsque vous ouvrez une nouvelle fenêtre de navigateur, saisissez une adresse et appuyez sur Entrée, le référent envoyé au serveur est nul. Une application de bureau (.NET ou SWING) qui émet une requête HTTP à un serveur Web envoie également un référent de valeur NULL au serveur.
+* **de autorisé :** Un  est l’adresse de la page source qui envoie une requête au serveur. Pour les pages ou les formulaires JSP, le  de est généralement la page précédente dans l’historique de navigation. Les  des images sont généralement les pages sur lesquelles les images sont affichées. Vous pouvez identifier les  autorisés à accéder aux ressources de votre serveur en les ajoutant au  de autorisé.
+* **Exceptions  de autorisées :** Vous pouvez restreindre l’accès à un particulier dans votre  de autorisé. Pour appliquer cette restriction, vous pouvez ajouter des chemins d’accès individuels de ce au  d’exceptions aux autorisés. Les requêtes provenant de chemins d’accès dans le des exceptions  autorisées ne peuvent pas appeler de ressource sur le serveur de formulaires. Vous pouvez définir des exceptions  autorisées pour une application spécifique et utiliser un global d’exceptions qui s’applique à toutes les applications.
+* **URI autorisés :** Il s’agit d’un  de ressources qui doit être servi sans vérifier l’en-tête . Par exemple, les ressources telles que les pages d’aide, qui n’entraînent pas de changements d’état sur le serveur, peuvent être ajoutées à cette liste. Les ressources du URIs autorisés ne sont jamais bloquées par le filtre , quel que soit le nom de l’utilisateur.
+* **Null :** Une requête de serveur qui n’est pas associée à une page Web parente ou qui ne provient pas d’une page Web parente est considérée comme une requête d’un  de valeur NULL. Par exemple, lorsque vous ouvrez une nouvelle fenêtre du navigateur, saisissez une adresse et appuyez sur Entrée, le  envoyé au serveur est nul. Une application de bureau (.NET ou SWING) qui émet une requête HTTP à un serveur Web envoie également un Null au serveur.
 
-### Filtrage des référents {#referer-filtering}
+### Filtrage des {#referer-filtering}
 
-Le processus de filtrage des référents peut être décrit comme suit :
+Le processus de filtrage des  peut être décrit comme suit :
 
 1. Le serveur Forms vérifie la méthode HTTP utilisée pour l’appel :
 
-   1. S’il s’agit d’un POST, le serveur Forms vérifie l’en-tête du référent.
+   1. S’il s’agit d’une méthode POST, le serveur Forms vérifie l’en-tête  du.
    1. If it is GET, the forms server bypasses the Referrer check, unless *CSRF_CHECK_GETS* is set to true, in which case it performs the Referrer header check. La variable *CSRF_CHECK_GETS* est spécifiée dans le fichier *web.xml* pour votre application.
 
 1. Le serveur de formulaires vérifie si l’URI requis est autorisé :
 
    1. Si l’URI est autorisé, le serveur transmet la requête.
-   1. Si l’URI requis n’est pas autorisé, le serveur récupère le référent de la requête.
+   1. Si l’URI requis n’est pas autorisé, le serveur récupère le de la requête.
 
-1. S’il existe un référent dans la requête, le serveur vérifie s’il s’agit d’un référent autorisé. S’il est autorisé, le serveur recherche une exception de référent :
+1. S’il existe un  dans la requête, le serveur vérifie s’il s’agit d’un  autorisé. S’il est autorisé, le serveur recherche une exception  :
 
    1. S’il s’agit d’une exception, la requête est bloquée.
    1. S’il ne fait pas partie des exceptions, la requête est transmise.
 
-1. S’il n’existe aucun référent dans la requête, le serveur vérifie si un référent nul est autorisé :
+1. S’il n’existe aucun  dans la requête, le serveur vérifie si un Null est autorisé :
 
-   1. Si un référent nul est autorisé, la requête est transmise.
-   1. Si un référent nul n’est pas autorisé, le serveur vérifie si l’URI requis est une exception pour le référent nul et traite la requête en conséquence.
+   1. Si une  Null est autorisée, la requête est transmise.
+   1. Si une  Null n’est pas autorisée, le serveur vérifie si l’URI requis est une exception pour la  Null et traite la requête en conséquence.
 
-### Gestion du filtrage des référents {#managing-referer-filtering}
+### Gestion du filtrage des  de {#managing-referer-filtering}
 
-AEM Forms sur JEE fournit un filtre de référents pour spécifier les référents autorisés à accéder aux ressources de votre serveur. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. Si le numéro de port d’une entrée de référent autorisé est défini sur 0, AEM Forms sur JEE autorise toutes les requêtes du référent provenant de cet hôte, quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des référents est désactivé si toutes les entrées de la liste de référents autorisés sont supprimées.
+AEM Forms sur JEE fournit un filtre de  pour spécifier les  autorisés à accéder aux ressources de votre serveur. By default, the Referrer filter does not filter requests that use a safe HTTP method, e.g. GET, unless *CSRF_CHECK_GETS* is set to true. Si le numéro de port d’une entrée de autorisée est défini sur 0, AEM Forms sur JEE autorise toutes les requêtes avec  de cet hôte, quel que soit le numéro de port. Si aucun numéro de port n’est spécifié, seules les requêtes provenant du port par défaut 80 (HTTP) ou du port 443 (HTTPS) sont autorisées. Le filtrage des  est désactivé si toutes les entrées de la  de autorisée sont supprimées.
 
-Lors de la première installation de Document Services, la liste des référents autorisés est mise à jour avec l’adresse du serveur sur lequel Document Services est installé. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés à la liste des référents autorisés sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur avec une adresse IP de 10.40.54.187 comprend les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4 ou IPv6, ou sans nom de domaine qualifié) la liste blanche n’est pas mise à jour. Modifiez la liste des référents autorisés en fonction de votre environnement d’entreprise. Ne déployez pas le serveur Forms dans l’environnement de production avec la liste de référents autorisés par défaut. Après avoir modifié un référent autorisé, une exception de référent ou un URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
+Lorsque vous installez pour la première fois  Services de, lede autorisé est mis à jour avec l’adresse du serveur sur lequel sont installés les services de. Les entrées pour le serveur comprennent le nom du serveur, l’adresse IPv4, l’adresse IPv6 si le protocole IPv6 est activé, l’adresse de bouclage et une entrée localhost. Les noms ajoutés au  autorisé sont renvoyés par le système d’exploitation hôte. Par exemple, un serveur dont l’adresse IP est 10.40.54.187 comprend les entrées suivantes : `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Pour chaque nom non qualifié renvoyé par le système d’exploitation hôte (les noms sans adresse IPv4 ou IPv6, ou sans nom de domaine qualifié) la liste blanche n’est pas mise à jour. Modifiez le  autorisé  pour l’adapter à votre d’ d’entreprise. Ne déployez pas le serveur de formulaires dans le de  de production  avec le par défaut Autorisé . Après avoir modifié l’un des  de autorisés, les  Exceptions ou les URI, assurez-vous de redémarrer le serveur pour que les modifications prennent effet.
 
-**Gestion de la liste des référents autorisés**
+**Gestion des  autorisés**
 
-Vous pouvez gérer la liste des référents autorisés à partir de l’interface User Management de Administration Console. L’interface User Management offre des fonctionnalités pour créer, éditer ou supprimer la liste. Refer to the *[Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)*section of the *administration help*for more information on working with the Allowed Referrer list.
+Vous pouvez gérer le  autorisé à partir de l’interface User Management de Administration Console. L’interface User Management offre des fonctionnalités pour créer, éditer ou supprimer la liste. Refer to the *[Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)*section of the *administration help*for more information on working with the Allowed Referrer list.
 
-**Gestion des exceptions aux référents autorisés et des listes d’URI autorisés**
+**Gestion des exceptions  autorisées et des URI autorisés**
 
-AEM Forms sur JEE fournit des API pour gérer la liste des exceptions aux référents autorisés et la liste des URI autorisés. Vous pouvez utiliser ces API pour récupérer, créer, éditer ou supprimer la liste. Voici la liste des API disponibles :
+AEM Forms sur JEE fournit des API pour gérer le d’exception  autorisé et le  d’URI autorisé. Vous pouvez utiliser ces API pour récupérer, créer, éditer ou supprimer la liste. Voici la liste des API disponibles :
 
 * createAllowedURIsList
 * getAllowedURIsList
@@ -695,7 +695,7 @@ Reportez-vous à la *référence à l’API AEM Forms sur JEE* pour plus d’inf
 
 Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (e.g. `/index.html`) or a relative path (e.g. `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif, par ex. `/sample/(.)*`.
 
-L’ID de liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** est définie comme une constante dans la classe `UMConstants` de l’espace de noms `com.adobe.idp.um.api`, figurant dans `adobe-usermanager-client.jar`. Vous pouvez utiliser les API AEM Forms pour créer, modifier ou éditer cette liste. Par exemple, pour créer la liste globale des exceptions aux référents autorisés, utilisez :
+L’ID de liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** est définie comme une constante dans la classe `UMConstants` de l’espace de noms `com.adobe.idp.um.api`, figurant dans `adobe-usermanager-client.jar`. Vous pouvez utiliser les API AEM Forms pour créer, modifier ou éditer cette liste. Par exemple, pour créer l’ globale autorisée  le d’exceptions utiliser :
 
 ```as3
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
@@ -703,25 +703,25 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 Utilisez la liste ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** pour les exceptions spécifiques à une application.
 
-**Désactivation du filtre de référents**
+**Désactivation du filtre**
 
-Si le filtrage des référents bloque complètement l’accès au serveur Forms et que vous ne pouvez pas modifier la liste des référents autorisés, vous pouvez mettre à jour le script de démarrage du serveur et désactiver le filtrage des référents.
+Dans le  que le filtre  bloque complètement l’accès au serveur Forms et que vous ne pouvez pas modifier lede  Autorisé, vous pouvez mettre à jour le script de démarrage du serveur et désactiver le filtrage des.
 
-Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup script and restart the server. Assurez-vous de supprimer l’argument JAVA après avoir correctement reconfiguré la liste de référents autorisés.
+Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup script and restart the server. Assurez-vous de supprimer l’argument JAVA une fois que vous avez correctement reconfiguré le  de autorisé.
 
-**Filtrage des référents pour les fichiers WAR personnalisés**
+**Filtrage des  pour les fichiers WAR personnalisés**
 
 Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms sur JEE pour répondre aux besoins de l’activité. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the *web.xml* file with the following parameters:
 
-**CSRF_CHECK_GETS** contrôle la vérification du référent sur les requêtes GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
+**CSRF_CHECK_GETS** contrôle la vérification des  sur les requêtes GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** est l’ID de la liste des exceptions aux référents autorisés. Le filtre des référents empêche les requêtes provenant de référents dans la liste identifiée par l’ID de liste d’appeler toute ressource sur le serveur de formulaires.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** est l’ID du d’ d’exceptions autorisé . Le filtre de  de empêche les requêtes provenant de l’ dans l’ identifié par l’ID de, d’appeler toute ressource sur le serveur de formulaires.
 
-**CSRF_ALLOWED_URIS_LIST_NAME** est l’ID de la liste des URI autorisés. Le filtre Référent ne bloque aucune requête pour les ressources de la liste identifiées par l’ID de liste, quelle que soit la valeur de l’en-tête Référent dans la requête.
+**CSRF_ALLOWED_URIS_LIST_NAME** est l’ID de la liste des URI autorisés. Le filtre de  de ne bloque aucune requête pour l’une des ressources du  identifié par l’ID de l’, quelle que soit la valeur de l’en-tête de l’en-tête de la requête.
 
-**CSRF_ALLOW_NULL_REFERER** contrôle le comportement du filtrage des référents lorsque le référent est nul ou non présent. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. N’incluez ce paramètre que si vous souhaitez autoriser les référents de valeur NULL. L’autorisation de référents nuls peut autoriser certains types d’attaques multisite par usurpation de requête.
+**CSRF_ALLOW_NULL_REFERER** contrôle le comportement du filtre de  lorsque le  de est nul ou non présent. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. N’incluez ce paramètre que si vous souhaitez autoriser les  Null. L’autorisation d’un nul peut autoriser certains types d’attaques multisite par usurpation de requête.
 
-**CSRF_NULL_REFERER_EXCEPTIONS** est une liste des URI pour lesquels une vérification du référent n’est pas effectuée lorsque le référent est nul. Ce paramètre est activé uniquement lorsque la variable *CSRF_ALLOW_NULL_REFERER* est définie sur false. Séparez les URI de la liste à l’aide de virgules.
+**CSRF_NULL_REFERER_EXCEPTIONS** est un des URI pour lesquels une vérification de l&#39; du n&#39;est pas effectuée lorsque l&#39; de l&#39;objet est nulle. Ce paramètre est activé uniquement lorsque la variable *CSRF_ALLOW_NULL_REFERER* est définie sur false. Séparez les URI de la liste à l’aide de virgules.
 
 Voici un exemple de l’entrée de filtre dans le fichier *web.xml* pour un ***exemple*** de dossier WAR :
 
@@ -766,8 +766,8 @@ Voici un exemple de l’entrée de filtre dans le fichier *web.xml* pour un ***e
 
 Si des requêtes serveur légitimes sont bloquées par le filtre CSRF, essayez l’une des méthodes suivantes :
 
-* Si la requête rejetée comporte un en-tête Référent, pensez à l’ajouter à la liste Référents autorisés. Ajoutez uniquement le référent en qui vous avez confiance.
-* Si la requête rejetée ne comporte pas d’en-tête Référent, modifiez votre application cliente pour inclure un en-tête Référent.
+* Si la requête rejetée comporte un en-tête de , réfléchissez soigneusement à l’ajouter à la  de autorisée. Ajouter seulement les en qui vous avez confiance.
+* Si la requête rejetée ne comporte pas d’en-tête de , modifiez votre application cliente pour inclure un en-tête de .
 * Si le client peut travailler dans un navigateur, essayez ce modèle de déploiement.
 * En dernier recours, vous pouvez ajouter la ressource à la liste des URI autorisés. Ceci n’est pas un paramètre recommandé.
 
@@ -939,7 +939,7 @@ Pour configurer la redirection SSL pour WebSphere et WebLogic, reportez-vous à 
 
    &lt;nom du connecteur=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; schema=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot;/>
 
-1. Ajoutez le code suivant dans l’élément connecteur https :
+1. Ajouter le code suivant dans l’élément connecteur https :
 
    ```
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
@@ -996,7 +996,7 @@ L’accès à la console de gestion JBoss et à la console JMX est déjà config
 
 ### Désactivation de l’exploration des répertoires {#disable-directory-browsing}
 
-Une fois connecté à Administration Console, vous pouvez parcourir la liste des répertoires de la console en modifiant l’URL. Par exemple, si vous modifiez l’URL pour l’une de ces adresses, une liste de répertoires s’affiche :
+Après vous être connecté à Administration Console, vous pouvez parcourir la liste des répertoires de la console en modifiant l’URL. Par exemple, si vous modifiez l’URL pour l’une de ces adresses, une liste de répertoires s’affiche :
 
 ```as3
 https://<servername>:8080/adminui/secured/ 
