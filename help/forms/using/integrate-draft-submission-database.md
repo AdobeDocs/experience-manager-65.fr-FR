@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -79,7 +79,7 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    Pour spécifier un autre nom pour le tableau de données :
 
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
-   **Remarque**: Si vous modifiez les noms des tableaux, fournissez-les dans la configuration de Forms Portal.
+   **Remarque**: Si vous modifiez les noms des tableaux, fournissez-les dans la configuration du portail de formulaires.
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Enregistrer]**.   
 
@@ -303,12 +303,12 @@ L’exemple d’implémentation est désormais configuré, et vous pouvez l’ut
 
 Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publication, pour installer le fichier mysql-connector-java-5.1.39-bin.jar :
 
-1. Accédez au package com.mysql.jdbc `https://[server]:[port]/system/console/depfinder` et recherchez-le.
+1. Accédez au package com.mysql.jdbc `https://'[server]:[port]'/system/console/depfinder` et recherchez-le.
 1. Dans la colonne Exporté par, vérifiez si le package est exporté par un groupe.
 
    Continuez si le package n’est pas exporté par un groupe.
 
-1. Accédez à `https://[server]:[port]/system/console/bundles` et cliquez sur **[!UICONTROL Installer/Mettre à jour]**.
+1. Accédez à `https://'[server]:[port]'/system/console/bundles` et cliquez sur **[!UICONTROL Installer/Mettre à jour]**.
 1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Also, select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]** checkboxes.
 1. Click **[!UICONTROL Install or Update]**. Une fois cette opération effectuée, redémarrez le serveur.
 1. (*Windows uniquement*) Désactivez le pare-feu système pour votre système d’exploitation.
