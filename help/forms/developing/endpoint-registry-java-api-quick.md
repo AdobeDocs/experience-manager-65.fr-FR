@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Démarrage rapide de l’API Java du registre des points de fin (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+#  rapide de l&#39;API Java du registre des points de fin (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) est disponible pour le Registre des points de fin.
+Le  rapide des API Java (SOAP) est disponible pour le Registre des points de fin.
 
 [QuickStart : Ajout d’un point de fin EJB à l’aide de l’API Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
@@ -39,7 +39,7 @@ Java API Quick Start (SOAP) est disponible pour le Registre des points de fin.
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Le démarrage rapide situé dans Programmation avec AEM Forms est basé sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM forms reposent sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
 **Remarque**: Vous ne pouvez pas utiliser les points de fin à l’aide d’un service Web.
 
@@ -109,7 +109,7 @@ L’exemple de code Java suivant ajoute un point de fin EJB à un service appel�
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -208,7 +208,7 @@ L’exemple de code Java suivant ajoute un point de fin SOAP à un service appel
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -248,7 +248,7 @@ L’exemple de code Java suivant ajoute un point de fin Watched Folder à un ser
 
 >[!NOTE]
 >
->Vous devez inclure le fichier WatchedFolderEndpointConfigConstants.java dans votre projet pour compiler et exécuter le démarrage rapide suivant. (voir Fichier [constant des valeurs de configuration du dossier de](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)contrôle).
+>Vous devez inclure le fichier WatchedFolderEndpointConfigConstants.java dans votre projet pour compiler et exécuter le  rapide suivant. (voir Fichier [constant des valeurs de configuration du dossier de](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)contrôle).
 
 ```as3
  /*
@@ -311,7 +311,7 @@ L’exemple de code Java suivant ajoute un point de fin Watched Folder à un ser
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -383,7 +383,7 @@ L’exemple de code Java suivant ajoute un point de fin Email à un service appe
 
 >[!NOTE]
 >
->Vous devez inclure le fichier EmailEndpointConfigConstants.java dans votre projet pour compiler et exécuter le démarrage rapide suivant. (voir Fichier [constant des valeurs de configuration de](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)courrier électronique).
+>Vous devez inclure le fichier EmailEndpointConfigConstants.java dans votre projet pour compiler et exécuter le  rapide suivant. (voir Fichier [constant des valeurs de configuration de](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)courrier électronique).
 
 ```as3
  /*
@@ -446,7 +446,7 @@ L’exemple de code Java suivant ajoute un point de fin Email à un service appe
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -590,7 +590,7 @@ L’exemple de code Java suivant ajoute un point de fin Remoting à un service a
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -627,7 +627,7 @@ L’exemple de code Java suivant ajoute un point de fin Remoting à un service a
 
 ## QuickStart : Ajout d’un point de fin TaskManager à l’aide de l’API Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-L’exemple de code Java suivant ajoute un point de fin TaskManager à un service appelé *MyApplication/EncryptDocument*. Notez que le nom de la catégorie est *EncryptProcess*. (Voir [Ajout de points de fin TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+L’exemple de code Java suivant ajoute un point de fin TaskManager à un service appelé *MyApplication/EncryptDocument*. Vous remarquez que le nom du  de est *EncryptProcess*. (Voir [Ajout de points de fin TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```as3
  /*
@@ -693,7 +693,7 @@ L’exemple de code Java suivant ajoute un point de fin TaskManager à un servic
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -804,7 +804,7 @@ L’exemple de code Java suivant modifie un point de fin Watched Folder. Ce poin
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -956,7 +956,7 @@ Le code Java suivant supprime un point de fin EJB d’un service appelé *MyAppl
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1005,7 +1005,7 @@ Le code Java suivant supprime un point de fin EJB d’un service appelé *MyAppl
 
 ## QuickStart : Récupération des informations du connecteur de point de fin à l’aide de l’API Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-Le code Java suivant récupère des informations sur un point de fin Watched Folder. Les informations sur chaque valeur de configuration sont récupérées et affichées. Cette liste de codes indique si chaque valeur de configuration est obligatoire ou facultative. En outre, le nom et la valeur de chaque valeur de configuration s’affichent. (Voir [Récupération des informations](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)du connecteur de point de fin.)
+Le code Java suivant récupère des informations sur un point de fin Watched Folder. Les informations sur chaque valeur de configuration sont récupérées et affichées. Ce de code  indique si chaque valeur de configuration est obligatoire ou facultative. En outre, le nom et la valeur de chaque valeur de configuration s’affichent. (Voir [Récupération des informations](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)du connecteur de point de fin.)
 
 ```as3
  /*
@@ -1070,7 +1070,7 @@ Le code Java suivant récupère des informations sur un point de fin Watched Fol
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
