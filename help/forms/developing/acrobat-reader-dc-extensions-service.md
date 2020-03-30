@@ -1,6 +1,6 @@
 ---
-title: Acrobat Reader DC Extensions ServiceJava API Quick Start (SOAP)
-seo-title: Acrobat Reader DC Extensions ServiceJava API Quick Start (SOAP)
+title: ' rapide de l’API Java du service des extensions d’Acrobat Reader DC (SOAP)'
+seo-title: ' rapide de l’API Java du service des extensions d’Acrobat Reader DC (SOAP)'
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -9,28 +9,28 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 687cdacc2868de16a4df968dddedd330ce3317bb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Acrobat Reader DC Extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+#  rapide de l’API Java du service des extensions d’Acrobat Reader DC (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-Les Démarrages rapides suivants sont disponibles pour le service Acrobat Reader DC Extensions.
+Les  Quick suivants sont disponibles pour le service Acrobat Reader DC Extensions.
 
-[Démarrage rapide (mode SOAP):Application des droits d’utilisation à l’aide de l’API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[rapide (mode SOAP):Application de droits d’utilisation à l’aide de l’API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[Suppression des droits d’utilisation des documents PDF](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[Suppression des droits d’utilisation du PDF](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
 
-[Démarrage rapide (mode SOAP) : Récupération des informations d’identification à l’aide de l’API Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[rapide (mode SOAP) : Récupération des informations d’identification à l’aide de l’API Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Les démarrages rapides situés dans Programmation avec AEM Forms reposent sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM Forms reposent sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP):Application des droits d’utilisation à l’aide de l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+##  rapide (mode SOAP):Application de droits d’utilisation à l’aide de l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-L’exemple de code Java suivant applique des droits d’utilisation à un document PDF nommé *Loan.pdf*. Le document PDF dont les droits sont activés est enregistré sous la forme d’un fichier PDF nommé *LoanUsageRights.pdf*. Les droits d’utilisation suivants sont appliqués à ce document PDF : `enabledComments`, `enabledFormFillIn`et `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
+L’exemple de code Java suivant applique des droits d’utilisation à un PDF nommé *Loan.pdf*. Le PDF dont les droits sont activés est enregistré sous la forme d’un fichier PDF nommé *LoanUsageRights.pdf*. Les droits d’utilisation suivants sont appliqués à ce PDF : `enabledComments`, `enabledFormFillIn`et `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```as3
@@ -90,7 +90,7 @@ L’exemple de code Java suivant applique des droits d’utilisation à un docum
                    
            //Set connection properties required to invoke AEM Forms using SOAP mode                                 
            Properties connectionProps = new Properties(); 
-           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
+           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'"); 
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
@@ -141,9 +141,9 @@ L’exemple de code Java suivant applique des droits d’utilisation à un docum
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression des droits d’utilisation d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Suppression des droits d’utilisation d’un PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant supprime les droits d’utilisation d’un document PDF dont les droits sont activés et intitulé *LoanUsageRights.pdf*. (voir [Suppression des droits d’utilisation des documents](/help/forms/developing/assigning-usage-rights.md)PDF).
+L’exemple de code Java suivant supprime les droits d’utilisation d’un PDF dont les droits sont activés,  nommé *LoanUsageRights.pdf*. (voir [Suppression des droits d’utilisation des](/help/forms/developing/assigning-usage-rights.md)PDF).
 
 ```as3
  /* 
@@ -208,7 +208,7 @@ L’exemple de code Java suivant supprime les droits d’utilisation d’un docu
        try{ 
            //Set connection properties required to invoke AEM Forms                                 
            Properties connectionProps = new Properties(); 
-           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
+           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'"); 
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
@@ -241,9 +241,9 @@ L’exemple de code Java suivant supprime les droits d’utilisation d’un docu
  
 ```
 
-## Démarrage rapide (mode SOAP) : Récupération des informations d’identification à l’aide de l’API Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+##  rapide (mode SOAP) : Récupération des informations d’identification à l’aide de l’API Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-L’exemple de code Java suivant récupère des informations sur les informations d’identification utilisées pour appliquer des droits d’utilisation à un document PDF dont les droits sont activés et intitulé *LoanUsageRights.pdf*. (Voir [Récupération des informations d’identification](/help/forms/developing/assigning-usage-rights.md).)
+L’exemple de code Java suivant récupère des informations sur les informations d’identification utilisées pour appliquer des droits d’utilisation à un PDF dont les droits sont activés et qui s’appelle *LoanUsageRights.pdf*. (Voir [Récupération des informations d’identification](/help/forms/developing/assigning-usage-rights.md).)
 
 ```as3
  /* 
@@ -308,7 +308,7 @@ L’exemple de code Java suivant récupère des informations sur les information
                    
            //Set connection properties required to invoke AEM Forms                             
            Properties connectionProps = new Properties(); 
-           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]"); 
+           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'"); 
           connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
