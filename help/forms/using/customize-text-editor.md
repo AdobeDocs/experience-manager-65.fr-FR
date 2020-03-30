@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,7 +37,7 @@ Pour ce faire, vous devez :
 
 Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Dans le dossier d’applications, créez un dossier nommé config avec un chemin/une structure similaire au dossier de configuration, qui se trouve dans libs/fd/cm/config, en suivant les étapes suivantes :
 
    1. Right-click the items folder at the following path and select **Overlay Node**:
@@ -48,11 +48,11 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/config
+      **Chemin :** /libs/fd/cm/config
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
       ![Nœud de recouvrement](assets/2.png)
 
@@ -71,7 +71,7 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
 
 1. Ouvrez le fichier tbxeditor-config.xml dans apps/fd/cm/config, puis effectuez les modifications requises.
 
-   1. Cliquez deux fois sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
+   1. -cliquez sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
 
       ```xml
       <editorConfig>
