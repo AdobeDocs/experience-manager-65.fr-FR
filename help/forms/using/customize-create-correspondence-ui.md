@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -47,11 +47,11 @@ La branche /apps (structure de dossiers) :
 
 * Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de feature pack ou de correctif, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont remplacées.
 * Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
-* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour rechercher d’abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
+* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour effectuer d’abord une recherche dans la branche /apps, puis dans la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 
 Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans la branche /apps :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Dans le dossier des applications, créez un dossier nommé `css` dont le chemin d&#39;accès/la structure est similaire au dossier css (situé dans le dossier ccrui).
 
    Procédure de création du dossier css :
@@ -62,11 +62,11 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
       ![Chemin d&#39;accès au nœud de recouvrement](assets/0_1_5ioverlaynodedialog.png)
 
@@ -90,11 +90,11 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
    1. Right-click the **imgs** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
    1. Cliquez sur **OK**.
 
@@ -114,7 +114,7 @@ Téléchargez votre fichier de logo personnalisé dans CRX. Les règles HTML sta
 
 Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalisé dans CRX :
 
-1. Aller à `https://[server]:[port]/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
+1. Accédez à `https://'[server]:[port]'/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
 1. Dans CRXDE, faites un clic droit sur le dossier **imgs** au  niveau du chemin d&#39;accès suivant et sélectionez **Créer > Créer un fichier** :
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -139,7 +139,7 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
    La boîte de dialogue Edit jcr:data s&#39;affiche.
 
-   Cliquez maintenant sur le dossier newlogo.png, double-cliquez sur jcr:content (option dim) et définissez type nt:resource. Dans le cas contraire, créez une propriété du nom de jcr:content.
+   Cliquez maintenant sur le dossier newlogo.png,  cliquez sur jcr:content (option dim) et définissez type nt:resource. Dans le cas contraire, créez une propriété du nom de jcr:content.
 
 1. Dans la boîte de dialogue Edit jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
 
@@ -157,7 +157,7 @@ L&#39;image de logo nécessite une feuille de style supplémentaire à charger d
 
 Effectuez les étapes suivantes pour définir la feuille de style pour le rendu du logo :
 
-1. Aller à `https://[server]:[port]/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
+1. Accédez à `https://'[server]:[port]'/[contextpath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
 1. Créez un fichier nommé customcss.css (vous ne pouvez pas utiliser un autre nom de fichier) à l’emplacement suivant :
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
