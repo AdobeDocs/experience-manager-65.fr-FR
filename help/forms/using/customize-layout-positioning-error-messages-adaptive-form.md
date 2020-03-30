@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -50,7 +50,7 @@ Créez un thème à l’aide de l’éditeur de thèmes pour personnaliser la mi
 
 ## Création d’une disposition de champ personnalisée {#create-a-custom-field-layout}
 
-1. Ouvrez CRXDE Lite. The default URL is https://[Server]:[Port]/crx/de.
+1. Ouvrez CRXDE Lite. The default URL is https://&#39;[server]:[port]&#39;/crx/de.
 1. Copiez une disposition de champ du nœud /libs/fd/af/layouts/field (par exemple, defaultFieldLayout) vers le nœud /apps (par exemple, /apps/af-field-layout).
 1. Renommez le nœud copié et le fichier defaultFieldLayout.jsp. Par exemple, errorOnRight.jsp.
 
