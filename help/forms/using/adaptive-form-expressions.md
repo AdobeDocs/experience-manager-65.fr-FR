@@ -9,14 +9,14 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Expressions de formulaire adaptatif{#adaptive-form-expressions}
 
-Les formulaires adaptatifs facilitent et optimisent le remplissage des formulaires pour les utilisateurs finaux à l’aide de fonctions de script dynamique. Il vous permet d’écrire des expressions pour ajouter divers comportements, tels que des champs et des panneaux dynamiques d’affichage/masquage. Il vous permet également d’ajouter des champs calculés, de rendre les champs en lecture seule, d’ajouter une logique de validation, etc. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
+Les formulaires adaptatifs facilitent et optimisent le remplissage des formulaires pour les utilisateurs finaux à l’aide de fonctions de script dynamique. Il vous permet d’écrire   pour ajouter divers comportements tels que les champs et panneaux dynamiques d’affichage/masquage. Il vous permet également d’ajouter des champs calculés, de rendre les champs en lecture seule, d’ajouter une logique de validation, etc. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
 
 JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)
 
@@ -43,7 +43,7 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
 ## Types d’expression {#expression-types}
 
-Dans les formulaires adaptatifs, vous pouvez écrire des expressions pour ajouter des comportements tels que les champs et panneaux dynamiques d’affichage/masquage. Vous pouvez également écrire des expressions pour ajouter des champs calculés, rendre les champs en lecture seule, valider la logique, etc. Les formulaires adaptatifs prennent en charge les expressions suivantes :
+Dans les formulaires adaptatifs, vous pouvez écrire   pour ajouter des comportements tels que les champs et panneaux dynamiques d’affichage/masquage. Vous pouvez également écrire   pour ajouter des champs calculés, rendre les champs en lecture seule, valider la logique, etc. Les formulaires adaptatifs prennent en charge   suivants :
 
 * **[Expressions d’accès](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)** : pour activer/désactiver un champ.
 * **[Expressions de calcul](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)** : pour calculer automatiquement la valeur d’un champ.
@@ -52,9 +52,9 @@ Dans les formulaires adaptatifs, vous pouvez écrire des expressions pour ajoute
 * **[Expression d’options](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)** : pour remplir de façon dynamique une liste déroulante.
 * **[Expression récapitulative](#summary)** : pour calculer de façon dynamique le titre d’un accordéon.
 * **[Expressions de validation](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)** : pour valider un champ.
-* **[](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)Script **de validation de valeur : pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
+* **[Script](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)de validation de valeur :**pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
 * **[Expression de visibilité](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)** : pour contrôler la visibilité d’un champ et d’un panneau.
-* **[Expression](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**de fin d’étape : pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
+* **[de fin d’étape](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**: pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
 
 ### Expression d’accès (expression d’activation) {#access-expression-enablement-expression}
 
@@ -64,7 +64,7 @@ Vous pouvez utiliser l’expression d’accès pour activer ou désactiver un ch
 
 **Type de valeur renvoyée** : l’expression renvoie une valeur booléenne, qui indique si le champ est activé ou non. **true** indique que le champ est activé et **false** indique que le champ est désactivé.
 
-**Exemple**: Pour activer un champ uniquement lorsque la valeur de **field1** est définie sur **X**, l’expression d’accès est : `field1.value == "X"`
+**Exemple**: Pour activer un champ uniquement lorsque la valeur de **field1** est définie sur **X**, le d’accès   est : `field1.value == "X"`
 
 ### Expression de calcul {#calculate-expression}
 
@@ -74,7 +74,7 @@ L’expression de calcul est utilisée pour calculer automatiquement la valeur d
 
 **Type de valeur renvoyée** : l’expression renvoie une valeur compatible avec le champ dans lequel le résultat de l’expression est affiché (par exemple, décimal).
 
-**Exemple**: L’expression calculate pour afficher la somme de deux champs dans **field1** est :
+**Exemple**: Le de calcul   pour afficher la somme de deux champs dans le **champ1** est :
 `field2.value + field3.value`
 
 ### Expression de clic {#click-expression}
@@ -85,7 +85,7 @@ L’expression de clic gère les actions effectuées sur l’événement clic d�
 
 **Type de valeur renvoyée** : l’expression de clic ne renvoie aucune valeur. Si une expression renvoie une valeur, la valeur est ignorée.
 
-**Exemple**: Pour remplir une zone de texte **textbox1** sur l’action de clic d’un bouton avec la valeur **AEM Forms**, l’expression de clic du bouton est `textbox1.value="AEM Forms"`
+**Exemple**: Pour remplir une zone de texte **textbox1** sur l’action de clic d’un bouton avec la valeur **AEM Forms**, le clic  le  du bouton est `textbox1.value="AEM Forms"`
 
 ### Script d’initialisation {#initialization-script}
 
@@ -99,7 +99,7 @@ Le script d’initialisation est déclenché lorsqu’un formulaire adaptatif es
 
 **Type de valeur renvoyée :** l’expression du script d’initialisation ne renvoie aucune valeur. Si une expression renvoie une valeur, la valeur est ignorée.
 
-**** Exemple : Dans un scénario de préremplissage de données, pour remplir les champs avec une valeur par défaut `'Adaptive Forms'` lorsque leur valeur est enregistrée comme nulle, l’expression de script d’initialisation est :
+**Exemple :** Dans un scénario de préremplissage de données, pour remplir les champs avec une valeur par défaut `'Adaptive Forms'` lorsque leur valeur est enregistrée comme nulle, le script d’initialisation  le est :
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Expression d’options{#options-expression}
@@ -118,23 +118,23 @@ Dès lors que la valeur du champ **marital_status** est modifiée, l’expressio
 
 ### Expression récapitulative {#summary}
 
-L’expression récapitulative calcule dynamiquement le titre d’un panneau enfant d’un panneau de mise en page en accordéon. Vous pouvez spécifier l’expression récapitulative dans une règle, qui utilise un champ de formulaire ou une logique personnalisée pour évaluer le titre. L’expression s’exécute lorsque le formulaire s’initialise. Si vous préremplissez un formulaire, l’expression s’exécute une fois les données préremplies ou lorsque la valeur des champs dépendants utilisés dans l’expression change.
+L’expression récapitulative calcule dynamiquement le titre d’un panneau enfant d’un panneau de mise en page en accordéon. Vous pouvez spécifier l’expression récapitulative dans une règle, qui utilise un champ de formulaire ou une logique personnalisée pour évaluer le titre. L’expression s’exécute lorsque le formulaire s’initialise. Si vous préremplissez un formulaire, le   s’exécute une fois que les données sont préremplies ou lorsque la valeur des champs dépendants utilisés dans le  de change.
 
 L’expression récapitulative est généralement utilisée pour répéter les enfants d’un panneau de disposition en accordéon afin de fournir un titre significatif à chaque panneau enfant.
 
-**** S’applique à : Panneaux qui sont des enfants directs d’un panneau dont la disposition est configurée en tant qu’accordéon.
+**S’applique à :** Panneaux qui sont des enfants directs d’un panneau dont la disposition est configurée en tant qu’accordéon.
 
-**** Type de retour : L’expression renvoie une chaîne qui devient le titre de l’accordéon.
+**Type de retour :** Le   renvoie une chaîne qui devient le titre de l’accordéon.
 
-**** Exemple : &quot;Numéro de compte : &quot;+ textbox1.value
+**Exemple :** &quot;Numéro de compte : &quot;+ textbox1.value
 
 ### Expression de validation {#validate-expression}
 
-L’expression de validation est utilisée pour valider les champs à l’aide de l’expression donnée. En règle générale, ces expressions utilisent des expressions régulières avec la valeur du champ pour valider un champ. L’expression est redéclenchée et l’état de validation du champ est recalculé pour toute modification de la valeur d’un champ.
+L’expression de validation est utilisée pour valider les champs à l’aide de l’expression donnée. En règle générale, ces   utilisent des  de  ordinaires ainsi que la valeur du champ pour valider un champ. L’expression est redéclenchée et l’état de validation du champ est recalculé pour toute modification de la valeur d’un champ.
 
 **Application pour** : champs
 
-**Type** de retour : L’expression renvoie une valeur booléenne représentant l’état de validation du champ. The value **false** represents that the field is invalid and **true** represents that the field is valid.
+**Type** de retour : Le   renvoie une valeur booléenne, représentant l’état de validation du champ. The value **false** represents that the field is invalid and **true** represents that the field is valid.
 **Exemple** : pour un champ représentant un code postal du Royaume-Uni, l’expression de validation est :
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -160,7 +160,7 @@ Le script de validation de valeur est déclenché dans les cas suivants :
 
 >[!NOTE]
 >
->Vous pouvez désactiver l’exécution du script de validation de valeur lorsque la valeur d’un champ est changée par programmation. To do so, go to https://[server]:[port]/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Par la suite, le script de validation de valeur est exécuté uniquement lorsque l’utilisateur change la valeur à partir de l’interface utilisateur.
+>Vous pouvez désactiver l’exécution du script de validation de valeur lorsque la valeur d’un champ est changée par programmation. To do so, go to https://&#39;[server]:[port]&#39;/system/console/configMgr and change **Adaptive Forms Version for Compatibility** to **AEM Forms 6.1**. Par la suite, le script de validation de valeur est exécuté uniquement lorsque l’utilisateur change la valeur à partir de l’interface utilisateur.
 
 ### Expression de visibilité {#visibility-expression}
 
@@ -199,7 +199,7 @@ Il existe plusieurs modèles de validation prêts à l’emploi disponibles pour
 
 ### Expressions de validation {#validation-expressions}
 
-La validation d’un champ peut également être calculée à l’aide d’expressions sur différents champs. Ces expressions sont écrites dans le champ **Script de validation** de l’onglet **Script** dans la boîte de dialogue **Modifier** du composant. L’état de validation d’un champ dépend de la valeur renvoyée par l’expression. Pour obtenir plus d’informations sur la manière d’écrire de telles expressions, voir [Expression de validation](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+La validation d’un champ peut également être calculée à l’aide d’expressions sur différents champs. Ces expressions sont écrites dans le champ **Script de validation** de l’onglet **Script** dans la boîte de dialogue **Modifier** du composant. L’état de validation d’un champ dépend de la valeur renvoyée par le . Pour obtenir plus d’informations sur la manière d’écrire de telles expressions, voir [Expression de validation](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
 
 ## Informations supplémentaires {#additional-information}
 
