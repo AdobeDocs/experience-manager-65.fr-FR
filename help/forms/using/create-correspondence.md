@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -35,7 +35,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
    >[!NOTE]
    >
-   >Si aucun dictionnaire de données n’est associé à la lettre, l’aperçu de la lettre s’affiche. Sinon, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options Aperçu et Personnalisé dans le menu Aperçu et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. When the [Data Dictionary has associated test data](../../forms/using/data-dictionary.md#p-working-with-test-data-p), then on selecting the preview option, the normal preview opens with the test data populated.
+   >Si aucun dictionnaire de données n’est associé à la lettre, l’aperçu de la lettre s’affiche. Dans le cas contraire, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options  et personnalisées dans le menu  du et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. When the [Data Dictionary has associated test data](../../forms/using/data-dictionary.md#p-working-with-test-data-p), then on selecting the preview option, the normal preview opens with the test data populated.
 
 1. Pour pouvoir générer une correspondance lors de sa prévisualisation, vous devez être administrateur ou faire partie d’un des groupes suivants :
 
@@ -134,9 +134,9 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
+   You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
+   Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
@@ -164,8 +164,8 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    * **Texte** Affiche la somme des variables d’espace réservé vides uniques et des éléments de dictionnaire de données contenus dans le module de texte.
    * **Condition** Affiche la somme des variables de condition vides uniques contenues dans la condition et des variables contenues dans les modules résultants.
-   * **Liste** Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la liste.
-   * **Zone** cible Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la zone cible.
+   * **** du Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés au  du.
+   * **Zone** de  Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la zone de .
    Notez ce qui suit concernant les variables avec des valeurs par défaut :
 
    * Un champ de variable booléenne est défini par défaut sur *false*. Toutefois, la variable est considérée comme vide. This implies that the variable count includes all Boolean variable fields with value *false*.
@@ -188,7 +188,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 * Sélection (icône représentant un œil) : permet d’inclure ou d’exclure le module de la lettre.
 * Ignorer les puces (applicable pour les modules de liste et leurs modules enfants) : ignore les puces dans un module particulier.
 * Saut de page avant (applicable pour les modules enfants de la zone cible) : insère un saut de page avant le module.
-* Saut de page après (applicable pour les modules enfants de la zone cible) : Insère un saut de page avant le module.
+* Saut de page après (applicable pour les modules enfants de la zone  du) : Insère un saut de page avant le module.
 * Valeurs vides (information) : indique le nombre de variables vides dans la zone cible.
 * Modification (modules de texte uniquement) : ouvrez l’éditeur de texte enrichi pour modifier le module de texte.
 * Panneau de données (modules de texte et de condition) : permet de déverrouiller toutes les variables du module.
@@ -197,7 +197,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
 * Insertion d’une ligne vide : permet d’insérer une nouvelle ligne vide.
 * Bibliothèque de contenu : ouvre la bibliothèque de contenu pour ajouter des modules à la liste.
-* Paramètre de liste (liste imbriquée uniquement) :
+* Paramètre de  (imbriqué  uniquement) :
 * Verrouillage d’ordre (information) : indique que l’ordre des éléments de la liste ne peut pas être modifié.
 
 ### Gestion des pièces jointes {#manage-attachments}
@@ -286,7 +286,7 @@ Lorsque l’enregistrement des instances de lettre est activé, vous avez la pos
 
 ### Enregistrement local {#local-save}
 
-Les instances de lettre sont enregistrées sur l’instance de publication et répliquées inversement sur l’instance d’auteur.
+Les instances de lettre sont enregistrées sur l’instance de publication et répliquées de manière inversée sur l’instance d’auteur.
 
 ### Enregistrement à distance {#remote-save}
 
@@ -344,13 +344,13 @@ For more information on scripting support in HTML5 forms, see [Scripting support
 
 ### Changement du mode de rendu d’une lettre {#changerenditionmode}
 
-Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode d’aperçu de la lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
+Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de  de lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
 
 For more information on browser compatibility with letter preview, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
 Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 
-1. Go to `https://[system]:[port]/system/console/configMgr` and, if necessary, log in as Admin.
+1. Go to `https://[system]:'port'/system/console/configMgr` and, if necessary, log in as Admin.
 1. Accédez à **[!UICONTROL Configurations de Correspondence Management]** > **[!UICONTROL Type de rendu]** et sélectionnez **Rendu HTML** (par défaut) ou **Rendu PDF**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
