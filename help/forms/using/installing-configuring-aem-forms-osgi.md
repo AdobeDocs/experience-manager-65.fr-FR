@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -130,9 +130,9 @@ AEM Forms comporte quelques configurations obligatoires et facultatives. Les con
 Effectuez les étapes suivantes sur toutes les instances d’auteur et de publication pour redémarrer et déléguer les bibliothèques :
 
 1. Arrêtez l’instance AEM sous-jacente.
-1. Open the [AEM installation directory]\crx-quickstart\conf\sling.properties file for editing.
+1. Open the `[AEM installation directory]\crx-quickstart\conf\sling.properties` file for editing.
 
-   If you used [AEM installation directory]\crx-quickstart\bin\start.bat to start AEM, then edit the sling.properties located at [AEM_root]\crx-quickstart\.
+   Si vous aviez l’habitude `[AEM installation directory]\crx-quickstart\bin\start.bat` de d’AEM, modifiez le fichier sling.properties situé dans `[AEM_root]\crx-quickstart\`.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -148,7 +148,7 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 Procédez comme suit sur toutes les instances de création et de publication pour placer le package sur liste blanche :
 
-1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est `https://[server]:[port]/system/console/configMgr`.
+1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** et ouvrez la configuration.
 1. Ajoutez le package **sun.util.calendar** dans le champ **Liste blanche**. Cliquez sur **Enregistrer**.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
@@ -169,7 +169,7 @@ Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pou
 
 1. Configurez le service de filtrage des référents :
 
-   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. In the **Configurations **menu, select the **Apache Sling Referrer Filter** option. Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. The format of the entry is https://[server]:[port].
+   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est `https://[server]:[port_number]/system/console/configMgr`. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. The format of the entry is `https://[server]:[port]&#39;.
 
 #### Configuration du cache {#configure-cache}
 
@@ -180,8 +180,8 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 
 Effectuez les étapes suivantes pour configurer le cache des formulaires adaptatifs :
 
-1. Go to AEM web console configuration manager at https://[server]:[port]/system/console/configMgr.
-1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100. Cliquez sur **Enregistrer**.
+1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   Cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
