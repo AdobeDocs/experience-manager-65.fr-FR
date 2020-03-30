@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ Il est possible d’appeler l’application de création de correspondance à pa
 * l’URL des données XML extraites à partir de la source de données sélectionnée (à l’aide du paramètre cmDataUrl).
 
 Par exemple, le portail personnalisé prépare l’URL en tant que\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui peut être la valeur href d’un lien sur le portail.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, qui peut être la valeur href d’un lien sur le portail.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Par exemple, le portail personnalisé prépare l’URL en tant que\
 
 ## Appel inséré basé sur les données {#inline-data-based-invocation}
 
-Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
+Another (and a more secure) way to call the Create Correspondence application could be to simply hit the URL at https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, while sending the parameters and data to call the Create Correspondence application as a POST request (hiding them from the end user). En outre, vous pouvez désormais transmettre les données XML à l’application de création de correspondance en mode POST (dans le cadre de la même demande à l’aide du paramètre cmData), ce qui n’était pas possible (ou idéal) dans l’approche précédente.
 
 ### Paramètres de définition de lettre {#parameters-for-specifying-letter}
 
@@ -74,7 +74,7 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
   </tr>
   <tr>
    <td>cmUseTestData</td> 
-   <td>Booléen  </td> 
+   <td>Booléen</td> 
    <td>Pour réutiliser les données de test associées au dictionnaire de données.</td> 
   </tr>
  </tbody>
@@ -93,7 +93,7 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
   </tr>
   <tr>
    <td>cmPreview<br /> </td> 
-   <td>Booléen  </td> 
+   <td>Booléen</td> 
    <td>Permet d’ouvrir la lettre en mode aperçu<br /> </td> 
   </tr>
   <tr>
