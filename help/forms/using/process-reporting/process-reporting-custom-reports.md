@@ -1,8 +1,8 @@
 ---
-title: Rapports personnalisés dans les rapports de processus
-seo-title: Rapports personnalisés dans les rapports de processus
-description: Vous pouvez créer des rapports personnalisés et les ajouter à l’interface utilisateur des rapports de processus d’AEM Forms sur JEE.
-seo-description: Vous pouvez créer des rapports personnalisés et les ajouter à l’interface utilisateur des rapports de processus d’AEM Forms sur JEE.
+title: Rapports personnalisés dans le de processus
+seo-title: Rapports personnalisés dans le de processus
+description: Vous pouvez créer des rapports personnalisés et les ajouter à l’interface utilisateur du de processus d’AEM Forms sur JEE.
+seo-description: Vous pouvez créer des rapports personnalisés et les ajouter à l’interface utilisateur du de processus d’AEM Forms sur JEE.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,44 +10,44 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Rapports personnalisés dans les rapports de processus{#custom-reports-in-process-reporting}
+# Rapports personnalisés dans le de processus{#custom-reports-in-process-reporting}
 
 Vous pouvez utiliser l’interface REST de QueryBuilder ou créer un service OSGi à l’aide de l’API QueryBuilder pour créer un rapport personnalisé.
 
 ## Procédure générique de création d’un rapport personnalisé {#generic-steps-to-build-a-custom-report}
 
-Avant d’ajouter un rapport personnalisé, procédez comme suit :
+Avant d’ajouter un rapport personnalisé, effectuez la procédure de modèle suivante :
 
-1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans Process Reporting. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**dans l’interface utilisateur de Process Reporting.
-1. La requête d’URL (encapsulant la requête souhaitée) doit renvoyer un objet de résultat de requête approprié. Pour créer une requête, vous pouvez utiliser l’interface REST de [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) pour créer un service OSGi à l’aide de l’API QueryBuilder. Vous pouvez créer des requêtes dynamiques ou statiques.
+1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans  de processus. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option **[Synchroniser](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**dans l’interface utilisateur de  de processus.
+1. La requête d’URL (encapsulant le  de souhaité) doit renvoyer un objet de résultat  approprié. Pour créer un  de, vous pouvez utiliser l’interface REST de [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) pour créer un service OSGi à l’aide de l’API QueryBuilder. Vous pouvez créer des  dynamiques ou statiques.
 
-1. Créez une interface utilisateur personnalisée pour afficher les résultats. Vous pouvez créer une interface utilisateur autonome ou intégrer le résultat à l’interface utilisateur de Process Reporting existante.
+1. Créez une interface utilisateur personnalisée pour afficher les résultats. Vous pouvez créer une interface utilisateur autonome ou intégrer le résultat à l’interface utilisateur de  de processus existante.
 
 ## Utilisation de l’interface REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interface REST de CRX QueryBuilder expose les fonctionnalités du Créateur de requêtes de partage de ressources au moyen d’une API Java et d’une API REST. Découvrez comment utiliser l’interface [REST de](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder avant d’effectuer les étapes suivantes :
+L’interface REST de CRX QueryBuilder expose les fonctionnalités du Créateur de de partage de ressources au moyen d’une API Java et d’une API REST. Découvrez comment utiliser l’interface [REST de](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)CRX QueryBuilder avant d’effectuer les étapes suivantes :
 
-1. Naviguer jusqu’à l’URL `https://[server]:[port]/lc/bin/querybuilder.json`
-1. Créez une requête basée sur la structure de noeud de stockage et les propriétés de noeud Process Reporting.
+1. Naviguer jusqu’à l’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
+1. Créez un  basé sur la structure de noeud et les propriétés de noeud  de l’de processus.
 
    Vous pouvez spécifier des paramètres facultatifs pour spécifier le décalage, la limite, les accès et les propriétés. Vous pouvez figer les arguments des rapports statiques et récupérer les paramètres de l’interface utilisateur pour les rapports dynamiques.
 
-   Pour récupérer tous les noms de processus, la requête est :
+   Pour récupérer tous les noms de processus, le est le suivant :
 
-   `https://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
+   `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >
-   >Dans chaque requête, le paramètre de chemin pointe vers l’emplacement de stockage crx et les caractères sont placés en séquence d’échappement conformément à la norme d’URL.
+   >Dans chaque, le paramètre de chemin pointe vers l’emplacement  crx et les caractères sont placés sous forme d’échappement conformément à la norme d’URL.
 
-## Création d’un service à l’aide de l’API du créateur de requêtes {#creating-a-service-using-query-builder-api-nbsp}
+## Création d’un service à l’aide de l’API  Builder {#creating-a-service-using-query-builder-api-nbsp}
 
-Les conditions préalables à la création d’un service à l’aide de l’API du créateur de requêtes sont la [création et le déploiement d’un lot](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) OSGI CQ et [l’utilisation de l’API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)du créateur de requêtes.
+Les conditions préalables requises pour créer un service à l’aide de l’API du créateur de  de sont la [création et le déploiement d’un lot](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) OSGI CQ et [l’utilisation de l’API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)de  Builder de.
 
 1. Créez un service OSGi avec les annotations appropriées. Pour accéder à QueryBuilder, utilisez :
 
@@ -63,11 +63,11 @@ Les conditions préalables à la création d’un service à l’aide de l’API
     predicateGroup.setAllRequired(true);
    ```
 
-1. Ajoutez des prédicats au groupe de prédicats nouvellement créé. Quelques éléments de prédicat utiles sont [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator et TypePredicateEvaluator.](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)
+1. Ajouter prédicat au nouveau predicateGroup. Quelques éléments de prédicat utiles sont [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator et TypePredicateEvaluator.](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)
 
    Pour les rapports statiques, codez en dur les prédicats, tandis que pour les rapports dynamiques, récupérez les prédicats de la requête.
 
-   L’exemple de code pour obtenir toutes les instances d’un processus est :
+   L’exemple de code permettant d’obtenir toutes les instances d’un processus est :
 
    ```java
    Predicate predicate;
@@ -98,11 +98,11 @@ Les conditions préalables à la création d’un service à l’aide de l’API
      predicateGroup.add(predicate);
    ```
 
-1. Définissez la requête à l’aide du groupe de prédicats.
+1. Définissez le  à l’aide de la variable preateGroup.
 
    `Query query = queryBuilder.createQuery(predicateGroup, session);`
 
-1. Obtenez le résultat de la requête.
+1. Obtenez le résultat du .
 
    ```java
    query.setStart(offset); // hardcode or fetch from request
@@ -112,7 +112,7 @@ Les conditions préalables à la création d’un service à l’aide de l’API
            SearchResult searchResult = query.getResult();
    ```
 
-1. Itérer le résultat et transformer les résultats au format souhaité. Le code pour envoyer les résultats au format CSV est le suivant :
+1. Itérer le résultat et transformer les résultats au format souhaité. Le code permettant d’envoyer les résultats au format CSV est le suivant :
 
    ```java
    Iterator<Node> iter = searchResult.getNodes();
@@ -338,7 +338,7 @@ public class PeriodicProcessVolume {
 }
 ```
 
-L’exemple de `pom.xml`fichier à créer au-dessus du service est :
+L’exemple de `pom.xml`fichier à créer au-dessus du service est le suivant :
 
 ```java
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
@@ -424,19 +424,19 @@ L’exemple de `pom.xml`fichier à créer au-dessus du service est :
 
 Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Création d’un noeud](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX et octroi des privilèges [d’](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accès appropriés.
 
-1. Créez un noeud CRX sur le `/apps` noeud et octroyez les autorisations d’accès appropriées. (PERM_PROCESS_REPORTING_USER)
-1. Définissez le rendu au `/content` noeud.
-1. Ajoutez des fichiers JSP ou HTML au noeud créé à l’étape 1. Vous pouvez également ajouter des fichiers CSS.
+1. Créez un noeud CRX sur le `/apps` noeud et octroyez les autorisations d’accès appropriées. (PERM_PROCESS__USER)
+1. Définissez le rendu sur le `/content` noeud.
+1. Ajouter des fichiers JSP ou HTML au noeud créé à l’étape 1. Vous pouvez également ajouter des fichiers CSS.
 
    ![Exemple de noeud avec des fichiers JSP et CSS](assets/nodewith_jsp_css_new.png)
 
    Exemple de noeud avec des fichiers JSP et CSS
 
-1. Ajoutez du code JavaScript pour lancer un appel Ajax à l’API REST de querybuilder ou à votre service. Ajoutez également les arguments appropriés.
+1. Ajouter du code javascript pour  un appel Ajax à l’API REST de querybuilder ou à votre service. Ajoutez également les arguments appropriés.
 
-1. Ajoutez un gestionnaire de succès approprié à l’appel Ajax pour analyser et afficher le résultat. Vous pouvez analyser le résultat dans plusieurs formats (json/csv/user defined) et l’afficher dans un tableau ou dans d’autres formulaires.
+1. Ajouter un gestionnaire de succès approprié à l’appel Ajax pour analyser et afficher le résultat. Vous pouvez analyser le résultat dans plusieurs formats (json/csv/user defined) et l’afficher dans un tableau ou dans d’autres formulaires.
 
-1. (Facultatif) Ajoutez un gestionnaire d’erreur approprié à l’appel Ajax.
+1. (Facultatif) Ajouter un gestionnaire d’erreur approprié à l’appel Ajax.
 
 Un exemple de code JSP qui utilise le service OSGi et l’API QueryBuilder est le suivant :
 
@@ -628,7 +628,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Intégration de l’interface utilisateur des rapports dans l’interface utilisateur de Process Reporting existante {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Intégration de l’interface utilisateur des rapports dans l’interface utilisateur  de processus existante {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Création d’un noeud](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX et octroi des privilèges [d’](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)accès appropriés.
 
@@ -639,12 +639,12 @@ Les conditions préalables à la création d’une interface utilisateur distinc
    * **name**- Spécifie le nom du rapport. Le nom s’affiche dans l’interface utilisateur.
    * **link**- Spécifie le lien relatif vers le rendu de l’interface utilisateur distincte. Le lien est créé à l’étape 1.
    * **description**- Spécifie la description d&#39;une ligne du rapport. Vous pouvez laisser le champ de description vide.
-   * **icône**- Spécifie l&#39;image représentant le rapport de manière graphique. Vous pouvez laisser le champ d’icône vide.
+   * **icône**- Spécifie l&#39;image à représenter de manière graphique dans le rapport. Vous pouvez laisser le champ d’icône vide.
    ![Propriétés du noeud ](assets/node_properties_new.png)
 
    Propriétés du noeud
 
-1. L’interface utilisateur des rapports est intégrée à l’interface utilisateur des rapports de processus. Une fois l’interface utilisateur intégrée, l’interface utilisateur mise à jour ressemble aux images suivantes :
+1. L’interface utilisateur du rapport est intégrée à l’interface utilisateur  du processus. Une fois l’interface utilisateur intégrée, l’interface utilisateur mise à jour ressemble aux images suivantes :
 
    ![Interface utilisateur des rapports personnalisés nouvellement ajoutés](assets/sampleui_screenshot_new.png)
 
