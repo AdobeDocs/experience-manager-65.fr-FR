@@ -10,26 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Convert PDF Service Java API Quick Start (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+#  rapide de l’API Java du service Convert PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
-Les Démarrages rapides suivants sont disponibles pour l’API du service Convert PDF.
+Les  Quick suivants sont disponibles pour l’API du service Convert PDF.
 
-[Démarrage rapide (mode SOAP) : Conversion d’un document PDF en PostScript à l’aide de l’API Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[rapide (mode SOAP) : Conversion d’un PDF en PostScript à l’aide de l’API Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Conversion d’un document PDF en fichiers JPEG à l’aide de l’API Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[rapide (mode SOAP) : Conversion d’un PDF en fichiers JPEG à l’aide de l’API Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: La section Démarrage rapide de la programmation avec AEM forms est basée sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP) : Conversion d’un document PDF en PostScript à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
+##  rapide (mode SOAP) : Conversion d’un PDF en PostScript à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-L’exemple de code suivant convertit un document PDF appelé *Loan.pdf* en document PostScript appelé *Loan.ps*. (voir [Conversion de documents PDF en PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)).
+L’exemple de code suivant convertit un PDF appelé *Loan.pdf* en PostScript  appelé *Loan.ps*. (voir [Conversion de  PDF en PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)).
 
 ```as3
  /*
@@ -98,7 +98,7 @@ L’exemple de code suivant convertit un document PDF appelé *Loan.pdf* en docu
          {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -142,9 +142,9 @@ L’exemple de code suivant convertit un document PDF appelé *Loan.pdf* en docu
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Conversion d’un document PDF en fichiers JPEG à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
+##  rapide (mode SOAP) : Conversion d’un PDF en fichiers JPEG à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-L’exemple de code Java suivant convertit un document PDF appelé *Loan.pdf* en un ensemble de fichiers JPEG et les stocke dans le dossier C:\Adobe directory. Chaque fichier est nommé `tempFile[index].jpg`, où le premier fichier image est nommé *tempFile0.jpg*. (voir [Conversion de documents PDF au format](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)d’image).
+L’exemple de code Java suivant convertit un PDF appelé *Loan.pdf* en un ensemble de fichiers JPEG et les stocke dans le dossier C:\Adobe directory. Chaque fichier est nommé `tempFile[index].jpg`, où le premier fichier image est nommé *tempFile0.jpg*. (voir [Conversion de  PDF au format](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)d’image).
 
 ```as3
  /*
@@ -221,7 +221,7 @@ L’exemple de code Java suivant convertit un document PDF appelé *Loan.pdf* en
      {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
