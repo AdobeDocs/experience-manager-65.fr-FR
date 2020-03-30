@@ -1,6 +1,6 @@
 ---
-title: Barcoded Forms Service Java APIQuick Start (SOAP)
-seo-title: Barcoded Forms Service Java APIQuick Start (SOAP)
+title: Java APIQuick du service Barcoded Forms (SOAP)
+seo-title: Java APIQuick du service Barcoded Forms (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
@@ -10,22 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Barcoded Forms Service Java API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+#  rapide de l’API Java du service Barcoded Forms (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Barcoded Forms :
+Le  rapide de l’API Java (SOAP) est disponible pour le service Barcoded Forms :
 
-[Démarrage rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Les démarrages rapides situés dans Programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+##  rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
 Le code Java suivant décode les données de formulaire qui se trouvent dans un formulaire PDF enregistré sous le nom Loan.pdf. Les données décodées sont enregistrées sous la forme d’un fichier XML appelé extractData.xml. Cet exemple de code convertit un `org.w3c.dom.Document` objet en `com.adobe.idp.Document` objet. (Voir [Décodage des données](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)de formulaire à code à barres.)
 
@@ -100,7 +100,7 @@ Le code Java suivant décode les données de formulaire qui se trouvent dans un 
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
