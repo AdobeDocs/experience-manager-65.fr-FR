@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide de l’API Java du service de sécurité des documents (SOAP)
-seo-title: Démarrage rapide de l’API Java du service de sécurité des documents (SOAP)
+title: ' de sécurité JavaAPI Quick (SOAP)'
+seo-title: ' de sécurité JavaAPI Quick (SOAP)'
 description: 'null'
 seo-description: 'null'
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
@@ -10,44 +10,44 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Démarrage rapide de l’API Java Document Security Service (SOAP) {#document-security-service-javaapi-quick-start-soap}
+#  de sécurité API Java Quick (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Rights Management :
+Le  rapide de l’API Java (SOAP) est disponible pour le service Rights Management :
 
-[Démarrage rapide (mode SOAP) : Création d’une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
+[rapide (mode SOAP) : Création d’une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Modification d’une stratégie à l’aide de l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
+[rapide (mode SOAP) : Modification d’une stratégie à l’aide de l’API Java](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
+[rapide (mode SOAP) : Suppression d’une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Application d’une stratégie à un document PDF à l’aide de l’API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
+[rapide (mode SOAP) : Application d’une stratégie à un PDF à l’aide de l’API Java](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document PDF à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
+[rapide (mode SOAP) : Suppression d’une stratégie d’un PDF  à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Révocation d’un document à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
+[rapide (mode SOAP) : Révocation d’un à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Rétablissement de l’accès à un document révoqué à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
+[rapide (mode SOAP) : Rétablissement de l’accès à un révoqué à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Inspection des documents PDF protégés par une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
+[rapide (mode SOAP) : Inspection du PDF protégé par une stratégie à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création d’un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
+[rapide (mode SOAP) : Création d’un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Modification d’un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-modifying-a-watermark-using-the-java-api)
+[rapide (mode SOAP) : Modification d’un filigrane à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-modifying-a-watermark-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Recherche d’événements à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
+[rapide (mode SOAP) : Recherche de  à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document Word à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
+[rapide (mode SOAP) : Suppression d’une stratégie d’un Word  à l’aide de l’API Java](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Le démarrage rapide situé dans Programmation avec AEM Forms est basé sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM Forms reposent sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP) : Création d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
+##  rapide (mode SOAP) : Création d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
 L’exemple de code Java suivant crée une nouvelle stratégie nommée *Autoriser la copie*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu *de stratégies* global. Ce jeu de stratégies existe par défaut. (Voir [Création de stratégies](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
@@ -116,7 +116,7 @@ L’exemple de code Java suivant crée une nouvelle stratégie nommée *Autorise
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -176,7 +176,7 @@ L’exemple de code Java suivant crée une nouvelle stratégie nommée *Autorise
  
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
+##  rapide (mode SOAP) : Modification d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
 L’exemple de code Java suivant modifie une stratégie nommée *Autoriser la copie* en définissant la période d’ouverture hors connexion sur 40 jours. (Voir [Modification de stratégies](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
@@ -236,7 +236,7 @@ L’exemple de code Java suivant modifie une stratégie nommée *Autoriser la co
            {
                  //Set connection properties required to invoke AEM Forms using SOAP mode
                  Properties connectionProps = new Properties();
-                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -277,7 +277,7 @@ L’exemple de code Java suivant modifie une stratégie nommée *Autoriser la co
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
+##  rapide (mode SOAP) : Suppression d’une stratégie à l’aide de l’API Java {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
 L’exemple de code Java suivant supprime une stratégie nommée *Autoriser la copie*. (Voir [Suppression de stratégies](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
@@ -342,7 +342,7 @@ L’exemple de code Java suivant supprime une stratégie nommée *Autoriser la c
        {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -369,9 +369,9 @@ L’exemple de code Java suivant supprime une stratégie nommée *Autoriser la c
  
 ```
 
-## Démarrage rapide (mode SOAP) : Application d’une stratégie à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Application d’une stratégie à un PDF à l’aide de l’API Java {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant applique une stratégie nommée *Autoriser la copie* à un document PDF appelé *Loan.pdf*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu *de stratégies* global. Le document protégé par une stratégie est enregistré sous la forme d’un fichier PDF nommé *PolicyProtectedLoanDoc.pdf. *(voir [Application de stratégies à des documents](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF).
+L’exemple de code Java suivant applique une stratégie nommée *Autoriser la copie* à un PDF  nommé *Prêt.pdf*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu *de stratégies* global. Le protégé par une stratégie est enregistré sous la forme d’un fichier PDF nommé *PolicyProtectedLoanDoc.pdf. *(voir [Application de stratégies à des](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF).
 
 ```as3
  /*
@@ -431,7 +431,7 @@ L’exemple de code Java suivant applique une stratégie nommée *Autoriser la c
       {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -475,9 +475,9 @@ L’exemple de code Java suivant applique une stratégie nommée *Autoriser la c
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Suppression d’une stratégie d’un PDF  à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant supprime une stratégie d’un document PDF nommé *PolicyProtectedLoanDoc.pdf*. Le document PDF non sécurisé est enregistré sous le nom *nonProtectedLoan.pdf*. (voir [Suppression de stratégies de documents](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF).
+L’exemple de code suivant supprime une stratégie d’un PDF nommé *PolicyProtectedLoanDoc.pdf*. Le PDF non sécurisé est enregistré sous le nom *nonProtectedLoan.pdf*. (voir [Suppression de stratégies des](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF).
 
 ```as3
  /*
@@ -546,7 +546,7 @@ L’exemple de code suivant supprime une stratégie d’un document PDF nommé *
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -582,9 +582,9 @@ L’exemple de code suivant supprime une stratégie d’un document PDF nommé *
  
 ```
 
-## Démarrage rapide (mode SOAP) : Révocation d’un document à l’aide de l’API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
+##  rapide (mode SOAP) : Révocation d’un à l’aide de l’API Java {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-L’exemple de code Java suivant révoque un document protégé par une stratégie nommé *PolicyProtectedLoanDoc.pdf*. Un document PDF révisé se trouve à l’URL suivante `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (Voir [Révocation de l’accès aux documents](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+L’exemple de code Java suivant révoque un protégé par une stratégie nommé *PolicyProtectedLoanDoc.pdf*. Un PDF révisé se trouve à l’emplacement URL suivant `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Voir [Révocation de l’accès aux](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)de.)
 
 ```as3
  /*
@@ -656,7 +656,7 @@ L’exemple de code Java suivant révoque un document protégé par une stratég
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -682,7 +682,7 @@ L’exemple de code Java suivant révoque un document protégé par une stratég
          LicenseManager licManager = rightsClient.getLicenseManager();
  
          //Specify the URL to where an updated document is located
-         URL myURL = new URL("https://[server]:[port]/RightsManagement/UpdatedLoan.pdf");
+         URL myURL = new URL("https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf");
  
          //Revoke the policy-protected PDF document
          licManager.revokeLicense(revokeLic, License.DOCUMENT_REVISED, myURL);
@@ -696,9 +696,9 @@ L’exemple de code Java suivant révoque un document protégé par une stratég
  
 ```
 
-## Démarrage rapide (mode SOAP) : Inspection des documents PDF protégés par une stratégie à l’aide de l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
+##  rapide (mode SOAP) : Inspection du PDF protégé par une stratégie à l’aide de l’API Java {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-L’exemple de code Java suivant inspecte un document PDF protégé par une stratégie appelé *PolicyProtectedLoanDoc.* pdf. (voir [Inspection des documents](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protégés par une stratégie).
+L’exemple de code Java suivant inspecte un PDF protégé par une stratégie et nommé *PolicyProtectedLoanDoc.* pdf. (voir [Contrôle des règles PDF protégés par une stratégie](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)).
 
 ```as3
  /*
@@ -769,7 +769,7 @@ L’exemple de code Java suivant inspecte un document PDF protégé par une stra
            {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -814,9 +814,9 @@ L’exemple de code Java suivant inspecte un document PDF protégé par une stra
  
 ```
 
-## Démarrage rapide (mode SOAP) : Rétablissement de l’accès à un document révoqué à l’aide de l’API Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
+##  rapide (mode SOAP) : Rétablissement de l’accès à un révoqué à l’aide de l’API Java {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-L’exemple de code Java suivant rétablit l’accès à un document PDF révoqué nommé *PolicyProtectedLoanDoc.pdf*. (Voir [Rétablissement de l’accès aux documents](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)révoqués.)
+L’exemple de code Java suivant rétablit l’accès à un PDF révoqué  nommé *PolicyProtectedLoanDoc.pdf*. (Voir [Rétablissement de l’accès à un](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)révoqué.)
 
 ```as3
  /*
@@ -883,7 +883,7 @@ L’exemple de code Java suivant rétablit l’accès à un document PDF révoqu
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -920,7 +920,7 @@ L’exemple de code Java suivant rétablit l’accès à un document PDF révoqu
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un filigrane PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
+##  rapide (mode SOAP) : Création d’un filigrane PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
 L’exemple de code Java suivant crée un filigrane PDF nommé &quot;Exemple de filigrane PDF&quot;. Ce filigrane contient un élément unique (voir [Création de filigranes](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
@@ -990,7 +990,7 @@ public class PDFWatermarksSOAPMode {
             Properties connectionProps = new Properties();
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT,
-                    "https://[server]:[port]/");
+                    "https://'[server]:[port]'/");
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,
                     ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -1053,7 +1053,7 @@ public class PDFWatermarksSOAPMode {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
+##  rapide (mode SOAP) : Création d’un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
 L’exemple de code Java suivant crée un filigrane de texte nommé *Exemple de filigrane* de texte. Ce filigrane contient un élément unique.
 
@@ -1120,7 +1120,7 @@ public class TextWatermarks {
             Properties connectionProps = new Properties();
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT,
-                    "https://[server]:[port]/");
+                    "https://'[server]:[port]'/");
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,
                     ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -1202,7 +1202,7 @@ public class TextWatermarks {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
+##  rapide (mode SOAP) : Modification d’un filigrane de texte à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
 
 L’exemple de code Java suivant modifie un filigrane nommé &quot;Exemple de filigrane de texte&quot; et définit l’opacité du premier élément sur 100.
 
@@ -1265,7 +1265,7 @@ public class ModifyWatermarks {
             Properties connectionProps = new Properties();
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT,
-                    "https://[server]:[port]");
+                    "https://'[server]:[port]'");
             connectionProps.setProperty(
                     ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,
                     ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -1314,7 +1314,7 @@ public class ModifyWatermarks {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’un filigrane à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
+##  rapide (mode SOAP) : Modification d’un filigrane à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
 L’exemple de code Java suivant modifie un filigrane nommé *Confidential* en modifiant la valeur de l’ `opacity` attribut à 80.
 
@@ -1378,7 +1378,7 @@ L’exemple de code Java suivant modifie un filigrane nommé *Confidential* en m
          {
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1412,9 +1412,9 @@ L’exemple de code Java suivant modifie un filigrane nommé *Confidential* en m
  
 ```
 
-## Démarrage rapide (mode SOAP) : Recherche d’événements à l’aide de l’API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
+##  rapide (mode SOAP) : Recherche de  à l’aide de l’API Java {#quick-start-soap-mode-searching-for-events-using-the-java-api}
 
-L’exemple de code Java suivant recherche l’événement create policy.
+L’exemple de code Java suivant recherche le  de création d’une stratégie.
 
 ```as3
  /*
@@ -1481,7 +1481,7 @@ L’exemple de code Java suivant recherche l’événement create policy.
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1525,9 +1525,9 @@ L’exemple de code Java suivant recherche l’événement create policy.
  
 ```
 
-## Démarrage rapide (SOAP) : Application d’une stratégie à un document Word à l’aide de l’API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
+##  rapide (SOAP) : Application d’une stratégie à un Word  à l’aide de l’API Java {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-L’exemple de code Java suivant applique une stratégie nommée *Autoriser la copie* à un document Word appelé *Loan.doc*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu *de stratégies* global. Le document protégé par une stratégie est enregistré sous la forme d’un fichier DOC nommé *PolicyProtectedLoanDoc.doc. *(voir [Application de stratégies à des documents](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF).
+L’exemple de code Java suivant applique une stratégie nommée *Autoriser la copie* à un Word  nommé *Loan.doc*. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu *de stratégies* global. Le  protégé par une stratégie est enregistré sous la forme d’un fichier DOC nommé *PolicyProtectedLoanDoc.doc. *(voir [Application de stratégies à des](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF).
 
 ```as3
  /*
@@ -1595,7 +1595,7 @@ L’exemple de code Java suivant applique une stratégie nommée *Autoriser la c
       {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1640,9 +1640,9 @@ L’exemple de code Java suivant applique une stratégie nommée *Autoriser la c
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie d’un document Word à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
+##  rapide (mode SOAP) : Suppression d’une stratégie d’un Word  à l’aide de l’API Java {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-L’exemple de code suivant supprime une stratégie d’un document Word nommé *PolicyProtectedLoanDoc.doc*. Le document Word non sécurisé est enregistré sous le nom *nonProtectedLoan.doc*. (voir [Suppression de stratégies de documents](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)Word).
+L’exemple de code suivant supprime une stratégie d’un Word nommé *PolicyProtectedLoanDoc.doc*. Le Word non sécurisé est enregistré sous le nom *nonProtectedLoan.doc*. (voir [Suppression de stratégies du](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents)Word).
 
 ```as3
  /*
@@ -1711,7 +1711,7 @@ L’exemple de code suivant supprime une stratégie d’un document Word nommé 
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1748,7 +1748,7 @@ L’exemple de code suivant supprime une stratégie d’un document Word nommé 
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
+##  rapide (mode SOAP) : Création d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
 L’exemple de code Java suivant crée une nouvelle stratégie abstraite nommée AllowCopy. Le jeu de stratégies auquel la stratégie est ajoutée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Voir Création de stratégies.)
 
@@ -1811,7 +1811,7 @@ public class CreateAbstractPolicySoap {
 
         //Set connection properties required to invoke forms server using SOAP mode
         Properties connectionProps = new Properties();
-        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1865,7 +1865,7 @@ public class CreateAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Modification d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
+##  rapide (mode SOAP) : Modification d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
 L’exemple de code Java suivant modifie une stratégie abstraite nommée AllowCopy. Le jeu de stratégies dans lequel la stratégie est modifiée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Voir Création de stratégies.)
 
@@ -1927,7 +1927,7 @@ public class ModifyingAbstractPolicySoap {
 
         //Set connection properties required to invoke forms server using SOAP mode
         Properties connectionProps = new Properties();
-        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1964,7 +1964,7 @@ public class ModifyingAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
+##  rapide (mode SOAP) : Suppression d’une stratégie abstraite à l’aide de l’API Java {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
 
 L’exemple de code Java suivant supprime une stratégie abstraite nommée AllowCopy. Le jeu de stratégies à partir duquel la stratégie est supprimée est nommé Jeu de stratégies global. Ce jeu de stratégies existe par défaut. (Voir Création de stratégies.)
 
@@ -2025,7 +2025,7 @@ public class DeleteAbstractPolicySoap {
 
         //Set connection properties required to invoke AEM Forms using SOAP mode
         Properties connectionProps = new Properties();
-        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+        connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2051,9 +2051,9 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Protection d’un fichier PDF dans le processus des instructions pour un utilisateur existant, à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+##  rapide (mode SOAP) : Protection d’un fichier PDF dans le processus des instructions pour un utilisateur existant, à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
-L’exemple de code Java suivant illustre la méthode de protection d’un document dans le processus des instructions pour un utilisateur existant.
+L’exemple de code Java suivant illustre la méthode de protection d’un dans le flux de travail des instructions pour un utilisateur existant.
 
 ```as3
 /*
@@ -2116,7 +2116,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 
             //Set connection properties required to invoke forms server using SOAP mode
             Properties connectionProps = new Properties();
-            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -2159,12 +2159,12 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Protection d’un fichier PDF dans le processus des instructions pour un nouvel utilisateur à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+##  rapide (mode SOAP) : Protection d’un fichier PDF dans le processus des instructions pour un nouvel utilisateur à l’aide de l’API Java {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
-L’exemple de code Java suivant montre comment protéger un document dans le flux de travail des instructions. Il s’agit d’un processus en deux étapes :
+L’exemple de code Java suivant montre comment protéger un dans le flux de travaux des instructions. Il s’agit d’un processus en deux étapes :
 
 * Un nouvel utilisateur, une nouvelle licence et une nouvelle stratégie sont créés.
-* L’utilisateur est associé à la licence et à la stratégie et le document est protégé.
+* L’utilisateur est associé à la licence et à la stratégie, et le est protégé.
 
 ```as3
 /*
@@ -2233,7 +2233,7 @@ public class protectStatementWorkFlowSoap {
 
             //Set connection properties required to invoke forms server using SOAP mode
             Properties connectionProps = new Properties();
-            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "Jboss");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
