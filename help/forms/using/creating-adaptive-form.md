@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 24728d320d46edc5e18385868ba92cb4292c8c5f
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 24728d320d46edc5e18385868ba92cb4292c8c5f
 
 Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
-1. Accédez à l’instance Auteur d’AEM Forms à l’adresse `https://[server]:[port]/<custom-context-if-any>.`
+1. Accédez à l’instance Auteur d’AEM Forms à l’adresse `https://'[server]:[port]'/<custom-context-if-any>.`
 
 1. Entrez vos informations d’identification dans la page de connexion d’AEM.
 
@@ -35,8 +35,8 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 1. Une option Ajouter des propriétés s’affiche. Spécifiez les valeurs des champs de propriété suivants. Les champs Titre et Nom sont obligatoires :
 
    * **[!UICONTROL Titre :]** spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur d’AEM Forms.
-   * **** Nom : Indique le nom du formulaire. Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
-   * **** Description : Indique les informations détaillées sur le formulaire.
+   * **[!UICONTROL Nom :]** Indique le nom du formulaire. Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
+   * **[!UICONTROL Description :]** Indique les informations détaillées sur le formulaire.
    * **[!UICONTROL Balises :]** indique les balises pour individualiser le formulaire adaptatif. Les balises aident à rechercher le formulaire. Pour créer des balises, saisissez les nouveaux noms de balise dans la boîte de dialogue **Balises.**
 
 1. Vous pouvez créer un formulaire adaptatif basé sur l’un des modèles de formulaire suivants :
@@ -97,7 +97,7 @@ Procédez comme suit pour utiliser un modèle de formulaire XFA en tant que mod�
 1. In the Form Model tab, from the drop-down list, select **[!UICONTROL Form Templates]**. Tous les modèles de formulaire qui ont été chargés vers le référentiel via l’interface utilisateur d’AEM Forms sont répertoriés ici pour être sélectionnés. Sélectionnez un modèle dans la liste.
 
    ![Association d’un modèle de formulaire XFA à un formulaire adaptatif](assets/form_model_xfa_associate.png)
-   **** Figure : *Sélection d’un modèle de formulaire*
+   **Figure :** *Sélection d’un modèle de formulaire*
 
    >[!NOTE]
    >
@@ -126,12 +126,12 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
    >Assurez-vous que le nom du schéma JSON se termine par **.schema.json**. Par exemple : mySchema.schema.json
 
    ![Sélection du schéma XML ou JSON](assets/upload-schema.png)
-   **** Figure : *Sélection d’un schéma XML ou JSON*
+   **Figure :** *Sélection de  XML ou JSON*
 
 1. (Pour le schéma XML uniquement) Après avoir sélectionné ou chargé un schéma XML, spécifiez un élément racine du fichier XSD sélectionné à mapper avec le formulaire adaptatif.
 
    ![Sélection de l’élément racine de schéma XSD](assets/xsd-root-element.png)
-   **** Figure : *Sélection de l’élément racine XSD*
+   **Figure :** *Sélection de l’élément racine XSD*
 
 >[!NOTE]
 >
@@ -199,4 +199,4 @@ Par défaut, l’option d’enregistrement automatique n’est pas activée. Vou
    >
    >Pour que l’option d’enregistrement automatique fonctionne pour les utilisateurs anonymes, assurez-vous de configurer le service de configuration commun aux formulaires pour autoriser tous les utilisateurs à prévisualiser, vérifier et signer des formulaires.
    >
-   >To configure the service, go to AEM Web Console configuration at `https://[server]:[host]/system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
+   >To configure the service, go to AEM Web Console configuration at `https://'[server]:[port]'system/console/configMgr` and edit the **[!UICONTROL Forms Common Configuration Service]** to choose the **[!UICONTROL All Users]** option in the **[!UICONTROL Allow]** field, and save the configuration.
