@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -42,7 +42,7 @@ Les étapes ci-dessous ajoutent une commande « Télécharger un PDF aplati »
 
 Pour personnaliser Correspondence Management et permettre aux utilisateurs de télécharger un fichier PDF aplati ou des lettres, suivez les étapes ci-après :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 
 1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier de sélection en procédant comme suit :
 
@@ -61,11 +61,11 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/content/massets/jcr:content/body/content/header/items/selection/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/massets/jcr:content/body/content/header/items/selection/items
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
       ![Nœud de recouvrement](assets/2_createnodedownloadflatpdf.png)
 
@@ -79,7 +79,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : downloadFlatPDF (ou le nom que vous souhaitez donner à cette propriété)
+      **Nom :** downloadFlatPDF (ou le nom que vous souhaitez donner à cette propriété)
 
       **Type :** nt:unstructured
 
@@ -102,7 +102,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
         <tr>
         <td>foundation-collection-action</td>
         <td>Chaîne</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> peut être une ou plusieurs (entrées multiples séparées par des virgules) parmi les suivantes : LETTRE,TEXTE,LISTE,CONDITION,DATADICTIONNAIRE</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> peut être une ou plusieurs (entrées multiples séparées par des virgules) parmi les suivantes : LETTRE,TEXTE,,CONDITION,DATADICTIONNAIRE</p> </td>
         </tr>
         <tr>
         <td>icône</td>
@@ -145,11 +145,11 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **Chemin :** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications. Cliquez sur **Enregistrer tout**.
 
@@ -227,7 +227,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       Le code ci-dessus correspond au traitement des actions spécifiques aux lettres de la commande créée dans cette procédure. Pour le traitement des actions d’autres ressources, modifiez le code javascript.
 
-1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier actionhandlers, en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier actionhandlers. Pour ce faire, procédez comme suit :
 
    1. Right-click the **items** folder at the following path and select **Overlay Node**:
 
@@ -235,11 +235,11 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **Chemin :** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -251,7 +251,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété) doit être unique. Si vous utilisez un autre nom ici, spécifiez également le même nom dans la variable ACTION_URL du fichier formaction.js.)
+      **Nom :** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété) doit être unique. Si vous utilisez un autre nom ici, spécifiez également le même nom dans la variable ACTION_URL du fichier formaction.js.)
 
       **Type :** nt:unstructured
 
@@ -349,7 +349,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 Après avoir ajouté une fonctionnalité personnalisée pour télécharger le PDF aplati de vos lettres, vous pouvez suivre les étapes suivantes pour télécharger la version PDF aplatie de la lettre que vous sélectionnez :
 
-1. Accédez à `https://[server]:[port]/[ContextPath]/projects.html` et connectez-vous.
+1. Accédez à `https://'[server]:[port]'/[ContextPath]/projects.html` et connectez-vous.
 
 1. Sélectionnez **Formulaires > Lettres**. Correspondence Management répertorie les lettres disponibles dans le système.
 1. Click **Select** and then click a letter to select it.
@@ -359,7 +359,7 @@ Après avoir ajouté une fonctionnalité personnalisée pour télécharger le PD
 
    ![Fonctionnalité personnalisée : Télécharger le PDF aplati](assets/5_downloadflatpdf.png)
 
-1. Dans la boîte de dialogue Télécharger la lettre au format PDF, sélectionnez le fichier XML approprié à partir duquel vous souhaitez renseigner les données dans le PDF.
+1. Dans la boîte de dialogue Télécharger la lettre en tant que PDF, sélectionnez le fichier XML approprié à partir duquel vous souhaitez renseigner les données dans le PDF.
 
    >[!NOTE]
    >
