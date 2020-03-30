@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,9 +33,9 @@ Pour ouvrir une session en tant qu’administrateur, vous devez avoir le rôle d
 
 Pour ouvrir une session de pages Web à l’aide d’un navigateur, vous devez disposer d’un compte et de l’URL Document Security. L’URL des utilisateurs diffère de celle des administrateurs. Les administrateurs peuvent également se connecter aux pages utilisateur pour créer des stratégies.
 
-Si vous avez accès à plusieurs installations de Document Security, vous avez besoin de l’URL de l’instance de Document Security à laquelle vous souhaitez accéder. Contactez votre administrateur si vous ne disposez pas de cette information. The default URL for the user pages is https://*[host]*:*[port]*/edc. Dans certains cas, le numéro de port n’est pas nécessaire. Renseignez-vous auprès de votre administrateur pour plus de précisions.
+Si vous avez accès à plusieurs installations de Document Security, vous avez besoin de l’URL de l’instance de Document Security à laquelle vous souhaitez accéder. Contactez votre administrateur si vous ne disposez pas de cette information. The default URL for the user pages is `https://[host]:[port]/edc`. Dans certains cas, le numéro de port n’est pas nécessaire. Renseignez-vous auprès de votre administrateur pour plus de précisions.
 
-The default URL for administrators is https://*[host]*:*[port]*/adminui.
+L’URL par défaut pour les administrateurs est `https://[host]:[port]/adminui`.
 
 A l’intention des administrateurs, un compte de super-administrateur par défaut est créé lors de l’installation. Vous pouvez utiliser ce compte pour ouvrir une session à la première installation de Document Security.
 
@@ -45,9 +45,9 @@ A l’intention des administrateurs, un compte de super-administrateur par défa
 
 1. Saisissez l’URL dans votre navigateur :
 
-   Document security URL: `https://`*[host ]*`:`*[port]* `/edc`
+   URL de  de sécurité : `https://[host]:[port]/edc`
 
-   or Administration Console URL: `https://`*[host ]*`:`*[port]* `/adminui`
+   ou URL d’Administration Console : `https://[host]:[port]/adminui`
 
 1. Dans la fenêtre d’ouverture de session, saisissez votre nom d’utilisateur et votre mot de passe, puis cliquez sur OK.
 1. Dans Administration Console, cliquez sur Services > Sécurité des documents.
