@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -80,7 +80,7 @@ Notez toutefois que l’identification est impossible ou les résultats sont amb
 
 Pour identifier et accéder aux données utilisateur stockées pour une instance de flux de travail, procédez comme suit :
 
-1. On AEM author instance, go to `https://[server]:[port]/crx/de` and navigate to **[!UICONTROL Tools > Query]**.
+1. On AEM author instance, go to `https://'[server]:[port]'/crx/de` and navigate to **[!UICONTROL Tools > Query]**.
 
    Sélectionnez **[!UICONTROL SQL2]** dans le menu déroulant **[!UICONTROL Type]**.
 
@@ -133,7 +133,7 @@ Vous devez être un administrateur AEM pour supprimer des données utilisateur d
 
 1. Perform this step for workflow instances in **RUNNING**, **SUSPENDED**, or **STALE** status:
 
-   1. Accédez à `https://[server]:[port]/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
+   1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Flux de travail > Modèles]**.
    1. Sélectionnez les instances de flux de travail correspondant à l’utilisateur et appuyez sur **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
    For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
