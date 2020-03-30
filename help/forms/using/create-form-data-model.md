@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,7 +22,7 @@ Ce didacticiel est une étape de la série [Création de votre premier formulair
 
 ## À propos du didacticiel {#about-the-tutorial}
 
-Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données dorsales disparates, telles que le profil utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet du modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
+Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que les  d’utilisateurs AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet du modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
 Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
@@ -37,7 +37,7 @@ Le modèle de données de formulaire se présentera comme ceci :
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**********A. Sources de données configurées** B. Schémas de source de données **C.** Services disponibles **D. Objets de modèle de données** E. Services configurés
+**A.** Sources de données configurées **B.** de source de données  **C.** Services disponibles **D.** Objets de modèle de données **E.** Services configurés
 
 ## Conditions préalables {#prerequisites}
 
@@ -70,7 +70,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
       * **Nom de la source de données :** vous pouvez spécifier un nom. Spécifiez par exemple **WeRetailMySQL**.
       * **Nom de la propriété de service de source de données** : spécifiez le nom de la propriété de service contenant le nom de la source de données. Il est spécifié lors de l’enregistrement de l’instance de source de données en tant que service OSGi. Par exemple, **datasource.name**.
       * **Classe de pilote JDBC** : spécifiez le nom de la classe Java du pilote JDBC. Pour la base de données MySQL, spécifiez **com.mysql.jdbc.Driver**.
-      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données MySQL s’exécutant sur le port 3306 et le schéma weretail, l’URL est : `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données MySQL s’exécutant sur le port 3306 et le  Web, l’URL est : `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Nom d’utilisateur :** nom d’utilisateur de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Test lors de l’emprunt :** activez l’option **Test lors de l’emprunt.**
@@ -129,7 +129,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
       * mise à jour
    Appuyez sur **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
-   ![Schéma WeRetail](assets/weretail_schema_new.png)
+   ![WebVente au détail](assets/weretail_schema_new.png)
 
    >[!NOTE]
    >
@@ -168,7 +168,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * **Objet de modèle de sortie** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma customerdetail
+         de détails personnalisés
 
       * **Revenir au tableau** : désactivez l’option **Revenir au tableau**.
       * **Arguments** : sélectionnez l’argument nommé **ID**.
@@ -187,7 +187,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * **Objet de modèle d’entrée** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma customerdetail
+         de détails personnalisés
 
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
 
