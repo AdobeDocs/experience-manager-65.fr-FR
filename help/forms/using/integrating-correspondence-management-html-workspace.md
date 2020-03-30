@@ -9,7 +9,7 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,9 +24,9 @@ Par exemple, considérons Correspondence Management comme exemple de candidat po
 
 ## Création d’actifs de Correspondence Management {#create-correspondence-management-assets}
 
-Commencez par créer un exemple de modèle Correspondence Management rendu dans l’espace de travail AEM Forms. For more details, see [Create a letter template](../../forms/using/create-letter.md).
+en créant un exemple de modèle Correspondence Management qui est rendu dans l’espace de travail AEM Forms. For more details, see [Create a letter template](../../forms/using/create-letter.md).
 
-Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management est réussi. L’URL a un modèle semblable à celui de `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Accédez au modèle Correspondence Management à son URL pour vérifier si le rendu du modèle Correspondence Management est réussi. L’URL a un modèle semblable à celui de `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 où `encodedLetterId` correspond à l’ID de lettre codé URL. Spécifiez le même identifiant de lettre lors de la définition du processus de rendu pour une tâche d’espace de travail dans Workbench.
 
@@ -104,7 +104,7 @@ Procédez comme suit pour créer une tâche pour le rendu et l’envoi d’une l
    Dans la boîte de dialogue Définir l’activité, sélectionnez l’activité appropriée tel que GetLetterInstanceInfo et cliquez sur **OK**.
 
 1. Déployer l’application. Si vous y êtes invité, connectez-vous et enregistrez les actifs.
-1. Log in to the AEM forms workspace at https://[server]:[port]/lc/content/ws.
+1. Log in to the AEM forms workspace at https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Ouvrez la tâche que vous avez ajoutée, CMRenderer. La lettre Correspondence Management s’affiche.
 
    ![cminworkspace](assets/cminworkspace.png)
