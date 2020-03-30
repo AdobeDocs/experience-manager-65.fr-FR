@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -163,7 +163,7 @@ Vous pouvez modifier la ressource de fragment et ses liaisons dans la boîte de 
 
 Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adaptatif depuis l’interface utilisateur AEM Forms.
 
-1. Aller à `https://[hostname]:[port]/aem/forms.html`.
+1. Accédez à `https://[hostname]:'port'/aem/forms.html`.
 
 1. Cliquez sur **Sélectionner** dans la barre d’outils de l’interface utilisateur AEM Forms et sélectionnez un fragment de formulaire adaptatif. La barre d’outils affiche les opérations suivantes que vous pouvez effectuer sur le fragment de formulaire adaptatif sélectionné.
 
@@ -202,7 +202,7 @@ Vous pouvez effectuer plusieurs opérations sur des fragments de formulaire adap
    <td><p>Génère un dictionnaire pour localiser le fragment sélectionné. Pour plus d’informations, voir <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Localisation des formulaires adaptatifs</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publier / Annuler la publication</p> </td>
+   <td><p>Publier/Annuler la publication</p> </td>
    <td><p>Publie ou annule la publication du fragment sélectionné.<br /> <br /> </p> </td>
   </tr>
   <tr>
