@@ -1,7 +1,7 @@
 ---
 title: Processus basé sur l’utilisation de Forms sur OSGi
 seo-title: Créez rapidement des processus basés sur des formulaires adaptatifs, automatisez les opérations de services de document, et utilisez Adobe Sign avec les processus AEM
-description: Utiliser le processus AEM Forms pour automatiser et créer rapidement des révisions et des approbations, pour démarrer Document Services
+description: 'Utiliser le flux de travail AEM Forms pour automatiser et créer rapidement des révisions et des approbations, pour  des services de '
 seo-description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement la révision et les approbations, pour démarrer Documents Services (par exemple, pour convertir un document PDF dans un autre format), pour intégrer le processus de signature Adobe Sign et bien plus encore.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: document_services
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ Une fois configurés, ces processus peuvent être déclenchés manuellement pour
 
 Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation de Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](../../forms/using/introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
 
-Toutes les étapes du processus AEM Forms prennent en charge l’utilisation de variables. Les variables permettent aux étapes du flux de travail de conserver et de transmettre les métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables (tableaux) pour stocker plusieurs instances de données identiques associées. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de flux de travaux orientés Forms, voir Flux de travaux centrés sur [Forms sur OSGi - Guide de référence](../../forms/using/aem-forms-workflow-step-reference.md)des étapes. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les processus](../../forms/using/variable-in-aem-workflows.md)AEM.
+Toutes les étapes du processus AEM Forms prennent en charge l’utilisation de variables. Les variables permettent aux étapes du flux de travail de conserver et de transmettre les métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables (tableaux) pour stocker plusieurs instances de données identiques associées. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de flux de travaux orientés Forms, voir Flux de travaux centrés sur [Forms sur OSGi - Guide de référence](../../forms/using/aem-forms-workflow-step-reference.md)des étapes. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans le](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 Le diagramme suivant illustre le processus complet de création, d’exécution et contrôle d’un processus basé sur l’utilisation de Forms sur OSGi.
 
@@ -65,7 +65,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
 [Obtenir le fichier](assets/example-mortgage-loan-application.zip)
 
-1. Ouvrez la console Modèles de processus. The default URL is https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Ouvrez la console Modèles de processus. The default URL is https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
 1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de workflow s’ouvre.
 1. Saisissez le **titre** et le **nom** (facultatif),  par exemple, une demande de prêt immobilier. Appuyez sur **Terminé**.
 1. Sélectionnez le processus nouvellement créé et cliquez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
@@ -75,7 +75,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
 1. Activez les notifications électroniques. Vous pouvez configurer le flux de travail centré sur Forms sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
 
-   1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
+   1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
    1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -97,23 +97,23 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
 1. Faites glisser et déposez le composant Division OU de l’explorateur d’étapes vers le modèle de processus. La Division OU divise le processus et une seule branche est active par la suite. Cette étape vous permet d’ajouter des chemins de traitement conditionnels dans le workflow. Vous ajoutez des étapes de workflow à chaque branche selon vos besoins.
 
-   Vous pouvez définir l&#39;expression de routage pour une branche à l&#39;aide d&#39;une définition de règle, d&#39;un script ECMA ou d&#39;un script externe.
+   Vous pouvez définir   pour une branche à l’aide d’une définition de règle, d’un script ECMA ou d’un script externe.
 
-   Utilisez l’éditeur d’expression pour créer des expressions de routage pour les branches 1 et 2. Ces expressions de routage permettent de choisir une branche en fonction de l’action de l’utilisateur dans la boîte de réception AEM.
+   Utilisez l’éditeur de  de  pour créer des de  pour les branches 1 et 2. Ces    vous aident à choisir une branche en fonction de l’action de l’utilisateur dans la boîte de réception AEM.
 
-   **Expression de routage pour la branche 2**
+   **pour la branche 1**
 
    When a user taps **Approve** in AEM Inbox, Branch 1 is activated.
 
    ![OU Exemple de fractionnement](assets/orsplit_branch1_active_new.png)
 
-   **Expression de routage pour la branche 2**
+   **pour la branche 2**
 
    When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
    ![OU Exemple de fractionnement](assets/orsplit_branch2_active_new.png)
 
-   Pour plus d’informations sur la création d’expressions de routage à l’aide de variables, voir [Variables dans les processus](../../forms/using/variable-in-aem-workflows.md)AEM Forms.
+   Pour plus d’informations sur la création de    à l’aide de variables, voir [Variables dans le](../../forms/using/variable-in-aem-workflows.md)AEM Forms.
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
@@ -229,7 +229,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
    <td>Indiquez le nom du dossier de contrôle. Ce champ prend uniquement en charge les caractères alphanumériques.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Chemin</code></td>
+   <td><span class="uicontrol">Chemin   </code></td>
    <td>Spécifiez l’emplacement physique du dossier de contrôle. Dans un environnement organisé en grappes, utilisez un dossier réseau partagé accessible à partir du noeud de la grappe AEM.</td>
   </tr>
   <tr>
@@ -257,7 +257,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
 ### Envoi d’une communication interactive ou d’une lettre {#letter}
 
-Vous pouvez associer et exécuter un flux de travail Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans les processus de gestion de la correspondance, les processus sont utilisés pour les communications interactives et les lettres après traitement. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](../../forms/using/submit-letter-topostprocess.md).
+Vous pouvez associer et exécuter un flux de travail Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans la gestion de la correspondance, les  sont utilisés pour les communications interactives et les lettres postérieures au traitement. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](../../forms/using/submit-letter-topostprocess.md).
 
 ## Autres configurations {#additional-configurations}
 
@@ -265,7 +265,7 @@ Vous pouvez associer et exécuter un flux de travail Forms sur OSGi lors de l’
 
 Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier électronique des processus AEM pour envoyer un courrier électronique. Effectuez les étapes suivantes pour spécifier les serveurs de messagerie et les autres configurations requises pour l’envoi de courriers électroniques :
 
-1. Go to AEM configuration manager at https://[server]:[port]/system/console/configMgr.
+1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
 
