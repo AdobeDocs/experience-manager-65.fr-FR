@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide de l’API Java LiveCycleProcess (SOAP)
-seo-title: Démarrage rapide de l’API Java LiveCycleProcess (SOAP)
+title: 'rapide de l’API Java LiveCycleProcess (SOAP) '
+seo-title: 'rapide de l’API Java LiveCycleProcess (SOAP) '
 description: 'null'
 seo-description: 'null'
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
@@ -10,34 +10,34 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Démarrage rapide de l’API Java LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
+#  rapide de l’API Java LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Le démarrage rapide de l’API Java (SOAP) est disponible pour les processus. Une instance *de* processus est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou à partir de Workspace.
+Le  rapide API Java (SOAP) est disponible pour les processus. Une instance *de* processus est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou à partir de Workspace.
 
-[Démarrage rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les démarrages rapides situés dans Programmation avec AEM Forms sont basés sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Les  rapides situés dans Programmation avec AEM Forms reposent sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-## Démarrage rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+##  rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 L’exemple de code Java suivant recherche des instances de processus basées sur le processus *PrêtPrêtPrêt - Préconstruit* .
 
@@ -108,7 +108,7 @@ L’exemple de code Java suivant recherche des instances de processus basées su
  
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -155,7 +155,7 @@ L’exemple de code Java suivant recherche des instances de processus basées su
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+##  rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
 L’exemple de code Java suivant suspend une instance de processus. Pour suspendre avec succès une instance de processus, vous avez besoin de l’identificateur d’appel de processus qui peut être obtenu lors de l’appel d’un processus de longue durée à l’aide de l’API d’appel.
 
@@ -220,7 +220,7 @@ L’exemple de code Java suivant suspend une instance de processus. Pour suspend
  
                   //Set connection properties required to invoke AEM Forms
                  Properties connectionProps = new Properties();
-                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -247,9 +247,9 @@ L’exemple de code Java suivant suspend une instance de processus. Pour suspend
  
 ```
 
-## Démarrage rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+##  rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant montre comment démarrer une instance de processus suspendue.
+L’exemple de code Java suivant  une instance de processus suspendue.
 
 ```as3
  /*
@@ -310,7 +310,7 @@ L’exemple de code Java suivant montre comment démarrer une instance de proces
  
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -335,7 +335,7 @@ L’exemple de code Java suivant montre comment démarrer une instance de proces
  
 ```
 
-## Démarrage rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+##  rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 L’exemple de code Java suivant termine une instance de processus avec la valeur d’identificateur 756c22860a242fb101ec7a5bc0977fd6.
 
@@ -398,7 +398,7 @@ L’exemple de code Java suivant termine une instance de processus avec la valeu
  
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "tblue");
@@ -426,7 +426,7 @@ L’exemple de code Java suivant termine une instance de processus avec la valeu
  
 ```
 
-## Démarrage rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+##  rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
 Le code Java suivant purge les données d’un processus appelé *SecureDocument*. Un filtre permet de purger les données des instances de processus dont la variable de processus nommée *inValue* est supérieure à 200.
 
@@ -489,7 +489,7 @@ Le code Java suivant purge les données d’un processus appelé *SecureDocument
             {
               //Set connection properties required to invoke AEM Forms
               Properties connectionProps = new Properties();
-              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
               connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -533,7 +533,7 @@ Le code Java suivant purge les données d’un processus appelé *SecureDocument
  
 ```
 
-## Démarrage rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+##  rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
 L’exemple de code suivant récupère l’état de 10 tâches AEM Forms.
 
@@ -604,7 +604,7 @@ L’exemple de code suivant récupère l’état de 10 tâches AEM Forms.
  
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
