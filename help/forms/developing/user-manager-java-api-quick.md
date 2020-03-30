@@ -1,6 +1,6 @@
 ---
-title: User Manager Java API Quick Start (SOAP)
-seo-title: User Manager Java API Quick Start (SOAP)
+title: rapide de l’API Java User Manager (SOAP)
+seo-title: rapide de l’API Java User Manager (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
@@ -10,34 +10,34 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# User Manager Java API Quick Start (SOAP) {#user-manager-java-api-quick-start-soap}
+#  rapide de l’API Java User Manager (SOAP) {#user-manager-java-api-quick-start-soap}
 
-Java API Quick Start (SOAP) est disponible pour l’API User Manager.
+Le  rapide des API Java (SOAP) est disponible pour l’API User Manager.
 
-[Démarrage rapide (mode SOAP) : Ajout d’utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[rapide (mode SOAP) : Ajout d’utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[rapide (mode SOAP) : Suppression d’utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création de groupes à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
+[rapide (mode SOAP) : Création de groupes à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-creating-groups-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) :Gestion des utilisateurs et des groupes à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
+[rapide (mode SOAP) : Gestion des utilisateurs et des groupes à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-users-and-groups-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) :Gestion des rôles et des autorisations à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[rapide (mode SOAP) : Gestion des rôles et des autorisations à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Synchronisation par programmation des utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
+[rapide (mode SOAP) : Synchronisation par programmation des utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Gestion par programmation des noeuds Preferences à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
+[rapide (mode SOAP) : Gestion par programmation des noeuds Preferences à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Le démarrage rapide situé dans Programmation avec AEM forms est basé sur le document si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM forms reposent sur le  si vous utilisez un autre système d’exploitation, tel qu’Unix, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP) : Ajout d’utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
+##  rapide (mode SOAP) : Ajout d’utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
 L’exemple de code suivant ajoute un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajout d’utilisateurs](/help/forms/developing/users.md#adding-users).)
 
@@ -103,7 +103,7 @@ L’exemple de code suivant ajoute un utilisateur nommé Wendy Blue à AEM Forms
          try {
              //Set connection properties required to invoke AEM Forms
                 Properties connectionProps = new Properties();
-                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -155,7 +155,7 @@ L’exemple de code suivant ajoute un utilisateur nommé Wendy Blue à AEM Forms
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
+##  rapide (mode SOAP) : Suppression d’utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
 L’exemple de code suivant supprime un utilisateur nommé Wendy Blue d’AEM Forms. (Voir [Suppression d’utilisateurs](/help/forms/developing/users.md#deleting-users).)
 
@@ -220,7 +220,7 @@ L’exemple de code suivant supprime un utilisateur nommé Wendy Blue d’AEM Fo
          try {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -251,9 +251,9 @@ L’exemple de code suivant supprime un utilisateur nommé Wendy Blue d’AEM Fo
  
 ```
 
-## Démarrage rapide (mode SOAP) :Gestion des utilisateurs et des groupes à l’aide de l’API Java {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
+##  rapide (mode SOAP) : Gestion des utilisateurs et des groupes à l’aide de l’API Java {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-L’exemple de code suivant recherche un utilisateur local et le groupe local auquel il appartient. (See [Managing Users and Groups](/help/forms/developing/users.md#managing-users-and-groups).)
+L’exemple de code suivant recherche un utilisateur local et le groupe local auquel l’utilisateur appartient. (See [Managing Users and Groups](/help/forms/developing/users.md#managing-users-and-groups).)
 
 ```as3
  /*
@@ -316,7 +316,7 @@ L’exemple de code suivant recherche un utilisateur local et le groupe local au
          try {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -375,9 +375,9 @@ L’exemple de code suivant recherche un utilisateur local et le groupe local au
  
 ```
 
-## Démarrage rapide (mode SOAP) :Gestion des rôles et des autorisations à l’aide de l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
+##  rapide (mode SOAP) : Gestion des rôles et des autorisations à l’aide de l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-L’exemple de code suivant affecte le rôle Utilisateur des services à une entité de sécurité, imprime les rôles de l’entité de sécurité et supprime ensuite le rôle de l’entité de sécurité. Deux services sont appelés pour ce démarrage rapide : le service DirectoryManager et le service AuthorizationManager.(voir [Gestion des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
+L’exemple de code suivant affecte le rôle Utilisateur des services à une entité de sécurité, imprime les rôles de l’entité de sécurité et supprime ensuite le rôle de l’entité de sécurité. Deux services sont appelés pour cette  rapide : le service DirectoryManager et le service AuthorizationManager.(voir [Gestion des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions)).
 
 ```as3
  /*
@@ -442,7 +442,7 @@ L’exemple de code suivant affecte le rôle Utilisateur des services à une ent
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -518,7 +518,7 @@ L’exemple de code suivant affecte le rôle Utilisateur des services à une ent
  
 ```
 
-## Démarrage rapide (mode SOAP) :Synchronisation par programmation des utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
+##  rapide (mode SOAP) : Synchronisation par programmation des utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
 L’exemple de code Java suivant synchronise les utilisateurs à l’aide des API User Management. (Voir Synchronisation [programmatique des utilisateurs](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
@@ -587,7 +587,7 @@ L’exemple de code Java suivant synchronise les utilisateurs à l’aide des AP
  
              //Set connection properties required to invoke AEM Forms
                 Properties connectionProps = new Properties();
-                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -627,7 +627,7 @@ L’exemple de code Java suivant synchronise les utilisateurs à l’aide des AP
  
 ```
 
-## Démarrage rapide (mode SOAP) : Ajout d’utilisateurs à l’aide de l’API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
+##  rapide (mode SOAP) : Ajout d’utilisateurs à l’aide de l’API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
 L’exemple de code suivant ajoute un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajout d’utilisateurs](/help/forms/developing/users.md#adding-users).)
 
@@ -693,7 +693,7 @@ L’exemple de code suivant ajoute un utilisateur nommé Wendy Blue à AEM Forms
          try {
              //Set connection properties required to invoke AEM Forms
                 Properties connectionProps = new Properties();
-                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -745,7 +745,7 @@ L’exemple de code suivant ajoute un utilisateur nommé Wendy Blue à AEM Forms
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création de groupes à l’aide de l’API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
+##  rapide (mode SOAP) : Création de groupes à l’aide de l’API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
 L’exemple de code suivant crée un groupe nommé AdobeGroup dans AEM Forms. (Voir [Création de groupes](/help/forms/developing/users.md#creating-groups).)
 
@@ -816,7 +816,7 @@ L’exemple de code suivant crée un groupe nommé AdobeGroup dans AEM Forms. (V
  
           //Set connection properties that are required to invoke AEM Forms
           Properties connectionProps = new Properties();
-                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+                 connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
       connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
                  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -897,9 +897,9 @@ L’exemple de code suivant crée un groupe nommé AdobeGroup dans AEM Forms. (V
  }
 ```
 
-## Démarrage rapide (mode SOAP) Gestion des noeuds des préférences {#quick-start-soap-mode-managing-preferences-nodes}
+##  rapide (mode SOAP) Gestion des noeuds des préférences {#quick-start-soap-mode-managing-preferences-nodes}
 
-Les modèles de code Java suivants gèrent les noeuds de préférences à l’aide des API User Management. (voir Gestion [par programmation des noeuds](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)de préférences)
+Les modèles de code Java suivants permettent de gérer les noeuds de préférences à l’aide des API User Management. (voir Gestion [par programmation des noeuds](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)de préférences)
 
 ```as3
 /*
@@ -959,7 +959,7 @@ public class ManagePreferences {
     public static void main(String[] args) {
     //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-    connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+    connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1000,7 +1000,7 @@ public class ManagePreferences {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Gestion par programmation des noeuds Preferences à l’aide de l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
+##  rapide (mode SOAP) : Gestion par programmation des noeuds Preferences à l’aide de l’API Java {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
 Les modèles de code Java suivants gèrent les noeuds Preferences à l’aide des API User Management (voir Gestion [par programmation des noeuds](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)Preferences).
 
@@ -1046,7 +1046,7 @@ public class ManagePreferences {
     public static void main(String[] args) {
     //Set connection properties required to invoke AEM Forms
         Properties connectionProps = new Properties();
-    connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+    connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
