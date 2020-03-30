@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,7 +24,7 @@ Vous pouvez configurer l’utilitaire de journalisation pour créer des journaux
 
 Effectuez les étapes suivantes pour configurer les journaux côté serveur :
 
-1. Aller à `https://[server]:[port]/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Une boîte de dialogue s’affiche:
+1. Accédez à `https://'[server]:[port]'/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Une boîte de dialogue s’affiche:
 
    ![ Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
 
@@ -176,7 +176,7 @@ Par exemple :
 
 Si vous utilisez Configuration Manager pour activer la journalisation, des journaux sont générés pour chaque demande de rendu jusqu’à ce que la journalisation soit à nouveau désactivée.
 
-1. Connectez-vous à CQ Configuration Manager à l’adresse `https://[server]:[port]/system/console/configMgr` et connectez-vous avec les informations d’identification d’administrateur.
+1. Connectez-vous à CQ Configuration Manager à l’adresse `https://'[server]:[port]'/system/console/configMgr` et connectez-vous avec les informations d’identification d’administrateur.
 1. Recherchez et cliquez sur **Configurations des formulaires mobiles**.
 1. Dans la zone de texte Options de débogage, saisissez les configurations des journaux comme décrit dans la section précédente. Par exemple : **2-a4-b5-c6**
 
@@ -192,7 +192,7 @@ Par défaut, toutes les informations sont ajoutées dans le fichier error.log du
 
 Pour modifier l’emplacement et le nom du fichier journal :
 
-1. Connectez-vous à Configuration Manager en tant qu’administrateur. The default URL of Configuration Manager is `https://[Server]:[Port]/system/console/configMgr`.
+1. Connectez-vous à Configuration Manager en tant qu’administrateur. The default URL of Configuration Manager is `https://'[server]:[port]'/system/console/configMgr`.
 1. Cliquez sur **Configuration des journaux de journalisation Sling d’Apache** Une boîte de dialogue s’affiche.
 
    ![logconfig-1](assets/logconfig-1.png)
