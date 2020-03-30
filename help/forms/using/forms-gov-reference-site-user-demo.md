@@ -1,14 +1,14 @@
 ---
 title: Présentation du site de référence We.Gov
 seo-title: Présentation du site de référence We.Gov
-description: Utilisez des utilisateurs et des groupes fictifs pour effectuer des tâches AEM Forms à l’aide du package de démonstration We.Gov.
-seo-description: Utilisez des utilisateurs et des groupes fictifs pour effectuer des tâches AEM Forms à l’aide du package de démonstration We.Gov.
+description: Utilisez des utilisateurs et des groupes fictifs pour effectuer des  AEM Forms à l’aide du package de démonstration We.Gov.
+seo-description: Utilisez des utilisateurs et des groupes fictifs pour effectuer des  AEM Forms à l’aide du package de démonstration We.Gov.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -27,7 +27,7 @@ Set up the reference site as described in [Set up and configure We.Gov reference
    * Intégration de données (MS Dynamics)
    * Adobe Sign
 
-* Processus
+* Workflow
 * Communications client
 
    * Canal d’impression
@@ -68,27 +68,27 @@ Les groupes suivants sont également inclus :
 
 1. **Impersonate**: Utilisateurs et groupes définis dans la démonstration AEM.
 1. **Bouton**: Rectangle coloré ou flèche circulaire pour la navigation.
-1. **Cliquez sur**: Pour exécuter une action dans l’article utilisateur.
+1. **Cliquez sur**: Pour exécuter une action dans l’article de l’utilisateur.
 1. **Liens**: Situé en haut du menu principal du site Web We.Gov.
 1. **Instructions** utilisateur : Ensemble d’étapes numériques à suivre lors de la navigation dans l’histoire de l’utilisateur.
 1. **Forms Portal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Affichage** mobile : utilisateur We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
-1. **Vue** Bureau : Utilisateur We.gov pour afficher la démonstration sur un ordinateur portable ou un ordinateur de bureau.
-1. **Formulaire** de pré-filtrage : Formulaire sur la page d&#39;accueil du site Web We.Gov.
+1. **** mobile : utilisateur We.Gov pour répliquer un mobile  avec un navigateur redimensionné.
+1. **** de bureau : Utilisateur We.gov à  la démonstration sur un ordinateur portable ou un ordinateur de bureau.
+1. **Formulaire** de pré-filtrage : Formulaire sur le  du site Web We.Gov.
 1. **Formulaire** adaptatif : Formulaire de demande d&#39;inscription pour la démonstration We.gov.
 
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
 1. **Site** Adobe We.Gov : *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **Adobe Inbox**: Icône [] Bell située dans la barre de menus supérieure dans le serveur principal AEM.
+1. **Adobe Inbox**: Icône [](assets/bell.svg) Bell située dans la barre de menus supérieure dans le serveur principal AEM.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
-1. **Client** de messagerie : Mode d&#39;affichage préféré de vos courriels (Gmail, Outlook)
+1. **Client** de messagerie : Moyen privilégié de de vos courriels (Gmail, Outlook)
 1. **CTA**: Appel à l&#39;action
 1. **Naviguer**: Pour localiser un point de référence spécifique sur la page du navigateur.
 
-## Démo de la vue mobile {#mobile-view-demo}
+## Démonstration  Mobile {#mobile-view-demo}
 
 **Cette section doit être effectuée avant la démonstration.**
 
@@ -127,7 +127,7 @@ Aya répond à quelques questions pour confirmer son éligibilité en remplissan
 
 Aya découvre qu&#39;elle est éligible et commence à remplir sa demande de service sur son appareil mobile.
 
-Aya doit consulter certains documents à la maison avant de pouvoir remplir la demande de service. Elle enregistre et quitte l&#39;application.
+Aya a besoin de revoir un à la maison avant de pouvoir remplir la demande de service. Elle enregistre et quitte l&#39;application.
 
 **Instructions utilisateur :**
 
@@ -147,7 +147,7 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
       1. Ville
       1. Numéro de téléphone
       1. Code postal
-      1. Courriel
+      1. Courrier électronique
       1. État
    1. État martial
 
@@ -172,7 +172,7 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 
 ## Démo de bureau {#desktop-demo}
 
-**** Cette section : De retour chez elle, Aya a trouvé les informations dont elle avait besoin et reprend l&#39;application depuis son bureau. Aya accède au portail de formulaires en ligne pour reprendre sa demande. Avec une personnalisation simple, les agences peuvent également générer automatiquement et envoyer par courrier électronique un lien pour reprendre l&#39;application.
+**Cette section :** De retour chez elle, Aya a trouvé les informations dont elle avait besoin et reprend l&#39;application depuis son bureau. Aya accède au portail de formulaires en ligne pour reprendre sa demande. Avec une personnalisation simple, les agences peuvent également générer automatiquement et envoyer par courrier électronique un lien pour reprendre l&#39;application.
 
 ### Aya User Story (suite du formulaire adaptatif) {#aya-user-story-continued-adaptive-form}
 
@@ -210,16 +210,16 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 
 1. Cochez la case &quot;**Je suis d&#39;accord**&quot;.
 1. Cliquez sur &quot;**Accepter**&quot;.
-1. Accédez au bas du document révisé.
-1. Cliquez sur l’onglet jaune surligné pour signer le document.
+1. Faites défiler l’écran jusqu’au bas du  de consulté.
+1. Cliquez sur l&#39;onglet jaune surligné pour signer le .
 
-   ![Signature du document](/help/forms/using/assets/sign_document_new.png) ![Signature du document test](/help/forms/using/assets/sign_test_document.png)
+   ![Signez le](/help/forms/using/assets/sign_document_new.png) ![Signez le de test](/help/forms/using/assets/sign_test_document.png)
 
 ## Agent du gouvernement (George) {#government-agent-george}
 
 ![Agent du gouvernement George](/help/forms/using/assets/george_lang-1.png)
 
-**** Cette section : George est analyste en affaires à l&#39;agence gouvernementale Aya demande un service. George dispose d&#39;un seul tableau de bord où il peut voir toutes les demandes de service qui lui ont été affectées pour révision.
+**Cette section :** George est analyste en affaires à l&#39;agence gouvernementale Aya demande un service. George a un seul  où il peut voir toutes les demandes de service qui lui ont été assignées pour examen.
 
 ### George User Story (boîte de réception AEM) {#george-user-story-aem-inbox}
 
@@ -230,7 +230,7 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 
    1. Connectez-vous avec :
 
-      1. **** Utilisateur : george.lang
+      1. **Utilisateur :** george.lang
       1. **Mot de passe :** password
    1. Ou Impersonate :
 
@@ -240,14 +240,14 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 
 
 1. Dans le coin supérieur droit, cliquez sur l’icône Notification (sonnerie).
-1. Cliquez sur &quot;**Afficher tout**&quot; pour accéder à la boîte de réception.
-1. Dans la boîte de réception, ouvrez la dernière tâche &quot;**Health Benefits Application Review**&quot;.
+1. Cliquez sur **tout** pour accéder à la boîte de réception.
+1. Dans la boîte de réception, ouvrez le dernier &quot;Examen **des demandes de prestations de** santé&quot;.
 
    ![Examen des demandes de prestations de santé](/help/forms/using/assets/health_benefits.png)
 
 ### George User Story (boîte de réception AEM et MS Dynamics) {#george-user-story-aem-inbox-and-ms-dynamics}
 
-Grâce aux intégrations de données et aux processus automatisés, l’application Aya apparaît, ainsi qu’un enregistrement CRM qui a été généré automatiquement lors de l’envoi des données.
+Grâce aux intégrations de données et aux  automatisées, l’application Aya apparaît, ainsi qu’un enregistrement CRM qui a été généré automatiquement lors de l’envoi des données.
 
 **Instructions utilisateur :**
 
@@ -270,15 +270,15 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 1. Accédez au coin supérieur gauche et cliquez sur &quot;**Approuver**&quot; pour approuver la demande.
 1. Dans le mode modal, vous pouvez laisser un message pour le prospect CX.
 1. Cliquez sur Terminé.
-1. (Rôle de citoyen) Ouvrez votre client de messagerie pour afficher le courrier électronique envoyé à Aya.
+1. (Rôle Citoyen) Ouvrez votre client de messagerie pour du courrier électronique envoyé à Aya.
 
-   ![Afficher le courrier électronique envoyé à Aya](/help/forms/using/assets/email_client.png)
+   ![e-mail envoyé à Aya](/help/forms/using/assets/email_client.png)
 
 ## CX Lead (Camila) {#cx-lead-camila}
 
 ![Camila (chef CX)](/help/forms/using/assets/camila_santos-1.png)
 
-**** Cette section : Camila, la responsable CX, lance un appel téléphonique de bienvenue avec Aya pour expliquer comment utiliser les services gouvernementaux pour lesquels elle a été approuvée.
+**Cette section :** Camila, la responsable CX, lance un appel téléphonique de bienvenue avec Aya pour expliquer comment utiliser les services gouvernementaux pour lesquels elle a été approuvée.
 
 ### Article pour l’utilisateur de Camila (boîte de réception AEM et MS Dynamics) {#camila-user-story-aem-inbox-ms-dynamics}
 
@@ -299,8 +299,8 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
 
 1. Dans le coin supérieur droit, cliquez sur l’icône Notification (sonnerie).
-1. Cliquez sur &quot;**Afficher tout**&quot; pour accéder à la boîte de réception.
-1. Dans la boîte de réception, ouvrez la dernière tâche &quot;**Nouvelle approbation** de contact&quot;.
+1. Cliquez sur **tout** pour accéder à la boîte de réception.
+1. Dans la boîte de réception, ouvrez le dernier &quot;**Nouvelle approbation** de contact&quot;.
 
    ![Nouvelle approbation de contact](/help/forms/using/assets/new_contact_approval.png)
 
@@ -310,21 +310,21 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 1. Cliquez sur le bouton &quot;**Ouvrir MS Dynamics**&quot; pour ouvrir l&#39;enregistrement MS Dynamics dans une nouvelle fenêtre.
 1. Dans la gestion de la relation client, toutes les informations peuvent être mises à jour
 
-   1. Vous pouvez également ajouter une nouvelle activité d’appel directement dans Dynamics.
-   1. Ouvrez la section &quot;**Activités**&quot;.
+   1. Si vous le souhaitez, ajoutez un nouvel appel  directement dans Dynamics.
+   1. Ouvrez la section &quot;****&quot;.
    1. Cliquez sur l&#39;option &quot;**Nouvel appel** téléphonique&quot;.
-   1. Ajoutez les détails de l’appel téléphonique.
+   1. Ajouter les détails de l&#39;appel téléphonique.
    1. Enregistrez et fermez la fenêtre.
 
 1. De retour dans AEM, accédez au coin supérieur gauche et cliquez sur &quot;**Envoyer**&quot; pour envoyer la demande.
 1. Dans le module, vous pouvez laisser un message.
 1. Cliquez sur Terminé.
 
-   ![Onglet](/help/forms/using/assets/activities_tab.png) Activités ![Confirmer le nouveau contact](/help/forms/using/assets/confirm_new_contact.png)
+   ![, onglet](/help/forms/using/assets/activities_tab.png)  de l’ ![Confirmer le nouveau contact](/help/forms/using/assets/confirm_new_contact.png)
 
 ## Kit de bienvenue (Aya) {#welcome-kit-citizen-aya}
 
-**** Cette section : Aya reçoit un courriel qui contient un lien vers une communication interactive qui résume ses avantages et inclut des champs de formulaire à remplir. Avec le relevé des avantages PDF joint et le lien vers la lettre de communication interactive dans le courrier (avec le même thème/marque que la communication interactive).
+**Cette section :** Aya reçoit un courriel qui contient un lien vers une communication interactive qui résume ses avantages et inclut des champs de formulaire à remplir. Avec le relevé des avantages PDF joint et le lien vers la lettre de communication interactive dans le courrier (avec le même thème/marque que la communication interactive).
 
 ### Aya User Story (client de messagerie) {#aya-user-story-email-client}
 
@@ -333,9 +333,9 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 1. Recherchez et ouvrez le courrier électronique du kit de bienvenue.
 1. Faites défiler la page jusqu’à la pièce jointe PDF au bas de la page.
 1. Cliquez sur pour ouvrir la pièce jointe PDF.
-1. Faites défiler votre client de messagerie et cliquez sur &quot;**Afficher le kit de bienvenue en ligne**&quot;.
+1. Faites défiler votre client de messagerie et cliquez sur &quot;**kit de bienvenue en ligne**&quot;.
 
-   1. Cette opération ouvre la version du canal Web du même document.
+   1. Cela ouvrira la version  du Web du même  de.
 
 1. Pour une référence rapide au format PDF directement :
 
@@ -343,13 +343,13 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
 1. Pour une référence rapide à IC directement :
 
-   *https://&lt;serveur aemserver>:&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&amp;mode=preview&amp;wcmmode=disabled*
+   *https://&lt;serveur aemserver>:&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?=web&amp;mode=&amp;wcmmode=disabled*
 
    ![Guide](/help/forms/using/assets/welcome_benefits_handbook.png) des avantages de bienvenue Lien de communication ![interactif](/help/forms/using/assets/interactive_communication.png)
 
 ## Renouvellement du citoyen (Aya) {#renewal-reminder-citizen-aya}
 
-**** Cette section : Camila planifie aussi un rappel de communication un an plus tard. (Etape de flux de travail qui automatise/s’exécute et envoie par courrier électronique).
+**Cette section :** Camila planifie aussi un rappel de communication un an plus tard. (Etape du flux de travail qui automatise/s’exécute et envoie des courriers électroniques).
 
 ### Aya User Story (client de messagerie) {#aya-user-story-email-client-1}
 
@@ -364,26 +364,26 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
 ## Analytics CX Lead (Camila) {#analytics-cx-lead-camila}
 
-**** Cette section : Camila se rend sur un tableau de bord où elle peut voir les IPC de l&#39;agence, comme le pourcentage de citoyens qui commencent à remplir un formulaire de demande de service et abandonnent, la durée moyenne entre la soumission de la demande et la réponse d&#39;approbation/refus, et les statistiques d&#39;engagement pour les manuels d&#39;avantages qu&#39;elle a envoyés aux citoyens.
+**Cette section :** Camila se dirige vers un où elle peut voir à travers les IPC de l&#39;agence, comme le pourcentage de citoyens qui  remplir un formulaire de demande de service et abandonner, la durée moyenne entre la soumission d&#39;une demande et la réponse d&#39;approbation/refus, et les statistiques d&#39;engagement pour les manuels d&#39;avantages qu&#39;elle a envoyés aux citoyens.
 
-### Camila passe en revue les rapports Sites (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
+### Camila passe en revue les  des sites (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Sélectionnez &quot;Site **WebGov d’** AEM Forms&quot; pour afficher les pages du site.
+1. Sélectionnez &quot;Site **WebGov d’** AEM Forms&quot; pour les pages du site.
 1. Sélectionnez l’une des pages du site (par exemple, Accueil), puis sélectionnez &quot;**Analyses et recommandations**&quot;.
 
    ![Analytics et recommandation](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. Sur cette page, vous verrez les informations extraites d’Adobe Analytics qui se rapportent à la page Sites AEM (REMARQUE : par conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne sont pas affichées en temps réel).
+1. Sur cette page, vous verrez les informations extraites d’Adobe Analytics qui se rapportent à la page Sites AEM (REMARQUE : par conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne s’affichent pas en temps réel).
 
    ![Mesures clés d’Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. De retour sur la page vue (accessible à l’étape 3), vous pouvez également afficher les informations sur la page vue en modifiant le paramètre d’affichage pour afficher les éléments dans la &quot;vue **Liste**&quot;.
-1. Recherchez le menu déroulant &quot;**Affichage**&quot; et sélectionnez &quot;Affichage **de la liste**&quot;.
+1. De retour sur la page  de de la page (accessible à l’étape 3.), vous pouvez également  les informations de la page en définissant le paramètre d’affichage sur les éléments de la &quot;****--&quot;.
+1. Localisez le menu déroulant &quot;****&quot; et sélectionnez &quot;****&quot;.
 
-   ![Affichage par liste dans le menu déroulant Affichage](/help/forms/using/assets/list_view_view_dropdown.jpg)
+   ![ dans le menu déroulant  de l’univers](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Dans le même menu, sélectionnez &quot;Paramètre **d’** affichage&quot; et sélectionnez les colonnes à afficher dans la section &quot;**Analytics**&quot;.
+1. Dans le même menu, sélectionnez **Paramètres** de  et sélectionnez les colonnes à afficher dans la section &quot;**Analytics**&quot;.
 
    ![Configuration de l’affichage des colonnes](/help/forms/using/assets/view_setting_analytics.jpg)
 
@@ -391,7 +391,7 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
    ![Rendre les nouvelles colonnes disponibles](/help/forms/using/assets/new_columns_available.jpg)
 
-### Camila passe en revue les rapports sur les formulaires (We.Gov Adobe Analytics) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
+### Camila passe en revue les  de formulaires (We.Gov Adobe Analytics) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
 1. Accédez à .
 
@@ -401,7 +401,7 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
    ![Demande d&#39;inscription aux prestations santé](/help/forms/using/assets/analytics_report_benefits.jpg)
 
-1. Attendez que la page se charge et affichez les données du rapport Analytics.
+1. Patientez jusqu’à ce que la page se charge et les données du rapport Analytics.
 
    ![Données du rapport Analytics](/help/forms/using/assets/analytics_report_data_updated.jpg)
 
