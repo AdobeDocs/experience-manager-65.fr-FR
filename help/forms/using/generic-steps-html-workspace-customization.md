@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
-1. Connectez-vous à CRXDE Lite en accédant à `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Connectez-vous à CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Create a folder named `ws`at `/apps`, if it does not exist. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Browse to `/apps/ws`, and navigate to the **[!UICONTROL Access Control]** tab.
 1. In the **[!UICONTROL Access Control]** list, click **[!UICONTROL +]** to add a new entry. Cliquez de nouveau sur **[!UICONTROL +]**.
@@ -97,6 +97,6 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**, effacez le cache et actualisez l’espace de travail AEM Forms.
 
-   Accédez à l’URL `https://[server]:[port]/lc/ws` et connectez-vous avec les informations d’identification d’administrateur/de mot de passe. Le navigateur redirige vers `https://[server]:[port]/lc/apps/ws/index.html`.
+   Accédez à l’URL `https://'[server]:[port]'/lc/ws` et connectez-vous avec les informations d’identification d’administrateur/de mot de passe. Le navigateur redirige vers `https://'[server]:[port]'/lc/apps/ws/index.html`.
 
 [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
