@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -97,8 +97,8 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
    * Fichiers portant des noms spécifiques ; par exemple, data* exclurait les fichiers et les dossiers nommés data1, data2, etc.
    * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-      * Data[0-9][0-9][0-9].[dD][aA][tT]
-      * *.[dD][Aa][Tt]
+      * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+      * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][Mm][Ll]
 
 Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
@@ -110,9 +110,9 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
-      * *.[dD][Aa][Tt]
+      * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][Mm][Ll]
 
 Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
@@ -145,7 +145,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * **failureFolderName (chaîne)** : le dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement est toujours lié au dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. La valeur par défaut est failure/%Y/%M/%D/.
 * **preserveFolderName (chaîne) :** l’emplacement où les fichiers sont stockés après un traitement réussi. Ce chemin d’accès de répertoire peut être absolu, relatif ou null. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
-* **batchSize (Long)** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
+* **batchSize (Long)** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.   
 
    Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par Watched Folder pour chaque analyse. Watched Folder utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse défini est court, les threads analysent fréquemment le dossier input. Si des fichiers sont déposés régulièrement dans le dossier de contrôle, il est préférable que l’intervalle d’analyse soit court. Si au contraire, des fichiers y sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads. 
 
@@ -216,7 +216,7 @@ Un service est une implémentation personnaliséede l’interface `com.adobe.aem
 
 #### Implémentation personnalisée de l’interface ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-L’implémentation personnalisée accepte un contexte de traitement (objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les documents d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute la sortie au\
+L’implémentation personnalisée accepte un contexte de traitement (objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les  d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute la sortie au\
 contexte. Le ProcessorContext dispose des API suivants :
 
 * **** getWatchFolderId : renvoie l’ID du dossier de contrôle.
@@ -225,7 +225,7 @@ contexte. Le ProcessorContext dispose des API suivants :
    les paramètres de configuration d’un dossier de contrôle.
 
 * **setResult**: Implémentation de ContentProcessor\
-   utilise l’API pour écrire le document de sortie dans le dossier result. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
+   utilise l’API pour écrire le de sortie dans le dossier result. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
 
 Par exemple, le code suivant est une implémentation personnalisée de l’interface ContentProcessor avec une propriété foo=bar personnalisée.
 
@@ -286,7 +286,7 @@ Par défaut, un dossier conteneur (/etc/fd/watchfolder/scripts) est fourni, dans
 
 Si vous prévoyez de placer vos scripts à un emplacement personnalisé, il est probable que l’utilisateur du service par défaut ne dispose pas d’autorisations de lecture sur l’emplacement personnalisé. Pour ce type de scénario, procédez aux étapes suivantes pour fournir les autorisations nécessaires pour l’emplacement personnalisé :
 
-1. Create a system user programmatically or via the console https://[server]:[port]/crx/explorer. Vous pouvez également utiliser un utilisateur système existant. Ici, il est important de travailler avec des utilisateurs système plutôt qu’avec des utilisateurs disposant de licences ordinaires.
+1. Create a system user programmatically or via the console https://&#39;[server]:[port]&#39;/crx/explorer. Vous pouvez également utiliser un utilisateur système existant. Ici, il est important de travailler avec des utilisateurs système plutôt qu’avec des utilisateurs disposant de licences ordinaires.
 1. Fournissez des autorisations de lecture à l’utilisateur système existant ou qui vient d’être créé pour l’emplacement personnalisé dans lequel les scripts sont stockés. Vous pouvez disposer de plusieurs emplacements personnalisés. Fournissez au moins des autorisations de lecture à tous les emplacements personnalisés.
 1. Dans la console de configuration Felix (/system/console/configMgr), recherchez le mappage de l’utilisateur de service pour les dossiers Watch Folder. Ce mappage ressemble à ce qui suit : ’Mapping: adobe-aemds-core-watch-folder=...’.
 1. Cliquez sur le mappage. Pour l’entrée &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
@@ -337,7 +337,7 @@ Les API ProcessorContext suivants sont également disponibles :
 * getConfigParameters : renvoie un mappage inaltérable de type Map&lt;String, Object>. La carte contient les paramètres de configuration d’un dossier de contrôle.
 * setResult : L’implémentation de ContentProcessor utilise l’API pour écrire dans le document de sortie le dossier de résultats. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier
 
-Considération pour l’API setResult, lorsqu’elle est utilisée dans les processus :
+Considération pour l’API setResult, lorsqu’elle est utilisée dans le  du :
 
 * Pour ajouter un nouveau document de sortie qui contribue à la sortie globale de flux de travail, appelez l’API setResult avec un nom qui n’a été utilisé comme nom de sortie par une étape précédente.
 * Pour mettre à jour un résultat généré par une étape précédente, appelez l’API setResult avec un nom déjà utilisé par une étape précédente.
@@ -559,8 +559,8 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.*
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Data[0-9][0-9][0-9].[dD][aA][tT]
-   * *.[dD][Aa][Tt]
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * *.[dD][Aa]&#39;port&#39;
    * *.[Xx][Mm][Ll]
 
 * L’administrateur peut définir le modèle de fichier du dossier output dans lequel enregistrer les résultats. Concernant les dossiers output (result, preserve et failure), il peut indiquer l’un de modèles de fichier suivants :
@@ -598,7 +598,7 @@ Effectuez les étapes suivantes pour configurer un dossier de contrôle avec PDF
 
 L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour convertir les fichiers Microsoft Word (.docx) au format PDF. Effectuez les étapes suivantes pour créer le script :
 
-1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. The URL is https://[server]:[port]/crx/de.
+1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. The URL is https://&#39;[server]:[port]&#39;/crx/de.
 
 1. Accédez à /etc/workflow/scripts et créez un dossier nommé PDFG.
 
@@ -632,7 +632,7 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 ### Créer un flux de travaux {#create-a-workflow}
 
 1. Ouvrez le flux de travaux AEM UI dans une fenêtre du navigateur.\
-   https://[nom]du serveur:[port]/worklow
+   https://[servername]:&#39;port&#39;/worklow
 
 1. Dans la vue Modèles, cliquez sur **Nouveau**. Dans la boîte de dialogue Nouveau flux de travaux, indiquez le **Titre**, puis cliquez sur **OK**.
 
@@ -652,7 +652,7 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 
 ### Configuration du dossier de contrôle {#configure-the-watched-folder}
 
-1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. https://[serveur]:[port]/crx/de/
+1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. https://&#39;[serveur]:[port]&#39;/crx/de/
 
 1. Accédez au dossier /etc/fd/watchfolder/config/ et créez un noeud de type nt:unstructured.
 
