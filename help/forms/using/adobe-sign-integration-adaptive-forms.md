@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -81,7 +81,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
 
    Appuyez sur **[!UICONTROL Créer]** pour créer la configuration Adobe Sign.
 
-1. Ouvrez la console web AEM. L’URL est `https://[server]:[port]/system/console/configMgr`
+1. Ouvrez la console web AEM. L’URL est `https://'[server]:[port]'/system/console/configMgr`
 1. Ouvrez le **service de configuration commun aux formulaires.**
 1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** L’instance d’auteur est configurée pour utiliser Adobe Sign.
 1. Sur l’instance [Publication](/help/sites-deploying/deploy.md), connectez-vous et ouvrez l’URL suivante :
@@ -99,9 +99,9 @@ Un formulaire adaptatif Adobe Sign est envoyé uniquement après que tous les si
 1. Connectez-vous au serveur AEM Forms avec les informations d’identification d’administrateur et accédez à **Outils**> **Opérations**> **Console Web**.
 
    Vous pouvez également ouvrir l’URL suivante dans une fenêtre de navigateur :
-   `https://[localhost]:[port]/system/console/configMgr`
+   `https://[localhost]:'port'/system/console/configMgr`
 
-1. Recherchez et ouvrez l’option **Service de configuration Adobe Sign**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **Expression du planificateur de mise à jour de l’état** et cliquez sur **Enregistrer**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, spécifiez `0 0 0 1/1 * ? *` dans le champ Expression **du planificateur de mise à jour** d’état.
+1. Recherchez et ouvrez l’option **Service de configuration Adobe Sign**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **Expression du planificateur de mise à jour de l’état** et cliquez sur **Enregistrer**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, spécifiez `0 0 0 1/1 * ? *` dans le champ du de mise à jour de l’ **état** .
 
 L’intervalle par défaut pour synchroniser l’état d’Adobe Sign est désormais modifié.
 
