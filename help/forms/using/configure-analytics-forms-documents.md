@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -83,9 +83,9 @@ Procédez comme suit pour créer une suite de rapports.
    * **panelTitle** : titre du panneau de formulaire.
    * **analyticsVersion** : version de l’analyse de formulaire.
 
-1. Navigate to **Edit Settings** > **Conversion** > **Success Events**. Définissez et activez les événements de réussite suivants :
+1. Navigate to **Edit Settings** > **Conversion** > **Success Events**. Définissez et activez les  de réussite suivantes :
 
-   | Événement de réussite | Type |
+   | de réussite | Type |
    |---|---|
    | abandon | Compteur |
    | render | Compteur |
@@ -175,14 +175,14 @@ Désormais, vous pouvez activer les analyses pour les formulaires et générer u
 
 ## Activation des analyses pour un formulaire ou un document {#enabling-analytics-for-a-form-or-document}
 
-1. Log in to AEM portal at `https://[hostname]:[port]`.
+1. Log in to AEM portal at `https://[hostname]:'port'`.
 1. Cliquez sur **Formulaires > Formulaires &amp; Documents**, sélectionnez un formulaire ou un document, puis cliquez sur **Activer les analyses**. Les analyses sont activées.
 
    ![Activation des analyses pour un formulaire ou un document](assets/enable-analytics-1.png)
 
    Activation des analyses pour un formulaire
 
-   ******A. Bouton** B Activation d’Analytics. Formulaire sélectionné
+   **A.** Bouton **B d’activation d’Analytics.** Formulaire sélectionné
 
    For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md)
 
