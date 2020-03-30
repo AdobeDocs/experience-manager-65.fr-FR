@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -69,7 +69,7 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
 
 ## Ajout d’options Java à WebLogic {#add-java-options-to-weblogic}
 
-1. Start the WebLogic administration console by typing https://[host name]:[port]/console in the URL line of a web browser.
+1. Start the WebLogic administration console by typing https://[host name]:&#39;port&#39;/console in the URL line of a web browser.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
