@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27695ee7880cfa23d504d723297c9a06729a424b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minu
 
 Suivez les étapes suivantes pour modifier l’intervalle du planificateur de synchronisation :
 
-1. Connectez-vous au Configuration Manager d’AEM. L’URL de Configuration Manager est `https://[Server]:[Port]/lc/system/console/configMgr`
+1. Connectez-vous au Configuration Manager d’AEM. L’URL de Configuration Manager est `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Recherchez et ouvrez le lot **FormsManagerConfiguration.**
 
@@ -35,17 +35,17 @@ Suivez les étapes suivantes pour modifier l’intervalle du planificateur de sy
 
 Vous pouvez utiliser l’option **Synchroniser les ressources à partir du référentiel** pour synchroniser manuellement les ressources. Effectuez les opérations suivantes pour synchroniser manuellement les actifs :
 
-1. Connectez-vous à AEM Forms. L’URL par défaut est `https://[Server]:[Port]/lc/aem/forms/`.
+1. Connectez-vous à AEM Forms. L’URL par défaut est `https://'[server]:[port]'/lc/aem/forms/`.
 
    ![Interface utilisateur d’AEM Forms](assets/aem_forms_ui.png)
 
-   **** Figure : Interface utilisateur *d’AEM Forms*
+   **Figure :** Interface utilisateur *d’AEM Forms*
 
 1. Cliquez sur l’icône ![aem6forms_sync](assets/aem6forms_sync.png) dans la barre d’outils. Si vous ne disposez d’aucune ressource dans le dernier chemin configuré, la boîte de dialogue s’affiche comme ci-dessous. Cliquez sur **Démarrer** pour lancer la synchronisation.
 
    ![Boîte de dialogue de synchronisation](assets/migrate-and-syncronize.png)
 
-   **** Figure : Boîte de dialogue *Synchronisation*
+   **Figure :** Boîte de dialogue *Synchronisation*
 
 ## Dépannage des erreurs de synchronisation {#troubleshooting-synchronization-error}
 
@@ -57,4 +57,4 @@ Pour résoudre le conflit, renommez l’application puis synchronisez manuelleme
 
 ![Conflits dans la boîte de dialogue de synchronisation des ressources](assets/sync-conflict.png)
 
-**** Figure : *Conflits dans la boîte de dialogue de synchronisation des ressources*
+**Figure :** *Conflits dans la boîte de dialogue de synchronisation des ressources*
