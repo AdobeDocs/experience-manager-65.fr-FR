@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,12 +25,12 @@ Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. If
 
 Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
 
-1. Connectez-vous à CRX DE Lite. L’URL par défaut est `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Connectez-vous à CRX DE Lite. L’URL par défaut est `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Supprimez le noeud suivant :
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Accédez au gestionnaire de packages. L’URL par défaut est `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Accédez au gestionnaire de packages. L’URL par défaut est `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Search and install the `adobe-lc-workspace-pkg-[version].zip` package.
 1. Redémarrez le serveur d’applications.
 
@@ -155,7 +155,7 @@ Les scripts et les styles peuvent être débogués dans différents navigateurs.
 
 * **Débogage dans IE**: Pour déboguer l’espace de travail AEM Forms dans IE, voir : [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Débogage dans Chrome**: Pour ouvrir le débogueur dans Chrome, utilisez le raccourci : Ctrl+Maj+I.Pour plus d’informations, voir : [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Débogage dans Chrome**: Pour ouvrir le débogueur dans Chrome, utilisez le raccourci : Ctrl+Maj+I. Pour plus d’informations, voir : [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Débogage dans Firefox** : plusieurs modules complémentaires sont disponibles pour déboguer des scripts et des styles dans Firefox. For example, Firebug is one such debugging utility ([https://getfirebug.com](https://getfirebug.com)).
 
