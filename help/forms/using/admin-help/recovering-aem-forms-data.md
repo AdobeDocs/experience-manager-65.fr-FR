@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 translation-type: tm+mt
-source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -67,17 +67,17 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
    >
    >si le répertoire /restore existe déjà, sauvegardez-le, puis supprimez-le avant de renommer le répertoire /backup qui contient les dernières données.
 
-   * (JBoss) Renommez `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` en :
+   * (JBoss) Renommez `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` en :
 
-      `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
+      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) Renommez `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` en :
+   * (WebLogic) Renommez `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` en :
 
-      `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
+      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Renommez `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` en :
+   * (WebSphere) Renommez `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` en :
 
-      `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
+      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Récupérez le répertoire racine de stockage de contenu en commençant par supprimer les contenus de ce répertoire sur l’installation existante d’AEM Forms, puis procédez à la récupération du contenu en suivant la procédure applicable aux environnements autonomes ou organisés en grappe :
 
@@ -106,7 +106,7 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
       Pour la restauration dans un environnement organisé en grappes, consultez la section [Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Supprimez tous les fichiers temporaires AEM forms créés dans le répertoire java.io.temp ou dans le répertoire temporaire Adobe.
-1. Démarrez AEM forms (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. d’AEM Forms (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Modification de l’emplacement du stockage global de documents durant la récupération {#changing-the-gds-location-during-recovery}
 
