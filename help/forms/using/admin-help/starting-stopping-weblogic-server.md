@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -78,7 +78,7 @@ WebLogic Server Administration Console n’est plus accessible et l’invite de 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Access WebLogic Server administration console by typing `https://*[host name]:`[Port] `/console` in the URL line of a web browser, where *[Port]* is the non-secure listening port. Par défaut, la valeur de ce port est 7001.
+1. Access WebLogic Server administration console by typing `https://[host name]:[port]/console` in the URL line of a web browser, where *[port]* is the non-secure listening port. Par défaut, la valeur de ce port est 7001.
 1. Dans l’écran de connexion, saisissez le nom d’utilisateur et le mot de passe, puis cliquez sur Log In.
 
 ## Démarrage de Node Manager {#start-node-manager}
@@ -101,7 +101,7 @@ Après avoir arrêté WebLogic Server, vous pouvez fermer l’invite de commande
 >cette tâche ne peut être effectuée qu’après avoir créé un domaine WebLogic et un serveur géré.
 
 1. Assurez-vous que WebLogic Server et Node Manager sont en cours d’exécution.
-1. Start WebLogic Server administration console by typing `https://`*[host name]:[port ]*`/console`in the URL line of a web browser.
+1. Start WebLogic Server administration console by typing `https://host name]:[port]`/console` in the URL line of a web browser.
 1. Sous Domain Structure, cliquez sur Environment > Servers.
 1. Dans le volet de droite, cliquez sur l’onglet Configuration.
 1. Sélectionnez le serveur géré que vous souhaitez démarrer.
