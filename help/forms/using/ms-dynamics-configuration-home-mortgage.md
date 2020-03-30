@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -38,7 +38,7 @@ Avant de commencer à installer et configurer Dynamics 365, vérifiez que vous 
 
 1. Sur une instance d’auteur, accédez à la page suivante :
 
-   https://[sderver]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html
+   `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Faites défiler l’écran vers le calculateur de prêt immobilier.
 1. Sélectionnez le panneau de la colonne de droite (du calculateur) et appuyez pour afficher le menu contextuel. Dans le menu contextuel, appuyez sur Configurer. La boîte de dialogue Modifier le conteneur d’AEM Forms s’affiche.
@@ -62,7 +62,7 @@ Avant de commencer à installer et configurer Dynamics 365, vérifiez que vous 
 
    1. Téléchargez le package à partir de :
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
    1. Importez le package de solution dans une instance de Microsoft® Dynamics. Dans votre instance Microsoft® Dynamics, accédez à **Paramètres** > **Solutions**, puis appuyez sur **Importer**.
 
@@ -70,7 +70,7 @@ Avant de commencer à installer et configurer Dynamics 365, vérifiez que vous 
 
    1. Téléchargez le package à partir de :
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
    1. Importez le package dans votre instance Microsoft® Dynamics. Dans votre instance Microsoft® Dynamics, accédez à **Ventes** > **Contacts**, puis appuyez sur **Importer les données**.
 
