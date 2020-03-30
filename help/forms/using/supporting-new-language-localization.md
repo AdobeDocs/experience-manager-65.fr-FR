@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,7 +31,7 @@ Lorsqu’un formulaire adaptatif est rendu, il identifie les paramètres région
 
 * Request parameter `afAcceptLang`
 To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. Par exemple, l’URL suivante force le rendu du formulaire en japonais :
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
 
@@ -57,7 +57,7 @@ Pour ajouter un nouveau paramètre régional lors de l’exécution des formulai
 
 ### Add a locale to the Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Aller à `https://[server]:[port]/system/console/configMgr`.
+1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
 1. Cliquer pour modifier le composant **Guide Localization Service**.
 1. Ajouter le paramètre régional que vous souhaitez à la liste des paramètres régionaux de supports
 
@@ -103,7 +103,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
-Le `<locale>` sera affiché à `https://[server]:[port]/libs/cq/i18n/translator.html`.
+Le `<locale>` sera affiché à `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
 
 ### Redémarrez le serveur {#restart-the-server}
 
