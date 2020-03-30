@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -49,20 +49,20 @@ Lorsqu’un utilisateur interagit avec le formulaire, les interactions sont enre
 
 Pour afficher les rapports d’analyse, procédez comme suit :
 
-1. Log in to the AEM portal at `https://[hostname]:[port]`
+1. Log in to the AEM portal at `https://[hostname]:'port'`
 1. Cliquez sur **Formulaires > Formulaires &amp; Documents**.
 1. Sélectionnez le formulaire pour lequel vous souhaitez afficher les rapports d’analyse.
 1. Sélectionnez **Plus > Rapports Analytics**.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**** A. Rapport Analytics, commande
+**A.** Rapport Analytics, commande
 
 AEM Forms affiche des rapports d’analyse pour le formulaire et chaque panneau de celui-ci, comme illustré dans le rapport de synthèse ci-dessous.
 
 ![Rapport de synthèse d’un formulaire adaptatif](assets/analyticsdashboard_callout.png)
 
-************ A. Conversions **B. Résumé au niveau du formulaire** C.**Résumé au niveau du panneau** D. Navigateurs des visiteurs - filtre **E. Système d’exploitation des visiteurs - filtre** F. Langue des visiteurs - filtre
+**A.** Conversions **B.** Résumé au niveau du formulaire **C.** Résumé au niveau du panneau **D.** Navigateurs des - filtre **E.** Système d’exploitation des - filtre **F.** Langue des - filtre
 
 Par défaut, le rapport affiche l’analyse des sept derniers jours. Vous pouvez afficher des récapitulatifs pour les 15 derniers jours, le dernier mois et ainsi de suite, ou bien indiquer une période.
 
@@ -91,7 +91,7 @@ La section de synthèse de niveau formulaire donne des informations sur les perf
 * **Brouillons** : nombre de fois que le formulaire a été enregistré en tant que brouillon. 
 * **Envois** : nombre de fois que le formulaire a été envoyé.
 * **Abandons** : nombre de fois que les utilisateurs ont commencé à remplir le formulaire sans le compléter.
-* **Visiteurs** uniques : Nombre de fois où le formulaire est &quot;rendu par des visiteurs uniques&quot;. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html). 
+* **** uniques : Nombre de fois où le formulaire est &quot;rendu par des uniques&quot;. Pour plus d’informations sur les visiteurs uniques, voir [Visiteurs uniques, visites et comportement des clients](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html). 
 
 ![Rapport d’analyse de synthèse de niveau formulaire développé](assets/analytics-report.png)
 
