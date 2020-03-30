@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature de l’agent dans les lettres. Après avoir configuré l’image de la signature de l’agent lors de la création d’une lettre, vous pouvez rendre l’image de la signature de l’agent dans la lettre comme signature de l’agent expéditeur.
 
-Le DDE agentSignatureImage est un DDE calculé qui représente l’image de la signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée qui est exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu d’image en se basant sur ces paramètres. Le dictionnaire de données système SystemContext donne aux lettres dans Correspondence Management accès aux informations dans le contexte système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
+Le DDE agentSignatureImage est un DDE calculé qui représente l’image de la signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée qui est exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu d’image en se basant sur ces paramètres. Le dictionnaire de données système SystemContext donne aux lettres dans Correspondence Management l’accès aux informations dans le contexte système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
 
 Vous pouvez ajouter des images sous le dossier cmuserroot. Dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md), à l’aide de la propriété Racine de l’utilisateur de CM, vous pouvez changer le dossier d’où l’image de la signature de l’agent est récupérée.
 
@@ -33,7 +33,7 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 1. Assurez-vous que l’image de la signature de l’agent porte le même nom que le nom d’utilisateur AEM de l’utilisateur. (L’extension n’est pas nécessaire pour le nom de fichier de l’image.)
 1. Dans CRX, créez un dossier intitulé `cmUserRoot` dans le dossier de contenu.
 
-   1. Aller à `https://[server]:[port]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
+   1. Accédez à `https://'[server]:[port]'/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
 
    1. Cliquez avec le bouton droit sur le dossier **contenu** et sélectionnez **Créer** > **Créer un dossier**.
 
@@ -47,7 +47,7 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
 1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et ajoutez-y l’image de la signature de l’agent.
 
-   1. Aller à `https://[server]:[port]/crx/explorer/index.jsp`. Connectez-vous en tant qu’administrateur, si nécessaire.
+   1. Accédez à `https://'[server]:[port]'/crx/explorer/index.jsp`. Connectez-vous en tant qu’administrateur, si nécessaire.
    1. Cliquez sur **Explorateur de contenu**. L’explorateur de contenu s’ouvre dans une nouvelle fenêtre.
    1. Dans l’explorateur de contenu, accédez au dossier cmUserRoot et sélectionnez-le. Cliquez avec le bouton droit sur le dossier **cmUserRoot** et sélectionnez **Nouveau nœud**.
 
@@ -55,7 +55,7 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       Effectuez les entrées suivantes de la rangée pour le nouveau nœud, puis cliquez sur la coche verte.
 
-      **** Nom : JohnDoe (ou le nom du fichier de signature de votre agent)
+      **Nom :** JohnDoe (ou le nom du fichier de signature de votre agent)
 
       **Type :** nt:file
 
