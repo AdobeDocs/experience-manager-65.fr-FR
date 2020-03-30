@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
 
 Les événements, comme les erreurs d’exécution ou de démarrage, sont enregistrés dans les fichiers journaux du serveur d’applications. Ces fichiers peuvent vous aider à diagnostiquer les éventuels problèmes rencontrés lors du déploiement sur le serveur d’applications. Vous pouvez les ouvrir dans un éditeur de texte.
 
-(JBoss) Les fichiers journaux suivants se trouvent dans le `[appserver root]/server/[server]/log` répertoire :
+(JBoss) Les fichiers journaux suivants se trouvent dans le `[appserver root]/server/'server'/log` répertoire :
 
 * boot.log
 * server.log.*[aaaa-mm-jj]*
