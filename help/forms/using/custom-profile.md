@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,11 +18,11 @@ source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
 
 A profile is a resource node in [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu de formulaires HTML5 pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
 
-Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve dans /libs/xfaforms/profile.
+Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve dans /libs/xfaforms/.
 
-Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi pour générer le formulaire demandé.
+Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu  appelle le service Forms OSGi pour générer le formulaire demandé.
 
-Le script de profil est dans html.jsp et html.POST.jsp pour les requêtes GET et POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N’apportez aucune modification statique, la mise à jour du correctif écrase ces modifications.
+Le script de  est dans html.jsp et html.POST.jsp pour les requêtes GET et POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N’apportez aucune modification statique, la mise à jour du correctif écrase ces modifications.
 
 Un profil comporte divers modules : les modules formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp, et footer.jsp.
 
@@ -52,11 +52,11 @@ Le module footer.jsp est vide. Il vous permet d’ajouter des scripts utilisés 
 
 ## Création de profils personnalisés {#creating-custom-profiles}
 
-Pour créer un profil personnalisé, procédez comme suit :
+Pour créer un  personnalisé, procédez comme suit :
 
 ### Créez un nœud de profil {#create-profile-node}
 
-1. Navigate to the CRX DE interface at the URL: `https://[server]:[port]/crx/de` and log in to the interface with administrator credentials.
+1. Navigate to the CRX DE interface at the URL: `https://'[server]:[port]'/crx/de` and log in to the interface with administrator credentials.
 
 1. Dans le panneau de gauche, rendez-vous à l’emplacement suivant : */content/xfaforms/profiles*.
 
@@ -78,7 +78,7 @@ Après la création d’un profil personnalisé, ajoutez les informations de ren
 1. Paste **html.jsp** node into the `/apps/hrform/demo` folder created above with same name **html.jsp** and click **Save**.
 1. Si vous rencontrez d’autres composants du script de profil, suivez les étapes 1 à 6 pour copier les composants dans le dossier /apps/hrform/demo.
 
-1. Pour vérifier que le profil est créé, ouvrez l’URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
+1. Pour vérifier que le est créé, ouvrez l’URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 Pour vérifier les formulaires, [Importez les formulaires](/help/forms/using/get-xdp-pdf-documents-aem.md) de votre système de fichiers local vers AEM Forms et [affichez l’aperçu du formulaire](/help/forms/using/previewing-forms.md) sur l’instance d’auteur du serveur AEM.
 
