@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ L’intégration des données prend en charge OAuth2.0, l’authentification de 
 
 Vous pouvez configurer des bases de données relationnelles à l’aide de la configuration de la console Web AEM. Procédez comme suit :
 
-1. Go to AEM web console at https://[server]:[host]/system/console/configMgr.
+1. Accédez à la console Web AEM à l’adresse https://server:host/system/console/configMgr.
 1. Recherchez la configuration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Appuyez pour ouvrir la configuration en mode édition.
 1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, tels que :
 
@@ -47,7 +47,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >
    >    
    >    
-   >    1. Go to https://[server]:[port]/system/console/crypto.
+   >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. Dans le champ **[!UICONTROL Texte brut]**, spécifiez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
    >    
    >    
@@ -66,9 +66,9 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
 
 Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration User Profile Connector dans AEM Web Console. Procédez comme suit :
 
-1. Go to AEM web console at https://[server]:[host]/system/console/configMgr.
+1. Go to AEM web console at https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. Dans la boîte de dialogue Configuration du connecteur de profil utilisateur, vous pouvez ajouter, supprimer ou mettre à jour les propriétés du profil utilisateur. Les propriétés spécifiées pourront être utilisées dans le modèle de données de formulaire. Utilisez le format suivant pour spécifier les propriétés du profil utilisateur :
+1. Dans la boîte de dialogue Configuration du connecteur de profil utilisateur, vous pouvez ajouter, supprimer ou mettre à jour les propriétés du profil utilisateur. Les propriétés spécifiées pourront être utilisées dans le modèle de données de formulaire. Utilisez le format suivant pour spécifier les propriétés  utilisateur :
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -119,12 +119,12 @@ Procédez comme suit pour configurer les services RESTful :
    * Sélectionnez URL ou Fichier dans la liste déroulante Source Swagger et, en conséquence, spécifiez l’URL Swagger vers le fichier de définition Swagger ou téléchargez le fichier Swagger depuis votre système de fichiers local.
    * En fonction de l’entrée Source Swagger, les champs suivants sont prérenseignés avec des valeurs :
 
-      * Schéma : Protocoles de transfert utilisés par l’API REST. Le nombre de types de schéma affichés dans la liste déroulante dépend des modèles définis dans la source Swagger.
+      * Schéma : Protocoles de transfert utilisés par l’API REST. Le nombre de types de schéma affichés dans le déroulant dépend des modèles définis dans la source Swagger.
       * Hôte : Nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
       * Chemin de base : Préfixe d’URL pour tous les chemins d’API. Ce champ est facultatif.\
          Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
    * Sélectionnez le type d&#39;authentification — Aucun, OAuth2.0, authentification de base, clé d&#39;API ou authentification personnalisée — pour accéder au service RESTful et, par conséquent, fournir des détails pour l’authentification.
-   Si vous sélectionnez Clé **** API comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée sous forme d’en-tête de requête ou de paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ Nom **[!UICONTROL du]** paramètre en conséquence.
+   Si vous sélectionnez Clé **** API comme type d’authentification, spécifiez la valeur de la clé API. La clé d’API peut être envoyée sous forme d’en-tête de requête ou de paramètre de . Sélectionnez l’une de ces options dans le déroulant **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre  de dans le champ Nom **[!UICONTROL du]** paramètre en conséquence.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
