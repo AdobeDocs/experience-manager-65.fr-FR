@@ -1,6 +1,6 @@
 ---
-title: Form Data Integration Service JavaAPI Quick Start (SOAP)
-seo-title: Form Data Integration Service JavaAPI Quick Start (SOAP)
+title: rapide JavaAPI du service d’intégration des données de formulaire (SOAP)
+seo-title: rapide JavaAPI du service d’intégration des données de formulaire (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
@@ -10,24 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Démarrage rapide de l’API Java du service d’intégration des données de formulaire (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
+#  rapide de l’API Java du service d’intégration des données de formulaire (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
-Les Démarrages rapides suivants sont disponibles pour le service d’intégration des données de formulaire.
+Les  rapides suivantes sont disponibles pour le service d’intégration des données de formulaire.
 
-[Démarrage rapide (mode SOAP) : Importation de données de formulaire à l’aide de l’API Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[rapide (mode SOAP) : Importation de données de formulaire à l’aide de l’API Java](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Exportation des données de formulaire à l’aide de l’API Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[rapide (mode SOAP) : Exportation des données de formulaire à l’aide de l’API Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: La section Démarrage rapide de la programmation avec AEM forms est basée sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP) : Importation de données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+##  rapide (mode SOAP) : Importation de données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
 L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML appelé *Loan_data.xml* et le formulaire PDF est enregistré en tant que fichier PDF appelé *ResultLoanForm.pdf*. (Voir [Importation de données](/help/forms/developing/importing-exporting-data.md#importing-form-data)de formulaire.)
 
@@ -94,7 +94,7 @@ L’exemple de code Java suivant importe des données dans un formulaire PDF. Le
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -129,7 +129,7 @@ L’exemple de code Java suivant importe des données dans un formulaire PDF. Le
  
 ```
 
-## Démarrage rapide (mode SOAP) : Exportation des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+##  rapide (mode SOAP) : Exportation des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
 L’exemple de code Java suivant exporte des données d’un formulaire PDF. Les données du formulaire sont enregistrées sous la forme d’un fichier XML appelé *Loan_data.xml*. (Voir [Exportation de données](/help/forms/developing/importing-exporting-data.md#exporting-form-data)de formulaire.)
 
@@ -196,7 +196,7 @@ L’exemple de code Java suivant exporte des données d’un formulaire PDF. Les
      try{
          //Set connection properties required to invoke AEM Forms using SOAP mode
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
