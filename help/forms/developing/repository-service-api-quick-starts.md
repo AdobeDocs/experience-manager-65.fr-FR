@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide de l’API Repository Service
-seo-title: Démarrage rapide de l’API Repository Service
+title: 'rapide de l’API du service Repository '
+seo-title: 'rapide de l’API du service Repository '
 description: 'null'
 seo-description: 'null'
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
@@ -10,42 +10,42 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Démarrage rapide de l’API Repository Service {#repository-service-api-quick-starts}
+# rapide de l’API du service Repository {#repository-service-api-quick-starts}
 
-Les Démarrages rapides suivants sont disponibles pour le service de référentiel AEM Forms.
+Les  Quick suivants sont disponibles pour le service Repository d’AEM Forms.
 
-[Démarrage rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Ecriture d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[rapide (mode SOAP) : Ecriture d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Lecture d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
+[rapide (mode SOAP) : Lecture d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Mise à jour d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[rapide (mode SOAP) : Mise à jour d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Verrouillage d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[rapide (mode SOAP) : Verrouillage d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Gestion des listes de contrôle d’accès à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
+[rapide (mode SOAP) : Gestion des   à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Suppression d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
+[rapide (mode SOAP) : Suppression d’une ressource à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 **Applications/FormsApplication**
 
-La plupart des démarrages rapides du service de référentiel AEM Forms interagissent avec une application nommée `Applications/FormsApplication,` , comme illustré ci-dessous.
+La plupart des rapides du service de référentiel AEM Forms  interagissent avec une application nommée `Applications/FormsApplication,` , comme illustré ci-dessous.
 
-Le dossier FormsFolder est un emplacement dans le référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (voir Démarrage [rapide (mode SOAP) : Création d’un dossier à l’aide de l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.)
+Le dossier FormsFolder est un emplacement dans le référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir  [rapide (mode SOAP) : Création d’un dossier à l’aide de l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.)
 
 Le chemin d’accès à une ressource située dans le référentiel AEM Forms est :
 
@@ -53,13 +53,13 @@ Le chemin d’accès à une ressource située dans le référentiel AEM Forms es
 
 >[!NOTE]
 >
->Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur Web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur Web `https://[server name]:[server port]/repository`. Vous pouvez vérifier les résultats de démarrage rapide à l’aide d’un navigateur Web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez le voir dans un navigateur Web.
+>Vous pouvez parcourir le référentiel AEM Forms à l’aide d’un navigateur Web. Pour parcourir le référentiel, saisissez l’URL suivante dans un navigateur Web `https://[server name]:[server port]/repository`. Vous pouvez vérifier rapidement les résultats des  à l’aide d’un navigateur Web. Par exemple, si vous ajoutez du contenu au référentiel AEM Forms, vous pouvez le voir dans un navigateur Web.
 
 >[!NOTE]
 >
->Applications/FormsApplication n’existe pas par défaut. Pour suivre les démarrages rapides, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)de processus.
+>Applications/FormsApplication n’existe pas par défaut. Pour suivre le  rapide, créez cette application à l’aide de Workbench. Pour plus d’informations sur la création d’une application à l’aide de Workbench, voir [Prise en main de la conception](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)de processus.
 
-## Démarrage rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
+##  rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
 L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’emplacement suivant `/Applications/FormsApplication/1.0/`. (Voir [Création de dossiers](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
@@ -121,7 +121,7 @@ L’exemple de code Java suivant crée un dossier appelé *FormsFolder* à l’e
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -233,7 +233,7 @@ L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans l
          {
          //Set connection properties required to invoke AEM Forms
          Properties connectionProps = new Properties();
-         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -293,9 +293,9 @@ L’exemple de code Java suivant écrit une ressource appelée *loan.xdp* dans l
  
 ```
 
-## Démarrage rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
+##  rapide (mode SOAP) : Liste des ressources à l’aide de l’API Java {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-L’exemple de code Java suivant répertorie les ressources situées dans `Applications/FormsApplication/1.0/FormsFolder`. (Voir [Liste des ressources](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+L’exemple de code Java suivant montre  ressources de situées dans `Applications/FormsApplication/1.0/FormsFolder`. (Voir [Liste des ressources](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```as3
  /*
@@ -355,7 +355,7 @@ L’exemple de code Java suivant répertorie les ressources situées dans `Appli
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -454,7 +454,7 @@ L’exemple de code Java suivant lit une ressource appelée *Loan.xdp* à partir
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -555,7 +555,7 @@ L’exemple de code Java suivant est mis à jour `/Applications/FormsApplication
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -605,7 +605,7 @@ L’exemple de code Java suivant est mis à jour `/Applications/FormsApplication
  
 ```
 
-## Démarrage rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
+##  rapide (mode SOAP) : Recherche de ressources à l’aide de l’API Java {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
 L’exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsApplication/1.0/FormsFolder`. (Voir [Recherche de ressources](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
@@ -669,7 +669,7 @@ L’exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsAppl
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -729,7 +729,7 @@ L’exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsAppl
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
+##  rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
 L’exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)de ressources.)
 
@@ -792,7 +792,7 @@ L’exemple de code Java suivant crée une relation entre deux ressources dans l
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -929,7 +929,7 @@ L’exemple de code Java suivant verrouille /Applications/FormsApplication/1.0/F
          try {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -981,9 +981,9 @@ L’exemple de code Java suivant verrouille /Applications/FormsApplication/1.0/F
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Gestion des listes de contrôle d’accès à l’aide de l’API Java {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
+##  rapide (mode SOAP) : Gestion des   à l’aide de l’API Java {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
 
-L’exemple de code Java suivant lit et crée des listes de contrôle d’accès (ACL) dans le référentiel.
+L’exemple de code Java suivant lit et crée des  de (ACL) dans le référentiel.
 
 ```as3
  /*
@@ -1040,7 +1040,7 @@ L’exemple de code Java suivant lit et crée des listes de contrôle d’accès
          try {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1098,7 +1098,7 @@ L’exemple de code Java suivant lit et crée des listes de contrôle d’accès
 
 ## Quick Start (SOAP mode): Deleting a resource using the Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
-L’exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Si ce fichier XDP ne se trouve pas dans ce dossier, une exception est générée. (Voir [Suppression de ressources](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
+L’exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplication/1.0/FormsFolder`. Si ce fichier XDP n’est pas situé dans ce dossier, une exception est générée. (Voir [Suppression de ressources](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
 ```as3
  /*
@@ -1162,7 +1162,7 @@ L’exemple de code Java suivant supprime Loan.xdp de `Applications/FormsApplica
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
