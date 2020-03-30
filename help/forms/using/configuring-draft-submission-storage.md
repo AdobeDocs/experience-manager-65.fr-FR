@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -38,7 +38,7 @@ Outre l’approche par défaut mentionnée ci-dessus, une autre mise en œuvre d
 
 ## Configuration des services de brouillons et envois Forms Portal {#configuring-forms-portal-drafts-and-submissions-services}
 
-In the AEM Web Console Configuration ( `https://[host]:[port]/system/console/configMgr`), click to open **Forms Portal Draft and Submission Configuration** in edit mode.
+In the AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`), click to open **Forms Portal Draft and Submission Configuration** in edit mode.
 
 Indiquez les valeurs des propriétés en fonction de vos besoins comme décrit ci-dessous :
 
@@ -102,7 +102,7 @@ Les données sont publiées directement sur l’instance à distance configurée
 
 Outre la configuration spécifiée ci-dessus, fournissez les informations sur l’instance de traitement à distance configurée.
 
-In the AEM Web Console Configuration ( `https://[host]:[port]/system/console/configMgr`), click to open **AEM DS Settings Service** in edit mode. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
+In the AEM Web Console Configuration ( `https://[host]:'port'/system/console/configMgr`), click to open **AEM DS Settings Service** in edit mode. Dans la boîte de dialogue de service des paramètres AEM DS, renseignez les informations sur l’URL du serveur de traitement, y compris le nom d’utilisateur et le mot de passe.
 
 >[!NOTE]
 >
