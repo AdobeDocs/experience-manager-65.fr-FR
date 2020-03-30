@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,7 +31,7 @@ En résumé, la boîte de réception vous permet de créer une nouvelle applicat
 
 ## Création d’une application {#create-application}
 
-1. Go to AEM Inbox at https://[server]:[port]/aem/inbox.
+1. Go to AEM Inbox at https://&#39;[server]:[port]&#39;/aem/inbox.
 1. In the Inbox UI, tap **[!UICONTROL Create > Application]**. La page Sélectionner une application s’affiche.
 1. Select an application and click **[!UICONTROL Create]**. Le formulaire adaptatif associé à l’application s’ouvre. Renseignez les informations dans le formulaire adaptatif et appuyez sur **[!UICONTROL Envoyer]**. Cette action lance le processus associé et crée une tâche dans la boîte de réception de la personne désignée.
 
@@ -45,7 +45,7 @@ Les tâches affectées à un groupe s’affichent dans la boîte de réception d
 
 1. Appuyez sur la vignette de la tâche pour la sélectionner. Les options pour ouvrir ou déléguer la tâche s’affichent en haut.
 
-   ![select-task](assets/select-task.png)
+   ![select-](assets/select-task.png)
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -66,7 +66,7 @@ Lorsque vous ouvrez une tâche, vous pouvez afficher les détails de la tâche e
    >
    >Si une tâche est affectée à un groupe, vous devez d’abord la demander pour pouvoir l’ouvrir dans la vue détaillée.
 
-![task-details](assets/task-details.png)
+![-détails du](assets/task-details.png)
 
 La vue détaillée de tâche comprend les sections suivantes :
 
@@ -99,7 +99,7 @@ Lorsque vous agissez sur la tâche, elle se poursuit dans le processus.
 
 ### Affichage des tâches terminées {#view-completed-tasks}
 
-La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de la boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin, etc. Pour afficher les tâches terminées :
+La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de la boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin, etc. Pour  le terminé  :
 
 1. In AEM Inbox, tap ![toggle-side-panel1](assets/toggle-side-panel1.png) to open the filter selector.
 1. Appuyez sur l’accordéon **[!UICONTROL État de la tâche]** et choisissez **[!UICONTROL Terminé]**. Toutes vos tâches terminées s’affichent.
@@ -112,9 +112,9 @@ La tâche s’ouvre pour afficher le document ou le formulaire adaptatif associ�
 
 La section de détails de la tâche affiche des informations telles qu’une mesure prise, l’état de la tâche, la date de début et la date de fin.
 
-![tâche terminée](assets/completed-task.png)
+![terminé--](assets/completed-task.png)
 
 The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap **[!UICONTROL View details]** for a step for detailed information.
 
-![tâche terminée-workflow](assets/completed-task-workflow.png)
+![-processus--terminé](assets/completed-task-workflow.png)
 
