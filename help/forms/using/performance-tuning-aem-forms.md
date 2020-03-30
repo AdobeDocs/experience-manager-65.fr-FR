@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,8 +23,8 @@ Cet article explique les stratégies et les recommandations que vous pouvez impl
 
 Vous pouvez configurer et contrôler la stratégie de mise en cache d’AEM Forms à l’aide du composant **Mobile Forms Configurations** de la console d’administration Web d’AEM à l’adresse :
 
-* (AEM Forms on OSGi) `https://[server]:[port]/system/console/configMgr`
-* (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
+* (AEM Forms on OSGi) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 Les options disponibles pour la mise en cache sont les suivantes :
 
@@ -44,7 +44,7 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 >
 >Si vous utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs, il met également en cache les formulaires adaptatifs contenant des formulaires avec des données préremplies. Si ces formulaires sont diffusés à partir du cache du répartiteur AEM, il se peut que des données préremplies ou obsolètes soient diffusées aux utilisateurs. Par conséquent, utilisez le répartiteur AEM pour mettre en cache des formulaires adaptatifs qui n’utilisent pas de données pré-renseignées. De plus, un cache de répartiteur n’invalide pas automatiquement les fragments mis en cache. Par conséquent, ne l’utilisez pas pour mettre en cache des fragments de formulaire. Pour de tels formulaires et fragments, utilisez le [Cache de formulaires adaptatifs](../../forms/using/configure-adaptive-forms-cache.md).
 
-## Paramètres JVM {#jvm-parameters}
+## Paramètres JVM    {#jvm-parameters}
 
 For optimal performance, it is recomended to use the following JVM `init` arguments to configure the `Java heap` and `PermGen`.
 
@@ -88,14 +88,14 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
    >For Linux, the default `APACHE_HOME` is `/etc/httpd/`.
 
 1. Configurez le proxy sur le port 4502 de crx.
-Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
+Ajouter suivant la configuration dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Activez la compression. Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
+1. Activez la compression. Ajouter suivant la configuration dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
 
    **Pour les formulaires HTML5**
 
@@ -131,7 +131,7 @@ Ajoutez la configuration suivante dans `APACHE_HOME/conf/httpd.conf` le fichier 
    </Location>
    ```
 
-   To access the crx server, use `https://[server]:80`, where `server` is the name of the server on which the Apache server is running.
+   To access the crx server, use `https://'server':80`, where `server` is the name of the server on which the Apache server is running.
 
 ## À l’aide d’un antivirus sur un serveur exécutant AEM Forms {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -153,9 +153,9 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 * **(AEM Forms on JEE uniquement)** Répertoire de stockage global de documents (GDS). L’emplacement par défaut est :
 
-   * (JBoss) [appserver root]/server/[server]/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver root]/installedApps/adobe/[server]/DocumentStorage
+   * (JBoss) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+   * (WebSphere) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(AEM Forms on JEE uniquement)** Journaux du serveur et répertoire temporaire AEM Forms. L’emplacement par défaut est :
 
@@ -164,7 +164,7 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 >[!NOTE]
 >
->* If you are using a different location for GDS and temporary directory, open AdminUI at `https://[server]:[port]/adminui`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
+>* If you are using a different location for GDS and temporary directory, open AdminUI at `https://'[server]:[port]'/adminui`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
 
 * Si le serveur AEM Forms se comporte lentement, même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
 
