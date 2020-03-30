@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -84,7 +84,7 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 
 **Ajout d’options Java à WebLogic**
 
-1. Start the WebLogic Administration Console by typing `https://`*[host name ]*`:`*[port]* `/console` in a web browser.
+1. de WebLogic Administration Console en saisissant `https://[host name]:[port]/console` dans un navigateur Web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
