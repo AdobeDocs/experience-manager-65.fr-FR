@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -41,7 +41,7 @@ Les sites de référence offrent des ressources réutilisables que vous pouvez u
 
 ## Conditions préalables et étapes et de la configuration des sites de référence {#prerequisites-and-steps-to-set-up-reference-sites}
 
-Avant de configurer le site de référence, vérifiez que vous disposez des éléments suivants :
+Avant de configurer le site de référence, assurez-vous que vous disposez des éléments suivants :
 
 * **AEM Essentials** AEM QuickStart, package du module complémentaire AEM Forms et packages de sites de référence. See [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for add-on and reference sites packages details.
 
@@ -119,7 +119,7 @@ Effectuez les étapes suivantes dans l’ordre recommandé pour installer et con
   <tr>
    <td><a href="#anonymous">Configurer le service de configuration commun aux formulaires pour les utilisateurs anonymes</a></td>
    <td>Publication</td>
-   <td>La configuration permet l’envoi, la signature et la génération de documents d’enregistrement pour les utilisateurs anonymes.</td>
+   <td>La configuration permet l'envoi, la signature et l' de génération d'enregistrements pour les utilisateurs anonymes.</td>
   </tr>
   <tr>
    <td><a href="#fdm">Modifier le fichier Swagger du service Rest pour le modèle de données du formulaire</a></td>
@@ -220,8 +220,8 @@ To learn more about how to use packages and package share, see [How to Work With
 
 Une fois que vous avez installé les packages et avez lancé les instances de rédaction et de publication, consultez les URL suivantes dans votre navigateur :
 
-* `https://[server]:[port]/wegov`
-* `https://[server]:[port]/wefinance`
+* `https://'[server]:[port]'/wegov`
+* `https://'[server]:[port]'/wefinance`
 
 Si votre installation est terminée, vous pouvez accéder aux pages d’accueil des sites de référence et We.Finance.
 
@@ -231,12 +231,12 @@ Les sites de référence des demandes de prêt immobilier et d&#39;assurance aut
 
 Pour importer l&#39;entité personnalisée pour l&#39;application d&#39;assurance auto :
 
-1. Téléchargez le package de la solution **WeFinanceAutoInsurance_1_0.zip** depuis `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` votre instance d’auteur AEM.
+1. Téléchargez le package de la solution **WeFinanceAutoInsurance_1_0.zip** depuis `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` votre instance d’auteur AEM.
 1. In your Microsoft Dynamics instance, go to **Settings > Solutions** and click **Import**. Sélectionnez et importez le package.
 
 Pour importer l&#39;entité personnalisée pour l&#39;application d&#39;assurance auto :
 
-1. Téléchargez le package **AEMFormsFSIRefsite_1_0.zip** depuis `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Sélectionnez et importez le package.
+1. Téléchargez le package **AEMFormsFSIRefsite_1_0.zip** depuis `https://[author]:'port'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Sélectionnez et importez le package.
 
 1. In your Microsoft Dynamics instance, go to **Settings > Solutions** and click **Import**. Sélectionnez et importez le package.
 
@@ -244,9 +244,9 @@ Pour importer les enregistrements de contrat d&#39;assurance et de client:
 
 1. Download the **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, and **home mortgage** data files from the following locations on your AEM author instance:
 
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
-   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Dans votre instance Microsoft Dynamics, procédez comme suit :
 
@@ -264,7 +264,7 @@ Configurez le service cloud OAuth dans AEM Forms pour activer la communication e
 1. Accédez au compte Microsoft Azure Active Directory. Ajoutez l’URL de configuration du service cloud copiée dans le paramètre **URL de réponse** pour votre application enregistrée. Enregistrez la configuration.
 1. In the Authentication Settings tab, specify **Service Root**, **Client Id**, **Client Secret**, and **Resource URL** for your Microsoft Dynamics instance. Click **Connect to OAuth** that redirects to the Microsoft Dynamics login page.
 1. Entrez vos informations de connexion. Une fois connecté, vous êtes redirigé vers la page de configuration du service cloud AEM Forms. Cliquez sur **Enregistrer et fermer**. La configuration du service cloud est enregistrée.
-1. Go to **Forms** > **Data Integrations** > **We.Finance**. Sélectionnez Assurance automatique (Dynamique) et cliquez sur Modifier. Les entités Microsoft Dynamics sont répertoriées sous l’onglet Sources de données. Attendez que toutes les entités soient récupérées de Microsoft Dynamics et répertoriées sous l’onglet Sources de données.
+1. Go to **Forms** > **Data Integrations** > **We.Finance**. Sélectionnez Assurance automatique (Dynamique) et cliquez sur Modifier. Les entités Microsoft Dynamics sont répertoriées sous l’onglet Sources de données. Patientez jusqu’à ce que toutes les entités soient récupérées de Microsoft Dynamics et répertoriées sous l’onglet Sources de données.
 1. Select the **AutoInsuranceRenewal entity** and click **Test Model Object**. In the input request section, specify the value for customer ID as “900001” and click **Test**. La section Output affiche les enregistrements récupérés de Microsoft Dynamics pour l’ID de client 900001.
 1. In the input request section, specify the value for customer ID as “900001” and click **Test**. La section Output affiche les enregistrements récupérés de Microsoft Dynamics pour l’ID de client 900001.
 1. Répétez les étapes 1 à 6 sur l’instance de publication.
@@ -273,7 +273,7 @@ Configurez le service cloud OAuth dans AEM Forms pour activer la communication e
 
 Effectuez les étapes suivantes sur les instances d’auteur et de publication :
 
-1. Go to AEM Web Configuration console at `https://[server]:[host]/system/console/configMgr`.
+1. Go to AEM Web Configuration console at `https://'[server]:[port]'system/console/configMgr`.
 1. Find and tap **[!UICONTROL Adobe Sign Configuration Service]** to open it for configuration.
 1. Configurez l’**[!UICONTROL expression du planificateur de mise à jour d’état]** comme suit : **0 0/2 * * * ?** .
 
@@ -301,7 +301,7 @@ Effectuez les étapes suivantes sur les instances d’auteur et de publication 
 
 Effectuez les étapes suivantes sur l’instance de publication pour autoriser l’accès des utilisateurs anonymes :
 
-1. Go to AEM Web Configuration console at `https://[server]:[port]/system/console/configMgr`.
+1. Go to AEM Web Configuration console at `https://'[server]:[port]'/system/console/configMgr`.
 1. Find and tap **[!UICONTROL Forms Common Configuration Service]** to open it for configuration.
 1. Configure the **[!UICONTROL Allow]** field for **[!UICONTROL All Users]**.
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
@@ -310,21 +310,21 @@ Effectuez les étapes suivantes sur l’instance de publication pour autoriser l
 
 Effectuez les étapes suivantes sur les instances d’auteur et de publication :
 
-1. Accédez à CRXDE à `https://[server]:[port]/crx/de/index.jsp`.
+1. Accédez à CRXDE à `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Accédez à **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** et ouvrez le fichier swagger.
-1. Mettez à jour les paramètres d’hôte et de port en fonction de votre environnement.
+1. Mettez à jour les paramètres de l’hôte et du port en fonction de votre  .
 1. Enregistrez les paramètres.
 1. (Instance **Auteur uniquement**) Accédez à **Outils** > Services **** Cloud > Sources de **données > global.****** Sélectionnez **roi-rest** et appuyez sur **Propriétés**.Appuyez sur Paramètres **d’** authentification et définissez le type d’ **authentification sur Authentification de base.****** Spécifiez/ `admin``admin`comme nom d’utilisateur/mot de passe pour accéder au service. Tap **Save &amp; Close**.
 
 ## Intégration à Marketing Cloud {#integrate-with-marketing-cloud}
 
-Vous pouvez intégrer AEM Forms à Adobe Analytics et Adobe Target. Bien qu’Adobe Analytics vous aide à générer des rapports et à analyser les performances des formulaires adaptatifs, Adobe Target vous aide à fournir des expériences personnalisées et à effectuer des tests A/B pour les formulaires adaptatifs.
+Vous pouvez intégrer AEM Forms à Adobe Analytics et aux  d’Adobe. Bien qu’Adobe Analytics vous aide à générer des rapports et à analyser les performances des formulaires adaptatifs, le Adobe vous aide à fournir des expériences personnalisées et à effectuer des tests A/B pour les formulaires adaptatifs.
 
-Procédez comme suit pour configurer Adobe Analytics et Adobe Target dans AEM Forms.
+Procédez comme suit pour configurer Adobe Analytics et les  Adobe dans AEM Forms.
 
 ### Configuration d’Adobe Analytics {#configureanalytics}
 
-L’intégration d’Adobe Analytics à AEM Forms vous permet de surveiller et d’analyser la manière dont vos clients interagissent avec vos formulaires et documents. Il vous aide à identifier et à résoudre les problèmes et à agir pour augmenter le taux de conversion.
+L’intégration d’Adobe Analytics à AEM Forms vous permet de surveiller et d’analyser la manière dont vos clients interagissent avec vos formulaires et documents. Il vous aide à identifier et à résoudre les problèmes et à agir pour augmenter le .
 
 Pour tester cette fonctionnalité sur le site de référence, configurez votre compte Analytics tel que décrit dans [Configuration des analyses et des rapports](../../forms/using/configure-analytics-forms-documents.md).
 
@@ -333,7 +333,7 @@ Pour générer un rapport, les données de base sont regroupées avec les sites 
 1. Assurez-vous que les configurations d’analyse We.Finance sont disponibles dans les services cloud AEM. Vous pouvez trouver les services Cloud de l’une des manières suivantes :
 
    * Accédez à **[!UICONTROL Outils>Services Cloud>Services]** Cloud hérités ou accédez à https://&lt;hôte>:&lt;port>/libs/cq/core/content/tools/cloudservices.html.
-   * In the **[!UICONTROL Cloud Services]** page, under **[!UICONTROL Adobe Analytics]** section, click `Show Configurations`. Vous pouvez voir les configurations We.Finance disponibles. Cliquez pour ouvrir la configuration. Dans la page de configuration, cliquez sur **[!UICONTROL Modifier]**. Fournissez une société, un nom d’utilisateur, un secret partagé (mot de passe) et un centre de données valides, puis cliquez sur **[!UICONTROL Se connecter à Analytics]**. Une fois la boîte de dialogue Connexion réussie, cliquez sur **[!UICONTROL OK]** dans la boîte de dialogue de configuration. Configurez la structure sous la configuration d’Analytics, comme décrit dans la section [Configuration d’Analytics et des rapports](../../forms/using/configure-analytics-forms-documents.md).
+   * In the **[!UICONTROL Cloud Services]** page, under **[!UICONTROL Adobe Analytics]** section, click `Show Configurations`. Vous pouvez voir les configurations We.Finance disponibles. Cliquez pour ouvrir la configuration. Dans la page de configuration, cliquez sur **[!UICONTROL Modifier]**. Fournissez des  valides, un nom d’utilisateur, un secret partagé (mot de passe) et un centre de données, puis cliquez sur **[!UICONTROL Se connecter à Analytics]**. Une fois la boîte de dialogue Connexion réussie, cliquez sur **[!UICONTROL OK]** dans la boîte de dialogue de configuration. Configurez la structure sous la configuration d’Analytics, comme décrit dans la section [Configuration d’Analytics et des rapports](../../forms/using/configure-analytics-forms-documents.md).
 
 1. Accédez à https://&lt;*hôte*>:&lt;*port*>/system/console/configMgr et procédez comme suit :
 
@@ -346,7 +346,7 @@ Pour générer un rapport, les données de base sont regroupées avec les sites 
 
    * Ouvrez le dossier We.Finance, puis sélectionnez le formulaire pour lequel vous souhaitez afficher le rapport.
    * Dans la barre d’outils des actions, cliquez sur Rapport d’analyse. Une fois que vous avez activé les analyses pour le formulaire, cliquez sur Rapport d’analyse. Vous constatez qu’un rapport vide a été généré. Après la génération d’un rapport vierge, vous devez fournir les données de base envoyées avec le module de site de référence pour générer un rapport d’analyse à des fins de démonstration.
-   Les sites de référence fournissent des rapports d’analyse avec des données de base pour les cas d’utilisation de cartes de crédit, de prêts hypothécaires et de pensions alimentaires pour enfants.
+   Les sites de référence fournissent aux d’analyse des données de base pour les cas d’utilisation de cartes de crédit, de prêts hypothécaires et de pensions alimentaires pour enfants.
 
 ### Configuration de Target {#configure-target}
 
@@ -358,18 +358,18 @@ Pour tester l’intégration au site de référence, procédez comme suit pour c
    **Remarque**: Si l’instance AEM s’exécute sur JBoss, qui est démarré en tant que service à partir de l’installation clé en main, ajoutez le `-Dabtesting.enabled=true` paramètre dans l’entrée suivante dans le `jboss\bin\standalone.conf.bat` fichier :
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
-1. Accès `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
+1. Accédez à l’adresse `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
 
-1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. Vous pouvez voir la configuration Target de We.Finance disponible. Cliquez pour ouvrir la configuration. Dans la page de configuration, cliquez sur **[!UICONTROL Modifier]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
+1. In the **[!UICONTROL Adobe Target]** section, click **[!UICONTROL Show Configurations]**. Vous pouvez voir la configuration du We.Finance disponible. Cliquez pour ouvrir la configuration. Dans la page de configuration, cliquez sur **[!UICONTROL Modifier]**. The **[!UICONTROL Edit Component]** dialog for the configuration opens.
 
 1. Indiquez vos code client, adresse électronique et mot de passe associés à votre compte Target. Sélectionnez le type d’API **[!UICONTROL REST]**.
-1. Cliquez sur **[!UICONTROL Se connecter à Adobe Target]**. Une fois le compte Target configuré, cliquez sur **[!UICONTROL OK]**. Vous pouvez voir que la configuration assemblée comporte une structure Target.
+1. Cliquez sur **[!UICONTROL Se connecter à Adobe Target]**. Une fois le compte  configuré, cliquez sur **[!UICONTROL OK]**. Vous pouvez voir que la configuration assemblée comporte une structure de .
 
-1. Aller à `https://<hostname>:<port>/system/console/configMgr`.
+1. Accédez à `https://<hostname>:<port>/system/console/configMgr`.
 
 1. Cliquez sur **[!UICONTROL AEM Forms Target Configuration]**.
-1. Sélectionnez une structure Target.
-1. Dans le champ **[!UICONTROL Target URLs]**, indiquez l’URL vers AEM Forms. Par exemple: `https://<hostname>:<port>/`.
+1. Sélectionnez une structure de .
+1. Dans le champ **[!UICONTROL Target URLs]**, indiquez l’URL vers AEM Forms. Par exemple : `https://<hostname>:<port>/`.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
