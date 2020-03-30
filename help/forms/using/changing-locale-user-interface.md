@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,7 +37,7 @@ Before performing above steps, ensure that you follow the steps listed at [Gener
 Perform the following steps to add support for a language *New* and the browser locale code *nw*.
 
 1. Connectez-vous à CRXDE Lite.
-L’URL par défaut de CRXDE Lite est `https://[server]:[port]/lc/crx/de/index.jsp`.
+L’URL par défaut de CRXDE Lite est `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Navigate to the location `apps/ws/locales` and create a new folder `nw.`
 1. Copiez le fichier `translation.json`de l’emplacement `/apps/ws/locales/en-US` vers l’emplacement `/apps/ws/locales/nw` .
 1. Navigate to `/apps/ws/locales/nw` and open `translation.json` for editing. Effectuez des modifications spécifiques aux paramètres régionaux dans le fichier translation.json.
@@ -48,13 +48,13 @@ L’URL par défaut de CRXDE Lite est `https://[server]:[port]/lc/crx/de/index.j
 
 ## Localisation des catégories réduites, des files d’attente et des processus {#localizing-collapsed-categories-queues-and-processes}
 
-L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des catégories, des files d’attente et des processus. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. For detailed information about creating development package, see [Building AEM Forms workspace code.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des , des files d’attente et des processus du. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. For detailed information about creating development package, see [Building AEM Forms workspace code.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
 
 Dans les étapes suivantes, on considère que les nouveaux fichiers image localisés sont *Categories_nw.png*, *Queue_nw.png* et *Processes_nw.png*. La largeur recommandée des images est de 19 px.
 
 >[!NOTE]
 >
->Pour trouver le code de paramètres régionaux de la langue du navigateur de votre navigateur. Ouvrez `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>Pour trouver le code de paramètres régionaux de la langue du navigateur de votre navigateur. Ouvrez `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![collapse_panneaux_image](assets/collapsing_panels_image.png)
 
