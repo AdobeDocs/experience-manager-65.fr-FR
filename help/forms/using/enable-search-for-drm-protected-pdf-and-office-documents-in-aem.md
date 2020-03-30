@@ -10,22 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
-Adobe Experience Manager fournit une interface utilisateur permettant de rechercher différents actifs stockés dans AEM. La recherche native peut effectuer une recherche de texte intégral  la recherche de texte dans divers formats de document courants, tels que les fichiers texte brut, les documents Microsoft Office et les documents PDF. Vous pouvez également étendre et activer la recherche native pour effectuer une recherche de texte intégral sur des documents PDF et Microsoft Office protégés DRM.
+Adobe Experience Manager fournit une interface utilisateur permettant de rechercher différents actifs stockés dans AEM. La recherche native peut effectuer une recherche de texte intégral  la recherche de texte dans divers formats de couramment utilisés, tels que les fichiers texte brut, les Microsoft Office et les  PDF. Vous pouvez également étendre et activer la recherche native pour effectuer une recherche en texte intégral sur les PDF protégés DRM et les Microsoft Office.
 
 Effectuez les étapes suivantes pour permettre à AEM de rechercher des documents PDF protégés par sécurité documentaire et des documents Microsoft Office :
 
 ## Avant de commencer {#before-you-start}
 
 * Installez et configurez la sécurité documentaire AEM Forms.
-* Ajoutez le package sun.util.calendar à la liste blanche de la **configuration du pare-feu de désérialisation.** La configuration est répertoriée dans `https://[server]:[port]/system/console/configMgr`.
-* Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les lots sont répertoriés à `https://[server]:[port]/system/console/bundles`. Si tous les lots ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
+* Ajoutez le package sun.util.calendar à la liste blanche de la **configuration du pare-feu de désérialisation.** La configuration est répertoriée dans `https://'[server]:[port]'/system/console/configMgr`.
+* Vérifiez que tous les bundles AEM sont en cours d’utilisation. Les lots sont répertoriés à `https://'[server]:[port]'/system/console/bundles`. Si tous les lots ne sont pas actifs, patientez, puis vérifiez leur statut après quelques minutes.
 
 ## Établir une connexion sécurisée dans le flux de production AEM Forms (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
