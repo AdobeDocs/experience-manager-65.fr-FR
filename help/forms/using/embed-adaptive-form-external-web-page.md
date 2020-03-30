@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -158,11 +158,11 @@ Lorsque vous incorporez un formulaire adaptatif dans une page Web, prenez en com
 * Assurez-vous que le conteneur du formulaire dans la page Web utilise toute la largeur de la fenêtre. Cela permet aux règles CSS configurées pour les appareils mobiles de fonctionner sans aucune modification. Si le conteneur de formulaire ne prend pas toute la largeur de la fenêtre, vous devez écrire un CSS personnalisé pour que le formulaire s’adapte aux différents appareils mobiles.
 * Use `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to get the XML or JSON representation of form data in client.
 * Use `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API to unload the adaptive form from HTML DOM.
-* Configurez l’en-tête access-control-origin lors de l’envoi d’une réponse du serveur AEM.
+* Configurez l’en-tête de access-control- lors de l’envoi d’une réponse à partir du serveur AEM.
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaines {#cross-site}
 
-1. Sur l’instance d’auteur AEM, accédez à Configuration Manager de la console Web AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
+1. Sur l’instance d’auteur AEM, accédez à Configuration Manager de la console Web AEM à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez et ouvrez la configuration **Apache Sling Referrer Filter** .
 1. Dans le champ Hôtes autorisés, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.
 
