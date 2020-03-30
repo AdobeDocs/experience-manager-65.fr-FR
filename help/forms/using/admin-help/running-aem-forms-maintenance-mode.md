@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ Evitez d’appeler des processus lorsque le serveur est en mode de maintenance. 
 
 1. Dans un navigateur Web, entrez :
 
-   `https://`*[hostname ]*`:`*[port]* user name `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrator ]*`&password=`*[password]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
    Un message de pause s’affiche dans la fenêtre du navigateur.
 
@@ -40,7 +40,7 @@ Evitez d’appeler des processus lorsque le serveur est en mode de maintenance. 
 
 1. Dans un navigateur Web, entrez :
 
-   `https://`*[nom]d’hôte:[port ]*nom d’utilisateur`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[]* `&password=`*[administrateurmot de passe ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
    L’état s’affiche dans la fenêtre du navigateur. L’état « true » indique que le serveur s’exécute en mode de maintenance et « false » que le serveur ne s’exécute pas dans ce mode.
 
@@ -48,7 +48,7 @@ Evitez d’appeler des processus lorsque le serveur est en mode de maintenance. 
 
 1. Dans un navigateur Web, entrez :
 
-   `https://`*[nom]d’hôte:[port ]*nom d’utilisateur`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[]* `&password=`*[administrateurmot de passe ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
    Un message d’exécution s’affiche dans la fenêtre du navigateur.
 
