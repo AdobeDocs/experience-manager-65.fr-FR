@@ -8,7 +8,7 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -155,7 +155,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
 
-1. Connectez-vous à CRX DE à l’aide d’un compte administratif. The URL is https://[server]:[port]/crx/de/index.jsp
+1. Connectez-vous à CRX DE à l’aide d’un compte administratif. The URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
 1. Accédez au site /apps/fd/dashboard/scripts/metadataScripts. Créez un fichier avec l’extension .ecma. Par exemple, usermetadata.ecma
 
