@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -46,7 +46,7 @@ Lors de la prévisualisation d’une lettre, l’erreur « Erreur lors du charg
 
 Réinitialisez le cache de lettre sur l’instance de publication en suivant les étapes ci-après, puis réessayez d’afficher la lettre :
 
-1. Accédez à **`https://[server]:[port]/[contextPath]/system/console/configMgr`** et connectez-vous en tant qu’administrateur.
+1. Accédez à **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** et connectez-vous en tant qu’administrateur.
 1. Select **Correspondence Management Configurations**.
 1. Dans **Configurations de Correspondence Management**, désactivez l’option **Activer le cache de lettre**, puis cliquez sur **Enregistrer**.
 1. Enable **Enable Letter Cache** and then click **Save**.
