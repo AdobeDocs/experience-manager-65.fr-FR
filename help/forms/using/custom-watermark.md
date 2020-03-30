@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ Dans l’interface utilisateur de création de correspondance, les utilisateurs 
 
 Pour éviter l’utilisation non autorisée de ces données, les entreprises peuvent ajouter un filigrane à l’aperçu PDF. Le filigrane par défaut, « APERÇU », apparaît sur le PDF.
 
-To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://[server]:[port]/system/console/configMgr.
+To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
 ![default-watermark](assets/default-watermark.png)
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
 
 ## Personnalisation du filigrane dans l’aperçu PDF dans l’interface utilisateur de création de correspondance {#customizewatermark-}
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named **[!UICONTROL previewwatermark]** with path/structure similar to the previewwatermark folder in the libs folder:
 
    1. Right-click the **previewwatermark** folder at the following path and select **Overlay Node**:
@@ -40,11 +40,11 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/configFiles/previewwatermark
+      **Chemin :** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
       >[!NOTE]
       >
