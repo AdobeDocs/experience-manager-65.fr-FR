@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
 
 1. **Choix ou création d’un profil**
 
-   1. Dans l’interface CRX DE, accédez à : `https://[server]:[port]/crx/de`.
+   1. Dans l’interface CRX DE, accédez à : `https://'[server]:[port]'/crx/de`.
    1. Connectez-vous à l’aide des informations d’identification de l’administrateur.
    1. Créez un profil ou choisissez un profil existant.
 
