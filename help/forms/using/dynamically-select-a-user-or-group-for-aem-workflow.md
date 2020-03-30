@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,7 +25,7 @@ Assign task and Adobe Sign steps of [Forms-centric workflows on OSGi](/help/form
 
 ECMAScript est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Effectuez les étapes suivantes pour sélectionner de manière dynamique un utilisateur ou un groupe à l’aide de ECMAScript :
 
-1. Ouvrez CRXDE Lite. L’URL est `https://[server]:[port]/crx/de/index.jsp`
+1. Ouvrez CRXDE Lite. L’URL est `https://'[server]:[port]'/crx/de/index.jsp`
 1. Créez un fichier avec l’extension .ecma au chemin d’accès suivant. Si le chemin d’accès (structure du nœud) n’existe pas, créez-le :
 
    * (Path for Assign Task step) `/apps/fd/dashboard/scripts/participantChooser`
@@ -39,7 +39,7 @@ ECMAScript est un langage de script. Il est utilisé pour les scripts et les app
 
    1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Ajoutez la propriété `mix:title` dans la boîte de dialogue Modifier les mixins et cliquez sur **OK**.
-   1. Ajoutez la propriété suivante au noeud jcr:content du script :
+   1. Ajouter la propriété suivante au noeud jcr:content du script :
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
