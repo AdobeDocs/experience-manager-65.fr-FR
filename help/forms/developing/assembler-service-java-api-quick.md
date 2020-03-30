@@ -10,44 +10,44 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # API Java du service Assembler QuickStart (SOAP) {#assembler-service-java-api-quickstart-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Assembler
+ rapide de l’API Java (SOAP) est disponible pour le service Assembler
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[rapide (mode SOAP) : Assemblage d’un PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Démontage d’un document PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[rapide (mode SOAP) : Démontage d’un PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF chiffré à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[rapide (mode SOAP) : Assemblage d’un PDF chiffré à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF avec numérotation Bates à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[rapide (mode SOAP) : Assemblage d’un PDF avec numérotation Bates à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage d’un document PDF non interactif à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
+[rapide (mode SOAP) : Assemblage d’un PDF non interactif à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Détermination de la conformité d’un document à la norme PDF/A à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[rapide (mode SOAP) : Détermination de la conformité d’un à la norme PDF/A à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Validation de documents DDX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
+[rapide (mode SOAP) : Validation du DDX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage de documents PDF avec des signets à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[rapide (mode SOAP) : Assemblage de  PDF avec des signets à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Création dynamique d’un document DDX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[rapide (mode SOAP) : Création dynamique d’un DDX à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage de portfolios PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[rapide (mode SOAP) : Assemblage de portfolios PDF à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
-[Démarrage rapide (mode SOAP) : Assemblage de plusieurs fragments XDP à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[rapide (mode SOAP) : Assemblage de plusieurs fragments XDP à l’aide de l’API Java](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Le démarrage rapide situé dans Programmation avec AEM Forms dépend du serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+***Remarque **: Les  rapides situés dans Programmation avec AEM Forms reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Assemblage d’un PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant fusionne deux documents source PDF nommés *map.pdf* et *directions.pdf* en un seul document PDF. Le nom du document PDF unique est *AssemblerResultPDF.pdf*. Le nom du document DDX est *shell.xml*. (Voir Assemblage [programmatique de documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents)PDF.)
+L’exemple de code Java suivant fusionne deux source PDF nommés *map.pdf* et *directions.pdf* dans un seul  PDF. Le nom du PDF unique est *AssemblerResultPDF.pdf*. Le nom du DDX est *shell.xml*. (Voir [Assemblage par programmation de](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents)PDF.)
 
 ```as3
  /*
@@ -120,7 +120,7 @@ L’exemple de code Java suivant fusionne deux documents source PDF nommés *map
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -189,9 +189,9 @@ L’exemple de code Java suivant fusionne deux documents source PDF nommés *map
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Démontage d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Démontage d’un PDF à l’aide de l’API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du document DDX est *shell_disassemble.xml*. Chaque document PDF démonté est nommé `ResultPDF[Number].pdf`. En d’autres termes, le premier document PDF désassemblé s’appelle *ResultPDF1.pdf.* Pour plus d’informations sur le document DDX *shell_disassemble.xml* utilisé dans cet exemple de code, voir Démontage [programmatique de documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
+L’exemple de code Java suivant démonte un PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du  DDX est *shell_disassemble.xml*. Chaque  PDF démonté est nommé `ResultPDF[Number].pdf`. En d’autres termes, le premier PDF désassemblé s’appelle *ResultPDF1.pdf.* Pour plus d’informations sur le DDX *shell_disassemble.xml* utilisé dans cet exemple de code, reportez-vous à la section Démontage [programmatique du](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
 
 ```as3
  /*
@@ -263,7 +263,7 @@ L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResul
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -328,9 +328,9 @@ L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResul
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF chiffré à l’aide de l’API Java {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Assemblage d’un PDF chiffré à l’aide de l’API Java {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF chiffré par mot de passe. Le document PDF non sécurisé est nommé *Loan.pdf*. Notez que le nom du document DDX est *shell_Encrypt.xml*. Le document PDF chiffré s’appelle *AssemblerEncryptedPDF.pdf*. (Voir [Assemblage de documents](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents)PDF chiffrés.)
+L’exemple de code Java suivant assemble un PDF chiffré par mot de passe. Le PDF non sécurisé est nommé *Loan.pdf*. Notez que le nom du DDX est *shell_Encrypt.xml*. Le PDF chiffré est nommé *AssemblerEncryptedPDF.pdf*. (Voir [Assemblage de](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents)PDF chiffrés.)
 
 ```as3
  /*
@@ -406,7 +406,7 @@ L’exemple de code Java suivant assemble un document PDF chiffré par mot de pa
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -451,9 +451,9 @@ L’exemple de code Java suivant assemble un document PDF chiffré par mot de pa
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF avec numérotation Bates à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
+##  rapide (mode SOAP) : Assemblage d’un PDF avec numérotation Bates à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF avec des identifiants de page uniques (numérotation Bates). Notez que le nom du document DDX est *shell_Bates.xml*. Le document PDF renvoyé par le service Assembler est enregistré sous la forme d’un fichier PDF nommé *AssemblerResultBatesPDF.pdf*. (Voir [Assemblage de documents à l’aide de la numérotation](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering)Bates.)
+L’exemple de code Java suivant assemble un PDF avec des identifiants de page uniques (numérotation Bates). Notez que le nom du DDX est *shell_Bates.xml*. Le PDF renvoyé par le service Assembler est enregistré sous la forme d’un fichier PDF nommé *AssemblerResultBatesPDF.pdf*. (Voir [Assemblage de  à l’aide de la numérotation](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering)Bates.)
 
 ```as3
  /*
@@ -535,7 +535,7 @@ L’exemple de code Java suivant assemble un document PDF avec des identifiants 
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -609,9 +609,9 @@ L’exemple de code Java suivant assemble un document PDF avec des identifiants 
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage d’un document PDF non interactif à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Assemblage d’un PDF non interactif à l’aide de l’API Java {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF non interactif. Le document PDF interactif transmis au service Assembler s’appelle *Loan.pdf*. Le nom du document DDX est *shell_XFA.xml*. Le document PDF non interactif est enregistré en tant que fichier PDF nommé *AssembleNonInteractivePDF.pdf*. (Voir [Assemblage de documents](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents)PDF non interactifs.)
+L’exemple de code Java suivant assemble un  PDF non interactif. Le PDF interactif transmis au service Assembler s’appelle *Loan.pdf*. Notez que le nom du DDX est *shell_XFA.xml*. Le PDF non interactif est enregistré sous la forme d’un fichier PDF nommé *AssembleNonInteractivePDF.pdf*. (Voir [Assemblage de](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents)PDF non interactifs.)
 
 ```as3
  /*
@@ -684,7 +684,7 @@ L’exemple de code Java suivant assemble un document PDF non interactif. Le doc
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -733,9 +733,9 @@ L’exemple de code Java suivant assemble un document PDF non interactif. Le doc
  
 ```
 
-## Démarrage rapide (mode SOAP) : Détermination de la conformité d’un document à la norme PDF/A à l’aide de l’API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+##  rapide (mode SOAP) : Détermination de la conformité d’un à la norme PDF/A à l’aide de l’API Java {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
-L’exemple de code Java suivant détermine si le document PDF d’entrée est compatible PDF/A. Le document PDF d’entrée transmis au service Assembler s’appelle *Loan.pdf*. Le nom du document DDX est shell_PDFA.xml. Le document XML renvoyé par le service Assembler et indique si le document PDF d’entrée est compatible PDF/A est enregistré sous forme de fichier XML nommé result.xml. Pour plus d’informations sur le document *shell_PDFA.xml* DDX utilisé dans cet exemple de code, voir [Détermination de la compatibilité des documents avec le format PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
+L’exemple de code Java suivant détermine si le PDF d’entrée est compatible PDF/A. Le PDF d’entrée transmis au service Assembler s’appelle *Loan.pdf*. Le nom du DDX est shell_PDFA.xml. Le XML renvoyé par le service Assembler et indique si le PDF d’entrée est compatible PDF/A est enregistré sous la forme d’un fichier XML nommé result.xml. Pour plus d’informations sur le DDX *shell_PDFA.xml* utilisé dans cet exemple de code, voir [Détermination de la conformité des  au format PDF/A](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
 ```as3
  /*
@@ -808,7 +808,7 @@ L’exemple de code Java suivant détermine si le document PDF d’entrée est c
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -879,9 +879,9 @@ L’exemple de code Java suivant détermine si le document PDF d’entrée est c
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Validation de documents DDX à l’aide de l’API Java {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
+##  rapide (mode SOAP) : Validation du DDX à l’aide de l’API Java {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
 
-L’exemple de code Java suivant valide un document DDX basé sur un fichier nommé *bookmarkDDX.xml*. (Voir [Validation de documents](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents)DDX.)
+L’exemple de code Java suivant valide un DDX en fonction d’un fichier nommé *bookmarkDDX.xml*. (Voir [Validation du](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents)DDX.)
 
 ```as3
  /*
@@ -958,7 +958,7 @@ L’exemple de code Java suivant valide un document DDX basé sur un fichier nom
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1010,9 +1010,9 @@ L’exemple de code Java suivant valide un document DDX basé sur un fichier nom
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage de documents PDF avec des signets à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
+##  rapide (mode SOAP) : Assemblage de  PDF avec des signets à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api}
 
-L’exemple de code Java suivant assemble un document PDF contenant des signets. Le nom du document DDX est *bookmarkDDX.xml*. Le nom du document XML du signet qui décrit les signets à ajouter au document PDF est bookmarks.xml. Le document PDF obtenu est enregistré sous la forme d’un fichier PDF nommé AssemblerResultBookmarks.pdf. (Voir [Assemblage de documents PDF avec des signets](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks).)
+L’exemple de code Java suivant assemble un PDF qui contient des signets. Le nom du  DDX est *bookmarkDDX.xml*. Le nom du XML de signets qui décrit les signets à ajouter au PDF  est bookmarks.xml. Le PDF obtenu est enregistré sous la forme d’un fichier PDF nommé AssemblerResultBookmarks.pdf. (voir [Assemblage de  PDF avec des signets](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-documents-with-bookmarks)).
 
 ```as3
  /*
@@ -1109,7 +1109,7 @@ L’exemple de code Java suivant assemble un document PDF contenant des signets.
          try{
              //Set connection properties required to invoke AEM Forms using SOAP mode
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1180,14 +1180,14 @@ L’exemple de code Java suivant assemble un document PDF contenant des signets.
  
 ```
 
-## Démarrage rapide (mode SOAP) : Création dynamique d’un document DDX à l’aide de l’API Java {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
+##  rapide (mode SOAP) : Création dynamique d’un DDX à l’aide de l’API Java {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
-L’exemple de code Java suivant crée dynamiquement un document DDX qui désassemble un document PDF. Un nouveau document PDF est créé pour chaque signet de niveau 1 dans le document PDF d’entrée. Cet exemple de code contient deux méthodes définies par l’utilisateur :
+L’exemple de code Java suivant crée dynamiquement un DDX  qui désassemble un PDF. Un nouveau PDF est créé pour chaque signet de niveau 1 dans le PDF d’entrée . Cet exemple de code contient deux méthodes définies par l’utilisateur :
 
-* `createDDX`: Crée un `org.w3c.dom.Document` objet qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’ `org.w3c.dom.Document` objet.
+* `createDDX`: Crée un `org.w3c.dom.Document` objet qui représente le  DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’ `org.w3c.dom.Document` objet.
 * `convertDDX`: Convertit un `org.w3c.dom.Document` objet en `com.adobe.idp.Document` objet. Cette méthode accepte un `org.w3c.dom.Document` objet comme paramètre d’entrée et renvoie un `com.adobe.idp.Document` objet.
 
-   Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir Création [Dynamique De Documents](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents)DDX.)&quot;
+   Ces deux méthodes sont invoquées dans cette  rapide. (Voir Création [dynamique d’un](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents)DDX.)&quot;
 
 ```java
 /*
@@ -1267,7 +1267,7 @@ public class AssemblePDFWithDynamicDDXSOAP {
     //Set connection properties required to invoke AEM Forms using SOAP mode
     Properties connectionProps = new Properties();
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT,
-     "https://[server]:[port]");
+     "https://'[server]:[port]'");
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceCl ientFactoryProperties.DSC_SOAP_PROTOCOL);
     connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE,
      "JBoss");
@@ -1376,9 +1376,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage de portfolios PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+##  rapide (mode SOAP) : Assemblage de portfolios PDF à l’aide de l’API Java {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est enregistré en tant que fichier PDF nommé *AssemblerResultPortfolio.pdf*. (voir [Assemblage de portfolios](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF).
+L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est enregistré sous la forme d’un fichier PDF nommé *AssemblerResultPortfolio.pdf*. (voir [Assemblage de portfolios](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)PDF).
 
 ```as3
  /*
@@ -1447,7 +1447,7 @@ L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est en
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1527,9 +1527,9 @@ L’exemple de code Java suivant crée un portfolio PDF. Le portfolio PDF est en
  
 ```
 
-## Démarrage rapide (mode SOAP) : Assemblage de plusieurs fragments XDP à l’aide de l’API Java {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
+##  rapide (mode SOAP) : Assemblage de plusieurs fragments XDP à l’aide de l’API Java {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
-L’exemple de code Java suivant assemble des fragments XDP basés sur les fichiers XDP suivants : *tuc018_template_flow.xdp*, *tuc018_contact.xdp* et* tuc018_patient.xdp*. Le document XDP assemblé qui contient tous les fragments est enregistré sous la forme d’un fichier XDP nommé *AssemblerResultXDP.xdp*. (Voir [Assemblage de plusieurs fragments](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)XDP.)
+L’exemple de code Java suivant assemble des fragments XDP basés sur les fichiers XDP suivants : *tuc018_template_flow.xdp*, *tuc018_contact.xdp* et* tuc018_patient.xdp*. Le  XDP assemblé qui contient tous les fragments est enregistré sous la forme d’un fichier XDP nommé *AssemblerResultXDP.xdp*. (Voir [Assemblage de plusieurs fragments](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)XDP.)
 
 ```as3
  /*
@@ -1605,7 +1605,7 @@ L’exemple de code Java suivant assemble des fragments XDP basés sur les fichi
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1680,9 +1680,9 @@ L’exemple de code Java suivant assemble des fragments XDP basés sur les fichi
  }
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
+##  rapide (mode SOAP) : Suppression d’un PDF à l’aide de l’API Java {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-L’exemple de code suivant montre comment supprimer un document PDF à l’aide de `PDFUtility`.
+L’exemple de code suivant montre comment supprimer un PDF à l’aide de `PDFUtility`.
 
 >[!NOTE]
 >
@@ -1740,7 +1740,7 @@ public class RedactPDF
         {
             //Set connection properties required to invoke AEM Forms
             Properties connectionProps = new Properties();
-            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+            connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
