@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ En ajustant les propriétés, chemins et valeurs de ces scénarios, vous pouvez 
 
 ### Scénario : ajout d’un champ commun (propriété) à tous les types de ressources {#scenario-adding-a-common-field-property-to-all-the-asset-types}
 
-Ce scénario vous indique comment ajouter une propriété personnalisée à tous les types de ressources (texte, liste, condition et fragments de disposition) et aux lettres. Ce scénario vous permet d’ajouter une propriété, Emplacement des destinataires, à tous les fichiers et lettres. La propriété Emplacement des destinataires permet d’identifier la zone géographique de remise d’un fichier ou d’une lettre pertinente.
+Ce scénario vous indique comment ajouter une propriété personnalisée à tous les types de ressources (texte, liste, condition et fragments de disposition) et aux lettres. Ce scénario vous permet d’ajouter une propriété, Emplacement des, à tous les actifs et lettres. L’emplacement de la propriété permet d’identifier la zone géographique de l’ à laquelle un actif ou une lettre est pertinent.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Ce scénario vous indique comment ajouter une propriété personnalisée à tous
 
 procédez comme suit pour ajouter une propriété personnalisée à tous les types de ressources et lettres :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Dans le dossier d’applications, créez un dossier nommé css avec un chemin/une structure similaires au dossier css (situé dans le dossier ccrui) à l’aide des étapes suivantes :
 
    1. Right-click the items folder at the following path and select **Overlay Node**:
@@ -54,11 +54,11 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
       ![Nœud de recouvrement](assets/cmmetapropertiesoverlaynode.png)
 
@@ -74,7 +74,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : GeoLocation (ou le nom que vous souhaitez donner à cette propriété)
+      **Nom :** GeoLocation (ou le nom que vous souhaitez donner à cette propriété)
 
       **Type :** nt:unstructured
 
@@ -87,7 +87,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
       |---|---|---|
       | fieldLabel | Chaîne | Le nom que vous souhaitez donner à ce champ/cette propriété. (Ici : Emplacement des destinataires) |
       | nom est | Chaîne | `./extendedproperties/GeoLocation` (Conservez la même valeur que le nom du champ que vous avez créé sous le noeud d’éléments). |
-      | renderReadOnly | Booléen   | true |
+      | renderReadOnly | Booléen | true |
       | sling:resourceType | Chaîne | `granite/ui/components/coral/foundation/form/textfield` |
 
    1. Cliquez sur **Enregistrer tout**.
@@ -131,11 +131,11 @@ Create a node for each of the properties (fields) for which you need to create a
    <tr>
       <td>nom est</td>
       <td>Chaîne</td>
-      <td>./extendedproperties/geographic allocation (Conservez la valeur du nom de champ créé sous le noeud items)</td>
+      <td>./extendedproperties/geographic allocation (conservez la valeur du nom de champ que vous avez créé sous le noeud items)</td>
    </tr>
    <tr>
       <td>renderReadOnly</td>
-      <td>Booléen  </td>
+      <td>Booléen</td>
       <td>true</td>
    </tr>
    <tr>
@@ -186,8 +186,8 @@ Ce scénario vous indique comment ajouter un onglet personnalisé ou des destina
 
 Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à toutes vos ressources :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
-1. Dans le dossier d’applications, créez un dossier nommé cmmetadataproperties avec un chemin/une structure similaire au dossier cmmetadataproperties (situé dans le dossier de contenu) en procédant comme suit :
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
+1. Dans le dossier d’applications, créez un dossier nommé cmmetadataproperties avec un chemin/une structure similaire au dossier cmmetadataproperties (situé dans le dossier de contenu) à l’aide des étapes suivantes :
 
    1. Right-click the cmmetadataproperties folder at the following path and select **Overlay Node**:
 
@@ -197,11 +197,11 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/content/cmmetadataproperties
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -217,7 +217,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : commontab (ou le nom que vous souhaitez donner à cette propriété)
+      **Nom :** commontab (ou le nom que vous souhaitez donner à cette propriété)
 
       **Type :** nt:unstructured
 
@@ -257,12 +257,12 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
    1. Cliquez sur **Enregistrer tout:**
 
-1. Dans le noeud d’éléments que vous avez créé à l’étape précédente (sous l’onglet commontab), ajoutez un noeud pour créer une colonne (ici Colonne1) dans l’onglet personnalisé (onglet commontab) à l’aide des étapes suivantes (pour ajouter d’autres colonnes, répétez cette étape) :
+1. Dans le noeud d’éléments que vous avez créé à l’étape précédente (sous l’onglet commontab), ajoutez un noeud pour la création d’une colonne (ici Colonne1) dans l’onglet personnalisé (onglet commontab) à l’aide des étapes suivantes (pour ajouter d’autres colonnes, répétez cette étape) :
 
    1. Cliquez avec le bouton droit sur le nœud éléments et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : Colonne1 (ou le nom que vous souhaitez donner au noeud - ce nom n’apparaît pas dans l’interface utilisateur.)
+      **Nom :** Colonne1 (ou le nom que vous souhaitez donner au noeud - ce nom n’apparaît pas dans l’interface utilisateur.)
 
       **Type :** nt:unstructured
 
@@ -309,7 +309,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
       |---|---|---|
       | fieldLabel | Chaîne | Emplacement des destinataires (ou le nom que vous souhaitez donner à la colonne.) |
       | nom est | Chaîne | ./extendedproperties/GeographicalLocation |
-      | renderReadOnly | Booléen   | true |
+      | renderReadOnly | Booléen | true |
       | sling:resourceType | Chaîne | `/libs/granite/ui/components/coral/foundation/form/textfield` |
 
 1. Pour ajouter cet onglet pour les lettres, créez un dossier de recouvrement avec un chemin/une structure similaire au dossier des éléments suivants du chemin ci-après :
@@ -328,9 +328,9 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
       **Chemin:** `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. Le dossier est créé. Cliquez sur **Enregistrer tout**.
 
@@ -387,16 +387,16 @@ Ce scénario vous indique comment ajouter une propriété personnalisée à un t
 * Dictionnaire de données
 * Lettre
 
-Par exemple, pour les fichiers texte uniquement, vous souhaitez ajouter une propriété, Emplacement des destinataires, afin d’identifier la zone géographique à laquelle un fichier est pertinent.  ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
+Par exemple, pour les ressources de texte uniquement, vous souhaitez ajouter une propriété, Emplacement des, afin d’identifier la zone géographique à laquelle un fichier est pertinent.  ![Propriété personnalisée ajoutée à une ressource](assets/newtabui.png)
 
 Procédez comme suit pour ajouter une propriété à un type de ressource :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Pour créer un onglet dans un type de fichier (tel que Texte), créez la structure de dossiers suivante dans le dossier des applications :
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
-   [AssetType] = texte, condition, liste, lettre, dictionnaire de données ou fragment
+   [AssetType] = texte, condition, , lettre, dictionnaire de données ou fragment
 
    Vous trouverez ci-dessous les étapes à suivre pour créer la structure de dossiers :
 
@@ -412,11 +412,11 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -457,7 +457,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
    1. Cliquez avec le bouton droit sur le nœud éléments et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : Colonne1 (ou le nom que vous souhaitez donner au noeud)
+      **Nom :** Colonne1 (ou le nom que vous souhaitez donner au noeud)
 
       **Type :** nt:unstructured
 
@@ -494,7 +494,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
    1. Cliquez avec le bouton droit sur le nœud approprié (ici Column1) et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : Nom de votre choix (ici GeoLocation)
+      **Nom :** Nom de votre choix (ici GeoLocation)
 
       **Type :** nt:unstructured
 
@@ -504,7 +504,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
       |---|---|---|
       | fieldLabel | Chaîne | Emplacement des destinataires (ou le nom que vous souhaitez donner à la colonne.) |
       | nom est | Chaîne | `./extendedproperties/GeoLocation` |
-      | renderReadOnly | Booléen   | true |
+      | renderReadOnly | Booléen | true |
       | sling:resourceType | Chaîne | granite/ui/components/coral/foundation/form/textfield |
 
 1. Pour afficher votre personnalisation, placez le pointeur de la souris sur la ressource pertinente (ici un texte), cliquez sur Afficher les propriétés puis cliquez sur **Modifier**. Le nouvel onglet et champ (Emplacement des destinataires) s’affichent dans l’interface utilisateur.
@@ -525,11 +525,11 @@ Par défaut, les propriétés personnalisées ajoutées aux nouveaux onglets son
 
 1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes pour une lettre. Pour les autres types de ressources, le chemin est indiqué dans le tableau suivant :
 
-   **** Chemin : /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/letterWizard/items/properties/items/properties/items/letterproperties/items/letterproperties/items
+   **Chemin :** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/letterWizard/items/properties/items/properties/items/letterproperties/items/letterproperties/items
 
-   **** Emplacement : /apps/
+   **Emplacement :** /apps/
 
-   **** Faire correspondre les types de noeud : Sélectionné
+   **Faire correspondre les types de noeud :** Sélectionné
 
    Selon le type de propriété, le chemin suivant doit être utilisé :
 
@@ -583,9 +583,9 @@ Propriété personnalisée, Langue, apparaissant dans l’interface utilisateur 
 
 Après avoir ajouté une propriété personnalisée aux ressources de Correspondence Management, vous devez apporter des modifications supplémentaires à CRX/DE pour vous assurer que la propriété personnalisée s’affiche dans l’interface utilisateur de Correspondence Management.
 
-Suivez les étapes ci-après pour afficher la propriété personnalisée dans l’interface utilisateur de la liste de ressources de Correspondence Management :
+Pour afficher la propriété personnalisée dans l’interface utilisateur du de ressources de Correspondence Management, procédez comme suit :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Créez la structure de dossiers suivante dans le dossier des applications :
 
    `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
@@ -598,11 +598,11 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content////columns
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -613,7 +613,7 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
    1. Cliquez avec le bouton droit sur le nœud approprié (columns) et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : Nom de votre choix (ici GeographicLocation)
+      **Nom :** Nom de votre choix (ici GeographicLocation)
 
       **Type :** nt:unstructured
 
@@ -638,7 +638,7 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
          </tr>
          <tr>
            <td>pouvant être trié</td>
-           <td>Booléen  </td>
+           <td>Booléen</td>
            <td><p>true</p> <p>La valeur true indique que l’utilisateur peut trier les valeurs de cette colonne. </p> </td>
          </tr>
          </tbody>
@@ -656,11 +656,11 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/components/admin/childpagererer/childlistpage
+      **Chemin :** /libs/fd/cm/ma/gui/components/admin/childpagererer/childlistpage
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -698,7 +698,7 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
       %>
       ```
 
-   1. Ajoutez ce qui suit avant le début de la balise &lt;tr> (&lt;tr &lt;%= attrs.build() %>) :
+   1. Ajouter ce qui suit avant le début de la balise &lt;tr> (&lt;tr &lt;%= attrs.build() %>>) :
 
       ```
       <%
@@ -712,7 +712,7 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
       %>
       ```
 
-      Dans le code, GeoLocation correspond à la valeur définie dans la propriété de nom lors de la création du nœud/champ personnalisé. Lors de la création d’un nœud/champ personnalisé, vous avez entré le nom de la propriété avec ./extendedproperties/ prefix :./extendedproperties/GeoLocation. Dans le code, le préfixe n’est pas obligatoire.
+      Dans le code, GeoLocation correspond à la valeur définie dans la propriété de nom lors de la création du nœud/champ personnalisé. Lors de la création d’un nœud/champ personnalisé, vous avez entré le nom de la propriété avec ./extendedproperties/ prefix : ./extendedproperties/GeoLocation. Dans le code, le préfixe n’est pas obligatoire.
 
    1. Pour afficher la nouvelle propriété dans l’interface utilisateur, ajoutez une balise TD comme suit avant la balise tr de fermeture (&lt;/tr>) :
 
@@ -728,7 +728,7 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
 
    La colonne et la propriété d’interface utilisateur ajoutées au cours de cette procédure s’affichent pour tous les types de ressource. Toutefois, les valeurs de ces propriétés peuvent être entrées et affichées uniquement pour les types de ressource pour lesquels vous avez initialement ajouté la propriété personnalisée.
 
-   Par exemple, en utilisant le scénario : L’ajout de propriétés personnalisées pour des types de ressource spécifiques lorsque vous ajoutez une propriété personnalisée à des ressources de texte vous permet de saisir des propriétés personnalisées pour des ressources de texte uniquement. Si, toutefois, vous affichez cette propriété personnalisée dans l’interface utilisateur, la colonne s’affiche pour tous les types de fichier.
+   Par exemple, à l’aide du scénario : L’ajout de propriétés personnalisées pour des types de ressource spécifiques lorsque vous ajoutez une propriété personnalisée à des ressources de texte vous permet de saisir des propriétés personnalisées pour des ressources de texte uniquement. Si, toutefois, vous affichez cette propriété personnalisée dans l’interface utilisateur, la colonne s’affiche pour tous les types de fichier.
 
    ![custompropertyinlistview](assets/custompropertyinlistview.png)
 
@@ -764,7 +764,7 @@ Pour inclure les propriétés personnalisées dans la recherche, vous devez auto
 
 Pour ce faire, effectuez les étapes suivantes :
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Go to `/oak:index/cmLucene`and add a node named **aggregates** under it.
 
    1. Cliquez avec le bouton droit sur le dossier cmLucene et sélectionnez **Créer** > **Créer un nœud**.
@@ -776,17 +776,17 @@ Pour ce faire, effectuez les étapes suivantes :
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Dans le dossier des agrégats nouvellement créé, ajoutez un noeud cm:resource. Sous cm:resource, ajoutez un nœud nommé include0.
+1. Sous le nouveau dossier de , ajoutez un noeud cm:resource. Sous cm:resource, ajoutez un nœud nommé include0.
 
    1. Cliquez avec le bouton droit sur le dossier aggregates et sélectionnez **Créer** > **Créer un nœud**. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : cm:resource
+      **Nom :** cm:resource
 
       **Type :** nt:unstructured
 
    1. Right click the cm:resource folder and select **Create** > **Create Node**. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : include0
+      **Nom :** include0
 
       **Type :** nt:unstructured
 
@@ -817,7 +817,7 @@ Pour ce faire, effectuez les étapes suivantes :
    1. Cliquez avec le bouton droit sur le dossier des propriétés et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **** Nom : emplacement (ou nom de la propriété personnalisée à ajouter à la recherche)
+      **Nom :** emplacement (ou nom de la propriété personnalisée à ajouter à la recherche)
 
       **Type :** nt:unstructured
 
@@ -828,8 +828,8 @@ Pour ce faire, effectuez les étapes suivantes :
       |---|---|---|
       | analysé | Chaîne | true |
       | nom est | Chaîne | extendedProperties/location (ou le nom de la propriété personnalisée que vous souhaitez ajouter à la recherche) |
-      | propertyIndex | Booléen   | true |
-      | useInSuggest | Booléen   | true |
+      | propertyIndex | Booléen | true |
+      | useInSuggest | Booléen | true |
 
    1. Cliquez sur **Enregistrer tout**.
 
@@ -843,8 +843,8 @@ Pour ce faire, effectuez les étapes suivantes :
 
 ## Modification de la vue par défaut de la page de recherche {#change-default-view-of-the-search-page}
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
-1. Dans le dossier d’applications, créez un dossier nommé list avec un chemin/une structure similaires au dossier de liste situé dans /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views :
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
+1. Dans le dossier d’applications, créez un dossier nommé  avec un chemin/une structure similaires au dossier  situé dans /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/ :
 
    1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -852,11 +852,11 @@ Pour ce faire, effectuez les étapes suivantes :
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
+      **Chemin :** /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults//
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -887,8 +887,8 @@ Pour ce faire, effectuez les étapes suivantes :
 >
 >Ces étapes permettent de modifier la vue par défaut de toutes les consoles telles que Formulaires et documents, Ressources et Sites.
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
-1. Dans le dossier d’applications, créez un dossier nommé liste avec un chemin/une structure similaires au dossier de liste situé dans :
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
+1. Dans le dossier d’applications, créez un dossier nommé  avec un chemin/une structure similaires au dossier  du situé dans :
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
@@ -898,11 +898,11 @@ Pour ce faire, effectuez les étapes suivantes :
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
+      **Chemin :** /libs/fd/cm/ma/gui/content/cmassets/jcr:content///
 
-      **** Emplacement : /apps/
+      **Emplacement :** /apps/
 
-      **** Faire correspondre les types de noeud : Sélectionné
+      **Faire correspondre les types de noeud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 
@@ -960,7 +960,7 @@ Pour ce faire, effectuez les étapes suivantes :
    </tr>
    <tr>
       <td>hideOnCreate<br /> </td>
-      <td>Booléen  </td>
+      <td>Booléen</td>
       <td>true<br /> </td>
    </tr>
    </tbody>
@@ -977,7 +977,7 @@ Pour ce faire, effectuez les étapes suivantes :
    </tr>
    <tr>
       <td>hideOnEdit<br /> </td>
-      <td>Booléen  </td>
+      <td>Booléen</td>
       <td>true<br /> </td>
    </tr>
    </tbody>
