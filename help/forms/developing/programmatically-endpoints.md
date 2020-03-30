@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,26 +24,26 @@ Le service Endpoint Registry permet de gérer les points de fin par programmatio
 * EJB
 * méthode d’objet
 * Watched Folder
-* Courriel
+* Courrier électronique
 * (Obsolète pour AEM forms) Remoting
-* Gestionnaire des tâches
+* Gestionnaire de 
 
    ***Remarque **: Les points de fin Remoting SOAP, EJB et (obsolète pour AEM forms on JEE) sont automatiquement créés pour chaque service activé. Les points de fin SOAP et EJB activent SOAP et EJB pour toutes les opérations de service.*
 
-   Un point de fin Remoting permet aux clients Flex d’appeler des opérations sur le service AEM Forms auquel le point de fin est ajouté. Une destination Flex portant le même nom que le point de fin est créée et les clients Flex peuvent créer des objets distants pointant vers cette destination pour appeler des opérations sur le service concerné.
+   Un point de fin Remoting permet aux clients Flex d’appeler des opérations sur le service AEM Forms auquel le point de fin est ajouté. Une destination Flex portant le même nom que le point de fin est créée et les clients Flex peuvent créer des objets RemoteObjects pointant vers cette destination pour appeler des opérations sur le service concerné.
 
-   Les points de fin Email, Task Manager et Watched Folder exposent uniquement une opération spécifique du service. L’ajout de ces points de fin nécessite une deuxième étape de configuration pour sélectionner une méthode à appeler, définir des paramètres de configuration et spécifier les mappages des paramètres d’entrée et de sortie.
+   Les points de fin Email, Manager et Watched Folder n’exposent qu’une opération spécifique du service. L’ajout de ces points de fin nécessite une deuxième étape de configuration pour sélectionner une méthode à appeler, définir des paramètres de configuration et spécifier les mappages des paramètres d’entrée et de sortie.
 
-   Vous pouvez organiser les points de fin TaskManager en groupes appelés *catégories*. Ces catégories sont ensuite exposées à Workspace via TaskManager, les utilisateurs finaux visualisant les points de fin TaskManager tels qu’ils sont classés. Dans Workspace, les utilisateurs finaux voient ces catégories dans le volet de navigation. Les points de fin de chaque catégorie sont affichés sous forme de cartes de processus sur la page Démarrer les processus de Workspace.
+   Vous pouvez organiser les points de fin TaskManager en groupes appelés **. Ces  sont ensuite exposées à Workspace par le biais de TaskManager, où les utilisateurs finaux voient les points de fin TaskManager tels qu’ils sont classés. Dans Workspace, les utilisateurs finaux voient ces  dans le volet de navigation. Les points de fin de chaque  de sont affichés sous forme de cartes de processus sur la page Processus  dans Workspace.
 
-   Vous pouvez effectuer les tâches suivantes à l’aide du service de registre de point de fin :
+   Vous pouvez accomplir ces  à l’aide du service de registre de point de fin :
 
-* Ajoutez des points de fin EJB. (Voir [Ajout de points de fin](programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
-* Ajoutez des points de fin SOAP. (Voir [Ajout de points de fin](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
-* Ajout de points de fin Watched Folder (voir [Ajout de points de fin Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints)).
-* Ajouter des points de fin de courrier électronique. (See [Adding Email Endpoints](programmatically-endpoints.md#adding-email-endpoints).)
-* Ajout de points de fin Remoting. (Voir [Ajout de points](programmatically-endpoints.md#adding-remoting-endpoints)de fin Remoting.)
-* Ajout de points de fin TaskManager (voir [Ajout de points de fin TaskManager](programmatically-endpoints.md#adding-taskmanager-endpoints)).
+* Ajouter des points de fin EJB. (Voir [Ajout de points de fin](programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
+* Ajouter les points de fin SOAP. (Voir [Ajout de points de fin](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
+* Ajouter Points de fin Watched Folder (voir [Ajout de points de fin Watched Folder](programmatically-endpoints.md#adding-watched-folder-endpoints)).
+* Ajouter Points de fin de courrier électronique. (See [Adding Email Endpoints](programmatically-endpoints.md#adding-email-endpoints).)
+* Ajouter Points de fin Remoting. (Voir [Ajout de points](programmatically-endpoints.md#adding-remoting-endpoints)de fin Remoting.)
+* Ajouter Points de fin TaskManager (voir [Ajout de points de fin TaskManager](programmatically-endpoints.md#adding-taskmanager-endpoints)).
 * Modification des points de fin (voir [Modification des points de fin](programmatically-endpoints.md#modifying-endpoints)).
 * Suppression des points de fin (voir [Suppression des points de fin](programmatically-endpoints.md#removing-endpoints)).
 * Récupérez les informations du connecteur du point de fin (voir [Récupération des informations](programmatically-endpoints.md#retrieving-endpoint-connector-information)du connecteur du point de fin).
@@ -62,7 +62,7 @@ Vous pouvez par programmation ajouter un point de fin EJB à un service à l’a
 
 ### Résumé des étapes {#summary-of-steps}
 
-Pour ajouter un point de fin EJB à un service, procédez comme suit :
+Pour ajouter un point de fin EJB à un service, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistry Client` objet.
@@ -101,7 +101,7 @@ Après avoir défini les attributs de point de fin EJB, vous pouvez créer un po
 
 **Activer le point de fin**
 
-Après avoir créé un nouveau point de fin, vous devez l’activer. Après avoir activé le point de fin, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez l’afficher dans Administration Console.
+Après avoir créé un nouveau point de fin, vous devez l’activer. Après avoir activé le point de fin, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez le  dans Administration Console.
 
 **Voir également**
 
@@ -111,9 +111,9 @@ Après avoir créé un nouveau point de fin, vous devez l’activer. Après avoi
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Ajout d’un point de fin EJB à l’aide de l’API Java {#adding-an-ejb-endpoint-using-the-java-api}
+### Ajout d’un point de fin EJB à l’aide de l’API Java {#adding-an-ejb-endpoint-using-the-java-api}
 
-Ajoutez un point de fin EJB à l’aide de l’API Java :
+Ajouter un point de fin EJB à l’aide de l’API Java :
 
 1. Incluez des fichiers de projet.
 
@@ -165,7 +165,7 @@ Vous pouvez par programmation ajouter un point de fin SOAP à un service à l’
 
 ### Résumé des étapes {#summary_of_steps-1}
 
-Pour ajouter un point de fin SOAP à un service, effectuez les tâches suivantes :
+Pour ajouter un point de fin SOAP à un service, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistryClient` objet.
@@ -206,19 +206,19 @@ Après avoir défini les attributs de point de fin SOAP, vous pouvez créer un p
 
 **Activer le point de fin**
 
-Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez le voir dans Administration Console.
+Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Une fois le point de fin activé, vous pouvez le  voir dans Administration Console.
 
 **Voir également**
 
-[Ajout d’un point de fin SOAP à l’aide de l’API Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
+[Ajouter un point de fin SOAP à l’aide de l’API Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajout d’un point de fin SOAP à l’aide de l’API Java {#add-a-soap-endpoint-using-the-java-api}
+### Ajouter un point de fin SOAP à l’aide de l’API Java {#add-a-soap-endpoint-using-the-java-api}
 
-Ajoutez un point de fin SOAP à un service en utilisant l’API Java :
+Ajouter un point de fin SOAP à un service à l’aide de l’API Java :
 
 1. Incluez des fichiers de projet.
 
@@ -264,7 +264,7 @@ Pour ajouter par programmation un point de fin Watched Folder à un service, ten
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé au `EncryptPDFUsingPassword` fonctionnement du service Encryption. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un PDF non sécurisé comme valeur d’entrée, puis transmet le PDF non sécurisé à l’ `EncryptPDFUsingPassword` opération du service Encryption. Le  PDF est chiffré avec un mot de passe et le PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le  PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, pu
 
 ### Résumé des étapes {#summary_of_steps-2}
 
-Pour ajouter un point de fin Watched Folder à un service, procédez comme suit :
+Pour ajouter un point de fin Watched Folder à un service, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistryClient` objet.
@@ -314,21 +314,21 @@ Pour créer un point de fin Watched Folder pour un service, spécifiez les valeu
 
 Vous devez spécifier des valeurs de configuration pour un point de fin Watched Folder lors de l’ajout par programmation d’un point de fin Watched Folder à un service. Ces valeurs de configuration sont spécifiées par un administrateur si un point de fin Watched Folder est ajouté à l’aide d’Administration Console.
 
-La liste suivante spécifie les valeurs de configuration définies lors de l’ajout par programmation d’un point de fin Watched Folder à un service :
+Le suivant spécifie les valeurs de configuration qui sont définies lors de l’ajout par programmation d’un point de fin Watched Folder à un service :
 
-* **url**: Indique l’emplacement du dossier de contrôle. Dans un environnement organisé en grappe, cette valeur doit pointer vers un dossier réseau partagé accessible à partir de chaque ordinateur de la grappe.
-* **asynchrone**: Identifie le type d’appel comme asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est true. Il est recommandé d’opter pour un mode asynchrone.
-* **cronExpression**: Utilisé par quartz pour planifier l’interrogation du répertoire d’entrée. Pour plus d’informations sur la configuration de l’expression cron, voir [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
+* **url**: Indique l’emplacement du dossier de contrôle. Dans un  organisé en grappes, cette valeur doit pointer vers un dossier réseau partagé accessible à partir de chaque ordinateur de la grappe.
+* **asynchrone**: Identifie le type d’appel comme étant asynchrone ou synchrone. Les processus provisoires et synchrones peuvent être appelés uniquement de façon synchrone. La valeur par défaut est true. Il est recommandé d’opter pour un mode asynchrone.
+* **cronExpression**: Utilisé par quartz pour planifier l’interrogation du répertoire d’entrée. Pour plus d’informations sur la configuration du cron  , voir [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html).
 * **purgeDuration**: Il s’agit d’un attribut obligatoire. Les fichiers et les dossiers du dossier result sont purgés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Cet attribut est utile pour s’assurer que le dossier de résultats n’est pas plein. La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
-* **repeatInterval**: Intervalle, en secondes, d’analyse du dossier de contrôle pour l’entrée. À moins que le ralentissement ne soit activé, cette valeur doit être supérieure au temps nécessaire pour traiter une tâche moyenne ; dans le cas contraire, le système pourrait être surchargé. La valeur par défaut est 5.
+* **repeatInterval**: Intervalle, en secondes, d’analyse du dossier de contrôle pour l’entrée. À moins que le ralentissement ne soit activé, cette valeur doit être supérieure au temps nécessaire pour traiter une tâche moyenne ; dans le cas contraire, le système pourrait être surchargé. La valeur par défaut est 5.   
 * **repeatCount**: Nombre de fois où un dossier de contrôle analyse le dossier ou le répertoire. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 * **throttleOn**: Limite le nombre de tâches du dossier de contrôle pouvant être traitées à tout moment. Le nombre maximal de tâches est déterminé par la valeur batchSize.
-* **userName**: Nom d’utilisateur utilisé lors de l’appel d’un service cible à partir du dossier de contrôle. Cette valeur est obligatoire. La valeur par défaut est SuperAdmin.
+* **userName**: Nom d’utilisateur utilisé lors de l’appel d’un service  à partir du dossier de contrôle. Cette valeur est obligatoire. La valeur par défaut est SuperAdmin.
 * **domainName**: Domaine de l’utilisateur. Cette valeur est obligatoire. La valeur par défaut est DefaultDom.
-* **batchSize**: Nombre de fichiers ou de dossiers à sélectionner par analyse. Utilisez cette valeur pour éviter une surcharge sur le système ; l’analyse simultanée de trop de fichiers peut entraîner un blocage. La valeur par défaut est 2.
-* **waitTime**: Temps, en millisecondes, à attendre avant d’analyser un dossier ou un fichier après sa création. Par exemple, si le temps d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce fichier est récupéré après 59 minutes ou plus. Cet attribut est utile pour garantir qu’un fichier ou un dossier est entièrement copié dans le dossier input. Par exemple, si vous devez traiter un fichier volumineux et que le téléchargement du fichier dure dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
-* **excludeFilePattern**: modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers dotés de ce modèle ne seront pas analysés en vue de leur traitement. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Le contenu du dossier peut être copié dans un dossier dont le nom sera choisi par le dossier de contrôle. Cette étape empêche le dossier de contrôle de sélectionner un dossier à traiter avant que le dossier ne soit complètement copié dans le dossier d’entrée. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. De plus, le modèle peut être complété par des modèles génériques pour spécifier des modèles de fichiers. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
-* **includeFilePattern**: modèle utilisé par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. La valeur par défaut est `*`. Cette valeur indique tous les fichiers et dossiers. De plus, le modèle peut être complété par des modèles génériques pour spécifier des modèles de fichiers. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières. Cette valeur est obligatoire.
+* **batchSize**: Nombre de fichiers ou de dossiers à sélectionner par analyse. Utilisez cette valeur pour éviter une surcharge sur le système ; l’analyse simultanée d’un trop grand nombre de fichiers peut entraîner un blocage. La valeur par défaut est 2.   
+* **waitTime**: Durée, en millisecondes, d’attente avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si le temps d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce fichier est récupéré après 59 minutes ou plus. Cet attribut est utile pour s’assurer qu’un fichier ou un dossier est complètement copié dans le dossier input. Par exemple, si vous devez traiter un fichier volumineux et que le téléchargement du fichier dure dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
+* **excludeFilePattern**: modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers dotés de ce modèle ne seront pas analysés en vue de leur traitement. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Le contenu du dossier peut être copié dans un dossier dont le nom sera choisi par le dossier de contrôle. Cette étape empêche le dossier de contrôle de sélectionner un dossier à traiter avant que le dossier ne soit complètement copié dans le dossier d’entrée. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. De plus, le modèle peut être complété par des modèles de caractères génériques pour spécifier des modèles de fichiers. Le dossier de contrôle modifie l’ de  normal pour prendre en charge les modèles de caractères génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les   ordinaires.
+* **includeFilePattern**: modèle utilisé par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. La valeur par défaut est `*`. Cette valeur indique tous les fichiers et dossiers. De plus, le modèle peut être complété par des modèles de caractères génériques pour spécifier des modèles de fichiers. Le dossier de contrôle modifie l’ de  normal pour prendre en charge les modèles de caractères génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les   ordinaires. Cette valeur est obligatoire.
 * **resultFolderName**: Dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d’accès absolu ou relatif au répertoire. Si les résultats ne se trouvent pas dans ce dossier, vérifiez le dossier failure. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier des résultats dans le dossier de contrôle.
 * **preserveFolderName**: Emplacement de stockage des fichiers après une analyse et une récupération réussies. Cet emplacement peut être un chemin d’accès de répertoire absolu, relatif ou nul. La valeur par défaut est `preserve/%Y/%M/%D/`.
 * **failureFolderName**: Dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `failure/%Y/%M/%D/`.
@@ -337,7 +337,7 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 
 **Définition des valeurs de paramètre d’entrée**
 
-Lors de la création d’un point de fin Watched Folder, vous devez définir les valeurs des paramètres d’entrée. Autrement dit, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le dossier de contrôle. Prenons l’exemple du processus introduit dans cette rubrique. Il a une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point de fin Watched Folder pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
+Lors de la création d’un point de fin Watched Folder, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le dossier de contrôle. Prenons l’exemple du processus introduit dans cette rubrique. Il a une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point de fin Watched Folder pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
 
 Pour définir les valeurs des paramètres d’entrée requises pour un point de fin Watched Folder, spécifiez les valeurs suivantes :
 
@@ -346,7 +346,7 @@ Pour définir les valeurs des paramètres d’entrée requises pour un point de 
 **Type** de mappage : Permet de configurer les valeurs d’entrée requises pour appeler l’opération de service. Il existe deux types de mappage :
 
 * `Literal`: Le point de fin Watched Folder utilise la valeur saisie dans le champ telle qu’elle est affichée. Tous les types Java de base sont pris en charge. Par exemple, si une API utilise des entrées telles que String, long, int et Boolean, la chaîne est convertie en type approprié et le service est appelé.
-* `Variable`: la valeur saisie est un modèle de fichier que le dossier de contrôle utilise pour sélectionner l’entrée. Par exemple, si vous sélectionnez Variable pour le type de mappage et que le document d’entrée doit être un fichier PDF, vous pouvez spécifier `*.pdf`comme valeur de mappage.
+* `Variable`: la valeur saisie est un modèle de fichier que le dossier de contrôle utilise pour sélectionner l’entrée. Par exemple, si vous sélectionnez Variable pour le type de mappage et que le d’entrée doit être un fichier PDF, vous pouvez spécifier `*.pdf`comme valeur de mappage.
 
 **Valeur** de mappage : Indique la valeur du type de mappage. Par exemple, si vous sélectionnez un type de `Variable` mappage, vous pouvez spécifier `*.pdf` comme modèle de fichier.
 
@@ -362,8 +362,8 @@ Pour définir une valeur de paramètre de sortie requise pour un point de fin Wa
 
 **Type** de mappage : Permet de configurer la sortie du service et de l’opération. Les options suivantes sont disponibles :
 
-* Si le service renvoie un objet unique (un document unique), le modèle est `%F.pdf` et la destination source est nom_fichier_source.pdf. Par exemple, le processus introduit dans cette section renvoie un seul document. Par conséquent, le type de mappage peut être défini comme `%F.pdf` ( `%F` signifie utiliser le nom de fichier donné). Le modèle `%E` spécifie l’extension du document d’entrée.
-* Si le service renvoie une liste, le modèle est `Result\%F\`et la destination source est Result\sourcefilename\source1 (sortie 1) et Result\sourcefilename\source2 (sortie 2).
+* Si le service renvoie un objet unique (un seul  de), le modèle est `%F.pdf` et la destination source est nom_fichier_source.pdf. Par exemple, le processus introduit dans cette section renvoie un seul  de. Par conséquent, le type de mappage peut être défini comme `%F.pdf` ( `%F` signifie utiliser le nom de fichier donné). Le modèle `%E` spécifie l’extension du  d’entrée.
+* Si le service renvoie un , le modèle est `Result\%F\`et la destination source est Result\sourcefilename\source1 (sortie 1) et Result\sourcefilename\source2 (sortie 2).
 * Si le service renvoie un mappage, le modèle est `Result\%F\`et la destination source est Result\sourcefilename\file1 and Result\sourcefilename\file2. Si le mappage comporte plusieurs objets, le modèle est `Result\%F.pdf` et la destination source est Result\nom_fichier_source1.pdf (sortie 1), Result\nom_fichier_source2.pdf (sortie 2), etc.
 
 **Type** de données : Indique le type de données de la valeur renvoyée. Par exemple, le type de données de la valeur de retour du processus introduit dans cette section est `com.adobe.idp.Document`.
@@ -374,19 +374,19 @@ Après avoir défini les attributs du point de fin, les valeurs de configuration
 
 **Activer le point de fin**
 
-Après avoir créé un point de fin Watched Folder, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez l’afficher dans Administration Console.
+Après avoir créé un point de fin Watched Folder, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez le  dans Administration Console.
 
 **Voir également**
 
-[Ajout d’un point de fin Watched Folder à l’aide de l’API Java](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
+[Ajouter un point de fin Watched Folder à l’aide de l’API Java](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajout d’un point de fin Watched Folder à l’aide de l’API Java {#add-a-watched-folder-endpoint-using-the-java-api}
+### Ajouter un point de fin Watched Folder à l’aide de l’API Java {#add-a-watched-folder-endpoint-using-the-java-api}
 
-Ajoutez un point de fin Watched Folder à l’aide de l’API Java d’AEM Forms :
+Ajouter un point de fin Watched Folder à l’aide de l’API Java d’AEM Forms :
 
 1. Incluez des fichiers de projet.
 
@@ -410,11 +410,11 @@ Ajoutez un point de fin Watched Folder à l’aide de l’API Java d’AEM Forms
 
    Pour chaque valeur de configuration à définir pour le point de fin Watched Folder, vous devez appeler la `CreateEndpointInfo` `setConfigParameterAsText` méthode de l’objet. Par exemple, pour définir la valeur de `url` configuration, appelez la `CreateEndpointInfo` `setConfigParameterAsText` méthode de l’objet et transmettez les valeurs de chaîne suivantes :
 
-   * Valeur de chaîne qui spécifie le nom de la valeur de configuration. Lorsque vous définissez la valeur de `url` configuration, spécifiez `url`.
+   * Valeur de chaîne qui spécifie le nom de la valeur de configuration. Lors de la définition de la valeur de `url` configuration, spécifiez `url`.
    * Valeur de chaîne qui spécifie la valeur de la valeur de configuration. Lors de la définition de la valeur de `url` configuration, spécifiez l’emplacement du dossier de contrôle.
    >[!NOTE]
    >
-   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument, reportez-vous à l’exemple de code Java [QuickStart : Ajout d’un point de fin Watched Folder à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)Java.
+   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument, reportez-vous à l’exemple de code Java situé dans [QuickStart : Ajout d’un point de fin Watched Folder à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)Java.
 
 1. Définissez les valeurs des paramètres d’entrée.
 
@@ -422,7 +422,7 @@ Ajoutez un point de fin Watched Folder à l’aide de l’API Java d’AEM Forms
 
    * Valeur de chaîne qui spécifie le nom du paramètre d’entrée. Par exemple, le nom du paramètre d’entrée du service EncryptDocument est `InDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre `InDoc` d’entrée est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
+   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `variable`.
    * Valeur de chaîne qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &amp;ast;.pdf comme modèle de fichier.
    >[!NOTE]
    >
@@ -434,7 +434,7 @@ Ajoutez un point de fin Watched Folder à l’aide de l’API Java d’AEM Forms
 
    * Valeur de chaîne qui spécifie le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de `SecuredDoc` sortie est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
+   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `%F.pdf`.
 
 1. Créez un point de fin Watched Folder.
 
@@ -456,7 +456,7 @@ Ajoutez un point de fin Watched Folder à l’aide de l’API Java d’AEM Forms
 
 ### Fichier constant des valeurs de configuration du dossier de contrôle {#watched-folder-configuration-values-constant-file}
 
-Le [QuickStart : L’ajout d’un point de fin Watched Folder à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) Java utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de fin Watched Folder. Le code Java suivant représente le fichier de constante.
+Le [QuickStart : L’ajout d’un point de fin Watched Folder à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) Java utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le  rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de fin Watched Folder. Le code Java suivant représente le fichier de constante.
 
 ```as3
  /**
@@ -495,7 +495,7 @@ Aux fins de l’ajout par programmation d’un point de fin de courrier électro
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé au `EncryptPDFUsingPassword` fonctionnement du service Encryption. Ce processus chiffre le document PDF avec un mot de passe et renvoie le document PDF chiffré par mot de passe comme valeur de sortie. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un PDF non sécurisé comme valeur d’entrée, puis transmet le PDF non sécurisé à l’ `EncryptPDFUsingPassword` opération du service Encryption. Ce processus chiffre le PDF avec un mot de passe et renvoie le PDF chiffré par mot de passe  comme valeur de sortie. Le nom de la valeur d’entrée (le  PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -503,7 +503,7 @@ Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, pu
 
 ### Résumé des étapes {#summary_of_steps-3}
 
-Pour ajouter un point de fin de courrier électronique à un service, effectuez les tâches suivantes :
+Pour ajouter un point de fin de courrier électronique à un service, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistryClient` objet.
@@ -511,7 +511,7 @@ Pour ajouter un point de fin de courrier électronique à un service, effectuez 
 1. Spécifiez les valeurs de configuration.
 1. Définissez les valeurs des paramètres d’entrée.
 1. Définissez une valeur de paramètre de sortie.
-1. Créez le point de fin Email.
+1. Créez le point de fin Courrier électronique.
 1. Activez le point de fin.
 
 **Inclure les fichiers de projet**
@@ -538,7 +538,7 @@ Pour créer un point de fin de courrier électronique pour un service, spécifie
 * **Valeur** d’identificateur du connecteur : Indique le type de point de fin créé. Pour créer un point de fin de courrier électronique, spécifiez `Email`.
 * **Description**: Indique une description du point de fin.
 * **Nom**: Indique le nom du point de fin.
-* **Valeur** de l&#39;identifiant de service : Indique le service auquel appartient le point de fin. Par exemple, pour ajouter un point de fin Courrier électronique au processus introduit dans cette section (un processus devient un service lorsqu’il est activé à l’aide de Workbench), spécifiez `EncryptDocument`.
+* **Valeur** de l&#39;identifiant de service : Indique le service auquel appartient le point de fin. Par exemple, pour ajouter un point de fin de courrier électronique au processus introduit dans cette section (un processus devient un service lorsqu’il est activé à l’aide de Workbench), spécifiez `EncryptDocument`.
 * **Nom** de l&#39;opération : Indique le nom de l’opération appelée à l’aide du point de fin. En règle générale, lors de la création d’un point de fin de courrier électronique pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
 **Définition des valeurs de configuration**
@@ -551,24 +551,24 @@ Vous devez spécifier des valeurs de configuration pour un point de fin de courr
 
 Les valeurs de configuration suivantes sont définies lors de l’ajout par programmation d’un point de fin de courrier électronique à un service :
 
-* **cronExpression**: Expression cron si le courrier électronique doit être planifié à l’aide d’une expression cron.
+* **cronExpression**: Un cron   si le courrier électronique doit être planifié à l’aide d’un cron .
 * **repeatCount**: Nombre de fois où le point de fin de courrier électronique analyse le dossier ou le répertoire. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
-* **repeatInterval**: Taux d&#39;analyse en secondes utilisé par le destinataire pour vérifier le courrier entrant. La valeur par défaut est 10.
-* **startDelay**: Temps d’attente pour l’analyse au démarrage du planificateur. L’heure par défaut est 0.
-* **batchSize**: Nombre de messages électroniques que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 désigne tous les messages électroniques. La valeur par défaut est 2.
-* **userName**: Nom d’utilisateur utilisé lors de l’appel d’un service cible à partir du courrier électronique. La valeur par défaut est `SuperAdmin`.
+* **repeatInterval**: Taux d&#39;analyse en secondes utilisé par le destinataire pour vérifier le courrier entrant. La valeur par défaut est 10.   
+* **startDelay**: Temps d’attente pour l’analyse après la . L’heure par défaut est 0.
+* **batchSize**: Nombre de messages électroniques que le destinataire traite par analyse pour obtenir des performances optimales. La valeur -1 désigne tous les messages électroniques. La valeur par défaut est 2.   
+* **userName**: Nom d’utilisateur utilisé lors de l’appel d’un service de  à partir d’un courrier électronique. La valeur par défaut est `SuperAdmin`.
 * **domainName**: Valeur de configuration obligatoire. La valeur par défaut est `DefaultDom`.
 * **domainPattern**: Indique les modèles de domaine du courrier électronique entrant que le fournisseur accepte. For example, if `adobe.com` is used, only email from adobe.com is processed, email from other domains is ignored.
-* **filePattern**: Indique les modèles de pièces jointes entrantes que le fournisseur accepte. Cela inclut les fichiers qui ont des extensions de nom de fichier spécifiques (&amp;ast;.dat, &amp;ast;.xml), les fichiers qui ont des noms spécifiques (data) et les fichiers dont le nom et l’extension contiennent des expressions composites (&amp;ast;).[dD][aA][Tt]). La valeur par défaut est `*`.
-* **RecipientSuccessJob**: adresse électronique à laquelle des messages sont envoyés pour indiquer les tâches réussies. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez des destinataires supplémentaires avec des adresses électroniques, chacun séparé par une virgule. Pour désactiver cette option, laissez cette valeur vide. Dans certains cas, vous pouvez déclencher un processus et ne souhaitez pas recevoir de notification par courrier électronique du résultat. La valeur par défaut est `sender`.
-* **RecipientFailedJob**: adresse électronique à laquelle des messages sont envoyés pour signaler les tâches ayant échoué. Par défaut, un message de tâche ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez des destinataires supplémentaires avec des adresses électroniques, chacun séparé par une virgule. Pour désactiver cette option, laissez cette valeur vide. La valeur par défaut est `sender`.
+* **filePattern**: Indique les modèles de pièces jointes entrantes que le fournisseur accepte. Cela inclut les fichiers qui ont des extensions de nom de fichier spécifiques (&amp;ast;.dat, &amp;ast;.xml), les fichiers qui ont des noms spécifiques (data) et les fichiers dont le nom et l’extension contiennent un  de  composite (&amp;ast;).[D][aA]&#39;port&#39;). La valeur par défaut est `*`.
+* **RecipientSuccessJob**: adresse électronique à laquelle des messages sont envoyés pour indiquer les tâches réussies. Par défaut, un message de travail effectué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez des supplémentaires avec des adresses électroniques, chacun séparé par une virgule. Pour désactiver cette option, laissez cette valeur vide. Dans certains cas, vous pouvez déclencher un processus et ne souhaitez pas recevoir de notification par courrier électronique du résultat. La valeur par défaut est `sender`.
+* **RecipientFailedJob**: adresse électronique à laquelle des messages sont envoyés pour signaler les tâches ayant échoué. Par défaut, un message de tâche ayant échoué est toujours envoyé à l’expéditeur. Si vous saisissez `sender`, les résultats des messages électroniques sont envoyés à l’expéditeur. Jusqu’à 100 destinataires sont pris en charge. Spécifiez des supplémentaires avec des adresses électroniques, chacun séparé par une virgule. Pour désactiver cette option, laissez cette valeur vide. La valeur par défaut est `sender`.
 * **inboxHost**: nom d’hôte de la boîte de réception ou adresse IP du fournisseur de messagerie électronique à analyser.
 * **inboxPort**: port utilisé par le serveur de messagerie. La valeur POP3 par défaut est 110 et la valeur IMAP par défaut est 143. Si le protocole SSL est activé, la valeur POP3 par défaut est 995 et la valeur IMAP par défaut est 993.
 * **inboxProtocol**: protocole de courrier électronique que le point de fin de courrier électronique doit utiliser pour analyser la boîte de réception. Les options sont `IMAP` ou `POP3`. Le serveur de messagerie de l’hôte boîte de réception doit prendre en charge ces protocoles.
-* **inboxTimeOut**: Délai d’attente en secondes pour que le fournisseur de messagerie électronique attende les réponses de la boîte de réception. La valeur par défaut est 60.
+* **inboxTimeOut**: Délai d’attente en secondes pour que le fournisseur de messagerie électronique attende les réponses de la boîte de réception. La valeur par défaut est 60.   
 * **inboxUser**: nom d’utilisateur requis pour se connecter au compte de messagerie. Selon le serveur de messagerie et la configuration, il peut s’agir uniquement de la partie nom d’utilisateur du courrier électronique ou de l’adresse électronique complète.
 * **inboxPassword**: mot de passe de l’utilisateur de la boîte de réception.
-* **inboxSSLEnabled**: Définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Vérifiez que l’hôte IMAP ou POP3 prend en charge SSL.
+* **inboxSSLEnabled**: Définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Assurez-vous que l’hôte IMAP ou POP3 prend en charge SSL.
 * **smtpHost**: nom d’hôte du serveur de messagerie auquel le fournisseur de messagerie envoie les résultats et les messages d’erreur.
 * **smtpPort**: La valeur par défaut du port SMTP est 25.
 * **smtpUser**: compte utilisateur que le fournisseur de messagerie électronique doit utiliser lorsqu’il envoie des notifications par courrier électronique des résultats et des erreurs.
@@ -576,11 +576,11 @@ Les valeurs de configuration suivantes sont définies lors de l’ajout par prog
 * **charSet**: Jeu de caractères utilisé par le fournisseur de messagerie électronique. La valeur par défaut est `UTF-8`.
 * **smtpSSLEnabled**: Définissez cette valeur pour forcer le fournisseur de messagerie à utiliser SSL lors de l’envoi de messages de notification de résultats ou d’erreurs. Vérifiez que l’hôte SMTP prend en charge SSL.
 * **failureJobFolder**: Spécifie un répertoire dans lequel stocker les résultats lorsque le serveur de messagerie SMTP n&#39;est pas opérationnel.
-* **asynchrone**: Lorsqu’elle est définie sur synchrone, tous les documents d’entrée sont traités et une seule réponse est renvoyée. Lorsqu’elle est définie sur asynchrone, une réponse est envoyée pour chaque document d’entrée traité. Par exemple, un point de fin de courrier électronique est créé pour le processus introduit dans cette rubrique et un message électronique est envoyé à la boîte de réception du point de fin qui contient plusieurs documents PDF non sécurisés. Lorsque tous les documents PDF sont chiffrés avec un mot de passe et que le point de fin est configuré en mode synchrone, un message électronique de réponse unique est envoyé avec tous les documents PDF sécurisés joints. Si le point de fin est configuré en mode asynchrone, un message électronique de réponse distinct est envoyé pour chaque document PDF sécurisé. Chaque message électronique contient un document PDF unique en tant que pièce jointe. La valeur par défaut est asynchrone.
+* **asynchrone**: Lorsqu’elle est définie sur synchrone, toutes les  d’entrée sont traitées et une seule réponse est renvoyée. Lorsqu’elle est définie sur asynchrone, une réponse est envoyée pour chaque d’entrée traité. Par exemple, un point de fin de courrier électronique est créé pour le processus introduit dans cette rubrique et un message électronique est envoyé à la boîte de réception du point de fin qui contient plusieurs  PDF non sécurisés. Lorsque tous les PDF sont chiffrés avec un mot de passe et que le point de fin est configuré en mode synchrone, un message électronique de réponse unique est envoyé avec tous les PDF sécurisés  joints. Si le point de fin est configuré en mode asynchrone, un message électronique de réponse distinct est envoyé pour chaque  PDF sécurisé. Chaque message électronique contient un seul PDF en tant que pièce jointe. La valeur par défaut est asynchrone.
 
 **Définition des valeurs de paramètre d’entrée**
 
-Lors de la création d’un point de fin de courrier électronique, vous devez définir les valeurs des paramètres d’entrée. Autrement dit, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le point de fin de courrier électronique. Prenons l’exemple du processus introduit dans cette rubrique. Il a une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point de fin de courrier électronique pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
+Lors de la création d’un point de fin de courrier électronique, vous devez définir les valeurs des paramètres d’entrée. En d’autres termes, vous devez décrire les valeurs d’entrée transmises à l’opération appelée par le point de fin de courrier électronique. Prenons l’exemple du processus introduit dans cette rubrique. Il a une valeur d’entrée nommée `InDoc` et son type de données est `com.adobe.idp.Document`. Lors de la création d’un point de fin de courrier électronique pour ce processus (une fois qu’un processus est activé, il devient un service), vous devez définir la valeur du paramètre d’entrée.
 
 Pour définir les valeurs de paramètre d’entrée requises pour un point de fin de courrier électronique, spécifiez les valeurs suivantes :
 
@@ -589,11 +589,11 @@ Pour définir les valeurs de paramètre d’entrée requises pour un point de fi
 **Type** de mappage : Permet de configurer les valeurs d’entrée requises pour appeler l’opération de service. Deux types de mappage sont les suivants :
 
 * `Literal`: Le point de fin Courrier électronique utilise la valeur saisie dans le champ telle qu’elle est affichée. Tous les types Java de base sont pris en charge. Par exemple, si une interface API utilise une entrée de type chaîne, long, nombre entier ou valeur booléenne, cette entrée est convertie en type approprié, puis le service est appelé.
-* `Variable`: La valeur saisie est un modèle de fichier que le point de fin de courrier électronique utilise pour sélectionner l’entrée. Par exemple, si vous sélectionnez Variable pour le type de mappage et que le document d’entrée doit être un fichier PDF, vous pouvez spécifier `*.pdf` comme valeur de mappage.
+* `Variable`: La valeur saisie est un modèle de fichier que le point de fin de courrier électronique utilise pour sélectionner l’entrée. Par exemple, si vous sélectionnez Variable pour le type de mappage et que le d’entrée doit être un fichier PDF, vous pouvez spécifier `*.pdf` comme valeur de mappage.
 
 **Valeur** de mappage : Indique la valeur du type de mappage. Par exemple, si vous sélectionnez un type de mappage de variable, vous pouvez spécifier `*.pdf` comme modèle de fichier.
 
-**Type** de données : Indique le type de données des valeurs d’entrée. Par exemple, le type de données de la valeur d’entrée du processus introduit dans cette section est com.adobe.idp.Document.
+**Type** de données : Indique le type de données des valeurs d’entrée. Par exemple, le type de données de la valeur d’entrée du processus introduit dans cette section est com.adobe.idp..
 
 **Définir une valeur de paramètre de sortie**
 
@@ -605,8 +605,8 @@ Pour définir une valeur de paramètre de sortie requise pour un point de fin de
 
 **Type** de mappage : Permet de configurer la sortie du service et de l’opération. Les options suivantes sont disponibles :
 
-* Si le service renvoie un objet unique (un document unique), le modèle est `%F.pdf` et la destination source est nom_fichier_source.pdf. Par exemple, le processus introduit dans cette section renvoie un seul document. Par conséquent, le type de mappage peut être défini comme `%F.pdf` ( `%F` signifie utiliser le nom de fichier donné). Le modèle `%E` spécifie l’extension du document d’entrée.
-* Si le service renvoie une liste, le modèle est `Result\%F\`et la destination source est Result\sourcefilename\source1 (sortie 1) et Result\sourcefilename\source2 (sortie 2).
+* Si le service renvoie un objet unique (un seul  de), le modèle est `%F.pdf` et la destination source est nom_fichier_source.pdf. Par exemple, le processus introduit dans cette section renvoie un seul  de. Par conséquent, le type de mappage peut être défini comme `%F.pdf` ( `%F` signifie utiliser le nom de fichier donné). Le modèle `%E` spécifie l’extension du  d’entrée.
+* Si le service renvoie un , le modèle est `Result\%F\`et la destination source est Result\sourcefilename\source1 (sortie 1) et Result\sourcefilename\source2 (sortie 2).
 * Si le service renvoie un mappage, le modèle est `Result\%F\`et la destination source est Result\sourcefilename\file1 and Result\sourcefilename\file2. Si le mappage comporte plusieurs objets, le modèle est `Result\%F.pdf` et la destination source est Result\nom_fichier_source1.pdf (sortie 1), Result\nom_fichier_source2.pdf (sortie 2), etc.
 
 **Type** de données : Indique le type de données de la valeur renvoyée. Par exemple, le type de données de la valeur de retour du processus introduit dans cette section est `com.adobe.idp.Document`.
@@ -617,19 +617,19 @@ Après avoir défini les attributs et les valeurs de configuration des points de
 
 **Activer le point de fin**
 
-Après avoir créé un point de fin de courrier électronique, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez l’afficher dans Administration Console.
+Après avoir créé un point de fin de courrier électronique, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez le  dans Administration Console.
 
 **Voir également**
 
-[Ajout d’un point de fin de courrier électronique à l’aide de l’API Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
+[Ajouter un point de fin de courrier électronique à l’aide de l’API Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajout d’un point de fin de courrier électronique à l’aide de l’API Java {#add-an-email-endpoint-using-the-java-api}
+### Ajouter un point de fin de courrier électronique à l’aide de l’API Java {#add-an-email-endpoint-using-the-java-api}
 
-Ajoutez un point de fin de courrier électronique à l’aide de l’API Java :
+Ajouter un point de fin de courrier électronique à l’aide de l’API Java :
 
 1. Incluez des fichiers de projet.
 
@@ -653,11 +653,11 @@ Ajoutez un point de fin de courrier électronique à l’aide de l’API Java :
 
    Pour chaque valeur de configuration à définir pour le point de fin Email, vous devez appeler la `CreateEndpointInfo` `setConfigParameterAsText` méthode de l’objet. Par exemple, pour définir la valeur de `smtpHost` configuration, appelez la `CreateEndpointInfo` `setConfigParameterAsText` méthode de l’objet et transmettez les valeurs suivantes :
 
-   * Valeur de chaîne qui spécifie le nom de la valeur de configuration. Lorsque vous définissez la valeur de `smtpHost` configuration, spécifiez `smtpHost`.
+   * Valeur de chaîne qui spécifie le nom de la valeur de configuration. Lors de la définition de la valeur de `smtpHost` configuration, spécifiez `smtpHost`.
    * Valeur de chaîne qui spécifie la valeur de la valeur de configuration. Lors de la définition de la valeur de `smtpHost` configuration, spécifiez une valeur de chaîne qui spécifie le nom du serveur SMTP.
    >[!NOTE]
    >
-   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument présentées dans cette section, reportez-vous à l’exemple de code Java [QuickStart : Ajout d’un point de fin de courrier électronique à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)Java.
+   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument présentées dans cette section, reportez-vous à l’exemple de code Java situé dans [QuickStart : Ajout d’un point de fin de courrier électronique à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)Java.
 
 1. Définissez les valeurs des paramètres d’entrée.
 
@@ -665,7 +665,7 @@ Ajoutez un point de fin de courrier électronique à l’aide de l’API Java :
 
    * Valeur de chaîne qui spécifie le nom du paramètre d’entrée. Par exemple, le nom du paramètre d’entrée du service EncryptDocument est `InDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre `InDoc` d’entrée est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `variable`.
+   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `variable`.
    * Valeur de chaîne qui spécifie la valeur du type de mappage. Par exemple, vous pouvez spécifier &amp;ast;.pdf comme modèle de fichier.
    >[!NOTE]
    >
@@ -677,9 +677,9 @@ Ajoutez un point de fin de courrier électronique à l’aide de l’API Java :
 
    * Valeur de chaîne qui spécifie le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
    * Valeur de chaîne qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de `SecuredDoc` sortie est `com.adobe.idp.Document`.
-   * Valeur de chaîne qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
+   * Valeur de chaîne qui spécifie le type de mappage. For example, you can specify `%F.pdf`.
 
-1. Créez le point de fin Email.
+1. Créez le point de fin Courrier électronique.
 
    Créez le point de fin en appelant la `EndpointRegistryClient` méthode de l’ `createEndpoint` objet et en transmettant l’ `CreateEndpointInfo` objet. Cette méthode renvoie un `Endpoint` objet qui représente le point de fin Email.
 
@@ -699,7 +699,7 @@ Ajoutez un point de fin de courrier électronique à l’aide de l’API Java :
 
 ### Fichier constant des valeurs de configuration du courrier électronique {#email-configuration-values-constant-file}
 
-Le [QuickStart : L’ajout d’un point de fin de courrier électronique à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) Java utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le démarrage rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de fin de courrier électronique. Le code Java suivant représente le fichier de constante.
+Le [QuickStart : L’ajout d’un point de fin de courrier électronique à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) Java utilise un fichier constant qui doit faire partie de votre projet Java pour compiler le  rapide. Ce fichier constant représente les valeurs de configuration qui doivent être définies lors de l’ajout d’un point de fin de courrier électronique. Le code Java suivant représente le fichier de constante.
 
 ```as3
  /**
@@ -749,7 +749,7 @@ Pour l’ajout par programmation d’un point de fin Remoting à un service, ten
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Ce processus accepte un document PDF non sécurisé comme valeur d’entrée, puis transmet le document PDF non sécurisé au `EncryptPDFUsingPassword` fonctionnement du service Encryption. Le document PDF est chiffré avec un mot de passe et le document PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le document PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le document PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
+Ce processus accepte un PDF non sécurisé comme valeur d’entrée, puis transmet le PDF non sécurisé à l’ `EncryptPDFUsingPassword` opération du service Encryption. Le  PDF est chiffré avec un mot de passe et le PDF chiffré par mot de passe est la valeur de sortie de ce processus. Le nom de la valeur d’entrée (le  PDF non sécurisé) est `InDoc` et le type de données est `com.adobe.idp.Document`. Le nom de la valeur de sortie (le PDF chiffré par mot de passe) est `SecuredDoc` et le type de données est `com.adobe.idp.Document`.
 
 Pour démontrer comment ajouter un point de fin Remoting à un service, cette section ajoute un point de fin Remoting à un service appelé EncryptDocument.
 
@@ -759,7 +759,7 @@ Pour démontrer comment ajouter un point de fin Remoting à un service, cette se
 
 ### Résumé des étapes {#summary_of_steps-4}
 
-Pour supprimer un point de fin d’un service, effectuez les tâches suivantes :
+Pour supprimer un point de fin d’un service, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistryClient` objet.
@@ -804,15 +804,15 @@ Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsqu’un
 
 **Voir également**
 
-[Ajout d’un point de fin Remoting à l’aide de l’API Java](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
+[Ajouter un point de fin Remoting à l’aide de l’API Java](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajout d’un point de fin Remoting à l’aide de l’API Java {#add-a-remoting-endpoint-using-the-java-api}
+### Ajouter un point de fin Remoting à l’aide de l’API Java {#add-a-remoting-endpoint-using-the-java-api}
 
-Ajoutez un point de fin Remoting à l’aide de l’API Java :
+Ajouter un point de fin Remoting à l’aide de l’API Java :
 
 1. Incluez des fichiers de projet.
 
@@ -860,11 +860,11 @@ Vous pouvez par programmation ajouter un point de fin TaskManager à un service 
 
 ### Résumé des étapes {#summary_of_steps-5}
 
-Pour ajouter un point de fin TaskManager à un service, effectuez les tâches suivantes :
+Pour ajouter un point de fin TaskManager à un service, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistryClient` objet.
-1. Créez une catégorie pour le point de fin.
+1. Créez un  pour le point de fin.
 1. Définissez les attributs du point de fin TaskManager.
 1. Créez un point de fin TaskManager.
 1. Activez le point de fin.
@@ -886,13 +886,13 @@ For information about the location of these JAR files, see [Including AEM Forms 
 
 Avant de pouvoir ajouter un point de fin TaskManager par programmation, vous devez créer un `EndpointRegistryClient` objet.
 
-**Création d’une catégorie pour le point de fin**
+**Création d’un  pour le point de fin**
 
-Les catégories sont utilisées pour organiser les services dans Workspace. En d’autres termes, un utilisateur de Workspace peut appeler un service qui possède un point de fin TaskManager en sélectionnant une catégorie dans Workspace. Lors de la création d’un point de fin TaskManager, vous pouvez référencer une catégorie existante ou créer une nouvelle catégorie par programmation.
+Les  sont utilisés pour organiser les services dans Workspace. En d’autres termes, un utilisateur de Workspace peut appeler un service qui possède un point de fin TaskManager en sélectionnant un  dans Workspace. Lors de la création d’un point de fin TaskManager, vous pouvez référencer un  existant ou créer par programmation un nouveau  de.
 
 >[!NOTE]
 >
->Cette section crée une nouvelle catégorie dans le cadre de l’ajout d’un point de fin TaskManager à un service.
+>Cette section crée un nouveau  de dans le cadre de l’ajout d’un point de fin TaskManager à un service.
 
 **Définition des attributs de point de fin TaskManager**
 
@@ -902,7 +902,7 @@ Pour créer un point de fin TaskManager pour un service, spécifiez les valeurs 
 * **Description**: Indique la description du point de fin.
 * **Nom**: Indique le nom du point de fin.
 * **Identifiant** du service : Indique le service auquel appartient le point de fin.
-* **Catégorie**: Spécifie une valeur d’identificateur de catégorie associée au point de fin TaskManager.
+* ****: Spécifie une valeur d’identificateur de  associée au point de fin TaskManager.
 * **Nom** de l&#39;opération : En règle générale, lors de la création d’un point de fin TaskManager pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
 
 **Création d’un point de fin TaskManager**
@@ -911,19 +911,19 @@ Après avoir défini des attributs de point de fin TaskManager, vous pouvez cré
 
 **Activer le point de fin**
 
-Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service depuis Workspace. Après avoir activé le point de fin, vous pouvez l’afficher dans Administration Console.
+Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service depuis Workspace. Après avoir activé le point de fin, vous pouvez le  dans Administration Console.
 
 **Voir également**
 
-[Ajout d’un point de fin TaskManager à l’aide de l’API Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
+[Ajouter un point de fin TaskManager à l’aide de l’API Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Ajout d’un point de fin TaskManager à l’aide de l’API Java {#add-a-taskmanager-endpoint-using-the-java-api}
+### Ajouter un point de fin TaskManager à l’aide de l’API Java {#add-a-taskmanager-endpoint-using-the-java-api}
 
-Ajoutez un point de fin TaskManager à l’aide de l’API Java :
+Ajouter un point de fin TaskManager à l’aide de l’API Java :
 
 1. Incluez des fichiers de projet.
 
@@ -934,13 +934,13 @@ Ajoutez un point de fin TaskManager à l’aide de l’API Java :
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Create an `EndpointRegistryClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
-1. Créez une catégorie pour le point de fin.
+1. Créez un  pour le point de fin.
 
    * Create a `CreateEndpointCategoryInfo` object by using its constructor and passing the following values:
 
-      * Valeur de chaîne qui spécifie la valeur d’identificateur de la catégorie
-      * Valeur de chaîne qui spécifie la description de la catégorie
-   * Créez la catégorie en appelant la `EndpointRegistryClient` méthode de l’ `createEndpointCategory` objet et en transmettant l’ `CreateEndpointCategoryInfo` objet. Cette méthode renvoie un `EndpointCategory` objet qui représente la nouvelle catégorie.
+      * Valeur de chaîne qui spécifie la valeur d’identificateur de la  de
+      * Valeur de chaîne qui spécifie la description du  de
+   * Créez le  en appelant la `EndpointRegistryClient` méthode de l’ `createEndpointCategory` objet et en transmettant l’ `CreateEndpointCategoryInfo` objet. Cette méthode renvoie un `EndpointCategory` objet qui représente le nouvel .
 
 
 1. Définissez les attributs du point de fin TaskManager.
@@ -950,7 +950,7 @@ Ajoutez un point de fin TaskManager à l’aide de l’API Java :
    * Spécifiez la description du point de fin en appelant la `CreateEndpointInfo` `setDescription` méthode de l’objet et en transmettant une valeur de chaîne qui décrit le point de fin.
    * Spécifiez le nom du point de fin en appelant la `CreateEndpointInfo` `setName` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point de fin en appelant la `CreateEndpointInfo` `setServiceId` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie le nom du service.
-   * Spécifiez la catégorie à laquelle appartient le point de fin en appelant la `CreateEndpointInfo` `setCategoryId` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la valeur de l’identificateur de catégorie. Vous pouvez appeler la `EndpointCategory` `getId` méthode de l’objet pour obtenir la valeur d’identificateur de cette catégorie.
+   * Spécifiez l’ auquel appartient le point de fin en appelant la `CreateEndpointInfo` `setCategoryId` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la valeur de l’identificateur de . Vous pouvez appeler la `EndpointCategory` méthode de l’ `getId` objet pour obtenir la valeur d’identificateur de cette .
    * Spécifiez l’opération appelée en appelant la `CreateEndpointInfo` `setOperationName` méthode de l’objet et en transmettant une valeur de chaîne spécifiant le nom de l’opération. En règle générale, lors de la création d’un `TaskManager` point de fin pour un service issu d’un processus créé dans Workbench, le nom de l’opération est `invoke`le suivant :
 
 1. Créez un point de fin TaskManager.
@@ -983,7 +983,7 @@ Pour démontrer comment modifier un point de fin, cette section modifie un point
 
 ### Résumé des étapes {#summary_of_steps-6}
 
-Pour modifier un point de fin, effectuez les tâches suivantes :
+Pour modifier un point de fin, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistryClient` objet.
@@ -1011,7 +1011,7 @@ Pour modifier un point de fin par programmation, vous devez créer un `EndpointR
 
 Avant de pouvoir modifier un point de fin, vous devez le récupérer. Pour récupérer un point de fin, vous devez vous connecter en tant qu’utilisateur pouvant accéder à un point de fin. Il est recommandé de se connecter en tant qu’administrateur. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
-Vous pouvez récupérer un point de fin en récupérant une liste de points de fin. Vous pouvez ensuite effectuer une itération dans la liste, en recherchant le point de fin spécifique à supprimer. Par exemple, vous pouvez localiser un point de fin en déterminant le service qui correspond au point de fin et au type de point de fin. Lorsque vous localisez le point de fin, vous pouvez le modifier.
+Vous pouvez récupérer un point de fin en récupérant un de points de fin. Vous pouvez ensuite effectuer une itération dans le  du, en recherchant le point de terminaison spécifique à supprimer. Par exemple, vous pouvez localiser un point de fin en déterminant le service qui correspond au point de fin et au type de point de fin. Lorsque vous localisez le point de fin, vous pouvez le modifier.
 
 **Spécifier les nouvelles valeurs de configuration**
 
@@ -1033,7 +1033,7 @@ Lors de la modification d’un point de fin, spécifiez de nouvelles valeurs de 
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Modification d’un point de fin à l’aide de l’API Java {#modifying-an-endpoint-using-the-java-api}
+### Modification d’un point de fin à l’aide de l’API Java {#modifying-an-endpoint-using-the-java-api}
 
 Modifiez un point de fin à l’aide de l’API Java :
 
@@ -1048,7 +1048,7 @@ Modifiez un point de fin à l’aide de l’API Java :
 
 1. Récupérez le point de fin à modifier.
 
-   * Récupérez la liste de tous les points de fin auxquels l’utilisateur actuel (indiqués dans les propriétés de connexion) peut accéder en appelant la `EndpointRegistryClient` méthode de l’ `getEndpoints` objet et en transmettant un `PagingFilter` objet qui agit comme un filtre. Vous pouvez transmettre une `(PagingFilter)null` valeur pour renvoyer tous les points de fin. Cette méthode renvoie un `java.util.List` objet où chaque élément est un `Endpoint` objet. Pour plus d’informations sur un `PagingFilter` objet, voir Référence [API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+   * Récupérez un  de tous les points de fin auxquels l’utilisateur actuel (spécifié dans les propriétés de connexion) peut accéder en appelant la `EndpointRegistryClient` méthode de l’ `getEndpoints` objet et en transmettant un `PagingFilter` objet qui agit comme un filtre. Vous pouvez transmettre une `(PagingFilter)null` valeur pour renvoyer tous les points de fin. Cette méthode renvoie un `java.util.List` objet où chaque élément est un `Endpoint` objet. Pour plus d’informations sur un `PagingFilter` objet, voir Référence [API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
    * Parcourez l’ `java.util.List` objet pour déterminer s’il possède des points de fin. S’il existe des points de fin, chaque élément est une `EndPoint` instance.
    * Déterminez le service qui correspond à un point de fin en appelant la `EndPoint` `getServiceId` méthode de l’objet. Cette méthode renvoie une valeur de chaîne qui spécifie le nom du service.
    * Déterminez le type de point de fin en appelant la `EndPoint` `getConnectorId` méthode de l’objet. Cette méthode renvoie une valeur de chaîne qui spécifie le type de point de fin. Par exemple, si le point de fin est un point de fin Watched Folder, cette méthode renvoie `WatchedFolder`.
@@ -1085,7 +1085,7 @@ Pour démontrer comment supprimer un point de fin d’un service, cette section 
 
 ### Résumé des étapes {#summary_of_steps-7}
 
-Pour supprimer un point de fin d’un service, effectuez les tâches suivantes :
+Pour supprimer un point de fin d’un service, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `EndpointRegistryClient` objet.
@@ -1109,15 +1109,15 @@ For information about the location of these JAR files, see [Including AEM Forms 
 
 Pour supprimer un point de fin par programmation, vous devez créer un `EndpointRegistryClient` objet.
 
-**Récupérer le point de fin à supprimer**
+**Récupérez le point de fin à supprimer**
 
 Avant de pouvoir supprimer un point de fin, vous devez le récupérer. Pour récupérer un point de fin, vous devez vous connecter en tant qu’utilisateur pouvant accéder à un point de fin. Il est recommandé de se connecter en tant qu’administrateur. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
-Vous pouvez récupérer un point de fin en récupérant une liste de points de fin. Vous pouvez ensuite effectuer une itération dans la liste, en recherchant le point de fin spécifique à supprimer. Par exemple, vous pouvez localiser un point de fin en déterminant le service qui correspond au point de fin et au type de point de fin. Lorsque vous localisez le point de fin, vous pouvez le supprimer.
+Vous pouvez récupérer un point de fin en récupérant un de points de fin. Vous pouvez ensuite effectuer une itération dans le  du, en recherchant le point de terminaison spécifique à supprimer. Par exemple, vous pouvez localiser un point de fin en déterminant le service qui correspond au point de fin et au type de point de fin. Lorsque vous localisez le point de fin, vous pouvez le supprimer.
 
 **Suppression du point de fin**
 
-Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez l’afficher dans Administration Console.
+Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsque le point de fin est activé, il peut être utilisé pour appeler le service. Après avoir activé le point de fin, vous pouvez le  dans Administration Console.
 
 **Voir également**
 
@@ -1127,7 +1127,7 @@ Après avoir créé un nouveau point de fin, vous devez l’activer. Lorsque le 
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-###  Suppression d’un point de fin à l’aide de l’API Java {#removing-an-endpoint-using-the-java-api}
+### Suppression d’un point de fin à l’aide de l’API Java {#removing-an-endpoint-using-the-java-api}
 
 Supprimez un point de fin à l’aide de l’API Java :
 
@@ -1142,7 +1142,7 @@ Supprimez un point de fin à l’aide de l’API Java :
 
 1. Récupérez le point de fin à supprimer.
 
-   * Récupérez la liste de tous les points de fin auxquels l’utilisateur actuel (indiqués dans les propriétés de connexion) a accès en appelant la `EndpointRegistryClient` méthode de l’ `getEndpoints` objet et en transmettant un `PagingFilter` objet qui agit comme un filtre. Vous pouvez transmettre `(PagingFilter)null` pour renvoyer tous les points de fin. Cette méthode renvoie un `java.util.List` objet où chaque élément est un `Endpoint` objet.
+   * Récupérez un  de tous les points de fin auxquels l’utilisateur actuel (spécifié dans les propriétés de connexion) a accès en appelant la `EndpointRegistryClient` méthode de l’ `getEndpoints` objet et en transmettant un `PagingFilter` objet qui agit comme un filtre. Vous pouvez transmettre `(PagingFilter)null` pour renvoyer tous les points de fin. Cette méthode renvoie un `java.util.List` objet où chaque élément est un `Endpoint` objet.
    * Parcourez l’ `java.util.List` objet pour déterminer s’il possède des points de fin. S’il existe des points de fin, chaque élément est une `EndPoint` instance.
    * Déterminez le service qui correspond à un point de fin en appelant la `EndPoint` `getServiceId` méthode de l’objet. Cette méthode renvoie une valeur de chaîne qui spécifie le nom du service.
    * Déterminez le type de point de fin en appelant la `EndPoint` `getConnectorId` méthode de l’objet. Cette méthode renvoie une valeur de chaîne qui spécifie le type de point de fin. Par exemple, si le point de fin est un point de fin EJB, cette méthode renvoie `EJB`.
@@ -1177,7 +1177,7 @@ Pour démontrer comment récupérer des informations sur les connecteurs de poin
 
 ### Résumé des étapes {#summary_of_steps-8}
 
-Pour récupérer les informations du connecteur de point de fin, effectuez les tâches suivantes :
+Pour récupérer les informations du connecteur de point de fin, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un `ConnectorRegistryClient` objet.
@@ -1210,7 +1210,7 @@ Spécifiez le type de connecteur à partir duquel récupérer les informations. 
 * **Watched Folder**: Permet aux dossiers de contrôle d’appeler un service.
 * **Courriel**: Permet aux messages électroniques d’appeler un service.
 * **Remoting**: Permet à une application cliente Flex d’appeler un service.
-* **TaskManagerConnector**: Permet à un utilisateur de Workspace d’appeler un service depuis Workspace.
+* **TaskManagerConnector**: Permet à un utilisateur de Workspace d’appeler un service à partir de Workspace.
 
 **Récupération des valeurs de configuration**
 
@@ -1228,7 +1228,7 @@ Après avoir spécifié le type de connecteur, vous pouvez récupérer des infor
 
 Récupérez les informations du connecteur du point de fin à l’aide de l’API Java :
 
-1. Incluez des fichiers de projet..
+1. Incluez des fichiers de projet. .
 
    Incluez des fichiers JAR client, tels que adobe-livecycle-client.jar, dans le chemin de classe de votre projet Java.
 
