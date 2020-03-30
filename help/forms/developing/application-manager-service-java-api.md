@@ -1,6 +1,6 @@
 ---
-title: Application Manager Service JavaAPI Quick Start (SOAP)
-seo-title: Application Manager Service JavaAPI Quick Start (SOAP)
+title: rapide de l’API Java du service Application Manager (SOAP)
+seo-title: rapide de l’API Java du service Application Manager (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
@@ -10,18 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Démarrage rapide de l’API Java du service Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+#  rapide sur l’API JavaScript du service Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-Java API Quick Start (SOAP) est disponible pour le service Application Manager.
+Le  rapide des API Java (SOAP) est disponible pour le service Application Manager.
 
-[Démarrage rapide : Déploiement d’applications à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[rapide : Déploiement d’applications à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Démarrage rapide : Suppression d’une application à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
+[rapide : Suppression d’une application à l’aide de l’API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ Java API Quick Start (SOAP) est disponible pour le service Application Manager.
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-* ***Remarque **: Le démarrage rapide de l’API Java (SOAP) situé dans Programmation avec AEM Forms est basé sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+* ***Remarque **: Les  rapides de l’API Java (SOAP) situés dans Programmation avec AEM forms reposent sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
 
-## Démarrage rapide (mode SOAP) : Déploiement d’applications à l’aide de l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+##  rapide (mode SOAP) : Déploiement d’applications à l’aide de l’API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 L’exemple de code Java suivant importe une application basée sur un fichier LCA existant appelé *EncryptDocument.lca*.
 
@@ -98,7 +98,7 @@ L’exemple de code Java suivant importe une application basée sur un fichier L
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -133,7 +133,7 @@ L’exemple de code Java suivant importe une application basée sur un fichier L
  
 ```
 
-## Démarrage rapide (mode SOAP) : Suppression d’une application à l’aide de l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+##  rapide (mode SOAP) : Suppression d’une application à l’aide de l’API Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 L’exemple de code Java suivant supprime une application nommée *EncryptDocument*.
 
@@ -202,7 +202,7 @@ L’exemple de code Java suivant supprime une application nommée *EncryptDocume
          try{
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
