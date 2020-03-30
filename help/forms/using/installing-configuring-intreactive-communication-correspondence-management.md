@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
 
 ## Présentation {#introduction}
 
-AEM Form permet de centraliser la création, l’assemblage, la gestion et la livraison de documents interactifs et sécurisés, tels que des correspondances d’entreprise, des documents, des relevés, des avis d’avantages, des courriers marketing, des factures et des kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
+AEM Form permet de centraliser la création, l’assemblage, la gestion et les de sécurisés et interactifs tels que les correspondances, les, les instructions, les avis d’avantages, les courriers marketing, les factures et les kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le package du module complémentaire est déployé sur une instance de création ou de publication d’AEM.
 
 Vous pouvez utiliser la fonctionnalité de communication interactive pour produire une communication dans plusieurs formats, par exemple, Web et PDF. Vous pouvez intégrer la communication interactive au processus AEM pour traiter et fournir la communication assemblée aux clients sur le canal de leur choix. Par exemple, l’envoi d’une communication à l’utilisateur final par email.
 
@@ -128,7 +128,7 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 Procédez comme suit sur toutes les instances de création et de publication pour placer le package sur liste blanche :
 
-1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. The default URL is https://[server]:[port]/system/console/configMgr.
+1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. The default URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez la **configuration du pare-feu de désérialisation**.
 1. Ajoutez le package **sun.util.calendar** dans le champ **Liste blanche**. Cliquez sur Enregistrer.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
@@ -160,7 +160,7 @@ Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pou
 
 1. Configurez le service de filtrage des référents :
 
-   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. The Default URL of the configuration manager is https://[server]:[port_number]/system/console/configMgr. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. The format of the entry is https://[server]:[port].
+   Connectez-vous à Configuration Manager d’Apache Felix en tant qu’administrateur. The Default URL of the configuration manager is https://&#39;server&#39;:[port_number]/system/console/configMgr. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Allow Hosts, saisissez le nom d’hôte du répartiteur afin de l’activer comme référent et cliquez sur **Enregistrer**. The format of the entry is https://&#39;[server]:[port]&#39;.
 
 #### Intégration d’Adobe Target {#integrate-adobe-target}
 
@@ -176,7 +176,7 @@ Vous pouvez activer la communication SSL pour le modèle de données de formulai
 
 ## Étapes suivantes {#next-steps}
 
-Vous avez configuré un environnement pour utiliser des fonctionnalités de communication interactive et de gestion de la correspondance. Maintenant, les prochaines étapes pour utiliser cette fonctionnalité sont les suivantes :
+Vous avez configuré un   pour utiliser des fonctionnalités de communication interactive et de gestion de la correspondance. Maintenant, les prochaines étapes pour utiliser cette fonctionnalité sont les suivantes :
 
 * [Présentation de la gestion des correspondances](/help/forms/using/interactive-communications-overview.md)
 
