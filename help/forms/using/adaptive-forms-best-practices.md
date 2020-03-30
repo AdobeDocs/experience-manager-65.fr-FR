@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: dbfadb0b49c83c38aa2cb55c32517ad70bbd79d0
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -243,7 +243,7 @@ Certaines meilleures pratiques en matière de localisation des formulaires adapt
 * Les modifications telles que l’ajout d’un nouveau composant ou l’application d’un script dans un formulaire localisé ne sont pas localisées automatiquement. Par conséquent, vous devez finaliser un formulaire avant de le localiser pour éviter plusieurs cycles de localisation.
 * Utilisez le paramètre de requête `afAcceptLang` pour remplacer la langue du navigateur et pour rendre le formulaire dans la langue spécifiée. Par exemple, l’URL suivante force le rendu du formulaire en japonais, quel que soit le paramètre régional spécifié dans le navigateur :
 
-   `https://[server]:[port]/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * AEM Forms prend actuellement en charge les  de contenu de formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR). Cependant, vous pouvez ajouter la prise en charge de nouveaux paramètres régionaux pour les formulaires adaptatifs à l’exécution.  Pour plus d’informations, voir [Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs](/help/forms/using/supporting-new-language-localization.md).
 
