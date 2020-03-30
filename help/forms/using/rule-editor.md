@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -111,7 +111,7 @@ Action 2 sur Objet B ; ET Action 3 sur Objet C ;
 
 _
 
-Lorsque vous disposez d’un composant à plusieurs valeurs, tel que des boutons radio ou une liste, lors de la création d’une règle pour ce composant, les options sont automatiquement récupérées et mises à la disposition du créateur de règles. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
+Lorsque vous disposez d’un composant à plusieurs valeurs, tel que des boutons radio ou des  de, lors de la création d’une règle pour ce composant, les options sont automatiquement récupérées et mises à la disposition du créateur de règles. Vous n’avez pas besoin de saisir à nouveau les valeurs de l’option.
 
 Par exemple, une liste comporte quatre options : Rouge, Bleu, Vert et Jaune. Lors de la création de la règle, les options (boutons radio) sont automatiquement récupérées et mises à disposition du créateur de la règle comme suit :
 
@@ -135,7 +135,7 @@ En plus du service de modèle de données de formulaire, vous pouvez spécifier 
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-**Définissez la valeur de** Calculs et la valeur de l’objet spécifié. Vous pouvez définir la valeur de l’objet sur une chaîne, la valeur d’un autre objet, la valeur calculée à l’aide d’une expression ou d’une fonction mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous sélectionnez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire sur votre instance AEM. Lorsque vous choisissez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper les objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié apparaissent.
+**Définissez la valeur de** Calculs et la valeur de l’objet spécifié. Vous pouvez définir la valeur de l’objet sur une chaîne, la valeur d’un autre objet, la valeur calculée à l’aide d’une fonction ou d’un  de  mathématique, la valeur d’une propriété d’un objet ou la valeur de sortie d’un service de modèle de données de formulaire configuré. Lorsque vous sélectionnez l’option de service Web, elle affiche tous les services configurés dans tous les modèles de données de formulaire sur votre instance AEM. Lorsque vous choisissez un service de modèle de données de formulaire, des champs supplémentaires permettant de mapper les objets de formulaires avec des paramètres d’entrée et de sortie pour le service spécifié apparaissent.
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
@@ -145,13 +145,13 @@ Il vous permet de définir des règles pour ajouter dynamiquement des cases à c
 
 ![Définir la propriété](assets/set_property_rule_new.png)
 
-Pour définir une règle basée sur une fonction personnalisée, sélectionnez Sortie **de** fonction dans la liste déroulante, puis faites glisser une fonction personnalisée depuis l’onglet **Fonctions** . Si l’action de condition est remplie, le nombre de cases à cocher définies dans la fonction personnalisée est ajouté au formulaire adaptatif.
+Pour définir une règle basée sur une fonction personnalisée, sélectionnez Sortie **de** fonction dans le déroulant, puis faites glisser une fonction personnalisée depuis l’onglet **Fonctions** . Si l’action de condition est remplie, le nombre de cases à cocher définies dans la fonction personnalisée est ajouté au formulaire adaptatif.
 
-Pour définir une règle basée sur un objet de formulaire, sélectionnez Objet **de** formulaire dans la liste déroulante, puis faites glisser un objet de formulaire depuis l’onglet Objets **de** formulaire. Si l’action de condition est remplie, le nombre de cases à cocher définies dans l’objet de formulaire est ajouté au formulaire adaptatif.
+Pour définir une règle basée sur un objet de formulaire, sélectionnez Objet **de** formulaire dans le déroulant, puis faites glisser un objet de formulaire depuis l’onglet Objets **de** formulaire. Si l’action de condition est remplie, le nombre de cases à cocher définies dans l’objet de formulaire est ajouté au formulaire adaptatif.
 
 Une règle Définir la propriété basée sur une propriété d’objet vous permet d’ajouter le nombre de cases à cocher dans un formulaire adaptatif en fonction d’une autre propriété d’objet incluse dans le formulaire adaptatif.
 
-La figure suivante illustre un exemple d’ajout dynamique de cases à cocher en fonction du nombre de listes déroulantes dans le formulaire adaptatif :
+La figure suivante illustre un exemple d’ajout dynamique de cases à cocher en fonction du nombre de  déroulants dans le formulaire adaptatif :
 
 ![Propriété de l&#39;objet](assets/object_property_set_property_new.png)
 
@@ -167,11 +167,11 @@ La figure suivante illustre un exemple d’ajout dynamique de cases à cocher en
 
 **Valider le formulaire** Valide le formulaire.
 
-**Ajouter une instance** Ajoute une instance de la ligne de tableau ou du panneau répétable spécifiée.
+**Instance** Ajouter Ajoute une instance du panneau ou de la ligne de tableau répétable spécifié.
 
-**Supprimer une instance** Supprime une instance du panneau ou de la ligne de tableau répétable spécifié.
+**Supprimer l’instance** Supprime une instance du panneau ou de la ligne de tableau répétable spécifié.
 
-**Accédez à** d’autres ressources telles que des images ou des fragments de document, ou à une URL externe. Pour plus d’informations, voir [Ajouter un bouton à la communication](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel)interactive.
+**Accédez à** d’autres communications interactives, des formulaires adaptatifs, d’autres ressources telles que des images ou des fragments de  de ou une URL externe. Pour plus d’informations, voir le bouton [Ajouter de la communication](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel)interactive.
 
 ### Définir la valeur de {#set-value-of}
 
@@ -183,7 +183,7 @@ Notez que le type de règle Définir la valeur de n’est pas disponible pour to
 
 Définir la valeur de Objet A sur : 
 
-(chaîne ABC) OR(propriété d’objet X de l’objet C) OR(valeur d’une fonction) OR(valeur d’une expression mathématique) OR(valeur de sortie d’un service de modèle de données ou d’un service Web);
+(chaîne ABC) OR(propriété d’objet X de l’objet C) OR(valeur d’une fonction) OR(valeur d’un de  mathématique) OR(valeur de sortie d’un service de modèle de données ou d’un service Web);
 
 Lorsque (facultatif) :
 
@@ -301,7 +301,7 @@ Une règle Valider standard est structurée comme suit :
 
 Le type de règle **Définir les options** vous permet de définir des règles pour ajouter des cases à cocher dynamiquement au formulaire adaptatif. Vous pouvez utiliser un modèle de données de formulaire ou une fonction personnalisée pour définir la règle.
 
-Pour définir une règle basée sur une fonction personnalisée, sélectionnez Sortie **de** fonction dans la liste déroulante, puis faites glisser une fonction personnalisée depuis l’onglet **Fonctions** . Le nombre de cases à cocher définies dans la fonction personnalisée est ajouté au formulaire adaptatif.
+Pour définir une règle basée sur une fonction personnalisée, sélectionnez Sortie **de** fonction dans le déroulant, puis faites glisser une fonction personnalisée depuis l’onglet **Fonctions** . Le nombre de cases à cocher définies dans la fonction personnalisée est ajouté au formulaire adaptatif.
 
 ![Fonctions personnalisées](assets/custom_functions_set_options_new.png)
 
@@ -309,10 +309,10 @@ Pour créer une fonction personnalisée, voir Fonctions [personnalisées dans l�
 
 Pour définir une règle basée sur un modèle de données de formulaire :
 
-1. Sélectionnez **Service Output** dans la liste déroulante.
+1. Sélectionnez **Service Output** dans le  déroulant.
 1. Sélectionnez l’objet de modèle de données.
-1. Sélectionnez une propriété d’objet de modèle de données dans la liste déroulante Valeur **d’** affichage. Le nombre de cases à cocher dans le formulaire adaptatif provient du nombre d’instances définies pour cette propriété dans la base de données.
-1. Sélectionnez une propriété d’objet de modèle de données dans la liste déroulante **Enregistrer la valeur** .
+1. Sélectionnez une propriété d’objet de modèle de données dans le déroulant Valeur **d’** affichage. Le nombre de cases à cocher dans le formulaire adaptatif provient du nombre d’instances définies pour cette propriété dans la base de données.
+1. Sélectionnez une propriété d’objet de modèle de données dans le déroulant **Enregistrer la valeur** .
 
 ![Options de définition FDM](assets/fdm_set_options_new.png)
 
@@ -344,7 +344,7 @@ Affiche le titre de l’objet d’un formulaire adaptatif depuis lequel vous ave
 
 Le volet situé à gauche de l’interface utilisateur de l’éditeur de règles comporte deux onglets — **[!UICONTROL Objets de formulaire]** et **[!UICONTROL Fonctions]**.
 
-L’onglet Objets de formulaire affiche une vue hiérarchique de tous les objets contenus dans le formulaire adaptatif. Il affiche le titre et le type des objets. Lors de la création d’une règle, vous pouvez glisser-déposer les objets de formulaire dans l’éditeur de règles. Lors de la création ou de la modification d’une règle lorsque vous faites glisser un objet ou une fonction dans un espace réservé, ce dernier prend automatiquement le type de valeur approprié.
+L’onglet Objets de formulaire affiche une vue hiérarchique de tous les objets contenus dans le formulaire adaptatif. Il affiche le titre et le type des objets. Lors de la création d’une règle, vous pouvez glisser-déposer les objets de formulaire dans l’éditeur de règles. Lors de la création ou de la modification d’une règle lorsque vous faites glisser un objet ou une fonction dans un espace réservé, celui-ci prend automatiquement le type de valeur approprié.
 
 Les objets de formulaire contenant une ou plusieurs règles valides appliquées sont identifiés par un point vert. Si l’une des règles appliquées à un objet de formulaire n’est pas valide, l’objet de formulaire est identifié par un point jaune.
 
@@ -374,7 +374,7 @@ Les utilisateurs appartenant au groupe des utilisateurs avancés de formulaires 
 
 AEM Forms suit le mode Éditeur de règles que vous avez utilisé en dernier pour créer une règle. Lorsque vous lancez l’éditeur de règles la fois suivante, il s’ouvre dans ce mode. Toutefois, vous pouvez également configurer un mode par défaut pour ouvrir l’éditeur de règles dans le mode spécifié. Pour ce faire :
 
-1. Go to AEM web console at https://[host]:[port]/system/console/configMgr.
+1. Go to AEM web console at `https://[host]:[port]/system/console/configMgr`.
 1. Click to edit **[!UICONTROL Adaptive Form Configuration Service]**.
 1. Sélectionnez **[!UICONTROL Éditeur visuel]** ou **[!UICONTROL Éditeur de code]** dans la liste déroulante **[!UICONTROL Mode par défaut de l’éditeur de règle]**.
 
@@ -519,7 +519,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent utiliser l’éditeur de code. L’éditeur de règles génère automatiquement le code javascript pour toute règle que vous créez à l’aide de l’éditeur visuel. Vous pouvez basculer de l’éditeur visuel à l’éditeur de code pour afficher le code généré. Cependant, si vous modifiez le code de règle dans l’éditeur de code, vous ne pouvez pas revenir à l’éditeur visuel. Si vous préférez les règles d’écriture de l’éditeur de code plutôt que celles de l’éditeur visuel, vous avez la possibilité de définir de nouvelles règles dans l’éditeur de code. Le bouton bascule des éditeurs visuel-code vous permet de passer d’un mode à l’autre.
 
-L’éditeur de code JavaScript est le langage d’expression des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
+Le code JavaScript de l’éditeur de code est le langage   des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
 
 Pour plus d’informations sur la création de règles dans l’éditeur de code, reportez-vous à la section[ Expressions de formulaire adaptatif](/help/forms/using/adaptive-form-expressions.md).
 
@@ -551,7 +551,7 @@ Balises `jsdoc` prises en charge :
    `funcName` est le nom de la fonction (aucun espace autorisé).
    `<Function Name>` est le nom d’affichage de la fonction.
 
-* **Syntaxe des membres**: `@memberof namespace`Joint un espace de noms à la fonction.
+* **Syntaxe des membres**: `@memberof namespace`Joint un   à la fonction.
 
 * **Syntaxe des paramètres**: Vous pouvez `@param {type} name <Parameter Description>`également utiliser : `@argument` `{type} name <Parameter Description>` ou **** `@arg` `{type}` `name <Parameter Description>`.
 Affiche les paramètres utilisés par la fonction. Une fonction peut comporter plusieurs balises de paramètre, une balise pour chaque paramètre dans l’ordre d’occurrence.
@@ -586,7 +586,7 @@ Exécutez les étapes suivantes pour créer une bibliothèque cliente et l’ajo
 
    >[!NOTE]
    >
-   >`customfunction`est un exemple de catégorie. You can choose any name for the category you create in the `clientlib`folder.
+   >`customfunction`est un exemple de . You can choose any name for the category you create in the `clientlib`folder.
 
 Une fois que vous avez ajouté votre bibliothèque client dans le référentiel CRX, utilisez-la dans votre formulaire adaptatif. Cela vous permet d’utiliser votre fonction personnalisée comme règle dans votre formulaire. Effectuez les étapes suivantes pour ajouter la bibliothèque cliente dans votre formulaire adaptatif.
 
@@ -668,7 +668,7 @@ var c = {
 
 Any existing rules on a form object are listed when you tap the object and tap ![edit-rules1](assets/edit-rules1.png). Vous pouvez afficher le titre et un aperçu du résumé de la règle. En outre, l’interface utilisateur vous permet de développer et d’afficher le résumé complet de la règle, de changer l’ordre des règles, de modifier les règles et de supprimer des règles.
 
-![liste-règles](assets/list-rules.png)
+![-règles](assets/list-rules.png)
 
 Vous pouvez effectuer les actions suivantes sur les règles :
 
@@ -795,7 +795,7 @@ Dans un formulaire de bon de commande, vous avez le tableau suivant, dans lequel
 
 ![example-function-table](assets/example-function-table.png)
 
-******A. Ligne1** B. Quantité **C.** Quantité totale
+**A.** Ligne1 **B.** Quantité **C.** Quantité totale
 
 Maintenant, vous souhaitez ajouter des quantités spécifiées dans la colonne Quantité de produit pour tous les produits et afficher la somme dans la cellule Quantité totale. Vous pouvez obtenir ce résultat en saisissant une règle Définir la valeur de sur la cellule Quantité totale, comme illustré ci-dessous.
 
