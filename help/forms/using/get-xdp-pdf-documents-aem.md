@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ Vous pouvez transférer les types de ressource pris en charge individuellement o
 
 ## Chargement de formulaires {#uploading-forms}
 
-1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://[server]:[port]/aem/forms.html`.
+1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://'[server]:[port]'/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
 1. Dans la barre d’outils des actions, appuyez sur **Créer > Chargement de fichier**.
 
@@ -65,7 +65,7 @@ Le serveur AEM Forms vous permet d’exécuter du code JavaScript. Du code Java
 
 Le mode Protégé est activé par défaut. Si nécessaire, vous pouvez désactiver le mode Protégé :
 
-1. Connectez-vous à la console Web AEM en tant qu’administrateur. The URL is https://[server]:[port]/system/console/configMgr
+1. Connectez-vous à la console Web AEM en tant qu’administrateur. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr
 1. Ouvrez les configurations de Mobile Forms pour l’édition.
 1. Désélectionnez l’option Mode Protégé et cliquez sur **Enregistrer**. Le mode Protégé est désactivé.
 
