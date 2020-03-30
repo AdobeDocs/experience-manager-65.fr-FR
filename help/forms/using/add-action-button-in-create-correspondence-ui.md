@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
 
 La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur de création de correspondance.
 
-Le scénario de ce document explique comment créer un bouton dans l’interface utilisateur de création de correspondance pour partager une lettre sous forme de révision PDF jointe à un courrier électronique.
+Le scénario de ce explique comment créer un bouton dans l’interface utilisateur de création de correspondance pour partager une lettre en tant que PDF de révision joint à un courrier électronique.
 
 ### Conditions préalables {#prerequisites}
 
@@ -40,7 +40,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
 ### Ajout du bouton à l’interface utilisateur de création de correspondance {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Go to `https://[server]:[port]/[ContextPath]/crx/de` and login as Administrator.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. In the apps folder, create a folder named `defaultApp` with path/structure similar to the defaultApp folder (located in config folder). Procédez comme suit pour créer le dossier :
 
    1. Right-click the **defaultApp** folder at the following path and select **Overlay Node**:
@@ -51,11 +51,11 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/config/defaultApp/
+      **Chemin :** /libs/fd/cm/config/defaultApp/
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
       ![Nœud de recouvrement](assets/2_defaultappoverlaynode.png)
 
@@ -90,7 +90,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
    </extensionsConfig>
    ```
 
-1. Pour envoyer la lettre par courrier électronique, vous pouvez utiliser le flux de travail LiveCycle Forms. Ajoutez une balise customAction sous la balise modelExtension dans acmExtensionsConfig.xml comme suit :
+1. Pour envoyer la lettre par courrier électronique, vous pouvez utiliser le flux de travail LiveCycle Forms. Ajouter une balise customAction sous la balise modelExtension dans acmExtensionsConfig.xml comme suit :
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -111,7 +111,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
    | permissionName | L’action correspondante s’affiche uniquement si l’utilisateur dispose de l’autorisation spécifiée par permissionName. Lorsque vous spécifiez la valeur permissionName en tant que `forms-users`, tous les utilisateurs ont accès à cette option. |
    | actionHandler | Nom qualifié complet de la classe ActionHandler appelée lorsque l&#39;utilisateur clique sur le bouton. |
 
-   Outre les paramètres ci-dessus, des configurations supplémentaires associées à une action personnalisée customAction peuvent exister. Ces configurations supplémentaires sont rendues accessibles au gestionnaire par le biais de l’objet CustomAction.
+   Outre les paramètres ci-dessus, des configurations supplémentaires associées à une action personnalisée customAction peuvent exister. Ces configurations supplémentaires sont mises à la disposition du gestionnaire par le biais de l’objet CustomAction.
 
    | **Nom** | **Description** |
    |---|---|
@@ -131,11 +131,11 @@ Le fichier ACMExtensionsMessages.properties contient des libellés et des messag
 
 1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-   **** Chemin : /libs/fd/cm/config/defaultApp/locale
+   **Chemin :** /libs/fd/cm/config/defaultApp/locale
 
-   **** Emplacement de l’incrustation : /apps/
+   **Emplacement de l’incrustation :** /apps/
 
-   **** Faire correspondre les types de noeud : Coché
+   **Faire correspondre les types de noeud :** Coché
 
 1. Cliquez sur **OK**.
 1. Cliquez sur **Enregistrer tout**.
@@ -167,7 +167,7 @@ Après avoir effectué chaque modification côté serveur, redémarrez le lot du
 >
 >Vous devrez peut-être vider la mémoire cache du navigateur.
 
-1. Aller à `https://[host]:[port]/system/console/bundles`. Le cas échéant, connectez-vous en tant qu’administrateur.
+1. Accédez à `https://[host]:'port'/system/console/bundles`. Le cas échéant, connectez-vous en tant qu’administrateur.
 
 1. Recherchez le lot du bloc de création Adobe Asset Composer. Redémarrez le lot : cliquez sur Arrêter, puis sur Démarrer.
 
@@ -186,10 +186,10 @@ Concernant le traitement de l’action personnalisée, créez un recouvrement du
 La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton comprend la logique pour :
 
 * Rendre l’action ajoutée visible/invisible : via le remplacement de la fonction actionVisible().
-* Activation/désactivation de l’action ajoutée : en remplaçant la fonction actionEnabled().
+* Activation/désactivation de l’action nouvellement ajoutée : en remplaçant la fonction actionEnabled().
 * Gestion réelle de l’action lorsque l’utilisateur clique sur le bouton : en remplaçant l’implémentation de la fonction handleAction().
 
-1. Aller à `https://[server]:[port]/[ContextPath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
+1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
 
 1. Dans le dossier d’applications, créez un dossier nommé `js` dans la branche /apps de CRX, dont la structure est semblable au dossier suivant :
 
@@ -203,16 +203,16 @@ La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton com
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **** Chemin : /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **** Emplacement de l’incrustation : /apps/
+      **Emplacement de l’incrustation :** /apps/
 
-      **** Faire correspondre les types de noeud : Coché
+      **Faire correspondre les types de noeud :** Coché
 
    1. Cliquez sur **OK**.
    1. Cliquez sur **Enregistrer tout**.
 
-1. Dans le dossier js, créez un fichier nommé ccrcustomization.js avec le code de gestion de l’action du bouton en procédant comme suit :
+1. Dans le dossier js, créez un fichier nommé ccrcustomization.js avec le code de gestion de l’action du bouton à l’aide des étapes suivantes :
 
    1. Right-click the **js** folder at the following path and select **Create > Create File**:
 
@@ -338,7 +338,7 @@ components.zip
 
 Le processus LCA s’exécute sur le serveur LiveCycle et requiert l’adresse du serveur et les informations d’identification.
 
-1. Go to `https://[server]:[port]/system/console/configMgr` and login as Administrator.
+1. Go to `https://'[server]:[port]'/system/console/configMgr` and login as Administrator.
 1. Localisez la configuration du SDK client d’Adobe LiveCycle et cliquez sur **Modifier** (icône de modification). Le panneau de configuration s’ouvre.
 
 1. Enter the following details and click **Save**:
@@ -350,7 +350,7 @@ Le processus LCA s’exécute sur le serveur LiveCycle et requiert l’adresse d
 
 #### Installation de LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
 
-Processus LiveCycle requis qui active le processus du service de messagerie.
+Processus LiveCycle requis qui active le processus du service de messagerie électronique.
 
 >[!NOTE]
 >
@@ -380,7 +380,7 @@ Processus LiveCycle requis qui active le processus du service de messagerie.
 
 Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu’il accède.
 
-1. Connectez-vous en tant qu’administrateur à `https:/[host]/:[port]/system/console/configMgr`.
+1. Connectez-vous en tant qu’administrateur à `https:/[host]:'port'/system/console/configMgr`.
 
 1. Locate and click **Adobe LiveCycle Client SDK Configuration**. Le panneau Configuration du SDK client d’Adobe LiveCycle s’affiche.
 1. In the Service Name list, click + icon and add a serviceName **SendLetterForReview/SendLetterForReviewProcess**.
@@ -403,7 +403,7 @@ Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle
 
 #### Configuration du service DSC {#configure-the-dsc-service}
 
-Pour utiliser l’API Correspondence Management, téléchargez le fichier DSCSample.jar (joint à ce document dans le cadre de components.zip) et téléchargez-le sur le serveur LiveCycle. Une fois le fichier DSCSample.jar téléchargé sur le serveur LiveCycle, le serveur AEM utilise le fichier DSCSample.jar pour accéder à l’API renderLetter.
+Pour utiliser l’API Correspondence Management, téléchargez le fichier DSCSample.jar (joint dans ce dans le cadre de components.zip) et téléchargez-le sur le serveur LiveCycle. Une fois le fichier DSCSample.jar téléchargé sur le serveur LiveCycle, le serveur AEM utilise le fichier DSCSample.jar pour accéder à l’API renderLetter.
 
 Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
@@ -413,7 +413,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 
 1. Indiquez les paramètres suivants dans le fichier de configuration :
 
-   * **crx.serverUrl**=https:/[hôte]/:chemin[]/[]contexte/URL AEM[]
+   * **crx.serverUrl**=https:/host:port/[du chemin]de contexte/URL[AEM]
    * **crx.username**= nom d’utilisateur AEM
    * **crx.password**= mot de passe AEM
    * **crx.appRoot**=/content/apps/cm
@@ -428,7 +428,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir de données XML fournies par C en entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Démarrer Workbench et connectez-vous.
-1. Select **Window > Show Views > Components**. La vue Composants est ajoutée à Workbench ES2.
+1. Select **Window > Show Views > Components**. Le de composants est ajouté à Workbench ES2.
 
 1. Right-click **Components** and select **Install Component**.
 
