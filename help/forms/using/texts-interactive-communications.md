@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
 
 ## Présentation {#overview}
 
-Un fragment de document texte se compose d’un ou de plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique. Un paragraphe dynamique peut contenir des propriétés et des variables de modèle de données de formulaire. Vous pouvez également appliquer des règles et les répéter dans un fragment de document texte. Par exemple, le nom du client dans une formule de politesse peut être une propriété FDM (Form Data Model) dont la valeur est rendue disponible au moment de l’exécution. En modifiant ces valeurs, la même communication interactive peut être utilisée pour préparer la communication interactive pour différents clients à l’aide de l’interface utilisateur de l’agent.
+Un fragment de document texte se compose d’un ou de plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique. Un paragraphe dynamique peut contenir des propriétés et des variables de modèle de données de formulaire. Vous pouvez également appliquer des règles et les répéter dans un fragment de de texte. Par exemple, le nom du client dans une formule de politesse peut être une propriété FDM (Form Data Model) dont la valeur est rendue disponible au moment de l’exécution. En modifiant ces valeurs, la même communication interactive peut être utilisée pour préparer la communication interactive pour différents clients à l’aide de l’interface utilisateur de l’agent.
 
-Le fragment de document texte dans Interactive Communication prend en charge le type de données dynamiques suivant :
+Le fragment de de texte dans Interactive Communication prend en charge le type de données dynamiques suivant :
 
 * **Objets de modèle de données** : les propriétés des données utilisent une source de données d’arrière-plan.
 * **Contenu basé sur des règles** : parties du contenu d’un texte qui apparaissent ou sont masquées en fonction d’une règle. Une règle peut également être basée sur les propriétés et variables du modèle de données de formulaire.
@@ -33,7 +33,7 @@ Le fragment de document texte dans Interactive Communication prend en charge le 
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Texte]**.
 1. Saisissez les informations suivantes :
 
-   * **[!UICONTROL Titre]**: (Facultatif) Entrez le titre du fragment de document texte. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
+   * **[!UICONTROL Titre]**: (Facultatif) Entrez le titre du fragment de de texte . Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les textes sont référencés par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
    * **[!UICONTROL Nom]**: Nom unique du texte, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
    * **[!UICONTROL Description]** : entrez une description du texte.
@@ -69,7 +69,7 @@ Le fragment de document texte dans Interactive Communication prend en charge le 
 
 ## Modifier du texte {#edittext}
 
-Vous pouvez modifier un fragment de document texte existant en suivant les étapes ci-dessous. Vous pouvez également choisir de modifier un fragment de document texte dans un éditeur de communication interactive.
+Vous pouvez modifier un fragment de document texte existant en suivant les étapes ci-dessous. Vous pouvez également choisir de modifier un fragment de de texte  dans un éditeur Interactive Communication.
 
 1. Sélectionnez **[!UICONTROL Formulaires]** >**[!UICONTROL Fragments de document]**.
 1. Accédez à un fragment de document texte et sélectionnez-le.
@@ -79,15 +79,15 @@ Vous pouvez modifier un fragment de document texte existant en suivant les étap
 
 ## Personnalisation d’un fragment de document texte à l’aide de propriétés de modèle de données de formulaire {#formdatamodel}
 
-Vous pouvez personnaliser les fragments de document texte en insérant les propriétés du modèle de données de formulaire. En insérant des propriétés de modèle de données de formulaire dans du texte, vous pouvez récupérer et renseigner les données spécifiques au destinataire de la source de données associée lors de la prévisualisation d’une communication interactive. For more information on form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+Vous pouvez personnaliser les fragments de document texte en insérant les propriétés du modèle de données de formulaire. En insérant des propriétés de modèle de données de formulaire dans du texte, vous pouvez récupérer et renseigner des données spécifiques au à partir de la source de données associée lors de la prévisualisation d’une communication interactive. For more information on form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-Si vous avez spécifié un modèle de données de formulaire lors de la création d’un texte, les propriétés du modèle de données de formulaire apparaissent dans le volet gauche de l’éditeur de texte. Le modèle de données de formulaire spécifié doit être le même pour le fragment de document texte et pour la communication interactive qui l’inclut.
+Si vous avez spécifié un modèle de données de formulaire lors de la création d’un texte, les propriétés du modèle de données de formulaire apparaissent dans le volet gauche de l’éditeur de texte. Le modèle de données de formulaire spécifié doit être le même pour le fragment de  texte ainsi que pour la communication interactive qui l’inclut.
 
 ![insertfdmelementtext](assets/insertfdmelementtext.png)
 
 * To insert an form data model property into text, place the cursor where you want to insert the property, then select the **[A]** property in the left pane by tapping on it, and tap **[!UICONTROL [B]Add Selected]**. You can also just double-tap the property to insert it at the**[ C ]**cursor position. Les propriétés du modèle de données de formulaire sont mises en surbrillance dans une couleur d’arrière-plan brunâtre.
 
-Vous pouvez également rechercher et ajouter une propriété de modèle de données de formulaire à l’aide du symbole @ dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer la propriété. Tapez @ suivi de la chaîne de recherche. L’opération de recherche est effectuée sur toutes les propriétés et variables du modèle de données de formulaire disponibles dans le fragment de document. Les propriétés ou variables contenant la chaîne de recherche sont récupérées et affichées dans une liste déroulante. Parcourez les résultats de la recherche et cliquez sur la propriété à insérer à l’emplacement du curseur. Appuyez sur Echap pour masquer les résultats de la recherche.
+Vous pouvez également rechercher et ajouter une propriété de modèle de données de formulaire à l’aide du symbole @ dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer la propriété. Tapez @ suivi de la chaîne de recherche. L’opération de recherche est effectuée sur toutes les propriétés et variables du modèle de données de formulaire disponibles dans le fragment de  de. Les propriétés ou variables contenant la chaîne de recherche sont récupérées et affichées sous la forme d’un  déroulant. Parcourez les résultats de la recherche et cliquez sur la propriété à insérer à l’emplacement du curseur. Appuyez sur Echap pour masquer les résultats de la recherche.
 
 * To allow the agents to edit an form data model property&#39;s value in the agent UI while [Prepare and send Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) using the Agent UI, tap the **[D]** lock icon for that property and ensure it is in an unlocked state. L’état par défaut de la propriété est verrouillé et un agent ne peut pas modifier la propriété dans l’interface utilisateur de l’agent.
 
@@ -134,7 +134,7 @@ Lors de la création ou de la modification d’un fragment de document texte, vo
 
    Les variables sont mises en surbrillance sur fond bleu clair, tandis que les propriétés du modèle de données de formulaire sont mises en surbrillance en brunâtre.
 
-   Vous pouvez également rechercher et ajouter des variables à l’aide du symbole @ dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer la variable. Tapez @ suivi de la chaîne de recherche. L’opération de recherche est effectuée sur toutes les propriétés et variables du modèle de données de formulaire disponibles dans le fragment de document. Les propriétés et variables contenant la chaîne de recherche sont récupérées et affichées dans une liste déroulante. Parcourez les résultats de la recherche et cliquez sur la variable à insérer à l’emplacement du curseur. Appuyez sur Echap pour masquer les résultats de la recherche.
+   Vous pouvez également rechercher et ajouter des variables à l’aide du symbole @ dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer la variable. Tapez @ suivi de la chaîne de recherche. L’opération de recherche est effectuée sur toutes les propriétés et variables du modèle de données de formulaire disponibles dans le fragment de  de. Les propriétés et variables contenant la chaîne de recherche sont récupérées et affichées sous la forme d’un  déroulant. Parcourez les résultats de la recherche et cliquez sur la variable à insérer à l’emplacement du curseur. Appuyez sur Echap pour masquer les résultats de la recherche.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
@@ -216,9 +216,9 @@ Pour mettre en surbrillance\en évidence des parties de texte dans un fragment d
 
 ![textbackgroundcolorused-1](assets/textbackgroundcolorapplied-1.png)
 
-You can either directly tap a basic color **[A]** present in the Basic Colors palette or tap **Select** after using the slider **[B]** to choose the appropriate shade of the color.
+You can either directly tap a basic color `**[A]**` present in the Basic Colors palette or tap **Select** after using the slider `**[B]**` to choose the appropriate shade of the color.
 
-Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation **[C]** to create the precise color and then tap Select **[D]** to apply the color to highlight the text.
+Optionally, you can also go to the Advanced tab to select the appropriate Hue, Lightness, and Saturation `**[C]**` to create the precise color and then tap Select `**[D]**` to apply the color to highlight the text.
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
@@ -252,7 +252,7 @@ L’éditeur de texte offre une prise en charge intégrée de 210 caractères s
 
 ## Recherche et remplacement de texte {#searching}
 
-Lorsque vous travaillez avec des fragments de document texte contenant une grande quantité de texte, vous devez rechercher une chaîne de texte spécifique. Vous devrez peut-être également remplacer une chaîne de texte spécifique par une autre chaîne.
+Lorsque vous travaillez avec des fragments de de texte contenant une grande quantité de texte, vous devez rechercher une chaîne de texte spécifique. Vous devrez peut-être également remplacer une chaîne de texte spécifique par une autre chaîne.
 
 La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) n’importe quelle chaîne de caractères dans un fragment de document de texte. La fonction comprend également une recherche d’expression régulière puissante.
 
