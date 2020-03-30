@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -43,7 +43,7 @@ La commande keytool se situe généralement dans le répertoire Java jre/bin et 
    <td>
     <ul>
      <li><p>Fichier de stockage des clés d'identité personnalisée : <code>ads-credentials</code></p></li>
-     <li><p>Fichier de stockage des clés d’approbation personnalisée : <code>bedrock</code></p></li>
+     <li><p>Fichier de stockage de clés d’approbation personnalisée : <code>bedrock</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -156,14 +156,14 @@ Pour plus d’informations sur l’utilisation de la commande keytool, consultez
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-The Custom Trust keystore file named ‘‘ads-ca.jks’’ is created in the [appserverdomain]/adobe/[server] directory.
+The Custom Trust keystore file named ‘‘ads-ca.jks’’ is created in the [appserverdomain]/adobe/&#39;server&#39; directory.
 
 Configurez WebLogic pour qu’il utilise les fichiers de stockage des clés d’identité et d’approbation personnalisées que vous avez créés. Désactivez également la fonction de vérification du nom d’hôte de WebLogic car le nom unique utilisé pour créer les fichiers de stockage de clés ne comprend pas le nom de l’ordinateur hébergeant WebLogic Server.
 
 ## Configuration de WebLogic pour l’utilisation de SSL {#configure-weblogic-to-use-ssl}
 
 1. Start the WebLogic Server administration console by typing `https://`*[host name ]*`:7001/console`in the URL line of a web browser.
-1. Under Environment, in Domain Configurations, select **Servers >[server]> Configuration > General**.
+1. Under Environment, in Domain Configurations, select **Servers > &#39;server&#39; > Configuration > General**.
 1. Sous General, dans Configuration, assurez-vous que les options **Listen Port Enabled** et **SSL Listen Port Enabled** sont sélectionnées. Si elles ne sont pas activées, effectuez les opérations suivantes :
 
    1. Sous Change Center, cliquez sur **Lock &amp; Edit** pour modifier les sélections et leurs valeurs.
@@ -185,7 +185,7 @@ Configurez WebLogic pour qu’il utilise les fichiers de stockage des clés d’
 
 1. Sous Trust, spécifiez les valeurs suivantes :
 
-   **Nom** du fichier de stockage de clés d&#39;approbation personnalisée : `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, où `*[appserverdomain]*` est le chemin réel
+   **Nom** du fichier de stockage de clés d&#39;approbation personnalisée : `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, où `*[appserverdomain]*` est le chemin réel
 
    **Custom Trust Keystore Type** : JKS
 
