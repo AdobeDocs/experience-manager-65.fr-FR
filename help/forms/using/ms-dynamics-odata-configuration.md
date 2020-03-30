@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
 
 ![intégration des données](assets/data-integeration.png)
 
-Microsoft Dynamics est un logiciel de gestion de la relation client (CRM, Customer Relationship Management) et de planification des ressources de l’entreprise (ERP, Enterprise Resource Planning) qui fournit des solutions d’entreprise pour la création et la gestion de comptes clients, de contacts, de prospects, d’opportunités et de dossiers. [L’intégration de données d’AEM Forms](../../forms/using/data-integration.md) fournit une configuration de service cloud OData pour intégrer Forms aux serveurs Microsoft Dynamics en ligne et sur site. Elle vous permet de créer un modèle de données de formulaire basé sur des entités, des attributs et des services définis dans le service Microsoft Dynamics. Le modèle de données de formulaire peut être utilisé pour créer des formulaires adaptatifs qui interagissent avec le serveur Microsoft Dynamics pour activer les processus d’entreprise. Par exemple :
+Microsoft Dynamics est un logiciel de gestion de la relation client (CRM, Customer Relationship Management) et de planification des ressources de l’entreprise (ERP, Enterprise Resource Planning) qui fournit des solutions d’entreprise pour la création et la gestion de comptes clients, de contacts, de prospects, d’opportunités et de dossiers. [L’intégration de données d’AEM Forms](../../forms/using/data-integration.md) fournit une configuration de service cloud OData pour intégrer Forms aux serveurs Microsoft Dynamics en ligne et sur site. Elle vous permet de créer un modèle de données de formulaire basé sur des entités, des attributs et des services définis dans le service Microsoft Dynamics. Le modèle de données de formulaire peut être utilisé pour créer des formulaires adaptatifs qui interagissent avec le serveur Microsoft Dynamics pour activer les  d’entreprise. Par exemple :
 
-* Requête du serveur Microsoft Dynamics pour les données et préremplissage des formulaires adaptatifs
+* du serveur Microsoft Dynamics pour les données et préremplissage des formulaires adaptatifs
 * Ecrire des données dans Microsoft Dynamics lors de l’envoi du formulaire adaptatif
 * Ecrire des données dans Microsoft Dynamics via des entités personnalisées définies dans le modèle de données de formulaire et vice versa
 
@@ -43,7 +43,7 @@ Avant de commencer à installer et configurer Microsoft Dynamics, vérifiez que
    * Microsoft Dynamics 365 sur site
    * Microsoft Dynamics 2016 sur site
 
-* [Enregistrement de l&#39;application pour le service en ligne Microsoft Dynamics avec Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Prenez note des valeurs de l’ID client (également appelé ID d’application) et du secret client pour le service enregistré. Ces valeurs sont utilisées lors de l’utilisation de la [configuration du service cloud pour votre service Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Enregistrement de l&#39;application pour le service en ligne Microsoft Dynamics avec Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Prenez note des valeurs de l’ID client (également appelé  du client) et du secret client pour le service enregistré. Ces valeurs sont utilisées lors de l’utilisation de la [configuration du service cloud pour votre service Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Définition de l’URL de réponse pour l’application Microsoft Dynamics enregistrée {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -55,7 +55,7 @@ Procédez comme suit pour définir l’URL de réponse de l’application Micros
 
 1. Go to Microsoft Azure Active Directory account and add the following cloud service configuration URL in **Reply URLs** settings for your registered application:
 
-   `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+   `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
    ![Répertoire Azure](assets/azure_directory_new.png)
 
@@ -97,7 +97,7 @@ Procédez comme suit pour enregistrer un client OAuth sur la machine Active Dir
 
    * `Client-ID` est un ID client que vous pouvez générer à l’aide de n’importe quel générateur de GUID.
    * `redirect-uri` est l’URL du service cloud OData de Microsoft Dynamics dans AEM Forms. Le service cloud par défaut installé avec le package AEM Forms est déployé à l’adresse URL suivante :
-      `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Exécutez la commande suivante pour octroyer l’accès sur la machine AD FS :
 
@@ -134,13 +134,13 @@ Le service cloud OData MS Dynamics (Service OData) est configuré et connecté 
 
 ## Création d’un modèle de données de formulaire {#create-form-data-model}
 
-When you install the AEM Forms package, a form data model,**Microsoft Dynamics FDM**, is deployed on your AEM instance. Par défaut, le modèle de données de formulaire utilise le service Microsoft Dynamics configuré dans le service Cloud MS Dynamics OData (service OData) comme source de données.
+When you install the AEM Forms package, a form data model,**Microsoft Dynamics FDM**, is deployed on your AEM instance. Par défaut, le modèle de données de formulaire utilise le service Microsoft Dynamics configuré dans le service MS Dynamics OData Cloud Service (service OData) comme source de données.
 
 Lorsque vous ouvrez le modèle de données de formulaire pour la première fois, il se connecte au service Microsoft Dynamics configuré et récupère les entités de votre instance Microsoft Dynamics. Les entités « Contact » et « Prospect » de Microsoft Dynamics sont déjà ajoutées au modèle de données de formulaire.
 
 Pour vérifier le modèle de données de formulaire, accédez à **[!UICONTROL Formulaires > Intégrations de données]**. Sélectionnez **Microsoft Dynamics FDM** et cliquez sur **Modifier** pour ouvrir le modèle de données de formulaire en mode édition. Vous pouvez également ouvrir le modèle de données de formulaire directement à partir de l’URL suivante :
 
-`https://[server]:[port]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+`https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 ![default-fdm-1](assets/default-fdm-1.png)
 
