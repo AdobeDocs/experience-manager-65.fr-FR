@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -94,7 +94,7 @@ Avant d’utiliser cet article pour créer vos cas de test, vous devez savoir ce
 
 L’exemple suivant vous guide dans la création d’une suite de tests pour tester plusieurs formulaires adaptatifs. Vous devez créer un cas de test distinct pour chaque formulaire que vous souhaitez tester. En effectuant des étapes similaires à celles ci-dessous et en modifiant le code JavaScript à l’étape 11, vous pouvez créer votre propre suite de tests pour tester vos formulaires adaptatifs.
 
-1. Go to CRXDE Lite in your web browser: `https://[server]:[port]/crx/de`.
+1. Go to CRXDE Lite in your web browser: `https://'[server]:[port]'/crx/de`.
 1. Cliquez avec le bouton droit sur le sous-dossier /etc/clientlibs et sélectionnez **Créer** > **Créer un nœud**. Saisissez un nom (ici afTestRegistration), spécifiez le type de nœud en tant que cq:ClientLibraryFolder, puis cliquez sur **OK**.
 
    Le dossier clientlibs contient l’aspect enregistrement de votre application (JS et Init). Il est recommandé d’enregistrer tous les objets de suites de tests Hobbes spécifiques à un formulaire dans le dossier clientlibs.
@@ -160,7 +160,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
    * Nom : testForm (le nom de votre formulaire)
    * Type : cq:ClientLibraryFolder
 
-1. Ajoutez les propriétés suivantes au noeud nouvellement créé (ici testForm) pour tester un formulaire adaptatif :
+1. Ajouter les propriétés suivantes au noeud nouvellement créé (ici testForm) pour tester un formulaire adaptatif :
 
    | **Propriété** | **Type** | **Valeur** |
    |---|---|---|
@@ -313,7 +313,7 @@ Les étapes de test de vos formulaires adaptatifs AEM sont similaires aux étape
 <table>
  <tbody>
   <tr>
-   <td><strong>Term</strong></td>
+   <td><strong>Terme</strong></td>
    <td><strong>Description</strong></td>
   </tr>
   <tr>
@@ -325,7 +325,7 @@ Les étapes de test de vos formulaires adaptatifs AEM sont similaires aux étape
    <td><p>Un cas de test représente une tâche effectuée par un utilisateur à l’aide de votre interface utilisateur. Ajoutez des cas de test à votre suite de tests pour tester les activités effectuées par les utilisateurs.</p> </td>
   </tr>
   <tr>
-   <td><p>Actions</p> </td>
+   <td><p>Actions  </p> </td>
    <td><p>Les actions sont des méthodes qui effectuent un geste dans l’interface utilisateur, par exemple en cliquant sur un bouton ou en remplissant une zone de saisie avec une valeur.</p> <p>Les méthodes des classes hobs.actions.Asserts, hobs.actions.Core et hobs.utils.af sont des actions que vous pouvez utiliser dans vos tests. Toutes les actions sont exécutées de manière synchronisée.</p> </td>
   </tr>
   <tr>
