@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -52,13 +52,13 @@ Lorsque vous ouvrez un modèle à des fins d’édition, vous pouvez voir les co
    * **Activer/désactiver le panneau latéral** : permet d’afficher ou de masquer la barre latérale.
    * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication, les vignettes, les bibliothèques côté client, la stratégie de page et la bibliothèque côté client de conceptions de pages.
    * **Émulateur** : permet de simuler et de personnaliser l’aspect des différents dispositifs.
-   * **** Sélecteur de calque : Permet de modifier le calque.
+   * **Sélecteur de calque :** Permet de modifier le calque.
 Vous pouvez choisir le calque **Structure** ou le calque **Contenu initial**. Le calque Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le calque Contenu initial vous permet de personnaliser le contenu du formulaire.
 
-   * **** Aperçu : Permet de prévisualiser le modèle au moment de sa publication. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
+   * **:** Vous permet de  l’aspect du modèle lorsque vous le publiez. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
 
 * **Barre latérale :** fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
-* **** Barre d’outils du composant : Lorsque vous sélectionnez un composant, une barre d’outils s’affiche pour vous permettre de le personnaliser.
+* **Barre d’outils du composant :** Lorsque vous sélectionnez un composant, une barre d’outils s’affiche pour vous permettre de le personnaliser.
 * **Page** : la zone dans laquelle vous ajoutez le contenu pour créer le modèle.
 
 Voir [Présentation de la création de formulaires adaptatifs](../../forms/using/introduction-forms-authoring.md) pour découvrir l’éditeur d’interface utilisateur tactile.
@@ -80,7 +80,7 @@ Lorsque vous sélectionnez le calque de structure dans l’éditeur de modèles,
 
 Conteneurs de dispositions dans le calque de structure
 
-******A. Conteneur de mise en page pour le composant d’en-tête** B. Conteneur de mise en page pour le composant Pied de page
+**A.** de mise en page pour le composant d’en-tête **B.** de mise en page pour le composant Pied de page
 
 Faites glisser et déposez le composant d’en-tête de formulaire adaptatif dans le conteneur de dispositions au-dessus du conteneur de formulaires adaptatifs. Une fois que vous avez ajouté le composant, vous pouvez spécifier les propriétés qui vous permettent d’ajouter un logo et d’indiquer un titre.
 
@@ -117,7 +117,7 @@ Voir [Barre latérale](../../forms/using/introduction-forms-authoring.md#sidebar
 
 >[!NOTE]
 >
->Lorsque vous sélectionnez Stocker le contenu ou StockerPDF comme action d’envoi, vous avez la possibilité de spécifier le chemin de stockage. Si vous spécifiez le chemin dans le modèle, tous les formulaires créés à partir de ce modèle ont le même chemin d’accès. Vous pouvez spécifier le chemin de stockage correct. Vous pouvez également veiller à ce que les auteurs de formulaires le mettent à jour pour empêcher que les données de chaque formulaire soient stockées au même emplacement.
+>Lorsque vous sélectionnez Stocker le contenu ou StockerPDF en tant qu’action d’envoi, vous avez la possibilité de spécifier le   de chemin d’accès. Si vous spécifiez le chemin dans le modèle, tous les formulaires créés à partir de ce modèle ont le même chemin d’accès. Vous pouvez spécifier le chemin de stockage correct. Vous pouvez également veiller à ce que les auteurs de formulaires le mettent à jour pour empêcher que les données de chaque formulaire soient stockées au même emplacement.
 
 #### Création d’un modèle de formulaire adaptatif avec des onglets et des panneaux  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
@@ -179,7 +179,7 @@ Effectuez les étapes suivantes pour afficher et masquer les modèles :
 
    >[!NOTE]
    >
-   >The URL of AEM web console is https://[server]:[port]/system/console/configMgr
+   >The URL of AEM web console is https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Recherchez et ouvrez les paramètres **FormsManagerConfiguration** :
 
