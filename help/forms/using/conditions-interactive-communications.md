@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ Création et modification de fragments de condition à utiliser dans Communicati
 
 ## Présentation {#overview}
 
-La condition est un fragment de document que vous pouvez inclure dans une communication interactive. Les autres fragments de document sont [texte](../../forms/using/texts-interactive-communications.md), liste et fragment de mise en page. Les conditions vous permettent de définir une ou plusieurs ressources contextuelles qui sont incluses dans une communication interactive en fonction des données et règles fournies.
+La condition est un fragment de document que vous pouvez inclure dans une communication interactive. Les autres fragments de document sont [texte](../../forms/using/texts-interactive-communications.md), liste et fragment de mise en page. Les conditions vous permettent de définir une ou plusieurs ressources contextuelles qui sont incluses dans une communication interactive en fonction des données et des règles fournies.
 
 Exemples :
 
@@ -74,7 +74,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    ![createconditionscreenassetsaddannoted](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Rejetez]Le Changement.**Appuyez sur cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.   **[Acceptez]Le Changement.**Appuyez sur cette icône pour accepter les modifications que vous avez apportées à l’actif et à la règle dans la condition.   **[C]Dupliquer La Ressource.**Appuyez sur cette icône pour créer une copie de l’actif avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et l’actif pour l’actif dupliqué. La duplication d’un actif est utile pour créer des règles similaires afin d’afficher des actifs alternatifs basés sur un contexte particulier.   **[D]Afficher l’aperçu.**Appuyez sur cette icône pour afficher un aperçu de l’actif dans la page Créer/Modifier la condition.   **[E]Réorganiser.**Appuyez et maintenez cette icône enfoncée pour glisser-déposer des actifs et les réorganiser dans une condition.
+   **[Rejetez]Le Changement.**Appuyez sur cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.   **[Acceptez]Le Changement.**Appuyez sur cette icône pour accepter les modifications que vous avez apportées à l’actif et à la règle dans la condition.   **[C]Ressource .**Appuyez sur cette icône pour créer une copie de l’actif avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et l’actif pour l’actif dupliqué. La duplication d’un actif est utile pour créer des règles similaires afin d’afficher des actifs alternatifs basés sur un contexte particulier.   **[D]Afficher .**Appuyez sur cette icône pour afficher un aperçu de l’actif dans la page Créer/Modifier la condition.   **Réorganisation &quot;serveur&quot;.** Appuyez et maintenez cette icône enfoncée pour glisser-déposer des actifs et les réorganiser dans une condition.
 
    Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
