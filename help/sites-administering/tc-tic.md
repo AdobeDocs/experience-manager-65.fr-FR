@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 98dd2d3e7445ceda6d96f0dd11b39d8361f1f402
 
 ---
 
@@ -30,6 +30,7 @@ For an overview of the content translation features in AEM, see [Translating Con
 Créez une configuration de cloud qui connecte AEM à votre fournisseur de services de traduction. AEM permet d’établir par défaut une connexion à Microsoft Translator. Pour les autres fournisseurs de services de traduction, téléchargez le module de connecteur à partir du [partage de modules](/help/sites-administering/package-manager.md#package-share).
  Les fournisseurs de services de traduction ci-dessous fournissent une mise en œuvre de la nouvelle API pour les projets de traduction. Liens pour en savoir plus sur l’intégration et le téléchargement à partir du partage de modules :
 
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (partenaire Premier d&#39;Adobe Exchange)
 * [Clay Tablet Technologies](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) (non disponible dans le partage de modules ; contactez directement le fournisseur)
 * [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
 * [Cloudwords](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
@@ -37,7 +38,6 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 * [Lingotek](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
 * Microsoft (Microsoft Translator est préinstallé dans AEM)
 * [Smartling](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [Translations.com](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/globallink-connect-for-adobe-experience-manager.html)
 * [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
 * [SDL TMS](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
 * [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
@@ -74,7 +74,7 @@ Si différentes parties de votre site web impliquent différentes exigences en m
 
 After you configure a translation integration framework, you can [associate it with the pages](/help/sites-administering/tc-prep.md) that use it.
 
-**** Remarque :Pour une présentation des fonctionnalités de traduction de contenu dans AEM, voir [Traduction de contenu pour les sites](/help/sites-administering/translation.md)multilingues.
+**Remarque :** Pour une présentation des fonctionnalités de traduction de contenu dans AEM, voir [Traduction de contenu pour les sites](/help/sites-administering/translation.md)multilingues.
 
 Une configuration unique de la structure contrôle la façon de traduire le contenu d’une page, le contenu d’une communauté et les ressources.
 ![chlimage_1-386](assets/chlimage_1-386.png)
@@ -104,7 +104,7 @@ Les propriétés des sites contrôlent la façon dont le contenu des pages est t
   </tr>
   <tr>
    <td>Catégorie de contenu</td>
-   <td>(Traduction automatique uniquement) Catégorie qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
+   <td>(Traduction automatique uniquement)  qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
   </tr>
   <tr>
    <td>Traduire les balises</td>
@@ -133,8 +133,8 @@ Les propriétés des communautés contrôlent la façon dont le contenu créé p
 | Propriétés | Description |
 |---|---|
 | Fournisseur de traduction | Sélectionnez le fournisseur de traduction pour effectuer la traduction. Le fournisseur pour lequel des configurations de cloud sont créées est répertorié dans la liste. |
-| Catégorie de contenu | Catégorie qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
-| Choisissez Une Langue À Utiliser Comme Magasin De Partage Global |  (Facultatif) En sélectionnant un paramètre régional pour le stockage de l’UGC, les publications de toutes les copies de langue s’affichent dans une seule conversation globale. Par convention, choisissez la langue de [base](/help/communities/sites-console.md#translation) du site Web. Si vous sélectionnez Pas de magasin commun, la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
+| Catégorie de contenu | qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
+| Choisissez Une Langue À Utiliser Comme Magasin De Partage Global | (Facultatif) En sélectionnant un paramètre régional pour le stockage de l’UGC, les publications de toutes les copies de langue s’affichent dans une seule conversation globale. Par convention, choisissez la langue de [base](/help/communities/sites-console.md#translation) du site Web. Si vous sélectionnez Pas de magasin commun, la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
 
@@ -161,7 +161,7 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
   </tr>
   <tr>
    <td>Catégorie de contenu</td>
-   <td>(Traduction automatique uniquement) Catégorie qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
+   <td>(Traduction automatique uniquement)  qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
   </tr>
   <tr>
    <td>Traduire les ressources</td>
