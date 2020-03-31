@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
+source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
 |---|---|
 | Version | 6.5.4.0 |
 | Type | Version du Service Pack |
-| Date  | 5 mars 2020 |
+| Date | 5 mars 2020 |
 | URL de téléchargement | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), distribution [de logiciels (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Eléments inclus dans Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
@@ -94,7 +94,7 @@ Pour une  complète des fonctionnalités, des points saillants clés et des fonc
 
 * Un message d’erreur s’affiche lors de l’affichage des informations de flux de travail à l’aide de la boîte de réception (CQ-4282168).
 
-### Assets {#assets-6540-enhancements}
+### Ressources {#assets-6540-enhancements}
 
 * Le bouton permettant de déclencher le processus sur la page de collecte des ressources est désactivé (NPR-32471).
 
@@ -193,6 +193,13 @@ Pour une  complète des fonctionnalités, des points saillants clés et des fonc
 * Échec de la configuration du cloud  avec l’erreur d’obtention de la demande de mbox (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
+
+* Les utilisateurs du portail de marque ne peuvent pas publier les ressources du dossier de contributions vers AEM Assets lors de la mise à niveau vers les E/S Adobe sur AEM 6.5.4 (CQDOC-15655).
+
+   Ce problème sera corrigé dans le prochain Service Pack AEM 6.5.5.
+
+   Pour un correctif immédiat sur AEM 6.5.4, il est recommandé de [télécharger le correctif](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) et de l’installer sur votre instance d’auteur.
+
 
 * Les valeurs de la liste déroulante des  de métadonnées ne sont pas visibles dans les propriétés des ressources (CQ-4283287).
 
@@ -343,7 +350,7 @@ To use UberJar in a Maven project, refer to the article, [How to use UberJar](/h
 </dependency>
 ```
 
-## Deprecated features {#removed-deprecated-features}
+## Fonctionnalités obsolètes {#removed-deprecated-features}
 
 Cette section les fonctionnalités et fonctionnalités qui ont été marquées comme obsolètes avec AEM 6.5.4.0. Les fonctionnalités qui doivent être supprimées dans une version ultérieure sont d’abord désapprouvées, avec une autre option à utiliser.
 
