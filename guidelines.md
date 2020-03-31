@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 352924b29ba145177482c1ceb0ce3b685c10d363
 translation-type: tm+mt
 
 ---
@@ -17,7 +17,7 @@ Afin d’améliorer continuellement la documentation AEM, la communauté complè
 
 ## Normes de la documentation
 
-Bien que nous apprécions les contributions à notre documentation, toute contribution à la documentation d’AEM, sous la forme d’une requête d’extraction ou d’un problème, doit être conforme à nos normes de contribution et de documentation.
+Bien que nous soyons heureux de recevoir des contributions à notre documentation, toute contribution à la documentation AEM, sous la forme d’une demande d’extraction ou d’un problème, doit être conforme à nos normes de contribution et de documentation.
 
 Les contributions qui ne satisfont pas à ces normes peuvent être rejetées.
 
@@ -25,7 +25,7 @@ Les contributions qui ne satisfont pas à ces normes peuvent être rejetées.
 
 La documentation AEM couvre les cas d’utilisation standard. Les cas d’utilisation au-delà de la portée de l’installation et de l’utilisation standard du produit ne font pas partie de la documentation AEM.
 
-### Nous ne documentons généralement pas les bogues ou leurs solutions.
+### Nous n&#39;avons généralement pas de problèmes  ou leurs solutions.
 
 La documentation AEM couvre les cas d’utilisation standard. Pour cette raison, les bogues, les effets causés par les bogues et les solutions de contournement des bogues ne sont généralement pas documentés.
 
@@ -33,7 +33,7 @@ Les exceptions à cette règle s’appliquent aux notes de mise à jour où des 
 
 ### Les contributions à la documentation ne sont pas destinées à répondre aux questions techniques.
 
-Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les problèmes et les requêtes d’extraction sont destinés uniquement aux *contributions*. Ils ne sont pas censés être utilisés pour répondre à vos questions sur l’utilisation d’AEM ou pour résoudre des problèmes techniques.
+Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les problèmes et les requêtes d’extraction sont destinés uniquement aux *contributions*. Elles ne sont pas destinées à être utilisées pour répondre à vos questions sur l’utilisation d’AEM, la mise en oeuvre de votre projet AEM ou la résolution de problèmes techniques.
 
 Any questions about the usage of AEM or technical errors you may have should be reported through the normal support process via the [Experience Manager Support Portal](https://daycare.day.com/home.html) or discussed in the [Experience Manager community](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html).
 
@@ -43,13 +43,13 @@ Any questions about the usage of AEM or technical errors you may have should be 
 
 Si vous créez un problème pour suggérer des améliorations à la documentation, vous devez inclure des liens vers les pages concernées. Si vous créez un problème à l’aide du lien **Modifier cette page** sur une page de documentation, le problème sera créé automatiquement avec un lien vers la page.
 
-Cela ne s’applique pas aux requêtes d’extraction puisque les requêtes d’extraction incluent les pages affectées par définition.
+Cela ne s’applique pas aux demandes d’extraction, car les demandes d’extraction par nature référencent la ou les pages concernées.
 
 ## Directives relatives à la documentation
 
 Nous demandons que toutes les contributions à notre documentation suivent certaines directives de style.
 
-Suivre ces directives facilite la révision et l’intégration rapide de votre contribution dans notre documentation. Cependant, la non-conformité ou la conformité incomplète à ces consignes ne signifie pas que la contribution sera refusée.
+Suivre ces directives facilite la révision et l’intégration rapide de votre contribution dans notre documentation.
 
 ### Langue et style
 
