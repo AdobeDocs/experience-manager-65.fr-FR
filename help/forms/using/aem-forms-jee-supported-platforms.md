@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6cf69dc86ce70a43e77b00d6b3986fa40ae0a4ec
+source-git-commit: b41060207a1fb522905259a0d33df690d606929d
 
 ---
 
@@ -148,9 +148,8 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Oracle Database 18c </td>
    <td>Référentiel Microkernel</td>
    <td>Pris en charge</td>
-  </tr>
-
-<tr>
+  </tr> 
+   <tr>
    <td>Oracle Database 19c </td>
    <td>Référentiel</td>
    <td>Pris en charge</td>
@@ -519,7 +518,7 @@ Pour la configuration requise supplémentaire, voir :
  </tbody>
 </table>
 
-* Espace disque pour l’installation : 1,7 Go pour Workbench uniquement, 2,7 Go sur un seul lecteur pour une installation complète de Workbench, Designer et des exemples d’assemblage, 400 Mo pour installer les répertoires temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows). si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez allouer un total de 1,5 Go lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
+* Espace disque pour l’installation : 1,7 Go pour Workbench uniquement, 2,7 Go sur un seul lecteur pour une installation complète de Workbench, Designer et des exemples d’assemblage, 400 Mo pour installer les répertoires temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows) . si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez allouer un total de 1,5 Go lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
 
 * Mémoire pour l’exécution de Workbench : 2 Go de mémoire vive.
 * Configuration matérielle requise : Processeur Intel® Pentium® 4 ou AMD équivalent, processeur cadencé à 1 GHz.
