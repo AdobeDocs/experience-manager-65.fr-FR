@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: de formats de fichier pris en charge par les ressources AEM et par les médias dynamiques et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
+source-git-commit: 593c1e1954a1c8e0355ede9889caed05ff72f3f9
 
 ---
 
@@ -20,7 +20,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 |:---:|---|
 | ✓ | Pris en charge |
 | * | Prise en charge avec des fonctionnalités de composant additionnel |
-| - | Non applicable |
+| − | Non applicable |
 
 ## Formats d’image pixellisée pris en charge dans AEM Assets {#supported-raster-image-formats}
 
@@ -35,12 +35,12 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 ## Formats d’image pixellisée pris en charge dans les médias dynamiques (#supported-raster-image-formats-dynamic-media)
 
@@ -51,11 +51,11 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-**¹** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+**‡** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Outre les informations ci-dessus, tenez compte des points suivants :
 
@@ -130,7 +130,7 @@ Les formats de  pris en charge pour les fonctionnalités de gestion des ressourc
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Formats de  pris en charge dans les médias dynamiques (##supported--formats-dynamic-media)
+## Formats de  pris en charge dans les médias dynamiques (#supported--formats-dynamic-media)
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -150,16 +150,16 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 |  | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Transcodage FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
