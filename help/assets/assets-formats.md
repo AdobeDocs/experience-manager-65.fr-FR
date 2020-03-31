@@ -1,14 +1,14 @@
 ---
 title: Formats pris en charge par Assets
-description: Liste des formats de fichiers pris en charge par AEM Assets et fonctions prises en charge pour chaque format.
+description: de formats de fichier pris en charge par les ressources AEM et par les médias dynamiques et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
+source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
 
 ---
 
 
-# Formats pris en charge par Assets {#assets-supported-formats}
+# Formats Ressources pris en charge {#assets-supported-formats}
 
 AEM Assets prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME.
 
@@ -22,9 +22,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | * | Prise en charge avec des fonctionnalités de composant additionnel |
 | - | Non applicable |
 
-## Supported Raster image formats {#supported-raster-image-formats}
-
-Les formats d’image pixellisée pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
+## Formats d’image pixellisée pris en charge dans AEM Assets {#supported-raster-image-formats}
 
 | Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Modification interactive | Écriture différée des métadonnées | Statistiques |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -44,7 +42,7 @@ Les formats d’image pixellisée pris en charge pour les fonctionnalités de ge
 
 **¹** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-Les formats d’image pixellisée pris en charge pour les fonctionnalités de média dynamique sont les suivants :
+## Formats d’image pixellisée pris en charge dans les médias dynamiques (#supported-raster-image-formats-dynamic-media)
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -69,6 +67,22 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 * Concernant les fichiers EPS, l’écriture différée des métadonnées est prise en charge dans PostScript Document Structuring Convention (PS-Adobe) version 3.0 ou supérieure.
 
+## Formats d’image pixellisée non pris en charge dans les médias dynamiques (#unsupported-image-formats-dynamic-media)
+
+Le tableau suivant décrit les sous-types de formats d’image pixellisés *non* pris en charge dans Contenu multimédia dynamique. Le tableau décrit également les méthodes suggérées que vous pouvez utiliser pour détecter ces fichiers.
+
+| Format | Qu’est-ce qui n’est pas pris en charge ? | Méthode de détection suggérée |
+|---|---|---|
+| JPEG | Fichiers dont les trois octets initiaux sont incorrects. | Pour identifier un fichier JPEF, ses trois octets initiaux doivent être `ff d8 ff`. S’il s’agit d’autres éléments, il n’est pas classé au format JPEG.<br>・ Il n&#39;existe aucun outil logiciel qui puisse aider à résoudre ce problème.<br>・ Un petit C++/java qui lit les trois octets initiaux d&#39;un fichier devrait être capable de détecter ces types de fichiers.<br>・ Il serait peut-être préférable de suivre la source de ces fichiers et de regarder l&#39;outil qui génère le fichier. |
+| PNG | Fichiers dont la taille du bloc IDAT est supérieure à 100 Mo. | Vous pouvez détecter ce problème à l’aide de [libpng](http://www.libpng.org/pub/png/libpng.html) dans C++. |
+| PSB |  | Utilisez exiftool si le type de fichier est PSB.<br>Exemple dans un journal ExifTool:<br>1. Type de fichier: `PSB` |
+| PSD | Les fichiers avec un espace colorimétrique autre que CMJN, RVB, Niveaux de gris ou Bitmap ne sont pas pris en charge.<br>Les espaces colorimétriques DuoTone, Lab et Indexé ne sont pas pris en charge. | Utilisez ExifTool si le mode Couleur est Bichromie.<br>Exemple dans un journal ExifTool:<br>1. Mode Couleur : `Duotone` |
+|  | Fichiers dont la fin est brusque. | Adobe n’est pas en mesure de détecter cette condition. En outre, ces fichiers ne peuvent pas être ouverts avec Adobe PhotoShop. Adobe vous conseille d’examiner l’outil utilisé pour créer un tel fichier et de résoudre les problèmes à la source. |
+|  | Fichiers dont la profondeur est supérieure à 16 bits. | Utilisez ExifTool si la profondeur de bit est supérieure à 16.<br>Exemple dans un journal ExifTool:<br>1. Profondeur du bit : `32` |
+|  | Fichier avec espace colorimétrique Lab. | Utilisez exiftool si le mode colorimétrique est Lab.<br>Exemple dans un journal ExifTool:<br>1. Mode Couleur : `Lab` |
+| TIFF | Fichiers contenant des données à virgule flottante. En d’autres termes, un fichier TIFF avec une profondeur de 32 bits n’est pas pris en charge. | Utilisez ExifTool si le type MIME est `image/tiff` et que SampleFormat a `Float` sa valeur. Exemple dans un journal ExifTool:<br>1. Type MIME : Format `image/tiff`<br>d’exemple : `Float #`<br>2. Type MIME : Format `image/tiff`<br>d’exemple : `Float; Float; Float; Float` |
+|  | Fichiers dotés d’un espace colorimétrique Lab. | Utilisez ExifTool si le mode colorimétrique est Lab.<br>Exemple dans un journal ExifTool:<br>1. Mode Couleur : `Lab` |
+
 ## Bibliothèque PDF Rasterizer prise en charge {#supported-pdf-rasterizer-library}
 
 La bibliothèque Adobe PDF Rasterizer génère des miniatures de haute qualité et des aperçus pour les fichiers Adobe Illustrator et PDF de grande taille et riches en contenu. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
@@ -91,7 +105,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
 
-## Formats de document pris en charge {#supported-document-formats}
+## Formats de Ressources pris en charge {#supported-document-formats}
 
 Les formats de  pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
 
@@ -116,7 +130,7 @@ Les formats de  pris en charge pour les fonctionnalités de gestion des ressourc
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-Les formats de  pris en charge pour les fonctionnalités de média dynamique sont les suivants :
+## Formats de  pris en charge dans les médias dynamiques (##supported--formats-dynamic-media)
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -155,7 +169,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Supported input video formats for Dynamic Media Transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Supported input video formats in Dynamic Media for transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extension de fichier vidéo | Conteneur | Codecs vidéo recommandés | Codecs vidéo non pris en charge |
 |---|---|---|---|
@@ -180,7 +194,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 Les formats d’archives pris en charge et l’applicabilité des flux de travail DAM courants sont traités dans le tableau suivant.
 
-| Formats | Stockage | Création de versions | Processus | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Formats | Stockage | Création de versions | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -192,7 +206,7 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques habituelle, telle que  la gestion des , des versions, des listes de contrôle d’accès, des flux de travaux, de la publication et des métadonnées, à l’exception des de médias dynamiques, est prise en charge pour tous les fichiers.
 
-| Formats | Stockage | Création de versions | Processus | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Formats | Stockage | Création de versions | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -200,7 +214,7 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (lorsque configuré avec son propre domaine de diffusion) |  |  |  |  |  | ✓ |
 
-## Types MIME pris en charge {#supported-mime-types}
+## Pris en charge Types MIME {#supported-mime-types}
 
 Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. AEM peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
 
