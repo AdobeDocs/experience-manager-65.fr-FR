@@ -3,14 +3,14 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
 
 ---
 
 
 # Utilisation des ressources connectées pour partager des ressources DAM dans AEM Sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Les raisons peuvent être : des instances géographiquement dispersées nécessaires pour travailler en tandem ; des acquisitions entraînant une infrastructure hétérogène que la société mère souhaite consolider ; une croissance entraînant la nécessité d’une instance dédiée pour la gestion des ressources.
+Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Il est possible de répartir géographiquement les déploiements existants qui sont nécessaires pour travailler en tandem ou les acquisitions menant à une infrastructure hétérogène que le parent  vouloir utiliser ensemble.
 
 AEM Sites offre des fonctionnalités pour créer des pages web. AEM Assets est le système de gestion des actifs numériques (DAM) qui fournit les ressources requises pour les sites web. AEM prend désormais en charge le cas d’utilisation ci-dessus en intégrant AEM Sites et AEM Assets.
 
@@ -27,7 +27,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 * utilisateurs faisant partie de groupes d’utilisateurs appropriés sur chaque déploiement.
 * Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. Les ressources AEM 6.5 fonctionnent avec AEM en tant que service Cloud. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans AEM en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)Cloud.
 
-   |  | AEM Sites as a Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
+   |  | AEM Sites as a Cloud Service | Sites AEM 6.5 sur AMS | Sites AEM 6.5 sur site |
    |---|---|---|---|
    | **AEM Assets as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
    | **Ressources AEM 6.5 sur AMS** | Pris en charge | Pris en charge | Pris en charge |
