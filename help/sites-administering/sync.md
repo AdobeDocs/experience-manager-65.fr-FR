@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
+source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
 
 ---
 
@@ -86,7 +86,7 @@ Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et
    * connectez-vous avec des autorisations d’administrateur
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * par exemple, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
    * localiser `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * select the existing configuration to open for edit (pencil icon)
@@ -164,12 +164,12 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
    * connectez-vous avec des autorisations d’administrateur
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * par exemple, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
    * localiser `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
    * select the existing configuration to open for edit (pencil icon)
 Verify `property name`: **`socialpubsync-publishUser`**
 
-   * définissez le nom d’utilisateur et le mot de passe de l’[utilisateur autorisé](#createauthorizeduser) créé en mode de publication à l’étape 2
+   * définissez le nom d’utilisateur et le mot de passe de l’[utilisateur autorisé](#createauthuser) créé en mode de publication à l’étape 2
 
       * par exemple, `usersync-admin`
 
@@ -185,7 +185,7 @@ Verify `property name`: **`socialpubsync-publishUser`**
    * connectez-vous avec des autorisations d’administrateur
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
-      * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
    * localiser `Apache Sling Distribution Agent - Queue Agents Factory`
 
       * select the existing configuration to open for edit (pencil icon)
@@ -208,7 +208,7 @@ Verify `Name`: `socialpubsync-reverse`
    * connectez-vous avec des autorisations d’administrateur
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
-      * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
    * localiser **`Adobe Social Sync - Diff Observer Factory`**
 
       * sélectionnez la configuration existante à ouvrir pour modification (icône de crayon)
@@ -232,7 +232,7 @@ Par défaut, l’auteur interroge les modifications toutes les 30 secondes. Pou
    * connectez-vous avec des autorisations d’administrateur
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * par exemple, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
    * localiser `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
       * sélectionnez la configuration existante à ouvrir pour modification (icône de crayon)
@@ -258,7 +258,7 @@ La configuration par défaut couvre une instance de publication unique. Puisque 
    * connectez-vous avec des autorisations d’administrateur
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
-      * for example, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * par exemple, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
    * localiser `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * select the existing configuration to open for edit (pencil icon)
@@ -366,7 +366,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 * pour chaque instance de publication AEM
 * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
-   * for example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+   * par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * localisez la variable `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
@@ -455,7 +455,7 @@ Voici ce qui s’affiche lorsque la synchronisation des utilisateurs n’a pas �
 
 When the diagnostic is run from the author environment, the pass/fail results will include an [INFO] section displaying the list of configured publish instances for confirmation.
 
-La liste comprend une URL de chaque instance de publication allant exécuter les diagnostics de cette instance. The url param `syncUser` is appended to the diagnostics URL with its value set to the *authorized sync user* created in [Step 2](/help/sites-administering/sync.md#2createauthorizeduser).
+La liste comprend une URL de chaque instance de publication allant exécuter les diagnostics de cette instance. The url param `syncUser` is appended to the diagnostics URL with its value set to the *authorized sync user* created in [Step 2](#createauthuser).
 
 **Remarque** : Avant le lancement de l’URL, l’*utilisateur de synchronisation autorisé* doit déjà être connecté à cette instance de publication.
 
@@ -495,7 +495,7 @@ Si les éléments suivants sont visibles dans le journal :
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Then verify that the section [2. Créer un utilisateur]autorisé(/content/docs/en/aem/6-1/administer/security/security/sync.md#2). créer un utilisateur autorisé) a été correctement suivi.
+Then verify that the section [2. Create Authorized User](#createauthuser) was properly followed.
 
 Cette section décrit la création d’un utilisateur autorisé, qui existe sur toutes les instances de publication, et son identification dans la configuration OSGi « Fournisseur secret » en mode de création. Par défaut, l’utilisateur est `admin`.
 
