@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 78133b41e1c99f8f86f4c0d51961287735423fe2
 
 ---
 
@@ -106,7 +106,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
    <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>File</strong>: nt:file node and its nt:resource subnode</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
   </tr>
   <tr>
-   <td>Supprimer<br /> </td>
+   <td>Supprimez<br /> </td>
    <td>Supprime le nœud sélectionné.<br /> </td>
   </tr>
   <tr>
@@ -130,7 +130,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
    <td>Permet d’ajouter des types mixin au type de nœud. Les types mixin sont principalement utilisés pour ajouter des fonctionnalités avancées telles que la gestion des versions, le contrôle d’accès, le référencement et le verrouillage du nœud.</td>
   </tr>
   <tr>
-   <td>Equipe<br /> </td>
+   <td>Équipe<br /> </td>
    <td><p>Menu déroulant permettant d’effectuer des tâches de gestion de versions standard :</p> <p>- <strong>Mise à jour</strong> du référentiel à partir du serveur SVN</p> <p>- <strong>Validation</strong> des modifications locales sur le serveur SVN</p> <p>- Voir <strong>l’état</strong> du nœud actif</p> <p>- Voir <strong>l’état récursif</strong> de la sous-arborescence du nœud actif</p> <p>- <strong>Extraction</strong> d’une copie de travail à partir du serveur SVN</p> <p>- <strong>Exportation</strong> d’un projet à partir du serveur SVN (sans créer de copie de travail)</p> <p>- <strong>Importation</strong> d’un projet du référentiel vers le serveur SVN<br /> </p> <p>Notez que vous devez être connecté en tant qu’utilisateur avec des autorisations suffisantes pour pouvoir exécuter certaines des tâches (en particulier celles qui écrivent dans le référentiel local).<br /> </p> </td>
   </tr>
   <tr>
@@ -171,13 +171,13 @@ La page **Hello World** est basée sur un nœud de contenu qui appelle un script
 
 Les nœuds suivants sont créés :
 
-* `/apps/<project-name>`: le conteneur de l’application.
-* `/apps/<project-name>/components`: le conteneur de composants, contenant l’exemple de fichier html.jsp, utilisé pour générer une page.
+* `/apps/<project-name>`: le de l’application .
+* `/apps/<project-name>/components`: le de composants, contenant l’exemple de fichier html.jsp, utilisé pour générer une page.
 
-* `/apps/<project-name>/src`: conteneur de lots, contenant un exemple de lot de projet.
+* `/apps/<project-name>/src`: le de lots, contenant un exemple de lot de projet.
 
-* `/apps/<project-name>/install`: le conteneur de lots compilés, contenant l’exemple de lot de projet compilé.
-* `/content/<project-name>`: le conteneur de contenu.
+* `/apps/<project-name>/install`: le de lots compilés, contenant l’exemple de lot de projet compilé.
+* `/content/<project-name>`: le de contenu .
 * /etc/modules/&lt;suffixe-java>/&lt;nom-projet>.zip, un module englobant toute l’application et le contenu du projet. Vous pouvez l’utiliser pour reconstruire le projet en vue d’un déploiement ultérieur (par exemple dans d’autres environnements) ou pour collaborer via le partage de modules.
 
 La structure se présente comme suit dans CRXDE Lite avec un projet appelé **myproject** et un suffixe de module Java appelé **mycompany** : 
@@ -191,7 +191,7 @@ La structure se présente comme suit dans CRXDE Lite avec un projet appelé **m
 Pour créer un dossier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. **Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le nouveau dossier, sélectionnez** Créer ...**, puis** Créer un dossier ....
+1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
 
 1. Entrez le **nom** du dossier et cliquez sur **OK**.
 
@@ -252,7 +252,7 @@ Cela crée :
 Pour créer une boîte de dialogue avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. **Dans le volet de navigation, cliquez avec le bouton droit sur le composant dans lequel vous souhaitez créer la boîte de dialogue, sélectionnez** Créer ...**, puis** Créer une boîte de dialogue ....
+1. In the Navigation pane, right-click the component where you want to create the dialog, select **Create ...**, then **Create Dialog ...**.
 
 1. Entrez le **Libellé** et le **Titre**. Cliquez sur **OK**.
 
@@ -321,7 +321,7 @@ Pour créer le bundle Test avec CRXDE Lite :
    * `/apps/myapp/src`
    * `/apps/myapp/install`
 
-1. `/apps/myapp/src`Cliquez avec le bouton droit sur le dossier `Test` qui contiendra le **lot, sélectionnez** Créer ...**, puis** Créer un lot ....
+1. Right-click the folder `/apps/myapp/src` that will contain the `Test` bundle, select **Create ...**, then **Create Bundle ...**.
 
 1. Définissez les propriétés du bundle comme suit : 
 
@@ -345,7 +345,7 @@ Pour créer le bundle Test avec CRXDE Lite :
 
 L’assistant crée les éléments suivants :
 
-* Noeud `com.mycompany.test.TestBundle` de type `nt:folder.` Il s’agit du noeud de conteneur d’assemblage.
+* Noeud `com.mycompany.test.TestBundle` de type `nt:folder.` Il s’agit du noeud de l’d’assemblage .
 
 * Le fichier `com.mycompany.test.TestBundle.bnd`. Il sert de descripteur de déploiement pour votre bundle et se compose d’un ensemble d’en-têtes.
 
@@ -369,17 +369,17 @@ Le tableau suivant répertorie toutes les propriétés du fichier .bnd, leurs va
   <tr>
    <td>Export-Package :</td>
    <td><p>*</p> <p>Remarque : cette valeur doit être adaptée pour refléter la spécificité du lot.</p> </td>
-   <td>L’en-tête Export-Package définit les packages exportés à partir du lot (liste de packages séparés par des virgules). The exported packages constitute the public<br /> view of the bundle.<br /> </td>
+   <td>L’en-tête Export-Package définit les packages exportés à partir du lot (de packages séparés par des virgules). The exported packages constitute the public<br /> view of the bundle.<br /> </td>
   </tr>
   <tr>
    <td>Importer-Package :</td>
    <td><p>*</p> <p>Remarque : cette valeur doit être adaptée pour refléter la spécificité du lot.</p> </td>
-   <td>L’en-tête Import-Package définit les packages importés pour le lot (liste de packages séparés par des virgules).</td>
+   <td>L’en-tête Import-Package définit les packages importés pour le lot (de packages séparés par des virgules).</td>
   </tr>
   <tr>
    <td>Pack privé :</td>
    <td><p>*</p> <p>Remarque : cette valeur doit être adaptée pour refléter la spécificité du lot.</p> </td>
-   <td>L’en-tête Private-Package définit les packages privés pour le lot (liste de packages séparés par des virgules). Les modules privés constituent l’implémentation interne.<br /> </td>
+   <td>L’en-tête Private-Package définit les packages privés pour le lot (de packages séparés par des virgules). Les modules privés constituent l’implémentation interne.<br /> </td>
   </tr>
   <tr>
    <td>Bundle-Name :</td>
@@ -393,7 +393,7 @@ Le tableau suivant répertorie toutes les propriétés du fichier .bnd, leurs va
   </tr>
   <tr>
    <td>Bundle-SymbolicName :</td>
-   <td>com.masociété.test.TestBundle</td>
+   <td>com.mycompany.test.TestBundle</td>
    <td>Spécifie un nom unique non localisable pour le lot</td>
   </tr>
   <tr>
@@ -404,7 +404,7 @@ Le tableau suivant répertorie toutes les propriétés du fichier .bnd, leurs va
   <tr>
    <td>Bundle-Activator :</td>
    <td>com.mycompany.test.Activator</td>
-   <td>Spécifie le nom de la classe d’écouteur facultative à notifier des événements de début et d’arrêt du lot</td>
+   <td>Spécifie le nom de la classe d’écouteur facultative à notifier des  de lot et des d’arrêt </td>
   </tr>
  </tbody>
 </table>
@@ -416,12 +416,12 @@ Pour plus d’informations sur le format bnd, reportez-vous à l’utilitaire [b
 Pour créer la classe Java `HelloWorld` dans le bundle Test :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. `Activator.java`Dans le volet de navigation, cliquez avec le bouton droit sur le noeud contenant le `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java` fichier ( **), sélectionnez** Créer ...**, puis** Créer un fichier ....
+1. In the Navigation pane, right-click the node containing the `Activator.java` file ( `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java`), select **Create ...**, then **Create File ...**.
 
 1. Name the file `HelloWorld.java`. Cliquez sur **OK**.
 
 1. Le fichier `HelloWorld.java` s’ouvre dans le volet de modification.
-1. Ajoutez les lignes suivantes dans `HelloWorld.java`:
+1. Ajouter les lignes suivantes dans `HelloWorld.java`:
 
    ```
      package com.mycompany.test;
