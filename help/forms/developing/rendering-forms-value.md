@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
 
 ---
 
@@ -44,7 +44,7 @@ Les restrictions suivantes s’appliquent lorsqu’une conception de formulaire 
 
 ## Résumé des étapes {#summary-of-steps}
 
-Pour générer un formulaire par valeur, procédez comme suit :
+Pour effectuer le rendu d’un formulaire par valeur, procédez comme suit :
 
 1. Incluez des fichiers de projet.
 1. Créez un objet API Client Forms.
@@ -54,23 +54,23 @@ Pour générer un formulaire par valeur, procédez comme suit :
 
 **Inclure les fichiers de projet**
 
-Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
+Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, assurez-vous d’inclure les fichiers proxy.
 
 **Création d’un objet API du client Forms**
 
 Avant de pouvoir importer par programmation des données dans une API Client de formulaire PDF, vous devez créer un client de service d’intégration de données. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service.
 
-**Référence à la conception de formulaire**
+**Référencer la conception de formulaire**
 
 Lors du rendu d’un formulaire par valeur, vous devez créer un `com.adobe.idp.Document` objet contenant la conception de formulaire à générer. Vous pouvez référencer un fichier XDP existant ou créer dynamiquement une conception de formulaire au moment de l’exécution et remplir un formulaire `com.adobe.idp.Document` avec ces données.
 
 >[!NOTE]
 >
->Cette section et le démarrage rapide correspondant font référence à un fichier XDP existant.
+>Cette section et le rapide correspondant font référence à un fichier XDP existant.
 
 **Générer un formulaire par valeur**
 
-Pour effectuer le rendu d’un formulaire par valeur, transmettez une `com.adobe.idp.Document` instance contenant la conception de formulaire au `inDataDoc` paramètre de la méthode de rendu (peut être l’une des méthodes de rendu de l’ `FormsServiceClient` objet, telles que `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Cette valeur de paramètre est normalement réservée aux données fusionnées avec le formulaire. De même, transmettez une valeur de chaîne vide au `formQuery` paramètre. Normalement, ce paramètre requiert une valeur de chaîne qui spécifie le nom de la conception de formulaire.
+Pour effectuer le rendu d’un formulaire par valeur, transmettez une `com.adobe.idp.Document` instance contenant la conception de formulaire au `inDataDoc` paramètre de la méthode de rendu (il peut s’agir de l’une des méthodes de rendu de l’ `FormsServiceClient` objet, telles que `renderPDFForm`, `(Deprecated) renderHTMLForm`, etc.). Cette valeur de paramètre est normalement réservée aux données fusionnées avec le formulaire. De même, transmettez une valeur de chaîne vide au `formQuery` paramètre. Normalement, ce paramètre requiert une valeur de chaîne qui spécifie le nom de la conception de formulaire.
 
 >[!NOTE]
 >
@@ -90,11 +90,11 @@ Lorsque le service Forms génère un formulaire par valeur, il renvoie un flux d
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrage rapide de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[rapide de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Transmission de documents au service Forms](/help/forms/developing/passing-documents-forms-service.md)
+[Transmission de  au service Forms](/help/forms/developing/passing-documents-forms-service.md)
 
-[Création d&#39;applications Web qui renvoient des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Création de   de qui rend les formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Générer un formulaire par valeur à l’aide de l’API Java {#render-a-form-by-value-using-the-java-api}
 
@@ -109,7 +109,7 @@ Générer un formulaire par valeur à l’aide de l’API Forms (Java) :
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
 
-1. Référence à la conception de formulaire
+1. Référencer la conception de formulaire
 
    * Créez un `java.io.FileInputStream` objet qui représente la conception de formulaire à rendre en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier XDP.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
@@ -138,9 +138,9 @@ Générer un formulaire par valeur à l’aide de l’API Forms (Java) :
 
 **Voir également**
 
-[Rendu des formulaires par valeur](/help/forms/developing/rendering-forms.md#rendering-forms-by-value)
+[Rendu des formulaires par valeur](/help/forms/developing/rendering-forms.md)
 
-[Démarrage rapide (mode SOAP) : Rendu par valeur à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[rapide (mode SOAP) : Rendu par valeur à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -159,10 +159,10 @@ Générer un formulaire par valeur à l’aide de l’API Forms (service Web) :
 
    Créez un `FormsService` objet et définissez des valeurs d’authentification.
 
-1. Référence à la conception de formulaire
+1. Référencer la conception de formulaire
 
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du fichier XDP.
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un document PDF chiffré avec un mot de passe.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un PDF chiffré avec un mot de passe.
    * Créez un tableau d’octets qui stocke le contenu de l’ `java.io.FileInputStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la taille de l’ `java.io.FileInputStream` objet à l’aide de sa `available` méthode.
    * Renseignez le tableau d’octets avec les données de flux en appelant la `java.io.FileInputStream` `read` méthode de l’objet et en transmettant le tableau d’octets.
    * Renseignez l’ `BLOB` objet en appelant sa `setBinaryData` méthode et en transmettant le tableau d’octets.
@@ -176,9 +176,9 @@ Générer un formulaire par valeur à l’aide de l’API Forms (service Web) :
    * Objet `PDFFormRenderSpec` qui stocke les options d’exécution. Il s’agit d’un paramètre facultatif que vous pouvez spécifier `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Objet `URLSpec` contenant des valeurs URI requises par le service Forms.
    * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif que vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
-   * Objet vide `com.adobe.idp.services.holders.BLOBHolder` rempli par la méthode. Elle permet de stocker le formulaire PDF rendu.
-   * Objet vide `javax.xml.rpc.holders.LongHolder` rempli par la méthode. (Cet argument stocke le nombre de pages dans le formulaire.)
-   * Objet vide `javax.xml.rpc.holders.StringHolder` rempli par la méthode. (Cet argument stocke la valeur du paramètre régional.)
+   * Objet vide `com.adobe.idp.services.holders.BLOBHolder` renseigné par la méthode. Elle permet de stocker le formulaire PDF rendu.
+   * Objet vide `javax.xml.rpc.holders.LongHolder` renseigné par la méthode. (Cet argument stocke le nombre de pages dans le formulaire.)
+   * Objet vide `javax.xml.rpc.holders.StringHolder` renseigné par la méthode. (Cet argument stocke la valeur du paramètre régional.)
    * Objet vide `com.adobe.idp.services.holders.FormsResultHolder` qui contiendra les résultats de cette opération.
    La `renderPDFForm` méthode remplit l’ `com.adobe.idp.services.holders.FormsResultHolder` objet transmis en tant que valeur du dernier argument avec un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
 
@@ -189,7 +189,7 @@ Générer un formulaire par valeur à l’aide de l’API Forms (service Web) :
    * Obtenez le type de contenu de l’ `BLOB` objet en appelant sa `getContentType` méthode.
    * Définissez le type de contenu de l’ `javax.servlet.http.HttpServletResponse` objet en appelant sa `setContentType` méthode et en transmettant le type de contenu de l’ `BLOB` objet.
    * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données du formulaire dans le navigateur Web client en appelant la `javax.servlet.http.HttpServletResponse` `getOutputStream` méthode de l’objet.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `BLOB` `getBinaryData` de l’objet. Cette tâche affecte le contenu de l’ `FormsResult` objet au tableau d’octets.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `BLOB` `getBinaryData` de l’objet. Ce affecte le contenu de l’ `FormsResult` objet au tableau d’octets.
    * Appelez la `javax.servlet.http.HttpServletResponse` `write` méthode de l’objet pour envoyer le flux de données du formulaire au navigateur Web client. Transmettez le tableau d’octets à la `write` méthode.
 
 **Voir également**
