@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
+source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 1b664d082f090814903b2802d8accd80eb6b9e5e
 
 Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API de traitement par lots combine les données avec un modèle pour produire une communication interactive. L’API est utile pour la production de masse de communications interactives. Par exemple, factures de téléphone, relevés de carte de crédit pour plusieurs clients.
 
-L’API de traitement par lot accepte les enregistrements (données) au format JSON et à partir d’un modèle de données de formulaire. Le nombre de communications interactives générées est égal aux enregistrements spécifiés dans le fichier JSON d’entrée dans le modèle de données de formulaire configuré. Vous pouvez utiliser l’API pour produire des sorties Impression et Web. L’option IMPRIMER génère un document PDF et l’option WEB produit des données au format JSON pour chaque enregistrement individuel.
+L’API de traitement par lot accepte les enregistrements (données) au format JSON et à partir d’un modèle de données de formulaire. Le nombre de communications interactives générées est égal aux enregistrements spécifiés dans le fichier JSON d’entrée dans le modèle de données de formulaire configuré. Vous pouvez utiliser l’API pour produire des sorties Impression et Web. L’option IMPRIMER produit un  PDF et l’option WEB produit des données au format JSON pour chaque enregistrement individuel.
 
 ## Utilisation de l’API de traitement par lots {#using-the-batch-api}
 
@@ -76,7 +76,7 @@ Vous combinez un enregistrement à un modèle de communication interactif pour p
 
 Pour créer une communication interactive à partir d’enregistrements enregistrés dans un fichier JSON :
 
-1. Créez un dossier [de](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) contrôle et configurez-le pour utiliser l’API par lot :
+1. Créez un dossier [de](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) contrôle et configurez-le pour utiliser l’API de traitement par lot :
    1. Connectez-vous à l’instance d’auteur AEM Forms.
    1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Appuyez sur **[!UICONTROL Nouveau]**.
    1. Indiquez le **[!UICONTROL Nom]** et le **[!UICONTROL chemin d’accès physique]** du dossier. Par exemple, `c:\batchprocessing`.
@@ -88,9 +88,9 @@ Pour créer une communication interactive à partir d’enregistrements enregist
 
       | Propriétés | Type | Description |
       |--- |--- |--- |
-      | templatePath | Chaîne | Spécifiez le chemin du modèle de communication interactif à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
+      | templatePath | Chaîne | Spécifiez le chemin d’accès du modèle de communication interactif à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
       | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin d’un champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ id devient le nom de la communication interactive correspondante. La valeur par défaut est un UUID aléatoire [aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Booléen   | Définissez la valeur sur False. Vous pouvez utiliser le paramètre usePrefillService pour préremplir la communication interactive avec les données extraites du service de préremplissage configuré pour la communication interactive correspondante. Lorsque usePrefillService est défini sur true, les données JSON d’entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. La valeur par défaut est false.  |
+      | usePrefillService | Booléen | Définissez la valeur sur False. Vous pouvez utiliser le paramètre usePrefillService pour préremplir la communication interactive avec les données extraites du service de préremplissage configuré pour la communication interactive correspondante. Lorsque usePrefillService est défini sur true, les données JSON d’entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. La valeur par défaut est false.  |
       | batchType | Chaîne | Définissez la valeur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option de paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US |
 
@@ -98,11 +98,11 @@ Pour créer une communication interactive à partir d’enregistrements enregist
 1. Utilisez le dossier de contrôle pour générer une communication interactive :
    1. Ouvrez le dossier de contrôle. Accédez au dossier input.
    1. Créez un dossier dans le dossier input et importez le fichier JSON dans le dossier nouvellement créé.
-   1. Attendez que le dossier de contrôle traite le fichier. Au démarrage du traitement, le fichier d’entrée et le sous-dossier contenant le fichier sont déplacés dans le dossier d’évaluation.
-   1. Ouvrez le dossier output pour afficher la sortie :
+   1. Attendez que le dossier de contrôle traite le fichier. Lorsque le de traitement , le fichier d’entrée et le sous-dossier contenant le fichier sont déplacés vers le dossier d’évaluation.
+   1. Ouvrez le dossier de sortie pour  la sortie :
       * Lorsque vous spécifiez l’option IMPRESSION dans la configuration du dossier de contrôle, la sortie PDF de la communication interactive est générée.
       * Lorsque vous spécifiez l’option WEB dans la configuration du dossier de contrôle, un fichier JSON par enregistrement est généré. Vous pouvez utiliser le fichier JSON pour [préremplir un modèle](#web-template)Web.
-      * Lorsque vous spécifiez les options IMPRESSION et WEB, les documents PDF et un fichier JSON par enregistrement sont générés.
+      * Lorsque vous spécifiez les options IMPRESSION et WEB, les  PDF et un fichier JSON par enregistrement sont générés.
 
 #### Utiliser les données d’entrée enregistrées dans une source de données externe et accessibles via un modèle de données de formulaire pour produire une communication interactive {#use-fdm-as-data-source}
 
@@ -115,7 +115,7 @@ Vous pouvez combiner des données (enregistrements) enregistrées dans une sourc
    1. Appuyez sur l’icône représentant un crayon pour l’argument du service de lecture afin de lier l’argument à un attribut de requête et de spécifier la valeur de liaison. Elle lie l’argument de service à la valeur d’attribut de liaison ou littérale spécifiée, qui est transmise au service en tant qu’argument pour extraire les détails associés à la valeur spécifiée de la source de données.
 
       <br>
-        Dans cet exemple, l’argument id prend la valeur de l’attribut id du profil utilisateur et la transmet en tant qu’argument au service de lecture. Il lit et renvoie les valeurs des propriétés associées à partir de l’objet de modèle de données employee pour l’ID spécifié. So, if you specify 00250 in the id field in the form, the read service will read details of the employee with 00250 employee id.
+        Dans cet exemple, l’argument id prend la valeur de l’attribut id du utilisateur et la transmet en tant qu’argument au service de lecture. Il lit et renvoie les valeurs des propriétés associées à partir de l’objet de modèle de données employee pour l’ID spécifié. So, if you specify 00250 in the id field in the form, the read service will read details of the employee with 00250 employee id.
         <br>
 
       ![Configurer l’attribut de requête](assets/request-attribute.png)
@@ -150,9 +150,9 @@ Vous pouvez combiner des données (enregistrements) enregistrées dans une sourc
 
       | Propriétés | Type | Description |
       |--- |--- |--- |
-      | templatePath | Chaîne | Spécifiez le chemin du modèle de communication interactif à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
+      | templatePath | Chaîne | Spécifiez le chemin d’accès du modèle de communication interactif à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
       | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin d’un champ d’un enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ id devient le nom de la communication interactive correspondante. La valeur par défaut est un UUID aléatoire [aléatoire](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
-      | usePrefillService | Booléen   | Définissez la valeur sur True. La valeur par défaut est false. Lorsque la valeur est définie sur true, l’API de traitement par lot lit les données du modèle de données de formulaire configuré et les remplit dans la communication interactive. Lorsque usePrefillService est défini sur true, les données JSON d’entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. |
+      | usePrefillService | Booléen | Définissez la valeur sur True. La valeur par défaut est false. Lorsque la valeur est définie sur true, l’API de traitement par lot lit les données du modèle de données de formulaire configuré et les remplit dans la communication interactive. Lorsque usePrefillService est défini sur true, les données JSON d’entrée (pour chaque enregistrement) sont traitées comme des arguments FDM. |
       | batchType | Chaîne | Définissez la valeur PRINT, WEB ou WEB_AND_PRINT. La valeur par défaut est WEB_AND_PRINT. |
       | paramètres régionaux | Chaîne | Spécifiez les paramètres régionaux de la communication interactive de sortie. Le service prêt à l’emploi n’utilise pas l’option de paramètres régionaux, mais vous pouvez créer un service personnalisé pour générer des communications interactives localisées. La valeur par défaut est en_US. |
 
@@ -160,21 +160,21 @@ Vous pouvez combiner des données (enregistrements) enregistrées dans une sourc
 1. Utilisez le dossier de contrôle pour générer une communication interactive :
    1. Ouvrez le dossier de contrôle. Accédez au dossier input.
    1. Créez un dossier dans le dossier input. Placez le fichier JSON créé à l’étape 2 dans le dossier nouvellement créé.
-   1. Attendez que le dossier de contrôle traite le fichier. Au démarrage du traitement, le fichier d’entrée et le sous-dossier contenant le fichier sont déplacés dans le dossier d’évaluation.
-   1. Ouvrez le dossier output pour afficher la sortie :
+   1. Attendez que le dossier de contrôle traite le fichier. Lorsque le de traitement , le fichier d’entrée et le sous-dossier contenant le fichier sont déplacés vers le dossier d’évaluation.
+   1. Ouvrez le dossier de sortie pour  la sortie :
       * Lorsque vous spécifiez l’option IMPRESSION dans la configuration du dossier de contrôle, la sortie PDF de la communication interactive est générée.
       * Lorsque vous spécifiez l’option WEB dans la configuration du dossier de contrôle, un fichier JSON par enregistrement est généré. Vous pouvez utiliser le fichier JSON pour [préremplir un modèle](#web-template)Web.
-      * Lorsque vous spécifiez les options IMPRESSION et WEB, les documents PDF et un fichier JSON par enregistrement sont générés.
+      * Lorsque vous spécifiez les options IMPRESSION et WEB, les  PDF et un fichier JSON par enregistrement sont générés.
 
 ## Appeler l’API lot à l’aide des requêtes REST
 
-Vous pouvez appeler [l’API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) de traitement par lots par le biais de demandes REST (Reporters sans frontières). Il vous permet de fournir un point de fin REST à d’autres utilisateurs pour accéder à l’API et de configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
+Vous pouvez appeler [l’API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) de traitement par lots par le biais de requêtes REST (Reading State Transfer). Il vous permet de fournir un point de fin REST à d’autres utilisateurs pour accéder à l’API et de configurer vos propres méthodes de traitement, de stockage et de personnalisation de la communication interactive. Vous pouvez développer votre propre servlet Java personnalisé pour déployer l’API sur votre instance AEM.
 
 Avant de déployer la servlet Java, assurez-vous que vous disposez d’une communication interactive et que les fichiers de données correspondants sont prêts. Pour créer et déployer la servlet Java, procédez comme suit :
 
 1. Connectez-vous à votre instance AEM et créez une communication interactive. Pour utiliser la communication interactive mentionnée dans l&#39;exemple de code ci-dessous, [cliquez ici](assets/SimpleMediumIC.zip).
 1. [Créez et déployez un projet AEM à l’aide d’Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) sur votre instance AEM.
-1. Ajoutez le SDK client [AEM Forms version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure et la dernière version [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) dans la liste des dépendances du fichier POm de votre projet AEM. Par exemple :
+1. Ajouter SDK client [AEM Forms version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure et dernière version [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) dans le de dépendances du fichier POm de votre projet AEM. Par exemple :
 
    ```XML
        <dependency>
@@ -352,20 +352,20 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
 1. Dans le code ci-dessus, remplacez le chemin d’accès au modèle (setTemplatePath) par le chemin d’accès du modèle et définissez la valeur de l’API setBatchType :
    * Lorsque vous spécifiez l’option IMPRIMER, la sortie PDF pour la communication interactive est générée.
    * Lorsque vous spécifiez l’option WEB, un fichier JSON par enregistrement est généré. Vous pouvez utiliser le fichier JSON pour [préremplir un modèle](#web-template)Web.
-   * Lorsque vous spécifiez les options IMPRESSION et WEB, les documents PDF et un fichier JSON par enregistrement sont générés.
+   * Lorsque vous spécifiez les options IMPRESSION et WEB, les  PDF et un fichier JSON par enregistrement sont générés.
 
 1. [Utilisez maven pour déployer le code mis à jour sur votre instance](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven)AEM.
-1. Appelez l’API de traitement par lot pour générer la communication interactive. L’impression par lot API renvoie un flux de fichiers PDF et .json en fonction du nombre d’enregistrements. Vous pouvez utiliser le fichier JSON pour [préremplir un modèle](#web-template)Web. Si vous utilisez le code ci-dessus, l’API est déployée dans `http://localhost:4502/bin/batchServlet`. Le code imprime et renvoie un flux de fichiers PDF et JSON.
+1. Appelez l’API de traitement par lot pour générer la communication interactive. L’impression par lot API renvoie un flux de fichiers PDF et .json selon le nombre d’enregistrements. Vous pouvez utiliser le fichier JSON pour [préremplir un modèle](#web-template)Web. Si vous utilisez le code ci-dessus, l’API est déployée dans `http://localhost:4502/bin/batchServlet`. Le code imprime et renvoie un flux de fichiers PDF et JSON.
 
 ### Préremplissage d’un modèle Web {#web-template}
 
-Lorsque vous définissez le type de lot pour effectuer le rendu du canal Web, l’API génère un fichier JSON pour chaque enregistrement de données. Vous pouvez utiliser la syntaxe suivante pour fusionner le fichier JSON avec le canal Web correspondant afin de générer une communication interactive :
+Lorsque vous définissez le type de lot pour effectuer le rendu du  du Web, l’API génère un fichier JSON pour chaque enregistrement de données. Vous pouvez utiliser la syntaxe suivante pour fusionner le fichier JSON avec le Web correspondant afin de générer une communication interactive :
 
 **Syntaxe**`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Exemple** Si votre fichier JSON se trouve à l’emplacement `C:\batch\mergedJsonPath.json` et que vous utilisez le modèle de communication interactif ci-dessous : `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Ensuite, l’URL suivante sur le noeud de publication affiche le canal Web de la communication interactive.`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
+Ensuite, l’URL suivante sur le noeud de publication affiche le  Web de la communication interactive.`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 Outre l’enregistrement des données sur le système de fichiers, vous stockez les fichiers JSON dans le référentiel CRX, le système de fichiers, le serveur Web ou vous pouvez accéder aux données via le service de préremplissage OSGI. La syntaxe pour fusionner les données à l’aide de différents protocoles est la suivante :
 
