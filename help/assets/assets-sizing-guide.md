@@ -3,7 +3,7 @@ title: Guide de dimensionnement des ressources
 description: Meilleures pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement des ressources AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
 
 ---
 
@@ -20,7 +20,7 @@ Une erreur courante lors du dimensionnement de l’espace disque requis pour une
 
 La plupart des utilisateurs définissent des rendus personnalisés en plus des rendus prêts à l’emploi. En plus des rendus, AEM Assets permet d’extraire des sous-ressources à partir de types de fichiers courants, tels qu’InDesign et Illustrator.
 
-Enfin, les fonctionnalités de contrôle de version d’AEM stockent les doublons des ressources dans l’historique des versions. Vous pouvez configurer les versions à purger aussi fréquemment que souhaité. Cependant, de nombreux utilisateurs choisissent de conserver des versions dans le système pendant une longue période, ce qui utilise de l’espace de stockage supplémentaire.
+Enfin, les fonctionnalités de contrôle de version d’AEM stockent les  des ressources dans l’historique des versions. Vous pouvez configurer les versions à purger aussi fréquemment que souhaité. Cependant, de nombreux utilisateurs choisissent de conserver des versions dans le système pendant une longue période, ce qui utilise de l’espace de stockage supplémentaire.
 
 Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant de calculer un espace de stockage acceptable afin de stocker les ressources des utilisateurs.
 
@@ -52,9 +52,9 @@ Les exemples de données renseignés dans l’outil montrent à quel point il es
 
 ### Shared datastores {#shared-datastores}
 
-Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée par le biais d’une banque de données de fichiers partagée sur un lecteur connecté au réseau ou d’une banque de données S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication binaire et réduit la bande passante utilisée pour répliquer des fichiers dans des environnements de publication.
+Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée par le biais d’une banque de données de fichiers partagée sur un lecteur connecté au réseau ou d’une banque de données S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication binaire et réduit la bande passante utilisée pour répliquer les ressources afin de publier   de données.
 
-#### Scénarios d’utilisation {#use-cases}
+#### Scénarios d’utilisation    {#use-cases}
 
 La banque de données peut être partagée entre une instance d’auteur principale et de secours afin de réduire le temps nécessaire à la mise à jour de l’instance de secours avec les modifications apportées à l’instance principale. Vous pouvez également partager la banque de données entre les instances d’auteur et de publication afin de réduire le trafic lors de la réplication.
 
@@ -93,7 +93,7 @@ Il est difficile d’obtenir des chiffres de dimensionnement précis pour un mag
 
 Comme les fichiers binaires sont stockés dans la banque de données, chaque fichier binaire occupe de l’espace. La plupart des référentiels ont une taille inférieure à 100 Go. Cependant, il peut y avoir de plus grands référentiels jusqu&#39;à 1 To de taille. En outre, pour effectuer le compactage hors ligne, vous avez besoin de suffisamment d’espace libre sur le volume pour réécrire le référentiel compacté en plus de la version précompactée. En règle générale, il convient d’avoir un disque faisant 1,5 fois la taille attendue pour le référentiel.
 
-Pour le référentiel, utilisez des disques SSD ou des disques dont le niveau IOPS est supérieur à 3 kilo-octets. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
+Pour le référentiel, utilisez des disques SSD ou des disques avec un niveau d&#39;E/S par seconde supérieur à 3 000. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
 
 [Obtenir le fichier](assets/aem_environment_sizingtool.xlsx)
 
@@ -115,7 +115,7 @@ La limite du nombre de fichiers pouvant exister dans une banque de données peut
 
 Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Camera Raw. Toutefois, dans ce cas, le côté le plus long de l’image ne doit pas dépasser 65 000 pixels. En outre, l’image ne doit pas contenir plus de 512 MP (512 x 1 024 x 1 024 pixels). La taille du fichier n’a pas d’importance.
 
-Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge prêt à l’emploi avec un tas spécifique pour AEM, car des facteurs supplémentaires, tels que la taille des pixels, influencent le traitement. Il est possible qu’AEM puisse traiter un fichier de 255 Mo prêt à l’emploi, mais pas une taille de fichier de 18 Mo, car ce dernier comprend un nombre de pixels inhabituellement plus élevé que le premier.
+Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge prêt à l’emploi avec un tas spécifique pour AEM, car d’autres facteurs, tels que la taille des pixels, influencent le traitement. Il est possible qu’AEM puisse traiter un fichier de 255 Mo prêt à l’emploi, mais pas une taille de fichier de 18 Mo, car ce dernier comprend un nombre de pixels inhabituellement plus élevé que le premier.
 
 ## Size of assets {#size-of-assets}
 
