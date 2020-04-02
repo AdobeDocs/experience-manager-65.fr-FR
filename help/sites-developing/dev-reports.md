@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
 
 ---
 
@@ -68,12 +68,12 @@ Pour les rapports standard fournis avec AEM :
    >
    >
 * La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
->* Éléments séparés par| indique une liste d&#39;éléments possibles; par exemple, types ou noms :
+>* Éléments séparés par| indique un  d&#39;éléments possibles; par exemple, types ou noms :
 >
 >  
 Par exemple, `String|String[]` signifie que la propriété peut être Chaîne ou Chaîne[].
 >
->* `[]` représente un tableau ; comme Chaîne[] ou tableau de noeuds comme dans la Définition [de](#query-definition)requête.
+>* `[]` représente un tableau ; comme Chaîne[] ou tableau de noeuds, comme dans la Définition [de](#query-definition).
 >
 >
 Sauf indication contraire, les types par défaut sont les suivants :
@@ -834,7 +834,7 @@ Actuellement, les formateurs de type de données disponibles sont les suivants 
 
    * `duration`
 
-      La durée est la période comprise entre deux dates définies. Par exemple, le début et la fin d’une action de processus qui a duré 1 heure, lancée le 13/02/2011 à 11h23, pour se terminer une heure plus tard, le 13/02/2011 à 12h23.
+      La durée correspond à la période comprise entre deux dates définies. Par exemple, le début et la fin d’une action de processus qui a duré 1 heure, lancée le 13/02/2011 à 11h23, pour se terminer une heure plus tard, le 13/02/2011 à 12h23.
 
       Il convertit une valeur numérique (interprétée en millisecondes) en chaîne de durée ; par exemple, `30000` est formaté comme * `30s`.*
 
@@ -925,7 +925,7 @@ N:definitions
 
    * `filterType`
 
-      Les filtres disponibles sont :
+       disponibles :
 
       * `string`
 
@@ -953,15 +953,15 @@ N:definitions
 
 * `aggregates`
 
-   Définitions agrégées.
+    définitions .
 
    * `text`
 
-      Nom textuel de l’agrégat. Si `text` n’est pas spécifié, la description par défaut de l’agrégat est utilisée ; par exemple, `minimum` est utilisé pour l’agrégat `min`.
+      Nom textuel du  . Si `text` n’est pas spécifié, la description par défaut de l’agrégat est utilisée ; par exemple, `minimum` est utilisé pour l’agrégat `min`.
 
    * `type`
 
-      Type agrégé. Les agrégats disponibles sont les suivants :
+       type . Les agrégats disponibles sont les suivants :
 
       * `count`
 
@@ -1063,12 +1063,12 @@ Pour rendre une colonne générique, procédez comme suit :
     Les propriétés disponibles pour une colonne générique sont les suivantes :
 
    * `jcr:title` - nom de colonne
-   * `definitions/aggregates` - agrégats
+   * `definitions/aggregates` -  
    * `definitions/filters` - filters
    * `definitions/type` - Type de la colonne (doit être défini dans la boîte de dialogue, soit à l’aide d’un sélecteur/d’une zone de liste modifiable, soit d’un champ masqué)
    * `definitions/data/resolver` et `definitions/data/resolverConfig` (mais pas `definitions/data/preprocessing` ou `.../clientFilter`) - le résolveur et la configuration
-   * `definitions/queryBuilder` - la configuration du créateur de requêtes
-   * `defaults/aggregate` - l&#39;agrégat par défaut
+   * `definitions/queryBuilder` - la configuration du créateur de 
+   * `defaults/aggregate` - le  par défaut 
    In the case of a new instance of the generic column on the **User Report** the properties defined with the dialog are persisted under:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
@@ -1224,7 +1224,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
                N:osgireport [sling:Folder]
    ```
 
-1. Définissez votre base de rapport. Par exemple `osgireport[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
+1. Définissez votre base de rapport. Par exemple, `osgireport[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1276,7 +1276,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    * displays both `pie` and `lineseries` charts
    * fournit une boîte de dialogue permettant à l’utilisateur de configurer le rapport.
 
-1. Définissez votre premier composant de colonne (columnbase). Par exemple `bundlecol[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
+1. Définissez votre premier composant de colonne (columnbase). Par exemple, `bundlecol[cq:Component]` sous `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1318,14 +1318,15 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    >
    >Il s’agit des mêmes définitions :
    >
-   >```
+   >
+   ```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
    >
    >Lorsque la fonction renvoie simplement la valeur qu’elle reçoit.
 
-1. Définissez votre conception de rapport. Par exemple `osgireport[cq:Page]` sous `/etc/designs/reports`.
+1. Définissez votre conception de rapport. Par exemple, `osgireport[cq:Page]` sous `/etc/designs/reports`.
 
    ```xml
    N:osgireport [cq:Page]
@@ -1350,7 +1351,7 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
                N:osgireport [cq:Template]
    ```
 
-1. Définissez votre modèle de rapport. Par exemple `osgireport[cq:Template]` sous `/apps/cq/reporting/templates`.
+1. Définissez votre modèle de rapport. Par exemple, `osgireport[cq:Template]` sous `/apps/cq/reporting/templates`.
 
    ```xml
    N:osgireport [cq:Template]
@@ -1389,13 +1390,13 @@ Il est désormais possible de créer une instance de votre nouveau rapport :
    >
    >Puisque cet exemple ne contient pas de colonnes pouvant être groupées, les graphiques ne sont pas disponibles. To see charts, set `groupable` to `true`:
    >
-   >```
+   >
+   ```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
-   >
 
 ## Configuration des services de structure de rapport {#configuring-the-report-framework-services}
 
