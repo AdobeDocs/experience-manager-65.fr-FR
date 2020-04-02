@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
 
 ---
 
@@ -22,19 +22,19 @@ Le service Forms génère des formulaires HTML en réponse à une requête HTTP 
 
 Le service Forms analyse silencieusement le fichier CSS personnalisé. En d’autres termes, le service Forms ne signale pas les erreurs qui peuvent se produire si le fichier CSS personnalisé ne respecte pas les normes CSS. Dans ce cas, le service Forms ignore le style et continue avec les styles restants situés dans le fichier CSS.
 
-La liste suivante indique les styles pris en charge dans un fichier CSS personnalisé :
+Le suivant spécifie les styles pris en charge dans un fichier CSS personnalisé :
 
 * **paires** de type sélecteur de niveau classe : S’il est présent dans un fichier CSS personnalisé, les sélecteurs utilisés dans le formulaire HTML en tant que styles de classe sont utilisés. Les styles de classe inutilisés sont ignorés.
 * **Paires** de type sélecteur de niveau identificateur : Tous les styles d’identificateur sont utilisés s’ils sont utilisés dans le formulaire HTML.
 * **paires** de style de sélecteur de niveau élément : Tous les styles d’élément sont utilisés s’ils sont utilisés dans le formulaire HTML.
-* **Priorité** du style : La priorité de style (importante) est prise en charge et peut être utilisée dans un fichier CSS personnalisé.
+* **Priorité** du style : La priorité de style (importante également) est prise en charge et peut être utilisée dans un fichier CSS personnalisé.
 * **Type** de support : Une ou plusieurs paires de style sélecteur peuvent être encapsulées dans le style @media pour définir le type de média. Le service Forms ne vérifie pas si le type de support spécifié est pris en charge. Le type de support spécifié dans le fichier CSS personnalisé est fusionné dans le formulaire HTML.
 
 Vous pouvez récupérer un exemple de fichier CSS à l’aide de l’application FormsIVS. Téléchargez le formulaire, sélectionnez-le dans la page Conception de formulaire de test, puis cliquez sur GénérerCSS. Il n’est pas nécessaire de définir le type de transformation HTML avant de cliquer sur le bouton. Sélectionnez ensuite Enregistrer. Vous pouvez modifier ce fichier CSS pour répondre aux besoins de votre entreprise.
 
 >[!NOTE]
 >
->Avant de générer un formulaire HTML utilisant un fichier CSS personnalisé, il est important de bien comprendre le rendu des formulaires HTML. (voir [Rendu de formulaires au format HTML](/help/forms/developing/rendering-forms-html.md)).
+>Avant de générer un formulaire HTML qui utilise un fichier CSS personnalisé, il est important de bien comprendre le rendu des formulaires HTML. (voir [Rendu de formulaires au format HTML](/help/forms/developing/rendering-forms-html.md)).
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Vous pouvez récupérer un exemple de fichier CSS à l’aide de l’application
 
 ## Résumé des étapes {#summary-of-steps}
 
-Pour générer un formulaire HTML utilisant un fichier CSS, effectuez les tâches suivantes :
+Pour générer un formulaire HTML utilisant un fichier CSS, effectuez le  suivant :
 
 1. Incluez des fichiers de projet.
 1. Créez un objet API Java Forms.
@@ -80,13 +80,13 @@ Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de donn
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrage rapide de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[rapide de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Rendu de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Rendu des formulaires au format HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Création d&#39;applications Web qui renvoient des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Création de   de qui rend les formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Générer un formulaire HTML utilisant un fichier CSS à l’aide de l’API Java {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
 
@@ -133,7 +133,7 @@ Générer un formulaire HTML utilisant un fichier CSS personnalisé à l’aide 
 
 [Rendu de formulaires HTML à l’aide de fichiers CSS personnalisés](#rendering-html-forms-using-custom-css-files)
 
-[Démarrage rapide (mode SOAP) : Rendu d’un formulaire HTML utilisant un fichier CSS à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
+[rapide (mode SOAP) : Rendu d’un formulaire HTML utilisant un fichier CSS à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -146,7 +146,7 @@ Générer un formulaire HTML qui utilise un fichier CSS personnalisé à l’aid
 1. Inclure les fichiers de projet
 
    * Créez des classes de proxy Java qui utilisent le WSDL du service Forms.
-   * Incluez les classes de proxy Java dans le chemin de classe.
+   * Incluez les classes de proxy Java dans le chemin d’accès de votre classe.
 
 1. Création d’un objet API Java Forms
 
@@ -163,14 +163,14 @@ Générer un formulaire HTML qui utilise un fichier CSS personnalisé à l’aid
 
    * Valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Valeur `TransformTo` enum qui spécifie le type de préférence HTML. Par exemple, pour générer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez-les `null`. (Voir [Préremplissage de formulaires avec des mises en page]à disposition souple (/help/forms/development/render-forms-render-forms prepopulating-forms-fleable-layouts-prepopulating.md#prepopulating-forms-with-fleable-layouts).)
+   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez-les `null`. (Voir [Préremplissage de formulaires avec des mises en page](/help/forms/developing/prepopulating-forms-flowable-layouts.md)à disposition souple.)
    * Objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Valeur de chaîne qui spécifie la valeur d’ `HTTP_USER_AGENT` en-tête, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
    * Objet `URLSpec` qui stocke les valeurs URI requises pour générer un formulaire HTML.
    * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif, que vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
    * Objet vide `com.adobe.idp.services.holders.BLOBHolder` renseigné par la `(Deprecated) renderHTMLForm` méthode. Cette valeur de paramètre stocke le formulaire rendu.
    * Objet vide `com.adobe.idp.services.holders.BLOBHolder` renseigné par la `(Deprecated) renderHTMLForm` méthode. Ce paramètre stocke les données XML de sortie.
-   * Objet vide `javax.xml.rpc.holders.LongHolder` renseigné par la `(Deprecated) renderHTMLForm` méthode. Cet argument enregistre le nombre de pages dans le formulaire.
+   * Objet vide `javax.xml.rpc.holders.LongHolder` renseigné par la `(Deprecated) renderHTMLForm` méthode. Cet argument stocke le nombre de pages dans le formulaire.
    * Objet vide `javax.xml.rpc.holders.StringHolder` renseigné par la `(Deprecated) renderHTMLForm` méthode. Cet argument stocke la valeur du paramètre régional.
    * Objet vide `javax.xml.rpc.holders.StringHolder` renseigné par la `(Deprecated) renderHTMLForm` méthode. Cet argument stocke la valeur de rendu HTML utilisée.
    * Objet vide `com.adobe.idp.services.holders.FormsResultHolder` qui contiendra les résultats de cette opération.
@@ -183,7 +183,7 @@ Générer un formulaire HTML qui utilise un fichier CSS personnalisé à l’aid
    * Obtenez le type de contenu de l’ `BLOB` objet en appelant sa `getContentType` méthode.
    * Définissez le type de contenu de l’ `javax.servlet.http.HttpServletResponse` objet en appelant sa `setContentType` méthode et en transmettant le type de contenu de l’ `BLOB` objet.
    * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données du formulaire dans le navigateur Web client en appelant la `javax.servlet.http.HttpServletResponse` `getOutputStream` méthode de l’objet.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `BLOB` `getBinaryData` de l’objet. Cette tâche affecte le contenu de l’ `FormsResult` objet au tableau d’octets.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `BLOB` `getBinaryData` de l’objet. Ce affecte le contenu de l’ `FormsResult` objet au tableau d’octets.
    * Appelez la `javax.servlet.http.HttpServletResponse` `write` méthode de l’objet pour envoyer le flux de données du formulaire au navigateur Web client. Transmettez le tableau d’octets à la `write` méthode.
 
 **Voir également**
