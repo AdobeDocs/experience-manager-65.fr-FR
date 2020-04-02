@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: a7c2d71798649050f2f7852251996c2edf1cf113
 
 ---
 
@@ -107,12 +107,10 @@ Voir aussi Personnalisations côté [client](/help/communities/client-customize.
 Par exemple :
 >
 >
-```>
+```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
 
 ### Site de la communauté {#community-site}
 
