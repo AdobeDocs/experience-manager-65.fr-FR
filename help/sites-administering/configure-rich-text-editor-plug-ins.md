@@ -8,7 +8,7 @@ discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 mini-toc-levels: 1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ac4c5ec920ed768002da1b4598590bfd9ca301f6
+source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
 
 ---
 
@@ -69,7 +69,9 @@ After activating a plug-in, follow these guidelines to configure the `features` 
 
 ## Compréhension du module externe findreplace {#findreplace}
 
-The `findreplace` plug-in does not need any configuration. Il fonctionne comme prévu, prêt à l’emploi.
+The `findreplace` plug-in does not need any configuration. Ça marche de la boîte.
+
+Lors de l’utilisation de la fonctionnalité de remplacement, la chaîne de remplacement à remplacer doit être saisie en même temps que la chaîne de recherche. Cependant, vous pouvez toujours cliquer sur Rechercher pour rechercher la chaîne avant de la remplacer. Si la chaîne de remplacement est saisie après avoir cliqué sur Rechercher, la recherche est réinitialisée au début du texte.
 
 La boîte de dialogue de recherche et de remplacement devient transparente lorsque l’utilisateur clique sur Rechercher et devient opaque lorsque l’utilisateur clique sur Remplacer. Cela permet à l’auteur de vérifier le texte qui sera remplacé. Si les utilisateurs cliquent sur Tout remplacer, la boîte de dialogue se ferme et affiche le nombre de remplacements effectués.
 
