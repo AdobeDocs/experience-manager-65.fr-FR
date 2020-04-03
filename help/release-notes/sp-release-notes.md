@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
+source-git-commit: a83def358e026b516add577f968dcc709357e458
 
 ---
 
@@ -131,8 +131,6 @@ Pour une  complète des fonctionnalités, des points saillants clés et des fonc
 * La recherche tactile dans l&#39;interface utilisateur (effectuée par l&#39;intermédiaire d&#39;Omnisearch) fait défiler automatiquement la page de résultats vers le haut et perd la position de défilement de l&#39;utilisateur (NPR-31307).
 
 * La page des détails des ressources des fichiers PDF n’affiche pas les boutons d’action, à l’exception des boutons A la collection et Ajouter Rendu dans Experience Manager s’exécutant sur le mode d’exécution Contenu multimédia dynamique Scene7 (CQ-4286705).
-
-* Les fichiers de plus de 2 Go peuvent désormais être téléchargés dans Dynamic Media-Scene7 (CQ-4286561).
 
 * Le traitement des fichiers prend trop de temps lors du processus de téléchargement par lot de Scene7 (CQ-4286445).
 
