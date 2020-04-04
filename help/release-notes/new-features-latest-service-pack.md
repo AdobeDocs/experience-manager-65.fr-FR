@@ -4,16 +4,18 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
+source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
 
 ---
 
 
 # Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 offre des fonctionnalités et des améliorations continues au moyen de Service Packs trimestriels. L&#39;approche vous est bénéfique, car les innovations deviennent plus faciles à adopter.
+Adobe Experience Manager (6.5) vous permet d’accéder aux nouvelles fonctionnalités et aux améliorations continues au moyen des versions trimestrielles du Service Pack. En utilisant cette approche, vous adoptez facilement les innovations.
 
-AEM Service Pack 4 (6.5.4.0) est sorti le 5 **mars 2020**. Cet article met en évidence les fonctionnalités clés que les Service Packs 6.5  le  pour rendre votre voyage AEM plus enrichissant.
+Experience Manager Service Pack 4 (6.5.4.0) est sorti le 5 mars 2020. Il s’agit d’une mise à jour importante qui comprend de nouvelles fonctionnalités, des améliorations clés demandées par le client, ainsi que des performances, de la stabilité et des améliorations de sécurité, publiées depuis la version 6.5 d’avril 2019. Experience Manager 6.5.4.0 peut être installé par-dessus Adobe Experience Manager 6.5.
+
+Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et certaines versions [clés depuis Experience Manager 6.5.3.0](#key-features-sice-sp3).
 
 ## AEM Sites {#aem-sites}
 
@@ -31,7 +33,7 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 
 * Amélioration de la gestion des URL incomplètes ou incorrectes. De telles URL peuvent ralentir l’éditeur de modèles.
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 ### Configuration d’AEM Assets avec Brand Portal {#configure-assets-bp}
 
@@ -94,11 +96,11 @@ Experience Manager Forms comprend les améliorations d’accessibilité suivante
 
 * Chaque page d’un formulaire adaptatif comprend désormais un titre et un libellé de repère principal.
 
-## Principales fonctionnalités des Service Packs version 6.5 d’AEM
+## Principales fonctionnalités des Service Packs version 6.5 d’AEM {#key-features-previous-service-packs}
 
 ### Smart Imaging for Dynamic Media (6.5.3.0) {#smart-imaging}
 
-L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images adaptées optimisées pour leur expérience, ce qui améliore les performances et l’engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
+L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images adaptées optimisées pour leur expérience, ce qui améliore les performances et l’engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
 
 ### Recherche visuelle pour AEM Assets (6.5.2.0) {#visual-search}
 
@@ -117,7 +119,7 @@ Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et u
 
 Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API de traitement par lots combine les données avec un modèle pour produire une communication interactive. L’API est utile pour la production de masse de communications interactives. Par exemple, factures de téléphone, relevés de carte de crédit pour plusieurs clients. Voir [Générer plusieurs communications interactives à l’aide de l’API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)par lot.
 
-## Principales versions depuis AEM 6.5 SP3
+## Principales versions depuis AEM 6.5 SP3 {#key-features-sice-sp3}
 
 Entre le 12 décembre 2019 et le 5 mars 2020, Adobe a publié les fonctionnalités suivantes, qui ne font pas partie du livrable principal d’AEM :
 
