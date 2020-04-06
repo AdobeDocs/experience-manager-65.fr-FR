@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0e95ac8850a693764b82a29960b472d156dac535
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -40,7 +40,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Mise à jour de la version de jQuery intégrée dans ContextHub vers la version 3.4.1.
 
-### Assets {#assets-6530-enhancements}
+### Ressources {#assets-6530-enhancements}
 
 **Améliorations apportées au produit**
 
@@ -92,13 +92,13 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Le mouvement en masse des ressources échoue et affiche un message d’avertissement (NPR-30610).
 
-* Les noms des fichiers sont changés en minuscules lorsque vous déplacez des fichiers d’un dossier à un autre en [!DNL Experience Manager] mode d’exécution [!DNL Dynamic Media] Scene7 (NPR-31630).
+* Les noms des fichiers sont changés en minuscules lorsque vous déplacez des fichiers d’un dossier à un autre en [!DNL Experience Manager] mode [!DNL Dynamic Media]-Scene7 (NPR-31630).
 
 * Une erreur s’affiche lors de la modification d’un jeu d’images distant, pour l’image résidant dans le dossier portant le même nom que le nom de l’ de Scene7 (NPR-31340).
 
 * [!DNL Dynamic Media] les fichiers contenant des références ne sont pas publiés (NPR-31180).
 
-* Téléchargements depuis [!DNL Experience Manager Dynamic Media] - Le mode d’exécution Scene7 vers Scene7 prend trop de temps (NPR-31048).
+* Les téléchargements du mode [!DNL Dynamic Media]7-Scene7 vers [!DNL Dynamic Media Classic] Scene7 prennent trop de temps (NPR-31048).
 
 * La zone réactive ajoutée à un fichier d’image n’est pas visible par le biais de la visionneuse d’images interactive dans la page des détails du fichier (NPR-30979).
 
@@ -106,9 +106,9 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Un conflit se produit lors de la création d’une copie de langue des fichiers et ceux-ci ne sont pas téléchargés vers Scene7 (NPR-30932).
 
-* Les rendus dynamiques téléchargés depuis l’ [!DNL Experience Manager] exécution en mode [!DNL Dynamic Media] hybride sont rompus (ils sont de type texte avec un contenu &quot;impossible de trouver l’image&quot; au lieu du type de contenu d’image) (NPR-30876).
+* Les rendus dynamiques téléchargés depuis l’ [!DNL Experience Manager] exécution en mode [!DNL Dynamic Media]-hybride sont rompus (ils sont de type texte avec un contenu &quot;impossible de trouver l’image&quot; au lieu du type de contenu d’image) (NPR-30876).
 
-* [!DNL Dynamic Media] Le processus de codage vidéo ne parvient pas à générer la miniature de la vidéo qui est migrée de Scene7 vers [!DNL Dynamic Media] - mode d’exécution Scene7 (CQ-4282011).
+* [!DNL Dynamic Media] Le processus de codage vidéo ne parvient pas à générer la miniature de la vidéo migrée du mode [!DNL Dynamic Media Classic] vers [!DNL Dynamic Media]-Scene7 sur Adobe Experience Manager (CQ-4282011).
 
 * IpsApiException a été observé lors de la migration de fichiers d’une instance vers une autre à l’aide de différents ID de Scene7 (CQ-4280548).
 
@@ -120,7 +120,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les vidéos ne peuvent pas être lues avec SmartCropVideoViewer dans Internet Explorer 11 et Safari (CQ-4281422).
 
-* L’utilisation du bouton de déplacement pour déplacer plusieurs fichiers d’un dossier à un autre échoue lors de l’ [!DNL Experience Manager] exécution en mode [!DNL Dynamic Media] - scene7 runmode (CQ-4280384).
+* L’utilisation du bouton de déplacement pour déplacer plusieurs fichiers d’un dossier à un autre échoue lors de l’ [!DNL Experience Manager] exécution en mode [!DNL Dynamic Media]-exécution Scene7 (CQ-4280384).
 
 * Une vidéo déformée s’affiche sur les détails de la ressource lorsque le type MIME est autre que MP4 (CQ-4279704).
 
@@ -258,7 +258,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * **Le formatage de flux de texte n’est plus pris en charge** lorsque le message d’erreur s’affiche lors de l’enregistrement de lettres en tant que brouillons (NPR-30463).
 
-**Processus**
+**Workflow**
 
 * Le processus OSGi échoue en raison d’une utilisation à 100 % du processeur (NPR-31233).
 
@@ -306,7 +306,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Une correction a été apportée pour assurer que la vue en colonne de l’interface utilisateur Asset affiche uniquement le contenu spécifique au client.
 * Une correction a été apportée pour permettre aux modifications d’accordéon de style de se refléter dans les résultats de la recherche.
 
-### Assets {#assets}
+### Ressources {#assets}
 
 **Améliorations apportées au produit**
 
@@ -336,7 +336,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Le formulaire de schéma de métadonnées de dossier ne détecte pas automatiquement le type de données et ne crée donc pas le TypeHint associé dans l’envoi du formulaire. NPR-30599 : correctif pour CQ-4275227
 * Les options de recadrage et de rotation des fichiers sont désactivées dans l’interface utilisateur de création de DMS7. NPR-30118 : correctif pour CQ-4273221
 * Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492 : Correctif pour CQ-4273651
-* Adding the [!DNL Dynamic Media] Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641 : correctif pour CQ-4275962
+* Adding the [!DNL Dynamic Media]–Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641 : correctif pour CQ-4275962
 * Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490 : correctif pour CQ-4273614
 * [!DNL Dynamic Media]: Ajout d’un par défaut  d’exclure les ressources du noeud de [!DNL Experience Manager] publication. NPR-30538 : correctif pour CQ-4274678
 * Un processus de retraitement externe a été mis en place pour la prise en charge de ressources multiples afin d’autoriser le dossier comme charge utile. Le workflow comporte deux étapes : retraitement des fichiers sans poignées via un mappage de métadonnées à l’étape suivante et retéléchargement de tous les fichiers sans poignée de ressources vers S7 dans une seule tâche IPS. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489 : correctif pour CQ-4272903
@@ -351,7 +351,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Sorting search query by relevance returns [!DNL InDesign] documents along with [!DNL InDesign] templates. Correctif pour CQ-4273864
 * Si l’utilisateur dispose d’un ID de courrier électronique en majuscules, il n’est pas possible d’archiver les fichiers qui ont été précédemment extraits. Correctif pour CQ-4276575
 * L’opération Supprimer s’applique uniquement aux paramètres prédéfinis sélectionnés. Si l’écran actualise automatiquement la liste après l’opération, elle affiche les autres paramètres prédéfinis qui ont déjà été actualisés. Correctif pour CQ-4261461
-* Configuring [!DNL Dynamic Media] Cloud Services in DMHybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Correctif pour CQ-4249780
+* Configuring [!DNL Dynamic Media] Cloud Services in [!DNL Dynamic Media]–Hybrid mode results in multiple empty report suites created in [!DNL Analytics], and with no report suite id stored in [!DNL Experience Manager], resulting in report suite duplication. Correctif pour CQ-4249780
 * Rename operation in [!DNL Experience Manager] asset to duplicated name fails to synchronize to Scene7. Correctif pour CQ-4276763
 * Le contenu créé par l’utilisateur s’affiche incorrectement dans le panneau du filtre de recherche. Correctif pour CQ-4273875
 * L’option Rechercher des images similaires n’est pas disponible pour les images TIFF. Correctif pour CQ-4278238
@@ -494,10 +494,10 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 Les principaux points forts de cette version du Service Pack incluent les éléments suivants :
 
 * Activation de l’inclusion de l’état d’interface utilisateur dynamique dans le suivi des événements en tant qu’attributs personnalisés.
-* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media] Scene 7.
+* Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. Pour plus d’informations, voir [Configuration du renvoi à la ligne de mots japonais](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Assets
+### Ressources
 
 * Mise à jour de l&#39;interface DAM DMGGateway pour la prise en charge multipartie S3. NPR-29740 : correctif pour CQ-4226303
 * Le de rendus génère une `Only empty tenantId is currently supported` erreur après la mise à niveau vers [!DNL Experience Manager] 6.5. NPR-29986: Correctif pour CQ-4272353
@@ -549,7 +549,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les données fournies par l’utilisateur ne sont pas ignorées lors de la sortie dans le composant `cq/replication/components/agent`, ce qui entraîne une vulnérabilité Cross-site scripting (XSS) par stockage. Correctif pour CQ-4266263
 
-### Processus
+### Workflow
 
 * Le champ du sélecteur de calendrier du participant à la boîte de dialogue est rompu. NPR-29727 : correctif pour CQ-4270423
 
@@ -709,7 +709,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 ### Packs de fonctionnalités inclus
 
-#### Ressources - Inclus
+#### Ressources - incluses
 
 * Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199 : correctif pour CQ-4259922
 
