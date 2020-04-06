@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -99,7 +99,7 @@ L’outil **Purge de versions** est disponible dans la console **[Outils](/help/
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Chemin** de début Chemin d&#39;accès absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
+**Chemin** de  Chemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
 
 **Récursif** Lors de la purge de données, vous pouvez choisir entre exécuter l’opération sur un noeud ou sur une hiérarchie entière en sélectionnant Récursif.  Dans ce cas, le chemin donné définit le nœud racine de la hiérarchie. 
 
@@ -107,9 +107,9 @@ L’outil **Purge de versions** est disponible dans la console **[Outils](/help/
 
 **âge** maximal de la version L’âge maximal de la version d’un noeud. Lorsque l’âge d’une version dépasse cette valeur, elle est purgée. 
 
-**Exécution** à sec Comme la suppression des versions de votre contenu est définitive et ne peut pas être annulée sans restauration d’une sauvegarde, l’outil Purger les versions fournit un mode d’exécution à sec qui vous permet de prévisualiser les versions purgées. Pour lancer le mode Exécution d’essai du processus de purge, cliquez sur Exécution d’essai.
+**Exécution** à sec Comme la suppression des versions de votre contenu est définitive et ne peut pas être annulée sans la restauration d’une sauvegarde, l’outil Purger les versions fournit un mode d’exécution à sec qui vous permet de  les versions purgées. Pour lancer le mode Exécution d’essai du processus de purge, cliquez sur Exécution d’essai.
 
-**Purger** Lancez la purge des versions sur le noeud défini par le chemin de démarrage.
+**Purger** Lancez la purge des versions sur le noeud défini par le chemin d’accès  du.
 
 ### Purge des versions d’un site web {#purging-versions-of-a-web-site}
 
@@ -194,12 +194,12 @@ Les actions de modération sont enregistrées ici.
    * `error.log`
 Les messages d’erreur (de différents niveaux de gravité) sont enregistrés ici.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Ce journal n’est utilisé que si Contenu multimédia dynamique est activé. Il fournit des statistiques et des informations analytiques utilisées pour analyser le comportement du processus interne ImageServer.
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Ce journal n&#39;est utilisé que si [!DNL Dynamic Media] est activé. Il fournit des statistiques et des informations d’analyse utilisées pour analyser le comportement du processus interne ImageServer.
 
    * `request.log`
 Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Ce journal n’est utilisé que si Contenu multimédia dynamique est activé. The s7access log records each request made to Dynamic Media through `/is/image` and `/is/content`.
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Ce journal n&#39;est utilisé que si [!DNL Dynamic Media] est activé. The s7access log records each request made to [!DNL Dynamic Media] through `/is/image` and `/is/content`.
 
    * `stderr.log`
 Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. By default the log level is set to `Warning` ( `WARN`)
@@ -216,7 +216,7 @@ Fournit un journal de toutes les opérations de mise à niveau qui s’exécuten
 Révision des informations de journalisation.
 
 >[!NOTE]
-Les journaux ImageServer et s7access ne sont pas inclus dans le **Télécharger le package complet **généré à partir de la **page **system/console/status-Bundlelist. Pour la prise en charge, si vous avez des problèmes avec Dynamic Media, ajoutez également les journaux ImageServer et s7access lorsque vous contactez le service clientèle.
+Les journaux ImageServer et s7access ne sont pas inclus dans le **Télécharger le package complet **généré à partir de la **page **system/console/status-Bundlelist. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
 
 ### Activation du niveau de journalisation DEBUG {#activating-the-debug-log-level}
 
@@ -267,8 +267,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
       Type : Chaîne
 
-      Valeur : spécifiez le fichier journal;
-par exemple, `logs/myLogFile.log`
+      Valeur : spécifiez le fichier journal; par exemple, `logs/myLogFile.log`
 
    * Nom: `org.apache.sling.commons.log.names`
 
@@ -359,33 +358,27 @@ par exemple, `logs/myLogFile.log`
 
          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
    >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
-   >
-   >* une taille maximale de fichier
-   >* une planification heure/date
-   >
-   >pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
-   >
-   >* Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
-   >
-   >La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
-   >
-   >Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
-   >
-   >      | `&#39;.&#39;aaaa-MM`|Rotation au début de chaque mois|
-   >      |---|---|
-   >      | `&#39;.&#39;aaaa-ww`|Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
-   >      | `&#39;.&#39;aaaa-MM-jj`|Rotation à minuit tous les jours. |
-   >      | `&#39;.&#39;aaaa-MM-jj-a`|Rotation à minuit et midi de chaque jour. |
-   >      | `&#39;.&#39;aaaa-MM-jj-HH`|Rotation en haut de chaque heure. |
-   >      | `&#39;.&#39;aaaa-MM-jj-HH-mm`|Rotation au début de chaque minute. |
-   >
-   >      Remarque : Lors de la spécification d’une heure/date :
-   >      1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
-   >      ceci permet d’éviter que certains caractères ne soient interprétés comme des lettres de modèle.
-   >      1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
+   `org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
+   * une taille maximale de fichier
+   * une planification heure/date
+   pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
+   * Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   * Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
+   La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
+   Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
+       | `&#39;.&#39;yyyy-MM` |Rotation at the beginning of each month |
+       |---|---|
+       | `&#39;.&#39;aaaa-ww`|Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
+       | `&#39;.&#39;aaaa-MM-jj`|Rotation à minuit tous les jours. |
+       | `&#39;.&#39;aaaa-MM-jj-a`|Rotation à minuit et midi de chaque jour. |
+       | `&#39;.&#39;aaaa-MM-jj-HH`|Rotation en haut de chaque heure. |
+       | `&#39;.&#39;aaaa-MM-jj-HH-mm`|Rotation au début de chaque minute. |
+       
+       Note: When specifying a time/date:
+       1. You should &quot;escape&quot; literal text within a pair of single quotes (&#39; &#39;);
+       this is to avoid certain characters being interpreted as pattern letters.
+       1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
+   
 
 1. Lisez votre nouveau fichier journal avec l’outil sélectionné.
 
@@ -535,12 +528,12 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Images mémoire de threads</td>
    <td>Observez les threads JVM. Identifiez les contentions, les verrouillages et les exécutions longues.</td>
-   <td><p><br /> Selon le système d’exploitation : - Unix/Linux : <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (mode console) : Ctrl-Saut<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Vidages de tas</td>
    <td>Problèmes d’insuffisance de mémoire affectant la vitesse de performance.</td>
-   <td><p><br /> Ajoutez la variable <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> à l’appel java vers AEM.</p> <p>Voir le <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Guide de dépannage pour Java SE 6 avec HotSpot VM</a>.</p> </td>
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>Voir le <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Guide de dépannage pour Java SE 6 avec HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Appels système</td>
@@ -910,7 +903,7 @@ Pour voir nombre total d’activation de page depuis l’installation du serveur
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 Calculez ensuite le nombre de jours écoulés depuis l’installation pour calculer la moyenne.
 
@@ -922,7 +915,7 @@ Pour voir nombre de pages actuellement sur le serveur, utilisez une requête de 
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:Page)`
+* **Query** `//element(*, cq:Page)`
 
 #### Si vous utilisez MSM, quel est le nombre moyen de déploiements par mois ?{#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
@@ -932,7 +925,7 @@ Pour déterminer le nombre total de déploiements depuis l’installation, utili
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Calculez le nombre de mois écoulés depuis l’installation pour calculer la moyenne.
 
@@ -944,7 +937,7 @@ Pour déterminer le nombre total des Live Copies effectuées depuis l’installa
 
 * **Chemin** `/`
 
-* **Requête**`//element(*, cq:LiveSyncConfig)`
+* **Query** `//element(*, cq:LiveSyncConfig)`
 
 Utilisez toujours le nombre de mois écoulés depuis l’installation pour calculer la moyenne.
 
@@ -954,7 +947,7 @@ Pour voir le nombre de ressource de gestion des actifs numériques que vous cons
 
 * **Type** `XPath`
 * **Chemin** `/`
-* **Requête**`/jcr:root/content/dam//element(*, dam:Asset)`
+* **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### Quelle est la taille moyenne des ressources ?{#what-is-the-average-size-of-the-assets}
 
@@ -977,7 +970,7 @@ Pour identifier le nombre de modèles actuellement sur le serveur, utilisez une 
 
 * **Type** `XPath`
 * **Chemin** `/`
-* **Requête**`//element(*, cq:Template)`
+* **Query** `//element(*, cq:Template)`
 
 #### Combien de composants sont actuellement utilisés ?{#how-many-components-are-currently-used}
 
@@ -985,7 +978,7 @@ Pour voir nombre de composants actuellement sur le serveur, utilisez une requêt
 
 * **Type** `XPath`
 * **Chemin** `/`
-* **Requête**`//element(*, cq:Component)`
+* **Query** `//element(*, cq:Component)`
 
 #### Combien de demandes par heure recevez-vous sur le système de création lorsque le niveau d’activité est élevé ?{#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
