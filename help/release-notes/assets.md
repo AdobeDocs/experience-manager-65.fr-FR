@@ -2,7 +2,7 @@
 title: Notes de mise à jour sur Adobe Experience Manager Assets
 description: Nouvelles fonctionnalités et améliorations apportées à Adobe Experience Manager 6.5 Assets.
 translation-type: tm+mt
-source-git-commit: 92619acaa2eb820eda304355f8eaf79ec4a400e1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -17,11 +17,11 @@ Voici les principales fonctionnalités et les points saillants de la version des
 
 Read on to know the specific capabilities and integrations of [!DNL Experience Manager] 6.5 that you can leverage to best support your content velocity use cases.
 
-### Adobe Asset Link {#aal}
+### Adobe Asset Link {#aal}
 
 [!DNL Adobe Asset Link] renforce la collaboration entre les créatifs et les marketeurs dans le processus de création de contenu. Creatives can access content stored in [!DNL Experience Manager Assets], without leaving the apps that they are most familiar with. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] fait partie de [Creative Cloud abonnement Entreprise](https://www.adobe.com/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] fait partie de [Creative Cloud abonnement Entreprise](https://www.adobe.com/creativecloud/business/enterprise.html) . For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html).
 
 ![Recherche de fichiers dans Adobe Photoshop](assets/asset_search_photoshop.png)
 
@@ -29,7 +29,7 @@ Read on to know the specific capabilities and integrations of [!DNL Experience M
 
 Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for your creative and marketing projects. You can quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in Experience Manager, using the powerful DAM capabilities of [!DNL Experience Manager].
 
-[!DNL Adobe Stock]Le service permet aux créateurs et aux entreprises d’accéder à des millions de photos, de vecteurs, d’illustrations, de vidéos, de modèles et de ressources 3D organisés, de haute qualité et libres de droit pour tous leurs projets de création.
+[!DNL Adobe Stock]Le service permet aux créateurs et aux entreprises d’accéder à des millions de photos, de vecteurs, d’illustrations, de vidéos, de modèles et de ressources 3D organisés, de haute qualité et libres de droits pour tous leurs projets de création. 
 
 For more info, see [Use [!DNL Adobe Stock] assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
@@ -65,7 +65,7 @@ Dans les grandes entreprises, l’infrastructure requise pour créer des sites w
 
 [!DNL Dynamic Media] offre une création et un de contenu multimédia enrichi pour [!DNL Experience Manager Assets] générer des expériences de pointe immersives et personnalisées. En téléchargeant une ressource originale unique de haute qualité et en utilisant le rendu avancé du cloud et les visionneuses, vous pouvez proposer toute combinaison de rendus en temps réel pour prendre en charge la stratégie multimédia de votre entreprise.
 
-For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
+For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Prise en charge de la vidéo à 360°{#video-support}
 
@@ -77,7 +77,7 @@ Vous pouvez maintenant personnaliser les vignettes de vos ressources vidéo à l
 
 ### Amélioration de l’accessibilité {#accessibility-enhancements}
 
-[!DNL Dynamic Media] les lecteurs d’écran prennent désormais en charge des fonctions d’accessibilité améliorées, telles que la prise en charge d’Aria, les lecteurs d’écran et le texte de remplacement. Pour plus de détails, consultez les [notes de mise à jour des visionneuses de Dynamic Media](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+[!DNL Dynamic Media] les lecteurs d’écran prennent désormais en charge des fonctions d’accessibilité améliorées, telles que la prise en charge d’Aria, les lecteurs d’écran et le texte de remplacement. Pour plus de détails, consultez les [notes de mise à jour des visionneuses de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 ## Amélioration de l’expérience de recherche {#search-experience-enhancement}
 
