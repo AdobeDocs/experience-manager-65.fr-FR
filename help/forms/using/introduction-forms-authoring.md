@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -43,13 +43,13 @@ L’interface utilisateur optimisée pour les écrans tactiles permet de créer 
 Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
-* [Barre d’outils de la page](#page-toolbar)
+* [Barre d’outils Page](#page-toolbar)
 * [Barre d’outils de composants](#component-toolbar)
 * [Page de formulaires adaptatifs](#af-page)
 
 ![Interface de création de formulaires adaptatifs](assets/formeditor.png)
 
-******A. Barre latérale** B. Barre d’outils **C.** Page de formulaire adaptatif
+**A.** Barre latérale **B.** Barre d’outils **C.** Page de formulaire adaptatif
 
 ### Barre latérale {#sidebar}
 
@@ -62,7 +62,7 @@ La barre latérale vous permet de
 
 ![Barre latérale](assets/sidebar-comps.png)
 
-******** A. Explorateur de contenu **B. Explorateur de propriétés** C.**Explorateur de ressources** D. Explorateur de composants
+**A.** Explorateur de contenu **B.** Explorateur de propriétés **C.** Explorateur de ressources **D.** Explorateur de composants
 
 <!--Click to enlarge
 
@@ -79,13 +79,13 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
 
 * **Explorateur de propriétés**
 
-   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du conteneur de formulaires adaptatifs :
+   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du de formulaires adaptatifs :
 
-   Sélectionnez un composant, puis appuyez au niveau ![du](assets/field-level.png) champ > Conteneur **de formulaires** adaptatifs, puis appuyez sur ![cmppr](assets/cmppr.png).
+   Sélectionnez un composant, puis appuyez au niveau ![du](assets/field-level.png) champ > **de formulaire** adaptatif, puis appuyez sur ![cmppr](assets/cmppr.png).
 
 * **Explorateur de ressources**
 
-   Sépare les différents types de contenu (images, documents, pages, films, etc.).
+   Sépare différents types de contenu, tels que les images, les , les pages, les films, etc.
 
 * **Explorateur de composants**
 
@@ -94,7 +94,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
 <table>
  <tbody>
   <tr>
-   <th><strong>Component</strong></th>
+   <th><strong>Composant</strong></th>
    <th><strong>Fonctionnalité</strong></th>
   </tr>
   <tr>
@@ -138,7 +138,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
    <td>Ajoute une liste déroulante, à sélection simple ou multiple.</td>
   </tr>
   <tr>
-   <td>Courriel</td>
+   <td>Courrier électronique</td>
    <td><p>Ajoute un champ pour capturer une adresse électronique. Le composant Courrier électronique, par défaut, valide les adresses électroniques à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
@@ -214,7 +214,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
    <td>Affiche les informations fournies dans le formulaire et les champs de signature pour que l’utilisateur puisse vérifier et signer le formulaire.</td>
   </tr>
   <tr>
-   <td>Texte</td>
+   <td>Text (Texte)</td>
    <td>Permet de spécifier du texte statique.</td>
   </tr>
   <tr>
@@ -252,7 +252,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
    <td><p>Ajoute une zone de texte dans laquelle un utilisateur peut spécifier les informations nécessaires.. </p> <p>Par défaut, le composant de zone de texte accepte uniquement du texte brut. Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Un composant de texte compatible avec le texte brut permet d’ajouter des en-têtes, de modifier les styles de caractère (gras, italique, souligné), de créer les listes ordonnées et non ordonnées, de modifier l’arrière-plan et la couleur du texte et d’ajouter des hyperliens. To enable rich text for a text box, enable the<strong> Allow Rich Text</strong> option in the component properties.</p> </td>
   </tr>
   <tr>
-   <td>Titre</td>
+   <td>Title (Titre)</td>
    <td>Spécifie un titre pour le formulaire adaptatif.</td>
   </tr>
   <tr>
@@ -300,17 +300,17 @@ For more best practices around adaptive forms, see [Best practices for working w
 >
 >Les composants de formulaire adaptatif ne prennent pas en charge les langues s’écrivant de droite à gauche (RTL). Par exemple, l&#39;hébreu.
 
-### Barre d’outils de la page{#page-toolbar} 
+### Barre d’outils Page {#page-toolbar}
 
 La barre d’outils de la page, située en haut de l’écran, propose des options permettant d’afficher un aperçu du formulaire, d’en modifier les propriétés, puis d’en modifier la disposition. Vous pouvez prévisualiser le formulaire lors de son écriture et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
 * **Activer/désactiver le panneau** latéral ![bascule-panneau](assets/toggle-side-panel.png)latéral : Permet d’afficher ou de masquer la barre latérale.
 
-* **Informations** sur la page ![thème-options](assets/theme-options.png): Permet d’afficher les propriétés de la page, de publier/d’annuler la publication d’un formulaire, de démarrer un processus de formulaire et d’ouvrir le formulaire dans une interface utilisateur classique.
+* **Informations** sur la page ![thème-options](assets/theme-options.png): Vous permet de  les propriétés de la page, de publier/d’annuler la publication d’un formulaire, de  un processus de formulaire et d’ouvrir le formulaire dans une interface utilisateur classique.
 
-* **Emulateur** ![règle](assets/ruler.png): Vous permet d’imiter l’aspect de votre formulaire pour différentes tailles d’affichage, comme les tablettes et les smartphones.
+* **Emulateur** ![règle](assets/ruler.png): Vous permet d’imiter l’aspect de votre formulaire pour différentes tailles d’affichage, telles que les tablettes et les smartphones.
 
-* **Modifier** : Sélectionne d’autres modes comme **Modifier, Style, Développeur** et **Conception**.
+* **Modifier** : Sélectionne d’autres modes comme **Modifier, Style, Développeur et Conception**.
 
    * **Modifier** : Modifie les propriétés du formulaire et de ses composants. Exemple : l’ajout d’un composant, le dépôt d’une image et l’indication des champs obligatoires.
    * **Style** : Définit l’aspect des composants de votre formulaire. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
