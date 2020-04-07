@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a83def358e026b516add577f968dcc709357e458
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: a83def358e026b516add577f968dcc709357e458
 | Version | 6.5.4.0 |
 | Type | Version du Service Pack |
 | Date | 5 mars 2020 |
-| URL de téléchargement | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), distribution [de logiciels (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
+| URL de téléchargement | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.4.0-Service-Pack), distribution [de logiciels (bêta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Eléments inclus dans Adobe Experience Manager 6.5.4.0 {#what-s-included-in-aem}
 
@@ -275,7 +275,7 @@ Pour une  complète des fonctionnalités, des points saillants clés et des fonc
 
 Accomplissez les étapes suivantes pour installer le Service Pack sur une instance 6.5 existante :
 
-1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.4.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0).
+1. Login to Package Share from within AEM or directly from your browser and download the [AEM 6.5.4.0 package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.4.0-Service-Pack).
 
 1. Installez le package téléchargé à l’aide du gestionnaire de modules.
 
@@ -317,7 +317,7 @@ In order to see what platforms are certified to run with this release, please re
 >AEM 6.5.4.0 includes a new version of [AEM Forms Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/AEM-FORMS-6.5.3.0-COMPAT). Si vous utilisez une ancienne version du package de compatibilité d’AEM Forms et que vous mettez à jour vers AEM 6.5.4.0, installez la dernière version du package de compatibilité d’AEM Forms après l’installation du package de module complémentaire de Forms.
 
 1. Vérifiez que vous avez installé le Service Pack AEM.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 ### Install AEM Forms on JEE {#install-aem-forms-jee-installer}
@@ -335,6 +335,8 @@ Comme il s’agit d’un programme d’installation complet, la taille du fichie
 ### UberJar {#uber-jar}
 
 The UberJar for AEM 6.5.4.0 is available in the [Adobe Public Maven repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/).
+
+La version mise à jour d’UberJar pour la version 6.5.4.0, qui inclut le package **com.fasterxml.jackson.core.async** , est disponible dans le référentiel [](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)Adobe Public Maven.
 
 To use UberJar in a Maven project, refer to the article, [How to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -385,12 +387,12 @@ Liste des packages de contenu inclus dans AEM 6.5.4.0
 Ces sites sont réservés aux clients. Si vous êtes client et avez besoin d’un accès, contactez votre responsable de compte Adobe.
 
 * [Téléchargement du produit à l’adresse licensing.adobe.com](https://licensing.adobe.com/)
-* [Contactez l&#39;assistance](https://daycare.day.com/public/contact.html)clientèle Pour plus d&#39;informations sur l&#39;accès au portail d&#39;assistance, consultez [Accès au portail](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)d&#39;assistance.
+* [Contactez l&#39;assistance](https://daycare.day.com/public/contact.html)clientèle Pour plus d&#39;informations sur l&#39;accès au portail d&#39;assistance, consultez [Accès au portail](https://helpx.adobe.com/fr/experience-manager/kb/accessing-aem-support-portal.html)d&#39;assistance.
 
 >[!MORE COMME ÇA]
 >
 >* [Notes de mise à jour d’AEM 6.5](/help/release-notes/release-notes.md)
 >* [Page de produits AEM ](https://www.adobe.com/solutions/web-experience-management.html)
->* [Documentation d’AEM 6.5](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* [Documentation d’AEM 6.5](https://helpx.adobe.com/fr/support/experience-manager/6-5.html)
 >* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
