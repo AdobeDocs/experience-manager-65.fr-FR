@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
+source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
 
 ---
 
@@ -81,7 +81,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
 
    Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du de formulaires adaptatifs :
 
-   Sélectionnez un composant, puis appuyez au niveau ![du](assets/field-level.png) champ > **de formulaire** adaptatif, puis appuyez sur ![cmppr](assets/cmppr.png).
+   Sélectionnez un composant, puis appuyez au niveau ![du](assets/field-level.png) champ > **[!UICONTROL de formulaire]** adaptatif, puis appuyez sur ![cmppr](assets/cmppr.png).
 
 * **Explorateur de ressources**
 
@@ -288,9 +288,9 @@ Les meilleures pratiques et les points clés suivants sont à prendre en compte 
 * Specify values for Radio Button and Check Box items in `{value}={text}` format in component properties.
 * Le composant de pièce jointe, par défaut, permet à un utilisateur de joindre un seul fichier. Toutefois, vous pouvez configurer les propriétés du composant pour prendre en charge plusieurs pièces jointes. En outre, si un utilisateur joint plusieurs fichiers avec le même nom de fichier, les pièces jointes peuvent provoquer des problèmes. Par conséquent, il est recommandé d’associer un identificateur unique pour chaque pièce jointe envoyée à l’envoi du formulaire. Pour ce faire :
 
-   1. On your AEM Forms server, navigate to **Adobe Experience Manager > Tools > Operations > Web Console**.
-   1. Find and tap **Adaptive Forms Configuration Service**.
-   1. In the Adaptive Forms Configuration Service dialog, enable **Make File Names Unique**. Par défaut, elle est désactivée.
+   1. On your AEM Forms server, navigate to **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+   1. Find and tap **[!UICONTROL Adaptive Forms Configuration Service]**.
+   1. In the Adaptive Forms Configuration Service dialog, enable **[!UICONTROL Make File Names Unique]**. Par défaut, elle est désactivée.
 
 * Pour permettre aux utilisateurs de joindre un fichier PDF à l’aide du navigateur Safari, veillez à ajouter **application/pdf** à la propriété Types de fichiers pris en charge du composant Pièce jointe. Les formulaires adaptatifs créés avec la version précédente d’AEM Forms peuvent contenir **.pdf** au lieu de **application/pdf** dans la propriété Types de fichiers pris en charge.
 
@@ -310,7 +310,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
 * **Emulateur** ![règle](assets/ruler.png): Vous permet d’imiter l’aspect de votre formulaire pour différentes tailles d’affichage, telles que les tablettes et les smartphones.
 
-* **Modifier** : Sélectionne d’autres modes comme **Modifier, Style, Développeur et Conception**.
+* **Modifier**: Permet de sélectionner d’autres modes, tels que : **[!UICONTROL Modifier]**, **[!UICONTROL Style]**, **[!UICONTROL Développeur]** et **[!UICONTROL Conception.]**
 
    * **Modifier** : Modifie les propriétés du formulaire et de ses composants. Exemple : l’ajout d’un composant, le dépôt d’une image et l’indication des champs obligatoires.
    * **Style** : Définit l’aspect des composants de votre formulaire. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
@@ -348,7 +348,7 @@ H. **Groupe** : permet de sélectionner plusieurs composants permettant de coup
 
 I.**Parent** : Permet de sélectionner le parent d’un composant. Par exemple, un champ de texte se trouve dans une sous-section, qui réside elle-même dans une section. La section réside dans le panneau racine de guide et le conteneur du formulaire adaptatif est le parent d’un panneau racine de guide. Pour chaque composant s’affichent toutes les options avec la hiérarchie triée de bas en haut.
 
-For example, if you tap **Parent** for a text box, you can see:
+For example, if you tap **[!UICONTROL Parent]** for a text box, you can see:
 
 * Sous-section
 * Section
@@ -371,7 +371,7 @@ La page de formulaires adaptatifs est le formulaire proprement dit. Elle est ide
 
 La structure de contenu contient généralement les composants principaux ci-dessous :
 
-* **guideContainer** : racine d’un formulaire adaptatif, indiquée sous la forme **Début du formulaire adaptatif** dans l’interface utilisateur du formulaire. Dansce composant, vous pouvez spécifier les éléments suivants :
+* **guideContainer** : racine d’un formulaire adaptatif, indiquée sous la forme **[!UICONTROL Début du formulaire adaptatif]** dans l’interface utilisateur du formulaire. Dansce composant, vous pouvez spécifier les éléments suivants :
 
    * *Mise en page du formulaire adaptatif pour mobiles* : définit l’apparence du formulaire sur les appareils mobiles.
    * *Page de remerciement* : définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
@@ -380,7 +380,7 @@ La structure de contenu contient généralement les composants principaux ci-des
 
 * **rootPanel** : panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le nœud d’éléments. Une mise en page peut être associée à chaque panneau qui comprend le panneau racine. La mise en page du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page en accordéon, les éléments constitutifs sont disposés sous la forme d’étapes en accordéon.
 
-* **barre d’outils** : une barre d’outils globale est associée à un conteneur de formulaires adaptatifs. Il s’agit d’une barre d’outils à l’échelle du formulaire. This toolbar can be added using the **Add Toolbar** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
+* **barre d’outils** : une barre d’outils globale est associée à un conteneur de formulaires adaptatifs. Il s’agit d’une barre d’outils à l’échelle du formulaire. This toolbar can be added using the **[!UICONTROL Add Toolbar]** action in the edit bar, which allows authors to add actions, such as Submit, Save, Reset, and so on.
 
 * **ressources** : ce nœud contient des informations supplémentaires au sujet de la création de formulaires. Il s’agit, par exemple, de détails sur le modèle de formulaire, de détails de localisation, etc.
 
