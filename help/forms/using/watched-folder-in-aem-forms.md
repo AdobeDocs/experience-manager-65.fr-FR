@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,8 +23,7 @@ Un administrateur peut configurer un dossier réseau, appelé dossier de contrô
 
 Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de contrôle sur le système de fichiers :
 
-* Lors de la configuration des propriétés d’un noeud de configuration Watched Folder, saisissez le chemin d’accès complet du répertoire parent dans la propriété folderPath et ajoutez le nom du dossier de contrôle à créer, comme indiqué dans l’exemple suivant : `C:/MyPDFs/MyWatchedFolder`\
-   Le `MyWatchedFolder`dossier n’existe pas, AEM Forms tente de créer le dossier à l’emplacement spécifié.
+* Lors de la configuration des propriétés d’un nœud de configuration du dossier de contrôle, indiquez le chemin d’accès complet du répertoire parent dans la propriété folderPath (chemin du fichier) et ajoutez le nom du dossier de contrôle à créer, comme indiqué dans l’exemple suivant :`C:/MyPDFs/MyWatchedFolder`   Le dossier `MyWatchedFolder` n’existe pas, AEM Forms tente de créer un dossier à l’emplacement spécifié.
 
 * Créez un dossier dans le système de fichiers avant de configurer un point de fin Watched Folder, puis indiquez son chemin d’accès complet dans la propriété folderPath (chemin de fichier). Pour plus d’informations sur la propriété folderPath, voir [Propriétés de dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
 
@@ -90,8 +89,8 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, valeur par défaut true) :** si le mécanisme d’expiration doit ou non s’activer uniquement lorsque le dossier de contrôle est ralenti. Ce mécanisme est plus approprié pour les dossiers de contrôle ralentis car un petit nombre de fichiers qui traînent à l’état non traité (en raison d’une tâche intermittente/d’un échec de déclenchement de flux de travail) risquent potentiellement de freiner le traitement du lot entier lorsque l’option de ralentissement est activée. Si cette propriété est conservée sur true (valeur par défaut), le mécanisme d’expiration ne s’active pas pour les dossiers de contrôle qui ne sont pas ralentis. Si la propriété est conservée sur false, le mécanisme s’active toujours tant que la propriété stageFileExpirationDuration est un nombre positif.
 
 * **pollInterval (Long)** : le laps de temps en secondes pour l’analyse du dossier de contrôle en sortie. A moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être supérieur à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Taille du lot. La valeur de pollinterval doit être supérieure ou égale à un.
-* **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est « null ».\
-   You can use [file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) to exclude:
+* **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est « null ».
+You can use [file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) to exclude:
 
    * Fichiers possédant des extensions particulières, par exemple *.dat, *.xml, .pdf, *.*
    * Fichiers portant des noms spécifiques ; par exemple, data* exclurait les fichiers et les dossiers nommés data1, data2, etc.
@@ -216,16 +215,13 @@ Un service est une implémentation personnaliséede l’interface `com.adobe.aem
 
 #### Implémentation personnalisée de l’interface ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-L’implémentation personnalisée accepte un contexte de traitement (objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les  d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute la sortie au\
-contexte. Le ProcessorContext dispose des API suivants :
+L’implémentation personnalisée accepte un contexte de traitement (un objet de type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lit les documents d’entrée et les paramètres de configuration du contexte, traite les entrées et ajoute de nouveau la sortie de contexte. Le ProcessorContext dispose des API suivants :
 
 * **** getWatchFolderId : renvoie l’ID du dossier de contrôle.
 * **getInputMap** : renvoie un mappage de type Map. Les clés de la carte constituent le nom du fichier d’entrée et un objet de document avec le contenu du fichier. Utilisez l’API getinputMap pour lire les fichiers d’entrée.
-* **getConfigParameters** : renvoie un mappage inaltérable de type Map. La carte contient\
-   les paramètres de configuration d’un dossier de contrôle.
+* **getConfigParameters** : renvoie un mappage inaltérable de type Map. La carte contient les paramètres de configuration d’un dossier de contrôle.
 
-* **setResult**: Implémentation de ContentProcessor\
-   utilise l’API pour écrire le de sortie dans le dossier result. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
+* **setResult** : l’implémentation de ContentProcessor utilise l’API pour passer le document de sortie au dossier de résultats. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
 
 Par exemple, le code suivant est une implémentation personnalisée de l’interface ContentProcessor avec une propriété foo=bar personnalisée.
 
@@ -276,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -289,7 +285,7 @@ Si vous prévoyez de placer vos scripts à un emplacement personnalisé, il est 
 1. Create a system user programmatically or via the console https://&#39;[server]:[port]&#39;/crx/explorer. Vous pouvez également utiliser un utilisateur système existant. Ici, il est important de travailler avec des utilisateurs système plutôt qu’avec des utilisateurs disposant de licences ordinaires.
 1. Fournissez des autorisations de lecture à l’utilisateur système existant ou qui vient d’être créé pour l’emplacement personnalisé dans lequel les scripts sont stockés. Vous pouvez disposer de plusieurs emplacements personnalisés. Fournissez au moins des autorisations de lecture à tous les emplacements personnalisés.
 1. Dans la console de configuration Felix (/system/console/configMgr), recherchez le mappage de l’utilisateur de service pour les dossiers Watch Folder. Ce mappage ressemble à ce qui suit : ’Mapping: adobe-aemds-core-watch-folder=...’.
-1. Cliquez sur le mappage. Pour l’entrée &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
+1. Cliquez sur le mappage. Pour l’entrée &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Save (Enregistrer).
 
 Vous pouvez désormais utiliser l’emplacement personnalisé et configuré pour enregistrer les scripts.
 
@@ -298,8 +294,8 @@ Vous pouvez désormais utiliser l’emplacement personnalisé et configuré pour
 Les flux de travaux permettent d’automatiser les activités d’Experience Manager. Les flux de travaux se composent d’une série d’étapes effectuées dans un ordre spécifique. Chaque étape effectue une action distincte telle que l’activation d’une page ou l’envoi d’un message électronique. Les flux de travaux peuvent interagir avec des actifs dans le référentiel, les comptes d’utilisateur, et dans les services d’Experience Manager. Par conséquent, les flux de travaux peuvent coordonner de façon complexe.
 
 * Avant de créer un flux de travail, tenez compte des points suivants :
-* La sortie d’une étape doit être disponible pour toutes les étapes suivantes.\
-   Les étapes doivent pouvoir mettre à jour (ou même supprimer) des sorties existantes générées par les étapes précédentes.
+* La sortie d’une étape doit être disponible pour toutes les étapes suivantes.
+Les étapes doivent pouvoir mettre à jour (ou même supprimer) des sorties existantes générées par les étapes précédentes.
 * Les variables mutables sont utilisées pour transmettre les données dynamiques personnalisées entre les étapes.
 
 Effectuez les étapes suivantes pour traiter des fichiers à l’aide des flux de travaux : 
@@ -347,7 +343,7 @@ Considération pour l’API setResult, lorsqu’elle est utilisée dans le  du :
 >
 >L’appel de l’API setResult avec le contenu « null » dans tout autre scénario peut entraîner une erreur.
 
-L’exemple suivant est implémenté comme étape du flux de travail. Dans cet exemple, ECMAscript utilise un stepCount variable pour suivre le nombre de fois qu’une étape est appelée dans l’occurrence active du flux de travaux.\
+L’exemple suivant est implémenté comme étape du flux de travail. Dans cet exemple, ECMAscript utilise un stepCount variable pour suivre le nombre de fois qu’une étape est appelée dans l’occurrence active du flux de travaux.
 Le nom du dossier de sortie est une combinaison de l’étape actuelle, du nom de fichier original et du préfixe spécifié dans le paramètre outPrefix.
 
 ECMAScript obtient une référence du service de contexte du flux de travail et crée une implémentation de l’interface de WorkflowContextProcessor. L’implémentation de WorkflowContextProcessor accepte les fichiers d’entrée, copie le fichier à un emplacement temporaire, puis renvoie un document représentant le fichier copié. Selon la valeur de la variable booléenne purgePrevious, l’étape actuelle supprime la sortie générée la dernière fois par la même étape lorsque l’étape a été lancée dans l’instance active du flux de travaux. En fin de compte, la méthode wfSvc.execute est appelée pour l’implémentation de WorkflowContextProcessor. Le contenu de la sortie du document est enregistré dans le dossier de résultats au chemin d’accès physique mentionné dans le nœud de configuration du dossier de contrôle.
@@ -366,8 +362,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +374,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -631,8 +627,8 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 
 ### Créer un flux de travaux {#create-a-workflow}
 
-1. Ouvrez le flux de travaux AEM UI dans une fenêtre du navigateur.\
-   https://[servername]:&#39;port&#39;/worklow
+1. Ouvrez le flux de travaux AEM UI dans une fenêtre du navigateur.
+https://[servername]:&#39;port&#39;/worklow
 
 1. Dans la vue Modèles, cliquez sur **Nouveau**. Dans la boîte de dialogue Nouveau flux de travaux, indiquez le **Titre**, puis cliquez sur **OK**.
 
@@ -642,7 +638,7 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 
 1. Supprimer l’étape de flux de travaux par défaut. Faites glisser l’étape du processus du Sidekick au flux de travaux.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Cliquez sur l’étape du processus et sélectionnez **Modifier**. La fenêtre Propriétés d’étape s’affiche.
 
@@ -660,8 +656,8 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 
 1. Ajoutez les propriétés suivantes au nœud  :
 
-   * folderPath (chaîne) : le chemin du dossier à numériser à des créneaux horaires définis. Ce dossier doit être un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.\
-      inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didacticiel, spécifiez le flux de travaux.
+   * folderPath (chaîne) : le chemin du dossier à numériser à des créneaux horaires définis. Ce dossier doit être un emplacement partagé avec tous les serveurs disposant d’un accès complet au serveur.
+inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didacticiel, spécifiez le flux de travaux.
 
    * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un flux de travaux. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin suivant du flux de travaux de PDFG : /etc/workflow/models/pdfg/jcr:content/model
 
