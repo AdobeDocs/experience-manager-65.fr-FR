@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
 
 ---
 
@@ -366,19 +366,18 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    * Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
    La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
    Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
-       | `&#39;.&#39;yyyy-MM` |Rotation at the beginning of each month |
-       |---|---|
-       | `&#39;.&#39;aaaa-ww`|Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
-       | `&#39;.&#39;aaaa-MM-jj`|Rotation à minuit tous les jours. |
-       | `&#39;.&#39;aaaa-MM-jj-a`|Rotation à minuit et midi de chaque jour. |
-       | `&#39;.&#39;aaaa-MM-jj-HH`|Rotation en haut de chaque heure. |
-       | `&#39;.&#39;aaaa-MM-jj-HH-mm`|Rotation au début de chaque minute. |
-       
-       Note: When specifying a time/date:
-       1. You should &quot;escape&quot; literal text within a pair of single quotes (&#39; &#39;);
-       this is to avoid certain characters being interpreted as pattern letters.
-       1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
-   
+   | `'.'yyyy-MM` | Rotation au début de chaque mois |
+   |---|---|
+   | `'.'yyyy-ww` | Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
+   | `'.'yyyy-MM-dd` | Rotation à minuit tous les jours. |
+   | `'.'yyyy-MM-dd-a` | Rotation à minuit et midi de chaque jour. |
+   | `'.'yyyy-MM-dd-HH` | Rotation au sommet de chaque heure. |
+   | `'.'yyyy-MM-dd-HH-mm` | Rotation au début de chaque minute. |
+   Remarque : Lors de la spécification d’une heure/date :
+   1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
+afin d’éviter que certains caractères ne soient interprétés comme des lettres de modèle.
+   1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
+
 
 1. Lisez votre nouveau fichier journal avec l’outil sélectionné.
 
