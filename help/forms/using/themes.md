@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -85,13 +85,13 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
  <tbody>
   <tr>
    <th><p><strong>ID</strong></p> <p> </p> </th>
-   <th><strong>Nom</strong></th>
+   <th><strong>Name (Nom)</strong></th>
    <th><strong>Peut être modifié </strong></th>
    <th><strong>Description de la propriété </strong></th>
   </tr>
   <tr>
    <td>1.</td>
-   <td>Titre</td>
+   <td>Title (Titre)</td>
    <td>Oui</td>
    <td>Nom d’affichage du thème.</td>
   </tr>
@@ -397,7 +397,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
    <td><p>Vous permet de mettre en forme l’alignement, la taille, le positionnement et le placement de composants dans le thème. </p> <p>Les options disponibles sont les paramètres d’affichage, le remplissage, la marge, la largeur, la hauteur et l’indice Z.</p> <p>Vous pouvez également utiliser le mode Mise en page pour définir la largeur des composants à l’aide d’une interface simple de glisser-déposer. Pour plus d’informations, voir <a href="../../forms/using/resize-using-layout-mode.md">Utilisation du mode Mise en page pour redimensionner des composants</a>.</p> </td>
   </tr>
   <tr>
-   <td><p>Texte</p> </td>
+   <td><p>Text (Texte)</p> </td>
    <td><p>Vous permet de personnaliser les styles de texte dans le composant du thème.</p> <p>Par exemple, vous souhaitez modifier l’aspect du texte saisi dans la zone de texte.</p> <p>Vos options sont les suivantes : famille de polices, épaisseur, couleur, taille, hauteur de ligne, alignement du texte, espacement, interlettrage, retrait du texte, surlignement, italique, transformation de texte, alignement vertical, ligne de base et orientation. </p> </td>
   </tr>
   <tr>
@@ -560,7 +560,7 @@ Pour appliquer un thème à une communication interactive :
 
    Vous pouvez modifier les propriétés de votre formulaire dans la barre latérale.
 
-1. In the sidebar, under** Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
 
 ### Modifier le thème d’un formulaire au moment de l’exécution {#change-theme-of-a-form-at-runtime}
 
@@ -636,7 +636,7 @@ Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
       1. Dans la page Thèmes, sélectionnez un thème, puis cliquez sur **Afficher les propriétés**.
       1. Dans la page des propriétés qui s’ouvre, cliquez sur **Avancé**.
       1. Dans le champ Emplacement de la bibliothèque client de l’onglet Avancé, recherchez et sélectionnez la bibliothèque client à utiliser.
-      1. Cliquez sur **Enregistrer**.
+      1. Cliquez sur **Save** (Enregistrer).
       La mise en forme que vous spécifiez dans la bibliothèque client est importée dans le thème qui l’utilise. Par exemple, vous spécifiez mise en page pour la zone de texte, la zone numérique et le basculement dans la bibliothèque client. Lorsque vous importez votre bibliothèque client dans le thème, la mise en page pour la zone de texte, la zone numérique et le basculement dans la bibliothèque client. Vous pouvez alors mettre en forme d’autres composants à l’aide de l’éditeur de thème.
 Vous pouvez également créer un thème, créer des copies de ce thème, puis modifiez la mise en forme fournie dans les thèmes copiés pour des cas d’utilisation similaires.
 Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-appearance)
