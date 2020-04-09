@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -72,7 +72,7 @@ Pour avoir des informations détaillées sur la signature de code et l’ajout d
 1. Extract the archive in the `[User_Home]/Projects/[your-project]`directory.
 1. Accédez au répertoire ` [User_Home]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios` .
 1. Ouvrez le projet `AEM Forms.xcodeproj` dans Xcode.
-1. Cliquez sur **AEM Forms**, sous **TARGETS**, sélectionnez **AEM Forms**. Select the **Build Settings **tab, locate the **Code Signing Entitlement** section, and in Debug and Release fields do one of the following:
+1. Cliquez sur **AEM Forms**, sous **TARGETS**, sélectionnez **AEM Forms**. Select the **Build Settings** tab, locate the **Code Signing Entitlement** section, and in Debug and Release fields do one of the following:
 
    * Laisser les champs non spécifiés pour créer une application Mobile Workspace standard
    * Specify the fields to as explained in [Building a Secure AEM Forms app for iOS](/help/forms/using/building-secure-mobile-workspace-app.md) to build a secure AEM Forms app.
