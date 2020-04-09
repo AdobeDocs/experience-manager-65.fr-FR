@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -45,7 +45,7 @@ Pour configurer le contenu d’AEM de sorte qu’il s’affiche sur un portail, 
 
 >[!CAUTION]
 >
->AEM Portal Director est obsolète depuis la version AEM 6.4. Voir [Fonctionnalités obsolètes et supprimées](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM Portal Director est obsolète depuis la version AEM 6.4. Voir [Fonctionnalités obsolètes et supprimées](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Administration du portlet de contenu AEM {#administering-the-aem-content-portlet}
 
@@ -183,7 +183,7 @@ Pour configurer un agent de réplication pour le portail :
 
 1. Connectez-vous à l’instance de création.
 1. In the Websites tab, click the *Tools* tab.
-1. **** Cliquez sur **Nouvelle page... dans les agents de réplication** Nouveau... .
+1. Click **New Page...** in the replication agents **New...** menu.
 
    ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
 
@@ -278,7 +278,7 @@ Pour accéder à la configuration de l’authentification du portlet :
 
 Dans le mode par défaut, toutes les demandes émises par le portlet pour l’instance de création AEM WCM sont authentifiées à l’aide du même utilisateur technique, indépendamment de l’utilisateur actuel du portail. Le mode Utilisateur technique est activé par défaut. Vous activez/désactivez ce mode dans l’écran de configuration approprié dans la console de gestion OSGi :
 
-L’utilisateur technique spécifié doit exister sur l’instance d’auteur AEM WCM et sur l’instance de publication si **Authentifier sur la publication **est activé. Veillez à attribuer à l’utilisateur des autorisations suffisantes pour la tâche de création.
+The technical user specified must exist on the AEM WCM author instance and on the publish instance if **Authenticate on Publish** is enabled. Veillez à attribuer à l’utilisateur des autorisations suffisantes pour la tâche de création.
 
 #### Connexion unique (SSO) {#sso}
 
@@ -331,7 +331,7 @@ Pour activer la connexion unique dans AEM WCM, accédez à l’entrée de config
 1. Accédez à la console via son URI à l’adresse https://&lt;AEM-host>:&lt;port>/system/console.
 1. Dans le menu Configuration, sélectionnez Gestionnaire d’authentification SSO. Dans cet exemple, le gestionnaire de connexion unique accepte des demandes de connexion unique de tous les chemins d’accès en fonction du cookie fourni par le portlet AEM. Votre configuration peut varier.
 
-   | Chemin | / | Active le gestionnaire SSO pour toutes les requêtes |
+   | Chemin    | / | Active le gestionnaire SSO pour toutes les requêtes |
    |---|---|---|
    | Noms des cookies | cqpsso | Nom du cookie fourni par le portlet tel que configuré dans la console OSGi du portlet. |
 
@@ -478,7 +478,7 @@ L’affichage Publication ne comporte qu’un seul bouton, qui permet d’affich
 
 | Chaîne d’espace réservé | Description |
 |---|---|
-| {buttonManage} | L’espace réservé est remplacé par le **Gérer **bouton, qui change l’état du portlet en état de gestion. |
+| {buttonManage} | L’espace réservé est remplacé par le bouton **Gérer** , qui change l’état du portlet en état de gestion. |
 
 #### Affichage Gestion {#manage-view}
 
@@ -488,7 +488,7 @@ L’affichage Gestion comporte quatre boutons : Modifier, onglet Sites web, Act
 
 | Chaîne d’espace réservé | Description |
 |---|---|
-| {buttonEdit} | L’espace réservé est remplacé par le bouton** Modifier**, qui ouvre une nouvelle fenêtre avec la page active en mode d’édition d’AEM. |
+| {buttonEdit} | L’espace réservé est remplacé par le bouton **Modifier**, qui affiche une nouvelle fenêtre contenant la page active en mode d’édition dans AEM. |
 | {buttonWebsites tab} | Espace réservé, remplacé par un bouton qui affiche l’onglet Sites web d’AEM WCM. |
 | {buttonRefresh} | Actualise l’affichage actif. |
 | {buttonBack} | Remet le portlet en mode de publication. |
@@ -505,7 +505,7 @@ Dans le code HTML, vous pouvez utiliser les espaces réservés ci-dessous, que l
 |---|---|
 | {nom est} | Nom du bouton, par exemple :** auteur, Précédent, Actualiser**, etc. |
 | {id} | ID CSS du bouton. |
-| {url} | URL de la cible du bouton. |
+| {url} | URL du  du bouton. |
 | {text} | Étiquette du bouton. |
 | {onclick} | Fonction **onclick** JavaScript (contient {url}). |
 
@@ -642,7 +642,7 @@ Pour utiliser AEM comme portail, procédez comme suit :
 
 >[!NOTE]
 >
->Vous ne pouvez utiliser le composant Portlet que lorsque AEM est déployé comme application web. ([Reportez-vous à la page Installation d’AEM avec un serveur]d’applications (/content/docs/en/aem/6-3/deploy/installing.md#installing adobe Experience Manager with an application server).)
+>Vous ne pouvez utiliser le composant Portlet que lorsque AEM est déployé comme application web. (Voir [Installation d’AEM avec un serveur d’applications](/help/sites-deploying/application-server-install.md).)
 
 ### Installation du composant Portlet {#installing-the-portlet-component}
 
@@ -679,10 +679,10 @@ Déployez les portlets dans le conteneur web du serveur d’applications afin qu
 
 1. Extrayez le contenu du fichier WAR de l&#39;application portlet.
 
-   **** Conseil : La commande jar xf *nameofapp*.war extrait les fichiers.
+   **Conseil :** La commande jar xf *nameofapp*.war extrait les fichiers.
 
 1. Ouvrez le fichier web.xml dans un éditeur de texte.
-1. Ajoutez la configuration de servlet suivante dans l’élément web-app :
+1. Ajouter la configuration de servlet suivante dans l’élément web-app :
 
    ```xml
    <servlet>
@@ -698,7 +698,7 @@ Déployez les portlets dans le conteneur web du serveur d’applications afin qu
 
 1. Enregistrez le fichier web.xml et recompressez le fichier WAR.
 
-   **** Conseil : La `jar cvf nameofapp.war *` commande ajoute le contenu du répertoire actuel au fichier name.war.
+   **Conseil :** La `jar cvf nameofapp.war *` commande ajoute le contenu du répertoire actuel au fichier name.war.
 
 1. Déployez l’application de portlet sur le serveur d’applications. Pour plus d’informations, reportez-vous à la documentation de votre serveur d’applications.
 
