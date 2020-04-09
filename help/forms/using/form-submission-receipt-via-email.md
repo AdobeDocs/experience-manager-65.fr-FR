@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -35,7 +35,7 @@ L’action Courrier électronique permet à un auteur d’envoyer automatiquemen
 
 >[!NOTE]
 >
->To use the Email action, you need to configure the AEM mail service as described in [Configuring the mail service](/help/sites-administering/notification.md#configuring the mail service).
+>Pour utiliser l’action Courrier électronique, vous devez configurer le service de messagerie AEM, comme décrit dans la section [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
 
 ### Activation de l’action Courrier électronique dans un formulaire adaptatif {#enabling-email-action-on-an-adaptive-form}
 
