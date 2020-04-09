@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -33,25 +33,25 @@ Ce package contient une configuration de cloud qui prend en charge les versions 
 | Adobe Sign | API v5 | **Pris en charge** |
 | Microsoft Dynamics 365 | 1710 (9.1.0.3020) | **Pris en charge** |
 
-**Remarques concernant l’installation du package :**
+**Considérations relatives à l’installation du package :**
 
 * Le paquet devrait être installé sur un serveur propre, sans les autres paquets de démonstration ni les versions antérieures des paquets de démonstration.
 * Le package doit être installé sur un serveur OSGI, en mode Auteur.
 
-### Que comprend ce package {#what-does-this-package-include}
+### Qu’inclut ce package ? {#what-does-this-package-include}
 
-Le package de démonstration AEM Forms We.Gov ( **we-gov-forms.pkg.all-&lt;version>.zip **) est fourni sous la forme d’un package qui comprend plusieurs autres sous-packages et services. Le package comprend les modules suivants :
+Le package de démonstration AEM Forms We.Gov (**we-gov-forms.pkg.all-&lt;version>.zip**) est fourni sous la forme d’un package qui comprend plusieurs autres sous-packages et services. Le package comprend les modules suivants :
 
-* **we-gov-forms.pkg.all-&lt;version>.zip** -* Pack de démonstration complet*
+* **we-gov-forms.pkg.all-&lt;version>.zip** - Pack de démonstration *complet*
 
    * **we-gov-forms.ui.apps-&lt;version>.zip** *- contient tous les composants, bibliothèques client, exemples d’utilisateurs, modèles de flux de travail, etc.*
 
-      * **we-gov-forms.core-&lt;version>.jar*** - contient tous les services OSGI, l’implémentation d’étape de flux de travail personnalisé, etc.*
+      * **we-gov-forms.core-&lt;version>.jar** - *contient tous les services OSGI, l’implémentation d’étape de flux de travail personnalisé, etc.*
 
       * **core.wcm.components.all-2.0.4.zip** - *Collection d’exemples de composants WCM*
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - Package de mise en page Grille de sites *AEM pour le contrôle de colonne de la page Sites*
-   * **we-gov-forms.ui.content-&lt;version>.zip*** - contient tout le contenu, les pages, les images, les *formulaires, les ressources de communication interactives, etc.
+   * **we-gov-forms.ui.content-&lt;version>.zip** - *contient tout le contenu, les pages, les images, les formulaires, les ressources de communication interactives, etc.*
 
    * **we-gov-forms.config.public-&lt;version>.zip** - *Contient tous les noeuds de configuration par défaut, y compris les configurations de cloud d’espace réservé pour éviter les modèles de données de formulaires et les problèmes de liaison de service.*
 
@@ -60,8 +60,8 @@ Les actifs inclus dans ce package sont les suivants :
 
 * Pages du site AEM avec modèles modifiables
 * Formulaires adaptatifs AEM Forms
-* Communications interactives AEM Forms (Impression et Canal Web)
-* Document d’enregistrement XDP AEM Forms
+* Communications interactives AEM Forms ( Impression et Web)
+*  d’enregistrement XDP d’AEM Forms
 * Modèle de données AEM Forms MS Dynamics Forms
 * Intégration d’Adobe Sign
 * Modèle de processus AEM
@@ -113,7 +113,7 @@ Cette section contient des informations sur l’installation du package de démo
 
 ### Installation des nouvelles versions des packages {#installing-new-package-versions}
 
-Pour installer la nouvelle version du pack, suivez les étapes définies dans les versions 4.1 et 4.2. Il est possible d’installer une version de package plus récente alors qu’un autre package plus ancien est déjà installé, mais il est recommandé de désinstaller d’abord l’ancienne version de package. Pour ce faire, procédez comme suit.
+Pour installer la nouvelle version du pack, suivez les étapes définies dans les versions 4.1 et 4.2. Il est possible d’installer une version de package plus récente alors qu’un autre package plus ancien est déjà installé, mais il est recommandé de désinstaller d’abord l’ancienne version de package. Pour ce faire, suivez les étapes ci-dessous.
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*
 1. Recherchez l’ancien fichier **we-gov-forms.pkg.all-&lt;version>.zip** .
@@ -142,22 +142,22 @@ Cette section contient des détails et des instructions sur la configuration pos
 1. Cliquez sur &quot;Enregistrer et fermer&quot; dans la barre de menus.
 1. Répétez les étapes 2 à 7 en recherchant &quot;**Analytics**&quot;, en sélectionnant le groupe &quot;Administrateurs **d’** Analytics&quot; et en ajoutant le groupe &quot;Utilisateurs **de formulaires Google** We.Gov&quot; en tant que membre.
 1. Répétez les étapes 2 à 7 en recherchant &quot;utilisateurs **de** formulaires&quot;, en sélectionnant le groupe &quot;utilisateurs **de formulaires** puissants&quot; et en ajoutant le groupe &quot;Utilisateurs **** de formulaires Web.Gov&quot; en tant que membre.
-1. Répétez les étapes 2 à 7 en recherchant &quot;utilisateurs **de** formulaires&quot;, en sélectionnant le groupe &quot;utilisateurs **de** formulaires&quot; et en ajoutant cette fois le groupe &quot;** Utilisateurs de Google**&quot; en tant que membre.
+1. Répétez les étapes 2 à 7 en recherchant &quot;utilisateurs **de** formulaires&quot;, en sélectionnant le groupe &quot;utilisateurs **de** formulaires&quot; et en ajoutant cette fois le groupe &quot;Utilisateurs **de** Web.Gov&quot; en tant que membre.
 
 ### Configuration du serveur de messagerie {#email-server-configuration}
 
 1. Vérification de la documentation de configuration [Configuration de la notification par courrier électronique](/help/sites-administering/notification.md)
 
 1. Navigate to *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. Recherchez et cliquez sur le **service Day CQ Mail Service **pour le configurer.
+1. Recherchez et cliquez sur le service Service **de messagerie** Day CQ pour le configurer.
 
    ![Configuration du service de messagerie Day CQ](assets/day_cq_mail_service.jpg)
 
-1. Configurez le service pour vous connecter au serveur SMTP de votre choix :
+1. Configurez le service pour qu’il se connecte au serveur SMTP de votre choix :
 
    1. **Nom d’hôte** du serveur SMTP : par exemple (smtp.gmail.com)
-   1. **Port** serveur : par exemple (465) pour gmail utilisant SSL
-   1. **** Utilisateur SMTP : demo@ &lt;nom_société>.com
+   1. **Port** du serveur : par exemple (465) pour gmail utilisant SSL
+   1. **Utilisateur SMTP :** demo@ &lt;nom_société>.com
    1. **Adresse**&quot;De&quot; : aemformsdemo@adobe.com
    ![Configurer SMTP](assets/configure_smtp.jpg)
 
@@ -171,7 +171,7 @@ Cette section contient des détails sur la configuration de SSL sur l’instance
 
 1. [SSL par défaut](/help/sites-administering/ssl-by-default.md)
 
-**Remarque:**
+**Notes:**
 
 1. Accédez à https://&lt;aemserver>:&lt;port>/aem/inbox où vous pourrez terminer le processus décrit dans le lien de documentation de référence ci-dessus.
 1. Le package **we-gov-forms.pkg.all-&lt;version>.zip** comprend un exemple de clé et de certificat SSL accessible en extrayant le dossier **we-gov-forms.pkg.all-&lt;version>.zip/ssl** qui fait partie du package.
@@ -234,15 +234,15 @@ Cette section contient des détails et des instructions sur la configuration de 
 1. Accédez à l’onglet &quot;Paramètres d’authentification&quot;.
 1. Saisissez les informations suivantes :
 
-   1. **** Racine du service : par exemple https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
-   1. **** Type d’authentification : OAuth 2.0
+   1. **Racine du service :** par exemple https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
+   1. **Type d’authentification :** OAuth 2.0
    1. **Paramètres** d’authentification (voir Paramètres [de configuration du cloud](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) MS Dynamics pour recueillir ces informations) :
 
-      1. ID client - également appelé ID d’application
+      1. ID client - également appelé 
       1. Secret client
       1. URL OAuth - par exemple [https://login.windows.net/common/oauth2/authorize](https://login.windows.net/common/oauth2/authorize)
       1. URL du jeton d’actualisation - [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
-      1. URL du jeton d’accès - par exemple, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
+      1. URL de  - [https://login.windows.net/common/oauth2/token, par exemple](https://login.windows.net/common/oauth2/token)
       1. Étendue de l&#39;autorisation - **openid**
       1. En-tête d&#39;authentification - **Auteur d&#39;autorisation**
       1. Ressource - [https://msdynamicsserver.api.crm3.dynamics.com, par exemple](https://msdynamicsserver.api.crm3.dynamics.com)
@@ -259,25 +259,25 @@ Les étapes détaillées dans cette section sont incluses pour vous aider à loc
 1. Dans le menu de gauche, sélectionnez &quot;Tous les services&quot;.
 1. Recherchez ou accédez à &quot;Enregistrement de l’application&quot;.
 1. Créez ou sélectionnez un enregistrement d’application existant.
-1. Copiez l’ID **** d’application à utiliser comme ID **** client OAuth dans la configuration du cloud AEM.
+1. Copiez le **** à utiliser comme ID **** client OAuth dans la configuration du cloud AEM.
 1. Cliquez sur &quot;Paramètres&quot; ou &quot;Manifeste&quot; pour configurer les URL de **réponse.**
 
    1. Cette URL doit correspondre à l’URL utilisée pour accéder à votre serveur AEM lors de la configuration du service OData.
 
-1. Dans la vue Paramètres, cliquez sur &quot;Clés&quot; pour afficher la création d’une clé (utilisée comme clé secrète client dans AEM).
+1. Dans le de paramètres, cliquez sur &quot;Clés&quot; pour  créer une nouvelle clé (utilisée comme clé secrète client dans AEM).
 
-   1. Veillez à conserver une copie de la clé, car vous ne pourrez pas la consulter ultérieurement dans Azure ou AEM.
+   1. Veillez à conserver une copie de la clé car vous ne pourrez pas la  ultérieurement dans Azure ou AEM.
 
-1. Pour localiser l’URL de ressource/URL racine du service, accédez au tableau de bord de l’instance MS Dynamics.
+1. Pour localiser l’URL de ressource/URL racine du service, accédez au d’instance MS Dynamics.
 1. Dans la barre de navigation supérieure, cliquez sur &quot;Ventes&quot; ou sur votre propre type d&#39;instance et sur &quot;Sélectionner les paramètres&quot;.
 1. Cliquez sur &quot;Personnalisations&quot; et sur &quot;Ressources pour les développeurs&quot; en bas à droite.
 1. Vous y trouverez l’URL racine du service : e.g
 
-* [https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
 
-1. Vous trouverez des informations détaillées sur l’URL du jeton d’accès et d’actualisation à l’adresse suivante :
+1. Pour plus d’informations sur l’URL d’actualisation et de  de, voir :
 
-* [https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
+   *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
 #### Test du modèle de données de formulaire {#testing-the-form-data-model}
 
@@ -327,7 +327,7 @@ Cette section contient des détails et des instructions sur la configuration d�
 Ce package est préconfiguré pour la connexion à Adobe Analytics. Les étapes ci-dessous permettent de mettre à jour cette configuration.
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/libs/cq/core/content/tools/cloudservices.html*
-1. Recherchez la section Adobe Analytics et sélectionnez le lien &quot;Afficher les configurations&quot;.
+1. Recherchez la section Adobe Analytics, puis sélectionnez le lien &quot;Afficher les configurations&quot;.
 1. Sélectionnez la configuration &quot;We.Gov Adobe Analytics (configuration Analytics)&quot;.
 
    ![Configuration du service cloud Analytics](assets/analytics_config.jpg)
@@ -338,26 +338,26 @@ Ce package est préconfiguré pour la connexion à Adobe Analytics. Les étapes 
 
 1. Dans la même page, cliquez sur &quot;We.Gov Adobe Analytics Framework (Analytics Framework)&quot; si vous souhaitez mettre à jour les configurations de la structure (voir [Activation de la création](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) AEM pour activer la création).
 
-### Rapports Adobe Analytics {#adobe-analytics-reporting}
+### Adobe Analytics {#adobe-analytics-reporting}
 
-#### Affichage des rapports des sites Adobe Analytics {#view-adobe-analytics-sites-reporting}
+####  de sites Adobe Analytics {#view-adobe-analytics-sites-reporting}
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Sélectionnez &quot;Site Web AEM Forms We.Gov&quot; pour afficher les pages du site.
+1. Sélectionnez &quot;Site Web AEM Forms We.Gov&quot; pour les pages du site.
 1. Sélectionnez l’une des pages du site (par exemple, Accueil), puis sélectionnez &quot;Analyses et recommandations&quot;.
 
-   ![Analyse et recommandations](assets/analytics_recommendations.jpg)
+   ![ et recommandations](assets/analytics_recommendations.jpg)
 
-1. Sur cette page, vous verrez les informations extraites d’Adobe Analytics qui se rapportent à la page Sites AEM (remarque : par conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne sont pas affichées en temps réel).
+1. Sur cette page, vous verrez les informations extraites d’Adobe Analytics qui se rapportent à la page Sites AEM (remarque : par conception, ces informations sont régulièrement actualisées à partir d’Adobe Analytics et ne s’affichent pas en temps réel).
 
-   ![Analyse des sites AEM](assets/sites_analysis.jpg)
+   ![des sites AEM](assets/sites_analysis.jpg)
 
-1. De retour sur la page vue (accessible à l’étape 3.), vous pouvez également afficher les informations de page vue en modifiant le paramètre d’affichage pour afficher les éléments dans le &quot;mode Liste&quot;.
-1. Recherchez le menu déroulant &quot;Affichage&quot; et sélectionnez &quot;Affichage par liste&quot;.
+1. De retour sur la page de  de de la page (accessible à l’étape 3.), vous pouvez également les informations de la page en modifiant le paramètre d’affichage en éléments de dans le &quot;de la page&quot;.
+1. Localisez le menu déroulant &quot;&quot; et sélectionnez &quot; &quot;.
 
    ![Mode Liste](assets/list_view.jpg)
 
-1. Dans le même menu, sélectionnez &quot;Paramètres d’affichage&quot; et sélectionnez les colonnes à afficher dans la section &quot;Analyses&quot;.
+1. Dans le même menu, sélectionnez &quot;Paramètre &quot; et sélectionnez les colonnes à afficher dans la section &quot;Analyses&quot;.
 
    ![Configuration des colonnes](assets/configure_columns.jpg)
 
@@ -365,7 +365,7 @@ Ce package est préconfiguré pour la connexion à Adobe Analytics. Les étapes 
 
    ![Affichage de nouvelles colonnes](assets/new_columns_display.jpg)
 
-#### Affichage des rapports sur les formulaires Adobe Analytics {#view-adobe-analytics-forms-reporting}
+####  Adobe Analytics forms {#view-adobe-analytics-forms-reporting}
 
 1. Accédez à .
 
@@ -375,20 +375,20 @@ Ce package est préconfiguré pour la connexion à Adobe Analytics. Les étapes 
 
    ![Rapport Analytics](assets/analytics_report.jpg)
 
-1. Attendez que la page se charge et affichez les données du rapport Analytics.
+1. Patientez jusqu’à ce que la page se charge et les données du rapport Analytics.
 
-   ![Affichage des données du rapport Analytics](assets/analytics_report_data.jpg)
+   ![des données de rapport Analytics](assets/analytics_report_data.jpg)
 
-#### Affichage des rapports Adobe Analytics {#view-adobe-analytics-reporting}
+####  Adobe Analytics {#view-adobe-analytics-reporting}
 
 Vous pouvez également accéder directement à Adobe Analytics pour afficher les données d’analyse.
 
 1. Accédez à [https://my.omniture.com/login/](https://my.omniture.com/login/)
 1. Connectez-vous à l’aide de vos informations d’identification :
 
-   1. **** Société : Démo d’AEM Forms
-   1. **** Utilisateur : &lt;disponible sur demande>
-   1. **** Mot de passe : &lt;disponible sur demande>
+   1. **:** Démo d’AEM Forms
+   1. **Utilisateur :** &lt;disponible sur demande>
+   1. **Mot de passe :** &lt;disponible sur demande>
 
 1. Sélectionnez &quot;Site de référence We.Gov&quot; dans Report Suites.
 
@@ -404,10 +404,10 @@ Cette section comprend des instructions sur la personnalisation de la démonstra
 
 ### Activation de la création AEM {#enableauthoring}
 
-Ce package de démonstration comprend un fichier de configuration de service OSGI qui contrôle le comportement du service WCM Filter sur le serveur d’auteur cible. Cette configuration fait fonctionner le serveur en mode d&#39;auteur désactivé (équivalent à ?wcmmode=disabled) afin d&#39;autoriser la démonstration. Pour mettre à jour cette configuration et activer la création, procédez comme suit :
+Ce package de démonstration comprend un fichier de configuration de service OSGI qui contrôle le comportement du service WCM Filter sur le serveur de l’auteur . Cette configuration fait fonctionner le serveur en mode d&#39;auteur désactivé (équivalent à ?wcmmode=disabled) afin d&#39;autoriser la démonstration. Pour mettre à jour cette configuration et activer la création, procédez comme suit :
 
 1. Navigate to *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. Recherchez et cliquez sur le service **Day CQ WCM Filter **Service à configurer.
+1. Recherchez et cliquez sur le service de filtrage **WCM** Day CQ pour le configurer.
 
    ![Filtre WCM Day CQ](assets/day_cq_wcm_filter.jpg)
 
@@ -430,7 +430,7 @@ Ce site comporte également des bibliothèques-clients, dont l&#39;une importe B
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/clientlibs/clientlib-base/css/bootstrap*
 
-Les modèles modifiables inclus dans ce package sont également préconfigurés avec les stratégies de modèle/page qui utilisent les classes CSS Bootstrap 4 pour la pagination, le style, etc. Toutes les classes n’ont pas été ajoutées aux stratégies de modèle, mais toute classe prise en charge par Bootstrap 4 peut être ajoutée aux stratégies. Consultez la page de prise en main pour obtenir la liste des classes disponibles :
+Les modèles modifiables inclus dans ce package sont également préconfigurés avec les stratégies de modèle/page qui utilisent les classes CSS Bootstrap 4 pour la pagination, la mise en forme, etc. Toutes les classes n’ont pas été ajoutées aux stratégies de modèle, mais toute classe prise en charge par Bootstrap 4 peut être ajoutée aux stratégies. Consultez la page de prise en main pour un de classes disponibles :
 
 [https://getbootstrap.com/docs/4.1/getting-started/introduction/](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
@@ -444,11 +444,11 @@ Project DAM Assets inclut également des logos et des images We.Gov. Ces ressour
 
 *https://&lt;aemserver>:&lt;port>/assets.html/content/dam/we-gov*
 
-Lors de la modification des modèles de page et de formulaire, vous pouvez choisir de mettre à jour les logos de marque en modifiant les composants Navigation et Pied de page. Ces composants offrent une boîte de dialogue de marque et de logo configurable qui peut être utilisée pour mettre à jour les logos :
+Lors de la modification des modèles de page et de formulaire, vous pouvez choisir de mettre à jour les logos de marque en modifiant les composants Navigation et Pied de page. Ces composants   une boîte de dialogue de marque et de logo configurable qui peut être utilisée pour mettre à jour les logos :
 
 ![Logos de modèles](assets/template_logos.jpg)
 
-Voir Modification du contenu d’une page pour plus d’informations :
+Pour plus d’informations, voir Modification du contenu d’une page :
 
 [Modification du contenu de la page](../../sites-authoring/editing-content.md)
 
@@ -456,7 +456,7 @@ Voir Modification du contenu d’une page pour plus d’informations :
 
 Toutes les pages du site sont disponibles à partir de : *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
 
-Ces pages de site utilisent également le package de grille AEM pour contrôler la disposition de quelques composants.
+Ces pages de site utilisent également le package de grille AEM pour contrôler la mise en page de quelques composants.
 
 #### Style system {#style-system}
 
@@ -478,7 +478,7 @@ Ces formulaires peuvent être personnalisés en fonction de certains cas d’uti
 
 * contact_id - Champ masqué utilisé pour recevoir l&#39;ID de contact MS Dynamics pendant l&#39;envoi
 * Soumettre - La logique du bouton Envoyer nécessite une personnalisation pour prendre en charge les rappels. La personnalisation est documentée, mais un script volumineux était nécessaire pour envoyer le formulaire lors de l’exécution d’une opération POST et GET à MS Dynamics via le modèle de données de formulaires.
-* Panneau racine : l’événement Initialize permet d’ajouter un bouton MS Dynamics à la boîte de réception AEM de la manière la moins intrusive possible, car tous les composants de l’interface utilisateur Granite de la boîte de réception AEM ne peuvent pas être modifiés.
+* Panneau racine : l’ Initialize permet d’ajouter un bouton MS Dynamics à la boîte de réception AEM de la manière la moins intrusive possible, car tous les composants de l’interface utilisateur Granite de la boîte de réception AEM ne peuvent pas être modifiés.
 
 #### Style de formulaire adaptatif {#adaptive-form-styling}
 
@@ -489,7 +489,7 @@ Les formulaires adaptatifs peuvent également être mis en forme à l’aide de 
 
 ### Personnalisation du processus {#workflow-customization}
 
-Formulaire adaptatif d’inscription envoyé à un processus OSGI pour traitement. Ce flux de travaux se trouve à l’adresse* https://&lt;aemserver>:&lt;port>/conf/we-gov/settings/models/we-gov-process.html*.
+Formulaire adaptatif d’inscription envoyé à un processus OSGI pour traitement. Ce flux de travaux se trouve à l’adresse *https://&lt;aemserver>:&lt;port>/conf/we-gov/settings/models/we-gov-process.html*.
 
 En raison de certaines limitations, ce flux de travaux contient plusieurs scripts et étapes de processus OSGI personnalisés. Ces étapes de flux de travail ont été créées sous forme d’étapes génériques et n’ont pas été créées avec des dialogues de configuration. Actuellement, la configuration des étapes du processus repose sur des arguments de processus.
 
@@ -502,8 +502,8 @@ Cette section contient des informations sur les fonctionnalités de démonstrati
 ### Remarques concernant les démos {#demo-considerations}
 
 * Conformément à AGRS-159, assurez-vous que le nom (premier, milieu et dernier) du contact utilisé dans le formulaire adaptatif d’inscription est unique.
-* Le formulaire adaptatif d’inscription envoie le courrier électronique Adobe Sign au courrier électronique spécifié dans le champ de courrier électronique du formulaire. Cette adresse électronique ne peut pas être identique à celle utilisée pour configurer la configuration du cloud Adobe Sign.
-* Par défaut, le package de démonstration inclut plusieurs configurations de service OSGI pour contrôler le comportement global du serveur cible hébergeant la démonstration. Ces configurations incluent une configuration de service de filtre WCM qui, par défaut, rend le serveur opérationnel en mode auteur **** désactivé (équivalent à ?wcmmode=disabled). Voir [Activer la création](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) AEM pour autoriser la création de pages.
+* Le formulaire adaptatif d’inscription envoie le courrier électronique Adobe Sign au courrier électronique spécifié dans le champ de courrier électronique du formulaire. Cette adresse électronique ne peut pas être la même que celle utilisée pour configurer la configuration du cloud Adobe Sign.
+* Par défaut, le package de démonstration inclut plusieurs configurations de service OSGI pour contrôler le comportement global du serveur de  hébergeant la démonstration. Ces configurations incluent une configuration de service de filtre WCM qui, par défaut, rend le serveur opérationnel en mode auteur **** désactivé (équivalent à ?wcmmode=disabled). Voir [Activer la création](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) AEM pour autoriser la création de pages.
 
 ### Problèmes connus {#known-issues}
 
