@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -66,8 +66,8 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 [Obtenir le fichier](assets/example-mortgage-loan-application.zip)
 
 1. Ouvrez la console Modèles de processus. The default URL is https://&#39;[server]:[port]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
-1. Sélectionnez **Créer**, puis **Créer un modèle**. La boîte de dialogue Ajouter un modèle de workflow s’ouvre.
-1. Saisissez le **titre** et le **nom** (facultatif),  par exemple, une demande de prêt immobilier. Appuyez sur **Terminé**.
+1. Sélectionnez **Create** (Créer), puis **Creat Model** (Créer un modèle). La boîte de dialogue Add Workflow Model (Ajouter un modèle de processus) s’ouvre.
+1. Saisissez **Title** (Titre) et **Name** (Nom) (facultatif). par exemple, une demande de prêt immobilier. Appuyez sur **Done** (Terminé). 
 1. Sélectionnez le processus nouvellement créé et cliquez sur **Modifier**. Désormais, vous pouvez ajouter des étapes de processus pour créer une logique d’entreprise. Lorsque vous créez un modèle de processus pour la première fois, il contient :
 
    * les étapes : Début du processus et Fin du processus. Ces étapes définissent le début et la fin du processus. Ces étapes sont obligatoires et ne peuvent pas être modifiées ou supprimées.
@@ -76,8 +76,8 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 1. Activez les notifications électroniques. Vous pouvez configurer le flux de travail centré sur Forms sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
 
    1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
-   1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
+   1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Save]** (Enregistrer).
+   1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
 1. Créez des étapes de processus. Un processus peut se composer de plusieurs étapes. Ces étapes sont affichées dans la boîte de réception AEM et signalent la progression du processus.
 
@@ -107,7 +107,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    ![OU Exemple de fractionnement](assets/orsplit_branch1_active_new.png)
 
-   **pour la branche 2**
+   **pour la branche 1**
 
    When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
@@ -139,15 +139,15 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 <table>
  <tbody>
   <tr>
-   <td>Champ</td>
+   <td>Field (Champ)</td>
    <td>Description</td>
   </tr>
   <tr>
-   <td>Titre</td>
+   <td>Title (Titre)</td>
    <td>Le titre est visible dans la boîte de réception AEM et permet aux utilisateurs de sélectionner une demande. Assurez-vous qu’il soit descriptif. Par exemple, Demande d’ouverture de compte d’épargne.<br />  </td>
   </tr>
   <tr>
-   <td>Nom </td>
+   <td>Name (Nom) </td>
    <td>Indiquez le nom de la demande. Tous les caractères autres que les lettres, chiffres, tirets et traits de soulignement ont été remplacés par des tirets. </td>
   </tr>
   <tr>
@@ -221,7 +221,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 <table>
  <tbody>
   <tr>
-   <td>Champ</td>
+   <td>Field (Champ)</td>
    <td>Description</td>
   </tr>
   <tr>
@@ -249,7 +249,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
 1. Appuyez sur **Avancé**. Specify a value for the following field and taps **Create**. Le dossier de contrôle est configuré pour lancer un processus. Désormais, chaque fois qu’un fichier est placé dans le répertoire d’entrée du dossier de contrôle, le processus spécifié est déclenché.
 
-   | Champ | Description |
+   | Field (Champ) | Description |
    |---|---|
    | Filtre de mappeur de charge | Lorsque vous créez un dossier de contrôle, il crée une structure de dossier dans le référentiel crx. La structure de dossier peut servir de charge utile au processus. Vous pouvez écrire un script pour mapper un processus AEM pour accepter les entrées de la structure du dossier de contrôle. Une implémentation prête à l’emploi est disponible et répertoriée dans le Filtre de mappeur de charge. Si vous ne disposez pas d’une implémentation personnalisée, choisissez l’implémentation par défaut. |
 
@@ -266,9 +266,9 @@ Vous pouvez associer et exécuter un flux de travail Forms sur OSGi lors de l’
 Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier électronique des processus AEM pour envoyer un courrier électronique. Effectuez les étapes suivantes pour spécifier les serveurs de messagerie et les autres configurations requises pour l’envoi de courriers électroniques :
 
 1. Go to AEM configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
-1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Save]** (Enregistrer).
+1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domaines]**, spécifiez le nom de hôte /l’adresse IP et le numéro de port réels pour les instances locale, de l’auteur et de publication. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflows terminées ou en cours d’exécution du référentiel. Pour plus d’informations, reportez-vous à la section Purge [régulière des instances]de flux de travail (/help/sites-administering/workflows-administering.md#normal purging of workflow instances).
+Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflows terminées ou en cours d’exécution du référentiel. Pour plus d’informations, voir [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
