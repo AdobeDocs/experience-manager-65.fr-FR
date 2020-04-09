@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
+source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
 
 ---
 
@@ -151,8 +151,8 @@ Par ailleurs, la console affiche des informations utiles sur les versions :
 
 Dans l’exemple suivant :
 
-* Les versions **Shirts** sont purgées parce que leur âge de version est supérieur à 2 jours.
-* Les versions **Tonga Fashions!** sont purgées, car le nombre de versions est supérieur à 5. 
+* Les versions **[!DNL Shirts]** sont purgées parce que leur âge de version est supérieur à 2 jours.
+* The **[!DNL Tonga Fashions!]** versions are purged because their number of versions is greater than 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -1034,7 +1034,7 @@ Si votre système ne dispose pas de suffisamment de mémoire, cela peut vous êt
 
 Dans ce cas, vérifiez :
 
-* les paramètres JVM utilisés pour [lancer AEM](/help/sites-deploying/deploy.md#getting-started)
+* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
 * La base de connaissances :
 
    * [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
