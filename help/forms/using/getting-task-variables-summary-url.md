@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -58,9 +58,9 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
    1. Créez un processus **create PTO summary** et utilisez-le comme sous-processus avant la tâche **Affecter une tâche** dans votre orchestration.
    1. Définissez **employeeName**, **employeeID**, **ptoReason**, **totalDays** et **nodeName** comme variables d’entrée dans votre nouveau processus. Ces variables seront transmises en tant que données de formulaire envoyées.
 
-      Définissez également une variable de sortie **ptoNodePath **qui sera utilisée lors de la définition de l’URL de résumé.
+      Définissez également une variable de sortie **ptoNodePath** qui sera utilisée lors de la définition de l’URL de résumé.
 
-   1. In the **create PTO summary** process, use the **set value** component to set the input details in a **nodeProperty **(**nodeProps**) map.
+   1. Dans le processus **create PTO summary**, utilisez le composant **set value** pour définir les détails d’entrée dans un mappage **nodeProperty**(**nodeProps**).
 
       Les clés de ce mappage doivent être identiques à celles définies dans votre rendu HTML à l’étape précédente.
 
@@ -84,4 +84,4 @@ Dans l’espace de travail AEM Forms, lorsque vous ouvrez une tâche, l’URL de
 
 Il est possible de modifier la mise en page du résumé sans modifier le processus. Le rendu HTML affiche le résumé correctement.
 
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
+**[Contacter le support technique](https://www.adobe.com/fr/account/sign-in.supportportal.html)**
