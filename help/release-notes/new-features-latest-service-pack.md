@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -39,12 +39,12 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 
 Le d’autorisations  entre les ressources AEM et le portail de marque est modifié. Auparavant, Brand Portal était configuré dans l’interface utilisateur classique via la passerelle OAuth héritée, qui fait appel à l’échange de jetons JWT pour obtenir un jeton d’accès IMS en vue de l’autorisation. AEM Assets est désormais configuré avec Brand Portal via Adobe I/O, qui fournit un jeton IMS pour autoriser votre client Brand Portal.
 
-Les étapes de configuration des ressources AEM avec le portail de marque sont différentes selon votre version AEM et selon que vous effectuez une configuration pour la première fois ou une mise à niveau des configurations existantes. See [Configure AEM Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
+Les étapes de configuration des ressources AEM avec le portail de marque sont différentes selon votre version AEM et selon que vous effectuez une configuration pour la première fois ou une mise à niveau des configurations existantes. Voir [Configuration d’AEM Assets avec Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) pour plus de détails.
 
 
 ### Problèmes connus {#known-issues-bp}
 
-* Les utilisateurs du portail de marque ne peuvent pas publier les ressources du dossier de contributions dans AEM Assets lors de la mise à niveau vers les E/S Adobe sur AEM 6.5.4.
+* Les utilisateurs de Brand Portal ne peuvent pas publier les ressources du dossier de contribution dans AEM Assets après mise à niveau vers Adobe I/O sur AEM 6.5.4.
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
@@ -98,9 +98,13 @@ Experience Manager Forms comprend les améliorations d’accessibilité suivante
 
 ## Principales fonctionnalités des Service Packs version 6.5 d’AEM {#key-features-previous-service-packs}
 
-### Smart Imaging for Dynamic Media (6.5.3.0) {#smart-imaging}
+### Smart Imaging for Dynamic Media {#smart-imaging}
 
 L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images adaptées optimisées pour leur expérience, ce qui améliore les performances et l’engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
+
+### Recadrage intelligent dans les  vidéo pour les médias dynamiques (6.5.3.0) {#smart-crop-video}
+
+Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui utilise la puissance de l’intelligence artificielle d’Adobe Sensei pour détecter et rogner automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Recherche visuelle pour AEM Assets (6.5.2.0) {#visual-search}
 
