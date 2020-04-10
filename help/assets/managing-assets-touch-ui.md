@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
 
 ---
 
@@ -47,18 +47,18 @@ Vous pouvez transférer différents types de ressource (dont des images, des fic
 
 Vous pouvez choisir de transférer des ressources vers des dossiers avec ou sans un profil de traitement attribué.
 
-Pour les dossiers auxquels un profil de traitement est affecté, le nom du profil s’affiche sur la vignette en mode Carte. En mode Liste, le nom du profil s’affiche dans la colonne **Profil de traitement**. Reportez-vous à la section [Profils de traitement](/help/assets/processing-profiles.md).
+Pour les dossiers auxquels un profil de traitement est affecté, le nom du profil s’affiche sur la vignette en mode Carte. En mode Liste, le nom du profil s’affiche dans la colonne **Profil de traitement.** Reportez-vous à la section [Profils de traitement](/help/assets/processing-profiles.md).
 
 Before uploading an asset, ensure that it is in a [format](/help/assets/assets-formats.md) that AEM Assets supports.
 
-1. Dans l’interface utilisateur Ressources, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
-1. Pour transférer les ressources, effectuez l’une des opérations suivantes :
+1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement où vous voulez ajouter des ressources numériques.
+1. Pour charger les ressources, effectuez l’une des opérations suivantes :
 
-   * On the toolbar, tap the **[!UICONTROL Create]** icon. Then on the menu, tap **[!UICONTROL Files]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
-   * Dans un navigateur prenant en charge HTML5, faites glisser les ressources directement sur l’interface utilisateur Ressources. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
+   * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Then on the menu, tap **[!UICONTROL Files]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
+   * Dans un navigateur prenant en charge HTML5, faites glisser directement les ressources dans l’interface utilisateur d’Assets. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
    ![option de création dans aem](assets/create-options.png)
 
-   Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les fichiers dans la boîte de dialogue du sélecteur de fichiers. Lorsque vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
+   Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
 
    Vous pouvez suspendre le transfert des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
@@ -74,7 +74,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![chlimage_1-212](assets/chlimage_1-6.png)
 
-   To cancel an ongoing upload, click close (`X`) next to the progress bar. Lorsque vous annulez le transfert, AEM Assets supprime la partie partiellement transférée de la ressource.
+   Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. Lorsque vous annulez le transfert, AEM Assets supprime la partie partiellement transférée de la ressource.
 
    La possibilité de reprendre le téléchargement s’avère particulièrement utile dans les scénarios dans lesquels la bande passante est faible et le réseau dysfonctionne, car le téléchargement d’une ressource volumineuse prend un long moment. Vous pouvez suspendre l’opération de transfert et la reprendre ultérieurement lorsque la situation s’améliore. Lorsque vous reprenez le transfert, il commence au niveau où vous l’avez suspendu.
 
@@ -90,9 +90,9 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    >[!NOTE]
    >
-   >When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. Cet ID est différent de l’ID de la ressource précédente.
+   >Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente.
    >
-   >Si l’option Statistiques des ressources est activée pour effectuer le suivi des impressions/clics avec Adobe Analytics, l’ID de ressource régénéré invalide les données capturées pour la ressource sur Analytics.
+   >Si la fonction Statistiques sur les ressources est activée pour effectuer le suivi des impressions/clics avec Adobe Analytics, l’ID de ressource régénéré invalide les données capturées pour la ressource dans Analytics.
 
    If the asset you upload exists in AEM Assets, the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. Dans ce cas, les noms des fichiers n’ont pas d’importance.
 
@@ -102,19 +102,19 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![chlimage_1-214](assets/chlimage_1-8.png)
 
-   Pour conserver la ressource  dans AEM Assets, appuyez/cliquez sur **[!UICONTROL Conserver]**. Pour supprimer le fichier  que vous avez téléchargé, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
+   Pour conserver la ressource en double dans AEM Assets, appuyez/cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
-   AEM Assets vous empêche de télécharger des fichiers dont les noms contiennent des caractères interdits. Si vous tentez de télécharger un fichier dont le nom de fichier contient un caractère non autorisé ou plus, AEM Assets affiche un message d’avertissement et interrompt le téléchargement jusqu’à ce que vous supprimiez ces caractères ou que vous les téléchargiez avec un nom autorisé.
+   AEM Assets vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contenant un ou plusieurs caractères interdits, AEM Assets affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
 
-   To suit specific file naming conventions for your organization, the [!UICONTROL Upload Assets] dialog lets you specify long names for the files that you upload.
+   Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés.
 
    Toutefois, la liste de caractères suivante, séparée par des espaces, n’est pas prise en charge :
 
-   * asset file name must not contain `* / : [ \\ ] | # % { } ? &`
-   * asset folder name must not contain `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+   * Le nom du fichier de ressource ne doit pas contenir `* / : [ \\ ] | # % { } ? &`
+   * Le nom du dossier de ressources ne doit pas contenir `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
    ![chlimage_1-215](assets/chlimage_1-10.png)
 
-   De plus, l’interface utilisateur Assets affiche la ressource la plus récente que vous avez téléchargée ou le dossier que vous avez créé en premier.
+   De plus, l’interface utilisateur d’Assets affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
 
    Si vous annulez le transfert avant la fin de l’opération, AEM Assets arrête le transfert du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà téléchargés ne sont pas supprimés.
 
@@ -138,14 +138,14 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 >[!NOTE]
 >
->Pour télécharger des fichiers via FTP en mode Contenu multimédia dynamique - Scene7, installez Feature Pack 18912 sur les instances d’auteur AEM. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)des ressources en vrac.
+>Pour télécharger des fichiers via FTP en mode Contenu multimédia dynamique - Scene7, installez Feature Pack 18912 sur les instances d’auteur AEM. Contact [Adobe Customer Care](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)des ressources en vrac.
 >
 >Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
 1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
-1. [Connectez-vous à Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) à l’aide des informations de connexion qui vous ont été envoyées par e-mail. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
+1. [Connectez-vous à Dynamic Media Classic](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à l’aide des informations de connexion qui vous ont été envoyées par e-mail. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 
 1. Cliquez sur l’onglet **[!UICONTROL Via FTP]** dans le coin supérieur gauche de la page Télécharger.
 1. Sélectionnez le dossier FTP source à utiliser pour le transfert des fichiers dans la partie gauche de la page et le dossier de destination dans la partie droite.
@@ -371,7 +371,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
    *Figure : Planifier le  des ressources*
 
-1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Ressources ou via l’API HTTP.
+1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Assets ou via l’API HTTP.
 
    ![utiliser le sélecteur d’heure de date ou les touches du clavier dans le champ Heure de désactivation pour ajouter la date et l’heure pour le  de ressources](assets/schedule-deactivation.png)
 
@@ -621,7 +621,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’AEM vous a authentifié.
 
-## Recherche de ressources  {#assetsearch}
+## Recherche de ressources    {#assetsearch}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -736,7 +736,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource
    ![chlimage_1-233](assets/chlimage_1-29.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
@@ -942,30 +942,7 @@ La création de versions permet d’effectuer les opérations suivantes :
 
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
-1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez commencer un workflow et appuyez/cliquez sur la ressource pour afficher la page Ressource.
-1. Tap the GlobalNav icon, then select **[!UICONTROL Timeline]** from the menu to display the timeline.
-
-   ![chronologie-1](assets/timeline.png)
-
-1. Tap the **[!UICONTROL Actions]** (arrow) icon at the bottom to open the list of actions available for the asset.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. Tap **[!UICONTROL Start Workflow]** from the list.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. Dans la section **[!UICONTROL Démarrer le processus]**, sélectionnez un modèle de workflow dans la liste.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (Facultatif) Spécifiez le titre du workflow, qui peut permettre de référencer l’instance du workflow.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. Tap **[!UICONTROL Start]**, then tap **[!UICONTROL Proceed]** in the dialog to confirm. Chaque étape du workflow s’affiche en tant qu’événement dans la chronologie.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+Pour appliquer un flux de travail au traitement d’une ressource, voir [Flux de travail  sur une ressource](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Collections {#collections}
 
