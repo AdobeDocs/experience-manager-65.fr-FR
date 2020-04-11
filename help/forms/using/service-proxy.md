@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,7 +43,7 @@ Les formulaires HTML5 se connectent aux serveurs AEM pour exécuter les scripts,
 
 #### Exécuter les scripts et services Web côté serveur {#execute-server-sided-scripts-and-web-services}
 
-Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côté serveur. Le tableau suivant répertorie tous les paramètres utilisés dans les scripts côté serveur et les services Web.
+Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côté serveur. Le tableau suivant  tous les paramètres utilisés dans les scripts côté serveur et les services Web.
 
 <table>
  <tbody>
@@ -60,7 +60,7 @@ Les scripts destinés à s’exécuter sur le serveur sont appelés scripts côt
    <td><p>Le paramètre contextSom contient l’expression SOM de l’objet où des événements ont été exécutés.</p> </td>
   </tr>
   <tr>
-   <td><p>Modèle</p> </td>
+   <td><p>Template (Modèle)</p> </td>
    <td><p>Le paramètre Template contient le modèle utilisé pour générer le formulaire.</p> </td>
   </tr>
   <tr>
@@ -97,7 +97,7 @@ En cliquant sur le bouton Envoyer, les formulaires HTML5 envoient des données a
    <td><p><strong>Description</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Modèle</p> </td>
+   <td><p>Template (Modèle)</p> </td>
    <td><p>Motif utilisé pour rendre le formulaire.</p> </td>
   </tr>
   <tr>
@@ -133,5 +133,3 @@ Si submiturl figure dans le paramètre de requête, le proxy de service d’envo
 * If proxy posts the data, the proxy service passes all the parameters except submitUrl to the */bin/xfaforms/submitaction* end point and receives xml bytes in response stream. Ensuite, le service de proxy publie les octets XML de données au paramètre submitUrl pour traitement.
 
 * Avant d’envoyer des données (demande de post-traitement) sur un serveur, les formulaires HTML5 vérifient la connectivité et la disponibilité du serveur. Pour vérifier la connectivité et la disponibilité, les formulaires HTML envoient une première demande vide au serveur. Si le serveur est disponible, les formulaires HTML5 envoie les données (demande de post-traitement) au serveur. If the server is not available, an error message, *Could’t connect to the server,* is displayed. La détection anticipée prévient les problèmes lors du remplissage du formulaire par les utilisateurs. La servlet proxy traite la demande d&#39;en-tête et ne renvoie pas d&#39;exception.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
