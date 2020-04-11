@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -62,7 +62,7 @@ Voici d’autres outils qui peuvent être disponibles avec les tâches ci-dessus
 
 Vous pouvez ouvrir et verrouiller des tâches à partir de votre liste de tâches ou demander et ouvrir des tâches à partir de la liste de tâches d’un groupe ou partagée. Lorsque vous ouvrez une tâche, elle s’affiche sur le panneau principal. Les autres tâches sont affichées dans la liste à côté de la liste des tâches.
 
-S’il existe une URL de résumé de la tâche, la vue Résumé de la tâche s’ouvre par défaut au lieu du formulaire associé à une tâche. Même lorsqu’un utilisateur active l’option Open the form in maximized mode (Ouvrir le formulaire en mode agrandi) dans Assign Task (Affecter une tâche), le formulaire ne s’ouvre pas en mode agrandi.
+S’il existe une URL de  résumé du, le  de résumé du s’ouvre par défaut, au lieu du formulaire associé à un. Même lorsqu’un utilisateur active l’option Open the form in maximized mode (Ouvrir le formulaire en mode agrandi) dans Assign Task (Affecter une tâche), le formulaire ne s’ouvre pas en mode agrandi.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Lorsque vous ouvrez une tâche à partir de votre liste de tâches, si votre lis
    >
    >Vous pouvez également verrouiller ou déverrouiller une tâche sur n’importe quel onglet lorsque celle-ci est ouverte.
 
-   ![lock_task](assets/lock_task.png)
+   ![lock_](assets/lock_task.png)
 
    Menu Toutes les options sur une tâche
 
@@ -94,10 +94,10 @@ Lorsque vous ouvrez une tâche à partir de votre liste de tâches, si votre lis
 
 Lorsque vous ouvrez et demandez une tâche à partir de la liste d’un groupe ou partagée, la tâche est déplacée de la liste du groupe ou de la liste partagée vers votre liste de tâches individuelle. Les autres utilisateurs ayant accès à la liste ne sont pas autorisés à travailler sur la tâche.
 
-1. Sur la page Tâches, dans le volet de gauche, sélectionnez une liste de tâches de groupe ou partagée. Toutes les tâches sont affichées dans le panneau central.
+1. Sur la page Tâches, dans le volet de gauche, sélectionnez un groupe ou un  de tâches partagé. Toutes les tâches sont affichées dans le panneau central.
 1. Exécutez l’une des étapes suivantes :
 
-   * Pour demander une tâche, sans l’ouvrir, à partir de la liste de tâches d’un groupe ou partagée, cliquez sur **Demander** en plaçant le pointeur de la souris sur la tâche. Si la tâche est ouverte, le bouton Demander réparation est également disponible dans la barre d’actions située sous le volet Office. Lors de la demande, une tâche est déplacée de la liste de tâches du groupe ou partagée vers votre liste.
+   * Pour demander une tâche, sans l’ouvrir, à partir de la liste de tâches d’un groupe ou partagée, cliquez sur **Demander** en plaçant le pointeur de la souris sur la tâche. Une autre solution consiste à cliquer sur le bouton Demander une  dans la barre d’actions située sous le volet  du. Lors de la demande, une tâche est déplacée de la liste de tâches du groupe ou partagée vers votre liste.
    * Pour demander et ouvrir une tâche à partir de la liste de tâches d’un groupe ou partagée, cliquez sur **Demander et ouvrir**.
 
 ## Utilisation de tâches {#working-with-tasks}
@@ -191,7 +191,7 @@ Vous pouvez être autorisé à ajouter, mettre à jour, supprimer ou enregistrer
 
    >[!NOTE]
    >
-   >vous pouvez configurer l’espace de travail afin qu’il enregistre automatiquement les informations saisies par l’utilisateur en tant que brouillon. Si l’enregistrement automatique est activé et qu’un utilisateur travaille sur un brouillon, ce dernier est enregistré régulièrement. En cas d’enregistrement automatique, le nom par défaut de la tâche est automatiquement utilisé.
+   >vous pouvez configurer l’espace de travail afin qu’il enregistre automatiquement les informations saisies par l’utilisateur en tant que brouillon. Si l’enregistrement automatique est activé et qu’un utilisateur travaille sur un brouillon, le brouillon est enregistré régulièrement. En cas d’enregistrement automatique, le nom par défaut de la tâche est automatiquement utilisé.
    >
    >
    >For more information, see Save Draft Periodically in [Managing Preferences](/help/forms/using/getting-started-livecycle-html-workspace.md).
@@ -246,16 +246,16 @@ Vous pouvez envoyer plusieurs tâches dans votre liste des tâches. Les tâches 
 
 >[!NOTE]
 >
->Cette option est disponible si le champ isMustOpenToComplete n’est pas sélectionné à l’étape Affecter une tâche dans Workbench, lors de la conception d’un processus.
+>Cette option est disponible si le champ isMustOpenToComplete n’est pas sélectionné à l’étape Assign  dans Workbench, lors de la conception d’un processus.
 
 1. Sur la page des tâches, dans le volet de gauche, sélectionnez votre liste de tâches individuelle. Toutes vos tâches sont affichées sur le volet central.
 1. Sélectionnez l’option **Activer le mode bloc**. Les cases à cocher s’affichent devant les tâches de la liste.
 
    >[!NOTE]
    >
-   >Cette option n’est pas disponible pour les tâches pour lesquelles le champ isMustOpenToComplete est sélectionné à l’étape Affecter une tâche dans Workbench, lors de la conception d’un processus. Les cases ces tâches dans la LISTE DE TÂCHES restent toujours désactivées.
+   >Cette option n’est pas disponible pour les  pour lesquels le champ isMustOpenToComplete est sélectionné à l’étape Assign  dans Workbench, lors de la conception d’un processus. Les cases ces tâches dans la LISTE DE TÂCHES restent toujours désactivées.
 
-1. Tâches sélectionnées pour l’approbation en bloc. Plusieurs tâches du même processus, avec le même nom de tâche et les mêmes options de routage peuvent être sélectionnées. Une fois que vous avez sélectionné une tâche pour approbation, seules les tâches avec le même processus, avec les mêmes noms de tâche et les mêmes options d&#39;itinéraire restent activées. Le reste est désactivé.
+1. Tâches sélectionnées pour l’approbation en bloc. Plusieurs tâches du même processus, avec le même nom de tâche et les mêmes options de routage peuvent être sélectionnées. Une fois que vous avez sélectionné un  d’approbation, seuls les  avec le même processus, avec les mêmes noms d’ et les mêmes options d’itinéraire restent activés. Le reste est désactivé.
 
    ![1_bulkapproval](assets/1_bulkapproval.png)
 
@@ -267,7 +267,7 @@ Vous pouvez envoyer plusieurs tâches dans votre liste des tâches. Les tâches 
 
 Vous pouvez recevoir et effectuer les tâches par courrier électronique. La participation aux tâches par courrier électronique vous évite d’avoir à consulter régulièrement votre liste de tâches afin de vérifier l’existence de nouvelles tâches ou la page Suivi pour vérifier l’état d’une tâche.
 
-Tout d’abord, définissez vos préférences d’espace de travail AEM Forms pour recevoir des notifications par courrier électronique. L’espace de travail AEM Forms peut envoyer des notifications par courrier électronique pour les tâches de votre liste de tâches ou de tout groupe auquel vous appartenez. L’administrateur détermine le moment d’envoi des courriers électroniques de notification, ainsi que leurs destinataires.
+Tout d’abord, définissez vos préférences d’espace de travail AEM Forms pour recevoir des notifications par courrier électronique. L’espace de travail AEM Forms peut envoyer des notifications par courrier électronique pour les  de votre Tâches ou de tout autre  de tâches de groupe auquel vous appartenez. L’administrateur détermine le moment d’envoi des courriers électroniques de notification, ainsi que leurs destinataires.
 
 Les courriers électroniques peuvent contenir un lien qui ouvre la tâche dans AEM Forms Workspace, une pièce jointe du formulaire utilisé pour la tâche, ou des actions pour exécuter la tâche par courrier électronique. Si un formulaire est inclus dans le courrier électronique, vous pouvez ouvrir le formulaire et exécuter la tâche si les boutons nécessaires sont intégrés dans le formulaire. Si les actions pour exécuter la tâche sont incluses dans le courrier électronique, vous pouvez effectuer la tâche en cliquant sur les actions dans le courrier électronique ou en répondant au courrier électronique avec l’action saisie en tant que première ligne dans le corps du courrier électronique.
 
@@ -277,7 +277,7 @@ Lorsque vous exécutez une tâche par courrier électronique, la tâche est supp
 
 >[!NOTE]
 >
->Si l’utilisateur n’est pas connecté à l’espace de travail AEM Forms dans le navigateur et qu’il ouvre un lien vers une tâche de tâches, le lien direct ne parvient pas à s’ouvrir et affiche une exception. Connectez-vous à l’espace de travail AEM Forms avant de cliquer sur les liens dans les courriers électroniques.
+>Si l’utilisateur n’est pas connecté à l’espace de travail AEM Forms dans le navigateur et qu’il ouvre un lien vers un  de tâches, le lien direct ne parvient pas à s’ouvrir et affiche une exception. Connectez-vous à l’espace de travail AEM Forms avant de cliquer sur les liens dans les courriers électroniques.
 
 >[!NOTE]
 >
@@ -311,7 +311,7 @@ Une liste de tâches de groupe peut comporter plusieurs membres. Un administrate
 
 Par exemple, chaque membre de votre équipe traite des formulaires de demande de prêt. Toutes ces tâches sont envoyées à une liste de tâches de groupe accessible à chaque membre de votre groupe. Tous les membres de votre groupe ont accès aux tâches de cette liste de tâches.
 
-Une liste de tâches partagée s’affiche lorsqu’un autre utilisateur partage sa liste de tâches avec vous ou partage explicitement une tâche avec vous. Vous pouvez alors afficher les tâches de la liste de tâches de cet utilisateur et les exécuter à sa place. Par exemple, si vous partez en congés, vous pouvez partager votre liste de tâches avec un collègue qui exécute vos tâches en votre absence.
+Un de tâches partagé s’affiche lorsqu’un autre utilisateur partage son de tâches avec vous ou partage explicitement un  avec vous. Vous pouvez alors afficher les tâches de la liste de tâches de cet utilisateur et les exécuter à sa place. Par exemple, si vous partez en congés, vous pouvez partager votre liste de tâches avec un collègue qui exécute vos tâches en votre absence.
 
 >[!NOTE]
 >
@@ -390,5 +390,3 @@ Vous pouvez définir une personne par défaut à laquelle toutes vos tâches son
    >Le concepteur de processus peut spécifier que les tâches issues de certains processus doivent rester privées et qu’elles ne doivent pas être transférées à d’autres utilisateurs. Ce paramètre remplace tous ceux que vous avez définis.
 
 1. Lorsque vous avez terminé de définir les préférences, cliquez sur **Enregistrer**. Si vos paramètres indiquent que vous êtes actuellement absent du bureau, vos modifications prennent immédiatement effet. Sinon, elles prennent effet à la date et à l’heure de début spécifiées. Si vous vous connectez pendant que vous êtes absent du bureau, vous êtes toujours considéré comme absent du bureau jusqu’à ce que vous ayez modifié vos paramètres.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
