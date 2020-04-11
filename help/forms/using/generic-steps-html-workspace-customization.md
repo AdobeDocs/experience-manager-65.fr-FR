@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -98,5 +98,3 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**, effacez le cache et actualisez l’espace de travail AEM Forms.
 
    Accédez à l’URL `https://'[server]:[port]'/lc/ws` et connectez-vous avec les informations d’identification d’administrateur/de mot de passe. Le navigateur redirige vers `https://'[server]:[port]'/lc/apps/ws/index.html`.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
