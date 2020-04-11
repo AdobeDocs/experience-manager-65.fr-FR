@@ -9,7 +9,7 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -30,7 +30,7 @@ Vous disposez des méthodes suivantes pour publier un formulaire adaptatif :
 
 ## Avant de commencer {#before-you-start}
 
-* **[Configuration d’une instance](https://helpx.adobe.com/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**de publication AEM Forms : L’instance de publication est une instance publique d’AEM Forms s’exécutant en mode de publication. Dans un environnement de production, l’instance de publication se trouve en dehors du pare-feu de l’entreprise.
+* **[Configuration d’une instance](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**de publication AEM Forms : L’instance de publication est une instance publique d’AEM Forms s’exécutant en mode de publication. Dans un  de production , l’instance de publication se trouve en dehors du pare-feu de l’entreprise.
 * **[Configuration de la réplication et de la réplication](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**inverse : La réplication copie le contenu de l’instance d’auteur vers une instance de publication et renvoie les entrées utilisateur (par exemple, les entrées de formulaire) de l’instance de publication vers l’instance d’auteur.
 
 ## Publication du formulaire adaptatif en tant que page AEM {#publish-the-adaptive-form-as-an-aem-page}
@@ -47,7 +47,7 @@ Lorsque le formulaire adaptatif est publié en tant que page AEM, la page Web en
 
 AEM Forms permet aux développeurs de formulaires d’incorporer facilement des formulaires adaptatifs dans une page de sites AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel et les utilisateurs peuvent le remplir et le soumettre sans quitter la page. Il permet à l’utilisateur de rester dans le contexte d’autres éléments de la page Web et d’interagir simultanément avec le formulaire.
 
-AEM Forms fournit un composant, le conteneur AEM Forms, pour incorporer un formulaire adaptatif à une page de sites AEM. Par défaut, le composant n’est pas visible dans le conteneur Sites AEM. Effectuez les étapes suivantes pour activer le composant Conteneur AEM Forms et pour incorporer le formulaire adaptatif dans une page de sites AEM :
+AEM Forms fournit un composant, le AEM Forms, pour incorporer un formulaire adaptatif à une page de sites AEM. Par défaut, le composant n’est pas visible dans le  des sites AEM. Effectuez les étapes suivantes pour activer le composant  de AEM Forms et pour incorporer le formulaire adaptatif dans une page de sites AEM :
 
 1. Créez et ouvrez une page dans le site Web We.Retail pour modification. Par exemple, [https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html](https://localhost:4502/editor.html/content/we-retail/us/en/user/shipping-and-billing-address.html). Le formulaire adaptatif est incorporé à la page des sites.
 
@@ -56,10 +56,10 @@ AEM Forms fournit un composant, le conteneur AEM Forms, pour incorporer un formu
    Le site Web We.Retail est fourni avec AEM. Si le site Web We.Retail n&#39;est pas installé sur votre ordinateur, reportez-vous à la section Mise en oeuvre [du guide](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) Web.Retail Reference.
 
 1. Appuyez sur ![Propriétés](assets/properties.png) des informations de page et sélectionnez l’option **Modifier le modèle** dans la page de site Web We.Retail nouvellement créée. Le modèle de la page s’ouvre dans un nouvel onglet du navigateur.
-1. Appuyez dans la zone de conteneur **de** mise en page et appuyez sur ![Gestion](assets/feedmanagement.png)des flux. Dans l’onglet Composants **** autorisés, développez l’accordéon **Général** , sélectionnez l’option Formulaire **** AEM, puis appuyez sur ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). Le composant Conteneur AEM Forms est activé pour la page.
+1. Appuyez dans la **de** mise en page et appuyez sur Gestion des ![flux](assets/feedmanagement.png). Dans l’onglet Composants **** autorisés, développez l’accordéon **Général** , sélectionnez l’option Formulaire **** AEM, puis appuyez sur ![](assets/save_icon.svg). Le composant  d’AEM Forms est activé pour la page.
 
-1. Ouvrez l’onglet du navigateur contenant la page Sites AEM ouverte à l’étape 1. Appuyez sur la zone **Faire glisser les composants ici** et appuyez sur **+.** Dans la zone **Insérer un nouveau composant** , appuyez sur **AEM Form.** Le composant Conteneur **** AEM Forms est ajouté à la page.
-1. Appuyez sur le composant conteneur **** AEM Forms et appuyez sur ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/cmppr.png). Une boîte de dialogue contenant les propriétés du conteneur AEM Forms s’affiche. Dans le champ Chemin d’accès **au** fichier, recherchez et sélectionnez le formulaire adaptatif d’expédition-address-add-update-form. Appuyer ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). Le formulaire adaptatif est incorporé dans la page 
+1. Ouvrez l’onglet du navigateur contenant la page Sites AEM ouverte à l’étape 1. Appuyez sur la zone **Faire glisser les composants ici** et appuyez sur **+.** Dans la zone **Insérer un nouveau composant** , appuyez sur **AEM Form.** Le composant de **d’** AEM Forms est ajouté à la page.
+1. Appuyez sur le **composant de** AEM Forms et appuyez sur ![](assets/configure-icon.svg). Une boîte de dialogue avec les propriétés du AEM Forms s’affiche. Dans le champ Chemin d’accès **au** fichier, parcourez et sélectionnez le formulaire adaptatif d’expédition-address-add-update-form. Pression ![](assets/save_icon.svg). Le formulaire adaptatif est incorporé dans la page 
 1. Publiez le formulaire adaptatif et la page de sites. Voici quelques points à prendre en considération :
 
    * Si vous publiez la page de sites AEM pour la première fois et qu’elle comprend un formulaire incorporé, publiez la page de sites et le formulaire incorporé.
