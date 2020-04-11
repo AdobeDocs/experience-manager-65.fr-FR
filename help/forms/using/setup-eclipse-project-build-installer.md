@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -48,7 +48,7 @@ Définissez les variables d’environnement suivantes avant de démarrer le proc
 
 ## Génération d’une application AEM Forms standard {#set-up-the-xcode-project}
 
-Après avoir enregistré le fichier adobe-lc-mobileworkspace-src-&lt;version>.zip sur le système de fichiers local et défini les variables d’environnement, créez une application Android AEM Forms standard à l’aide de l’une des options suivantes :
+Une fois que vous avez enregistré le fichier adobe-lc-mobileworkspace-src-&lt;version>.zip sur le système de fichiers local et que vous avez défini les  variables  du, créez une application Android AEM Forms standard à l’aide de l’une des options suivantes :
 
 * [Génération de l’application AEM Forms à l’aide d’Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-1347434739)
 * [Génération du fichier .apk à l’aide d’Android Studio](/help/forms/using/setup-eclipse-project-build-installer.md#main-pars-header-0)
@@ -66,7 +66,7 @@ Procédez comme suit pour générer l’application AEM Forms à l’aide d’An
    ![android_folder_studio](assets/android_folder_studio.png)
 
 1. Select **android** from the left pane and click **Run** > **Run &#39;android&#39;**.
-1. Sélectionnez le périphérique Android dans la section Périphériques connectés de la boîte de dialogue Sélectionner la cible de déploiement, puis cliquez sur OK.
+1. Sélectionnez le périphérique Android dans la section Périphériques connectés de la boîte de dialogue Sélectionner le  de déploiement, puis cliquez sur OK.
 
    Une fois que vous avez généré l’environnement de développement, vous pouvez maintenant appliquer des personnalisations sur l’application. Utilisez les articles suivants pour personnaliser l’application :
 
@@ -93,8 +93,6 @@ Exécutez les étapes suivantes pour générer le fichier .apk à l’aide d’A
 
 Once the .apk file has been generated, execute the following command to install the application on an Android device using the [Android Debug Bridge](https://developer.android.com/tools/help/adb.html).
 
-**** Utilisateurs de Windows : `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
+**Utilisateurs de Windows :** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**** Utilisateurs MAC : `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
+**Utilisateurs MAC :** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
