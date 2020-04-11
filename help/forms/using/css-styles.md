@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -73,9 +73,9 @@ Outre les classes type et name, le composant de champ contient également une au
 <table>
  <tbody>
   <tr>
-   <td><strong>Component</strong></td>
+   <td><strong>Composant</strong></td>
    <td><strong>Type</strong></td>
-   <td><strong>Nom</strong></td>
+   <td><strong>Name (Nom)</strong></td>
   </tr>
   <tr>
    <td>Page</td>
@@ -103,7 +103,7 @@ Outre les classes type et name, le composant de champ contient également une au
    <td>Nom défini par l’utilisateur</td>
   </tr>
   <tr>
-   <td>Champ</td>
+   <td>Field (Champ)</td>
    <td>field</td>
    <td>Nom défini par l’utilisateur</td>
   </tr>
@@ -228,7 +228,7 @@ Vous pouvez insérer des éléments statiques de dessin comme un texte et des im
 
 | **Type de dessin** | **Classe CSS** |
 |---|---|
-| Texte | text |
+| Text (Texte) | text |
 | Image | image |
 | Rectangle | rectangle |
 | Ligne | line |
@@ -248,5 +248,3 @@ Lorsque la validation d’un champ résulte en un avertissement, un avertissemen
 `Styling Fields with Validation Errors`
 
 Lorsque la fonction de validation d’un champ échoue, le style du widget change. This style change is done by applying a CSS class **widgetError** on the widget component. To modify the default styling, override the **widgetError** class.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
