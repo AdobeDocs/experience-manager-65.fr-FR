@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -123,5 +123,3 @@ Le rapport Volume de processus affiche le nombre d’instances en cours d’exé
    * **Actualiser**: Actualise le rapport avec les données les plus récentes dans le  
    * **Modifier la couleur** de la légende : Sélectionner et modifier la couleur de la légende du rapport
    * **Exporter au format CSV**: Exportez et téléchargez les données du rapport dans un fichier séparé par des virgules.
-
-[Contacter le support technique](https://www.adobe.com/fr/account/sign-in.supportportal.html)
