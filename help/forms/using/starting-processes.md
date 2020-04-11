@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -127,5 +127,3 @@ Vous pouvez ajouter tout processus à votre catégorie Favoris. Lorsque vous dé
 >Si vous avez l’habitude de démarrer des processus lorsque vous utilisez l’espace de travail AEM Forms, vous pouvez définir la préférence Emplacement de démarrage de manière à afficher la catégorie Favoris au démarrage de l’espace de travail AEM Forms. Pour plus d’informations, voir Gestion des préférences dans [Prise en main de l’espace de travail AEM Forms](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Pour marquer un processus en tant que favori, sélectionnez la tâche dans sa catégorie, puis cliquez sur l’étoile au contour creux. L’étoile devient dorée. Pour annuler le marquage d’un processus en tant que favori, cliquez de nouveau sur l’étoile dorée.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
