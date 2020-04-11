@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -38,7 +38,7 @@ Effectuez les étapes suivantes pour configurer les journaux côté serveur :
    >
    >Pour générer des journaux dans le répertoire de formulaires HTML5, ajoutez ../logs/ avant le nom de fichier.
 
-1. Modifiez **Logger** en **HTMLFormsPerfLogger**. Cliquez sur **Enregistrer**.
+1. Modifiez **Logger** en **HTMLFormsPerfLogger**. Cliquez sur **Save** (Enregistrer).
 
 ## Configuration de la journalisation du client {#configuring-client-logging}
 
@@ -206,5 +206,3 @@ Pour modifier l’emplacement et le nom du fichier journal :
    >Pour créer des journaux dans le répertoire où les autres fichiers journaux sont conservés, spécifiez ../logs/&lt;nom_fichier> dans la propriété Fichiers journaux.
 
 1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
