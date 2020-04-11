@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -198,7 +198,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
       * vers `/apps/livecycle/core/components/login`
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added text.
-   ![Ajouter une nouvelle paire clé-valeur](assets/capture_new.png)
+   ![Ajouter nouvelle paire clé-valeur](assets/capture_new.png)
 
    ```
    div class="loginContent">
@@ -272,7 +272,7 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 
    1. Ajoutez de nouvelles images.
 
-1. Ajoutez de nouveaux styles `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
+1. Ajouter nouveaux styles `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
 1. Use the new styles in `login.jsp` at `/apps/livecycle/core/components`.
 1. Par exemple :
 
@@ -296,5 +296,3 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
    
    <div class="newLginContainerBkg">
    ```
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
