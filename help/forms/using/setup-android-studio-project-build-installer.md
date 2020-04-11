@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -82,9 +82,9 @@ The following image displays the directory structure of the `android`folder in t
 1. Dans Android™ Studio, sélectionnez **[!UICONTROL Importer un projet (Eclipse ADT, Gradle, etc.)]**.
 1. In the project explorer, select the root directory of the project that you want to build in the **Root Directory** text box:
 
-   **** Pour les utilisateurs de Mac : [User_Home]/Projects/MobileWorkspace/src/android
+   **Pour les utilisateurs de Mac :** [User_Home]/Projects/MobileWorkspace/src/android
 
-   **** Pour les utilisateurs de Windows® : %HOMEPATH%\Projects\MobileWorkspace\src\android
+   **Pour les utilisateurs de Windows® :** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
 1. Une fois le projet importé, une fenêtre contextuelle s’affiche avec une option permettant de mettre à jour le module externe Android™ Gradle. Cliquez sur le bouton approprié selon vos exigences.
 
@@ -107,5 +107,3 @@ Vous pouvez installer l’application sur un périphérique Android™ via [Andr
 **Pour les utilisateurs** de Mac : `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Pour les utilisateurs** de Windows® : `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
