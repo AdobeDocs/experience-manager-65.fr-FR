@@ -11,7 +11,7 @@ topic-tags: forms-app
 discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -44,5 +44,3 @@ Vous avez besoin du matériel, des logiciels et licences ci-dessous pour génér
 >[!NOTE]
 >
 >Le fichier adobe-lc-mobileworkspace-src.zip contient le SDK PhoneGap 5.0. Assurez-vous que le SDK PhoneGap n’est pas préinstallé.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
