@@ -8,7 +8,7 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -23,7 +23,7 @@ Ce didacticiel est une étape de la série [Création de votre premier formulair
 
 ## À propos du didacticiel  {#about-the-tutorial}
 
-Vous pouvez utiliser des thèmes pour donner une apparence et un style uniques à un formulaire adaptatif. Vous pouvez appliquer des thèmes prêts à l’emploi fournis avec l’éditeur de formulaires adaptatifs ou créer vos propres thèmes. Les formulaires AEM fournissent un [éditeur de thème](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) pour créer des thèmes personnalisés. Un seul thème peut conférer une apparence différente au même formulaire adaptatif ouvert sur un mobile, une tablette ou un ordinateur de bureau. Aucune connaissance préalable de CSS ou de LESS n’est nécessaire pour utiliser l’éditeur de thèmes, mais cela est préférable.
+Vous pouvez utiliser des thèmes pour donner une apparence et un style uniques à un formulaire adaptatif. Vous pouvez appliquer des thèmes prêts à l’emploi fournis avec l’éditeur de formulaires adaptatifs ou créer vos propres thèmes. Les formulaires AEM fournissent un [éditeur de thème](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html) pour créer des thèmes personnalisés. Un seul thème peut conférer une apparence différente au même formulaire adaptatif ouvert sur un mobile, une tablette ou un ordinateur de bureau. Aucune connaissance préalable de CSS ou de LESS n’est nécessaire pour utiliser l’éditeur de thèmes, mais cela est préférable.
 
 À la fin du didacticiel, vous découvrirez comment :
 
@@ -57,11 +57,11 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
 
 ![Formulaire adaptatif avec le thème par défaut](assets/default-adaptive-form.png)
 
-**** Figure : Formulaire *adaptatif avec thème par défaut*
+**Figure :** Formulaire *adaptatif avec le thème par défaut*
 
 ![Formulaire adaptatif avec le thème Enquête](assets/adaptive-form-with-survey-theme.png)
 
-**** Figure : Formulaire *adaptatif avec le thème Survey*
+**Figure :** Formulaire *adaptatif avec le thème*
 
 ## Étape 2 : mettre à jour votre formulaire adaptatif {#step-update-your-adaptive-form}
 
@@ -99,10 +99,10 @@ Dans ce didacticiel, vous allez appliquer un style aux en-têtes et aux pieds de
 1. Log in to the AEM author instance and navigate to **Adobe Experience Manager** > **Forms** > **Themes**. L’URL par défaut est [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Thème]**. La page Créer un thème s’affiche avec les champs requis pour créer un thème. Les champs Titre et Nom sont obligatoires :
 
-   * **** Titre : Indiquez un titre pour le thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème dans la liste des thèmes.
-   * **** Nom : Indiquez le nom du thème. Par exemple, **Thème-global.** Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
+   * **Titre :** Indiquez un titre pour le thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème dans la liste des thèmes.
+   * **Nom :** Indiquez le nom du thème. Par exemple, **Thème-global.** Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
 
-1. Appuyez sur **Créer**. Un thème est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Tap **Open** to open the newly created theme in a new tab. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM Forms.
+1. Appuyez sur **Create** (Créer). Un thème est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Tap **Open** to open the newly created theme in a new tab. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM Forms.
 
    For information about using theme editor UI, see [About the theme editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
@@ -110,17 +110,17 @@ Dans ce didacticiel, vous allez appliquer un style aux en-têtes et aux pieds de
 
    ![thème personnalisé](assets/custom-theme.png)
 
-   **** Figure : Éditeur de *thème avec le formulaire adaptatif d’expédition-address-add-update-form*
+   **Figure :** Éditeur de *thème avec le formulaire adaptatif d’expédition-address-add-update-form*
 
-   ![créer un thème](assets/create-a-theme.png)
+   ![create-a-theme](assets/create-a-theme.png)
 
-   **** Figure : Formulaire *adaptatif avec le formulaire par défaut*
+   **Figure :** Formulaire *adaptatif avec le formulaire par défaut*
 
 ### Application d’un style à l’en-tête et au pied de page {#style-header-and-footer}
 
 L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un formulaire adaptatif. En général, l’en-tête contient le logo et le nom de l’organisation, le pied de page contient des informations de copyright. Ces éléments restent identiques dans plusieurs formulaires d’une organisation. Pour appliquer un style à l’en-tête et au pied de page du formulaire adaptatif shipping-address-add-update-form :
 
-1. Accédez à l’option **En-tête** > **Texte** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, appuyez sur ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/toggle-side-panel.png)Activer/désactiver le panneau latéral.
+1. Accédez à l’option **En-tête** > **Texte** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, appuyez sur ![](assets/toggle-side-panel.png)Activer/désactiver le panneau latéral.
 
 1. Set the following properties in the **Text** accordion and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -197,17 +197,17 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Famille de polices</td> 
    <td>Arial</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Couleur de la police</td> 
    <td>939598<br /> </td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Taille de la police</td> 
    <td>18px</td> 
   </tr> 
@@ -271,12 +271,12 @@ You can use a custom theme to apply an identical style to all the buttons of the
    <td>Arial</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Couleur de la police</td> 
    <td>FFFFFF</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Taille de la police</td> 
    <td>18px</td> 
   </tr> 
@@ -370,22 +370,22 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
    <td>7px</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Famille de polices</td> 
    <td>Arial</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Couleur de la police</td> 
    <td>BCBEC0</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Taille de la police</td> 
    <td>18px</td> 
   </tr> 
   <tr> 
-   <td>Texte</td> 
+   <td>Text (Texte)</td> 
    <td>Hauteur de ligne</td> 
    <td>2</td> 
   </tr> 
@@ -434,13 +434,13 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
 
 ## Étape 5 : section bonus : utilisation des polices web dans un thème personnalisé {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les périphériques sur lesquels le formulaire adaptatif est visualisé peuvent ne pas utiliser les polices pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices Web pour fournir les polices requises au périphérique cible.
+Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les périphériques sur lesquels le formulaire adaptatif est visualisé peuvent ne pas utiliser les polices pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices Web pour fournir les polices requises au périphérique .
 
 Adobe Typekit est un service de polices web d’Adobe. Vous pouvez configurer et utiliser le service avec les formulaires adaptatifs. Pour utiliser Adobe Typekit dans un formulaire adaptatif :
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit est désormais appelé Adobe Fonts et est inclus dans Creative Cloud et d’autres abonnements. [En savoir plus](https://fonts.adobe.com/).
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit est désormais appelé Adobe Fonts et est inclus dans Creative Cloud et d’autres  de . [En savoir plus](https://fonts.adobe.com/).
 
 1. Create an [Adobe Typekit](https://typekit.com/) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. Il est nécessaire d’utiliser les polices Adobe Typekit (polices web) dans un formulaire adaptatif.
 1. In the AEM Forms server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Tools** ![hammer](assets/hammer.png) > **Deployment** > **Cloud Services**. On the Cloud Services page, navigate to **Third Party Services** > **Typekit**, and click **Configure** Now under Typekit. Si une configuration est déjà disponible, cliquez sur le bouton + pour créer une nouvelle instance.
