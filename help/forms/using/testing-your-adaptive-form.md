@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
 
 Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
-Une fois le formulaire adaptatif prêt, il est important de le tester avant de le déployer pour les utilisateurs finaux. Vous pouvez tester manuellement (tests fonctionnels) chaque champ ou automatiser le test de votre formulaire adaptatif. Lorsque vous disposez de plusieurs formulaires adaptatifs, le test manuel de chaque champ de tous les formulaires adaptatifs devient une tâche intimidante.
+Une fois le formulaire adaptatif prêt, il est important de le tester avant de le déployer pour les utilisateurs finaux. Vous pouvez tester manuellement (tests fonctionnels) chaque champ ou automatiser le test de votre formulaire adaptatif. Lorsque vous disposez de plusieurs formulaires adaptatifs, le test manuel de chaque champ de tous les formulaires adaptatifs devient un  intimidant.
 
-AEM Forms fournit une structure de test, Calvin, pour automatiser le test de vos formulaires adaptatifs. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit des API JavaScript pour la création de tests. Le test automatisé vous permet de tester l’expérience de préremplissage d’un formulaire adaptatif, l’expérience d’envoi d’un formulaire adaptatif, les règles d’expression, depuis les validations, le chargement différé et les interactions de l’interface utilisateur. Ce didacticiel décrit les étapes à suivre pour créer et exécuter des tests automatisés sur un formulaire adaptatif. À la fin de ce didacticiel, vous serez capable de :
+AEM Forms fournit une structure de test, Calvin, pour automatiser le test de vos formulaires adaptatifs. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit des API JavaScript pour la création de tests. Les tests automatisés vous permettent de tester l’expérience de préremplissage d’un formulaire adaptatif, d’envoyer l’expérience d’un formulaire adaptatif, de   règles, des validations, du chargement différé et des interactions avec l’interface utilisateur. Ce didacticiel décrit les étapes à suivre pour créer et exécuter des tests automatisés sur un formulaire adaptatif. À la fin de ce didacticiel, vous serez capable de :
 
 * [Création d’une suite de tests pour votre formulaire adaptatif](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Création de tests pour votre formulaire adaptatif](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -80,7 +80,7 @@ Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme il
     init.js
    ```
 
-1. Créez un fichier, init.js, dans le `WeRetailFormTestCases`noeud. Ajoutez le code ci-dessous au fichier et appuyez sur **[!UICONTROL Enregistrer tout]**.
+1. Créez un fichier, init.js, dans le `WeRetailFormTestCases`noeud. Ajouter le code ci-dessous dans le fichier et appuyez sur **[!UICONTROL Enregistrer tout]**.
 
    ```
    (function(window, hobs) {
@@ -98,7 +98,7 @@ Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme il
 
    Le code ci-dessus crée une suite de tests nommée **Nous vendons au détail - Tests**.
 
-1. Ouvrez l’interface utilisateur des tests AEM (AEM > Outils > Opérations > Tests). La suite de tests - **Nous vendons - Tests** - est répertoriée dans l’interface utilisateur.
+1. Ouvrez l’interface utilisateur des tests AEM (AEM > Outils > Opérations > Tests). La suite de tests - **Nous vendons au détail - Tests** - est répertoriée dans l’interface utilisateur.
 
    ![we-détaillant-test-suite](assets/we-retail-test-suite.png)
 
@@ -106,7 +106,7 @@ Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme il
 
 Un cas de test est un ensemble d’actions permettant de tester une fonctionnalité spécifique. Par exemple, le préremplissage de tous les champs d’un formulaire et la validation de quelques champs pour vous assurer que les valeurs correctes sont saisies.
 
-Une action est une activité spécifique sur un formulaire adaptatif, telle qu’un clic sur un bouton. Pour créer un cas de test et des actions permettant de valider les entrées utilisateur pour chaque champ de formulaire adaptatif :
+Une action est un  spécifique  sur un formulaire adaptatif, tel qu’un clic sur un bouton. Pour créer un cas de test et des actions permettant de valider les entrées utilisateur pour chaque champ de formulaire adaptatif :
 
 1. Dans CRXDE Lite, accédez au `/content/forms/af/create-first-adaptive-form` dossier. Cliquez avec le bouton droit sur le noeud de dossier **[!UICONTROL create-first-adaptive-form]** et cliquez sur **[!UICONTROL Créer]**> **[!UICONTROL Créer un fichier]**. In the Name field, type `prefill.xml` and click **[!UICONTROL OK]**. Ajoutez le code suivant au fichier 
 
@@ -163,7 +163,7 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
  </tbody>
 </table>
 
-1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajoutez les éléments suivants au fichier :
+1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajouter les éléments suivants dans le fichier :
 
    ```shell
    #base=.
@@ -172,7 +172,7 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
 
    Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-1. Créez un fichier `prefillTest.js`,dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajoutez le code ci-dessous au fichier. Le code crée un cas de test. Le cas de test préremplit tous les champs d’un formulaire et valide certains champs afin de s’assurer que les valeurs correctes sont saisies.
+1. Créez un fichier `prefillTest.js`,dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajouter le code ci-dessous dans le fichier. Le code crée un cas de test. Le cas de test préremplit tous les champs d’un formulaire et valide certains champs afin de s’assurer que les valeurs correctes sont saisies.
 
    ```
    (function (window, hobs) {
@@ -204,28 +204,28 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
    }(window, window.hobs));
    ```
 
-   Le cas de test est créé et prêt à être exécuté. Vous pouvez créer des cas de test pour valider divers aspects d’un formulaire adaptatif, comme vérifier l’exécution du script calculate, valider des modèles et valider l’expérience d’envoi d’un formulaire adaptatif. Pour plus d’informations sur divers aspects du test des formulaires adaptatifs, voir Test automatique des formulaires adaptatifs.
+   Le cas de test est créé et prêt à être exécuté. Vous pouvez créer des cas de test pour valider divers aspects d’un formulaire adaptatif, comme vérifier l’exécution du script calculate, valider des modèles et valider l’expérience d’envoi d’un formulaire adaptatif. Pour plus d’informations sur les différents aspects du test des formulaires adaptatifs, voir Test automatique des formulaires adaptatifs.
 
 ## Étape 3 : Exécution de tous les tests dans une suite ou des cas de tests individuels {#step-run-all-the-tests-in-a-suite-or-individual-tests-cases}
 
-Une suite de tests peut comporter plusieurs cas de test. Vous pouvez exécuter tous les cas de test dans une suite de tests simultanément ou individuellement. Lorsque vous exécutez un test, les icônes indiquent les résultats :
+Une suite de tests peut comporter plusieurs cas de test. Vous pouvez exécuter tous les cas de test d’une suite de tests simultanément ou individuellement. Lorsque vous exécutez un test, les icônes indiquent les résultats :
 
-* A checkmark icon indicates a passed test: ![](https://helpx.adobe.com/content/dam/help/icons/Checkmark.png)
-* An &quot;X&quot; icon indicates a failed test: ![](https://helpx.adobe.com/content/dam/help/icons/Cross.png)
+* A checkmark icon indicates a passed test: ![](assets/save_icon.svg)
+* An &quot;X&quot; icon indicates a failed test: ![](assets/close-icon.svg)
 
 1. Accédez à l’icône AEM > **[!UICONTROL Outils]**> **[!UICONTROL Opérations]**> **[!UICONTROL Tests]**
 1. Pour exécuter tous les tests de la suite de tests :
 
-   1. Dans le panneau Tests, appuyez sur **[!UICONTROL Nous vendons - Tests (1)]**. Il s’étend pour afficher la liste des tests.
+   1. Dans le panneau Tests, appuyez sur **[!UICONTROL Nous commercialisons - Tests (1)]**. Elle s’étend pour afficher les  de test.
    1. Appuyez sur le bouton **[!UICONTROL Exécuter les tests]** . La zone vierge sur le côté droit de l’écran est remplacée par le formulaire adaptatif au cours de l’exécution du test.
    ![exécution-tout-test](assets/run-all-test.png)
 
 1. Pour exécuter un seul test à partir de la suite de tests :
 
-   1. Dans le panneau Tests, appuyez sur **[!UICONTROL Nous vendons - Tests (1)]**. Il s’étend pour afficher la liste des tests.
+   1. Dans le panneau Tests, appuyez sur **[!UICONTROL Nous commercialisons - Tests (1)]**. Elle s’étend pour afficher les  de test.
    1. Appuyez sur Test **[!UICONTROL de]** préremplissage et sur le bouton **[!UICONTROL Exécuter les tests]** . La zone vierge sur le côté droit de l’écran est remplacée par le formulaire adaptatif au cours de l’exécution du test.
 
-1. Appuyez sur le nom du test, Test de préremplissage, pour examiner les résultats du cas de test. Il ouvre le panneau Résultat. Appuyez sur le nom de votre cas de test dans le panneau Résultat pour afficher tous les détails du test.
+1. Appuyez sur le nom du test, Test de préremplissage, pour examiner les résultats du cas de test. Il ouvre le panneau Résultat. Appuyez sur le nom de votre cas de test dans le du panneau Résultat  tous les détails du test.
 
    ![review-results](assets/review-results.png)
 
