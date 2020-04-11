@@ -11,7 +11,7 @@ topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -46,5 +46,3 @@ Tap the Synchronize button ![sync-app](assets/sync-app.png) at the lower-right c
 * Dans le fichier .js, l’appel de la fonction processOfflineSubmittedSavedTasks(...) envoie vers le serveur les tâches enregistrées/envoyées. Il gère également les erreurs ou les conflits dans le processus de synchronisation. En cas d’échec de l’envoi de la tâche, la tâche est marquée comme en échec dans l’application. En outre, la tâche reste dans votre Outbox.
 * Les fonctions syncSubmittedTask() et syncSavedTask() effectuent des opérations sur des tâches individuelles.
 * L’appel de la fonction processOfflineSubmittedSavedTasks() est lancé par le composant de la liste des tâches après que l’utilisateur a sélectionné la synchronisation de l’état hors connexion avec le serveur ou la synchronisation automatique par le thread en arrière-plan.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
