@@ -9,7 +9,7 @@ topic-tags: hTML5_forms
 discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -45,5 +45,3 @@ AEM fournit également un affichage unifié permettant de répertorier et gérer
 ### Personnalisation des formulaires {#forms-customization}
 
 Mobile Forms effectue le rendu des modèles de formulaires à l’aide d’éléments HTML5 standard. Cela facilite la personnalisation et l’extension des formulaires au format HTML5 à l’aide de technologies Web, principalement CSS et JavaScript. Vous pouvez facilement personnaliser l’apparence de widgets existants, créer vos propres widgets personnalisés ou utiliser des styles personnalisés dans les formulaires. Pour plus d’informations sur la création de widgets personnalisés et la personnalisation de widgets existants, consultez la section [Ajout de widgets personnalisés aux formulaires HTML5](../../forms/using/custom-widgets.md).
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
