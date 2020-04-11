@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -35,7 +35,7 @@ L’administrateur MDM peut transférer des fichiers .ipa et .apk sur le serve
 
 ## Paramètres de profil affectant l’application AEM Forms {#profile-settings-affecting-the-aem-forms-app-br}
 
-Les paramètres de profil suivants sur votre périphérique affecteront le fonctionnement de l’application AEM Forms sur votre périphérique :
+Les paramètres de  de suivants sur votre périphérique affecteront le fonctionnement de l’application AEM Forms sur votre périphérique :
 
 * **Autiliser l’utilisation de l’appareil photo** dans la section **Fonctionnalité du périphérique**
 
@@ -44,5 +44,3 @@ Si vous désactivez **Autiliser l’utilisation de l’appareil photo**, la fonc
 * **Mot de passe requis sur le périphérique** dans la section Stratégies de mot de passe
 
 Pour activer le **chiffrement des données d’application**, nous vous conseillons d’activer le **mot de passe** sur votre périphérique. Si aucun mot de passe n’est défini sur le périphérique, les données d’application stockées sur le périphérique ne sont pas chiffrées.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
