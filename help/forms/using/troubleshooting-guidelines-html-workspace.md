@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -25,7 +25,7 @@ Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. If
 
 Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
 
-1. Connectez-vous à CRX DE Lite. L’URL par défaut est `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Connectez-vous à CRX DE Lite. The default url is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Supprimez le noeud suivant :
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -192,5 +192,3 @@ Les scripts et les styles peuvent être débogués dans différents navigateurs.
 1. Lorsqu’ils sont rendus dans l’espace de travail AEM Forms, les formulaires HTML, avec les propriétés de processus dans leur conception, affichent un bouton d’envoi dans le formulaire.
 
    Lors de la conception de formulaires, lorsque vous utilisez les propriétés de processus, un bouton d’envoi est ajouté dans le formulaire. Lors du rendu au format PDF dans l’espace de travail AEM Forms, le bouton d’envoi n’est pas visible pour l’utilisateur final. Toutefois, en cas de rendu en tant que formulaire HTML dans l’espace de travail AEM Forms, ce bouton est visible pour l’utilisateur final. Cliquer sur ce bouton d’envoi à l’intérieur du formulaire ne lance aucune action. Cliquer sur le bouton d’envoi au bas de l’espace de travail AEM Forms, en dehors du formulaire, termine la tâche.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
