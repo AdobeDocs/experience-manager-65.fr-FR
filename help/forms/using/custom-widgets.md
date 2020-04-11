@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -46,7 +46,7 @@ Les formulaires HTML5 fournissent une implémentation de la structure de widgets
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> flou : XFA_EXIT_EVENT,<br /> }<br /> Cet exemple montre que le flou est un événement HTML et que XFA_EXIT_EVENT est un événement XFA correspondant. </td>
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> flou : XFA_EXIT__,<br /> }<br /> Cet exemple montre que le flou est un  HTML et que XFA_EXIT_ est le XFA correspondant. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -95,12 +95,10 @@ La configuration du widget est fournie sous la forme d’un objet JSON (ensemble
 ..
 }*
 
-où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. La liste suivante répertorie la valeur de l’identifiant dans différents cas :
+où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Le suivant  la valeur de l’identifiant dans différents cas :
 
 | Type d’identificateur | formulaire | Description |
 |---|---|---|
 | Champ particulier avec le nom fieldname | Identificateur : « div.fieldname » | Toutes les zones appelées « fieldname » sont générées à l’aide du widget. |
 | Tous les champs de type &quot;type&quot; (où type est NumericField, DateField, etc.) : | Identificateur : « div.type » | Pour Timefield et DateTimeField, le type est textfield, car ces champs ne sont pas pris en charge. |
 | Tous les champs | Identificateur : &quot;div.field&quot; |  |
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
