@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 Adobe Experience Manager (6.5) vous permet d’accéder aux nouvelles fonctionnalités et aux améliorations continues au moyen des versions trimestrielles du Service Pack. En utilisant cette approche, vous adoptez facilement les innovations.
 
-Experience Manager Service Pack 4 (6.5.4.0) est sorti le 5 mars 2020. Il s’agit d’une mise à jour importante qui comprend de nouvelles fonctionnalités, des améliorations clés demandées par le client, ainsi que des performances, de la stabilité et des améliorations de sécurité, publiées depuis la version 6.5 d’avril 2019. Experience Manager 6.5.4.0 peut être installé par-dessus Adobe Experience Manager 6.5.
+Experience Manager Service Pack 4 (6.5.4.0) est une mise à jour importante. Il comprend toutes les nouvelles fonctionnalités, les améliorations client clés demandées, les performances, la stabilité et les améliorations de sécurité publiées depuis la version 6.5 d’AEM en avril 2019. Vous pouvez installer le Service Pack sur AEM 6.5 et versions ultérieures.
 
 Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et certaines versions [clés depuis Experience Manager 6.5.3.0](#key-features-sice-sp3).
 
