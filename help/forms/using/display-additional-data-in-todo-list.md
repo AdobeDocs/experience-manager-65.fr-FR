@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -142,12 +142,10 @@ Enfin, vous devez inclure une entrée dans le package de développement pour cha
    * de: `/libs/ws/js/runtime/templates/`
    * vers: `/apps/ws/js/runtime/templates/`
 
-1. Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
+1. Ajouter les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
 
    For example, add under `div class="taskProperties"`:
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
