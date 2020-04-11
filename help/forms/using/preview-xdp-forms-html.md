@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -116,5 +116,3 @@ L’utilisation d’une source de données d’exemple pour tester votre formula
 ## Aperçu des formulaires situés dans un référentiel {#html-preview-of-forms-in-forms-manager}
 
 Dans AEM Forms, vous pouvez prévisualiser des formulaires et documents figurant dans le référentiel. La prévisualisation reflète l’apparence et le comportement des formulaires lorsqu’ils seront utilisés par les utilisateurs finaux.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
