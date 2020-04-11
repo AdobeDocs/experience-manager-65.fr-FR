@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b41060207a1fb522905259a0d33df690d606929d
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -616,7 +616,7 @@ Pour la configuration requise supplémentaire, voir :
 >
 >Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 >
->* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+>* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 >* Safari est pris en charge uniquement sous Macintosh OS X.
 >* Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. For more information about Safari 5.1 compatibility with Adobe Reader, Acrobat, see [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 >* Administration Console n’est pas prise en charge sur Safari.
@@ -693,7 +693,7 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 
 ### Extension d’Adobe Document Security for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
-Cliquez [ici](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) afin de voir la configuration requise par Adobe Document Security Extension for Microsoft® Office.
+Cliquez [ici](https://www.adobe.com/fr/products/livecycle/rightsmanagement/extension/downloads.html) afin de voir la configuration requise par Adobe Document Security Extension for Microsoft® Office.
 
 ### Exceptions de prise en charge de clients {#exceptions-to-client-support}
 
@@ -714,5 +714,3 @@ Dans des circonstances échappant au contrôle d’Adobe, des correctifs de four
 Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de référence prises en charge par une version d’AEM Forms on JEE et les définitions de correctif prises en charge à tout moment.
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
