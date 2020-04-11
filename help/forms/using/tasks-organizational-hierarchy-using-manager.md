@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -20,13 +20,13 @@ source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
 
 Dans l’espace de travail AEM Forms, les gestionnaires peuvent désormais accéder à toutes les tâches assignées aux personnes au sein de leur hiérarchie (rapports directs ou indirects) et y effectuer diverses opérations. Les tâches sont accessibles par l’intermédiaire de l’onglet Tâches de l’espace de travail AEM Forms. Les actions prises en charge pour les tâches de rapports directs sont :
 
-**Transférez** une tâche du rapport direct à n’importe quel utilisateur.
+**Transférez** un  de rapport direct à un utilisateur.
 
-**Demander** une tâche d&#39;un rapport direct.
+**Demander** un  d&#39;un rapport direct.
 
-**Demander et ouvrir** Demander une tâche d&#39;un rapport direct et l&#39;ouvrir automatiquement dans la liste des tâches du gestionnaire.
+**Demander et ouvrir** Demander un  d&#39;un rapport direct et l&#39;ouvrir automatiquement dans le Tâches du gestionnaire.
 
-**Rejeter** Rejeter une tâche transférée vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
+**Rejeter** Rejeter un  transféré vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
 
 AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesquelles cet utilisateur dispose d’un contrôle d’accès (ACL). Ceci permet de garantir que l’utilisateur ne puisse extraire que les tâches pour lesquelles il dispose de droits d’accès. En utilisant des services Web et des implémentations tiers pour définir la hiérarchie, une organisation peut personnaliser la définition des rapports directs et gestionnaires selon ses besoins.
 
@@ -115,8 +115,6 @@ AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesque
 
 L’écran suivant illustre l’accès aux tâches de rapports directs et les actions disponibles.
 
-![cu_manager_view](assets/cu_manager_view.png)
+![cu_manager_](assets/cu_manager_view.png)
 
 Accès aux tâches de rapports directs et actions à effectuer sur les tâches
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
