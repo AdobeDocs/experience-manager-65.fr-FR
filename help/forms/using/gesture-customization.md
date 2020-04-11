@@ -10,18 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Personnalisation de mouvement {#gesture-customization}
 
-Vous pouvez personnaliser les mouvements de l’application AEM Forms pour fournir une méthode distincte d’interaction avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
+Vous pouvez personnaliser les mouvements de l’application AEM Forms afin de fournir une méthode distincte d’interaction avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
 
 ## Personnalisation des mouvements dans l’application AEM Forms {#to-customize-gestures-in-aem-forms-app}
 
-Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir une nouvelle tâche ou un nouveau point de départ, tandis qu’un glissement vers la droite n’active aucune commande. L’exemple suivant décrit la procédure à suivre pour ouvrir une nouvelle tâche ou un nouveau point de départ lors des mouvements de glissement vers la droite dans l’application AEM Forms.
+Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir une nouvelle tâche ou un nouveau point de départ, tandis qu’un glissement vers la droite n’active aucune commande. L’exemple suivant décrit la procédure à suivre pour ouvrir un nouveau  ou point de départ sur l’exécution de mouvements de glissement vers la droite dans l’application AEM Forms.
 
 1. Ouvrez votre projet.
 
@@ -40,7 +40,7 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
 1. In the `task.js` file, search for the events property of the view.
 
-   La propriété events est un mappage avec chaque entrée au format :
+   La propriété  est un mappage avec chaque entrée au format :
 
    `"EventName Selector": "Function"`
 
@@ -52,7 +52,7 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
       &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .task-content&quot; : &quot;onTaskClick&quot;,
+      &quot;appuyez sur .-content&quot; : &quot;onTaskClick&quot;,
 
       &quot;tap.last_empty_div&quot; : &quot;onTaskClick&quot;,
    et remplacer par
@@ -61,7 +61,7 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
       &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
+      &quot;swipe .-content&quot; : &quot;onTaskClick&quot;,
 
       &quot;swipe.last_empty_div&quot; : &quot;onTaskClick&quot;,
 
@@ -70,5 +70,3 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 1. Générez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir une tâche en faisant glisser votre doigt vers la gauche et la droite.
 
 De même, vous pouvez apporter des modifications dans les autres vues pour différentes combinaisons de mouvements, d’éléments HTML et de fonctions.
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
