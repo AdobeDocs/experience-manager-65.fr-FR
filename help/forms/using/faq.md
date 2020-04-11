@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -24,7 +24,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi les codes à barres et le champ de signature ne s’affichent-ils pas dans mon formulaire ?
 
-   Réponse : les champs de codes à barres et de signatures ne sont pas adaptés aux cas de figures impliquant du HTML ou des périphériques mobiles. Ces champs s’affichent sous forme de zone non interactive. Cependant, AEM Forms Designer propose un nouveau champ de saisie tactile de signature qui peut être utilisé à la place du champ de signature. Vous pouvez également ajouter un [widget personnalisé](../../forms/using/custom-widgets.md) pour les codes à barres et l’intégrer.
+   Réponse : les champs de codes à barres et de signatures ne sont pas adaptés aux cas de figures impliquant du HTML ou des périphériques mobiles. Ces champs s’affichent sous la forme d’une zone non interactive. Cependant, AEM Forms Designer propose un nouveau champ de saisie tactile de signature qui peut être utilisé à la place du champ de signature. Vous pouvez également ajouter un [widget personnalisé](../../forms/using/custom-widgets.md) pour les codes à barres et l’intégrer.
 
 1. Le texte enrichi est-il pris en charge par le champ de texte XFA ?
 
@@ -88,11 +88,11 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi du texte est-il tronqué ou s’affiche-t-il incorrectement dans HTML5 ?
 
-   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue Conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
+   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans le de conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
 
 1. Je constate des problèmes de mise en page liés à du contenu manquant ou à des chevauchements. Quelle en est la raison ?
 
-   Réponse : S’il existe un élément Texte de dessin ou Image de dessin ainsi qu’un autre élément superposé à la même position (un rectangle, par exemple), le contenu Texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre du document (dans la vue Hiérarchie d’AEM Forms Designer). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
+   Réponse : S’il existe un élément Texte de dessin ou Image de dessin avec un autre élément qui se chevauche à la même position (un rectangle, par exemple), le contenu Texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre de  du (dans le Hiérarchie d’AEM Forms Designer ). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
 
 1. Pourquoi certaines polices affichées dans le formulaire HTML sont-elles différentes de celles utilisées lors de la conception du formulaire ?
 
@@ -172,7 +172,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
    Réponse:
 
    * La prise en charge du script xfa.connectionSet est limitée. Pour connectionSet, seul l’appel côté serveur du service Web est pris en charge. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
-   * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont écrits dans un bloc formReady ou layoutReady, ils fonctionnent toujours car ces événements s’exécutent côté serveur.
+   * Il n’existe aucune prise en charge de $record et $data dans les scripts côté client. Cependant, si les scripts sont écrits dans un bloc formReady ou layoutReady, ils fonctionnent toujours car ces  s’exécutent côté serveur.
    * Les scripts spécifiques des éléments XFA constitués d’illustrations (ou les éléments de texte constitués de légendes quand il s’agit de champs) ne sont pas pris en charge.
 
 1. Existe-t-il des restrictions concernant l’utilisation de formCalc ?
@@ -202,12 +202,10 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Les formulaires HTML5 exécutent-ils le script d’initialisation et forment-ils des événements prêts plusieurs fois ?
 
-   Oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois côté client. Il est conseillé d’écrire des scripts tels que initialize ou form:ready en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit exécutée en fonction de l’état des données et de l’attribut (si les données sont identiques).
+   Oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois côté client. Il est conseillé d’écrire des scripts tels que initialize ou form:ready  en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit exécutée en fonction de l’état des données et de l’attribut idempotent (si les données sont identiques).
 
 ### Conception XDP {#designing-xdp}
 
 1. Existe -t-il des mots-clés réservés dans les formulaires HTML5 ?
 
    Réponse : toutes les API des formulaires HTML5 sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md). Outre les mots-clés réservés, si vous utilisez des noms d’objet qui commencent par un tiret bas (_), il est recommandé d’ajouter un préfixe unique à sa suite. L’ajout d’un préfixe permet d’éviter tout conflit possible avec les API internes des formulaires HTML5. Par exemple, `_fpField1`
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
