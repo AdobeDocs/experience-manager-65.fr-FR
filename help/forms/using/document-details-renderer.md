@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -61,7 +61,7 @@ Ce javascript est différent de celui des formulaires PDF décris ci-dessus, mai
 
 >[!NOTE]
 >
->Il n’est pas recommandé de modifier le contenu de la vue NewHTMLTaskForm.
+>Il n’est pas recommandé de modifier le contenu du  NewHTMLTaskForm.
 
 ## Guides et formulaires Flex {#flex-forms-and-guides}
 
@@ -85,7 +85,7 @@ Les applications tierces sont rendues à l’aide de la vue ExtAppTaskForm.
 
 AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
-[]`SubmitMessage``CancelMessage`Le message`ErrorMessage` peut être une chaîne spécifiée comme||| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l’espace de travail AEM Forms selon les besoins. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque la tâche est envoyée, afin qu’elle puisse nettoyer la fenêtre de la tâche.
+[Le message] peut être une chaîne spécifiée comme `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l’espace de travail AEM Forms selon les besoins. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque le est envoyé, il peut nettoyer la fenêtre de  de.
 
 **Communication entre l’espace de travail AEM Forms et l’application tierce**
 
@@ -94,6 +94,3 @@ Si les boutons d’action directe de l’espace de travail AEM Forms sont visibl
 For example, a Flex application can define `ExternalInterface.addCallback('getMessage', listener)` to support this communication. If the third-party application wants to handle form submission via its own buttons, then you should specify `hideDirectActions = true() in the runtimeMap` and you may skip this listener. Par conséquent, cette syntaxe est facultative.
 
 Pour plus d’informations sur l’interaction d’applications tierces, notamment Correspondence Management, voir [Intégration de Correspondence Management dans l’espace de travail AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).
-
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
