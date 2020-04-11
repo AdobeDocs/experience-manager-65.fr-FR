@@ -11,14 +11,14 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Introduction à la personnalisation de l’espace de travail AEM Forms{#introduction-to-customizing-aem-form-workspace}
 
-L’espace de travail AEM forms offre des fonctionnalités pour modifier la sémantique de la présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
+L’espace de travail AEM forms offre des fonctionnalités permettant de modifier la sémantique de la présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
 
 ![cu_custom_workspace_example](assets/cu_customized_workspace_example.png)
 
@@ -169,7 +169,7 @@ Pour plus d’informations conceptuelles sur les composants qui font partie du c
 
 ### Composants réutilisables {#reusable-components}
 
-L’espace de travail AEM Forms étant un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
+Comme l’espace de travail AEM Forms est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
 
 For more conceptual information, see the [Description of reusable components](/help/forms/using/description-reusable-components.md) and for instruction about using the components, see [Integrating AEM Forms workspace components in web applications](/help/forms/using/description-reusable-components.md).
 
@@ -236,7 +236,7 @@ Le paquet CRX peut être déployé sur le référentiel CRX™. It is available 
 
 Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
-| **Profile** | **Description** | **Utilisation** |
+| **Profil** | **Description** | **Utilisation** |
 |---|---|---|
 | Profil Ship | Ce profil crée un paquet CRX de la plus petite taille possible à l’aide de la minification. Ce paquet est le plus efficace. Tous les fichiers JavaScript™ sont combinés et minifiés dans un seul fichier JS. | Utilisez ce profil si aucune modification sémantique supplémentaire n’est nécessaire dans des fichiers JS. |
 | Profil Debug | Ce profil crée un paquet CRX modérément efficace. La taille du paquet est légèrement supérieure à celle du paquet créé à l’aide du profil Ship. Ce paquet a la plupart des fichiers JavaScript combinés dans un seul fichier JS. | Utilisez ce profil pour le débogage. |
@@ -247,7 +247,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 #### Commande {#command}
 
 * mvn clean -P Ship install sur le dossier client-pkg du package Source fourni au client.
-* L’exécution de la commande de profil Ship fonctionne uniquement sur une JVM 64 bits.
+* L’exécution de la commande Ship  fonctionne uniquement sur une JVM 64 bits.
 
 #### Contenu du dossier WS {#ws-content-1}
 
@@ -380,5 +380,3 @@ mvn clean -P Dev install sur client-pkg
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
