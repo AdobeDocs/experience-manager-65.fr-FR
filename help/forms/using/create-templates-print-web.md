@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3afe5bf8e49202608e4c9369b2ff3d26afa03dc4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -45,9 +45,9 @@ Créez et gérez un modèle pour le canal d’impression de la communication int
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following subforms in the XDP template:
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment de document
-* Résumé du projet de loi : Inclut un fragment de document
-* Résumé : Inclut un fragment de document (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques)
+* Détails du client : Inclut un fragment 
+* Résumé du projet de loi : Inclut un fragment 
+* Résumé : Inclut un fragment  (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques)
 * Appels ciblés : Inclut un tableau (fragment de mise en page)
 * Payer maintenant : Inclut une image
 * Services à valeur ajoutée : Inclut une image
@@ -112,7 +112,7 @@ Exécutez les étapes suivantes pour créer un modèle XDP pour le canal d’imp
 Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le télécharger sur le serveur AEM Forms pour qu’il soit disponible lors de la création de la communication interactive.
 
 1. Sélectionnez **Formulaires** > **Formulaires et documents**.
-1. Appuyez sur **Créer**>**Chargement de fichier**.
+1. Appuyez sur **Create** (Créer) > **File Upload** (Téléchargement de fichier). 
 
    Navigate and select the **create_first_ic_print_template** template (XDP) and tap **Open** to import the XDP template to the AEM Forms server.
 
@@ -142,11 +142,11 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
 
 1. Sélectionnez **Rangée 1** dans le volet gauche et sélectionnez **Objet** > **Liaison** > **Rangée pour chaque élément**.
 
-   ![Propriétés de répétition pour le fragment de disposition](assets/layout_fragment_print_repeat_new.png)
+   ![Propriétés de répétition pour le fragment de mise en page](assets/layout_fragment_print_repeat_new.png)
 
 1. Drag-and-drop the **Text Field** component from the **Object Library** to the **Designer View**.
 
-   ![Champ de texte pour le fragment de disposition](assets/layout_fragment_print_text_field_new.png)
+   ![Champ de texte pour le fragment de mise en page](assets/layout_fragment_print_text_field_new.png)
 
    De même, faites glisser le composant **Champ de texte** vers les rangées **Heure**, **Numéro**, **Durée** et **Frais**.
 
@@ -155,7 +155,7 @@ Pour créer un fragment de mise en page pour le canal d’impression de la commu
    1. Navigate to the location to save the file and specify the name as **table_lf**.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
 
-   1. Appuyez sur **Enregistrer**.
+   1. Appuyez sur **Save** (Enregistrer).
    Une fois que vous avez créé un modèle XDP pour le fragment de mise en page à l’aide de Forms Designer, vous devez le [télécharger](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) sur le serveur AEM Forms pour qu’il soit disponible lors de la création des fragments de mise en page.
 
 ## Créer un modèle pour le canal web {#create-template-for-web-channel}
@@ -173,7 +173,7 @@ Pour créer un modèle de canal web, définissez un dossier dans lequel vous pou
 
 Exécutez les étapes suivantes pour créer un dossier pour les modèles modifiables :
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Configuration Browser**.
+1. Tap **Tools** ![](assets/hammer-icon.svg) > **Configuration Browser**.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
@@ -186,9 +186,9 @@ Exécutez les étapes suivantes pour créer un dossier pour les modèles modifia
 Based on the [use case](/help/forms/using/create-your-first-interactive-communication.md) and [anatomy](/help/forms/using/planning-interactive-communications.md), create the following panels in the Web template:
 
 * Informations de facturation : comprend un fragment de document
-* Détails du client : Inclut un fragment de document
-* Résumé du projet de loi : Inclut un fragment de document
-* Résumé des frais : Comprend un fragment de document et un graphique (mise en page à deux colonnes)
+* Détails du client : Inclut un fragment 
+* Résumé du projet de loi : Inclut un fragment 
+* Résumé des frais : Comprend un fragment  et un graphique (mise en page à deux colonnes)
 * Appels ciblés : Inclut un tableau
 * Pay Now: Includes a **Pay Now** button and an image
 * Value Added Services: Includes an image and a **Subscribe** button.
@@ -200,7 +200,7 @@ Toutes les entités telles que des fragments de document, des graphiques, des ta
 Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le dossier **Create_First_IC_templates** :
 
 1. Navigate to the appropriate template folder by selecting **Tools** > **Templates** > **Create_First_IC_templates** folder.
-1. Appuyez sur **Créer**.
+1. Appuyez sur **Create** (Créer). 
 1. On the **Pick a Template Type** configuration wizard, select **Interactive Communication - Web Channel** and tap **Next**.
 1. On the **Template Details** configuration wizard, specify **Create_First_IC_Web_Template** as the template title. Spécifiez une description facultative et appuyez sur **Créer**.
 
@@ -224,7 +224,7 @@ Exécutez les étapes suivantes pour créer un modèle pour le canal web dans le
    1. Spécifiez **Information de facturation** dans le champ Titre.
    1. Sélectionnez **1** dans la liste déroulante **Nombre de colonnes**.
 
-   1. Tap ![](/help/forms/using/assets/done_icon.png) to save the properties.
+   1. Appuyez sur ![](/help/forms/using/assets/done_icon.png) (Enregistrer) pour enregistrer les propriétés.
    Le nom du panneau est mis à jour vers **Information de facturation** dans l’arborescence de contenu.
 
 1. Répétez les étapes 7 à 11 pour ajouter des panneaux avec les propriétés suivantes au modèle :
@@ -248,7 +248,7 @@ Une fois que vous avez créé le modèle web, vous devez l’activer pour utilis
 
 Effectuez les étapes suivantes pour activer le modèle web :
 
-1. Tap **Tools** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Templates**.
+1. Tap **Tools** ![](assets/hammer-icon.svg) > **Templates**.
 1. Navigate to the **Create_First_IC_Web_Template** template, select it, and tap **Enable**.
 1. Appuyez de nouveau sur **Activer** pour confirmer.
 
@@ -267,4 +267,4 @@ En fonction du cas d’utilisation, vous devez inclure les boutons **Payer maint
 
    ![Composants autorisés](assets/allowed_components_af_new.png)
 
-1. Tap ![](assets/done_icon.png) to save the properties.
+1. Appuyez sur ![](assets/done_icon.png) (Enregistrer) pour enregistrer les propriétés.
