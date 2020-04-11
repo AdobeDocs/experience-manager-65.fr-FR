@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -658,4 +658,4 @@ Les conditions préalables à la création d’une interface utilisateur distinc
 
 Importez le `sample-report-pkg-1.zip` package pour intégrer les rapports personnalisés et l’interface utilisateur décrits dans l’article dans l’interface utilisateur de Process Management.
 
-[Obtenir le support de contact Fichier](assets/sample-report-pkg-1.zip)[Contact](https://www.adobe.com/account/sign-in.supportportal.html)
+[Obtenir le fichier](assets/sample-report-pkg-1.zip)
