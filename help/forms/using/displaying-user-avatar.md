@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -83,5 +83,3 @@ L’avatar de l’utilisateur connecté s’affiche dans le coin supérieur droi
 
 1. Déployez DSC via Workbench. Redémarrez `ProcessManagementClientSessionService` le service.
 1. Il se peut que vous ayez à actualiser votre navigateur ou à vous déconnecter/connecter de nouveau avec l’utilisateur.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
