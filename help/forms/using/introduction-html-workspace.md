@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 4c89d017-0d4b-4fa2-b648-342f3c755350
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -27,8 +27,6 @@ L’espace de travail AEM Forms est compatible avec davantage de périphériques
 **Fonctionnalités essentielles**:
 
 * Permettez aux participants aux processus de travailler où qu’ils soient, grâce à des formulaires PDF dynamiques, des interfaces mobiles et des applications Web.
-* Intégrez facilement les composants d’espace de travail à vos applications Web. L’espace de travail AEM Forms étant un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé.
+* Intégrez facilement les composants d’espace de travail à vos applications Web. Comme l’espace de travail AEM Forms est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé.
 * Étendez les processus métier à la fois aux travailleurs mobiles en ligne et hors ligne à l’aide de l’application de l’espace de travail AEM Forms.
 * Affichez les rapports pour contrôler les retards, les files d’attente de travaux et les indicateurs de performances clés (KPI). Vous pouvez utiliser les API pour extraire des données à des fins d’analyse plus approfondie en utilisant des outils de génération de rapports tiers.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
