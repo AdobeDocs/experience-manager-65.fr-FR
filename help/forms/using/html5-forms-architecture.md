@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -71,7 +71,7 @@ Ce composant contient les composants OSGi pour le rendu, la gestion de la mémoi
 
 Ce service OSGi contient la logique de génération d’un XDP au format HTML et gère l’envoi d’un formulaire pour générer des données XML. Ce service utilise le conteneur de services de formulaires. Le conteneur de services de formulaires appelle en interne le composant natif `XMLFormService.exe` qui effectue le traitement.
 
-Si une demande de rendu est reçue, ce composant appelle le du service Forms pour générer des informations de mise en page et d’état qui sont traitées plus avant afin de générer des états DOM de formulaire HTML et JSON.
+Si une demande de rendu est reçue, ce composant appelle le de service Forms pour générer des informations de mise en page et d’état qui sont traitées plus avant afin de générer des états DOM de formulaire HTML et JSON.
 
 Ce composant est également responsable de la génération de données XML à partir de l’état du formulaire au format JSON envoyé.
 
@@ -185,4 +185,3 @@ Comme décrit ci-dessus, le rendu de profil JSP appelle le service de formulaire
 
 HTML5 forms permet aux développeurs de créer un profil et un rendu du profil pour personnaliser l’aspect des formulaires. Par exemple, les formulaires HTML permettent aux développeurs d’intégrer des formulaires dans un panneau ou une section &lt;div> d’un portail HTML existant.
 Pour plus d’informations sur la création de profils personnalisés, reportez-vous à [Création d’un profil personnalisé](/help/forms/using/custom-profile.md).
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
