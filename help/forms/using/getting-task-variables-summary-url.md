@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -83,5 +83,3 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 Dans l’espace de travail AEM Forms, lorsque vous ouvrez une tâche, l’URL de résumé accède au nœud CRX et le rendu HTML affiche le résumé.
 
 Il est possible de modifier la mise en page du résumé sans modifier le processus. Le rendu HTML affiche le résumé correctement.
-
-**[Contacter le support technique](https://www.adobe.com/fr/account/sign-in.supportportal.html)**
