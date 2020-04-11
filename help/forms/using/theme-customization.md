@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -82,5 +82,3 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 1. Ouvrez l’application AEM Forms.
 
    L’application AEM Forms affiche maintenant les instructions à la place de la description.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
