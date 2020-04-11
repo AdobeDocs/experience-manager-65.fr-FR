@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -81,5 +81,3 @@ Apache peut communiquer avec JBoss à l’aide du protocole HTTP ou AJP.
    ```
 
 1. To access the AEM server, use https://[Apache_server]:80.
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
