@@ -11,7 +11,7 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -63,7 +63,7 @@ Une fois qu’un champ de signature tactile a été ajouté au formulaire et gé
 
 ![géolocalisation](assets/geolocation.png)
 
-******** A. Pinceau **B. Gomme** C.**Géolocalisation** D. Informations de géolocalisation
+**A.** Pinceau **B.** Gomme **C.** Géolocalisation **D.** Informations de géolocalisation
 
 ### Géo-marquage {#geo-tagging}
 
@@ -101,5 +101,3 @@ Pour supprimer les signatures du formulaire :
 
 * (Périphériques mobiles) Appuyez de manière prolongée sur le champ de signature et, dans la boîte de dialogue de confirmation, appuyez sur **Oui**.
 * (Ordinateur de bureau) Survolez le champ de signature, cliquez sur l’icône **Annuler** et, dans la boîte de dialogue de confirmation, cliquez sur **Oui**.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
