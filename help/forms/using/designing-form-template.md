@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14169510083a46fb3ab3ee36ea6abf3b0cc19de1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -42,5 +42,3 @@ L’objectif clé des formulaires HTML5 est les périphériques tactiles. Par co
 #### Rich text format {#rich-text-format}
 
 Vous pouvez convertir un champ de texte en champ de texte enrichi. Il ajoute un d’options de formatage au champ de texte. Pour effectuer une conversion, ouvrez le Concepteur de formulaires, appuyez sur le champ de texte dans le **[!UICONTROL de conception]**. Dans l’onglet **[!UICONTROL Champ]** , sélectionnez Texte **** enrichi dans le déroulant Format **[!UICONTROL de]** champ. Désormais, lorsque le formulaire XFA est rendu sous forme de formulaire HTML5, le champ est rendu sous forme de champ de texte enrichi. Appuyez sur ![Optimiser](assets/maximize_icon.svg) pour  autres options de formatage.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
