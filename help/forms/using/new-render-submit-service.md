@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -139,7 +139,7 @@ Voici certaines questions fréquentes sur les profils d’action :
 
 Et, les processus d’envoi équivalents.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quels profils d’action seront disponibles en standard ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quel d&#39;action sera disponible en standard ?**
 
 Pour des formulaires XDP:
 
@@ -153,11 +153,11 @@ Rien. Le profil d’action par défaut est choisi automatiquement, et le mode de
 
 L’utilisateur doit sélectionner le bouton radio HTML pour le profil par défaut.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du profil d&#39;action par défaut ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du d&#39;actions par défaut  comportement ?**
 
 Oui ; étant donné que le rendu précédent et les services d’envoi associés au profil d’action par défaut étaient différents, ils sont gérés en tant que personnalisations des formulaires existants. On clicking **Restore Defaults**, the default render and submit services are set instead.
 
 Si vous aviez modifié les services liés aux formulaires PDF de rendu/d’envoi existants ou aviez créé des services personnalisés (par exemple, custom1) et souhaitez maintenant utiliser la même fonctionnalité pour un rendu HTML : Vous devez répliquer le nouveau service de rendu/d’envoi (par exemple, en tant que custom2) et appliquer des personnalisations identiques. Désormais, modifiez le profil d’action de votre formulaire XDP afin de commencer à utiliser les services custom2, au lieu des services custom1 pour le rendu ou l’envoi.
 
-&#x200B;#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?
-&#x200B;#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?  [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
+#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?
+#Que doit faire le concepteur de processus pour que le formulaire puisse être rendu au format HTML sur un périphérique et au format PDF sur un bureau ?
