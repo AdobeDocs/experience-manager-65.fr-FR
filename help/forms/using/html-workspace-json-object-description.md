@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -409,7 +409,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
    <td>ID de la file d’attente.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>Type</td>
+   <td>type</td>
    <td>F</td>
    <td>Contient le type de la file d’attente.<br /> 0 - File d’attente de l’utilisateur.<br /> 1. File d’attente partagée.<br /> 2. File d’attente du groupe.<br type="_moz" /> </td>
   </tr>
@@ -440,7 +440,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>dateRanges<br type="_moz" /> </td>
    <td>F</td>
-   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planification, le champ startDate contient la date de début de la planification et le champ endDate contient la date de fin de la planification. If endDate is null in schedule, it implies that user has not scheduled the end date of out-of-office schedule.<br type="_moz" /> </td>
+   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planification, le champ startDate contient la date de  de planification et le champ endDate contient la date de fin de la planification. If endDate is null in schedule, it implies that user has not scheduled the end date of out-of-office schedule.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td>
@@ -851,5 +851,3 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   </tr>
  </tbody>
 </table>
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
