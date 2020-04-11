@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
 # Personnalisation des onglets d’une tâche {#customizing-tabs-for-a-task}
 
-Vous pouvez personnaliser les noms d’onglets du `Start Process` composant dans la vue `Start Process` Uber et du `Task Details` composant dans la vue `ToDo` Uber.
+Vous pouvez personnaliser les noms d’onglets pour le `Start Process` composant dans le  `Start Process` Uber et le `Task Details` dans le  `ToDo` Uber.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Change the value of `tabname`in the `translation.json` file.
@@ -50,5 +50,3 @@ Vous pouvez personnaliser les noms d’onglets du `Start Process` composant dans
    >[!NOTE]
    >
    >ajoutez la paire clé-valeur correspondante pour toutes les langues prises en charge.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
