@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,5 +43,3 @@ Pour supprimer un brouillon, procédez comme suit :
 1. Cliquez sur **Brouillons** dans la liste déroulante en regard de Rechercher.
 1. A form with the edit icon ![edit-draft-app](assets/edit-draft-app.png) denotes a draft. Appuyez sur les points de suspension horizontaux en regard du brouillon.
 1. Dans les options qui s’affichent lorsque vous appuyez sur les points de suspension horizontaux, appuyez sur **Supprimer le brouillon**.
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
