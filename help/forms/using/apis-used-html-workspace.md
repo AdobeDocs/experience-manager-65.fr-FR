@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -353,7 +353,7 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   <tr>
    <td>removeProperty</td>
    <td>WorkspacePropertyService</td>
-   <td>Supprimez</td>
+   <td>delete</td>
    <td>Elle supprime une propriété de l’espace de travail d’un utilisateur.</td>
   </tr>
   <tr>
@@ -400,6 +400,3 @@ Les API suivantes sont utilisées dans l’espace de travail AEM Forms.
   </tr>
  </tbody>
 </table>
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
-
