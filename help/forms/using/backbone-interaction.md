@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -23,7 +23,7 @@ Voici quelques concepts clés :
 
 **Modèle** Backbone contient des données et la plupart de la logique liée à ces données.
 
-**Vue** Backbone Utilisée pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
+**** Backbone Utilisé pour représenter l’état du modèle correspondant. Une vue Backbone se comporte en fait comme un contrôleur, écoutant les événements de l’interface utilisateur comme les clics de l’utilisateur, ou les événements de modèle (comme les modifications de données), et modifie l’interface utilisateur en fonction des besoins.
 
 **Modèle** HTML Un modèle d’enveloppe dont les espaces réservés sont renseignés par le modèle.
 
@@ -51,11 +51,9 @@ Exemple :
 
 1. L’utilisateur clique sur un modèle de tâche dans la liste des tâches.
 1. La vue Tâches écoute le clic et appelle la fonction de rendu sur le modèle de tâche.
-1. Le modèle de tâche appelle ensuite le service qui est un point commun pour toutes les communications avec le serveur AEM Forms.
+1. Le modèle de  appelle ensuite le service qui est un point commun pour toutes les communications avec le serveur AEM Forms.
 1. La classe de service appelle le point de fin REST d’AEM Forms pour la méthode de rendu via ajax.
 1. Le rappel réussi de cette invocation Ajax est défini dans le modèle de la tâche.
 1. Le modèle de tâche déclenche un événement Backbone comme une notification indiquant que l’appel de rendu est terminé.
 1. Une autre vue, la vue des détails de la tâche écoute cet événement du modèle de la tâche.
 1. La vue des détails de la tâche modifie ensuite le modèle de détails de la tâche pour afficher la tâche générée (formulaire, détails, pièces jointes, notes, etc.) à l’utilisateur.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
