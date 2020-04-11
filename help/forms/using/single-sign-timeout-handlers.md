@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -38,5 +38,3 @@ Dans cette boîte de dialogue contextuelle :
 >[!NOTE]
 >
 >Si aucune action n’est effectuée, l’utilisateur est automatiquement déconnecté de l’espace de travail AEM Forms trois secondes avant l’expiration de la session.
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
