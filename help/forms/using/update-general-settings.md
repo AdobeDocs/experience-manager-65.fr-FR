@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -64,5 +64,3 @@ Vous pouvez apporter les modifications suivantes aux paramètres de votre applic
 >L’effacement du cache vous entraîne immédiatement hors de l’application.
 >
 >Toutefois, vous serez invité à confirmer l’opération d’effacement du cache.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
