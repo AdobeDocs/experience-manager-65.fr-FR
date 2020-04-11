@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -75,8 +75,8 @@ Vérifiez les paramètres suivants :
 
 ## Problème : le rendu des formulaires ne prend pas les styles en compte {#problem-form-renders-without-styles}
 
-1. In your browser, open **Developer Tools**. Vérifiez que profile.css est disponible.
-1. Si le fichier profile.css n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;serveur>:&lt;port>/crx/de.
+1. In your browser, open **Developer Tools**. Vérifiez que.css est disponible.
+1. Si le fichier .css n’est pas disponible, connectez-vous à CRX DE à l’adresse https://&lt;serveur>:&lt;port>/crx/de.
 1. Dans la hiérarchie de dossiers sur la gauche, accédez à /etc/clientlibs/fd/xfaforms/. Ouvrez les fichiers css.txt répertoriés dans les fichiers.
 
    * son profil
@@ -100,7 +100,7 @@ Vérifiez les paramètres suivants :
 
 ### Problème : erreur inattendue rencontrée {#problem-unexpected-error-encountered}
 
-1. Dans l’URL du formulaire, ajoutez un paramètre de requête debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;chemin d’accès>&amp;template=&lt;nom du fichier xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Dans l’URL du formulaire, ajoutez un paramètre de  debugClientLibs et définissez sa valeur sur true (par exemple : https://&lt;serveur>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;chemin d’accès>&amp;template=&lt;nom du fichier xdp>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Dans le navigateur de bureau, comme Chrome, accédez à Outils de développement -> Console.
 1. Ouvrez les journaux pour identifier le type d’erreur. Pour plus d’informations sur les journaux, voir [journaux des formulaires HTML5](/help/forms/using/enable-logs.md).
 1. Accédez à Outils de développement -> Console. Utilisez la trace de pile pour localiser le code qui déclenche l’erreur. Corrigez l’erreur pour résoudre le problème.
@@ -179,5 +179,3 @@ Texte de l’étape
 1. Dans le navigateur de bureau, accédez à Outils de développement -> Ressources.
 
    Vérifiez sur le côté gauche, dans Images, que l’image s’affiche.
-
-[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)
