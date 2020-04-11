@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -76,10 +76,8 @@ Les formulaires HTML5 prennent en charge trois méthodes pour transmettre des pa
 
 * **Paramètres de demande SetAttribute** : Vous pouvez spécifier les paramètres de rendu sous la forme d’une paire de valeurs de clé. Dans les paramètres de demande SetAttribute, les paramètres ne sont pas visibles par l’utilisateur final. Vous pouvez transférer une requête depuis un autre JSP vers le JSP de rendu de profil HTML5 et utiliser *setAttribute* sur l’objet de la requête pour transmettre tous les paramètres de rendu. Cette méthode a la priorité la plus élevée.
 
-* **** Paramètres de requête de noeud de profil : Vous pouvez spécifier les paramètres de rendu en tant que propriétés de noeud d’un noeud de profil. Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
+* **Paramètres de requête de noeud  :** Vous pouvez spécifier les paramètres de rendu en tant que propriétés de noeud d’un noeud . Dans les paramètres de requête de nœud de profil, les paramètres ne sont pas visibles par l’utilisateur. Le nœud de profil est le nœud où la requête est envoyée. Pour spécifier des paramètres en tant que propriétés de nœud, utilisez CRXDE lite.
 
 ### Paramètres d’envoi {#submit-parameters}
 
 Les formulaires HTML5 envoient des données ; exécutent les scripts et les services Web côté serveur sur des serveurs AEM. Pour plus d’informations sur les paramètres utilisés pour exécuter les scripts et les services Web côté serveur sur les serveurs AEM, voir le [Proxy de service des formulaires HTML5](/help/forms/using/service-proxy.md).
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
