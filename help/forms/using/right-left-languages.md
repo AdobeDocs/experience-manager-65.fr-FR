@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -21,5 +21,3 @@ Les formulaires HTML5 prennent en charge les langues écrites de droite à gauch
 **Restrictions**
 
 Les formulaires mobiles prennent en charge les langues écrites de droite à gauche dans tous les navigateurs à l’exception d’Internet Explorer.
-
-**[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)**
