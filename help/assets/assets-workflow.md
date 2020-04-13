@@ -3,24 +3,24 @@ title: Traiter les ressources pour exécuter les processus d’entreprise, effec
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des  de.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf291206a8c0e435053fbdba493ad949619ee5b3
+source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ---
 
 
 # Traiter les fichiers numériques {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] vous permet de travailler sur vos ressources numériques de plusieurs manières afin de permettre un traitement robuste des ressources. Vous pouvez utiliser les méthodes de traitement disponibles ou étendre les méthodes pour assurer l’achèvement complet des processus d’entreprise de bout en bout à l’aide de, d’audits et de conformité, de la découverte et de la distribution de vos ressources numériques, ainsi que de leur intégrité de base. Vous pouvez faire tout cela tout en atteignant l’échelle et la personnalisation requises.
+[!DNL Adobe Experience Manager Assets] vous permet de travailler sur vos ressources numériques de plusieurs manières afin de permettre un traitement robuste des ressources. Vous pouvez utiliser les méthodes de traitement par défaut ou personnalisées pour assurer l’achèvement des processus d’entreprise de bout en bout, les audits et la conformité, la découverte et la distribution, ainsi que l’intégrité de base de vos ressources numériques. Vous pouvez exécuter le de gestion des ressources tout en atteignant l’échelle et la personnalisation requises.
 
 ## Comprendre les {#understand-workflows}
 
-Pour le traitement des ressources, [!DNL Experience Manager] utilise des .  aider à automatiser la logique métier ou . Les étapes granulaires permettant d’accomplir des  spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des  de. Par exemple, un flux de travail peut automatiquement appliquer un filigrane aux images téléchargées en fonction d’un critère spécifique, tel que les métadonnées intégrées à l’image, le dossier dans lequel elle est téléchargée, la résolution de l’image, etc. Un autre exemple est un flux de travail configuré pour créer des filigranes d’images de telle manière et répondre simultanément à plusieurs besoins de gestion des ressources, tels que l’ajout de métadonnées, la création de rendus, l’ajout de balises intelligentes pour la découverte de ressources, la publication dans une banque de données, la définition d’autorisations d’accès utilisateur, etc.
+Pour le traitement des ressources, [!DNL Experience Manager] utilise des .  aider à automatiser la logique métier ou . Les étapes granulaires permettant d’accomplir des  spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des  de. Par exemple, un flux de travail peut appliquer un filigrane aux images téléchargées en fonction d’un critère spécifique, tel que le dossier dans lequel elles sont téléchargées, la résolution de l’image, etc. Un autre exemple est un flux de travail configuré pour le filigrane et qui permet simultanément d’ajouter des métadonnées, de créer des rendus, d’ajouter des balises intelligentes et de publier du contenu dans une banque de données.
 
-##  par défaut disponible dans Experience Manager {#default-workflows}
+##  par défaut disponible dans [!DNL Experience Manager]{#default-workflows}
 
 Par défaut, toutes les ressources téléchargées sont traitées à l’aide du processus [!UICONTROL DAM Update Asset] . Le flux de travail s’exécute pour chaque ressource téléchargée et effectue des de gestion des ressources de base, tels que la génération de rendus, l’écriture différée des métadonnées, les  de page, les de médias, leet le transcodage.
 
-Pour afficher les différents modèles de flux de travail disponibles par défaut, voir [!UICONTROL Outils > Processus > Modèles] dans [!DNL Experience Manager].
+Pour afficher les différents modèles de flux de travail disponibles par défaut, voir **[!UICONTROL Outils > Processus > Modèles]** dans [!DNL Experience Manager].
 
 ![Certains flux de travaux par défaut](assets/aem-default-workflows.png)
 
@@ -38,6 +38,9 @@ Utilisez les workflows dans les ressources numériques pour activer les ressourc
 
 ## Application d’un workflow à une ressource {#apply-a-workflow-to-an-asset}
 
+<!-- 
+TBD: Add animated GIF for these steps instead of all these screenshots.
+-->
 Pour appliquer un processus à une ressource, procédez comme suit :
 
 1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez un flux de travail, puis cliquez sur la ressource pour ouvrir la page de la ressource. Sélectionnez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
@@ -46,11 +49,7 @@ Pour appliquer un processus à une ressource, procédez comme suit :
 
 1. Click **[!UICONTROL Actions]** at the bottom to open the list of actions available for the asset.
 
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
 1. Click **[!UICONTROL Start Workflow]** from the list.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
 
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
 
@@ -83,7 +82,7 @@ Pour appliquer un processus à une ressource, procédez comme suit :
 
 ## Application d’un workflow à plusieurs dossiers {#applying-a-workflow-to-multiple-folders}
 
-La procédure à suivre pour appliquer un workflow à plusieurs dossiers est similaire à celle observée permettant d’appliquer un workflow à plusieurs ressources. Select the folders in the Assets console, and perform steps 2-7 of the procedure [apply a workflow to multiple assets](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
+La procédure à suivre pour appliquer un workflow à plusieurs dossiers est similaire à celle observée permettant d’appliquer un workflow à plusieurs ressources. Select the folders in the [!DNL Assets] interface, and perform steps 2-7 of the procedure [apply a workflow to multiple assets](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
 ## Apply a workflow to a collection {#applying-a-workflow-to-a-collection}
 
@@ -91,9 +90,9 @@ Voir [Application d’un processus à une collection](/help/assets/managing-coll
 
 ## automatique d’un flux de travail pour traiter les ressources de manière conditionnelle {#auto-execute-workflow-on-some-assets}
 
-Les administrateurs peuvent configurer le processus pour exécuter et traiter automatiquement les ressources en fonction de conditions prédéfinies. Cette fonctionnalité s’avère utile aux utilisateurs et aux marketeurs de la gamme, par exemple, pour créer un flux de travail personnalisé sur des dossiers spécifiques. Supposons que tous les fichiers de la photographie d&#39;une agence peuvent être marqués d&#39;un filigrane ou que tous les fichiers téléchargés par un indépendant puissent être traités pour créer des rendus spécifiques.
+Les administrateurs peuvent configurer le processus pour exécuter et traiter automatiquement les ressources en fonction de conditions prédéfinies. Cette fonctionnalité est utile aux utilisateurs et aux marketeurs de la ligne de conduite, par exemple, pour créer un flux de travail personnalisé sur des dossiers spécifiques. Supposons que tous les fichiers de la photographie d&#39;une agence peuvent être marqués d&#39;un filigrane ou que tous les fichiers téléchargés par un indépendant puissent être traités pour créer des rendus spécifiques.
 
-Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de processus qui le lance. Les administrateurs peuvent donner accès aux spécialistes du marketing pour créer le  du et configurer le lanceur. Les utilisateurs peuvent modifier le flux de travail [!UICONTROL DAM Update Asset] par défaut pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le flux de travaux s’exécute sur tous les fichiers nouvellement transférés. Utilisez donc l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des fichiers spécifiques :
+Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de processus qui l’exécute. Un lanceur de processus surveille les modifications dans le référentiel de contenu et exécute le processus lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux spécialistes du marketing pour créer le  du et configurer le lanceur. Les utilisateurs peuvent modifier le flux de travail [!UICONTROL DAM Update Asset] par défaut pour ajouter les étapes supplémentaires requises pour traiter des ressources spécifiques. Le processus s’exécute sur tous les fichiers nouvellement transférés. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
 
 * Effectuez une copie du flux de travail [!UICONTROL DAM Update Asset] et modifiez-le pour l’exécuter sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
 * Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’un fractionnement [OU](/help/sites-developing/workflows-step-ref.md#or-split) applicable de manière conditionnelle au plus grand nombre de dossiers requis.
@@ -102,6 +101,7 @@ Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de proc
 >
 >* [Demander et participer aux  de](/help/sites-authoring/workflows.md)
 >* [Création de modèles de processus et extension de la fonctionnalité de processus](/help/sites-developing/workflows.md)
+>* [Méthodes d’exécution du](/help/sites-administering/workflows-starting.md)
 >* [Meilleures pratiques de flux](/help/sites-developing/workflows-best-practices.md)
 >* [Article de la communauté sur la modification d’un fichier à l’aide d’un processus](https://helpx.adobe.com/fr/experience-manager/using/modify_asset_workflow.html)
 
