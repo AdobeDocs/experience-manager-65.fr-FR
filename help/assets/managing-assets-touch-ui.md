@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
+source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ---
 
@@ -902,9 +902,7 @@ La création de versions permet d’effectuer les opérations suivantes :
 
    ![chronologie](assets/timeline.png)
 
-1. Appuyez/cliquez sur l’icône **[!UICONTROL Actions]** (flèche) dans la partie inférieure pour afficher les actions disponibles que vous pouvez effectuer sur la ressource.
-
-   ![chlimage_1-249](assets/chlimage_1-45.png)
+1. Click the **[!UICONTROL Actions]** at the bottom to view the available actions you can perform on the asset.
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource.
 
