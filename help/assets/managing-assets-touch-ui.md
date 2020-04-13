@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
 
 ---
 
@@ -878,65 +878,61 @@ Voici un exemple de configuration d’AEM en vue d’imprimer des annotations en
 1. Configurez le fichier PDF d’annotation en définissant le paramètre font-family sur `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Cette configuration est disponible par défaut et fonctionne pour l’ensemble des langues européennes, ainsi que pour le chinois, le japonais et le coréen (CJC).
 1. Si la langue de votre choix est différente de celles mentionnées à l’étape 2, ajoutez une entrée appropriée (séparée par des virgules) à la famille de polices font-family par défaut.
 
-## Versions des ressources {#asset-versioning}
+## Création, gestion,  et rétablissement de versions de ressources {#asset-versioning}
 
 Le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. De plus, il aide à restaurer ultérieurement des ressources dans leur état précédent. Par exemple, si vous souhaitez annuler une modification apportée à une ressource, restaurez la version non modifiée de la ressource.
 
-Voici quelques scénarios de création de versions :
+Vous pouvez créer des versions dans Experience Manager dans les cas suivants :
 
-* Vous modifiez une image dans une autre application et la téléchargez vers AEM Assets. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
-* Vous modifiez les métadonnées d’une ressource.
-* Vous utilisez l’application de bureau AEM pour extraire une ressource existante et enregistrer vos changements. Une version est créée chaque fois que la ressource est enregistrée.
+* Téléchargez un fichier portant le même nom de fichier qu’il existe au même emplacement. Il peut s’agir d’une nouvelle ressource ou d’une version modifiée de la même ressource.
+* Modifiez une image dans Experience Manager et enregistrez les modifications.
+* Modifiez les métadonnées d’un fichier.
+* Utilisez l’application de bureau AEM pour extraire un fichier existant, le modifier et [télécharger vos modifications](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
-La création de versions permet d’effectuer les opérations suivantes :
+Dans Experience Manager, vous pouvez effectuer les opérations suivantes :
 
 * créer une version d’une ressource ;
 * afficher la révision actuelle d’une ressource ;
 * restaurer une version précédente de la ressource.
 
-1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version et appuyez/cliquez dessus pour afficher la page Ressource correspondante.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version et cliquez dessus pour ouvrir son  de. Dans le coin supérieur gauche de la page, ouvrez le menu, puis sélectionnez **[!UICONTROL Chronologie]**.
 
-1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans le menu.
+   ![Dans le menu de navigation de gauche, sélectionnez l’option Chronologie](assets/timeline.png)
 
-   ![chronologie](assets/timeline.png)
+*Figure : Ouvrez le menu dans la zone supérieure gauche de la page et sélectionnez l’option[!UICONTROL Chronologie].*
 
-1. Click the **[!UICONTROL Actions]** at the bottom to view the available actions you can perform on the asset.
+1. Pour créer une version de la ressource :
 
-1. Appuyez/cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource.
+   * Click the **[!UICONTROL Actions]** at the bottom.
+   * Cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource. Vous pouvez éventuellement ajouter une étiquette et un commentaire.
+   * Cliquez sur **[!UICONTROL Créer]** pour créer une version.
 
-   ![chlimage_1-250](assets/chlimage_1-46.png)
+      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
 
-1. Ajoutez un libellé et un commentaire, puis cliquez sur **[!UICONTROL Créer]** pour créer une version. Sinon, appuyez/cliquez sur **Annuler** pour quitter l’opération.
+1. Pour  une version d’une ressource :
 
-   ![chlimage_1-251](assets/chlimage_1-47.png)
+   * Cliquez sur **[!UICONTROL Afficher tout]** dans le [!UICONTROL journal].
+   * Cliquez sur **[!UICONTROL Versions]**. Toutes les versions créées pour un fichier sont répertoriées dans la barre latérale gauche.
 
-1. Pour afficher la version qui vient d’être créée, ouvrez la liste **[!UICONTROL Tout afficher]** dans la chronologie à partir de la page de détails de la ressource ou de l’interface utilisateur d’Assets et sélectionnez **[!UICONTROL Versions]**. Toutes les versions créées pour une ressource sont répertoriées sous l’onglet Chronologie. Pour filtrer la liste afin d’afficher les versions, cliquez sur la flèche pointant vers le bas et sélectionnez **[!UICONTROL Versions]** dans la liste.
+      ![versions_option](assets/versions_option.png)
 
-   ![versions_option](assets/versions_option.png)
+   * Sélectionnez une version spécifique de la ressource, puis cliquez sur **[!UICONTROL Version]**.
 
-1. Sélectionnez une version spécifique de la ressource pour la prévisualiser ou lui permettre de s’afficher dans l’interface utilisateur d’Assets.
+1. Pour revenir à une ancienne version de la ressource, procédez comme suit. Une fois la version rétablie, elle s’affiche dans l’ [!DNL Assets] interface et peut être utilisée.
 
-   ![select_version](assets/select_version.png)
+   * Cliquez sur une version de la ressource. Vous pouvez éventuellement ajouter une étiquette et un commentaire.
+   * Click **[!UICONTROL Revert to this Version]**.
 
-   >[!NOTE]
-   >
-   >You can also select the asset from the [List view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) or the [Column view](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+      ![select_version](assets/select_version.png)
 
-1. Ajoutez un libellé et un commentaire pour la version afin de rétablir la version spécifique dans l’interface utilisateur d’Assets.
+1. Pour comparer deux versions d’une image, procédez comme suit :
+   * Cliquez sur la version à comparer à la version actuelle.
+   * Faites glisser le curseur vers la gauche pour superposer cette version à la version actuelle et comparer.
+   ![Utilisez le curseur pour comparer les versions sélectionnées d’un fichier à la version actuelle.](assets/version-slider.gif)
 
-   ![save_version](assets/save_version.png)
-
-1. Pour générer un aperçu de la version, appuyez/cliquez sur **[!UICONTROL Aperçu de la version]**.
-1. Pour afficher cette version dans l’interface utilisateur d’Assets, sélectionnez **[!UICONTROL Revenir à cette version]**.
-1. Pour comparer deux versions, accédez à la page de la ressource et appuyez/cliquez sur la version à comparer à la version actuelle.
-
-   ![select_version_tocompare](assets/select_version_tocompare.png)
-
-1. Dans la chronologie, sélectionnez la version à comparer, puis faites glisser le curseur vers la gauche pour superposer cette version sur la version actuelle à comparer.
-
-   ![compare_versions](assets/compare_versions.png)
+   *Figure : Utilisez le curseur pour comparer facilement les versions sélectionnées d’un fichier avec la version actuelle.*
 
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
