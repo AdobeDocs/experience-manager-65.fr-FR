@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
+source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
 
 ---
 
@@ -880,7 +880,7 @@ Voici un exemple de configuration d’AEM en vue d’imprimer des annotations en
 
 ## Création, gestion,  et rétablissement de versions de ressources {#asset-versioning}
 
-Le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. De plus, il aide à restaurer ultérieurement des ressources dans leur état précédent. Par exemple, si vous souhaitez annuler une modification apportée à une ressource, restaurez la version non modifiée de la ressource.
+Le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. De plus, il aide à restaurer ultérieurement des ressources dans leur état précédent. Par exemple, si vous souhaitez annuler une modification apportée à une ressource, restaurez la version non modifiée de la ressource. Dans Experience Manager, vous pouvez créer une version, la révision en cours,  les différences côte à côte entre deux versions d’images et restaurer une ressource dans sa version précédente.
 
 Vous pouvez créer des versions dans Experience Manager dans les cas suivants :
 
@@ -891,17 +891,11 @@ Vous pouvez créer des versions dans Experience Manager dans les cas suivants :
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
-Dans Experience Manager, vous pouvez effectuer les opérations suivantes :
-
-* créer une version d’une ressource ;
-* afficher la révision actuelle d’une ressource ;
-* restaurer une version précédente de la ressource.
-
 1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version et cliquez dessus pour ouvrir son  de. Dans le coin supérieur gauche de la page, ouvrez le menu, puis sélectionnez **[!UICONTROL Chronologie]**.
 
    ![Dans le menu de navigation de gauche, sélectionnez l’option Chronologie](assets/timeline.png)
 
-*Figure : Ouvrez le menu dans la zone supérieure gauche de la page et sélectionnez l’option[!UICONTROL Chronologie].*
+   *Figure : Ouvrez le menu dans la zone supérieure gauche de la page et sélectionnez l’option[!UICONTROL Chronologie].*
 
 1. Pour créer une version de la ressource :
 
@@ -910,6 +904,8 @@ Dans Experience Manager, vous pouvez effectuer les opérations suivantes :
    * Cliquez sur **[!UICONTROL Créer]** pour créer une version.
 
       ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+
+      *Figure : Créez une version d’un fichier à partir de la barre latérale gauche du[!UICONTROL journal]chronologique.*
 
 1. Pour  une version d’une ressource :
 
@@ -926,6 +922,8 @@ Dans Experience Manager, vous pouvez effectuer les opérations suivantes :
    * Click **[!UICONTROL Revert to this Version]**.
 
       ![select_version](assets/select_version.png)
+
+      *Figure : Sélectionnez une version et revenez-y. Il devient la version actuelle qui est ensuite disponible pour les utilisateurs de DAM.*
 
 1. Pour comparer deux versions d’une image, procédez comme suit :
    * Cliquez sur la version à comparer à la version actuelle.
