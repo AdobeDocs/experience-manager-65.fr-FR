@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Assets User Guide
+user-guide-title: Guide de l’utilisateur d’AEM 6.5 Assets
 translation-type: tm+mt
-source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
+source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
 
 ---
 
@@ -17,13 +17,13 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
 + [Meilleures pratiques pour les ressources](best-practices-for-assets.md)
 + Utilisation des ressources AEM {#using}
    + [Expérience  AEM Assets](assets-home-page.md)
-   + [Recherche de ressources dans AEM ](search-assets.md)
+   + [Recherche de ressources dans AEM   ](search-assets.md)
    + [Ressources multilingues](multilingual-assets.md)
-   + [Utilisation de ressources Adobe Stock dans AEM Assets](aem-assets-adobe-stock.md)
+   + [Utilisation de ressources Adobe Stock dans AEM Assets](aem-assets-adobe-stock.md)
    + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
-   + [Appliquer des  aux ressources](assets-workflow.md)
+   + [Traiter les actifs](assets-workflow.md)
    + [Ajouter zones cliquables](image-maps.md)
    + [Réutilisation de fichiers à l’aide de MSM](reuse-assets-using-msm.md)
    + [Ressources liées aux sites AEM](use-assets-across-connected-assets-instances.md)
@@ -83,7 +83,7 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Formats de fichiers pris en charge](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
    + [Gestion des métadonnées pour les fichiers](metadata.md)
-   + [Écriture XMP différée pour les rendus](xmp-writeback.md)
+   + [Écriture différée XMP sur les rendus](xmp-writeback.md)
    + [Partage des liens des ressources](link-sharing.md)
    + [Rapports de ressources](asset-reports.md)
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
@@ -97,11 +97,11 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Ajout ou modification de métadonnées](meta-edit.md)
    + [Guide de migration des ressources](assets-migration-guide.md)
    + [Métadonnées XMP](xmp.md)
-   + [Considérations relatives au réseau de ressources](assets-network-considerations.md)
+   + [Considérations sur le réseau d’Assets](assets-network-considerations.md)
    + [Ressources AEM et bibliothèque multimédia AEM](medialibrary.md)
    + [Utiliser le pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert](configuring-asset-upload-restrictions.md)
-   + [Meilleures pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
    + [Intégration au serveur InDesign](indesign.md)
    + [Profils de métadonnées](metadata-profiles.md)
    + [Gestion des droits numériques dans les ressources](drm.md)
@@ -144,7 +144,7 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Organisation des ressources numériques](organize-assets.md)
    + [Gestion des ressources vidéo](managing-video-assets.md)
    + [Création de projets de traduction](translation-projects.md)
-   + [Préparation des fichiers pour la traduction](preparing-assets-for-translation.md)
+   + [Préparation des ressources pour la traduction](preparing-assets-for-translation.md)
    + [Téléchargement de ressources à partir d’AEM](download-assets-from-aem.md)
    + [Opérations asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
@@ -152,10 +152,10 @@ source-git-commit: 92e72695e267d4a8d1c18cf6842b17273e185444
    + [Activation des informations sur les ressources via la gestion dynamique des balises](touch-ui-using-dtm-for-asset-insights.md)
    + [Configuration des informations sur les ressources](touch-ui-configuring-asset-insights.md)
    + [Archivage et extraction de fichiers](check-out-and-submit-assets.md)
-   + [Application des services de traduction cloud aux dossiers](transition-cloud-services.md)
+   + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
    + [Utiliser le suivi de page et le code incorporé dans les pages Web](touch-ui-using-page-tracker.md)
-   + [Gestion des ressources composées](managing-linked-subassets.md)
-   + [Ressources connexes](related-assets.md)
+   + [Gestion des ressources composites](managing-linked-subassets.md)
+   + [Ressources liées](related-assets.md)
    + [Partage de dossiers privés](private-folder.md)
    + [Instructions de formation pour Smart Content Service](smart-tags-training-guidelines.md)
    + [Rendus vidéo](video-renditions.md)
