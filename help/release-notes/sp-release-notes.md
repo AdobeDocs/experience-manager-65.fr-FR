@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be4a8a78b8555149809b8026bfd059f4cc9e9401
+source-git-commit: 9daad219d885c1c6972ace0b247f3537dcdc38a9
 
 ---
 
@@ -178,6 +178,8 @@ Pour une  complète des fonctionnalités, des points saillants clés et des fonc
 
 * Un message d’erreur s’affiche lors du traitement des éléments associés à LiveJournal (FYR-12420).
 
+* ReportSuitesServlet est vulnérable à SSRF (NPR-32156).
+
 ### Editeur de modèles WCM {#wcm-template-editor-6540}
 
 * En mode de structure des modèles modifiables, les composants autorisés  dans le de mise en page  ne s’affichent pas dans le composant de bouton de lien (CQ-4282099).
@@ -194,9 +196,9 @@ Pour une  complète des fonctionnalités, des points saillants clés et des fonc
 
 * Les utilisateurs du portail de marque ne peuvent pas publier les ressources du dossier de contributions vers AEM Assets lors de la mise à niveau vers les E/S Adobe sur AEM 6.5.4 (CQDOC-15655).
 
-   Ce problème sera corrigé dans le prochain Service Pack AEM 6.5.5.
+   Ce problème sera corrigé dans le prochain Service Pack AEM 6.5.5.
 
-   Pour un correctif immédiat sur AEM 6.5.4, il est recommandé de [télécharger le correctif](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) et de l’installer sur votre instance d’auteur.
+   Pour une solution immédiate sur AEM 6.5.4, il est recommandé de [télécharger le correctif](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) et de l’installer sur votre instance d’auteur.
 
 
 * Les valeurs de la liste déroulante des  de métadonnées ne sont pas visibles dans les propriétés des ressources (CQ-4283287).
