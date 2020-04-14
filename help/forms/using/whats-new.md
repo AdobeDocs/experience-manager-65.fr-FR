@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -84,7 +84,7 @@ Vous pouvez [trier n’importe quelle colonne d’un tableau](../../forms/using/
 
 #### Limiter la disponibilité des modèles de formulaires adaptatifs à des chemins spécifiques {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-Les formulaires adaptatifs ont ajouté la prise en charge de la propriété cq:allowedPaths. La propriété [limite la disponibilité des modèles de formulaires adaptatifs à des chemins](../../forms/using/creating-adaptive-form.md#main-pars-text)spécifiques.
+Les formulaires adaptatifs ont ajouté la prise en charge de la propriété cq:allowedPaths. La propriété [limite la disponibilité des modèles de formulaires adaptatifs à des chemins](creating-adaptive-form.md#adaptive-form-templates)spécifiques.
 
 #### Ajouter les cases à cocher au formulaire adaptatif de manière dynamique {#add-check-boxes-to-the-adaptive-form-dynamically}
 
