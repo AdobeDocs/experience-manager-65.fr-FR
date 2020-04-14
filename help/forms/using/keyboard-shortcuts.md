@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -36,7 +36,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Del&amp;ast; |
 | Supprimer un ou plusieurs composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+B | Ctrl+B&amp;ast; |
-| Italique du texte lors de l’utilisation du composant Editeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&amp;ast; |
+| Italique du texte lors de l’utilisation du composant Editeur de texte enrichi en mode  | Ctrl+I | Ctrl+I&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
@@ -71,8 +71,8 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 | **Action** | **Raccourci sous Windows** | **Raccourci sous Mac OS** |
 |---|---|---|
-| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande+A pour sélectionner tous les accordéons suivis de la flèche droite pour développer |
-| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons suivis de la flèche gauche pour réduire | Commande+A pour sélectionner tous les accordéons suivis de la flèche vers la gauche pour réduire |
+| Développer tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl + A pour sélectionner tous les accordéons, puis flèche droite pour développer | Commande+A pour sélectionner tous les accordéons suivis de la flèche vers la droite pour développer |
+| Réduire tous les accordéons dans l’arborescence des objets de formulaire d’explorateur de contenu lors de l’activation | Ctrl+A pour sélectionner tous les accordéons suivis de la flèche vers la gauche pour réduire | Commande+A pour sélectionner tous les accordéons suivis de la flèche vers la gauche pour réduire |
 | Développer l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la droite | Flèche vers la droite |
 | Réduire l’accordéon sélectionné dans l’arborescence des objets de formulaire | Flèche vers la gauche | Flèche vers la gauche |
 | Sélectionner l’élément suivant dans l’arbre des objets de formulaire | Flèche vers le bas | Flèche vers le bas |
@@ -85,7 +85,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 
 Cette section répertorie les différents raccourcis clavier et raccourcis d’accessibilité que vous pouvez utiliser dans l’éditeur de texte de Correspondence Management. Vous pouvez utiliser ces raccourcis lorsque vous effectuez les actions suivantes :
 
-* Creating or editing a [Text](/help/forms/using/document-fragments.md#main-pars-header-0) asset
+* Creating or editing a [Text](texts-interactive-communications.md) asset
 * Editing a text module after tapping the relevant Edit icon ( ![edittextmodule](assets/edittextmodule.png)) when [creating a correspondence](/help/forms/using/create-correspondence.md).
 
 ### Sélection de texte et déplacement du curseur {#text-selection-and-moving-the-cursor-around}
