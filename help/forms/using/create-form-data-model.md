@@ -1,15 +1,15 @@
 ---
 title: '"Didacticiel : créer un modèle de données de formulaire "'
 seo-title: Didacticiel de création d’un modèle de données de formulaire
-description: Création d’un modèle de données de formulaire
-seo-description: Création d’un modèle de données de formulaire
+description: Créer un modèle de données de formulaire
+seo-description: Créer un modèle de données de formulaire
 uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -84,13 +84,13 @@ Procédez comme suit pour configurer votre base de données MySQL :
 
 ## Étape 2 : Créer un modèle de données de formulaire {#create-fdm}
 
-AEM Forms fournit une interface utilisateur intuitive pour [créer un modèle de données de formulaire](../../forms/using/data-integration.md#main-pars-header-1524967585) à partir des sources de données configurées. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Dans notre cas d’utilisation, nous utiliserons la source de données MySQL configurée.
+AEM Forms provides an intuitive user interface to [create a form data model](data-integration.md) from configured data sources. Vous pouvez utiliser plusieurs sources de données dans un modèle de données de formulaire. Dans notre cas d’utilisation, nous utiliserons la source de données MySQL configurée.
 
 Procédez comme suit pour créer un modèle de données de formulaire :
 
-1. In AEM author instance, navigate to **Forms** > **Data Integrations**.
-1. Tap **Create** > **Form Data Model**.
-1. Dans la boîte de dialogue Créer un modèle de données de formulaire, spécifiez un **nom** pour le modèle de données de formulaire. Par exemple, **customer-shipping-billing-details**. Appuyez sur **Suivant**.
+1. Dans l’instance d’auteur AEM, accédez à **Forms** (Formulaires) > **Data Integrations** (Intégrations de données).
+1. Appuyez sur **Create** (Créer) > **Form Data Model** (Modèle de données de formulaire).
+1. Dans la boîte de dialogue Créer un modèle de données de formulaire, spécifiez un **nom** pour le modèle de données de formulaire. Par exemple, **customer-shipping-billing-details**. Appuyez sur **Next** (Suivant).
 1. L’écran Sélectionner la source de données répertorie toutes les sources de données configurées. Select **WeRetailMySQL** data source and tap **Create**.
 
    ![data-source-selection](assets/data-source-selection.png)
@@ -172,7 +172,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * **Revenir au tableau** : désactivez l’option **Revenir au tableau**.
       * **Arguments** : sélectionnez l’argument nommé **ID**.
-      Appuyez sur **Terminé**. Le service de récupération des détails des clients de la base de données MySQL est configuré.
+      Appuyez sur **Done** (Terminé). Le service de récupération des détails des clients de la base de données MySQL est configuré.
 
       ![expédition-récupération-adresse](assets/shiiping-address-retrieval.png)
 
@@ -192,7 +192,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
 
       * **Arguments** : sélectionnez l’argument nommé **ID** et **customerdetails**.
-      Appuyez sur **Terminé**. Le service **update** permettant de mettre à jour les détails du client dans la base de données MySQL est configuré.
+      Appuyez sur **Done** (Terminé). Le service **update** permettant de mettre à jour les détails du client dans la base de données MySQL est configuré.
 
       ![expédition-adresse-mise à jour](assets/shiiping-address-update.png)
 
