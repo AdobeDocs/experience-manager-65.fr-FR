@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -61,11 +61,11 @@ Lorsque vous naviguez dans l’espace de travail AEM Forms à l’aide d’un cl
 
 Vous pouvez définir les différentes préférences de l’espace de travail AEM Forms dans le suivant :
 
-**Absence du bureau :** définissez des préférences pour contrôler comment vos tâches sont affectées à d’autres personnes lorsque vous êtes absent du bureau. Voir [Configuration des préférences d’absence du bureau](/help/forms/using/todo-lists.md#main-pars-heading-22).
+**Absence du bureau :** définissez des préférences pour contrôler comment vos tâches sont affectées à d’autres personnes lorsque vous êtes absent du bureau. Voir [Configuration des préférences d’absence du bureau](todo-lists.md#setting-out-of-office-preferences).
 
-**Files d’attente :** définissez des préférences de partage de votre liste Tâches avec d’autres utilisateurs ou de demande d’accès à la liste d’un autre utilisateur. Voir [Utilisation des tâches issues de files d’attente de groupe ou de files d’attente partagées](/help/forms/using/todo-lists.md#main-pars-heading-19).
+**Files d’attente :** définissez des préférences de partage de votre liste Tâches avec d’autres utilisateurs ou de demande d’accès à la liste d’un autre utilisateur. Voir [Utilisation des tâches issues de files d’attente de groupe ou de files d’attente partagées](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Paramètres de l’interface :** définit des préférences pour l’interaction avec l’espace de travail AEM Forms. Voir [Définition des préférences d’interface utilisateur](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5).
+**Paramètres de l’interface :** définit des préférences pour l’interaction avec l’espace de travail AEM Forms. Voir [Définition des préférences d’interface utilisateur](#set-user-interface-preferences).
 
 ### Définition des préférences d’interface utilisateur {#set-user-interface-preferences}
 
