@@ -3,7 +3,7 @@ title: Utilisation de PDF rasterizer pour générer des rendus
 description: Cet article présente comment générer des miniatures et des rendus de haute qualité avec la bibliothèque Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,9 +26,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    >
    >La bibliothèque PDF Rasterizer est disponible sous Windows et Linux uniquement.
 
-1. Accédez à la console de flux de travaux AEM Assets à l’adresse `https://[server]:[port]/workflow`.
-
-   Ouvrez la page de workflow Ressources de mise à jour de gestion des actifs numériques.
+1. Accédez à la console de flux de travaux AEM Assets à l’adresse `https://[server]:[port]/workflow`. Open the [!UICONTROL DAM Update Asset] workflow page.
 
 1. Pour éviter la génération de miniatures et de rendus web pour les fichiers PDF et AI à l’aide des méthodes par défaut, procédez comme suit :
 
