@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
 >
 >Pour plus d’informations sur le dépannage et la résolution des problèmes de performances, voir aussi l’[arborescence des performances](/help/sites-deploying/performance-tree.md).
 >
->De plus, vous pouvez lire un article de la base de connaissances sur les [Conseils pour le réglage des performances.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>De plus, vous pouvez lire un article de la base de connaissances sur les [Conseils pour le réglage des performances.](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html)
 
 L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs. Bien que cette valeur varie pour chaque demande, une valeur cible moyenne peut être définie. Une fois que cette valeur se révèle être à la fois réalisable et gérable, elle peut être utilisée pour surveiller les performances du site web et indiquer le développement d’éventuels problèmes.
 
@@ -40,7 +40,7 @@ Cet environnement intègre le contenu que vous mettez à la disposition de vos u
 >[!NOTE]
 >
 >* Une fois l’optimisation des performances configurée, suivez les procédures dans [Tough Day](/help/sites-developing/tough-day.md) pour tester l’environnement en le soumettant à une charge importante.
->* Voir aussi [Conseils pour le réglage des performances](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>* Voir aussi [Conseils pour le réglage des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 >
 
 
@@ -63,7 +63,7 @@ Ces règles, dans une large mesure, s&#39;appliquent aux projets Web en généra
 
 Environ 10 % des efforts liés à un projet doivent être planifiés en vue de la phase d’optimisation des performances. Bien sûr, les exigences d’optimisation des performances dépendront du niveau de complexité d’un projet donné et de l’expérience de l’équipe de développement. Même si votre projet peut (au final) ne pas consommer tout le temps alloué, il est recommandé de toujours planifier l’optimisation des performances dans la zone géographique proposée.
 
-Dans la mesure du possible, un projet doit d&#39;abord être lancé en douceur à un public limité afin de rassembler une expérience réelle et d&#39;effectuer d&#39;autres optimisations, sans la pression supplémentaire qui suit une annonce complète.
+Dans la mesure du possible, un projet doit d&#39;abord être lancé en douceur vers un  limité afin de rassembler l&#39;expérience réelle et d&#39;effectuer d&#39;autres optimisations, sans la pression supplémentaire qui suit une annonce complète.
 
 Une fois que le site est « en ligne », l’optimisation des performances se poursuit. C’est le moment où vous faites face à la réelle charge que subit votre système. Il est important de prévoir des ajustements supplémentaires après le lancement.
 
@@ -95,7 +95,7 @@ Il est important de résoudre un seul goulot d’étranglement à la fois. Si vo
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
-L’optimisation des performances est un processus itératif qui implique des activités de mesure, d’analyse, d’optimisation et de validation jusqu’à ce que l’objectif soit atteint. Afin de prendre correctement en compte cet aspect, mettez en oeuvre un processus de validation souple au cours de la phase d’optimisation plutôt qu’un processus de test plus lourd après chaque itération.
+L’optimisation des performances est un processus itératif qui implique des activités de mesure, d’analyse, d’optimisation et de validation jusqu’à ce que l’objectif soit atteint. Afin de prendre correctement en compte cet aspect, mettez en oeuvre un processus de validation souple au cours de la phase d’optimisation plutôt qu’un processus de test  plus intensif après chaque itération.
 
 Cela signifie notamment que le développeur implémentant l’optimisation doit disposer d’un moyen rapide pour savoir si l’optimisation a déjà atteint l’objectif. Ces informations sont précieuses, car une fois l’objectif atteint, l’optimisation est terminée.
 
@@ -206,7 +206,7 @@ Certains aspects de CQ (et/ou du CRX sous-jacent) peuvent être configurés pour
 
 >[!NOTE]
 >
->Pour plus d’informations, veuillez lire [l’article de la base de connaissances](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>Pour plus d’informations, veuillez lire [l’article de la base de connaissances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 ### Indexation de recherche {#search-indexing}
 
@@ -226,11 +226,11 @@ Par exemple, lorsque des images (ou des ressources de gestion des actifs numéri
 Le moteur de workflow utilise les files d’attente de tâches Apache Sling pour gérer et planifier le traitement des éléments de travail. Les services de file d’attente de travaux suivants ont été créés par défaut à partir de la fabrique de services de configuration de file d’attente de travaux Apache Sling pour les tâches de processus de traitement :
 
 * File d’attente de processus granite : La plupart des étapes du processus, telles que celles qui traitent les ressources DAM, utilisent le service Granite Workflow Queue.
-* File d’attente de travaux de processus externe Granite Workflow : Ce service est utilisé pour des étapes de processus externes spéciales, généralement utilisées pour contacter un système externe et interroger les résultats. Par exemple, l’étape Processus d’extraction de médias InDesign est implémentée en tant que processus externe. Le moteur de workflow utilise la file d’attente externe pour traiter l’interrogation. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* File d’attente de travaux de processus externe Granite Workflow : Ce service est utilisé pour des étapes de processus externes spéciales, généralement utilisées pour contacter un système externe et interroger les résultats. Par exemple, l’étape du processus de  des médias InDesign est implémentée en tant que processus externe. Le moteur de workflow utilise la file d’attente externe pour traiter l’interrogation. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configurez ces services pour limiter le nombre maximal de workflows en cours d’exécution.
 
-**** Remarque : La configuration de ces files d’attente de travaux affecte tous les processus, sauf si vous avez créé une file d’attente de travaux pour un modèle de processus spécifique (voir [Configuration de la file d’attente pour un modèle](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) de processus spécifique ci-dessous).
+**Remarque :** La configuration de ces files d’attente de travaux affecte tous les  de travaux, sauf si vous avez créé une file d’attente de travaux pour un modèle de processus spécifique (voir [Configuration de la file d’attente pour un modèle](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) de processus spécifique ci-dessous).
 
 **Configuration dans le référentiel**
 
@@ -253,15 +253,15 @@ Lorsque les modèles de workflow s’exécutent, ils créent des tâches Sling p
 * com/adobe/granite/workflow/job&amp;ast;
 * com/adobe/granite/workflow/external/job&amp;ast;
 
-Les rubriques de tâche réelles générées par les modèles de workflow incluent le suffixe spécifique au modèle. Par exemple, le modèle du workflow Ressources de mise à jour de gestion des actifs numériques génère des tâches avec la rubrique suivante :
+Les rubriques de tâche réelles générées par les modèles de workflow incluent le suffixe spécifique au modèle. For example, the [!UICONTROL DAM Update Asset] workflow model generates jobs with the following topic:
 
 com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
 
 Par conséquent, vous pouvez créer une file d’attente de tâches pour la rubrique correspondant aux rubriques de votre modèle de workflow. La configuration des propriétés liées aux performances de la file d’attente affecte uniquement le modèle de workflow qui génère les tâches correspondant à la rubrique de la file d’attente.
 
-La procédure suivante crée une file d’attente de tâches pour un workflow, en utilisant le workflow Ressources de mise à jour de gestion des actifs numériques.
+The following procedure creates a job queue for a workflow, using the [!UICONTROL DAM Update Asset] workflow as an example.
 
-1. Exécutez le modèle de workflow pour lequel vous souhaitez créer la file d’attente de tâches et générer des statistiques de rubrique. Par exemple, ajoutez une image aux ressources pour exécuter le processus de mise à jour des ressources de gestion des actifs numériques.
+1. Exécutez le modèle de workflow pour lequel vous souhaitez créer la file d’attente de tâches et générer des statistiques de rubrique. For example, add an image to Assets to execute the [!UICONTROL DAM Update Asset] workflow.
 1. Ouvrez la console Tâches Sling. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
 1. Découvrez les rubriques relatives au workflow dans la console. Pour Ressources de mise à jour de gestion des actifs numériques, les rubriques suivantes ont été détectées :
 
@@ -384,7 +384,7 @@ Il faut tester les composants stratégiques dans des conditions moyennes et de p
 
 Dans les deux cas, vous pouvez définir le nombre attendu de transactions par seconde lorsqu’un nombre prédéfini d’utilisateurs utilise le système.
 
-| Component | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
+| Composant | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
 |---|---|---|---|---|---|
 | Utilisateur unique de la page d&#39;accueil | Différentiel par moyenne | 1 | 1 |  |  |
 |  | Crête | 1 | 3 |  |  |
@@ -395,18 +395,18 @@ Dans les deux cas, vous pouvez définir le nombre attendu de transactions par se
 
 En testant une combinaison de composants, vous vous dotez d’une visibilité plus précise sur le comportement des applications. Là encore, il faut tester des conditions moyennes et de pointe.
 
-| Scénario | Component | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
+| Scénario | Composant | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
 |---|---|---|---|---|---|
 | Moyenne mixte | Page d’accueil | 10 | 1 |  |  |
 |  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 10 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
-|  | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
+|  |   | 10 | 3 |  |  du comportement de l’auteur. |
 | Pic mixte | Page d’accueil | 100 | 5 |  |  |
 |  | Rechercher | 50 | 5 |  |  |
 |  | Actualités | 100 | 10 |  |  |
 |  | Événements | 100 | 10 |  |  |
-|  | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
+|  |   | 20 | 20 |  |  du comportement de l’auteur. |
 
 #### Tests de mise en ligne {#going-live-tests}
 
@@ -418,7 +418,7 @@ Au cours des premiers jours suivant la mise en ligne de votre site web, attendez
 |  | Rechercher | 100 | 10 |  |  |
 |  | Actualités | 200 | 20 |  |  |
 |  | Événements | 200 | 20 |  |  |
-|  | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
+|  |   | 20 | 20 |  |  du comportement de l’auteur. |
 
 #### Test de scénarios d’erreur {#error-scenario-tests}
 
@@ -446,7 +446,7 @@ Certains problèmes ne feront surface qu’après une période continue de fonct
 |  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 20 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
-|  | Activations | 1 | 3 |  | Simulation du comportement de l’auteur. |
+|  |   | 1 | 3 |  |  du comportement de l’auteur. |
 
 ### Optimisation {#optimization}
 
@@ -710,7 +710,7 @@ L’essai comparatif de sauvegarde est réitéré avec des jeux de contenu suppl
 
 Les essais comparatifs de sauvegarde couvrent deux scénarios principaux : les sauvegardes lorsque le système est soumis à une charge applicative importante et lorsqu’il est inactif. Selon la recommandation générale, les sauvegardes doivent être effectuées lorsque le système CQ est aussi inactif que possible. Pourtant, il existe des situations où il est nécessaire que la sauvegarde soit exécutée quand le système est en charge.
 
-**Les sauvegardes d’état** inactif sont exécutées sans autre activité sur CQ.
+**Les sauvegardes d’état** inactif ne sont effectuées avec aucun autre   sur CQ.
 
 **Sous Charger** les sauvegardes sont exécutées alors que le système est sous 80 % chargé à partir des processus en ligne. Variation du délai de sauvegarde pour déterminer l’impact sur la charge.
 
