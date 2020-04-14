@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -339,7 +339,7 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 Le service de préremplissage est un service OSGi et fait partie du package OSGi. Vous créez le groupe OSGi, vous le chargez et l’installez sur les groupes AEM Forms. Avant de débuter la création du groupe :
 
 * [Téléchargez le SDK Client d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
-* [Téléchargez le package standard](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
+* Téléchargez le package standard
 
 * Placez le fichier de données (données de préremplissage) dans le référentiel crx. Vous pouvez placer le fichier à tout emplacement dans le dossier \contents du référentiel crx.
 
