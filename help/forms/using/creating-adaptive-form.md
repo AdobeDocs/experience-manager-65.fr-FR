@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -47,7 +47,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
    * Aucun ou sans modèle de formulaire
    Vous pouvez configurer ces informations via l’onglet **[!UICONTROL Modèle de formulaire]** figurant sur la page **[!UICONTROL Ajouter des propriétés]**. Par défaut, le modèle de formulaire sélectionné est **[!UICONTROL Aucun]**.
 
-1. Appuyez sur **Créer**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
+1. Appuyez sur **Create** (Créer). Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
    Once you have finished specifying all the properties, click **[!UICONTROL Create]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
@@ -145,7 +145,7 @@ En outre, vous pouvez utiliser l’éditeur de modèle pour créer vos propres m
 
 >[!NOTE]
 >
->Lorsque vous ouvrez un formulaire adaptatif créé à l’aide du modèle avancé pour l’édition, un message d’erreur s’affiche. Le modèle avancé comporte un composant Étape de signature et Adobe Sign est activé pour ce dernier par défaut. Créez et sélectionnez une [configuration de cloud Adobe Sign](/help/forms/using/adobe-sign-integration-adaptive-forms.md) et [configurez un signataire](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) pour résoudre l’erreur.
+>Lorsque vous ouvrez un formulaire adaptatif créé à l’aide du modèle avancé pour l’édition, un message d’erreur s’affiche. Le modèle avancé comporte un composant Étape de signature et Adobe Sign est activé pour ce dernier par défaut. Créez et sélectionnez une [configuration de cloud Adobe Sign](/help/forms/using/adobe-sign-integration-adaptive-forms.md) et [configurez un signataire](working-with-adobe-sign.md#addsignerstoanadaptiveform) pour résoudre l’erreur.
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 
@@ -157,9 +157,9 @@ Les formulaires adaptatifs sont créés sans modèle de formulaire (en utilisant
    * Si le formulaire adaptatif ne dispose pas de modèle de formulaire, vous pouvez choisir un autre modèle de formulaire et, en conséquence, sélectionner un modèle de formulaire, un schéma XML ou JSON ou un modèle de données de formulaire.
    * Si le formulaire adaptatif est basé sur un modèle de formulaire, vous pouvez choisir un autre modèle de formulaire, un schéma XML ou JSON ou un modèle de données de formulaire pour le même modèle de formulaire.
 
-1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
+1. Appuyez sur **[!UICONTROL Save]** (Enregistrer) pour enregistrer les propriétés.
 
-## Enregistrement automatique d’un formulaire adaptatif {#auto-save-an-adaptive-form}
+## Enregistrement automatique d&#39;un formulaire adaptatif {#auto-save-an-adaptive-form}
 
 Par défaut, le contenu d’un formulaire adaptatif est enregistré sur une action utilisateur, telle que appuyer sur le bouton Enregistrer. Vous pouvez également configurer un formulaire adaptatif pour commencer automatiquement à enregistrer le contenu basé sur un événement ou un intervalle de temps. L’option d’enregistrement automatique est utile pour :
 
@@ -191,7 +191,7 @@ Par défaut, l’option d’enregistrement automatique n’est pas activée. Vou
 
 1. (Enregistrement automatique basé sur un événement uniquement) Exécutez les étapes suivantes pour configurer les options d’enregistrement automatique basé sur un événement.
 
-   1. Dans la zone **Enregistrement automatique après cet événement**, spécifiez un événement [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Le formulaire est enregistré chaque fois que l’expression renvoie TRUE.
+   1. Dans la zone **Enregistrement automatique après cet événement**, spécifiez un événement [GuideBridge](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/GuideBridge.html). Le formulaire est enregistré chaque fois que l’expression renvoie TRUE.
 
 1. (Facultatif) Pour enregistrer automatiquement le contenu pour des utilisateurs anonymes, sélectionnez l’option **Activer l’enregistrement automatique pour les utilisateurs anonymes**, puis cliquez sur **[!UICONTROL OK]**.
 
