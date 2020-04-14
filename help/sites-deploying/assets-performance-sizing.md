@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -60,7 +60,7 @@ Les processus de gestion des actifs numériques sont bien adaptés pour être ex
 
 Le traitement étendu des ressources numériques nécessite des ressources matérielles optimisées. Les facteurs les plus pertinents sont la taille des images et le débit maximal des images traitées.
 
-Allouez au moins 16 Go de segment de mémoire et configurez le workflow Ressources de mise à jour de gestion des actifs numériques afin qu’il utilise le [module Camera Raw](/help/assets/camera-raw.md) pour l’intégration des images au format RAW.
+Allocate at least 16GB of heap and configure the [!UICONTROL DAM Update Asset] workflow to use the [Camera Raw package](/help/assets/camera-raw.md) for the ingestion of raw images.
 
 ## Présentation du système {#understanding-the-system}
 
@@ -80,7 +80,7 @@ La légende ci-dessous décrit les écueils potentiels en matière de performanc
 
 Les raisons de la latence et du débit insatisfaisants dans un stockage NAS résident généralement dans la topologie de réseau ou la surutilisation du stockage NAS par d’autres services.
 
-**Stockage** connecté au réseau Les systèmes de stockage rattaché au réseau surutilisés peuvent entraîner toute une gamme de problèmes:
+**en réseau rattaché** Les systèmes de en réseau rattaché à un réseau trop utilisé peuvent causer toute une gamme de problèmes :
 
 * Un espace disque faible est un problème rencontré fréquemment, qui peut être résolu en dimensionnant correctement un projet de gestion des actifs numériques. 
 * Une latence de disque élevée se traduit par des temps d’accès lents pour CRX et peut entraîner des problèmes de performances des interactions.
