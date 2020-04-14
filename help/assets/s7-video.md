@@ -8,7 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 Ressources permet une gestion centralisée des fichiers vidéo dans laquelle vous pouvez télécharger des vidéos directement vers Ressources pour le codage automatique vers Dynamic Media Classic (Scene7) et accéder aux vidéos de Dynamic Media Classic directement depuis Ressources pour la création de pages.
 
-L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans (détection automatique de périphériques et de bande passante).
+L’intégration vidéo de Dynamic Media Classic étend la portée de la vidéo optimisée à tous les écrans (détection de la bande passante et du périphérique automatique).
 
 * The **[!UICONTROL Scene7 Video]** component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
 * Ressources - Vous pouvez inclure des ensembles de vidéos adaptables au lieu de contenus vidéo uniques. Un ensemble de vidéos adaptables est un conteneur de tous les rendus vidéo requis permettant de lire la vidéo sans heurt sur plusieurs écrans. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Vous utilisez un ensemble de vidéos adaptables, accompagné d’un composant vidéo S7, pour la diffusion vidéo en continu adaptative sur plusieurs écrans, notamment des ordinateurs de bureau, des téléphones iOS, Android et Blackberry et des appareils mobiles Windows. Pour plus d’informations, voir [Documentation Scene7 sur les ensembles de vidéos adaptables](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
@@ -97,7 +97,7 @@ Si vous devez mettre à jour la visionneuse et les paramètres prédéfinis de c
 ## Uploading your master video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
 1. Accédez au dossier cible de la gestion des actifs numériques CQ dans lequel vous avez défini la configuration de cloud avec les profils de codage Scene7.
-1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger la vidéo maître. Video uploading and encoding is complete after the DAM Update Asset workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Cliquez sur **[!UICONTROL Télécharger]** pour télécharger la vidéo maître. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
 1. Dans AEM, appuyez sur **[!Outils UICONTROL > Console** de configuration.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Créez un nouveau profil vidéo S7. **[!UICONTROL Dans le]** nouveau... , sélectionnez **[!UICONTROL Créer une page]** , puis sélectionnez le modèle Profil vidéo Scene7. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
+1. Créez un nouveau profil vidéo S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -165,7 +165,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
 #### Configuring design {#configuring-design}
 
-The **[!UICONTROL Foundation Video]** component must know about what video profiles to use in order to build the video sources list. Vous devez ouvrir la boîte de dialogue de conception des composants vidéo et configurer la conception des composants pour l’utilisation des nouveaux profils vidéo.
+The **[!UICONTROL Foundation Video]** component must know about what video profiles to use in order to build the video sources list. Vous devez ouvrir la boîte de dialogue de conception des composants vidéo et configurer la conception des composants pour l’utilisation du nouveau  de vidéo.
 
 >[!NOTE]
 >
@@ -175,8 +175,8 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 >
 >Les modifications apportées à la conception requièrent l’activation de la conception afin qu’elles prennent effet lors de la publication.
 
-1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Supprimez ensuite les profils vidéo prêts à l’emploi et ajoutez les nouveaux profils vidéo S7. L’ordre de la liste des profils dans la boîte de dialogue de conception définit l’ordre de l’élément sources vidéo lors du rendu.
-1. Pour les navigateurs qui ne prennent pas en charge HTML5, le composant vidéo permet de configurer un abandon Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configurez les paramètres du lecteur Flash et attribuez un profil de secours au lecteur Flash.
+1. Open the **[!UICONTROL Foundation Video]** component&#39;s design dialog box and change to the **[!UICONTROL Profiles]** tab. Supprimez ensuite le prêt à l’emploi et ajoutez le nouvel  vidéo S7. L’ordre du   dans la boîte de dialogue de conception définit l’ordre de l’élément sources vidéo lors du rendu.
+1. Pour les navigateurs qui ne prennent pas en charge HTML5, le composant vidéo permet de configurer une solution de secours Flash. Open the video components design dialog box and change to the **[!UICONTROL Flash]** tab. Configurez les paramètres du lecteur Flash et affectez un de secours pour le lecteur Flash.
 
 #### Liste de contrôle {#checklist}
 
