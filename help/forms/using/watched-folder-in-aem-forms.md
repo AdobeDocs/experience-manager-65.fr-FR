@@ -10,14 +10,14 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
 
 # Dossier de contrôle dans AEM Forms{#watched-folder-in-aem-forms}
 
-Un administrateur peut configurer un dossier réseau, appelé dossier de contrôle (en anglais Watched Folder), de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), un flux de travail, un service ou une opération d’exécution de script démarre pour le traitement du fichier ajouté. Après que le service a effectué l’opération spécifiée, il enregistre le fichier obtenu dans un dossier de sortie spécifié. Pour plus d’informations sur le flux, le service et le script, voir [Diverses méthodes pour traiter les fichiers](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-4).
+Un administrateur peut configurer un dossier réseau, appelé dossier de contrôle (en anglais Watched Folder), de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), un flux de travail, un service ou une opération d’exécution de script démarre pour le traitement du fichier ajouté. Après que le service a effectué l’opération spécifiée, il enregistre le fichier obtenu dans un dossier de sortie spécifié. Pour plus d’informations sur le flux, le service et le script, voir [Diverses méthodes pour traiter les fichiers](#variousmethodsforprocessingfiles).
 
 ## Création d’un dossier de contrôle {#create-a-watched-folder}
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de c
 
 * Lors de la configuration des propriétés d’un nœud de configuration du dossier de contrôle, indiquez le chemin d’accès complet du répertoire parent dans la propriété folderPath (chemin du fichier) et ajoutez le nom du dossier de contrôle à créer, comme indiqué dans l’exemple suivant :`C:/MyPDFs/MyWatchedFolder`   Le dossier `MyWatchedFolder` n’existe pas, AEM Forms tente de créer un dossier à l’emplacement spécifié.
 
-* Créez un dossier dans le système de fichiers avant de configurer un point de fin Watched Folder, puis indiquez son chemin d’accès complet dans la propriété folderPath (chemin de fichier). Pour plus d’informations sur la propriété folderPath, voir [Propriétés de dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+* Créez un dossier dans le système de fichiers avant de configurer un point de fin Watched Folder, puis indiquez son chemin d’accès complet dans la propriété folderPath (chemin de fichier). Pour plus d’informations sur la propriété folderPath, voir [Propriétés de dossier de contrôle](#watchedfolderproperties).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Pour configurer un dossier de contrôle, créez un nœud de configuration du dos
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   Pour obtenir la liste complète des prises en charge, voir [Propriétés du dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   Pour obtenir la liste complète des prises en charge, voir [Propriétés du dossier de contrôle](#watchedfolderproperties).
 
 1. Cliquez sur **Enregistrer tout**. Après la création du nœud et l’enregistrement des propriétés. Les `input`dossiers `result`, `failure`, `preserve`et `stage`sont créés à l’emplacement spécifié dans la `folderPath` propriété.
 
@@ -662,5 +662,5 @@ inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didac
    * inputProcessorId (chaîne) : le comportement de la propriété inputProcessorId repose sur la valeur spécifiée pour la propriété inputProcessorType. Dans cet exemple, la valeur de la propriété inputProcessorType est un flux de travaux. Ainsi, pour la propriété inputProcessorId, spécifiez le chemin suivant du flux de travaux de PDFG : /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (chaîne) : motif du fichier de sortie. Vous pouvez spécifier un motif de dossier ou de fichier. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
-   Outre les propriétés obligatoires mentionnées ci-dessus, les dossiers de contrôle prennent également en charge certaines propriétés facultatives. Pour obtenir une liste et une description complètes des propriétés facultatives, voir [Propriétés du dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1).
+   Outre les propriétés obligatoires mentionnées ci-dessus, les dossiers de contrôle prennent également en charge certaines propriétés facultatives. Pour obtenir une liste et une description complètes des propriétés facultatives, voir [Propriétés du dossier de contrôle](#watchedfolderproperties).
 
