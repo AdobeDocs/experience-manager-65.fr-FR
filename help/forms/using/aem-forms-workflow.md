@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -107,7 +107,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    ![OU Exemple de fractionnement](assets/orsplit_branch1_active_new.png)
 
-   **pour la branche 1**
+   **pour la branche 2**
 
    When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
@@ -121,7 +121,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    Pour obtenir l’ensemble complet des valeurs de tous les champs des étapes Affecter une tâche, de l’étape Document d’enregistrement et de l’étape Signer le document configurées pour l’exemple de demande de prêt immobilier, importez l’exemple de package, disponible au téléchargement au début de cette section.
 
-   Le modèle de processus est prêt. Vous pouvez lancer le processus via différentes méthodes. Pour plus de détails, voir [Lancement d’un processus basé sur l’utilisation de Forms sur OSGi](../../forms/using/aem-forms-workflow.md#main-pars-header).
+   Le modèle de processus est prêt. Vous pouvez lancer le processus via différentes méthodes. Pour plus de détails, voir [Lancement d’un processus basé sur l’utilisation de Forms sur OSGi](#launch).
 
    ![workflow-éditeur-prêt immobilier](assets/workflow-editor-mortgage.png)
 
