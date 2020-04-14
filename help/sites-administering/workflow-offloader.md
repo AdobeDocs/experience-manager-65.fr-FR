@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -54,7 +54,7 @@ Utilisez Configuration Manager pour ajouter l’URL de l’instance de filet de 
 
 ## Configuration des lanceurs de workflow sur l’instance principale {#configure-workflow-launchers-on-the-leader-instance}
 
-Configure workflow launchers to use the **DAM Update Asset Offloading** workflow on the leader instance instead of the **Dam Update Asset** workflow.
+Configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow on the leader instance instead of the **Dam Update Asset** workflow.
 
 1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Launchers** to open the **Workflow Launchers** console.
 
@@ -65,12 +65,12 @@ Configure workflow launchers to use the **DAM Update Asset Offloading** workflow
 
    ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-1. From the **Workflow** list, choose **DAM Update Asset Offloading** and tap/click **Save**.
+1. From the **Workflow** list, choose [!UICONTROL DAM Update Asset Offloading] and tap/click **Save**.
 
    ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 1. Tap/click the AEM logo, and choose, **Tools** > **Workflow** > **Models** to open the **Workflow Models** page.
-1. Select the **DAM Update Asset Offloading** workflow, and tap/click **Edit** from the toolbar to display its details.
+1. Select the [!UICONTROL DAM Update Asset Offloading] workflow, and tap/click **Edit** from the toolbar to display its details.
 
    ![chlimage_1-53](assets/chlimage_1-53a.png)
 
