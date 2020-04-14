@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 43fe9540a3a29ae86f48756c77001c0a4b8ea3e4
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -28,4 +28,4 @@ Effectuez la procédure suivante pour mettre à niveau AEM 6.3 Forms on JEE ou
    * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
    * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss clé en main](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
-La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM Forms 6.0, AEM Forms 6.1, AEM Forms 6.2 vers AEM Forms 6.5 n’est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer une mise à niveau à partir d’AEM 6.5 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](../../forms/using/upgrade.md#main-pars-header).
+La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM Forms 6.0, AEM Forms 6.1, AEM Forms 6.2 vers AEM Forms 6.5 n’est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer une mise à niveau à partir d’AEM 6.5 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](upgrade.md).
