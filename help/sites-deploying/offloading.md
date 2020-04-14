@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -133,7 +133,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
    <td>15</td>
   </tr>
   <tr>
-   <td>Délai d’événement minimal (secondes)</td>
+   <td>Délai de  minimal (secondes)</td>
    <td>minEventDelay</td>
    <td><p>Lorsqu’un changement se produit sur la topologie, délai pour retarder le changement d’état de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente la durée de ce délai. </p> <p>Ce délai empêche les écouteurs d’être submergés par les événements. </p> <p>Pour ne pas utiliser de délai, indiquez 0 ou un nombre négatif.</p> </td>
    <td>3</td>
@@ -147,7 +147,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
   <tr>
    <td>Liste blanche du connecteur de topologie</td>
    <td>topologyConnectorWhitelist</td>
-   <td>Liste des adresses IP ou des noms d’hôtes que le service Topology Connector local autorise dans la topologie. </td>
+   <td>d’adresses IP ou de noms d’hôtes que le service Topology Connector local autorise dans la topologie. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
   </tr>
   <tr>
@@ -207,7 +207,7 @@ Plusieurs implémentations de JobConsumer sont installées avec Experience Mana
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installé avec Apache Sling. Tâches de traitement générées par l’administrateur d’événements OSGi, à des fins de rétrocompatibilité. |
 | com/day/cq/Replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Agent de réplication qui reproduit les charges de travail. |
-| com/adobe/granite/workflow/déchargement | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Traite les tâches générées par le flux de travail de mise à jour des ressources du module de déchargement DAM. |
+| com/adobe/granite/workflow/déchargement | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Traite les tâches générées par le flux de travail [!UICONTROL DAM Update Asset Offloader] . |
 
 ### Désactivation et activation des rubriques pour une instance {#disabling-and-enabling-topics-for-an-instance}
 
@@ -221,8 +221,8 @@ Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propr
 
 | Nom de propriété dans la console Web | ID OSGi | Description |
 |---|---|---|
-| Liste blanche des rubriques | job.consumermanager.whitelist | Liste des rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
-| Liste noire des rubriques | job.consumermanager.blacklist | Liste des rubriques que le service JobManager local ne traite pas. |
+| Liste blanche des rubriques | job.consumermanager.whitelist |  de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste noire des rubriques | job.consumermanager.blacklist |  de rubriques que le service JobManager local ne traite pas. |
 
 ## Création des agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
 
@@ -275,10 +275,10 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
    | Propriétés | Valeur |
    |---|---|
-   | Paramètres > Type de sérialisation | Default |
+   | Paramètres > Type de sérialisation | Valeur par défaut |
    | Transport > URI de transport | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Utilisateur Transport | Utilisateur de réplication sur l’instance cible |
-   | Transport > Mot de passe de transport | Mot de passe utilisateur de réplication sur l’instance cible |
+   | Transport > Utilisateur Transport | Utilisateur de réplication sur une instance de  |
+   | Transport > Mot de passe de transport | Mot de passe de l’utilisateur de réplication sur l’instance  |
    | Extended > Méthode HTTP | POST |
    | Triggers > Ignorer les valeurs par défaut | True |
 
@@ -289,10 +289,10 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
    | Propriétés | Valeur |
    |---|---|
-   | Paramètres > Type de sérialisation | Default |
+   | Paramètres > Type de sérialisation | Valeur par défaut |
    | Transport > URI de transport | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Utilisateur Transport | Utilisateur de réplication sur l’instance cible |
-   | Transport > Mot de passe de transport | Mot de passe utilisateur de réplication sur l’instance cible |
+   | Transport > Utilisateur Transport | Utilisateur de réplication sur une instance de  |
+   | Transport > Mot de passe de transport | Mot de passe de l’utilisateur de réplication sur l’instance  |
    | Extended > Méthode HTTP | GET |
 
 ### Création de l’agent de dossier d’envoi {#creating-the-outbox-agent}
@@ -302,7 +302,7 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
    | Propriétés | Valeur |
    |---|---|
-   | Paramètres > Type de sérialisation | Default |
+   | Paramètres > Type de sérialisation | Valeur par défaut |
    | Transport > URI de transport | repo://var/replication/outbox |
    | Déclencheur > Ignorer les valeurs par défaut | True |
 
@@ -317,11 +317,11 @@ Obtenez l’identifiant Sling d’une instance Experience Manager en utilisant 
 
 Configurez les instances d’une topologie de sorte que les instances spécifiques exécutent le traitement en arrière-plan des ressources ajoutées ou mises à jour dans la gestion des actifs numériques.
 
-Par défaut, Experience Manager exécute le workflow Ressource de mise à niveau de gestion des actifs numériques lorsqu’une ressource de gestion des actifs numériques est modifiée ou ajoutée à la gestion des actifs numériques. Modifiez le comportement par défaut, de sorte qu’Experience Manager exécute à la place le workflow Déchargement des ressources de mise à niveau de gestion des actifs numériques. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Ensuite, configurez la topologie de sorte que la tâche soit déchargée sur un programme de travail dédié.
+By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Ensuite, configurez la topologie de sorte que la tâche soit déchargée sur un programme de travail dédié.
 
 >[!CAUTION]
 >
->Aucun workflow ne doit être transitoire lorsqu’il est utilisé avec le déchargement de workflow. Par exemple, le workflow Ressource de mise à jour de gestion des actifs numériques ne doit pas être transitoire lorsqu’il est utilisé pour le déchargement des ressources. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
+>Aucun workflow ne doit être transitoire lorsqu’il est utilisé avec le déchargement de workflow. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
 La procédure suivante part des fonctionnalités suivantes pour la topologie de déchargement :
 
@@ -334,14 +334,14 @@ La procédure suivante part des fonctionnalités suivantes pour la topologie de 
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. Sur chaque instance dont les utilisateurs se servent dans le cadre de leurs activités d’interaction pour transférer ou modifier des ressources de gestion des actifs numériques, configurez des lanceurs de workflow pour utiliser le workflow Déchargement des ressources de mise à jour de gestion des actifs numériques :
+1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow:
 
    1. Ouvrez la console Workflows.
    1. Cliquez sur l’onglet Lanceur.
-   1. Repérez les deux configurations de lanceur qui exécutent le workflow Ressource de mise à jour de gestion des actifs numériques. Un type d’événement de configuration du lanceur est créé par nœud, alors que l’autre type est modifié par nœud.
-   1. Modifiez les deux types d’événement de sorte qu’ils exécutent le workflow Déchargement des ressources de mise à jour de gestion des actifs numériques. (Pour plus d’informations sur les configurations du lanceur, voir [Démarrage de workflow lorsque les nœuds changent](/help/sites-administering/workflows-starting.md).)
+   1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. Un type d’événement de configuration du lanceur est créé par nœud, alors que l’autre type est modifié par nœud.
+   1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (Pour plus d’informations sur les configurations du lanceur, voir [Démarrage de workflow lorsque les nœuds changent](/help/sites-administering/workflows-starting.md).)
 
-1. Sur les instances qui exécutent le traitement en arrière-plan des ressources de gestion des actifs numériques, désactivez les lanceurs de workflow qui exécutent le workflow Ressource de mise à jour de gestion des actifs numériques.
+1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
 
 ## Informations complémentaires {#further-reading}
 
