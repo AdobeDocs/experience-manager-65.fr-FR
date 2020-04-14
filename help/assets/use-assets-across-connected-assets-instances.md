@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
 
 ---
 
@@ -95,7 +95,7 @@ Pour configurer la connectivité des ressources connectées et des sites locaux,
 
    >[!NOTE]
    >
-   >Tous les rendus disponibles sur le déploiement distant d’AEM sont récupérés lorsque les auteurs récupèrent un fichier. Si vous souhaitez créer d’autres rendus d’une ressource récupérée, ignorez cette étape de configuration. Le workflow de mise à jour des ressources de la gestion des actifs numériques est déclenché et crée d’autres rendus. Ces rendus sont disponibles uniquement sur le déploiement Sites local, et non sur le déploiement DAM distant.
+   >Tous les rendus disponibles sur le déploiement distant d’AEM sont récupérés lorsque les auteurs récupèrent un fichier. Si vous souhaitez créer d’autres rendus d’une ressource récupérée, ignorez cette étape de configuration. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Ajoutez l’instance AEM Sites comme l’une des **[!UICONTROL Origines autorisées]** sur la configuration CORS AEM Assets distante.
 
@@ -111,7 +111,7 @@ Les auteurs de site web utilisent l’outil de recherche de contenu pour se conn
 
 Les auteurs peuvent utiliser les ressources disponibles à la fois sur les instances DAM locale et distante, dans une page web unique. Utilisez l’outil de recherche de contenu pour basculer entre la recherche sur l’instance DAM locale ou sur l’instance DAM distante.
 
-Seules les balises des ressources distantes sont récupérées qui ont une balise correspondante exacte (avec la même hiérarchie de taxonomie) disponible sur l’instance Sites locale. Toutes les autres balises sont ignorées. Les auteurs peuvent rechercher des ressources distantes à l’aide de toutes les balises présentes dans le déploiement AEM distant, car AEM  une recherche de texte intégral  une recherche de texte intégral.
+Seules les balises des ressources distantes sont récupérées qui possèdent une balise correspondante exacte avec la même hiérarchie de taxonomie, disponible sur l’instance Sites locale. Toutes les autres balises sont ignorées. Les auteurs peuvent rechercher des ressources distantes à l’aide de toutes les balises présentes dans le déploiement AEM distant, car AEM  une recherche de texte intégral  une recherche de texte intégral.
 
 ### Présentation de l’utilisation {#walk-through-of-usage}
 
