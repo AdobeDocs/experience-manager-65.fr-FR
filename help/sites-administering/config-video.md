@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -39,7 +39,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
    1. Téléchargez le fichier binaire compilé en tant que `ffmpeg.zip`
    1. Décompressez-le dans un dossier.
-   1. Définissez la variable d’environnement système `PATH` sur `<*your-ffmpeg-locatio*n>\bin`
+   1. Définissez la variable  système  de la variable `PATH` sur `<*your-ffmpeg-locatio*n>\bin`
    1. Redémarrez AEM.
 
 * **Sur Mac OS X :**
@@ -88,5 +88,5 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 >[!NOTE]
 >
->Les modèles de flux de travaux prêtes à l’emploi ne sont pas conservés lorsque vous mettez à niveau votre instance AEM. Adobe vous recommande de copier les modèles de processus prêtes à l’emploi avant de les modifier. Par exemple, copiez le modèle d’actif de mise à jour DAM prêtes à l’emploi avant de modifier l’étape de transcodage FFmpeg dans le modèle d’actif de mise à jour DAM pour sélectionner les noms de profil vidéo qui existaient avant la mise à niveau. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>Les modèles de flux de travaux prêtes à l’emploi ne sont pas conservés lors de la mise à niveau de votre instance AEM. Adobe vous recommande de copier les modèles de processus prêtes à l’emploi avant de les modifier. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
 
