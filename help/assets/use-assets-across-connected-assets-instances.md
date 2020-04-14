@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -45,7 +45,7 @@ Les auteurs peuvent rechercher des images et les types de suivants dans l’Outi
 Les différents rôles impliqués pour configurer et utiliser la fonctionnalité et leurs groupes d’utilisateurs correspondants sont décrits ci-dessous. L’étendue locale est utilisée dans les cas pratiques où une page web a été créée par un auteur. La portée distante est utilisée pour le déploiement DAM hébergeant les ressources requises. L’auteur Sites récupère ces ressources distantes.
 
 | Rôle | Portée | Groupe d’utilisateurs | Nom d’utilisateur dans la présentation | Condition requise |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|
 | Administrateur des sites AEM | Local | Administrateur AEM | `admin` | Configurez AEM, ainsi que l’intégration au déploiement Assets distant. |
 | Utilisateur DAM | Local | Création | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
 | Auteur AEM Sites | Local | Auteur (avec les droits d’accès en lecture sur l’instance DAM distante et l’accès en tant qu’auteur sur les l’instance Sites locale) | `ksaner` | Les utilisateurs finaux sont des auteurs Sites qui utilisent cette intégration pour améliorer leur vélocité de contenu. Les auteurs recherchent et parcourent des ressources dans un système de gestion des actifs numériques distant à l’aide de l’outil de recherche de contenu et des images requises dans les pages Web locales. The credentials of `ksaner` DAM user are used. |
@@ -73,11 +73,9 @@ Pour configurer la connectivité des ressources connectées et des sites locaux,
    1. L’emplacement des ressources AEM est `https://[assets_servername_ams]:[port]`.
    1. Identifiants d’un distributeur DAM (utilisateur technique).
    1. Dans le champ **[!UICONTROL Point de montage]**, entrez le chemin AEM local où AEM récupère les ressources. For example, `remoteassets` folder.
-
    1. Adjust the values of **[!UICONTROL Original Binary transfer optimization Threshold]** depending on your network. Un rendu de ressource dont la taille est supérieure à ce seuil est transféré de façon asynchrone. 
    1. Sélectionnez **[!UICONTROL Banque de données partagée avec les ressources connectées]** si vous utilisez une banque de données pour stocker vos ressources et qu’elle constitue le support de stockage commun aux deux déploiements AEM. Dans ce cas, la limite de seuil n’a pas d’importance puisque les fichiers binaires réels résident sur la banque de données et ne sont pas transférés.
-   ![Exemple de configuration standard pour Ressources partagées](assets/connected-assets-typical-config.png)
-
+      ![Exemple de configuration standard pour Ressources partagées](assets/connected-assets-typical-config.png)
    *Figure : Configuration standard pour les ressources connectées*
 
 1. Lorsque les ressources sont déjà traitées et que les rendus sont extraits, désactivez les lanceurs de workflow. Réglez les configurations du lanceur sur le déploiement local (AEM Sites) pour exclure le dossier `connectedassets`, où les ressources distantes sont récupérées.
