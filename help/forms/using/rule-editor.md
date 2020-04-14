@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -305,7 +305,7 @@ Pour définir une règle basée sur une fonction personnalisée, sélectionnez S
 
 ![Fonctions personnalisées](assets/custom_functions_set_options_new.png)
 
-Pour créer une fonction personnalisée, voir Fonctions [personnalisées dans l’éditeur](../../forms/using/rule-editor.md#main-pars-header-296220653)de règles.
+Pour créer une fonction personnalisée, voir Fonctions [personnalisées dans l’éditeur](#custom-functions)de règles.
 
 Pour définir une règle basée sur un modèle de données de formulaire :
 
@@ -348,7 +348,7 @@ L’onglet Objets de formulaire affiche une vue hiérarchique de tous les objets
 
 Les objets de formulaire contenant une ou plusieurs règles valides appliquées sont identifiés par un point vert. Si l’une des règles appliquées à un objet de formulaire n’est pas valide, l’objet de formulaire est identifié par un point jaune.
 
-L’onglet Fonctions inclut un jeu de fonctions intégrées, telles que Somme de, Minimum de, Maximum de, Moyenne de, Nombre de et Valider le formulaire. Vous pouvez utiliser ces fonctions pour calculer des valeurs dans des panneaux et des lignes de tableau répétables et les utiliser dans des instructions d’action et de condition lors de l’écriture de règles. You can, however, create [custom functions](../../forms/using/rule-editor.md#custom-functions) too.
+L’onglet Fonctions inclut un jeu de fonctions intégrées, telles que Somme de, Minimum de, Maximum de, Moyenne de, Nombre de et Valider le formulaire. Vous pouvez utiliser ces fonctions pour calculer des valeurs dans des panneaux et des lignes de tableau répétables et les utiliser dans des instructions d’action et de condition lors de l’écriture de règles. You can, however, create [custom functions](#custom-functions) too.
 
 ![L’onglet Fonctions](assets/functions.png)
 
@@ -519,7 +519,7 @@ Effectuez les étapes suivantes pour créer les règles :
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent utiliser l’éditeur de code. L’éditeur de règles génère automatiquement le code javascript pour toute règle que vous créez à l’aide de l’éditeur visuel. Vous pouvez basculer de l’éditeur visuel à l’éditeur de code pour afficher le code généré. Cependant, si vous modifiez le code de règle dans l’éditeur de code, vous ne pouvez pas revenir à l’éditeur visuel. Si vous préférez les règles d’écriture de l’éditeur de code plutôt que celles de l’éditeur visuel, vous avez la possibilité de définir de nouvelles règles dans l’éditeur de code. Le bouton bascule des éditeurs visuel-code vous permet de passer d’un mode à l’autre.
 
-Le code JavaScript de l’éditeur de code est le langage   des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
+Le code JavaScript de l’éditeur de code est le langage   des formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html)
 
 Pour plus d’informations sur la création de règles dans l’éditeur de code, reportez-vous à la section[ Expressions de formulaire adaptatif](/help/forms/using/adaptive-form-expressions.md).
 
