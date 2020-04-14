@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -41,7 +41,7 @@ Vous pouvez ajouter des objets et des services de modèle de données à partir 
 Pour ajouter des objets et des services de modèle de données :
 
 1. Connectez-vous à l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Intégrations de données]** et ouvrez le modèle de données du formulaire dans lequel vous souhaitez ajouter des objets de modèle de données.
-1. Dans le volet Sources de données, développez les sources de données pour afficher les objets et services de modèle de données disponibles.
+1. Dans le volet Sources de données, développez les sources de données pour des objets et services de modèle de données disponibles.
 1. Sélectionnez les objets et services de modèle de données que vous souhaitez ajouter au modèle de données de formulaire, puis appuyez sur **[!UICONTROL Ajouter la sélection]**.
 
    ![selected-objets](assets/selected-objects.png)
@@ -155,12 +155,12 @@ Pour lire et écrire des données pour un objet de modèle de données, procéde
 
    Services de lecture et d’écriture configurés pour la source de données des employés
 
-1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) for the read service argument to [bind the argument to a User Profile Attribute, Request Attribute, or Literal value](../../forms/using/work-with-form-data-model.md#main-pars-header-2140694395) and specify the binding value.
+1. Tap ![aem_6_3_edit](assets/aem_6_3_edit.png) for the read service argument to [bind the argument to a User Profile Attribute, Request Attribute, or Literal value](#bindargument) and specify the binding value.
 1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer l’argument, **[!UICONTROL Terminé]** pour enregistrer les propriétés, puis sur **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire.
 
 ### Arguments du service Bind Read {#bindargument}
 
-Lier l’argument du service Read à un attribut de profil utilisateur, un attribut de requête ou une valeur littérale en fonction d’une valeur de liaison. La valeur est transmise au service en tant qu’argument pour récupérer les détails associés à la valeur spécifiée à partir de la source de données.
+Lier l’argument du service Read à un attribut  utilisateur, un attribut de requête ou une valeur littérale en fonction d’une valeur de liaison. La valeur est transmise au service en tant qu’argument pour récupérer les détails associés à la valeur spécifiée à partir de la source de données.
 
 #### Literal value {#literal-value}
 
@@ -172,7 +172,7 @@ Dans cet exemple, les détails associés à **4367655678**, en tant que valeur d
 
 #### Attribut du profil utilisateur {#user-profile-attribute}
 
-Sélectionnez Attribut **[!UICONTROL de profil]** utilisateur dans le menu déroulant **[!UICONTROL Liaison à]** et saisissez le nom de l’attribut dans le champ Valeur **[!UICONTROL de]** liaison. Les détails de l’utilisateur connecté à l’instance AEM sont récupérés à partir de la source de données en fonction du nom d’attribut.
+Sélectionnez **[!UICONTROL Attribut]** de d’utilisateur dans le menu déroulant **[!UICONTROL Liaison à]** et saisissez le nom de l’attribut dans le champ Valeur **[!UICONTROL de]** liaison. Les détails de l’utilisateur connecté à l’instance AEM sont récupérés à partir de la source de données en fonction du nom d’attribut.
 
 Le nom d’attribut spécifié dans le champ Valeur **[!UICONTROL de]** liaison doit inclure le chemin de liaison complet jusqu’au nom d’attribut de l’utilisateur. Ouvrez l’URL suivante pour accéder aux détails de l’utilisateur sur CRXDE :
 
@@ -264,7 +264,7 @@ Pour ajouter une association :
 
 ![association ajoutée](assets/added-association.png)
 
-## Modifier les propriétés {#properties}
+## Modification des propriétés {#properties}
 
 Vous pouvez modifier les propriétés des objets de modèle de données, leurs propriétés et les services ajoutés dans le modèle de données de formulaire.
 
@@ -398,13 +398,13 @@ De même, vous pouvez tester d’autres objets et services de modèle de donnée
 
 ## Validation automatisée des données d’entrée {#automated-validation-of-input-data}
 
-Le modèle de données de formulaire valide les données reçues en tant qu’entrées lors de l’appel de l’API DermisBridge (en fonction des critères de validation disponibles dans le modèle de données de formulaire). La validation est basée sur l’ `ValidationOptions` indicateur défini dans l’objet de requête utilisé pour appeler l’API.
+Le modèle de données de formulaire valide les données reçues en tant qu’entrées lors de l’appel de l’API DermisBridge (en fonction des critères de validation disponibles dans le modèle de données de formulaire). La validation est basée sur l’ `ValidationOptions` indicateur défini dans l’objet  utilisé pour appeler l’API.
 
 L’indicateur peut être défini sur l’une des valeurs suivantes :
 
 * **COMPLET**: FDM effectue la validation en fonction de toutes les contraintes
 * **OFF**: Aucune validation
-* **BASE**: FDM effectue la validation en fonction des contraintes &quot;obligatoire&quot; et &quot;nul&quot;
+* **BASE**: FDM effectue la validation en fonction des contraintes &quot;obligatoires&quot; et &quot;nullable&quot;
 
 Si aucune valeur n’est définie pour l’ `ValidationOptions`indicateur, la validation **BASIC** est effectuée sur les données d’entrée.
 
@@ -416,12 +416,12 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 
 >[!NOTE]
 >
->La valeur fournie pour un attribut dans les données d’entrée doit correspondre au type de données défini pour l’attribut dans le document de métadonnées.\
+>La valeur fournie pour un attribut dans les données d’entrée doit correspondre au type de données défini pour l’attribut dans le de métadonnées.\
 >Si la valeur ne correspond pas au type de données défini pour l’attribut, l’API DermisBridge affiche une exception quelle que soit la valeur de l’ `ValidationOptions` indicateur. Si le niveau du journal est défini sur Débogage, une erreur est consignée dans le fichier **error.log** .
 
-Le modèle de données de formulaire valide les données d’entrée en fonction d’une liste de contraintes de type de données. La liste des contraintes pour les données d’entrée peut varier en fonction de la source de données.
+Le modèle de données de formulaire valide les données d’entrée en fonction d’un de contraintes de type de données. Le de contraintes pour les données d’entrée peut varier en fonction de la source de données.
 
-Le tableau suivant répertorie les contraintes liées aux données d’entrée en fonction de la source de données :
+Le tableau suivant  les contraintes liées aux données d’entrée en fonction de la source de données :
 
 <table>
  <tbody> 
