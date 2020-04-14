@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -150,7 +150,7 @@ Les configurations ContextHub sont affectées par une mise à niveau. Instructio
 
 ### Personnalisations des workflows {#workflow-customizations}
 
-Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. Un workflow souvent personnalisé est le workflow Ressource de mise à jour de la gestion des actifs numériques. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
+Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. A common workflow that is customized is the [!UICONTROL DAM Update Asset] workflow. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
 
 ### Modèles modifiables {#editable-templates}
 
