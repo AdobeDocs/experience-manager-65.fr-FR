@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -29,7 +29,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
    <td>Tâches</td> 
   </tr>
   <tr>
-   <td>forms-user <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>forms-user <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
@@ -59,7 +59,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-authors <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Créer et prévisualiser des formulaires adaptatifs ou des modèles de communication interactive</li> 
