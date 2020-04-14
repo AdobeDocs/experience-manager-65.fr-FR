@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -27,10 +27,10 @@ Un formulaire adaptatif peut contenir un mélange de champs liés et non liés. 
 Vous pouvez préremplir les champs liés et non liés d’un formulaire adaptatif. Les données de préremplissage contiennent les sections afBoundData et afUnBoundData pour préremplir les champs liés et non liés d’un formulaire adaptatif. La section `afBoundData` contient les données de préremplissage pour les champs liés et les panneaux. Ces données doivent être conformes au schéma de modèle de formulaire associé :
 
 * Pour les formulaires adaptatifs utilisant le [modèle de formulaire XFA](../../forms/using/prepopulate-adaptive-form-fields.md), le code XML de préremplissage doit être conforme au schéma de données du modèle XFA.
-* Pour les formulaires adaptatifs utilisant le [schéma XML](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-header-3), utilisez le code XML de préremplissage compatible avec la structure du schéma XML.
-* Pour les formulaires adaptatifs utilisant le [schéma JSON](../../forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms), utilisez le code JSON de préremplissage compatible avec le schéma JSON.
+* Pour les formulaires adaptatifs utilisant le [schéma XML](#xml-schema-af), utilisez le code XML de préremplissage compatible avec la structure du schéma XML.
+* Pour les formulaires adaptatifs utilisant le [schéma JSON](#json-schema-based-adaptive-forms), utilisez le code JSON de préremplissage compatible avec le schéma JSON.
 * Pour les formulaires adaptatifs utilisant le schéma FDM, utilisez le code JSON de préremplissage compatible avec le schéma FDM.
-* Pour les formulaires adaptatifs [sans modèle de formulaire](../../forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p), il n’existe aucune donnée liée. Chaque champ est un champ non lié qui est prérempli à l’aide du code XML non lié.
+* Pour les formulaires adaptatifs [sans modèle de formulaire](#adaptive-form-with-no-form-model), il n’existe aucune donnée liée. Chaque champ est un champ non lié qui est prérempli à l’aide du code XML non lié.
 
 ### Exemple de structure XML préremplie {#sample-prefill-xml-structure}
 
@@ -143,8 +143,8 @@ Pour les champs dont le modèle est le schéma XML, les données sont remplies d
 
 Pour les formulaires adaptatifs basés sur le schéma JSON, la structure du code JSON de préremplissage et du code JSON envoyé est décrite ci-dessous. Pour plus d’informations, reportez-vous à la section [Création de formulaires adaptatifs à l’aide d’un schéma JSON](../../forms/using/adaptive-form-json-schema-form-model.md).
 
-* **Structure du préremplissage JSON** : le préremplissage JSON doit être conforme au schéma JSON associé. Si vous souhaitez également préremplir des champs non liés, vous pouvez éventuellement les encapsuler dans l’objet /afData/afBoundData.
-* **Structure** JSON envoyée : si aucun fichier JSON de préremplissage n’est utilisé, le fichier JSON envoyé contient des données pour les champs liés et non liés dans la balise wrapper afData. Si le fichier JSON de préremplissage est utilisé, le fichier JSON envoyé a la même structure que le fichier JSON de préremplissage. Si le fichier JSON de préremplissage commence par l’objet racine afData, le fichier JSON de sortie a le même format. Si le fichier JSON de préremplissage ne dispose pas du wrapper afData/afBoundData et commence plutôt directement à partir de l’objet racine du schéma, tel que user, le fichier JSON envoyé commence également avec l’objet utilisateur.
+* **Structure du préremplissage JSON** : le préremplissage JSON doit être conforme au schéma JSON associé. Si vous le souhaitez, vous pouvez également l’encapsuler dans l’objet /afData/afBoundData si vous souhaitez préremplir des champs non liés.
+* **Structure** JSON envoyée : si aucun fichier JSON de préremplissage n’est utilisé, le fichier JSON envoyé contient des données pour les champs liés et non liés dans la balise wrapper afData. Si le fichier JSON de préremplissage est utilisé, le fichier JSON envoyé a la même structure que le fichier JSON de préremplissage. Si le JSON prérempli  avec l’objet racine afData, le fichier JSON de sortie a le même format. Si le fichier JSON de préremplissage ne dispose pas de l’wrapper afData/afBoundData et qu’il  directement à partir de l’objet racine du, tel que user, le fichier JSON envoyé s’applique également à l’objet utilisateur.
 
 ```
 {
@@ -338,7 +338,7 @@ Vous pouvez utiliser le service de préremplissage personnalisé pour les scéna
 
 Le service de préremplissage est un service OSGi et fait partie du package OSGi. Vous créez le groupe OSGi, vous le chargez et l’installez sur les groupes AEM Forms. Avant de débuter la création du groupe :
 
-* [Téléchargez le SDK Client d’AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [Téléchargez le SDK Client d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
 * [Téléchargez le package standard](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
 
 * Placez le fichier de données (données de préremplissage) dans le référentiel crx. Vous pouvez placer le fichier à tout emplacement dans le dossier \contents du référentiel crx.
@@ -356,7 +356,7 @@ Le package standard (exemple de package de services de préremplissage) contient
    * `label:` Le paramètre label spécifie le nom d’affichage du service. Par exemple, service de préremplissage par défaut
 
 1. Save and close the `Prefill.java` file.
-1. Ajoutez le `AEM Forms Client SDK` package au chemin de génération du projet standard.
+1. Ajouter le `AEM Forms Client SDK` package au chemin de génération du projet standard.
 1. Compilez le projet et créez le fichier .jar pour le groupe.
 
 #### Démarrage et utilisation du service de préremplissage {#start-and-use-the-prefill-service}
