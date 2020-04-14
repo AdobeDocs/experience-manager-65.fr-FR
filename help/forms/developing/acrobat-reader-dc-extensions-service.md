@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
 
 ---
 
@@ -20,13 +20,15 @@ Les  Quick suivants sont disponibles pour le service Acrobat Reader DC Extension
 
 [rapide (mode SOAP):Application de droits d’utilisation à l’aide de l’API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[Suppression des droits d’utilisation du PDF](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[Suppression des droits d’utilisation du PDF](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
 [rapide (mode SOAP) : Récupération des informations d’identification à l’aide de l’API Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Les  rapides situés dans Programmation avec AEM Forms reposent sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Les  rapides situés dans Programmation avec AEM Forms reposent sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ##  rapide (mode SOAP):Application de droits d’utilisation à l’aide de l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
