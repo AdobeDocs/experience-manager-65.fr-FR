@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -48,7 +48,7 @@ L’URL par défaut de CRXDE Lite est `https://'[server]:[port]'/lc/crx/de/index
 
 ## Localisation des catégories réduites, des files d’attente et des processus {#localizing-collapsed-categories-queues-and-processes}
 
-L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des , des files d’attente et des processus du. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. For detailed information about creating development package, see [Building AEM Forms workspace code.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des , des files d’attente et des processus du. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. For detailed information about creating development package, see [Building AEM Forms workspace code.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 Dans les étapes suivantes, on considère que les nouveaux fichiers image localisés sont *Categories_nw.png*, *Queue_nw.png* et *Processes_nw.png*. La largeur recommandée des images est de 19 px.
 
@@ -107,7 +107,7 @@ Effectuez les étapes suivantes pour localiser les images :
 
 ## Localisation du sélecteur de date {#localizing-date-picker}
 
-Vous avez besoin du progiciel de développement pour localiser l’API *datepicker*. For detailed information about creating development package, see [Building AEM Forms workspace code](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3).
+Vous avez besoin du progiciel de développement pour localiser l’API *datepicker*. For detailed information about creating development package, see [Building AEM Forms workspace code](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Téléchargez et ouvrez le [progiciel d’interface utilisateur jQuery](https://jqueryui.com/download/all/), naviguez jusqu’à *&lt;progiciel d’interface utilisateur jQuery extrait>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copiez le fichier jquery.ui.datepicker-nw.js du nouveau code de paramètres régionaux dans apps/ws/js/libs/jqueryui et apportez les modifications propres aux paramètres locaux dans le fichier.
