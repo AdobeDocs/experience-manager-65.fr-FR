@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -45,16 +45,16 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
 Dans les formulaires adaptatifs, vous pouvez écrire   pour ajouter des comportements tels que les champs et panneaux dynamiques d’affichage/masquage. Vous pouvez également écrire   pour ajouter des champs calculés, rendre les champs en lecture seule, valider la logique, etc. Les formulaires adaptatifs prennent en charge   suivants :
 
-* **[Expressions d’accès](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)** : pour activer/désactiver un champ.
-* **[Expressions de calcul](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)** : pour calculer automatiquement la valeur d’un champ.
-* **[Expression de clic](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)** : pour gérer les actions en utilisant l’événement clic d’un bouton.
-* **[Script d’initialisation](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p) :**effectuez une action lors de l’initialisation d’un champ.
-* **[Expression d’options](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)** : pour remplir de façon dynamique une liste déroulante.
+* **[Expressions d’accès](#access-expression-enablement-expression)** : pour activer/désactiver un champ.
+* **[Expressions de calcul](#calculate-expression)** : pour calculer automatiquement la valeur d’un champ.
+* **[Expression de clic](#click-expression)** : pour gérer les actions en utilisant l’événement clic d’un bouton.
+* **[Script d’initialisation](#initialization-script) :**effectuez une action lors de l’initialisation d’un champ.
+* **[Expression d’options](#options-expression)** : pour remplir de façon dynamique une liste déroulante.
 * **[Expression récapitulative](#summary)** : pour calculer de façon dynamique le titre d’un accordéon.
-* **[Expressions de validation](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)** : pour valider un champ.
-* **[Script](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)de validation de valeur :**pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
-* **[Expression de visibilité](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)** : pour contrôler la visibilité d’un champ et d’un panneau.
-* **[de fin d’étape](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**: pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
+* **[Expressions de validation](#validate-expression)** : pour valider un champ.
+* **[Script](#value-commit-script)de validation de valeur :**pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
+* **[Expression de visibilité](#visibility-expression)** : pour contrôler la visibilité d’un champ et d’un panneau.
+* **[de fin d’étape](#step-completion-expression)**: pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
 
 ### Expression d’accès (expression d’activation) {#access-expression-enablement-expression}
 
@@ -79,7 +79,7 @@ L’expression de calcul est utilisée pour calculer automatiquement la valeur d
 
 ### Expression de clic {#click-expression}
 
-L’expression de clic gère les actions effectuées sur l’événement clic d’un bouton. GuideBridge fournit des API prêtes à l’emploi pour remplir différentes fonctions comme l’envoi et la validation, qui sont utilisées avec l’expression de clic. For complete list of the APIs, see [GuideBridge APIs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+L’expression de clic gère les actions effectuées sur l’événement clic d’un bouton. GuideBridge fournit des API prêtes à l’emploi pour remplir différentes fonctions comme l’envoi et la validation, qui sont utilisées avec l’expression de clic. For complete list of the APIs, see [GuideBridge APIs](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/GuideBridge.html).
 
 **Application pour** : champs de bouton
 
@@ -255,7 +255,7 @@ Pour utiliser GuideBridge après l’initialisation du formulaire (l’événeme
 
 #### Evénements de GuideBridge {#guidebridge-events}
 
-GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. For more details about such events, see [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/GuideBridge.html).
 
 Utilisez le code suivant pour enregistrer des gestionnaires :
 
