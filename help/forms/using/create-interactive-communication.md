@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -127,7 +127,7 @@ For more information on the Interactive Communication authoring interface, see [
  </tbody>
 </table>
 
-Vous pouvez également remplacer la liaison entre une zone de  et un fragment de  de en déposant le nouveau fragment sur la zone de  de l’ **onglet Ressources** . L’ombrage de couleur bleue de la zone  du lors du déplacement du fragment indique que le fragment de  peut être déposé dans la zone de  de l’objet.
+Vous pouvez également remplacer la liaison entre une zone de  et un fragment de  de en déposant le nouveau fragment sur la zone de  de l’ **[!UICONTROL onglet Ressources]** . L’ombrage de couleur bleue de la zone  du lors du déplacement du fragment indique que le fragment de  peut être déposé dans la zone de  de l’objet.
 
 Pour plus d’informations sur les fragments de document, reportez-vous à la section [Fragments de document](/help/forms/using/document-fragments.md).
 
@@ -178,11 +178,11 @@ Appuyez sur le fragment  de, appuyez sur ![configure_icon](assets/configure_icon
 
 1. Switch to **[!UICONTROL Web Channel]**. Le Web apparaît dans l’éditeur de communication interactive. Lorsque vous passez du canal d’impression au canal web pour la première fois, la synchronisation automatique a lieu. For more information, see [Synchronizing web channel from the print channel](../../forms/using/create-interactive-communication.md#synchronize).
 
-   Comme nous utilisons le canal d’impression comme base pour le canal web dans cet exemple, les espaces réservés, le contenu et la liaison de données du canal d’impression sont synchronisés avec le canal web. Vous pouvez toutefois modifier et personnaliser le contenu spécifique dans le Web . [Annulez l’héritage](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) pour les zones et variables de  de qui ont été générées à l’aide du d’impression pour pouvoir personnaliser le contenu.
+   Comme nous utilisons le canal d’impression comme base pour le canal web dans cet exemple, les espaces réservés, le contenu et la liaison de données du canal d’impression sont synchronisés avec le canal web. Vous pouvez toutefois modifier et personnaliser le contenu spécifique dans le Web . [Annulez l’héritage](#cancelinheritance) pour les zones et variables de  de qui ont été générées à l’aide du d’impression pour pouvoir personnaliser le contenu.
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Appuyez sur le fragment  de, appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer), puis sur **[!UICONTROL Properties]** dans le panneau latéral d’Interactive Communication. La section **[!UICONTROL Variables et Objets]** de modèle de données  les variables, y compris les variables masquées, et les objets de modèle de données utilisés dans les  de. Utilisez l’icône ![Modifier](assets/edit.svg) (Modifier) en regard de chaque objet ou variable de modèle de données pour modifier les propriétés. En outre, pour les fragments de  de qui ont été générés [](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) automatiquement dans le Web à l’aide de l’ d’impression, utilisez l’icône ![](assets/cancelinheritance.png) (Annuler l’héritage) en regard de chaque objet et variable de modèle de données pour [annuler l’héritage](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) et pouvoir les modifier.
+   Appuyez sur le fragment  de, appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer), puis sur **[!UICONTROL Properties]** dans le panneau latéral d’Interactive Communication. La section **[!UICONTROL Variables et Objets]** de modèle de données  les variables, y compris les variables masquées, et les objets de modèle de données utilisés dans les  de. Utilisez l’icône ![Modifier](assets/edit.svg) (Modifier) en regard de chaque objet ou variable de modèle de données pour modifier les propriétés. En outre, pour les fragments de  de qui ont été générés [](#synchronize) automatiquement dans le Web à l’aide de l’ d’impression, utilisez l’icône ![](assets/cancelinheritance.png) (Annuler l’héritage) en regard de chaque objet et variable de modèle de données pour [annuler l’héritage](#cancelinheritance) et pouvoir les modifier.
 
 1. Pour ajouter des composants supplémentaires dans le canal web, lorsque le canal web est sélectionné, appuyez sur **[!UICONTROL Composants]**. Faites glisser des composants dans le Web de votre communication interactive, le cas échéant, et procédez à leur configuration.
 
@@ -581,9 +581,9 @@ Appuyez sur le composant pour  les options suivantes :
 * **Parent :** Sélectionnez le parent d’un composant.
 * **SOM   :**  l’de  [SOM](../../forms/using/using-som-expressions-adaptive-forms.md) pour le composant.
 
-* **Associer des objets dans le panneau :** Regroupez les composants d’un panneau pour pouvoir effectuer des opérations simultanément sur ces composants. Pour plus d’informations, voir **[Associer des objets dans le panneau](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**.
+* **Associer des objets dans le panneau :** Regroupez les composants d’un panneau pour pouvoir effectuer des opérations simultanément sur ces composants. Pour plus d’informations, voir [Associer des objets dans le panneau](#groupobjectspanel).
 
-* **Annuler l&#39;héritage :** [Annulez l’héritage](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) des composants dans la zone  du pour les modifier.
+* **Annuler l&#39;héritage :** [Annulez l’héritage](#cancelinheritance) des composants dans la zone  du pour les modifier.
 
 ### Group objects in Panel {#groupobjectspanel}
 
