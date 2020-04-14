@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -19,7 +19,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 
 >[!NOTE]
 >
->* Le partage d’un dossier de ressources du type `sling:OrderedFolder` n’est pas pris en charge lors du partage vers Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
+>* Sharing an Assets folder of the type `sling:OrderedFolder` is not supported when sharing to Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
 >* Experience Manager n’autorise pas l’utilisation de `subassets` mot comme nom d’un dossier. Il s’agit d’un mot-clé réservé au noeud qui contient des sous-ressources pour les ressources composées.
 
 
@@ -56,13 +56,13 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Then on the menu, tap **[!UICONTROL Files]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
    * Dans un navigateur prenant en charge HTML5, faites glisser directement les ressources dans l’interface utilisateur d’Assets. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
-   ![option de création dans aem](assets/create-options.png)
+   ![Créer une option pour télécharger des fichiers](assets/create-options.png)
 
    Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
 
    Vous pouvez suspendre le transfert des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
-   ![chlimage_1-211](assets/chlimage_1-5.png)
+   ![Barre de progression du téléchargement des fichiers](assets/chlimage_1-5.png)
 
    Vous pouvez configurer la taille au-dessus de laquelle une ressource est considérée comme volumineuse. Par exemple, vous pouvez configurer le système de sorte qu’il considère les ressources dont la taille est supérieure à 1 000 Mo (au lieu de 500 Mo) comme des ressources volumineuses. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -72,7 +72,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Lorsque vous cliquez sur l’icône **[!UICONTROL Pause]**, elle devient une icône **[!UICONTROL Lire]**. Pour reprendre le transfert, cliquez sur l’icône **[!UICONTROL Lire.]**
 
-   ![chlimage_1-212](assets/chlimage_1-6.png)
+   ![Reprendre le transfert de fichier suspendu à l’aide de l’icône Lecture](assets/chlimage_1-6.png)
 
    Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. Lorsque vous annulez le transfert, AEM Assets supprime la partie partiellement transférée de la ressource.
 
@@ -86,7 +86,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotation ou recadrage, par exemple) que vous avez apportées à la ressource existante sont supprimées. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![chlimage_1-213](assets/chlimage_1-7.png)
+   ![Boîte de dialogue Conflit de nom pour résoudre le conflit de nom des ressources](assets/chlimage_1-7.png)
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![chlimage_1-214](assets/chlimage_1-8.png)
+   ![Boîte de dialogue Fichier  détecté](assets/chlimage_1-8.png)
 
    Pour conserver la ressource en double dans AEM Assets, appuyez/cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
@@ -112,7 +112,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    * Le nom du fichier de ressource ne doit pas contenir `* / : [ \\ ] | # % { } ? &`
    * Le nom du dossier de ressources ne doit pas contenir `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
-   ![chlimage_1-215](assets/chlimage_1-10.png)
+   ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui n’ont pas pu être téléchargés](assets/chlimage_1-10.png)
 
    De plus, l’interface utilisateur d’Assets affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
 
