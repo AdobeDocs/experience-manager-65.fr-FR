@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Permet de créer des applications clientes interactives de capture de données a
 
 Permet de créer des documents dans différents formats, y compris PDF et les formats d’imprimantes laser et d’imprimantes d’étiquettes. Les formats d’imprimantes laser sont les suivants : PostScript et PCL (Printer Control Language). For more information, see [Output Service](/help/forms/using/output-service.md).
 
-Le service PDF Generator fournit des API pour convertir des formats de fichier natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF. For more information, see [PDF Generator Service](/help/forms/using/aem-document-services-programmatically.md#main-pars-header-27).
+Le service PDF Generator fournit des API pour convertir des formats de fichier natifs en PDF. Il convertit également des fichiers PDF en d’autres formats et optimise la taille des documents PDF. For more information, see [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice).
 
 Permet à votre entreprise de partager facilement des documents PDF interactifs en ajoutant à la fonctionnalité d’Adobe Reader des droits d’utilisation supplémentaires. Ce service active des fonctionnalités indisponibles à l’ouverture d’un document PDF dans Adobe Reader, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. For more information, see [Reader Extension Service](/help/forms/using/overview-aem-document-services.md#p-reader-extension-service-p).
 
@@ -328,7 +328,7 @@ Vous pouvez permettre à un utilisateur non-administrateur d’utiliser le servi
 1. Déplacez le curseur sur le niveau Ne jamais m’avertir. Cela fait, fermez la fenêtre de commande, puis celle de la configuration du système.
 1. Vérifiez que le paramètre de registre pour l’UAC est défini sur 0 (zéro). Effectuez les étapes suivantes pour vérifier :
 
-   1. Microsoft recommande de sauvegarder le registre avant de le modifier. Pour obtenir la procédure détaillée, voir [Comment sauvegarder et restaurer le registre dans Windows](https://support.microsoft.com/en-us/help/322756).
+   1. Microsoft recommande de sauvegarder le registre avant de le modifier. Pour obtenir la procédure détaillée, voir [Comment sauvegarder et restaurer le registre dans Windows](https://support.microsoft.com/fr-fr/help/322756).
    1. Ouvrez l’éditeur de registre Microsoft Windows. Pour ouvrir l’éditeur de registre, accédez à Démarrer > Exécuter, saisissez regedit, puis cliquez sur OK.
    1. Accédez à `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Assurez-vous que la valeur de EnableLUA est définie sur 0 (zéro).
    1. Assurez-vous que la valeur de **EnableLUA** est définie sur 0 (zéro). Si la valeur n’est pas 0, remplacez-la par 0. Fermez l’éditeur du registre.
@@ -386,11 +386,11 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 1. Dans le [partage de package AEM](http://localhost:4502/crx/packageshare/login.html), recherchez les **[!UICONTROL packages de modules complémentaires AEM 6.4 Forms]**, cliquez sur le package correspondant à votre système d’exploitation, puis sur **[!UICONTROL Télécharger]**. Lisez et acceptez l’accord de licence, puis cliquez sur **[!UICONTROL OK]**. Le téléchargement démarre. Une fois le téléchargement effectué, le mot **[!UICONTROL Téléchargé]** apparaît en regard du package.
 
-   Vous pouvez également utiliser le numéro de version pour rechercher un package de module complémentaire. Pour obtenir le numéro de version du dernier package, voir l’article [Versions AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+   Vous pouvez également utiliser le numéro de version pour rechercher un package de module complémentaire. Pour obtenir le numéro de version du dernier package, voir l’article [Versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 
 1. Une fois le téléchargement terminé, cliquez sur **[!UICONTROL Téléchargé]**. Vous êtes redirigé vers le gestionnaire de package. Dans le gestionnaire de packages, recherchez le package téléchargé, puis cliquez sur **[!UICONTROL Installer]**.
 
-   Si vous téléchargez manuellement le package à l’aide du lien direct répertorié dans l’article [Versions AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html), connectez-vous au gestionnaire de package, cliquez sur **[!UICONTROL Télécharger le package]**, sélectionnez le package téléchargé et cliquez sur Télécharger. After the package is uploaded, click package name, and click **[!UICONTROL Install]**.
+   Si vous téléchargez manuellement le package à l’aide du lien direct répertorié dans l’article [Versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html), connectez-vous au gestionnaire de package, cliquez sur **[!UICONTROL Télécharger le package]**, sélectionnez le package téléchargé et cliquez sur Télécharger. After the package is uploaded, click package name, and click **[!UICONTROL Install]**.
 
 1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **N&#39;arrêtez pas le serveur immédiatement.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s’affichent plus dans le fichier `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log et que le journal soit stable.
 
@@ -398,9 +398,9 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 ### Configuration de Boot Delegation pour les bibliothèques RSA/BouncyCastle  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
-1. Désactivez l’instance d’AEM. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing.
+1. Désactivez l’instance AEM. Navigate to the [AEM installation directory]\crx-quickstart\conf\ folder. Open the sling.properties file for editing.
 
-   Si vous utilisez `[AEM installation directory]\crx-quickstart\bin\start.bat` pour une instance AEM, modifiez le fichier sling.properties situé dans `[AEM_root]\crx-quickstart\`.
+   Si vous utilisez `[AEM installation directory]\crx-quickstart\bin\start.bat` pour démarrer une instance AEM, modifiez le fichier sling.properties situé à l’emplacement suivant :`[AEM_root]\crx-quickstart\`.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -420,7 +420,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 ### Configuration du service de gestion de polices  {#configuring-the-font-manager-service}
 
 1. Log in to [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) as an administrator.
-1. Locate and open the **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]** service. Spécifiez le chemin d’accès des répertoires Polices système, Polices Adobe Server et Polices client. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Locate and open the **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]** service. Spécifiez le chemin d’accès des répertoires Polices système, Polices Adobe Server et Polices client. Cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
    >[!NOTE]
    >
@@ -429,7 +429,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 ### Configuration d’un compte d’utilisateur local pour exécuter le service PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-Un compte d’utilisateur local est requis pour exécuter le service PDF Generator. For steps to create a local user, see [Create a user account in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) or [create a user account in UNIX-based platforms](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
+Un compte d’utilisateur local est requis pour exécuter le service PDF Generator. For steps to create a local user, see [Create a user account in Windows](https://support.microsoft.com/fr-fr/help/13951/windows-create-user-account) or [create a user account in UNIX-based platforms](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html).
 
 1. Ouvrez la page [Configuration de PDF Generator dans AEM Forms.](http://localhost:4502/libs/fd/pdfg/config/ui.html)
 
@@ -450,7 +450,7 @@ Un compte d’utilisateur local est requis pour exécuter le service PDF Generat
 <table> 
  <tbody> 
   <tr> 
-   <td>Champ</td> 
+   <td>Field (Champ)</td> 
    <td>Description</td> 
    <td>Valeur par défaut</td> 
   </tr> 
@@ -490,7 +490,7 @@ Sous Microsoft Windows, le service PDF Generator utilise Adobe Acrobat pour con
 
 1. Exécutez l’outil de préparation du système pour valider l’installation d’Acrobat. L’outil vérifie que l’ordinateur est correctement configuré pour exécuter les conversions PDF Generator et génère un rapport au chemin indiqué:
 
-   1. Ouvrez l’invite de commande. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt` folder. Exécutez la commande suivante à partir de l’invite de commande :
+   1. Ouvrez l’invite de commande. Accédez au dossier `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt`. Exécutez la commande suivante à partir de l’invite de commande :
 
       `cscript SystemReadinessTool.vbs [Path_of_reports_folder] en`
 
