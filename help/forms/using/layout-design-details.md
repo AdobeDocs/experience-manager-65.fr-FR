@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -24,7 +24,7 @@ Les modèles de formulaire XFA ou XDP sont ceux de :
 
 * Fragments de mise en page
 
-Les XDP sont conçus dans Adobe Forms Designer. Cet article explique en détail comment concevoir vos fichiers XDP pour créer des correspondances/communications interactives efficaces, par exemple où utiliser les champs de formulaire ou les zones cible et quand utiliser des fragments de mise en page.
+Les XDP sont conçus dans Adobe Forms Designer. Cet article explique en détail comment concevoir vos fichiers XDP pour créer des correspondances/communications interactives efficaces, par exemple où utiliser les champs de formulaire ou les zones de  et quand utiliser des fragments de mise en page.
 
 ## Création d’une mise en page pour des lettres ou pour le canal d’impression des communications interactives {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -49,11 +49,11 @@ Procédez comme suit pour créer des mises en page pour des lettres/le canal d�
 
 ### Utiliser un sous-formulaire dans un modèle XDP {#usesubformxdp}
 
-Une fois que vous avez analysé la disposition requise pour créer votre communication interactive, vous pouvez créer des sous-formulaires dans le modèle XDP à l’aide de Forms Designer. Les composants de sous-formulaire vierges utilisés dans le modèle XDP génèrent l’affichage des zones cible dans le canal d’impression de la communication interactive.
+Une fois que vous avez analysé la disposition requise pour créer votre communication interactive, vous pouvez créer des sous-formulaires dans le modèle XDP à l’aide de Forms Designer. Les composants de sous-formulaire vierges utilisés dans le modèle XDP génèrent l’affichage de zones de  dans le d’impression  de la communication interactive.
 
 >[!NOTE]
 >
->Ajoutez du contenu au canal d’impression de la communication interactive au lieu d’ajouter du contenu au composant de sous-formulaire dans le modèle XDP. Ajoutez du contenu aux zones cible du canal Imprimer à l’aide de fragments de [document, de graphiques, d’images](../../forms/using/create-interactive-communication.md#main-pars-header-741471925)et de fragments de mise en page.
+>Ajouter le contenu dans le d’impression de la communication interactive au lieu d’ajouter le contenu au composant de sous-formulaire dans le modèle XDP. Ajouter du contenu aux zones  dans le [formulaire d’impression, à l’aide de fragments de](create-interactive-communication.md#step2), de graphiques, d’imageset de fragments de mise en page.
 
 Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
 
@@ -83,14 +83,14 @@ Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
 
    1. Indiquez le nom du sous-formulaire dans le champ **Nom** .
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
-   Répétez les étapes 2 à 5 pour ajouter d’autres sous-formulaires au modèle XDP. Ajoutez [du texte, des fragments de document, des images et des graphiques](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) aux zones cible uniquement lors de la création de la communication interactive.
+   Répétez les étapes 2 à 5 pour ajouter d’autres sous-formulaires au modèle XDP. Ajouter [du texte,  fragments, des images et des graphiques](create-interactive-communication.md#step2) dans les zones de l’ uniquement lors de la création de la communication interactive.
 
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
    1. Accédez à l’emplacement d’enregistrement du fichier et spécifiez un nom pour le modèle XDP.
    1. Sélectionnez **.xdp** dans la liste déroulante **Type**.
 
-   1. Appuyez sur **Enregistrer**.
+   1. Appuyez sur **Save** (Enregistrer).
 
 ### Utilisation du composant Champ d’image dans un modèle XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -98,7 +98,7 @@ Utilisez le composant Champ d’image ou Sous-formulaire du modèle XDP et ajout
 
 >[!NOTE]
 >
->Ajoutez une image au canal d’impression de la communication interactive au lieu d’ajouter une image au champ d’image ou au composant de sous-formulaire dans le modèle XDP. Pour plus d’informations, voir [Ajout de contenu à la communication](../../forms/using/create-interactive-communication.md#step2)interactive.
+>Ajouter l’image au d’impression de la communication interactive au lieu d’ajouter l’image au champ d’image ou au composant de sous-formulaire dans le modèle XDP. Pour plus d’informations, voir [Ajout de contenu à la communication](../../forms/using/create-interactive-communication.md#step2)interactive.
 
 Pour utiliser le composant Champ d’image dans un modèle XDP, procédez comme suit :
 
@@ -111,11 +111,11 @@ Pour utiliser le composant Champ d’image dans un modèle XDP, procédez comme 
 
 ### Créer un modèle XDP pour des fragments de mise en page {#xdplayoutfragments}
 
-Utilisez le composant Tableau dans Forms Designer pour créer des fragments de mise en page, puis utilisez-les pour créer des tableaux lors de la création du canal Imprimer d’Interactive Communication. L’utilisation de fragments de mise en page pour créer des tableaux garantit que le contenu du tableau conserve la structure lorsque le canal Web est généré automatiquement à l’aide du canal d’impression.
+Utilisez le composant Tableau dans Forms Designer pour créer des fragments de mise en page, puis utilisez-les pour créer des tableaux lors de la création du  d’impression d’Interactive Communication. L’utilisation de fragments de mise en page pour créer des tableaux permet de s’assurer que le contenu du tableau conserve la structure lorsque le Web est généré automatiquement à l’aide de l’ d’impression.
 
 >[!NOTE]
 >
->Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) du modèle de données de formulaire uniquement lors de la création de la communication interactive.
+>Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets](create-interactive-communication.md#step2) du modèle de données de formulaire uniquement lors de la création de la communication interactive.
 
 Pour utiliser le composant Tableau dans le modèle XDP à l’aide de Forms Designer, procédez comme suit :
 
@@ -127,14 +127,14 @@ Pour utiliser le composant Tableau dans le modèle XDP à l’aide de Forms Desi
    1. Appuyez sur **OK**.
 
 1. Appuyez sur **+** dans le volet de gauche en regard du nom du tableau, cliquez avec le bouton droit sur les noms de cellule inclus dans l’en-tête et d’autres lignes, puis sélectionnez **Renommer l’objet** pour renommer les cellules du tableau.
-1. Cliquez sur les champs de texte d’en-tête de tableau dans la vue **de** conception et renommez-les.
-1. Faites glisser le composant Champ **de** texte de la bibliothèque **d’** objets vers chaque cellule de tableau de la vue **** de conception. Effectuez cette étape pour pouvoir lier des cellules de tableau aux objets de modèle de données de formulaire lors de la création d’Interactive Communication.
+1. Cliquez sur les champs de texte d’en-tête de tableau dans le **** de conception et renommez-les.
+1. Faites glisser et déposez le composant Champ **de** texte de la bibliothèque **d’** objets vers chaque cellule de tableau dans le **** de conception. Effectuez cette étape pour pouvoir lier des cellules de tableau aux objets de modèle de données de formulaire lors de la création d’Interactive Communication.
 
    ![Champs de texte dans un tableau](assets/text_fields_table_new.png)
 
 1. Select the name of the row from the left pane and select **Object** > **Binding** > **Repeat Row for Each Data Item**. Effectuez cette étape pour vous assurer que si une liaison est créée entre les cellules de tableau de cette ligne avec des objets de modèle de données de formulaire de type collection, la ligne de tableau est automatiquement répétée pour chaque élément de données disponible dans la base de données.
 
-   Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) du modèle de données de formulaire uniquement lors de la création de la communication interactive.
+   Entrez du texte dans les cellules du tableau ou [créez une liaison avec les objets](create-interactive-communication.md#step2) du modèle de données de formulaire uniquement lors de la création de la communication interactive.
 
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
@@ -148,7 +148,7 @@ Pour utiliser le composant Tableau dans le modèle XDP à l’aide de Forms Desi
 Une fois que vous avez créé un modèle XDP à l’aide de Forms Designer, vous devez le télécharger sur le serveur AEM Forms pour qu’il soit disponible lors de la création de la communication interactive.
 
 1. Sélectionnez **Formulaires** > **Formulaires et documents**.
-1. Appuyez sur **Créer**>**Chargement de fichier**.
+1. Appuyez sur **Create** (Créer) > **File Upload** (Téléchargement de fichier). 
 1. Accédez à l’emplacement du modèle XDP sur le système de fichiers local et appuyez sur **Ouvrir** pour importer le modèle XDP sur le serveur AEM Forms.
 
 ## Utilisation d’un schéma {#using-schema}
