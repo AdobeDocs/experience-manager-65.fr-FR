@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -54,9 +54,9 @@ Une configuration AEM type se compose d’un environnement de création et de p
 
 Dans une configuration de projet type, vous disposez de plusieurs environnements sur lesquels définir les phases du projet :
 
-* L’**environnement de développement** pour le développement de nouvelles fonctions ou pour apporter des modifications importantes. La meilleure pratique consiste à utiliser un environnement de développement par développeur (généralement des installations locales sur leurs systèmes personnels).
+* L’**environnement de développement** pour le développement de nouvelles fonctions ou pour apporter des modifications importantes. La meilleure pratique consiste à travailler en utilisant un  de développement  par développeur (généralement des installations locales sur leurs systèmes personnels).
 
-* **Environnement** de test de l’auteur Pour vérifier les modifications. Le nombre d’environnements de test peut varier en fonction des exigences du projet (par exemple, séparément pour l’assurance qualité, les tests d’intégration ou les tests d’acceptation par l’utilisateur).
+* **Test de l’auteur** Pour vérifier les modifications. Le nombre de  de test  peut varier en fonction des exigences du projet (par exemple, séparément pour l’assurance qualité, les tests d’intégration ou les tests d’acceptation par l’utilisateur).
 
 * L’**environnement de test de publication** principalement pour tester les cas d’utilisation de collaboration sociale et/ou l’interaction entre l’instance de création et plusieurs instances de publication.
 
@@ -146,7 +146,7 @@ Pour de tels scénarios, Adobe a effectué des tests d’évaluation des perform
 
    * **Résultat** Le débit maximal d’un simple exercice de création de page comme plus haut (considéré comme une transaction) est de 2 016 transactions/heure. Il s’agit d’une augmentation d’environ 16 % par rapport à une instance de création autonome pour la même évaluation des performances.
 
-* **Test de test de test 2b** Avec une grappe active-active de partage-rien de 2 instances d’auteur, calculez le débit maximal lorsque le profil de chargement comporte un mélange de création de nouvelles pages (10 %), de modification d’une page existante (80 %) et de création et de modification d’une page par ordre de suite (10 %). La complexité de la page reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
+* **Test de test de test 2b** Avec une grappe active-active de partage-rien de 2 instances d’auteur, calculez le débit maximal lorsque le de chargement comporte un mélange de création de nouvelles pages (10 %), de modification d’une page existante (80 %) et de création et de modification d’une page par lots (10 %). La complexité de la page reste la même que dans le profil du test d’évaluation des performances 1. La modification de base de la page est effectuée en ajoutant une image et en modifiant le contenu textuel. Là encore, l’exercice a été effectué sur une charge de base de 300 pages de même complexité, tel que défini dans le test d’évaluation des performances 1.
 
    * **Résultat** Le débit maximal d’un tel scénario mélangeant des opérations est de 6 288 transactions par heure. Il s’agit d’une augmentation d’environ 93 % par rapport à une instance de création autonome pour la même évaluation des performances.
 
@@ -158,7 +158,7 @@ Les deux tests ci-dessus indiquent clairement qu’AEM se dimensionne correcteme
 
 Sur un site web type, la plus grande partie de la création se produit pendant la phase de projet. Une fois le site web activé, le nombre d’auteurs travaillant en parallèle baisse généralement vers une moyenne inférieure (en mode opérationnel).
 
-Vous pouvez calculer le nombre d’ordinateurs (ou de processeurs) requis pour l’environnement de création comme suit :
+Vous pouvez calculer le nombre d’ordinateurs (ou de processeurs) requis pour l’auteur  le comme suit :
 
 `n = numberOfParallelAuthors / 30`
 
@@ -208,11 +208,11 @@ Si vous utilisez des modèles complexes, AEM aura besoin de plus de temps pour e
 
 ### Formule {#formula}
 
-La formule suivante vous permet de calculer une estimation de la complexité globale de votre solution AEM :
+A l’aide de la formule suivante, vous pouvez calculer une estimation de la complexité globale de votre solution AEM :
 
 `complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
 
-En fonction de la complexité, vous pouvez déterminer le nombre de serveurs (ou de coeurs d’unités centrales) dont vous avez besoin pour l’environnement de publication comme suit :
+En fonction de la complexité, vous pouvez déterminer le nombre de serveurs (ou de coeurs d’unités centrales) dont vous avez besoin pour le de publication   comme suit :
 
 `n = (traffic * complexity / 1000 ) * activations`
 
@@ -229,9 +229,9 @@ Les variables de l’équation sont les suivantes :
    <td><p>Utilisez 1 pour une application simple, 2 pour une application complexe ou une valeur intermédiaire :</p>
     <ul>
      <li>1 - un site entièrement anonyme, axé sur le contenu</li>
-     <li>1.1 - un site entièrement anonyme axé sur le contenu avec personnalisation côté client/Target</li>
-     <li>1.5 - un site orienté contenu avec des sections anonymes et connectées, personnalisation côté client/Target</li>
-     <li>1.7 - pour un site axé sur le contenu avec des sections anonymes et connectées, une personnalisation côté client/cible et du contenu généré par l’utilisateur</li>
+     <li>1.1 - un site entièrement anonyme axé sur le contenu avec personnalisation côté client/</li>
+     <li>1.5 - un site orienté contenu avec des sections anonymes et connectées, personnalisation côté client/</li>
+     <li>1.7 - pour un site orienté contenu avec des sections anonymes et connectées, une personnalisation côté client/ et un contenu généré par l’utilisateur</li>
      <li>2 - lorsque l'ensemble du site nécessite une connexion, avec une utilisation intensive du contenu généré par l'utilisateur et diverses techniques de personnalisation</li>
     </ul> </td>
   </tr>
@@ -244,8 +244,8 @@ Les variables de l’équation sont les suivantes :
    <td>Utilisez une valeur comprise entre 1 et 10 pour indiquer la complexité de vos modèles. Des valeurs plus élevées indiquent des modèles plus complexes ; utilisez une valeur de 1 pour les sites avec une moyenne de 10 composants par page, une valeur de 5 pour une moyenne de 40 composants par page et 10 pour une moyenne de plus de 100 composants.</td>
   </tr>
   <tr>
-   <td>activations</td>
-   <td>Nombre moyen d’activations (réplication de pages et de ressources de taille moyenne de l’auteur au niveau de publication) par heure divisé par x, où x est le nombre d’activations effectuées sur un système sans effets secondaires sur les performances pour d’autres tâches traitées par le système. Vous pouvez également prédéfinir une valeur initiale pessimiste comme x = 100.<br /> </td>
+   <td> </td>
+   <td>Nombre de   moyenne (réplication de pages et de ressources de taille moyenne de l’auteur au niveau de publication) par heure divisé par x, où x est le nombre de  de effectuées sur un système sans effets secondaires sur les performances pour d’autressystèmes traités par le système. Vous pouvez également prédéfinir une valeur initiale pessimiste comme x = 100.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -256,7 +256,7 @@ Si vous possédez un site web plus complexe, vous avez également besoin de serv
 ・ 1 024 Mo de RAM JVM* ・ processeur basse à moyenne performance
 
 * Complexité entre 4 et 8 :
-・ 2 048 Mo de RAM JVM* ・ milieu de l’unité centrale haute performance
+・ 2 048 Mo de RAM JVM* ・ milieu de l’unité centrale à haute performance
 
 * Complexité supérieure à 8 :
 ・ 4 096 Mo de RAM JVM* ・ processeur haute performance à haute performance
@@ -273,7 +273,7 @@ En plus du calcul pour une application web par défaut, il est possible que vous
 
 Le traitement étendu des ressources numériques nécessite des ressources matérielles optimisées. Les facteurs les plus pertinents sont la taille des images et le débit maximal des images traitées.
 
-Allouez au moins 16 Go de segment de mémoire et configurez le workflow Ressources de mise à jour de gestion des actifs numériques afin qu’il utilise le [module Camera Raw](/help/assets/camera-raw.md) pour l’intégration des images au format RAW.
+Allocate at least 16GB of heap and configure the [!UICONTROL DAM Update Asset] workflow to use the [Camera Raw package](/help/assets/camera-raw.md) for the ingestion of raw images.
 
 >[!NOTE]
 Un débit d’images plus élevé signifie que les ressources de calcul doivent pouvoir suivre la cadence des E/S du système et vice versa. Par exemple, si des workflows sont lancés en important des images, le téléchargement de nombreuses images via WebDAV peut entraîner un journal des workflows en souffrance.
