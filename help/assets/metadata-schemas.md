@@ -3,7 +3,7 @@ title: Schémas de métadonnées
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cbaefd5a377db5aa9f8ba35371fe2a9cb638fa1
+source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
 
 ---
 
@@ -16,24 +16,23 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
 1. Pour afficher la page des propriétés d’une ressource, cliquez ou appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** dans les actions rapides sur la mosaïque de la ressource en mode Carte.
 
-   ![chlimage_1-34](assets/chlimage_1-170.png)
+   ![Actions rapides sur la mosaïque de ressources](assets/chlimage_1-170.png)
 
    Vous pouvez également sélectionner la ressource dans l’interface utilisateur, puis cliquer ou appuyer sur l’icône **[!UICONTROL Propriétés]** dans la barre d’outils.
 
-   ![chlimage_1-35](assets/chlimage_1-171.png)
+   ![Icône Propriétés dans la barre d’outils supérieure](assets/chlimage_1-171.png)
 
 1. Les différents onglets vous permettent de modifier les propriétés des métadonnées. Toutefois, vous ne pouvez pas modifier le type de ressource sur la page des propriétés.
 
-   ![vous ne pouvez pas modifier le type de fichier dans l’onglet de base Propriétés du fichier](assets/asset-properties-basic-tab.png)
+   ![Onglet de base Propriétés du fichier, où le type de fichier ne peut pas être modifié](assets/asset-properties-basic-tab.png)
 
    *Figure : Onglet de base sur les propriétés des ressources*
-
 
    Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Si vous modifiez le schéma de métadonnées d’un certain type MIME, la disposition de la page des propriétés des ressources de ce type MIME et tous les sous-types de ressources sont modifiés. Par exemple, la modification d’un schéma jpeg sous `default/image` concerne uniquement la disposition des métadonnées (propriétés de ressource) des ressources du type MIME `image/jpeg`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
 
 1. Pour afficher une liste de formulaires/modèles, cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 
-   ![chlimage_1-37](assets/chlimage_1-173.png)
+   ![Page présentant le  des de métadonnées  des formulaires](assets/chlimage_1-173.png)
 
    AEM fournit les modèles prêts à l’emploi suivants :
    * **default** : le formulaire de schéma de métadonnées de base pour les ressources.
@@ -66,7 +65,7 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
 1. Dans la boîte de dialogue, saisissez le titre du formulaire de schéma, puis cliquez sur **[!UICONTROL Créer]** pour terminer la création du formulaire.
 
-   ![chlimage_1-38](assets/chlimage_1-174.png)
+   ![Spécifier le titre et créer un de métadonnées  formulaire](assets/chlimage_1-174.png)
 
 ## Modification des formulaires de schéma de métadonnées {#edit-metadata-schema-forms}
 
@@ -81,12 +80,11 @@ Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulair
 
 1. Sur la page Formulaires de schéma, cochez la case en regard d’un formulaire, puis cliquez sur l’icône Modifier dans la barre d’outils.
 
-   ![chlimage_1-39](assets/chlimage_1-175.png)
+   ![Icône Modifier dans la barre d’outils des de métadonnées  Forms](assets/chlimage_1-175.png)
 
 1. Sur la page **[!UICONTROL Éditeur de schéma de métadonnées]**, personnalisez la page des propriétés de la ressource en faisant glisser un ou plusieurs composants de la liste des types de composants dans le sous-onglet **[!UICONTROL Créer le formulaire]** vers l’onglet **[!UICONTROL De base]**.
 
-   ![ajouter des composants du formulaire de création à l’éditeur de  de métadonnées pour personnaliser les propriétés du fichier](assets/metadata-schema-editor.png)
-
+   ![Editeur  de métadonnées pour personnaliser la page Propriétés du fichier](assets/metadata-schema-editor.png)
 
    *Figure : Onglet de base de l’éditeur de de métadonnées*
 
@@ -147,7 +145,7 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 
 **Supprimer**: Cliquez sur cette icône pour supprimer un composant du formulaire .
 
-![chlimage_1-41](assets/chlimage_1-177.png)
+![Icône Supprimer dans le de métadonnées  le formulaire](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
@@ -155,15 +153,15 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 
 Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez rechercher des fichiers dont les métadonnées obligatoires sont manquantes. Dans le panneau **[!UICONTROL Filtres]**, développez le prédicat **[!UICONTROL Validation des métadonnées]** et sélectionnez l’option **[!UICONTROL Non valide]**. Les résultats de la recherche affichent des fichiers dont les métadonnées obligatoires que vous avez configurées via le formulaire de schéma sont manquantes.
 
-![chlimage_1-42](assets/chlimage_1-178.png)
+![Option non valide sélectionnée dans le prédicat Validation des métadonnées du  de panneau ](assets/chlimage_1-178.png)
 
 Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous forme de liste sur la page Propriétés des ressources auxquelles ce       schéma particulier est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
 
-![chlimage_1-43](assets/chlimage_1-179.png)
+![Composant Métadonnées contextuelles répertoriant les onglets des propriétés des ressources](assets/chlimage_1-179.png)
 
 Pour afficher un onglet de la page de propriétés en plus de l’onglet dans lequel le composant Métadonnées contextuelles est appliqué, sélectionnez l’onglet dans le  du. L’onglet est ajouté à la page Propriétés.
 
-![sélectionnez un onglet dans le de métadonnées contextuelles à afficher sur la page de propriétés.](assets/contextual-metadata-asset-properties.png)
+![L’onglet sélectionné dans le de métadonnées contextuelles s’affiche sur la page des propriétés des ressources.](assets/contextual-metadata-asset-properties.png)
 
 *Figure : Métadonnées contextuelles dans la page des propriétés des ressources*
 
@@ -173,15 +171,15 @@ Au lieu de définir les propriétés des options sous l’onglet **[!UICONTROL P
 
 #### Ajout ou suppression d’un onglet dans le formulaire de schéma {#adding-deleting-a-tab-in-the-schema-form}
 
-L’éditeur de schéma vous permet d’ajouter ou de supprimer un onglet. Le formulaire de schéma par défaut inclut les onglets **[!UICONTROL De base]**, **[!UICONTROL Avancé]**, **[!UICONTROL IPTC]** et **[!UICONTROL Extension IPTC]** par défaut.
+L’éditeur de schéma vous permet d’ajouter ou de supprimer un onglet. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
 
-![chlimage_1-45](assets/chlimage_1-181.png)
+![Onglets par défaut dans le de métadonnées  formulaire](assets/chlimage_1-181.png)
 
 Pour ajouter un onglet à un schéma de formulaire, cliquez sur `+`. Par défaut, le nouvel onglet porte le nom `Unnamed-1`. Vous pouvez modifier le nom dans l’onglet **[!UICONTROL Paramètres.]**
 
 Pour supprimer un onglet, cliquez sur `X`.
 
-![chlimage_1-46](assets/chlimage_1-182.png)
+![Ajouter ou supprimer un onglet à l’aide de l’éditeur de de métadonnées](assets/chlimage_1-182.png)
 
 ## Suppression de formulaires de schéma de métadonnées {#delete-metadata-schema-forms}
 
@@ -189,7 +187,8 @@ AEM vous permet uniquement de supprimer des formulaires de schéma personnalisé
 
 Pour supprimer un formulaire, sélectionnez-le puis cliquez sur l’icône Supprimer.
 
-![chlimage_1-47](assets/chlimage_1-183.png)
+![Icône Supprimer permettant de supprimer le de métadonnées personnalisé  le formulaire](assets/chlimage_1-183.png)
+
 <!--![chlimage_1-47](assets/chlimage_1-177.png) -->
 >[!NOTE]
 >
@@ -213,7 +212,7 @@ Vous pouvez utiliser un modèle existant pour un autre type MIME. Par exemple, u
 
 Dans ce cas, créez un nœud sous `/etc/dam/metadataeditor/mimetypemappings` dans le référentiel CRX. Indiquez un nom pour le nœud et définissez les propriétés suivantes :
 
-| Nom | Description | Type | Valeur |
+| Name (Nom) | Description | Type | Valeur |
 |---|---|---|---|
 | `exposedmimetype` | Nom du formulaire existant à associer | `String` | `image/jpeg` |
 | `mimetypes` | Liste des types MIME qui utilisent le formulaire défini dans l’attribut `exposedmimetype`. | `String` | `image/png` |
@@ -254,26 +253,26 @@ Si le dossier contient un sous-dossier, les ressources du sous-dossier héritent
 
 1. Cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
 1. Cochez la case en regard d’un formulaire, par exemple le formulaire de métadonnées par défaut, puis cliquez ou appuyez sur l’icône Copier et enregistrez-le en tant que formulaire personnalisé. Spécifiez un nom personnalisé pour le formulaire, par exemple `my_default`. Vous pouvez également créer un formulaire personnalisé.
-   ![chlimage_1-184](assets/chlimage_1-184.png)
+   ![Icône Copier pour copier un formulaire par défaut et l’enregistrer sous forme de formulaire personnalisé dans le de métadonnées  page Formulaires](assets/chlimage_1-184.png)
 
 1. Sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**, sélectionnez le formulaire `my_default`, puis cliquez sur l’icône **[!UICONTROL Modifier]**.
 
-   ![chlimage_1-49](assets/chlimage_1-185.png)
+   ![Icône Modifier pour ouvrir l’éditeur de de métadonnées et modifier un formulaire](assets/chlimage_1-185.png)
 
 1. Sur la page **[!UICONTROL Éditeur de schéma de métadonnées]**, ajoutez un champ de texte au formulaire de schéma. Par exemple, ajoutez un champ avec le libellé **[!UICONTROL Catégorie]**.
 
-   ![ajouter un champ de texte au de métadonnées  l’éditeur de formulaire](assets/text-field-metadata-schema-editor.png)
+   ![Champ de texte ajouté au de métadonnées  Editeur de formulaire](assets/text-field-metadata-schema-editor.png)
 
    *Figure : Champ de texte ajouté au de métadonnées  éditeur de formulaire*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**.
 1. Cliquez/appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 
-   ![chlimage_1-51](assets/chlimage_1-187.png)
+   ![Appliquer à l’icône Dossiers pour appliquer des métadonnées personnalisées aux dossiers](assets/chlimage_1-187.png)
 
 1. Sélectionnez le dossier auquel appliquer le schéma modifié, puis cliquez/appuyez sur **[!UICONTROL Appliquer]**.
 
-   ![chlimage_1-52](assets/chlimage_1-188.png)
+   ![Sélectionner le dossier pour appliquer le de métadonnées](assets/chlimage_1-188.png)
 
 1. Si d’autres métadonnées sont appliquées au dossier, un message s’affiche pour vous avertir que vous êtes sur le point de remplacer le schéma de métadonnées existant. Cliquez sur **Remplacer**.
 1. Cliquez sur **OK** pour fermer le message de confirmation.
@@ -290,21 +289,21 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 1. Cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
 1. Enregistrez le formulaire de métadonnées par défaut en tant que formulaire personnalisé. Par exemple, enregistrez-le sous le nom `my_default`.
 
-   ![chlimage_1-53](assets/chlimage_1-189.png)
+   ![Formulaire de métadonnées par défaut enregistré sous forme de formulaire personnalisé](assets/chlimage_1-189.png)
 
 1. Modifiez le formulaire personnalisé. Ajoutez un champ obligatoire. Par exemple, ajoutez un champ **[!UICONTROL Catégorie]** et rendez-le obligatoire.
 
-   ![ajouter un champ au formulaire de métadonnées et sélectionner Obligatoire dans l’onglet Règles pour le rendre obligatoire](assets/mandatory-field-metadata-schema-editor.png)
+   ![Ajouter champ obligatoire au formulaire de métadonnées en sélectionnant Obligatoire dans l’onglet Règles du de métadonnées  Editeur de formulaire](assets/mandatory-field-metadata-schema-editor.png)
 
    *Figure : Champ obligatoire dans le de métadonnées  l’éditeur de formulaire*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées.]** Sélectionnez le formulaire et cliquez/appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 
-   ![chlimage_1-55](assets/chlimage_1-191.png)
+   ![Icône Appliquer aux dossiers pour appliquer un formulaire de métadonnées personnalisé au dossier](assets/chlimage_1-191.png)
 
 1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message concernant les métadonnées manquantes pour le champ obligatoire apparaît dans l’affichage Carte de la ressource.
 
-   ![chlimage_1-56](assets/chlimage_1-192.png)
+   ![Message signalant l’absence de métadonnées obligatoires sur le de cartes de ressources lors du téléchargement de fichiers dans un dossier](assets/chlimage_1-192.png)
 
 1. (Facultatif) Accédez à `https://[server]:[port]/system/console/components/`. Configurez et activez le composant `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` ; celui-ci est désactivé par défaut. Définissez la fréquence à laquelle AEM vérifie la validité des métadonnées sur les ressources.
 
