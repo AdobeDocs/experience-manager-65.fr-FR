@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
+source-git-commit: 28354bd9785fa83939f9e3b051aac195d7706633
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Experience Manager (AEM) Assets est configuré avec Brand Portal via A
 >
 >***Pour les clients existants uniquement***
 >
->Il est recommandé de continuer à utiliser la configuration héritée de la passerelle OAuth. Si vous rencontrez des problèmes avec la configuration héritée de la passerelle OAuth, supprimez la configuration existante et créez une nouvelle configuration via les E/S Adobe.
+>Il est recommandé de continuer à utiliser la configuration de la passerelle OAuth héritée. Si vous rencontrez des problèmes avec la configuration héritée de la passerelle OAuth, supprimez la configuration existante et créez une configuration via Adobe I/O.
 
 
 
@@ -57,23 +57,23 @@ Pour configurer AEM Assets avec Brand Portal, vous devez disposer des élémen
 
 [Téléchargement et installation d’AEM 6.5](#aemquickstart)
 
-[Téléchargement et installation de la dernière version d’AEM Service Pack](#servicepack)
+[Télécharger et installer le dernier Service Pack AEM](#servicepack)
 
 ### Téléchargement et installation d’AEM 6.5 {#aemquickstart}
 
-Il est recommandé d’avoir AEM 6.5 pour configurer une instance d’auteur AEM. Si AEM n’est pas en cours d’exécution, téléchargez-le à partir des emplacements suivants :
+Il est recommandé d’avoir AEM 6.5 pour configurer une instance d’auteur AEM. Si vous ne l’avez pas, téléchargez-le à partir des emplacements suivants :
 
-* Si vous êtes déjà client AEM, téléchargez AEM 6.5 depuis le site Web [d’achat de licences](http://licensing.adobe.com)Adobe.
+* If you are an existing AEM customer, download AEM 6.5 from [Adobe Licensing website](http://licensing.adobe.com).
 
-* Si vous êtes un partenaire Adobe, utilisez le [de formation des partenaires](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) Adobe pour demander AEM 6.5.
+* If you are an Adobe partner, use [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) to request AEM 6.5.
 
-Après avoir téléchargé AEM, pour obtenir des instructions sur la configuration d’une instance d’auteur AEM, voir [Déploiement et maintenance](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall).
+Après avoir téléchargé AEM, consultez la page [Déploiement et maintenance](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall) pour obtenir des instructions sur la configuration d’une instance d’auteur AEM.
 
-### Download and install AEM latest Service Pack {#servicepack}
+### Télécharger et installer le dernier Service Pack AEM {#servicepack}
 
 Pour obtenir des instructions détaillées, voir
 
-* [Notes de mise à jour d’AEM 6.5, Pack de services ](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)
+* [Notes de mise à jour d’AEM 6.5, Pack de services ](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html)
 
 **Contactez l’assistance** si vous ne parvenez pas à trouver le dernier package AEM ou le Service Pack.
 
@@ -81,7 +81,7 @@ Pour obtenir des instructions détaillées, voir
 
 Effectuez les étapes suivantes dans la séquence répertoriée si vous configurez AEM Assets avec Brand Portal pour la première fois :
 1. [Obtention d’un certificat public](#public-certificate)
-1. [Création de l’intégration Adobe I/O](#createnewintegration)
+1. [Créer l’intégration Adobe I/O](#createnewintegration)
 1. [Créer une configuration de compte IMS](#create-ims-account-configuration)
 1. [Configuration du service cloud](#configure-the-cloud-service)
 1. [Configuration du test](#test-integration)
@@ -120,7 +120,7 @@ Le certificat public vous permet d’authentifier vos  d’sur les E/S Adobe.
 
    ![Créer un certificat](assets/ims-config2.png)
 
-1. Cliquez sur **[!UICONTROL Télécharger la clé]** publique et enregistrez le fichier de certificat *AEM-Adobe-IMS.crt* sur votre ordinateur. Le fichier de certificat est utilisé pour [créer l’intégration](#createnewintegration)d’E/S Adobe.
+1. Click **[!UICONTROL Download Public Key]** and save the *AEM-Adobe-IMS.crt* certificate file on your machine. The certificate file is used to [create Adobe I/O integration](#createnewintegration).
 
    ![Télécharger le certificat](assets/ims-config3.png)
 
@@ -130,7 +130,7 @@ Le certificat public vous permet d’authentifier vos  d’sur les E/S Adobe.
 
    Ouvrez un nouvel onglet et [créez une intégration](#createnewintegration) d’E/S Adobe pour obtenir les détails d’intégration des configurations de compte IMS.
 
-### Création de l’intégration Adobe I/O {#createnewintegration}
+### Créer l’intégration Adobe I/O {#createnewintegration}
 
 L’intégration des E/S Adobe génère une clé d’API, une clé secrète client et une charge utile (JWT) requises pour configurer les configurations de compte IMS.
 
@@ -150,23 +150,23 @@ L’intégration des E/S Adobe génère une clé d’API, une clé secrète clie
 
    Dans **[!UICONTROL Experience Cloud]**, sélectionnez **[!UICONTROL AEM Brand Portal]** et cliquez sur **[!UICONTROL Continuer]**.
 
-   Si l’option Portail de marque est désactivée pour vous, vérifiez que vous avez sélectionné l’organisation appropriée dans la liste déroulante au-dessus de l’option Services **** Adobe. Si vous ne connaissez pas votre organisation, contactez votre administrateur.
+   If the Brand Portal option is disabled for you, ensure that you have selected correct organization from the drop-down box above the **[!UICONTROL Adobe Services]** option. Si vous ne connaissez pas le nom de votre entreprise, contactez votre administrateur.
 
    ![Créer une intégration](assets/create-new-integration2.png)
 
-1. Indiquez un nom et une description pour l’intégration. Cliquez sur **[!UICONTROL Sélectionner un fichier sur votre ordinateur]** et téléchargez le `AEM-Adobe-IMS.crt` fichier téléchargé dans la section [Obtenir des certificats](#public-certificate) publics.
+1. Indiquez un nom et une description pour l’intégration. Click **[!UICONTROL Select a File from your computer]** and upload the `AEM-Adobe-IMS.crt` file downloaded in the [obtain public certificates](#public-certificate) section.
 
 1. Sélectionnez le  de votre organisation.
 
-   Ou bien, sélectionnez le portail **[!UICONTROL des marques]** Ressources par défaut et cliquez sur **[!UICONTROL Créer une intégration]**. L’integration est créée.
+   Ou bien, sélectionnez le portail **[!UICONTROL des marques]** Ressources par défaut et cliquez sur **[!UICONTROL Créer une intégration]**. L’intégration est alors créée.
 
-1. Cliquez sur **[!UICONTROL Continuer pour accéder aux détails]** de l’intégration afin d’ les informations d’intégration.
+1. Click **[!UICONTROL Continue to integration details]** to view the integration information.
 
    Copie de la clé **[!UICONTROL API]**
 
    Cliquez sur **[!UICONTROL Récupérer la clé secrète]** du client et copiez la clé secrète du client.
 
-   ![Clé d’API, clé secrète client et informations de charge utile d’une intégration](assets/create-new-integration3.png)
+   ![Clé API, secret client et informations de charge utile d’une intégration](assets/create-new-integration3.png)
 
 1. Accédez à l’onglet **[!UICONTROL JWT]** et copiez la charge **** JWT.
 
@@ -177,11 +177,11 @@ L’intégration des E/S Adobe génère une clé d’API, une clé secrète clie
 Vérifiez que vous avez effectué les étapes suivantes :
 
 * [Obtention d’un certificat public](#public-certificate)
-* [Création de l’intégration Adobe I/O](#createnewintegration)
+* [Créer l’intégration Adobe I/O](#createnewintegration)
 
 **Procédure de création de la configuration du compte IMS :**
 
-1. Ouvrez la page Configuration IMS, onglet **[!UICONTROL Comptes]** . Vous avez gardé la page ouverte à la fin de la section, [Obtenez un certificat](#public-certificate)public.
+1. Ouvrez la page Configuration IMS, onglet **[!UICONTROL Comptes]** . Vous avez gardé la page ouverte à la fin de la section [Obtenir des certificats publics](#public-certificate).
 
 1. Spécifiez un **[!UICONTROL titre]** pour le compte IMS.
 
@@ -196,15 +196,15 @@ Vérifiez que vous avez effectué les étapes suivantes :
    ![Configuration du compte IMS](assets/create-new-integration6.png)
 
 
-1. Sélectionnez la configuration IMS et cliquez sur **[!UICONTROL Vérifier l’intégrité]**. Une boîte de dialogue s’affiche.
+1. Select the IMS configuration and click **[!UICONTROL Check Health]**. Une boîte de dialogue s’affiche.
 
-   Cliquez sur **[!UICONTROL Vérifier]**. Une fois la connexion établie, le message *Jeton récupéré* s’affiche.
+   Cliquez sur **[!UICONTROL Vérifier]**. Une fois la connexion établie, le message *Token retrieved successfully* (Jeton récupéré) s’affiche.
 
    ![](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
->Créez une seule configuration IMS valide. Ne créez pas plusieurs configurations IMS.
+>Créez une seule configuration IMS valide.
 >
 > Assurez-vous que la configuration est saine. Au cas où la configuration serait malsaine, supprimez-la et créez une nouvelle configuration saine.
 
@@ -230,7 +230,7 @@ Effectuez les étapes suivantes pour créer la configuration du service cloud de
 
    ![](assets/create-cloud-service.png)
 
-1. Click **[!UICONTROL Save and Close]**. La configuration du cloud est créée. Votre instance d’auteur AEM Assets est maintenant intégrée au client du portail de marque.
+1. Click **[!UICONTROL Save and Close]**. La configuration cloud est alors créée. Votre instance d’auteur AEM Assets est maintenant intégrée au client du portail de marque.
 
 ### Test configuration {#test-integration}
 
