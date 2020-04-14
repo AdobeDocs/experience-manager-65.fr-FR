@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -50,7 +50,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    * **Dictionnaire de données** : Si vous le souhaitez, sélectionnez le dictionnaire de données auquel mapper l’actif. Cet attribut vous permet d’ajouter dans l’actif de texte des références à des éléments du dictionnaire de données.
    * **Balises** : Eventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
 
-1. Appuyez sur **Suivant**. Correspondence Management affiche la page Editeur dans laquelle vous pouvez ajouter des paragraphes de texte et des éléments de données au texte.
+1. Appuyez sur **Next** (Suivant). Correspondence Management affiche la page Editeur dans laquelle vous pouvez ajouter des paragraphes de texte et des éléments de données au texte.
 
    Le vérificateur orthographique par défaut dans les vérifications orthographiques des navigateurs dans l’éditeur de texte. Pour gérer les vérifications d’orthographe et de grammaire, vous pouvez modifier les paramètres du vérificateur orthographique de votre navigateur ou installer des modules/adjonctions externes de navigateur pour vérifier l’orthographe et la grammaire.
 
@@ -130,7 +130,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    Vous pouvez également utiliser le symbole @ pour rechercher et ajouter des éléments de dictionnaire de données et d’espace réservé dans l’éditeur de texte. Placez le curseur à l’endroit où vous souhaitez insérer l’élément. Tapez @ suivi de la chaîne de recherche. L’éditeur de texte effectue l’opération de recherche sur tous les éléments de dictionnaire de données et d’espace réservé disponibles dans le fragment de  texte. L’opération de recherche récupère et affiche les éléments contenant la chaîne de recherche sous la forme d’un  déroulant. Parcourez les résultats de la recherche et cliquez sur l’élément à insérer à l’emplacement du curseur. Appuyez sur Echap pour masquer les résultats de la recherche.
 
 1. Vous pouvez utiliser des conditions intégrés et la répétition afin que votre lettre soit hautement contextuelle et parfaitement structurée. For more information on inline condition and repeat, see [Inline conditions and repeat in letters](/help/forms/using/cm-inline-condition.md).
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 #### Insertion d’un hyperlien dans un texte {#insert-hyperlink}
 
@@ -237,7 +237,7 @@ Une liste est un groupe de contenus associés pouvant être utilisés dans un mo
    * **Dictionnaire de données (facultatif)**: Si vous le souhaitez, sélectionnez le dictionnaire de données auquel vous connecter. Seuls peuvent être ajoutés à la liste les actifs qui utilisent le même dictionnaire de données que la liste ou les actifs auxquels aucun dictionnaire de données n’a été affecté. L’affectation d’un dictionnaire de données à une liste permet à une personne créant un modèle de lettre de trouver facilement la liste appropriée.
    * **Balises (facultatif)**: Sélectionnez les balises à appliquer. Vous pouvez également taper un nouveau nom d’étiquette pour créer une étiquette. (The new tag is created when you tap **Save**.)
 
-1. Appuyez sur **Suivant**.
+1. Appuyez sur **Next** (Suivant).
 1. Tap **Add Asset**.
 1. To add assets to the list, select them in the Select Assets page and tap **Done**.
 
@@ -269,7 +269,7 @@ To change the order of the assets within the list, tap and hold the arrows icon 
    * **Ignorer le style de liste** : Si l’option Numérotation composée est désélectionnée, l’option Ignorer le style de liste est activée. Cette sélection ignore le style de la liste imbriquée et la numérotation continue à partir de la liste extérieure. Par conséquent, les modules de la liste imbriquée sont traités en tant que partie intégrante de la liste extérieure et tous les styles spécifiés dans la liste imbriquée sont ignorés. Si l’option Ignorer le style de liste est désactivée pour une liste imbriquée, les modules qui font partie de cette liste imbriquée ont leur propre style de numérotation.
    * **Sous-formulaire solidaire :** Définit le saut de page des actifs d’une liste. Si vous définissez la propriété Sous-formulaire solidaire pour l’un des actifs d’une liste sur **On**, cet actif et l’actif suivant resteront sur la même page. Le contenu de l’actif sélectionné et de l’actif suivant ne sera pas fractionné sur plusieurs pages.
 
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 ### Meilleures pratiques/conseils et astuces {#best-practices-tips-and-tricks}
 
@@ -307,7 +307,7 @@ L’Editeur de condition vous permet de spécifier une condition par défaut. Si
    * **Dictionnaire de données (facultatif)**: Si vous le souhaitez, sélectionnez le dictionnaire de données auquel vous connecter. Seuls peuvent être ajoutés à la liste les actifs qui utilisent le même dictionnaire de données que la condition ou les actifs auxquels aucun dictionnaire de données n’a été affecté. L’affectation d’un dictionnaire de données à une liste permet à une personne créant un modèle de lettre de trouver facilement la condition appropriée.
    * **Balises (facultatif)**: Si vous le souhaitez, sélectionnez les balises à appliquer. Vous pouvez également taper un nouveau nom d’étiquette pour créer une étiquette. (The new tag is created when you tap **Save**.)
 
-1. Appuyez sur **Suivant**.
+1. Appuyez sur **Next** (Suivant).
 1. Tap **Add Asset**.
 1. To add an asset to the Condition, select it in the Select Assets page and tap **Done**. Les actifs sont ajoutés au volet Expression.
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
@@ -407,9 +407,9 @@ For a detailed example of using static and dynamic tables in layout fragments, s
    * **Pied de page** : Le texte à afficher pour le pied de page.
    * **Type** : Le type de colonne supplémentaire : champ ou zone cible. L’option Type est activée pour les tableaux d’espaces réservés statiques. Elle peut être définie au niveau colonne et non au niveau cellule. Toutes les cellules d’une colonne étendue seront du même type. Dans le cas d’un tableau dynamique, toutes les colonnes sont de type champ. Dans le cas de tableaux autres qu’espaces réservées, vous ne pouvez pas définir le type des colonnes supplémentaires. Dans ce cas, les cellules supplémentaires d’une colonne étendue sont du même type que celles de la dernière colonne de la ligne et le type des cellules d’une ligne supplémentaire est identique à celui de la dernière cellule de la colonne.
    * **Rapport largeur/hauteur** : Le ratio des largeurs des colonnes du tableau. 
-   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#main-pars-header-28).
+   For a detailed example of using static and dynamic tables in layout fragments, see [Example with sample files: using static and dynamic tables in a letter](#examplewithsamplefiles).
 
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 ### Télécharger un fichier XDP vers Correspondence Management {#upload-an-xdp-to-correspondence-management}
 
