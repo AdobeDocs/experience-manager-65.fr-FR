@@ -3,7 +3,7 @@ title: Activation de la détection des ressources en double
 description: Découvrez comment activer la détection des ressources en double dans AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -14,15 +14,15 @@ Si vous essayez de transférer une ressource qui existe dans Adobe Experience Ma
 
 1. Ouvrez la page de configuration de la console Web AEM en accédant à `https://[aem_server]:[port]/system/console/configMgr`.
 1. Edit the configuration for the servlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Select the **[!UICONTROL detect duplicate]** option, and click/tap **[!UICONTROL Save]**.
+1. Select the **[!UICONTROL detect duplicate]** option, and click **[!UICONTROL Save]**.
 
    ![Sélection de l’option de détection des doublons dans le servlet](assets/chlimage_1-377.png)
 
-   *Figure : Sélectionnez l’option de détection des doublons dans la servlet.*
+   *Figure : Sélectionnez l’option de détection  dans la servlet.*
 
 La fonctionnalité de détection des doublons est maintenant activée dans AEM Assets. Lorsqu’un utilisateur tente de télécharger un fichier qui existe dans AEM, le système recherche un éventuel conflit et le signale. The assets are identified using SHA-1 hash stored at `jcr:content/metadata/dam:sha1`, which means duplicate assets are detected irrespective of the filenames.
 
 >[!MORELIKETHIS]
 >
->* [Dupliquer des ressources dans le référentiel existant (didacticiel d’un membre de la communauté)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [de ressources dans le référentiel existant (didacticiel d’un membre de la communauté)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
 
