@@ -3,7 +3,7 @@ title: Installation et configuration d’ImageMagick pour une utilisation avec A
 description: Découvrez le logiciel ImageMagick, comment l’installer, configurer l’étape de processus de ligne de commande et l’utiliser pour modifier, composer et générer des miniatures à partir d’images.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -34,7 +34,7 @@ Plusieurs versions des fichiers d’installation d’ImageMagic sont disponibles
 
 Vous pouvez configurer l’étape de processus de ligne de commande en fonction de votre cas d’utilisation. Perform these steps to generate a flipped image and thumbnails (140x100, 48x48, 319x319, and 1280x1280) each time you add a JPEG image file to `/content/dam` on the AEM server:
 
-1. On the AEM server, go to the Workflow console ( `https://[*AEM server*]:[*Port*]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
+1. On the AEM server, go to the Workflow console (`https://[aem_server]:[port]/workflow`) and open the **[!UICONTROL DAM Update Asset]** workflow model.
 1. From the **[!UICONTROL DAM Update Asset]** workflow model, open the **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** step.
 1. In the **[!UICONTROL Arguments tab]**, add `image/jpeg` to the **[!UICONTROL Mime Types]** list.
 
@@ -48,11 +48,11 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
    ![select_flags](assets/select_flags.png)
 
-1. Sous l’onglet **[!UICONTROL Image web]**, spécifiez les détails du rendu avec des dimensions de 1 280 x 1 280 pixels. In addition, specify i *mage/jpeg* in the **[!UICONTROL Mimetype]** box.
+1. Sous l’onglet **[!UICONTROL Image web]**, spécifiez les détails du rendu avec des dimensions de 1 280 x 1 280 pixels. Spécifiez également `image/jpeg` dans la zone **[!UICONTROL Mimetype]** .
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Pour enregistrer les modifications, appuyez/cliquez sur **[!UICONTROL OK]**.
+1. Pour enregistrer les modifications, cliquez sur **[!UICONTROL OK.]**
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Vous pouvez configurer l’étape de processus de ligne de commande en fonction 
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Pour enregistrer les modifications, appuyez/cliquez sur **[!UICONTROL OK]**.
+1. In the **[!UICONTROL Web Enabled Image]** tab, add the MIME type `image/jpeg` under the **[!UICONTROL Skip List]**. Pour enregistrer les modifications, cliquez sur **[!UICONTROL OK.]**
 
    ![web_enabled](assets/web_enabled.png)
 
