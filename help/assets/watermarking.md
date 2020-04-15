@@ -1,9 +1,9 @@
 ---
-title: Ajoutez un filigrane à vos ressources numériques.
+title: Ajout d’un filigrane à vos ressources numériques.
 description: Découvrez comment utiliser la fonctionnalité d’application d’un filigrane pour ajouter un filigrane numérique aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,7 +19,8 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 
 1. From the side panel, drag the **[!UICONTROL Add Watermark]** step to the [!UICONTROL DAM Update Asset] workflow.
 
-   ![Faites glisser l’étape Ajouter un filigrane et ajoutez-la au processus de mise à jour de la ressource DAM.](assets/add_watermark_step_aem_assets.png)
+   ![Faites glisser l’étape [!UICONTROL AjouterFiligrane] et ajoutez-la au flux de travail [!UICONTROL de mise à jour des ressources]](assets/add_watermark_step_aem_assets.png)DAM2
+   *Figure : Faites glisser l’étape[!UICONTROL AjouterFiligrane]et ajoutez-la au processus de mise à jour des ressourcesDAM.*
 
    >[!NOTE]
    >
@@ -30,5 +31,7 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 
    ![Indiquer les arguments dans l’étape Ajouter un filigrane dans Assets](assets/arguments_add_watermark_aem_assets.png)
 
+   *Figure : Fournissez les arguments de l’étape d’ajout de filigrane dans Ressources*
+
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
-1. Dans l’interface utilisateur Ressources, téléchargez un exemple de fichier. Le filigrane apparaît avec la taille de police, la couleur, etc., à l’emplacement configuré aux étapes ci-dessus.
+1. Dans l’interface utilisateur Assets, téléchargez un exemple de ressource. Le filigrane apparaît avec la taille de police, la couleur, etc., à l’emplacement configuré aux étapes ci-dessus.
