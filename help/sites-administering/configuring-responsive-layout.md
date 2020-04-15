@@ -1,8 +1,8 @@
 ---
 title: Configuration du conteneur et du mode de mises en page
 seo-title: Configuration du conteneur et du mode de mises en page
-description: Découvrez·comment·configurer·le·conteneur·et·le·mode·de·mises en page.
-seo-description: Découvrez·comment·configurer·le·conteneur·et·le·mode·de·mises en page.
+description: Découvrez comment configurer le  de mise en page et le mode de mise en page.
+seo-description: Découvrez comment configurer le  de mise en page et le mode de mise en page.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 710958ceecc8bbbbdae5e836ec0571a9eeaf6a9a
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >Ce mécanisme est comparable aux mécanismes de [web mobile](/help/sites-developing/mobile-web.md), qui utilisent la conception web adaptive (principalement pour l’interface utilisateur classique).
 
-AEM met en page en responsive design vos pages en combinant plusieurs mécanismes :
+AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* [**Composant Conteneur **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)de mise en page
+* Composant [**Conteneur de mises en page **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
    Ce composant fournit un système de paragraphes de grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme paramètre par défaut pour votre page et/ou mis à la disposition des auteurs dans l’explorateur de composants.
 
@@ -42,7 +42,7 @@ AEM met en page en responsive design vos pages en combinant plusieurs mécanisme
 
          Le conteneur de mises en page peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de mise en page Une fois le conteneur de mise en page positionné sur votre page, vous pouvez utiliser le mode **Mise en page**pour positionner le contenu dans la grille dynamique.
+* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de mise en page Une fois le de mise en page positionné sur votre page, vous pouvez utiliser le mode **Mise en page**pour positionner le contenu dans la grille dynamique.
 
 * [**Émulateur **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Permet de créer et de modifier des sites web en responsive design qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
@@ -55,7 +55,7 @@ Grâce à ces mécanismes de grille responsive, vous pouvez effectuer les opéra
 * Utilisez les points d’arrêt (qui indiquent le groupement des appareils) pour définir le comportement du contenu différent en fonction de la disposition de l’appareil.
 * Masquez des composants en fonction du groupe d’appareils (définissez le point d’arrêt où un composant est masqué).
 * Utilisez l’alignement horizontal sur la grille (placer les composants dans la grille, les redimensionner selon les besoins, définir quand ils doivent être réduits ou développés pour être côte à côte ou l’un au-dessus de l’autre) ;
-* Contrôler les colonnes.
+* contrôler les colonnes.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Si vous migrez un projet existant (avec du contenu existant), vous devez :
 >
 >* ajouter des points d’arrêt aux modèles ;
 >* ajouter les mêmes points d&#39;arrêt aux pages existantes
-   >  L’héritage étant en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
+   >  Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
 >
 
 
