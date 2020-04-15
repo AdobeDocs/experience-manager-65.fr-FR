@@ -1,61 +1,61 @@
 ---
-title: Profils de métadonnées pour personnaliser les exigences de métadonnées des fichiers
+title: de métadonnées pour personnaliser les exigences de métadonnées des ressources
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9658fbf8c918b9051a35e7477afa01af7722a662
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
 # Profils de métadonnées {#metadata-profiles}
 
-Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux fichiers d’un dossier. Créez un profil de métadonnées et appliquez-le à un dossier. Tout fichier que vous téléchargez ensuite vers le dossier hérite des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
+Un de métadonnées vous permet d’appliquer des métadonnées par défaut aux fichiers d’un dossier. Créez un de métadonnées et appliquez-le à un dossier. Tout fichier que vous téléchargez ensuite vers le dossier hérite des métadonnées par défaut que vous avez configurées dans le  de métadonnées.
 
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
-1. Accédez à **[!UICONTROL Outils > Ressources > Profils]** de métadonnées et appuyez sur **[!UICONTROL Créer]**.
+1. Accédez à **[!UICONTROL Outils > Ressources >]** de métadonnées et appuyez sur **[!UICONTROL Créer]**.
 1. Enter a title for the Metadata Profile, for example Sample Metadata, and tap **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
 
-1. Click a component and configure its properties in the **[!UICONTROL Settings]** tab. For example, click the **[!UICONTROL Description]** component and edit its properties.
+1. Cliquez sur un composant, puis configurez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**. Cliquez par exemple sur le composant **[!UICONTROL Description]** et modifiez ses propriétés.
 
    ![chlimage_1-198](assets/chlimage_1-481.png)
 
-   Edit the following properties for the **[!UICONTROL Description]** component:
+   Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]** :
 
-   * **[!UICONTROL Libellé]** de champ : nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre référence.
+   * **[!UICONTROL Libellé]** du champ : Nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre de référence.
 
-   * **[!UICONTROL Associer à la propriété]** : la valeur de cette propriété fournit le chemin/nom relatif au noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours commencer par `./` car elle indique que le chemin d’accès se trouve sous le noeud de la ressource.
+   * **[!UICONTROL Associer à la propriété]**: La valeur de cette propriété fournit le chemin/nom relatif au noeud de ressource où elle est enregistrée dans le référentiel. La valeur doit toujours  avec `./` car elle indique que le chemin d’accès se trouve sous le noeud de la ressource.
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
-   La valeur que vous spécifiez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le noeud de métadonnées du fichier. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom de la propriété **[!UICONTROL Associer à la propriété]**, AEM Assets stocke la valeur `dc:desc` au noeud de métadonnées de la ressource.
+   La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom pour **[!UICONTROL Associer à la propriété]**, AEM Assets stocke la valeur `dc:desc` comme nœud de métadonnées de la ressource.
 
-   * **[!UICONTROL Valeur]** par défaut - Utilisez cette propriété pour ajouter une valeur par défaut pour le composant de métadonnées. For example, if you specify &quot;My description&quot; then this value is assigned to the property `dc:desc` at the asset&#39;s metadata node.
+   * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
    ![chlimage_1-200](assets/chlimage_1-483.png)
 
    >[!NOTE]
    >
-   >Ajout d’une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas déjà dans la . `/jcr:content/metadata` ) n’affiche pas par défaut la propriété et sa valeur sur la page Propriétés du fichier. Pour afficher la nouvelle propriété sur la page [!UICONTROL Propriétés] des ressources, modifiez le formulaire de schéma correspondant.
+   >Si vous ajoutez une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas encore au niveau du nœud `/jcr:content/metadata`), la propriété et sa valeur ne s’affichent pas, par défaut, sur la page Propriétés de la ressource. To view the new property on the assets&#39; [!UICONTROL Properties] page, modify the corresponding schema form.
 
-1. (Optional) Add more components to the Edit Form from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
+1. (Facultatif) Ajoutez d’autres composants à la page Modifier le formulaire depuis l’onglet **[!UICONTROL Créer le formulaire]**, puis configurez leurs propriétés dans l’onglet **[!UICONTROL Paramètres]**. Les propriétés suivantes sont disponibles à partir de l’onglet **[!UICONTROL Créer le formulaire]** :
 
-| Component | Propriétés |
+| Composant | Propriétés |
 |---|---|
-| [!UICONTROL En-tête de section] | Libellé de champ, <br> description |
-| [!UICONTROL Une seule ligne de texte] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Texte à plusieurs valeurs] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Nombre] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Date] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut |
-| [!UICONTROL Balises standard] | Libellé de champ, <br> Associer à la propriété, <br> Valeur par défaut, <br> Description |
+| [!UICONTROL En-tête de section] | Field Label, <br> Description |
+| [!UICONTROL Une seule ligne de texte] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Texte à plusieurs valeurs] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Nombre] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Date] | Field Label, <br> Map to property, <br> Default Value |
+| [!UICONTROL Balises standard] | Field Label, <br> Map to property, <br> Default Value, <br> Description |
 
 ![chlimage_1-201](assets/chlimage_1-484.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Terminé]**. The Metadata Profile is added to the list of profiles in the **[!UICONTROL Metadata Profiles]** page.<br>
+1. Appuyez/cliquez sur **[!UICONTROL Terminé]**. Le profil de métadonnées est ajouté à la liste des profils de la page **[!UICONTROL Profils de métadonnées]**.<br>
 
 
-   ![Profil de métadonnées ajouté dans la page Profils de métadonnées](assets/MetadataProfiles-page.png)
+   ![de métadonnées ajouté dans la page  du de métadonnées](assets/MetadataProfiles-page.png)
 
 ## Copie d’un profil de métadonnées {#copying-a-metadata-profile}
 
@@ -64,21 +64,21 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
    ![chlimage_1-203](assets/chlimage_1-486.png)
 
 1. Appuyez sur **[!UICONTROL Copier]** dans la barre d’outils.
-1. Dans la boîte de dialogue **[!UICONTROL Copier le profil de métadonnées]**, saisissez un nom pour la nouvelle copie du profil de métadonnées.
-1. Appuyez sur **[!UICONTROL Copier]**. The copy of the Metadata Profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
+1. Dans la boîte de dialogue **[!UICONTROL Copier le profil de métadonnées]**, saisissez le nom de la nouvelle copie du profil de métadonnées.
+1. Appuyez sur **[!UICONTROL Copier]**. La copie du profil de métadonnées apparaît dans la liste des profils de la page **[!UICONTROL Profils de métadonnées]**.
 
-   ![Une copie du profil de métadonnées ajouté dans la page Profils de métadonnées](assets/copy-metadata-profile.png)
+   ![Une copie du de métadonnées  ajoutée à la page du de métadonnées](assets/copy-metadata-profile.png)
 
 ## Suppression d’un profil de métadonnées {#deleting-a-metadata-profile}
 
-1. From the **[!UICONTROL Metadata Profiles]** page, select a profile to delete.
+1. Dans la page **[!UICONTROL Profils de métadonnées]**, sélectionnez un profil à supprimer.
 
    ![chlimage_1-205](assets/chlimage_1-488.png)
 
 1. Ta[] **[!UICONTROL Delete Metadata Profiles]** in the toolbar.
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Supprimer]** pour confirmer l’opération de suppression. Le profil de métadonnées est supprimé de la liste.
 
-## Apply a metadata profile to folders {#applying-a-metadata-profile-to-folders}
+## Application d’un profil de métadonnées à des dossiers {#applying-a-metadata-profile-to-folders}
 
 Lorsque vous affectez un profil de métadonnées à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil de métadonnées à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
 
@@ -90,31 +90,31 @@ Les dossiers auxquels un profil est affecté sont indiqués dans l’interface u
 
 Vous pouvez appliquer des profils de métadonnées à des dossiers spécifiques ou à l’ensemble des ressources.
 
-Vous pouvez retraiter des fichiers dans un dossier qui comporte déjà un profil de métadonnées existant que vous avez modifié ultérieurement. Reportez-vous à [Retraitement des fichiers dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
+Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié ultérieurement. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
-### Apply metadata profiles to specific folders {#applying-metadata-profiles-to-specific-folders}
+### Application de profils de métadonnées à des dossiers spécifiques {#applying-metadata-profiles-to-specific-folders}
 
-Vous pouvez appliquer un profil de métadonnées à un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Propriétés]**. Cette section explique comment appliquer des profils de métadonnées à des dossiers de deux manières différentes.
+Vous pouvez appliquer un profil de métadonnées à un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils de métadonnées aux dossiers des deux manières.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-Vous pouvez retraiter des fichiers dans un dossier contenant déjà un profil vidéo existant que vous avez modifié ultérieurement. Reportez-vous à [Retraitement des fichiers dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
+Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
-#### Apply metadata profiles to folders from Profiles user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+#### Application de profils de métadonnées à des dossiers à partir de l’interface utilisateur des profils {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-Pour appliquer un profil de métadonnées, procédez comme suit :
+Pour appliquer le de métadonnées, procédez comme suit :
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
 
-1. Tap **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Done]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Appuyez sur **[!UICONTROL Appliquer le profil de métadonnées au ou aux dossiers]** et sélectionnez ensuite le(s) dossier(s) que vous souhaitez utiliser pour recevoir les ressources récemment chargées. Ensuite, appuyez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-#### Apply metadata profiles to folders from Properties {#applying-metadata-profiles-to-folders-from-properties}
+#### Application de profils de métadonnées aux dossiers à partir des propriétés {#applying-metadata-profiles-to-folders-from-properties}
 
-1. In the left rail, tap **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
-1. On the folder, tap or click the check mark to select it and then tap or click **[!UICONTROL Properties]**.
+1. Dans le rail de gauche, appuyez sur **[!UICONTROL Ressources]**, puis accédez au dossier auquel vous souhaitez appliquer un profil de métadonnées.
+1. Dans le dossier, appuyez ou cliquez sur la coche afin de la sélectionner, puis appuyez ou cliquez sur **[!UICONTROL Propriétés]**.
 
 1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the drop-down menu and tap **[!UICONTROL Save]**.
 
@@ -122,19 +122,19 @@ Pour appliquer un profil de métadonnées, procédez comme suit :
 
    Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-### Apply a metadata profile globally {#applying-a-metadata-profile-globally}
+### Application d’un profil de métadonnées à l’ensemble des ressources {#applying-a-metadata-profile-globally}
 
-En plus d’appliquer un profil à un dossier, vous pouvez également en appliquer un de façon globale, de sorte que tout contenu transféré dans AEM Assets soit traité par ce profil, indifféremment du dossier.
+En plus d’appliquer un profil à un dossier, vous pouvez en appliquer un de façon globale, de sorte que tout contenu chargé dans AEM Assets soit traité par ce profil, indifféremment du dossier.
 
-Vous pouvez retraiter des fichiers dans un dossier qui comporte déjà un profil de métadonnées existant que vous avez modifié ultérieurement. Reportez-vous à [Retraitement des fichiers dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
+Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié ultérieurement. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
-**Pour appliquer un profil de métadonnées globalement, effectuez l’une des opérations suivantes :**
+**Pour appliquer un profil de façon globale, effectuez l’une des opérations suivantes :**
 
 * Accédez à `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` et appliquez le profil approprié, puis appuyez sur **[!UICONTROL Enregistrer]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Ajoutez la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` et appuyez sur **Enregistrer tout**.
+* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` et appuyez sur **Tout enregistrer**.
 
    ![chlimage_1-210](assets/chlimage_1-493.png)
 
@@ -142,24 +142,24 @@ Vous pouvez retraiter des fichiers dans un dossier qui comporte déjà un profil
 
 Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-dossier hérite automatiquement de la suppression du profil de son dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
-You can remove a metadata profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. Cette section explique comment supprimer des profils de métadonnées des dossiers de deux manières différentes.
+Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Propriétés]**. Cette section décrit comment supprimer des profils de métadonnées des dossiers des deux manières.
 
 ### Remove metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Tap or click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Appuyez ou cliquez sur le logo AEM et accédez à **[!UICONTROL Outils > Ressources > Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
-1. Tap **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and tap **[!UICONTROL Done]**.
+1. Appuyez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]** et sélectionnez ensuite le(s) dossier(s) duquel (desquels) vous souhaitez supprimer le profil. Ensuite, appuyez sur **[!UICONTROL Terminé]**.
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil de métadonnées n’est plus appliqué à un dossier.
 
 ### Remove metadata profiles from folders via Properties {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Tap the AEM logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an metadata profile from.
-1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
+1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Ressources]** et au dossier duquel vous souhaitez supprimer un profil de métadonnées.
+1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant, et cliquez sur **[!UICONTROL Enregistrer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 >[!MORELIKETHIS]
 >
->* [Profils de traitement des métadonnées, images et vidéos](processing-profiles.md)
->* [Bonnes pratiques pour organiser vos ressources numériques afin d’utiliser les profils de traitement](/help/assets/organize-assets.md)
+>* [de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
+>* [Bonnes pratiques pour organiser vos ressources numériques afin d’utiliser les de traitement](/help/assets/organize-assets.md)
 
