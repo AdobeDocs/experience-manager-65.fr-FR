@@ -3,7 +3,7 @@ title: Rapports sur vos ressources numériques
 description: Comprenez les rapports sur vos ressources dans les ressources AEM qui vous aident à comprendre l’utilisation, les   et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a839ec71e02ee5d92f054a686b7bb52142058ae9
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -36,12 +36,12 @@ AEM Assets génère les rapports standard suivants :
 
 Les administrateurs d’AEM peuvent facilement générer et personnaliser ces rapports pour votre implémentation. Un administrateur peut procéder comme suit pour générer un rapport :
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 
 ![Page Outils pour parcourir le rapport des ressources](assets/AssetsReportNavigation.png)
 
-1. Sur la page Rapports de ressources, appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
-1. Sur la page **[!UICONTROL Créer un rapport]**, sélectionnez le rapport que vous souhaitez créer, puis appuyez/cliquez sur **[!UICONTROL Suivant]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
    ![Sélectionner un type de rapport](assets/choose_report.png)
 
@@ -53,7 +53,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
    >
    >Par défaut, les fragments de contenu et les partages de lien sont inclus dans le rapport Ressource téléchargée. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
 
-1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. Par défaut, le chemin du dossier est */content/dam*. Vous pouvez spécifier un autre chemin.
+1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. By default, the folder path is `/content/dam`. Vous pouvez spécifier un autre chemin.
 
    ![Page pour ajouter des détails sur le rapport](assets/report_configuration.png)
 
@@ -83,7 +83,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    ![Page de détails du rapport Partage de liens](assets/link_share.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner d’autres colonnes. Désélectionnez une colonne sélectionnée pour l’exclure du rapport.
 
@@ -91,14 +91,14 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud jcr:content dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
 
-   ![Création de colonnes personnalisées pour le rapport](assets/custom_columns.png)
+   ![Sélection ou désélection de colonnes de rapports](assets/custom_columns.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
-1. Sur la page Rapports de ressources, l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport, par exemple, Réussite, Échec, En file d’attente ou Planifié. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour  la page du rapport, appuyez/cliquez sur le lien du rapport. Alternatively, select the report, and tap **[!UICONTROL View]** from the toolbar.
+1. Click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
+1. Sur la page Rapports de ressources, l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport, par exemple, Réussite, Échec, En file d’attente ou Planifié. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour  la page du rapport, cliquez sur le lien du rapport. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![Un rapport généré](assets/report_page.png)
 
-   Tap **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
+   Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
 ## Ajout de colonnes personnalisées   {#add-custom-columns}
 
@@ -112,10 +112,10 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Publier sur Brand Portal
 * Fichiers
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
-1. Sur la page Rapports de ressources, appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
+1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
-1. Sur la page **[!UICONTROL Créer un rapport]**, sélectionnez le rapport que vous souhaitez créer, puis appuyez/cliquez sur **[!UICONTROL Suivant]**.
+1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin d’accès au dossier et la plage de dates, selon le cas.
 
 1. Pour afficher une colonne personnalisée, spécifiez son nom sous **[!UICONTROL Colonnes personnalisées]**.
@@ -126,9 +126,9 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 
    ![Mappez le chemin de propriété des chemins dans jcr:content](assets/property_picker.png)
 
-   Pour ajouter d’autres colonnes personnalisées, appuyez/cliquez sur **[!UICONTROL Ajouter]** et répétez les étapes 5 et 6.
+   To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
 
-1. Appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
+1. Click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
 
 ## Configuration du service de purge {#configure-purging-service}
 
