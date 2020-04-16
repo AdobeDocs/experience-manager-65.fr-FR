@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -88,22 +88,22 @@ Pour appliquer le tri aux colonnes du tableau, les cellules des colonnes du tabl
 
 Pour activer le tri :
 
-1. Select the table and tap ![](assets/configure_icon.png) (Configure). Vous pouvez également sélectionner le tableau à l’aide du navigateur de **contenu** dans le panneau latéral d’Interactive Communication.
+1. Select the table and tap ![](assets/configure_icon.png) (Configure). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **contenu** dans le panneau latéral d’Interactive Communication.
 1. Sélectionnez **Activer le tri**.
 1. Tap ![](assets/done_icon.png) to save the table properties. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonne, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new.png)
 
-1. Passez en mode **Aperçu** pour afficher la sortie. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
+1. Passez en mode **** pour  la sortie. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
 1. Cliquez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
 
    Un en-tête de colonne avec une flèche vers le haut indique que le tableau est trié en fonction de cette colonne. En outre, les valeurs de la colonne sont affichées dans l’ordre croissant.
 
-   ![Tri par ordre croissant](assets/sorting_ascending_new.png)
+   ![Tri dans l’ordre croissant](assets/sorting_ascending_new.png)
 
    De même, un en-tête de colonne avec une flèche vers le bas représente que les valeurs de la colonne sont affichées dans l’ordre décroissant.
 
-   Vous pouvez également apporter des modifications au tableau en mode **Aperçu** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
+   Vous pouvez également apporter des modifications au tableau en mode **** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
 
 ## Configuration du style de tableau {#configure}
 
@@ -143,7 +143,7 @@ Les tableaux des formulaires adaptatifs permettent d’écrire des expressions e
 Alors que les tableaux et les lignes ne prennent en charge que les expressions de visibilité pour contrôler leur visibilité en fonction de la valeur renvoyée par une expression, les cellules prennent en charge les expressions suivantes :
 
 * **Script d’initialisation** : pour effectuer une action à l’initialisation d’un champ.
-* **** Script de validation de valeur : pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
+* **Script de validation de valeur :** pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ Pour obtenir la liste complète des classes de formulaires adaptatifs, des évé
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms propose deux types de mise en page mobile pour les tableaux : En-têtes à gauche et Colonnes réductibles.
+Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. Les formulaires AEM   deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
 
 Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
@@ -168,7 +168,7 @@ Vous pouvez configurer une disposition de tableau pour périphériques mobiles d
 
 Dans la disposition En-têtes à gauche, les en-têtes du tableau sont transposés à gauche. Une seule cellule apparaît pour un en-tête. Chaque ligne dans cette disposition s’affiche en tant que partie distincte. Les images suivantes comparent un tableau sur un bureau et le même tableau sur un périphérique mobile.
 
-![vue Bureau](assets/desktopview_new.png)
+![de bureau](assets/desktopview_new.png)
 
 Vue Bureau d’un tableau avec disposition En-têtes à gauche
 
@@ -180,7 +180,9 @@ Vue Mobile d’un tableau avec disposition En-têtes à gauche
 
 Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduites pour afficher une ou deux colonnes, selon la taille du périphérique. Les autres colonnes sont réduites. Vous pouvez cliquer sur l’icône Réduire/Développer pour afficher les autres colonnes de la table.
 
-**Remarque**: Bien que la disposition Colonnes réductibles soit optimisée pour les périphériques mobiles, elle fonctionne également sur le bureau, si la largeur disponible ne suffit pas à afficher toutes les colonnes d’un tableau.
+>[!NOTE]
+>
+>Bien que la disposition Colonnes réductibles soit optimisée pour les périphériques mobiles, elle fonctionne également sur le bureau, si la largeur disponible ne suffit pas à afficher toutes les colonnes d’un tableau.
 
 Les images suivantes comparent l’aspect d’un tableau affiché sur un périphérique, l’un comportant des colonnes réduites, l’autre les affichant développées.
 
