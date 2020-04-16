@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -51,9 +51,11 @@ Les  rapides suivantes sont disponibles pour le service Forms :
 
 La logique d’application qui utilise l’API du service Forms est implémentée en tant que servlets Java. Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-* **Remarque**: Les  rapides situés dans Programmation avec v reposent sur le serveur Forms, car vous utilisez un autre système d’exploitation, tel que Unix, pour remplacer les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>[!NOTE]
+>
+>Les  rapides situés dans Programmation avec v reposent sur le serveur Forms, car vous utilisez un autre système d’exploitation, tel que Unix, pour remplacer les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-   **Conseil**: Le site Web Adobe Developer contient l’article suivant qui explique comment créer une application ASP.NET qui appelle le service Forms et génère des formulaires. Voir [Création d&#39;applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET de rendu de formulaire.
+**Conseil**: Le site Web Adobe Developer contient l’article suivant qui explique comment créer une application ASP.NET qui appelle le service Forms et génère des formulaires. Voir [Création d&#39;applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)ASP.NET de rendu de formulaire.
 
 ##  rapide (mode SOAP) : Rendu d’un formulaire PDF interactif à l’aide de l’API Java {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
