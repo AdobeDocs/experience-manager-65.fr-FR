@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -35,8 +35,13 @@ Le  rapide des API Java (SOAP) est disponible pour les composants et les service
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-* ***Remarque **: Vous ne pouvez pas manipuler par programmation les composants et les services à l’aide de services Web.*
-* ***Remarque **: Les  rapides situés dans Programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss et le système d’exploitation Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Vous ne pouvez pas manipuler par programmation les composants et les services à l’aide de services Web.
+
+>[!NOTE]
+>
+>Les  rapides situés dans Programmation avec AEM forms reposent sur le serveur Forms déployé sur JBoss et le système d’exploitation Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
