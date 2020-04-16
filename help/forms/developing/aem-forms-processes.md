@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
 
 # Présentation des processus AEM Forms {#understanding-aem-forms-processes}
 
-Un cas d’utilisation courant est qu’un ensemble de services AEM Forms fonctionne sur un seul document. Vous pouvez envoyer une requête au conteneur de services en créant un processus à l’aide de Workbench. Un processus représente un processus d’entreprise que vous automatisez. Pour plus d’informations sur la création de processus, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Un cas d’utilisation courant est qu’un ensemble de services AEM Forms fonctionne sur un seul  de. Vous pouvez envoyer une requête au de services en créant un processus à l’aide de Workbench. Un processus représente un processus d’entreprise que vous automatisez. Pour plus d’informations sur la création de processus, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-Une fois un processus activé, il devient un service et peut être appelé comme d’autres services. Une différence entre un service standard, tel que le service Encryption et un service issu d’un processus, réside dans le fait que ce dernier dispose d’une opération qui effectue de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération effectue généralement une action, telle que l’application d’une stratégie à un document ou le chiffrement d’un document.
+Une fois qu’un processus est activé, il devient un service et peut être appelé comme d’autres services. Une différence entre un service standard, tel que le service Encryption et un service issu d’un processus, réside dans le fait que ce dernier dispose d’une opération qui effectue de nombreuses actions. En revanche, un service standard comporte de nombreuses opérations. Chaque opération effectue généralement une action, telle que l’application d’une stratégie à un ou le chiffrement d’un  de.
 
 Les processus peuvent être de courte durée ou de longue durée. Un processus de courte durée est une opération exécutée de manière synchrone et sur le même thread d’exécution que celui à partir duquel il a été appelé. Les opérations de courte durée sont comparables au comportement standard de la plupart des langages de programmation, où une application cliente appelle une méthode et attend une valeur de retour.
 
@@ -27,13 +27,15 @@ Cependant, il arrive qu’un processus ne puisse pas être exécuté de manière
 
 * Un processus peut s’étendre sur une période considérable.
 * Un processus peut dépasser les limites organisationnelles.
-* Un processus nécessite une entrée externe pour être terminé. Prenons l’exemple d’un formulaire envoyé à un responsable absent du bureau. Dans ce cas, le processus n’est pas terminé tant que le gestionnaire ne retourne pas et ne remplit pas le formulaire.
+* Un processus nécessite une entrée externe pour être terminé. Prenons l’exemple d’un cas où un formulaire est envoyé à un responsable absent du bureau. Dans ce cas, le processus n’est pas terminé tant que le gestionnaire ne retourne pas et ne remplit pas le formulaire.
 
    Ces types de processus sont appelés processus de longue durée. Un processus de longue durée est exécuté de manière asynchrone, ce qui permet aux systèmes d’interagir lorsque les ressources le permettent et permet le suivi et la surveillance de l’opération. Lorsqu’un processus de longue durée est appelé, AEM Forms crée une valeur d’identificateur d’appel dans le cadre d’un enregistrement qui effectue le suivi de l’état du processus de longue durée. L’enregistrement est stocké dans la base de données AEM Forms. Vous pouvez purger les enregistrements de processus de longue durée lorsqu’ils ne sont plus nécessaires.
 
-   **Remarque**: AEM Forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé.
+>[!NOTE]
+>
+>AEM Forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé.
 
-   A l’aide de la valeur de l’identifiant d’appel, vous pouvez suivre l’état du processus de longue durée. Par exemple, vous pouvez utiliser la valeur de l’identificateur d’appel de processus pour effectuer des opérations de Process Manager, telles que l’arrêt d’une instance de processus en cours d’exécution.
+A l’aide de la valeur de l’identifiant d’appel, vous pouvez suivre l’état du processus de longue durée. Par exemple, vous pouvez utiliser la valeur de l’identificateur d’appel de processus pour effectuer des opérations de Process Manager, telles que l’arrêt d’une instance de processus en cours d’exécution.
 
 **Exemple de processus de courte durée**
 
@@ -45,9 +47,9 @@ L’illustration suivante illustre un exemple de processus de courte durée appe
 
 Lorsque ce processus de courte durée est appelé, il effectue les actions suivantes :
 
-1. Obtient le document PDF non sécurisé transmis au processus sous forme de valeur d’entrée.
-1. Chiffrement du document PDF avec un mot de passe. Le nom du paramètre d’entrée pour ce processus est `inDoc` et le type de données est document.
-1. Enregistre le document PDF chiffré par mot de passe sous forme de fichier PDF dans le système de fichiers local. Ce processus renvoie le document PDF chiffré en tant que valeur de sortie. Le nom du paramètre de sortie pour ce processus est `outDoc` et le type de données est document.
+1. Obtient le PDF non sécurisé transmis au processus sous forme de valeur d’entrée.
+1. Chiffrement du document PDF avec un mot de passe. Le nom du paramètre d’entrée pour ce processus est `inDoc` et le type de données est .
+1. Enregistre le PDF chiffré par mot de passe sous la forme d’un fichier PDF dans le système de fichiers local. Ce processus renvoie le PDF chiffré comme valeur de sortie. Le nom du paramètre de sortie pour ce processus est `outDoc` et le type de données est .
 
    Ce processus est effectué de manière synchrone sur le même thread d’exécution à partir duquel il a été appelé. Le nom de ce processus de courte durée est `MyApplication/EncryptDocument`et son fonctionnement est `invoke`.
 
@@ -57,7 +59,7 @@ Lorsque ce processus de courte durée est appelé, il effectue les actions suiva
 
    *La programmation avec AEM* forms décrit les méthodes suivantes pour appeler ce processus de courte durée par programmation :
 
-   * [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (à l’aide d’une application Flex)
+   * [Appeler un processus de courte durée en transmettant un  non sécurisé à l’aide d’AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (à l’aide d’une application Flex)
    * [Appel d’un processus de courte durée à l’aide de l’API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) d’appel (API d’appel Java)
    * [Appel d’AEM Forms à l’aide du codage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (exemple de service Web)
    * [Appel d’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemple de service Web)
