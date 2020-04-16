@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -33,7 +33,9 @@ Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tabl
 
 The tables which are marked as *complexTable* follow the native HTML rendition, and provide better accessibility support for certain screen readers.  Pour créer une étendue de ligne, sélectionnez les cellules consécutives d’un tableau dans la même colonne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur l’option **[!UICONTROL Fusionner les cellules]**.
 
-***Remarque :**la création d’une étendue de ligne fonctionne pour les cellules situées les plus à gauche uniquement.*
+>[!NOTE]
+>
+>La création d’une étendue de ligne fonctionne uniquement pour les cellules les plus à gauche.
 
 Pour marquer une ligne comme en-tête de ligne, sélectionnez toutes les cellules d’une ligne, cliquez avec le bouton droit de la souris sur la sélection, puis cliquez sur **[!UICONTROL En-tête de repère]**.
 
