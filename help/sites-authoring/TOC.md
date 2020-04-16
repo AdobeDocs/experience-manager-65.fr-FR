@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Authoring User Guide
+user-guide-title: Guide de l’utilisateur de création d’AEM 6.5
 translation-type: tm+mt
-source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
+source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
 
 ---
 
@@ -35,20 +35,20 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [Fragments d’expérience](experience-fragments.md)
    + [Exportation au format CSV](csv-export.md)
    + [Composants](default-components.md)
-   + [Création d’une page pour les périphériques mobiles](mobile.md)
+   + [Création d’une page pour les appareils mobiles](mobile.md)
    + [Résolution des problèmes d’AEM lors de la création](troubleshooting.md)
    + [Raccourcis clavier lors de la modification de pages](page-authoring-keyboard-shortcuts.md)
    + [Bonnes pratiques](best-practices.md)
 + Fonctions de site et de page {#siteandpage}
    + [Utilisation des balises](tags.md)
-   + [Création de modèles de page ](templates.md)
+   + [Création de modèles de page   ](templates.md)
    + [Système de style](style-system.md)
    + [Utilisation des versions de page](working-with-page-versions.md)
    + [Outil de comparaison des pages](page-diff.md)
    + [Console des composants](default-components-console.md)
    + [Mise en page réactive](responsive-layout.md)
    + [Content Insight ](content-insights.md)
-   + [Création d’un contenu accessible (conformité WCAG 2.0) ](creating-accessible-content.md)
+   + [Création d’un contenu accessible (conformité WCAG 2.0)   ](creating-accessible-content.md)
    + [Génération de modèles automatique](scaffolding.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
    + [Composants de base](default-components-foundation.md)
@@ -67,8 +67,8 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [Conversion de lancements](launches-promoting.md)
 + Workflows {#workflows}
    + [Utilisation des workflows](workflows.md)
-   + [Application de workflows aux pages](workflows-applying.md)
-   + [Participation aux workflows](workflows-participating.md)
+   + [Application de workflows aux pages  ](workflows-applying.md)
+   + [Participation aux workflows  ](workflows-participating.md)
    + [Utilisation des workflows de projet](projects-with-workflows.md)
 + Performances de la page {#page-performance}
    + [Content Insight ](content-insights.md)
@@ -77,15 +77,15 @@ source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
    + [Ajout de fonctionnalités Search&amp;Promote à une page](search-and-promote.md)
 + Personnalisation   {#personalization}
    + [Personnalisation  ](personalization.md)
-   + [Aperçu des pages à l’aide des données ContextHub](ch-previewing.md)
-   + [Création de contenu ciblé en mode Ciblage ](content-targeting-touch.md)
+   + [Aperçu des pages à l’aide des données ContextHub ](ch-previewing.md)
+   + [Création de contenu ciblé en mode Ciblage   ](content-targeting-touch.md)
    + [Utilisation de contenu ciblé sur plusieurs sites](multisite-support-targeted-content.md)
    + [Structuration de la gestion multisite du contenu ciblé](technical-multisite-targeted.md)
    + [Gestion des activités](activitylib.md)
    + [Gestion des audiences](managing-audiences.md)
    + [Création et gestion d’offres](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
-+ AEM et  Adobe Campaign {aem-adobe-campaign}
++ AEM et  Adobe Campaign {#aem-adobe-campaign}
    + [Utilisation d’Adobe Campaign](adobe-campaign.md)
    + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
    + [Ciblage de votre Adobe Campaign](target-adobe-campaign.md)
