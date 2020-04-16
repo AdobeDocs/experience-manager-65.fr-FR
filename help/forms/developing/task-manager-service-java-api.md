@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -35,9 +35,13 @@ Les  Quick suivants sont disponibles pour le service  Manager.
 
 Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
 
-***Remarque **: Vous ne pouvez pas rechercher des  d’attribuées aux utilisateurs à l’aide de l’API du service Web. La raison en est que vous ne pouvez pas appeler la`taskList`méthode, qui est un appel de méthode nécessaire pour exécuter cette  de.*
+>[!NOTE]
+>
+>Vous ne pouvez pas rechercher des  d’attribuées aux utilisateurs à l’aide de l’API du service Web. La raison en est que vous ne pouvez pas appeler la `taskList` méthode, qui est un appel de méthode nécessaire pour exécuter cette  de.
 
-***Remarque **: Les  rapides situés dans Programmation avec AEM Forms reposent sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir[Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Les  rapides situés dans Programmation avec AEM Forms reposent sur le système d’exploitation du serveur Forms. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ##  rapide (mode SOAP) : Affectation de  à l’aide de l’API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
