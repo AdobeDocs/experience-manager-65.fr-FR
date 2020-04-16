@@ -3,7 +3,7 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez les ressources disponibles sur un déploiement distant d’Adobe Experience Manager Assets lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
+source-git-commit: 7628b5edd52a144aa4f92f8145493b9b927aeda0
 
 ---
 
@@ -89,9 +89,9 @@ Pour configurer la connectivité des ressources connectées et des sites locaux,
    1. Dans l’assistant de propriétés, modifiez les champs **[!UICONTROL Chemin]** en fonction des mappages suivants pour mettre à jours leurs expressions régulières afin d’exclure le point de montage **[!UICONTROL connectedassets]**.
    | Avant | Après |
    |---|---|
-   | /content/dam(/((?!/subassets).)*/)renditions/original | /content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*/)renditions/original | /content/dam(/((?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*)/jcr:content/metadata | /content/dam(/((?!connectedassets).)*/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
