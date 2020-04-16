@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -25,17 +25,23 @@ Le service Generate PDF utilise des applications natives pour convertir les for
 
 * Microsoft Office 2003 et 2007 pour convertir les formats DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS et PUB (Windows uniquement)
 
-   **Remarque**: Acrobat® 9.2 ou version ultérieure est requis pour convertir le format Microsoft XPS au format PDF.*
+>[!NOTE]
+>
+>Acrobat® 9.2 ou version ultérieure est requis pour convertir le format Microsoft XPS au format PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 et 2009 pour convertir les fichiers DWF, DWG et DXW (en anglais uniquement)
 * Corel WordPerfect 12 et X4 pour convertir WPD, QPW, SHW (en anglais uniquement)
 * OpenOffice 2.0, 2.4, 3.0.1 et 3.1 pour convertir les formats ODT, ODS, ODP, ODG, ODF, SXW, SXI, SXC, SXD, DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX et PUB
 
-   ***Remarque **: Le service Generate PDF ne prend pas en charge les versions 64 bits d’OpenOffice.*
+>[!NOTE]
+>
+>le service Generate PDF ne prend pas en charge les versions 64 bits d’OpenOffice.
 
 * Adobe Photoshop® CS2 pour convertir le fichier PSD (Windows uniquement)
 
-   ***Remarque**: Photoshop CS3 et CS4 ne sont pas pris en charge car ils ne prennent pas en charge Windows Server 2003 ou Windows Server 2008. *
+>[!NOTE]
+>
+>Photoshop CS3 et CS4 ne sont pas pris en charge car ils ne prennent pas en charge Windows Server 2003 ou Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 et 8 pour convertir des fichiers FM (Windows uniquement)
 * Adobe PageMaker® 7.0 pour convertir les formats PMD, PM6, P65 et PM (Windows uniquement)
@@ -751,7 +757,7 @@ A l’aide de l’application native, déterminez les éléments de fenêtre à 
 1. Spécifiez le chemin, puis cliquez sur Ouvrir.
 1. Choisissez Fichier > Imprimer dans la barre de menus.
 1. Spécifiez les propriétés requises pour l’imprimante.
-1. Sélectionnez Imprimer et attendez l’affichage de la boîte de dialogue Enregistrer sous. La boîte de dialogue Enregistrer sous est requise pour que le service Generate PDF spécifie la destination du fichier PDF.
+1. Sélectionnez Imprimer et attendez l’affichage de la boîte de dialogue Enregistrer sous. La boîte de dialogue Enregistrer sous est requise pour que le service Generate PDF indique la destination du fichier PDF.
 
 #### Identification des boîtes de dialogue spécifiées dans les attributs de légende {#identifying-the-dialogs-specified-in-caption-attributes}
 
