@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager Forms peut utiliser les informations d’identification
 
 ## Avant de configurer les modules HSM ou etoken avec AEM Forms{#configurehsmetoken} 
 
-* Installez le [module complémentaire AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+* Installez le [module complémentaire AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 * Installez et configurez le logiciel client du HSM ou etoken sur le même ordinateur que le serveur AEM Le logiciel client est requis pour communiquer avec les modules HSM et etoken.
 * (Microsoft windows uniquement) Configurez la variable d’environnement JAVA_HOME_32 de façon à ce qu’elle pointe vers le répertoire d’installation de la version 32 bits du kit de développement Java 8 (JDK 8). Le chemin d’accès par défaut du répertoire est le suivant : C:\Program Files(x86)\Java\jdk&lt;version>
 * (AEM Forms sur OSGi uniquement) installez le certificat racine dans le trust store. Cela est nécessaire pour vérifier le PDF signé 
@@ -104,7 +104,9 @@ L’alias contient l’ensemble des paramètres dont a besoin un périphérique 
    * **Chemin du DLL** : spécifiez le chemin d’accès complet à la bibliothèque cliente de votre module HSM ou etoken sur le serveur. Par exemple, C:\Program Files\LunaSA\cryptoki.dll. Dans un environnement organisé en grappe, ce chemin d’accès doit être identique pour l’ensemble des serveurs de la grappe.
    * **Code secret HSM** : indiquez le mot de passe requis pour accéder à la clé du module.
    * **Id d’emplacement HSM** : indiquez un identifiant d’emplacement de type entier. L’ID d’emplacement est défini pour les clients de façon individuelle. Si vous enregistrez un second ordinateur sur une partition différente (par exemple, HSMPART2 sur le même module HSM), l’emplacement 1 est associé à la partition HSMPART2 pour ce client.
-   **Remarque :** *lors de la configuration d’Etoken, entrez une valeur numérique pour le champ d’ID d’emplacement HSM. Une valeur numérique est nécessaire pour que les opérations de signature fonctionnent.*
+   >[!NOTE]
+   >
+   >Lors de la configuration d’Etoken, spécifiez une valeur numérique pour le champ d’ID d’emplacement HSM. Une valeur numérique est nécessaire pour que les opérations de signature fonctionnent.
 
    * **Certificat SHA1** : indiquez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification utilisées. Veillez à ce que la valeur SHA1 ne contienne aucun espace. Si vous utilisez un certificat physique, cette valeur n’est pas requise.
    * **Type de module HSM** : sélectionnez l’éditeur du module HSM (Luna ou autre) ou eToken.
