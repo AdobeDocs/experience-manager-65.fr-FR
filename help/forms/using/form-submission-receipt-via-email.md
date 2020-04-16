@@ -10,72 +10,66 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: acc2a3977353386d7e1dfd1344a61d78812fe3fc
 
 ---
 
 
-# Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique{#sending-a-form-submission-acknowledgement-via-email}
+# Envoi d’un accusé de réception d’envoi de formulaire par courrier électronique {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Envoi de données de formulaire adaptatif {#adaptive-form-data-submission}
 
 Les formulaires adaptatifs fournissent plusieurs flux de travaux [d’actions Envoyer](../../forms/using/configuring-submit-actions.md) prêts à l’emploi pour envoyer les données de formulaire à différents points de terminaison.
 
-For example, the **Email action** submit action sends an email on successful submission of an adaptive form. Elle peut également être configurée pour envoyer les données de formulaire et le fichier PDF dans le courrier électronique.
+For example, the **[!UICONTROL Send email]** submit action sends an email on successful submission of an adaptive form. Elle peut également être configurée pour envoyer les données de formulaire et le fichier PDF dans le courrier électronique.
 
 Cet article décrit la procédure pour activer l’action Courrier électronique dans un formulaire adaptatif et les différentes configurations fournies.
 
 >[!NOTE]
 >
->You can also use the **Email PDF action** to send the completed form by email as a PDF attachment. Les options de configuration disponibles pour cette action sont identiques à celles proposées pour l’action Courrier électronique. L’action PDF par courrier électronique est disponible uniquement pour les formulaires adaptatifs basés sur XFA.
+>You can also use the **[!UICONTROL Send PDF via email]** option to send the completed form by email as a PDF attachment. The configuration options available for this action are the same as the options available for the **[!UICONTROL Send email]** action. L’action PDF par courrier électronique est disponible uniquement pour les formulaires adaptatifs basés sur XFA.
 
-## Action Courrier électronique {#email-action}
+## Action Envoyer un courrier électronique {#email-action}
 
-L’action Courrier électronique permet à un auteur d’envoyer automatiquement un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi d’un formulaire adaptatif.
+L’action Envoyer un courrier électronique permet à un auteur d’envoyer automatiquement un courrier électronique à un ou plusieurs lors de l’envoi réussi d’un formulaire adaptatif.
 
 >[!NOTE]
 >
->Pour utiliser l’action Courrier électronique, vous devez configurer le service de messagerie AEM, comme décrit dans la section [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
+>To use the Send email action, you need to configure the AEM mail service as described in [Configuring the mail service](/help/sites-administering/notification.md#configuring-the-mail-service).
 
-### Activation de l’action Courrier électronique dans un formulaire adaptatif {#enabling-email-action-on-an-adaptive-form}
+### Enabling Send email action on an adaptive form {#enabling-email-action-on-an-adaptive-form}
 
-1. Ouvrez un formulaire adaptatif en mode d’édition.
+1. Open an adaptive form in **[!UICONTROL edit]** mode.
 
-1. Cliquez sur **Modifier** en regard de la barre d’outils **Début d’un formulaire adaptatif**.
+1. Dans l’onglet **[!UICONTROL Contenu]** , appuyez sur **[!UICONTROL de de]** formulaire et appuyez sur ![Configurer](assets/configure-icon.svg) pour  les propriétés du formulaire adaptatif.
 
-   La boîte de dialogue Modifier le composant s’ouvre.
+1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Send email]** from the **[!UICONTROL Submit Action]** drop-down list.
 
-   ![Boîte de dialogue Modifier le composant d’un formulaire adaptatif](assets/start_of_adp_form.png)
+   ![Actions Envoyer](assets/submission-actions.png)
 
-1. Select the **Submit actions** tab and choose **Email action** from the Submit action drop-down list.
+1. Specify valid email IDs in the **[!UICONTROL To]**, **[!UICONTROL CC]**, and **[!UICONTROL BCC]** fields.
 
-   L’onglet affiche les options pour configurer l’action Courrier électronique pour le formulaire actif.
-
-   ![Onglet Actions Envoyer](assets/dialog.png)
-
-1. Spécifiez des identifiants d’adresse électronique valides dans les champs De, CC et Cci.
-
-   Indiquez l’objet et le corps du message dans les champs respectifs Objet et Modèle de courrier électronique.
+   Specify the subject and the body of the email in the **[!UICONTROL Subject]** and **[!UICONTROL Email Template]** fields, respectively.
 
    Vous pouvez également spécifier des espaces réservés aux variables dans les champs. Dans ce cas, les valeurs des champs sont traitées lorsque le formulaire est envoyé par un utilisateur final. Pour plus d’informations, voir [Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un courrier électronique](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
-   Cochez la case Inclure les pièces jointes si le formulaire contient des pièces jointes et si vous souhaitez joindre ces fichiers au courrier électronique.
+   Select **[!UICONTROL Include attachments]** if the form includes file attachments and you want to attach these files in the email.
 
    >[!NOTE]
    >
-   >Si vous sélectionnez **Action PDF par courrier électronique**, vous devez sélectionner l’option Inclure les pièces jointes.
+   >If you choose the **[!UICONTROL Send PDF via Email]** option, you must select the Include attachments option.
 
-1. Pour enregistrer les modifications, cliquez sur **OK.**
+1. Click ![save](assets/save_icon.svg) to save the changes.
 
 ### Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un courrier électronique {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
 Dans un formulaire adaptatif, les noms de champ sont appelés espaces réservés. Ils sont remplacés par la valeur du champ après l’envoi du formulaire par un utilisateur.
 
-Sous l’onglet Action Courrier électronique, vous pouvez utiliser des espaces réservés qui sont traités lorsque l’action est effectuée. Cela implique que les en-têtes du courrier électronique (tels que De, CC, Cci et Objet) soient générés lorsque l’utilisateur envoie le formulaire.
+In the **[!UICONTROL Send email]** action, you can use placeholders that are processed when the action is performed. It implies that the headers of the email (such as **[!UICONTROL To]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Subject]**) are generated when the user submits the form.
 
-To define a placeholder, specify `${<field name>}` in a field in the Submit actions tab.
+Pour définir un espace réservé, spécifiez `${<field name>}` dans un champ après avoir sélectionné **[!UICONTROL Envoyer un courrier électronique]** comme action d’envoi.
 
-Par exemple, si le formulaire contient le champ **Adresse électronique**, appelé `email_addr`, pour capturer l’identifiant d’adresse électronique d’un utilisateur, vous pouvez spécifier les valeurs suivantes dans les champs De, CC ou Cci.
+For example, if the form contains the **[!UICONTROL Email address]** field, named `email_addr`, for capturing the email ID of a user, you can specify the following in the **[!UICONTROL To]**, **[!UICONTROL CC]**, or **[!UICONTROL BCC]** fields.
 
 `${email_addr}`
 
@@ -83,9 +77,9 @@ Lorsqu’un utilisateur envoie le formulaire, un courrier électronique est envo
 
 >[!NOTE]
 >
->Vous pouvez trouver le nom d’un champ dans la boîte de dialogue **Modifier** de ce champ.
+>Vous pouvez trouver le nom d’un champ dans la boîte de dialogue **[!UICONTROL Modifier]** de ce champ.
 
-Les espaces réservés aux variables peuvent également être utilisés dans les champs **Objet** et **Modèle de courrier électronique.**
+Variable placeholders can also be used in the **[!UICONTROL Subject]** and **[!UICONTROL Email Template]** fields.
 
 Par exemple :
 
