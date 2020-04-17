@@ -7,21 +7,21 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
 
 ---
 
 
 # Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 
-Adobe évalue constamment les fonctionnalités du produit afin de réinventer ou de remplacer au fil du temps des fonctionnalités plus anciennes par des solutions de remplacement plus modernes afin d’améliorer la valeur globale du client, toujours en tenant compte de la compatibilité ascendante.
+Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
 Pour communiquer la suppression/le remplacement imminent de fonctionnalités d’AEM, les règles suivantes s’appliquent :
 
 1. L’annonce de la suppression arrive en premier. Bien qu&#39;abandonnées, les capacités sont toujours disponibles, mais elles ne seront pas améliorées.
 1. La suppression des fonctionnalités obsolètes se produit au plus tôt dans la version majeure suivante. La date de suppression sera annoncée.
 
-Ce processus donne aux clients au moins un cycle de publication afin d’adapter leur implémentation à une nouvelle version ou produit de remplacement d’une fonctionnalité obsolète, avant que la suppression ne soit effective.
+Ce processus donne aux clients au moins un cycle de version afin d’adapter leur implémentation à une nouvelle version ou produit de remplacement d’une fonctionnalité obsolète, avant que la suppression ne soit effective.
 
 ## Fonctionnalités obsolètes {#deprecated-features}
 
@@ -42,7 +42,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
    <td>Il est conseillé aux clients de passer aux nouvelles fonctionnalités d’intégration de Creative Cloud, notamment Adobe Asset Link ou l’application de bureau AEM. Consultez les <a href="/help/assets/aem-cc-integration-best-practices.md"> meilleures pratiques d’intégration d’AEM et de Creative Cloud </a> pour plus de détails.</td>
   </tr>
   <tr>
-   <td>Assets</td>
+   <td>Ressources</td>
    <td>
     <ol>
      <li>AssetDownloadServlet est désactivé par défaut pour les instances de publication. Pour plus de détails, voir la <a href="/help/sites-administering/security-checklist.md">Liste de contrôle de sécurité AEM</a>.</li>
@@ -65,7 +65,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
    <td>Passez à Adobe Experience Platform Launch en tant que gestionnaire de balises</td>
   </tr>
   <tr>
-   <td>Adobe Target</td>
+   <td>Adobe Target</td>
    <td>Lorsque vous ajoutez la possibilité pour AEM de se connecter au service Adobe Target à l’aide de l’API Standard d’Adobe Target basée sur Adobe I/O (API Rest) dans AEM 6.5, la méthode utilisant l’API Target Classic (XML) est obsolète.</td>
    <td><a href="https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html">Reconfigurez l’intégration pour utiliser la nouvelle API.</a></td>
   </tr>
@@ -81,7 +81,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
   </tr>
   <tr>
    <td>Composants (AEM Sites)</td>
-   <td><p>Adobe ne prévoit pas d’apporter d’autres améliorations à la plupart des composants de base (Foundation) stockés dans /libs/foundation/components.</p> <p>Recherchez les propriétés <strong>cq:deprecated</strong> et <strong>cq:deprecatedReason</strong> dans le dossier des composants.</p> <p>AEM 6.5 inclut les composants Foundation, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à les utiliser en l’état. En outre, les éléments de base restent entièrement pris en charge tout en étant abandonnés. </p> </td>
+   <td><p>Adobe ne prévoit pas d’apporter d’autres améliorations à la plupart des composants de base (Foundation) stockés dans /libs/foundation/components.</p> <p>Recherchez les propriétés <strong>cq:deprecated</strong> et <strong>cq:deprecatedReason</strong> dans le dossier des composants.</p> <p>AEM 6.5 inclut les composants Foundation, et les clients qui effectuent une mise à niveau depuis des versions antérieures peuvent continuer à les utiliser en l’état. En outre, les éléments de base restent entièrement pris en charge tout en étant abandonnés. </p> </td>
    <td>Adobe recommande aux clients d’utiliser les composants principaux pour les prochains projets. Existing sites can remain as is or use the <a href="https://github.com/adobe/aem-modernize-tools">AEM Modernize Tools Suite</a> to refactor the site to use Core Components.</td>
   </tr>
   <tr>
@@ -151,24 +151,30 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
    <td><p>Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite</p> <p>Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart).</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Forms</td>
+   <td><p>Intégration d'AEM Forms avec AEM Mobile&lt; est obsolète </p> </td>
+   <td>Aucun remplacement. </td>
+  </tr>
  </tbody>
 </table>
 
 ## Fonctionnalités supprimées {#removed-features}
 
-Cette section répertorie les fonctionnalités et fonctionnalités qui ont été supprimées d’AEM 6.5. Les versions précédentes présentaient ces fonctionnalités comme obsolètes.
+Cette section les fonctionnalités et fonctionnalités qui ont été supprimées d’AEM 6.5. Les versions précédentes présentaient ces fonctionnalités comme obsolètes.
 
 | Zone | Fonctionnalité | Remplacement |
 |--- |--- |--- |
-| Carte d’activités Analytics | Version de Carte d’activités incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le module externe [ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Carte des  Analytics  | Version du  de mappage de  incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le module externe [ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Intégrations | L’intégration ExactTarget a été supprimée de la distribution par défaut (Quickstart) et n’est plus disponible. | Aucun remplacement. |
 | Intégrations | L’intégration de l’API Salesforce Force a été supprimée de la distribution par défaut (Quickstart) et constitue désormais un package supplémentaire à installer à partir de PackageShare. | La fonctionnalité est toujours disponible. |
 | Forms | La prise en charge du service de passerelle d’Adobe Central Migration n’est plus assurée, car le produit Adobe Central n’est plus pris en charge. | Aucun remplacement. |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Aucun remplacement. |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Aucun remplacement. |
+| Forms | La mise à niveau à sauce unique de LiveCycle ES4 SP1 vers AEM Forms 6.5 sur JEE n’est pas disponible | Reportez-vous à la page Chemins [de mise à niveau](../forms/using/upgrade.md) disponibles dans la documentation de mise à niveau d’AEM Forms. |
 | Développeurs | Firebug Lite a été supprimé de la distribution par défaut (Quickstart). | Utilisez les consoles de développement intégrées au navigateur. |
 | Développeurs | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Aucun remplacement. |
-| Assets | La fonction de déchargement Ressources a été supprimée dans AEM 6.5. | Aucun remplacement. |
+| Ressources | La fonction de déchargement Ressources a été supprimée d’AEM 6.5. | Aucun remplacement. |
 | Cache | `system/console/slingjsp` n’est plus disponible dans AEM 6.5. | Classes et cache Légèrement sont stockés sous le lot Apache Sling Commons FileSystem ClassLoader. Vous pouvez vérifier le numéro de lot dans la console Web AEM et supprimer le dossier de cache directement du système de fichiers (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
 ## Annonce préalable à la prochaine version {#pre-announcement-for-next-release}
