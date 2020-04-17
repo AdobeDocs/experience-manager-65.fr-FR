@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
 
 ---
 
@@ -306,7 +306,7 @@ Sélectionnez une archive ZIP à la fois, cliquez sur **[!UICONTROL Extraire l�
 
 Une fois l’extraction terminée, AEM vous avertit dans la zone de notification. Lorsqu’AEM extrait le fichier ZIP, vous pouvez reprendre votre travail sans interrompre l’extraction.
 
-![Notification de  ZIP](assets/Zip-extraction-notification.png)
+![Notification du fichier ZIP ](assets/Zip-extraction-notification.png)
 
 La fonctionnalité présente certaines limites :
 
@@ -326,11 +326,9 @@ Pour prévisualiser une ressource, procédez comme suit.
 
    Pour effectuer un zoom avant sur une ressource, appuyez/cliquez sur `+` (ou appuyez/cliquez sur la loupe au niveau de la ressource). Pour effectuer un zoom arrière, appuyez/cliquez sur `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
 
-   ![télécharger](assets/uploadicon.png)
-
    Appuyez sur **[!UICONTROL Réinitialiser]** pour réinitialiser la vue à sa taille d’origine.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Réinitialiser l’icône pour ramener l’utilisateur au d’origine](assets/chlimage_1-11.png)
 
 **de fichiers à l’aide des touches du clavier uniquement**
 
@@ -353,11 +351,11 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 ## Modification des propriétés et des métadonnées {#editing-properties}
 
-1. Accédez à l’emplacement de la ressource dont vous souhaitez modifier les métadonnées.
+1. Accédez à l’emplacement de la ressource pour modifier ses métadonnées.
 
 1. Sélectionnez la ressource et appuyez/cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils pour afficher ses propriétés. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Propriétés]** sur la carte de la ressource.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Action rapide des propriétés sur le de cartes de ressources](assets/properties_quickaction.png)
 
 1. Sur la page [!UICONTROL Propriétés], modifiez les propriétés de métadonnées sous différents onglets. Par exemple, sous l’onglet **[!UICONTROL De base]**, modifiez le titre, la description et ainsi de suite.
 
@@ -367,13 +365,13 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. Pour planifier une date/heure spécifique pour l’activation de la ressource, utilisez le sélecteur de date situé en regard du champ **[!UICONTROL Heure d’activation]**.
 
-   ![utiliser le sélecteur d’heure de date ou les touches du clavier dans le champ Heure de fin pour ajouter la date et l’heure pour le  de ressources](assets/schedule-activation.png)
+   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de fin pour ajouter la date et l’heure pour le  de ressources](assets/schedule-activation.png)
 
    *Figure : Planifier le  des ressources*
 
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Assets ou via l’API HTTP.
 
-   ![utiliser le sélecteur d’heure de date ou les touches du clavier dans le champ Heure de désactivation pour ajouter la date et l’heure pour le  de ressources](assets/schedule-deactivation.png)
+   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de désactivation pour ajouter la date et l’heure pour le  de ressources](assets/schedule-deactivation.png)
 
    *Figure : Planifier la désactivation des actifs*
 
@@ -385,7 +383,7 @@ See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
 
 1. Pour fournir une évaluation de la ressource, appuyez/cliquez sur l’onglet **[!UICONTROL Avancé]**, puis appuyez/cliquez sur l’étoile à l’emplacement approprié pour affecter l’évaluation de votre choix.
 
-   ![évaluations](assets/ratings.png)
+   ![Onglet Avancé dans Propriétés du fichier pour attribuer une évaluation](assets/ratings.png)
 
    Le score d’évaluation que vous affectez à la ressource s’affiche sous **[!UICONTROL Vos évaluations]**. Le score d’évaluation moyen que la ressource a reçu des utilisateurs qui ont évalué la ressource s’affiche sous **[!UICONTROL Évaluation]**. De plus, la répartition des scores d’évaluation contribuant au score d’évaluation moyen s’affiche sous **[!UICONTROL Ventilation d’évaluation]**. Vous pouvez rechercher des ressources en fonction de leur score d’évaluation moyen.
 
@@ -414,7 +412,7 @@ Quelques attributs uniques à une copie spécifique d’une ressource ne sont pa
 Les autres propriétés et informations de métadonnées sont conservées. Une copie partielle n’est pas créée lors de la copie d’une ressource.
 
 1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources, puis appuyez/cliquez sur l’icône **[!UICONTROL Copier]** dans la barre d’outils. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]**   depuis la carte de la ressource.
-   ![copy_icon](assets/copy_icon.png)
+   ![Icône Copier dans la barre d’outils de l’interface utilisateur des ressources](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -428,7 +426,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)Les ressources sont ensuite copiées à cet emplacement.
+   ![Icône Coller dans la barre d’outils](assets/chlimage_1-14.png)de l’interface utilisateur des ressources Les ressources sont ensuite copiées à cet emplacement.
 
    >[!NOTE]
    >
@@ -439,7 +437,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 1. Accédez à l’emplacement de la ressource à déplacer.
 
 1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Déplacer]**   de la barre d’outils.
-   ![move_icon](assets/move_icon.png)
+   ![Icône Déplacer dans la barre d’outils de l’interface utilisateur des ressources](assets/move_icon.png)
 
 1. Dans l’Assistant de déplacement des ressources, procédez comme suit :
 
