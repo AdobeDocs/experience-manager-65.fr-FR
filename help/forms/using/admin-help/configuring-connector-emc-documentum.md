@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -59,13 +59,15 @@ Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect, vous obti
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec Documentum. Les appels des services de référentiel sont délégués au fournisseur que vous configurez. Les options suivantes sont disponibles :
 
-**** Nom actuel du fournisseur de services de référentiel : Nom du fournisseur de services de référentiel actuel
+**Nom du du référentiel actuel :** Nom du de référentiel actuel
 
-**** Fournisseur de référentiel ECM Documentum : Transforme le fournisseur de référentiel Documentum en fournisseur du référentiel. Cette option est obsolète.
+**Fournisseur de référentiel ECM Documentum :** Fait du fournisseur de référentiel Documentum le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
 
-**** fournisseur de référentiel : Fait du fournisseur de référentiel natif le fournisseur du référentiel
+**fournisseur de référentiel :** Fait du fournisseur de référentiel natif le fournisseur du référentiel
 
-***Remarque ** : pour sélectionner un fournisseur de services de référentiel non répertorié, configurez le service RepositoryService dans Applications and Services > Gestion des services.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>To select a repository service provider other than those listed, configure RepositoryService in Applications and Services > Service Management. <!-- Fix broken link (See Managing Services) -->.
 
 1. Dans Administration Console, cliquez sur Services > Connecteur pour EMC Documentum > Paramètres de configuration.
 1. Dans la zone Informations sur les fournisseurs de services de référentiel, sélectionnez un autre fournisseur de services de référentiel.
