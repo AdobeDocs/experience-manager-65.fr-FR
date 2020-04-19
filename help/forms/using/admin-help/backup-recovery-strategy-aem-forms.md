@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -31,11 +31,13 @@ Adobe Experience Manager (AEM) fait partie intégrante d’AEM forms. Par consé
 
 La stratégie de sauvegarde d’AEM forms implique deux types de sauvegardes :
 
-**** Image système : Sauvegarde système complète que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si le disque dur ou l’ordinateur entier ne fonctionne plus. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
+**Image système :** Sauvegarde système complète que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si le disque dur ou l’ordinateur entier ne fonctionne plus. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
 
-**** Données spécifiques à AEM forms : Les données d’application existent dans la base de données, le stockage global de documents (GDS) et le référentiel AEM et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
+**Données spécifiques à AEM forms :** Les données d’application existent dans la base de données, le  global  (GDS) et le référentiel AEM. Elles doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
 
-***Remarque ** : si Content Services (obsolète) est installé, sauvegardez également le répertoire racine de stockage de contenu. (voir[Répertoire racine de stockage de contenu (Content Services uniquement)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only)).*
+>[!NOTE]
+>
+>si Content Services (obsolète) est installé, sauvegardez également le répertoire racine de stockage de contenu See [Content Storage Root directory (Content Services only)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 La base de données est utilisée pour stocker des artefacts de formulaires, des configurations de services, un état de traitement et des références de base de données dans les fichiers du répertoire de stockage global de documents. Si le stockage de documents dans la base de données est activé, les données et documents persistants du répertoire de stockage global de documents sont également stockés dans la base de données. Les méthodes suivantes permettent de sauvegarder et de récupérer la base de données :
 
@@ -47,7 +49,9 @@ La base de données est utilisée pour stocker des artefacts de formulaires, des
 
 * Le mode de **sauvegarde restauration** indique que le système sera toujours en mode de sauvegarde et qu’une nouvelle session du mode de sauvegarde sera initiée à la libération de la session précédente. Aucun délai d’expiration n’est associé au mode de sauvegarde restauration. Lorsque le script LCBackupMode ou les API sont appelés pour quitter le mode de sauvegarde restauration, une nouvelle session du mode de sauvegarde restauration commence. Cela s’avère utile pour prendre en charge des sauvegardes en continu, tout en permettant la suppression des documents anciens et inutiles du répertoire de stockage global de documents. Le mode de sauvegarde restauration n’est pas pris en charge via la page relative à la sauvegarde et à la récupération. Après un scénario de récupération, le mode de sauvegarde restauration reste activé. Vous pouvez quitter le mode de sauvegarde en continu (mode de sauvegarde restauration) en utilisant le script LCBackupMode avec l’option `leaveContinuousCoverage`.
 
-***Remarque** : si vous quittez le mode de sauvegarde restauration, une nouvelle session du mode de sauvegarde commence immédiatement. Pour désactiver entièrement le mode de sauvegarde restauration, utilisez l’option `leaveContinuousCoverage` dans le script, ce qui remplace la session de sauvegarde restauration existante. Lorsque vous êtes en mode de sauvegarde instantané, vous pouvez quitter le mode de sauvegarde comme vous le faites habituellement. *
+>[!NOTE]
+>
+>si vous quittez le mode de sauvegarde restauration, une nouvelle session du mode de sauvegarde commence immédiatement. Pour désactiver entièrement le mode de sauvegarde restauration, utilisez l’option `leaveContinuousCoverage` dans le script, ce qui remplace la session de sauvegarde restauration existante. Lorsque vous êtes en mode de sauvegarde instantané, vous pouvez quitter le mode de sauvegarde comme vous le faites habituellement.
 
 Pour éviter les pertes de données, les données spécifiques d&#39;AEM forms doivent être sauvegardées de façon que les documents du répertoire de stockage global de documents et du répertoire racine de stockage de contenu soient en corrélation avec les références de la base de données.
 
