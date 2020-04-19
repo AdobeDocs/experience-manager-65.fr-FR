@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ Aya répond à quelques questions pour confirmer son éligibilité en remplissan
 
 1. Effectuez une sélection dans chaque champ déroulant.
 
-   1. Remarque : Si l’utilisateur gagne plus de 200 000 $ par an, il n’est pas admissible.
+   >[!NOTE]
+   >
+   >Si l’utilisateur gagne plus de 200 000 $ par an, il n’est pas admissible.
 
 1. Cliquez sur &quot;**Suis-je éligible ?**” button.
 1. Cliquez sur le bouton &quot;**Demander ma carte maintenant**&quot; pour continuer.
@@ -269,7 +271,7 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
 1. Accédez au coin supérieur gauche et cliquez sur &quot;**Approuver**&quot; pour approuver la demande.
 1. Dans le mode modal, vous pouvez laisser un message pour le prospect CX.
-1. Cliquez sur Terminé.
+1. Cliquez sur Done (Terminé). 
 1. (Rôle Citoyen) Ouvrez votre client de messagerie pour du courrier électronique envoyé à Aya.
 
    ![e-mail envoyé à Aya](/help/forms/using/assets/email_client.png)
@@ -318,7 +320,7 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
 
 1. De retour dans AEM, accédez au coin supérieur gauche et cliquez sur &quot;**Envoyer**&quot; pour envoyer la demande.
 1. Dans le module, vous pouvez laisser un message.
-1. Cliquez sur Terminé.
+1. Cliquez sur Done (Terminé). 
 
    ![, onglet](/help/forms/using/assets/activities_tab.png)  de l’ ![Confirmer le nouveau contact](/help/forms/using/assets/confirm_new_contact.png)
 
