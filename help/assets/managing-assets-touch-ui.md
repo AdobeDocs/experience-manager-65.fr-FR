@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -347,7 +347,11 @@ Pour d’un fichier à l’aide du clavier, procédez comme suit :
 
 1. Utilisez les touches fléchées pour vous déplacer dans l’image agrandie.
 
-See also [Preview Dynamic Media Assets.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [de fichiers](/help/assets/previewing-assets.md)de médias dynamiques.
+>* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
+
 
 ## Modification des propriétés et des métadonnées {#editing-properties}
 
