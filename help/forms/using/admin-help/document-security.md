@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -87,7 +87,9 @@ Divers types d’utilisateurs recourent à Document Security pour accomplir diff
 
    Les utilisateurs bénéficiant de ce rôle peuvent configurer le serveur Document Security à l’aide de la page Configuration de la section Document Security dans Administration Console. Cette autorisation est associée au rôle Gestion de la configuration.
 
-   ***Remarque ** : les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.*
+   >[!NOTE]
+   >
+   >Les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.
 
    **Administrateur de jeu de stratégies Document Security**
 
@@ -99,7 +101,9 @@ Divers types d’utilisateurs recourent à Document Security pour accomplir diff
    * Gestion des éditeurs
    * Affichage des événements
    * Déléguer
-   ***Remarque ** : les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.*
+   >[!NOTE]
+   >
+   >Les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.
 
    **Gestion des utilisateurs invités et locaux**
 
@@ -108,7 +112,9 @@ Divers types d’utilisateurs recourent à Document Security pour accomplir diff
    * Gestion des utilisateurs invités et locaux
    * Invitation d’utilisateurs externes
    * Accès aux pages Web destinées aux utilisateurs finaux
-   ***Remarque ** : les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.*
+   >[!NOTE]
+   >
+   >Les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.
 
    **Invitation d’un utilisateur de Document Security**
 
