@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -102,7 +102,8 @@ Tous les champs de formulaire doivent avoir des noms d’élément différents, 
 
 L’action d’envoi **Envoyer le PDF par courrier électronique** envoie un message électronique avec un fichier PDF contenant des données de formulaire à un ou plusieurs destinataires lors d’un envoi réussi du formulaire.
 
-**Remarque :** Cette action d’envoi est disponible pour les formulaires adaptatifs XFA et les formulaires d’adaptation XSD ayant le modèle de document d’enregistrement.
+>[!NOTE]
+Cette action d’envoi est disponible pour les formulaires adaptatifs basés sur XFA et les formulaires d’adaptation basés sur XSD qui ont le modèle de  d’enregistrement.
 
 ## Appeler un processus de formulaires {#invoke-a-forms-workflow}
 
