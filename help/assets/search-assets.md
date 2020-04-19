@@ -4,7 +4,7 @@ description: Découvrez comment rechercher les ressources souhaitées dans AEM �
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -38,11 +38,11 @@ La fonctionnalité de recherche AEM prend en charge la recherche de collections 
 
 Familiarisez-vous avec l’interface de recherche et les actions disponibles.
 
-![Présentation des parties de l’interface des résultats de la recherche Ressources](assets/aem_search_results.png)
+![Comprendre l’interface des résultats de recherche d’Experience Manager Assets](assets/aem_search_results.png)
 
-*Figure : Présentation des parties de l’interface des résultats de la recherche Ressources*
+*Figure : Comprendre l’interface des résultats de recherche d’Experience Manager Assets*
 
-**A.** Enregistrer la recherche en tant que collection dynamique. **B.** Filtres (prédicats) pour limiter les résultats de recherche. **C.** Afficher les fichiers, les dossiers ou les deux dans les résultats de recherche. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **G.** Cochez cette case pour sélectionner tous les résultats de la recherche. **H.** Nombre de résultats de recherche affichés par rapport au total des résultats de recherche. **I.** Ferme la recherche **J.** Basculez entre les  de carte et les  de .
+**A.** Enregistrez la recherche en tant que collection dynamique. **B.** ou prédit pour limiter les résultats de la recherche. **C.** Afficher les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **G.** Sélectionnez les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés par rapport au total des résultats de recherche. **I.** Fermez la recherche **J.** Basculez entre les  de carte et les  de .
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -137,9 +137,9 @@ AEM fournit diverses méthodes, telles que des filtres qui s’appliquent aux re
 
 Pour rechercher des images visuellement similaires à une image sélectionnée par l’utilisateur, cliquez sur l’option **[!UICONTROL Rechercher des images similaires]** dans le mode Carte d’une image ou dans la barre d’outils. AEM affiche les images balisées intelligentes du référentiel DAM qui sont similaires à une image sélectionnée par l’utilisateur. Voir [Configuration de la recherche par analogie](#configvisualsearch).
 
-![Recherchez des images similaires à l’aide de l’option du de cartes](assets/search_find_similar.png)
+![Recherchez des images similaires à l’aide de l’option dans le de cartes](assets/search_find_similar.png)
 
-*Figure : Recherchez des images similaires à l’aide de l’option du de cartes*
+*Figure : Recherchez des images similaires à l’aide de l’option dans le de cartes*
 
 ### Images Adobe Stock {#adobestock}
 
@@ -254,7 +254,7 @@ La fonctionnalité de recherche dans AEM Assets présente les restrictions suiv
 * AEM peut continuer à afficher le terme de recherche une fois que vous avez sélectionné les propriétés d’une ressource à partir des résultats de recherche, puis annuler la recherche. <!-- (CQ-4273540) -->
 * Lors de la recherche de dossiers ou de fichiers et de dossiers, les résultats de recherche ne peuvent être triés selon aucun paramètre.
 * Si vous appuyez sur Entrée sans taper quoi que ce soit dans la barre Omnisearch, AEM renvoie un de fichiers uniquement et non de dossiers. Si vous recherchez spécifiquement des dossiers sans utiliser de mot-clé, AEM ne renvoie aucun résultat.
-* A l’aide de la [!UICONTROL case à cocher Tout] sélectionner, vous pouvez uniquement sélectionner les 100 premiers fichiers recherchés dans les  de carte et les 200 premiers fichiers recherchés dans les  de. Si vous faites défiler et chargez plus de fichiers dans l’interface utilisateur, vous pouvez en sélectionner plus à l’aide de l’option [!UICONTROL Sélectionner tout] .
+* Utilisez l’option **[!UICONTROL Sélectionner tout]** dans le coin supérieur droit de la page de recherche pour sélectionner les fichiers recherchés. Experience Manager affiche initialement 100 ressources dans les  de cartes et 200 ressources dans les  de . D’autres ressources sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de fichiers que les fichiers chargés. Le nombre de fichiers sélectionnés s’affiche dans le coin supérieur droit de la page des résultats de la recherche. Vous pouvez agir sur la sélection, par exemple, télécharger les fichiers sélectionnés, mettre à jour les propriétés de métadonnées en bloc pour les fichiers sélectionnés ou ajouter les fichiers sélectionnés à une collection. Lorsque plus de ressources sont sélectionnées qu’affichées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources sur lesquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, assurez-vous que toutes les ressources sont explicitement sélectionnées.
 
 La recherche visuelle ou par analogie présente les restrictions suivantes :
 
@@ -269,7 +269,7 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 
 * Si vous surveillez l’état de révision des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
 * Utilisez le prédicat Statistiques pour rechercher les ressources prises en charge en fonction de leurs statistiques d’utilisation obtenues auprès de diverses applications Creative. Les données d’utilisation sont regroupées sous Note d’utilisation, Impressions, Clics et Canaux de médias où les ressources apparaissent dans des catégories.
-* Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les fichiers recherchés. Il sélectionne les 100 premiers actifs dans les  de carte et les 200 premiers actifs dans les  de . Vous pouvez agir sur la sélection, par exemple, télécharger les fichiers sélectionnés, mettre à jour les propriétés de métadonnées en bloc pour les fichiers sélectionnés ou ajouter les fichiers sélectionnés à une collection.
+* Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les fichiers recherchés. Experience Manager affiche initialement 100 ressources dans les  de cartes et 200 ressources dans les  de . D’autres ressources sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de fichiers que les fichiers chargés. Le nombre de fichiers sélectionnés s’affiche dans le coin supérieur droit de la page des résultats de la recherche. Vous pouvez agir sur la sélection, par exemple, télécharger les fichiers sélectionnés, mettre à jour les propriétés de métadonnées en bloc pour les fichiers sélectionnés ou ajouter les fichiers sélectionnés à une collection. Lorsque plus de ressources sont sélectionnées qu’affichées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources sur lesquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, assurez-vous que toutes les ressources sont explicitement sélectionnées.
 * Pour rechercher les ressources qui ne contiennent pas les métadonnées obligatoires, voir [Métadonnées obligatoires](#mandatorymetadata).
 * La recherche utilise tous les champs de métadonnées. Une recherche générique, telle que la recherche du nombre 12, renvoie généralement de nombreux résultats. Pour de meilleurs résultats, utilisez des guillemets doubles (et non des guillemets simples) ou assurez-vous que le nombre est attaché à un mot sans caractère spécial (par exemple, *chaussure12*).
 * La recherche de texte intégral prend en charge des opérateurs tels que -, ^, etc. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, entrez « Notebook - Beauté » au lieu de Notebook - Beauté.
