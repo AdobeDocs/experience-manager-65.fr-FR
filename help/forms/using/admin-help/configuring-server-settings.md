@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -197,13 +197,15 @@ If your solution is deployed in a clustered environment, replace `@@notification
 
 **JBoss :** 8080
 
-**** Oracle WebLogic Server : 7001
+**Oracle WebLogic Server :** 7001
 
-**** IBM WebSphere : 9080
+**IBM WebSphere :** 9080
 
 To make these URLs function correctly, replace `<`*PORT *`>`with the port number that is appropriate for your environment.
 
-***Remarque ** : si vous utilisez une application Web personnalisée autre que Forms pour permettre aux utilisateurs d’accéder aux tâches, vous devez utiliser le format d’URL approprié pour votre application personnalisée.*
+>[!NOTE]
+>
+>si vous utilisez une application Web personnalisée autre que Forms pour permettre aux utilisateurs d’accéder aux tâches, vous devez utiliser le format d’URL approprié pour votre application personnalisée.
 
 ### Sélecteur de variables {#variable-picker}
 
@@ -211,9 +213,9 @@ La liste Sélectionneur de variables fournit des variables utiles que vous pouve
 
 Pour les rappels, affectations de tâche et échéances des utilisateurs et des groupes, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**description** Contenu de la propriété Description, tel que défini dans l’étape utilisateur (point de départ, opération d’affectation de tâche ou opération d’affectation de tâches multiples) du processus dans Workbench.
+**description** Contenu de la propriété Description, tel que défini dans l’étape de l’utilisateur (point  de l’, opération d’affectation de  de ou opération d’affectation de plusieurs ) du processus dans Workbench.
 
-**instructions** Contenu de la propriété Instructions de la tâche, tel que défini dans l’étape utilisateur du processus dans Workbench.
+**instructions** Contenu de la propriété Instructions du, tel que défini dans l’étape utilisateur du processus dans Workbench.
 
 **notification-host** Nom d’hôte du serveur d’applications AEM forms.
 
@@ -221,15 +223,17 @@ Pour les rappels, affectations de tâche et échéances des utilisateurs et des 
 
 **operation-name** Nom de l’étape.
 
-**taskid** Identifiant unique de la tâche en cours.
+**taskid** Identifiant unique du  actuel.
 
-**actions** Génère une liste numérotée des itinéraires valides (par exemple, Approuver, Rejeter) sur lesquels le destinataire peut cliquer.
+**actions** Génère un numéroté des itinéraires valides (par exemple, Approuver, Rejeter) sur lesquels le peut cliquer.
 
 De plus, pour les rappels, affectations de tâche et échéances de groupe, vous pouvez aussi utiliser les variables suivantes :
 
 **group-name** Nom du groupe auquel est affectée la tâche.
 
-**Remarque**: *Si une variable n’a pas de valeur, rien n’est renvoyé.*
+>[!NOTE]
+>
+>si une variable ne comporte aucune valeur, une valeur vide est renvoyée.
 
 Pour les branches bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
