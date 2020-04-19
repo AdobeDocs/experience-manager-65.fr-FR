@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -35,14 +35,18 @@ Pour plus d’informations sur l’activation du mode de sauvegarde sécurisé, 
 
 **Emplacement du répertoire** temporaire Chemin du répertoire dans lequel AEM forms crée des fichiers temporaires de produit. Si la valeur de ce paramètre est vide, l’emplacement par défaut est le répertoire temporaire système. Assurez-vous que le répertoire temporaire est un dossier modifiable.
 
-***Remarque ** : assurez-vous que le répertoire temporaire se trouve sur le système de fichiers local. AEM forms ne prend pas en charge un répertoire temporaire à un emplacement distant.*
+>[!NOTE]
+>
+>Assurez-vous que le répertoire temporaire se trouve sur le système de fichiers local. AEM forms ne prend pas en charge un répertoire temporaire à un emplacement distant.
 
 **Répertoire** racine de l’   globale Le répertoire racine du de(GDS) global est utilisé aux fins suivantes :
 
 * Stockage de documents de longue durée. Les documents de longue durée ne sont assortis d’aucune date d’expiration et sont conservés jusqu’à leur suppression (fichiers PDF utilisés dans un processus de flux de production, par exemple). Les documents de longue durée représentent une partie stratégique de l’état du système global. Si certains d’entre eux sont perdus ou corrompus, le serveur Forms peut devenir instable. De ce fait, il est important de stocker ce répertoire sur un périphérique RAID.
 * Stockage de documents temporaires nécessaires au cours du traitement.
 
-   ***Remarque ** : vous pouvez également activer le stockage de documents dans la base de données AEM Forms. Cependant, les performances du système sont meilleures lorsque vous utilisez le répertoire de stockage global de documents.*
+>[!NOTE]
+>
+>Vous pouvez également activer le stockage de documents dans la base de données AEM forms. Cependant, les performances du système sont meilleures lorsque vous utilisez le répertoire de stockage global de documents.
 
 * Transfert de documents entre les nœuds d’un groupe de serveurs. Si vous exécutez AEM forms dans un environnement en grappe, ce répertoire doit être accessible à partir de tous les nœuds de la grappe.
 * Réception de paramètres entrants à partir d’appels d’API distantes.
@@ -53,9 +57,13 @@ Si vous ne spécifiez pas un répertoire racine de stockage global de documents,
 * `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
 * `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
-***Remarque ** : toute modification de la valeur du paramètre de répertoire racine de stockage global de documents doit faire l’objet d’un soin particulier. Ce répertoire stocke les fichiers de longue durée utilisés dans un processus, ainsi que les composants critiques du produit AEM forms. Le changement de l’emplacement du répertoire de stockage global de documents représente une modification majeure du système. Une mauvaise configuration de cet emplacement rend AEM forms inopérant et peut nécessiter une réinstallation complète de ce dernier. Si vous spécifiez un nouvel emplacement pour le répertoire de stockage global de documents, le serveur d’applications doit être arrêté et les données migrées avant le redémarrage du serveur. L’administrateur système doit déplacer tous les fichiers de l’ancien emplacement vers le nouvel emplacement en conservant l’arborescence interne.*
+>[!NOTE]
+>
+>toute modification de la valeur du paramètre de répertoire racine de stockage global de documents doit faire l’objet d’un soin particulier. Ce répertoire stocke les fichiers de longue durée utilisés dans un processus, ainsi que les composants critiques du produit AEM forms. Le changement de l’emplacement du répertoire de stockage global de documents représente une modification majeure du système. Une mauvaise configuration de cet emplacement rend AEM forms inopérant et peut nécessiter une réinstallation complète de ce dernier. Si vous spécifiez un nouvel emplacement pour le répertoire de stockage global de documents, le serveur d’applications doit être arrêté et les données migrées avant le redémarrage du serveur. L’administrateur système doit déplacer tous les fichiers de l’ancien emplacement vers le nouvel emplacement en conservant l’arborescence interne.
 
-***Remarque ** : n’indiquez pas le même répertoire pour le répertoire temporaire et le répertoire de stockage global de documents.*
+>[!NOTE]
+>
+>n’indiquez pas le même répertoire pour le répertoire temporaire et le répertoire de stockage global de documents..
 
 Pour plus d’informations sur le répertoire de stockage global de documents, consultez [Préparation à l’installation d’AEM Forms sur un seul serveur](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
@@ -91,7 +99,9 @@ Le mode FIPS ne prend pas en charge les algorithmes de chiffrement utilisés dan
 
 En général, lorsque le mode FIPS est activé, le service Assembler n’applique le chiffrement du mot de passe à aucun document. En cas de tentative, une exception FIPSModeException est générée pour indiquer que « Le chiffrement du mot de passe n’est pas autorisé en mode FIPS ». En outre, l’élément PDFsFromBookmarks DDX (Document Description XML) n’est pas pris en charge en mode FIPS lorsque le document de base est chiffré par mot de passe.
 
-***Remarque ** : le logiciel AEM Forms ne valide pas le code pour assurer la compatibilité FIPS. Il fournit un mode de fonctionnement FIPS permettant d’utiliser les algorithmes certifiés FIPS pour les services de cryptographie des bibliothèques certifiées FIPS (RSA).*
+>[!NOTE]
+>
+>Le logiciel AEM forms ne valide pas le code pour assurer la compatibilité FIPS. Il fournit un mode de fonctionnement FIPS permettant d’utiliser les algorithmes certifiés FIPS pour les services de cryptographie des bibliothèques certifiées FIPS (RSA).
 
 **Activer WSDL** Sélectionnez cette option pour activer la génération WSDL (Web Service Definition Language) pour tous les services faisant partie d’AEM forms.
 
