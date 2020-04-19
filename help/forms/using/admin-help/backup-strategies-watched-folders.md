@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -165,7 +165,9 @@ Les stratégies suivantes permettent de limiter les pertes de données des dossi
    * **Phase 5 :** résultats renvoyés
    Si les fichiers se trouvent en Phase 1, ils seront manipulés. Si les fichiers se trouvent en Phase 2 ou 3, placez-les dans le dossier input afin qu’ils soient manipulés à nouveau.
 
-   **Remarque**: Si la manipulation d’un fichier se produit plusieurs fois, la perte de données est évitée, mais les résultats peuvent être dupliqués. *
+   >[!NOTE]
+   >
+   >en manipulant un fichier plusieurs fois, vous évitez les pertes de données mais vos résultats peuvent être dupliqués.
 
 ## Conclusion {#conclusion}
 
