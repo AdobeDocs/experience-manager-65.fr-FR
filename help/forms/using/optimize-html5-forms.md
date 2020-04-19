@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -20,7 +20,9 @@ Les formulaires HTML5 génèrent des formulaires au format HTML5. Le résultat p
 
 Cet article décrit les étapes à suivre pour activer la compression sur le serveur Web Apache 2.0 32 bits, avec JBoss.
 
-*Remarque : Les instructions suivantes ne concernent que le serveur Web Apache 2.0 32 bits.*
+>[!NOTE]
+>
+>Les instructions suivantes ne s&#39;appliquent pas au serveur autre que le serveur Web Apache 2.0 32 bits.
 
 Procurez-vous le logiciel du serveur Web Apache applicable sur votre système d’exploitation :
 
