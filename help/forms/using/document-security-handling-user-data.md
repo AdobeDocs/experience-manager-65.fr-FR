@@ -8,14 +8,14 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 66a3db6cd50ae25849dc173e0714df7c140c1774
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
 
 # Document Security | Gestion des données utilisateur {#document-security-handling-user-data}
 
-AEM Forms Document Security vous permet de créer, de stocker et d’appliquer des paramètres de protection prédéfinis à vos documents. Cela garantit que seuls les utilisateurs autorisés peuvent utiliser les documents. Vous pouvez protéger les documents à l’aide de stratégies. Une stratégie est un groupe d’informations comprenant des paramètres de sécurité et une liste d’utilisateurs autorisés. Vous pouvez appliquer une stratégie à un ou plusieurs documents et autoriser des utilisateurs ajoutés dans le composant User Management d’AEM Forms JEE.
+La  de sécurité d’AEM Forms vous permet de créer, de stocker et d’appliquer des paramètres de sécurité prédéfinis à votre  de. Cela garantit que seuls les utilisateurs autorisés peuvent utiliser les documents. Vous pouvez protéger les documents à l’aide de stratégies. Une stratégie est un groupe d’informations comprenant des paramètres de sécurité et une liste d’utilisateurs autorisés. Vous pouvez appliquer une stratégie à un ou plusieurs documents et autoriser des utilisateurs ajoutés dans le composant User Management d’AEM Forms JEE.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -49,7 +49,7 @@ Le tableau suivant montre comment Document Security organise les données dans l
   </tr>
   <tr>
    <td><p><code>EdcRevokationEntity</code></p> </td>
-   <td>Stocke des informations sur la révocation et la réintégration des documents protégés.</td>
+   <td>Stocke des informations sur la révocation et la réintégration des  d’protégés.</td>
   </tr>
   <tr>
    <td><code>EdcMyPolicyListEntity</code></td>
@@ -201,7 +201,9 @@ Procédez comme suit pour supprimer les données de Document Security pour un ID
    1. Users who have personal policies log into their document security web page at https://[*server*]:[*port*]/edc.
    1. Navigate to **[!UICONTROL Services > Document Security > My Policies]**.
    1. Ouvrez une stratégie et supprimez l’utilisateur de la stratégie.
-   **Remarque**: Les administrateurs peuvent rechercher, accéder et supprimer des données utilisateur des stratégies personnelles d’autres utilisateurs dans **[!UICONTROL Services > Document Security > Mes stratégies]** à l’aide d’Administration Console.
+   >[!NOTE]
+   >
+   >Administrators can search, access, and delete user data from personal policies of other users in **[!UICONTROL Services > Document Security > My Policies]** using administration console.
 
 1. Supprimez les données de l’ID principal de la base de données User Management. For detailed steps, see [Forms User Management | Handling user data](/help/forms/using/user-management-handling-user-data.md).
 1. Démarrez le serveur AEM Forms.
