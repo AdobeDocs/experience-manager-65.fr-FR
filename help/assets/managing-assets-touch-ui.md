@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -646,7 +646,7 @@ Dans les  de carte, l’option **[!UICONTROL Sélectionner]** s’affiche sous f
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Lorsque vous parcourez un dossier ou une collection dans l’interface utilisateur Ressources d’un navigateur, vous pouvez sélectionner tous les fichiers affichés ou chargés à l’aide de l’option [!UICONTROL Sélectionner tout] située dans le coin supérieur droit. Si vous ne faites pas défiler l’écran ci-dessous, seuls 100 fichiers sont chargés dans le de cartes et 200 sont chargés dans le  de. Sélectionner tout sélectionne uniquement ces nombreux fichiers.
+Lorsque vous parcourez un dossier ou une collection dans l’interface utilisateur Ressources d’un navigateur, vous pouvez sélectionner tous les fichiers affichés ou chargés à l’aide de l’option [!UICONTROL Sélectionner tout] située dans le coin supérieur droit. Au départ, seules 100 ressources sont chargées dans les  de carte et 200 dans les  de . D’autres ressources sont chargées dans le  lorsque vous faites défiler la page des résultats de la recherche. L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les fichiers chargés.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
