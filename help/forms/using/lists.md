@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -170,7 +170,9 @@ La fonction Rechercher et remplacer vous permet de rechercher (et de remplacer) 
 
 **Mot entier :** La recherche renvoie uniquement des mots entiers.
 
-**Remarque :** Si vous saisissez des caractères spéciaux dans le champ Rechercher, l’option Mot entier est désactivée.
+>[!NOTE]
+>
+>Si vous saisissez des caractères spéciaux dans la zone de texte Rechercher, l’option Mot entier est désactivée.
 
 **Reg ex :** Recherche à l’aide d’un   régulier. Par exemple, l’expression régulière suivante recherche des adresses électroniques dans un module de texte :
 
