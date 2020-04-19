@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -43,11 +43,11 @@ Les sites de référence offrent des ressources réutilisables que vous pouvez u
 
 Avant de configurer le site de référence, assurez-vous que vous disposez des éléments suivants :
 
-* **AEM Essentials** AEM QuickStart, package du module complémentaire AEM Forms et packages de sites de référence. See [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for add-on and reference sites packages details.
+* **AEM Essentials** AEM QuickStart, package du module complémentaire AEM Forms et packages de sites de référence. See [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) for add-on and reference sites packages details.
 
 * **Un service SMTP** Vous pouvez utiliser n’importe quel service SMTP.
 
-* **Compte de développeur Adobe Sign et application d’API Adobe Sign** Pour utiliser les fonctionnalités de signature numérique, un compte de développeur Adobe Sign est requis. Voir [Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
+* **Compte de développeur Adobe Sign et application d’API Adobe Sign** Pour utiliser les fonctionnalités de signature numérique, un compte de développeur Adobe Sign est requis. Voir [Adobe Sign](https://acrobat.adobe.com/fr/fr/why-adobe/developer-form.html).
 
 * Instance en cours d’exécution de Microsoft Dynamics 365 à intégrer à AEM Forms. Pour exécuter le site de référence, vous importez les données d’exemple dans l’instance Microsoft Dynamics afin de préremplir la communication interactive utilisée dans le site de référence.
 * Une instance en cours d’exécution d’AEM avec le package de module complémentaire Forms. Pour plus d’informations, reportez-vous à la section [Installation et configuration d’AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
@@ -187,7 +187,7 @@ Procédez comme suit pour configurer le service de messagerie sur l’instance d
 
 Les modèles de courrier électronique pour le site de référence We.Finance contiennent des liens personnalisés dans les courriers électroniques. Ces liens possèdent un espace réservé tel que `${placeholder}`. Ces espaces réservés sont remplacés par des valeurs réelles avant l’envoi des courriers électroniques. La configuration de protection XSS par défaut pour AEM n’autorise pas les accolades (**{ }**) dans l’URL d’un contenu HTML. Cependant, vous pouvez remplacer la configuration par défaut en procédant comme suit sur l’instance de publication :
 
-1. Copiez `/libs/cq/xssprotection/config.xml` vers `/apps/cq/xssprotection/config.xml`.
+1. Copiez `/libs/cq/xssprotection/config.xml` dans `/apps/cq/xssprotection/config.xml`.
 1. Ouvrez `/apps/cq/xssprotection/config.xml`.
 1. In the `common-regexps` section, modify the `onsiteURL` entry as follows and save the file.
 
@@ -314,7 +314,7 @@ Effectuez les étapes suivantes sur les instances d’auteur et de publication 
 1. Accédez à **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** et ouvrez le fichier swagger.
 1. Mettez à jour les paramètres de l’hôte et du port en fonction de votre  .
 1. Enregistrez les paramètres.
-1. (Instance **Auteur uniquement**) Accédez à **Outils** > Services **** Cloud > Sources de **données > global.****** Sélectionnez **roi-rest** et appuyez sur **Propriétés**.Appuyez sur Paramètres **d’** authentification et définissez le type d’ **authentification sur Authentification de base.****** Spécifiez/ `admin``admin`comme nom d’utilisateur/mot de passe pour accéder au service. Tap **Save &amp; Close**.
+1. (Instance **Auteur uniquement**) Accédez à **Outils** > Services **** Cloud > Sources de **données > global.****** Sélectionnez **roi-rest** et appuyez sur **Propriétés**.Appuyez sur Paramètres **d’** authentification et définissez le type d’ **authentification sur Authentification de base.****** Spécifiez/ `admin``admin`comme nom d’utilisateur/mot de passe pour accéder au service. Appuyez sur **Save &amp; Close** (Enregistrer et fermer). 
 
 ## Intégration à Marketing Cloud {#integrate-with-marketing-cloud}
 
@@ -355,7 +355,10 @@ Le site de référence bénéficie de l’intégration d’Adobe Target à AEM F
 Pour tester l’intégration au site de référence, procédez comme suit pour configurer Target dans AEM :
 
 1. Start the author quickstart with the jvm argument `-Dabtesting.enabled=true` to enable A/B testing on the server.
-   **Remarque**: Si l’instance AEM s’exécute sur JBoss, qui est démarré en tant que service à partir de l’installation clé en main, ajoutez le `-Dabtesting.enabled=true` paramètre dans l’entrée suivante dans le `jboss\bin\standalone.conf.bat` fichier :
+
+   >[!NOTE]
+   >
+   >Si l’instance AEM s’exécute sur JBoss, qui est démarré en tant que service à partir de l’installation clé en main, ajoutez le `-Dabtesting.enabled=true` paramètre dans l’entrée suivante dans le `jboss\bin\standalone.conf.bat` fichier :
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Accédez à l’adresse `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
