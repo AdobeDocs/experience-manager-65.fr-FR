@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -306,7 +306,9 @@ Effectuez les étapes suivantes pour expérimenter la création d’un test A/B 
 1. Ouvrez CRXDE Lite et prenez une copie du fichier suivant : /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Remplacez la définition de fonction `onReportLoadSuccess` dans le fichier mentionné ci-dessus par la définition de fonction dans le fichier suivant : /apps/we-finance/demo-artifacts/targetreport.js
 
-   Remarque : Ces modifications sont uniquement destinées à la démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
+   >[!NOTE]
+   >
+   >Ces modifications sont uniquement à titre de démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
 
 1. Actualisez le rapport que vous avez généré et vous verrez quelque chose qui ressemble à ça : Examinez le tableau de bord de génération de rapports.
 
@@ -555,7 +557,9 @@ Effectuez les étapes suivantes dans l’instance d’auteur pour expérimenter 
 1. Ouvrez CRXDE Lite et prenez une copie du fichier suivant : /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Remplacez la définition de la `onReportLoadSuccess` fonction dans le fichier mentionné ci-dessus par la définition de fonction dans le fichier suivant : /apps/we-finance/demo-artifacts/targetreport.js
 
-   Remarque : Ces modifications sont uniquement destinées à la démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
+   >[!NOTE]
+   >
+   >Ces modifications sont uniquement à titre de démonstration. Assurez-vous de restaurer le contenu du fichier après avoir terminé cette procédure.
 
 1. Actualisez le rapport que vous avez généré et vous verrez quelque chose qui ressemble à ça : Examinez le tableau de bord de génération de rapports.
 
