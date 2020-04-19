@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -45,8 +45,12 @@ Pour créer un modèle personnalisé pour divers composants de Forms Portal, sui
    * Component Lien : /libs/fd/fp/linkTemplate
    Ajoutez un titre que vous souhaitez afficher lors de la sélection des modèles de disposition.
 
-   *Remarque : le titre peut être différent du nom du nœud sling:Folder que vous avez créé.*
-   *L’image ci-après illustre la configuration pour le composant Recherche et énumérateur.* ![Création d’un nœud sling:Folder](assets/1.png)
+   >[!NOTE]
+   >
+   >Le titre peut être différent du nom de noeud sling:Folder que vous avez créé.
+
+   L’image ci-après illustre la configuration pour le composant Recherche et énumérateur.
+   ![Création d’un nœud sling:Folder](assets/1.png)
 
 1. Créez un fichier template.html dans ce dossier qui servira de modèle personnalisé.
 1. Créez le modèle personnalisé et utilisez des métadonnées personnalisées comme indiqué ci-dessous.
@@ -102,13 +106,15 @@ Les différents composants de Forms Portal fournissent des jeux exclusifs de mé
 
 * **htmlStyle** et **pdfStyle** : style d’affichage des icônes HTML et PDF utilisées pour le rendu. Valid values are “**__FP_display_none**” or blank.
 
-   **** Remarque : Pensez à utiliser la classe __FP_display_none dans votre feuille de style personnalisée.
+>[!NOTE]
+>
+>Pensez à utiliser la classe __FP_display_none dans votre feuille de style personnalisée.
 
 * **downloadUrl** : URL permettant de télécharger une ressource.
 
 Prise en charge de la localisation et du tri et utilisation des propriétés de configuration de l’interface utilisateur (Recherche et énumérateur uniquement) :
 
-1. **Prise en charge** de la localisation : Pour localiser un texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, le cas échéant.
+1. **Prise en charge** des  : Pour localiser un texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, le cas échéant.
    *Dans l’exemple présenté, les attributs`${localize-Apply}`et`${localize-Download}`sont utilisés pour localiser le texte Appliquer et Télécharger.*
 
 1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » à l’en-tête spécifique du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
@@ -125,7 +131,7 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 
 ### Composant Brouillons et envois {#drafts-amp-submissions-component}
 
-* **Path** : chemin du nœud des métadonnées de bouillon/envoi. Utilisez-la avec l’extension .HTML comme URL pour ouvrir un brouillon ou un envoi.
+* **Path** : chemin du nœud des métadonnées de bouillon/envoi. Utilisez-la avec l&#39;extension .HTML comme URL pour ouvrir un brouillon ou un envoi.
 * **contextPath** : chemin du contexte de l’instance AEM.
 * **firstLetter** : première lettre (majuscule) du titre du formulaire adaptatif qui a été enregistré en tant que brouillon ou envoyé.
 * **formName** : titre du formulaire adaptatif qui a été enregistré en tant que brouillon ou envoyé.
@@ -149,15 +155,15 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 
 **A**. Elément conteneur
 
-**** B. Métadonnées &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
+**B.** Métadonnées &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
 
 **C.** Attribut répétable aux données utilisé pour la section de modèle de chaque formulaire
 
-**** D. Pour localiser la chaîne &quot;Apply&quot;
+**D.** Pour localiser la chaîne &quot;Apply&quot;
 
 **E.** Utilisation de la propriété de configuration pdfLinkText
 
-**** F. Utilisation des métadonnées &quot;pdfUrl&quot;
+**F.** Utilisation des métadonnées &quot;pdfUrl&quot;
 
 ## Conseils, astuces et problèmes connus {#tips-tricks-and-known-issues}
 
@@ -172,7 +178,7 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 * [Créer une page Forms Portal](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Drafts and Submissions](/help/forms/using/draft-submission-component.md)
-* [Personnalisation du stockage des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Personnaliser   de brouillons et de formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)
