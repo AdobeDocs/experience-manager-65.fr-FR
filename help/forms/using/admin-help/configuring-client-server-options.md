@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -26,7 +26,9 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 Si vous utilisez IPv6, vous devez saisir l’URL de base sous la forme du nom de machine ou du nom DNS. Si vous utilisez une adresse IP numérique, Acrobat ne parviendra pas à ouvrir les fichiers protégés par une stratégie. Par ailleurs, utilisez une URL HTTP sécurisée (HTTPS) sur votre serveur.
 
-***Remarque ** : l’URL de base est incorporée dans des fichiers protégés par une stratégie. Les applications clientes utilisent l’URL de base pour se reconnecter au serveur. Les fichiers protégés contiennent toujours l’URL de base, même si elle est modifiée par la suite. Si vous modifiez l’URL de base, les informations de configuration doivent être mises à jour pour tous les clients qui se connectent.*
+>[!NOTE]
+>
+>l’URL de base est incorporée dans des fichiers protégés par une stratégie. Les applications clientes utilisent l’URL de base pour se reconnecter au serveur. Les fichiers protégés contiennent toujours l’URL de base, même si elle est modifiée par la suite. Si vous modifiez l’URL de base, les informations de configuration doivent être mises à jour pour tous les clients qui se connectent.
 
 **Période de location hors connexion par défaut :** durée par défaut pendant laquelle un utilisateur peut utiliser un protégé  hors ligne. Ce paramètre détermine la valeur de départ de la période d’ouverture hors connexion au moment de la création d’une stratégie (voir Création et modification de stratégies). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
