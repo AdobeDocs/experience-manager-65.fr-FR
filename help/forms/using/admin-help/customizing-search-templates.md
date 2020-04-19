@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -46,7 +46,7 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
 
       **Conseil**: *Si vous avez précédemment sélectionné l’élément Nom du processus et spécifié un processus, toutes les variables de processus définies dans ce processus peuvent également être sélectionnées.*
 
-      **Conseil**: *Si vous sélectionnez l’élément de tâche visible, les utilisateurs pourront supprimer les tâches terminées des résultats de la recherche.*
+      **Conseil**: *Si vous sélectionnez l’élément  visible, les utilisateurs pourront supprimer les  terminées des résultats de la recherche.*
 
       Les champs relatifs au critère de recherche de l’élément sélectionné s’affichent au bas de l’onglet Critère.
 
@@ -55,7 +55,7 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
       * Sélectionnez un opérateur relationnel (comme égal à) dans la liste fournie et indiquez la valeur de l’opérande dans la boîte qui se trouve à côté.
       * (Facultatif) Pour autoriser des utilisateurs à modifier la valeur de l’opérande dans Workspace, sélectionnez Autoriser l’utilisateur à modifier l’opérande.
       * (Facultatif) Pour autoriser des utilisateurs à modifier l’opérateur relationnel, sélectionnez Autoriser l’utilisateur à sélectionner un autre opérateur relationnel. Dans la liste qui apparaît, sélectionnez les opérateurs auxquels les utilisateurs pourront faire appel.
-      **Conseil**: *Si vous avez sélectionné Nom du processus comme élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher une liste dans laquelle vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
+      **Conseil**: *Si vous avez sélectionné Nom du processus en tant qu’élément, vous pouvez cliquer sur l’icône en regard du champ de l’opérande pour afficher un dans lequel vous pouvez sélectionner un processus en cours d’exécution sur le serveur Forms. Après avoir sélectionné un processus, toute variable définie pour ce processus peut être sélectionnée dans Variables de processus, dans la partie supérieure de l’onglet Critère.*
 
       **Conseil**: *Vous pouvez supprimer un élément du modèle de recherche en cliquant sur l’icône Supprimer en regard des critères de recherche de l’élément.*
 
@@ -65,8 +65,9 @@ Vous pouvez créer autant de modèles de recherche que vous le souhaitez.
    * Sélectionnez un élément de processus ou de tâche et cliquez droite sur la flèche pour le déplacer vers la liste Colonnes à reporter.
    * Dans cette liste, sélectionnez l’élément de processus ou de tâche et cliquez sur la flèche Haut ou Bas pour le placer dans l’ordre dans la colonne. Les en-têtes de colonne des résultats de recherche s’affichent dans l’ordre selon lequel ils sont répertoriés à cet endroit.
    * (Facultatif) Pour modifier le nom de l’élément de l’en-tête de colonne, sélectionnez-le dans la liste Colonnes de rapport et indiquez le nouveau nom.
-
-      **Remarque**: *La disposition spécifiée dans le modèle de recherche remplace les préférences de l’utilisateur spécifiées pour les en-têtes de colonne dans Workspace.*
+   >[!NOTE]
+   >
+   >la mise en page spécifiée dans le modèle de recherche remplace les préférences de l’utilisateur indiquées pour les en-têtes de colonne dans Workspace.
 
 1. (Facultatif) Pour chaque colonne à trier dans les résultats de recherche, cliquez sur l’onglet Trier et procédez comme suit :
 
