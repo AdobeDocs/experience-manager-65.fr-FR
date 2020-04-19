@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -201,7 +201,9 @@ For example, if it is 8 PM on July 17, 2009 and you specify `C:/Test/WF0/failure
 
 Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. La valeur par défaut est result/%Y/%M/%D/, qui correspond au dossier result dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-***Remarque ** : plus les dossiers de résultats sont petits, plus les performances de Watched Folder augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type`result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type`result/%Y%M%D`.*
+>[!NOTE]
+>
+>plus les dossiers de résultats sont petits, plus les performances de Watched Folder augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
 
 **Conserver le dossier :** Emplacement où les fichiers sont stockés après une analyse et un ramassage réussis. Ce chemin d’accès de répertoire peut être absolu, relatif ou null. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
 
@@ -231,7 +233,9 @@ La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur p
 
 Les sorties de Watched Folder peuvent être un document unique, une liste de documents ou un mappage de documents. Ces documents de sortie sont ensuite enregistrés dans le dossier result, à l’aide du modèle défini dans le mappage des paramètres de sortie.
 
-**Remarque**: La *spécification de noms de fichier de sortie uniques améliore les performances. For example, consider the case where the service returns one output document and the Output Parameter Mapping maps it to`%F.%E`(the file name and extension of the input file). Dans ce cas, si des utilisateurs déposent chaque minute des fichiers dont le nom est identique, que le dossier result est défini sur`result/%Y/%M/%D`et que le paramètre Remplacer les noms de fichier en double est inactif, Watched Folder tente de résoudre les noms de fichiers en double. Le processus impliqué dans la résolution des noms de fichiers en double peut affecter les performances. In this situation, changing the Output Parameter Mapping to`%F_%h_%m_%s_%l`to add hours, minutes, seconds, and milliseconds to the name, or ensuring that dropped files have unique names may improve performance.*
+>[!NOTE]
+>
+>la définition de noms de fichiers de sortie uniques améliore les performances. For example, consider the case where the service returns one output document and the Output Parameter Mapping maps it to `%F.%E` (the file name and extension of the input file). Dans ce cas, si des utilisateurs déposent chaque minute des fichiers dont le nom est identique, que le dossier result est défini sur `result/%Y/%M/%D` et que le paramètre Remplacer les noms de fichier en double est inactif, Watched Folder tente de résoudre les noms de fichiers en double. Le processus impliqué dans la résolution des noms de fichiers en double peut affecter les performances. In this situation, changing the Output Parameter Mapping to `%F_%h_%m_%s_%l` to add hours, minutes, seconds, and milliseconds to the name, or ensuring that dropped files have unique names may improve performance.
 
 ## A propos des modèles de fichier {#about-file-patterns}
 
