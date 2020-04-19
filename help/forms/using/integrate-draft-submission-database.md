@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -25,14 +25,14 @@ L’exemple présenté dans ce document est une implémentation de référence d
 >[!NOTE]
 >
 >* Les exemples et les configurations décrits dans ce document correspondent à MySQL 5.6.24 et vous devez les remplacer de manière appropriée selon votre système de base de données. 
->* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+>* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 >
 
 
 
-## Installation et configuration de l’exemple  {#set-up-and-configure-the-sample}
+## Installer et configurer l’exemple {#set-up-and-configure-the-sample}
 
-Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publication, pour installer et configurer l’exemple :
+Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publication, pour installer et configurer l’exemple :
 
 1. Téléchargez le package suivant **aem-fp-db-integration-sample-pkg-6.1.2.zip** vers votre système de fichiers.
 
@@ -41,15 +41,15 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Go to AEM package manager at https://[*host*]:[*port*]/crx/packmgr/.
-1. Cliquez sur **[!UICONTROL Charger un module]**.
+1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Installer]** en regard du package pour installer le package. 
 1. Go to **[!UICONTROL AEM Web Console Configuration]**
 page at https://[*host*]:[*port*]/system/console/configMgr.
-1. Cliquez pour ouvrir la **[!UICONTROL configuration des brouillons et des envois du portail Forms]** en mode modification.
+1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
 
-1. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :   
+1. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
    | **Propriété** | **Description** | **Valeur** |
    |---|---|---|
@@ -57,7 +57,7 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    | Service de métadonnées de brouillon du portail Forms  | Identifiant du service de métadonnées de brouillon | formsportal.samplemetadataservice |
    | Service de données d’envoi du portail Forms | Identifiant du service de données d’envoi | formsportal.sampledataservice |
    | Service de métadonnées d’envoi du portail Forms  | Identifiant du service de métadonnées d’envoi | formsportal.samplemetadataservice |
-   | Service de données de signature en attente du portail Forms | Identificateur pour le service de données de signature en attente | formsportal.sampledataservice |
+   | Service de données de signature en attente du portail Forms | Identificateur du service de données de signature en attente | formsportal.sampledataservice |
    | Service de métadonnées de signature en attente du portail Forms | Identificateur du service de métadonnées de signature en attente | formsportal.samplemetadataservice |
 
    >[!NOTE]
@@ -79,12 +79,14 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    Pour spécifier un autre nom pour le tableau de données :
 
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
-   **Remarque**: Si vous modifiez les noms des tableaux, fournissez-les dans la configuration du portail de formulaires.
+   >[!NOTE]
+   >
+   >Si vous modifiez les noms des tableaux, fournissez-les dans la configuration du portail de formulaires.
 
-1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Enregistrer]**.   
+1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
 1. La connexion à la base de données peut être effectuée via la source de données en pool Apache Sling Connection.
-1. Pour la connexion Apache Sling, recherchez le **[!UICONTROL pool de connexions Apache Sling Days Commons]** en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :   
+1. Pour la connexion Apache Sling, recherchez le **[!UICONTROL pool de connexions Apache Sling Days Commons]** en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
 <table>
  <tbody>
@@ -93,19 +95,19 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    <td><strong>Valeur</strong></td>
   </tr>
   <tr>
-   <td>Nom de la source de données </td>
-   <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données </p> <p><strong>Remarque : </strong><em>l’exemple d’implémentation utilise FormsPortal comme nom de la source de données.</em></p> </td>
+   <td>Nom de la source de données</td>
+   <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données</p> <p><strong>Remarque : </strong><em>l’exemple d’implémentation utilise FormsPortal comme nom de la source de données.</em></p> </td>
   </tr>
   <tr>
    <td>Classe de pilote JDBC </td>
    <td>com.mysql.jdbc.Driver</td>
   </tr>
   <tr>
-   <td>URI de connexion JDBC<br />    </td>
+   <td>URI de connexion JDBC<br /> </td>
    <td>jdbc:mysql://[<em>hôte</em>]:[<em>port</em>]/[<em>nom_schéma</em>]</td>
   </tr>
   <tr>
-   <td>username</td>
+   <td>Nom d’utilisateur</td>
    <td>Un nom d’utilisateur pour s’authentifier et effectuer des opérations sur les tableaux de base de données </td>
   </tr>
   <tr>
@@ -163,7 +165,7 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
 
 
 
-1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Enregistrer]**.   
+1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
 1. Si vous disposez déjà d’un tableau dans le schéma de la base de données, passez à l’étape suivante.
 
@@ -299,18 +301,18 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
 
 L’exemple d’implémentation est désormais configuré, et vous pouvez l’utiliser pour répertorier vos brouillons et envois tout en stockant toutes les données et métadonnées dans une base de données. Voyons maintenant comment les services de données et de métadonnées sont configurés dans l’exemple. 
 
-## Installez le fichier mysql-connector-java-5.1.39-bin.jar. {#install-mysql-connector-java-bin-jar-file}
+## Installer le fichier mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
 Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publication, pour installer le fichier mysql-connector-java-5.1.39-bin.jar :
 
-1. Accédez au package com.mysql.jdbc `https://'[server]:[port]'/system/console/depfinder` et recherchez-le.
-1. Dans la colonne Exporté par, vérifiez si le package est exporté par un groupe.
+1. Accédez à `https://'[server]:[port]'/system/console/depfinder` et recherchez le package com.mysql.jdbc.
+1. Dans la colonne Exported by (Exporté par), vérifiez si le package est exporté par un groupe.
 
    Continuez si le package n’est pas exporté par un groupe.
 
-1. Accédez à `https://'[server]:[port]'/system/console/bundles` et cliquez sur **[!UICONTROL Installer/Mettre à jour]**.
-1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Also, select **[!UICONTROL Start Bundle]** and **[!UICONTROL Refresh Packages]** checkboxes.
-1. Click **[!UICONTROL Install or Update]**. Une fois cette opération effectuée, redémarrez le serveur.
+1. Accédez à `https://'[server]:[port]'/system/console/bundles` et cliquez sur **[!UICONTROL Install/Update]** (Installer/Mettre à jour).
+1. Cliquez sur **[!UICONTROL Choose File]** (Choisir un fichier) et accédez au chemin permettant de sélectionner le fichier mysql-connector-java-5.1.39-bin.jar. Cochez également les cases **[!UICONTROL Start Bundle]** (Démarrer le groupe) et **[!UICONTROL Refresh Packages]** (Actualiser les packages).
+1. Cliquez sur **[!UICONTROL Install (Installer) ou Update]** (Mettre à jour). Une fois cette opération effectuée, redémarrez le serveur.
 1. (*Windows uniquement*) Désactivez le pare-feu système pour votre système d’exploitation.
 
 ## Exemple de code pour le service de données et de métadonnées de portail de formulaires {#sample-code-for-forms-portal-data-and-metadata-service}
