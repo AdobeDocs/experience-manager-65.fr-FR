@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ Les options suivantes permettent de déterminer comment les fichiers image sont 
 
 **Essayer le convertisseur de secours :** PDF Generator peut utiliser Java™ ou Acrobat pour convertir des fichiers image au format PDF. Lorsque cette option est sélectionnée et qu’une conversion échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant la méthode alternative. Si la méthode alternative échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-***Remarque ** : les fichiers JPEG 2000 ne peuvent être convertis qu’avec Acrobat.*
+>[!NOTE]
+>
+>les fichiers JPEG 2000 ne peuvent être convertis qu’avec Acrobat.
 
 **Utiliser la reconnaissance optique des caractères :** Indique s’il faut appliquer la reconnaissance optique des caractères au PDF. Un logiciel d’OCR vous permet de rechercher, corriger et copier du texte dans un fichier PDF.
 
