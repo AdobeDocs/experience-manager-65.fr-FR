@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -84,7 +84,8 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
 ## Configuration du dossier pour les configurations de service cloud {#cloud-folder}
 
-**Remarque** : la configuration du dossier de services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
+>[!NOTE]
+La configuration du dossier des services cloud est requise pour la configuration des services cloud pour les services RESTful, SOAP et OData.
 
 All cloud service configurations in AEM are consolidated in the `/conf` folder in AEM repository. Par défaut, le dossier `conf` contient le dossier `global` dans lequel vous pouvez créer des configurations de service cloud. Toutefois, vous devez l’activer manuellement pour les configurations cloud. Vous pouvez également créer des dossiers supplémentaires dans `conf` pour créer et organiser des configurations de service cloud.
 
