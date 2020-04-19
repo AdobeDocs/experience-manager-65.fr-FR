@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -78,14 +78,15 @@ Vous pouvez configurer le fournisseur de services de référentiel à utiliser a
 
 Les options suivantes sont disponibles :
 
-**** Nom actuel du fournisseur de référentiel : Nom du fournisseur de services de référentiel actuel
+**Nom actuel du fournisseur de référentiel :** Nom du de référentiel actuel
 
-**** Fournisseur de référentiel IBM FileNet : Transforme le fournisseur de référentiel FileNet en fournisseur du référentiel. Cette option est obsolète.
+**Fournisseur de référentiel IBM FileNet :** Fait du fournisseur de référentiel FileNet le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
 
-**** fournisseur de référentiel : Fait du fournisseur de référentiel natif le fournisseur du référentiel
+**fournisseur de référentiel :** Fait du fournisseur de référentiel natif le fournisseur du référentiel
 
-***Remarque ** : pour sélectionner un fournisseur de services de référentiel qui n’est pas répertorié, configurez RepositoryService dans le composant Applications et services.<!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>pour sélectionner un fournisseur de services de référentiel qui n’est pas répertorié, configurez RepositoryService dans le composant Applications et services <!-- Fix broken link(See Managing Services) -->
 
 1. Dans Administration Console, sélectionnez Services > Connecteur pour IBM FileNet.
 1. Dans la zone Informations sur les fournisseurs de services de référentiel, sélectionnez un autre fournisseur de services de référentiel, puis cliquez sur Enregistrer.
-
