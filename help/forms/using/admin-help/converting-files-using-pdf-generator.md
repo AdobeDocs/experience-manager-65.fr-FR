@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -72,16 +72,19 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 
    * Dans le champ Télécharger, saisissez le chemin d’accès et le nom du fichier HTML ou ZIP, ou cliquez sur Parcourir pour le rechercher et le sélectionner.
    * Dans le champ Spécifier l’URL, saisissez l’URL de la page ou du site Web à convertir.
-
-      ***Remarque ** : le fichier que vous convertissez doit porter l’extension .html, .htm ou .zip.*
+   >[!NOTE]
+   >
+   >le fichier que vous convertissez doit porter l’extension .html, .htm ou .zip.
 
 1. Définissez les paramètres de configuration :
 
    * Pour utiliser des paramètres personnalisés, sélectionnez Utiliser des paramètres personnalisés, indiquez les paramètres de type de fichier et de protection, et définissez un délai d’expiration. La valeur par défaut est de 270 secondes.
-
-      **Remarque** : si vous avez configuré le service Generate PDF pour utiliser Acrobat WebCapture, les paramètres de type de fichier que vous sélectionnez sur cette page n’ont aucune incidence sur le PDF produit. Au lieu de cela, apportez les modifications appropriées à la version d’Acrobat installée sur le serveur.
+   >[!NOTE]
+   >
+   >si vous avez configuré le service Generate PDF pour utiliser Acrobat WebCapture, les paramètres de type de fichier que vous sélectionnez sur cette page n’ont aucune incidence sur le PDF produit. Au lieu de cela, apportez les modifications appropriées à la version d’Acrobat installée sur le serveur.
 
    * Pour utiliser un fichier de paramètres existant, sélectionnez Télécharger le fichier de paramètres et cliquez sur Parcourir pour accéder au fichier.
+
 
 1. Pour télécharger un fichier XMP, cliquez sur Parcourir et accédez à l’emplacement du fichier. Il est possible d’utiliser un fichier XMP pour y inclure des métadonnées standard (voir [A propos des fichiers XMP](converting-files-using-pdf-generator.md#about-xmp-files)).
 1. Cliquez sur Créer. Lorsque le fichier est créé, un lien vers le fichier PDF s’affiche.
@@ -98,7 +101,7 @@ Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comm
 
    La durée de conversion affichée une fois le fichier converti peut être supérieure à la valeur spécifiée ici. En effet, elle inclut le temps passé à attendre le thread ou le processus, la durée de conversion du fichier et le temps pris par le convertisseur de secours (le cas échéant). time. La valeur du paramètre Spécifier un délai d’expiration ne reflète que le temps de conversion du fichier.
 
-1. (Optional) In the **Specify custom Preflight profile** option, click Browse, and select a [custom Preflight profile](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
+1. (Optional) In the **Specify custom Preflight profile** option, click Browse, and select a [custom Preflight profile](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les  de contrôle en amont ne sont utilisées que lors de la conversion des  au format d’archive PDF (PDF/A).
 1. Cliquez sur Exporter. Lorsque la conversion est terminée, un lien renvoyant au fichier exporté s’affiche.
 1. Cliquez sur ce lien pour afficher le fichier converti.
 
