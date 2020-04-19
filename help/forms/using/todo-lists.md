@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -213,7 +213,11 @@ Vous pouvez effectuer une tâche de différentes manières :
 * En utilisant les actions disponibles dans les onglets
 * En utilisant les actions intégrées au formulaire lui-même
 * Dans votre liste de tâches, sans ouvrir la tâche
-Remarque : cette option est disponible si le champ `isMustOpenToComplete` n’est pas sélectionné à l’étape `Assign Task`  (Affecter une tâche) dans Workbench, lors de la conception d’un processus.
+
+>[!NOTE]
+>
+>This option is available if `isMustOpenToComplete` field is not selected in the `Assign Task` step in Workbench, while designing a process.
+
 * Par courrier électronique, si vous recevez des notifications électroniques.
 
 Lorsque vous terminez une tâche, selon la tâche, une boîte de dialogue de confirmation peut apparaître pour confirmer votre action. Par exemple, vous pouvez voir apparaître une boîte de dialogue qui vous invite à attester la validité des informations que vous avez fournies.
@@ -271,7 +275,9 @@ Tout d’abord, définissez vos préférences d’espace de travail AEM Forms po
 
 Les courriers électroniques peuvent contenir un lien qui ouvre la tâche dans AEM Forms Workspace, une pièce jointe du formulaire utilisé pour la tâche, ou des actions pour exécuter la tâche par courrier électronique. Si un formulaire est inclus dans le courrier électronique, vous pouvez ouvrir le formulaire et exécuter la tâche si les boutons nécessaires sont intégrés dans le formulaire. Si les actions pour exécuter la tâche sont incluses dans le courrier électronique, vous pouvez effectuer la tâche en cliquant sur les actions dans le courrier électronique ou en répondant au courrier électronique avec l’action saisie en tant que première ligne dans le corps du courrier électronique.
 
-**Remarque** : pour configurer l’espace de travail de façon à utiliser les modèles de courrier électronique appropriés, consultez le [Guide de l’administrateur d’AEM Forms JEE](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>[!NOTE]
+>
+>To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 
 Lorsque vous exécutez une tâche par courrier électronique, la tâche est supprimée de votre liste de tâches dans AEM Forms Workspace.
 
