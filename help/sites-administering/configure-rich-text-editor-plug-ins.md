@@ -1,14 +1,9 @@
 ---
 title: Configuration des modules externes d’éditeur de texte enrichi
-description: Apprenez à configurer les modules externes d’éditeur de texte enrichi d’AEM afin d’activer différentes fonctionnalités.
-uuid: 012552b7-5e32-4d74-be07-b441c3d4b47b
+description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi d’Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
-mini-toc-levels: 1
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -21,7 +16,7 @@ Pour plus d’informations sur les autres configurations d’éditeur de texte e
 
 >[!NOTE]
 >
->Lorsque vous utilisez CRXDE Lite, il est conseillé d’enregistrer régulièrement les modifications à l’aide de la commande Tout enregistrer.
+>When working with CRXDE Lite, it is recommended to save the changes regularly using [!UICONTROL Save All] option.
 
 ## Activation d’un module externe et configuration de la propriété features {#activateplugin}
 
@@ -63,7 +58,7 @@ After activating a plug-in, follow these guidelines to configure the `features` 
 
 |  | Activer toutes les fonctions | Activer des fonctions spécifiques | Désactiver toutes les fonctions |
 |---|---|---|---|
-| Nom | features | features | features |
+| Name (Nom) | features | features | features |
 | Type | Chaîne | String[] (multi-string; set Type to String and click Multi in CRXDE Lite) | Chaîne |
 | Valeur | `*` (astérisque) | définie sur une ou plusieurs valeurs de fonctions | - |
 
@@ -601,20 +596,18 @@ Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. the `/en/` branch is checked as English, the `/de/` branch as German.
 
 >[!NOTE]
-Le message « Échec de la vérification orthographique » s’affiche si le système tenter d’effectuer une vérification pour une langue non installée.
+The message `Spell checking failed` is seen if a check is attempted for a language that is not installed. The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Ne modifiez pas les fichiers.
 
-Une installation AEM standard comprend les dictionnaires pour les langues suivantes :
-
-* Anglais américain (en_us)
-* Anglais britannique (en_gb)
-
->[!NOTE]
-The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Ne modifiez pas les fichiers.
-
-Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
+Une installation AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Sélectionnez la langue de votre choix et téléchargez le fichier ZIP contenant les définitions de l’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
+
+1. Effectuez l’une des opérations suivantes pour trouver un dictionnaire de votre choix de langue :
+
+   * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, recherchez le lien vers la source d’origine ou la page Web de l’auteur. Localisez les fichiers de dictionnaire pour v2.x sur une telle page.
+   * Recherchez des fichiers de dictionnaire v2.x à l’adresse [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+
+1. Téléchargez l&#39;archive avec les définitions d&#39;orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
    >[!CAUTION]
    Seuls les dictionnaires au format `MySpell` for OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.
@@ -623,9 +616,8 @@ Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
 1. Load the .aff and .dic files in the repository at `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
-Pour exécuter le vérificateur orthographique, appuyez/cliquez sur le bouton Vérificateur orthographique de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
-Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE vérifie l&#39;orthographe des mots et met en évidence les mots mal orthographiés.
+Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état du texte change et les mots mal orthographiés ne sont plus surlignés. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
