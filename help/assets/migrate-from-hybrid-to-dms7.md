@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7aba1f3b492a07fe502f95535a94c8054a044eb5
+source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
 
 ---
 
@@ -23,7 +23,7 @@ Les différences clés supplémentaires entre Dynamic Media-Hybrid et Dynamic Me
 * Création et   de rendus d’image.
 * Configuration et informations d’identification du cloud (mise en service).
 
-Deux options sont disponibles lors du passage de Contenu multimédia dynamique hybride à Contenu multimédia dynamique Scene7. La première option consiste simplement à configurer une nouvelle instance de Contenu multimédia dynamique Scene7 sur AEM. La deuxième option consiste à migrer votre instance existante de Contenu multimédia dynamique hybride vers Contenu multimédia dynamique Scene7. Cette option présente un tableau détaillé sous la forme des étapes et des considérations à prendre en compte lors du déplacement.
+Deux options sont disponibles lorsque vous passez de Contenu multimédia dynamique hybride à Contenu multimédia dynamique Scene7. La première option consiste simplement à configurer une nouvelle instance de Contenu multimédia dynamique Scene7 sur AEM. La deuxième option consiste à migrer votre instance existante de Contenu multimédia dynamique hybride vers Contenu multimédia dynamique Scene7. Cette option présente un tableau détaillé sous la forme des étapes et des considérations à prendre en compte lors du déplacement.
 
 >[!IMPORTANT]
 >
