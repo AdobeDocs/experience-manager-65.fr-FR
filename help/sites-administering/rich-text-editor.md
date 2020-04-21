@@ -1,13 +1,9 @@
 ---
-title: 'Configuration de l’éditeur de texte enrichi pour la création de contenu dans AEM '
-description: Découvrez comment configurer l’éditeur de texte enrichi AEM pour créer du contenu dans AEM.
-uuid: 4f87745e-586a-4cba-887b-391e37520ffc
+title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager.
+description: Découvrez comment configurer l’éditeur de texte enrichi d’Adobe Experience Manager pour créer du contenu dans Adobe Experience Manager.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
-docset: aem65
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -16,19 +12,17 @@ source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 L’éditeur de texte enrichi met à la disposition des auteurs de nombreuses fonctionnalités pour modifier leur contenu textuel. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus sont fournis pour une expérience WYSIWYG de la modification de texte.
 
-L’éditeur de texte enrichi peut être configuré pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Pour savoir comment utiliser les fonctions d’éditeur de texte enrichi pour la création, voir [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-authoring/rich-text-editor.md).
+Pour savoir comment utiliser les fonctions d’éditeur de texte enrichi pour la création, voir [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-authoring/rich-text-editor.md). L’éditeur de texte enrichi peut être configuré pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Le flux de travail suivant illustre l’ordre recommandé d’exécution du de configuration RTE dans Experience Manager.
 
-Le workflow suivant illustre l’ordre dans lequel les tâches de configuration de l’éditeur de texte enrichi doivent être exécutées.
-
-![Séquence d’étapes pour apprendre à configurer le taux](assets/rte_workflow_v1.png)
+![Séquence d’étapes pour apprendre à configurer RTE](assets/rte_workflow_v1.png)
 
 *Figure : Séquence d’étapes pour apprendre à configurer RTE*
 
 ## Présentation des IU tactile et classique {#understand-touch-enabled-ui-and-classic-ui}
 
-L’interface utilisateur tactile est l’interface utilisateur standard d’AEM. Adobe introduced Touch UI with [responsive design](/help/sites-authoring/responsive-layout.md) for authoring environment. The Touch UI is designed for touch and desktop devices. L’IU diffère considérablement de l’IU classique original.
+L’interface utilisateur tactile est l’interface utilisateur standard d’Experience Manager. Adobe a introduit l’interface utilisateur tactile avec une conception [](/help/sites-authoring/responsive-layout.md) réactive pour la création de  de . L’interface utilisateur tactile est conçue pour les périphériques tactiles et de bureau. L’interface diffère considérablement de l’interface utilisateur classique d’origine.
 
-![Barre d’outils d’éditeur de texte enrichi dans l’IU tactile](assets/chlimage_1-35.png)
+![Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur tactile](assets/chlimage_1-35.png)
 
 *Figure : Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur tactile*
 
@@ -39,14 +33,14 @@ L’interface utilisateur tactile est l’interface utilisateur standard d’AEM
 >[!MORELIKETHIS]
 >
 >* [Recommandations relatives aux IU](/help/sites-deploying/ui-recommendations.md)
->* Concernant l’obsolescence de l’IU classique, voir les [Notes de mise à jour d’AEM 6.5](/help/release-notes/deprecated-removed-features.md)
+>* About deprecating the Classic UI, see [Experience Manager 6.5 release notes](/help/release-notes/deprecated-removed-features.md)
 >* For difference between the UIs, see [Touch UI and Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Pour comprendre l’IU tactile dans le détail, voir [Concepts de l’IU tactile d’AEM](/help/sites-developing/touch-ui-concepts.md)
+>* To understand the Touch-enabled UI in detail, see [Concepts of Experience Manager Touch UI](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Différents modes de modification {#editingmodes}
 
-Les auteurs peuvent créer et modifier du contenu textuel dans AEM en utilisant les différents modes des composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
+Les auteurs peuvent créer et modifier du contenu textuel dans Experience Manager à l’aide des différents modes de composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
 
 | Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée | IU tactile | IU classique |
 |--- |--- |--- |--- |--- |
@@ -71,7 +65,7 @@ Dans l’IU classique, un double clic lent sur le composant permet la modificati
 
 ### Modification en plein écran {#full-screen-editing}
 
-Les composants AEM peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Considérez la modification en plein écran comme une version détaillée de la modification en ligne, car elle offre le plus grand nombre d’options de modification. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
+Les composants d’Experience Manager peuvent être ouverts dans un plein écran  qui masque le contenu de la page et occupe l’écran disponible. Considérez la modification en plein écran comme une version détaillée de la modification en ligne, car elle offre le plus grand nombre d’options de modification. It can be opened by clicking ![rte_fullscreen](assets/rte_fullscreen.png), from the compact toolbar when using the inline editing mode.
 
 En mode de boîte de dialogue plein écran, outre une barre d’outils détaillée d’éditeur de texte enrichi, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Il s’applique seulement aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
 
@@ -109,7 +103,6 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 * Les ID des modules externes avec un lien vers la documentation des API. L’ID est utilisé comme nom de nœud lors de l’[activation d’un module externe](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Les valeurs admises pour la propriété `features`.
 * Une description de la fonctionnalité fournie par le module externe.
-
 
 | ID du module externe | features | Description |
 |--- |--- |--- |
@@ -257,7 +250,7 @@ Les options disponibles dans l’éditeur texte enrichi sont transmises depuis l
 * Si la configuration de l’interface utilisateur de RTE a été supprimée ou n’active pas un élément, la stratégie de contenu ne peut pas le configurer.
 * Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les stratégies de contenu.
 
-Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://docs.adobe.com/help/fr/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personnalisation de l’association entre les commandes et les icônes de la barre d’outils {#iconstoolbar}
 
