@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
 
 ---
 
@@ -478,15 +478,15 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Appuyez/cliquez sur la ressource pour ouvrir sa page.
 
-   ![chlimage_1-220](assets/chlimage_1-15.png)
+   ![Page Détails des ressources pour gérer les rendus](assets/chlimage_1-15.png)
 
 1. Appuyez/cliquez sur l’icône de navigation globale et sélectionnez **[!UICONTROL Rendus]** dans la liste.
 
-   ![renditions_menu](assets/renditions_menu.png)
+   ![Rangement de gauche pour ouvrir le menu et sélectionner l’option Rendus](assets/renditions_menu.png)
 
 1. Dans le panneau **[!UICONTROL Rendus]**, consultez la liste des rendus générés pour la ressource.
 
-   ![renditions_panel](assets/renditions_panel.png)
+   ![Panneau Rendus sur la page Détails des ressources](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    Accédez à la page de détails de la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Ajouter le rendu]** de la barre d’outils afin de charger un nouveau rendu pour la ressource.
 
-   ![chlimage_1-221](assets/chlimage_1-16.png)
+   ![Ajouter icône de rendu pour télécharger un nouveau rendu](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    De même, vous pouvez personnaliser l’image de la page Annotation en recouvrant `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-17.png)
+   ![Noeud de sélecteur de rendu d’incrustation dans CRXDE pour personnaliser l’image de page d’annotation](assets/chlimage_1-17.png)
 
    Pour configurer les dimensions du rendu d’une ressource vidéo, accédez au nœud `videopicker` dans le référentiel CRX à l’emplacement `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, recouvrez le nœud, puis modifiez la propriété adéquate.
 
@@ -536,7 +536,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Supprimer]** de la barre d’outils.
 
-   ![delete_icon](assets/delete_icon.png)
+   ![Icône Supprimer](assets/delete_icon.png)
 
 1. Dans la boîte de dialogue de confirmation, cliquez sur :
 
@@ -584,11 +584,11 @@ Voir [Téléchargement de ressources à partir d’AEM](/help/assets/download-as
 
 1. Sélectionnez la ressource/le dossier dont vous souhaitez annuler la publication, puis appuyez/cliquez sur l’icône **[!UICONTROL Gérer la publication]** de la barre d’outils.
 
-   ![manage_publication](assets/manage_publication.png)
+   ![Icône Gérer la publication](assets/manage_publication.png)
 
 1. Sélectionnez l’action **[!UICONTROL Annuler la publication]** dans la liste.
 
-   ![unpublish_action](assets/unpublish_action.png)
+   ![Action Annuler la publication](assets/unpublish_action.png)
 
 1. Pour annuler la publication de la ressource à une date ultérieure, sélectionnez **[!UICONTROL Annuler la publication ultérieurement]**, puis choisissez une date d’annulation de la publication de la ressource.
 1. Planifiez une date à laquelle la ressource devient indisponible dans l’environnement de publication.
@@ -610,11 +610,11 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Sélectionnez un dossier dans l’IU Assets, puis appuyez/cliquez sur l’icône Propriétés de la barre d’outils pour afficher la page de propriétés.
 1. Sous l’onglet **[!UICONTROL Autorisations]**, ajoutez les membres ou les groupes sous **[!UICONTROL Groupe d’utilisateurs fermé]**.
 
-   ![add_user](assets/add_user.png)
+   ![Ajouter utilisateur dans un groupe d’utilisateurs fermé](assets/add_user.png)
 
 1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Ensuite, sélectionnez le chemin de la page de connexion dans AEM et enregistrez les modifications.
 
-   ![login_page](assets/login_page.png)
+   ![Activer et sélectionner la page de connexion à afficher lorsque l’utilisateur accède au dossier](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -642,13 +642,13 @@ You can view, navigate through, and select assets with any of the available view
 
 Dans   et dans la colonne , l’option **[!UICONTROL Sélectionner]** s’affiche lorsque vous passez le pointeur sur la miniature du fichier.
 
-![select_quick_in_listview](assets/select_quick_in_listview.png)
+![Sélection de fichiers dans  de](assets/select_quick_in_listview.png)
 
-![select_quick_in_columnview](assets/select_quick_in_columnview.png)
+![Sélection de fichiers dans le de colonnes](assets/select_quick_in_columnview.png)
 
 Dans les  de carte, l’option **[!UICONTROL Sélectionner]** s’affiche sous forme d’action rapide.
 
-![select_quick_action](assets/select_quick_action.png)
+![Sélectionner une action rapide sur le de cartes](assets/select_quick_action.png)
 
 Lorsque vous parcourez un dossier ou une collection dans l’interface utilisateur Ressources d’un navigateur, vous pouvez sélectionner tous les fichiers affichés ou chargés à l’aide de l’option [!UICONTROL Sélectionner tout] située dans le coin supérieur droit. Au départ, seules 100 ressources sont chargées dans les  de carte et 200 dans les  de . D’autres ressources sont chargées dans le  lorsque vous faites défiler la page des résultats de la recherche. L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les fichiers chargés.
 
@@ -667,36 +667,36 @@ Les outils de modification de l’interface d’AEM Assets permettent d’effec
    * Sélectionnez la ressource, puis cliquez/appuyez sur l’icône **[!UICONTROL Modifier]** de la barre d’outils.
    * Appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** qui s’affiche sur une ressource en mode Carte.
    * Sur la page Ressource, appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** de la barre d’outils.
-   ![edit_icon](assets/edit_icon.png)
+   ![Icône Modifier dans la barre d’outils](assets/edit_icon.png)
 
 1. Pour recadrer l’image, appuyez/cliquez sur l’icône **Recadrer**.
 
-   ![chlimage_1-226](assets/chlimage_1-22.png)
+   ![Icône Recadrer](assets/chlimage_1-22.png)
 
 1. Sélectionnez une option dans la liste. La zone de recadrage s’affiche sur l’image en fonction de l’option choisie. L’option **Main libre** vous permet de recadrer l’image sans restriction de format.
 
-   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
+   ![Options de recadrage](/help/assets/assets/chlimage_1-23.png)
 
 1. Sélectionnez la zone à recadrer et redimensionnez ou repositionnez-la sur l’image.
 1. Utilisez l’icône **Terminer** (coin supérieur droit) pour recadrer l’image. L’icône **Terminer** déclenche également la régénération des rendus.
 
-   ![chlimage_1-228](assets/chlimage_1-24.png)
+   ![Icône Terminer](assets/chlimage_1-24.png)
 
 1. Utilisez les icônes **Annuler** et **Rétablir** dans la partie supérieure droite pour revenir à l’image non recadrée ou conserver l’image recadrée, respectivement.
 
-   ![chlimage_1-229](assets/chlimage_1-25.png)
+   ![Icônes Annuler et Rétablir](assets/chlimage_1-25.png)
 
 1. Appuyez/cliquez sur l’icône Faire pivoter adéquate pour faire pivoter l’image dans le sens des aiguilles d’une montre ou dans le sens inverse des aiguilles d’une montre.
 
-   ![chlimage_1-230](assets/chlimage_1-26.png)
+   ![Icônes de rotation dans le sens des aiguilles d’une montre et dans le sens anti-horaire](assets/chlimage_1-26.png)
 
 1. Appuyez/cliquez sur l’icône Symétrie adéquate pour retourner l’image horizontalement ou verticalement.
 
-   ![chlimage_1-231](assets/chlimage_1-27.png)
+   ![Icônes permettant de retourner l’image horizontalement ou verticalement](assets/chlimage_1-27.png)
 
 1. Appuyez/cliquez sur l’icône **Terminé** pour enregistrer les modifications.
 
-   ![chlimage_1-232](assets/chlimage_1-28.png)
+   ![Icône Terminer](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -739,11 +739,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    * [Actions rapides](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource
-   ![chlimage_1-233](assets/chlimage_1-29.png)
+   ![Icône Annoter](assets/chlimage_1-29.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
-   ![chlimage_1-234](assets/chlimage_1-30.png)
+   ![Zone de commentaire dans Ajouter boîte de dialogue Annotation](assets/chlimage_1-30.png)
 
 1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour signaler une annotation à Aaron MacDonald, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l’adresse électronique d’Aaron dans la liste pour la marquer avec le commentaire. De même, vous pouvez marquer d’autres utilisateurs à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
@@ -751,11 +751,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    >
    >Si l’utilisateur ne dispose pas des droits d’administration, les suggestions s’affichent uniquement s’il dispose de droits de lecture sur */home* dans Crx-de.
 
-   ![chlimage_1-235](assets/chlimage_1-31.png)
+   ![Spécifiez l’adresse électronique de l’utilisateur et ajoutez un commentaire pour le notifier à l’utilisateur.](assets/chlimage_1-31.png)
 
 1. Après avoir ajouté l’annotation, cliquez sur **[!UICONTROL Ajouter]** pour l’enregistrer. Une notification relative à l’annotation est envoyée à Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-32.png)
+   ![Bouton Ajouter pour enregistrer une annotation](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -770,7 +770,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 
-   ![Sélectionnez l’icône  utilisateur, puis Mes préférences pour ouvrir les préférences utilisateur.](assets/User-profile-preferences.png)
+   ![Sélectionnez l’icône  utilisateur, puis Mes préférences pour ouvrir Préférences utilisateur.](assets/User-profile-preferences.png)
 
    Indiquez la couleur de votre choix dans la zone **[!UICONTROL Couleur de l’annotation]**, puis cliquez/appuyez sur **[!UICONTROL Accepter]**.
 
@@ -786,15 +786,15 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
 
-   ![chlimage_1-239](assets/chlimage_1-35.png)
+   ![Options disponibles sur l’icône GlobalNav](assets/chlimage_1-35.png)
 
 1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
-   ![chlimage_1-240](assets/chlimage_1-36.png)
+   ![Afficher tous les  du dans le journal](assets/chlimage_1-36.png)
 
    Dans le panneau **[!UICONTROL Chronologie]**, appuyez/cliquez sur un commentaire pour afficher l’annotation correspondante sur l’image.
 
-   ![chlimage_1-241](assets/chlimage_1-37.png)
+   ![Panneau Chronologie pour de l’annotation  sur l’image](assets/chlimage_1-37.png)
 
    Pour supprimer un commentaire spécifique, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
@@ -814,15 +814,15 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
 1. Pour imprimer des annotations spécifiques, sélectionnez-les dans la chronologie.
 
-   ![chlimage_1-242](assets/chlimage_1-38.png)
+   ![Sélectionnez une annotation dans le journal pour l’imprimer.](assets/chlimage_1-38.png)
 
    Pour n’imprimer que l’état de révision, sélectionnez-le dans la chronologie.
 
-   ![chlimage_1-243](assets/chlimage_1-39.png)
+   ![Pour imprimer uniquement l’état de révision d’Annotation, sélectionnez-le dans le journal](assets/chlimage_1-39.png)
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Imprimer]** dans la barre d’outils.
 
-   ![chlimage_1-244](assets/chlimage_1-40.png)
+   ![Icône Imprimer dans la barre d’outils](assets/chlimage_1-40.png)
 
 1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/l’état de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou l’état de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
 
@@ -836,11 +836,11 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
 1. Appuyez/cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations/l’état de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
-   ![chlimage_1-246](assets/chlimage_1-42.png)
+   ![Annotation et état de révision sur le PDF généré](assets/chlimage_1-42.png)
 
 1. Téléchargez ou imprimez le fichier PDF à l’aide des options situées dans le coin supérieur droit.
 
-   ![chlimage_1-247](assets/chlimage_1-43.png)
+   ![Options de téléchargement et d’impression au format PDF](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -848,7 +848,7 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
    Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![chlimage_1-248](assets/chlimage_1-44.png)
+   ![Configuration pour imprimer l’annotation des fichiers sur le PDF](assets/chlimage_1-44.png)
 
    Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
 
@@ -905,7 +905,7 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
    * Cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource. Vous pouvez éventuellement ajouter une étiquette et un commentaire.
    * Cliquez sur **[!UICONTROL Créer]** pour créer une version.
 
-      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+      ![Création d’une version de fichier à partir de la barre latérale](assets/create-new-version-from-timeline.png)
 
       *Figure : Créez une version d’un fichier à partir de la barre latérale gauche du[!UICONTROL journal]chronologique.*
 
@@ -914,7 +914,7 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
    * Cliquez sur **[!UICONTROL Afficher tout]** dans le [!UICONTROL journal].
    * Cliquez sur **[!UICONTROL Versions]**. Toutes les versions créées pour un fichier sont répertoriées dans la barre latérale gauche.
 
-      ![versions_option](assets/versions_option.png)
+      ![ Option Sélectionner des versions du journal](assets/versions_option.png)
 
    * Sélectionnez une version spécifique de la ressource, puis cliquez sur **[!UICONTROL Version]**.
 
@@ -923,7 +923,7 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
    * Cliquez sur une version de la ressource. Vous pouvez éventuellement ajouter une étiquette et un commentaire.
    * Click **[!UICONTROL Revert to this Version]**.
 
-      ![select_version](assets/select_version.png)
+      ![Sélectionnez une version pour y revenir.](assets/select_version.png)
 
       *Figure : Sélectionnez une version et revenez-y. Il devient la version actuelle qui est ensuite disponible pour les utilisateurs de DAM.*
 
