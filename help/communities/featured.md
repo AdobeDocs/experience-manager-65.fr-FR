@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Contenu phare
 seo-title: Fonctionnalité Contenu phare
-description: La fonctionnalité Contenu proposé permet aux visiteurs du site connectés de mettre en évidence le contenu
-seo-description: La fonctionnalité Contenu proposé permet aux visiteurs du site connectés de mettre en évidence le contenu
+description: La fonction Contenu proposé permet aux de site connectés de mettre en évidence le contenu
+seo-description: La fonction Contenu proposé permet aux de site connectés de mettre en évidence le contenu
 uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Présentation {#introduction}
 
-La fonctionnalité de contenu incitatif fournit une zone pour les visiteurs du site connectés (membres de la communauté) dans l’environnement de publication afin de mettre en évidence le contenu pour
+La fonctionnalité de contenu incitatif fournit une zone pour les de site connectés (membres de la communauté) dans le de publication  de mettre en évidence le contenu pour
 
 * [Blogs](blog-feature.md)
 * [Calendriers](calendar.md)
@@ -27,14 +27,14 @@ La fonctionnalité de contenu incitatif fournit une zone pour les visiteurs du s
 * [Idées](ideation-feature.md)
 * [Q&amp;R](working-with-qna.md)
 
-Une fois que le contenu est marqué comme étant présenté, il est répertorié dans ce composant, qui peut être placé dans des pages d&#39;entrée spécifiques ou des zones qui attirent facilement l&#39;attention des membres de la communauté.
+Une fois que le contenu est marqué comme étant présenté, il est répertorié dans ce composant, qui peut être placé dans des  spécifiques ou des zones qui attirent facilement l&#39;attention des membres de la communauté.
 
 La fonctionnalité de contenu peut être autorisée ou refusée par composant.
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit:
 
 * Ajout de contenu incitatif à un site communautaire
-* Configuration settings for the `Featured Content`component
+* Configuration settings for the `Featured Content` component
 
 ## Ajout de contenu proposé à une page {#adding-featured-content-to-a-page}
 
@@ -46,7 +46,7 @@ et faites-le glisser sur une page où doit apparaître le contenu incitatif.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content`component will appear:
+When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content` component will appear:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -60,7 +60,7 @@ Select the placed `Featured Content` component to access and select the `Configu
 
 Sous l’onglet **[!UICONTROL Paramètres]** , identifiez le contenu à inclure :
 
-* **[!UICONTROL Nom]** d’affichage Titre de la liste du contenu incitatif. For example `Featured Questions` or `Featured Ideas`. La valeur par défaut est `Featured Content` laissée vide.
+* **[!UICONTROL Nom]** d’affichage Titre du  du contenu incitatif. For example `Featured Questions` or `Featured Ideas`. La valeur par défaut est `Featured Content` laissée vide.
 
 * **[!UICONTROL Emplacement du contenu proposé]**
    *(Obligatoire)* Accédez à la page contenant le contenu qui peut être une fonctionnalité (les composants de cette page doivent être configurés pour autoriser le contenu proposé). Par exemple, `/content/sites/engage/en/forum`
@@ -71,7 +71,7 @@ Sous l’onglet **[!UICONTROL Paramètres]** , identifiez le contenu à inclure 
 
 La possibilité de marquer le contenu comme contenu phare nécessite des privilèges de modérateur.
 
-Lorsqu’un modérateur affiche du contenu publié, il a accès aux indicateurs de modération contextuels, qui comprennent le nouvel `Feature` indicateur.
+Lorsqu’un modérateur  du contenu publié, il a accès aux indicateurs de modération en contexte, qui comprennent le nouvel `Feature` indicateur.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
