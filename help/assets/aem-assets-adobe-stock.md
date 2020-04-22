@@ -1,9 +1,9 @@
 ---
-title: Gestion des ressources Adobe Stock dans les ressources AEM
-description: Recherchez, récupérez, autorisez et gérez des ressources Adobe Stock depuis AEM. Utilisez les ressources sous licence comme n’importe quelle autre ressource numérique.
+title: Gérez les ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager Assets].
+description: Recherchez, récupérez, concédez une licence et gérez des ressources [!DNL Adobe Stock] depuis Adobe Experience Manager. Utilisez les ressources sous licence comme n’importe quelle autre ressource numérique.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
