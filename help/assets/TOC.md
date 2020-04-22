@@ -4,14 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.5 Assets
 translation-type: tm+mt
-source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
 
 # AEM 6.5 Assets User Guide {#assets}
 
-+ [Guide de l’utilisateur Ressources](home.md)
++ [Guide de l&#39;utilisateur [!DNL Assets]](home.md)
 + [Notes de mise à jour d’AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Meilleures pratiques pour les ressources](best-practices-for-assets.md)
@@ -19,7 +19,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Expérience  AEM Assets](assets-home-page.md)
    + [Recherche de ressources dans AEM   ](search-assets.md)
    + [Ressources multilingues](multilingual-assets.md)
-   + [Utilisation de ressources Adobe Stock dans AEM Assets](aem-assets-adobe-stock.md)
+   + [Utiliser des ressources [!DNL Adobe Stock] dans les ressources AEM](aem-assets-adobe-stock.md)
    + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
@@ -74,7 +74,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Personnalisation et extension des ressources AEM](extending-assets.md)
    + [Traiter les fichiers à l’aide des gestionnaires de médias et des  de](media-handlers.md)
    + [Étendre la fonctionnalité de recherche](searchx.md)
-   + [Installation et configuration d’ImageMagick pour une utilisation avec AEM Assets](best-practices-for-imagemagick.md)
+   + [Installation et configuration de [!DNL ImageMagick] pour travailler avec AEM Assets](best-practices-for-imagemagick.md)
    + [Intégrer des ressources à  flux](extending-activity-stream.md)
    + [Etendre l’éditeur de fichiers](asseteditorx.md)
    + [API HTTP Assets](mac-api-assets.md)
