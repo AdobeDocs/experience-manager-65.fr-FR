@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
+source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
 
 ---
 
@@ -79,12 +79,17 @@ Vous pouvez utiliser la boîte de réception AEM pour exécuter et surveiller le
   </tr>
   <tr>
    <td>Files d’attente (file d’attente personnelle partagée, réclamer des tâches de la file d’attente)</td>
-   <td>pas de prise en charge</td>
+   <td>Pris en charge</td>
    <td>Pris en charge</td>
   </tr>
   <tr>
    <td>Notification d’absence</td>
-   <td>pas de prise en charge</td>
+   <td>Pris en charge</td>
+   <td>Pris en charge</td>
+  </tr>
+    <tr>
+   <td>Personnalisation des éléments de l’interface utilisateur</td>
+   <td>Pris en charge</td>
    <td>Pris en charge</td>
   </tr>
   <tr>
@@ -303,6 +308,11 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>Portes, PAS D'ATTENTE </td>
+   <td>Pris en charge</td>
+   <td>Pris en charge</td>
+  </tr>
+   <tr>
+   <td>Variables de stockage des données </td>
    <td>Pris en charge</td>
    <td>Pris en charge</td>
   </tr>
