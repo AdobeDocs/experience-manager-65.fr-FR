@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Dans cette section, vous créez les pages suivantes qui utilisent toutes le modèle [de](initial-app.md#createthepagetemplate)page :
 
-* Site Sandbox SCF, qui redirige vers la version anglaise de la page principale
+* Site de Sandbox SCF, qui redirigera vers la version anglaise de la page principale.
 
-   * SCF Sandbox - Page principale de la version anglaise du site
+   * SCF Sandbox - Page principale de la version anglaise du site.
 
-      * Lecture SCF - Enfant de la page principale sur laquelle lire
+      * SCF Play - Enfant de la page principale sur laquelle jouer.
 
 Bien que ce didacticiel ne s’intéresse pas aux copies [de](../../help/sites-administering/tc-prep.md)langue, il est conçu de sorte que la page racine puisse implémenter la détection de la langue préférée par l’utilisateur via l’en-tête HTML et rediriger vers la page principale appropriée pour la langue. La convention consiste à utiliser le code pays à deux lettres pour le nom de noeud de la page, par exemple &quot;en&quot; pour l’anglais, &quot;fr&quot; pour le français, etc.
 
@@ -45,7 +45,7 @@ Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate
 
    Vous pouvez également accéder directement à l’interface utilisateur classique des sites Web en accédant à [/siteadmin.](http://localhost:4502/siteadmin)
 
-1. Dans le volet Explorateur, sélectionnez **[!UICONTROL Sites]** Web, puis dans la barre d’outils, sélectionnez **[!UICONTROL Nouveau > Nouvelle page]**.
+1. Dans le volet de l’explorateur, sélectionnez **[!UICONTROL Sites]** Web, puis dans la barre d’outils, sélectionnez **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**.
 
    In the **[!UICONTROL Create Page]** dialog, enter the following:
 
@@ -55,14 +55,14 @@ Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate
    * Cliquez sur **[!UICONTROL Créer]**
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. Dans le volet de l’explorateur, sélectionnez la page que vous venez de créer `/Websites/SCF Sandbox Site`, puis cliquez sur **[!UICONTROL Nouveau > Nouvelle page]**:
+1. Dans le volet de l’explorateur, sélectionnez la page que vous venez de créer `/Websites/SCF Sandbox Site`, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**:
 
    * Titre: `SCF Sandbox`
    * Nom: `en`
    * Sélectionner **Un Modèle De Lecture Sandbox SCF **
    * Cliquez sur **Créer **
 
-1. Dans le volet de l’explorateur, sélectionnez la page que vous venez de créer `/Websites/SCF Sandbox Site/SCF Sandbox`, puis cliquez sur **[!UICONTROL Nouveau > Nouvelle page.]**
+1. Dans le volet de l’explorateur, sélectionnez la page que vous venez de créer `/Websites/SCF Sandbox Site/SCF Sandbox`, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page.]**
 
    * Titre: `SCF Play`
    * Nom: `play`
@@ -73,7 +73,7 @@ Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
-   Il s’agit de la vue du référentiel de ce qui a été créé à l’aide de l’outil Site Web et du modèle :
+   Il s’agit du  de référentiel de ce qui a été créé à l’aide de l’outil Site Web et du modèle :
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
@@ -105,4 +105,5 @@ Le référentiel doit se présenter comme suit :
 >[!NOTE]
 >
 >L’utilisation de cq:designPath est facultative et n’est pas liée à l’ [utilisation de clientlibs](develop-app.md#includeclientlibsintemplate), qui sont essentiellement requises puisque les composants SCF utilisent [clientlibs](client-customize.md#clientlibs-for-scf) pour gérer leurs fichiers JS et CSS.
+
 
