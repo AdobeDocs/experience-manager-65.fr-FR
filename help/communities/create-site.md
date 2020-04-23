@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -200,7 +200,7 @@ Notez que l’UGC n’est pas inclus dans le package du site.
 
 * **Supprimer le site**
 
-   Sélectionnez l’icône Supprimer pour supprimer le site de la communauté dans la console **[]** UIControl Communities > Sites. Cette action supprime tous les éléments associés au site, tels que l’UGC, les groupes d’utilisateurs, les ressources et les enregistrements de base de données.
+   Sélectionnez l’icône Supprimer pour supprimer le site de la communauté dans la console **** Communautés > Sites. Cette action supprime tous les éléments associés au site, tels que l’UGC, les groupes d’utilisateurs, les ressources et les enregistrements de base de données.
 
 ![siteactions](assets/siteactions.png)
 
@@ -210,17 +210,17 @@ Notez que l’UGC n’est pas inclus dans le package du site.
 >
 >Sur l’instance d’auteur, dans le menu principal :
 >
->1. Accédez au menu Outils **[UIControl > Opérations > Réplication]** .
->1. Sélectionnez **[UIControl Agents sur l’auteur]**.
->1. Sélectionnez **[UIControl Default Agent (publish)]**.
->1. En regard de Paramètres **[]** UIControl, sélectionnez **[UIControl Edit]**.
->1. Dans la boîte de dialogue contextuelle Paramètres de l’agent, sélectionnez l’onglet Transport **[]** UIControl.
+>1. Accédez à **[!UICONTROL Outils > Opérations > Menu Réplication]** .
+>1. Sélectionnez **[!UICONTROL Agents sur l’auteur]**.
+>1. Sélectionnez Agent **[!UICONTROL par défaut (publication)]**.
+>1. En regard de **[!UICONTROL Paramètres]**, sélectionnez **[!UICONTROL Modifier]**.
+>1. Dans la boîte de dialogue contextuelle Paramètres de l’agent, sélectionnez l’onglet **[!UICONTROL Transport]** .
 >1. Dans URI, remplacez le numéro de port 4503 par le numéro de port souhaité >
    >    * Par exemple, pour utiliser le port 6103 :
       >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
-1. Sélectionnez **[UIControl OK]**.
-1. (Facultatif) Sélectionnez **[UIControl Clear]** ou **[UIControl Force Retry]** pour réinitialiser la file d’attente de réplication.
+1. **[!UICONTROL Cliquez sur OK]**.
+1. (Facultatif) Sélectionnez **[!UICONTROL Effacer]** ou **[!UICONTROL Forcer une nouvelle tentative]** pour réinitialiser la file d’attente de réplication.
 
 
 
