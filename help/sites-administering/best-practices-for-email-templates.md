@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0cb6abe024bc4ff77c9932c99b816c832377f5
+source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 ---
 
@@ -57,11 +57,11 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
    <td><strong>Mise en œuvre</strong></td>
   </tr>
   <tr>
-   <td><p>Spécifiez le type de document pour assurer un rendu cohérent.</p> <p>Ajouter DOCTYPE au début (HTML ou XHTML)</p> </td>
+   <td><p>Spécifiez le type de  du pour assurer un rendu cohérent.</p> <p>Ajouter DOCTYPE au début (HTML ou XHTML)</p> </td>
    <td><p>Est configurable en modifiant la propriété <i>cq:doctype</i> dans<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>La valeur par défaut est "XHTML" :</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitionnel//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Peut être remplacé par "HTML_5" :</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Spécifiez la définition des caractères pour garantir le rendu correct des caractères spéciaux.</p> <p>Ajoutez la déclaration CHARSET (ex. : iso-8859-15, UTF-8) à &lt;head&gt;.</p> </td>
+   <td><p>Spécifiez la définition des caractères pour garantir le rendu correct des caractères spéciaux.</p> <p>Ajouter déclaration CHARSET (ex. : iso-8859-15, UTF-8) à &lt;head&gt;</p> </td>
    <td><p>Est défini sur UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
@@ -69,7 +69,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
    <td><p>Les tableaux sont utilisés dans tout le modèle pour structurer le contenu. Actuellement, il est possible d’utiliser un maximum de quatre tableaux imbriqués (1 tableau de base + 3 niveaux d’imbrication)</p> <p>Les balises &lt;div&gt; ne sont utilisées qu’en mode création pour garantir une modification appropriée des composants.</p> </td>
   </tr>
   <tr>
-   <td>Utilisez les attributs d’élément (tels que le remplissage de la cellule, la valeur et la largeur) pour définir les dimensions du tableau. Ceci force une structure boîte-modèle.</td>
+   <td>Utilisez les attributs d’élément (tels que le remplissage de la cellule, la valeur et la largeur) pour définir les dimensions d’un tableau. Ceci force une structure boîte-modèle.</td>
    <td><p>Tous les tableaux contiennent les attributs nécessaires, tels que <i>bordure</i>, <i>remplissage</i>cellulaire, espacement <i>entre les cellules et</i> <i>largeur.</i></p> <p>To harmonize element positioning inside tables, all table cells have the attribute <i>valign="top"</i> being set.</p> </td>
   </tr>
   <tr>
@@ -97,10 +97,10 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 
 | **Meilleure pratique** | **Mise en œuvre** |
 |---|---|
-| Ajout d’attributs *alt* aux images | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
+| Ajouter attributs *alt* aux images | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
 | Utiliser *jpg* au lieu du format *png* pour les images | Les images seront toujours diffusées au format JPG par le composant d’image. |
-| Utilisez <img> un élément au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
-| Ajoutez l’attribut style=&quot;bloc d’affichage&quot; sur les images. Permet d’obtenir un affichage correct dans Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;bloc d’affichage&quot;* . |
+| Utilisez `<img>` un élément au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
+| Ajouter attribut style=&quot;bloc d’affichage&quot; sur les images. Permet d’obtenir un affichage correct dans Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;bloc d’affichage&quot;* . |
 
 ### Texte et liens {#text-and-links}
 
@@ -114,7 +114,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
   </tr>
   <tr>
    <td>Utilisez html &lt;font&gt; au lieu de style dans CSS (font-family)</td>
-   <td>RichTextEditor (par exemple dans le composant textimage) prend désormais en charge le choix et l’application de familles de polices et de tailles de police aux textes sélectionnés. Ils seront rendus sous forme de balises &lt;font&gt;.</td>
+   <td>RichTextEditor (par exemple dans le composant textimage) prend désormais en charge le choix et l’application de familles de polices et de tailles de police aux textes sélectionnés. Ils seront rendus sous la forme de balises &lt;font&gt;.</td>
   </tr>
   <tr>
    <td>Utilisez des polices de base multiplateformes, telles que <i>Arial, Verdana, Georgia</i> et <i>Times New Roman</i>.</td>
@@ -129,7 +129,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 |---|---|
 | Utilisez le validateur W3C pour corriger le code HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code a été validé. Pour la documentation de transition XHTML, seul l’attribut xmlns manquant pour la variable <html> est absent. |
 | Ne vous embêtez pas avec JavaScript ou Flash : ces technologies ne sont en grande partie pas prises en charge par les clients du courrier électronique. | Ni JavaScript ni Flash ne sont utilisés dans le modèle de newsletter. |
-| Ajoutez une version en texte brut pour l’envoi en plusieurs parties. | Un nouveau widget a été intégré aux propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
+| Ajouter une version en texte brut pour l’envoi en plusieurs parties. | Un nouveau widget a été créé dans les propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
 
 ## Modèles et exemples de newsletter de campagne {#campaign-newsletter-templates-and-examples}
 
