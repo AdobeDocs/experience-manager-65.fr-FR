@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 
 
-## Dernières versions {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA fournit un package Communities. Pour en savoir plus sur les mises à jour des [communautés](/help/release-notes/release-notes.md#experiencemanagercommunities)AEM 6.5, consultez les Notes [de mise à jour d’](/help/release-notes/release-notes.md#communities-release-notes.html)AEM 6.5.
 
@@ -92,7 +92,7 @@ AEM 6.5 Communities GA fournit un package Communities. Pour en savoir plus sur l
 
 À partir d’AEM 6.4, les mises à jour apportées aux communautés sont fournies dans le cadre des Fix Packs et Service Packs cumulatifs d’AEM.
 
-Pour obtenir les dernières mises à jour d’AEM 6.5, voir [Adobe Experience Manager 6.4 Cumulative Fix Packs et Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Pour obtenir les dernières mises à jour d’AEM 6.5, voir [Adobe Experience Manager 6.4 Cumulative Fix Packs et Service Packs](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
 ### Version History {#version-history}
 
@@ -245,7 +245,7 @@ Il existe deux agents de réplication dans le de l&#39;auteur  qui ont besoin qu
 
 * Accès à la console de réplication sur l’auteur
 
-   * Dans la navigation globale, accédez à Outils **[UIControl > Déploiement > Réplication > Agents sur l’auteur]**
+   * Dans la navigation globale, accédez à **[!UICONTROL Outils > Déploiement > Réplication > Agents sur l’auteur.]**
 
 * Suivez la même procédure pour les deux agents :
 
@@ -325,7 +325,7 @@ for example,
 
 >[!CAUTION]
 >
->Si une autre fonction de sécurité a déjà été configurée basée sur les clés de chiffrement, la réplication des clés de chiffrement pourrait endommager la configuration. Pour obtenir de l’aide, [contactez le service à la clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Si une autre fonction de sécurité a déjà été configurée basée sur les clés de chiffrement, la réplication des clés de chiffrement pourrait endommager la configuration. Pour obtenir de l’aide, [contactez le service à la clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
 #### Réplication du référentiel {#repository-replication}
 
@@ -387,7 +387,7 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
  </IfModule>
 ```
 
-### Répartiteur {#dispatcher}
+### Dispatcher {#dispatcher}
 
 Si vous utilisez un répartiteur, reportez-vous à la section :
 
