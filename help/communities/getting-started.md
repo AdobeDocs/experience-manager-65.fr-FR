@@ -1,8 +1,8 @@
 ---
 title: Prise en main d’AEM Communities
 seo-title: Prise en main d’AEM Communities
-description: Didacticiel de prise en main des communautés AEM
-seo-description: Didacticiel de prise en main des communautés AEM
+description: Didacticiel sur la prise en main des communautés AEM
+seo-description: Didacticiel sur la prise en main des communautés AEM
 uuid: b7adf7c0-5563-4e44-bb53-04a566f271d5
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
 
-# Prise en main d’AEM Communities{#getting-started-with-aem-communities}
+# Prise en main d’AEM Communities {#getting-started-with-aem-communities}
 
-Les communautés AEM permettent aux entreprises de créer des expériences de communauté dédiées à la marque à partir d’une bibliothèque de modèles de site. Vous pouvez intégrer des forums, des groupes, des blogs, le partage de fichiers, des calendriers, des flux d’activité et des profils d’utilisateurs étendus dans votre site Web afin de favoriser les interactions entre les prosectes, les clients et les entreprises.
+Les communautés AEM permettent aux de créer des expériences de communauté dédiées à la marque à partir d’une bibliothèque de modèles de site. Les forums, les groupes, les blogs, le partage de fichiers, les calendriers, les flux de  de et les d’utilisateurs étendus peuvent être intégrés à votre site Web afin de favoriser les interactions entre les prosectes, les clients et les.
 
 Voici un didacticiel sur la mise en place rapide d’une communauté [d’](/help/communities/overview.md#engagement-community) engagement à des fins de démonstration ou de développement.
 
