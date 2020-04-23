@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -27,17 +27,17 @@ Consultez l’aperçu de la modération pour obtenir une description des actions
 
 ## Interface utilisateur de modération {#moderation-ui}
 
-L’interface utilisateur présentée au modérateur sur l’instance de publication est contenue dans la boîte de dialogue pour la publication et la gestion du contenu généré par l’utilisateur (UGC). Les éléments de l’interface utilisateur sont déterminés par l’état du visiteur du site, qu’il s’agisse ou non de...
+L’interface utilisateur présentée au modérateur sur l’instance de publication est contenue dans la boîte de dialogue pour la publication et la gestion du contenu généré par l’utilisateur (UGC). Les éléments de l&#39;interface utilisateur sont déterminés par l&#39;état du du site - qu&#39;ils soient ou non...
 
-1. Membre qui a publié le contenu
-1. Un modérateur de membre approuvé
-1. Un administrateur
-1. Connecté, mais sans administrateur, modérateur ni auteur du contenu
-1. Non connecté
+1. Membre qui a publié le contenu.
+1. Un modérateur de membre de confiance.
+1. Administrateur.
+1. Connecté, mais pas un administrateur, un modérateur ou un auteur du contenu.
+1. Non connecté.
 
 ## Exemple {#example}
 
-En utilisant le site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lors de la [prise en main des communautés](getting-started.md)AEM, il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication, comme indiqué ci-dessous.
+En utilisant le site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lors de la [prise en main des communautés](getting-started.md)AEM, il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans le  de publication , comme illustré ci-dessous.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) a été identifié comme un membre de confiance de la communauté en l&#39;ajoutant au groupe des modérateurs-engagés-communautaires lors de la création du site.
 
@@ -83,11 +83,11 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
    * Sélectionner une réponse
    * Sélectionner Déconnexion
 
-### Visiteur anonyme du site (#5) {#anonymous-site-visitor}
+### de site anonyme (#5) {#anonymous-site-visitor}
 
-Voici une vue du forum vu par un visiteur du site qui n’est pas connecté (5).
+Voici un  du forum vu par un du site qui n&#39;est pas connecté (5).
 
-Un visiteur anonyme du site peut uniquement afficher le forum, mais il ne peut publier aucun contenu ni exécuter aucune action de modération.
+Un anonyme du site ne peut que le forum, mais il ne peut publier aucun contenu ni effectuer aucune action de modération.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -97,11 +97,11 @@ Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larse
 
 Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour la publication colibri.
 
-Avis
+Avis:
 
-* Boyd n&#39;a pas participé au forum
-* Boyd ne peut rien supprimer
-* Boyd est connecté et peut répondre ou marquer le contenu
+* Boyd n&#39;a pas participé au forum.
+* Boyd ne peut rien supprimer.
+* Boyd est connecté et peut répondre ou marquer le contenu.
 
 Demandez à un garçon de sélectionner Marquer pour marquer le contenu publié par Andrew.
 
@@ -113,16 +113,16 @@ Déconnexion
 
 Connectez-vous en tant qu’administrateur (admin) et accédez au fil en sélectionnant Forum, puis Lire la suite pour une publication.
 
-Avis
+Avis:
 
-* L’administrateur peut marquer, supprimer, modifier, refuser, couper, fermer, épingler, fonction
+* L’administrateur peut marquer, Supprimer, Modifier, Refuser, Couper, Fermer, Epingler, Fonction.
 * L’administrateur peut sélectionner Administration pour accéder à la console de modération.
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
 
-Sélectionnez l’option de menu Administration pour accéder à la console [de](moderation.md) modération à partir de l’environnement de publication.
+Sélectionnez l’option de menu Administration pour accéder à la console [de](moderation.md) modération à partir du  de publication .
 
-Notez que, pour un administrateur, tout le contenu modérable est visible, pas seulement le contenu du site de la communauté Geometrixx Engage.
+Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
 Le filtre de recherche est un panneau latéral qui bascule vers l’ouverture ou la fermeture.
 
@@ -134,16 +134,16 @@ Déconnexion.
 
 Connectez-vous en tant que Aaron McDonald (aaron.mcdonal@mailinator.com), modérateur de la communauté, et accédez au fil en sélectionnant Forum, puis Lire la suite pour le billet sur les colibris.
 
-Avis
+Avis:
 
-* Aaron peut répondre, supprimer, modifier ou refuser son propre billet
-* Aaron peut également marquer/autoriser, répondre, supprimer, modifier ou refuser un autre contenu
-* Aaron peut couper le sujet du forum pour le déplacer vers un autre forum pour lequel il modérait
-* Aaron peut sélectionner Administration pour accéder à la console de modération
+* Aaron peut répondre, supprimer, modifier ou refuser son propre billet.
+* Aaron peut également marquer/autoriser, répondre, supprimer, modifier ou refuser tout autre contenu.
+* Aaron peut couper le sujet du forum pour le déplacer vers un autre forum pour lequel il modérait.
+* Aaron peut sélectionner Administration pour accéder à la console de modération.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-Sélectionnez l’option de menu Administration pour accéder à la console [de](moderation.md) modération à partir de l’environnement de publication.
+Sélectionnez l’option de menu Administration pour accéder à la console [de](moderation.md) modération à partir du  de publication .
 
 Notez que, pour un modérateur de la communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 
@@ -157,11 +157,11 @@ Déconnexion.
 
 Connectez-vous en tant que Rebekah Larsen (rebekah.larsen@mailinator.com), membre de la communauté qui a lancé le fil, et accédez au fil en sélectionnant Forum, puis Lire la suite pour le billet sur les colibris.
 
-Avis
+Avis:
 
-* Rebekah peut supprimer ou modifier sa propre publication
-* Rebekah peut également répondre ou marquer un autre contenu
-* Rebekah ne peut pas accéder à la console de modération
+* Rebekah peut supprimer ou modifier sa propre publication.
+* Rebekah peut également répondre ou marquer d’autres contenus.
+* Rebekah ne peut pas accéder à la console de modération.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
