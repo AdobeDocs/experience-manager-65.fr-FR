@@ -4,7 +4,7 @@ seo-title: Guide de l’utilisateur d’AEM 6.5 Assets
 description: Ce guide porte sur tous les  de ressources AEM, tels que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 seo-description: Couvre tous les  de ressources AEM, tels que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 5ac60acb5869d261f8d25c69ce89a24384a1f699
+source-git-commit: e6c0ee967d1b01da18b538960520c206937599f6
 
 ---
 
@@ -25,17 +25,17 @@ Ce guide porte sur tous les  de ressources AEM, tels que la création, la gestio
 | Guide de l’utilisateur | Description |
 |--- |---|
 | [Notes de mise à jour](/help/release-notes/home.md) | Fournit des informations importantes sur la dernière version d’AEM, notamment les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus |
-| [Guide de l&#39;utilisateur de [!DNL Forms]](/help/forms/home.md) | Ce guide explique comment créer, gérer, publier et mettre à jour des formulaires numériques. |
-| [Guide de l&#39;utilisateur de [!DNL Communities]](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |
+| [Guide de l’utilisateur[Forms]](/help/forms/home.md) | Ce guide explique comment créer, gérer, publier et mettre à jour des formulaires numériques. |
+| [Guide de l&#39;utilisateur des communautés](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |
 | [Guide d’administration](/help/sites-administering/home.md) | Problèmes courants et solutions liés à l’installation |
 | [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création dans AEM. |
 | [Guide de création d’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans AEM dans l’interface utilisateur classique. |
-| [Guide de l&#39;utilisateur de [!DNL Screens]](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution d’affichage numérique pour publier des expériences numériques dynamiques et interactives. |
+| [Guide de l’utilisateur des écrans](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution d’affichage numérique pour publier des expériences numériques dynamiques et interactives. |
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide présente les principes de base d’AEM. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance AEM. |
 | [Gestion du guide de l&#39;utilisateur](/help/managing/home.md) | Ce guide explique comment gérer un projet AEM avec succès. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit la création et la gestion de contenu pour les applications mobiles. |
-| [AEM [!DNL Livefyre]](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
+| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
 
 ## Ressources AEM clés
 
@@ -46,4 +46,4 @@ Ce guide porte sur tous les  de ressources AEM, tels que la création, la gestio
 * [Guide de l’utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Guide de l&#39;utilisateur des composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [DNL Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
