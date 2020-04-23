@@ -1,6 +1,6 @@
 ---
-title: Utilisation des mentions J’aime
-seo-title: Utilisation des mentions J’aime
+title: Utilisation de l’option J’aime
+seo-title: Utilisation de l’option J’aime
 description: Ajout et configuration du composant J’aime
 seo-description: Ajout et configuration du composant J’aime
 uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
-# Utilisation des mentions J’aime {#using-liking}
+# Utilisation de l’option J’aime {#using-liking}
 
-Le `Liking`composant est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire dans un forum. Avec le `Liking`composant, les membres sélectionnent l’icône en forme de coeur pour indiquer une opinion positive.
+Le `Liking` composant est un outil utile qui permet aux utilisateurs d’exprimer une opinion sur un élément de contenu particulier, tel qu’un commentaire dans un forum. Avec le `Liking` composant, les membres sélectionnent l’icône en forme de coeur pour indiquer une opinion positive.
 
 ## Adding Liking to a Page {#adding-liking-to-a-page}
 
-To add a `Liking` component to a page in author mode, use the component browser to locate
+To add a `Liking` component to a page in author mode, use the component browser to locate:
 
 * `Communities / Liking`
 
@@ -43,11 +43,17 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Libellé]** de réponse positive (*Obligatoire*) Nom de propriété pour une réponse positive.
+* **[!UICONTROL Etiquette de réponse positive]**
 
-* **[!UICONTROL Étiquette]** de réponse négative (*Obligatoire*) Nom de propriété pour une réponse négative.
+   (*Obligatoire*) Nom de propriété pour une réponse positive.
 
-* **[!UICONTROL Nom]** du compte (*Obligatoire*) Nom de propriété interne identifiable pour cette instance d’un composant de vote.
+* **[!UICONTROL Etiquette de réponse négative]**
+
+   (*Obligatoire*) Nom de propriété pour une réponse négative.
+
+* **[!UICONTROL Nom Tally]**
+
+   (*Required*) The internal, identifiable property name for this instance of a voting component.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -57,7 +63,7 @@ Les membres peuvent changer de comportement à tout moment.
 
 ### Anonyme {#anonymous}
 
-Les mentions J’aime anonymes ne sont pas prises en charge. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer à aimer.
+Les mentions &quot;J’aime&quot; anonymes ne sont pas prises en charge. Les du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer à aimer.
 
 ## Informations supplémentaires {#additional-information}
 
