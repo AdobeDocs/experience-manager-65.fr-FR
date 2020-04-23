@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -45,7 +45,7 @@ La console [de configuration de  de](/help/communities/srp-config.md) permet de 
 
 **Sur l’instance d’auteur AEM :**
 
-* Dans la navigation globale, accédez à Outils de **[contrôle UIC > Communautés >  configuration]**  et sélectionnez **[ContrôleUIControl Adobe  Resource Provider (ASRP)]**.
+* Dans la navigation globale, accédez à **[!UICONTROL Outils > Communautés >  configuration]**  et sélectionnez **[!UICONTROL Adobe  Resource Provider (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -94,7 +94,7 @@ Pour rendre la configuration identique disponible dans le  de publication  :
 
 Sur l’instance d’auteur AEM :
 
-* Naviguez du menu principal vers Outils **[UIControl > Opérations > Réplication]**.
+* Dans le menu principal, sélectionnez **[!UICONTROL Outils > Opérations > Réplication]**.
 * Sélectionner **Activer l&#39;arborescence**
 * **Chemin** : naviguer vers `/etc/socialconfig/srpc/`
 * Désélectionner **uniquement modifié**
