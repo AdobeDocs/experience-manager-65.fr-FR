@@ -1,6 +1,6 @@
 ---
-title: Configuration Analytics pour les fonctionnalités des communautés
-seo-title: Configuration Analytics pour les fonctionnalités des communautés
+title: Configuration d’Analytics pour les fonctionnalités des communautés
+seo-title: Configuration d’Analytics pour les fonctionnalités des communautés
 description: Configuration d’Analytics pour les communautés
 seo-description: Configuration d’Analytics pour les communautés
 uuid: 5a083645-9de6-4ecd-a94e-a40143f92edf
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Configuration Analytics pour les fonctionnalités des communautés {#analytics-configuration-for-communities-features}
+# Configuration d’Analytics pour les fonctionnalités des communautés {#analytics-configuration-for-communities-features}
 
 ## Présentation {#overview}
 
@@ -126,10 +126,10 @@ Si vous utilisez une suite **de rapports** existante, il peut être nécessaire 
 >
 >**Si vous utilisez une suite de rapports existante qui utilise déjà des variables dans**
 >
->* **`evar1`** through **`evar11`**
+>* **`evar1`** à **`evar11`**
    >
    >
-* **`event1`** through **`event7`**
+* **`event1`** à **`event7`**
 >
 >
 **Avant la publication du site de la communauté,** il est important de restaurer le mappage préexistant en déplaçant les variables AEM automatiquement mises en correspondance avec les variables Analytics lorsque Analytics était activé pour un site de la communauté.
@@ -160,15 +160,15 @@ S’il n’est pas activé, le code de pulsation vidéo n’est jamais instanci�
 
 Pour créer une intégration Analytics qui intègre Adobe Analytics au site de la communauté AEM, utilisez l’interface utilisateur standard de l’instance d’auteur :
 
-* A partir de la navigation globale : Outils **[UIControl > Déploiement > Services Cloud]**
-* Faire défiler jusqu’à **[UIControl Adobe Analytics]**
-* Sélectionnez **[UIControl Configure Now]** ou **[UIControl Show Configurations]**
+* A partir de la navigation globale : **[!UICONTROL Outils > Déploiement > Services Cloud]**
+* Scroll-down to **[!UICONTROL Adobe Analytics]**
+* Sélectionnez **[!UICONTROL Configurer maintenant]** ou **[!UICONTROL Afficher les configurations]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Boîte de dialogue Créer une configuration {#create-configuration-dialog}
 
-* Sélectionner `[+]` l&#39;icône en regard de **[UIControl Available Configurations]** pour créer une nouvelle configuration
+* Sélectionnez `[+]` une icône en regard de **[!UICONTROL Configurations]** disponibles pour créer une nouvelle configuration.
 
 Dans la boîte de dialogue Créer une configuration, les valeurs à saisir identifient la configuration.
 
@@ -184,7 +184,7 @@ Par exemple, saisissez *Activation Community Analytics*
    (Facultatif) S’il n’est pas spécifié, le nom est défini par défaut sur un nom de noeud valide dérivé du titre.
 For example, enter *communities*
 
-* **Modèle**
+* **Template (Modèle)**
 
    Sélectionner `Adobe Analytics Configuration`
 
@@ -246,7 +246,7 @@ Pour enregistrer les paramètres :
 
 Après une configuration réussie de la connexion de base à Adobe Analytics, il est nécessaire de créer ou de modifier une structure pour le site de la communauté. La structure a pour objectif de mapper des variables de fonction Communautés (AEM) à des variables Analytics (suite de rapports).
 
-* Sélectionnez `[+]` l&#39;icône en regard de **[l&#39;option Structures]** disponibles de contrôle UIC pour créer une nouvelle structure.
+* Sélectionnez `[+]` une icône en regard de l’option **[!UICONTROL Structures]** disponibles pour créer une nouvelle structure.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -259,7 +259,7 @@ Après une configuration réussie de la connexion de base à Adobe Analytics, il
    (Facultatif) S’il n’est pas spécifié, le nom est défini par défaut sur un nom de noeud valide dérivé du titre.
 For example, enter *communities*
 
-* *Modèle*
+* *Template (Modèle)*
 
    Sélectionner `Adobe Analytics Framework`
 
@@ -568,10 +568,10 @@ Voir sections :
 >
 >**Si vous utilisez une suite de rapports existante qui utilise déjà des variables dans**
 >
->* **`evar1`** through **`evar11`**
+>* **`evar1`** à **`evar11`**
    >
    >
-* **`event1`** through **`event7`**
+* **`event1`** à **`event7`**
 >
 >
 **Avant la publication du site de la communauté,** il est important de restaurer le mappage préexistant et de déplacer les variables AEM des communautés automatiquement mises en correspondance (lorsque Analytics était activé pour le site de la communauté) vers d’autres variables Analytics. Ce remappage doit être cohérent pour tous les composants des communautés.
