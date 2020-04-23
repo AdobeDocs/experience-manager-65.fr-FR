@@ -12,26 +12,26 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Console Groupes de communautés{#community-groups-console}
+# Console Groupes de communautés {#community-groups-console}
 
 La console Groupes permet de créer des groupes de la communauté lorsqu’une structure [de](/help/communities/sites-console.md#step1) modèle de site de la communauté inclut la fonction [](/help/communities/functions.md#groups-function)Groupes.
 
 * Les communautés AEM prennent en charge l’imbrication de groupes dans d’autres groupes. L’imbrication de groupe est possible lorsque la [structure du nouveau groupe](/help/communities/tools-groups.md) contient la fonction de groupes.
-* Pour l’environnement de création uniquement, il existe un assistant de création de groupe similaire à l’assistant de création de site.
-* Si (ou non) les membres peuvent créer des groupes dans l’environnement de publication, il est configurable lors de l’ajout d’une fonction Groupes à une structure de site de communauté ou de groupe de communauté.
+* Pour le de création  uniquement, il existe un assistant de création de groupe similaire à l&#39;assistant de création de site.
+* Si (ou non) les membres peuvent créer des groupes dans le  de publication  il est configurable lors de l&#39;ajout d&#39;une fonction Groupes à une structure de site de communauté ou de groupe de communauté.
 
 Parmi les trois modèles de groupe inclus, seul le `Reference Group` modèle inclut une fonction de groupe dans sa structure.
 
 Les différentes facettes des groupes communautaires sont les suivantes :
 
-* **Création**: un nouveau groupe peut être créé à l’auteur et, éventuellement, à la publication
-* **Contrôle**: groupe peut être ouvert ou secret
-* **Imbrication**: un groupe peut contenir zéro ou plusieurs groupes
+* **Création**: un nouveau groupe peut être créé sur l’instance d’auteur et, éventuellement, sur l’instance de publication.
+* **Contrôle**: peut être ouvert ou secret.
+* **Imbrication**: peut contenir zéro ou plusieurs groupes.
 
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
@@ -42,57 +42,71 @@ Les différentes facettes des groupes communautaires sont les suivantes :
 >
 >Cette console Groupes, accessible uniquement à partir de la console Sites des communautés, ne doit pas être confondue avec la console [](/help/communities/members.md) Groupes de membres pour la gestion des groupes de membres.
 >
->Les groupes de membres sont des groupes d’utilisateurs enregistrés dans l’environnement de publication et accessibles depuis l’environnement d’auteur à l’aide du service [](/help/communities/deploy-communities.md#tunnel-service-on-author)tunnel.
+>Les groupes membres sont des groupes d’utilisateurs enregistrés dans le  de publication  et accessibles à partir de l’auteur  le à l’aide du service [](/help/communities/deploy-communities.md#tunnel-service-on-author)tunnel.
+
 
 ## Création de groupe {#group-creation}
 
 Pour accéder à la console Groupes :
 
-* Sur l’auteur, connectez-vous avec les droits d’administrateur
-* A partir de la navigation globale : **Communautés, Sites**
-* Sélectionner un dossier de site communautaire existant pour l&#39;ouvrir
-* Sélection d’une instance d’un site de la communauté dans le dossier
+* Sur l’auteur, connectez-vous avec des droits d’administrateur.
+* A partir de la navigation globale : **[!UICONTROL Communautés]** > **[!UICONTROL Sites]**.
+* Sélectionnez un dossier de site communautaire existant pour l’ouvrir.
+* Sélectionnez une instance d’un site de la communauté dans le dossier.
 
-   * la structure du site communautaire doit inclure une fonction de groupe
-   * ces captures d’écran proviennent du didacticiel Prise en main après [création de groupes lors de la publication](/help/communities/published-site.md)
+   * La structure du site communautaire doit inclure une fonction de groupe.
+   * Ces captures d’écran proviennent du didacticiel Prise en main après [la création de groupes lors de la publication](/help/communities/published-site.md).
 
-Sélectionnez le dossier **** Groupes pour l’ouvrir.
+* Sélectionnez le dossier **** Groupes pour l’ouvrir.
 
-Lorsqu’ils sont ouverts, tous les groupes existants, qu’ils soient créés à l’auteur ou à la publication, s’affichent.
+   Lorsqu’ils sont ouverts, tous les groupes existants, qu’ils soient créés à l’auteur ou à la publication, s’affichent.
 
-Dans cette console Groupes, il est possible de créer de nouveaux groupes.
+   A partir de cette console Groupes, il est possible de créer de nouveaux groupes.
 
-![chlimage_1-200](assets/chlimage_1-200.png)
+   ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * Sélectionnez le bouton **Créer un groupe** .
 
-### Étape 1 : Modèle Groupe de communautés {#step-community-group-template}
+### Étape 1 : Modèle de groupe de communautés {#step-community-group-template}
 
 ![Groupes communautaires multilingues](assets/multi-lingual-group.png)
 
-* **Titre**du groupe de la communauté : titre d’affichage du groupe.
+* **Titre de groupe de communautés**
+
+   Titre d’affichage du groupe.
 Le titre s’affiche sur le site publié pour le groupe.
 
-* **Groupe de communautés Description**: une description du groupe.
-* **Racine**du groupe de communautés : chemin racine du groupe.
+* **Description du groupe de communautés**
+
+   Description du groupe.
+
+* **Racine du groupe de communautés**
+
+   Chemin d’accès racine au groupe.
 La racine par défaut est le site parent, mais la racine peut être déplacée vers n’importe quel emplacement du site Web. Il n’est pas recommandé de le modifier.
 
-* ****Groupe de communautés disponible supplémentaire Langues(s)** menu : **utilisez la liste déroulante pour sélectionner la ou les langues des groupes communautaires disponibles. Le menu affiche toutes les langues dans lesquelles le site de la communauté parent est créé. Les utilisateurs peuvent sélectionner l’une de ces langues pour créer des groupes dans plusieurs paramètres régionaux au cours de cette seule étape. Un même groupe est créé dans plusieurs langues spécifiées dans la console Groupes des sites de communauté respectifs.
+* **Menu Langues(s)** supplémentaires disponibles du groupe de communautés
 
-* **Nom** du groupe de la communauté : nom de la page racine du groupe qui apparaît dans l’URL
+   Utilisez la liste déroulante pour sélectionner la ou les langues des groupes de communautés disponibles. Le menu affiche toutes les langues dans lesquelles le site de la communauté parent est créé. Les utilisateurs peuvent sélectionner l’une de ces langues pour créer des groupes dans plusieurs paramètres régionaux au cours de cette seule étape. Un même groupe est créé dans plusieurs langues spécifiées dans la console Groupes des sites de communauté respectifs.
 
-   * double-vérifiez le nom, car il n’est pas facilement modifié une fois le groupe créé.
-   * l’URL de base s’affichera sous le `Community Group Name`
-   * pour une URL valide, ajoutez &quot;.html&quot;
-      *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`
+* **Nom du groupe de communautés**
 
-* **Menu Modèle** de groupe de communautés : utilisez la liste déroulante pour choisir un modèle [de groupe de](/help/communities/tools.md)communauté disponible.
+   Nom de la page racine du groupe qui apparaît dans l’URL.
+
+   * -vérifiez le nom car il n&#39;est pas facilement modifié une fois le groupe créé.
+   * L’URL de base s’affichera sous le `Community Group Name`.
+   * Pour une URL valide, ajoutez &quot;.html&quot;
+      *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+
+* **Menu Modèle** de groupe de communautés
+
+   Utilisez la liste déroulante pour choisir un modèle [de groupe de](/help/communities/tools.md)communauté disponible.
 
 ### Étape 2 : Conception {#step-design}
 
-#### COMMUNITY GROUP THEME {#community-group-theme}
+### COMMUNITY GROUP THEME {#community-group-theme}
 
-La structure utilise [Twitter Bootstrap](https://twitterbootstrap.org/) pour apporter une conception adaptée et flexible au site. L’un des nombreux thèmes d’amorçage préchargés peut être sélectionné pour mettre en forme le modèle de groupe de communautés sélectionné ou un thème d’amorçage peut être téléchargé.
+La structure utilise [Twitter Bootstrap](https://twitterbootstrap.org/) pour apporter une conception adaptée et flexible au site. L’un des nombreux d’amorçage préchargés peut être sélectionné pour mettre en forme le modèle de groupe de communautés sélectionné ou un thème d’amorçage peut être téléchargé.
 
 Une fois sélectionné, le thème sera superposé avec une coche bleue opaque.
 
@@ -100,7 +114,7 @@ Il est possible de sélectionner un thème différent du thème du site parent.
 
 Une fois le site de la communauté publié, il est possible de [modifier les propriétés](#modifyinggroupproperties) et de sélectionner un autre thème.
 
-#### COMMUNITY GROUP BRANDING {#community-group-branding}
+### COMMUNITY GROUP BRANDING {#community-group-branding}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -108,48 +122,54 @@ L’image de marque du site de la communauté est une image affichée sous forme
 
 L’image doit être dimensionnée de manière à être aussi large que l’affichage prévu de la page dans le navigateur et à 120 pixels de hauteur.
 
-Lorsque vous créez ou sélectionnez une image, gardez à l’esprit :
+Lors de la création ou de la sélection d’une image, gardez à l’esprit :
 
 * La hauteur de l’image sera rognée à 120 pixels, mesurée à partir du bord supérieur de l’image.
 * L’image est épinglée sur le bord gauche de la fenêtre du navigateur.
 * L’image n’est pas redimensionnée, de sorte que lorsque la largeur de l’image est :
 
-   * inférieure à la largeur du navigateur, l’image se répète horizontalement.
-   * supérieur à la largeur du navigateur, l’image semble recadrée.
+   * Moins que la largeur du navigateur, l’image se répète horizontalement.
+   * Plus grande que la largeur du navigateur, l’image semble recadrée.
 
 ### Étape 3 : Paramètres {#step-settings}
 
-#### MODERATION {#moderation}
+**MODÉRATION**
 
 ![sélectionner les rôles des membres du groupe de communautés](assets/group-admin.png)
 
 **Modérateurs de groupe de communautés**
 
-Par défaut, la liste des modérateurs du site de la communauté parent est héritée.
+Par défaut, le des modérateurs du site de la communauté parent est hérité.
 
-Il est possible d’ajouter des modérateurs spécifiques au groupe. Rechercher des membres (de l’environnement de publication) pour les ajouter en tant que modérateurs
+Il est possible d’ajouter des modérateurs spécifiques au groupe. Recherchez des membres (à partir de la publication  de l’) pour les ajouter en tant que modérateurs.
 
 **Administrateurs du groupe**
 
 Par défaut, l’administrateur du site de la communauté parent est également l’administrateur des groupes.
 
-Cependant, il est possible de désigner des administrateurs de groupes indépendants. Les administrateurs de groupe peuvent gérer leur groupe (G1, par exemple) et créer un sous-groupe imbriqué sous G1. Ils peuvent également affecter différents administrateurs au sous-groupe.
+Cependant, il est possible d’affecter des administrateurs de groupes indépendants. Les administrateurs de groupe peuvent gérer leur groupe (G1, par exemple) et créer un sous-groupe imbriqué sous G1. Ils peuvent également affecter différents administrateurs au sous-groupe.
 
 Un utilisateur U1 peut donc être administrateur dans un groupe G1 et un utilisateur régulier dans son groupe imbriqué G2.
 
-#### MEMBERSHIP {#membership}
+**ADHÉSION**
 
 Le paramètre d&#39;adhésion permet de choisir l&#39;une des trois façons de sécuriser un groupe communautaire.
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-* **Adhésion** facultative Si cette option est sélectionnée, le groupe de la communauté est un groupe public. Les membres du site peuvent participer au groupe et publier sans rejoindre explicitement le groupe. La valeur par défaut est sélectionnée.
+* **Abonnement facultatif**
 
-* **Appartenance** obligatoire Si cette option est sélectionnée, le groupe de la communauté est un groupe ouvert. Les membres du site de la communauté peuvent afficher le contenu du groupe, mais doivent rejoindre le groupe pour publier du contenu. Les membres se joignent en sélectionnant le `Join` bouton dans l’environnement de publication. La valeur par défaut n’est pas sélectionnée.
+   S’il est sélectionné, le groupe de la communauté est un groupe public. Les membres du site peuvent participer au groupe et publier sans rejoindre explicitement le groupe. La valeur par défaut est sélectionnée.
 
-* **Adhésion** restreinte Si cette option est sélectionnée, le groupe de la communauté est un groupe secret. Les membres de la communauté doivent être explicitement invités. Les membres invités sont saisis dans la zone de recherche. Les membres peuvent être ajoutés ultérieurement à l’aide des consoles [Membres et Groupes](/help/communities/members.md) de l’environnement d’auteur. La valeur par défaut n’est pas sélectionnée.
+* **Abonnement requis**
 
-#### Miniature {#thumbnail}
+   S’il est sélectionné, le groupe de la communauté est un groupe ouvert. Les membres du site de la communauté peuvent  le contenu du groupe, mais doivent rejoindre le groupe pour publier du contenu. Les membres se joignent en sélectionnant le `Join` bouton dans le  de publication . La valeur par défaut n’est pas sélectionnée.
+
+* **Abonnement restreint**
+
+   S’il est sélectionné, le groupe de la communauté est un groupe secret. Les membres de la communauté doivent être explicitement invités. Les membres invités sont saisis dans la zone de recherche. Les membres peuvent être ajoutés ultérieurement à l’aide des consoles [Membres et Groupes](/help/communities/members.md) de l’auteur  de . La valeur par défaut n’est pas sélectionnée.
+
+**Miniature**
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
@@ -177,6 +197,7 @@ Une fois le processus terminé, la carte du nouveau site (groupe) de sous-commun
 >
 >Le groupe est créé dans toutes les langues, comme indiqué à l’ [étape 1 : Modèle](/help/communities/groups.md#step-community-group-template) de groupe communautaire dans d’autres langues de groupe communautaire disponibles, dans la console Groupes communautaires des sites communautaires respectifs.
 
+
 ## Contenu du groupe d’auteurs {#author-group-content}
 
 ![chlimage_1-206](assets/chlimage_1-206.png)
@@ -185,11 +206,11 @@ Le contenu de la page d’un groupe peut être créé avec les mêmes outils que
 
 ## Modifier les propriétés du groupe {#modify-group-properties}
 
-Les propriétés d’un site de sous-communauté existant, spécifiées au cours du processus de création du groupe de la communauté, peuvent être modifiées en sélectionnant l’icône Modifier le site qui s’affiche lorsque vous passez la souris sur la carte du groupe :
+Les propriétés d’un site de sous-communauté existant, spécifiées au cours du processus de création de groupe de la communauté, peuvent être modifiées en sélectionnant l’icône Modifier le site qui s’affiche lorsque vous passez la souris sur la carte du groupe :
 
 ![chlimage_1-207](assets/chlimage_1-207.png)
 
-Les détails des propriétés suivantes correspondent aux descriptions fournies dans la section Création [de](#group-creation) groupe. Tout groupe imbriqué peut être modifié, qu’il soit créé dans l’environnement de publication ou dans l’environnement de création.
+Les détails des propriétés suivantes correspondent aux descriptions fournies dans la section Création [de](#group-creation) groupe. Tout groupe imbriqué peut être modifié, qu’il soit créé dans le  de publication  ou dans le de l’auteur .
 
 ![chlimage_1-208](assets/chlimage_1-208.png)
 
@@ -208,9 +229,9 @@ La [STRUCTURE](#modify-structure) de la sous-communauté peut plutôt être modi
 
 ### Modifier la structure {#modify-structure}
 
-Le panneau STRUCTURE permet de modifier la structure initialement créée à partir du modèle de groupe de communautés sélectionné lors de la création du site de sous-communauté à partir de l’environnement d’auteur ou de publication. Depuis le panneau, il est possible de
+Le panneau STRUCTURE permet de modifier la structure initialement créée à partir du modèle de groupe de communautés sélectionné lors de la création du site de sous-communauté à partir de l’auteur ou de la publication  . Depuis le panneau, il est possible de :
 
-* Faire glisser des fonctions [de](/help/communities/functions.md) communauté supplémentaires dans la structure du site
+* Faites glisser d’autres fonctions [de](/help/communities/functions.md) communauté dans la structure du site.
 * Sur une instance d’une fonction de communauté dans la structure du site :
 
    * **`Gear icon`**
@@ -224,14 +245,19 @@ Modifiez l’ordre des fonctions tel qu’il s’affiche dans la barre de naviga
 
 >[!CAUTION]
 >
->* Bien que le titre d’affichage puisse être modifié sans effets secondaires, il n’est pas recommandé de modifier le nom d’URL d’une fonction de communauté appartenant à un site communautaire.
-Par exemple, renommer l’URL ne déplace pas l’UGC existant, avec pour effet de &quot;perdre&quot; l’UGC.
+>Bien que le titre d’affichage puisse être modifié sans effets secondaires, il n’est pas recommandé de modifier le nom d’URL d’une fonction de communauté appartenant à un site de la communauté.
+>
+>Par exemple, renommer l’URL ne déplace pas l’UGC existant, avec pour effet de &quot;perdre&quot; l’UGC.
+
 
 >[!CAUTION]
-La fonction de groupes ne doit *pas * être la *première ou la seule* fonction de la structure du site.
-Toute autre fonction, telle que la fonction [de](/help/communities/functions.md#page-function)page, doit être incluse et répertoriée en premier.
+>
+>La fonction de groupes ne doit *pas * être la *première ou la seule* fonction de la structure du site.
+>
+>Toute autre fonction, telle que la fonction [de](/help/communities/functions.md#page-function)page, doit être incluse et répertoriée en premier.
 
-#### Exemple : Ajout d’une fonction de calendrier à une structure de sous-communauté (groupe) {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+
+**Exemple : Ajout d’une fonction de calendrier à une structure de sous-communauté (groupe)**
 
 ![chlimage_1-209](assets/chlimage_1-209.png)
 
@@ -242,7 +268,7 @@ Le panneau DESIGN permet de modifier le thème :
 * [Thème de groupe de communautés](#community-group-theme)
 * [Valorisation marque groupe communautés](#community-group-branding)
 
-   * faire défiler jusqu’au bas du panneau pour modifier l’image de marque
+   * Faites défiler l’écran jusqu’au bas du panneau pour modifier l’image de marque.
 
 ### Modifier les paramètres {#modify-settings}
 
@@ -250,30 +276,33 @@ Le panneau PARAMÈTRES permet d’ajouter des [modérateurs](#moderation)de comm
 
 ### Modifier l’adhésion {#modify-membership}
 
-Le groupe [MEMBRES](#membership) est uniquement informatif. Il n&#39;est pas possible de modifier le type d&#39;appartenance au groupe établi, qu&#39;il soit facultatif, obligatoire ou restreint.
+Le groupe [MEMBRES](#membership) n&#39;est qu&#39;informatif. Il n&#39;est pas possible de modifier le type d&#39;appartenance au groupe établi, qu&#39;il soit facultatif, obligatoire ou restreint.
 
 ### Modifier la miniature {#modify-thumbnail}
 
-Le panneau [VIGNETTE](#thumbnail) permet de télécharger une image pour représenter le groupe de la communauté aux visiteurs du site dans l&#39;environnement de publication ainsi que dans la console Groupes du site des communautés dans l&#39;environnement de création.
+Le panneau [VIGNETTE](#thumbnail) permet de télécharger une image pour représenter le groupe de la communauté sur les du site dans le de publication  ainsi que dans la console Groupes du site des communautés dans le  de l&#39;auteur .
 
 ## Publication du groupe {#publish-the-group}
 
 ![chlimage_1-210](assets/chlimage_1-210.png)
 
-Après la création ou la modification d’un groupe de la communauté, il est possible de le publier (activer) en sélectionnant l’ `Publish Site` icône.
+Une fois qu’un groupe de la communauté a été créé ou modifié, il est possible de le publier (activer) en sélectionnant l’ `Publish Site` icône.
 
 Une fois le groupe publié, un message s’affiche :
 
 ![chlimage_1-211](assets/chlimage_1-211.png)
 
 >[!CAUTION]
-Le site de la communauté parent et les groupes parents auraient déjà dû être publiés.
-Le site communautaire et les groupes imbriqués devraient être publiés de manière descendante.
+>
+>Le site de la communauté parent et les groupes parents auraient déjà dû être publiés.
+>
+>Le site communautaire et les groupes imbriqués devraient être publiés de manière descendante.
+
 
 ## Supprimer le groupe {#delete-the-group}
 
 ![icône de suppression]()
 
-Supprimez un groupe dans la console Groupes de la communauté en sélectionnant l’icône Supprimer le groupe qui s’affiche lorsque vous passez la souris sur le groupe.
+Supprimez un groupe dans la console Groupes de la communauté en sélectionnant l’icône Supprimer le groupe, qui s’affiche lorsque vous passez la souris sur le groupe.
 
 Cela supprime tous les éléments associés au groupe, par exemple tout le contenu du groupe est définitivement supprimé et les abonnements des utilisateurs sont supprimés du système.
