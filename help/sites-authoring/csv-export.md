@@ -1,6 +1,6 @@
 ---
-title: Exporter au format CSV
-seo-title: Exporter au format CSV
+title: 'Exporter au format CSV  '
+seo-title: 'Exporter au format CSV  '
 description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
 seo-description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
 
 ---
 
 
-# Exporter au format CSV{#export-to-csv}
+# Exporter au format CSV  {#export-to-csv}
 
 L’option **Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
 
@@ -31,12 +31,12 @@ L’option **Créer une exportation CSV** vous permet d’exporter les informati
 L’assistant **Créer une exportation CSV** vous permet de sélectionner les éléments suivants :
 
 * Propriétés à exporter
-   * Métadonnées
+   * Métadonnées  
       * Nom
       * Modifié
       * Publié
-      * Modèle
-      * Processus
+      * Template (Modèle)
+      * Workflow
    * Traduction
       * Traduit
    * Analyse
@@ -51,16 +51,16 @@ L’assistant **Créer une exportation CSV** vous permet de sélectionner les é
 
 Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre application compatible).
 
-![]() ![etc-01](assets/etc-01.png)
+![etc-01](assets/etc-01.png)
 
 The create **CSV Report** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
 
 ![etc-02](assets/etc-02.png)
 
-Pour créer une exportation CSV : 
+Pour créer une exportation CSV :
 
 1. Ouvrez la console **Sites**, puis, le cas échéant, accédez à l’emplacement requis.
-1. From the toolbar, select **Create** then **CSV Report** to open the wizard:
+1. Dans la barre d’outils, sélectionnez **Créer** puis **Rapport CSV** pour ouvrir l’assistant :
 
    ![etc-03](assets/etc-03.png)
 
