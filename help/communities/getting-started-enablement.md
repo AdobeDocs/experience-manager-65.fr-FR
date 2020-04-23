@@ -10,22 +10,23 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 341fef2b8f040848a59381b0d4996c29f352b929
 
 ---
 
 
-# Prise en main d’AEM Communities pour l’activation  {#getting-started-with-aem-communities-for-enablement}
+# Prise en main d’AEM Communities pour l’activation {#getting-started-with-aem-communities-for-enablement}
 
-Les communautés AEM aident les marques à créer des expériences cohérentes sur les canaux numériques et en personne en facilitant l’activation entre les employés et les clients grâce à un catalogue de ressources d’activation, de contenu affecté et de recommandations dynamiques, le tout fourni dans une communauté sociale pour favoriser l’engagement.
+Les communautés AEM aident les marques à créer des expériences cohérentes dans les  numériques et en personne en facilitant l’activation entre les employés et les clients grâce à un catalogue de ressources d’activation, de contenu affecté et de recommandations dynamiques, le tout dans une communauté sociale pour favoriser l’engagement.
 
-Voici un didacticiel sur la mise en place rapide d’une communauté [d’](overview.md#enablement-community) activation à des fins de démonstration ou de développement.
+Vous trouverez ci-dessous un didacticiel sur la mise en place rapide d’une communauté [d’](overview.md#enablement-community) activation à des fins de démonstration ou de développement.
 
 Pour consulter un didacticiel sur la configuration rapide d’une communauté [d’](overview.md#engagement-community)engagement, consultez [Prise en main des communautés](getting-started.md)AEM.
 
 >[!NOTE]
 >
 >Ce didacticiel suppose l’installation de [Communities Feature Pack 1](deploy-communities.md#latestfeaturepack) ou version ultérieure.
+
 
 * [Configuration initiale](enablement-setup.md)
 
