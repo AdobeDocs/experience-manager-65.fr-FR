@@ -3,7 +3,7 @@ title: Organisez vos ressources numériques.
 description: Organisez vos fichiers numériques, images, fichiers, dossiers, etc. à l’aide d’Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -36,7 +36,7 @@ La méthode la plus élémentaire pour organiser les fichiers consiste à les en
 
 ## Organisation des fichiers à l’aide de balises {#use-tags-to-organize-assets}
 
-Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher des fichiers, créer des collections à l’aide des résultats de la recherche, améliorer le classement des recherches pour certains fichiers et tirer parti des algorithmes d’IA d’Adobe Sensei pour la découverte de fichiers.
+Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher des fichiers, créer des collections à l’aide des résultats de la recherche, améliorer le classement des recherches pour certains fichiers et tirer parti des algorithmes AI d’Adobe Sensei pour la découverte de fichiers.
 
 Adobe Experience Manager Assets utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, notre infrastructure d’intelligence artificielle et d’apprentissage automatique, qui peut être formé pour reconnaître et appliquer des balises standard et spécifiques à l’entreprise à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
