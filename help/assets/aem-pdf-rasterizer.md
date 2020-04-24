@@ -3,24 +3,24 @@ title: Utilisation de PDF rasterizer pour générer des rendus
 description: Cet article présente comment générer des miniatures et des rendus de haute qualité avec la bibliothèque Adobe PDF Rasterizer.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Utiliser le pixelliseur PDF {#using-pdf-rasterizer}
+# Utiliser PDF Rasterizer {#using-pdf-rasterizer}
 
 Parfois, lorsque vous téléchargez des fichiers PDF ou AI de grande taille et riches en contenu vers Adobe Experience Manager (AEM) Assets, la bibliothèque par défaut risque de ne pas générer une sortie exacte. Dans de tels cas, la bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise par rapport à la sortie d’une bibliothèque par défaut.
 
 Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
-* Fichiers AI/PDF de grande taille et riches en continu
-* Fichiers AI/PDF avec miniatures non générées de manière native
-* Fichiers AI avec des couleurs PMS (Pantone Matching System)
+* Fichiers AI/PDF de grande taille et riches en continu.
+* Les fichiers AI et PDF avec des miniatures ne sont pas générés en dehors de la zone.
+* Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
 Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
 
-1. Installez le module PDF Rasterizer sur votre instance AEM à partir de [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Install the PDF Rasterizer package on your AEM deployment from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
