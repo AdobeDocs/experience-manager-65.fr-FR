@@ -4,7 +4,7 @@ description: Suggestions et conseils sur la configuration d’AEM, les modificat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -267,7 +267,7 @@ Certaines optimisations peuvent être effectuées sur les configurations d’ind
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false
