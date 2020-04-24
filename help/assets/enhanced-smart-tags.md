@@ -3,7 +3,7 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -44,7 +44,7 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 ## Intégration {#onboarding}
 
-Le service de contenu dynamique est disponible à l’achat en tant que module complémentaire d’Experience Manager. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S Adobe.
+Le service de contenu dynamique est disponible à l’achat en tant que module complémentaire d’Experience Manager. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers les E/S Adobe.
 
 L’administrateur peut suivre le lien pour intégrer Smart Content Service à Experience Manager. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
 
