@@ -3,7 +3,7 @@ title: Traiter les fichiers à l’aide des gestionnaires de médias et des  de
 description: Découvrez les gestionnaires de médias et comment utiliser les  de pour effectuer des  sur vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -462,7 +462,7 @@ Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d
 
 ### An example using ImageMagick {#an-example-using-imagemagick}
 
-L’exemple suivant montre comment configurer l’étape de processus de ligne de commande de sorte qu’à chaque fois qu’une ressource de type MIME gif ou tiff est ajoutée à /content/dam sur le serveur AEM, une image inversée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
+L’exemple suivant montre comment configurer l’étape de processus de ligne de commande afin que chaque fois qu’un fichier avec le type mime gif ou tiff est ajouté à /content/dam sur le serveur AEM, une image retournée de l’original soit créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
 
 Pour ce faire, vous utiliserez ImageMagick. ImageMagick est une suite logicielle gratuite permettant de créer, modifier et composer des images bitmap, généralement à partir de la ligne de commande.
 
@@ -496,7 +496,7 @@ Ajoutez ensuite l’étape de processus de ligne de commande au workflow **[!UIC
 
 Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 
-1. Dans le système de fichiers, sélectionnez une image.tiff. Renommez-la `myImage.tiff` et copiez-la dans `/content/dam` en utilisant, par exemple, WebDAV.
+1. Dans le système de fichiers, obtenez une image TIFF de votre choix. Renommez-la `myImage.tiff` et copiez-la dans `/content/dam` en utilisant, par exemple, WebDAV.
 1. Accédez à la console **[!UICONTROL CQ5 DAM]**, par exemple `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Ouvrez la ressource **[!UICONTROL myImage.tiff]** et vérifiez que l’image inversée et les trois miniatures ont bien été créées.
 
@@ -516,7 +516,7 @@ Par exemple, si ImageMagick est installé sur le disque hébergeant le serveur A
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-alors, lors de l’exécution du workflow, l’étape s’applique uniquement aux ressources dont les types MIME sont image/gif ou mime:image/tiff, elle crée une image inversée de l’original, la convertit en .jpg et génère trois miniatures aux dimensions suivantes : 140x100, 48x48 et 10x250.
+then, when the workflow runs, the step only applies to assets that have `image/gif` or `mime:image/tiff` as `mime-types`, it creates a flipped image of the original, converts it into JPG and creates three thumbnails that have the dimensions: 140x100, 48x48, and 10x250.
 
 Utilisez les [!UICONTROL Arguments de processus] suivants pour créer les trois miniatures standards à l’aide d’ImageMagick :
 
