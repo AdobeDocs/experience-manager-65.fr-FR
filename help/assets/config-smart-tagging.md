@@ -3,7 +3,7 @@ title: Configurer le balisage des ressources à l’aide du service de contenu d
 description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans AEM à l’aide du service de contenu dynamique.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 Vous pouvez intégrer Adobe Experience Manager (AEM) au service de contenu dynamique en utilisant Adobe I/O. Utilisez cette configuration pour accéder au service de contenu dynamique à partir d’AEM.
 
-L’article détaille les tâches essentielles suivantes qui sont requises pour configurer le service de contenu dynamique. En arrière-plan, le serveur AEM authentifie vos informations d’identification du service auprès de la passerelle Adobe I/O avant de transférer votre demande au service de contenu dynamique.
+L’article détaille les tâches essentielles suivantes qui sont requises pour configurer le service de contenu dynamique. À l’arrière-plan, le serveur AEM authentifie vos informations d’identification de service avec la passerelle d’E/S Adobe avant de transmettre votre requête à Smart Content Service.
 
 * Création d’une configuration de service de contenu dynamique dans AEM pour générer une clé publique. Obtention d’un certificat public pour l’intégration OAuth.
 * Création d’une intégration dans Adobe I/O et téléchargement de la clé publique générée.
