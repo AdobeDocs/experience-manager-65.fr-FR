@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -24,25 +24,25 @@ Le script comment.hbs est responsable de la création du code HTML global pour c
 
 Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
 
-1. copier `comment.hbs`de `libs`vers `apps`
+1. Copier `comment.hbs`de `libs`vers `apps`
 
-   1. select `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. sélectionner **Copier**
-   1. select `/apps/social/commons/components/hbs/comments/comment`
-   1. sélectionner **Coller**
+   1. Sélectionner `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Sélectionner une **copie**
+   1. Sélectionner `/apps/social/commons/components/hbs/comments/comment`
+   1. Sélectionner **Coller**
 
-1. ouvrir le recouvrement `comment.hbs`
+1. Ouvrir le recouvrement `comment.hbs`
 
-   * double-cliquez sur le noeud `comment.hbs`dans `/apps/social/commons/components/hbs/comments/comment folder`
+   * -clic sur le noeud `comment.hbs` dans `/apps/social/commons/components/hbs/comments/comment folder`
 
-1. recherchez les lignes suivantes et supprimez-les ou placez-les en commentaire :
+1. Recherchez les lignes suivantes et supprimez-les ou placez-les en commentaire :
 
 ```xml
   <aside class="scf-comment-author">
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Supprimez les lignes ou entourez-les de &#39;&lt;!—&#39; et &#39;—>&#39; pour les commenter. En outre, les caractères &#39;xxx&#39; sont ajoutés comme indicateur visuel de l&#39;endroit où l&#39;avatar aurait été.
+Supprimez les lignes ou entourez-les de `<!--` et `-->` mettez-les en commentaire. En outre, les caractères &#39;xxx&#39; sont ajoutés comme indicateur visuel de l&#39;endroit où l&#39;avatar aurait été.
 
 ```xml
    xxx
@@ -59,13 +59,14 @@ Poussez le composant de commentaires superposés vers l’instance de publicatio
 >
 >Une forme de réplication plus robuste consisterait à créer un package dans Package Manager et à l’ [activer](/help/sites-administering/package-manager.md#replicating-packages) . Un package peut être exporté et archivé.
 
-Dans la navigation globale, sélectionnez **Outils, Déploiement, Réplication** , puis **Activer l’arborescence**.
 
-Pour le chemin de début, saisissez `/apps/social/commons`* **et sélectionnez **Activer**.
+Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** , puis cliquez sur **[!UICONTROL Activer l’arborescence.]**
+
+Pour le chemin d’ du, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Afficher les résultats {#view-results}
+### Résultats {#view-results}
 
 Si vous vous connectez à l’instance de publication en tant qu’administrateur (https://localhost:4503/crx/de en tant qu’administrateur/administrateur, par exemple), vous pouvez vérifier que les composants superposés sont bien présents.
 
