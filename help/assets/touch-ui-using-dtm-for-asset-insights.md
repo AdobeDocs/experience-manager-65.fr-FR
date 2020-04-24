@@ -1,14 +1,14 @@
 ---
-title: Activation des statistiques sur les ressources via DTM
+title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Activation des statistiques sur les ressources via DTM {#enable-asset-insights-through-dtm}
+# Activation des statistiques sur les ressources via DTM   {#enable-asset-insights-through-dtm}
 
 La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics.
 
@@ -30,7 +30,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 
    * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
 
-   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/experience-manager/using/dtm.html).
+   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html).
    ![Création d’une propriété web de modification](assets/Create-edit-web-property.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
@@ -52,9 +52,9 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
    > * Pour le suivi des pages hébergé par AEM, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
 
 
-1. Accès `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]** ou ouvrez un outil Adobe Analytics existant. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
+1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]** ou ouvrez un outil Adobe Analytics existant. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
 
-   ![Ajout de l’outil Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
+   ![Ajouter outil Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
    Sélectionnez des suites de rapports de production/intermédiaires, selon les besoins.
 
@@ -104,8 +104,8 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
    })();
    ```
 
-   * La règle de chargement de page dans DTM inclut uniquement le code pagetracker.js. Tous les champs `assetAnalytics` sont considérés comme des remplacements des valeurs par défaut. Ils ne sont pas requis par défaut.
-   * The code calls `assetAnalytics.dispatcher.init`() after making sure that `_satellite.getToolsByType('sc')[0].getS`() is initialized and `assetAnalytics,dispatcher.init` is available. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
+   * The page load rule in DTM only includes the `pagetracker.js` code. Tous les champs `assetAnalytics` sont considérés comme des remplacements des valeurs par défaut. Ils ne sont pas requis par défaut.
+   * The code calls `assetAnalytics.dispatcher.init()` after making sure that `_satellite.getToolsByType('sc')[0].getS()` is initialized and `assetAnalytics,dispatcher.init` is available. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
    * As indicated in comments within the Insights Page Tracker code (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), when Page Tracker does not create an `AppMeasurement` object, the first three arguments (RSID, Tracking Server, and Visitor Namespace) are irrelevant. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.\
       Les arguments restants correspondent à ce qui est configuré sur la page Configuration des statistiques (**[!UICONTROL Outils > Ressources > Configuration des statistiques]**).
    * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont triées en fonction des outils SiteCatalyst disponibles dans l’interface de gestion dynamique des balises.
