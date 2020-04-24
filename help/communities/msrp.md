@@ -1,6 +1,6 @@
 ---
-title: MSRP - Fournisseur de ressources de stockage MongoDB
-seo-title: MSRP - Fournisseur de ressources de stockage MongoDB
+title: 'MSRP - MongoDB  fournisseur de ressources '
+seo-title: 'MSRP - MongoDB  fournisseur de ressources '
 description: Configuration des communautés AEM pour utiliser une base de données relationnelle comme magasin commun
 seo-description: Configuration des communautés AEM pour utiliser une base de données relationnelle comme magasin commun
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
@@ -10,12 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# MSRP - Fournisseur de ressources de stockage MongoDB {#msrp-mongodb-storage-resource-provider}
+# MSRP - MongoDB  fournisseur de ressources {#msrp-mongodb-storage-resource-provider}
 
 ## A propos de MSRP {#about-msrp}
 
@@ -39,7 +39,7 @@ Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-o
    * Aucun service requis
    * Choix des modes d’exécution :
       * Mode autonome
-      * [Mode](solr.md#solrcloud-mode) SolrCloud (recommandé pour les environnements de production)
+      * [Mode](solr.md#solrcloud-mode) SolrCloud (recommandé pour les  de production )
    * Choix de la recherche multilingue (MLS)
       * [Installation de Standard MLS](solr.md#installing-standard-mls)
       * [Installation de MLS avancé](solr.md#installing-advanced-mls)
@@ -48,11 +48,11 @@ Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-o
 
 ### Sélectionner MSRP {#select-msrp}
 
-La console [Configuration du](srp-config.md) stockage permet de sélectionner la configuration de stockage par défaut, qui identifie l&#39;implémentation de SRP à utiliser.
+La console [de configuration de  de](srp-config.md) permet de sélectionner la configuration de par défaut, qui identifie l&#39;implémentation de SRP à utiliser.
 
-Sur l’auteur, pour accéder à la console Configuration du stockage :
+Sur l’auteur, pour accéder à la console de configuration  du  :
 
-* A partir de la navigation globale : **[!UICONTROL Outils > Communautés > Configuration du stockage]**
+* Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL configuration]**.
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -69,7 +69,7 @@ Sur l’auteur, pour accéder à la console Configuration du stockage :
 
    * **[!UICONTROL Collection UGC mongoDB]**
 
-      *default*:contenu
+      *default*: contenu
 
    * **[!UICONTROL Collection de pièces jointes mongoDB]**
 
@@ -79,22 +79,30 @@ Sur l’auteur, pour accéder à la console Configuration du stockage :
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper **
 
-      Lors de l’exécution en mode [](solr.md#solrcloud-mode) SolrCloud avec un ZooKeeper externe, définissez cette valeur sur `HOST:PORT` pour le ZooKeeper, par exemple *my.server.com:2181* Pour un ensemble ZooKeeper, saisissez des `HOST:PORT` valeurs séparées par des virgules, telles que *host1:2181,host2:2:21888888880 1Laissez ce champ vide si vous exécutez Solr en mode autonome à l’aide de ZooKeeper interne.*
+      Lors de l’exécution en mode [](solr.md#solrcloud-mode) SolrCloud avec un ZooKeeper externe, définissez cette valeur sur `HOST:PORT` pour le ZooKeeper, par exemple *my.server.com:2181.*
+
+      Pour un ensemble ZooKeeper, saisissez `HOST:PORT` des valeurs séparées par des virgules, telles que *host1:2181,host2:2181.*
+
+      Laissez ce champ vide si vous exécutez Solr en mode autonome à l’aide de ZooKeeper interne.
       *Valeur par défaut*: *&lt;blank>*
-   * **[!UICONTROL URL]**solaire URL utilisée pour communiquer avec Solr en mode autonome.
+
+      * **[!UICONTROL URL]**solaire URL utilisée pour communiquer avec Solr en mode autonome.
 Laissez ce champ vide si vous êtes en mode SolrCloud.
-      *Valeur par défaut*: https://127.0.0.1:8983/solr/
-   * **[!UICONTROL Collection]**Solr Nom de la collection Solr.
-      *Valeur par défaut*: collection1
+         *Valeur par défaut*: https://127.0.0.1:8983/solr/
+
+      * **[!UICONTROL Collection]**Solr Nom de la collection Solr.
+         *Valeur par défaut*: collection1
+
 * Sélectionnez **[!UICONTROL Envoyer]**
 
 >[!NOTE]
 >
->La base de données mongoDB, qui prend par défaut le nom `communities`, ne doit pas être définie sur le nom d’une base de données utilisée pour les magasins de [noeuds ou les magasins](../../help/sites-deploying/data-store-config.md)de données (binaires). Voir aussi Eléments [de stockage dans AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>La base de données mongoDB, qui prend par défaut le nom `communities`, ne doit pas être définie sur le nom d’une base de données utilisée pour les magasins de [noeuds ou les magasins](../../help/sites-deploying/data-store-config.md)de données (binaires). Reportez-vous également à la page [Eléments  dans AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+
 
 ### Jeu de réplicas MongoDB {#mongodb-replica-set}
 
-Pour l’environnement de production, il est vivement recommandé de configurer un jeu de réplicas, une grappe de serveurs MongoDB qui implémente la réplication maître-esclave et le basculement automatisé.
+Pour le  de production , il est vivement recommandé de configurer un jeu de réplicas, un cluster de serveurs MongoDB qui implémente la réplication maître-esclave et le basculement automatisé.
 
 Pour en savoir plus sur les jeux de réplicas, consultez la documentation de [réplication](https://docs.mongodb.org/manual/replication/) de MongoDB.
 
@@ -104,19 +112,19 @@ Pour travailler avec des jeux de réplicas et apprendre à définir des connexio
 
 ```shell
 # Example url for:
-#     servers "mongoserver1", "mongoserver2", "mongoserver3"
-#     replica set 'rs0'
+# servers "mongoserver1", "mongoserver2", "mongoserver3"
+# replica set 'rs0'
 # port numbers only necessary if not default port 27017
 mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mongoport3>/?replicaSet=rs0&maxPoolSize=100&waitQueueMultiple=50&readPreference=secondaryPreferred
 ```
 
 ## Configuration de Solr {#solr-configuration}
 
-Une installation Solr peut être partagée entre le magasin de noeuds (Oak) et le magasin commun (MSRP) en utilisant différentes collections.
+Une installation Solr peut être partagée entre le magasin de noeuds (Oak) et le magasin commun (MSRP) à l’aide de différentes collections.
 
 Si les collections Oak et MSRP sont utilisées de manière intensive, un second Solr peut être installé pour des raisons de performances.
 
-Pour les environnements de production, le mode [](solr.md#solrcloud-mode) SolrCloud offre de meilleures performances par rapport au mode autonome (une configuration Solr locale unique).
+Pour les  de production , le mode [](solr.md#solrcloud-mode) SolrCloud offre des performances améliorées par rapport au mode autonome (une configuration Solr locale unique).
 
 Pour plus d’informations sur la configuration, voir Configuration [Solr pour SRP](solr.md).
 
@@ -134,18 +142,17 @@ Si une mise à niveau à partir d’une version antérieure configurée avec MSR
 
 MSRP doit être identifié comme le magasin commun sur toutes les instances d’auteur et de publication.
 
-Pour rendre la configuration identique disponible dans l’environnement de publication :
+Pour rendre la configuration identique disponible dans le  de publication , connectez-vous à votre instance d’auteur et procédez comme suit :
 
-* Sur l&#39;auteur :
-   * Accédez au menu principal à **[!UICONTROL Outils > Opérations > Réplication.]**
-   * Sélectionner **[!UICONTROL Activer l&#39;arborescence]**
-   * **[!UICONTROL Chemin de début]**:
-      * Naviguer jusqu’à `/etc/socialconfig/srpc/`
-   * Sélectionner **[!UICONTROL Activer]**
+* Dans le menu principal, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
+* Sélectionner **[!UICONTROL Activer l&#39;arborescence]**
+* **[!UICONTROL Chemin de début]**:
+   * Naviguer jusqu’à `/etc/socialconfig/srpc/`
+* Sélectionner **[!UICONTROL Activer]**
 
 ## Gestion des données utilisateur {#managing-user-data}
 
-Pour plus d’informations sur les *utilisateurs*, les profils ** utilisateur et les groupes *d’* utilisateurs, souvent entrés dans l’environnement de publication, consultez la page
+Pour plus d’informations sur les *utilisateurs*, les *des* utilisateurs et les groupes *d’* utilisateurs, souvent saisis dans le  de publication, consultez la page
 
 * [Synchronisation des utilisateurs](sync.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
@@ -164,7 +171,7 @@ Lors de la réindexation, il existe un compromis entre la mémoire et les perfor
 
 Une valeur par défaut raisonnable est 5000 :
 
-* Si la mémoire est un problème, spécifiez un nombre plus petit
+* Si la mémoire est un problème, spécifiez un nombre plus petit.
 * Si la vitesse est un problème, spécifiez un nombre plus élevé pour augmenter la vitesse.
 
 ### Exécution de l’outil de réindexation MSRP à l’aide de la commande cURL {#running-msrp-reindex-tool-using-curl-command}
@@ -187,11 +194,12 @@ cURL -u *connexion* -d *données* *reindex-url*
    `/etc/socialconfig/srpc/defaultconfiguration`
 * Pour limiter l’index à un élément UGC, spécifiez une sous-arborescence de `asipath`
 
-*reindex-url* = point de fin de la réindexation de SRP`http://localhost:4503/services/social/datastore/mongo/reindex`
+*reindex-url* = point de terminaison de la réindexation de SRP`http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
 >Si vous [réindexez DSRP Solr](dsrp.md), l’URL est **/services/social/datastore/rdb/reindex.**
+
 
 ### Exemple de réindexation MSRP {#msrp-reindex-example}
 
@@ -201,20 +209,20 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 ## Démonstration du protocole MSRP {#how-to-demo-msrp}
 
-Pour configurer MSRP pour un environnement de démonstration ou de développement, voir [Comment configurer MongoDB pour la démonstration](demo-mongo.md).
+Pour configurer MSRP pour une démonstration ou un  de développement , reportez-vous à la section [Procédure de configuration de MongoDB pour la démonstration](demo-mongo.md).
 
 ## Résolution des incidents {#troubleshooting}
 
 ### UGC invisible dans MongoDB {#ugc-not-visible-in-mongodb}
 
-Vérifiez que MSRP a été configuré comme fournisseur par défaut en vérifiant la configuration de l’option de stockage. Par défaut, le fournisseur de ressources de stockage est JSRP.
+Assurez-vous que MSRP a été configuré comme fournisseur par défaut en vérifiant la configuration de l’option de  de . Par défaut, le fournisseur de ressources   est JSRP.
 
-Sur toutes les instances d’AEM de création et de publication, consultez à nouveau la console [Configuration du](srp-config.md) stockage ou vérifiez le référentiel AEM :
+Sur toutes les instances d’AEM de création et de publication, consultez de nouveau la console [](srp-config.md) de configuration  ou vérifiez le référentiel AEM :
 
 * Dans JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * Ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur de stockage est JSRP
-   * Si le noeud srpc existe et contient la configuration [par](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)défaut du noeud, les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut
+   * Ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur de  de  est JSRP.
+   * Si le noeud srpc existe et contient la configuration [par](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)défaut du noeud, les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
 
 ### UGC disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
 
@@ -228,9 +236,9 @@ L’outil de migration peut être personnalisé pour exporter l’UGC des versio
 
 ### Erreur - champ non défini provider_id {#error-undefined-field-provider-id}
 
-Si l’erreur suivante est affichée dans les journaux, cela indique que le fichier de schéma Solr n’est pas correctement configuré.
+Si l’erreur suivante est affichée dans les journaux, cela indique que le fichier  Solr n’est pas correctement configuré.
 
-#### JsonMappingException : provider_id champ non défini {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException : provider_id de champ non défini {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
@@ -240,18 +248,18 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-Pour résoudre l’erreur, lorsque vous suivez les instructions d’ [installation de Standard MLS](solr.md#installing-standard-mls), assurez-vous que
+Pour résoudre l’erreur, suivez les instructions d’ [installation de Standard MLS](solr.md#installing-standard-mls)et assurez-vous que :
 
-* Les fichiers de configuration XML ont été copiés à l’emplacement Solr correct.
-* Solr a été redémarré après le remplacement des nouveaux fichiers de configuration par les fichiers existants.
+* Les fichiers de configuration XML ont été copiés à l’emplacement Solr approprié.
+* Solr a été redémarré après que les nouveaux fichiers de configuration ont remplacé les fichiers existants.
 
 ### Échec de la connexion sécurisée à MongoDB {#secure-connection-to-mongodb-fails}
 
 Si une tentative d’établissement d’une connexion sécurisée au serveur MongoDB échoue en raison d’une définition de classe manquante, il est nécessaire de mettre à jour le lot de pilotes MongoDB, `mongo-java-driver`, disponible à partir du référentiel Maven public.
 
-1. Téléchargez le pilote à partir de [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (version 2.13.2 ou ultérieure)
+1. Téléchargez le pilote à partir de [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (version 2.13.2 ou ultérieure).
 1. Copiez le lot dans le dossier &quot;crx-quickstart/install&quot; pour une instance AEM.
-1. Redémarrez l’instance AEM
+1. Redémarrez l’instance AEM.
 
 ## Ressources {#resources}
 
