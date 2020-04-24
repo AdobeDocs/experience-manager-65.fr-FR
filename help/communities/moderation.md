@@ -11,33 +11,33 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# Moderation Console{#moderation-console}
+# Moderation Console {#moderation-console}
 
-Dans les communautés AEM, la [modération en masse du contenu](/help/communities/moderate-ugc.md) de la communauté est possible à partir des environnements d’auteur et de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté de confiance affectés en tant que modérateurs).
+Dans les communautés AEM, la [modération en masse du contenu](/help/communities/moderate-ugc.md) de la communauté est possible à la fois depuis l’auteur et la publication   par les administrateurs et les modérateurs de la communauté (membres de la communauté de confiance affectés en tant que modérateurs).
 
-Les administrateurs et les modérateurs de la communauté peuvent également effectuer [une modération](/help/communities/in-context.md) contextuelle dans l’environnement de publication.
+Les administrateurs et les modérateurs de la communauté peuvent également effectuer [la modération](/help/communities/in-context.md) dans le contexte dans le  de publication .
 
-Une fonctionnalité de tous les sites [de la](/help/communities/sites-console.md) communauté est un élément de `Administration`menu accessible aux utilisateurs qui se connectent avec des privilèges d’administration. Le `Administration`lien donne accès à la console de modération.
+Une fonctionnalité de tous les sites [de la](/help/communities/sites-console.md) communauté est un `Administration` menu accessible aux utilisateurs qui se connectent avec des privilèges d’administrateur. Le `Administration` lien donne accès à la console de modération.
 
-A partir de la console Modération, les administrateurs et les modérateurs de la communauté ont accès à tout le contenu généré par l’utilisateur (UGC) pour lequel ils sont autorisés à modérer. S’il est autorisé à modérer plusieurs sites, il est possible d’afficher les publications sur tous les sites ou de filtrer par sites de communautés sélectionnées.
+A partir de la console Modération, les administrateurs et les modérateurs de la communauté ont accès à tout le contenu généré par l’utilisateur (UGC) pour lequel ils sont autorisés à modérer. S’il est autorisé à modérer plusieurs sites, il est possible d’des publications sur tous les sites ou de filtrer par sites de communautés sélectionnées.
 
 Pour plus d’informations, consultez [Gestion des utilisateurs et des groupes](/help/communities/users.md)d’utilisateurs.
 
 La console Modération prend en charge :
 
-* exécution de tâches de modération en bloc
-* recherche UGC
-* affichage des détails UGC
-* affichage des détails de l’auteur UGC
+* Exécution d’un de modération en bloc.
+* Recherche UGC.
+* Affichage des détails du fichier UGC.
+* Affichage des détails de l’auteur UGC.
 
-Les tâches de modération ne peuvent être exécutées qu’en cas de connexion en tant qu’administrateur ou membre avec ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`.
+Ce n’est qu’en cas de connexion en tant qu’administrateur ou membre avec ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, que le de modération peut  être effectué.
 
-## Accès à l’environnement de publication {#publish-environment-access}
+## Publier  Accès {#publish-environment-access}
 
 L’accès à la console Modération à partir d’un site de communauté publié s’effectue par le biais d’un lien Administration qui s’affiche lorsqu’un modérateur de communauté est connecté.
 
@@ -47,17 +47,18 @@ En sélectionnant le lien Administration, la console Modération s’affiche :
 
 ![modération-console-publication](assets/moderationconsole-publish.png)
 
-## Accès à l’environnement d’auteur {#author-environment-access}
+## Auteur  Accès {#author-environment-access}
 
-Dans l’environnement de création, pour accéder à la console Modération
+Dans le de l’auteur  , pour accéder à la console Modération
 
-* de la navigation globale : **Navigation, Communautés, Modération**
+* Dans la navigation globale, sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Modération]**.
 
-Les tâches de modération ne peuvent être exécutées qu’en tant qu’administrateur ou membre avec ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`. Le seul contenu de la communauté affiché est celui que le membre connecté est autorisé à modérer.
+Ce n’est qu’en tant qu’administrateur ou membre doté d’autorisations [de](/help/communities/in-context.md#identifyingtrustedmembers)modérateur que vous pouvez  de modération. Le seul contenu de la communauté affiché est celui que le membre connecté est autorisé à modérer.
 
 >[!NOTE]
 >
->L’UGC de l’environnement de publication n’est visible sur l’auteur que si le fournisseur de services de gestion des ressources sélectionné implémente un magasin commun. Par exemple, le stockage est par défaut JSRP, ce qui n’est pas un magasin commun pour l’auteur et la publication. See [Community Content Storage](/help/communities/working-with-srp.md).
+>L’UGC du de  de publication ne sera visible sur l’auteur que si le fournisseur de services de gestion de la publication choisi met en oeuvre un magasin commun. Par exemple, le  de  est JSRP, qui n’est pas un magasin commun pour l’auteur et la publication. See [Community Content Storage](/help/communities/working-with-srp.md).
+
 
 ![modération-consoleaul](assets/moderationconsoleauthor.png)
 
@@ -65,9 +66,9 @@ Les tâches de modération ne peuvent être exécutées qu’en tant qu’admini
 
 En dehors du rail de navigation de gauche (qui s’affiche sur l’auteur, mais pas sur la publication), l’interface utilisateur de modération se compose des zones principales suivantes :
 
-* **[barre de navigation supérieure](#top-navigation-bar)**
-* **[toolbar](#toolbar)**
-* **[zone de contenu](#content-area)**
+* **[Barre de navigation supérieure](#top-navigation-bar)**
+* **[Barre d’outils](#toolbar)**
+* **[Zone de contenu](#content-area)**
 
 ### Top Navigation Bar {#top-navigation-bar}
 
@@ -91,39 +92,41 @@ La barre d’outils, située sous la barre de navigation supérieure, propose le
 
 La zone de contenu contient des informations pour l’UGC publié :
 
-* l&#39;UGC a publié
-* nom du membre
-* avatar membre
-* emplacement de la publication
-* date de publication
-* nombre de réponses à la publication
-* [opinion](/help/communities/moderate-ugc.md#sentiment) associée à la publication
-* si elle est approuvée, une coche s’affiche.
-* s’il existe une pièce jointe, un trombone s’affiche.
+* Mise en ligne
+* Nom du membre
+* avatar du membre
+* Emplacement de la publication.
+* Quand elle a été publiée.
+* Nombre de réponses à la publication.
+* [Opinion](/help/communities/moderate-ugc.md#sentiment) associée à la publication
+* Si elle est approuvée, une coche s’affiche.
+* S’il existe une pièce jointe, un trombone s’affiche.
 
 >[!NOTE]
->
+> 
 >La zone de contenu comporte un défilement ** infini, ce qui signifie que vous pourrez continuer à faire défiler le contenu jusqu’à ce que vous ayez atteint la fin du contenu. La barre d’outils reste à une position fixe et visible au-dessus de la zone de contenu, même lorsque vous faites défiler l’écran.
+
 
 ### Rail de filtre {#ootbfilters}
 
 ![chlimage_1-212](assets/chlimage_1-212.png)
 
-L’icône du panneau latéral ouvre le rail de filtre. Le rail de filtre, qui s’affiche à gauche de la zone de contenu, fournit différents filtres, chacun ayant un effet immédiat sur l’UGC référencé qui apparaît dans la zone de contenu.
+L’icône du panneau latéral ouvre le rail de filtre. Le rail de filtre, qui s’affiche à gauche de la zone de contenu, fournit différents  de, chacun ayant un effet immédiat sur l’UGC référencé qui apparaît dans la zone de contenu.
 
-Les filtres de chaque catégorie sont **** OUed ensemble, et les filtres de différentes catégories sont **** ETed ensemble.
+Les  à l&#39;intérieur de chaque sont **OU** ensemble, et les **dans différents sont** ETensemble.
 
-Par exemple, si vous cochez **Question** et **Réponse**, vous verrez le contenu correspondant à une **Question ***ou* à une **réponse.**
+Par exemple, si vous cochez **Question** et **Réponse**, vous verrez le contenu qui est soit une **question** *soit une Réponse.*****
 
-Toutefois, si vous cochez **Question** et **En attente**, vous ne verrez que le contenu qui est une **Question **et qui est **En attente**.
+Toutefois, si vous cochez **Question** et **En attente**, vous ne verrez que le contenu qui est une **question** et qui est **En attente.**
 
 >[!NOTE]
 >
->Les modérateurs de la communauté peuvent mettre en signet les filtres prédéfinis dans l’interface utilisateur de la console de modération. Comme ces filtres sont ajoutés à la fin de l’URL (en tant que paramètres de chaîne de requête), les modérateurs peuvent revenir aux filtres mis en signet ultérieurement et partager ces liens.
+>Les modérateurs de la communauté peuvent mettre en signet le  prédéfini sur l’interface utilisateur de la console de modération. Comme ces  sont annexés à la fin de l’URL (en tant que paramètres de chaîne de), les modérateurs peuvent revenir ausignet, puis partager ces liens.
+
 
 ![searchicon](assets/searchicon.png)
 
-Lorsque le rail de filtre est ouvert, l’icône de recherche bascule sur le panneau latéral fermé. Toutefois, pour fermer le rail de filtre et afficher uniquement le contenu généré par l’utilisateur, cliquez sur l’icône Rechercher et sélectionnez l’option Contenu uniquement.
+Lorsque le rail de filtre est ouvert, l’icône de recherche bascule sur le panneau latéral fermé. Toutefois, pour fermer le rail de filtre et uniquement  le contenu généré par l’utilisateur, cliquez sur l’icône Rechercher et sélectionnez l’option Contenu uniquement.
 
 #### Chemin d’accès au contenu {#content-path}
 
@@ -149,6 +152,7 @@ Le site limite le contenu UGC référencé affiché aux publications à certains
 >
 >Lorsque la console de modération en bloc est accessible lors de la publication par un membre approuvé de la communauté, seules les références à l’UGC créées pour les sites communautaires que le membre est autorisé à modérer sont affichées et peuvent être filtrées avec le filtre Site.
 
+
 #### Type de contenu {#content-type}
 
 Le type de contenu limite l’UGC référencé affiché aux publications du type de ressource sélectionné. Un ou plusieurs des types suivants peuvent être sélectionnés. Tous les types sont affichés si aucun n’est sélectionné.
@@ -173,24 +177,24 @@ Le type de contenu limite l’UGC référencé affiché aux publications du type
 
 Pour ajouter des ressources supplémentaires sur lesquelles filtrer :
 
-* sur une instance d’auteur
-* connexion en tant qu’administrateur
-* open [Web Console](https://localhost:4502/system/console/configMgr)
-* localiser `AEM Communities Moderation Dashboard Filters`
-* sélectionnez la configuration à ouvrir en mode d’édition
-* saisissez le type de ressource d’un composant sur lequel le filtre doit être appliqué.
+* Connectez-vous à votre instance d’auteur en tant qu’administrateur.
+* Open [Web Console](https://localhost:4502/system/console/configMgr).
+* Localisez `AEM Communities Moderation Dashboard Filters`.
+* Sélectionnez la configuration à ouvrir en mode d’édition.
+* Entrez le Type de ressource d&#39;un composant sur lequel filtrer :
 
-   * par exemple, pour filtrer les composants de vote inclus, saisissez :
+   * Par exemple, pour filtrer les composants de vote inclus, saisissez :
+
       `Voting=social/tally/components/hbs/voting`
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
 
-* sélectionnez Enregistrer
-* actualiser la console Communautés - Modération
+* Sélectionnez Enregistrer.
+* Actualisez la console Communautés - Modération.
 
-Le résultat est un nouveau filtre sélectionnable pour `Voting`sous le groupe de `Content Type` filtres.
+Le résultat est un nouveau filtre sélectionnable pour `Voting` sous le groupe de `Content Type` filtres.
 
-Lorsque ce filtre est sélectionné, le contenu du tableau de bord affiche l&#39;UGC correspondant à l&#39;un des types de ressources saisis.
+Lorsque ce filtre est sélectionné, le contenu du  du affiche l&#39;UGC correspondant à l&#39;un des types de ressources saisis.
 
 #### État {#status}
 
@@ -200,13 +204,14 @@ L’état limite l’UGC référencé affiché aux publications de l’état sé
 >
 >Si seul l’état Non répondu est sélectionné, le modérateur verra tout le contenu (pour tous les types de contenu), à l’exception des questions auxquelles il a répondu. C&#39;est parce que la propriété responsable de la Question avec réponse n&#39;existe pas dans le cas des questions sans réponse et d&#39;autres contenus tels que le sujet du forum, l&#39;article de blog ou les commentaires.
 
+
 ![états](assets/statuses.png)
 
 #### Marquage {#flagging}
 
 Le marquage limite l’affichage de l’UGC référencée aux publications marquées ou masquées.
 
-Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à ce que vous démarquiez ce seul élément de contenu en sélectionnant de nouveau le bouton **Marquer **Bouton. Notez qu’il n’existe aucun niveau de marquage, tel qu’important ou suivi.
+Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à ce que vous démarquiez ce seul élément de contenu en sélectionnant à nouveau le bouton **Indicateur** . Notez qu’il n’existe aucun niveau de marquage, tel qu’important ou suivi.
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -230,11 +235,11 @@ Publié dans les dernières limites, l’UGC référencé s’affichait pour les
 
 ## Custom Filters {#custom-filters}
 
-Outre les filtres prêts à l’emploi du rail [de](/help/communities/moderation.md#ootbfilters)filtre, d’autres filtres personnalisés sur les métadonnées peuvent être ajoutés à l’interface utilisateur de modération. Les développeurs peuvent utiliser l’exemple de code dans Github pour étendre les filtres d’interface utilisateur de modération existants.
+Outre le prêt à l’emploi  dans le rail [](/help/communities/moderation.md#ootbfilters)de filtre, vous pouvez ajouter des personnalisés supplémentaires sur les métadonnées à l’interface utilisateur de modération. Les développeurs peuvent utiliser l’exemple de code dans Github pour étendre le  d’interface utilisateur de modération existant.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-L’ [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) sur Github implémente le filtre Balise afin de filtrer la liste UGC selon que les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des filtres analogues pour d’autres champs de métadonnées UGC similaires.
+L’ [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) sur Github implémente le filtre Balise afin de filtrer le UGC selon que les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des  analogues pour d’autres champs de métadonnées UGC similaires.
 
 Pour installer l’exemple du filtre Balises :
 
@@ -243,19 +248,19 @@ Pour installer l’exemple du filtre Balises :
 1. Ouvrez la console des lots sur les instances Auteur AEM ( `https://[aem-author]:4502/system/console/bundles`) et Publication AEM ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Créez le package ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` à partir de Github, installez et activez-le.
 1. Accédez au noeud **/apps/social/modération/facettes** sur l’instance Auteur AEM ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) et Publication AEM ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
-1. Ajoutez un utilisateur technique **community-utility-reader** avec `jcr:read` des autorisations.
+1. Ajouter un utilisateur technique **communautés-utilitaire-reader** avec `jcr:read` des autorisations.
 
-Pour exposer les filtres personnalisés sur les sites communautaires existants :
+Pour exposer le  personnalisé sur les sites communautaires existants :
 
 1. Modification `Clientlibs` de la page de modération existante `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
-   * Ajouter une nouvelle catégorie `cq.social.hbs.moderation.v2.`
+   * Ajouter nouvelle `cq.social.hbs.moderation.v2.`
 
-1. Aller à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. Accédez à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
    * Définir sur le nouveau composant `sling:resourceType = social/moderation/v2/filters.`
 
-1. Aller à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
+1. Accédez à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
 
    * Définissez sur le nouveau composant `sling:resourceType = social/moderation/v2/modcontainer`.
 
@@ -287,24 +292,24 @@ Les icônes permettant ces actions apparaissent uniquement dans la barre d’out
 
 ### Modération d’une publication unique {#moderating-a-single-post}
 
-En mode de sélection unique, il est possible de
+En mode de sélection unique, il est possible de :
 
-* afficher les détails de l’utilisateur en sélectionnant son nom ;
-* afficher la publication en contexte en sélectionnant le lien vers la publication
+*  les détails de l’utilisateur en sélectionnant son nom.
+* de la publication dans son contexte en sélectionnant le lien vers la publication.
 * [Répondre](#reply)
 * [Autoriser](#allow)
 * [Refuser](#deny)
 * [Supprimer](#delete)
 * [Fermer](#close)
-* afficher l’historique [de modération](#moderation-history)
+* Historique de [modération des](#moderation-history)
 * [Afficher les détails](#viewdetails)
 
-Le texte de la publication est présent dans la vue Carte au-dessus des icônes d’action de modération. Les données ci-dessous indiquent
+Le texte de la publication figure sur le de cartes  au-dessus des icônes d’action de modération. Les données suivantes indiquent :
 
-* s’il y a des réponses et, dans l’affirmative, s’il y a des réponses précédées du nombre de réponses
-* si a été marqué
-* si a été approuvé
-* lors de la publication de l&#39;UGC
+* S&#39;il y a des réponses, et dans l&#39;affirmative, précédées du nombre de réponses.
+* S’il a été marqué.
+* S&#39;il a été approuvé.
+* Quand l&#39;UGC a été publié.
 
 ![singleselectmode](assets/singleselectmode.png)
 
@@ -324,19 +329,19 @@ Lorsque vous travaillez avec une seule publication, l’icône Autoriser s’aff
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-L’action **Refuser **modération n’est disponible que pour le contenu modéré et n’apparaît pas sur le contenu non modéré, sauf en mode de sélection multiple.
+L’action **Refuser** la modération n’est disponible que pour le contenu modéré et ne s’affiche pas sur le contenu non modéré, sauf en mode de sélection multiple.
 
 Le contenu non modéré est toujours approuvé.
 
 Le contenu modéré entre dans un état En attente et peut ensuite être modifié pour être approuvé ou refusé.
 
-Le contenu qui quitte l’état en attente ne peut jamais revenir à un état en attente. Le contenu marqué comme approuvé ou refusé peut être modifié à tout moment.
+Le contenu qui quitte l’état en attente ne peut jamais revenir à un état en attente. Le contenu marqué comme approuvé ou refusé peut à tout moment être remplacé par un autre état.
 
-#### Supprimer {#delete}
+#### Supprimez {#delete}
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-En mode de sélection unique ou en bloc, vous pouvez sélectionner des éléments et les supprimer. L’action de suppression génère une boîte de dialogue de confirmation. Une fois supprimés, ces éléments disparaissent immédiatement de la zone de contenu. **Une fois l’UGC supprimé, il est définitivement supprimé du référentiel et ne peut plus être récupéré ultérieurement.**
+En mode de sélection unique ou en bloc, vous pouvez sélectionner des éléments et les supprimer. L’action de suppression génère une boîte de dialogue de confirmation. Une fois supprimés, ces éléments disparaissent immédiatement de la zone de contenu. **Une fois l’UGC supprimé, il est définitivement supprimé du référentiel et ne peut plus être récupéré** ultérieurement.
 
 #### Fermer {#close}
 
@@ -350,9 +355,9 @@ Lorsque vous travaillez avec une seule publication, une icône Fermer s’affich
 
 Lorsque vous travaillez sur une publication unique, une icône d’historique de modération s’affiche lorsque vous passez la souris dessus. La sélection de l’icône affichera un volet contenant l’historique des actions entreprises concernant la publication UGC.
 
-Pour revenir à l’affichage de la zone de contenu de plusieurs publications UGC, sélectionnez le X dans le coin supérieur droit du volet des détails de l’affichage.
+Pour revenir à l’affichage de la zone de contenu de plusieurs publications UGC, sélectionnez le X dans le coin supérieur droit du volet de détails .
 
-Par exemple :
+Par exemple :
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
@@ -364,9 +369,9 @@ Lorsque vous travaillez avec une seule publication, vous pouvez afficher plus de
 
 Pour ce faire, passez la souris sur la publication pour afficher l’ `View Detail` icône et sélectionnez-la pour afficher un panneau contenant plus de détails sur la publication.
 
-Pour revenir à l’affichage de la zone de contenu de plusieurs publications UGC, sélectionnez le X dans le coin supérieur droit du volet des détails de l’affichage.
+Pour revenir à l’affichage de la zone de contenu de plusieurs publications UGC, sélectionnez le X dans le coin supérieur droit du volet de détails .
 
-Par exemple :
+Par exemple :
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
