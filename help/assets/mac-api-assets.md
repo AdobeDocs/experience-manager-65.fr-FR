@@ -1,9 +1,9 @@
 ---
-title: API Assets HTTP
+title: API HTTP Assets
 description: Découvrez l’implémentation, le modèle de données et les fonctions de l’API Assets HTTP. Utilisez l’API Assets HTTP pour effectuer diverses tâches avec les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,16 +12,16 @@ source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
 
 ## Présentation {#overview}
 
-L’API HTTP Assets permet de créer, lire, mettre à jour et supprimer (CRUD) des opérations sur les ressources, y compris des fichiers binaires, des métadonnées, des rendus et des commentaires, ainsi que du contenu structuré à l’aide de fragments de contenu AEM. Il est exposé à `/api/assets` et implémenté en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/assets-api-content-fragments.md).
+L’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur les ressources, y compris les fichiers binaires, les métadonnées, les rendus et les commentaires, avec du contenu structuré à l’aide de fragments de contenu AEM. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/assets-api-content-fragments.md).
 
 Pour accéder à l’API, procédez comme suit :
 
-1. Open the API service document at `https://[hostname]:[port]/api.json`.
-1. Suivez le lien du service Ressources qui mène à `https://[hostname]:[server]/api/assets.json`.
+1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
+1. Suivez le lien du service Assets pointant vers `https://[hostname]:[server]/api/assets.json`.
 
-La réponse API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
+La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
 
-Après l’heure [!UICONTROL de]désactivation, une ressource et ses rendus ne sont pas disponibles via l’interface Web Ressources ou via l’API HTTP. L’API renvoie un message d’erreur 404 si l’heure  d’activation est dans le futur ou si l’heure [!UICONTROL d’] arrêt est dans le passé.
+Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web d’Assets ou via l’API HTTP. L’API renvoie un message d’erreur 404 si l’[!UICONTROL heure d’activation] se situe dans le futur ou si l’[!UICONTROL heure de désactivation] se situe dans le passé.
 
 ## Fragments de contenu {#content-fragments}
 
@@ -37,26 +37,26 @@ Il expose également des éléments plus détaillés pour les modèles de donné
 
 ### Dossiers {#folders}
 
-Les dossiers sont comme des répertoires dans les systèmes de fichiers traditionnels. Ils font office de conteneurs pour d’autres dossiers ou ressources. Les dossiers se composent des éléments suivants :
+Les dossiers sont comparables aux répertoires des systèmes de fichiers traditionnels. Ils font office de conteneurs pour d’autres dossiers ou ressources. Les dossiers se composent des éléments suivants :
 
-**Entités**: Les entités d’un dossier sont ses éléments enfants, qui peuvent être des dossiers et des ressources.
+**Entités** : les entités d’un dossier sont ses éléments enfants qui peuvent, à leur tour, être des dossiers et des ressources.
 
-**Propriétés**:
-* `name`  — Nom du dossier. Il s’agit de la même chose que le dernier segment du chemin d’accès à l’URL sans l’extension
-* `title` — Titre facultatif du dossier pouvant être affiché au lieu de son nom
+**Propriétés** :
+* `name` : nom du dossier. Identique au dernier segment du chemin d’URL, sans l’extension.
+* `title` : titre facultatif du dossier pouvant être affiché au lieu de son nom.
 
 >[!NOTE]
 >
->Certaines propriétés de dossier ou de ressource sont associées à un préfixe différent. Le `jcr` préfixe `jcr:title`, `jcr:description`et `jcr:language` est remplacé par le préfixe `dc` . Hence in the returned JSON, `dc:title` and `dc:description` contain the values of `jcr:title` and `jcr:description`, respectively.
+>Certaines propriétés de dossier ou de ressource sont associées à un préfixe différent. Le préfixe `jcr` de `jcr:title`, `jcr:description` et `jcr:language` est remplacé par le préfixe `dc`. Par conséquent, dans le JSON renvoyé, `dc:title` et `dc:description` contiennent respectivement les valeurs de `jcr:title` et `jcr:description`.
 
-**Les dossiers de liens** présentent trois liens :
-* `self`: Lien vers lui-même
-* `parent`: Lien vers le dossier parent
-* `thumbnail`: (Facultatif) Lien vers une image miniature de dossier
+Les dossiers **Liens** présentent trois liens :
+* `self` : lien vers lui-même
+* `parent` : lien vers le dossier parent
+* `thumbnail` : (Facultatif) lien vers une miniature de dossier
 
-### Assets {#assets}
+### Ressources {#assets}
 
-Dans AEM, un fichier contient les éléments suivants :
+Dans AEM, une ressource contient les éléments suivants :
 
 * Propriétés et métadonnées de la ressource
 * Plusieurs rendus tels que le rendu d’origine (qui est la ressource transférée initialement), une vignette et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de PDF ou InDesign.
@@ -64,9 +64,9 @@ Dans AEM, un fichier contient les éléments suivants :
 
 Pour plus d’informations sur les éléments dans les fragments de contenu, voir [Prise en charge des fragments de contenu dans l’API HTTP Assets d’AEM](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-Dans AEM, un dossier comporte les composants suivants :
+Dans AEM, un dossier comprend les composants suivants :
 
-* Entités : Les enfants de Assets sont ses rendus.
+* Entités : les enfants des ressources sont ses rendus.
 * Propriétés
 * Liens
 
@@ -74,7 +74,7 @@ L’API Assets HTTP offre les fonctionnalités suivantes :
 
 * Récupérer une liste de dossiers
 * Créer un dossier
-* Créer une ressource
+* Créer une ressource  
 * Mettre à jour le fichier binaire d’une ressource
 * Mettre à jour les métadonnées d’une ressource
 * Créer un rendu de ressource
@@ -86,11 +86,11 @@ L’API Assets HTTP offre les fonctionnalités suivantes :
 
 >[!NOTE]
 >
->Pour faciliter la lecture, la notation cURL complète n’est pas utilisée dans les exemples suivants. In fact the notation does correlate with [Resty](https://github.com/micha/resty) which is a script wrapper for `cURL`.
+>Pour faciliter la lecture, la notation cURL complète n’est pas utilisée dans les exemples suivants. En fait, la notation est liée à [Resty](https://github.com/micha/resty) qui est un wrapper de script pour `cURL`.
 
 **Conditions préalables**
 
-* Aller à `https://[aem_server]:[port]/system/console/configMgr`.
+* Accédez à `https://[aem_server]:[port]/system/console/configMgr`.
 * Navigate to **Adobe Granite CSRF Filter**.
 * Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 
@@ -114,19 +114,19 @@ GET /api/assets/myFolder.json
 
 **Réponse**
 
-La classe de l&#39;entité renvoyée est assets/folder.
+La classe de l’entité renvoyée est assets/folder (ressources/dossier).
 
-Les propriétés des entités contenues représentent un sous-ensemble du jeu complet des propriétés de chaque entité. In order to obtain a full representation of the entity, clients should retrieve the contents of the URL pointed to by the link with a `rel` of `self`.
+Les propriétés des entités contenues représentent un sous-ensemble du jeu complet des propriétés de chaque entité. Pour obtenir une représentation complète de l’entité, les clients doivent récupérer le contenu de l’URL vers laquelle pointe le lien avec l’élément `rel` `self`.
 
 ## Création d’un dossier {#create-a-folder}
 
-Creates a new `sling`: `OrderedFolder` at the given path. Si un * est donné à la place d’un nom de noeud, la servlet utilisera le nom du paramètre comme nom de noeud. Accepted as request data is either a Siren representation of the new folder or a set of name-value pairs, encoded as `application/www-form-urlencoded` or `multipart`/ `form`- `data`, useful for creating a folder directly from an HTML form. Les propriétés du dossier peuvent, en outre, être spécifiées en tant que paramètres de requête URL.
+Crée un dossier `sling`: `OrderedFolder` à l’emplacement indiqué. Si un * est donné à la place d’un nom de noeud, la servlet utilise le nom du paramètre comme nom de noeud. Cela est accepté dans la mesure où les données de la demande consistent en une représentation Siren du nouveau dossier ou un ensemble de paires nom-valeur, codé sous la forme `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, ce qui se révèle utile pour créer directement un dossier à partir d’un formulaire HTML. Les propriétés du dossier peuvent, en outre, être spécifiées en tant que paramètres de requête URL.
 
-The operation will fail with a `500` response code if the parent node of the given path does not exist. If the folder already exists a `409` response code is returned.
+L’opération échoue et un code de réponse `500` est renvoyé si le nœud parent du chemin d’accès indiqué n’existe pas. Si le fichier existe déjà, un code de réponse `409` est renvoyé.
 
 **Paramètres**
 
-* `name` - Nom du dossier
+* `name` : nom du dossier
 
 **Demande**
 
@@ -156,7 +156,7 @@ Crée une ressource DAM à l’emplacement indiqué avec le fichier spécifié. 
 **Paramètres**
 
 * `name` - Nom du fichier
-* `file` - Référence du fichier
+* `file` : référence du fichier
 
 **Demande**
 
@@ -200,7 +200,7 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
-Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété dans l’ `dc:` espace de noms, l’API met à jour la même propriété dans l’ `jcr` espace de noms. L’API ne synchronise pas les propriétés sous les deux espaces de noms.
+Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété dans le  du `dc:` , l’API met à jour la même propriété dans le `jcr` de la . L’API ne synchronise pas les propriétés sous les deux  .
 
 **Demande**
 
@@ -219,12 +219,12 @@ PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"cl
 
 ## Créer un rendu de ressource {#create-an-asset-rendition}
 
-Crée un rendu pour une ressource. Si le nom du paramètre de requête n’est pas fourni, le nom du fichier est utilisé comme nom du rendu.
+Crée un rendu pour une ressource. Si le nom de paramètre de requête n’est pas fourni, le nom de fichier est utilisé comme nom du rendu.
 
 **Paramètres**
 
-* `name` - Nom du rendu
-* `file` - Référence du fichier
+* `name` : nom du rendu
+* `file` : référence du fichier
 
 **Demande**
 
@@ -272,8 +272,8 @@ Crée un commentaire de ressource.
 
 **Paramètres**
 
-* `message` - Message
-* `annotationData` - Données d’annotation (JSON)
+* `message` : message
+* `annotationData` : données d’annotation (JSON)
 
 **Demande**
 
