@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: dee9f9c9d3dfb916d1feaa0d258c883686e1a1dc
 
 ---
 
@@ -38,7 +38,7 @@ Avant d’installer AEM Forms sur JEE, vous pouvez appliquer des solutions de s�
 
 **Installation et configuration sous Windows**
 
-Sous Windows, il est préférable d’effectuer l’installation en tant qu’administrateur si vous installez AEM Forms sur JEE sur JBoss en utilisant la procédure d’installation clé en main ou si vous installez PDF Generator. Par ailleurs, lorsque vous installez PDF Generator sous Windows avec prise en charge des applications natives, vous devez exécuter l’installation sous la même identité que l’utilisateur Windows ayant installé Microsoft Office. Pour plus de détails sur l’installation des privilèges, reportez-vous au document **Installation et déploiement d’AEM Forms sur JEE** de votre serveur d’applications.
+Sous Windows, il est préférable d’effectuer l’installation en tant qu’administrateur si vous installez AEM Forms sur JEE sur JBoss en utilisant la procédure d’installation clé en main ou si vous installez PDF Generator. Par ailleurs, lorsque vous installez PDF Generator sous Windows avec prise en charge des applications natives, vous devez exécuter l’installation sous la même identité que l’utilisateur Windows ayant installé Microsoft Office. Pour plus d’informations sur les privilèges d’installation, voir le * Installation et déploiement d’AEM Forms sur JEE* pour votre serveur d’applications.
 
 ### Sécurité de la couche réseau {#network-layer-security}
 
@@ -184,7 +184,7 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms su
    * Interdire l’ouverture d’une session locale
    * Ouvrir une session en tant que service (ce droit doit être déjà défini)
 
-1. Attribuez au nouveau compte utilisateur les autorisations de lecture et d’exécution, d’affichage du contenu des dossiers et de lecture pour les répertoires de contenu Web AEM Forms sur JEE.
+1. Attribuez au nouveau compte utilisateur les autorisations de lecture et d’exécution, d’écriture, de modification, de contenu des dossiers de et de lecture pour terminer le répertoire d’installation d’AEM Forms sur JEE et le répertoire de de stockage global de documents (GDS). L’emplacement du répertoire de stockage global de documents est configuré manuellement lors du processus d’installation d’AEM Forms. Si le paramètre d’emplacement reste vide pendant l’installation, l’emplacement par défaut est un répertoire situé sous l’installation du serveur d’applications à la racine [/serveur/]type[/svcnative/DocumentStorage de]JBoss.
 1. Démarrez le serveur d’applications.
 
 **Désactivation de la servlet d’amorçage de Configuration Manager**
@@ -258,7 +258,7 @@ Lorsqu’AEM Forms sur JEE est installé, un compte utilisateur par défaut uniq
 1. Saisissez l’URL suivante dans un navigateur Web :
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
    Le numéro de port par défaut est l’un des numéros suivants :
@@ -278,7 +278,7 @@ Lorsqu’AEM Forms sur JEE est installé, un compte utilisateur par défaut uniq
 
 En outre, il est recommandé de modifier le mot de passe par défaut de l’administrateur CRX en procédant comme suit :
 
-1. Connectez-vous à `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` l’aide du nom d’utilisateur/mot de passe par défaut.
+1. Connectez-vous à `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` l’aide du nom d’utilisateur/mot de passe par défaut.
 1. Saisissez Administrator dans le champ de recherche, puis cliquez sur **Aller**.
 1. Select **Administrator** from the search result and click the **Edit** icon at the lower right of the user interface.
 1. Indiquez le nouveau mot de passe dans le champ **Nouveau mot de passe** et l’ancien mot de passe dans le champ **Votre mot de passe**.
@@ -291,7 +291,7 @@ La génération Web Service Definition Language (WSDL) doit être activée u
 1. Saisissez l’URL suivante dans un navigateur Web :
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
 1. Cliquez sur **Paramètres > Paramètres de Core System > Configurations de base**.
@@ -676,7 +676,7 @@ Lorsque vous installez pour la première fois  Services de, lede autorisé est m
 
 **Gestion des  autorisés**
 
-Vous pouvez gérer le  autorisé à partir de l’interface User Management de Administration Console. L’interface User Management offre des fonctionnalités pour créer, éditer ou supprimer la liste. Refer to the *[Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)*section of the *administration help*for more information on working with the Allowed Referrer list.
+Vous pouvez gérer le  autorisé à partir de l’interface User Management de Administration Console. L’interface User Management offre des fonctionnalités pour créer, éditer ou supprimer la liste. Refer to the * [Preventing CSRF attacks](/help/forms/using/admin-help/preventing-csrf-attacks.md)* section of the *administration help* for more information on working with the Allowed Referrer list.
 
 **Gestion des exceptions  autorisées et des URI autorisés**
 
@@ -691,7 +691,7 @@ AEM Forms sur JEE fournit des API pour gérer le d’exception  autorisé et le 
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Reportez-vous à la *référence à l’API AEM Forms sur JEE* pour plus d’informations sur les API.
+Pour plus d’informations sur les API, voir le* Guide de référence de l’API d’AEM Forms sur JEE*.
 
 Use the ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** list for Allowed Referrer Exceptions at the global level i.e. to define exceptions that are applicable to all applications. This list contains only URIs with either an absolute path (e.g. `/index.html`) or a relative path (e.g. `/sample/`). Vous pouvez également ajouter une expression régulière à la fin d’un URI relatif, par ex. `/sample/(.)*`.
 
@@ -711,7 +711,7 @@ Include the `-Dlc.um.csrffilter.disabled=true` JAVA argument in the startup scri
 
 **Filtrage des  pour les fichiers WAR personnalisés**
 
-Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms sur JEE pour répondre aux besoins de l’activité. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the *web.xml* file with the following parameters:
+Vous avez peut-être créé des fichiers WAR personnalisés afin de travailler avec AEM Forms sur JEE pour répondre aux besoins de l’activité. To enable Referrer Filtering for your custom WAR files, include ***adobe-usermanager-client.jar*** in the class path for the WAR and include a filter entry in the* web.xml* file with the following parameters:
 
 **CSRF_CHECK_GETS** contrôle la vérification des  sur les requêtes GET. Si ce paramètre n’est pas défini, la valeur par défaut est définie sur false. Incluez ce paramètre uniquement si vous souhaitez filtrer vos requêtes GET.
 
@@ -970,10 +970,11 @@ L’installation clé en main d’AEM Forms sur JEE installe un compte de servic
 1. Dans la fenêtre Paramètres de sécurité locaux, sous Attribution des droits utilisateur, attribuez les droits suivants au compte utilisateur sous lequel est exécuté le serveur de formulaires :
 
    * Interdire l’ouverture de session par les services Terminal
-   * Interdire l’ouverture d’une session locale
+   * Refuser de se connecter localement xx
    * Ouvrir une session en tant que service (ce droit doit être déjà défini)
 
-1. Attribuez au nouveau compte utilisateur les autorisations de lecture et d’exécution, d’affichage du contenu des dossiers et de lecture pour les répertoires de contenu Web AEM Forms sur JEE.
+1. Attribuez au nouveau compte utilisateur les autorisations de lecture et d’exécution, d’écriture, de modification, de contenu des dossiers de et de lecture pour terminer le répertoire d’installation d’AEM Forms sur JEE et le répertoire de de stockage global de documents (GDS). L’emplacement du répertoire de stockage global de documents est configuré manuellement lors du processus d’installation d’AEM Forms. Si le paramètre d’emplacement reste vide pendant l’installation, l’emplacement par défaut est un répertoire situé sous l’installation du serveur d’applications à la racine [/serveur/]type[/svcnative/DocumentStorage de]JBoss.
+
 1. Démarrez le service de serveur d’applications.
 
 ### Sécurité du système de fichiers {#file-system-security}
@@ -1038,4 +1039,3 @@ Set the `directoryBrowsingEnabled` property in the ibm-web-ext.xml file to `fals
 1. Désélectionnez **Enable application security** et **Use Java 2 security**.
 1. Cliquez sur **OK** ou sur **Apply**.
 1. Dans la zone **Messages**, cliquez sur **Save directly to master configuration**.
-
