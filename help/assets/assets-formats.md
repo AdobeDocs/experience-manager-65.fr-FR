@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: de formats de fichier pris en charge par les ressources AEM et par les médias dynamiques et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5304d956161ee7edce2ad5c058eec3ac7e200abf
+source-git-commit: 7dd295a8da986c019d2ae7ea6be237eeb860ab80
 
 ---
 
@@ -137,7 +137,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 -->
 
 | Format | Stockage | [Gestion des métadonnées](metadata.md) |  texte<br> intégral  | [Extraction de métadonnées](metadata.md) | Thumbnail<br> generation | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
-|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
