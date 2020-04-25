@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
+source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
 
 ---
 
@@ -31,6 +31,8 @@ Les caractères suivants (liste de ceux-ci séparés par des espaces) ne sont pa
 
 * Le nom d’un fichier de ressource ne peut pas contenir les caractères suivants : `* / : [ \\ ] | # % { } ? &`
 * Le nom d’un dossier de ressources ne peut pas contenir les caractères suivants : `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
+N’incluez pas de caractères spéciaux dans les extensions des noms de fichier.
 
 ## Chargement des ressources {#uploading-assets}
 
@@ -112,6 +114,8 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    * Le nom du fichier de ressource ne doit pas contenir `* / : [ \\ ] | # % { } ? &`
    * Le nom du dossier de ressources ne doit pas contenir `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+   N’incluez pas de caractères spéciaux dans les extensions des noms de fichier.
+
    ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui n’ont pas pu être téléchargés](assets/chlimage_1-10.png)
 
    De plus, l’interface utilisateur d’Assets affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
