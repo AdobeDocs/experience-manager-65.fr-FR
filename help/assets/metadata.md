@@ -1,77 +1,65 @@
 ---
-title: Gestion des métadonnées des ressources numériques dans [!DNL Adobe Experience Manager].
-description: Découvrez les types de métadonnées et comment [!DNL Adobe Experience Manager Assets] aide à gérer les métadonnées des ressources afin de faciliter la catégorisation et l’organisation des ressources.
+title: Gérez les métadonnées de vos ressources numériques dans [!DNL Adobe Experience Manager].
+description: Découvrez les types de métadonnées et comment [!DNL Adobe Experience Manager Assets] aide à gérer les métadonnées des ressources afin de faciliter la catégorisation et l’organisation des ressources. [!DNL Experience Manager] permet d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 9bf48a6057e08e9feafc0e18d6fa9d0145768cf2
 
 ---
 
 
 # Gestion des métadonnées des ressources numériques {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permettra d’obtenir une catégorisation et une organisation plus simples des ressources et d’aider les personnes qui recherchent une ressource spécifique. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage arbitrary metadata with your assets, [!DNL Experience Manager Assets] makes it possible to automatically organize and process assets based on their metadata.
+[!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela facilite la catégorisation et l&#39;organisation des ressources et aide les personnes qui recherchent un actif spécifique. With the ability to extract metadata from files uploaded to [!DNL Experience Manager Assets], metadata management integrates with the creative workflow. With the ability to keep and manage metadata with your assets, [!DNL Experience Manager Assets] makes it possible to automatically organize and process assets based on their metadata.
 
-* [Métadonnées XMP](xmp.md)
-* [Modification ou ajout de métadonnées](meta-edit.md)
-* [Référence des schémas de métadonnées](meta-ref.md)
+* [Métadonnées XMP](xmp.md).
+* [Modification ou ajout de métadonnées](meta-edit.md).
+* [Référence](meta-ref.md)des schémas de métadonnées.
 
 ## Pourquoi les métadonnées sont nécessaires {#why-we-need-metadata}
 
-Les métadonnées sont des données sur les données. Les données font référence à la ressource que vous gérez, par exemple une image. Les métadonnées sont importantes, car elles permettent aux utilisateurs de gérer plus efficacement les ressources.
+Les métadonnées désignent les données relatives aux données. À cet égard, les données font référence à votre actif numérique, par exemple une image. Les métadonnées sont essentielles pour une gestion efficace des ressources.
 
-Les métadonnées sont l’ensemble de toutes les données disponibles pour cette image, mais qui ne sont pas nécessairement contenues dans cette image, par exemple :
+Les métadonnées sont la collection de toutes les données disponibles pour un fichier, mais elles ne sont pas nécessairement contenues dans cette image. Voici quelques exemples de métadonnées :
 
-* nom de la ressource ;
-* date et heure de sa dernière modification ;
-* taille de l’image au moment du stockage dans le référentiel ;
-* nom du dossier qui la contient.
+* Nom du fichier.
+* Heure et date de la dernière modification.
+* Taille de la ressource telle qu’elle était stockée dans le référentiel.
+* Nom du dossier dans lequel il se trouve.
+* Ressources connexes ou balises appliquées.
 
 These are the basic metadata properties that [!DNL Experience Manager] can manage for assets, which allows users to see all assets, for example, ordered by their last modification date - useful when trying to discover what assets have recently been added to the repository.
 
 Vous pouvez ajouter d’autres données de niveau supérieur à des ressources numériques, par exemple :
 
-* type de ressource (s’agit-il d’une image, d’une vidéo, d’un clip audio ou d’un document ?) ;
-* propriétaire de la ressource ;
-* titre de la ressource ;
-* description de la ressource ;
-* balises affectées à une ressource.
+* Type de fichier (s’agit-il d’une image, d’une vidéo, d’un clip audio ou d’un  ?).
+* Propriétaire de la ressource.
+* Titre de la ressource.
+* Description de la ressource.
+* Balises affectées à un fichier.
 
-Des métadonnées supplémentaires permettent de classer davantage les ressources et sont utiles à mesure que la quantité d’informations numériques augmente. Bien qu’il soit possible pour une personne seule de gérer une liste de plusieurs centaines de fichiers en fonction de leur nom, cela devient impossible lorsque le nombre de personnes impliquées et le nombre de ressources gérées augmentent.
+Un plus grand nombre de métadonnées vous permet de classer davantage les fichiers et s’avère utile à mesure que la quantité d’informations numériques augmente. Il est possible de gérer quelques centaines de fichiers uniquement en fonction des noms de fichier. Toutefois, cette approche n’est pas évolutive et ne fonctionne pas rapidement lorsque le nombre de personnes impliquées et le nombre d’actifs gérés augmentent.
 
-À mesure que des métadonnées sont ajoutées aux ressources, la valeur de celles-ci augmente, car elles deviennent :
+Avec l’ajout de métadonnées, la valeur d’une ressource numérique augmente, car la ressource devient :
 
-* plus accessibles : elles sont plus faciles à trouver ;
-* plus faciles à gérer : vous pouvez rechercher plus facilement des ressources avec un même ensemble de propriétés et leur apporter des modifications ;
-* plus complexes : plus vous ajoutez de métadonnées à une ressource, plus la gestion des métadonnées devient importante.
+* Plus accessible : les systèmes et les utilisateurs peuvent le trouver facilement.
+* Plus facile à gérer : vous pouvez trouver plus facilement des ressources ayant le même jeu de propriétés et leur appliquer des modifications.
+* Plus complet : plus vous avez ajouté de métadonnées à un fichier, plus il contient d’informations et de contexte.
 
 For these reasons, [!DNL Assets] provides you with the right means of creating, managing, and exchanging metadata for your digital assets.
 
-## Notions fondamentales relatives aux métadonnées {#metadata-basics}
+## Types de métadonnées {#types-of-metadata}
 
-Les métadonnées sont extraites des ressources lorsqu’elles sont importées (assimilées). En outre, l’ajout de métadonnées permet de classer davantage les ressources.
+Les deux types de métadonnées de base sont les métadonnées techniques et les métadonnées descriptives.
 
-Cette section traite des types de métadonnées et des normes de codage.
+Les métadonnées techniques sont utiles pour les applications logicielles qui traitent de ressources numériques et ne doivent pas être gérées manuellement. [!DNL Experience Manager Assets] et d’autres logiciels déterminent automatiquement les métadonnées techniques et les métadonnées peuvent changer lorsque le fichier est modifié. Les métadonnées techniques disponibles d’un fichier dépendent largement du type de fichier du fichier. Voici quelques exemples de métadonnées techniques :
 
-### Types de métadonnées {#types-of-metadata}
+* Taille d’un fichier.
+* Dimensions (hauteur et largeur) d’une image.
+* Débit d’un fichier audio ou vidéo.
+* Résolution (niveau de détail) d’une image.
 
-Il existe deux types fondamentaux de métadonnées :
-
-* les métadonnées techniques ;
-* les métadonnées descriptives.
-
-#### Métadonnées techniques {#technical-metadata}
-
-Les métadonnées techniques sont utiles pour les applications logicielles qui traitent de ressources numériques et ne doivent pas être gérées manuellement. Les métadonnées techniques peuvent être déterminées automatiquement par [!DNL Experience Manager Assets] et d’autres logiciels et peuvent changer lorsque la ressource est modifiée. Les métadonnées techniques disponibles d’un fichier dépendent largement du type de fichier du fichier. Voici quelques exemples de métadonnées techniques :
-
-* taille d’un fichier ;
-* dimensions (hauteur et largeur) d’une image ;
-* débit d’un fichier audio ou vidéo ;
-* résolution (niveau de détail) d’une image.
-
-#### Métadonnées descriptives    {#descriptive-metadata}
-
-Les métadonnées descriptives sont des métadonnées qui concernent le domaine d’application, par exemple l’activité dont provient une ressource. Les métadonnées descriptives ne peuvent pas être automatiquement déterminées. Elles doivent être créées manuellement ou de manière semi-automatique. Par exemple, un appareil photo avec GPS peut suivre automatiquement la latitude et la longitude auxquelles a été prise une photo et ajouter ces informations aux métadonnées de l’image.
+Les métadonnées descriptives sont des métadonnées qui concernent le domaine d’application, par exemple l’entreprise d’où provient un fichier. Les métadonnées descriptives ne peuvent pas être déterminées automatiquement. Elle est créée manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter une balise géographique à l’image.
 
 En raison du coût élevé de la création manuelle des informations de métadonnées descriptives, des normes ont été définies pour faciliter l’échange des métadonnées entre les systèmes logiciels et les structures.
 
@@ -79,87 +67,77 @@ En raison du coût élevé de la création manuelle des informations de métadon
 
 En raison de l’importance des métadonnées et de l’implication pour créer des métadonnées, des normes ont été définies pour en faciliter l’échange.
 
-### Normes de codage {#encoding-standards}
+## Normes de codage {#encoding-standards}
 
-Les métadonnées peuvent être incorporées de plusieurs manières différentes dans des fichiers. Plusieurs normes de codage sont prises en charge :
+Il existe différentes manières d’incorporer des métadonnées dans des fichiers. Certaines normes de codage sont prises en charge :
 
 * XMP: used by [!DNL Assets] to store the extracted metadata within the repository.
 * ID3 : pour les fichiers audio et vidéo
-* EXIF : pour les fichiers image
-* Autres normes/normes héritées : de Microsoft Word, PowerPoint, Excel, etc.
+* Exif : pour les fichiers image.
+* Autre/Hérité : à partir de Microsoft Word, PowerPoint, Excel, etc.
 
-#### XMP {#xmp}
+### XMP {#xmp}
 
-XMP signifie plateforme de métadonnées extensible et est la norme de métadonnées utilisée par [!DNL Experience Manager Assets] la gestion de toutes les métadonnées. Besides offering universal metadata encoding that can be embedded into all file formats, XMP provides a rich content model and is supported by Adobe and other companies, so that users of XMP in combination with [!DNL Experience Manager Assets] have a powerful platform to build upon.
+XMP (Extensible Metadata Platform) est une norme ouverte utilisée par [!DNL Experience Manager Assets] tous les gestionnaires de métadonnées. Le standard  le codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier. Adobe et d’autres  prennent en charge la norme XMP car elle fournit un modèle de contenu enrichi. Les utilisateurs de XMP standard et de [!DNL Experience Manager Assets] ont une plate-forme puissante sur laquelle construire. Pour plus d’informations, voir [XMP](https://www.adobe.com/products/xmp.html).
 
-#### ID3 {#id}
+### ID3 {#id}
 
 Les données stockées dans ces balises ID3 s’affichent lors de la lecture d’un fichier audio numérique sur un ordinateur ou un lecteur MP3 portable.
 
 Les balises ID3 sont destinées au format de fichier MP3. Informations supplémentaires sur les formats :
 
-* Les balises ID3 fonctionnent dans les fichiers MP3 et MP3pro.
+* Les balises ID3 fonctionnent dans les fichiers MP3 et mp3PRO.
 * Le format WAV ne comprend pas de balises.
-* Le format WMA comprend des balises propriétaires qui ne permettent pas une mise en œuvre Open Source.
+* WMA possède des balises propriétaires qui n’autorisent pas l’implémentation open-source.
 * Le format Ogg Vorbis utilise des commentaires Xiph incorporés dans le conteneur Ogg.
 * Le format AAC utilise un format de balisage propriétaire.
 
-#### EXIF    {#exif}
+### Exif {#exif}
 
-EXIF signifie format de fichier d’image échangeable et est le format de métadonnées le plus utilisé dans la photographie numérique. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans plusieurs formats de fichier, tels que JPEG, TIFF, RIFF et WAV.
+Le format de fichier d’image échangeable (Exif) est le format de métadonnées le plus utilisé dans la photographie numérique. Il permet d’incorporer un vocabulaire fixe des propriétés de métadonnées dans de nombreux formats de fichier, tels que JPEG, TIFF, RIFF et WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. Comme Exif est automatiquement créé par les appareils photo numériques modernes et pris en charge par les logiciels graphiques modernes, il peut être considéré comme le plus petit dénominateur commun pour la gestion des métadonnées.
 
-Le fait que le format EXIF ne soit pas pris en charge par d’autres formats de fichier image populaires comme BMP, GIF ou PNG constitue une limite majeure.
+Une des principales limites d’Exif est que quelques formats de fichier d’image courants, tels que BMP, GIF ou PNG, ne le prennent pas en charge.
 
-EXIF stocke chaque métadonnée sous la forme d’une paire constituée du nom et de la valeur de la métadonnée. Ces paires de nom et de valeur de métadonnées sont également appelées des balises, que l’on ne doit pas confondre avec le balisage dans [!DNL Experience Manager].
+Les champs de métadonnées habituellement définis par Exif sont de nature technique et sont d’une utilité limitée pour la gestion descriptive des métadonnées. C’est pourquoi [!DNL Experience Manager Assets]  mappage des propriétés Exif dans des données [de schémas de métadonnées](metadata-schemas.md) courants et dans [XMP](xmp-writeback.md).
 
-Comme le format EXIF est automatiquement créé par les appareils photo numériques modernes et pris en charge par les logiciels graphiques modernes, il peut être considéré comme le plus petit dénominateur commun pour la gestion des métadonnées.
-
-La plupart des champs de métadonnées définis par EXIF sont de nature hautement technique et d’une utilité limitée pour la gestion descriptive des métadonnées. C’est pourquoi [!DNL Assets]  le mappage de propriétés EXIF dans des schémas [de métadonnées](metadata-schemas.md) courants et dans [XMP](xmp-writeback.md), le puissant format de métadonnées [!DNL Assets] utilisé pour la gestion des métadonnées.
-
-#### Autres métadonnées {#other-metadata}
+### Other metadata {#other-metadata}
 
 Les autres métadonnées qui peuvent être incorporées à partir de fichiers comprennent Microsoft Word, PowerPoint, Excel, etc.
 
-## Schémas de métadonnées {#metadata-schemata}
+## Metadata schemata {#metadata-schemata}
 
-Les  de métadonnées sont des jeux prédéfinis de définitions de propriétés de métadonnées qui peuvent être utilisées dans un large éventail d’applications. Les propriétés sont toujours associées à une ressource, ce qui signifie que les propriétés concernent la ressource.
+Les  de métadonnées sont des jeux prédéfinis de définitions de propriétés de métadonnées qui peuvent être utilisées dans diverses applications. Les propriétés sont toujours associées à une ressource, ce qui signifie que les propriétés sont &quot;à propos&quot; de la ressource.
 
-Vous pouvez également concevoir vos propres schémas de métadonnées s’il n’en existe aucun qui répond à vos besoins (veillez toutefois à ne pas dupliquer quelque chose qui existe déjà). Dans une structure, la séparation des schémas facilite le partage des métadonnées entre différentes structures.
+Vous pouvez également concevoir vos propres schémas de métadonnées s’il n’en existe aucun qui réponde à vos besoins. Ne  pas les informations existantes. Au sein d’une entreprise, la séparation des schémas facilite le partage des métadonnées. [!DNL Experience Manager] fournit un  par défaut des schémas de métadonnées les plus populaires. Le vous permet de lancer rapidement votre stratégie de métadonnées et de sélectionner rapidement les propriétés de métadonnées dont vous avez besoin.
 
-[!DNL Experience Manager] fournit une liste prête à l’emploi des schémas de métadonnées les plus populaires, pour vous permettre de lancer votre stratégie de métadonnées et de sélectionner les propriétés de métadonnées dont vous avez besoin à partir de schémas prédéfinis.
+Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 
-Les schémas de métadonnées pris en charge sont répertoriés dans la section qui suit.
+### Standard metadata {#standard-metadata}
 
-### Métadonnées standard {#standard-metadata}
+* dc - Dublin Core - l’ensemble de métadonnées le plus important et le plus utilisé.
+* DICOM - Digital Imaging and Communications in Medicine.
+* Iptc4xmpCore et iptc4xmpExt - International Press Communications Standard - un grand nombre de métadonnées spécifiques au sujet.
+* rdf - Resource Description Framework : pour les métadonnées web de sémantique générique.
+* xmp - Extensible Metadata Platform.
+* xmpBJ - Basic Job Ticketing.
 
-* dc - Dublin Core : ensemble de métadonnées le plus important et le plus largement utilisé.
-* DICOM - Digital Imaging and Communications in Medicine
-* Iptc4xmpCore et iptc4xmpExt - International Press Communications Standard - quantité de métadonnées spécifiques à un sujet
-* rdf - Resource Description Framework : pour les métadonnées web de sémantique générique
-* xmp - Extensible Metadata Platform
-* xmpBJ - Basic Job Ticketing
+### Application-specific metadata {#application-specific-metadata}
 
-### Métadonnées spécifiques à l’application    {#application-specific-metadata}
+Les métadonnées propres à l’application comprennent des métadonnées techniques et descriptives. Si vous les utilisez, il se peut que d’autres applications ne puissent pas utiliser les métadonnées. Par exemple, si vous disposez d’un fichier avec [!DNL Adobe Photoshop] des métadonnées et qu’une autre application de rendu d’image tente d’accéder aux métadonnées, il se peut qu’il ne soit pas en mesure d’accéder aux métadonnées. Si vous constatez que vos fichiers contiennent de nombreuses métadonnées spécifiques à l’application, vous pouvez créer une étape de flux de travail qui transforme une propriété spécifique à l’application en propriété standard.
 
->[!NOTE]
->
->Les métadonnées spécifiques à l’application comprennent des métadonnées techniques et des métadonnées descriptives. Si vous y avez recours, d’autres applications peuvent ne pas être en mesure de les utiliser. Par exemple, si vous disposez d’une ressource avec des métadonnées Adobe Photoshop et si une autre application de rendu d’image tente d’accéder aux métadonnées, il est possible qu’elle n’y parvienne pas.
->
->Si vous estimez que vos ressources comprennent trop de métadonnées spécifiques à l’application, vous pouvez créer une étape de workflow qui remplace la propriété propre à l’application par une propriété standard.
+* acdsee - métadonnées gérées par le programme ACDSee [www.acdsee.com/](https://www.acdsee.com/).
+* album - Adobe Photoshop Album.
+* cq - used by [!DNL Experience Manager Assets].
+* dam - used by [!DNL Experience Manager Assets].
+* dex - Optima SC Description Explorer.
+* crs - Adobe Photoshop Camera Raw.
+* lr - Adobe Lightroom.
+* mediapro - IView MediaPro.
+* MicrosoftPhoto et MP - Microsoft Photo.
+* pdf et pdfx.
+* photoshop et psAux - Adobe Photoshop.
 
-* acdsee - métadonnées gérées par le programme ACDSee [www.acdsee.com/](https://www.acdsee.com/)
-* album - Adobe Photoshop Album
-* cq - used by [!DNL Experience Manager Assets]
-* dam - used by [!DNL Experience Manager Assets]
-* dex - Optima SC Description Explorer
-* crs - Adobe Photoshop Camera Raw
-* lr - Adobe Lightroom
-* mediapro - IView MediaPro
-* MicrosoftPhoto et MP - Microsoft Photo
-* pdf amd pdfx
-* photoshop et psAux - Adobe Photoshop
-
-### Métadonnées de gestion des droits numériques    {#digital-rights-management-metadata}
+### Digital Rights Management metadata {#digital-rights-management-metadata}
 
 * cc - creative commons
 * xmpRights
@@ -169,30 +147,29 @@ Les schémas de métadonnées pris en charge sont répertoriés dans la section 
 * pur - Prism Usage Rights
 * xmpPlus - intégration de PLUS avec XMP
 
-### Métadonnées spécifiques à la photographie    {#photography-specific-metadata}
+### Photography-specific metadata {#photography-specific-metadata}
 
 * exif - de nombreuses informations techniques de l’appareil photo, notamment la position GPS
 * crs - photoshop camera raw
 * Iptc4xmpCore et iptc4xmpExt
 * TIFF - métadonnées d’image (pas seulement pour les images TIFF)
 
-### Métadonnées spécifiques à l’impression    {#print-specific-metadata}
+### Print-specific metadata {#print-specific-metadata}
 
 * pdf et pdfx - Adobe PDF et applications tierces
 * prism - [www.prismstandard.org](https://www.prismstandard.org) Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)
 * xmp
 * xmpPG - xmp pour le texte paginé
 
-### Métadonnées multimédia {#multimedia-specific-metadata}
+### Métadonnées multimédias {#multimedia-specific-metadata}
 
 * xmpDM - Dynamic Media
 * xmpMM - Gestion des médias
 
 ## Processus pilotés par les métadonnées {#metadata-driven-workflows}
 
-La création de workflows pilotés par les métadonnées vous permet d’automatiser certains processus, ce qui améliore l’efficacité. Dans un workflows piloté par les métadonnées, le système de gestion de workflows lit le workflow et exécute ensuite une action prédéfinie.
-
-Voici quelques exemples d’utilisation des workflows pilotés par les métadonnées :
+La création d’un axé sur les métadonnées permet d’automatiser certains processus, ce qui améliore l’efficacité. Dans un flux de travail axé sur les métadonnées, le système de gestion du flux de travail lit le flux de travail et effectue par conséquent une action prédéfinie. Voici quelques exemples d’utilisation des workflows pilotés par les métadonnées :
 
 * Le workflow peut vérifier si une image possède un titre. Si elle n’en possède pas, le système demande à un utilisateur spécifique d’ajouter un titre.
 * Le workflow peut vérifier si un avis de droit d’auteur sur une ressource autorise la distribution. S’il l’autorise, le système envoie la ressource à un serveur. S’il ne l’autorise pas, le système envoie la ressource à un autre serveur.
+* Un processus peut rechercher des fichiers sans métadonnées prédéfinies et obligatoires ou avec des métadonnées *non valides* .
