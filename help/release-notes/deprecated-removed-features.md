@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
+source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
 
 ---
 
@@ -39,7 +39,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
   <tr>
    <td>Intégration de Creative Cloud</td>
    <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">Le partage</a> de dossiers AEM vers Creative Cloud a été introduit dans AEM 6.2 pour permettre aux utilisateurs créatifs d’accéder aux ressources d’AEM, de sorte qu’ils puissent les ouvrir dans les applications CC et télécharger de nouveaux fichiers ou enregistrer des modifications dans AEM. Adobe Asset Link, nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator.</p> <p>Adobe n’envisage pas d’apporter d’autres améliorations à l’intégration du partage de dossiers d’AEM à Creative Cloud. Bien que cette fonctionnalité soit incluse dans AEM, il est vivement conseillé aux clients d’utiliser des solutions de remplacement.</p> </td>
-   <td>Il est conseillé aux clients de passer aux nouvelles fonctionnalités d’intégration de Creative Cloud, notamment Adobe Asset Link ou l’application de bureau AEM. Consultez les <a href="/help/assets/aem-cc-integration-best-practices.md"> meilleures pratiques d’intégration d’AEM et de Creative Cloud </a> pour plus de détails.</td>
+   <td>Il est conseillé aux clients de passer aux nouvelles fonctionnalités d’intégration de Creative Cloud, notamment Adobe Asset Link ou l’application de bureau AEM. Review <a href="/help/assets/aem-cc-integration-best-practices.md">AEM and Creative Cloud Integration Best Practices</a> for more details.</td>
   </tr>
   <tr>
    <td>Ressources</td>
@@ -165,13 +165,14 @@ Cette section les fonctionnalités et fonctionnalités qui ont été supprimées
 
 | Zone | Fonctionnalité | Remplacement |
 |--- |--- |--- |
-| Carte des  Analytics  | Version du  de mappage de  incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le module externe [ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Carte des  Analytics  | Version du  de mappage de  incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le module externe [ActivityMap fourni par Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Intégrations | L’intégration ExactTarget a été supprimée de la distribution par défaut (Quickstart) et n’est plus disponible. | Aucun remplacement. |
 | Intégrations | L’intégration de l’API Salesforce Force a été supprimée de la distribution par défaut (Quickstart) et constitue désormais un package supplémentaire à installer à partir de PackageShare. | La fonctionnalité est toujours disponible. |
 | Forms | La prise en charge du service de passerelle d’Adobe Central Migration n’est plus assurée, car le produit Adobe Central n’est plus pris en charge. | Aucun remplacement. |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Aucun remplacement. |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Aucun remplacement. |
 | Forms | La mise à niveau à sauce unique de LiveCycle ES4 SP1 vers AEM Forms 6.5 sur JEE n’est pas disponible | Reportez-vous à la page Chemins [de mise à niveau](../forms/using/upgrade.md) disponibles dans la documentation de mise à niveau d’AEM Forms. |
+| Forms | Suppression de la prise en charge de la mise en grappe basée sur UPD d’AEM Forms sur JEE | Vous pouvez uniquement utiliser la mise en grappe basée sur TCP dans AEM Forms sur JEE. Si vous mettez à niveau un serveur de multidiffusion UDP d’une version précédente vers AEM Forms 5.5 sur JEE, effectuez des configurations manuelles pour passer à la mise en grappe de jeux basée sur TCP. Pour obtenir des instructions détaillées, voir [Mise à niveau vers AEM Forms 6.5 sur JEE](../forms/using/upgrade-forms-jee.md) |
 | Développeurs | Firebug Lite a été supprimé de la distribution par défaut (Quickstart). | Utilisez les consoles de développement intégrées au navigateur. |
 | Développeurs | Remove `customJavaScriptPath` support in HTML Client Library Manager. | Aucun remplacement. |
 | Ressources | La fonction de déchargement Ressources a été supprimée d’AEM 6.5. | Aucun remplacement. |
