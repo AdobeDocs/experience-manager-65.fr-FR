@@ -3,7 +3,7 @@ title: Formats pris en charge par Assets
 description: de formats de fichier pris en charge par les ressources AEM et par les médias dynamiques et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6ac091d413690bd44b171ed11415c154aa8f437c
+source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
 
 ---
 
@@ -24,7 +24,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
 ## Formats d’image pixellisée pris en charge dans AEM Assets {#supported-raster-image-formats}
 
-| Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Modification interactive | Écriture différée des métadonnées | Statistiques |
+| Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Modification | Écriture différée des métadonnées | Statistiques |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
