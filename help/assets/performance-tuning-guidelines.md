@@ -4,7 +4,7 @@ description: Suggestions et conseils sur la configuration d’AEM, les modificat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -203,17 +203,13 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 
 >[!CAUTION]
 >
->Une configuration incorrecte peut rendre votre serveur instable si ImageMagick utilise tout l’espace disque disponible.
->
->Les modifications de stratégie requises pour traiter des fichiers volumineux à l’aide d’ImageMagick peuvent avoir une incidence sur les performances d’AEM. Pour plus d’informations, voir [Installation et configuration d’ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Une configuration incorrecte peut rendre votre serveur instable si ImageMagick utilise tout l’espace disque disponible. Les modifications de stratégie requises pour traiter des fichiers volumineux à l’aide d’ImageMagick peuvent avoir une incidence sur les performances d’AEM. Pour plus d’informations, voir [Installation et configuration d’ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
 >Les fichiers ImageMagick `policy.xml` et `configure.xml` les fichiers sont disponibles à la `/usr/lib64/ImageMagick-&#42;/config/` place de `/etc/ImageMagick/`.Voir la documentation [](https://www.imagemagick.org/script/resources.php) ImageMagick pour connaître l’emplacement des fichiers de configuration.
 
->[!TIP]
->
->Si vous utilisez Experience Manager sur Adobe Managed Services (AMS), contactez l’assistance d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Contactez le représentant du service à la clientèle Adobe pour mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe.
+Si vous utilisez Experience Manager sur Adobe Managed Services (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Contactez le représentant du service à la clientèle Adobe pour mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. Experience Manager peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ### Écriture différée XMP {#xmp-writeback}
 
