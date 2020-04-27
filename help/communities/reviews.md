@@ -10,20 +10,21 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # Utilisation des révisions et du résumé des révisions (affichage) {#using-reviews-and-reviews-summary-display}
 
-The `Reviews`component is a composite of [ `Comments`](comments.md) and [ `Rating`](rating.md) components ready for use.
+The `Reviews` component is a composite of [Comments](comments.md) and [Rating](rating.md) components ready for use.
 
 The `Reviews Summary (Display)` component provides a summary of an active or closed instance of a `Reviews` component for display elsewhere on the site.
 
 >[!NOTE]
 >
->La publication anonyme d’une révision n’est pas possible. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer. Les visiteurs connectés peuvent mettre à jour leurs révisions à tout moment.
+>La publication anonyme d’une révision n’est pas possible. Les du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer. Les visiteurs connectés peuvent mettre à jour leurs révisions à tout moment.
+
 
 ## Ajout d’une révision à une page {#adding-a-review-to-a-page}
 
@@ -47,7 +48,7 @@ Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of rat
 
 * **[!UICONTROL Evaluations autorisées]**
 
-   Liste de notes à partir de laquelle un membre peut choisir.
+   de notes à partir duquel un membre peut choisir.
 
    Utilisez les flèches Haut et Bas, ainsi que les boutons de suppression, pour modifier les choix visibles.
 
@@ -71,47 +72,82 @@ Sur le site web, les évaluations requises sont signalées d’un astérisque. S
 >
 >If an item is entered on the **[!UICONTROL Required Ratings]** tab that is not specified on the **[!UICONTROL Allowed Ratings]** tab, then it is not included in the items to rate.
 
+
 Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 ![chlimage_1-344](assets/chlimage_1-344.png)
 
-* **[!UICONTROL Autoriser les réponses]** Si cette option est cochée, les réponses aux révisions sont autorisées. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Permettre des réponses]**
 
-* **[!UICONTROL Fermé]** Si cette option est cochée, la révision est fermée et n’accepte aucune nouvelle révision ou réponse. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les réponses aux révisions. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Autoriser les transferts de fichiers]** Si cette option est cochée, des fichiers peuvent être chargés avec une révision. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Fermé]**
 
-* **Taille maximale du fichier **Paramètre à définir uniquement si l’option**[!UICONTROL Autoriser les chargements de fichiers ]**est activée. Ce champ limite la taille (en octets) d’un fichier téléchargé. La valeur par défaut est de 10 Mo.
+   Si cette option est cochée, la révision est fermée aux nouvelles révisions et réponses. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Longueur de message max.]** Nombre maximal de caractères qui peuvent être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
+* **[!UICONTROL Autoriser les transferts de fichiers]**
 
-* **[!UICONTROL Types de fichier autorisés]** Paramètre à définir uniquement si l’option **[!UICONTROL Autoriser les transferts de fichiers]** est activée. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Si cette option est cochée, autorisez le téléchargement des pièces jointes pour la révision. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Éditeur de texte enrichi]** Si cette option est cochée, les publications peuvent être saisies avec une mise en forme. Cette option n’est pas cochée par défaut.
+* **Taille maximale du fichier **
 
-* **[!UICONTROL Autoriser le vote]** Si cette option est cochée, la fonction de vote est ajoutée à un sujet. Cette option n’est pas cochée par défaut.
+   N’est pertinent que si l’option **[!UICONTROL Autoriser les téléchargements]** de fichiers est cochée. Ce champ limite la taille (en octets) d’un fichier téléchargé. La valeur par défaut est de 10 Mo.
+
+* **[!UICONTROL Longueur de message max.]**
+
+   Nombre maximal de caractères pouvant être saisis dans la zone de texte. La valeur par défaut est de 4 096 caractères.
+
+* **[!UICONTROL Types de fichier autorisés]**
+
+   N’est pertinent que si l’option **[!UICONTROL Autoriser les téléchargements]** de fichiers est cochée. d’extensions de fichier séparé par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+
+* **[!UICONTROL Éditeur de texte enrichi]**
+
+   Si cette option est cochée, les publications peuvent être saisies avec une annotation. Cette option n’est pas cochée par défaut.
+
+* **[!UICONTROL Autoriser le vote]**
+
+   Si cette option est cochée, incluez la fonction de vote pour une rubrique. Cette option n’est pas cochée par défaut.
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
 ![chlimage_1-345](assets/chlimage_1-345.png)
 
-* **[!UICONTROL Prémodération]** Si cette option est cochée, les révisions doivent être approuvées pour être visibles sur un site de publication. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Prémodération]**
 
-* **[!UICONTROL Supprimer les révisions]** Si cette option est cochée, le membre qui a publié la révision a la possibilité de la supprimer. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les révisions doivent être approuvées avant qu’elles n’apparaissent sur un site de publication. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Refuser les révisions]** Si cette option est cochée, les modérateurs ont le droit de refuser des révisions. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Supprimer les révisions]**
 
-* **[!UICONTROL Fermer/rouvrir les révisions]** Si cette option est cochée, les modérateurs sont autorisés à fermer et à rouvrir les révisions. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, le membre qui a publié la révision peut la supprimer. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Marquer les révisions]** Si cette option est cochée, les membres ont le droit de marquer des révisions comme étant inappropriées. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Refuser les révisions]**
 
-* **[!UICONTROL Marquer la liste de motifs]** Si cette option est cochée, les membres ont le droit de sélectionner dans une liste déroulante la ou les raisons pour lesquelles ils ont marqué une révision comme étant inappropriée. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les modérateurs à refuser les révisions. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Motif de la marque personnalisée]** Si cette option est cochée, les membres ont le droit de préciser la raison pour laquelle ils ont marqué une révision comme étant inappropriée. Cette option n’est pas cochée par défaut.
+* **[!UICONTROL Fermer/rouvrir les révisions]**
 
-* **[!UICONTROL Seuil de modération]** Saisissez le nombre de fois qu’une révision doit être marquée par les membres avant que les modérateurs n’en soient informés. La valeur par défaut est une fois (1).
+   Si cette option est cochée, autorisez les modérateurs à fermer et rouvrir les révisions. Cette option n’est pas cochée par défaut.
 
-* **[!UICONTROL Limite de marquage]** Saisissez le nombre de fois qu’une révision doit être marquée avant qu’elle ne soit plus visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
+* **[!UICONTROL Marquer les révisions]**
+
+   Si cette option est cochée, autorisez les membres à signaler les révisions comme inappropriées. Cette option n’est pas cochée par défaut.
+
+* **[!UICONTROL Marquer la liste de motifs]**
+
+   Si cette option est cochée, permettez aux membres de choisir, dans un  déroulant, la raison pour laquelle ils signalent une révision comme inappropriée. Cette option n’est pas cochée par défaut.
+
+* **[!UICONTROL Motif de la marque personnalisée]**
+
+   Si cette option est cochée, autorisez les membres à indiquer leur propre raison de signaler une révision comme inappropriée. Cette option n’est pas cochée par défaut.
+
+* **[!UICONTROL Seuil de modération]**
+
+   Entrez le nombre de fois où une révision doit être marquée par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est une fois (1).
+
+* **[!UICONTROL Limite de marquage]**
+
+   Entrez le nombre de fois où une révision doit être marquée avant d’être masquée du public. Dans le cas contraire, cette valeur doit être supérieure ou égale au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
 
 ### Ajout d’un résumé des révisions (affichage) à une page {#adding-a-review-summary-display-to-a-page}
 
@@ -131,6 +167,7 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 >
 >La « moyenne » reflète les votes pour le premier élément visible dans l’onglet Évaluations autorisées de la révision qui fait l’objet d’un résumé.
 
+
 ### Configuration du résumé des révisions (affichage) {#configuring-reviews-summary-display}
 
 Select the placed `Reviews Summary (Display)` component to access and select the `Configure` icon which opens the edit dialog.
@@ -143,9 +180,9 @@ Sous l’onglet **[!UICONTROL Résumé des critiques]**
 
 * `Review Path`
 
-   entrez ou accédez à l’instance placée du `reviews`composant pour résumer, par exemple, si elle est ajoutée à la page Web du site [Geometrixx Engage,](getting-started.md) le chemin serait :
+   entrez ou accédez à l’instance placée du `reviews`composant pour résumer, par exemple, si elle est ajoutée à la page Web du site [Geometrixx Engage,](getting-started.md) le chemin serait le suivant :
 
-   /content/sites/help/fr/page/jcr:content/content/Primary/reviews
+   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
@@ -165,19 +202,19 @@ Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType f
 
 * **[!UICONTROL Type de ressource de commentaire]**
 
-   Accédez à resourceType d’un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`
+   Accédez à resourceType d’un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
 
-   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un visiteur publie un commentaire.
+   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un publie un commentaire.
 
 * **[!UICONTROL Type de ressource de vote]**
 
-   Accédez à resourceType d’un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`
+   Accédez à resourceType d’un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
 
-   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un visiteur publie un vote.
+   Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un publie un vote.
 
 * **[!UICONTROL Type de ressource système de commentaires]**
 
-   Accédez à resourceType d’un `comments`composant étendu (système de commentaires) dans /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include)
+   Accédez à resourceType d’un `comments`composant étendu (système de commentaires) dans /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include).
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -189,10 +226,10 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 Lorsque le visiteur est connecté, selon la configuration, il peut :
 
-* Publication d’une nouvelle révision
-* Modifier sa propre révision
-* Supprimer leur propre révision
-* Signaler les commentaires des autres
+* Publiez une nouvelle révision.
+* Modifiez leur propre révision.
+* Supprimez leur propre révision.
+* Signalez les commentaires des autres utilisateurs.
 
 Une seule évaluation est autorisée par membre.  Le membre peut modifier son évaluation à tout moment.
 
