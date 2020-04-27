@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
@@ -21,7 +21,7 @@ Cette fonctionnalité comprend deux composants qui fonctionnent ensemble : révi
 
 Reviews est un composant composite basé sur un système [de](essentials-comments.md) commentaires qui contient un ou plusieurs composants de [notation](rating-basics.md) (tally).
 
-La publication anonyme d’une révision n’est pas possible. Les visiteurs du site doivent s’inscrire et se connecter pour ajouter une révision. Le visiteur (membre) connecté peut mettre à jour sa révision à tout moment.
+La publication anonyme d’une révision n’est pas possible. Les du site doivent s’enregistrer et se connecter pour ajouter une révision. Le (membre) connecté(e) peut mettre à jour sa révision à tout moment.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -81,14 +81,14 @@ La publication anonyme d’une révision n’est pas possible. Les visiteurs du 
 L’UGC doit être modérée à l’aide de l’une des méthodes standard de modération.
 Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
 
-Depuis les communautés AEM 6.1, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de stockage choisie (par exemple, ASRP, MSRP ou JSRP).
+Depuis la version 6.1 des Communautés AEM, l’utilisation d’un magasin [](working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de   choisie (par exemple, ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format de l’UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources de stockage - présentation et présentation de l&#39;utilisation du référentiel
-* [SRP et UGC Essentials](srp-and-ugc.md) - Méthodes et exemples d&#39;utilitaires SRP
-* [Accès UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage
-* [SocialUtils Refactoring](socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
+* [Aperçu](srp.md) du fournisseur de ressources  - Présentation et aperçu de l’utilisation du référentiel.
+* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP.
+* [Accès UGC avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Réfactorisation](socialutils.md) de SocialUtils : mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
 
