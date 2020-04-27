@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
+source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 Maintenant que le site des communautés nouvellement créé a été publié, accédez à l’URL affichée lors de la création du site, mais sur le serveur de publication, par exemple.
 
-* A\uthor URL = https://localhost:4502/content/sites/engage/en.html
+* URL de l’auteur = https://localhost:4502/content/sites/engage/en.html
 * URL de publication = https://localhost:4503/content/sites/engage/en.html
 
 Pour éviter toute confusion quant au membre qui est connecté lors de l’écriture et de la publication, il est conseillé d’utiliser des navigateurs différents pour chaque instance.
@@ -37,14 +37,14 @@ Lors de sa première visite sur le site publié, le du site n’était général
 
 Un de site anonyme voit ce qui suit dans l’interface utilisateur :
 
-* Titre du site. Didacticiel de prise en main
-* aucun lien 
-* aucun lien de message
-* aucun lien de notification
-* champ de recherche
+* Titre du site (didacticiel de prise en main)
+* Aucun lien 
+* Aucun lien de message
+* Aucun lien de notification
+* Champ de recherche
 * Lien de connexion
 * La bannière de la marque
-* Liens de menu pour les composants inclus dans le modèle de site de référence
+* Liens de menu pour les composants inclus dans le modèle de site de référence.
 
 Si vous sélectionnez divers liens, vous constaterez qu’ils sont en mode lecture seule.
 
@@ -54,7 +54,7 @@ Une limitation connue expose le contenu du site communautaire à des anonymes pa
 
 Pour protéger le contenu de votre site communautaire contre l’accès d’utilisateurs anonymes par le biais de contenu jcr et json, procédez comme suit :
 
-1. Sur l’instance d’auteur AEM, accédez à https://&lt;hôte>:&lt;port>/editor.html/content/site/&lt;nom du site>.html.
+1. Sur l’instance d’auteur AEM, accédez à https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -64,19 +64,19 @@ Pour protéger le contenu de votre site communautaire contre l’accès d’util
 
    ![site-authentication](assets/site-authentication.png)
 
-1. Accédez à **onglet Avancé **.
+1. Accédez à l’onglet **Avancé**.
 
    ![page-properties](assets/page-properties.png)
 
 1. Enable **Authentication Requirement**.
-1. Ajouter le chemin de la page de connexion. For example,**/content/......./GetStarted**.
+1. Ajouter le chemin de la page de connexion. For example, **/content/......./GetStarted**.
 1. Publiez la page.
 
 ## Membre de la Communauté approuvé {#trusted-community-member}
 
 Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#demo-users) a reçu le rôle de gestionnaire et de modérateur [de](/help/communities/create-site.md#roles)la communauté. Si ce n&#39;est pas le cas, retournez à l&#39;auteur   pour [modifier les paramètres](/help/communities/sites-console.md#modifying-site-properties) du site et sélectionnez Aaron McDonald comme gestionnaire de communauté et modérateur.
 
-Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’utilisateur &quot;aaron.mcdonald@mailinator.com&quot; et le mot de passe &quot;password&quot;. Vous pouvez vous connecter à l’aide des informations d’identification Twitter ou Facebook.
+Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’utilisateur (aaron.mcdonald@mailinator.com) et le mot de passe (mot de passe). Vous pouvez vous connecter à l’aide des informations d’identification Twitter ou Facebook.
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
@@ -85,21 +85,21 @@ Une fois connecté en tant que membre enregistré de la communauté, notez les o
 * **** option vous permet de  et de modifier votre .
 * [L’option Messages](/help/communities/configure-messaging.md) vous dirige vers la section de messagerie directe, où vous pouvez :
 
-1. les messages directs que vous avez reçus (boîte de réception), envoyés (éléments envoyés) et supprimés (corbeille).
-1. Composez de nouveaux messages directs à envoyer aux individus et aux groupes.
+   1. les messages directs que vous avez reçus (boîte de réception), envoyés (éléments envoyés) et supprimés (corbeille).
+   1. Composez de nouveaux messages directs à envoyer aux individus et aux groupes.
 
 * [L’option Notifications](/help/communities/notifications.md) vous dirige vers la section des notifications, où vous pouvez vos  d’intérêt et modifier les paramètres de notification.
 * [Si vous disposez de droits de modération, l’administration](/help/communities/published-site.md#moderationlink) vous dirige vers la page de modération des communautés AEM.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-Notez que la page Calendrier est le  car le modèle de site de référence choisi incluait d’abord la fonction Calendrier, suivie de  fonction de flux de, de fonction de forum, etc. Cette structure est visible à partir de la console Modèle [de](/help/communities/sites.md#edit-site-template) site ou lors de la modification des propriétés du site dans l’auteur   :
+Notez que la page Calendrier est le  car le modèle de site de référence choisi incluait d’abord la fonction Calendrier, suivie de  fonction de flux de, de fonction de forum, etc. Cette structure est visible à partir de la console Modèle [de](/help/communities/sites.md#edit-site-template) site ou lors de la modification des propriétés du site dans l’auteur  le  :
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
 >[!NOTE]
 >
->Pour en savoir plus sur les composants et les fonctions des communautés, consultez
+>Pour en savoir plus sur les composants et les fonctions des communautés, visitez :
 >
 >* [Composants](/help/communities/author-communities.md) de communautés (pour les auteurs)
 >* [Composants, fonctions et composants essentiels](/help/communities/essentials.md) (développeurs)
@@ -123,72 +123,72 @@ Etant donné qu’Aaron est un administrateur de groupe, la sélection du lien G
 
 Il s’agit d’un exemple de création d’un groupe dans le  de publication .
 
-Les groupes peuvent également être créés dans l&#39;auteur   et gérés dans le site communautaire dans le de l&#39;auteur  (console [Groupes](/help/communities/groups.md)communautaires). L’expérience de [création de groupes sur l’auteur](/help/communities/nested-groups.md) est la suivante dans ce didacticiel.
+Les groupes peuvent également être créés dans l’auteur   et gérés dans le site de la communauté dans le de l’auteur (console[Groupes](/help/communities/groups.md)communautaires). L’expérience de [création de groupes sur l’auteur](/help/communities/nested-groups.md) est la suivante dans ce didacticiel.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
 Créer un groupe de référence :
 
-1. sélectionner **Nouveau groupe**
+1. Sélectionner le **nouveau groupe**
 1. **Onglet Settings**
 
    * Nom du groupe : `Sports`
-   * Description : `A parent group for various sporting groups`
+   * Description : `A parent group for various sporting groups`.
    * Nom de l’URL de groupe : `sports`
-   * select `Open Group` (autoriser tout membre de la communauté à participer en y adhérant)
+   * Sélectionnez `Open Group` (autoriser tout membre de la communauté à participer en y adhérant)
 
 1. **Onglet Modèle**
 
-   * select `Reference Group` (contient une fonction de groupes dans sa structure pour autoriser les groupes imbriqués)
+   * Sélectionner `Reference Group` (contient une fonction de groupes dans sa structure pour autoriser les groupes imbriqués)
 
-1. sélectionner **Créer un groupe**
+1. Sélectionner **Créer un groupe**
 
 ![chlimage_1-37](assets/chlimage_1-37.png)
 
-Une fois le nouveau groupe créé, **sélectionnez le nouveau groupe** Sports afin de créer deux groupes (imbriqués) au sein du groupe. Comme une structure de site ne peut pas commencer par la fonction de groupes, après avoir ouvert le groupe Sports, il est nécessaire de sélectionner le lien Groupes :
+Une fois le nouveau groupe créé, **sélectionnez le nouveau groupe** Sports afin de créer deux groupes (imbriqués) au sein du groupe. Une structure de site ne pouvant pas commencer par la fonction de groupes, après avoir ouvert le groupe Sports, il est nécessaire de sélectionner le lien Groupes :
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
-Le deuxième ensemble de liens, commençant par `Blog`, appartient au groupe actuellement sélectionné, le `Sports`groupe. En sélectionnant le `Groups` lien Sports, vous pouvez imbriquer deux groupes dans le groupe Sports.
+Le deuxième ensemble de liens, commençant par `Blog`, appartient au groupe actuellement sélectionné, le `Sports` groupe. En sélectionnant le `Groups` lien Sports, vous pouvez imbriquer deux groupes dans le groupe Sports.
 
-Par exemple, ajoutez deux n `ew groups.`
+Par exemple, ajoutez deux `new groups`.
 
-* un nom `Baseball`
+* Un nom `Baseball`
 
-   * le laisser défini en tant que `Open Group` (adhésion obligatoire)
-   * sur l’onglet Modèles, sélectionnez `Conversational Group`
+   * Laissez-le défini comme `Open Group` (adhésion obligatoire).
+   * Sur l’onglet Modèles, sélectionnez `Conversational Group`.
 
-* un nom `Gymnastics`
+* Un nom `Gymnastics`
 
-   * changer son paramètre en `Member Only Group` (adhésion restreinte)
-   * sur l’onglet Modèles, sélectionnez `Conversational Group`
+   * Définissez ce paramètre sur `Member Only Group` (adhésion restreinte).
+   * Sur l’onglet Modèles, sélectionnez `Conversational Group`.
 
-**Avis **:
+**Avis**:
 
-* une actualisation de la page peut s’avérer nécessaire avant l’affichage des deux groupes.
-* ce modèle n’inclut *pas la fonction de groupes ; il n’est donc plus possible d’imbriquer les groupes.
-* sur l’auteur, la console [](/help/communities/groups.md) Groupes offre un troisième choix : un `Public Group` (abonnement facultatif)
+* Une actualisation de la page peut s’avérer nécessaire avant l’affichage des deux groupes.
+* Ce modèle *n’inclut pas* la fonction de groupes. Il n’est donc pas possible d’imbriquer davantage de groupes.
+* Sur l’élément auteur, la console [Groupes](/help/communities/groups.md) fournit un troisième choix - un `Public Group` (abonnement facultatif).
 
 Une fois les deux groupes créés, sélectionnez le groupe de baseball, un groupe ouvert, et notez ses liens :
 
 `Discussions` `What's New` `Members`
 
-Les liens du groupe s&#39;affichent sous les liens du site principal et donnent l&#39;affichage suivant :
+Les liens du groupe s’affichent sous les liens du site principal et donnent les résultats suivants :
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
 Sur author - with administrative privilèges, accédez à la console [Groupes](/help/communities/members.md) de communautés et ajoutez Weston McCall au `Community Engage Gymnastics <uid> Members` groupe.
 
-Poursuivant sur la publication, déconnectez-vous en tant que Aaron McDonald, et  les groupes du Groupe Sports en tant que anonyme du site :
+Continuez à publier, déconnectez-vous en tant que Aaron McDonald, et  les groupes du Groupe Sports en tant que anonyme du site :
 
-* à partir du 
-* select `Groups`link
-* select `Sports`link
-* sélectionnez le `Groups`lien Sports
+* Du 
+* Select `Groups` link
+* Select `Sports` link
+* Sélectionnez le `Groups` lien Sports
 
 Seul le groupe de baseball sera visible.
 
-Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com / password) et accédez au même emplacement. Notez que Weston peut `Join` le `Baseball` groupe ouvert et soit `enter or Leave` le `Gymnastics`groupe privé.
+Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com / password) et accédez au même emplacement. Notez que Weston peut `Join` le groupe ouvert `Baseball` et soit `enter or Leave` le groupe privé `Gymnastics` .
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
@@ -196,7 +196,7 @@ Connectez-vous en tant que Weston McCall (weston.mccall@dodgit.com / password) e
 
 la page Web de base incluse dans le site en sélectionnant le lien Page Web. Les outils de création standard d’AEM peuvent être utilisés pour ajouter du contenu à cette page dans le  de l’auteur .
 
-Par exemple, accédez à l’instance d’ **auteur** , ouvrez le `engage` dossier dans la console [Sites](/help/communities/sites-console.md)des communautés, sélectionnez l’icône **Ouvrir le site** pour passer en mode d’édition d’auteur. Sélectionnez ensuite le mode  pour sélectionner le `Web Page`lien, puis le mode d’édition pour ajouter des composants Titre et Texte. Enfin, republiez uniquement la page ou l’ensemble du site.
+Par exemple, accédez à l’instance d’ **auteur** , ouvrez le `engage` dossier dans la console [Sites](/help/communities/sites-console.md)des communautés, sélectionnez l’icône **Ouvrir le site** pour passer en mode d’édition d’auteur. Sélectionnez ensuite le mode  pour sélectionner le `Web Page` lien, puis le mode d’édition pour ajouter des composants Titre et Texte. Enfin, republiez uniquement la page ou l’ensemble du site.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -212,16 +212,16 @@ Utilisez le bouton Retour du navigateur pour revenir au site publié. La plupart
 
 Une fois déconnecté, il est possible de créer une nouvelle inscription d’utilisateur.
 
-* select `Log In`
-* select `Sign up for a new account`
+* Sélectionner `Log In`
+* Sélectionner `Sign up for a new account`
 
 ![chlimage_1-43](assets/chlimage_1-43.png) ![chlimage_1-44](assets/chlimage_1-44.png)
 
 Par défaut, l’adresse électronique correspond à l’identifiant de connexion. Si cette option est désactivée, le peut saisir son propre ID de connexion (nom d’utilisateur). Le nom d’utilisateur doit être unique dans le  de publication .
 
-Après avoir spécifié le nom, l’adresse électronique et le mot de passe de l’utilisateur, la sélection `Sign Up`crée l’utilisateur et lui permet de le signer.
+Après avoir spécifié le nom, le courrier électronique et le mot de passe de l’utilisateur, la sélection `Sign Up` crée l’utilisateur et lui permet de le signer.
 
-Une fois connecté, la première page présentée est leur `Profile`page, qu’ils peuvent personnaliser.
+Une fois connecté, la première page présentée est leur `Profile` page, qu’ils peuvent personnaliser.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
