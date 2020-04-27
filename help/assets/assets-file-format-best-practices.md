@@ -3,7 +3,7 @@ title: Recommandations relatives au traitement des différents formats de fichie
 description: Recommandations relatives au traitement des différents types de fichiers pris en charge à l’aide d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -16,13 +16,13 @@ Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AE
 
 >[!TIP]
 >
->Si vous utilisez Experience Manager sur Adobe Managed Services (AMS), contactez l’assistance d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Contactez le représentant du service à la clientèle Adobe pour mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe.
+>Si vous utilisez Experience Manager sur Adobe Managed Services (AMS), contactez l’assistance d’Adobe si vous prévoyez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Contactez le représentant du service à la clientèle Adobe pour mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. Experience Manager peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## Bibliothèque Adobe Camera Raw {#adobe-camera-raw-library}
 
 Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque Adobe Camera Raw pour les fichiers RAW et DNG.
 
-La bibliothèque Adobe Camera Raw prend en charge le profil colorimétrique CMJN comme entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
+La bibliothèque Adobe Camera Raw prend en charge les de couleurs CMJN  en entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
 
 Pour plus d’informations, voir Prise en charge [de](/help/assets/camera-raw.md)Camera Raw.
 
@@ -40,7 +40,7 @@ Les miniatures et les aperçus générés à l’aide de l’interpréteur de PD
 
 Adobe vous recommande d’utiliser Adobe InDesign Server pour extraire des rendus spécifiques à Adobe InDesign, tels que IDML et HTML. For more information, see [Adding AEM assets as references in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
-## Dynamic Media  {#dynamic-media}
+## Dynamic Media  {#dynamic-media}
 
 Dynamic Media génère et diffuse plusieurs variations de contenu riche en temps réel via son réseau mondial, extensible et optimisé pour garantir de bonnes performances. Il diffuse des expériences d’affichage interactif et simplifie le processus de gestion des campagnes numériques. Pour en savoir plus sur l’activation de Dynamic Media, voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md).
 
