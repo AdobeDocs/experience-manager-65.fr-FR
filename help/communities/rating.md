@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # Utilisation des évaluations {#using-ratings}
 
-The `Rating`component is used standalone or in conjunction with other Communities features. Ce composant permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
+The `Rating` component is used standalone or in conjunction with other Communities features. Ce composant permet aux membres de la communauté connectés d’exprimer leurs opinions en évaluant le contenu.
 
 ## Ajout d’une évaluation à une page {#adding-a-rating-to-a-page}
 
-Pour ajouter un `Rating`composant à une page en mode création, localisez le composant `Communities / Rating` et faites-le glisser vers sa place sur une page, par exemple une position relative à la fonction à évaluer par les membres.
+Pour ajouter un `Rating` composant à une page en mode création, localisez le composant `Communities / Rating` et faites-le glisser vers son emplacement sur une page, par exemple une position relative à la fonction à évaluer par les membres.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -49,7 +49,7 @@ Une seule évaluation est autorisée par membre.  Le membre peut modifier son �
 
 ### Anonyme {#anonymous}
 
-La publication anonyme d’une évaluation n’est pas possible. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer.
+La publication anonyme d’une évaluation n’est pas possible. Les du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer.
 
 ## Informations supplémentaires {#additional-information}
 
