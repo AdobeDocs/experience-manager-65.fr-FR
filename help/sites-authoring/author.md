@@ -1,6 +1,6 @@
 ---
-title: Création
-seo-title: Création
+title: 'Création  '
+seo-title: 'Création  '
 description: Concepts de création dans AEM
 seo-description: Concepts de création dans AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 
 ---
 
@@ -38,13 +38,11 @@ Dans l’environnement de création, les fonctions d’AEM sont accessibles dans
 
 >[!NOTE]
 >
->La documentation d’AEM est elle-même conçue dans AEM.
->
->Il est aussi utilisé, avec le dispatcher, pour la publication.
+>AEM et le répartiteur sont utilisés pour publier cette documentation AEM.
 
 ### Environnement de création {#author-environment}
 
-The author works in what is known as the **author environment**. This provides an easy to use interface (graphical user interface (GUI or UI)) for creating the content. It is usually located behind a company&#39;s firewall that provides full protection and requires the author to login, using an account that has been assigned the appropriate access rights.
+L’auteur travaille dans ce qu’on appelle l’**environnement de création**. Il s’agit d’une interface facile à utiliser (interface utilisateur graphique) pour créer le contenu. En fait, cette interface se trouve habituellement derrière le pare-feu d’une entreprise qui fournit une protection complète et implique que l’auteur se connecte à l’aide d’un compte doté des droits d’accès appropriés.
 
 >[!NOTE]
 >
@@ -82,20 +80,20 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 >
 >Il existe malheureusement une interférence dans la terminologie utilisée. Cela peut se produire avec les fonctions suivantes :
 >
->* **Publier / Annuler la publication**
-   >  Il s’agit des principaux termes des actions qui rendent votre contenu public dans votre environnement de publication (ou pas).
+>* **Publier/Annuler la publication**
+   >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
    >
    >
-* **Activer / désactiver**
-   >  Ces termes sont synonymes de publication/annulation de publication.
+* **Activer/Désactiver**
+   >  Ces termes sont synonymes de publication/annulation de la publication.
    >
    >
-* **Répliquer / Réplication**
-   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, contenu de la page, fichiers, code, commentaires des utilisateurs) d&#39;un environnement à un autre; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires des utilisateurs.
+* **Répliquer/Réplication**
+   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, contenu de la page, fichiers, code, commentaires des utilisateurs) d&#39;un   à un autre; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires des utilisateurs.
 >
 
 
 
-#### Répartiteur {#dispatcher}
+#### Dispatcher {#dispatcher}
 
-To optimize performance for visitors to your website, the **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**implements load balancing and caching.
+Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
