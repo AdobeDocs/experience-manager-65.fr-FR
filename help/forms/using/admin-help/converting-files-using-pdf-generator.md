@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 68cd1c13fff94ac485865e50bc955548cd285b14
 
 ---
 
@@ -61,11 +61,22 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 
 >[!NOTE]
 >
->la conversion de fichiers HTML au format PDF requiert certaines polices dans le répertoire des polices système. Sur les systèmes Linux, Solaris et AIX, le répertoire des polices système doit contenir la police Courier. Sur les systèmes Windows, le répertoire des polices système doit contenir Times New Roman.
+>* la conversion de fichiers HTML au format PDF requiert certaines polices dans le répertoire des polices système. Sur les systèmes Linux, Solaris et AIX, le répertoire des polices système doit contenir la police Courier. Sur les systèmes Windows, le répertoire des polices système doit contenir Times New Roman.
+   >
+   > 
+* Les polices suivantes sont des polices japonaises par défaut dans AEM Forms sous Linux. Au moins >une de ces polices doit être disponible pour convertir les polices japonaises dans le système >.
+   >
+   >   
+   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Gothic Pro-VI&quot;
+   >   * &quot;Kozuka Mincho Pro-VI&quot;
+   >   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Mincho Pr6N&quot;
+   >   * &quot;Sazanami Mincho&quot;
+   >   * &quot;Adobe Heiti Std&quot;
+   >   * &quot;Adobe Song Std&quot;
+>* Pour télécharger un fichier à partir du système de fichiers local, utilisez l’option Télécharger le fichier de la page HTML en PDF.
 
->[!NOTE]
->
->Pour télécharger un fichier à partir du système de fichiers local, utilisez l’option Télécharger le fichier de la page HTML en PDF.
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > HTML en PDF.
 1. Spécifiez le fichier à convertir en exécutant l’une des tâches suivantes :
