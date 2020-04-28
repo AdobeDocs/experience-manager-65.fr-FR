@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 La fonction de recherche fonctionne avec d’autres fonctions, comme les forums, et permet de rechercher du contenu.
 
-When adding the ability to search posts entered by community members, referred to as user generated content (UGC), there are two components: [ `Search`](#search) and [ `Search Results`](#search-results).
+Lors de l’ajout de la possibilité de rechercher des publications faites par des membres de la communauté (le contenu généré par l’utilisateur), il existe deux composants : [Rechercher](#search) et [Résultats de la recherche](#search-results).
 
 The page that includes the `Search Results` component supports both searching and the display of results.
 
-The page that includes the `Search`component provides a place to launch a search with results appearing on the `Search Results` page.
+The page that includes the `Search` component provides a place to launch a search with results appearing on the `Search Results` page.
 
 La fonction de recherche peut être utilisée avec n’importe quelle autre fonction permettant aux visiteurs et aux membres du site d’afficher du contenu.
 
@@ -83,9 +83,13 @@ Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Résultats de la recherche par page]** Définissez le nombre de rubriques/publications affichées par page. La valeur par défaut est 10.
+* **[!UICONTROL Résultats de la recherche par page]**
 
-* **[!UICONTROL Chemins de recherche]** Lorsque vous ajoutez des chemins de recherche à l’aide du bouton Ajouter un élément, la recherche de contenu est limitée.
+   Définissez le nombre de rubriques/publications affichées par page. La valeur par défaut est 10.
+
+* **[!UICONTROL Chemins de recherche]**
+
+   En ajoutant des chemins de recherche à l’aide du bouton Ajouter élément, la recherche de contenu est limitée.
 
 ## Informations supplémentaires {#additional-information}
 
