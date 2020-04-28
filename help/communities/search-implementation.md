@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -25,11 +25,11 @@ Pour les communautés, les deux éléments généralement recherchés sont les s
 
 * Contenu publié par des membres de la communauté
 
-   * Utilise l’API de recherche UGC des communautés AEM
+   * Utilise l’API de recherche UGC des communautés AEM.
 
 * Utilisateurs et groupes d’utilisateurs (données utilisateur)
 
-   * Utilise les fonctionnalités de recherche de plate-forme AEM
+   * Utilise les fonctionnalités de recherche de la plate-forme AEM.
 
 Cette section de la documentation présente un intérêt pour les développeurs qui créent des composants personnalisés qui créent ou gèrent des composants UGC.
 
@@ -43,11 +43,11 @@ Voir [SRP et UGC Essentials](srp-and-ugc.md) pour en savoir plus sur les méthod
 
 ## API de recherche UGC {#ugc-search-api}
 
-Le magasin [commun](working-with-srp.md) UGC est fourni par l&#39;un des nombreux fournisseurs de ressources de stockage (SRP), chacun pouvant avoir une langue de requête native différente. Par conséquent, quel que soit le SRP choisi, le code personnalisé doit utiliser les méthodes du package [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) UGC (*com.adobe.cq.social.ugc.api*) qui appellera le langage de requête approprié pour le SRP choisi.
+Le magasin [commun](working-with-srp.md) UGC est fourni par l&#39;un des nombreux fournisseurs de ressources  (SRP), chacun pouvant avoir une langue de native différente. Par conséquent, quel que soit le SRP choisi, le code personnalisé doit utiliser les méthodes du package [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) UGC (*com.adobe.cq.social.ugc.api*) qui appellera le langage  approprié pour le SRP choisi.
 
 ### Recherches ASRP {#asrp-searches}
 
-Pour [ASRP](asrp.md), l’UGC est stocké dans le cloud Adobe. Bien que l’UGC ne soit pas visible dans CRX, la [modération](moderate-ugc.md) est disponible dans les environnements d’auteur et de publication. L’utilisation de l’API [de recherche](#ugc-search-api) UGC fonctionne pour ASRP comme pour d’autres applications de recherche en ligne.
+Pour [ASRP](asrp.md), l’UGC est stocké dans le cloud Adobe. Bien que l’UGC ne soit pas visible dans CRX, la [modération](moderate-ugc.md) est disponible à la fois auprès de l’auteur et de l’ de publication . L’utilisation de l’API [de recherche](#ugc-search-api) UGC fonctionne pour ASRP comme pour d’autres applications de recherche de type SRP.
 
 Il n’existe actuellement aucun outil pour gérer les recherches ASRP.
 
@@ -55,14 +55,14 @@ Lors de la création de propriétés personnalisées pouvant faire l’objet de 
 
 ### Recherches MSRP {#msrp-searches}
 
-Pour [MSRP](msrp.md), l’UGC est stocké dans MongoDB configuré pour utiliser Solr pour la recherche. L’UGC ne sera pas visible dans CRX, mais la [modération](moderate-ugc.md) est disponible dans les environnements d’auteur et de publication.
+Pour [MSRP](msrp.md), l’UGC est stocké dans MongoDB configuré pour utiliser Solr pour la recherche. L’UGC ne sera pas visible dans CRX, mais la [modération](moderate-ugc.md) est disponible à la fois auprès de l’auteur et de la publication  .
 
 Concernant MSRP et Solr :
 
-* Le Solr incorporé pour la plateforme AEM n’est pas utilisé pour MSRP.
+* Le Solr incorporé pour la plate-forme AEM n’est pas utilisé pour MSRP.
 * Si vous utilisez un Solr distant pour la plate-forme AEM, il peut être partagé avec MSRP, mais vous devez utiliser des collections différentes.
-* Solr peut être configuré pour la recherche standard ou pour la recherche multilingue (MLS)
-* Pour plus d’informations sur la configuration, voir Configuration [](msrp.md#solr-configuration) Solr pour MSRP
+* Solr peut être configuré pour la recherche standard ou pour la recherche multilingue (MLS).
+* Pour plus d’informations sur la configuration, voir Configuration [](msrp.md#solr-configuration) Solr pour MSRP.
 
 Les fonctions de recherche personnalisée doivent utiliser l’API [de recherche](#ugc-search-api)UGC.
 
@@ -72,9 +72,9 @@ Lors de la création de propriétés personnalisées pouvant faire l’objet de 
 
 Pour [JSRP](jsrp.md), l’UGC est stocké dans [Oak](../../help/sites-deploying/platform.md) et n’est visible que dans le référentiel de l’instance d’auteur ou de publication AEM sur laquelle il a été saisi.
 
-Etant donné que l’UGC est généralement entré dans l’environnement de publication, pour les systèmes de production à plusieurs éditeurs, il est nécessaire de configurer une grappe [de](topologies.md)publication, et non une batterie de publication, afin que le contenu saisi soit visible de tous les éditeurs.
+Etant donné que l’UGC est généralement saisi dans le  de publication , pour les systèmes de production à plusieurs éditeurs, il est nécessaire de configurer une grappe [de](topologies.md)publication, et non une batterie de publication, afin que le contenu saisi soit visible par tous les éditeurs.
 
-Pour JSRP, les fichiers UGC entrés dans l’environnement de publication ne seront jamais visibles dans l’environnement de création. Ainsi, toutes les tâches de [modération](moderate-ugc.md) ont lieu dans l’environnement de publication.
+Pour JSRP, l’UGC saisi dans le  de publication  ne sera jamais visible dans le  de de l’auteur. Ainsi, tous les  de [modération](moderate-ugc.md) ont lieu dans le  de publication.
 
 Les fonctions de recherche personnalisée doivent utiliser l’API [de recherche](#ugc-search-api)UGC.
 
@@ -84,14 +84,14 @@ Bien que les indices Oak ne soient pas automatiquement créés pour la recherche
 
 Si les propriétés personnalisées sont utilisées et que les recherches sont lentes, des indices supplémentaires doivent être créés pour que les propriétés personnalisées soient plus performantes. Pour préserver la portabilité, respectez les exigences [d’](#naming-of-custom-properties) appellation lors de la création de propriétés personnalisées pouvant faire l’objet de recherches.
 
-Pour modifier des indices existants ou créer des indices personnalisés, reportez-vous aux sections Requêtes [Oak et Indexation](../../help/sites-deploying/queries-and-indexing.md).
+Pour modifier des indices existants ou créer des indices personnalisés, reportez-vous à la section  [Oak et indexation](../../help/sites-deploying/queries-and-indexing.md).
 
 Le gestionnaire [d’index](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) Oak est disponible à partir d’AEM Commons ACS. Il fournit :
 
-* Vue des indices existants
-* Possibilité de lancer la réindexation
+*  d’indices existants.
+* Possibilité de lancer la réindexation.
 
-Pour afficher les indices Oak existants dans [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), l’emplacement est :
+Pour  les indices Oak existants dans [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), l’emplacement est le suivant :
 
 * `/oak:index/socialLucene`
 
@@ -135,14 +135,14 @@ Vous trouverez ci-dessous quelques-unes des propriétés pouvant faire l’objet
 
 ### Attribution d’un nom aux propriétés personnalisées {#naming-of-custom-properties}
 
-Lors de l’ajout de propriétés personnalisées, afin que ces propriétés soient visibles pour les tris et les recherches créés avec l’API [de recherche](#ugc-search-api)UGC, il est *requis *pour ajouter un suffixe au nom de propriété.
+Lors de l’ajout de propriétés personnalisées, pour que ces propriétés soient visibles pour les tris et les recherches créés avec l’API [de recherche](#ugc-search-api)UGC, il est *nécessaire* d’ajouter un suffixe au nom de la propriété.
 
-Le suffixe est destiné aux langages de requête qui utilisent un schéma :
+Le suffixe est destiné aux langues  qui utilisent un  :
 
-* Elle identifie la propriété comme pouvant faire l’objet de recherches.
-* Il identifie le type de données
+* Il identifie la propriété comme pouvant faire l’objet de recherches.
+* Il identifie le type de données.
 
-Solr est un exemple de langage de requête qui utilise un schéma.
+Solr est un exemple de langage  qui utilise un .
 
 | **Suffixe** | **Type de données** |
 |---|---|
@@ -153,14 +153,14 @@ Solr est un exemple de langage de requête qui utilise un schéma.
 | _s | *Chaîne* |
 | _t | *Texte* |
 
-**Remarque:**
+**Notes:**
 
 * *Le texte* est une chaîne à jetons, contrairement à *la chaîne* . Utilisez *Texte* pour les recherches floues (plus comme celle-ci).
 
 * Pour les types à plusieurs valeurs, ajoutez &quot;s&quot; au suffixe, par exemple :
 
    * `viewDate_dt`: date unique, propriété
-   * `viewDates_dts`: list of dates, propriété
+   * `viewDates_dts`:  de date, propriété
 
 ## Filtres {#filters}
 
@@ -191,7 +191,7 @@ Les opérateurs de filtre sont :
 
 Il est important que l’URL fasse référence au composant Communautés (ressource) et non à la page sur laquelle le composant est placé :
 
-* Correct : composant forum
+* Correct : composant de forum
    * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * Incorrect : page du forum
    * `/content/community-components/en/forum.social.json`
@@ -214,23 +214,23 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 ## Résolution des incidents {#troubleshooting}
 
-### Requête Solr {#solr-query}
+###  Solr {#solr-query}
 
-Pour résoudre les problèmes liés à une requête Solr, activez la journalisation DEBUG pour
+Pour résoudre les problèmes liés à un  Solr, activez la journalisation DEBUG pour
 
 `com.adobe.cq.social.srp.impl.SocialSolrConnector`.
 
-La requête Solr réelle s’affichera sous forme d’URL codée dans le journal de débogage :
+Le  Solr réel s’affichera sous forme d’URL codée dans le journal de débogage :
 
-La requête à résoudre est : `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
+ solr est : `sort=timestamp+desc&bl=en&pl=en&start=0&rows=10 &q=%2Btitle_t:(hello)+%2Bprovider_id:\/content/usergenerated/asi/mongo/content/+%2Bresource_type_s:&df=provider_id&trf=verbatim&fq={!cost%3D100}report_suite:mongo`
 
-La valeur du `q` paramètre est la requête. Une fois le codage de l’URL décodé, la requête peut être transmise à l’outil Requête d’administration solaire pour un débogage plus poussé.
+La valeur du `q` paramètre est le . Une fois l’encodage de l’URL décodé, le  de peut être transmis à l’outil de d’administration Solr pour un débogage plus poussé.
 
 ## Ressources connexes {#related-resources}
 
-* [Stockage](working-with-srp.md) du contenu de la communauté - Discute des choix SRP disponibles pour un magasin commun UGC
-* [Présentation](srp.md) du fournisseur de ressources de stockage - Présentation de l&#39;utilisation du référentiel
-* [Accès UGC avec SRP](accessing-ugc-with-srp.md) - Instructions de codage
-* [Réfactorisation](socialutils.md) de SocialUtils - Méthodes d’utilitaire pour SRP qui remplacent SocialUtils
-* [Composants](search.md) de résultats de recherche et de recherche - Ajout d’une fonction de recherche UGC à un modèle
+* [de contenu de la communauté](working-with-srp.md) - Parle des choix SRP disponibles pour un magasin commun UGC.
+* [Aperçu](srp.md) du fournisseur de ressources  - Présentation et aperçu de l’utilisation du référentiel.
+* [Accès UGC avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [SocialUtils Refactoring](socialutils.md) - Méthodes d’utilitaire pour SRP qui remplacent SocialUtils.
+* [Composants](search.md) de résultats de recherche et de recherche - Ajout d’une fonction de recherche UGC à un modèle.
 
