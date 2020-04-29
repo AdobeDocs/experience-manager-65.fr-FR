@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
 
 ---
 
@@ -23,16 +23,15 @@ Le balisage des ressources d’activation permet de filtrer les ressources et le
 
 Essentiellement :
 
-* [Création d’un espace de noms](../../help/sites-administering/tags.md#creating-a-namespace) de balise pour chaque catalogue
+* [Création d’une balise](../../help/sites-administering/tags.md#creating-a-namespace) pour chaque catalogue
 
    * [Définition des autorisations de balise](../../help/sites-administering/tags.md#setting-tag-permissions)
+   * Pour les membres de la communauté uniquement (communauté fermée)
 
-      * Pour les membres de la communauté uniquement (communauté fermée)
+      * Autoriser l’accès en lecture pour le groupe de membres du site [communautaire](users.md#publish-group-roles)
+   * Pour tout de site, qu’il soit connecté ou anonyme (communauté ouverte)
 
-         * Autoriser l’accès en lecture pour le groupe de membres du site [communautaire](users.md#publish-group-roles)
-      * Pour tout visiteur du site, qu’il soit connecté ou anonyme (communauté ouverte)
-
-         * Autoriser l&#39;accès en lecture pour le `Everyone`groupe
+      * Autoriser l&#39;accès en lecture pour le `Everyone` groupe
    * [Publication des balises](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -41,8 +40,8 @@ Essentiellement :
 
    * [Configuration des catalogues existants dans la structure du site](functions.md#catalog-function)
 
-      * Peut ajouter des balises à l’instance de catalogue pour contrôler la liste des balises présentées dans les filtres d’interface utilisateur
-      * Possibilité d’ajouter des [pré-filtres](catalog-developer-essentials.md#pre-filters)pour limiter les ressources incluses d’un catalogue
+      * Il est possible d’ajouter des balises à l’instance de catalogue afin de contrôler le de balises présentées dans le d’interface utilisateur.
+      * Peut ajouter des [pré-](catalog-developer-essentials.md#pre-filters), pour limiter les ressources incluses d’un catalogue.
 
 * [Publication du site de la communauté](sites-console.md#publishing-the-site)
 * [Appliquer des balises aux ressources](resources.md#create-a-resource) d’activation afin qu’elles puissent être filtrées de manière catégorique
@@ -50,7 +49,7 @@ Essentiellement :
 
 ## Balises de site de la communauté {#community-site-tags}
 
-Lors de la création ou de la modification d’un site communautaire, le paramètre [](sites-console.md#tagging) Balisage définit l’étendue des balises disponibles pour les fonctionnalités du site en sélectionnant un sous-ensemble d’espaces de noms de balises existants.
+Lors de la création ou de la modification d’un site de la communauté, le paramètre [](sites-console.md#tagging) Balisage définit l’étendue des balises disponibles pour les fonctionnalités du site en sélectionnant un sous-ensemble de balises existantes  .
 
 Bien que des balises puissent être créées et ajoutées au site de la communauté à tout moment, il est recommandé de concevoir une taxonomie au préalable, comme pour concevoir une base de données. Voir [Utilisation des balises](../../help/sites-authoring/tags.md).
 
@@ -62,11 +61,11 @@ Voici comment il s’affiche dans CRXDE lorsqu’un administrateur applique des 
 
 ![chlimage_1-420](assets/chlimage_1-420.png)
 
-## Espaces de noms de balise de catalogue {#catalog-tag-namespaces}
+## Balise de catalogue  {#catalog-tag-namespaces}
 
-La fonction de catalogue utilise des balises pour se définir. Lors de la configuration de la fonction de catalogue dans un site de la communauté, l’ensemble d’espaces de noms de balise à choisir est défini par l’étendue des espaces de noms de balise définis pour le site de la communauté.
+La fonction de catalogue utilise des balises pour se définir. Lors de la configuration de la fonction de catalogue dans un site de la communauté, l’ensemble de balises  d’ à choisir est défini par l’étendue des espaces de noms de balises définis pour le site de la communauté.
 
-La fonction Catalogue comprend un paramètre de balise qui définit les balises répertoriées dans l’interface utilisateur de filtre du catalogue. Le paramètre &quot;Tous les espaces de noms&quot; fait référence à la portée des espaces de noms de balises sélectionnés pour le site de la communauté.
+La fonction Catalogue comprend un paramètre de balise qui définit les balises répertoriées dans l’interface utilisateur de filtre du catalogue. Le paramètre &quot;Tous  &quot; fait référence à la portée de la balise  sélectionnée pour le site communautaire.
 
 ![chlimage_1-421](assets/chlimage_1-421.png)
 
@@ -74,17 +73,16 @@ La fonction Catalogue comprend un paramètre de balise qui définit les balises 
 
 Les ressources d’activation et les chemins d’apprentissage s’affichent dans tous les catalogues une fois `Show in Catalog` cochés. L’ajout de balises aux ressources et aux chemins d’apprentissage permet le préfiltrage dans des catalogues spécifiques, ainsi que le filtrage dans l’interface utilisateur du catalogue.
 
-La limitation des ressources d’activation et des chemins d’apprentissage à des catalogues spécifiques est réalisée en créant des [pré-filtres](catalog-developer-essentials.md#pre-filters).
+La limitation des ressources d’activation et des chemins d’apprentissage à des catalogues spécifiques est réalisée en créant des [pré-](catalog-developer-essentials.md#pre-filters).
 
-L’interface utilisateur du catalogue permet aux visiteurs d’appliquer un filtre de balises à la liste des ressources et des chemins d’apprentissage qui apparaissent dans ce catalogue.
+L’interface utilisateur du catalogue permet aux d’appliquer un filtre de balises au de ressources et de chemins d’apprentissage qui apparaissent dans ce catalogue.
 
-L’administrateur appliquant les balises aux ressources d’activation doit connaître les espaces de noms de balise associés aux catalogues, ainsi que la taxonomie afin de sélectionner une sous-balise pour une catégorisation plus précise.
+L’administrateur appliquant les balises aux ressources d’activation doit connaître la balise   associée aux catalogues, ainsi que la taxonomie afin de sélectionner une sous-balise pour une catégorisation plus précise.
 
-Par exemple, si un espace de noms `ski-catalog` a été créé et défini sur un catalogue nommé `Ski Catalog`, il peut avoir deux balises enfants : `lesson-1` et `lesson-2`.
+Si, par exemple, un `ski-catalog` a été créé et défini sur un catalogue nommé `Ski Catalog`, il peut avoir deux balises enfants : `lesson-1` et `lesson-2`.
 
-Ainsi, toute ressource d’activation balisée avec l’une des balises suivantes :
+Ainsi, toute ressource d’activation balisée avec l’une des
 
-* ski-catalog :
 * catalogue-ski:leçon-1
 * catalogue-ski:leçon-2
 
@@ -94,13 +92,13 @@ s’affiche dans `Ski Catalog` une fois la ressource d’activation publiée.
 
 ## Affichage du catalogue lors de la publication {#viewing-catalog-on-publish}
 
-Une fois que tout a été configuré à partir de l’environnement d’auteur et publié, l’expérience d’utilisation du catalogue pour rechercher des ressources d’activation peut être expérimentée dans l’environnement de publication.
+Une fois que tout a été configuré par l’auteur  le  et publié, l’expérience d’utilisation du catalogue pour trouver des ressources d’activation peut être expérimentée dans le de publication .
 
-Si aucun espace de noms de balise n’apparaît dans la liste déroulante, assurez-vous que les autorisations ont été correctement définies dans l’environnement de publication.
+Si aucune balise   n’apparaît dans la liste déroulante, assurez-vous que les autorisations ont été correctement définies dans le de publication .
 
-Si des espaces de noms de balises ont été ajoutés et sont manquants, vérifiez que les balises et le site ont été republiés.
+Si des balises   ont été ajoutées et sont manquantes, vérifiez que les balises et le site ont été republiés.
 
-Si aucune ressource d’activation n’apparaît après avoir sélectionné une balise lors de l’affichage du catalogue, assurez-vous qu’une balise de l’espace de noms du catalogue est appliquée à la ressource d’activation.
+Si aucune ressource d’activation ne s’affiche après avoir sélectionné une balise lors de l’affichage du catalogue, assurez-vous qu’une balise issue des  du catalogue est appliquée à la ressource d’activation.
 
 ![chlimage_1-423](assets/chlimage_1-423.png)
 
