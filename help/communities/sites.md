@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -21,11 +21,12 @@ La console Modèles de site est très similaire à la console Modèles [de](tool
 
 >[!NOTE]
 >
->Les consoles pour la création de sites [](sites-console.md)communautaires, de modèles [de sites](sites.md)communautaires, de modèles [de groupes de](tools-groups.md) communautés et de fonctions de [communauté ne sont utilisées que dans l’environnement de création.](functions.md)
+>Les consoles pour la création de sites [](sites-console.md)communautaires, de modèles [de sites](sites.md)communautaires, de modèles [de groupes](tools-groups.md) communautaires et de fonctions de [communauté ne sont utilisées que dans le  de l&#39;auteur.](functions.md)
+
 
 ## Console Modèles de site {#site-templates-console}
 
-Dans l’environnement de création, pour accéder à la console des sites de la communauté
+Dans l&#39;auteur  , pour accéder à la console des sites de la communauté :
 
 * A partir de la navigation globale : **[!UICONTROL Outils > Communautés > Modèles de site]**
 
@@ -45,13 +46,19 @@ Le panneau Editeur de site qui contient 3 sous-panneaux s’affiche alors :
 
 Dans le panneau Informations de base, un nom, une description et si le modèle est activé ou désactivé sont configurés :
 
-* **[!UICONTROL Nom]** du modèle de site de la communauté ID du nom du modèle
+* **[!UICONTROL Nom du modèle de site de la communauté]**
 
-* **[!UICONTROL Description]** du modèle de site de la communauté Description du modèle
+   ID du nom du modèle.
 
-* **[!UICONTROL Désactivé/Activé]** Un commutateur à bascule contrôlant si le modèle est référent
+* **[!UICONTROL Description du modèle de site de communauté]**
 
-### Miniature {#thumbnail}
+   Description du modèle.
+
+* **[!UICONTROL Désactivé/Activé]**
+
+   Bascule contrôlant si le modèle peut être référencé.
+
+### Miniature   {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -63,7 +70,7 @@ Dans le panneau Informations de base, un nom, une description et si le modèle e
 
 Pour ajouter des fonctions de communauté, faites glisser le curseur de droite vers la gauche dans l&#39;ordre d&#39;affichage des liens du menu du site. Les styles seront appliqués au modèle lors de la création du site.
 
-Par exemple, si vous souhaitez une page d’accueil, faites glisser la fonction Page de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration de la page s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la console [des fonctions](functions.md) .
+Par exemple, si vous souhaitez un , faites glisser la fonction Page de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration de la page s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la console [des fonctions](functions.md) .
 
 Continuez à faire glisser et à déposer toutes les autres fonctions de la communauté souhaitées pour un site communautaire en fonction de ce modèle.
 
@@ -75,15 +82,17 @@ La fonction de page fournit une page vide. La fonction de groupes permet de cré
 >
 >Toute autre fonction, telle que la fonction [de](functions.md#page-function)page, doit être incluse et répertoriée en premier.
 
+
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 ### Modèles de groupe pour la fonction Groupes {#group-templates-for-groups-function}
 
-Lors de l’inclusion d’une fonction de groupes dans le modèle de site, la configuration requiert la spécification des choix de modèles de groupe autorisés lorsqu’un nouveau groupe est créé dans l’environnement de publication.
+Lors de l’inclusion d’une fonction de groupes dans le modèle de site, la configuration requiert la spécification des choix de modèle de groupe autorisés lorsqu’un nouveau groupe est créé dans le  de publication .
 
 >[!CAUTION]
 >
 >La fonction Groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
+
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
