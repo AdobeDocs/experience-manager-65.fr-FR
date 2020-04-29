@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -19,15 +19,15 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Présentation {#introduction}
 
-The ability for a community member to follow [activities](activities.md) as well as be followed is established through two components: `Follow`and `Following`.
+The ability for a community member to follow [activities](activities.md) as well as be followed is established through two components: `Follow` and `Following`.
 
-The `Follow`component must be associated with another resource, and this association is already established for community members and features.
+The `Follow` component must be associated with another resource, and this association is already established for community members and features.
 
-The `Following`component simply lists the members that are either following the current member or are being followed by the current member. Ce graphique social des relations entre les membres est inclus dans le profil d’utilisateur établi pour un [site de communauté](overview.md#communitiessites).
+The `Following` component simply lists the members that are either following the current member or are being followed by the current member. Ce graphique social des relations entre les membres est inclus dans le profil d’utilisateur établi pour un [site de communauté](overview.md#communitiessites).
 
 ## Ajout d’un composant Abonnement à une page {#adding-following-to-a-page}
 
-Si vous souhaitez ajouter un `Following`composant à une page en mode création, localisez le composant `Communities / Following` et faites-le glisser sur une page sur laquelle le graphique social doit apparaître.
+Si vous souhaitez ajouter un `Following` composant à une page en mode création, localisez le composant `Communities / Following` et faites-le glisser sur une page sur laquelle le graphique social doit apparaître.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
@@ -37,7 +37,7 @@ When the [required client-side libraries](essentials-socialgraph.md#essentials-f
 
 ## Configuration du composant Abonnement {#configuring-following}
 
-Currently, it is necessary to set the property to determine whether the component displays the `follows`relationship, or the `following`relationship.
+Currently, it is necessary to set the property to determine whether the component displays the `follows` relationship, or the `following` relationship.
 
 ## Informations supplémentaires {#additional-information}
 
