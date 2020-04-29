@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Package SocialUtils obsolète {#socialutils-package-deprecated}
 
-Le package **com.adobe.cq.social.ugcbase.SocialUtils** est devenu obsolète dans AEM 6.1.
+Le package `com.adobe.cq.social.ugcbase.SocialUtils` a été abandonné dans AEM 6.1.
 
-Les tableaux suivants répertorient les méthodes à utiliser à la place des méthodes SocialUtils.
+Les tableaux suivants  les méthodes à utiliser à la place des méthodes SocialUtils.
 
 ## Package SocialResourceUtilities {#socialresourceutilities-package}
 
@@ -34,7 +34,7 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 | Ressource getUGCResource(Ressource utilisateurRessource, ResourceResolverFactory rf) | new |
 | Ressource getUGCResource(Ressource utilisateurResource, ResourceResolverFactory rf, String resourceTypeHint) | new |
 | Ressource getUGCResource(Ressource utilisateurRessource, String resourceTypeHint) |  |
-| booléen hasModeratePermissions(ressource ressource ressource) |  |
+| booléen hasModératePermissions(ressource ressource ressource) |  |
 | Ressource de chaîneToACLPath(ressource de ressource) |  |
 | Ressource de chaîneToUGCStoragePath(ressource de ressource) | remplace String resourceToUGCPath(Resource resource) |
 | String UGCToResourcePath(Ressource de ressource) |  |
@@ -54,7 +54,7 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 | String getAvatar(UserProperties userProperties, chaîne absolueDefaultAvatar) |
 | String getAvatar(UserProperties userProperties, chaîne absolueDefaultAvatar, taille SocialUtils.AVATAR_SIZE) |
 | Page getContainerPage(ressource) |
-| String getSocialProfileURL(nom d’utilisateur de chaîne, résolveur ResourceResolver, page) |
+| Chaîne getSocialProfileURL(Nom d’utilisateur de chaîne, Résolveur de ressources, Page) |
 | UserProperties getUserProperties(ResourceResolver resolve, String userId) |
 
 ## For Internal Use Only {#for-internal-use-only}
@@ -63,10 +63,10 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 |---|
 | String createUniqueNameHint(message de chaîne) |
 | String createUniqueNameHint(message de chaîne, int numRandomChars) |
-| String generateRandomString(longueur int) |
+| Chaîne generateRandomString(longueur int) |
 | SocialResourceConfiguration getDefaultStorageConfig() |
 | Page getPage(chemin de chaîne, résolveur ResourceResolver) |
-| String getPagePath(ressource de ressource) |
+| String getPagePath(Ressource de ressource) |
 | String getPagePath(String path) |
 | String getResourceTypeForIncludedResource(composant Resource, chaîne defaultResourceType, chaîne designPropertyName) |
 | String getResourceTypeFromDesign(Ressource de ressource, propriété de style de chaîne, valeur de valeur par défaut de chaîne) |
@@ -81,8 +81,8 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 | Node createNode(ResourceResolver resolve, String path, String nodeType) |
 |---|
 | Ressource getResourceAtPath(résolveur ResourceResolver, chemin d’accès de chaîne) |
-| Ressource getResourceAtPath(résolveur ResourceResolver, chemin de chaîne, type de ressource String) |
-| Configuration getStorageCloudServiceConfig(ressource ressource) |
+| Ressource getResourceAtPath(résolveur ResourceResolver, chemin de chaîne, type de ressource de chaîne) |
+| Configuration getStorageCloudServiceConfig(ressource de ressource) |
 | TranslationManager getTranslationManager() |
 | TranslationSaveQueue getTranslationSaveQueue() |
 | booléen mayAccessUGC(résolveur ResourceResolver) |
