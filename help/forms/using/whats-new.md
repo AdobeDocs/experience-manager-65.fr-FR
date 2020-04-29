@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: a417094c1d7b28ec54a6e84303d7a9747bb0c510
 
 ---
 
@@ -58,7 +58,7 @@ Les auteurs de communications interactives peuvent désormais utiliser diverses 
 * [Ajouter variables dans un fragment  à l’aide du symbole @](../../forms/using/texts-interactive-communications.md#searchvariables)
 * [Ajouter des éléments de modèle de données dans un fragment  de à l’aide du symbole @](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
 * [Suppression ou ajout d’un  Web à une communication interactive existante](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
-* [Liaison d’éléments de source de données à des champs et des variables à l’aide d’actions glisser-déposer](../../forms/using/create-interactive-communication.md#binddatasourceelements)
+* [Liaison d’éléments de source de données avec des champs et des variables à l’aide d’actions glisser-déposer](../../forms/using/create-interactive-communication.md#binddatasourceelements)
 * [Mettre en surbrillance les champs et variables non liés lors de la création d’Interactive Communication](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
 * [Exécutez d’autres actions, telles que la copie, le groupe ou plus, sur les composants hérités dans un Web](../../forms/using/create-interactive-communication.md#componenttoolbar)
 
@@ -148,7 +148,8 @@ AEM Forms peut être installé à l’aide de n’importe quelle combinaison de
    <td>Serveurs d’applications<br /> </td>
    <td>
     <ul>
-     <li>Oracle Weblogic</li>
+    <li>WebSphere Liberty </li>
+    <li>Oracle WebLogic </li>
     </ul> </td>
   </tr>
   <tr>
