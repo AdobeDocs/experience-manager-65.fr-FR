@@ -1,6 +1,6 @@
 ---
-title: Abonnements aux communautés
-seo-title: Abonnements aux communautés
+title: 'Communautés '
+seo-title: 'Communautés '
 description: Les membres de la communauté interagissent avec d’autres membres par courrier électronique
 seo-description: Les membres de la communauté interagissent avec d’autres membres par courrier électronique
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
@@ -10,54 +10,50 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
 
-# Abonnements aux communautés {#communities-subscriptions}
+# Communautés {#communities-subscriptions}
 
 ## Présentation {#overview}
 
-À compter du [FP1](deploy-communities.md#latestfeaturepack)Collectivités, les membres de la communauté peuvent interagir avec la communauté par courriel à l’aide d’une fonction appelée abonnements.
+Depuis le [FP1](deploy-communities.md#latestfeaturepack)des communautés, les membres de la communauté peuvent interagir avec la communauté par courriel à l’aide d’une fonction appelée  .
 
-Les abonnements sont similaires aux [notifications](notifications.md) , car les membres peuvent s’abonner lorsqu’ils suivent des articles de blog, des sujets de forum ou des questions sur la qualité de l’expérience.
+  sont similaires aux [notifications](notifications.md) , car les membres peuvent s&#39;abonner à des articles de blog, des sujets de forum ou des questions sur la qualité de vie.
 
-Ce qui distingue les abonnements des notifications est :
+Ce qui distingue   des notifications est :
 
-* Les membres ne peuvent pas s&#39;abonner en suivant les autres membres
-* La seule action que les membres doivent effectuer est de sélectionner `Email Subscriptions` lors de la
+* Les membres ne peuvent s&#39;abonner lorsqu&#39;ils suivent les autres membres.
+* La seule action que les membres doivent effectuer est de sélectionner `Email Subscriptions` quand ils suivent.
 * Lorsque la réponse par courrier électronique est configurée, les membres peuvent effectivement publier du contenu en répondant simplement au courrier électronique reçu.
 
 ### Conditions requises {#requirements}
 
 **Configurer le courrier électronique**
 
-Le courrier électronique doit être configuré pour que les abonnements soient fonctionnels et que les membres puissent répondre par courrier électronique.
+Le courrier électronique doit être configuré pour que   être fonctionnel et que les membres puissent répondre par courrier électronique.
 
 Pour plus d’informations sur la configuration du courrier électronique, voir [Configuration du courrier électronique](email.md).
 
-**Activer les abonnements et suivre**
+**Activer   et suivre**
 
-Les composants doivent être configurés pour activer les abonnements *et les* suivants. Les fonctionnalités qui autorisent les abonnements sont [blog](blog-feature.md), [forum](forum.md) et [QnA](working-with-qna.md).
+Les composants doivent être configurés afin d’activer   *et les* éléments suivants. Les fonctionnalités qui permettent   sont [blog](blog-feature.md), [forum](forum.md) et [QnA](working-with-qna.md).
 
-## Abonnements de la section suivante {#subscriptions-from-following}
+##  de  de suivi {#subscriptions-from-following}
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
-Le bouton **Suivre** permet de suivre les entrées sous forme d’activités, d’abonnements et/ou de notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection.
+Le bouton **Suivre** permet de suivre les entrées sous forme de  , de  et/ou de notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection.
 
 Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivant**. Pour des raisons pratiques, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
 
-Le bouton **Suivre** n’inclut l’ `Email Subscriptions` option que lorsqu’un forum, une évaluation quantitative ou un blog est configuré pour activer les abonnements au courrier électronique. Ce bouton apparaît.
+Le bouton **Suivre** inclut l’ `Email Subscriptions` option uniquement lorsqu’un forum, une évaluation qualité de service ou un blog est configuré pour activer l’ de  par courrier électronique. Ce bouton apparaît :
 
-* Sur la page principale de la fonctionnalité du forum activé, de la bibliothèque d’évaluation ou du blog
+* Sur la page principale des fonctionnalités du forum activé, QnA ou blog enverra un courrier électronique à tous les   sous cette fonctionnalité.
 
-   * Envoie un courrier électronique pour toute activité sous cette fonctionnalité
-
-* Pour une entrée spécifique, telle qu’un sujet de forum, une question sur la qualité de l’expérience ou un article de blog
-
-   * Envoie un courrier électronique lorsqu&#39;il y a une activité pour cette entrée spécifique
+* Pour une entrée spécifique, telle qu’un sujet de forum, une question sur la qualité de l’expérience ou un article de blog, enverra un courriel lorsqu’il y a   pour cette entrée spécifique.
 
 ## Réponse par courriel {#reply-by-email}
 
