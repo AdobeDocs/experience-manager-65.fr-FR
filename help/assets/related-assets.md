@@ -1,29 +1,29 @@
 ---
-title: Ressources connexes
-description: Découvrez comment mettre en relation des ressources qui partagent des attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources.
+title: Ressources liées
+description: Découvrez comment associer des ressources numériques qui partagent des attributs communs. Créez également des relations source-source entre les ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Related assets {#related-assets}
+# Ressources liées{#related-assets}
 
-Les ressources d’Adobe Experience Manager (AEM) vous permettent de lier manuellement des ressources en fonction des besoins de votre entreprise à l’aide de la fonctionnalité des ressources connexes. Par exemple, vous pouvez mettre en relation un fichier de licence avec une ressource ou une image/vidéo portant sur un sujet similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources. Par exemple, si un fichier PDF est généré à partir d’un fichier INDD, vous pouvez mettre en relation le fichier PDF avec son fichier INDD source.
+[!DNL Adobe Experience Manager Assets] vous permet de lier manuellement des ressources en fonction des besoins de votre entreprise à l’aide de la fonction d’éléments connexes. Par exemple, vous pouvez mettre en relation un fichier de licence avec une ressource ou une image/vidéo portant sur un sujet similaire. Vous pouvez mettre en relation des ressources qui partagent certains attributs communs. Vous pouvez également utiliser cette fonctionnalité pour créer des relations source/dérivés entre des ressources. Par exemple, si un fichier PDF est généré à partir d’un fichier INDD, vous pouvez mettre en relation le fichier PDF avec son fichier INDD source.
 
 Grâce à cette fonctionnalité, vous pouvez partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et rendre le fichier INDD haute résolution disponible uniquement sur demande.
 
 >[!NOTE] Seuls les utilisateurs disposant d’autorisations de modification sur les ressources peuvent établir une relation et annuler la relation entre les ressources.
 >
 
-## Relate assets {#relating-assets}
+## Lier les ressources {#relating-assets}
 
-1. From the AEM interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. From the Experience Manager interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
    ![ouvrir la page Propriétés d’un fichier pour associer le fichier](assets/asset-properties-relate-assets.png)
 
-   *Figure : Page des propriétés des ressources pour associer des ressources*
+   *Figure :[!DNL Assets]Page[!UICONTROL Propriétés]pour associer des ressources.*
 
    Vous pouvez également sélectionner la ressource en mode Liste.
 
@@ -40,7 +40,7 @@ Grâce à cette fonctionnalité, vous pouvez partager un fichier PDF ou JPG bass
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour mettre en relation le fichier source avec la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
-   * To relate a derived file, select **[!UICONTROL Derived]** from the list.
+   * Pour mettre en relation un fichier dérivé avec la ressource, sélectionnez **[!UICONTROL Dérivés]** dans la liste.
    * Pour créer une relation réciproque entre les ressources, sélectionnez **[!UICONTROL Autres]** dans la liste.
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
@@ -49,7 +49,7 @@ Grâce à cette fonctionnalité, vous pouvez partager un fichier PDF ou JPG bass
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Cliquez/appuyez sur l’icône **[!UICONTROL Confirmer]**.
-1. Click/tap **[!UICONTROL OK]** to close the dialog. En fonction de la relation que vous avez choisie à l’étape 3, la ressource associée apparaît sous une catégorie appropriée dans la section **[!UICONTROL En relation]**. Par exemple, si la ressource que vous avez mise en relation est le fichier source de la ressource actuelle, elle apparaît sous **[!UICONTROL Source]**.
+1. Cliquez/appuyez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. En fonction de la relation que vous avez choisie à l’étape 3, la ressource associée apparaît sous une catégorie appropriée dans la section **[!UICONTROL En relation]**. Par exemple, si la ressource que vous avez mise en relation est le fichier source de la ressource actuelle, elle apparaît sous **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -65,15 +65,15 @@ Grâce à cette fonctionnalité, vous pouvez partager un fichier PDF ou JPG bass
 
 ## Traduction de ressources associées {#translating-related-assets}
 
-La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les processus de traduction. Lorsque vous exécutez un processus de traduction sur une ressource dérivée, AEM Assets récupère automatiquement toute ressource référencée par le fichier source et la soumet pour traduction. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
+La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les processus de traduction. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Si le fichier source est lié à un autre fichier, Experience Manager Assets récupère le fichier référencé et l’inclut pour traduction.
+If the source file is related to another asset, [!DNL Experience Manager Assets] fetches the referenced asset and includes it for translation.
 
 ![la page Propriétés du fichier affiche le fichier source du fichier associé à inclure pour la traduction.](assets/asset-properties-source-asset.png)
 
-*Figure : Fichier source des ressources connexes à inclure pour la traduction*
+*Figure : Fichier source des ressources connexes à inclure pour la traduction.*
 
 1. Traduisez les ressources du dossier source dans une langue cible en suivant les étapes de la section [Créer un projet de traduction](translation-projects.md#create-a-new-translation-project). Par exemple, dans ce cas, traduisez vos ressources en français.
 
@@ -97,6 +97,6 @@ Si le fichier source est lié à un autre fichier, Experience Manager Assets ré
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Select the asset that is related to the source, and then click/tap **[!UICONTROL Reveal in Assets]**. La ressource associée traduite s’affiche.
+1. Sélectionnez la ressource mise en relation avec la source, puis cliquez/appuyez sur **[!UICONTROL Afficher dans Assets]**. La ressource associée traduite s’affiche.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
