@@ -1,18 +1,18 @@
 ---
-title: Gérez des ressources composées à l’aide de références et de ressources de plusieurs pages dans Adobe Experience Manager.
-description: Découvrez comment créer des références à des ressources numériques dans Adobe InDesign, Adobe Illustrator et Adobe Photoshop. Utilisez la fonctionnalité Visionneuse de pages pour des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
+title: Gérez des ressources composées avec des références et des ressources de plusieurs pages dans [!DNL Adobe Experience Manager].
+description: Découvrez comment créer des références à des ressources numériques à partir de [!DNL Adobe InDesign], [!DNL Adobe Illustrator] et [!DNL Adobe Photoshop]. Utilisez la fonctionnalité Visionneuse de pages pour des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Gestion des ressources composées et multi-pages {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] peut déterminer si un fichier téléchargé contient des références à des ressources qui existent déjà dans le référentiel. Cette fonctionnalité est disponible uniquement pour les types de formats pris en charge. Si la ressource téléchargée contient des références à des ressources Experience Manager, un lien bidirectionnel est créé entre les ressources téléchargées et référencées.
+[!DNL Adobe Experience Manager Assets] peut déterminer si un fichier téléchargé contient des références à des ressources qui existent déjà dans le référentiel. Cette fonctionnalité est disponible uniquement pour les types de formats pris en charge. If the uploaded asset contains any references to [!DNL Experience Manager] assets, a bidirectional link is created between the uploaded and referenced assets.
 
-Outre l’élimination de la redondance, le référencement des ressources dans les applications Adobe Creative Cloud améliore la collaboration et l’efficacité et la productivité des utilisateurs.
+Besides eliminating redundancy, referencing the assets in [!DNL Adobe Creative Cloud] applications enhances collaboration and increases the efficiency and productivity of users.
 
 [!DNL Experience Manager Assets] prend en charge le référencement bidirectionnel. Vous trouverez des ressources référencées dans la page des détails de la ressource du fichier chargé. En outre, vous pouvez  les fichiers de référencement dans la page des détails de la ressource référencée.
 
@@ -25,7 +25,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 1. A l’aide de l’application [de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)Experience Manager, récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichiers de la ressource à référencer.
 1. Drag the asset from the local folder to the [!DNL Illustrator] file.
 
-1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the Experience Manager repository.
+1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
 
 1. Une fois le workflow terminé, accédez à la page des détails de la ressource. The references to existing digital assets are listed under **[!UICONTROL Dependencies]** in the **[!UICONTROL References]** column.
 
@@ -39,7 +39,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
    ![les références des ressources Experience Manager dans la colonne Références dans les détails des ressources](assets/asset-references.png)
 
-   *Figure : Références de ressources dans les détails de la ressource*
+   *Figure : Références des ressources dans les détails des ressources.*
 
 ## Ajouter des ressources numériques en tant que références dans [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -86,7 +86,7 @@ Pour les ressources prises en charge avec des formats de plusieurs pages — Fic
 
 La génération de sous-ressources est désactivée par défaut. Pour activer la génération de sous-ressources, procédez comme suit :
 
-1. Connectez-vous à Experience Manager en tant qu’administrateur. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
 1. Sélectionnez **[!UICONTROL DAM Update Asset]** workflow et cliquez sur **[!UICONTROL Modifier]**.
 1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau]** latéral et recherchez l’étape **[!UICONTROL Créer un sous-fichier]** . Ajouter l’étape du processus. Cliquez sur **[!UICONTROL Synchroniser]**.
 
