@@ -11,28 +11,29 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# Modèles de groupe{#group-templates}
+# Modèles de groupe {#group-templates}
 
 La console Modèles de groupe est similaire à la console Modèles [de](/help/communities/sites.md) site. Ces deux éléments sont des plans pour un ensemble de pages préprogrammées et de fonctionnalités qui forment un site communautaire. La différence est qu&#39;un modèle de site est destiné à la communauté principale et qu&#39;un modèle de groupe est destiné à un groupe communautaire, une sous-communauté imbriquée dans la communauté principale.
 
 Un groupe de communauté est incorporé dans un modèle de site en incluant la fonction [](/help/communities/functions.md#groups-function) Groupes (qui peut ne pas être la première ou la seule fonction dans le modèle).
 
-Depuis le Pack de [fonctionnalités des communautés 1](/help/communities/deploy-communities.md#latestfeaturepack), il est possible d’imbriquer des groupes en incluant la fonction Groupes dans un modèle de groupe.
+Depuis le Pack de [fonctionnalités 1](/help/communities/deploy-communities.md#latestfeaturepack)Collectivités, il est possible d’imbriquer des groupes en incluant la fonction Groupes dans un modèle de groupe.
 
 Au moment où une action est entreprise pour créer un nouveau groupe communautaire, le modèle (structure) du groupe est sélectionné. La sélection dépend de la manière dont la fonction Groupes a été configurée lorsqu’elle a été ajoutée au site ou au modèle de groupe.
 
 >[!NOTE]
 >
->Les consoles pour la création de sites [](/help/communities/sites-console.md)communautaires, de modèles [de sites](/help/communities/sites.md)communautaires, de modèles [de groupes de](/help/communities/tools-groups.md) communautés et de fonctions de [communauté ne sont utilisées que dans l’environnement de création.](/help/communities/functions.md)
+>Les consoles pour la création de sites [](/help/communities/sites-console.md)communautaires, de modèles [de sites](/help/communities/sites.md)communautaires, de modèles [de groupes](/help/communities/tools-groups.md) communautaires et de fonctions de [communauté ne sont utilisées que dans le  de l&#39;auteur.](/help/communities/functions.md)
+
 
 ## Console Modèles de groupe {#group-templates-console}
 
-Pour accéder à la console des modèles de groupes dans l’environnement Auteur AEM :
+Pour accéder à la console des modèles de groupes dans l’ Auteur AEM  :
 
 * Sélectionner les **outils| Communautés| Modèles de groupe,** à partir de la navigation globale.
 
@@ -42,7 +43,7 @@ Cette console affiche les modèles à partir desquels un site [](/help/communiti
 
 ## Créer un modèle de groupe {#create-group-template}
 
-Pour commencer à créer un modèle de groupe, sélectionnez `Create`
+Pour commencer à créer un modèle de groupe, sélectionnez `Create`.
 
 Le panneau Editeur de site qui contient 3 sous-panneaux s’affiche alors :
 
@@ -52,17 +53,19 @@ Le panneau Editeur de site qui contient 3 sous-panneaux s’affiche alors :
 
 Dans le panneau Informations de base, un nom, une description et si le modèle est activé ou désactivé sont configurés :
 
-* **Nouveau nom** du modèle de groupe ID du nom du modèle
+* **Nom du nouveau modèle de groupe**
+
+   ID du nom du modèle.
 
 * **Description**
 
-   description du modèle
+   Description du modèle.
 
 * **Désactivé/Activé**
 
-   basculer en contrôlant si le modèle est référencé
+   Bascule contrôlant si le modèle peut être référencé.
 
-#### Miniature {#thumbnail}
+#### Miniature   {#thumbnail}
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -76,19 +79,20 @@ Dans le panneau Informations de base, un nom, une description et si le modèle e
 >
 >La fonction Groupes imbriqués est disponible à partir du [FP1](/help/communities/communities.md#latestfeaturepack)Communautés.
 >
->Il n’est toujours pas autorisé d’ajouter une fonction Groupes comme première ou seule fonction dans un modèle.
+>Il n’est toujours pas autorisé d’ajouter une fonction Groupes en tant que première ou seule fonction dans un modèle.
+
 
 ![Éditeur de modèle de groupe](assets/template-editor.png)
 
 Pour ajouter des fonctions de communauté, faites glisser le curseur de droite vers la gauche dans l&#39;ordre d&#39;affichage des liens du menu du site. Les styles seront appliqués au modèle lors de la création du site.
 
-Par exemple, si vous souhaitez un forum, faites glisser la fonction de forum depuis la bibliothèque et déposez sous le créateur de modèles. La boîte de dialogue de configuration du forum s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la console [des fonctions](/help/communities/functions.md) .
+Par exemple, si vous souhaitez un forum, faites glisser la fonction de forum de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration du forum s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la console [des fonctions](/help/communities/functions.md) .
 
 Continuez à faire glisser toutes les autres fonctions de la communauté souhaitées pour un site (groupe) de sous-communauté en fonction de ce modèle.
 
 ![faire glisser des fonctions](assets/dragfunctions.png)
 
-Une fois toutes les fonctions souhaitées déposées dans la zone du créateur de modèles et configurées, sélectionnez **Enregistrer **dans le coin supérieur droit.
+Une fois que toutes les fonctions souhaitées ont été déposées dans la zone du créateur de modèles et configurées, sélectionnez **Enregistrer** dans le coin supérieur droit.
 
 ## Modifier le modèle de groupe {#edit-group-template}
 
