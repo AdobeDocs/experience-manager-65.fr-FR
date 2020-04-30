@@ -3,7 +3,7 @@ title: Révision de collections et de ressources situées dans un dossier
 description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -103,8 +103,8 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figure :  de carte*
+   *Figure :  de carte.*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figure :*
+   *Figure :  .*
