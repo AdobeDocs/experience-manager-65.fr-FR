@@ -3,7 +3,7 @@ title: Gérez les métadonnées de vos ressources numériques dans [!DNL Adobe E
 description: Découvrez les types de métadonnées et comment [!DNL Adobe Experience Manager Assets] aide à gérer les métadonnées des ressources afin de faciliter la catégorisation et l’organisation des ressources. [!DNL Experience Manager] permet d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9bf48a6057e08e9feafc0e18d6fa9d0145768cf2
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -74,11 +74,11 @@ Il existe différentes manières d’incorporer des métadonnées dans des fichi
 * XMP: used by [!DNL Assets] to store the extracted metadata within the repository.
 * ID3 : pour les fichiers audio et vidéo
 * Exif : pour les fichiers image.
-* Autre/Hérité : à partir de Microsoft Word, PowerPoint, Excel, etc.
+* Other/Legacy: from [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
 ### XMP {#xmp}
 
-XMP (Extensible Metadata Platform) est une norme ouverte utilisée par [!DNL Experience Manager Assets] tous les gestionnaires de métadonnées. Le standard  le codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier. Adobe et d’autres  prennent en charge la norme XMP car elle fournit un modèle de contenu enrichi. Les utilisateurs de XMP standard et de [!DNL Experience Manager Assets] ont une plate-forme puissante sur laquelle construire. Pour plus d’informations, voir [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] tous les gestionnaires de métadonnées. Le standard  le codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier. Adobe et d’autres  prennent en charge la norme XMP car elle fournit un modèle de contenu enrichi. Les utilisateurs de XMP standard et de [!DNL Experience Manager Assets] ont une plate-forme puissante sur laquelle construire. Pour plus d’informations, voir [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -114,62 +114,62 @@ Les schémas de métadonnées pris en charge sont répertoriés ci-dessous.
 
 ### Standard metadata {#standard-metadata}
 
-* dc - Dublin Core - l’ensemble de métadonnées le plus important et le plus utilisé.
+* dc - [!DNL Dublin Core] is the most important and widely used set of metadata.
 * DICOM - Digital Imaging and Communications in Medicine.
-* Iptc4xmpCore et iptc4xmpExt - International Press Communications Standard - un grand nombre de métadonnées spécifiques au sujet.
+* Iptc4xmpCore et iptc4xmpExt - International Press Communications Standard contient de nombreuses métadonnées spécifiques au sujet.
 * rdf - Resource Description Framework : pour les métadonnées web de sémantique générique.
-* xmp - Extensible Metadata Platform.
+* d’écriture différée xmp - [!DNL Extensible Metadata Platform].
 * xmpBJ - Basic Job Ticketing.
 
 ### Application-specific metadata {#application-specific-metadata}
 
 Les métadonnées propres à l’application comprennent des métadonnées techniques et descriptives. Si vous les utilisez, il se peut que d’autres applications ne puissent pas utiliser les métadonnées. Par exemple, si vous disposez d’un fichier avec [!DNL Adobe Photoshop] des métadonnées et qu’une autre application de rendu d’image tente d’accéder aux métadonnées, il se peut qu’il ne soit pas en mesure d’accéder aux métadonnées. Si vous constatez que vos fichiers contiennent de nombreuses métadonnées spécifiques à l’application, vous pouvez créer une étape de flux de travail qui transforme une propriété spécifique à l’application en propriété standard.
 
-* acdsee - métadonnées gérées par le programme ACDSee [www.acdsee.com/](https://www.acdsee.com/).
-* album - Adobe Photoshop Album.
-* cq - used by [!DNL Experience Manager Assets].
-* dam - used by [!DNL Experience Manager Assets].
+* ACDSee - Metadata managed by the [!DNL ACDSee] program. Voir [www.acdsee.com/](https://www.acdsee.com/).
+* album - [!DNL Adobe Photoshop Album].
+* cq - Used by [!DNL Experience Manager Assets].
+* dam - Used by [!DNL Experience Manager Assets].
 * dex - Optima SC Description Explorer.
 * crs - Adobe Photoshop Camera Raw.
-* lr - Adobe Lightroom.
+* lr - [!DNL Adobe Lightroom].
 * mediapro - IView MediaPro.
 * MicrosoftPhoto et MP - Microsoft Photo.
 * pdf et pdfx.
-* photoshop et psAux - Adobe Photoshop.
+* photoshop &amp; psAux - [!DNL Adobe Photoshop].
 
 ### Digital Rights Management metadata {#digital-rights-management-metadata}
 
-* cc - creative commons
-* xmpRights
-* plus - Picture Licensing Universal System - https://www.useplus.com/
-* prism - https://www.idealliance.org/prism-metadata Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)
-* prl - Prism Rights Language
-* pur - Prism Usage Rights
-* xmpPlus - intégration de PLUS avec XMP
+* CC - [!DNL Creative Commons].
+* [!DNL XMPRights].
+* plus - [Picture Licensing Universal System](https://www.useplus.com).
+* prism - https://www.idealliance.org/prism-metadata de publication DPS requise pour les métadonnées standard du secteur.
+* PRL - PRISM Rights Language.
+* PUR - Droits d’utilisation PRISM.
+* xmpPlus - Intégration de PLUS avec XMP.
 
 ### Photography-specific metadata {#photography-specific-metadata}
 
-* exif - de nombreuses informations techniques de l’appareil photo, notamment la position GPS
-* crs - photoshop camera raw
-* Iptc4xmpCore et iptc4xmpExt
-* TIFF - métadonnées d’image (pas seulement pour les images TIFF)
+* Exif - Informations techniques de la caméra, y compris la position GPS.
+* CRS - [!DNL Camera Raw] .
+* Iptc4xmpCore et iptc4xmpExt.
+* TIFF - métadonnées d’image (pas seulement pour les images TIFF).
 
 ### Print-specific metadata {#print-specific-metadata}
 
-* pdf et pdfx - Adobe PDF et applications tierces
-* prism - [www.prismstandard.org](https://www.prismstandard.org) Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata)
-* xmp
-* xmpPG - xmp pour le texte paginé
+* pdf et pdfx - Adobe PDF et applications tierces.
+* prism - [www.prismstandard.org](https://www.prismstandard.org) Publishing Requirements for Industry Standard Metadata.
+* d’écriture différée xmp.
+* xmpPG - Métadonnées XMP pour le texte paginé.
 
 ### Métadonnées multimédias {#multimedia-specific-metadata}
 
-* xmpDM - Dynamic Media
-* xmpMM - Gestion des médias
+* xmpDM - [!DNL Dynamic Media].
+* xmpMM - Gestion des médias.
 
 ## Processus pilotés par les métadonnées {#metadata-driven-workflows}
 
 La création d’un axé sur les métadonnées permet d’automatiser certains processus, ce qui améliore l’efficacité. Dans un flux de travail axé sur les métadonnées, le système de gestion du flux de travail lit le flux de travail et effectue par conséquent une action prédéfinie. Voici quelques exemples d’utilisation des workflows pilotés par les métadonnées :
 
-* Le workflow peut vérifier si une image possède un titre. Si elle n’en possède pas, le système demande à un utilisateur spécifique d’ajouter un titre.
-* Le workflow peut vérifier si un avis de droit d’auteur sur une ressource autorise la distribution. S’il l’autorise, le système envoie la ressource à un serveur. S’il ne l’autorise pas, le système envoie la ressource à un autre serveur.
-* Un processus peut rechercher des fichiers sans métadonnées prédéfinies et obligatoires ou avec des métadonnées *non valides* .
+* Le processus peut vérifier si une image a un titre ou non. Dans le cas contraire, le système vous avertit d’ajouter un titre.
+* Le processus peut vérifier si une mention de copyright sur un fichier permet la distribution ou non. Par conséquent, le système envoie la ressource à un serveur ou à un autre.
+* Un processus peut rechercher des fichiers sans métadonnées prédéfinies obligatoires ou des fichiers avec des métadonnées *non valides* .
