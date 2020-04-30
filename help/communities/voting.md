@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -39,11 +39,17 @@ Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used t
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Libellé]** de réponse positive (*Obligatoire*) Nom de propriété interne pour une réponse positive.
+* **[!UICONTROL Etiquette de réponse positive]**
 
-* **[!UICONTROL Étiquette]** de réponse négative (*Obligatoire*) Nom de propriété interne pour une réponse négative.
+   (*Obligatoire*) Nom de propriété interne pour une réponse positive.
 
-* **[!UICONTROL Nom]** du compte (*Obligatoire*) Nom de propriété interne identifiable pour cette instance d’un composant de vote.
+* **[!UICONTROL Etiquette de réponse négative]**
+
+   (*Obligatoire*) Nom de propriété interne pour une réponse négative.
+
+* **[!UICONTROL Nom Tally]**
+
+   (*Required*) The internal, identifiable property name for this instance of a voting component.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
