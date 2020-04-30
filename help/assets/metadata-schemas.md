@@ -3,7 +3,7 @@ title: Schémas de métadonnées
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez utiliser l’éditeur de formulaires de schéma de métadonnées pou
 
    ![Onglet de base Propriétés du fichier, où le type de fichier ne peut pas être modifié](assets/asset-properties-basic-tab.png)
 
-   *Figure : Onglet de base sur les propriétés des ressources*
+   *Figure : Onglet de base sur Propriétés du fichier.*
 
    Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Si vous modifiez le schéma de métadonnées d’un certain type MIME, la disposition de la page des propriétés des ressources de ce type MIME et tous les sous-types de ressources sont modifiés. Par exemple, la modification d’un schéma jpeg sous `default/image` concerne uniquement la disposition des métadonnées (propriétés de ressource) des ressources du type MIME `image/jpeg`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
 
@@ -86,9 +86,9 @@ Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulair
 
    ![Editeur  de métadonnées pour personnaliser la page Propriétés du fichier](assets/metadata-schema-editor.png)
 
-   *Figure : Onglet de base de l’éditeur de de métadonnées*
+   *Figure : Onglet[!UICONTROL Simple]de l’éditeur dede métadonnées.*
 
-1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **Paramètres**.
+1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**.
 
 ### Composants de l’onglet Créer le formulaire {#components-within-the-build-form-tab}
 
@@ -127,29 +127,21 @@ Les valeurs admises pour cette propriété sont les suivantes :
 
 Pour garantir que le composant s’affiche correctement dans le formulaire de schéma de métadonnées, le chemin de la propriété ne doit pas comporter d’espace.
 
-**Espace réservé** : utilisez cette propriété pour spécifier du texte dans l’espace réservé concernant la propriété de métadonnées.
-
-**Obligatoire** : utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire dans la page Propriétés.
-
-**Désactiver la modification** : Utilisez cette propriété pour rendre une propriété de métadonnées non modifiable dans la page Propriétés.
-
-**Afficher le champ vide en lecture seule** : utilisez cette propriété pour afficher une propriété de métadonnées sur la page Propriétés même si elle ne possède pas de valeur. Par défaut, lorsqu’une propriété de métadonnées ne possède pas de valeur, elle n’est pas répertoriée sur la page Propriétés.
-
-**Afficher la liste classée** : utilisez cette propriété pour afficher une liste classée de choix.
-
-**Choix** : utilisez cette propriété pour spécifier des choix dans une liste.
-
-**Description** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
-
-**Classe** : classe d’objets à laquelle la propriété est associée.
-
-**Supprimer**: Cliquez sur cette icône pour supprimer un composant du formulaire .
+* **Espace réservé** : utilisez cette propriété pour spécifier du texte dans l’espace réservé concernant la propriété de métadonnées.
+* **Obligatoire** : utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire dans la page Propriétés.
+* **Désactiver la modification** : Utilisez cette propriété pour rendre une propriété de métadonnées non modifiable dans la page Propriétés.
+* **Afficher le champ vide en lecture seule** : utilisez cette propriété pour afficher une propriété de métadonnées sur la page Propriétés même si elle ne possède pas de valeur. Par défaut, lorsqu’une propriété de métadonnées ne possède pas de valeur, elle n’est pas répertoriée sur la page Propriétés.
+* **Afficher la liste classée** : utilisez cette propriété pour afficher une liste classée de choix.
+* **Choix** : utilisez cette propriété pour spécifier des choix dans une liste.
+* **Description** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
+* **Classe** : classe d’objets à laquelle la propriété est associée.
+* **Supprimer**: Cliquez sur cette icône pour supprimer un composant du formulaire .
 
 ![Icône Supprimer dans le de métadonnées  le formulaire](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
->Le composant Champ masqué n’inclut pas ces attributs. À la place, il comprend des propriétés, telles que les attributs Nom, Valeur, Libellé du champ et Description. Les valeurs du composant Champ masqué sont envoyées en tant que paramètre POST lors de l’enregistrement de la ressource. Elles ne sont pas enregistrées sous forme de métadonnées pour la ressource.
+>The [!UICONTROL Hidden Field] component does not include these attributes. À la place, il comprend des propriétés, telles que les attributs Nom, Valeur, Libellé du champ et Description. Les valeurs du composant Champ masqué sont envoyées en tant que paramètre POST lors de l’enregistrement de la ressource. Elles ne sont pas enregistrées sous forme de métadonnées pour la ressource.
 
 Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez rechercher des fichiers dont les métadonnées obligatoires sont manquantes. Dans le panneau **[!UICONTROL Filtres]**, développez le prédicat **[!UICONTROL Validation des métadonnées]** et sélectionnez l’option **[!UICONTROL Non valide]**. Les résultats de la recherche affichent des fichiers dont les métadonnées obligatoires que vous avez configurées via le formulaire de schéma sont manquantes.
 
@@ -163,7 +155,7 @@ Pour afficher un onglet de la page de propriétés en plus de l’onglet dans le
 
 ![L’onglet sélectionné dans le de métadonnées contextuelles s’affiche sur la page des propriétés des ressources.](assets/contextual-metadata-asset-properties.png)
 
-*Figure : Métadonnées contextuelles dans la page des propriétés des ressources*
+*Figure : Métadonnées contextuelles dans la page de propriétés des ressources.*
 
 ### Spécification des propriétés dans le fichier JSON {#specify-properties-in-json-file}
 
@@ -263,7 +255,7 @@ Si le dossier contient un sous-dossier, les ressources du sous-dossier héritent
 
    ![Champ de texte ajouté au de métadonnées  Editeur de formulaire](assets/text-field-metadata-schema-editor.png)
 
-   *Figure : Champ de texte ajouté au de métadonnées  éditeur de formulaire*
+   *Figure : Champ de texte ajouté au de métadonnées  l’éditeur de formulaire.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**.
 1. Cliquez/appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
@@ -295,7 +287,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
    ![Ajouter champ obligatoire au formulaire de métadonnées en sélectionnant Obligatoire dans l’onglet Règles du de métadonnées  Editeur de formulaire](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figure : Champ obligatoire dans le de métadonnées  l’éditeur de formulaire*
+   *Figure : Champ obligatoire dans le de métadonnées  l’éditeur de formulaire.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées.]** Sélectionnez le formulaire et cliquez/appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 
