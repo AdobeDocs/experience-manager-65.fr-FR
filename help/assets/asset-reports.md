@@ -3,7 +3,7 @@ title: Rapports sur vos ressources numériques
 description: Comprenez les rapports sur vos ressources dans les ressources AEM qui vous aident à comprendre l’utilisation, les   et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -38,12 +38,12 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
 1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 
-![Page Outils pour parcourir le rapport des ressources](assets/AssetsReportNavigation.png)
+![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
-   ![Sélectionner un type de rapport](assets/choose_report.png)
+   ![](assets/choose_report.png)
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. By default, the folder path is `/content/dam`. Vous pouvez spécifier un autre chemin.
 
-   ![Page pour ajouter des détails sur le rapport](assets/report_configuration.png)
+   ![](assets/report_configuration.png)
 
    Sélectionnez la période de votre rapport.
 
@@ -71,32 +71,32 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
    >
    >Le rapport **[!UICONTROL Utilisation du disque]** n’inclut pas les champs de période, car il indique uniquement l’utilisation actuelle de l’espace disque.
 
-   ![Page Détails du rapport Utilisation du disque](assets/disk_usage_configuration.png)
+   ![](assets/disk_usage_configuration.png)
 
    When you create the **[!UICONTROL Files]** report, you can include/exclude sub-folders. Cependant, vous ne pouvez pas inclure les rendus de ressources dans ce rapport.
 
-   ![Page Détails du rapport Fichiers](assets/files_report.png)
+   ![](assets/files_report.png)
 
    Le rapport **[!UICONTROL Partage de liens]** affiche des URL vers des ressources partagées avec des utilisateurs externes à partir d’AEM Assets. Celui-ci comprend les ID de courrier électronique de l’utilisateur qui a partagé les ressources, les ID de courrier électronique des utilisateurs avec lesquels les ressources sont partagées, la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![Page de détails du rapport Partage de liens](assets/link_share.png)
+   ![](assets/link_share.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner d’autres colonnes. Désélectionnez une colonne sélectionnée pour l’exclure du rapport.
 
-   ![Sélection ou désélection de colonnes de rapports](assets/configure_columns.png)
+   ![](assets/configure_columns.png)
 
    Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud jcr:content dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
 
-   ![Sélection ou désélection de colonnes de rapports](assets/custom_columns.png)
+   ![](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
 1. Sur la page Rapports de ressources, l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport, par exemple, Réussite, Échec, En file d’attente ou Planifié. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour  la page du rapport, cliquez sur le lien du rapport. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
-   ![Un rapport généré](assets/report_page.png)
+   ![](assets/report_page.png)
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
@@ -120,11 +120,11 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 
 1. Pour afficher une colonne personnalisée, spécifiez son nom sous **[!UICONTROL Colonnes personnalisées]**.
 
-   ![Spécifier le nom de la colonne personnalisée du rapport](assets/custom_columns-1.png)
+   ![](assets/custom_columns-1.png)
 
 1. Ajoutez le chemin de la propriété sous le nœud `jcr:content` dans CRXDE à l’aide du sélecteur de chemin de propriété. Vous pouvez également saisir le chemin d’accès dans le champ de chemin d’accès à la propriété.
 
-   ![Mappez le chemin de propriété des chemins dans jcr:content](assets/property_picker.png)
+   ![](assets/property_picker.png)
 
    To add more custom columns, click **[!UICONTROL Add]** and repeat steps 5 and 6.
 
