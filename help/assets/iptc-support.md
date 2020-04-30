@@ -1,24 +1,24 @@
 ---
-title: Prise en charge des métadonnées IPTC
-description: Découvrez comment Adobe Experience Manager (AEM) Assets prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par Adobe Bridge et d’autres applications de création.
+title: Utilisez les métadonnées IPTC dans [!DNL Adobe Experience Manager Assets].
+description: Découvrez comment [!DNL Adobe Experience Manager Assets] prend en charge les métadonnées IPTC, les évaluations créatives et les mots-clés ajoutés aux ressources via Adobe Bridge et d’autres applications Creative.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Support for IPTC metadata {#support-for-iptc-metadata}
+# Utilisation des métadonnées IPTC {#support-for-iptc-metadata}
 
-Découvrez comment Adobe Experience Manager (AEM) Assets prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par Adobe Bridge et d’autres applications de création.
+Learn how [!DNL Adobe Experience Manager Assets] supports the IPTC metadata, Creative ratings, and keywords added to assets through [!DNL Adobe Bridge] and other [!DNL Adobe Creative Cloud] apps.
 
-Adobe Experience Manager (AEM) Assets prend en charge la norme de métadonnées IPTC qui est couramment utilisée pour décrire des ressources. Cela permet à AEM Assets de bénéficier d’une plus large acceptation de ses images auprès des différents intervenants, y compris les photographes, les agences de création, les bibliothèques, les musées, etc.
+[!DNL Adobe Experience Manager Assets] prend en charge la norme de métadonnées IPTC largement utilisée pour décrire les fichiers. This way, [!DNL Assets] enhances the acceptance of its images among various parties, including photographers, creative agencies, libraries, museums, and so on.
 
 Le schéma de métadonnées utilisé pour les ressources intègre désormais IPTC Core et IPTC Extension, deux schémas permettant de définir des propriétés de métadonnées complètes, grâce auxquels les utilisateurs peuvent ajouter des données fiables et précises sur les personnes, les lieux et les produits illustrés dans une image. Il prend également en charge les dates, noms et identifiants relatifs à la création de l’image, ainsi qu’une méthode permettant d’exprimer les informations sur les droits avec une certaine souplesse.
 
 La page des propriétés des ressources comprend maintenant des onglets distincts pour afficher les métadonnées IPTC Core et IPTC Extension dans des champs modifiables.
 
-1. Sélectionnez une image dans l’interface utilisateur Assets.
+1. From the [!DNL Assets] user interface, select an image.
 1. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 1. Click the **[!UICONTROL IPTC]** tab to view the IPTC metadata for the asset.
 1. Modifiez les propriétés de métadonnées IPTC, le cas échéant.
