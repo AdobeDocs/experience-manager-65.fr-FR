@@ -1,16 +1,16 @@
 ---
-title: Migration des ressources vers Adobe Experience Manager Assets en bloc
-description: Décrit comment importer des ressources dans AEM, appliquer des métadonnées, générer des rendus et les activer en tant qu’instances de publication.
+title: Migrez les ressources en bloc vers [!DNL Adobe Experience Manager Assets].
+description: Décrit comment importer des fichiers dans [!DNL Adobe Experience Manager], appliquer des métadonnées, générer des rendus et les activer pour publier des instances.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Comment migrer des ressources en bloc {#assets-migration-guide}
 
-Lors de la migration des ressources dans AEM, il existe plusieurs étapes à prendre en compte. L’extraction des ressources et des métadonnées hors de la page en cours n’est pas traitée dans ce document, car elle varie considérablement selon la mise en œuvre. Ce document explique toutefois comment récupérer ces ressources dans AEM, appliquer leurs métadonnées, générer des rendus et les activer pour publier des instances.
+When migrating assets into [!DNL Adobe Experience Manager], there are several steps to consider. Extracting assets and metadata out of their current home is outside the scope of this document as it varies widely between implementations, but this document describes how to bring these assets into [!DNL Experience Manager], apply their metadata, generate renditions, and activate them to publish instances.
 
 ## Conditions préalables {#prerequisites}
 
@@ -18,7 +18,7 @@ Before actually performing any of the steps in this methodology, please review a
 
 >[!NOTE]
 >
->Les outils de migration de ressources suivants ne font pas partie d’AEM et ne sont pas pris en charge par Adobe :
+>The following asset migration tools are not part of [!DNL Experience Manager] and are not supported by Adobe:
 >
 >* Tools Tag Maker d’ACS AEM
 >* Tools CSV Asset Importer d’ACS AEM
@@ -29,9 +29,9 @@ Before actually performing any of the steps in this methodology, please review a
 >
 Ces logiciels sont Open Source et couverts par la [Licence Apache v2](https://adobe-consulting-services.github.io/pages/license.html). Pour poser une question ou signaler un problème, consultez les sections respectives [Problèmes GitHub pour les outils ACS AEM](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) et [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migrer vers AEM {#migrating-to-aem}
+## Migrer vers [!DNL Experience Manager]{#migrating-to-aem}
 
-La migration des ressources vers AEM se déroule en plusieurs étapes et doit être considérée comme un processus échelonné. Les phases de la migration sont les suivantes :
+Migrating assets to [!DNL Experience Manager] requires several steps and should be viewed as a phased process. Les phases de la migration sont les suivantes :
 
 1. Désactivation des workflows.
 1. Chargement des balises.
@@ -48,7 +48,7 @@ Before starting your migration, disable your launchers for the [!UICONTROL DAM U
 
 ### Chargement des balises {#loading-tags}
 
-Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Bien que des outils tels que l’importateur de ressources CSV et la prise en charge du de métadonnées par Experience Manager puissent automatiser le processus d’application de balises aux ressources, les balises doivent être chargées dans le système. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
+Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. While tools like the CSV Asset Importer and [!DNL Experience Manager] support for metadata profiles can automate the process of applying tags to assets, the tags need to be loaded into the system. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
 
 ### Assimilation des ressources {#ingesting-assets}
 
@@ -58,7 +58,7 @@ Il existe deux approches pour charger les ressources dans le système : une app
 
 #### Envoyer via HTTP {#pushing-through-http}
 
-L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire d’une instance AEM. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
+L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton is a small Java application that loads all assets from one directory into another directory on an [!DNL Experience Manager] instance. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
 
 L’utilisation de l’approche Push à l’aide du protocole HTTPS présente deux inconvénients :
 
@@ -75,12 +75,12 @@ Comme il n’est pas nécessaire que les ressources soient transmises sur un ré
 
 ### Traitement des rendus {#processing-renditions}
 
-After you load the assets into the system, you need to process them through the [!UICONTROL DAM Update Asset] workflow to extract metadata and generate renditions. Before performing this step, you need to duplicate and modify the [!UICONTROL DAM Update Asset] workflow to fit your needs. Le workflow prêt à l’emploi contient de nombreuses étapes qui peuvent ne pas vous être nécessaires, telles que la génération PTIFF pour Scene7 ou l’intégration du serveur InDesign.
+After you load the assets into the system, you need to process them through the [!UICONTROL DAM Update Asset] workflow to extract metadata and generate renditions. Before performing this step, you need to duplicate and modify the [!UICONTROL DAM Update Asset] workflow to fit your needs. The out-of-the-box workflow contains many steps that may not necessary for you, such as Scene7 PTIFF generation or [!DNL InDesign Server] integration.
 
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
 1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d’exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options permettant de définir la taille des lots.
-1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de processus AEM, tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
+1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). While this approach is much more involved, it lets you remove the overhead of the [!DNL Experience Manager] workflow engine while optimizing the use of server resources. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
 
 ### Activation des ressources {#activating-assets}
 
@@ -88,7 +88,7 @@ Pour les déploiements disposant d’un niveau de publication, vous devez active
 
 Pour contourner ce problème, vous pouvez utiliser l’outil [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Il fonctionne sans utiliser les files d’attente Sling, réduisant les surcharges, tout en régulant la charge de travail pour éviter que le serveur ne soit surchargé. Un exemple d’utilisation de cet outil pour gérer la réplication est présenté sur la page de documentation de FAM.
 
-D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Une autre option consiste à utiliser un outil Open Source pour votre infrastructure AEM, nommé [Grabbit](https://github.com/TWCable/grabbit), qui se targue d’être plus rapide que vlt.
+D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Another option is to use an open-sourced tool for your [!DNL Experience Manager] infrastructure called [Grabbit](https://github.com/TWCable/grabbit), which claims to have faster performance than vlt.
 
 Pour toutes ces approches, notez que les ressources de l’instance de création ne s’affichent pas comme ayant été activées. Pour marquer ces ressources avec l’état d’activation correct, vous devez également exécuter un script les marquant comme activées.
 
@@ -112,22 +112,22 @@ Une fois les ressources activées, vous pouvez cloner votre instance de publicat
 
 Once we have completed migration, the launchers for the [!UICONTROL DAM Update Asset] workflows should be re-enabled to support rendition generation and metadata extraction for ongoing day-to-day system usage.
 
-## Migration entre les déploiements AEM {#migrating-between-aem-instances}
+## Migration entre [!DNL Experience Manager] déploiements {#migrating-between-aem-instances}
 
-Bien que ce ne soit pas aussi courant, vous devez parfois migrer de grandes quantités de données d’une instance AEM à une autre, par exemple, lorsque vous effectuez une mise à niveau d’AEM, que vous mettez à niveau votre matériel ou que vous migrez vers un nouveau centre de données, comme avec une migration AMS.
+While not nearly as common, sometimes you need to migrate large amounts of data from one [!DNL Experience Manager] instance to another; for example, when you perform an [!DNL Experience Manager] upgrade, upgrade your hardware, or migrate to a new datacenter, such as with an AMS migration.
 
-Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. Lors de la migration entre instances AEM, procédez comme suit :
+Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. When migrating between [!DNL Experience Manager] instances, you perform the following steps:
 
 1. Disable workflows: Because you are migrating renditions along with our assets, you want to disable the workflow launchers for [!UICONTROL DAM Update Asset] workflow.
 
-1. Migrer les balises : Les balises étant déjà chargées dans l’instance AEM source, vous pouvez les créer dans un package de contenu et installer le package sur l’instance  du.
+1. Migrate tags: Because you already have tags loaded in the source [!DNL Experience Manager] instance, you can build them in a content package and install the package on the target instance.
 
-1. Migrer des ressources : Il existe deux outils recommandés pour déplacer des ressources d’une instance AEM vers une autre :
+1. Migrate assets: There are two tools that are recommended for moving assets from one [!DNL Experience Manager] instance to another:
 
    * **Vault Remote Copy** ou vlt rcp vous permet d&#39;utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** est un outil de synchronisation de contenu Open Source développé par Time Warner Cable dans le cadre de la mise en œuvre d’AEM. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
+   * **Grabbit** est un outil de synchronisation de contenu open-source développé par Time Warner Cable pour leur [!DNL Experience Manager] implémentation. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
 
-1. Activate assets: Follow the instructions for [activating assets](#activating-assets) documented for the initial migration to AEM.
+1. Activate assets: Follow the instructions for [activating assets](#activating-assets) documented for the initial migration to [!DNL Experience Manager].
 
 1. Cloner la publication : Comme pour une nouvelle migration, le chargement d’une instance de publication unique et son clonage sont plus efficaces que l’activation du contenu sur les deux noeuds. Voir [Clonage de la publication](#cloning-publish).
 
