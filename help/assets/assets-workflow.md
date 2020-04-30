@@ -3,7 +3,7 @@ title: Traiter les ressources pour exécuter les processus d’entreprise, effec
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des  de.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -24,7 +24,7 @@ Pour afficher les différents modèles de flux de travail disponibles par défau
 
 ![Certains flux de travaux par défaut](assets/aem-default-workflows.png)
 
-*Figure : Certains flux de travaux par défaut disponibles dans[!DNL Experience Manager]*
+*Figure : Certains des par défaut  disponibles dans[!DNL Experience Manager].*
 
 ## Apply workflows to process assets {#applying-workflows-to-assets}
 
