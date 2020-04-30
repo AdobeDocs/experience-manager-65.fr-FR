@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -23,8 +23,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 La fonction de forum de la QnA (questions et réponses) offre aux membres de la communauté un espace où poser des questions et y répondre. Il permet aux membres de :
 
 * Créer de nouvelles questions
-* Ajout d’images intégrées (avec prise en charge du glisser-déposer)
-* Afficher et répondre aux questions
+* Ajouter d’images intégrées (avec prise en charge du glisser-déplacer)
+*  et répondre aux questions
 * Rechercher une question
 * Aidez à modérer le contenu de la QnA
 * Identifier les meilleures réponses
@@ -32,8 +32,8 @@ La fonction de forum de la QnA (questions et réponses) offre aux membres de la 
 
 La documentation décrit :
 
-* l’ajout de la fonction Forum Q&amp;R aux paramètres de configuration.
-* configuration settings for the `QnA`component.
+* Ajout de la fonctionnalité de forum QnA à un site AEM.
+* Configuration settings for the `QnA`component.
 
 ## Ajout d’un forum Q&amp;R à une page {#adding-a-q-a-forum-to-a-page}
 
@@ -101,11 +101,11 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser l’épinglage**
 
-   Si cette option est cochée, les rubriques du forum peuvent être épinglées en haut de la liste des rubriques. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, les rubriques du forum peuvent être épinglées en haut du  des rubriques. La valeur par défaut est désélectionnée.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Requiert que l’option Autoriser le suivi soit cochée et que le [courrier électronique soit configuré](/help/communities/email.md). La valeur par défaut est désélectionnée.
+   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([](/help/communities/subscriptions.md)). Requiert que l’option Autoriser le suivi soit cochée et que le [courrier électronique soit configuré](/help/communities/email.md). La valeur par défaut est désélectionnée.
 
 * **Taille maximale du fichier**
 
@@ -113,22 +113,23 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Types de fichier autorisés**
 
-   N’est pertinent que si `Allow File Uploads` est coché. Liste d’extensions de fichiers séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés à être téléchargés. La valeur par défaut n’est pas spécifiée, de sorte que** **tous les types de fichier sont autorisés.
+   N’est pertinent que si `Allow File Uploads` est coché. d’extensions de fichier séparé par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés à être téléchargés. La valeur par défaut n’est pas spécifiée, de sorte que** **tous les types de fichier sont autorisés.
 
 * **Taille max. du fichier image joint**
 
-   Applicable uniquement si l’option Autoriser les téléchargements de fichiers est cochée. nombre maximal d’octets qu’un fichier image téléchargé peut contenir. La valeur par défaut est 2097152** **(2 Mo).
+   N’est pertinent que si l’option Autoriser les téléchargements de fichiers est cochée. nombre maximal d’octets qu’un fichier image téléchargé peut contenir. La valeur par défaut est 2097152 (2 Mo).
 
 * **Permettre des réponses**
 
    Si cette option est cochée, autorisez les réponses aux commentaires publiés sur la question. La valeur par défaut est désélectionnée.
+
 * **Autoriser le vote**
 
    Si cette option est cochée, incluez la fonction de vote avec une question. La valeur par défaut est désélectionnée.
 
 * **Autoriser les utilisateurs à supprimer les commentaires et sujets**
 
-   Si cette option est cochée, autorisez les membres à supprimer les commentaires et questions qu’ils ont publiés. La valeur par défaut est** **désélectionnée.
+   Si cette option est cochée, autorisez les membres à supprimer les commentaires et questions qu’ils ont publiés. La valeur par défaut est désélectionnée.
 
 * **Autoriser les membres privilégiés**
 
@@ -138,7 +139,9 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
    S’il est activé, bloque le contenu généré par l’utilisateur lors de la modification en mode Auteur.
 
-* **Déplacer la réponse sélectionnée vers le haut**Si cochée, la première réponse affichée est une réponse sélectionnée. La valeur par défaut est désélectionnée.
+* **Déplacer la réponse sélectionnée vers le haut**
+
+   Si cette option est cochée, la première réponse affichée est une réponse sélectionnée. La valeur par défaut est désélectionnée.
 * **Afficher les badges**
 
    Si cette option est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. La valeur par défaut est désélectionnée.
@@ -157,7 +160,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Modèle des mentions de l’IU**
 
-   Spécifiez la chaîne de modèle autorisée à baliser (@mentions) l’utilisateur enregistré dans une publication. Par exemple : ~{{familyName}}{{donnname}}.
+   Spécifiez la chaîne de modèle autorisée à baliser (@mentions) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -175,11 +178,11 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 * **Marquer les publications**
 
-   Si cette option est cochée, permettez aux membres de signaler que les questions ou réponses des autres personnes sont inappropriées. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, permettez aux membres de signaler que les questions ou les réponses des autres personnes sont inappropriées. La valeur par défaut est désélectionnée.
 
 * **Marquer la liste de motifs**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent une question ou une réponse comme étant inappropriée. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, permettez aux membres de choisir, dans un  déroulant, la raison pour laquelle ils signalent une question ou une réponse comme inappropriée. La valeur par défaut est désélectionnée.
 
 * **Motif de la marque personnalisée**
 
@@ -191,15 +194,19 @@ Under the **User Moderation** tab, specify how the posted topics (questions) and
 
 * **Limite de marquage**
 
-   Entrez le nombre de fois où une question ou une réponse doit être marquée avant d’être masquée de la vue publique. Si la valeur est -1, la question ou la réponse marquée est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+   Entrez le nombre de fois où une question ou une réponse doit être marquée avant d’être masquée du  public. Si la valeur est -1, la question ou la réponse marquée est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
 
 #### Onglet Champ de balise {#tag-field-tab}
 
-Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings **tab, are limited according to namespaces chosen.
+Under the **Tag field** tab, the tags that can be applied, if allowed under the **Settings** tab, are limited according to namespaces chosen.
 
-* **Espaces de noms** autorisés Pertinents si `Allow Tagging` est coché sous l’onglet **Paramètres **Paramètres. Les balises qui peuvent être appliquées sont limitées à celles des catégories d’espace de noms cochées. La liste des espaces de noms comprend &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+* **Espaces de noms autorisés**
 
-* **Limite de suggestions** Entrez le nombre de balises à afficher comme suggestion destinée au membre qui publie sur le forum. Une valeur **-**1 signifie aucune limite. La valeur par défaut est 0.
+   Pertinente si `Allow Tagging` est cochée sous l’onglet **Paramètres** . Les balises qui peuvent être appliquées sont limitées à celles qui se trouvent dans le    case à cocher. Le de  inclut &quot;Balises standard&quot; (le par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les  de  sont autorisés.
+
+* **Limite de suggestions**
+
+   Entrez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur **-**1 signifie aucune limite. La valeur par défaut est 0.
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
@@ -221,11 +228,11 @@ Sous l’onglet Paramètres **de** tri, spécifiez le mode de tri des commentair
 
 ### Identification des réponses {#identifying-answers}
 
-Une réponse peut être marquée comme une réponse correcte ou utile à l&#39;aide du `Select Answer` bouton. Une fois qu&#39;une question est marquée comme Réponse, une autre réponse ne peut pas être sélectionnée tant que la première n&#39;a pas été désélectionnée à l&#39;aide du `Unmark Chosen Answer`bouton.
+Une réponse peut être marquée comme une réponse correcte ou utile à l&#39;aide du `Select Answer` bouton. Une fois qu&#39;une question est marquée comme Réponse, une autre réponse ne peut pas être sélectionnée tant que la première n&#39;a pas été désélectionnée à l&#39;aide du `Unmark Chosen Answer` bouton.
 
 Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide du `Unmark Chosen Answer` bouton.
 
-Une fois qu’une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered`affichée en regard de la rubrique de la question sur la page QnA principale.
+Une fois qu’une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered` affichée en regard de la rubrique de la question sur la page QnA principale.
 
 #### Modérateurs et administrateurs {#moderators-and-administrators}
 
@@ -235,16 +242,16 @@ Ils peuvent aussi identifier des réponses.
 
 #### Membres {#members}
 
-Lorsque les visiteurs du site sont connectés, selon la configuration, ils peuvent :
+Lorsque les du site sont connectés, selon la configuration, ils peuvent :
 
-* poser une nouvelle question.
-* modifier ou supprimer les questions qu’il a publiées.
-* signaler les questions ou réponses des autres membres.
-* identifier les réponses aux questions qu’ils ont posées.
+* Posez une nouvelle question.
+* Modifiez ou supprimez les questions qu’ils ont créées.
+* Indiquez les questions ou réponses des autres membres.
+* Identifiez les réponses aux questions qu’ils ont posées.
 
 #### Anonyme {#anonymous}
 
-Les visiteurs du site qui ne sont pas connectés peuvent uniquement lire les questions et réponses publiées, les traduire s’ils sont pris en charge, mais ils ne peuvent ni ajouter de question ni répondre, ni marquer les publications des autres.
+Les du site qui ne sont pas connectés peuvent seulement lire les questions et réponses publiées, les traduire si elles sont prises en charge, mais ils ne peuvent ni ajouter de question ni répondre, ni marquer les publications des autres.
 
 ## Informations supplémentaires {#additional-information}
 
