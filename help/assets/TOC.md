@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.5 Assets
 translation-type: tm+mt
-source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
    + [Utiliser le pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert](configuring-asset-upload-restrictions.md)
    + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Intégration au serveur InDesign](indesign.md)
+   + [Intégration d’InDesign Server](indesign.md)
    + [Profils de métadonnées](metadata-profiles.md)
    + [Gestion des droits numériques dans les ressources](drm.md)
    + [Utilisation du package de démonstration pour obtenir des informations sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
