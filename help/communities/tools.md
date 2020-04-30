@@ -11,24 +11,28 @@ content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
 # Outils de communautés {#communities-tools}
 
-Sur l’auteur, pour accéder à la console des outils des communautés :
+Pour accéder à la console des outils des communautés, connectez-vous à votre instance d’auteur :
 
-* A partir de la navigation globale : **[!UICONTROL Outils > Communautés]**
+* A partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]**.
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Modèles](sites.md) de site - Console pour la création et la gestion de modèles de site
-* [Modèles](tools-groups.md)de groupe - Console pour la création et la gestion de modèles de groupe
-* [Fonctions](functions.md)communautaires - Console pour la création et la gestion de fonctions communautaires
-* [Configuration](srp-config.md) du stockage - Console pour la configuration et la sélection du [SRP par défaut](working-with-srp.md)
+* [Modèles](sites.md) de site - Console pour la création et la gestion de modèles de site.
 
-* [Guide](components-guide.md) des composants - Ouvre un site interactif qui permet d&#39;expérimenter le fonctionnement des composants SCF et leur configuration ou personnalisation.
+* [Modèles](tools-groups.md) de groupe - Console pour la création et la gestion de modèles de groupe.
+
+* [Fonctions](functions.md) de la communauté - Console pour la création et la gestion de fonctions de la communauté.
+
+* [Configuration](srp-config.md)  - Console pour la configuration et la sélection du [SRP](working-with-srp.md)par défaut.
+
+* [Guide](components-guide.md) des composants - Ouvre un site interactif qui permet d&#39;expérimenter le fonctionnement des composants SCF et la manière dont ils peuvent être configurés ou personnalisés.
+
 * [Badges](badges.md) - Console à partir de laquelle des badges personnalisés peuvent être ajoutés pour être utilisés dans les règles de [notation et de badge](implementing-scoring.md)
 
