@@ -3,7 +3,7 @@ title: Comparaison des ressources AEM et de l’offre de la bibliothèque de mé
 description: Comparez les ressources AEM et les offres de la bibliothèque de médias AEM et connaissez les différences.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -70,36 +70,35 @@ Pour ce cas d’utilisation, il n’est pas nécessaire d’acheter AEM Assets.
 * Adobe Asset Link (connexion à Creative Cloud abonnement Entreprise)
 * Application de bureau AEM
 * Profils de traitement
-* Intégration du serveur InDesign
-* Modèles de ressources et infrastructure de producteur de catalogue
-* Ressources liées Adobe Photoshop, Illustrator et InDesign
+* Intégration d’InDesign Server
+* Modèles d’actifs et structure de producteurs de catalogues
+* Intégration d’Adobe Photoshop, d’Adobe Illustrator et d’Adobe InDesign
 * Gestion des ressources multilingues
 * Intégration PIM
 * Gestion des droits
-* Prise en charge de Camera RAW
+* Prise en charge de Camera RAW
 * Gestion et configuration des facettes de recherche
 * Workflows DAM préconfigurés (par exemple, séance photo)
-* Rapports et analyses des ressources : statistiques sur les ressources
-* Gestion des ressources 3D
+*  et analyses des ressources appelées Insights
+* Gestion des ressources 3D
 * Ressources connectées
 * Brand Portal
 * Accès en libre-service
 * Parcourir, rechercher et télécharger
-* Partage de collections et de dossiers
-* Outils d’administration
-* Balises intelligentes
+* Collections et partage de dossiers
+* Outils d’administration et interface
+* Balisage intelligent
 * Recherche visuelle
-* Interface utilisateur d’administration Assets
 
 **Media Library**
 
-* Propriétés des métadonnées de base
+* Propriétés de métadonnées de base
 * Gestion des balises
-* Gestion de version
+* Contrôle de version
 * Rendus statiques
-* Projets, tâches, création de workflows
-* Flux d’activités (chronologie)
+* Projets, , création de flux de travail
+*  flux  (chronologie)
 * Query Builder (API)
-* Intégration de Marketing Cloud
+* Intégration de Marketing Cloud
 * Personnalisation et extension de l’interface utilisateur
-* Commentaires et annotations
+* Commentaires et annotation
