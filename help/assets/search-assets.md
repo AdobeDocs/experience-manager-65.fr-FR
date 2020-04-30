@@ -4,7 +4,7 @@ description: Découvrez comment rechercher les ressources requises dans Adobe Ex
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -40,7 +40,7 @@ Familiarisez-vous avec l’interface de recherche et les actions disponibles.
 
 ![Comprendre l’interface des résultats de recherche d’Experience Manager Assets](assets/aem_search_results.png)
 
-*Figure : Comprendre l’interface des résultats de recherche d’Experience Manager Assets*
+*Figure : Comprendre l’interface des résultats de la recherche Ressources d’Experience Manager.*
 
 **A.** Enregistrez la recherche en tant que collection dynamique. **B.** ou prédit pour limiter les résultats de la recherche. **C.** Afficher les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omnisearch avec mot-clé de recherche fourni par l’utilisateur. **G.** Sélectionnez les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés par rapport au total des résultats de recherche. **I.** Fermez la recherche **J.** Basculez entre les  de carte et les  de .
 
@@ -50,7 +50,7 @@ Vous pouvez découvrir plus rapidement les ressources de votre choix à partir d
 
 ![Affichage du nombre approximatif de ressources sans filtrer les résultats de la recherche dans les facettes de recherche.](assets/asset_search_results_in_facets_filters.png)
 
-*Figure : Afficher le nombre approximatif de fichiers sans filtrer les résultats de recherche dans les facettes de recherche*
+*Figure : Affichez le nombre approximatif de fichiers sans filtrer les résultats de la recherche dans les facettes de recherche.*
 
 ## Présentation des résultats de recherche et du comportement {#searchbehavior}
 
@@ -99,7 +99,7 @@ Pour recevoir des suggestions pour plusieurs mots-clés de recherche, continuez 
 
 ![Tapez plusieurs mots-clés pour  suggestions qui les adaptent tous.](assets/search_suggestionsmanykeywords.gif)
 
-*Figure : Tapez plusieurs mots-clés pour  suggestions qui les adaptent tous.*
+*Figure : Tapez plusieurs mots-clés pour  des suggestions qui les adaptent tous.*
 
 ### Classement et amplification des recherches {#searchrank}
 
@@ -131,7 +131,7 @@ Experience Manager propose différentes méthodes, telles que des  qui s’appli
 
 ![Limitation des résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau Filtres](assets/search_folder_select.gif)
 
-*Figure : Limiter les résultats de recherche à un dossier en ajoutant un chemin de dossier dans le panneau  de*
+*Figure : Limitez les résultats de la recherche à un dossier en ajoutant un chemin de dossier dans le panneau  du.*
 
 ### Rechercher des images similaires {#visualsearch}
 
@@ -139,7 +139,7 @@ Pour rechercher des images visuellement similaires à une image sélectionnée p
 
 ![Recherchez des images similaires à l’aide de l’option dans le de cartes](assets/search_find_similar.png)
 
-*Figure : Recherchez des images similaires à l’aide de l’option dans le de cartes*
+*Figure : Recherchez des images similaires à l’aide de l’option du de cartes.*
 
 ### Images Adobe Stock {#adobestock}
 
@@ -244,7 +244,7 @@ To access the asset Picker interface, go to `https://[aem_server]:[port]/aem/ass
 
 ![Parcourir et sélectionner une ressource dans le sélecteur de ressources](assets/assetpicker.png)
 
-*Figure : Parcourir et sélectionner un fichier dans le sélecteur de ressources*
+*Figure : Recherchez et sélectionnez un fichier dans le sélecteur de ressources.*
 
 ## Restrictions {#limitations}
 
@@ -285,7 +285,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 ![Comportement de recherche avec et sans guillemets](assets/search_with_quotes.gif)
 
-*Figure : Comportement de recherche avec et sans guillemets*
+*Figure : Comportement de recherche avec et sans guillemets.*
 
 **Recherche avec un caractère générique (astérisque)** : pour élargir la recherche, utilisez un astérisque avant ou après le mot recherché afin de faire correspondre n’importe quel nombre de caractères. Par exemple, la recherche du mot run sans astérisque ne renvoie pas les ressources contenant une variante du mot (y compris dans les métadonnées). L’astérisque remplace n’importe quel nombre de caractères. Par exemple :
 
@@ -296,7 +296,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 ![Exemple d’utilisation d’un caractère générique (astérisque) dans la recherche de ressources](assets/search_with_asterisk_run.gif)
 
-*Figure : Illustration de l’utilisation d’un caractère générique d’astérisque dans la recherche de ressources à l’aide d’un exemple*
+*Figure : Illustration de l’utilisation d’un caractère générique d’astérisque dans la recherche de ressources à l’aide d’un exemple.*
 
 **Recherche avec un caractère générique (point d’interrogation)** : pour élargir la recherche, utilisez un ou plusieurs caractères « ? » pour correspondre au nombre exact de caractères. Par exemple, dans l’illustration suivante :
 
@@ -308,13 +308,13 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 ![Exemple d’utilisation d’un caractère générique (point d’interrogation) dans la recherche de ressources](assets/search_with_questionmark_run.gif)
 
-*Figure : Illustration de l’utilisation du caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple*
+*Figure : Illustration de l’utilisation du caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple.*
 
 **Exclusion d’un mot-clé** : utilisez le tiret pour rechercher des ressources qui ne contiennent pas de mot-clé. Par exemple, la requête `running -shoe` renvoie les ressources qui contiennent `running`, mais pas `shoe`. De même, la requête `camp -night` renvoie les ressources qui contiennent `camp`, mais pas `night`. Notez que la requête `camp-night` renvoie les ressources qui contiennent à la fois `camp` et `night`.
 
 ![Utilisation du tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu](assets/search_dash_exclude_keyword.gif)
 
-*Figure : Utilisation du tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu*
+*Figure : Utilisation d’un tiret pour rechercher des fichiers ne contenant pas de mot-clé exclu.*
 
 ## de configuration et d’administration lié à la fonctionnalité de recherche {#configadmin}
 
@@ -415,7 +415,7 @@ Pour consulter les commentaires sur une ressource ou son historique de versions,
 
 ![Tri des entrées de chronologie d’une ressource recherchée](assets/sort_timeline_search_results.gif)
 
-*Figure : Tri des entrées de chronologie d’un fichier de recherche*
+*Figure : Triez les entrées de la chronologie d’une ressource de recherche.*
 
 ### Téléchargement des ressources recherchées {#download}
 
