@@ -1,25 +1,25 @@
 ---
-title: Prise en charge de Camera Raw
-description: Découvrez comment activer la prise en charge de Camera Raw dans Adobe Experience Manager Assets.
+title: Prise en charge de [!DNL Adobe Camera Raw].
+description: Découvrez comment activer la prise en charge de [!DNL Adobe Camera Raw] dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Prise en charge du traitement des images à l’aide de Camera Raw {#camera-raw-support}
+# Traiter les images à l’aide de Camera Raw {#camera-raw-support}
 
-Vous pouvez activer la prise en charge de Camera Raw pour traiter les formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. Cette fonctionnalité est prise en charge dans les ressources d’Adobe Experience Manager à l’aide du package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible via le partage de package.
+Vous pouvez activer la [!DNL Adobe Camera Raw] prise en charge du traitement des formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. La fonctionnalité est prise en charge dans [!DNL Adobe Experience Manager Assets] l’utilisation du package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible via le partage de package.
 
 >[!NOTE]
 >
 >La fonctionnalité ne prend en charge que les rendus JPEG. Il est pris en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
 
-Pour activer la prise en charge de Camera Raw dans Adobe Experience Manager Assets, procédez comme suit :
+Pour activer [!DNL Camera Raw] la prise en charge dans [!DNL Experience Manager Assets], procédez comme suit :
 
 1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
-1. Accès `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
+1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Open the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
 
@@ -53,13 +53,13 @@ Vous pouvez désormais importer des fichiers Camera Raw dans AEM Assets. After y
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
-*Figure : Options du volet latéral*
+*Figure : Options dans le volet latéral.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*Figure : Utiliser cette option pour apporter des modifications légères à vos images*
+*Figure : Utilisez cette option pour apporter des modifications légères à vos images.*
 
-Après avoir enregistré les modifications apportées à une image Camera Raw, un nouveau rendu `AdjustedPreview.jpg` est généré pour cette image. Pour les types d’images autres que Camera Raw, les modifications sont répercutées dans tous les rendus.
+After saving the edits to a [!DNL Camera Raw] image, a new rendition `AdjustedPreview.jpg` is generated for the image. For other image types except [!DNL Camera Raw], the changes are reflected in all the renditions.
 
 ## Bonnes pratiques, problèmes connus et limites {#best-practices}
 
@@ -67,4 +67,4 @@ La fonctionnalité présente les limites suivantes :
 
 * La fonctionnalité ne prend en charge que les rendus JPEG. Elle est prise en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
 * L’écriture différée des métadonnées n’est pas prise en charge pour les formats RAW et DNG.
-* La bibliothèque Camera Raw présente des limitations quant au nombre total de pixels qu’elle peut traiter à la fois. Actuellement, il peut traiter un maximum de 65 000 pixels sur le côté long d’un fichier ou 512 MP, quels que soient les critères rencontrés en premier.
+* The [!DNL Camera Raw] library has limitations around the total pixels it can process at a time. Actuellement, il peut traiter un maximum de 65 000 pixels sur le côté long d’un fichier ou 512 MP, quels que soient les critères rencontrés en premier.
