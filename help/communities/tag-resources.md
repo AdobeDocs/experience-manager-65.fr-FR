@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -81,7 +81,7 @@ L’administrateur appliquant les balises aux ressources d’activation doit con
 
 Si, par exemple, un `ski-catalog` a été créé et défini sur un catalogue nommé `Ski Catalog`, il peut avoir deux balises enfants : `lesson-1` et `lesson-2`.
 
-Ainsi, toute ressource d’activation balisée avec l’une des
+Ainsi, toute ressource d’activation balisée avec l’une des balises suivantes :
 
 * catalogue-ski:leçon-1
 * catalogue-ski:leçon-2
