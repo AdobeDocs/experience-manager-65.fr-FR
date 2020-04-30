@@ -1,22 +1,22 @@
 ---
-title: Configurer le balisage des ressources à l’aide du service de contenu dynamique
-description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans AEM à l’aide du service de contenu dynamique.
+title: Configurez le balisage de fichier à l’aide de Smart Content Service.
+description: Découvrez comment configurer le balisage intelligent et le balisage intelligent amélioré dans Adobe Experience Manager, à l’aide de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Configure asset tagging using the Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
-Vous pouvez intégrer Adobe Experience Manager (AEM) au service de contenu dynamique en utilisant Adobe I/O. Utilisez cette configuration pour accéder au service de contenu dynamique à partir d’AEM.
+You can integrate [!DNL Adobe Experience Manager] with the Smart Content Service using Adobe I/O. Use this configuration to access the Smart Content Service from within [!DNL Experience Manager].
 
-L’article détaille les tâches essentielles suivantes qui sont requises pour configurer le service de contenu dynamique. À l’arrière-plan, le serveur AEM authentifie vos informations d’identification de service avec la passerelle d’E/S Adobe avant de transmettre votre requête à Smart Content Service.
+L’article détaille les tâches essentielles suivantes qui sont requises pour configurer le service de contenu dynamique. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe I/O gateway before forwarding your request to the Smart Content Service.
 
-* Création d’une configuration de service de contenu dynamique dans AEM pour générer une clé publique. Obtention d’un certificat public pour l’intégration OAuth.
+* Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. Obtention d’un certificat public pour l’intégration OAuth.
 * Création d’une intégration dans Adobe I/O et téléchargement de la clé publique générée.
-* Configuration de votre instance AEM en utilisant la clé API et d’autres informations d’identification d’Adobe I/O.
+* Configure your [!DNL Experience Manager] instance using the API key and other credentials from Adobe I/O.
 * Facultativement, activation du balisage automatique lors du téléchargement de ressources.
 
 ## Conditions préalables {#prerequisites}
@@ -30,7 +30,7 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 Un certificat public permet d’authentifier votre profil sur Adobe I/O.
 
-1. From the AEM user interface, click the AEM logo, and go to **[!UICONTROL Tools > Cloud Services]**> **[!UICONTROL Legacy Cloud Services]**.
+1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils > Services]** Cloud > Services **** Cloud hérités.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, spécifiez un titre et un nom pour la configuration de balises intelligentes. Cliquez sur **[!UICONTROL Créer]**.
@@ -42,7 +42,7 @@ Un certificat public permet d’authentifier votre profil sur Adobe I/O.
 
    Laissez les autres champs vides pour l’instant (pour les remplir ultérieurement). Cliquez sur **[!UICONTROL OK]**.
 
-   ![Boîte de dialogue Service de contenu dynamique AEM pour fournir une URL de service de contenu](assets/aem_scs.png)
+   ![Boîte de dialogue Experience Manager Smart Content Service permettant de fournir l’URL du service de contenu](assets/aem_scs.png)
 
 1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
@@ -52,7 +52,7 @@ Un certificat public permet d’authentifier votre profil sur Adobe I/O.
 
 Lorsque le certificat expire, il n’est plus approuvé. Pour ajouter un nouveau certificat, procédez comme suit. Vous ne pouvez pas renouveler un certificat arrivé à expiration.
 
-1. Connectez-vous à votre déploiement AEM en tant qu’administrateur. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
+1. Log in your [!DNL Experience Manager] deployment as an administrator. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 
 1. Recherchez et cliquez sur l’utilisateur **[!UICONTROL dam-update-service]** . Cliquez sur l’onglet **[!UICONTROL KeyStore]**.
 1. Supprimez le fichier de stockage de clés **[!UICONTROL similaritysearch]** existant avec le certificat arrivé à expiration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
@@ -88,9 +88,9 @@ Pour utiliser les API du service de contenu dynamique, créez une intégration d
 
 ## Configuration du service de contenu dynamique {#configure-smart-content-service}
 
-Pour configurer l’intégration, utilisez les valeurs des champs Identifiant de compte technique, Identifiant d’organisation, Secret du client, Serveur d’autorisation et Clé API de l’intégration Adobe I/O. La création d’une configuration cloud de balises intelligentes permet d’authentifier les demandes d’API provenant de l’instance AEM.
+Pour configurer l’intégration, utilisez les valeurs des champs Identifiant de compte technique, Identifiant d’organisation, Secret du client, Serveur d’autorisation et Clé API de l’intégration Adobe I/O. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] instance.
 
-1. In Experience Manager, navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
+1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
 1. Sous **[!UICONTROL Ressources – Balises intelligentes]**, ouvrez la configuration créée ci-dessus. Sur la page de paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
 1. Pour les champs **[!UICONTROL Clé API]**, **[!UICONTROL ID de compte technique]**, **[!UICONTROL ID d’organisation]** et **[!UICONTROL Client secret]**, utilisez les valeurs générées ci-dessus.
@@ -99,7 +99,7 @@ Pour configurer l’intégration, utilisez les valeurs des champs Identifiant de
 
 Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour valider la configuration. Pour procéder à la validation, suivez ces étapes.
 
-1. Accédez à votre serveur AEM à l’adresse `https://[server]:[port]`.
+1. Accédez à votre [!DNL Experience Manager] serveur à `https://[aem_server]:[port]`.
 
 1. Accédez à **[!UICONTROL Outils > Opérations > Console Web]** pour ouvrir la console OSGi. Cliquez sur **[!UICONTROL Principal > JMX]**.
 1. Cliquez sur **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Les **[!UICONTROL tâches relatives à SimilaritySearch]** s’ouvrent alors.
@@ -109,7 +109,7 @@ Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour vali
 
 ## Activation du balisage intelligent dans le workflow Mettre à jour la ressource (facultatif) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. Dans Experience Manager, accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. Dans [!DNL Experience Manager]Outils > **[!UICONTROL Processus > Modèles]**.
 1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez le modèle de processus **[!UICONTROL Ressources de mise à jour de DAM]**.
 1. Click **[!UICONTROL Edit]** from the toolbar.
 1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape **[!UICONTROL Balisage intelligent de la ressource]** disponible dans la section Processus de DAM (gestion des actifs numériques) et placez-la après l’étape **[!UICONTROL Traiter les miniatures]**.
