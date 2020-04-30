@@ -4,7 +4,7 @@ description: Découvrez le de gestion des ressources  comme télécharger, tél�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -375,13 +375,13 @@ Pour d’un fichier à l’aide du clavier, procédez comme suit :
 
    ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de fin pour ajouter la date et l’heure pour le  de ressources](assets/schedule-activation.png)
 
-   *Figure : Planifier le  des ressources*
+   *Figure : Prévoyez l&#39; de ressources .*
 
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Assets ou via l’API HTTP.
 
    ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de désactivation pour ajouter la date et l’heure pour le  de ressources](assets/schedule-deactivation.png)
 
-   *Figure : Planifier la désactivation des actifs*
+   *Figure : Planifier la désactivation des ressources.*
 
 1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans AEM. YouTube requiert la publication de balises. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
@@ -718,7 +718,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 ![Tri des entrées de chronologie d’un fichier](assets/sort_timeline.gif)
 
-*Figure : Tri des entrées de chronologie d’un fichier*
+*Figure : Triez les entrées de la chronologie d’un fichier.*
 
 >[!NOTE]
 >
