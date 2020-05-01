@@ -1,14 +1,14 @@
 ---
 title: Formats pris en charge par Assets
-description: de formats de fichier pris en charge par les ressources AEM et par les médias dynamiques et fonctionnalités prises en charge pour chaque format.
+description: Liste de formats de fichier pris en charge par AEM Assets et par Dynamic Media et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1d16716d5fcf5b05a741b2d06d333e5f80e0d290
+source-git-commit: 134530e6e4cabc31342fc3136ec3218ba5acea4a
 
 ---
 
 
-# Formats Ressources pris en charge {#assets-supported-formats}
+# Formats de ressources pris en charge {#assets-supported-formats}
 
 AEM Assets prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME.
 
@@ -42,7 +42,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-## Formats d’image pixellisée pris en charge dans les médias dynamiques (#supported-raster-image-formats-dynamic-media)
+## Formats d’image pixellisée pris en charge dans Contenu multimédia dynamique (#supported-raster-image-formats-dynamic-media)
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -67,6 +67,17 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 * Concernant les fichiers EPS, l’écriture différée des métadonnées est prise en charge dans PostScript Document Structuring Convention (PS-Adobe) version 3.0 ou supérieure.
 
+## Formats d’image pixellisée non pris en charge dans Contenu multimédia dynamique (#unsupported-image-formats-dynamic-media)
+
+La liste suivante décrit les sous-types de formats de fichier image pixellisée qui *ne sont pas* pris en charge dans Contenu multimédia dynamique.
+
+* Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
+* Fichiers PSB.
+* Les fichiers PSD avec un espace colorimétrique autre que CMJN, RVB, Niveaux de gris ou Bitmap ne sont pas pris en charge. Les espaces colorimétriques DuoTone, Lab et Indexé ne sont pas pris en charge.
+* Fichiers PSD ayant une profondeur de bits supérieure à 16.
+* Fichiers TIFF contenant des données à virgule flottante.
+* Fichiers TIFF dotés d’un espace colorimétrique Lab.
+
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
 
@@ -89,7 +100,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 La bibliothèque Adobe PDF Rasterizer génère des miniatures de haute qualité et des aperçus pour les fichiers Adobe Illustrator et PDF de grande taille et riches en contenu. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
-* Fichiers AI/PDF gourmands en contenu qui nécessitent beaucoup de ressources pour être traités.
+* Fichiers AI/PDF à forte intensité de contenu qui nécessitent beaucoup de ressources pour être traités.
 * Fichiers AI/PDF pour lesquels les miniatures ne sont pas générées par défaut.
 * Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
@@ -97,7 +108,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Supported Image Transcoding library {#supported-image-transcoding-library}
 
-La bibliothèque Adobe Imaging Transcoding est une solution de traitement d’images qui exécute des fonctions essentielles de gestion des images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
+La bibliothèque Adobe Imaging Transcoding est une solution de traitement d’images qui exécute des fonctions de gestion d’images de base, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
 
 La bibliothèque de transcodage d’imagerie prend en charge les types MIME JPG/JPEG, PNG (8 et 16 bits), GIF, BMP, TIFF/TIFF compressé (sauf les fichiers TIFF 32 bits et les fichiers PTIFF), ICO et ICN.
 
@@ -107,9 +118,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
 
-## Formats de Ressources pris en charge {#supported-document-formats}
+## Formats de document Ressources pris en charge {#supported-document-formats}
 
-Les formats de  pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
+Les formats de Document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
 
 <!--
 DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
@@ -136,7 +147,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 | EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
 -->
 
-| Format | Stockage | [Gestion des métadonnées](metadata.md) |  texte<br> intégral  | [Extraction de métadonnées](metadata.md) | Thumbnail<br> generation | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
+| Format | Stockage | [Gestion des métadonnées](metadata.md) | extraction de texte<br> intégral | [Extraction de métadonnées](metadata.md) | Thumbnail<br> generation | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
@@ -157,7 +168,7 @@ DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migra
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Formats de  pris en charge dans les médias dynamiques (#supported--formats-dynamic-media)
+## Formats de document pris en charge dans Contenu multimédia dynamique (#supported-document-formats-dynamic-media)
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -221,7 +232,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 Les formats d’archives pris en charge et l’applicabilité des flux de travail DAM courants sont traités dans le tableau suivant.
 
-| Formats | Stockage | Création de versions | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -231,9 +242,9 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 ## Autres formats pris en charge {#other-supported-formats}
 
-Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques habituelle, telle que  la gestion des , des versions, des listes de contrôle d’accès, des flux de travaux, de la publication et des métadonnées, à l’exception des de médias dynamiques, est prise en charge pour tous les fichiers.
+Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques habituelle, telle que l’enregistrement, le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées, à l’exception de la Diffusion Contenu multimédia dynamique, est prise en charge pour tous les fichiers.
 
-| Formats | Stockage | Création de versions | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -245,7 +256,7 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 
 Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. AEM peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
 
-Un de types MIME pris en charge est disponible dans CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Une liste de types MIME pris en charge est disponible dans CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Extension de fichier | Type MIME/type de support Internet | Valeur de jobParam par défaut | Valeur de jobParam autorisée |
 |---|---|---|---|
