@@ -1,9 +1,9 @@
 ---
-title: Recommandations relatives au traitement des différents formats de fichier pris en charge à l’aide de [!DNL Adobe Experience Manager Assets].
-description: Meilleures pratiques pour traiter les différents types de fichiers pris en charge à l’aide de [!DNL Experience Manager Assets].
+title: Recommandations relatives au traitement des différents formats de fichier pris en charge à l’aide de [ !DNL Adobe Experience Manager Assets].
+description: Recommandations relatives au traitement des différents types de fichiers pris en charge à l’aide de [ !DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
 
 ---
 
@@ -16,13 +16,13 @@ Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AE
 
 >[!TIP]
 >
->If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Contactez le représentant du service à la clientèle Adobe pour mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
+>If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Adressez-vous au représentant du service à la clientèle d’Adobe pour mettre en oeuvre ces meilleures pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## [!DNL Adobe Camera Raw] bibliothèque {#adobe-camera-raw-library}
 
 Pour des performances optimales, Adobe recommande d’utiliser [!DNL Adobe Camera Raw] la bibliothèque pour les fichiers RAW et DNG.
 
-[!DNL Adobe Camera Raw] prend en charge les de couleurs CMJN comme entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
+[!DNL Adobe Camera Raw] prend en charge le profil de couleurs CMJN en tant qu’entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
 
 Pour plus d’informations, voir Prise en charge [de](/help/assets/camera-raw.md)Camera Raw.
 
@@ -34,7 +34,7 @@ Pour des résultats optimaux, Adobe recommande d’utiliser la bibliothèque Ado
 * Fichiers AI avec des miniatures qui ne sont pas générées à l’avance
 * Pour les fichiers AI avec des couleurs SPOT (PMS)
 
-Les miniatures et les aperçus générés à l’aide de l’interpréteur de PDF sont de qualité supérieure par rapport à la sortie de trame prête à l’emploi. La bibliothèque Adobe PDF Rasterizer ne prend en charge aucune conversion de l’espace colorimétrique. Quel que soit l’espace colorimétrique du fichier PDF source, Adobe PDF Rasterizer génère uniquement une sortie RVB.
+Les miniatures et les aperçus générés à l’aide de l’interpréteur de PDF sont de qualité supérieure par rapport à la sortie de trame prête à l’emploi. La bibliothèque Adobe PDF Rasterizer ne prend en charge aucune conversion d’espace colorimétrique. Quel que soit l’espace colorimétrique du fichier PDF source, Adobe PDF Rasterizer génère uniquement une sortie RVB.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
@@ -44,7 +44,7 @@ Adobe recommends that you use [!DNL Adobe InDesign Server] to extract [!DNL Adob
 
 [!DNL Dynamic Media] génère et diffuse plusieurs variations de contenu riche en temps réel via son réseau mondial, extensible et optimisé pour garantir de bonnes performances. Il diffuse des expériences d’affichage interactif et simplifie le processus de gestion des campagnes numériques. For details around enabling [!DNL Dynamic Media], see [Configuring Dynamic Media](/help/assets/config-dynamic.md).
 
-Currently, [!DNL Dynamic Media] can support videos up to 20 GB of content per file.
+Currently, [!DNL Dynamic Media] can support videos up to 15 GB of content per file.
 
 ## Bibliothèque ImageMagick {#imagemagick-library}
 
