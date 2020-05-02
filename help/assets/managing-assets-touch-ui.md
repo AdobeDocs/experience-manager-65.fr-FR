@@ -1,26 +1,28 @@
 ---
-title: Gestion des ressources numériques à l’aide des ressources AEM
-description: Découvrez le de gestion des ressources  comme télécharger, télécharger, modifier, rechercher, supprimer, annoter et mettre en version vos ressources numériques.
+title: Gérez vos ressources numériques dans [ ! DNL Adobe Experience Manager Assets].
+description: Découvrez les tâches de gestion des ressources telles que le téléchargement, la modification, la recherche, la suppression, l’annotation et la version de vos ressources numériques.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 1321aa3421455d78fd4562d6cb524aa232ee2ce1
 
 ---
 
 
-# Gestion des ressources numériques {#managing-assets-with-the-touch-optimized-ui}
+# Gérer vos ressources numériques {#manage-digital-assets}
 
-Cet article explique comment gérer et modifier les ressources dans Adobe Experience Manager (AEM) Assets. Pour commencer avec l’interface utilisateur et la mise en page, voir Gestion [de base de l’interface utilisateur](/help/sites-authoring/basic-handling.md)tactile. To manage Content Fragments, see [Managing Content Fragments](content-fragments-managing.md) assets.
+Vous [!DNL Adobe Experience Manager Assets] pouvez faire plus que simplement stocker et gérer vos actifs. [!DNL Experience Manager] offres des fonctionnalités de gestion des actifs de niveau entreprise. Vous pouvez modifier et partager des fichiers, lancer des recherches avancées, créer plusieurs rendus de dizaines de formats de fichier pris en charge, gérer des versions et des droits numériques, automatiser le traitement des fichiers, gérer et gérer les métadonnées, collaborer à l’aide d’annotations, etc.
+
+Cet article décrit les tâches de base de la gestion des ressources, telles que la création ou le transfert ; mises à jour des métadonnées ; copier, déplacer et supprimer ; publier, annuler la publication et rechercher des ressources. Pour comprendre l’interface utilisateur, voir [Prise en main de l’interface](/help/sites-authoring/basic-handling.md)utilisateur des ressources. To manage Content Fragments, see [manage Content Fragments](content-fragments-managing.md) assets.
 
 ## Création de dossiers {#creating-folders}
 
-Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. AEM Assets ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
+Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager Assets] ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
 >[!NOTE]
 >
->* Sharing an Assets folder of the type `sling:OrderedFolder` is not supported when sharing to Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
->* Experience Manager n’autorise pas l’utilisation de `subassets` mot comme nom d’un dossier. Il s’agit d’un mot-clé réservé au noeud qui contient des sous-ressources pour les ressources composées.
+>* Sharing an [!DNL Assets] folder of the type `sling:OrderedFolder` is not supported when sharing to Marketing Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
+>* [!DNL Experience Manager] n’autorise pas l’utilisation de `subassets` word comme nom de dossier. Il s’agit d’un mot-clé réservé au noeud qui contient des sous-ressources pour les ressources composées.
 
 
 1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier. Dans le menu, cliquez sur **[!UICONTROL Créer]**. Sélectionnez **[!UICONTROL Nouveau dossier]**.
@@ -41,7 +43,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-Vous pouvez transférer différents types de ressource (dont des images, des fichiers PDF, des fichiers RAW, etc.) de votre dossier local ou d’un lecteur réseau vers AEM Assets.
+Vous pouvez transférer différents types de ressource (dont des images, des fichiers PDF, des fichiers RAW, etc.) de votre dossier local ou d’un lecteur réseau vers [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -51,13 +53,13 @@ Vous pouvez choisir de transférer des ressources vers des dossiers avec ou sans
 
 Pour les dossiers auxquels un profil de traitement est affecté, le nom du profil s’affiche sur la vignette en mode Carte. En mode Liste, le nom du profil s’affiche dans la colonne **Profil de traitement.** Reportez-vous à la section [Profils de traitement](/help/assets/processing-profiles.md).
 
-Before uploading an asset, ensure that it is in a [format](/help/assets/assets-formats.md) that AEM Assets supports.
+Before uploading an asset, ensure that it is in a [format](/help/assets/assets-formats.md) that [!DNL Experience Manager Assets] supports.
 
-1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement où vous voulez ajouter des ressources numériques.
+1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. Pour charger les ressources, effectuez l’une des opérations suivantes :
 
    * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Then on the menu, tap **[!UICONTROL Files]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
-   * Dans un navigateur prenant en charge HTML5, faites glisser directement les ressources dans l’interface utilisateur d’Assets. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
+   * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
    ![Créer une option pour télécharger des fichiers](assets/create-options.png)
 
    Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
@@ -76,17 +78,17 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![Reprendre le transfert de fichier suspendu à l’aide de l’icône Lecture](assets/chlimage_1-6.png)
 
-   Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. Lorsque vous annulez le transfert, AEM Assets supprime la partie partiellement transférée de la ressource.
+   Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
    La possibilité de reprendre le téléchargement s’avère particulièrement utile dans les scénarios dans lesquels la bande passante est faible et le réseau dysfonctionne, car le téléchargement d’une ressource volumineuse prend un long moment. Vous pouvez suspendre l’opération de transfert et la reprendre ultérieurement lorsque la situation s’améliore. Lorsque vous reprenez le transfert, il commence au niveau où vous l’avez suspendu.
 
-   Pendant l’opération de transfert, AEM enregistre les parties de la ressource en cours de transfert sous forme de blocs de données dans le référentiel CRX. Une fois le transfert terminé, AEM regroupe ces blocs en un seul bloc de données dans le référentiel.
+   During the upload operation, [!DNL Experience Manager] saves the portions of the asset being uploaded as chunks of data in the CRX repository. When the upload completes, [!DNL Experience Manager] consolidates these chunks into a single block of data in the repository.
 
    To configure the cleanup task for the unfinished chunk upload jobs, go to `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
    Si vous transférez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous transférez la ressource, un message d’avertissement s’affiche.
 
-   Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotation ou recadrage, par exemple) que vous avez apportées à la ressource existante sont supprimées. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
+   Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les éventuelles modifications antérieures (annoter ou recadrer, par exemple) que vous avez apportées à la ressource existante sont supprimées. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
    ![Boîte de dialogue Conflit de nom pour résoudre le conflit de nom des ressources](assets/chlimage_1-7.png)
 
@@ -96,17 +98,17 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >Si la fonction Statistiques sur les ressources est activée pour effectuer le suivi des impressions/clics avec Adobe Analytics, l’ID de ressource régénéré invalide les données capturées pour la ressource dans Analytics.
 
-   If the asset you upload exists in AEM Assets, the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. Dans ce cas, les noms des fichiers n’ont pas d’importance.
+   If the asset you upload exists in [!DNL Assets], the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. Dans ce cas, les noms des fichiers n’ont pas d’importance.
 
    >[!NOTE]
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![Boîte de dialogue Fichier  détecté](assets/chlimage_1-8.png)
+   ![Boîte de dialogue Fichier détecté de Duplicata](assets/chlimage_1-8.png)
 
-   Pour conserver la ressource en double dans AEM Assets, appuyez/cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
+   To retain the duplicate asset in [!DNL Assets], tap/click **[!UICONTROL Keep]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
-   AEM Assets vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contenant un ou plusieurs caractères interdits, AEM Assets affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
+   [!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
    Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés.
 
@@ -116,25 +118,25 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    * Le nom du dossier de ressources ne doit pas contenir `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
    N’incluez pas de caractères spéciaux dans les extensions des noms de fichier.
 
-   ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui n’ont pas pu être téléchargés](assets/chlimage_1-10.png)
+   ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui ne parviennent pas à être téléchargés](assets/chlimage_1-10.png)
 
-   De plus, l’interface utilisateur d’Assets affiche la ressource la plus récente que vous avez chargée ou le dossier que vous avez créé en premier.
+   In addition, the [!DNL Assets] user interface displays the most recent asset that you upload or the folder that you created first.
 
-   Si vous annulez le transfert avant la fin de l’opération, AEM Assets arrête le transfert du fichier en cours et actualise le contenu. Toutefois, les fichiers déjà téléchargés ne sont pas supprimés.
+   If you cancel the upload operation before the files are uploaded, [!DNL Assets] stops uploading the current file and refreshes the content. Toutefois, les fichiers déjà téléchargés ne sont pas supprimés.
 
-   La boîte de dialogue Télécharger les éléments d’AEM Assets affiche le nombre de fichiers dont le transfert a réussi et ceux dont le transfert a échoué.
+   The upload progress dialog in [!DNL Assets] displays the count of successfully uploaded files and the files that failed to upload.
 
 ### Transferts en série {#serialuploads}
 
-Le chargement en masse de nombreuses ressources consomme d’importantes ressources d’E/S, ce qui peut avoir des répercussions négatives sur les performances de votre instance AEM Assets. Si votre connexion Internet est lente, le temps de chargement augmente considérablement en raison d’un pic dans l’E/S du disque. De plus, votre navigateur web peut appliquer des restrictions supplémentaires au nombre de requêtes POST qui peuvent être gérées par AEM Assets dans le cadre de chargements simultanés de ressources. Par conséquent, l’opération de chargement échoue ou prend fin prématurément. Autrement dit, AEM Assets peut ignorer certains fichiers lors de l’assimilation, voire n’assimiler aucun fichier.
+Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your [!DNL Assets] instance. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. Par conséquent, l’opération de chargement échoue ou prend fin prématurément. In other words, [!DNL Experience Manager Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
 
-Pour remédier à cette situation, AEM Assets assimile une ressource à la fois (chargement en série) au cours d’une opération de chargement en masse, plutôt que d’assimiler toutes les ressources simultanément.
+To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
 Le chargement en série de ressources est activé par défaut. To disable the feature and allow concurrent uploading, overlay the `fileupload` node in Crx-de and set the value of the `parallelUploads` property to `true`.
 
 ### Upload assets using FTP {#uploading-assets-using-ftp}
 
-Dynamic Media permet de transférer des ressources par lots via un serveur FTP. Si vous avez l’intention de télécharger des fichiers volumineux (> 1 Go) ou des dossiers et sous-dossiers entiers, utilisez FTP. Vous pouvez même configurer le transfert FTP pour qu’il s’effectue de manière récurrente.
+Dynamic Media permet de transférer des ressources par lots via un serveur FTP. Si vous avez l’intention de télécharger des fichiers volumineux (> 1 Go) ou des dossiers et sous-dossiers entiers, vous devez utiliser FTP. Vous pouvez même configurer le transfert FTP pour qu’il s’effectue de manière récurrente.
 
 >[!NOTE]
 >
@@ -142,9 +144,9 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 >[!NOTE]
 >
->Pour télécharger des fichiers via FTP en mode Contenu multimédia dynamique - Scene7, installez Feature Pack 18912 sur les instances d’auteur AEM. Contact [Adobe Customer Care](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)des ressources en vrac.
+>Pour télécharger des fichiers par FTP en mode Contenu multimédia dynamique - Scene7, installez Feature Pack 18912 sur les instances d’ [!DNL Experience Manager] auteur. Contact [Adobe Customer Care](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)de ressources en vrac.
 >
->Si vous utilisez le protocole FTP pour télécharger des ressources, les paramètres de téléchargement spécifiés dans AEM sont ignorés. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
+>If you use FTP for uploading assets, the upload settings specified in [!DNL Experience Manager] are ignored. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
@@ -159,12 +161,12 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
    >[!NOTE]
    >
-   >Lorsque vous transférez des ressources via FTP, les options de la tâche de transfert définies dans Dynamic Media Classic (S7) sont prioritaires sur les paramètres de traitement des ressources définis dans AEM.
+   >Lorsque vous transférez des ressources via FTP, les options de la tâche de transfert définies dans Dynamic Media Classic (S7) sont prioritaires sur les paramètres de traitement des ressources définis dans [!DNL Experience Manager].
 
 1. Dans le coin inférieur droit de la boîte de dialogue Télécharger les options de la tâche, appuyez sur **[!UICONTROL Enregistrer]**.
 1. Dans le coin inférieur droit de la page Télécharger, appuyez sur **[!UICONTROL Lancer le téléchargement]**.
 
-   Pour afficher la progression du téléchargement, appuyez sur **[!UICONTROL Tâches]** dans la barre de navigation globale. La page Tâches affiche la progression du téléchargement. Vous pouvez continuer à travailler dans AEM et revenir, à tout moment, à la page Tâches dans Dynamic Media Classic afin de consulter une tâche en cours.
+   Pour afficher la progression du téléchargement, appuyez sur **[!UICONTROL Tâches]** dans la barre de navigation globale. La page Tâches affiche la progression du téléchargement. You can continue working in [!DNL Experience Manager] and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
 Pour annuler une tâche de téléchargement en cours, appuyez ou cliquez sur **[!UICONTROL Annuler]** à côté de la durée.
 
 #### Options de la tâche de transfert {#upload-job-options}
@@ -177,13 +179,13 @@ Pour annuler une tâche de téléchargement en cours, appuyez ou cliquez sur **[
 | Décompresser les fichiers zip ou tar lors du téléchargement |  |  |
 | Options de tâche |  | Tap/ click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Tap the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
 |  | Quand | Sélectionnez Unique ou Périodique. Pour définir une tâche périodique, sélectionnez une option de répétition (Quotidien, Hebdomadaire, Mensuel ou Personnalisé) afin d’indiquer la fréquence souhaitée pour la tâche de transfert FTP. Indiquez ensuite les options de planification suivant vos besoins. |
-|  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et des sous-dossiers transférés sont saisis automatiquement dans AEM Assets. |
-|  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** - Choisissez l&#39;option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**** Transparence : sélectionnez l’option Transparence.<br> **Tolérance** - Faites glisser le curseur pour définir une tolérance de 0 à 1.Pour le rognage en fonction de la couleur, indiquez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur que vous avez sélectionnée dans l’angle de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
+|  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et des sous-dossiers transférés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
+|  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** - Choisissez l&#39;option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**** Transparence : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance comprise entre 0 et 1. Pour effectuer un rognage en fonction de la couleur, indiquez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans l’angle de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
 |  | Options de profils de couleurs | Sélectionnez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la livraison :<ul><li>Conservation des couleurs par défaut : conserve les couleurs des images sources lorsque les images comportent des informations d’espace colorimétrique ; il n’y a aucune conversion des couleurs. Actuellement, le profil colorimétrique approprié est déjà intégré dans pratiquement toutes les images. Cependant, si une image source CMJN ne contient pas de profil colorimétrique intégré, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage d’images sur des pages web.</li><li>Conserver l’espace colorimétrique original : conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion des couleurs s’effectue à l’aide des profils colorimétriques par défaut configurés dans les Paramètres de publication. Les profils de couleurs peuvent ne pas correspondre aux couleurs des fichiers créés avec cette option. Par conséquent, vous êtes invité à utiliser l’option de conservation des couleurs par défaut.</li><li>Personnaliser de > en<br> Permet d’accéder aux menus pour sélectionner un espace colorimétrique source (Convertir de) et un espace colorimétrique cible (Convertir en). Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
 |  | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Voir [Définition des options d’édition d’image lors du téléchargement](#setting-image-editing-options-at-upload). |
 |  | Options Postscript | Vous pouvez pixelliser les fichiers PostScript®, recadrer les fichiers, conserver les arrière-plans transparents et choisir une résolution ainsi qu’un espace colorimétrique.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la méthode d’attribution des noms de calque, extraire du texte et indiquer le mode d’ancrage des images dans les modèles.<br> Notez que les modèles ne sont pas pris en charge dans AEM.<br> Voir [Définition des options de téléchargement Photoshop](#setting-photoshop-upload-options). |
-|  | Options PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace de couleurs.<br> Notez que les catalogues électroniques ne sont pas pris en charge dans AEM. <br> Voir [Définition des options de téléchargement PDF](#setting-pdf-upload-options). |
+|  | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la méthode d’attribution des noms de calque, extraire du texte et indiquer le mode d’ancrage des images dans les modèles.<br> Notez que les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Voir [Définition des options de téléchargement Photoshop](#setting-photoshop-upload-options). |
+|  | Options PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace de couleurs.<br> Notez que les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Voir [Définition des options de téléchargement PDF](#setting-pdf-upload-options). |
 |  | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace de couleurs.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un paramètre vidéo prédéfini.<br> Voir [Définition des options de téléchargement eVideo](#setting-evideo-upload-options). |
 |  | Paramètres prédéfinis d’ensemble par lot | Pour créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir de fichiers téléchargés, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Les paramètres prédéfinis sont créés sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, voir [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Voir [Définition de paramètres prédéfinis d’ensemble par lot lors du téléchargement](#setting-batch-set-presets-at-upload). |
@@ -231,7 +233,7 @@ Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator 
 
 #### Définition des options de téléchargement Photoshop {#setting-photoshop-upload-options}
 
-Les fichiers Photoshop (PSD) sont le plus souvent utilisés pour créer des modèles d’image. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
+Les fichiers Photoshop Document (PSD) sont le plus souvent utilisés pour créer des modèles d’image. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
 
 Dynamic Media crée plusieurs images à partir d’un fichier PSD avec des calques si vous utilisez ce fichier pour créer un modèle ; il crée une image par calque.
 
@@ -239,7 +241,7 @@ Use the [!UICONTROL Crop Options] and [!UICONTROL Color Profile Options], descri
 
 >[!NOTE]
 >
->Les modèles ne sont pas pris en charge dans AEM.
+>Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].
 
 | Option | Sous-option | Description |
 |---|---|---|
@@ -259,7 +261,7 @@ Lorsque vous transférez un fichier PDF, vous pouvez le formater de différente
 
 >[!NOTE]
 >
->Les catalogues électroniques ne sont pas pris en charge dans AEM.
+>Les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager].
 
 Faites votre choix parmi les options suivantes :
 
@@ -282,11 +284,11 @@ Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Vidéo adaptative |  | Un paramètre prédéfini de codage unique qui fonctionne avec n’importe quel format pour créer des vidéos pour les  mobiles, les tablettes et les ordinateurs de bureau. Les vidéos source transférées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver les proportions de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
+| Vidéo adaptative |  | Un paramètre prédéfini de codage unique qui fonctionne avec n’importe quelle proportion pour créer des vidéos pour diffusion sur mobile, tablette et ordinateur de bureau. Les vidéos source transférées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver les proportions de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
 | Paramètres prédéfinis de codage uniques | Trier les paramètres prédéfinis de codage | Sélectionnez Nom ou Taille pour trier les paramètres prédéfinis de codage répertoriés sous Bureau, Mobile et Tablette par nom ou par taille de résolution. |
-|  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo en flux continu ou progressive sur les ordinateurs de bureau.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données  que vous souhaitez. |
-|  | Mobile | Créez un fichier MP4 pour les  sur les périphériques mobiles iPhone ou Android.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données  de votre choix. |
-|  | Tablette | Créez un fichier MP4 pour les  de sur les tablettes iPad ou Android.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données  de de votre choix. |
+|  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo progressive ou en flux continu sur des ordinateurs de bureau.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données de cible désirés. |
+|  | Mobile | Créez un fichier MP4 pour la diffusion sur les appareils mobiles iPhone ou Android.Sélectionnez un ou plusieurs formats avec la taille de résolution et le débit de données de cible désirés. |
+|  | Tablette | Créez un fichier MP4 pour la diffusion sur les tablettes iPad ou Android.Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données de cible désirés. |
 
 #### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
@@ -296,21 +298,21 @@ Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble pa
 
 ### Chargements en continu {#streamed-uploads}
 
-Si vous chargez de nombreuses ressources vers AEM, les requêtes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du chargement et peut même entraîner l’expiration de certaines tâches de chargement. AEM Assets prend en charge le chargement de ressources en continu. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Le transfert en continu est activé par défaut dans AEM Assets.
+If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Experience Manager Assets] prend en charge le téléchargement en flux continu des ressources. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Le chargement en continu est désactivé lorsqu’AEM s’exécute sur un serveur JEE équipé d’une version de servlet-api antérieure à 3.1.
+>Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
 
 ### Extraction d’une archive ZIP contenant des ressources {#extractzip}
 
-Vous pouvez télécharger des archives ZIP comme toute autre ressource prise en charge. Les mêmes règles de nom de fichier s’appliquent aux fichiers ZIP. AEM vous permet d’extraire une archive ZIP vers un emplacement DAM. Si les fichiers d’archives ne contiennent pas d’extension ZIP, activez la détection du type de fichier à l’aide du contenu.
+Vous pouvez télécharger des archives ZIP comme toute autre ressource prise en charge. Les mêmes règles de nom de fichier s’appliquent aux fichiers ZIP. [!DNL Experience Manager] vous permet d’extraire une archive ZIP vers un emplacement DAM. Si les fichiers d’archives ne contiennent pas d’extension ZIP, activez la détection du type de fichier à l’aide du contenu.
 
 Sélectionnez une archive ZIP à la fois, cliquez sur **[!UICONTROL Extraire l’archive]**, puis sélectionnez un dossier de destination. Sélectionnez une option pour gérer les conflits, le cas échéant. Si les ressources du fichier ZIP existent déjà dans le dossier de destination, vous pouvez sélectionner l’une des options suivantes : ignorer l’extraction, remplacer les fichiers existants, conserver les deux fichiers en attribuant un nouveau nom ou créer une nouvelle version.
 
-Une fois l’extraction terminée, AEM vous avertit dans la zone de notification. Lorsqu’AEM extrait le fichier ZIP, vous pouvez reprendre votre travail sans interrompre l’extraction.
+After the extraction is complete, [!DNL Experience Manager] notifies you in the notification area. While [!DNL Experience Manager] extracts the ZIP, you can go back to your work without interrupting the extraction.
 
-![Notification du fichier ZIP ](assets/Zip-extraction-notification.png)
+![Notification de l&#39;extraction du fichier ZIP](assets/Zip-extraction-notification.png)
 
 La fonctionnalité présente certaines limites :
 
@@ -323,7 +325,7 @@ La fonctionnalité présente certaines limites :
 
 Pour prévisualiser une ressource, procédez comme suit.
 
-1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement de la ressource à prévisualiser.
+1. From the [!DNL Assets] user interface, navigate to the location of the asset you want to preview.
 1. Appuyez sur la ressource concernée pour l’ouvrir.
 
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats) (avec modification interactive).
@@ -332,28 +334,28 @@ Pour prévisualiser une ressource, procédez comme suit.
 
    Appuyez sur **[!UICONTROL Réinitialiser]** pour réinitialiser la vue à sa taille d’origine.
 
-   ![Réinitialiser l’icône pour ramener l’utilisateur au d’origine](assets/chlimage_1-11.png)
+   ![Réinitialiser l’icône pour ramener l’utilisateur à la vue d’origine](assets/chlimage_1-11.png)
 
-**de fichiers à l’aide des touches du clavier uniquement**
+**Prévisualisation de fichiers à l’aide des touches du clavier uniquement**
 
-Pour d’un fichier à l’aide du clavier, procédez comme suit :
+Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme suit :
 
-1. Dans l’interface utilisateur Ressources, accédez au fichier souhaité à l’aide des touches `Tab` fléchées.
+1. Dans l’interface [!DNL Assets] utilisateur, accédez à la ressource de votre choix à l’aide `Tab` des touches fléchées.
 
-1. Appuyez sur `Enter` la touche de la ressource souhaitée pour l’ouvrir. Vous pouvez effectuer un zoom sur les fichiers en mode .
+1. Appuyez sur `Enter` la touche &lt;Entrée> pour l’ouvrir. Vous pouvez effectuer un zoom sur les ressources en mode prévisualisation.
 
 1. Pour effectuer un zoom avant sur le fichier :
-   1. Utilisez `Tab` la touche pour déplacer la cible d’action vers l’icône de zoom avant.
+   1. Utilisez `Tab` la touche pour déplacer la cible d’action sur l’icône de zoom avant.
    1. Utilisez `Enter` la touche pour effectuer un zoom avant sur l’image.
-   Pour effectuer un zoom arrière, utilisez `Tab` la touche pour déplacer la cible d’action vers l’icône de zoom arrière et appuyez sur `Enter`.
+   Pour effectuer un zoom arrière, utilisez `Tab` la touche pour déplacer la cible d’action vers l’icône de zoom arrière et appuyez sur `Enter`la touche.
 
-1. Utilisez `Shift` + `Tab` touches pour recentrer la mise au point sur l’image.
+1. Utilisez les touches `Shift` + `Tab` pour recentrer la mise au point sur l’image.
 
 1. Utilisez les touches fléchées pour vous déplacer dans l’image agrandie.
 
 >[!MORELIKETHIS]
 >
->* [de fichiers](/help/assets/previewing-assets.md)de médias dynamiques.
+>* [Prévisualisation des ressources](/help/assets/previewing-assets.md)de médias dynamiques.
 >* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
 
 
@@ -363,7 +365,7 @@ Pour d’un fichier à l’aide du clavier, procédez comme suit :
 
 1. Sélectionnez la ressource et appuyez/cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils pour afficher ses propriétés. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Propriétés]** sur la carte de la ressource.
 
-   ![Action rapide des propriétés sur le de cartes de ressources](assets/properties_quickaction.png)
+   ![Action rapide Propriétés sur la vue de carte de ressources](assets/properties_quickaction.png)
 
 1. Sur la page [!UICONTROL Propriétés], modifiez les propriétés de métadonnées sous différents onglets. Par exemple, sous l’onglet **[!UICONTROL De base]**, modifiez le titre, la description et ainsi de suite.
 
@@ -373,17 +375,17 @@ Pour d’un fichier à l’aide du clavier, procédez comme suit :
 
 1. Pour planifier une date/heure spécifique pour l’activation de la ressource, utilisez le sélecteur de date situé en regard du champ **[!UICONTROL Heure d’activation]**.
 
-   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de fin pour ajouter la date et l’heure pour le  de ressources](assets/schedule-activation.png)
+   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de fin pour ajouter la date et l’heure pour l’activation de la ressource](assets/schedule-activation.png)
 
-   *Figure : Prévoyez l&#39; de ressources .*
+   *Figure : Planification de l’activation de la ressource.*
 
-1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web Assets ou via l’API HTTP.
+1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web ou via l’API HTTP.[!DNL Assets]
 
-   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de désactivation pour ajouter la date et l’heure pour le  de ressources](assets/schedule-deactivation.png)
+   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de désactivation pour ajouter la date et l’heure de désactivation de fichier](assets/schedule-deactivation.png)
 
    *Figure : Planifier la désactivation des ressources.*
 
-1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans AEM. YouTube requiert la publication de balises. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
+1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans [!DNL Experience Manager]. [!DNL YouTube] requiert des balises pour la publication. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
@@ -391,7 +393,7 @@ Pour d’un fichier à l’aide du clavier, procédez comme suit :
 
 1. Pour fournir une évaluation de la ressource, appuyez/cliquez sur l’onglet **[!UICONTROL Avancé]**, puis appuyez/cliquez sur l’étoile à l’emplacement approprié pour affecter l’évaluation de votre choix.
 
-   ![Onglet Avancé dans Propriétés du fichier pour attribuer une évaluation](assets/ratings.png)
+   ![Onglet Avancé dans Propriétés du fichier pour attribuer une note](assets/ratings.png)
 
    Le score d’évaluation que vous affectez à la ressource s’affiche sous **[!UICONTROL Vos évaluations]**. Le score d’évaluation moyen que la ressource a reçu des utilisateurs qui ont évalué la ressource s’affiche sous **[!UICONTROL Évaluation]**. De plus, la répartition des scores d’évaluation contribuant au score d’évaluation moyen s’affiche sous **[!UICONTROL Ventilation d’évaluation]**. Vous pouvez rechercher des ressources en fonction de leur score d’évaluation moyen.
 
@@ -404,8 +406,8 @@ Pour d’un fichier à l’aide du clavier, procédez comme suit :
    * Des solutions de création où la ressource a été récemment utilisée.
    Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](/help/assets/touch-ui-asset-insights.md).
 
-1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]**.
-1. Accédez à l’interface utilisateur d’Assets. Les propriétés des métadonnées modifiées, notamment le titre, la description et les évaluations, sont affichées sur la carte des ressources en mode Carte et dans les colonnes pertinentes en mode Liste.
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+1. Navigate to the [!DNL Assets] user interface. Les propriétés des métadonnées modifiées, notamment le titre, la description et les évaluations, sont affichées sur la carte des ressources en mode Carte et dans les colonnes pertinentes en mode Liste.
 
 ## Copie de ressources {#copying-assets}
 
@@ -413,13 +415,13 @@ Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressour
 
 Quelques attributs uniques à une copie spécifique d’une ressource ne sont pas reportés. Voici quelques exemples :
 
-* ID du fichier, date et heure de création, versions et historique des versions. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
+* ID de fichier, date et heure de création, ainsi que versions et historique des versions. Some of these properties are indicated by the properties `jcr:uuid`, `jcr:created`, and `cq:name`.
 
 * L’heure de création et les chemins référencés sont uniques pour chaque ressource et chaque rendu.
 
 Les autres propriétés et informations de métadonnées sont conservées. Une copie partielle n’est pas créée lors de la copie d’une ressource.
 
-1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources, puis appuyez/cliquez sur l’icône **[!UICONTROL Copier]** dans la barre d’outils. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]**   depuis la carte de la ressource.
+1. In [!DNL Assets] interface, select one or more assets and tap/click the **[!UICONTROL Copy]** icon from the toolbar. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]**   depuis la carte de la ressource.
    ![Icône Copier dans la barre d’outils de l’interface utilisateur des ressources](assets/copy_icon.png)
 
    >[!NOTE]
@@ -430,11 +432,12 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >Si vous copiez une ressource au même endroit, AEM génère automatiquement une variante du nom. Par exemple, si vous copiez une ressource intitulée `Square`, AEM génère automatiquement le titre de sa copie `Square1`.
+   >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
 1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
 
-   ![Icône Coller dans la barre d’outils](assets/chlimage_1-14.png)de l’interface utilisateur des ressources Les ressources sont ensuite copiées à cet emplacement.
+   ![Icône Coller dans la barre d’outils de l’interface utilisateur des ressources](assets/chlimage_1-14.png)
+   [!DNL Assets] sont ensuite copiées à cet emplacement.
 
    >[!NOTE]
    >
@@ -447,7 +450,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Déplacer]**   de la barre d’outils.
    ![Icône Déplacer dans la barre d’outils de l’interface utilisateur des ressources](assets/move_icon.png)
 
-1. Dans l’Assistant de déplacement des ressources, procédez comme suit :
+1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
    * Spécifiez le nom de la ressource après l’avoir déplacée. Ensuite, appuyez/cliquez sur **[!UICONTROL Suivant]** pour continuer.
 
@@ -490,11 +493,11 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Dans le panneau **[!UICONTROL Rendus]**, consultez la liste des rendus générés pour la ressource.
 
-   ![Panneau Rendus sur la page Détails des ressources](assets/renditions_panel.png)
+   ![Panneau Rendus sur la page Détails du fichier](assets/renditions_panel.png)
 
    >[!NOTE]
    >
-   >Par défaut, AEM Assets n’affiche pas le rendu d’origine de la ressource en mode Aperçu. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets de manière à afficher les rendus d’origine dans ce mode.
+   >By default, [!DNL Assets] does not display the original rendition of the asset in the preview mode. If you are an administrator, you can use overlays to configure [!DNL Assets] to display original renditions in the preview mode.
 
 1. Sélectionnez un rendu afin de l’afficher ou de le supprimer.
 
@@ -514,7 +517,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    >
    >Si vous sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, la barre d’outils change de contexte et affiche uniquement les actions pertinentes par rapport au rendu. Certaines options, telles que l’icône Télécharger le rendu, ne sont pas visibles. Pour afficher ces options dans la barre d’outils, accédez à la page des détails de la ressource.
 
-   Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. AEM Assets affiche le rendu selon les dimensions exactes ou les plus proches de celles spécifiées.
+   Vous pouvez configurer les dimensions du rendu à afficher dans la page de détails d’une ressource image ou vidéo. Based on the dimensions you specify, [!DNL Assets] displays the rendition with the exact or closest dimensions.
 
    Pour configurer les dimensions du rendu d’une image au niveau des détails de la ressource, recouvrez le nœud `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) et configurez la valeur de la propriété de largeur. Configurez la propriété **[!UICONTROL size (Long) in KB]** (taille (Longueur) en Ko) à la place de la largeur pour personnaliser le rendu dans la page des détails de la ressource selon la taille de l’image. Pour une personnalisation dépendant de la taille, la propriété `preferOriginal` affecte les préférences à l’image initiale si la taille du rendu correspondant est supérieure à celle de l’image initiale.
 
@@ -528,7 +531,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    >
    >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge.
 
-Pour plus d’informations sur la génération et l’affichage des sous-ressources, voir [Gestion des sous-ressources](managing-linked-subassets.md#generate-subassets).
+Pour plus d’informations sur la création et l’affichage des sous-ressources, voir [Gestion des sous-ressources](managing-linked-subassets.md#generate-subassets).
 
 ## Suppression des ressources {#deleting-assets}
 
@@ -559,7 +562,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 ## Téléchargement de ressources {#downloading-assets}
 
-Voir [Téléchargement de ressources à partir d’AEM](/help/assets/download-assets-from-aem.md).
+Voir [Téléchargement de fichiers à partir d’Experience Manager](/help/assets/download-assets-from-aem.md).
 
 ## Publication des ressources {#publishing-assets}
 
@@ -607,31 +610,31 @@ Voir [Téléchargement de ressources à partir d’AEM](/help/assets/download-as
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 
-Les groupes d’utilisateurs fermés permettent de limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’AEM. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
+A closed user group (CUG) is used to limit access to specific asset folders published from [!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
 Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de limiter l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
-1. Sélectionnez un dossier dans l’IU Assets, puis appuyez/cliquez sur l’icône Propriétés de la barre d’outils pour afficher la page de propriétés.
+1. Select a folder from the [!DNL Assets] interface, and tap/click the [!UICONTROL Properties] icon from the toolbar to display the properties page.
 1. Sous l’onglet **[!UICONTROL Autorisations]**, ajoutez les membres ou les groupes sous **[!UICONTROL Groupe d’utilisateurs fermé]**.
 
-   ![Ajouter utilisateur dans un groupe d’utilisateurs fermé](assets/add_user.png)
+   ![Utilisateur Ajouter dans un groupe d’utilisateurs fermé](assets/add_user.png)
 
-1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Ensuite, sélectionnez le chemin de la page de connexion dans AEM et enregistrez les modifications.
+1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Then, select the path to a login page in [!DNL Experience Manager], and save the changes.
 
-   ![Activer et sélectionner la page de connexion à afficher lorsque l’utilisateur accède au dossier](assets/login_page.png)
+   ![Activer et sélectionner la page de connexion à afficher dans le dossier d’accès utilisateur](assets/login_page.png)
 
    >[!NOTE]
    >
-   >Si vous ne spécifiez pas le chemin d’une page de connexion, AEM affiche la page de connexion par défaut dans l’instance de publication.
+   >If you do not specify the path to a login page, [!DNL Experience Manager] displays the default login page in the publish instance.
 
 1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
-1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’AEM vous a authentifié.
+1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. The folder is displayed after [!DNL Experience Manager] authenticates you.
 
 ## Recherche de ressources    {#assetsearch}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
-Pour des recherches simples, avancées et personnalisées pour découvrir et utiliser les ressources les plus appropriées, voir [Recherche des ressources dans AEM](search-assets.md).
+For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in Experience Manager](search-assets.md).
 
 ## Actions rapides {#quick-actions}
 
@@ -644,23 +647,23 @@ Les icônes d’action rapide sont disponibles pour une ressource à la fois. Se
 
 You can view, navigate through, and select assets with any of the available views (Card, Column, and List) using the **[!UICONTROL Select]** option.
 
-Dans   et dans la colonne , l’option **[!UICONTROL Sélectionner]** s’affiche lorsque vous passez le pointeur sur la miniature du fichier.
+Dans la vue de la vue de liste et de la colonne, l’option **[!UICONTROL Sélectionner]** s’affiche lorsque vous placez le pointeur sur la miniature de la ressource.
 
-![Sélection de fichiers dans  de](assets/select_quick_in_listview.png)
+![Sélection de fichiers dans la vue de liste](assets/select_quick_in_listview.png)
 
-![Sélection de fichiers dans le de colonnes](assets/select_quick_in_columnview.png)
+![Sélection de fichiers dans la vue de colonnes](assets/select_quick_in_columnview.png)
 
-Dans les  de carte, l’option **[!UICONTROL Sélectionner]** s’affiche sous forme d’action rapide.
+Dans la vue de carte, l’option **[!UICONTROL Sélectionner]** s’affiche sous la forme d’une action rapide.
 
-![Sélectionner une action rapide sur le de cartes](assets/select_quick_action.png)
+![Sélectionner une action rapide sur la vue de cartes](assets/select_quick_action.png)
 
-Lorsque vous parcourez un dossier ou une collection dans l’interface utilisateur Ressources d’un navigateur, vous pouvez sélectionner tous les fichiers affichés ou chargés à l’aide de l’option [!UICONTROL Sélectionner tout] située dans le coin supérieur droit. Au départ, seules 100 ressources sont chargées dans les  de carte et 200 dans les  de . D’autres ressources sont chargées dans le  lorsque vous faites défiler la page des résultats de la recherche. L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les fichiers chargés.
+Lorsque vous parcourez un dossier ou une collection dans l’interface [!DNL Assets] utilisateur d’un navigateur, vous pouvez sélectionner tous les fichiers affichés ou chargés à l’aide de l’option [!UICONTROL Sélectionner tout] située dans le coin supérieur droit. Au départ, seules 100 ressources sont chargées dans la vue de cartes et 200 dans la vue de listes. D’autres ressources sont chargées dans la vue lorsque vous faites défiler la page des résultats de la recherche. L’option [!UICONTROL Sélectionner tout] sélectionne uniquement les ressources chargées.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Modification des images {#editing-images}
 
-Les outils de modification de l’interface d’AEM Assets permettent d’effectuer de petites tâches de modification sur les ressources d’image. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
+The editing tools in the [!DNL Assets] interface let you perform small editing jobs on image assets. Vous pouvez recadrer les images, les faire pivoter, les retourner et effectuer d’autres tâches de modification. Vous pouvez également ajouter des zones cliquables aux ressources.
 
 >[!NOTE]
 >
@@ -718,7 +721,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 ![Tri des entrées de chronologie d’un fichier](assets/sort_timeline.gif)
 
-*Figure : Triez les entrées de la chronologie d’un fichier.*
+*Figure : Tri des entrées de chronologie pour une ressource.*
 
 >[!NOTE]
 >
@@ -732,7 +735,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketins la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
-Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par AEM Assets dépendent du navigateur.
+Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Video formats that [!DNL Assets] supports depend on the browser.
 
 >[!NOTE]
 >
@@ -747,7 +750,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
-   ![Zone de commentaire dans Ajouter boîte de dialogue Annotation](assets/chlimage_1-30.png)
+   ![Zone de commentaire dans la boîte de dialogue Annotation Ajouter](assets/chlimage_1-30.png)
 
 1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour signaler une annotation à Aaron MacDonald, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l’adresse électronique d’Aaron dans la liste pour la marquer avec le commentaire. De même, vous pouvez marquer d’autres utilisateurs à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
@@ -755,7 +758,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    >
    >Si l’utilisateur ne dispose pas des droits d’administration, les suggestions s’affichent uniquement s’il dispose de droits de lecture sur */home* dans Crx-de.
 
-   ![Spécifiez l’adresse électronique de l’utilisateur et ajoutez un commentaire pour le notifier à l’utilisateur.](assets/chlimage_1-31.png)
+   ![Indiquez l’adresse électronique de l’utilisateur et ajoutez un commentaire pour en avertir l’utilisateur.](assets/chlimage_1-31.png)
 
 1. Après avoir ajouté l’annotation, cliquez sur **[!UICONTROL Ajouter]** pour l’enregistrer. Une notification relative à l’annotation est envoyée à Aaron.
 
@@ -766,7 +769,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    >Vous pouvez ajouter plusieurs annotations avant de les enregistrer.
 
 1. Appuyez/cliquez sur **[!UICONTROL Fermer]** pour quitter le mode Annotation.
-1. Pour afficher la notification, connectez-vous à AEM Assets avec les informations d’identification d’Aaron MacDonald et cliquez ensuite sur l’icône **[!UICONTROL Notifications]**.
+1. To view the notification, log in to [!DNL Assets] with Aaron MacDonald&#39;s credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
@@ -774,11 +777,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 
-   ![Sélectionnez l’icône  utilisateur, puis Mes préférences pour ouvrir Préférences utilisateur.](assets/User-profile-preferences.png)
+   ![Sélectionnez l’icône de profil d’utilisateur, puis Mes préférences pour ouvrir les préférences utilisateur.](assets/User-profile-preferences.png)
 
    Indiquez la couleur de votre choix dans la zone **[!UICONTROL Couleur de l’annotation]**, puis cliquez/appuyez sur **[!UICONTROL Accepter]**.
 
-   ![Sélectionnez la couleur de l’annotation dans les préférences utilisateur pour définir la couleur de la personnalité de l’utilisateur.](assets/Annotation-color.png)
+   ![Sélectionnez la couleur d’annotation dans les préférences utilisateur pour définir la couleur de personnalité de l’utilisateur.](assets/Annotation-color.png)
 
 >[!NOTE]
 >
@@ -794,11 +797,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
-   ![Afficher tous les  du dans le journal](assets/chlimage_1-36.png)
+   ![Afficher toute la liste dans le journal](assets/chlimage_1-36.png)
 
    Dans le panneau **[!UICONTROL Chronologie]**, appuyez/cliquez sur un commentaire pour afficher l’annotation correspondante sur l’image.
 
-   ![Panneau Chronologie pour de l’annotation  sur l’image](assets/chlimage_1-37.png)
+   ![Annotation de vue du panneau Montage sur l&#39;image](assets/chlimage_1-37.png)
 
    Pour supprimer un commentaire spécifique, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
 
@@ -810,7 +813,7 @@ Vous pouvez également choisir de n’imprimer que les annotations ou l’état 
 
 Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l’icône **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un état de révision.
 
-1. Ouvrez la page d’aperçu d’une ressource à partir de l’interface utilisateur d’Assets.
+1. From the [!DNL Assets] interface, open the preview page for an asset.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour imprimer toutes les annotations et l’état de révision, ignorez l’étape 3 et passez directement à l’étape 4.
@@ -818,11 +821,11 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
 1. Pour imprimer des annotations spécifiques, sélectionnez-les dans la chronologie.
 
-   ![Sélectionnez une annotation dans le journal pour l’imprimer.](assets/chlimage_1-38.png)
+   ![Sélectionnez une annotation dans le journal pour l&#39;imprimer.](assets/chlimage_1-38.png)
 
    Pour n’imprimer que l’état de révision, sélectionnez-le dans la chronologie.
 
-   ![Pour imprimer uniquement l’état de révision d’Annotation, sélectionnez-le dans le journal](assets/chlimage_1-39.png)
+   ![Pour imprimer uniquement l&#39;état de révision d&#39;Annotation, sélectionnez-le dans le journal](assets/chlimage_1-39.png)
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Imprimer]** dans la barre d’outils.
 
@@ -830,7 +833,7 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
 1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/l’état de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou l’état de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
 
-   ![Sélectionner la position de l’annotation/état de révision à afficher au format PDF à partir de la boîte de dialogue Imprimer](assets/Print-annotation-dialog.png)
+   ![Sélectionner la position de l&#39;annotation/l&#39;état de révision à afficher au format PDF à partir de la boîte de dialogue Imprimer](assets/Print-annotation-dialog.png)
 
    Vous pouvez choisir d’autres paramètres selon la position à laquelle vous souhaitez que les annotations ou l’état de révision apparaissent dans le document PDF imprimé. Si vous souhaitez que les annotations ou l’état de révision apparaissent sur une page différente de la ressource imprimée, sélectionnez **[!UICONTROL Page suivante]**.
 
@@ -852,16 +855,16 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
    Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![Configuration pour imprimer l’annotation des fichiers sur le PDF](assets/chlimage_1-44.png)
+   ![Configuration pour imprimer l’annotation des ressources sur le document PDF](assets/chlimage_1-44.png)
 
    Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
 
-Si une ressource contient des annotations dans des langues étrangères (en particulier dans des langues non latines), vous devez d’abord configurer le service Font Manager CQ-DAM-Handler-Gibson sur le serveur AEM pour pouvoir les imprimer. Lorsque vous configurez ce service, indiquez le chemin d’accès aux polices à utiliser pour ces langues.
+If an asset includes annotations in foreign languages (especially non-latin languages), you must first configure CQ-DAM-Handler-Gibson Font Manager Service on the [!DNL Experience Manager] server to be able to print these annotations. Lorsque vous configurez ce service, indiquez le chemin d’accès aux polices à utiliser pour ces langues.
 
 1. Ouvrez la page de configuration du service Font Manager CQ-DAM-Handler-Gibson à partir de l’URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Pour configurer le service Font Manager CQ-DAM-Handler-Gibson, effectuez l’une des opérations suivantes :
 
-   * Dans Répertoire des polices système, indiquez le chemin d’accès complet au répertoire des polices sur votre système. Par exemple, si vous utilisez un Mac, vous pouvez indiquer */Library/Fonts*. AEM récupère les polices dans ce répertoire.
+   * Dans Répertoire des polices système, indiquez le chemin d’accès complet au répertoire des polices sur votre système. Par exemple, si vous utilisez un Mac, vous pouvez indiquer */Library/Fonts*. [!DNL Experience Manager] récupère les polices dans ce répertoire.
    * Créez un répertoire nommé `fonts` dans le dossier ``crx-quickstart``. Le service Font Manager CQ-DAM-Handler-Gibson récupère automatiquement les polices à l’emplacement `crx-quickstart/fonts`. Vous pouvez remplacer ce chemin d’accès par défaut dans l’option Répertoire des polices Adobe Server.
 
    * Créez un dossier pour les polices sur votre système et stockez-y les polices de votre choix. Indiquez ensuite le chemin d’accès complet à ce dossier sous Répertoire des polices du client.
@@ -871,9 +874,9 @@ Si une ressource contient des annotations dans des langues étrangères (en part
 
    * Incluez la chaîne `<font_family_name_of_custom_font, sans-serif>` dans l’option font-family. Par exemple, si vous souhaitez imprimer des annotations en chinois, en japonais et en coréen (CJC), insérez la chaîne `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` dans l’option font-family. Si vous souhaitez imprimer des annotations en hindi, téléchargez la police appropriée et configurez la famille de polices comme suit : Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Redémarrez l’instance AEM.
+1. Restart the [!DNL Experience Manager] instance.
 
-Voici un exemple de configuration d’AEM en vue d’imprimer des annotations en chinois, en japonais et en coréen (CJC) :
+Here is an example of how you can configure [!DNL Experience Manager] to print annotations in CJK (Chinese, Japanese and Korean):
 
 1. Téléchargez les polices Google Noto CJK à partir des liens ci-dessous et enregistrez-les dans le répertoire des polices configuré dans le service Font Manager.
 
@@ -884,24 +887,24 @@ Voici un exemple de configuration d’AEM en vue d’imprimer des annotations en
 1. Configurez le fichier PDF d’annotation en définissant le paramètre font-family sur `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Cette configuration est disponible par défaut et fonctionne pour l’ensemble des langues européennes, ainsi que pour le chinois, le japonais et le coréen (CJC).
 1. Si la langue de votre choix est différente de celles mentionnées à l’étape 2, ajoutez une entrée appropriée (séparée par des virgules) à la famille de polices font-family par défaut.
 
-## Création, gestion,  et rétablissement de versions de ressources {#asset-versioning}
+## Créer, gérer, prévisualisation et rétablir des versions de ressources {#asset-versioning}
 
-Le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. De plus, il aide à restaurer ultérieurement des ressources dans leur état précédent. Par exemple, si vous souhaitez annuler une modification apportée à une ressource, restaurez la version non modifiée de la ressource. Dans Experience Manager, vous pouvez créer une version, la révision en cours,  les différences côte à côte entre deux versions d’images et restaurer une ressource dans sa version précédente.
+Le contrôle de version permet de créer un instantané des ressources numériques à un moment donné. De plus, il aide à restaurer ultérieurement des ressources dans leur état précédent. Par exemple, si vous souhaitez annuler une modification apportée à une ressource, restaurez la version non modifiée de la ressource. Dans [!DNL Experience Manager], vous pouvez créer une version, vue la révision actuelle, vue des différences côte à côte entre deux versions d’images et restaurer une ressource dans sa version précédente.
 
-Vous pouvez créer des versions dans Experience Manager dans les cas suivants :
+Vous pouvez créer des versions dans [!DNL Experience Manager] les cas suivants :
 
 * Téléchargez un fichier portant le même nom de fichier qu’il existe au même emplacement. Il peut s’agir d’une nouvelle ressource ou d’une version modifiée de la même ressource.
-* Modifiez une image dans Experience Manager et enregistrez les modifications.
+* Modifiez une image dans [!DNL Experience Manager] et enregistrez les modifications.
 * Modifiez les métadonnées d’un fichier.
-* Utilisez l’application de bureau AEM pour extraire un fichier existant, le modifier et [télécharger vos modifications](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Utilisez [!DNL Experience Manager] l’application de bureau pour extraire une ressource existante, la modifier et [télécharger vos modifications](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
-1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version et cliquez dessus pour ouvrir son  de. Dans le coin supérieur gauche de la page, ouvrez le menu, puis sélectionnez **[!UICONTROL Chronologie]**.
+1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version et cliquez dessus pour ouvrir sa prévisualisation. Dans le coin supérieur gauche de la page, ouvrez le menu, puis sélectionnez **[!UICONTROL Chronologie]**.
 
    ![Dans le menu de navigation de gauche, sélectionnez l’option Chronologie](assets/timeline.png)
 
-   *Figure : Ouvrez le menu dans la zone supérieure gauche de la page et sélectionnez l’option[!UICONTROL Chronologie].*
+   *Figure : Ouvrez le menu en haut à gauche de la page et sélectionnez l’option[!UICONTROL Chronologie].*
 
 1. Pour créer une version de la ressource :
 
@@ -909,38 +912,38 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
    * Cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource. Vous pouvez éventuellement ajouter une étiquette et un commentaire.
    * Cliquez sur **[!UICONTROL Créer]** pour créer une version.
 
-      ![Création d’une version de fichier à partir de la barre latérale](assets/create-new-version-from-timeline.png)
+      ![Créer une version de fichier à partir de la barre latérale](assets/create-new-version-from-timeline.png)
 
       *Figure : Créez une version d’un fichier à partir de la barre latérale gauche du[!UICONTROL journal]chronologique.*
 
-1. Pour  une version d’une ressource :
+1. Pour vue d’une version d’une ressource :
 
    * Cliquez sur **[!UICONTROL Afficher tout]** dans le [!UICONTROL journal].
-   * Cliquez sur **[!UICONTROL Versions]**. Toutes les versions créées pour un fichier sont répertoriées dans la barre latérale gauche.
+   * Cliquez sur **[!UICONTROL Versions]**. Toutes les versions créées pour une ressource sont répertoriées dans la barre latérale gauche.
 
       ![ Option Sélectionner des versions du journal](assets/versions_option.png)
 
-   * Sélectionnez une version spécifique de la ressource, puis cliquez sur **[!UICONTROL Version]**.
+   * Sélectionnez une version spécifique de la ressource, puis cliquez sur Version **[!UICONTROL de la]** Prévisualisation.
 
 1. Pour revenir à une ancienne version de la ressource, procédez comme suit. Une fois la version rétablie, elle s’affiche dans l’ [!DNL Assets] interface et peut être utilisée.
 
    * Cliquez sur une version de la ressource. Vous pouvez éventuellement ajouter une étiquette et un commentaire.
    * Click **[!UICONTROL Revert to this Version]**.
 
-      ![Sélectionnez une version pour y revenir.](assets/select_version.png)
+      ![Sélectionner une version pour y revenir](assets/select_version.png)
 
       *Figure : Sélectionnez une version et revenez-y. Il devient la version actuelle qui est ensuite disponible pour les utilisateurs de DAM.*
 
 1. Pour comparer deux versions d’une image, procédez comme suit :
    * Cliquez sur la version à comparer à la version actuelle.
-   * Faites glisser le curseur vers la gauche pour superposer cette version à la version actuelle et comparer.
+   * Faites glisser le curseur vers la gauche pour superposer cette version sur la version actuelle et la comparer.
    ![Utilisez le curseur pour comparer les versions sélectionnées d’un fichier à la version actuelle.](assets/version-slider.gif)
 
-   *Figure : Utilisez le curseur pour comparer facilement les versions sélectionnées d’un fichier avec la version actuelle.*
+   *Figure : Utilisez le curseur pour comparer facilement les versions sélectionnées d’un fichier à la version actuelle.*
 
 ### Start a workflow on an asset {#starting-a-workflow-on-an-asset}
 
-Pour appliquer un flux de travail au traitement d’une ressource, voir [Flux de travail  sur une ressource](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
+Pour appliquer un processus au traitement d’une ressource, reportez-vous à la section Processus de [début sur une ressource](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
 ## Collections {#collections}
 
