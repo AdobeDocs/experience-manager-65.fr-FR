@@ -1,16 +1,16 @@
 ---
-title: Utilisez les ressources connectées pour partager des ressources DAM dans le processus de création de [!DNL Adobe Experience Manager Sites].
-description: Utilisez les ressources disponibles sur un déploiement distant de [!DNL Adobe Experience Manager Assets] lors de la création de vos pages Web sur un autre déploiement de site Experience Manager.
+title: Utilisez les ressources connectées pour partager des ressources DAM dans le processus de création de [ ! DNL Adobe Experience Manager Sites].
+description: Utilisez les ressources disponibles dans un déploiement distant de [ !DNL Adobe Experience Manager Assets] lors de la création de vos pages Web dans un autre déploiement de site Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 2cdcea028814b40fb178e63f583939df27a46cad
 
 ---
 
 
 # Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Il est possible de répartir géographiquement les déploiements existants qui sont nécessaires pour travailler en tandem ou les acquisitions menant à une infrastructure hétérogène que le parent  vouloir utiliser ensemble.
+Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Il est possible de répartir géographiquement les déploiements existants qui sont requis pour travailler en tandem ou les acquisitions menant à une infrastructure hétérogène que la société parent souhaite utiliser ensemble.
 
 [!DNL Adobe Experience Manager Sites] offre des fonctionnalités pour créer des pages web.  est le système de gestion des actifs numériques (DAM) qui fournit les ressources requises pour les sites web.[!DNL Adobe Experience Manager Assets] [!DNL Experience Manager] prend désormais en charge le cas d’utilisation ci-dessus en intégrant [!DNL Experience Manager Sites] et [!DNL Experience Manager Assets].
 
@@ -25,7 +25,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
 * utilisateurs faisant partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] comme service Cloud. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans Experience Manager en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)Cloud.
+* Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. [!DNL Experience Manager] La version 6.5 [!DNL Assets] fonctionne [!DNL Experience Manager] en tant que service Cloud. Pour plus d’informations, voir la fonctionnalité Ressources [connectées dans Experience Manager en tant que service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)Cloud.
 
    |  | [!DNL Experience Manager Sites]as a Cloud Service | Experience Manager 6.5 [!DNL Sites] sur AMS | Experience Manager 6.5 [!DNL Sites] sur site |
    |---|---|---|---|
@@ -35,10 +35,10 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 ### Formats de fichiers pris en charge {#mimetypes}
 
-Les auteurs peuvent rechercher des images et les types de suivants dans l’Outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom Experience Manager component that extends the default `Download` or `Image` components. Les  de formats pris en charge sont les suivants :
+Les auteurs peuvent rechercher des images et les types de documents suivants dans l’outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Documents can be added to the `Download` component and images can be added to the `Image` component. Authors can also add the remote assets in any custom Experience Manager component that extends the default `Download` or `Image` components. La liste des formats pris en charge est la suivante :
 
 * **Formats** d’image : Les formats d’image pris en charge par le composant [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image sont pris en charge par les ressources connectées. [!DNL Dynamic Media] les images ne sont pas prises en charge.
-* **Formats** de  : Voir [Formats](assets-formats.md#supported-document-formats)de pris en charge par les ressources connectées.
+* **Formats** de Document : Voir Formats [de document pris en charge par les ressources](assets-formats.md#supported-document-formats)connectées.
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
 
@@ -46,12 +46,12 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 
 | Rôle | Portée | Groupe d’utilisateurs | Nom d’utilisateur dans la présentation | Condition requise |
 |---|---|---|---|---|
-| [!DNL Sites] administrator | Local | Administrateur Experience Manager | `admin` | Set up Experience Manager, configure integration with the remote [!DNL Assets] deployment. |
-| Utilisateur DAM | Local | Création | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
-| [!DNL Sites] création | Local | Author (with read access on the remote DAM and author access on local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Les auteurs recherchent et parcourent des ressources dans un système de gestion des actifs numériques distant à l’aide de l’outil de recherche de contenu et des images requises dans les pages Web locales. The credentials of `ksaner` DAM user are used. |
-| [!DNL Assets] administrator | distant | Administrateur Experience Manager | `admin` sur Experience Manager distant | Configurez le partage des ressources cross-origin (CORS). |
-| Utilisateur DAM | distant | Création | `ksaner` sur Experience Manager distant | Rôle d’auteur sur le déploiement distant d’Experience Manager. Recherchez et parcourez les ressources dans la fonction Ressources connectées à l’aide de l’outil de recherche de contenu. |
-| Distributeur DAM (utilisateur technique) | Distant | Créateurs de modules et auteurs de sites | `ksaner` sur Experience Manager distant | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Ce rôle n’est pas identique aux deux rôles `ksaner` ci-dessus et appartient à un groupe d’utilisateurs différent.  |
+| [!DNL Sites] administrator | Local | Experience Manager `administrators` | `admin` | Set up Experience Manager, configure integration with the remote [!DNL Assets] deployment. |
+| Utilisateur DAM | Local | `Authors` | `ksaner` | Used to view and duplicate the fetched assets at `/content/DAM/connectedassets/`. |
+| [!DNL Sites] création | Local | `Authors` (avec accès en lecture sur le DAM distant et accès auteur sur le site local [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. Les auteurs effectuent des recherches et parcourent des ressources dans la gestion des actifs numériques distants à l’aide de l’outil de recherche de contenu et en utilisant les images requises dans les pages Web locales. The credentials of `ksaner` DAM user are used. |
+| [!DNL Assets] administrator | distant | Experience Manager `administrators` | `admin` sur Experience Manager distant | Configurez le partage des ressources cross-origin (CORS). |
+| Utilisateur DAM | distant | `Authors` | `ksaner` sur Experience Manager distant | Rôle d’auteur sur le déploiement distant d’Experience Manager. Recherchez et parcourez les ressources dans la fonction Ressources connectées à l’aide de l’outil de recherche de contenu. |
+| Distributeur DAM (utilisateur technique) | Distant | `Authors` | `ksaner` sur Experience Manager distant | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Ce rôle n’est pas identique aux deux rôles `ksaner` ci-dessus et appartient à un groupe d’utilisateurs différent.  |
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -64,7 +64,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. Dans le dossier du fichier JAR, exécutez la commande suivante sur un terminal pour créer chaque serveur Experience Manager.
       `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
-   1. Au bout de quelques minutes, le du serveur Experience Manager  réussi. Consider this [!DNL Experience Manager Sites] deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
+   1. Après quelques minutes, le serveur Experience Manager se début correctement. Consider this [!DNL Experience Manager Sites] deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
 
 1. Ensure that the users and roles with local scope exist on the Experience Manager Sites deployment and on the [!DNL Experience Manager Assets] deployment on AMS. Create a technical user on [!DNL Assets] deployment and add to the user group mentioned in [users and groups involved](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
@@ -74,7 +74,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. Identifiants d’un distributeur DAM (utilisateur technique).
    1. In **[!UICONTROL Mount Point]** field, enter the local Experience Manager path where Experience Manager fetches the assets. For example, `remoteassets` folder.
    1. Adjust the values of **[!UICONTROL Original Binary transfer optimization Threshold]** depending on your network. Un rendu de ressource dont la taille est supérieure à ce seuil est transféré de façon asynchrone. 
-   1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both Experience Manager deployments. Dans ce cas, la limite de seuil n’a pas d’importance puisque les fichiers binaires réels résident sur la banque de données et ne sont pas transférés.
+   1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both Experience Manager deployments. Dans ce cas, la limite de seuil n’a aucune importance puisque les fichiers binaires réels résident sur la banque de données et ne sont pas transférés.
       ![Exemple de configuration standard pour Ressources partagées](assets/connected-assets-typical-config.png)
    *Figure : Configuration standard pour les ressources connectées.*
 
@@ -111,7 +111,7 @@ Les auteurs de site web utilisent l’outil de recherche de contenu pour se conn
 
 Les auteurs peuvent utiliser les ressources disponibles à la fois sur les instances DAM locale et distante, dans une page web unique. Utilisez l’outil de recherche de contenu pour basculer entre la recherche sur l’instance DAM locale ou sur l’instance DAM distante.
 
-Seules les balises des ressources distantes sont récupérées qui possèdent une balise correspondante exacte avec la même hiérarchie de taxonomie, disponible sur l’ [!DNL Sites] instance locale. Toutes les autres balises sont ignorées. Les auteurs peuvent rechercher des ressources distantes à l’aide de toutes les balises présentes dans le déploiement distant d’Experience Manager, car Experience Manager  une recherche de texte intégral  une recherche de texte intégral.
+Seules les balises des ressources distantes sont récupérées qui possèdent une balise correspondante exacte avec la même hiérarchie de taxonomie, disponible sur l’ [!DNL Sites] instance locale. Toutes les autres balises sont ignorées. Les auteurs peuvent rechercher des ressources distantes à l’aide de toutes les balises présentes dans le déploiement distant d’Experience Manager, dans la mesure où Experience Manager offre une recherche de texte intégral.
 
 ### Présentation de l’utilisation {#walk-through-of-usage}
 
@@ -119,19 +119,19 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
 1. Navigate to the [!DNL Assets] user interface on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from [!DNL Experience Manager] workspace. Vous pouvez également y accéder `https://[assets_servername_ams]:[port]/assets.html/content/dam` dans un navigateur. Téléchargez les ressources de votre choix.
 1. On the [!DNL Sites] instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Indiquez `ksaner` comme nom d’utilisateur, sélectionnez l’option fournie, puis cliquez sur **[!UICONTROL OK]**.
-1. Ouvrez une page du site web We.Retail via **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL fr]** > **[!UICONTROL fr]**. Modifiez la page. Vous pouvez également accéder `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` dans un navigateur pour modifier une page.
+1. Ouvrez une page du site web We.Retail via **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL fr]** > **[!UICONTROL fr]**. Modifiez la page. Vous pouvez également accéder `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` à un navigateur pour modifier une page.
 
    Cliquez sur **[!UICONTROL Activer/désactiver le panneau]** latéral dans le coin supérieur gauche de la page.
 
 1. Open the [!UICONTROL Assets] tab and click **[!UICONTROL Log in to Connected Assets]**.
 1. Provide the credentials -- `ksaner` as user name and `password` as password. This user has authoring permissions on both the [!DNL Experience Manager] deployments.
-1. Recherchez la ressource que vous avez ajoutée dans DAM. Les ressources distantes s’affichent dans le panneau de gauche. Filtrez les images ou les documents, puis les types de documents pris en charge. Faites glisser les images sur un `Image` composant et  sur un `Download` composant.
+1. Recherchez la ressource que vous avez ajoutée dans DAM. Les ressources distantes s’affichent dans le panneau de gauche. Filtrez les images ou les documents, puis les types de documents pris en charge. Faites glisser les images sur un `Image` composant et les documents sur un `Download` composant.
 
    The fetched assets are read-only on the local [!DNL Experience Manager Sites] deployment. You can still use the options provided by your [!DNL Experience Manager Sites] components to edit the fetched asset. La modification par composants est non destructive.
 
    ![Options de filtrage des types de documents et des images lors de la recherche de fichiers sur DAM distant](assets/filetypes_filter_connected_assets.png)
 
-   *Figure : Options permettant de filtrer les types de  de et les images lors de la recherche de ressources sur DAM distant.*
+   *Figure : Options de filtrage des types de document et des images lors de la recherche de ressources sur DAM distant.*
 
 1. Un auteur de site est informé de la récupération asynchrone d&#39;une ressource et de l’échec d’une tâche de récupération. Les auteurs peuvent consulter les informations détaillées sur la récupération des tâches et des erreurs dans l’[interface utilisateur](/help/assets/asynchronous-jobs.md) des tâches asynchrones pendant, voire après la création.
 
@@ -158,14 +158,14 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 * Les ressources locales ne sont pas synchronisées avec les ressources d’origine sur le déploiement distant. Tout retrait, modification ou suppression d’autorisation sur le déploiement DAM n’est pas propagé en aval.
 * Les ressources locales sont des copies en lecture seule. Les composants d’Experience Manager effectuent des modifications non destructives des ressources. Aucune autre modification n’est autorisée.
 * Les ressources récupérées localement sont disponibles à des fins d’écriture uniquement. Les workflows de mise à jour de ressources ne peuvent pas être appliqués et les métadonnées ne peuvent pas être modifiées.
-* Seules les images et les formats de répertoriés sont pris en charge. [!DNL Dynamic Media] les ressources, les fragments de contenu et les fragments d’expérience ne sont pas pris en charge.
+* Seules les images et les formats de document répertoriés sont pris en charge. [!DNL Dynamic Media] les ressources, les fragments de contenu et les fragments d’expérience ne sont pas pris en charge.
 * Les schémas de métadonnées ne sont pas récupérés.
 * All [!DNL Sites] authors have read permissions on the fetched copies, even if they do not have access to the remote DAM deployment.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
 * Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
-* Il n’est pas possible d’utiliser une ressource distante en tant que vignette de page dans l’interface utilisateur Propriétés [!UICONTROL de la] page. Vous pouvez définir une miniature d’une page Web dans l’interface utilisateur Propriétés [!UICONTROL de la] page à partir de la [!UICONTROL miniature] en cliquant sur [!UICONTROL Sélectionner l’image].
+* Il n’est pas possible d’utiliser une ressource distante comme miniature de page dans l’interface utilisateur Propriétés [!UICONTROL de] la page. Vous pouvez définir une miniature d’une page Web dans l’interface utilisateur Propriétés [!UICONTROL de la] page à partir de la [!UICONTROL miniature] en cliquant sur [!UICONTROL Sélectionner l’image].
 
-**Configuration et licence**
+**Configuration et octroi de licences**
 
 * [!DNL Experience Manager Assets] le déploiement sur AMS est pris en charge.
 * [!DNL Experience Manager Sites] peut se connecter à un seul [!DNL Experience Manager Assets] référentiel à la fois.
@@ -174,7 +174,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 
 **Utilisation**
 
-* Seule la fonctionnalité prise en charge consiste à rechercher des ressources distantes et à faire glisser les ressources distantes sur la page locale pour créer du contenu.
+* Seule la fonctionnalité prise en charge permet de rechercher des ressources distantes et de faire glisser les ressources distantes sur la page locale pour créer du contenu.
 * L’opération de récupération échoue après 5 secondes. Les auteurs peuvent rencontrer des problèmes lors de la récupération des ressources, par exemple en cas de problèmes de réseau. Authors can re-attempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
 * Simple edits that are non-destructive and the edit supported via the [!DNL Experience Manager] `Image` component, can be done on fetched assets. Les ressources sont en lecture seule.
 
@@ -183,4 +183,4 @@ Les ressources récupérées peuvent être utilisées comme n’importe quel aut
 Pour résoudre les problèmes liés aux scénarios d’erreur courants, procédez comme suit :
 
 * Si vous ne pouvez pas rechercher des fichiers distants à partir de l’outil de recherche de contenu, vérifiez à nouveau que les rôles et autorisations requis sont bien appliqués.
-* Une ressource récupérée sur un DAM distant risque de ne pas être publiée sur une page Web pour les raisons suivantes : il n&#39;existe pas à distance, au même titre que les autorisations appropriées pour la récupérer ; une erreur réseau s’est produite. Assurez-vous que le fichier n’est pas supprimé du DAM distant ou que les autorisations ne sont pas modifiées ; veiller à ce que les conditions préalables appropriées soient remplies; recommencez à ajouter le fichier à la page et republiez. Recherchez dans la [liste des tâches asynchrones](/help/assets/asynchronous-jobs.md) les erreurs de récupération de ressources.
+* Une ressource récupérée sur un DAM distant risque de ne pas être publiée sur une page Web pour les raisons suivantes : il n&#39;existe pas à distance, au même titre que les autorisations appropriées pour la récupérer ; une erreur réseau s’est produite. Assurez-vous que le fichier n&#39;est pas supprimé du DAM distant ou que les autorisations ne sont pas modifiées ; veiller à ce que les conditions préalables appropriées soient remplies ; réessayez d’ajouter le fichier à la page et de republier. Recherchez dans la [liste des tâches asynchrones](/help/assets/asynchronous-jobs.md) les erreurs de récupération de ressources.
