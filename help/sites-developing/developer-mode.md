@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
 
 ---
 
@@ -36,13 +36,9 @@ Ils aident les développeurs à :
 >
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
->
->    * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
->
->* nécessite les permissions/privilèges appropriés :
->
->    * L’accès au mode Développeur est attribué aux utilisateurs disposant d’un accès en écriture sur `/apps`.
->
+   >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
+>* N’est disponible que pour les utilisateurs membres du `administrators` groupe.
+
 
 >[!CAUTION]
 >
@@ -74,7 +70,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](/help/sites-developing/developer-mode.md#components)**: affiche une arborescence de composants, similaire à l’arborescence[de](/help/sites-authoring/author-environment-tools.md#content-tree)contenu pour les auteurs
+* **[Composants](/help/sites-developing/developer-mode.md#components)**: affiche une arborescence de composants, similaire à l&#39;arborescence[de](/help/sites-authoring/author-environment-tools.md#content-tree)contenu pour les auteurs.
 
 * **[Erreurs](/help/sites-developing/developer-mode.md#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
