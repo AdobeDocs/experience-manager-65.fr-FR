@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -21,18 +21,26 @@ Adobe Classifications exports classifications data to [Adobe Analytics](/help/si
 
 Pour configurer cela :
 
-1. Accédez à la section **Adobe Analytics** via **Outils, Services Cloud**.
-1. Ajoutez une nouvelle configuration. Le modèle de configuration **Adobe Adobe Classifications** s’affiche sous la configuration **Structure Adobe Analytics**. Indiquez un **titre** et un **nom** selon les besoins :
+1. Avec la **Navigation**, sélectionnez **Outils**, **Services cloud**, puis **Services cloud hérités**.
+1. Accédez à **Adobe Analytics** et sélectionnez **Afficher les configurations**.
+1. Click the **[+]** link next to your Adobe Analytics configuration.
 
-   ![aa-25](assets/aa-25.png)
+1. Dans la boîte de dialogue **Créer une structure** :
 
-1. Cliquez sur **Créer** pour configurer les paramètres 
+   * Spécifiez un **Titre**.
+   * Vous pouvez éventuellement spécifier le **Nom**, pour le nœud qui stocke les détails de la structure dans le référentiel.
+   * Select **Adobe Analytics Classifications**
+   puis cliquez sur **Créer**.
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   ![Boîte de dialogue Créer une structure](assets/aa-25.png)
+
+1. La boîte de dialogue Paramètres **des** classifications s’ouvre pour modification.
+
+   ![Boîte de dialogue Paramètres des classifications](assets/aa-classifications-settings.png)
 
    Les propriétés sont par exemple les suivantes :
 
-   | **Champ** | **Description** |
+   | **Field (Champ)** | **Description** |
    |---|---|
    | Activé | Sélectionnez **Oui** pour activer les paramètres d’Adobe Classifications. |
    | Remplacer en cas de conflit | Sélectionnez **Oui** pour remplacer toute collision de données. Par défaut, cette option est définie sur **Non**. |
@@ -51,7 +59,7 @@ Pour configurer cela :
 
 Les enregistrements sont traités par pages. Par défaut, les classifications Adobe créent des pages d’un format de page de 1 000.
 
-Une page peut avoir une taille maximale de 25 000 pages, par définition dans les classifications Adobe et peut être modifiée à partir de la console Felix. Au cours de l’exportation, les classifications Adobe verrouillent le noeud source afin d’empêcher les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
+Une page peut avoir une taille maximale de 2 5000 par définition dans les classifications Adobe et peut être modifiée à partir de la console Felix. Lors de l’exportation, les classifications Adobe verrouillent le noeud source pour empêcher les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
 
 Pour modifier la taille de page :
 
@@ -69,7 +77,7 @@ Pour modifier la taille de page :
 
 Un exportateur peut utiliser un transformateur pour transformer les données d’exportation vers un format spécifique. For Adobe Classifications, a subinterface `SAINTTransformer<String[]>` implementing the Transformer interface has been provided. This interface is used to restrict the data type to `String[]` which is used by the SAINT API and to have a marker interface to find such services for selection.
 
-Dans l’implémentation par défaut de SAINTDefaultTransformer, les ressources enfants de la source de l’exportateur sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Namespaced properties (containing `:`) are disregarded.
+Dans l’implémentation par défaut SAINTDefaultTransformer, les ressources enfants de la source d’exportation sont traitées comme des enregistrements avec des noms de propriété comme clés et des valeurs de propriété comme valeurs. La colonne **Clé** est automatiquement ajoutée en tant que première colonne ; sa valeur est le nom du nœud. Namespaced properties (containing `:`) are disregarded.
 
 *Structure de nœud :*
 
