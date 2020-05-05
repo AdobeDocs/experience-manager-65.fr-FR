@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
 
 # Connexion à Adobe Analytics et création de structures {#connecting-to-adobe-analytics-and-creating-frameworks}
 
-Pour effectuer le suivi des données Web de vos pages AEM dans Adobe Analytics, créez une configuration Adobe Analytics Cloud Services et une structure Adobe Analytics :
+Pour suivre les données Web de vos pages AEM dans Adobe Analytics, créez une configuration Adobe Analytics Cloud Services et une structure Adobe Analytics :
 
-* **** Configuration d’Adobe Analytics : Informations sur votre compte Adobe Analytics. La configuration d’Adobe Analytics permet à AEM de se connecter à Adobe Analytics. Créez une configuration Adobe Analytics pour chaque compte que vous utilisez.
-* **** Adobe Analytics Framework : Ensemble de mappages entre les propriétés de la suite de rapports Adobe Analytics et les variables CQ. Utilisez une structure pour configurer la façon dont les données de votre site web renseignent vos rapports Adobe Analytics. Les structures sont associées à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
+* **Configuration d’Adobe Analytics :** Informations relatives à votre compte Adobe Analytics. La configuration d’Adobe Analytics permet à AEM de se connecter à Adobe Analytics. Créez une configuration Adobe Analytics pour chaque compte que vous utilisez.
+* **Adobe Analytics Framework :** Ensemble de mappages entre les propriétés de la suite de rapports Adobe Analytics et les variables CQ. Utilisez une structure pour configurer la façon dont les données de votre site web renseignent vos rapports Adobe Analytics. Les cadres sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
 
 Lorsque vous associez une page Web à une structure, celle-ci effectue le suivi pour cette page et ses descendants. Les vues de page peuvent ensuite être récupérées dans Adobe Analytics et affichées dans la console Sites.
 
@@ -50,7 +50,7 @@ Avant de commencer, assurez-vous que vos informations d’identification vous pe
 
 ### Configuration d’AEM pour utiliser vos centres de données Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Vous devez configurer AEM pour utiliser le centre de données qui héberge votre suite de rapports Adobe Analytics. Le tableau suivant répertorie les centres de données disponibles et leur URL.
+Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Vous devez configurer AEM pour qu’il utilise le centre de données qui héberge votre suite de rapports Adobe Analytics. Le tableau suivant répertorie les centres de données disponibles et leur URL.
 
 | Centre de données | URL |
 |---|---|
@@ -110,7 +110,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 >Par exemple, une structure est configurée pour utiliser la suite de rapports *diiweretail* et l’instance de serveur sélectionnée est l’instance de création. Lorsque les pages sont publiées avec la structure, les appels sont toujours émis vers Adobe Analytics, mais ces appels ne contiennent pas le RSID. Seuls les appels effectués à partir de l’instance de création incluent le RSID.
 
 1. Avec la **Navigation**, sélectionnez **Outils**, **Services cloud**, puis **Services cloud hérités**.
-1. Faites défiler l’affichage jusqu’à **Adobe Analytics** et cliquez sur **[+]** en regard de **Configurations disponibles**.
+1. Accédez à **Adobe Analytics** et sélectionnez **Afficher les configurations**.
 1. Click the **[+]** link next to your Adobe Analytics configuration.
 
 1. Dans la boîte de dialogue **Créer une structure** :
@@ -126,7 +126,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 
    >[!NOTE]
    >
-   >L’outil de recherche de contenu situé à gauche est renseigné par des variables Adobe Analytics (Variables SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
+   >L’outil de recherche de contenu sur la gauche est renseigné avec les variables Adobe Analytics (Variables SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
 
 1. Utilisez ensuite le menu déroulant **Mode d’exécution** (situé à côté de l’identifiant de suite de rapports) pour sélectionner les instances de serveur qui doivent envoyer des informations à la suite de rapports.
 
@@ -186,7 +186,7 @@ Les descendants de la page héritent de l’association avec la structure. Par e
 
 ### Pages vues {#page-views}
 
-Lorsqu’une page est associée à une structure Adobe Analytics, le nombre de pages vues peut être affiché dans la vue Liste de la console Sites.
+Lorsqu’une page est associée à une structure Adobe Analytics, le nombre de vues de page peut être affiché dans la vue de Liste de la console Sites.
 
 Voir [Affichage des données d’analyse de page](/help/sites-authoring/page-analytics-using.md) pour plus de détails.
 
