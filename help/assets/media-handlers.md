@@ -1,18 +1,21 @@
 ---
-title: Traiter les fichiers à l’aide des gestionnaires de médias et des  de
-description: Découvrez les gestionnaires de médias et comment utiliser les  de pour effectuer des  sur vos ressources numériques.
+title: Traiter des fichiers à l’aide de gestionnaires de médias et de workflows
+description: Découvrez les gestionnaires de médias et comment utiliser des workflows pour effectuer des tâches sur vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 72%
 
 ---
 
 
 # Process assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Adobe Experience Manager (AEM) Assets s’accompagne d’un ensemble de workflows et de gestionnaires de médias par défaut destinés au traitement des ressources. Un flux de travail définit le à exécuter sur les ressources, puis délègue le spécifique aux gestionnaires de médias, par exemple la génération de vignettes ou lede métadonnées.
+Adobe Experience Manager (AEM) Assets s’accompagne d’un ensemble de workflows et de gestionnaires de médias par défaut destinés au traitement des ressources. Un processus définit les tâches à exécuter sur les ressources, puis délègue les tâches spécifiques aux gestionnaires de médias, par exemple la génération de miniatures ou l’extraction de métadonnées.
 
-Un processus peut être configuré pour s’exécuter automatiquement lorsqu’un fichier d’un type MIME particulier est téléchargé. Les étapes de traitement sont définies en termes d’une série de gestionnaires de médias AEM Assets. AEM fournit certains [gestionnaires intégrés](#default-media-handlers) et des gestionnaires supplémentaires peuvent être [conçus et personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
+Un processus peut être configuré pour s’exécuter automatiquement lorsqu’une ressource d’un type MIME particulier est téléchargée. Les étapes de traitement sont définies en fonction d’une série de gestionnaires de médias AEM Assets. AEM fournit certains [gestionnaires intégrés](#default-media-handlers) et des gestionnaires supplémentaires peuvent être [conçus et personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
 
 Les gestionnaires de médias sont des services d’AEM Assets qui effectuent des actions spécifiques sur les ressources. Par exemple, lorsqu’un fichier audio MP3 est chargé dans AEM, un workflow déclenche un gestionnaire MP3 qui extrait les métadonnées et génère une miniature. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans AEM. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des processus, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
 
@@ -47,7 +50,7 @@ Tous les gestionnaires effectuent les tâches suivantes :
 * extraction de toutes les métadonnées disponibles dans la ressource.
 * création d’une image miniature d’un fichier.
 
-Pour  les gestionnaires de médias actifs :
+Pour vue des gestionnaires de médias actifs :
 
 1. Dans votre navigateur, accédez à la page suivante : `http://localhost:4502/system/console/components`.
 1. Cliquez sur `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
@@ -103,8 +106,8 @@ L’interface et les classes sont les suivantes :
 * `com.day.cq.dam.api.handler.AssetHandler` : cette interface décrit le service qui ajoute la prise en charge de types MIME spécifiques. L’ajout d’un nouveau type MIME requiert l’implémentation de cette interface. L’interface contient des méthodes pour importer et exporter les documents spécifiques, pour créer des miniatures et extraire des métadonnées.
 * `com.day.cq.dam.core.AbstractAssetHandler` : cette classe sert de base pour toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités communes.
 * Classe `com.day.cq.dam.core.AbstractSubAssetHandler` :
-   * Cette classe sert de base à toutes les autres implémentations de gestionnaires de ressources et fournit des fonctionnalités utilisées communes ainsi que des fonctionnalités utilisées courantes pour les  de  de sous-ressources.
-   * La meilleure manière de  une implémentation consiste à hériter d’une implémentation abstraite fournie qui prend en charge la plupart des éléments et fournit un comportement par défaut raisonnable : la classe com.day.cq.dam.core.AbstractAssetHandler.
+   * Cette classe sert de base à toutes les autres mises en oeuvre de gestionnaires de ressources et fournit des fonctionnalités utilisées communes ainsi que des fonctionnalités utilisées courantes pour l’extraction de sous-ressources.
+   * Le meilleur moyen de début d’une implémentation consiste à hériter d’une implémentation abstraite fournie qui prend en charge la plupart des choses et fournit un comportement par défaut raisonnable : la classe com.day.cq.dam.core.AbstractAssetHandler.
    * Cette classe fournit déjà un descripteur de service abstrait. Donc, si vous héritez de cette classe et que vous utilisez le plug-in maven-sling-plugin, assurez-vous que vous avez défini l’indicateur inherit sur true.
 
 Les méthodes suivantes doivent être implémentées :
@@ -448,7 +451,7 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 
 >[!NOTE]
 >
->Sur les systèmes autres que Windows, l’outil FFMpeg renvoie une erreur lors de la génération de rendus pour une ressource vidéo dont le nom de fichier contient une apostrophe (’). Si le nom de votre fichier vidéo comprend une apostrophe, supprimez-la avant de charger le fichier dans AEM.
+>Sur les systèmes autres que Windows, l’outil FichierMpeg renvoie une erreur lors de la génération de rendus pour une ressource vidéo dont le nom de fichier contient un guillemet simple (’). Si le nom de votre fichier vidéo comprend une apostrophe, supprimez-la avant de charger le fichier dans AEM.
 
 Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d’apparition dans la liste :
 
@@ -462,7 +465,7 @@ Le processus `CommandLineProcess` effectue les opérations suivantes par ordre d
 
 ### An example using ImageMagick {#an-example-using-imagemagick}
 
-L’exemple suivant montre comment configurer l’étape de processus de ligne de commande afin que chaque fois qu’un fichier avec le type mime gif ou tiff est ajouté à /content/dam sur le serveur AEM, une image retournée de l’original soit créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
+L’exemple suivant montre comment configurer l’étape de processus de ligne de commande de sorte que chaque fois qu’un fichier avec un fichier de type mime gif ou tiff est ajouté à /content/dam sur le serveur AEM, une image inversée de l’original est créée avec trois miniatures supplémentaires (140x100, 48x48 et 10x250).
 
 Pour ce faire, vous utiliserez ImageMagick. ImageMagick est une suite logicielle gratuite permettant de créer, modifier et composer des images bitmap, généralement à partir de la ligne de commande.
 
@@ -504,13 +507,13 @@ Pour tester le workflow modifié, ajoutez une ressource à `/content/dam`.
 
 Cette section décrit la procédure à suivre pour définir les [!UICONTROL Arguments du processus] de [!UICONTROL CommandLineProcess].
 
-Séparez les valeurs des arguments [!UICONTROL de] processus à l’aide d’une virgule et ne  pas d’espace blanc.
+Séparez les valeurs des arguments [!UICONTROL de] processus à l’aide de la virgule et ne les débuts pas avec un espace blanc.
 
 | Argument-Format | Description |
 |---|---|
 | mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource a le même type MIME que celui de l’argument. <br>Plusieurs types MIME peuvent être définis. |
 | tn:&lt;width>:&lt;height> | Argument facultatif. Le processus crée une miniature avec les dimensions définies dans l’argument. <br>Plusieurs miniatures peuvent être définies. |
-| cmd: &lt;command> | Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande:<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: nom complet du chemin d’accès du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: du fichier d’entrée, par exemple /tmp/cqdam0816.tmp <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
+| cmd: &lt;command> | Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: nom de chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: du fichier d’entrée, par exemple /tmp/cqdam0816.tmp <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}`: extension du fichier d’entrée, par exemple jpg |
 
 Par exemple, si ImageMagick est installé sur le disque hébergeant le serveur AEM et que vous créez une étape de processus en utilisant [!UICONTROL CommandLineProcess] en tant qu’implémentation et les valeurs suivantes en tant qu’[!UICONTROL arguments de processus] :
 
