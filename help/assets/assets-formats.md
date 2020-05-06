@@ -3,7 +3,10 @@ title: Formats pris en charge par Assets
 description: Liste de formats de fichier pris en charge par AEM Assets et par Dynamic Media et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1770'
+ht-degree: 71%
 
 ---
 
@@ -118,9 +121,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
 
-## Formats de document Ressources pris en charge {#supported-document-formats}
+## Supported Assets document formats {#supported-document-formats}
 
-Les formats de Document pris en charge pour les fonctionnalités de gestion des ressources sont les suivants :
+Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants:
 
 <!--
 DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
@@ -186,7 +189,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 ## Formats multimédias pris en charge {#supported-multimedia-formats}
 
-|  | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Transcodage FFMPEG |
+|  | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Transcodage FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | ✓ | ✓ |  | − | * |
 | MIDI | ✓ | ✓ |  | − | * |
