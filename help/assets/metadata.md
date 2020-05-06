@@ -1,9 +1,12 @@
 ---
-title: Gérez les métadonnées de vos ressources numériques dans [ ! DNL Adobe Experience Manager].
-description: Découvrez les types de métadonnées et comment [ ! DNL Adobe Experience Manager Assets] aide à gérer les métadonnées des ressources afin de faciliter la catégorisation et l’organisation des ressources. [ !DNL Experience Manager] permet d’organiser et de traiter automatiquement les ressources en fonction de leurs métadonnées.
+title: Manage metadata of your digital assets in [!DNL Adobe Experience Manager].
+description: Découvrez les types de métadonnées et [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] comment organiser et traiter automatiquement les fichiers en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c32e64d4921d7239d07f57ab9e12c744758faa0a
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 9%
 
 ---
 
@@ -28,7 +31,7 @@ Les métadonnées sont la collection de toutes les données disponibles pour un 
 * Nom du dossier dans lequel il se trouve.
 * Ressources connexes ou balises appliquées.
 
-Voici les propriétés de métadonnées de base qu’Experience Manager peut gérer pour les ressources, ce qui permet aux utilisateurs d’afficher tous les fichiers. Par exemple, commander des ressources par date de dernière modification est utile lorsque vous essayez de découvrir des ressources récemment ajoutées.
+Les propriétés de métadonnées de base qui [!DNL Experience Manager] peuvent être gérées pour les ressources, permettent aux utilisateurs d’afficher toutes les ressources. Par exemple, commander des ressources par date de dernière modification est utile lorsque vous essayez de découvrir des ressources récemment ajoutées.
 
 Vous pouvez ajouter d’autres données de niveau supérieur à des ressources numériques, par exemple :
 
@@ -90,7 +93,7 @@ Les balises ID3 sont destinées au format de fichier MP3. Informations suppléme
 
 ### Exif {#exif}
 
-Le format de fichier d’image échangeable (Exif) est le format de métadonnées le plus utilisé dans la photographie numérique. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichier, tels que JPEG, TIFF, RIFF et WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager].  Les caméras numériques modernes créent des métadonnées Exif et des logiciels graphiques modernes le prennent en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier pour les images.
+Le format de fichier d’image échangeable (Exif) est le format de métadonnées le plus utilisé dans la photographie numérique. Il permet d’incorporer un vocabulaire fixe de propriétés de métadonnées dans de nombreux formats de fichier, tels que JPEG, TIFF, RIFF et WAV. Exif stores metadata as pairs of a metadata name and a metadata value. These metadata name-value-pairs are also called tags, not to be confused with the tagging in [!DNL Experience Manager]. Les caméras numériques modernes créent des métadonnées Exif et des logiciels graphiques modernes le prennent en charge. Le format Exif est le plus petit dénominateur commun pour la gestion des métadonnées, en particulier pour les images.
 
 Exif présente une limitation majeure du fait que quelques formats de fichier image populaires tels que BMP, GIF ou PNG ne le prennent pas en charge.
 
@@ -98,7 +101,7 @@ Les champs de métadonnées définis par Exif sont généralement de nature tech
 
 ### Other metadata {#other-metadata}
 
-Les autres métadonnées qui peuvent être incorporées à partir de fichiers comprennent Microsoft Word, PowerPoint, Excel, etc.
+Other metadata that can be embedded from files include [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], and so on.
 
 ## Metadata schemata {#metadata-schemata}
 
