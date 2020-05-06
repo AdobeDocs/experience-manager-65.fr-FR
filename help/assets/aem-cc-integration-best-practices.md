@@ -1,17 +1,17 @@
 ---
-title: Meilleures pratiques d’intégration d’Adobe Creative Cloud et de [ ! DNL Adobe Experience Manager].
-description: Meilleures pratiques pour intégrer [ !DNL Adobe Experience Manager] à [ ! DNL Adobe Creative Cloud] afin de rationaliser les workflows de transfert de ressources et d’atteindre une vitesse de contenu élevée.
+title: Recommandations relatives à Adobe Creative Cloud [!DNL Adobe Experience Manager] et à l’intégration.
+description: Meilleures pratiques d’ [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] intégration pour rationaliser les workflows de transfert d’actifs et atteindre une vitesse de contenu élevée.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1321aa3421455d78fd4562d6cb524aa232ee2ce1
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '3253'
+ht-degree: 56%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] et les meilleures pratiques d&#39; [!DNL Creative Cloud] intégration {#aem-and-creative-cloud-integration-best-practices}
-
-<!-- TBD: Reconcile with 6.4 article that's behind this article in terms of content streamlining and structuring.
--->
 
 [!DNL Adobe Experience Manager Assets] est une solution de gestion des actifs numériques (DAM) qui peut s&#39;intégrer [!DNL Adobe Creative Cloud] pour aider les utilisateurs de la gestion des actifs numériques à collaborer avec des équipes créatives, en rationalisant la collaboration dans le processus de création de contenu.
 
@@ -47,19 +47,19 @@ Cet article se concentre principalement sur les deux premiers aspects des besoin
 
 | Exemple d’utilisation   | [!DNL Adobe Asset Link] | [!DNL Experience Manager] application de bureau | Remarques/autres solutions |
 |---|---|---|---|
-| Discover - parcourir les dossiers DAM | Oui | [!DNL Experience Manager] Interface utilisateur Web + actions de bureau | Lors du parcours du partage réseau, désactivez les miniatures pour éviter de télécharger des fichiers binaires de ressources. |
-| Discover - Accès aux collections DAM | Oui | [!DNL Experience Manager] Interface utilisateur Web + actions de bureau |  |
-| Discover - Recherche de ressources à partir de DAM | Oui | [!DNL Experience Manager] Interface utilisateur Web + actions de bureau |  |
-| Utilisation - ouverture de la ressource | Oui | Oui - pour toutes les applications | [Ouverture depuis l’interface web](managing-assets-touch-ui.md#previewing-assets) ou de l’outil de recherche |
+| Discover - parcourir les dossiers DAM | Oui | [!DNL Experience Manager] Interface Web et actions de bureau |  |
+| Discover - Accès aux collections DAM | Oui | [!DNL Experience Manager] Interface Web et actions de bureau |  |
+| Discover - Recherche de ressources à partir de DAM | Oui | [!DNL Experience Manager] Interface Web et actions de bureau |  |
+| Utilisation - ouverture de la ressource | Oui | Oui | [Ouverture depuis l’interface web](managing-assets-touch-ui.md#previewing-assets) ou de l’outil de recherche |
 | Utilisation : placer une ressource de DAM dans un document | Oui - incorporation | Oui - liaison ou incorporation | [!DNL Experience Manager]L’application de bureau donne accès aux ressources sous forme de fichiers sur le système de fichiers local. Ces liens dans les applications natives sont représentés par des chemins d’accès locaux. |
 | Modification - ouvrir pour modification | Oui - Action d’extraction | Oui - Action d’ouverture (dans le partage réseau) | L’[extraction dans AAL](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) enregistre la ressource dans le compte de stockage Creative Cloud de l’utilisateur (synchronisé par l’application Creative Cloud) par défaut. |
 | Modifier : travail en cours en dehors de DAM | Oui - Ressource disponible dans le compte de stockage Creative Cloud de l’utilisateur synchronisé avec le poste de travail. | Oui |  |
 | Modification - téléchargement des modifications | Oui - [Action d’archivage](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
 | Téléchargement - fichier unique | Oui - téléchargement du document actif | Oui | [Chargement via l’interface web](managing-assets-touch-ui.md#uploading-assets) |
-| Téléchargement - plusieurs fichiers/structures de dossiers hiérarchiques | Non | Oui | [Chargement via l’interface web](managing-assets-touch-ui.md#uploading-assets);Outil ou script<br>personnalisé |
-| Divers - utilisateur et connexion | L’utilisateur Creative Cloud connecté à l’application de bureau Creative Cloud est reconnu (SSO) | [!DNL Experience Manager] user/ login | Users of both solutions count against the [!DNL Experience Manager] user quota. |
-| Divers - réseau et accès | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | Adobe Asset Link ne partage pas l’environnement du proxy réseau. |
-| Divers - migration d’un grand nombre de ressources | Non | Non | [Guide de migration](assets-migration-guide.md) |
+| Téléchargement - plusieurs fichiers/structures de dossiers hiérarchiques | Non | Oui | [Chargement via l’interface web](managing-assets-touch-ui.md#uploading-assets) ou par le biais d’un script ou d’un outil personnalisé. |
+| Divers - utilisateur et connexion | L’utilisateur Creative Cloud connecté à l’application de bureau Creative Cloud est reconnu (SSO) | [!DNL Experience Manager] informations d’identification et d’utilisateur | Users of both solutions count towards the [!DNL Experience Manager] user quota. |
+| Divers - réseau et accès | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | Requires access from user&#39;s desktop to [!DNL Experience Manager] deployment over network | [!DNL Adobe Asset Link] ne partage pas l&#39;environnement proxy réseau. |
+| Divers - migration d’un grand nombre de ressources | Non | Non | [Guide de migration des ressources](assets-migration-guide.md) |
 
 Pour prendre en charge les cas d’utilisation de la distribution des ressources, d’autres solutions doivent être envisagées :
 
