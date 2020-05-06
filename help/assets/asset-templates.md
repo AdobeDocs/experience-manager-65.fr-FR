@@ -1,9 +1,12 @@
 ---
-title: Modèles de ressources dans [ ! DNL Adobe Experience Manager Assets].
-description: Découvrez les modèles d’actifs dans [ ! DNL Adobe Experience Manager Assets] et comment utiliser les modèles d’actifs pour créer de la documentation marketing.
+title: Modèles de ressources dans [!DNL Adobe Experience Manager Assets].
+description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1553'
+ht-degree: 34%
 
 ---
 
@@ -196,4 +199,4 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
 ## Best practices and limitations {#best-practices-limitations-tips}
 
-* L’éditeur AEM InDesign fonctionne au niveau des balises et tout le texte placé sous une balise unique est considéré comme une entité unique. Pour conserver la mise en forme et les styles du texte lors de la modification, balisez séparément chaque paragraphe (ou le texte avec des styles différents).
+* L’ [!DNL InDesign] éditeur dans [!DNL Experience Manager] fonctionne au niveau de la balise et tout le texte sous une balise unique est considéré comme une entité unique. Pour conserver la mise en forme et les styles du texte lors de la modification, balisez séparément chaque paragraphe (ou le texte avec des styles différents).
