@@ -1,14 +1,17 @@
 ---
-title: Meilleures pratiques pour surveiller le déploiement de [!DNL Adobe Experience Manager Assets].
-description: Meilleures pratiques pour surveiller le   et les performances de votre déploiement [!DNL Adobe Experience Manager] après son déploiement.
+title: Meilleures pratiques de [!DNL Adobe Experience Manager Assets] surveillance du déploiement.
+description: Best practices to monitor the environment and performance of your [!DNL Adobe Experience Manager] deployment after it is deployed.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1673'
+ht-degree: 68%
 
 ---
 
 
-# Meilleures pratiques pour surveiller le [!DNL Adobe Experience Manager Assets] déploiement {#assets-monitoring-best-practices}
+# Meilleures pratiques de surveillance du [!DNL Adobe Experience Manager Assets] déploiement {#assets-monitoring-best-practices}
 
 From the [!DNL Experience Manager Assets] standpoint, monitoring should include observing and reporting on the following processes and technologies:
 
@@ -16,7 +19,7 @@ From the [!DNL Experience Manager Assets] standpoint, monitoring should include 
 * Utilisation de la mémoire système
 * E/S du disque système et temps d’attente
 * E/S du réseau
-* MBeans JMX pour l’utilisation du tas et les processus asynchrones, tels que les 
+* MBeans JMX pour l’utilisation du tas et les processus asynchrones, tels que les workflows
 * Contrôles de l’intégrité de la console OSGi
 
 Typically, [!DNL Experience Manager Assets] can be monitored in two ways, live monitoring and long term monitoring.
@@ -25,7 +28,7 @@ Typically, [!DNL Experience Manager Assets] can be monitored in two ways, live m
 
 La surveillance en temps réel est conseillée lors de la phase de test des performances de votre développement ou en cas de charges élevées afin de comprendre les caractéristiques de performance de votre environnement. Typiquement, différents outils peuvent être utilisés pour la surveillance en temps réel. Voici quelques recommandations :
 
-* [Visual VM](https://visualvm.java.net/): La machine virtuelle visuelle vous permet de des informations détaillées sur la machine virtuelle Java, y compris l&#39;utilisation du processeur, l&#39;utilisation de la mémoire Java. En outre, il vous permet d’échantillonner et d’évaluer le code qui s’exécute sur un déploiement.
+* [Visual VM](https://visualvm.java.net/): Visual VM vous permet de vue des informations détaillées sur la machine virtuelle Java, y compris l&#39;utilisation du processeur et de la mémoire Java. En outre, il vous permet d’échantillonner et d’évaluer le code qui s’exécute sur un déploiement.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html) : Top est une commande Linux ouvrant un tableau de bord qui affiche des statistiques d’utilisation, notamment sur le processeur, la mémoire et les E/S. Vous obtenez ainsi une vue d’ensemble de ce qui se produit sur une instance.
 * [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
 
@@ -34,7 +37,7 @@ La surveillance en temps réel est conseillée lors de la phase de test des perf
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation des ports ethernet et réseau. Iftop affiche des statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
 
 * Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à la production. For more details, see [How to Use Java Flight Recorder to Diagnose CQ Runtime Problems](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* [!DNL Experience Manager] `error.log` fichier : Vous pouvez rechercher des informations détaillées sur les erreurs enregistrées dans le système dans le [!DNL Experience Manager] fichier `error.log` . Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs à rechercher.
+* [!DNL Experience Manager] `error.log` fichier : Vous pouvez rechercher dans le [!DNL Experience Manager]`error.log` fichier les détails des erreurs consignées dans le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs à rechercher.
 * [Console d’administration des workflow](/help/sites-administering/workflows.md) : utilisez la console d’administration des workflow pour suivre les workflow en retard ou bloqués.
 
 Typically, you use these tools together to obtain a comprehensive idea about the performance of your [!DNL Experience Manager] deployment.
@@ -55,7 +58,7 @@ Long term monitoring of an [!DNL Experience Manager] deployment involves monitor
 
 ### Agrégation des journaux et création de rapports {#log-aggregation-and-reporting}
 
-Il existe plusieurs outils disponibles pour  les journaux , par exemple Splunk(TM) et Elastic Search, Logstash et Kabana (ELK). To evaluate the uptime of your [!DNL Experience Manager] deployment, it is important for you to understand log events specific to your system and create alerts based on them. Une bonne connaissance de vos pratiques de développement et d&#39;exploitation peut vous aider à mieux comprendre comment ajuster votre processus d&#39;agrégation des journaux pour générer des alertes critiques.
+Il existe plusieurs outils disponibles pour les journaux d&#39;agrégats, par exemple Splunk(TM) et Elastic Search, Logstash et Kabana (ELK). To evaluate the uptime of your [!DNL Experience Manager] deployment, it is important for you to understand log events specific to your system and create alerts based on them. Une bonne connaissance de vos pratiques de développement et d&#39;exploitation peut vous aider à mieux comprendre comment ajuster votre processus d&#39;agrégation des journaux pour générer des alertes critiques.
 
 ### Surveillance de l’environnement {#environment-monitoring}
 
@@ -82,7 +85,7 @@ Souvent, il faut une valeur de référence pour que la surveillance des statisti
 
 As with any Java-based application stack, [!DNL Experience Manager] depends on the resources that are provided to it through the underlying Java Virtual Machine. Vous pouvez suivre l’état de ces ressources via les MXBeans de plateforme présentés par JVM. Pour plus d’informations sur les MXBeans, reportez-vous à la section [Utilisation du serveur MBean de plateforme et des MXBeans de plateforme](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
-Voici quelques paramètres de ligne de base que vous pouvez surveiller pour JVM :
+Voici quelques paramètres de base que vous pouvez surveiller pour la JVM :
 
 Mémoire
 
@@ -146,7 +149,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * File d’attente de réplication
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
