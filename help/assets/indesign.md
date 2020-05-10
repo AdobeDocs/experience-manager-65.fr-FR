@@ -1,14 +1,17 @@
 ---
-title: Intégrer [!DNL Adobe Experience Manager Assets] à [!DNL Adobe InDesign Server]
-description: Découvrez comment intégrer [!DNL Adobe Experience Manager Assets] à [!DNL Adobe InDesign Server].
+title: ' [!DNL Adobe Experience Manager Assets] Intégrer [!DNL Adobe InDesign Server]'
+description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 40%
 
 ---
 
 
-# Intégrer [!DNL Adobe Experience Manager Assets] à [!DNL Adobe InDesign Server]{#integrating-aem-assets-with-indesign-server}
+# Intégration [!DNL Adobe Experience Manager Assets] de [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] utilise:
 
@@ -20,7 +23,7 @@ To fully upload files to [!DNL Experience Manager Assets] that you have created 
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous forme de deux offres distinctes. [Application de bureau Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des mises en page pour l’impression et la distribution numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer par programmation des automatisés en fonction de ce que vous avez créé [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/scripting.html) . Les scripts sont écrits [!DNL ExtendScript], ce qui est similaire à [!DNL JavaScript]ExtendScript. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] est proposé sous forme de deux offres distinctes. [Application de bureau Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) qui permet de concevoir des mises en page pour l’impression et la distribution numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer par programmation des documents automatisés en fonction de ce que vous avez créé [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/scripting.html) . Les scripts sont écrits dans [!DNL ExtendScript], ce qui est similaire à [!DNL JavaScript]la méthode. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## How the extraction works {#how-the-extraction-works}
 
@@ -43,7 +46,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
    * Post the resulting files back to [!DNL Experience Manager Assets].
    >[!NOTE]
    >
-   >IDML est un format XML qui rend tout le contenu du [!DNL InDesign] fichier. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. Pour plus d’informations, voir Formats d’échange [InDesign INX et IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML est un format XML qui effectue le rendu de tout le contenu du [!DNL InDesign] fichier. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. Pour plus d’informations, voir Formats d’échange [InDesign INX et IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
@@ -55,7 +58,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
    * Le texte et les fichiers extraits sont stockés dans [!DNL Experience Manager Assets].
    * All renditions are stored in [!DNL Experience Manager Assets], in the asset itself.
 
-## Intégration de la [!DNL InDesign Server] fonction avec AEM {#integrating-the-indesign-server-with-aem}
+## Intégration de la variable [!DNL InDesign Server] avec AEM {#integrating-the-indesign-server-with-aem}
 
 To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager Assets] and after configuring your proxy, you need to:
 
@@ -64,7 +67,7 @@ To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager As
 Cette opération n’est nécessaire que si les valeurs par défaut ne sont pas adaptées à votre instance.
 1. Configurer un [programme de traitement du proxy pour InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installez le [!DNL InDesign Server]{#installing-the-indesign-server}
+### Installez le [!DNL InDesign Server] {#installing-the-indesign-server}
 
 To install and start the [!DNL InDesign Server] for use with [!DNL Experience Manager]:
 
@@ -85,7 +88,7 @@ To install and start the [!DNL InDesign Server] for use with [!DNL Experience Ma
 
 ### Configuration du [!DNL Experience Manager Assets] processus {#configuring-the-aem-assets-workflow}
 
-[!DNL Experience Manager Assets] possède une ressource **[!UICONTROL de mise à jour]** DAM de processus préconfigurée qui comprend plusieurs étapes de processus spécifiques pour [!DNL InDesign]:
+[!DNL Experience Manager Assets] dispose d&#39;une ressource **[!UICONTROL de mise à jour]** DAM de processus préconfigurée, qui comprend plusieurs étapes de processus spécifiques pour [!DNL InDesign]:
 
 * [Extraction de médias](#media-extraction)
 * [Extraction de page  ](#page-extraction)
@@ -104,9 +107,9 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 
 Arguments d’extraction de médias et chemins de scripts
 
-* **Bibliothèque** ExtendScript : Il s’agit d’une simple bibliothèque de méthodes http get/post, requise par les autres scripts.
+* **Bibliothèque** ExtendScript : Il s’agit d’une simple bibliothèque de méthodes get/post http, requise par les autres scripts.
 
-* **Etendre les scripts**: Vous pouvez spécifier différentes combinaisons de scripts ici. If you want your own scripts to be executed on the [!DNL InDesign Server], save the scripts at `/apps/settings/dam/indesign/scripts`.
+* **Étendre les scripts**: Vous pouvez spécifier différentes combinaisons de script ici. If you want your own scripts to be executed on the [!DNL InDesign Server], save the scripts at `/apps/settings/dam/indesign/scripts`.
 
 Pour plus d’informations sur les scripts Indesign, reportez-vous à la documentation destinée aux développeurs [InDesign.](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
@@ -116,7 +119,7 @@ Pour plus d’informations sur les scripts Indesign, reportez-vous à la documen
 
 The `ThumbnailExport.jsx` script run by the Media Extraction workflow step generates a thumbnail rendition in JPG format. Ce rendu est utilisé par l’étape du workflow Miniatures des processus afin de générer les rendus statiques requis par [!DNL Experience Manager].
 
-Vous pouvez configurer l’étape du workflow Miniatures des processus de manière à générer des rendus statiques de différentes tailles. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Enfin, l’étape Processus de suppression du rendu d’aperçus d’image efface le rendu miniature .jpg, car il n’est plus nécessaire.
+Vous pouvez configurer l’étape du workflow Miniatures des processus de manière à générer des rendus statiques de différentes tailles. Ensure that you do not remove the defaults, because they are required by the [!DNL Experience Manager Assets] interface. Enfin, l’étape de flux de travaux Supprimer le rendu de Prévisualisation d’images supprime le rendu de miniature JPG, car il n’est plus nécessaire.
 
 #### Page extraction {#page-extraction}
 
@@ -126,11 +129,11 @@ Pour la personnaliser, vous pouvez modifier l’onglet **[!UICONTROL Arguments]*
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **Gestionnaire** de de  de page : Dans le  contextuel, sélectionnez le gestionnaire que vous souhaitez utiliser. Un gestionnaire d’extraction fonctionne sur un rendu spécifique, sélectionné par un `RenditionPicker` associé (voir l’API `ExtractionHandler`).
+* **Gestionnaire** d&#39;Extractions de page : Dans la liste contextuelle, sélectionnez le gestionnaire à utiliser. Un gestionnaire d’extraction fonctionne sur un rendu spécifique, sélectionné par un `RenditionPicker` associé (voir l’API `ExtractionHandler`).
 In a standard [!DNL Experience Manager] installation the following is available:
    * IDML Export Extraction Handle: Operates on the `IDML` rendition generated in the MediaExtract step.
 
-* **Nom** de page : Indiquez le nom que vous souhaitez affecter à la page résultante. Si vous laissez le champ vide, le nom est « page » (ou une variante si « page » existe déjà).
+* **Nom** de page : Indiquez le nom que vous souhaitez attribuer à la page résultante. Si vous laissez le champ vide, le nom est « page » (ou une variante si « page » existe déjà).
 
 * **Titre** de la page : Indiquez le titre que vous souhaitez affecter à la page résultante.
 
@@ -140,7 +143,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 
 * **Conception** de page : Conception de page à utiliser lors de la génération de la page résultante.
 
-### Configuration du programme de travail proxy pour [!DNL InDesign Server]{#configuring-the-proxy-worker-for-indesign-server}
+### Configuration du proxy worker pour [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -169,9 +172,9 @@ If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hos
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
-### Activer le traitement parallèle des tâches pour [!DNL InDesign Server]{#enabling-parallel-job-processing-for-indesign-server-s}
+### Activer le traitement des tâches parallèles pour [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
 
-Vous pouvez désormais activer le traitement parallèle des tâches pour IDS. Déterminer le nombre maximal de tâches parallèles (`x`) qu’un [!DNL InDesign Server] peut traiter :
+Vous pouvez désormais activer le traitement parallèle des tâches pour IDS. Déterminer le nombre maximal de tâches parallèles (`x`) qu’une [!DNL InDesign Server] peut traiter :
 
 * On a single multiprocessor machine, the maximum number of parallel jobs (`x`) that an [!DNL InDesign Server] can process is one less than the number of processors running IDS.
 * Lorsque vous exécutez IDS sur plusieurs machines, vous devez compter le nombre total de processeurs disponibles (sur chaque ordinateur) et soustraire le nombre total d’ordinateurs.
@@ -188,7 +191,7 @@ Pour configurer le nombre de tâches parallèles d’IDS :
    * **Nombre max. de tâches parallèles** - `<*x*>` (conformément au calcul ci-dessus)
 
 1. Enregistrez ces modifications.
-1. Pour activer la prise en charge de plusieurs sessions pour Adobe CS6 et versions ultérieures, cochez la `enable.multisession.name` case, sous `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration.
+1. Pour activer la prise en charge de plusieurs sessions pour Adobe CS6 et versions ultérieures, cochez `enable.multisession.name` la case, sous `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration.
 1. Créez un [groupe de `x` traitement IDS en ajoutant des points d’extrémité SOAP à la configuration du traitement IDS](#configuring-the-proxy-worker-for-indesign-server).
 
    If there are multiple machines running [!DNL InDesign Server], add SOAP endpoints (number of processors per machine -1) for each machine.
@@ -228,5 +231,5 @@ You can change the default administrator credentials (user name and password) fo
 
 >[!MORELIKETHIS]
 >
->* [À propos d’Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [A propos d’Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
 
