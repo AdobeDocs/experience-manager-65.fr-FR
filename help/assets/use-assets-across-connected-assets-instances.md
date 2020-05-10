@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Utilisez les ressources disponibles lors d’un [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] déploiement à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d2f9bf9f8e83a088769507da8a46f1c9ef4e74e
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 54%
+source-wordcount: '2081'
+ht-degree: 51%
 
 ---
 
@@ -41,7 +41,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 Les auteurs peuvent rechercher des images et les types de documents suivants dans l’outil de recherche de contenu et utiliser les ressources recherchées dans l’éditeur de page. Vous pouvez ajouter des documents au composant `Download` ou des images au composant `Image`. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Les formats pris en charge sont les suivants :
 
 * **Formats** d’image : Formats pris en charge par le composant [](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) Image. [!DNL Dynamic Media] les images ne sont pas prises en charge.
-* **Formats de document** : Voir [Formats de document de ressources connectées pris en charge](assets-formats.md#supported-document-formats).
+* **Formats** de Document : Voir [les formats de document pris en charge par les ressources](assets-formats.md#supported-document-formats)connectées.
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
 
@@ -185,5 +185,5 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 
 Pour résoudre les problèmes liés aux scénarios d’erreur courants, procédez comme suit :
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], recheck and ensure that the required roles and permissions are in place.
-* Une ressource récupérée sur un DAM distant risque de ne pas être publiée sur une page web pour les raisons suivantes : il n’existe pas à distance, au même titre que les autorisations appropriées pour la récupérer ; une erreur réseau s’est produite. Assurez-vous que le fichier n&#39;est pas supprimé du DAM distant ou que les autorisations ne sont pas modifiées. Veiller à ce que les conditions préalables appropriées soient remplies. Essayez de rajouter le fichier à la page et de republier. Recherchez dans la [liste des tâches asynchrones](/help/assets/asynchronous-jobs.md) les erreurs de récupération de ressources.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* Une ressource extraite du barrage distant peut ne pas être publiée sur une page Web pour une ou plusieurs raisons. Il n&#39;existe pas sur le serveur distant, il n&#39;y a pas d&#39;autorisations appropriées pour l&#39;extraire, ou la défaillance du réseau peut être la cause. Assurez-vous que le fichier n&#39;est pas supprimé du DAM distant. Assurez-vous que les autorisations appropriées sont en place et que les conditions préalables sont remplies. Essayez de rajouter le fichier à la page et de republier. Recherchez dans la [liste des tâches asynchrones](/help/assets/asynchronous-jobs.md) les erreurs de récupération de ressources.
