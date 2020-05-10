@@ -1,34 +1,35 @@
 ---
-title: Utilisation de PDF rasterizer pour générer des rendus
-description: Cet article présente comment générer des miniatures et des rendus de haute qualité avec la bibliothèque Adobe PDF Rasterizer.
+title: Utilisez PDF rasterizer pour générer des rendus de fichiers PDF.
+description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer de [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 42%
 
 ---
 
 
-# Utiliser PDF Rasterizer {#using-pdf-rasterizer}
+# Utilisation de PDF Rasterizer {#using-pdf-rasterizer}
 
-Parfois, lorsque vous téléchargez des fichiers PDF ou AI de grande taille et riches en contenu vers Adobe Experience Manager (AEM) Assets, la bibliothèque par défaut risque de ne pas générer une sortie exacte. Dans de tels cas, la bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise par rapport à la sortie d’une bibliothèque par défaut.
+When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. La bibliothèque PDF Rasterizer d’Adobe peut générer une sortie plus fiable et plus précise que la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer dans les cas suivants :
 
-Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
-
-* Fichiers AI/PDF de grande taille et riches en continu.
-* Les fichiers AI et PDF avec des miniatures ne sont pas générés en dehors de la zone.
+* Fichiers AI ou PDF lourds et intensifs en contenu.
+* Fichiers AI et fichiers PDF contenant des miniatures qui ne sont pas générés par défaut.
 * Fichiers AI contenant des couleurs PMS (Pantone Matching System).
 
 Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
 
-1. Install the PDF Rasterizer package on your AEM deployment from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Install the PDF Rasterizer package on your [!DNL Experience Manager] deployment from [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >La bibliothèque PDF Rasterizer est disponible sous Windows et Linux uniquement.
 
-1. Accédez à la console de flux de travaux AEM Assets à l’adresse `https://[server]:[port]/workflow`. Open the [!UICONTROL DAM Update Asset] workflow page.
+1. Accédez à la console [!DNL Assets] de processus à l’adresse `https://[aem_server]:[port]/workflow`. Open [!UICONTROL DAM Update Asset] workflow.
 
-1. Pour éviter la génération de miniatures et de rendus web pour les fichiers PDF et AI à l’aide des méthodes par défaut, procédez comme suit :
+1. Pour empêcher la génération de miniatures et de rendus Web pour les fichiers PDF et AI à l’aide des méthodes par défaut, procédez comme suit :
 
    * Open the **[!UICONTROL Process Thumbnails]** step, and add `application/pdf` or `application/postscript` in the **[!UICONTROL Skip Mime Types]** field under the **[!UICONTROL Thumbnails]** tab as necessary.
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
@@ -44,26 +45,25 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
 1. Configure the following arguments for the **[!UICONTROL PDF Rasterizer Handler]** step:
 
    * Types MIME : `application/pdf` ou `application/postscript`
-
    * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
-   * `-d`: Indicateur permettant d’effectuer un rendu lisse du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
+   * `-d`: Indicateur qui permet le rendu lisse du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
 
-   * `-p`: Numéro de page. La valeur par défaut est toutes les pages. Le signe * indique toutes les pages.
+   * `-p`: Numéro de page. La valeur par défaut est toutes les pages. Pour représenter toutes les pages, utilisez `*`.
 
-   * `-s`: Dimensions d’image maximales (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
+   * `-s`: Dimension d’image maximale (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 
    * `-t`: Type d’image de sortie. Les types valides sont JPEG, PNG, GIF et BMP. La valeur par défaut est JPEG.
 
-   * `-i`: Chemin d’accès pour le PDF d’entrée. Ce paramètre est obligatoire.
+   * `-i`: Chemin d’accès pour l’entrée PDF. Ce paramètre est obligatoire.
 
    * `-h`: Aide
 
 
 1. Pour supprimer des rendus intermédiaires, sélectionnez **[!UICONTROL Supprimer le rendu généré]**.
-1. Pour laisser PDF Rasterizer générer des rendus web, sélectionnez **[!UICONTROL Générer le rendu web]**.
+1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
@@ -79,24 +79,24 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    * Types MIME : `application/pdf` ou `application/postscript`
 
    * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * Ajoutez les tailles des miniatures : 319:319, 140:100, 48:48. Ajoutez une configuration de miniature personnalisée, si nécessaire.
-   Voici des arguments de ligne de commande de la commande PDFRasterizer :
+   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. Ajouter configuration personnalisée des miniatures, le cas échéant.
+   Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
-   * `-d`: Indicateur permettant d’effectuer un rendu lisse du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
+   * `-d`: Indicateur qui permet le rendu lisse du texte, des illustrations vectorielles et des images. Crée des images de meilleure qualité. Toutefois, l’ajout de ce paramètre ralentit l’exécution de la commande et augmente la taille des images.
 
    * `-p`: Numéro de page. La valeur par défaut est toutes les pages. `*` indique toutes les pages.
 
-   * `-s`: Dimensions d’image maximales (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
+   * `-s`: Dimension d’image maximale (hauteur ou largeur). Elle est convertie en ppp pour chaque page. Si les pages sont de tailles différentes, chacune peut être redimensionnée selon une échelle différente. La valeur par défaut est la taille réelle de la page.
 
    * `-t`: Type d’image de sortie. Les types valides sont JPEG, PNG, GIF et BMP. La valeur par défaut est JPEG.
 
-   * `-i`: Chemin d’accès pour le PDF d’entrée. Ce paramètre est obligatoire.
+   * `-i`: Chemin d’accès pour l’entrée PDF. Ce paramètre est obligatoire.
 
    * `-h`: Aide
 
 
 1. Pour supprimer des rendus intermédiaires, sélectionnez **[!UICONTROL Supprimer le rendu généré]**.
-1. Pour laisser PDF Rasterizer générer des rendus web, sélectionnez **[!UICONTROL Générer le rendu web]**.
+1. To let PDF Rasterizer generate web renditions, select **[!UICONTROL Generate Web Rendition]**.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
@@ -105,4 +105,4 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Enregistrez le workflow.
-1. Téléchargez un fichier PDF ou AI vers AEM Assets. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
+1. Upload a PDF or an AI file to [!DNL Experience Manager Assets]. PDF Rasterizer génère les miniatures et les rendus web pour le fichier.
