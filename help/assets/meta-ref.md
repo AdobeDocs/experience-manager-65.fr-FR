@@ -1,9 +1,12 @@
 ---
-title: Référence des schémas de métadonnées
+title: Référence du schéma de métadonnées
 description: 'Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 92%
 
 ---
 
@@ -18,25 +21,25 @@ La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour d
 
 Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 
-Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Pour plus d’informations, voir [Dublin Core Initiative](https://dublincore.org/).
+In addition to the DCMES, there are other metadata elements created by the Dublin Core Initiative. See the [Dublin Core initiative](https://dublincore.org/) for more information.
 
 | Propriétés | Description |
-|---|---|
-| contributor | Personne ou entreprise chargée d&#39;apporter des contributions au contenu. |
-| coverage (couverture) | Emplacement géographique ou période que couvre la ressource. |
-| creator (créateur) | Personne ou entreprise chargée de la création du contenu. |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------ |
+| contributor | Personne ou entreprise chargée d’apporter des contributions au contenu. |
+| coverage | Emplacement géographique ou période que couvre la ressource. |
+| creator | Personne ou entreprise chargée de la création du contenu. |
 | date | Date ou période associée à la ressource. |
 | description | Informations supplémentaires sur la ressource. |
-| format | Format de fichier, support physique ou dimensions de la ressource. AEM utilise le format dc:format pour indiquer le type MIME de la ressource. |
-| formulaire | Référence unique à la ressource. |
-| language | Langue de la ressource (&quot;en&quot; pour l&#39;anglais, par exemple). |
-| publisher (éditeur) | Personne ou entreprise chargée de rendre la ressource disponible. |
+| format | Format de fichier, support physique ou dimensions de la ressource. AEM utilise `dc:format` pour représenter le type MIME de la ressource. |
+| identifier | Référence unique à la ressource. |
+| language | Langue de la ressource (« en » pour l’anglais, par exemple). |
+| publisher | Personne ou entreprise chargée de rendre la ressource disponible. |
 | relation | Ressource connexe. |
-| rights (droits) | Informations sur la personne qui dispose des droits sur cette ressource. |
+| rights | Informations sur la personne qui dispose des droits sur cette ressource. |
 | source | Ressource connexe à partir de laquelle la ressource est dérivée. |
-| subject (objet) | Objet de la ressource. |
-| titre | Nom de la ressource. |
-| Type | Nature ou genre de la ressource. |
+| subject | Objet de la ressource. |
+| title | Nom de la ressource. |
+| type | Nature ou genre de la ressource. |
 
 ## IPTC {#iptc}
 
