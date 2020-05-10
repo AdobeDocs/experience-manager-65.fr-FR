@@ -3,9 +3,9 @@ title: Formats de fichiers pris en charge pour le traitement dans [!DNL Adobe Ex
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1765'
 ht-degree: 69%
 
 ---
@@ -23,7 +23,9 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | * | Prise en charge avec des fonctionnalités de composant additionnel |
 | − | Non applicable |
 
-## Supported raster image formats in [!DNL Assets] {#supported-raster-image-formats}
+## Supported raster image formats in [!DNL Experience Manager] {#supported-raster-image-formats}
+
+Les formats d’image pixellisée pris en charge [!DNL Assets] sont les suivants :
 
 | Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Modification | Écriture différée des métadonnées | Statistiques |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
@@ -43,7 +45,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-## Supported raster image formats in [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
+Les formats d’image pixellisée pris en charge [!DNL Dynamic Media] sont les suivants :
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -52,11 +54,11 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD **‡** | ✓ |  |  |  |  |
+| PSD ‡ | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-**‡** L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Outre les informations ci-dessus, tenez compte des points suivants :
 
@@ -122,31 +124,6 @@ La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images 
 ## Supported Assets document formats {#supported-document-formats}
 
 Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants:
-
-<!--
-DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
-
-| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| DOCX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
-| HTML | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| RTF | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| TXT | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLS | &#10003; | &#10003; | &#10003; | | | | | &#10003; |
-| XLSX | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
-| ODS | &#10003; | &#10003; | &#10003; | | | | | |
-| PPT | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| PPTX | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; | | &#10003; |
-| ODP | &#10003; | &#10003; | &#10003; | | | | | |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
-| PS | &#10003; | &#10003; | | | | | | |
-| QXP | &#10003; | &#10003; | | | | | | |
-| EPUB | &#10003; | &#10003; | | &#10003; | &#10003; | | | |
--->
 
 | Format | Stockage | [Gestion des métadonnées](metadata.md) | extraction de texte<br> intégral | [Extraction de métadonnées](metadata.md) | Thumbnail<br> generation | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
