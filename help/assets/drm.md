@@ -1,41 +1,46 @@
 ---
-title: Gestion des droits numériques dans AEM Assets
-description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans AEM.
+title: Gestion des droits numériques dans AEM [!DNL Adobe Experience Manager Assets].
+description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 18862ca1ce80682a28293ca4ba6741dbdd6b12f2
+workflow-type: tm+mt
+source-wordcount: '1426'
+ht-degree: 54%
 
 ---
 
 
-# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
+# Digital Rights Management for assets {#digital-rights-management-in-assets}
 
-Les ressources numériques sont souvent associées à une licence qui prévoit les conditions et la durée de leur utilisation. Dans la mesure où Adobe Experience Manager (AEM) Assets est entièrement intégré à la plate-forme AEM, vous pouvez contrôler efficacement les informations sur l’expiration et l’état des ressources. Vous pouvez également associer des informations de licence à des ressources.
+Les ressources numériques sont souvent associées à une licence qui spécifie les termes et la durée d’utilisation. Because [!DNL Adobe Experience Manager Assets] is fully integrated with the [!DNL Experience Manager] platform, you can efficiently manage asset expiration information and asset states. Vous pouvez également associer des informations de licence à des ressources.
 
 ## Expiration de ressources {#asset-expiration}
 
-L’expiration de ressources est un moyen efficace de faire respecter les exigences en matière de licence pour les ressources. Elle garantit que la ressource qui est publiée ne l’est plus lorsqu’elle arrive à expiration, ce qui évite tout risque de violation de licence. Un utilisateur sans droits d’administration ne peut pas modifier, copier, déplacer, publier ni télécharger une ressource arrivée à expiration.
+L’expiration des ressources est un moyen efficace de faire respecter les exigences de licence des ressources. Elle garantit que la ressource qui est publiée ne l’est plus lorsqu’elle arrive à expiration, ce qui évite tout risque de violation de licence. Un utilisateur ne disposant pas d’autorisations d’administrateur ne peut pas modifier, copier, déplacer, publier et télécharger une ressource arrivée à expiration.
 
-Vous pouvez l’état d’expiration d’un fichier dans la console Ressources dans le  de la carte et du.
+You can view the expiration status for an asset in the [!DNL Assets] console in both the card and list views.
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Figure : Dans le  de la carte, un indicateur sur la carte indique un fichier arrivé à expiration.*
+*Figure : Dans la vue de carte, un indicateur sur la carte indique un fichier expiré.*
 
-**Mode Liste**
+![expired_flag_liste](assets/expired_flag_list.png)
 
-![expired_flag_](assets/expired_flag_list.png)
+*Figure : Dans la vue de liste, la colonne[!UICONTROL Etat]affiche la bannière[!UICONTROL Expiré].*
 
-*Figure : Dans  , la colonne[!UICONTROL Etat]affiche la bannière[!UICONTROL Expiré].*
-
-Vous pouvez consulter l’état d’expiration d’une ressource dans la chronologie. Sélectionnez la ressource et choisissez Chronologie dans le menu de navigation globale.
+You can view the expiration status of an asset in the [!UICONTROL Timeline] in left rail.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
+
+>[!NOTE]
+>
+>La date d’expiration d’un fichier s’affiche différemment pour les utilisateurs de différents fuseaux horaires.
 
 You can also view the expiration status of assets in the **[!UICONTROL References]** rail. Il gère les états d’expiration des ressources et les relations entre les ressources composites et les sous-ressources, les collections et les projets référencés.
 
 1. Accédez à la ressource pour laquelle vous souhaitez voir les pages web de référencement et les ressources composites.
-1. Sélectionnez le fichier et le logo Experience Manager.
+1. Sélectionnez le fichier et le [!DNL Experience Manager] logo.
 
 1. Sélectionnez **[!UICONTROL Références]** dans le menu.
 
@@ -53,13 +58,13 @@ You can also view the expiration status of assets in the **[!UICONTROL Reference
 
 Vous pouvez rechercher des ressources arrivées à expiration, y compris les sous-ressources expirées dans le panneau de recherche.
 
-1. In the Assets console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
+1. In the [!DNL Assets] console, click the **[!UICONTROL Search]** in the toolbar to display the Omnisearch box.
 
 1. Avec le curseur dans la zone Omnisearch, appuyez sur la touche Retour pour afficher la page Résultats de la recherche.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Cliquez sur le logo Experience Manager pour afficher le panneau de recherche.
+1. Cliquez sur [!DNL Experience Manager] le logo pour afficher le panneau de recherche.
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -71,15 +76,15 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
-Quand vous choisissez l’option **Expiré**, la console Ressources affiche seulement les ressources et les sous-ressources arrivées à expiration qui ont été référencées par des ressources composites. Les ressources composites qui référencent des sous-ressources expirées ne s’affichent pas immédiatement une fois que les sous-ressources arrivent à expiration. En réalité, elles sont affichées lorsque AEM Assets détecte qu’elles référencent des sous-ressources expirées, à la prochaine exécution du planificateur.
+When you select the **[!UICONTROL Expired]** option, the [!DNL Assets] console only displays the expired assets and subassets that are referenced by compound assets. Les ressources composites qui référencent des sous-ressources expirées ne s’affichent pas immédiatement une fois que les sous-ressources arrivent à expiration. Instead, they are displayed after [!DNL Experience Manager] detects that they reference expired subassets the next time the scheduler runs.
 
 Si vous modifiez la date d’expiration d’une ressource publiée à une date antérieure au cycle du planificateur en cours, la planification détecte toujours cette ressource en tant que ressource expirée lors de sa prochaine exécution et elle reflète son état en conséquence.
 
 En outre, si un problème ou une erreur empêche le planificateur de détecter les ressources expirées dans le cycle en cours, le planificateur réexamine ces ressources lors du cycle suivant et identifie leur statut expiré.
 
-Pour que la console Ressources affiche les ressources composites référencées avec les sous-ressources expirées, configurez un workflow de **notification d’expiration d’Adobe CQ DAM** dans AEM Configuration Manager.
+To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **Adobe CQ DAM Expiry Notification** workflow in [!DNL Experience Manager] Configuration Manager.
 
-1. Ouvrez AEM Configuration Manager.
+1. Open [!DNL Experience Manager] Configuration Manager.
 1. Sélectionnez l’option de **[!UICONTROL notification d’expiration d’Adobe CQ DAM]**. Par défaut, le **[!UICONTROL planificateur basé temps]** est sélectionné. Il programme une tâche qui vérifie, à un moment précis, si une ressource contient des sous-ressources arrivées à expiration. Une fois la tâche terminée, les ressources qui possèdent des sous-ressources expirées et des ressources référencées sont affichées à l’état expiré dans les résultats de la recherche.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -89,7 +94,7 @@ Pour que la console Ressources affiche les ressources composites référencées 
 
    >[!NOTE]
    >
-   >Seul l’auteur de la ressource (la personne qui la charge dans AEM Assets) reçoit un e-mail lorsqu’elle arrive à expiration. Reportez-vous à la rubrique [Configuration des notifications par courrier électronique](/help/sites-administering/notification.md) pour en savoir plus sur la configuration de notifications par e-mail au niveau global d’AEM.
+   >Only the asset creator (the person who uploads a particular asset to [!DNL Assets]) receives an email when the asset expires. See [Configuring Email Notification](/help/sites-administering/notification.md) for additional details around configuring email notifications at the overall [!DNL Experience Manager] level.
 
 1. Dans le champ **[!UICONTROL Notification préalable en secondes]** indiquez l’intervalle de temps, en secondes, qui précède le moment auquel une ressource expire et pendant lequel vous souhaitez recevoir une notification concernant l’expiration. Si vous êtes administrateur ou l’auteur de la ressource, vous recevez un message avant son expiration vous informant qu’elle va expirer une fois le délai spécifié écoulé.
 
@@ -99,9 +104,9 @@ Pour que la console Ressources affiche les ressources composites référencées 
 
 ## États d’une ressource {#asset-states}
 
-La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher différents états pour les ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, modifié, approuvé, rejeté, etc.).
+La [!DNL Assets] console peut afficher divers états pour les ressources. En fonction de l’état actuel d’une ressource donnée, le mode Carte affiche un libellé décrivant son état (par exemple, expiré, modifié, approuvé, rejeté, etc.).
 
-1. Dans l’interface utilisateur Assets, sélectionnez une ressource.
+1. In the [!DNL Assets] user interface, select an asset.
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -114,23 +119,22 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. In the Assets interface, select an asset and click **[!UICONTROL Properties]** to display its asset details page.
+1. Dans l’ [!DNL Assets] interface, sélectionnez une ressource et cliquez sur **[!UICONTROL Propriétés]** pour afficher sa page de détails sur la ressource.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
 1. In the Advanced tab, set an expiration date for the asset from the **[!UICONTROL Expires]** field.
 
-   ![définir la date et l’heure d’expiration des ressources dans le champ Expire](assets/asset-properties-advanced-tab.png)
+   ![définir la date et l’heure d’expiration de l’actif dans le champ Expire](assets/asset-properties-advanced-tab.png)
 
-
-   *Figure : Onglet[!UICONTROL Avancé]dans la page[!UICONTROL Propriétés]du fichier pour définir l’expiration du fichier.*
+   *Figure :[!UICONTROL Onglet Avancé]dans la page[!UICONTROL Propriétés]du fichier pour définir l’expiration du fichier.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL Fermer]** pour afficher la console Ressources.
 1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. En mode Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-1. Dans la console Ressources, sélectionnez un dossier et créez une tâche de révision sur le dossier.
+1. In the [!DNL Assets] console, select a folder and create a review task on the folder.
 1. Recherchez et approuvez/rejetez les ressources dans la tâche de révision, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas du mode Carte. En mode Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
 
@@ -140,8 +144,8 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Appuyez sur Retour, puis sur **[!UICONTROL GlobalNav]** pour afficher le panneau Rechercher.
-1. In the Search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
+1. Appuyez sur Retour et cliquez sur **[!UICONTROL GlobalNav]** pour afficher le panneau de recherche.
+1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -157,11 +161,11 @@ La console Ressources d’Adobe Experience Manager (AEM) Assets peut afficher di
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## Gestion des droits numériques dans AEM Assets {#digital-rights-management-in-assets-1}
+## Digital Rights Management in [!DNL Assets] {#digital-rights-management-in-assets-1}
 
-Cette fonctionnalité oblige à accepter le contrat de licence avant de pouvoir télécharger un fichier sous licence à partir des ressources Adobe Experience Manager.
+This feature enforces the acceptance of the license agreement before you can download a licensed asset from [!DNL Adobe Experience Manager Assets].
 
-If you select a protected asset and click **[!UICONTROL Download]**, you are redirected to a license page where you accept the license agreement. Si vous n’en acceptez pas les termes, le bouton **[!UICONTROL Télécharger]** est désactivé.
+If you select a protected asset and click **[!UICONTROL Download]**, you are redirected to a license page to accept the license agreement. If you do not accept the license agreement, the **[!UICONTROL Download]** option is not available.
 
 Si la sélection contient plusieurs ressources protégées, sélectionnez-en une à la fois, acceptez le contrat de licence et procédez au téléchargement de la ressource.
 
@@ -172,19 +176,19 @@ Une ressource est considérée comme protégée si l’une des conditions suivan
 
 >[!NOTE]
 >
->L’emplacement `/etc/dam/drm/licenses` utilisé pour le stockage des licences dans les versions antérieures d’AEM est obsolète.
+>The location `/etc/dam/drm/licenses` used for storing licenses in earlier releases of [!DNL Experience Manager] is deprecated.
 >
->If you create or modify licence pages, or port them from previous AEM releases, Adobe recommends that you store them under `/apps/settings/dam/drm/licenses` or `/conf/&ast;/settings/dam/drm/licenses`.
+>If you create or modify licence pages, or port them from previous [!DNL Experience Manager] releases, Adobe recommends that you store them under `/apps/settings/dam/drm/licenses` or `/conf/&ast;/settings/dam/drm/licenses`.
 
 ### Téléchargement de fichiers protégés par DRM {#downloading-drm-assets}
 
-1. In the Card view, select the assets you want to download and click **[!UICONTROL Download]**.
-1. Dans la page **[!UICONTROL Gestion des droits d’auteur]**, sélectionnez le fichier à télécharger dans la liste.
-1. Dans le volet Licence, sélectionnez **[!UICONTROL Accepter]**. Une marque de sélection apparaît en regard de la ressource dont vous avez accepté le contrat de licence. Cliquez sur le bouton **[!UICONTROL Télécharger]**.
+1. In the card view, select the assets you want to download and click **[!UICONTROL Download]**.
+1. Dans la page **[!UICONTROL Gestion des droits d’auteur]**, sélectionnez la ressource à télécharger dans la liste.
+1. In the [!UICONTROL License] pane, choose **[!UICONTROL Agree]**. Une coche s’affiche en regard du fichier. Click the **[!UICONTROL Download]** option.
 
    >[!NOTE]
    >
-   >Le bouton **[!UICONTROL Télécharger]** est activé uniquement lorsque vous choisissez d’accepter le contrat de licence d’une ressource protégée. Cependant, si votre sélection comprend à la fois des ressources non protégées et protégées, seules ces dernières sont répertoriées dans le volet de gauche, et le bouton **[!UICONTROL Télécharger]** est activé pour le téléchargement des ressources non protégées. Pour accepter le contrat de licence de plusieurs ressources protégées en même temps, sélectionnez-les dans la liste, puis cliquez sur **[!UICONTROL Accepter]**.
+   >The **[!UICONTROL Download]** option is enabled only when you choose to agree to the license agreement for a protected asset. However, if your selection comprises both protected and unprotected assets, only the protected assets are listed in the pane and the **[!UICONTROL Download]** option is enabled to download the unprotected assets. Pour accepter le contrat de licence de plusieurs ressources protégées en même temps, sélectionnez-les dans la liste, puis cliquez sur **[!UICONTROL Accepter]**.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
