@@ -1,34 +1,32 @@
 ---
-title: Formats pris en charge par Assets
-description: Liste de formats de fichier pris en charge par AEM Assets et par Dynamic Media et fonctionnalités prises en charge pour chaque format.
+title: Formats de fichiers pris en charge pour le traitement dans [!DNL Adobe Experience Manager Assets].
+description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 71%
+source-wordcount: '1756'
+ht-degree: 69%
 
 ---
 
 
-# Formats de ressources pris en charge {#assets-supported-formats}
+# Formats pris en charge dans [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME.
-
-Pour intégrer AEM Assets à d’autres solutions de gestion des actifs numériques (DAM) et logiciels de bureau conformes aux normes, utilisez la plateforme XMP (Extensible Metadata Platform) d’Adobe.
+[!DNL Experience Manager Assets] prend en charge un large éventail de formats de fichier. Chaque fonctionnalité prend en charge différents types MIME. To integrate [!DNL Assets] with other standards-compliant digital asset management (DAM) solutions and desktop software, use Adobe&#39;s [!DNL Extensible Metadata Platform] (XMP).
 
 Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
 | Niveau de prise en charge | Description |
-|:---:|---|
+| :-----------: | ------------------------------ |
 | ✓ | Pris en charge |
 | * | Prise en charge avec des fonctionnalités de composant additionnel |
 | − | Non applicable |
 
-## Formats d’image pixellisée pris en charge dans AEM Assets {#supported-raster-image-formats}
+## Supported raster image formats in [!DNL Assets] {#supported-raster-image-formats}
 
 | Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Modification | Écriture différée des métadonnées | Statistiques |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -45,7 +43,7 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-## Formats d’image pixellisée pris en charge dans Contenu multimédia dynamique {#supported-raster-image-formats-dynamic-media}
+## Supported raster image formats in [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -66,7 +64,7 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 * Metadata writeback works for PSB file format when it is added to the `NComm` handler.
 
-* Pour utiliser Dynamic Media pour prévisualiser et générer des rendus dynamiques pour les fichiers EPS, voir [Adobe Illustrator (AI), Postscript (EPS) et les formats de fichier PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* To use [!DNL Dynamic Media] to preview and generate dynamic renditions for EPS files, see [Adobe Illustrator (AI), Postscript (EPS), and PDF file formats.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Concernant les fichiers EPS, l’écriture différée des métadonnées est prise en charge dans PostScript Document Structuring Convention (PS-Adobe) version 3.0 ou supérieure.
 
