@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1eb8a0335d3e4697c3cfd5a1e7048dda06bbdaf8
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
 workflow-type: tm+mt
-source-wordcount: '5750'
+source-wordcount: '5753'
 ht-degree: 87%
 
 ---
@@ -480,7 +480,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 ### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du téléchargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Le paramètre de tâche affiné apparaît comme `process=none&createTemplate=false`.
+Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du téléchargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné apparaîtra comme `process=none&createTemplate=false`.
 
 Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; suivants pour les fichiers PSD, PDF et Postscript :
 
