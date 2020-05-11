@@ -3,10 +3,10 @@ title: Formats de fichiers pris en charge pour le traitement dans [!DNL Adobe Ex
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
+source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
 workflow-type: tm+mt
-source-wordcount: '1765'
-ht-degree: 69%
+source-wordcount: '1779'
+ht-degree: 68%
 
 ---
 
@@ -73,6 +73,8 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 ## Formats d’image pixellisée non pris en charge dans Contenu multimédia dynamique {#unsupported-image-formats-dynamic-media}
 
 La liste suivante décrit les sous-types de formats de fichier image pixellisée qui *ne sont pas* pris en charge dans Contenu multimédia dynamique.
+
+Voir aussi [Détection de formats de fichier non pris en charge pour le contenu multimédia](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dynamique.
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
