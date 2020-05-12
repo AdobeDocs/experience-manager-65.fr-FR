@@ -1,8 +1,8 @@
 ---
 title: Aperçu de l’éditeur d’application d’une seule page
 seo-title: Aperçu de l’éditeur d’application d’une seule page
-description: Cet article présente un aperçu complet de l’éditeur d’application d’une seule page et explique son fonctionnement. Il présente notamment les  détaillés d’interaction de l’éditeur d’application d’une seule page dans AEM.
-seo-description: Cet article présente un aperçu complet de l’éditeur d’application d’une seule page et explique son fonctionnement. Il présente notamment les  détaillés d’interaction de l’éditeur d’application d’une seule page dans AEM.
+description: Cet article présente un aperçu complet de l’éditeur d’applications monopages et de son fonctionnement, y compris des workflows détaillés d’interaction de l’éditeur d’applications monopages dans AEM.
+seo-description: Cet article présente un aperçu complet de l’éditeur d’applications monopages et de son fonctionnement, y compris des workflows détaillés d’interaction de l’éditeur d’applications monopages dans AEM.
 uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '1686'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +27,7 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 >[!NOTE]
 >
->L’éditeur d’application d’une seule page est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, Réagir ou Angulaire).
+>L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
 
 ## Présentation {#introduction}
 
@@ -41,7 +44,7 @@ Pour de plus amples informations sur les SPA dans AEM, consultez les documents s
 
 ## Concevoir {#design}
 
-Le composant de page d’une application d’une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation des composants ou du modèle enfant est récupérée sous forme de structure de données JSON du JCR. Les composants SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement permet de différencier la composition initiale du corps du composant de page à partir d’équivalents non SPA.
+Le composant de page d’une application d’une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation des composants ou du modèle enfant est récupérée en tant que structure de données JSON à partir du JCR. Les composants SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement permet de différencier la composition initiale du corps du composant de page à partir d’équivalents non SPA.
 
 ### Gestion du modèle de page {#page-model-management}
 
@@ -52,7 +55,7 @@ Si le composant de page SPA hérite du composant principal de la page, deux opti
 * Si le modèle est modifiable, ajoutez-le à la stratégie de page.
 * Vous pouvez également ajouter les catégories via `customfooterlibs.html`.
 
-Pour chaque ressource du modèle exporté, l’application d’une seule page met en correspondance un composant réel qui effectue le rendu. Le modèle, représenté par JSON, est alors rendu à l’aide des mappages de composants au sein d’un  de.
+Pour chaque ressource du modèle exporté, l’application d’une seule page met en correspondance un composant réel qui effectue le rendu. Le modèle, représenté sous la forme JSON, est ensuite rendu à l’aide des mappages de composants au sein d’un conteneur.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
@@ -65,9 +68,9 @@ When the `cq.authoring.pagemodel.messaging` category is added to the page, it wi
 
 ![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
-## Processus {#workflow}
+## Workflow {#workflow}
 
-Vous pouvez comprendre le flux d’interaction entre l’application d’une seule page et AEM en considérant l’éditeur d’une seule page comme un médiateur entre les deux.
+Vous pouvez comprendre le flux d’interaction entre l’application d’une seule page et AEM en considérant l’éditeur d’applications d’une seule page comme un médiateur entre les deux.
 
 * La communication s’effectue au format JSON au lieu du format HTML.
 * L’éditeur de page fournit la dernière version du modèle de page à l’application d’une seule page par le biais de l’API de messagerie et de l’iFrame.
@@ -76,24 +79,24 @@ Vous pouvez comprendre le flux d’interaction entre l’application d’une seu
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
-### Processus de l’éditeur SPA de base {#basic-spa-editor-workflow}
+### Processus de l’éditeur d’applications monopages de base {#basic-spa-editor-workflow}
 
-En gardant à l’esprit les éléments clés de l’éditeur d’application d’une seule page, le flux de travail général de modification d’une application d’une seule page dans AEM s’affiche comme suit pour l’auteur.
+En gardant à l’esprit les éléments clés de l’éditeur d’applications monopages, la procédure de modification d’une application monopages de haut niveau dans AEM s’affiche comme suit pour l’auteur.
 
 ![untitled1](assets/untitled1.gif)
 
-1. L’éditeur d’application d’une seule page se charge.
+1. L’éditeur d’applications monopages se charge.
 1. L’application d’une seule page est chargée dans un cadre distinct.
 1. L’application d’une seule page demande du contenu JSON et effectue le rendu des composants côté client.
 1. SPA Editor détecte les composants rendus et génère des incrustations.
 1. L’auteur clique sur l’incrustation et affiche la barre d’outils de modification du composant.
-1. L’éditeur d’applications monopages (SPA Editor) conserve les modifications avec une requête POST envoyée au serveur.
-1. L’éditeur d’application d’une seule page demande la mise à jour de JSON vers l’éditeur d’application d’une seule page, qui est envoyé à l’application d’une seule page avec un  DOM.
+1. L’éditeur d’applications monopages conserve les modifications avec une requête POST envoyée au serveur.
+1. L’éditeur d’applications monopages demande la mise à jour de JSON dans l’éditeur d’applications monopages, qui est envoyé à l’application avec un Événement DOM.
 1. L’application d’une seule page effectue le rendu du composant concerné, en mettant à jour son DOM.
 
 >[!NOTE]
 >
->N’oubliez pas :
+>Gardez à l’esprit :
 >
 >* Le SPA est toujours responsable de son affichage.
 >* L’éditeur d’application d’une seule page est isolé de l’application d’une seule page.
@@ -158,7 +161,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et limites {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page pour modifier le contenu d’une application d’application d’une seule page, vous devez mettre en oeuvre votre application d’application d’une seule page pour interagir avec le SDK de l’éditeur d’applications d’une seule page. Consultez la section [Prise en main des applications monopages dans le AEM](/help/sites-developing/spa-getting-started-react.md) pour obtenir un  minimum que vous devez savoir pour que la vôtre fonctionne.
+Pour permettre à l’auteur d’utiliser l’éditeur de page pour modifier le contenu d’une application d’une seule page, votre application d’une seule page doit être implémentée pour interagir avec le SDK de l’éditeur d’une seule page d’AEM. Consultez le guide [Prise en main des applications monopages dans AEM](/help/sites-developing/spa-getting-started-react.md) document pour obtenir un minimum de connaissances pour que vous puissiez exécuter les vôtres.
 
 ### Structures prises en charge {#supported-frameworks}
 
@@ -171,30 +174,34 @@ Les versions précédentes de ces structures peuvent fonctionner avec le SDK d�
 
 ### Cadres supplémentaires {#additional-frameworks}
 
-D’autres infrastructures d’application d’une seule page peuvent être mises en oeuvre pour fonctionner avec le SDK d’AEM SPA Editor. Veuillez consulter le [SPA Blueprint](/help/sites-developing/spa-blueprint.md) pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à la structure composée de modules, de composants et de services pour travailler avec l’éditeur SPA d’AEM.
+Des infrastructures d’application d’une seule page peuvent être mises en oeuvre pour fonctionner avec le SDK de l’éditeur d’applications d’une seule page. Veuillez consulter le document [SPA Blueprint](/help/sites-developing/spa-blueprint.md) pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à la structure composée de modules, de composants et de services pour travailler avec l’éditeur SPA d’AEM.
 
-### Configuration requise pour l’éditeur de texte {#text-editor-requirements}
+### Utilisation de plusieurs sélecteurs {#multiple-selectors}
+
+D’autres sélecteurs personnalisés peuvent être définis et utilisés dans le cadre d’une application d’une seule page d’application d’une seule page développée pour le SDK SPA d’AEM. Toutefois, cette prise en charge requiert que le `model` sélecteur soit le premier sélecteur et que l’extension soit `.json` celle [requise par l’exportateur JSON.](json-exporter-components.md#multiple-selectors)
+
+### Exigences de l’éditeur de texte {#text-editor-requirements}
 
 Si vous souhaitez utiliser l’éditeur en place d’un composant de texte créé dans l’application d’une seule page, une configuration supplémentaire est requise.
 
-1. Définissez un attribut (il peut s’agir de n’importe quel attribut) sur l’élément d’enveloppe de  de contenant le texte HTML. Dans le cas du WKND  contenu d’exemple, c’est un `<div>` élément et le sélecteur utilisé est `data-rte-editelement`.
-1. Définissez la configuration `editElementQuery` sur les composants de texte AEM correspondants `cq:InplaceEditingConfig` qui pointe vers ce sélecteur, par ex. `data-rte-editelement`. Cela permet à l’éditeur de savoir quel élément HTML encapsule le texte HTML.
+1. Définissez un attribut (il peut s’agir de n’importe quel attribut) sur l’élément wrapper de conteneur contenant le texte HTML. Dans le cas d’un exemple de contenu du Journal WKND, il s’agit d’un `<div>` élément et le sélecteur utilisé est `data-rte-editelement`celui qui a été utilisé.
+1. Définissez la configuration `editElementQuery` du composant de texte AEM correspondant `cq:InplaceEditingConfig` qui pointe vers ce sélecteur, par ex. `data-rte-editelement`. Cela permet à l’éditeur de savoir quel élément HTML encapsule le texte HTML.
 
-Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à l’exemple de contenu du [WKND .](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Pour un exemple de la façon dont cela est fait, voir l’exemple de contenu du Journal [WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
-Pour plus d’informations sur la `editElementQuery` propriété et la configuration de l’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md)
+Pour plus d’informations sur la `editElementQuery` propriété et la configuration de l’éditeur de texte enrichi, voir [Configurer l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md)
 
 ### Restrictions {#limitations}
 
-Le SDK AEM SPA Editor a été introduit avec le Service Pack 2 d’AEM 6.4. Il est entièrement pris en charge par Adobe et, en tant que nouvelle fonctionnalité, il continue d’être amélioré et étendu. Les fonctionnalités AEM suivantes ne sont pas encore prises en charge par l’éditeur d’applications monopages :
+Le SDK AEM SPA Editor a été introduit avec le Service Pack 2 d’AEM 6.4. Il est entièrement pris en charge par Adobe et, en tant que nouvelle fonctionnalité, il continue d’être amélioré et développé. Les fonctionnalités AEM suivantes ne sont pas encore prises en charge par l’éditeur d’applications monopages :
 
-* Mode 
+* Mode Cible
 * ContextHub
-* Modification d’images intégrées
-* Modifier les configurations (ex. écouteurs)
+* Modification des images intégrées
+* Modifier les configurations (ex. auditeurs)
 * Système de style
 * Annuler/rétablir
 * Différence de page et déformation temporelle
-* Fonctionnalités de réécriture HTML côté serveur, telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement d’URL, etc.
-* Mode Développeur
+* Fonctionnalités de réécriture HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement d’URL, etc.
+* Mode développeur
 * Lancements d’AEM
