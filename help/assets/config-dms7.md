@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
+source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
 workflow-type: tm+mt
-source-wordcount: '5759'
-ht-degree: 87%
+source-wordcount: '5763'
+ht-degree: 86%
 
 ---
 
@@ -502,11 +502,11 @@ Pour que le mode Contenu multimédia dynamique - Scene7 fonctionne correctement,
 * Mettez à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (images et ressources non vidéo).
 * Mettez à jour le nombre maximal de connexions de chargement au serveur Dynamic Media Classic.
 
-#### Mise à jour de la file d’attente de workflows transitoires Granite {#updating-the-granite-transient-workflow-queue}
+#### Updating the Granite transient workflow queue {#updating-the-granite-transient-workflow-queue}
 
 La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**. Dans Dynamic Media, elle est utilisée pour l’intégration et le traitement des images.
 
-**Pour mettre à jour la file d’attente de workflows transitoires Granite**
+**Pour mettre à jour la file d&#39;attente de processus transitoire Granite**
 
 1. Accédez à [https://&lt;serveur>/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez **Queue: Granite Transient Workflow Queue** (File d’attente : file d’attente de workflows transitoires Granite).
 
@@ -524,11 +524,11 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
-#### Mise à jour de la file d’attente de workflows Granite {#updating-the-granite-workflow-queue}
+#### Updating the Granite workflow queue {#updating-the-granite-workflow-queue}
 
 La file d’attente de workflows Granite est utilisée pour les workflows non transitoires. Dans Dynamic Media, elle est utilisée pour le traitement de la vidéo avec le workflow **[!UICONTROL Vidéo de codage Dynamic Media]**.
 
-**Pour mettre à jour la file d’attente de workflows Granite**
+**Pour mettre à jour la file d&#39;attente de processus Granite**
 
 1. Accédez à `https://<server>/system/console/configMgr` et recherchez **Queue: Granite Workflow Queue** (File d’attente : file d’attente de workflows Granite).
 
@@ -546,11 +546,11 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**.
 
-#### Mise à jour de la connexion de chargement vers Scene7 {#updating-the-scene-upload-connection}
+#### Mise à jour de la connexion de téléchargement de Dynamic Media Classic {#updating-the-scene-upload-connection}
 
 Le paramètre de connexion de chargement vers Scene7 synchronise les ressources AEM avec les serveurs Dynamic Media Classic.
 
-**Pour mettre à jour la connexion de chargement vers Scene7**
+**Pour mettre à jour la connexion de téléchargement de Dynamic Media Classic**
 
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Nombre de connexions]** et/ou **[!UICONTROL Délai d’expiration des tâches actives]**, modifiez le nombre en fonction de vos besoins.
