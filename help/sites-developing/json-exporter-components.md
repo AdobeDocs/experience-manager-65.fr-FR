@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 72%
 
 ---
 
@@ -56,6 +59,16 @@ In addition, this specifies that the Sling Model class can be adapted into the `
 >
 >The `ExporterConstants` and `ComponentExporter` classes come from the `com.adobe.cq.export.json` bundle.
 
+### Utilisation de plusieurs sélecteurs {#multiple-selectors}
+
+Bien qu’il ne s’agisse pas d’un cas d’utilisation standard, il est possible de configurer plusieurs sélecteurs en plus du `model` sélecteur.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+Toutefois, dans ce cas, le `model` sélecteur doit être le premier sélecteur et l’extension doit être `.json`indiquée.
+
 ## Annotation de l’interface du modèle Sling {#annotate-the-sling-model-interface}
 
 Pour être prise en compte par la structure de l’exportateur JSON, l’interface Modèle doit mettre en œuvre l’interface `ComponentExporter` (ou `ContainerExporter`   dans le cas d’un composant de conteneur).
@@ -66,7 +79,7 @@ L’interface de modèle doit être correctement annotée afin de définir les m
 
 ## Exemple {#example}
 
-Les composants principaux prennent en charge l’exportation JSON depuis la version[ 1.1.0 des composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et peuvent être utilisés comme référence.
+Les composants principaux prennent en charge l’exportation JSON depuis la version[ 1.1.0 des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et peuvent être utilisés comme référence.
 
 Pour obtenir un exemple, consultez la mise en œuvre du modèle Sling sur le composant principal de l’image et son interface annotée.
 
@@ -86,5 +99,5 @@ Pour plus d’informations, voir :
 * [Modèles de fragment de contenu](/help/assets/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
 * [Exportateur JSON pour les services de contenu](/help/sites-developing/json-exporter.md)
-* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
