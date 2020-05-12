@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 6b4bc58efd72900c54cb245878239e345d72ae3e
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 91%
 
 ---
 
@@ -44,5 +47,5 @@ Dans les panneaux, vous pouvez accéder à la fonction depuis la barre d’outil
 
 Extraction des expressions SOM à l’aide de la barre d’outils du panneau
 
-Certaines API répertoriées dans [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.md) utilisent l’expression SOM d’un élément. Par exemple, pour centrer l’attention sur un champ particulier d’un formulaire adaptatif, transmettez l’expression SOM correspondante à l’`getFocus`API dans le `guideBridge`.
+Certaines API répertoriées dans [GuideBridge](https://helpx.adobe.com/fr/aem-forms/6/javascript-api/GuideBridge.html) utilisent l’expression SOM d’un élément. Par exemple, pour centrer l’attention sur un champ particulier d’un formulaire adaptatif, transmettez l’expression SOM correspondante à l’`getFocus`API dans le `guideBridge`.
 
