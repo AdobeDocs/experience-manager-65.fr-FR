@@ -3,9 +3,9 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 739f1c6fcc910ed134849c27a44a6feccd1684c9
+source-git-commit: 530a720a5fbad906e7015aa41a650b31f09fe2c4
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2708'
 ht-degree: 67%
 
 ---
@@ -22,10 +22,6 @@ Pour vue et modifier la page de propriétés d’un fichier, procédez comme sui
 1. Cliquez ou appuyez sur l’icône Propriétés **[!UICONTROL de la]** Vue dans Actions rapides sur la mosaïque de ressources dans la vue de cartes.
 
    ![Actions rapides sur la mosaïque de ressources](assets/chlimage_1-170.png)
-
-1. Les différents onglets vous permettent de modifier les propriétés des métadonnées. However, you cannot modify the asset type in the [!UICONTROL Properties] page.
-
-   ![Onglet de base Propriétés du fichier, où le type de fichier ne peut pas être modifié](assets/asset-properties-basic-tab.png)
 
 1. Vous pouvez modifier diverses propriétés de métadonnées sous les onglets disponibles. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
