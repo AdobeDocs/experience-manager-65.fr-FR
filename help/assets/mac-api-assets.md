@@ -3,7 +3,7 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Créez, lisez, mettez à jour, supprimez et gérez des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 40%
@@ -95,9 +95,9 @@ L’API Assets HTTP offre les fonctionnalités suivantes :
 
 **Conditions préalables**
 
-* Accédez à `https://[aem_server]:[port]/system/console/configMgr`.
-* Navigate to **Adobe Granite CSRF Filter**.
-* Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
+1. Accédez à `https://[aem_server]:[port]/system/console/configMgr`.
+1. Navigate to **Adobe Granite CSRF Filter**.
+1. Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
 
 ## Récupérer une liste de dossiers {#retrieve-a-folder-listing}
 
