@@ -1,20 +1,23 @@
 ---
 title: Rapports sur vos ressources numériques
-description: Comprenez les rapports sur vos ressources dans les ressources AEM qui vous aident à comprendre l’utilisation, les   et le partage de vos ressources numériques.
+description: Comprenez les rapports sur vos ressources dans AEM Assets qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 70%
 
 ---
 
 
-# Rapports de ressources   {#asset-reports}
+# Rapports de ressources  {#asset-reports}
 
 La création de rapports de ressources est un outil essentiel pour évaluer l’utilité de votre déploiement Adobe Experience Manager (AEM) Assets. Avec AEM Assets, vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’AEM Assets au sein de votre entreprise et par les clients.
 
-La structure de AEM Assets utilise les tâches Sling pour traiter les demandes de rapports de manière asynchrone et ordonnée. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
+La structure de rapports AEM Assets utilise les tâches Sling pour traiter les demandes de rapports de manière asynchrone et ordonnée. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
@@ -37,8 +40,7 @@ AEM Assets génère les rapports standard suivants :
 Les administrateurs d’AEM peuvent facilement générer et personnaliser ces rapports pour votre implémentation. Un administrateur peut procéder comme suit pour générer un rapport :
 
 1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
-
-![](assets/AssetsReportNavigation.png)
+   ![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
@@ -63,7 +65,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    >[!NOTE]
    >
-   >Si vous décidez de planifier le rapport ultérieurement, veillez à spécifier la date et l’heure dans les champs Date et heure. Si vous ne spécifiez aucune valeur, le moteur de création de rapports traite le rapport comme devant être généré immédiatement.
+   >Si vous choisissez de planifier le rapport ultérieurement, veillez à spécifier la date et l’heure dans les champs Date et heure. Si vous ne spécifiez aucune valeur, le moteur de création de rapports traite le rapport comme devant être généré immédiatement.
 
    Les champs de configuration peuvent varier en fonction du type de rapport que vous créez. Par exemple, le rapport **[!UICONTROL Utilisation du disque]** fournit des options pour inclure les rendus de ressources lors du calcul de l’espace disque utilisé par les ressources. Vous pouvez choisir d’inclure ou d’exclure des fichiers dans des sous-dossiers pour le calcul de l’utilisation du disque.
 
@@ -94,13 +96,13 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
    ![](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
-1. Sur la page Rapports de ressources, l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport, par exemple, Réussite, Échec, En file d’attente ou Planifié. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour  la page du rapport, cliquez sur le lien du rapport. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
+1. Sur la page Rapports de ressources, l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport, par exemple, Réussite, Échec, En file d’attente ou Planifié. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour vue à la page du rapport, cliquez sur le lien du rapport. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![](assets/report_page.png)
 
    Click **[!UICONTROL Download]** from the toolbar to download the report in CSV format.
 
-## Ajout de colonnes personnalisées   {#add-custom-columns}
+## Ajout de colonnes personnalisées  {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
@@ -112,11 +114,13 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Publier sur Brand Portal
 * Fichiers
 
+Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit :
+
 1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
-1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin d’accès au dossier et la plage de dates, selon le cas.
+1. Configurez les détails du rapport, tels que le titre, la description, la miniature, le chemin d’accès au dossier et la plage de dates, le cas échéant.
 
 1. Pour afficher une colonne personnalisée, spécifiez son nom sous **[!UICONTROL Colonnes personnalisées]**.
 
