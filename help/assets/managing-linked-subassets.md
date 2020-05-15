@@ -1,9 +1,12 @@
 ---
-title: Gérez des ressources composées avec des références et des ressources de plusieurs pages dans [!DNL Adobe Experience Manager].
-description: Découvrez comment créer des références à des ressources numériques à partir de [!DNL Adobe InDesign], [!DNL Adobe Illustrator] et [!DNL Adobe Photoshop]. Utilisez la fonctionnalité Visionneuse de pages pour des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
+title: Gérez des ressources composées contenant des références et des ressources de plusieurs pages [!DNL Adobe Experience Manager].
+description: Découvrez comment créer des références à des ressources numériques à partir de l’intérieur [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de pages pour vue des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+workflow-type: tm+mt
+source-wordcount: '1359'
+ht-degree: 18%
 
 ---
 
@@ -14,15 +17,15 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Besides eliminating redundancy, referencing the assets in [!DNL Adobe Creative Cloud] applications enhances collaboration and increases the efficiency and productivity of users.
 
-[!DNL Experience Manager Assets] prend en charge le référencement bidirectionnel. Vous trouverez des ressources référencées dans la page des détails de la ressource du fichier chargé. En outre, vous pouvez  les fichiers de référencement dans la page des détails de la ressource référencée.
+[!DNL Experience Manager Assets] prend en charge le référencement bidirectionnel. Vous trouverez des ressources référencées dans la page des détails de la ressource du fichier chargé. En outre, vous pouvez vue les fichiers de référencement dans la page des détails de la ressource de la ressource référencée.
 
 Les références sont résolues sur la base du chemin d’accès, du document et de l’ID d’instance des ressources référencées.
 
-## Ajouter des ressources numériques en tant que références dans [!DNL Adobe Illustrator]{#refai}
+## Ajouter ressources numériques en tant que références dans [!DNL Adobe Illustrator] {#refai}
 
 You can reference existing digital assets from within an [!DNL Adobe Illustrator] file.
 
-1. A l’aide de l’application [de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)Experience Manager, récupérez les ressources numériques sur le système de fichiers local. Accédez à l’emplacement du système de fichiers de la ressource à référencer.
+1. A l’aide de l’application [de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)Experience Manager, récupérez les ressources numériques sur le système de fichiers local. Accédez à l&#39;emplacement du système de fichiers de la ressource à référencer.
 1. Drag the asset from the local folder to the [!DNL Illustrator] file.
 
 1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) to the [!DNL Experience Manager] repository.
@@ -37,11 +40,11 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
 1. Click **[!UICONTROL View Properties]** from the toolbar. In the [!UICONTROL Properties] page, the list of files that reference the current asset appear under the **[!UICONTROL References]** column in the **[!UICONTROL Basic]** tab.
 
-   ![les références des ressources Experience Manager dans la colonne Références dans les détails des ressources](assets/asset-references.png)
+   ![vue des références des ressources Experience Manager dans la colonne Références dans les détails des ressources](assets/asset-references.png)
 
-   *Figure : Références des ressources dans les détails des ressources.*
+   *Figure : Références de ressources dans les détails de la ressource.*
 
-## Ajouter des ressources numériques en tant que références dans [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
+## Ajouter ressources numériques en tant que références dans [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
 To reference digital assets from within an [!DNL InDesign] file, either drag assets to the [!DNL InDesign] file or export the [!DNL InDesign] file as a ZIP archive.
 
@@ -61,11 +64,11 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 1. Use the Package feature of [!DNL Adobe InDesign] to export the document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un assemblage. In this case, the exported folder contains a Links folder that contains sub-assets in the [!DNL InDesign] file.
 1. Create a ZIP file and upload it to the [!DNL Experience Manager] repository.
 1. Start the `Unarchiver` workflow.
-1. Une fois le processus terminé, les références contenues dans le dossier Links sont automatiquement référencées en tant que sous-ressources. To view a list of referred assets, navigate to the asset details page of the [!DNL InDesign] asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Une fois le processus terminé, les références du dossier Links sont automatiquement référencées en tant que sous-ressources. To view a list of referred assets, navigate to the asset details page of the [!DNL InDesign] asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Ajouter des ressources numériques en tant que références dans [!DNL Adobe Photoshop]{#refps}
+## Ajouter ressources numériques en tant que références dans [!DNL Adobe Photoshop] {#refps}
 
-1. Utilisez [!DNL Experience Manager] l’application de bureau pour y accéder [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer les liens] dans [!DNL Adobe Photoshop]. Voir [Placement de fichiers dans une application](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de bureau.
+1. Utilisez [!DNL Experience Manager] l&#39;application de bureau pour accéder [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer lié] dans [!DNL Adobe Photoshop]. Reportez-vous à la page [Placement de fichiers dans une application](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de bureau.
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
@@ -82,49 +85,53 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 
 ## Création de sous-ressources {#generate-subassets}
 
-Pour les ressources prises en charge avec des formats de plusieurs pages — Fichiers PDF, fichiers AI [!DNL Microsoft PowerPoint] et [!DNL Apple Keynote] fichiers, ainsi que [!DNL Adobe InDesign] fichiers — [!DNL Experience Manager] peut générer des sous-ressources qui correspondent à chaque page individuelle de la ressource d’origine. Ces sous-ressources sont liées à la ressource *parente* et facilitent les  de plusieurs pages. Pour toutes les autres raisons, les sous-ressources sont traitées comme des actifs normaux dans [!DNL Experience Manager].
+Pour les ressources prises en charge avec des formats de plusieurs pages (fichiers PDF, fichiers AI, [!DNL Microsoft PowerPoint] fichiers et fichiers [!DNL Apple Keynote] ), [!DNL Adobe InDesign] [!DNL Experience Manager] peut générer des sous-ressources qui correspondent à chaque page individuelle de la ressource d’origine. Ces sous-ressources sont liées à l’actif *parent* et facilitent la vue de plusieurs pages. Pour toutes les autres fins, les sous-ressources sont traitées comme des actifs normaux dans [!DNL Experience Manager].
 
 La génération de sous-ressources est désactivée par défaut. Pour activer la génération de sous-ressources, procédez comme suit :
 
 1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
-1. Sélectionnez **[!UICONTROL DAM Update Asset]** workflow et cliquez sur **[!UICONTROL Modifier]**.
-1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau]** latéral et recherchez l’étape **[!UICONTROL Créer un sous-fichier]** . Ajouter l’étape du processus. Cliquez sur **[!UICONTROL Synchroniser]**.
+1. Sélectionnez **[!UICONTROL DAM Update Asset]** Workflow et cliquez sur **[!UICONTROL Modifier]**.
+1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau]** latéral et recherchez l’étape **[!UICONTROL Créer un sous-actif]** . Ajouter l’étape du processus. Cliquez sur **[!UICONTROL Synchroniser]**.
 
-Pour générer les sous-ressources, procédez de l’une des manières suivantes :
+Pour générer les sous-ressources, effectuez l’une des opérations suivantes :
 
-* Nouveaux actifs : Le flux de travaux [!UICONTROL DAM Update Assets] s’exécute sur toute nouvelle ressource qui est téléchargée [!DNL Experience Manager]. Les sous-ensembles sont générés automatiquement pour les nouveaux actifs de plusieurs pages.
-* Ressources multi-page existantes : Exécutez manuellement le flux de travaux [!UICONTROL DAM Update Assets] en procédant de l’une des manières suivantes :
+* Nouveaux actifs : Le processus de mise à jour des actifs  DAM s’exécute sur toute nouvelle ressource téléchargée sur [!DNL Experience Manager]. Les sous-ressources sont générées automatiquement pour les nouvelles ressources de plusieurs pages.
+* Ressources multi-page existantes : Exécutez manuellement le processus de mise à jour des ressources  DAM en procédant comme suit :
 
-   * Sélectionnez un fichier et cliquez sur [!UICONTROL Chronologie] pour ouvrir le panneau de gauche. Alternately, use the keyboard shortcut `alt + 3`. Cliquez sur [!UICONTROL Workflow], sélectionnez [!UICONTROL DAM Update Asset], cliquez sur , puis sur [!UICONTROL Continuer.]
-   * Sélectionnez un fichier et cliquez sur [!UICONTROL Créer > Processus] dans la barre d’outils. Dans la boîte de dialogue contextuelle, sélectionnez [!UICONTROL Processus de mise à jour des ressources] de gestion des actifs, cliquez sur [!UICONTROL de][!UICONTROL , puis sur]Continuer.
+   * Sélectionnez une ressource et cliquez sur [!UICONTROL Chronologie] pour ouvrir le panneau de gauche. Alternately, use the keyboard shortcut `alt + 3`. Cliquez sur Processus [!UICONTROL de]Début, sélectionnez [!UICONTROL DAM Update Asset], cliquez sur [!UICONTROL Début], puis sur [!UICONTROL Continuer.]
+   * Sélectionnez un élément et cliquez sur [!UICONTROL Créer > Processus] dans la barre d’outils. Dans la boîte de dialogue contextuelle, sélectionnez [!UICONTROL DAM Update Asset] workflow, cliquez sur [!UICONTROL Début], puis sur [!UICONTROL Continuer].
 
-Plus précisément pour les Microsoft Word, exécutez le flux de travail du **[!UICONTROL DAM Parse Word]** . Il génère un `cq:Page` composant à partir du contenu du Microsoft Word. Les images extraites du document sont référencées à partir du composant `cq:Page`. Elles sont extraites même si la génération des sous-ressources est désactivée.
+Plus précisément pour les documents Microsoft Word, exécutez le processus des Documents **[!UICONTROL DAM Parse]** Word. Il génère un `cq:Page` composant à partir du contenu du document Microsoft Word. Les images extraites du document sont référencées à partir du composant `cq:Page`. Elles sont extraites même si la génération des sous-ressources est désactivée.
 
 ## Affichage des sous-ressources {#viewing-subassets}
 
-Les sous-ressources s’affichent uniquement si elles sont générées et disponibles pour la ressource multi-page sélectionnée. Pour  les sous-ressources générées, ouvrez le fichier de plusieurs pages. Dans le coin supérieur gauche de la page, cliquez sur l’icône ![du rail de](assets/do-not-localize/aem_leftrail_contentonly.png) gauche, puis sur **[!UICONTROL Sous-ensembles]** dans le . Lorsque vous sélectionnez **[!UICONTROL Sous-]** ensemblesdans le  de. Alternately, use the keyboard shortcut `alt + 5`.
+Les sous-ressources s’affichent uniquement si elles sont générées et disponibles pour la ressource multi-page sélectionnée. Pour vue des sous-ressources générées, ouvrez la ressource de plusieurs pages. Dans la partie supérieure gauche de la page, cliquez sur l’icône ![du rail de](assets/do-not-localize/aem_leftrail_contentonly.png) gauche et cliquez sur **[!UICONTROL Sous-ensembles]** dans la liste. Lorsque vous sélectionnez **[!UICONTROL Sous-ensembles]** dans la liste. Alternately, use the keyboard shortcut `alt + 5`.
 
-![de sous-ressources pour une ressource multi-page](assets/view_subassets_simulation.gif)
+![Sous-ressources de Vue pour une ressource de plusieurs pages](assets/view_subassets_simulation.gif)
 
 ## Affichage des pages d’un fichier multipage   {#view-pages-of-a-multi-page-file}
 
-Vous pouvez un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonction Visionneuse de [!DNL Experience Manager Assets]pages. Ouvrez un fichier de plusieurs pages et cliquez sur **[!UICONTROL Pages]** dans le coin supérieur gauche de la page. La visionneuse de pages qui s’ouvre affiche les pages du fichier et les commandes permettant de parcourir et de zoomer sur chaque page.
+Vous pouvez vue un fichier de plusieurs pages, tel que PDF, INDD, PPT, PPTX et AI, à l’aide de la fonction Page Viewer de [!DNL Experience Manager Assets]. Ouvrez un fichier de plusieurs pages et cliquez sur Pages **[!UICONTROL de]** Vue dans le coin supérieur gauche de la page. La visionneuse de pages qui s’ouvre affiche les pages du fichier et les commandes permettant de parcourir et de zoomer chaque page.
 
-![et affichage des pages d’un fichier multi-page](assets/view_multipage_asset_fmr.gif)
+![Vue et affichage des pages d’un fichier de plusieurs pages](assets/view_multipage_asset_fmr.gif)
 
 Pour [!DNL InDesign]cela, vous pouvez extraire des pages à l’aide [!DNL InDesign Server]. If the previews of pages are saved during [!DNL InDesign] file creation, then [!DNL InDesign Server] is not required for page extraction.
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche et dans les commandes de la visionneuse de pages :
 
-* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide de l’application [!DNL Experience Manager] de bureau. Découvrez comment [configurer les actions](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) de bureau si vous utilisez une application [!DNL Experience Manager] de bureau.
+* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide d’une application [!DNL Experience Manager] de bureau. Découvrez comment [configurer les actions](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) pour ordinateur si vous utilisez une application [!DNL Experience Manager] de bureau.
 
 * **[!UICONTROL L’option Propriétés]** ouvre la page [!UICONTROL Propriétés] de la sous-ressource spécifique.
 
 * **[!UICONTROL L’option Annoter]** vous permet d’annoter la sous-ressource spécifique. Les annotations que vous utilisez sur des sous-ressources distinctes sont collectées et affichées ensemble lorsque le fichier parent est ouvert pour affichage.
 
-* **[!UICONTROL L’option Aperçu]** de la page affiche toutes les sous-ressources simultanément.
+* **[!UICONTROL L’option Aperçu]** de la page affiche tous les sous-ressources simultanément.
 
-* **[!UICONTROL L’option Chronologie]** du rail de gauche, après avoir cliqué sur l’icône ![du rail de](assets/do-not-localize/aem_leftrail_contentonly.png) gauche, affiche le flux de   du fichier.
+* **[!UICONTROL L’option Chronologie]** du rail de gauche après avoir cliqué sur l’icône ![du rail de](assets/do-not-localize/aem_leftrail_contentonly.png) gauche affiche le flux d’activité du fichier.
+
+## Best practices and limitation {#best-practice-limitation-tips}
+
+* La génération de sous-ressources peut être très gourmande en ressources pour tout déploiement d’Experience Manager. Si vous générez des sous-ressources lorsque des ressources complexes sont téléchargées, ajoutez l’étape suivante dans le processus de mise à jour des ressources de gestion des actifs numériques. Si vous générez des sous-ressources à la demande, créez un processus distinct pour générer des sous-ressources. Un processus dédié vous permet d’ignorer les autres étapes du processus de mise à jour des actifs de gestion des actifs numériques et d’enregistrer des ressources de calcul.
 
 >[!MORELIKETHIS]
 >
