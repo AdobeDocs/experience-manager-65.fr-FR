@@ -1,16 +1,19 @@
 ---
-title: Étendre la fonctionnalité de recherche des ressources Adobe Experience Manager
+title: Étendre la fonctionnalité de recherche des ressources d’Adobe Experience Manager
 description: Étendez les fonctionnalités de recherche des ressources Adobe Experience Manager au-delà des valeurs par défaut.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 81%
 
 ---
 
 
 # Étendre la recherche de ressources{#extending-assets-search}
 
-Vous pouvez étendre [!DNL Adobe Experience Manager Assets] les fonctionnalités de recherche. Out of the box, [!DNL Experience Manager Assets] searches for assets by strings.
+Vous pouvez étendre les fonctionnalités [!DNL Adobe Experience Manager Assets] de recherche. Out of the box, [!DNL Experience Manager Assets] searches for assets by strings.
 
 La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. Vous pouvez remplacer l’ensemble des prédicats par défaut dans le répertoire suivant : `/apps/dam/content/search/searchpanel/facets`.
 
@@ -18,7 +21,7 @@ You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [Deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommande d’utiliser l’interface utilisateur tactile. For customization, see [Search Facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommande l’utilisation de l’interface utilisateur tactile. For customization, see [search facets](/help/assets/search-facets.md).
 
 ## Incrustation {#overlaying}
 
@@ -32,7 +35,7 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 
 ## Ajouter des onglets {#adding-tabs}
 
-Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’administrateur des ressources AEM. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’administrateur AEM Assets. Pour créer des onglets supplémentaires, procédez comme suit :
 
 1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
@@ -70,7 +73,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
 
 1. Ajoutez `titlepredicate.jsp`.
 
-   ```xml
+   ```java
    <%--
    
      Sample title predicate component
@@ -163,7 +166,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
 
 1. Ajoutez **titlepredicate.jsp** :
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
@@ -291,7 +294,7 @@ Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigu
 | searchCallback | Fonction | Rappel pour déclencher la recherche. La valeur par défaut est `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Nombre | Délai d’expiration avant le déclenchement de searchCallback. Valeur par défaut : 800 ms |
 
-## Personnaliser les résultats de la recherche {#customizing-search-results}
+## Personnalisation des résultats de la recherche {#customizing-search-results}
 
 La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. AEM Assets est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
