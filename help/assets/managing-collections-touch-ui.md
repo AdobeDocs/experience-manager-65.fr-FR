@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '2229'
-ht-degree: 72%
+source-wordcount: '2216'
+ht-degree: 70%
 
 ---
 
@@ -149,26 +149,26 @@ Les collections dynamiques sont créées en enregistrant une recherche afin que 
 
 Les métadonnées de collection incluent les données sur la collection, notamment toute balise qui est ajoutée.
 
-1. From the Collections console, select a collection and Click the **[!UICONTROL Properties]** icon from the toolbar.
+1. From the [!UICONTROL Collections] console, select a collection and click **[!UICONTROL Properties]** from the toolbar.
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, affichez les métadonnées de collection à partir des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]**.
-1. Modify the metadata, as necessary, and then Click **[!UICONTROL Save &amp; Close]** from the toolbar to save the changes.
+1. Modifiez les métadonnées, si nécessaire. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]** dans la barre d’outils.
 
 ## Modification des métadonnées de plusieurs collections en bloc {#editing-collection-metadata-in-bulk}
 
 Vous pouvez modifier simultanément les métadonnées de plusieurs collections. Cette fonctionnalité vous aide à répliquer rapidement des métadonnées communes dans plusieurs collections.
 
-1. Dans la console Collections, sélectionnez au moins deux collections dont vous souhaitez modifier les métadonnées.
+1. Dans la console Collections, sélectionnez plusieurs collections.
 1. From the toolbar, click the **[!UICONTROL Properties]** icon.
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, modifiez les métadonnées sous **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, selon les besoins.
 1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
 
    >[!NOTE]
    >
-   >* Dans la page des propriétés de collection, vous pouvez supprimer des collections de la liste des collections en les désélectionnant. La liste des collections contient toutes les collections sélectionnées par défaut. Les métadonnées des collections que vous supprimez ne sont pas mises à jour.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. La liste des collections contient toutes les collections sélectionnées par défaut. Experience Manager ne met pas à jour les métadonnées des collections que vous supprimez.
    >* En haut de la liste, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des collections à l’effacement de la liste, et inversement.
 
 
-1. Click **[!UICONTROL Save &amp; Close]** from the toolbar, and then close the confirmation dialog to complete the process.
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** dans la barre d’outils, puis fermez la boîte de dialogue de confirmation.
 1. To append the new metadata with the existing metadata, select **[!UICONTROL Append mode]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Cliquez sur **[!UICONTROL Envoyer]**.
 
    >[!NOTE]
