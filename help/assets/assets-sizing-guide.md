@@ -1,9 +1,12 @@
 ---
 title: Guide de dimensionnement des ressources
-description: Meilleures pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement des ressources AEM.
+description: Meilleures pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement d’AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +23,7 @@ Une erreur courante lors du dimensionnement de l’espace disque requis pour une
 
 La plupart des utilisateurs définissent des rendus personnalisés en plus des rendus prêts à l’emploi. En plus des rendus, AEM Assets permet d’extraire des sous-ressources à partir de types de fichiers courants, tels qu’InDesign et Illustrator.
 
-Enfin, les fonctionnalités de contrôle de version d’AEM stockent les  des ressources dans l’historique des versions. Vous pouvez configurer les versions à purger aussi fréquemment que souhaité. Cependant, de nombreux utilisateurs choisissent de conserver des versions dans le système pendant une longue période, ce qui utilise de l’espace de stockage supplémentaire.
+Enfin, les fonctionnalités de gestion des versions d’AEM stockent les duplicata des ressources dans l’historique des versions. Vous pouvez configurer les versions à purger aussi fréquemment que souhaité. Cependant, de nombreux utilisateurs choisissent de conserver des versions dans le système pendant une longue période, ce qui utilise de l’espace de stockage supplémentaire.
 
 Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant de calculer un espace de stockage acceptable afin de stocker les ressources des utilisateurs.
 
@@ -28,21 +31,21 @@ Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant d
 1. Obtenez un échantillon représentatif des ressources à charger dans AEM. Par exemple, si vous prévoyez de charger des fichiers PSD, JPG, AI et PDF dans le système, vous avez besoin de plusieurs échantillons d’images de chaque format de fichier. En outre, ces échantillons doivent être représentatifs des différentes tailles de fichiers et de la complexité des images.
 1. Définissez les rendus à utiliser.
 1. Créez les rendus dans AEM en utilisant ImageMagick ou les applications Adobe Creative Cloud. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui mettent en œuvre Scene7, vous pouvez utiliser le fichier binaire IC pour générer les rendus PTIFF à stocker dans AEM.
-1. Si vous prévoyez d’utiliser des sous-ressources, générez-les pour les types de fichiers appropriés. Voir la documentation en ligne sur la génération de pages de sous-ressources à partir de fichiers InDesign ou PNG/PDF provenant de calques d’Illustrator.
+1. Si vous prévoyez d’utiliser des sous-ressources, générez-les pour les types de fichiers appropriés.
 1. Comparez la taille des images, rendus et sous-ressources de sortie avec les images d’origine. Cette comparaison permet de générer un facteur de croissance attendu lorsque le système est chargé. Par exemple, si vous générez des rendus et des sous-ressources d’une taille combinée de 3 Go après le traitement de 1 Go de ressources, le facteur de croissance des rendus est de 3.
 1. Déterminez la durée maximale pendant laquelle les versions des ressources doivent être conservées dans le système.
 1. Déterminez la fréquence à laquelle les ressources existantes sont modifiées dans le système. Si AEM est utilisé comme centre de collaboration dans les workflow de création, le nombre de modifications est élevé. Si seules les ressources terminées sont chargées dans le système, ce nombre est beaucoup plus bas.
 1. Déterminez le nombre de ressources chargées dans le système chaque mois. Si vous avez le moindre doute, vérifiez le nombre de ressources actuellement disponibles et divisez ce nombre par l’âge de la ressource la plus ancienne afin de calculer un nombre approximatif.
 
-La réalisation des étapes 1 à 9 vous aide à déterminer ce qui suit :
+L’exécution des étapes ci-dessus vous aide à déterminer les éléments suivants :
 
-* Taille brute des ressources à charger
-* Nombre de ressources à charger
-* Facteur de croissance des rendus
-* Nombre de modifications de ressources effectuées par mois
-* Nombre de mois pendant lesquels les versions des ressources sont conservées
-* Nombre de nouvelles ressources chargées chaque mois
-* Nombre d’années de croissance pour lesquelles allouer de l’espace
+* Taille brute des ressources à charger.
+* Nombre de ressources à charger.
+* Facteur de croissance des rendus.
+* Nombre de modifications de ressources effectuées par mois.
+* Nombre de mois pendant lesquels les versions des ressources sont conservées.
+* Nombre de nouvelles ressources chargées chaque mois.
+* Années de croissance pour l&#39;allocation d&#39;espace par enregistrement.
 
 Vous pouvez indiquer ces chiffres dans la feuille de calcul Dimensionnement du réseau afin de déterminer l’espace total requis pour la banque de données. C’est également un outil utile pour déterminer l’impact de la conservation des versions des ressources ou de la modification des ressources dans AEM sur la croissance du disque.
 
@@ -52,7 +55,7 @@ Les exemples de données renseignés dans l’outil montrent à quel point il es
 
 ### Shared datastores {#shared-datastores}
 
-Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée par le biais d’une banque de données de fichiers partagée sur un lecteur connecté au réseau ou d’une banque de données S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication binaire et réduit la bande passante utilisée pour répliquer les ressources afin de publier   de données.
+Pour les banques de données volumineuses, vous pouvez mettre en oeuvre une banque de données partagée soit par l’intermédiaire d’une banque de données de fichiers partagés sur un lecteur connecté au réseau, soit par l’intermédiaire d’une banque de données Amazon S3. Dans ce cas, les instances individuelles n’ont pas besoin de conserver une copie des fichiers binaires. En outre, une banque de données partagée facilite la réplication sans binaire et réduit la bande passante utilisée pour répliquer des ressources vers des environnements de publication.
 
 #### Scénarios d’utilisation    {#use-cases}
 
@@ -72,7 +75,7 @@ La mise en œuvre du service AWS S3 pour les banques de données partagées es
 
 Les banques de données partagées augmentent également la complexité des opérations, telles que le nettoyage de la mémoire. Normalement, le nettoyage de la mémoire pour une banque de données autonome peut être lancé d’un seul clic. Cependant, les banques de données partagées requièrent des opérations de balayage des repères sur chaque membre utilisant la banque de données, en plus de l’exécution du nettoyage réel sur un seul nœud.
 
-Pour les opérations AWS, la mise en œuvre d’un emplacement central unique (via S3) plutôt que la création d’une matrice RAID de volumes EBS peut considérablement limiter la complexité et les risques opérationnels du système.
+Pour les opérations AWS, la mise en oeuvre d’un emplacement central unique (via Amazon S3), plutôt que la création d’une matrice RAID de volumes EBS, peut considérablement compenser la complexité et les risques opérationnels du système.
 
 #### Performance concerns {#performance-concerns}
 
@@ -91,9 +94,9 @@ Il est difficile d’obtenir des chiffres de dimensionnement précis pour un mag
 * Journaux d’audit
 * Processus archivés et actifs
 
-Comme les fichiers binaires sont stockés dans la banque de données, chaque fichier binaire occupe de l’espace. La plupart des référentiels ont une taille inférieure à 100 Go. Cependant, il peut y avoir de plus grands référentiels jusqu&#39;à 1 To de taille. En outre, pour effectuer le compactage hors ligne, vous avez besoin de suffisamment d’espace libre sur le volume pour réécrire le référentiel compacté en plus de la version précompactée. En règle générale, il convient d’avoir un disque faisant 1,5 fois la taille attendue pour le référentiel.
+Comme les fichiers binaires sont stockés dans la banque de données, chaque fichier binaire occupe de l’espace. La plupart des référentiels ont une taille inférieure à 100 Go. Cependant, il peut y avoir des dépôts de plus grande taille pouvant atteindre 1 To. En outre, pour effectuer le compactage hors ligne, vous avez besoin de suffisamment d’espace libre sur le volume pour réécrire le référentiel compacté en plus de la version précompactée. En règle générale, il convient d’avoir un disque faisant 1,5 fois la taille attendue pour le référentiel.
 
-Pour le référentiel, utilisez des disques SSD ou des disques avec un niveau d&#39;E/S par seconde supérieur à 3 000. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
+Pour le référentiel, utilisez des disques SSD ou des disques avec un niveau d&#39;E/S supérieur à 3000. Pour éviter que les IOPS n’introduisent des goulets d’étranglement en termes de performances, surveillez les niveaux d’attente des E/S du processeur pour détecter les premiers signes de problèmes.
 
 [Obtenir le fichier](assets/aem_environment_sizingtool.xlsx)
 
@@ -113,10 +116,10 @@ In addition, you can edit the threshold size property of the `com.day.cq.dam.com
 
 La limite du nombre de fichiers pouvant exister dans une banque de données peut être de 2,1 milliards en raison des restrictions du système de fichiers. Il est probable que le référentiel rencontre des problèmes en raison du grand nombre de nœuds, bien avant d’atteindre la limite de la banque de données.
 
-Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Camera Raw. Toutefois, dans ce cas, le côté le plus long de l’image ne doit pas dépasser 65 000 pixels. En outre, l’image ne doit pas contenir plus de 512 MP (512 x 1 024 x 1 024 pixels). La taille du fichier n’a pas d’importance.
+Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Camera Raw. Toutefois, dans ce cas, le côté le plus long de l’image ne doit pas dépasser 65 000 pixels. En outre, l’image ne doit pas contenir plus de 512 MP (512 x 1 024 x 1 024 pixels). La taille de la ressource n’a pas d’importance.
 
-Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge prêt à l’emploi avec un tas spécifique pour AEM, car d’autres facteurs, tels que la taille des pixels, influencent le traitement. Il est possible qu’AEM puisse traiter un fichier de 255 Mo prêt à l’emploi, mais pas une taille de fichier de 18 Mo, car ce dernier comprend un nombre de pixels inhabituellement plus élevé que le premier.
+Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge de manière standard avec un tas spécifique pour AEM, car d’autres facteurs, tels que la taille des pixels, influencent le traitement. Il est possible qu’AEM puisse traiter un fichier de 255 Mo prêt à l’emploi, mais ne puisse pas traiter une taille de fichier de 18 Mo, car cette dernière comprend un nombre de pixels inhabituellement plus élevé que le premier.
 
 ## Size of assets {#size-of-assets}
 
-Par défaut, AEM vous permet de télécharger des fichiers d’une taille de fichier allant jusqu’à 2 Go. Pour télécharger des fichiers très volumineux dans AEM, voir [Configuration pour télécharger des fichiers](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)très volumineux.
+Par défaut, AEM vous permet de télécharger des fichiers d’une taille maximale de 2 Go. Pour télécharger des ressources très volumineuses dans AEM, voir [Configuration pour télécharger des ressources](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)très volumineuses.
