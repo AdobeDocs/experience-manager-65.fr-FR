@@ -3,23 +3,23 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69506287c1c8e45d99c3229d701604387bd57ca9
+source-git-commit: 265fc8fa6b4d835241b1213d95beaa17db5798ac
 workflow-type: tm+mt
-source-wordcount: '2713'
-ht-degree: 67%
+source-wordcount: '2665'
+ht-degree: 51%
 
 ---
 
 
 # Schémas de métadonnées {#metadata-schemas}
 
-Les entreprises proposent un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est indispensable à la gestion de workflows et de processus reposant sur les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner. Adobe Experience Manager permet de créer, gérer et appliquer des schémas de métadonnées de manière simple et flexible.
+Les entreprises proposent un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est indispensable à la gestion de workflows et de processus reposant sur les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner. [!DNL Adobe Experience Manager] permet des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
 
 Dans [!DNL Adobe Experience Manager Assets], les schémas contiennent des champs spécifiques pour des informations spécifiques à remplir. Il contient également des informations de mise en page pour afficher les champs de métadonnées d’une manière conviviale. Les propriétés de métadonnées comprennent le titre, la description, les types MIME, les balises, etc. You can use the [!UICONTROL Metadata Schema Forms] editor to modify the existing schemas or add custom metadata schemas.
 
 Pour vue et modifier la page de propriétés d’un fichier, procédez comme suit :
 
-1. Cliquez ou appuyez sur l’icône Propriétés **[!UICONTROL de la]** Vue dans Actions rapides sur la mosaïque de ressources dans la vue de cartes.
+1. Cliquez ou appuyez sur l’icône Propriétés **[!UICONTROL de la]** Vue dans Actions rapides sur la mosaïque de ressources dans la vue de carte.
 
    ![Actions rapides sur la mosaïque de ressources](assets/chlimage_1-170.png)
 
@@ -31,24 +31,30 @@ Pour vue et modifier la page de propriétés d’un fichier, procédez comme sui
 
 *Figure : Onglet Simple sur[!UICONTROL Propriétés]du fichier.*
 
-Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Si vous modifiez le schéma de métadonnées d’un certain type MIME, la disposition de la page des propriétés des ressources de ce type MIME et tous les sous-types de ressources sont modifiés. Par exemple, la modification d’un schéma jpeg sous `default/image` concerne uniquement la disposition des métadonnées (propriétés de ressource) des ressources du type MIME `image/jpeg`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
+Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Si vous modifiez le schéma de métadonnées d’un type MIME, la mise en page des propriétés des fichiers et de tous les sous-types est modifiée. Par exemple, la modification d’un schéma jpeg sous `default/image` concerne uniquement la disposition des métadonnées (propriétés de ressource) des ressources du type MIME `image/jpeg`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
 
 ## Formulaires de schéma de métadonnées {#default-metadata-schema-forms}
 
-Pour vue d’une liste de formulaires/modèles, dans l’ [!DNL Experience Manager] interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de]** métadonnées.
+Pour vue d’une liste de formulaires ou de modèles, dans [!DNL Experience Manager] l’interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de]** métadonnées.
 
-[!DNL Experience Manager] fournit les modèles de formulaire de Schéma de métadonnées suivants :
+[!DNL Experience Manager] fournit les modèles de Schéma de métadonnées suivants.
 
 | Modèles |  | Description |
 |---|---|---|
 | [!UICONTROL default] |  | schéma de métadonnées de base pour les ressources. |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Schema form for assets with the MIME type &quot;image&quot;, for example, `image/jpeg`, `image/png`, and so on. <br> Le formulaire [!UICONTROL image] comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg]: Schéma de formulaire pour les ressources avec un sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schéma de formulaire pour les ressources avec un [!UICONTROL tiff]de sous-type.</li></ul> |
-|  | <ul><li> [!UICONTROL l’application ;]</li></ul> | Schema form for assets with MIME type &quot;application&quot;, for example  `application/pdf`,  `application/zip`, and so on. <br>[!UICONTROL pdf]: Formulaire de Schéma pour les ressources avec un sous-type pdf. |
-|  | <ul><li>[!UICONTROL vidéo]</li></ul> | Schema form for assets with MIME type &quot;video&quot;, such as `video/avi`, `video/mp4` and so on. |
+|  | [!UICONTROL image] | Schéma de formulaire pour les images de type MIME, par exemple `image/jpeg` et `image/png`. <br> Le formulaire [!UICONTROL image] comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg]: Schéma de formulaire pour les ressources avec un sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulaire de Schéma pour les actifs avec un sous-type TIFF.</li></ul> |
+|  | [!UICONTROL l’application ;] | Schema form for assets with MIME type such as `application/pdf` and `application/zip`. <br>[!UICONTROL pdf]: Schéma de formulaire pour les ressources avec un sous-type PDF. |
+|  | [!UICONTROL vidéo] | Schéma de formulaire pour les ressources vidéo de type MIME, par exemple `video/avi` et `video/mp4`. |
 | [!UICONTROL collection] |  | Schéma de formulaire pour les collections. |
-| [!UICONTROL contentfragment] |  | Schéma de formulaire pour les fragments de contenu. |
+| [!UICONTROL contentfragment] |  | [Schéma de formulaire pour les fragments](/help/sites-developing/customizing-content-fragments.md)de contenu. |
 | [!UICONTROL forms] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
+
+<!-- 
+TBD: Add dm_video child for the default form OOTB.
+video doesn't contain any sub types as listed above OOTB.
+application doesn't contain the sub type zip OOTB.
+-->
 
 >[!NOTE]
 >
@@ -56,29 +62,31 @@ Pour vue d’une liste de formulaires/modèles, dans l’ [!DNL Experience Manag
 
 ## Ajout d’un formulaire de schéma de métadonnées {#add-a-metadata-schema-form}
 
+Pour ajouter un formulaire de schéma de métadonnées, procédez comme suit :
+
 1. Pour ajouter un modèle personnalisé à la liste, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 
    >[!NOTE]
    >
-   >Les modèles non modifiés comportent une icône de verrouillage. Si vous personnalisez l’un des modèles, l’icône de verrouillage disparaît avant le modèle.
+   >Une icône de verrouillage s’affiche avec les modèles non modifiés. Si vous personnalisez un modèle, l’icône de verrouillage ne s’affiche pas.
 
-1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
+1. In the dialog, provide the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
 ## Modification des formulaires de schéma de métadonnées {#edit-metadata-schema-forms}
 
-Vous pouvez modifier un formulaire de schéma de métadonnées existant ou récemment ajouté. Le formulaire de schéma de métadonnées contient des onglets et des éléments de formulaire dans les onglets. Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulaire de schéma de métadonnées. Les onglets et les éléments de formulaire dérivés du parent sont à l’état verrouillé. Vous ne pouvez pas les modifier au niveau des enfants.
+Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouvellement ajouté. Le formulaire de schéma de métadonnées contient des onglets et des éléments de formulaire dans les onglets. Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées. Les onglets et les éléments de formulaire dérivés du parent sont à l’état verrouillé. Vous ne pouvez pas les modifier au niveau des enfants.
 
-1. In the Schema Forms page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
+1. Sur la page Formulaires [!UICONTROL de Schéma de] métadonnées, sélectionnez un formulaire et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
-1. Sur la page **[!UICONTROL Éditeur de schéma de métadonnées]**, personnalisez la page des propriétés de la ressource en faisant glisser un ou plusieurs composants de la liste des types de composants dans le sous-onglet **[!UICONTROL Créer le formulaire]** vers l’onglet **[!UICONTROL De base]**.
+1. Sur la page Editeur **** de Schéma de métadonnées, personnalisez le formulaire de métadonnées. Faites glisser les composants nécessaires de l’onglet **[!UICONTROL Créer un formulaire]** vers l’un des onglets.
 
    ![Editeur de Schéma de métadonnées pour personnaliser la page Propriétés du fichier](assets/metadata-schema-editor.png)
 
-   *Figure :[!UICONTROL Onglet Simple]de l’éditeur de Schéma[!UICONTROL de]métadonnées.*
+   *Figure : Page de l’éditeur[!UICONTROL de Schéma de]métadonnées contenant des onglets disponibles.*
 
 1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**.
 
-### Composants de l’onglet Créer le formulaire {#components-within-the-build-form-tab}
+### Components within the [!UICONTROL Build Form] tab {#components-within-the-build-form-tab}
 
 L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de formulaire que vous utilisez dans votre formulaire de schéma. L’onglet **[!UICONTROL Paramètres]** contient les attributs de chaque élément sélectionné dans l’onglet **[!UICONTROL Créer le formulaire]**. Le tableau suivant répertorie les éléments de formulaire disponibles dans l’onglet **[!UICONTROL Créer le formulaire]** :
 
@@ -99,30 +107,27 @@ L’onglet **[!UICONTROL Créer le formulaire]** répertorie les éléments de f
 | [!UICONTROL Évaluation des ressources] | Ajoutez ce composant afin d’afficher des options pour évaluer la ressource. |
 | [!UICONTROL Métadonnées contextuelles] | Ajoutez ce composant pour contrôler l’affichage des autres onglets de métadonnées dans la page de propriétés des ressources. |
 
-<!-- TBD: Check against 6.5.4.0 if the list of components is complete.
--->
-
 #### Modification du composant de métadonnées {#edit-the-metadata-component}
 
-Pour modifier les propriétés d’un composant de métadonnées dans le formulaire, cliquez sur le composant et modifiez l’ensemble ou un sous-ensemble des propriétés suivantes dans l’onglet **[!UICONTROL Paramètres]**.
+To edit the properties of a metadata component on the form, click the component to edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
 
 **Libellé du champ** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés de la ressource.
 
-**Associer à la propriété** : cette propriété spécifie le chemin/nom relatif du nœud de la ressource où elle est enregistrée dans le référentiel CRX. Elle commence par `./` pour indiquer que le chemin d’accès se situe sous le nœud de la ressource.
+**Associer à la propriété**: Cette propriété spécifie le chemin d’accès relatif ou le nom du noeud de ressource où il est enregistré dans le référentiel CRX. It starts with `./` to indicate that the path is under the asset&#39;s node.
 
 Les valeurs admises pour cette propriété sont les suivantes :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées de la ressource en tant que propriété `dc:title`.
 
-* `./jcr:created`: Affiche la propriété JCR au niveau du noeud de la ressource. Si vous configurez ces propriétés dans Afficher les propriétés, nous vous recommandons de les marquer avec l’état Désactiver la modification, car elles sont protégées. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`: Affiche la propriété JCR au niveau du noeud de la ressource. Si vous configurez ces propriétés, Adobe recommande de les marquer comme Désactiver la modification. Les propriétés sont protégées. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
 
 Pour garantir que le composant s’affiche correctement dans le formulaire de schéma de métadonnées, le chemin de la propriété ne doit pas comporter d’espace.
 
 * **Espace réservé** : utilisez cette propriété pour spécifier du texte dans l’espace réservé concernant la propriété de métadonnées.
 * **Obligatoire** : utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire dans la page Propriétés.
-* **Désactiver la modification** : Utilisez cette propriété pour rendre une propriété de métadonnées non modifiable dans la page Propriétés.
+* **Désactiver la modification**: Utilisez cette propriété pour interdire toute modification d’une propriété sur la page des propriétés.
 * **Afficher le champ vide en lecture seule** : utilisez cette propriété pour afficher une propriété de métadonnées sur la page Propriétés même si elle ne possède pas de valeur. Par défaut, lorsqu’une propriété de métadonnées ne possède pas de valeur, elle n’est pas répertoriée sur la page Propriétés.
-* **Afficher la liste classée** : utilisez cette propriété pour afficher une liste classée de choix.
+* **Afficher la liste classée** : utilisez cette propriété pour afficher une liste classée de choix..
 * **Choix** : utilisez cette propriété pour spécifier des choix dans une liste.
 * **Description** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
 * **Classe** : classe d’objets à laquelle la propriété est associée.
@@ -156,7 +161,7 @@ L’éditeur de schéma vous permet d’ajouter ou de supprimer un onglet. The d
 
 ![Onglets par défaut dans le formulaire de Schéma de métadonnées](assets/chlimage_1-181.png)
 
-Pour ajouter un onglet à un schéma de formulaire, cliquez sur `+`. Par défaut, le nouvel onglet porte le nom `Unnamed-1`. Vous pouvez modifier le nom dans l’onglet **[!UICONTROL Paramètres.]**
+Cliquez sur `+` pour ajouter un onglet à un formulaire de schéma. By default, the new tab has the name `Unnamed-1`. Vous pouvez modifier le nom à partir de l&#39;onglet **[!UICONTROL Paramètres]**.
 
 Pour supprimer un onglet, cliquez sur `X`.
 
@@ -170,30 +175,30 @@ Pour supprimer un formulaire, sélectionnez-le, puis cliquez sur Supprimer.
 
 >[!NOTE]
 >
->* Après avoir supprimé les modifications personnalisées apportées à un formulaire par défaut, l’icône représentant un cadenas réapparaît devant celui-ci dans l’interface Schéma de métadonnées pour indiquer que l’état par défaut du formulaire a été rétabli.
->* Vous ne pouvez pas supprimer les formulaires de schéma de métadonnées prêts à l’emploi dans  Assets.
+>* Une fois que vous avez supprimé les modifications personnalisées apportées à un formulaire par défaut, l’icône de verrouillage s’affiche à nouveau devant elle dans l’interface du Schéma de métadonnées. Il indique que l’état par défaut du formulaire est rétabli.
+>* Vous ne pouvez pas supprimer les formulaires de schéma de métadonnées par défaut dans [!DNL Assets].
 
 
 ## Formulaires de schéma pour les types MIME    {#schema-forms-for-mime-types}
 
- Assets fournit des formulaires par défaut pour plusieurs types MIME prêts à l’emploi. Vous pouvez toutefois ajouter des formulaires personnalisés pour les ressources de plusieurs types MIME.
+[!DNL Experience Manager] fournit des formulaires par défaut pour plusieurs types MIME prêts à l’emploi. Vous pouvez toutefois ajouter des formulaires personnalisés pour les ressources de plusieurs types MIME.
 
 ### Add new forms for MIME types {#add-new-forms-for-mime-types}
 
-Créez un formulaire sous le type de formulaire approprié. Par exemple, pour ajouter un modèle pour le sous-type `image/png`, créez le formulaire sous les formulaires « image ». Le titre du formulaire de schéma est le nom du sous-type. In this case, the title is `png`.
+Créez un formulaire sous le type de formulaire approprié. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. Le titre du formulaire de schéma est le nom du sous-type. In this case, the title is `png`.
 
 #### Use an existing schema template for various MIME types {#use-an-existing-schema-template-for-various-mime-types}
 
 Vous pouvez utiliser un modèle existant pour un autre type MIME. Par exemple, utilisez le formulaire `image/jpeg` pour les ressources de type MIME `image/png`.
 
-Dans ce cas, créez un nœud sous `/etc/dam/metadataeditor/mimetypemappings` dans le référentiel CRX. Indiquez un nom pour le nœud et définissez les propriétés suivantes :
+In this case, create a node at `/etc/dam/metadataeditor/mimetypemappings` in the CRX repository. Indiquez un nom pour le nœud et définissez les propriétés suivantes :
 
 | Name (Nom) | Description | Type | Valeur |
 |------|-------------|------|-------|
 | `exposedmimetype` | Nom du formulaire existant à associer | `String` | `image/jpeg` |
 | `mimetypes` | Liste des types MIME qui utilisent le formulaire défini dans l’attribut `exposedmimetype`. | `String` | `image/png` |
 
- Assets associe les types MIME et les formulaires de schéma suivants :
+[!DNL Assets] mappe les types MIME et les formulaires de schéma suivants :
 
 | Formulaire de schéma | Types MIME |
 | --------------------------- | --------------------------------------------------- |
@@ -211,26 +216,26 @@ Dans ce cas, créez un nœud sous `/etc/dam/metadataeditor/mimetypemappings` dan
 
 ## Octroi de l’accès aux schémas de métadonnées {#grant-access-to-metadata-schemas}
 
-La fonction de schéma de métadonnées est disponible uniquement pour les administrateurs. Les administrateurs peuvent toutefois accorder l’accès à des utilisateurs qui ne sont pas administrateurs en modifiant certaines autorisations. Les utilisateurs qui ne sont pas administrateurs doivent posséder les autorisations de création, de modification et de suppression sur le dossier `/conf`.
+La fonction Schéma de métadonnées n’est disponible que pour les administrateurs. Cependant, les administrateurs peuvent fournir un accès aux non-administrateurs en modifiant certaines autorisations. Indiquez aux utilisateurs non administrateurs les autorisations de création, de modification et de suppression sur le `/conf` dossier.
 
 ## Application de métadonnées spécifiques au dossier {#apply-folder-specific-metadata}
 
- Assets vous permet de définir une variation d’un schéma de métadonnées et de l’appliquer à un dossier spécifique.
+[!DNL Assets] vous permet de définir une variation d’un schéma de métadonnées et de l’appliquer à un dossier spécifique.
 
 Par exemple, vous pouvez définir une variation du schéma de métadonnées par défaut et l’appliquer à un dossier. Lorsque vous appliquez le schéma modifié, il remplace le schéma de métadonnées d’origine par défaut qui est appliqué aux ressources du dossier.
 
-Seuls les fichiers téléchargés vers le dossier auquel ce schéma est appliqué sont conformes aux métadonnées modifiées définies dans le schéma de métadonnées de variante. Les ressources d’autres dossiers auxquels le schéma d’origine est appliqué continuent à utiliser les métadonnées définies dans le schéma d’origine.
+Seuls les fichiers téléchargés vers le dossier auquel ce schéma est appliqué sont conformes aux métadonnées modifiées définies dans le schéma de métadonnées de variante. [!DNL Assets] dans d’autres dossiers où le schéma d’origine est appliqué, la conformité aux métadonnées définies dans le schéma d’origine est maintenue.
 
 L’héritage des métadonnées par les ressources est basé sur le schéma appliqué au dossier de premier niveau dans la hiérarchie. Autrement dit, si un dossier ne contient aucun sous-dossier, les ressources du dossier héritent des métadonnées du schéma appliqué au dossier.
 
-Si le dossier contient un sous-dossier, les ressources du sous-dossier héritent des métadonnées du schéma appliqué au niveau du sous-dossier si un schéma différent est appliqué. Cependant, si aucun schéma n’est appliqué au niveau du sous-dossier ou si le même schéma y est appliqué, les ressources du sous-dossier héritent des métadonnées du schéma appliqué au niveau du dossier parent.
+Vous pouvez appliquer un autre schéma au sous-dossier. Les ressources d’un sous-dossier héritent du schéma de métadonnées du sous-dossier immédiat. Si aucun schéma ou le même schéma n’est appliqué au niveau du sous-dossier, ses ressources héritent du schéma du dossier parent.
 
 1. Dans [!DNL Experience Manager] l’interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **** de métadonnées. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
 1. Select the check box before a form, for example the default metadata form, and click the **[!UICONTROL Copy]** and save it as a custom form. Spécifiez un nom personnalisé pour le formulaire, par exemple `my_default`. Vous pouvez également créer un formulaire personnalisé.
 
 1. In the **[!UICONTROL Metadata Schema Forms]** page, select the `my_default` form, and then click **[!UICONTROL Edit]**.
 
-1. Sur la page **[!UICONTROL Éditeur de schéma de métadonnées]**, ajoutez un champ de texte au formulaire de schéma. Par exemple, ajoutez un champ avec le libellé **[!UICONTROL Catégorie]**.
+1. Sur la page **[!UICONTROL Éditeur de schéma de métadonnées]**, ajoutez un champ de texte au formulaire de schéma. For example, add a field with the label **[!UICONTROL Category]**.
 
    ![Champ de texte ajouté à l’éditeur de Schéma de métadonnées](assets/text-field-metadata-schema-editor.png)
 
@@ -249,7 +254,7 @@ Si le dossier contient un sous-dossier, les ressources du sous-dossier héritent
 
 ## Définition des métadonnées obligatoires {#define-mandatory-metadata}
 
-Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous chargez des ressources présentant des métadonnées manquantes dans des champs obligatoires précédemment définis, une indication visuelle de métadonnées manquantes apparaît sur les ressources en mode Carte.
+Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous téléchargez des fichiers avec des métadonnées manquantes pour les champs obligatoires définis précédemment, une indication visuelle des métadonnées manquantes s’affiche sur les fichiers dans la vue de cartes.
 
 >[!NOTE]
 >
@@ -266,15 +271,15 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées.]** Select the form and then click **[!UICONTROL Apply to Folder(s)]** from the toolbar to apply the custom metadata to a folder.
 
-1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message concernant les métadonnées manquantes pour le champ obligatoire apparaît dans l’affichage Carte de la ressource.
+1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message indiquant les métadonnées manquantes pour le champ obligatoire s’affiche sur la vue de carte de la ressource.
 
    ![Message signalant l’absence de métadonnées obligatoires sur la vue de la carte de ressources lors du téléchargement de fichiers dans un dossier](assets/chlimage_1-192.png)
 
-1. (Facultatif) Accédez à `https://[aem_server]:[port]/system/console/components/`. Configurez et activez le composant `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` ; celui-ci est désactivé par défaut. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. Cette configuration ajoute une propriété `hasValidMetadata` au nœud `jcr:content` des ressources. Using this property, [!DNL Experience Manager] can invalid filter results in a search. Si vous ajoutez un fichier après une vérification, le fichier n’est marqué avec `hasValidMetadata` aucun indicateur jusqu’à la prochaine vérification planifiée. Par conséquent, les ressources n’apparaissent pas dans les filtres de recherche pour les métadonnées non valides avant la prochaine vérification planifiée.
+1. (Facultatif) Accédez à `https://[aem_server]:[port]/system/console/components/`. Configurez et activez le composant `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` ; celui-ci est désactivé par défaut. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. Cette configuration ajoute une propriété `hasValidMetadata` au nœud `jcr:content` des ressources. [!DNL Experience Manager] utilise cette propriété pour filtrer les actifs non valides dans un résultat de recherche. Si vous ajoutez un fichier après une vérification, le fichier n’est marqué avec `hasValidMetadata` aucun indicateur jusqu’à la prochaine vérification planifiée. Par conséquent, les ressources n’apparaissent pas dans les filtres de recherche pour les métadonnées non valides avant la prochaine vérification planifiée.
 
    >[!CAUTION]
    >
-   >Les contrôles de validation des métadonnées sont des tâches qui nécessitent de nombreuses ressources et qui peuvent donc altérer les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur n’est pas en mesure de faire face à la charge, essayez de désactiver cette tâche.
+   >Les contrôles de validation des métadonnées nécessitent beaucoup de ressources et peuvent avoir un impact sur les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur n’est pas en mesure de faire face à la charge, essayez de désactiver cette tâche.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata article later.
+<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->
