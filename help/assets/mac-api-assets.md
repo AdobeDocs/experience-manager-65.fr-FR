@@ -3,10 +3,10 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Créez, lisez, mettez à jour, supprimez et gérez des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '1562'
-ht-degree: 40%
+source-wordcount: '1570'
+ht-degree: 36%
 
 ---
 
@@ -46,8 +46,8 @@ Les dossiers sont comparables aux répertoires des systèmes de fichiers traditi
 
 **Propriétés** :
 
-* `name` : nom du dossier. Identique au dernier segment du chemin d’URL, sans l’extension.
-* `title` : titre facultatif du dossier pouvant être affiché au lieu de son nom.
+* `name` est le nom du dossier. Il s’agit de la même chose que le dernier segment du chemin d’accès à l’URL sans l’extension.
+* `title` est un titre facultatif du dossier qui peut être affiché à la place de son nom.
 
 >[!NOTE]
 >
@@ -55,39 +55,39 @@ Les dossiers sont comparables aux répertoires des systèmes de fichiers traditi
 
 Les dossiers **Liens** présentent trois liens :
 
-* `self` : lien vers lui-même
-* `parent` : lien vers le dossier parent
-* `thumbnail` : (Facultatif) lien vers une miniature de dossier
+* `self` : lien vers lui-même.
+* `parent`: Lien vers le dossier parent.
+* `thumbnail`: (Facultatif) Lien vers une image miniature de dossier.
 
 ### Ressources {#assets}
 
 Dans Experience Manager, un fichier contient les éléments suivants :
 
-* Propriétés et métadonnées de la ressource
-* Plusieurs rendus tels que le rendu d’origine (qui est la ressource transférée initialement), une vignette et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de PDF ou InDesign.
-* Commentaires facultatifs
+* Propriétés et métadonnées de la ressource.
+* Plusieurs rendus tels que le rendu d’origine (qui est la ressource transférée initialement), une vignette et divers autres rendus. D’autres rendus peuvent être des images de tailles différentes, des encodages vidéo différents ou des pages extraites de fichiers PDF ou Adobe InDesign.
+* Commentaires facultatifs.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 Dans Experience Manager, un dossier comporte les composants suivants :
 
 * Entités : Les enfants des actifs sont ses rendus.
-* Propriétés
-* Liens
+* Propriétés.
+* Liens.
 
 L’API Assets HTTP offre les fonctionnalités suivantes :
 
-* Récupérer une liste de dossiers
-* Créer un dossier
-* Créer une ressource 
-* Mettre à jour le fichier binaire d’une ressource
-* Mettre à jour les métadonnées d’une ressource
-* Créer un rendu de ressource
-* Mettre à jour un rendu de ressource
-* Créer un commentaire de ressource
-* Copier un dossier ou une ressource
-* Déplacer un dossier ou une ressource
-* Supprimer un dossier, une ressource ou un rendu
+* Récupérer une liste de dossiers.
+* Créer un dossier.
+* Créer une ressource.
+* Mettre à jour le fichier binaire d’une ressource.
+* Mettre à jour les métadonnées d’une ressource.
+* Créer un rendu de ressource.
+* Mettre à jour un rendu de ressource.
+* Créer un commentaire de ressource.
+* Copier un dossier ou une ressource.
+* Déplacer un dossier ou une ressource.
+* Supprimer un dossier, une ressource ou un rendu.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Crée un dossier `sling` : `OrderedFolder` à l’emplacement indiqué. If a `*
 
 Un appel d’API échoue avec un code de `500` réponse si le noeud parent du chemin d’accès fourni n’existe pas. Un appel renvoie un code de réponse `409` si le dossier existe déjà.
 
-**Paramètres**: `name` - Nom du dossier
+**Paramètres**: `name` est le nom du dossier.
 
 **Demande**
 
