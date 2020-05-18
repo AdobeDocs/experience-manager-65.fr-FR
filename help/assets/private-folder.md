@@ -3,9 +3,9 @@ title: Création et partage d’un dossier privé dans AEM
 description: Apprenez à créer un dossier privé dans Adobe Experience Manager (AEM) Assets, à le partager avec d’autres utilisateurs et à attribuer à ces derniers différents privilèges.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 979d5074fcf94ca999fd941c77038ab6305cc67d
+source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '513'
 ht-degree: 74%
 
 ---
@@ -17,7 +17,7 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager
 
 >[!NOTE]
 >
-> Le dossier privé comporte toujours au moins un membre doté du rôle Propriétaire.
+> Le dossier privé comporte au moins un membre doté du rôle Propriétaire.
 
 
 1. Dans la console Ressources, appuyez ou cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Dossier]** dans le menu.
@@ -50,7 +50,7 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager
 
    >[!NOTE]
    >
-   > Le dossier privé comporte toujours au moins un membre doté du rôle Propriétaire. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants de l’administrateur de dossier privé, vous devez ajouter un autre utilisateur en tant que propriétaire.
+   > Le dossier privé comporte au moins un membre doté du rôle Propriétaire. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants (et l’administrateur lui-même) du dossier privé, l’administrateur doit ajouter un autre utilisateur en tant que propriétaire.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. En fonction du rôle affecté, l’utilisateur se voit attribuer un ensemble de privilèges sur votre dossier privé lorsqu’il se connecte à AEM Assets.
 1. Cliquez sur **[!UICONTROL OK]** pour fermer le message de confirmation.
