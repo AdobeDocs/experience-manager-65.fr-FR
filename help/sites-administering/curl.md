@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: 7ee76afa11384aedc79b17e823c8dc9594662388
+source-git-commit: 4eb5f1c4aa6631d2570279eb1d4bf17a928e3b9f
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 81%
 
 ---
 
@@ -60,7 +63,7 @@ La procédure ci-dessous décrit, à titre d’exemple, comment effectuer cette 
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Copy the cURL command to a text editor and remove all headers from the command, which start with `-H` (highligted in blue in the image below) and add the proper authentication parameter such as `-u admin:admin`.
+1. Copy the cURL command to a text editor and remove all headers from the command, which start with `-H` (highligted in blue in the image below) and add the proper authentication parameter such as `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -78,22 +81,28 @@ Voici une liste de commandes cURL d’AEM pour les tâches administratives et op
 
 ### Gestion de modules {#package-management}
 
+#### Liste de tous les packages installés
+
+```shell
+curl -u <user>:<password> http://<host>:<port>/crx/packmgr/service.jsp?cmd=ls
+```
+
 #### Création d’un module {#create-a-package}
 
 ```shell
-curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=create -d packageName=<name> -d groupName=<name>
+curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=create -d packageName=<name> -d groupName=<name>
 ```
 
 #### Aperçu d’un module {#preview-a-package}
 
 ```shell
-curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=preview
+curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=preview
 ```
 
 #### Liste du contenu d’un module {#list-package-content}
 
 ```shell
-curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/console.html/etc/packages/mycontent.zip?cmd=contents
+curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/console.html/etc/packages/mycontent.zip?cmd=contents
 ```
 
 #### Compilation d’un module {#build-a-package}
@@ -105,43 +114,43 @@ curl -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycont
 #### Réencapsulation d’un module {#rewrap-a-package}
 
 ```shell
-curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=rewrap
+curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=rewrap
 ```
 
 #### Changement de nom d’un module {#rename-a-package}
 
 ```shell
-curl -u admin:admin -X POST -Fname=<New Name> http://localhost:4502/etc/packages/<Group Name>/<Package Name>.zip/jcr:content/vlt:definition
+curl -u <user>:<password> -X POST -Fname=<New Name> http://localhost:4502/etc/packages/<Group Name>/<Package Name>.zip/jcr:content/vlt:definition
 ```
 
 #### Chargement d’un module {#upload-a-package}
 
 ```shell
-curl -u admin:admin -F cmd=upload -F force=true -F package=@test.zip http://localhost:4502/crx/packmgr/service/.json
+curl -u <user>:<password> -F cmd=upload -F force=true -F package=@test.zip http://localhost:4502/crx/packmgr/service/.json
 ```
 
 #### Installation d’un module {#install-a-package}
 
 ```shell
-curl -u admin:admin -F cmd=install http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip
+curl -u <user>:<password> -F cmd=install http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip
 ```
 
 #### Désinstallation d’un module {#uninstall-a-package}
 
 ```shell
-curl -u admin:admin -F cmd=uninstall http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip
+curl -u <user>:<password> -F cmd=uninstall http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip
 ```
 
 #### Suppression d’un module {#delete-a-package}
 
 ```shell
-curl -u admin:admin -F cmd=delete http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip
+curl -u <user>:<password> -F cmd=delete http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip
 ```
 
 #### Téléchargement d’un module {#download-a-package}
 
 ```shell
-curl -u admin:admin http://localhost:4502/etc/packages/my_packages/test.zip
+curl -u <user>:<password> http://localhost:4502/etc/packages/my_packages/test.zip
 ```
 
 ### Gestion des utilisateurs {#user-management}
@@ -149,61 +158,61 @@ curl -u admin:admin http://localhost:4502/etc/packages/my_packages/test.zip
 #### Création d’un utilisateur {#create-a-new-user}
 
 ```shell
-curl -u admin:admin -FcreateUser= -FauthorizableId=hashim -Frep:password=hashim http://localhost:4502/libs/granite/security/post/authorizables
+curl -u <user>:<password> -FcreateUser= -FauthorizableId=hashim -Frep:password=hashim http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 #### Création d’un groupe {#create-a-new-group}
 
 ```shell
-curl -u admin:admin -FcreateGroup=group1 -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
+curl -u <user>:<password> -FcreateGroup=group1 -FauthorizableId=testGroup1 http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 #### Ajout d’une propriété à un utilisateur existant {#add-a-property-to-an-existing-user}
 
 ```shell
-curl -u admin:admin -Fprofile/age=25 http://localhost:4502/home/users/h/hashim.rw.html
+curl -u <user>:<password> -Fprofile/age=25 http://localhost:4502/home/users/h/hashim.rw.html
 ```
 
 #### Création d’un utilisateur avec un profil {#create-a-user-with-a-profile}
 
 ```shell
-curl -u admin:admin -FcreateUser=testuser -FauthorizableId=hashimkhan -Frep:password=hashimkhan -Fprofile/gender=male http://localhost:4502/libs/granite/security/post/authorizables
+curl -u <user>:<password> -FcreateUser=testuser -FauthorizableId=hashimkhan -Frep:password=hashimkhan -Fprofile/gender=male http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 #### Création d’un utilisateur comme membre d’un groupe {#create-a-new-user-as-a-member-of-a-group}
 
 ```shell
-curl -u admin:admin -FcreateUser=testuser -FauthorizableId=testuser -Frep:password=abc123 -Fmembership=contributor http://localhost:4502/libs/granite/security/post/authorizables
+curl -u <user>:<password> -FcreateUser=testuser -FauthorizableId=testuser -Frep:password=abc123 -Fmembership=contributor http://localhost:4502/libs/granite/security/post/authorizables
 ```
 
 #### Ajout d’un utilisateur à un groupe {#add-a-user-to-a-group}
 
 ```shell
-curl -u admin:admin -FaddMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
+curl -u <user>:<password> -FaddMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
 #### Suppression d’un utilisateur dans un groupe {#remove-a-user-from-a-group}
 
 ```shell
-curl -u admin:admin -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
+curl -u <user>:<password> -FremoveMembers=testuser1 http://localhost:4502/home/groups/t/testGroup.rw.html
 ```
 
 #### Définition de l’appartenance à un groupe d’un utilisateur {#set-a-user-s-group-membership}
 
 ```shell
-curl -u admin:admin -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
+curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http://localhost:4502/home/users/t/testuser.rw.html
 ```
 
 #### Suppression d’un utilisateur {#delete-a-user}
 
 ```shell
-curl -u admin:admin -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser 
+curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser 
 ```
 
 #### Suppression d’un groupe {#delete-a-group}
 
 ```shell
-curl -u admin:admin -FdeleteAuthorizable= http://localhost:4502/home/groups/t/testGroup
+curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/groups/t/testGroup
 ```
 
 ### Sauvegarde {#backup}
@@ -215,16 +224,16 @@ See [Backup and Restore](/help/sites-administering/backup-and-restore.md#automat
 #### Démarrage d’un lot {#starting-a-bundle}
 
 ```shell
-curl -u admin:admin -Faction=start http://localhost:4502/system/console/bundles/<bundle-name>
+curl -u <user>:<password> -Faction=start http://localhost:4502/system/console/bundles/<bundle-name>
 ```
 
 #### Arrêt d’un lot {#stopping-a-bundle}
 
 ```shell
-curl -u admin:admin -Faction=stop http://localhost:4502/system/console/bundles/<bundle-name>
+curl -u <user>:<password> -Faction=stop http://localhost:4502/system/console/bundles/<bundle-name>
 ```
 
-### Répartiteur {#dispatcher}
+### Dispatcher {#dispatcher}
 
 #### Invalidation du cache {#invalidate-the-cache}
 
@@ -243,32 +252,32 @@ curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path:
 #### Contrôle de l’état d’un agent {#check-the-status-of-an-agent}
 
 ```shell
-curl -u admin:admin "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
+curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
 http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on?agent=publish
 ```
 
 #### Suppression d’un agent {#delete-an-agent}
 
 ```shell
-curl -X DELETE http://localhost:4502/etc/replication/agents.author/replication99 -u admin:admin
+curl -X DELETE http://localhost:4502/etc/replication/agents.author/replication99 -u <user>:<password>
 ```
 
 #### Création d’un agent {#create-an-agent}
 
 ```shell
-curl -u admin:admin -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title=new-replication" -F "jcr:content/sling:resourceType=/libs/cq/replication/components/agent" -F "jcr:content/template=/libs/cq/replication/templates/agent" -F "jcr:content/transportUri=http://localhost:4503/bin/receive?sling:authRequestLogin=1" -F "jcr:content/transportUser=admin" -F "jcr:content/transportPassword={DES}8aadb625ced91ac483390ebc10640cdf"http://localhost:4502/etc/replication/agents.author/replication99
+curl -u <user>:<password> -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title=new-replication" -F "jcr:content/sling:resourceType=/libs/cq/replication/components/agent" -F "jcr:content/template=/libs/cq/replication/templates/agent" -F "jcr:content/transportUri=http://localhost:4503/bin/receive?sling:authRequestLogin=1" -F "jcr:content/transportUser=admin" -F "jcr:content/transportPassword={DES}8aadb625ced91ac483390ebc10640cdf"http://localhost:4502/etc/replication/agents.author/replication99
 ```
 
 #### Suspension d’un agent {#pause-an-agent}
 
 ```shell
-curl -u admin:admin -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
 ```
 
 #### Effacement d’une file d’attente d’agent {#clear-an-agent-queue}
 
 ```shell
-curl -u admin:admin -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
 ```
 
 ### Communities {#communities}
@@ -316,37 +325,37 @@ Vous trouverez ci-après une liste des commandes cURL d’AEM pour la manipulati
 #### Activation des pages {#page-activation}
 
 ```shell
-curl -u admin:admin -X POST -F path="/content/path/to/page" -F cmd="activate" http://localhost:4502/bin/replicate.json
+curl -u <user>:<password> -X POST -F path="/content/path/to/page" -F cmd="activate" http://localhost:4502/bin/replicate.json
 ```
 
 #### Désactivation des pages {#page-deactivation}
 
 ```shell
-curl -u admin:admin -X POST -F path="/content/path/to/page" -F cmd="deactivate" http://localhost:4502/bin/replicate.json
+curl -u <user>:<password> -X POST -F path="/content/path/to/page" -F cmd="deactivate" http://localhost:4502/bin/replicate.json
 ```
 
 #### Activation d’une arborescence {#tree-activation}
 
 ```shell
-curl -u admin:admin -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/geometrixx http://localhost:4502/etc/replication/treeactivation.html
+curl -u <user>:<password> -F cmd=activate -F ignoredeactivated=true -F onlymodified=true -F path=/content/geometrixx http://localhost:4502/etc/replication/treeactivation.html
 ```
 
 #### Verrouillage de la page {#lock-page}
 
 ```shell
-curl -u admin:admin -X POST -F cmd="lockPage" -F path="/content/path/to/page" -F "_charset_"="utf-8" http://localhost:4502/bin/wcmcommand
+curl -u <user>:<password> -X POST -F cmd="lockPage" -F path="/content/path/to/page" -F "_charset_"="utf-8" http://localhost:4502/bin/wcmcommand
 ```
 
 #### Déverrouillage de la page {#unlock-page}
 
 ```shell
-curl -u admin:admin -X POST -F cmd="unlockPage" -F path="/content/path/to/page" -F "_charset_"="utf-8" http://localhost:4502/bin/wcmcommand
+curl -u <user>:<password> -X POST -F cmd="unlockPage" -F path="/content/path/to/page" -F "_charset_"="utf-8" http://localhost:4502/bin/wcmcommand
 ```
 
 #### Copie de la page {#copy-page}
 
 ```shell
-curl -u admin:admin -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
+curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
 ```
 
 ### Workflows {#workflows}
@@ -358,43 +367,43 @@ See [Interacting with Workflows Programmatically](/help/sites-developing/workflo
 #### Création d’un dossier {#create-a-folder}
 
 ```shell
-curl -u admin:admin -F jcr:primaryType=sling:Folder http://localhost:4502/etc/test
+curl -u <user>:<password> -F jcr:primaryType=sling:Folder http://localhost:4502/etc/test
 ```
 
 #### Suppression d’un nœud {#delete-a-node}
 
 ```shell
-curl -u admin:admin -F :operation=delete http://localhost:4502/etc/test/test.properties
+curl -u <user>:<password> -F :operation=delete http://localhost:4502/etc/test/test.properties
 ```
 
 #### Déplacement d’un nœud {#move-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
+curl -u <user>:<password> -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Copie d’un nœud {#copy-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
+curl -u <user>:<password> -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### Chargement de fichiers à l’aide de Sling PostServlet {#upload-files-using-sling-postservlet}
 
 ```shell
-curl -u admin:admin -F"*=@test.properties"  http://localhost:4502/etc/test
+curl -u <user>:<password> -F"*=@test.properties"  http://localhost:4502/etc/test
 ```
 
 #### Chargement de fichiers à l’aide de Sling PostServlet et spécification d’un nom de nœud {#upload-files-using-sling-postservlet-and-specifying-node-name}
 
 ```shell
-curl -u admin:admin -F"test2.properties=@test.properties"  http://localhost:4502/etc/test
+curl -u <user>:<password> -F"test2.properties=@test.properties"  http://localhost:4502/etc/test
 ```
 
 #### Chargement de fichiers spécifiant un type de contenu {#upload-files-specifying-a-content-type}
 
 ```shell
-curl -u admin:admin -F "*=@test.properties;type=text/plain" http://localhost:4502/etc/test
+curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localhost:4502/etc/test
 ```
 
 ### Manipulation des ressources {#asset-manipulation}
