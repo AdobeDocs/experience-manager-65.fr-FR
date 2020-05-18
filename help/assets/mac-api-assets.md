@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Créez, lisez, mettez à jour, supprimez et gérez des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
 workflow-type: tm+mt
-source-wordcount: '1570'
+source-wordcount: '1568'
 ht-degree: 36%
 
 ---
@@ -69,7 +69,7 @@ Dans Experience Manager, un fichier contient les éléments suivants :
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
-Dans Experience Manager, un dossier comporte les composants suivants :
+In [!DNL Experience Manager] a folder has the following components:
 
 * Entités : Les enfants des actifs sont ses rendus.
 * Propriétés.
@@ -95,9 +95,9 @@ L’API Assets HTTP offre les fonctionnalités suivantes :
 
 **Conditions préalables**
 
-1. Accédez à `https://[aem_server]:[port]/system/console/configMgr`.
-1. Navigate to **Adobe Granite CSRF Filter**.
-1. Make sure the property **Filter Methods** includes: POST, PUT, DELETE.
+* Accédez à l’adresse `https://[aem_server]:[port]/system/console/configMgr`.
+* Navigate to **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Assurez-vous que la propriété Méthodes **[!UICONTROL de]** filtrage inclut les éléments suivants : `POST`, `PUT`, `DELETE`.
 
 ## Récupérer une liste de dossiers {#retrieve-a-folder-listing}
 
@@ -181,14 +181,14 @@ Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez 
 
 Créez un rendu de ressource pour une ressource. Si le nom du paramètre de requête n’est pas fourni, le nom du fichier est utilisé comme nom du rendu.
 
-**Paramètres** Les paramètres sont `name` le nom du rendu et `file` une référence de fichier.
+**Paramètres**: Les paramètres servent `name` au nom du rendu et `file` à la référence du fichier.
 
 **Demande**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Codes de réponse**
+**Codes** de réponse : Les codes de réponse sont les suivants :
 
 * 201 - CRÉÉ - si le rendu a été créé avec succès.
 * 404 - NON TROUVÉ - si le fichier n’a pas été trouvé ou n’a pas été accessible à l’URI fourni.
@@ -201,7 +201,7 @@ Met à jour et remplace le rendu d’une ressource par les nouvelles données bi
 
 **Demande**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Codes** de réponse Les codes de réponse sont :
+**Codes** de réponse : Les codes de réponse sont les suivants :
 
 * 200 - OK - si le rendu a été mis à jour avec succès.
 * 404 - NON TROUVÉ - si le fichier n’a pas été trouvé ou n’a pas été accessible à l’URI fourni.
