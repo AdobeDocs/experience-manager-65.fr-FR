@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
+source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
 workflow-type: tm+mt
-source-wordcount: '5763'
-ht-degree: 86%
+source-wordcount: '5782'
+ht-degree: 85%
 
 ---
 
@@ -480,11 +480,20 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 ### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**Optimisation des paramètres de la tâche**
+**Astuces de réglage précis des performances/évolutivité de la synchronisation**
+
+Pour que le mode Contenu multimédia dynamique - Scene7 fonctionne correctement, Adobe recommande les conseils de réglage fin des performances et de l’évolutivité de synchronisation suivants :
+
+* Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
+* Mise à jour des threads de travail de file d’attente du processus Granite prédéfini (ressources vidéo).
+* Mise à jour des threads de travail en file d’attente du flux de travail transitoire Granite prédéfini (images et ressources non vidéo).
+* Mise à jour du nombre maximal de connexions de téléchargement vers le serveur Dynamic Media Classic.
+
+#### Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier
 
 Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du téléchargement. Par exemple, si vous téléchargez des fichiers PSD mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné apparaîtra comme `process=None&createTemplate=false`.
 
-Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; suivants pour les fichiers PSD, PDF et Postscript :
+Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; suivants pour les fichiers PDF, Postscript et PSD :
 
 | Type de fichier | Paramètres de tâche recommandés |
 | ---| ---|
@@ -493,14 +502,6 @@ Adobe recommande d’utiliser les paramètres de tâche &quot;affinés&quot; sui
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 Pour mettre à jour l’un de ces paramètres, suivez les étapes de la section [Activation de la prise en charge](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)des paramètres de tâche de téléchargement des fichiers/fichiers dynamiques de type MIME Classic.
-
-**Astuces de réglage précis des performances/évolutivité de la synchronisation**
-
-Pour que le mode Contenu multimédia dynamique - Scene7 fonctionne correctement, Adobe recommande les conseils de réglage fin des performances et de l’évolutivité de synchronisation suivants :
-
-* Mettez à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
-* Mettez à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (images et ressources non vidéo).
-* Mettez à jour le nombre maximal de connexions de chargement au serveur Dynamic Media Classic.
 
 #### Updating the Granite transient workflow queue {#updating-the-granite-transient-workflow-queue}
 
