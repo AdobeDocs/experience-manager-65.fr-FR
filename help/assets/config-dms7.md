@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
+source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
 workflow-type: tm+mt
-source-wordcount: '5782'
+source-wordcount: '5777'
 ht-degree: 85%
 
 ---
@@ -479,8 +479,6 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
    L’activation du paramètre prédéfini garantit que, lorsque vous téléchargez des ressources vers Dynamic Media, le paramètre prédéfini d’ensemble par lot est appliqué pour générer la visionneuse.
 
 ### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
-
-**Astuces de réglage précis des performances/évolutivité de la synchronisation**
 
 Pour que le mode Contenu multimédia dynamique - Scene7 fonctionne correctement, Adobe recommande les conseils de réglage fin des performances et de l’évolutivité de synchronisation suivants :
 
