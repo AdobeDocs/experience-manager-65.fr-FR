@@ -3,7 +3,10 @@ title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 53%
 
 ---
 
@@ -20,7 +23,7 @@ Bien que vous puissiez personnaliser votre code de suivi pour permettre aux solu
 
 Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressources grâce à DTM.
 
-1. Appuyez/cliquez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
+1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Configuration de l’instance AEM avec le service cloud de gestion dynamique des balises](/help/sites-administering/dtm.md)
 
    The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** from the Profile icon. Par rapport aux statistiques sur les ressources, cette étape n’est pas nécessaire car l’intégration d’AEM Sites aux statistiques sur les ressources est encore en cours.
@@ -28,21 +31,21 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 1. Connectez-vous à [https://dtm.adobe.com](https://dtm.adobe.com/) et sélectionnez une entreprise, comme approprié.
 1. Création/ouverture d’une propriété web existante
 
-   * Select the **[!UICONTROL Web Properties]** tab, and then tap/click **[!UICONTROL Add Property]**.
+   * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
-   * Update the fields as appropriate, and tap/click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html).
-   ![Création d’une propriété web de modification](assets/Create-edit-web-property.png)
+   * Update the fields as appropriate, and click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html).
+   ![Créer une propriété web d’édition](assets/Create-edit-web-property.png)
 
-1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and tap/click **[!UICONTROL Create New Rule]**.
+1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and click **[!UICONTROL Create New Rule]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Expand **[!UICONTROL Javascript /Third Party Tags]**. Then tap/click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
+1. Expand **[!UICONTROL Javascript /Third Party Tags]**. Then click **[!UICONTROL Add New Script]** in the **[!UICONTROL Sequential HTML]** tab to open the Script dialog.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
-1. Tap/click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Enregistrez les modifications.
+1. Click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Enregistrez les modifications.
 
    >[!NOTE]
    >
@@ -62,7 +65,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 
    ![chlimage_1-61](assets/chlimage_1-197.png)
 
-1. Expand **[!UICONTROL Customize Page Code]**, and click or tap **[!UICONTROL Open Editor]**.
+1. Expand **[!UICONTROL Customize Page Code]**, and click **[!UICONTROL Open Editor]**.
 
    ![chlimage_1-62](assets/chlimage_1-198.png)
 
