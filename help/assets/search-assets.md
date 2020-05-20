@@ -4,10 +4,10 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '5872'
-ht-degree: 58%
+source-wordcount: '5869'
+ht-degree: 57%
 
 ---
 
@@ -114,9 +114,9 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 
 Vous pouvez améliorer la pertinence des mots-clés pour des ressources données afin d’améliorer les résultats de recherches basées sur ces mots-clés. En d’autres termes, les images pour lesquelles vous faites la promotion de mots-clés spécifiques apparaissent en haut des résultats lorsque vous lancez une recherche basée sur ces mots-clés.
 
-1. From the [!DNL Assets] user interface, open the properties page for the asset. Cliquez sur **[!UICONTROL Avancé]** et cliquez/appuyez sur **[!UICONTROL Ajouter]** sous **[!UICONTROL Élever pour les mots-clés de recherche]**.
-1. Dans la boîte de dialogue **[!UICONTROL Rechercher une promotion]**, indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image, puis cliquez/appuyez sur **[!UICONTROL Ajouter]**. Vous pouvez indiquer plusieurs mots-clés de la même manière.
-1. Cliquez/appuyez sur **[!UICONTROL Enregistrer et fermer]**. La ressource pour laquelle vous avez promu ce mot-clé apparaît en tête des résultats de recherche.
+1. From the [!DNL Assets] user interface, open the properties page for the asset. Click **[!UICONTROL Advanced]** and click **[!UICONTROL Add]** under **[!UICONTROL Elevate for search keywords]**.
+1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click **[!UICONTROL Add]**. Vous pouvez indiquer plusieurs mots-clés de la même manière.
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. La ressource pour laquelle vous avez promu ce mot-clé apparaît en tête des résultats de recherche.
 
 Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. For detailed info, see [search in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
