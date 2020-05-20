@@ -3,10 +3,10 @@ title: Création et partage d’un dossier privé dans AEM
 description: Apprenez à créer un dossier privé dans Adobe Experience Manager (AEM) Assets, à le partager avec d’autres utilisateurs et à attribuer à ces derniers différents privilèges.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 74%
+source-wordcount: '508'
+ht-degree: 63%
 
 ---
 
@@ -20,7 +20,7 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager
 > Le dossier privé comporte au moins un membre doté du rôle Propriétaire.
 
 
-1. Dans la console Ressources, appuyez ou cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis choisissez **[!UICONTROL Dossier]** dans le menu.
+1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
    ![Créer un dossier de fichiers](assets/Create-folder.png)
 
@@ -28,11 +28,11 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager
 
    ![Cochez la case Privé pour rendre le dossier privé.](assets/private-folder.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Créer]**. Un dossier privé est alors créé dans l’interface utilisateur.
+1. Cliquez sur **[!UICONTROL Créer]**. Un dossier privé est alors créé dans l’interface utilisateur.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. Pour partager le dossier avec d’autres utilisateurs et leur attribuer des privilèges, sélectionnez le dossier, puis cliquez/appuyez sur l’icône **[!UICONTROL Propriétés]** de la barre d’outils.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,11 +58,11 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Cliquez ou appuyez sur l’icône Notification pour ouvrir la liste des notifications.
+1. Cliquez sur l’icône Notification pour ouvrir la liste des notifications.
 
    ![Liste des notifications](assets/Assets-Notification.png)
 
-1. Cliquez/appuyez sur l’entrée du dossier privé partagé par l’administrateur pour ouvrir le dossier.
+1. Cliquez sur l’entrée correspondant au dossier privé partagé par l’administrateur pour ouvrir le dossier.
 
 >[!NOTE]
 >
