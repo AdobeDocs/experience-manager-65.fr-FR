@@ -3,10 +3,10 @@ title: Gérez les métadonnées de nombreux fichiers et collections dans Adobe E
 description: Modifiez simultanément les métadonnées de nombreux fichiers et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 70%
+source-wordcount: '499'
+ht-degree: 62%
 
 ---
 
@@ -30,7 +30,7 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
 
 1. Dans l’interface utilisateur Ressources, accédez à l’emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
-1. Sur la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Propriétés]** pour ouvrir la page des propriétés des ressources sélectionnées.
+1. From the toolbar, click the **[!UICONTROL Properties]** icon to open the properties page for the selected assets.
 
    >[!NOTE]
    >
@@ -45,9 +45,9 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
-1. Pour sélectionner un schéma de métadonnées différent pour les ressources, appuyez/cliquez sur l’icône **[!UICONTROL Paramètres]** dans la barre d’outils, puis sélectionnez le schéma souhaité.
+1. To select a different metadata schema for the assets, click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
 1. Enregistrez les modifications.
-1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Appuyez/cliquez sur **[!UICONTROL Envoyer]**.
+1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Cliquez sur **[!UICONTROL Envoyer]**.
 
    >[!CAUTION]
    >
