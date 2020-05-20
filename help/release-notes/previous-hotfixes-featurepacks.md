@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’AEM 6.5 Previous Service Pack
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Service Pack 3 et versions antérieures.
 translation-type: tm+mt
-source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+source-git-commit: 321710219053ab43fe5a223665bc20987e1afb31
 workflow-type: tm+mt
 source-wordcount: '6277'
 ht-degree: 46%
@@ -12,7 +12,7 @@ ht-degree: 46%
 
 # Correctifs et packs de fonctionnalités inclus dans les packs de service précédents {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0 {#aem-6530}
+## Adobe Experience Manager 6.5.3.0 {#aem-6530-rn}
 
 [!DNL Adobe Experience Manager] La version 6.5.3.0 est une version importante qui comprend des améliorations et correctifs concernant les performances, la stabilité, la sécurité et les clients clés depuis la version 6.5 publiée en **avril 2019**. It can be installed on top of [!DNL Adobe Experience Manager] 6.5.
 
