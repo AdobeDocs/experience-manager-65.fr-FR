@@ -3,7 +3,7 @@ title: Téléchargez des ressources numériques depuis [!DNL Adobe Experience Ma
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 57%
@@ -19,7 +19,7 @@ Vous pouvez télécharger des ressources, dont des rendus statiques et dynamique
 >
 >Les destinataires du courrier électronique doivent être membres du groupe `dam-users` pour accéder au lien de téléchargement ZIP contenu dans le message. Pour télécharger les ressources, ils doivent disposer des autorisations de lancement des workflows qui déclenchent le téléchargement.
 
-To download assets, navigate to an asset, select the asset, and tap **[!UICONTROL Download]** from the toolbar. Spécifiez vos options de téléchargement dans la boîte de dialogue qui s’affiche.
+To download assets, navigate to an asset, select the asset, and click **[!UICONTROL Download]** from the toolbar. Spécifiez vos options de téléchargement dans la boîte de dialogue qui s’affiche.
 
 Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionneuses de supports variés et Visionneuses de carrousel ne peuvent pas être téléchargés.
 
