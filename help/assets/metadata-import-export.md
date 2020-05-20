@@ -3,10 +3,10 @@ title: Importation et exportation des métadonnées de fichier par lot.
 description: Importation et exportation en bloc de métadonnées de ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 51%
+source-wordcount: '785'
+ht-degree: 50%
 
 ---
 
@@ -36,7 +36,7 @@ L’importation des métadonnées est asynchrone et n’entrave pas les performa
    | [!UICONTROL Lancer les workflows] | Faux par défaut. When set to `true` and default Launcher settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). L’activation des workflows de lancement ralentit le système. |
    | [!UICONTROL Nom de colonne du chemin d’accès à la ressource] | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
-1. Appuyez/cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
+1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.
 
 1. Pour vérifier l’importation correcte, accédez à la page [!UICONTROL Propriétés] d’une ressource et vérifiez les valeurs des champs.
 
