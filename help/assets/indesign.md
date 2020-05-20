@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager Assets] Intégrer [!DNL Adobe InDesign S
 description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 40%
@@ -167,7 +167,7 @@ Points d’extrémité SOAP à utiliser pour communiquer avec [!DNL InDesign Ser
 If the [!DNL InDesign Server] and [!DNL Experience Manager] run on different hosts or either or both these applications do not run on default ports, configure [!UICONTROL Day CQ Link Externalizer] to set the host name, port, and content path for the [!DNL InDesign Server].
 
 1. Access the Web Console at `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
+1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click **[!UICONTROL Edit]** to open it.
 1. Specify the host name and context path for the [!DNL Indesign Server] and click **Save**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
