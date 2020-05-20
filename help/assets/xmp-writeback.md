@@ -3,14 +3,17 @@ title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonctionnalité d’écriture différée XMP propage les modifications apportées aux métadonnées d’une ressource à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 63%
 
 ---
 
 
 # Écriture différée XMP sur les rendus {#xmp-writeback-to-renditions}
 
-La fonction d’écriture différée XMP permet de [!DNL Adobe Experience Manager Assets] répliquer les modifications apportées aux métadonnées de fichier dans les rendus de la ressource. When you change the metadata for an asset from within [!DNL Experience Manager Assets] or while uploading the asset, changes are initially stored within the asset node in CRXDe. La fonction d’écriture différée XMP propage les modifications de métadonnées à tous les rendus ou à des rendus spécifiques du fichier.
+La fonction d’écriture différée XMP permet de [!DNL Adobe Experience Manager Assets] répliquer les modifications de métadonnées de fichier dans les rendus de la ressource. When you change the metadata for an asset from within [!DNL Experience Manager Assets] or while uploading the asset, changes are initially stored within the asset node in CRXDe. La fonction d’écriture différée XMP propage les modifications de métadonnées à tous les rendus ou à des rendus spécifiques de la ressource.
 
 Supposons que vous remplaciez la propriété [!UICONTROL Titre] d’une ressource intitulée `Classic Leather` par `Nylon`.
 
@@ -22,7 +25,7 @@ In this case, the [!DNL Experience Manager Assets] saves the changes to the **[!
 
 However, [!DNL Experience Manager Assets] does not automatically propagate any metadata changes to the renditions of an asset.
 
-La fonction d’écriture différée XMP vous permet de propager les modifications de métadonnées à tous les rendus ou à des rendus spécifiques du fichier. Toutefois, les modifications ne sont pas stockées sous le nœud de métadonnées dans la hiérarchie de la ressource. Au lieu de cela, cette fonction incorpore les modifications dans les fichiers binaires pour les rendus.
+La fonction d’enregistrement XMP vous permet de propager les modifications de métadonnées à tous les rendus ou à des rendus spécifiques de la ressource. Toutefois, les modifications ne sont pas stockées sous le nœud de métadonnées dans la hiérarchie de la ressource. Au lieu de cela, cette fonction incorpore les modifications dans les fichiers binaires pour les rendus.
 
 ## Activation de l’écriture différée XMP {#enabling-xmp-writeback}
 
@@ -30,7 +33,7 @@ Pour activer la propagation des modifications apportées aux métadonnées aux r
 
 1. Pour ouvrir Configuration Manager, accédez à `https://[aem_server]:[port]/system/console/configMgr`.
 1. Ouvrez la configuration **[!UICONTROL Créateur de rendus de gestion des actifs numériques Adobe CQ]**.
-1. Sélectionnez l’option **[!UICONTROL Propagate XMP[!UICONTROL **, puis enregistrez les modifications.
+1. Sélectionnez l&#39;option **[!UICONTROL Propagate XMP[!UICONTROL **, puis enregistrez les modifications.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
@@ -44,7 +47,7 @@ Pour que la fonction Écriture différée XMP propage les métadonnées aux min
 1. Sur la page Modèles, ouvrez le modèle de workflow **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques]**.
 1. Sur la page de propriétés **[!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques]**, ouvrez l’étape **[!UICONTROL Processus d’écriture différée XMP]**.
 1. In the [!UICONTROL Step Properties] dialog box, click the **[!UICONTROL Process]** tab.
-1. In the **Arguments** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, andd then tap/click **OK**.
+1. In the **Arguments** box, add `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`, andd then click **OK**.
 
    ![step_properties](assets/step_properties.png)
 
