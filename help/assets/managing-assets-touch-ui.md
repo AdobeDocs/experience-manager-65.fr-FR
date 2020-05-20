@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '9347'
-ht-degree: 70%
+source-wordcount: '9298'
+ht-degree: 66%
 
 ---
 
@@ -61,13 +61,13 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 1. In the [!DNL Assets] user interface, navigate to the location where you want to add digital assets.
 1. Pour charger les ressources, effectuez l’une des opérations suivantes :
 
-   * Appuyez sur l’icône **[!UICONTROL Créer]** de la barre d’outils. Then on the menu, tap **[!UICONTROL Files]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
+   * On the toolbar, click the **[!UICONTROL Create]** icon. Dans le menu, cliquez ensuite sur **[!UICONTROL Fichiers]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
    * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
    ![Créer une option pour télécharger des fichiers](assets/create-options.png)
 
    Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
 
-   Vous pouvez suspendre le transfert des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Tap the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
+   Vous pouvez suspendre le transfert des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Click the **[!UICONTROL Pause]** icon beside progress bar that appears when an upload starts.
 
    ![Barre de progression du téléchargement des fichiers](assets/chlimage_1-5.png)
 
@@ -109,7 +109,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    ![Boîte de dialogue Fichier détecté de Duplicata](assets/chlimage_1-8.png)
 
-   To retain the duplicate asset in [!DNL Assets], tap/click **[!UICONTROL Keep]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
+   Pour conserver la ressource de duplicata dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
    [!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. If you try to upload an asset with file name containing a disallowed character or more, [!DNL Assets] displays a warning message and stops the upload until you remove these characters or upload with an allowed name.
 
@@ -154,7 +154,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 **Pour télécharger des ressources via FTP, procédez comme suit :**
 
 1. Sélectionnez le client FTP de votre choix, puis connectez-vous à l’aide du nom d’utilisateur et du mot de passe FTP qui vous ont été envoyés par courrier électronique. Dans le client FTP, téléchargez les fichiers et/ou dossiers vers le serveur FTP.
-1. [Connectez-vous à Dynamic Media Classic](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à l’aide des informations de connexion qui vous ont été envoyées par e-mail. Appuyez ou cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
+1. [Connectez-vous à Dynamic Media Classic](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à l’aide des informations de connexion qui vous ont été envoyées par e-mail. Cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 
 1. Cliquez sur l’onglet **[!UICONTROL Via FTP]** dans le coin supérieur gauche de la page Télécharger.
 1. Sélectionnez le dossier FTP source à utiliser pour le transfert des fichiers dans la partie gauche de la page et le dossier de destination dans la partie droite.
@@ -166,11 +166,11 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
    >
    >Lorsque vous transférez des ressources via FTP, les options de la tâche de transfert définies dans Dynamic Media Classic (S7) sont prioritaires sur les paramètres de traitement des ressources définis dans [!DNL Experience Manager].
 
-1. Dans le coin inférieur droit de la boîte de dialogue Télécharger les options de la tâche, appuyez sur **[!UICONTROL Enregistrer]**.
-1. Dans le coin inférieur droit de la page Télécharger, appuyez sur **[!UICONTROL Lancer le téléchargement]**.
+1. Dans le coin inférieur droit de la boîte de dialogue Télécharger les options de la tâche, cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans le coin inférieur droit de la page Télécharger, cliquez sur **[!UICONTROL Lancer le téléchargement]**.
 
-   Pour afficher la progression du téléchargement, appuyez sur **[!UICONTROL Tâches]** dans la barre de navigation globale. La page Tâches affiche la progression du téléchargement. You can continue working in [!DNL Experience Manager] and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
-Pour annuler une tâche de téléchargement en cours, appuyez ou cliquez sur **[!UICONTROL Annuler]** à côté de la durée.
+   Pour afficher la progression du téléchargement, cliquez sur **[!UICONTROL Tâches]** dans la barre de navigation globale. La page Tâches affiche la progression du téléchargement. You can continue working in [!DNL Experience Manager] and return to the Jobs page in Dynamic Media Classic at any time to review an in-progress job.
+To cancel an upload job in progress, click **[!UICONTROL Cancel]** next to the Duration time.
 
 #### Options de la tâche de transfert {#upload-job-options}
 
@@ -180,7 +180,7 @@ Pour annuler une tâche de téléchargement en cours, appuyez ou cliquez sur **[
 | Publier après le téléchargement |  | Publie automatiquement les ressources que vous téléchargez. |
 | Écraser dans n’importe quel dossier, même nom de ressource de base, quelle que soit l’extension |  | Sélectionnez cette option si vous voulez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut varier en fonction des paramètres définis sous **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Télécharger dans l’application]** > **[!UICONTROL Écraser les images]**. |
 | Décompresser les fichiers zip ou tar lors du téléchargement |  |  |
-| Options de tâche |  | Tap/ click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Tap the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
+| Options de tâche |  | Click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Click the **[!UICONTROL Default Upload Options]** button to open the [!UICONTROL Upload Job Options] dialog box. |
 |  | Quand | Sélectionnez Unique ou Périodique. Pour définir une tâche périodique, sélectionnez une option de répétition (Quotidien, Hebdomadaire, Mensuel ou Personnalisé) afin d’indiquer la fréquence souhaitée pour la tâche de transfert FTP. Indiquez ensuite les options de planification suivant vos besoins. |
 |  | Inclure les sous-dossiers | Téléchargez tous les sous-dossiers du dossier que vous avez l’intention de télécharger. Les noms du dossier et des sous-dossiers transférés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
 |  | Options de recadrage | Pour recadrer manuellement une image par ses côtés, sélectionnez le menu Recadrer, puis choisissez Manuel. Indiquez ensuite le nombre de pixels à recadrer d’un seul côté ou de chaque côté de l’image. La proportion de l’image qui est rognée dépend du paramètre ppp (pixels par pouce) défini dans le fichier d’image. Par exemple, si l’image affiche 150 ppp et que vous saisissez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** - Choisissez l&#39;option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**** Transparence : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance comprise entre 0 et 1. Pour effectuer un rognage en fonction de la couleur, indiquez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans l’angle de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Notez que ces options de recadrage sont non destructives. |
@@ -329,13 +329,13 @@ La fonctionnalité présente certaines limites :
 Pour prévisualiser une ressource, procédez comme suit.
 
 1. From the [!DNL Assets] user interface, navigate to the location of the asset you want to preview.
-1. Appuyez sur la ressource concernée pour l’ouvrir.
+1. Cliquez sur la ressource de votre choix pour l’ouvrir.
 
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats) (avec modification interactive).
 
-   Pour effectuer un zoom avant sur une ressource, appuyez/cliquez sur `+` (ou appuyez/cliquez sur la loupe au niveau de la ressource). Pour effectuer un zoom arrière, appuyez/cliquez sur `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
+   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
 
-   Appuyez sur **[!UICONTROL Réinitialiser]** pour réinitialiser la vue à sa taille d’origine.
+   Click **[!UICONTROL Reset]** to reset the view to the original size.
 
    ![Réinitialiser l’icône pour ramener l’utilisateur à la vue d’origine](assets/chlimage_1-11.png)
 
@@ -366,7 +366,7 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
 
 1. Accédez à l’emplacement de la ressource pour modifier ses métadonnées.
 
-1. Sélectionnez la ressource et appuyez/cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils pour afficher ses propriétés. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Propriétés]** sur la carte de la ressource.
+1. Select the asset, and click **[!UICONTROL Properties]** from the toolbar to view asset properties. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Propriétés]** sur la carte de la ressource.
 
    ![Action rapide Propriétés sur la vue de carte de ressources](assets/properties_quickaction.png)
 
@@ -394,13 +394,13 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
    >
    >To create tags, you need write permission at `/content/cq:tags/default` in the CRX repository.
 
-1. Pour fournir une évaluation de la ressource, appuyez/cliquez sur l’onglet **[!UICONTROL Avancé]**, puis appuyez/cliquez sur l’étoile à l’emplacement approprié pour affecter l’évaluation de votre choix.
+1. Pour obtenir une évaluation de la ressource, cliquez sur l’onglet **[!UICONTROL Avancé]**, puis cliquez sur l’étoile à l’emplacement approprié pour affecter l’évaluation de votre choix.
 
    ![Onglet Avancé dans Propriétés du fichier pour attribuer une note](assets/ratings.png)
 
    Le score d’évaluation que vous affectez à la ressource s’affiche sous **[!UICONTROL Vos évaluations]**. Le score d’évaluation moyen que la ressource a reçu des utilisateurs qui ont évalué la ressource s’affiche sous **[!UICONTROL Évaluation]**. De plus, la répartition des scores d’évaluation contribuant au score d’évaluation moyen s’affiche sous **[!UICONTROL Ventilation d’évaluation]**. Vous pouvez rechercher des ressources en fonction de leur score d’évaluation moyen.
 
-1. Pour afficher les statistiques d’utilisation de la ressource, cliquez/appuyez sur l’onglet **[!UICONTROL Statistiques]**.
+1. To view usage usage statistics for the asset, click the **[!UICONTROL Insights]** tab.
 
    Les statistiques d’utilisation comprennent les suivantes :
 
@@ -424,7 +424,7 @@ Quelques attributs uniques à une copie spécifique d’une ressource ne sont pa
 
 Les autres propriétés et informations de métadonnées sont conservées. Une copie partielle n’est pas créée lors de la copie d’une ressource.
 
-1. In [!DNL Assets] interface, select one or more assets and tap/click the **[!UICONTROL Copy]** icon from the toolbar. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]**   depuis la carte de la ressource.
+1. In [!DNL Assets] interface, select one or more assets and click the **[!UICONTROL Copy]** icon from the toolbar. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]**   depuis la carte de la ressource.
    ![Icône Copier dans la barre d’outils de l’interface utilisateur des ressources](assets/copy_icon.png)
 
    >[!NOTE]
@@ -437,7 +437,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    >
    >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
-1. Click/ tap the **[!UICONTROL Paste]** asset icon from the toolbar.
+1. Cliquez sur l’icône de ressource **[!UICONTROL Coller]** de la barre d’outils.
 
    ![Icône Coller dans la barre d’outils de l’interface utilisateur des ressources](assets/chlimage_1-14.png)
    [!DNL Assets] sont ensuite copiées à cet emplacement.
@@ -450,14 +450,14 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Accédez à l’emplacement de la ressource à déplacer.
 
-1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Déplacer]**   de la barre d’outils.
+1. Select the asset, and click the **[!UICONTROL Move]** icon from the toolbar.
    ![Icône Déplacer dans la barre d’outils de l’interface utilisateur des ressources](assets/move_icon.png)
 
 1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
-   * Spécifiez le nom de la ressource après l’avoir déplacée. Ensuite, appuyez/cliquez sur **[!UICONTROL Suivant]** pour continuer.
+   * Spécifiez le nom de la ressource après l’avoir déplacée. Then click **[!UICONTROL Next]** to proceed.
 
-   * Appuyez/cliquez sur **[!UICONTROL Annuler]** pour arrêter le processus.
+   * Click **[!UICONTROL Cancel]** to stop the process.
    >[!NOTE]
    >
    >* Vous pouvez attribuer le même nom à la ressource si aucune autre ressource portant ce nom n’existe dans le nouvel emplacement. Cependant, vous devez utiliser un nouveau nom si vous déplacez la ressource vers un emplacement dans lequel une ressource portant le même nom existe. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
@@ -466,31 +466,31 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner la destination]**, procédez comme suit :
 
-   * Accédez au nouvel emplacement des ressources, puis appuyez/cliquez sur **[!UICONTROL Suivant]** pour continuer.
+   * Navigate to the new location for the assets, and then click **[!UICONTROL Next]** to proceed.
 
-   * Appuyez/cliquez sur **[!UICONTROL Précédent]** pour revenir à l’écran **[!UICONTROL Renommer]**.
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
 
 1. Si les ressources déplacées sont référencées par des pages, des ressources ou des collections, l’onglet **[!UICONTROL Adapter les références]** s’affiche à côté de l’onglet **[!UICONTROL Sélectionner la destination]**.
 
    Dans l’écran **[!UICONTROL Adapter les références]**, effectuez l’une des actions suivantes :
 
-   * Spécifiez les références à ajuster en fonction des nouveaux détails, puis appuyez/cliquez sur **[!UICONTROL Déplacer]** pour continuer.
+   * Specify the references to be adjusted based on the new details, and then click **[!UICONTROL Move]** to proceed.
 
    * Dans la colonne **[!UICONTROL Ajuster]**, sélectionnez/annulez la sélection des références aux ressources.
-   * Appuyez/cliquez sur **[!UICONTROL Précédent]** pour revenir à l’écran **[!UICONTROL Sélectionner la destination]**.
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
 
-   * Appuyez/cliquez sur **[!UICONTROL Annuler]** pour abandonner l’opération de déplacement.
+   * Click **[!UICONTROL Cancel]** to stop the move operation.
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
 
 ## Gestion des rendus {#managing-renditions}
 
 1. Vous pouvez ajouter ou supprimer des rendus correspondant à une ressource, à l’exception de celle d’origine. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez ajouter ou supprimer des rendus.
 
-1. Appuyez/cliquez sur la ressource pour ouvrir sa page.
+1. Cliquez sur le fichier pour ouvrir sa page de ressources.
 
    ![Page Détails des ressources pour gérer les rendus](assets/chlimage_1-15.png)
 
-1. Appuyez/cliquez sur l’icône de navigation globale et sélectionnez **[!UICONTROL Rendus]** dans la liste.
+1. Click the GlobalNav icon, and select **[!UICONTROL Renditions]** from the list.
 
    ![Rangement de gauche pour ouvrir le menu et sélectionner l’option Rendus](assets/renditions_menu.png)
 
@@ -506,13 +506,13 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]**, puis appuyez/cliquez sur l’icône **[!UICONTROL Supprimer le rendu]** de la barre d’outils. Les rendus ne peuvent pas être supprimés en bloc une fois le traitement des ressources terminé. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Les rendus ne peuvent pas être supprimés en bloc une fois le traitement des ressources terminé. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
 
    ![Option de suppression d’un rendu](assets/delete_renditionicon.png)
 
    **Téléchargement d’un nouveau rendu**
 
-   Accédez à la page de détails de la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Ajouter le rendu]** de la barre d’outils afin de charger un nouveau rendu pour la ressource.
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![Ajouter icône de rendu pour télécharger un nouveau rendu](assets/chlimage_1-16.png)
 
@@ -544,7 +544,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 1. Accédez à l’emplacement des ressources que vous souhaitez supprimer.
 
-1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Supprimer]** de la barre d’outils.
+1. Select the asset, and click the **[!UICONTROL Delete]** icon from the toolbar.
 
    ![Icône Supprimer](assets/delete_icon.png)
 
@@ -575,14 +575,14 @@ Voir [Téléchargement de fichiers à partir d’Experience Manager](/help/asset
 
 1. Accédez à l’emplacement des ressources/du dossier que vous souhaitez publier.
 
-1. Sélectionnez l’action rapide **[!UICONTROL Publier]** à partir de la carte de la ressource ou choisissez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Publication rapide]** de la barre d’outils.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ont été modifiées ou dont la publication a été annulée depuis leur dernière publication/annulation de publication sont affichées. Choisissez les références que vous souhaitez publier.
 
    >[!NOTE]
    >
    >Les dossiers vides, qui font partie d’un dossier que vous avez publié, ne sont pas publiés.
 
-1. Appuyez/cliquez sur **[!UICONTROL Publier]** pour confirmer l’activation des ressources.
+1. Cliquez sur **[!UICONTROL Publier]** pour confirmer la d’activation pour les ressources.
 
 >[!CAUTION]
 >
@@ -592,7 +592,7 @@ Voir [Téléchargement de fichiers à partir d’Experience Manager](/help/asset
 
 1. Accédez à l’emplacement de la ressource/du dossier de ressources que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
 
-1. Sélectionnez la ressource/le dossier dont vous souhaitez annuler la publication, puis appuyez/cliquez sur l’icône **[!UICONTROL Gérer la publication]** de la barre d’outils.
+1. Select the asset/folder to unpublish, and click the **[!UICONTROL Manage Publication]** icon from the toolbar.
 
    ![Icône Gérer la publication](assets/manage_publication.png)
 
@@ -602,8 +602,8 @@ Voir [Téléchargement de fichiers à partir d’Experience Manager](/help/asset
 
 1. Pour annuler la publication de la ressource à une date ultérieure, sélectionnez **[!UICONTROL Annuler la publication ultérieurement]**, puis choisissez une date d’annulation de la publication de la ressource.
 1. Planifiez une date à laquelle la ressource devient indisponible dans l’environnement de publication.
-1. Si la ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Appuyez/cliquez sur **[!UICONTROL Annuler la publication]**.
-1. Dans la boîte de dialogue de confirmation, appuyez/cliquez sur :
+1. Si la ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**.
+1. Dans la boîte de dialogue de confirmation, cliquez sur :
 
    * **[!UICONTROL Annuler]** pour arrêter l’action
    * **[!UICONTROL Annuler la publication]** pour confirmer l’annulation de la publication des ressources (elles ne sont plus disponibles dans l’environnement de publication) à la date indiquée.
@@ -617,7 +617,7 @@ A closed user group (CUG) is used to limit access to specific asset folders publ
 
 Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de limiter l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
-1. Select a folder from the [!DNL Assets] interface, and tap/click the [!UICONTROL Properties] icon from the toolbar to display the properties page.
+1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] icon from the toolbar to display the properties page.
 1. Sous l’onglet **[!UICONTROL Autorisations]**, ajoutez les membres ou les groupes sous **[!UICONTROL Groupe d’utilisateurs fermé]**.
 
    ![Utilisateur Ajouter dans un groupe d’utilisateurs fermé](assets/add_user.png)
@@ -674,12 +674,12 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Pour ouvrir une ressource en mode d’édition, effectuez l’une des opérations suivantes :
 
-   * Sélectionnez la ressource, puis cliquez/appuyez sur l’icône **[!UICONTROL Modifier]** de la barre d’outils.
-   * Appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** qui s’affiche sur une ressource en mode Carte.
-   * Sur la page Ressource, appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** de la barre d’outils.
+   * Select the asset and then click the **[!UICONTROL Edit]** icon in the toolbar.
+   * Click the **[!UICONTROL Edit]** icon that appears on an asset in the Card view.
+   * In the asset page, click the **[!UICONTROL Edit]** icon in the toolbar.
    ![Icône Modifier dans la barre d’outils](assets/edit_icon.png)
 
-1. Pour recadrer l’image, appuyez/cliquez sur l’icône **Recadrer**.
+1. To crop the image, click the **Crop** icon.
 
    ![Icône Recadrer](assets/chlimage_1-22.png)
 
@@ -696,15 +696,15 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
    ![Icônes Annuler et Rétablir](assets/chlimage_1-25.png)
 
-1. Appuyez/cliquez sur l’icône Faire pivoter adéquate pour faire pivoter l’image dans le sens des aiguilles d’une montre ou dans le sens inverse des aiguilles d’une montre.
+1. Cliquez sur l&#39;icône Faire pivoter adéquate pour faire pivoter l&#39;image dans le sens des aiguilles d’une montre ou dans le sens inverse des aiguilles d’une montre.
 
    ![Icônes de rotation dans le sens des aiguilles d’une montre et dans le sens anti-horaire](assets/chlimage_1-26.png)
 
-1. Appuyez/cliquez sur l’icône Symétrie adéquate pour retourner l’image horizontalement ou verticalement.
+1. Cliquez sur l&#39;icône Retourner adéquate pour retourner l’image horizontalement ou verticalement.
 
    ![Icônes permettant de retourner l’image horizontalement ou verticalement](assets/chlimage_1-27.png)
 
-1. Appuyez/cliquez sur l’icône **Terminé** pour enregistrer les modifications.
+1. Click the **Finish** icon to save the changes.
 
    ![Icône Terminer](assets/chlimage_1-28.png)
 
@@ -745,7 +745,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 >Pour les fragments de contenu, [les annotations sont créées dans l’éditeur de fragment](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Accédez à l’emplacement de la ressource à laquelle vous souhaitez ajouter des annotations.
-1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
+1. Click the **[!UICONTROL Annotate]** icon from one of the following:
 
    * [Actions rapides](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
@@ -771,18 +771,18 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    >
    >Vous pouvez ajouter plusieurs annotations avant de les enregistrer.
 
-1. Appuyez/cliquez sur **[!UICONTROL Fermer]** pour quitter le mode Annotation.
+1. Cliquez sur **[!UICONTROL Fermer]** pour quitter le mode Annotation.
 1. To view the notification, log in to [!DNL Assets] with Aaron MacDonald&#39;s credentials and click the **[!UICONTROL Notifications]** icon to view the notification.
 
    >[!NOTE]
    >
    >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](/help/assets/managing-video-assets.md).
 
-1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
+1. To choose a different color so you can differentiate between users, click the Profile icon and click **[!UICONTROL My Preferences]**.
 
    ![Sélectionnez l’icône de profil d’utilisateur, puis Mes préférences pour ouvrir les préférences utilisateur.](assets/User-profile-preferences.png)
 
-   Indiquez la couleur de votre choix dans la zone **[!UICONTROL Couleur de l’annotation]**, puis cliquez/appuyez sur **[!UICONTROL Accepter]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
    ![Sélectionnez la couleur d’annotation dans les préférences utilisateur pour définir la couleur de personnalité de l’utilisateur.](assets/Annotation-color.png)
 
@@ -794,7 +794,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
-1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
+1. Click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
 
    ![Options disponibles sur l’icône GlobalNav](assets/chlimage_1-35.png)
 
@@ -802,11 +802,11 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    ![Afficher toute la liste dans le journal](assets/chlimage_1-36.png)
 
-   Dans le panneau **[!UICONTROL Chronologie]**, appuyez/cliquez sur un commentaire pour afficher l’annotation correspondante sur l’image.
+   Dans le panneau **[!UICONTROL Frise chronologique]**, cliquez sur un commentaire pour afficher l’annotation correspondate sur l’image.
 
    ![Annotation de vue du panneau Montage sur l&#39;image](assets/chlimage_1-37.png)
 
-   Pour supprimer un commentaire spécifique, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
+   Pour supprimer un commentaire spécifique, cliquez sur **[!UICONTROL Supprimer]**.
 
 ### Impression des annotations {#printing-annotations}
 
@@ -814,7 +814,7 @@ Si une ressource comporte des annotations ou si elle a fait l’objet d’un wor
 
 Vous pouvez également choisir de n’imprimer que les annotations ou l’état de révision.
 
-Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l’icône **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un état de révision.
+To print the annotations and review status, click the **[!UICONTROL Print]** icon and follow the instructions in the wizard. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un état de révision.
 
 1. From the [!DNL Assets] interface, open the preview page for an asset.
 1. Utilisez l’une des méthodes suivantes :
@@ -830,7 +830,7 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
 
    ![Pour imprimer uniquement l&#39;état de révision d&#39;Annotation, sélectionnez-le dans le journal](assets/chlimage_1-39.png)
 
-1. Appuyez/cliquez sur l’icône **[!UICONTROL Imprimer]** dans la barre d’outils.
+1. Click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![Icône Imprimer dans la barre d’outils](assets/chlimage_1-40.png)
 
@@ -844,7 +844,7 @@ Pour imprimer les annotations et l’état de révision, cliquez/appuyez sur l�
    >
    >Il se peut que les annotations trop longues ne s’affichent pas correctement dans le fichier PDF. Pour un rendu optimal, Adobe recommande de limiter la taille des annotations à 50 mots.
 
-1. Appuyez/cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations/l’état de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
+1. Cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations/l’état de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
    ![Annotation et état de révision sur le PDF généré](assets/chlimage_1-42.png)
 
