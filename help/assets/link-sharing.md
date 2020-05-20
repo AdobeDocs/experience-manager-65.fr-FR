@@ -1,20 +1,23 @@
 ---
-title: Générer une URL vers des ressources partagées
+title: Générer une URL pour les ressources partagées
 description: Cet article décrit comment partager avec des tiers externes des actifs, des dossiers et des collections dans AEM Assets sous forme d’URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '1221'
+ht-degree: 63%
 
 ---
 
 
-# Partage d’un fichier via un lien {#asset-link-sharing}
+# Partage d’une ressource via un lien {#asset-link-sharing}
 
-Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, des dossiers et des collections sous forme d’URL avec des collaborateurs dans l’entreprise et des tiers, notamment des partenaires et des fournisseurs. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à AEM Assets.
+Adobe Experience Manager (AEM) Assets vous permet de partager des ressources, des dossiers et des collections sous forme d’URL avec des collaborateurs dans l’entreprise et des tiers, notamment des partenaires et des fournisseurs. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à AEM Assets.
 
 >[!NOTE]
 >
->Vous devez disposer de l’autorisation Modifier la liste de contrôle d’accès sur le dossier ou la ressource que vous souhaitez partager en tant que lien.
+>Vous devez disposer de l’autorisation Modifier l’ACL sur le dossier ou la ressource que vous souhaitez partager en tant que lien.
 
 ## Partage de ressources {#sharelink}
 
@@ -25,7 +28,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 >Avant de partager un lien avec des utilisateurs, assurez-vous que le service de messagerie Day CQ est bien configuré. Une erreur se produira si vous tentez de partager un lien sans d’abord [configurer le service de messagerie DAY CQ](/help/assets/link-sharing.md#configmailservice).
 
 1. Dans l’interface utilisateur Assets, sélectionnez la ressource à partager sous forme de lien.
-1. From the toolbar, click/tap the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
+1. From the toolbar, click the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
 
    Le lien de la ressource est créé automatiquement dans le champ **[!UICONTROL Partager le lien]**. Copiez ce lien et partagez-le avec les utilisateurs. Le délai d’expiration par défaut du lien est de 1 jour.
 
@@ -37,7 +40,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    >[!NOTE]
    >
-   >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Bloquez d’autres URL pour garantir la sécurité d’AEM Author.
+   >If you want to share links from your AEM Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Bloquez d’autres URL pour garantir la sécurité de l’auteur AEM.
    >
    >* http://&lt;serveur_aem>:&lt;port>/linkshare.html
    * http://&lt;serveur_aem>:&lt;port>/linksharepreview.html
@@ -59,7 +62,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    ![Partage de liens vers des ressources directement depuis la boîte de dialogue Partage de lien](assets/Asset-Sharing-LinkShareDialog.png)
 
-   *Figure : Partagez des liens vers des ressources directement depuis la boîte de dialogue Partage[!UICONTROL de]liens.*
+   *Figure : Partagez des liens vers des ressources directement à partir de la boîte de dialogue Partage[!UICONTROL de]liens.*
 
    >[!NOTE]
    If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
@@ -78,32 +81,32 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    Par défaut, les utilisateurs peuvent uniquement télécharger les rendus de la ressource que vous partagez sous forme de lien.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec le ou les utilisateurs par e-mail.
-1. Pour afficher la ressource partagée, cliquez/appuyez sur le lien dans le courrier électronique envoyé à l’utilisateur. La ressource partagée s’affiche sur la page **[!UICONTROL Adobe Marketing Cloud]**.
+1. Pour vue de la ressource partagée, cliquez sur le lien dans le courrier électronique envoyé à l’utilisateur. La ressource partagée s’affiche sur la page **[!UICONTROL Adobe Marketing Cloud]**.
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-   Pour accéder au , cliquez/appuyez sur l’option de mise en page dans la barre d’outils.
+   Pour passer à la vue de liste, cliquez sur l’option de mise en page dans la barre d’outils.
 
-1. Pour générer un aperçu de la ressource, cliquez/appuyez sur la ressource partagée. Pour fermer l’aperçu et revenir à la page **[!UICONTROL Marketing Cloud]**, cliquez/appuyez sur **[!UICONTROL Précédent]** dans la barre d’outils. Si vous avez partagé un dossier, cliquez/appuyez sur **[!UICONTROL Dossier parent]** pour revenir au dossier parent.
+1. Pour générer une prévisualisation de la ressource, cliquez sur la ressource partagée. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
    AEM prend en charge la génération de l’aperçu des ressources des types MIME suivants : JPG, PNG, GIF, BMP, INDD, PDF et PPT. Vous pouvez uniquement télécharger les ressources des autres types MIME.
 
-1. To download the shared asset, tap **[!UICONTROL Select]** from the toolbar, click/tap the asset, and then click/tap **[!UICONTROL Download]** from the toolbar.
+1. To download the shared asset, click **[!UICONTROL Select]** from the toolbar, click the asset, and then click **[!UICONTROL Download]** from the toolbar.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Pour  les ressources que vous avez partagées en tant que liens, accédez à l’interface utilisateur Ressources et appuyez sur le logo d’Experience Manager. Sélectionnez **[!UICONTROL Navigation]** dans la liste pour afficher le panneau Navigation.
+1. Pour vue des ressources que vous avez partagées en tant que liens, accédez à l’interface utilisateur Ressources et cliquez sur le logo Experience Manager. Sélectionnez **[!UICONTROL Navigation]** dans la liste pour afficher le panneau Navigation.
 1. Dans le panneau Navigation, sélectionnez **[!UICONTROL Liens partagés]** pour afficher la liste des ressources partagées.
-1. Pour annuler le partage d’une ressource, sélectionnez-la et appuyez/cliquez sur **[!UICONTROL Annuler le partage]** dans la barre d’outils. Un message de confirmation s’affiche. L’entrée du fichier est supprimée du .
+1. To un-share an asset, select it and click **[!UICONTROL Unshare]** from the toolbar. Voici un message de confirmation. L’entrée de la ressource est supprimée de la liste.
 
 ## Configuration du service service de messagerie Day CQ {#configmailservice}
 
-1. Dans le Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
+1. Dans la page d&#39;accueil Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
 1. Dans la liste des services, recherchez le **[!UICONTROL service de messagerie Day CQ]**.
-1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
+1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * Nom d’hôte du serveur SMTP : nom d’hôte du serveur de messagerie
    * Port du serveur SMTP : port du serveur de messagerie
@@ -111,13 +114,13 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    * Mot de passe SMTP : mot de passe du serveur de messagerie
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Configuration de la taille maximale des données   {#maxdatasize}
+## Configuration de la taille maximale des données  {#maxdatasize}
 
 Lorsque vous téléchargez des ressources via le lien partagé avec la fonction de partage de lien, AEM compresse l’intégralité de la hiérarchie de cette ressource depuis le référentiel et renvoie la ressource sous forme de fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. Afin de protéger le système contre une potentielle attaque par déni de service (DoS) résultant de cette situation, configurez la taille maximale à l’aide du paramètre **[!UICONTROL Taille max. de contenu (sans compression)]** pour le servlet proxy du partage de ressource adhoc de la gestion des ressources numériques Day CQ dans le gestionnaire de configuration.  Si la taille non compressée de la ressource dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
 
-1. Cliquez ou appuyez sur le logo AEM puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
+1. Click the AEM logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
 1. Ouvrez la configuration **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** en mode d’édition, puis modifiez la valeur du paramètre **[!UICONTROL Taille max. de contenu (sans compression)]**.
 
