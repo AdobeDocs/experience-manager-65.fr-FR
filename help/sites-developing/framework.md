@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cef5251d6bd72a6fd352f18e31d3f9d787e4320e
+source-git-commit: 4c4a0b1a76f44dcf1084a4651194e60735bc5aea
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1915'
 ht-degree: 52%
 
 ---
@@ -259,12 +259,16 @@ A special value for the `cq:movedTo` property is `nirvana`: it is applied when t
 
 * Les mises à jour ultérieures apportées à la propriété `cq:tags` de la page nettoient automatiquement les « anciennes » références. Cette opération est déclenchée, car la résolution d’une balise déplacée via l’API renvoie la balise de destination, fournissant ainsi l’ID de balise de destination.
 
+> [!NOTE]
+>
+> Le déplacement des balises est différent de la migration des balises.
+
 ## Migration des balises {#tags-migration}
 
 Les balises Experience Manager 6.4 et ultérieures sont stockées sous `/content/cq:tags`, qui étaient précédemment stockées sous `/etc/tags`. Cependant, dans les scénarios où Adobe Experience Manager a été mis à niveau à partir de la version précédente, les balises sont toujours présentes sous l’ancien emplacement `/etc/tags`. Dans les systèmes mis à niveau, les balises doivent être migrées sous `/content/cq:tags`.
 
 > [!NOTE]
-> Dans Propriétés de page de la page des balises, il est conseillé d’utiliser l’ID de balise (`geometrixx-outdoors:activity/biking`) plutôt que de coder en dur le chemin de base de la balise (par exemple, `/etc/tags/geometrixx-outdoors/activity/biking`).
+> Dans Propriétés de page de la page des balises, il est conseillé d’utiliser l’ID de balise (`geometrixx-outdoors:activity/biking`) au lieu de coder en dur le chemin de base de la balise (par exemple, `/etc/tags/geometrixx-outdoors/activity/biking`).
 > Pour les balises de liste, `com.day.cq.tagging.servlets.TagListServlet` vous pouvez les utiliser.
 
 > [!NOTE]
