@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 1493b301ecf4c25f785495e11ead352de600ddb7
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 59%
 
 ---
 
@@ -36,7 +39,7 @@ L’implémentation du [framework de balisage](/help/sites-developing/framework.
 
 * JcrTagManagerFactory - renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` - permet de résoudre et de créer des balises par chemins et noms.
-* `Tag` - définit l’objet de balise.
+* `Tag` - définit l’objet tag.
 
 ### Récupération d’un TagManager basé sur JCR {#getting-a-jcr-based-tagmanager}
 
@@ -65,7 +68,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling&#39;s `adaptTo` mechanism if you have the resource (e.g. such as `/etc/tags/default/my/tag`):
+For the JCR-based implementation, which maps `Tags` onto JCR `Nodes`, you can directly use Sling&#39;s `adaptTo` mechanism if you have the resource (e.g. such as `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -131,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Le Tag Garbage Collector {#the-tag-garbage-collector}
 
-Le collecteur de déchets de balises est un service en arrière-plan qui nettoie les balises masquées et inutilisées. Hidden and unused tags are tags below `/etc/tags` that have a `cq:movedTo` property and are not used on a content node - they have a count of zero. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
+Le récupérateur de balises est un service d’arrière-plan qui nettoie les balises qui sont masquées et inutilisées. Hidden and unused tags are tags below `/content/cq:tags` that have a `cq:movedTo` property and are not used on a content node - they have a count of zero. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
 
 Le Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur : 
 
@@ -187,7 +190,7 @@ Pour le balisage, la localisation dépend du contexte, car la balise `titles` pe
 
 La procédure suivante décrit comment ajouter une langue (finnois) à la boîte de dialogue **Modifier la balise** :
 
-1. In **CRXDE**, edit the multi-value property `languages` of the node `/etc/tags`.
+1. In **CRXDE**, edit the multi-value property `languages` of the node `/content/cq:tags`.
 
 1. Ajoutez `fi_fi` (code langue pour le finlandais) et enregistrez les modifications.
 
