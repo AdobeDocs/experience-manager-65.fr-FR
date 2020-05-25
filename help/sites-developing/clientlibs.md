@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: da233b2d58e13bf86c88115a78f2fecf1be12ba9
+workflow-type: tm+mt
+source-wordcount: '2889'
+ht-degree: 60%
 
 ---
 
@@ -52,12 +55,12 @@ By default, `cq:ClientLibraryFolder` nodes can be placed anywhere within the `/a
 
 Each `cq:ClientLibraryFolder` is populated with a set of JS and/or CSS files, along with a few supporting files (see below). The properties of the `cq:ClientLibraryFolder` are configured as follows:
 
-* `categories`: Identifie les catégories dans lesquelles le jeu de fichiers JS et/ou CSS se trouve au sein de cet `cq:ClientLibraryFolder` automne. La propriété `categories` comportant plusieurs valeurs, elle permet à un dossier de bibliothèques d’appartenir à plusieurs catégories (voir ci-dessous pour savoir en quoi cela peut se révéler utile).
+* `categories`: Identifie les catégories dans lesquelles le jeu de fichiers JS et/ou CSS se trouve au cours de cet `cq:ClientLibraryFolder` automne. La propriété `categories` comportant plusieurs valeurs, elle permet à un dossier de bibliothèques d’appartenir à plusieurs catégories (voir ci-dessous pour savoir en quoi cela peut se révéler utile).
 
 * `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. For example, given two `cq:ClientLibraryFolder` nodes `F` and `G`, if a file in `F` requires another file in `G` in order to function properly, then at least one of the `categories` of `G` should be among the `dependencies` of `F`.
 
-* `embed`: Permet d’incorporer du code provenant d’autres bibliothèques. Si le noeud F incorpore les noeuds G et H, le code HTML résultant sera une concentration de contenu des noeuds G et H.
-* `allowProxy`: Si une bibliothèque cliente se trouve sous `/apps`, cette propriété permet d’y accéder par le biais de la servlet proxy. See [Locating a Client Library Folder and Using the Proxy Client Libraries Servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) below.
+* `embed`: Utilisé pour incorporer du code provenant d’autres bibliothèques. Si le noeud F incorpore les noeuds G et H, le code HTML résultant sera une concentration de contenu des noeuds G et H.
+* `allowProxy`: Si une bibliothèque cliente se trouve sous `/apps`, cette propriété lui permet d’y accéder par le biais de la servlet proxy. See [Locating a Client Library Folder and Using the Proxy Client Libraries Servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) below.
 
 ## Référencement des bibliothèques côté client {#referencing-client-side-libraries}
 
@@ -100,7 +103,7 @@ Pour obtenir plus d’informations, y compris des attributs de filtrage des bibl
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, qui auparavant était généralement utilisé pour inclure des bibliothèques clientes, est obsolète depuis AEM 5.6. [ doit `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) être utilisé à la place comme décrit ci-dessus.
+>`<cq:includeClientLib>`, qui par le passé était généralement utilisé pour inclure des bibliothèques clientes, a été abandonné depuis AEM 5.6. [ doit `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) être utilisé à la place comme indiqué ci-dessus.
 
 ## Création de dossiers de bibliothèques clientes {#creating-client-library-folders}
 
@@ -124,7 +127,7 @@ Le client web doit être autorisé à accéder au nœud `cq:ClientLibraryFolder`
 
 ### Remplacement de bibliothèques dans /lib {#overriding-libraries-in-lib}
 
-Client library folders located below `/apps` take precedence over same-named folders that are similarly located in `/libs`. Par exemple, `/apps/cq/ui/widgets` prévaut sur `/libs/cq/ui/widgets`. When these libraries belong to the same category, the library below `/apps` is used.
+Client library folders located below `/apps` take precedence over same-named folders that are similarly located in `/libs`. Par exemple, `/apps/cq/ui/widgets` a priorité sur `/libs/cq/ui/widgets`. When these libraries belong to the same category, the library below `/apps` is used.
 
 ### Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -132,7 +135,7 @@ In previous versions, client library folders were located below `/etc/clientlibs
 
 >[!NOTE]
 >
->Les ressources statiques sous le dossier de bibliothèque client doivent se trouver dans un dossier appelé *ressources*. Si vous ne disposez pas des ressources statiques, telles que les images, sous les *ressources* de dossier, elles ne peuvent pas être référencées sur une instance de publication. Voici un exemple : https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Les ressources statiques situées sous le dossier de bibliothèque client doivent se trouver dans un dossier appelé *ressources*. Si vous ne disposez pas des ressources statiques, telles que les images, sous les *ressources* de dossier, elles ne peuvent pas être référencées sur une instance de publication. En voici un exemple : https://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -154,7 +157,7 @@ Then you set the `allowProxy` property on `foo` to true.
 
 >[!CAUTION]
 >
->Lors de l’utilisation de bibliothèques clientes proxy, la configuration du répartiteur AEM peut nécessiter une mise à jour pour s’assurer que les URI avec les clientlibs d’extension sont autorisés.
+>Lors de l’utilisation de bibliothèques clientes par proxy, la configuration du répartiteur AEM peut nécessiter une mise à jour pour s’assurer que les URI avec les clientlibs d’extension sont autorisés.
 
 >[!CAUTION]
 >
@@ -179,8 +182,8 @@ Then you set the `allowProxy` property on `foo` to true.
 1. Sélectionnez le dossier de bibliothèques clientes et cliquez ensuite sur **Créer > Créer un fichier**.
 1. Dans la zone du nom de fichier, saisissez l’un des noms suivants et cliquez ensuite sur OK :
 
-   * **`js.txt`**: Utilisez ce nom de fichier pour générer un fichier JavaScript.
-   * **`css.txt`**: Utilisez ce nom de fichier pour générer une feuille de style en cascade.
+   * **`js.txt`:**Utilisez ce nom de fichier pour générer un fichier JavaScript.
+   * **`css.txt`:**Utilisez ce nom de fichier pour générer une feuille de style en cascade.
 
 1. Ouvrez le fichier et saisissez le texte suivant pour identifier la racine du chemin d’accès des fichiers sources :
 
@@ -224,11 +227,11 @@ Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques q
 
 Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/app`. It is also a best practice to deny access for web site visitors to the `/app` folder. To satisfy both best practices, create a client library folder below the `/etc` folder that embeds the client library that is below `/app`.
 
-Utilisez la propriété categories pour identifier le dossier de bibliothèque client à incorporer. Pour incorporer la bibliothèque, ajoutez une propriété au nœud `cq:ClientLibraryFolder` d’intégration à l’aide des attributs de propriété suivants :
+Utilisez la propriété catégories pour identifier le dossier de bibliothèque client à incorporer. Pour incorporer la bibliothèque, ajoutez une propriété au nœud `cq:ClientLibraryFolder` d’intégration à l’aide des attributs de propriété suivants :
 
-* **** Nom : embed
+* **Nom :** embed
 * **Type :** Chaîne[]
-* **** Valeur : Valeur de la propriété categories du `cq:ClientLibraryFolder` noeud à incorporer.
+* **Valeur :** Valeur de la propriété catégories du `cq:ClientLibraryFolder` noeud à incorporer.
 
 #### Utilisation de l’incorporation pour réduire les requêtes {#using-embedding-to-minimize-requests}
 
@@ -301,9 +304,9 @@ Utilisez la propriété `channels` d’un dossier de bibliothèques clientes pou
 
 To associate a client library folder with a device group, add a property to your `cq:ClientLibraryFolder` node with the following attributes:
 
-* **** Nom : canaux
+* **Nom :** canaux
 * **Type :** Chaîne[]
-* **** Valeurs : Nom du groupe mobile. Pour exclure le dossier de bibliothèques d’un groupe, faites précéder son nom de domaine d’un point d’exclamation (« ! »).
+* **Valeurs :** Nom du groupe mobile. Pour exclure le dossier de bibliothèques d’un groupe, faites précéder son nom de domaine d’un point d’exclamation (« ! »).
 
 Par exemple, le tableau suivant répertorie la valeur de la propriété `channels` pour chaque dossier de bibliothèques clientes de la catégorie `cq.widgets` :
 
@@ -346,7 +349,7 @@ Vous pouvez choisir de configurer les préprocesseurs par bibliothèque cliente 
 
 * Vous pouvez également définir la configuration par défaut du système par le biais de la configuration OSGi du **Gestionnaire de bibliothèques HTML**.
 
-Une configuration de préprocesseur sur le noeud clientlib est prioritaire sur la configuration OSGI.
+Une configuration de préprocesseur sur le noeud clientlib prévaut sur la configuration OSGI.
 
 ### Format et exemples {#format-and-examples}
 
@@ -429,15 +432,15 @@ L’ouverture du fichier `publicmain.css` fait apparaître le code suivant :
 
 ### Détection de bibliothèques clientes {#discover-client-libraries}
 
-The `/libs/cq/ui/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/cq/ui/content/dumplibs` node has the component as a resource type. Pour ouvrir la page, utilisez l’URL suivante (utilisez un hôte et un port différents, le cas échéant) :
+The `/libs/cq/granite/components/dumplibs/dumplibs` component generates a page of information about all client library folders on the system. The `/libs/granite/ui/content/dumplibs` node has the component as a resource type. Pour ouvrir la page, utilisez l’URL suivante (en modifiant l’hôte et le port selon les besoins) :
 
-[https://localhost:4502/libs/cq/ui/content/dumplibs.test.html](https://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+`https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
 Les informations affichées sont le chemin d’accès à la bibliothèque et son type (CSS ou JS), ainsi que les valeurs des attributs de bibliothèque, tels que categories et dependencies. Les tableaux suivants présentent les bibliothèques dans chaque catégorie et canal.
 
 ### Affichage de la sortie générée {#see-generated-output}
 
-The `dumplibs` component includes a test selector that displays the source code that is generated for `ui:includeClientLib` tags. La page comprend du code pour différentes combinaisons d’attributs js, css et de thèmes.
+The `dumplibs` component includes a test selector that displays the source code that is generated for `ui:includeClientLib` tags. La page comprend du code pour différentes combinaisons d’attributs js, css et thématiques.
 
 1. Appliquez l’une des méthodes suivantes pour ouvrir la page de sortie de test :
 
@@ -445,7 +448,7 @@ The `dumplibs` component includes a test selector that displays the source code 
 
    * Ouvrez l’URL suivante dans votre navigateur Web (utilisez un hôte et un port différents selon les besoins) :
 
-      [https://localhost:4502/libs/cq/ui/content/dumplibs.html](https://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
    La page par défaut affiche le résultat pour les balises ne comportant aucune valeur pour l’attribut categories.
 
 1. To see the output for a category, type the value of the client library&#39;s `categories` property and click **Submit Query**.
