@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+workflow-type: tm+mt
+source-wordcount: '2349'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +27,7 @@ Cette section décrit comment créer et gérer des pages avec Adobe Experience�
 >
 >Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et [des autorisations appropriés](/help/sites-administering/security.md#permissions) sur votre compte pour agir sur les pages, notamment pour créer, copier, déplacer, modifier et supprimer du contenu.
 >
->En cas de problèmes, contactez votre administrateur système.
+>En cas de problème, contactez votre administrateur système.
 
 >[!NOTE]
 >
@@ -32,10 +35,10 @@ Cette section décrit comment créer et gérer des pages avec Adobe Experience�
 
 ## Organisation du site web {#organizing-your-website}
 
-En tant qu’auteur, vous devez organiser votre site web dans AEM. Ceci implique de créer et de nommer vos pages de contenu afin que vous puissiez faire ce qui suit :
+En tant qu’auteur, vous devez organiser votre site web dans AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
 
-* les trouver facilement dans l’environnement de création ;
-* les visiteurs sur votre site peuvent facilement les parcourir dans l’environnement de publication.
+* vous puissiez les trouver facilement dans l’environnement de création ;
+* les visiteurs sur votre site puissent facilement les parcourir dans l’environnement de publication.
 
 Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour organiser votre contenu.
 
@@ -43,7 +46,7 @@ La structure d’un site web peut être comparée à celle d’un arbre qui sou
 
 The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
 
-* Environnement d’auteur
+* environnement d’auteur
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Environnement de publication
@@ -77,22 +80,22 @@ Depending on the configuration of your instance, use of `/content` might be opti
  /...
 ```
 
-This structure can be viewed From the **Sites** console, where you can [navigate through the pages of your website](/help/sites-authoring/basic-handling.md#navigating) and perform actions on the pages. You can also create new sites and [new pages](#creating-a-new-page).
+Cette structure peut être visualisée à partir de la console **Sites**, dans laquelle vous pouvez [accéder aux pages de votre site web](/help/sites-authoring/basic-handling.md#navigating) et y effectuer des opérations. Vous pouvez également créer des sites et des [pages](#creating-a-new-page).
 
-A n’importe quel point, la branche ascendante est visible à partir du chemin de navigation dans la barre d’en-tête :
+À n’importe quel point, la branche ascendante est visible à partir du chemin de navigation dans la barre d’en-tête :
 
 ![caop-01](assets/caop-01.png)
 
-### Page Naming Conventions {#page-naming-conventions}
+### Conventions de dénomination des pages {#page-naming-conventions}
 
 Lors de la création d’une page, il y a deux champs clés :
 
-* **[Titre](#title)**:
+* **[Titre](#title)** :
 
-   * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification. 
+   * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification.
    * Ce champ est obligatoire.
 
-* **[Nom](#name)**:
+* **[Nom](#name)** :
 
    * Il est utilisé pour générer l’URI.
    * L’entrée utilisateur pour ce champ est facultative. Si le nom n’est pas spécifié, il est dérivé du titre. Consultez la section [Restrictions de nom de page et bonnes pratiques](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) pour plus d’informations.
@@ -101,15 +104,15 @@ Lors de la création d’une page, il y a deux champs clés :
 
 Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais ils sont associés :
 
-* lors de la création d&#39;une page, seul le champ **Titre** est requis. Si aucun **nom** n’est indiqué lors de la création de la page, AEM génère un nom à partir des 64 premiers caractères du titre (examinez la validation présentée ci-dessous). Seuls les 64 premiers caractères sont utilisés pour prendre en charge la bonne pratique définie pour les noms de page courts.
+* lors de la création d’une page, seul le champ **Titre** est requis. Si aucun **nom** n’est indiqué lors de la création de la page, AEM génère un nom à partir des 64 premiers caractères du titre (examinez la validation présentée ci-dessous). Seuls les 64 premiers caractères sont utilisés dans le cadre de la bonne pratique définie pour les noms de pages courts.
 
-* Si un nom de page est spécifié manuellement par l’auteur, la limite de 64 caractères ne s’applique pas, mais d’autres limitations techniques sur la longueur du nom de la page peuvent s&#39;appliquer.
+* Si un nom de page est spécifié manuellement par l’auteur, la limite de 64 caractères ne s’applique pas, mais d’autres limitations techniques sur la longueur du nom de la page peuvent s’appliquer.
 
 >[!NOTE]
 >
->Lorsque vous définissez un nom de page, une règle de base à respecter consiste à conserver le nom de la page court mais aussi significatif que possible pour faciliter la compréhension du lecteur. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
+>Lorsque vous définissez un nom de page, une règle de base à respecter consiste à faire en sorte que le nom de la page reste court, mais aussi significatif que possible pour faciliter la compréhension du lecteur. Consultez le [Guide de style W3C](https://www.w3.org/Provider/Style/TITLE.html) sur l’élément `title` pour obtenir des informations supplémentaires.
 
->N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique de garder les noms de page courts.
+>N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique de garder les noms de pages courts.
 >
 Lors de la création d’une page, AEM [valide le nom de la page en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
@@ -128,7 +131,7 @@ Si AEM est exécuté sur un [déploiement de gestionnaire de persistance MongoMK
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Par exemple :
+Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom**[ de la page de cette chaîne et valide le nom en fonction des conventions imposées par AEM et JCR. ](/help/sites-developing/naming-conventions.md) A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -137,7 +140,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 #### Nom {#name}
 
-Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsqu’AEM détecte des caractères incorrects, le champ est mis en surbrillance avec un message d’explication.
+Si vous indiquez un **nom** de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR. [](/help/sites-developing/naming-conventions.md) Vous ne pouvez pas utiliser de caractères non valides dans le champ **Nom**. Lorsqu’AEM détecte des caractères incorrects, le champ est mis en surbrillance avec un message d’explication.
 
 ![caop-02](assets/caop-02.png)
 
@@ -163,7 +166,7 @@ Utilisé lors de l’attribution du nom de la page.
 Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 >[!NOTE]
-Si cette option est configurée sur votre instance, [les auteurs de modèles peuvent créer des modèles avec l’Éditeur de modèles](/help/sites-authoring/templates.md).
+Si cette option est configurée sur votre instance, [les auteurs de modèles peuvent créer des modèles avec l’éditeur de modèles](/help/sites-authoring/templates.md).
 
 ### Composants {#components}
 
@@ -192,24 +195,24 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
    ![caop-03](assets/caop-03.png)
 
-1. A la première étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
+1. À la première étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Sélectionnez le modèle à utiliser pour créer la page, puis cliquez ou appuyez sur **Suivant** pour poursuivre.
 
-   * Cliquez ou appuyez sur **Annuler** pour interrompre le processus.
+   * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
    ![caop-04](assets/caop-04.png)
 
-1. A l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
+1. À l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Utilisez les trois onglets pour accéder aux [propriétés de la page](/help/sites-authoring/editing-page-properties.md) à attribuer à la nouvelle page, puis cliquez ou appuyez sur **Créer** pour réellement créer la page.
 
    * Cliquez ou appuyez sur **Précédent** pour revenir au choix du modèle.
    Les champs clés sont les suivants :
 
-   * **Titre**:
+   * **Titre** :
 
       * Ce champ s’affiche pour l’utilisateur et est obligatoire.
-   * **Nom**:
+   * **Nom** :
 
       * Il est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
       * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
@@ -222,12 +225,12 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
    ![caop-05](assets/caop-05.png)
 
-1. Cliquez ou appuyez sur **Créer** pour terminer le processus et créer la page. La boîte de dialogue de confirmation vous demande si vous souhaitez **ouvrir** immédiatement la page ou revenir à la console (**Terminé**) : 
+1. Cliquez ou appuyez sur **Créer** pour terminer le processus et créer la page. La boîte de dialogue de confirmation vous demande si vous souhaitez **ouvrir** immédiatement la page ou revenir à la console (**Terminé**) :
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    >[!NOTE]
-   Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. For example if `winter` already exists a new page will become `winter0`.
+   Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, le nom de la nouvelle page sera `winter0`.
 
 1. Si vous revenez à la console, la nouvelle page est présentée :
 
@@ -244,9 +247,9 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 1. Accédez à la page que vous souhaitez modifier.
 1. Sélectionnez votre page à l’aide de l’une des fonctionnalités suivantes :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) et la barre d’outils
-   And then select the **Edit** icon:
+   Sélectionnez ensuite l’icône **Modifier** :
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
 
@@ -255,14 +258,14 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 >[!NOTE]
 L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
-### Copie et collage d’une page {#copying-and-pasting-a-page}
+### Copier et coller une page  {#copying-and-pasting-a-page}
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
 1. Dans la console **Sites**, accédez à la page que vous souhaitez copier.
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) et la barre d’outils
    Sélectionnez ensuite l’icône de page **Copier** :
 
@@ -272,14 +275,18 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    En mode de sélection, cette page est fermée dès qu’elle est copiée.
 
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
-1. Utilisez l’icône de page **Coller** :
+1. L’icône **Coller** est disponible avec une flèche déroulante directement à droite :
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![Coller](assets/paste-without-children.png)
 
-   Une copie de la page originale et de toutes les sous-pages est créée à cet emplacement.
+   Vous pouvez effectuer l’une des actions suivantes :
+   * Sélectionner l’icône de page **Coller** : une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
+   * Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
+   >[!NOTE]
+   L’option **Coller sans enfants** est disponible dans [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
 
    >[!NOTE]
-   Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà `winter` deviendra `winter1`.
+   Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
 ### Déplacement ou changement de nom d’une page {#moving-or-renaming-a-page}
 
@@ -300,7 +307,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 1. Accédez à la page que vous souhaitez déplacer.
 1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) et la barre d’outils
    Sélectionnez ensuite l’icône de page **Déplacer** :
 
@@ -312,19 +319,19 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez/appuyez sur **Suivant** pour poursuivre.
 
-   * Cliquez ou appuyez sur **Annuler** pour interrompre le processus.
+   * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
    ![caop-07](assets/caop-07.png)
 
    Le nom de la page peut être conservé si vous déplacez uniquement la page.
 
    >[!NOTE]
-   Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà `winter` deviendra `winter1`.
+   Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
 1. À l’étape **Sélectionner la destination** de l’assistant, effectuez l’une des opérations suivantes :
 
    * Utilisez le [mode Colonnes](/help/sites-authoring/basic-handling.md#column-view) pour accéder au nouvel emplacement de la page :
 
-      * Sélectionnez la destination en cliquant sur la miniature de la destination. 
+      * Sélectionnez la destination en cliquant sur sa miniature.
       * Cliquez sur **Suivant** pour continuer.
    * Utilisez la commande **Précédent** pour revenir à l’étape de spécification du nom de la page.
    >[!NOTE]
@@ -333,9 +340,9 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
-   Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà `winter` deviendra `winter1`.
+   Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
-1. Si la page est liée ou référencée, ou si elle a été publiée, les détails seront répertoriés dans l’étape **Adapter/Republier**.
+1. Si la page est liée ou référencée, ou si elle a été publiée, les détails seront répertoriés dans l’étape **Ajuster/republier**.
 
    Vous pouvez indiquer quelles pages sont les pages à adapter et/ou à republier.
 
@@ -347,10 +354,10 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 1. Sélectionnez **Déplacer** pour terminer le processus et déplacer ou renommer votre page.
 
 >[!NOTE]
-Si la page a déjà été publiée, le déplacement de la page en annule automatiquement la publication. Par défaut, la page est republiée une fois le déplacement terminé, mais ce comportement peut être modifié en désélectionnant le champ **Republier** de l’étape **Adapter/Republier**.
+Si la page a déjà été publiée, le déplacement de la page annule automatiquement la publication. Par défaut, la page est republiée une fois le déplacement terminé, mais ce comportement peut être modifié en désélectionnant le champ **Republier** de l’étape **Adapter/Republier**.
 
 >[!NOTE]
-Si la page n’est pas référencée, les étapes **Régler/Republier** sont ignorées.
+Si la page n’est pas référencée, les étapes **Ajuster/republier** sont ignorées.
 
 ### Suppression d’une page {#deleting-a-page}
 
@@ -360,7 +367,7 @@ Si la page n’est pas référencée, les étapes **Régler/Republier** sont ign
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Par mesure de sécurité, l’icône de page **Supprimer** n’est pas disponible en tant qu’action rapide.
+   Par mesure de sécurité, l’icône **Supprimer la page** n’est pas disponible en tant qu’action rapide.
 
 1. Une boîte de dialogue de confirmation s’affiche. Utilisez :
 
@@ -375,11 +382,11 @@ Si une page est déjà publiée, la publication est automatiquement annulée ava
 
 ### Verrouillage d’une page {#locking-a-page}
 
-Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-authoring/editing-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est ou non verrouillée.
+Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-authoring/editing-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est verrouillée ou non.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
-### Creating a New Folder {#creating-a-new-folder}
+### Création d’un dossier {#creating-a-new-folder}
 
 Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 
@@ -388,8 +395,8 @@ Les dossiers doivent eux aussi respecter les [conventions de dénomination des p
 
 >[!CAUTION]
 * Les dossiers ne peuvent être créés que sous **Sites** ou sous d’autres dossiers. Ils ne peuvent pas être créés sous une page.
-* Les actions standard peuvent déplacer, copier, coller, supprimer, publier, annuler la publication et afficher/modifier les propriétés d’un dossier.
-* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
+* Les opérations standard (déplacer, copier, coller, supprimer, publier, annuler la publication et afficher/modifier les propriétés) peuvent être effectuées sur un dossier.
+* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
 
 
 
