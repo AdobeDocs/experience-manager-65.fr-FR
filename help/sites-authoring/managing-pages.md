@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2350'
 ht-degree: 93%
 
 ---
@@ -283,7 +283,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    * Sélectionner l’icône de page **Coller** : une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
    * Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
    >[!NOTE]
-   L’option **Coller sans enfants** est disponible dans [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
+   L’option **Coller sans enfants** est disponible à partir d’ [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) à partir de.
 
    >[!NOTE]
    Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
