@@ -1,6 +1,6 @@
 ---
-title: Votre boîte de réception
-seo-title: Votre boîte de réception
+title: 'Votre boîte de réception  '
+seo-title: 'Votre boîte de réception  '
 description: Gestion de vos tâches à l’aide de la boîte de réception
 seo-description: Gestion de vos tâches à l’aide de la boîte de réception
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,12 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 83%
 
 ---
 
 
-# Votre boîte de réception{#your-inbox}
+# Votre boîte de réception  {#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets. Ces notifications peuvent par exemple concerner les éléments suivants :
 
@@ -24,7 +27,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris d
    * ces notifications peuvent également être créées à différents endroits de l’interface utilisateur AEM, par exemple, sous **Projets** ;
    * elles peuvent être générées par l’étape **Créer une tâche** ou **Créer une tâche de projet** d’un workflow.
 
-* Workflows:
+* Workflows :
 
    * tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page ;
 
@@ -40,7 +43,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 
 >[!NOTE]
 >
->Pour plus d’informations sur les types d’élément, voir aussi :
+>Pour plus d’informations sur les types d’éléments, voir aussi :
 >
 >* [Projets](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projets – Utilisation des tâches](/help/sites-authoring/task-content.md)
@@ -69,13 +72,13 @@ AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d
 * Autoriser la collecte de statistiques d’utilisation agrégées
 * [Configurer HTTPS](/help/sites-administering/ssl-by-default.md)
 
-## Ouverture de la boîte de réception {#opening-the-inbox}
+## Ouverture de la boîte de réception   {#opening-the-inbox}
 
 Pour ouvrir la boîte de réception des notifications AEM :
 
 1. Cliquez/appuyez sur l’indicateur dans la barre d’outils.
 
-1. Sélectionnez **Tout afficher**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments issus des processus, des projets et des tâches.
+1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la [Vue Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
 
    Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux modes ; les options disponibles dépendent du mode actif.
@@ -84,7 +87,7 @@ Pour ouvrir la boîte de réception des notifications AEM :
 
 >[!NOTE]
 >
->La boîte de réception fonctionne comme une console. Utilisez donc la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) ou la [recherche](/help/sites-authoring/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
+>La boîte de réception fonctionne comme une console. Vous pouvez ainsi utiliser la [navigation globale](/help/sites-authoring/basic-handling.md#global-navigation) ou la fonction de [recherche](/help/sites-authoring/search.md) pour accéder à un autre emplacement lorsque vous avez terminé.
 
 ### Boîte de réception – Mode Liste {#inbox-list-view}
 
@@ -118,8 +121,8 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    Pour le **mode Calendrier**, vous pouvez configurer les paramètres suivants :
 
    * **Regrouper par**
-   * **Planning** ou **Aucun**
-   * **Taille des cartes** 
+   * **Planification** ou **Aucun**
+   * **Taille des cartes**
    ![wf-92](assets/wf-92.png)
 
 * **Mode Liste**
@@ -134,25 +137,30 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
 L’option Contrôle d’administration permet aux administrateurs d’effectuer les opérations suivantes :
 
-* Personnaliser le texte et le logo de l’en-tête
+* Personnaliser le texte et le logo de l&#39;en-tête
 
-* Contrôle de l’affichage des liens de navigation disponibles dans l’en-tête
+* Contrôler l&#39;affichage des liens de navigation disponibles dans l&#39;en-tête
 
-L’option Contrôle d’administration n’est visible que pour les membres du groupe des administrateurs ou des administrateurs de processus.
+L’option Contrôle d’administration n’est visible que pour les membres des administrateurs ou du groupe d’administrateurs de processus.
 
 ![admin-control](assets/admin-control.png)
 
 * **Personnalisation de l’identité graphique**
 
-   * **Personnaliser le texte de l’en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
+   * **Personnaliser le texte de l&#39;en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
 
-   * **Personnaliser le logo :** Spécifiez l’image à afficher dans l’en-tête sous forme de logo. Téléchargez une image dans Digital Asset Management (DAM) et référencez-la dans le champ.
+   * **Personnaliser le logo :** Spécifiez l’image à afficher dans l’en-tête sous forme de logo. Téléchargez une image dans le module de gestion des actifs numériques (DAM) et référencez-la dans le champ.
 
 * **Navigation de l’utilisateur**
-   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte d’Adobe Experience Manager.
+   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et des options de création disponibles lorsque vous appuyez sur le logo ou le texte d’Adobe Experience Manager.
 * **Enregistrer :** Appuyez/cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
+
+>[!NOTE]
+>
+>Bien qu’il soit possible de sélectionner plusieurs éléments, des actions ne peuvent être entreprises que sur un seul élément à la fois.
+
 
 1. Pour agir sur un élément, sélectionnez la miniature de l’élément souhaité. Les icônes des actions applicables à cet élément apparaissent dans la barre d’outils :
 
@@ -160,7 +168,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
    Les actions disponibles varient selon l’élément et incluent les opérations suivantes :
 
-   * **Terminer** l’opération ; par exemple une tâche ou un élément de workflow.
+   * **Terminer** l’action; par exemple, une tâche ou un élément de processus.
    * **Réaffecter**/**Déléguer** un élément.
    * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 
@@ -174,7 +182,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
    >
    >Pour plus d’informations, voir :
    >
-   >* Éléments de workflow –[Participation aux workflows](/help/sites-authoring/workflows-participating.md)
+   >* Éléments de workflow – [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
 
 
 1. Une action démarre en fonction de l’élément sélectionné ; par exemple :
@@ -200,7 +208,7 @@ Vous pouvez créer des tâches directement à partir de la boîte de réception�
 1. Sélectionnez **Créer**, puis **Tâche**.
 1. Renseignez les champs nécessaires dans les onglets **De base** et **Avancé** ; seul le champ **Titre** est obligatoire, tous les autres sont facultatifs :
 
-   * **De base**:
+   * **De base** :
 
       * **Titre**
       * **Projet**
@@ -227,7 +235,7 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
 
    >[!NOTE]
    >
-   >Only tasks created using the **Create** option of the **Inbox** can be used to create a project.
+   >Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
    >
    >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
@@ -267,5 +275,5 @@ Vous pouvez filtrer les éléments répertoriés :
 
    >[!NOTE]
    >
-   >En [mode Liste](#inbox-list-view), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-view-settings).
+   >En [mode Liste](#inbox-view-settings), vous pouvez également configurer l’ordre de tri dans les [paramètres d’affichage](#inbox-list-view).
 
