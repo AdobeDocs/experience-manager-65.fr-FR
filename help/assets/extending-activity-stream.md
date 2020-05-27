@@ -1,20 +1,23 @@
 ---
-title: Intégration des ressources au flux d’activité
-description: Décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
+title: Intégration des ressources au flux d’activités
+description: Décrit les fonctionnalités d’enregistrement d’Experience Manager et comment le configurer pour enregistrer des événements spécifiques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 51%
 
 ---
 
 
 # Integrate Assets with activity stream {#integrating-assets-with-activity-stream}
 
-Les utilisateurs d’Adobe Experience Manager (AEM) Assets exécutent de nombreuses actions, telles que la création, le téléchargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’AEM ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
+Les utilisateurs d’Adobe Experience Manager Assets effectuent de nombreuses actions, telles que la création, le téléchargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’Experience Manager et comment configurer Experience Manager pour enregistrer des événements spécifiques.
 
 ## Performance considerations and default behavior {#performance-considerations-and-default-behavior}
 
-Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. C’est pourquoi l’intégration des ressources AEM au flux d’activités est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. C’est pourquoi l’intégration des ressources au flux d’Activités est désactivée par défaut.
 
 ## Supported action events {#supported-action-events}
 
@@ -36,9 +39,9 @@ Il est possible de configurer l’enregistrement des événements suivants :
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
 * Sous-ressource supprimée (SUBASSET_REMOVED)
 
-## Configure AEM Assets events recording {#configuring-aem-assets-events-recording}
+## Configuration de l’enregistrement des événements d’actifs {#configuring-aem-assets-events-recording}
 
-The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the AEM Assets Event Recorder tuning. Pour configurer l’enregistreur d’événements AEM Assets, procédez comme suit :
+The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the Assets Event Recorder tuning. Pour configurer l’enregistreur de Événement des ressources, procédez comme suit :
 
 1. Navigate to the **[!UICONTROL Web Console]**
 
@@ -52,6 +55,6 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Evénements enregistrés en lecture {#reading-recorded-events}
+## Lire les événements enregistrés {#reading-recorded-events}
 
 Les événements enregistrés sont stockés en tant qu’activités. You can read them programmatically using the [ActivityManager API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
