@@ -3,9 +3,9 @@ title: API HTTP Assets in [!DNL Adobe Experience Manager].
 description: Créez, lisez, mettez à jour, supprimez et gérez des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1566'
 ht-degree: 36%
 
 ---
@@ -64,7 +64,7 @@ Les dossiers **Liens** présentent trois liens :
 Dans Experience Manager, un fichier contient les éléments suivants :
 
 * Propriétés et métadonnées de la ressource.
-* Plusieurs rendus tels que le rendu d’origine (qui est la ressource transférée initialement), une vignette et divers autres rendus. D’autres rendus peuvent être des images de tailles différentes, des encodages vidéo différents ou des pages extraites de fichiers PDF ou Adobe InDesign.
+* Plusieurs rendus tels que le rendu d’origine (qui est la ressource transférée initialement), une vignette et divers autres rendus. Additional renditions may be images of different sizes, different video encodings, or extracted pages from PDF or [!DNL Adobe InDesign] files.
 * Commentaires facultatifs.
 
 For information about elements in Content Fragments see [Content Fragments Support in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
