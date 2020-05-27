@@ -3,7 +3,10 @@ title: Gestion des balises intelligentes et des recherches
 description: Mettez à jour ou supprimez les balises actives inexactes afin d’améliorer la pertinence des balises.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 70%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 TBD: This article should be merged into a new, uber article for Smart Tags. Delete this article then. Cloud service article is merged.
 -->
 
-Vous pouvez traiter les balises intelligentes pour supprimer les balises inexactes qui ont pu être attribuées aux images de votre marque afin que seules les balises les plus pertinentes soient affichées.
+Vous pouvez traiter les balises actives pour supprimer les balises inexactes qui ont pu être attribuées à vos images de marque afin que seules les balises les plus pertinentes s’affichent.
 
 La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images non pertinentes apparaissent dans les résultats de la recherche.
 
@@ -28,9 +31,9 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Accédez à la page Propriétés de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-## Comprendre les résultats de recherche AEM avec des balises dynamiques   {#understandsearch}
+## Comprendre les résultats de recherche d’Experience Manager avec des balises actives {#understandsearch}
 
-Par défaut, la recherche AEM associe les termes de recherche avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de
+By default, Experience Manager search combines the search terms with an `AND` clause. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées.
 
