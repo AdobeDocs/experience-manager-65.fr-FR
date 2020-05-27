@@ -1,23 +1,23 @@
 ---
 title: Rapports sur vos ressources numériques
-description: Comprenez les rapports sur vos ressources dans AEM Assets qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Comprenez les rapports sur vos ressources dans les ressources Adobe Experience Manager qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 70%
+source-wordcount: '976'
+ht-degree: 62%
 
 ---
 
 
 # Rapports de ressources  {#asset-reports}
 
-La création de rapports de ressources est un outil essentiel pour évaluer l’utilité de votre déploiement Adobe Experience Manager (AEM) Assets. Avec AEM Assets, vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
+Le rapports des ressources est un outil essentiel pour évaluer l’utilité de votre déploiement des ressources Adobe Experience Manager. Avec Ressources, vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
-Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’AEM Assets au sein de votre entreprise et par les clients.
+Utilisez les informations contenues dans les rapports pour dériver des mesures de réussite clés afin de mesurer l’adoption des ressources au sein de votre entreprise et par les clients.
 
-La structure de rapports AEM Assets utilise les tâches Sling pour traiter les demandes de rapports de manière asynchrone et ordonnée. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
+La structure du rapports Ressources utilise les tâches Sling pour traiter les demandes de rapports de manière asynchrone et ordonnée. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
@@ -25,7 +25,7 @@ Si un rapport est généré, vous êtes averti par un courrier électronique (fa
 
 ## Génération de rapports {#generate-reports}
 
-AEM Assets génère les rapports standard suivants :
+Experience Manager Assets génère pour vous les rapports standard suivants :
 
 * Charger
 * Téléchargement
@@ -37,7 +37,7 @@ AEM Assets génère les rapports standard suivants :
 * Fichiers
 * Partage de liens
 
-Les administrateurs d’AEM peuvent facilement générer et personnaliser ces rapports pour votre implémentation. Un administrateur peut procéder comme suit pour générer un rapport :
+Les administrateurs d’Experience Manager peuvent facilement générer et personnaliser ces rapports pour votre mise en oeuvre. Un administrateur peut procéder comme suit pour générer un rapport :
 
 1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
    ![](assets/AssetsReportNavigation.png)
@@ -79,7 +79,7 @@ Les administrateurs d’AEM peuvent facilement générer et personnaliser ces ra
 
    ![](assets/files_report.png)
 
-   Le rapport **[!UICONTROL Partage de liens]** affiche des URL vers des ressources partagées avec des utilisateurs externes à partir d’AEM Assets. Celui-ci comprend les ID de courrier électronique de l’utilisateur qui a partagé les ressources, les ID de courrier électronique des utilisateurs avec lesquels les ressources sont partagées, la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within Assets. Celui-ci comprend les ID de courrier électronique de l’utilisateur qui a partagé les ressources, les ID de courrier électronique des utilisateurs avec lesquels les ressources sont partagées, la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
