@@ -2,17 +2,17 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur d’AEM 6.5 Assets
+user-guide-title: Guide de l’utilisateur des ressources d’Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '636'
 ht-degree: 54%
 
 ---
 
 
-# AEM 6.5 Assets User Guide {#assets}
+# Guide de l’utilisateur des ressources d’Experience Manager 6.5 {#assets}
 
 + [[!DNL Assets] guide de l&#39;utilisateur](home.md)
 + [Notes de mise à jour d’AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
@@ -153,7 +153,7 @@ ht-degree: 54%
    + [Opérations asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
-   + [Activation des informations sur les ressources via la gestion dynamique des balises](touch-ui-using-dtm-for-asset-insights.md)
+   + [Activation des informations sur les ressources via Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
    + [Configuration des informations sur les ressources](touch-ui-configuring-asset-insights.md)
    + [Archivage et extraction de fichiers](check-out-and-submit-assets.md)
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
