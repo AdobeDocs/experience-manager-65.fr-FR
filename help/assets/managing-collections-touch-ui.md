@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 70%
+source-wordcount: '2215'
+ht-degree: 68%
 
 ---
 
@@ -183,7 +183,7 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
 
 ## Recherche de collections {#searching-collections}
 
-Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omnisearch, AEM Assets recherche les noms des collections, les métadonnées et les balises ajoutées aux collections.
+Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omnisearch, Assets recherche les noms de collection, les métadonnées et les balises ajoutées aux collections.
 
 Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
 
@@ -191,7 +191,7 @@ Si vous recherchez des collections à partir du niveau supérieur, seules les co
 
 Dans la console Collections, cliquez sur une collection pour l’ouvrir.
 
-Dans une collection, la recherche AEM Assets se limite aux ressources (ainsi qu’aux balises et métadonnées) de la collection en cours d’affichage. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
+Au sein d’une collection, la recherche Experience Manager est limitée aux ressources (ainsi qu’à leurs balises et métadonnées) au sein de la collection que vous visualisez. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
 
 ## Modification des paramètres d’une collection {#editing-collection-settings}
 
