@@ -1,10 +1,13 @@
 ---
-title: Réglage des performances pour [!DNL Adobe Experience Manager Assets].
-description: Suggestions et conseils sur la configuration de [!DNL Experience Manager], les modifications apportées aux composants matériels, logiciels et réseau afin de supprimer les goulets d’étranglement et d’optimiser les performances de [!DNL Experience Manager Assets].
+title: Performance tuning for [!DNL Adobe Experience Manager Assets].
+description: Suggestions et conseils [!DNL Experience Manager] sur la configuration, les modifications apportées au matériel, aux logiciels et aux composants réseau afin de supprimer les goulets d'étranglement et d'optimiser les performances [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '2723'
+ht-degree: 55%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 # [!DNL Adobe Experience Manager Assets] guide de réglage des performances {#assets-performance-tuning-guide}
 
-Une [!DNL Experience Manager Assets] configuration contient un certain nombre de composants matériels, logiciels et réseau. Selon votre scénario de déploiement, vous pouvez avoir besoin d’apporter des modifications spécifiques à la configuration des composants matériels, logiciels et réseau pour supprimer les goulots d’étranglement en termes de performances.
+Une [!DNL Experience Manager Assets] configuration contient plusieurs composants matériels, logiciels et réseau. Selon votre scénario de déploiement, vous pouvez avoir besoin d’apporter des modifications spécifiques à la configuration des composants matériels, logiciels et réseau pour supprimer les goulots d’étranglement en termes de performances.
 
 In addition, identifying and adhering to certain hardware and software optimization guidelines helps build a sound foundation that enables your [!DNL Experience Manager Assets] deployment to meet expectations around performance, scalability, and reliability.
 
@@ -25,11 +28,11 @@ Voici quelques éléments principaux essentiels pour lesquels vous devez identif
 
 ## Plate-forme {#platform}
 
-Bien que Experience Manager soit pris en charge sur plusieurs plates-formes, Adobe a trouvé la meilleure prise en charge des outils natifs sous Linux et Windows, ce qui contribue à des performances optimales et à la facilité d’implémentation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Comme pour tout déploiement d’Experience Manager, vous devez implémenter TarMK chaque fois que possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
+Bien que Experience Manager soit pris en charge sur plusieurs plates-formes, Adobe a trouvé la meilleure prise en charge des outils natifs sous Linux et Windows, ce qui contribue à des performances optimales et à la facilité d’implémentation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Comme pour tout déploiement d’Experience Manager, vous devez implémenter TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
 
 ### Dossier temporaire {#temp-folder}
 
-Pour améliorer les temps de transfert des ressources, utilisez des  hautes performances  pour le répertoire temporaire Java. Sous Linux et Windows, un disque SSD ou RAM peut être utilisé. Dans des environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
+Pour améliorer les temps de transfert des ressources, utilisez un enregistrement hautement performant pour le répertoire temporaire Java. Sous Linux et Windows, un disque SSD ou RAM peut être utilisé. Dans des environnements cloud, un type de stockage à grande vitesse équivalent peut être utilisé. For example in Amazon EC2, an [ephemeral drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) drive can be used for the temporary folder.
 
 En supposant que le serveur dispose de suffisamment de mémoire, configurez un disque RAM. Sous Linux, exécutez les commandes suivantes pour créer un disque RAM de 8 Go :
 
@@ -40,7 +43,7 @@ mkfs -q /dev/ram1 800000
  df -H | grep aem-tmp
 ```
 
-Sous Windows OS, utilisez un pilote tiers pour créer un lecteur RAM ou utilisez simplement des  hautes performances tels que SSD.
+Sous Windows OS, utilisez un pilote tiers pour créer un lecteur RAM ou utilisez simplement un enregistrement hautes performances tel que SSD.
 
 Once the high performance temporary volume is ready, set the JVM parameter `-Djava.io.tmpdir`. For example, you could add the JVM parameter below to the `CQ_JVM_OPTS` variable in the `bin/start` script of [!DNLExperience Manager]:
 
@@ -54,7 +57,7 @@ Adobe recommande le déploiement [!DNL Experience Manager Assets] sur Java 8 pou
 
 >[!NOTE]
 >
->Oracle a cessé de publier les mises à jour pour Java 7 à compter d’avril 2015.
+>Oracle a arrêté de publier les mises à jour de Java 7 à compter d&#39;avril 2015.
 
 ### Paramètres JVM    {#jvm-parameters}
 
@@ -115,7 +118,7 @@ Adobe recommande d’activer HTTPS, car de nombreuses entreprises qui possèdent
 
 Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNLExperience Manager] instance. Les options de configuration courantes, notamment les pare-feu ou les proxys, peuvent améliorer les performances du réseau. Voici quelques points essentiels à prendre en compte :
 
-* En fonction du type d’instance (petit, modéré, grand), assurez-vous que vous disposez d’une bande passante réseau suffisante pour votre instance Experience Manager. Adequate bandwidth allocation is especially important if [!DNLExperience Manager] is hosted on AWS.
+* En fonction du type d’instance (petit, modéré, grand), veillez à disposer d’une bande passante réseau suffisante pour votre instance Experience Manager. Adequate bandwidth allocation is especially important if [!DNLExperience Manager] is hosted on AWS.
 * If your [!DNLExperience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Augmentez la taille de l’instance si les utilisateurs prévoient une charge élevée. Réduisez-la pour une charge moyenne/faible.
 * HTTPS : la plupart des utilisateurs possèdent des pare-feu qui analysent le trafic HTTP, ce qui est susceptible d’avoir une incidence sur le chargement des fichiers ou même endommager des fichiers lors de l’opération de chargement.
 * Chargements volumineux : assurez-vous que les utilisateurs disposent d’une connexion filaire au réseau (les connexions Wi-Fi sont rapidement saturées).
@@ -126,9 +129,9 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. Le paramètre réduit considérablement les surcharges nécessaires pour traiter les workflows car, dans ce cas, ils n’ont pas besoin de faire l’objet d’un suivi et de processus d’archivage classiques.
 
-1. Accédez à `/miscadmin` l’instance [!DNLEExperience Manager] à l’adresse `https://[aem_server]:[port]/miscadmin`.
+1. Accédez à `/miscadmin` l’instance [!DNLEExperience Manager] à `https://[aem_server]:[port]/miscadmin`.
 
-1. Développez **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]** > **[!UICONTROL Barrage.]**
+1. Développez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL dam.]**
 
 1. Open **[!UICONTROL DAM Update Asset]**. Depuis le panneau d’outils flottant, basculez vers l’onglet **[!UICONTROL Page]**, puis cliquez sur **[!UICONTROL Propriétés de la page]**.
 
@@ -140,7 +143,7 @@ Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. 
 
 In cases where transient workflows cannot be used, run workflow purging regularly to delete archived [!UICONTROL DAM Update Asset] workflows to ensure system performance does not degrade.
 
-En règle générale, exécutez le  de purge chaque semaine. Cependant, dans les scénarios nécessitant beaucoup de ressources, comme lors de l’ingestion d’actifs à grande échelle, vous pouvez l’exécuter plus fréquemment.
+En règle générale, exécutez les workflows de purge sur une base hebdomadaire. Cependant, dans les scénarios à forte intensité de ressources, comme lors de l’assimilation à grande échelle d’actifs, vous pouvez l’exécuter plus fréquemment.
 
 Pour configurer la purge des workflows, ajoutez une nouvelle configuration de purge de workflow d’Adobe Granite via la console OSGi. Configurez et planifiez ensuite le workflow dans le cadre de la période de maintenance hebdomadaire.
 
@@ -152,7 +155,7 @@ For example, after executing numerous non-transient workflows (that creates work
 
 By default, [!DNLExperience Manager] runs a maximum number of parallel jobs equal to the number of processors on the server. The problem with this setting is that during periods of heavy load, all of the processors are occupied by [!UICONTROL DAM Update Asset] workflows, slowing down UI responsiveness and preventing [!DNLExperience Manager] from running other processes that safeguard server performance and stability. En tant que bonne pratique, définissez cette valeur sur la moitié des processeurs disponibles sur le serveur en procédant comme suit :
 
-1. Dans [!DNLEExperience Manager] Author, accédez `https://[aem_server]:[port]/system/console/slingevent`.
+1. Dans [!DNLEExperience Manager] Author, accédez à `https://[aem_server]:[port]/system/console/slingevent`.
 
 1. Click **[!UICONTROL Edit]** on each workflow queue that is relevant to your implementation, for example **[!UICONTROL Granite Transient Workflow Queue]**.
 
@@ -162,7 +165,7 @@ Configurer une file d’attente à la moitié des processeurs disponibles est un
 
 ### Configuration des ressources de mise à jour de gestion des ressources numériques {#dam-update-asset-configuration}
 
-The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and InDesign Server integration. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
+The [!UICONTROL DAM Update Asset] workflow contains a full suite of steps that are configured for tasks, such as Scene7 PTIFF generation and [!DNL Adobe InDesign Server] integration. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe recommends you create a custom copy of the [!UICONTROL DAM Update Asset] workflow model, and remove any unnecessary steps. In this case, update the launchers for [!UICONTROL DAM Update Asset] to point to the new model.
 
 Running the [!UICONTROL DAM Update Asset] workflow intensively can sharply increase the size of your file datatastore. Les résultats d’un test effectué par Adobe ont montré que la taille de l’entrepôt de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont exécutés pendant une période de 8 heures.
 
@@ -207,9 +210,9 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 
 >[!NOTE]
 >
->Les fichiers ImageMagick `policy.xml` et `configure.xml` les fichiers sont disponibles à la `/usr/lib64/ImageMagick-&#42;/config/` place de `/etc/ImageMagick/`.Voir la documentation [](https://www.imagemagick.org/script/resources.php) ImageMagick pour connaître l’emplacement des fichiers de configuration.
+>Les fichiers `policy.xml` et ImageMagick sont disponibles à la `configure.xml` place de `/usr/lib64/ImageMagick-&#42;/config/` .Voir la documentation `/etc/ImageMagick/`[](https://www.imagemagick.org/script/resources.php) ImageMagick pour connaître l’emplacement des fichiers de configuration.
 
-If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Contactez le représentant du service à la clientèle Adobe pour mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter les fichiers PSB haute résolution de plus de 3 000 x 2 3 000 pixels.
+If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Adressez-vous au représentant du service à la clientèle d’Adobe pour mettre en oeuvre ces meilleures pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ### Écriture différée XMP {#xmp-writeback}
 
@@ -252,10 +255,10 @@ Some optimizations can be done on the Oak index configurations that can help imp
 1. Ajouter une `String[]` propriété `excludedPaths` avec des valeurs `/var`, `/etc/workflow/instances`et `/etc/replication`.
 1. Accédez à `/oak:index/damAssetLucene`. Ajouter une `String[]` propriété `includedPaths` avec une valeur `/content/dam`. Enregistrez les modifications.
 
-Si vos utilisateurs n’ont pas besoin d’effectuer une recherche de texte intégral sur des fichiers, par exemple, en effectuant une recherche dans le texte du PDF, désactivez-le. Vous améliorez les performances de l’index en désactivant l’indexation en texte intégral. Pour désactiver le [!DNL Apache Lucene] texte  , procédez comme suit :
+Si vos utilisateurs n’ont pas besoin de rechercher des ressources en texte intégral, par exemple, en recherchant du texte dans des documents PDF, désactivez-le. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l’extraction [!DNL Apache Lucene] de texte, procédez comme suit :
 
 1. Dans [!DNL Experience Manager] l’interface, accédez à [!UICONTROL Package Manager].
-1. Téléchargez et installez le package disponible sur [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
+1. Téléchargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Paramètre guessTotal {#guess-total}
 
@@ -290,18 +293,18 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Run load tests against the [!DNL Experience Manager] instance.
 * Surveiller les performances de chargement et la réactivité de l’interface utilisateur.
 
-## [!DNL Experience Manager Assets] liste de contrôle des performances et impact des de gestion des actifs {#checklist}
+## [!DNL Experience Manager Assets] liste de contrôle des performances et impact des tâches de gestion des actifs {#checklist}
 
 * Autoriser HTTPS à contourner tous les renifleurs de trafic HTTP d’entreprise.
 * Utiliser une connexion câblée pour le chargement de ressources volumineuses.
 * Déploiement sur Java 8.
 * Définition de paramètres JVM optimaux.
-* Configurez une banque de données du système de fichiers ou une banque de données S3.
+* Configurez une banque de données de système de fichiers ou une banque de données S3.
 * Activer les workflows transitoires.
 * Régler les files d’attente de workflows Granite pour limiter les tâches concurrentes.
 * Configure [!DNL ImageMagick] to limit resource consumption.
 * Remove unnecessary steps from the [!UICONTROL DAM Update Asset] workflow.
 * Configurer la purge des workflows et versions.
-* Optimisez les index avec les derniers Service Pack et correctifs. Contactez le service à la clientèle Adobe pour toute optimisation d’index supplémentaire disponible.
+* Optimisez les index avec les derniers Service Pack et correctifs. Contactez le service à la clientèle d’Adobe pour connaître les optimisations d’index supplémentaires éventuellement disponibles.
 * Utilisez guessTotal afin d’optimiser les performances des requêtes.
 * If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.
