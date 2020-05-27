@@ -3,10 +3,10 @@ title: Étendre la fonctionnalité de recherche des ressources d’Adobe Experie
 description: Étendez les fonctionnalités de recherche des ressources Adobe Experience Manager au-delà des valeurs par défaut.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 81%
+source-wordcount: '859'
+ht-degree: 75%
 
 ---
 
@@ -35,7 +35,7 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 
 ## Ajouter des onglets {#adding-tabs}
 
-Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’administrateur AEM Assets. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’interface d’administration Ressources. Pour créer des onglets supplémentaires, procédez comme suit :
 
 1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
@@ -48,7 +48,7 @@ Vous pouvez ajouter d’autres onglets de recherche en les configurant dans l’
 
 [!DNL Assets] est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Customizing an Asset Share in this way is covered in [create and configure an Asset Share page](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-En plus d’utiliser des prédicats préexistants, les développeurs AEM peuvent créer leur propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
+In addition to using pre-existing predicates, Experience Manager developers can also create their own predicates using the [Query Builder API](/help/sites-developing/querybuilder-api.md).
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -296,6 +296,6 @@ Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigu
 
 ## Personnalisation des résultats de la recherche {#customizing-search-results}
 
-La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. AEM Assets est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. Experience Manager Assets est fourni avec un ensemble d’objectifs prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-En plus d’utiliser des loupes préexistantes, les développeurs AEM peuvent créer leur propres loupes.
+Outre l’utilisation d’objectifs préexistants, les développeurs d’Experience Manager peuvent également créer leurs propres objectifs.
