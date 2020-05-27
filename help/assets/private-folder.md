@@ -1,19 +1,19 @@
 ---
-title: Création et partage d’un dossier privé dans AEM
-description: Apprenez à créer un dossier privé dans Adobe Experience Manager (AEM) Assets, à le partager avec d’autres utilisateurs et à attribuer à ces derniers différents privilèges.
+title: Créez et partagez un dossier privé dans Adobe Experience Manager.
+description: Découvrez comment créer un dossier privé dans Adobe Experience Manager Assets et le partager avec d’autres utilisateurs et leur attribuer divers privilèges.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 63%
+source-wordcount: '506'
+ht-degree: 45%
 
 ---
 
 
 # Partage de dossiers privés {#private-folder-sharing}
 
-Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager (AEM) Assets un dossier privé qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+Vous pouvez créer un dossier privé dans l’interface utilisateur d’Adobe Experience Manager Assets qui vous est réservé. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
 >[!NOTE]
 >
@@ -46,15 +46,15 @@ Vous pouvez créer dans l’interface utilisateur d’Adobe Experience Manager
 
    >[!NOTE]
    >
-   >Vous pouvez affecter différents rôles (tels que Éditeur, Propriétaire ou Observateur) à l’utilisateur avec lequel vous partagez le dossier. Si vous attribuez un rôle Propriétaire à l’utilisateur, l’utilisateur possède des privilèges Éditeur sur le dossier. En outre, il peut partager le dossier avec d’autres utilisateurs. Si vous affectez le rôle Éditeur, l’utilisateur peut modifier les ressources situées dans votre dossier privé. Si vous affectez le rôle Observateur, l’utilisateur ne peut que consulter les ressources du dossier privé.
+   >Vous pouvez affecter différents rôles (tels que Éditeur, Propriétaire ou Observateur) à l’utilisateur avec lequel vous partagez le dossier. Si vous attribuez un rôle Propriétaire à l’utilisateur, l’utilisateur possède des privilèges Éditeur sur le dossier. En outre, il peut partager le dossier avec d’autres utilisateurs. Si vous affectez le rôle Éditeur, l’utilisateur peut modifier les ressources situées dans votre dossier privé. Si vous attribuez un rôle de lecteur de contenu, l’utilisateur peut uniquement vue les fichiers de votre dossier privé.
 
    >[!NOTE]
    >
    > Le dossier privé comporte au moins un membre doté du rôle Propriétaire. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants (et l’administrateur lui-même) du dossier privé, l’administrateur doit ajouter un autre utilisateur en tant que propriétaire.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**. En fonction du rôle affecté, l’utilisateur se voit attribuer un ensemble de privilèges sur votre dossier privé lorsqu’il se connecte à AEM Assets.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. En fonction du rôle que vous attribuez, l’utilisateur se voit attribuer un jeu de privilèges sur votre dossier privé lorsqu’il se connecte à Ressources.
 1. Cliquez sur **[!UICONTROL OK]** pour fermer le message de confirmation.
-1. L’utilisateur avec lequel vous partagez le dossier reçoit une notification de partage. Connectez-vous à AEM Assets à l’aide des informations d’identification de l’utilisateur pour afficher la notification.
+1. L’utilisateur avec lequel vous partagez le dossier reçoit une notification de partage. Connectez-vous à  Assets à l’aide des informations d’identification de l’utilisateur pour afficher la notification.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
