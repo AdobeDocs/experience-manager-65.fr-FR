@@ -3,10 +3,10 @@ title: Bibliothèque ITL
 description: Apprenez à configurer et à utiliser la bibliothèque de transcodage de l’imagerie (ou ITL, de l’anglais Imaging Transcoding Library) d’Adobe, une solution de traitement des images qui peut réaliser des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage et le redimensionnement des images.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 36%
+source-wordcount: '992'
+ht-degree: 37%
 
 ---
 
@@ -55,10 +55,10 @@ Les arguments de ligne de commande de la bibliothèque ITL peuvent inclure les �
 
 You can configure the following options for the `-resize` parameter:
 
-* `X`: `Works similar to AEM. For example -resize 319.`
-* `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-* `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-* `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
+* `X`: Fonctionne de la même manière qu’Experience Manager. Par exemple, -resize 319.
+* `WxH`: Le rapport L/H n’est pas conservé, par exemple `-resize 319x319`.
+* `Wx` : définit la largeur et calcule la hauteur en conservant le rapport d’aspect. Par exemple, `-resize 319x`.
+* `xH` : définit la hauteur et calcule la largeur en conservant le rapport d’aspect. Par exemple, `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -74,7 +74,7 @@ Pour configurer le traitement ITL, créez un fichier de configuration et mettez 
 
 Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibliothèques à l’aide des étapes suivantes. Vous avez besoin d’autorisations d’administrateur ou de root.
 
-1. Download the [Imaging Transcoding Library package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Le package est compatible avec AEM 6.5.
+1. Download the [Imaging Transcoding Library package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Le package est compatible avec Experience Manager 6.5.
 
 1. Pour connaître un ID d&#39;assemblage pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console Web et cliquez sur **[!UICONTROL OSGi > Bundles]**. Vous pouvez également ouvrir la console des lots en utilisant l’ `https://[aem_server:[port]/system/console/bundles/` URL d’accès. Localisez le `com.day.cq.dam.cq-dam-switchengine` lot et son ID.
 
@@ -92,7 +92,7 @@ Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibl
 
 1. Exécutez `ldconfig` la commande pour créer les liens et le cache nécessaires.
 
-1. Dans le compte utilisé pour début d’AEM, modifiez le `.bash_profile` fichier. Ajouter `LD_LIBRARY_PATH` en ajoutant ce qui suit.
+1. Dans le compte utilisé pour début d’Experience Manager, modifiez le `.bash_profile` fichier. Ajouter `LD_LIBRARY_PATH` en ajoutant ce qui suit.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -136,8 +136,9 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
 1. Synchronisez le modèle mis à jour du processus de mise à jour des actifs  DAM. Enregistrez le workflow.
 
-Le programme vérifie la configuration, télécharge une image TIFF et surveille le fichier error.log. Vous remarquerez `INFO` les messages avec des mentions de `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le processus terminé, vous pouvez vue les nouveaux rendus dans AEM.
+Le programme vérifie la configuration, télécharge une image TIFF et surveille le fichier error.log. Vous remarquerez `INFO` les messages avec des mentions de `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le processus terminé, vous pouvez vue les nouveaux rendus dans Experience Manager.
 
 >[!MORELIKETHIS]
 >
 >* [Article de types MIME pris en charge](assets-formats.md#supported-image-transcoding-library)
+
