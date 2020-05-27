@@ -1,16 +1,19 @@
 ---
-title: Meilleures pratiques pour traduire des ressources
+title: Meilleures pratiques de traduction des ressources
 description: Meilleures pratiques pour une gestion efficace des ressources afin de synchroniser les diverses versions traduites et de rationaliser les workflows de traduction.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 82%
 
 ---
 
 
-# Meilleures pratiques pour traduire des ressources {#best-practices-for-translating-assets-efficiently}
+# Meilleures pratiques de traduction des ressources {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager (AEM) Assets prend en charge des workflow multilingues permettant de traduire les fichiers binaires, les métadonnées et les balises des ressources numériques en plusieurs paramètres régionaux et de gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
+Adobe Experience Manager Assets prend en charge des workflows multilingues pour traduire des fichiers binaires, des métadonnées et des balises pour les ressources numériques en plusieurs langues et pour gérer les ressources traduites. Pour plus d’informations, voir [Ressources multilingues](multilingual-assets.md).
 
 Pour une gestion efficace des ressources et pour garantir la synchronisation des différentes versions traduites, créez des [copies de langue](preparing-assets-for-translation.md) des ressources avant d’exécuter les workflows de traduction.
 
@@ -39,7 +42,7 @@ Vous pouvez également apporter des modifications de configuration à quelques w
 
 1. Activez le workflow [!UICONTROL Définir la date de dernière modification].
 
-   Le workflow [!UICONTROL Définir la date de dernière modification] configure la date de dernière modification pour une ressource. Comme vous désactivez ce workflow à l’étape 2, AEM Assets n’est plus en mesure de maintenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
+   Le workflow [!UICONTROL Définir la date de dernière modification] configure la date de dernière modification pour une ressource. Comme vous désactivez ce processus à l’étape 2, Assets ne peut plus tenir à jour la date de dernière modification des ressources. Par conséquent, activez le workflow *Définir la date de dernière modification* pour vous assurer que les dates de dernière modification des ressources sont à jour. Les ressources dont les dates de dernière modification sont obsolètes peuvent entraîner des erreurs.
 
 1. [Configurez la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) pour arrêter la traduction des fichiers binaires des ressources. Unselect the **[!UICONTROL Translate Assets]** option under the Assets tab to stop the translation of Asset binaries.
 1. Translate asset metadata/tags using [Multilingual asset workflows](multilingual-assets.md).
