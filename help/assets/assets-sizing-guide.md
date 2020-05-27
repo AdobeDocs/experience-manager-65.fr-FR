@@ -1,40 +1,40 @@
 ---
 title: Guide de dimensionnement des ressources
-description: Meilleures pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement d’AEM Assets.
+description: Meilleures pratiques permettant de déterminer des mesures efficaces pour estimer l’infrastructure et les ressources nécessaires au déploiement des ressources Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 78%
+source-wordcount: '1659'
+ht-degree: 66%
 
 ---
 
 
 # Assets sizing guide {#assets-sizing-guide}
 
-Lors du dimensionnement de l’environnement pour une mise en œuvre d’Adobe Experience Manager (AEM) Assets, il est important de s’assurer que les ressources disponibles sont suffisantes en termes de disque, de processeur, de mémoire, d’entrée/de sortie et de débit réseau. Pour dimensionner la plupart de ces ressources, vous devez comprendre leur mode de chargement dans le système. Si aucune meilleure mesure n’est disponible, vous pouvez diviser la taille de la bibliothèque existante par l’âge de la bibliothèque pour trouver la fréquence de création des ressources.
+Lors du dimensionnement de l’environnement pour une implémentation des ressources Adobe Experience Manager, il est important de s’assurer que les ressources disponibles sont suffisantes en termes de disque, d’UC, de mémoire, d’E/S et de débit réseau. Pour dimensionner la plupart de ces ressources, vous devez comprendre leur mode de chargement dans le système. Si aucune meilleure mesure n’est disponible, vous pouvez diviser la taille de la bibliothèque existante par l’âge de la bibliothèque pour trouver la fréquence de création des ressources.
 
 ## Disque {#disk}
 
 ### Banque de données {#datastore}
 
-Une erreur courante lors du dimensionnement de l’espace disque requis pour une mise en œuvre d’Assets consiste à baser les calculs sur la taille des images brutes à intégrer dans le système. Par défaut, AEM crée trois rendus en plus de l’image d’origine afin d’effectuer le rendu des éléments de l’interface utilisateur d’AEM. Dans les mises en œuvre précédentes, il a été observé que la taille de ces rendus était deux fois supérieure à la taille des ressources qui sont intégrées.
+Une erreur courante lors du dimensionnement de l’espace disque requis pour une mise en œuvre d’Assets consiste à baser les calculs sur la taille des images brutes à intégrer dans le système. Par défaut, Experience Manager crée trois rendus en plus de l’image d’origine à utiliser dans le rendu des éléments de l’interface utilisateur d’Experience Manager. Dans les mises en œuvre précédentes, il a été observé que la taille de ces rendus était deux fois supérieure à la taille des ressources qui sont intégrées.
 
-La plupart des utilisateurs définissent des rendus personnalisés en plus des rendus prêts à l’emploi. En plus des rendus, AEM Assets permet d’extraire des sous-ressources à partir de types de fichiers courants, tels qu’InDesign et Illustrator.
+La plupart des utilisateurs définissent des rendus personnalisés en plus des rendus prêts à l’emploi. In addition to the renditions, Assets lets you extract sub-assets from common file types, such as [!DNL Adobe InDesign] and [!DNL Adobe Illustrator].
 
-Enfin, les fonctionnalités de gestion des versions d’AEM stockent les duplicata des ressources dans l’historique des versions. Vous pouvez configurer les versions à purger aussi fréquemment que souhaité. Cependant, de nombreux utilisateurs choisissent de conserver des versions dans le système pendant une longue période, ce qui utilise de l’espace de stockage supplémentaire.
+Enfin, les fonctionnalités de gestion des versions d’Experience Manager stockent les duplicata des ressources dans l’historique des versions. Vous pouvez configurer les versions à purger aussi fréquemment que souhaité. Cependant, de nombreux utilisateurs choisissent de conserver des versions dans le système pendant une longue période, ce qui utilise de l’espace de stockage supplémentaire.
 
 Compte tenu de ces facteurs, vous avez besoin d’une méthodologie permettant de calculer un espace de stockage acceptable afin de stocker les ressources des utilisateurs.
 
 1. Déterminez la taille et le nombre de ressources qui seront chargées dans le système.
-1. Obtenez un échantillon représentatif des ressources à charger dans AEM. Par exemple, si vous prévoyez de charger des fichiers PSD, JPG, AI et PDF dans le système, vous avez besoin de plusieurs échantillons d’images de chaque format de fichier. En outre, ces échantillons doivent être représentatifs des différentes tailles de fichiers et de la complexité des images.
+1. Obtenez un échantillon représentatif des ressources à télécharger dans Experience Manager. Par exemple, si vous prévoyez de charger des fichiers PSD, JPG, AI et PDF dans le système, vous avez besoin de plusieurs échantillons d’images de chaque format de fichier. En outre, ces échantillons doivent être représentatifs des différentes tailles de fichiers et de la complexité des images.
 1. Définissez les rendus à utiliser.
-1. Créez les rendus dans AEM en utilisant ImageMagick ou les applications Adobe Creative Cloud. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui mettent en œuvre Scene7, vous pouvez utiliser le fichier binaire IC pour générer les rendus PTIFF à stocker dans AEM.
+1. Créez les rendus dans Experience Manager à l’aide d’ImageMagick ou des applications Adobe Creative Cloud. En plus des rendus que les utilisateurs spécifient, créez des rendus prêts à l’emploi. Pour les utilisateurs qui implémentent Scene7, vous pouvez utiliser le fichier binaire IC pour générer les rendus PTIFF à stocker dans Experience Manager.
 1. Si vous prévoyez d’utiliser des sous-ressources, générez-les pour les types de fichiers appropriés.
 1. Comparez la taille des images, rendus et sous-ressources de sortie avec les images d’origine. Cette comparaison permet de générer un facteur de croissance attendu lorsque le système est chargé. Par exemple, si vous générez des rendus et des sous-ressources d’une taille combinée de 3 Go après le traitement de 1 Go de ressources, le facteur de croissance des rendus est de 3.
 1. Déterminez la durée maximale pendant laquelle les versions des ressources doivent être conservées dans le système.
-1. Déterminez la fréquence à laquelle les ressources existantes sont modifiées dans le système. Si AEM est utilisé comme centre de collaboration dans les workflow de création, le nombre de modifications est élevé. Si seules les ressources terminées sont chargées dans le système, ce nombre est beaucoup plus bas.
+1. Déterminez la fréquence à laquelle les ressources existantes sont modifiées dans le système. Si Experience Manager est utilisé comme centre de collaboration dans les workflows créatifs, le nombre de modifications est élevé. Si seules les ressources terminées sont chargées dans le système, ce nombre est beaucoup plus bas.
 1. Déterminez le nombre de ressources chargées dans le système chaque mois. Si vous avez le moindre doute, vérifiez le nombre de ressources actuellement disponibles et divisez ce nombre par l’âge de la ressource la plus ancienne afin de calculer un nombre approximatif.
 
 L’exécution des étapes ci-dessus vous aide à déterminer les éléments suivants :
@@ -47,7 +47,7 @@ L’exécution des étapes ci-dessus vous aide à déterminer les éléments sui
 * Nombre de nouvelles ressources chargées chaque mois.
 * Années de croissance pour l&#39;allocation d&#39;espace par enregistrement.
 
-Vous pouvez indiquer ces chiffres dans la feuille de calcul Dimensionnement du réseau afin de déterminer l’espace total requis pour la banque de données. C’est également un outil utile pour déterminer l’impact de la conservation des versions des ressources ou de la modification des ressources dans AEM sur la croissance du disque.
+Vous pouvez indiquer ces chiffres dans la feuille de calcul Dimensionnement du réseau afin de déterminer l’espace total requis pour la banque de données. Il s’agit également d’un outil utile permettant de déterminer l’impact de la gestion des versions des ressources ou de la modification des ressources dans Experience Manager sur l’augmentation du disque.
 
 Les exemples de données renseignés dans l’outil montrent à quel point il est important de réaliser les étapes mentionnées. Si vous dimensionnez la banque de données uniquement en fonction des images brutes à charger (1 To), vous avez peut-être sous-estimé la taille du référentiel d’un facteur de 15.
 
@@ -102,13 +102,13 @@ Pour le référentiel, utilisez des disques SSD ou des disques avec un niveau d&
 
 ## Réseau {#network}
 
-AEM Assets comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets AEM. Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. There is a good methodology for determining the choke point in a user&#39;s network connection to AEM at [AEM Asset considerations for user experience, instance sizing, workflow evaluation, and network topology](/help/assets/assets-network-considerations.md).
+Les ressources présentent un certain nombre de cas d’utilisation qui rendent les performances réseau plus importantes que pour la plupart de nos projets Experience Manager. Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. There is a good methodology for determining the choke point in a user&#39;s network connection to Experience Manager at [Assets considerations for user experience, instance sizing, workflow evaluation, and network topology](/help/assets/assets-network-considerations.md).
 
 ## Restrictions {#limitations}
 
 Lorsque vous dimensionnez une mise en œuvre, il est important de garder à l’esprit les restrictions du système. Si la mise en œuvre proposée dépasse ces restrictions, utilisez des stratégies créatives, telles que le partitionnement des ressources entre plusieurs mises en œuvre d’Assets.
 
-La taille des fichiers n’est pas le seul facteur qui contribue aux problèmes de mémoire insuffisante. Cela dépend également des dimensions de l’image. Vous pouvez éviter les problèmes d’insuffisance de mémoire en fournissant une taille de tas supérieure lorsque vous démarrez AEM.
+La taille des fichiers n’est pas le seul facteur qui contribue aux problèmes de mémoire insuffisante. Cela dépend également des dimensions de l’image. Vous pouvez éviter les problèmes d’OM en fournissant une taille de tas supérieure lorsque vous début Experience Manager.
 
 In addition, you can edit the threshold size property of the `com.day.cq.dam.commons.handler.StandardImageHandler` component in Configuration Manager to use intermediate temporary file greater than zero.
 
@@ -118,8 +118,8 @@ La limite du nombre de fichiers pouvant exister dans une banque de données peut
 
 Si les rendus ne sont pas générés correctement, utilisez la bibliothèque Camera Raw. Toutefois, dans ce cas, le côté le plus long de l’image ne doit pas dépasser 65 000 pixels. En outre, l’image ne doit pas contenir plus de 512 MP (512 x 1 024 x 1 024 pixels). La taille de la ressource n’a pas d’importance.
 
-Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge de manière standard avec un tas spécifique pour AEM, car d’autres facteurs, tels que la taille des pixels, influencent le traitement. Il est possible qu’AEM puisse traiter un fichier de 255 Mo prêt à l’emploi, mais ne puisse pas traiter une taille de fichier de 18 Mo, car cette dernière comprend un nombre de pixels inhabituellement plus élevé que le premier.
+Il est difficile d’estimer avec précision la taille du fichier TIFF pris en charge de manière standard avec un tas spécifique pour Experience Manager, car d’autres facteurs, tels que la taille des pixels, influencent le traitement. Il est possible qu’Experience Manager puisse traiter un fichier de 255 Mo prêt à l’emploi, mais pas une taille de fichier de 18 Mo, car ce dernier comprend un nombre de pixels inhabituellement plus élevé que le premier.
 
 ## Size of assets {#size-of-assets}
 
-Par défaut, AEM vous permet de télécharger des fichiers d’une taille maximale de 2 Go. Pour télécharger des ressources très volumineuses dans AEM, voir [Configuration pour télécharger des ressources](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)très volumineuses.
+Par défaut, Experience Manager vous permet de télécharger des fichiers d’une taille maximale de 2 Go. Pour télécharger des ressources très volumineuses dans Experience Manager, voir [Configuration pour télécharger des ressources](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)très volumineuses.
