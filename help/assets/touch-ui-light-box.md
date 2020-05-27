@@ -1,12 +1,12 @@
 ---
-title: Lightbox comme galerie d’images personnelle dans AEM Assets
-description: Découvrez Lightbox en tant que galerie d’images personnelle dans AEM Assets.
+title: Lightbox en tant que galerie d’images personnelle dans Adobe Experience Manager Assets.
+description: Découvrez Lightbox en tant que galerie d’images personnelle dans Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 66%
+source-wordcount: '259'
+ht-degree: 65%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 66%
 
 Lightbox est un type spécial de collection fournissant un accès aisé aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
 
-Si vous êtes un utilisateur Adobe Experience Manager (AEM) Assets, Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
+Si vous êtes utilisateur Adobe Experience Manager Assets, Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
 
 ## Ajout de ressources à Lightbox {#adding-assets-to-lightbox}
 
