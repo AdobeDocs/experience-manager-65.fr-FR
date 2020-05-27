@@ -3,7 +3,10 @@ title: Révision de collections et de ressources situées dans un dossier
 description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '790'
+ht-degree: 63%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 
-Adobe Experience Manager (AEM) Assets permet de configurer un workflow de révision ad hoc pour les ressources situées dans un dossier ou une collection et de partager ce workflow avec des réviseurs ou des partenaires de conception afin d’obtenir leurs commentaires.
+Adobe Experience Manager Assets vous permet de configurer un processus de révision ad hoc pour les ressources d’un dossier ou d’une collection et de le partager avec des réviseurs ou des partenaires créatifs afin de recueillir des commentaires.
 
 Vous pouvez associer le workflow de révision à un projet ou créer une tâche de révision indépendante.
 
@@ -48,9 +51,9 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_name](assets/review_name.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à l’IU Assets. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Connectez-vous à  Assets en tant qu’approbateur et accédez à l’IU Assets. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 
-   ![Notification de ressources](assets/aemAssetsNotification.png)
+   ![Notification des ressources](assets/aemAssetsNotification.png)
 
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. In the **[!UICONTROL Review Task]** page, select assets, and click **[!UICONTROL Approve/Reject]** to approve or reject, as appropriate.
@@ -58,15 +61,15 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_task](assets/review_task.png)
 
 1. Click **[!UICONTROL Complete]** from the toolbar. In the dialog, enter a comment and click  **[!UICONTROL Complete]** to confirm.
-1. Accédez à l’interface utilisateur Ressources et ouvrez le dossier. Les icônes d’état d’approbation des ressources s’affichent dans les  de carte et les  de .
+1. Accédez à l’interface utilisateur Ressources et ouvrez le dossier. Les icônes d’état d’approbation des ressources s’affichent dans la vue de carte et la vue de liste.
 
    **Mode Carte**
 
-   ![Vérifier l’état tel qu’il apparaît dans le de cartes](assets/chlimage_1-404.png)
+   ![Vérifier l’état tel qu’il apparaît dans la vue de cartes](assets/chlimage_1-404.png)
 
    **Mode Liste**
 
-   ![Vérifier l&#39;état tel qu&#39;il est vu dans  de](assets/review_status_listview.png)
+   ![Vérifier l’état tel qu’il est affiché dans liste vue](assets/review_status_listview.png)
 
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
@@ -92,7 +95,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
-1. Connectez-vous à AEM Assets en tant qu’approbateur et accédez à la console Ressources. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
+1. Connectez-vous à Assets en tant qu’approbateur et accédez à la console Ressources. To approve assets, click **[!UICONTROL Notifications]** and then select the review task from the list.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Select the assets and click **[!UICONTROL Approve/Reject]** to approve or reject assets, as appropriate.
 
@@ -103,8 +106,8 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figure :  de carte.*
+   *Figure : vue de carte.*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figure :  .*
+   *Figure : vue de Liste.*
