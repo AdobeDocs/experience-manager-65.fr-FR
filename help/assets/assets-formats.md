@@ -3,10 +3,10 @@ title: Formats de fichiers pris en charge pour le traitement dans [!DNL Adobe Ex
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1779'
-ht-degree: 68%
+ht-degree: 71%
 
 ---
 
@@ -76,10 +76,10 @@ La liste suivante décrit les sous-types de formats de fichier image pixellisée
 
 Voir aussi [Détection de formats de fichier non pris en charge pour le contenu multimédia](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dynamique.
 
-* Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
+* Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
-* Les fichiers PSD avec un espace colorimétrique autre que CMJN, RVB, Niveaux de gris ou Bitmap ne sont pas pris en charge. Les espaces colorimétriques DuoTone, Lab et Indexé ne sont pas pris en charge.
-* Fichiers PSD ayant une profondeur de bits supérieure à 16.
+* Les fichiers PSD avec un espace colorimétrique autre que CMJN, RVB, niveaux de gris ou bitmap ne sont pas pris en charge. Les espaces colorimétriques DuoTone, Lab et indexé ne sont pas pris en charge.
+* Fichiers PSD ayant une résolution binaire supérieure à 16.
 * Fichiers TIFF contenant des données à virgule flottante.
 * Fichiers TIFF dotés d’un espace colorimétrique Lab.
 
@@ -103,7 +103,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## Bibliothèque PDF Rasterizer prise en charge {#supported-pdf-rasterizer-library}
 
-La bibliothèque Adobe PDF Rasterizer génère des miniatures de haute qualité et des aperçus pour les fichiers Adobe Illustrator et PDF de grande taille et riches en contenu. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
+The Adobe PDF Rasterizer library generates high-quality thumbnails and previews for large and content-intensive [!DNL Adobe Illustrator] and PDF files. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour ce qui suit :
 
 * Fichiers AI/PDF à forte intensité de contenu qui nécessitent beaucoup de ressources pour être traités.
 * Fichiers AI/PDF pour lesquels les miniatures ne sont pas générées par défaut.
@@ -121,7 +121,7 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Supported camera raw {#supported-camera-raw}
 
-La bibliothèque Adobe Camera Raw permet à AEM Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
+La bibliothèque Adobe Camera Raw permet à Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
 
 ## Supported Assets document formats {#supported-document-formats}
 
@@ -206,7 +206,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 | R3D, RM | Red Raw Video | MJPEG 2000 |  |
 | RAM, RM | RealVideo | Non pris en charge | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
 | FLAC | Native Flac | FLAC (Free Lossless Audio Codec) |  |
-| MJ2 | Motion JPEG2000 | Codec Motion JPEG 2000 |  |
+| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 |  |
 
 ## Formats d’archives pris en charge {#supported-archive-formats}
 
@@ -234,7 +234,7 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 
 ## Pris en charge Types MIME {#supported-mime-types}
 
-Par défaut, AEM détecte le type de fichier à l’aide de l’extension de fichier. AEM peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the AEM Web Console.
+Par défaut, Experience Manager détecte le type de fichier à l’aide de l’extension de fichier. Experience Manager peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the Experience Manager Web Console.
 
 Une liste de types MIME pris en charge est disponible dans CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
