@@ -3,9 +3,9 @@ title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1897'
 ht-degree: 76%
 
 ---
@@ -25,7 +25,7 @@ To create a language copy, trigger one of the following language copy workflows 
 
 >[!NOTE]
 >
->Si vous lancez un processus de traduction pour des ressources complexes, telles que des fichiers PDF et InDesign, leurs sous-ressources ou rendus (le cas échéant) ne sont pas envoyés pour traduction.
+>If you launch a translation workflow for complex assets, such as PDF and [!DNL Adobe InDesign] files, their subassets or renditions (if any) are not submitted for translation.
 
 ## Workflow Créer et traduire {#create-and-translate-workflow}
 
