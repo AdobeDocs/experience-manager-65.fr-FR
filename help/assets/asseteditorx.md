@@ -3,10 +3,10 @@ title: Étendre l’éditeur de fichiers
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 94%
+source-wordcount: '695'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur cli
 
 La configuration de l’éditeur à l’aide des composants de modification prédéfinis est traitée dans [Création et configuration d’une page Éditeur de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-En plus d’utiliser les composants d’éditeur préexistants, les développeurs d’Adobe Experience Manager (AEM) peuvent créer leurs propres composants.
+Outre l’utilisation de composants d’éditeur préexistants, les développeurs Adobe Experience Manager peuvent également créer leurs propres composants.
 
 ## Create an Asset Editor template {#creating-an-asset-editor-template}
 
@@ -29,9 +29,9 @@ Les exemples de pages suivants sont inclus dans Geometrixx :
 
 ### Configurer Clientlib {#configuring-clientlib}
 
-Les composants d’AEM Assets utilisent une extension du clientlib de modification de la gestion du contenu web. Les clientlibs sont généralement chargés dans `init.jsp`.
+Les composants de ressources utilisent une extension de la bibliothèque cliente d’édition WCM. Les clientlibs sont généralement chargés dans `init.jsp`.
 
-Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un modèle AEM Assets doit répondre aux exigences suivantes :
+Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un modèle  Assets doit répondre aux exigences suivantes :
 
 * Le modèle doit inclure le clientlib `cq.dam.edit` (au lieu de `cq.wcm.edit`).
 
@@ -41,7 +41,7 @@ Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/
 
 ### Configuration des actions JS {#configuring-js-actions}
 
-Certains composants d’AEM Assets nécessitent des fonctions JS définies dans le fichier `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
+Some of the Assets components require JS functions defined in `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,7 +51,7 @@ Cet exemple charge cette source JavaScript dans `head.jsp` (`/apps/geometrixx/co
 
 ### Additional style sheets {#additional-style-sheets}
 
-Certains composants d’AEM Assets utilisent la bibliothèque de widgets d’AEM. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains composants Ressources utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
