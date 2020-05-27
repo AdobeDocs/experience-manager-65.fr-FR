@@ -1,85 +1,88 @@
 ---
-title: Comparaison des ressources AEM et de l’offre de la bibliothèque de médias AEM
-description: Comparez les ressources AEM et les offres de la bibliothèque de médias AEM et connaissez les différences.
+title: Comparaison des ressources d’Adobe Experience Manager et de l’offre de la bibliothèque de médias.
+description: Comparez les ressources d’Experience Manager et les offres de la bibliothèque de supports et connaissez les différences.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 35%
 
 ---
 
 
-# Ressources AEM par rapport à la bibliothèque de médias AEM {#aem-assets-vs-aem-medialibrary}
+# Fichiers Experience Manager versus Bibliothèque multimédia Experience Manager {#aem-assets-vs-aem-medialibrary}
 
-Adobe Experience Manager (AEM) Assets fait partie intégrante de la plateforme AEM. Cette intégration parfaite est vue comme un avantage important d’AEM et garantit une homogénéité de gestion de contenu et de productivité élevée pour les auteurs de contenu. 
+Adobe Experience Manager Assets fait partie intégrante de la plate-forme Experience Manager. Cette intégration fluide est considérée comme un avantage majeur d’Experience Manager et garantit la cohérence de la gestion de contenu et une productivité élevée pour les auteurs de contenu.
 
 ## Forum aux questions {#frequently-asked-questions}
 
-### Qu’est-ce qu’AEM Assets ?{#what-is-aem-assets}
+### What is Assets? {#what-is-aem-assets}
 
-AEM Assets est une application de la plateforme AEM qui permet à nos clients de gérer leurs ressources numériques (images, documents, vidéos et clips audio) dans un référentiel basé sur le web. AEM Assets comprend la prise en charge des métadonnées, les rendus, l’outil de recherche de la gestion des actifs numériques et l’interface utilisateur d’administration d’AEM Assets.
+Les ressources sont une fonctionnalité d’Experience Manager qui permet aux utilisateurs de gérer leurs ressources numériques (images, vidéos, documents et clips audio) dans un référentiel Web. Les ressources comprennent la prise en charge des métadonnées, les rendus, l’outil de recherche et l’interface d’administration.
 
-### Qu’est-ce que la bibliothèque multimédia AEM ?{#what-is-the-aem-media-library}
+### Qu’est-ce que la bibliothèque de supports Experience Manager ? {#what-is-the-aem-media-library}
 
-La bibliothèque multimédia AEM est un élément désigné du référentiel de contenu de la gestion de contenu web d’AEM où les images et d’autres ressources partagées sont enregistrées. La bibliothèque multimédia utilise les fonctionnalités de gestion des actifs numériques de la gestion de contenu web d’AEM.
+La bibliothèque de supports Experience Manager fait partie du référentiel de contenu WCM d’Experience Manager où sont stockées les images et les autres ressources partagées. La bibliothèque de supports fournit des fonctionnalités de base de gestion des ressources numériques à WCM.
 
-### Que m’offre AEM Assets qui ne soit pas déjà inclus dans la gestion de contenu web d’AEM ?   {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+### What do I get from Assets that is not part of WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
-Les fonctionnalités uniques disponibles uniquement pour les clients AEM Assets sont : 
+Les fonctionnalités uniques disponibles uniquement pour les clients  Assets sont : 
 
 * La possibilité d’extraire et de modifier des métadonnées autres que le titre, les balises et la description
-* Admin AEM Assets, disponible dans l’écran de bienvenue en sélectionnant le deuxième bouton en regard de l’administrateur du site.
-* toutes les étapes du flux de travail liées à la gestion des ressources numériques, à savoir la gestion des ressources AEM, la suppression des ressources AEM, la gestion des sous-ressources AEM Assets, les métadonnées  AEM Assets .
-* Les bibliothèques, y compris « dam » dans l’espace de modules
+* l’administrateur Ressources, disponible dans l’écran de bienvenue.
+* toutes les étapes du processus liées à Digital Asset Management, telles que l’assimilation, la suppression de ressources, la gestion des sous-ressources, l’extraction des métadonnées.
+* bibliothèques, y compris `dam` dans l’espace du package.
 
-L’utilisation de ces fonctions nécessite une licence AEM Assets valide.
+L’utilisation de ces fonctions nécessite une licence  Assets valide.
 
-### AEM Assets est-il disponible en tant que module distinct ?   {#is-aem-assets-available-as-a-separate-package}
+### Is Assets available as a separate Package? {#is-aem-assets-available-as-a-separate-package}
 
-Non. Pour faciliter l’installation et le déploiement, toutes les applications et modules complémentaires d’AEM sont fournis dans un module unique dans lequel toutes les fonctionnalités sont incluses. Cela ne signifie pas que vous avez le droit d’utiliser toutes les fonctionnalités incluses dans le module.
+Non. Pour faciliter l’installation et le déploiement, toutes les applications et modules complémentaires d’Experience Manager sont fournis dans un seul pack avec toutes les fonctionnalités incluses. Cela ne signifie pas que vous avez le droit d’utiliser toutes les fonctionnalités incluses dans le module.
 
-### Je souhaite modifier les métadonnées des ressources numériques. Ai-je besoin d’AEM Assets ?   {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+### Je souhaite modifier les métadonnées des ressources numériques. Do I need Assets? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
-Si vous prévoyez de modifier les métadonnées autres que le titre, la description et les balises, vous aurez besoin d’une licence AEM Assets. 
+Si vous prévoyez de modifier les métadonnées autres que le titre, la description et les balises, vous aurez besoin d’une licence  Assets. 
 
-### Je souhaite utiliser le prédicat de catégorie sur mon site web. Ai-je besoin d’AEM Assets ?   {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+### Je souhaite utiliser le prédicat de catégorie sur mon site web. Do I need Assets? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Oui, le prédicat du  fait partie des ressources AEM et nécessite une licence AEM Assets.
+Oui, le prédicat de catégorie fait partie des ressources et nécessite une licence Ressources.
 
-### Je souhaite redimensionner automatiquement les images lors de l’importation. Ai-je besoin d’AEM Assets ?   {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+### Je souhaite redimensionner automatiquement les images lors de l’importation. Do I need Assets? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Non. Le redimensionnement et la transformation automatique des images statiques pilotée par workflow, de même que la capacité de gérer les rendus sont inclus dans la bibliothèque multimédia AEM. Ces fonctionnalités ne nécessitent pas de licence AEM Assets.
+Non. Le redimensionnement et la transformation automatique des images statiques, pilotées par le flux de travail, ainsi que la capacité de gérer les rendus font partie de la bibliothèque multimédia d’Experience Manager. Ces fonctionnalités ne nécessitent pas de licence  Assets.
 
-### Je souhaite redimensionner des images à l’aide d’un composant image personnalisé. Ai-je besoin d’AEM Assets ?   {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+### Je souhaite redimensionner des images à l’aide d’un composant image personnalisé. Do I need Assets? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
-Le composant image fait partie de la gestion du contenu web d’AEM. La bibliothèque d’images utilisée par le composant image (et par AEM Assets) fait partie de la plateforme AEM et ne nécessite de licence AEM Assets. 
+Le composant d’image fait partie de WCM. La bibliothèque graphique utilisée par le composant d’image (mais également par les ressources) fait partie de la plate-forme Experience Manager et ne nécessite pas de licence Ressources.
 
-### Comment puis-je empêcher mes utilisateurs d’utiliser AEM Assets si je ne dispose pas d’une licence AEM Assets ?{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+### Comment puis-je empêcher mes utilisateurs d’utiliser  Assets si je ne dispose pas d’une licence  Assets ?{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-Vous pouvez supprimer tous les workflows, composants, taxonomies et options d’AEM Assets, ainsi que l’administrateur AEM Assets à partir d’AEM. Cela empêche vos utilisateurs d’utiliser accidentellement les fonctionnalités AEM Assets que vous n’avez pas sous licence.
+Vous pouvez supprimer tous les workflows, composants, taxonomies, options et l’administrateur Ressources spécifiques à Assets d’Experience Manager. Cela évite aux utilisateurs d’utiliser accidentellement des fonctions de ressources que vous n’aviez pas sous licence.
 
-### Je souhaite ajouter des images à une page et recadrer ou redimensionner ces images. Ai-je besoin d’AEM Assets ?   {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+### Je souhaite ajouter des images à une page et recadrer ou redimensionner ces images. Do I need Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-Pour ce cas d’utilisation, il n’est pas nécessaire d’acheter AEM Assets. Il n’est même pas nécessaire d’utiliser la bibliothèque multimédia pour les images d’un site web, car le composant d’image dynamique permet de transférer des images directement dans la page.
+Pour ce cas d’utilisation, il n’est pas nécessaire d’acheter  Assets. Il n’est même pas nécessaire d’utiliser la bibliothèque multimédia pour les images d’un site web, car le composant d’image dynamique permet de transférer des images directement dans la page.
 
-### A detailed list of features available in AEM Assets vs Media Library {#listoffeatures}
+### A detailed list of features available in Assets vs Media Library {#listoffeatures}
 
-**AEM Assets**
+**Experience Manager Assets**
 
 * Collections et Lightbox
 * Propriétés et gestion avancées des métadonnées
 * Adobe Asset Link (connexion à Creative Cloud abonnement Entreprise)
-* Application de bureau AEM
+* Appli de bureau Experience Manager
 * Profils de traitement
-* Intégration d’InDesign Server
-* Modèles d’actifs et structure de producteurs de catalogues
-* Intégration d’Adobe Photoshop, d’Adobe Illustrator et d’Adobe InDesign
+* [!DNL Adobe InDesign Server] intégration
+* Modèles d’actifs et structure de production de catalogue
+* [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]et [!DNL Adobe InDesign] intégration
 * Gestion des ressources multilingues
 * Intégration PIM
 * Gestion des droits
 * Prise en charge de Camera RAW
 * Gestion et configuration des facettes de recherche
 * Workflows DAM préconfigurés (par exemple, séance photo)
-*  et analyses des ressources appelées Insights
+* rapports et analyses des ressources appelés statistiques
 * Gestion des ressources 3D
 * Ressources connectées
 * Brand Portal
@@ -96,8 +99,8 @@ Pour ce cas d’utilisation, il n’est pas nécessaire d’acheter AEM Assets.
 * Gestion des balises
 * Contrôle de version
 * Rendus statiques
-* Projets, , création de flux de travail
-*  flux  (chronologie)
+* Projets, tâches, création de processus
+* Flux d’Activité (chronologie)
 * Query Builder (API)
 * Intégration de Marketing Cloud
 * Personnalisation et extension de l’interface utilisateur
