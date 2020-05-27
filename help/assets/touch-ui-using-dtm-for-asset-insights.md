@@ -3,10 +3,10 @@ title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 53%
+source-wordcount: '634'
+ht-degree: 44%
 
 ---
 
@@ -23,10 +23,10 @@ Bien que vous puissiez personnaliser votre code de suivi pour permettre aux solu
 
 Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressources grâce à DTM.
 
-1. Click the AEM logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Configuration de l’instance AEM avec le service cloud de gestion dynamique des balises](/help/sites-administering/dtm.md)
+1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. [Configuration de l’instance Experience Manager avec DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** from the Profile icon. Par rapport aux statistiques sur les ressources, cette étape n’est pas nécessaire car l’intégration d’AEM Sites aux statistiques sur les ressources est encore en cours.
+   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** from the Profile icon. Cette étape n’est pas requise du point de vue des statistiques sur les ressources, car l’intégration des sites Experience Manager avec les statistiques sur les ressources est toujours en cours d’élaboration.
 
 1. Connectez-vous à [https://dtm.adobe.com](https://dtm.adobe.com/) et sélectionnez une entreprise, comme approprié.
 1. Création/ouverture d’une propriété web existante
@@ -44,15 +44,15 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
+1. Cliquez sur le logo d’Experience Manager et accédez à **[!UICONTROL Outils > Ressources]**.
 1. Click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Enregistrez les modifications.
 
    >[!NOTE]
    >
    > * `AppMeasurement.js` est supprimée. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
    > * The call to `assetAnalytics.dispatcher.init`() is removed. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
-   > * Selon l’endroit où est hébergé le dispositif de suivi de la page de statistiques sur les ressources (par exemple, AEM, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
-   > * Pour le suivi des pages hébergé par AEM, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
+   > * Selon l’emplacement d’hébergement du suivi de page des statistiques sur les ressources (par exemple Experience Manager, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
+   > * Pour le suivi des pages hébergé par Experience Manager, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
 
 
 1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]** ou ouvrez un outil Adobe Analytics existant. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
