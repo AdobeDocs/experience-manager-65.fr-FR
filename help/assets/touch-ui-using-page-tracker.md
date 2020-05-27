@@ -1,16 +1,19 @@
 ---
-title: Utiliser le suivi de page et intégrer du code dans des pages Web
+title: Utiliser le suivi de page et le code incorporé dans les pages Web
 description: Découvrez comment inclure le dispositif de suivi de page et intégrer du code JavaScript dans le code de votre site web pour permettre à Adobe Analytics de capturer des données d’utilisation concernant les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 68%
 
 ---
 
 
 # Use page tracker and embed code in web pages {#using-page-tracker-and-embed-code-in-web-pages}
 
-Le dispositif de suivi de page est un élément de code JavaScript que vous incluez dans le code des sites web tiers pour permettre à Adobe Analytics de capturer des données d’utilisation des ressources Adobe Experience Manager (AEM) sur ces sites web.
+Le suivi de page est un élément de code JavaScript que vous incluez dans le code des sites Web tiers pour permettre à Adobe Analytics de capturer des données d’utilisation des ressources Adobe Experience Manager sur ces sites Web.
 
 Pour capturer des événements tels que des clics propres aux ressources, vous devez également inclure le code intégré dans le code des sites web tiers.
 
