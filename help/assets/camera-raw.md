@@ -1,22 +1,25 @@
 ---
-title: Prise en charge de [!DNL Adobe Camera Raw].
-description: Découvrez comment activer la prise en charge de [!DNL Adobe Camera Raw] dans [!DNL Adobe Experience Manager Assets].
+title: Prise en charge de [ ! DNL Adobe Camera Raw].
+description: Découvrez comment [!DNL Adobe Camera Raw] activer la prise en charge dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 32%
 
 ---
 
 
 # Traiter les images à l’aide de Camera Raw {#camera-raw-support}
 
-Vous pouvez activer la [!DNL Adobe Camera Raw] prise en charge du traitement des formats de fichiers bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. La fonctionnalité est prise en charge dans [!DNL Adobe Experience Manager Assets] l’utilisation du package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible via le partage de package.
+Vous pouvez activer la [!DNL Adobe Camera Raw] prise en charge pour traiter les formats de fichier bruts, tels que CR2, NEF et RAF, et effectuer le rendu des images au format JPEG. La fonctionnalité est prise en charge dans [!DNL Adobe Experience Manager Assets] l’utilisation du package [](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw disponible via Package Share.
 
 >[!NOTE]
 >
 >La fonctionnalité ne prend en charge que les rendus JPEG. Il est pris en charge sous Windows 64 bits, Mac OS et RHEL 7.x.
 
-Pour activer [!DNL Camera Raw] la prise en charge dans [!DNL Experience Manager Assets], procédez comme suit :
+Pour activer la [!DNL Camera Raw] prise en charge dans [!DNL Experience Manager Assets], procédez comme suit :
 
 1. Download the [Camera Raw package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from the Package Share.
 1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
@@ -27,14 +30,14 @@ Pour activer [!DNL Camera Raw] la prise en charge dans [!DNL Experience Manager 
    * **[!UICONTROL Types MIME ignorés]**: `skip:image/dng, skip:image/x-raw-(.*)`
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
-1. Dans l’onglet Image **** Web activée, dans le champ **[!UICONTROL Ignorer le]** de `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`, spécifiez.
+1. Dans l’onglet Image **** Web activée, dans le champ **[!UICONTROL Ignorer la Liste]** , spécifiez `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
 1. From the side panel, add the **[!UICONTROL Camera Raw/DNG Handler]** step below the **[!UICONTROL Thumbnail creation]** step.
 1. In the **[!UICONTROL Camera Raw/DNG Handler]** step, add the following configuration in the **[!UICONTROL Arguments]** tab:
 
-   * **[!UICONTROL Types]** Mime : `image/dng` et `image/x-raw-(.*)`
+   * **[!UICONTROL Types]** MIME : `image/dng` et `image/x-raw-(.*)`
    * **[!UICONTROL Commande]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
@@ -49,7 +52,7 @@ Pour activer [!DNL Camera Raw] la prise en charge dans [!DNL Experience Manager 
 >
 >Vérifiez que la configuration ci-dessus est identique à la configuration **[!UICONTROL Exemple de ressources de mise à jour de gestion des actifs numériques avec l&#39;étape de manipulation Camera RAW et DNG]**.
 
-Vous pouvez désormais importer des fichiers Camera Raw dans AEM Assets. After you install the Camera RAW package and configure the required workflow, **[!UICONTROL Image Adjust]** option appears in the list of side panes.
+Vous pouvez désormais importer des fichiers Camera Raw dans Assets. After you install the Camera RAW package and configure the required workflow, **[!UICONTROL Image Adjust]** option appears in the list of side panes.
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
