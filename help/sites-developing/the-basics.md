@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: 2d0e0325d1fce2587e4766bf2f60fc5d4accf45b
+source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+workflow-type: tm+mt
+source-wordcount: '3365'
+ht-degree: 77%
 
 ---
 
@@ -43,7 +46,7 @@ La norme Java Content Repository (JCR), [JSR 283](https://docs.adobe.com/content
 
 Les spécifications sont gérées par Adobe Research (Suisse) AG.
 
-Le module [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr. &amp;ast; est utilisée pour l’accès direct et la manipulation du contenu du référentiel.
+Le module [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; est utilisée pour l’accès direct et la manipulation du contenu du référentiel.
 
 ## Experience Server (CRX) et Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -102,17 +105,17 @@ Nous pouvons la décomposer comme suit :
 
 | protocol | host | content path | selector(s) | extension |  | suffix |  | param(s) |
 |---|---|---|---|---|---|---|---|---|
-| https:// | myhost | outils/espionnage | .printable.a4. | html | / | a/b | ? | x=12 |
+| https:// | myhost | outils/espion | .printable.a4. | html | / | a/b | ? | x=12 |
 
 **protocole** HTTP
 
 **nom d’hôte** du site Web.
 
-**chemin** du contenu spécifiant le contenu à rendre. Est utilisé en combinaison avec l’extension. Dans cet exemple, on obtient tools/spy.html.
+**chemin d’accès** au contenu spécifiant le contenu à rendre. Est utilisé en combinaison avec l’extension. Dans cet exemple, on obtient tools/spy.html.
 
-**sélecteur(s)** utilisé(s) pour d&#39;autres méthodes de rendu du contenu; dans cet exemple, une version compatible avec l’imprimante au format A4.
+**sélecteur(s)** utilisé(s) pour d’autres méthodes de rendu du contenu ; dans cet exemple, une version compatible avec les imprimantes au format A4.
 
-**extension** Content format; spécifie également le script à utiliser pour le rendu.
+**format de contenu de l&#39;extension** ; spécifie également le script à utiliser pour le rendu.
 
 **suffixe** Peut être utilisé pour spécifier des informations supplémentaires.
 
@@ -150,7 +153,7 @@ The path specified by the `sling:resourceType` can be either:
 * absolu
 * relative, à un paramètre de configuration
 
-   Les chemins relatifs sont recommandés par Adobe lorsqu’ils augmentent la portabilité.
+   Les chemins relatifs sont recommandés par Adobe, car ils augmentent la portabilité.
 
 All Sling scripts are stored in subfolders of either `/apps` or `/libs`, which will be searched in this order (see [Customizing Components and Other Elements](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -174,11 +177,11 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
    Le script sera /apps/hr/jobs/jobs.esp; la dernière section de sling:resourceType forme le nom de fichier.
 
-* Demandes POST (tous les types de requête, à l’exception de GET/HEAD, le nom de la méthode doit être en majuscules)
+* Requêtes POST (tous les types de requête, à l’exception de GET/HEAD, le nom de la méthode doit être en majuscules)
 
    POST sera utilisé dans le nom du script.
 
-   Le script sera `/apps/hr/jobs/jobs.POST.esp`.
+   Le script sera `/apps/hr/jobs/jobs.POST.esp`écrit.
 
 * URL dans d’autres formats, ne se terminant pas par .html
 
@@ -190,7 +193,7 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
    Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple une version imprimable, un flux rss ou un résumé.
 
-   Si nous regardons une version adaptée à l&#39;imprimante où le sélecteur peut être *imprimé*, as in `../content/corporate/jobs/developer.print.html`
+   Si nous regardons une version adaptée à l&#39;imprimante dans laquelle le sélecteur peut être *imprimé*; comme dans `../content/corporate/jobs/developer.print.html`
 
    Le script sera `/apps/hr/jobs/jobs.print.esp`; le sélecteur est ajouté au nom du script.
 
@@ -259,7 +262,14 @@ Par exemple :
 
 
 
-The type hierarchy of /x is [ c, b, a, &lt;default>] while for /y the hierarchy is [ c, a,
+Hiérarchie de types de :
+
+* `/x`
+   * sont celles du `[ c, b, a, <default>]`
+* while for `/y`
+   * la hiérarchie est `[ c, a, <default>]`
+
+This is because `/y` has the `sling:resourceSuperType` property whereas `/x` does not and therefore its supertype is taken from its resource type.
 
 #### Les scrips Sling ne peuvent pas être appelés directement {#sling-scripts-cannot-be-called-directly}
 
@@ -276,7 +286,7 @@ Si vous appelez la représentation (le script) directement, vous masquez la ress
 
 ### API Sling {#sling-api}
 
-Elle utilise le module API Sling org.apache.sling.Bibliothèques &amp;ast; et de balises.
+Elle utilise le module API Sling org.apache.sling.Bibliothèques &amp;amp ; ast ; et de balises.
 
 ### Référencement d’éléments existants avec sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -366,15 +376,15 @@ La définition d’un composant comprend :
 * le code utilisé pour le rendu du contenu
 * une boîte de dialogue pour la saisie utilisateur et la configuration du contenu résultant.
 
-**Modèle** Un modèle est la base d’un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
+**Modèle** Un modèle est la base d&#39;un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
 
 Un modèle est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
 
 Il définit le composant de page utilisé pour afficher la page et le contenu par défaut (contenu principal de premier niveau). Le contenu définit la façon dont il est rendu car AEM est centré sur le contenu.
 
-**Composant de page (composant de niveau supérieur)** Composant à utiliser pour effectuer le rendu de la page.
+**Composant de page (composant de niveau supérieur)** Composant à utiliser pour générer la page.
 
-**Page** A est une &quot;instance&quot; d’un modèle.
+**Page** A est une &#39;instance&#39; d&#39;un modèle.
 
 Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling:resourceType du nœud de contenu pointe vers le composant de page utilisé pour le rendu de la page.
 
@@ -382,7 +392,7 @@ Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code
 
 S`tring pageName = currentPage.getName();`
 
-Avec currentPage comme objet de page actif. Pour plus d’informations sur la manipulation des objets Page, reportez-vous aux [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+Avec currentPage comme objet de page actif. Pour plus d’informations sur la manipulation des objets Page, reportez-vous aux [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestionnaire** de pages Le gestionnaire de pages est une interface qui fournit des méthodes pour les opérations au niveau de la page.
 
@@ -390,7 +400,7 @@ Par exemple, pour obtenir la page de contenu d’une ressource, vous pouvez util
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-Avec pageManager comme objet gestionnaire de pages et myResource comme objet ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, reportez-vous aux [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+Avec pageManager en tant qu’objet gestionnaire de pages et myResource en tant qu’objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, reportez-vous aux [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure dans le référentiel {#structure-within-the-repository}
 
@@ -404,7 +414,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 >[!CAUTION]
 >
->You must not change anything in the `/libs` path. For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
+>Vous ne devez rien modifier dans le chemin `/libs`. For configuration and other changes copy the item from `/libs` to `/apps` and make any changes within `/apps`.
 
 * `/apps`
 
@@ -426,7 +436,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 * `/tmp`
 
-   Zone de travail temporaire.
+   Espace de travail temporaire.
 
 * `/var`
 
