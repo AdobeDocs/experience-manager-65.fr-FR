@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 87%
 
 ---
 
@@ -58,7 +61,7 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
   </tr>
   <tr>
    <td><p>Signature tactile</p> </td>
-   <td><p>(Obsolète) Signature tactile</p> </td>
+   <td><p>Signature tactile</p> </td>
   </tr>
   <tr>
    <td><p>Champ numérique </p> </td>
@@ -81,8 +84,8 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
    <td><p>Image</p> </td>
   </tr>
   <tr>
-   <td><p>Texte</p> </td>
-   <td><p>Texte</p> </td>
+   <td><p>Text (Texte)</p> </td>
+   <td><p>Text (Texte)</p> </td>
   </tr>
   <tr>
    <td><p>Sous-formulaire </p> </td>
@@ -119,7 +122,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
   </tr>
   <tr>
    <td><p>access </p> </td>
-   <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Access.</p> </td>
+   <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression d’accès.</p> </td>
   </tr>
   <tr>
    <td><p>Accessibilité : role </p> </td>
@@ -151,7 +154,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
   </tr>
   <tr>
    <td><p>items<em> (List Box, Check Box)</em></p> </td>
-   <td><p>Associé à la propriété options dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Options.</p> </td>
+   <td><p>Associé à la propriété options dans le formulaire adaptatif. Vous pouvez la remplacer à l’aide de l’expression Options.</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> (Text Field)</em></p> </td>
