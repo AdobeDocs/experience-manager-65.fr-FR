@@ -1,6 +1,6 @@
 ---
-title: Utilisation des flux de travail
-seo-title: Utilisation des workflows
+title: 'Utilisation des workflows  '
+seo-title: 'Utilisation des workflows  '
 description: Dans AEM, les workflows permettent d’automatiser une série d’étapes effectuées sur une page ou une ressource.
 seo-description: Dans AEM, les workflows permettent d’automatiser une série d’étapes effectuées sur une page ou une ressource.
 uuid: c4442d2a-c6b0-49d4-a1ce-384017c45bf0
@@ -10,16 +10,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 100%
 
 ---
 
 
-# Utilisation des workflows{#working-with-workflows}
+# Utilisation des workflows  {#working-with-workflows}
 
 Les worfklow AEM permettent d’automatiser une série d’étapes exécutées sur une ou plusieurs pages et/ou ressources.
 
-Par exemple, lors de la publication, un éditeur doit réviser le contenu – avant qu’un administrateur du site active la page. Un worfklow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche :
+Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un worfklow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche :
 
 1. L’auteur applique le worfklow à la page.
 1. L’éditeur reçoit un élément de travail indiquant qu’il doit réviser le contenu de la page. Lorsqu’il a terminé, il indique que son élément de travail est terminé.
@@ -32,6 +35,6 @@ En général :
 
 Les pages suivantes couvrent :
 
-* [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md)
+* [Application de workflows aux pages ](/help/sites-authoring/workflows-applying.md)
 * [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
 
