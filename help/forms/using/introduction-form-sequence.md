@@ -10,7 +10,10 @@ topic-tags: author
 discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +41,7 @@ Supposons que vous deviez créer une séquence pour les étapes de remplissage, 
    * **Signer électroniquement** : contient le composant **Sign** qui peut être utilisé dans un formulaire adaptatif XFA. Ce panneau fournit les services de signature suivants :
 
       * Services Adobe Document Cloud eSign
-      * (Obsolète) Signature tactile
+      * Signature à main levée
    * **Confirmation** : contient le composant **Résumé** qui affiche un message de conformation d’envoi du formulaire lorsqu’un utilisateur l’a signé et a atteint l’étape de confirmation (Résumé) dans la séquence. Les auteurs peuvent configurer le texte du composant de résumé, afficher un message de remerciement et un lien vers le PDF généré, etc.
 
 
