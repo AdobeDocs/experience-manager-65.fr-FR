@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6b4a32b320d53c41ebf9615895dbf17ab722f19
+source-git-commit: 18345e6519169cfceb01ab56821b596e284f3303
+workflow-type: tm+mt
+source-wordcount: '3202'
+ht-degree: 77%
 
 ---
 
@@ -67,16 +70,16 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 
 >[!NOTE]
 >
->Pour aider les clients d’AEM Forms à réduire le coût de propriété, à simplifier l’architecture de déploiement et à moderniser la pile de développement, la plate-forme d’entreprise Adobe Experience Manager s’éloigne des déploiements basés sur les serveurs d’applications au profit des déploiements OSGi autonomes. Adobe continue de prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
+>Pour aider les clients d’AEM Forms à réduire le coût de propriété, à simplifier l’architecture de déploiement et à moderniser la pile de développement, Adobe Experience Manager Enterprise Platform s’éloigne des déploiements basés sur les serveurs d’applications pour privilégier les déploiements OSGi autonomes. Adobe continue à prendre en charge la pile AEM Forms JEE avec une matrice réduite de composants d’infrastructure.
 >
 >Avec la version 6.5, les composants d’infrastructure qui sont les moins utilisés par nos clients ne sont plus pris en charge, comme suit :
 >・ Serveur d’applications Oracle WebLogic
 >・ Base de données IBM DB2
 >・ Systèmes d’exploitation IBM AIX et Sun Solaris
 >
->Pour les nouvelles installations, dans la mesure du possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne pour tirer parti des dernières innovations concernant les formulaires adaptatifs réactifs pour les communications mobiles, les communications interactives à plusieurs et les intégrations de données d’arrière-plan à l’aide du modèle de données de formulaire.
+>Pour les nouvelles installations, lorsque cela est possible, il est recommandé de déployer AEM Forms sur la pile OSGi moderne afin d’exploiter les dernières innovations concernant les formulaires adaptatifs réactifs pour les communications interactives mobiles à canaux multiples et les intégrations de données d’arrière-plan à l’aide du modèle de données de formulaire.
 >
->Nous reconnaissons que les utilisateurs existants doivent continuer à déployer la pile AEM Forms sur JEE. Dans ce cas de figure, Adobe exige le déploiement d’AEM Forms JEE sur l’infrastructure prise en charge, comme décrit dans cette documentation. Si vous effectuez une mise à niveau vers AEM Forms 6.5 et que vous utilisez une plateforme non prise en charge dans la version précédente d’AEM Forms, vous pouvez contacter le support technique d’Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
+>Nous reconnaissons que les utilisateurs existants doivent continuer à déployer la pile AEM Forms sur JEE. Dans ce cas de figure, Adobe nécessite le déploiement d’AEM Forms JEE sur l’infrastructure prise en charge, comme décrit dans cette documentation. Si vous effectuez une mise à niveau vers AEM Forms 6.5 et utilisez une plateforme non prise en charge dans la version précédente d’AEM Forms, vous pouvez contacter l’assistance Adobe pour obtenir de l’aide sur la mise à niveau vers une plateforme prise en charge.
 
 ### Machines virtuelles Java (JVM) {#java-virtual-machines-jvm}
 
@@ -114,10 +117,8 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 
 >[!NOTE]
 >
->* AEM Forms on JEE ne prend en charge que les JVM 64 bits pour les environnements de production.
 >* Il est conseillé de consulter les bulletins de sécurité publiés par l’éditeur Java afin de garantir la sécurité des environnements de production et d’installer les mises à jour Java les plus récentes.
->
-
+>* AEM Forms on JEE ne prend en charge que les JVM 64 bits pour les environnements de production.
 
 
 ### Bases de données et persistance de CRX {#databases-and-crx-persistence}
@@ -151,7 +152,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   </tr> 
    <tr>
    <td>Oracle Database 19c </td>
-   <td>Microkernel du référentiel </td>
+   <td>Micronoyau de référentiel </td>
    <td>Pris en charge</td>
   </tr>
   <tr>
@@ -206,7 +207,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   <tr>
    <td>Oracle</td>
    <td><p>Pilote JDBC pour Oracle Database 19.3.0.0.0</p> <p>ojdbc8.jar (version 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Téléchargez à partir du site Web <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html"></a>Oracle.</p> </td>
+   <td><p>Télécharger à partir du site Web <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html"></a>Oracle.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -254,7 +255,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (noyau 3.x) (64 bits)</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</p> </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -278,7 +279,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 
 #### Environnement virtualisé {#virtualized-environment}
 
-Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance technique d’Adobe pour une résolution. Pour les problèmes que vous ne pouvez pas répliquer sur un ordinateur physique, contactez votre fournisseur  de virtuel.
+Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environnement virtuel. Toutefois, si vous rencontrez un problème avec AEM Forms sur un environnement virtuel, essayez de reproduire le problème sur un ordinateur physique. Si le problème persiste sur l’ordinateur physique, contactez l’assistance Adobe pour obtenir une résolution. Pour les problèmes que vous ne pouvez pas reproduire sur un ordinateur physique, contactez votre fournisseur d&#39;environnement virtuel.
 
 #### Environnements de développement {#development-environments}
 
@@ -305,7 +306,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 1. AEM Forms on JEE ne prend pas en charge et JBoss sur SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
-1. CRX-repository prend en charge la persistance de type TarMK, MongoDB et des bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Toutefois, sur un AEM Forms sur JEE , vous pouvez utiliser MongoMK avec CRX-repository et une base de données relationnelle prise en charge avec le serveur d’applications.
+1. CRX-repository prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de base de données différents entre le serveur d’applications et le référentiel CRX. Cependant, sur un environnement AEM Forms sur JEE, vous pouvez utiliser MongoMK avec CRX-repository et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’application WebSphere sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss.
 
@@ -318,7 +319,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 * AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 * AEM Forms on JEE ne prend pas en charge la mise en grappe verticale.
 * AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en grappes.
-* Pour plus d’informations sur le  des plateformes supprimées ou mises à jour, reportez-vous à la page  de résumé [des nouvelles fonctionnalités d’](../../forms/using/whats-new.md) AEM Forms 6.5.
+* Pour la liste des plateformes supprimées ou mises à jour, voir document de résumé [des nouvelles fonctionnalités d’](../../forms/using/whats-new.md) AEM Forms 6.5.
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
 
@@ -400,7 +401,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> version la plus récente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> - Dernière version</td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
@@ -425,7 +426,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
   </tr>
   <tr>
    <td>OpenOffice 4.1.2</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF et TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td>
   </tr>
  </tbody>
 </table>
@@ -493,7 +494,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [5
 
 Pour la configuration requise supplémentaire, voir :
 
-* [Configuration requise pour un déploiement sur serveur unique d’AEM Forms sur JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
+* [Configuration requise pour le déploiement sur serveur unique d’AEM Forms sur JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
 * [Configuration requise pour le déploiement en grappe d’AEM Forms on JEE
    ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
@@ -538,7 +539,7 @@ Pour la configuration requise supplémentaire, voir :
    * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
    * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 
-* Mémoire graphique - 128 Mo de GPU (256 Mo recommandés)
+* Mémoire graphique - 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
 * Lecteur de DVD-ROM
 * Internet Explorer 10 ou 11 ; Firefox 45.x
@@ -672,7 +673,7 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 |---|---|
 | Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 11 et versions ultérieures. |
 | Google Android | Android 5.1 et versions ultérieures. L’application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces et les smartphones les plus courants. |
-| Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d’exploitation Microsoft Windows 10. |
+| Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d&#39;exploitation Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
 
