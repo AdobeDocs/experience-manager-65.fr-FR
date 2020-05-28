@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '7153'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +36,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de c
 
 ## Créez un nœud de configuration du dossier de contrôle {#create-watched-folder-configuration-node}
 
-Pour configurer un dossier de contrôle, créez un nœud de configuration du dossier de contrôle. Pour créer le noeud de configuration, procédez comme suit :
+Pour configurer un dossier de contrôle, créez un nœud de configuration du dossier de contrôle. Effectuez les étapes suivantes pour créer le noeud de configuration :
 
 1. Connectez-vous à CRX DE Lite en tant qu’administrateur et accédez au dossier de /etc/fd/watchfolder/config.
 
@@ -51,7 +54,7 @@ Pour configurer un dossier de contrôle, créez un nœud de configuration du dos
    * `outputFilePattern`
    Pour obtenir la liste complète des prises en charge, voir [Propriétés du dossier de contrôle](#watchedfolderproperties).
 
-1. Cliquez sur **Enregistrer tout**. Après la création du nœud et l’enregistrement des propriétés. Les `input`dossiers `result`, `failure`, `preserve`et `stage`sont créés à l’emplacement spécifié dans la `folderPath` propriété.
+1. Cliquez sur **Enregistrer tout**. Après la création du nœud et l’enregistrement des propriétés. Les `input`dossiers, `result`, `failure``preserve`et `stage`dossiers sont créés à l’emplacement spécifié dans la propriété `folderPath` .
 
    La tâche de numérisation démarre l’analyse du dossier de contrôle dans un laps de temps défini.
 
@@ -69,7 +72,7 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
 * **runModes (chaîne)** : liste séparée par des virgules de modes d’exécution autorisés pour l’exécution du flux de travaux. Voici quelques exemples :
 
-   * author
+   * Auteur 
 
    * publish
 
@@ -87,7 +90,7 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
 >[!NOTE]
 >
->Même lorsqu’une entrée est marquée comme ayant expiré à l’aide de ce mécanisme, elle peut encore être traitée en arrière-plan, mais prend tout simplement plus de temps que prévu. Si le contenu d’entrée a été consommé avant le déclenchement du mécanisme d’expiration, le traitement peut même se terminer ultérieurement et la sortie être transférée vers le dossier de résultats. Si le contenu n’a pas été consommé avant l’expiration, il est très probable que le traitement se soldera par une erreur ultérieurement en tentant de consommer le contenu, et cette erreur sera également consignée dans le dossier des erreurs pour la même entrée. En revanche, si le traitement de l’entrée ne s’est jamais activé en raison d’une tâche intermittente/d’un échec de déclenchement de flux de travail (ce qui constitue le scénario que le mécanisme d’expiration vise à résoudre), naturellement aucune de ces deux éventualités ne se produisent. Par conséquent, pour les entrées figurant dans le dossier des erreurs et ayant été marquées comme échecs en raison d’une expiration (recherchez les messages tels que « Fichiers non traités après un laps de temps considérable, marqués comme échec. » dans le journal des erreurs), il est conseillé d’analyser le dossier des résultats (ainsi que le dossier des erreurs lui-même pour une autre entrée pour la même entrée) afin de vérifier si les éventualités décrites auparavant se sont vraiment produites.
+>Même lorsqu’une entrée est marquée comme ayant expiré à l’aide de ce mécanisme, elle peut toujours être traitée en arrière-plan, mais prend tout simplement plus de temps que prévu. Si le contenu d’entrée a été consommé avant le déclenchement du mécanisme d’expiration, le traitement peut même se terminer ultérieurement et la sortie être transférée vers le dossier de résultats. Si le contenu n’a pas été consommé avant l’expiration, il est très probable que le traitement se soldera par une erreur ultérieurement en tentant de consommer le contenu, et cette erreur sera également consignée dans le dossier des erreurs pour la même entrée. En revanche, si le traitement de l’entrée ne s’est jamais activé en raison d’une tâche intermittente/d’un échec de déclenchement de flux de travail (ce qui constitue le scénario que le mécanisme d’expiration vise à résoudre), naturellement aucune de ces deux éventualités ne se produisent. Par conséquent, pour les entrées figurant dans le dossier des erreurs et ayant été marquées comme échecs en raison d’une expiration (recherchez les messages tels que « Fichiers non traités après un laps de temps considérable, marqués comme échec. » dans le journal des erreurs), il est conseillé d’analyser le dossier des résultats (ainsi que le dossier des erreurs lui-même pour une autre entrée pour la même entrée) afin de vérifier si les éventualités décrites auparavant se sont vraiment produites.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, valeur par défaut true) :** si le mécanisme d’expiration doit ou non s’activer uniquement lorsque le dossier de contrôle est ralenti. Ce mécanisme est plus approprié pour les dossiers de contrôle ralentis car un petit nombre de fichiers qui traînent à l’état non traité (en raison d’une tâche intermittente/d’un échec de déclenchement de flux de travail) risquent potentiellement de freiner le traitement du lot entier lorsque l’option de ralentissement est activée. Si cette propriété est conservée sur true (valeur par défaut), le mécanisme d’expiration ne s’active pas pour les dossiers de contrôle qui ne sont pas ralentis. Si la propriété est conservée sur false, le mécanisme s’active toujours tant que la propriété stageFileExpirationDuration est un nombre positif.
 
@@ -99,7 +102,7 @@ You can use [file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-f
    * Fichiers portant des noms spécifiques ; par exemple, data* exclurait les fichiers et les dossiers nommés data1, data2, etc.
    * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-      * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+      * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
       * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][Mm][Ll]
 
@@ -112,7 +115,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
       * *.[dD][Aa]&#39;port&#39;
       * *.[Xx][Mm][Ll]
@@ -288,7 +291,7 @@ Par défaut, un dossier conteneur (/etc/fd/watchfolder/scripts) est fourni, dans
 Si vous prévoyez de placer vos scripts à un emplacement personnalisé, il est probable que l’utilisateur du service par défaut ne dispose pas d’autorisations de lecture sur l’emplacement personnalisé. Pour ce type de scénario, procédez aux étapes suivantes pour fournir les autorisations nécessaires pour l’emplacement personnalisé :
 
 1. Create a system user programmatically or via the console https://&#39;[server]:[port]&#39;/crx/explorer. Vous pouvez également utiliser un utilisateur système existant. Ici, il est important de travailler avec des utilisateurs système plutôt qu’avec des utilisateurs disposant de licences ordinaires.
-1. Fournissez des autorisations de lecture à l’utilisateur système existant ou qui vient d’être créé pour l’emplacement personnalisé dans lequel les scripts sont stockés. Vous pouvez disposer de plusieurs emplacements personnalisés. Fournissez au moins des autorisations de lecture à tous les emplacements personnalisés.
+1. Fournissez des autorisations de lecture à l’utilisateur système existant ou qui vient d’être créé pour l’emplacement personnalisé dans lequel les scripts sont stockés. Vous pouvez disposer de plusieurs emplacements personnalisés. Fournissez au moins des autorisations de lecture pour tous les emplacements personnalisés.
 1. Dans la console de configuration Felix (/system/console/configMgr), recherchez le mappage de l’utilisateur de service pour les dossiers Watch Folder. Ce mappage ressemble à ce qui suit : ’Mapping: adobe-aemds-core-watch-folder=...’.
 1. Cliquez sur le mappage. Pour l’entrée &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, remplacez fd-service par l’ID de l’utilisateur système personnalisé. Cliquez sur Enregistrer.
 
@@ -338,7 +341,7 @@ Les API ProcessorContext suivants sont également disponibles :
 * getConfigParameters : renvoie un mappage inaltérable de type Map&lt;String, Object>. La carte contient les paramètres de configuration d’un dossier de contrôle.
 * setResult : L’implémentation de ContentProcessor utilise l’API pour écrire dans le document de sortie le dossier de résultats. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier
 
-Considération pour l’API setResult, lorsqu’elle est utilisée dans le  du :
+Considération pour l’API setResult, lorsqu’elle est utilisée dans les workflows :
 
 * Pour ajouter un nouveau document de sortie qui contribue à la sortie globale de flux de travail, appelez l’API setResult avec un nom qui n’a été utilisé comme nom de sortie par une étape précédente.
 * Pour mettre à jour un résultat généré par une étape précédente, appelez l’API setResult avec un nom déjà utilisé par une étape précédente.
@@ -560,7 +563,7 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.*
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * *.[dD][Aa]&#39;port&#39;
    * *.[Xx][Mm][Ll]
 
@@ -633,7 +636,7 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 ### Créer un flux de travaux {#create-a-workflow}
 
 1. Ouvrez le flux de travaux AEM UI dans une fenêtre du navigateur.
-https://[servername]:&#39;port&#39;/worklow
+https://[servername]:&#39;port&#39;/workflow
 
 1. Dans la vue Modèles, cliquez sur **Nouveau**. Dans la boîte de dialogue Nouveau flux de travaux, indiquez le **Titre**, puis cliquez sur **OK**.
 
@@ -653,7 +656,7 @@ https://[servername]:&#39;port&#39;/worklow
 
 ### Configuration du dossier de contrôle {#configure-the-watched-folder}
 
-1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. https://&#39;[serveur]:[port]&#39;/crx/de/
+1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. https://&#39;[server]:[port]&#39;/crx/de/
 
 1. Accédez au dossier /etc/fd/watchfolder/config/ et créez un noeud de type nt:unstructured.
 
