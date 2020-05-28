@@ -10,7 +10,10 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4bda1be676ab357c68b541dbd41f108f274dd2d7
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '3075'
+ht-degree: 85%
 
 ---
 
@@ -49,7 +52,7 @@ Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les élé
 
 ![Interface de création de formulaires adaptatifs](assets/formeditor.png)
 
-**A.** Barre latérale **B.** Barre d’outils **C.** Page de formulaire adaptatif
+**A.** Barre latérale **B.** Barre d&#39;outils de la page **C.** Page de formulaire adaptatif
 
 ### Barre latérale {#sidebar}
 
@@ -79,17 +82,17 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
 
 * **Explorateur de propriétés**
 
-   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du de formulaires adaptatifs :
+   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour afficher les propriétés du conteneur de formulaire adaptatif :
 
-   Sélectionnez un composant, puis appuyez au niveau ![du](assets/field-level.png) champ > **[!UICONTROL de formulaire]** adaptatif, puis appuyez sur ![cmppr](assets/cmppr.png).
+   Sélectionnez un composant, puis appuyez sur au niveau ![du](assets/field-level.png) champ > Conteneur **[!UICONTROL de formulaire]** adaptatif, puis sur ![cmppr](assets/cmppr.png).
 
 * **Explorateur de ressources**
 
-   Sépare différents types de contenu, tels que les images, les , les pages, les films, etc.
+   Sépare différents types de contenu, tels que des images, des documents, des pages, des films, etc.
 
 * **Explorateur de composants**
 
-   Comprend les composants que vous pouvez utiliser pour créer un formulaire adaptatif. Vous pouvez faire glisser des composants sur le formulaire adaptatif afin d’ajouter des éléments de formulaire, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants.
+   Inclut des composants que vous pouvez utiliser pour créer un formulaire adaptatif. Vous pouvez faire glisser des composants sur le formulaire adaptatif afin d’ajouter des éléments de formulaire, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants.
 
 <table>
  <tbody>
@@ -202,7 +205,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
    <td>Ajoute un bouton pour enregistrer les données de formulaire.</td>
   </tr>
   <tr>
-   <td>(Obsolète) Signature tactile</td>
+   <td>Signature tactile</td>
    <td>Ajoute un champ destiné à la saisie de signatures tactiles..</td>
   </tr>
   <tr>
@@ -298,19 +301,19 @@ For more best practices around adaptive forms, see [Best practices for working w
 
 >[!NOTE]
 >
->Les composants de formulaire adaptatif ne prennent pas en charge les langues s’écrivant de droite à gauche (RTL). Par exemple, l&#39;hébreu.
+>Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). Par exemple, hébreu.
 
 ### Barre d’outils Page {#page-toolbar}
 
 La barre d’outils de la page, située en haut de l’écran, propose des options permettant d’afficher un aperçu du formulaire, d’en modifier les propriétés, puis d’en modifier la disposition. Vous pouvez prévisualiser le formulaire lors de son écriture et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
-* **Activer/désactiver le panneau** latéral ![bascule-panneau](assets/toggle-side-panel.png)latéral : Permet d’afficher ou de masquer la barre latérale.
+* **Activer/désactiver le panneau** latéral ![pour activer/désactiver le panneau](assets/toggle-side-panel.png)latéral : Permet d’afficher ou de masquer la barre latérale.
 
-* **Informations** sur la page ![thème-options](assets/theme-options.png): Vous permet de  les propriétés de la page, de publier/d’annuler la publication d’un formulaire, de  un processus de formulaire et d’ouvrir le formulaire dans une interface utilisateur classique.
+* **Informations** sur la page ![Thème-options](assets/theme-options.png): Permet de vue des propriétés de page, de publier/annuler la publication d’un formulaire, de début d’un processus de formulaire et d’ouvrir le formulaire dans l’interface utilisateur classique.
 
-* **Emulateur** ![règle](assets/ruler.png): Vous permet d’imiter l’aspect de votre formulaire pour différentes tailles d’affichage, telles que les tablettes et les smartphones.
+* **** Règle ![d&#39;émulateur](assets/ruler.png): Vous permet d’imiter l’aspect de votre formulaire pour différentes tailles d’affichage, telles que les tablettes et les smartphones.
 
-* **Modifier**: Permet de sélectionner d’autres modes, tels que : **[!UICONTROL Modifier]**, **[!UICONTROL Style]**, **[!UICONTROL Développeur]** et **[!UICONTROL Conception.]**
+* **Modifier**: Permet de sélectionner d’autres modes, tels que : **[!UICONTROL Edition]**, **[!UICONTROL Style]**, **[!UICONTROL Développeur]** et **[!UICONTROL Conception]**.
 
    * **Modifier** : Modifie les propriétés du formulaire et de ses composants. Exemple : l’ajout d’un composant, le dépôt d’une image et l’indication des champs obligatoires.
    * **Style** : Définit l’aspect des composants de votre formulaire. Par exemple, en mode Style, vous pouvez sélectionner un panneau et définir sa couleur d’arrière-plan.
