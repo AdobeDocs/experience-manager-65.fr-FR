@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 44dbabeeea4e4e8d17cc69a2d8ea791c98be2bd2
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 37%
 
 ---
 
@@ -29,17 +32,17 @@ Vous pouvez définir des profils vidéo à utiliser pour les éléments HTML5. L
 
 You can also configure the design of the video components and parameters for [!UICONTROL Playback], [!UICONTROL Flash], and [!UICONTROL Advanced].
 
-## Installation de FFmpeg et configuration d’AEM {#install-ffmpeg}
+## Installation de mpeg et configuration d’AEM {#install-ffmpeg}
 
 The Video Component relies on the third-party open-source product FFmpeg for proper transcoding of videos that can be downloaded from [https://ffmpeg.org/](https://ffmpeg.org/). Après avoir installé FFmpeg, vous devez configurer AEM pour pouvoir utiliser un codec audio et des options d’exécution spécifiques.
 
-**Pour installer FFmpeg pour votre plateforme**:
+**Pour installer FFmpeg pour votre plate-forme**:
 
 * **Sous Windows :**
 
    1. Téléchargez le fichier binaire compilé en tant que `ffmpeg.zip`
    1. Décompressez-le dans un dossier.
-   1. Définissez la variable  système  de la variable `PATH` sur `<*your-ffmpeg-locatio*n>\bin`
+   1. Définissez la variable d’environnement système `PATH` sur `<*your-ffmpeg-locatio*n>\bin`
    1. Redémarrez AEM.
 
 * **Sur Mac OS X :**
@@ -51,7 +54,7 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
       `sudo port install ffmpeg`
 
-      `FFmpeg` doit se trouver dans `PATH` ce répertoire pour qu’AEM puisse le récupérer par le biais de la ligne de commande.
+      `FFmpeg` doit se trouver dans `PATH` le afin qu’AEM puisse le récupérer via la ligne de commande.
 
 * **Utilisation de la version précompilée d’OS X 10.6 :**
 
@@ -63,8 +66,12 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
 
 **Pour configurer AEM**:
 
+>[!NOTE]
+>
+>Ces étapes ne sont nécessaires que si une personnalisation plus poussée des codecs est requise.
+
 1. Open [!UICONTROL CRXDE Lite] in your web browser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Select the `/libs/settings/dam/video/format_aac/jcr:content` node and ensure that the node properties are as follows:
+2. Select the `/libs/settings/dam/video/format_aac/jcr:content` node and ensure that the node properties are as follows:
 
    * audioCodec :
 
@@ -78,15 +85,15 @@ The Video Component relies on the third-party open-source product FFmpeg for pro
        -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
       ```
 
-1. To customize the configuration, create an overlay in `/apps/settings/` node and move the same structure under `/conf/global/settings/` node. It cannot be edited in `/libs` node. Par exemple, pour superposer un chemin `/libs/settings/dam/video/fullhd-bp`, créez-le à `/conf/global/settings/dam/video/fullhd-bp`.
+3. To customize the configuration, create an overlay in `/apps/settings/` node and move the same structure under `/conf/global/settings/` node. It cannot be edited in `/libs` node. Par exemple, pour superposer un chemin `/libs/settings/dam/video/fullhd-bp`, créez-le à `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
    >Remplacez et modifiez le profile-node entier et pas seulement la propriété ayant besoin d’être modifiée. Ces ressources ne sont pas résolues via SlingResourceMerger.
 
-1. Si vous avez modifié des propriétés, cliquez sur **[!UICONTROL Tout enregistrer]**.
+4. Si vous avez modifié des propriétés, cliquez sur **[!UICONTROL Tout enregistrer]**.
 
 >[!NOTE]
 >
->Les modèles de flux de travaux prêtes à l’emploi ne sont pas conservés lors de la mise à niveau de votre instance AEM. Adobe vous recommande de copier les modèles de processus prêtes à l’emploi avant de les modifier. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>Les modèles de processus prêtes à l’emploi ne sont pas conservés lors de la mise à niveau de votre instance AEM. Adobe recommande de copier les modèles de processus prêtes à l’emploi avant de les modifier. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
 
