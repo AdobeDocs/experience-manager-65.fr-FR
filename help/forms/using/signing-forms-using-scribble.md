@@ -1,6 +1,6 @@
 ---
-title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles (obsolètes)
-seo-title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles (obsolètes)
+title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
+seo-title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
 description: Signature de formulaires à l’aide de la saisie tactile
 seo-description: Signature de formulaires à l’aide de la saisie tactile
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
@@ -9,14 +9,17 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 83%
 
 ---
 
 
-# Apply electronic signatures to a form using (Deprecated) scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Application de signatures électroniques à un formulaire à l’aide de signatures tactiles{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-You can use the (Deprecated) **Scribble Signature** component and **Signature Step** component to draw (Scribble) signature on an adaptive form. Le composant Étape de signature affiche une version PDF du formulaire adaptatif. Vous avez besoin de l’option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour utiliser le composant Étape de signature.
+Vous pouvez utiliser le composant **Signature tactile** et le composant **Étape de signature** pour tracer la signature (saisie tactile) sur un formulaire adaptatif. Le composant Étape de signature affiche une version PDF du formulaire adaptatif. Vous avez besoin de l’option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour utiliser le composant Étape de signature.
 
 Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour signer un formulaire. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
 
@@ -27,7 +30,7 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
 1. Créez une option Document d’enregistrement activée ou un formulaire adaptatif basé sur modèle de formulaire. Pour obtenir des informations détaillées, voir [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
 1. Drag-and-drop the **Scribble Signature** component from component browser to the adaptive form.
 1. Tap the **Configure** ![configure](assets/configure.png) icon. Vous ouvrez ainsi le navigateur de propriétés et affiche les propriétés du composant Signature tactile. Configurez les propriétés du composant Signature tactile.
-1. Faites glisser le composant Etape de signature de l’explorateur de composants vers le formulaire adaptatif.
+1. Faites glisser le composant Signature Step de l’explorateur de composants vers le formulaire adaptatif.
 
    >[!NOTE]
    >
