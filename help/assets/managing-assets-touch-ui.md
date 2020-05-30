@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
 workflow-type: tm+mt
-source-wordcount: '9298'
-ht-degree: 66%
+source-wordcount: '9304'
+ht-degree: 65%
 
 ---
 
@@ -301,11 +301,11 @@ Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble pa
 
 ### Chargements en continu {#streamed-uploads}
 
-If you upload many assets to [!DNL Experience Manager], the I/O requests to server increase drastically, which reduces the upload efficiency and can even cause some upload task to time out. [!DNL Experience Manager Assets] prend en charge le téléchargement en flux continu des ressources. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Streamed upload is enabled by default in [!DNL Assets].
+Si vous transférez de nombreux fichiers vers Adobe Experience Manager, les demandes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du transfert et peut même entraîner l’expiration de certaines tâches de transfert. [!DNL Experience Manager Assets] prend en charge le téléchargement en flux continu des ressources. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Streaming upload is disabled for [!DNL Experience Manager] running on JEE server with servlet-api version lower than 3.1.
+>Le téléchargement en flux continu est désactivé pour Adobe Experience Manager s’exécutant sur le serveur JEE avec une version api servlet inférieure à 3.1.
 
 ### Extraction d’une archive ZIP contenant des ressources {#extractzip}
 
@@ -514,7 +514,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
-   ![Ajouter icône de rendu pour télécharger un nouveau rendu](assets/chlimage_1-16.png)
+   ![Ajouter l’icône de rendu pour télécharger un nouveau rendu](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -573,7 +573,7 @@ Voir [Téléchargement de fichiers à partir d’Experience Manager](/help/asset
 >
 >Pour obtenir des informations spécifiques à Dynamic Media, voir [Publication de ressources Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
 
-1. Accédez à l’emplacement des ressources/du dossier que vous souhaitez publier.
+1. Accédez à l’emplacement des ressources/dossiers que vous souhaitez publier.
 
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ont été modifiées ou dont la publication a été annulée depuis leur dernière publication/annulation de publication sont affichées. Choisissez les références que vous souhaitez publier.
@@ -620,7 +620,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] icon from the toolbar to display the properties page.
 1. Sous l’onglet **[!UICONTROL Autorisations]**, ajoutez les membres ou les groupes sous **[!UICONTROL Groupe d’utilisateurs fermé]**.
 
-   ![Utilisateur Ajouter dans un groupe d’utilisateurs fermé](assets/add_user.png)
+   ![Ajouter l’utilisateur dans un groupe d’utilisateurs fermé](assets/add_user.png)
 
 1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Then, select the path to a login page in [!DNL Experience Manager], and save the changes.
 
@@ -753,7 +753,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
-   ![Zone de commentaire dans la boîte de dialogue Annotation Ajouter](assets/chlimage_1-30.png)
+   ![Zone Commentaire dans la boîte de dialogue Ajouter l’annotation](assets/chlimage_1-30.png)
 
 1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour signaler une annotation à Aaron MacDonald, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l’adresse électronique d’Aaron dans la liste pour la marquer avec le commentaire. De même, vous pouvez marquer d’autres utilisateurs à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
