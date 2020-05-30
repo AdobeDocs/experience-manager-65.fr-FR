@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 876589d26f17dc088531c3f34deea0fab4c7726a
+source-git-commit: b6a7648699bc8e8e041749fb03998f86a27292ce
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 87%
+source-wordcount: '3129'
+ht-degree: 86%
 
 ---
 
@@ -29,7 +29,7 @@ Si vous utilisez AEM comme système de gestion de contenu web, vous pouvez ajout
 
 ## Ajout d’un composant Dynamic Media à une page  {#adding-a-dynamic-media-component-to-a-page}
 
-L’ajout d’un composant Dynamic Media, Interactive Media, Panoramic Media ou Video 360 Media à une page est identique à l’ajout d’un composant sur n’importe quelle page. Les composants Dynamic Media sont décrits dans les sections suivantes.
+Ajouter un composant Média 3D, Contenu multimédia dynamique, Contenu multimédia interactif, Contenu multimédia panoramique, Vidéo de recadrage dynamique ou Vidéo 360 sur une page revient à ajouter un composant à une page. Les composants Dynamic Media sont décrits dans les sections suivantes.
 
 1. Dans AEM, ouvrez la page où vous souhaitez ajouter le composant Dynamic Media.
 1. Dans le panneau situé à gauche de la page (vous devrez peut-être activer/désactiver l’affichage du panneau latéral), cliquez sur l’icône **[!UICONTROL Composants]** .
@@ -40,10 +40,6 @@ L’ajout d’un composant Dynamic Media, Interactive Media, Panoramic Media ou 
    ![6_5_360video_wcmcomponent](assets/6_5_360video_wcmcomponent.png)
 
 1. Drag a **[!UICONTROL Dynamic Media]** component that you want to use and drop it in the desired location on the page.
-
-   Dans l’exemple ci-dessous, le composant **[!UICONTROL Média vidéo 360]** est utilisé.
-
-   ![6_5_360video_wcmcomponentdrag](assets/6_5_360video_wcmcomponentdrag.png)
 
 1. Placez le pointeur de la souris directement sur le composant. Lorsque le composant est entouré d’une zone bleue, appuyez une fois pour afficher la barre d’outils du composant. Appuyez sur l’icône **[!UICONTROL Configuration (clé à molette)]**.
 
@@ -57,7 +53,7 @@ L’ajout d’un composant Dynamic Media, Interactive Media, Panoramic Media ou 
 
    Composant Dynamic Media Média vidéo 360.
 
-1. Une fois que vous avez terminé, près du coin supérieur droit de la boîte de dialogue, appuyez sur la coche pour enregistrer vos modifications.
+1. Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, cochez la case pour enregistrer vos modifications.
 
 ### Enabling Dynamic Media components {#enabling-dynamic-media-components}
 
