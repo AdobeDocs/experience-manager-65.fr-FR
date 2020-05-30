@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
+source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+workflow-type: tm+mt
+source-wordcount: '2078'
+ht-degree: 97%
 
 ---
 
@@ -32,13 +35,13 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/managing-assets-touch-ui.md).
 
-## Démarrage rapide : Visionneuses d’images    {#quick-start-image-sets}
+## Démarrage rapide : Visionneuses d’images  {#quick-start-image-sets}
 
 Pour démarrer rapidement :
 
 1. [Téléchargez les images maître pour plusieurs vues.](#uploading-assets-in-image-sets)
 
-   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images ont une dimension de 2 000 pixels minimum pour un zoom optimal. Contenu multimédia dynamique peut générer des images jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
+   Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
    AEM Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
@@ -48,10 +51,10 @@ Pour démarrer rapidement :
 
    Pour créer une visionneuse d’images dans AEM Assets, appuyez ou cliquez sur **[!UICONTROL Créer > Visionneuses d’images]**. Ajoutez ensuite des images et cliquez sur **[!UICONTROL Enregistrer]**.
 
-   Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
-   >Les visionneuses par lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation des fichiers et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.
+   >Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de fichiers et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.
 
    Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
@@ -70,7 +73,7 @@ Pour démarrer rapidement :
 
 1. [Publiez une visionneuse d’images.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   La publication d’une visionneuse d’images active la chaîne URL et d’incorporation. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
+   La publication d’une visionneuse d’images active l’URL et le code incorporé. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
 
 1. [Liez des URL à l’application web](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](/help/assets/embed-code.md).
 
@@ -86,7 +89,7 @@ Si vous rencontrez des problèmes lors de la création des visionneuses, reporte
 
 ## Chargement de ressources dans les visionneuses d’images {#uploading-assets-in-image-sets}
 
-Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2000 pixels dans leur dimension la plus grande. Les visionneuses d’images prennent en charge de nombreux formats de fichier image mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande. Les visionneuses d’images prennent en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans AEM Assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
@@ -108,7 +111,7 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >* Une miniature de couleur noire, marron et verte.
 
 
-## Création d’une visionneuse d’images    {#creating-image-sets}
+## Création d’une visionneuse d’images  {#creating-image-sets}
 
 Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou par l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
@@ -148,7 +151,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
-1. Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources une fois qu&#39;elles ont été ajoutées.
+1. Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources une fois qu’elles ont été ajoutées.
 
    Si nécessaire, faites glisser l’icône Réorganiser d’une ressource vers la droite du nom de fichier de la ressource pour réorganiser les images vers le haut ou le bas de la liste définie.
 
@@ -165,9 +168,9 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
    >
    >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse d’images ou autoriser AEM à la sélectionner automatiquement en fonction des fichiers de la visionneuse d’images. Pour sélectionner une miniature, appuyez sur **[!UICONTROL Modifier la miniature]** au-dessus du champ Titre de la page de l’éditeur de visionneuse d’images, puis sélectionnez une image (vous pouvez également accéder à d’autres dossiers pour rechercher des images). Si vous avez sélectionné une miniature, puis souhaitez qu’AEM en génère une depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers]** **[!UICONTROL les miniatures automatiques]**.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**. La visionneuse d’images nouvellement créée apparaît dans le dossier dans laquelle vous l’avez créée.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses d’images    {#viewing-image-sets}
+## Affichage de visionneuses d’images  {#viewing-image-sets}
 
 Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
 
@@ -195,7 +198,7 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 >
 >Vous pouvez afficher les visionneuses par le biais de l’interface utilisateur, comme indiqué dans la section [Modification d’une visionneuse d’images](#editing-image-sets).
 
-## Modification d’une visionneuse d’images    {#editing-image-sets}
+## Modification d’une visionneuse d’images  {#editing-image-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’images, comme suit :
 
@@ -231,10 +234,10 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-## Aperçu d’une visionneuse d’images    {#previewing-image-sets}
+## Aperçu d’une visionneuse d’images  {#previewing-image-sets}
 
 Voir aussi [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication de visionneuses d’images    {#publishing-image-sets}
+## Publication de visionneuses d’images  {#publishing-image-sets}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
