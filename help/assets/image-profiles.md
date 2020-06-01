@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: e78b3701e57b1954f03591c38b72e3dd33e8ef46
+source-git-commit: d40488ce830eb15b4209145df03dff027f9a2470
 workflow-type: tm+mt
-source-wordcount: '2674'
+source-wordcount: '2682'
 ht-degree: 93%
 
 ---
@@ -23,6 +23,10 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 >[!NOTE]
 >
 >Le recadrage intelligent est disponible uniquement dans le mode Scene7 de Dynamic Media.
+
+>[!IMPORTANT]
+>
+>Les profils d’image ne s’appliquent pas aux fichiers PDF.
 
 ## Options de recadrage {#crop-options}
 
