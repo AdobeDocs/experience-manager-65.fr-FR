@@ -4,10 +4,10 @@ description: Découvrez comment prévisualiser des fichiers 3D
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 90%
+source-wordcount: '564'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Manager prend en charge le transfert, la diffusion et la prévi
 
 La visionneuse 3D interactive est disponible sur la page de détails de la ressource dans AEM. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
-Voir aussi [Utilisation de fichiers 3D dans Contenu multimédia](/help/assets/assets-3d.md)dynamique.
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
 ## Formats pris en charge pour la prévisualisation 3D dans AEM {#supported-3d-previewing-assets}
 
