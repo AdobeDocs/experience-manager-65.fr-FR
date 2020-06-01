@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS and AEM as a Cloud Service
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: 46848fee0a3f838354ec65f2ea733cf70ac53deb
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2162'
 ht-degree: 13%
 
 ---
@@ -170,9 +170,7 @@ Voir aussi [Prévisualisation de fichiers à l’aide de l’interface](/help/as
 
 ## A propos de l&#39;utilisation du composant Média 3D {#working-with-three-d-media-component}
 
-Contenu multimédia dynamique comprend un composant Contenu multimédia 3D dynamique que vous pouvez utiliser dans les sites AEM pour activer l’affichage interactif de modèles 3D sur des pages Web.
-
-Cette section traite des sujets suivants :
+Contenu multimédia dynamique comprend un composant Contenu multimédia 3D dynamique que vous pouvez utiliser dans les sites AEM pour activer l’affichage interactif de modèles 3D sur vos pages Web.
 
 * [Ajouter le composant Média 3D au modèle de page](#adding-three-d-media-component-to-page-template)
 * [Ajouter le composant Média 3D à une page Web](#adding-the-three-d-media-component-to-a-web-page)
