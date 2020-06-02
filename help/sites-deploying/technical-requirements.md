@@ -11,7 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+workflow-type: tm+mt
+source-wordcount: '3119'
+ht-degree: 84%
 
 ---
 
@@ -100,7 +103,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
    <td>Niveau de prise en charge<br /> </td>
   </tr>
   <tr>
-   <td>JDK Oracle Java SE 12 `\[1]`</td>
+   <td>Oracle Java SE 12 JDK [1]</td>
    <td>Z : Non pris en charge </td>
   </tr>
   <tr>
@@ -108,23 +111,23 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
    <td>A : Pris en charge</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 10 JDK `\[1]`</td>
+   <td>Oracle Java SE 10 JDK [1]</td>
    <td>Z : Non pris en charge </td>
   </tr>
   <tr>
-   <td>JDK Oracle Java SE 9 `\[1]`</td>
+   <td>Oracle Java SE 9 JDK [1]</td>
    <td>Z : Non pris en charge</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK – 64 bits</td>
-   <td>A: Supported `\[3]`<br /> </td>
+   <td>A : Pris en charge [3]</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.9, JRE 1.8.0 `\[2]`</td>
+   <td>Machine virtuelle IBM J9 – Version 2.9, JRE 1.8.0 [2]</td>
    <td>A : Pris en charge</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.8, JRE 1.8.0 `\[2]`</td>
+   <td>Machine virtuelle IBM J9 – Version 2.8, JRE 1.8.0 [2]</td>
    <td>A : Pris en charge</td>
   </tr>
  </tbody>
@@ -141,15 +144,15 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 
 | **Plate-forme** | **Description** | **Niveau de prise en charge** |
 |---|---|---|
-| **Système de fichiers avec fichiers TAR`\[1]`** | Référentiel | A : Pris en charge  |
-| **Système de fichiers avec entrepôt de données`\[1]`** | Binaires | A : Pris en charge |
-| Stockage de binaires dans des fichiers TAR sur le système de fichiers `\[1]` | Binaires | Z : Non pris en charge pour la production |
+| **Système de fichiers avec fichiers TAR[1 ]** | Référentiel | A : Pris en charge  |
+| **Système de fichiers avec Datastore[1 ]** | Binaires | A : Pris en charge |
+| Store binaries in TAR files on file system [1] | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : Pris en charge |
 | Stockage Microsoft Azure Blob | Binaires | A : Pris en charge |
 | MongoDB Enterprise 4.0  | Référentiel | A: Supported [2, 3] |
 | MongoDB Enterprise 3.6 | Référentiel | Z : Non pris en charge |
 | MongoDB Enterprise 3.4 | Référentiel | Z : Non pris en charge |
-| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  `\[4]` |
+| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  [4] |
 | Oracle Database 12c (12.1.x) | Base de données de formulaires et de référentiels | R : Prise en charge limitée  |
 | Microsoft SQL Server 2016 | Base de données de formulaires | A : Pris en charge |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : Pris en charge |
@@ -196,11 +199,11 @@ La version d’API de servlet minimum requise est 3.1.
 |---|---|
 | **Moteur de servlet intégré au fichier de démarrage rapide (Jetty 9.4)** | A : Pris en charge |
 | Oracle WebLogic Server 12.2 (12cR2) | Z : Non pris en charge |
-| IBM WebSphere Application Server en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM JRE 1.8 | R : Prise en charge restreinte des nouveaux contrats `\[2]` |
-| IBM WebSphere Application Server 9.0 et IBM JRE 1.8 | R : Prise en charge restreinte des nouveaux contrats `\[1]` `\[2]` |
-| Apache Tomcat 8.5.x | R : Prise en charge restreinte des nouveaux contrats `\[2]` |
+| IBM WebSphere Application Server en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM JRE 1.8 | R: Restricted Support for new contracts [2] |
+| IBM WebSphere Application Server 9.0 et IBM JRE 1.8 | R: Restricted Support for new contracts [1] [2] |
+| Apache Tomcat 8.5.x | R: Restricted Support for new contracts [2] |
 | JBoss EAP 7.2.x avec JBoss Application Server | Z : Non pris en charge |
-| JBoss EAP 7.1.4 avec JBoss Application Server  | R : Prise en charge restreinte des nouveaux contrats `\[1]` `\[2]` |
+| JBoss EAP 7.1.4 avec JBoss Application Server  | R: Restricted Support for new contracts [1] [2] |
 | JBoss EAP 7.0.4 avec JBoss Application Server | Z : Non pris en charge |
 
 1. Recommandé pour les déploiements avec AEM Forms.
@@ -212,11 +215,11 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 
 | **Plate-forme** | **Niveau de prise en charge** |
 |---|---|
-| **Linux, en fonction de la distribution Red Hat**  | A : Pris en charge `\[1]` `\[3]` |
-| Linux, en fonction de la distribution Debian, y compris Ubuntu | A : Pris en charge `\[2]` |
+| **Linux, en fonction de la distribution Red Hat**  | A: Supported [1] [3] |
+| Linux, en fonction de la distribution Debian, y compris Ubuntu | A: Supported [2] |
 | Linux, en fonction de la distribution SUSE | A : Pris en charge |
-| Microsoft Windows Server 2019 `\[4]` | R : Prise en charge restreinte des nouveaux contrats |
-| Microsoft Windows Server 2016 `\[4]` | R : Prise en charge restreinte des nouveaux contrats `\[5]` |
+| Microsoft Windows Server 2019 [4] | R : Prise en charge restreinte des nouveaux contrats |
+| Microsoft Windows Server 2016 [4] | R: Restricted Support for new contracts [5] |
 | Microsoft Windows Server 2012 R2 | Z : Non pris en charge |
 | Oracle Solaris 11 | Z : Non pris en charge |
 | IBM AIX 7.2 | Z : Non pris en charge |
@@ -249,7 +252,7 @@ L’utilisation des serveurs web ci-dessous est prise en charge avec Dispatcher 
 | Microsoft IIS 10 (Internet Information Server) | A : Pris en charge |
 | Microsoft IIS 8.5 (Internet Information Server) | Z : Non pris en charge |
 
-1. Les serveurs web développés sur la base du code source Apache httpd bénéficieront du même niveau de prise en charge que la version de httpd sur laquelle ils sont basés : En cas de doute, demandez à Adobe de confirmer le niveau d’assistance associé au produit serveur correspondant. Cas suivants :
+1. Les serveurs web développés sur la base du code source Apache httpd bénéficieront du même niveau de prise en charge que la version de httpd sur laquelle ils sont basés : En cas de doute, demandez à Adobe de confirmer le niveau de support associé au produit serveur correspondant. Cas suivants :
 
    1. le serveur HTTP a été développé en utilisant uniquement les distributions source Apache officielles; ou
    1. le serveur HTTP a été distribué comme composant du système d’exploitation sur lequel il est exécuté. Exemples : Serveur IBM HTTP, Serveur Oracle HTTP 
@@ -298,7 +301,7 @@ L’interface utilisateur d’AEM est optimisée en vue d’une utilisation sur 
    <td>A : Pris en charge</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox dernier ESR `\[1]`</td>
+   <td>Mozilla Firefox, dernière version Extended Support Release (ESR) [1]</td>
    <td>A : Pris en charge</td>
    <td>A : Pris en charge</td>
   </tr>
@@ -314,7 +317,7 @@ L’interface utilisateur d’AEM est optimisée en vue d’une utilisation sur 
   </tr>
   <tr>
    <td>Apple Safari sur iOS 12.x</td>
-   <td>A : Pris en charge `\[2]`</td>
+   <td>A : Pris en charge [2]</td>
    <td>Z : Non pris en charge</td>
   </tr>
   <tr>
@@ -430,15 +433,15 @@ Pour utiliser Dynamic Media sous Windows, les redistribuables Microsoft Visual
 
 Pour Windows x64 :
 
-* Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
-* Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/fr-fr/download/details.aspx?id=13523)
+* Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/fr-fr/download/details.aspx?id=40784)
+* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/fr-fr/download/details.aspx?id=48145)
 
 Pour Windows x86 :
 
 * Get Microsoft Visual Studio 2010 redistributable at [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
 * Get Microsoft Visual Studio 2013 redistributable at [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Get Microsoft Visual Studio 2015 redistributable at [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/fr-fr/download/details.aspx?id=52685)
 
 #### Mac OS {#macos}
 
@@ -454,7 +457,7 @@ Pour Windows x86 :
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> version la plus récente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> - Dernière version</td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
@@ -479,7 +482,7 @@ Pour Windows x86 :
   </tr>
   <tr>
    <td>OpenOffice 4.1.2</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF et TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM RTF et TXT</td>
   </tr>
  </tbody>
 </table>
@@ -518,4 +521,4 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 ### Conditions requises pour AEM Assets pour le traitement des ressources lourdes en métadonnées sous Linux {#assetsonlinux}
 
-Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux qui contient GLIBC_2.14, par exemple un noyau Linux version 3.1.x. Il améliore les performances pour le traitement des fichiers qui contiennent une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux qui contient GLIBC_2.14, par exemple un noyau Linux version 3.1.x. Il améliore les performances de traitement des fichiers qui contiennent une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
