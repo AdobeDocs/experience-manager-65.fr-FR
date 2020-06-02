@@ -11,10 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+source-git-commit: a299e26668b1f1f08cca8d4a8085da185522ec96
 workflow-type: tm+mt
-source-wordcount: '3119'
-ht-degree: 84%
+source-wordcount: '3118'
+ht-degree: 86%
 
 ---
 
@@ -100,7 +100,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
  <tbody>
   <tr>
    <td>Plate-forme</td>
-   <td>Niveau de prise en charge<br /> </td>
+   <td>Niveau de prise en charge</td>
   </tr>
   <tr>
    <td>Oracle Java SE 12 JDK [1]</td>
@@ -144,15 +144,15 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 
 | **Plate-forme** | **Description** | **Niveau de prise en charge** |
 |---|---|---|
-| **Système de fichiers avec fichiers TAR[1 ]** | Référentiel | A : Pris en charge  |
-| **Système de fichiers avec Datastore[1 ]** | Binaires | A : Pris en charge |
-| Store binaries in TAR files on file system [1] | Binaires | Z : Non pris en charge pour la production |
+| **Système de fichiers avec fichiers TAR** `[1]` | Référentiel | A : Pris en charge  |
+| **Système de fichiers avec entrepôt de données** `[1]` | Binaires | A : Pris en charge |
+| Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : Pris en charge |
 | Stockage Microsoft Azure Blob | Binaires | A : Pris en charge |
-| MongoDB Enterprise 4.0  | Référentiel | A: Supported [2, 3] |
+| MongoDB Enterprise 4.0  | Référentiel | A : Pris en charge `[2, 3]` |
 | MongoDB Enterprise 3.6 | Référentiel | Z : Non pris en charge |
 | MongoDB Enterprise 3.4 | Référentiel | Z : Non pris en charge |
-| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  [4] |
+| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  `[4]` |
 | Oracle Database 12c (12.1.x) | Base de données de formulaires et de référentiels | R : Prise en charge limitée  |
 | Microsoft SQL Server 2016 | Base de données de formulaires | A : Pris en charge |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : Pris en charge |
@@ -199,11 +199,11 @@ La version d’API de servlet minimum requise est 3.1.
 |---|---|
 | **Moteur de servlet intégré au fichier de démarrage rapide (Jetty 9.4)** | A : Pris en charge |
 | Oracle WebLogic Server 12.2 (12cR2) | Z : Non pris en charge |
-| IBM WebSphere Application Server en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM JRE 1.8 | R: Restricted Support for new contracts [2] |
-| IBM WebSphere Application Server 9.0 et IBM JRE 1.8 | R: Restricted Support for new contracts [1] [2] |
-| Apache Tomcat 8.5.x | R: Restricted Support for new contracts [2] |
+| IBM WebSphere Application Server en livraison continue (LibertyProfile) avec Web Profile 7.0 et IBM JRE 1.8 | R : Prise en charge restreinte des nouveaux contrats `[2]` |
+| IBM WebSphere Application Server 9.0 et IBM JRE 1.8 | R : Prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
+| Apache Tomcat 8.5.x | R : Prise en charge restreinte des nouveaux contrats `[2]` |
 | JBoss EAP 7.2.x avec JBoss Application Server | Z : Non pris en charge |
-| JBoss EAP 7.1.4 avec JBoss Application Server  | R: Restricted Support for new contracts [1] [2] |
+| JBoss EAP 7.1.4 avec JBoss Application Server  | R : Prise en charge restreinte des nouveaux contrats `[1]` `[2]` |
 | JBoss EAP 7.0.4 avec JBoss Application Server | Z : Non pris en charge |
 
 1. Recommandé pour les déploiements avec AEM Forms.
@@ -215,11 +215,11 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 
 | **Plate-forme** | **Niveau de prise en charge** |
 |---|---|
-| **Linux, en fonction de la distribution Red Hat**  | A: Supported [1] [3] |
-| Linux, en fonction de la distribution Debian, y compris Ubuntu | A: Supported [2] |
+| **Linux, en fonction de la distribution Red Hat**  | A : Pris en charge `[1]` `[3]` |
+| Linux, en fonction de la distribution Debian, y compris Ubuntu | A : Pris en charge `[2]` |
 | Linux, en fonction de la distribution SUSE | A : Pris en charge |
-| Microsoft Windows Server 2019 [4] | R : Prise en charge restreinte des nouveaux contrats |
-| Microsoft Windows Server 2016 [4] | R: Restricted Support for new contracts [5] |
+| Microsoft Windows Server 2019 `[4]` | R : Prise en charge restreinte des nouveaux contrats |
+| Microsoft Windows Server 2016 `[4]` | R : Prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft Windows Server 2012 R2 | Z : Non pris en charge |
 | Oracle Solaris 11 | Z : Non pris en charge |
 | IBM AIX 7.2 | Z : Non pris en charge |
@@ -248,7 +248,7 @@ L’utilisation des serveurs web ci-dessous est prise en charge avec Dispatcher 
 
 | Plate-forme | Niveau de prise en charge |
 |---|---|
-| **Apache httpd 2.4.x** [1,2] | A : Pris en charge |
+| **Apache httpd 2.4.x** `[1,2]` | A : Pris en charge |
 | Microsoft IIS 10 (Internet Information Server) | A : Pris en charge |
 | Microsoft IIS 8.5 (Internet Information Server) | Z : Non pris en charge |
 
