@@ -1,11 +1,11 @@
 ---
 title: Rapports sur vos ressources numériques
-description: Comprenez les rapports sur vos ressources dans les ressources Adobe Experience Manager qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Découvrez les rapports sur vos ressources dans les ressources Adobe Experience Manager qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '974'
 ht-degree: 62%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 62%
 
 # Rapports de ressources  {#asset-reports}
 
-Le rapports des ressources est un outil essentiel pour évaluer l’utilité de votre déploiement des ressources Adobe Experience Manager. Avec Ressources, vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
+Le rapports des ressources est un outil clé pour évaluer l’utilité du déploiement des ressources Adobe Experience Manager. Avec Ressources, vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
 Utilisez les informations contenues dans les rapports pour dériver des mesures de réussite clés afin de mesurer l’adoption des ressources au sein de votre entreprise et par les clients.
 
@@ -37,10 +37,11 @@ Experience Manager Assets génère pour vous les rapports standard suivants :
 * Fichiers
 * Partage de liens
 
-Les administrateurs d’Experience Manager peuvent facilement générer et personnaliser ces rapports pour votre mise en oeuvre. Un administrateur peut procéder comme suit pour générer un rapport :
+[!DNL Adobe Experience Manager] les administrateurs peuvent facilement générer et personnaliser ces rapports pour votre mise en oeuvre. Un administrateur peut procéder comme suit pour générer un rapport :
 
 1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
-   ![](assets/AssetsReportNavigation.png)
+
+![](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
