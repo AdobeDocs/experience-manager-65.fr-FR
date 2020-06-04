@@ -4,9 +4,9 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources d’Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f2679ffd388893e876d79a4fe50e9761e14f31
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '639'
 ht-degree: 54%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 54%
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
    + [Traiter les actifs](assets-workflow.md)
-   + [Ajouter zones cliquables](image-maps.md)
+   + [Ajouter des zones cliquables](image-maps.md)
    + [Réutilisation de ressources à l’aide de MSM](reuse-assets-using-msm.md)
    + [Ressources connectées avec des sites AEM](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
@@ -48,10 +48,11 @@ ht-degree: 54%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
-   + [Ajout de fonctionnalités Scene7 à votre page](scene7.md)
+   + [Ajouter les fonctionnalités de Scene7 à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
+   + [Images 3D dimensionnelles](assets-3d.md)
    + [Visionneuses d’images](image-sets.md)
    + [Images panoramiques](panoramic-images.md)
    + [Visionneuses de médias mixtes](mixed-media-sets.md)
@@ -153,7 +154,7 @@ ht-degree: 54%
    + [Opérations asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
-   + [Activation des informations sur les ressources via Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
+   + [Activation des informations sur les ressources via le lancement d’Adobe](touch-ui-using-dtm-for-asset-insights.md)
    + [Configuration des informations sur les ressources](touch-ui-configuring-asset-insights.md)
    + [Archivage et extraction de fichiers](check-out-and-submit-assets.md)
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
