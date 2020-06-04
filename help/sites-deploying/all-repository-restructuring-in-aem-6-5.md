@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 82%
 
 ---
 
@@ -21,6 +24,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 
 **Avec la mise à niveau vers la version 6.5**
 
+* [Configurations ContextHub](#contexthub-6.5)
 * [Instances de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
 * [Modèles de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [Lanceurs de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
@@ -40,7 +44,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 * [Configurations du gadget de tableau de bord AEM Projects](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
 * [Modèle d’e-mail de notification de réplication](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#replication-notification-e-mail-template)
 * [Balises](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)
-* [Services cloud de traduction](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
+* [Cloud Services de traduction](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
 * [Langues de traduction](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-languages)
 * [Règles de traduction](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
 * [Bibliothèque cliente du widget de traduction](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
@@ -49,6 +53,21 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 * [Modèles d’e-mail de notification de workflow](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## Avec la mise à niveau vers la version 6.5 {#with-upgrade}
+
+### Configurations ContextHub {#contexthub-6.5}
+
+Depuis AEM 6.4, il n’existe plus de configuration ContextHub par défaut. Therefore on the root level of the site a `cq:contextHubPathproperty` should be set to indicate which configuration should be used.
+
+1. Accédez à la racine du site.
+1. Ouvrez les propriétés de la page racine et sélectionnez ensuite l’onglet  Personnalisation.
+1. Dans le champ Chemin d’accès ContextHub, saisissez votre propre chemin d’accès de configuration ContextHub.
+
+Additionally on the ContextHub configuration, the `sling:resourceType` needs to be updated to be relative and not absolute.
+
+1. Open the properties of ContextHub configuration node in CRX DE Lite, e.g. `/apps/settings/cloudsettings/legacy/contexthub`
+1. Passer `sling:resourceType` de `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` à `granite/contexthub/cloudsettings/components/baseconfiguration`
+
+En d’autres termes, la propriété `sling:resourceType` de la configuration ContextHub doit être relative et non absolue.
 
 ### Modèles de workflow {#workflow-models}
 
@@ -117,9 +136,9 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
-   <td>Toute référence explicite au chemin dans <code>
+   <td>Toute référence de chemin explicite dans <code>
      custom
-    </code> le code de l’emplacement précédent doit également prendre en compte le nouvel emplacement. Il est recommandé de refactoriser ce code pour utiliser les API de workflow AEM.</td>
+    </code> le code à l’emplacement précédent doit également prendre en compte le nouvel emplacement. Il est recommandé de refactoriser ce code pour utiliser les API de workflow AEM.</td>
   </tr>
  </tbody>
 </table>
@@ -563,16 +582,16 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
-   <td><p>Le redémarrage du lot Day Communique Tagging OSGi n’enregistrera le nouvel emplacement comme racine de balise que si l’emplacement précédent est vide.</p> <p>Les références à l’emplacement précédent continueront à fonctionner après la migration vers un nouvel emplacement pour toutes les fonctionnalités qui utilisent l’API TagManager d’AEM pour la résolution des balises.</p> <p>Tout code personnalisé qui fait explicitement référence au chemin <code>/etc/tags</code> doit être mis à jour vers <span class="code">/content/ <code>
+   <td><p>Le redémarrage du lot Day Communique Tagging OSGi n’enregistrera le nouvel emplacement comme racine de balise que si l’emplacement précédent est vide.</p> <p>Les références à l’emplacement précédent continueront à fonctionner après la migration vers un nouvel emplacement pour toutes les fonctionnalités qui utilisent l’API TagManager d’AEM pour la résolution des balises.</p> <p>Tout code personnalisé qui référence explicitement le chemin d’accès <code>/etc/tags</code> doit être mis à jour vers <span class="code">/content/ <code>
        cq
       </code><code>
        :tags
-      </code></span>, ou de préférence réécrit pour tirer parti de l’API Java TagManager, en même temps que cette migration.</p> </td>
+      </code></span>, ou de préférence réécrit pour tirer parti de l’API Java de TagManager, en même temps que cette migration.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Services cloud de traduction {#translation-cloud-services}
+### Cloud Services de traduction {#translation-cloud-services}
 
 <table>
  <tbody>
@@ -724,7 +743,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 |---|---|
 | **Nouveaux emplacements** | `/libs/replication/treeactivation` |
 | **Conseil de restructuration** | Aucune action requise. |
-| **Remarque** | La console web d’activation des arborescences est maintenant disponible via **Outils > Déploiement > Réplication > Activer l’arborescence**. |
+| **Notes** | La console web d’activation des arborescences est maintenant disponible via **Outils > Déploiement > Réplication > Activer l’arborescence**. |
 
 ### Services cloud de connecteur de traduction de fournisseur {#vendor-translation-connector-cloud-services}
 
