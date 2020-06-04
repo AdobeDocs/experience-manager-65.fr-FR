@@ -3,10 +3,10 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 51%
+source-wordcount: '2709'
+ht-degree: 50%
 
 ---
 
@@ -119,7 +119,7 @@ Les valeurs admises pour cette propriété sont les suivantes :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées de la ressource en tant que propriété `dc:title`.
 
-* `./jcr:created`: Affiche la propriété JCR au niveau du noeud de la ressource. Si vous configurez ces propriétés, Adobe recommande de les marquer comme Désactiver la modification. Les propriétés sont protégées. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`: Affiche la propriété JCR au niveau du noeud de la ressource. Si vous configurez ces propriétés, Adobe vous recommande de les marquer comme Désactiver la modification et de ne pas lier de champ de date à `./jcr:created`. Il s’agit d’une propriété protégée. Lorsque les utilisateurs DAM tentent de mettre à jour des ressources, l’erreur [!UICONTROL Fichiers ne peut pas être modifiée]. Si vous décidez de mapper un champ de date à cette propriété JCR, utilisez le schéma par défaut. Copiez le schéma de métadonnées par défaut fourni par Adobe et modifiez-le, car le champ de date dans le schéma par défaut est associé à `./jcr:created`.
 
 Pour garantir que le composant s’affiche correctement dans le formulaire de schéma de métadonnées, le chemin de la propriété ne doit pas comporter d’espace.
 
@@ -265,7 +265,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
 1. Modifiez le formulaire personnalisé. Ajoutez un champ obligatoire. Par exemple, ajoutez un champ **[!UICONTROL Catégorie]** et rendez-le obligatoire.
 
-   ![Ajouter champ obligatoire au formulaire de métadonnées en sélectionnant Obligatoire dans l’onglet Règles de l’éditeur de Schémas de métadonnées](assets/mandatory-field-metadata-schema-editor.png)
+   ![Ajoutez un champ obligatoire au formulaire de métadonnées en sélectionnant Obligatoire dans l’onglet Règles de l’éditeur de Schémas de métadonnées.](assets/mandatory-field-metadata-schema-editor.png)
 
    *Figure : Champ obligatoire dans l’éditeur de schémas de métadonnées.*
 
