@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 2f0e626aa16a62203755e29800a5935b350ffe79
+source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
 workflow-type: tm+mt
-source-wordcount: '2162'
-ht-degree: 13%
+source-wordcount: '2144'
+ht-degree: 14%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 13%
 
 Contenu multimédia dynamique vous permet de télécharger, de gérer, de vue et de diffuser des fichiers 3D sous la forme d’expériences immersives.
 
-* Publication en un clic (à l’aide de la publication **** rapide sur la barre d’outils) d’images 3D pour générer son URL.
-* Prise en charge optimisée de l’affichage de fichiers 3D avec le paramètre prédéfini de visionneuse de dimensions interactive de haute qualité optimisé par Adobe Dimension. Le paramètre prédéfini de la visionneuse comprend, entre autres, un ensemble de commandes de caméra interactives qui vous permettent d’effectuer un zoom en orbite, un zoom et un panoramique.
+* Publication en un clic (à l’aide de la publication **** rapide sur la barre d’outils) de fichiers 3D pour générer une URL.
+* Prise en charge optimisée de l’affichage de fichiers 3D avec le paramètre prédéfini de visionneuse de dimensions interactive de haute qualité optimisé par Adobe Dimension.
 * Le composant WCM 3D Media vous permet d’ajouter facilement des ressources 3D à vos pages de sites AEM.
 
-Il n’existe aucune installation ou configuration permettant d’utiliser des ressources 3D dans Contenu multimédia dynamique.
+Aucune configuration supplémentaire n’est requise pour utiliser des ressources 3D dans Contenu multimédia dynamique.
 
 ![chaussure en 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -36,10 +36,10 @@ Dynamic Media prend en charge les formats de fichier 3D suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Notes |
 |---|---|---|---|
-| GLB | Transmission GL binaire | model/gltf-binary | Inclut les textures avec le fichier au lieu de les référencer comme des images externes. |
+| GLB | Transmission GL binaire | model/gltf-binary | Comprend les matières et les textures comme un seul atout. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
-| USDZ | Archive zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l&#39;ingestion uniquement ; aucun affichage ou interaction n’est disponible.* USDZ est le format 3D propriétaire d’Apple qui ne peut être vue que par Safari ou iOS. |
+| USDZ | Archive zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l&#39;ingestion uniquement ; aucun affichage ou interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être affiché en mode natif par les périphériques Safari et iOS. |
 
 ## Début rapide : Fichiers 3D dans Contenu multimédia dynamique {#quick-start-three-d}
 
@@ -149,7 +149,8 @@ Voir aussi [Prévisualisation de fichiers à l’aide de l’interface](/help/as
 
    * Près de l’angle supérieur droit de la page, cliquez sur **[!UICONTROL Prévisualisation]** pour passer en mode **[!UICONTROL Prévisualisation]** .
    * Supprimez `/editor.html` de l’URL de la page dans le navigateur.
-   ![Ressource 3D affichée dans le composant](/help/assets/assets-dm/3d-asset-in-3d-media.png)Média 3D Ressource 3D entièrement interactive telle qu’elle s’affiche en mode **[!UICONTROL Prévisualisation]** .
+
+Un fichier 3D entièrement interactif tel qu’il est affiché dans    ![Ressource 3D affichée dans le composant](/help/assets/assets-dm/3d-asset-in-3d-media.png)Média 3D Ressource 3D entièrement interactive telle qu’elle s’affiche en mode **[!UICONTROL Prévisualisation]** .
 
 1. En mode **[!UICONTROL Prévisualisation]** , effectuez l’une des opérations suivantes :
 
@@ -280,6 +281,7 @@ Voir aussi [Publication de pages](/help/sites-authoring/publishing-pages.md).
    * Le fichier 3D est un format pris en charge (GLB, OBJ, STL et USDZ).
    * Le fichier 3D a été assimilé au système IPS (Dynamic Media Image Production System).
    * Le fichier 3D est publié.
+
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
 1. Appuyez sur **[!UICONTROL URL]** pour afficher l’URL de production du fichier 3D.
