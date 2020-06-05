@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '2350'
-ht-degree: 93%
+source-wordcount: '2334'
+ht-degree: 94%
 
 ---
 
@@ -200,6 +200,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
    * Sélectionnez le modèle à utiliser pour créer la page, puis cliquez ou appuyez sur **Suivant** pour poursuivre.
 
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
+
    ![caop-04](assets/caop-04.png)
 
 1. À l’étape finale de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
@@ -207,6 +208,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
    * Utilisez les trois onglets pour accéder aux [propriétés de la page](/help/sites-authoring/editing-page-properties.md) à attribuer à la nouvelle page, puis cliquez ou appuyez sur **Créer** pour réellement créer la page.
 
    * Cliquez ou appuyez sur **Précédent** pour revenir au choix du modèle.
+
    Les champs clés sont les suivants :
 
    * **Titre** :
@@ -249,6 +251,7 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) et la barre d’outils
+
    Sélectionnez ensuite l’icône **Modifier** :
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -267,6 +270,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) et la barre d’outils
+
    Sélectionnez ensuite l’icône de page **Copier** :
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -282,8 +286,6 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    Vous pouvez effectuer l’une des actions suivantes :
    * Sélectionner l’icône de page **Coller** : une copie de la page d’origine et de toutes les pages enfants sera créée à cet emplacement.
    * Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
-   >[!NOTE]
-   L’option **Coller sans enfants** est disponible à partir d’ [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) à partir de.
 
    >[!NOTE]
    Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
@@ -309,6 +311,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
 
    * [Actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) et la barre d’outils
+
    Sélectionnez ensuite l’icône de page **Déplacer** :
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -320,6 +323,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez/appuyez sur **Suivant** pour poursuivre.
 
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
+
    ![caop-07](assets/caop-07.png)
 
    Le nom de la page peut être conservé si vous déplacez uniquement la page.
@@ -334,6 +338,7 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
       * Sélectionnez la destination en cliquant sur sa miniature.
       * Cliquez sur **Suivant** pour continuer.
    * Utilisez la commande **Précédent** pour revenir à l’étape de spécification du nom de la page.
+
    >[!NOTE]
    Par défaut, le parent de la page que vous déplacez/renommez est sélectionné comme destination.
 
