@@ -1,6 +1,6 @@
 ---
-title: Prise en charge des fragments de contenu dans l’API HTTP AEM Assets
-seo-title: Prise en charge des fragments de contenu dans l’API HTTP AEM Assets
+title: Prise en charge des fragments de contenu dans l’API HTTP AEM Assets
+seo-title: Prise en charge des fragments de contenu dans l’API HTTP AEM Assets
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP AEM Assets.
 seo-description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP AEM Assets.
 uuid: c500d71e-ceee-493a-9e4d-7016745c544c
@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18dc05876337629b7561320ff6f0945e3e785ea3
+source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 94%
@@ -29,6 +29,7 @@ ht-degree: 94%
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
+
 >
 >
 La mise en œuvre actuelle de l’API HTTP AEM Assets est REST.
@@ -129,6 +130,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo - Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -292,7 +294,7 @@ Il existe quelques restrictions :
 
 Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
-* **202 (OK)**
+* **200 (OK)**
 
    Affiché dans le scénario suivant :
 
@@ -345,6 +347,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
       * `Could not update content element`
       * `Could not update fragment data of element`
+
    Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
 
    ```xml
