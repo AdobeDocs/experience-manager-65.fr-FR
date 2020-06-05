@@ -3,10 +3,10 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
+source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 50%
+source-wordcount: '2648'
+ht-degree: 51%
 
 ---
 
@@ -119,7 +119,7 @@ Les valeurs admises pour cette propriété sont les suivantes :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées de la ressource en tant que propriété `dc:title`.
 
-* `./jcr:created`: Affiche la propriété JCR au niveau du noeud de la ressource. Si vous configurez ces propriétés, Adobe vous recommande de les marquer comme Désactiver la modification et de ne pas lier de champ de date à `./jcr:created`. Il s’agit d’une propriété protégée. Lorsque les utilisateurs DAM tentent de mettre à jour des ressources, l’erreur [!UICONTROL Fichiers ne peut pas être modifiée]. Si vous décidez de mapper un champ de date à cette propriété JCR, utilisez le schéma par défaut. Copiez le schéma de métadonnées par défaut fourni par Adobe et modifiez-le, car le champ de date dans le schéma par défaut est associé à `./jcr:created`.
+* `./jcr:created`: Stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe vous recommande de les marquer comme Désactiver la modification.
 
 Pour garantir que le composant s’affiche correctement dans le formulaire de schéma de métadonnées, le chemin de la propriété ne doit pas comporter d’espace.
 
