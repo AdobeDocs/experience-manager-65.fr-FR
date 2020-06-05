@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '3010'
-ht-degree: 92%
+source-wordcount: '2979'
+ht-degree: 93%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 92%
    >
 * Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et des fonctionnalités supplémentaires peuvent être disponibles dans certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+
 >
 
 
@@ -88,10 +89,6 @@ Le panneau de navigation permet d’accéder aux consoles AEM :
 ![bh-01](assets/bh-01.png)
 
 Le titre de l’onglet du navigateur est mis à jour pour refléter votre emplacement lorsque vous naviguez dans les consoles et le contenu.
-
->[!NOTE]
->
->Le titre de l’onglet reflète l’emplacement à partir d’ [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 Les consoles suivantes sont disponibles à partir du panneau de navigation :
 
@@ -233,10 +230,6 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
    Dans la console **Sites** , vous pouvez ajouter l’option **Passer au contenu** principal. Cela devient visible lorsque vous *appuyez sur* les options d’en-tête et accélère votre navigation en vous permettant d’ignorer les éléments standard de la barre d’outils (produit) et de vous diriger directement vers le contenu principal.
 
    ![bh-30](assets/bh-30.png)
-
-   >[!NOTE]
-   >
-   >L’option **Ignorer le contenu** principal est disponible à partir d’ [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 ## Accès à l’aide {#accessing-help}
 
@@ -422,6 +415,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Vous pouvez parcourir l’arborescence vers le haut et vers le bas en appuyant ou en cliquant sur le nom de la ressource ou sur le chevron à droite du nom.
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous cliquez ou appuyez dessus.
+
    ![bh-17](assets/bh-17.png)
 
    * Les enfants de la ressource sélectionnée sont affichés dans la colonne située à droite de la ressource concernée.
@@ -433,6 +427,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * Une fois la ressource sélectionnée, une coche s’affiche au-dessus de la miniature et le nom de la ressource est également mis en surbrillance.
    * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
    * La barre d’outils Action est alors activée.
+
    ![bh-18](assets/bh-18.png)
 
    Lorsqu’une page est sélectionnée en mode Colonne, elle est affichée dans la dernière colonne avec les informations suivantes :
@@ -496,6 +491,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * **Analyse de la page**
    * **Visiteurs uniques**
    * **Temps passé sur la page**
+
    ![bh-21](assets/bh-21.png)
 
    Par défaut, la colonne **Nom** est affichée ; ce nom fait partie de l’URL de la page. Dans certains cas, il se peut que l’auteur doive accéder à des pages rédigées dans une autre langue. Aussi, le fait de voir le nom de la page (qui reste généralement identique) peut s’avérer très utile si l’auteur ne connaît pas la langue de la page.
