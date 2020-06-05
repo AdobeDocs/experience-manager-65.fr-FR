@@ -11,7 +11,10 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 91%
 
 ---
 
@@ -66,14 +69,6 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
     </ul> </td> 
   </tr>
   <tr>
-   <td>template-power-user</td> 
-   <td>
-    <ul> 
-     <li>Créer et prévisualiser des formulaires adaptatifs ou des modèles de communication interactive</li> 
-     <li>Création de scripts pour les formulaires adaptatifs ou les modèles de communications interactives à l’aide de l’éditeur de code</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
    <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
@@ -99,7 +94,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utiliser les applications<br /> de boîte de réception AEM <strong>Remarque : Pour </strong>accéder à l’interface utilisateur de l’agent de communications interactives dans la boîte de réception AEM, vous devez disposer des affectations de groupe cm-agent-users et workflow-users.</li> 
+     <li>Utiliser les applications<br /> de boîte de réception AEM <strong>Remarque : </strong>Pour accéder à l’interface utilisateur de l’agent de communications interactives dans la boîte de réception AEM, vous devez disposer d’affectations de groupe cm-agent-users et workflow-users.</li> 
      <li>Gérer les instances de processus</li> 
     </ul> </td> 
   </tr>
