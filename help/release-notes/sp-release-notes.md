@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d51577195e969ff8af31be49159ff575e3654cc9
+source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
 workflow-type: tm+mt
-source-wordcount: '4476'
+source-wordcount: '4486'
 ht-degree: 11%
 
 ---
@@ -423,7 +423,7 @@ Il est conseillé aux clients de vérifier s’ils utilisent la fonctionnalité 
 
 * Si un dossier de la hiérarchie est renommé dans [!DNL Experience Manager Assets] et que le dossier imbriqué contenant une ressource est publié dans [!DNL Brand Portal], le titre du dossier n’est pas mis à jour dans [!DNL Brand Portal] le dossier racine tant que celui-ci n’a pas été republié.
 
-* La mise à jour de [!DNL chrome] la version 83 pose un problème lors de la création de packs. Utilisez d’autres navigateurs disponibles, tels que [!DNL Internet Explorer] et [!DNL Firefox], ou d’autres options d’installation de package standard d’AEM pour résoudre le problème.
+* Lors de l’installation d’AEM 6.5.5.0, la mise à jour de [!DNL Chrome] la version 83 entraîne un problème lors de la création de packages. Utilisez d’autres navigateurs disponibles, tels que [!DNL Internet Explorer] et [!DNL Firefox], ou d’autres options d’installation de package standard d’AEM pour résoudre le problème. Le problème est résolu après l’installation d’AEM 6.5.5.0.
 
 * Impossible d&#39;envoyer un courrier électronique au serveur SMTP distant à l&#39;aide de l&#39;expéditeur de courrier par défaut d&#39;AEM, car il permet uniquement la communication à l&#39;aide de TLS v1.2. Supprimez le lot `javax.mail:mail:1.5.0-b01` de `system/console` et actualisez les lots pour résoudre le problème.
 
