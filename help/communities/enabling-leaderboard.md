@@ -1,8 +1,8 @@
 ---
-title: Fonctionnalité de classement
-seo-title: Fonctionnalité de classement
-description: Ajout d’un composant Leaderboard à une page
-seo-description: Ajout d’un composant Leaderboard à une page
+title: Fonctionnalité du tableau de bord
+seo-title: Fonctionnalité du tableau de bord
+description: Ajouter un composant de tableau de bord à une page
+seo-description: Ajouter un composant de tableau de bord à une page
 uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,22 +11,25 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 21%
 
 ---
 
 
-# Fonctionnalité de classement {#leaderboard-feature}
+# Fonctionnalité du tableau de bord {#leaderboard-feature}
 
 ## Présentation {#introduction}
 
-La `Leaderboard` composante permet d&#39;obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres selon les points gagnés (note de base) ou leur expertise (note de niveau avancé).
+La `Leaderboard` composante permet d&#39;obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (note de base) ou de leur expertise (note avancée).
 
-Avant d’inclure le composant du tableau de bord dans une page, il est nécessaire de configurer le score [des communautés et les badges](/help/communities/implementing-scoring.md).
+Avant d’inclure le composant de tableau de bord dans une page, il est nécessaire de configurer le score et les badges [des communautés](/help/communities/implementing-scoring.md).
 
 Cette section de la documentation décrit :
 
-* Ajout du `Leaderboard` composant à un site [communautaire](/help/communities/overview.md#community-sites)
+* Ajouter le `Leaderboard` composant à un site [communautaire](/help/communities/overview.md#community-sites)
 * Configuration settings for the `Leaderboard` component
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
@@ -51,7 +54,7 @@ Select the placed `Leaderboard` component to access and select the `Configure` i
 
 #### Onglet Settings {#settings-tab}
 
-Sous l’onglet **Paramètres** , spécifiez les informations relatives au membre qui s’affichent :
+Sous l&#39;onglet **Paramètres** , spécifiez les informations relatives au membre qui s&#39;affichent :
 
 * **Nom d’affichage**
 
@@ -60,22 +63,22 @@ La valeur par défaut est `Leaderboard`, si rien n’est saisi.
 
 * **Badge**
 
-   Si cette option est cochée, une colonne pour les icônes de badge est incluse dans le tableau de bord.
+   Si cette case est cochée, une colonne pour les icônes de badge est incluse dans le tableau de bord.
 Cette option n’est pas cochée par défaut.
 
 * **Nom du badge**
 
-   Si cette option est cochée, une colonne correspondant au nom du badge est incluse dans le tableau de bord.
+   Si cette case est cochée, une colonne correspondant au nom du badge est incluse dans le tableau de bord.
 Cette option n’est pas cochée par défaut.
 
 * **Utiliser un avatar**
 
-   Si cette option est cochée, l&#39;avatar du membre est inclus dans le tableau de bord, à côté du lien de son nom vers son  membre.
+   Si cette case est cochée, l&#39;avatar du membre est inclus dans le tableau de bord, à côté du lien de son nom vers son profil membre.
 Cette option n’est pas cochée par défaut.
 
 #### Onglet Règles {#rules-tab}
 
-Sous l’onglet **Règles** , le site de la communauté et ses règles de notation et de badge
+Sous l’onglet **Règles** , le site communautaire et ses règles de notation et de badge
 
 * **Emplacement des règles**
 
@@ -91,13 +94,13 @@ Sous l’onglet **Règles** , le site de la communauté et ses règles de notati
 
 * **Limite d’affichage**
 
-   Nombre de membres à afficher par page. La valeur par défaut est 10.
+   Nombre de membres à afficher par page.La valeur par défaut est 10.
 
 ### Exemple : Tableau de bord des participants {#example-participants-leaderboard}
 
-Ce tableau de bord indique comment appliquer les règles de notation de base.
+Ce tableau de bord indique les résultats de l’application des règles de notation de base.
 
-Configuration du composant Leaderboard :
+Configuration du composant de tableau de bord :
 
 * Onglet Settings:
 
@@ -110,9 +113,9 @@ Configuration du composant Leaderboard :
 
 * Onglet Règles :
 
-   * Emplacement des règles = `/content/sites/communities/jcr:content`
-   * Règle de notation = `/etc/community/scoring/rules/forums-scoring`
-   * Règle d’attribution des badges = `/etc/community/badging/rules/reference-badging`
+   * Emplacement des règles = `/content/sites/<site name>/jcr:content`
+   * Règle de notation = `/libs/settings/community/scoring/rules/forums-scoring`
+   * Règle d’attribution des badges = `/libs/settings/community/badging/rules//reference-badging`
    * Limite d’affichage = `10`
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
@@ -121,7 +124,7 @@ Configuration du composant Leaderboard :
 
 Ce tableau de bord indique les résultats de l’application de règles de notation avancées.
 
-Configuration du composant Leaderboard :
+Configuration du composant de tableau de bord :
 
 * Onglet Settings:
 
@@ -133,9 +136,9 @@ Configuration du composant Leaderboard :
 
 * Onglet Règles :
 
-   * Emplacement des règles = `/content/sites/communities/jcr:content`
-   * Règle de notation = `/etc/community/scoring/rules/adv-forums-scoring`
-   * Règle d’attribution des badges = `/etc/community/badging/rules/adv-forums-badging`
+   * Emplacement des règles = `/content/sites/<site name>/jcr:content`
+   * Règle de notation = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+   * Règle d’attribution des badges = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite d’affichage = `10`
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
@@ -144,4 +147,4 @@ Configuration du composant Leaderboard :
 
 More information may be found on the [Leaderboard Essentials](/help/communities/leaderboard.md) page for developers.
 
-Les instructions de création de règles sont fournies sur la page Scores et badges [des communautés](/help/communities/implementing-scoring.md) pour les administrateurs.
+Les instructions de création de règles sont fournies sur la page Scores et badges [](/help/communities/implementing-scoring.md) des communautés pour les administrateurs.
