@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
@@ -20,50 +23,50 @@ source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ## Présentation {#overview}
 
-La notation avancée permet l&#39;attribution de badges pour identifier les membres comme des experts. La notation avancée affecte des points en fonction de la quantité ** et de la qualité du contenu créé par un membre, tandis que la notation de base affecte des points simplement en fonction de la quantité de contenu créé.
+La notation avancée permet l&#39;attribution de badges pour identifier les membres comme experts. La notation avancée attribue des points en fonction de la quantité ** et de la qualité du contenu créé par un membre, tandis que la notation de base attribue des points simplement en fonction de la quantité de contenu créé.
 
-Cette différence est due au moteur de notation utilisé pour calculer les scores. Le moteur de notation de base applique des maths simples. Le moteur de notation avancé est un algorithme adaptatif qui récompense les membres actifs qui contribuent à un contenu pertinent et précieux, déduit par le traitement du langage naturel (NLP) d’une rubrique.
+Cette différence est due au moteur de notation utilisé pour calculer les scores. Le moteur de score de base applique des maths simples. Le moteur de score avancé est un algorithme adaptatif qui récompense les membres actifs qui contribuent à un contenu pertinent et précieux, déduit par le traitement du langage naturel (NLP) d’une rubrique.
 
-Outre la pertinence du contenu, les algorithmes de notation prennent en compte les membres  les , tels que le vote et le pourcentage de réponses. Bien que le score de base les inclut quantitativement, le score avancé les utilise algorithmiquement.
+Outre la pertinence du contenu, les algorithmes de notation prennent en compte les activités membres, telles que le vote et le pourcentage de réponses. Bien que le score de base les inclut quantitativement, le score avancé les utilise de manière algorithmique.
 
-Par conséquent, le moteur de notation avancé nécessite suffisamment de données pour que   soit significatif. Le seuil de réussite pour devenir un expert est constamment réévalué à mesure que l’algorithme s’ajuste continuellement au volume et à la qualité du contenu créé. Il existe aussi un concept de *dégradation* des postes plus anciens d&#39;un membre. Si un membre expert cesse de participer à l&#39;objet sur lequel il a acquis le statut d&#39;expert, à un moment déterminé (voir configuration [du moteur de](#configurable-scoring-engine)notation), il pourrait perdre son statut d&#39;expert.
+Par conséquent, le moteur d’évaluation avancé nécessite suffisamment de données pour que l’analyse ait du sens. Le seuil de réussite pour devenir un expert est constamment réévalué à mesure que l’algorithme s’ajuste continuellement au volume et à la qualité du contenu créé. Il y a aussi un concept de *décomposition* des postes plus anciens d&#39;un membre. Si un membre expert cesse de participer à la matière sur laquelle il a acquis le statut d&#39;expert, à un moment déterminé (voir configuration [du moteur de](#configurable-scoring-engine)notation), il pourrait perdre son statut d&#39;expert.
 
 La configuration d’un score avancé est pratiquement identique à celle d’un score de base :
 
-* Les règles de notation et de badge de base et avancées sont [appliquées au contenu](/help/communities/implementing-scoring.md#apply-rules-to-content) de la même manière.
+* Les règles de notation et de badge de base et avancées sont [appliquées de la même manière au contenu](/help/communities/implementing-scoring.md#apply-rules-to-content) .
 
-   * Des règles de notation et de badge de base et avancées peuvent être appliquées au même contenu
+   * Des règles de notation et de badge de base et avancées peuvent être appliquées au même contenu.
 
-* [L’activation des badges pour les composants](/help/communities/implementing-scoring.md#enable-badges-for-component) est générique
+* [L&#39;activation de badges pour les composants](/help/communities/implementing-scoring.md#enable-badges-for-component) est générique
 
 Les différences dans la configuration des règles de notation et de badge sont les suivantes :
 
 * Moteur de notation avancé configurable
 * Règles de notation avancées :
 
-   * `scoringType` définir sur `advanced`
+   * `scoringType` défini sur `advanced`
    * requires `stopwords`
 
 * Règles de mise en badge avancées :
 
-   * `badgingType` définir sur `advanced`
-   * `badgingLevels` défini au **nombre de niveaux d&#39;expertise à attribuer**
-   * nécessite un `badgingPaths` tableau de badges au lieu de seuils des points de mappage de la baie aux badges
+   * `badgingType` défini sur `advanced`
+   * `badgingLevels` fixé au **nombre de niveaux d&#39;experts à attribuer**
+   * nécessite `badgingPaths` un tableau de badges au lieu de seuils points de mappage de la baie de disques aux badges
 
 >[!NOTE]
 >
->Pour utiliser des fonctionnalités avancées de notation et de badge, installez le package [d’identification des](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)experts.
+>Pour utiliser les capacités avancées de notation et de badge, installez le package [d’identification des](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)experts.
 
 ## Moteur de score configurable {#configurable-scoring-engine}
 
-Le moteur de notation avancé fournit une configuration OSGi avec des paramètres qui affectent l’algorithme de notation avancé.
+Le moteur d’évaluation avancé fournit une configuration OSGi avec des paramètres qui affectent l’algorithme d’évaluation avancé.
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
-* **de score**
+* **poids de score**
 
-   Pour une rubrique, spécifiez le verbe qui doit avoir la priorité la plus élevée lors du calcul du score. Une ou plusieurs rubriques peuvent être entrées, mais limitées à **un verbe par rubrique**. Voir [Rubriques et verbes](/help/communities/implementing-scoring.md#topics-and-verbs).
-Saisi comme `topic,verb` avec la virgule d’échappement. Par exemple :
+   Pour une rubrique, spécifiez le verbe qui doit recevoir la priorité la plus élevée lors du calcul du score. Une ou plusieurs rubriques peuvent être entrées, mais limitées à **un verbe par rubrique**. Voir [Rubriques et verbes](/help/communities/implementing-scoring.md#topics-and-verbs).
+Entré sous forme `topic,verb` d’échappement de la virgule. Par exemple :
    `/social/forum/hbs/social/forum\,ADD`
 La valeur par défaut est définie sur le verbe AJOUTER pour les composants QnA et de forum.
 
@@ -79,7 +82,7 @@ La valeur par défaut est définie sur le verbe AJOUTER pour les composants QnA 
 
    La valeur par défaut est de 2 16 000 heures (~24 ans).
 
-* **Taux** de croissance du score : indique le score entre 0 et la plage de notation, au-delà de laquelle la croissance ralentit pour limiter le nombre d’experts.
+* **Taux** de croissance de scoreCeci spécifie le score entre 0 et la plage de score, au-delà de laquelle la croissance ralentit pour limiter le nombre d&#39;experts.
 
    La valeur par défaut est 50.
 
@@ -87,37 +90,37 @@ La valeur par défaut est définie sur le verbe AJOUTER pour les composants QnA 
 
 Dans le score de base, la quantité nécessaire pour gagner un badge est connue.
 
-Dans le cadre d’un score avancé, la quantité nécessaire est constamment ajustée en fonction de la quantité de données de qualité au sein du système. Le score est calculé en permanence de la même manière qu’une courbe en cloche.
+Dans le cadre d’un score avancé, la quantité nécessaire est constamment ajustée en fonction de la quantité de données de qualité au sein du système. Le score est calculé en permanence de la même manière qu&#39;une courbe en cloche.
 
-Si un membre a obtenu un badge d&#39;expert sur un sujet qui n&#39;est plus actif, il est possible qu&#39;il perde son badge à cause de la carie au fil du temps.
+Si un membre a gagné un badge d&#39;expert sur un sujet qui n&#39;est plus actif, il est possible qu&#39;il perde son badge à cause de la dégradation au fil du temps.
 
 ### scoringType {#scoringtype}
 
-Une règle d’évaluation est un ensemble de sous-règles d’évaluation, chacune d’elles déclarant la règle `scoringType`.
+Une règle d’évaluation est un ensemble de sous-règles d’évaluation, dont chacune déclare la `scoringType`règle.
 
-Pour appeler le moteur de notation avancé, `scoringType`vous devez définir `advanced`.
+Pour appeler le moteur d’évaluation avancé, la valeur `scoringType`doit `advanced`être définie.
 
-Voir Sous-règles [de score](/help/communities/implementing-scoring.md#scoring-sub-rules).
+Voir Sous-règles [](/help/communities/implementing-scoring.md#scoring-sub-rules)de score.
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-### Stopwords {#stopwords}
+### Mots-clés {#stopwords}
 
-Le package d’évaluation avancé installe un dossier de configuration contenant un fichier de mots-clés :
+Le package d’évaluation avancé installe un dossier de configuration contenant un fichier de mots de passe :
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
-L’algorithme de notation avancé utilise la  de mots contenus dans le fichier de mots-clés pour identifier les mots anglais courants qui sont ignorés pendant le traitement du contenu.
+L’algorithme d’évaluation avancé utilise la liste des mots contenus dans le fichier de mots-clés pour identifier les mots anglais courants qui sont ignorés pendant le traitement du contenu.
 
 On ne s&#39;attend pas à ce que ce fichier soit modifié.
 
-Si le fichier de mots-clés est manquant, le moteur de notation avancé renvoie une erreur.
+Si le fichier de mots-clés est manquant, le moteur d’évaluation avancé génère une erreur.
 
 ## Règles de badge avancées {#advanced-badging-rules}
 
-Les propriétés avancées des règles de mise en badge diffèrent des propriétés [de](/help/communities/implementing-scoring.md#badging-rules)base des règles de mise en badge.
+Les propriétés de règle de badge avancées diffèrent des propriétés [de règle de badge](/help/communities/implementing-scoring.md#badging-rules)de base.
 
-Au lieu d’associer des points à une image d’insigne, il suffit d’identifier le nombre d’experts autorisés et l’image d’insigne à attribuer.
+Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identifier le nombre d&#39;experts autorisés et l&#39;image de badge à attribuer.
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
@@ -131,22 +134,22 @@ Au lieu d’associer des points à une image d’insigne, il suffit d’identifi
   <tr>
    <td>badgingPath</td>
    <td>Chaîne[]</td>
-   <td><em>(Obligatoire)</em> Chaîne multi-valeurs d’images de badge jusqu’au nombre de niveaux de badge. Les chemins d'image du badge doivent être triés afin que le premier soit attribué au plus haut expert. S'il y a moins de badges que ceux indiqués par badgingLevels, le dernier badge de la baie remplit le reste de la baie. Exemple d’entrée :<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Obligatoire)</em> Chaîne multi-valeurs d’images de badge jusqu’au nombre de badgingLevels. Les chemins d'image du badge doivent être commandés pour que le premier soit attribué au plus haut expert. S'il y a moins de badges qu'indiqué par badgingLevels, le dernier badge de la baie remplit le reste de la baie. Exemple d'entrée :<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
    <td>Long</td>
-   <td><em>(Facultatif)</em> Indique les niveaux d’expertise à attribuer. Par exemple, s’il doit y avoir un <code>expert </code>et un <code>almost expert</code> (deux badges), la valeur doit être définie sur 2. Le badgingLevel doit correspondre au nombre d’images de badge liées à un expert répertoriées pour la propriété badgingPath. La valeur par défaut est 1.</td>
+   <td><em>(Facultatif)</em> Indique les niveaux d’expertise à attribuer. Par exemple, s’il doit y avoir un <code>expert </code>et un <code>almost expert</code> (deux badges), la valeur doit être définie sur 2. Le badgingLevel doit correspondre au nombre d’images de badge d’expert répertoriées pour la propriété badgingPath. La valeur par défaut est 1.</td>
   </tr>
   <tr>
    <td>badgingType</td>
    <td>Chaîne</td>
-   <td><em>(Obligatoire)</em> Identifie le moteur de notation comme étant "de base" ou "avancé". Défini sur "advanced", sinon la valeur par défaut est "basic".</td>
+   <td><em>(Obligatoire)</em> Identifie le moteur d’évaluation comme étant "de base" ou "avancé". Défini sur "avancé", sinon la valeur par défaut est "de base".</td>
   </tr>
   <tr>
    <td>scoringRules</td>
    <td>Chaîne[]</td>
-   <td><em>(Facultatif)</em> Chaîne à plusieurs valeurs qui limite la règle de mise en badge aux de notation identifiés par les règles de notation répertoriées.<br /> Exemple d’entrée :<br /> La <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> valeur par défaut n’est pas une restriction.</td>
+   <td><em>(Facultatif)</em> Chaîne à plusieurs valeurs pour limiter la règle de badge aux événements d’évaluation identifiés par la ou les règles d’évaluation répertoriées.<br /> Exemple d'entrée :<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> La valeur par défaut n’est pas une restriction.</td>
   </tr>
  </tbody>
 </table>
@@ -155,48 +158,48 @@ Au lieu d’associer des points à une image d’insigne, il suffit d’identifi
 
 ### Badge inclus {#included-badge}
 
-Cette version bêta comprend un badge d’expert basé sur la récompense :
+Cette version bêta comprend un badge d&#39;expert basé sur la récompense :
 
 * `expert`
 
-   `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-Pour que le badge d’expert soit présenté comme une récompense pour  , veillez à :
+Pour que le badge d&#39;expert s&#39;affiche comme une récompense pour l&#39;activité, assurez-vous que :
 
-* `Badges` sont activées pour la fonctionnalité, comme un forum ou un composant QnA.
+* `Badges` sont activées pour la fonction, par exemple un forum ou un composant QnA.
 
 * Les règles avancées de notation et de badge sont appliquées à la page (ou à l’ancêtre) sur laquelle le composant est placé.
 
 Consultez les informations de base pour :
 
-* [Activation du badge pour un composant](/help/communities/implementing-scoring.md#enableforcomponent)
+* [Activation de la mise en badge pour un composant](/help/communities/implementing-scoring.md#enableforcomponent)
 * [Application de règles](/help/communities/implementing-scoring.md#applytopage)
 
 ### Règles et sous-règles de score incluses {#included-scoring-rules-and-sub-rules}
 
-La version bêta comprend deux règles de notation avancées pour la fonction [de](/help/communities/functions.md#forum-function) forum (une pour le forum et les composants de commentaires de la fonctionnalité de forum) :
+La version bêta comprend deux règles de notation avancées pour la fonction [de](/help/communities/functions.md#forum-function) forum (une pour le forum et les commentaires pour les composants du forum) :
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
-
-   * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/etc/community/scoring/rules/sub-rules/adv-voting-rule`
-
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-forums-rule
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-**Remarque:**
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-* Les deux `rules`et `sub-rules` les noeuds sont de type `cq:Page`
+   * `subRules[] =
+/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
-* `subRules`est un attribut de type String[] sur le `jcr:content` noeud de la règle
+**Notes:**
+
+* Les deux `rules`et `sub-rules` noeuds sont de type `cq:Page`
+
+* `subRules`est un attribut de type String[] sur le `jcr:content` noeud de la règle.
 
 * `sub-rules` peut être partagée entre différentes règles de notation
 
@@ -204,14 +207,14 @@ La version bêta comprend deux règles de notation avancées pour la fonction [d
 
    * Les noms de règle doivent être uniques, quel que soit l’emplacement
 
-### Règles de badge incluses {#included-badging-rules}
+### Règles de mise en badge incluses {#included-badging-rules}
 
-Cette version comprend deux règles de mise en badge avancées qui correspondent aux règles [de notation des commentaires et des forums](#included-scoring-rules-and-sub-rules)avancés.
+Cette version comprend deux règles de mise en badge avancées qui correspondent aux forums [avancés et aux règles](#included-scoring-rules-and-sub-rules)de notation des commentaires.
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
-**Remarque:**
+**Notes:**
 
 * `rules` les noeuds sont de type cq:Page
 * `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde
