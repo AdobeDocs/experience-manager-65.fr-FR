@@ -1,8 +1,8 @@
 ---
-title: Console Badges
-seo-title: Console Badges
-description: La console Badges de communautés vous permet d’ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu’ils sont gagnés (attribués) ou lorsqu’ils assument un rôle spécifique dans la communauté (affectés).
-seo-description: La console Badges de communautés vous permet d’ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu’ils sont gagnés (attribués) ou lorsqu’ils assument un rôle spécifique dans la communauté (affectés).
+title: Console de badges
+seo-title: Console de badges
+description: La console Badges de communautés vous permet d'ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu'ils sont gagnés (attribués) ou lorsqu'ils assument un rôle spécifique dans la communauté (affectés).
+seo-description: La console Badges de communautés vous permet d'ajouter des badges personnalisés qui peuvent être affichés pour les membres lorsqu'ils sont gagnés (attribués) ou lorsqu'ils assument un rôle spécifique dans la communauté (affectés).
 uuid: 7103b133-ef3f-47d6-a2dc-4e6ff92e8fed
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 4%
 
 ---
 
 
-# Console Badges {#badges-console}
+# Console de badges {#badges-console}
 
 ## A propos des badges {#about-badges}
 
@@ -24,7 +27,7 @@ La console Badges communautaires permet d&#39;ajouter des badges personnalisés 
 
 ### Visibilité du badge {#badge-visibility}
 
-Actuellement, les badges gagnent ou sont attribués à un membre de la communauté apparaissent avec son nom et son avatar aux emplacements suivants :
+Actuellement, les badges gagnés ou attribués à un membre de la communauté apparaissent avec son nom et son avatar aux emplacements suivants :
 
 * Profils
 * [Forums](/help/communities/forum.md)
@@ -32,7 +35,7 @@ Actuellement, les badges gagnent ou sont attribués à un membre de la communaut
 * [Tableaux de bord](/help/communities/enabling-leaderboard.md)
 * [Conceptualisation](/help/communities/ideation-feature.md)
 
-Dans l&#39;auteur  , pour accéder à la console Badges
+Dans l&#39;environnement auteur, pour accéder à la console Badges
 
 * Dans la navigation globale, accédez à **[!UICONTROL Outils > Communautés > Badges.]**
 
@@ -42,9 +45,9 @@ Cette console affiche les badges actuellement disponibles et à partir desquels 
 
 ## Créer le badge {#create-badge}
 
-Un badge est créé en téléchargeant une image appropriée (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/etc/community/badging/images` et automatiquement répliquée dans le  de publication .
+Un badge est créé en téléchargeant une image suffisamment petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/libs/settings/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
 
-Si le de publication  est une batterie d’éditeurs, il est nécessaire de configurer la synchronisation [utilisateur](/help/communities/sync.md).
+Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer la synchronisation [](/help/communities/sync.md)utilisateur.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
@@ -54,7 +57,7 @@ Si le de publication  est une batterie d’éditeurs, il est nécessaire de conf
 
 * **Nom**
 
-   (*Obligatoire*) Nom du badge. Il s’agit du nom par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si le nom `Name` n&#39;est pas un nom de noeud de référentiel valide, il sera modifié.
+   (*Obligatoire*) Nom du badge. Il s’agit de la valeur par défaut `Display Name` ainsi que du nom du noeud du référentiel. Si le nom `Name` de noeud de référentiel n&#39;est pas valide, il sera modifié.
 
 * **Nom d’affichage**
 
@@ -66,6 +69,6 @@ Si le de publication  est une batterie d’éditeurs, il est nécessaire de conf
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations sur la configuration des règles de notation et de mise en badge, voir [Scoring and Badges](/help/communities/implementing-scoring.md)(Scores et badges).
+Pour plus d’informations sur la configuration des règles d’évaluation et de mise en badge, voir [Scoring and Badges](/help/communities/implementing-scoring.md)(Scores et badges).
 
-Pour la gestion des badges pour les membres, voir Console [Membres](/help/communities/members.md).
+Pour la gestion des badges pour les membres, voir Console [](/help/communities/members.md)Membres.
