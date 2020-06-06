@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 1%
 
 ---
@@ -157,13 +157,13 @@ Les captures d’écran des données du référentiel proviennent de la configur
    * Ajouter les propriétés d’évaluation et de mise en badge
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-scoring,
+   /libs/settings/community/badging/rules/forums-scoring]
    ```
 
    * Localisation du noeud du composant de forum
@@ -189,7 +189,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
@@ -212,7 +212,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 1. Un badge de modérateur est attribué à un utilisateur à l’aide de cURL :
 
    ```shell
-   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
    Comme un utilisateur a gagné deux badges en bronze et qu&#39;il a reçu un badge de modérateur, c&#39;est ainsi que l&#39;utilisateur apparaît avec son entrée sur le forum.
@@ -225,8 +225,8 @@ Les captures d’écran des données du référentiel proviennent de la configur
 >
 >* Les noms des règles de score doivent être globalement uniques ; ils ne devraient pas se terminer par le même nom.
    >  Voici un exemple de ce que *ne pas* faire :
-   >  /etc/community/scoring/rules/site1/forums-score
-   >  /etc/community/scoring/rules/site2/forums-score
+   >  /libs/settings/community/scoring/rules/site1/forums-score
+   >  /libs/settings/community/scoring/rules/site2/forums-score
    >
    >
 * Création d’images de badge uniques pour différents sites AEM
