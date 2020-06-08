@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
+source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+workflow-type: tm+mt
+source-wordcount: '2424'
+ht-degree: 61%
 
 ---
 
@@ -36,35 +39,35 @@ L’utilisation de Maven pour créer votre projet AEM présente plusieurs avanta
 
 Adobe fournit deux archétypes Maven qui peuvent servir de base à vos projets AEM. Pour plus d&#39;informations, consultez les liens ci-dessous :
 
-* [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
-* [Archétype Maven pour le kit de démarrage d’applications d’une seule page](https://github.com/adobe/aem-spa-project-archetype)
+* [archétype du projet AEM](https://github.com/adobe/aem-project-archetype)
+* [Maven archetype for Single Page Applications Starter Kit](https://github.com/adobe/aem-spa-project-archetype)
 
 ## Dépendances de l’API Experience Manager {#experience-manager-api-dependencies}
 
 ### What is the UberJar? {#what-is-the-uberjar}
 
-&quot;UberJar&quot; est le nom informel donné au fichier spécial d’archives Java (JAR) fourni par Adobe. Ces fichiers JAR contiennent toutes les API Java publiques exposées par Adobe Experience Manager. Elles comprennent également des bibliothèques externes limitées, en particulier toutes les API publiques disponibles dans AEM qui proviennent des bibliothèques Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava et deux bibliothèques utilisées pour le traitement d’images (la bibliothèque d’images JPEG d’Apache Sling de Werner Randelshofer et la bibliothèque d’images TwelveMonkeys). Les variables UberJars contiennent uniquement des interfaces et des classes API, ce qui signifie qu’elles contiennent uniquement des interfaces et des classes qui sont exportées par un lot OSGi dans AEM. They also contain a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
+&quot;UberJar&quot; est le nom informel donné au fichier spécial d&#39;archives Java (JAR) fourni par Adobe. Ces fichiers JAR contiennent toutes les API Java publiques exposées par Adobe Experience Manager. Ils comprennent également des bibliothèques externes limitées, en particulier toutes les API publiques disponibles dans AEM qui proviennent d&#39;Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, et deux bibliothèques utilisées pour le traitement d&#39;image (la bibliothèque CYMK JPEG ImageIO de Werner Randelshofer et la bibliothèque d&#39;images TwelveMonkeys). Les variables UberJars contiennent uniquement des interfaces et des classes d’API, ce qui signifie qu’elles contiennent uniquement des interfaces et des classes qui sont exportées par un lot OSGi dans AEM. They also contain a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
 
 ### Why did Adobe create the UberJars? {#why-did-adobe-create-the-uberjars}
 
 Auparavant, les développeurs devaient gérer un nombre relativement élevé de dépendances individuelles par rapport aux différentes bibliothèques AEM. Chaque fois qu’une nouvelle API était utilisée, une ou plusieurs dépendances individuelles devaient être ajoutées au projet. Sur un seul projet, l’introduction du fichier UberJar a entraîné la suppression de 30 dépendances distinctes.
 
-Depuis AEM 6.5, Adobe fournit deux fichiers UberJars : l’une d’elles comprend des interfaces obsolètes et l’autre supprime ces interfaces obsolètes. En en référençant explicitement un au moment de la création, les clients sont sûrs de comprendre s’ils dépendent d’un code obsolète.
+Depuis AEM 6.5, Adobe fournit deux variables UberJars : l&#39;une qui inclut des interfaces obsolètes et l&#39;autre qui supprime ces interfaces obsolètes. En en référençant explicitement un au moment de la création, les clients sont sûrs de comprendre s’ils dépendent d’un code obsolète.
 
-La seconde version d’Uber Jar élimine toutes les classes, méthodes et propriétés obsolètes afin que les clients puissent les compiler et comprendre si le code personnalisé est une preuve future.
+La seconde variable Uber Jar supprime toutes les classes, méthodes et propriétés obsolètes afin que les clients puissent les compiler et déterminer si le code personnalisé est un BAT futur.
 
 ### Quel UberJar utiliser ? {#which-uberjar-to-use}
 
 AEM 6.5 est disponible en deux versions d’Uber Jar :
 
-1. Uber Jar - Inclut uniquement les interfaces publiques qui ne sont pas marquées pour la dépréciation. Il s’agit de l’UberJar **recommandé** à utiliser, car il permet d’assurer la sécurité du code de base à partir d’API obsolètes.
-1. Jar Uber avec API obsolètes : comprend toutes les interfaces publiques, y compris celles marquées pour la dépréciation dans une future version d’AEM.
+1. Uber Jar - Inclut uniquement les interfaces publiques qui ne sont pas marquées pour la dépréciation. Il s’agit de l’UberJar **recommandé** à utiliser, car il aide les futurs BAT à utiliser le code de base à partir d’API obsolètes.
+1. Jar Uber avec des API obsolètes - Inclut toutes les interfaces publiques, y compris celles marquées pour la dépréciation dans une future version d’AEM.
 
-### How to I use the UberJars? {#how-to-i-use-the-uberjars}
+### Comment utiliser UberJars ? {#how-do-i-use-the-uberjars}
 
 If you are using Apache Maven as a build system (which is the case for most AEM Java projects), you will need to add one or two elements to your *pom.xml* file. The first is a *dependency* element adding the actual dependency to your project:
 
-**dépendance Uber Jar *(sans API obsolètes)***
+**Dépendance Uber Jar *(sans API obsolètes)***
 
 ```xml
 <dependency>
@@ -76,13 +79,13 @@ If you are using Apache Maven as a build system (which is the case for most AEM 
 </dependency>
 ```
 
-**Dépendance d’Uber Jar avec des API obsolètes**
+**Dépendance de Jar Uber avec des API obsolètes**
 
 >[!CAUTION]
 >
->Adobe recommande d’effectuer un déploiement sur le Jar Uber en indiquant que ***ne contient pas* **les API obsolètes afin de vous assurer que vos applications s’exécuteront correctement sur les futures versions d’AEM.
+>Adobe recommande de procéder au déploiement sur le Jar Uber pour que ***ne contienne pas* **les API obsolètes afin de s’assurer que vos applications s’exécuteront correctement sur les versions futures d’AEM.
 >
->Utilisez le Jar Uber avec la prise en charge des API obsolètes uniquement au cas où le code qui repose sur les API obsolètes ne serait pas modifié pour prendre en charge les modifications.
+>N&#39;utilisez Uber Jar avec prise en charge d&#39;API obsolète que si le code qui repose sur les API obsolètes ne peut pas être modifié pour prendre en charge les modifications.
 
 ```xml
 <dependency>
@@ -576,7 +579,8 @@ Pour parvenir à la suppression des classes compilées à partir des pages JSP, 
 >
 >E.g. if you include `/libs/foundation/global.jsp`, you can use the following configuration for the `maven-resources-plugin` instead of the configuration above which completely skips over `/libs`.
 >
->```
+>
+```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -585,7 +589,6 @@ Pour parvenir à la suppression des classes compilées à partir des pages JSP, 
 >       </includes>  
 >   </resource>  
 >```
->
 
 ### Utilisation des systèmes SCM {#how-to-work-with-scm-systems}
 
