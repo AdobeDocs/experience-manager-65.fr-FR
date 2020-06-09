@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+workflow-type: tm+mt
+source-wordcount: '3210'
+ht-degree: 74%
 
 ---
 
@@ -99,7 +102,7 @@ Lors de la création d’un modèle modifiable :
 
    **Mise en page**
 
-   * Vous pouvez définir la mise en page du modèle pour différents dispositifs.
+   * Vous pouvez définir la mise en page du modèle pour différents appareils.
    * La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.
    Pour plus d’informations sur la façon dont le créateur d’un modèle définit la mise en page de ce dernier, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
@@ -144,7 +147,7 @@ Pour organiser vos modèles, vous pouvez utiliser les dossiers suivants :
 >
 >Bien que vous puissiez imbriquer vos dossiers, lorsque l’utilisateur les visualise dans la console **Modèles**, ils sont présentés sous la forme d’une structure plate.
 
-Dans une instance AEM standard, le dossier **Global** existe déjà dans la console Modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de stratégies et/ou de types de modèles. Vous pouvez soit ajouter vos modèles par défaut à ce dossier, soit créer un dossier (recommandé).
+Dans une instance AEM standard, le dossier **Global** existe déjà dans la console de modèles. Il contient les modèles par défaut et fait office de dossier de rechange si le dossier actif ne contient pas de stratégies et/ou de types de modèles. Vous pouvez soit ajouter vos modèles par défaut à ce dossier, soit créer un dossier (recommandé).
 
 >[!NOTE]
 >
@@ -188,9 +191,9 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
    `<your-folder-name> [sling:Folder]`
 
-   Nom: `jcr:title`
+   Nom (name) : `jcr:title`
 
-   * Type: `String`
+   * Type : `String`
 
    * Valeur : titre (du dossier) que vous souhaitez afficher dans la console **Modèles**.
 
@@ -232,14 +235,14 @@ Le groupe `template-authors` est utilisé pour gérer l’accès aux modèles. I
 >
 >Le groupe `template-authors` est destiné *uniquement* aux utilisateurs qui doivent pouvoir créer des modèles.
 >
->La modification des modèles est une fonctionnalité très puissante qui, si elle n’est pas exécutée correctement, peut entraîner l’échec des modèles existants. Par conséquent, ce rôle doit être ciblé et ne contenir que des utilisateurs qualifiés.
+>La modification de modèles est très puissante et si elle n&#39;est pas effectuée correctement, les modèles existants peuvent être endommagés. Par conséquent, ce rôle doit être ciblé et ne contenir que des utilisateurs qualifiés.
 
 Le tableau suivant récapitule les autorisations nécessaires pour la modification de modèles.
 
 <table>
  <tbody>
   <tr>
-   <th>Chemin</th>
+   <th>Chemin  </th>
    <th>Rôle/Groupe</th>
    <th>Autorisations<br /> </th>
    <th>Description</th>
@@ -248,23 +251,23 @@ Le tableau suivant récapitule les autorisations nécessaires pour la modificati
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Template Authors<br /> </td>
    <td>lecture, écriture, réplication</td>
-   <td>Auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans un <code>/conf</code> espace spécifique au site</td>
+   <td>Les auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans un <code>/conf</code> espace spécifique au site</td>
   </tr>
   <tr>
    <td>Utilisateur Web anonyme</td>
    <td>lire</td>
-   <td>L'utilisateur Web anonyme doit lire les modèles lors du rendu d'une page</td>
+   <td>L'utilisateur Web anonyme doit lire les modèles lors du rendu d'une page.</td>
   </tr>
   <tr>
    <td>Auteurs de contenu</td>
    <td>répliquer</td>
-   <td>Les auteurs de replicateContent doivent activer les modèles d’une page lors de l’activation d’une page.</td>
+   <td>Les auteurs replicateContent doivent activer les modèles d’une page lors de l’activation d’une page.</td>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>lecture, écriture, réplication</td>
-   <td>Auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans un <code>/conf</code> espace spécifique au site</td>
+   <td>Les auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans un <code>/conf</code> espace spécifique au site</td>
   </tr>
   <tr>
    <td>Utilisateur Web anonyme</td>
@@ -299,7 +302,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table>
  <tbody>
   <tr>
-   <th>Chemin</th>
+   <th>Chemin  </th>
    <th>Rôle/Groupe</th>
    <th>Autorisations<br /> </th>
    <th>Description</th>
@@ -313,7 +316,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
   <tr>
    <td>Utilisateur Web anonyme</td>
    <td>lire</td>
-   <td>L'utilisateur Web anonyme doit lire les modèles lors du rendu d'une page</td>
+   <td>L'utilisateur Web anonyme doit lire les modèles lors du rendu d'une page.</td>
   </tr>
   <tr>
    <td>Auteurs de contenu</td>
@@ -377,7 +380,7 @@ Les types de modèle prêts à l’emploi sont stockés sous :
 
 >[!CAUTION]
 >
->You must not change anything in the `/libs` path. This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+>Vous ne devez rien modifier dans le chemin `/libs`. This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
 Les types de modèle spécifiques à un site doivent être stockés dans l’emplacement comparable :
 
@@ -427,7 +430,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-sites-example-custom-template-type sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* [Ouvrez un projet aem-sites-example-custom-template-type sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip).
 
 ## Définitions de modèle {#template-definitions}
@@ -484,9 +487,9 @@ Les éléments principaux sont les suivants :
 
 Ce nœud contient des propriétés pour le modèle :
 
-* **Nom**: `jcr:title`
+* **Name** (Nom) : `jcr:title`
 
-* **Nom**: `status`
+* **Name** (Nom) : `status`
 
    * ``**Type**: `String`
 
@@ -527,7 +530,7 @@ Les stratégies de contenu (ou de conception) définissent les propriétés de c
 
 * La propriété `cq:policy`, sur le `root` noeud
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-Fournit une référence relative à la stratégie de contenu pour le système de paragraphe de la page.
+Fournit une référence relative à la stratégie de contenu pour le système de paragraphes de la page.
 
 * The property `cq:policy`, on the component-explicit nodes under `root`, provide links to the policies for the individual components.
 
@@ -576,51 +579,51 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
    * [Définissez le(s) chemin(s) d’accès des modèles autorisés dans les **Propriétés de page **](/help/sites-authoring/templates.md#allowing-a-template-author)de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
       `cq:allowedTemplates`
-Sur le `jcr:content` noeud de la branche requise.
-   Par exemple, avec la valeur suivante :
+Sur la `jcr:content`
+   `jcr:content` du noeud de la branche requise.
 
-   `/conf/<your-folder>/settings/wcm/templates/.*`
+   `/conf/<your-folder>/settings/wcm/templates/.*`Par exemple, avec la valeur suivante :
 
-## Pages de contenu créées {#resultant-content-pages}
+## `/conf/<your-folder>/settings/wcm/templates/.*`
 
-Les pages créées à partir de modèles modifiables :
+Pages de contenu créées {#resultant-content-pages}
+
+* Les pages créées à partir de modèles modifiables :`structure``initial`
 
 * sont créées avec une sous-arborescence qui est fusionnée à partir de `structure` et `initial` dans le modèle ;
 
-* contiennent des références aux informations contenues dans le modèle et le type de modèle. Pour cela, on utilise un nœud `jcr:content` avec les propriétés suivantes :
+   * contiennent des références aux informations contenues dans le modèle et le type de modèle. Pour cela, on utilise un nœud `jcr:content` avec les propriétés suivantes :
 
    * `cq:template`
 Fournit la référence dynamique au modèle proprement dit ; fait en sorte que les modifications apportées au modèle soient répercutées sur les pages proprement dites.
 
-   * `cq:templateType`
-Fournit une référence au type de modèle.
+`cq:templateType`
+Fournit une référence au type de modèle.](assets/chlimage_1-71.png)
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
-Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et les composants :
+* Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et les composants :`/content/<my-site>/<my-page>`
 
-* Contrôleur - `/content/<my-site>/<my-page>`Page cible qui fait référence au modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.
+* Contrôleur - `/content/<my-site>/<my-page>`Page résultante référençant le modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.[](#template-definitions)
 
 * Configuration : `/conf/<my-folder>/settings/wcm/templates/<my-template>`le [modèle et les stratégies](#template-definitions) de contenu associées définissent la configuration de la page.
 
-* Modèle – Lots OSGi Les [lots OSGi](/help/sites-deploying/osgi-configuration-settings.md) mettent en œuvre la fonctionnalité.
+* Modèle – Lots OSGi Les [lots OSGi](/help/sites-deploying/osgi-configuration-settings.md) mettent en œuvre la fonctionnalité.](/help/sites-developing/components.md)
 
-* View - `/apps/<my-site>/components`
+View - `/apps/<my-site>/components`
 On both the author and publish environments the content is rendered by [components](/help/sites-developing/components.md).
 
-Lors du rendu d’une page :
+* **Lors du rendu d’une page :**
 
-* **Modèles** :
+   * **Modèles**:
 
-   * The `cq:template` property of its `jcr:content` node will be referenced to access the template that corresponds to that page.
+* The `cq:template` property of its `jcr:content` node will be referenced to access the template that corresponds to that page.
 
-* **Composants** :
+   * **Composants**:
 
    * The page component will merge the `structure/jcr:content` tree of the template with the `jcr:content` tree of the page.
+   * Le composant de page autorisera uniquement l’auteur à modifier les nœuds de la structure du modèle qui ont été marqués comme étant modifiables (ainsi que ses éventuels enfants).`jcr:content``policies/jcr:content`
 
-   * Le composant de page autorisera uniquement l’auteur à modifier les nœuds de la structure du modèle qui ont été marqués comme étant modifiables (ainsi que ses éventuels enfants).
-   * Lors du rendu d’un composant sur une page, le chemin d’accès relatif de ce composant est prélevé dans le nœud `jcr:content` ; une recherche est ensuite effectuée dans le même emplacement sous le nœud `policies/jcr:content` du modèle.
+      * Lors du rendu d’un composant sur une page, le chemin d’accès relatif de ce composant est prélevé dans le nœud `jcr:content` ; une recherche est ensuite effectuée dans le même emplacement sous le nœud `policies/jcr:content` du modèle.
 
       * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component).
-
-      * De cette manière, vous pouvez disposer de plusieurs modèles qui réutilisent les mêmes configurations de stratégie de contenu.
