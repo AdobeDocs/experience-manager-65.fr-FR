@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+source-git-commit: 1c4098cce779334588ab5924f4926756574425cc
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2309'
 ht-degree: 14%
 
 ---
@@ -78,7 +78,8 @@ Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.m
 
 1. **Publication de fichiers 3D**
 
-   * [Publication de fichiers Contenu multimédia dynamique 3D](#publishing-three-d-assets)
+   * [Publication de fichiers de média dynamique statique 3D](#publishing-three-d-assets)
+   * [Autres méthodes de publication de fichiers 3D de Contenu multimédia dynamique à l’aide de la visionneuse de dimensions](#alternate-publish-methods)
 
 ## A propos de l&#39;affichage et de l&#39;interaction avec des ressources 3D {#viewing-three-d-assets}
 
@@ -98,7 +99,7 @@ En outre, les capacités de l&#39;ordinateur client (tel qu&#39;une station de t
 >
 >Vous pouvez ouvrir le paramètre prédéfini de visionneuse de dimensions dans l’éditeur de paramètres prédéfinis de la visionneuse pour vous entraîner à naviguer dans un fichier 3D sans avoir à télécharger au préalable des fichiers 3D. Le paramètre prédéfini de la visionneuse de dimensions comporte un fichier 3D intégré avec lequel vous pouvez interagir.
 >
->See [Managing viewer presets](/help/assets/managing-viewer-presets.md).
+>See [Managing viewer presets.](/help/assets/managing-viewer-presets.md)
 
 ## Affichage et interaction avec un fichier 3D à partir de la page des détails de l&#39;élément {#viewing-three-d-assets-from-asset-details-page}
 
@@ -108,7 +109,7 @@ Voir aussi [Prévisualisation de fichiers à l’aide de l’interface](/help/as
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans AEM.
 
-   Voir [Téléchargement de vos fichiers 3D en vue de les utiliser dans Contenu multimédia](/help/assets/managing-assets-touch-ui.md#uploading-assets)dynamique.
+   Voir [Téléchargement de fichiers 3D à utiliser dans Contenu multimédia dynamique.](/help/assets/managing-assets-touch-ui.md#uploading-assets)
 
 1. Dans AEM, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
@@ -139,9 +140,9 @@ Lorsqu’une page Web est en mode **[!UICONTROL Edition]** , aucune interaction 
 
 >[!IMPORTANT]
 >
->Vous ne pouvez accomplir cette tâche qu’après avoir ajouté un composant Média 3D à une page Web et y avoir affecté un élément 3D. Voir [Ajouter le composant Média 3D à une page](#adding-the-three-d-media-component-to-a-web-page) Web et [Affecter un fichier 3D à un composant](#assigning-a-three-d-asset-to-the-component)Média 3D.
+>Vous ne pouvez accomplir cette tâche qu’après avoir ajouté un composant Média 3D à une page Web et y avoir affecté un élément 3D. Voir [Ajouter le composant Média 3D à une page](#adding-the-three-d-media-component-to-a-web-page) Web et [Affecter un fichier 3D à un composant Média 3D.](#assigning-a-three-d-asset-to-the-component)
 
-Voir aussi [Prévisualisation de fichiers à l’aide de l’interface](/help/assets/previewing-assets.md)logicielle.
+Voir aussi [Prévisualisation de fichiers à l’aide de l’interface logicielle.](/help/assets/previewing-assets.md)
 
 **Pour vue et interaction avec un fichier 3D dans un composant multimédia 3D**
 
@@ -199,7 +200,7 @@ Contenu multimédia dynamique comprend un composant Contenu multimédia 3D dynam
 
 Si vous utilisez Adobe Experience Manager comme système de gestion de contenu Web, vous pouvez ajouter des ressources 3D à vos pages Web au moyen du composant Média 3D.
 
-See also [Adding Dynamic Media assets to pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+See also [Adding Dynamic Media assets to pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 1. Ouvrez Sites AEM et sélectionnez la page Web sur laquelle vous souhaitez ajouter le composant Contenu multimédia 3D Contenu multimédia dynamique.
 1. Tap the **[!UICONTROL Edit]** (pencil) icon to open the page into the page editor. Assurez-vous que le mode **[!UICONTROL Modifier]** est sélectionné près de l’angle supérieur droit de la page.
@@ -216,7 +217,7 @@ See also [Adding Dynamic Media assets to pages](/help/assets/adding-dynamic-medi
 
 Vous êtes maintenant prêt à affecter une ressource 3D au composant.
 
-Voir [Affectation d’un fichier 3D à un composant](#assigning-a-three-d-asset-to-the-component)multimédia 3D.
+Voir [Affectation d’un fichier 3D à un composant multimédia 3D.](#assigning-a-three-d-asset-to-the-component)
 
 ### Facultatif - Configuration du composant Média 3D {#configuring-the-three-d-component}
 
@@ -235,7 +236,7 @@ Voir [Affectation d’un fichier 3D à un composant](#assigning-a-three-d-asset-
 
 Après avoir ajouté un composant Média 3D à une page Web, vous pouvez lui affecter un fichier 3D.
 
-See [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page).
+See [Adding the 3D Media component to a web page.](#adding-the-three-d-media-component-to-a-web-page)
 
 1. In the AEM Sites page editor, click the **[!UICONTROL Assets]** icon to open **[!UICONTROL Assets]** in the side panel.
 1. Dans la liste déroulante, sélectionnez **[!UICONTROL 3D]** pour afficher uniquement les types de fichier 3D.
@@ -252,17 +253,17 @@ See [Adding the 3D Media component to a web page](#adding-the-three-d-media-comp
 
 Contenu multimédia dynamique accepte divers formats de fichier 3D pris en charge en tant que contenu ** statique dans Contenu multimédia dynamique. Le contenu statique signifie que vous pouvez télécharger et publier des fichiers 3D, mais qu’il n’existe aucune prise en charge de l’imagerie *dynamique* ou de la retouche d’image associée à la ressource 3D. La raison en est que Dynamic Media Imaging Server ne reconnaît pas les formats 3D. Ainsi, après avoir publié un fichier 3D dans Contenu multimédia dynamique, vous disposez d’une URL instantanée que vous pouvez copier. L’URL de la ressource 3D suit la structure d’URL de média dynamique habituelle. Cependant, vous ne pouvez pas modifier de paramètres dans l’URL du fichier, contrairement aux fichiers d’image traditionnels dans Contenu multimédia dynamique.
 
-See also [Obtaining a URL for a static asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
+See also [Obtaining a URL for a static asset.](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 Dans la Vue **** Carte, une petite icône en forme de globe apparaît directement sous le nom d’un fichier et à gauche de sa date et de son heure pour indiquer qu’il est publié. En mode **[!UICONTROL Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
 Si vous utilisez AEM en tant que gestion de contenu Web, utilisez cette méthode de publication pour ajouter les fichiers Contenu multimédia dynamique 3D directement sur votre page Web.
 
-See also [Publishing Dynamic Media assets](publishing-dynamicmedia-assets.md).
+See also [Publishing Dynamic Media assets.](publishing-dynamicmedia-assets.md)
 
-Voir aussi [Publication de pages](/help/sites-authoring/publishing-pages.md).
+Voir aussi [Publication de pages.](/help/sites-authoring/publishing-pages.md)
 
-**Pour publier des fichiers 3D Contenu multimédia dynamique**
+**Pour publier des fichiers 3D de Contenu multimédia dynamique statique**
 
 1. Ouvrez une ressource 3D (format de fichier GLB, OBJ ou STL) pour la vue dans la page des détails de la ressource.
 1. On the toolbar, tap **[!UICONTROL Quick Publish]**.
@@ -289,8 +290,8 @@ Utilisez les deux méthodes suivantes pour publier des fichiers 3D de Contenu mu
 
 * **[!UICONTROL URL]** : utilisez **[!UICONTROL URL]** si vous utilisez un système de gestion de contenu Web tiers et souhaitez lier des fichiers Contenu multimédia dynamique 3D à vos pages Web à l’aide de la visionneuse de dimensions.
 
-   Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+   Voir [Liaison d’URL à une application web.](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
 
 * **[!UICONTROL Incorporer]** : utilisez l’option **[!UICONTROL Incorporer]** lorsque vous souhaitez vue d’une ressource Contenu multimédia dynamique 3D incorporée sur une page Web à l’aide de la visionneuse Dimensional. Vous copiez le code intégré dans le presse-papiers pour pouvoir le coller dans vos pages web. Vous ne pouvez pas modifier le dans la boîte de dialogue **[!UICONTROL Intégrer le code]**.
 
-   Voir [Incorporation de la vidéo multimédia dynamique, de la visionneuse d’images ou de la visionneuse de dimensions sur une page](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)Web.
+   Voir [Incorporation de la vidéo de média dynamique, de la visionneuse d’images ou de la visionneuse de dimensions sur une page Web.](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
