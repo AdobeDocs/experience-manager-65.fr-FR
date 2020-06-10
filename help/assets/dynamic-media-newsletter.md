@@ -5,7 +5,10 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: d43f845a1ba9ed9e9eb5bfcff735eaa42da53566
+source-git-commit: 9e8ff9bf5c9ddd4675e887fc734bf3b616526b36
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 93%
 
 ---
 
@@ -22,42 +25,58 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
 
 ## Vous avez raté un numéro de la newsletter Dynamic Media ?
 
-* **[Avril 2020, numéro 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
+* **[Mai 2020, numéro 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
    Dans ce numéro :
 
-   * Découvrez trois façons dont votre investissement multimédia enrichi peut vous aider en ces temps difficiles.
-   * Inscrivez-vous au webinaire pour savoir comment alléger le chargement de votre page avec Smart Imaging.
-   * Regardez les webinaires du créateur de compétences à la demande pour Dynamic Media Classic.
-   * des sessions Contenu multimédia dynamique du Sommet Adobe en ligne 2020.
-   * En savoir plus sur nos audits de Dynamic Media Classic gratuits.
-   * Rencontrez John Monroe, Directeur principal des  pour les services de succès client.
+   * Ce que la continuité d&#39;activité signifie en périodes incertaines.
+   * Principaux points à retenir du premier sommet Adobe entièrement numérique.
+   * Doit surveiller les sessions de sous-traitance d’Experience Manager.
+   * Points phares du client du sommet : Sous blindés.
+   * Ne manquez jamais un webinaire Experience Insider.
+   * Les points phares du secteur public : Le besoin urgent d&#39;inscription numérique.
+   * Découvrez les nouveautés d’Experience Manager Innovation.
+   * Créez vos compétences Experience Manager *en direct* avec les professionnels Adobe.
+   * Connectez-vous à la communauté Adobe Experience Manager.
+   * Effectuez un suivi rapide de votre expertise Adobe avec Adobe Experience League.
+
+* **[Avril 2020, numéro 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
+
+   Dans ce numéro :
+
+   * Découvrez trois façons dont votre investissement dans les médias riches peut vous aider en ces temps difficiles.
+   * Inscrivez-vous au webinaire pour savoir comment alléger le chargement de votre page avec l’imagerie numérique.
+   * Regardez les webinaires Skill Builder à la demande pour Dynamic Media Classic.
+   * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
+   * En savoir plus sur nos audits Dynamic Media Classic gratuits.
+   * Faites la connaissance de John Monroe, responsable de programme senior pour les services de la réussite client.
+
    >[!IMPORTANT]
    >
-   >Nous voulons nous assurer que nous envoyons uniquement la newsletter Contenu multimédia dynamique à ceux qui veulent la recevoir. Pour continuer à recevoir le bulletin après ce numéro, inscrivez-vous [ici](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
+   >Nous voulons nous assurer que nous n’envoyons la newsletter Dynamic Media qu’à ceux qui veulent la recevoir. Pour continuer à recevoir la newsletter après ce numéro, inscrivez-vous [ici](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
 
-* **[Février 2020, numéro 2](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**
-
-   Dans ce numéro :
-
-   * Participez à de nouveaux webinaires sur le créateur de compétences et transformez-vous en expert en médias dynamiques classiques.
-   * Découvrez où vous trouverez Contenu multimédia dynamique au Sommet Adobe 2020.
-   * Découvrez comment utiliser la magie du recadrage de Contenu multimédia dynamique.
-   * Profitez d’un audit gratuit pour vous aider à tirer le meilleur parti de Dynamic Media Classic.
-   * Découvrez la nouvelle interface utilisateur de Dynamic Media Classic.
-   * Rencontrez Georgia Myers, responsable du succès client pour Adobe Experience Cloud.
-
-* **[Janvier 2020, numéro 1](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**
+* **[Février 2020, numéro 2](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**
 
    Dans ce numéro :
 
-   * Cinq nouveaux Webinaires de création de compétences pour perfectionner vos compétences dans Dynamic Media Classic.
-   * Un audit gratuit pour vous aider à obtenir plus de valeur de Dynamic Media Classic.
-   * Une saison de shopping de vacances record pour nos clients de médias riches.
-   * Votre guide de prédilection pour la sélection d’un DAM (Digital Asset Manager) qui répond à vos besoins dès aujourd’hui et vous prépare à ce qui se passera demain dans les médias riches.
-   * Rencontrez Mark Dean, spécialiste des médias numériques.
+   * Participez à de nouveaux webinaires Skill Builder et devenez un expert Dynamic Media Classic.
+   * Découvrez où trouver Dynamic Media au sommet Adobe 2020.
+   * Découvrez comment utiliser les fonctions puissantes de recadrage de Dynamic Media.
+   * Profitez d’un audit gratuit pour vous aider à tirer le meilleur parti de Dynamic Media Classic.
+   * Découvrez la nouvelle interface utilisateur Dynamic Media Classic.
+   * Faites la connaissance de Georgia Myers, responsable de la réussite client pour Adobe Experience Cloud.
 
-* **[Numéro 11 de novembre 2019](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
+* **[Janvier 2020, numéro 1](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**
+
+   Dans ce numéro :
+
+   * Cinq nouveaux webinaires Skill Builder pour perfectionner vos compétences dans Dynamic Media Classic.
+   * Un audit gratuit pour vous aider à tirer le meilleur parti de Dynamic Media Classic.
+   * Une saison record d’achats des fêtes pour nos clients utilisant les médias riches.
+   * Votre guide d’orientation pour la sélection d’une solution de gestion des ressources numériques qui réponde à vos besoins dès aujourd’hui et vous prépare pour le futur avec les médias riches.
+   * Faites la connaissance de Mark Dean, spécialiste des médias numériques.
+
+* **[Novembre 2019, numéro 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
 
    Dans ce numéro :
 
@@ -67,7 +86,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Partagez la newsletter avec vos collègues pour développer l’expertise de votre équipe.
    * Rencontre avec Aporva Gupta, responsable produit principal chez Dynamic Media
 
-* **[Octobre 2019, Numéro 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
+* **[Octobre 2019, numéro 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
    Dans ce numéro :
 
@@ -78,7 +97,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Rencontre avec Nick Peters, directeur de la section Ingénierie de la fiabilité du site pour Adobe Experience Manager.
    * Prendre en main Dynamic Media et Dynamic Media Classic dans Experience League.
 
-* **[Septembre 2019, numéro 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
+* **[Septembre 2019, numéro 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
    Dans ce numéro :
 
@@ -90,7 +109,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Prendre en main Dynamic Media et Dynamic Media Classic dans Experience League.
 
 
-* **[Août 2019, numéro 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
+* **[Août 2019, numéro 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    Dans ce numéro :
 
@@ -101,7 +120,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Rencontrez PieterJan Pieper, assistant de support technique Dynamic Media.
 
 
-* **[Juillet 2019, numéro 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[Juillet 2019, numéro 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
    Dans ce numéro :
 
@@ -112,7 +131,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Ajoutez des vidéos à 360 degrés et des miniatures vidéo personnalisées à votre site web.
    * Rencontrez Andrew Hathaway, conseiller principal en solutions Dynamic Media au sein d’AEM Assets.
 
-* **[Juin 2019, numéro 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
+* **[Juin 2019, numéro 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
    Dans ce numéro :
 
@@ -123,19 +142,19 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Découvrez la fonction de recadrage dynamique pour les images, piloté par l’IA.
    * Rencontrez Alex Thiers, un des principaux acteurs à l’origine des nombreuses fonctionnalités et innovations de Dynamic Media et de Dynamic Media Classic.
 
-* **[Mai 2019, Numéro 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
+* **[Mai 2019, numéro 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
 
    Dans ce numéro :
 
-   * Découvrez les 10 principales fonctionnalités cachées de Dynamic Media Classic dans un billet de blog.
+   * Découvrez les 10 principales fonctionnalités cachées de Dynamic Media Classic dans cet article de blog.
    * Regardez des tutoriels vidéo importants dans Experience League.
    * Découvrez le prochain Adobe Insider Tour.
    * Lisez une série de blogs en trois parties pour mettre à jour votre stratégie de médias riches.
    * Découvrez le recadrage vidéo intelligent piloté par l’IA.
 
-* **[Avril 2019, Numéro 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
+* **[Avril 2019, numéro 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Bienvenue dans le numéro d’inauguration de la Newsletter de Contenu multimédia dynamique, notre nouvelle newsletter mensuelle remplie d’actualités, de  et de ressources pour les utilisateurs de Contenu multimédia dynamique au sein des Ressources Adobe Experience Manager et d’Adobe Dynamic Media Classic.
+   Bienvenue dans ce numéro d’inauguration de la newsletter Dynamic Media, notre nouvelle newsletter mensuelle pleine d’actualités, d’événements et de ressources pour les utilisateurs de Dynamic Media dans Adobe Experience Manager Assets et Adobe Dynamic Media Classic.
 
    Dans ce numéro :
    * Inscrivez-vous au webinaire sur les fonctionnalités cachées de Dynamic Media Classic.
