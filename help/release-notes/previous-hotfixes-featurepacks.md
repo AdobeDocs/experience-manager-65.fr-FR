@@ -1,16 +1,12 @@
 ---
-title: Notes de mise à jour d’AEM 6.5 Previous Service Pack
+title: Notes de mise à jour des Service Pack précédents d’Adobe Experience Manager 6.5
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Service Pack 3 et versions antérieures.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
+contentOwner: AK
 translation-type: tm+mt
-source-git-commit: c80cb65b42d8e132ba83c25f1decdcf0a0a6fc51
+source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
 workflow-type: tm+mt
-source-wordcount: '8093'
-ht-degree: 37%
+source-wordcount: '8094'
+ht-degree: 36%
 
 ---
 
@@ -19,13 +15,13 @@ ht-degree: 37%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, les améliorations et les performances des clients clés, la stabilité et les améliorations de sécurité, publiée depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur la version 6.5 d’Adobe Experience Manager (AEM).
+Adobe Experience Manager 6.5.4.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, les améliorations et les performances des clients clés, la stabilité et les améliorations de sécurité, publiée depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur Adobe Experience Manager 6.5.
 
-Voici quelques-unes des principales fonctionnalités et améliorations introduites dans AEM 6.5.4.0 :
+Voici quelques-unes des principales fonctionnalités et améliorations introduites dans Adobe Experience Manager 6.5.4.0 :
 
-* AEM Assets est désormais configuré avec Brand Portal via Adobe I/O Console.
+* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via la console d’E/S Adobe.
 
-* Une nouvelle étape [Générer une sortie](../forms/using/aem-forms-workflow-step-reference.md) imprimable est désormais disponible pour les workflows AEM Forms.
+* Une nouvelle étape [Générer une sortie](../forms/using/aem-forms-workflow-step-reference.md) imprimable est désormais disponible pour les workflows Adobe Experience Manager Forms.
 
 * [Prise en charge](../forms/using/resize-using-layout-mode.md) de plusieurs colonnes pour le mode de mise en page des formulaires adaptatifs et des communications interactives.
 
@@ -41,13 +37,13 @@ Voici quelques-unes des principales fonctionnalités et améliorations introduit
 
 * L’entrée ou la sortie SOAP et les structures de données complexes prennent désormais en charge la substitution de groupe dynamique.
 
-Pour une liste complète des fonctionnalités, des points saillants et des fonctionnalités clés introduites dans les Service Packs AEM 6.5 précédents, reportez-vous à la page [Nouveautés d’Adobe Experience Manager 6.5 Service Pack 4](new-features-latest-service-pack.md).
+Pour obtenir une liste complète des fonctionnalités et des points saillants introduits dans les derniers Service Packs, reportez-vous à la page [Nouveautés des Service Packs](new-features-latest-service-pack.md)Adobe Experience Manager 6.5.
 
 ### Sites {#sites-fixes}
 
-* Lorsqu’une URL d’une page de sites AEM contient deux-points ( : ) ou le symbole de pourcentage (%), le navigateur sous-jacent cesse de répondre et les cycles de processeur montrent un pic (NPR-32369, NPR-31918).
+* Lorsqu’une URL de pages de sites Adobe Experience Manager contient un deux-points (`:`) ou un symbole de pourcentage (`%`), le navigateur cesse de répondre et les pics d’utilisation du processeur (NPR-32369, NPR-31918).
 
-* Lorsqu’une page de sites AEM est ouverte pour modification et qu’un composant est copié, l’action de collage reste indisponible pour certains espaces réservés (NPR-32317).
+* Lorsqu’une page Sites Experience Manager est ouverte pour modification et qu’un composant est copié, l’action de collage reste indisponible pour certains espaces réservés (NPR-32317).
 
 * Lorsque l’assistant Gérer la publication est ouvert, un fragment d’expérience lié à un composant principal n’est pas affiché dans les listes des références publiées (NPR-32233).
 
@@ -55,7 +51,7 @@ Pour une liste complète des fonctionnalités, des points saillants et des fonct
 
 * Lorsque l’heure du serveur et l’heure de la machine se trouvent dans des fuseaux horaires différents, l’heure de publication planifiée affiche l’heure du serveur dans l’interface utilisateur tactile, tandis que dans l’interface utilisateur classique, l’heure de la machine s’affiche (NPR-32077).
 
-* Les sites AEM ne parviennent pas à ouvrir une page avec un suffixe dans l’URL (NPR-32072).
+* Les sites Experience Manager ne parviennent pas à ouvrir une page avec un suffixe dans l’URL (NPR-32072).
 
 * Lorsqu’un utilisateur modifie un fragment de contenu, une variante supprimée du fragment de contenu est restaurée (NPR-32062).
 
@@ -129,7 +125,7 @@ Pour une liste complète des fonctionnalités, des points saillants et des fonct
 
 * Le bouton Enregistrer n’importe pas la visionneuse à distance lorsque l’utilisateur n’a apporté aucune modification à l’éditeur de visionneuses dans le client de média dynamique (CQ-4285690).
 
-* La miniature de fichier 3D n’est pas instructive lorsqu’un modèle 3D pris en charge est imbriqué dans AEM (CQ-4283701).
+* La miniature de fichier 3D n’est pas instructive lorsqu’un modèle 3D pris en charge est imbriqué dans Experience Manager (CQ-4283701).
 
 * L’état non traité du paramètre prédéfini de visionneuse de vidéos de recadrage dynamique s’affiche deux fois sur la bannière en regard du nom du paramètre prédéfini (CQ-4283517).
 
@@ -139,7 +135,7 @@ Pour une liste complète des fonctionnalités, des points saillants et des fonct
 
 * La sélection du clavier est bloquée dans la liste déroulante Courriel dans la boîte de dialogue Télécharger, dans les navigateurs Chrome et Safari (NPR-32067).
 
-* La case à cocher Synchroniser tout le contenu n’est pas activée par défaut lors de la tentative d’ajout de la configuration DM cloud sur AEM (CQ-4288533).
+* La case à cocher Synchroniser tout le contenu n’est pas activée par défaut lors de la tentative d’ajout de la configuration de DM cloud sur Experience Manager (CQ-4288533).
 
 ### Interface utilisateur de la fondation {#foundation-ui-6540}
 
@@ -187,13 +183,9 @@ Pour une liste complète des fonctionnalités, des points saillants et des fonct
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Les utilisateurs du portail de marque ne peuvent pas publier les ressources du dossier de contributions dans AEM Assets lors de la mise à niveau vers les E/S Adobe sur AEM 6.5.4 (CQDOC-15655).
+* Brand Portal users are not able to publish contribution folder assets to [!DNL Assets] on upgrading to Adobe I/O on Experience Manager 6.5.4 (CQDOC-15655). For an immediate fix on Experience Manager 6.5.4, it is recommended to [download the hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) and install on your author instance.
 
-   Ce problème sera corrigé dans le prochain Service Pack AEM 6.5.5.
-
-   Pour une solution immédiate sur AEM 6.5.4, il est recommandé de [télécharger le correctif](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) et de l’installer sur votre instance d’auteur.
-
-* Les valeurs déroulantes du schéma de métadonnées ne sont pas visibles dans les propriétés de la ressource (CQ-4283287).
+* Les valeurs des fenêtres contextuelles de schéma de métadonnées ne sont pas visibles dans les propriétés des ressources (CQ-4283287).
 
 * Le sous-schéma de métadonnées n’affiche pas les onglets basés sur le mimétype dans les propriétés de la ressource (CQ-4283288).
 
@@ -217,11 +209,11 @@ Pour une liste complète des fonctionnalités, des points saillants et des fonct
 
 * MS Word et MS Excel documents, contenant une image JPEG, lors de l&#39;analyse avec l&#39;analyseur Tika échouent à analyser et une erreur de classe introuvable est observée (NPR-31952).
 
-### Forms {#forms-6540}
+### Formulaires {#forms-6540}
 
 >[!NOTE]
 >
->Le Service Pack AEM n’inclut pas de correctifs pour AEM Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour AEM Forms sur JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+>Le Service Pack d’Experience Manager n’inclut pas de correctifs pour Experience Manager Forms. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  En outre, un programme d’installation cumulatif est publié, qui comprend des correctifs pour Adobe Experience Manager Forms sur JEE. Pour plus d’informations, voir [Installation du module complémentaire](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms et [Installation d’Experience Manager Forms sur JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Correspondence Management : Les lettres affichent des caractères supplémentaires après envoi aux workflows de post-traitement (NPR-32626).
 
@@ -233,13 +225,13 @@ Pour une liste complète des fonctionnalités, des points saillants et des fonct
 
 * Document Services : Problèmes d&#39;accès aux URL pour les lettres et d&#39;autres pages après l&#39;application du Service Pack 2 (NPR-32508, NPR-32509).
 
-* Document Services : Si le nombre de transactions sur un serveur dépasse une limite spécifique, la conversion HTML vers PDF échoue et les paramètres de type de fichier sont supprimés du serveur AEM Forms (NPR-32204).
+* Document Services : Si le nombre de transactions sur un serveur dépasse une limite spécifique, la conversion HTML vers PDF échoue et les paramètres de type de fichier sont supprimés du [!DNL Forms] serveur (NPR-32204).
 
 * Formulaires adaptatifs : L’outil d’accessibilité du navigateur signale des échecs dans les formulaires adaptatifs conformément aux directives WCAG2 Level AA (NPR-32312, NPR-32309, CQ-4285439).
 
 * Formulaires adaptatifs : L’outil d’accessibilité du navigateur Chrome signale une erreur de bonne pratique (NPR-32310).
 
-* Formulaires adaptatifs : Problèmes de traduction lors de la configuration d’un formulaire adaptatif incorporé à une page de sites AEM (NPR-32168).
+* Formulaires adaptatifs : Problèmes de traduction lors de la configuration d’un formulaire adaptatif incorporé à une page Sites Experience Manager (NPR-32168).
 
 * Workbench : Un message d’erreur s’affiche lors de l’utilisation du service Get PDF Properties for PDF Utilities (NPR-32150).
 
@@ -249,7 +241,7 @@ Pour une liste complète des fonctionnalités, des points saillants et des fonct
 
 * Designer : S’il existe des cellules fusionnées dans un tableau, le test d’accessibilité échoue pour le fichier PDF de sortie converti à partir d’un formulaire XDP à l’aide du service de sortie (CQ-4285372).
 
-* Foundation JEE : Si un serveur AEM Forms est déconnecté d’une grappe, des problèmes de mise en cache l’empêchent de se reconnecter au serveur (NPR-32412).
+* Foundation JEE : Si un serveur Experience Manager Forms est déconnecté d’une grappe, des problèmes de mise en cache l’empêchent de se reconnecter au serveur (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -283,45 +275,48 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * [!DNL Experience Manager Assets] prend désormais en charge les archives ZIP créées à l’aide de l’algorithme Deflate64 (NPR-27573).
 
-* Une nouvelle colonne pour la date de création, qui peut être triée, a été ajoutée dans la vue de liste DAM et sur les résultats de la recherche de ressources dans la vue de liste (NPR-31312).
+* Une nouvelle colonne pour la date créée, qui peut être triée, est ajoutée dans la vue de liste DAM et sur les résultats de la recherche de ressources dans la vue de liste (NPR-31312).
 
-* Le tri des ressources basé sur la colonne Nom a été autorisé dans la vue de Liste (NPR-31299).
+* Dans la vue de liste, les utilisateurs peuvent trier la liste des ressources à l’aide de la colonne [!UICONTROL Nom] (NPR-31299).
 
-* Les fichiers GLB, GLTF, OBJ et STL prennent en charge la prévisualisation des ressources dans la page Détails des ressources de la gestion des actifs (CQ-4282277).
+* Les fichiers GLB, GLTF, OBJ et STL peuvent être prévisualisés dans la page Détails [!UICONTROL des] ressources dans DAM (CQ-4282277).
 
-* Le événement ReplicationOnModifyListener est déclenché pour les noeuds de blocs lors du chargement des blocs dans [!DNL Dynamic Media] (CQ-4281279).
+* `ReplicationOnModifyListener` Le événement est déclenché pour les noeuds de blocs pendant le téléchargement du bloc dans [!DNL Dynamic Media] (CQ-4281279).
 
 * [!DNL Dynamic Media] prend désormais en charge les ressources vidéo de recadrage dynamique. Smart Crop est une fonction pilotée par l’apprentissage automatique qui recadre une vidéo tout en déplaçant le cadre pour suivre le point focal de la scène (CQ-4278995).
 
 * [!DNL Dynamic Media] prend en charge l’imagerie intelligente (CQ-4222249).
 
-* La vue de recherche/navigation a été définie comme vue par défaut dans le sélecteur Foundation si les paramètres de requête sont transmis dans la requête (NPR-31601).
+* La vue de recherche ou de navigation est définie comme vue par défaut dans le sélecteur Foundation si les paramètres de requête sont transmis dans la requête (NPR-31601).
 
 **Correctifs**
 
-* Les métadonnées de certains documents PDF ne sont pas mises à jour et enregistrées dans le PDF lors de la modification de son titre (NPR-31629).
+* Les métadonnées de certains documents PDF ne sont pas mises à jour et enregistrées au format PDF lorsque leur titre est modifié (NPR-31629).
 
-* Le partage des ressources ne fonctionne pas pour les actifs dont le nom comporte le caractère &quot;+&quot; (NPR-31547).
+* Le partage de ressources ne fonctionne pas pour une ressource dont le nom de fichier contient un caractère plus (`+`) (NPR-31547).
 
 * Les modifications dans le formulaire de recherche par défaut Administration des actifs * Rail de recherche ne fonctionnent pas comme prévu (NPR-31502).
 
-* Les suggestions ne s&#39;affichent pas lors de l&#39;utilisation d&#39;Omnisearch sur la vue des ressources pour la recherche de ressources (NPR-31496).
+<!-- Review: Check if this seemingly stray asterisk is needed there or not.
+-->
+
+* Les suggestions ne s&#39;affichent pas lors de l&#39;utilisation d&#39;Omnisearch sur la vue de ressources pour la recherche de ressources (NPR-31496).
 
 * Les références de ressources dans les collections ne sont pas mises à jour lorsque les ressources référencées sont déplacées vers un autre emplacement, dans les cas où les mêmes ressources sont référencées par différentes collections par différents utilisateurs (NPR-31486).
 
 * Les balises IPTC Duplicata sont ajoutées aux métadonnées de fichier (NPR-31328).
 
-* Le nombre de résultats de la recherche dans le coin supérieur droit n&#39;est pas mis à jour correctement lorsque la recherche est déclenchée à partir du rail de filtre (NPR-31316).
+* Le nombre de résultats de la recherche n&#39;est pas mis à jour correctement lorsqu&#39;une recherche est déclenchée à partir du rail de filtre (NPR-31316).
 
-* Toutes les cases à cocher sont désactivées lorsque vous décochez les cases du second niveau dans le filtre Type de fichier et le texte de la barre de recherche n&#39;est pas synchronisé avec les propriétés sélectionnées/non sélectionnées (NPR-31287).
+* Toutes les cases à cocher sont désactivées lorsque vous désélectionnez les cases de second niveau dans le filtre Type de fichier et le texte de la barre de recherche n&#39;est pas synchronisé avec les propriétés sélectionnées ou désélectionnées (NPR-31287).
 
 * Tous les membres (utilisateurs/groupes) ne peuvent pas être supprimés de la section Membres d&#39;un dossier ; lors de la tentative de suppression de tous les utilisateurs, l&#39;utilisateur connecté est ajouté à la liste (NPR-31171).
 
-* Les fichiers dont le nom de fichier contient le symbole &quot;+&quot; ne peuvent pas être supprimés (NPR-31162).
+* Les fichiers dont le nom de fichier contient un symbole plus (`+`) ne peuvent pas être supprimés (NPR-31162).
 
 * Le menu déroulant Créer, qui est visible dans le menu supérieur lors de la sélection d&#39;un dossier, n&#39;affiche pas &quot;Dossier&quot; comme option de création (NPR-30877).
 
-* La sélection de dossier Créer > FichierTélécharger l’élément d’action est manquante lorsque la liste de contrôle d’accès pour Deny jcr:removeChildNodes et jcr:removeNode sur le chemin d’accès est appliquée à un utilisateur (NPR-30840).
+* La sélection de dossier Créer > FichierTélécharger l’élément d’action est manquante lorsque l’ACL pour Refuser `jcr:removeChildNodes` et `jcr:removeNode` le chemin d’accès sont appliqués à un utilisateur (NPR-30840).
 
 * Les workflows DAM sont obsolètes lorsque certains fichiers mp4 sont téléchargés, ce qui entraîne l’obsolescence de tous les workflows restants (NPR-30662).
 
@@ -339,7 +334,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * La zone réactive ajoutée à un fichier d’image n’est pas visible dans Interactive Image Viewer dans la page des détails du fichier (NPR-30979).
 
-* D’immenses tâches de création d’un sling sont créées et la bannière de traitement réapparaît lorsque les actions effectuées sur des fichiers [!DNL Experience manager Assets] sont transmises à Scene7 (NPR-30947).
+* D’immenses tâches de création d’un sling sont créées et la bannière de traitement réapparaît lorsque les actions effectuées sur des fichiers dans [!DNL Experience manager Assets] Scene7 sont transmises à Scene7 (NPR-30947).
 
 * Un conflit se produit lors de la création de la copie de langue des fichiers et ceux-ci ne sont pas téléchargés vers Scene7 (NPR-30932).
 
@@ -363,9 +358,9 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les vidéos nouvellement ingérées dans des dossiers avec profil vidéo restent en état de traitement même après que le pourcentage de codage se termine à 100 % (CQ-4279389).
 
-* Le déplacement de fichiers à partir d’un dossier crée un grand nombre de tâches sling (appels d’API Scene7) plus que nécessaire (CQ-4278664).
+* Le déplacement de fichiers à partir d’un dossier crée un grand nombre de tâches Sling (appels d’API Scene7) plus que ce qui est idéalement requis (CQ-4278664).
 
-* Les noms des visionneuses d’images sont changés en minuscules dans Scene 7, lorsque des visionneuses d’images (ou visionneuse de supports) sont créées et nommées avec la convention d’affectation de nom appropriée dans DAM (CQ-4281112).
+* Les noms des visionneuses d’images sont remplacés en minuscules dans Scene7, lorsque des visionneuses d’images (ou visionneuse de supports) sont créées et nommées avec la convention d’affectation de nom appropriée dans DAM (CQ-4281112).
 
 * Scene7 Migrator définit incorrectement l’état de publication (CQ-4263492).
 
@@ -381,7 +376,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les Workflows de rendu échouent (CQ-4271928).
 
-* DAM Événement Purge supprime les dernières données de événement (maxSavedActivities) et conserve les données créées précédemment (NPR-31336).
+* DAM Événement Purge supprime les dernières (`maxSavedActivities`) données de événement et contient les données créées précédemment (NPR-31336).
 
 * La page de résultats de la recherche tactile dans l&#39;interface utilisateur (effectuée via Omnisearch) défile automatiquement vers le haut et perd la position de défilement de l&#39;utilisateur (NPR-31307).
 
@@ -393,22 +388,27 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Si l’héritage de LiveCopy est rompu, les pages de copie dynamique affichent des liens de copie de langue au lieu de liens LiveCopy (NPR-30980).
 * Pour un nouveau plan directeur, si le nombre d&#39;enregistrements est supérieur à 40, seuls les 40 premiers enregistrements sont affichés. Le plan directeur affiche des lignes vierges pour le reste des enregistrements (NPR-31182).
-* Lorsqu’un utilisateur ajoute des caractères japonais ou coréens dans la propriété description d’un menu, celui-ci affiche des caractères déformés pour le texte en japonais et en coréen. (NPR-31331).
+* Lorsqu&#39;un utilisateur ajoute des caractères japonais ou coréens à la propriété description d&#39;un menu, celui-ci affiche des caractères déformés pour le texte en japonais et en coréen (NPR-31331).
 * L’Editeur de texte enrichi (RTE) ne permet pas d’insérer un tableau incorporé en tant qu’élément de liste (NPR-30879).
 * Editeur de texte enrichi (RTE) à l’échafaudage prêt à l’emploi. applique inopinément la taille de police en ligne aux éléments (NPR-31284).
 * Lorsqu’un utilisateur se concentre sur les champs du rail gauche et utilise un raccourci clavier pour coller du contenu, il colle le le contenu du Presse-papiers de l’éditeur de page au lieu du contenu copié à partir des champs du rail gauche (NPR-31172).
 * Lorsqu’un utilisateur ajoute un champ Téléchargement de fichier à un champ multichamp, le chemin d’accès à l’image est stocké dans le noeud de composant au lieu du noeud de champs multiples (NPR-30882).
-* L’API ResponsiveGridExporter ne renvoie pas l’interface com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter. Le package com.day.cq.wcm.foundation.model.impl est déclaré comme package privé (NPR-31398).
-* Lorsqu’une page contenant des fragments d’expérience est ouverte en mode non éditeur (dans Auteur sans préfixe et `editor.html` `wcmmode=disabled`ou dans Editeur)., la requête se termine en code d’erreur d’état HTTP 500 (NPR-30743).
+* L’ `ResponsiveGridExporter` API ne renvoie pas `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` d’interface. Le `com.day.cq.wcm.foundation.model.impl` package est déclaré comme package privé (NPR-31398).
+
+<!-- Review: NPR-31398 has fixVersion as 6530. However, it is mentioned twice in 6530 and 6520 as fixed. 
+Remove one mention of this fix.
+-->
+
+* Lorsqu’une page contenant certains fragments d’expérience est ouverte en mode non éditeur (dans Auteur sans préfixe et `editor.html` ou dans Editeur). La requête se termine en code d’erreur d’état HTTP `wcmmode=disabled``500` (NPR-30743).
 * Les utilisateurs ne peuvent pas modifier leur mot de passe et accéder à leur page de profil (NPR-31161).
 
 ### Interface utilisateur et de recherche {#search-ui-interface}
 
-* Lorsque vous passez de la vue Carte à la vue Liste sur une page de résultats de recherche, il y a un décalage avant que la page puisse être défilée (NPR-31286).
+* Lorsque vous passez de la vue de carte à la vue de liste sur une page de résultats de recherche, il y a un décalage avant que la page puisse être défilée (NPR-31286).
 
-* La case à cocher Tout sélectionner est masquée dans la vue de Liste de l&#39; [!DNL Sites] interface utilisateur (NPR-31614).
+* La case à [!UICONTROL cocher Sélectionner tout] est masquée dans la vue de liste sur [!DNL Sites] l&#39;interface utilisateur (NPR-31614).
 
-* Le nombre Sélectionner tout sur une page de résultats de recherche est incorrect (NPR-31120).
+* Le nombre [!UICONTROL Sélectionner tout] sur une page de résultats de recherche est incorrect (NPR-31120).
 
 * L’éditeur de métadonnées affiche les balises qui n’existent pas (NPR-31119).
 
@@ -471,11 +471,11 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les mises à jour de l&#39;index Lucene provoquent un ralentissement du serveur d&#39;auteur (NPR-31548).
 
-### Forms {#forms-6530}
+### Formulaires {#forms-6530}
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Le Service Pack n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. Pour plus d’informations, voir [Installation du module complémentaire](#install-aem-forms-add-on-package) Experience Manager Forms et [Installation d’Experience Manager Forms sur JEE](#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Le Service Pack n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. Les correctifs sont fournis à l’aide d’un module complémentaire Forms distinct.  In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. Pour plus d’informations, voir [Installation du module complémentaire](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms et [Installation d’Experience Manager Forms sur JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 #### Package de modules complémentaires Forms {#forms-add-on-package-6530}
 
@@ -603,15 +603,15 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 ### Sites {#sites-6520}
 
-* Si l’héritage de LiveCopy est rompu, les pages de copie dynamique affichent des liens de copie de langue au lieu de liens LiveCopy. (NPR-30980)
-* Pour un nouveau plan directeur, si le nombre d&#39;enregistrements est supérieur à 40, seuls les 40 premiers enregistrements sont affichés. Le plan directeur affiche des lignes vierges pour le reste des enregistrements. (NPR-31182)
-* Le module RTE (Rich Text Editor) du composant de texte affiche des caractères déformés pour le japonais et le coréen. (NPR-31331)
-* L’Editeur de texte enrichi (RTE) ne permet pas d’insérer un tableau incorporé en tant qu’élément de liste. (NPR-30879)
-* L’Editeur de texte enrichi (RTE) d’échafaudage prêt à l’emploi applique de manière inattendue la taille de police en ligne aux éléments. (NPR-31284)
-* Lorsqu’un utilisateur se concentre sur les champs du rail de gauche et utilise un raccourci clavier pour coller du contenu, il colle le contenu du Presse-papiers de l’éditeur de page au lieu du contenu copié à partir des champs du rail de gauche. (NPR-31172)
-* Lorsqu’un utilisateur ajoute un champ de téléchargement de fichier à un champ multichamp, le chemin d’accès à l’image est stocké dans le noeud de composant au lieu du noeud de champ multichamp. (NPR-30882)
-* L’API ResponsiveGridExporter ne renvoie pas l’interface com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter. Le package com.day.cq.wcm.foundation.model.impl est déclaré comme package privé. (NPR-31398)
-* Lorsqu’une page contenant certains fragments d’expérience est ouverte en mode non éditeur (dans l’auteur sans préfixe et `editor.html` `wcmmode=disabled`ou dans l’éditeur), la requête se termine en code d’erreur d’état HTTP 500. (NPR-30743)
+* Si l’héritage de LiveCopy est rompu, les pages de copie dynamique affichent des liens de copie de langue au lieu de liens LiveCopy (NPR-30980).
+* Pour un nouveau plan directeur, si le nombre d&#39;enregistrements est supérieur à 40, seuls les 40 premiers enregistrements sont affichés. Le plan directeur affiche des lignes vierges pour le reste des enregistrements (NPR-31182).
+* Le module RTE (Rich Text Editor) du composant de texte affiche des caractères déformés pour le japonais et le coréen (NPR-31331).
+* L’Editeur de texte enrichi (RTE) ne permet pas d’insérer un tableau incorporé en tant qu’élément de liste (NPR-30879).
+* L’Editeur de texte enrichi (RTE) d’échafaudage prêt à l’emploi applique de manière inattendue la taille de police en ligne aux éléments (NPR-31284).
+* Lorsqu’un utilisateur se concentre sur les champs du rail de gauche et utilise un raccourci clavier pour coller du contenu, il colle le contenu du Presse-papiers de l’éditeur de page au lieu du contenu copié à partir des champs du rail de gauche (NPR-31172).
+* Lorsqu’un utilisateur ajoute un champ Téléchargement de fichier à un champ multichamp, le chemin d’accès à l’image est stocké dans le noeud de composant au lieu du noeud de champs multiples (NPR-30882).
+* L’ `ResponsiveGridExporter` API ne renvoie pas `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` d’interface. Le `com.day.cq.wcm.foundation.model.impl` package est déclaré comme package privé (NPR-31398).
+* Lorsqu’une page contenant certains fragments d’expérience est ouverte en mode non éditeur (dans Auteur sans préfixe et `editor.html` `wcmmode=disabled`ou dans Editeur), la requête se termine par le code d’erreur d’état HTTP 500 (NPR-30743).
 
 ### WCM - Éditeur de page {#wcm-page-editor-6520}
 
@@ -655,11 +655,11 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Le contenu personnalisé ne s’affiche pas correctement sur l’instance de publication tant que l’instance n’a pas été redémarrée. NPR-30377 : correctif pour CQ-4273706
 * Lors de la configuration de Launch sur un site web, l’adresse de la bibliothèque comporte une barre oblique (/) pré-activée, ce qui entraîne une intervention manuelle à chaque fois. NPR-30694 : correctif pour CQ-4275501
 
-### Forms {#forms-6520}
+### Formulaires {#forms-6520}
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Le Service Pack n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](#install-aem-forms-add-on-package) and [Install Experience Manager Forms JEE installer](#forms-jee-installer).
+>[!DNL Experience Manager] Le Service Pack n’inclut pas de correctifs pour [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms JEE installer](#forms-jee-installer).
 
 The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
@@ -835,7 +835,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les détails d’utilisation de la mémoire ne s’affichent pas dans la console système lors de l’utilisation de Java11\. NPR-29669
 
-### Forms
+### Formulaires
 
 The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
@@ -850,7 +850,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 **Intégration du serveur principal**
 
 * Échec de récupération du WSDL (Web Service Definition Language) protégé. NPR-29944 : correctif pour CQ-4270777
-* When [!DNL Experience Manager Forms]  is installed on IBM WebSphere, creating a form data model based on SOAP fails. Correctif pour CQ-4251134
+* When [!DNL Experience Manager Forms] is installed on IBM WebSphere, creating a form data model based on SOAP fails. Correctif pour CQ-4251134
 * Activation de la prise en charge d’Active Directory Federation Services (ADFS) v3.0 pour l’intégration sur site de Microsoft Dynamics. Correctif pour CQ-4270586
 * Lorsque le titre d’une source de données est modifié, le modèle de données de formulaire n’affiche pas le titre mis à jour. Correctif pour CQ-4265599
 * Si le nom d&#39;une entité ou d&#39;un attribut contient un trait d&#39;union ou un espace, les expressions ne parviennent pas à évaluer ces entités et attributs. Correctif pour CQ-4225129
