@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '9304'
+source-wordcount: '9303'
 ht-degree: 65%
 
 ---
@@ -197,7 +197,7 @@ To cancel an upload job in progress, click **[!UICONTROL Cancel]** next to the D
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the [!UICONTROL Upload Job Options] dialog box:
 
-* Rogner l’espace blanc du contour des images (voir la description dans le tableau ci-dessus).
+* Recadrer l’espace blanc à partir du bord des images (voir la description dans le tableau ci-dessus).
 * Recadrer manuellement des images par leurs côtés (voir la description dans le tableau ci-dessus).
 * Choisir un profil colorimétrique (voir la description de l’option dans le tableau ci-dessus).
 * Créer un masque à partir d’un chemin de tracé.
@@ -305,7 +305,7 @@ Si vous transférez de nombreux fichiers vers Adobe Experience Manager, les dema
 
 >[!NOTE]
 >
->Le téléchargement en flux continu est désactivé pour Adobe Experience Manager s’exécutant sur le serveur JEE avec une version api servlet inférieure à 3.1.
+>Le téléchargement en flux continu est désactivé pour Adobe Experience Manager s’exécutant sur le serveur JEE avec une version api-servlet inférieure à 3.1.
 
 ### Extraction d’une archive ZIP contenant des ressources {#extractzip}
 
@@ -506,7 +506,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Les rendus ne peuvent pas être supprimés en bloc une fois le traitement des ressources terminé. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
 
    ![Option de suppression d’un rendu](assets/delete_renditionicon.png)
 
@@ -736,7 +736,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 ## Annotation de fichiers {#annotating}
 
-Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketins la possibilité de collaborer et de laisser des commentaires sur des ressources.
+Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
 Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Video formats that [!DNL Assets] supports depend on the browser.
 
