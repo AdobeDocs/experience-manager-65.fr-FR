@@ -3,10 +3,10 @@ title: Considérations et exigences relatives au réseau de ressources
 description: Présente les considérations relatives au réseau lors de la conception d’un déploiement Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 75%
+source-wordcount: '1029'
+ht-degree: 73%
 
 ---
 
@@ -58,7 +58,7 @@ Les pare-feu et les proxys de l’entreprise peuvent également influencer la ba
 
 Dans cet exemple, l’entreprise dispose d’une liaison de 10 Gbps. Cela doit être suffisant pour prendre en charge plusieurs clients. Par ailleurs, le pare-feu impose une limite de débit par hôte de 10 Mbps. Cette restriction risque de ralentir le trafic d’un seul hôte à 10 Mbps, même si la liaison montante à l’Internet est de 10 Gbps.
 
-Il s&#39;agit du plus petit point d&#39;étranglement orienté client. Cependant, vous pouvez opter pour une modification ou créer une liste blanche avec le groupe des opérations réseau responsable de ce pare-feu.
+Il s&#39;agit du plus petit point d&#39;étranglement orienté client. Cependant, vous pouvez évaluer une modification ou configurer une liste autorisée avec le groupe d&#39;opérations réseau responsable de ce pare-feu.
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
