@@ -3,7 +3,7 @@ title: Organisez vos ressources numériques.
 description: Organisez vos ressources numériques, images, fichiers, dossiers, etc. à l’aide d’Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '811'
 ht-degree: 8%
@@ -39,9 +39,9 @@ La méthode la plus élémentaire pour organiser les fichiers consiste à les en
 
 ## Organisation des fichiers à l’aide de balises {#use-tags-to-organize-assets}
 
-Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de la recherche, augmenter le classement des recherches pour certains fichiers et utiliser les algorithmes d’IA d’Adobe Sensei pour la découverte de fichiers.
+Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de la recherche, augmenter le classement des recherches pour certains fichiers et utiliser les algorithmes d’IA Adobe Sensei pour la découverte de ressources.
 
-Adobe Experience Manager Assets utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, notre infrastructure d’intelligence artificielle et d’apprentissage automatique, qui peut être formé pour reconnaître et appliquer des balises standard et spécifiques à l’entreprise à l’imagerie. Les balises actives peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+Adobe Experience Manager Assets utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, notre système d&#39;intelligence artificielle et d&#39;apprentissage automatique, qui peut être formé pour reconnaître et appliquer des balises standard et spécifiques à l&#39;entreprise à l&#39;imagerie. Les balises actives peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
 Pour plus d’informations, reportez-vous aux articles suivants :
 
