@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager Assets] Intégrer [!DNL Adobe InDesign S
 description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 40%
+source-wordcount: '1560'
+ht-degree: 38%
 
 ---
 
@@ -44,6 +44,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
       * Des rendus PDF et JPG sont générés.
       * Des rendus HTML et IDML sont générés.
    * Post the resulting files back to [!DNL Experience Manager Assets].
+
    >[!NOTE]
    >
    >IDML est un format XML qui effectue le rendu de tout le contenu du [!DNL InDesign] fichier. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. Pour plus d’informations, voir Formats d’échange [InDesign INX et IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
@@ -196,18 +197,19 @@ Pour configurer le nombre de tâches parallèles d’IDS :
 
    If there are multiple machines running [!DNL InDesign Server], add SOAP endpoints (number of processors per machine -1) for each machine.
 
-   >[!NOTE]
-   >
-   >Vous pouvez activer la mise sur liste noire du traitement IDS lorsque vous travaillez avec un groupe de programmes de traitement.
-   >
-   >
-   >To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
-   >
-   >
-   >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list.
-   >
-   >
-   >Par défaut, le traitement IDS est revalidé après une durée en minutes configurable (retry.interval.to.whitelist.name). Si le programme de traitement est en ligne, il est retiré de la liste noire..
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
+>[!NOTE]
+>
+>Lorsque vous travaillez avec un groupe de travailleurs, vous pouvez activer la liste bloquée des travailleurs IDS.
+>
+>To do so, enable the **[!UICONTROL enable.retry.name]** checkbox, under the `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuration, which enables IDS job retrials.
+>
+>Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list.
+>
+>By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Si le travailleur est trouvé en ligne, il est retiré de la liste bloquée.
 
 ## Activation de la prise en charge de la version [!DNL InDesign Server] 10.0 ou ultérieure {#enabling-support-for-indesign-server-or-later}
 
