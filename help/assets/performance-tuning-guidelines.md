@@ -4,10 +4,10 @@ description: Suggestions et conseils [!DNL Experience Manager] sur la configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: da2e435f33e8527793e009700c30e60868d196be
 workflow-type: tm+mt
-source-wordcount: '2723'
-ht-degree: 55%
+source-wordcount: '2776'
+ht-degree: 54%
 
 ---
 
@@ -212,7 +212,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 >
 >Les fichiers `policy.xml` et ImageMagick sont disponibles à la `configure.xml` place de `/usr/lib64/ImageMagick-&#42;/config/` .Voir la documentation `/etc/ImageMagick/`[](https://www.imagemagick.org/script/resources.php) ImageMagick pour connaître l’emplacement des fichiers de configuration.
 
-If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Adressez-vous au représentant du service à la clientèle d’Adobe pour mettre en oeuvre ces meilleures pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
+If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Collaborez avec le représentant du service à la clientèle Adobe pour mettre en oeuvre ces meilleures pratiques pour votre déploiement AMS et pour choisir les meilleurs outils et modèles possibles pour les formats propriétaires Adobe. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ### Écriture différée XMP {#xmp-writeback}
 
@@ -252,8 +252,8 @@ Some optimizations can be done on the Oak index configurations that can help imp
 
 1. Open CRXDe `/crx/de/index.jsp` and log in as an administrative user.
 1. Accédez à `/oak:index/lucene`.
-1. Ajouter une `String[]` propriété `excludedPaths` avec des valeurs `/var`, `/etc/workflow/instances`et `/etc/replication`.
-1. Accédez à `/oak:index/damAssetLucene`. Ajouter une `String[]` propriété `includedPaths` avec une valeur `/content/dam`. Enregistrez les modifications.
+1. Ajoutez une `String[]` propriété `excludedPaths` avec des valeurs `/var`, `/etc/workflow/instances`et `/etc/replication`.
+1. Accédez à `/oak:index/damAssetLucene`. Ajoutez une `String[]` propriété `includedPaths` avec une valeur `/content/dam`. Enregistrez les modifications.
 
 Si vos utilisateurs n’ont pas besoin de rechercher des ressources en texte intégral, par exemple, en recherchant du texte dans des documents PDF, désactivez-le. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l’extraction [!DNL Apache Lucene] de texte, procédez comme suit :
 
@@ -300,11 +300,12 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Déploiement sur Java 8.
 * Définition de paramètres JVM optimaux.
 * Configurez une banque de données de système de fichiers ou une banque de données S3.
+* Désactivez la génération de sous-ressources. S’il est activé, le processus d’AEM crée une ressource distincte pour chaque page d’une ressource de plusieurs pages. Chacune de ces pages est une ressource individuelle qui consomme de l&#39;espace disque supplémentaire, nécessite un contrôle de version et un traitement supplémentaire du flux de travail. Si vous n’avez pas besoin de pages distinctes, désactivez la génération de sous-ressources et les activités d’extraction de page.
 * Activer les workflows transitoires.
 * Régler les files d’attente de workflows Granite pour limiter les tâches concurrentes.
 * Configure [!DNL ImageMagick] to limit resource consumption.
 * Remove unnecessary steps from the [!UICONTROL DAM Update Asset] workflow.
 * Configurer la purge des workflows et versions.
-* Optimisez les index avec les derniers Service Pack et correctifs. Contactez le service à la clientèle d’Adobe pour connaître les optimisations d’index supplémentaires éventuellement disponibles.
+* Optimisez les index avec les derniers Service Pack et correctifs. Vérifiez auprès du service à la clientèle Adobe si d’autres optimisations d’index sont disponibles.
 * Utilisez guessTotal afin d’optimiser les performances des requêtes.
 * If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.
