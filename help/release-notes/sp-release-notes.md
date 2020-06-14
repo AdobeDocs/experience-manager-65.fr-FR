@@ -1,18 +1,18 @@
 ---
-title: Notes de mise à jour de Adobe Experience Manager 6.5 Service Pack
+title: Notes de mise à jour d’Adobe Experience Manager 6.5 Service Pack
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Service Pack 5.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb48bba01b78a0724f3a07875f601367520b2a8e
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '4508'
+source-wordcount: '4510'
 ht-degree: 7%
 
 ---
 
 
-# Notes de mise à jour de Adobe Experience Manager 6.5 Service Pack {#aem-service-pack-release-notes}
+# Notes de mise à jour d’Adobe Experience Manager 6.5 Service Pack {#aem-service-pack-release-notes}
 
 ## Informations sur la version {#release-information}
 
@@ -25,11 +25,11 @@ ht-degree: 7%
 
 ## Éléments inclus dans Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
-Adobe Experience Manager 6.5.5.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, des améliorations client clés et des améliorations de performances, de stabilité et de sécurité, publiées depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur Adobe Experience Manager 6.5.
+Adobe Experience Manager 6.5.5.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, les améliorations clés demandées par les clients, ainsi que les performances, la stabilité et les améliorations de sécurité, publiées depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur Adobe Experience Manager 6.5.
 
 Voici quelques-unes des principales fonctionnalités et améliorations introduites dans Adobe Experience Manager 6.5.5.0 :
 
-* Personnalisez les noms des colonnes qui s’affichent dans la boîte de réception Adobe Experience Manager.
+* Personnalisez les noms des colonnes qui s’affichent dans la boîte de réception d’Adobe Experience Manager.
 
 * Amélioration de l’accessibilité dans diverses zones de la Gestion de contenu Web d’Experience Manager (WCM), telles que l’éditeur de page, les composants principaux, RTE et l’interface utilisateur d’administration.
 
@@ -47,7 +47,7 @@ Voici quelques-unes des principales fonctionnalités et améliorations introduit
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.22.3.
 
-Pour obtenir une liste complète des fonctionnalités, des points saillants et des fonctionnalités clés introduites dans le Service Pack 5 d’Experience Manager 6.5, reportez-vous à la page [Nouveautés de Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
+Pour obtenir une liste complète des fonctionnalités, des points saillants des principales fonctionnalités introduites dans le Service Pack 5 d’Experience Manager 6.5, reportez-vous à la page [Nouveautés d’Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
 
 Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 6.5.5.0.
 
@@ -155,7 +155,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les lecteurs d’écran annoncent maintenant l’objectif des étiquettes sur les commandes pour passer aux mois suivants et aux mois précédents dans le sélecteur de dates du calendrier (NPR-32604).
 
-* Les icônes d&#39;évaluation des étoiles peuvent désormais être activées et activées à l&#39;aide des touches du clavier (NPR-32513).
+* Les icônes d’évaluation des étoiles peuvent désormais être activées et activées à l’aide des touches du clavier (NPR-32513).
 
 * La fonctionnalité de contrôle du volume vidéo est désormais accessible via la tabulation (pour mettre l&#39;accent sur le curseur de volume) et les touches fléchées (pour régler le volume) sur le clavier (NPR-32065).
 
@@ -173,7 +173,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * [!UICONTROL La page Editeur] de Schéma de métadonnées et ses éléments sont désormais accessibles à l’aide du clavier et sont compatibles avec les lecteurs d’écran (CQ-4290962, CQ-4272953).
 
-* Le `X` symbole permettant de supprimer les balises sélectionnées est maintenant annoncé par les lecteurs d’écran, ainsi que le nombre de balises sélectionnées (CQ-4273017).
+* L’objectif du `X` symbole de suppression des balises sélectionnées est maintenant annoncé par les lecteurs d’écran, ainsi que le nombre de balises sélectionnées (CQ-4273017).
 
 * Pour éviter toute confusion pour les utilisateurs non voyants utilisant un lecteur d’écran, les icônes et images décoratives sont désormais ignorées par les lecteurs d’écran (CQ-4272944).
 
@@ -257,13 +257,13 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 ### Intégrations {#integrations-6550}
 
-* Le cache interne est effacé lorsqu’une page avec un composant Adobe Cible est publiée (NPR-33162).
-* L&#39;intégration à Adobe Cible ne fonctionne pas le [!DNL Windows Internet Explorer] 11 (NPR-33111).
-* Lors de la configuration de la Cible Adobe, les champs [!UICONTROL Société] et Suite [!UICONTROL de] rapports n’apparaissent pas lors de la sélection d’une source de rapports (NPR-32502).
-* Lors de l’exportation [!DNL Experience Fragments] à l’aide des E/S Adobe, les métadonnées telles que le produit source ne sont pas exportées dans la Cible Adobe (NPR-32159).
+* Le cache interne est effacé lorsqu’une page avec un composant Adobe Target est publiée (NPR-33162).
+* L’intégration à Adobe Target ne fonctionne pas le [!DNL Windows Internet Explorer] 11 (NPR-33111).
+* Lors de la configuration d’Adobe Target, les champs [!UICONTROL Société] et Suite [!UICONTROL de] rapports n’apparaissent pas lors de la sélection d’une source de rapports (NPR-32502).
+* Lors de l’exportation [!DNL Experience Fragments] à l’aide des E/S Adobe, les métadonnées telles que le produit source ne sont pas exportées dans Adobe Target (NPR-32159).
 * Les utilisateurs IMS autorisés du groupe d’administrateurs Experience Manager local ne peuvent pas créer ni modifier de configurations IMS (NPR-33045).
 * La page des configurations de lancement Adobe n&#39;affiche pas tous les enregistrements (NPR-33011).
-* Les utilisateurs du groupe d’auteurs de contenu ne peuvent pas modifier les propriétés d’un composant de Cible Adobe en raison d’une erreur JavaScript (NPR-32996).
+* Les utilisateurs du groupe d’auteurs de contenu ne peuvent pas modifier les propriétés d’un composant Adobe Target en raison d’une erreur JavaScript (NPR-32996).
 
 ### Projets de traduction {#translation-6550}
 
@@ -338,7 +338,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 ### Installation du Service Pack {#install-service-pack}
 
-Effectuez les étapes suivantes pour installer le Service Pack sur une instance existante de Adobe Experience Manager 6.5 :
+Effectuez les étapes suivantes pour installer le Service Pack sur une instance existante d’Adobe Experience Manager 6.5 :
 
 1. Téléchargez le Service Pack depuis [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.5.0-Service-Pack) ou Distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)logiciels.
 
@@ -376,17 +376,17 @@ Pour connaître les plates-formes certifiées pour fonctionner avec cette versio
 
 >[!NOTE]
 >
->Passez cette étape si vous n’utilisez pas AEM Forms. Les correctifs dans Adobe Experience Manager Forms sont diffusés par le biais d’un module complémentaire distinct.
+>Passez cette étape si vous n’utilisez pas AEM Forms. Les correctifs d’Adobe Experience Manager Forms sont diffusés par le biais d’un module complémentaire distinct.
 
 1. Vérifiez que vous avez installé le Service Pack d’Adobe Experience Manager.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Installation de Adobe Experience Manager Forms sur JEE {#install-aem-forms-jee-installer}
+### Installation d’Adobe Experience Manager Forms sur JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs dans Adobe Experience Manager Forms sur JEE sont diffusés par le biais d’un programme d’installation distinct.
+>Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs d’Adobe Experience Manager Forms sur JEE sont diffusés par le biais d’un programme d’installation distinct.
 
 For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes for patch 0014](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
 
@@ -414,7 +414,7 @@ Il est conseillé aux clients de vérifier s’ils utilisent la fonctionnalité 
 
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
-| Intégrations | L’écran d’inclusion **[!UICONTROL des services]** AEM Cloud est obsolète. Avec l’intégration d’AEM et de Cible mise à jour dans AEM 6.5 pour la prise en charge de l’API Cible Standard, qui utilise l’authentification via Adobe IMS et E/S, et le rôle croissant de Adobe Launch pour l’instrumentation des pages AEM pour l’analyse et la personnalisation, l’assistant d’inclusion est devenu fonctionnellement inapproprié. | Configurez les connexions système, l’authentification Adobe IMS et les intégrations d’E/S Adobe via les services cloud AEM correspondants. |
+| Intégrations | L’écran d’inclusion **[!UICONTROL des services]** AEM Cloud est obsolète. Avec l’intégration d’AEM et de Cible mise à jour dans AEM 6.5 pour la prise en charge de l’API Target Standard, qui utilise l’authentification via Adobe IMS et E/S, et le rôle croissant de Adobe Launch pour l’instrumentation des pages AEM pour l’analyse et la personnalisation, l’assistant d’inclusion est devenu non pertinent du point de vue fonctionnel. | Configurez les connexions système, l’authentification Adobe IMS et les intégrations d’E/S Adobe via les services cloud AEM correspondants. |
 
 ## Problèmes connus {#known-issues}
 
