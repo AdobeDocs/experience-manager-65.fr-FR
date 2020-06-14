@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour des Service Pack précédents d’Adobe Experience Manager 6.5
+title: Notes de mise à jour d’Adobe Experience Manager 6.5 Previous Service Pack
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Service Pack 3 et versions antérieures.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
-source-wordcount: '8094'
+source-wordcount: '8093'
 ht-degree: 36%
 
 ---
@@ -19,7 +19,7 @@ Adobe Experience Manager 6.5.4.0 est une mise à jour importante qui comprend de
 
 Voici quelques-unes des principales fonctionnalités et améliorations introduites dans Adobe Experience Manager 6.5.4.0 :
 
-* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via la console d’E/S Adobe.
+* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via Adobe I/O Console.
 
 * Une nouvelle étape [Générer une sortie](../forms/using/aem-forms-workflow-step-reference.md) imprimable est désormais disponible pour les workflows Adobe Experience Manager Forms.
 
@@ -37,7 +37,7 @@ Voici quelques-unes des principales fonctionnalités et améliorations introduit
 
 * L’entrée ou la sortie SOAP et les structures de données complexes prennent désormais en charge la substitution de groupe dynamique.
 
-Pour obtenir une liste complète des fonctionnalités et des points saillants introduits dans les derniers Service Packs, reportez-vous à la page [Nouveautés des Service Packs](new-features-latest-service-pack.md)Adobe Experience Manager 6.5.
+Pour obtenir une liste complète des fonctionnalités et des points saillants présentés dans les derniers Service Packs, reportez-vous à la page [Nouveautés des Service Packs](new-features-latest-service-pack.md)Adobe Experience Manager 6.5.
 
 ### Sites {#sites-fixes}
 
@@ -295,10 +295,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Le partage de ressources ne fonctionne pas pour une ressource dont le nom de fichier contient un caractère plus (`+`) (NPR-31547).
 
-* Les modifications dans le formulaire de recherche par défaut Administration des actifs * Rail de recherche ne fonctionnent pas comme prévu (NPR-31502).
-
-<!-- Review: Check if this seemingly stray asterisk is needed there or not.
--->
+* Les modifications dans le formulaire de recherche par défaut Actifs Admin Search Rail ne fonctionnent pas comme prévu (NPR-31502).
 
 * Les suggestions ne s&#39;affichent pas lors de l&#39;utilisation d&#39;Omnisearch sur la vue de ressources pour la recherche de ressources (NPR-31496).
 
@@ -312,7 +309,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Tous les membres (utilisateurs/groupes) ne peuvent pas être supprimés de la section Membres d&#39;un dossier ; lors de la tentative de suppression de tous les utilisateurs, l&#39;utilisateur connecté est ajouté à la liste (NPR-31171).
 
-* Les fichiers dont le nom de fichier contient un symbole plus (`+`) ne peuvent pas être supprimés (NPR-31162).
+* Les fichiers dont le nom de fichier contient le symbole plus (`+`) ne peuvent pas être supprimés (NPR-31162).
 
 * Le menu déroulant Créer, qui est visible dans le menu supérieur lors de la sélection d&#39;un dossier, n&#39;affiche pas &quot;Dossier&quot; comme option de création (NPR-30877).
 
