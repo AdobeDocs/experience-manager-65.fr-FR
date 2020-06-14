@@ -4,7 +4,7 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 7%
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Nouveautés d’Adobe Experience Manager 6.5 Service Pack 5 {#aem-whats-new-service-pack-5}
 
-Les Service Packs Adobe Experience Manager 6.5 offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des performances, une stabilité et des améliorations de sécurité à intervalles trimestriels. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
+Les Service Packs d’Adobe Experience Manager 6.5 offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des performances, une stabilité et des améliorations de sécurité à intervalles trimestriels. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
 
 Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et certaines des versions [clés depuis la version 6.5.4.0](#key-releases-since-last-sp) d’Experience Manager.
 
@@ -56,9 +56,9 @@ Cet article présente les fonctionnalités incluses dans le dernier Service Pack
 
 * De nombreux éléments, contrôles et champs de formulaire d’entrée de l’interface utilisateur sont accessibles à l’aide du clavier.
 
-* Le rapport de couleur et de contraste de certains éléments de l’interface utilisateur est mis à jour afin que les utilisateurs ayant une vision limitée ou les utilisateurs sans perception de couleur puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation des étoiles (par exemple, dans la section [!UICONTROL Évaluation] de l’onglet [!UICONTROL Avancé] dans [!UICONTROL Propriétés] de la ressource ou dans la vue de la carte) est modifiée pour un contraste approprié.
+* La couleur et le contraste de certains éléments de l’interface utilisateur sont mis à jour afin que les utilisateurs ayant une vision limitée ou les utilisateurs sans perception de la couleur puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation des étoiles (par exemple, dans la section [!UICONTROL Évaluation] de l’onglet [!UICONTROL Avancé] dans [!UICONTROL Propriétés] de la ressource ou dans la vue de la carte) est modifiée pour un contraste approprié.
 
-   ![Icônes de classement avec un meilleur rapport de contraste](assets/star-rating-icons.png)
+   ![Icônes de classement avec contraste amélioré](assets/star-rating-icons.png)
 
 ### Amélioration de la gestion des exceptions {#exception-handling}
 
@@ -146,9 +146,10 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 * Les cases à cocher d’état mixte (dans lesquelles, à moins que vous ne sélectionniez tous les prédicats imbriqués, les cases de premier niveau ne sont pas sélectionnées et sont enfoncées) dans le panneau Filtres sont lisibles par les lecteurs d’écran.
 
-* Les contraintes de format de date et d’heure sont fournies dans les libellés de champs des champs de date, afin de permettre aux utilisateurs de saisir la date dans le format correct à l’aide du clavier. Par exemple, `On Time (MM-DD-YYYY HH:mm)`. Ici MM est le mois en format à deux chiffres, AAAA est l&#39;année, JJ est le jour en format à deux chiffres, HH est l&#39;heure en format militaire à 24 heures et mm est la minute.
+* Les contraintes de format de date et d’heure sont fournies dans les libellés de champs des champs de date, afin de permettre aux utilisateurs de saisir la date dans le format correct à l’aide du clavier.
+Par exemple, `On Time (MM-DD-YYYY HH:mm)`. Ici MM est le mois en format à deux chiffres, AAAA est l&#39;année, JJ est le jour en format à deux chiffres, HH est l&#39;heure en format militaire à 24 heures et mm est la minute.
 
-* Les lecteurs d’écran annoncent le `X` symbole pour supprimer les balises sélectionnées et le nombre de balises sélectionnées.
+* Les lecteurs d’écran annoncent maintenant le `X` symbole pour supprimer les balises sélectionnées ainsi que le nombre de balises sélectionnées.
 
 #### Recherche visuelle pour [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
