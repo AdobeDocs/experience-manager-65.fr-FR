@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
 workflow-type: tm+mt
-source-wordcount: '2078'
-ht-degree: 97%
+source-wordcount: '2079'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 
 Pour démarrer rapidement :
 
-1. [Téléchargez les images maître pour plusieurs vues.](#uploading-assets-in-image-sets)
+1. [Téléchargez vos images source principales pour plusieurs vues.](#uploading-assets-in-image-sets)
 
    Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
@@ -54,7 +54,7 @@ Pour démarrer rapidement :
    Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
-   >Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de fichiers et ne sont disponibles qu’en mode Contenu multimédia dynamique - Scene7.
+   >Les visionneuses de lots sont créées par le système IPS (Image Production System) dans le cadre de l’assimilation de fichiers et sont disponibles uniquement en mode Dynamic Media - Scene7.
 
    Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
@@ -221,6 +221,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer des éléments).
    * Pour trier les éléments dans l’ordre ascendant ou descendant, cliquez sur l’en-tête de colonne.
    * Pour ajouter une ressource ou mettre à jour une ressource existante, cliquez sur **[!UICONTROL Ajouter une ressource]**. Accédez à une ressource, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]** en haut à droite de la page.
+
       >[!NOTE]
       >
       >Si vous supprimez l’image qu’AEM utilise pour la miniature en la remplaçant par une autre image, la ressource d’origine s’affiche toujours.
@@ -228,6 +229,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pour appliquer un paramètre prédéfini, en haut à droite de la page, appuyez sur **[!UICONTROL Paramètre prédéfini]**, puis sélectionnez un paramètre prédéfini de visionneuse.
    * Pour ajouter ou changer une miniature, sélectionnez l’icône de miniature située à droite de la ressource. Naviguez jusqu’à la nouvelle miniature ou ressource d’échantillon, sélectionnez-la, puis appuyez sur **[!UICONTROL Sélectionner]**.
    * Pour supprimer intégralement une visionneuse d’images, accédez à cette visionneuse, sélectionnez-la, puis sélectionnez **[!UICONTROL Supprimer]**.
+
    >[!NOTE]
    >
    >Vous pouvez modifier les images d’une visionneuse d’images en accédant à la visionneuse, en cliquant sur **[!UICONTROL Définir les membres]** dans le rail gauche, puis en cliquant ou en appuyant sur l’icône Crayon d’une ressource pour afficher la fenêtre d’édition.
