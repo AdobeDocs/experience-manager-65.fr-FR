@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: fe81a72a6269060a7ec1283f817920618ba715ef
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1691'
 ht-degree: 54%
 
 ---
@@ -101,6 +101,7 @@ En gardant à l’esprit les éléments clés de l’éditeur d’applications m
 >* Le SPA est toujours responsable de son affichage.
 >* L’éditeur d’application d’une seule page est isolé de l’application d’une seule page.
 >* En production (publication), l’éditeur d’application d’une seule page n’est jamais chargé.
+
 >
 
 
@@ -167,8 +168,8 @@ Pour permettre à l’auteur d’utiliser l’éditeur de page pour modifier le 
 
 Le SDK SPA Editor prend en charge les versions minimales suivantes :
 
-* Réaction 16.3
-* Angular 6.x
+* Réagir à 16.x et plus
+* Angular 6.x et supérieur
 
 Les versions précédentes de ces structures peuvent fonctionner avec le SDK d’AEM SPA Editor, mais ne sont pas prises en charge.
 
@@ -193,7 +194,7 @@ Pour plus d’informations sur la `editElementQuery` propriété et la configura
 
 ### Restrictions {#limitations}
 
-Le SDK AEM SPA Editor a été introduit avec le Service Pack 2 d’AEM 6.4. Il est entièrement pris en charge par Adobe et, en tant que nouvelle fonctionnalité, il continue d’être amélioré et développé. Les fonctionnalités AEM suivantes ne sont pas encore prises en charge par l’éditeur d’applications monopages :
+Le SDK AEM SPA Editor a été introduit avec le Service Pack 2 d’AEM 6.4. Elle est entièrement soutenue par l&#39;Adobe et, en tant que nouvelle fonctionnalité, elle continue d&#39;être améliorée et élargie. Les fonctionnalités AEM suivantes ne sont pas encore prises en charge par l’éditeur d’applications monopages :
 
 * Mode Cible
 * ContextHub
