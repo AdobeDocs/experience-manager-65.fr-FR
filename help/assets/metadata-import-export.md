@@ -1,21 +1,21 @@
 ---
-title: Importation et exportation des métadonnées de fichier par lot.
+title: Importation et exportation des métadonnées de ressources par lot.
 description: Importation et exportation en bloc de métadonnées de ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 9d6f9b8f8d49ae3322a6f5f677292afbd48beeda
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 50%
+source-wordcount: '808'
+ht-degree: 63%
 
 ---
 
 
-# Importation et exportation des métadonnées de fichier par lot   {#import-and-export-asset-metadata-in-bulk}
+# Importation et exportation des métadonnées de ressources par lot  {#import-and-export-asset-metadata-in-bulk}
 
 [!DNL Adobe Experience Manager Assets] permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour par lot pour les ressources récemment transférées ou les ressources existantes en important un fichier CSV. Vous pouvez également assimiler des métadonnées de ressources par lot à partir d’un système tiers au format CSV.
 
-## Importation de métadonnées   {#import-metadata}
+## Importation de métadonnées  {#import-metadata}
 
 L’importation des métadonnées est asynchrone et n’entrave pas les performances du système. La mise à jour simultanée des métadonnées pour plusieurs ressources peut être gourmande en ressources en raison de l’activité d’écriture différée XMP si l’indicateur de workflow est coché. Planifiez une importation de ce type quand le serveur est peu utilisé afin que les performances d’autres utilisateurs ne soient pas affectées.
 
@@ -40,11 +40,11 @@ L’importation des métadonnées est asynchrone et n’entrave pas les performa
 
 1. Pour vérifier l’importation correcte, accédez à la page [!UICONTROL Propriétés] d’une ressource et vérifiez les valeurs des champs.
 
-Pour ajouter une date et un horodatage lors de l’importation de métadonnées, utilisez `YYYY-MM-DDThh:mm:ss.fff-00:00` le format de date et d’heure. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` est le 26 mars 2020 à 11h26:00.000 heure du Pacifique.
+Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` correspond au 26 mars 2020 à 11h26:00.000, heure du Pacifique.
 
 >[!CAUTION]
 >
->Si le format de date ne correspond pas `YYYY-MM-DDThh:mm:ss.fff-00:00`, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exporté sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez-la au format acceptable en ajoutant la valeur nanosecondes indiquée par `fff`.
+>Si la date ne correspond pas au format `YYYY-MM-DDThh:mm:ss.fff-00:00`, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exportées sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez son contenu dans un format acceptable en ajoutant la valeur en nanosecondes indiquée par `fff`.
 
 ## Export metadata {#export-metadata}
 
@@ -78,8 +78,9 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 ## Meilleures pratiques, restrictions et conseils {#best-practices-limitations-tips}
 
 * Le fichier CSV pour l’importation de métadonnées de fichiers est dans un format très spécifique. Pour gagner du temps et du temps et éviter les erreurs involontaires, vous pouvez début à créer le fichier CSV en utilisant le format d’un fichier CSV exporté.
-* Lors de l’importation de métadonnées à l’aide d’un fichier CSV, le format de date requis est `YYYY-MM-DDThh:mm:ss.fff-00:00`le format de date. Si un autre format est utilisé, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exporté sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez-la au format acceptable en ajoutant la valeur nanosecondes indiquée par `fff`.
+* Lors de l’importation de métadonnées à l’aide d’un fichier CSV, le format de date requis est `YYYY-MM-DDThh:mm:ss.fff-00:00`le format de date. Si un autre format est utilisé, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exportées sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez son contenu dans un format acceptable en ajoutant la valeur en nanosecondes indiquée par `fff`.
 * Pour importer des métadonnées sur des espaces de noms personnalisés, commencez par enregistrer les espaces de noms.
+* Le sélecteur de propriétés affiche les propriétés utilisées dans les éditeurs de schéma et les formulaires de recherche. Le sélecteur de propriétés ne sélectionne pas les propriétés de métadonnées d’un fichier.
 
 >[!MORELIKETHIS]
 >
