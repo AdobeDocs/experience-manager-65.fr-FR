@@ -1,19 +1,22 @@
 ---
-title: Configuration de Dynamic Media
-description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
+title: Configuration de Dynamic Media
+description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 51%
 
 ---
 
 
-# Configuration de Dynamic Media {#setting-up-dynamic-media}
+# Configuration de Dynamic Media   {#setting-up-dynamic-media}
 
-Grâce à [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html), vous gérez les ressources en diffusant à la demande des supports visuels de commercialisation et de marketing qui sont automatiquement dimensionnés, lors de leur diffusion sur des sites web, des appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de référence, Dynamic Media génère et diffuse, en temps réel, plusieurs variantes d’un même contenu enrichi au moyen de son réseau mondial et évolutif, aux performances optimisées.
+[Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) vous aide à gérer les ressources en fournissant des ressources visuelles de marchandisage et marketing à la demande, automatiquement mises à l’échelle pour être consommées sur des sites Web, mobiles et sociaux. Grâce à un ensemble de ressources sources principales, Dynamic Media génère et diffuse en temps réel de multiples variantes de contenu riche grâce à son réseau global, évolutif et optimisé pour les performances.
 
 >[!NOTE]
 >
@@ -23,10 +26,10 @@ Grâce à [Dynamic Media](https://www.adobe.com/solutions/web-experience-managem
 
 Si vous administrez des médias dynamiques, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration du mode](config-dms7.md) Contenu multimédia dynamique - Scene7 — Utilisez cette configuration si vous êtes un nouveau client de Contenu multimédia dynamique.
-* [Configuration du mode](config-dynamic.md) Contenu multimédia dynamique hybride — Utilisez cette configuration si vous êtes un client Dynamic Media existant qui met à niveau AEM.
-* [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
-* [Gestion des paramètres prédéfinis de la visionneuse](managing-viewer-presets.md)
+* [Configuration du mode](config-dms7.md) Dynamic Media-Scene7 : utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
+* [Configuration du mode](config-dynamic.md) Dynamic Media-Hybrid : utilisez cette configuration si vous êtes un client Dynamic Media existant qui met à niveau AEM.
+* [Gestion des paramètres d’image prédéfinis   ](managing-image-presets.md)
+* [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
 * [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
 
 Voir aussi les rubriques suivantes :
@@ -36,6 +39,6 @@ Voir aussi les rubriques suivantes :
 
 >[!NOTE]
 >
->**Si vous effectuez une mise à niveau :**
+>**Si vous effectuez une mise à niveau :**
 >
->* Une fois AEM installé et en cours d’exécution, les fichiers que vous téléchargez sont automatiquement activés dans Contenu multimédia dynamique (sauf s’ils ont été explicitement désactivés par votre administrateur système). Si vous utilisez une instance mise à niveau d’AEM et que vous découvrez Contenu multimédia dynamique, vous devrez peut-être retraiter vos fichiers pour les rendre compatibles avec Contenu multimédia dynamique.
+>* Après la mise en service d’AEM, toutes les ressources que vous chargez sont automatiquement activées pour Dynamic Media (à moins que cela n’ait été explicitement désactivé par votre administrateur système). Si vous utilisez une instance mise à niveau d’AEM et que Dynamic Media est nouveau pour vous, vous devrez peut-être retraiter vos ressources pour les rendre compatibles avec Dynamic Media.
