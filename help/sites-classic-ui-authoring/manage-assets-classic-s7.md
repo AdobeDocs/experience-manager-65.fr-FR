@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 76%
 
 ---
 
@@ -181,7 +184,7 @@ Pour ajouter une expérience de visionnage interactif à un site réactif par l�
 
    >[!NOTE]
    >
-   >Si les composants Scene7 WCM ne sont pas disponibles, veillez à les activer via le mode Création.
+   >Si les composants WCM de Scene7 ne sont pas disponibles, veillez à les activer via le mode Création.
 
 1. Dans un site web dont les composants Scene7 sont activés, faites glisser une visionneuse **Image** vers la page.
 1. Modifiez le composant et ajustez les points d’arrêt dans l’onglet **Paramètres de Scene7**.
@@ -218,7 +221,7 @@ Dans le composant Fenêtre déroulante HTML5, l’élément s’affiche sous la 
 >
 >Si le composant Fenêtre déroulante utilise une taille personnalisée, cette taille personnalisée est utilisée et la configuration réactive du composant est désactivée.
 >
->Si votre composant Fenêtre déroulante utilise la taille par défaut, telle qu’elle est définie dans la vue Conception, la taille par défaut est utilisée et le composant s’étend pour prendre en compte la taille de la mise en page avec la configuration réactive du composant activée. Sachez toutefois qu’il existe une limitation sur la configuration réactive du composant. Lorsque vous utilisez le composant Fenêtre déroulante avec la configuration réactive, vous ne devez pas l’utiliser avec l’étirement de pleine page. Sinon, la fenêtre déroulante peut s’étendre au-delà de la bordure droite de la page.
+>Si votre composant Fenêtre déroulante utilise la taille par défaut, telle que définie dans la vue de conception, la taille par défaut est utilisée et le composant s’étire pour s’adapter à la taille de mise en page avec la configuration adaptée du composant activée. Sachez toutefois qu’il existe une limite à la configuration réactive du composant. Lorsque vous utilisez le composant Fenêtre déroulante avec la configuration réactive, vous ne devez pas l’utiliser avec l’étirement de pleine page. Dans le cas contraire, la fenêtre déroulante peut s’étendre au-delà de la bordure droite de la page.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -228,17 +231,17 @@ Le composant Image de Scene7 permet d’ajouter la fonctionnalité Scene7 aux im
 
 ![](do-not-localize/chlimage_1-4.png)
 
-**Titre, Texte** de remplacement Dans l’onglet Avancé, ajoutez un titre à l’image et du texte de remplacement pour les utilisateurs dont les graphiques sont désactivés.
+**Titre, Texte** de remplacement Dans l’onglet Avancé, ajoutez un titre à l’image et un texte de remplacement pour les utilisateurs dont les graphiques sont désactivés.
 
 **URL, Ouvrir dans** Vous pouvez définir un fichier à partir duquel ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-**Paramètre prédéfini** de la visionneuse Sélectionnez un paramètre prédéfini existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+**Paramètre prédéfini** de visionneuse Sélectionnez un paramètre prédéfini existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
-**Configuration** Scene7 Sélectionnez la configuration Scene7 que vous souhaitez utiliser pour récupérer les paramètres d’image prédéfinis actifs à partir de SPS.
+**Configuration** de Scene7 Sélectionnez la configuration Scene7 à utiliser pour récupérer les paramètres d’image prédéfinis actifs à partir de SPS.
 
-**Paramètre d’image prédéfini** Sélectionnez un paramètre d’image prédéfini existant dans le menu déroulant. Si le paramètre prédéfini d’image que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
+**Paramètre** d’image prédéfini Sélectionnez un paramètre d’image prédéfini existant dans le menu déroulant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
 **Format** de sortie Sélectionnez le format de sortie de l’image, par exemple jpeg. Selon le format de sortie que vous sélectionnez, vous pouvez ajouter des options de configuration supplémentaires. Voir Bonnes pratiques relatives aux paramètres d’image prédéfinis.
 
@@ -256,13 +259,13 @@ Cliquez sur **Modifier** pour configurer le composant. You can configure [sett
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**Référence du fichier, Largeur, Hauteur** Voir les paramètres communs à tous les composants Scene7.
+**Référence du fichier, Largeur et Hauteur** Voir les paramètres communs à tous les composants Scene7.
 
 >[!NOTE]
 >
 >Les commandes et paramètres d’URL Scene7 ne peuvent pas être ajoutés directement à l’URL Référence du fichier. Ils ne peuvent être définis que dans l’interface utilisateur du composant, dans le panneau **Paramètre**.
 
-**Titre, Texte** de remplacement Dans l’onglet Modèle d’image Scene7, ajoutez un titre à l’image et du texte de remplacement pour les utilisateurs dont les graphiques sont désactivés.
+**Titre, Texte** de remplacement Dans l’onglet Modèle d’image de Scene7, ajoutez un titre à l’image et un texte de remplacement pour les utilisateurs dont les graphiques sont désactivés.
 
 **URL, Ouvrir dans** Vous pouvez définir un fichier à partir duquel ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
@@ -315,7 +318,7 @@ Pour plus d’informations sur le fonctionnement des vidéos avec l’intégrati
 
 ### Limitations connues du composant vidéo {#known-limitations-for-the-video-component}
 
-La gestion des actifs numériques et la gestion de contenu web d’Adobe indiquent si une vidéo maître est téléchargée. Elles n’affichent pas les éléments proxy suivants :
+Adobe DAM et WCM indiquent si une vidéo source principale est téléchargée. Elles n’affichent pas les éléments proxy suivants :
 
 * Rendus codés Scene7
 * Ensembles de vidéos adaptables Scene7
@@ -333,12 +336,14 @@ Si vous disposez de plusieurs configurations, AEM affiche la [configuration par 
 >* Les éléments figurant dans le dossier ad hoc n’apparaissent pas dans le navigateur de contenu Scene7.
 >* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les éléments publiés sur Scene7, tout comme les éléments non publiés, apparaissent dans le navigateur de contenu Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+
    >
    >
 * Pour la vidéo, l’explorateur de contenu Scene7 prend en charge : >
    >    * Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
    >    * La vidéo MP4 unique
    >    * Vidéo F4V simple
+
 >
 
 
@@ -362,6 +367,7 @@ Par défaut, les éléments sont affichés par nom de fichier. Vous pouvez égal
 >* Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
 >* La vidéo MP4 unique
 >* Vidéo F4V simple
+
 >
 
 
@@ -374,7 +380,7 @@ Vous pouvez utiliser l’interface utilisateur classique ou l’interface utilis
 
 Lors d’une recherche dans l’une ou l’autre des interfaces, vous pouvez filtrer selon les critères suivants (présentés ici dans l’interface utilisateur optimisée pour les écrans tactiles) :
 
-**Entrez des mots-clés** Vous pouvez rechercher des fichiers par nom. Lors de la recherche par mots-clés, vous saisissez le début du nom du fichier. Par exemple, la saisie du mot « swimming » recherche tous les noms de fichier qui commencent par ces lettres, dans cet ordre. Veillez à appuyer sur Entrée après avoir tapé le mot-clé de recherche de l’élément.
+**Entrez des mots-clés** Vous pouvez rechercher des ressources par nom. Lors de la recherche par mots-clés, vous saisissez le début du nom du fichier. Par exemple, la saisie du mot « swimming » recherche tous les noms de fichier qui commencent par ces lettres, dans cet ordre. Veillez à appuyer sur Entrée après avoir tapé le mot-clé de recherche de l’élément.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -390,7 +396,7 @@ Par défaut, AEM recherche le dossier sélectionné et tous les sous-dossiers.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuration** Si plusieurs configurations Scene7 sont définies dans les services Cloud, vous pouvez les sélectionner ici. De ce fait, le dossier change selon la configuration que vous avez choisie.
+**Configuration** Si plusieurs configurations Scene7 sont définies en Cloud Service, vous pouvez les sélectionner ici. De ce fait, le dossier change selon la configuration que vous avez choisie.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -408,6 +414,6 @@ Par défaut, AEM recherche le dossier sélectionné et tous les sous-dossiers.
 
 
 
-**Etat** de publication Vous pouvez filtrer les fichiers en fonction de l’état de publication : Non publié ou Publié. Si vous ne sélectionnez aucun état de publication, AEM recherche par défaut tous les états de publication.
+**Etat** de publication Vous pouvez filtrer les fichiers en fonction de l’état de publication : Non publié ou publié. Si vous ne sélectionnez aucun état de publication, AEM recherche par défaut tous les états de publication.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
