@@ -9,24 +9,27 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5832ca0438bd88c3113ee47875360b3c7b1e9176
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '3707'
+ht-degree: 98%
 
 ---
 
 
 # Profils vidéo {#video-profiles}
 
-Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos originales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de la connexion Internet de vos clients. Ce processus est appelé diffusion en continu adaptative.
+Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos sources principales à l’aide du profil de codage de vidéo adaptative, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de connexion Internet de vos clients pendant la lecture. Ce processus est appelé diffusion en continu adaptative.
 
 Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
-* **Résolution de la vidéo originale chargée**
+* **Résolution de la vidéo source principale téléchargée**
 
    Si la vidéo MP4 a été enregistrée à une résolution moins élevée, telle que 240p ou 360p, elle ne peut pas être diffusée en haute définition en continu.
 
 * **Taille du lecteur vidéo**
 
-   Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur Auto. Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
+   Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur Auto. Là encore, pendant la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
 
 Voir [Bonnes pratiques en matière de codage vidéo](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -58,7 +61,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio    (kbit/s)</strong></td>
+   <td><strong>Débit audio  (kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -137,7 +140,7 @@ Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les
 
 * Codec de format vidéo - MP4 H.264 (.mp4)
 * Codec audio
-* Débit audio   
+* Débit audio
 * Conserver les proportions
 * Codage à deux passages
 * Débit constant
@@ -178,8 +181,8 @@ Appuyez sur l’icône d’information en regard de chaque option pour accéder 
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil sera appliqué, procédez comme suit :
    * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter]**.
-   * Dans le champ Nom, entrez le nom du taux de recadrage qui vous aidera à l’identifier facilement.
-   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
+   * Dans le champ Nom, entrez un nom qui vous aidera à identifier facilement le rapport de recadrage.
+   * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -196,8 +199,8 @@ Si vous choisissez de ne pas utiliser l’option **[!UICONTROL Coder pour la dif
 
 En fonction du mode que vous exécutez, les codecs de format vidéo pris en charge sont les suivants :
 
-* Mode Contenu multimédia dynamique - Scene7 : H.264 (.mp4)
-* Mode Contenu multimédia dynamique hybride : H.264 (.mp4), WebM
+* Mode Dynamic Media-Scene7 : H.264 (.mp4)
+* Mode Dynamic Media-hybride : H.264 (.mp4), WebM
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu adaptative](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
@@ -234,8 +237,8 @@ Appuyez sur l’icône d’information en regard de chaque option pour accéder 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil sera appliqué, procédez comme suit :
 
    * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter]**.
-   * Dans le champ Nom, entrez le nom du taux de recadrage qui vous aidera à l’identifier facilement.
-   * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
+   * Dans le champ Nom, entrez un nom qui vous aidera à identifier facilement le rapport de recadrage.
+   * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
 1. Utilisez l’une des méthodes suivantes :
 
@@ -358,7 +361,7 @@ Appuyez sur l’icône d’information pour obtenir une description de la diffus
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer]**.
 1. Appuyez sur **[!UICONTROL OK]**.
 
-## Application d’un profil vidéo à des dossiers    {#applying-a-video-profile-to-folders}
+## Application d’un profil vidéo à des dossiers  {#applying-a-video-profile-to-folders}
 
 Lorsque vous affectez un profil vidéo à un dossier, tout sous-dossier hérite automatiquement du profil de son dossier parent. Cela signifie que vous ne pouvez affecter qu’un seul profil vidéo à un dossier. Nous vous conseillons donc de choisir avec la plus grande attention la structure du dossier dans lequel vous transférez, stockez, utilisez et archivez des ressources.
 
