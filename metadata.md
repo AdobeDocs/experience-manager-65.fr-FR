@@ -8,13 +8,13 @@ getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/experience-manager-65.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-65.fr-FR
 index: y
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: f483581a80faf0e6160d3b9cbc3fcdb8e8171dec
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 90%
+source-wordcount: '155'
+ht-degree: 70%
 
 ---
 
@@ -26,16 +26,16 @@ Le fichier metadata.md comprend des métadonnées de niveau référentiel qui tr
 | metadata | effets |
 |--- |--- |
 | solution-title | Utilisé dans l’en-tête de l’article en tant que lien.. |
-| solution-hub-url | Ouvre la page hub helpx.. |
+| solution-hub-url | Ouvre la page hub Formation et support. |
 | solution-icon | Affiche l’icône de solution en regard du titre de la solution. Pas encore implémenté. |
-| getting-started-url | Lien vers la page de démarrage helpx.. |
-| tutorials-url | Lien vers les tutoriels vidéo : tutoriels helpx ou KT.. |
-| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2.. |
-| git-repo | Spécifie l&#39;emplacement du référentiel principal pour une utilisation interne. |
+| getting-started-url | Lien vers la page de prise en main. |
+| tutorials-url | Lien vers des didacticiels vidéo. |
+| mini-toc-levels | Détermine le nombre de niveaux d’en-tête qui apparaissent dans le rail droit. La valeur par défaut est 2.   |
+| git-repo | Spécifie l&#39;emplacement du repo principal pour une utilisation interne. |
 
 Dans le fichier TOC.md
 
 | metadata | effets |
 |--- |--- |
-| guide-utilisateur-titre | Utilisé dans l’en-tête de l’article en tant que lien. |
-| user-guide-url | Ouvre la page hub helpx. |
+| guide-utilisateur-titre | Utilisé dans l’en-tête de l’article comme lien. |
+| user-guide-url | Ouvre la page hub Formation et support. |
