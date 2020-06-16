@@ -3,14 +3,17 @@ title: Configuration des modules externes d’éditeur de texte enrichi
 description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi d’Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '4400'
+ht-degree: 72%
 
 ---
 
 
 # Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
 
-Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article explique comment configurer spécifiquement les modules externes RTE.
+Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes RTE.
 
 Pour plus d’informations sur les autres configurations d’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md).
 
@@ -66,7 +69,7 @@ After activating a plug-in, follow these guidelines to configure the `features` 
 
 The `findreplace` plug-in does not need any configuration. Ça marche de la boîte.
 
-Lors de l’utilisation de la fonctionnalité de remplacement, la chaîne de remplacement à remplacer doit être saisie en même temps que la chaîne de recherche. Cependant, vous pouvez toujours cliquer sur Rechercher pour rechercher la chaîne avant de la remplacer. Si la chaîne de remplacement est saisie après avoir cliqué sur Rechercher, la recherche est réinitialisée au début du texte.
+Lors de l’utilisation de la fonctionnalité de remplacement, la chaîne à remplacer doit être saisie en même temps que la chaîne de recherche. Cependant, vous pouvez toujours cliquer sur Rechercher pour rechercher la chaîne avant de la remplacer. Si la chaîne de remplacement est saisie après avoir cliqué sur Rechercher, la recherche est réinitialisée au début du texte.
 
 La boîte de dialogue de recherche et de remplacement devient transparente lorsque l’utilisateur clique sur Rechercher et devient opaque lorsque l’utilisateur clique sur Remplacer. Cela permet à l’auteur de vérifier le texte qui sera remplacé. Si les utilisateurs cliquent sur Tout remplacer, la boîte de dialogue se ferme et affiche le nombre de remplacements effectués.
 
@@ -113,13 +116,13 @@ Cette configuration permet trois scénarios d’utilisation, à savoir :
 
    * **Nom** `defaultPasteMode`
    * **Type** `String`
-   * **Valeur** L’un des modes de collage `browser`, `plaintext`ou `wordhtml`.
+   * **Valeur** L’un des modes de collage `browser`, `plaintext`ou `wordhtml`requis.
 
 ### Configuration des formats autorisés lors du collage de contenu {#pasteformats}
 
 The paste-as-Microsoft-Word (`paste-wordhtml`) mode can be further configured so that you can explicitly define which styles are allowed when pasting in AEM from another program, such as Microsoft Word.
 
-Par exemple, si seuls les formats en gras et les  de doivent être autorisés lors du collage dans AEM, vous pouvez filtrer les autres formats. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de fichier :
+Par exemple, si seuls les formats et les listes en gras doivent être autorisés lors du collage dans AEM, vous pouvez filtrer les autres formats. Il s’agit du filtrage du collage configurable, qui peut être effectué pour les deux types de filtrage :
 
 * [Texte](#pastemodes)
 * [Liens](#linkstyles)
@@ -146,6 +149,7 @@ Pour configurer les formats autorisés pour coller du texte dans AEM à partir d
    * **Nom** `underline`
    * **Nom** `anchor` (pour les liens et les ancres nommées)
    * **Nom** `image`
+
    All properties are of **Type** `Boolean`, so in the appropriate **Value** you can either select or remove the check mark to enable or disable the functionality.
 
    >[!NOTE]
@@ -191,8 +195,8 @@ Pour configurer les formats autorisés pour coller du texte dans AEM à partir d
    <td>nt:unstructured</td>
    <td><p>Définit le comportement lors du collage de listes.<br /> </p> <p>Doit comporter la propriété <code>allow</code> (de type <code>Boolean</code>) pour définir s’il est autorisé de coller des listes.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p>
     <ul>
-     <li><code>remove</code>: Supprime le contenu .</li>
-     <li><code>paragraph</code>: Transforme  éléments en paragraphes.</li>
+     <li><code>remove</code>: Supprime le contenu de la liste.</li>
+     <li><code>paragraph</code>: Transforme les éléments de liste en paragraphes.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -265,8 +269,9 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 1. Add the property `externalStyleSheets` to the parent node of `<rtePlugins-node>`:
 
    * **Nom** `externalStyleSheets`
-   * **Type** `String[]` (multi-chaîne; cliquez sur **Multi** dans CRXDE)
+   * **Type** `String[]` (plusieurs chaînes ; cliquez sur **Multi** dans CRXDE).
    * **Valeur(s)** Chemin d’accès et nom de fichier de chaque feuille de style à inclure. Utilisez les chemins de référentiel.
+
    >[!NOTE]
    >
    >Vous pouvez ajouter des références à d’autres feuilles de style ultérieurement.
@@ -310,7 +315,7 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 
    * **Nom** `cssName`
    * **Type** `String`
-   * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; par exemple, `cssClass` au lieu de `.cssClass`)
+   * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)
 
 1. Ajoutez la propriété `text` au même nœud. Elle définit le texte affiché dans la boîte de dialogue de sélection :
 
@@ -333,17 +338,18 @@ Les auteurs qui utilisent AEM pour créer du contenu en japonais peuvent appliqu
 Pour créer le style que les auteurs peuvent appliquer au texte japonais, procédez comme suit :
 
 1. Créez un nœud sous le nœud styles. Consultez [spécification d’un nouveau style](#stylesindropdown).
-   * Nom: `jpn-word-wrap`
+   * Nom (name) : `jpn-word-wrap`
    * Type : `nt:unstructure
 
 1. Ajoutez la propriété `cssName` au nœud pour référencer la classe CSS. Ce nom de classe est un nom réservé pour la fonction japonaise de retour automatique à la ligne.
-   * Nom: `cssName`
-   * Type: `String`
+   * Nom (name) : `cssName`
+   * Type : `String`
    * Valeur : `jpn-word-wrap` (sans précédent `.`)
 
 1. Ajoutez la propriété text au même nœud. La valeur est le nom du style que les auteurs voient lors de la sélection du style.
    * Name: `text`
-*Type: `String`
+*Type: 
+`String`
    * Valeur: `Japanese word-wrap`
 
 1. Créez une feuille de style et spécifiez son chemin d’accès. Consultez [spécification de l’emplacement de la feuille de style](#locationofstylesheet). Ajoutez le contenu suivant à la feuille de style. Modifiez la couleur d’arrière-plan selon vos besoins.
@@ -373,7 +379,7 @@ Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise b
 
 Lorsque le module externe Formats des paragraphes est activé pour la première fois, aucun format de paragraphe n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
-* Activez le déroulant Format.
+* Activez la liste de sélection déroulante Format.
 * Spécifiez les balises block qui peuvent être sélectionnées dans la liste déroulante.
 
 Pour les configurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
@@ -476,17 +482,17 @@ Si vous ajoutez vos propres caractères spéciaux, ils remplacent la sélection 
 
    * **Nom** `entity`
    * **Type** `String`
-   * **Valeur** de la représentation HTML du caractère requis ; par exemple, `&189;` pour la fraction une moitié.
+   * **Valeur** de la représentation HTML du caractère requis ; par exemple, `&189;` pour la fraction moitié.
 
 1. Enregistrez les modifications.
 
 Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre plus de caractères spéciaux disponibles aux auteurs.
 
-![Dans CRXDE, ajoutez un caractère unique à rendre disponible dans la](assets/chlimage_1-106.png "barre d’outils RTEDans CRXDE, ajoutez un caractère unique à rendre disponible dans la barre d’outils RTE")
+![Dans CRXDE, ajoutez un caractère unique à rendre disponible dans la barre d’](assets/chlimage_1-106.png "outils RTEDans CRXDE, ajoutez un caractère unique à rendre disponible dans la barre d’outils RTE.")
 
 ### Définition d’une série de caractères {#definerangechar}
 
-1. Utilisez les étapes 1 à 3 de la section [Définition d’un caractère unique](#definingasinglecharacter).
+1. Utilisez les étapes 1 à 3 de la section [Définition d’un caractère unique](#definesinglechar).
 1. Sous `chars`, ajoutez un nouveau nœud destiné à contenir la définition de la plage de caractères :
 
    * **Nom** Vous pouvez spécifier le nom, mais il doit refléter la plage de caractères, par exemple, « crayons ».
@@ -495,10 +501,12 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 1. Sous ce nœud (nommé en fonction de votre plage de caractères spéciaux), ajoutez les deux propriétés suivantes :
 
    * **Nom** `rangeStart`
+
       **Type** `Long`
       **Valeur** de la représentation [Unicode](https://unicode.org/) (décimale) du premier caractère de la plage
 
    * **Nom** `rangeEnd`
+
       **Type** `Long`
       **Valeur** de la représentation [Unicode](https://unicode.org/) (décimale) du dernier caractère de la plage
 
@@ -510,7 +518,7 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 
    *Figure : Dans CRXDE, définissez une plage de caractères à rendre disponible dans RTE.*
 
-   ![Les caractères spéciaux disponibles dans RTE s’affichent pour les auteurs dans une](assets/rtepencil.png "fenêtre contextuelle. Les caractères spéciaux disponibles dans RTE s’affichent pour les auteurs dans une fenêtre contextuelle.")
+   ![Les caractères spéciaux disponibles dans RTE sont affichés aux auteurs dans une](assets/rtepencil.png "fenêtre contextuelleLes caractères spéciaux disponibles dans RTE sont affichés aux auteurs dans une fenêtre contextuelle")
 
 ## Configuration des styles de tableau {#tablestyles}
 
@@ -528,6 +536,7 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
    * **Nom** `features`
    * **Type** `String`
    * **Valeur** `*`
+
    >[!NOTE]
    Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
    * **Type** `String[]`
@@ -552,7 +561,7 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
 
 1. Create a new node (under the `tableStyles` or `cellStyles` node as appropriate) to represent an individual style:
 
-   * **Nom** Vous pouvez spécifier le nom, mais il doit refléter le style.
+   * **Nom** vous pouvez spécifier le nom, mais il doit refléter le style.
    * **Type** `nt:unstructured`
 
 1. Sur ce nœud, créez les propriétés :
@@ -561,7 +570,7 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
 
       * **Nom** `cssName`
       * **Type** `String`
-      * **Valeur** du nom de la classe CSS (sans précédent `.`, par exemple `cssClass` au lieu de `.cssClass`)
+      * **Valeur** du nom de la classe CSS (sans précédent `.`, par exemple, `cssClass` au lieu de `.cssClass`)
    * Pour définir un texte descriptif à afficher dans le sélecteur de liste déroulante
 
       * **Nom** `text`
@@ -577,14 +586,14 @@ Répétez les étapes ci-dessus pour chaque style requis.
 
 Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
 
-Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres vous permettent d’appliquer des styles CSS aux en-têtes masqués dans les modes de modification et de . Pour aider les créateurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
+Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres vous permettent d’appliquer des styles CSS aux en-têtes masqués en mode de modification et de prévisualisation. Pour aider les créateurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
 
 * `hiddenHeaderEditingCSS`: Indique le nom de la classe CSS appliquée à la cellule d’en-tête masqué, lorsque RTE est modifié.
-* `hiddenHeaderEditingStyle`: Spécifie une chaîne Style appliquée à la cellule d’en-tête masqué lors de la modification de RTE.
+* `hiddenHeaderEditingStyle`: Indique une chaîne Style appliquée à la cellule d’en-tête masqué lorsque RTE est modifié.
 
 Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe CSS prévaut sur la chaîne Style et peut remplacer les modifications apportées à la configuration en raison de la chaîne Style.
 
-Pour aider les auteurs à appliquer des CSS aux en-têtes masqués en mode , vous pouvez inclure les paramètres suivants dans votre code :
+Pour aider les auteurs à appliquer des CSS aux en-têtes masqués en mode prévisualisation, vous pouvez inclure les paramètres suivants dans votre code :
 
 * `hiddenHeaderClassName` : spécifie le nom de la classe CSS appliquée à la cellule d’en-tête masqué en mode aperçu.
 * `hiddenHeaderStyle` : spécifie une chaîne Style appliquée à la cellule d’en-tête masqué en mode aperçu.
@@ -598,7 +607,7 @@ Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de
 >[!NOTE]
 The message `Spell checking failed` is seen if a check is attempted for a language that is not installed. The standard dictionaries are located at `/libs/cq/spellchecker/dictionaries`, along with the appropriate readme files. Ne modifiez pas les fichiers.
 
-Une installation AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
+Une installation AEM standard comprend les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -607,7 +616,7 @@ Une installation AEM standard inclut les dictionnaires pour l’anglais américa
    * Recherchez le dictionnaire de votre choix de langue. Sur la page du dictionnaire, recherchez le lien vers la source d’origine ou la page Web de l’auteur. Localisez les fichiers de dictionnaire pour v2.x sur une telle page.
    * Recherchez des fichiers de dictionnaire v2.x à l’adresse [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. Téléchargez l&#39;archive avec les définitions d&#39;orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
+1. Téléchargez l&#39;archive avec les définitions orthographiques. Extrayez le contenu de l’archive dans votre système de fichiers.
 
    >[!CAUTION]
    Seuls les dictionnaires au format `MySpell` for OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.
@@ -617,7 +626,7 @@ Une installation AEM standard inclut les dictionnaires pour l’anglais américa
 
 >[!NOTE]
 Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte. To run the spell checker, click [!UICONTROL Spellchecker] from the toolbar. RTE vérifie l&#39;orthographe des mots et met en évidence les mots mal orthographiés.
-Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état du texte change et les mots mal orthographiés ne sont plus surlignés. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Si vous incorporez une modification suggérée par le vérificateur orthographique, l’état du texte change et les mots mal orthographiés ne sont plus surlignés. Pour exécuter la vérification orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
@@ -628,7 +637,7 @@ L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir que
 
    * **Nom** `maxUndoSteps`
    * **Type** `Long`
-   * **Valeur** Nombre d’étapes annulées à enregistrer dans l’historique. La valeur par défaut est de 50. Utilisez `0` pour désactiver complètement l’option Annuler/Rétablir.
+   * **Valeur** Nombre d’étapes annulées à enregistrer dans l’historique. La valeur par défaut est de 50. Utilisez `0` pour désactiver complètement l&#39;annulation/la restauration.
 
 1. Enregistrez les modifications.
 
@@ -657,14 +666,14 @@ Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte
 1. Within your component navigate to the node `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. On the `lists` node create the `identSize` parameter:
 
-   * **Nom**: `identSize`
+   * **Name** (Nom) : `identSize`
    * **Type**: `Long`
    * **Valeur** Nombre de pixels nécessaires pour la marge en retrait.
 
 ## Configuration de la hauteur de l’espace modifiable {#editablespace}
 
 >[!NOTE]
-Cela s’applique uniquement lorsque vous utilisez RTE dans une boîte de dialogue (et non lors de la modification statique dans l’interface utilisateur classique).
+Ceci s’applique uniquement lors de l’utilisation de l’ETC dans une boîte de dialogue (sans modification statique dans l’interface utilisateur classique).
 
 Vous pouvez définir la hauteur de l’espace modifiable affiché dans la boîte de dialogue du composant :
 
@@ -673,6 +682,7 @@ Vous pouvez définir la hauteur de l’espace modifiable affiché dans la boîte
    * **Nom** `height`
    * **Type** `Long`
    * **Valeur** Hauteur du canevas de publication, exprimée en pixels.
+
    >[!NOTE]
    Cette opération ne modifie pas la hauteur de la fenêtre de la boîte de dialogue.
 
@@ -692,11 +702,13 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
    * **Nom** `htmlRules`
    * **Type** `nt:unstructured`
+
    >[!NOTE]
    The `../items/text` node has the property:
    * **Nom** `xtype`
    * **Type** `String`
    * **Valeur** `richtext`
+
    The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
@@ -713,12 +725,12 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
       * **Nom** `cssInternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; par exemple, `cssClass` au lieu de `.cssClass`)
+      * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)
    * Style CSS pour les liens externes
 
       * **Nom** `cssExternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; par exemple, `cssClass` au lieu de `.cssClass`)
+      * **Valeur** Nom de la classe CSS (non précédé d’un point « . ». ; for example, `cssClass` instead of `.cssClass`)
    * Array of valid **protocols** (including https://, https:// file://, mailto:, amongst others)
 
       * **Nom** `protocols`
@@ -733,6 +745,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
       * **Nom** `targetConfig`
       * **Type** `nt:unstructured`
+
       Sur le nœud `targetConfig` : définissez les propriétés nécessaires :
 
       * Spécifiez le mode cible :
@@ -741,7 +754,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
          * **Type** `String`)
          * **Valeurs** :
 
-            * `auto`: signifie qu’une  automatique est choisie
+            * `auto`: signifie qu&#39;une cible automatique est choisie
 
                (spécifié par la `targetExternal` propriété pour les liens externes ou `targetInternal` pour les liens internes).
 
@@ -751,7 +764,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
          * **Nom** `targetInternal`
          * **Type** `String`
-         * **Valeur** du  pour les liens internes (à utiliser uniquement lorsque le &quot;mode&quot; est `auto`)
+         * **Valeur** de la cible pour les liens internes (à utiliser uniquement lorsque le &quot;mode&quot; est `auto`)
       * Cible des liens externes :
 
          * **Nom** `targetExternal`
