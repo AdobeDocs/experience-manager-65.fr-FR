@@ -9,22 +9,25 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3dbf4cf522441561d6ac6eeeff0e63e7bbb5e38
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 70%
 
 ---
 
 
 # Utilisation de l’éditeur de texte enrichi pour créer du contenu {#use-rich-text-editor-to-author-content}
 
-L’éditeur de texte enrichi est une composante essentielle pour la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
+L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants., y compris :
 
-* Texte
+* Text (Texte)
 * Texte et Image
 * Tableau
 
 ## Édition statique {#in-place-editing}
 
-Selecting a text-based component with a single tap or click will reveal the [component toolbar](/help/sites-authoring/editing-content.md#editmovecopypastedeletetouchoptimizedui) as with any component.
+Si vous sélectionnez un composant textuel en cliquant/appuyant une seule fois dessus, il s’affiche dans la [barre d’outils de composant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), comme pour n’importe quel composant.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -34,8 +37,8 @@ Si vous cliquez/appuyez à nouveau sur le composant ou si vous l’avez sélecti
 
 Cette barre d’outils propose les options suivantes :
 
-* **Format**: Cela vous permet de définir Gras, Italique et Souligné.
-* **Listes**: Vous pouvez ainsi créer des listes à puces ou numérotées ou définir le retrait.
+* **Format** : permet de définir les styles Gras, Italique et Souligné.
+* **Listes** : permet de créer des listes à puces ou numérotées, ou de définir une mise en retrait.
 * **Lien hypertexte**
 * **Dissocier**
 * **Plein écran**
@@ -44,15 +47,15 @@ Cette barre d’outils propose les options suivantes :
 
 ## Édition en mode Plein écran {#full-screen-editing}
 
-For text-based components, tapping the full screen mode from the [toolbar](#componenttoolbar) ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
 
-Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. Les options disponibles [dépendent de la configuration](/help/sites-administering/rich-text-editor.md).
+Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
 Les options supplémentaires de l’éditeur de texte enrichi sont les suivantes :
 
-* **Ancre**: Créez une ancre dans le texte à laquelle vous pourrez ultérieurement lier/référencer.
+* **Ancre** : crée une ancre dans le texte grâce à laquelle vous pourrez ensuite établir un lien ou créer une référence.
 * **Aligner le texte à gauche**
 * **Texte centré**
 * **Aligner le texte à droite**
@@ -63,4 +66,4 @@ Pour fermer le mode Plein écran, cliquez sur l’icône Réduire.
 
 >[!NOTE]
 >
->La copie de listes imbriquées de Microsoft Word dans RTE peut donner des résultats incohérents et peut nécessiter un ajustement manuel après avoir collé le texte dans RTE.
+>La copie de listes imbriquées de Microsoft Word dans le RTE peut donner des résultats incohérents et peut nécessiter un ajustement manuel après avoir collé le texte dans le RTE.
