@@ -1,8 +1,8 @@
 ---
-title: Didacticiel SPA WKND
-seo-title: Didacticiel SPA WKND
-description: Découvrez-vous dans le développement d’applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage des applications pour mettre en oeuvre votre propre application d’applications monopages.
-seo-description: Découvrez-vous dans le développement d’applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage des applications pour mettre en oeuvre votre propre application d’applications monopages.
+title: Didacticiel sur le WKND SPA
+seo-title: Didacticiel sur le WKND SPA
+description: Découvrez-vous dans le développement des applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage d’application pour mettre en oeuvre votre propre application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application.
+seo-description: Découvrez-vous dans le développement des applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage d’application pour mettre en oeuvre votre propre application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application.
 uuid: f57be84b-a037-4c76-856e-afb0275c1a0f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,24 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: b67693829e1fa16e29b8fb6293e4212ac866130d
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
 
-# Didacticiel SPA WKND{#spa-wknd-tutorial}
+# Didacticiel sur le WKND SPA{#spa-wknd-tutorial}
 
-Découvrez-vous dans le développement d’applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage des applications pour mettre en oeuvre votre propre application d’applications monopages.
+Découvrez-vous dans le développement des applications monopages grâce à ce didacticiel en plusieurs parties qui vous guide tout au long de la configuration du projet, du mappage des composants, des outils de développement frontal et du routage d’application pour mettre en oeuvre votre propre application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application d’application.
 
 ## Tutoriels {#tutorials}
 
-Pour obtenir un exemple de bout en bout de création de votre propre application d’une seule page modifiable avec AEM en commençant par la configuration du projet par le routage de l’application, reportez-vous au didacticiel [Prise en main de l’éditeur d’applications monopages AEM - Evénements WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html). Il existe des versions du didacticiel pour les structures Réagir et Angular.
+Pour un exemple complet de création d’une application d’une seule page modifiable avec AEM en commençant par la configuration du projet via le routage d’applications, consultez les didacticiels WKND SPA :
 
-Toutefois, avant de commencer votre propre projet d’application d’une seule page pour AEM, veillez à consulter également le document [Développement d’applications d’une seule page pour AEM](/help/sites-developing/spa-architecture.md) .
+* [Prise en main de l’éditeur d’applications monopages AEM et d’Angular](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Prise en main de l’éditeur d’applications monopages AEM et réaction](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+
+Toutefois, avant de commencer votre propre projet d’application d’une seule page pour AEM, veillez également à consulter les [applications d’une seule page pour AEM](/help/sites-developing/spa-architecture.md) document.
 
