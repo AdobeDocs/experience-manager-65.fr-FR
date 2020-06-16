@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 81%
 
 ---
 
@@ -33,8 +36,8 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
 | Nom de propriété (console Web) | Nom de propriété OSGi | Description |
 |---|---|---|
 | Cookies d’exclusion | optout.cookies | Nom des cookies qui indiquent, lorsqu’ils sont présents sur le périphérique de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
-| En-têtes HTTP d’exclusion | optout.headers | Nom des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à utiliser les cookies. |
-| Cookies de liste blanche | optout.whitelist.cookies | Liste des cookies essentiels au fonctionnement du site Web et pouvant être utilisés sans le consentement de l’utilisateur. |
+| En-têtes HTTP d’exclusion | optout.headers | Noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à utiliser des cookies. |
+| Cookies de Liste blanche | optout.whitelist.cookies | liste de cookies essentiels au fonctionnement du site Web et pouvant être utilisés sans le consentement de l’utilisateur. |
 
 ## Validation de l’utilisation de cookies {#validating-cookie-usage}
 
@@ -72,7 +75,7 @@ Renvoie les noms des cookies qui indiquent, lorsqu’ils sont présents, que l�
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -84,7 +87,7 @@ Renvoie les noms des cookies qui peuvent être utilisés indépendamment de l’
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -96,7 +99,7 @@ Détermine si le navigateur de l’utilisateur contient des cookies qui indiquen
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -104,7 +107,7 @@ Valeur booléenne `true` si un cookie indique que l’autorisation n’a pas ét
 
 ### Fonction maySetCookie(cookieName){#maysetcookie-cookiename-function}
 
-Détermine si un cookie spécifique peut être utilisé dans le navigateur de l’utilisateur. Cette fonction revient à utiliser `isOptedOut` parallèlement à la fonction permettant de déterminer si le cookie en question est inclus dans la liste renvoyée par la fonction `getWhitelsitCookieNames`.
+Détermine si un cookie spécifique peut être utilisé dans le navigateur de l’utilisateur. Cette fonction revient à utiliser `isOptedOut` parallèlement à la fonction permettant de déterminer si le cookie en question est inclus dans la liste renvoyée par la fonction `getWhitelistCookieNames`.
 
 **Paramètres**
 
