@@ -1,29 +1,18 @@
 ---
 title: Balise décorative
-seo-title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
-seo-description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
-uuid: db796a22-b053-48dd-a50c-354dead7e8ec
-contentOwner: user
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 8cb9fd6e-5e1f-43cd-8121-b490dee8c2be
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 73%
 
 ---
 
 
 # Balise décorative{#decoration-tag}
 
->[!NOTE]
->
->Le comportement et les options de balise décorative décrits dans cet article sont basés sur [AEM 6.3 CFP1](https://helpx.adobe.com/experience-manager/release-notes--aem-6-3-cumulative-fix-pack.html).
->
->Le comportement de la balise décorative dans la version 6.3 antérieure à CFP1 est identique à celui de la version AEM 6.2.
-
-Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Cela sert principalement deux objectifs :
+Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Il s&#39;agit principalement de deux objectifs :
 
 * Un composant ne peut être modifié que lorsqu’il est enveloppé dans un élément HTML.
 * L’élément d’encapsulage est utilisé pour appliquer des classes HTML qui fournissent :
@@ -48,12 +37,12 @@ Ces quelques recommandations générales vous indiquent à quel moment inclure l
 
 Les propriétés et nœuds suivants peuvent être appliqués aux composants pour contrôler le comportement de leur balise décorative :
 
-* **`cq:noDecoration {boolean}`**: Cette propriété peut être ajoutée à un composant et une valeur true force AEM à ne générer aucun élément wrapper sur le composant.
+* **`cq:noDecoration {boolean}`:**Cette propriété peut être ajoutée à un composant et une valeur réelle force AEM à ne générer aucun élément wrapper sur le composant.
 
 * **`cq:htmlTag`Nœud  : :**ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
 
-   * **`cq:tagName {String}`**: Vous pouvez ainsi spécifier une balise HTML personnalisée à utiliser pour envelopper les composants au lieu de l’élément DIV par défaut.
-   * **`class {String}`**: Vous pouvez l’utiliser pour spécifier les noms de classe css à ajouter à l’enveloppe.
+   * **`cq:tagName {String}`:**Vous pouvez l’utiliser pour spécifier une balise HTML personnalisée à utiliser pour envelopper les composants au lieu de l’élément DIV par défaut.
+   * **`class {String}`:**Vous pouvez l’utiliser pour spécifier les noms de classe css à ajouter à l’enveloppe.
    * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
 ## Contrôles de script {#script-controls}
@@ -118,7 +107,7 @@ Résultat obtenu sur `/content/test.html`:
 
 **`Hello World!`**
 
-Par exemple, un composant qui inclut un composant d’image principal pour afficher une image, généralement en utilisant une ressource synthétique, qui consiste à inclure un composant enfant virtuel en transmettant à la ressource de données un objet Map qui représente toutes les propriétés que le composant aurait.
+Par exemple, un composant qui inclut un composant d&#39;image principal pour afficher une image, généralement en utilisant une ressource synthétique, qui consiste à inclure un composant enfant virtuel en transmettant à la ressource de données un objet Map qui représente toutes les propriétés que le composant aurait.
 
 #### Exemple d’utilisation 2 : Inclure un composant modifiable {#use-case-include-an-editable-component}
 
