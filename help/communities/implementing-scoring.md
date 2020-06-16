@@ -1,8 +1,8 @@
 ---
 title: Score et badges des communautés
 seo-title: Score et badges des communautés
-description: Les scores et les badges des communautés AEM vous permettent d’identifier et de récompenser les membres de la communauté.
-seo-description: Les scores et les badges des communautés AEM vous permettent d’identifier et de récompenser les membres de la communauté.
+description: Les notes et les badges AEM Communities vous permettent d'identifier et de récompenser les membres de la communauté
+seo-description: Les notes et les badges AEM Communities vous permettent d'identifier et de récompenser les membres de la communauté
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2897'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ## Présentation {#overview}
 
-La fonction de notation et de badges des communautés AEM permet d’identifier et de récompenser les membres de la communauté.
+La fonction de notation et de badges AEM Communities permet d&#39;identifier et de récompenser les membres de la communauté.
 
 Les principaux aspects de la notation et des badges sont les suivants :
 
@@ -355,7 +355,7 @@ La `scoringRules` propriété d’une règle de badge limite simplement les règ
      <li>nombre = score</li>
      <li>| = la ligne verticale char (U+007C)</li>
      <li>chemin = chemin complet vers la ressource image de badge</li>
-    </ul> Les chaînes doivent être triées afin que les nombres augmentent en valeur et qu’aucun espace blanc ne s’affiche entre le nombre et le chemin.<br /> Exemple d’entrée :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> Les chaînes doivent être triées afin que les nombres augmentent en valeur et qu’aucun espace vide ne s’affiche entre le nombre et le chemin.<br /> Exemple d’entrée :<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -581,7 +581,7 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
 
 * Ajoutez la propriété badgingRules :
 
-   * **Nom**: `badgingRules`
+   * **Name** (Nom) : `badgingRules`
    * **Type**: `String`
    * Sélectionner **plusieurs**
    * Sélectionner le **Ajoute**
@@ -592,7 +592,7 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
 
 * Ajoutez la propriété scoringRules :
 
-   * **Nom**: `scoringRules`
+   * **Name** (Nom) : `scoringRules`
    * **Type**: `String`
    * Sélectionner **plusieurs**
    * Sélectionner le **Ajoute**
@@ -614,7 +614,7 @@ Ensuite, assurez-vous que les composants du forum et des commentaires permettent
 
 * Ajoutez la propriété booléenne allowBadges, si nécessaire, et assurez-vous qu’elle est vraie.
 
-   * **Nom**: `allowBadges`
+   * **Name** (Nom) : `allowBadges`
    * **Type**: `Boolean`
    * **Valeur**: `true`
 
