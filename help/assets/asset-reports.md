@@ -1,45 +1,54 @@
 ---
-title: Rapports sur vos ressources numériques
-description: Découvrez les rapports sur vos ressources dans les ressources Adobe Experience Manager qui vous aident à comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+title: Rapports sur l’utilisation et le partage de vos ressources numériques.
+description: Rapports sur vos ressources [!DNL Adobe Experience Manager Assets] dans lesquels vous pouvez comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
+source-git-commit: bc08b0039f8be92a7638245b1770c2ad21503f63
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 58%
+source-wordcount: '1013'
+ht-degree: 50%
 
 ---
 
 
 # Rapports de ressources  {#asset-reports}
 
-Le rapports des ressources est un outil clé pour évaluer l’utilité du déploiement des ressources Adobe Experience Manager. Avec Ressources, vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
+Le rapports des ressources vous permet d’évaluer l’utilité de votre [!DNL Adobe Experience Manager Assets] déploiement. Vous [!DNL Assets]pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
-Utilisez les informations contenues dans les rapports pour dériver des mesures de réussite clés afin de mesurer l’adoption des ressources au sein de votre entreprise et par les clients.
+Use the information in the reports to derive key success metrics to measure the adoption of [!DNL Assets] within your enterprise and by customers.
 
-La structure du rapports Ressources utilise les tâches Sling pour traiter les demandes de rapports de manière asynchrone et ordonnée. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
+The [!DNL Assets] reporting framework uses [!DNL Sling] jobs to asynchronously process report requests in an ordered manner. Elle est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports permet de générer des rapports de manière plus efficace et rapide.
 
 L’interface de gestion de rapports est intuitive et inclut des options et des commandes précises pour accéder aux rapports archivés, ainsi qu’afficher les états d’exécution des rapports (réussite, échec et en file d’attente).
 
 Si un rapport est généré, vous êtes averti par un courrier électronique (facultatif) et une notification dans la boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
+## Condition requise {#prerequisite-for-reporting}
+
+Pour générer des rapports, veillez à ce que :
+
+* Activez le service d’enregistrement [!UICONTROL de Événement DAM] Day CQ dans **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **[!UICONTROL Web.]**
+* Sélectionnez les activités ou les événements sur lesquels vous souhaitez effectuer un rapports. Par exemple, pour générer un rapport sur les ressources téléchargées, sélectionnez [!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)].
+
+![Activer le rapports de ressources dans la console Web](assets/reports-config-day-cq-dam-event-recorder.png)
+
 ## Génération de rapports {#generate-reports}
 
-Experience Manager Assets génère pour vous les rapports standard suivants :
+[!DNL Experience Manager Assets] génère les rapports standard suivants pour vous :
 
 * Charger
 * Téléchargement
 * Expiration
 * Modification
 * Publier
-* Publier sur Brand Portal
+* [!DNL Brand Portal] publish
 * Utilisation du disque
 * Fichiers
 * Partage de liens
 
 [!DNL Adobe Experience Manager] les administrateurs peuvent facilement générer et personnaliser ces rapports pour votre mise en oeuvre. Un administrateur peut procéder comme suit pour générer un rapport :
 
-1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. Dans [!DNL Experience Manager] l’interface, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 
 ![Page Outils pour parcourir le rapport des ressources](assets/AssetsReportNavigation.png)
 
@@ -47,10 +56,6 @@ Experience Manager Assets génère pour vous les rapports standard suivants :
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
-
-   >[!NOTE]
-   >
-   >Avant de générer un rapport **[!UICONTROL Ressource téléchargée]**, assurez-vous que le service de téléchargement de ressources est activé. Dans la console web (`https://[aem_server]:[port]/system/console/configMgr`), ouvrez la configuration **[!UICONTROL Enregistreur d’événements de la gestion des actifs numériques Day CQ]** et, le cas échéant, sélectionnez l’option **[!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)]** dans Types d’événement.
 
    >[!NOTE]
    >
@@ -80,7 +85,7 @@ Experience Manager Assets génère pour vous les rapports standard suivants :
 
    ![Page Détails du rapport Fichiers](assets/files_report.png)
 
-   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within Assets. Celui-ci comprend les ID de courrier électronique de l’utilisateur qui a partagé les ressources, les ID de courrier électronique des utilisateurs avec lesquels les ressources sont partagées, la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. Celui-ci comprend les ID de courrier électronique de l’utilisateur qui a partagé les ressources, les ID de courrier électronique des utilisateurs avec lesquels les ressources sont partagées, la date de partage et la date d’expiration du lien. Les colonnes ne sont pas personnalisables.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
@@ -92,12 +97,12 @@ Experience Manager Assets génère pour vous les rapports standard suivants :
 
    ![Sélectionner ou désélectionner des colonnes de rapports](assets/configure_columns.png)
 
-   Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud jcr:content dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
+   To display a custom column name or property path, configure the properties for the asset binary under the `jcr:content` node in CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
 
    ![Sélectionner ou désélectionner des colonnes de rapports](assets/custom_columns.png)
 
 1. Click **[!UICONTROL Create]** from the toolbar. Un message indique que la génération du rapport a été lancée.
-1. Sur la page Rapports de ressources, l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport, par exemple, Réussite, Échec, En file d’attente ou Planifié. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour vue à la page du rapport, cliquez sur le lien du rapport. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
+1. On the [!UICONTROL Asset Reports] page, the report generation status is based on the current state of the report job, for example [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], or [!UICONTROL Scheduled]. Le même état s&#39;affiche dans la boîte de réception des notifications. Pour vue à la page du rapport, cliquez sur le lien du rapport. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![Un rapport généré](assets/report_page.png)
 
@@ -112,12 +117,12 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Expiration
 * Modification
 * Publier
-* Publier sur Brand Portal
+* [!DNL Brand Portal] publish
 * Fichiers
 
 Pour ajouter des colonnes personnalisées à ces rapports, procédez comme suit :
 
-1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. Dans le [!DNL Manager interface]menu, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
