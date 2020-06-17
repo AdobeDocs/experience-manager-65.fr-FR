@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '2841'
+ht-degree: 86%
 
 ---
 
@@ -44,7 +47,7 @@ Pour une instance sécurisée, il est obligatoire d’activer la couche de trans
 
 ### Installation des correctifs de sécurité {#install-security-hotfixes}
 
-Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis par Adobe](https://helpx.adobe.com/experience-manager/kb/aem63-available-hotfixes.html).
+Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis par Adobe](https://helpx.adobe.com/fr/experience-manager/kb/aem63-available-hotfixes.html).
 
 ### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -52,13 +55,13 @@ Adobe strongly recommends that after installation you change the password for th
 
 Ces comptes sont les suivants :
 
-* Le `admin` compte AEM
+* Le compte AEM `admin`
 
-   Une fois que vous avez modifié le mot de passe du compte d’administrateur AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
+   Une fois que vous avez modifié le mot de passe du compte d’administration AEM, vous devez utiliser le nouveau mot de passe lors de l’accès à CRX.
 
-* Mot de `admin` passe de la console Web OSGi
+* Mot de passe de la console Web OSGi `admin`
 
-   Cette modification sera également appliquée au compte administrateur utilisé pour accéder à la console Web. Vous devrez donc utiliser le même mot de passe pour y accéder.
+   Cette modification sera également appliquée au compte d&#39;administration utilisé pour accéder à la console Web. Vous devrez donc utiliser le même mot de passe pour y accéder.
 
 Ces deux comptes utilisent des informations d’identification distinctes. Il est essentiel d’utiliser des mots de passe sécurisés distincts pour un déploiement sécurisé.
 
@@ -139,7 +142,7 @@ Tous les exemples de contenu et d’utilisateurs (par exemple, le projet Geometr
 
 >[!NOTE]
 >
->Les exemples d’applications We.Retail sont supprimés si cette instance est en cours d’exécution en [mode Prêt pour la production](/help/sites-administering/production-ready.md). Si, pour une raison quelconque, ce n’est pas le cas, vous pouvez désinstaller l’exemple de contenu en accédant à Package Manager, puis rechercher et désinstaller tous les packages We.Retail. Pour plus d’informations, voir [Utilisation de packages](package-manager.md).
+>Les exemples d’applications We.Retail sont supprimés si cette instance est en cours d’exécution en [mode Prêt pour la production](/help/sites-administering/production-ready.md). Si, pour une raison quelconque, ce n&#39;est pas le cas, vous pouvez désinstaller l&#39;exemple de contenu en accédant à Package Manager, puis en recherchant et désinstallant tous les packages We.Retail. Pour plus d’informations, voir [Utilisation de packages](package-manager.md).
 
 ### Contrôle de la présence des lots de développement CRX {#check-if-the-crx-development-bundles-are-present}
 
@@ -169,9 +172,9 @@ Le service de filtre de référent est un service OSGi qui permet de configurer�
 
 * les méthodes HTTP à filtrer ;
 * si un en-tête de référent vide est permis ;
-* et une liste des serveurs autorisés, en plus de l’hôte de serveur.
+* et une liste de serveurs à autoriser en plus de l’hôte du serveur.
 
-Par défaut, toutes les variantes de localhost et les noms d’hôtes actuels auxquels le serveur est lié figurent sur la liste blanche.
+   Par défaut, toutes les variations de localhost et les noms d’hôte actuels auxquels le serveur est lié se trouvent dans la liste.
 
 Pour configurer le service de filtrage de référent :
 
@@ -184,9 +187,9 @@ Pour configurer le service de filtrage de référent :
 
    `Apache Sling Referrer Filter`
 
-1. In the `Allow Hosts` field, enter all hosts that are allowed as a referrer. Chaque entrée doit être du formulaire
+1. In the `Allow Hosts` field, enter all hosts that are allowed as a referrer. Chaque entrée doit se trouver dans le formulaire
 
-   &lt;protocole>://&lt;serveur>:&lt;port>
+   &lt;protocol>://&lt;server>:&lt;port>
 
    Par exemple :
 
@@ -260,6 +263,7 @@ Une attaque par déni de service (DoS) est une tentative de rendre une ressource
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
+
    Toutes les variantes possibles (par exemple, renvoi d’une réponse `200`, configurée pour être mise en cache) seront mises en cache par Dispatcher, ce qui entraîne la saturation du système de fichiers et l’indisponibilité du service pour d’autres demandes.
 
 De nombreux points de configuration permettent de prévenir ce type d’attaque. Nous n’abordons que ceux liés directement à AEM.
@@ -290,7 +294,7 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
    * Notamment, l’outil de rendu JSON, qui peut traverser l’arborescence sur plusieurs des niveaux.
 
-      Par exemple, la requête :
+      Par exemple, la demande :
 
       `http://localhost:4502/.json`
 
@@ -298,7 +302,7 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
       **Résultats** max JSON ( `json.maximumresults`)
 
-      dans la configuration du servlet GET [Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
+      dans la configuration pour le [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
 
    * À titre de mesure préventive, désactivez les autres outils de rendu par défaut (HTML, texte brut, XML). Là encore, en configurant le [servlet Sling GET d’Apache](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
@@ -315,7 +319,7 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 >
 >Cette réduction ne doit être effectuée que sur les environnements AEM qui n’utilisent pas Forms.
 
-Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Form selectors can be detected by the presence of the **&amp;ast;.form.** &amp;ast; dans les requêtes.
+Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Form selectors can be detected by the presence of the **&amp;ast;.form.&amp;ast;** dans les requêtes.
 
 Pour atténuer ce problème, veuillez procéder comme suit :
 
@@ -342,7 +346,7 @@ WebDAV doit être désactivé dans les environnements de création et de publica
 
    `https://<*host*>:<*port*>/system/console`
 
-   Par exemple `http://localhost:4503/system/console/bundles`.
+   Par exemple, `http://localhost:4503/system/console/bundles`.
 
 1. Dans la liste des lots, recherchez le lot nommé :
 
@@ -408,6 +412,7 @@ Plus spécifiquement, vous devez effectuer les opérations suivantes :
 1. Cherchez le lot com.adobe.granite.crypto.file dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+
    Le fichier `bundle.info` à l’intérieur de chaque dossier identifie le nom du lot.
 
 1. Accédez au dossier des données. Par exemple :
