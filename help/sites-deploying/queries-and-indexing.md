@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: b01f6d3726fd6aa06ffedaf10dfde9526479a2a3
+workflow-type: tm+mt
+source-wordcount: '2880'
+ht-degree: 89%
 
 ---
 
@@ -65,7 +68,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 >[!NOTE]
 >
->Pour un référentiel volumineux, la création d’un index est une opération qui prend du temps. Cela vaut aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après avoir modifié la définition). See also [Troubleshooting Oak Indexes](/help/sites-deploying/troubleshooting-oak-indexes.md) and [Preventing Slow Re-indexing](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Pour un référentiel volumineux, la création d’un index prend du temps. Cela vaut aussi bien pour la création initiale d’un index que pour la réindexation (reconstruction d’un index après avoir modifié la définition). See also [Troubleshooting Oak Indexes](/help/sites-deploying/troubleshooting-oak-indexes.md) and [Preventing Slow Re-indexing](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Si une réindexation s’avère nécessaire dans des référentiels très volumineux, en particulier lorsque vous utilisez MongoDB et des index en texte intégral, pensez à recourir à la pré-extraction de texte, ainsi qu’à utiliser la commande oak-run pour générer l’index initial et procéder à la réindexation.
 
@@ -82,8 +85,9 @@ L’index de propriété est généralement utile pour les requêtes limitées p
 1. Nommez le nœud **PropertyIndex**, puis définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Définissez les propriétés suivantes pour le nouveau nœud :
 
-   * **** type :  `property` (de type String)
-   * **** propertyNames :  `jcr:uuid` (de type Nom)
+   * **type :**  `property` (de type String)
+   * **propertyNames :**  `jcr:uuid` (de type Nom)
+
    Cet exemple particulier indexera la propriété `jcr:uuid`, dont la tâche est de présenter l’UUID (universally unique identifier) du nœud associé.
 
 1. Enregistrez les modifications.
@@ -119,8 +123,8 @@ Vous pouvez configurer un index de texte intégral Lucene en suivant la procédu
 1. Nommez le nœud **LuceneIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Ajoutez les propriétés suivantes au nœud  :
 
-   * **** type :  `lucene` (de type String)
-   * **** async :  `async` (de type String)
+   * **type :**  `lucene` (de type String)
+   * **async :**  `async` (de type String)
 
 1. Enregistrez les modifications.
 
@@ -129,7 +133,7 @@ L’index Lucene présente les options de configuration suivantes :
 * La propriété **type**, qui spécifie le type d’index, doit être définie sur **lucene**
 * La propriété **async** doit être définie sur **async**. Cela permettra d’envoyer le processus de mise à jour de l’index à un thread en arrière-plan.
 * La propriété **includePropertyTypes**, qui définira le sous-ensemble de types de propriétés qui sera inclus dans l’index.
-* La propriété **excludePropertyNames**, qui définit une liste noire de noms de propriété (les propriétés qui doivent être exclues de l’index).
+* The **excludePropertyNames** property which will define a list of property names - properties that should be excluded from the index.
 * L’indicateur **reindex**, qui, défini sur **true**, déclenche une réindexation de l’ensemble du contenu.
 
 ### Index de propriété Lucene {#the-lucene-property-index}
@@ -146,7 +150,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 Pour définir un index de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous **oak:index:**
 
-* **Nom:** `LucenePropertyIndex`
+* **Nom (name) :**`LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`
 
 Une fois que le nœud a été créé, ajoutez les propriétés suivantes :
@@ -169,7 +173,7 @@ Une fois que le nœud a été créé, ajoutez les propriétés suivantes :
    false (of type Boolean)
    ```
 
-* **** includePropertyNames : `["alias"] (of type String)`
+* **includePropertyNames :** `["alias"] (of type String)`
 
 >[!NOTE]
 >
@@ -205,21 +209,23 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
 1. Ajouter une propriété au nœud par défaut avec les propriétés suivantes :
 
-   * **Nom:** `class`
+   * **Nom (name) :**`class`
    * **Type:** `String`
    * **Valeur:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+
    La valeur est le nom de la classe d’analyseur que vous souhaitez utiliser. 
 
    Vous pouvez également définir l’analyseur à utiliser avec une version spécifique de Lucene à l’aide de la propriété de chaîne facultative `luceneMatchVersion`. Un syntaxe valide pour l’utiliser avec Lucene 4.7 serait :
 
-   * **Nom:** `luceneMatchVersion`
+   * **Nom (name) :**`luceneMatchVersion`
    * **Type:** `String`
    * **Valeur:** `LUCENE_47`
+
    Si `luceneMatchVersion` n’est pas spécifié, Oak utilise la version Lucene avec laquelle il est envoyée. 
 
 1. If you wish to add a stopwords file to the analyzer configurations, you can create a new node under the `default` one with the following properties:
 
-   * **Nom:** `stopwords`
+   * **Nom (name) :**`stopwords`
    * **Type:** `nt:file`
 
 #### Création d’analyseurs via la composition {#creating-analyzers-via-composition}
@@ -228,35 +234,35 @@ Analyzers can also be composed based on `Tokenizers`, `TokenFilters` and `CharFi
 
 Prenez cette structure de nœud comme exemple :
 
-* **Nom:** `analyzers`
+* **Nom (name) :**`analyzers`
 
-   * **Nom:** `default`
+   * **Nom (name) :**`default`
 
-      * **Nom:** `charFilters`
+      * **Nom (name) :**`charFilters`
       * **Type:** `nt:unstructured`
 
-         * **Nom:** `HTMLStrip`
-         * **Nom:** `Mapping`
-      * **Nom:** `tokenizer`
+         * **Nom (name) :**`HTMLStrip`
+         * **Nom (name) :**`Mapping`
+      * **Nom (name) :**`tokenizer`
 
-         * **Nom de la propriété:** `name`
+         * **Nom de la propriété :**`name`
 
             * **Type:** `String`
             * **Valeur:** `Standard`
-      * **Nom:** `filters`
+      * **Nom (name) :**`filters`
       * **Type:** `nt:unstructured`
 
-         * **Nom:** `LowerCase`
-         * **Nom:** `Stop`
+         * **Nom (name) :**`LowerCase`
+         * **Nom (name) :**`Stop`
 
             * **Nom de la propriété:** `words`
 
                * **Type:** `String`
                * **Valeur:** `stop1.txt, stop2.txt`
-            * **Nom:** `stop1.txt`
+            * **Nom (name) :**`stop1.txt`
 
                * **Type:** `nt:file`
-            * **Nom:** `stop2.txt`
+            * **Nom (name) :**`stop2.txt`
 
                * **Type:** `nt:file`
 
@@ -307,9 +313,9 @@ Vous pouvez configurer le serveur Solr intégré en procédant comme suit :
 1. Ouvrez CRXDE et connectez-vous en tant qu’administrateur.
 1. Ajoutez un nœud nommé **solrlndex** de type **oak:QueryIndexDefinition** sous **oak:index** avec les propriétés suivantes :
 
-   * **** type : `solr`(de type String)
-   * **** async : `async`(de type String)
-   * **** réindexer : `true`(de type Boolean)
+   * **type :** `solr`(de type String)
+   * **async :** `async`(de type String)
+   * **réindexer :** `true`(de type Boolean)
 
 1. Enregistrez les modifications.
 
@@ -321,9 +327,11 @@ AEM peut également être configuré pour travailler avec une instance de serveu
 1. Créez deux partitions Solr. Pour ce faire, vous devez créer des dossiers pour chaque partition dans le dossier dans lequel Solr a été décompressé :
 
    * Pour la première partition, créez le dossier :
+
    `<solrunpackdirectory>\aemsolr1\node1`
 
    * Pour la seconde partition, créez le dossier :
+
    `<solrunpackdirectory>\aemsolr2\node2`
 
 1. Recherchez un exemple d’instance dans le package Solr. Cet environnement se situe généralement dans un dossier nommé « `example` » dans la racine du module.
@@ -361,7 +369,7 @@ AEM peut également être configuré pour travailler avec une instance de serveu
 1. Start AEM and go to the Web Console at `http://localhost:4502/system/console/configMgr`
 1. Définissez la configuration suivante dans la **configuration du serveur distant Solr Oak** :
 
-   * URL HTTP Solr : `http://localhost:8983/solr/`
+   * URL HTTP solr : `http://localhost:8983/solr/`
 
 1. Sélectionnez **Remote Solr (Solr distant)** dans la liste déroulante sous le fournisseur de serveurs **Oak Solr**.
 
@@ -479,5 +487,5 @@ Vous pouvez également fournir une sortie JMX consolidée via `https://serveradd
 Vous pouvez rassembler des informations supplémentaires afin de résoudre le problème, par exemple :
 
 1. La version Oak sur laquelle votre instance est exécutée. Vous pouvez l’afficher en ouvrant CRXDE et en affichant la version dans le coin inférieur droit de la page d’accueil ou en vérifiant la version du lot `org.apache.jackrabbit.oak-core`.
-1. La sortie du débogueur QueryBuilder de la requête posant problème. Le débogueur est accessible à l’adresse suivante : `https://serveraddress:port/libs/cq/search/content/querydebug.html`
+1. La sortie du débogueur QueryBuilder de la requête posant problème. Le débogueur est accessible à l&#39;adresse suivante : `https://serveraddress:port/libs/cq/search/content/querydebug.html`
 
