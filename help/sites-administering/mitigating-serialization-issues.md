@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3cbbad3ce9d93a353f48fc3206df989a8bf1991a
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 66%
 
 ---
 
@@ -23,11 +26,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Le fichier JAR d’agent inclus dans ce module est la distribution de NotSoSerial modifiée par Adobe.
 
-  NotSoSerial est une solution de niveau Java à un problème de niveau Java, et il n’est pas spécifique à AEM. Il ajoute un contrôle en amont à une tentative de désérialisation d’un objet. Ce contrôle teste un nom de classe par rapport à une liste blanche et/ou une liste noire de style pare-feu. En raison du nombre limité de classes dans la liste noire par défaut, il est peu probable que cela ait un impact sur vos systèmes ou votre code.
+  NotSoSerial est une solution de niveau Java à un problème de niveau Java, et il n’est pas spécifique à AEM. Il ajoute un contrôle en amont à une tentative de désérialisation d’un objet. Cette vérification testera un nom de classe par rapport à une liste autorisée et/ou une liste bloquée de type pare-feu. En raison du nombre limité de classes dans la liste bloquée par défaut, il est peu probable que cela ait un impact sur vos systèmes ou votre code.
 
-Par défaut, l’agent effectue un contrôle de liste noire en vérifiant les classes vulnérables actuellement connues. Cette liste noire est destinée à vous protéger contre la liste actuelle des attaques qui utilisent ce type de vulnérabilité.
+Par défaut, l&#39;agent effectue une vérification de liste bloquée des classes vulnérables connues actuelles. Cette liste bloquée est destinée à vous protéger de la liste actuelle d&#39;exploits qui utilisent ce type de vulnérabilité.
 
-La liste noire et la liste blanche peuvent être configurées en suivant les instructions de la section [Configuration de l’agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de cet article.
+The block list and allow list can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
 
 L’agent est conçu pour vous aider à limiter les dernières classes vulnérables connues. Si votre projet désérialise des données non approuvées, il peut être vulnérable aux attaques par déni de service, aux attaques de mémoire insuffisante et aux futures attaques inconnues de désérialisation.
 
@@ -41,7 +44,7 @@ Adobe prend officiellement en charge Java 6, 7 et 8, toutefois, il semble que N
 
 1. Installez le lot **com.adobe.cq.cq-serialization-tester**.
 
-1. Accédez à la console Web du lot à l’adresse `https://server:port/system/console/bundles`
+1. Accédez à la console Web du lot à l&#39;adresse `https://server:port/system/console/bundles`
 1. Recherchez le lot de sérialisation et démarrez-le. Cela devrait charger automatiquement et dynamiquement l’agent NotSoSerial.
 
 ## Installation de l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}
@@ -66,7 +69,7 @@ L’agent NotSoSerial n’est pas inclus dans la distribution standard d’AEM p
 
 ## Configuration de l’agent {#configuring-the-agent}
 
-La configuration par défaut est appropriée pour la plupart des installations. Cela inclut une liste noire des classes vulnérables connues pour l’exécution distante et une liste blanche de modules où la désérialisation des données de confiance doit être relativement sécurisée.
+La configuration par défaut est appropriée pour la plupart des installations. Cela inclut une liste bloquée de classes vulnérables connues d&#39;exécution à distance et une liste autorisée de paquets où la désérialisation de données fiables devrait être relativement sûre.
 
    La configuration de pare-feu est dynamique et peut être changée à tout moment en :
 
@@ -80,19 +83,19 @@ La configuration par défaut est appropriée pour la plupart des installations. 
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Cette configuration contient la liste blanche, la liste noire et la consignation de désérialisation.
+Cette configuration contient la journalisation de la liste autorisée, de la liste bloquée et de la désérialisation.
 
-**Liste blanche**
+**Autoriser la liste**
 
-Dans la section Liste blanche se trouvent les classes ou les préfixes de modules pour lesquels la désérialisation est autorisée. Il est important de noter que si vous désérialisez vos propres classes, vous devez ajouter les classes ou les modules à cette liste blanche.
+Dans la section permettant la mise en vente, il s’agit de classes ou de préfixes de package qui seront autorisés pour la désérialisation. Il est important de savoir que si vous désérialisez les classes vous-même, vous devrez ajouter les classes ou les paquets à cette liste autorisée.
 
-**Liste noire**
+**Liste des blocs**
 
-Dans la section Liste noire se trouvent des classes qui ne sont jamais autorisées pour la désérialisation. L’ensemble initial de ces classes est limité à celles qui sont considérées comme vulnérables aux attaques d’exécution à distance. La liste noire est appliquée avant toute entrée de la liste blanche.
+Dans la section de liste des blocs, il y a des classes qui ne sont jamais autorisées pour la désérialisation. L’ensemble initial de ces classes est limité à celles qui sont considérées comme vulnérables aux attaques d’exécution à distance. La liste bloquée est appliquée avant toute entrée répertoriée autorisée.
 
 **Journalisation du diagnostic**
 
-Dans la section relative à la journalisation du diagnostic, vous pouvez choisir plusieurs options de connexion lorsque la désérialisation a lieu. Les désérialisations sont uniquement consignées lors de la première utilisation, elles ne le sont pas pour les utilisations suivantes.
+Dans la section relative à la journalisation des diagnostics, vous pouvez choisir plusieurs options de connexion lors de la désérialisation. Les désérialisations sont uniquement consignées lors de la première utilisation, elles ne le sont pas pour les utilisations suivantes.
 
 La valeur par défaut **class-name-only** vous notifie les classes qui sont désérialisées.
 
@@ -110,7 +113,7 @@ Pour plus d’informations sur la résolution des incidents avec l’agent, voir
 
 >[!NOTE]
 >
->Si vous ajoutez `org.apache.commons.collections.functors` à la liste blanche, le contrôle de l’intégrité échoue systématiquement.
+>If you add `org.apache.commons.collections.functors` to the allow list, the health check will always fail.
 
 ## Gestion des erreurs lors du chargement dynamique de l’agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -139,4 +142,3 @@ Pour charger l’agent manuellement, suivez les instructions ci-dessous :
 ## Autres considérations {#other-considerations}
 
 Si vous exécutez sur une JVM IBM, voir la documentation sur la prise en charge de l’API Attach Java à cet [emplacement](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
-
