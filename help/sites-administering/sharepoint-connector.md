@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+workflow-type: tm+mt
+source-wordcount: '1599'
+ht-degree: 71%
 
 ---
 
@@ -88,7 +91,7 @@ Le connecteur prend en charge les applications suivantes :
 
 AEM Package Share est utilisé pour la distribution des fonctionnalités produit, des exemples et des correctifs logiciels. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Vous avez besoin d’un ID Adobe valide qui comprend l’adresse électronique de votre société. En outre, après vous être connecté à votre compte, demandez l’accès à Package Share.
+To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Vous avez besoin d’un Adobe ID valide incluant votre adresse électronique de société. En outre, après vous être connecté à votre compte, demandez l’accès à Package Share.
 
 #### Intégration à AEM {#integrating-with-aem}
 
@@ -130,14 +133,14 @@ Par défaut, le connecteur expose un espace de travail JCR unique. Le serveur Sh
 `<name>` is the name of the JCR workspace and
 `<url>` is the URL of the SharePoint server for that workspace.
 
-Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Placez le lot **com.day.cq.dam.cq-dam-jcr-connectors** dans la liste blanche.
+Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Liste autorisée du lot &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Pour placer les lots en liste blanche dans AEM, effectuez les étapes suivantes :
+Pour liste autorisée de lots dans AEM, effectuez les étapes suivantes :
 
 1. Accédez à la console de gestion OSGi : http://localhost:4502/system/console/configMgr.
 1. Recherchez le service Apache Sling Login Admin Whitelist.
-1. Sélectionnez Contourner la liste blanche.
-1. Add &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; in whitelist bundles default
+1. Select **Bypass the whitelist**.
+1. Add `com.day.cq.dam.cq-dam-jcr-connectors` in whitelist bundles default
 1. Cliquez sur Enregistrer.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
@@ -194,10 +197,10 @@ En particulier, les types d’authentification suivants sont disponibles :
 * Revendications – de base
 * Revendications – reposant sur les formulaires
 
-AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prend en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
+AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prennent en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
 
 * **Authentification de base/NTLM** : le connecteur tente d’abord de se connecter à l’aide de l’authentification de base. Si elle n’est pas disponible, il passe à l’authentification basée sur NTLM.
-* **Authentification** basée sur les formulaires : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
+* **Authentification** basée sur des formulaires : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
 
 **Configuration de l’authentification reposant sur les formulaires**
 
@@ -232,15 +235,15 @@ Pour créer un utilisateur dans AEM :
 1. Cliquez sur **Créer un utilisateur**.
 1. Indiquez l’ID utilisateur (nom d’utilisateur ayant accès à SharePoint).
 1. Indiquez le mot de passe correspondant.
-1. Cliquez sur le symbole de la tique verte pour créer l’utilisateur.
+1. Cliquez sur le symbole de graduation verte pour créer l’utilisateur.
 
 Pour ajouter l’utilisateur au groupe administrateur :
 
 1. Accédez à l’administration des groupes..
 1. Cliquez sur le noeud &quot;a&quot;.
-1. Cliquez sur &quot;Administrateurs&quot;.
+1. Cliquez sur &quot;administrateurs&quot;.
 1. Type the user ID create above in the text box before **Browse** button.
-1. Cliquez sur le symbole de la graduation verte pour ajouter l’utilisateur au groupe d’administrateurs.
+1. Cliquez sur le symbole de graduation verte pour ajouter l’utilisateur au groupe d’administrateurs.
 
 ### Désactivation de l’authentification par jeton {#disable-token-authentication}
 
