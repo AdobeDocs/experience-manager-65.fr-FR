@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '2331'
+ht-degree: 84%
 
 ---
 
@@ -48,7 +51,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* AEM prend en charge `Resource.adaptTo()` `CommerceService` les variables `Product`
+* AEM prend en charge `Resource.adaptTo()` `CommerceService` les `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -65,7 +68,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
 Consultez les exemples ci-dessous :
 
-| `cq:commerceProvider = geometrixx` | dans une installation AEM standard, une implémentation spécifique est requise ; par exemple, l’exemple geometrixx, qui inclut des extensions minimales à l’API générique |
+| `cq:commerceProvider = geometrixx` | dans une installation AEM standard, une implémentation spécifique est requise ; par exemple, l’exemple geometrixx, qui inclut des extensions minimales à l’API générique. |
 |---|---|
 | `cq:commerceProvider = hybris` | mise en oeuvre de l&#39;hybris |
 
@@ -105,11 +108,11 @@ Les paramètres par défaut du code sont optimisés pour hybris 5.
 
 Afin de développer pour hybris 4, les éléments suivants sont nécessaires :
 
-* Lors de l’appel de maven, ajoutez l’argument de ligne de commande suivant à la commande
+* Lors de l&#39;appel de maven, ajoutez l&#39;argument de ligne de commande suivant à la commande
 
    `-P hybris4`
 
-   Il télécharge la distribution Hybris 4 préconfigurée et l’incorpore dans le lot :
+   Il télécharge la distribution Hybris 4 préconfigurée et l&#39;incorpore dans l&#39;assemblage :
 
    ```
    cq-commerce-hybris-server
@@ -134,10 +137,10 @@ hybris utilise une session utilisateur pour stocker des informations telles que 
 
 #### CommerceSession {#commercesession}
 
-* Cette session &quot;détient&quot; le **panier**
+* Cette session &quot;possède&quot; le **panier**
 
    * exécute les ajouts/suppressions/etc. ;
-   * effectue les divers calculs sur le panier;
+   * effectue les divers calculs sur le panier ;
 
       `commerceSession.getProductPrice(Product product)`
 
@@ -169,6 +172,7 @@ Les données produit gérées dans hybris doivent être disponibles dans AEM. Le
 * L’extension hybris fournit un importateur d’interrogations (hybris scheme), qui peut être configuré pour importer les modifications dans AEM selon un intervalle de temps donné spécifié en secondes (par exemple, toutes les 24 heures) :
 
    * 
+
       ```
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
@@ -224,6 +228,7 @@ Bien que les produits (en général) peuvent présenter plusieurs axes de varian
    >
 1. plus un
    >   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
+
 >
 
 
@@ -238,7 +243,7 @@ En général :
 
 Il doit y avoir un mappage 1:1 entre les variations de produit et les nœuds de données de produit.
 
-Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit comporte des variations S, M et L, les données du produit peuvent être :
+Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit présente des variations S, M et L, les données du produit peuvent être les suivantes :
 
 ```shell
 etc
@@ -555,9 +560,9 @@ L’intégration est fournie entre AEM et différents systèmes eCommerce. Elle 
 
    AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
 
-* Comptes d&#39;esclaves
+* Comptes en hybris
 
-   AEM crée un compte esclave en hybris pour chaque acheteur. Le nom d’utilisateur du compte esclave est identique au nom d’utilisateur AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
+   AEM crée un compte correspondant (subordonné) en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui d’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
 
 #### Utilisateurs préexistants {#pre-existing-users}
 
