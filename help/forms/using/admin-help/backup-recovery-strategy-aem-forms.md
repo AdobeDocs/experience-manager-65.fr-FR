@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1520'
+ht-degree: 92%
 
 ---
 
@@ -31,9 +34,9 @@ Adobe Experience Manager (AEM) fait partie intégrante d’AEM forms. Par consé
 
 La stratégie de sauvegarde d’AEM forms implique deux types de sauvegardes :
 
-**Image système :** Sauvegarde système complète que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si le disque dur ou l’ordinateur entier ne fonctionne plus. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
+**Image système :** Sauvegarde complète du système que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si le disque dur ou l&#39;ordinateur entier cesse de fonctionner. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
 
-**Données spécifiques à AEM forms :** Les données d’application existent dans la base de données, le  global  (GDS) et le référentiel AEM. Elles doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
+**Données spécifiques à AEM forms :** Les données d’application existent dans la base de données, l’Enregistrement de Document global (GDS) et le référentiel AEM et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
 
 >[!NOTE]
 >
@@ -85,7 +88,7 @@ Avant de redémarrer le serveur Forms après une récupération, procédez comme
    1. Cliquez sur **Admin Options** (Options d’administration).
    1. Cliquez sur **Start** (Démarrer) pour synchroniser les actifs du référentiel.
 
-1. Dans un environnement organisé en grappes, le nœud maître (par rapport à AEM) doit être au-dessus des nœuds esclaves.
+1. Dans un environnement organisé en grappes, le noeud principal (par rapport à AEM) doit être supérieur aux noeuds secondaires.
 1. Assurez-vous qu’aucun processus n’est initialisé à partir de sources internes ou externes telles que les initiateurs de processus Web, SOAP ou EJB jusqu’à ce que le fonctionnement normal du système soit validé.
 
 Si la base de données principale d’AEM forms est déplacée ou modifiée, consultez les guides d’installation correspondant à votre serveur d’applications pour connaître les détails de mise à jour des informations de connexion des sources de données IDP_DS et EDC_DS pour AEM Forms.
