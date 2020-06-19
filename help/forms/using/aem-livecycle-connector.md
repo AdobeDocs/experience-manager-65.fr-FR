@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1029'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +31,7 @@ AEM LiveCycle Connector fait partie du [package de module complémentaire AEM Fo
 
 Bien que les propriétés soient explicites, les plus importantes sont les suivantes :
 
-* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que LiveCycle et AEM communiquent via https, AEM à la JVM suivante
+* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que LiveCycle et AEM communiquent via https, début AEM avec la JVM suivante
 
    ```
    argument
@@ -153,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 La plupart des Services de document de LiveCycle nécessitent une authentification. Vous pouvez utiliser l’une des options suivantes pour démarrer ces services sans fournir d’informations d’identification explicites dans le code :
 
-### Configuration de liste blanche {#whitelist-configuration}
+### Configuration de la Liste autorisée {#allowlist-configuration}
 
 La configuration du SDK client LiveCycle contient un paramètre sur les noms de service. Il s’agit d’une liste de services pour lesquels la logique d’appel utilise des informations d’identification prêtes à l’emploi. Si vous ajoutez, par exemple, des services DirectoryManager (qui font partie de l’API de gestion d’utilisateur) à cette liste, tout code client peut utiliser directement le service et la couche d’appel transmet automatiquement les informations d’identification configurées dans le cadre de la demande envoyée au serveur LiveCycle.
 
