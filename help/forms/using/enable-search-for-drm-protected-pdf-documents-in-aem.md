@@ -11,7 +11,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '722'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +30,7 @@ La recherche AEM peut rechercher et localiser des ressources AEM et effectuer un
 
 * Si vous utilisez AEM Forms sur OSGi :
 
-   * Installez le [package de l’indexeur de Document Security AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) sur le serveur AEM Forms.
+   * Installez le [package de l’indexeur de Document Security AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) sur le serveur AEM Forms.
 
    * Vérifiez qu’un serveur AEM Forms on JEE est opérationnel et que la sécurité des documents est installée sur le serveur AEM Forms on JEE approprié. Le serveur AEM Forms on JEE est nécessaire pour indexer le document protégé.
 
@@ -37,12 +40,12 @@ La recherche AEM peut rechercher et localiser des ressources AEM et effectuer un
    * For AEM Forms on OSGi, the bundles are listed at https://&#39;[server]:[port]&#39;/system/console/bundles.
    * For AEM Forms on JEE, the bundles are listed at https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles. Par exemple, https://localhost:8080/lc/system/console/bundles.
 
-* Mettez le package *sun.util.calendar* sur liste blanche. Pour mettre le package sur liste blanche, procédez comme suit :
+* Ajoutez le package *sun.util.calendar* à la liste autorisée. Pour ajouter le package à la liste autorisée, procédez comme suit :
 
-   1. Ouvrez la console Web AEM. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
+   1. Ouvrez la console web AEM. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Recherchez et ouvrez **la configuration du pare-feu de désérialisation.**
 
-   1. Ajoutez le package sun.util.calendar au champ de préfixes de package ou de classes Liste blanche, puis cliquez sur **Enregistrer**.
+   1. Add the sun.util.calendar package to the Allowlisted classes or package prefixes field and click **Save**.
 
 ### Établir une connexion sécurisée entre les piles AEM Forms JEE et OSGi {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -64,7 +67,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
 #### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
 1. Ouvrez la console Web AEM. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des propriétés suivantes :
 
