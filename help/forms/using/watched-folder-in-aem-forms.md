@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
 workflow-type: tm+mt
 source-wordcount: '7153'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,9 @@ Un administrateur peut configurer un dossier réseau, appelé dossier de contrô
 
 Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de contrôle sur le système de fichiers :
 
-* Lors de la configuration des propriétés d’un nœud de configuration du dossier de contrôle, indiquez le chemin d’accès complet du répertoire parent dans la propriété folderPath (chemin du fichier) et ajoutez le nom du dossier de contrôle à créer, comme indiqué dans l’exemple suivant :`C:/MyPDFs/MyWatchedFolder`   Le dossier `MyWatchedFolder` n’existe pas, AEM Forms tente de créer un dossier à l’emplacement spécifié.
+* Lors de la configuration des propriétés d’un noeud de configuration du dossier de contrôle, saisissez le chemin d’accès complet du répertoire parent dans la propriété folderPath et ajoutez le nom du dossier de contrôle à créer, comme indiqué dans l’exemple suivant : `C:/MyPDFs/MyWatchedFolder`
+Le 
+`MyWatchedFolder`n’existe pas, les AEM Forms tentent de créer le dossier à l’emplacement spécifié.
 
 * Créez un dossier dans le système de fichiers avant de configurer un point de fin Watched Folder, puis indiquez son chemin d’accès complet dans la propriété folderPath (chemin de fichier). Pour plus d’informations sur la propriété folderPath, voir [Propriétés de dossier de contrôle](#watchedfolderproperties).
 
@@ -52,6 +54,7 @@ Pour configurer un dossier de contrôle, créez un nœud de configuration du dos
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
+
    Pour obtenir la liste complète des prises en charge, voir [Propriétés du dossier de contrôle](#watchedfolderproperties).
 
 1. Cliquez sur **Enregistrer tout**. Après la création du nœud et l’enregistrement des propriétés. Les `input`dossiers, `result`, `failure``preserve`et `stage`dossiers sont créés à l’emplacement spécifié dans la propriété `folderPath` .
@@ -140,6 +143,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
    * %l = milliseconde
    * %R = nombre aléatoire (entre 0 et 9)
    * %P = ID de processus ou de travail
+
    Par exemple, s’il est 20 h, que nous sommes le 17 juillet 2009 et que vous définissez C:/Test/WF0/failure/%Y/%M/%D/%H/, le dossier de résultat est alors C:/Test/WF0/failure/2009/07/17/20
 
    Si le chemin d’accès n’est pas absolu mais relatif, le dossier est créé dans le dossier de contrôle. La valeur par défaut est result/%Y/%M/%D/, qui correspond au dossier des résultats dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
@@ -150,7 +154,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * **failureFolderName (chaîne)** : le dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement est toujours lié au dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. La valeur par défaut est failure/%Y/%M/%D/.
 * **preserveFolderName (chaîne) :** l’emplacement où les fichiers sont stockés après un traitement réussi. Ce chemin d’accès de répertoire peut être absolu, relatif ou null. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
-* **batchSize (Long)** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.   
+* **batchSize (Long)** : le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.  
 
    Les paramètres Intervalle de répétition et Taille du lot permettent de déterminer le nombre de fichiers sélectionnés par Watched Folder pour chaque analyse. Watched Folder utilise un pool de threads Quartz pour analyser le dossier input. Le pool de threads est partagé avec d’autres services. Si l’intervalle d’analyse défini est court, les threads analysent fréquemment le dossier input. Si des fichiers sont déposés régulièrement dans le dossier de contrôle, il est préférable que l’intervalle d’analyse soit court. Si au contraire, des fichiers y sont déposés peu fréquemment, utilisez un intervalle d’analyse plus long afin que les autres services puissent utiliser les threads. 
 
@@ -162,7 +166,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [À propos des mod
 
 * **overwriteDuplicateFilename (booléen)** : lorsque cet attribut est défini sur True, les fichiers du dossier des résultats et du dossier de fichiers conservés sont remplacés. Lorsqu’il est défini sur false, les fichiers et les dossiers pourvus d’un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
 * **preserveOnFailure (Booléen)** : conserve les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
-* **inputFilePattern (chaîne)** : spécifie le modèle des fichiers d’entrée pour un dossier de contrôle. Crée une liste blanche des fichiers.
+* **inputFilePattern (chaîne)** : spécifie le modèle des fichiers d’entrée pour un dossier de contrôle. Crée une liste autorisée des fichiers.
 * **asynch (booléen)** : identifie le type d’appel comme étant asynchrone ou synchrone. La valeur par défaut est True (asynchrone). Le traitement du fichier est une tâche qui mobilise des ressources, maintenez la valeur de l’indicateur d’asynch sur True pour éviter d’étouffer le thread principal de la tâche de numérisation. Dans un environnement organisé en grappes, il est essentiel de maintenir l’indicateur True pour activer l’équilibrage de charge pour les fichiers en cours de traitement sur les serveurs disponibles. Si l’indicateur est défini sur False, la tâche d’analyse tente de procéder à un traitement pour chaque fichier/dossier de premier niveau de manière séquentielle dans son propre thread. Ne définissez pas l’indicateur sur False sans raison particulière, par exemple, traitement sur flux selon une configuration sur un serveur unique.
 
 >[!NOTE]
@@ -537,6 +541,7 @@ Lorsque Watched Folder ne peut pas traiter les fichiers source dans le dossier s
 
    * Modifiez la propriété includeFilePattern du dossier de contrôle en une valeur ne correspondant à aucun nouveau fichier d’entrée (par exemple, entrez NOMATCH).
    * Mettez un terme au processus de création de nouveaux fichiers d’entrée.
+
    Patientez jusqu’à ce qu’AEM Forms récupère et traite tous les fichiers. La majorité des fichiers devra être récupérée et tous les nouveaux fichiers d’entrée correctement traités. Le temps nécessaire à Watched Folder pour récupérer et traiter les fichiers dépendra de la durée de l’opération pour l’appel, ainsi que du nombre de fichiers à récupérer.
 
 1. Déterminez les fichiers ne pouvant pas être traités. Si vous avez suffisamment attendu, que vous avez terminé l’étape précédente et qu’il reste encore des fichiers non traités dans le dossier stage, passez à l’étape suivante.
