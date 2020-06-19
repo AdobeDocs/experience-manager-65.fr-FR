@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 55%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur de création de correspondance.
 
-Le scénario de ce explique comment créer un bouton dans l’interface utilisateur de création de correspondance pour partager une lettre en tant que PDF de révision joint à un courrier électronique.
+Le scénario de ce document explique comment créer un bouton dans l’interface utilisateur de création de correspondance pour partager une lettre en tant que révision PDF jointe à un courrier électronique.
 
 ### Conditions préalables {#prerequisites}
 
@@ -90,7 +93,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
    </extensionsConfig>
    ```
 
-1. Pour envoyer la lettre par courrier électronique, vous pouvez utiliser le flux de travail LiveCycle Forms. Ajouter une balise customAction sous la balise modelExtension dans acmExtensionsConfig.xml comme suit :
+1. Pour envoyer la lettre par courrier électronique, vous pouvez utiliser le flux de travail LiveCycle Forms. Ajoutez une balise customAction sous la balise modelExtension dans acmExtensionsConfig.xml comme suit :
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -109,14 +112,14 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
    | tooltip | Texte de l’info-bulle du bouton, qui s’affiche lorsque l’utilisateur passe le pointeur de la souris sur le bouton. |
    | styleName | Nom du style personnalisé appliqué au bouton d’action. |
    | permissionName | L’action correspondante s’affiche uniquement si l’utilisateur dispose de l’autorisation spécifiée par permissionName. Lorsque vous spécifiez la valeur permissionName en tant que `forms-users`, tous les utilisateurs ont accès à cette option. |
-   | actionHandler | Nom qualifié complet de la classe ActionHandler appelée lorsque l&#39;utilisateur clique sur le bouton. |
+   | actionHandler | Nom complet de la classe ActionHandler appelée lorsque l&#39;utilisateur clique sur le bouton. |
 
    Outre les paramètres ci-dessus, des configurations supplémentaires associées à une action personnalisée customAction peuvent exister. Ces configurations supplémentaires sont mises à la disposition du gestionnaire par le biais de l’objet CustomAction.
 
    | **Nom** | **Description** |
    |---|---|
    | serviceName | Si une action personnalisée contient une balise enfant nommée serviceName, puis en cliquant sur le bouton/lien approprié, un processus est appelé avec le nom représenté par la balise serviceName. Assurez-vous que ce processus a la même signature que le post-processus de lettre. Ajoutez le préfixe « Flux de travail Forms - > » au nom du service. |
-   | Paramètres contenant le préfixe cm_ dans le nom de balise | Si une action personnalisée contient une balise enfant dont le nom commence par cm_, dans le post-processus (qu’il s’agisse du post-processus de lettre ou du processus spécial représenté par la balise serviceName), ces paramètres sont disponibles dans le code XML d’entrée sous la balise appropriée avec le préfixe cm_ supprimé. |
+   | Paramètres contenant le préfixe cm_ dans le nom de balise | Si une action personnalisée contient une balise enfant dont le nom commence par cm_, ces paramètres sont disponibles dans le code XML d’entrée sous la balise appropriée avec le préfixe cm_, dans le post-processus (qu’il s’agisse du post-processus de lettre ou du processus spécial représenté par la balise serviceName). |
    | actionName | Chaque fois qu’un post-processus est dû à un clic, le code XML envoyé contient une balise spéciale avec un nom sous la balise avec le nom de l’action de l’utilisateur. |
 
 1. Cliquez sur **Enregistrer tout**.
@@ -186,7 +189,7 @@ Concernant le traitement de l’action personnalisée, créez un recouvrement du
 La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton comprend la logique pour :
 
 * Rendre l’action ajoutée visible/invisible : via le remplacement de la fonction actionVisible().
-* Activation/désactivation de l’action nouvellement ajoutée : en remplaçant la fonction actionEnabled().
+* Activation/désactivation de l’action ajoutée : en remplaçant la fonction actionEnabled().
 * Gestion réelle de l’action lorsque l’utilisateur clique sur le bouton : en remplaçant l’implémentation de la fonction handleAction().
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de`. Le cas échéant, connectez-vous en tant qu’administrateur.
@@ -212,7 +215,7 @@ La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton com
    1. Cliquez sur **OK**.
    1. Cliquez sur **Enregistrer tout**.
 
-1. Dans le dossier js, créez un fichier nommé ccrcustomization.js avec le code de gestion de l’action du bouton à l’aide des étapes suivantes :
+1. Dans le dossier js, créez un fichier nommé ccrcustomization.js avec le code de traitement d’action du bouton en procédant comme suit :
 
    1. Right-click the **js** folder at the following path and select **Create > Create File**:
 
@@ -346,6 +349,7 @@ Le processus LCA s’exécute sur le serveur LiveCycle et requiert l’adresse d
    * **URL** du serveur : URL du serveur LC dont le service Send For Review est utilisé par le code du gestionnaire d’actions.
    * **Nom d&#39;utilisateur**: Nom d’utilisateur administrateur du serveur LC
    * **Mot de passe** : mot de passe du nom d’utilisateur de l’administrateur.
+
    ![Configuration du SDK client d’Adobe LiveCycle](assets/3_clientsdkconfiguration.png)
 
 #### Installation de LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
@@ -376,7 +380,7 @@ Processus LiveCycle requis qui active le processus du service de messagerie éle
 
 1. Cliquez sur **Importer**.
 
-#### Ajout de ServiceName à la liste du service d’autorisation {#adding-servicename-to-the-whitelisted-service-list}
+#### Adding ServiceName to the Allowlist Service list {#adding-servicename-to-the-allowlist-service-list}
 
 Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu’il accède.
 
@@ -403,7 +407,7 @@ Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle
 
 #### Configuration du service DSC {#configure-the-dsc-service}
 
-Pour utiliser l’API Correspondence Management, téléchargez le fichier DSCSample.jar (joint dans ce dans le cadre de components.zip) et téléchargez-le sur le serveur LiveCycle. Une fois le fichier DSCSample.jar téléchargé sur le serveur LiveCycle, le serveur AEM utilise le fichier DSCSample.jar pour accéder à l’API renderLetter.
+Pour utiliser l’API Correspondence Management, téléchargez le fichier DSCSample.jar (joint à ce document dans le cadre de components.zip) et téléchargez-le sur le serveur LiveCycle. Une fois le fichier DSCSample.jar téléchargé sur le serveur LiveCycle, le serveur AEM utilise le fichier DSCSample.jar pour accéder à l’API renderLetter.
 
 Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
@@ -417,18 +421,19 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
    * **crx.username**= nom d’utilisateur AEM
    * **crx.password**= mot de passe AEM
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >À chaque modification apportée au côté serveur, redémarrez le serveur LiveCycle. Pour plus d’informations sur la création de votre propre composant LiveCycle, voir [Extension du logiciel LiveCycle ES via le développement d’un DSC personnalisé](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
 
-   Le fichier DSCSample.jar utilise l’API renderLetter. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Le fichier DSCSample.jar utilise l’API renderLetter. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importer DSC vers LiveCycle {#import-dsc-to-livecyle}
 
-Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu d’une lettre sous forme d’octets PDF à partir de données XML fournies par C en entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu de la lettre en tant qu’octets PDF à partir de données XML que C fournit en entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Démarrer Workbench et connectez-vous.
-1. Select **Window > Show Views > Components**. Le de composants est ajouté à Workbench ES2.
+1. Select **Window > Show Views > Components**. La vue Composants est ajoutée à Workbench ES2.
 
 1. Right-click **Components** and select **Install Component**.
 
