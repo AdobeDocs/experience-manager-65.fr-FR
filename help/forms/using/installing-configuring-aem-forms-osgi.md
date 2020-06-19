@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1875'
+ht-degree: 85%
 
 ---
 
@@ -36,7 +39,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 ## Configuration requise {#system-requirements}
 
-Avant de commencer à installer et à configurer la fonctionnalité de capture de données d’AEM Forms, assurez-vous que :
+Avant de commencer à installer et à configurer la fonctionnalité de capture de données des AEM Forms, assurez-vous que :
 
 * Le matériel et l’infrastructure logicielle sont en place. Pour obtenir une liste détaillée des matériels et logiciels pris en charge, voir [Conditions techniques applicables](/help/sites-deploying/technical-requirements.md).
 
@@ -52,7 +55,7 @@ Avant de commencer à installer et à configurer la fonctionnalité de capture d
    * 6 Go d’espace temporaire pour les installations Unix.
 
 * La réplication et la réplication inversée pour les instances de création et de publication sont définies. Pour plus de détails, voir [Réplication](/help/sites-deploying/replication.md).
-* Pour les systèmes UNIX:
+* Pour les systèmes UNIX :
 
    * Installez les packages 32 bits suivants à partir du support d’installation :
 
@@ -94,7 +97,8 @@ Avant de commencer à installer et à configurer la fonctionnalité de capture d
 >[!NOTE]
 >
 >* Si OpenSSL est déjà installé sur le serveur, mettez-le à niveau vers la dernière version.
->* Créez des liens symboliques libcurl.so, libcrypto.so et libssl.so pointant respectivement vers la dernière version des bibliothèques libcurl, libcrypto et libssl.
+>* Créez des liens symboliques libcurl.so, libcrypto.so et libssl.so pointant vers la dernière version des bibliothèques libcurl, libcrypto et libssl, respectivement.
+
 >
 
 
@@ -110,13 +114,13 @@ Le package du module complémentaire AEM Forms est une application déployée s
 1. Connectez-vous au [serveur AEM](https://localhost:4502) en tant qu’administrateur, puis ouvrez le [partage de package](https://localhost:4502/crx/packageshare). Vous avez besoin d’un Adobe ID pour vous connecter au partage de package.
 1. Dans le [partage de package AEM](https://localhost:4502/crx/packageshare/login.html), recherchez les **packages de modules complémentaires AEM 6.5 Forms**, cliquez sur le package correspondant à votre système d’exploitation, puis sur **Télécharger**. Lisez et acceptez l’accord de licence, puis cliquez sur **OK**. Le téléchargement démarre. Une fois le téléchargement effectué, le mot **Téléchargé** apparaît en regard du package.
 
-   Vous pouvez également utiliser le numéro de version pour rechercher un package de module complémentaire. Pour obtenir le numéro de version du dernier package, voir l’article [Versions AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+   Vous pouvez également utiliser le numéro de version pour rechercher un package de module complémentaire. Pour obtenir le numéro de version du dernier package, voir l’article [Versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
 
 1. Une fois le téléchargement terminé, cliquez sur **Téléchargé**. Vous êtes redirigé vers le gestionnaire de package. Dans le gestionnaire de packages, recherchez le package téléchargé, puis cliquez sur **Installer**.
 
-   Si vous téléchargez manuellement le package à l’aide du lien direct répertorié dans l’article [Versions AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html), connectez-vous au gestionnaire de package, cliquez sur **Télécharger le package**, sélectionnez le package téléchargé et cliquez sur Télécharger. Une fois le package téléchargé, cliquez sur son nom, puis sur **Installer**. 
+   Si vous téléchargez manuellement le package à l’aide du lien direct répertorié dans l’article [Versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html), connectez-vous au gestionnaire de package, cliquez sur **Télécharger le package**, sélectionnez le package téléchargé et cliquez sur Télécharger. Une fois le package téléchargé, cliquez sur son nom, puis sur **Installer**. 
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED ne s’affichent plus dans le `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` fichier et que le journal soit stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, patientez jusqu&#39;à ce que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d&#39;apparaître dans le `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` fichier et que le journal soit stable.
 1. Répétez les étapes 1 à 4 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}
@@ -127,12 +131,12 @@ AEM Forms comporte quelques configurations obligatoires et facultatives. Les con
 
 #### Configuration des bibliothèques RSA et BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Effectuez les étapes suivantes sur toutes les instances d’auteur et de publication pour redémarrer et déléguer les bibliothèques :
+Effectuez les étapes suivantes sur toutes les instances d’auteur et de publication pour démarrer et déléguer les bibliothèques :
 
 1. Arrêtez l’instance AEM sous-jacente.
 1. Open the `[AEM installation directory]\crx-quickstart\conf\sling.properties` file for editing.
 
-   Si vous aviez l’habitude `[AEM installation directory]\crx-quickstart\bin\start.bat` de d’AEM, modifiez le fichier sling.properties situé dans `[AEM_root]\crx-quickstart\`.
+   If you used `[AEM installation directory]\crx-quickstart\bin\start.bat` to start AEM, then edit the sling.properties located at `[AEM_root]\crx-quickstart\`.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -146,18 +150,18 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 #### Configurer l’agent de sérialisation {#configure-the-serialization-agent}
 
-Procédez comme suit sur toutes les instances de création et de publication pour placer le package sur liste blanche :
+Effectuez les étapes suivantes sur toutes les instances d’auteur et de publication pour ajouter le package à la liste autorisée :
 
 1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** et ouvrez la configuration.
-1. Ajoutez le package **sun.util.calendar** dans le champ **Liste blanche**. Cliquez sur **Enregistrer**.
+1. Add the **sun.util.calendar** package to the **allowlist** field. Cliquez sur **Enregistrer**.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
 
 ### Configurations post-installation facultatives {#optional-post-installation-configurations}
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. If you use [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
+Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. If you use [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
 
 1. Configurez l’accès à AEM Forms:
 
@@ -165,7 +169,7 @@ Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pou
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configurez le service de filtrage des référents :
 
@@ -175,13 +179,13 @@ Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pou
 
 La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès aux données, réduire le temps de réponse et améliorer les vitesses d’entrée/sortie (E/S). Le cache de formulaires adaptatifs stocke uniquement le contenu HTML et la structure JSON d’un formulaire adaptatif sans enregistrer les données pré-renseignées. Cela permet de réduire le temps nécessaire pour effectuer le rendu d’un formulaire adaptatif.
 
-* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
+* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
 * Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
 
-Effectuez les étapes suivantes pour configurer le cache des formulaires adaptatifs :
+Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
 1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   Cliquez sur **Enregistrer**.
+1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.  Cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
@@ -218,6 +222,6 @@ AEM Forms s’intègre à Adobe Target, une solution Adobe Marketing Cloud, 
 Vous avez configuré un environnement pour utiliser les fonctionnalités de capture de données AEM Forms. Maintenant, les prochaines étapes pour utiliser cette fonctionnalité sont les suivantes :
 
 * [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md)
-* [Création de votre premier formulaire PDF](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Création de votre premier formulaire PDF](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65_fr)
 * [Présentation des formulaires HTML5](/help/forms/using/introduction.md)
 
