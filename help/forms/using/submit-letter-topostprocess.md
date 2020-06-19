@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 66%
 
 ---
 
@@ -23,15 +26,15 @@ Les agents peuvent associer et exécuter les flux de travaux de post-traitement 
 
 ![Post-traitement](assets/ppoverview.png)
 
-Pour associer les post-traitements aux lettres et communications interactives, vous devez commencer par configurer les post-traitements. Deux types de  peuvent être exécutés sur les lettres envoyées :
+Pour associer les post-traitements aux lettres et communications interactives, vous devez commencer par configurer les post-traitements. Deux types de workflows peuvent être exécutés sur les lettres envoyées :
 
-1. **Processus des formulaires :** Il s’agit du  de gestion de processus d’AEM Forms sur JEE. Instructions for setting up [Forms Workflow](#formsworkflow).
+1. **Processus des formulaires :** Il s’agit des workflows de gestion des processus AEM Forms on JEE. Instructions for setting up [Forms Workflow](#formsworkflow).
 
-1. **Processus AEM :** Le  AEM peut également être utilisé comme post-processus pour les lettres envoyées. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
+1. **Processus AEM :** Les workflows AEM peuvent également être utilisés comme post-traitements pour les lettres envoyées. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Processus des formulaires {#formsworkflow}
 
-1. Dans AEM, ouvrez la configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez la configuration de la console Web d’Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Configuration du gestionnaire](assets/2configmanager-1.png)
 
@@ -43,9 +46,9 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 1. Indiquez le nom d’utilisateur et le mot de passe.
 1. Assurez-vous que sun.util.calendar est ajouté à la configuration du pare-feu de désérialisation.
 
-   Accédez à la Configuration du pare-feu de désérialisation et sous Classes de préfixes de package autorisés, ajoutez sun.util.calendar.
+   Accédez à Configuration du pare-feu de désérialisation et sous des classes Placées sur l&#39;liste autorisée de préfixes de package, ajoutez sun.util.calendar.
 
-1. Désormais, vos serveurs sont mappés et les post-traitements dans AEM Forms sur JEE sont disponibles dans l’interface utilisateur d’AEM lors de la création de lettres.
+1. Désormais, vos serveurs sont mappés et les post-traitements dans AEM Forms on JEE sont disponibles dans l’interface utilisateur d’AEM lors de la création de lettres.
 
    ![Création de l’écran des lettres à l’aide des post-traitements répertoriés](assets/0configmanager.png)
 
@@ -57,11 +60,12 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
    Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
 
-   1. **inPDFDoc (paramètre de  PDF) :** Un PDF  comme entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
-   1. **inXMLDoc (paramètre de données XML) :** Un XML  comme entrée. Cette entrée contient les données saisies par l’utilisateur sous la forme XML.
-   1. **inXDPDoc (paramètre de  XDP) :** Un XML  comme entrée. Cette entrée contient une mise en page sous-jacente (XDP).
-   1. **inAttachmentDocs (paramètre de  de pièce jointe) :** Un paramètre d’entrée . Cette entrée contient toutes les pièces jointes comme entrée.
-   1. **redirectURL (sortie de l’URL de redirection) :** Type de sortie indiquant l’URL vers laquelle rediriger.
+   1. **inPDFDoc (paramètre de document PDF) :** document PDF en entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
+   1. **inXMLDoc (paramètre de données XML) :** document XML en tant qu’entrée. Cette entrée contient des données saisies par l’utilisateur sous la forme XML.
+   1. **inXDPDoc (paramètre de document XDP) :** document XML en tant qu’entrée. Cette entrée contient une mise en page sous-jacente (XDP).
+   1. **inAttachmentDocs (paramètre de Documents de pièce jointe) :** Paramètre d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
+   1. **redirectURL (Sortie d’URL de redirection) :** Type de sortie indiquant l’URL vers laquelle effectuer la redirection.
+
    Votre processus des formulaires doit présenter un paramètre de document PDF ou un paramètre de données XML en tant qu’entrée avec un nom identique à celui spécifié dans les **[!UICONTROL configurations de Correspondence Management]**. Ces informations sont requises pour que le processus soit répertorié dans la liste déroulante Post-traitement.
 
 ## Paramètres de l’instance de publication {#settings-on-the-publish-instance}
@@ -98,12 +102,12 @@ Les instances de lettre enregistrées peuvent faire l’objet d’une manipulati
   <tr>
    <td>List getAllLetterInstances(Query) throws ICCException; </td>
    <td>getAllLetterInstances </td>
-   <td>Cette API récupère les instances de lettre en fonction du paramètre  d’entrée. Pour récupérer toutes les instances de lettre, le paramètre de requête doit être transmis comme nul.<br /> </td>
+   <td>Cette API récupère les instances de lettre en fonction du paramètre de requête d’entrée. Pour récupérer toutes les instances de lettre, le paramètre de requête doit être transmis comme nul.<br /> </td>
   </tr>
   <tr>
    <td>Public Boolean letterInstanceExists(String letterInstanceName) throws ICCException; </td>
    <td>letterInstanceExists </td>
-   <td>Vérifier l’existence d’une instance de lettre selon le nom donné </td>
+   <td>Vérifier si une instance de lettre existe selon le nom donné </td>
   </tr>
  </tbody>
 </table>
