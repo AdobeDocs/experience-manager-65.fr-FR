@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 52%
 
 ---
 
@@ -30,7 +33,7 @@ Dans cette procédure :
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the credential and keystore:
 
-   `keytool -genkey -dname "CN=`*Nom *d’hôte`, OU=`*Nom* du `, O=`*groupe Nom *du`,L=`*Nom* dela ville NomÉtatCode du pays&quot;key_passwordmotDepassenom_stockage `, S=`**`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
+   `keytool -genkey -dname "CN=`*Nom *d’hôte`, OU=`** Nom `, O=`*de *Société Nom`,L=`** Ville NomÉtat Code du pays&quot; key_passwordnom_stockage`, S=`* *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
 
    >[!NOTE]
    >
@@ -44,7 +47,7 @@ Dans cette procédure :
 
 1. Copy the *keystorename*.keystore to the `[appserver root]/server/[type]/conf` directory by typing one of the following commands:
 
-   * (Windows Single Server) `copy``keystorename.keystore[appserver root]\standalone\configuration`
+   * (Windows Single Server) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
    * Copie (grappe Windows Server) `keystorename.keystore[appserver root]\domain\configuration`
    * (Serveur unique Linux) `cp keystorename.keystore [appserver root]/standalone/configuration`
    * (Grappe de serveurs Linux) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
@@ -53,7 +56,7 @@ Dans cette procédure :
 1. Exportez le fichier de certificat en exécutant la commande suivante :
 
    * (Serveur unique) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/standalone/configuration/keystorename.keystore`
-   * (grappe de serveurs) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
+   * (Grappe de serveurs) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
 
 1. Saisissez le *mot_de_passe_clés* lorsque vous êtes invité à saisir un mot de passe.
 1. Copy the AEMForms_cert.cer file to the *[appserver root]\conf *directory by typing the following command:
@@ -75,10 +78,10 @@ Dans cette procédure :
 
 1. Importez le certificat en saisissant la commande suivante :
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME*`\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Type `changeit` as the password. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
-1. Lorsque vous y êtes invité `Trust this certificate? [no]`:, tapez `yes`. La confirmation « Certificate was added to keystore » s’affiche.
+1. Lorsque vous êtes invité à saisir `Trust this certificate? [no]`:, tapez `yes`. La confirmation « Certificate was added to keystore » s’affiche.
 1. Si vous vous connectez via SSL à partir de Workbench, vous devez installer le certificat sur le serveur Workbench.
 1. Dans un éditeur de texte, ouvrez les fichiers suivants pour les modifier :
 
@@ -111,7 +114,7 @@ Dans cette procédure :
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
-   * **Pour la grappe de serveurs,** dans la racine [du serveur d’]applications \domain\configuration\host.xml sur tous les noeuds, ajoutez ce qui suit après la section &lt;security-realms> :
+   * **Pour la grappe de serveurs,** dans la racine [du]serveur d’applications \domain\configuration\host.xml sur tous les noeuds, ajoutez ce qui suit après la section &lt;security-realms> :
 
    ```as3
    <security-realm name="SSLRealm">
@@ -123,7 +126,7 @@ Dans cette procédure :
    </security-realm>
    ```
 
-   On the master node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname>.xml, locate the &lt;server> section present after the following code:
+   On the primary node of the Server Cluster, in the [appserver root]\domain\configuration\domain_&lt;dbname>.xml, locate the &lt;server> section present after the following code:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -166,7 +169,7 @@ Dans cette procédure :
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the keystore and the key:
 
-   `keytool -genkey -dname "CN=`*Nom *d’hôte`, OU=`*Nom* du `, O=`*groupe Nom *du`, L=`*Nom* dela ville NomÉtat CodePays&quot;--clé_motDepassenom_stockage `, S=`**`, C=`**`-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
+   `keytool -genkey -dname "CN=`*Nom *d’hôte`, OU=`** Nom `, O=`*de *Société Nom`, L=`** Ville NomÉtat Code du pays&quot;--key_passwordnom_stockage_clés`, S=`* *`, C=`**`-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
 
    >[!NOTE]
    >
@@ -174,7 +177,7 @@ Dans cette procédure :
 
 1. Saisissez le commande suivante afin de générer une demande de certificat à envoyer à l’autorité de certification :
 
-   `keytool -certreq -alias` &quot;AEMForms Cert&quot; `-keystore`*nom_stockage_clés *`.keystore -file`*AEMFormscertRequest.csr*
+   `keytool -certreq -alias` &quot;AEMForms Cert&quot; `-keystore`*nom_stockage *de clés`.keystore -file`*AEMFormscertRequest.csr*
 
 1. Dès que votre demande de certificat est remplie, passez à la procédure suivante.
 
@@ -192,7 +195,7 @@ Dans cette procédure :
 
 1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to import the credential into the keystore:
 
-   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename*`.keystore`
+   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
