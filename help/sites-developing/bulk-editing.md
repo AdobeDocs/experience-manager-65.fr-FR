@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 88%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 La [modification des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) vous permet de modifier les propriétés de plusieurs pages à la fois.
 
-En raison de la possibilité de valeurs différentes, les propriétés de page ne sont, par défaut, pas activées pour la modification en masse. Elles doivent être explicitement ajoutées à la liste blanche (activé). Lorsque vous définissez les propriétés de page disponibles pour la modification en masse, vous devez prendre en compte certaines répercussions, par exemple :
+En raison de la possibilité de valeurs différentes, les propriétés de page ne sont, par défaut, pas activées pour la modification en masse. Ils doivent être explicitement autorisés (activés). Lorsque vous définissez les propriétés de page disponibles pour la modification en masse, vous devez prendre en compte certaines répercussions, par exemple :
 
 * Certains champs sont généralement uniques, par exemple un titre de page. Vous devez décider s’il est utile d’activer ces champs pour la modification en masse, lorsqu’une valeur sera appliquée.
 * Certains champs peuvent posséder plusieurs valeurs, ce qui nécessite une représentation significative lors du rendu.
 
-   Par exemple, une case à cocher indiquant « Prêt pour publication ». Il peut y avoir plusieurs valeurs avant la modification en bloc (par exemple, prêt, en révision, en cours).
+   Par exemple, une case à cocher indiquant « Prêt pour publication ». Il peut y avoir plusieurs valeurs avant la modification en bloc (par exemple, prêtes, en révision, en cours).
 
 >[!CAUTION]
 >
@@ -61,16 +64,16 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
 
 1. En utilisant CRXDE Lite (ou une méthode équivalente), ouvrez votre composant de page.
 
-   Par exemple: `/apps/core/wcm/components/page/v1/page`
+   Par exemple : `/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour plus d’informations, voir la [documentation relative aux composants de base](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html).
+   >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour plus d’informations, voir la [documentation relative aux composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html).
 
 1. Navigate to the required field within the `cq:dialog` definition.
 1. Définissez la propriété suivante sur le nœud de champ :
 
-   * **Nom**: `allowBulkEdit`
+   * **Name** (Nom) : `allowBulkEdit`
    * **Type**: `Boolean`
    * **Valeur**: `true`
    Par exemple, pour le [composant de base](/help/sites-authoring/default-components-foundation.md) de page standard :
@@ -83,14 +86,14 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
 
    >[!CAUTION]
    >
-   >You ***must*** not change anything in the `/libs` path.
+   >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
    >
-   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
    >
    >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
    >    1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
-   >    1. Make any changes within `/apps`
+   >    1. Apportez les modifications désirées dans `/apps`
 
 
 1. Sélectionnez **Enregistrer tout** pour conserver vos mises à jour.
