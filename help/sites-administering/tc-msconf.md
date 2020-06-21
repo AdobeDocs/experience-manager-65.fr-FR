@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8b6801a4efd45fa49e009e1d6876d21c4cded957
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 81%
 
 ---
 
@@ -42,15 +45,15 @@ La procédure suivante utilise l’interface utilisateur optimisée pour les éc
 
 ## Exemples de configurations du service cloud Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
 
-Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configurations utilisent un compte Microsoft Translation d’évaluation qui permet de traduire gratuitement 2 000 000 caractères par mois au maximum.
+Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configuration utilisent un compte Microsoft Translation d&#39;évaluation qui permet de traduire gratuitement jusqu&#39;à 2 000 000 caractères par mois.
 
 ### Licence d’évaluation de Microsoft Translator {#microsoft-translator-trial-license}
 
-La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration est installé avec le module d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator avec un abonnement gratuit qui permet de traduire 2 000 000 caractères par mois.
+La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration est installé avec le module d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator doté d&#39;un abonnement gratuit qui permet 2 000 000 caractères traduits par mois.
 
 ### Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors {#microsoft-translator-trial-license-geometrixx-outdoors}
 
-La configuration Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors est un exemple de configuration qui est installé avec Geometrixx Outdoors. Cette configuration utilise le même compte Microsoft Translator gratuit que la configuration Licence d’évaluation de Microsoft Translator. Le compte a un abonnement gratuit qui permet de traduire 2 000 000 caractères par mois.
+La configuration Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors est un exemple de configuration qui est installé avec Geometrixx Outdoors. Cette configuration utilise le même compte Microsoft Translator gratuit que la configuration Licence d’évaluation de Microsoft Translator. Le compte a un abonnement gratuit qui permet 2 000 000 caractères traduits par mois.
 
 Cette configuration de Microsoft Translator est optimisée pour l’utilisation avec le type de contenu de l’exemple de site Geometrixx Outdoors.
 
@@ -79,6 +82,6 @@ Les pages de configuration de Microsoft Traduction fournissent un lien pratique
 
 Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Use the method of [activating a complete section (tree)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) to activate the repository nodes that store the Microsoft Translator or third-party cloud service configurations. Les nœuds se trouvent sous les nœuds parents suivants :
 
-* Service de traduction Microsoft : /etc/cloudservices/msft-translation
+* Service de traduction Microsoft : /libs/settings/cloudconfigs/translation/msft-translation
 * Traduction tierce : /etc/cloudservices/machine-translation
 
