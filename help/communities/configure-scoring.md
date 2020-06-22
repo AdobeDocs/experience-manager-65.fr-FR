@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Scores et insignes essentiels {#scoring-and-badges-essentials}
 
-La fonction de notation et de badges des communautés AEM permet d’identifier et de récompenser les membres de la communauté.
+La fonction de notation et de badges AEM Communities permet d&#39;identifier et de récompenser les membres de la communauté.
 
 Les détails de la configuration de la fonction sont décrits dans la section
 
@@ -102,7 +102,7 @@ Pour configurer rapidement un fichier slinglog :
 
 
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 Pour afficher les entrées de journal :
 
@@ -118,7 +118,7 @@ Pour afficher les entrées de journal :
 
    * Par exemple, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC pour le score et l&#39;insigne {#ugc-for-scoring-and-badging}
 
@@ -217,7 +217,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
    Comme un utilisateur a gagné deux badges en bronze et qu&#39;il a reçu un badge de modérateur, c&#39;est ainsi que l&#39;utilisateur apparaît avec son entrée sur le forum.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -230,6 +230,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
    >
    >
 * Création d’images de badge uniques pour différents sites AEM
+
 >
 
 
@@ -254,7 +255,7 @@ Pour le site du guide Composants de la communauté, l’utilisateur et son score
 
 Le score est stocké dans la propriété `scoreValue_tl` qui peut directement contenir uniquement une valeur ou faire indirectement référence à un atomicCounter.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### Insigne d&#39;accès UGC {#access-badging-ugc}
 
@@ -270,11 +271,11 @@ Suivi du chemin d’accès au profil de l’utilisateur, qui se termine par un d
 
 #### Badge décerné {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### badge attribué {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Informations supplémentaires {#additional-information}
 
