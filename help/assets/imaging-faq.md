@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 8fa26e1d763950f370ba0adbc048efba612e8afc
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 99%
@@ -109,7 +109,7 @@ Pour pouvoir utiliser l’imagerie dynamique, le compte Dynamic Media Classic ou
 
 Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
 
-Appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition lorsque vous soumettez un ticket de support technique.
+Appuyez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]** Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition lorsque vous soumettez un ticket de support technique.
 
 Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire avec une licence Dynamic Media.
 
@@ -125,17 +125,17 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
 
       Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
 
-       Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
-      Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
+      Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]**
    1. Vérifiez que vous utilisez le CDN via Adobe et non le CDN géré avec une relation directe.
    1. Vérifiez que vous utilisez un domaine dédié, tel que `images.company.com` ou `mycompany.scene7.com`, et non un domaine générique, tel que `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`.
 
       Pour rechercher vos domaines, connectez-vous à votre (vos) compte(s) d’entreprise.
 
-       Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
+      Cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux.]**
 
-      Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**. Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
+      Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié.]** Si vous utilisez actuellement un domaine Dynamic Media Classic générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
    1. Indiquez s’il doit également fonctionner sur HTTP/2.
 
 1. Le support technique vous inscrira sur la liste d’attente des clients de l’imagerie dynamique en se basant sur l’ordre dans lequel les demandes ont été envoyées.
@@ -144,7 +144,7 @@ Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle 
 1. Une fois la procédure achevée, vous en serez informé par l’équipe de support.
 1. Pour tirer pleinement parti des améliorations de performances de l’imagerie dynamique, Adobe recommande de définir le délai d’expiration (TTL) sur 24 heures ou plus. Ce paramètre définit la période pendant laquelle les ressources sont mises en cache par le réseau de diffusion de contenu. Pour modifier ce paramètre :
 
-   1. Si vous utilisez Dynamic Media Classic, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**. Définissez la valeur **[!UICONTROL Délai d’expiration par défaut du cache de client]** sur 24 ou plus.
+   1. Si vous utilisez Dynamic Media Classic, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images.]** Définissez la valeur **[!UICONTROL Délai d’expiration par défaut du cache de client]** sur 24 ou plus.
    1. Si vous utilisez Dynamic Media, [procédez comme suit](config-dynamic.md). Définissez la valeur **[!UICONTROL Expiration]** sur 24 heures ou plus.
 
 ## Dans quel délai puis-je m’attendre à ce que l’imagerie dynamique soit activée pour mon compte ? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
