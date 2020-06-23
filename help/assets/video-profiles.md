@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '3707'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -157,11 +157,11 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 **Pour créer un profil de codage vidéo en vue de la diffusion en continu adaptative** :
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo.]**
 1. Cliquez ou appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil vidéo.
 
 1. Saisissez un nom et une description pour le profil.
-1. Sur la page Créer/Modifier des paramètres prédéfinis de codage vidéo, appuyez sur **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo]**.
+1. Sur la page Créer/Modifier des paramètres prédéfinis de codage vidéo, appuyez sur **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo.]**
 1. Définissez les options audio et vidéo dans l’onglet **[!UICONTROL De base]**.
 Appuyez sur l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
 1. Dans la section Taille de la vidéo, assurez-vous que la case **[!UICONTROL Conserver les proportions]** est cochée.
@@ -169,7 +169,7 @@ Appuyez sur l’icône d’information en regard de chaque option pour accéder 
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**. Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
+   * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto.]** Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
 
    * Pour visualiser plus facilement la taille de la vidéo, appuyez sur l’icône Informations (i) située à droite de **[!UICONTROL Hauteur]** afin d’ouvrir la page Calcul de la taille. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions vidéo (représentées par la zone bleue) souhaitées. Appuyez sur **[!UICONTROL X]** dans le coin supérieur droit lorsque vous avez terminé.
 
@@ -180,7 +180,7 @@ Appuyez sur l’icône d’information en regard de chaque option pour accéder 
    * Passez à l’étape suivante.
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil sera appliqué, procédez comme suit :
-   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter]**.
+   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter.]**
    * Dans le champ Nom, entrez un nom qui vous aidera à identifier facilement le rapport de recadrage.
    * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
@@ -210,17 +210,17 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 **Pour créer un profil vidéo en vue de la diffusion en continu progressive :**
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo.]**
 1. Appuyez sur **[!UICONTROL Créer]** pour ajouter un nouveau profil vidéo.
 1. Saisissez un nom et une description pour le profil.
-1. Sur la page Créer/Modifier des paramètres prédéfinis de codage vidéo, appuyez sur **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo]**.
+1. Sur la page Créer/Modifier des paramètres prédéfinis de codage vidéo, appuyez sur **[!UICONTROL Ajouter un paramètre prédéfini de codage vidéo.]**
 1. Définissez les options audio et vidéo dans l’onglet **[!UICONTROL De base]**.
 Appuyez sur l’icône d’information en regard de chaque option pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
-1. (Facultatif) Dans la section Taille de la vidéo, désélectionnez la case **[!UICONTROL Conserver les proportions]**.
+1. (Facultatif) Dans la section Taille de la vidéo, désélectionnez la case **[!UICONTROL Conserver les proportions.]**
 1. Procédez comme suit :
-   * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto]**.
+   * Dans le champ **[!UICONTROL Largeur]**, saisissez **[!UICONTROL auto.]**
    * Dans le champ **[!UICONTROL Hauteur]**, saisissez une valeur en pixels.
-Pour visualiser plus facilement la taille de la vidéo, appuyez sur l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, appuyez sur **[!UICONTROL X]**.
+Pour visualiser plus facilement la taille de la vidéo, appuyez sur l’icône d’informations de hauteur pour ouvrir la page **[!UICONTROL Calcul de la taille]**. Utilisez la page **[!UICONTROL Calcul de la taille]** pour définir les dimensions de votre choix pour la vidéo (encadré bleu). Lorsque vous avez terminé, dans le coin supérieur droit de la boîte de dialogue, appuyez sur **[!UICONTROL X.]**
 1. (Facultatif) Effectuez l’une des opérations suivantes :
 
    * Appuyez sur l’onglet **[!UICONTROL Avancé]** et assurez-vous que la case **[!UICONTROL Utiliser les valeurs par défaut]** est cochée (recommandé).
@@ -236,7 +236,7 @@ Appuyez sur l’icône d’information en regard de chaque option pour accéder 
 
 1. (Facultatif) Pour ajouter un recadrage intelligent aux vidéos auxquelles ce profil sera appliqué, procédez comme suit :
 
-   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter]**.
+   * Sur la page Modifier le profil vidéo, à droite de l’en-tête Smart Crop Ratio, appuyez sur **[!UICONTROL Ajouter.]**
    * Dans le champ Nom, entrez un nom qui vous aidera à identifier facilement le rapport de recadrage.
    * Dans la liste déroulante **[!UICONTROL Rapport de recadrage]**, sélectionnez le rapport à utiliser.
 
@@ -255,7 +255,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
 
 **Pour utiliser des paramètres de codage vidéo personnalisés, procédez comme suit** :
 
-1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Appuyez sur le logo AEM, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite.]**
 1. À partir de la page CRXDE Lite, dans le panneau Explorateur à gauche, accédez au répertoire suivant :
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -307,11 +307,11 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Dans le coin inférieur droit de la page, appuyez sur **[!UICONTROL Ajouter]**.
+1. Dans le coin inférieur droit de la page, appuyez sur **[!UICONTROL Ajouter.]**
 1. Utilisez l’une des méthodes suivantes :
 
    * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
-   * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Tout enregistrer]**.
+   * Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL Tout enregistrer.]**
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, appuyez sur l’icône **[!UICONTROL Retour à l’accueil]** pour revenir à AEM.
 
@@ -327,9 +327,9 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 
 **Pour modifier un profil vidéo** :
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo.]**
 1. Sur la page Profils vidéo, cochez un nom de profil vidéo.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier]**.
+1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
 1. Sur la page Profil de codage vidéo, modifiez le nom et la description, le cas échéant.
 1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée.
 Appuyez sur l’icône d’information pour obtenir une description de la diffusion en continu adaptative. (Si vous modifiez un profil de vidéo progressive, ne cochez pas cette case.)
@@ -337,13 +337,13 @@ Appuyez sur l’icône d’information pour obtenir une description de la diffus
 
    Appuyez sur l’icône d’information en regard de chaque option des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]** pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
+1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer.]**
 
 ### Copie d’un profil vidéo {#copying-a-video-encoding-profile}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo.]**
 1. Sur la page Profils vidéo, cochez un nom de profil vidéo.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Copier]**.
+1. Dans la barre d’outils, appuyez sur **[!UICONTROL Copier.]**
 1. Sur la page Profil de codage vidéo, saisissez un nouveau nom pour le profil.
 1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée. Appuyez sur l’icône d’information pour obtenir une description de la diffusion en continu adaptative. (Si vous copiez un profil de vidéo progressive, ne cochez pas cette case.)
 
@@ -352,14 +352,14 @@ Appuyez sur l’icône d’information pour obtenir une description de la diffus
 
    Appuyez sur l’icône d’information en regard de chaque option dans les onglets De base et Avancé pour obtenir les paramètres recommandés et leurs descriptions.
 
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
+1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer.]**
 
 ### Suppression d’un profil vidéo {#deleting-a-video-encoding-profile}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo.]**
 1. Sur la page Profils vidéo, cochez un ou plusieurs noms de profil vidéo.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer]**.
-1. Appuyez sur **[!UICONTROL OK]**.
+1. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer.]**
+1. Appuyez sur **[!UICONTROL OK.]**
 
 ## Application d’un profil vidéo à des dossiers  {#applying-a-video-profile-to-folders}
 
@@ -377,7 +377,7 @@ Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un prof
 
 ### Application d’un profil vidéo à des dossiers spécifiques {#applying-video-profiles-to-specific-folders}
 
-Vous pouvez appliquer un profil vidéo à un dossier depuis le menu **[!UICONTROL Outils]** ou, si vous vous trouvez dans le dossier, depuis **[!UICONTROL Propriétés]**. Cette section décrit comment appliquer des profils vidéo aux dossiers de deux manières.
+Vous pouvez appliquer un profil vidéo à un dossier depuis le menu **[!UICONTROL Outils]** ou, si vous vous trouvez dans le dossier, depuis **[!UICONTROL Propriétés.]** Cette section décrit comment appliquer des profils vidéo aux dossiers de deux manières.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
@@ -385,16 +385,16 @@ Voir aussi [Retraitement des ressources dans un dossier après avoir modifié so
 
 #### Application d’un profil vidéo à des dossiers à l’aide de l’interface utilisateur Profils {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo.]**
 1. Sélectionnez le profil vidéo à appliquer à un ou plusieurs dossiers.
-1. Appuyez sur **[!UICONTROL Appliquer le profil au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous voulez voir recevoir les ressources récemment chargées, puis appuyez sur **[!UICONTROL Appliquer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier en **[!UICONTROL mode Carte]**.
+1. Appuyez sur **[!UICONTROL Appliquer le profil au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous voulez voir recevoir les ressources récemment chargées, puis appuyez sur **[!UICONTROL Appliquer.]** Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier en **[!UICONTROL mode Carte.]**
 Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
 
 #### Application d’un profil vidéo aux dossiers à partir des propriétés {#applying-video-profiles-to-folders-from-properties}
 
 1. Appuyez ou cliquez sur le logo AEM, puis accédez à **[!UICONTROL Ressources]** et au dossier auquel vous souhaitez appliquer un profil vidéo.
-1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
-1. Accédez à l’onglet **[!UICONTROL Profils vidéo]**, sélectionnez le profil dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Dans le dossier, appuyez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés.]**
+1. Accédez à l’onglet **[!UICONTROL Profils vidéo]**, sélectionnez le profil dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer.]** Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
@@ -407,7 +407,7 @@ Voir aussi [Retraitement des ressources dans un dossier après avoir modifié so
 
 **Pour appliquer un profil vidéo à l’ensemble des ressources :**
 
-* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et appuyez sur **[!UICONTROL Tout enregistrer]**.
+* Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` et appuyez sur **[!UICONTROL Tout enregistrer.]**
 
    ![chlimage_1-519](assets/chlimage_1-519.png)
 * Vous pouvez [surveiller la progression d’une tâche de traitement de profil vidéo](#monitoring-the-progress-of-an-encoding-job).
@@ -422,19 +422,19 @@ Vous pouvez également consulter le fichier `error.log` pour contrôler la progr
 
 Lorsque vous supprimez un profil vidéo d’un dossier, les sous-dossiers héritent automatiquement de la suppression du profil de leur dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
-Vous pouvez supprimer un profil vidéo d’un dossier à partir du menu **[!UICONTROL Outils]** ou, si vous êtes dans le dossier, à partir de **[!UICONTROL Paramètres du dossier]**. Cette section explique comment supprimer des profils vidéo des dossiers de deux manières différentes.
+You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings.]** This section describes how to remove video profiles from folders both ways.
 
 ### Suppression d’un profil vidéo des dossiers à l’aide de l’interface utilisateur Profils {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
+1. Appuyez sur le logo AEM et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo.]**
 1. Sélectionnez le profil vidéo à supprimer d’un ou plusieurs dossiers.
-1. Appuyez sur **[!UICONTROL Supprimer le profil du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis appuyez sur **[!UICONTROL Supprimer]**.
+1. Appuyez sur **[!UICONTROL Supprimer le profil du ou des dossiers]** et sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil, puis appuyez sur **[!UICONTROL Supprimer.]**
 
    Le fait que le nom du profil n’apparaît plus sous celui du dossier indique que le profil vidéo n’est plus appliqué à un dossier.
 
 ### Suppression d’un profil vidéo des dossiers à l’aide des propriétés {#removing-video-profiles-from-folders-by-way-of-properties}
 
 1. Appuyez ou cliquez sur le logo AEM, puis accédez à **[!UICONTROL Ressources]** et au dossier duquel vous souhaitez supprimer un profil vidéo.
-1. Dans le dossier, appuyez ou cliquez sur la coche afin de le sélectionner, puis appuyez ou cliquez sur **Propriétés**.
-1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, choisissez **[!UICONTROL Aucun]** dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Dans le dossier, appuyez ou cliquez sur la coche afin de la sélectionner, puis appuyez ou cliquez sur **Propriétés.]**
+1. Sélectionnez l’onglet **[!UICONTROL Profils vidéo]**, choisissez **[!UICONTROL Aucun]** dans le menu déroulant, puis cliquez sur **[!UICONTROL Enregistrer et fermer.]** Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
