@@ -9,12 +9,15 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 92%
 
 ---
 
 
-# Panoramic images{#panoramic-images}
+# Images panoramiques{#panoramic-images}
 
 Cette section décrit comment utiliser la visionneuse d’images panoramiques pour le rendu d’images panoramiques sphériques afin de profiter d’une expérience de visionnage immersive à 360° d’une pièce, d’une propriété, d’un lieu ou d’un paysage.
 
@@ -27,12 +30,12 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 Pour qu’une ressource téléchargée soit une image panoramique sphérique utilisable avec la visionneuse d’images panoramiques, la ressource doit présenter l’une ou l’autre des caractéristiques suivantes, ou les deux :
 
 * Un rapport d’aspect de 2.
-Vous pouvez remplacer le paramètre de format par défaut de 2 dans CRXDE Lite par les paramètres suivants :
+Vous pouvez remplacer le paramètre de format par défaut de 2 dans CRXDE Lite par le paramètre suivant :
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-* Avec les mots-clés `equirectangular`, ou `spherical`et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-authoring/tags.md).
+* Avec les mots-clés `equirectangular`, ou `spherical` et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-authoring/tags.md).
 
-Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
+Les critères de format et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant WCM `Panoramic Media`.
 
 Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, voir [Téléchargement de ressources](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
@@ -40,15 +43,15 @@ Pour télécharger des ressources à utiliser avec la visionneuse d’images pan
 
 Pour que la visionneuse d’images panoramiques fonctionne correctement au sein d’AEM, vous devez synchroniser les paramètres prédéfinis de la visionneuse d’images panoramiques avec Dynamic Media Classic (Scene7) et les métadonnées spécifiques à Dynamic Media Classic (Scene7) afin que les paramètres prédéfinis de la visionneuse soient mis à jour dans le JCR. Pour ce faire, configurez Dynamic Media Classic (Scene7) de la manière suivante :
 
-1. [Connectez-vous à votre instance de Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte d’entreprise.
+1. [Connectez-vous à votre instance de Dynamic Media Classic (Scene7)](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) pour chaque compte d’entreprise.
 
-1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images]**.
-1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Image Serving]**.
+1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Serveur d’images.]**
+1. Sur la page Publication sur hébergeur d’images, dans le menu déroulant **[!UICONTROL Contexte de publication]** près de la partie supérieure, sélectionnez **[!UICONTROL Image Serving.]**
 
-1. Sur la même page Publication sur hébergeur d’images, localisez l’en-tête **[!UICONTROL Attributs de requête]**.
-1. Sous l’en-tête Attributs de requête, localisez **[!UICONTROL Limite de taille de l’image de réponse]**. Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
+1. Sur la même page Publication sur hébergeur d’images, localisez l’en-tête **[!UICONTROL Attributs de requête.]**
+1. Sous l’en-tête Attributs de requête, localisez **[!UICONTROL Limite de taille de l’image de réponse.]** Ensuite, dans les champs Largeur et Hauteur associés, augmentez la taille maximale autorisée pour les images panoramiques.
 
-   Dynamic Media Classic (Scene7) est limité à 25 000 000 pixels. La taille maximale autorisée pour les images avec un rapport L/H de 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
+   Dynamic Media Classic (Scene7) est limité à 25 000 000 pixels. La taille maximale autorisée pour les images de rapport 2:1 est de 7 000 x 3 500. Toutefois, pour des écrans d’ordinateurs de bureau habituels, une taille de 4 096 x 2 048 pixels suffit.
 
    >[!NOTE]
    >
@@ -56,13 +59,14 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement au sein 
 
 1. Sous l’en-tête Attributs de requête, procédez comme suit :
 
-   * Définissez Mode d’obscurcissement de requête sur **[!UICONTROL Désactivé]**.
-   * Définissez Mode de verrouillage de requête sur **[!UICONTROL Désactivé]**.
+   * Définissez Mode d’obscurcissement de requête sur **[!UICONTROL Désactivé.]**
+   * Définissez Mode de verrouillage de requête sur **[!UICONTROL Désactivé.]**
+
    These settings are necessary for using the `Panoramic Media` WCM component in AEM.
 
-1. Au bas de la page Publication sur hébergeur d’images, sur la gauche, cliquez sur **[!UICONTROL Enregistrer]**.
+1. Au bas de la page Publication sur hébergeur d’images, sur la gauche, cliquez sur **[!UICONTROL Enregistrer.]**
 
-1. Dans le coin inférieur droit, cliquez sur **[!UICONTROL Fermer]**.
+1. Dans le coin inférieur droit, cliquez sur **[!UICONTROL Fermer.]**
 
 ### Dépannage du composant WCM Média panoramique {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -78,6 +82,6 @@ Si vous avez fait glisser une image dans le composant Média panoramique au sein
 
 Voir aussi [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication des images panoramiques {#publishing-panoramic-images}
+## Publication des images panoramiques   {#publishing-panoramic-images}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
