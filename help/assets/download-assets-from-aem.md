@@ -3,7 +3,7 @@ title: Téléchargez des ressources numériques depuis [!DNL Adobe Experience Ma
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 64c09e454960a40632059a85f0861deed1899b86
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 41%
@@ -24,10 +24,10 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 **Pour télécharger des fichiers,**
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
-1. On the Navigation page, tap **[!UICONTROL Assets > Files]**.
+1. On the Navigation page, tap **[!UICONTROL Assets > Files.]**
 1. Accédez à un dossier contenant les fichiers à télécharger.
 1. Sélectionnez le dossier ou un ou plusieurs fichiers qu’il contient.
-1. On the toolbar, tap **[!UICONTROL Download]**.
+1. On the toolbar, tap **[!UICONTROL Download.]**
 
    ![Options disponibles lors du téléchargement de fichiers à partir de ressources Experience Manager](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis AEM. Un fichier zip contenant les rendus Smart Crop est créé et téléchargé sur votre ordinateur local. |
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. When you select this option, you also select the renditions that you want to create dynamically by selecting from the [Image Preset](image-presets.md) list. <br>En outre, vous pouvez sélectionner la taille et l’unité de mesure, le format, l’espace colorimétrique, la résolution et tout modificateur d’image facultatif, tel que l’inversion de l’image. Cette option n’est disponible que si vous avez [!DNL Dynamic Media] activé. |
 
-1. Dans la boîte de dialogue, appuyez sur **[!UICONTROL Télécharger]**.
+1. Dans la boîte de dialogue, appuyez sur **[!UICONTROL Télécharger.]**.
 
 ## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
 
