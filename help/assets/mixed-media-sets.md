@@ -1,6 +1,6 @@
 ---
 title: Visionneuses de supports variés
-description: Découvrez comment utiliser des visionneuses de supports variés dans Contenu multimédia dynamique
+description: Découvrez comment travailler avec des visionneuses de supports variés dans Dynamic Media.
 uuid: cecad772-ed05-46f6-ba44-107195866b0d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+workflow-type: tm+mt
+source-wordcount: '1469'
+ht-degree: 98%
 
 ---
 
@@ -18,13 +21,13 @@ source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
 
 Une visionneuse de supports variés permet d’offrir un mélange d’images, de visionneuses d’images, de visionneuses à 360° et de vidéos dans une même présentation.
 
-Les visionneuses de supports variés sont désignées par une bannière comportant le mot **[!UICONTROL Visionneuse de supports variés]**. En outre, si la visionneuse de médias mixtes est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
+Les visionneuses de supports variés sont désignées par une bannière contenant les mots **[!UICONTROL Visionneuse de supports variés.]** En outre, si la visionneuse de supports variés est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
 ![chlimage_1-137](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur des ressources, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/managing-assets-touch-ui.md).
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/managing-assets-touch-ui.md).
 
 ## Démarrage rapide : Visionneuses de supports variés {#quick-start-mixed-media-sets}
 
@@ -32,39 +35,39 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Chargez vos ressources](#uploading-assets).
 
-   Commencez par télécharger les images et les vidéos pour les visionneuses de supports variés. Le cas échéant, créez les [Visionneuses d’images](/help/assets/image-sets.md) et [Visionneuse à 360°](/help/assets/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de supports variés, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2000 pixels dans leur dimension la plus grande.
+   Commencez par télécharger les images et les vidéos pour les visionneuses de supports variés. Le cas échéant, créez les [Visionneuses d’images](/help/assets/image-sets.md) et [Visionneuse à 360°](/help/assets/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
 1. [Créez une visionneuse de supports variés.](#creating-mixed-media-sets)
 
-   To create a Mixed Media Set, from the Assets page, tap **[!UICONTROL Create > Mixed Media Set]** and then name the set, choose the assets, and choose the order the images appear.
+   Pour créer une visionneuse de supports variés, dans la page Ressources, sélectionnez **[!UICONTROL Créer > Visionneuse de supports variés]**. Attribuez ensuite un nom à la visionneuse, sélectionnez des ressources et choisissez l’ordre dans lequel doivent apparaître les images.
 
    Voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
-1. Set up [Mixed Media Viewer presets](/help/assets/managing-viewer-presets.md), as needed.
+1. Configurez des [paramètres prédéfinis de visionneuse de supports variés](/help/assets/managing-viewer-presets.md), suivant les besoins.
 
-   Les administrateurs peuvent créer ou modifier les paramètres prédéfinis de visionneuse de supports variés. To see your mixed media with a viewer preset, select the mixed media set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Les administrateurs peuvent créer ou modifier les paramètres prédéfinis de visionneuse de supports variés. Pour afficher votre visionneuse de supports variés avec un paramètre prédéfini, sélectionnez la visionneuse puis, dans le menu contextuel du rail gauche, sélectionnez **[!UICONTROL Visionneuses.]**
 
-   See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
+   Accédez à **[!UICONTROL Outils > Ressources > Paramètres visionneuse]** pour créer ou modifier les paramètres prédéfinis de la visionneuse.
 
-   See [Adding and editing viewer presets.](/help/assets/managing-viewer-presets.md)
+   Voir [Ajout et modification de paramètres prédéfinis de la visionneuse](/help/assets/managing-viewer-presets.md).
 
 1. [Prévisualisez une visionneuse de supports variés.](#previewing-mixed-media-sets)
 
-   Sélectionnez la visionneuse de supports variés pour pouvoir la prévisualiser. Cliquez sur les icônes des miniatures afin d’examiner votre visionneuse de supports variés dans la visionneuse sélectionnée. You can choose different Viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
+   Sélectionnez la visionneuse de supports variés pour pouvoir la prévisualiser. Cliquez sur les icônes des miniatures afin d’examiner votre visionneuse de supports variés dans la visionneuse sélectionnée. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
 1. [Publiez une visionneuse de supports variés.](#publishing-mixed-media-sets)
 
-   La publication d’une visionneuse de supports variés active la chaîne URL et d’incorporation. In addition, you must [publish the viewer preset](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
+   La publication d’une visionneuse de supports variés active la chaîne URL et d’incorporation. Vous devez, en outre, [publier le paramètre prédéfini de la visionneuse](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
-1. [Liez des URL à l’application Web](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](/help/assets/embed-code.md).
+1. [Liez des URL à l’application web](/help/assets/linking-urls-to-yourwebapplication.md) ou [incorporez la vidéo ou la visionneuse d’images](/help/assets/embed-code.md).
 
-   AEM Assets crée des appels URL pour les visionneuses de supports variés et les active une fois que vous avez publié les visionneuses. Vous pouvez copier ces URL lorsque vous prévisualisez les ressources. Vous pouvez également les incorporer à votre site Web.
+   AEM Assets crée des appels URL pour les visionneuses de supports variés et les active une fois que vous avez publié les visionneuses. Vous pouvez copier ces URL lorsque vous prévisualisez les ressources. Vous pouvez également les incorporer à votre site web.
 
-   Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Sélectionnez la visionneuse de supports variés puis, dans le menu déroulant du rail gauche, sélectionnez **[!UICONTROL Visionneuses.]**
 
-   See [Linking a Mixed Media Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/embed-code.md).
+   Voir [Liaison d’une visionneuse de supports variés à une page web](/help/assets/linking-urls-to-yourwebapplication.md) et [Incorporation de la vidéo ou de la visionneuse d’images](/help/assets/embed-code.md).
 
-Le cas échéant, vous pouvez modifier une [visionneuse de supports variés](#editing-mixed-media-sets). In addition, you can view and modify [Mixed Media Set properties](/help/assets/managing-assets-touch-ui.md#editing-properties).
+Le cas échéant, vous pouvez modifier une [visionneuse de supports variés](#editing-mixed-media-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse de supports variés](/help/assets/managing-assets-touch-ui.md#editing-properties).
 
 >[!NOTE]
 >
@@ -72,53 +75,53 @@ Le cas échéant, vous pouvez modifier une [visionneuse de supports variés](#ed
 
 ## Téléchargement des ressources {#uploading-assets}
 
-Commencez par télécharger les images et les vidéos pour les visionneuses de supports variés. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de supports variés, assurez-vous que vous tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2000 pixels dans leur dimension la plus grande.
+Commencez par télécharger les images et les vidéos pour les visionneuses de supports variés. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de supports variés, assurez-vous que vous tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
 Si vous souhaitez ajouter des visionneuses à 360° ou des visionneuses d’images à la visionneuse de supports variés, créez-les aussi.
 
-## Création d’une visionneuse de supports variés {#creating-mixed-media-sets}
+## Création d’une visionneuse de supports variés   {#creating-mixed-media-sets}
 
 Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à 360° et des vidéos à votre visionneuse de supports variés. Assurez-vous que les fichiers, visionneuses d’images et visionneuses à 360° sont prêts pour la publication avant de les ajouter à la visionneuse de supports variés.
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
 
-**Pour créer une visionneuse de supports variés**
+**Création d’une visionneuse de supports variés**
 
-1. In Assets, navigate to where you want to create a mixed media set, and click **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set]**. Vous pouvez également la créer depuis un dossier qui contient les ressources. L’éditeur de visionneuse de supports variés s’affiche.
+1. Dans Assets, accédez à l’emplacement où vous souhaitez créer une visionneuse de supports variés, cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Visionneuse de supports variés.]** Vous pouvez également la créer depuis un dossier qui contient les ressources. L’éditeur de visionneuse de médias mixtes s’affiche.
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
-1. Dans le **[!UICONTROL Titre]** de la visionneuse de supports variés, saisissez un nom pour la visionneuse. Le nom apparaît dans la bannière située sur la visionneuse de médias mixtes. Facultativement, saisissez une description.
+1. Dans le **[!UICONTROL Titre]** de la visionneuse de supports variés, saisissez un nom pour la visionneuse. Le nom apparaît dans la bannière située sur la visionneuse de médias mixtes. Vous pouvez aussi saisir une description.
 
    ![chlimage_1-139](assets/chlimage_1-350.png)
 
    >[!NOTE]
    >
-   >Lors de la création de la visionneuse de supports mixtes, vous pouvez modifier la miniature de la visionneuse de supports mixtes ou autoriser AEM à sélectionner automatiquement la miniature en fonction des ressources de la visionneuse de supports mixtes. To select a thumbnail, click **[!UICONTROL Change thumbnail]** and select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   >Lors de la création de la visionneuse de supports variés, vous pouvez modifier la miniature de la visionneuse ou permettre à AEM de sélectionner la miniature automatiquement en fonction des ressources de la visionneuse de supports variés. Pour sélectionner une miniature, cliquez sur **[!UICONTROL Modifier la miniature]** et sélectionnez une image (vous pouvez également accéder à d’autres dossiers pour trouver des images). Si vous avez sélectionné une miniature, puis décidez que vous souhaitez qu’AEM en génère une depuis la visionneuse de supports variés, sélectionnez **[!UICONTROL Basculer vers les miniatures automatiques.]**
 
-1. Appuyez sur le sélecteur de fichiers pour sélectionner les fichiers à inclure dans votre visionneuse de supports variés. Sélectionnez-les, puis cliquez sur **[!UICONTROL Sélectionner]**.
+1. Appuyez sur le sélecteur de ressources pour sélectionner les ressources à inclure dans votre visionneuse de supports variés. Sélectionnez-les, puis cliquez sur **[!UICONTROL Sélectionner.]**
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. Vous pouvez également appliquer des filtres pour affiner les résultats de la recherche. Vous pouvez filtrer par chemin d’accès, collection, type de fichier et balise. Select the filter and then tap the **[!UICONTROL Filter]** icon from the toolbar. Change the view by selecting the **[!UICONTROL View]** icon and selecting **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View]**.
+   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour.]** Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** dans la barre d’outils. Modifiez l’affichage en sélectionnant l’icône **[!UICONTROL View]** et en choisissant ensuite le mode **[!UICONTROL Liste]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Carte.]**
 
-   Voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
+   Voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
    ![chlimage_1-140](assets/chlimage_1-383.png)
 
-1. Re-order the assets by dragging them up or down the list (must select the **[!UICONTROL Reorder]** icon), as necessary.
+1. Réorganisez les ressources en les faisant glisser vers le haut ou le bas de la liste (sélectionnez l’icône de **[!UICONTROL réorganisation]**), le cas échéant.
 
    ![chlimage_1-141](assets/chlimage_1-352.png)
 
-   If you want to add thumbnails, click the **+** **[!UICONTROL thumbnail]** icon next to the image and navigate to the thumbnail you want. When done selecting all the thumbnail images click **[!UICONTROL Save]**.
+   Si vous souhaitez ajouter une miniature, cliquez sur l’icône **+** **[!UICONTROL miniature]** située en regard de l’image et accédez à la miniature de votre choix. Lorsque vous avez terminé de sélectionner toutes les miniatures, cliquez sur **[!UICONTROL Enregistrer.]**
 
    >[!NOTE]
    >
-   >If you want to add assets, tap **[!UICONTROL Add Asset]**.
+   >Si vous souhaitez ajouter des ressources, appuyez sur **[!UICONTROL Ajouter une ressource.]**
 
-1. To delete an asset, select the corresponding check box and tap **[!UICONTROL Delete Asset]**.
-1. To apply a preset, tap **[!UICONTROL Preset]** in the upper right corner and select a preset to apply to the assets.
-1. Cliquez sur **[!UICONTROL Enregistrer]**. La visionneuse de médias mixtes nouvellement créée apparaît dans le dossier dans lequel vous l’avez créée.
+1. Pour supprimer une ressource, cochez la case correspondante, puis appuyez sur **[!UICONTROL Supprimer la ressource.]**
+1. Pour appliquer un paramètre prédéfini aux ressources, appuyez sur **[!UICONTROL Paramètre prédéfini]** dans le coin supérieur droit, puis sélectionnez le paramètre prédéfini de votre choix.
+1. Click **[!UICONTROL Save.]** Your newly created Mixed Media Set appears in the folder you created it in.
 
-## Modification d’une visionneuse de médias mixtes {#editing-mixed-media-sets}
+## Modification d’une visionneuse de médias mixtes   {#editing-mixed-media-sets}
 
 Vous pouvez effectuer diverses tâches de modification sur les ressources dans les visionneuses de supports variés, directement dans l’interface utilisateur, [comme vous le feriez dans AEM Assets](/help/assets/managing-assets-touch-ui.md). Vous pouvez également effectuer les actions suivantes dans les visionneuses de supports variés :
 
@@ -128,7 +131,7 @@ Vous pouvez effectuer diverses tâches de modification sur les ressources dans l
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Modifier la vignette par défaut.
 
-**Pour modifier une visionneuse de supports variés**
+**Modification d’une visionneuse de supports variés**
 
 1. Effectuez l’une des opérations suivantes :
 
@@ -140,35 +143,35 @@ Vous pouvez effectuer diverses tâches de modification sur les ressources dans l
 1. Dans l’éditeur de visionneuse de supports variés, effectuez l’une des actions suivantes :
 
    * Pour réorganiser les éléments : dans le panneau de gauche, appuyez sur **[!UICONTROL Ressources]** (icône image), puis faites glisser une ressource vers un nouvel emplacement.
-   * Pour ajouter des ressources : dans la barre d’outils, appuyez sur **[!UICONTROL Ajouter une ressource]**. Accédez aux ressources. Pour chaque élément à ajouter, pointez sur l’image de la ressource (et non sur son nom), puis appuyez sur l’icône de coche. Dans le coin supérieur droit, appuyez sur **[!UICONTROL Sélectionner]**.
+   * Pour ajouter des ressources : dans la barre d’outils, appuyez sur **[!UICONTROL Ajouter une ressource.]** Accédez aux ressources. Pour chaque élément à ajouter, pointez sur l’image de la ressource (et non sur son nom), puis appuyez sur l’icône de coche. Dans le coin supérieur droit, appuyez sur **[!UICONTROL Sélectionner.]**
 
-   * Pour supprimer une ressource : dans le panneau de gauche, appuyez sur **[!UICONTROL Ressources]**(icône image), puis sélectionnez la ressource. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer la ressource]**.
+   * Pour supprimer une ressource : dans le panneau de gauche, appuyez sur **[!UICONTROL Ressources]** (icône image), puis sélectionnez la ressource. Dans la barre d’outils, appuyez sur **[!UICONTROL Supprimer la ressource.]**
 
    * Pour trier des ressources selon leur nom par ordre croissant ou décroissant, dans le panneau de gauche, appuyez sur **[!UICONTROL Ressources]** (icône image). À droite de l’en-tête **[!UICONTROL Ressources]**, appuyez sur les icônes lambda vers le haut ou vers le bas.
 
       >[!NOTE]
       >
-      >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Placez le pointeur de la souris sur l’actif et appuyez sur l’icône de coche pour la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sur **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis appuyez sur **[!UICONTROL Supprimer]**.
+      >    * Pour supprimer une visionneuse de supports variés dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de supports variés. Placez le pointeur de la souris sur la ressource et appuyez sur l’icône de coche pour la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sur **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis appuyez sur **[!UICONTROL Supprimer.]**
          >
          >    
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+      * Vous pouvez modifier les ressources d’une visionneuse de supports variés en y accédant, en cliquant sur **Définir les membres** dans le rail gauche, puis en appuyant sur l’icône en forme de **[!UICONTROL crayon]** d’une ressource pour ouvrir la fenêtre de modification.
 
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
    >[!NOTE]
    >
-   >* Pour modifier les ressources dans une visionneuse de supports variés - Accédez à la visionneuse de supports variés. Appuyez sur (ne sélectionnez pas) la visionneuse pour l’ouvrir dans la page Aperçu de la visionneuse AEM. Dans le rail de gauche, cliquez sur l’icône lambda vers le bas pour ouvrir la liste déroulante, puis appuyez sur **[!UICONTROL Définir les membres]**. Dans la page Définir les membres, placez le pointeur sur une ressource, puis appuyez sur **[!UICONTROL Modifier]** (icône crayon) pour ouvrir la page de modification.
+   >* Pour modifier les ressources dans une visionneuse de supports variés - Accédez à la visionneuse de supports variés. Appuyez sur (ne sélectionnez pas) la visionneuse pour l’ouvrir dans la page Aperçu de la visionneuse AEM. Dans le rail de gauche, cliquez sur l’icône lambda vers le bas pour ouvrir la liste déroulante, puis appuyez sur **[!UICONTROL Définir les membres.]** Dans la page Définir les membres, placez le pointeur sur une ressource, puis appuyez sur **[!UICONTROL Modifier]** (icône crayon) pour ouvrir la page de modification.
       >
       >
-   * Pour supprimer une visionneuse de supports variés dans son ensemble - À partir de n’importe quel mode d’affichage (Mode Carte ou Colonne, par exemple), accédez à la visionneuse de supports variés. Hover on the set, then tap **Select]** (checkmark icon). Appuyez sur la touche **[!UICONTROL Retour arrière]** de votre clavier ou sur **[!UICONTROL Plus]** (trois points de suspension), puis appuyez sur **[!UICONTROL Supprimer]**.
+   * Pour supprimer une visionneuse de supports variés dans son ensemble - À partir de n’importe quel mode d’affichage (Mode Carte ou Colonne, par exemple), accédez à la visionneuse de supports variés. Placez le pointeur de souris sur la visionneuse, puis appuyez sur **Sélectionner** (icône de coche). Appuyez sur la touche **[!UICONTROL Retour arrière]** de votre clavier ou sur **[!UICONTROL Plus]** (trois points de suspension), puis appuyez sur **[!UICONTROL Supprimer.]**
 
 
 ## Aperçu d’une visionneuse de supports variés {#previewing-mixed-media-sets}
 
 Pour obtenir des informations sur l’aperçu d’une visionneuse de supports variés, voir [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publication d’une visionneuse de supports variés {#publishing-mixed-media-sets}
+## Publication d’une visionneuse de supports variés   {#publishing-mixed-media-sets}
 
 Pour obtenir des informations sur la publication d’une visionneuse de supports variés, voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
 
