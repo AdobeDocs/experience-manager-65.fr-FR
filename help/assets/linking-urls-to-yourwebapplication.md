@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 94%
@@ -66,25 +66,25 @@ Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étape
 
 1. Selon la ressource sélectionnée, procédez comme suit :
 
-   * Si vous avez sélectionné une image, dans le menu déroulant, appuyez sur **[!UICONTROL Rendus]**.
+   * Si vous avez sélectionné une image, dans le menu déroulant, appuyez sur **[!UICONTROL Rendus.]**
 
       Sous l’en-tête **[!UICONTROL Dynamique]**, appuyez sur un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Il vous faudra peut-être faire défiler la liste Rendus pour afficher l’en-tête Dynamique.
 
-      Dans la partie inférieure du rail gauche, appuyez sur **[!UICONTROL URL]**.
+      Dans la partie inférieure du rail gauche, appuyez sur **[!UICONTROL URL.]**
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Si vous avez sélectionné une visionneuse à 360°, une visionneuse d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, appuyez sur **[!UICONTROL Visionneuses]**.
+   * Si vous avez sélectionné une visionneuse à 360°, une visionneuse d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, appuyez sur **[!UICONTROL Visionneuses.]**
 
       Dans le rail de gauche, appuyez sur un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
 
-      Dans le rail de gauche, dans la partie inférieure, appuyez sur **[!UICONTROL URL]**.
+      Dans le rail de gauche, dans la partie inférieure, appuyez sur **[!UICONTROL URL.]**
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Sélectionnez le texte et copiez-le dans le navigateur web pour prévisualiser la ressource ou l’ajouter à la page de contenu web.
 
-   Pour fermer la fenêtre d’URL, appuyez sur **[!UICONTROL X]** ou sur **[!UICONTROL Fermer]**.
+   Pour fermer la fenêtre d’URL, appuyez sur **[!UICONTROL X]** ou sur **[!UICONTROL Fermer.]**
 
 ## Obtention d’une URL pour une ressource statique {#obtaining-a-url-for-a-static-asset}
 
@@ -122,8 +122,8 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 ## Obtention d’une URL de vidéo pour un rendu vidéo publié {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services]**.
-1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
+1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services.]**
+1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations.]**
 1. Sous **[!UICONTROL Configurations disponibles]**, appuyez sur le nom de la configuration qui vous intéresse.
 
 1. Sur la page **[!UICONTROL Paramètres de cloud Dynamic Media]**, sous **[!UICONTROL URL du service vidéo]**, copiez le chemin URL complet. Vous aurez besoin de l’URL copiée dans les étapes suivantes.
@@ -138,7 +138,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
@@ -159,12 +159,13 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 ## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS)  {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services]**.
-1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations]**.
+1. Dans AEM, accédez à **[!UICONTROL Outils > Déploiement > Cloud > Cloud Services.]**
+1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis cliquez sur **[!UICONTROL Afficher les configurations.]**
 1. Sous **[!UICONTROL Configurations disponibles]**, appuyez sur le nom de la configuration qui vous intéresse.
 1. Sur la page **[!UICONTROL Paramètres Dynamic Media Cloud Services]**, procédez comme suit :
 
    * Sous **[!UICONTROL URL du service vidéo]**, copiez le chemin d’URL entier. Vous aurez besoin de l’URL copiée dans ces étapes. Par exemple, le chemin URL est similaire au suivant :
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Le chemin ci-dessus est donné à titre d’illustration uniquement ; il ne s’agit pas de celui que vous allez copier.)
