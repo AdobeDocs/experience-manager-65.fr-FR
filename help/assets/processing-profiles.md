@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 91%
@@ -44,7 +44,7 @@ Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohér
 
 >[!NOTE]
 >
->S’applique au mode *Contenu multimédia* dynamique - Scene7 uniquement dans AEM 6.4.6.0 ou version ultérieure.
+>S’applique au mode ** Dynamic Media - Scene7 uniquement dans AEM 6.4.6.0 ou version ultérieure.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de traitement existant que vous avez modifié ultérieurement.
 
@@ -74,20 +74,20 @@ L’agent de publication Migration doit être désactivé sur le serveur Dynamic
    * Si le dossier principal sélectionné contient un ou plusieurs sous-dossiers avec des ressources, le workflow retraite chaque ressource de la hiérarchie de dossiers.
    * Il est conseillé d’éviter d’exécuter ce workflow sur une hiérarchie de dossiers contenant plus de 1 000 ressources.
 
-1. Dans la liste déroulante située dans le coin supérieur gauche de la page, cliquez sur **[!UICONTROL Chronologie]**.
+1. Dans la liste déroulante située dans le coin supérieur gauche de la page, cliquez sur **[!UICONTROL Chronologie.]**
 1. Dans le coin inférieur gauche de la page, à droite du champ Commentaire, cliquez sur l’icône représentant un signe d’insertion (**^**).
 
    ![Workflow de retraitement des ressources 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Cliquez sur **[!UICONTROL Démarrer le workflow]**.
-1. Dans la liste déroulante **[!UICONTROL Démarrer le workflow]**, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
+1. Cliquez sur **[!UICONTROL Démarrer le workflow.]**
+1. Dans la liste déroulante **[!UICONTROL Démarrer le workflow]**, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources.]**
 1. (Facultatif) Dans la zone de texte **Entrer le titre du processus**, saisissez le nom du workflow. Si nécessaire, vous pouvez utiliser le nom pour faire référence à l’instance de workflow.
 
    ![Retraiter les ressources 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Cliquez sur **[!UICONTROL Démarrer]**, puis sur **[!UICONTROL Confirmer]**.
+1. Cliquez sur **[!UICONTROL Démarrer]**, puis sur **[!UICONTROL Confirmer.]**
 
-   Pour surveiller le workflow ou vérifier sa progression, cliquez sur **[!UICONTROL Outils > Workflow]** dans la page de console principale d’AEM. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
+   Pour surveiller le workflow ou vérifier sa progression, cliquez sur **[!UICONTROL Outils > Workflow dans la page de console principale d’AEM.]** Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, cliquez sur **[!UICONTROL Ouvrir l’historique.]** Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
 
 ### Réglage de la taille du lot du workflow de retraitement {#adjusting-load}
 
@@ -95,12 +95,12 @@ L’agent de publication Migration doit être désactivé sur le serveur Dynamic
 
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
-1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models]**.
-1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
+1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
+1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources.]**
 
    ![Page Modèles de workflow avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Modifier]**. Un nouvel onglet de navigateur ouvre la page du modèle de workflow Scene7 : Retraiter les ressources.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Modifier.]** Un nouvel onglet de navigateur ouvre la page du modèle de workflow Scene7 : Retraiter les ressources.
 1. On the Scene7: Reprocess Assets workflow page, near the upper-right corner, click **[!UICONTROL Edit]** to &quot;unlock&quot; the workflow.
 1. In the workflow, select the Scene7 Batch Upload component to open the toolbar, then click **[!UICONTROL Configure]** on the toolbar.
 
@@ -113,18 +113,19 @@ L’agent de publication Migration doit être désactivé sur le serveur Dynamic
    * Dans le champ **[!UICONTROL Période]**, indiquez un intervalle d’interrogation (en secondes) pour tester la fin du processus externe.
    * Dans le champ **[!UICONTROL Lot]**, saisissez le nombre maximum de ressources (entre 50 et 1 000) à traiter dans une tâche de chargement par lots du serveur Dynamic Media.
    * Sélectionnez **[!UICONTROL Avancer sur dépassement de délai]** si vous souhaitez avancer à l’expiration du délai. Désélectionnez cette option si vous souhaitez passer à la boîte de réception à l’expiration du délai.
+
    ![Boîte de dialogue des propriétés](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done]**.
+1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done.]**
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
+1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync.]** Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Fermez l’onglet du navigateur qui affiche le modèle de workflow Scene7 : Retraiter les ressources.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -135,10 +136,10 @@ L’agent de publication Migration doit être désactivé sur le serveur Dynamic
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add.]** The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
 1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
