@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 46%
@@ -74,7 +74,7 @@ Si vous n’avez pas besoin d’un flux de travail ou d’un contrôle de versio
 
 **Pour configurer des paramètres prédéfinis** universels :
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Dynamic Media Classic]** configuration and click **[!UICONTROL Edit.]**
 1. Sélectionnez l’onglet **[!UICONTROL Vidéo]**.
 
    >[!NOTE]
@@ -151,8 +151,8 @@ Les divers codages vidéo sont créés selon les paramètres prédéfinis de cod
 >
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
-1. Dans AEM, accédez à **[!UICONTROL Outils]**, puis sélectionnez **[!UICONTROL Console de configuration]**. In the Configuration Console navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Créez un nouveau Profil vidéo Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer]**.
+1. Dans AEM, accédez à **[!UICONTROL Outils]**, puis sélectionnez **[!UICONTROL Console de configuration.]** Dans la console de configuration, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Profils **** vidéo dans l’arborescence de navigation.
+1. Créez un nouveau Profil vidéo Dynamic Media Classic. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Dynamic Media Classic Video Profile template. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer.]**
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
