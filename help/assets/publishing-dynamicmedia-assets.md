@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: b8fe3267a808f1a64b78620156826e0b6e3a5676
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 76%
@@ -18,7 +18,7 @@ ht-degree: 76%
 
 # Publication de ressources Dynamic Media  {#publishing-dynamic-media-assets}
 
-Pour publier vos fichiers Contenu multimédia dynamique, sélectionnez les fichiers que vous avez déjà téléchargés et appuyez sur **[!UICONTROL Publier]** ou Publication **** rapide. Une fois vos fichiers Contenu multimédia dynamique publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
+Pour publier vos fichiers Dynamic Media, sélectionnez les fichiers que vous avez déjà téléchargés et appuyez sur Publier **** ou Publier **[!UICONTROL rapidement.]** Une fois vos fichiers Dynamic Media publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
 
 Vous pouvez également publier immédiatement les ressources que vous téléchargez, sans intervention de l’utilisateur. See [Configuring Dynamic Media - Scene7 mode](config-dms7.md).
 
@@ -38,6 +38,7 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 >
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
+
 >
 
 
