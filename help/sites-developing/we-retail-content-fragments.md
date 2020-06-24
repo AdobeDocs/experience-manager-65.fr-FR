@@ -10,16 +10,19 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
+source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 79%
 
 ---
 
 
 # Test des fragments de contenu dans We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (comme disponible dans une instance prête à l’emploi d’AEM) fournit le fragment **Arctic Surfing dans Lofoten** en tant qu’exemple de base. On peut en tirer les enseignements suivants :
+Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (comme disponible dans une instance prête à l’emploi d’AEM) fournit le fragment **Arctic Surfing in Lofoten** en tant qu’exemple de base. On peut en tirer les enseignements suivants :
 
-* Les fragments de contenu d’Adobe Experience Manager (AEM) [sont créés et gérés sous forme de ressources indépendantes de la page](/help/assets/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). 
+* Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). 
 
    * See [Where to Find Content Fragment assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -36,7 +39,7 @@ Pour consulter la documentation complète traitant de la création, de la gestio
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
->* Les **fragments d’expérience** désignent un contenu parfaitement mis en page ; un fragment d’une page web. 
+>* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
@@ -57,13 +60,13 @@ Vous pouvez sélectionner et modifier le fragment **Arctic Surfing in Lofoten**�
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Vous pouvez [modifier et gérer](/help/assets/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
+Vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fragments.md) votre fragment à l’aide des onglets (panneau de gauche) :
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variations](/help/assets/content-fragments-variations.md)**, y compris[Texte (Markdown)](/help/assets/content-fragments-markdown.md)
-* **[Contenu associé](/help/assets/content-fragments-assoc-content.md)**
-* **[Métadonnées](/help/assets/content-fragments-metadata.md)**
+* **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**, y compris[Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md)**
 
 ![cf-46](assets/cf-46.png)
 
@@ -85,7 +88,7 @@ For example, the **Arctic Surfing in Lofoten** content fragment is referenced in
 
 Pour plus d’informations, voir :
 
-* [Utilisation de fragments de contenu](/help/assets/content-fragments.md)
+* [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
    * Découvrez comment créer, modifier et gérer vos ressources Fragment de contenu.
 
