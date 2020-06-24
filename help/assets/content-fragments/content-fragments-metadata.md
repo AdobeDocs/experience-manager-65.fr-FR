@@ -1,0 +1,45 @@
+---
+title: Métadonnées – propriétés des fragments
+seo-title: Métadonnées – propriétés des fragments
+description: Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu.
+seo-description: Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu.
+uuid: 5cd4fe03-4a24-44f2-aad7-079d7c421353
+contentOwner: Alison Heimoz
+products: SG_EXPERIENCEMANAGER/6.5/ASSETS
+topic-tags: content-fragments
+content-type: reference
+discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
+docset: aem65
+translation-type: tm+mt
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 100%
+
+---
+
+
+# Métadonnées – propriétés des fragments{#metadata-fragment-properties}
+
+## Modification des propriétés/métadonnées {#editing-properties-meta-data}
+
+Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu :
+
+1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
+1. Vous pouvez :
+
+   * Sélectionnez [**Afficher les propriétés **pour ouvrir les boîtes de dialogue](/help/assets/managing-assets-touch-ui.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
+   * Ouvrez[ le fragment de contenu à modifier](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), puis sélectionnez **Métadonnées** dans le panneau latéral.
+
+   ![cfm-6420-06](assets/cfm-6420-06.png)
+
+1. L’onglet **De base** fournit des options que vous pouvez afficher ou modifier :
+
+   * Une miniature, pour laquelle vous pouvez **télécharger une image** 
+   * **Titre**
+   * **Description**
+   * **Balises**
+   * Créé (affichage uniquement)
+
+   ![cfm-6420-07](assets/cfm-6420-07.png)
+
