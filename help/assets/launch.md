@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8f97f6164a5021609917b99feb0608bcea59553
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+workflow-type: tm+mt
+source-wordcount: '6662'
+ht-degree: 97%
 
 ---
 
@@ -194,7 +197,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://marketing.adobe.com/resources/help/fr_FR/s7/viewers_ref/c_html5_s7_aem_asset_viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur de cet élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, si l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset », la valeur de cet élément de données recevra des données valides une fois que la visionneuse aura exécuté l’événement LOAD pour la première fois. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 
@@ -526,7 +529,7 @@ Pour installer une extension, cliquez sur **[!UICONTROL Installer]**. Si nécess
 
 Le cas échéant, les extensions suivantes doivent être installées et configurées :
 
-* (Obligatoire) *Experience Cloud ID Service *extension
+* (Obligatoire) *Service d’identification des Experience Cloud *extension
 
 Aucune configuration supplémentaire n’est nécessaire, acceptez les valeurs proposées. Lorsque vous avez terminé, veillez à cliquer sur **[!UICONTROL Enregistrer]**.
 
@@ -653,7 +656,7 @@ La publication d’une bibliothèque implique les deux étapes suivantes :
 Conditions préalables :
 
 * AEM exécute les instances d’auteur et de publication.
-* Le noeud d’auteur AEM est configuré dans Contenu multimédia dynamique - Mode d’exécution Scene7 (dynamicmedia_s7)
+* Le noeud d’auteur AEM est configuré en mode d’exécution Dynamic Media - Scene7 (dynamicmedia_s7)
 * Les composants WCM Dynamic Media sont activés dans AEM Sites.
 
 La configuration d’AEM comprend les deux étapes principales suivantes :
@@ -830,7 +833,7 @@ Par exemple, `https://ims-na1.adobelogin.com/`
 1. Sur la page **[!UICONTROL Production]** (3/3 pages) de la fenêtre **[!UICONTROL Créer une configuration Adobe Launch]**, si nécessaire, corrigez l’URI de production auto-renseigné de la même manière que sur la page **[!UICONTROL Évaluation]** précédente.
 1. Près du coin supérieur droit, cliquez sur **[!UICONTROL Créer]**.
 
-   La nouvelle configuration d’Adobe Launch Cloud est maintenant créée et répertoriée en regard de votre site Web, comme dans l’exemple suivant :
+   Votre nouvelle configuration Adobe Launch Cloud est maintenant créée et répertoriée en regard de votre site Web, comme dans l’exemple suivant :
 
 1. Sélectionnez votre nouvelle configuration du cloud Adobe Launch (une coche apparaît à gauche du titre de la configuration lorsqu’elle est sélectionnée). Dans la barre d’outils, cliquez sur **[!UICONTROL Publier]**.
 
