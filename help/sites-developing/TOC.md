@@ -2,18 +2,21 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Developing User Guide
+user-guide-title: Guide de l’utilisateur du développement d’AEM 6.5
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 79%
 
 ---
 
 
 # AEM 6.5 Developing User Guide {#developing}
 
-+ [Présentation du Guide de l&#39;utilisateur du développement](home.md)
++ [Présentation du guide de développement d’utilisateur](home.md)
 + Présentation pour les développeurs{#introduction}
-   + [Prise en main du développement de sites AEM – Tutoriel WKND](getting-started.md)
+   + [Prise en main du développement d’AEM Sites – Tutoriel WKND](getting-started.md)
    + [Concepts de base d’AEM](the-basics.md)
    + [Structure de l’interface utilisateur tactile d’AEM](touch-ui-structure.md)
    + [Concepts de l’interface utilisateur (IU) tactile d’AEM](touch-ui-concepts.md)
@@ -26,7 +29,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Contribution à AEM](contributing-to-cq.md)
    + [Sécurité](security.md)
    + [Documents de référence](reference-materials.md)
-   + [Création d’un site Web à caractéristiques multiples (interface utilisateur classique)](website.md)
+   + [Création d’un site Web entièrement présenté (interface utilisateur classique)](website.md)
    + [Conceptions et Designer (interface utilisateur classique)](designer.md)
    + [Migration vers l’interface utilisateur tactile](/help/sites-developing/touch-ui-migration.md)
 + Plate-forme{#platform}
@@ -48,7 +51,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Référence des prédicats de Query Builder](querybuilder-predicate-reference.md)
       + [API Query Builder](querybuilder-api.md)
    + Balisage{#tagging}
-      + [Balisage ](tags.md)
+      + [Balisage](tags.md)
       + [Infrastructure de balisage AEM](framework.md)
       + [Création du balisage dans une application AEM](building.md)
    + [Personnalisation des pages affichées par le gestionnaire d’erreurs](customizing-errorhandler-pages.md)
@@ -67,7 +70,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Développement (générique)](generic.md)
       + [Développement avec SAP Commerce Cloud](sap-commerce-cloud.md)
 + Composants{#components}
-   + [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
    + [Système de style](/help/sites-authoring/style-system.md)
    + [Présentation des composants](components.md)
    + [Composants AEM – Principes de base](components-basics.md)
@@ -96,29 +99,29 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + Gestion de l’expérience sans tête{#headless}
    + [Sans tête et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md) 
-   + Applications sur une seule page (SPA){#spas}
+   + des applications sur une seule page ;{#spas}
       + [Présentation et présentation des applications monopages](spa-walkthrough.md)
-      + [Didacticiel SPA WKND](spa-wknd.md)
+      + [Didacticiel sur le WKND SPA](spa-wknd.md)
       + [Prise en main des applications monopages dans AEM - Réagir](spa-getting-started-react.md)
       + [Prise en main des applications monopages dans AEM - Angular](spa-getting-started-angular.md)
-      + [Implémentation d’un composant de réaction pour l’application d’une seule page](spa-implementing-react-component.md)
+      + [Mise en oeuvre d’un composant de réaction pour l’application d’une seule page](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
       + [Aperçu de l’éditeur d’application d’une seule page](spa-overview.md)
       + [Développement d’applications monopages pour AEM](spa-architecture.md)
       + [Plan directeur d’applications sur une seule page (SPA)](spa-blueprint.md)
       + [Composant de page SPA](spa-page-component.md)
       + [Mappage Modèle dynamique/Composant pour les applications monopages](spa-dynamic-model-to-component-mapping.md)
-      + [Routage du modèle SPA](spa-routing.md)
-      + [Intégration de l’application monopage et du lancement d’Adobe Experience Platform](spa-launch.md)
-      + [Rendu SPA et côté serveur](spa-ssr.md)
+      + [Routage de modèle SPA](spa-routing.md)
+      + [Intégration de l’application d’une seule page et du lancement d’Adobe Experience Platform](spa-launch.md)
+      + [SPA et rendu côté serveur](spa-ssr.md)
       + [Références de l’API JavaScript SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
-   + [Fragments de contenu](/help/assets/content-fragments.md)
+   + [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
    + [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
    + [Présentation des fragments de contenu et de Content Services dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Outils de développement{#devtools}
    + [Outils de développement](dev-tools.md)
-   + [Outils de modernisation AEM](modernization-tools.md)
+   + [Outils de modernisation d’AEM](modernization-tools.md)
    + [Éditeur de boîtes de dialogue](dialog-editor.md)
    + [Outil de conversion de boîte de dialogue](dialog-conversion.md)
    + [Développement dans CRXDE Lite](developing-with-crxde-lite.md)
@@ -149,9 +152,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Personnalisation des vues des propriétés de la page](page-properties-views.md)
    + [Configuration d’une page pour la modification en masse des propriétés de page](bulk-editing.md)
    + [Personnalisation et extensions de fragments de contenu](customizing-content-fragments.md)
-   + [Fragments de contenu Configuration des composants pour le rendu](content-fragments-config-components-rendering.md)
+   + [Fragments de contenu – Configuration des composants pour le rendu](content-fragments-config-components-rendering.md)
    + [Fragments d’expérience](experience-fragments.md)
-   + Extension des processus{#extending-workflows}
+   + Workflows étendus{#extending-workflows}
       + [Développement et extension des processus](workflows.md)
       + [Création de modèles de workflow](workflows-models.md)
       + [Développement des fonctionnalités de workflow](workflows-customizing-extending.md)
@@ -159,18 +162,18 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Référence sur les étapes du workflow](workflows-step-ref.md)
       + [Meilleures pratiques relatives aux workflows](workflows-best-practices.md)
       + [Référence sur les processus de workflow](workflows-process-ref.md)
-      + [Variables dans les processus AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Variables dans les workflows AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Extension du Multi Site Manager](extending-msm.md)
-   + Suivi et analyses{#extending-analytics}
+   + Suivi et Analytics{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
-      + [Ajout du suivi Adobe Analytics aux composants](extending-analytics-components.md)
-      + [Personnalisation d’Adobe Analytics Framework](extending-analytics-framework.md)
+      + [Ajouter le suivi Analytics d&#39;Adobe aux composants](extending-analytics-components.md)
+      + [Personnalisation du cadre Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
-   + Services cloud{#extending-cloud-services}
-      + [Configurations du service cloud](extending-cloud-config.md)
+   + Cloud Services{#extending-cloud-services}
+      + [Configuration de Cloud Services](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
-   + Forms {#extending-forms}
+   + Formulaires{#extending-forms}
       + [Création de mises en correspondance de formulaires personnalisés](extending-campaign-form-mapping.md)
       + [Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign](extending-campaign-custom-template.md)
       + [Script d’analyse des requêtes](analyze-request.md)
@@ -193,9 +196,9 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Listes de contrôle](checklists.md)
    + [Tough Day](tough-day.md)
    + [Test de votre interface utilisateur](hobbes.md)
-+ Meilleures pratiques{#bestpractices}
++ Bonnes pratiques{#bestpractices}
    + [Présentation des meilleures pratiques](best-practices.md)
-   + [Instructions et bonnes pratiques de développement AEM](dev-guidelines-bestpractices.md)
+   + [Directives et bonnes pratiques de développement AEM](dev-guidelines-bestpractices.md)
    + [Meilleures pratiques de développement](development-practices.md)
    + [Content Architecture](content-architecture.md)
    + [Architecture logicielle](software-architecture.md)
