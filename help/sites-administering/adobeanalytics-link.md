@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 translation-type: tm+mt
-source-git-commit: 6f49e01aa3e9841c7b2917870593452b778667d2
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 74%
 
 ---
 
@@ -65,7 +68,7 @@ Pour activer le suivi des téléchargements pour votre structure Adobe Analytics
 
 Vous pouvez effectuer le suivi des clics sur les liens externes (liens de sortie) sur vos pages.
 
-Pour effectuer le suivi des liens externes pour votre structure Adobe Analytics :
+Pour effectuer le suivi des liens externes pour votre structure Analytics Adobe :
 
 1. [Ouvrez la structure Adobe Analytics et développez la section **Configuration du suivi des liens**.](#configuring-link-tracking-for-an-adobe-analytics-framework)
 1. Configurez les propriétés suivantes, en fonction de vos besoins.
@@ -103,7 +106,7 @@ s.linkLeaveQueryString= false;
 
 ## Envoi de données de variable avec les clics sur les liens {#sending-variable-data-with-link-clicks}
 
-Vous pouvez configurer AEM pour envoyer des données d’événement et de variable à Adobe Analytics lorsqu’un utilisateur clique sur un lien. The **Link Tracking Configuration** properties enable you to specify the Adobe Analytics events and variables to track when link clicks occur.
+Vous pouvez configurer AEM pour envoyer des données de événement et de variable à Adobe Analytics lorsqu’un utilisateur clique sur un lien. The **Link Tracking Configuration** properties enable you to specify the Adobe Analytics events and variables to track when link clicks occur.
 
 Les mappages de structure déterminent les valeurs d’événement et de variable. Vous pouvez mapper les variables Adobe Analytics aux variables de vos composants de contenu qui stockent les données dont vous souhaitez effectuer le suivi lorsque vous cliquez sur des liens.
 
@@ -114,13 +117,13 @@ Pour envoyer des données de variable avec des clics sur des liens :
 
 Pour envoyer des propriétés données variables avec des clics sur des liens :
 
-* **Evénements** de suivi des liensEntrez les variables d’événement Adobe Analytics que vous souhaitez utiliser pour comptabiliser les clics sur les liens.
+* **Événements de suivi des liens** Saisissez les variables de événement Analytics Adobe que vous souhaitez utiliser pour comptabiliser les clics sur les liens.
 
    S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
    The default value of `None` causes no event tracking.
 
-* **Lier les variables de suivi** Entrez les variables Adobe Analytics que vous souhaitez envoyer à Adobe Analytics lorsque vous cliquez sur des liens. S’il y a plusieurs noms de variables, séparez-les par une virgule.
+* **Vars de suivi des liens** Entrez les variables Analytics Adobe que vous souhaitez envoyer à Adobe Analytics lorsque vous cliquez sur des liens. S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
    The default value of `None` causes no variable data to be sent.
 
@@ -133,7 +136,7 @@ s.linkTrackVars= 'prop4';
 
 ## Exemple de configuration du suivi des liens {#example-link-tracking-configuration}
 
-Suivez les procédures suivantes pour explorer le comportement de suivi des liens de l’intégration d’Adobe Analytics. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+Suivez les procédures suivantes pour explorer le comportement de suivi des liens de l’intégration Adobe. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
 ### Configuration générale {#general-configuration}
 
@@ -240,7 +243,7 @@ L’appel ressemblera à ceci une fois affiché avec Adobe Marketing Cloud Debug
 1. Activez **Laisser la chaîne de requête**.
 1. Rechargez l’aperçu de la page, puis cliquez sur le lien.
 
-Les détails de l’appel qui apparaissent dans le débogueur Adobe Marketing Cloud sont similaires à l’exemple suivant :
+Les détails de l’appel qui s’affichent dans le débogueur d’Adobe Marketing Cloud sont similaires à l’exemple suivant :
 
 ![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
 
@@ -329,7 +332,7 @@ Appliquez la procédure suivante afin de configurer le suivi des liens pour un c
 
 1. Enable **Custom Link Tracking** to override the link tracking configuration of the Adobe Analytics framework and to enable link tracking for the current link.
 
-1. (Optional) To track events with the link click, add Adobe Analytics event names in the **Include Adobe Analytics Variables** field. Séparez le nom de plusieurs événements par des virgules, par exemple
+1. (Optional) To track events with the link click, add Adobe Analytics event names in the **Include Adobe Analytics Variables** field. Séparez plusieurs noms de événement par des virgules, par exemple
 
    `event1, event22`.
 
@@ -337,10 +340,12 @@ Appliquez la procédure suivante afin de configurer le suivi des liens pour un c
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
    * *`<Variable-name>`*: *`‘CONSTANT'`*
+
    Les exemples suivants illustrent chaque format :
 
    * `eVar10:pagedata.title`
    * `prop1: ‘Aubergine'`
+
    S’il y a plusieurs valeurs, séparez-les par une virgule.
 
 1. **Cliquez sur OK**.
