@@ -12,7 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '3452'
+ht-degree: 86%
 
 ---
 
@@ -45,7 +48,7 @@ Cette page contient la documentation de référence (ou des liens vers la docume
 
 ## Structure {#structure}
 
-La structure de base d’un composant est décrite à la page [Composants AEM - Notions de base](/help/sites-developing/components-basics.md#structure). Ce document couvre les interfaces utilisateur tactiles et classiques. Même si vous n’avez pas besoin d’utiliser les paramètres classiques de votre nouveau composant, il peut être utile d’en prendre connaissance lors de l’héritage de composants existants.
+La structure de base d’un composant est décrite à la page [Composants AEM - Notions de base](/help/sites-developing/components-basics.md#structure). Ce document couvre à la fois les interfaces utilisateur tactiles et classiques. Même si vous n’avez pas besoin d’utiliser les paramètres classiques de votre nouveau composant, il peut être utile d’en prendre connaissance lors de l’héritage de composants existants.
 
 ## Extension de composants et de boîtes de dialogue existants {#extending-existing-components-and-dialogs}
 
@@ -129,7 +132,7 @@ Les boîtes de dialogue permettent à l’auteur d’interagir avec le composant
 
 ### IU Coral et IU Granite {#coral-ui-and-granite-ui}
 
-L’[IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) et l’[IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) définissent l’aspect moderne d’AEM.
+L’[IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) et l’[IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) définissent l’aspect moderne d’AEM.
 
 [L’IU Granite offre un vaste éventail de composants de base (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et [créer votre propre widget](#creatinganewwidget).
 
@@ -141,12 +144,12 @@ Pour plus d’informations, voir :
 
    * Fournit une interface utilisateur uniforme dans toutes les solutions cloud
    * [Concepts de l’IU tactile AEM - IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guide de l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guide de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * IU Granite
 
    * Fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue
-   * [Concepts de l’interface utilisateur tactile d’AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+   * [Concepts de l’interface utilisateur AEM Touch-Enabled - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
    * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
@@ -200,6 +203,7 @@ Pour consulter des exemples, reportez-vous à :
 >
 >* la session AEM Gems sur [Personnalisation des champs de boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 >* l’exemple de code correspondant traité dans [Exemple de code - Comment personnaliser les champs de boîte de dialogue](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
+
 >
 
 
@@ -218,7 +222,7 @@ Si vous configurez votre boîte de dialogue comme un conteneur simple pour un é
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Plus précisément, l’IU Granite offre divers composants de champ qui conviennent pour une utilisation dans des boîtes de dialogue (ou, de manière plus générale, dans des [formulaires](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
+Plus précisément, l’IU Granite offre divers composants de champ qui conviennent pour une utilisation dans des boîtes de dialogue (ou, de manière plus générale, dans des [formulaires](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -270,7 +274,7 @@ Pour injecter une logique dans votre champ, vous devez :
 1. Faire marquer votre champ avec une classe CSS donnée (le *hook*).
 1. Définir, dans votre bibliothèque cliente, un écouteur JS associé à ce nom de classe CSS (pour garantir que la logique personnalisée est limitée à ce champ et n’affecte pas les autres champs du même type).
 
-Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Ceci est très similaire au processus que vous avez dû suivre avec ExtJS dans le passé : identifier la page de documentation d’un widget donné, puis vérifier les détails de son API d’événement.
+Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Ceci est très similaire au processus que vous avez dû suivre avec ExtJS dans le passé : identifier la page de documentation d’un widget donné, puis vérifier les détails de son API d’événement.
 
 Pour consulter un exemple, reportez-vous à la section :
 
@@ -290,8 +294,8 @@ La structure du contenu décrit la structure sémantique ; elle ne devrait (doi
 
 Pour marquer un champ comme étant obligatoire, définissez la propriété suivante sur le nœud de contenu du champ :
 
-* Nom: `required`
-* Type: `Boolean`
+* Nom (name) : `required`
+* Type : `Boolean`
 
 Pour consulter un exemple, reportez-vous à la section :
 
@@ -318,7 +322,7 @@ La boîte de dialogue Conception est utilisée lorsqu’un composant possède de
 La définition est très similaire à celle d’une boîte de dialogue[ servant à modifier le contenu ](#creating-a-new-dialog), à la différence qu’elle est définie comme un nœud :
 
 * Node name: `cq:design_dialog`
-* Type: `nt:unstructured`
+* Type : `nt:unstructured`
 
 ## Création et configuration d’un éditeur local {#creating-and-configuring-an-inplace-editor}
 
@@ -366,42 +370,44 @@ Ce comportement et la relation actif à composant requise peuvent être configur
 1. Sous la définition de paragraphe de votre conception de page. Par exemple :
 
    * `/etc/designs/<myApp>/page/par`
+
    Créez un nœud :
 
-   * Nom: `cq:authoring`
-   * Type: `nt:unstructured`
+   * Nom (name) : `cq:authoring`
+   * Type : `nt:unstructured`
 
 
 1. Sous cela, créez un nouveau nœud qui contiendra tous les mappages actif à composant :
 
-   * Nom: `assetToComponentMapping`
-   * Type: `nt:unstructured`
+   * Nom (name) : `assetToComponentMapping`
+   * Type : `nt:unstructured`
 
 1. Pour chaque mappage actif à composant, créez un nœud :
 
    * Nom : text ; il est recommandé que le nom indique l’actif et le type de composant associé, par exemple, image
-   * Type: `nt:unstructured`
+   * Type : `nt:unstructured`
+
    Chacun possédant les propriétés suivantes :
 
    * `assetGroup`:
 
-      * Type: `String`
+      * Type : `String`
       * Value: the group that the related asset belongs to; for example, `media`
    * `assetMimetype`:
 
-      * Type: `String`
+      * Type : `String`
       * Valeur : type mime de l’actif associé, par exemple `image/*`
    * `droptarget`:
 
-      * Type: `String`
+      * Type : `String`
       * Valeur : cible de dépôt, par exemple, `image`
    * `resourceType`:
 
-      * Type: `String`
+      * Type : `String`
       * Value: the related component resource; for example, `foundation/components/image`
    * `type`:
 
-      * Type: `String`
+      * Type : `String`
       * Valeur : type, par exemple, `Images`
 
 
@@ -419,12 +425,12 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-project-archetype sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
+* [Ouvrez le projet aem-project-archetype sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip).
 
 >[!NOTE]
 >
->The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
+>The automatic creation of component instances can now be configured easily within the UI when using [Core Components](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) and Editable Templates. See [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) for more information about defining which components are automatically associated with given media types.
 
 ## Utilisation de l’extension AEM Brackets {#using-the-aem-brackets-extension}
 
@@ -496,4 +502,4 @@ Il suffit de placer un fichier `README.md` dans la structure du composant. Ce Ma
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
-The supported markdown is the same as that for [content fragments](/help/assets/content-fragments-markdown.md).
+The supported markdown is the same as that for [content fragments](/help/assets/content-fragments/content-fragments-markdown.md).
