@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 63%
 
 ---
 
@@ -30,8 +33,7 @@ Le code client identifie le compte client Adobe Target en appelant le serveur A
 >
 >Votre compte doit également être activé par l’équipe Target pour pouvoir utiliser l’intégration.
 >
->
->If it is not the case, please contact [Adobe Target Customer Care](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html).
+>If it is not the case, please contact [Adobe Customer Care](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
@@ -50,9 +52,9 @@ The Test and Target [replication agent](/help/sites-deploying/replication.md) mu
 
 ## Sécurisation du nœud de paramètres d’activité {#securing-the-activity-settings-node}
 
-Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
+Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-**Le noeud** cq:ActivitySettings`/content/campaigns/*nameofbrand*` est disponible dans CRXDE Lite sous *** sous le noeud activités jcr:content ; *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+The **cq:ActivitySettings** node is available in CRXDE lite under `/content/campaigns/*nameofbrand*`* *under the activities jcr:content node;* *for example `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
 The **cq:ActivitySettings** node under the activity&#39;s jcr:content is protected by the following ACLs:
 
@@ -68,7 +70,7 @@ Lors de la modification d’une activité dans Adobe Target, l’URL pointe sur
 
 >[!NOTE]
 >
->Voir aussi [Ajout de la configuration](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration)du cloud.
+>Voir aussi [Ajouter la configuration](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration)de Cloud.
 
 Pour configurer l’externaliseur AEM :
 
