@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 94%
@@ -139,7 +139,7 @@ Il est recommandé d’utiliser OAuth dans les environnements ayant des exigence
 
 ## Fonctionnalités disponibles {#available-features}
 
-Les fragments de contenu sont un type spécifique de ressource ; voir [Utilisation des fragments de contenu](/help/assets/content-fragments.md).
+Les fragments de contenu sont un type spécifique de ressource ; voir [Utilisation des fragments de contenu](/help/assets/content-fragments/content-fragments.md).
 
 Pour plus d’informations sur les fonctions disponibles dans l’API, voir :
 
@@ -199,7 +199,7 @@ Les ressources peuvent comporter plusieurs rendus. Elles sont généralement exp
 
 ### Fragments de contenu {#content-fragments}
 
-Un [fragment de contenu](/help/assets/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc.
+Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc.
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
