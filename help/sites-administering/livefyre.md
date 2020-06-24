@@ -10,7 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1706'
+ht-degree: 67%
 
 ---
 
@@ -51,7 +54,7 @@ AEM 6.5 est livré avec le module 1.2.6 de Livefyre pré-installé. Ce module in
 
    Le module Livefyre-AEM est maintenant installé. Pour pouvoir commencer à utiliser les fonctionnalités d’intégration, vous devez configurer AEM pour utiliser Livefyre.
 
-   For more information on packages, see [How to Work With Packages](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html).
+   For more information on packages, see [How to Work With Packages](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    For more information and release notes on feature packs, see [Feature Packs](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
@@ -76,7 +79,7 @@ Configurez AEM pour utiliser les informations d’identification de licence Live
 
    >[!NOTE]
    >
-   >Les configurations de cloud doivent être activées dans leurs propriétés pour que les configurations de Livefyre puissent y être ajoutées. Les dossiers de configuration sont créés et gérés dans l’explorateur de configurations.
+   >Pour que les configurations Livefyre puissent être ajoutées aux dossiers, les configurations de cloud doivent être activées dans leurs propriétés. Les dossiers de configuration sont créés et gérés dans l’explorateur de configurations.
    >
    >Vous ne pouvez pas créer de nom pour une configuration, celle-ci étant référencée par le chemin d’accès au dossier dans laquelle elle se trouve. Vous ne pouvez disposer que d’une configuration par dossier.
 
@@ -105,7 +108,7 @@ L’intégration d’authentification par défaut peut ne pas être parfaite pou
 
    For more information on customizing an Auth Delegate, see [Identity Integration](https://answers.livefyre.com/developers/identity-integration/).
 
-   For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
+   For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://helpx.adobe.com/fr/experience-manager/6-3/sites/developing/using/clientlibs.html).
 
 ## Utilisation de Livefyre avec AEM Sites {#use-livefyre-with-aem-sites}
 
@@ -147,7 +150,7 @@ Vous pouvez importer du contenu créé par les utilisateurs Twitter et Instagram
 
 >[!NOTE]
 >
->Avant d’utiliser Assets pour importer du contenu généré par l’utilisateur, vous devez configurer des comptes de réseaux sociaux et de demande de droits dans Livefyre Studio. See [Setting: Rights Requests](https://marketing.adobe.com/resources/help/en_US/livefyre/c_how_requesting_rights_works.html) for more information.
+>Avant d’utiliser Assets pour importer du contenu généré par l’utilisateur, vous devez configurer des comptes de réseaux sociaux et de demande de droits dans Livefyre Studio. See [Setting: Rights Requests](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
 Pour importer du contenu généré par l’utilisateur dans AEM Assets :
 
@@ -162,7 +165,7 @@ Pour importer du contenu généré par l’utilisateur dans AEM Assets :
    * De Twitter et Instagram, en cliquant sur l’onglet Twitter ou Instagram. Utilisez la recherche ou les filtres pour rechercher du contenu.
 
 1. Sélectionnez les ressources à importer. The assets you select are automatically counted and saved under the **Selected** tab.
-1. **Facultatif**: Cliquez sur l’onglet **Sélectionné** et passez en revue le contenu UGC sélectionné à importer.
+1. **Facultatif**: Cliquez sur l&#39;onglet **Sélectionné** et passez en revue le contenu UGC sélectionné à importer.
 1. Cliquez sur **Suivant**.
 
    ![livefyre-aem-import-ugc2](assets/livefyre-aem-import-ugc2.png)
@@ -172,17 +175,17 @@ Pour importer du contenu généré par l’utilisateur dans AEM Assets :
    Pour Instagram :
 
    * **Demande manuelle de droits** pour obtenir un message qui peut être copié et collé et envoyé manuellement aux propriétaires de contenu via Instagram.
-   * **Attribuer manuellement les droits** de contenu pour remplacer les droits des fichiers individuels.
+   * **Attribuer manuellement les droits** sur le contenu pour remplacer les droits des ressources individuelles.
    >[!NOTE]
    >
-   >En raison des mises à jour affectant l’agrégation du contenu des comptes d’utilisateurs non professionnels, nous ne pouvons plus publier de commentaires en votre nom ni rechercher automatiquement les réponses de l’auteur. [Cliquez ici pour en savoir plus](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
+   >En raison des mises à jour affectant l&#39;agrégation du contenu des comptes d&#39;utilisateurs non-professionnels, nous ne pouvons plus publier de commentaires en votre nom ou vérifier automatiquement les réponses de l&#39;auteur. [Cliquez ici pour en savoir plus](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
    ![livefyre-aem-import-ugc3-6-4](assets/livefyre-aem-import-ugc3-6-4.png)
 
    Pour Twitter :
 
    * **Envoyer un message à l’auteur** pour envoyer un message au propriétaire du contenu demandant des droits sur la ressource.
-   * **Attribuer manuellement les droits** de contenu pour remplacer les droits des fichiers individuels.
+   * **Attribuer manuellement les droits** sur le contenu pour remplacer les droits des ressources individuelles.
 
 
 1. Cliquez sur **Importer**.
@@ -209,7 +212,7 @@ Les utilisateurs d’AEM Commerce peuvent facilement intégrer leur catalogue de
 
 Après avoir importé le catalogue de produits, les produits apparaissent en temps réel dans votre instance Livefyre. Si vous modifiez ou supprimez des éléments dans votre catalogue de produits AEM Commerce, les modifications sont automatiquement appliquées dans Livefrye.
 
-1. Vérifiez que le dernier package Livefyre pour AEM est installé sur votre instance AEM.
+1. Assurez-vous que le dernier package Livefyre pour AEM est installé sur votre instance AEM.
 1. From the AEM homepage, navigate to **AEM Commerce**.
 1. Créez une nouvelle collection ou utilisez une collection existante.
 1. Hover over the collection and click **Collection Properties** (pencil icon).
