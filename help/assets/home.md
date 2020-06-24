@@ -1,52 +1,52 @@
 ---
-title: Guide de l’utilisateur d’Adobe Experience Manager 6.5 Assets
-seo-title: Guide de l’utilisateur d’Adobe Experience Manager 6.5 Assets
-description: Ce guide porte sur toutes les tâches de ressources d’Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
-seo-description: Couvre toutes les tâches d’ressources d’Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
+title: Guide de l’utilisateur de l’Adobe Experience Manager 6.5 Assets
+seo-title: Guide de l’utilisateur de l’Adobe Experience Manager 6.5 Assets
+description: Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
+seo-description: Couvre toutes les tâches de ressources du Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 15%
+ht-degree: 17%
 
 ---
 
 
-# Guide de l’utilisateur d’Adobe Experience Manager 6.5 Assets
+# Guide de l’utilisateur de l’Adobe Experience Manager 6.5 Assets
 
-Ce guide porte sur toutes les tâches de ressources d’Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
+Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 
-## Articles clés d’Experience Manager
+## Articles Experience Manager clés
 
-* [Prise en main d’Experience Manager](https://helpx.adobe.com/fr/experience-manager/get-started.html)
-* [Notes de mise à jour d’Experience Manager 6.5](/help/release-notes/home.md)
+* [Prise en main du Experience Manager](https://helpx.adobe.com/fr/experience-manager/get-started.html)
+* [Notes de mise à jour de Experience Manager 6.5](/help/release-notes/home.md)
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md)
 
-## Guides d’utilisation d’Experience Manager 6.5
+## Guides d’utilisation de Experience Manager 6.5
 
 | Guide de l’utilisateur | Description |
 |--- |---|
 | [Notes de mise à jour](/help/release-notes/home.md) | Fournit des informations importantes sur la dernière version, notamment les nouveautés, les plates-formes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus |
 | [Guide de l’utilisateur Forms](/help/forms/home.md) | Ce guide décrit comment créer, gérer, publier et mettre à jour des formulaires numériques. |
 | [Guide de l&#39;utilisateur des communautés](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |
-| [Guide d’administration](/help/sites-administering/home.md) | Découvrez comment administrer Experience Manager. |
-| [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création dans Experience Manager. |
-| [Guide de création d’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans Experience Manager dans l’interface utilisateur classique. |
-| [Guide de l’utilisateur des écrans](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution de signalisation numérique pour publier des expériences numériques dynamiques et interactives. |
-| [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide présente les principes de base d’Experience Manager. |
-| [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance Experience Manager. |
+| [Guide d’administration](/help/sites-administering/home.md) | Comprendre comment administrer le Experience Manager. |
+| [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création en Experience Manager. |
+| [Guide de création d’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création en Experience Manager dans l’interface utilisateur classique. |
+| [Guide de l’utilisateur des écrans](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution de signalisation numérique pour publier des expériences numériques dynamiques et interactives. |
+| [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base du Experience Manager. |
+| [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance de Experience Manager. |
 | [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer un projet Experience Manager avec succès. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
-| [Experience Manager Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
+| [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
 
-## Ressources clés d’Experience Manager
+## Ressources Experience Manager clés
 
-* [Didacticiels vidéo Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Didacticiels vidéo pour les Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
-* [Forum de la communauté Ressources Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
-* [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
+* [Forum de la communauté des ressources Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
+* [Guide de l&#39;utilisateur Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
