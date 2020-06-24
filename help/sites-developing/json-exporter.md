@@ -10,7 +10,7 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 84%
@@ -82,7 +82,7 @@ Votre page peut contenir un fragment de contenu unique ou plusieurs composants d
 
 Voir également :
 
-* API HTTP Assets
+* API HTTP Assets 
 
    * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
@@ -100,7 +100,7 @@ Pour plus d’informations, voir :
 
 * [Rubrique Fragments de contenu du guide de l’utilisateur Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [Modèles de fragment de contenu](/help/assets/content-fragments-models.md)
+* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
 * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md) 
 
