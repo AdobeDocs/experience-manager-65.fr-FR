@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 43%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
 
 >[!CAUTION]
 >
->[Les modèles](/help/assets/content-fragments-models.md) de fragments de contenu sont désormais recommandés pour la création de tous vos fragments.
+>Les [modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) sont désormais recommandés pour créer tous les fragments.
 >
 >Les modèles de fragment de contenu sont utilisés pour tous les exemples dans We.Retail.
 
@@ -33,7 +36,7 @@ Les modèles prêts à l’emploi sont stockés sous :
 Vous pouvez créer des modèles spécifiques à vos sites pour les fragments de contenu sous :
 
 * `/apps/settings/dam/cfm/templates`
-Emplacement permettant d’incruster des modèles prêts à l’emploi ou de fournir des modèles spécifiques à l’application du client qui ne sont pas destinés à être étendus/modifiés au moment de l’exécution.
+Emplacement pour l’incrustation de modèles prêts à l’emploi ou la fourniture de modèles spécifiques à l’application à l’utilisateur qui ne sont pas destinés à être étendus/modifiés au moment de l’exécution.
 
 * `/conf/global/settings/dam/cfm/templates`
 Emplacement des modèles spécifiques au client à l’échelle de l’instance qui doivent être modifiés au moment de l’exécution.
@@ -42,16 +45,16 @@ The order of precedence is (in descending order) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
 >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
    >
    >
-1. Make any changes within `/apps`
+1. Apportez les modifications désirées dans `/apps`
 >
 
 
@@ -100,7 +103,7 @@ La structure spécifique étant :
 
 Plus de détails sur les nœuds et leurs propriétés : 
 
-* **Modèle**
+* **Template (Modèle)**
 
    <table>
    <tbody>
@@ -127,22 +130,22 @@ Plus de détails sur les nœuds et leurs propriétés :
     <tr>
      <td><code>initialAssociatedContent</code></td>
      <td><p><code>String[]</code></p> <p>facultatif</p> </td>
-     <td>Tableau contenant les chemins d’accès aux collections qui doivent être associés par défaut à un fragment de contenu nouvellement créé.</td>
+     <td>Tableau contenant les chemins d’accès aux collections qui doivent être associées par défaut à un fragment de contenu nouvellement créé.</td>
     </tr>
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>requis</p> </td>
-     <td><p><code>true</code>, si les sous-ressources représentant les éléments (à l’exception de l’élément maître) du fragment de contenu doivent être créées lors de la création du fragment de contenu ; <em>false</em> s'ils doivent être créés "à la volée".</p> <p><strong>Remarque</strong>: actuellement, ce paramètre doit être défini sur <code>true</code>.</p> </td>
+     <td><p><code>true</code>, si les sous-ressources représentant les éléments (à l’exception de l’élément maître) du fragment de contenu doivent être créées lors de la création du fragment de contenu ; <em>false</em> s’ils doivent être créés "à la volée".</p> <p><strong>Remarque</strong>: actuellement, ce paramètre doit être défini sur <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
      <td><p><code>Long</code></p> <p>requis</p> </td>
-     <td><p>Version de la structure de contenu; actuellement pris en charge :</p> <p><strong>Remarque</strong>: actuellement, ce paramètre doit être défini sur <code>2</code>.<br /> </p> </td>
+     <td><p>version de la structure de contenu ; actuellement pris en charge :</p> <p><strong>Remarque</strong>: actuellement, ce paramètre doit être défini sur <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
   </table>
 
-* **Eléments**
+* **Éléments**
 
    <table>
    <tbody>
@@ -181,12 +184,12 @@ Plus de détails sur les nœuds et leurs propriétés :
     <tr>
      <td><code>defaultContent</code></td>
      <td><p><code>String</code></p> <p>facultatif</p> <p>default: ""</p> </td>
-     <td>Contenu initial de l'élément; utilisé uniquement si <code>precreateElements</code><i> = </i><code>true</code></td>
+     <td>Contenu initial de l'élément ; utilisé uniquement si <code>precreateElements</code><i> = </i><code>true</code></td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
      <td><p><code>String</code></p> <p>facultatif</p> <p>default: <code>text/html</code></p> </td>
-     <td><p>Type de contenu initial de l'élément ; utilisé uniquement si <code>precreateElements</code><i> = </i><code>true</code>; actuellement pris en charge :</p>
+     <td><p>Type de contenu initial de l’élément ; utilisé uniquement si <code>precreateElements</code><i> = </i><code>true</code>; actuellement pris en charge :</p>
       <ul>
        <li><code>text/html</code></li>
        <li><code>text/plain</code></li>
@@ -231,17 +234,17 @@ Plus de détails sur les nœuds et leurs propriétés :
      <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
      <td><p><code>nt:unstructured</code></p> <p>requis si un noeud de variation est présent</p> </td>
      <td><p>Définit une variation initiale.<br /> La variation est ajoutée à tous les éléments du fragment de contenu par défaut.</p> <p>La variation aura le même contenu initial que l’élément correspondant (voir <code class="code">defaultContent/
-       initialContentType</code>)</p> </td>
+       initialContentType</code>).</p> </td>
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>requis</p> </td>
-     <td>Titre de la variation (affiché dans l’onglet <strong>Variation</strong> de l’éditeur de fragments (rail gauche)).</td>
+     <td>Titre de la variation (affiché dans l’onglet <strong>Variation</strong> de l’éditeur de fragments (rail de gauche)).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>facultatif</p> <p>default: ""</p> </td>
-     <td>Texte qui fournit une description de la variation <span>(affichée dans l’onglet <strong>Variation</strong> de l’éditeur de fragments (rail gauche)).</code></td>
+     <td>Texte qui fournit une description de la variation <span>(affichée dans l’onglet <strong>Variation</strong> de l’éditeur de fragments (rail de gauche)).</code></td>
     </tr>
    </tbody>
   </table>
