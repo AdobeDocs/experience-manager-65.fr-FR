@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
-source-wordcount: '2765'
+source-wordcount: '2760'
 ht-degree: 5%
 
 ---
@@ -89,17 +89,17 @@ Pour configurer les fonctionnalités Analytics for Communities, vous devez trava
 
 ## Report Suite Adobe Analytics pour le Rapports vidéo {#adobe-analytics-report-suite-for-video-reporting}
 
-À l’aide du Gestionnaire [](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)de Report Suites d’Adobe Marketing Cloud, les suites de rapports Analytics peuvent être configurées de sorte qu’un site communautaire puisse être activé pour fournir des rapports pour les fonctionnalités des communautés.
+À l’aide du Gestionnaire [](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)de Report Suites d’Adobe Marketing Cloud, les suites de rapports Analytics peuvent être configurées de sorte qu’un site communautaire puisse être activé pour fournir des rapports pour les fonctionnalités des communautés.
 
-En vous connectant à [l’Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) avec le nom de [Société et le nom](/help/communities/analytics.md#prerequisites)d’utilisateur, il est possible de configurer une suite de rapports nouvelle ou existante pour qu’elle dispose des éléments suivants :
+En vous connectant à [Adobe Experience Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) avec le nom de [Société et le nom](/help/communities/analytics.md#prerequisites)d’utilisateur, il est possible de configurer une suite de rapports nouvelle ou existante pour qu’elle dispose des éléments suivants :
 
-* [11 variables](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) de conversion (eVars)
+* [11 variables](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) de conversion (eVars)
 
    * **`evar1`** par **`evar11`** activé
 
    * Peut réutiliser (renommer) des eVars existantes ou en créer de nouvelles à utiliser pour les fonctionnalités Communautés
 
-* [7 Événements](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) de réussite (événements)
+* [7 Événements](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) de réussite (événements)
 
    * **`event1`** par **`event7`** activé
 
@@ -108,8 +108,11 @@ En vous connectant à [l’Adobe Marketing Cloud](https://marketing.adobe.com/re
       * not **`Counter (no subrelations)`**
    * Peut réutiliser (renommer) des événements existants ou en créer de nouveaux à utiliser pour les fonctionnalités des communautés
 
+   <!--
+    NOTE TO WRITER: The following link was broken, so I replaced it. Check for accuracy https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html 
+    -->
 
-* [Gestion des vidéos](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [Gestion des vidéos](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * Console Rapports vidéo
 
@@ -658,11 +661,10 @@ Par exemple, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 ## Gestion des données utilisateur en Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics fournit des API qui vous permettent d’accéder aux données utilisateur, de les exporter et de les supprimer. Pour plus d’informations, voir [Envoyer des demandes d’accès et de suppression](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html).
+Adobe Analytics fournit des API qui vous permettent d’accéder aux données utilisateur, de les exporter et de les supprimer. Pour plus d’informations, voir [Envoyer des demandes d’accès et de suppression](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## Ressources {#resources}
 
-* Adobe Marketing Cloud : [Aide et référence d’Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Experience Cloud : [Aide et référence d’Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics with External Providers](/help/sites-administering/external-providers.md)
-
