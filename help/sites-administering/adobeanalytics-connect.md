@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1544'
+ht-degree: 64%
 
 ---
 
 
 # Connexion à Adobe Analytics et création de structures {#connecting-to-adobe-analytics-and-creating-frameworks}
 
-Pour suivre les données Web de vos pages AEM dans Adobe Analytics, créez une configuration Adobe Analytics Cloud Services et une structure Adobe Analytics :
+Pour effectuer le suivi des données Web de vos pages AEM dans Adobe Analytics, créez une configuration Cloud Service Adobe Analytics Adobe et une structure Analytics :
 
-* **Configuration d’Adobe Analytics :** Informations relatives à votre compte Adobe Analytics. La configuration d’Adobe Analytics permet à AEM de se connecter à Adobe Analytics. Créez une configuration Adobe Analytics pour chaque compte que vous utilisez.
-* **Adobe Analytics Framework :** Ensemble de mappages entre les propriétés de la suite de rapports Adobe Analytics et les variables CQ. Utilisez une structure pour configurer la façon dont les données de votre site web renseignent vos rapports Adobe Analytics. Les cadres sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
+* **Configuration Adobe Analytics :** Informations relatives à votre compte Adobe Analytics. La configuration Adobe Analytics permet à AEM de se connecter à Adobe Analytics. Créez une configuration Adobe Analytics pour chaque compte que vous utilisez.
+* **Cadre de Analytics en Adobe :** Ensemble de mappages entre les propriétés de la suite de rapports Adobe et les variables CQ. Utilisez une structure pour configurer la façon dont les données de votre site web renseignent vos rapports Adobe Analytics. Les cadres sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
 
 Lorsque vous associez une page Web à une structure, celle-ci effectue le suivi pour cette page et ses descendants. Les vues de page peuvent ensuite être récupérées dans Adobe Analytics et affichées dans la console Sites.
 
@@ -29,7 +32,7 @@ Lorsque vous associez une page Web à une structure, celle-ci effectue le suivi 
 
 ### Compte Adobe Analytics {#adobe-analytics-account}
 
-Pour effectuer le suivi des données AEM dans Adobe Analytics, vous devez disposer d’un compte Adobe Marketing Cloud Adobe Analytics valide.
+Pour effectuer le suivi des données AEM dans Adobe, vous devez disposer d’un compte d’Adobe Marketing Cloud Adobe valide.
 
 Le compte Adobe Analytics doit :
 
@@ -85,7 +88,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
 
 ## Configuration pour Activity Map {#configuring-for-the-activity-map}
 
@@ -93,7 +96,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
 
 ## Création d’une structure Adobe Analytics {#creating-a-adobe-analytics-framework}
 
@@ -110,7 +113,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 >Par exemple, une structure est configurée pour utiliser la suite de rapports *diiweretail* et l’instance de serveur sélectionnée est l’instance de création. Lorsque les pages sont publiées avec la structure, les appels sont toujours émis vers Adobe Analytics, mais ces appels ne contiennent pas le RSID. Seuls les appels effectués à partir de l’instance de création incluent le RSID.
 
 1. Avec la **Navigation**, sélectionnez **Outils**, **Services cloud**, puis **Services cloud hérités**.
-1. Accédez à **Adobe Analytics** et sélectionnez **Afficher les configurations**.
+1. Faites défiler l’écran jusqu’à **Adobe** et sélectionnez **Afficher les configurations**.
 1. Click the **[+]** link next to your Adobe Analytics configuration.
 
 1. Dans la boîte de dialogue **Créer une structure** :
@@ -126,7 +129,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 
    >[!NOTE]
    >
-   >L’outil de recherche de contenu sur la gauche est renseigné avec les variables Adobe Analytics (Variables SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
+   >L’outil de recherche de contenu sur la gauche est renseigné par les variables Adobe Analytics (Variables SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
 
 1. Utilisez ensuite le menu déroulant **Mode d’exécution** (situé à côté de l’identifiant de suite de rapports) pour sélectionner les instances de serveur qui doivent envoyer des informations à la suite de rapports.
 
@@ -136,7 +139,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 
 ### Configuration des paramètres de serveur pour Adobe Analytics {#configuring-server-settings-for-adobe-analytics}
 
-Le système de structure vous permet de modifier les paramètres du serveur dans chaque structure Adobe Analytics.
+Le système de cadre vous permet de modifier les paramètres du serveur dans chaque cadre Adobe.
 
 >[!CAUTION]
 >
@@ -166,13 +169,13 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas située en r
 
 ## Association d’une page à une structure Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Lorsqu’une page est associée à une structure Adobe Analytics, elle envoie des données à Adobe Analytics au chargement de la page. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont extraites d’Adobe Analytics.
+Lorsqu’une page est associée à un cadre Adobe Analytics, la page envoie des données à Adobe Analytics lors du chargement de la page. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont extraites d’Adobe Analytics.
 
 Les descendants de la page héritent de l’association avec la structure. Par exemple, lorsque vous associez la page racine de votre site à une structure, toutes les pages du site sont associées à cette structure.
 
 1. From the **Sites** console, select the page you wish to set up with tracking.
 1. Ouvrez les **[Propriétés de la page](/help/sites-authoring/editing-page-properties.md)**, directement à partir de la console ou via l’éditeur de page.
-1. Ouvrez l’onglet** Cloud Services**.
+1. Ouvrez l&#39;onglet** Cloud Service**.
 
 1. Use the **Add Configuration** drop down to select **Adobe Analytics** from the available options. Si l’héritage est en place, vous devez le désactiver pour que le sélecteur devienne disponible.
 
@@ -181,12 +184,12 @@ Les descendants de la page héritent de l’association avec la structure. Par e
 1. Sélectionnez **Enregistrer et fermer**.
 1. **[Publiez](/help/sites-authoring/publishing-pages.md)**la page pour activer la page et tous les fichiers/configurations connecté(e)s.
 1. La dernière étape consiste à visiter la page sur l’instance de publication et à rechercher un mot-clé (par exemple, aubergine) à l’aide du composant **Rechercher**.
-1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Marketing Cloud Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html).
+1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 1. Dans l’exemple fourni, l’appel doit contenir la valeur entrée (c’est-à-dire, aubergine) dans eVar7 et la liste des événements doit contenir event3.
 
 ### Pages vues {#page-views}
 
-Lorsqu’une page est associée à une structure Adobe Analytics, le nombre de vues de page peut être affiché dans la vue de Liste de la console Sites.
+Lorsqu&#39;une page est associée à une structure Adobe Analytics, le nombre de vues de page peut être affiché dans la vue de Liste de la console Sites.
 
 Voir [Affichage des données d’analyse de page](/help/sites-authoring/page-analytics-using.md) pour plus de détails.
 
