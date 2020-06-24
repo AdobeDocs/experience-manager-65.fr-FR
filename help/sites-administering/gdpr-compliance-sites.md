@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 translation-type: tm+mt
-source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '850'
+ht-degree: 91%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
 
 >[!IMPORTANT]
 >
->Le RDMD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les règles de protection des données et de protection de la vie privée; comme le RMR, l&#39;ACCP, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
 
 Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018.
 
 AEM Sites est prêt à aider les clients avec les obligations de conformité au RGPD. Cette page guide les clients à travers les procédures de gestion des demandes RGPD dans AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.
 
-Pour plus d’informations, voir la [page RGPD du centre de traitement des données personnelles d’Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Pour plus d’informations, voir la [page RGPD du centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
@@ -49,13 +52,13 @@ AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md) that
 
 AEM Sites comprend une intégration facultative à Enhanced Insights by Analytics utilisant la fonctionnalité incluse dans le service On-demand Adobe Analytics.
 
-Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Analytics, voir [Adobe Analytics et RGPD](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/).
+Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Analytics, voir [Adobe Analytics et RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites comprend une intégration facultative à Enhanced Personalization by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
 
-Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Target, voir [Adobe Target : Confidentialité et règlement général sur la protection des données (RGPD)](https://marketing.adobe.com/resources/help/en_US/target/target/privacy-and-general-data-protection-regulation.html).
+Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Target, voir [Adobe Target : Confidentialité et règlement général sur la protection des données (RGPD)](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
