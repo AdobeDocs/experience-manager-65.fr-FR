@@ -12,7 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 79%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 >[!CAUTION]
 >
->Il n’est pas recommandé d’étendre ou de modifier les composants réels utilisés dans l’éditeur de fragments, car ils peuvent encore être modifiés.
+>Il n’est pas recommandé d’étendre ou de modifier les composants réels utilisés dans l’éditeur de fragments, car ils peuvent encore faire l’objet de modifications.
 
 See the [Content Fragment Management API - Client-Side](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
@@ -37,9 +40,9 @@ See the [Content Fragment Management API - Client-Side](/help/sites-developing/c
 
 >[!NOTE]
 >
->Voir aussi Fragments [de contenu Configuration des composants pour le rendu](/help/sites-developing/content-fragments-config-components-rendering.md) pour plus d’informations.
+>Voir aussi Fragments de [contenu Configuration des composants pour le rendu](/help/sites-developing/content-fragments-config-components-rendering.md) pour plus d’informations.
 
-Les fragments de contenu d’Adobe Experience Manager (AEM) [sont créés et gérés sous forme de ressources indépendantes de la page](/help/assets/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). [Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu](/help/sites-authoring/content-fragments.md). You can also use an existing content fragment asset by [dragging it from the asset browser to the page](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (as for other asset based components, such as the foundation component Image). Le composant de fragment de contenu prêt à l’emploi affiche un seul [élément](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) du fragment de contenu référencé. Using the component dialog you can define the [element, variation and range of fragment paragraphs](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) that you want to display on the page.
+Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). [Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu](/help/sites-authoring/content-fragments.md). You can also use an existing content fragment asset by [dragging it from the asset browser to the page](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (as for other asset based components, such as the foundation component Image). Le composant de fragment de contenu prêt à l’emploi affiche un seul [élément](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) du fragment de contenu référencé. Using the component dialog you can define the [element, variation and range of fragment paragraphs](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) that you want to display on the page.
 
 >[!NOTE]
 >
@@ -67,9 +70,9 @@ Cette bibliothèque ajoute à l’éditeur des fonctionnalités spécifiques aux
 
 ### Contenu intermédiaire {#in-between-content}
 
-Le composant **Fragment de contenu** vous permet de déposer des composants supplémentaires entre les différents paragraphes de l’[élément](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) affiché. À la base, l’élément affiché est composé de différents paragraphes (chaque paragraphe est marqué par un retour chariot). Entre chacun de ces paragraphes, vous pouvez insérer du contenu en utilisant d’autres composants.
+Le composant **Fragment de contenu** vous permet de déposer des composants supplémentaires entre les différents paragraphes de l’[élément](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) affiché. À la base, l’élément affiché est composé de différents paragraphes (chaque paragraphe est marqué par un retour chariot). Entre chacun de ces paragraphes, vous pouvez insérer du contenu en utilisant d’autres composants.
 
-D’un point de vue technique, chaque paragraphe de l’élément affiché* vit dans ses propres paramètres, et chaque composant que vous ajoutez entre les paragraphes sera (sous la capuche) inséré dans le parsys.
+D&#39;un point de vue technique, chaque paragraphe de l&#39;élément affiché* vit dans ses propres paramètres, et chaque composant que vous ajoutez entre les paragraphes sera (sous le capot) inséré dans le parsys.
 
 En d’autres termes, si l’instance du composant de fragment de contenu est composée de trois paragraphes, le composant possède trois parsys différents dans le référentiel. Tout le contenu intermédiaire ajouté au fragment de contenu se trouve réellement à l’intérieur de ces parsys.
 
@@ -105,7 +108,7 @@ Pour utiliser le composant de fragment de contenu prêt à l’emploi comme plan
 
    * The `afterinsert`/ `afteredit`/ `afterdelete` listeners are used to trigger JS events. Ces événements sont gérés dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` pour afficher le contenu associé dans le panneau latéral.
    * Les `cq:dropTargets` sont configurés de manière à prendre en charge la gestion des fragments de contenu.
-   * `cq:inplaceEditing` est configuré de sorte à prendre en charge la création d’un fragment de contenu dans l’éditeur de pages. L’éditeur de fragment local est défini dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` et permet à un lien rapide d’ouvrir [l’élément/la variation](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) dans l’[éditeur de fragment](/help/assets/content-fragments-variations.md).
+   * `cq:inplaceEditing` est configuré de sorte à prendre en charge la création d’un fragment de contenu dans l’éditeur de pages. L’éditeur de fragment local est défini dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` et permet à un lien rapide d’ouvrir [l’élément/la variation](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) dans l’[éditeur de fragment](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Réécriture d’actifs avant le rendu {#asset-rewriting-before-rendering}
 
