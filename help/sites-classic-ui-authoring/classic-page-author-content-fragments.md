@@ -11,14 +11,17 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
 
 
 # Création de page à partir de fragments de contenu{#page-authoring-with-content-fragments}
 
-Les fragments de contenu d’Adobe Experience Manager (AEM) [sont créés et gérés sous forme de ressources indépendantes de la page](/help/assets/content-fragments.md).
+Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
 
 Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
