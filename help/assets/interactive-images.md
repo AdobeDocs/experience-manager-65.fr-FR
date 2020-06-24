@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
 source-wordcount: '4345'
 ht-degree: 99%
@@ -56,9 +56,10 @@ Voir [(Facultatif) Création d’un paramètre prédéfini de visionneuse d’im
 Voir [Chargement d’une bannière d’image](#uploading-an-image-banner).
 
 1. **Ajout de zones réactives à une bannière d’image** : ajoutez une ou plusieurs zones réactives à une bannière d’image et associez chacune d’elles à une action, comme un lien hypertexte, un aperçu rapide ou un fragment d’expérience. Après avoir ajouté des zones réactives, vous terminez cette tâche en publiant l’image interactive.
-Voir [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
-Voir [Prévisualisation d’images interactives](#optional-previewing-interactive-images) – Facultatif. Si vous le souhaitez, vous pouvez afficher une représentation de votre bannière Shoppable et tester son interactivité.
-Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md) pour obtenir des informations sur la publication de ressources d’images interactives.
+
+   * Voir [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
+   * Voir [Prévisualisation d’images interactives](#optional-previewing-interactive-images) – Facultatif. Si vous le souhaitez, vous pouvez afficher une représentation de votre bannière Shoppable et tester son interactivité.
+   * Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md) pour obtenir des informations sur la publication de ressources d’images interactives.
 
 1. **Ajout d’une image interactive sur votre site web ou sur votre site web dans AEM**
 Si vous utilisez AEM Sites ou AEM eCommerce, ou les deux, vous pouvez ajouter l’image interactive directement dans une page web dans AEM en faisant glisser le composant Interactive Media dans la page. Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
@@ -73,7 +74,6 @@ Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégre
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
 >* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
-
 >
 >
 Si votre mise en œuvre d’AEM utilise eCommerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
@@ -290,7 +290,6 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives ](#opt
 
       * Si vous êtes un client AEM Sites, appuyez ou cliquez sur l’icône de sélecteur de site (dossier) pour accéder à une URL. Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
       * Si vous êtes un client autonome, dans le champ de texte HREF, spécifiez l’URL complète vers une page web liée.
-
    Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
    Pour plus d’informations, reportez-vous à la section [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
