@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7603'
 ht-degree: 71%
 
 ---
@@ -173,7 +173,6 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms su
 
    * Sélectionnez **L’utilisateur ne peut pas changer de mot de passe**.
    * Vérifiez que le groupe **Utilisateurs** figure dans l’onglet **Membre de**.
-
    >[!NOTE]
    >
    >vous ne pouvez pas modifier ce paramètre pour PDF Generator.
@@ -188,7 +187,26 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms su
    * Interdire l’ouverture d’une session locale
    * Ouvrir une session en tant que service (ce droit doit être déjà défini)
 
-1. Attribuez au nouveau compte utilisateur les autorisations de lecture et d’exécution, d’écriture, de modification, de contenu des dossiers de Liste et de lecture pour terminer l’installation de AEM Forms on JEE et le répertoire d’Enregistrement de Document global (GDS). L’emplacement du répertoire de stockage global de documents est configuré manuellement pendant le processus d’installation AEM Forms. Si le paramètre d’emplacement reste vide pendant l’installation, l’emplacement par défaut est un répertoire situé sous l’installation du serveur d’applications à la racine [/serveur/]type[/svcnative/DocumentStorage de]JBoss.
+1. Attribuez au nouveau compte d’utilisateur les autorisations de modification sur les répertoires suivants :
+   * **Répertoire** d’Enregistrement de Document global (GDS) : L’emplacement du répertoire de stockage global de documents est configuré manuellement pendant le processus d’installation AEM Forms. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Répertoire** CRX-Repository : L’emplacement par défaut est `[AEM-Forms-installation-location]\crx-repository`
+   * **Répertoires** temporaires AEM Forms :
+      * (Windows) Chemin TMP ou TEMP tel que défini dans les variables d’environnement
+      * (AIX, Linux, ou Solaris) Répertoire racine de l’utilisateur connecté
+Sur les systèmes de type UNIX, un utilisateur non connecté comme utilisateur root peut utiliser le répertoire suivant comme répertoire temporaire :
+      * (Linux) /var/tmp ou /usr/tmp
+      * (AIX) /tmp ou /usr/tmp
+      * (Solaris) /var/tmp ou /usr/tmp
+1. Attribuez au nouveau compte d’utilisateur des autorisations d’écriture sur les répertoires suivants :
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+   >[!NOTE]
+   >
+   > Emplacement d’installation par défaut de JBoss Application Server :
+   > * Windows : C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux : /opt/jboss/
+
 1. Démarrez le serveur d’applications.
 
 **Désactivation de la servlet d’amorçage de Configuration Manager**
@@ -977,7 +995,26 @@ L’installation clé en main d’AEM Forms sur JEE installe un compte de servic
    * Refuser de se connecter sur locallyxx
    * Ouvrir une session en tant que service (ce droit doit être déjà défini)
 
-1. Attribuez au nouveau compte utilisateur les autorisations de lecture et d’exécution, d’écriture, de modification, de contenu des dossiers de Liste et de lecture pour terminer l’installation de AEM Forms on JEE et le répertoire d’Enregistrement de Document global (GDS). L’emplacement du répertoire de stockage global de documents est configuré manuellement pendant le processus d’installation AEM Forms. Si le paramètre d’emplacement reste vide pendant l’installation, l’emplacement par défaut est un répertoire situé sous l’installation du serveur d’applications à la racine [/serveur/]type[/svcnative/DocumentStorage de]JBoss.
+1. Attribuez au nouveau compte d’utilisateur les autorisations de modification sur les répertoires suivants :
+   * **Répertoire** d’Enregistrement de Document global (GDS) : L’emplacement du répertoire de stockage global de documents est configuré manuellement pendant le processus d’installation AEM Forms. If the location setting remains empty during installation, the location defaults to a directory under the application server installation at `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Répertoire** CRX-Repository : L’emplacement par défaut est `[AEM-Forms-installation-location]\crx-repository`
+   * **Répertoires** temporaires AEM Forms :
+      * (Windows) Chemin TMP ou TEMP tel que défini dans les variables d’environnement
+      * (AIX, Linux, ou Solaris) Répertoire racine de l’utilisateur connecté
+Sur les systèmes de type UNIX, un utilisateur non connecté comme utilisateur root peut utiliser le répertoire suivant comme répertoire temporaire :
+      * (Linux) /var/tmp ou /usr/tmp
+      * (AIX) /tmp ou /usr/tmp
+      * (Solaris) /var/tmp ou /usr/tmp
+1. Attribuez au nouveau compte d’utilisateur des autorisations d’écriture sur les répertoires suivants :
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+   >[!NOTE]
+   >
+   > Emplacement d’installation par défaut de JBoss Application Server :
+   > * Windows : C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux : /opt/jboss/.
+
 
 1. Démarrez le service de serveur d’applications.
 
