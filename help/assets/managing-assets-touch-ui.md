@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '9303'
 ht-degree: 65%
@@ -16,7 +16,7 @@ ht-degree: 65%
 
 Vous [!DNL Adobe Experience Manager Assets] pouvez faire plus que simplement stocker et gérer vos actifs. [!DNL Experience Manager] offres des fonctionnalités de gestion des actifs de niveau entreprise. Vous pouvez modifier et partager des fichiers, lancer des recherches avancées, créer plusieurs rendus de dizaines de formats de fichier pris en charge, gérer des versions et des droits numériques, automatiser le traitement des fichiers, gérer et gérer les métadonnées, collaborer à l’aide d’annotations, etc.
 
-Cet article décrit les tâches de base de la gestion des ressources, telles que la création ou le transfert ; mises à jour des métadonnées ; copier, déplacer et supprimer ; publier, annuler la publication et rechercher des ressources. Pour comprendre l’interface utilisateur, voir [Prise en main de l’interface](/help/sites-authoring/basic-handling.md)utilisateur des ressources. To manage Content Fragments, see [manage Content Fragments](content-fragments-managing.md) assets.
+Cet article décrit les tâches de base de la gestion des ressources, telles que la création ou le transfert ; mises à jour des métadonnées ; copier, déplacer et supprimer ; publier, annuler la publication et rechercher des ressources. Pour comprendre l’interface utilisateur, voir [Prise en main de l’interface](/help/sites-authoring/basic-handling.md)utilisateur des ressources. To manage Content Fragments, see [manage Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) assets.
 
 ## Création de dossiers {#creating-folders}
 
@@ -147,7 +147,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 >[!NOTE]
 >
->Pour télécharger des fichiers par FTP en mode Contenu multimédia dynamique - Scene7, installez Feature Pack 18912 sur les instances d’ [!DNL Experience Manager] auteur. Contact [Adobe Customer Care](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)de ressources en vrac.
+>Pour télécharger des fichiers par FTP en mode Dynamic Media - Scene7, installez Feature Pack 18912 sur les instances d’ [!DNL Experience Manager] auteur. Contact [Adobe Customer Care](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)de ressources en vrac.
 >
 >If you use FTP for uploading assets, the upload settings specified in [!DNL Experience Manager] are ignored. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
@@ -301,11 +301,11 @@ Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble pa
 
 ### Chargements en continu {#streamed-uploads}
 
-Si vous transférez de nombreux fichiers vers Adobe Experience Manager, les demandes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du transfert et peut même entraîner l’expiration de certaines tâches de transfert. [!DNL Experience Manager Assets] prend en charge le téléchargement en flux continu des ressources. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Streamed upload is enabled by default in [!DNL Assets].
+Si vous transférez de nombreux fichiers vers l’Adobe Experience Manager, les demandes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du transfert et peut même entraîner l’expiration de certaines tâches de transfert. [!DNL Experience Manager Assets] prend en charge le téléchargement en flux continu des ressources. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont transférées directement vers le référentiel. Cela permet à la fois d’accélérer le transfert de ressources volumineuses et de réduire les risques d’expiration. Streamed upload is enabled by default in [!DNL Assets].
 
 >[!NOTE]
 >
->Le téléchargement en flux continu est désactivé pour Adobe Experience Manager s’exécutant sur le serveur JEE avec une version api-servlet inférieure à 3.1.
+>Le téléchargement en flux continu est désactivé pour les Adobes Experience Manager s’exécutant sur le serveur JEE avec une version servlet-api inférieure à 3.1.
 
 ### Extraction d’une archive ZIP contenant des ressources {#extractzip}
 
@@ -358,7 +358,7 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
 
 >[!MORELIKETHIS]
 >
->* [Prévisualisation des ressources](/help/assets/previewing-assets.md)de médias dynamiques.
+>* [Prévisualisation Dynamic Media Assets](/help/assets/previewing-assets.md).
 >* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
 
 
@@ -506,7 +506,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs ressources, vous pouvez personnaliser Experience Manager pour supprimer des rendus spécifiques ou supprimer les ressources et télécharger à nouveau les ressources supprimées.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** icon from the toolbar. Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez personnaliser le Experience Manager pour supprimer des rendus spécifiques ou supprimer les fichiers et télécharger à nouveau les fichiers supprimés.
 
    ![Option de suppression d’un rendu](assets/delete_renditionicon.png)
 
@@ -565,7 +565,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 ## Téléchargement de ressources {#downloading-assets}
 
-Voir [Téléchargement de fichiers à partir d’Experience Manager](/help/assets/download-assets-from-aem.md).
+Voir [Téléchargement de fichiers à partir d’un Experience Manager](/help/assets/download-assets-from-aem.md).
 
 ## Publication des ressources {#publishing-assets}
 
@@ -732,7 +732,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 >[!NOTE]
 >
->La chronologie comprend plusieurs [options spécifiques aux fragments de contenu](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>La chronologie comprend plusieurs [options spécifiques aux fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Annotation de fichiers {#annotating}
 
@@ -742,7 +742,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 >[!NOTE]
 >
->Pour les fragments de contenu, [les annotations sont créées dans l’éditeur de fragment](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
+>Pour les fragments de contenu, [les annotations sont créées dans l’éditeur de fragment](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Accédez à l’emplacement de la ressource à laquelle vous souhaitez ajouter des annotations.
 1. Click the **[!UICONTROL Annotate]** icon from one of the following:
