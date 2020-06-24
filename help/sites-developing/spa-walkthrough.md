@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 3%
 
 ---
 
@@ -103,6 +106,7 @@ Lorsqu’une application d’une seule page est créée pour tirer parti de l’
 >
 >* [AEM version 6.4 avec Service Pack 2](/help/release-notes/sp-release-notes.md)
 >* [Installez l&#39;exemple d&#39;application de Journal We.Retail disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
 >
 
 
@@ -142,7 +146,7 @@ D’autres outils de création, tels que le glisser-déposer de composants suppl
 
 ## Applications d’application d’une seule page et éditeur d’applications d’une seule page {#spa-apps-and-the-aem-spa-editor}
 
-L’expérience de comportement d’une application d’une seule page pour l’utilisateur final, puis l’inspection de la page d’une application d’une seule page permettent de mieux comprendre comment une application SAP fonctionne avec l’éditeur d’applications d’une seule page dans AEM.
+L’expérience de comportement d’une application d’une seule page d’une seule page d’une seule page permet de mieux comprendre comment une application SAP fonctionne avec l’éditeur d’applications d’une seule page dans AEM.
 
 ### Utilisation d’une application SPA {#using-an-spa-application}
 
@@ -205,7 +209,7 @@ La section suivante, [Chargement d’une application](/help/sites-developing/spa
    </html>
    ```
 
-   La page ne contient aucun contenu dans son corps. Il est principalement composé de feuilles de style et d&#39;un appel à un script React `we-retail-journal-react.js`.
+   La page ne comporte aucun contenu dans son corps. Il est principalement composé de feuilles de style et d&#39;un appel à un script React `we-retail-journal-react.js`.
 
    Ce script React est le pilote principal de cette application et est responsable du rendu de tout le contenu.
 
@@ -225,7 +229,7 @@ La section suivante, [Chargement d’une application](/help/sites-developing/spa
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   L’éditeur d’applications d’une seule page utilise [AEM Content Services](/help/assets/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous forme de modèle JSON.
+   L’éditeur d’applications d’une seule page utilise [AEM Content Services](/help/assets/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous forme de modèle JSON.
 
    En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à l’application d’une seule page. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
 
@@ -263,7 +267,7 @@ Dans la section suivante, nous allons explorer le contrat qui permet à l’édi
 
    ![screen_shot_2018-06-08at095124](assets/screen_shot_2018-06-08at095124.png)
 
-   Par exemple
+   Par exemple, 
 
    `data-cq-data-path="root/responsivegrid/paragraph_1`
 
