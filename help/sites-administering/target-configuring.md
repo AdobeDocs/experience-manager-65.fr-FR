@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '2202'
+ht-degree: 74%
 
 ---
 
@@ -31,21 +34,21 @@ To locate the cloud configuration and the framework, Navigate to **Cloud Service
 
 Les valeurs de propriétés suivantes sont utilisées dans la configuration de cloud de la configuration Target mise en service créée par l’assistant de souscription :
 
-* **** Code client : Comme indiqué dans l’assistant d’ouverture de session.
-* **** Courriel : Comme indiqué dans l’assistant d’ouverture de session.
-* **** Mot de passe : Comme indiqué dans l’assistant d’ouverture de session.
-* **** Type d’API : REPOSE
-* **** Synchroniser les segments à partir d’Adobe Target : Sélectionné.
+* **Code client :** Comme indiqué dans l’assistant d’ouverture de session.
+* **Courriel :** Comme indiqué dans l’assistant d’ouverture de session.
+* **Mot de passe :** Comme indiqué dans l’assistant d’ouverture de session.
+* **Type d&#39;API :** REPOSE
+* **Synchroniser les segments à partir de l&#39;Adobe Target :** Sélectionné.
 
-* **** Bibliothèque client : mbox.js.
-* **** Utilisez la gestion dynamique des balises pour diffuser la bibliothèque client : Non sélectionné. Select this option if you [use DTM](/help/sites-administering/dtm.md) or another tag management system to host the mbox.js or AT.js file. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
+* **Bibliothèque cliente :** mbox.js.
+* **Utilisez la gestion dynamique des balises pour diffuser la bibliothèque cliente :** Non sélectionné. Select this option if you [use DTM](/help/sites-administering/dtm.md) or another tag management system to host the mbox.js or AT.js file. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
 
-* **** mbox.js personnalisé : Aucune n’est spécifiée pour que le fichier mbox.js par défaut soit utilisé. Spécifiez un fichier mbox.js personnalisé selon vos besoins. S’affiche uniquement si vous avez sélectionné mbox.js.
-* **** Custom AT.js : Aucun n’est spécifié pour que le fichier AT.js par défaut soit utilisé. Spécifiez un fichier AT.js personnalisé selon vos besoins.  S’affiche uniquement si vous avez sélectionné AT.js.
+* **mbox.js personnalisé :** Aucun spécifié pour que le fichier mbox.js par défaut soit utilisé. Spécifiez un fichier mbox.js personnalisé selon vos besoins. S’affiche uniquement si vous avez sélectionné mbox.js.
+* **Custom AT.js :** Aucun spécifié pour que le fichier AT.js par défaut soit utilisé. Spécifiez un fichier AT.js personnalisé selon vos besoins.  S’affiche uniquement si vous avez sélectionné AT.js.
 
 >[!NOTE]
 >
->In AEM 6.3, you can select the Target Library file, [AT.JS](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html), which is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications.
+>In AEM 6.3, you can select the Target Library file, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), which is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications.
 >
 >AT.js propose plusieurs améliorations par rapport à la bibliothèque mbox.js :
 >
@@ -53,9 +56,7 @@ Les valeurs de propriétés suivantes sont utilisées dans la configuration de c
 >* Sécurité renforcée
 >* Meilleures options de mise en œuvre pour les applications d’une seule page
 >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.js.
->
->
-See [Target release notes](https://marketing.adobe.com/resources/help/en_US/target/rn/201604.html) for more information.
+
 
 ### Propriétés de structure de Target mise en service {#provisioned-target-framework-properties}
 
@@ -97,14 +98,13 @@ Pour ce faire, vous devez spécifier la configuration de cloud d’A4T pour conn
 Intégrez manuellement à Adobe Target au lieu d’utiliser l’assistant de souscription.
 
 >[!NOTE]
-The Target Library file, [AT.JS](https://marketing.adobe.com/resources/help/en_US/target/ov2/c_target-atjs-implementation.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. Adobe recommande d’utiliser AT.js, au lieu de mbox.js, comme bibliothèque cliente.
+The Target Library file, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), is a new implementation library for Adobe Target that is designed for both typical web implementations and single-page applications. Adobe recommande d’utiliser AT.js, au lieu de mbox.js, comme bibliothèque cliente.
 AT.js propose plusieurs améliorations par rapport à la bibliothèque mbox.js :
 * Temps de chargement des pages améliorés pour les mises en œuvre web
 * Sécurité renforcée
 * Meilleures options de mise en œuvre pour les applications d’une seule page
 * AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.js.
 
-See [Target release notes](https://marketing.adobe.com/resources/help/en_US/target/rn/201604.html) for more information.
 Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
 
 ### Création d’une configuration de cloud Target {#creating-a-target-cloud-configuration}
@@ -127,6 +127,7 @@ Utilisez la procédure suivante pour créer une configuration de cloud Target da
    1. Give the configuration a **Title**.
    1. Select the **Adobe Target Configuration** template.
    1. Cliquez sur **Créer**.
+
    La boîte de dialogue de modification s’ouvre.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
@@ -147,12 +148,13 @@ Utilisez la procédure suivante pour créer une configuration de cloud Target da
    * **Type d’API** : REST ou XML.
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration de cloud Analytics utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 
-   * **** Utilisez un ciblage précis : Cette case à cocher est activée par défaut. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque qui suit.
-   * **** Synchroniser les segments à partir d’Adobe Target : Sélectionnez cette option pour télécharger les segments définis dans Target afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
-   * **** Bibliothèque client : Indiquez si vous souhaitez utiliser la bibliothèque cliente mbox.js ou AT.js.
+   * **Utiliser un ciblage précis :** Cette case à cocher est activée par défaut. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque qui suit.
+   * **Synchroniser les segments à partir d&#39;un Adobe Target :** Sélectionnez cette option pour télécharger les segments définis dans la Cible afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
+   * **Bibliothèque cliente :** Indiquez si vous souhaitez utiliser la bibliothèque cliente mbox.js ou AT.js.
    * **Utilisez la gestion dynamique des balises pour diffuser la bibliothèque** client : sélectionnez cette option pour utiliser AT.js ou mbox.js de la gestion dynamique des balises ou un autre système de gestion des balises. You must [configure the DTM integration](/help/sites-administering/dtm.md) to use this option. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
    * **Fichier mbox.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier mbox.js par défaut. Vous pouvez également télécharger votre fichier mbox.js personnalisé. S’affiche uniquement si vous avez sélectionné mbox.js.
    * **AT.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier AT.js par défaut. Vous pouvez également télécharger votre fichier AT.js personnalisé.  S’affiche uniquement si vous avez sélectionné AT.js.
+
    >[!NOTE]
    Par défaut, lorsque vous souscrivez à l’assistant de configuration Adobe Target, le ciblage précis est activé.
    Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, le ciblage précis peut entraîner un délai de quelques millisecondes avant le chargement du contenu.
@@ -183,7 +185,7 @@ Vous pouvez créer des structures multiples pour une même configuration Target.
    >[!NOTE]
    Lors de la mise en correspondance, les paramètres sont transmis à un mbox via des chaînes simples. Vous ne pouvez pas mettre en correspondance des tableaux à partir de ContextHub.
 
-   For example, to use **Profile Data** about your site vistors to control your Target campaign, drag the **Profile Data** component to the page. Les variables de données de profil disponibles pour le mappage aux paramètres Target apparaissent.
+   For example, to use **Profile Data** about your site vistors to control your Target campaign, drag the **Profile Data** component to the page. Les variables de données de profil disponibles pour le mappage aux paramètres de Cible s’affichent.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -198,7 +200,7 @@ La structure est créée. Pour répliquer la structure sur l’instance de publi
 
 ### Association des activités à la configuration de cloud Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-authoring/activitylib.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://marketing.adobe.com/resources/help/en_US/target/target/c_manage_content.html).
+Associate your [AEM activities](/help/sites-authoring/activitylib.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 Les types d’activités disponibles sont déterminés par ce qui suit :
