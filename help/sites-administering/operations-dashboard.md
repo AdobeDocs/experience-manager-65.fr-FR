@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3dd3f700cd473570889f8d4ced09281a577e2ef8
+source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+workflow-type: tm+mt
+source-wordcount: '6229'
+ht-degree: 77%
 
 ---
 
@@ -104,14 +107,15 @@ La création d’un contrôle de l’intégrité individuel comprend deux étape
 
    Les propriétés ci-dessous doivent être définies sur le nouveau nœud :
 
-   * **Nom:** `sling:resourceType`
+   * **Nom (name) :**`sling:resourceType`
 
       * **Type:** `String`
       * **Valeur:** `granite/operations/components/mbean`
-   * **Nom:** `resource`
+   * **Nom (name) :**`resource`
 
       * **Type:** `String`
       * **Valeur:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+
    >[!NOTE]
    >
    >The resource path above is created as follows: if the mbean name of your Health Check is &quot;test&quot;, add &quot;test&quot; to the end of the path `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
@@ -150,6 +154,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
    * **Balises (hc.tags) :** balises de ce contrôle de l’intégrité. Si ce contrôle de l’intégrité composite est conçu pour faire partie d’un autre contrôle de l’intégrité composite (comme dans une hiérarchie de contrôles de l’intégrité), ajoutez les balises auxquelles ce contrôle composite est lié.
    * **Nom du MBean (hc.mbean.name) :** nom du MBean qui sera attribué au MBean JMX de ce contrôle de l’intégrité composite.
    * **Balises de filtrage (filter.tags) :** il s’agit d’une propriété spécifique aux contrôles de l’intégrité composites. Ce sont les balises que le contrôle composite doit agréger. Le contrôle de l’intégrité composite agrège, sous son groupe, tous les contrôles de l’intégrité possédant une balise correspondant aux balises de filtrage de ce contrôle composite. Par exemple, un contrôle de l’intégrité composite possédant les balises de filtrage **test** et **check** agrège tous les contrôles de l’intégrité individuels et composites possédant la balise **test** ou **check** dans leur propriété de balise ( `hc.tags`).
+
    >[!NOTE]
    >
    >Un nouveau MBean JMX est créé pour chaque nouvelle configuration du contrôle de l’intégrité composite Apache Sling.**
@@ -158,19 +163,21 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
 
    Par exemple, si vous avez créé une configuration et défini la valeur **hc.mbean.name** sur **diskusage**, les nœuds de configuration se présentent comme suit :
 
-   * **Nom:** `Composite Health Check`
+   * **Nom (name) :**`Composite Health Check`
 
       * **Type:** `nt:unstructured`
+
    Avec les propriétés suivantes :
 
-   * **Nom:** `sling:resourceType`
+   * **Nom (name) :**`sling:resourceType`
 
       * **Type:** `String`
       * **Valeur:** `granite/operations/components/mbean`
-   * **Nom:** `resource`
+   * **Nom (name) :**`resource`
 
       * **Type:** `String`
       * **Valeur:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+
    >[!NOTE]
    >
    >Si vous créez des contrôles de l’intégrité individuels, qui font partie logiquement d’un contrôle composite déjà présent dans le tableau de bord par défaut, ils sont enregistrés et regroupés automatiquement sous le contrôle composite correspondant. Pour cette raison, il n’est pas nécessaire de créer un nœud de configuration pour ces contrôles.
@@ -221,12 +228,12 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
      <li>renvoie « Critique » si au moins une piste d’indexation échoue ;</li>
      <li>checks the <code>lastIndexedTime</code> for all indexing lanes and:
       <ul>
-       <li>renvoie l’état critique s’il y a plus de 2 heures </li>
+       <li>renvoie l'état critique s'il y a plus de 2 heures </li>
        <li>renvoie l'état d'avertissement s'il y a entre 2 heures et 45 minutes </li>
-       <li>renvoie l’état OK s’il y a moins de 45 minutes. </li>
+       <li>renvoie l'état OK s'il y a moins de 45 minutes </li>
       </ul> </li>
      <li>renvoie « OK » si aucune de ces conditions n’est remplie.</li>
-    </ul> <p>Les seuils des états Critique et Avertissement sont configurables. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque : </strong>Cette vérification d’intégrité est disponible avec AEM 6.4 et a été renvoyée vers AEM 6.3.0.1.</p> </td>
+    </ul> <p>Les seuils des états Critique et Avertissement sont configurables. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque : </strong>Cette vérification d’intégrité est disponible avec AEM 6.4 et a été renvoyée à AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Index Lucene volumineux</td>
@@ -290,7 +297,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
   </tr>
   <tr>
    <td>Contrôles de sécurité</td>
-   <td><p>Le contrôle de sécurité est un contrôle composite, qui agrège les résultats de différents contrôles liés à la sécurité. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> La vérification est utile comme test de fumée de sécurité au démarrage de l’instance. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitych</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">ecks,type=HealthCheck</a></p> </td>
+   <td><p>Le contrôle de sécurité est un contrôle composite, qui agrège les résultats de différents contrôles liés à la sécurité. These individual health checks address different concerns from the security checklist available at the <a href="/help/sites-administering/security-checklist.md">Security Checklist documentation page.</a> La vérification est utile comme test de fumée de sécurité au démarrage de l'instance. </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitych</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">ecks,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Lots actifs</td>
@@ -312,7 +319,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
    <td>Erreurs de chemin de recherche des ressources</td>
    <td><p>Checks if there are any resources in the path <code>/apps/foundation/components/primary</code> and:</p>
     <ul>
-     <li>renvoie Avertir s’il existe des noeuds enfants sous <code>/apps/foundation/components/primary</code></li>
+     <li>renvoie Avertir s'il y a des noeuds enfants sous <code>/apps/foundation/components/primary</code></li>
     </ul> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=resourceSearchPathErrorHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
  </tbody>
@@ -336,6 +343,7 @@ Le tableau de bord des contrôles de l’intégrité peut être intégré à Nag
    1. Dans le volet de gauche, appuyez sur **Core Config Manager** sous **Advanced Configuration**.
    1. Press the **Hosts** link under the **Monitoring** section.
    1. Ajoutez la définition de l’hôte :
+
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    Voici un exemple de fichier de configuration de l’hôte si vous utilisez Nagios Core :
@@ -404,7 +412,7 @@ Pour accéder à l’écran Outils de diagnostic, sélectionnez **Outils > Opé
 
 Par défaut, l’interface utilisateur des messages du journal affiche tous les messages ERREUR. Si vous souhaitez afficher davantage de messages du journal, vous devez configurer un enregistreur avec le niveau de journalisation approprié.
 
-Les messages du journal utilisent un appender de journal en mémoire et ne sont donc pas liés aux fichiers journaux. Une autre conséquence est que la modification des niveaux de journal dans cette interface utilisateur ne modifiera pas les informations qui sont connectées dans les fichiers journaux traditionnels. L’ajout et la suppression d’enregistreurs dans cette interface utilisateur affectent uniquement l’enregistreur dans la mémoire. Notez par ailleurs que la modification des configurations de l’enregistreur se répercutera ultérieurement dans l’enregistreur en mémoire : les entrées déjà journalisées et qui ne sont plus pertinentes ne sont pas supprimées, mais des entrées similaires ne seront pas journalisées à l’avenir.
+Les messages du journal utilisent un appender de journal en mémoire et ne sont donc pas liés aux fichiers journaux. Une autre conséquence est que la modification des niveaux de journalisation dans cette interface utilisateur ne modifiera pas les informations qui sont enregistrées dans les fichiers journaux traditionnels. L’ajout et la suppression d’enregistreurs dans cette interface utilisateur affectent uniquement l’enregistreur dans la mémoire. Notez par ailleurs que la modification des configurations de l’enregistreur se répercutera ultérieurement dans l’enregistreur en mémoire : les entrées déjà journalisées et qui ne sont plus pertinentes ne sont pas supprimées, mais des entrées similaires ne seront pas journalisées à l’avenir.
 
 Vous pouvez configurer les éléments journalisés en fournissant des configurations d’enregistreur en cliquant sur l’icône d’engrenage dans la partie supérieure gauche de l’interface utilisateur. Vous pouvez y ajouter, supprimer ou mettre à jour des configurations d’enregistreur. Une configuration d’enregistreur se compose d’un **niveau de journal** (AVERTISSEMENT/INFO/DÉBOGAGE) et d’un **nom de filtre**. Le **nom du filtre** est chargé de filtrer la source des messages du journal consignés. Si un enregistreur doit enregistrer tous les messages du journal pour un niveau spécifié, le nom du filtre doit être « **root** ». La définition du niveau d’un enregistreur déclenche l’enregistrement de tous les messages dont le niveau est supérieur ou égal au niveau spécifié.
 
@@ -431,7 +439,7 @@ Exemples :
 
 >[!NOTE]
 >
->**Avec AEM 6.4**, les tâches de maintenance sont déconnectées de la zone dans un format plus riche en informations au niveau des informations. L’état des tâches de maintenance est ainsi plus lisible.
+>**Avec AEM 6.4**, les tâches de maintenance sont déconnectées de la boîte dans un format plus riche en informations au niveau des informations. L’état des tâches de maintenance est ainsi plus lisible.
 >
 >Si vous utilisez des outils tiers (comme Splunk) pour surveiller l’activité des tâches de maintenance et y réagir, vous pouvez utiliser les instructions de journal suivantes :
 
@@ -507,13 +515,13 @@ It can be accessed by going to **Tools - Operations - Diagnosis **from the Welco
 
 It can also be accessed directly at this URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
+![capture d&#39;écran_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
 
 L’interface utilisateur peut être utilisée pour filtrer les index dans le tableau en entrant les critères de filtre dans la zone de recherche située dans le coin supérieur gauche de l’écran.
 
 ### Télécharger le ZIP d’état {#download-status-zip}
 
-Cette option permet de télécharger un fichier ZIP contenant des informations utiles sur l’état et la configuration du système. L’archive contient des configurations d’instance, une liste de lots, des mesures OSGI, Sling et des statistiques, ce qui peut générer un fichier volumineux. You can reduce the impact of large status files by using the **Download Status ZIP** window. **La fenêtre est accessible à partir de : AEM > Outils > Opérations > Diagnostic > ZIP d’état du téléchargement.**
+Cette option permet de télécharger un fichier ZIP contenant des informations utiles sur l’état et la configuration du système. L’archive contient des configurations d’instance, une liste de lots, des mesures OSGI, Sling et des statistiques, ce qui peut générer un fichier volumineux. You can reduce the impact of large status files by using the **Download Status ZIP** window. The window can be accessed from:**AEM > Tools > Operations > Diagnosis > Download Status ZIP.**
 
 Dans cette fenêtre, vous pouvez sélectionner les éléments à exporter (fichiers journaux et/ou image mémoire des threads) ainsi que le nombre de jours à prendre en compte dans le téléchargement par rapport à la date actuelle.
 
@@ -565,7 +573,7 @@ Utilisez la tâche Nettoyage des binaires Lucene pour purger les fichiers binair
 La tâche de maintenance a été conçue en vue de réduire les objets inutilisés dans les révisions liés à Lucene, mais elle présente en outre des avantages d’ordre général en termes d’efficacité :
 
 * L’exécution hebdomadaire de la tâche de nettoyage d’un entrepôt de données se terminera plus rapidement.
-* Il peut également légèrement améliorer les performances générales d’AEM
+* Il peut également légèrement améliorer les performances globales d’AEM
 
 You can access the Lucene Binaries Cleanup task from: **AEM > Tools > Operations > Maintenance > Daily Maintenance Window > Lucene Binaries Cleanup**.
 
@@ -621,38 +629,38 @@ Les tâches de maintenance personnalisées peuvent être mises en œuvre sous fo
 <table>
  <tbody>
   <tr>
-   <td><strong>Nom de propriété du service</strong><br /> </td>
+   <td><strong>Nom de la propriété du service</strong><br /> </td>
    <td><strong>Description</strong></td>
    <td><strong>Exemple</strong><br /> </td>
    <td><strong>Type</strong></td>
   </tr>
   <tr>
    <td>granite.maintenance.isStoppable</td>
-   <td>Attribut booléen définissant si la tâche peut être arrêtée par l’utilisateur. Si une tâche indique qu’elle peut être arrêtée, elle doit vérifier pendant son exécution si elle a été arrêtée, puis agir en conséquence. La valeur par défaut est false.</td>
+   <td>Attribut booléen définissant si l'utilisateur peut arrêter la tâche. Si une tâche indique qu’elle peut être arrêtée, elle doit vérifier pendant son exécution si elle a été arrêtée, puis agir en conséquence. La valeur par défaut est false.</td>
    <td>true</td>
    <td>Facultatif</td>
   </tr>
   <tr>
    <td>granite.maintenance.mandatory</td>
-   <td>Attribut booléen définissant si une tâche est obligatoire et doit être exécutée périodiquement. Si une tâche est obligatoire, mais qu’elle ne se trouve pas actuellement dans une fenêtre de planification active, un contrôle de l’intégrité signale qu’il s’agit d’une erreur. La valeur par défaut est false.</td>
+   <td>Attribut booléen définissant si une tâche est obligatoire et doit être exécutée régulièrement. Si une tâche est obligatoire, mais qu’elle ne se trouve pas actuellement dans une fenêtre de planification active, un contrôle de l’intégrité signale qu’il s’agit d’une erreur. La valeur par défaut est false.</td>
    <td>true</td>
    <td>Facultatif</td>
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
-   <td>Nom unique de la tâche : il est utilisé pour référencer la tâche. C'est généralement un nom simple.</td>
+   <td>Nom unique de la tâche : il est utilisé pour faire référence à la tâche. Il s'agit généralement d'un nom simple.</td>
    <td>MyMaintenanceTask</td>
    <td>Requis</td>
   </tr>
   <tr>
    <td>granite.maintenance.title</td>
    <td>Titre affiché pour cette tâche</td>
-   <td>Ma tâche de maintenance spéciale</td>
+   <td>Ma Tâche de maintenance spéciale</td>
    <td>Requis</td>
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>Il s’agit d’un sujet unique de la tâche de maintenance.<br /> Le traitement des tâches Apache Sling démarre une tâche avec cette rubrique exactement afin d’exécuter la tâche de maintenance ; lorsque la tâche est enregistrée pour cette rubrique, elle est exécutée.<br /> La rubrique doit commencer par <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>Il s'agit d'un sujet unique de la tâche de maintenance.<br /> Le traitement des tâches Apache Sling démarre une tâche avec cette rubrique exactement afin d’exécuter la tâche de maintenance ; lorsque la tâche est enregistrée pour cette rubrique, elle est exécutée.<br /> La rubrique doit être début avec <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Requis</td>
   </tr>
@@ -677,7 +685,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 [experience-emanager-java-maintenancetask-sample](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample)- [src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-maintenancetask-sample/blob/master/src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.java)
 
-Une fois le service déployé, il est exposé à l’interface utilisateur du tableau de bord Opérations. Vous pouvez l’ajouter à l’un des calendriers de maintenance disponibles :
+Une fois le service déployé, il est exposé à l’interface utilisateur du Tableau de bord des opérations. Vous pouvez l&#39;ajouter à l&#39;un des programmes de maintenance disponibles :
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -695,7 +703,7 @@ The **System Overview Dashboard** displays a high-level overview of the configur
 
 To access the System Overview Dashboard, navigate to **Tools > Operations > System Overview**.
 
-![system_overview_dashboard](assets/system_overview_dashboard.png)
+![system_overview_tableau de bord](assets/system_overview_dashboard.png)
 
 ### Explication du tableau de bord de présentation du système {#system-overview-dashboard-explained}
 
@@ -827,7 +835,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
    <td>Page de réplication</td>
   </tr>
   <tr>
-   <td>Workflows</td>
+   <td>Workflows   </td>
    <td>
     <ul>
      <li>Tâches de workflow :
@@ -837,7 +845,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
       </ul> </li>
     </ul>
     <ul>
-     <li>Comptages de processus - nombre de processus dans un état donné (le cas échéant) :
+     <li>Comptabilisation des flux de travail - nombre de workflows dans un état donné (le cas échéant) :
       <ul>
        <li>en cours d’exécution</li>
        <li>a échoué</li>
@@ -875,7 +883,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
      <li>balises</li>
      <li>éléments autorisables</li>
      <li>nombre total de nœuds<br /> </li>
-    </ul> <p>Le nombre total de noeuds est obtenu à partir de nodeCounterMBean, tandis que le reste des statistiques est obtenu à partir de IndexInfoService.</p> </td>
+    </ul> <p>Le nombre total de noeuds est obtenu à partir de nodeCounterMBean, tandis que le reste des statistiques est obtenu à partir d'IndexInfoService.</p> </td>
    <td>N/D</td>
    <td>N/D</td>
   </tr>
