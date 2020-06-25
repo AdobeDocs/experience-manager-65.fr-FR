@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Flux d’activités
 seo-title: Fonctionnalité Flux d’activités
-description: '  d’un membre de la communauté connecté'
-seo-description: '  d’un membre de la communauté connecté'
+description: Activités d'un membre de la communauté inscrit
+seo-description: Activités d'un membre de la communauté inscrit
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 26%
 
 ---
 
@@ -24,10 +27,10 @@ The activities of a signed in community member, such as posting to a forum or bl
 
 La possibilité de suivi ajoute une autre vue des activités lorsque des membres de la communauté suivent des publications d’intérêt ou suivent les activités d’autres membres de la communauté.
 
-Le  décrit :
+Le document décrit :
 
-* Ajout du composant   flux à un site AEM
-* Paramètres de configuration du composant   flux
+* Ajouter le composant Flux d’Activité à un site AEM
+* Paramètres de configuration du composant Flux d’Activité
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
 
@@ -41,58 +44,58 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### Configuration du composant Flux d’activités {#configuring-activity-streams}
 
 Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![chlimage_1-494](assets/chlimage_1-494.png)
 
 Dans l’onglet **Activités de l’utilisateur**, spécifiez les activités à afficher :
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![activités utilisateur](assets/user-activities.png)
 
 * **Nombre max. d&#39;activités**
 
-   Nombre de   à afficher
+   Nombre d’activités à afficher
 
 * **Chemin d&#39;accès aux ressources de flux**
 
-   Laissez vide pour que le site de la communauté ou le groupe de la communauté soit défini par défaut. Le chemin d’accès aux ressources de flux identifie la source des activités. Par défaut, ce champ est vide.
+   Ne renseignez pas ce champ pour que le site de la communauté ou le groupe de la communauté soit défini par défaut. Le chemin d’accès aux ressources de flux identifie la source des activités. Par défaut, ce champ est vide.
 
 * **Afficher la vue Activités de l’utilisateur**
 
-   Si cette option est cochée, la page  du  inclura un onglet qui desen fonction de ceux générés au sein de la communauté par le membre actuel. Cette option est cochée par défaut.
+   Si cette case est cochée, la page activités comprend un onglet qui filtres les activités en fonction de celles générées au sein de la communauté par le membre actuel. Cette option est cochée par défaut.
 
 * **Afficher la vue Toutes les activités**
 
-   Si cette option est cochée, la page  du  comprend un onglet qui comprend tous les  de générés au sein de la communauté à laquelle le membre actuel a accès. Cette option est cochée par défaut.
+   Si cette case est cochée, la page activités comprend un onglet qui comprend toutes les activités générées au sein de la communauté à laquelle le membre actif a accès. Cette option est cochée par défaut.
 
 * **Afficher la vue suivante**
 
-   Si cette option est cochée, la page  du  inclura un onglet qui lesen fonction de ceux que suit le membre actuel. Cette option est cochée par défaut.
+   Si cette case est cochée, la page activités comprend un onglet qui filtres les activités en fonction de celles que suit le membre actuel. Cette option est cochée par défaut.
 
-### suivant {#following-view}
+### Vue suivante {#following-view}
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar, filelibrary etcommentaires.](/help/communities/calendar.md)[](/help/communities/file-library.md)[](/help/communities/comments.md)
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar, filelibrary et les commentaires.](/help/communities/calendar.md)[](/help/communities/file-library.md)[](/help/communities/comments.md)
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![chlimage_1-5](assets/chlimage_1-5.png)
 
-Le bouton **Suivre** permet de suivre les entrées sous la forme  , [notifications](/help/communities/notifications.md)ou [](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La `Email Subscriptions` sélection n’est présente que lorsqu’elle est configurée.
+Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md)ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La `Email Subscriptions` sélection n’est présente que lorsqu’elle est configurée.
 
-Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivant**. Pour des raisons pratiques, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
+Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour plus de commodité, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
 
-Le bouton **Suivre** s’affiche.
+Le bouton **Suivre** s’affiche :
 
-* lors de l’affichage de la  d’un autre membre
-* sur une page de présentation principale, telle que les forums, la qualité de vie et les blogs
+* Lors de l’affichage du profil d’un autre membre.
+* Sur une page de présentation principale, telle que les forums, la qualité de vie et les blogs.
 
-   * suit tous les   pour cette fonctionnalité générale
+   * Suit toutes les activités de cette fonction générale.
 
-* pour une entrée spécifique, telle qu’un sujet de forum, une question QnA ou un article de blog
+* Pour une entrée spécifique, telle qu’un sujet de forum, une question QnA ou un article de blog.
 
-   * suit tous les   pour cette entrée spécifique
+   * Suit toutes les activités de cette entrée spécifique.
 
 ### Informations supplémentaires {#additional-information}
 
