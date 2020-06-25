@@ -3,9 +3,9 @@ title: Formats de fichiers pris en charge pour le traitement dans [!DNL Adobe Ex
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f47f5e45c64e3cbbe0b68d449a5ef8d4b7dd7f38
+source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1647'
 ht-degree: 58%
 
 ---
@@ -74,7 +74,7 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 La liste suivante de formats 3D est prise en charge.
 
-Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.md)
+Voir aussi [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.md)
 
 | Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d&#39;accès | prévisualisation de miniature | prévisualisation 3D | diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
