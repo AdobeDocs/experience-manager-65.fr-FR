@@ -3,10 +3,10 @@ title: Utilisez PDF rasterizer pour générer des rendus de fichiers PDF.
 description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer de [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 21f30cf67b73d26afc3f0413ca997a0b6e46e3d3
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 41%
+source-wordcount: '735'
+ht-degree: 40%
 
 ---
 
@@ -21,7 +21,7 @@ When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experien
 
 Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d’une plus grande qualité par rapport à la sortie native et fournissent donc une expérience d’affichage homogène sur tous les périphériques. La bibliothèque PDF Rasterizer d’Adobe ne prend en charge aucune conversion d’espace colorimétrique. Elle génère toujours une sortie RVB indépendamment de l’espace colorimétrique du fichier source.
 
-1. Installez le package PDF Rasterizer sur votre [!DNL Experience Manager] déploiement à partir du [package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) ou de la distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)logiciels.
+1. Installez le package PDF Rasterizer sur votre [!DNL Adobe Experience Manager] déploiement à partir de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
