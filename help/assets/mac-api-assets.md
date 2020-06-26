@@ -3,7 +3,7 @@ title: API HTTP Assets  dans [!DNL Adobe Experience Manager].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 92%
@@ -77,17 +77,17 @@ Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 
 L’API Assets HTTP offre les fonctionnalités suivantes :
 
-* Récupérer une liste de dossiers.
-* Créer un dossier.
-* Créer une ressource.
-* Mettre à jour le fichier binaire d’une ressource.
-* Mettre à jour les métadonnées d’une ressource.
-* Créer un rendu de ressource.
-* Mettre à jour un rendu de ressource.
-* Créer un commentaire de ressource.
-* Copier un dossier ou une ressource.
-* Déplacer un dossier ou une ressource.
-* Supprimer un dossier, une ressource ou un rendu.
+* [Récupérer une liste de dossiers](#retrieve-a-folder-listing).
+* [Créer un dossier](#create-a-folder)
+* [Créer une ressource](#create-an-asset).
+* [Mettre à jour le fichier binaire d’une ressource](#update-asset-binary).
+* [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata).
+* [Créer un rendu de ressource](#create-an-asset-rendition).
+* [Mettre à jour un rendu de ressource](#update-an-asset-rendition).
+* [Créer un commentaire de ressource](#create-an-asset-comment).
+* [Copier un dossier ou une ressource](#copy-a-folder-or-asset).
+* [Déplacer un dossier ou une ressource](#move-a-folder-or-asset).
+* [Supprimer un dossier, une ressource ou un rendu](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
