@@ -3,9 +3,9 @@ title: Bibliothèque ITL
 description: Apprenez à configurer et à utiliser la bibliothèque de transcodage de l’imagerie (ou ITL, de l’anglais Imaging Transcoding Library) d’Adobe, une solution de traitement des images qui peut réaliser des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage et le redimensionnement des images.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1002'
 ht-degree: 36%
 
 ---
@@ -55,7 +55,7 @@ Les arguments de ligne de commande de la bibliothèque ITL peuvent inclure les �
 
 You can configure the following options for the `-resize` parameter:
 
-* `X`: Fonctionne de la même manière qu’Experience Manager. Par exemple, -resize 319.
+* `X`: Fonctionne de la même manière que le Experience Manager. Par exemple, -resize 319.
 * `WxH`: Le rapport L/H n’est pas conservé, par exemple `-resize 319x319`.
 * `Wx` : définit la largeur et calcule la hauteur en conservant le rapport d’aspect. Par exemple, `-resize 319x`.
 * `xH` : définit la hauteur et calcule la largeur en conservant le rapport d’aspect. Par exemple, `-resize x319`.
@@ -74,7 +74,7 @@ Pour configurer le traitement ITL, créez un fichier de configuration et mettez 
 
 Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibliothèques à l’aide des étapes suivantes. Vous avez besoin d’autorisations d’administrateur ou de root.
 
-1. Téléchargez le package de la bibliothèque de transcodage [d’images depuis Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) ou depuis [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) et installez-le à l’aide de Package Manager. Le package est compatible avec Experience Manager 6.5.
+1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Le package est compatible avec Experience Manager 6.5.
 
 1. Pour connaître un ID d&#39;assemblage pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console Web et cliquez sur **[!UICONTROL OSGi > Bundles]**. Vous pouvez également ouvrir la console des lots en utilisant l’ `https://[aem_server:[port]/system/console/bundles/` URL d’accès. Localisez le `com.day.cq.dam.cq-dam-switchengine` lot et son ID.
 
@@ -92,7 +92,7 @@ Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibl
 
 1. Exécutez `ldconfig` la commande pour créer les liens et le cache nécessaires.
 
-1. Dans le compte utilisé pour début d’Experience Manager, modifiez le `.bash_profile` fichier. Ajoutez `LD_LIBRARY_PATH` en ajoutant ce qui suit.
+1. Dans le compte utilisé pour début Experience Manager, modifiez le `.bash_profile` fichier. Ajoutez `LD_LIBRARY_PATH` en ajoutant ce qui suit.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -105,7 +105,7 @@ Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibl
 
 Mettez à jour le processus de mise à jour des actifs  DAM pour utiliser la bibliothèque pour le traitement des images.
 
-1. Dans l’interface utilisateur d’Experience Manager, sélectionnez **[!UICONTROL Outils > Processus > Modèles]**.
+1. Dans l’interface utilisateur du Experience Manager, sélectionnez **[!UICONTROL Outils > Processus > Modèles]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
@@ -126,6 +126,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![limage](assets/chlimage_1-199.png)
 
 1. (Facultatif) Générez des miniatures à partir d’un rendu intermédiaire à l’aide d’une seule commande. Le rendu intermédiaire sert de source pour générer des rendus statiques et des rendus web. Cette méthode est plus rapide que la méthode précédente. Toutefois, vous ne pouvez pas appliquer de paramètres personnalisés aux miniatures à l’aide de cette méthode.
@@ -136,7 +137,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
 1. Synchronisez le modèle mis à jour du processus de mise à jour des actifs  DAM. Enregistrez le workflow.
 
-Le programme vérifie la configuration, télécharge une image TIFF et surveille le fichier error.log. Vous remarquerez `INFO` les messages avec des mentions de `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le processus terminé, vous pouvez vue les nouveaux rendus dans Experience Manager.
+Le programme vérifie la configuration, télécharge une image TIFF et surveille le fichier error.log. Vous remarquerez `INFO` les messages avec des mentions de `SwitchEngineHandlingProcess execute: executing command line`. Les journaux mentionnent les rendus générés. Une fois le processus terminé, vous pouvez vue les nouveaux rendus dans le Experience Manager.
 
 >[!MORELIKETHIS]
 >
