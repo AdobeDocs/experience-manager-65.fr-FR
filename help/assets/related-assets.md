@@ -3,9 +3,9 @@ title: Ressources liées
 description: Découvrez comment relier des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '636'
 ht-degree: 50%
 
 ---
@@ -36,7 +36,7 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click the **[!UICONTROL Relate]** icon from the toolbar.
+1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** from the toolbar.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -45,13 +45,14 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
    * Pour mettre en relation le fichier source avec la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
    * Pour mettre en relation un fichier dérivé avec la ressource, sélectionnez **[!UICONTROL Dérivés]** dans la liste.
    * Pour créer une relation réciproque entre les ressources, sélectionnez **[!UICONTROL Autres]** dans la liste.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Sur l’écran **[!UICONTROL Sélectionner une ressource]**, accédez à l’emplacement de la ressource que vous souhaitez mettre en relation et sélectionnez-la.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Click the **[!UICONTROL Confirm]** icon.
+1. Cliquez sur **[!UICONTROL Confirmer]**.
 1. Click **[!UICONTROL OK]** to close the dialog. En fonction de la relation que vous avez choisie à l’étape 3, la ressource associée apparaît sous une catégorie appropriée dans la section **[!UICONTROL En relation]**. Par exemple, si la ressource que vous avez mise en relation est le fichier source de la ressource actuelle, elle apparaît sous **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
