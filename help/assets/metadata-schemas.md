@@ -3,9 +3,9 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2644'
 ht-degree: 51%
 
 ---
@@ -19,11 +19,11 @@ Dans [!DNL Adobe Experience Manager Assets], les schémas contiennent des champs
 
 Pour vue et modifier la page de propriétés d’un fichier, procédez comme suit :
 
-1. Cliquez sur l’icône Propriétés **[!UICONTROL de la]** Vue dans Actions rapides sur la mosaïque de ressources dans la vue de carte.
+1. Cliquez sur l’option Propriétés **[!UICONTROL de la]** Vue dans les actions rapides de la mosaïque de ressources de la vue de carte.
 
    ![Actions rapides sur la mosaïque de ressources](assets/chlimage_1-170.png)
 
-   Vous pouvez également sélectionner un fichier, puis cliquer sur l’icône [!UICONTROL Propriétés] de la barre d’outils.
+   Vous pouvez également sélectionner un fichier, puis cliquer sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 
 1. Vous pouvez modifier les différentes propriétés de métadonnées modifiables sous les onglets disponibles. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
@@ -68,7 +68,7 @@ Pour ajouter un formulaire de schéma de métadonnées, procédez comme suit :
 
    >[!NOTE]
    >
-   >Une icône de verrouillage s’affiche avec les modèles non modifiés. Si vous personnalisez un modèle, l’icône de verrouillage ne s’affiche pas.
+   >Un symbole de verrouillage s’affiche avec les modèles non modifiés. Si vous personnalisez un modèle, il n’est pas verrouillé et ![verrouillé fermé](assets/do-not-localize/lock_closed_icon.svg).
 
 1. In the dialog, provide the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
@@ -175,7 +175,7 @@ Pour supprimer un formulaire, sélectionnez-le, puis cliquez sur Supprimer.
 
 >[!NOTE]
 >
->* Une fois que vous avez supprimé les modifications personnalisées apportées à un formulaire par défaut, l’icône de verrouillage s’affiche à nouveau devant elle dans l’interface du Schéma de métadonnées. Il indique que l’état par défaut du formulaire est rétabli.
+>* Après avoir supprimé les modifications personnalisées apportées à un formulaire par défaut, le ![verrouillage fermé](assets/do-not-localize/lock_closed_icon.svg) réapparaît avant le formulaire. Il indique que l’état par défaut du formulaire est rétabli.
 >* Vous ne pouvez pas supprimer les formulaires de schéma de métadonnées par défaut dans [!DNL Assets].
 
 
