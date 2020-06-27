@@ -3,7 +3,10 @@ title: Métadonnées en cascade dans [!DNL Adobe Experience Manager Assets].
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 82%
 
 ---
 
@@ -32,7 +35,7 @@ Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction 
 
 Sans tenir compte du type de ressource choisi, affichez les informations de copyright comme étant un champ requis.
 
-1. Dans [!DNL Experience Manager] l’interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > de **[!UICONTROL métadonnées]**.
+1. Dans [!DNL Experience Manager] l’interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **** de métadonnées.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
@@ -62,7 +65,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!NOTE]
    >
-   >Lorsque vous ajoutez des choix, si vous cliquez sur le champ de liste déroulante, l’interface se déforme et l’icône de suppression des choix cesse de fonctionner. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
+   >Lors de l’ajout de choix, si vous cliquez sur le champ Liste déroulante, l’interface est déformée et l’option de suppression des choix ne fonctionne plus. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
 
 1. (Facultatif) Ajoutez les autres champs requis ; par exemple, le format, le codec et la durée de la ressource de type vidéo.
 
@@ -91,7 +94,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!NOTE]
    >
-   >Le fait de cliquer sur un espace blanc (ou tout autre endroit que les valeurs) réinitialise les valeurs. Si cela se produit, sélectionnez à nouveau les valeurs.
+   >Le fait de cliquer sur un espace (ou tout autre emplacement que les valeurs) réinitialise les valeurs. Si cela se produit, sélectionnez à nouveau les valeurs.
 
    >[!NOTE]
    >
@@ -109,4 +112,4 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    ![Métadonnées en cascade pour une ressource de document](assets/doc_type_fields.png)
 
-   *Figure : Métadonnées en cascade pour un .*
+   *Figure : Métadonnées en cascade pour un document.*
