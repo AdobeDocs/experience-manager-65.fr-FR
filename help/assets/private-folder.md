@@ -1,24 +1,23 @@
 ---
 title: Créez et partagez un dossier privé dans Adobe Experience Manager.
-description: Découvrez comment créer un dossier privé dans Adobe Experience Manager Assets et le partager avec d’autres utilisateurs et leur attribuer divers privilèges.
+description: Découvrez comment créer un dossier privé dans les ressources d’Adobe Experience Manager et le partager avec d’autres utilisateurs et leur attribuer divers privilèges.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 45%
+source-wordcount: '503'
+ht-degree: 43%
 
 ---
 
 
 # Partage de dossiers privés {#private-folder-sharing}
 
-Vous pouvez créer un dossier privé dans l’interface utilisateur d’Adobe Experience Manager Assets qui vous est réservé. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+Vous pouvez créer un dossier privé dans l’interface utilisateur des ressources d’Adobe Experience Manager qui vous est réservé. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
 >[!NOTE]
 >
 > Le dossier privé comporte au moins un membre doté du rôle Propriétaire.
-
 
 1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
@@ -32,7 +31,7 @@ Vous pouvez créer un dossier privé dans l’interface utilisateur d’Adobe Ex
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,7 +57,7 @@ Vous pouvez créer un dossier privé dans l’interface utilisateur d’Adobe Ex
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Cliquez sur l’icône Notification pour ouvrir la liste des notifications.
+1. Cliquez sur Notifications pour ouvrir la liste des notifications.
 
    ![Liste des notifications](assets/Assets-Notification.png)
 
