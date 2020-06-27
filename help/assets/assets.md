@@ -1,12 +1,12 @@
 ---
-title: A propos des ressources d’Adobe Experience Manager
-description: Découvrez ce qu’est la gestion des ressources numériques, ses cas d’utilisation et l’offre de ressources d’Adobe Experience Manager.
+title: A propos des ressources d'Adobe Experience Manager
+description: Découvrez ce que sont la gestion des ressources numériques, ses cas d’utilisation et l’offre d’actifs Experience Manager Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 47%
+source-wordcount: '879'
+ht-degree: 48%
 
 ---
 
@@ -19,7 +19,7 @@ Assets est un outil de gestion des actifs numériques (DAM) entièrement intégr
 
 Les ressources permettent le partage et la distribution des ressources numériques principales d’une organisation dans toute l’entreprise. Les utilisateurs d’une organisation peuvent stocker, gérer et accéder à des ressources numériques telles que des images, des graphiques, de l’audio, de la vidéo et des documents via une interface Web (ou un dossier CIFS ou WebDAV).
 
-Bien intégrée dans Experience Manager, la fonctionnalité Ressources vous permet d’effectuer les opérations suivantes :
+Bien intégrée dans le Experience Manager, la fonctionnalité Ressources vous permet d’effectuer les opérations suivantes :
 
 * Ajouter et partager des images, des documents, ainsi que des fichiers audio et vidéo dans divers formats.
 * Gérez les ressources en les regroupant par balises, cadre lumineux ou étoiles (vos favoris). Annoter les ressources.
@@ -28,9 +28,9 @@ Bien intégrée dans Experience Manager, la fonctionnalité Ressources vous perm
 * Exercer des fonctions de retouche d’images, telles que la mise à l’échelle et l’ajout de filtres d’image. Importer et exporter simultanément des ressources numériques multiples à l’aide d’un dossier WebDAV ou CIFS.
 * Utiliser les workflows et les notifications pour permettre le traitement et le téléchargement communs de n’importe quel groupe de ressources et gérer les droits d’accès aux ressources.
 
-### Experience Manager Assets est intégré aux sites Experience Manager {#aem-assets-fully-integrated-in-cq-wcm}
+### Les ressources du Experience Manager sont intégrées aux sites Experience Manager {#aem-assets-fully-integrated-in-cq-wcm}
 
-Les ressources sont entièrement intégrées aux sites et la fonctionnalité est disponible à l’aide de l’icône DAM. Les ressources numériques gérées dans le référentiel Assets peuvent ensuite être accessibles via l’outil de recherche de contenu lors de la création de pages Web.
+Les ressources sont entièrement intégrées aux sites et toutes les fonctionnalités sont disponibles en toute transparence. Les ressources numériques gérées dans le référentiel Assets peuvent ensuite être accessibles via l’outil de recherche de contenu lors de la création de pages Web.
 
 L&#39;interface utilisateur de base est la même que celle des sites. Voir [Présentation des sites](/help/sites-authoring/page-authoring.md) pour en savoir plus.
 
@@ -49,11 +49,11 @@ Une ressource se compose principalement de données binaires + métadonnées + r
 
 >[!CAUTION]
 >
->Le téléchargement et/ou la modification d’un volume important de ressources (notamment des images) peut avoir un impact sur les performances de votre instance d’Experience Manager.
+>Le téléchargement et/ou la modification d’un volume important de ressources (en particulier des images) peut avoir un impact sur les performances de votre instance de Experience Manager.
 
-### Terminologie d’Experience Manager Assets {#aem-assets-terminology}
+### Terminologie des ressources Experience Manager {#aem-assets-terminology}
 
-Lorsque vous utilisez des ressources numériques dans Experience Manager, vous devez comprendre la terminologie suivante :
+Lorsque vous utilisez des ressources numériques en Experience Manager, vous devez comprendre la terminologie suivante :
 
 * **Collection** Collection de ressources, basée sur l’emplacement physique (dossier), les propriétés communes (dossier de recherche enregistré) ou la sélection d’utilisateurs (dossiers de cadre lumineux).
 
@@ -84,6 +84,6 @@ tâches que vous pouvez exécuter avec ces workflows préconfigurés :
 
 Vous pouvez bien sûr aussi appliquer des workflows manuellement. Voir [Gestionnaires de médias Assets](/help/assets/media-handlers.md) pour obtenir une liste des workflows par défaut.
 
-## Fichiers Experience Manager et MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## Ressources du Experience Manager et MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
 Voir [Ressources et MediaLibrary](/help/assets/medialibrary.md) pour en savoir plus sur les différences.
