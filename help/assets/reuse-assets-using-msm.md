@@ -4,9 +4,9 @@ description: Utilisez des ressources sur plusieurs pages/dossiers qui sont déri
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3368'
 ht-degree: 76%
 
 ---
@@ -37,7 +37,7 @@ MSM entretient une relation dynamique entre la ressource source et ses Live Copi
 
 ### Glossary of MSM for [!DNL Assets] terms {#glossary}
 
-**Source :** Fichiers ou dossiers d’origine. Copie principale à partir de laquelle les copies dynamiques sont dérivées.
+**Source :** Fichiers ou dossiers d’origine. Copie de Principal à partir de laquelle les copies en direct sont dérivées.
 
 **Copie en direct :** Copie des fichiers/dossiers source synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez comment créer des Live Copies.
 
@@ -70,7 +70,7 @@ Pour créer des Live Copies à l’aide de la première méthode, procédez comm
 
 1. Sélectionnez des fichiers ou des dossiers sources. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer > Live Copy]**.
 
-   ![Création d’une copie dynamique à partir de l’interface d’Experience Manager](assets/create_lc1.png)
+   ![Création d’une copie dynamique à partir de l’interface du Experience Manager](assets/create_lc1.png)
 
    *Figure : Créez une copie dynamique à partir de[!DNL Experience Manager]l’interface.*
 
@@ -82,7 +82,7 @@ Pour créer des Live Copies à l’aide de la seconde méthode, procédez comme 
 
 1. In [!DNL Experience Manager] interface, from upper-right corner, click **[!UICONTROL Create > Live Copy]**.
 
-   ![Création d’une copie dynamique à partir de l’interface d’Experience Manager](assets/create_lc2.png)
+   ![Création d’une copie dynamique à partir de l’interface du Experience Manager](assets/create_lc2.png)
 
    *Figure : Créez une copie dynamique à partir de[!DNL Experience Manager]l’interface.*
 
@@ -242,7 +242,7 @@ Vous pouvez également suspendre ou reprendre rapidement les relations de plusie
 
 Une Live Copy est un réplica de la source d’origine lors de sa création. Les valeurs des métadonnées d’une Live Copy sont héritées de la source. Les champs de métadonnées conservent individuellement l’héritage avec les champs respectifs de la ressource source.
 
-Vous avez toutefois la possibilité d’apporter des modifications locales à une Live Copy afin de modifier quelques propriétés sélectionnées. Pour effectuer des modifications locales, annulez l’héritage de la propriété souhaitée. Lorsque l’héritage d’un ou de plusieurs champs de métadonnées est annulé, la relation de production du fichier et l’héritage des autres champs de métadonnées sont conservés. Aucune synchronisation ni aucun déploiement ne remplacent les modifications locales. Pour cela, ouvrez la page **[!UICONTROL Propriétés]** d’une ressource de Live Copy, cliquez sur l’icône **[!UICONTROL Annuler l’héritage]** en regard d’un champ de métadonnées.
+Vous avez toutefois la possibilité d’apporter des modifications locales à une Live Copy afin de modifier quelques propriétés sélectionnées. Pour effectuer des modifications locales, annulez l’héritage de la propriété souhaitée. Lorsque l’héritage d’un ou de plusieurs champs de métadonnées est annulé, la relation de production du fichier et l’héritage des autres champs de métadonnées sont conservés. Aucune synchronisation ni aucun déploiement ne remplacent les modifications locales. To do so, open **[!UICONTROL Properties]** page of a live copy asset, click the **[!UICONTROL cancel inheritance]** option next to a metadata field.
 
 Vous pouvez annuler toutes les modifications locales et rétablir l’état de la source de la ressource. L’action de réinitialisation remplace instantanément et de façon irrévocable toutes les modifications locales et rétablit l’héritage sur tous les champs de métadonnées. Pour effectuer un rétablissement, depuis la page **[!UICONTROL Propriétés]** d’une ressource de Live Copy, cliquez sur **[!UICONTROL Réinitialiser]** dans la barre d’outils.
 
