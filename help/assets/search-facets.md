@@ -1,19 +1,19 @@
 ---
 title: Facettes de recherche
-description: Cet article décrit comment créer, modifier et utiliser des facettes de recherche dans Adobe Experience Manager.
+description: Cet article décrit comment créer, modifier et utiliser des facettes de recherche dans un Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2517'
-ht-degree: 82%
+source-wordcount: '2523'
+ht-degree: 79%
 
 ---
 
 
 # Facettes de recherche {#search-facets}
 
-Un déploiement d’Adobe Experience Manager Assets à l’échelle de l’entreprise peut stocker de nombreuses ressources. Parfois, la recherche de la ressource appropriée peut s’avérer ardue et chronophage si vous utilisez uniquement les fonctionnalités de recherche générique d’Experience Manager.
+Un déploiement à l’échelle de l’entreprise des actifs d’Adobe Experience Manager permet de stocker de nombreux actifs. Parfois, trouver le bon fichier peut être ardu et chronophage si vous utilisez uniquement les fonctionnalités de recherche générique du Experience Manager.
 
 Utilisez les facettes de recherche dans le panneau Filtres pour ajouter plus de granularité à votre expérience de recherche et rendre ainsi la fonctionnalité de recherche plus efficace et souple. Les facettes de recherche ajoutent des dimensions multiples (prédicats) qui permettent d’effectuer des recherches plus complexes. Le panneau Filtres inclut quelques facettes standard. Vous pouvez également ajouter des facettes de recherche personnalisées.
 
@@ -115,7 +115,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 >Le prédicat Options est un wrapper personnalisé qui comprend des prédicats de propriété pour démontrer le comportement décrit. Pour l’heure, aucun point de terminaison REST n’est disponible pour la prise en charge native de cette fonctionnalité.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
+1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]**.
 1. Sur la page **[!UICONTROL Modifier le formulaire de recherche]**, faites glisser **[!UICONTROL Options du prédicat]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
 1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un nom pour la propriété. Par exemple, pour rechercher des ressources en fonction de leur format, indiquez un nom convivial pour le libellé ; **[!UICONTROL Type de fichier]**, par exemple. Indiquez la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:format.`, par exemple.
 1. Utilisez l’une des méthodes suivantes :
@@ -164,13 +164,13 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 
-   ![suggestion fournie par Experience Manager lors de la saisie du nom de la balise](assets/chlimage_1-419.png)
+   ![suggestion fournie par le Experience Manager lors de la saisie du nom de la balise](assets/chlimage_1-419.png)
 
-   *Figure : suggestion fournie par Experience Manager lors de la saisie du nom de la balise.*
+   *Figure : suggestion fournie par le Experience Manager lors de la saisie du nom de la balise.*
 
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajouter autres prédicats {#adding-other-predicates}
+## Ajouter d&#39;autres prédicats {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
@@ -193,20 +193,17 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
 
 ## Restaurer les facettes de recherche par défaut {#restoring-default-search-facets}
 
-Par défaut, une icône représentant un cadenas s’affiche devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**. L’icône représentant un cadenas disparaît lorsque vous ajoutez des facettes de recherche au formulaire, ce qui indique que le formulaire par défaut a été modifié.
+By default, a lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. L’icône de cadenas en regard d’une option de la page Formulaires de recherche indique que les paramètres par défaut sont intacts et non personnalisés. The icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) disappears if you add search facets to the form indicating that the default form has been modified.
 
 ![L’icône de cadenas en regard d’une option de la page Formulaires de recherche indique que les paramètres par défaut sont intacts et non personnalisés.](assets/locked_admin_rail.png)
-
-L’icône de cadenas en regard d’une option de la page Formulaires de recherche indique que les paramètres par défaut sont intacts et non personnalisés.
 
 Pour restaurer la facette de recherche par défaut, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.
-1. Click **[!UICONTROL Delete]** in the toolbar.
-   ![deleteoutline](assets/deleteoutline.png)
+1. Cliquez sur **[!UICONTROL Supprimer]** ![supprimer le contour](assets/deleteoutline.png) de la barre d&#39;outils.
 1. In the confirmation dialog, click **[!UICONTROL Delete]** to remove the custom changes.
 
-   Après avoir supprimé les modifications personnalisées apportées aux facettes de recherche, l’icône représentant un cadenas réapparaît devant **[!UICONTROL Rail de recherche d’administrateurs de ressources]** sur la page **[!UICONTROL Formulaires de recherche]**.
+   After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
 ## Autorisations d’utilisateur {#user-permissions}
 
