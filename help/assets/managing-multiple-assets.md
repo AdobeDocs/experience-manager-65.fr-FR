@@ -3,17 +3,17 @@ title: Gérez les métadonnées de nombreux fichiers et collections dans Adobe E
 description: Modifiez simultanément les métadonnées de nombreux fichiers et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 62%
+source-wordcount: '495'
+ht-degree: 63%
 
 ---
 
 
 # Gestion des ressources et des collections {#managing-multiple-assets-and-collections}
 
-Adobe Enterprise Manager Assets vous permet de modifier simultanément les métadonnées de plusieurs fichiers afin que vous puissiez rapidement propager en bloc les modifications de métadonnées courantes. Vous pouvez également modifier en gros les métadonnées de plusieurs collections.
+Adobe Enterprise Manager Assets vous permet de modifier simultanément les métadonnées de plusieurs fichiers afin que vous puissiez rapidement propager les modifications de métadonnées courantes aux fichiers en bloc. Vous pouvez également modifier en gros les métadonnées de plusieurs collections.
 
 Utilisez la page des propriétés pour effectuer des modifications de métadonnées sur plusieurs ressources ou collections :
 
@@ -30,7 +30,7 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
 
 1. Dans l’interface utilisateur Ressources, accédez à l’emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon to open the properties page for the selected assets.
+1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
-1. To select a different metadata schema for the assets, click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
+1. To select a different metadata schema for the assets, click **[!UICONTROL Settings]** from the toolbar, and select the desired schema.
 1. Enregistrez les modifications.
 1. Pour ajouter les nouvelles métadonnées aux métadonnées existantes dans les champs contenant plusieurs valeurs, sélectionnez **[!UICONTROL Mode d’ajout]**. Si vous ne sélectionnez pas cette option, les nouvelles métadonnées remplacent les métadonnées existantes dans les champs. Cliquez sur **[!UICONTROL Envoyer]**.
 
