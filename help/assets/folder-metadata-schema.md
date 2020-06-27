@@ -1,22 +1,25 @@
 ---
 title: Schéma de métadonnées de dossier
-description: Découvrez comment créer des  de métadonnées pour les dossiers de ressources dans les ressources Adobe Experience Manager
+description: Découvrez comment créer un schéma de métadonnées pour les dossiers de ressources dans les ressources d'Adobe Experience Manager
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+workflow-type: tm+mt
+source-wordcount: '1024'
+ht-degree: 71%
 
 ---
 
 
 # Schéma de métadonnées de dossier {#folder-metadata-schema}
 
-Adobe Experience Manager Assets vous permet de créer des  de métadonnées pour les dossiers de fichiers, qui définissent la mise en page et les métadonnées affichées dans les pages de propriétés des dossiers.
+Les ressources d’Adobe Experience Manager vous permettent de créer des schémas de métadonnées pour les dossiers de ressources, qui définissent la mise en page et les métadonnées affichées dans les pages de propriétés des dossiers.
 
 ## Ajout d’un formulaire de schéma de métadonnées de dossier   {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
-1. Dans l’interface d’Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL de métadonnées de]** dossier.
+1. Dans l’interface de Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de métadonnées]** de dossier.
 1. On the [!UICONTROL Folder Metadata Schema Forms] page, click **[!UICONTROL Create]**.
 1. Specify a name for the form, and click **[!UICONTROL Create]**. The new schema form is listed in the [!UICONTROL Schema Forms] page.
 
@@ -29,7 +32,7 @@ Vous pouvez modifier un formulaire de schéma de métadonnées nouveau ou exista
 
 Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulaire de schéma de métadonnées.
 
-1. In the Schema Forms page, select the form you created, and then click the **[!UICONTROL Edit]** icon from the toolbar.
+1. In the Schema Forms page, select the form you created, and then select the **[!UICONTROL Edit]** option from the toolbar.
 1. In the Folder Metadata Schema Editor page, click `+` to add a tab to the form. To rename the tab, click the default name and specify the new name under **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -40,7 +43,7 @@ Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au
 
    ![adding_components](assets/adding_components.png)
 
-   Si vous créez plusieurs onglets, cliquez sur un onglet spécifique pour ajouter des composants.
+   Si vous créez plusieurs onglets, cliquez sur un onglet particulier pour ajouter des composants.
 
 1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**.
 
@@ -93,7 +96,7 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 ## Suppression de formulaires de schéma de métadonnées de dossier   {#delete-folder-metadata-schema-forms}
 
-Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le et cliquez sur l’icône Supprimer de la barre d’outils.
+Vous pouvez supprimer des formulaires de schéma de métadonnées de dossier sur la page Formulaires de schéma de métadonnées de dossier. Pour supprimer un formulaire, sélectionnez-le et cliquez sur l’option Supprimer de la barre d’outils.
 
 ![delete_form](assets/delete_form.png)
 
@@ -105,7 +108,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 ### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier   {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Dans l’interface d’Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**> **[!UICONTROL de métadonnées de]** dossier.
+1. Dans l’interface de Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**> Schémas **[!UICONTROL de métadonnées]** de dossier.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
 1. From the toolbar, click **[!UICONTROL Apply to Folder(s)]**.
 
