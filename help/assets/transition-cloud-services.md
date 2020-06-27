@@ -3,17 +3,17 @@ title: Application de services cloud de traduction à des dossiers
 description: Application de services cloud de traduction à des dossiers
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 75%
+source-wordcount: '391'
+ht-degree: 76%
 
 ---
 
 
 # Application de services cloud de traduction à des dossiers {#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager vous permet de bénéficier des services de traduction en mode cloud du fournisseur de traduction de votre choix afin de vous assurer que vos ressources sont traduites en fonction de vos besoins.
+L’Adobe Experience Manager vous permet de bénéficier de services de traduction en mode cloud fournis par le fournisseur de traduction de votre choix afin de vous assurer que vos ressources sont traduites en fonction de vos besoins.
 
 Vous pouvez appliquer le service cloud de traduction directement à votre dossier de ressources afin qu’elles puissent être utilisées au cours des workflows de traduction.
 
@@ -22,7 +22,7 @@ Vous pouvez appliquer le service cloud de traduction directement à votre dossie
 L’application de services cloud directement à votre dossier de ressources élimine le besoin de configurer des services de traduction lorsque vous créez ou mettez à jour les workflows de traduction.
 
 1. Depuis l’interface utilisateur d’Assets, sélectionnez le dossier auquel vous souhaitez appliquer des services de traduction.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon to display the **[!UICONTROL Folder Properties]** page.
+1. From the toolbar, click **[!UICONTROL Properties]** to display the **[!UICONTROL Folder Properties]** page.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
