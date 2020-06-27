@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2177'
 ht-degree: 68%
 
 ---
@@ -28,7 +28,7 @@ Selon la façon dont elles rassemblent les ressources, les collections sont des 
 
 ## Accès à la console Collections {#navigating-the-collections-console}
 
-Pour ouvrir les **[!UICONTROL collections]**, dans l’interface d’Experience Manager, accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**.
+Pour ouvrir les **[!UICONTROL collections]**, dans l’interface du Experience Manager, accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**.
 
 ## Création d’une collection {#creating-a-collection}
 
@@ -61,11 +61,11 @@ Vous pouvez créer une collection avec des références statiques, par exemple, 
 Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jusqu’à une collection. Vous pouvez également créer une copie d’une collection et faire glisser les ressources jusqu’à celle-ci.
 
 1. Dans l’interface utilisateur Assets, sélectionnez les ressources à ajouter à une collection.
-1. Faites glisser les ressources jusqu’à la zone **[!UICONTROL Déposer dans la collection]**. Alternatively, click the **[!UICONTROL To Collection]** icon from the toolbar.
+1. Faites glisser les ressources jusqu’à la zone **[!UICONTROL Déposer dans la collection]**. Vous pouvez également cliquer sur **[!UICONTROL Vers la collection]** dans la barre d’outils.
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-1. In the **[!UICONTROL Add To Collection]** page, click the **[!UICONTROL Create Collection]** icon from the toolbar.
+1. In the **[!UICONTROL Add To Collection]** page, click **[!UICONTROL Create Collection]** from the toolbar.
 
    If you want to add the assets to an existing collection, select it from the page, and click **[!UICONTROL Add]**. Par défaut, la collection la plus récemment mise à jour est sélectionnée.
 
@@ -110,11 +110,11 @@ Pour créer une collection dynamique, procédez comme suit :
 
 Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour rassembler les ressources. Pour cette raison, les références statiques aux ressources et dossiers ne s’appliquent pas à celles-ci.
 
-1. Dans l’interface utilisateur Ressources, sélectionnez la ressource, puis cliquez sur l’icône **[!UICONTROL Vers la collection]** de la barre d’outils.
+1. Dans l’interface utilisateur Ressources, sélectionnez la ressource, puis cliquez sur **[!UICONTROL Vers la collection]** dans la barre d’outils.
 
    ![chlimage_1-8](assets/chlimage_1-113.png)
 
-   Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajouter les ressources lorsque l’étiquette de la région devient **[!UICONTROL Déposer sur Ajouter]**.
+   Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la région devient **[!UICONTROL Déposer pour Ajouter]**.
 
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la ressource.
 
@@ -124,12 +124,12 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
-1. Dans l’interface utilisateur Ressources, cliquez sur l’icône de recherche de la barre d’outils.
+1. Dans l’interface utilisateur Ressources, cliquez sur l’option de recherche de la barre d’outils.
 
    ![chlimage_1-9](assets/chlimage_1-110.png)
 
 1. Placez le curseur dans la zone Omni-recherche et appuyez sur la touche Entrée.
-1. Cliquez sur l’icône GlobalNav pour afficher le panneau Filtres.
+1. Dans l’interface du Experience Manager, ouvrez le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -158,13 +158,13 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 Vous pouvez modifier simultanément les métadonnées de plusieurs collections. Cette fonctionnalité vous aide à répliquer rapidement des métadonnées communes dans plusieurs collections.
 
 1. Dans la console Collections, sélectionnez plusieurs collections.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, modifiez les métadonnées sous **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, selon les besoins.
 1. Pour afficher les propriétés de métadonnées associées à une collection spécifique, désélectionnez les autres collections dans la liste des collections. Les champs de l’éditeur de métadonnées sont renseignés avec les métadonnées de la collection particulière.
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. La liste des collections contient toutes les collections sélectionnées par défaut. Experience Manager ne met pas à jour les métadonnées des collections que vous supprimez.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. La liste des collections contient toutes les collections sélectionnées par défaut. Le Experience Manager ne met pas à jour les métadonnées des collections que vous supprimez.
    >* En haut de la liste, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des collections à l’effacement de la liste, et inversement.
 
 
@@ -191,20 +191,20 @@ Si vous recherchez des collections à partir du niveau supérieur, seules les co
 
 Dans la console Collections, cliquez sur une collection pour l’ouvrir.
 
-Au sein d’une collection, la recherche Experience Manager est limitée aux ressources (ainsi qu’à leurs balises et métadonnées) au sein de la collection que vous visualisez. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
+Au sein d’une collection, la recherche des Experience Manager est limitée aux ressources (ainsi qu’à leurs balises et métadonnées) de la collection que vous visualisez. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
 
 ## Modification des paramètres d’une collection {#editing-collection-settings}
 
 Vous pouvez modifier les paramètres d’une collection, tels que le titre et la description, ou ajouter des membres à une collection.
 
-1. Select a collection, and click the **[!UICONTROL Settings]** icon in the toolbar. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
+1. Select a collection, and click **[!UICONTROL Settings]** in the toolbar. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
 1. Modify the collection settings in the **[!UICONTROL Collection Settings]** page. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
 
 1. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Suppression d’une collection {#deleting-a-collection}
 
-1. Dans la console Collections, sélectionnez une ou plusieurs collections, puis cliquez sur l’icône Supprimer de la barre d’outils.
+1. Dans la console Collections, sélectionnez une ou plusieurs collections, puis cliquez sur Supprimer dans la barre d’outils.
 
 1. In the dialog, click **[!UICONTROL Delete]** to confirm the delete action.
 
@@ -217,7 +217,7 @@ Vous pouvez modifier les paramètres d’une collection, tels que le titre et la
 Lorsque vous téléchargez une collection, la hiérarchie complète des ressources dans la collection est téléchargée, y compris les dossiers et les collections enfants.
 
 1. Dans la console Collections, sélectionnez une ou plusieurs collections à télécharger.
-1. Dans la barre d’outils, cliquez sur l’icône de téléchargement.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Télécharger]**.
 1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. Sélectionnez l’option **[!UICONTROL Courrier électronique]** pour envoyer une notification électronique au propriétaire de la collection.
 
    Lorsque vous sélectionnez une collection à télécharger, l’ensemble de la hiérarchie de dossiers sous cette collection est téléchargé. Pour inclure chaque collection que vous téléchargez (y compris les ressources figurant dans des collections enfant imbriquées dans la collection parent) dans un dossier individuel, sélectionnez **[!UICONTROL Créer un dossier distinct pour chaque ressource]**.
@@ -256,13 +256,11 @@ La modification des recherches enregistrées est identique à celle des collecti
 
 Pour supprimer des recherches enregistrées, procédez comme suit :
 
-1. Dans l’interface utilisateur Ressources, cliquez sur l’icône de recherche de la barre d’outils.
-
-   ![chlimage_1-13](assets/chlimage_1-114.png)
+1. Dans l’interface utilisateur Ressources, cliquez sur rechercher ![chlimage_1-13](assets/chlimage_1-114.png).
 
 1. Placez le curseur dans le champ Omni-recherche et appuyez sur la touche Entrée.
 
-1. Cliquez sur l’icône GlobalNav pour afficher le panneau Filtres.
+1. Dans l’interface du Experience Manager, ouvrez le panneau Filtres.
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
@@ -274,18 +272,14 @@ Pour supprimer des recherches enregistrées, procédez comme suit :
 
 Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la collection contient des collections imbriquées, le workflow s’exécute également sur les ressources de ces dernières. Toutefois, si la collection et les collections imbriquées contiennent des ressources en double, le workflow ne s’exécute qu’une seule fois pour ces ressources.
 
-1. Dans la console Collections, sélectionnez une collection sur laquelle exécuter un workflow.
-1. Click the GlobalNav icon, and choose **[!UICONTROL Timeline]** from the list.
-1. From the timeline, click the Caret icon at the bottom, and then click **[!UICONTROL Start Workflow]**.
-
-   ![chlimage_1-14](assets/chlimage_1-137.png)
-
+1. Ouvrez **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**. Pour exécuter un processus sur une collection spécifique, sélectionnez-le.
+1. Open **[!UICONTROL Timeline]** rail. Cliquez sur ![chlimage_1-14](assets/chlimage_1-137.png) et sur Processus **** de Début.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
-1. Saisissez un titre pour le processus, puis cliquez sur **[!UICONTROL Démarrer]**.
-1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Poursuivre]**. Le workflow s’exécute sur toutes les ressources de la collection.
+1. Enter a title for the workflow and click **[!UICONTROL Start]**.
+1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Poursuivre]**. Le processus traite tous les actifs de la collection sélectionnée.
 
 >[!MORELIKETHIS]
 >
->* [Configuration des notifications électroniques de Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configuration des notifications électroniques des ressources Experience Manager](/help/sites-administering/notification.md#assetsconfig)
 >* [Création d’une tâche de révision pour les collections](bulk-approval.md)
 
