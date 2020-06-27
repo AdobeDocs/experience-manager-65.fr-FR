@@ -3,10 +3,10 @@ title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 76%
+source-wordcount: '2135'
+ht-degree: 73%
 
 ---
 
@@ -27,13 +27,13 @@ Ce document répond aux questions suivantes :
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d’une solution à petite échelle destinée à un petit groupe d’utilisateurs professionnels (par exemple des photographes ou des taxonomistes) à des groupes d’utilisateurs plus nombreux et plus diversifiés (par exemple des utilisateurs professionnels, des auteurs de gestion de contenu Web, des journalistes, etc.), la puissante interface utilisateur des ressources Adobe Experience Manager pour les utilisateurs professionnels peut fournir trop d’informations et de débuts d’intervenants pour demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
+La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d&#39;une solution à petite échelle pour un petit groupe d&#39;utilisateurs formés par des professionnels - par exemple des photographes ou des taxonomistes - à des groupes d&#39;utilisateurs plus nombreux et plus diversifiés - par exemple des utilisateurs d&#39;entreprise, des auteurs de WCM, des journalistes, etc. - la puissante interface utilisateur des ressources d&#39;Adobe Experience Manager pour les utilisateurs professionnels peut fournir trop d&#39;informations et de parties prenantes début pour demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
 
 Ces applications centrées sur les ressources peuvent être de simples galeries de photos dans un intranet où les employés peuvent télécharger des photos à partir de visites de salons commerciaux ou d&#39;un centre de presse sur un site Web public. Les applications axées sur les ressources peuvent également s’étendre à des solutions complètes, y compris les paniers, le passage en caisse et les processus de vérification.
 
 La création d’une application axée sur les ressources devient, dans une large mesure, un processus de configuration ne nécessitant pas de codage, mais uniquement la connaissance des groupes d’utilisateurs et de leurs besoins ainsi que des métadonnées utilisées. Les applications axées sur les ressources créées avec Assets sont extensibles : avec un effort de codage minimal, il est possible de créer des composants réutilisables pour la recherche, l’affichage et la modification des ressources.
 
-Une application axée sur les ressources dans Experience Manager se compose d’une page d’éditeur de ressources, qui peut être utilisée pour obtenir une vue détaillée d’une ressource spécifique. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
+Dans le Experience Manager, une application axée sur les ressources consiste en une page de l’éditeur de ressources, qui peut être utilisée pour obtenir une vue détaillée d’une ressource spécifique. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -203,7 +203,7 @@ Lors de la création de la page Éditeur de ressources, il est recommandé de cr
 
 Pour créer une page Éditeur de ressources :
 
-1. Dans l’onglet **Sites web**, accédez à l’emplacement où vous souhaitez créer une page Éditeur de ressources, puis cliquez sur **Nouveau**.
+1. Dans l’onglet **[!UICONTROL Sites web]**, accédez à l’emplacement où vous souhaitez créer une page Éditeur de ressources, puis cliquez sur **Nouveau**.
 1. Sélectionnez **Éditeur de ressourcesGeometrixx**, puis cliquez sur **Créer**. La nouvelle page est créée et elle est répertoriée dans l’onglet **Sites web**.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -356,7 +356,7 @@ Par défaut, il est en mode lecture seule. Les utilisateurs ne peuvent donc pas 
 
 Si le titre peut être modifié, vous pouvez ajouter un titre et une description en cliquant sur le crayon pour ouvrir la fenêtre **Propriétés de l’élément**. En outre, vous pouvez activer et désactiver la ressource en sélectionnant la date et l’heure.
 
-Lorsque les utilisateurs modifient le titre en cliquant sur l’icône en forme de crayon, ils peuvent modifier le **Titre**, la **Description** et saisir une **Heure d’activation** et une **Heure de désactivation** afin d’activer et désactiver la ressource.
+Lors de la modification du [!UICONTROL titre], les utilisateurs peuvent modifier le **titre**, la **description**, puis saisir **Les et les Heures pour activer et désactiver la ressource.******
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -364,7 +364,7 @@ Voici un exemple de composant Titre renseigné :
 
 ![chlimage_1-164](assets/chlimage_1-392.png)
 
-#### Actions de Ajouter Asset Editor {#adding-asset-editor-actions}
+#### Ajouter les actions de l’éditeur de ressources {#adding-asset-editor-actions}
 
 Vous pouvez déterminer les actions que les utilisateurs peuvent effectuer sur des ressources numériques sélectionnées à partir d’une sélection d’actions prédéfinies.
 
@@ -391,7 +391,7 @@ Les actions suivantes sont disponibles :
 
 ## Multi-edit assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 
-Avec Experience Manager Assets, vous pouvez apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
+Les ressources du Experience Manager vous permettent d’apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
 * Balises
 * Métadonnées
@@ -405,6 +405,7 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
 
    * sous Windows : `Ctrl + click` chaque ressource.
    * sur Mac : `Cmd + click` chaque ressource.
+
    To select a range of assets: click the first asset then `Shift + click` the last asset.
 
 1. Cliquez sur **Éditer les métadonnées** dans le champ **Actions** (partie gauche de la page).
@@ -414,16 +415,18 @@ Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeu
    * Une balise qui s’applique à tous les actifs s’affiche avec une police normale.
    * Métadonnées autres que les balises : la valeur du champ ne s’affiche que si elle est identique pour toutes les ressources sélectionnées.
 
-1. Cliquez sur **Télécharger** pour télécharger un fichier zip contenant les rendus d’origine des ressources.
-1. Cliquez sur l’icône en forme de crayon en regard du champ **Balises** pour modifier ces dernières :
+1. Click **Download** to download a ZIP file containing the assets original renditions.
+1. Cliquez sur Modifier l’option de balises située en regard du champ **Balises** .
 
    * Les balises qui ne s’appliquent pas à toutes les ressources, mais seulement à quelques-unes, s’affichent avec un arrière-plan grisé.
    * Les balises qui s’appliquent à toutes les ressources s’affichent avec un arrière-plan blanc.
+
    Vous pouvez :
 
-   * cliquer sur l’icône **x** pour supprimer la balise de toutes les ressources ;
-   * cliquer sur l’icône **+** pour ajouter la balise à toutes les ressources ;
+   * Click `x` to remove the tag for all the assets.
+   * Click `+` to add the tag to all the assets.
    * cliquer sur la **flèche**, puis sélectionner une balise pour ajouter une nouvelle balise à toutes les ressources.
+
    Cliquez sur **OK** pour enregistrer les modifications apportées au formulaire. La case en regard du champ **Balises** est automatiquement activée.
 
 1. Modifiez le champ Description. Par exemple, définissez-le sur :
