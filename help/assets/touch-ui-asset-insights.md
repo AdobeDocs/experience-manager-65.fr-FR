@@ -3,9 +3,9 @@ title: Statistiques sur les ressources
 description: Découvrez comment la fonction Statistiques sur les ressources permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '735'
 ht-degree: 81%
 
 ---
@@ -43,11 +43,12 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    * **Web et mobile** : nombre de fois où la ressource faisait partie de sites web et d’applications
    * **Social** : nombre de fois où la ressource a été utilisée dans des solutions, comme Adobe Social et Adobe Campaign
    * **Email** : nombre de fois où la ressource a été utilisée dans des campagnes par email
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >La fonctionnalité Statistiques des ressources récupérant généralement les données Solutions d’Adobe Analytics de manière périodique, la section Solutions n’affiche peut-être pas les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’analyse.
+   >La fonctionnalité Statistiques des ressources récupère généralement les données des solutions d’Adobe de manière périodique. Il se peut donc que la section Solutions n’affiche pas les données les plus récentes. La période pendant laquelle les données sont affichées dépend de la planification de l’opération de récupération que la fonction Statistiques sur les ressources exécute pour récupérer les données d’analyse.
 
 1. Pour afficher les statistiques de performances de l’actif sous forme graphique sur une période donnée, sélectionnez une période dans la section **[!UICONTROL Statistiques de performances]**. Les détails, y compris les clics et les impressions, sont affichés sous forme de lignes de tendance dans un graphique.
 
@@ -66,7 +67,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 Vous pouvez afficher les scores de toutes les ressources d’un dossier simultanément à l’aide du **[!UICONTROL mode Statistiques]**.
 
 1. Dans l’interface utilisateur Ressources, accédez au dossier contenant les ressources pour lesquelles vous souhaitez vue des informations.
-1. Click the Layout icon from the toolbar, and then choose **[!UICONTROL Insights View]**.
+1. Click Layout from the toolbar, and then choose **[!UICONTROL Insights View]**.
 1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
 ## Planification d’une tâche en arrière-plan {#scheduling-background-job}
