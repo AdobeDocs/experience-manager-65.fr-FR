@@ -3,9 +3,9 @@ title: Gérez les fichiers vidéo dans [!DNL Adobe Experience Manager].
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46568322e75669532734dddda91a781f45a398d4
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 41%
 
 ---
@@ -29,7 +29,7 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
    Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les boutons [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue Liste.
 
-1. To preview the video in the asset details page, click the **[!UICONTROL Edit]** icon on the card.
+1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card.
 
    La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
 
