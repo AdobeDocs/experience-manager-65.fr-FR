@@ -3,10 +3,10 @@ title: Préparation des ressources pour la traduction
 description: Créez des dossiers racine de langue pour préparer les fichiers à la traduction afin de prendre en charge les fichiers multilingues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 54%
+ht-degree: 64%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 54%
 
 Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues.
 
-Dans Adobe Experience Manager Assets, les ressources multilingues sont incluses dans des dossiers, où chaque dossier contient les ressources dans une langue différente.
+Dans les ressources d’Adobe Experience Manager, les ressources multilingues sont incluses dans des dossiers, où chaque dossier contient les ressources dans une langue différente.
 
 Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. For example, */content/dam/it* is the Italian language root for the Italian language copy. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
-La copie de langue pour laquelle vous avez initialement ajouté des ressources est la langue principale. La langue principale est la source qui est traduite dans d&#39;autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
+La copie de langue pour laquelle vous ajoutez initialement des ressources est la langue principale. La langue principale est la source qui est traduite dans d&#39;autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
 ```
  /content
@@ -60,8 +60,8 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 
 Experience Manager interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within Assets.
 
-1. Dans la console Ressources, sélectionnez la langue principale pour laquelle vous souhaitez créer des copies de langue.
-1. Click the GlobalNav icon, and choose **[!UICONTROL References]** to open the [!UICONTROL Reference] pane.
+1. Dans la console Ressources, choisissez la langue principale pour laquelle vous souhaitez créer des copies de langue.
+1. Dans le rail de gauche, sélectionnez l’option **[!UICONTROL Références]** pour ouvrir le volet [!UICONTROL Référence] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
