@@ -1,36 +1,34 @@
 ---
-title: Ajouter zones cliquables avec des hyperliens vers des images numériques
+title: Ajouter des zones cliquables avec des hyperliens vers des images numériques
 description: Découvrez comment ajouter une zone cliquable à l’aide d’hyperliens à une image.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 29%
+source-wordcount: '267'
+ht-degree: 14%
 
 ---
 
 
-# Ajouter zones cliquables {#adding-image-maps}
-
-Découvrez comment ajouter des zones cliquables avec liens hypertexte aux ressources d’images.
+# Ajouter des zones cliquables {#adding-image-maps}
 
 Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fonctionnent comme des liens hypertexte.
 
 1. Do any one of the following to open **[!UICONTROL In-place Image Editor]**:
 
-   * Using Quick Actions, click the **[!UICONTROL Edit]** icon that appears on an asset in the **[!UICONTROL Card]** view. In the List view, select the asset and click the **Edit** icon in the toolbar.
+   * Using Quick Actions, click **[!UICONTROL Edit]** that appears on an asset in the **[!UICONTROL Card]** view. In the List view, select the asset and click **[!UICONTROL Edit]** option in the toolbar.
 
       >[!NOTE]
       >
       >Quick Actions is not available in the **[!UICONTROL List]** view.
 
-   * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and click the **[!UICONTROL Edit]** icon on the toolbar.
-   * Click the **[!UICONTROL Edit]** icon from the asset page.
+   * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and click **[!UICONTROL Edit]** on the toolbar.
+   * Click **[!UICONTROL Edit]** from the asset page.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
-1. To insert an image map, click the **[!UICONTROL Launch Map]** icon from the toolbar.
+1. To insert an image map, click **[!UICONTROL Launch Map]** from the toolbar.
 
    ![chlimage_1-421](assets/chlimage_1-421.png)
 
@@ -42,11 +40,11 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Click the **[!UICONTROL Confirm]** icon, and then click the **[!UICONTROL Finish]** icon from the toolbar to save the changes.
+1. Cliquez sur **[!UICONTROL Confirmer]** , puis sur **[!UICONTROL Terminer]** dans la barre d’outils pour enregistrer les modifications.
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   Pour supprimer la zone cliquable, cliquez sur la zone réactive, puis sur l’icône **[!UICONTROL Supprimer]**.
+   To delete the image map, click the hot-spot and click **[!UICONTROL Delete]**.
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -54,4 +52,4 @@ Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fon
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Si l’option Média dynamique est activée, accédez à l’éditeur de ressources, puis cliquez sur l’icône **[!UICONTROL Zone]** pour afficher toutes les zones cliquables appliquées.
+   If the Dynamic Media option is enabled, navigate to the Asset editor and click **[!UICONTROL Map]** to view all the applied image maps.
