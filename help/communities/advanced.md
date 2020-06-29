@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -37,7 +37,7 @@ La configuration d’un score avancé est pratiquement identique à celle d’un
 
    * Des règles de notation et de badge de base et avancées peuvent être appliquées au même contenu.
 
-* [L&#39;activation de badges pour les composants](/help/communities/implementing-scoring.md#enable-badges-for-component) est générique
+* [L’activation de badges pour les composants](/help/communities/implementing-scoring.md#enable-badges-for-component) est générique.
 
 Les différences dans la configuration des règles de notation et de badge sont les suivantes :
 
@@ -45,23 +45,24 @@ Les différences dans la configuration des règles de notation et de badge sont 
 * Règles de notation avancées :
 
    * `scoringType` défini sur `advanced`
-   * requires `stopwords`
+   * Requiert `stopwords`
 
 * Règles de mise en badge avancées :
 
    * `badgingType` défini sur `advanced`
    * `badgingLevels` fixé au **nombre de niveaux d&#39;experts à attribuer**
-   * nécessite `badgingPaths` un tableau de badges au lieu de seuils points de mappage de la baie de disques aux badges
+   * Nécessite un `badgingPaths` tableau de badges plutôt que des points de mappage de la baie de seuils avec des badges.
 
 >[!NOTE]
 >
 >Pour utiliser les capacités avancées de notation et de badge, installez le package [d’identification des](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)experts.
 
+
 ## Moteur de score configurable {#configurable-scoring-engine}
 
 Le moteur d’évaluation avancé fournit une configuration OSGi avec des paramètres qui affectent l’algorithme d’évaluation avancé.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **poids de score**
 
@@ -102,7 +103,7 @@ Pour appeler le moteur d’évaluation avancé, la valeur `scoringType`doit `adv
 
 Voir Sous-règles [](/help/communities/implementing-scoring.md#scoring-sub-rules)de score.
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### Mots-clés {#stopwords}
 
@@ -122,7 +123,7 @@ Les propriétés de règle de badge avancées diffèrent des propriétés [de r�
 
 Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identifier le nombre d&#39;experts autorisés et l&#39;image de badge à attribuer.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -164,7 +165,7 @@ Cette version bêta comprend un badge d&#39;expert basé sur la récompense :
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 Pour que le badge d&#39;expert s&#39;affiche comme une récompense pour l&#39;activité, assurez-vous que :
 
@@ -197,15 +198,15 @@ La version bêta comprend deux règles de notation avancées pour la fonction [d
 
 **Notes:**
 
-* Les deux `rules`et `sub-rules` noeuds sont de type `cq:Page`
+* Les deux `rules` et `sub-rules` noeuds sont de type `cq:Page`.
 
-* `subRules`est un attribut de type String[] sur le `jcr:content` noeud de la règle.
+* `subRules` est un attribut de type String[] sur le `jcr:content` noeud de la règle.
 
-* `sub-rules` peut être partagée entre différentes règles de notation
+* `sub-rules` peut être partagée entre différentes règles de notation.
 
-* `rules`doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde
+* `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
 
-   * Les noms de règle doivent être uniques, quel que soit l’emplacement
+* Les noms de règle doivent être uniques, quel que soit l’emplacement.
 
 ### Règles de mise en badge incluses {#included-badging-rules}
 
@@ -216,8 +217,7 @@ Cette version comprend deux règles de mise en badge avancées qui correspondent
 
 **Notes:**
 
-* `rules` les noeuds sont de type cq:Page
-* `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde
-
-   * Les noms de règle doivent être uniques, quel que soit l’emplacement
+* `rules` sont de type cq:Page.
+* `rules` doit être situé dans un emplacement de référentiel avec une autorisation de lecture pour tout le monde.
+* Les noms de règle doivent être uniques, quel que soit l’emplacement.
 
