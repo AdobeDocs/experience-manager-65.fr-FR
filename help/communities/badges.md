@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 4%
+source-wordcount: '319'
+ht-degree: 5%
 
 ---
 
@@ -35,9 +35,9 @@ Actuellement, les badges gagnés ou attribués à un membre de la communauté ap
 * [Tableaux de bord](/help/communities/enabling-leaderboard.md)
 * [Conceptualisation](/help/communities/ideation-feature.md)
 
-Dans l&#39;environnement auteur, pour accéder à la console Badges
+Dans l’environnement d’auteur, accédez à la console Badges :
 
-* Dans la navigation globale, accédez à **[!UICONTROL Outils > Communautés > Badges.]**
+* A partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Badges]**
 
 Cette console affiche les badges actuellement disponibles et à partir desquels de nouveaux badges peuvent être ajoutés.
 
