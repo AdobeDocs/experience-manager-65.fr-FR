@@ -5,10 +5,10 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: 9e8ff9bf5c9ddd4675e887fc734bf3b616526b36
+source-git-commit: 7dce19107539bc4fd986d894b681ed6e1b99e4fc
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 93%
+source-wordcount: '1200'
+ht-degree: 100%
 
 ---
 
@@ -25,20 +25,20 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
 
 ## Vous avez raté un numéro de la newsletter Dynamic Media ?
 
-* **[Mai 2020, numéro 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
-   Dans ce numéro :
+    In this issue:
 
-   * Ce que la continuité d&#39;activité signifie en périodes incertaines.
-   * Principaux points à retenir du premier sommet Adobe entièrement numérique.
-   * Doit surveiller les sessions de sous-traitance d’Experience Manager.
-   * Points phares du client du sommet : Sous blindés.
-   * Ne manquez jamais un webinaire Experience Insider.
-   * Les points phares du secteur public : Le besoin urgent d&#39;inscription numérique.
-   * Découvrez les nouveautés d’Experience Manager Innovation.
-   * Créez vos compétences Experience Manager *en direct* avec les professionnels Adobe.
-   * Connectez-vous à la communauté Adobe Experience Manager.
-   * Effectuez un suivi rapide de votre expertise Adobe avec Adobe Experience League.
+    * What business continuity means in uncertain times.
+    * Key takeaways from the first all-digital Adobe Summit.
+    * Must-watch Experience Manager breakout sessions.
+    * Summit customer spotlight: Under Armour.
+    * Never miss an Experience Insider webinar.
+    * Public sector spotlight: The urgent need for digital enrollment.
+    * Look what’s new in Experience Manager Innovation.
+    * Build your Experience Manager skills *live* with the Adobe pros.
+    * Connect with the Adobe Experience Manager Community.
+    * Fast-track your Adobe expertise with Adobe Experience League. -->
 
 * **[Avril 2020, numéro 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
