@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -50,7 +50,7 @@ La console [Configuration de l&#39;](/help/communities/srp-config.md) Enregistre
 
 * Dans la navigation globale, accédez à **[!UICONTROL Outils > Communautés > Configuration]** des Enregistrements et sélectionnez **[!UICONTROL Adobe Enregistrement Resource Provider (ASRP)]**.
 
-![chlimage_1-30](assets/chlimage_1-30.png)
+![asrp-default](assets/asrp-default.png)
 
 Les informations suivantes proviennent du processus de mise en service :
 
