@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -41,7 +41,7 @@ Dans l’environnement d’auteur, accédez à la console Badges :
 
 Cette console affiche les badges actuellement disponibles et à partir desquels de nouveaux badges peuvent être ajoutés.
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![badges-accueil](assets/badges-homepage.png)
 
 ## Créer le badge {#create-badge}
 
@@ -49,7 +49,7 @@ Un badge est créé en téléchargeant une image suffisamment petite (72 dpi ave
 
 Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer la synchronisation [](/help/communities/sync.md)utilisateur.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![badges-1](assets/badges-1.png)
 
 * **Télécharger l’image**
 
