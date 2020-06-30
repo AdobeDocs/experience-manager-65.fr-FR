@@ -11,22 +11,26 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 4%
 
 ---
 
 
 # Blog Essentials {#blog-essentials}
 
-Depuis AEM 6.1 Communities, un blog est une communauté  . Les articles de blog sont maintenant publiés à partir du  de publication , où auparavant, les articles de blog ne pouvaient être créés que dans l&#39;auteur  le et publié.
+Depuis AEM 6.1 Communities, un blog est une activité communautaire. Les articles de blog sont maintenant publiés depuis l&#39;environnement de publication, où auparavant les articles de blog ne pouvaient être créés que dans l&#39;environnement de l&#39;auteur et publiés.
 
-Les articles de blog peuvent désormais être créés par n&#39;importe quel membre de la communauté, sauf s&#39;ils sont réservés aux membres privilégiés.
+Les articles de blog peuvent maintenant être créés par n&#39;importe quel membre de la communauté, sauf s&#39;ils sont réservés aux membres privilégiés.
 
-Cette page fournit les informations essentielles pour travailler avec la fonction de blog.
+Cette page fournit les informations essentielles pour utiliser la fonction de blog.
 
 >[!NOTE]
 >
->L&#39;infrastructure sous-jacente de la fonction de blog est la fonction de .
+>L&#39;infrastructure sous-jacente de la fonction de blog est la fonction de journal.
+
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -38,7 +42,7 @@ La fonction de blog est composée de deux composants principaux disponibles en a
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td> social//composants/hbs/</td>
+   <td>social/journal/composants/hbs/journal</td>
   </tr>
   <tr>
    <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
@@ -46,7 +50,7 @@ La fonction de blog est composée de deux composants principaux disponibles en a
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.journal</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -65,10 +69,10 @@ La fonction de blog est composée de deux composants principaux disponibles en a
 
 ### Barre latérale de blog {#blog-sidebar}
 
-| **resourceType** | social//components/hbs/sidebar |
+| **resourceType** | social/journal/composants/hbs/barre latérale |
 |---|---|
 | [**inclus **](/help/communities/scf.md#add-or-include-a-communities-component) | Non |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.._barre latérale |
+| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **propriétés** | voir Fonctionnalité [du blog](/help/communities/blog-feature.md) |
@@ -79,35 +83,35 @@ La fonction de blog est composée de deux composants principaux disponibles en a
 
 * [API de blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Points de fin du blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Points de terminaison du blog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](/help/communities/server-customize.md)
 
 ### Fonction Blog {#blog-function}
 
-Une structure de site communautaire qui inclut la fonction [](/help/communities/functions.md#blog-function) Blog aura configuré `Blog` et `Blog Sidebar` des composants. La fonction Blog prend en charge l&#39;identification d&#39;un groupe [d&#39;utilisateurs membres](/help/communities/users.md#privileged-members-group)privilégiés.
+Une structure de site communautaire qui inclut la fonction [](/help/communities/functions.md#blog-function) Blog aura configuré `Blog` et `Blog Sidebar` des composants. La fonction Blog prend en charge l&#39;identification d&#39;un groupe [d&#39;utilisateurs](/help/communities/users.md#privileged-members-group)privilégiés.
 
 ### Accès aux entrées de blog (UGC) {#accessing-blog-entries-ugc}
 
-L’UGC doit être modérée à l’aide de l’une des méthodes standard de modération.
+L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération du contenu](/help/communities/moderate-ugc.md)généré par l’utilisateur.
 
-Depuis la version 6.1 des Communautés AEM, l’utilisation d’un magasin [](/help/communities/working-with-srp.md) commun pour l’UGC inclut l’accès par programmation à l’UGC, quelle que soit l’option de   choisie (par exemple, ASRP, MSRP ou JSRP).
+Depuis AEM 6.1 Communities, l’utilisation d’un magasin [](/help/communities/working-with-srp.md) commun pour UGC inclut l’accès par programmation à UGC, quelle que soit l’option d’enregistrement choisie (telle que ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format de l’UGC dans le référentiel peuvent être modifiés sans avertissement**.
+**L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Aperçu](/help/communities/srp.md) du fournisseur de ressources  - présentation et utilisation du référentiel
-* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Méthodes et exemples d&#39;utilitaires SRP
-* [Accès UGC avec SRP](/help/communities/accessing-ugc-with-srp.md) - directives de codage
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
+* [Présentation](/help/communities/srp.md) du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel.
+* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP.
+* [Accès à l&#39;UGC avec SRP](/help/communities/accessing-ugc-with-srp.md) - directives de codage.
+* [SocialUtils Refactoring](/help/communities/socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
 
-## Éditeur principal {#primary-publisher}
+## Principal Editeur {#primary-publisher}
 
 Lorsque le déploiement est une batterie de publication, il est nécessaire d’identifier un éditeur principal qui interrogera les articles dont la publication est planifiée.
 
-Voir Editeur [](/help/communities/deploy-communities.md#primary-publisher) principal pour plus d’informations.
+Voir [Principal Publisher](/help/communities/deploy-communities.md#primary-publisher) pour plus d’informations.
 
 ## Autoriser les médias enrichis {#allowing-rich-media}
 
@@ -115,9 +119,9 @@ La plate-forme AEM bloque les liens d’autres sites Web pour empêcher les atta
 
 * [Protection contre les scripts de site à site (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-Depuis AEM 6.2, les modifications qui devaient être apportées manuellement sont incluses dans le fichier de configuration par défaut d’AntiSamy.
+Depuis AEM 6.2, les modifications qui devaient auparavant être apportées manuellement sont incluses dans le fichier de configuration par défaut d’AntiSamy.
 
 Les médias enrichis sont incorporés dans un article de blog en sélectionnant l&#39; `Embed Media from External Sites` icône :
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![chlimage_1-471](assets/chlimage_1-471.png)
 
