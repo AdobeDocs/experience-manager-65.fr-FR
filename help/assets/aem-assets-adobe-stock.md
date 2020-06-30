@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Stock] Gestion des ressources dans [!DNL Adobe Experience M
 description: Recherche, récupération, licence et [!DNL Adobe Stock] gestion de ressources internes [!DNL Adobe Experience Manager]. Utilisez les ressources sous licence comme toute autre ressource numérique.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 34%
+source-wordcount: '1113'
+ht-degree: 30%
 
 ---
 
@@ -29,13 +29,15 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 >
 >Only [!DNL Experience Manager] administrators and [!DNL Admin Console] administrators for an organization can perform the integration as it requires administrator privileges.
 
-### Création d’une configuration d’IMS   {#create-an-ims-configuration}
+### Création d’une configuration d’IMS  {#create-an-ims-configuration}
 
 1. Click on [!DNL Experience Manager] logo. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**. Cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Solution Cloud]** > **[!UICONTROL Adobe Stock]**.
 1. Réutilisez un certificat existant ou sélectionnez **[!UICONTROL Créer un certificat]**.
 1. Cliquez sur **[!UICONTROL Créer un certificat]**. Une fois le certificat créé, téléchargez la clé publique. Cliquez sur **[!UICONTROL Suivant]**.
-1. Indiquez les valeurs appropriées dans les champs intitulés **[!UICONTROL Titre]**, **[!UICONTROL Serveur d’autorisation]**, **[!UICONTROL Clé API]**, **[!UICONTROL Secret client]** et **[!UICONTROL Charge]**. See [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md), for detailed information to fetch these values from [!DNL Adobe I/O].
-1. Add the downloaded public key to your [!DNL Adobe I/O] service account.
+1. Add the downloaded public key to your [!DNL Adobe Developer Console] service account. Cliquez sur **[!UICONTROL Suivant]**. Laissez l’écran Configuration [!UICONTROL du compte technique] Adobe IMS ouvert pour fournir les valeurs sous peu.
+1. Accédez à [Adobe Developer Console](https://console.adobe.io). Assurez-vous que votre compte dispose des autorisations d’administrateur pour l’organisation pour laquelle l’intégration est requise.
+1. Cliquez sur **[!UICONTROL Créer un nouveau projet]** , puis sur **[!UICONTROL Ajouter l’API]**. Sélectionnez **[!UICONTROL Adobe Stock]** dans la liste des API [!UICONTROL disponibles pour vous]. Sélectionnez Web OAUTH 2.0. Configurez et copiez les différentes valeurs présentées.
+1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Voir début [rapide de l’authentification](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)JWT pour obtenir des informations détaillées sur ces valeurs.
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -50,7 +52,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 
 >[!NOTE]
 >
->If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in [!UICONTROL User Preferences] panel by clicking the *User* logo in the upper-right corner of the [!DNL Experience Manager] user interface.
+>S’il existe plusieurs [!DNL Adobe Stock] configurations, sélectionnez la configuration souhaitée dans le panneau Préférences  utilisateur. Cliquez sur le logo *Utilisateur* dans le coin supérieur droit de l’ [!DNL Experience Manager] interface utilisateur.
 
 ## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
 
