@@ -1,43 +1,37 @@
 ---
-title: Configuration de plusieurs éditeurs statiques
-seo-title: Configuration de plusieurs éditeurs statiques
-description: Il est possible de configurer votre composant afin qu’il comporte plusieurs éditeurs statiques.
-seo-description: Il est possible de configurer votre composant afin qu’il comporte plusieurs éditeurs statiques.
-uuid: 4abbfcd5-fe1b-4c02-b115-97db20e60e1e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 0fac1e4a-f08f-4c46-b070-cb1d5a05b6e0
+title: Configurez RTE pour plusieurs éditeurs en place.
+description: Créez plusieurs éditeurs sur place en Adobe Experience Manager en configurant l’éditeur de texte enrichi.
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: e49411a99a80e91c983afc103a8ea826e75569b8
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 26%
 
 ---
 
 
-# Configuration de plusieurs éditeurs statiques{#configuring-multiple-in-place-editors}
+# Configuration de plusieurs éditeurs sur place {#configure-multiple-in-place-editors}
 
-Il est possible de configurer votre composant afin qu’il comporte plusieurs éditeurs statiques dans l’interface utilisateur optimisée pour les écrans tactiles.
+Vous pouvez configurer l’Editeur de texte enrichi en Adobe Experience Manager de sorte qu’il dispose de plusieurs éditeurs sur place. Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat.
 
-Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Par exemple :
+![Un éditeur statique spécifique](assets/rte-inplace-editor.png)
 
-![chlimage_1-8](assets/chlimage_1-8a.png)
-
-## Configuration de plusieurs éditeurs {#configuring-multiple-editors}
+## Configuration de plusieurs éditeurs {#configure-multiple-editors}
 
 Pour qu’il soit possible d’activer plusieurs éditeurs statiques, la structure d’un type de nœud `cq:InplaceEditingConfig` a été optimisée avec la définition du type de nœud `cq:ChildEditorConfig`.
 
 Par exemple :
 
-```
+```js
    /**
-       * Configures inplace editing of a component.
+       * Configures in-place editing of a component.
        *
-       * @prop active true to activate inplace editing for the component
-       * @prop editorType ID of inplace editor to use
+       * @prop active true to activate in-place editing for the component.
+       * @prop editorType ID of in-place editor to use.
        * @prop cq:childEditors collection of {@link cq:ChildEditorConfig} nodes.
-       * @prop configPath path to editor's config (optional)
-       * @node config editor's config (used if no configPath is specified; optional)
+       * @prop configPath path to editor's config (optional).
+       * @node config editor's config (used if no configPath is specified; optional).
      */
     [cq:InplaceEditingConfig] > nt:unstructured
       - active (boolean)
@@ -47,12 +41,12 @@ Par exemple :
       + config (nt:unstructured) = nt:unstructured
 
     /**
-      * Configures one child editor for a subcomponent. The name of the this node will
-      * be used as DD id.
+      * Configures one child editor for a sub-component. The name of the this node is
+      * used as DD ID.
       *
-      * @prop type type of the inline editor. eg: ["image"]
-      * @prop title totle od the inline editor
-      * @prop icon icon to represent the inline editor
+      * @prop type type of the inline editor. For example, ["image"].
+      * @prop title Title of the inline editor.
+      * @prop icon Icon to represent the inline editor.
     */
     [cq:ChildEditorConfig] > nt:unstructured
       orderable
@@ -60,48 +54,39 @@ Par exemple :
       - title (string)
 ```
 
-Pour configurer plusieurs éditeurs, procédez comme suit :
+Pour configurer plusieurs éditeurs, procédez comme suit :
 
-1. On the node `cq:inplaceEditing` (of type `cq:InplaceEditingConfig`) define the property:
+1. Sur le noeud `cq:inplaceEditing` (de type `cq:InplaceEditingConfig`), définissez les propriétés suivantes :
 
-   * Nom:`editorType`
-   * Type: `String`
-   * Valeur: `hybrid`
+   * Nom (name) : `editorType`
+   * Type : `String`
+   * Valeur : `hybrid`
 
-1. Créez un nœud sous celui-ci :
+1. Sous ce noeud, créez un noeud :
 
-   * Nom: `cq:ChildEditors`
-   * Type: `nt:unstructured`
+   * Nom : `cq:ChildEditors`
+   * Type : `nt:unstructured`
 
-1. Sous le nœud `cq:childEditors`, créez un nœud pour chaque éditeur statique :
+1. Under `cq:childEditors` node, create a node for each in-place editor:
 
-   * Nom : le nom de chaque nœud doit être celui de la propriété qu’il représente (comme avec les cibles de dépôt). Par exemple, `image`, `text`.
-   * Type : cq : `ChildEditorConfig`
+   * Nom : Le nom de chaque noeud correspond au nom de la propriété qu’il représente, comme c’est le cas pour les cibles de dépôt. Par exemple, `image` et `text`.
+   * Type : `cq:ChildEditorConfig`
+
    >[!NOTE]
    >
-   >Il existe une corrélation entre les cibles de dépôt définies et les éditeurs enfants. Le nom du nœud `cq:ChildEditorConfig` sera considéré comme étant l’ID de la cible de dépôt à utiliser en tant que paramètre pour l’éditeur enfant sélectionné. Si la sous-zone modifiable ne comporte pas de cible de dépôt (comme avec un composant texte, par exemple), le nom de l’éditeur enfant est toujours considéré comme un moyen d’identifier la zone modifiable correspondante.
+   >Il existe une corrélation entre les cibles de dépôt définies et les éditeurs enfants. The name of the `cq:ChildEditorConfig` node is considered as the drop target ID, for use as a parameter to the selected child editor. Si la sous-zone modifiable ne comporte pas de cible de dépôt, par exemple, dans un composant de texte, le nom de l’éditeur enfant est toujours considéré comme un identifiant permettant d’identifier la zone modifiable correspondante.
 
-1. On each of these nodes ( `cq:ChildEditorConfig`) define the properties:
+1. On each of these nodes (`cq:ChildEditorConfig`) define the properties:
 
-   * Nom: `type`
-   * Value: name of the registered in-place editor; for example, `image`, `text`
+   * Nom: `type`.
+   * Value: The name of the registered in-place editor; for example, `image` and `text`.
 
-   * Nom: `title`
-   * Value: the title that you want to display in the components selection list (of available editors); for example, `Image`, `Text`
+   * Nom: `title`.
+   * Valeur : Titre affiché dans la liste de sélection des composants des éditeurs disponibles. Par exemple, `Image` et `Text`.
 
-### Configuration supplémentaire pour les éditeurs de texte enrichi (RTE){#additional-configuration-for-rich-text-editors}
+### Additional configuration for Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
-La configuration des éditeurs de texte enrichi est légèrement différente, dans la mesure où vous pouvez configurer chaque instance RTE séparément.
-
->[!NOTE]
->
->Pour plus d’informations, voir [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md).
-
-Pour disposer de plusieurs éditeurs de texte enrichi, une configuration est requise pour chaque éditeur statique :
-
-* Sous `cq:InplaceEditingConfig` définir un `config` noeud.
-
-   * Sous le nœud `config`, définissez chaque configuration RTE.
+La configuration des éditeurs de texte enrichi est légèrement différente, dans la mesure où vous pouvez configurer chaque instance RTE séparément. Pour plus d’informations, voir [Configuration de l’éditeur](/help/sites-administering/rich-text-editor.md)de texte enrichi. Pour avoir plusieurs ETC, créez une configuration pour chaque ETC statique. Adobe recommande de créer le nouveau noeud de configuration sous `cq:InplaceEditingConfig` car chaque RTE peut avoir une configuration différente. Sous le nouveau noeud, créez chaque configuration RTE individuelle.
 
 ```xml
     texttext
@@ -109,7 +94,7 @@ Pour disposer de plusieurs éditeurs de texte enrichi, une configuration est req
         cq:editConfig
             cq:inplaceEditing
                 cq:childEditors
-                    config
+                    someconfig
                         text1
                             rtePlugins
                         text2
@@ -118,19 +103,21 @@ Pour disposer de plusieurs éditeurs de texte enrichi, une configuration est req
 
 >[!NOTE]
 >
->Il est conseillé de définir le nœud `config` sous `cq:InplaceEditingConfig`, car chaque éditeur de texte enrichi peut présenter une configuration différente.
+>Cependant, dans le cas de l’éditeur de texte enrichi, la propriété `configPath` est prise en charge lorsque le composant ne contient qu’une seule instance de l’éditeur (sous-zone modifiable). This use of `configPath` is provided to support backwards compatibility with older user interface dialogs of the component.
+
+>[!CAUTION]
 >
->Cependant, dans le cas de l’éditeur de texte enrichi, la propriété `configPath` est prise en charge lorsque le composant ne contient qu’une seule instance de l’éditeur (sous-zone modifiable). Cette utilisation de `configPath` permet de garantir la rétrocompatibilité avec les boîtes de dialogue du composant conçues pour l’ancienne interface utilisateur.
+>Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Otherwise, the RTE configurations are available for only the administrators and not for the users in the group `content-author`.
 
-## Exemples de code {#code-samples}
+## Code samples {#code-samples}
 
-**CODE SUR GITHUB**
+Vous trouverez le code de cette page sur le projet [aem-authoring-hybrideditors sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Vous pouvez télécharger le projet complet sous forme [d’archive](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)ZIP.
 
-Vous pouvez trouver le code de cette page sur GitHub.
+## Ajouter un éditeur statique {#add-an-in-place-editor}
 
-* [Ouvrir le projet aem-authoring-hybrideditors sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)
-* Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+For general information about adding an in-place editor see the document [customize page authoring](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
-## Ajout d’un éditeur statique {#adding-an-in-place-editor}
+>[!MORELIKETHIS]
+>
+>* [Configuration de l’éditeur de texte enrichi en Experience Manager](/help/sites-administering/rich-text-editor.md).
 
-For general information about adding an in-place editor see the document [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
