@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les composants d’AEM Communities
 seo-title: Notions fondamentales sur les composants d’AEM Communities
-description: Ajout de fonctionnalités Communautés aux sites AEM en mode d’édition et configuration de composants
-seo-description: Ajout de fonctionnalités Communautés aux sites AEM en mode d’édition et configuration de composants
+description: Ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
+seo-description: Ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 57%
 
 ---
 
@@ -35,13 +38,14 @@ Les composants de communauté disponibles sont répertoriés [ici](author-commun
 >
 >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
 
+
 ### Accès au mode de conception {#entering-design-mode}
 
-If a **Communities** component is not found in the components browser (sidekick), it will be necessary to enter `Design Mode` to add other Communities components. [Des bibliothèques](#required-clientlibs) côté client requises (clientlibs) peuvent également devoir être ajoutées.
+If a **Communities** component is not found in the components browser (sidekick), it will be necessary to enter `Design Mode` to add other Communities components. [Il peut également être nécessaire d’ajouter des bibliothèques](#required-clientlibs) côté client requises (clientlibs).
 
 For details, see [Configuring Components in Design Mode](../../help/sites-authoring/default-components-designmode.md).
 
-Vous trouverez ci-dessous des images de la sélection de quelques composants Communities et de leur affichage dans le navigateur de composants :
+Vous trouverez ci-dessous des images de la sélection de quelques composants Communities et de leur affichage dans l’explorateur de composants :
 
 ![chlimage_1-424](assets/chlimage_1-424.png)
 
