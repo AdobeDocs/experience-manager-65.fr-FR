@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 42%
@@ -160,7 +160,7 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Espaces de noms autorisés**
 
-   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **Paramètres **onglet. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **Limite de suggestions**
 
