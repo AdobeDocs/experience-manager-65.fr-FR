@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
+source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7665'
 ht-degree: 71%
 
 ---
@@ -456,6 +456,16 @@ Ce tableau décrit les techniques de contrôle et de consignation que vous pouve
   </tr> 
  </tbody> 
 </table>
+
+### Autoriser un utilisateur ne disposant pas de droits d’administrateur à exécuter PDF Generator
+
+Vous pouvez permettre à un utilisateur non administrateur d’utiliser PDF Generator. Normalement, seuls les utilisateurs disposant de droits d’administrateur peuvent utiliser PDF Generator. Effectuez les étapes suivantes pour permettre à un utilisateur non administrateur d’exécuter PDF Generator :
+
+1. Création d’un nom de variable d’environnement PDFG_NON_ADMIN_ENABLED.
+
+1. Définissez la valeur de la variable à TRUE.
+
+1. Redémarrez l’instance AEM forms.
 
 ## Configuration d’AEM Forms sur JEE pour un accès au-delà de l’entreprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
