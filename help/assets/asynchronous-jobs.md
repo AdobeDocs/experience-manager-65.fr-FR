@@ -1,113 +1,98 @@
 ---
-title: Opérations asynchrones
-description: Experience Manager Assets optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
+title: Configurez des opérations asynchrones dans [!DNL Adobe Experience Manager].
+description: Exécutez de manière asynchrone certaines tâches gourmandes en ressources pour optimiser les performances dans [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 18b81ba3fcf15838ac9bebd451f4ad8b0b6e3bbb
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 69%
+source-wordcount: '660'
+ht-degree: 14%
 
 ---
 
 
 # Opérations asynchrones {#asynchronous-operations}
 
-Afin de réduire l’impact négatif sur les performances, Adobe Experience Manager Assets traite de manière asynchrone certaines opérations d’actifs à long terme et gourmandes en ressources.
+Afin de réduire l’impact négatif sur les performances, [!DNL Adobe Experience Manger Assets] traite de manière asynchrone certaines opérations d’actifs à long terme et gourmandes en ressources. Le traitement asynchrone implique la mise en file d&#39;attente de plusieurs tâches et leur exécution en série, sous réserve de la disponibilité des ressources système. Ces opérations incluent :
 
-Ces opérations incluent :
+* Suppression de nombreuses ressources.
+* Déplacement de nombreuses ressources ou de ressources avec de nombreuses références.
+* Exportation et importation de métadonnées de fichier en bloc.
+* Récupération des ressources d’un [!DNL Experience Manager] déploiement distant, qui sont supérieures à un seuil défini. La limite est fixée au nombre de ressources.
 
-* Suppression de nombreuses ressources
-* Déplacement de nombreuses ressources ou de ressources avec de nombreuses références
-* Exportation/importation de métadonnées de ressources en masse
-* Récupération des ressources, qui dépassent le seuil défini, à partir d’un déploiement distant d’Experience Manager.
-
-Le traitement asynchrone implique de mettre plusieurs tâches en file d’attente et de les exécuter par la suite en série selon la disponibilité des ressources système.
-
-Vous pouvez afficher l’état des tâches asynchrones à partir de la page **[!UICONTROL État des tâches asynchrones]**.
+You can view the status of asynchronous tasks from the **[!UICONTROL Async Job Status]** page.
 
 >[!NOTE]
 >
->Par défaut, les tâches dans  Assets s’exécutent en parallèle. Si N est le nombre de cœurs d’unité centrale, N/2 tâches peuvent s’exécuter en parallèle, par défaut. Pour utiliser des paramètres personnalisés pour la file d’attente des travaux, modifiez la configuration **[!UICONTROL File d’attente par défaut des opérations asynchrones]** à partir de la console web. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Par défaut, les [!DNL Assets] tâches s’exécutent en parallèle. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. To use custom settings for the task queue, modify the **[!UICONTROL Async Operation Default Queue]** configuration from the [!UICONTROL Web Console]. For more information, see [queue configurations](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Chaque fois qu’Assets traite une opération de manière asynchrone, vous recevez une notification dans votre boîte de réception et par courrier électronique.
+Chaque fois que [!DNL Assets] vous traitez une opération de manière asynchrone, vous recevez une notification dans votre [!DNL Experience Manager] boîte de [réception](/help/sites-authoring/inbox.md) et par courrier électronique. Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
 
-Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
-
-1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Opérations]** > **[!UICONTROL Tâches]**.
+1. Dans l’ [!DNL Experience Manager] interface, cliquez sur **[!UICONTROL Opérations]** > **[!UICONTROL Tâches]**.
 
 1. Sur la page **[!UICONTROL État des tâches asynchrones]**, passez en revue les détails des opérations.
 
    ![Statut et détails des opérations asynchrones](assets/AsyncOperation-status.png)
 
-   Pour vérifier la progression d’une opération particulière, reportez-vous à la valeur dans la colonne **[!UICONTROL État]**. Selon la progression, l’un des états suivants s’affiche :
+   Pour connaître la progression d&#39;une opération, consultez la colonne **[!UICONTROL État]** . Selon la progression, l’un des états suivants s’affiche :
 
-   * **[!UICONTROL Actif]** : l’opération est en cours de traitement.
+   * **[!UICONTROL Actif]** : l’opération est en cours de traitement..
+   * **[!UICONTROL Succès]**: L&#39;opération est terminée.
+   * **[!UICONTROL Échec]** ou **[!UICONTROL erreur]**: Impossible de traiter l&#39;opération.
+   * **[!UICONTROL Programmé]**: Le traitement de l’opération est prévu ultérieurement.
 
-   * **[!UICONTROL Réussite]** : l’opération est terminée.
+1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** ![stop icon](assets/do-not-localize/stop_icon.svg) from the toolbar.
 
-   * **[!UICONTROL Échec]** ou **[!UICONTROL Erreur]** : l’opération n’a pas pu être traitée.
+1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** ![open_icon](assets/do-not-localize/edit_icon.svg) from the toolbar. La page Détails de la tâche s’affiche.
 
-   * **[!UICONTROL Planifié]** : l’opération est planifiée à une date ultérieure.
-
-1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** from the toolbar.
-
-   ![stop_icon](assets/stop_icon.png)
-
-1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** from the toolbar.
-
-   ![open_icon](assets/open_icon.png)
-
-   La page des détails de la tâche s’affiche.
-
-   ![job_details](assets/job_details.png)
+   ![Détails d’une tâche d’importation de métadonnées](assets/job_details.png)
 
 1. Pour supprimer l’opération de la liste, sélectionnez **[!UICONTROL Supprimer]** dans la barre d’outils. To download the details in a CSV file, click **[!UICONTROL Download]**.
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas supprimer une tâche si son état est Actif ou Placé en file d’attente.
+   >Vous ne pouvez pas supprimer une tâche si son état est actif ou en file d’attente.
 
-## Purger les tâches terminées {#purging-completed-jobs}
+## Purger les tâches terminées {#purge-completed-tasks}
 
-Experience Manager Assets exécute une tâche de purge tous les jours à 01h00 pour supprimer les tâches asynchrones terminées qui ont plus d’un jour d’existence.
+[!DNL Experience Manager Assets] exécute une tâche de purge tous les jours à 10 h pour supprimer les tâches asynchrones terminées qui ont plus d&#39;un jour.
 
-Vous pouvez modifier la planification de la tâche de purge et la durée de conservation des détails des tâches terminées avant leur suppression. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles les détails sont conservés à un moment donné dans le temps.
+<!-- TBD: Find out from the engineering team and mention the time zone of this 1:00 am task.
+-->
 
-1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
-1. Ouvrez la tâche **[!UICONTROL Purge planifiée des tâches asynchrones de la gestion des ressources numériques Adobe CQ]**.
-1. Spécifiez le nombre seuil de jours à l’issue duquel les tâches terminées sont supprimées et le nombre maximal de tâches pour lesquelles des détails sont conservés dans l’historique.
+Vous pouvez modifier la planification de la tâche de purge et la durée pendant laquelle les détails des tâches terminées sont conservés avant d&#39;être supprimés. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles les détails sont conservés à tout moment.
 
-   ![Configuration visant à planifier la purge des tâches asynchrones](assets/configmgr_purge_asyncjobs.png)
+1. Dans l’ [!DNL Experience Manager] interface, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
+1. Open the **[!UICONTROL Adobe CQ DAM Async Jobs Purge Scheduled]** task.
+1. Indiquez le nombre limite de jours après lequel les tâches terminées sont supprimées et le nombre maximal de tâches pour lesquelles les détails sont conservés dans l’historique. Enregistrez les modifications.
 
-1. Enregistrez les modifications.
+   ![Configuration pour planifier la purge de tâches asynchrones](assets/configmgr_purge_asyncjobs.png)
 
-## Configure thresholds for asynchronous processing {#configuring-thresholds-for-asynchronous-processing}
+## Configurer un seuil pour les opérations de suppression asynchrones {#configure-thresholds-for-asynchronous-delete-operations}
 
-Vous pouvez configurer le nombre seuil de ressources ou de références pour  Assets afin de traiter une opération spécifique de façon asynchrone.
+Si le nombre de fichiers ou de dossiers à supprimer dépasse le seuil défini, l’opération de suppression est exécutée de manière asynchrone.
 
-### Configure thresholds for asynchronous delete operations {#configuring-thresholds-for-asynchronous-delete-operations}
+1. Dans l’ [!DNL Experience Manager] interface, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
+1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Delete Operation Job Processing]** configuration.
+1. Dans la zone **[!UICONTROL Seuil de ressources]** , spécifiez les seuils pour supprimer de manière asynchrone des ressources, des dossiers ou des références. Enregistrez les modifications.
 
-Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil, l’opération de suppression est effectuée de façon asynchrone.
+   ![Définir le seuil limite de la tâche de suppression des fichiers](assets/delete_threshold.png)
 
-1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
-1. Dans la console web, ouvrez la configuration **[!UICONTROL Traitement des tâches des opérations de suppression asynchrones]**.
-1. Dans le champ **[!UICONTROL Nombre seuil de ressources]**, spécifiez le nombre seuil de ressources/dossiers pour le traitement asynchrone des opérations de suppression.
+## Configurer le seuil pour les opérations de déplacement asynchrones {#configure-thresholds-for-asynchronous-move-operations}
 
-   ![delete_threshold](assets/delete_threshold.png)
+Si le nombre de fichiers, de dossiers ou de références à déplacer dépasse le seuil défini, l’opération de déplacement est exécutée de manière asynchrone.
 
-1. Enregistrez les modifications.
+1. Dans l’ [!DNL Experience Manager] interface, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
+1. From the [!UICONTROL Web Console], open the **[!UICONTROL Async Move Operation Job Processing]** configuration.
+1. Dans la zone **[!UICONTROL Seuil de ressources/références]** , indiquez les numéros de seuil pour déplacer de manière asynchrone des ressources, des dossiers ou des références. Enregistrez les modifications.
 
-### Configure thresholds for asynchronous move operations {#configuring-thresholds-for-asynchronous-move-operations}
+   ![Définir la limite de seuil de la tâche de déplacement des ressources](assets/move_threshold.png)
 
-Si le nombre de ressources/dossiers ou de références à déplacer dépasse le nombre seuil, l’opération de déplacement est effectuée de façon asynchrone.
+>[!MORELIKETHIS]
+>
+>* [Configurez le courrier électronique dans le Experience Manager](/help/sites-administering/notification.md).
+>* [Importation et exportation des métadonnées de ressources par lot](/help/assets/metadata-import-export.md).
+>* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements](/help/assets/use-assets-across-connected-assets-instances.md)distants.
 
-1. Dans l’interface d’Experience Manager, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
-1. Dans la console web, ouvrez la configuration **[!UICONTROL Traitement des tâches des opérations de déplacement asynchrones]**.
-1. Dans le champ **[!UICONTROL Nombre seuil de ressources/références]**, spécifiez le nombre seuil de ressources/dossiers ou références pour le traitement asynchrone des opérations de déplacement.
-
-   ![move_threshold](assets/move_threshold.png)
-
-1. Enregistrez les modifications.
