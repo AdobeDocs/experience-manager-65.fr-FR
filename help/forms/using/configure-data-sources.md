@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 9df949b0069dad7fc1627977097cec5546cd845f
+workflow-type: tm+mt
+source-wordcount: '1558'
+ht-degree: 54%
 
 ---
 
@@ -26,7 +29,7 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 * Services web SOAP
 * Services OData
 
-L’intégration des données prend en charge OAuth2.0, l’authentification de base et les types d’authentification de clé d’API prêts à l’emploi et permet l’implémentation d’une authentification personnalisée pour l’accès aux services Web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
+L’intégration des données prend en charge OAuth2.0, l’authentification de base et les types d’authentification de clé d’API prêts à l’emploi et permet l’implémentation de l’authentification personnalisée pour l’accès aux services Web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
 
 ## Configurer la base de données relationnelle {#configure-relational-database}
 
@@ -41,6 +44,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    * Nom de classe Java pour le pilote JDBC
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion avec le pilote JDBC
+
    >[!NOTE] {graybox=&quot;true&quot;}
    >
    >Veillez à chiffrer les informations sensibles telles que les mots de passe avant de configurer la source de données. Pour chiffrer :
@@ -49,6 +53,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >    
    >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. Dans le champ **[!UICONTROL Texte brut]**, spécifiez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
+
    >    
    >    
    >    
@@ -68,7 +73,7 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
 1. Go to AEM web console at https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. Dans la boîte de dialogue Configuration du connecteur de profil utilisateur, vous pouvez ajouter, supprimer ou mettre à jour les propriétés du profil utilisateur. Les propriétés spécifiées pourront être utilisées dans le modèle de données de formulaire. Utilisez le format suivant pour spécifier les propriétés  utilisateur :
+1. Dans la boîte de dialogue Configuration du connecteur de profil utilisateur, vous pouvez ajouter, supprimer ou mettre à jour les propriétés du profil utilisateur. Les propriétés spécifiées pourront être utilisées dans le modèle de données de formulaire. Utilisez le format suivant pour spécifier les propriétés du profil utilisateur :
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -76,6 +81,7 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE] {graybox=&quot;true&quot;}
    >
    >The ***** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
@@ -106,11 +112,11 @@ Pour configurer le dossier pour les configurations de service cloud :
 
 ## Configurer les services Web RESTful {#configure-restful-web-services}
 
-RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Pour configurer le service Web RESTful dans les services cloud d’AEM, assurez-vous que le fichier Swagger se trouve sur votre système de fichiers ou que l’URL d’hébergement du fichier est activée.
+RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Pour configurer le service Web RESTful en AEM cloud services, veillez à disposer du fichier Swagger sur votre système de fichiers ou de l’URL d’hébergement du fichier.
 
 Procédez comme suit pour configurer les services RESTful :
 
-1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration Cloud.
+1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration de cloud.
 
    See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
@@ -120,12 +126,13 @@ Procédez comme suit pour configurer les services RESTful :
    * Sélectionnez URL ou Fichier dans la liste déroulante Source Swagger et, en conséquence, spécifiez l’URL Swagger vers le fichier de définition Swagger ou téléchargez le fichier Swagger depuis votre système de fichiers local.
    * En fonction de l’entrée Source Swagger, les champs suivants sont prérenseignés avec des valeurs :
 
-      * Schéma : Protocoles de transfert utilisés par l’API REST. Le nombre de types de schéma affichés dans le déroulant dépend des modèles définis dans la source Swagger.
-      * Hôte : Nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
-      * Chemin de base : Préfixe d’URL pour tous les chemins d’API. Ce champ est facultatif.\
+      * Schéma : Protocoles de transfert utilisés par l’API REST. Le nombre de types de schéma affichés dans la liste déroulante dépend des schémas définis dans la source Swagger.
+      * Hôte : Nom de domaine ou adresse IP de l’hôte qui diffuse l’API REST. Ce champ est obligatoire.
+      * Chemin d’accès de base : Préfixe d’URL pour tous les chemins d’API. Ce champ est facultatif.\
          Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
-   * Sélectionnez le type d&#39;authentification — Aucun, OAuth2.0, authentification de base, clé d&#39;API ou authentification personnalisée — pour accéder au service RESTful et, par conséquent, fournir des détails pour l’authentification.
-   Si vous sélectionnez Clé **** API comme type d’authentification, spécifiez la valeur de la clé API. La clé d’API peut être envoyée sous forme d’en-tête de requête ou de paramètre de . Sélectionnez l’une de ces options dans le déroulant **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre  de dans le champ Nom **[!UICONTROL du]** paramètre en conséquence.
+   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base, Clé d’API ou Authentification personnalisée — pour accéder au service RESTful et, par conséquent, fournir des détails pour l’authentification.
+
+   Si vous sélectionnez Clé **** d&#39;API comme type d&#39;authentification, spécifiez la valeur de la clé d&#39;API. La clé d&#39;API peut être envoyée en tant qu&#39;en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ Nom **[!UICONTROL du]** paramètre en conséquence.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
@@ -133,7 +140,7 @@ Procédez comme suit pour configurer les services RESTful :
 
 Les services Web basés sur SOAP sont décrits à l’aide des [spécifications WSDL (Web Services Description Language).](https://www.w3.org/TR/wsdl) Pour configurer le service Web SOAP dans les services cloud AEM, vérifiez que vous disposez de l’URL WSDL pour le service Web et procédez comme suit :
 
-1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration Cloud.
+1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration de cloud.
 
    See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
@@ -141,8 +148,11 @@ Les services Web basés sur SOAP sont décrits à l’aide des [spécifications 
 1. Spécifiez les éléments suivants pour le service Web SOAP :
 
    * URL WSDL pour le service Web.
-   * Point de fin du service. Spécifiez une valeur dans ce champ pour remplacer le point de fin de service mentionné dans WSDL.
-   * Sélectionnez le type d&#39;authentification — Aucun, OAuth2.0, authentification de base ou authentification personnalisée — pour accéder au service SOAP et, par conséquent, fournir les détails de l’authentification.
+   * Point de fin du service. Spécifiez une valeur dans ce champ pour remplacer le point de terminaison de service mentionné dans WSDL.
+   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base, Authentification personnalisée ou Jeton X509 — pour accéder au service SOAP et, par conséquent, fournir les détails de l’authentification.
+
+      Si vous sélectionnez Jeton X509 comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configuration des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Spécifiez l’alias KeyStore pour le certificat X509 dans le champ **[!UICONTROL Key Alias]** (Alias de clé). Spécifiez la durée, en secondes, jusqu’à ce que la demande d’authentification reste valide, dans le champ **[!UICONTROL Durée de vie]** . Vous pouvez également choisir de signer le corps du message ou l’en-tête d’horodatage ou les deux.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service Web SOAP.
 
@@ -153,7 +163,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 >[!NOTE]
 Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
-1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration Cloud.
+1. Accédez à **[!UICONTROL Outils > Services cloud > Sources de données]**. Appuyez sur pour sélectionner le dossier dans lequel vous souhaitez créer une configuration de cloud.
 
    See [Configure folder for cloud service configurations](../../forms/using/configure-data-sources.md#cloud-folder) for information about creating and configuring a folder for cloud service configurations.
 
@@ -161,7 +171,8 @@ Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365
 1. Spécifiez les informations suivantes pour le service OData :
 
    * URL racine du service pour le service OData à configurer.
-   * Sélectionnez le type d&#39;authentification — Aucun, OAuth2.0, authentification de base ou authentification personnalisée — pour accéder au service OData et, par conséquent, fournir les détails de l’authentification.
+   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée — pour accéder au service OData et, par conséquent, fournir les détails de l’authentification.
+
    >[!NOTE]
    Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point de terminaison OData en tant que racine du service.
 
