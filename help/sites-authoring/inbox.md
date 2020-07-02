@@ -1,6 +1,6 @@
 ---
 title: 'Votre boîte de réception  '
-seo-title: 'Votre boîte de réception  '
+seo-title: Votre boîte de réception
 description: Gestion de vos tâches à l’aide de la boîte de réception
 seo-description: Gestion de vos tâches à l’aide de la boîte de réception
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 83%
+source-wordcount: '1148'
+ht-degree: 78%
 
 ---
 
@@ -49,6 +49,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >* [Projets – Utilisation des tâches](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
 >* [Formulaires](/help/forms/home.md)
+
 >
 
 
@@ -123,6 +124,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    * **Regrouper par**
    * **Planification** ou **Aucun**
    * **Taille des cartes**
+
    ![wf-92](assets/wf-92.png)
 
 * **Mode Liste**
@@ -131,28 +133,37 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
    * **Champ de tri**
    * **Ordre de tri**
+
    ![wf-83](assets/inbox-settings.png)
 
 ### Boîte de réception - Contrôle d’administration {#inbox-admin-control}
 
 L’option Contrôle d’administration permet aux administrateurs d’effectuer les opérations suivantes :
 
+* Personnalisation des colonnes de la boîte de réception AEM
+
 * Personnaliser le texte et le logo de l&#39;en-tête
 
 * Contrôler l&#39;affichage des liens de navigation disponibles dans l&#39;en-tête
 
-L’option Contrôle d’administration n’est visible que pour les membres des administrateurs ou du groupe d’administrateurs de processus.
+L’option Contrôle d’administration n’est visible que pour les membres du `administrators` groupe ou `workflow-administrators` du groupe.
 
-![admin-control](assets/admin-control.png)
+* **Personnalisation** des colonnes : Personnalisez une boîte de réception AEM pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un processus.
+   * **Ajouter la colonne**: Sélectionnez une colonne à ajouter dans la boîte de réception AEM.
+   * **Modifier la colonne**: Placez le pointeur de la souris sur le titre de la colonne et appuyez sur l’icône ![Modifier](assets/edit.svg) pour entrer un nom d’affichage de colonne.
+   * **Supprimer la colonne**: Appuyez sur l’icône ![Supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception AEM.
+   * **Déplacer la colonne**: Faites glisser l’icône de ![déplacement](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception AEM.
+
+   ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personnalisation de l’identité graphique**
 
-   * **Personnaliser le texte de l&#39;en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
+   * **Personnaliser le texte de l&#39;en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte de l’ **Adobe Experience Manager** par défaut.
 
    * **Personnaliser le logo :** Spécifiez l’image à afficher dans l’en-tête sous forme de logo. Téléchargez une image dans le module de gestion des actifs numériques (DAM) et référencez-la dans le champ.
 
 * **Navigation de l’utilisateur**
-   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et des options de création disponibles lorsque vous appuyez sur le logo ou le texte d’Adobe Experience Manager.
+   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte de l’Adobe Experience Manager.
 * **Enregistrer :** Appuyez/cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
@@ -178,6 +189,7 @@ L’option Contrôle d’administration n’est visible que pour les membres des
    * **Revenir** à une étape précédente.
    * Afficher la charge utile pour un workflow.
    * Créer un projet à partir de l’élément.
+
    >[!NOTE]
    >
    >Pour plus d’informations, voir :
@@ -190,6 +202,7 @@ L’option Contrôle d’administration n’est visible que pour les membres des
    * Une boîte de dialogue correspondant à l’opération s’ouvre.
    * Un assistant d’action démarre.
    * Une page de documentation s’ouvre.
+
    Par exemple, **Réaffecter** ouvre une boîte de dialogue :
 
    ![wf-85](assets/wf-85.png)
@@ -218,11 +231,13 @@ Vous pouvez créer des tâches directement à partir de la boîte de réception�
       * **Priorité de la tâche**
       * **Date de début**
       * **Échéance**
+
    ![wf-86](assets/wf-86.png)
 
    * **Avancé**
 
       * **Nom** : ce champ est utilisé pour former l’URL ; s’il est vide, le nom est basé sur le champ **Titre**.
+
    ![wf-87](assets/wf-87.png)
 
 1. Sélectionnez **Envoyer**.
