@@ -10,10 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: c3e4b68c10496cac8f75d009fdd9ebd777826850
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '2771'
-ht-degree: 65%
+source-wordcount: '2403'
+ht-degree: 76%
 
 ---
 
@@ -110,8 +110,8 @@ Le service de recherche basé sur les ressources Apache Sling s’exécute sur 
 
 Le service de recherche (Discovery Service) envoie des demandes POST périodiques (heartbeats) aux services du connecteur de topologie (Topology Connector) pour établir et gérer les connexions avec une topologie. Le service Topology Connector conserve une liste autorisée d’adresses IP ou de noms d’hôtes autorisés à rejoindre la topologie :
 
-* Pour participer à une instance de topologie, précisez l’URL du service Topology Connector du membre racine.
-* Pour permettre à une instance de se joindre à une topologie, ajoutez l’instance à la liste autorisée du service Topology Connector du membre racine.
+* Pour joindre une instance à une topologie, précisez l’URL du service Topology Connector du membre racine.
+* Pour permettre à une instance de rejoindre une topologie, ajoutez-la à la liste autorisée du service Topology Connector du membre racine.
 
 Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
 
@@ -124,25 +124,25 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
    <th>Valeur par défaut</th>
   </tr>
   <tr>
-   <td>Délai d’expiration de pulsation (secondes)</td>
+   <td>Délai d’expiration de pulsation (en secondes)</td>
    <td>heartbeatTimeout</td>
-   <td>Durée, en secondes, d’attente d’une réponse de pulsation avant que l’instance ciblée ne soit considérée comme indisponible. </td>
+   <td>Durée, en secondes, d’attente d’une réponse de pulsation avant que l’instance ciblée ne soit considérée comme non disponible. </td>
    <td>20</td>
   </tr>
   <tr>
-   <td>Intervalle de pulsation (secondes)</td>
+   <td>Intervalle de pulsation (en secondes)</td>
    <td>heartbeatInterval</td>
    <td>Durée, en secondes, entre les pulsations.</td>
    <td>15</td>
   </tr>
   <tr>
-   <td>Délai minimal de Événement (secondes)</td>
+   <td>Délai minimal de l’événement (en secondes)</td>
    <td>minEventDelay</td>
-   <td><p>Lorsqu’une modification est apportée à la topologie, délai nécessaire pour retarder le changement d’état de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente la durée de ce délai. </p> <p>Ce délai empêche les écouteurs d’être submergés par les événements. </p> <p>Pour ne pas utiliser de délai, indiquez 0 ou un nombre négatif.</p> </td>
+   <td><p>Lorsqu’une modification est apportée à la topologie, délai nécessaire pour retarder le changement d’état de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente ce délai. </p> <p>Ce délai empêche les écouteurs d’être submergés par les événements. </p> <p>Pour n’utiliser aucun délai, spécifiez 0 ou un chiffre négatif.</p> </td>
    <td>3</td>
   </tr>
   <tr>
-   <td>URL du connecteur de topologie</td>
+   <td>URL de Topology Connector</td>
    <td>topologyConnectorUrls</td>
    <td>URL des services Topology Connector pour envoyer des messages de pulsation.</td>
    <td>http://localhost:4502/libs/sling/topology/connector</td>
@@ -150,7 +150,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
   <tr>
    <td>liste autorisée du connecteur de topologie</td>
    <td>topologyConnectorWhitelist</td>
-   <td>liste d’adresses IP ou de noms d’hôtes que le service Topology Connector local autorise dans la topologie. </td>
+   <td>Liste d’adresses IP ou de noms d’hôtes autorisés par le service Topology Connector dans la topologie. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
   </tr>
   <tr>
@@ -200,7 +200,6 @@ Les tâches sont réparties entre les instances pour lesquelles la rubrique asso
    * Activé : cette instance consomme les tâches de cette rubrique. 
    * Désactivé : cette instance ne consomme pas les tâches de cette rubrique.
    * Exclusif : cette instance consomme uniquement les tâches de cette rubrique.
-
    **Remarque :** Lorsque vous sélectionnez Exclusif pour une rubrique, toutes les autres rubriques sont automatiquement réglées sur Désactivé.
 
 ### Consommateurs de tâches installés {#installed-job-consumers}
@@ -211,7 +210,10 @@ Plusieurs implémentations de JobConsumer sont installées avec Experience Mana
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installé avec Apache Sling. Tâches de traitement générées par l’administrateur d’événements OSGi, à des fins de rétrocompatibilité. |
 | com/day/cq/réplication/job/&amp;amp ; ast; | com.day.cq.replication.impl.AgentManagerImpl | Agent de réplication qui reproduit les charges de travail. |
-| com/adobe/granite/workflow/déchargement | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Traite les tâches générées par le flux de travaux de mise à jour des ressources de gestion des actifs (DAM Update Asset Offloader). |
+
+<!--
+| com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
+-->
 
 ### Désactivation et activation des rubriques pour une instance {#disabling-and-enabling-topics-for-an-instance}
 
@@ -219,14 +221,14 @@ Le service Apache Sling Job Consumer Manager fournit les propriétés de liste a
 
 **Remarque :** Si l’instance appartient à une topologie, vous pouvez également utiliser le navigateur de déchargement sur tout ordinateur de la topologie pour activer ou désactiver les rubriques.
 
-La logique qui crée la liste des rubriques activées permet d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a aucune valeur).
+La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. By default, all topics are enabled (the allow list value is `*`) and no topics are disabled (the block list has no value).
 
 Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Job Consumer Manager est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
-| Nom de propriété dans la console Web | ID OSGi | Description |
+| Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| liste autorisée de rubrique | job.consumermanager.whitelist | liste de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
-| liste bloquée de rubrique | job.consumermanager.blacklist | liste de rubriques que le service JobManager local ne traite pas. |
+| liste autorisée de rubrique | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| liste bloquée de rubrique | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création des agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
 
@@ -317,35 +319,37 @@ Obtenez l’identifiant Sling d’une instance Experience Manager en utilisant 
 * Open the Web Console and, in the Sling Settings, find the value of the Sling ID property ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
 * Utilisez le navigateur de topologies si l’instance fait déjà partie de la topologie.
 
-## Déchargement du traitement des ressources de gestion des actifs numériques {#offloading-the-processing-of-dam-assets}
+<!--
+## Offloading the Processing of DAM Assets {#offloading-the-processing-of-dam-assets}
 
-Configurez les instances d’une topologie de sorte que les instances spécifiques exécutent le traitement en arrière-plan des ressources ajoutées ou mises à jour dans la gestion des actifs numériques.
+Configure the instances of a topology so that specific instances perform the background processing of assets that are added or updated in DAM.
 
-By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Ensuite, configurez la topologie de sorte que la tâche soit déchargée sur un programme de travail dédié.
+By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Then, configure the topology so that the job is offloaded to a dedicated worker.
 
 >[!CAUTION]
 >
->Aucun workflow ne doit être transitoire lorsqu’il est utilisé avec le déchargement de workflow. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
+>No workflow should be transient when used with workflow offloading. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
-La procédure suivante part des fonctionnalités suivantes pour la topologie de déchargement :
+The following procedure assumes the following characteristics for the offloading topology:
 
-* Une ou plusieurs instances Experience Manager correspondent à des instances de création avec lesquelles les utilisateurs interagissent pour l’ajout ou la mise à jour des ressources de gestion des actifs numériques.
-* Les utilisateurs ne communiquent pas directement avec une ou plusieurs instances Experience Manager traitant les ressources de gestion des actifs numériques. Ces instances sont dédiées au traitement en arrière-plan des ressources de gestion des actifs numériques. 
+* One or more Experience Manager instance are authoring instances that users interact with for adding or updating DAM assets.
+* Users to do not directly interact with one or more Experience Manager instances that process the DAM assets. These instances are dedicated to the background processing of DAM assets.
 
-1. Sur chaque instance Experience Manager, configurez Discovery Service (service de recherche) afin qu’il indique le Topography Connector (connecteur de topographie) racine. (Voir [Configuration de l’appartenance à une topologie](#title4).)
-1. Configurez le connecteur de topographie racine de sorte que les instances de connexion se trouvent sur la liste autorisée.
+1. On each Experience Manager instance, configure the Discovery Service so that it points to the root Topography Connector. (See [Configuring Topology Membership](#title4).)
+1. Configure the root Topography Connector so that the connecting instances are on the allow list.
 1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
 1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow:
 
-   1. Ouvrez la console Workflows.
-   1. Cliquez sur l’onglet Lanceur.
-   1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. Un type d’événement de configuration du lanceur est créé par nœud, alors que l’autre type est modifié par nœud.
-   1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (Pour plus d’informations sur les configurations du lanceur, voir [Démarrage de workflow lorsque les nœuds changent](/help/sites-administering/workflows-starting.md).)
+    1. Open the Workflow console.
+    1. Click the Launcher tab.
+    1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. One launcher configuration event type is Node Created, and the other type is Node Modified.
+    1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (For information about launcher configurations, see [Starting Workflows When Nodes Change](/help/sites-administering/workflows-starting.md).)
 
 1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
+-->
 
 ## Informations complémentaires {#further-reading}
 
