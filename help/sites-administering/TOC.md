@@ -2,16 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.5 Administering User Guide
+user-guide-title: Guide de l’utilisateur de l’administration d’AEM 6.5
 translation-type: tm+mt
-source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 96%
 
 ---
 
 
 # AEM 6.5 Administering User Guide {#administering}
 
-+ [Présentation du Guide de l’utilisateur Administration](home.md)
++ [Présentation de l’administration du Guide de l’utilisateur](home.md)
 + Fonctionnalités des sites {#introduction}
    + [Administration de site web](msm-and-translation.md) 
    + [Réutilisation de contenu : Multi Site Manager et Live Copy](msm.md)
@@ -42,7 +45,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Configuration de l’éditeur de texte enrichi](rich-text-editor.md)
    + [Configuration de l’éditeur de texte enrichi pour produire des sites accessibles](rte-accessible-content.md)
    + [Configuration de la commande Annuler pour la modification des pages](config-undo.md)
-   + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi ](configure-rich-text-editor-plug-ins.md)
    + [Configuration du composant vidéo](config-video.md)
    + [Éditeur en bloc](bulk-editor.md)
    + [Configuration des notifications électroniques](notification.md)
@@ -100,7 +103,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Intégration des pages d’entrée à Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + Aperçu {#ecommerce}
    + [Commerce électronique](ecommerce.md)
-   + [Concepts](concepts.md)
+   + [Concepts ](concepts.md)
    + [Administration du commerce électronique générique](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
@@ -110,7 +113,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Intégration à des services tiers](third-party-services.md)
    + [Intégration à Salesforce](salesforce.md)
    + [Intégration à Adobe Target](target.md)
-   + [Intégration à Adobe Analytics](adobeanalytics.md)
+   + [Intégration à Adobe Analytics](adobeanalytics.md)
    + [Connexion à Adobe Analytics et création de structures](adobeanalytics-connect.md)
    + [Configuration du suivi des liens pour Adobe Analytics](adobeanalytics-link.md)
    + [Mise en correspondance des données de composant avec les propriétés Adobe Analytics](adobeanalytics-mapping.md)
@@ -119,7 +122,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Résolution des incidents liés à votre intégration Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector](sharepoint-connector-licenses.md)
    + [SharePoint Connector](sharepoint-connector.md)
-   + [FAQ sur la fin de vie de la visionneuse DHTML](dhtml-viewer-endoflifefaqs.md)
+   + [FAQ sur la fin de prise en charge de la visionneuse DHTML](dhtml-viewer-endoflifefaqs.md)
    + [Intégration à Adobe Campaign Classic](campaignonpremise.md)
    + [Articles associés de la communauté](related-community-articles.md)
    + [Intégration à Adobe Campaign Standard](campaignstandard.md)
@@ -142,15 +145,15 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Intégration à Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuration manuelle de l’intégration à Adobe Target](target-configuring.md)
    + [Conditions préalables à l’intégration à Adobe Target](target-requirements.md)
-   + [Intégration à Adobe Target à l’aide des E/S Adobe](integration-ims-adobe-io.md)
+   + [Intégration à Adobe Target à l’aide d’Adobe I/O](integration-ims-adobe-io.md)
    + [Classifications Adobe](adobeanalytics-classifications.md)
    + [Intégration à Adobe Search&amp;Promote](search-and-promote.md)
    + [Intégration de solutions](integration.md)
-   + [Exportation de fragments d’expérience vers Adobe Target](experience-fragments-target.md)
+   + [Exportation de fragments d’expérience vers un Adobe Target](experience-fragments-target.md)
    + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
    + [Intégration à Livefyre](livefyre.md)
-+ Meilleures pratiques {#bestpractices}
-   + [Meilleures pratiques](administer-best-practices.md)
++ Bonnes pratiques {#bestpractices}
+   + [Bonnes pratiques](administer-best-practices.md)
    + [Meilleures pratiques de traduction](tc-bp.md)
    + [Meilleures pratiques MSM](msm-best-practices.md)
    + [AEM Sites – Préparation pour le RGPD](gdpr-compliance-sites.md)
@@ -158,7 +161,6 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [AEM Commerce – Préparation pour le RGPD](gdpr-compliance-commerce.md)
 + Gestion de contenu {#contentmanagement}
    + [Utilisation des modules](package-manager.md)
-   + [Déchargeur de workflow de ressources](workflow-offloader.md)
    + [Administration des balises](tags.md)
    + [Exportateur de page](page-exporter.md)
    + [Console Balisage de l’interface utilisateur classique](classic-console.md)
