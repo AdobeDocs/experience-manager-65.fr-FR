@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 85d4cdf0e2cfcb8b5e70387ce2dc556df9033257
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 4%
+source-wordcount: '1899'
+ht-degree: 5%
 
 ---
 
@@ -74,15 +74,14 @@ ht-degree: 4%
 
          * UGC n’est jamais répliqué
          * UGC uniquement visible sur l’instance ou la grappe AEM dans laquelle il a été saisi
-      * Par défaut, JSRP
 
+         * Par défaut, JSRP
    Pour la fonction **[d’activation](/help/communities/overview.md#enablement-community)**
 
    * [Installation et configuration de FFmpeg](/help/communities/ffmpeg.md)
    * [Installation du pilote JDBC pour MySQL](#jdbc-driver-for-mysql)
    * [Installation de AEM Communities SCORM-Engine](#scorm-package)
    * [Installation et configuration de MySQL pour activation](/help/communities/mysql.md)
-
 
 
 
@@ -106,8 +105,8 @@ Comme pour AEM 6.4 et les versions ultérieures, les fonctionnalités et correct
 
 Deux fonctionnalités Communities utilisent une base de données MySQL :
 
-* Pour [l&#39;activation](/help/communities/enablement.md) : enregistrement des activités et des apprenants SCORM
-* Pour [DSRP](/help/communities/dsrp.md) : stockage du contenu généré par l’utilisateur (UGC)
+* Pour [l&#39;activation](/help/communities/enablement.md): enregistrement des activités et des apprenants SCORM
+* Pour [DSRP](/help/communities/dsrp.md): stockage du contenu généré par l’utilisateur (UGC)
 
 Le connecteur MySQL doit être obtenu et installé séparément.
 
@@ -126,7 +125,6 @@ Les étapes nécessaires sont les suivantes :
    * Vérifiez que le pilote JDBC d&#39; *Oracle Corporation pour MySQLcom.mysql.jdbc* est actif et début-le si ce n&#39;est pas le cas (ou vérifiez les journaux).
 
 1. Si vous effectuez l’installation sur un déploiement existant après la configuration de JDBC, regroupez JDBC sur le nouveau connecteur en réenregistrant la configuration JDBC à partir de la console Web :
-
    * Par exemple, https://localhost:4502/system/console/configMgr
    * Localisation de la `Day Commons JDBC Connections Pool` configuration
    * Sélectionner pour ouvrir
@@ -138,7 +136,7 @@ Pour plus d&#39;informations sur l&#39;installation des lots, consultez la page 
 
 #### Exemple : Groupe MySQL Connector installé {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![bouts de chlimage](assets/chlimage-bundles.png)
 
 ### Package SCORM {#scorm-package}
 
@@ -223,7 +221,7 @@ Par défaut, la configuration `AEM Communities Publisher Configuration` OSGi est
 
 Par conséquent, il est nécessaire de **modifier la configuration sur toutes les instances** de publication secondaires pour décocher la **`Primary Publisher`** case.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![chlimage_1-411](assets/chlimage_1-411.png)
 
 Pour toutes les autres instances de publication (secondaires) d’une batterie de publication :
 
@@ -249,7 +247,7 @@ Deux agents de réplication de l&#39;environnement d&#39;auteur doivent être co
 
 * Accès à la console de réplication sur l’auteur
 
-   * Dans la navigation globale, accédez à **[!UICONTROL Outils > Déploiement > Réplication > Agents sur l’auteur.]**
+   * Dans la navigation globale, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** > **[!UICONTROL Agents sur l’auteur.]**
 
 * Suivez la même procédure pour les deux agents :
 
@@ -267,11 +265,11 @@ Les images suivantes montrent les résultats du changement de port de 4503 à 61
 
 #### Agent par défaut (publication) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![chlimage_1-412](assets/chlimage_1-412.png)
 
 #### Agent de réplication inverse (inversion de publication) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### Service de tunnel sur l’auteur {#tunnel-service-on-author}
 
@@ -279,10 +277,9 @@ Lors de l’utilisation de l’environnement d’auteur pour [créer des sites](
 
 Le service tunnel fournit cet accès à l&#39;aide de l&#39;agent de réplication sur l&#39;auteur.
 
-Pour activer le service tunnel :
+Pour activer le service de tunnel :
 
-* On **author**
-* Connexion avec des droits d’administrateur
+* Connectez-vous avec des droits d’administrateur sur votre instance d’auteur.
 * Si l’éditeur n’est pas localhost:4503 ou si l’utilisateur de transport n’est pas `admin`présent, [configurez l’agent de réplication.](#replication-agents-on-author)
 
 * Access the [Web Console](/help/sites-deploying/configuring-osgi.md)
@@ -294,7 +291,7 @@ Pour activer le service tunnel :
 * Cochez la case **activer** .
 * Sélectionnez **Enregistrer**
 
-![](/help/communities/assets/chlimage_1-129.png)
+   ![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### Réplication de la clé Crypto {#replicate-the-crypto-key}
 
@@ -306,7 +303,7 @@ Pour copier la documentation clé de l&#39;auteur vers toutes les autres instanc
 
 * Accédez à l’instance AEM, généralement une instance d’auteur, qui contient le matériel clé à copier.
 
-   * Locate the `com.adobe.granite.crypto.file` bundle in the local file system
+   * Locate the `com.adobe.granite.crypto.file` bundle in the local file system,
 for example,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
@@ -314,8 +311,8 @@ for example,
    * Accédez au dossier de données, par exemple :
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Copier les fichiers hmac et de noeud principal
 
+      * Copier les fichiers hmac et de noeud principal
 
 
 * Pour chaque instance AEM de cible
@@ -331,6 +328,7 @@ for example,
 >
 >Si une autre fonction de sécurité a déjà été configurée basée sur les clés de cryptage, la réplication des clés de cryptage pourrait endommager la configuration. Pour obtenir de l’aide, [contactez le service à la clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
+
 #### Réplication du référentiel {#repository-replication}
 
 La conservation du matériel clé stocké dans le référentiel, comme pour AEM 6.2 et les versions antérieures, peut s’effectuer en spécifiant la propriété système suivante au premier démarrage de chaque instance AEM (qui crée le référentiel initial) :
@@ -341,9 +339,10 @@ La conservation du matériel clé stocké dans le référentiel, comme pour AEM 
 >
 >Il est important de vérifier que l&#39;agent de [réplication sur l&#39;auteur](#replication-agents-on-author) est correctement configuré.
 
+
 Avec le matériel clé stocké dans le référentiel, la manière de répliquer la clé de chiffrement de l&#39;auteur à d&#39;autres instances est la suivante :
 
-Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Accédez à [https://&lt;serveur>:&lt;port>/crx/de.](https://localhost:4502/crx/de)
 * Sélectionner `/etc/key`
@@ -352,7 +351,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [Actualiser le lot Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+   ![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### Actualiser l&#39;offre groupée Granite Crypto {#refresh-the-granite-crypto-bundle}
 
@@ -363,7 +362,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Localisez le `Adobe Granite Crypto Support` lot (com.adobe.granite.crypto)
 * Sélectionner **Actualiser**
 
-![](/help/communities/assets/chlimage_1-131.png)
+   ![chlimage_1-416](assets/chlimage_1-416.png)
 
 * Au bout d’un instant, une boîte de dialogue **Réussite** s’affiche :
    `Operation completed successfully.`
