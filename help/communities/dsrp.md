@@ -1,8 +1,8 @@
 ---
-title: DSRP - Fournisseur de ressources de stockage de base de données relationnel
-seo-title: DSRP - Fournisseur de ressources de stockage de base de données relationnel
-description: Configuration des communautés AEM pour utiliser une base de données relationnelle comme magasin commun
-seo-description: Configuration des communautés AEM pour utiliser une base de données relationnelle comme magasin commun
+title: DSRP - Fournisseur de ressources d'Enregistrement de données relationnelles
+seo-title: DSRP - Fournisseur de ressources d'Enregistrement de données relationnelles
+description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
+seo-description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,34 +10,37 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: b7c790681034e9950aa43738310f7af8b1dd0085
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 4%
 
 ---
 
 
-# DSRP - Fournisseur de ressources de stockage de base de données relationnel {#dsrp-relational-database-storage-resource-provider}
+# DSRP - Fournisseur de ressources d&#39;Enregistrement de données relationnelles {#dsrp-relational-database-storage-resource-provider}
 
 ## A propos de DSRP {#about-dsrp}
 
-Lorsque les communautés AEM sont configurées pour utiliser une base de données relationnelle comme magasin commun, le contenu généré par l’utilisateur (UGC) est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
+Lorsque les AEM Communities sont configurés pour utiliser une base de données relationnelle comme magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
 
 Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-of-srp-options) SRP et Topologies [](topologies.md)recommandées.
 
 ## Conditions requises {#requirements}
 
-* [MySQL](#mysql-configuration), une base de données relationnelle
-* [Apache Solr](#solr-configuration), une plateforme de recherche
+* [MySQL](#mysql-configuration), une base de données relationnelle.
+* [Apache Solr](#solr-configuration), une plateforme de recherche.
 
 >[!NOTE]
 >
->La configuration de stockage par défaut est maintenant stockée dans conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Nous vous conseillons de suivre les étapes [de](#zerodt-migration-steps) migration pour que la variable defaultsrp fonctionne comme prévu.
+>La configuration par défaut de l&#39;enregistrement est maintenant stockée dans conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Il est conseillé de suivre les étapes [de](#zerodt-migration-steps) migration pour que les paramètres par défaut fonctionnent comme prévu.
 
 
 ## Configuration de la base de données relationnelle {#relational-database-configuration}
 
 ### Configuration MySQL {#mysql-configuration}
 
-Une installation MySQL peut être partagée entre les fonctionnalités d’activation et le magasin commun (DSRP) dans le même pool de connexions en utilisant des noms de base de données (schéma) différents et des connexions différentes (serveur:port).
+Une installation MySQL peut être partagée entre les fonctions d&#39;activation et le magasin commun (DSRP) dans le même pool de connexions en utilisant des noms de base de données (schéma) différents et aussi des connexions différentes (serveur:port).
 
 Pour plus d’informations sur l’installation et la configuration, voir Configuration [MySQL pour DSRP](dsrp-mysql.md).
 
@@ -45,68 +48,67 @@ Pour plus d’informations sur l’installation et la configuration, voir Config
 
 Une installation Solr peut être partagée entre le magasin de noeuds (Oak) et le magasin commun (SRP) en utilisant différentes collections.
 
-Si les collections Oak et SRP sont utilisées de manière intensive, un second Solr peut être installé pour des raisons de performances.
+Si les deux collections Oak et SRP sont utilisées de façon intensive, un second Solr peut être installé pour des raisons de performances.
 
-Pour les environnements de production, le mode SolrCloud offre des performances améliorées par rapport au mode autonome (une configuration Solr locale unique).
+Pour les environnements de production, le mode SolrCloud offre de meilleures performances par rapport au mode autonome (une seule configuration Solr locale).
 
 Pour plus d’informations sur l’installation et la configuration, voir Configuration [Solr pour SRP](solr.md).
 
 ### Sélectionner DSRP {#select-dsrp}
 
-La console [Configuration du](srp-config.md) stockage permet de sélectionner la configuration de stockage par défaut, qui identifie l&#39;implémentation de SRP à utiliser.
+La console [Configuration de l&#39;](srp-config.md) Enregistrement permet de sélectionner la configuration d&#39;enregistrement par défaut, qui identifie l&#39;implémentation de SRP à utiliser.
 
-A l’auteur, pour accéder à la console Configuration du stockage
+Sur l’auteur, pour accéder à la console de configuration de l’Enregistrement
 
 * Connexion avec droits d’administrateur
 * Dans le menu **principal**
 
    * Sélectionnez **[!UICONTROL Outils]** (dans le volet de gauche).
    * Sélectionner **[!UICONTROL des communautés]**
-   * Sélectionner la configuration **[!UICONTROL de stockage]**
+   * Sélectionner la configuration **[!UICONTROL d&#39;Enregistrement]**
 
       * Par exemple, l’emplacement obtenu est : [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
       >[!NOTE]
       >
-      >La configuration de stockage par défaut est maintenant stockée dans conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Nous vous conseillons de suivre les étapes [de](#zerodt-migration-steps) migration pour que la variable defaultsrp fonctionne comme prévu.
-
-![chlimage_1-128](assets/chlimage_1-128.png)
+      >La configuration par défaut de l&#39;enregistrement est maintenant stockée dans conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Il est conseillé de suivre les étapes [de](#zerodt-migration-steps) migration pour que les paramètres par défaut fonctionnent comme prévu.
+   ![chlimage_1-128](assets/chlimage_1-128.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Configuration de la base de données**
 
    * **[!UICONTROL Nom de la source de données JDBC]**
 
-      Le nom donné à la connexion MySQL doit être identique à celui entré dans la configuration OSGi [JDBC.](dsrp-mysql.md#configurejdbcconnections)
+      Le nom donné à la connexion MySQL doit être identique à celui entré dans la configuration [JDBC OSGi.](dsrp-mysql.md#configurejdbcconnections)
 
-      *default*: communautés
+      *par défaut*: communautés
 
    * **[!UICONTROL le nom de la base de données ;]**
 
-      Nom donné au schéma dans le script [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)
+      Nom donné au schéma dans [le script init_schéma.sql](dsrp-mysql.md#obtain-the-sql-script)
 
-      *default*: communautés
+      *par défaut*: communautés
 
 * **SolrConfiguration**
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper **
 
-      Laissez cette valeur vide si vous exécutez Solr à l’aide de ZooKeeper interne. Sinon, lors de l’exécution en mode [](solr.md#solrcloud-mode) SolrCloud avec un ZooKeeper externe, définissez cette valeur sur l’URI du ZooKeeper, par exemple *my.server.com:80.*
+      Laissez cette valeur vide si Solr est exécuté à l’aide du ZooKeeper interne. Sinon, lorsque vous exécutez en mode [](solr.md#solrcloud-mode) SolrCloud avec un ZooKeeper externe, définissez cette valeur sur l’URI du ZooKeeper, par exemple *my.server.com:80.*
 
-      *default*: *&lt;blank>*
+      *par défaut*: *&lt;blank>*
 
    * **[!UICONTROL URL de Solr]**
 
-      *default*: https://127.0.0.1:8983/solr/
+      *par défaut*: https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Collection Solr]**
 
-      *default*: collection1
+      *par défaut*: collection1
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
-### Etapes de migration sans temps d’arrêt pour les valeurs par défaut {#zerodt-migration-steps}
+### Étapes de migration sans interruption de service pour le rtp par défaut {#zerodt-migration-steps}
 
-Pour vous assurer que la page par défaut [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) fonctionne comme prévu :
+Pour vous assurer que la page http://localhost:4502/communities/admin/defaultsrp [](http://localhost:4502/communities/admin/defaultsrp) fonctionne comme prévu par défaut, procédez comme suit :
 
 1. Renommez le chemin d’accès `/etc/socialconfig` à `/etc/socialconfig_old`, de sorte que la configuration du système revienne à jsrp(par défaut).
 1. Accédez à la page par défaut [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), où jsrp est configuré. Cliquez sur le bouton **[!UICONTROL Envoyer]** pour créer un nouveau noeud de configuration par défaut `/conf/global/settings/community/srpc`.
@@ -122,27 +124,27 @@ Pour rendre la configuration identique disponible dans l’environnement de publ
 
 * Sur l&#39;auteur :
 
-   * Accédez au menu principal à **[!UICONTROL Outils > Opérations > Réplication.]**
-   * Double-cliquez sur **Activer l’arborescence **
-   * **Chemin de début:**
+   * Accédez au menu principal à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication.]**
+   * Double-cliquez sur **[!UICONTROL Activer l’arborescence]**
+   * **Chemin de début**:
 
       * Naviguer jusqu’à `/etc/socialconfig/srpc/`
-   * Vérifier que `Only Modified` n’est pas sélectionné.
-   * Sélectionner **[!UICONTROL Activer]**
+   * Assurez-vous que `Only Modified` l’option n’est pas sélectionnée.
+   * Sélectionnez **[!UICONTROL Activer]**.
 
 
 ## Gestion des données utilisateur {#managing-user-data}
 
-Pour plus d’informations sur les *utilisateurs*, les profils ** utilisateur et les groupes *d’* utilisateurs, souvent entrés dans l’environnement de publication, consultez la page
+Pour plus d’informations sur *les utilisateurs*, les profils ** utilisateur et les groupes *d’* utilisateurs, souvent saisis dans l’environnement de publication, consultez la page :
 
 * [Synchronisation des utilisateurs](sync.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
 
-## Réindexation Solr pour DSRP {#reindexing-solr-for-dsrp}
+## Réindexation du Solr pour DSRP {#reindexing-solr-for-dsrp}
 
-Pour réindexer DSRP Solr, suivez la documentation relative à la [réindexation MSRP](msrp.md#msrp-reindex-tool). Toutefois, lors de la réindexation pour DSRP, utilisez plutôt cette URL : **/services/social/datastore/rdb/reindex**
+Pour réindexer DSRP Solr, suivez la documentation relative à la [réindexation du MSRP](msrp.md#msrp-reindex-tool). Cependant, lors de la réindexation pour le DSRP, utilisez plutôt cette URL : **/services/social/datastore/rdb/reindex**
 
-Par exemple, une commande curl pour réindexer DSRP se présenterait comme suit :
+Par exemple, une commande curl pour réindexer DSRP ressemblerait à ceci :
 
 ```shell
 curl -u admin:password -X POST -F path=/ https://host:port/services/social/datastore/rdb/reindex
