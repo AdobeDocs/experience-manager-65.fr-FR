@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 78133b41e1c99f8f86f4c0d51961287735423fe2
+source-git-commit: cb141914428f42a9755b5479ab1652c8ca51f640
+workflow-type: tm+mt
+source-wordcount: '2155'
+ht-degree: 90%
 
 ---
 
@@ -22,14 +25,14 @@ Cette section explique comment développer votre application AEM à l’aide de 
 
 Reportez-vous à la documentation de présentation pour plus d’informations sur les différents environnements de développement disponibles.
 
-CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur. Avec CRXDE Lite, vous pouvez créer et modifier des fichiers (par exemple, dotés des extensions .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des nœuds, des propriétés et des bundles, le tout avec une connexion et une intégration à SVN.
+CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur. CRXDE Lite vous permet de créer un projet, de créer et de modifier des fichiers (tels que .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des noeuds, des propriétés et des lots lors de la journalisation.
 CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serveur AEM, lorsque vous développez une application en étendant ou modifiant les composants prêts à l’emploi et les bundles Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la complétion de code et de la mise en surbrillance de la syntaxe.
 
 >[!NOTE]
 >
->Par défaut, tous les utilisateurs d’AEM peuvent accéder à CRXDE Lite. If desired, [configure ACLs](/help/sites-administering/security.md#permissions-and-acls) for the following node so that only developers can access CRX DE Lite:
->
->`/libs/granite/crxde`
+>A partir d’AEM 6.5.5.0, l’accès anonyme à CRXDE Lite n’est plus possible.
+>Les utilisateurs sont redirigés vers l’écran de connexion.
+
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ Pour commencer avec CRXDE Lite, procédez comme suit :
 
 L’interface utilisateur de CRXDE Lite est la suivante dans votre navigateur : 
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-18](assets/crx-interface.jpg)
 
 Vous pouvez désormais utiliser CRXDE Lite pour développer votre application.
 
@@ -106,7 +109,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
    <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>File</strong>: nt:file node and its nt:resource subnode</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
   </tr>
   <tr>
-   <td>Supprimez<br /> </td>
+   <td>Supprimer<br /> </td>
    <td>Supprime le nœud sélectionné.<br /> </td>
   </tr>
   <tr>
@@ -130,10 +133,6 @@ CRXDE Lite offre les fonctionnalités suivantes :
    <td>Permet d’ajouter des types mixin au type de nœud. Les types mixin sont principalement utilisés pour ajouter des fonctionnalités avancées telles que la gestion des versions, le contrôle d’accès, le référencement et le verrouillage du nœud.</td>
   </tr>
   <tr>
-   <td>Équipe<br /> </td>
-   <td><p>Menu déroulant permettant d’effectuer des tâches de gestion de versions standard :</p> <p>- <strong>Mise à jour</strong> du référentiel à partir du serveur SVN</p> <p>- <strong>Validation</strong> des modifications locales sur le serveur SVN</p> <p>- Voir <strong>l’état</strong> du nœud actif</p> <p>- Voir <strong>l’état récursif</strong> de la sous-arborescence du nœud actif</p> <p>- <strong>Extraction</strong> d’une copie de travail à partir du serveur SVN</p> <p>- <strong>Exportation</strong> d’un projet à partir du serveur SVN (sans créer de copie de travail)</p> <p>- <strong>Importation</strong> d’un projet du référentiel vers le serveur SVN<br /> </p> <p>Notez que vous devez être connecté en tant qu’utilisateur avec des autorisations suffisantes pour pouvoir exécuter certaines des tâches (en particulier celles qui écrivent dans le référentiel local).<br /> </p> </td>
-  </tr>
-  <tr>
    <td>Outils<br /> </td>
    <td><p>Menu déroulant avec les outils suivants :</p> <p>- <strong>Config serveur ...</strong> : pour accéder à la console Felix.</p> <p>- <strong>Requête ...</strong> : pour interroger le référentiel.</p> <p>- <strong>Privilèges ...</strong> : pour ouvrir la gestion des privilèges, laquelle permet d’afficher et d’ajouter des privilèges.</p> <p>- <strong>Test du contrôle d’accès ...</strong> : emplacement où vous pouvez tester l’autorisation pour certains chemins et/ou le chemin principal.</p> <p>- <strong>Exporter le type de nœud</strong> : pour exporter les types de nœud dans le système en tant que notation cnd.</p> <p>- <strong>Importer le type de nœud ...</strong> : pour importer les types de nœud en utilisant la notation cnd.</p> <p>- <strong>Installer le débogueur SiteCatalyst ...</strong> : instructions sur l’installation de Analytics Debugger.</p> </td>
   </tr>
@@ -143,48 +142,6 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
  </tbody>
 </table>
-
-## Création d’un projet {#creating-a-project}
-
-Avec CRXDE Lite, vous pouvez créer un projet de travail en trois clics. The project wizard creates a new project under `/apps`, some content under `/conten`t and a package wrapping all the project the content under `/etc/packages`. Le projet peut être utilisé immédiatement pour le rendu d’un exemple de page affichant **Hello World**, basé sur un script jsp qui restitue une propriété du référentiel et appelle une classe Java pour afficher du texte.
-
-Pour créer un projet avec CRXDE Lite :
-
-1. Ouvrez CRXDE Lite dans un navigateur.
-1. Dans le volet de navigation, cliquez avec le bouton droit sur un nœud, sélectionnez **Créer ...**, puis **Créer un projet ...**.
-Note: you can right-click any node in the tree navigation, as the new project nodes are, by design, created below `/apps,` `/content` and `/etc/packages`.
-
-1. Définissez les éléments suivants :
-
-   * **Nom du projet** : le nom du projet est utilisé pour créer les nouveaux nœuds et le bundle, par ex. `myproject`.
-
-   * **Module Java** : préfixe du nom du module Java, par ex. `com.mycompany`.
-
-1. Cliquez sur **Créer**.
-1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
-
-Pour accéder à l’exemple de page affichant **Hello World**, pointez votre navigateur sur :
-
-`https://localhost:4502/content/<project-name>.html`
-
-La page **Hello World** est basée sur un nœud de contenu qui appelle un script jsp via la propriété `sling:resourceType`. Le script lit la propriété `jcr:title` à partir du référentiel et obtient le contenu du corps en appelant une méthode de la classe SampleUtil, disponible dans le bundle de projet.
-
-Les nœuds suivants sont créés :
-
-* `/apps/<project-name>`: le de l’application .
-* `/apps/<project-name>/components`: le de composants, contenant l’exemple de fichier html.jsp, utilisé pour générer une page.
-
-* `/apps/<project-name>/src`: le de lots, contenant un exemple de lot de projet.
-
-* `/apps/<project-name>/install`: le de lots compilés, contenant l’exemple de lot de projet compilé.
-* `/content/<project-name>`: le de contenu .
-* /etc/modules/&lt;suffixe-java>/&lt;nom-projet>.zip, un module englobant toute l’application et le contenu du projet. Vous pouvez l’utiliser pour reconstruire le projet en vue d’un déploiement ultérieur (par exemple dans d’autres environnements) ou pour collaborer via le partage de modules.
-
-La structure se présente comme suit dans CRXDE Lite avec un projet appelé **myproject** et un suffixe de module Java appelé **mycompany** : 
-
-![chlimage_1-19](assets/chlimage_1-19.png)
-
-![chlimage_1-20](assets/chlimage_1-20.png)
 
 ## Création d’un dossier {#creating-a-folder}
 
@@ -243,7 +200,7 @@ Pour créer un composant avec CRXDE Lite :
 
 Cela crée :
 
-* Un noeud de type `cq:Component`
+* Noeud de type `cq:Component`
 * Les propriétés du composant
 * Un script .jsp de composant
 
@@ -279,7 +236,7 @@ Vous pouvez désormais adapter le nœud à vos besoins en modifiant les proprié
 
 >[!NOTE]
 >
->La plupart des opérations de modification, y compris Créer un nœud, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton Enregistrer tout). Cependant, certaines opérations, telles que le déplacement, sont automatiquement conservées.
+>La plupart des opérations de modification, y compris Créer un nœud, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton Enregistrer tout). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
 >
 >La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel JCR en premier, lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
@@ -305,176 +262,6 @@ Pour créer un script :
 1. Le nouveau fichier s’ouvre en tant qu’onglet dans le volet de modification.
 1. Modifiez le fichier.
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications.
-
-## Gestion d’un bundle {#managing-a-bundle}
-
-Avec CRXDE Lite, il est facile de créer un bundle OSGI, d’y ajouter des classes Java et de le construire. Le bundle est ensuite automatiquement installé et démarré dans le conteneur OSGI.
-
-Cette section explique comment créer un bundle `Test` avec une classe Java `HelloWorld` qui affiche **Hello World!** dans votre navigateur lorsque la ressource est demandée.
-
-### Création d’un bundle {#creating-a-bundle}
-
-Pour créer le bundle Test avec CRXDE Lite :
-
-1. Dans CRXDE Lite, créez le projet `myapp` avec [l’assistant de projet](#creating-a-project). Entre autres, les nœuds suivants sont créés : 
-
-   * `/apps/myapp/src`
-   * `/apps/myapp/install`
-
-1. Right-click the folder `/apps/myapp/src` that will contain the `Test` bundle, select **Create ...**, then **Create Bundle ...**.
-
-1. Définissez les propriétés du bundle comme suit : 
-
-   * Symbolic Bundle Name: `com.mycompany.test.TestBundle`
-
-   * Nom du lot: `Test Bundle`
-   * Description du lot :
-
-      ```
-      This is my Test Bundle
-      ```
-
-   * Module:
-
-      ```
-      com.mycompany.test
-      ```
-   Cliquez sur **OK**.
-
-1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
-
-L’assistant crée les éléments suivants :
-
-* Noeud `com.mycompany.test.TestBundle` de type `nt:folder.` Il s’agit du noeud de l’d’assemblage .
-
-* Le fichier `com.mycompany.test.TestBundle.bnd`. Il sert de descripteur de déploiement pour votre bundle et se compose d’un ensemble d’en-têtes.
-
-* Les structures de dossier : 
-
-   * `src/main/java/com/mycompany/test`. Contient les modules et les classes Java.
-
-   * `src/main/resources`. Contient les ressources utilisées dans le bundle.
-
-* Le `Activator.java` fichier. Il s’agit de la classe d’écouteur facultative à notifier des événements de démarrage et d’arrêt du bundle.
-
-Le tableau suivant répertorie toutes les propriétés du fichier .bnd, leurs valeurs et descriptions :
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriétés</strong></td>
-   <td><strong>Valeur (à la création d’un lot)<br /> </strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Export-Package :</td>
-   <td><p>*</p> <p>Remarque : cette valeur doit être adaptée pour refléter la spécificité du lot.</p> </td>
-   <td>L’en-tête Export-Package définit les packages exportés à partir du lot (de packages séparés par des virgules). The exported packages constitute the public<br /> view of the bundle.<br /> </td>
-  </tr>
-  <tr>
-   <td>Importer-Package :</td>
-   <td><p>*</p> <p>Remarque : cette valeur doit être adaptée pour refléter la spécificité du lot.</p> </td>
-   <td>L’en-tête Import-Package définit les packages importés pour le lot (de packages séparés par des virgules).</td>
-  </tr>
-  <tr>
-   <td>Pack privé :</td>
-   <td><p>*</p> <p>Remarque : cette valeur doit être adaptée pour refléter la spécificité du lot.</p> </td>
-   <td>L’en-tête Private-Package définit les packages privés pour le lot (de packages séparés par des virgules). Les modules privés constituent l’implémentation interne.<br /> </td>
-  </tr>
-  <tr>
-   <td>Bundle-Name :</td>
-   <td>Tester le lot</td>
-   <td>Définit un nom court et lisible pour l’assemblage.</td>
-  </tr>
-  <tr>
-   <td>Bundle-Description :</td>
-   <td>Ceci est mon lot de tests</td>
-   <td>Définit une description courte et intelligible du lot.</td>
-  </tr>
-  <tr>
-   <td>Bundle-SymbolicName :</td>
-   <td>com.mycompany.test.TestBundle</td>
-   <td>Spécifie un nom unique non localisable pour le lot</td>
-  </tr>
-  <tr>
-   <td>Bundle-Version :</td>
-   <td>1.0.0-SNAPSHOT</td>
-   <td>Spécifie la version du lot</td>
-  </tr>
-  <tr>
-   <td>Bundle-Activator :</td>
-   <td>com.mycompany.test.Activator</td>
-   <td>Spécifie le nom de la classe d’écouteur facultative à notifier des  de lot et des d’arrêt </td>
-  </tr>
- </tbody>
-</table>
-
-Pour plus d’informations sur le format bnd, reportez-vous à l’utilitaire [bnd](https://bndtools.org/) utilisé par CRXDE pour créer des bundles OSGI.
-
-### Création d’une classe Java {#creating-a-java-class}
-
-Pour créer la classe Java `HelloWorld` dans le bundle Test :
-
-1. Ouvrez CRXDE Lite dans un navigateur.
-1. In the Navigation pane, right-click the node containing the `Activator.java` file ( `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java`), select **Create ...**, then **Create File ...**.
-
-1. Name the file `HelloWorld.java`. Cliquez sur **OK**.
-
-1. Le fichier `HelloWorld.java` s’ouvre dans le volet de modification.
-1. Ajouter les lignes suivantes dans `HelloWorld.java`:
-
-   ```
-     package com.mycompany.test;
-   
-     public class HelloWorld {
-     public String getString(){
-     return "Hello World!";
-     }
-     }
-   ```
-
-1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
-
-### Création d’un bundle {#building-a-bundle}
-
-Pour créer le bundle Test :
-
-1. Ouvrez CRXDE Lite dans un navigateur.
-1. Dans le volet de navigation, cliquez avec le bouton droit sur le fichier .bnd, sélectionnez **Outils**, puis **Bundle**.
-
-L’assistant de création de bundle :
-
-* Compile les classes Java.
-* Crée le fichier .jar contenant les classes Java compilées et les ressources et les place dans le dossier `myapp/install`.
-* Installe et démarre le bundle dans le conteneur OSGI.
-
-Pour voir l’effet du bundle Test, créez un composant qui utilise la méthode Java HelloWorld.getString() et une ressource qui est rendue par ce composant :
-
-1. Créez le composant `mycomp` sous `myapp/components`.
-
-1. Modifiez `mycomp.jsp` et remplacez le code par les lignes suivantes :
-
-   ```
-     <%@ page import="com.mycompany.test.HelloWorld"%><%
-     %><%@ include file="/libs/foundation/global.jsp"%><%
-     %><% HelloWorld hello = new HelloWorld();%><%
-     %>
-     <html>
-     <body>
-     <b><%= hello.getString() %></b><br>
-     </body>
-     </html>
-   ```
-
-1. Create the resource `test_node` of type `nt:unstructured` under `/content`.
-
-1. For `test_node`, create the following property: Name = `sling:resourceType`, Type = `String`, Value = `myapp/components/mycomp`.
-
-1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
-
-1. Dans votre navigateur, demandez `test_node`: `https://<hostname>:<port>/content/test_node.html`.
-
-1. Une page est affichée avec le message **Hello World!**.
 
 ## Exportation et importation de types de nœuds {#exporting-and-importing-node-types}
 
