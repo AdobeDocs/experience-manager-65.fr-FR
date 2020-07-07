@@ -3,7 +3,7 @@ title: Gérez des ressources composées contenant des références et des ressou
 description: Découvrez comment créer des références à des ressources numériques à partir de l’intérieur [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de pages pour vue des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 18%
@@ -89,7 +89,7 @@ Pour les ressources prises en charge avec des formats de plusieurs pages (fichie
 
 La génération de sous-ressources est désactivée par défaut. Pour activer la génération de sous-ressources, procédez comme suit :
 
-1. Log into [!DNL Experience Manager] as an administrator. Access **[!UICONTROL Tools > Workflow > Models]**.
+1. Log into [!DNL Experience Manager] as an administrator. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
 1. Sélectionnez **[!UICONTROL DAM Update Asset]** Workflow et cliquez sur **[!UICONTROL Modifier]**.
 1. Cliquez sur **[!UICONTROL Activer/désactiver le panneau]** latéral et recherchez l’étape **[!UICONTROL Créer un sous-actif]** . Ajoutez l’étape au processus. Cliquez sur **[!UICONTROL Synchroniser]**.
 
@@ -99,7 +99,7 @@ Pour générer les sous-ressources, effectuez l’une des opérations suivantes 
 * Ressources multi-page existantes : Exécutez manuellement le processus de mise à jour des ressources  DAM en procédant comme suit :
 
    * Sélectionnez une ressource et cliquez sur [!UICONTROL Chronologie] pour ouvrir le panneau de gauche. Alternately, use the keyboard shortcut `alt + 3`. Cliquez sur Processus [!UICONTROL de]Début, sélectionnez [!UICONTROL DAM Update Asset], cliquez sur [!UICONTROL Début], puis sur [!UICONTROL Continuer.]
-   * Sélectionnez un élément et cliquez sur [!UICONTROL Créer > Processus] dans la barre d’outils. Dans la boîte de dialogue contextuelle, sélectionnez [!UICONTROL DAM Update Asset] workflow, cliquez sur [!UICONTROL Début], puis sur [!UICONTROL Continuer].
+   * Sélectionnez une ressource et cliquez sur [!UICONTROL Créer] > [!UICONTROL Processus] dans la barre d’outils. Dans la boîte de dialogue contextuelle, sélectionnez [!UICONTROL DAM Update Asset] workflow, cliquez sur [!UICONTROL Début], puis sur [!UICONTROL Continuer].
 
 Plus précisément pour les documents Microsoft Word, exécutez le processus des Documents **[!UICONTROL DAM Parse]** Word. Il génère un `cq:Page` composant à partir du contenu du document Microsoft Word. Les images extraites du document sont référencées à partir du composant `cq:Page`. Elles sont extraites même si la génération des sous-ressources est désactivée.
 
