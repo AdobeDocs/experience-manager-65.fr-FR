@@ -3,7 +3,7 @@ title: Ressources liées
 description: Découvrez comment relier des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 50%
@@ -17,8 +17,9 @@ ht-degree: 50%
 
 Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résolution avec des fournisseurs ou des agences et de rendre le fichier INDD haute résolution disponible uniquement sur demande.
 
->[!NOTE] Seuls les utilisateurs disposant d’autorisations de modification sur les ressources peuvent établir une relation et établir une relation entre les ressources.
+>[!NOTE]
 >
+>Seuls les utilisateurs disposant d’autorisations de modification sur les ressources peuvent établir une relation et établir une relation entre les ressources.
 
 ## Lier les ressources {#relating-assets}
 
@@ -45,7 +46,6 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
    * Pour mettre en relation le fichier source avec la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
    * Pour mettre en relation un fichier dérivé avec la ressource, sélectionnez **[!UICONTROL Dérivés]** dans la liste.
    * Pour créer une relation réciproque entre les ressources, sélectionnez **[!UICONTROL Autres]** dans la liste.
-
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Sur l’écran **[!UICONTROL Sélectionner une ressource]**, accédez à l’emplacement de la ressource que vous souhaitez mettre en relation et sélectionnez-la.
