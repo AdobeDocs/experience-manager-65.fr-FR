@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2862'
 ht-degree: 32%
@@ -268,7 +268,10 @@ Si vous disposez de plusieurs configurations, AEM affiche la [configuration par 
 >* Lorsque [Secure Prévisualisation est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les fichiers publiés et non publiés sur Dynamic Media Classic s’affichent dans le navigateur de contenu Dynamic Media Classic.
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
 >* Pour la vidéo, le navigateur de contenu Dynamic Media Classic prend en charge :
-   >   * Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
+
+   >
+   >   
+   * Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
    >   * La vidéo MP4 unique
    >   * Vidéo F4V simple
 
@@ -285,6 +288,7 @@ Parcourez les ressources Dynamic Media Classic en sélectionnant **[!UICONTROL D
 >
 >* Le navigateur de contenu Dynamic Media Classic charge environ 100 fichiers et les trie par nom.
 >* Si vous disposez d’un serveur d’aperçu sécurisé, le navigateur l’utilise pour effectuer le rendu des miniatures et des éléments.
+
 >
 
 
@@ -337,6 +341,7 @@ Par défaut, AEM recherche le dossier sélectionné et tous les sous-dossiers.
    >
 * Lors de la recherche de vidéos, vous recherchez un seul rendu. Les résultats renvoient le rendu d’origine (uniquement &amp;amp ; ast ; .mp4) et le rendu codé.
 >* Lors de la recherche d’une visionneuse de vidéos adaptative, vous recherchez le dossier et tous les sous-dossiers, mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, AEM ne recherche pas les sous-dossiers.
+
 >
 
 
