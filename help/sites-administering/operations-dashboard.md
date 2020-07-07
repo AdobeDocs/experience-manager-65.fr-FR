@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '6229'
 ht-degree: 77%
@@ -107,11 +107,11 @@ La création d’un contrôle de l’intégrité individuel comprend deux étape
 
    Les propriétés ci-dessous doivent être définies sur le nouveau nœud :
 
-   * **Nom (name) :**`sling:resourceType`
+   * **Nom:** `sling:resourceType`
 
       * **Type:** `String`
       * **Valeur:** `granite/operations/components/mbean`
-   * **Nom (name) :**`resource`
+   * **Nom:** `resource`
 
       * **Type:** `String`
       * **Valeur:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
@@ -163,17 +163,17 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
 
    Par exemple, si vous avez créé une configuration et défini la valeur **hc.mbean.name** sur **diskusage**, les nœuds de configuration se présentent comme suit :
 
-   * **Nom (name) :**`Composite Health Check`
+   * **Nom:** `Composite Health Check`
 
       * **Type:** `nt:unstructured`
 
    Avec les propriétés suivantes :
 
-   * **Nom (name) :**`sling:resourceType`
+   * **Nom:** `sling:resourceType`
 
       * **Type:** `String`
       * **Valeur:** `granite/operations/components/mbean`
-   * **Nom (name) :**`resource`
+   * **Nom:** `resource`
 
       * **Type:** `String`
       * **Valeur:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
@@ -590,7 +590,7 @@ Il est possible également de purger les workflows à partir du tableau de bord 
 
 >[!NOTE]
 >
-> Pour plus d’informations sur la maintenance du workflow, consultez [cette page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Pour plus d’informations sur la maintenance du workflow, consultez [cette page](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Maintenance des journaux d’audit {#audit-log-maintenance}
 
