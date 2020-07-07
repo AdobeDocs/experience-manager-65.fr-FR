@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 6%
@@ -68,7 +68,7 @@ Vous combinez un enregistrement à un modèle de communication interactif pour p
 
 ### Utilisation de l’API de lot avec des dossiers de contrôle {#using-the-batch-api-watched-folders}
 
-Pour faciliter l’expérience de l’API, AEM Forms fournit un service Watched Folder configuré pour utiliser l’API de traitement par lots, prêt à l’emploi. Vous pouvez accéder au service via l’interface utilisateur d’AEM Forms pour générer plusieurs communications interactives. Vous pouvez également créer des services personnalisés en fonction de vos besoins. Vous pouvez utiliser les méthodes répertoriées ci-dessous pour utiliser l’API de lot avec le dossier de contrôle :
+Pour faciliter l’expérience de l’API, les AEM Forms fournissent un service Watched Folder configuré pour utiliser l’API de traitement par lots, prêt à l’emploi. Vous pouvez accéder au service via l’interface utilisateur AEM Forms pour générer plusieurs communications interactives. Vous pouvez également créer des services personnalisés en fonction de vos besoins. Vous pouvez utiliser les méthodes répertoriées ci-dessous pour utiliser l’API de lot avec le dossier de contrôle :
 
 * Spécifier les données d’entrée (enregistrements) au format de fichier JSON pour produire une communication interactive
 * Utiliser les données d’entrée (enregistrements) enregistrées dans une source de données externe et accessibles via un modèle de données de formulaire pour produire une communication interactive
@@ -177,7 +177,7 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
 
 1. Connectez-vous à votre instance AEM et créez une communication interactive. Pour utiliser la communication interactive mentionnée dans l&#39;exemple de code ci-dessous, [cliquez ici](assets/SimpleMediumIC.zip).
 1. [Créez et déployez un projet AEM à l’aide d’Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) sur votre instance AEM.
-1. Ajoutez [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure dans la liste des dépendances du fichier POM de votre projet AEM. Par exemple :
+1. Ajoutez le SDK client [AEM Forms version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure dans la liste des dépendances du fichier POM de votre projet AEM. Par exemple :
 
    ```XML
        <dependency>
@@ -345,12 +345,15 @@ Ensuite, l’URL suivante sur le noeud de publication affiche le Canal Web de la
 Outre l’enregistrement des données sur le système de fichiers, vous stockez des fichiers JSON dans le référentiel CRX, le système de fichiers, le serveur Web ou vous pouvez accéder aux données par le biais du service de préremplissage OSGI. La syntaxe de fusion des données à l’aide de différents protocoles est la suivante :
 
 * **Protocole CRX**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Protocole de fichier**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Protocole du service de préremplissage**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME fait référence au nom du service de préremplissage OSGI. Voir Création et exécution d’un service de préremplissage.
@@ -358,7 +361,9 @@ Outre l’enregistrement des données sur le système de fichiers, vous stockez 
    IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant à l’utilisateur connecté est un exemple de métadonnées qui pourraient être utilisées.
 
 * **Protocole HTTP**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, voir [Configuration du service de préremplissage à l’aide de Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>
+>Seul le protocole CRX est activé par défaut. Pour activer d’autres protocoles pris en charge, voir [Configuration du service de préremplissage à l’aide de Configuration Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
