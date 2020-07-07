@@ -3,10 +3,10 @@ title: Configurez le balisage des ressources à l’aide de Smart Content Servic
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dfac819018e85e0e8221bfcc57bc1eaf43b7ff25
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 58%
+source-wordcount: '1116'
+ht-degree: 55%
 
 ---
 
@@ -93,7 +93,7 @@ Pour utiliser les API de Smart Content Service, créez une intégration dans Ado
 
 Pour configurer l’intégration, utilisez les valeurs des champs ID de compte technique, ID d’organisation, clé secrète client, serveur d’autorisation et clé d’API de l’intégration Adobe Developer Console. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
 
-1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools > Cloud Service > Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
+1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
 1. Sous **[!UICONTROL Ressources – Balises intelligentes]**, ouvrez la configuration créée ci-dessus. Sur la page de paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
 1. Pour les champs **[!UICONTROL Clé API]**, **[!UICONTROL ID de compte technique]**, **[!UICONTROL ID d’organisation]** et **[!UICONTROL Client secret]**, utilisez les valeurs générées ci-dessus.
@@ -103,15 +103,13 @@ Pour configurer l’intégration, utilisez les valeurs des champs ID de compte t
 Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour valider la configuration. Pour procéder à la validation, suivez ces étapes.
 
 1. Accédez à votre [!DNL Experience Manager] serveur à `https://[aem_server]:[port]`.
-1. Accédez à **[!UICONTROL Outils > Opérations > Console Web]** pour ouvrir la console OSGi. Cliquez sur **[!UICONTROL Principal > JMX]**.
-1. Cliquez sur **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
-1. Cliquez sur **[!UICONTROL validateConfigs()]**. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** to open the OSGi console. Click **[!UICONTROL Main]>[!UICONTROL JMX]**.
+1. Cliquez sur `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+1. Cliquez sur `validateConfigs()`. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**. Les résultats de la validation s’affichent dans la même boîte de dialogue.
 
-   Le résultat de la validation s’affiche dans la même boîte de dialogue.
+## Enable smart tagging in the [!UICONTROL DAM Update Asset] workflow (Optional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-## Enable smart tagging in the DAM Update Asset workflow (Optional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
-
-1. Dans [!DNL Experience Manager], accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. In [!DNL Experience Manager], go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Sur la page **[!UICONTROL Modèles de processus]**, sélectionnez le modèle de processus **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques]**.
 1. Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 1. Développez le panneau latéral pour afficher les étapes. Faites glisser l’étape **[!UICONTROL Balisage intelligent de la ressource]** disponible dans la section Processus de DAM (gestion des actifs numériques) et placez-la après l’étape **[!UICONTROL Miniatures des processus]**.
