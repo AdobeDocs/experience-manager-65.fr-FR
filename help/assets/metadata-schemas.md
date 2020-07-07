@@ -3,10 +3,10 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '2644'
-ht-degree: 51%
+ht-degree: 52%
 
 ---
 
@@ -119,7 +119,7 @@ Les valeurs admises pour cette propriété sont les suivantes :
 
 * `./jcr:content/metadata/dc:title` : stocke la valeur dans le nœud de métadonnées de la ressource en tant que propriété `dc:title`.
 
-* `./jcr:created`: Stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe vous recommande de les marquer comme Désactiver la modification.
+* `./jcr:created` : stocke la date et l’heure de création d’une ressource. Il s’agit d’une propriété protégée. Si vous configurez ces propriétés, Adobe recommande de les marquer avec l’état Désactiver la modification.
 
 Pour garantir que le composant s’affiche correctement dans le formulaire de schéma de métadonnées, le chemin de la propriété ne doit pas comporter d’espace.
 
@@ -193,7 +193,7 @@ Vous pouvez utiliser un modèle existant pour un autre type MIME. Par exemple, u
 
 In this case, create a node at `/etc/dam/metadataeditor/mimetypemappings` in the CRX repository. Indiquez un nom pour le nœud et définissez les propriétés suivantes :
 
-| Name (Nom) | Description | Type | Valeur |
+| Nom | Description | Type | Valeur |
 |------|-------------|------|-------|
 | `exposedmimetype` | Nom du formulaire existant à associer | `String` | `image/jpeg` |
 | `mimetypes` | Liste des types MIME qui utilisent le formulaire défini dans l’attribut `exposedmimetype`. | `String` | `image/png` |
