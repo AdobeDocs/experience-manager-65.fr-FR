@@ -1,12 +1,12 @@
 ---
-title: Étendre la fonctionnalité de recherche des ressources d’Adobe Experience Manager
-description: Étendez les fonctionnalités de recherche des ressources Adobe Experience Manager au-delà des valeurs par défaut.
+title: Étendre la fonctionnalité de recherche des ressources d'Adobe Experience Manager
+description: Étendre les fonctionnalités de recherche des ressources d’Adobe Experience Manager au-delà des valeurs par défaut.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 75%
+source-wordcount: '857'
+ht-degree: 74%
 
 ---
 
@@ -31,7 +31,7 @@ To overlay the pre-configured predicates, copy the `facets` node from `/libs/dam
 
 >[!NOTE]
 >
->Par défaut, la structure de répertoire sous /`apps` n’existe pas et doit être créée. Assurez-vous que les types de nœuds correspondent à ceux existant sous / `libs`.
+>Par défaut, la structure de répertoires sous `/apps` n’existe pas, donc créez-la. Assurez-vous que les types de nœuds correspondent à ceux existant sous `/libs`.
 
 ## Ajouter des onglets {#adding-tabs}
 
@@ -296,6 +296,6 @@ Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigu
 
 ## Personnalisation des résultats de la recherche {#customizing-search-results}
 
-La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. Experience Manager Assets est fourni avec un ensemble d’objectifs prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. Les ressources du Experience Manager sont fournies avec un ensemble d’objectifs prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Outre l’utilisation d’objectifs préexistants, les développeurs d’Experience Manager peuvent également créer leurs propres objectifs.
+En plus d&#39;utiliser des objectifs préexistants, les développeurs Experience Manager peuvent également créer leurs propres objectifs.
