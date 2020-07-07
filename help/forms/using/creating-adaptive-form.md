@@ -9,7 +9,10 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '2042'
+ht-degree: 87%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
-1. Accédez à l’instance Auteur d’AEM Forms à l’adresse `https://'[server]:[port]'/<custom-context-if-any>.`
+1. Accédez à l’instance d’auteur AEM Forms à l’adresse `https://'[server]:[port]'/<custom-context-if-any>.`
 
 1. Entrez vos informations d’identification dans la page de connexion d’AEM.
 
@@ -36,7 +39,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
    * **[!UICONTROL Titre :]** spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur d’AEM Forms.
    * **[!UICONTROL Nom :]** Indique le nom du formulaire. Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
-   * **[!UICONTROL Description :]** Indique les informations détaillées sur le formulaire.
+   * **[!UICONTROL Description :]** Indique les informations détaillées relatives au formulaire.
    * **[!UICONTROL Balises :]** indique les balises pour individualiser le formulaire adaptatif. Les balises aident à rechercher le formulaire. Pour créer des balises, saisissez les nouveaux noms de balise dans la boîte de dialogue **Balises.**
 
 1. Vous pouvez créer un formulaire adaptatif basé sur l’un des modèles de formulaire suivants :
@@ -45,6 +48,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
    * [Modèle de formulaire XFA](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)
    * [Schéma XML ou JSON](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
    * Aucun ou sans modèle de formulaire
+
    Vous pouvez configurer ces informations via l’onglet **[!UICONTROL Modèle de formulaire]** figurant sur la page **[!UICONTROL Ajouter des propriétés]**. Par défaut, le modèle de formulaire sélectionné est **[!UICONTROL Aucun]**.
 
 1. Appuyez sur **Create** (Créer). Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
@@ -59,7 +63,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
    Pour plus d’informations sur l’interface de création de formulaires adaptatifs et les composants disponibles, voir [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Autorisez les fenêtres indépendantes dans votre navigateur pour ouvrir le formulaire créé dans un nouvel onglet.
 
@@ -121,12 +125,13 @@ Procédez comme suit pour utiliser un schéma XML ou JSON comme modèle de formu
 
    * **[!UICONTROL Télécharger depuis un disque]** : sélectionnez cette option et appuyez sur Charger une définition de schéma pour parcourir et charger un schéma XML ou un schéma JSON à partir de votre système de fichiers. Le fichier de schéma chargé se trouve avec le formulaire et n’est pas accessible aux autres formulaires adaptatifs.
    * **[!UICONTROL Recherche dans le référentiel]** : sélectionnez cette option pour effectuer une sélection dans la liste fichiers de définition de schéma disponibles dans le référentiel. Sélectionnez le fichier de schéma XML ou JSON comme modèle de formulaire. Le schéma sélectionné sera associé au formulaire par référence et sera accessible pour une utilisation dans d’autres formulaires adaptatifs.
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+
+   >[!CAUTION]
    >
    >Assurez-vous que le nom du schéma JSON se termine par **.schema.json**. Par exemple : mySchema.schema.json
 
    ![Sélection du schéma XML ou JSON](assets/upload-schema.png)
-   **Figure :** *Sélection de  XML ou JSON*
+   **Figure :** *Sélection d’un schéma XML ou JSON*
 
 1. (Pour le schéma XML uniquement) Après avoir sélectionné ou chargé un schéma XML, spécifiez un élément racine du fichier XSD sélectionné à mapper avec le formulaire adaptatif.
 
@@ -179,10 +184,12 @@ Par défaut, l’option d’enregistrement automatique n’est pas activée. Vou
 
    * **[!UICONTROL Basé sur l’heure :]** sélectionnez l’option pour commencer à enregistrer le contenu selon un intervalle de temps spécifié.
    * **[!UICONTROL Basé sur les événements :]** sélectionnez l’option pour commencer à enregistrer le contenu sur la base d’un événement déclenché.
+
    Lorsque vous sélectionnez un déclencheur, la zone Configuration de la stratégie est activée. La zone Configuration de la stratégie vous permet d’effectuer les opérations suivantes :
 
    * Spécifiez un intervalle de temps si vous sélectionnez un déclencheur **[!UICONTROL basé sur l’heure]**.
    * Spécifiez un nom d’événement si vous sélectionnez un déclencheur **[!UICONTROL basé sur un événement.]**
+
    Vous pouvez également créer et ajouter à la liste votre propre stratégie personnalisée. Pour plus d’informations, reportez-vous à la section [Mise en œuvre d’une stratégie personnalisée pour enregistrer automatiquement les formulaires](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
 1. (Enregistrement automatique basé sur un moment uniquement) Exécutez les étapes suivantes pour configurer les options de l’enregistrement automatique basé sur un moment.
