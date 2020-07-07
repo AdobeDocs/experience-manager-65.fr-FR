@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '3221'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -336,16 +336,14 @@ Si vous disposez de plusieurs configurations, AEM affiche la [configuration par 
 >* Les éléments figurant dans le dossier ad hoc n’apparaissent pas dans le navigateur de contenu Scene7.
 >* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les éléments publiés sur Scene7, tout comme les éléments non publiés, apparaissent dans le navigateur de contenu Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
-
    >
    >
-* Pour la vidéo, l’explorateur de contenu Scene7 prend en charge : >
-   >    * Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
-   >    * La vidéo MP4 unique
-   >    * Vidéo F4V simple
-
->
-
+* Pour la vidéo, le navigateur de contenu Scene7 prend en charge :
+   >
+   >  
+* Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
+>  * La vidéo MP4 unique
+>  * Vidéo F4V simple
 
 
 ### Navigation dans le contenu {#browsing-content-in-the-classic-ui}
@@ -367,7 +365,6 @@ Par défaut, les éléments sont affichés par nom de fichier. Vous pouvez égal
 >* Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
 >* La vidéo MP4 unique
 >* Vidéo F4V simple
-
 >
 
 
