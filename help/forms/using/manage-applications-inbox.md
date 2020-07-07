@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '952'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +28,7 @@ L’interface utilisateur de la boîte de réception fournit la liste et les vue
 
 En résumé, la boîte de réception vous permet de créer une nouvelle application et de gérer les tâches affectées.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Vous devez être membre du groupe d’utilisateurs de processus pour pouvoir utiliser la boîte de réception AEM.
 
@@ -45,14 +48,16 @@ Les tâches affectées à un groupe s’affichent dans la boîte de réception d
 
 1. Appuyez sur la vignette de la tâche pour la sélectionner. Les options pour ouvrir ou déléguer la tâche s’affichent en haut.
 
-   ![select-](assets/select-task.png)
+   ![select-tâche](assets/select-task.png)
 
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour déléguer la tâche, appuyez sur **[!UICONTROL Déléguer]**. La boîte de dialogue Déléguer un élément s’ouvre. Sélectionnez un utilisateur (vous pouvez également ajouter un commentaire) puis appuyez sur **[!UICONTROL OK]**.
-   ![délégué](assets/delegate.png)
+
+   ![delegate](assets/delegate.png)
 
    * Pour demander la tâche, appuyez sur **[!UICONTROL Ouvrir]**. La boîte de dialogue Auto-affecter s’ouvre. Appuyez sur **[!UICONTROL Continuer]** pour demander la tâche. La tâche demandée s’affiche avec vous en tant que personne désignée dans votre boîte de dialogue.
+
    ![claim](assets/claim.png)
 
 ### Affichage des détails et actions sur les tâches {#view-details-and-perform-actions-on-tasks}
@@ -66,7 +71,7 @@ Lorsque vous ouvrez une tâche, vous pouvez afficher les détails de la tâche e
    >
    >Si une tâche est affectée à un groupe, vous devez d’abord la demander pour pouvoir l’ouvrir dans la vue détaillée.
 
-![-détails du](assets/task-details.png)
+![Détails de la tâche](assets/task-details.png)
 
 La vue détaillée de tâche comprend les sections suivantes :
 
@@ -99,7 +104,7 @@ Lorsque vous agissez sur la tâche, elle se poursuit dans le processus.
 
 ### Affichage des tâches terminées {#view-completed-tasks}
 
-La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de la boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin, etc. Pour  le terminé  :
+La boîte de réception AEM affiche uniquement les tâches actives. Les tâches terminées n’apparaissent pas dans la liste. Cependant, vous pouvez utiliser les filtres de la boîte de réception pour filtrer les tâches en fonction de plusieurs paramètres, tels que le type de tâche, l’état, les dates de début et de fin, etc. Pour vue des tâches terminées :
 
 1. In AEM Inbox, tap ![toggle-side-panel1](assets/toggle-side-panel1.png) to open the filter selector.
 1. Appuyez sur l’accordéon **[!UICONTROL État de la tâche]** et choisissez **[!UICONTROL Terminé]**. Toutes vos tâches terminées s’affichent.
@@ -112,9 +117,9 @@ La tâche s’ouvre pour afficher le document ou le formulaire adaptatif associ�
 
 La section de détails de la tâche affiche des informations telles qu’une mesure prise, l’état de la tâche, la date de début et la date de fin.
 
-![terminé--](assets/completed-task.png)
+![tâche terminée](assets/completed-task.png)
 
 The **[!UICONTROL Workflow Details]** tab shows each step of the workflow. Tap **[!UICONTROL View details]** for a step for detailed information.
 
-![-processus--terminé](assets/completed-task-workflow.png)
+![tâche terminée-workflow](assets/completed-task-workflow.png)
 
