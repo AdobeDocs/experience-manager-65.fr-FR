@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 88%
 
 ---
 
@@ -36,7 +39,9 @@ Ils aident les développeurs à :
 >
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
-   >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
+   >
+   >   
+   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
 >* N’est disponible que pour les utilisateurs membres du `administrators` groupe.
 
 
