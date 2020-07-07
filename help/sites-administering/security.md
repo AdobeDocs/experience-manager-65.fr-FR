@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 79%
@@ -78,7 +78,7 @@ Les tableaux suivants répertorient chaque élément avec :
    <td>Évitez de supprimer ou de désactiver ce compte, car cela aura une incidence négative sur le fonctionnement des instances d’auteur. S’il existe des exigences de sécurité qui vous obligent à le supprimer, assurez-vous d’abord de tester correctement les effets qu’il a sur vos systèmes.</td>
   </tr>
   <tr>
-   <td><p>author</p> <p>Mot de passe par défaut : author</p> </td>
+   <td><p>Auteur </p> <p>Mot de passe par défaut : author</p> </td>
    <td>Utilisateur</td>
    <td><p>Un compte d’auteur autorisé à écrire dans /content. Comprend les autorisations de contributeur et de surfeur.</p> <p>Peut être utilisé comme webmaster, car il dispose de l’accès à toute l’arborescence /content.</p> <p>Ce n’est pas un utilisateur intégré, mais un autre utilisateur de démonstration Geometrixx</p> </td>
    <td><p>Adobe vous recommande de supprimer complètement le compte ou de modifier le mot de passe par défaut.</p> <p>De préférence à l’issue de l’installation, bien que ceci puisse s’effectuer par la suite.</p> </td>
@@ -493,11 +493,11 @@ Utilisez la procédure suivante pour modifier le mot de passe d’un utilisateur
 >[!NOTE]
 >
 >Vous ne pouvez pas utiliser la console de sécurité pour modifier le mot de passe d’administrateur. To change the password for the admin account, use the [Users console](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) that Granite Operations provides.
-> Si vous utilisez AEM Forms sur JEE, n’utilisez pas les instructions ci-dessous pour modifier le mot de passe, mais utilisez plutôt la console d’administration AEM Forms sur JEE (/adminui) pour modifier le mot de passe.
+>
+>Si vous utilisez AEM Forms on JEE, n’utilisez pas les instructions ci-dessous pour modifier le mot de passe, mais utilisez la console d’administration AEM Forms on JEE (/adminui) pour modifier le mot de passe.
 
 1. Dans la console **Sécurité**, double-cliquez sur le nom de l’utilisateur dont vous souhaitez modifier le mot de passe.
 1. Cliquez sur l’onglet **Propriétés** (s’il n’est pas déjà actif).
-
 1. Cliquez sur **Définir le mot de passe**. La fenêtre Définir le mot de passe s’ouvre et vous pouvez y modifier votre mot de passe.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
