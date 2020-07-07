@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +29,7 @@ L’exemple présenté dans ce document est une implémentation de référence d
 >
 >* Les exemples et les configurations décrits dans ce document correspondent à MySQL 5.6.24 et vous devez les remplacer de manière appropriée selon votre système de base de données. 
 >* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
-> * L’exemple de package fonctionne uniquement avec les actions d’envoi de formulaires adaptatifs.
+>* L’exemple de package fonctionne uniquement avec les actions d’envoi Formulaires adaptatifs.
 
 
 ## Installer et configurer l’exemple {#set-up-and-configure-the-sample}
@@ -75,12 +78,13 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
    Pour spécifier un autre nom pour le tableau de métadonnées :
 
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de métadonnées du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau des métadonnées/métadonnées supplémentaires.
+
    Pour spécifier un autre nom pour le tableau de données :
 
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
    >[!NOTE]
    >
-   >Si vous modifiez les noms des tableaux, fournissez-les dans la configuration du portail de formulaires.
+   >Si vous modifiez les noms des tables, fournissez-les dans la configuration de Forms Portal.
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
@@ -160,6 +164,7 @@ page at https://[*host*]:[*port*]/system/console/configMgr.
 >
 > * Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous de vous l’être procuré et spécifiez les informations requises pour configurer le pool de connexions JDBC. 
 > * Pointez vos instances d’auteur et de publication pour utiliser la même base de données. La valeur du champ URI de la connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
+
 >
 
 
@@ -417,5 +422,5 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
    >
    >Si vous utilisez des bibliothèques client personnalisées au lieu des bibliothèques client guideRuntime et guideRuntimeWithXfa, utilisez le nom de catégorie pour intégrer la bibliothèque client créée dans cette procédure à vos bibliothèques personnalisées chargées lors de l’exécution.
 
-1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, lorsque le nom du fichier dépasse 150 caractères (y compris l’extension), un message s’affiche.
+1. Cliquez sur **[!UICONTROL Enregistrer tout.]** Désormais, un message s’affiche lorsque le nom de fichier dépasse 150 caractères (y compris l’extension).
 
