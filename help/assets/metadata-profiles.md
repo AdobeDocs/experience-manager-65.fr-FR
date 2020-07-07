@@ -3,7 +3,7 @@ title: profils de métadonnées pour personnaliser les exigences de métadonnée
 description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 58%
@@ -17,7 +17,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 
 ## Ajout d’un profil de métadonnées {#adding-a-metadata-profile}
 
-1. Accédez à **[!UICONTROL Outils > Ressources > Profils]** de métadonnées, puis cliquez sur **[!UICONTROL Créer]**.
+1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Profils **** de métadonnées, puis cliquez sur **[!UICONTROL Créer.]**
 1. Enter a title for the Metadata Profile, for example Sample Metadata, and click **[!UICONTROL Create]**. The [!UICONTROL Edit Form] for the metadata profile is displayed.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
@@ -31,11 +31,13 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
    * **[!UICONTROL Libellé]** du champ : Nom d’affichage de la propriété de métadonnées. Il est uniquement disponible à titre de référence.
 
    * **[!UICONTROL Associer à la propriété]**: La valeur de cette propriété fournit le chemin/nom relatif au noeud de ressources où elle est enregistrée dans le référentiel. La valeur doit toujours être début avec `./` car elle indique que le chemin d’accès se trouve sous le noeud de la ressource.
+
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
    La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom de la propriété **** Associer à, Assets stocke la valeur `dc:desc` au noeud de métadonnées de la ressource.
 
    * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
+
    ![chlimage_1-200](assets/chlimage_1-483.png)
 
    >[!NOTE]
@@ -106,7 +108,7 @@ Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un prof
 
 Pour appliquer un profil de métadonnées, procédez comme suit :
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Profils **** de métadonnées.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +128,7 @@ Pour appliquer un profil de métadonnées, procédez comme suit :
 
 ### Application d’un profil de métadonnées à l’ensemble des ressources {#applying-a-metadata-profile-globally}
 
-Outre l’application d’un profil à un dossier, vous pouvez en appliquer un globalement afin que le profil sélectionné soit appliqué à tout contenu téléchargé dans les ressources Experience Manager de n’importe quel dossier.
+Outre l’application d’un profil à un dossier, vous pouvez en appliquer un globalement afin que le profil sélectionné soit appliqué à tout contenu téléchargé dans des fichiers Experience Manager de n’importe quel dossier.
 
 Vous pouvez retraiter des ressources dans un dossier qui comporte déjà un profil de métadonnées que vous avez modifié ultérieurement. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
@@ -148,7 +150,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 ### Remove metadata profiles from folders via Profiles user interface {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the Experience Manager logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Cliquez sur le logo du Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Profils **** de métadonnées.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -160,7 +162,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant, et cliquez sur **[!UICONTROL Enregistrer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-## Limites et bonnes pratiques {#limitations-best-practices-tips}
+## Limitations and best practices {#limitations-best-practices-tips}
 
 * Il se peut que des profils de métadonnées préexistants existent depuis avant la mise à niveau vers [!DNL Experience Manager] 6.5. Après la mise à niveau, si vous appliquez un tel profil dans les [!UICONTROL propriétés] du dossier dans l’onglet Profils  de métadonnées, les champs de formulaire de métadonnées ne s’affichent pas. Cependant, si vous appliquez un nouveau profil de métadonnées, les champs du formulaire s’affichent mais ne sont pas disponibles comme prévu. Il n’y a aucune perte de fonctionnalité, mais si vous souhaitez voir les champs de formulaire (indisponibles), modifiez et enregistrez les profils de métadonnées existants.
 
