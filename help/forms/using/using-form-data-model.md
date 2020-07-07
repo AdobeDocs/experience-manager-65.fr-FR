@@ -9,7 +9,10 @@ topic-tags: integration
 discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 83%
 
 ---
 
@@ -54,11 +57,11 @@ Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adapt
 
 Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé sur un modèle de données de formulaire créé, les objets de modèle de données de formulaire apparaissent dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’explorateur de contenu dans l’éditeur de formulaires adaptatifs.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
 >Pour un fragment de formulaire adaptatif, seul l’objet de modèle de données sélectionné au moment de la création et les objets de modèle de données associés apparaissent dans l’onglet Objets de modèle de données.
 
-![modèle de données-objets-onglet](assets/data-model-objects-tab.png)
+![data-model-objets-tab](assets/data-model-objects-tab.png)
 
 Vous pouvez glisser-déposer des objets de modèle de données sur le formulaire adaptatif ou le fragment pour ajouter des champs de formulaire. Les champs de formulaire ajoutés conservent les propriétés des métadonnées et la liaison avec les propriétés de l’objet de modèle de données. La liaison garantit que les valeurs de champ sont mises à jour dans les sources de données correspondantes lors de l’envoi du formulaire et préremplies lorsque le formulaire est rendu.
 
@@ -94,7 +97,7 @@ Pour prévisualiser une communication interactive avec des exemples de données 
 
 La communication interactive s’ouvre avec des exemples de données préremplies.
 
-![aperçu Web](assets/web-preview.png)
+![prévisualisation Web](assets/web-preview.png)
 
 De même, pour prévisualiser un formulaire adaptatif avec des exemples de données, ouvrez le formulaire adaptatif en mode création et appuyez sur **[!UICONTROL Aperçu]**.
 
