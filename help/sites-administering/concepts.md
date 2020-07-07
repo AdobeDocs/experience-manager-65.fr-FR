@@ -1,6 +1,6 @@
 ---
-title: Concepts
-seo-title: Concepts
+title: 'Concepts '
+seo-title: 'Concepts '
 description: Concepts généraux d’eCommerce avec AEM.
 seo-description: Concepts généraux d’eCommerce avec AEM.
 uuid: 9a4cc154-d82b-43e0-a66c-3edf059e8b75
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 6d595c46-b04e-400b-a014-fbecd2010f5f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4532'
+ht-degree: 82%
 
 ---
 
 
-# Concepts{#concepts}
+# Concepts {#concepts}
 
 La structure d’intégration fournit les mécanismes et les composants des opérations suivantes :
 
@@ -39,6 +42,7 @@ Cela signifie que :
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 >* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+
 >
 
 
@@ -65,7 +69,7 @@ Pour optimiser le fonctionnement, AEM et le moteur eCommerce se concentrent chac
 
 * AEM peut :
 
-   * Demander :
+   * Requête:
 
       * des informations sur les produits au moteur eCommerce ;
    * Fournissez les détails suivants :
@@ -132,10 +136,9 @@ AEM eCommerce est mis en œuvre avec un moteur eCommerce :
 >AEM eCommerce mis en œuvre dans AEM à l’aide du développement générique reposant sur JCR est :
 >
 >* Un exemple d’instance AEM eCommerce native autonome illustrant l’utilisation de l’API, qui peut être utilisée pour contrôler des données des produits, les paniers et le passage en caisse conjointement à l’affichage des données existantes et aux campagnes marketing. Dans ce cas, la base de données de produits est stockée dans le référentiel natif à AEM (mise en œuvre [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) d’Adobe).
-   >  L’installation standard d’AEM contient les éléments de base de la [mise en œuvre générique eCommerce](/help/sites-administering/generic.md).
 >
-
-
+>  
+L’installation standard d’AEM contient les éléments de base de la [mise en œuvre générique eCommerce](/help/sites-administering/generic.md).
 
 ### Fournisseurs de commerce {#commerce-providers}
 
@@ -201,19 +204,19 @@ L’emplacement réel peut dépendre de votre mise en œuvre, par exemple, gén�
 
 ## Produits {#products}
 
-### Données sur les produits et données marketing {#product-data-versus-marketing-data}
+### Produit Data versus Marketing Data {#product-data-versus-marketing-data}
 
 #### Catégories structurelles et catégories marketing {#structural-versus-marketing-categories}
 
 Si les deux catégories ci-dessous peuvent être différenciées, vous pouvez créer des adresses URL claires avec une structure significative (arborescences de nœuds `cq:Page`) et, par conséquent, très proche de la gestion de contenu AEM classique :
 
-* *Catégories structurelles
+* *catégories structurelles
 
-   Arborescence de catégories définissant *ce qu&#39;est un produit*; par exemple :
+   Arbre de catégories définissant *ce qu&#39;est un produit*; par exemple :
 
    `/products/mens/shoes/sneakers`
 
-* *Catégories marketing*
+* *catégories marketing*
 
    All other categories a *product can belong to*; for example:
 
@@ -262,15 +265,15 @@ Les différents attributs de produit peuvent dépendre du moteur eCommerce utili
 
 * **Balises**
 
-   Balises utilisées pour regrouper des produits associés.
+   Balises utilisées pour grouper des produits associés.
 
 * **Catégorie de ressources par défaut**
 
-   Catégorie par défaut pour les ressources.
+   catégorie par défaut pour les ressources.
 
 * **Données ERP**
 
-   Information sur le progiciel de gestion intégré.
+   Informations sur la planification des ressources d&#39;entreprise.
 
    * **SKU**
 
@@ -365,13 +368,13 @@ Ces compartiments prennent la forme de dossiers fantômes introduits dans la str
 
 Ce scénario consiste à configurer deux instances de création :
 
-1. Instance maître de l’auteur
+1. Instance d’auteur Maître
 
-   Importe les données de produit du modèle PIM, sur lesquelles le post-traitement des chemins d’accès aux ressources est désactivé.
+   Importe les données de produit de PIM, sur lesquelles le post-traitement des chemins d’accès aux ressources est désactivé.
 
 1. Instance d’auteur DAM dédiée
 
-   Importe et post-traite les ressources de produit du modèle PIM, puis les répliquent à l’instance d’auteur maître pour utilisation.
+   Importe et traite les actifs de produit du PIM, puis les réplique à l’instance d’auteur maître pour utilisation.
 
 ![Diagramme d’architecture](assets/chlimage_1-8.png)
 
@@ -390,17 +393,17 @@ En l’absence de ressources (images) à importer pour des produits, vous pouvez
 
 Le test de performances doit être pris en compte dans les mises en œuvre d’AEM eCommerce :
 
-* Environnement d’auteur :
+* environnement de l’auteur :
 
-   L’activité en arrière-plan (par exemple, l’importation) peut se produire en même temps que l’activité normale de l’utilisateur (par exemple, la modification des pages) et même si les performances frontales sont (en général) prioritaires, les mauvaises performances observées par les auteurs en ligne peuvent entraîner une frustration susceptible de bloquer une décision d’activation.
+   L’activité en arrière-plan (par exemple, l’importation) peut se produire en même temps que l’activité normale de l’utilisateur (par exemple, la modification des pages) et même si les performances frontales sont (en général) prioritaires, les mauvaises performances constatées par les auteurs en ligne peuvent entraîner une frustration susceptible de bloquer une décision d’activation.
 
-* Environnement de publication :
+* environnement de la publication :
 
    La réplication est un processus essentiel pour s’assurer que le contenu est publié rapidement et de manière fiable. qui peut être influencée par la façon dont le créateur regroupe le contenu à publier.
 
 * Frontal:
 
-   Le mélange d’invalidations frontales et de cache peut potentiellement entraîner des surprises de performances. Des tests permettent de les éviter.
+   Le mélange d&#39;invalidations frontales et de cache peut potentiellement entraîner des surprises de performances. Des tests permettent de les éviter.
 
 Ces tests des performances impliquent de connaître et d’analyser la cible :
 
@@ -437,7 +440,7 @@ Pour toutes les mises en œuvre, tenez compte des points suivants :
 
    `/content/products/france/fr/shoe/reebok/pump/46 SKU`
 
-   doit comporter une balise par niveau de contenu (c.-à-d. pays, langue, catégorie, marque, produit). Recherche
+   doit comporter une balise par niveau de contenu (c’est-à-dire pays, langue, catégorie, marque, produit). Recherche
 
    `//element(*,my:Sku)[@country=’france’ and @language=’fr’`
 
@@ -462,7 +465,7 @@ Les sections du catalogue fournissent, par exemple, les éléments suivants :
 * Liens vers les différents produits de cette catégorie.
 * Liens vers les autres catégories.
 
-![ecommerce_category_running](assets/ecommerce_categoryrunning.png)
+![ecommerce_categoryrunning](assets/ecommerce_categoryrunning.png)
 
 ### Pages de produits {#product-pages}
 
@@ -573,7 +576,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 
 * Si une promotion est contenue dans une expérience, elle peut être appliquée automatiquement à un segment ciblé.
 
-   Par exemple, sur le site d’exemple geometrixx-outdoors, la promotion :
+   Par exemple, dans l’exemple de site geometrixx-outdoors, la promotion :
 
    `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
@@ -585,7 +588,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   est en dehors d’une expérience et ne se déclenche donc jamais automatiquement (c.-à-d. : selon la segmentation). Il est toutefois référencé par les vouchers qui se trouvent dans plusieurs des expériences de la campagne d’articles. La saisie de ces codes de bon dans le panier déclenche la promotion.
+   est en dehors d’une expérience et ne se déclenche donc jamais automatiquement (par exemple : selon la segmentation). Il est toutefois référencé par les bons qui se trouvent dans plusieurs expériences de la campagne d’articles. La saisie de ces codes de bon dans le panier déclenche la promotion.
 
 >[!NOTE]
 >
@@ -646,7 +649,7 @@ La connexion unique (SSO) est proposée afin que les créateurs soient identifi�
 
 Les données des transactions du moteur eCommerce sont combinées aux informations personnelles sur l’acheteur. AEM utilise certaines de ces données sous forme de données de profil. L’action d’un formulaire dans AEM réécrit les informations dans le moteur eCommerce.
 
-Une page vous permet de gérer facilement les informations de votre compte. You can access it by clicking **My Account** at the top of a geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
+Il existe une page qui vous permet de gérer facilement les informations de votre compte. You can access it by clicking **My Account** at the top of a geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -677,7 +680,7 @@ Le carnet d’adresses est utilisé lors du passage en caisse de votre panier :
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
 Les adresses sont conservées ci-dessous `user_home/profile/addresses`.
-Par exemple, pour Alison Parker, il se trouve sous aparker@geometrixx.info/profile/address
+Par exemple, pour Alison Parker, il se trouverait sous aparker@geometrixx.info/profil/address/home/users/geometrixx//address
 
 Vous pouvez définir l’adresse à sélectionner par défaut. Ces informations sont conservées dans le profil de l’acheteur plutôt qu’avec l’adresse. The profile property `address.default` is set with the path of the selected address for value.
 
@@ -764,11 +767,11 @@ Différentes informations sont stockées, notamment :
 
 * **Passée**
 
-   date à laquelle la commande a été passée.
+   Date à laquelle la commande a été passée.
 
 * **État**
 
-   Statut de la commande; par exemple, Expédié.
+   Statut de la commande ; par exemple, Expédié.
 
 * **Devise**
 
@@ -776,7 +779,7 @@ Différentes informations sont stockées, notamment :
 
 * **Eléments de contenu**
 
-   Liste des éléments triés.
+   liste des articles commandés.
 
 * **Sous-total**
 
@@ -796,7 +799,7 @@ Différentes informations sont stockées, notamment :
 
 * **Adresse de facturation**
 
-   Adresse à laquelle la facture doit être envoyée.
+   adresse à laquelle la facture doit être envoyée.
 
 * **Jeton de paiement**
 
@@ -812,19 +815,19 @@ Différentes informations sont stockées, notamment :
 
 * **Mode d’expédition**
 
-   la méthode d&#39;expédition; par exemple, terre, mer ou air.
+   Le mode d&#39;expédition ; par exemple, terre, mer ou air.
 
 * **Numéro de suivi**
 
-   N&#39;importe quel numéro de suivi utilisé par la société de transport.
+   Tout numéro de suivi utilisé par la société d&#39;expédition.
 
 * **Lien de suivi**
 
-   Lien utilisé pour le suivi de la commande lors de son expédition.
+   Lien utilisé pour le suivi de la commande en cours d&#39;expédition.
 
 >[!NOTE]
 >
->Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, vous trouverez ce qui suit :
+>Les champs utilisés dans l’assistant de création de commande dépendent de la génération de modèles automatique optimisée pour les écrans tactiles définie pour le lieu. Dans l’exemple générique, vous trouverez les informations suivantes :
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Lorsque la commande est conservée dans AEM, la console Commande affiche les informations ci-dessous pour chaque commande :
@@ -877,5 +880,5 @@ Si vous avez besoin d’une mise en œuvre approfondie, vous pouvez :
 * étendre le composant de recherche par défaut avec les fonctionnalités dont vous avez besoin ;
 * mettre en œuvre la méthode de recherche de `CommerceService`, puis utiliser le composant de recherche eCommerce sur votre page de recherche.
 
-Lors de l’utilisation d’un moteur de commerce électronique, l’API de recherche eCommerce peut être entièrement implémentée dans la solution de moteur de commerce électronique. Vous pouvez donc utiliser le composant de recherche eCommerce fourni prêt à l’emploi. La recherche à facette permet d’effectuer une recherche dans JCR et/ou dans le moteur :
+Lors de l’utilisation d’un moteur de commerce électronique, l’API de recherche eCommerce peut être entièrement implémentée dans la solution de moteur de commerce électronique, de sorte que vous pouvez utiliser le composant de recherche eCommerce fourni prêt à l’emploi. La recherche à facette permet d’effectuer une recherche dans JCR et/ou dans le moteur :
 
