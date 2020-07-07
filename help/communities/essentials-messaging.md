@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a7c2d71798649050f2f7852251996c2edf1cf113
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 5%
 
 ---
 
 
 # Messaging Essentials {#messaging-essentials}
 
-Cette page  les détails de l’utilisation du composant Messagerie pour inclure une fonction de messagerie sur un site Web.
+Cette page documents les détails de l&#39;utilisation du composant Messagerie pour inclure une fonction de messagerie sur un site Web.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -28,7 +31,7 @@ Cette page  les détails de l’utilisation du composant Messagerie pour inclure
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td><p>social/messaging/components/hbs/composemessage</p> </td>
+   <td><p>social/messagerie/composants/hbs/composemessage</p> </td>
   </tr>
   <tr>
    <td> <a href="/help/communities/client-customize.md#clientlibs-for-scf" target="_blank"><strong>clientllibs</strong></a></td>
@@ -44,18 +47,18 @@ Cette page  les détails de l’utilisation du composant Messagerie pour inclure
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>voir <a href="/help/communities/configure-messaging.md" target="_blank">Configuration de la messagerie</a></td>
+   <td>voir <a href="/help/communities/configure-messaging.md" target="_blank">Configurer la messagerie</a></td>
   </tr>
   <tr>
    <td><strong>configuration admin</strong></td>
-   <td><a href="/help/communities/messaging.md">Configuration de la messagerie</a></td>
+   <td><a href="/help/communities/messaging.md">Configurer la messagerie</a></td>
   </tr>
  </tbody>
 </table>
 
 **Liste des messages**
 
-(pour la boîte de réception, l’envoi et la corbeille)
+(pour Boîte de réception, Envoyé et Corbeille)
 
 <table>
  <tbody>
@@ -77,11 +80,11 @@ Cette page  les détails de l’utilisation du composant Messagerie pour inclure
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>voir <a href="/help/communities/configure-messaging.md" target="_blank">Configuration de la messagerie</a></td>
+   <td>voir <a href="/help/communities/configure-messaging.md" target="_blank">Configurer la messagerie</a></td>
   </tr>
   <tr>
    <td><strong>configuration admin</strong></td>
-   <td><a href="/help/communities/messaging.md" target="_blank">Configuration de la messagerie</a></td>
+   <td><a href="/help/communities/messaging.md" target="_blank">Configurer la messagerie</a></td>
   </tr>
  </tbody>
 </table>
@@ -93,15 +96,16 @@ Voir aussi Personnalisations côté [client](/help/communities/client-customize.
 * [Configuration de la messagerie](/help/communities/configure-messaging.md)
 * [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) client de messagerie pour les composants SCF
 * [API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) de messagerie pour le service
-* [Points de fin de la messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Points de terminaison de la messagerie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personnalisations côté serveur](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->Le paramètre String *ne doit pas* contenir de barre oblique à la fin &quot;/&quot; pour les méthodes MessageBuilder suivantes :
+>Le paramètre String ne doit *pas* contenir de barre oblique à la fin &quot;/&quot; pour les méthodes MessageBuilder suivantes :
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 Par exemple :
@@ -114,36 +118,36 @@ Par exemple :
 
 ### Site de la communauté {#community-site}
 
-Une structure de site communautaire, créée à l’aide de l’assistant, inclut la fonction de messagerie lorsqu’elle est sélectionnée. Voir `User Management` Paramètres de la console [Sites](/help/communities/sites-console.md#user-management)de la communauté.
+Une structure de site communautaire, créée à l’aide de l’assistant, inclut la fonction de messagerie lorsqu’elle est sélectionnée. Voir `User Management` les paramètres de la console [Sites](/help/communities/sites-console.md#user-management)de la communauté.
 
 ### Exemple de code : Notification de réception du message {#sample-code-message-received-notification}
 
-La fonction de messagerie sociale renvoie des  pour des opérations, par exemple `send`, `marking read`, `marking delete`. Ces  peuvent être capturés et des actions peuvent être entreprises sur les données contenues dans le .
+La fonction de messagerie sociale lance des événements pour des opérations, par exemple `send``marking read`, `marking delete`. Ces événements peuvent être capturés et des mesures prises sur les données contenues dans le événement.
 
-L’exemple suivant illustre un gestionnaire de  qui écoute les  de l’ `message sent` et envoie un courrier électronique à tous les de messages qui utilisent le `Day CQ Mail Service`.
+L’exemple suivant illustre un gestionnaire de événements qui écoute le `message sent` événement et envoie un courriel à tous les destinataires de messagerie qui utilisent le `Day CQ Mail Service`.
 
-Pour tester l’exemple de script côté serveur, vous devez disposer d’un de développement  et de la possibilité de créer un lot OSGi :
+Pour tester l’exemple de script côté serveur, vous avez besoin d’un environnement de développement et de la possibilité de créer un lot OSGi :
 
 1. Connectez-vous en tant qu’administrateur à ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Créez une `bundle node`entrée `/apps/engage/install` avec des noms arbitraires, tels que :
+1. Créez une `bundle node`connexion `/apps/engage/install` avec des noms arbitraires, tels que :
 
    * Nom symbolique : `com.engage.media.social.messaging.MessagingNotification`
    * Nom : Notification de message du didacticiel de prise en main
    * Description : Exemple de service d’envoi d’une notification par courrier électronique aux utilisateurs lorsqu’ils reçoivent un message
    * Module: `com.engage.media.social.messaging.notification`
 
-1. Accédez à `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`, puis à :
+1. Accédez à `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`, puis :
 
-   1. Supprimez la `Activator.java` classe créée automatiquement.
+   1. Supprimez la `Activator.java` classe automatiquement créée.
    1. Créez une classe `MessageEventHandler.java`.
    1. Copiez et collez le code ci-dessous dans `MessageEventHandler.java`.
 
 1. Cliquez sur **Enregistrer tout**.
-1. Accédez à `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`et ajoutez toutes les instructions d’importation telles qu’elles sont écrites dans le `MessageEventHandler.java` code.
+1. Accédez à `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`et ajoutez toutes les instructions d&#39;importation telles qu&#39;elles sont écrites dans le `MessageEventHandler.java` code.
 1. Créez le lot.
 1. Vérifiez que le service `Day CQ Mail Service`OSGi est configuré.
 1. Connectez-vous en tant qu’utilisateur de démonstration et envoyez un courrier électronique à un autre utilisateur.
-1. Le reçoit un courrier électronique concernant un nouveau message.
+1. Le destinataire reçoit un courrier électronique concernant un nouveau message.
 
 #### MessageEventHandler.java {#messageeventhandler-java}
 
