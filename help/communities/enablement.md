@@ -1,8 +1,8 @@
 ---
 title: Fontionnalités Configuration de l’activation
 seo-title: Fontionnalités Configuration de l’activation
-description: Configuration des fonctionnalités d’activation dans les communautés
-seo-description: Configuration des fonctionnalités d’activation dans les communautés
+description: Configuration des fonctions d’activation dans les communautés
+seo-description: Configuration des fonctions d’activation dans les communautés
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 Les fonctions d’activation permettent de créer des communautés [d’](overview.md#enablement-community)activation.
 
-* Cette fonctionnalité nécessite une licence supplémentaire pour une utilisation dans un  de production .
+* Cette fonction nécessite une licence supplémentaire pour être utilisée dans un environnement de production.
 
 L’utilisation des fonctions d’activation requiert les éléments suivants :
 
@@ -29,53 +32,60 @@ Installation de :
 
 * **SCORM**
 
-   SCORM (Sharable Content Object Reference Model) est un ensemble de normes et de spécifications pour l’apprentissage en ligne. SCORM définit également la manière dont le contenu peut être compressé dans un fichier ZIP transférable.
+   SCORM (Sharable Content Object Reference Model) est un ensemble de normes et de spécifications pour l&#39;apprentissage en ligne. SCORM définit également comment le contenu peut être inclus dans un fichier ZIP transférable.
 
 * **MySQL**
 
-   MySQL est une base de données relationnelle principalement utilisée pour le suivi SCORM et les données de  pour l’activation, ainsi que les tableaux pour le suivi de la progression vidéo. Le pack de fonctionnalités SCORM pour l’activation requiert le pilote JDBC MySQL.
+   MySQL est une base de données relationnelle principalement utilisée pour le suivi SCORM et les données de rapports pour l’activation, ainsi que les tables pour le suivi de la progression vidéo. Le pack de fonctionnalités d’activation SCORM nécessite le pilote JDBC MySQL.
 
 * **FFmpeg**
 
-   FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu et, lorsqu’elle est installée, elle est utilisée pour le transcodage approprié des fichiers [](../../help/sites-authoring/default-components-foundation.md#video)vidéo. Pour les communautés d’activation, elle est utilisée dans le  de l’auteur  pour obtenir des métadonnées pour les ressources téléchargées et générer une miniature à afficher lors de la liste de la ressource.
+   FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu et, lorsqu’elle est installée, elle est utilisée pour le transcodage approprié des fichiers [](../../help/sites-authoring/default-components-foundation.md#video)vidéo. Pour les communautés d’activation, elle est utilisée dans l’environnement d’auteur pour obtenir des métadonnées pour les ressources téléchargées et pour générer une miniature à afficher lors de la mise en liste de la ressource.
 
 Configuration de :
 
 * **Gestionnaires de la communauté**
 
-   Pour les communautés d’activation, seuls les membres du groupe `Community Enablement Managers` d’utilisateurs peuvent se voir attribuer le rôle de `Community Site Enablement Manager`, dont les autorisations peuvent inclure la création de contenu, les affectations et la gestion des membres dans le  de publication .
+   Pour les communautés d’activation, seuls les membres du groupe d’ `Community Enablement Managers` utilisateurs peuvent se voir attribuer le rôle de `Community Site Enablement Manager`, dont les autorisations peuvent inclure la création de contenu, les affectations et la gestion des membres dans l’environnement de publication.
 
 Configuration facultative de :
 
 * **Adobe Analytics**
 
-   L’intégration à Adobe Analytics ajoute des fonctionnalités  complètes et prend en charge l’ajout de la pulsation vidéo à Analytics.
+   L’intégration à Adobe Analytics ajoute des fonctionnalités de rapports complètes et prend en charge l’ajout de Video Heartbeat à Analytics.
 
-* **Répartiteur**
+* **Dispatcher**
 
 ## Étapes de configuration {#configuration-steps}
 
 Voici les étapes nécessaires pour activer les communautés.
 
-Chaque étape renvoie à la documentation qui fournit les détails nécessaires.
+Chaque étape donne un lien vers la documentation qui fournit les détails nécessaires.
 
 **Sur toutes les instances d’auteur/de publication :**
 
 1. **[Installation du pilote JDBC pour MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
 
-   Utiliser la console Web (lots) : *http://localhost:4502/system/console/bundles* Installation *avant* l’installation du package SCORM
+   Utiliser la console Web (lots) : *http://localhost:4502/system/console/bundles*
 
-1. **[Installation du package](deploy-communities.md#scorm-package)**SCORM Utiliser Package Manager :*http://localhost:4502/crx/packmgr/*
+   Installation *avant* l’installation du package SCORM
 
-**Sur n’importe quel serveur :**
+1. **[Installation du package SCORM](deploy-communities.md#scorm-package)**
+
+
+   Utilisez Package Manager : *http://localhost:4502/crx/packmgr/*
+
+**Sur n&#39;importe quel serveur :**
 
 1. **[Installation de MySQL, MySQL Workbench](mysql.md)**
 
 1. **[Installation des bases de données MySQL](mysql.md#database-setup)**
 
-   Exécuter des scripts SQL téléchargés à partir de l’instance d’auteurUtiliser MySQL Workbench
+   Exécuter des scripts SQL téléchargés à partir de l’instance d’auteur
 
-**Sur la même instance d’auteur d’hébergement de serveur :**
+   Utiliser MySQL Workbench
+
+**Sur le même serveur hébergeant l’instance d’auteur :**
 
 1. **[Installation de FFmpeg](ffmpeg.md)**
 
@@ -89,7 +99,7 @@ Chaque étape renvoie à la documentation qui fournit les détails nécessaires.
 
    Utiliser la console Web (configMgr) : *http://localhost:4502/system/console/configMgr*
 
-1. **[Configuration du CSRF](mysql.md#adobe-granite-csrf-filter)**
+1. **[Configuration de filtres CSRF](mysql.md#adobe-granite-csrf-filter)**
 
    Utiliser la console Web (configMgr) : *http://localhost:4502/system/console/configMgr*
 
@@ -97,9 +107,9 @@ Chaque étape renvoie à la documentation qui fournit les détails nécessaires.
 
 1. (*Facultatif*) **[Configuration du service Analytics](analytics.md)**
 
-   Utilisez Outils, Déploiement, Console des services cloud : *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Utiliser Outils, Déploiement, console Cloud Service : *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[Configuration de FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
+1. **[Configurer FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
    Utiliser la console Workflow/Modèles
 
@@ -109,13 +119,15 @@ Chaque étape renvoie à la documentation qui fournit les détails nécessaires.
 
 1. **[Création d’administrateurs de communauté](users.md#creating-community-members)**
 
-   Pour les  de l&#39;auteur  utilisez la console de sécurité classique-IU : *http://localhost:4502/useradmin* créer des utilisateurs avec chemin = /home/users/community
+   Pour l’environnement auteur, utilisez la console de sécurité classique de l’interface utilisateur : *http://localhost:4502/useradmin*
 
-   * Ajouter les membres aux groupes suivants :
+   Créer des utilisateurs avec chemin = /home/users/community
+
+   * Ajoutez les membres aux groupes suivants :
 
       * Gestionnaires d’activation de la communauté
-      * Administrateurs de communautés
+      * Administrateurs des communautés
 
-## Répartiteur {#dispatcher}
+## Dispatcher {#dispatcher}
 
-Lorsque le déploiement inclut le répartiteur [d’](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, pour que les fonctionnalités d’activation fonctionnent correctement, les sections `clientheader` et `filter` doivent être modifiées. Voir [Configuration du répartiteur pour les communautés](dispatcher.md#enablement).
+Lorsque le déploiement inclut le Dispatcher [d’](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, pour que les fonctions d’activation fonctionnent correctement, les sections `clientheader` et `filter` les sections doivent être modifiées. Voir [Configuration d’un Dispatcher pour les communautés](dispatcher.md#enablement).
