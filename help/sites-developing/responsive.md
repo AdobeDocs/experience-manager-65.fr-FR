@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '5339'
+ht-degree: 69%
 
 ---
 
@@ -102,29 +105,29 @@ Le tableau suivant répertorie les fichiers situés dans le dossier enfant CSS.
    <td>N/A</td>
   </tr>
   <tr>
-   <td>réactif-1200px.css</td>
+   <td>responsive-1200px.css</td>
    <td>Styles pour tous les supports de 1 200 pixels de large ou de large.</td>
-   <td><p><br /> @media (min-width: 1200px) {<br /> ...}</p> </td>
+   <td><p>@media (min-width: 1200px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>response-980px-1199px.css</td>
-   <td>Styles pour les médias d’une largeur comprise entre 980 et 1 199 pixels.</td>
-   <td><p><br /> @media (min-width: 980px) et (largeur max. : 1199px) {<br /> ...}</p> </td>
+   <td>responsive-980px-1199px.css</td>
+   <td>Styles pour les supports de 980 à 1 199 pixels de large.</td>
+   <td><p>@media (min-width: 980px) et (largeur maximale : 1199px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>response-768px-979px.css</td>
-   <td>Styles pour les médias d’une largeur comprise entre 768 et 979 pixels. </td>
-   <td><p><br /> @media (min-width: 768px) et (largeur max. : 979px) {<br /> ...}</p> </td>
+   <td>responsive-768px-979px.css</td>
+   <td>Styles pour les supports de 768 à 979 pixels de large. </td>
+   <td><p>@media (min-width: 768 px) et (largeur maximale : 979px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>response-767px-max.css</td>
+   <td>responsive-767px-max.css</td>
    <td>Styles pour tous les supports de moins de 768 pixels de large.</td>
-   <td><p><br /> @media (max-width: 767px) {<br /> ...}</p> </td>
+   <td><p>@media (max-width: 767px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
-   <td>response-480px.css</td>
+   <td>responsive-480px.css</td>
    <td>Styles pour tous les supports de moins de 481 pixels de large.</td>
-   <td><br /> @media (max-width: 480) {<br /> ...}</td>
+   <td>@media (max-width: 480) {<br /> ...<br /> }</td>
   </tr>
  </tbody>
 </table>
@@ -157,8 +160,8 @@ Ajoutez le dossier de bibliothèque cliente dans le script JSP de votre composan
 ```
 
 >[!NOTE]
-> The `apps.weretail.all` client library folder embeds the clientlibs library.
-
+>
+>The `apps.weretail.all` client library folder embeds the clientlibs library.
 
 Le script JSP génère le code HTML suivant qui référence les feuilles de style :
 
@@ -194,7 +197,7 @@ Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configura
 Par exemple, pour créer un nœud ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` dans votre application, procédez comme suit :
 
 * Parent folder: `/apps/application_name/config`
-* Nom: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
+* Nom (name) : `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
    The - `*alias*` suffix is required because the MobileEmulatorProvider service is a factory service. Utilisez un alias unique pour cette fabrique.
 
@@ -202,8 +205,8 @@ Par exemple, pour créer un nœud ` [sling:OsgiConfig](/help/sites-deploying/con
 
 Ajoutez la propriété de nœud suivante :
 
-* Nom: `mobile.resourceTypes`
-* Type: `String[]`
+* Nom : `mobile.resourceTypes`
+* Type : `String[]`
 * Valeur : chemins d’accès aux composants de page qui effectuent le rendu de vos pages web. Par exemple, l’application geometrixx-media utilise les valeurs suivantes :
 
    ```
@@ -221,9 +224,9 @@ Device group nodes are located in the `/etc/mobile/groups` folder.
 
 Par exemple, la page racine du site Geometrixx Media est `/content/geometrixx-media`. The `/content/geometrixx-media/jcr:content` node includes the following property:
 
-* Nom: `cq:deviceGroups`
-* Type: `String[]`
-* Valeur: `/etc/mobile/groups/responsive`
+* Nom : `cq:deviceGroups`
+* Type : `String[]`
+* Valeur : `/etc/mobile/groups/responsive`
 
 Utilisez la console Outils pour [créer et modifier des groupes de périphériques](/help/sites-developing/groupfilters.md).
 
@@ -295,14 +298,14 @@ Procurez-vous les bibliothèques JavaScript suivantes et insérez-les dans un do
 
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) (pour les navigateurs qui n’implémentent pas l’interface MediaQueryList)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
-* jquery.js (disponible par le biais du dossier de bibliothèque `/etc/clientlibs/granite/jquery` client (category = jquery)
+* jquery.js (disponible par le biais du dossier de bibliothèque `/etc/clientlibs/granite/jquery` client (catégorie = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (événement jquery qui se produit une seule fois après le redimensionnement de la fenêtre)
 
-**** Conseil : Vous pouvez concaténer automatiquement plusieurs dossiers de bibliothèque client en [incorporant](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)ces derniers.
+**Conseil :** Vous pouvez concaténer automatiquement plusieurs dossiers de bibliothèque cliente en [incorporant](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries)des éléments.
 
 **HTML**
 
-Créez un composant qui génère les éléments div requis attendus par le code picturefill.js. Dans une page AEM, la valeur de l’attribut data-src est le chemin d’accès à une ressource dans le référentiel. Par exemple, un composant de page peut coder en dur les requêtes multimédias et les chemins associés pour les rendus d’image dans DAM. Vous pouvez également créer un composant Image personnalisé permettant aux auteurs de sélectionner des rendus d’image ou de définir des options de rendu lors de l’exécution.
+Créez un composant qui génère les éléments div requis attendus par le code picturefill.js. Dans une page AEM, la valeur de l’attribut data-src est le chemin d’accès à une ressource dans le référentiel. Par exemple, un composant de page peut coder en dur les requêtes de médias et les chemins associés pour les rendus d’image dans DAM. Vous pouvez également créer un composant Image personnalisé permettant aux auteurs de sélectionner des rendus d’image ou de définir des options de rendu lors de l’exécution.
 
 L’exemple de code HTML ci-dessous effectue une sélection parmi 2 rendus DAM de la même image.
 
@@ -320,6 +323,7 @@ L’exemple de code HTML ci-dessous effectue une sélection parmi 2 rendus DAM
 >
 >* Dossier de la bibliothèque cliente: `/libs/foundation/components/adaptiveimage/clientlibs`
 >* Script qui génère le code HTML : `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
+
 >
 >
 Vous trouverez plus d’informations sur ce composant à la section suivante.
@@ -327,7 +331,7 @@ Vous trouverez plus d’informations sur ce composant à la section suivante.
 
 ### Understanding image rendering in AEM {#understanding-image-rendering-in-aem}
 
-Pour personnaliser le rendu d’images, vous devez comprendre l’implémentation du rendu d’images statiques par défaut dans AEM. AEM fournit le composant Image et un servlet de rendu d’images qui fonctionnent de concert pour effectuer le rendu d’images pour la page web. La séquence d’événements suivante se produit lorsque le composant Image est inclus dans le système de paragraphe de la page :
+Pour personnaliser le rendu d’images, vous devez comprendre l’implémentation du rendu d’images statiques par défaut dans AEM. AEM fournit le composant Image et un servlet de rendu d’images qui fonctionnent de concert pour effectuer le rendu d’images pour la page web. La séquence de événements suivante se produit lorsque le composant Image est inclus dans le système de paragraphe de la page :
 
 1. Création : les auteurs modifient le composant Image afin de spécifier le fichier image à inclure dans une page HTML. Le chemin d’accès au fichier est stocké en tant que valeur de propriété du nœud de composant Image.
 1. Demande de page : le JSP du composant de page génère le code HTML. Le JSP du composant Image génère un élément img et l’ajoute à la page.
@@ -347,7 +351,7 @@ Lorsque la navigateur charge la page, il demande l’image en utilisant la valeu
 * Sélecteur: `img`
 * Suffix: `1358372073597.jpg`
 
-Le `image_0` noeud a une `jcr:resourceType` valeur de `foundation/components/image`, qui a une `sling:resourceSuperType` valeur de `foundation/components/parbase`. Le composant parbase contient le script img.GET.java qui correspond au sélecteur et à l’extension de nom de fichier de l’URL de demande. CQ utilise ce script (servlet) pour effectuer le rendu de l’image.
+Le `image_0` noeud a la `jcr:resourceType` valeur `foundation/components/image`, qui a la `sling:resourceSuperType` valeur `foundation/components/parbase`. Le composant parbase contient le script img.GET.java qui correspond au sélecteur et à l’extension de nom de fichier de l’URL de demande. CQ utilise ce script (servlet) pour effectuer le rendu de l’image.
 
 To see the source code of the script, use CRXDE Lite to open the `/libs/foundation/components/parbase/img.GET.java`
 file.
@@ -363,7 +367,7 @@ Le composant doit effectuer les tâches suivantes :
 
 >[!NOTE]
 >
->Le client Web utilise les bibliothèques javascript matchMedia et Picturefill (ou bibliothèques similaires) pour évaluer les sélecteurs de médias.
+>Le client Web utilise les bibliothèques javascript matchMedia et Picturefill (ou des bibliothèques similaires) pour évaluer les sélecteurs de médias.
 
 
 Le servlet qui traite la demande d’image doit effectuer les tâches suivantes :
@@ -380,7 +384,7 @@ AEM installe les implémentations suivantes que vous pouvez utiliser ou étendre
 
 ### Understanding the Adaptive Image component {#understanding-the-adaptive-image-component}
 
-Le composant Image adaptative génère des appels vers la servlet du composant Image adaptative afin de générer une image dimensionnée selon l’écran du périphérique. Le composant contient les ressources suivantes :
+Le composant Image adaptative génère des appels vers le servlet du composant d’image adaptative afin de générer une image dimensionnée en fonction de l’écran du périphérique. Le composant contient les ressources suivantes :
 
 * JSP : ajoute des éléments div qui associent des requêtes de média à des appels vers le servlet Adaptive Image Component Servlet.
 * Client libraries: The clientlibs folder is a `cq:ClientLibraryFolder` that assembles the matchMedia polyfill javascript library and a modified Picturefill javascript library.
@@ -484,7 +488,7 @@ Pour plus d’informations sur la configuration des services AEM, voir [Configu
   </tr>
   <tr>
    <th>Nom du service ou du noeud</th>
-   <td>Le nom du service dans l’onglet Configuration est Adobe CQ Adaptive Image Component Servlet</td>
+   <td>Le nom du service sur l’onglet Configuration est Adobe CQ Adaptive Image Component Servlet (Servlet de composant d’image adaptative CQ).</td>
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td>
   </tr>
   <tr>
@@ -495,9 +499,9 @@ Pour plus d’informations sur la configuration des services AEM, voir [Configu
      <li>Pour supprimer une largeur prise en charge, cliquez sur le bouton - associé.</li>
      <li>Pour modifier une largeur prise en charge, modifiez la valeur du champ.</li>
     </ul> </td>
-   <td><p>adapter.supported.largths</p>
+   <td><p>adapt.supported.widths</p>
     <ul>
-     <li>La propriété est une valeur de chaîne à plusieurs valeurs.</li>
+     <li>La propriété est une valeur String à plusieurs valeurs.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -577,7 +581,7 @@ Les valeurs suivantes sont prises en charge par défaut (largeur x hauteur) :
 * 770x360
 * 620x290
 * 480x225
-* 320x150
+* 320 x 150
 * 375x175
 * 303x142
 * 1170x400
@@ -815,7 +819,7 @@ For example, the `/apps/geometrixx-media/components/2-col-article-summary` compo
 </div>
 ```
 
-The `.row-fluid .span6` selectors of the page&#39;s CSS applies to the `div` elements of the same class and structure in this HTML. Cependant, le composant inclut également le dossier de bibliothèque client /apps/geometrixx-media/components/2-col-article-summary/clientlibs :
+The `.row-fluid .span6` selectors of the page&#39;s CSS applies to the `div` elements of the same class and structure in this HTML. Cependant, le composant comprend également le dossier de bibliothèque client /apps/geometrixx-media/components/2-col-article-summary/clientlibs :
 
 * Le CSS utilise les mêmes requêtes de média que le composant de page pour procéder à des changements de mise en page au niveau des mêmes largeurs discrètes.
 * Les sélecteurs utilisent la classe `multi-col-article-summary` de l’élément `div` de la ligne pour remplacer le comportement de la classe `row-fluid` de la page.
@@ -853,7 +857,7 @@ Les grilles fluides permettent aux mises en page de s’adapter aux dimensions d
 La technologie HTML5 vous permet d’implémenter la grille et de la manipuler afin d’adapter les mises en page à différentes tailles de fenêtre :
 
 * HTML `div` elements contain blocks of content that span a certain number of columns.
-* Un ou plusieurs de ces éléments div comprennent une ligne lorsqu’ils partagent un segment parent commun.
+* Un ou plusieurs de ces éléments div comprennent une ligne lorsqu&#39;ils partagent un développement parent commun.
 
 ### Using discrete widths {#using-discrete-widths}
 
@@ -873,7 +877,7 @@ La taille des blocs de contenu peut être limitée par une largeur minimale au-d
 
 ### Designing the grid {#designing-the-grid}
 
-Déterminez les colonnes et les lignes dont vous avez besoin pour positionner les blocs de contenu sur vos pages. Les mises en page déterminent le nombre de colonnes et de lignes qui s’étendent sur votre grille.
+Déterminez les colonnes et les lignes dont vous avez besoin pour positionner les blocs de contenu sur vos pages. Vos mises en page déterminent le nombre de colonnes et de lignes qui s’étendent sur votre grille.
 
 **Nombre de colonnes**
 
@@ -941,7 +945,7 @@ Utilisez l’algorithme suivant comme point de départ pour développer les clas
 
    1. Définissez la largeur des sélecteurs `content` sur la taille absolue de la page ; `width:480px`, par exemple.
    1. Définissez la largeur de tous les sélecteurs row-fluid sur 100 %.
-   1. Définissez la largeur de tous les sélecteurs d’étendue sur la largeur absolue du bloc de contenu. Une grille triviale utilise des colonnes réparties uniformément de la même largeur : `(absolute width of page)/(number of columns)`.
+   1. Définissez la largeur de tous les sélecteurs d’étendue sur la largeur absolue du bloc de contenu. Une grille triviale utilise des colonnes à répartition uniforme de même largeur : `(absolute width of page)/(number of columns)`.
    1. Set the width of the `.row-fluid .span` selectors as a percentage of the total width. Calculez cette largeur à l’aide de la `(absolute span width)/(absolute page width)*100` formule.
 
 #### Positionnement des blocs de contenu dans des lignes {#positioning-content-blocks-in-rows}
