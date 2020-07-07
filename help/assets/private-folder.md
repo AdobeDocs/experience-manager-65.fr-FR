@@ -3,7 +3,7 @@ title: Créez et partagez un dossier privé dans Adobe Experience Manager.
 description: Découvrez comment créer un dossier privé dans les ressources d’Adobe Experience Manager et le partager avec d’autres utilisateurs et leur attribuer divers privilèges.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 43%
@@ -17,7 +17,7 @@ Vous pouvez créer un dossier privé dans l’interface utilisateur des ressourc
 
 >[!NOTE]
 >
-> Le dossier privé comporte au moins un membre doté du rôle Propriétaire.
+>Le dossier privé comporte au moins un membre doté du rôle Propriétaire.
 
 1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
