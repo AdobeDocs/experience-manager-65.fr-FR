@@ -3,7 +3,7 @@ title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 41%
@@ -34,7 +34,6 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
    * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
    * Update the fields as appropriate, and click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html).
-
    ![Créer une propriété web d’édition](assets/Create-edit-web-property.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and click **[!UICONTROL Create New Rule]**.
@@ -45,15 +44,15 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Cliquez sur le logo du Experience Manager, puis sélectionnez **[!UICONTROL Outils > Ressources]**.
+1. Cliquez sur le logo du Experience Manager, puis sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
 1. Click **[!UICONTROL Insights Page Tracker]**, copy the tracker code, and then paste it in the Script dialog you opened in step 6. Enregistrez les modifications.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` est supprimée. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
-   > * The call to `assetAnalytics.dispatcher.init`() is removed. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
-   > * Selon l’emplacement d’hébergement du suivi de page des statistiques sur les ressources (Experience Manager, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
-   > * Pour le suivi des pages hébergé par un Experience Manager, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
+   >* `AppMeasurement.js` est supprimée. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
+   >* The call to `assetAnalytics.dispatcher.init()` is removed. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
+   >* Selon l’emplacement d’hébergement du suivi de page des statistiques sur les ressources (Experience Manager, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
+   >* Pour le suivi des pages hébergé par un Experience Manager, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de répartiteur.
 
 
 1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]** ou ouvrez un outil Adobe Analytics existant. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
