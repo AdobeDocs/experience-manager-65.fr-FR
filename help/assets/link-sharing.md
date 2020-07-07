@@ -1,9 +1,9 @@
 ---
 title: Générer une URL pour les ressources partagées
-description: Cet article décrit comment partager des fichiers, des dossiers et des collections dans les ressources d’Experience Manager sous la forme d’une URL vers des parties externes.
+description: Cet article décrit comment partager des fichiers, des dossiers et des collections dans les ressources du Experience Manager sous la forme d’une URL vers des parties externes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 51%
@@ -13,7 +13,7 @@ ht-degree: 51%
 
 # Partage d’une ressource via un lien {#asset-link-sharing}
 
-Adobe Experience Manager Assets vous permet de partager des ressources, des dossiers et des collections sous la forme d’une URL avec des membres de votre organisation et des entités externes, y compris des partenaires et des fournisseurs. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à  Assets.
+Les ressources d’Adobe Experience Manager vous permettent de partager des ressources, des dossiers et des collections sous la forme d’une URL avec des membres de votre organisation et des entités externes, y compris des partenaires et des fournisseurs. Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à  Assets.
 
 >[!NOTE]
 >
@@ -42,15 +42,16 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    >
    >If you want to share links from your Experience Manager Author instance to external entities, ensure that you only expose the following URLs (which are used for link sharing) for `GET` requests only. Bloquez d’autres URL pour garantir la sécurité de l’auteur Experience Manager.
    >
-   >* http://&lt;serveur_aem>:&lt;port>/linkshare.html
-   * http://&lt;serveur_aem>:&lt;port>/linksharepreview.html
-   * http://&lt;serveur_aem>:&lt;port>/linkexpired.html
+   >* http://[aem_server]:[port]/linkshare.html
+   >* http://[aem_server]:[port]/linksharepreview.html
+   >* http://[aem_server]:[port]/linkexpired.html
 
 
    >[!NOTE]
-   Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez ce lien et partagez-le de nouveau avec les utilisateurs.
+   >
+   >Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez ce lien et partagez-le de nouveau avec les utilisateurs.
 
-1. Dans l’interface d’Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
+1. Dans l’interface du Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
 
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration and modify the following properties in the **[!UICONTROL Domains]** field with the values mentioned against `local`, `author`, and `publish`. For the `local` and `author` properties, provide the URL for the local and the author instance respectively. Both `local` and `author` properties have the same value if you run a single Experience Manager Author instance. For `publish`, provide the URL for the Experience Manager publish instance.
 
@@ -65,7 +66,8 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    *Figure : Partagez des liens vers des ressources directement à partir de la boîte de dialogue Partage[!UICONTROL de]liens.*
 
    >[!NOTE]
-   If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
+   >
+   >If you enter an email ID of a user that is not a member of your organization, the words [!UICONTROL External User] are prefixed with the email ID of the user.
 
 1. In the **[!UICONTROL Subject]** field, enter a subject for the asset you want to share.
 
@@ -78,7 +80,8 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 1. Pour autoriser les utilisateurs à télécharger l’image originale avec les rendus, sélectionnez **[!UICONTROL Autoriser le téléchargement du fichier d’origine]**.
 
    >[!NOTE]
-   Par défaut, les utilisateurs peuvent uniquement télécharger les rendus de la ressource que vous partagez sous forme de lien.
+   >
+   >Par défaut, les utilisateurs peuvent uniquement télécharger les rendus de la ressource que vous partagez sous forme de lien.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec le ou les utilisateurs par e-mail.
 1. Pour vue de la ressource partagée, cliquez sur le lien dans le courrier électronique envoyé à l’utilisateur. La ressource partagée s’affiche sur la page **[!UICONTROL Adobe Marketing Cloud]**.
@@ -92,19 +95,20 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   Experience Manager prend en charge la génération de la prévisualisation des ressources de ces types MIME : JPG, PNG, GIF, BMP, INDD, PDF et PPT. Vous pouvez uniquement télécharger les ressources des autres types MIME.
+   >
+   >Experience Manager prend en charge la génération de la prévisualisation des ressources de ces types MIME : JPG, PNG, GIF, BMP, INDD, PDF et PPT. Vous pouvez uniquement télécharger les ressources des autres types MIME.
 
 1. To download the shared asset, click **[!UICONTROL Select]** from the toolbar, click the asset, and then click **[!UICONTROL Download]** from the toolbar.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Pour vue des ressources que vous avez partagées en tant que liens, accédez à l’interface utilisateur Ressources et cliquez sur le logo Experience Manager. Sélectionnez **[!UICONTROL Navigation]** dans la liste pour afficher le panneau Navigation.
+1. Pour vue des ressources que vous avez partagées en tant que liens, accédez à l’interface utilisateur Ressources et cliquez sur le logo du Experience Manager. Sélectionnez **[!UICONTROL Navigation]** dans la liste pour afficher le panneau Navigation.
 1. Dans le panneau Navigation, sélectionnez **[!UICONTROL Liens partagés]** pour afficher la liste des ressources partagées.
 1. To un-share an asset, select it and click **[!UICONTROL Unshare]** from the toolbar. Voici un message de confirmation. L’entrée de la ressource est supprimée de la liste.
 
 ## Configuration du service service de messagerie Day CQ {#configmailservice}
 
-1. Dans la page d&#39;accueil Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
+1. Dans la page d&#39;accueil du Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **** Web.
 1. Dans la liste des services, recherchez le **[!UICONTROL service de messagerie Day CQ]**.
 1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -118,7 +122,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
 ## Configuration de la taille maximale des données  {#maxdatasize}
 
-Lorsque vous téléchargez des ressources à partir du lien partagé à l’aide de la fonction de partage de liens, Experience Manager compresse la hiérarchie des ressources à partir du référentiel, puis renvoie la ressource dans un fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. Afin de protéger le système contre une potentielle attaque par déni de service (DoS) résultant de cette situation, configurez la taille maximale à l’aide du paramètre **[!UICONTROL Taille max. de contenu (sans compression)]** pour le servlet proxy du partage de ressource adhoc de la gestion des ressources numériques Day CQ dans le gestionnaire de configuration.  Si la taille non compressée de la ressource dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
+Lorsque vous téléchargez des ressources à partir du lien partagé à l’aide de la fonction de partage de liens, le Experience Manager compresse la hiérarchie des ressources à partir du référentiel, puis renvoie la ressource dans un fichier ZIP. Toutefois, en l’absence de limite à la quantité de données pouvant être compressées dans un fichier ZIP, il est possible que des volumes de données considérables à compresser entraînent des erreurs d’insuffisance de mémoire dans JVM. Afin de protéger le système contre une potentielle attaque par déni de service (DoS) résultant de cette situation, configurez la taille maximale à l’aide du paramètre **[!UICONTROL Taille max. de contenu (sans compression)]** pour le servlet proxy du partage de ressource adhoc de la gestion des ressources numériques Day CQ dans le gestionnaire de configuration.  Si la taille non compressée de la ressource dépasse la valeur configurée, les demandes de téléchargement sont rejetées. La valeur par défaut est de 100 Mo.
 
 1. Click the Experience Manager logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. From the Web Console, locate the **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuration.
