@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9df949b0069dad7fc1627977097cec5546cd845f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1554'
 ht-degree: 54%
 
 ---
@@ -44,8 +44,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    * Nom de classe Java pour le pilote JDBC
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion avec le pilote JDBC
-
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Veillez à chiffrer les informations sensibles telles que les mots de passe avant de configurer la source de données. Pour chiffrer :
    >
@@ -53,7 +52,6 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >    
    >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. Dans le champ **[!UICONTROL Texte brut]**, spécifiez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
-
    >    
    >    
    >    
@@ -81,8 +79,7 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
-
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >The ***** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
 
@@ -131,7 +128,6 @@ Procédez comme suit pour configurer les services RESTful :
       * Chemin d’accès de base : Préfixe d’URL pour tous les chemins d’API. Ce champ est facultatif.\
          Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
    * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base, Clé d’API ou Authentification personnalisée — pour accéder au service RESTful et, par conséquent, fournir des détails pour l’authentification.
-
    Si vous sélectionnez Clé **** d&#39;API comme type d&#39;authentification, spécifiez la valeur de la clé d&#39;API. La clé d&#39;API peut être envoyée en tant qu&#39;en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ Nom **[!UICONTROL du]** paramètre en conséquence.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
@@ -172,7 +168,6 @@ Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365
 
    * URL racine du service pour le service OData à configurer.
    * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée — pour accéder au service OData et, par conséquent, fournir les détails de l’authentification.
-
    >[!NOTE]
    Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point de terminaison OData en tant que racine du service.
 
