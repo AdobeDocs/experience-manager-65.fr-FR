@@ -3,10 +3,10 @@ title: Modèles de ressources dans [!DNL Adobe Experience Manager Assets].
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1553'
-ht-degree: 34%
+ht-degree: 33%
 
 ---
 
@@ -95,7 +95,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Pour plus d’informations, reportez-vous à la page [Intégration de ressources Experience Manager avec InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Pour plus d’informations, reportez-vous à la page [Intégration de ressources de Experience Manager avec InDesign Server](/help/assets/indesign.md).
 
 1. Pour modifier le texte d’un champ modifiable, cliquez sur le champ de texte à partir de la liste des champs modifiables et modifiez le texte du champ.
 
@@ -127,21 +127,21 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
    ![chlimage_1-117](assets/chlimage_1-322.png)
 
-1. Click **[!UICONTROL Preview]**  on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
+1. Click **[!UICONTROL Preview]** on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
 
    >[!NOTE]
    >
-   >Les icônes Aperçu et Terminé sont activées uniquement lorsqu’il ne manque aucune icône aux champs d’image modifiables dans le document. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
+   >Les options Prévisualisation et Terminé ne sont activées que si les champs d’image modifiables dans la documentation ne comportent pas d’icônes manquantes. If there are missing icons in your collateral, it is because [!DNL Experience Manager] is unable to resolve the images in the [!DNL InDesign] template. Usually, [!DNL Experience Manager] is unable to resolve images in the following cases:
    >
-   >    * Images are not embedded in the underlying [!DNL InDesign] template.
-   >    * Les images sont liées à partir du système de fichiers local.
+   >* Images are not embedded in the underlying [!DNL InDesign] template.
+   >* Les images sont liées à partir du système de fichiers local.
    >
    >To enable [!DNL Experience Manager] to resolve images, do the following:
    >
-   >    * Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
-   >    * Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
+   >* Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
+   >* Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
    >
-   >For more information around working with [!DNL InDesign] documents, see [Best Practices for Working with InDesign Documents in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >For more information around working with [!DNL InDesign] documents, see [best practices to work with InDesign documents in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Pour générer un rendu PDF pour la brochure, sélectionnez l’option Acrobat dans la boîte de dialogue, puis cliquez sur **[!UICONTROL Continuer]**.
 1. Le document est créé dans le dossier où vous avez commencé. Pour afficher les rendus, ouvrez le document et choisissez **[!UICONTROL Rendus]** dans la liste de navigation globale.
@@ -197,6 +197,6 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
    >
    >Vous ne pouvez pas modifier ultérieurement un document fusionné ni l’utiliser pour créer d’autres documents.
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
 * L’ [!DNL InDesign] éditeur dans [!DNL Experience Manager] fonctionne au niveau de la balise et tout le texte sous une balise unique est considéré comme une entité unique. Pour conserver la mise en forme et les styles du texte lors de la modification, balisez séparément chaque paragraphe (ou le texte avec des styles différents).
