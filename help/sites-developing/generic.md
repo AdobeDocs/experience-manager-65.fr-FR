@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 translation-type: tm+mt
-source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 83%
 
 ---
 
@@ -42,7 +45,7 @@ Le framework eCommerce est compatible avec n’importe quelle solution eCommerce
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* AEM prend en charge `Resource.adaptTo()` `CommerceService` les variables `Product`
+* AEM prend en charge `Resource.adaptTo()` `CommerceService` les `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -60,7 +63,7 @@ Dans une installation AEM standard, une implémentation spécifique est requise,
 
 |  |  |
 |---|---|
-| `cq:commerceProvider = geometrixx` | exemple geometrixx; cela inclut des extensions minimales de l’API générique |
+| `cq:commerceProvider = geometrixx` | exemple geometrixx ; cela inclut des extensions minimales de l&#39;API générique |
 
 ### Exemple {#example}
 
@@ -91,10 +94,10 @@ Session permettant de stocker des informations relatives au panier du client.
 
 L’API **CommerceSession** :
 
-* Détient le **panier**
+* Possède le **panier**
 
    * exécute les ajouts/suppressions/etc. ;
-   * effectue les divers calculs sur le panier;
+   * effectue les divers calculs sur le panier ;
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
@@ -128,13 +131,11 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 Bien que les produits (en général) peuvent présenter plusieurs axes de variante, le composant de produit prêt à l’emploi n’en prend en charge que deux :
 >
 >1. `size`
-   >
-   >
-1. plus un
-   >   This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
+>1. plus un
+
 >
-
-
+>   
+This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Références de produits et données PIM {#product-references-and-pim-data}
 
@@ -146,7 +147,7 @@ En général :
 
 Il doit y avoir un mappage 1:1 entre les variations de produit et les nœuds de données de produit.
 
-Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit comporte des variations S, M et L, les données du produit peuvent être :
+Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit présente des variations S, M et L, les données du produit peuvent être les suivantes :
 
 ```shell
 etc
@@ -521,11 +522,11 @@ De cette façon, `CommerceSession` est chargée de vérifier si un bon existe et
 
 `AbstractJcrCommerceSession` (fourni) peut appliquer des bons. The vouchers returned by the class `getVouchers()` are instances of `cq:Page` containing a jcr:content node with the following properties (amongst others):
 
-* `sling:resourceType` (Chaîne) - cette valeur doit être `commerce/components/voucher`
+* `sling:resourceType` (Chaîne) - ceci doit être `commerce/components/voucher`
 
 * `jcr:title` (Chaîne) - pour la description du voucher
 * `code`( (Chaîne) - code promotionnel que l’utilisateur doit entrer pour appliquer ce bon
-* `promotion` (Chaîne) - promotion à appliquer;p. ex. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (chaîne) - promotion à appliquer ; par ex. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Les gestionnaires de promotions sont des services OSGi qui modifient le panier. Le panier prend en charge plusieurs hooks définis dans l’interface `PromotionHandler`.
 
