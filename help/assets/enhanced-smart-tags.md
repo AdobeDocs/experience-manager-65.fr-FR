@@ -3,7 +3,10 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '1561'
+ht-degree: 75%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ## Présentation des balises intelligentes améliorées {#overview-of-enhanced-smart-tags}
 
-Les entreprises qui traitent les ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources peuvent être facilement identifiées et récupérées par des recherches reposant sur les balises.
+Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources peuvent être facilement identifiées et récupérées par des recherches reposant sur les balises.
 
 Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches.
 
@@ -22,9 +25,9 @@ Pour que le service de contenu dynamique applique les balises adéquates, vous d
 
 Une fois une balise entraînée et prête, le service peut appliquer ces balises sur les ressources par un workflow de balisage.
 
-En arrière-plan, le service de contenu intelligent utilise la structure Adobe Sensei AI pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie commerciale. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+En arrière-plan, Smart Content Service utilise la structure de l’IA Adobe Sensei pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Smart Content Service est un service cloud hébergé sur les E/S Adobe. Pour l’utiliser dans Adobe Experience Manager, l’administrateur système doit intégrer votre instance Experience Manager aux E/S Adobe.
+Smart Content Service est un service cloud hébergé sur les E/S Adobe. Pour l&#39;utiliser dans l&#39;Adobe Experience Manager, l&#39;administrateur système doit intégrer votre instance de Experience Manager avec les E/S Adobe.
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
@@ -44,17 +47,17 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 ## Intégration {#onboarding}
 
-Le service de contenu dynamique est disponible à l’achat en tant que module complémentaire d’Experience Manager. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers les E/S Adobe.
+Le service de contenu dynamique est disponible à l’achat en tant que module complémentaire d’Experience Manager. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S Adobe.
 
-L’administrateur peut suivre le lien pour intégrer Smart Content Service à Experience Manager. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
+L’administrateur peut suivre le lien pour intégrer Smart Content Service au Experience Manager. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
 
-Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans Experience Manager.
+Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans le Experience Manager.
 
 >[!NOTE]
 >
->Si vous utilisez Experience Manager 6.3 ou une version antérieure et que vous avez besoin du service de balisage pour vos ressources, voir Balises [intelligentes](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Les balises intelligentes n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service de balisage intelligent amélioré.
+>Si vous utilisez la version 6.3 ou antérieure de Experience Manager et que vous avez besoin du service de balisage pour vos ressources, voir [Balises](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)dynamiques. Les balises actives n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service amélioré de balisage intelligent.
 
-## Vérification des ressources et des balises {#reviewing-assets-and-tags}
+## Vérification des ressources et balises {#reviewing-assets-and-tags}
 
 Après intégration, commencez par identifier un ensemble de balises qui décrit le mieux ces images dans le contexte de votre entreprise.
 
@@ -87,13 +90,13 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Une fois cette option sélectionnée pour un dossier, Experience Manager exécute automatiquement un processus de formation afin de former Smart Content Service aux ressources du dossier et à leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
+Une fois cette option sélectionnée pour un dossier, le Experience Manager exécute automatiquement un processus de formation pour former Smart Content Service aux ressources de dossier et à leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
 
 ### Entraînement à la demande {#on-demand-training}
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
-1. Dans l’interface d’Experience Manager, accédez à **[!UICONTROL Outils > Processus > Modèles]**.
+1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
 1. Indiquez le titre du workflow et ajoutez un commentaire. Then, click **[!UICONTROL Run]**. Les ressources et les balises sont soumises à l’entraînement.
@@ -102,24 +105,24 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 
 >[!NOTE]
 >
->Une fois que les ressources d’un dossier sont traitées pour la formation, seules les ressources modifiées sont traitées lors des cycles de formation suivants.
+>Une fois que les ressources d’un dossier sont traitées pour la formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
 
-### Rapports de formation {#viewing-training-reports}
+### Rapports de formation Vue {#viewing-training-reports}
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Dans l’interface d’Experience Manager, accédez à **[!UICONTROL Outils > Ressources > Rapports]**.
-1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
-1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Then, click **[!UICONTROL Create]** from the toolbar.
-1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. To view the report, click **[!UICONTROL View]** from the toolbar.
+1. Dans l’interface de Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. Dans la page **[!UICONTROL Rapports de ressources]**, cliquez sur **[!UICONTROL Créer]**.
+1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
+1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
+1. Dans la page **[!UICONTROL Rapports de ressources]**, sélectionnez le rapport que vous avez généré. Pour afficher le rapport, cliquez sur **[!UICONTROL Afficher]** dans la barre d’outils.
 1. Passez en revue les détails du rapport.
 
-   Le rapport affiche l’état d’identification des balises que vous avez formées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le processus d’entraînement pour l’entraînement complet du service sur la balise.
+   Le rapport affiche l’état d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le processus d’entraînement pour l’entraînement complet du service sur la balise.
 
    Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
 
-1. To download the report, select it from the list, and click **[!UICONTROL Download]** from the toolbar. Le rapport est téléchargé sous forme de feuille de calcul Microsoft Excel.
+1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d’une feuille de calcul Microsoft Excel.
 
 ## Baliser automatiquement les fichiers {#tagging-assets-automatically}
 
@@ -148,31 +151,31 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 >
 >Si vous exécutez le workflow de balisage à partir de la chronologie, vous pouvez appliquer des balises sur un maximum de 15 ressources à la fois.
 
-#### Tag assets from the workflow console {#tagging-assets-from-the-workflow-console}
+#### Balisage des ressources à l’aide de la console de workflow {#tagging-assets-from-the-workflow-console}
 
-1. Dans l’interface d’Experience Manager, accédez à **[!UICONTROL Outils > Processus > Modèles]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL DAM Smart Tags Assets]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. In the **[!UICONTROL Run Workflow]** dialog, browse to the payload folder containing assets on which you want to apply your tags automatically.
+1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, accédez au dossier de charge utile contenant les ressources sur lesquelles vous souhaitez appliquer vos balises automatiquement.
 1. Indiquez un titre pour le workflow et un commentaire facultatif. Cliquez sur **[!UICONTROL Exécuter]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
    Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources. Pour plus d’informations, voir [Gestion des balises intelligentes](managing-smart-tags.md).
 
-#### Tag assets from the timeline {#tagging-assets-from-the-timeline}
+#### Balisage des ressources à partir de la chronologie {#tagging-assets-from-the-timeline}
 
 1. Depuis l’interface utilisateur Assets, sélectionnez le dossier contenant les ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises intelligentes.
-1. Dans le coin supérieur gauche, ouvrez le **[!UICONTROL journal]**.
-1. Ouvrez les actions dans la partie inférieure de la barre latérale gauche et cliquez sur **[!UICONTROL Flux de travaux]**.
+1. Dans le coin supérieur gauche, ouvrez la **[!UICONTROL Chronologie]**.
+1. Ouvrez les actions dans la partie inférieure de la barre latérale gauche et cliquez sur **[!UICONTROL Démarrer le processus]**.
 
-   ![_workflow](assets/start_workflow.png)
+   ![start_workflow](assets/start_workflow.png)
 
 1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
-1. Cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises sur les ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources. For details, see [manage Smart Tags](managing-smart-tags.md).
+1. Cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources. For details, see [manage Smart Tags](managing-smart-tags.md).
 
 >[!NOTE]
 >
->Lors des cycles de balisage suivants, seules les ressources modifiées sont à nouveau balisées avec des balises nouvellement formées. Toutefois, même les ressources non modifiées sont balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du processus de balisage dépasse 24 heures. Pour les  de balisage périodiques, les fichiers non modifiés sont balisés lorsque l’intervalle de temps dépasse 6 mois.
+>Lors des cycles de balisage suivants, seules les ressources modifiées seront à nouveau balisées avec des balises nouvellement entraînées. Cependant, même les ressources inchangées seront balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources inchangées sont balisées lorsque l’intervalle dépasse 6 mois.
