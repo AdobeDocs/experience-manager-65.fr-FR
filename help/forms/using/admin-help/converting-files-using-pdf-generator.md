@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 91%
@@ -66,19 +66,21 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 >
 >* la conversion de fichiers HTML au format PDF requiert certaines polices dans le répertoire des polices système. Sur les systèmes Linux, Solaris et AIX, le répertoire des polices système doit contenir la police Courier. Sur les systèmes Windows, le répertoire des polices système doit contenir Times New Roman.
    >
-   > 
+   >
 * (Système UNIX uniquement) L’une des polices japonaises suivantes doit être disponible sur le serveur AEM Forms pour convertir une page Web contenant une police japonaise en document PDF.
    >
-   >   
-   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Gothic Pro-VI&quot;
-   >   * &quot;Kozuka Mincho Pro-VI&quot;
-   >   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Mincho Pr6N&quot;
-   >   * &quot;Sazanami Mincho&quot;
-   >   * &quot;Adobe Heiti Std&quot;
-   >   * &quot;Adobe Song Std&quot;
->* Pour télécharger un fichier à partir du système de fichiers local, utilisez l’option Télécharger le fichier de la page HTML en PDF.
+   >  
+* &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Gothic Pro-VI&quot;
+>  * &quot;Kozuka Mincho Pro-VI&quot;
+>  * &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Mincho Pr6N&quot;
+>  * &quot;Sazanami Mincho&quot;
+>  * &quot;Adobe Heiti Std&quot;
+>  * &quot;Adobe Song Std&quot;
+   >
+   >
+* Pour télécharger un fichier à partir du système de fichiers local, utilisez l’option Télécharger le fichier de la page HTML en PDF.
 
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > HTML en PDF.
