@@ -3,9 +3,9 @@ title: Téléchargez des ressources numériques depuis [!DNL Adobe Experience Ma
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '795'
 ht-degree: 41%
 
 ---
@@ -24,14 +24,14 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 **Pour télécharger des fichiers,**
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
-1. On the Navigation page, tap **[!UICONTROL Assets > Files.]**
+1. Sur la page Navigation, appuyez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers.]**
 1. Accédez à un dossier contenant les fichiers à télécharger.
 1. Sélectionnez le dossier ou un ou plusieurs fichiers qu’il contient.
 1. On the toolbar, tap **[!UICONTROL Download.]**
 
    ![Options disponibles lors du téléchargement de fichiers à partir de ressources Experience Manager](/help/assets/assets/asset-download1.png)
 
-   *Options de la boîte de dialogue Télécharger.*
+   *Figure : Options de la boîte de dialogue Télécharger.*
 
 1. Dans la boîte de dialogue Télécharger, sélectionnez les options de téléchargement de votre choix.
 
