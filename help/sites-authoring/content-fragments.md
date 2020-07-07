@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 100%
@@ -175,7 +175,9 @@ Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offerte
 >Si cela se produit, le contenu intermédiaire est conservé tel quel :
 >
 >* Les composants intermédiaires occupent une position absolue dans la séquence de composants du flux de fragments. Cette position ne varie pas, même en cas de modification du contenu des paragraphes dans le fragment.
-   >  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
+>
+>  
+Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
 >* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
 
 >
