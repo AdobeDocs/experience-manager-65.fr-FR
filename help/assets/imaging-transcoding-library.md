@@ -3,7 +3,7 @@ title: Bibliothèque ITL
 description: Apprenez à configurer et à utiliser la bibliothèque de transcodage de l’imagerie (ou ITL, de l’anglais Imaging Transcoding Library) d’Adobe, une solution de traitement des images qui peut réaliser des fonctions essentielles de manipulation graphique, y compris le codage, le transcodage, le rééchantillonnage et le redimensionnement des images.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 36%
@@ -76,7 +76,7 @@ Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibl
 
 1. Download the [Imaging Transcoding Library package from Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) and install it using the Package Manager. Le package est compatible avec Experience Manager 6.5.
 
-1. Pour connaître un ID d&#39;assemblage pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console Web et cliquez sur **[!UICONTROL OSGi > Bundles]**. Vous pouvez également ouvrir la console des lots en utilisant l’ `https://[aem_server:[port]/system/console/bundles/` URL d’accès. Localisez le `com.day.cq.dam.cq-dam-switchengine` lot et son ID.
+1. Pour connaître un ID de lot pour `com.day.cq.dam.cq-dam-switchengine`, connectez-vous à la console Web et cliquez sur **[!UICONTROL OSGi]** > **[!UICONTROL Bundles]**. Vous pouvez également ouvrir la console des lots en utilisant l’ `https://[aem_server:[port]/system/console/bundles/` URL d’accès. Localisez le `com.day.cq.dam.cq-dam-switchengine` lot et son ID.
 
 1. Assurez-vous que toutes les bibliothèques requises sont extraites en vérifiant le dossier à l’aide de la commande `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, où le nom de dossier est créé à l’aide de l’ID d’assemblage. Par exemple, la commande est `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` si l’ID d’assemblage est `588`défini.
 
@@ -105,7 +105,7 @@ Pour configurer la bibliothèque, créez un fichier .conf pour indiquer les bibl
 
 Mettez à jour le processus de mise à jour des actifs  DAM pour utiliser la bibliothèque pour le traitement des images.
 
-1. Dans l’interface utilisateur du Experience Manager, sélectionnez **[!UICONTROL Outils > Processus > Modèles]**.
+1. Dans l’interface utilisateur du Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
 
 1. From the **[!UICONTROL Workflow Models]** page, open the **[!UICONTROL DAM Update Asset]** workflow model in edit mode.
 
