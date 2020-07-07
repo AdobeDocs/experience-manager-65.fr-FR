@@ -3,10 +3,10 @@ title: Process assets using media handlers and workflows in [!DNL Adobe Experien
 description: Découvrez les gestionnaires de médias et comment utiliser des workflows pour effectuer des tâches sur vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 54%
+source-wordcount: '2109'
+ht-degree: 52%
 
 ---
 
@@ -17,19 +17,17 @@ ht-degree: 54%
 
 Un processus peut être configuré pour s’exécuter automatiquement lorsqu’une ressource d’un type MIME particulier est téléchargée. The processing steps are defined in terms of a series of [!DNL Assets] media handlers. [!DNL Experience Manager] fournit certains [gestionnaires intégrés](#default-media-handlers) et des gestionnaires supplémentaires peuvent être [conçus et personnalisés](#creating-a-new-media-handler) ou définis en déléguant le processus à un [outil de ligne de commande](#command-line-based-media-handler).
 
-Media handlers are services in [!DNL Assets] that perform specific actions on assets. For example, when an MP3 audio file is uploaded into [!DNL Experience Manager], a workflow triggers an MP3 handler that extracts the metadata and generates a thumbnail. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans [!DNL Experience Manager]. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des processus, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
+Media handlers are services in [!DNL Assets] that perform specific actions on assets. For example, when an MP3 audio file is uploaded into [!DNL Experience Manager], a workflow triggers an MP3 handler that extracts the metadata and generates a thumbnail. Les gestionnaires de médias sont généralement utilisés conjointement avec des workflows. La plupart des types MIME courants sont pris en charge dans [!DNL Experience Manager]. Il est possible d’effectuer des tâches spécifiques sur les ressources en étendant/créant des workflows, en étendant/créant des gestionnaires de médias ou en désactivant/activant des gestionnaires de médias.
 
 >[!NOTE]
 >
->Reportez-vous à la page [Formats pris en charge par Assets](assets-formats.md) pour une description de tous les formats pris en charge par , ainsi que des fonctionnalités prises en charge pour chaque format.[!DNL Assets]
+>See the [Assets supported formats](assets-formats.md) page for a description of all the formats supported by [!DNL Assets] as well as features supported for each format.
 
 ## Default media handlers {#default-media-handlers}
 
 The following media handlers are available within [!DNL Assets] and handle the most common MIME types:
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | Nom du gestionnaire | Nom du service (dans la console système) | Types MIME pris en charge |
@@ -62,9 +60,9 @@ Pour vue des gestionnaires de médias actifs :
 
 ## Use media handlers in workflows to perform tasks on assets {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-Les gestionnaires de médias sont des services généralement utilisés conjointement avec des processus.
+Les gestionnaires de médias sont des services généralement utilisés conjointement avec des workflows.
 
-[!DNL Experience Manager] comporte des processus par défaut pour le traitement des ressources. Pour les afficher, ouvrez la console de workflow et cliquez sur l’onglet **[!UICONTROL Modèles]** : les titres de workflow commençant par concernent des ressources.[!DNL Assets]
+[!DNL Experience Manager] comporte des workflows par défaut pour le traitement des ressources. Pour les afficher, ouvrez la console de workflow et cliquez sur l’onglet **[!UICONTROL Modèles]** : les titres de workflow commençant par concernent des ressources.[!DNL Assets]
 
 Les workflows existants peuvent être étendus et de nouveaux workflows peuvent être créés pour gérer les ressources en fonction d’exigences spécifiques.
 
@@ -140,7 +138,7 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
 
 1. Dans Eclipse, créez un `myBundle`[!DNL Maven] projet :
 
-   1. In the Menu bar, click **[!UICONTROL File > New > Other]**.
+   1. In the Menu bar, click **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Other]**.
    1. In the dialog, expand the [!DNL Maven] folder, select [!DNL Maven] project and click **[!UICONTROL Next]**.
    1. Check the Create a simple project box and the Use default Workspace locations box, then click **[!UICONTROL Next]**.
    1. Définir un [!DNL Maven] projet :
@@ -505,7 +503,7 @@ Séparez les valeurs des arguments [!UICONTROL de] processus à l’aide de la v
 |---|---|
 | mime:&lt;mime-type> | Argument facultatif. Le processus est appliqué si la ressource présente le même type MIME que celui de l’argument. <br>Plusieurs types MIME peuvent être définis. |
 | tn:&lt;width>:&lt;height> | Argument facultatif. Le processus crée une miniature avec les dimensions définies dans l’argument. <br>Plusieurs miniatures peuvent être définies. |
-| cmd: &lt;command> | Définit la commande qui sera exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: nom de chemin d’accès complet du fichier d’entrée, par exemple /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: du fichier d’entrée, par exemple /tmp/cqdam0816.tmp <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}`: extension du fichier d’entrée, par exemple JPG. |
+| cmd: &lt;command> | Définit la commande exécutée. La syntaxe dépend de l’outil de ligne de commande. Une seule commande peut être définie. <br>Vous pouvez utiliser les variables suivantes pour créer la commande :<br>`${filename}`: nom du fichier d’entrée, par exemple original.jpg <br> `${file}`: nom de chemin complet du fichier d’entrée, par exemple `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: du fichier d’entrée, par exemple `/tmp/cqdam0816.tmp` <br>`${basename}`: nom du fichier d’entrée sans son extension, par exemple original <br>`${extension}`: extension du fichier d’entrée, par exemple JPG. |
 
 For example, if [!DNL ImageMagick] is installed on the disk hosting the [!DNL Experience Manager] server and if you create a process step using [!UICONTROL CommandLineProcess] as Implementation and the following values as [!UICONTROL Process Arguments]:
 
