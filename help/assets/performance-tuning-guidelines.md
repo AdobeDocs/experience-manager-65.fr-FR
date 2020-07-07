@@ -4,9 +4,9 @@ description: Suggestions et conseils [!DNL Experience Manager] sur la configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da2e435f33e8527793e009700c30e60868d196be
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '2767'
 ht-degree: 54%
 
 ---
@@ -28,7 +28,7 @@ Voici quelques éléments principaux essentiels pour lesquels vous devez identif
 
 ## Plate-forme {#platform}
 
-Bien que Experience Manager soit pris en charge sur plusieurs plates-formes, Adobe a trouvé la meilleure prise en charge des outils natifs sous Linux et Windows, ce qui contribue à des performances optimales et à la facilité d’implémentation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Comme pour tout déploiement d’Experience Manager, vous devez implémenter TarMK dans la mesure du possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
+Bien que Experience Manager soit pris en charge sur plusieurs plates-formes, Adobe a trouvé la meilleure prise en charge des outils natifs sous Linux et Windows, ce qui contribue à des performances optimales et à la facilité d’implémentation. Ideally, you should deploy a 64-bit operating system to meet the high memory requirements of an [!DNL Experience Manager Assets] deployment. Comme pour tout déploiement Experience Manager, vous devez implémenter TarMK chaque fois que possible. Bien que TarMK ne puisse pas mesurer au-delà d’une instance d’auteur simple, il semble offrir de meilleurs résultats que MongoMK. You can add TarMK offload instances to increase the workflow processing power of your [!DNL Experience Manager Assets] deployment.
 
 ### Dossier temporaire {#temp-folder}
 
@@ -55,9 +55,8 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 Adobe recommande le déploiement [!DNL Experience Manager Assets] sur Java 8 pour des performances optimales.
 
->[!NOTE]
->
->Oracle a arrêté de publier les mises à jour de Java 7 à compter d&#39;avril 2015.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### Paramètres JVM    {#jvm-parameters}
 
@@ -118,7 +117,7 @@ Adobe recommande d’activer HTTPS, car de nombreuses entreprises qui possèdent
 
 Primarily, your network optimization strategy depends upon the amount of bandwidth available and the load on your [!DNLExperience Manager] instance. Les options de configuration courantes, notamment les pare-feu ou les proxys, peuvent améliorer les performances du réseau. Voici quelques points essentiels à prendre en compte :
 
-* En fonction du type d’instance (petit, modéré, grand), veillez à disposer d’une bande passante réseau suffisante pour votre instance Experience Manager. Adequate bandwidth allocation is especially important if [!DNLExperience Manager] is hosted on AWS.
+* En fonction du type d’instance (petit, modéré, grand), veillez à disposer d’une bande passante réseau suffisante pour votre instance de Experience Manager. Adequate bandwidth allocation is especially important if [!DNLExperience Manager] is hosted on AWS.
 * If your [!DNLExperience Manager] instance is hosted on AWS, you can benefit by having a versatile scaling policy. Augmentez la taille de l’instance si les utilisateurs prévoient une charge élevée. Réduisez-la pour une charge moyenne/faible.
 * HTTPS : la plupart des utilisateurs possèdent des pare-feu qui analysent le trafic HTTP, ce qui est susceptible d’avoir une incidence sur le chargement des fichiers ou même endommager des fichiers lors de l’opération de chargement.
 * Chargements volumineux : assurez-vous que les utilisateurs disposent d’une connexion filaire au réseau (les connexions Wi-Fi sont rapidement saturées).
