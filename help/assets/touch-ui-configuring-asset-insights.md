@@ -1,16 +1,19 @@
 ---
-title: Configurez Asset Insights pour obtenir des analyses numériques de l’utilisation des ressources.
-description: Configurez Asset Insights dans [!DNL Adobe Experience Manager Assets].
+title: Configurez Asset Insights pour obtenir des analyses d’utilisation des ressources numériques.
+description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 34%
 
 ---
 
 
 # Configuration des statistiques sur les ressources {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] Récupère les données d’utilisation des ressources numériques utilisées par des sites Web tiers à partir de [!DNL Adobe Analytics]. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] récupère les données d’utilisation des ressources numériques utilisées par des sites Web tiers à partir de [!DNL Adobe Analytics]. Pour permettre à la fonction Statistiques sur les ressources de récupérer ces données et de générer des informations, commencez par la configurer afin qu’elle s’intègre à Adobe Analytics.
 
 >[!NOTE]
 >
@@ -23,9 +26,9 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 1. Cliquez sur la carte **[!UICONTROL Configuration des statistiques]**.
 1. Dans l’assistant, sélectionnez un centre de données et fournissez vos informations d’identification, notamment le nom de votre société, votre nom d’utilisateur et votre secret partagé.
 
-   ![Configuration d’Adobe Analytics pour Assets Insights dans Experience Manager](assets/insights_config2.png)
+   ![Configurer Adobe Analytics pour les statistiques des ressources dans Experience Manager](assets/insights_config2.png)
 
-   *Figure : Configuration[!DNL Adobe Analytics]pour Assets Insights dans[!DNL Experience Manager].*
+   *Figure : Configurez[!DNL Adobe Analytics]pour Assets Insights dans[!DNL Experience Manager].*
 
 1. Cliquez sur **[!UICONTROL Authentifier]**.
 1. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an [!DNL Adobe Analytics] report suite from where you want Asset Insights to fetch data. Cliquez sur **[!UICONTROL Ajouter]**.
