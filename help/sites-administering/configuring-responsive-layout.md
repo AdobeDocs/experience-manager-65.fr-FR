@@ -1,8 +1,8 @@
 ---
 title: Configuration du conteneur et du mode de mises en page
 seo-title: Configuration du conteneur et du mode de mises en page
-description: Découvrez comment configurer le  de mise en page et le mode de mise en page.
-seo-description: Découvrez comment configurer le  de mise en page et le mode de mise en page.
+description: Découvrez comment configurer le Conteneur de mise en page et le mode de mise en page.
+seo-description: Découvrez comment configurer le Conteneur de mise en page et le mode de mise en page.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: 710958ceecc8bbbbdae5e836ec0571a9eeaf6a9a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 81%
 
 ---
 
@@ -28,7 +31,7 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
 * Composant [**Conteneur de mises en page **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Ce composant fournit un système de paragraphes de grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme paramètre par défaut pour votre page et/ou mis à la disposition des auteurs dans l’explorateur de composants.
+   Ce composant fournit un système de paragraphes de grille qui vous permet d&#39;ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme paramètre par défaut pour votre page et/ou mis à la disposition des auteurs dans l’explorateur de composants.
 
    * The default **Layout Container** component is defined under:
 
@@ -42,7 +45,7 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
          Le conteneur de mises en page peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de mise en page Une fois le de mise en page positionné sur votre page, vous pouvez utiliser le mode **Mise en page**pour positionner le contenu dans la grille dynamique.
+* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de mise en page Une fois le conteneur de mise en page positionné sur votre page, vous pouvez utiliser le mode **Mise en page**pour positionner le contenu dans la grille dynamique.
 
 * [**Émulateur **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Permet de créer et de modifier des sites web en responsive design qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
@@ -113,10 +116,9 @@ Si vous migrez un projet existant (avec du contenu existant), vous devez :
 >
 >* ajouter des points d’arrêt aux modèles ;
 >* ajouter les mêmes points d&#39;arrêt aux pages existantes
-   >  Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
 >
-
-
+>  
+Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
 
 #### Configuration des points d’arrêt à l’aide de CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
@@ -127,18 +129,18 @@ Si vous migrez un projet existant (avec du contenu existant), vous devez :
 
 1. Under `jcr:content` create the node:
 
-   * Nom: `cq:responsive`
-   * Type: `nt:unstructured`
+   * Nom : `cq:responsive`
+   * Type : `nt:unstructured`
 
 1. En dessous, créez le nœud :
 
-   * Nom: `breakpoints`
-   * Type: `nt:unstructured`
+   * Nom : `breakpoints`
+   * Type : `nt:unstructured`
 
 1. Sous le nœud Points d’arrêt, vous pouvez créer un nombre illimité de points d’arrêt. Chaque définition correspond à un nœud unique avec les propriétés suivantes :
 
-   * Nom: `<descriptive name>`
-   * Type: `nt:unstructured`
+   * Nom : `<descriptive name>`
+   * Type : `nt:unstructured`
    * Titre: `String` * `<descriptive title seen in Emulator>`*
    * Largeur: `Decimal` * `<value of breakpoint>`*
 
@@ -240,11 +242,11 @@ Les composants contenus dans un conteneur responsive sont redimensionnés (ainsi
 
 Par exemple :
 
-* Avant :
+* Avant:
 
    * `width=100px`
 
-* Après :
+* Après:
 
    * `max-width=100px`
 
@@ -268,7 +270,7 @@ Le mécanisme d’image adaptative est disponible par le biais d’un script qui
 
 >[!CAUTION]
 >
->Les clients de feuilles de style personnalisées doivent être chargés dans l’en-tête pour qu’ils fonctionnent correctement sur l’auteur et la publication.
+>Les clientlibs de feuilles de style personnalisées doivent être chargées dans l&#39;en-tête pour qu&#39;ils fonctionnent correctement sur l&#39;auteur et la publication.
 
 ## Activation du composant Conteneur de mises en page pour une page {#enable-the-layout-container-component-for-page}
 
@@ -294,7 +296,7 @@ Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance sp
 
    Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page.
 
-   À cet effet, utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md), puis ouvrez la boîte de dialogue de conception pour le conteneur nécessaire. Vous pouvez spécifier le nombre de colonnes disponibles pour le positionnement et le redimensionnement. La valeur par défaut est 12.
+   À cet effet, utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md), puis ouvrez la boîte de dialogue de conception pour le conteneur nécessaire. Vous pouvez spécifier le nombre de colonnes disponibles pour le positionnement et le redimensionnement. La valeur par défaut est de 12.
 
 1. **XML**
 
