@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager Assets Page d'accueil
-description: Personnalisez la Page d'accueil Ressources d’Experience Manager pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des dernières activités relatives aux ressources.
+title: Expérience de Page d'accueil des ressources d’Adobe Experience Manager
+description: Personnalisez la Page d'accueil Ressources du Experience Manager pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des dernières activités relatives aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 35%
@@ -11,15 +11,15 @@ ht-degree: 35%
 ---
 
 
-# Adobe Experience Manager Assets Page d&#39;accueil {#aem-assets-home-page-experience}
+# Expérience de Page d&#39;accueil des ressources d’Adobe Experience Manager {#aem-assets-home-page-experience}
 
-Personnalisez la page d&#39;accueil Ressources d’Adobe Experience Manager pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des activités récentes relatives aux ressources.
+Personnalisez la page d&#39;accueil Ressources de l’Adobe Experience Manager pour bénéficier d’une expérience d’écran de bienvenue enrichie, y compris un instantané des dernières activités relatives aux ressources.
 
 La page d&#39;accueil Ressources offre une expérience d’écran de bienvenue riche et personnalisée, qui comprend un instantané des activités récentes, telles que les ressources récemment affichées ou téléchargées.
 
 La page d&#39;accueil Ressources est désactivée par défaut. Pour l’activer, procédez comme suit :
 
-1. Ouvrez Experience Manager Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`.
+1. Ouvrez Configuration Manager Experience Manager `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open the **[!UICONTROL Day CQ DAM Event Recorder]** service.
 1. Select the **[!UICONTROL Enable this service]** to enable activity recording.
 
@@ -69,7 +69,7 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 
 **Récent**: Le widget **[!UICONTROL Récemment affiché]** sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
-**Discover**: Le **[!UICONTROL nouveau]** widget sous cette section affiche les ressources et les rendus récemment transférés vers l’instance Ressources.
+**Discover**: Le **[!UICONTROL nouveau]** widget sous cette section affiche les ressources et les rendus récemment transférés vers le déploiement Ressources.
 
 To enable purging of user activity data, enable the **[!UICONTROL DAM Event Purge Service]** from Configuration Manager. Une fois que vous avez activé ce service, les activités de l’utilisateur connecté dépassant le nombre spécifié sont supprimées par le système.
 
@@ -77,7 +77,7 @@ L’écran de bienvenue fournit des outils d’aide à la navigation, comme des 
 
 >[!NOTE]
 >
->Enabling the [!UICONTROL Day CQ DAM Event Recorder] and [!UICONTROL DAM Event Purge] services increases write operations to JCR and search indexing, which significantly increases the load on the Experience Manager server. La charge supplémentaire sur le serveur Experience Manager peut avoir un impact sur ses performances.
+>Enabling the [!UICONTROL Day CQ DAM Event Recorder] and [!UICONTROL DAM Event Purge] services increases write operations to JCR and search indexing, which significantly increases the load on the Experience Manager server. La charge supplémentaire sur le serveur Experience Manager peut affecter ses performances.
 
 >[!CAUTION]
 >
