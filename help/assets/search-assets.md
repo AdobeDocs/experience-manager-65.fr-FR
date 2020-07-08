@@ -4,10 +4,10 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 8ca4e3057ec13762404a8b7fb6f6bdf5dd562281
 workflow-type: tm+mt
-source-wordcount: '5862'
-ht-degree: 57%
+source-wordcount: '5826'
+ht-degree: 55%
 
 ---
 
@@ -59,7 +59,7 @@ Vous pouvez découvrir plus rapidement les ressources de votre choix à partir d
 
 ### Termes et résultats de recherche de base {#searchbasics}
 
-Vous pouvez exécuter des recherches de mots-clés à partir du champ Omni-recherche. La recherche de mots-clés n’est pas sensible à la casse et il s’agit d’une recherche en texte intégral (dans les champs de métadonnées courants. Si plusieurs mots-clés sont recherchés, l’opérateur par défaut entre les mots-clés correspond à la recherche par défaut et c’est `AND` `OR` lorsque les ressources sont balisées intelligemment.
+Vous pouvez exécuter des recherches de mots-clés à partir du champ Omni-recherche. La recherche de mots-clés n’est pas sensible à la casse et est une recherche de texte intégral (dans les champs de métadonnées les plus utilisés). Si plusieurs mots-clés sont recherchés, l’opérateur par défaut entre les mots-clés correspond à la recherche par défaut et c’est `AND` `OR` lorsque les ressources sont balisées intelligemment.
 
 Les résultats sont triés par pertinence, en commençant par les correspondances les plus proches. Pour plusieurs mots-clés, les ressources qui contiennent les deux termes dans leurs métadonnées génèrent des résultats plus pertinents. Dans les métadonnées, les mots-clés qui apparaissent sous forme de balises intelligentes sont classés plus haut que les mots-clés qui apparaissent dans d’autres champs de métadonnées. [!DNL Experience Manager] permet de donner plus de poids à un terme de recherche particulier. Also, it is possible to [boost the rank](#searchrank) of a few targeted assets for specific search terms.
 
@@ -180,13 +180,13 @@ Vous pouvez rechercher des fichiers en fonction des valeurs exactes de champs de
 | Hauteur de l’image | height:lowerboundupperbound |
 | Personne | person:John |
 
-Les propriétés path, limit, size et orderby ne peuvent pas être combinées à une autre propriété avec un opérateur OU.
+The properties `path`, `limit`, `size`, and `orderby` cannot be *ORed* with any other property.
 
 Le mot-clé d’une propriété générée par un utilisateur correspond au libellé de son champ dans l’éditeur de propriétés en minuscules et sans espace.
 
 Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
-* Pour afficher toutes les ressources avec plusieurs champs de facettes (par exemple : title=John Doe et creator tool=Adobe Photoshop) :  `tiltle:"John Doe" creatortool : Adobe*`
+* Pour afficher toutes les ressources avec plusieurs champs de facettes (par exemple : title=John Doe et creator tool=Adobe Photoshop) :  `tiltle:"John Doe" creatortool:Adobe*`
 * Pour afficher toutes les ressources lorsque la valeur de la facette est une expression et non un seul mot (par exemple : le titre est Scott Reynolds) : `title:"Scott Reynolds"`
 * Pour afficher les ressources avec plusieurs valeurs d’une seule propriété (le titre est Scott Reynolds ou John Doe, par exemple) : `title:"Scott Reynolds" OR "John Doe"`
 * Pour afficher les ressources avec des valeurs de propriété commençant par une chaîne spécifique (par exemple : le titre est Scott Reynolds) : `title:Scott*`
@@ -275,10 +275,10 @@ Les performances de la fonctionnalité de recherche peuvent être limitées dans
 * Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les fichiers recherchés. [!DNL Experience Manager] affiche initialement 100 actifs dans la vue de cartes et 200 actifs dans la vue de listes. D’autres ressources sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de ressources que les ressources chargées. Le décompte des ressources sélectionnées s’affiche dans le coin supérieur droit de la page des résultats de la recherche. Vous pouvez effectuer des opérations sur la sélection, par exemple télécharger les fichiers sélectionnés, mettre à jour les propriétés de métadonnées en bloc pour les fichiers sélectionnés ou ajouter les fichiers sélectionnés à une collection. Lorsque plus de ressources sont sélectionnées que affichées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources sur lesquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, assurez-vous que toutes les ressources sont explicitement sélectionnées.
 * Pour rechercher les ressources qui ne contiennent pas les métadonnées obligatoires, voir [Métadonnées obligatoires](#mandatorymetadata).
 * La recherche utilise tous les champs de métadonnées. Une recherche générique, telle que la recherche du nombre 12, renvoie généralement de nombreux résultats. Pour de meilleurs résultats, utilisez des guillemets doubles (et non des guillemets simples) ou assurez-vous que le nombre est attaché à un mot sans caractère spécial (par exemple, *chaussure12*).
-* La recherche de texte intégral prend en charge des opérateurs tels que -, ^, etc. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, entrez « Notebook - Beauté » au lieu de Notebook - Beauté.
+* La recherche de texte intégral prend en charge des opérateurs tels que - et ^. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, entrez « Notebook - Beauté » au lieu de Notebook - Beauté.
 * Si les résultats de recherche sont trop nombreux, limitez la [portée de la recherche](#scope) pour trouver les ressources souhaitées. Cela fonctionne mieux lorsque vous avez une idée de la meilleure manière de rechercher les ressources que vous recherchez, par exemple un type de fichier, un emplacement ou des métadonnées spécifiques.
 
-* **Balisage** : les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services d’intelligence artificielle d’Adobe Sensei, qui améliorent constamment le balisage de vos ressources au fil de l’utilisation et de l’entraînement. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte si la fonction est activée sur votre compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
+* **Balisage**: Les balises vous aident à classer les fichiers qui peuvent être parcourus et recherchés plus efficacement. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows. [!DNL Experience Manager] propose des méthodes pour baliser automatiquement les ressources à l’aide des services d’intelligence artificielle d’Adobe Sensei, qui améliorent constamment le balisage de vos ressources au fil de l’utilisation et de l’entraînement. Lorsque vous recherchez des ressources, les balises intelligentes sont prises en compte si la fonction est activée sur votre compte. Cela fonctionne avec la fonctionnalité de recherche intégrée. Voir [Comportement de la recherche](#searchbehavior). Pour optimiser l’ordre d’affichage des résultats de recherche, vous pouvez [améliorer le classement](#searchrank) de quelques ressources sélectionnées.
 
 * **Indexation** : seules les métadonnées et les ressources indexées sont renvoyées dans les résultats de recherche. Pour une meilleure couverture et de meilleures performances, veillez à une indexation appropriée et suivez les bonnes pratiques. Voir [Indexation](#searchindex).
 
@@ -313,7 +313,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 *Figure : Illustration de l’utilisation d’un caractère générique de point d’interrogation dans la recherche de ressources à l’aide d’un exemple.*
 
-**Exclusion d’un mot-clé** : utilisez le tiret pour rechercher des ressources qui ne contiennent pas de mot-clé. Par exemple, la requête `running -shoe` renvoie les ressources qui contiennent `running`, mais pas `shoe`. De même, la requête `camp -night` renvoie les ressources qui contiennent `camp`, mais pas `night`. Notez que la requête `camp-night` renvoie les ressources qui contiennent à la fois `camp` et `night`.
+**Exclusion d’un mot-clé** : utilisez le tiret pour rechercher des ressources qui ne contiennent pas de mot-clé. Par exemple, la requête `running -shoe` renvoie les ressources qui contiennent `running`, mais pas `shoe`. De même, la requête `camp -night` renvoie les ressources qui contiennent `camp`, mais pas `night`. The query `camp-night` returns assets that contain both `camp` and `night`.
 
 ![Utilisation du tiret pour rechercher des ressources ne contenant pas de mot-clé exclu](assets/search_dash_exclude_keyword.gif)
 
@@ -327,34 +327,27 @@ La découverte des ressources repose sur l’indexation du contenu de la gestion
 
 ### Recherche visuelle ou par analogie {#configvisualsearch}
 
-La recherche visuelle utilise un balisage intelligent et requiert la version [!DNL Experience Manager] 6.5.2.0 ou ultérieure. Après avoir configuré la fonctionnalité de balisage intelligent, procédez comme suit.
+La recherche visuelle utilise un balisage intelligent et requiert la version [!DNL Experience Manager] 6.5.2.0 ou ultérieure. Après avoir configuré la fonctionnalité de balisage intelligent, procédez comme suit :
 
 1. Dans [!DNL Experience Manager] CRXDE, dans le `/oak:index/lucene` noeud, ajoutez les propriétés et valeurs suivantes et enregistrez les modifications.
 
    * `costPerEntry` de type `Double` avec la valeur `10`.
-
    * `costPerExecution` de type `Double` avec la valeur `2`.
-
    * `refresh` de type `Boolean` avec la valeur `true`.
-
    Cette configuration permet d&#39;effectuer des recherches à partir de l&#39;index approprié.
 
 1. Pour créer un index Lucene, dans CRXDE, à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, créez un noeud nommé `imageFeatures` de type `nt-unstructured`. Dans le `imageFeatures` noeud,
 
    * Ajoutez `name` la propriété de type `String` avec la valeur `jcr:content/metadata/imageFeatures/haystack0`.
-
    * Ajoutez `nodeScopeIndex` la propriété de type `Boolean` avec la valeur de `true`.
-
    * Ajoutez `propertyIndex` la propriété de type `Boolean` avec la valeur de `true`.
-
    * Ajoutez `useInSimilarity` la propriété de type `Boolean` avec la valeur `true`.
-
    Enregistrez les modifications.
 
 1. Accédez `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` à la propriété `similarityTags` de type `Boolean` et ajoutez-la avec la valeur `true`de.
 1. Appliquez des balises actives aux actifs de votre [!DNL Experience Manager] référentiel. Voir [comment configurer des balises](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)actives.
 1. Dans CRXDE, dans le `/oak-index/damAssetLucene` noeud, définissez la `reindex` propriété sur `true`. Enregistrez les modifications.
-1. (Facultatif) Si vous avez personnalisé le formulaire de recherche, copiez le `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` noeud dans `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez toutes les modifications.
+1. (Facultatif) Si vous avez personnalisé le formulaire de recherche, copiez le `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` noeud dans `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
 
 Pour plus d’informations, voir [Comprendre les balises actives en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) et [comment gérer les balises](/help/assets/managing-smart-tags.md)actives.
 
@@ -377,7 +370,7 @@ Les prédicats sont utilisés pour créer des facettes. Les administrateurs peuv
 Vous pouvez rechercher des ressources numériques en fonction d’une ou de plusieurs des propriétés suivantes. Les Filtres qui s’appliquent à certaines de ces propriétés sont disponibles par défaut et certains autres filtres peuvent être créés sur mesure pour s’appliquer aux autres propriétés.
 
 | Champ de recherche | Valeurs de propriété de recherche |
-|---|---|
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Types MIME  | Images, Documents, Multimédia, Archives ou Autre. |
 | Dernière modification | Heure, Jour, Semaine, Mois ou Année. |
 | Taille de fichier | Petit, Moyen ou Grand. |
@@ -395,7 +388,7 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 
 ## Utilisation des résultats de recherche de ressources {#aftersearch}
 
-Une fois que vous voyez des ressources recherchées qui correspondent à vos critères, vous pouvez effectuer les tâches standard suivantes avec les résultats de recherche ou entreprendre les actions suivantes :
+Vous pouvez effectuer les opérations suivantes avec les ressources que vous avez recherchées dans le Experience Manager :
 
 * Afficher les propriétés de métadonnées et d’autres informations
 * Télécharger une ou plusieurs ressources
@@ -404,9 +397,9 @@ Une fois que vous voyez des ressources recherchées qui correspondent à vos cri
 
 ### Tri des résultats de recherche {#sort}
 
-Le tri des résultats de recherche vous permet de trouver plus rapidement les ressources requises. Le tri des résultats de recherche fonctionne en mode Liste et uniquement lorsque vous sélectionnez **[!UICONTROL [Fichiers](#searchui)]**dans le panneau**[!UICONTROL  Filtres ]**.[!DNL Experience Manager Assets]utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
+Triez les résultats de la recherche pour découvrir plus rapidement les ressources nécessaires. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
 
-En mode Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes — Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date) Créée, (Date) Modifiée, (Date) Publiée, Workflow et Extrait.
+En mode Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date de) création, (Date de) publication, Workflow et Extraits.
 
 Pour connaître les restrictions de la fonctionnalité de tri, voir [Restrictions](#limitations).
 
@@ -445,15 +438,15 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 
 | Erreur, problèmes, symptômes | Raison possible | Correction ou compréhension possible du problème |
 |---|---|---|
-| Résultats incorrects lors de la recherche de fichiers avec des métadonnées manquantes | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Les résultats sont basés sur la propriété de métadonnées indexées. | Une fois les métadonnées mises à jour, la réindexation est nécessaire pour refléter l’état correct des métadonnées des fichiers. Voir [Métadonnées obligatoires](metadata-schemas.md#define-mandatory-metadata). |
-| Trop de résultats de recherche | Paramètre de recherche étendu. | Envisagez de limiter la [portée de la recherche](#scope). L’utilisation de balises actives peut vous donner plus de résultats de recherche que vous ne le pensiez. Voir Comportement [de la recherche avec des balises](#withsmarttags)actives. |
-| Résultats de recherche sans rapport ou partiellement liés | Le comportement de recherche change avec le balisage intelligent. | Comprenez [comment la recherche change après un balisage](#withsmarttags)intelligent. |
-| Aucune suggestion de saisie semi-automatique pour les ressources | Les actifs nouvellement transférés ne sont pas encore indexés. Les métadonnées ne sont pas immédiatement disponibles en tant que suggestions lorsque vous début taper un mot-clé de recherche dans la barre de recherche d&#39;Omniture. | [!DNL Assets] attend jusqu’à l’expiration d’un délai d’attente (par défaut, une heure) avant d’effectuer une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources chargées/mises à jour dernièrement et de les ajouter à la liste de suggestions. |
-| Aucun résultat de recherche | <ul><li>Il n’existe aucune ressource correspondant à votre requête.</li><li>Vous avez ajouté un espace avant la requête de recherche.</li><li>Un champ de métadonnées non pris en charge contient le mot-clé que vous recherchez.</li><li>L’heure d’activation et de désactivation est configurée pour la ressource et la recherche a été effectuée pendant l’heure de désactivation de la ressource.</li></ul> | <ul><li>Recherche à l’aide d’un autre mot-clé. Vous pouvez également utiliser le balisage (intelligent) pour améliorer les résultats de la recherche.</li><li>C’est une [limitation connue](#limitations).</li><li>Les champs de métadonnées ne sont pas tous pris en compte pour les recherches. Voir [Portée](#scope).</li><li>Recherchez les ressources requises par la suite ou modifiez leur heure d’activation et de désactivation.</li></ul> |
-| Le filtre/prédicat de recherche n&#39;est pas disponible | <ul><li>Le filtre de recherche n&#39;est pas configuré.</li><li>Il n&#39;est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contactez l’administrateur pour vérifier si les personnalisations de la recherche sont disponibles ou non.</li><li>Contactez l’administrateur pour vérifier si votre compte dispose des privilèges/autorisations nécessaires pour utiliser la personnalisation.</li><li>Contactez l’administrateur et vérifiez les personnalisations disponibles pour le [!DNL Assets] déploiement que vous utilisez.</li></ul> |
-| Lors de la recherche d’images visuellement similaires, il manque une image attendue. | <ul><li>L&#39;image n&#39;est pas disponible dans [!DNL Experience Manager].</li><li>L&#39;image n&#39;est pas indexée. En règle générale, lorsqu’il est récemment téléchargé.</li><li>L’image n’est pas balisée de manière intelligente.</li></ul> | <ul><li>Ajoutez l&#39;image à [!DNL Assets].</li><li>Contactez votre administrateur pour réindexer le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur pour baliser intelligemment les ressources appropriées.</li></ul> |
+| Résultats incorrects lors de la recherche de fichiers avec des métadonnées manquantes. | When searching for assets that are missing the mandatory metadata, [!DNL Experience Manager] may display some assets that have valid metadata. Les résultats sont basés sur la propriété de métadonnées indexées. | Une fois les métadonnées mises à jour, la réindexation est nécessaire pour refléter l’état correct des métadonnées des fichiers. Voir [Métadonnées obligatoires](metadata-schemas.md#define-mandatory-metadata). |
+| Trop de résultats de recherche. | Paramètre de recherche étendu. | Envisagez de limiter la [portée de la recherche](#scope). L’utilisation de balises actives peut vous donner plus de résultats de recherche que vous ne le pensiez. Voir Comportement [de la recherche avec des balises](#withsmarttags)actives. |
+| Résultats de recherche sans rapport ou partiellement liés. | Le comportement de recherche change avec le balisage intelligent. | Comprenez [comment la recherche change après un balisage](#withsmarttags)intelligent. |
+| Aucune suggestion de saisie semi-automatique pour les ressources. | Les actifs nouvellement transférés ne sont pas encore indexés. Les métadonnées ne sont pas immédiatement disponibles en tant que suggestions lorsque vous début taper un mot-clé de recherche dans la barre de recherche d&#39;Omniture. | [!DNL Assets] attend jusqu’à l’expiration d’un délai d’attente (par défaut, une heure) avant d’effectuer une tâche en arrière-plan afin d’indexer les métadonnées pour toutes les ressources chargées/mises à jour dernièrement et de les ajouter à la liste de suggestions. |
+| Aucun résultat de recherche. | <ul><li>Les ressources correspondant à votre requête n&#39;existent pas. </li><li> Espace blanc ajouté avant la requête de recherche. </li><li> Le champ de métadonnées non pris en charge contient le mot-clé que vous avez recherché.</li><li> Recherche effectuée pendant les heures d’arrêt d’une ressource. </li></ul> | <ul><li>Recherche à l’aide d’un autre mot-clé. Vous pouvez également utiliser le balisage intelligent ou la recherche par analogie pour améliorer les résultats de la recherche. </li><li>[Limite](#limitations)connue.</li><li>Tous les champs de métadonnées ne sont pas pris en compte pour les recherches. Voir [Portée](#scope).</li><li>Effectuez une recherche ultérieurement ou modifiez les ressources à l’heure et les heures d’arrêt pour les ressources requises.</li></ul> |
+| Aucun filtre de recherche ou prédicat n&#39;est disponible. | <ul><li>Le filtre de recherche n&#39;est pas configuré.</li><li>Il n&#39;est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contactez l’administrateur pour vérifier si les personnalisations de la recherche sont disponibles ou non.</li><li>Contactez l’administrateur pour vérifier si votre compte dispose des privilèges/autorisations nécessaires pour utiliser la personnalisation.</li><li>Contactez l’administrateur et vérifiez les personnalisations disponibles pour le [!DNL Assets] déploiement que vous utilisez.</li></ul> |
+| Lors de la recherche d’images visuellement similaires, une image attendue est manquante. | <ul><li>L&#39;image n&#39;est pas disponible dans [!DNL Experience Manager].</li><li>L&#39;image n&#39;est pas indexée. En règle générale, lorsqu’il est récemment téléchargé.</li><li>L’image n’est pas balisée de manière intelligente.</li></ul> | <ul><li>Ajoutez l&#39;image à [!DNL Assets].</li><li>Contactez votre administrateur pour réindexer le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur pour baliser intelligemment les ressources appropriées.</li></ul> |
 | Lors de la recherche d’images visuellement similaires, une image non pertinente s’affiche. | Comportement de recherche visuelle. | [!DNL Experience Manager] affiche autant de ressources potentiellement pertinentes que possible. Les images moins pertinentes, le cas échéant, sont ajoutées aux résultats, mais avec un classement inférieur dans les résultats de recherche. La qualité des correspondances et la pertinence des ressources recherchées diminuent à mesure que vous descendez dans les résultats de la recherche. |
-| Lors de la sélection et de l’exploitation des résultats de la recherche, toutes les ressources recherchées ne sont pas exploitées sur | L&#39;option [!UICONTROL Sélectionner tout] sélectionne uniquement les 100 premiers résultats de recherche dans la vue de cartes et les 200 premiers résultats de recherche dans la vue de listes. |  |
+| Lors de la sélection et du fonctionnement des résultats de la recherche, tous les fichiers recherchés ne sont pas exploités. | L&#39;option [!UICONTROL Sélectionner tout] sélectionne uniquement les 100 premiers résultats de recherche dans la vue de cartes et les 200 premiers résultats de recherche dans la vue de listes. |  |
 
 >[!MORELIKETHIS]
 >
