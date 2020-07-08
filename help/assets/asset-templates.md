@@ -3,7 +3,7 @@ title: Modèles de ressources dans [!DNL Adobe Experience Manager Assets].
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 33%
@@ -79,6 +79,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
    * From the Templates page, navigate to a folder where you created the collateral, and click the [!UICONTROL Edit] quick action on the thumbnail of a collateral.
    * In the asset page for the collateral, click **[!UICONTROL Edit]** from the toolbar.
    * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    L’outil de recherche de ressources et l’éditeur de texte sont affichés à gauche de la page. L’éditeur de texte s’ouvre par défaut.
@@ -95,7 +96,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] instance is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Pour plus d’informations, reportez-vous à la page [Intégration de ressources de Experience Manager avec InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Pour plus d’informations, reportez-vous à la page [Intégration de ressources de Experience Manager avec InDesign Server](/help/assets/indesign.md).
 
 1. Pour modifier le texte d’un champ modifiable, cliquez sur le champ de texte à partir de la liste des champs modifiables et modifiez le texte du champ.
 
@@ -135,11 +136,13 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
    >
    >* Images are not embedded in the underlying [!DNL InDesign] template.
    >* Les images sont liées à partir du système de fichiers local.
+
    >
    >To enable [!DNL Experience Manager] to resolve images, do the following:
    >
    >* Embed images while creating [!DNL InDesign] templates (See [About links and embedded graphics](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
    >* Mount [!DNL Experience Manager] to your local file system, and then map missing icons with existing assets in [!DNL Experience Manager].
+
    >
    >For more information around working with [!DNL InDesign] documents, see [best practices to work with InDesign documents in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
