@@ -3,7 +3,7 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 75%
@@ -27,7 +27,7 @@ Une fois une balise entraînée et prête, le service peut appliquer ces balises
 
 En arrière-plan, Smart Content Service utilise la structure de l’IA Adobe Sensei pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Smart Content Service est un service cloud hébergé sur les E/S Adobe. Pour l&#39;utiliser dans l&#39;Adobe Experience Manager, l&#39;administrateur système doit intégrer votre instance de Experience Manager avec les E/S Adobe.
+Smart Content Service est un service cloud hébergé sur les E/S Adobe. Pour l&#39;utiliser dans l&#39;Adobe Experience Manager, l&#39;administrateur système doit intégrer votre déploiement Experience Manager avec les E/S Adobe.
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
