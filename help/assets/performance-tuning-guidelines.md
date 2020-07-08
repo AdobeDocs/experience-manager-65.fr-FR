@@ -4,7 +4,7 @@ description: Suggestions et conseils [!DNL Experience Manager] sur la configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '2767'
 ht-degree: 54%
@@ -128,7 +128,7 @@ Primarily, your network optimization strategy depends upon the amount of bandwid
 
 Wherever possible, set the [!UICONTROL DAM Update Asset] workflow to Transient. Le paramètre réduit considérablement les surcharges nécessaires pour traiter les workflows car, dans ce cas, ils n’ont pas besoin de faire l’objet d’un suivi et de processus d’archivage classiques.
 
-1. Accédez à `/miscadmin` l’instance [!DNLEExperience Manager] à `https://[aem_server]:[port]/miscadmin`.
+1. Accédez à `/miscadmin` dans le déploiement [!DNLEd’Experience Manager] à `https://[aem_server]:[port]/miscadmin`.
 
 1. Développez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]** > **[!UICONTROL dam.]**
 
@@ -285,11 +285,11 @@ Pour tous les problèmes liés aux performances du réseau du client, effectuez 
 * En utilisant un outil localisateur de réseau
 * Tester par rapport au Dispatcher
 
-### [!DNL Experience Manager] test d’instance {#aem-instance-testing}
+### [!DNL Experience Manager] test de déploiement {#aem-deployment-testing}
 
-To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] instance regularly. En particulier :
+To minimize latency and achieve high throughput through efficient CPU utilization and load-sharing, monitor the performance of your [!DNL Experience Manager] deployment regularly. En particulier :
 
-* Run load tests against the [!DNL Experience Manager] instance.
+* Exécutez des tests de charge par rapport au [!DNL Experience Manager] déploiement.
 * Surveiller les performances de chargement et la réactivité de l’interface utilisateur.
 
 ## [!DNL Experience Manager Assets] liste de contrôle des performances et impact des tâches de gestion des actifs {#checklist}
