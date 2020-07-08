@@ -3,7 +3,7 @@ title: Flux d’activité dans la chronologie
 description: Cet article décrit comment afficher les journaux d’activité pour les ressources de la chronologie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 73%
@@ -13,14 +13,14 @@ ht-degree: 73%
 
 # Flux d’activité dans la chronologie {#activity-stream-in-timeline}
 
-Cette fonctionnalité affiche les journaux d’activités correspondant aux ressources de la chronologie. Si vous effectuez l’une des opérations suivantes liées aux ressources dans Adobe Experience Manager Assets, la fonction de flux d’activités met à jour la chronologie pour refléter l’activité.
+Cette fonctionnalité affiche les journaux d’activités correspondant aux ressources de la chronologie. Si vous effectuez l’une des opérations suivantes liées aux ressources dans les ressources d’Adobe Experience Manager, la fonction de flux d’activité met à jour la chronologie pour refléter l’activité.
 
 Les opérations suivantes sont consignées dans le flux d’activités :
 
 * Créer
 * Supprimer
 * Téléchargement (rendus compris)
-* Publier
+* Publication 
 * Annuler la publication
 * Approuver
 * Refuser
