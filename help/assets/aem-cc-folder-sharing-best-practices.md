@@ -3,10 +3,10 @@ title: Adobe Experience Manager vers le dossier Adobe Creative Cloud pour le par
 description: Configurez l’Adobe Experience Manager pour permettre aux utilisateurs des ressources Experience Manager d’échanger des dossiers avec les utilisateurs Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 26%
+ht-degree: 21%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 26%
 >
 >La fonction de partage de dossiers Experience Manager à Creative Cloud est obsolète. Adobe recommande vivement l’utilisation de fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou l’application [de bureau](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
-L’Adobe Experience Manager peut être configuré pour permettre aux utilisateurs des ressources de partager des dossiers avec les utilisateurs des applications Adobe Creative Cloud. Ils sont donc disponibles sous forme de dossiers partagés dans le service Adobe Creative Cloud Assets. La fonction peut être utilisée pour échanger des fichiers entre les équipes créatives et les utilisateurs  Assets, surtout si les créatifs n’ont pas accès à l’instance  Assets (ils ne se trouvent pas sur le réseau de l’entreprise).
+L’Adobe Experience Manager peut être configuré pour permettre aux utilisateurs des ressources de partager des dossiers avec les utilisateurs des applications Adobe Creative Cloud. Ils sont donc disponibles sous forme de dossiers partagés dans le service Adobe Creative Cloud Assets. Cette fonction peut être utilisée pour échanger des fichiers entre les équipes de création et les utilisateurs du module Ressources, en particulier lorsque les utilisateurs du module Ressources n’ont pas accès au déploiement du module Ressources (ils ne se trouvent pas sur le réseau de l’entreprise).
 
 Ce type d’intégration peut être utilisé dans les deux cas d’utilisation, en particulier lorsque vous travaillez avec des utilisateurs qui n’ont pas d’accès direct à  Assets :
 
@@ -39,7 +39,7 @@ Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 L’intégration comprend les éléments suivants :
 
 * **Experience Manager Assets server** déployé dans le réseau d’entreprise (services gérés ou sur site) : Le partage de dossiers est initié ici.
-* **Adobe Marketing Cloud Assets core service**: agit en tant qu’intermédiaire entre les services de Experience Manager et d’enregistrement Creative Cloud. L’administrateur de l’entreprise qui utilise l’intégration se doit d’établir des relations de confiance entre l’organisation Marketing Cloud et l’instance  Assets. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that Assets users can share folders too for additional security.
+* **Adobe Marketing Cloud Assets core service**: agit en tant qu’intermédiaire entre les services de Experience Manager et d’enregistrement Creative Cloud. L’administrateur de la société utilisant l’intégration doit établir une relation de confiance entre l’organisation Marketing Cloud et le déploiement des ressources. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that Assets users can share folders too for additional security.
 
 * **Services** Web Creative Cloud Assets (interface utilisateur Web des fichiers enregistrement et Creative Cloud) : C’est là que des utilisateurs spécifiques de l’application Creative Cloud, avec lesquels un dossier Ressources a été partagé, peuvent accepter l’invitation et voir le dossier dans leur enregistrement de compte Creative Cloud.
 * **Application** de bureau Creative Cloud : (Facultatif) Permet un accès direct aux dossiers/fichiers partagés depuis le bureau de l’utilisateur créatif via la synchronisation avec l’enregistrement Ressources Creative Cloud.
