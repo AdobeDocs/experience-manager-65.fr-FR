@@ -1,9 +1,9 @@
 ---
 title: Considérations et exigences relatives au réseau de ressources
-description: Présente les considérations relatives au réseau lors de la conception d’un déploiement Adobe Experience Manager Assets.
+description: Traite des considérations relatives au réseau lors de la conception d’un déploiement de ressources d’Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 73%
@@ -13,16 +13,16 @@ ht-degree: 73%
 
 # Considérations sur le réseau d’Assets {#assets-network-considerations}
 
-Il est tout aussi important de comprendre votre réseau que de comprendre les ressources d’Adobe Experience Manager. Le réseau peut affecter les chargements, les téléchargements et l’expérience utilisateur. La création d’un diagramme de la topologie du réseau vous permet d’identifier les goulots d’étranglement et les zones sous-optimisées du réseau que vous devez optimiser pour améliorer les performances du réseau et l’expérience de l’utilisateur.
+Comprendre votre réseau est aussi important que comprendre les ressources d&#39;Adobe Experience Manager. Le réseau peut affecter les chargements, les téléchargements et l’expérience utilisateur. La création d’un diagramme de la topologie du réseau vous permet d’identifier les goulots d’étranglement et les zones sous-optimisées du réseau que vous devez optimiser pour améliorer les performances du réseau et l’expérience de l’utilisateur.
 
 Veillez à inclure les éléments suivants dans votre diagramme de réseau :
 
-* La connectivité du périphérique client (par exemple, l’ordinateur, le mobile ou la tablette) au réseau
-* La topologie du réseau d’entreprise
-* Lien d’accès à Internet à partir du réseau d’entreprise et de l’environnement Experience Manager
-* Topologie de l’environnement Experience Manager
-* Définition des utilisateurs simultanés de l’interface réseau d’Experience Manager
-* workflows définis de l’instance Experience Manager
+* La connectivité du périphérique client (par exemple, l’ordinateur, le mobile ou la tablette) au réseau.
+* La topologie du réseau d’entreprise.
+* Connectez-vous à Internet à partir du réseau d&#39;entreprise et de l&#39;environnement Experience Manager.
+* Topologie de l&#39;environnement Experience Manager.
+* Définir les consommateurs simultanés de l&#39;interface réseau Experience Manager.
+* workflows définis du déploiement du Experience Manager.
 
 ## Connectivité de l’appareil client au réseau d’entreprise {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -52,7 +52,7 @@ Le diagramme présente des vitesses de liaison plus élevées au sein du réseau
 
 Il est important de prendre en compte les facteurs inconnus de la connexion Internet et VPC, car la bande passante sur Internet peut être restreinte par des pics de chargement ou des pannes de fournisseur à grande échelle. En général, une connexion Internet est fiable. Toutefois, cela peut parfois entraîner la création de goulots d’étranglement.
 
-Au niveau de la liaison du réseau d’entreprise à Internet, il peut exister d’autres services utilisant la bande passante. Il est important de connaître la quantité de bande passante pouvant être dédiée ou donnée en priorité à Assets. Par exemple, si un lien 1 Gbit/s est déjà utilisé à 80 %, vous ne pouvez allouer qu’un maximum de 20 % de la bande passante pour les ressources d’Experience Manager.
+Au niveau de la liaison du réseau d’entreprise à Internet, il peut exister d’autres services utilisant la bande passante. Il est important de connaître la quantité de bande passante pouvant être dédiée ou donnée en priorité à Assets. Par exemple, si un lien 1 Gbit/s est déjà utilisé à 80 %, vous ne pouvez allouer qu’un maximum de 20 % de la bande passante pour les ressources du Experience Manager.
 
 Les pare-feu et les proxys de l’entreprise peuvent également influencer la bande passante de différentes manières. Ce type de périphérique peut prioriser la qualité du service de la bande passante, définir la bande passante maximale par utilisateur ou les limites de débit par hôte. Il est important d’analyser ces goulots d’étranglement, car ils peuvent avoir un impact significatif sur l’expérience utilisateur d’Assets.
 
@@ -62,21 +62,21 @@ Il s&#39;agit du plus petit point d&#39;étranglement orienté client. Cependant
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
-## Topologie de l’environnement Experience Manager {#topology-of-the-aem-environment}
+## Topologie de l&#39;environnement Experience Manager {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-La conception de la topologie de l’environnement Experience Manager nécessite une connaissance approfondie de la configuration du système et de la manière dont le réseau est connecté dans l’environnement utilisateur.
+La conception de la topologie de l&#39;environnement Experience Manager nécessite une connaissance approfondie de la configuration du système et de la manière dont le réseau est connecté dans l&#39;environnement utilisateur.
 
-L’exemple de scénario comprend une batterie de publication dotée de cinq serveurs, une banque de données binaires S3 et un Contenu multimédia dynamique.
+L’exemple de scénario inclut une batterie de publication dotée de cinq serveurs, une banque binaire S3 et Dynamic Media configurée.
 
-Le répartiteur partage sa connexion à 100 Mbit/s avec deux entités, l’univers extérieur et l’instance Experience Manager. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
+Le répartiteur partage sa connexion à 100 Mbit/s avec deux entités, le monde extérieur et le déploiement Experience Manager. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
 
-L’instance Experience Manager partage sa connexion 1 Gbit/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
+Le déploiement Experience Manager partage sa connexion 1Gbit/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
 
-En examinant le réseau du périphérique client vers l’instance Experience Manager, le plus petit point d’étranglement semble être la limitation du pare-feu d’entreprise de 10 Mbit. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
+En examinant le réseau depuis le périphérique client jusqu’au déploiement Experience Manager, le plus petit point d’étranglement semble être la limitation du pare-feu d’entreprise de 10 Mbit. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
 
-## workflows définis de l’instance Experience Manager {#defined-workflows-of-the-aem-instance}
+## workflows définis du déploiement Experience Manager {#defined-workflows-of-the-aem-deployment}
 
 En tenant compte des performances du réseau, il peut être important de prendre en considération les workflows et la publication qui auront lieu dans le système. De plus, S3 ou tout autre stockage en réseau que vous utilisez, ainsi que les requêtes E/S consomment de la bande passante du réseau. Par conséquent, même dans un réseau entièrement optimisé, la performance peut être limitée par les E/S du disque.
 
