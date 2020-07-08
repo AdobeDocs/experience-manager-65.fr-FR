@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] Intégrer [!DNL Adobe InDesign S
 description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1559'
 ht-degree: 38%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 38%
 * Le programme de traitement du proxy définit et gère une tâche spécifique.
 These can cover a wide variety of tasks; for example, using an [!DNL InDesign Server] to process files.
 
-To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instance(s) in a cloud configuration.
+To fully upload files to [!DNL Experience Manager Assets] that you have created with [!DNL Adobe InDesign] a proxy is used. This uses a proxy worker to communicate with the [!DNL Adobe InDesign Server], where [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) are run to extract metadata and generate various renditions for [!DNL Experience Manager Assets]. The proxy worker enables the two-way communication between the [!DNL InDesign Server] and the [!DNL Experience Manager] instances in a cloud configuration.
 
 >[!NOTE]
 >
@@ -44,7 +44,6 @@ Ce script de commande permet d’effectuer les opérations suivantes :
       * Des rendus PDF et JPG sont générés.
       * Des rendus HTML et IDML sont générés.
    * Post the resulting files back to [!DNL Experience Manager Assets].
-
    >[!NOTE]
    >
    >IDML est un format XML qui effectue le rendu de tout le contenu du [!DNL InDesign] fichier. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. Pour plus d’informations, voir Formats d’échange [InDesign INX et IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
@@ -59,7 +58,7 @@ Ce script de commande permet d’effectuer les opérations suivantes :
    * Le texte et les fichiers extraits sont stockés dans [!DNL Experience Manager Assets].
    * All renditions are stored in [!DNL Experience Manager Assets], in the asset itself.
 
-## Intégration d’ [!DNL InDesign Server] Experience Manager {#integrating-the-indesign-server-with-aem}
+## Intégration de la variable [!DNL InDesign Server] avec le Experience Manager {#integrating-the-indesign-server-with-aem}
 
 To integrate the [!DNL InDesign Server] for use with [!DNL Experience Manager Assets] and after configuring your proxy, you need to:
 
@@ -94,7 +93,7 @@ To install and start the [!DNL InDesign Server] for use with [!DNL Experience Ma
 * [Extraction de médias](#media-extraction)
 * [Extraction de page  ](#page-extraction)
 
-Ce processus est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances d’auteur (il s’agit d’un processus standard, aussi des informations supplémentaires sont disponibles sous [Modifier un processus](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (y compris le port SOAP), aucune configuration n’est nécessaire.
+Ce workflow est configuré avec les valeurs par défaut qui peuvent être adaptées à votre configuration pour diverses instances d’auteur (il s’agit d’un workflow standard, aussi des informations supplémentaires sont disponibles sous [Modifier un workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si vous utilisez les valeurs par défaut (y compris le port SOAP), aucune configuration n’est nécessaire.
 
 After the setup, uploading [!DNL InDesign] files into [!DNL Experience Manager Assets] (by any of the usual methods) triggers the workflow to process the asset and prepare the various renditions. Test your configuration by uploading an INDD file into [!DNL Experience Manager Assets] to confirm that you see the different renditions created by IDS under `<*your_asset*>.indd/Renditions`
 
@@ -209,7 +208,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 >
 >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list.
 >
->By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Si le travailleur est trouvé en ligne, il est retiré de la liste bloquée.
+>By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. Si le programme de traitement est en ligne, il est retiré de la liste bloquée.
 
 ## Activation de la prise en charge de la version [!DNL InDesign Server] 10.0 ou ultérieure {#enabling-support-for-indesign-server-or-later}
 
@@ -225,7 +224,7 @@ For [!DNL InDesign Server] 10.0 or higher, perform the following steps to enable
 
 ## Configure [!DNL Experience Manager] credentials {#configure-aem-credentials}
 
-You can change the default administrator credentials (user name and password) for accessing the [!DNL InDesign Server] from your [!DNL Experience Manager] instance without breaking the integration with the [!DNL InDesign Server].
+You can change the default administrator credentials (user name and password) for accessing the [!DNL InDesign Server] from your [!DNL Experience Manager] deployment without breaking the integration with the [!DNL InDesign Server].
 
 1. Accédez à `/etc/cloudservices/proxy.html`.
 1. Dans la boîte de dialogue, indiquez le nouveau nom d’utilisateur et le nouveau mot de passe.
