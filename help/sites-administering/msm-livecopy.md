@@ -1,16 +1,11 @@
 ---
 title: Création et synchronisation de Live Copies
-seo-title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies.
-seo-description: Découvrez comment créer et synchroniser des Live Copies.
-uuid: f6f410d4-8c72-48b7-a217-afd6076b512d
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+workflow-type: tm+mt
+source-wordcount: '4116'
+ht-degree: 83%
 
 ---
 
@@ -77,6 +72,7 @@ Vous pouvez modifier ou supprimer une configuration de plan directeur existante�
 
    * **Propriétés** : vous pouvez utiliser cette option pour afficher puis modifier les propriétés de la configuration.
    * **Supprimer**
+
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Création d’une Live Copy {#creating-a-live-copy}
@@ -121,12 +117,13 @@ Pour créer une Live Copy :
 
    * Le **Titre** de la page.
    * Le **Nom** utilisé dans l’URL.
+
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Utilisez la case **Exclure les sous-pages** :
 
    * Cochée : crée une Live Copy de la page sélectionnée uniquement (Live Copy superficielle)
-   * Non cochée : crée une Live Copy qui comprend tous les descendants de la page sélectionnée (Live Copy profonde)
+   * Non sélectionné : créer une copie dynamique contenant tous les descendants de la page sélectionnée (copie dynamique profonde)
 
 1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, sélectionnez ces configurations dans la liste déroulante **Configurations du déploiement**. Les configurations sélectionnées s’affichent sous le sélecteurdéroulant.
 1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche, dans lequel vous pouvez sélectionner **Ouvrir** ou **Terminé**.
@@ -215,7 +212,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
 >[!NOTE]
 >
->Des conflits peuvent se produire si de nouvelles pages portant le même nom de page sont créées dans la branche blueprint et dans une branche de copie dynamique dépendante.
+>Des conflits peuvent survenir si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche du plan directeur et dans une branche de la copie dynamique dépendante.
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](/help/sites-administering/msm-rollout-conflicts.md).
 
@@ -228,9 +225,19 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. Spécifiez les pages et les sous-pages, puis confirmez en cochant :
+1. Spécifiez les pages et les sous-pages, puis cochez la case :
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
+
+1. Indiquez si la tâche de déploiement doit être exécutée immédiatement (**Maintenant**) ou à une autre date/heure (**ultérieurement**).
+
+   ![Plan de déploiement](assets/rollout-blueprint.png)
+
+Les déploiements sont traités en tant que tâches asynchrones et peuvent être vérifiés dans le tableau de bord [**d&#39;état **des tâches](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+
+>[!NOTE]
+>
+>Le traitement du déploiement asynchrone requiert AEM 6.5.3.0 ou version ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone.
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -244,12 +251,19 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
       Indiquez si la plage est réservée à la page sélectionnée ou si elle doit inclure des sous-pages.
 
-   * **Déploiement d&#39;arrière-plan**:
+   * **Planification** :
 
-      Si de nombreuses pages/sous-pages sont impliquées, vous pouvez exécuter le déploiement en tant que tâche d’arrière-plan.
-   ![chlimage_1-222](assets/chlimage_1-222.png)
+      Indiquez si la tâche de déploiement doit être exécutée immédiatement (**Maintenant**) ou à une date/heure ultérieure (**ultérieurement**).
+
+      ![chlimage_1-222](assets/rollout-live-copy.png)
 
 1. Après avoir défini ces détails, sélectionnez **Déployer** pour exécuter l’opération.
+
+Les déploiements sont traités en tant que tâches asynchrones et peuvent être vérifiés dans le tableau de bord [**d&#39;état **des tâches](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+
+>[!NOTE]
+>
+>Le traitement du déploiement asynchrone requiert AEM 6.5.3.0 ou version ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone, sauf si l’option de déploiement **en** arrière-plan était cochée.
 
 #### Déploiement d’un plan directeur de l’aperçu de la Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -257,9 +271,19 @@ L’[action Déployer est également disponible dans l’aperçu de la Live Copy
 
 1. Ouvrez l’[aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) et sélectionnez une page Plan directeur.
 1. Sélectionnez **Déployer** dans la barre d’outils.
-1. Spécifiez les pages et les sous-pages, puis confirmez en cochant :
+1. Spécifiez les pages et les sous-pages, puis cochez la case :
 
    ![chlimage_1-223](assets/chlimage_1-223.png)
+
+1. Indiquez si la tâche de déploiement doit être exécutée immédiatement (**Maintenant**) ou à une autre date/heure (**ultérieurement**).
+
+   ![Plan de déploiement](assets/rollout-blueprint.png)
+
+Les déploiements sont traités en tant que tâches asynchrones et peuvent être vérifiés dans le tableau de bord [**d&#39;état **des tâches](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+
+>[!NOTE]
+>
+>Le traitement du déploiement asynchrone requiert AEM 6.5.3.0 ou version ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone.
 
 ### Synchronisation d’une Live Copy {#synchronizing-a-live-copy}
 
@@ -291,13 +315,14 @@ L’[action Synchroniser est également disponible dans l’aperçu de la Live C
 
    * **Page et sous-pages**
    * **Page seulement**
+
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 ## Modification du contenu de Live Copy {#changing-live-copy-content}
 
 Pour modifier le contenu de Live Copy, vous pouvez :
 
-* Ajouter des paragraphes à la page.
+* Ajoutez des paragraphes sur la page.
 * Mettre le contenu existant à jour en rompant l’héritage de Live Copy pour une page ou un composant.
 
 >[!NOTE]
@@ -308,14 +333,14 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 
 >[!NOTE]
 >
->Des conflits peuvent se produire si de nouvelles pages portant le même nom de page sont créées dans la branche blueprint et dans une branche de copie dynamique dépendante.
+>Des conflits peuvent survenir si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche du plan directeur et dans une branche de la copie dynamique dépendante.
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](/help/sites-administering/msm-rollout-conflicts.md).
 
 
 ### Ajout de composants à une page Live Copy {#adding-components-to-a-live-copy-page}
 
-Vous pouvez ajouter des composants à une page Live Copy à tout moment. L’état d’héritage de la copie dynamique et de son système de paragraphe ne contrôle pas votre capacité à ajouter des composants.
+Vous pouvez ajouter des composants à une page Live Copy à tout moment. L’état d’héritage de la copie dynamique et de son système de paragraphes ne contrôle pas votre capacité à ajouter des composants.
 
 Lorsque la page Live Copy est synchronisée avec la page source, les composants ajoutés demeurent inchangés. Voir également [Modification de l’ordre des composants sur une page Live Copy](#changing-the-order-of-components-on-a-live-copy-page).
 
@@ -337,7 +362,7 @@ Vous pouvez suspendre l’héritage de Live Copy d’une page Live Copy afin de 
 
 Pour suspendre l’héritage sur une page :
 
-1. Ouvrez les propriétés de la page Live Copy à l’aide de la commande **Afficher les propriétés** de la console **Sites** ou des **Informations sur la page** de la barre d’outils de la page.
+1. Ouvrez les propriétés de la page Live Copy à l’aide de la commande **Afficher les propriétés** de la console **Sites** ou à l’aide des **Informations sur la page** de la barre d’outils de la page.
 1. Cliquez ou appuyez sur l’onglet **Live Copy**.
 1. Sélectionnez **Suspendre** dans la barre d’outils. Vous pouvez ensuite sélectionner, au choix :
 
@@ -356,9 +381,10 @@ L’[action Suspendre est également disponible dans l’aperçu de la Live Copy
 
    * **Suspendre**
    * **Suspendre avec enfants**
+
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Confirm the **Suspend** action in the **Suspend Live Copy **dialog:
+1. Confirm the **Suspend** action in the **Suspend Live Copy** dialog:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -392,7 +418,7 @@ L’[action Reprendre est également disponible dans l’aperçu de la Live Copy
 
 1. Ouvrez l’[aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) et sélectionnez une page Live Copy ayant été suspendue ; celle-ci s’affiche avec le statut **HÉRITAGE ANNULÉ**.
 1. Sélectionnez **Reprendre** dans la barre d’outils.
-1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy **dialog.
+1. Indicate whether you want to synchronize the page after reverting inheritance, then confirm the **Resume** action in the **Resume Live Copy** dialog.
 
 ### Changement de la profondeur d’héritage (superficielle/profonde) {#changing-inheritance-depth-shallow-deep}
 
@@ -403,8 +429,8 @@ Sur une Live Copy existante, vous pouvez changer la profondeur d’une page, à 
    * Prend immédiatement effet et est irréversible.
 
       * Les pages enfants sont explicitement désolidarisées de la Live Copy. Les autres modifications des pages enfants ne peuvent pas être préservées si elles sont annulées.
-   * Will remove any descendant `LiveRelationships` even if there are nested `LiveCopies`.
 
+      * Will remove any descendant `LiveRelationships` even if there are nested `LiveCopies`.
 
 * Le passage à une Live Copy profonde :
 
@@ -423,6 +449,7 @@ Pour spécifier ou changer la profondeur :
 
    * Cochée - une Live Copy profonde (les pages enfants sont incluses)
    * Décochée - une Live Copy superficielle (les pages enfants sont exclues)
+
    >[!CAUTION]
    >
    >Le passage à une Live Copy superficielle a un effet immédiat et est irréversible.
@@ -447,7 +474,7 @@ Annulez l’héritage pour modifier le contenu du composant ou supprimer le comp
 
 1. Sur la barre d’outils du composant, appuyez ou cliquez sur l’icône **Annuler l’héritage**.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Image](do-not-localize/chlimage_1-8.png)
 
 1. Dans la boîte de dialogue Annuler l’héritage, confirmez l’action en cliquant sur **Oui**.
 
@@ -455,9 +482,9 @@ Annulez l’héritage pour modifier le contenu du composant ou supprimer le comp
 
 ### Réactivation de l’héritage pour un composant {#re-enabling-inheritance-for-a-component}
 
-Pour activer l’héritage pour un composant, appuyez ou cliquez sur **Réactiver l’héritage** dans la barre d’outils du composant.
+To enable inheritance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
 
-![](do-not-localize/chlimage_1-9.png)
+![image](do-not-localize/chlimage_1-9.png)
 
 ### Modification de l’ordre des composants sur une page Live Copy {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -471,7 +498,7 @@ Si une Live Copy contient des composants faisant partie d’un système de parag
 >
 >Lors de la restauration d’un héritage annulé sur un système de paragraphes, l’ordre des composants **n’est pas automatiquement restauré** à partir du plan directeur. Vous pouvez demander manuellement une synchronisation si nécessaire.
 
-Utilisez la procédure suivante pour annuler l’héritage du système de paragraphes.
+Suivez la procédure suivante pour annuler l’héritage du système de paragraphes.
 
 1. Ouvrez la page Live Copy.
 1. Faites glisser un composant existant vers un nouvel emplacement sur la page.
@@ -493,20 +520,20 @@ Vous pourrez par la suite réactiver l’héritage pour une propriété, si néc
 
 >[!NOTE]
 >
->Lorsque vous réactivez l’héritage, la propriété de la page Live Copy n’est pas automatiquement synchronisée avec la propriété source. Vous pouvez demander manuellement une synchronisation si nécessaire.
+>Lorsque vous réactivez l’héritage, la propriété de la page Live Copy n’est pas automatiquement synchronisée avec la propriété source. Vous pouvez demander manuellement une synchronisation si cela est nécessaire.
 
-1. Ouvrez les propriétés de la page Live Copy à l’aide de l’option **Afficher les propriétés** de la console **Sites** ou de l’icône **Informations sur la page** de la barre d’outils de la page.
+1. Open the properties of the live copy page using either the **View Properties** option of the **Sites** console or **Page Information** icon on the page toolbar.
 1. Pour annuler l’héritage d’une propriété, appuyez ou cliquez sur l’icône de lien qui s’affiche à droite de la propriété.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![image](do-not-localize/chlimage_1-10.png)
 
 1. Dans la boîte de dialogue de confirmation **Annuler l’héritage**, cliquez ou appuyez sur **Oui**.
 
 ### Rétablissement des propriétés d’une page de la Live Copy {#revert-properties-of-a-live-copy-page}
 
-Pour activer l’héritage d’une propriété, appuyez ou cliquez sur l’icône **Inverser l’héritage** qui apparaît en regard de la propriété.
+To enable inheritance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
 
-![](do-not-localize/chlimage_1-11.png)
+![image](do-not-localize/chlimage_1-11.png)
 
 ### Réinitialisation d’une page Live Copy {#resetting-a-live-copy-page}
 
@@ -545,12 +572,13 @@ To track the changes you have made, you can view the blueprint page in **Referen
 1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)**et sélectionnez :
 
    * **Plan directeur** (lorsqu’une page de copie dynamique est sélectionnée)
-   * **Live Copies** (lorsqu’une page de plan directeur est sélectionnée)
+   * **Copies** en direct (lorsqu’une page de plan directeur est sélectionnée)
 
 1. Sélectionnez votre Live Copy, puis choisissez entre :
 
    * **Comparer au plan directeur** (lorsqu’une page Live Copy est sélectionnée)
    * **Comparer à Live Copy** (lorsqu’une page de plan directeur est sélectionnée)
+
    Par exemple :
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
@@ -583,12 +611,14 @@ Il existe des implications liées à l’endroit dans l’arborescence où vous 
 
    * les relations en direct sont supprimées pour cette sous-page (ou branche)
    * et les sous-pages ou pages dans la branche Live Copy sont traitées comme si elles avaient été créées manuellement.
+
    *Toutefois*, les sous-pages étant encore soumises aux relations en direct de la branche parent, un autre déploiement de la ou des pages de plan directeur aura à la fois pour effet :
 
    1. De renommer les pages désolidarisées :
 
       * En effet, MSM les considère comme des pages créées manuellement provoquant un conflit, car portant le même nom que les pages Live Copy qu’il tente de créer.
    1. De créer une nouvelle page (Live Copy) avec le nom d’origine et contenant les modifications du déploiement.
+
    >[!NOTE]
    >
    >Voir [Conflits de déploiement MSM](/help/sites-administering/msm-rollout-conflicts.md) pour obtenir des détails sur ces situations.
@@ -614,4 +644,3 @@ L’[action Désolidariser est également disponible dans l’aperçu de la Live
 1. Confirm the **Detach** action in the **Detach Live Copy** dialog:
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
