@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 54%
@@ -32,8 +32,8 @@ ht-degree: 54%
    + [Ressources connectées avec des AEM Sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
-   + [Configuration de Dynamic Media](administering-dynamic-media.md)
-   + [Utilisation de Dynamic Media](dynamic-media.md)
+   + [Configuration de Dynamic Media](administering-dynamic-media.md)
+   + [Utilisation de Dynamic Media](dynamic-media.md)
    + [Configuration de Dynamic Media – mode Scene7](config-dms7.md)
    + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
    + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
@@ -151,7 +151,7 @@ ht-degree: 54%
    + [Création de projets de traduction](translation-projects.md)
    + [Préparation des ressources pour la traduction](preparing-assets-for-translation.md)
    + [Téléchargement de ressources à partir d’AEM](download-assets-from-aem.md)
-   + [Opérations asynchrones](asynchronous-jobs.md)
+   + [Opérations asynchrones](/help/sites-administering/asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
    + [Activation des informations sur les ressources via le lancement d’Adobe](touch-ui-using-dtm-for-asset-insights.md)
