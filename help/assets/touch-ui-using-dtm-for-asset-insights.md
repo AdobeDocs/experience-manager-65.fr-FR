@@ -3,7 +3,7 @@ title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 41%
@@ -24,7 +24,7 @@ Bien que vous puissiez personnaliser votre code de suivi pour permettre aux solu
 Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressources grâce à DTM.
 
 1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Configuration de l’instance de Experience Manager avec le Cloud Service de gestion dynamique des balises](/help/sites-administering/dtm.md)
+1. [Configuration du déploiement des Experience Manager avec le Cloud Service de gestion dynamique des balises](/help/sites-administering/dtm.md)
 
    The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** in the user Profile. Cette étape n’est pas requise du point de vue des statistiques sur les ressources, car l’intégration de sites Experience Manager avec les statistiques sur les ressources est toujours en cours d’élaboration.
 
@@ -34,6 +34,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
    * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
    * Update the fields as appropriate, and click **[!UICONTROL Create Property]**. See [documentation](https://helpx.adobe.com/fr/experience-manager/using/dtm.html).
+
    ![Créer une propriété web d’édition](assets/Create-edit-web-property.png)
 
 1. In the **[!UICONTROL Rules]** tab, select **[!UICONTROL Page Load Rules]** from the navigation pane and click **[!UICONTROL Create New Rule]**.
