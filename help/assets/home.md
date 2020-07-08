@@ -4,7 +4,7 @@ seo-title: Guide de l’utilisateur de l’Adobe Experience Manager 6.5 Assets
 description: Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 seo-description: Couvre toutes les tâches de ressources du Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 17%
@@ -35,7 +35,7 @@ Ce guide porte sur toutes les tâches de ressources Experience Manager, telles q
 | [Guide de création d’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création en Experience Manager dans l’interface utilisateur classique. |
 | [Guide de l’utilisateur des écrans](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution de signalisation numérique pour publier des expériences numériques dynamiques et interactives. |
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base du Experience Manager. |
-| [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer votre instance de Experience Manager. |
+| [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment élaborer votre déploiement de Experience Manager. |
 | [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer un projet Experience Manager avec succès. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
