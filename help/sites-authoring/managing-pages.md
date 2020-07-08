@@ -1,25 +1,16 @@
 ---
 title: Création et organisation des pages
-seo-title: Création et organisation des pages
 description: Comment créer et gérer des pages avec AEM
-seo-description: Comment créer et gérer des pages avec AEM
-uuid: d2989c42-b500-4256-b779-9667a380b885
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
-docset: aem65
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
 workflow-type: tm+mt
-source-wordcount: '2334'
-ht-degree: 94%
+source-wordcount: '2523'
+ht-degree: 86%
 
 ---
 
 
-# Création et organisation des pages{#creating-and-organizing-pages}
+# Création et organisation des pages {#creating-and-organizing-pages}
 
 Cette section décrit comment créer et gérer des pages avec Adobe Experience Manager (AEM) pour pouvoir ensuite [créer du contenu](/help/sites-authoring/editing-content.md) dans ces pages.
 
@@ -111,10 +102,10 @@ Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais i
 >[!NOTE]
 >
 >Lorsque vous définissez un nom de page, une règle de base à respecter consiste à faire en sorte que le nom de la page reste court, mais aussi significatif que possible pour faciliter la compréhension du lecteur. Consultez le [Guide de style W3C](https://www.w3.org/Provider/Style/TITLE.html) sur l’élément `title` pour obtenir des informations supplémentaires.
-
->N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique de garder les noms de pages courts.
 >
-Lors de la création d’une page, AEM [valide le nom de la page en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+>N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique de garder les noms de pages courts.
+
+When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
 
 Les caractères minimum autorisés sont :
 
@@ -127,11 +118,12 @@ Les caractères minimum autorisés sont :
 Vous trouverez la liste complète et détaillée des caractères autorisés dans les [conventions de dénomination](/help/sites-developing/naming-conventions.md).
 
 >[!NOTE]
-Si AEM est exécuté sur un [déploiement de gestionnaire de persistance MongoMK](/help/sites-deploying/recommended-deploys.md), les noms de page sont limités à 150 caractères.
+>
+>Si AEM est exécuté sur un [déploiement de gestionnaire de persistance MongoMK](/help/sites-deploying/recommended-deploys.md), les noms de page sont limités à 150 caractères.
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom**[ de la page de cette chaîne et valide le nom en fonction des conventions imposées par AEM et JCR. ](/help/sites-developing/naming-conventions.md) A **Title** field containing invalid characters will be accepted, but the name derived will have the invalid characters subsituted. Par exemple :
+Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom**[ de la page de cette chaîne et valide le nom en fonction des conventions imposées par AEM et JCR. ](/help/sites-developing/naming-conventions.md) Un champ **Titre** contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -145,8 +137,10 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM vali
 ![caop-02](assets/caop-02.png)
 
 >[!NOTE]
-Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
-Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-administering/tc-prep.md).
+>
+>Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
+>
+>Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-administering/tc-prep.md).
 
 ### Modèles {#templates}
 
@@ -166,7 +160,8 @@ Utilisé lors de l’attribution du nom de la page.
 Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 >[!NOTE]
-Si cette option est configurée sur votre instance, [les auteurs de modèles peuvent créer des modèles avec l’éditeur de modèles](/help/sites-authoring/templates.md).
+>
+>Si cette option est configurée sur votre instance, [les auteurs de modèles peuvent créer des modèles avec l’éditeur de modèles](/help/sites-authoring/templates.md).
 
 ### Composants {#components}
 
@@ -181,7 +176,8 @@ Components are the elements provided by AEM so that you can add specific types o
 Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants](/help/sites-authoring/editing-content.md#insertinganewparagraph), qui sont disponibles dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#componentbrowser).
 
 >[!NOTE]
-La [console Composants](/help/sites-authoring/default-components-console.md) affiche un aperçu des composants sur votre instance.
+>
+>La [console Composants](/help/sites-authoring/default-components-console.md) affiche un aperçu des composants sur votre instance.
 
 ## Gestion des pages {#managing-pages}
 
@@ -217,11 +213,12 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
    * **Nom** :
 
       * Il est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
-      * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+      * Si vous indiquez un **nom**[ de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR.](/help/sites-developing/naming-conventions.md)
 
       * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsque AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
    >[!NOTE]
-   Voir [Conventions de dénomination des pages](#page-naming-conventions).
+   >
+   >Voir [Conventions de dénomination des pages](#page-naming-conventions).
 
    Le **Titre** au moins doit être spécifié pour créer une page.
 
@@ -232,14 +229,16 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    >[!NOTE]
-   Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, le nom de la nouvelle page sera `winter0`.
+   >
+   >Si vous créez une page en utilisant un nom qui existe déjà à cet emplacement, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, le nom de la nouvelle page sera `winter0`.
 
 1. Si vous revenez à la console, la nouvelle page est présentée :
 
    ![caop-06](assets/caop-06.png)
 
 >[!CAUTION]
-Une fois qu’une page a été créée, son modèle ne peut plus être modifié, à moins de [créer un lancement avec un nouveau modèle](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) ; vous perdrez alors tout contenu déjà existant.
+>
+>Une fois qu’une page a été créée, son modèle ne peut plus être modifié, à moins de [créer un lancement avec un nouveau modèle](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) ; vous perdrez alors tout contenu déjà existant.
 
 ### Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
@@ -259,7 +258,8 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 1. La page s’ouvre ; vous pouvez [la modifier](/help/sites-authoring/editing-content.md#touchoptimizedui) selon vos besoins.
 
 >[!NOTE]
-L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
+>
+>L’accès à d’autres pages à partir de l’Éditeur de page n’est possible qu’en mode Aperçu, car les liens ne sont pas actifs dans le mode d’édition.
 
 ### Copier et coller une page  {#copying-and-pasting-a-page}
 
@@ -276,7 +276,8 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
    >[!NOTE]
-   En mode de sélection, cette page est fermée dès qu’elle est copiée.
+   >
+   >En mode de sélection, cette page est fermée dès qu’elle est copiée.
 
 1. Accédez à l’emplacement destiné à la nouvelle copie de la page.
 1. L’icône **Coller** est disponible avec une flèche déroulante directement à droite :
@@ -288,15 +289,18 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    * Sélectionner la flèche déroulante pour afficher l’option **Coller sans enfants**. Une copie de la page d’origine sera créée à cet emplacement ; les pages enfants ne seront pas copiées.
 
    >[!NOTE]
-   Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
+   >
+   >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
 ### Déplacement ou changement de nom d’une page {#moving-or-renaming-a-page}
 
 >[!NOTE]
-L’attribution d’un nouveau nom à une page doit elle aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de la page.
+>
+>L’attribution d’un nouveau nom à une page doit elle aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de la page.
 
 >[!NOTE]
-Une page peut uniquement être déplacée vers un emplacement où le modèle sur lequel la page est basée est autorisé. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>
+>Une page peut uniquement être déplacée vers un emplacement où le modèle sur lequel la page est basée est autorisé. See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
 
 La procédure pour déplacer ou renommer une page est plus ou moins la même et est gérée par le même assistant. Cet assistant permet d’effectuer les opérations suivantes :
 
@@ -329,7 +333,8 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    Le nom de la page peut être conservé si vous déplacez uniquement la page.
 
    >[!NOTE]
-   Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
+   >
+   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
 1. À l’étape **Sélectionner la destination** de l’assistant, effectuez l’une des opérations suivantes :
 
@@ -340,29 +345,59 @@ AEM vous offre la possibilité de mettre à jour des liens internes vers la page
    * Utilisez la commande **Précédent** pour revenir à l’étape de spécification du nom de la page.
 
    >[!NOTE]
-   Par défaut, le parent de la page que vous déplacez/renommez est sélectionné comme destination.
+   >
+   >Par défaut, le parent de la page que vous déplacez/renommez est sélectionné comme destination.
 
    ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
-   Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
+   >
+   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
 1. Si la page est liée ou référencée, ou si elle a été publiée, les détails seront répertoriés dans l’étape **Ajuster/republier**.
 
    Vous pouvez indiquer quelles pages sont les pages à adapter et/ou à republier.
 
    >[!NOTE]
-   Si la page n’est ni liée ni référencée, cette étape ne sera pas disponible.
+   >
+   >Si la page n’est ni liée ni référencée, cette étape ne sera pas disponible.
 
    ![caop-09](assets/caop-09.png)
 
 1. Sélectionnez **Déplacer** pour terminer le processus et déplacer ou renommer votre page.
 
 >[!NOTE]
-Si la page a déjà été publiée, le déplacement de la page annule automatiquement la publication. Par défaut, la page est republiée une fois le déplacement terminé, mais ce comportement peut être modifié en désélectionnant le champ **Republier** de l’étape **Adapter/Republier**.
+>
+>Si la page a déjà été publiée, le déplacement de la page annule automatiquement la publication. Par défaut, la page est republiée une fois le déplacement terminé, mais ce comportement peut être modifié en désélectionnant le champ **Republier** de l’étape **Adapter/Republier**.
 
 >[!NOTE]
-Si la page n’est pas référencée, les étapes **Ajuster/republier** sont ignorées.
+>
+>Si la page n’est pas référencée, les étapes **Ajuster/republier** sont ignorées.
+
+#### Actions asynchrones {#asynchronous-actions}
+
+Normalement, une action de déplacement ou de changement de nom de page est exécutée immédiatement. Ceci est considéré comme un traitement synchrone et toute action supplémentaire dans l’interface utilisateur est bloquée jusqu’à ce que l’action soit terminée.
+
+Cependant, si le nombre de pages affectées est supérieur à une limite définie, l’action est traitée de manière asynchrone, ce qui permet à l’utilisateur de continuer à créer dans l’interface utilisateur sans être entravé par l’action de déplacement ou de changement de nom de page.
+
+* Lorsque vous cliquez sur **Déplacer** à la dernière étape ci-dessus, AEM vérifie la limite configurée.
+* Si le nombre de pages affectées est inférieur à la limite, il effectue une opération synchrone.
+* Si le nombre de pages affectées est supérieur à la limite, il effectue une opération asynchrone.
+   * L’utilisateur doit définir quand l’opération asynchrone doit être effectuée.
+      * **Désormais** , l’exécution de la tâche asynchrone commence immédiatement.
+      * **Par la suite** , l’utilisateur peut définir le moment où la tâche asynchrone sera début.
+
+         ![Déplacement de page asynchrone](assets/asynchronous-page-move.png)
+
+L’état des tâches asynchrones peut être vérifié dans le tableau de bord [**État **des tâches](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+
+>[!NOTE]
+>
+>Pour plus d’informations sur le traitement asynchrone des tâches et sur la configuration de la limite pour les actions de déplacement/changement de nom de page, consultez le document Tâches [](/help/sites-administering/asynchronous-jobs.md) asynchrones du guide de l’utilisateur Administration.
+
+>[!NOTE]
+>
+>Le traitement du déplacement de page asynchrone requiert AEM 6.5.3.0 ou version ultérieure.
 
 ### Suppression d’une page {#deleting-a-page}
 
@@ -372,7 +407,8 @@ Si la page n’est pas référencée, les étapes **Ajuster/republier** sont ign
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Par mesure de sécurité, l’icône **Supprimer la page** n’est pas disponible en tant qu’action rapide.
+   >
+   >Par mesure de sécurité, l’icône **Supprimer la page** n’est pas disponible en tant qu’action rapide.
 
 1. Une boîte de dialogue de confirmation s’affiche. Utilisez :
 
@@ -383,7 +419,8 @@ Si la page n’est pas référencée, les étapes **Ajuster/republier** sont ign
       * Si la page comporte des références, un message vous informe qu’**une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
 
 >[!NOTE]
-Si une page est déjà publiée, la publication est automatiquement annulée avant la suppression.
+>
+>Si une page est déjà publiée, la publication est automatiquement annulée avant la suppression.
 
 ### Verrouillage d’une page {#locking-a-page}
 
@@ -396,12 +433,16 @@ Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-authoring/editi
 Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 
 >[!NOTE]
-Les dossiers doivent eux aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom du dossier.
+>
+>Les dossiers doivent eux aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom du dossier.
 
 >[!CAUTION]
-* Les dossiers ne peuvent être créés que sous **Sites** ou sous d’autres dossiers. Ils ne peuvent pas être créés sous une page.
-* Les opérations standard (déplacer, copier, coller, supprimer, publier, annuler la publication et afficher/modifier les propriétés) peuvent être effectuées sur un dossier.
-* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
+>
+>* Les dossiers ne peuvent être créés que sous **Sites** ou sous d’autres dossiers. Ils ne peuvent pas être créés sous une page.
+>* Les opérations standard (déplacer, copier, coller, supprimer, publier, annuler la publication et afficher/modifier les propriétés) peuvent être effectuées sur un dossier.
+>* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
+
+>
 
 
 
