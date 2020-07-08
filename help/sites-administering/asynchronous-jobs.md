@@ -1,18 +1,18 @@
 ---
-title: Opérations asynchrones
+title: Tâches asynchrones
 description: L'Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 translation-type: tm+mt
-source-git-commit: 69b90432ac6028a64f36300819e1bead1ae8d671
+source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 26%
+source-wordcount: '892'
+ht-degree: 27%
 
 ---
 
 
 # Opérations asynchrones {#asynchronous-operations}
 
-Afin de réduire l’impact négatif sur les performances, Adobe Experience Manager traite de manière asynchrone certaines opérations à long terme gourmandes en ressources.
+Afin de réduire l’impact négatif sur les performances, Adobe Experience Manager traite de manière asynchrone certaines opérations à long terme gourmandes en ressources. Le traitement asynchrone implique la mise en file d’attente de plusieurs tâches et leur exécution en série, sous réserve de la disponibilité des ressources système.
 
 Ces opérations incluent :
 
@@ -22,8 +22,6 @@ Ces opérations incluent :
 * Récupération des ressources, qui dépassent le seuil défini, à partir d’un déploiement de Experience Manager distant
 * Déplacement de pages
 * Déploiement de Live Copies
-
-Le traitement asynchrone implique la mise en file d’attente de plusieurs tâches et leur exécution en série, sous réserve de la disponibilité des ressources système.
 
 Vous pouvez vue l’état des tâches asynchrones à partir du tableau de bord État **[!UICONTROL de la tâche]** asynchrone dans Navigation **** globale -> **Outils** -> **Opérations -> Tâches.******
 
@@ -35,7 +33,7 @@ Vous pouvez vue l’état des tâches asynchrones à partir du tableau de bord �
 
 ## Monitor the Status of Asynchronous Operations {#monitor-the-status-of-asynchronous-operations}
 
-Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre boîte de réception et par courrier électronique (si elle est activée).
+Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-authoring/inbox.md) et par courrier électronique (si elle est activée).
 
 Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
 
@@ -85,7 +83,6 @@ Vous pouvez modifier la planification de la tâche de purge et la durée de cons
    * Nombre seuil de jours après lequel les tâches terminées sont supprimées.
    * Nombre maximal de tâches pour lesquelles des détails sont conservés dans l’historique.
    * expression cron pour le moment où la purge doit s&#39;exécuter.
-
    ![Configuration visant à planifier la purge des tâches asynchrones](assets/async-purge-job.png)
 
 1. Enregistrez les modifications.
@@ -142,3 +139,12 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
    ![Configuration MSM](assets/async-msm.png)
 
 1. Enregistrez les modifications.
+
+>[!MORELIKETHIS]
+>
+>* [Création et organisation des pages](/help/sites-authoring/managing-pages.md)
+>* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Configurez le courrier électronique dans le Experience Manager](/help/sites-administering/notification.md).
+>* [Importation et exportation des métadonnées de ressources par lot](/help/assets/metadata-import-export.md).
+>* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements](/help/assets/use-assets-across-connected-assets-instances.md)distants.
+
