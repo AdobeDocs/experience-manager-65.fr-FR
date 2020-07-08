@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '9250'
 ht-degree: 64%
@@ -63,6 +63,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    * On the toolbar, click **[!UICONTROL Create]**. Dans le menu, cliquez ensuite sur **[!UICONTROL Fichiers]**. Au besoin, vous pouvez renommer le fichier dans la boîte de dialogue affichée.
    * In a browser that supports HTML5, drag the assets directly on the [!DNL Assets] user interface. La boîte de dialogue permettant de renommer les fichiers n’est pas affichée.
+
    ![Créer une option pour télécharger des fichiers](assets/create-options.png)
 
    Pour sélectionner plusieurs fichiers, appuyez sur la touche Ctrl ou Commande et sélectionnez les ressources dans la boîte de dialogue de sélecteur de fichiers. Si vous utilisez un iPad, vous ne pouvez sélectionner qu’un seul fichier à la fois.
@@ -119,6 +120,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    * Le nom du fichier de ressource ne doit pas contenir `* / : [ \\ ] | # % { } ? &`
    * Le nom du dossier de ressources ne doit pas contenir `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    N’incluez pas de caractères spéciaux dans les extensions des noms de fichier.
 
    ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui ne parviennent pas à être téléchargés](assets/chlimage_1-10.png)
@@ -131,7 +133,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
 ### Transferts en série {#serialuploads}
 
-Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your [!DNL Assets] instance. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. Par conséquent, l’opération de chargement échoue ou prend fin prématurément. In other words, [!DNL Experience Manager Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
+Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your [!DNL Assets] deployment. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. Par conséquent, l’opération de chargement échoue ou prend fin prématurément. In other words, [!DNL Experience Manager Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
@@ -350,6 +352,7 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
 1. Pour effectuer un zoom avant sur le fichier :
    1. Utilisez `Tab` la touche pour déplacer la cible d’action vers l’option de zoom avant.
    1. Utilisez `Enter` la touche pour effectuer un zoom avant sur l’image.
+
    Pour effectuer un zoom arrière, utilisez `Tab` la touche pour déplacer la cible d’action vers l’option de zoom arrière et appuyez sur `Enter`la touche.
 
 1. Utilisez les touches `Shift` + `Tab` pour recentrer la mise au point sur l’image.
@@ -407,6 +410,7 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
    * Le nombre de fois que la ressource a été visualisée ou téléchargée.
    * Les canaux/périphériques via lesquels la ressource a été utilisée.
    * Des solutions de création où la ressource a été récemment utilisée.
+
    Pour plus d’informations, reportez-vous à la section [Informations sur les ressources](/help/assets/touch-ui-asset-insights.md).
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
@@ -480,6 +484,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
 
    * Click **[!UICONTROL Cancel]** to stop the move operation.
+
    Si vous ne mettez pas à jour les références, elles continuent à pointer vers le chemin précédent de la ressource. Si vous adaptez les références, elles sont mises à jour avec le nouveau chemin de la ressource.
 
 ## Gestion des rendus {#managing-renditions}
@@ -555,6 +560,7 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
       * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées.** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+
    >[!NOTE]
    >
    >Pour supprimer des fichiers, un utilisateur doit disposer d’autorisations de suppression sur `dam/asset`. Si vous disposez uniquement d’autorisations de modification, vous pourrez seulement modifier les métadonnées de la ressource et ajouter des annotations à cette dernière. Toute suppression s’avérera impossible.
@@ -607,6 +613,7 @@ Voir [Téléchargement de fichiers à partir d’un Experience Manager](/help/as
 
    * **[!UICONTROL Annuler]** pour arrêter l’action
    * **[!UICONTROL Annuler la publication]** pour confirmer l’annulation de la publication des ressources (elles ne sont plus disponibles dans l’environnement de publication) à la date indiquée.
+
    >[!NOTE]
    >
    >Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
@@ -677,6 +684,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
    * Select the asset and then click **[!UICONTROL Edit]** in the toolbar.
    * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
    * Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
+
    ![Option Modifier de la barre d’outils](assets/edit_icon.png)
 
 1. Pour recadrer l’image, cliquez sur **[!UICONTROL Recadrer]** ![l’option pour recadrer une image](assets/chlimage_1-22.png).
@@ -742,6 +750,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    * [Actions rapides](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
+
    ![Option Annoter](assets/chlimage_1-29.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
@@ -870,7 +879,7 @@ If an asset includes annotations in foreign languages (especially non-latin lang
 
    * Incluez la chaîne `<font_family_name_of_custom_font, sans-serif>` dans l’option font-family. Par exemple, si vous souhaitez imprimer des annotations en chinois, en japonais et en coréen (CJC), insérez la chaîne `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` dans l’option font-family. Si vous souhaitez imprimer des annotations en hindi, téléchargez la police appropriée et configurez la famille de polices comme suit : Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Restart the [!DNL Experience Manager] instance.
+1. Redémarrez le [!DNL Experience Manager] déploiement.
 
 Here is an example of how you can configure [!DNL Experience Manager] to print annotations in CJK (Chinese, Japanese and Korean):
 
@@ -933,6 +942,7 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
 1. Pour comparer deux versions d’une image, procédez comme suit :
    * Cliquez sur la version à comparer à la version actuelle.
    * Faites glisser le curseur vers la gauche pour superposer cette version sur la version actuelle et la comparer.
+
    ![Utilisez le curseur pour comparer les versions sélectionnées d’un fichier à la version actuelle.](assets/version-slider.gif)
 
    *Figure : Utilisez le curseur pour comparer facilement les versions sélectionnées d’un fichier à la version actuelle.*
