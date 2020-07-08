@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources Experience Manager 6.5
 translation-type: tm+mt
-source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
+source-git-commit: 9f1548785283ffba119d8404e328f513012a082c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 54%
@@ -151,7 +151,7 @@ ht-degree: 54%
    + [Création de projets de traduction](translation-projects.md)
    + [Préparation des ressources pour la traduction](preparing-assets-for-translation.md)
    + [Téléchargement de ressources à partir d’AEM](download-assets-from-aem.md)
-   + [Opérations asynchrones](/help/sites-administering/asynchronous-jobs.md)
+   + [Tâches asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
    + [Activation des informations sur les ressources via le lancement d’Adobe](touch-ui-using-dtm-for-asset-insights.md)
