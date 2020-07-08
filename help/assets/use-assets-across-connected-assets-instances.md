@@ -3,7 +3,7 @@ title: Utilisez des ressources connectées pour partager des ressources DAM dans
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 91%
@@ -139,13 +139,13 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
    *Figure : Options de filtrage des types de documents et des images lors de la recherche de fichiers sur DAM distant.*
 
-1. Un auteur de site est informé de la récupération asynchrone d’une ressource et de l’échec d’une tâche de récupération. Les auteurs peuvent consulter les informations détaillées sur la récupération des tâches et des erreurs dans l’[interface utilisateur](/help/assets/asynchronous-jobs.md) des tâches asynchrones pendant, voire après la création.
+1. Un auteur de site est informé de la récupération asynchrone d’une ressource et de l’échec d’une tâche de récupération. Les auteurs peuvent consulter les informations détaillées sur la récupération des tâches et des erreurs dans l’[interface utilisateur](/help/sites-administering/asynchronous-jobs.md) des tâches asynchrones pendant, voire après la création.
 
    ![Notification concernant la récupération asynchrone en arrière-plan des ressources.](assets/assets_async_transfer_fails.png)
 
    *Figure : Notification concernant la récupération asynchrone en arrière-plan des ressources.*
 
-1. [!DNL Experience Manager] affiche la liste complète des ressources utilisées sur une page lorsqu’elle est publiée. Veillez à bien récupérer les fichiers distants au moment de la publication. Pour vérifier l’état de chaque ressource récupérée, reportez-vous à l’interface utilisateur des [tâches asynchrones](/help/assets/asynchronous-jobs.md).
+1. [!DNL Experience Manager] affiche la liste complète des ressources utilisées sur une page lorsqu’elle est publiée. Veillez à bien récupérer les fichiers distants au moment de la publication. Pour vérifier l’état de chaque ressource récupérée, reportez-vous à l’interface utilisateur des [tâches asynchrones](/help/sites-administering/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -189,4 +189,4 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 Pour résoudre les problèmes liés aux scénarios d’erreur courants, procédez comme suit :
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
-* Une ressource extraite du barrage distant peut ne pas être publiée sur une page Web pour une ou plusieurs raisons. Il n&#39;existe pas sur le serveur distant, il n&#39;y a pas d&#39;autorisations appropriées pour l&#39;extraire, ou la défaillance du réseau peut être la cause. Assurez-vous que le fichier n&#39;est pas supprimé du DAM distant. Assurez-vous que les autorisations appropriées sont en place et que les conditions préalables sont remplies. Essayez de rajouter le fichier à la page et de republier. Recherchez dans la [liste des tâches asynchrones](/help/assets/asynchronous-jobs.md) les erreurs de récupération de ressources.
+* Une ressource extraite du barrage distant peut ne pas être publiée sur une page Web pour une ou plusieurs raisons. Il n&#39;existe pas sur le serveur distant, il n&#39;y a pas d&#39;autorisations appropriées pour l&#39;extraire, ou la défaillance du réseau peut être la cause. Assurez-vous que le fichier n&#39;est pas supprimé du DAM distant. Assurez-vous que les autorisations appropriées sont en place et que les conditions préalables sont remplies. Essayez de rajouter le fichier à la page et de republier. Recherchez dans la [liste des tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) les erreurs de récupération de ressources.
