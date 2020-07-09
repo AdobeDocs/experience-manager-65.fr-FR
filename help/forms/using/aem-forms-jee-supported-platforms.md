@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1584bc5034e7d4a549a5f824a89e8cf0c06ac3c
+source-git-commit: 5ae20c36efe40e7228488a59ffc27f86e56e2d48
 workflow-type: tm+mt
-source-wordcount: '3217'
-ht-degree: 77%
+source-wordcount: '3225'
+ht-degree: 76%
 
 ---
 
@@ -32,7 +32,6 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >
 >* Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, voir [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >* AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
-
 >
 
 
@@ -156,7 +155,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Pris en charge</td>
   </tr> 
    <tr>
-   <td>Oracle Database 19c </td>
+   <td>Oracle Database 19c (éditions Standard, Real Application Clusters (RAC) et Enterprise) </td>
    <td>Micronoyau de référentiel </td>
    <td>Pris en charge</td>
   </tr>
@@ -453,11 +452,9 @@ L&#39;application AEM Forms prend désormais en charge Apache Cordova. Voici les
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
 >* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
-
    >
    >
 * Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
-
 >
 
 
@@ -637,7 +634,6 @@ Pour la configuration requise supplémentaire, voir :
 >* Administration Console n’est pas prise en charge sur Safari.
 >* Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour AEM Forms 6.1.
 >* Forms Portal prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
-
 >
 
 
@@ -672,7 +668,6 @@ Pour la configuration requise supplémentaire, voir :
 >[!NOTE]
 >
 >* Le Portail Formulaires est pris en charge sur Safari sur iPad uniquement.
-
 >
 
 
