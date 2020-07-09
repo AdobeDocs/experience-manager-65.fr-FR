@@ -1,7 +1,7 @@
 ---
 title: Processus basé sur l’utilisation de Forms sur OSGi
 seo-title: Créez rapidement des processus basés sur des formulaires adaptatifs, automatisez les opérations de services de document, et utilisez Adobe Sign avec les processus AEM
-description: 'Utiliser le flux de travail AEM Forms pour automatiser et créer rapidement des révisions et des approbations, pour  des services de '
+description: Utiliser le processus AEM Forms pour automatiser et créer rapidement des révisions et des approbations pour les services de document de début
 seo-description: Utilisez AEM Forms Workflow pour automatiser et créer rapidement la révision et les approbations, pour démarrer Documents Services (par exemple, pour convertir un document PDF dans un autre format), pour intégrer le processus de signature Adobe Sign et bien plus encore.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: document_services
@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+workflow-type: tm+mt
+source-wordcount: '3065'
+ht-degree: 85%
 
 ---
 
@@ -28,15 +31,15 @@ Vous pouvez utiliser des processus AEM pour créer rapidement des processus bas�
 
 Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des processus utilisent les fonctionnalités de boîte de messagerie AEM et AEM Workflow habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
 
-Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. See a [comparison](../../forms/using/capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation de Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](../../forms/using/introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
+Le processus basé sur l’utilisation de Forms sur OSGi étend la [boîte de messagerie AEM](/help/sites-authoring/inbox.md) et fournit des composants supplémentaires (étapes) pour que l’éditeur du processus AEM ajoute la prise en charge des processus AEM basés sur l’utilisation de Forms. La boîte de messagerie AEM étendue dispose de fonctionnalités similaires à celles de l’[espace de travail AEM Forms](introduction-html-workspace.md). Avec la gestion des processus basés sur les utilisateurs (approbation, révision, etc.), vous pouvez utiliser des processus AEM pour automatiser les opérations liées à [Document Services](/help/sites-developing/workflows-step-ref.md) (par exemple, la génération de PDF) et à la signature de documents (Adobe Sign) par voie électronique.
 
-Toutes les étapes du processus AEM Forms prennent en charge l’utilisation de variables. Les variables permettent aux étapes du flux de travail de conserver et de transmettre les métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables (tableaux) pour stocker plusieurs instances de données identiques associées. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de flux de travaux orientés Forms, voir Flux de travaux centrés sur [Forms sur OSGi - Guide de référence](../../forms/using/aem-forms-workflow-step-reference.md)des étapes. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans le](../../forms/using/variable-in-aem-workflows.md)AEM.
+Toutes les étapes de processus AEM Forms prennent en charge l’utilisation des variables. Les variables permettent aux étapes du flux de travail de contenir et de transmettre des métadonnées entre les étapes au moment de l’exécution. Vous pouvez créer différents types de variables pour stocker différents types de données. Vous pouvez également créer des collections de variables (tableaux) pour stocker plusieurs instances de données associées et du même type. En règle générale, vous utilisez une variable ou une collection de variables lorsque vous devez prendre une décision en fonction de la valeur qu’elle contient ou pour stocker des informations dont vous aurez besoin ultérieurement dans un processus. Pour plus d’informations sur l’utilisation de variables dans ces composants (étapes) de flux de travaux orientés sur les formulaires, voir Flux de travaux centrés sur les [formulaires dans OSGi - Guide de référence](../../forms/using/aem-forms-workflow-step-reference.md)des étapes. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les workflows](../../forms/using/variable-in-aem-workflows.md)AEM.
 
 Le diagramme suivant illustre le processus complet de création, d’exécution et contrôle d’un processus basé sur l’utilisation de Forms sur OSGi.
 
-![introduction-à-AEM-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
+![introduction-à-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
 
 ## Avant de commencer {#before-you-start}
 
@@ -73,7 +76,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
    * les étapes : Début du processus et Fin du processus. Ces étapes définissent le début et la fin du processus. Ces étapes sont obligatoires et ne peuvent pas être modifiées ou supprimées.
    * Exemple d’étape Participant nommée Etape 1.  Cette étape est configurée pour affecter un élément de travail à l’utilisateur administrateur. Supprimez cette étape.
 
-1. Activez les notifications électroniques. Vous pouvez configurer le flux de travail centré sur Forms sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
+1. Activez les notifications électroniques. Vous pouvez configurer le flux de travaux axé sur Forms sur OSGi pour envoyer des notifications par courrier électronique aux utilisateurs ou aux personnes désignées. Effectuez les configurations suivantes pour activer les notifications électroniques :
 
    1. Accédez au gestionnaire de configuration AEM à l’adresse `https://[server]:[port]/system/console/configMgr`.
    1. Ouvrez la configuration du **[!UICONTROL Service de messagerie Day CQ]**. Spécifiez une valeur pour les champs **[!UICONTROL Nom d’hôte du serveur SMTP]**, **[!UICONTROL Port du serveur SMTP]** et **[!UICONTROL Adresse de l’expéditeur]**. Cliquez sur **[!UICONTROL Enregistrer]**.
@@ -89,31 +92,31 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    Vous pouvez également utiliser l’étape pour contrôler le comportement de la tâche. Par exemple, lors de la création d’un document d’enregistrement automatique, affectez la tâche à un utilisateur ou un groupe spécifique, le chemin des données envoyées, le chemin des données pré-renseignées et les actions par défaut. For detailed information about the options of the assign task step, see [Forms-centric workflow on OSGi - Step Reference](../../forms/using/aem-forms-workflow.md) document.
 
-   ![workflow-editor](assets/workflow-editor.png)
+   ![éditeur de processus](assets/workflow-editor.png)
 
-   Pour l’exemple de demande de prêt immobilier, configurez l’étape Affecter une tâche pour utiliser un formulaire adaptatif en lecture seule et afficher le document PDF une fois la tâche terminée. Par ailleurs, sélectionnez le groupe d’utilisateurs autorisé à approuver la demande de prêt. Dans l’onglet **Actions**, désactivez l’option **Envoyer**. Créez une variable **actionTaken** de type de données String et spécifiez la variable en tant que variable **Route**. par exemple, actionTaken. Ajoutez également les itinéraires Approuver et Refuser. Les itinéraires sont affichés sous forme d’actions distinctes (boutons) dans la boîte de réception AEM. Le processus sélectionne une branche en fonction de l’action (bouton) sélectionnée par l’utilisateur.
+   Pour l’exemple de demande de prêt immobilier, configurez l’étape Affecter une tâche pour utiliser un formulaire adaptatif en lecture seule et afficher le document PDF une fois la tâche terminée. Par ailleurs, sélectionnez le groupe d’utilisateurs autorisé à approuver la demande de prêt. Dans l’onglet **Actions**, désactivez l’option **Envoyer**. Créez une variable **actionTaken** de type de données String et spécifiez la variable comme variable **** Route. par exemple, actionTaken. Ajoutez également les itinéraires Approuver et Refuser. Les itinéraires sont affichés sous forme d’actions distinctes (boutons) dans la boîte de réception AEM. Le processus sélectionne une branche en fonction de l’action (bouton) sélectionnée par l’utilisateur.
 
    Vous pouvez importer l’exemple de package, disponible au téléchargement au début de la section, pour l’ensemble complet de valeurs de tous les champs de l’étape Affecter une tâche configurée, par exemple la demande de prêt immobilier.
 
 1. Faites glisser et déposez le composant Division OU de l’explorateur d’étapes vers le modèle de processus. La Division OU divise le processus et une seule branche est active par la suite. Cette étape vous permet d’ajouter des chemins de traitement conditionnels dans le workflow. Vous ajoutez des étapes de workflow à chaque branche selon vos besoins.
 
-   Vous pouvez définir   pour une branche à l’aide d’une définition de règle, d’un script ECMA ou d’un script externe.
+   Vous pouvez définir l&#39;expression d&#39;routage d&#39;une branche à l&#39;aide d&#39;une définition de règle, d&#39;un script ECMA ou d&#39;un script externe.
 
-   Utilisez l’éditeur de  de  pour créer des de  pour les branches 1 et 2. Ces    vous aident à choisir une branche en fonction de l’action de l’utilisateur dans la boîte de réception AEM.
+   Utilisez l&#39;éditeur d&#39;expressions pour créer des expressions de routage pour les branches 1 et 2. Ces expressions de routage permettent de choisir une branche en fonction de l’action de l’utilisateur dans la boîte de réception AEM.
 
-   **pour la branche 1**
+   **expression Routage pour la branche 1**
 
    When a user taps **Approve** in AEM Inbox, Branch 1 is activated.
 
    ![OU Exemple de fractionnement](assets/orsplit_branch1_active_new.png)
 
-   **pour la branche 2**
+   **expression Routage pour la branche 2**
 
    When a user taps **Reject** in AEM Inbox, Branch 2 is activated.
 
    ![OU Exemple de fractionnement](assets/orsplit_branch2_active_new.png)
 
-   Pour plus d’informations sur la création de    à l’aide de variables, voir [Variables dans le](../../forms/using/variable-in-aem-workflows.md)AEM Forms.
+   Pour plus d’informations sur la création d’expressions d’routage à l’aide de variables, voir [Variables dans les workflows](../../forms/using/variable-in-aem-workflows.md)AEM Forms.
 
 1. Ajoutez d’autres étapes de processus pour créer une logique d’entreprise.
 
@@ -147,7 +150,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
    <td>Le titre est visible dans la boîte de réception AEM et permet aux utilisateurs de sélectionner une demande. Assurez-vous qu’il soit descriptif. Par exemple, Demande d’ouverture de compte d’épargne.<br />  </td>
   </tr>
   <tr>
-   <td>Name (Nom) </td>
+   <td>Nom </td>
    <td>Indiquez le nom de la demande. Tous les caractères autres que les lettres, chiffres, tirets et traits de soulignement ont été remplacés par des tirets. </td>
   </tr>
   <tr>
@@ -229,7 +232,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
    <td>Indiquez le nom du dossier de contrôle. Ce champ prend uniquement en charge les caractères alphanumériques.</td>
   </tr>
   <tr>
-   <td><span class="uicontrol">Chemin   </code></td>
+   <td><span class="uicontrol">Chemin </code></td>
    <td>Spécifiez l’emplacement physique du dossier de contrôle. Dans un environnement organisé en grappes, utilisez un dossier réseau partagé accessible à partir du noeud de la grappe AEM.</td>
   </tr>
   <tr>
@@ -257,7 +260,7 @@ Un administrateur (un membre du groupe administrateur-fd) peut configurer un dos
 
 ### Envoi d’une communication interactive ou d’une lettre {#letter}
 
-Vous pouvez associer et exécuter un flux de travail Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans la gestion de la correspondance, les  sont utilisés pour les communications interactives et les lettres postérieures au traitement. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](../../forms/using/submit-letter-topostprocess.md).
+Vous pouvez associer et exécuter un flux de travail Forms sur OSGi lors de l’envoi d’une communication interactive ou d’une lettre. Dans la gestion de la correspondance, les workflows sont utilisés pour les communications interactives et les lettres après traitement. par exemple, l’envoi de courriers électroniques, l’impression, la télécopie ou l’archivage des lettres finales. Pour les étapes détaillées, voir [Post-traitement des communications interactives et des lettres](../../forms/using/submit-letter-topostprocess.md).
 
 ## Autres configurations {#additional-configurations}
 
@@ -271,4 +274,4 @@ Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier éle
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflows terminées ou en cours d’exécution du référentiel. Pour plus d’informations, voir Purge [régulière des instances](/help/sites-administering/workflows-administering.md#regular) de flux de travail purge des instances de flux de travail.
+Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflows terminées ou en cours d’exécution du référentiel. Pour des informations détaillées, voir Purge [régulière des instances](/help/sites-administering/workflows-administering.md#regular) de flux de travail purgeant des instances de flux de travail.
