@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
+source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 71%
@@ -173,6 +173,7 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms su
 
    * Sélectionnez **L’utilisateur ne peut pas changer de mot de passe**.
    * Vérifiez que le groupe **Utilisateurs** figure dans l’onglet **Membre de**.
+
    >[!NOTE]
    >
    >vous ne pouvez pas modifier ce paramètre pour PDF Generator.
@@ -201,6 +202,7 @@ Sur les systèmes de type UNIX, un utilisateur non connecté comme utilisateur r
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
+
    >[!NOTE]
    >
    > Emplacement d’installation par défaut de JBoss Application Server :
@@ -465,7 +467,7 @@ Vous pouvez permettre à un utilisateur non administrateur d’utiliser PDF Gene
 
 1. Définissez la valeur de la variable à TRUE.
 
-1. Redémarrez l’instance AEM forms.
+1. Redémarrez l’instance AEM Forms.
 
 ## Configuration d’AEM Forms sur JEE pour un accès au-delà de l’entreprise {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -1019,6 +1021,7 @@ Sur les systèmes de type UNIX, un utilisateur non connecté comme utilisateur r
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
+
    >[!NOTE]
    >
    > Emplacement d’installation par défaut de JBoss Application Server :
