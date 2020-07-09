@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+source-git-commit: 0a55ed44cb7fe3320b2196df38fe8492ee03912d
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 61%
+source-wordcount: '586'
+ht-degree: 58%
 
 ---
 
@@ -69,6 +69,8 @@ Pour résoudre cette erreur :
 * (JBoss 7 uniquement) Lorsque vous effectuez une mise à niveau d’une version précédente vers AEM Forms 6.5 et que la version précédente contenait des processus (.lca) qui ont créé et utilisé une copie du processus d’envoi ou de rendu par défaut, les formulaires HTML5 utilisant ces processus (.lca) ne parviennent pas à exécuter les actions requises. (CQ-4243928)
 * Dans une version adaptative, lorsqu’un service de modèle de données de formulaire est appelé à partir de l’éditeur de règle pour mettre à jour de manière dynamique les valeurs du composant de choix d’image, les valeurs du composant de choix d’image ne sont pas mises à jour. (CQ-4254754)
 * AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668)
+
+* PDF Generator ne prend pas en charge l’authentification par carte à puce.  Lorsqu’un administrateur active la stratégie de groupe `Interactive Logon: Require Smart card` sur un serveur Windows, tous les utilisateurs existants de PDF Generator sont invalidés.
 
 * Lorsqu’un formulaire adaptatif est configuré pour mettre à jour de manière dynamique les valeurs d’un composant et que l’instance de publication hébergeant le formulaire est accessible via le dispatcher, la fonctionnalité permettant de mettre à jour de manière dynamique les valeurs d’un champ cesse de fonctionner. Pour résoudre le problème, ouvrez CRXDE sur l’instance de publication, accédez à /libs/fd/af/runtime/clientlibs/guideChartReduce et créez la propriété répertoriée ci-dessous. 
 
