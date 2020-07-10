@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 5%
@@ -107,9 +107,7 @@ En vous connectant à [Adobe Experience Cloud](https://docs.adobe.com/content/he
 
       * not **`Counter (no subrelations)`**
    * Peut réutiliser (renommer) des événements existants ou en créer de nouveaux à utiliser pour les fonctionnalités des communautés
-   <!--
-    NOTE TO WRITER: The following link was broken, so I replaced it. Check for accuracy https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html 
-    -->
+
 
 * [Gestion des vidéos](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
@@ -532,7 +530,8 @@ Voici un exemple de mappages par défaut après avoir suivi le didacticiel [de](
 * *Titre* du composant UGC : Rubriques de randonnée
 * *login (authizableId)*: `aaron.mcdonald@mailinator.com`
 * *Chemin SRP vers UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-ou *chemin du composant à suivre*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+ou 
+*chemin du composant à suivre*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *chemin d’accès au contenu* du site communautaire : `/content/sites/<site name>/en`
 
