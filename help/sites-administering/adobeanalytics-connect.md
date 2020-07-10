@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 64%
+source-wordcount: '1550'
+ht-degree: 63%
 
 ---
 
@@ -47,9 +47,9 @@ Le compte Adobe Analytics doit :
 
 Avant de commencer, assurez-vous que vos informations d’identification vous permettent de vous connecter à Adobe Analytics. Via :
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Connexion à Adobe Experience Cloud](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Connexion Adobe](https://sc.omniture.com/login/)
 
 ### Configuration d’AEM pour utiliser vos centres de données Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -121,6 +121,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
    * Spécifiez un **Titre**.
    * Vous pouvez éventuellement spécifier le **Nom**, pour le nœud qui stocke les détails de la structure dans le référentiel.
    * Select **Adobe Analytics Framework**
+
    puis cliquez sur **Créer**.
 
    La structure s’ouvre en vue de la modification.
