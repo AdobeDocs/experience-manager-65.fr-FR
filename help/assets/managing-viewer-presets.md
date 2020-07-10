@@ -1,6 +1,6 @@
 ---
 title: Gestion des paramètres prédéfinis de visionneuse
-description: Créer et gérer les paramètres prédéfinis de la visionneuse
+description: Comment créer et gérer les paramètres prédéfinis de la visionneuse
 uuid: 64fcf16a-7c4a-435b-bf1a-f27b8b39a715
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
 source-wordcount: '4361'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Cette section décrit comment créer, modifier et gérer les paramètres prédé
 >
 >Notez que la modification des *paramètres prédéfinis de visionneuse prêts à l’emploi* n’est pas un scénario pris en charge. Si vous tentez de modifier un paramètre de visionneuse prédéfini de base, vous serez invité à enregistrer ce paramètre de visionneuse prédéfini en utilisant un nouveau nom.
 
-## Accessibilité clavier pour les visionneuses    {#keyboard-accessibility-for-viewers}
+## Accessibilité clavier pour les visionneuses  {#keyboard-accessibility-for-viewers}
 
 Toutes les visionneuses prêtes à l’emploi prennent en charge l’accessibilité clavier.
 
@@ -49,9 +49,9 @@ Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et pr�
 
 >[!NOTE]
 >
->Par défaut, le système affiche 15 paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des détails d’une ressource. Vous pouvez augmenter cette limite. Voir [Augmenter le nombre de paramètres de visionneuse prédéfinis affichés](#increasing-the-number-of-viewer-presets-that-display).
+>Par défaut, le système affiche 15 paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des détails d’une ressource. Vous pouvez augmenter cette limite. Voir [Augmentation du nombre de paramètres de visionneuse prédéfinis qui s’affichent](#increasing-the-number-of-viewer-presets-that-display).
 
-### Prise en charge de la visionneuse pour les pages web en responsive design.    {#viewer-support-for-responsive-designed-web-pages}
+### Prise en charge de la visionneuse pour les pages web en responsive design.   {#viewer-support-for-responsive-designed-web-pages}
 
 Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Autrement, elle peut être « réactive » et affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et les pages web réactives.
 
@@ -85,7 +85,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Dimensionnel</strong><br /> </td>
-   <td><p>Affiche des scènes 3D qui vous permettent de tourner, de panoramique, de zoomer ou de recentrer votre caméra.</p> </td>
+   <td><p>Affiche des scènes 3D pour faire tourner ou recentrer votre caméra, effectuer des panoramiques ou zoomer.</p> </td>
   </tr>
   <tr>
    <td><strong>Zoom sur la fenêtre déroulante</strong></td>
@@ -121,7 +121,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Recadrage intelligent de la vidéo</strong><br /> </td>
-   <td><p>Utilisez cette visionneuse pour détecter et recadrer automatiquement le point focal de toute vidéo.</p> </td>
+   <td><p>Utilisez cette visionneuse pour détecter et recadrer automatiquement le point focal d’une vidéo.</p> </td>
   </tr>
   <tr>
    <td><strong>Visionneuse à 360°</strong></td>
@@ -154,7 +154,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
 
 Le tableau suivant identifie tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis avec Dynamic Media.
 
-Voir également <!-- KEEP THIS REFERENCE FOR NOW [Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) --> [Démonstrations](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)en direct.
+Voir aussi [Live Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Pour en savoir plus sur les versions de navigateur web et de système d’exploitation compatibles avec les visionneuses, consultez les notes de mise à jour des visionneuses.
 
@@ -474,7 +474,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
    Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
 
-### Remarques spéciales sur la création d’un paramètre de visionneuse interactive prédéfini.    {#special-considerations-for-creating-an-interactive-viewer-preset}
+### Remarques spéciales sur la création d’un paramètre de visionneuse interactive prédéfini  {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **À propos des modes d’affichage des miniatures dans le panneau**
 
@@ -547,7 +547,7 @@ Les paramètres de visionneuse prédéfinis qui sont disponibles dans l’interf
 
    Le curseur des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le curseur des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
 
-## Publication de paramètres de visionneuse prédéfinis    {#publishing-viewer-presets}
+## Publication de paramètres de visionneuse prédéfinis  {#publishing-viewer-presets}
 
 Lorsqu’un paramètre prédéfini de visionneuse est activé, cela signifie qu’il est visible dans les composants Dynamic Media et Interactive Media, et ce, dès que vous affichez une ressource.
 
@@ -563,7 +563,7 @@ Voir aussi [Prévisualisation de ressources](/help/assets/previewing-assets.md).
 1. Sélectionnez un ou plusieurs paramètres de visionneuse prédéfinis que vous souhaitez publier.
 1. Appuyez sur l’icône **[!UICONTROL Publier]** de la barre d’outils.
 
-## Tri des paramètres de visionneuse prédéfinis    {#sorting-viewer-presets}
+## Tri des paramètres de visionneuse prédéfinis  {#sorting-viewer-presets}
 
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils** (icône Marteau)**[!UICONTROL  > Ressources > Paramètres prédéfinis de la visionneuse.]**
 1. Cliquez sur **[!UICONTROL Titre prédéfini]**, **[!UICONTROL Type]**, **[!UICONTROL Publié]** ou **[!UICONTROL État]** afin de trier en fonction de cette colonne. Cliquez par exemple sur **[!UICONTROL Type]** pour trier les types de paramètres prédéfinis de visionneuse dans l’ordre alphabétique standard ou inversé.
@@ -579,7 +579,7 @@ Notez que la modification des *paramètres prédéfinis de visionneuse prêts à
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
 1. Sur la page **[!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse]**, apportez les modifications souhaitées au paramètre prédéfini de la visionneuse à l’aide des options disponibles dans les onglets **[!UICONTROL Apparence]** et **[!UICONTROL Comportement]**.
 
-   Dans l’onglet **[!UICONTROL Apparence]**, près du coin supérieur gauche de la page Éditeur de paramètres prédéfinis de la visionneuse, appuyez sur **[!UICONTROL Bureau]**, **[!UICONTROL Tablette]** ou **[!UICONTROL Téléphone]** pour modifier le mode de présentation du fichier.
+   Dans l’onglet **[!UICONTROL Apparence]**, près du coin supérieur gauche de la page Éditeur de paramètres prédéfinis de la visionneuse, appuyez sur **[!UICONTROL Bureau]**, **[!UICONTROL Tablette]** ou **[!UICONTROL Téléphone]** pour modifier le mode de présentation de la ressource.
 
 1. Près du coin supérieur droit de la page, effectuez l’une des opérations suivantes :
 
