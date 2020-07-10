@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '971'
 ht-degree: 2%
 
 ---
@@ -115,34 +115,6 @@ Vous pourrez ainsi effectuer le suivi des états et des actions, tels que l’em
 À titre de référence, vous pouvez jeter un oeil au code de l’application Geometrixx Outdoors. Dans l’application Geometrixx Outdoors, tous les navigations de page sont suivis à l’aide de la méthode ADB.trackState(). Pour plus d’informations, consultez le code source pour /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 En instrumentant votre code source avec ces appels de méthode, vous pouvez collecter des mesures complètes par rapport à votre application.
-
-### Test du suivi Analytics avec Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-<!--NOTE TO WRITER: Bloodhound is no longer available.-->
-
-Avant de procéder au déploiement en production, vous pouvez éventuellement utiliser l’outil Adobe [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) pour tester votre configuration Analytics. Pour tester votre configuration d’analyse, vous devez modifier votre fichier ADBMobileConfig.json afin de pointer vers le serveur sur lequel Bloodhound s’exécute au lieu du serveur Analytics réel. Pour effectuer cette modification, modifiez l’entrée suivante à partir de votre fichier ADBMobileConfig.json.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Modifier pour correspondre à cette entrée :
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-Cette opération redirige toutes les données collectées par le module externe AMS vers Bloodhound afin que vous puissiez vue les résultats.
 
 #### Propriétés de connexion à AMS {#properties-for-connecting-to-ams}
 
