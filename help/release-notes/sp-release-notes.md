@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
-source-wordcount: '4512'
+source-wordcount: '4529'
 ht-degree: 7%
 
 ---
@@ -95,7 +95,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * La fonctionnalité (ou l’objectif de l’action) des icônes d’informations (pour l’utilisation, les impressions et les clics) sur la Vue  Insights est maintenant correctement annoncée par les lecteurs d’écran (NPR-33513).
 
-* Les champs de formulaire en lecture seule (par exemple, les champs désactivés dans l’onglet  Simple des [!UICONTROL propriétés]de la ressource) peuvent désormais être activés à l’aide du clavier (NPR-33493, CQ-4273031).
+* Read-only form fields (for example disabled fields on [!UICONTROL Basic tab] of asset [!UICONTROL Properties]) are now focusable using keyboard (NPR-33493, CQ-4273031).
 
 * Les étiquettes des différents champs d&#39;entrée sont maintenant des étiquettes permanentes (donc accessibles) et pas seulement des étiquettes d&#39;espace réservé, qui ont disparu au moment de la saisie du texte (NPR-33475).
 
@@ -111,7 +111,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les états développés et réduits de la boîte de dialogue [!UICONTROL Balises] sur les [!UICONTROL propriétés] de la ressource et la navigation ferroviaire de gauche (dans l’interface utilisateur des ressources) sont maintenant correctement annoncés par les lecteurs d’écran (NPR-33396).
 
-* Les titres de toutes les pages consultées sur [!DNL Adobe Experience Manager] Assets sont désormais uniques (NPR-33343).
+* Titles of all the browsed pages on [!DNL Adobe Experience Manager] Assets are now unique (NPR-33343).
 
 * Lors de la navigation dans la structure de l&#39;arbre, divers éléments du contrôle de la vue de l&#39;arbre sont maintenant annoncés correctement par les lecteurs d&#39;écran (NPR-33304).
 
@@ -127,7 +127,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les informations indiquant que les lignes du tableau de la vue de liste peuvent être sélectionnées sont maintenant communiquées aux utilisateurs de lecteurs d’écran lorsque le clavier est activé sur ces lignes. Lorsqu’un pointeur survole les rangées, les lecteurs d’écran annoncent les informations (NPR-33234).
 
-* Les options (comportant [!UICONTROL x]) permettant de supprimer chacune des balises sélectionnées sous le champ [!UICONTROL Balises] de l’onglet [!UICONTROL Réglages de base] de [!UICONTROL Propriétés sont désormais accessibles aux lecteurs d’écran (NPR-33206).]
+* Options (having [!UICONTROL x]) to remove each of the selected tags below the [!UICONTROL Tags] field in [!UICONTROL Basic] tab of [!UICONTROL Properties] are now accessible to screen readers (NPR-33206).
 
 * Le sélecteur de dates du calendrier peut désormais être activé et activé à l’aide du clavier par les utilisateurs de lecteurs d’écran et les utilisateurs de clavier voyants (NPR-33200).
 
@@ -415,6 +415,7 @@ Il est conseillé aux clients de vérifier s’ils utilisent la fonctionnalité 
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
 | Intégrations | L’écran d’inscription **[!UICONTROL des]** AEM cloud services est obsolète. Avec l’intégration d’AEM et de Cible mise à jour dans AEM 6.5 pour la prise en charge de l’API du Target Standard, qui utilise l’authentification via Adobe IMS et E/S, et le rôle croissant de Adobe Launch pour l’instrumentation des pages AEM pour l’analyse et la personnalisation, l’assistant d’inclusion est devenu non pertinent du point de vue fonctionnel. | Configurez les connexions système, l&#39;authentification Adobe IMS et les intégrations d&#39;E/S Adobe via les AEM cloud services respectifs. |
+| Connecteurs | Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013 est obsolète pour AEM 6.5. | N/A |
 
 ## Problèmes connus {#known-issues}
 
