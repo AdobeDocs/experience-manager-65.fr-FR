@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 59%
 
 ---
 
@@ -18,20 +21,18 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Cet article permet de créer l’application AEM Forms 6.3.1.1 et versions ultérieures. For building an app from source code of source code of the AEM Forms App 6.3, see [Set up the Eclipse project and build the Android™ app](/help/forms/using/setup-eclipse-project-build-installer.md).
 
-AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application AEM Forms personnalisée. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip` is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on package share.
+AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour générer une application AEM Forms personnalisée. L&#39;archive du code source `adobe-lc-mobileworkspace-src-<version>.zip` fait partie du `adobe-aemfd-forms-app-src-pkg-<version>.zip` paquet sur la distribution de logiciels.
 
 Pour obtenir le code source de l’application AEM Forms, suivez les étapes ci-après :
 
-1. Accéder au partage de package
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Téléchargez le package source. Lorsque vous téléchargez le package, il est ajouté au gestionnaire de package AEM Forms.
-1. Une fois téléchargé, accédez à : `https://<server>:<port>/crx/packmgr/index.jsp`, puis installez `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Pour télécharger l’archive du code source, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
-
-   Le package source est téléchargé sur votre périphérique.
+1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. In the **[!UICONTROL Filters]** section:
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
+1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Select the package and click **[!UICONTROL Install]**.
 
 L&#39;image suivante affiche le contenu extrait du fichier`adobe-lc-mobileworkspace-src-<version>.zip`.
 
@@ -88,7 +89,7 @@ The following image displays the directory structure of the `android`folder in t
 
 1. Une fois le projet importé, une fenêtre contextuelle s’affiche avec une option permettant de mettre à jour le module externe Android™ Gradle. Cliquez sur le bouton approprié selon vos exigences.
 
-   ![dontremindmeagainfranisproject](assets/dontremindmeagainforthisproject.png)
+   ![projet dontremindmeagainimmédiatement](assets/dontremindmeagainforthisproject.png)
 
 1. Une fois Gradle généré, l’écran suivant s’affiche. Connectez le périphérique ou l’émulateur approprié au système et cliquez sur **[!UICONTROL Exécuter Android™]**.
 
