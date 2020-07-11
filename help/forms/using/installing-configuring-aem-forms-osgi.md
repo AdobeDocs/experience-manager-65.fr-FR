@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 85%
+source-wordcount: '1817'
+ht-degree: 79%
 
 ---
 
@@ -111,15 +111,16 @@ Avant de commencer à installer et à configurer la fonctionnalité de capture d
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des captures de données AEM Forms et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Connectez-vous au [serveur AEM](https://localhost:4502) en tant qu’administrateur, puis ouvrez le [partage de package](https://localhost:4502/crx/packageshare). Vous avez besoin d’un Adobe ID pour vous connecter au partage de package.
-1. Dans le [partage de package AEM](https://localhost:4502/crx/packageshare/login.html), recherchez les **packages de modules complémentaires AEM 6.5 Forms**, cliquez sur le package correspondant à votre système d’exploitation, puis sur **Télécharger**. Lisez et acceptez l’accord de licence, puis cliquez sur **OK**. Le téléchargement démarre. Une fois le téléchargement effectué, le mot **Téléchargé** apparaît en regard du package.
+1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. In the **[!UICONTROL Filters]** section:
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
+1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Select the package and click **[!UICONTROL Install]**.
 
-   Vous pouvez également utiliser le numéro de version pour rechercher un package de module complémentaire. Pour obtenir le numéro de version du dernier package, voir l’article [Versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
-
-1. Une fois le téléchargement terminé, cliquez sur **Téléchargé**. Vous êtes redirigé vers le gestionnaire de package. Dans le gestionnaire de packages, recherchez le package téléchargé, puis cliquez sur **Installer**.
-
-   Si vous téléchargez manuellement le package à l’aide du lien direct répertorié dans l’article [Versions AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html), connectez-vous au gestionnaire de package, cliquez sur **Télécharger le package**, sélectionnez le package téléchargé et cliquez sur Télécharger. Une fois le package téléchargé, cliquez sur son nom, puis sur **Installer**. 
-
+   Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [AEM Forms Release](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
 1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, patientez jusqu&#39;à ce que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d&#39;apparaître dans le `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` fichier et que le journal soit stable.
 1. Répétez les étapes 1 à 4 sur toutes les instances de création et de publication.
 
@@ -185,7 +186,7 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
 1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.  Cliquez sur **Enregistrer**.
+1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100. Cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
