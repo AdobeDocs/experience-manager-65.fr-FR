@@ -10,23 +10,30 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 59%
 
 ---
 
 
 # Configuration du projet Xcode et génération de l’application iOS{#set-up-the-xcode-project-and-build-the-ios-app}
 
-AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour créer l’application personnalisée AEM Forms. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip` is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on package share.
+AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour créer l’application personnalisée AEM Forms. L&#39;archive du code source `adobe-lc-mobileworkspace-src-<version>.zip` fait partie du `adobe-aemfd-forms-app-src-pkg-<version>.zip` paquet sur la distribution de logiciels.
 
 Pour obtenir le code source de l’application AEM Forms, suivez les étapes ci-après :
 
-1. Accédez au package shareURL : `https://<server>:<port>/crx/packageshare`.
+1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. In the **[!UICONTROL Filters]** section:
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
+1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Select the package and click **[!UICONTROL Install]**.
 
-1. Téléchargez le package source. Lorsque vous téléchargez le package, il est ajouté au gestionnaire de package AEM Forms.
-1. Une fois téléchargé, accédez à : `https://<server>:<port>/crx/packmgr/index.jsp`, puis installez `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Pour télécharger l’archive du code source, ouvrez `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
+1. Pour télécharger l’archive du code source, ouvrez- `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` la dans votre navigateur.
 Le package source est téléchargé sur votre périphérique.
 
 L&#39;image suivante affiche le contenu extrait du fichier`adobe-lc-mobileworkspace-src-<version>.zip`.
@@ -66,7 +73,7 @@ Pour avoir des informations détaillées sur la signature de code et l’ajout d
 
 1. Effectuez les étapes suivantes pour configurer un projet dans Xcode et fournir une identité de signature :
 
-   Connectez-vous à votre ordinateur Mac sur lequel Xcode et le SDK iOS sont installés et configurés.
+   Connectez-vous à l’ordinateur Mac sur lequel Xcode et le SDK iOS sont installés et configurés.
 
 1. Copy the `adobe-lc-mobileworkspace-src-<version>.zip` archive from the downloads folder to `[User_Home]/Projects/`.
 1. Extract the archive in the `[User_Home]/Projects/[your-project]`directory.
@@ -119,7 +126,7 @@ Pour avoir des informations détaillées sur la signature de code et l’ajout d
 
    >[!NOTE]
    >
-   >Cette étape est requise uniquement si l’application AEM Forms doit se connecter à un serveur qui ne respecte pas les exigences de sécurité du transport des applications.
+   >Cette étape n’est requise que si l’application AEM Forms doit se connecter à un serveur qui ne respecte pas les exigences de sécurité du transport des applications.
 
 1. Under **PROJECT**, select **AEM Forms** and ensure that the appropriate signature is selected for **Code Signing Identity**, **Debug**, **Release** and **Any iOS SDK**.
 1. Connectez un iPad muni d’un profil d’approvisionnement à un ordinateur Mac.
@@ -150,7 +157,7 @@ Vous devez archiver le projet Xcode pour générer le programme d’installatio
 1. Sélectionnez **Enregistrer pour déploiement en entreprise ou ad hoc** comme méthode de distribution et cliquez sur **Suivant**.
 1. Sélectionnez l’identité de signature qui convient dans le champ **Code Signing Identity** et cliquez sur **Next**. Cliquez sur **Allow** (Autoriser) pour appliquer la signature.
 1. Indiquez le nom de l’application et sélectionnez **Enregistrer pour distribution en entreprise**.
-1. Indiquez l’URL de l’application dans le champ **Application URL**. Par exemple, pour héberger l’application sur un serveur CRX, indiquez l’URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
+1. Indiquez l’URL de l’application dans le champ **Application URL**. Par exemple, pour héberger l’application sur un serveur CRX, fournissez l’URL `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`.
 1. Dans le champ **Titre**, indiquez AEM Forms.
 1. Cliquez sur **Enregistrer** et fermez Xcode.
 
