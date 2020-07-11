@@ -4,21 +4,21 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 7%
+source-wordcount: '1873'
+ht-degree: 8%
 
 ---
 
 
 # Nouveautés d’Adobe Experience Manager 6.5 Service Pack 5 {#aem-whats-new-service-pack-5}
 
-Les Service Packs d’Adobe Experience Manager 6.5 offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des performances, une stabilité et des améliorations de sécurité à intervalles trimestriels. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
+Les Service Packs Adobe Experience Manager 6.5 offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des améliorations des performances, de la stabilité et de la sécurité à tous les trimestres. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
 
-Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et certaines des versions [clés depuis la version 6.5.4.0](#key-releases-since-last-sp) d’Experience Manager.
+Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et certaines des versions [clés depuis la version 6.5.4.0](#key-releases-since-last-sp) du Experience Manager.
 
-## Sites Adobe Experience Manager {#aem-sites}
+## Sites Adobes Experience Manager {#aem-sites}
 
 ### Améliorations de l’accessibilité {#accessibility-sites}
 
@@ -76,15 +76,15 @@ La prise en charge des images 3D dans [!DNL Dynamic Media] permet aux clients de
 
 ## Formulaires Adobe Experience Manager {#aem-forms}
 
-### Personnalisation des colonnes de la boîte de réception Adobe Experience Manager {#customize-aem-inbox-columns}
+### Personnalisation des colonnes de la boîte de réception des Adobes Experience Manager {#customize-aem-inbox-columns}
 
-Vous pouvez personnaliser une [!DNL Experience Manager] boîte de réception pour modifier le titre par défaut d&#39;une colonne, réorganiser la position d&#39;une colonne et afficher d&#39;autres colonnes en fonction des données d&#39;un flux de travail. Les membres de `administrators` ou `workflow-administrators` de groupe peuvent personnaliser les colonnes.
+Vous pouvez personnaliser une [!DNL Experience Manager] boîte de réception pour modifier le titre par défaut d&#39;une colonne, réorganiser la position d&#39;une colonne et afficher d&#39;autres colonnes en fonction des données d&#39;un flux de travail. Les membres de `administrators` ou `workflow-administrators` de groupe peuvent personnaliser les colonnes. Pour plus d’informations, voir Contrôle [](../sites-authoring/inbox.md#inbox-admin-control)d’administration.
 
-![Personnalisation des colonnes de la boîte de réception Experience Manager](assets/customize-columns.gif)
+![Personnalisation des colonnes de la boîte de réception des Experience Manager](assets/customize-columns.gif)
 
 ### Enregistrer les communications interactives en tant que brouillon {#save-as-draft}
 
-Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un ou plusieurs brouillons pour chaque communication interactive et récupérer le brouillon ultérieurement pour continuer à travailler dessus. Vous pouvez spécifier un nom différent pour chaque brouillon afin de l’identifier.
+Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un ou plusieurs brouillons pour chaque communication interactive et récupérer le brouillon ultérieurement pour continuer à travailler dessus. Vous pouvez spécifier un nom différent pour chaque brouillon afin de l’identifier. Pour plus d’informations, voir [Enregistrer les communications interactives en tant que brouillon](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Enregistrer en tant que brouillon](assets/save-as-draft.gif)
 
@@ -104,7 +104,7 @@ Adobe Experience Manager Forms comprend les améliorations d’accessibilité su
 
 ### Authentification par certificat X-509 pour les services Web SOAP dans le modèle de données de formulaire {#x509-based-authentication-soap}
 
-Le modèle de données de formulaire prend désormais en charge l’authentification par certificat X-509 lors de l’utilisation des services Web SOAP en tant que source de données.
+Le modèle de données de formulaire prend désormais en charge l’authentification par certificat X-509 lors de l’utilisation des services Web SOAP en tant que source de données. Pour plus d’informations, voir [Configuration des services](../forms/using/configure-data-sources.md#configure-soap-web-services)Web SOAP.
 
 ### Autres améliorations clés {#other-improvements}
 
@@ -112,7 +112,7 @@ Le modèle de données de formulaire prend désormais en charge l’authentifica
 
 * Prise en charge Ajoutée pour [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
-## Principales fonctionnalités des Service Packs version 6.5 d’Experience Manager précédents {#key-features-previous-service-packs}
+## Principales fonctionnalités des Service Packs version 6.5 du Experience Manager précédent {#key-features-previous-service-packs}
 
 ### Experience Manager Sites {#aem-sites-previous-service-packs}
 
@@ -153,21 +153,21 @@ Par exemple, `On Time (MM-DD-YYYY HH:mm)`. Ici MM est le mois en format à deux 
 
 #### Recherche visuelle pour [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
-[!DNL Assets] les utilisateurs peuvent rechercher des images visuellement similaires. Experience Manager affiche les images balisées intelligentes du référentiel DAM qui sont similaires à une image sélectionnée par l’utilisateur. See [Visual search](../assets/search-assets.md).
+[!DNL Assets] les utilisateurs peuvent rechercher des images visuellement similaires. Le Experience Manager affiche les images balisées intelligentes du référentiel DAM qui sont similaires à une image sélectionnée par l’utilisateur. See [Visual search](../assets/search-assets.md).
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
-#### Smart Imaging for Dynamic Media {#smart-imaging}
+#### Smart Imaging pour Dynamic Media {#smart-imaging}
 
 L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
 
-#### Recadrage intelligent dans les profils vidéo pour les médias dynamiques (6.5.3.0) {#smart-crop-video}
+#### Recadrage intelligent dans les profils vidéo pour Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les profils vidéo) est un outil qui utilise la puissance de l’intelligence artificielle d’Adobe Sensei pour détecter et rogner automatiquement le point focal dans toute vidéo adaptative ou progressive que vous avez chargée, quelle que soit sa taille. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Générer une sortie imprimable dans les workflows Experience Manager Forms (6.5.4.0) {#generate-printable-output}
+#### Générer une sortie imprimable dans les workflows de formulaires Experience Manager (6.5.4.0) {#generate-printable-output}
 
 L’étape de flux de travail Générer une sortie imprimable vous permet d’intégrer un fichier de modèle source à un fichier de données. Cette intégration vous permet d’imprimer ou d’enregistrer différentes copies du fichier de modèle. L’étape génère une sortie PCL, PostScript, ZPL, IPL, TPCL ou DPL. Pour plus d’informations sur cette fonctionnalité, voir Flux de travaux [Forms sur OSGi - Guide de référence](../forms/using/aem-forms-workflow-step-reference.md)des étapes.
 
@@ -201,7 +201,7 @@ Experience Manager Forms comprend les améliorations d’accessibilité suivante
 
 * Chaque page d’un formulaire adaptatif comprend désormais un titre et une étiquette de repère principale.
 
-#### Partage et demande l’accès aux éléments de boîte de réception d’un utilisateur d’Experience Manager Forms (6.5.3.0) {#share-request-access}
+#### Partager et demander l’accès aux éléments de boîte de réception d’un utilisateur Forms Experience Manager (6.5.3.0) {#share-request-access}
 
 Vous pouvez partager vos éléments de boîte de réception avec un autre utilisateur. Une fois qu&#39;un autre utilisateur a accès à vos éléments de boîte de réception, il peut demander et prendre les mesures appropriées sur les éléments partagés. De même, vous pouvez demander l’accès aux éléments de boîte de réception à d’autres utilisateurs. Voir [Partage et demande d’accès aux éléments de boîte de réception d’un utilisateur](../forms/using/configure-shared-queues-osgi.md).
 
@@ -210,7 +210,7 @@ Vous pouvez partager vos éléments de boîte de réception avec un autre utilis
 Si vous prévoyez d’être absent du bureau, vous pouvez indiquer ce qui se passe pour les éléments qui vous sont affectés pour cette période.
 Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et une heure de fin, pour l’application de vos paramètres d’absence du bureau. Vous pouvez définir une personne par défaut à laquelle tous vos éléments sont envoyés. Voir [Configuration des paramètres](../forms/using/configure-out-of-office-settings.md)d’absence du bureau.
 
-#### Générer plusieurs communications interactives à l’aide de l’API de lot pour AEM Forms (6.5.3.0) {#generate-multiple-ic}
+#### Générer plusieurs communications interactives à l’aide de l’API Batch pour les AEM Forms (6.5.3.0) {#generate-multiple-ic}
 
 Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API de traitement par lots combine les données avec un modèle pour produire une communication interactive. L&#39;API est utile pour la production de masse de communications interactives. Par exemple, factures de téléphone, relevés de carte de crédit pour plusieurs clients. Voir [Générer plusieurs communications interactives à l’aide de l’API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)de traitement par lot.
 
@@ -218,17 +218,17 @@ Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs comm
 
 Entre le 05 mars 2020 et le 04 juin 2020, Adobe a publié ce qui suit, en plus des Service Packs et des Fix Packs cumulatifs :
 
-* [Le portail](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribution de logiciels permet de télécharger les Service Packs d’Experience Manager, les packs de correctifs cumulatifs, les correctifs logiciels et les packs de fonctionnalités.
+* [Le portail](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribution de logiciels permet de télécharger des Service Packs Experience Manager, des packs de correctifs cumulatifs, des correctifs logiciels et des packs de fonctionnalités.
 
 * [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)et [2020.5.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
 
-* [Application de bureau Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+* [application de bureau Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
-* [Ecrans d’Experience Manager : Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Écrans du Experience Manager : Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
->* [Documentation d’Adobe Experience Manager 6.5](../user-guide/home.md)
+>* [Documentation sur l’Adobe Experience Manager 6.5](../user-guide/home.md)
 >* [Notes de mise à jour générales pour Adobe Experience Manager 6.5](release-notes.md)
 >* [Notes de mise à jour du Service Pack pour Adobe Experience Manager 6.5](sp-release-notes.md)
 
