@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 77%
+source-wordcount: '2470'
+ht-degree: 74%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 77%
 
 L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des formulaires mobiles et des jeux de formulaires sur les périphériques mobiles, en fonction de votre serveur. Vous pouvez définir des processus en tant que [Processus spécifiques à Forms on OSGi](/help/forms/using/aem-forms-workflow.md) ou [Processus Forms on JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application). Par exemple, vous dirigez un établissement bancaire et utilisez AEM Forms pour gérer les demandes et les communications de vos clients. Vos clients remplissent un formulaire et le soumettent pour vérification. Si vous activez le formulaire sur des périphériques mobiles, vos clients peuvent remplir le formulaire dans l’application AEM Forms. Vous pouvez également gérer le processus de vérification en activant le formulaire de vérification sur les périphériques mobiles. Votre agent de terrain peut apporter un périphérique mobile au client, vérifier les détails et envoyer le formulaire. L’application AEM Forms se synchronise avec le serveur AEM Forms et récupère les formulaires compatibles avec les périphériques mobiles. Si l’application est hors ligne, elle enregistre les données localement.
 
-Le code source de l’application AEM Forms est accessible via le partage de packages. The source code package in package share is available as: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+Le code source de l&#39;application AEM Forms est disponible pour les clients via la distribution de logiciels. Le package de code source de Software Distribution est disponible sous la forme : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 L’application AEM Forms est prise en charge sur les périphériques iOS, Android, Windows. Vous pouvez installer une application AEM Forms pour Android depuis Google Play, iOS depuis l’App Store et Windows depuis le Windows Store.
 
@@ -179,20 +179,18 @@ Pour plus d’informations sur la configuration d’un projet d’application AE
 
 ### Créer et distribuer {#build-and-distribute}
 
-Le code source de l’application AEM Forms peut être extrait à partir du fichier adobe-lc-mobileworkspace-src.zip disponible dans le package source de l’application AEM Forms sur le partage de package.
+The source code for the AEM Forms app can be extracted from the `adobe-lc-mobileworkspace-src.zip` that is available as part of the AEM Forms app source package on Software Distribution.
 
 Pour obtenir le code source de l’application AEM Forms, suivez les étapes ci-après :
 
-1. Accédez au partage de package
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Téléchargez le package source. Lorsque vous téléchargez le package, il est ajouté au gestionnaire de package AEM Forms.
-1. Une fois téléchargé, accédez à : `https://<server>:<port>/crx/packmgr/index.jsp`, puis installez `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Pour télécharger le package, ouvrez-le `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` dans votre navigateur.
-
-   Le package source est téléchargé sur votre périphérique.
+1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
+1. In the **[!UICONTROL Filters]** section:
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
+1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
+1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Select the package and click **[!UICONTROL Install]**.
 
 **Pour iOS** :
 
