@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 67%
+source-wordcount: '1653'
+ht-degree: 68%
 
 ---
 
@@ -39,22 +39,13 @@ AEM 6.5 est livré avec le module 1.2.6 de Livefyre pré-installé. Ce module in
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Return to the AEM homepage, click Tools, then navigate to **Deployment > Package Share**.
+1. Téléchargez le package Livefyre à partir de [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-   Une liste des feature packs et des correctifs disponibles en téléchargement s’affiche.
-
-1. Dans la recherche par mot-clé, recherchez « Livefyre », puis sélectionnez le feature pack Livefyre correspondant à votre version d’AEM.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. On the feature pack information page, click **Download**, then read the Package License Agreement and click **Accept**.
-1. Return to the Package Manager, locate the newly downloaded package, and click **Install**.
+1. A partir de Package Manager, installez le package téléchargé. See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Le module Livefyre-AEM est maintenant installé. Pour pouvoir commencer à utiliser les fonctionnalités d’intégration, vous devez configurer AEM pour utiliser Livefyre.
-
-   For more information on packages, see [How to Work With Packages](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/package-manager.html).
 
    For more information and release notes on feature packs, see [Feature Packs](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
@@ -176,6 +167,7 @@ Pour importer du contenu généré par l’utilisateur dans AEM Assets :
 
    * **Demande manuelle de droits** pour obtenir un message qui peut être copié et collé et envoyé manuellement aux propriétaires de contenu via Instagram.
    * **Attribuer manuellement les droits** sur le contenu pour remplacer les droits des ressources individuelles.
+
    >[!NOTE]
    >
    >En raison des mises à jour affectant l&#39;agrégation du contenu des comptes d&#39;utilisateurs non-professionnels, nous ne pouvons plus publier de commentaires en votre nom ou vérifier automatiquement les réponses de l&#39;auteur. [Cliquez ici pour en savoir plus](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
