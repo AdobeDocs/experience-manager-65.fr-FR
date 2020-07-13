@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
@@ -27,10 +27,10 @@ La `Leaderboard` composante permet d&#39;obtenir une idée de la façon dont les
 
 Avant d’inclure le composant de tableau de bord dans une page, il est nécessaire de configurer le score et les badges [des communautés](/help/communities/implementing-scoring.md).
 
-Cette section de la documentation décrit :
+Cette section de la documentation décrit:
 
-* Ajouter le `Leaderboard` composant à un site [communautaire](/help/communities/overview.md#community-sites)
-* Configuration settings for the `Leaderboard` component
+* Ajouter le `Leaderboard` composant à un site [](/help/communities/overview.md#community-sites)communautaire.
+* Configuration settings for the `Leaderboard` component.
 
 ### Adding a Leaderboard to a Page {#adding-a-leaderboard-to-a-page}
 
@@ -44,17 +44,19 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 Placé pour la première fois sur une page d’un site de communauté, voici à quoi ressemble le composant :
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Configuration de Leaderboard {#configuring-leaderboard}
 
 Select the placed `Leaderboard` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-20](assets/chlimage_1-20.png) ![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### Onglet Settings {#settings-tab}
 
-Sous l&#39;onglet **Paramètres** , spécifiez les informations relatives au membre qui s&#39;affichent :
+Sous l&#39;onglet **[!UICONTROL Paramètres]** , spécifiez les informations relatives au membre qui s&#39;affichent :
 
 * **Nom d’affichage**
 
@@ -118,7 +120,7 @@ Configuration du composant de tableau de bord :
    * Règle d’attribution des badges = `/libs/settings/community/badging/rules//reference-badging`
    * Limite d’affichage = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Exemple : Tableau de bord des experts {#example-experts-leaderboard}
 
@@ -141,7 +143,7 @@ Configuration du composant de tableau de bord :
    * Règle d’attribution des badges = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Limite d’affichage = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Informations supplémentaires {#additional-information}
 
