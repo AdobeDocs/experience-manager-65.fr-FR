@@ -10,16 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 7%
 
 ---
 
 
-# Contenu phare Essentials {#featured-content-essentials}
+# Contenu phare Essentials  {#featured-content-essentials}
 
-Cette page fournit les informations essentielles pour travailler avec le contenu incitatif.
+Cette page fournit les informations essentielles pour manipuler le contenu incitatif.
 
-Contrairement à l’épinglage d’une publication en haut d’un forum, cette fonction permet de mettre en évidence le contenu n’importe où sur le site de la communauté.
+Contrairement à l&#39;épinglage d&#39;une publication en haut d&#39;un forum, cette fonction permet de mettre en évidence le contenu n&#39;importe où sur le site de la communauté.
+
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -27,7 +31,7 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/commons/components/hbs/featuredcontent</td>
+   <td>social/commons/composants/hbs/contenu incitatif</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
@@ -56,4 +60,4 @@ Contrairement à l’épinglage d’une publication en haut d’un forum, cette 
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de la communauté qui inclut la fonction [Contenu](functions.md#featured-content-function)proposé, comprend un `featured content` composant configuré.
+Une structure de site communautaire qui comprend la fonction [Contenu](functions.md#featured-content-function)proposé, comprend un `featured content` composant configuré.
