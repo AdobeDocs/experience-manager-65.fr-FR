@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 3%
@@ -59,7 +59,7 @@ Une limitation connue expose le contenu du site communautaire à des visiteurs a
 
 Pour protéger le contenu de votre site communautaire contre l’accès d’utilisateurs anonymes par le biais de contenu jcr et json, procédez comme suit :
 
-1. Sur l’instance de AEM Author, accédez à https://&lt;hôte>:&lt;port>/editor.html/content/site/&lt;nom du site>.html.
+1. Sur l’instance d’auteur AEM, accédez à https://&lt;hôte>:&lt;port>/editor.html/content/site/&lt;nom du site>.html.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ Sur l’auteur, accédez à la console **[Communautés,](resources.md)**Ressourc
 * Toutes les ressources d’activation et tous les chemins d’apprentissage
 * Une ressource d&#39;activation ou un chemin d&#39;apprentissage spécifique
 
-Accédez aux **Communautés, à la console[](reports.md)**Rapports et générez des rapports selon les
+Accédez à la console **[Communautés,](reports.md)**Rapports et générez des rapports selon les méthodes suivantes :
 
 * Affectations aux ressources d’activation et aux chemins d’apprentissage
 * Publications sur un site communautaire au cours d’une période spécifique
@@ -203,11 +203,10 @@ Accédez aux **Communautés, à la console[](reports.md)**Rapports et générez 
 
 Avec un peu d&#39;activité et d&#39;interaction avec les ressources sur la publication, l&#39;affichage des rapports sur l&#39;auteur vaut la peine d&#39;être regardé.
 
-* Sur l’auteur
-* Connexion avec des droits d’administrateur
-* Accédez à **[!UICONTROL Communautés > Ressources à partir du menu principal.]**
-* Sélectionner le `Enablement Tutorial` site
-* Sélectionner l&#39; `Report` icône pour un résumé de toutes les ressources
+* Sur l’auteur, connectez-vous avec des privilèges d’administration.
+* Dans le menu principal, sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Ressources]**.
+* Sélectionnez le `Enablement Tutorial` site.
+* Sélectionnez l&#39; `Report` icône représentant un résumé de toutes les ressources.
 * Sélectionnez une ressource, puis l&#39; `Report` icône d&#39;un rapport sur cette ressource.
 
 Notez qu’il est probablement trop tôt pour afficher les données d’Adobe Analytics, qui peuvent prendre de 1 à 12 heures pour apparaître. Toutefois, le rapports SCORM de base est déjà disponible.
@@ -236,9 +235,8 @@ La console Rapports permet la génération de rapports sur
 
 Pour les rapports sur les affectations :
 
-* Sur l’auteur
-* Connexion avec des droits d’administrateur
-* Accédez à **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]** > Rapport **[!UICONTROL Affectations.]**
+* Sur l’auteur, connectez-vous avec des privilèges d’administration.
+* Accédez à **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]** > Rapport **** Affectations.
 * Sélectionnez un **[!UICONTROL site]** dans le menu déroulant (sélectionnez `Enablement Tutorial`).
 
 * Sélectionner un **[!UICONTROL groupe]** (sélectionner `Community Ski Class`)
@@ -251,15 +249,15 @@ Pour les rapports sur les affectations :
 
 Pour les rapports sur les vues :
 
-* Sur l’auteur, connectez-vous avec des privilèges d’administration
-* Accédez à **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]** > Rapport **[!UICONTROL Vues.]**
+* Sur l’auteur, connectez-vous avec des privilèges d’administration.
+* Accédez à **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]** > Rapport **** Vues.
 * Sélectionnez un **site **dans le menu déroulant (sélectionnez`Enablement Tutorial`).
 
-* Sélectionner le type **[!UICONTROL de]** contenu (sélectionner `all`)
+* Sélectionnez Type **[!UICONTROL de]** contenu (sélectionnez `all`).
 
-* Sélectionner une plage **[!UICONTROL de]** dates (sélectionner `Last 7 days`)
+* Sélectionnez une plage **[!UICONTROL de]** dates (sélectionnez `Last 7 days`).
 
-* Sélectionner **[!UICONTROL Générer]**
+* Sélectionnez **[!UICONTROL Générer]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
