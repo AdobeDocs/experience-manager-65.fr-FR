@@ -3,9 +3,9 @@ title: Notes de mise à jour des Service Pack précédents Adobe Experience Mana
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Service Pack 3 et versions antérieures.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '8102'
+source-wordcount: '8108'
 ht-degree: 36%
 
 ---
@@ -506,7 +506,7 @@ Remove one mention of this fix.
 
 * Le service Web SOAP utilisant MTOM dans un projet .NET affiche des exceptions pour les méthodes d’appel AssemblerServiceClient et HtmlToPDF2 (NPR-4281771).
 
-* Les versions 1.4 et 1.4.1 de jar Axis comportent une vulnérabilité de sécurité (NPR-31015).
+* [Les versions 1.4 et 1.4.1](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html) de jar Axis comportent une vulnérabilité de sécurité (NPR-31015).
 
 **Foundation JEE**
 
