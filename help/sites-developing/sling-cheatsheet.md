@@ -10,16 +10,16 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c5ce62ad-ce9f-4681-bf85-78f7e72e1506
 translation-type: tm+mt
-source-git-commit: 95c23d29aa1dd1695ed4e541dd11c2bbc7214f75
+source-git-commit: c6b1d651940b5c556dea81d19354aac36d14b423
 workflow-type: tm+mt
-source-wordcount: '22'
-ht-degree: 63%
+source-wordcount: '36'
+ht-degree: 38%
 
 ---
 
 
 # Aide-mémoire pour Sling{#sling-cheatsheet}
 
-![Présentation de la résolution du script Apache Sling](assets/sling-cheatsheet-01.png)
+![Présentation de la résolution du script Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Utilisation de SlingPostServlet](assets/sling-cheatsheet-02.png)
+![Utilisation de SlingPostServlet : il s’agit du gestionnaire par défaut pour vos requêtes POST ; il peut faire pratiquement n&#39;importe quoi.](assets/sling-cheatsheet-02.png)
