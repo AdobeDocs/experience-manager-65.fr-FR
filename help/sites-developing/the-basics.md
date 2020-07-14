@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+source-git-commit: d621a612556f0bea032444c2e07be101868b1905
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3371'
 ht-degree: 77%
 
 ---
@@ -68,11 +68,11 @@ See [Discover Sling in 15 minutes](https://sling.apache.org/documentation/gettin
 
 Le schéma suivant explique la résolution du script sling : il montre comment passer de la requête HTTP au nœud de contenu, du nœud de contenu au type de ressource, du type de ressource au script, ainsi que les variables de script sont disponibles.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
+![Présentation de la résolution du script Apache Sling](assets/sling-cheatsheet-01.png)
 
 Le schéma suivant décrit tous les paramètres de requête invisibles, mais puissants, que vous pouvez utiliser avec SlingPostServlet, le gestionnaire par défaut pour toutes les requêtes POST. Ce dernier offre des options infinies pour créer, modifier, supprimer, copier et déplacer des nœuds dans le référentiel.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![Utilisation de SlingPostServlet](assets/sling-cheatsheet-02.png)
 
 ### Sling est centré sur le contenu {#sling-is-content-centric}
 
@@ -185,7 +185,7 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
 * URL dans d’autres formats, ne se terminant pas par .html
 
-   Par exemple `../content/corporate/jobs/developer.pdf`
+   Par exemple, `../content/corporate/jobs/developer.pdf`
 
    Le script sera `/apps/hr/jobs/jobs.pdf.esp`; le suffixe est ajouté au nom du script.
 
