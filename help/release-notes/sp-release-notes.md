@@ -4,7 +4,7 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
+source-git-commit: 97714abf86a80f6b3d1c68c85ccf443482da22bf
 workflow-type: tm+mt
 source-wordcount: '4529'
 ht-degree: 7%
@@ -155,7 +155,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les lecteurs d’écran annoncent maintenant l’objectif des étiquettes sur les commandes pour passer aux mois suivants et aux mois précédents dans le sélecteur de dates du calendrier (NPR-32604).
 
-* Les icônes d&#39;évaluation des étoiles peuvent désormais être activées et activées à l&#39;aide des touches du clavier (NPR-32513).
+* Les icônes d’évaluation des étoiles peuvent désormais être activées et activées à l’aide des touches du clavier (NPR-32513).
 
 * La fonctionnalité de contrôle du volume vidéo est désormais accessible via la tabulation (pour mettre l&#39;accent sur le curseur de volume) et les touches fléchées (pour régler le volume) sur le clavier (NPR-32065).
 
@@ -368,7 +368,7 @@ B. Utilisez l’API [HTTP de Package Manager](https://docs.adobe.com/content/doc
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.10.6 or higher (Use Web Console: `/system/console/bundles`).
+1. The OSGI bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or higher (Use Web Console: `/system/console/bundles`).
 
 Pour connaître les plates-formes certifiées pour fonctionner avec cette version, voir les exigences [](/help/sites-deploying/technical-requirements.md)techniques.
 
