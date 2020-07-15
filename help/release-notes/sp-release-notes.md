@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 97714abf86a80f6b3d1c68c85ccf443482da22bf
+source-git-commit: a599a1c75a1933d6b21e60e96485f43a0aedd679
 workflow-type: tm+mt
-source-wordcount: '4529'
+source-wordcount: '4496'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 7%
 | Version | 6.5.5.0 |
 | Type | Version du Service Pack |
 | Date  | 4 juin 2020 |
-| URL de téléchargement | [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.5.0-Service-Pack), distribution [de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
+| URL de téléchargement | [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip) |
 
 ## Éléments inclus dans l’Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
@@ -155,7 +155,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les lecteurs d’écran annoncent maintenant l’objectif des étiquettes sur les commandes pour passer aux mois suivants et aux mois précédents dans le sélecteur de dates du calendrier (NPR-32604).
 
-* Les icônes d’évaluation des étoiles peuvent désormais être activées et activées à l’aide des touches du clavier (NPR-32513).
+* Les icônes d&#39;évaluation des étoiles peuvent désormais être activées et activées à l&#39;aide des touches du clavier (NPR-32513).
 
 * La fonctionnalité de contrôle du volume vidéo est désormais accessible via la tabulation (pour mettre l&#39;accent sur le curseur de volume) et les touches fléchées (pour régler le volume) sur le clavier (NPR-32065).
 
@@ -340,7 +340,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 Effectuez les étapes suivantes pour installer le Service Pack sur une instance d’Adobe Experience Manager 6.5 existante :
 
-1. Téléchargez le Service Pack depuis [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/AEM-6.5.5.0-Service-Pack) ou Distribution [de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)logiciels.
+1. Téléchargez le Service Pack depuis [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
 
 1. Ouvrez Package Manager et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package. Pour savoir comment l’utiliser, voir [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html).
 
