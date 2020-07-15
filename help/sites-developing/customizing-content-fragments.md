@@ -239,19 +239,13 @@ Content Fragments are fully integrated with the [AEM translation workflow](/help
 
 ## [com.adobe.cq.dam.cfm[#$tu130]
 
-
-
-
-
 >Interfaces principales  {#key-interfaces}
 >
 >Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 ### **Modèle de fragment** ([FragmentTemplate[#$tu136])
 
-
-
-* 
+* **Fragment Template** ([FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
    un modèle de fragment de contenu utilisé pour créer un fragment de contenu ;`FragmentTemplate.createFragment()`
 
@@ -263,8 +257,8 @@ Content Fragments are fully integrated with the [AEM translation workflow](/help
 
    et (après la création) les informations structurelles de ce fragment
 
-   * Ces informations peuvent inclure les éléments suivants :
-   * Accès aux données de base (titre et description)
+    * Ces informations peuvent inclure les éléments suivants :
+    * Accès aux données de base (titre et description)
 
    Accès aux modèles pour les éléments du fragment :
 
@@ -286,12 +280,12 @@ Content Fragments are fully integrated with the [AEM translation workflow](/help
    Obtention des informations de base (nom et titre)
 
    * `ElementTemplate`
-   
+
      * Obtention du contenu de l’élément initial
 
-    * `VariationTemplate`
+   * `VariationTemplate`
     
-      * Obtention des informations de base (nom, titre et description)
+     * Obtention des informations de base (nom, titre et description)
       
 * **Fragment de contenu** ([ContentFragment[#$tu159])
 
