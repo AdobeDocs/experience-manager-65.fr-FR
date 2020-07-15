@@ -274,29 +274,26 @@ Content Fragments are fully integrated with the [AEM translation workflow](/help
       * Accès au modèle d’élément (voir `ElementTemplate`)
       * Accès aux modèles pour les variations du fragment :
       * Établissement de la liste des modèles de variations`ElementTemplate`
+      
    * Obtenir des informations structurelles pour une variation donnée
 
       * Accès au modèle de variation (voir `VariationTemplate`)
       * Obtention du contenu associé initial
       * Interfaces qui représentent des informations importantes :`VariationTemplate`
+      
    * `ElementTemplate`
 
    Obtention des informations de base (nom et titre)
 
-   * `ElementTemplate`Obtention du contenu de l’élément initial
+   * `ElementTemplate`
+   
+     * Obtention du contenu de l’élément initial
 
-      * `VariationTemplate`
+    * `VariationTemplate`
+    
       * Obtention des informations de base (nom, titre et description)
-   * **Fragment de contenu** ([ContentFragment[#$tu159])
-
-      * 
-
-
-
-
-
-
-* 
+      
+* **Fragment de contenu** ([ContentFragment[#$tu159])
 
    Il est fortement recommandé d’accéder à un fragment par l’intermédiaire de cette interface. La modification directe de la structure de contenu doit être évitée.
 
@@ -313,8 +310,8 @@ Content Fragments are fully integrated with the [AEM translation workflow](/help
       * Création des éléments (voir [Restrictions](#caveats))
       * Accès aux données des éléments (voir `ContentElement`)
       * Établissement de la liste des variations définies pour le fragment[](#caveats)
-
       * Création des variations de manière globale`ContentElement`
+      
    * Gestion du contenu associé :
    * Établissement de la liste des collections
    * Ajout de collections
@@ -322,11 +319,8 @@ Content Fragments are fully integrated with the [AEM translation workflow](/help
       * Suppression de collections
       * Accès au modèle du fragment
       * Les interfaces représentant les éléments clés d’un fragment sont :
+      
    * **Élément de contenu** ([ContentElement[#$tu180])
-
-   
-
-   * 
 
       * Accès aux variations d’un élément :
       * Établissement de la liste des variations
