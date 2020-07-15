@@ -112,9 +112,9 @@ Toutes les informations d’un fragment ne correspondant pas à du contenu (tell
 
 `/content/dam`
 
-Autorisations de ressources {#asset-permissions}
+#### Autorisations de ressources {#asset-permissions}
 
-#### Pour plus d’informations, voir [Fragments de contenu – considérations sur la suppression](/help/assets/content-fragments/content-fragments-delete.md).
+Pour plus d’informations, voir [Fragments de contenu – considérations sur la suppression](/help/assets/content-fragments/content-fragments-delete.md).
 
 Intégration de fonction {#feature-integration}](/help/assets/content-fragments/content-fragments-delete.md)
 
