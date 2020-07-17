@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
 workflow-type: tm+mt
-source-wordcount: '4685'
+source-wordcount: '5004'
 ht-degree: 3%
 
 ---
@@ -222,6 +222,48 @@ Cette section contient des détails et des instructions sur la configuration du 
 1. Fournissez l’ID de client et la clé secrète client configurés à partir de l’instance Adobe Sign configurée.
 1. Cliquez sur &quot;Se connecter à Adobe Sign&quot;.
 1. Une fois la connexion établie, cliquez sur &quot;Enregistrer et fermer&quot; pour terminer l’intégration.
+
+### Remplir et signer plusieurs formulaires {#fill-sign-multiple-forms}
+
+Ce document explique les étapes nécessaires pour configurer la capacité de remplir et de signer plusieurs formulaires. Vous pouvez également essayer la [même fonctionnalité ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Cet exemple stocke les données nécessaires pour cet exemple dans le référentiel AME. Cela permet de déployer sans difficulté des ressources de démonstration sur votre serveur local. Dans la vie réelle, nous stockerons les mêmes informations dans le SGDR de votre choix.
+
+#### Conditions préalables {#pre-requisites-fill-sign-multiple-forms}
+
+* [Configuration du service de messagerie Day CQ](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
+
+* [Configuration de AEM Forms avec Adobe Sign](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
+
+#### Configuration de l’exemple sur le serveur local {#setup-sample-local-server}
+
+Effectuez les étapes suivantes pour configurer l’exemple sur le serveur local :
+
+1. Installez le package. Ce package contient les éléments suivants :
+   * Formulaires adaptatifs. Les formulaires se trouvent dans le dossier **formsandsigndemo** .
+   * Offres groupées OSGI personnalisées
+   * Workflows   
+1. Configurez le formulaire [de](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) consentement pour utiliser votre configuration Adobe Sign.
+1. Configurez le formulaire de verrouillage [d’intérêt](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) à états multiples pour utiliser votre configuration Adobe Sign.
+1. Open [Formsandsigningdemo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) workflow model :
+   1. Ouvrez l’étape Enregistrer les formulaires dans CRX.
+   1. Remplacez localhost par l’adresse ip de votre serveur AEM.
+   1. Enregistrez vos modifications.
+   1. Synchronisez le processus pour générer le modèle d’exécution.
+
+      ![Signature de plusieurs formulaires](assets/sign-multiple-forms.jpg)
+
+   1. Ouvrez le formulaire [de](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)refinancement.
+   1. Renseignez les champs obligatoires. Veillez à fournir une adresse électronique valide et sélectionnez un ou plusieurs formulaires à signer et envoyer.
+Vous recevez un e-mail avec un lien pour remplir et signer les formulaires.
+
+#### Résolution des incidents {#troubleshoot-sign-multiple-forms}
+
+* Les journaux de débogage sont consignés dans `signingmultipleforms.log` le fichier du dossier de journalisation de votre serveur.
+
+* Les formulaires à signer sont stockés sous `/content/formsforsigning`.
+
+* Assurez-vous que tous les lots sont à l’état actif.
+
+* Vérifiez la configuration de votre serveur de messagerie.
 
 ### (Facultatif) Configuration de MS Dynamics cloud {#ms-dynamics-cloud-configuration}
 
