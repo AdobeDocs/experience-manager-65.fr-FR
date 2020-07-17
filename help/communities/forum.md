@@ -1,8 +1,8 @@
 ---
 title: Fonction Forum
 seo-title: Fonction Forum
-description: Comment ajouter et configurer la fonction du forum
-seo-description: Comment ajouter et configurer la fonction du forum
+description: Comment ajouter et configurer la fonction de forum
+seo-description: Comment ajouter et configurer la fonction de forum
 uuid: e69be4e1-c9d5-4d51-8e7e-609e5460e378
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 35%
 
 ---
 
@@ -22,8 +25,8 @@ source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 La fonction Forum offre un espace aux visiteurs connectés (membres de la communauté) dans l’environnement de publication pour leur permettre de :
 
-* Création de nouvelles rubriques
-*  et répondre à des sujets
+* Créer de nouvelles rubriques
+* Vue et réponse aux rubriques
 * Suivre une rubrique
 * Rechercher un forum
 * Aider à modérer le contenu du forum
@@ -31,8 +34,8 @@ La fonction Forum offre un espace aux visiteurs connectés (membres de la commun
 
 Cette section de la documentation décrit:
 
-* Ajout de la fonctionnalité de forum à un site AEM.
-* Configuration settings for the `Forum`component.
+* Ajouter la fonctionnalité de forum à un site AEM.
+* Configuration settings for the `Forum` component.
 
 ### Ajout d’un forum à une page {#adding-a-forum-to-a-page}
 
@@ -44,15 +47,17 @@ et faites glisser le composant sur la page où le forum doit être visible.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum`component will appear :
+When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum` component will appear:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Configuration d’un forum {#configuring-a-forum}
 
 Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
+
+![forum-config](assets/forum-config.png)
 
 #### Onglet Settings {#settings-tab}
 
@@ -66,10 +71,10 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
    Taille maximale (en pixels) de l’image miniature de la pièce jointe. La valeur par défaut est 800 x 800.
 
-* **Taille d’image min. pour la miniature**
+* **Taille d’image minimale pour la miniature**
 * **Taille maximale de la miniature**
 
-   Taille maximale (en pixels) de l’image miniature pour l’image intégrée. La valeur par défaut est 800 x 800.
+   Taille maximale (en pixels) de la vignette de l’image intégrée. La valeur par défaut est 800 x 800.
 
 * **Sujets par page**
 
@@ -77,7 +82,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Modéré**
 
-   Si cette option est cochée, la publication des sujets et des commentaires doit être approuvée avant qu’ils ne s’affichent sur un site de publication. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, la publication des sujets et commentaires doit être approuvée avant qu’ils n’apparaissent sur un site de publication. Cette option n’est pas cochée par défaut.
 
 * **Fermé**
 
@@ -85,7 +90,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Éditeur de texte enrichi**
 
-   Si cette option est cochée, les rubriques et les commentaires peuvent être saisis avec une annotation. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les rubriques et commentaires peuvent être saisis avec une annotation. Cette option n’est pas cochée par défaut.
 
 * **Autoriser le balisage**
 
@@ -97,29 +102,29 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser abonnement**
 
-   Si cette option est cochée, incluez la fonctionnalité suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Autoriser l’épinglage**
 
-   Si cette option est cochée, les sujets du forum peuvent être épinglés en haut du  des sujets. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les sujets du forum peuvent être épinglés en haut de la liste des sujets. Cette option n’est pas cochée par défaut.
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)incitatif. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)phare. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([](/help/communities/subscriptions.md)). Requiert `Allow Following` la vérification et la configuration [du](/help/communities/email.md)courrier électronique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` la vérification et la configuration [du](/help/communities/email.md)courrier électronique. Cette option n’est pas cochée par défaut.
 
 * **Taille maximale du fichier**
 
-   N’est pertinent que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 1 048 57 600 (10 Mo).
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   N’est pertinent que si `Allow File Uploads` est coché. d’extensions de fichier séparé par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
-* **Taille** max. du fichier image joint pertinent uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+* **Taille** de fichier d’image de pièce jointe maximale adaptée uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **Autoriser les réponses à thème**
 
@@ -127,15 +132,15 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser le vote**
 
-   Si cette option est cochée, incluez la fonction de vote dans une rubrique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction de vote avec une rubrique. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les utilisateurs à supprimer les commentaires et sujets**
 
-   Si cette option est cochée, autorisez les membres à supprimer les commentaires et les sujets qu’ils ont publiés. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à supprimer les commentaires et les rubriques qu’ils ont publiés. Cette option n’est pas cochée par défaut.
 
 * **Afficher le fil d’Ariane**
 
-   Si cette option est cochée, affichez les chemins de navigation dans les pages de rubrique. Cette option est cochée par défaut.
+   Si cette case est cochée, affichez les chemins de navigation dans les pages de rubrique. Cette option est cochée par défaut.
 
 * **Afficher les badges**
 
@@ -143,19 +148,19 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser les membres privilégiés**
 
-   Si cette option est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
+   Si cette case est cochée, seuls les membres privilégiés sont autorisés à créer du contenu.
 
 * **Membres privilégiés autorisés**
 
-   Ajouter les membres privilégiés sont autorisés à créer du contenu.
+   Ajoutez les membres privilégiés autorisés à créer du contenu.
 
 * **Bloquer le contenu généré par l’utilisateur en mode d’édition d’auteur**
 
-   S’il est activé, bloque le contenu généré par l’utilisateur lors de la modification en mode Auteur.
+   Si cette option est activée, bloque le contenu généré par l’utilisateur lors de la modification en mode Auteur.
 
 * **Activer la mention**
 
-   S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide du prénom, du nom de famille, du nom d’utilisateur) et de les baliser à l’aide de la syntaxe @user-name courante. Les utilisateurs balisés reçoivent des notifications concernant leurs mentions.
+   S’il est activé, permet aux utilisateurs enregistrés de la communauté d’identifier d’autres membres enregistrés (à l’aide de leur prénom, de leur nom de famille, de leur nom d’utilisateur) et de les baliser à l’aide de la syntaxe courante de @user-name. Les utilisateurs balisés reçoivent des notifications concernant leurs mentions.
 
 * **Nombre max. de mentions**
 
@@ -167,7 +172,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 >[!NOTE]
 >
->Il peut s’avérer nécessaire de vérifier `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` d’activer les commentaires sur un sujet.
+>Il peut être nécessaire de vérifier à la fois `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` d&#39;activer les commentaires sur un sujet.
 
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
@@ -176,11 +181,11 @@ Under the **User Moderation** tab, specify how the posted topics and replies (us
 
 * **Refuser les publications**
 
-   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher leur publication de s’afficher sur le forum public. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher que la publication ne s&#39;affiche sur le forum public. Cette option n’est pas cochée par défaut.
 
 * **Fermer/rouvrir les sujets**
 
-   Si cette option est cochée, les modérateurs de membres de confiance peuvent fermer une rubrique pour apporter d’autres modifications et commentaires et rouvrir une rubrique. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les modérateurs membres approuvés peuvent fermer une rubrique pour apporter d’autres modifications et commentaires et peuvent également rouvrir une rubrique. Cette option n’est pas cochée par défaut.
 
 * **Déplacer les rubriques**
 
@@ -188,23 +193,23 @@ Under the **User Moderation** tab, specify how the posted topics and replies (us
 
 * **Marquer les publications**
 
-   Si cette option est cochée, autorisez les membres à signaler les sujets ou commentaires d’autres personnes comme inappropriés. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à signaler les sujets ou commentaires d&#39;autres personnes comme inappropriés. Cette option n’est pas cochée par défaut.
 
 * **Marquer la liste de motifs**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans un  déroulant, la raison pour laquelle ils signalent une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
 
 * **Motif de la marque personnalisée**
 
-   Si cette option est cochée, autorisez les membres à entrer leur propre raison de signaler une rubrique ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à entrer leur propre raison de signaler une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
 
 * **Seuil de modération**
 
-   Entrez le nombre de fois où une rubrique ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
+   Indiquez le nombre de fois où une rubrique ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
 
 * **Limite de marquage**
 
-   Entrez le nombre de fois où une rubrique ou un commentaire doit être marqué avant d’être masqué dans les  publics. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+   Saisissez le nombre de fois où une rubrique ou un commentaire doit être marqué avant d’être masqué dans la vue publique. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
 
 #### Onglet Champ de balise {#tag-field-tab}
 
@@ -212,7 +217,7 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Espaces de noms autorisés**
 
-   Pertinente si `Allow Tagging` est cochée sous l’onglet **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. Le de  inclut les balises standard (le par défaut) ainsi que l’option Inclure toutes les balises. La valeur par défaut n’est pas cochée, ce qui signifie que tous les  de  sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **Limite de suggestions**
 
@@ -228,19 +233,21 @@ Sous l’onglet **Traduction**, si la traduction est activée pour le site de la
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet Paramètres **de** tri, spécifiez le mode de tri des commentaires publiés lorsqu’ils sont affichés.
+Sous l’onglet Paramètres **de** tri, indiquez comment les commentaires publiés sont triés lorsqu’ils s’affichent.
 
 * **Trier par**
 
-   Vérifiez toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
+   Cochez toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
 
 * **Définir par défaut**
 
-   Appuyez sur la touche Bas pour sélectionner l’une des options de tri cochées et l’afficher comme valeur par défaut. La valeur par défaut est `Newest`.
+   Appuyez sur la touche Ctrl pour sélectionner l’une des options de tri cochées pour qu’elle s’affiche par défaut. La valeur par défaut est `Newest`.
 
 * **Sélectionner les options de temps pour le tri Analytics**
 
-   Tirez vers le bas pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
+   Maintenez la touche enfoncée pour sélectionner l’une des options suivantes : `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+
+   La valeur par défaut est `All`.
 
 ### Informations supplémentaires {#additional-information}
 
