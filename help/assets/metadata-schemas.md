@@ -3,9 +3,9 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 0496d2d541be052e1201ada2bff99a2ed6fef4f3
 workflow-type: tm+mt
-source-wordcount: '2644'
+source-wordcount: '2670'
 ht-degree: 52%
 
 ---
@@ -43,16 +43,17 @@ Pour vue d’une liste de formulaires ou de modèles, dans [!DNL Experience Mana
 |---|---|---|
 | [!UICONTROL default] |  | schéma de métadonnées de base pour les ressources. |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
+|  | [!UICONTROL dm_video] | Schéma de formulaire pour les vidéos Dynamic Media. |
 |  | [!UICONTROL image] | Schéma de formulaire pour les images de type MIME, par exemple `image/jpeg` et `image/png`. <br> Le formulaire [!UICONTROL image] comporte les modèles de formulaire enfant suivants : <ul><li> [!UICONTROL jpeg]: Schéma de formulaire pour les ressources avec un sous-type [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulaire de Schéma pour les actifs avec un sous-type TIFF.</li></ul> |
 |  | [!UICONTROL l’application ;] | Schema form for assets with MIME type such as `application/pdf` and `application/zip`. <br>[!UICONTROL pdf]: Schéma de formulaire pour les ressources avec un sous-type PDF. |
 |  | [!UICONTROL vidéo] | Schéma de formulaire pour les ressources vidéo de type MIME, par exemple `video/avi` et `video/mp4`. |
 | [!UICONTROL collection] |  | Schéma de formulaire pour les collections. |
 | [!UICONTROL contentfragment] |  | [Schéma de formulaire pour les fragments](/help/sites-developing/customizing-content-fragments.md)de contenu. |
 | [!UICONTROL forms] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] |  | Formulaire de Schéma pour les éléments de contenu et les ressources générés par l’utilisateur intégrés dans le Experience Manager à partir des médias sociaux. |
 
 <!-- 
-TBD: Add dm_video child for the default form OOTB.
-video doesn't contain any sub types as listed above OOTB.
+TBD: video doesn't contain any sub types as listed above OOTB.
 application doesn't contain the sub type zip OOTB.
 -->
 
