@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
 workflow-type: tm+mt
-source-wordcount: '2177'
-ht-degree: 68%
+source-wordcount: '2197'
+ht-degree: 66%
 
 ---
 
@@ -246,7 +246,7 @@ Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des
 
 ![save_searches_liste](assets/saved_searches_list.png)
 
-Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste **[!UICONTROL Recherches enregistrées]**. La requête Recherches enregistrées de la collection est enregistrée dans la propriété `dam:query` de CRXDE à l’emplacement relatif `/content/dam/collections/`.
+Les recherches enregistrées sont créées lorsque vous créez une collection dynamique. Les collections dynamiques sont automatiquement ajoutées à la liste **[!UICONTROL Recherches enregistrées]**. The [!UICONTROL Saved Searches] query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. Les recherches que vous pouvez enregistrer et les recherches enregistrées affichées dans la liste ne sont pas limitées.
 
 >[!NOTE]
 >
@@ -264,7 +264,7 @@ Pour supprimer des recherches enregistrées, procédez comme suit :
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
-   ![select_smart_collection-1](assets/select_smart_collection-1.png)
+   ![select_smart_collection](assets/select_smart_collection.png)
 
 1. In the dialog, click **[!UICONTROL Delete]** to delete the saved search.
 
