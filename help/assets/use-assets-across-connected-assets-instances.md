@@ -3,10 +3,10 @@ title: Utilisez des ressources connectées pour partager des ressources DAM dans
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7d001ce126e72663bf8ad0722cf59c1cb7239ae0
+source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 77%
+source-wordcount: '2105'
+ht-degree: 76%
 
 ---
 
@@ -27,8 +27,8 @@ Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant
 
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
-* Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiement d’Adobe Experience Manager, l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] en tant que Cloud Service. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans le Experience Manager en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Les utilisateurs font partie des groupes d’utilisateurs appropriés pour chaque déploiement.
+* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] en tant que Cloud Service. Pour plus d’informations, voir Fonctionnalité Ressources [connectées dans le Experience Manager en tant que Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -41,7 +41,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 Les auteurs recherchent des images et les types de documents suivants dans l’outil de recherche de contenu et utilisent les ressources recherchées dans l’éditeur de page. Les Documents sont ajoutés au `Download` composant et aux images au `Image` composant. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. Les formats pris en charge sont les suivants :
 
 * **Formats d’image** : les formats pris en charge par le composant [Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html). Les images [!DNL Dynamic Media] ne sont pas prises en charge.
-* **Formats** de Document : Voir [les formats de document pris en charge par les ressources](assets-formats.md#supported-document-formats)connectées.
+* **Formats** de Document : Reportez-vous aux formats [de document](assets-formats.md#supported-document-formats)pris en charge.
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
 
@@ -96,8 +96,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    | Avant | Après |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
@@ -182,7 +182,8 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 
 * Les utilisateurs peuvent rechercher des ressources distantes et les faire glisser sur la page locale lors de la création. Aucune autre fonctionnalité n’est prise en charge.
 * L’opération de récupération échoue après 5 secondes. Les auteurs peuvent rencontrer des problèmes lors de la récupération des ressources, par exemple en cas de problèmes de réseau. Les auteurs peuvent effectuer une nouvelle tentative et faire glisser la ressource distante de l’[!UICONTROL outil de recherche de contenu] vers l’[!UICONTROL éditeur de page].
-* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. Les ressources sont en lecture seule.
+* Les modifications simples non destructives et les modifications prises en charge par le composant `Image` peuvent être effectuées sur les ressources récupérées. Les ressources sont en lecture seule.
+* La seule méthode pour récupérer à nouveau le fichier consiste à le faire glisser sur une page. Il n’existe aucune prise en charge d’API ni aucune autre méthode pour récupérer une ressource afin de la mettre à jour.
 
 ## Résolution des problèmes  {#troubleshoot}
 
