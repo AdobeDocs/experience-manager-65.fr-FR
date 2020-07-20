@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
 workflow-type: tm+mt
 source-wordcount: '7287'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -159,7 +159,7 @@ Pour obtenir des informations sur la personnalisation du composant Image adaptiv
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/carousel.html).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html).
 
 Le composant Carrousel permet d’afficher les images associées à des pages individuelles :
 
@@ -199,7 +199,8 @@ Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page actuelle comme page parente.
       * **Options de la liste fixe**
 
-         * **Pages** Sélectionnez une liste de pages. Utilisez `+` pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
+         * **Pages** Sélectionnez une liste de pages. Utiliser 
+`+` pour ajouter d’autres entrées et les boutons Haut/Bas pour modifier l’ordre.
       * **Options de recherche**
 
          * **Démarrer dans** Spécifiez un chemin de départ manuellement ou à l’aide du sélecteur.
@@ -209,7 +210,8 @@ Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laiss
 
          * **Notation des prédicats de Query Builder** Entrez une requête de recherche à l’aide de la notation des prédicats de Query Builder. Par exemple, entrez « fulltext=Marketing » pour afficher dans le carrousel toutes les pages comportant le terme « Marketing » dans leur contenu.
 Voir [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour consulter une discussion complète sur les expressions de requête et d’autres exemples.
-   * **Ordre par** Sélectionnez `jcr:title`, `jcr:created``cq:lastModified`ou `cq:template` dans le menu déroulant.
+   * **Ordre par** sélection 
+`jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 Nombre maximal d’éléments que vous souhaitez utiliser dans le carrousel (facultatif).
@@ -360,7 +362,7 @@ Le composant Flash vous permet de charger une animation Flash. Faites glisser un
 
    * **Version minimale**
 
-      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La version minimale par défaut est 9.0.0.
+      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La valeur par défaut est de 9.0.0.
 
    * **Attributs**
 
@@ -452,7 +454,7 @@ Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
 >[!NOTE]
-Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html).
 
 ### Liste {#list}
 
@@ -705,7 +707,7 @@ Si nécessaire, vous pouvez configurer l’option suivante :
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/carousel.html).
+Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html).
 
 Ce composant vous permet de charger une série d’images à afficher sous forme de diaporama dans la page. Vous pouvez ajouter ou supprimer des images et leur attribuer un titre. Sous l’onglet Avancé, vous pouvez également spécifier la taille de la zone d’affichage.
 
@@ -734,7 +736,7 @@ Le composant Diaporama affiche ensuite de façon répétée chaque image en séq
 ### Tableau {#table}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/text.html).
+Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
 
 >[!NOTE]
 Le composant de base **Tableau** repose sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant **[Texte](#text)**.
@@ -781,7 +783,7 @@ Pour plus d’informations sur l’application de balises, consultez la rubrique
 ### Texte {#text}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/text.html).
+Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
 
 >[!NOTE]
 Le composant de base **Texte** repose sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant de base **Tableau**.
@@ -808,7 +810,7 @@ Outre le mode d’édition de texte enrichi basé sur la boîte de dialogue, AEM
 ### Texte et Image {#text-image}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du composant principal [Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) et [texte](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/text.html).
+Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du composant principal [Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) et [texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
 
 Le composant Texte et image permet d’ajouter un bloc de texte et une image. Vous pouvez également ajouter et modifier du texte et des images séparément. Pour plus d’informations, reportez-vous aux composants [Texte](#text) et [Image](#image).
 
