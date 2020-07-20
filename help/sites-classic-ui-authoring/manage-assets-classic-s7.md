@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 77%
@@ -291,7 +291,7 @@ To link a field to a client context value, click **Select** to open the client-c
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-Le texte reflète le nom de l’utilisateur actuellement connecté. Vous pouvez rétablir la valeur d’origine du texte en cliquant sur **Réinitialiser **en regard du champ.
+Le texte reflète le nom de l’utilisateur actuellement connecté. Vous pouvez réinitialiser le texte sur la valeur d’origine en cliquant sur **Réinitialiser** en regard du champ.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -336,14 +336,15 @@ Si vous disposez de plusieurs configurations, AEM affiche la [configuration par 
 >* Les éléments figurant dans le dossier ad hoc n’apparaissent pas dans le navigateur de contenu Scene7.
 >* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les éléments publiés sur Scene7, tout comme les éléments non publiés, apparaissent dans le navigateur de contenu Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
+
    >
    >
 * Pour la vidéo, le navigateur de contenu Scene7 prend en charge :
    >
-   >  
-* Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
->  * La vidéo MP4 unique
->  * Vidéo F4V simple
+   >   
+   * Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
+   >   * La vidéo MP4 unique
+   >   * Vidéo F4V simple
 
 
 ### Navigation dans le contenu {#browsing-content-in-the-classic-ui}
@@ -365,6 +366,7 @@ Par défaut, les éléments sont affichés par nom de fichier. Vous pouvez égal
 >* Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
 >* La vidéo MP4 unique
 >* Vidéo F4V simple
+
 >
 
 
