@@ -3,10 +3,10 @@ title: Traiter les ressources pour exécuter des processus d’entreprise, effec
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 22%
+source-wordcount: '978'
+ht-degree: 30%
 
 ---
 
@@ -100,9 +100,10 @@ Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de proc
 * Effectuez une copie du flux de travail [!UICONTROL DAM Update Asset] et modifiez-le pour qu’il s’exécute sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
 * Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’un fractionnement [](/help/sites-developing/workflows-step-ref.md#or-split) OU applicable de manière conditionnelle au plus grand nombre de dossiers requis.
 
-## Best practices and limitations {#best-practices-limitations-tips}
+## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
-* Tenez compte de vos besoins pour tous les types de rendus lors de la conception de workflows. Si vous ne prévoyez pas la nécessité d’un rendu à l’avenir, supprimez l’étape de création du flux de travail. Les rendus ne peuvent pas être supprimés en bloc par la suite. Les rendus non désirés peuvent prendre beaucoup d’espace d’enregistrement après une utilisation prolongée de [!DNL Experience Manager]. Pour les fichiers individuels, vous pouvez supprimer des rendus manuellement de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez soit personnaliser [!DNL Experience Manager] la suppression de rendus spécifiques, soit supprimer les fichiers et les télécharger à nouveau.
+* Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
+* Par défaut, le processus de mise à jour des ressources  DAM comprend certaines étapes pour créer des miniatures et des rendus Web. Si des rendus par défaut sont supprimés du flux de travail, l’interface utilisateur de [!DNL Assets] ne s’affiche pas correctement.
 
 >[!MORELIKETHIS]
 >
