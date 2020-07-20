@@ -45,7 +45,8 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
          Le conteneur de mises en page peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de mise en page Une fois le conteneur de mise en page positionné sur votre page, vous pouvez utiliser le mode **Mise en page**pour positionner le contenu dans la grille dynamique.
+* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de mise en page Une fois que le conteneur de mise en page est positionné sur votre page, vous pouvez utiliser la variable
+**Mode de mise en page** pour positionner le contenu dans la grille réactive.
 
 * [**Émulateur **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Permet de créer et de modifier des sites web en responsive design qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
@@ -116,6 +117,7 @@ Si vous migrez un projet existant (avec du contenu existant), vous devez :
 >
 >* ajouter des points d’arrêt aux modèles ;
 >* ajouter les mêmes points d&#39;arrêt aux pages existantes
+
 >
 >  
 Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
