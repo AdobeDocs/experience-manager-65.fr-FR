@@ -207,13 +207,15 @@ Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 Ce journal n&#39;est utilisé que si [!DNL Dynamic Media] est activé. The s7access log records each request made to [!DNL Dynamic Media] through `/is/image` and `/is/content`.
 
    * `stderr.log`
-Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. By default the log level is set to `Warning` ( `WARN`)
+Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journal est défini sur 
+`Warning` (`WARN`)
 
    * `stdout.log`
 Contient des messages de journaux indiquant les événements pendant le démarrage.
 
    * `upgrade.log`
-Fournit un journal de toutes les opérations de mise à niveau qui s&#39;exécutent à partir des `com.day.compat.codeupgrade` packages et `com.adobe.cq.upgradesexecutor` .
+Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir de la variable 
+`com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor` packages.
 
 * `<*cq-installation-dir*>/crx-quickstart/repository`
 
@@ -291,7 +293,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom (name) : `org.apache.sling.commons.log.pattern`
+      * Nom : `org.apache.sling.commons.log.pattern`
 
          Type : `String`
 
@@ -341,7 +343,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    Définissez les propriétés suivantes sur ce nœud :
 
-   * Nom (name) : `org.apache.sling.commons.log.file`
+   * Nom : `org.apache.sling.commons.log.file`
 
       Type : `String`
 
@@ -351,13 +353,13 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
-      * Nom (name) : `org.apache.sling.commons.log.file.number`
+      * Nom : `org.apache.sling.commons.log.file.number`
 
          Type : `Long`
 
          Value: specify the number of log files you want kept; for example, `5`
 
-      * Nom (name) : `org.apache.sling.commons.log.file.size`
+      * Nom : `org.apache.sling.commons.log.file.size`
 
          Type : `String`
 
@@ -366,10 +368,12 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    `org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
    * une taille maximale de fichier
    * une planification heure/date
+
    pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
    * Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
    * Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
-   La valeur par défaut est &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
+
+   La valeur par défaut est de &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
    Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
    | `'.'yyyy-MM` | Rotation au début de chaque mois |
    |---|---|
@@ -449,6 +453,7 @@ Pour surveiller un agent de réplication :
    * **Consulter le journal** pour accéder au journal de toutes actions de l’agent de réplication.
    * **Tester la connexion** à l’instance cible.
    * **Forcer un nouvel essai** sur tous les éléments de la file d’attente si nécessaire.
+
    >[!CAUTION]
    N’utilisez pas le lien « Tester la connexion » pour la boîte d’envoi de la réplication inverse sur l’instance de publication. 
    Si un test de réplication est effectué pour une file d’attente de la boîte d’envoi, les éléments qui sont plus anciens que la réplication de test sont retraités avec chaque réplication inverse.
