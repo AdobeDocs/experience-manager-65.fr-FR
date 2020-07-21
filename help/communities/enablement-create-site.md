@@ -233,7 +233,7 @@ Pour ce nouveau site de la communauté, étant donné le nom du site &quot;activ
 
 ![community_usergroup](assets/community_usergroup.png)
 
-### Affecter des membres au groupe de membres Activer la communauté {#assign-members-to-community-enable-members-group}
+### Affecter des membres au groupe d&#39;activation de la communauté {#assign-members-to-community-enable-members-group}
 
 Sur l’auteur, le service de tunnel étant activé, il est possible d’affecter les [utilisateurs créés lors de la configuration](/help/communities/enablement-setup.md#publishcreateenablementmembers) initiale au groupe Membres de la communauté pour le site communautaire nouvellement créé.
 
