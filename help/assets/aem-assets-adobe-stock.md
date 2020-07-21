@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Stock] Gestion des ressources dans [!DNL Adobe Experience M
 description: Recherche, récupération, licence et [!DNL Adobe Stock] gestion de ressources internes [!DNL Adobe Experience Manager]. Utilisez les ressources sous licence comme toute autre ressource numérique.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
+source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 30%
+source-wordcount: '1098'
+ht-degree: 29%
 
 ---
 
@@ -19,7 +19,7 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 
 ## Conditions préalables {#prerequisites}
 
-L’intégration requiert un [abonnement Adobe Stock entreprise](https://stockenterprise.adobe.com/) et  6.5 ou une version ultérieure. [!DNL Experience Manager] For [!DNL Experience Manager] 6.5 service pack details, see these [release notes](/help/release-notes/sp-release-notes.md).
+L&#39;intégration requiert un plan [d&#39;](https://stockenterprise.adobe.com/)entreprise Adobe Stock.
 
 ## Intégrer [!DNL Experience Manager] et [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
