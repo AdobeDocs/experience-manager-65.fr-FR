@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9bd71115dac8109c9a47155ab60ac7573d88014c
+source-git-commit: 81707b4d57f7f15106459b91f95b1bc6ec333bf4
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 77%
@@ -336,10 +336,7 @@ Si vous disposez de plusieurs configurations, AEM affiche la [configuration par 
 >* Les éléments figurant dans le dossier ad hoc n’apparaissent pas dans le navigateur de contenu Scene7.
 >* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les éléments publiés sur Scene7, tout comme les éléments non publiés, apparaissent dans le navigateur de contenu Scene7.
 >* If you do not see **Scene7** or the **S7** icon as an option in the content browser, you need to [configure Scene7 to work with AEM](/help/sites-administering/scene7.md).
-
-   >
-   >
-* Pour la vidéo, le navigateur de contenu Scene7 prend en charge :
+>* Pour la vidéo, le navigateur de contenu Scene7 prend en charge :
    >   * Les ensembles de vidéos adaptables. Il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
    >   * La vidéo MP4 unique
    >   * Vidéo F4V simple
