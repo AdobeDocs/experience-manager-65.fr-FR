@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
+source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
 workflow-type: tm+mt
 source-wordcount: '5035'
 ht-degree: 3%
@@ -222,7 +222,7 @@ Cette section contient des détails et des instructions sur la configuration du 
 
 ### Remplir et signer plusieurs formulaires {#fill-sign-multiple-forms}
 
-Ce document explique les étapes nécessaires pour configurer la capacité de remplir et de signer plusieurs formulaires. Vous pouvez également essayer la [même fonctionnalité ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Cet exemple stocke les données nécessaires pour cet exemple dans le référentiel AME. Cela permet de déployer sans difficulté des ressources de démonstration sur votre serveur local. Dans la vie réelle, nous stockerons les mêmes informations dans le SGDR de votre choix.
+Ce document explique les étapes nécessaires pour configurer la capacité de remplir et de signer plusieurs formulaires. Vous pouvez également essayer la [même fonctionnalité ici](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled). Cet exemple stocke les données nécessaires pour cet exemple dans le référentiel AEM. Cela permet de déployer sans difficulté des ressources de démonstration sur votre serveur local. Dans la vie réelle, nous stockerons les mêmes informations dans le SGDR de votre choix.
 
 #### Conditions préalables {#pre-requisites-fill-sign-multiple-forms}
 
