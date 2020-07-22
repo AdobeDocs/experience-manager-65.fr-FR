@@ -3,9 +3,9 @@ title: Traiter les ressources pour exécuter des processus d’entreprise, effec
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '979'
 ht-degree: 30%
 
 ---
@@ -72,10 +72,7 @@ Pour appliquer un processus à une ressource, procédez comme suit :
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Cliquez sur **[!UICONTROL Actions]** dans la partie inférieure.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Cliquez sur **[!UICONTROL Actions]** ![chevron vers le haut](assets/do-not-localize/chevron-up-icon.png) en bas.
 1. Cliquez sur **[!UICONTROL Démarrer le workflow]**. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
@@ -97,7 +94,7 @@ Les administrateurs peuvent configurer le processus pour exécuter et traiter au
 
 Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de processus qui l’exécute. Un lanceur de processus surveille les modifications dans le référentiel de contenu et exécute le processus lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux marketeurs pour créer les workflows et configurer le lanceur. Les utilisateurs peuvent modifier le processus de mise à jour des actifs  DAM par défaut afin d’ajouter les étapes supplémentaires requises pour traiter des actifs spécifiques. Le processus s’exécute sur tous les fichiers nouvellement transférés. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
 
-* Effectuez une copie du flux de travail [!UICONTROL DAM Update Asset] et modifiez-le pour qu’il s’exécute sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
+* Effectuez une copie du flux de travail [!UICONTROL DAM Update Asset] et modifiez-le pour l’exécuter sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
 * Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’un fractionnement [](/help/sites-developing/workflows-step-ref.md#or-split) OU applicable de manière conditionnelle au plus grand nombre de dossiers requis.
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
