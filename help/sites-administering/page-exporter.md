@@ -2,7 +2,7 @@
 title: Exportateur de page
 description: Découvrez comment utiliser l’exportateur de page d’AEM.
 translation-type: tm+mt
-source-git-commit: b0126894dec33648a24c0308972aa5b47d7e4b84
+source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 26%
@@ -16,10 +16,11 @@ AEM allows you to export a page as a complete web page including images, `.js` a
 
 Une fois configurée, vous demandez une exportation de page à partir de votre navigateur en la remplaçant `html` par `export.zip` dans l’URL. Ceci génère un fichier d’archive (zip) contenant la page rendue au format html, ainsi que les ressources référencées. Tous les chemins de la page (par exemple, les chemins d’accès aux images) sont réécrits pour pointer vers les fichiers inclus dans l’archive ou vers les ressources du serveur. Le fichier d’archive (zip) peut ensuite être téléchargé à partir de votre navigateur.
 
->!![NOTE]
-Selon votre navigateur et les paramètres, le téléchargement sera soit :
-* un fichier d&#39;archive (`<page-name>.export.zip`)
-* un dossier (`<page-name>`); en fait, le fichier d&#39;archive a déjà été développé
+>[!NOTE]
+>
+>Selon votre navigateur et les paramètres, le téléchargement sera soit :
+>* un fichier d&#39;archive (`<page-name>.export.zip`)
+>* un dossier (`<page-name>`); en fait, le fichier d&#39;archive a déjà été développé
 
 
 ## Exportation d’une page {#exporting-a-page}
