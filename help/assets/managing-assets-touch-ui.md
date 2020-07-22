@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '9250'
+source-wordcount: '9245'
 ht-degree: 64%
 
 ---
@@ -335,11 +335,7 @@ Pour prévisualiser une ressource, procédez comme suit.
 
 1. En mode Aperçu, les options de zoom sont disponibles pour les [types d’images pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats) (avec modification interactive).
 
-   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale.
-
-   Click **[!UICONTROL Reset]** to reset the view to the original size.
-
-   ![Réinitialiser pour ramener l’utilisateur à la vue d’origine](assets/chlimage_1-11.png)
+   To zoom into an asset, click `+` (or click the magnifying glass on the asset). To zoom out, click `-`. Lorsque vous effectuez un zoom avant, vous pouvez observer en détail une zone de l’image en réalisant un panoramique. La flèche de réinitialisation du zoom rétablit la vue initiale. Pour rétablir la taille d’origine de la vue, cliquez sur **[!UICONTROL Réinitialiser]** ![la vue](assets/do-not-localize/revert.png).
 
 **Prévisualisation de fichiers à l’aide des touches du clavier uniquement**
 
@@ -428,8 +424,7 @@ Quelques attributs uniques à une copie spécifique d’une ressource ne sont pa
 
 Les autres propriétés et informations de métadonnées sont conservées. Une copie partielle n’est pas créée lors de la copie d’une ressource.
 
-1. Dans [!DNL Assets] l’interface, sélectionnez un ou plusieurs fichiers, puis cliquez sur **[!UICONTROL Copier]** dans la barre d’outils. Vous pouvez également sélectionner l’action rapide **[!UICONTROL Copier]**   depuis la carte de la ressource.
-   ![Option Copier dans la barre d’outils de l’interface Ressources](assets/copy_icon.png)
+1. Dans [!DNL Assets] l’interface, sélectionnez un ou plusieurs fichiers, puis cliquez sur **[!UICONTROL Copier]** dans la barre d’outils. Vous pouvez également sélectionner l’option **[!UICONTROL Copier]** ![copie dans la barre d’outils de l’action rapide de l’interface](assets/do-not-localize/copy_icon.png) Ressources à partir de la carte de ressources.
 
    >[!NOTE]
    >
@@ -441,10 +436,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    >
    >If you copy an asset at the same location, [!DNL Experience Manager] automatically generates a variation of the name. For example, if you copy an asset titled `Square`, [!DNL Experience Manager] automatically generates the title for its copy as `Square1`.
 
-1. Click the **[!UICONTROL Paste]** asset option from the toolbar.
-
-   ![Option Coller dans la barre d’outils Ressources](assets/chlimage_1-14.png)
-   [!DNL Assets] sont ensuite copiées à cet emplacement.
+1. Cliquez sur l’option **[!UICONTROL Coller]** ![coller dans l’option Actifs de la barre d’outils](assets/do-not-localize/paste.png) de la barre d’outils. Les ressources sont ensuite copiées à cet emplacement.
 
    >[!NOTE]
    >
@@ -455,7 +447,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 1. Accédez à l’emplacement de la ressource à déplacer.
 
 1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
-   ![Option Déplacer dans la barre d’outils Ressources](assets/move_icon.png)
+   ![Option Déplacer dans la barre d’outils Ressources](assets/do-not-localize/move.png)
 
 1. In the [!UICONTROL Move Assets] wizard, do one of the following:
 
@@ -685,9 +677,9 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
    * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
    * Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
-   ![Option Modifier de la barre d’outils](assets/edit_icon.png)
+   ![Option Modifier de la barre d’outils](assets/do-not-localize/edit_icon.png)
 
-1. Pour recadrer l’image, cliquez sur **[!UICONTROL Recadrer]** ![l’option pour recadrer une image](assets/chlimage_1-22.png).
+1. Pour recadrer l’image, cliquez sur **[!UICONTROL Recadrer]** ![l’option pour recadrer une image](assets/do-not-localize/crop.png).
 
 1. Sélectionnez une option dans la liste. La zone de recadrage s’affiche sur l’image en fonction de l’option choisie. L’option **Main libre** vous permet de recadrer l’image sans restriction de format.
 
@@ -695,19 +687,19 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Sélectionnez la zone à recadrer et redimensionnez ou repositionnez-la sur l’image.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
 
    ![Options Annuler et rétablir](assets/chlimage_1-25.png)
 
-1. Click the appropriate **Rotate** option to rotate the image clockwise or anti-clockwise.
+1. Click the appropriate **[!UICONTROL Rotate]** option to rotate the image clockwise or anti-clockwise.
 
    ![Options de rotation dans le sens des aiguilles d’une montre et dans le sens anti-horaire](assets/chlimage_1-26.png)
 
-1. Click the appropriate **Flip** option to flip the image horizontally or vertically.
+1. Click the appropriate **[!UICONTROL Flip]** option to flip the image horizontally or vertically.
 
    ![pour retourner une image horizontalement ou verticalement](assets/chlimage_1-27.png)
 
-1. Cliquez sur l’option **** Terminer ![](assets/chlimage_1-24.png) Terminer pour terminer la modification de l’image. Le fait de cliquer sur **Terminer** début également la régénération des rendus.
+1. Pour terminer la modification de l’image, cliquez sur l’option **** Terminer ![](assets/do-not-localize/check-ok-done-icon.png)Terminer. Le fait de cliquer sur **Terminer** début également la régénération des rendus.
 
 >[!NOTE]
 >
@@ -834,7 +826,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
-   ![Option Imprimer dans la barre d’outils](assets/chlimage_1-40.png)
+   ![Option Imprimer dans la barre d’outils](assets/do-not-localize/print.png)
 
 1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/l’état de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou l’état de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
 
