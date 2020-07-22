@@ -3,9 +3,9 @@ title: Générer une URL pour les ressources partagées
 description: Cet article décrit comment partager des fichiers, des dossiers et des collections dans les ressources du Experience Manager sous la forme d’une URL vers des parties externes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1229'
 ht-degree: 51%
 
 ---
@@ -28,7 +28,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 >Avant de partager un lien avec des utilisateurs, assurez-vous que le service de messagerie Day CQ est bien configuré. Une erreur se produira si vous tentez de partager un lien sans d’abord [configurer le service de messagerie DAY CQ](/help/assets/link-sharing.md#configmailservice).
 
 1. Dans l’interface utilisateur Assets, sélectionnez la ressource à partager sous forme de lien.
-1. From the toolbar, click the **[!UICONTROL Share Link]** ![assets_share](assets/assets_share.png).
+1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png).
 
    Le lien de la ressource est créé automatiquement dans le champ **[!UICONTROL Partager le lien]**. Copiez ce lien et partagez-le avec les utilisateurs. Le délai d’expiration par défaut du lien est de 1 jour.
 
