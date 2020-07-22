@@ -3,9 +3,9 @@ title: Modèles de ressources dans [!DNL Adobe Experience Manager Assets].
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1554'
 ht-degree: 33%
 
 ---
@@ -165,9 +165,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Dans la page Fusion [!UICONTROL de] modèles, cliquez sur **[!UICONTROL Fusion]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. Dans la page Fusion [!UICONTROL de] modèles, cliquez sur **[!UICONTROL Fusion]** ![ajouter des ressources](assets/do-not-localize/assets_add_icon.png).
 
 1. Accédez à l&#39;emplacement de la garantie que vous souhaitez fusionner, cliquez sur les miniatures de la sûreté à fusionner pour les sélectionner.
 
