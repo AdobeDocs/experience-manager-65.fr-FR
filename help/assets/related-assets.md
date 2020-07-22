@@ -3,9 +3,9 @@ title: Ressources liées
 description: Découvrez comment relier des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 50%
 
 ---
@@ -37,15 +37,13 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** from the toolbar.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** ![relate assets](assets/do-not-localize/link-relate.png) from the toolbar.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour mettre en relation le fichier source avec la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
    * Pour mettre en relation un fichier dérivé avec la ressource, sélectionnez **[!UICONTROL Dérivés]** dans la liste.
    * Pour créer une relation réciproque entre les ressources, sélectionnez **[!UICONTROL Autres]** dans la liste.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Sur l’écran **[!UICONTROL Sélectionner une ressource]**, accédez à l’emplacement de la ressource que vous souhaitez mettre en relation et sélectionnez-la.
@@ -59,7 +57,7 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
 1. Pour annuler la relation entre un élément, cliquez sur **[!UICONTROL Annuler la relation]** dans la barre d’outils.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![ressources non liées](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
