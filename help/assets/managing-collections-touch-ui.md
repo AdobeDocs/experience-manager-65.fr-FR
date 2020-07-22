@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2200'
 ht-degree: 66%
 
 ---
@@ -124,10 +124,7 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
-1. Dans l’interface utilisateur Ressources, cliquez sur l’option de recherche de la barre d’outils.
-
-   ![chlimage_1-9](assets/chlimage_1-110.png)
-
+1. Dans l’interface utilisateur Ressources, cliquez sur l’option ![de recherche de l’option](assets/do-not-localize/search_icon.png) de recherche dans la barre d’outils.
 1. Placez le curseur dans la zone Omni-recherche et appuyez sur la touche Entrée.
 1. Dans l’interface du Experience Manager, ouvrez le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
@@ -256,12 +253,9 @@ La modification des recherches enregistrées est identique à celle des collecti
 
 Pour supprimer des recherches enregistrées, procédez comme suit :
 
-1. Dans l’interface utilisateur Ressources, cliquez sur rechercher ![chlimage_1-13](assets/chlimage_1-114.png).
-
-1. Placez le curseur dans le champ Omni-recherche et appuyez sur la touche Entrée.
-
+1. Dans l’interface utilisateur Ressources, cliquez sur l’option ![de recherche](assets/do-not-localize/search_icon.png)de recherche.
+1. Avec le curseur dans le champ Omnisearch, appuyez sur la touche Retour.
 1. Dans l’interface du Experience Manager, ouvrez le panneau Filtres.
-
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -273,7 +267,7 @@ Pour supprimer des recherches enregistrées, procédez comme suit :
 Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la collection contient des collections imbriquées, le workflow s’exécute également sur les ressources de ces dernières. Toutefois, si la collection et les collections imbriquées contiennent des ressources en double, le workflow ne s’exécute qu’une seule fois pour ces ressources.
 
 1. Ouvrez **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**. Pour exécuter un processus sur une collection spécifique, sélectionnez-le.
-1. Open **[!UICONTROL Timeline]** rail. Cliquez sur ![chlimage_1-14](assets/chlimage_1-137.png) et sur Processus **** de Début.
+1. Open **[!UICONTROL Timeline]** rail. Cliquez sur ![chevron vers le haut](assets/do-not-localize/chevron-up-icon.png) , puis sur Processus **** Début.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
 1. Enter a title for the workflow and click **[!UICONTROL Start]**.
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Poursuivre]**. Le processus traite tous les actifs de la collection sélectionnée.
