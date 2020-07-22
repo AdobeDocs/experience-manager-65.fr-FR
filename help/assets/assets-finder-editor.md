@@ -3,7 +3,7 @@ title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 73%
@@ -290,7 +290,7 @@ See [Customizing and Extending Assets](/help/assets/extending-assets.md) for inf
 
 Voici un exemple de formulaire de métadonnées comportant différents champs :
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![métadonnées](assets/chlimage_1-390.png)
 
 Sur la page Éditeur de ressources, les utilisateurs peuvent ensuite saisir des valeurs dans les champs de métadonnées (s’ils sont modifiables) et effectuer l’action de fin (par exemple, envoyer les modifications).
 
