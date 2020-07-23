@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '2897'
 ht-degree: 3%
@@ -219,9 +219,9 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Type</th>
-   <th> Description de la valeur</th>
+   <th> Valeur Description</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -343,9 +343,9 @@ La `scoringRules` propriété d’une règle de badge limite simplement les règ
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Type</th>
-   <th>Description de la valeur</th>
+   <th>Valeur Description</th>
   </tr>
   <tr>
    <td>seuils</td>
@@ -581,8 +581,8 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
 
 * Ajoutez la propriété badgingRules :
 
-   * **Name** (Nom) : `badgingRules`
-   * **Type**: `String`
+   * **Nom** : `badgingRules`
+   * **Type** : `String`
    * Sélectionner **plusieurs**
    * Sélectionner le **Ajoute**
    * Enter `/libs/settings/community/badging/rules/forums-badging`
@@ -592,8 +592,8 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
 
 * Ajoutez la propriété scoringRules :
 
-   * **Name** (Nom) : `scoringRules`
-   * **Type**: `String`
+   * **Nom** : `scoringRules`
+   * **Type** : `String`
    * Sélectionner **plusieurs**
    * Sélectionner le **Ajoute**
    * Enter `/libs/settings/community/scoring/rules/forums-scoring`
@@ -614,8 +614,8 @@ Ensuite, assurez-vous que les composants du forum et des commentaires permettent
 
 * Ajoutez la propriété booléenne allowBadges, si nécessaire, et assurez-vous qu’elle est vraie.
 
-   * **Name** (Nom) : `allowBadges`
-   * **Type**: `Boolean`
+   * **Nom** : `allowBadges`
+   * **Type** : `Boolean`
    * **Valeur**: `true`
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
