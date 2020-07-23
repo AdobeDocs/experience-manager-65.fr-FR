@@ -1,8 +1,8 @@
 ---
-title: Fonctionnalité d’orientation
-seo-title: Fonctionnalité d’orientation
-description: Ajout et configuration de la fonction d’orientation
-seo-description: Ajout et configuration de la fonction d’orientation
+title: Fonction d’orientation
+seo-title: Fonction d’orientation
+description: Ajoute et configuration de la fonction Idéation
+seo-description: Ajoute et configuration de la fonction Idéation
 uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,26 +11,29 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 28%
 
 ---
 
 
-# Fonctionnalité d’orientation {#ideation-feature}
+# Fonction d’orientation {#ideation-feature}
 
 ## Présentation {#introduction}
 
-La fonctionnalité d’idéation fournit une zone pour les du site connectés (membres de la communauté) dans le  de publication  à :
+La fonctionnalité d’idéation fournit une zone pour les visiteurs de site connectés (membres de la communauté) dans l’environnement de publication pour :
 
-* Créez des idées à partager avec la communauté.
-*  et commenter les idées.
-* Suis une idée.
+* Créer des idées à partager avec la communauté.
+* Vue et commentaires sur les idées.
+* Suivez une idée.
 * Votez pour une idée.
 
 Cette section de la documentation décrit:
 
-* Ajout de la fonctionnalité d’idéation à un site AEM.
-* Paramètres de configuration du composant Ideation.
+* Ajouter la fonction d’idéation à un site AEM.
+* Paramètres de configuration du composant Idéation.
 
 ### Adding a Ideation to a Page {#adding-a-ideation-to-a-page}
 
@@ -44,13 +47,15 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/ideation.md#essentials-for-client-side) are included, this is how the `Ideation` component will appear:
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![idéation](assets/ideation.png)
 
-### Configuration d’une idée {#configuring-an-ideation}
+### Configuration d’une idéation {#configuring-an-ideation}
 
 Select the placed `Ideation` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![ideation-settings](assets/ideation-settings.png)
+![configure-new](assets/configure-new.png)
+
+![idéation-settings](assets/ideation-settings.png)
 
 #### Onglet Settings {#settings-tab}
 
@@ -76,15 +81,15 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Modéré**
 
-   Si cette option est cochée, la publication d’idées et de commentaires doit être approuvée avant qu’ils ne s’affichent sur un site de publication. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, la publication d’idées et de commentaires doit être approuvée avant d’apparaître sur un site de publication. Cette option n’est pas cochée par défaut.
 
 * **Fermé**
 
-   Si cette option est cochée, le forum d&#39;idéation est fermé aux nouvelles idées et aux nouveaux commentaires. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, le forum d&#39;idéations est fermé aux idées et commentaires nouveaux. Cette option n’est pas cochée par défaut.
 
 * **Éditeur de texte enrichi**
 
-   Si cette option est cochée, les idées et les commentaires peuvent être saisis avec annotation. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les idées et les commentaires peuvent être saisis avec des annotations. Cette option n’est pas cochée par défaut.
 
 * **Autoriser le balisage**
 
@@ -96,11 +101,11 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Taille maximale du fichier**
 
-   N’est pertinent que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 1 048 57 600 (10 Mo).
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   N’est pertinent que si `Allow File Uploads` est coché. d’extensions de fichier séparé par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -116,15 +121,15 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Autoriser les utilisateurs à supprimer les commentaires et sujets**
 
-   Si cette option est cochée, permettez aux membres de supprimer les commentaires et idées qu’ils ont publiés. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à supprimer les commentaires et les idées qu&#39;ils ont publiés. Cette option n’est pas cochée par défaut.
 
 * **Autoriser abonnement**
 
-   Si cette option est cochée, incluez la fonctionnalité suivante pour les publications d’idées, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, incluez la fonction suivante pour les publications d’idées, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([](/help/communities/subscriptions.md)). Requiert `Allow Following` la vérification et la configuration [du](/help/communities/email.md)courrier électronique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` la vérification et la configuration [du](/help/communities/email.md)courrier électronique. Cette option n’est pas cochée par défaut.
 
 * **Autoriser le vote**
 
@@ -134,11 +139,11 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
    Si cette option est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’idée d’un membre. Cette option n’est pas cochée par défaut.
 
-* **Ne pas obtenir de réponses sur la page de liste**
+* **N&#39;obtenez pas de réponses sur la page de liste**
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)incitatif. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)phare. Cette option n’est pas cochée par défaut.
 
 * **Activer la mention**
 * **Nombre max. de mentions**
@@ -150,31 +155,31 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted ideas and
 
 * **Refuser les publications**
 
-   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher leur publication de s’afficher sur le forum public. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les modérateurs membres de confiance seront autorisés à refuser les publications et à empêcher que la publication ne s&#39;affiche sur le forum public. Cette option n’est pas cochée par défaut.
 
 * **Fermer/rouvrir les sujets**
 
-   Si cette option est cochée, les modérateurs de membres de confiance peuvent fermer une rubrique pour apporter d’autres modifications et commentaires et rouvrir une rubrique. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les modérateurs membres approuvés peuvent fermer une rubrique pour apporter d’autres modifications et commentaires et peuvent également rouvrir une rubrique. Cette option n’est pas cochée par défaut.
 
 * **Marquer les publications**
 
-   Si cette option est cochée, autorisez les membres à signaler les sujets ou commentaires d’autres personnes comme inappropriés. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à signaler les sujets ou commentaires d&#39;autres personnes comme inappropriés. Cette option n’est pas cochée par défaut.
 
 * **Marquer la liste de motifs**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans un  déroulant, la raison pour laquelle ils signalent une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
 
 * **Motif de la marque personnalisée**
 
-   Si cette option est cochée, autorisez les membres à entrer leur propre raison de signaler une rubrique ou un commentaire comme étant inapproprié. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à entrer leur propre raison de signaler une rubrique ou un commentaire comme inapproprié. Cette option n’est pas cochée par défaut.
 
 * **Seuil de modération**
 
-   Entrez le nombre de fois où une rubrique ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
+   Indiquez le nombre de fois où une rubrique ou un commentaire doit être marqué par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est 1 (une fois).
 
 * **Limite de marquage**
 
-   Entrez le nombre de fois où une rubrique ou un commentaire doit être marqué avant d’être masqué dans les  publics. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
+   Saisissez le nombre de fois où une rubrique ou un commentaire doit être marqué avant d’être masqué dans la vue publique. Si la valeur est -1, le sujet ou le commentaire marqué est toujours visible pour le public. Dans le cas contraire, cette valeur doit être supérieure ou égale au seuil de modération. La valeur par défaut est 5.
 
 #### Onglet Champ de balise {#tag-field-tab}
 
@@ -182,7 +187,7 @@ Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être 
 
 * **Espaces de noms autorisés**
 
-   Pertinente si `Allow Tagging` est cochée sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. Le de  inclut les balises standard (le par défaut) ainsi que l’option Inclure toutes les balises. La valeur par défaut n’est pas cochée, ce qui signifie que tous les  de  sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l’onglet **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **Limite de suggestions**
 
@@ -190,45 +195,45 @@ Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être 
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet Paramètres **[!UICONTROL de]** tri, spécifiez le mode de tri des commentaires publiés lorsqu’ils sont affichés.
+Sous l’onglet Paramètres **[!UICONTROL de]** tri, indiquez comment les commentaires publiés sont triés lorsqu’ils s’affichent.
 
 * **Trier par**
 
-   Vérifier toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
+   Cochez toutes les sélections de tri autorisées : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. La valeur par défaut est `Newest, Oldest, Last Updated`.
 
 * **Définir par défaut**
 
-   Appuyez sur la touche Bas pour sélectionner l’une des options de tri cochées et l’afficher comme valeur par défaut. La valeur par défaut est `Newest`.
+   Appuyez sur la touche Ctrl pour sélectionner l’une des options de tri cochées pour qu’elle s’affiche par défaut. La valeur par défaut est `Newest`.
 
 * **Sélectionner les options de temps pour le tri Analytics**
 
-   Tirez vers le bas pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
+   Appuyez sur la touche &lt;Entrée> pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
-### Création d’une idée {#creating-idea}
+### Création d’idées {#creating-idea}
 
-Comme pour toutes les fonctionnalités des Communautés, si elles ne sont pas connectées, un de site ne peut lire que des idées et des opinions (par le biais de commentaires et de votes/appréciations).
+Comme pour toutes les fonctionnalités des Communautés, si elles ne sont pas connectées, un visiteur de site ne peut lire que des idées et vue d&#39;autres opinions (par le biais de commentaires et de votes/appréciations).
 
 Une fois connecté, un membre peut créer une nouvelle idée.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![create-new-idea](assets/create-new-idea.png)
 
-Avant de soumettre l&#39;idée, il est possible que le membre enregistre un brouillon.
+Avant de soumettre l&#39;idée, le membre peut enregistrer un brouillon.
 
 En sélectionnant le `Save as Draft` bouton, un brouillon est enregistré.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![save-idea](assets/save-idea.png)
 
-Lors de l’affichage des brouillons enregistrés dans le `My Drafts` panneau, sélectionnez `Read More` pour passer de nouveau en mode d’édition :
+Lors de l’affichage des brouillons enregistrés dans l’ `My Drafts` onglet, sélectionnez `Read More` de revenir en mode d’édition :
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![edit-idea](assets/edit-idea.png)
 
 #### Fournir des commentaires {#providing-feedback}
 
-Une fois l&#39;idée publiée, d&#39;autres membres peuvent se connecter, ouvrir l&#39;idée ( `Read More`) et aimer l&#39;idée, ce qui ajoute au nombre de votes, et faire des commentaires.
+Une fois l&#39;idée publiée, d&#39;autres membres peuvent se connecter, ouvrir l&#39;idée ( `Read More`) et aimer l&#39;idée, ajoutant ainsi au nombre de votes, et faire des commentaires.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![feedback](assets/feedback-idea.png)
 
 ### Informations supplémentaires {#additional-information}
 
