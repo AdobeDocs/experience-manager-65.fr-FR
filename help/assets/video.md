@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '11829'
-ht-degree: 94%
+source-wordcount: '11828'
+ht-degree: 96%
 
 ---
 
@@ -33,22 +33,23 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
    >
    >
 * Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode hybride.
+
 >
 
 
 
 1. **Chargez les vidéos Dynamic Media** en procédant comme suit :
 
-   * Créez votre propre profil de codage vidéo. Vous pouvez également utiliser le profil _Codage vidéo adaptif_ prédéfini fourni avec Dynamic Media.
+   * Créez votre propre profil de codage vidéo. Vous pouvez également utiliser le profil _Codage vidéo adaptatif_ prédéfini fourni avec Dynamic Media.
 
       * [Création d’un profil de codage vidéo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * En savoir plus sur les [bonnes pratiques relatives au codage vidéo](#best-practices-for-encoding-videos).
-   * Associez le profil de traitement vidéo à un ou plusieurs dossiers dans lesquels vous allez télécharger vos vidéos sources principales.
+   * Associez le profil de traitement vidéo à un ou plusieurs dossiers dans lequel vous allez charger les vidéos issues de sources originales.
 
       * [Application d’un profil vidéo à des dossiers](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](/help/assets/organize-assets.md).
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
-   * Téléchargez vos vidéos source principales vers les dossiers. Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
+   * Chargez les vidéos issues de sources originales dans les dossiers. Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
       * [Chargement des vidéos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -145,7 +146,7 @@ Pour la gestion des visionneuses de vidéos adaptative et unique, les fonctions 
 * Organiser, parcourir et effectuer des recherches dans la vidéo avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android, Blackberry et Windows Phone notamment).
 
-La diffusion de vidéo adaptative en flux continu est prise en charge sur diverses plates-formes iOS. Voir le [Guide de référence des visionneuses Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+La diffusion de vidéo adaptative en flux continu est prise en charge sur diverses plates-formes iOS. Voir le [Guide de référence des visionneuses Scene7](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils Blackberry qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -161,7 +162,7 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
 
 Voir l’exemple [Lecture de vidéo dynamique](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
 
-See also [Viewers for AEM Assets and Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) and [Viewers for AEM assets only](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
+See also [Viewers for AEM Assets and Dynamic Media Classic](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) and [Viewers for AEM assets only](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in the Adobe Scene7 Viewers Reference Guide.
 
 ## Bonne pratique : Utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -173,9 +174,9 @@ En ce qui concerne la lecture, la visionneuse, détecte automatiquement les fonc
 
 En combinant dans un lecteur unique la capacité de concevoir les composants de lecture à l’aide de code HTML5 et CSS, d’avoir accès à la lecture incorporée et d’utiliser les flux continus adaptatifs et progressifs selon la capacité du navigateur, vous pouvez étendre la portée de votre contenu multimédia aux utilisateurs d’appareils mobiles et de postes de travail et garantir ainsi une expérience vidéo rationalisée.
 
-Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe Scene7.
+Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe Scene7.
 
-### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
@@ -305,7 +306,7 @@ Vous pouvez obtenir les métadonnées d’un fichier en les affichant à l’aid
 
 ### Format {#aspect-ratio}
 
-Lorsque vous choisissez ou créez un paramètre prédéfini de codage vidéo pour votre fichier vidéo source principal, assurez-vous que le paramètre prédéfini présente les mêmes proportions que le fichier vidéo source principal. Le format fait référence au rapport largeur/hauteur de la vidéo.
+Lorsque vous choisissez ou créez un paramètre prédéfini de codage vidéo pour votre fichier vidéo issu de sources originales, assurez-vous que le paramètre prédéfini indique le même format que le fichier vidéo issu de sources originales. Le format fait référence au rapport largeur/hauteur de la vidéo.
 
 Pour déterminer le format d’un fichier vidéo, récupérez les métadonnées de ce fichier et notez les valeurs de largeur et de hauteur (voir la section Obtention des métadonnées d’un fichier ci-dessus). Utilisez ensuite cette formule pour déterminer le format :
 
@@ -322,7 +323,7 @@ Ce tableau décrit la façon dont les résultats de la formule se traduisent en 
 
 Par exemple, une vidéo qui a une largeur de 1440 pour une hauteur de 1080 a un format de 1440/1080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
 
-### Débit binaire  {#bitrate}
+### Débit binaire    {#bitrate}
 
 Le débit correspond à la quantité de données encodées pour produire une seule seconde de lecture vidéo. Le débit de données est mesuré en kilobits par seconde (kbit/s).
 
@@ -372,7 +373,7 @@ Du fait que la résolution et le débit de données sont liés, vous avez le cho
 * Choisir un débit de données puis, en fonction de ce paramètre, coder à la résolution la plus haute pour obtenir une vidéo de bonne qualité.
 * Choisir une résolution, puis coder au débit de données nécessaire pour que la qualité vidéo soit optimale à la résolution choisie.
 
-Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo pour votre fichier vidéo source principal, utilisez ce tableau pour cible la résolution appropriée :
+Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo pour votre fichier vidéo source original, utilisez ce tableau pour choisir la résolution cible appropriée :
 
 | Résolution | Hauteur (pixels) | Taille d’écran |
 |--- |--- |--- |
@@ -387,7 +388,7 @@ Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo p
 
 Aux États-Unis et au Japon, la plupart des vidéos sont tournées à 29,97 ips (images par seconde) ; en Europe, la plupart des vidéos le sont à 25 ips. Un film est tourné à 24 ips.
 
-Choisissez un paramètre prédéfini de codage vidéo qui correspond au débit d’images par seconde de votre fichier vidéo source principal. Par exemple, si votre vidéo source principale est de 25 ips, choisissez un paramètre prédéfini de codage de 25 ips. Par défaut, tous les encodages personnalisés utilisent le débit du fichier vidéo source principal. C’est pourquoi il est inutile d’indiquer le nombre d’images par seconde lorsque vous créez un paramètre prédéfini de codage vidéo.
+Choisissez un paramètre prédéfini de codage vidéo correspondant au nombre d’images par seconde de votre vidéo issue de sources originales. Par exemple, si le débit est de 25 ips pour la vidéo issue de sources originales, choisissez un paramètre prédéfini de 25 ips pour le codage. Par défaut, tous les codages personnalisés utilisent le nombre d’images par seconde de la vidéo issue de sources originales. C’est pourquoi il est inutile d’indiquer le nombre d’images par seconde lorsque vous créez un paramètre prédéfini de codage vidéo.
 
 ### Dimensions du codage vidéo {#video-encoding-dimensions}
 
@@ -410,7 +411,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, la vidéo est de haute qualité mais dans un fichier au volume compressé.
 
-## Publication de vidéos sur YouTube   {#publishing-videos-to-youtube}
+## Publication de vidéos sur YouTube  {#publishing-videos-to-youtube}
 
 Vous pouvez publier des ressources vidéo AEM on-premise directement sur une chaîne YouTube que vous avez précédemment créée.
 
@@ -473,6 +474,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
    * Dans le tableau de bord de votre projet, dans la carte Prise en main, appuyez sur **[!UICONTROL Explorer et activer les API.]**
    * Dans le tableau de bord de votre projet, dans la carte API, appuyez sur **[!UICONTROL Accéder à la présentation des API.]**
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. En haut de la page API &amp; services, appuyez sur **[!UICONTROL Activer les API et les services.]**
@@ -492,6 +494,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
    * Depuis la liste déroulante **[!UICONTROL Depuis où appellerez-vous l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**
 
    * Dans la liste déroulante **[!UICONTROL À quelles données aurez-vous accès ?]** liste déroulante, appuyez sur Données **[!UICONTROL utilisateur.]**
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Appuyez sur **[!UICONTROL De quels identifiants ai-je besoin ?]**
@@ -583,7 +586,7 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 * Pour configurer YouTube dans une version d’AEM antérieure à 6.4, voir [Configuration de YouTube dans une version d’AEM antérieure à 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
 * Pour configurer YouTube dans AEM 6.4 ou versions ultérieures, reportez-vous à [Configuration de YouTube dans AEM 6.4 et versions ultérieures](#setting-up-youtube-in-aem-and-later).
 
-#### Configuration de YouTube dans AEM 6.4 et versions ultérieures   {#setting-up-youtube-in-aem-and-later}
+#### Configuration de YouTube dans AEM 6.4 et versions ultérieures  {#setting-up-youtube-in-aem-and-later}
 
 1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la publication sur YouTube.]**
@@ -620,7 +623,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous
 
    Vous allez maintenant configurer des balises pour la publication.
 
-1. **[!UICONTROL Configuration de balises pour la publication]** : sur la page Services Cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
+1. **[!UICONTROL Configuration de balises pour la publication]** : sur la page Services cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
 1. Appuyez sur l’icône de liste déroulante (flèche pointant vers le bas) pour afficher la liste des balises disponibles dans AEM.
 1. Appuyez sur une ou plusieurs balises afin de les ajouter.
 
@@ -634,7 +637,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte, car vous
 
 1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services Cloud.]**
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud.]**
 1. Under the Third Party Services heading, under YouTube, tap **[!UICONTROL Configure now.]**
 1. Dans la boîte de dialogue Créer une configuration, saisissez un titre (obligatoire) et un nom (facultatif) dans les champs correspondants.
 1. Appuyez sur **[!UICONTROL Créer.]**
@@ -666,7 +669,7 @@ Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques insta
 
    Vous allez maintenant configurer des balises pour la publication.
 
-1. **[!UICONTROL Configuration de balises pour la publication]** : sur la page Services Cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
+1. **[!UICONTROL Configuration de balises pour la publication]** : sur la page Services cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
 1. Appuyez sur l’icône de liste déroulante (flèche pointant vers le bas) pour afficher la liste des balises disponibles dans AEM.
 1. Appuyez sur une ou plusieurs balises afin de les ajouter.
 
@@ -781,7 +784,7 @@ Vous pouvez si vous le souhaitez surveiller la progression de votre publication 
 
 Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Les délais de publication peuvent varier considérablement en fonction de nombreux facteurs, notamment le format de la vidéo source principale, la taille du fichier et le trafic de téléchargement. La publication peut prendre de quelques minutes à plusieurs heures. Sachez également que les formats de haute résolution sont rendus beaucoup plus lentement. Par exemple, les vidéos à 720p et 1 080p prennent beaucoup plus de temps à s’afficher que les vidéos à 480p.
+Le délai de publication peut varier considérablement en fonction de nombreux facteurs, comme le format de la vidéo source originale, la taille du fichier et le trafic de chargement. La publication peut prendre de quelques minutes à plusieurs heures. Sachez également que les formats de haute résolution sont rendus beaucoup plus lentement. Par exemple, les vidéos à 720p et 1 080p prennent beaucoup plus de temps à s’afficher que les vidéos à 480p.
 
 Au bout de huit heures, si un message d’état indiquant **[!UICONTROL Téléchargé (en cours de traitement, veuillez patienter)]** s’affiche toujours, essayez de supprimer la vidéo de notre site et chargez-la à nouveau.
 
@@ -837,9 +840,11 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
 1. Consultez la progression du codage vidéo dans votre dossier de ressources :
 
    * En mode Carte, la progression du codage vidéo s’affiche sur la ressource en pourcentage. Si une erreur se produit, ces informations s’affichent également sur cette ressource.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * En mode Liste, la progression du codage vidéo s’affiche dans la colonne **[!UICONTROL État du traitement]**. Si une erreur se produit, le message suivant s’affiche dans la même colonne.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Cette colonne ne s’affiche pas par défaut. Pour activer la colonne, sélectionnez l’option **[!UICONTROL Paramètres d’affichage]** dans le menu contextuel des affichages et ajoutez la colonne **[!UICONTROL État du traitement]** et appuyez ou cliquez sur **[!UICONTROL Mettre à jour.]**
@@ -859,6 +864,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >    * Configuration de la file d’attente des tâches Apache Sling
    >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
    >    * File d’attente des délais d’attente des processus Granite
+
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -893,6 +899,7 @@ Pour surveiller la progression (notamment l’échec du codage ou de la publicat
    >    * Configuration de la file d’attente des tâches Apache Sling
    >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
    >    * File d’attente des délais d’attente des processus Granite
+
    >
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
@@ -939,6 +946,7 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
    * Début de la publication
    * Échec de la publication
    * Publication terminée – comprend des informations sur les chaînes et les URL
+
    Décocher une case signifie que vous ne recevrez pas de notifications par courrier électronique spécifiques du processus publication YouTube.
 
    >[!NOTE]
@@ -988,17 +996,18 @@ Vous ne devez utiliser l&#39;option Actualiser que si la date de fin du rapport 
 
    * Near the upper-right corner, tap the **Date Picker **icon.
 Specify the beginning and end date range for which you want video data, and then tap **[!UICONTROL Run Report.]**
+
    Le groupe Mesures principales identifie diverses mesures agrégées pour toutes les vidéos publiées sur votre site.
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
-### Affichage de rapports vidéo reposant sur un lecteur vidéo créé à l’aide du SDK Scene7 HMTL5 Viewer  {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Affichage de rapports vidéo reposant sur une visionneuse de vidéo créée à l’aide du SDK Scene7 HMTL5 Viewer  {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée reposant sur une visionneuse de vidéos prête à l’emploi, aucune autre étape n’est nécessaire pour afficher les rapports vidéo. En revanche, si vous avez créé votre propre visionneuse de vidéos en vous reposant sur le SDK de la visionneuse HTML5 de Scene7, suivez les étapes ci-après pour vous assurer que votre visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
 
 Utilisez le guide de référence des visionneuses Scene7 et le SDK de la visionneuse HTML5 de Scene7 pour créer vos visionneuses de vidéos.
 
-Voir le [Guide de référence des visionneuses Scene7](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Voir le [Guide de référence des visionneuses Scene7](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/home.html).
 
 <!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -1065,7 +1074,7 @@ Les sous-titres offrent également une meilleure accessibilité en utilisant des
 
 Dynamic Media peut convertir des fichiers de sous-titres au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 
-Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, reportez-vous à la section [Service de contenu statique (hors images)](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) dans l’*Aide de l’API de serveur d’images de Scene7*.
+Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, reportez-vous à la section [Service de contenu statique (hors images)](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) dans l’*Aide de l’API de serveur d’images de Scene7*.
 
 Pour ajouter des sous-titres à une vidéo:
 
@@ -1081,7 +1090,7 @@ Pour ajouter des sous-titres à une vidéo:
 
    Pour de meilleurs résultats, utilisez cet outil dans Internet Explorer 9 ou version ultérieure, dans Google Chrome ou Safari.
 
-   Dans l’outil, dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**, collez l’URL copiée de votre fichier vidéo, puis cliquez sur **[!UICONTROL Charger**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo.]** Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo.]** Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
 
    À présent, suivez les instructions à l’écran du site pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier .vtt.
 
