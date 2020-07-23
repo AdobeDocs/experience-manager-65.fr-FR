@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: ee0d4aa07db6f00409cace8664d02c545e7d6550
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -259,7 +259,7 @@ Modifiez l&#39;ordre des fonctions tel qu&#39;il s&#39;affiche dans la barre de 
 
 >[!CAUTION]
 >
->La fonction de groupes ne doit *pas * être la *première ou la seule* fonction de la structure du site.
+>La fonction de groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
 >
 >Toute autre fonction, telle que la fonction [de](/help/communities/functions.md#page-function)page, doit être incluse et répertoriée en premier.
 
