@@ -4,9 +4,9 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8ca4e3057ec13762404a8b7fb6f6bdf5dd562281
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '5826'
+source-wordcount: '5830'
 ht-degree: 55%
 
 ---
@@ -118,7 +118,7 @@ Vous pouvez améliorer la pertinence des mots-clés pour des ressources données
 1. In the **[!UICONTROL Search Promote]** box, specify a keyword for which you want to boost the search for the image and then click **[!UICONTROL Add]**. Vous pouvez indiquer plusieurs mots-clés de la même manière.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. La ressource pour laquelle vous avez promu ce mot-clé apparaît en tête des résultats de recherche.
 
-Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. For detailed info, see [search in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
+Vous pouvez l’utiliser à votre avantage en améliorant le classement de certaines ressources dans les résultats de recherche du mot-clé ciblé. Voir la vidéo d’exemple ci-dessous. For detailed info, see [search in Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -334,6 +334,7 @@ La recherche visuelle utilise un balisage intelligent et requiert la version [!D
    * `costPerEntry` de type `Double` avec la valeur `10`.
    * `costPerExecution` de type `Double` avec la valeur `2`.
    * `refresh` de type `Boolean` avec la valeur `true`.
+
    Cette configuration permet d&#39;effectuer des recherches à partir de l&#39;index approprié.
 
 1. Pour créer un index Lucene, dans CRXDE, à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, créez un noeud nommé `imageFeatures` de type `nt-unstructured`. Dans le `imageFeatures` noeud,
@@ -342,6 +343,7 @@ La recherche visuelle utilise un balisage intelligent et requiert la version [!D
    * Ajoutez `nodeScopeIndex` la propriété de type `Boolean` avec la valeur de `true`.
    * Ajoutez `propertyIndex` la propriété de type `Boolean` avec la valeur de `true`.
    * Ajoutez `useInSimilarity` la propriété de type `Boolean` avec la valeur `true`.
+
    Enregistrez les modifications.
 
 1. Accédez `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` à la propriété `similarityTags` de type `Boolean` et ajoutez-la avec la valeur `true`de.
@@ -349,7 +351,7 @@ La recherche visuelle utilise un balisage intelligent et requiert la version [!D
 1. Dans CRXDE, dans le `/oak-index/damAssetLucene` noeud, définissez la `reindex` propriété sur `true`. Enregistrez les modifications.
 1. (Facultatif) Si vous avez personnalisé le formulaire de recherche, copiez le `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` noeud dans `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
 
-Pour plus d’informations, voir [Comprendre les balises actives en Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) et [comment gérer les balises](/help/assets/managing-smart-tags.md)actives.
+Pour plus d’informations, voir [Comprendre les balises actives en Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) et [comment gérer les balises](/help/assets/managing-smart-tags.md)actives.
 
 ### Métadonnées obligatoires {#mandatorymetadata}
 
