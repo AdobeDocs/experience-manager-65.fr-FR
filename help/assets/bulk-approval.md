@@ -3,10 +3,10 @@ title: Révision de collections et de ressources situées dans un dossier
 description: Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 63%
+source-wordcount: '794'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 63%
 
 Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 
-Adobe Experience Manager Assets vous permet de configurer un processus de révision ad hoc pour les ressources d’un dossier ou d’une collection et de le partager avec des réviseurs ou des partenaires créatifs afin de recueillir des commentaires.
+Les ressources d’Adobe Experience Manager vous permettent de configurer un processus de révision ad hoc pour les ressources d’un dossier ou d’une collection, et de le partager avec des réviseurs ou des partenaires créatifs pour obtenir des commentaires.
 
 Vous pouvez associer le workflow de révision à un projet ou créer une tâche de révision indépendante.
 
@@ -26,9 +26,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 ## Create a review task for folders {#creating-a-review-task-for-folders}
 
 1. Dans l’interface utilisateur Assets, sélectionnez le dossier pour lequel vous souhaitez créer une tâche de révision.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer une Tâche]** de révision ![créer une tâche](assets/do-not-localize/create-review-task.png) de révision pour ouvrir la page **[!UICONTROL Tâche]** de révision. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Facultatif) Dans la liste **[!UICONTROL Projets]**, choisissez le projet auquel vous voulez associer la tâche de révision. Par défaut, l’option **[!UICONTROL Aucun]** est sélectionnée. Si vous ne souhaitez associer aucun projet à la tâche de révision, conservez cette sélection.
 
@@ -74,9 +72,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 ## Create a review task for collections {#creating-a-review-task-for-collections}
 
 1. Sur la page Collections, sélectionnez la collection pour laquelle vous souhaitez créer une tâche de révision.
-1. From the toolbar, click **[!UICONTROL Create Review Task]** to open the **[!UICONTROL Review Task]** page. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Créer une Tâche]** de révision ![créer une tâche](assets/do-not-localize/create-review-task.png) de révision pour ouvrir la page **[!UICONTROL Tâche]** de révision. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Facultatif) Dans la liste **[!UICONTROL Projets]**, choisissez le projet auquel vous voulez associer la tâche de révision. Par défaut, l’option **[!UICONTROL Aucun]** est sélectionnée. Si vous ne souhaitez associer aucun projet à la tâche de révision, conservez cette sélection.
 
