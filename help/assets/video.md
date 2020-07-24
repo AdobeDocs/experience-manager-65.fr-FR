@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '11828'
+source-wordcount: '11830'
 ht-degree: 96%
 
 ---
@@ -774,7 +774,7 @@ Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :
 1. Dans le coin supérieur droit de la page des propriétés de la vidéo, cliquez sur **[!UICONTROL Enregistrer et fermer.]**
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Publication rapide.]**
 
-   Voir aussi [Utilisation de la gestion de la publication avec AEM Sites](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Voir aussi [Utilisation de la gestion de la publication avec AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Vous avez la possibilité de vérifier la vidéo publiée sur votre chaîne YouTube.
 
