@@ -3,10 +3,10 @@ title: Téléchargez des ressources numériques depuis [!DNL Adobe Experience Ma
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3602a39e03536696911b39cceb20f10dfd3a9347
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 77%
+source-wordcount: '852'
+ht-degree: 76%
 
 ---
 
@@ -74,6 +74,6 @@ Le `Asset Download Servlet` peut être désactivé sur une instance  Publish en
 >[!MORELIKETHIS]
 >
 >* [Téléchargement de ressources protégées par DRM](drm.md).
->* [Téléchargez des fichiers à l’aide d’une application de bureau Experience Manager sur un ordinateur de bureau](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html)Windows ou Mac.
+>* [Téléchargez des fichiers à l’aide d’une application de bureau Experience Manager sur un ordinateur de bureau](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)Windows ou Mac.
 >* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html).
 
