@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '9245'
+source-wordcount: '9234'
 ht-degree: 64%
 
 ---
@@ -377,15 +377,11 @@ Pour prévisualisation d’un fichier à l’aide du clavier, procédez comme su
 
 1. Pour planifier une date/heure spécifique pour l’activation de la ressource, utilisez le sélecteur de date situé en regard du champ **[!UICONTROL Heure d’activation]**.
 
-   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de fin pour ajouter la date et l’heure pour l’activation de la ressource](assets/schedule-activation.png)
+   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de fin pour ajouter la date et l’heure pour l’activation de la ressource](assets/datepicker.png)
 
-   *Figure : Planification de l’activation de la ressource.*
+   *Figure : Utilisez le sélecteur de date pour planifier l’activation des ressources.*
 
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web ou via l’API HTTP.[!DNL Assets]
-
-   ![Sélecteur d’heure de date ou utilisation des touches du clavier dans le champ Heure de désactivation pour ajouter la date et l’heure de désactivation de fichier](assets/schedule-deactivation.png)
-
-   *Figure : Planifier la désactivation des ressources.*
 
 1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et appuyez ensuite sur Entrée. La nouvelle balise est enregistrée dans [!DNL Experience Manager]. [!DNL YouTube] requiert des balises pour la publication. See [publish videos to YouTube](video.md#publishing-videos-to-youtube).
 
@@ -503,15 +499,11 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    **Suppression d’un rendu**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** option from the toolbar. Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez personnaliser le Experience Manager pour supprimer des rendus spécifiques ou supprimer les fichiers et télécharger à nouveau les fichiers supprimés.
-
-   ![Option de suppression d’un rendu](assets/delete_renditionicon.png)
+   Sélectionnez un rendu dans le panneau **[!UICONTROL Rendus]** , puis cliquez sur l’ **[!UICONTROL option]** Supprimer le rendu ![pour supprimer une option de rendu](assets/do-not-localize/deleteoutline.png) de la barre d’outils. Une fois le traitement des ressources terminé, il est impossible de supprimer les rendus en masse. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Pour plusieurs fichiers, vous pouvez personnaliser le Experience Manager pour supprimer des rendus spécifiques ou supprimer les fichiers et télécharger à nouveau les fichiers supprimés.
 
    **Téléchargement d’un nouveau rendu**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
-
-   ![Option Ajouter le rendu pour télécharger un nouveau rendu](assets/chlimage_1-16.png)
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** ![Add rendition option to upload new rendition](assets/do-not-localize/add.png) option in the toolbar to upload a new rendition for the asset.
 
    >[!NOTE]
    >
@@ -541,11 +533,9 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 1. Accédez à l’emplacement des ressources que vous souhaitez supprimer.
 
-1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
+1. Select the asset, and click **[!UICONTROL Delete]** ![Delete option](assets/do-not-localize/deleteoutline.png) from the toolbar.
 
-   ![Supprimer, option](assets/delete_icon.png)
-
-1. Dans la boîte de dialogue de confirmation, cliquez sur :
+1. Dans la boîte de dialogue de confirmation, sélectionnez l’une des options suivantes :
 
    * **[!UICONTROL Annuler]** pour arrêter l’action
    * **[!UICONTROL Supprimer]** pour confirmer l’action :
@@ -590,9 +580,7 @@ Voir [Téléchargement de fichiers à partir d’un Experience Manager](/help/as
 
 1. Accédez à l’emplacement de la ressource/du dossier de ressources que vous souhaitez supprimer de l’environnement de publication (annuler la publication).
 
-1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** option from the toolbar.
-
-   ![Option Gérer la publication](assets/manage_publication.png)
+1. Sélectionnez le fichier/dossier à annuler la publication, puis cliquez sur l’option **** Gérer la publication ![](assets/do-not-localize/globe-publication.png) gérer la publication dans la barre d’outils.
 
 1. Sélectionnez l’action **[!UICONTROL Annuler la publication]** dans la liste.
 
@@ -842,9 +830,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    ![Annotation et état de révision sur le PDF généré](assets/chlimage_1-42.png)
 
-1. Téléchargez ou imprimez le fichier PDF à l’aide des options situées dans le coin supérieur droit.
-
-   ![Options de téléchargement et d’impression au format PDF](assets/chlimage_1-43.png)
+1. Télécharger l’option ![Télécharger pour les options d’](assets/do-not-localize/download.png) impression ou de téléchargement au format PDF ![](assets/do-not-localize/print.png) en utilisant les options en haut à droite.
 
    >[!NOTE]
    >
