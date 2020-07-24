@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6623'
 ht-degree: 97%
 
 ---
@@ -141,7 +141,9 @@ Pour effectuer le suivi des visionneuses Dynamic Media dans AEM Sites, toutes 
 
 Une fois la configuration appropriée effectuée, toute visionneuse Dynamic Media que vous ajoutez à une page Sites, à l’aide d’un composant WCM pris en charge par Dynamic Media, effectue automatiquement le suivi des données vers Adobe Analytics ou Adobe Analytics for video, ou les deux.
 
-Voir [Ajout de ressources Dynamic Media à des pages à l’aide d’Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+<!-- To be reviewed and updated:
+See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+-->
 
 ### Suivi des visionneuses Dynamic Media à l’aide du code intégré {#tracking-dynamic-media-viewers-using-embed-code}
 
@@ -153,9 +155,11 @@ Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise e
 
 Voir [Ajout du code intégré Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/implement/configure/implement-the-launch-install-code.html) pour en savoir plus sur l’utilisation du code intégré de la bibliothèque Adobe Launch.
 
-Voir [Incorporation de la visionneuse de vidéos ou d’images sur une page web](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) pour en savoir plus sur l’utilisation de la fonctionnalité de code intégré d’AEM Dynamic Media.
+<!-- To be reviewed and updated:
+See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
+-->
 
-**Pour effectuer le suivi des visionneuses Dynamic Media à l’aide du code intégré** :
+**Pour effectuer le suivi des visionneuses Dynamic Media à l’aide du code intégré**:
 
 1. Préparez une page web sur laquelle vous voulez incorporer une visionneuse Dynamic Media.
 1. Obtenez le code intégré de la bibliothèque Adobe Launch en vous connectant d’abord à Adobe Launch (voir [Configuration d’Adobe Launch](#configuringadobelaunch)).
@@ -197,7 +201,7 @@ Lorsqu’il est sélectionné, l’éditeur d’éléments de données génère 
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
+Pour obtenir la liste des événements pris en charge par chaque type de visionneuse, reportez-vous au [Guide de référence des visionneuses Dynamic Media](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html), accédez à la section spécifique à la visionneuse, puis cliquez sur la sous-section Prise en charge du suivi d’Adobe Analytics. À l’heure actuelle, le guide de référence des visionneuses Dynamic Media ne documente pas les arguments d’événement.
 
 Examinons à présent le cycle de vie de l’*élément de données* Visionneuses Dynamic Media. La valeur de cet élément de données est renseignée après que l’événement de visionneuse Dynamic Media correspondant a lieu sur la page. Par exemple, si l’élément de données pointe vers l’événement **[!UICONTROL LOAD]** et son argument « asset », la valeur de cet élément de données recevra des données valides une fois que la visionneuse aura exécuté l’événement LOAD pour la première fois. Si l’élément de données pointe vers l’événement **[!UICONTROL ZOOM]** et son argument « scale », la valeur de cet élément de données reste vide jusqu’à ce que la visionneuse envoie un événement **[!UICONTROL ZOOM]** pour la première fois.
 
@@ -712,6 +716,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
    * Sous l’en-tête **[!UICONTROL Sélectionner un rôle pour l’API Experience Platform Launch]**, sélectionnez **[!UICONTROL Admin]**.
 
    * Sous l’en-tête **[!UICONTROL Sélectionner un ou plusieurs profils de produit pour l’API Experience Platform Launch]**, sélectionnez le profil de produit appelé **[!UICONTROL Launch - &lt;nom_de_votre_société>]**.
+
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
 1. Cliquez sur **[!UICONTROL Créer une intégration]**.
@@ -747,7 +752,8 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
    * **[!UICONTROL Titre]** : entrez un titre de compte descriptif.
    * **[!UICONTROL Serveur d’autorisation]** : revenez à la page Informations concernant l’intégration que vous avez ouverte précédemment. Cliquez sur l’onglet **[!UICONTROL JWT]**. Copiez le nom du serveur (sans le chemin d’accès), comme indiqué ci-dessous.
-   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
+
+(l’exemple de nom de serveur est fourni à titre d’illustration uniquement)   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
 Par exemple, `https://ims-na1.adobelogin.com/`
 (l’exemple de nom de serveur est fourni à titre d’illustration uniquement)
 
