@@ -10,16 +10,21 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 8%
 
 ---
 
 
 # Leaderboard Essentials {#leaderboard-essentials}
 
-Cette page fournit les informations essentielles pour travailler avec la fonction de leadership.
+Cette page fournit les informations essentielles pour travailler avec le tableau de bord.
 
-Avant d’inclure le composant du tableau de bord dans une page, il est nécessaire de configurer le score [des communautés et les badges](implementing-scoring.md). Voir aussi [Scoring and Badges Essentials](configure-scoring.md).
+Avant d’inclure le composant de tableau de bord dans une page, il est nécessaire de configurer le score et les badges [des communautés](implementing-scoring.md).
+
+Voir [Scoring and Badges Essentials](configure-scoring.md).
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -27,7 +32,7 @@ Avant d’inclure le composant du tableau de bord dans une page, il est nécessa
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/gamification/composants/hbs/lead board</td>
+   <td>social/gamification/composants/hbs/leadboard</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclus</strong></a></td>
@@ -35,7 +40,7 @@ Avant d’inclure le composant du tableau de bord dans une page, il est nécessa
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.gamification.hbs.lead.board</td>
+   <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -47,7 +52,7 @@ Avant d’inclure le composant du tableau de bord dans une page, il est nécessa
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Fonctionnalité <a href="enabling-leaderboard.md">de classement</a></td>
+   <td>Voir Fonctionnalité <a href="enabling-leaderboard.md">du tableau de bord</a></td>
   </tr>
  </tbody>
 </table>
@@ -56,4 +61,4 @@ Avant d’inclure le composant du tableau de bord dans une page, il est nécessa
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de la communauté qui inclut la fonction [](functions.md#leaderboard-function)Leaderboard, inclut un `leaderboard` composant configuré.
+Une structure de site communautaire qui comprend la fonction [](functions.md#leaderboard-function)Leaderboard, comprend un `leaderboard` composant configuré.
