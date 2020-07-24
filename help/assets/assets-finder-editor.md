@@ -3,9 +3,9 @@ title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2130'
 ht-degree: 73%
 
 ---
@@ -298,8 +298,6 @@ Sur la page Éditeur de ressources, les utilisateurs peuvent ensuite saisir des 
 
 Le composant Sous-ressources permet d’afficher et de sélectionner des sous-ressources. Vous pouvez déterminer les noms qui apparaissent dans la [ressources principale](/help/assets/assets.md#what-are-digital-assets) et les sous-ressources.
 
-![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
-
 Double-cliquez sur le composant Sous-ressources pour ouvrir la boîte de dialogue des sous-ressources dans laquelle vous pouvez modifier le titre de la ressource principale et de toutes les sous-ressources. Les valeurs par défaut apparaissent sous le champ correspondant.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
@@ -347,8 +345,6 @@ Voici un exemple de composant Miniature renseigné :
 #### Titre {#title}
 
 Le composant Titre affiche le titre de la ressource et une description.
-
-![chlimage_1-163](assets/chlimage_1-391.png)
 
 Par défaut, il est en mode lecture seule. Les utilisateurs ne peuvent donc pas le modifier. Pour le rendre modifiable, double-cliquez sur le composant et décochez la case **Masquer le boutond’édition**. En outre, saisissez un titre pour plusieurs ressources.
 
