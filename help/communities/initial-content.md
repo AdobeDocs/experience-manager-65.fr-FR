@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -38,13 +38,13 @@ Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate
 
    Pour passer à l’interface utilisateur classique, sélectionnez une navigation globale et passez la souris sur le côté droit de l’icône Projets. Sélectionnez l’icône *Basculer vers l’interface utilisateur* classique qui s’affiche :
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    La possibilité de passer à l’interface utilisateur classique doit être [activée par un administrateur](../../help/sites-administering/enable-classic-ui.md).
 
 1. Dans la page [d’accueil](http://localhost:4502/welcome.html)de l’IU **[!UICONTROL classique, sélectionnez]** Sites Web.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![site Web classique-ui](assets/classic-ui-website.png)
 
    Vous pouvez également accéder directement à l’interface utilisateur classique des sites Web en accédant à [/siteadmin.](http://localhost:4502/siteadmin)
 
@@ -57,7 +57,7 @@ Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate
    * Sélectionner **[!UICONTROL Un Modèle SCF Sandbox Play]**
    * Cliquez sur **[!UICONTROL Créer]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. Dans le volet explorateur, sélectionnez la page que vous venez de créer `/Websites/SCF Sandbox Site`, puis cliquez sur **[!UICONTROL Nouveau]** > **[!UICONTROL Nouvelle page]**:
 
@@ -75,11 +75,11 @@ Maintenant qu&#39;il existe un modèle [de](initial-app.md#createthepagetemplate
 
 1. C’est ainsi que le site Web s’affiche désormais dans la console Sites Web. Notez que les pages enfants de l&#39;élément sélectionné dans le volet explorateur s&#39;affichent dans le volet de droite où elles peuvent être gérées.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-site-web-page](assets/classic-ui-website-page.png)
 
    Il s’agit de la vue de référentiel de ce qui a été créé à l’aide de l’outil Site Web et du modèle :
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-vue](assets/classic-ui-repository-view.png)
 
 ## Ajouter le chemin de conception {#add-the-design-path}
 
@@ -100,7 +100,7 @@ Lors de la ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeet
 
 Le référentiel doit apparaître comme suit :
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Cliquez sur **[!UICONTROL Enregistrer tout]**
 
