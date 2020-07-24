@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+source-git-commit: 81249e13db9bd173d4251683ccaacbb7f71b3209
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 60%
@@ -27,9 +27,15 @@ Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui u
 1. Log in at `/lc/crx/de` with Administrator permissions.
 1. Procédez comme suit :
 
-   1. Répliquer la structure hiérarchique : de `/libs/livecycle/core/content` à `/apps/livecycle/core/content`. Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
+   1. Répliquer la structure hiérarchique : de `/libs/livecycle/core/content` à `/apps/livecycle/core/content`.
 
-   1. Copy the content folder: from `/libs/livecycle/core` to `/apps/livecycle/core`.
+      Conservez les mêmes propriétés (nœud/dossier) et contrôle d’accès.
+
+   1. Copiez le dossier de contenu :
+
+      de: `/libs/livecycle/core`
+
+      vers: `/apps/livecycle/core`.
 
    1. Delete the contents of `/apps/livecycle/core` folder.
 
@@ -244,6 +250,7 @@ String browserLocale = "en";
 
       * vers `/apps/livecycle/core/components/login`
    1. Modify `/apps/livecycle/core/components/login/login.jsp` to incorporate the newly added styles.
+
 
 
 Par exemple :
