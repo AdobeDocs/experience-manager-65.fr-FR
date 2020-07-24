@@ -3,10 +3,10 @@ title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 76%
+source-wordcount: '1904'
+ht-degree: 75%
 
 ---
 
@@ -46,11 +46,9 @@ Utilisez l’option **[!UICONTROL Créer uniquement la structure]** pour créer 
 
 1. Click **[!UICONTROL Create &amp; Translate]** at the bottom.
 
-   ![chlimage_1-58](assets/chlimage_1-58.png)
-
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la langue pour laquelle vous souhaitez créer une structure de dossiers.
 
-   ![chlimage_1-59](assets/chlimage_1-59.png)
+   ![sélectionner la langue de la cible](assets/target-language.png)
 
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Créer uniquement la structure]**.
 
@@ -58,11 +56,11 @@ Utilisez l’option **[!UICONTROL Créer uniquement la structure]** pour créer 
 
 1. Cliquez sur **[!UICONTROL Créer]**. La nouvelle structure de la langue cible est répertoriée sous **[!UICONTROL Copies de langue]**.
 
-   ![chlimage_1-61](assets/chlimage_1-61.png)
+   ![copies de langue](assets/lang-copy2.png)
 
 1. Click the structure from the list, and then click **[!UICONTROL Reveal in Assets]** to navigate to the folder structure within the target language.
 
-   ![chlimage_1-62](assets/chlimage_1-62.png)
+   ![révéler des ressources](assets/reveal-in-assets.png)
 
 ### Créer un projet de traduction {#create-a-new-translation-project}
 
@@ -74,8 +72,6 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 1. Click **[!UICONTROL Create &amp; Translate]** at the bottom.
-
-   ![chlimage_1-64](assets/chlimage_1-64.png)
 
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la ou les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 
@@ -91,11 +87,11 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
 1. Cliquez sur **[!UICONTROL Créer]**. Les ressources du dossier source sont copiées vers les dossiers cibles pour les paramètres régionaux que vous avez sélectionnés à l’étape 4.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![copies de langue](assets/lang-copy2.png)
 
 1. Pour accéder au dossier, sélectionnez la copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]**.
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![révéler des ressources](assets/reveal-in-assets.png)
 
 1. Accédez à la console Projets. Le dossier de traduction est copié dans la console Projets.
 
@@ -135,11 +131,9 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. La liste des copies de traduction disponibles s’affiche.
 1. Click **[!UICONTROL Create &amp; Translate]** at the bottom.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
-
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la ou les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![sélectionner la langue de la cible](assets/target-language.png)
 
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Ajouter à un projet de traduction existant]** afin d’exécuter le workflow de traduction sur le dossier.
 
@@ -207,11 +201,9 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Cochez la case située avant **[!UICONTROL Copies de langue]**, puis sélectionnez le dossier cible correspondant au paramètre régional approprié.
 
-   ![chlimage_1-84](assets/chlimage_1-84.png)
+   ![sélectionner une copie de langue](assets/lang-copy1.png)
 
 1. Click **[!UICONTROL Update language copies]** at the bottom.
-
-   ![chlimage_1-85](assets/chlimage_1-85.png)
 
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Créer un projet de traduction]**.
 
@@ -261,11 +253,9 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 1. Activez la case à cocher devant **[!UICONTROL Copies de langue]** de façon à sélectionner toutes les copies de langue. Désélectionnez les autres copies à l’exception des copies de langue correspondant aux paramètres régionaux dans lesquels vous souhaitez traduire.
 
-   ![chlimage_1-95](assets/chlimage_1-95.png)
+   ![sélectionner une copie de langue](assets/lang-copy1.png)
 
 1. Click **[!UICONTROL Update language copies]** at the bottom.
-
-   ![chlimage_1-96](assets/chlimage_1-96.png)
 
 1. Dans la liste **[!UICONTROL Projet]**, choisissez **[!UICONTROL Ajouter à un projet de traduction existant]**.
 
@@ -273,7 +263,7 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
 
 1. Dans la liste **[!UICONTROL Projet de traduction existant]**, choisissez un projet auquel ajouter la ressource à traduire.
 
-   ![chlimage_1-98](assets/chlimage_1-98.png)
+   ![sélectionner un projet](assets/select-a-project.png)
 
 1. Cliquez sur **[!UICONTROL Démarrer]**.
 1. Voir les étapes 9 à 14 de la section [Ajouter à un projet de traduction existant](translation-projects.md#add-to-existing-translation-project) pour accomplir le reste de la procédure.
@@ -294,17 +284,13 @@ Lorsque vous exécutez un workflow de traduction pour mettre à jour une copie d
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Cochez la case en regard de **[!UICONTROL Titre]**.
-1. From the toolbar, click **[!UICONTROL Accept Translation]** and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
-
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+1. From the toolbar, click **[!UICONTROL Accept Translation]** ![accept translation](assets/do-not-localize/thumb-up.png) and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
 
    >[!NOTE]
    >
    >Pour permettre au workflow de traduction de mettre à jour la ou les ressources de destination, acceptez à la fois la ressource et les métadonnées.
 
-   Click **[!UICONTROL Reject Translation]** to retain the originally translated version of the asset in the target locale root and reject the edited version.
-
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   Click **[!UICONTROL Reject Translation]** ![reject translation](assets/do-not-localize/thumb-down.png) to retain the originally translated version of the asset in the target locale root and reject the edited version.
 
 1. Pour vue des métadonnées traduites, accédez à la [!DNL Assets] console et ouvrez la page [!UICONTROL Propriétés] pour chacun des fichiers traduits.
 
