@@ -4,10 +4,10 @@ seo-title: Guide de l’utilisateur de l’Adobe Experience Manager 6.5 Assets
 description: Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 seo-description: Couvre toutes les tâches de ressources du Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -17,6 +17,9 @@ ht-degree: 17%
 Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 
 ## Articles Experience Manager clés
+
+<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
+-->
 
 * [Prise en main du Experience Manager](https://helpx.adobe.com/fr/experience-manager/get-started.html)
 * [Notes de mise à jour de Experience Manager 6.5](/help/release-notes/home.md)
@@ -47,6 +50,6 @@ Ce guide porte sur toutes les tâches de ressources Experience Manager, telles q
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Forum de la communauté des ressources Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guide de l&#39;utilisateur Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
-* [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
