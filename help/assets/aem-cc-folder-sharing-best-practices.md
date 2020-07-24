@@ -3,9 +3,9 @@ title: Adobe Experience Manager vers le dossier Adobe Creative Cloud pour le par
 description: Configurez l’Adobe Experience Manager pour permettre aux utilisateurs des ressources Experience Manager d’échanger des dossiers avec les utilisateurs Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1082'
 ht-degree: 21%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 21%
 
 >[!CAUTION]
 >
->La fonction de partage de dossiers Experience Manager à Creative Cloud est obsolète. Adobe recommande vivement l’utilisation de fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou l’application [de bureau](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
+>La fonction de partage de dossiers Experience Manager à Creative Cloud est obsolète. Adobe recommande vivement l’utilisation de fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou l’application [de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)Experience Manager. Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 L’Adobe Experience Manager peut être configuré pour permettre aux utilisateurs des ressources de partager des dossiers avec les utilisateurs des applications Adobe Creative Cloud. Ils sont donc disponibles sous forme de dossiers partagés dans le service Adobe Creative Cloud Assets. Cette fonction peut être utilisée pour échanger des fichiers entre les équipes de création et les utilisateurs du module Ressources, en particulier lorsque les utilisateurs du module Ressources n’ont pas accès au déploiement du module Ressources (ils ne se trouvent pas sur le réseau de l’entreprise).
 
