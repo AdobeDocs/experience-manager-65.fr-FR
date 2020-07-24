@@ -3,9 +3,9 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04babc1ec79a0816e1cb9f97e2711fe212f51387
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2667'
 ht-degree: 52%
 
 ---
@@ -19,11 +19,7 @@ Dans [!DNL Adobe Experience Manager Assets], les schémas contiennent des champs
 
 Pour vue et modifier la page de propriétés d’un fichier, procédez comme suit :
 
-1. Cliquez sur l’option Propriétés **[!UICONTROL de la]** Vue dans les actions rapides de la mosaïque de ressources de la vue de carte.
-
-   ![Actions rapides sur la mosaïque de ressources](assets/chlimage_1-170.png)
-
-   Vous pouvez également sélectionner un fichier, puis cliquer sur **[!UICONTROL Propriétés]** dans la barre d’outils.
+1. Cliquez sur l’option Propriétés **[!UICONTROL de la]** Vue dans les actions rapides de la mosaïque de ressources de la vue de carte. Vous pouvez également sélectionner un élément, puis cliquer sur **[!UICONTROL Propriétés]** Propriétés de la ![vue](assets/do-not-localize/info-circle-icon.png) dans la barre d’outils.
 
 1. Vous pouvez modifier les différentes propriétés de métadonnées modifiables sous les onglets disponibles. However, you cannot modify the asset [!UICONTROL Type] in the [!UICONTROL Basic] tab of properties page.
 
