@@ -3,10 +3,10 @@ title: Traiter les ressources pour exécuter des processus d’entreprise, effec
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 30%
+source-wordcount: '986'
+ht-degree: 29%
 
 ---
 
@@ -56,11 +56,9 @@ Pour appliquer un processus à une ressource, procédez comme suit :
 
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (Facultatif) Spécifiez un titre pour le processus qui peut être utilisé pour référencer l’instance du processus.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![sélectionnez un processus, fournissez un titre et cliquez sur début.](assets/start-workflow.png)
 
 1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Proceed]**. Chaque étape du workflow s’affiche en tant qu’événement dans la chronologie.
 
@@ -75,7 +73,7 @@ Pour appliquer un processus à une ressource, procédez comme suit :
 1. Cliquez sur **[!UICONTROL Actions]** ![chevron vers le haut](assets/do-not-localize/chevron-up-icon.png) en bas.
 1. Cliquez sur **[!UICONTROL Démarrer le workflow]**. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![Processus de début](assets/start-workflow.png)
 
 1. (Facultatif) Spécifiez le titre du workflow, qui peut permettre de référencer l’instance du workflow.
 1. Cliquez sur **[!UICONTROL Démarrer]**, puis sur **[!UICONTROL Confirmer]** dans la boîte de dialogue. Le workflow s’exécute sur toutes les ressources sélectionnées.
@@ -94,7 +92,7 @@ Les administrateurs peuvent configurer le processus pour exécuter et traiter au
 
 Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de processus qui l’exécute. Un lanceur de processus surveille les modifications dans le référentiel de contenu et exécute le processus lorsque les conditions prédéfinies sont remplies. Les administrateurs peuvent donner accès aux marketeurs pour créer les workflows et configurer le lanceur. Les utilisateurs peuvent modifier le processus de mise à jour des actifs  DAM par défaut afin d’ajouter les étapes supplémentaires requises pour traiter des actifs spécifiques. Le processus s’exécute sur tous les fichiers nouvellement transférés. Utilisez l’une des méthodes suivantes pour limiter l’exécution des étapes supplémentaires sur des ressources spécifiques :
 
-* Effectuez une copie du flux de travail [!UICONTROL DAM Update Asset] et modifiez-le pour l’exécuter sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
+* Effectuez une copie du flux de travail [!UICONTROL DAM Update Asset] et modifiez-le pour qu’il s’exécute sur une hiérarchie de dossiers spécifique. Cette approche est utile pour quelques dossiers.
 * Les étapes de traitement supplémentaires peuvent être ajoutées à l’aide d’un fractionnement [](/help/sites-developing/workflows-step-ref.md#or-split) OU applicable de manière conditionnelle au plus grand nombre de dossiers requis.
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
