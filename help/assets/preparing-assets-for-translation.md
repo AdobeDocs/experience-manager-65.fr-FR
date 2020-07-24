@@ -3,10 +3,10 @@ title: Préparation des ressources pour la traduction
 description: Créez des dossiers racine de langue pour préparer les fichiers à la traduction afin de prendre en charge les fichiers multilingues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 64%
+source-wordcount: '450'
+ht-degree: 66%
 
 ---
 
@@ -19,7 +19,7 @@ Dans les ressources d’Adobe Experience Manager, les ressources multilingues so
 
 Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. For example, */content/dam/it* is the Italian language root for the Italian language copy. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
-La copie de langue pour laquelle vous ajoutez initialement des ressources est la langue principale. La langue principale est la source qui est traduite dans d&#39;autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
+La copie de langue pour laquelle vous ajoutez initialement des ressources est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
 ```
  /content
@@ -35,9 +35,9 @@ La copie de langue pour laquelle vous ajoutez initialement des ressources est la
 
 Procédez comme suit pour préparer la traduction de vos ressources :
 
-1. Créez la racine de langue de votre langue principale. Par exemple, la racine de langue de la copie en anglais dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
+1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue de la copie en anglais dans l’exemple de hiérarchie de dossiers est `/content/dam/en`. Ensure that the language root is correctly configured according to the information in [Create a Language Root](preparing-assets-for-translation.md#creating-a-language-root).
 
-1. Ajoutez des ressources à votre langue principale.
+1. Ajoutez des ressources à votre gabarit de langue.
 1. Créez la racine de langue de chaque langue cible pour laquelle vous avez besoin d’une copie de langue.
 
 ## Create a language root {#creating-a-language-root}
@@ -60,11 +60,11 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 
 Experience Manager interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within Assets.
 
-1. Dans la console Ressources, choisissez la langue principale pour laquelle vous souhaitez créer des copies de langue.
+1. Dans la console Ressources, choisissez le gabarit de langue pour lequel vous souhaitez créer des copies de langue.
 1. Dans le rail de gauche, sélectionnez l’option **[!UICONTROL Références]** pour ouvrir le volet [!UICONTROL Référence] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
 1. In the References pane, click **[!UICONTROL Language Copies]**. The [!UICONTROL Language Copies] panel shows the language copies of the assets.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![copies de langue](assets/lang-copy2.png)
