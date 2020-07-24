@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -44,20 +44,18 @@ Dans l’environnement d’auteur, pour accéder à la console de configuration 
 
 * Sélectionnez **[!UICONTROL Envoyer]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 ### Publication de la configuration {#publishing-the-configuration}
 
 Bien que JSRP soit la configuration par défaut, pour s’assurer que la configuration identique est définie dans l’environnement de publication :
 
-* Sur l&#39;auteur :
+* A partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
+* Sélectionnez **[!UICONTROL Activer l’arborescence]** > Tracé **** de Début :
 
-   * A partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
-   * Sélectionnez **[!UICONTROL Activer l’arborescence]** > Tracé **** de Début :
+   * Naviguer jusqu’à `/conf/global/settings/community/srpc/`
 
-      * Naviguer jusqu’à `/conf/global/settings/community/srpc/`
-   * Sélectionner **[!UICONTROL Activer]**
-
+* Sélectionner **[!UICONTROL Activer]**
 
 ## Gestion des données utilisateur {#managing-user-data}
 
