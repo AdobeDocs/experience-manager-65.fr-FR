@@ -3,10 +3,10 @@ title: Gestion des droits numériques dans AEM [!DNL Adobe Experience Manager As
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
@@ -65,9 +65,6 @@ Vous pouvez rechercher des ressources arrivées à expiration, y compris les sou
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Cliquez sur [!DNL Experience Manager] le logo pour afficher le panneau de recherche.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -114,11 +111,9 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Pour afficher la page de détails de la ressource, sélectionnez une ressource dans l’interface [!DNL Assets], puis cliquez sur **[!UICONTROL Propriétés]**.
+1. To display its asset details page, in the [!DNL Assets] interface, select an asset and click **[!UICONTROL Properties]** ![view properties](assets/do-not-localize/info-circle-icon.png).
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. Dans l’onglet Avancé, définissez une date d’expiration pour la ressource dans le champ **[!UICONTROL Date d’expiration]**.
+1. Dans l’onglet [!UICONTROL Avancé], définissez une date d’expiration pour la ressource dans le champ **[!UICONTROL Date d’expiration]**.
 
    ![définir la date et l’heure d’expiration de l’actif dans le champ Expire](assets/asset-properties-advanced-tab.png)
 
