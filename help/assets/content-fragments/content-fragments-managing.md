@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 99%
 
 ---
@@ -120,7 +120,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 >[!NOTE]
 >
->La plupart de ces actions sont [standard pour Assets](/help/assets/managing-assets-touch-ui.md) et/ou l’[application de bureau AEM](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html).
+>La plupart de ces actions sont [standard pour Assets](/help/assets/managing-assets-touch-ui.md) et/ou l’[application de bureau AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html).
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 
@@ -237,7 +237,7 @@ Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de
 
 ## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
 
-Outre les options standard, la [Chronologie](/help/assets/managing-assets-touch-ui.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
+Outre les options standard, la [Chronologie](/help/assets/managing-assets-touch-ui.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
 * Affichage des informations sur les versions, commentaires et annotations
 * Actions pour les versions
