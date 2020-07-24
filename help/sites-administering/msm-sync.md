@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 81%
+source-wordcount: '2673'
+ht-degree: 80%
 
 ---
 
@@ -53,7 +53,7 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
 <table>
  <tbody>
   <tr>
-   <th>Name (Nom)</th>
+   <th>Nom</th>
    <th>Description</th>
    <th>Déclencheur</th>
    <th>Actions de synchronisation<br /><br />  Voir aussi <a href="#installed-synchronization-actions">Actions de synchronisation installées</a></th>
@@ -188,7 +188,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>workflow</td>
-   <td><p>Lance le workflow défini par la propriété cible (pour les pages uniquement) et utilise la Live Copy comme charge utile.</p> <p>Le chemin d’accès cible est le chemin d’accès au nœud du modèle ; par exemple, /etc/workflow/models/request_for_activation/jcr:content/model</p> </td>
+   <td><p>Lance le workflow défini par la propriété cible (pour les pages uniquement) et utilise la Live Copy comme charge utile.</p> <p>Le chemin d’accès à la cible est le chemin d’accès du noeud du modèle.</p> </td>
    <td>target : (chaîne) chemin d’accès au modèle de workflow.<br /> </td>
   </tr>
   <tr>
@@ -416,4 +416,4 @@ Configure the service using either the [Web Console](/help/sites-deploying/confi
 * Dans la console web, le nom de la propriété à configurer est « Configuration de déploiement par défaut ».
 * Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-Définissez la valeur de cette propriété sur le chemin d’accès à la configuration de déploiement à utiliser comme valeur système par défaut. The default value is `/etc/msm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
+Définissez la valeur de cette propriété sur le chemin d’accès à la configuration de déploiement à utiliser comme valeur système par défaut. The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.
