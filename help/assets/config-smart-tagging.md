@@ -3,10 +3,10 @@ title: Configurez le balisage des ressources à l’aide de Smart Content Servic
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 55%
+source-wordcount: '1102'
+ht-degree: 56%
 
 ---
 
@@ -17,8 +17,8 @@ You can integrate [!DNL Adobe Experience Manager] with the Smart Content Service
 
 L’article détaille les tâches essentielles suivantes qui sont requises pour configurer le service de contenu dynamique. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
-1. Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. [Obtenez un certificat public pour l’intégration d’OAuth.](#obtain-public-certificate)
-1. [Créez une intégration dans Adobe Developer Console et chargez la clé publique générée.](#create-adobe-i-o-integration)
+1. Create a Smart Content Service configuration in [!DNL Experience Manager] to generate a public key. [Obtenez un certificat public](#obtain-public-certificate) pour l’intégration d’OAuth.
+1. [Créez une intégration dans Adobe Developer Console](#create-adobe-i-o-integration) et chargez la clé publique générée.
 1. [Configurez votre déploiement](#configure-smart-content-service) à l’aide de la clé d’API et d’autres informations d’identification d’Adobe Developer Console.
 1. [Testez la configuration](#validate-the-configuration).
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
@@ -124,11 +124,9 @@ Une fois la configuration terminée, vous pouvez utiliser un MBean JMX pour vali
 
 1. Dans l’onglet **[!UICONTROL Arguments]**, sélectionnez **[!UICONTROL Ignorer les erreurs]** si vous souhaitez que le processus se termine même si l’étape de balisage automatique échoue.
 
-   ![Configurez le processus de mise à jour des actifs de gestion des actifs numériques pour ajouter l’étape de balise active et sélectionner l’avance du gestionnaire.](assets/smart-tag-step-properties-workflow2.png)
-
    Pour baliser les ressources lors de leur chargement, et ce, que le balisage intelligent soit activé ou non dans les dossiers, cochez la case **[!UICONTROL Ignorer l’indicateur de balise intelligente]**.
 
-   ![Configurez le processus de mise à jour de la gestion des actifs numériques pour ajouter une étape de balise active et sélectionnez ignorer l’indicateur de balise active.](assets/smart-tag-step-properties-workflow3.png)
+   ![Configurez le processus de mise à jour de la gestion des actifs numériques pour ajouter une étape de balise active et sélectionnez ignorer l’indicateur de balise active.](assets/smart-tag-step-properties-workflow2.png)
 
 1. Cliquez sur **[!UICONTROL OK]** pour fermer l’étape du processus, puis enregistrez ce dernier.
 
