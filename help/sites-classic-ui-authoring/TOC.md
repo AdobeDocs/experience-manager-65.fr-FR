@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-title: Guide de l’utilisateur de création d’interface utilisateur classique d’AEM 6.5
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 89%
 
 ---
 
@@ -12,14 +16,14 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 # AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
 
 + [Présentation du guide de création d’interface utilisateur classique](home.md)
-+ Présentation de la création classique d’interface utilisateur {#introduction}
++ Présentation de la création d’interface utilisateur classique {#introduction}
    + [Premières étapes pour les auteurs](classic-page-author-first-steps.md)
    + [Création dans l’IU classique](classicui.md)
    + [Utilisation de l’environnement de création](author-env.md)
    + [Manipulation de base](author-env-basic-handling.md)
    + [Configuration de l’environnement du compte](author-env-user-props.md)
    + [Choix de l’interface utilisateur](author-env-select-ui.md)
-   + [Recherche](author-env-search.md)
+   + [Rechercher](author-env-search.md)
    + [Votre boîte de réception](author-env-inbox.md)
    + [Raccourcis clavier pour les consoles](author-env-keyboard-shortcuts.md)
 + Création {#authoring}
@@ -32,8 +36,8 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Modification des propriétés de page](classic-page-author-edit-page-properties.md)
    + [Annotations lors de la modification d’une page](classic-page-author-annotations.md)
    + [Résolution des problèmes d’AEM lors de la création](classic-page-author-troubleshooting.md)
-   + [Création d’un contenu accessible (conformité WCAG 2.0) ](classic-page-author-accessible-content.md)
-   + [Création d’une page pour les périphériques mobiles](classic-feature-mobile.md)
+   + [Création d’un contenu accessible (conformité WCAG 2.0)](classic-page-author-accessible-content.md)
+   + [Création d’une page pour les appareils mobiles](classic-feature-mobile.md)
    + [Composants pour la création de page](classic-page-author-edit-mode.md)
    + [Raccourcis clavier lors de la modification de pages](classic-page-author-keyboard-shortcuts.md)
 + Fonctions de site et de page {#siteandpage}
@@ -48,13 +52,13 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 + Workflows {#workflows}
    + [Participation aux workflows](classic-workflows-participating.md)
    + [Utilisation des workflows](classic-workflows.md)
-   + [Application de workflows aux pages](classic-workflows-applying.md)
+   + [Application de workflows aux pages ](classic-workflows-applying.md)
 + Lancements {#launches}
    + [Lancements](classic-launches.md)
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation   {#personalization}
++ Personnalisation  {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
@@ -78,8 +82,8 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 + Création de fichiers dans l’interface utilisateur classique {#assets}
    + [Utilisation des ressources](classicui-assets.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media-assets-delivering.md)
-   + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
+   + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
    + [Ajout de fonctionnalités Scene7 à votre page](manage-assets-classic-s7.md)
    + [Vidéo](manage-assets-classic-s7-video.md)
-   + [Utilisation de Dynamic Media](dynamic-media-assets.md)
+   + [Utilisation de Dynamic Media](dynamic-media-assets.md)
    + [Conventions de dénomination pour le test des ressources](asset-naming-conventions.md)
