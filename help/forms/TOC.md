@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: formulaires
 audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.5 Forms
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 8bb5e92140371fbfee0f946ed3701cd40a972702
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 69%
@@ -577,7 +578,7 @@ ht-degree: 69%
    + [Rapports de processus de dépannage](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Guides de référence pour les développeurs {#developer-reference}
    + [Principes de développement de base](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-   + [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [HTML Template Language](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
    + [Module externe AEM permettant de déboguer les formulaires adaptatifs](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Référence API Java pour AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html)
    + [Référence d’API Java d’AEM Forms on JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
