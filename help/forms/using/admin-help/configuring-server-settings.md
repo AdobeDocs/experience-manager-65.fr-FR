@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2657'
+ht-degree: 90%
 
 ---
 
@@ -55,7 +58,7 @@ Si les processus que vous utilisez sont conçus et implémentés sans avoir à u
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM forms.
+>Flex Workspace est obsolète pour la version d’AEM Forms.
 
 Par défaut, les courriers électroniques envoyés par AEM forms contiennent des liens vers Flex Workspace (obsolète pour AEM forms on JEE). Vous pouvez configurer AEM forms pour envoyer des courriers électroniques contenant des liens vers l’espace de travail AEM Forms. Pour en savoir plus sur les avantages de l’espace de travail AEM Forms par rapport à Flex Workspace (obsolète pour AEM forms on JEE), consultez [cet](/help/forms/using/features-html-workspace-available-flex.md) article.
 
@@ -63,7 +66,7 @@ Par défaut, les courriers électroniques envoyés par AEM forms contiennent des
 1. Ouvrez un modèle d’affectation des tâches.
 1. Définissez le modèle dans les notifications de tâche à l’adresse suivante : `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
-   ```as3
+   ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
    ```
 
@@ -193,7 +196,7 @@ Pour les notifications de tâche uniquement, le processus des formulaires inclut
 
 If your solution is deployed in a clustered environment, replace `@@notification-host@@` with the cluster address.
 
-`<`*PORT *`>`est le numéro de port de l’écouteur HTTP du serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
+`<`*PORT *`>`est le numéro de port de l’écouteur HTTP pour le serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
 
 **JBoss :** 8080
 
@@ -213,23 +216,23 @@ La liste Sélectionneur de variables fournit des variables utiles que vous pouve
 
 Pour les rappels, affectations de tâche et échéances des utilisateurs et des groupes, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**description** Contenu de la propriété Description, tel que défini dans l’étape de l’utilisateur (point  de l’, opération d’affectation de  de ou opération d’affectation de plusieurs ) du processus dans Workbench.
+**description** Contenu de la propriété Description, tel que défini dans l’étape utilisateur (point de début, opération d’affectation de Tâche ou opération d’affectation de plusieurs Tâches) du processus dans Workbench.
 
-**instructions** Contenu de la propriété Instructions du, tel que défini dans l’étape utilisateur du processus dans Workbench.
+**instructions** Contenu de la propriété Instructions de la Tâche, tel que défini dans l’étape utilisateur du processus dans Workbench.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms.
+**hôte** de notification Nom d’hôte du serveur d’applications AEM forms.
 
 **process-name** Nom du processus.
 
 **operation-name** Nom de l’étape.
 
-**taskid** Identifiant unique du  actuel.
+**taskid** Identifiant unique de la tâche active.
 
-**actions** Génère un numéroté des itinéraires valides (par exemple, Approuver, Rejeter) sur lesquels le peut cliquer.
+**actions** Génère une liste numérotée de routes valides (par exemple, Approuver, Rejeter) sur lesquelles le destinataire peut cliquer.
 
 De plus, pour les rappels, affectations de tâche et échéances de groupe, vous pouvez aussi utiliser les variables suivantes :
 
-**group-name** Nom du groupe auquel est affectée la tâche.
+**nom** du groupe Nom du groupe auquel est affectée la tâche.
 
 >[!NOTE]
 >
@@ -237,21 +240,21 @@ De plus, pour les rappels, affectations de tâche et échéances de groupe, vous
 
 Pour les branches bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**id** -branche Identifiant de la branche.
+**id** -branche Identifiant de branche.
 
 **process-id** Identifiant de l’instance de processus.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms.
+**hôte** de notification Nom d’hôte du serveur d’applications AEM forms.
 
 Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
 **action-id** Identifiant de l&#39;opération.
 
-**id** -branche Identifiant de la branche.
+**id** -branche Identifiant de branche.
 
 **process-id** Identifiant de l’instance de processus.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms.
+**hôte** de notification Nom d’hôte du serveur d’applications AEM forms.
 
 ### Utilisation d’une variable dans la zone Objet {#using-a-variable-in-the-subject-box}
 
