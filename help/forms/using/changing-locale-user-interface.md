@@ -11,16 +11,19 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 62%
 
 ---
 
 
 # Modification des paramètres régionaux de l’interface utilisateur de l’espace de travail AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-L’espace de travail AEM Forms fournit une prise en charge immédiate des langues allemande, anglaise, française et japonaise. Il permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
+L’espace de travail AEM Forms offre une prise en charge immédiate de l’anglais, du français, de l’allemand et du japonais. Il permet également de localiser l’interface utilisateur de l’espace de travail AEM Forms dans n’importe quelle autre langue.
 
-Pour localiser l’interface utilisateur de l’espace de travail AEM Forms dans la langue de votre choix :
+Pour localiser l&#39;interface utilisateur de l&#39;espace de travail AEM Forms dans la langue de votre choix :
 
 * Localisez le texte de l’espace de travail AEM Forms.
 * Localisez les catégories réduites, les files d’attente et les processus.
@@ -39,16 +42,16 @@ Perform the following steps to add support for a language *New* and the browser 
 1. Connectez-vous à CRXDE Lite.
 L’URL par défaut de CRXDE Lite est `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Navigate to the location `apps/ws/locales` and create a new folder `nw.`
-1. Copiez le fichier `translation.json`de l’emplacement `/apps/ws/locales/en-US` vers l’emplacement `/apps/ws/locales/nw` .
+1. Copiez le fichier `translation.json`de l’emplacement `/apps/ws/locales/en-US` vers `/apps/ws/locales/nw` .
 1. Navigate to `/apps/ws/locales/nw` and open `translation.json` for editing. Effectuez des modifications spécifiques aux paramètres régionaux dans le fichier translation.json.
 
    Les exemples suivants contiennent le fichier translation.json pour les environnements locaux en anglais et en français de l’espace de travail AEM Forms.
 
-   ![translation_json_in_fr](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
+   ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Localisation des catégories réduites, des files d’attente et des processus {#localizing-collapsed-categories-queues-and-processes}
 
-L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des , des files d’attente et des processus du. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. For detailed information about creating development package, see [Building AEM Forms workspace code.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+L’espace de travail AEM Forms utilise des images pour afficher les en-têtes des catégories, des files d’attente et des processus. Vous avez besoin d’un progiciel de développement pour localiser ces en-têtes. For detailed information about creating development package, see [Building AEM Forms workspace code.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 Dans les étapes suivantes, on considère que les nouveaux fichiers image localisés sont *Categories_nw.png*, *Queue_nw.png* et *Processes_nw.png*. La largeur recommandée des images est de 19 px.
 
@@ -63,7 +66,7 @@ Effectuez les étapes suivantes pour localiser les images :
 1. A l’aide d’un client WebDAV, placez les fichiers images dans le dossier */apps/ws/images*.
 1. Naviguez jusqu’à&#x200B;*/apps/ws/css*. Ouvrez *newStyle.css* pour le modifier et ajoutez les entrées suivantes :
 
-   ```
+   ```css
    #categoryListBar .content.nw {
         background: #3e3e3e url(../images/Categories_nw.png) no-repeat 10px 10px;
     }
@@ -81,7 +84,7 @@ Effectuez les étapes suivantes pour localiser les images :
 1. Accédez au dossier */js/runtime/utility* et ouvrez le fichier *usersession.js* pour le modifier.
 1. Recherchez le code figurant dans le bloc de code original et ajoutez la condition *lang !== &#39;nw&#39;* to the if statement:
 
-   ```
+   ```javascript
    // Orignal code
    setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -93,7 +96,7 @@ Effectuez les étapes suivantes pour localiser les images :
        }
    ```
 
-   ```
+   ```javascript
    //new code
     setLocale = function () {
            var lang = $.trim(i18n.lng());
@@ -112,9 +115,9 @@ Vous avez besoin du progiciel de développement pour localiser l’API *datepick
 1. Téléchargez et ouvrez le [progiciel d’interface utilisateur jQuery](https://jqueryui.com/download/all/), naviguez jusqu’à *&lt;progiciel d’interface utilisateur jQuery extrait>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Copiez le fichier jquery.ui.datepicker-nw.js du nouveau code de paramètres régionaux dans apps/ws/js/libs/jqueryui et apportez les modifications propres aux paramètres locaux dans le fichier.
 1. Navigate to `apps/ws/js` and open the `jquery.ui.datepicker-nw.js` file for editing.
-1. Dans le fichier main.js, créez un alias pour `jquery.ui.datepicker-nw.js.` le code de création d’un alias pour le `jquery.ui.datepicker-nw.js` fichier :
+1. Dans le fichier main.js, créez un alias pour `jquery.ui.datepicker-nw.js.` Le code permettant de créer un alias pour le `jquery.ui.datepicker-nw.js` fichier est :
 
-   ```
+   ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
@@ -122,9 +125,10 @@ Vous avez besoin du progiciel de développement pour localiser l’API *datepick
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
+
    L’exemple de code ci-dessous indique comment ajouter l’entrée de jquery.ui.datepicker-nw.js :
 
-   ```
+   ```json
    //Original Code
    define([
        'jquery',
@@ -141,7 +145,7 @@ Vous avez besoin du progiciel de développement pour localiser l’API *datepick
    ], function ($, _, Backbone, jQueryUI, jQueryUIDatePickerJA, jQueryUIDatePickerDE, jQueryUIDatePickerFR, slimScroll, UserSearch, LogManager, Logger) {
    ```
 
-   ```
+   ```json
    // Code with Date Picker alias for new language
    define([
        'jquery',
@@ -163,9 +167,10 @@ Vous avez besoin du progiciel de développement pour localiser l’API *datepick
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
+
    Modifiez le code suivant pour ajouter les nouveaux paramètres régionaux :
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
       $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {
@@ -177,7 +182,7 @@ Vous avez besoin du progiciel de développement pour localiser l’API *datepick
    }
    ```
 
-   ```
+   ```javascript
    if (locale === 'ja-JP') {
        $.datepicker.setDefaults($.datepicker.regional.ja);
    } else if (locale === 'de-DE') {
