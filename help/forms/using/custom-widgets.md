@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 66%
 
 ---
 
@@ -42,11 +45,11 @@ Les formulaires HTML5 fournissent une implémentation de la structure de widgets
   </tr>
   <tr>
    <td>render</td>
-   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, &lt;a&gt;, &lt;input&gt; et &lt;li&gt;. L’élément renvoyé est utilisé comme $userControl. Si $userControl spécifie la contrainte ci-dessus, les fonctions de la classe AbstractWidget fonctionnent comme prévu, sinon certaines des API courantes (focus, clic) nécessitent des modifications. </td>
+   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, &lt;a&gt;, &lt;input&gt; et &lt;li&gt;. L’élément renvoyé est utilisé comme $userControl. Si $userControl spécifie la contrainte ci-dessus, les fonctions de la classe AbstractWidget fonctionnent comme prévu, sinon certaines des API communes (focus, clic) nécessitent des modifications. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> flou : XFA_EXIT__,<br /> }<br /> Cet exemple montre que le flou est un  HTML et que XFA_EXIT_ est le XFA correspondant. </td>
+   <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> {<br /> blur: XFA_EXIT_ÉVÉNEMENT,<br /> }<br /> Cet exemple montre que le flou est un événement HTML et que XFA_EXIT_ÉVÉNEMENT correspond au événement XFA. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -69,7 +72,7 @@ Les formulaires HTML5 fournissent une implémentation de la structure de widgets
 
 Pour créer votre propre widget, dans le profil créé précédemment, ajoutez les références du fichier Javascript qui contient les fonctions remplacées et les nouvelles fonctions ajoutées. For example, the *sliderNumericFieldWidget* is a widget for numeric Fields. Pour utiliser le widget dans votre profil dans la section d’en-tête, incluez la ligne suivante :
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
@@ -77,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 When the custom widget code is ready, register the widget with the scripting engine by using `registerConfig`API for [Form Bridge](/help/forms/using/form-bridge-apis.md). widgetConfigObject est utilisé comme entrée.
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig",
         {
         ".<field-identifier>":"<name-of-the-widget>"
@@ -95,7 +98,7 @@ La configuration du widget est fournie sous la forme d’un objet JSON (ensemble
 ..
 }*
 
-où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Le suivant  la valeur de l’identifiant dans différents cas :
+où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Les listes suivantes indiquent la valeur de l’identifiant dans différents cas :
 
 | Type d’identificateur | formulaire | Description |
 |---|---|---|
