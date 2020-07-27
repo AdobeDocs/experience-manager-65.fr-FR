@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
 translation-type: tm+mt
-source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 84%
 
 ---
 
@@ -33,7 +36,7 @@ Outre l’ensemble d’actions proposé par défaut, vous pouvez créer des acti
 
 La procédure ci-dessous illustre la création d’une action personnalisée dans la barre d’outils. Elle décrit la création d’un bouton permettant aux utilisateurs finaux de parcourir tous les champs d’un formulaire adaptatif avant d’envoyer un formulaire complété.
 
-1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. Dans CRXDE, copiez le `fileattachmentlisting` noeud de `/libs/fd/af/components/actions/fileattachmentlisting` vers `/apps/customaction`.
+1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. Dans CRXDE, copiez le `fileattachmentlisting` noeud de `/libs/fd/af/components/actions/fileattachmentlisting` à `/apps/customaction`.
 
 1. After copying the node to `apps/customaction` folder, rename the node name to `reviewbeforesubmit`. Also, change the `jcr:title` and `jcr:description` properties of the node.
 
@@ -54,7 +57,7 @@ La procédure ci-dessous illustre la création d’une action personnalisée dan
 
    Ajoutez le code suivant dans le fichier `init.jsp`.
 
-   ```
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <guide:initializeBean name="guideField" className="com.adobe.aemds.guide.common.GuideButton"/>
    
@@ -112,7 +115,7 @@ La procédure ci-dessous illustre la création d’une action personnalisée dan
 
    Ajoutez le code suivant dans le fichier `ReviewBeforeSubmit.js`.
 
-   ```
+   ```javascript
    /*anonymous function to handle show of review before submit view */
    $(function () {
        if($("div.reviewbeforesubmit button[id*=reviewbeforesubmit]").length > 0) {
