@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '5410'
+ht-degree: 89%
 
 ---
 
@@ -66,7 +69,7 @@ Pour appeler un service AEM Forms par programmation à l’aide de l’API Java
 
 >[!NOTE]
 >
->(Clé en main uniquement) du serveur AEM Forms avec la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB
+>(Clé en main uniquement) Début le serveur AEM Forms avec la commande `standalone.bat -b <Server IP> -c lc_turnkey.xml` pour spécifier une adresse IP de serveur pour EJB
 
 * Le serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
@@ -77,7 +80,7 @@ Le tableau suivant énumère les fichiers JAR qui sont nécessaires pour appeler
 <table>
  <thead>
   <tr>
-   <th><p>Fichier</p></th>
+   <th><p>File</p></th>
    <th><p>Description</p></th>
    <th><p>Emplacement</p></th>
   </tr>
@@ -228,7 +231,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
 <table>
  <thead>
   <tr>
-   <th><p>Fichier</p> </th>
+   <th><p>File</p> </th>
    <th><p>Description</p> </th>
    <th><p>Emplacement</p> </th>
   </tr>
@@ -262,7 +265,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
-   <td><p>Si AEM Forms est déployé sur le serveur d’applications JBoss, incluez ce fichier JAR.</p> <p>Les classes requises ne seront pas trouvées par le chargeur de classe si jboss-client.jar et les fichiers JAR référencés ne sont pas colocalisés.</p> </td>
+   <td><p>Si AEM Forms est déployé sur le serveur d’applications JBoss, incluez ce fichier JAR.</p> <p>Les classes requises ne seront pas trouvées par le chargeur de classe si jboss-client.jar et les jars référencés ne sont pas colocalisés.</p> </td>
    <td><p>Répertoire lib du client JBoss</p> <p>Si vous déployez votre application client sur le même serveur d’applications J2EE, vous n’avez pas besoin d’inclure ce fichier.</p> </td>
   </tr>
   <tr>
@@ -444,6 +447,7 @@ Pour appeler un service AEM Forms, définissez les propriétés de connexion su
    * If you set this connection property to `WebLogic`, the `java.naming.factory.initial` value is set to `weblogic.jndi.WLInitialContextFactory`.
    * Likewise, if you set this connection property to `JBoss`, the `java.naming.factory.initial` value is set to `org.jnp.interfaces.NamingContextFactory`.
    * Vous pouvez définir la propriété `java.naming.factory.initial` sur une valeur répondant à vos exigences si vous ne souhaitez pas utiliser les valeurs par défaut.
+
    >[!NOTE]
    >
    >Instead of using a string to set the `DSC_SERVER_TYPE` connection property, you can use a static member of the `ServiceClientFactoryProperties` class. The following values can be used: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, or `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
@@ -461,6 +465,7 @@ Pour définir les propriétés de connexion, effectuez les tâches suivantes :
 
    * The `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value
    * Une valeur string qui spécifie l’URL du serveur d’applications J2EE hébergeant AEM Forms
+
    >[!NOTE]
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` enumeration value instead of the `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value.
@@ -469,6 +474,7 @@ Pour définir les propriétés de connexion, effectuez les tâches suivantes :
 
    * The `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` enumeration value
    * The `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value
+
    >[!NOTE]
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`enumeration value instead of the `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value.
@@ -506,7 +512,7 @@ L’exemple de code Java suivant définit les propriétés de connexion pour app
 
 L’exemple de code Java suivant définit les propriétés de connexion pour appeler AEM Forms déployé sur WebLogic et utilisant le mode de connexion EJB.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
@@ -519,7 +525,7 @@ L’exemple de code Java suivant définit les propriétés de connexion pour app
 
 L’exemple de code Java suivant définit les propriétés de connexion pour appeler AEM Forms déployé sur WebSphere et utilisant le mode de connexion EJB.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
@@ -532,7 +538,7 @@ L’exemple de code Java suivant définit les propriétés de connexion pour app
 
 L’exemple de code Java suivant définit les propriétés de connexion pour appeler AEM Forms déployé sur JBoss et utilisant le mode de connexion SOAP.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -549,7 +555,7 @@ L’exemple de code Java suivant définit les propriétés de connexion pour app
 
 L’exemple de code Java suivant définit les propriétés de connexion requises pour appeler AEM Forms déployé sur le serveur d’applications JBoss et lorsque la sécurité du service est désactivée.
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
@@ -562,7 +568,7 @@ L’exemple de code Java suivant définit les propriétés de connexion requises
 
 **Réglage du mode de connexion SOAP avec limite de délai d’attente de demande personnalisée**
 
-```as3
+```java
  Properties ConnectionProps = new Properties();
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
@@ -578,7 +584,7 @@ Vous pouvez utiliser un objet `com.adobe.idp.Context` pour appeler un service AE
 
 The `authenticate` method returns an `AuthResult` object that contains the results of the authentication. Vous pouvez créer un objet `com.adobe.idp.Context` en appelant son constructeur. Ensuite, appelez la méthode `com.adobe.idp.Context` de l’objet `initPrincipal` et transmettez l’objet `AuthResult`, comme indiqué dans le code suivant :
 
-```as3
+```java
  Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
@@ -587,7 +593,7 @@ Instead of setting the `DSC_CREDENTIAL_USERNAME` or `DSC_CREDENTIAL_PASSWORD` pr
 
 L’exemple de code suivant montre comment utiliser un objet `com.adobe.idp.Context` dans les paramètres de connexion qui sont utilisés pour créer un objet `EncryptionServiceClient`.
 
-```as3
+```java
  //Authenticate a user and use the Context object within connection settings
  // Authenticate the user
  String username = "wblue";
@@ -650,7 +656,7 @@ Les applications client qui utilisent le mode de connexion SOAP peuvent utiliser
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur WebSphere.
 
-```as3
+```ini
  java.naming.factory.initial=com.ibm.websphere.naming.
  WsnInitialContextFactory
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
@@ -660,7 +666,7 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur WebLogic.
 
-```as3
+```ini
  java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
@@ -669,7 +675,7 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
 
 L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé pour se connecter à AEM Forms déployé sur JBoss.
 
-```as3
+```ini
  java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
  java.naming.provider.url= jnp://appserver1:1099, appserver2:1099,
  appserver3:1099
@@ -709,7 +715,7 @@ An application can contain both `com.adobe.idp.Document` and `org.w3c.dom.Docume
 >
 >Pour éviter une fuite de mémoire dans WebLogic en utilisant l’objet `com.adobe.idp.Document`, lisez les informations de documents en blocs de 2 048 octets maximum. Par exemple, le code suivant lit les informations du document en blocs de 2 048 octets :
 
-```as3
+```java
         // Set up the chunk size to prevent a potential memory leak
         int buffSize = 2048;
  
@@ -768,7 +774,7 @@ L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un
 
 **Création d’un objet Document basé sur un tableau d’octets**
 
-```as3
+```java
  Document myPDFDocument = new Document(myByteArray);
 ```
 
@@ -778,7 +784,7 @@ L’exemple de code suivant crée un objet `com.adobe.idp.Document` basé sur un
 
 **Création d’un objet Document basé sur un autre document**
 
-```as3
+```java
  //Create a Document object based on a byte array
  InputStream is = new FileInputStream("C:\\Map.pdf");
  int len = is.available();
@@ -803,7 +809,7 @@ Définir ce paramètre sur `false` signifie que vous conservez la propriété de
 
 **Création d’un objet Document basé sur un fichier PDF**
 
-```as3
+```java
  //Create a Document object based on the map.pdf source file
  File mySourceMap = new File("C:\\map.pdf");
  Document myPDFDocument = new Document(mySourceMap,true);
@@ -815,7 +821,7 @@ L’exemple de code Java suivant crée un objet `com.adobe.idp.Document` basé s
 
 **Création d’un document à partir d’un objet InputStream**
 
-```as3
+```java
  //Create a Document object based on an InputStream object
  InputStream is = new FileInputStream("C:\\Map.pdf");
  Document myPDFDocument = new Document(is);
@@ -827,7 +833,7 @@ L’exemple de code Java suivant crée un objet `com.adobe.idp.Document` basé s
 
 L’URL fournie à l’objet `com.adobe.idp.Document` est toujours lue du côté où l’objet `com.adobe.idp.Document` original est créé, comme indiqué dans cet exemple :
 
-```as3
+```java
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
@@ -835,7 +841,7 @@ Le fichier c:/temp/input.pdf doit se trouver sur l’ordinateur client (et non s
 
 **Création d’un document basé sur un contenu accessible à partir d’une URL**
 
-```as3
+```java
  //Create a Document object based on a java.net.URL object
  URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");
  
@@ -859,7 +865,7 @@ Les opérations de service retournant un document PDF (ou d’autres types de do
 
 La ligne suivante de code convertit un objet `com.adobe.idp.Document` à un objet `java.io.InputStream`. Supposons que `myPDFDocument` représente un `com.adobe.idp.Document` objet :
 
-```as3
+```java
      java.io.InputStream resultStream = myDocument.getInputStream();
 ```
 
@@ -872,7 +878,7 @@ L’exemple de code suivant copie le contenu d’un objet `com.adobe.idp.Documen
 
 **Copie du contenu d’un objet de document dans un fichier**
 
-```as3
+```java
  File outFile = new File("C:\\AnotherMap.pdf");
  myDocument.copyToFile (outFile);
 ```
@@ -934,7 +940,7 @@ L’exemple de code suivant détermine le type de contenu d’un objet `com.adob
 
 **Détermination du type de contenu d’un objet Document**
 
-```as3
+```java
  //Determine the content type of the Document object
  String ct = myDocument.getContentType();
  System.out.println("The content type of the Document object is " +ct);
@@ -986,6 +992,7 @@ Vous pouvez appeler le service Repository en utilisant une bibliothèque client 
    * A unique ID value by specifying `new Id()`.
    * A unique UUID value by specifying `new Lid()`.
    * Nom de la ressource. Vous pouvez spécifier le nom du fichier XDP.
+
    Convertissez la valeur de retour en `Resource`.
 
 1. Create a `ResourceContent` object by invoking the `RepositoryInfomodelFactoryBean` object’s `newImage` method and casting the return value to `ResourceContent`. Cet objet représente le contenu ajouté au référentiel.
@@ -1036,7 +1043,7 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
 1. Créez un objet `java.util.HashMap` en utilisant son constructeur.
 1. Appelez la méthode `java.util.HashMap` de l’objet `put` pour chaque paramètre d’entrée à transmettre au processus de longue durée. Vu que le processus de courte durée `MyApplication/EncryptDocument` nécessite un paramètre d’entrée de type `Document`, il suffit d’appeler la méthode `put` une fois, comme le montre l’exemple suivant.
 
-   ```as3
+   ```java
     //Create a Map object to store the parameter value for inDoc
     Map params = new HashMap();
     InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf");
@@ -1059,7 +1066,7 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
 
 1. Récupérer la valeur de retour de processus en invoquant la méthode `InvocationReponse` de l’objet `getOutputParameter` et passant à une valeur string qui spécifie le nom du paramètre de sortie. In this situation, specify `outDoc` ( `outDoc` is the name of the output parameter for the `MyApplication/EncryptDocument` process). Convertissez la valeur de retour en `Document`, comme le montre l’exemple suivant.
 
-   ```as3
+   ```java
     InvocationResponse response = myServiceClient.invoke(request);
     Document encryptDoc = (Document) response.getOutputParameter("outDoc");
    ```
