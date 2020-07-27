@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 55%
@@ -107,7 +107,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    | **Nom** | **Description** |
    |---|---|
-   | nom est | Nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
+   | name | Nom alphanumérique de l’action à exécuter. La valeur de cette balise est obligatoire, doit être unique (dans la balise modelExtension) et doit commencer par une lettre de l’alphabet. |
    | label | Libellé du bouton d’action. |
    | tooltip | Texte de l’info-bulle du bouton, qui s’affiche lorsque l’utilisateur passe le pointeur de la souris sur le bouton. |
    | styleName | Nom du style personnalisé appliqué au bouton d’action. |
@@ -226,7 +226,7 @@ La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton com
    1. Double-cliquez sur le fichier ccrcustomization.js pour l’ouvrir dans CRX.
    1. Dans le fichier, collez le code suivant puis cliquez sur **Enregistrer tout** :
 
-      ```
+      ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
         * One instance of handler will be created for each action.
         * CM.domain.CCRCustomActionHandler is actionHandler class.
