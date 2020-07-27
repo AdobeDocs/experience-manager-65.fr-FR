@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1158'
+ht-degree: 82%
 
 ---
 
@@ -30,7 +33,7 @@ Avant de découvrir les différentes fonctionnalités de disposition des formula
 
 Un formulaire adaptatif vous propose les types de disposition suivants :
 
-**Disposition** du panneau Contrôle la manière dont les éléments ou les composants d’un panneau sont affichés sur un périphérique.
+**Disposition** du panneau Contrôle l’affichage des éléments ou composants d’un panneau sur un périphérique.
 
 **Disposition** mobile Contrôle la navigation d’un formulaire sur un périphérique mobile. Si la largeur de l’écran d’un périphérique est supérieure ou égale à 768 pixels, la disposition est considérée comme étant adaptée à un appareil mobile et optimisée en conséquence.
 
@@ -76,7 +79,7 @@ Utilisez cette disposition de panneau pour offrir une navigation guidée dans un
 
 Use the `Panel adaptive form` component to provide step-by-step navigation inside a panel. Lorsque vous utilisez cette disposition, l’utilisateur ne passe à l’étape suivante qu’après avoir terminé l’étape en cours.
 
-```
+```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
@@ -120,7 +123,7 @@ Ces dispositions permettent de naviguer de manière conviviale sur les appareils
 
 Avec cette disposition, le contrôle de la navigation s’effectue à l’aide d’une barre de navigation et d’un menu de navigation. The navigation bar shows **&lt;** and **>** icon to indicate **next** and **previous** navigation steps in the form.
 
-Les mises en page mobiles sont disponibles à `/libs/fd/af/layouts/mobile/` l’emplacement. Les dispositions mobiles suivantes sont disponibles par défaut dans les formulaires adaptatifs.
+Les dispositions pour dispositifs portables sont disponibles à `/libs/fd/af/layouts/mobile/` l’emplacement. Par défaut, les dispositions mobiles suivantes sont disponibles dans les formulaires adaptatifs.
 
 ![Liste de dispositions pour appareils mobiles dans les formulaires adaptatifs](assets/mobile-navigation.png)
 
