@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 37%
@@ -28,13 +28,13 @@ Ce document aborde la manière d’écrire un script Javascript en utilisant l�
 
 L’API `guidelib.dataIntegrationUtils.executeOperation` appelle un service depuis un champ de formulaire adaptatif. La syntaxe API se présente comme suit :
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
 The structure of the `guidelib.dataIntegrationUtils.executeOperation` API specifies details about the service operation. La syntaxe de la structure se présente comme suit.
 
-```
+```javascript
 var operationInfo = {
 formDataModelId,
 operationTitle,
@@ -95,7 +95,7 @@ The following sample script uses the `guidelib.dataIntegrationUtils.executeOpera
 
 The `getAccountById` operation takes the value in the `employeeID` form field as input for the `empId` argument and returns employee name, account number, and account balance for the corresponding employee. Les valeurs de sortie sont renseignées dans les champs de formulaire spécifiés. For example, the value in `name` argument is populated in the `fullName` form element and value for `accountNumber` argument in `account` form element.
 
-```
+```javascript
 var operationInfo = {
 "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeAccount",
 "operationName": "getAccountDetails"
@@ -115,7 +115,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 Vous pouvez également appeler le service de modèle de données de formulaire à l’aide de l’ `guidelib.dataIntegrationUtils.executeOperation` API avec une fonction de rappel. La syntaxe API se présente comme suit :
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
@@ -131,7 +131,7 @@ L&#39; `GETOrder` opération prend la valeur du champ de `Order ID` formulaire c
 >
 > Si vous utilisez la fonction de `success` rappel, les valeurs de sortie ne sont pas renseignées dans les champs de formulaire spécifiés.
 
-```
+```javascript
 var operationInfo = {
     "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
     "operationTitle": "GETOrder",
