@@ -1,6 +1,6 @@
 ---
-title: Java APIQuick du service Barcoded Forms (SOAP)
-seo-title: Java APIQuick du service Barcoded Forms (SOAP)
+title: Début APIQuick Java du service Barcoded Forms (SOAP)
+seo-title: Début APIQuick Java du service Barcoded Forms (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
@@ -10,28 +10,31 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 2%
 
 ---
 
 
-#  rapide de l’API Java du service Barcoded Forms (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# Début rapide SOAP (Barcoded Forms Service Java API) {#barcoded-forms-service-java-apiquick-start-soap}
 
-Le  rapide de l’API Java (SOAP) est disponible pour le service Barcoded Forms :
+Le Début rapide de l’API Java (SOAP) est disponible pour le service Barcoded Forms :
 
-[rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Début rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les  rapides situés dans Programmation avec AEM Forms reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Toutefois, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec des AEM Forms dépendent du serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-##  rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Début rapide (mode SOAP) : Décodage des données de formulaire à code à barres à l’aide de l’API Java {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-Le code Java suivant décode les données de formulaire qui se trouvent dans un formulaire PDF enregistré sous le nom Loan.pdf. Les données décodées sont enregistrées sous la forme d’un fichier XML appelé extractData.xml. Cet exemple de code convertit un `org.w3c.dom.Document` objet en `com.adobe.idp.Document` objet. (Voir [Décodage des données](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)de formulaire à code à barres.)
+Le code Java suivant décode les données de formulaire qui se trouvent dans un formulaire PDF enregistré sous Loan.pdf. Les données décodées sont enregistrées sous la forme d’un fichier XML appelé extractData.xml. Cet exemple de code convertit un `org.w3c.dom.Document` objet en `com.adobe.idp.Document` objet. (Voir [Décodage des données](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data)de formulaire à code à barres.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -218,5 +221,5 @@ Le code Java suivant décode les données de formulaire qui se trouvent dans un 
 
 >[!NOTE]
 >
->Lors de l’utilisation d’un `org.w3c.dom.Document` objet et d’un `com.adobe.idp.Document` objet dans la même logique d’application, il est recommandé de qualifier complètement les deux objets.
+>Lors de l’utilisation à la fois d’un `org.w3c.dom.Document` objet et d’un `com.adobe.idp.Document` objet dans la même logique d’application, il est recommandé de qualifier complètement les deux objets.
 
