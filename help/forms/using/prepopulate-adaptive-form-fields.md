@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 81%
 
 ---
 
@@ -58,7 +61,7 @@ Vous pouvez préremplir les champs liés et non liés d’un formulaire adaptati
 
 ### Exemple de structure JSON préremplie {#sample-prefill-json-structure}
 
-```
+```javascript
 {
    "afBoundData": {
       "employeeData": { }
@@ -84,7 +87,7 @@ La structure du code XML de préremplissage et du code XML envoyé pour les form
 
 Prefill-Submit-Data-ContentPackage.zip
 
-[Obtenir un fichier](assets/prefill-submit-data-contentpackage.zip), exemple contenant des données de préremplissage et des données envoyées
+[Obtenir un fichier](assets/prefill-submit-data-contentpackage.zip)Exemple contenant des données de préremplissage et des données envoyées
 
 ### Formulaires adaptatifs basés sur un schéma XML  {#xml-schema-af}
 
@@ -143,10 +146,10 @@ Pour les champs dont le modèle est le schéma XML, les données sont remplies d
 
 Pour les formulaires adaptatifs basés sur le schéma JSON, la structure du code JSON de préremplissage et du code JSON envoyé est décrite ci-dessous. Pour plus d’informations, reportez-vous à la section [Création de formulaires adaptatifs à l’aide d’un schéma JSON](../../forms/using/adaptive-form-json-schema-form-model.md).
 
-* **Structure du préremplissage JSON** : le préremplissage JSON doit être conforme au schéma JSON associé. Si vous le souhaitez, vous pouvez également l’encapsuler dans l’objet /afData/afBoundData si vous souhaitez préremplir des champs non liés.
-* **Structure** JSON envoyée : si aucun fichier JSON de préremplissage n’est utilisé, le fichier JSON envoyé contient des données pour les champs liés et non liés dans la balise wrapper afData. Si le fichier JSON de préremplissage est utilisé, le fichier JSON envoyé a la même structure que le fichier JSON de préremplissage. Si le JSON prérempli  avec l’objet racine afData, le fichier JSON de sortie a le même format. Si le fichier JSON de préremplissage ne dispose pas de l’wrapper afData/afBoundData et qu’il  directement à partir de l’objet racine du, tel que user, le fichier JSON envoyé s’applique également à l’objet utilisateur.
+* **Structure du préremplissage JSON** : le préremplissage JSON doit être conforme au schéma JSON associé. Si vous le souhaitez, il peut être encapsulé dans l’objet /afData/afBoundData si vous souhaitez préremplir également des champs non liés.
+* **Structure** JSON envoyée : si aucun fichier JSON prérempli n’est utilisé, le fichier JSON envoyé contient des données pour les champs liés et non liés dans la balise wrapper afData. Si le fichier JSON de préremplissage est utilisé, le fichier JSON envoyé a la même structure que le fichier JSON de préremplissage. Si le fichier JSON prérempli début avec l’objet racine afData, le fichier JSON de sortie a le même format. Si le fichier JSON de préremplissage ne dispose pas du wrapper afData/afBoundData et s’début directement à partir de l’objet racine du schéma, tel que user, le fichier JSON envoyé début également avec l’objet utilisateur.
 
-```
+```json
 {
     "id": "https://some.site.somewhere/entry-schema#",
     "$schema": "https://json-schema.org/draft-04/schema#",
@@ -165,7 +168,7 @@ Pour les formulaires adaptatifs basés sur le schéma JSON, la structure du code
 
 Pour les champs qui utilisent le modèle de schéma JSON, les données sont remplies dans l’objet afBoundedData, comme illustré dans l’exemple JSON ci-dessous. Il peut servir à préremplir un formulaire adaptatif avec un ou plusieurs champs de texte non liés. Below is an example of data with `afData/afBoundData` wrapper:
 
-```
+```json
 {
   "afData": {
     "afUnboundData": {
@@ -182,7 +185,7 @@ Pour les champs qui utilisent le modèle de schéma JSON, les données sont remp
 
 Below is an example without `afData/afBoundData` wrapper:
 
-```
+```json
 {
  "user": {
   "address": {
@@ -240,9 +243,10 @@ Pour activer le service de préremplissage, spécifiez la configuration du servi
 
    * file:///C:/Users/public/Document/Prefill/.*
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
-   >Par défaut, le préremplissage est autorisé via les fichiers crx pour tous les types de formulaires adaptatifs (XSD, XDP, JSON, FDM et aucun modèle de formulaire basé). Le préremplissage est autorisé uniquement avec les fichiers XML et JSON.
+   >Par défaut, le préremplissage est autorisé par le biais des fichiers crx pour tous les types de formulaires adaptatifs (XSD, XDP, JSON, FDM et sans modèle de formulaire). Le préremplissage est autorisé uniquement avec les fichiers XML et JSON.
 
 1. Le service de préremplissage est maintenant configuré pour votre formulaire.
 
@@ -267,7 +271,7 @@ Les formulaires adaptatifs peuvent être préremplis avec des données d’utili
 
 ### Protocole crx:// {#the-crx-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
@@ -275,21 +279,21 @@ Le nœud spécifié doit posséder une propriété nommée `jcr:data` et conteni
 
 ### Protocole file:// {#the-file-protocol-nbsp}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
 ```
 
 Le fichier référencé doit se trouver sur le même serveur.
 
-### Le protocole https:// {#the-http-protocol}
+### Protocole https:// {#the-http-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://localhost:8000/somesamplexmlfile.xml
 ```
 
 ### Protocole service://{#the-service-protocol}
 
-```xml
+```http
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
@@ -304,7 +308,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 You can also set the `data` attribute in `slingRequest`, where the `data` attribute is a string containing XML or JSON, as shown in the sample code below (Example is for XML):
 
-```java
+```javascript
 <%
            String dataXML="<afData>" +
                             "<afUnboundData>" +
@@ -328,7 +332,7 @@ Prenons un autre bon exemple dans lequel vous souhaitez préremplir les données
 
 prefill-page component.zip
 
-[Obtention du fichier](assets/prefill-page-component.zip)Exemple de fichier prefill.jsp dans le composant de page
+[Get File](assets/prefill-page-component.zip)Sample prefill.jsp dans le composant de page
 
 ## Service de préremplissage personnalisé d’AEM Forms {#aem-forms-custom-prefill-service}
 
@@ -352,11 +356,11 @@ Le package standard (exemple de package de services de préremplissage) contient
 1. Ouvrez le fichier src\main\java\com\adobe\test\Prefill.java pour le modifier.
 1. Dans le code, définissez la valeur de :
 
-   * `nodePath:` La variable node path pointant vers l’emplacement crx-repository contient le chemin du fichier de données (préremplissage). Par exemple, /content/prefilldata.xml
+   * `nodePath:` La variable node path pointant vers l’emplacement crx-repository contient le chemin d’accès du fichier de données (préremplissage). Par exemple, /content/prefilldata.xml
    * `label:` Le paramètre label spécifie le nom d’affichage du service. Par exemple, service de préremplissage par défaut
 
 1. Save and close the `Prefill.java` file.
-1. Ajouter le `AEM Forms Client SDK` package au chemin de génération du projet standard.
+1. Ajoutez le `AEM Forms Client SDK` package sur le chemin de génération du projet standard.
 1. Compilez le projet et créez le fichier .jar pour le groupe.
 
 #### Démarrage et utilisation du service de préremplissage {#start-and-use-the-prefill-service}
