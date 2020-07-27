@@ -10,7 +10,10 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 95%
 
 ---
 
@@ -142,9 +145,9 @@ Le service Barcoded Forms fournit les deux API suivantes :
 
 ### Utilisation du service BCF avec un JSP ou des servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
-L’exemple de code suivant décode un code à barres dans un et enregistre le code XML de sortie sur le disque.
+L’exemple de code suivant décode un code à barres dans un document et enregistre le code XML de sortie sur le disque.
 
-```java
+```jsp
 <%@ page import="java.util.List,
                 com.adobe.fd.bcf.api.BarcodedFormsService,
                 com.adobe.fd.bcf.api.CharSet,
@@ -233,7 +236,7 @@ L’exemple de code suivant décode un code à barres dans un et enregistre le c
 
 L’exécution du service Barcoded Forms à partir d’un processus est semblable à l’exécution du service à partir de JSP/Servlet. La seule différence réside dans le fait qu’avec une exécution du service à partir de JSP/Servlet, l’objet de document récupère automatiquement une instance d’objet ResourceResolver à partir de l’objet ResourceResolverHelper. Ce mécanisme automatique ne fonctionne pas lorsque le code est appelé à partir d’un processus.
 
-Pour un flux de travail, transmettez explicitement une occurrence de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l’objet  utilise l’objet ResourceResolver fourni pour lire le contenu du référentiel.
+Pour un flux de travail, transmettez explicitement une occurrence de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l’objet Document utilise l’objet ResourceResolver fourni pour lire le contenu du référentiel.
 
 L’exemple de processus suivant décode un code à barres dans un document et enregistre le résultat sur le disque. Le code est écrit dans ECMAScript et le document est transmis en tant que charge utile de flux de travail :
 
