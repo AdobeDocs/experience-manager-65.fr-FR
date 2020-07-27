@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 89%
 
 ---
 
@@ -20,8 +23,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 Il est recommandé d’exécuter régulièrement les commandes IBM DB2 suivantes dans le cadre des opérations de maintenance standard de votre base de données AEM forms. Pour obtenir des informations détaillées sur la maintenance et l’amélioration des performances de la base de données DB2, reportez-vous au *Guide d’administration d’IBM DB2*.
 
 * **runstats :** cette commande met à jour les statistiques décrivant les caractéristiques physiques d’une table de base de données et des index associés. Les instructions SQL dynamiques générées par AEM forms utilisent automatiquement ces statistiques mises à jour, mais pour les instructions SQL statiques intégrées à une base de données, l’instruction `db2rbind` doit également être exécutée.
-* **** db2rbind : Cette commande relie tous les packages de la base de données. Utilisez cette commande après avoir exécuté l’utilitaire `runstats` pour revalider tous les packages dans la base de données.
-* **** table ou index reorg : Cette commande vérifie si une réorganisation de certaines tables et de certains index est nécessaire.
+* **db2rbind :** Cette commande relie tous les packages de la base de données. Utilisez cette commande après avoir exécuté l’utilitaire `runstats` pour revalider tous les packages dans la base de données.
+* **table ou index reorg :** Cette commande vérifie si une réorganisation de certaines tables et de certains index est nécessaire.
 
    A mesure que la taille de vos bases de données augmente et qu’elles subissent des modifications, il est important de recalculer régulièrement les statistiques des tables pour améliorer les performances. Ces commandes peuvent être exécutées manuellement en utilisant des scripts ou en utilisant une tâche cron.
 
@@ -43,7 +46,7 @@ Exécutez la commande `runstats` sur les tables et index de base de données AEM
 
 Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données. Below, `<schema>` is used to denote the schema that is associated with your DB2 user name. Si vous disposez d’une installation DB2 par défaut, il s’agit du nom de schéma de la base de données.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
@@ -69,7 +72,7 @@ Pour une syntaxe et une utilisation correctes, consultez la documentation du fab
 
 Exécutez la commande `reorg` sur les tables et index de base de données AEM forms suivants. Pour une syntaxe et une utilisation correctes, consultez la documentation du fabricant de la base de données.
 
-```as3
+```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
  
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
