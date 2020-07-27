@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a18a018181a779b9f48ef3e39c26410a1bc4919b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 79%
@@ -141,7 +141,7 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
-   ```
+   ```shell
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
@@ -186,7 +186,7 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
 1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100. Cliquez sur **Enregistrer**.
+1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   Cliquez sur **Enregistrer**.
 
    >[!NOTE]
    >
