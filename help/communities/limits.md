@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Pour atteindre cette configuration OSGi :
 * Localisez `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Sélectionnez l’icône Modifier.
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![configurer-limites](assets/configure-limits.png)
 
 * **[!UICONTROL Appliquer automatiquement les limites de contribution UGC]**
 
