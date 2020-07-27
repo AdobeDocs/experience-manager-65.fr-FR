@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 82%
 
 ---
 
@@ -45,7 +48,7 @@ Pour démarrer ou arrêter un service, sélectionnez-le dans la liste, puis cliq
 
 On UNIX® or Linux, enter the following text from a command line, where *`[service name]`* is the name of the service you are verifying:
 
-```as3
+```java
      ps -A | grep [service name]
 ```
 
