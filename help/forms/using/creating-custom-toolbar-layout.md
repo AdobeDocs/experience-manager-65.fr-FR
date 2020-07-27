@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 89%
 
 ---
 
@@ -41,7 +44,7 @@ Le module de contenu joint contient le code complet décrit ci-dessous. After in
 
 CustomToolbarLayoutDemo.zip
 
-[Obtenir une mise en page de barre d’outils personnalisée avec File](assets/customtoolbarlayoutdemo.zip)Demo
+[Obtenir la mise en page de barre d&#39;outils personnalisée de la démonstration de fichier](assets/customtoolbarlayoutdemo.zip)
 
 ## Création d’une mise en page de barre d’outils personnalisée {#layout-1}
 
@@ -91,7 +94,7 @@ CustomToolbarLayoutDemo.zip
 
    Échantillon `customToolbarLayout.jsp`:
 
-   ```php
+   ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
    <cq:includeClientLib categories="customtoolbarlayout" />
    <c:if test="${isEditMode}">
@@ -109,7 +112,7 @@ CustomToolbarLayoutDemo.zip
 
    Échantillon `toolBarCommon.jsp`:
 
-   ```php
+   ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
    <%--------------------
    This code iterates over all the tool bar items using the guideToolbar bean.
