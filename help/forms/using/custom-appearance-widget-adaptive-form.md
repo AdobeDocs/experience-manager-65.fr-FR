@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1728'
+ht-degree: 73%
 
 ---
 
@@ -31,16 +34,16 @@ Tout d’abord, examinons les termes et concepts clés utilisés dans cet articl
 
 **ClientLib** Système de bibliothèques côté client dans le traitement côté client AEM piloté par du code JavaScript et CSS complexe. Pour plus d’informations, consultez la section Utilisation des bibliothèques côté client.
 
-**Archétype** Une boîte à outils de modélisation de projet Maven définie comme modèle ou modèle original pour les projets Maven. Pour en savoir plus, voir Présentation des archétypes.
+**Archétype** A Maven project template toolkit défini comme modèle ou modèle original pour les projets Maven. Pour en savoir plus, voir Présentation des archétypes.
 
-**Contrôle** utilisateur Fait référence à l’élément principal d’un widget qui contient la valeur du champ et est utilisé par la structure de l’apparence pour lier l’interface utilisateur personnalisée du widget au modèle de formulaire adaptatif.
+**Contrôle** utilisateur Fait référence à l’élément principal d’un widget qui contient la valeur du champ et est utilisé par la structure de l’apparence pour lier l’interface utilisateur de widget personnalisé au modèle de formulaire adaptatif.
 
 ## Procédure à suivre pour créer une apparence personnalisée {#steps-to-create-a-custom-appearance}
 
 Les étapes, à un niveau élevé, pour créer une apparence personnalisée sont les suivantes :
 
-1. **Créez un projet**: Créez un projet expert qui génère un package de contenu à déployer sur AEM.
-1. **Etend une classe** de widget existante : Etendez une classe de widget existante et remplacez les classes requises.
+1. **Créez un projet**: Créez un projet Maven qui génère un package de contenu à déployer sur AEM.
+1. **Étendre une classe** de widget existante : Etendez une classe de widget existante et remplacez les classes requises.
 1. **Créer une bibliothèque cliente** : créez une bibliothèque `clientLib: af.customwidget` et ajoutez les fichiers Javascript et CSS requis.
 
 1. **Créez et installez le projet**: Créez le projet Maven et installez le package de contenu généré sur AEM.
@@ -51,7 +54,7 @@ Les étapes, à un niveau élevé, pour créer une apparence personnalisée sont
 Un archétype d’expert est un point de départ pour créer une apparence personnalisée. Les détails de l’archétype à utiliser sont les suivants :
 
 * **Référentiel**: https://repo.adobe.com/nexus/content/groups/public/
-* **Id** d&#39;artefact : custom-apparence-archetype
+* **Id** d&#39;artefact : format personnalisé-apparence-archétype
 * **ID** de groupe : com.adobe.aemforms
 * **Version**: 1.0.4
 
@@ -115,7 +118,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
 
    1. Modifiez les fichiers `js.txt` et `css.txt` pour inclure les fichiers Javascript et CSS supplémentaires du module externe jQuery.
 
-1. Intégrez le module externe tiers au cadre pour permettre une interaction entre le cadre d’apparence personnalisée et le module externe jQuery. Le nouveau widget ne sera fonctionnel qu’une fois que vous aurez étendu ou remplacé les fonctions suivantes.
+1. Intégrez le module externe tiers au cadre pour permettre une interaction entre le cadre d’apparence personnalisée et le module externe jQuery. Le nouveau widget sera fonctionnel uniquement après avoir étendu ou remplacé les fonctions suivantes.
 
 <table>
  <tbody>
@@ -125,13 +128,13 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. Par exemple, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, et <code>&lt;li&gt;</code>. L’élément renvoyé est utilisé comme <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td>
+   <td>La fonction de rendu renvoie l’objet jQuery à l’élément HTML par défaut du widget. L’élément HTML par défaut doit être d’un type pouvant être actif. For example, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, and <code>&lt;li&gt;</code>. L’élément renvoyé est utilisé comme <code>$userControl</code>. If the <code>$userControl</code> specifies the above constraint, the functions of the <code>AbstractWidget</code> class work as expected, else some of the common APIs (focus, click) require changes. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
    <td>Renvoie un mappage pour convertir les événements HTML en événements XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Cet exemple montre qu’ <code>blur</code> il s’agit d’un événement HTML et <code>XFA_EXIT_EVENT</code> de l’événement XFA correspondant. </td>
+      }</code><br /> Cet exemple montre qu’il <code>blur</code> s’agit d’un événement HTML et <code>XFA_EXIT_EVENT</code> d’un événement XFA correspondant. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -158,7 +161,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
    * Etendez le widget à partir d’une classe de widgets prêts à l’emploi convenable. Dans la plupart des cas, il s’agit de la classe de widget correspondant au widget existant à remplacer. Le nom de la classe parente est utilisé à plusieurs endroits, il est donc recommandé de rechercher toutes les instances de la chaîne `xfaWidget.textField` dans le fichier, et de les remplacer par la classe parente réelle utilisée.
    * Etendez la méthode `render` pour fournir une autre interface utilisateur. Il s’agit de l’emplacement d’où le module externe jQuery sera appelé pour mettre à jour l’interface utilisateur ou le comportement de l’interaction. La méthode `render` doit retourner un élément de contrôle de l’utilisateur.
 
-   * Etendez la méthode `getOptionsMap` pour remplacer le paramètre d’option concerné suite à une modification du widget. La fonction renvoie un mappage qui fournit des détails sur l’action à exécuter lors de la modification d’une option. Les clés sont les options fournies au widget et les valeurs sont les fonctions appelées chaque fois qu&#39;une modification de l&#39;option est détectée.
+   * Etendez la méthode `getOptionsMap` pour remplacer le paramètre d’option concerné suite à une modification du widget. La fonction renvoie un mappage qui fournit des détails sur l’action à exécuter lors de la modification d’une option. Les clés sont les options fournies au widget et les valeurs sont les fonctions appelées chaque fois qu&#39;un changement de l&#39;option est détecté.
    * La méthode `getEventMap` mappe les événements déclenchés par le widget avec les événements requis par le modèle de formulaire adaptatif. La valeur par défaut mappe les événements HTML standard du widget par défaut et doit être mise à jour si un événement alternatif est déclenché.
    * La `showDisplayValue` et la `showValue` appliquent la clause d’affichage et de modification de l’image et peuvent être remplacées pour obtenir un autre comportement.
 
@@ -225,7 +228,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
 
    1. Cliquez sur **[!UICONTROL Terminer]**.
 
-      ![eclipse-capture d’écran](assets/eclipse-screenshot.png)
+      ![capture d’écran éclipse](assets/eclipse-screenshot.png)
 
 1. Sélectionnez le widget à utiliser pour l’apparence personnalisée. Cet exemple utilise le widget d’exécution numérique pas à pas suivant :
 
@@ -246,7 +249,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
 1. Remplacez le contenu de `bootstrap-number-input.js`(module externe jQuery) par le contenu du fichier `numericStepper-plugin.js` .
 1. In the `numericStepper-widget.js` file, add the following code to override the render method to invoke the plugin and return the `$userControl` object:
 
-   ```java
+   ```javascript
    render : function() {
         var control = $.xfaWidget.numericInput.prototype.render.apply(this, arguments);
         var $control = $(control);
@@ -266,7 +269,7 @@ Examinons à présent un exemple de création d’une apparence personnalisée p
 
 1. In the `numericStepper-widget.js` file, override the `getOptionsMap` property to override the access option, and hide the + and - buttons in disabled mode.
 
-   ```java
+   ```javascript
    getOptionsMap: function(){
        var parentOptionsMap = $.xfaWidget.numericInput.prototype.getOptionsMap.apply(this,arguments),
    
