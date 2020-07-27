@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points de fin de rendu.
 
-Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requête GET au serveur `https://'[server]:[port]'/libs/fd/fm/content/manage.json` avec les paramètres  du décrits ci-dessous.
+Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requête GET au serveur à l’ `https://'[server]:[port]'/libs/fd/fm/content/manage.json` aide des paramètres de requête décrits ci-dessous.
 
 ## Paramètres de requête {#query-parameters}
 
@@ -65,7 +68,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>returnCount</td>
-   <td>Indique si les résultats de la recherche doivent être renvoyés selon les critères donnés ou non. </td>
+   <td>Indique s’il faut renvoyer les résultats de la recherche qui correspondent aux critères donnés ou non. </td>
   </tr>
   <tr>
    <td>statements</td>
@@ -79,7 +82,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
      <li><strong>value</strong> : indique la valeur de la propriété à rechercher.</li>
      <li><strong>operator</strong> : indique l’opérateur à appliquer au cours de la recherche. Les opérateurs ci-dessous sont pris en charge :
       <ul>
-       <li>EQ - Est égal à </li>
+       <li>EQ - Égal à </li>
        <li>NEQ – Est différent de </li>
        <li>GT – Est supérieur à</li>
        <li>LT – Est inférieur à</li>
@@ -96,7 +99,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
   </tr>
   <tr>
    <td>orderings<br /> </td>
-   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple :</p> <p>Pour récupérer  résultats triés par propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Indique les critères d’ordre relatifs aux résultats de la recherche. Les critères sont définis au format JSON. Vous pouvez classer les résultats de la recherche selon plusieurs champs. Les résultats sont classés selon l’ordre d’apparition des champs dans la requête.</p> <p>Par exemple :</p> <p>Pour récupérer les résultats de la requête triés par propriété de titre dans l’ordre croissant, ajoutez le paramètre suivant : </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");
@@ -124,7 +127,7 @@ Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requêt
 
 ## Exemple de demande {#sample-request}
 
-```
+```json
 func : searchForms
 appPath : /content/dam/formsanddocuments/MyApplication23
 cutPoints : title|description|author|status|creationDate|lastModifiedDate|activationDate|expiryDate|tags|allowedRenderFormat|formmodel
@@ -144,7 +147,7 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Exemple de réponse {#sample-response}
 
-```
+```json
 [
 {"resultCount":2},
     {"assetType":"FORM","name":"ExpenseClaim.xdp","id":"509fa2d5-e3c9-407b-b8dc-fa0ba08eb0ce",
@@ -168,11 +171,11 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 
 ## Articles connexes
 
-* [Activation des composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* [Créer une page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* [Activation des composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* [Créer une page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Drafts and Submissions](/help/forms/using/draft-submission-component.md)
-* [Personnaliser   de brouillons et de formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Personnalisation de l’enregistrement des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)
