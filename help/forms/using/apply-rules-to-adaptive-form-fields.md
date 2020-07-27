@@ -1,5 +1,5 @@
 ---
-title: '"DO NOT PUBLISH Tutorial: Appliquer des règles aux champs de formulaire adaptatif"'
+title: '"DO NOT PUBLISH Tutorial : Appliquer des règles aux champs de formulaire adaptatif"'
 seo-title: Application de règles aux champs de formulaires adaptatifs
 description: Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif.
 seo-description: Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif.
@@ -8,14 +8,17 @@ uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 70%
 
 ---
 
 
 # Didacticiel : application de règles aux champs de formulaires adaptatifs {#tutorial-apply-rules-to-adaptive-form-fields}
 
-![06-apply-rule-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
+![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
 Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md). Adobe recommande de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
@@ -56,11 +59,11 @@ Chaque client se voit attribuer un numéro d’ID de client unique, ce qui perme
 1. Sélectionnez le service **[!UICONTROL Extraire l’adresse d’expédition]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
 1. Drag-and-drop the **[!UICONTROL Customer ID]** field from the Form Objects tab to the **[!UICONTROL Drop object or select here]** field in the **[!UICONTROL INPUT]** box.
 
-   ![dropobjectstoinputfield-recover-vedata](assets/dropobjectstoinputfield-retrievedata.png)
+   ![dropobjectstoinputfield-retrievedata](assets/dropobjectstoinputfield-retrievedata.png)
 
 1. Drag-and-drop the **[!UICONTROL Customer ID, Name, Shipping Address, State, and Zip Code]** field from the Form Objects tab to the **[!UICONTROL Drop object or select here]** field in the **[!UICONTROL OUTPUT]** box.
 
-   ![dropobjectstooutputfield-recover-vedata](assets/dropobjectstooutputfield-retrievedata.png)
+   ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
    Appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre Éditeur de règles, appuyez sur **[!UICONTROL Fermer]**.
 
@@ -84,11 +87,11 @@ Une fois les détails du client extraits de la base de données, vous pouvez met
 1. Dans l’option **[!UICONTROL PUIS]**, appuyez sur l’option **[!UICONTROL + Ajoutez l’instruction]**. Sélectionnez **[!UICONTROL Appel du service]** à partir du menu déroulant **[!UICONTROL Sélectionner l’action]**.
 1. Sélectionnez le service **[!UICONTROL Mettre à jour l’adresse de livraison]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
 
-   ![update-ship-address](assets/update-shipping-address.png)
+   ![update-shipping-address](assets/update-shipping-address.png)
 
 1. ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Faites glisser et déposez le champ **[!UICONTROL Adresse d’expédition, État et Code]** postal de l’onglet Objets de formulaire vers le champ .property correspondant (par exemple, customerdetails.ShippingAddress) de l’objet **[!UICONTROL Drop ou sélectionnez ici]** dans la zone **[!UICONTROL INPUT]** . Tous les champs précédés d’un nom de tableau (par exemple, détails du client dans ce cas d’utilisation) servent de données d’entrée au service de mise à jour. Tout le contenu fourni dans ces champs est mis à jour dans la source de données.
+   Faites glisser et déposez le champ **[!UICONTROL Adresse d’expédition, Etat et Code]** postal de l’onglet Objets de formulaire vers le champ de nom de tableau correspondant .property (par exemple, customerdetails .shippingAddress) de l’objet **[!UICONTROL Drop ou sélectionnez ici]** dans la zone **[!UICONTROL ENTRÉE]** . Tous les champs précédés d’un nom de table (par exemple, détails du client dans ce cas d’utilisation) servent de données d’entrée au service de mise à jour. Tout le contenu fourni dans ces champs est mis à jour dans la source de données.
 
    >[!NOTE]
    >
@@ -119,11 +122,11 @@ La procédure suivante montre comment créer une règle pour afficher un message
 
 1. Basculez de l’**[!UICONTROL éditeur visuel]** à l’**[!UICONTROL éditeur de code]**. Le contrôle du commutateur est sur le côté droit de la fenêtre. L’éditeur de code s’ouvre, affichant un code similaire à celui-ci :
 
-   ![code-editor](assets/code-editor.png)
+   ![éditeur de code](assets/code-editor.png)
 
 1. Remplacez la section de variable d’entrée par le code suivant :
 
-   ```
+   ```javascript
    var inputs = {
        "id" : this
    };
@@ -131,7 +134,7 @@ La procédure suivante montre comment créer une règle pour afficher un message
 
 1. Remplacez la section guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs) par le code suivant :
 
-   ```
+   ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
      if (result) {
          result = JSON.parse(result);
