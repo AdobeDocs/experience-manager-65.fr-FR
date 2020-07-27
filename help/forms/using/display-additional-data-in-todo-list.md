@@ -10,7 +10,10 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 90%
 
 ---
 
@@ -36,7 +39,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
 
    Par exemple, changez `/apps/ws/locales/en-US/translation.json` pour l’anglais :
 
-   ```
+   ```json
    "task" : {
            "reminder" : {
                "value" : "Reminder",
@@ -112,7 +115,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
 
 1. Par exemple, ajoutez des informations dans le bloc de tâche :
 
-   ```
+   ```json
    "stepname" : {
                "value" : "Step Name",
                "tooltip" : "This task belongs to __stepName__ step"
@@ -142,10 +145,10 @@ Enfin, vous devez inclure une entrée dans le package de développement pour cha
    * de: `/libs/ws/js/runtime/templates/`
    * vers: `/apps/ws/js/runtime/templates/`
 
-1. Ajouter les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
+1. Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
 
    For example, add under `div class="taskProperties"`:
 
-   ```
+   ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
