@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 94%
 
 ---
 
@@ -70,7 +73,7 @@ Pour activer SSL, WebSphere doit accéder à un compte d’utilisateur dans le r
 1. Sous Administrative Security, sélectionnez les **rôles utilisateurs administratifs**.
 1. Cliquez sur Add et effectuez les opérations suivantes :
 
-   1. **Type**&amp;ast; dans la zone de recherche, puis cliquez sur Rechercher.
+   1. Type **&amp;ast;** in the search box and click search.
    1. Cliquez sur le rôle **Administrator**.
    1. Ajoutez l’utilisateur nouvellement créé dans la zone Mapped to role et mappez-le à Administrator.
 
@@ -173,9 +176,9 @@ Effectuez les étapes suivantes pour faire en sorte que le port soit dynamique e
 ## Configurer le fichier sling.properties {#configure-the-sling-properties-file}
 
 1. Open `[aem-forms_root]`\crx-repository\launchpad\sling.properties file for editing.
-1. Recherchez la `sling.bootdelegation.ibm` propriété et ajoutez-la `com.ibm.websphere.ssl.*`à son champ de valeur. Le champ mis à jour ressemble à ce qui suit :
+1. Localisez la `sling.bootdelegation.ibm` propriété et ajoutez-la `com.ibm.websphere.ssl.*`au champ de valeur. Le champ mis à jour ressemble à ce qui suit :
 
-   ```as3
+   ```java
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
