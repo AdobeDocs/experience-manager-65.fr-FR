@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -34,17 +34,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](essentials-liking.md#essentials-for-client-side) are included, this is how the `Liking` component will appear.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![composant d’aimer](assets/liking-component.png)
 
 ## Configuration de la fonction J’aime {#configuring-liking}
 
 Select the placed `Liking` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![configure-new](assets/configure-new.png)
 
 Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used to record likes.
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configure-like](assets/configure-liking.png)
 
 * **[!UICONTROL Etiquette de réponse positive]**
 
