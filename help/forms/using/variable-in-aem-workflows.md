@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2113'
 ht-degree: 5%
 
 ---
@@ -63,7 +63,7 @@ Pour créer une variable, procédez comme suit :
    * Modèle de données de formulaire : indiquez un chemin d’accès au modèle de données de formulaire.
    * ArrayList : spécifiez un sous-type pour la collection.
 
-1. Entrez une description facultative de la variable et appuyez sur ![](assets/done_icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
+1. Spécifiez une description facultative pour la variable et appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les modifications. La variable s’affiche dans la liste disponible dans le volet de gauche.
 
 Lorsque vous créez des variables, prenez en compte les bonnes pratiques suivantes :
 
@@ -97,10 +97,10 @@ Vous pouvez également mettre à jour des éléments spécifiques d’une variab
 Exécutez les étapes suivantes pour ajouter un mappage entre les variables :
 
 1. Sur la page de modification du processus, appuyez sur l’icône Etapes disponible dans le panneau latéral du modèle de processus.
-1. Faites glisser l’étape **Définir la variable** vers l’éditeur de flux de travaux, appuyez sur l’étape et sélectionnez ![](assets/configure_icon.png) (Configurer).
+1. Faites glisser l’étape **Définir la variable** vers l’éditeur de flux de travaux, appuyez sur l’étape et sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer).
 1. Dans la boîte de dialogue Définir la variable, choisissez **[!UICONTROL Mappage]** > Mappage des **[!UICONTROL Ajoutes]**.
 1. Dans la section Variable **de** mappage, sélectionnez la variable à stocker, sélectionnez le mode de mappage et spécifiez une valeur à stocker dans la variable. Les modes de mappage varient en fonction du type de variable.
-1. Faites correspondre davantage de variables pour créer une expression significative. Appuyez sur ![](assets/done_icon.png) (Enregistrer) pour enregistrer les modifications.
+1. Faites correspondre davantage de variables pour créer une expression significative. Tap ![done_icon](assets/done_icon.png) to save the changes.
 
 ### Exemple 1 : Requête d’une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -273,8 +273,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modification d’une variable {#edit-a-variable}
 
 1. Sur la page Modifier le processus, appuyez sur l’icône Variables disponible dans le panneau latéral du modèle de processus. La section Variables du volet gauche affiche toutes les variables existantes.
-1. Appuyez sur l’icône ![](assets/edit.png) (Modifier) située en regard du nom de la variable que vous souhaitez modifier.
-1. Modifiez les informations de la variable et appuyez sur ![](assets/done_icon.png) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
+1. Appuyez sur l’icône ![Modifier](assets/edit.png) (Modifier) située en regard du nom de variable que vous souhaitez modifier.
+1. Modifiez les informations de la variable et appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
 
 ## Suppression d’une variable {#delete-a-variable}
 
@@ -284,7 +284,7 @@ Pour supprimer une variable, procédez comme suit :
 
 1. Sur la page Modifier le processus, appuyez sur l’icône Variables disponible dans le panneau latéral du modèle de processus. La section Variables du volet gauche affiche toutes les variables existantes.
 1. Appuyez sur l’icône Supprimer en regard du nom de variable que vous souhaitez supprimer.
-1. Appuyez sur ![](assets/done_icon.png) pour confirmer et supprimer la variable.
+1. Appuyez sur ![done_icon](assets/done_icon.png) pour confirmer et supprimer la variable.
 
 ## Références {#references}
 
