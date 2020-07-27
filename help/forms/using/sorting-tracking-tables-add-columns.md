@@ -9,21 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 79%
 
 ---
 
 
 # Personnalisation des tableaux de suivi{#customize-tracking-tables}
 
-L’onglet de suivi dans l’espace de travail AEM Forms permet d’afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
+L’onglet de suivi de l’espace de travail AEM Forms permet d’afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
 
 * ID ( `taskId`)
 * Nom ( `stepName`)
 * Instructions ( `instructions`)
 * Action sélectionnée ( `selectedRoute`)
 * Heure de création ( `createTime`)
-* Heure d’achèvement ( `completeTime`)
+* Heure d&#39;achèvement ( `completeTime`)
 * Propriétaire ( `currentAssignment.queueOwner`)
 
 Les attributs restants dans le modèle de tâche disponibles à l’affichage dans le tableau de la tâche sont les suivants :
@@ -119,7 +122,7 @@ Pour les personnalisations suivantes dans le tableau de la tâche, vous devez ef
 
 1. Pour modifier les attributs de tâche affichés dans le tableau et leur ordre, configurez le fichier /ws/js/runtime/templates/processinstancehistory.html :
 
-   ```as3
+   ```html
    <table>
        <thead>
            <tr>
@@ -134,7 +137,7 @@ Pour les personnalisations suivantes dans le tableau de la tâche, vous devez ef
    </table>
    ```
 
-   ```as3
+   ```html
    <table>
        <tbody>
            <%_.each(obj, function(task){%>
@@ -157,7 +160,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
 
 1. Register a click handler for `.fixedTaskTableHeader th` in the file `js/runtime/views/processinstancehistory.js`.
 
-   ```as3
+   ```javascript
    events: {
        //other handlers
        "click .fixedTaskTableHeader th": "onTaskTableHeaderClick",
@@ -167,7 +170,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
 
    In the handler, invoke the `onTaskTableHeaderClick` function of `js/runtime/util/history.js`.
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick: function (event) {
            history.onTaskTableHeaderClick(event);
    }
@@ -179,7 +182,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
 
    Le tri s’effectue à l’aide de la fonction de tri Backbone sur la collection de liste de tâches en fournissant une fonction de comparaison.
 
-   ```as3
+   ```javascript
        return {
            //other methods
            onTaskTableHeaderClick  : onTaskTableHeaderClick,
@@ -187,7 +190,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
        };
    ```
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick = function (event) {
            var target = $(event.target),
             comparator,
