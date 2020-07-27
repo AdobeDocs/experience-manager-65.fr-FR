@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 74%
 
 ---
 
@@ -21,13 +24,13 @@ Adobe Sign autorise les processus de signature électronique pour les formulaire
 
 Dans un scénario Adobe Sign et de formulaires adaptatifs standard, un utilisateur remplit un formulaire adaptatif pour effectuer une **demande de service**. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le prestataire de services passe en revue la demande et utilise Adobe Sign pour marquer la demande approuvée. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
 
-Pour utiliser Adobe Sign avec AEM Forms, configurez Adobe Sign dans les services cloud AEM :
+Pour utiliser Adobe Sign avec des AEM Forms, configurez Adobe Sign en AEM cloud services :
 
 ## Conditions préalables {#prerequisites}
 
 Vous avez besoin de ce qui suit pour intégrer Adobe Sign à AEM Forms :
 
-* Un compte de développeur [Adobe Sign actif.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
+* Un compte de développeur [Adobe Sign actif.](https://acrobat.adobe.com/fr/fr/why-adobe/developer-form.html)
 * Un serveur AEM Forms [SSL](/help/sites-administering/ssl-by-default.md).
 * Une [application API Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Informations d’identification (ID client et secret client) de l’application API Adobe Sign.
@@ -36,10 +39,10 @@ Vous avez besoin de ce qui suit pour intégrer Adobe Sign à AEM Forms :
 
 Une fois les conditions préalables en place, procédez comme suit pour configurer Adobe Sign avec AEM Forms sur l’instance d’auteur :
 
-1. On AEM Forms author instance, navigate to **Tools** ![](assets/hammer.png) > **General** > **Configuration Browser**.
+1. On AEM Forms author instance, navigate to **Tools** ![hammer](assets/hammer.png) > **General** > **Configuration Browser**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. Un conteneur de configuration pour les services cloud est créé.
-1. Navigate to **Tools** ![](assets/hammer.png) > **Cloud Services** > **Adobe Sign** and select the configuration container you created in the above step.
+1. Navigate to **Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign** and select the configuration container you created in the above step.
 
    >[!NOTE]
    >
@@ -61,6 +64,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    * aggrement_send
    * widget_write
    * workflow_read
+
    Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application Adobe Sign et l’obtention des clés, voir [Configurer les paramètres oAuth pour la documentation](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) dans la documentation du développeur.
 
    ![Configuration OAuth](assets/oauthconfig_new.png)
@@ -81,7 +85,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
 
    Appuyez sur **[!UICONTROL Créer]** pour créer la configuration Adobe Sign.
 
-1. Ouvrez la console web AEM. L’URL est `https://'[server]:[port]'/system/console/configMgr`
+1. Ouvrez la console web AEM. The URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Ouvrez le **service de configuration commun aux formulaires.**
 1. In the **Allow** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **Save.** L’instance d’auteur est configurée pour utiliser Adobe Sign.
 1. Sur l’instance [Publication](/help/sites-deploying/deploy.md), connectez-vous et ouvrez l’URL suivante :
@@ -101,13 +105,13 @@ Un formulaire adaptatif Adobe Sign est envoyé uniquement après que tous les si
    Vous pouvez également ouvrir l’URL suivante dans une fenêtre de navigateur :
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. Recherchez et ouvrez l’option **Service de configuration Adobe Sign**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **Expression du planificateur de mise à jour de l’état** et cliquez sur **Enregistrer**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, spécifiez `0 0 0 1/1 * ? *` dans le champ du de mise à jour de l’ **état** .
+1. Recherchez et ouvrez l’option **Service de configuration Adobe Sign**. Spécifiez une [expression cron](https://en.wikipedia.org/wiki/Cron#CRON_expression) dans le champ **Expression du planificateur de mise à jour de l’état** et cliquez sur **Enregistrer**. Par exemple, pour exécuter le service de configuration tous les jours à 00:00, indiquez `0 0 0 1/1 * ? *` dans le champ Expression **de l’Planificateur** Status Update.
 
 L’intervalle par défaut pour synchroniser l’état d’Adobe Sign est désormais modifié.
 
 ## Related Articles {#related-articles}
 
 * [Utilisation d’Adobe Sign dans un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md)
-* [Utilisation d’Adobe Sign avec AEM Forms (vidéo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Utilisation de Adobe Sign avec des AEM Forms (vidéo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
 * [Incorporation d’Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 
