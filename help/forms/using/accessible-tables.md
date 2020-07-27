@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 79%
 
 ---
 
@@ -18,14 +21,14 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 L’implémentation par défaut des tableaux dans les formulaires HTML5 utilise des éléments DIV HTML pour créer le rendu d’un tableau. Le rendu requiert l’utilisation de rôles ARIA pour répondre aux exigences en matière d’accessibilité.
 
-Pour éviter des problèmes d’accessibilité avec les lecteurs d’écran qui ne prennent pas entièrement en charge les rôles ARIA utilisés avec les tableaux de données, les formulaires HTML5 fournissent un autre rendu pour les tableaux. Ces tableaux sont basés sur le nouveau format de tableau introduit dans Designer prenant également en charge :
+Pour éviter les problèmes d’accessibilité avec les lecteurs d’écran qui ne prennent pas entièrement en charge les rôles ARIA utilisés avec les tableaux de données, les formulaires HTML5 fournissent un rendu alternatif pour les tableaux. Ces tableaux sont basés sur le nouveau format de tableau introduit dans Designer prenant également en charge :
 
 * les en-têtes de ligne ;
 * l’étendue de ligne.
 
 Pour utiliser le nouveau format dans les formulaires HTML5, indiquez que le tableau est complexe. Pour marquer le tableau en tant que tel, ajoutez la balise `extras` dans la source XML du sous-formulaire du tableau comme suit : 
 
-```
+```xml
 </extras>
  <text name="complexTable">1</text>
  </extras>
