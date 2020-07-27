@@ -11,7 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 52%
 
 ---
 
@@ -34,7 +37,7 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 1. Copiez le `/libs/ws/locales` dossier dans le `/apps/ws` dossier. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Update the references and relative paths in the `GET.jsp` file, as shown below, and click **[!UICONTROL Save all]**.
 
-   ```
+   ```jsp
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
    ```
 
@@ -83,7 +86,7 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
    1. Create a folder named `jqueryui`at `/apps/ws/js/libs`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   1. Copiez `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` vers `/apps/ws/js/libs/jqueryui`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+   1. Copiez `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` dans `/apps/ws/js/libs/jqueryui`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Procédez comme suit pour des personnalisations HTML :
 
@@ -91,7 +94,7 @@ Voici la procédure générique à suivre pour personnaliser Workspace HTML :
 
    1. Sous `/apps/ws/js/runtime`, créez un dossier nommé `templates`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   1. Copiez `/libs/ws/js/main.js` vers `/apps/ws/js/main.js`.
+   1. Copiez `/libs/ws/js/main.js` dans `/apps/ws/js/main.js`.
 
    1. Copy /libs/ws/js/registry.js to `/apps/ws/js/registry.js`.
 
