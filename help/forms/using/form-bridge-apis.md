@@ -9,20 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 42%
 
 ---
 
 
 # API Form Bridge pour les formulaires HTML5 {#form-bridge-apis-for-html-forms}
 
-Vous pouvez utiliser les API Form Bridge pour ouvrir un de communication entre des formulaires HTML5 XFA et vos applications. The Form Bridge APIs provides a **connect** API to create the connection.
+Vous pouvez utiliser les API Form Bridge pour ouvrir un canal de communication entre des formulaires HTML5 XFA et vos applications. The Form Bridge APIs provides a **connect** API to create the connection.
 
 L’API de **connexion** accepte un gestionnaire en tant qu’argument. Après la création d’une connexion réussie entre un formulaire HTML5 XFA et Form Bridge, la poignée est appelée.
 
 Vous pouvez utiliser l’exemple de code suivant pour créer la connexion.
 
-```
+```javascript
 // Example showing how to connect to FormBridge
 window.addEventListener("FormBridgeInitialized",
                                 function(event) {
@@ -44,22 +47,22 @@ window.addEventListener("FormBridgeInitialized",
 Renvoie le numéro de version de la bibliothèque de script.
 
 * **Input** : aucune
-* **Output**: Numéro de version de la bibliothèque de scripts
+* **Output**: Numéro de version de la bibliothèque de script
 * **Errors** : aucune
 
-**isConnected()** Vérifie si l’état du formulaire a été initialisé
+**isConnected()** Vérifie si l’état du formulaire a été initialisé.
 
 * **Input** : aucune
 * **Output**: **True** si l’état du formulaire XFA a été initialisé
 
 * **Errors** : aucune
 
-**connect(handler, context)** établit une connexion à FormBridge et exécute la fonction une fois la connexion établie et l’état du formulaire initialisé.
+**connect(handler, context)** Se connecte à FormBridge et exécute la fonction après avoir établi la connexion et initialisé l’état du formulaire.
 
 * **Entrée**:
 
    * **handler** : fonction à exécuter après la connexion de Form Bridge
-   * **contexte**: Objet pour lequel le contexte (ceci) de la fonction du *gestionnaire* est défini.
+   * **contexte**: Objet auquel le contexte (ceci) de la fonction du *gestionnaire* est défini.
 
 * **Output** : aucune
 * **Error** : aucune
@@ -79,13 +82,13 @@ Renvoie le numéro de version de la bibliothèque de script.
 * **Output :** aucune
 * **Error :** aucune
 
-**registerConfig(configName, config)** Enregistre les configurations spécifiques à l’utilisateur/au portail avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config.
+**registerConfig(configName, config)** Enregistre les configurations spécifiques des utilisateurs/portails avec FormBridge. Ces configurations remplacent les configurations par défaut. Les configurations prises en charge sont spécifiées dans la section config.
 
 * **Entrée:**
 
    * **configName :** Nom de la configuration à remplacer
 
-      * **widgetConfig :** Permet à l’utilisateur de remplacer les widgets par défaut du formulaire par des widgets personnalisés. La configuration est remplacée comme suit :
+      * **widgetConfig :** Permet à l’utilisateur de remplacer les widgets par défaut dans le formulaire par des widgets personnalisés. La configuration est remplacée comme suit :
 
          *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
@@ -93,9 +96,9 @@ Renvoie le numéro de version de la bibliothèque de script.
 
          *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
-      * **LoggingConfig :** Permet à l’utilisateur de remplacer le niveau de journalisation, de désactiver la journalisation d’un ou d’afficher la console des journaux ou de l’envoyer au serveur. La configuration peut être remplacée comme suit :
+      * **LoggingConfig :** Permet à l’utilisateur de remplacer le niveau de journalisation, de désactiver la journalisation d’une catégorie ou d’afficher la console des journaux ou de l’envoyer au serveur. La configuration peut être remplacée comme suit :
 
-      ```JavaScript
+      ```javascript
       formBridge.registerConfig{
         "LoggerConfig" : {
       {
@@ -107,9 +110,9 @@ Renvoie le numéro de version de la bibliothèque de script.
         }
       ```
 
-      * **SubmitServiceProxyConfig :** Permet aux utilisateurs d’enregistrer les services proxy d’envoi et de journalisation.
+      * **SubmitServiceProxyConfig :** Permet aux utilisateurs d’enregistrer les envois et de consigner les services proxy.
 
-         ```JavaScript
+         ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
          {
          "submitServiceProxy" : "`<submitServiceProxy>`",
@@ -125,25 +128,25 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Error :** aucune
 
-**hideFields(fieldArray)** Masque les champs dont le Som  sont fournis dans fieldArray. Définit la propriété presence des champs spécifiés sur invisible
+**hideFields(fieldArray)** Masque les champs dont les expressions Som sont fournies dans fieldArray. Définit la propriété presence des champs spécifiés sur invisible
 
 * **Entrée:**
 
-   * **fieldArray :** Tableau de  Som  pour les champs à masquer
+   * **fieldArray :** Tableau des expressions Som des champs à masquer
 
 * **Output :** aucune
 * **Error :** aucune
 
-**showFields(fieldArray)** Affiche les champs dont le Som  sont fournis dans fieldArray. Définit la propriété presence des champs fournis sur visible
+**showFields(fieldArray)** Affiche les champs dont les expressions Som sont fournies dans fieldArray. Définit la propriété presence des champs fournis sur visible
 
 * **Entrée:**
 
-   * **fieldArray :** Tableau de  Som  pour les champs à afficher
+   * **fieldArray :** Tableau des expressions Som des champs à afficher
 
 * **Output :** aucune
 * **Error :** aucune
 
-**hideSubmitButtons()** Masque tous les boutons d’envoi du formulaire
+**hideSubmitButtons()** Masque tous les boutons d’envoi du formulaire.
 
 * **Input** : aucune
 * **Output** : aucune
@@ -170,25 +173,25 @@ Renvoie le numéro de version de la bibliothèque de script.
 * **Output :** aucune
 * **Error :** aucune
 
-**setFocus (som)** Définit la cible d’action sur le champ spécifié dans le  Som 
+**setFocus (som)** Définit la cible d’action sur le champ spécifié dans l’expression Som
 
-* **Input :** Certains   du champ sur lequel définir la cible d&#39;action
+* **Input :** expression du champ sur lequel définir la cible d’action
 * **Output :** aucune
 * **Error :** renvoie une exception si l’expression Som est incorrecte
 
-**setFieldValue (som, value)** Définit la valeur des champs pour le Som donné 
+**setFieldValue (som, value)** Définit la valeur des champs pour les expressions Som données
 
 * **Entrée:**
 
-   * **som :** tableau contenant les expressions Som du champ. Certains  le  pour définir la valeur des champs.
-   * **value :** Tableau contenant les valeurs correspondant au Som   fourni dans un **** tableau. Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
+   * **som :** tableau contenant les expressions Som du champ. expression de définition de la valeur des champs.
+   * **value:** Tableau contenant les valeurs correspondant aux expressions Som fournies dans un **** tableau somarray. Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
 
 * **Output :** aucune
-* **Erreur :** Lance une exception en cas d’un Som  incorrect 
+* **Erreur :** Lance une exception en cas d’expression Som incorrecte.
 
-**getFieldValue (som)** Renvoie la valeur des champs du Som donné 
+**getFieldValue (som)** Renvoie la valeur des champs pour les expressions Som données
 
-* **Input :** Tableau contenant  Som  des champs dont la valeur doit être récupérée
+* **Input :** Tableau contenant les expressions Som des champs dont la valeur doit être récupérée
 * **Output :** Objet contenant le résultat sous forme de tableau dans la propriété **data** .
 
 * **Error :** aucune
@@ -206,7 +209,7 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, property)** Récupérez le de valeurs pour la propriété donnée des champs spécifiés dans Som  
+**getFieldProperties(som, property)** Récupère la liste des valeurs pour la propriété donnée des champs spécifiés dans les expressions Som
 
 * **Entrée:**
 
@@ -217,13 +220,13 @@ if(a.errors) {
 
 * **Error :** aucune
 
-**setFieldProperties(som, property, values)** Définit la valeur de la propriété donnée pour tous les champs spécifiés dans le  Som 
+**setFieldProperties(som, property, values)** Définit la valeur de la propriété donnée pour tous les champs spécifiés dans les expressions Som.
 
 * **Entrée:**
 
-   * **som :** Tableau contenant  Som  des champs dont la valeur doit être définie
+   * **som :** Tableau contenant les expressions Som des champs dont la valeur doit être définie
    * **property **: propriété dont la valeur doit être définie
-   * **value :** Tableau contenant les valeurs de la propriété donnée pour les champs spécifiés dans Som  
+   * **value:** Tableau contenant les valeurs de la propriété donnée pour les champs spécifiés dans les expressions Som
 
 * **Output :** aucune
 * **Error :** aucune
