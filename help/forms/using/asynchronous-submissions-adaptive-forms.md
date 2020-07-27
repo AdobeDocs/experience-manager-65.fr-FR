@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 67%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
 
 Traditionnellement, les formulaires web sont configurés à des fins d’envoi synchrone. Lors d’un envoi synchrone, lorsque les utilisateurs envoient un formulaire, ils sont redirigés vers une page d’accusé de réception, une page de remerciement ou, en cas d’échec de l’envoi, une page d’erreur. Toutefois, les expériences Web modernes telles que les applications d’une seule page gagnent en popularité. Dans une application de ce type, la page Web reste statique tandis que l’interaction entre le client et le serveur se déroule en arrière-plan. Vous pouvez désormais fournir cette expérience avec des formulaires adaptatifs en configurant l’envoi asynchrone.
 
-Lors d’une envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, comme la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également ajouter des services distincts comme l’envoi de données à un autre magasin de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone, un formulaire adaptatif se comporte comme une application d’une seule page, car le formulaire ne se recharge pas ou son URL ne change pas lorsque les données de formulaire envoyées sont validées sur le serveur.
+Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le développeur de formulaires se connecte à une expérience distincte, telle que la redirection vers un autre formulaire ou une section distincte du site Web. L’auteur peut également ajouter des services distincts comme l’envoi de données à un autre magasin de données ou l’ajout d’un moteur d’analyse personnalisé. En cas d’envoi asynchrone, un formulaire adaptatif se comporte comme une application d’une seule page, car le formulaire ne se recharge pas ou son URL ne change pas lorsque les données de formulaire envoyées sont validées sur le serveur.
 
 Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulaires adaptatifs.
 
@@ -48,7 +51,7 @@ Examinons d’abord la réponse du serveur pour les événements de réussite et
 
 La structure de la réponse du serveur pour l’événement de réussite de l’envoi est la suivante :
 
-```
+```json
 {
   contentType : "<xmlschema or jsonschema>",
   data : "<dataXML or dataJson>" ,
@@ -70,7 +73,7 @@ Le gestionnaire de succès lit la réponse du serveur et redirige en conséquenc
 
 La structure de la réponse du serveur pour l’événement d’erreur d’envoi est la suivante :
 
-```
+```json
 {
    errorCausedBy : "<CAPTCHA_VALIDATION or SERVER_SIDE_VALIDATION>",
 
