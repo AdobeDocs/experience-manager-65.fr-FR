@@ -1,6 +1,6 @@
 ---
-title: 'rapide de l’API Java LiveCycleProcess (SOAP) '
-seo-title: 'rapide de l’API Java LiveCycleProcess (SOAP) '
+title: Début rapide de l’API Java LiveCycle Process (SOAP)
+seo-title: Début rapide de l’API Java LiveCycle Process (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
@@ -10,38 +10,41 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 1%
 
 ---
 
 
-#  rapide de l’API Java LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
+# Début rapide de l’API Java LiveCycle Process (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Le  rapide API Java (SOAP) est disponible pour les processus. Une instance *de* processus est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou à partir de Workspace.
+Le Début rapide API Java (SOAP) est disponible pour les processus. Une instance *de* processus est une occurrence d’un processus spécifique qui a été démarré par une méthode d’appel telle que l’API d’appel ou depuis Workspace.
 
-[rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[Début rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Début rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[Début rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Début rapide (mode SOAP) : Arrêt d’instances de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[Début rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
-[rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[Début rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Les opérations AEM Forms peuvent être exécutées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les  rapides situés dans Programmation avec AEM Forms reposent sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques aux fenêtres par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Les débuts rapides situés dans Programmation avec AEM Forms sont basés sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-##  rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+## Début rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant recherche des instances de processus basées sur le processus *PrêtPrêtPrêt - Préconstruit* .
+L’exemple de code Java suivant recherche des instances de processus basées sur le processus *PrêtPrêtPrêtPrêtPrêt* Pré.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -155,11 +158,11 @@ L’exemple de code Java suivant recherche des instances de processus basées su
  
 ```
 
-##  rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Début rapide (mode SOAP) : Suspension des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant suspend une instance de processus. Pour suspendre avec succès une instance de processus, vous avez besoin de l’identificateur d’appel de processus qui peut être obtenu lors de l’appel d’un processus de longue durée à l’aide de l’API d’appel.
+L&#39;exemple de code Java suivant montre comment suspendre une instance de processus. Pour suspendre avec succès une instance de processus, vous avez besoin de l’identifiant d’appel de processus qui peut être obtenu lors de l’appel d’un processus de longue durée à l’aide de l’API d’appel.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -247,11 +250,11 @@ L’exemple de code Java suivant suspend une instance de processus. Pour suspend
  
 ```
 
-##  rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Début rapide (mode SOAP) : Démarrage des instances de processus suspendues à l’aide de l’API Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
-L’exemple de code Java suivant  une instance de processus suspendue.
+L&#39;exemple de code Java suivant début une instance de processus suspendue.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -335,11 +338,11 @@ L’exemple de code Java suivant  une instance de processus suspendue.
  
 ```
 
-##  rapide (mode SOAP) : Arrêt des instances de processus à l’aide de l’API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Début rapide (mode SOAP) : Arrêt d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 L’exemple de code Java suivant termine une instance de processus avec la valeur d’identificateur 756c22860a242fb101ec7a5bc0977fd6.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -426,11 +429,11 @@ L’exemple de code Java suivant termine une instance de processus avec la valeu
  
 ```
 
-##  rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Début rapide (mode SOAP) : Purge des données de processus à l’aide de l’API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Le code Java suivant purge les données d’un processus appelé *SecureDocument*. Un filtre permet de purger les données des instances de processus dont la variable de processus nommée *inValue* est supérieure à 200.
+Le code Java suivant purge les données d’un processus appelé *SecureDocument*. Un filtre permet de purger les données des instances de processus pour lesquelles la variable de processus nommée *inValue* est supérieure à 200.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -533,11 +536,11 @@ Le code Java suivant purge les données d’un processus appelé *SecureDocument
  
 ```
 
-##  rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Début rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-L’exemple de code suivant récupère l’état de 10 tâches AEM Forms.
+L&#39;exemple de code suivant récupère l&#39;état de 10 tâches AEM Forms.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
