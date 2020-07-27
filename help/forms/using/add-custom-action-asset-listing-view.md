@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 59%
 
 ---
 
@@ -44,7 +47,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 
-1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier de sélection en procédant comme suit :
+1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier de sélection, en procédant comme suit :
 
    1. Right-click the **items** folder at the following path and select **Overlay Node**:
 
@@ -73,7 +76,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       Cliquez sur **Enregistrer tout**.
 
-1. Sous le dossier d’éléments nouvellement créé, ajoutez un noeud pour le bouton/l’action personnalisé(e) d’une ressource particulière (Exemple : downloadFlatPDF) à l’aide des étapes suivantes :
+1. Dans le dossier d’éléments nouvellement créé, ajoutez un noeud pour le bouton/l’action personnalisé(e) d’une ressource particulière (exemple : downloadFlatPDF) en procédant comme suit :
 
    1. Right-click the **items** folder and select **Create** > **Create Node**.
 
@@ -102,7 +105,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
         <tr>
         <td>foundation-collection-action</td>
         <td>Chaîne</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> peut être une ou plusieurs (entrées multiples séparées par des virgules) parmi les suivantes : LETTRE,TEXTE,,CONDITION,DATADICTIONNAIRE</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> can be single or multiple to allow selections of single or multiple assets on which the custom action is performed.</p> <p><strong>type</strong> peut être un ou plusieurs (entrées multiples séparées par des virgules) des éléments suivants : LETTRE, TEXTE, LISTE, CONDITION, DATADICTIONNAIRE</p> </td>
         </tr>
         <tr>
         <td>icône</td>
@@ -137,7 +140,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
         </tbody>
        </table>
 
-1. Dans le dossier d’applications, créez un dossier nommé js avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier d’administration à l’aide des étapes suivantes :
+1. Dans le dossier d’applications, créez un dossier nommé js avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier d’administration, en procédant comme suit :
 
    1. Right-click the **js** folder at the following path and select **Overlay Node**:
 
@@ -168,7 +171,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       Then append the following code at the end in the formaction.js file (under the /apps branch) and click **Save All**:
 
-      ```
+      ```javascript
       /* Action url for xml file to be added.*/
       var ACTION_URL = "/apps/fd/cm/ma/gui/content/commons/actionhandlers/items/letterpdfdownloader.html";
       
@@ -245,13 +248,13 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
    1. Cliquez sur **Enregistrer tout**.
 
-1. Sous le noeud d’éléments nouvellement créé, ajoutez un noeud pour le bouton/l’action personnalisé(e) d’un élément particulier (Exemple : letterpdfdownloader) à l’aide des étapes suivantes :
+1. Sous le noeud d’éléments nouvellement créé, ajoutez un noeud pour le bouton/l’action personnalisé(e) dans une ressource particulière (exemple : letterpdfdownloader) à l’aide des étapes suivantes :
 
    1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer > Créer un nœud**.
 
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
-      **Nom :** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété) doit être unique. Si vous utilisez un autre nom ici, spécifiez également le même nom dans la variable ACTION_URL du fichier formaction.js.)
+      **Nom :** letterpdfdownloader (ou le nom que vous souhaitez donner à cette propriété), doit être unique. Si vous utilisez un autre nom ici, spécifiez également le même dans la variable ACTION_URL du fichier formaction.js.)
 
       **Type :** nt:unstructured
 
@@ -263,7 +266,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
       |---|---|---|
       | sling:resourceType | Chaîne | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
-1. Créez un fichier nommé POST.jsp avec le code de gestion de l’action de la commande à l’emplacement suivant :
+1. Créez un fichier nommé POST.jsp avec le code de traitement d’action de la commande à l’emplacement suivant :
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -359,7 +362,7 @@ Après avoir ajouté une fonctionnalité personnalisée pour télécharger le PD
 
    ![Fonctionnalité personnalisée : Télécharger le PDF aplati](assets/5_downloadflatpdf.png)
 
-1. Dans la boîte de dialogue Télécharger la lettre en tant que PDF, sélectionnez le fichier XML approprié à partir duquel vous souhaitez renseigner les données dans le PDF.
+1. Dans la boîte de dialogue Télécharger la lettre en tant que PDF, sélectionnez le code XML approprié à partir duquel vous souhaitez renseigner les données du PDF.
 
    >[!NOTE]
    >
