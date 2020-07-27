@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '969'
 ht-degree: 10%
 
 ---
@@ -213,8 +213,8 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
 
 Une suite de tests peut comporter plusieurs cas de test. Vous pouvez exécuter tous les cas de test dans une suite de tests en une seule fois ou individuellement. Lorsque vous exécutez un test, les icônes indiquent les résultats :
 
-* A checkmark icon indicates a passed test: ![](assets/save_icon.svg)
-* An &quot;X&quot; icon indicates a failed test: ![](assets/close-icon.svg)
+* A checkmark icon indicates a passed test: ![save_icon](assets/save_icon.svg)
+* An &quot;X&quot; icon indicates a failed test: ![close-icon](assets/close-icon.svg)
 
 1. Accédez à l’icône AEM > **[!UICONTROL Outils]**> **[!UICONTROL Opérations]**> **[!UICONTROL Tests]**
 1. Pour exécuter tous les tests de la suite de tests :
