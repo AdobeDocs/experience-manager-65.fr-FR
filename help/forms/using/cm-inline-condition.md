@@ -10,7 +10,10 @@ topic-tags: interactive-communications
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 89%
 
 ---
 
@@ -35,7 +38,7 @@ Pour conditionner une phrase, un paragraphe ou une chaîne de texte dans une com
 
 For more information, see Create rule in text in [Texts in Interactive Communications](../../forms/using/texts-interactive-communications.md).
 
-Une fois que vous avez inclus le fragment de texte dans une communication interactive et que l’agent utilise l’interface utilisateur de l’agent pour préparer une communication interactive, les données (modèle de données de formulaire) des destinataires sont évaluées et le texte est présenté uniquement aux destinataires aux États-Unis.
+Une fois que vous avez inclus le fragment de texte dans une communication interactive et que l’agent utilise l’interface utilisateur de l’agent pour préparer une communication interactive, les données (modèle de données de formulaire) pour les destinataires sont évaluées et le texte est présenté uniquement aux destinataires aux États-Unis.
 
 ### Exemple : utilisation d’une condition intégrée dans une lettre pour effectuer le rendu de l’adresse appropriée  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
@@ -61,7 +64,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    Appuyez deux fois sur un élément DD pour l’insérer dans la condition. Insérez l’opérateur adéquat et créez la condition suivante dans la boîte de dialogue.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender=="Male"}
    ```
 
@@ -73,7 +76,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
 1. Insert similar condition by selecting the text `Ma'am`.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender == "Female"}
    ```
 
@@ -81,6 +84,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    * Un exemple de fichier de données XML créé en fonction du dictionnaire de données approprié lors de l’affichage de l’aperçu de la lettre avec des exemples de données.
    * Le fichier de données XML associé au dictionnaire de données approprié.
+
    Pour de plus amples informations, voir [Dictionnaires de données](../../forms/using/data-dictionary.md).
 
    ![5_letteroutput](assets/5_letteroutput.png)
@@ -131,7 +135,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    Au passage de la souris, le fragment de document texte affiche la condition et le séparateur utilisé dans la répétition appliquée au contenu.
 
-1. Enregistrez le fragment de document texte et prévisualisez la communication interactive concernée. Selon les données du modèle de données du formulaire, la répétition appliquée aux éléments rend les détails de transaction semblables aux éléments suivants dans l’aperçu :
+1. Enregistrez le fragment de document texte et prévisualisez la communication interactive concernée. Selon les données du modèle de données de formulaire, la répétition appliquée aux éléments rend les détails de la transaction de la même manière que dans la prévisualisation :
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
@@ -141,7 +145,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
 1. Ouvrez (lors de la modification ou de la création) un module de texte qui contient des éléments DD qui effectuent le rendu des données répétées/dynamiques et incorporez le texte requis autour des éléments DD. Par exemple, un module de texte comporte les éléments DD suivants pour créer une instruction des transactions d’une carte de crédit :
 
-   ```
+   ```javascript
    {^DD_creditcard_TransactionDate^} {^DD_creditcard_TransactionAmount^}
    {^DD_creditcard_TransactionType^}
    ```
@@ -154,7 +158,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    ![1_repeat](assets/1_repeat.png)
 
-   ```
+   ```javascript
    Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
    ```
 
@@ -174,7 +178,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
 1. Si nécessaire, insérez une condition pour effectuer le rendu sélectif des transactions, par exemple pour effectuer le rendu des montants de transaction supérieurs à 50 cents :
 
-   ```
+   ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
@@ -184,6 +188,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    * **Saut de ligne** : insère un saut de ligne après chaque entrée de transaction dans la lettre de sortie.
    * **Texte** : insère le caractère de texte spécifié après chaque entrée de transaction dans la lettre de sortie.
+
    Une fois que la condition est insérée, le texte contenant la répétition est mis en surbrillance en rouge et une poignée apparaît sur sa gauche. Vous pouvez placer le pointeur sur la poignée située à gauche de la condition pour afficher la structure de la répétition.
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
@@ -196,6 +201,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    * Un exemple de fichier de données XML créé en fonction du dictionnaire de données approprié lors de l’affichage de l’aperçu de la lettre avec des exemples de données.
    * Le fichier de données XML associé au dictionnaire de données approprié.
+
    Pour de plus amples informations, voir [Dictionnaires de données](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
@@ -216,7 +222,7 @@ Voici un exemple de répétition (mise en forme en rouge) dans une condition (mi
 
 Alors que la répétition rend les transactions de carte de crédit, la condition ${DD_creditcard_nooftransactions > 0} garantit que la structure de répétition est rendue uniquement s’il existe au moins une transaction.
 
-![répétwitincondition](assets/repeatwitincondition.png)
+![condition répétée](assets/repeatwitincondition.png)
 
 De la même façon, selon vos besoins, vous pouvez créer :
 
@@ -228,6 +234,6 @@ De la même façon, selon vos besoins, vous pouvez créer :
 
 Vous pouvez être amené à insérer des conditions intégrées et incorporer du texte et des éléments DD ultérieurement. Correspondence Management vous permet de procéder ainsi.
 
-![emptycondition](assets/emptycondition.png)
+![vide](assets/emptycondition.png)
 
 Il est toutefois recommandé, dans la mesure du possible, d’insérer le texte et les éléments DD en premier dans le module de texte avec la mise en forme prévue, telle que des puces, et d’appliquer une condition intégrée par la suite.
