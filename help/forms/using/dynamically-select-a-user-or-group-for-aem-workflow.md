@@ -8,7 +8,10 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 997a35b331385738a8d4a3fcab89c950ed4b7d33
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '947'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +28,7 @@ Assign task and Adobe Sign steps of [Forms-centric workflows on OSGi](/help/form
 
 ECMAScript est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Effectuez les étapes suivantes pour sélectionner de manière dynamique un utilisateur ou un groupe à l’aide de ECMAScript :
 
-1. Ouvrez CRXDE Lite. L’URL est `https://'[server]:[port]'/crx/de/index.jsp`
+1. Ouvrez CRXDE Lite. The URL is `https://'[server]:[port]'/crx/de/index.jsp`
 1. Créez un fichier avec l’extension .ecma au chemin d’accès suivant. Si le chemin d’accès (structure du nœud) n’existe pas, créez-le :
 
    * (Path for Assign Task step) `/apps/fd/dashboard/scripts/participantChooser`
@@ -39,7 +42,7 @@ ECMAScript est un langage de script. Il est utilisé pour les scripts et les app
 
    1. Développez le nœud du script, cliquez avec le bouton droit de la souris sur **[!UICONTROL jcr:content]**, puis cliquez sur **[!UICONTROL Mixins]**.
    1. Ajoutez la propriété `mix:title` dans la boîte de dialogue Modifier les mixins et cliquez sur **OK**.
-   1. Ajouter la propriété suivante au noeud jcr:content du script :
+   1. Ajoutez la propriété suivante au noeud jcr:content du script :
 
       | Nom | Type | Valeur |
       |--- |--- |--- |
@@ -53,7 +56,7 @@ ECMAScript est un langage de script. Il est utilisé pour les scripts et les app
 
 L’exemple ECMAScript suivant sélectionne de manière dynamique une personne désignée pour l’étape Affecter une tâche. Dans ce script, un utilisateur est sélectionné en fonction du chemin de la charge utile. Avant d’utiliser ce script, veillez à ce que tous les utilisateurs mentionnés dans le script existent dans AEM. Dans le cas contraire, le processus associé peut échouer.
 
-```
+```javascript
 function getParticipant() {
 
 var workflowData = graniteWorkItem.getWorkflowData();
@@ -77,7 +80,7 @@ L’exemple ECMAScript suivant sélectionne de manière dynamique une personne d
 >
 >Lors de l’utilisation de ECMAScript pour Adobe Sign, le script doit se trouver dans le référentiel crx à l’adresse /apps/fd/workflow/scripts/adobesign/ et doit disposer d’une fonction appelée getAdobeSignRecipients pour renvoyer une liste des utilisateurs.
 
-```
+```javascript
 function getAdobeSignRecipients() {
 
     var recipientSetInfos = new Packages.java.util.ArrayList();
@@ -114,9 +117,9 @@ function getAdobeSignRecipients() {
 
 ## Utilisation de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir de manière dynamique un utilisateur ou un groupe pour les étapes Adobe Sign et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Cela rend disponible à la sélection l’option dans les composants Affecter une tâche et Adobe Sign du processus AEM.
+Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir de manière dynamique un utilisateur ou un groupe pour les étapes Adobe Sign et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur AEM Forms. Cela rend disponible à la sélection l’option dans les composants Affecter une tâche et Adobe Sign du processus AEM.
 
-Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
+Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
 1. Ouvrez l’IDE Eclipse. Accédez à **[!UICONTROL Fichier]**>**[!UICONTROL Nouveau projet]**.
 1. Sur l’écran de sélection de l’assistant, sélectionnez **[!UICONTROL Projet Maven]** puis cliquez sur **[!UICONTROL Suivant]**.
@@ -223,7 +226,7 @@ Vous avez besoin des fichiers jar [SDK client AEM Forms](https://helpx.adobe.co
    </project>
    ```
 
-1. Ajoutez le code source utilisant l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour sélectionner de manière dynamique un utilisateur ou un groupe pour l’étape Affecter une tâche. Pour un exemple de code, voir [Exemple pour la sélection dynamique d’un utilisateur ou d’un groupe à l’aide de l’interface Java](#-sample-scripts-for).
+1. Ajoutez le code source utilisant l’interface Java [RecipientInfoSpecifier](https://helpx.adobe.com/fr/experience-manager/6-3/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour sélectionner de manière dynamique un utilisateur ou un groupe pour l’étape Affecter une tâche. Pour un exemple de code, voir [Exemple pour la sélection dynamique d’un utilisateur ou d’un groupe à l’aide de l’interface Java](#-sample-scripts-for).
 1. Ouvrez une invite de commande et accédez au répertoire contenant le projet de bundle OSGi. Utilisez la commande suivante pour créer le bundle OSGi :
 
    `mvn clean install`
