@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 62%
 
 ---
 
@@ -139,7 +142,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
 
 1. Copy /libs/ws/js/runtime/templates/task.html to `/apps/ws/js/runtime/templates/task.html`replace the following code snippet:
 
-   ```
+   ```html
    // Orignal code
    <div class="taskActionsPopUp">
            <!--START_TASKACTIONS-->
@@ -174,7 +177,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
        </div>
    ```
 
-   ```
+   ```html
    //New code
    
    <div class="taskActionsPopUp">
@@ -262,12 +265,12 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
 
 ### Menu contextuel de l’action de tâche Détails de la tâche {#task-details-task-action-pop-up-menu}
 
-Effectuez les étapes suivantes pour personnaliser le menu contextuel Actions du Détails  :
+Effectuez les étapes suivantes pour personnaliser le menu contextuel Actions de la tâche Détails :
 
 * Copy the /libs/ws/js/runtime/templates/taskdetails.html file to the `/apps/ws/js/runtime/templates/` folder:
 * Encapsulez la balise de l’icône dans la balise d’ancrage au lieu du texte. For example, the *new code* listed below encapsulates the icon tag inside the anchor tag:
 
-```
+```html
 // Original code
 <div class="taskActionsPopUp">
         <!--START_ACTIONBUTTONGROUP-->
@@ -310,7 +313,7 @@ Effectuez les étapes suivantes pour personnaliser le menu contextuel Actions du
     </div>
 ```
 
-```
+```html
 //New code
 
 <div class="taskActionsPopUp">
