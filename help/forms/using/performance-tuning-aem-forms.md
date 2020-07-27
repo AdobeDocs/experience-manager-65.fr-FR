@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '927'
+ht-degree: 76%
 
 ---
 
@@ -48,7 +51,7 @@ Les paramètres de cache par défaut d’AEM Forms peuvent ne pas suffire pour o
 
 For optimal performance, it is recomended to use the following JVM `init` arguments to configure the `Java heap` and `PermGen`.
 
-```java
+```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xmx8192m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
@@ -57,7 +60,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Les paramètres recommandés sont pour le JDK Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) et doivent être agrandis ou réduits selon la configuration du système.
+>Les paramètres recommandés sont pour le JDK Windows 2008 R2 8 Core et Oracle HotSpot 1.7 (64 bits) et doivent être augmentés ou réduits en fonction de votre configuration système.
 
 ## Utilisation d’un serveur Web {#using-a-web-server}
 
@@ -67,7 +70,7 @@ Par exemple, suivez les étapes ci-dessous pour activer la compression sur Apach
 
 >[!NOTE]
 >
->Les instructions suivantes ne s’appliquent à aucun autre serveur que celui d’Apache Web Server 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.
+>Les instructions suivantes ne s&#39;appliquent à aucun autre serveur que le serveur Web Apache 2.0 32 bits. Pour obtenir des instructions spécifiques à un autre serveur, reportez-vous à la documentation correspondante.
 
 Les étapes suivantes présentent les modifications à effectuer pour activer la compression avec le serveur Web Apache.
 
@@ -81,7 +84,7 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
 
 1. Uncomment the following module configurations in `APACHE_HOME/conf/httpd.conf` file.
 
-   ```java
+   ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
    LoadModule proxy_balancer_module modules/mod_proxy_http.so
    LoadModule deflate_module modules/mod_deflate.so
@@ -92,18 +95,18 @@ Apache peut communiquer avec CRX via le protocole HTTP. Les configurations conce
    >For Linux, the default `APACHE_HOME` is `/etc/httpd/`.
 
 1. Configurez le proxy sur le port 4502 de crx.
-Ajouter suivant la configuration dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
+Ajoutez la configuration suivante dans le fichier de `APACHE_HOME/conf/httpd.conf` configuration.
 
-   ```java
+   ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Activez la compression. Ajouter suivant la configuration dans `APACHE_HOME/conf/httpd.conf` le fichier de configuration.
+1. Activez la compression. Ajoutez la configuration suivante dans le fichier de `APACHE_HOME/conf/httpd.conf` configuration.
 
    **Pour les formulaires HTML5**
 
-   ```java
+   ```xml
    <Location /content/xfaforms>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
@@ -120,7 +123,7 @@ Ajouter suivant la configuration dans `APACHE_HOME/conf/httpd.conf` le fichier d
 
    **Pour les formulaires adaptatifs**
 
-   ```java
+   ```xml
    <Location /content/forms/af>
        <IfModule mod_deflate.c>
            SetOutputFilter DEFLATE
@@ -170,7 +173,7 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 >
 >* If you are using a different location for GDS and temporary directory, open AdminUI at `https://'[server]:[port]'/adminui`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
 
-* Si le serveur AEM Forms se comporte lentement, même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
+* Si le serveur AEM Forms se comporte lentement même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
 
 
 
