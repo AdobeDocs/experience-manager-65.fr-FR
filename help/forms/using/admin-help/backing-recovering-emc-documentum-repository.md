@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 88%
 
 ---
 
@@ -58,7 +61,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    le texte suivant contient des caractères de formatage pour les sauts de ligne. Si vous copiez ce texte en dehors de ce document, copiez-en une partie après l’autre, puis supprimez les caractères de formatage sur le nouvel emplacement.
 
-   ```as3
+   ```shell
     ################################################
     # NetWorker Module for Documentum v1.2 nsrnmd_win.cfg D5.3+ example with
     # typical set of working parameters.  THIS FILE MUST BE SITE-CUSTOMISED.
@@ -196,7 +199,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-      `NetWorker_database_module_root` `-s`*&lt;Nom_serveur_NetWorker>*`-U``[username]`motde passe`-P`*[]*`-l full`*&lt;nom_bdd>*
+      `NetWorker_database_module_root` `-s`*&lt;Nom_serveur_NetWorker>*`-U``[username]`mot_de_passe`-P`*[]*`-l full`*&lt;nom_bdd>*
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
@@ -204,7 +207,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]``-P``[password]` `-l incr -R`*&lt;nom_bdd>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nom_bdd>*
 
       Où :
 
@@ -225,7 +228,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    **Nom :** chemin d’accès complet au répertoire partagé
 
-   **** Type de support : `File`
+   **Type de support :** `File`
 
 1. Cliquez avec le bouton droit de la souris sur le nouveau périphérique, puis sélectionnez Operations.
 1. Cliquez sur Label, saisissez un nom, puis cliquez sur Mount.
@@ -243,7 +246,7 @@ Après avoir réalisé une sauvegarde complète des données AEM forms, procéde
 1. Ouvrez une invite de commande et passez à `[NetWorker_root]\Legato\nsr\bin`.
 1. Exécutez la commande suivante :
 
-   ```as3
+   ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
@@ -263,6 +266,6 @@ Avant de restaurer les données de votre environnement AEM forms, procédez comm
 1. Open a command prompt and change to *[NetWorker_root]*\Legato\nsr\bin
 1. Exécutez la commande suivante :
 
-   ```as3
+   ```shell
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
