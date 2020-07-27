@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 61%
 
 ---
 
@@ -35,10 +38,10 @@ Pour ce faire, vous devez :
 
 ## Personnaliser des polices en modifiant le fichier tbxeditor-config.xml dans CRX {#customizefonts}
 
-Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
+Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, procédez comme suit :
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. Dans le dossier d’applications, créez un dossier nommé config avec un chemin/une structure similaire au dossier de configuration, qui se trouve dans libs/fd/cm/config, en suivant les étapes suivantes :
+1. Dans le dossier d’applications, créez un dossier nommé config dont le chemin d’accès/la structure est similaire au dossier de configuration, qui se trouve dans libs/fd/cm/config, en procédant comme suit :
 
    1. Right-click the items folder at the following path and select **Overlay Node**:
 
@@ -67,11 +70,11 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
 
       `apps/fd/cm/config`
 
-   1. Par défaut, le nom du fichier collé est `copy of tbxeditor-config.xml.` Renommer le fichier en `tbxeditor-config.xml` cliquant sur **Enregistrer tout**.
+   1. Par défaut, le nom du fichier collé est `copy of tbxeditor-config.xml.` Renommer le fichier en `tbxeditor-config.xml` et cliquez sur **Enregistrer tout**.
 
 1. Ouvrez le fichier tbxeditor-config.xml dans apps/fd/cm/config, puis effectuez les modifications requises.
 
-   1. -cliquez sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
+   1. Cliquez avec le Doublon sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
 
       ```xml
       <editorConfig>
@@ -164,7 +167,8 @@ Pour personnaliser les polices en modifiant le fichier tbxeditor-config.xml, pro
       * Propriétés telles que la hauteur et l’interlettrage
       * Valeurs par défaut des familles et des tailles de police, de la hauteur, de l’interlettrage et du format de date
       * Retraits de puces
-      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer l’entrée suivante dans Fichier XML : `<font>Sazanami Mincho Medium</font>`. Vous devez également installer cette police sur l’ordinateur client utilisé pour accéder à la personnalisation des polices et l’utiliser. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
+
+      Par exemple, pour ajouter une police japonaise appelée Sazanami Mincho Medium, vous devez effectuer l’entrée suivante dans Fichier XML : `<font>Sazanami Mincho Medium</font>`. Vous devez également installer cette police sur l’ordinateur client utilisé pour accéder à la personnalisation de la police et l’utiliser. Pour plus d’informations, reportez-vous à la section [Ajouter des polices personnalisées sur l’ordinateur client](#addcustomfonts).
 
       Vous pouvez également modifier les valeurs par défaut de divers aspects du texte et, en supprimant les entrées, supprimer les polices de l’éditeur de texte.
 
@@ -178,11 +182,11 @@ Lorsque vous accédez à une police dans l’éditeur de texte de Correspondence
 Pour plus d’informations sur l’installation des polices, consultez les articles suivants :
 
 * [Installation et désinstallation de polices sous Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Principes de base sur Mac : livre des polices](https://support.apple.com/en-us/HT201749)
+* [Principes de base sur Mac : livre des polices](https://support.apple.com/fr-fr/HT201749)
 
 ## Accéder à la personnalisation des polices {#access-font-customizations}
 
-Après avoir apporté des modifications aux polices dans le fichier tbxeditor-config.xml dans CRX et installé les polices requises sur l’ordinateur client utilisé pour accéder à AEM Forms, les modifications apparaissent dans l’éditeur de texte.
+Après avoir apporté des modifications aux polices dans le fichier tbxeditor-config.xml dans CRX et installé les polices requises sur l’ordinateur client utilisé pour accéder aux AEM Forms, les modifications apparaissent dans l’éditeur de texte.
 
 For example, the Sazanami Mincho Medium font added in the [Customize fonts by editing the tbxeditor-config.xml file in CRX](#customizefonts) procedure appears in the text editor UI as following:
 
