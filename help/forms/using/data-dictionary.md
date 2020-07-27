@@ -9,7 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b8d64082e3ba837c057ab5ee8c45ea0735ef6d0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3859'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +27,7 @@ Un dictionnaire de données est une représentation indépendante des métadonn�
 
 Le dictionnaire de données est composé d’éléments de trois types : simple, composite et de collection. Les DDE simples sont des éléments primitifs tels que des chaînes, des nombres, des dates et des valeurs booléennes qui contiennent des informations telles qu’un nom de ville. Un DDE composite contient d’autres éléments de dictionnaire de données qui peuvent être de type primitif, composite ou de collection. Par exemple, une adresse, qui se compose d’un nom de rue, d’une ville, d’une province, d’un pays et d’un code postal. Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client avec plusieurs emplacements différents ou des adresses de facturation et de livraison différentes.
 
-Correspondence Management utilise les données dorsales, client ou destinataire stockées selon la structure du dictionnaire de données pour créer de la correspondance destinée à différents clients. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher/chère {Prénom} » ou « M. {Nom} ».
+Correspondence Management utilise les données d’arrière-plan, client ou destinataire stockées selon la structure du dictionnaire de données pour créer de la correspondance destinée à différents clients. Par exemple, un document peut être créé avec des noms conviviaux, tels que « Cher/chère {Prénom} » ou « M. {Nom} ».
 
 En règle générale, les utilisateurs professionnels n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions.
 
@@ -51,12 +54,13 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 1. Tap **Create Data Dictionary**.
 1. Dans l’écran de propriétés, ajoutez ce qui suit :
 
-   * **** Titre : (Facultatif) Entrez le titre du dictionnaire de données. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
+   * **Titre :** (Facultatif) Saisissez le titre du dictionnaire de données. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
    * **Nom** : le nom unique du dictionnaire de données. Dans le champ Nom, vous pouvez entrer uniquement les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre et les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
    * **Description**: (Facultatif) Description du dictionnaire de données.
-   * **** Balises : (Facultatif) Pour créer une balise personnalisée, entrez une valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
-   * **Propriétés**&#x200B;étendues : (Facultatif) Appuyez sur **Ajouter un champ** pour spécifier des attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
+   * **Balises :** (Facultatif) Pour créer une balise personnalisée, entrez une valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
+   * **Propriétés**&#x200B;étendues : (Facultatif) Appuyez sur **Ajouter le champ** pour spécifier les attributs de métadonnées pour votre dictionnaire de données. Dans la colonne Nom de la propriété, saisissez un nom de propriété unique. Dans la colonne Valeur, saisissez une valeur à associer à la propriété.
+
    ![Propriétés du dictionnaire de données spécifiées en allemand](do-not-localize/1_ddproperties.png)
 
 1. (Optional) To upload an XSD schema definition for your data dictionary, under the Data Dictionary Structure pane, tap **Upload XML Schema**. Browse to XSD file, select it, and tap **Open**. Un dictionnaire de données est créé en fonction du schéma XML chargé. Vous devez modifier les noms d’affichage et les descriptions des éléments du dictionnaire de données. Pour ce faire, sélectionnez les nom des éléments en cliquant dessus et modifiez leur description, leur nom d’affichage, ou d’autres détails dans les champs du panneau de droite.
@@ -67,7 +71,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    >
    >Vous pouvez ignorer le chargement du fichier de schéma et créer votre dictionnaire de données à partir de zéro dans l’interface utilisateur. Pour ce faire, ignorez cette étape et poursuivez en effectuant les étapes suivantes.
 
-1. Appuyez sur **Suivant**.
+1. Appuyez sur **Next** (Suivant).
 1. Dans l’écran Ajouter des propriétés, ajoutez des éléments au dictionnaire de données. Vous pouvez également ajouter ou supprimer des éléments et modifier leurs détails si vous avez chargé un schéma pour obtenir une structure de base du dictionnaire de données.
 
    Vous pouvez cliquer sur les trois points du côté droit d’un élément et ajouter un élément à la structure du dictionnaire de données.
@@ -79,6 +83,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    * Un DDE composite contient d’autres éléments de dictionnaire de données qui peuvent être de type primitif, composite ou de collection. Par exemple, une adresse, qui se compose d’un nom de rue, d’une ville, d’une province, d’un pays et d’un code postal.
    * Les DDE simples sont des éléments tels que des chaînes, des nombres, des dates et des valeurs booléennes qui contiennent des informations telles qu’un nom de ville.
    * Une collection est une liste de DDE simples ou composites similaires. Par exemple, un client avec plusieurs emplacements différents ou des adresses de facturation et de livraison différentes.
+
    Voici quelques règles pour créer un dictionnaire de données :
 
    * Seul le type composite est autorisé en tant que DDE de niveau supérieur dans un dictionnaire de données.
@@ -86,11 +91,12 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    * Le nom de référence doit être unique.
    * Un DDE parent (composite) ne peut pas avoir deux enfants ayant le même nom.
    * Les énumérations contiennent uniquement des types de chaînes primitifs.
+
    For more information on Composite, Collection, and Primitive elements and working with data dictionary elements, see [Mapping Data Dictionary Elements to XML Schema](#mappingddetoschema).
 
    For information on validations in Data Dictionary, see [Data Dictionary Editor validations](#ddvalidations).
 
-   ![2_addddproperties_basic](assets/2_addddpropertiesbasic.png)
+   ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
 1. (Facultatif) Après la sélection d’un élément, vous pouvez ajouter des propriétés dans l’onglet Avancé (attributs). You can also tap **Add Field** and extend the properties of a DD element.
 
@@ -105,7 +111,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
    >Une suppression d’un élément composite ou de collection avec des nœuds enfant supprime également les nœuds enfant.
 
 1. (Facultatif) Sélectionnez un élément dans le volet Structure du dictionnaire de données et dans le volet Liste des champs et des variables. Modifiez ou ajoutez n’importe quels attributs requis associés à l’élément.
-1. Appuyez sur **Enregistrer**.
+1. Appuyez sur **Save** (Enregistrer).
 
 ### Créer des copies d’un ou de plusieurs dictionnaires de données {#create-copies-of-one-or-more-data-dictionary}
 
@@ -115,7 +121,7 @@ Pour créer rapidement un ou plusieurs dictionnaires de données avec des propri
 1. Appuyez sur Copier. L’interface utilisateur affiche l’icône Coller.
 1. Appuyez sur Coller. La boîte de dialogue Coller s’affiche. Le système attribue automatiquement des noms et des titres aux nouveaux dictionnaires de données.
 1. Si nécessaire, modifiez le titre et le nom sous lesquels vous souhaitez enregistrer la copie du dictionnaire de données.
-1. Appuyez sur Coller. La copie du dictionnaire de données est créée. Vous pouvez désormais apporter les modifications requises dans votre nouveau dictionnaire de données.
+1. Appuyez sur Coller. La copie du dictionnaire de données est créée. Vous pouvez désormais apporter les modifications requises à votre nouveau dictionnaire de données.
 
 ## Voir les fragments de document ou les documents qui font référence à un élément du dictionnaire de données.{#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
@@ -126,6 +132,7 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
    * Placez le pointeur de la souris sur un dictionnaire de données et appuyez sur Modifier.
    * Sélectionnez un dictionnaire de données, puis appuyez sur Modifier dans l’en-tête.
    * Passez la souris sur un dictionnaire de données et appuyez sur Sélectionner. Appuyez sur Modifier dans l’en-tête.
+
    Ou appuyez sur un dictionnaire de données pour l’afficher.
 
 1. Dans le dictionnaire de données, appuyez sur un élément simple pour le sélectionner. Les éléments Composite et Collection ne possèdent pas de références.
@@ -189,11 +196,11 @@ Au cours de la modification ou de l’affichage d’un dictionnaire de données,
 
    >[!NOTE]
    >
-   >Dans cet exemple, XML crée de l’espace pour trois valeurs à un élément de collection, mais le nombre de valeurs peut être augmenté/réduit selon les besoins.
+   >Dans cet exemple, XML crée de l’espace pour trois valeurs pour un élément de collection, mais le nombre de valeurs peut être augmenté/réduit selon les besoins.
 
 1. Une fois les entrées de données réalisées, vous pouvez utiliser ce fichier XML lorsque vous prévisualisez une lettre avec des données de test.
 
-   Vous pouvez ajouter ces données de test à l’aide du dictionnaire de données (sélectionnez DD, appuyez sur Télécharger les données de test et téléchargez ce fichier XML). Après cela, lorsque vous prévisualisez une lettre normalement (et non de manière personnalisée), ces données XML sont utilisées dans la lettre. Vous pouvez également cliquer sur Personnalisé et télécharger ce fichier XML.
+   Vous pouvez ajouter ces données de test avec DD (sélectionnez DD, appuyez sur Télécharger les données de test et téléchargez ce fichier xml). Après cette étape, lorsque vous prévisualisation une lettre normalement (non personnalisée), ces données XML sont utilisées dans la lettre. Vous pouvez également cliquer sur Personnalisé et télécharger ce fichier XML.
 
 ## Exemples {#samples}
 
@@ -296,12 +303,12 @@ Le tableau suivant récapitule les attributs communs liés à un DDE :
   </tr>
   <tr>
    <td>Clé</td>
-   <td>Booléen  </td>
+   <td>Booléen</td>
    <td>Champ de valeur booléenne pour indiquer si un DDE est un élément clé.</td>
   </tr>
   <tr>
    <td>Calculé</td>
-   <td>Booléen  </td>
+   <td>Booléen</td>
    <td>Champ de valeur booléenne pour indiquer si un DDE est calculé. Une valeur de DDE calculée est une fonction d’autres valeurs de DDE. Par défaut, les expressions du langage  (Expression Language) JSP sont prises en charge.</td>
   </tr>
   <tr>
@@ -321,7 +328,7 @@ Le tableau suivant récapitule les attributs communs liés à un DDE :
   </tr>
   <tr>
    <td>Requis</td>
-   <td>Booléen  </td>
+   <td>Booléen</td>
    <td>Le drapeau indique que la source des données d’instance correspondant au dictionnaire de données doit contenir la valeur de ce DDE spécifique.</td>
   </tr>
   <tr>
@@ -404,7 +411,7 @@ L’exportation d’un schéma XSD nécessite un mappage de données spécifique
 
 ## Téléchargement d’un fichier de données d’exemple d’un dictionnaire de données {#download-a-sample-data-file-from-a-data-dictionary}
 
-Une fois que vous avez créé un dictionnaire de données, vous pouvez le télécharger en tant qu’exemple de fichier de données XML pour y saisir du texte.
+Une fois que vous avez créé un dictionnaire de données, vous pouvez le télécharger en tant que fichier de données d’exemple XML pour y faire des entrées de texte.
 
 1. In the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
 1. Sélectionnez **Télécharger l’exemple de données XML**.
@@ -420,10 +427,10 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à vos 
 
 1. On the Data Dictionaries page, tap **Select** and then tap a data dictionary to select it.
 1. Tap **Download Localization Data**.
-1. Tap **OK** in the alert. Correspondence Management télécharge un fichier zip sur votre ordinateur sous le nom DataDictionary-&lt;NomDuNom>.zip.
+1. Tap **OK** in the alert. Correspondence Management télécharge un fichier zip sur votre ordinateur sous le nom DataDictionary-&lt;DDname>.zip.
 1. Le fichier .zip contient un fichier .properties. Ce fichier définit le dictionnaire de données téléchargé. Le contenu du fichier de propriétés est semblable au contenu suivant :
 
-   ```
+   ```ini
    #Wed May 20 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=
    DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
@@ -437,7 +444,7 @@ Lorsque vous souhaitez envoyer la même lettre dans différentes langues à vos 
 
 1. Pour mettre à jour le fichier .properties dans une langue différente, mettez à jour le nom d’affichage et les valeurs de description dans le fichier. Créez plus d’instances du fichier pour chaque langue à localiser. Seuls le français, l’allemand, le japonais et l’anglais sont pris en charge.
 
-1. Enregistrez les différents fichiers de propriétés mis à jour sous les noms suivants :
+1. Enregistrez les différents fichiers de propriétés mis à jour avec les noms suivants :
 
    _fr_FR.properties (français)
 
