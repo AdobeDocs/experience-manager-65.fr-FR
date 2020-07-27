@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 57%
 
 ---
 
@@ -25,7 +28,7 @@ Pour éviter l’utilisation non autorisée de ces données, les entreprises peu
 
 To enable the watermark in preview PDF, select the **[!UICONTROL Apply Watermark]** During Preview option in **[!UICONTROL Correspondence Management Configurations]** at https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
-![default-watermark](assets/default-watermark.png)
+![filigrane par défaut](assets/default-watermark.png)
 
 Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’apparence du filigrane :
 
@@ -48,7 +51,7 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
 
       >[!NOTE]
       >
-      >N&#39;apportez pas de modifications dans la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N&#39;apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
       >
       >    
       >    
@@ -64,7 +67,7 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
 1. Copy and paste the ddx file from &quot;/libs/fd/cm/configFiles/previewwatermark&quot; folder to &quot;/apps/fd/cm/configFiles/previewwatermark&quot; folder and click **[!UICONTROL Save All]**.
 1. Apportez les modifications souhaitées dans le fichier ddx sous /apps/fd/cm/configFiles/previewwatermark/.
 
-   ```
+   ```xml
    <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
     <PDF result="output.pdf">
      <PDF source="input.pdf"/>
