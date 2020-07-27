@@ -9,26 +9,29 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 62%
 
 ---
 
 
 # Création d’un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
 
-A profile is a resource node in [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu de formulaires HTML5 pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
+A profile is a resource node in [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 forms pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
 
-Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve dans /libs/xfaforms/.
+Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve dans /libs/xfaforms/profil.
 
-Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu  appelle le service Forms OSGi pour générer le formulaire demandé.
+Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi pour effectuer le rendu du formulaire demandé.
 
-Le script de  est dans html.jsp et html.POST.jsp pour les requêtes GET et POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N’apportez aucune modification statique, la mise à jour du correctif écrase ces modifications.
+Le script de profil est dans html.jsp et html.POST.jsp pour les requêtes GET et POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N&#39;apportez aucune modification statique, la mise à jour du correctif écrase ces modifications.
 
 Un profil comporte divers modules : les modules formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp, et footer.jsp.
 
 ## formRuntime.jsp {#formruntime-jsp-br}
 
-Les modules formRuntime.jsp contiennent des références aux bibliothèques clientes. Il décrit également des méthodes pour extraire des informations sur les paramètre régionaux dans la demande et inclure les messages dans la demande. Vous pouvez inclure vos propres libs ou styles JavaScript personnalisés dans le fichier formRuntime.jsp.
+Les modules formRuntime.jsp contiennent des références aux bibliothèques clientes. Il décrit également des méthodes pour extraire des informations sur les paramètre régionaux dans la demande et inclure les messages dans la demande. Vous pouvez inclure des libs ou des styles JavaScript personnalisés dans le fichier formRuntime.jsp.
 
 ## config.jsp {#config-jsp}
 
@@ -40,7 +43,7 @@ Le fichier toolbar.jsp contient le code permettant de créer une barre d’outil
 
 ## formBody.jsp {#formbody-jsp}
 
-Le module formBody.jsp est destiné à la représentation HTML du formulaire XFA.
+Le module formBody.jsp sert à la représentation HTML du formulaire XFA.
 
 ## nav_footer.jsp {#nav-footer-jsp}
 
@@ -48,11 +51,11 @@ HTML5 forms commence par générer uniquement la première page du formulaire. L
 
 ## footer.jsp {#footer-jsp}
 
-Le module footer.jsp est vide. Il vous permet d’ajouter des scripts utilisés uniquement pour l’interaction de l’utilisateur.
+Le module footer.jsp est vide. Il vous permet d’ajouter des scripts qui ne sont utilisés que pour les interactions utilisateur.
 
 ## Création de profils personnalisés {#creating-custom-profiles}
 
-Pour créer un  personnalisé, procédez comme suit :
+Pour créer un profil personnalisé, procédez comme suit :
 
 ### Créez un nœud de profil {#create-profile-node}
 
@@ -78,6 +81,6 @@ Après la création d’un profil personnalisé, ajoutez les informations de ren
 1. Paste **html.jsp** node into the `/apps/hrform/demo` folder created above with same name **html.jsp** and click **Save**.
 1. Si vous rencontrez d’autres composants du script de profil, suivez les étapes 1 à 6 pour copier les composants dans le dossier /apps/hrform/demo.
 
-1. Pour vérifier que le est créé, ouvrez l’URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
+1. Pour vérifier que le profil est créé, ouvrez l’URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 Pour vérifier les formulaires, [Importez les formulaires](/help/forms/using/get-xdp-pdf-documents-aem.md) de votre système de fichiers local vers AEM Forms et [affichez l’aperçu du formulaire](/help/forms/using/previewing-forms.md) sur l’instance d’auteur du serveur AEM.
