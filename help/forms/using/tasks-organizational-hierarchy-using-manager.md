@@ -11,7 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 79%
 
 ---
 
@@ -20,20 +23,20 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Dans l’espace de travail AEM Forms, les gestionnaires peuvent désormais accéder à toutes les tâches assignées aux personnes au sein de leur hiérarchie (rapports directs ou indirects) et y effectuer diverses opérations. Les tâches sont accessibles par l’intermédiaire de l’onglet Tâches de l’espace de travail AEM Forms. Les actions prises en charge pour les tâches de rapports directs sont :
 
-**Transférez** un  de rapport direct à un utilisateur.
+**Transférer** une tâche du rapport direct à tout utilisateur.
 
-**Demander** un  d&#39;un rapport direct.
+**Demander** une tâche d&#39;un rapport direct.
 
-**Demander et ouvrir** Demander un  d&#39;un rapport direct et l&#39;ouvrir automatiquement dans le Tâches du gestionnaire.
+**Demander et ouvrir** Demander une tâche d&#39;un rapport direct et l&#39;ouvrir automatiquement dans la liste Tâches du gestionnaire.
 
-**Rejeter** Rejeter un  transféré vers un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
+**Rejeter** Rejeter une tâche envoyée à un rapport direct par un autre utilisateur. Cette option est disponible pour les tâches transférées vers un rapport direct par d’autres utilisateurs.
 
 AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesquelles cet utilisateur dispose d’un contrôle d’accès (ACL). Ceci permet de garantir que l’utilisateur ne puisse extraire que les tâches pour lesquelles il dispose de droits d’accès. En utilisant des services Web et des implémentations tiers pour définir la hiérarchie, une organisation peut personnaliser la définition des rapports directs et gestionnaires selon ses besoins.
 
 1. Créez un DSC. For more information, see &#39;Developing Components for AEM Forms&#39; topic in [Programming with AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guide.
 1. Dans le DSC, définissez une nouvelle SPI pour la gestion de hiérarchie afin de définir les rapports directs et la hiérarchie des utilisateurs d’AEM Forms. Voici un exemple de fragment de code Java™ :
 
-   ```as3
+   ```java
    public class MyHierarchyMgmtService
    {
         /*
@@ -68,7 +71,7 @@ AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesque
 
 1. Créez un fichier component.xml. Veuillez vous assurer que spec-id est identique à l’extrait de code ci-dessous. Voici un exemple de fragment de code que vous pouvez réutiliser.
 
-   ```as3
+   ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">
        <component-id>com.adobe.sample.SampleDSC</component-id>
        <version>1.1</version>
@@ -115,6 +118,6 @@ AEM Forms restreint l’accès d’un utilisateur aux seules tâches pour lesque
 
 L’écran suivant illustre l’accès aux tâches de rapports directs et les actions disponibles.
 
-![cu_manager_](assets/cu_manager_view.png)
+![cu_manager_vue](assets/cu_manager_view.png)
 
 Accès aux tâches de rapports directs et actions à effectuer sur les tâches
