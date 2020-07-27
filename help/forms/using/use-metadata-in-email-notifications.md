@@ -8,7 +8,10 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +26,7 @@ Vous pouvez utiliser des métadonnées dans un modèle de courrier électronique
 
 Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle de courrier électronique et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification électronique est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title}  ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
 
-```xml
+```html
 subject=Task Assigned - ${workitem_title}
 
 message=<html><body>\n\
@@ -153,7 +156,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 ### Utilisation de ECMAScript pour ajouter des métadonnées personnalisées  {#use-ecmascript-to-add-custom-metadata}
 
-[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
+[ECMAScript](htthttps://fr.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
 
 1. Connectez-vous à CRX DE à l’aide d’un compte administratif. The URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
@@ -163,7 +166,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 1. Ajoutez le code dans le fichier.ecma comportant une logique pour générer des métadonnées personnalisées dans les paires clé-valeur. Par exemple, le code ECMAScript suivant produit des métadonnées personnalisées pour une police d’assurance :
 
-   ```
+   ```javascript
    function getUserMetaData()  {
        //Commented lines below provide an overview on how to set user metadata in map and return it.
        var HashMap = Packages.java.util.HashMap;
@@ -196,7 +199,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 Vous pouvez utiliser l’interface Java WorkitemUserMetadataService pour ajouter des métadonnées personnalisées aux modèles de courrier électronique. Vous pouvez créer un bundle OSGi qui utilise l’interface Java WorkitemUserMetadataService et le déployer sur le serveur AEM Forms. Il rend les métadonnées disponibles pour la sélection à l’étape Affecter une tâche.
 
-Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [SDK client AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
+Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [SDK client AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) et [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
 1. Ouvrez l’IDE Eclipse. Accédez à Fichier > Nouveau projet.
 
@@ -205,10 +208,6 @@ Pour créer un bundle OSGi avec une interface Java, ajoutez les fichiers .jar [S
 1. Sur le nouveau projet Maven, conservez les valeurs par défaut, puis cliquez sur Suivant. Sélectionnez un archétype et cliquez sur Suivant. Par exemple, maven-archetype-quickstart. Spécifiez l’ID du groupe, l’ID de l’artefact, la version et le package pour le projet et cliquez sur Terminer. La du projet est créée.
 
 1. Ouvrez le fichier pom.xml pour modifier et remplacer tout le contenu du fichier par ce qui suit :
-
-   ```
-   
-   ```
 
 1. Ajoutez le code source qui utilise l’interface Java WorkitemUserMetadataService pour ajouter des métadonnées personnalisées aux modèles de courrier électronique. Un exemple de code est indiqué ci-dessous :
 
