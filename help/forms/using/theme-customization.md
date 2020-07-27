@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 58%
 
 ---
 
@@ -25,7 +28,7 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 ## Étapes {#steps}
 
-1. Ouvrez votre projet.
+1. Ouvrez le projet.
 
    * For iOS, open `Capture.xcodeproj` in Xcode
    * Pour Android, ouvrez le projet Android dans Eclipse.
@@ -40,7 +43,7 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 1. Open the `template.html` file for editing.
 1. Recherchez la chaîne suivante :
 
-   ```
+   ```jsp
    <%if ( (task.description !== "") && (task.description !== null) && (typeof task.description !== null) && (typeof task.description !== 'undefined') ) {%>
                   <div class="description_details">
                     <%= task.description %>
@@ -52,7 +55,7 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 1. Rercherchez le code suivant dans le fichier `template.html` :
 
-   ```
+   ```jsp
    <ul id="task_menu_list">
                                    <li class="approve" title="<%= task.availableCommands.directCommands[0]%>" data-routename="<%= task.availableCommands.directCommands[0]%>">
                                        <%= task.availableCommands.directCommands[0]%>
@@ -64,7 +67,7 @@ Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’
 
 1. Mettez la ligne suivante en commentaire et enregistrez le fichier.
 
-   ```
+   ```jsp
    task.availableCommands.directCommands[1]%>">
    <%= task.availableCommands.directCommands[1]%>
    </li>
