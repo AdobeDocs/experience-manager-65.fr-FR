@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 93%
@@ -33,7 +33,7 @@ Bien que les propriétés soient explicites, les plus importantes sont les suiva
 
 * **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que LiveCycle et AEM communiquent via https, début AEM avec la JVM suivante
 
-   ```
+   ```java
    argument
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
@@ -118,7 +118,7 @@ Pour démarrer un service exposé à partir d’AEM, procédez comme suit :
 
    Le fragment de code ci-dessus démarre l’API createPDF de GeneratePdfServiceClient pour convertir un document au format PDF. Vous pouvez effectuer le même appel dans un JSP en utilisant le code suivant. La principale différence est que le code suivant utilise Sling ScriptHelper pour accéder à GeneratePdfServiceClient.
 
-   ```java
+   ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>
    <%@ page import="com.adobe.idp.Document" %>
