@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 63%
 
 ---
 
@@ -32,7 +35,7 @@ Pour personnaliser la page Détails de la tâche :
 
    Par exemple, pour ajouter des informations sur la sélection d’itinéraire requise dans la page Détails de la tâche, vous pouvez ajouter la paire clé-valeur suivante dans le bloc de tâche :
 
-   ```
+   ```json
    "todo" : {
        .
        .
@@ -53,9 +56,9 @@ Pour personnaliser la page Détails de la tâche :
    >
    >Ajoutez les paires clé-valeur correspondantes pour toutes les langues prises en charge.
 
-1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` vers `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` dans `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Ajouter les nouvelles informations à `/apps/ws/js/runtime/templates/taskdetails.html`. Par exemple :
+   Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/taskdetails.html`. Par exemple :
 
    ```css
    <div class="detailsContainer">
