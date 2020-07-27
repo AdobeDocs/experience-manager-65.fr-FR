@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5f470768fd3368e3b2118333b8a84f8331e7fa2e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 63%
 
 ---
 
@@ -88,7 +91,7 @@ qtip
    }
    ```
 
-   ```
+   ```javascript
    /** function for toggling the navigators **/
    var toggleNav = function () {
    
@@ -116,7 +119,7 @@ qtip
 
    Par ailleurs, mettez à jour les chemins d’accès aux scripts inclus dans les fichiers .jsp. For example, update the `customPanelLayout.jsp` file as follows:
 
-   ```
+   ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -145,7 +148,7 @@ qtip
 
    Le `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` fichier :
 
-   ```
+   ```html
    <%-- jsp governing the navigation part --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -172,9 +175,9 @@ qtip
    </ul>
    ```
 
-   Mise à jour `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
+   La mise à jour `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
-   ```
+   ```html
    <%-- jsp governing the panel content --%>
    
    <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -201,7 +204,7 @@ qtip
 
 1. Ouvrez un formulaire adaptative en mode création. La disposition de panneau que vous avez définie est ajoutée à la liste pour la configuration des dispositions de panneau.
 
-   ![La disposition Panneau personnalisé s’affiche dans la liste](assets/auth-layt.png) de disposition du panneau ![Capture d’écran du formulaire adaptatif, à l’aide de la disposition](assets/s1.png) ![de panneau personnalisée Capture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
+   ![La disposition Panneau personnalisé s’affiche dans la liste](assets/auth-layt.png) de disposition du panneau Capture d’ ![écran du formulaire adaptatif, à l’aide de la disposition](assets/s1.png) du panneau personnalisé ![Capture d’écran montrant la fonctionnalité de basculement de la disposition personnalisée](assets/s2.png)
 
 Exemple de ZIP pour une disposition de panneau personnalisée et un formulaire adaptatif l’utilisant.
 
