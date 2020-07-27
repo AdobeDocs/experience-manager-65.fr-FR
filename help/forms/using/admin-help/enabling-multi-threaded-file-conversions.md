@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 100%
 
 ---
 
@@ -59,7 +62,7 @@ Si vous exécutez OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Window
 1. Vous allez maintenant apporter des modifications au fichier /etc/sudoers. L’autorisation par défaut pour ce fichier est 440. Redéfinissez l’autorisation en écriture pour ce fichier.
 1. Ajoutez des entrées pour les utilisateurs supplémentaires (autres que l’administrateur exécutant le serveur Forms ) dans le fichier /etc/sudoers. Par exemple, si vous exécutez AEM Forms en utilisant le nom d’utilisateur « Icadm » et un serveur appelé « myhost » et que vous souhaitez incarner les utilisateurs user1 et user2, ajoutez les entrées suivantes dans le fichier /etc/sudoers :
 
-   ```as3
+   ```shell
     lcadm myhost=(user1) NOPASSWD: ALL
     lcadm myhost=(user2) NOPASSWD: ALL
    ```
@@ -72,7 +75,7 @@ Si vous exécutez OpenOffice, Microsoft Word ou Microsoft PowerPoint sous Window
 
 1. Toujours dans le fichier /etc/sudoers, recherchez cette ligne et modifiez-la en ajoutant un signe dièse (#) au début de la ligne :
 
-   ```as3
+   ```shell
    Defaults requiretty
    ```
 
