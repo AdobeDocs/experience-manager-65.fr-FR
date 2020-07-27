@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6355'
+ht-degree: 86%
 
 ---
 
@@ -99,9 +102,9 @@ Les signatures numériques apparaissent dans les champs de signature qui sont de
  </tbody>
 </table>
 
-Voici un exemple de code Java qui ajoute un champ de signature invisible à un PDF.
+Voici un exemple de code Java qui ajoute un champ de signature invisible à un document PDF.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -240,7 +243,7 @@ Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’AP
 
 **Syntaxe**:
 
-```
+```java
 public Document addSignatureField(Document inDoc,
  String signatureFieldName,
  Integer pageNo,
@@ -652,7 +655,7 @@ Vous pouvez récupérer les noms de tous les champs de signature d’un document
 
 L’exemple de code Java suivant récupère les informations de signature du champ de signature donné situé dans un document PDF.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -866,7 +869,7 @@ Vous pouvez modifier les champs de signature d’un document PDF. La modificatio
 
 Un dictionnaire de verrouillage de champ spécifie la liste des champs qui sont verrouillés lorsque le champ de signature est signé. Un champ verrouillé empêche les utilisateurs de modifier le champ. Un dictionnaire de valeur de départ contient des informations contraignantes utilisées au moment de l’apposition de la signature. Par exemple, vous pouvez modifier les autorisations qui contrôlent les actions pouvant se produire sans invalider la signature.
 
-En modifiant un champ de signature existant, vous pouvez modifier le PDF pour refléter l’évolution des besoins de l’entreprise. Par exemple, une nouvelle exigence professionnelle requiert le verrouillage de tous les champs de  de une fois le  de signé.
+En modifiant un champ de signature existant, vous pouvez modifier le document PDF en fonction de l’évolution des besoins de l’entreprise. Par exemple, une nouvelle exigence professionnelle requiert le verrouillage de tous les champs de document après la signature du document.
 
 **Syntaxe**: `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
@@ -1031,13 +1034,13 @@ public class ModifySignatureField {
 
 Vous pouvez définir un document PDF en le certifiant avec un type de signature particulier appelé signature certifiée. Une signature certifiée se différencie d’une signature numérique de plusieurs manières :
 
-* Elle doit être la première signature appliquée au document PDF. En d’autres termes, lorsque la signature certifiée est appliquée, les autres champs de signature du doivent être non signés. Une seule signature certifiée est autorisée dans un document PDF. Pour signer et certifier un document PDF, certifiez-le avant de le signer. Après avoir certifié un document PDF, vous pouvez signer numériquement les champs de signature supplémentaires.
-* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, la signature certifiée est non valide. En outre, Acrobat génère un avertissement lorsqu’un utilisateur ouvre le . (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
+* Elle doit être la première signature appliquée au document PDF. En d’autres termes, lorsque la signature certifiée est appliquée, les autres champs de signature du document doivent être non signés. Une seule signature certifiée est autorisée dans un document PDF. Pour signer et certifier un document PDF, certifiez-le avant de le signer. Après avoir certifié un document PDF, vous pouvez signer numériquement les champs de signature supplémentaires.
+* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, la signature certifiée est non valide. En outre, Acrobat génère un avertissement lorsqu’un utilisateur ouvre le document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
 * Au moment de la signature, les différents types de contenus du document susceptibles de rendre le document ambigu ou trompeur sont analysés. Par exemple, une annotation peut assombrir du texte sur une page qui est essentiel pour comprendre ce qui est certifié. Une explication (attestation légale) peut être fournie pour un type de contenu.
 
 **Syntaxe**:
 
-```
+```java
 secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
  SignatureOptions signatureOptions, ReaderExtensionOptions readerExtensionOptions, UnlockOptions unlockOptions)
 ```
@@ -1359,7 +1362,7 @@ En outre, les listes de révocation des certificats (CRL) fournissent des inform
 
 >[!NOTE]
 >
->Avant de chiffrer un PDF avec un certificat, vous devez vous assurer d’ajouter le certificat au Trust Store d’AEM.
+>Avant de chiffrer un document PDF avec un certificat, vous devez vous assurer d’ajouter le certificat au Trust Store d’AEM.
 
 **Application de droits d’utilisation aux documents PDF**
 
@@ -1379,7 +1382,7 @@ La clé publique est stockée dans le certificat de l’utilisateur, celle-ci do
 
 >[!NOTE]
 >
->Avant de pouvoir signer numériquement un  PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
+>Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
 
 >[!NOTE]
 >
@@ -1407,11 +1410,11 @@ Par exemple, une annotation peut assombrir du texte sur une page qui est essenti
 
 >[!NOTE]
 >
->Avant de pouvoir signer numériquement un  PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
+>Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
 
 **Syntaxe**:
 
-```
+```java
 secureDocument(Document inDoc,
  EncryptionOptions encryptionOptions,
  SignatureOptions signatureOptions,
@@ -1452,7 +1455,7 @@ secureDocument(Document inDoc,
 
 **Exemple 1** : Cet exemple est utilisé pour effectuer le chiffrement avec mot de passe, certifier un champ de signature et doter le document PDF d’extensions Reader.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -2075,17 +2078,17 @@ public class PassEncryptSignExtend {
 }
 ```
 
-Si le message d’erreur suivant s’affiche pendant que l’utilisateur étend un PDF :
+Si le message d’erreur suivant s’affiche pendant que l’utilisateur étend un document PDF :
 
-```xml
+```javascript
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
-Cela signifie que le service Reader Extension n’est pas en mesure d’exécuter les scripts JavaScript utilisés dans le  dans le délai d’expiration défini.
+Cela signifie que le service Reader Extension n’est pas en mesure d’exécuter les scripts JavaScript utilisés dans le document dans le délai d’expiration défini.
 
-Gérez l’intervalle de temporisation défini pour les scripts JavaScript dans le PDF à l’aide de l’ :
+Gérez l’intervalle de dépassement de délai défini pour les scripts JavaScript dans le document PDF à l’aide des éléments suivants :
 
-```xml
+```javascript
 ReaderExtensionsOptionSpec optionSpec = new ReaderExtensionsOptionSpec(usageRights, message);
 optionSpec.setJsScriptExecutionTimeoutInterval(100);
 ```
@@ -2094,7 +2097,7 @@ où 100 fait référence à l’intervalle de temporisation défini pour l’ex�
 
 ### Obtention des droits d’utilisation d’identification {#getting-credential-usage-rights}
 
-Pour récupérer les informations de droits d’utilisation des informations d’identification spécifiées par l’alias `credentialAlias` donné, appelez cette API depuis l’API `SecureDocument`
+Pour récupérer les informations des droits d’utilisation des informations d’identification spécifiées par l’alias `credentialAlias``SecureDocument` donné, appelez cette API depuis l’API 
 
 **Syntaxe**: `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
@@ -2748,7 +2751,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Vérification de plusieurs signatures numériques {#verifying-multiple-digital-signatures}
 
-AEM vous permet de vérifier les signatures numériques dans les documents PDF. Un PDF peut contenir plusieurs signatures numériques s’il est soumis à un processus d’entreprise nécessitant des signatures de plusieurs signataires. Par exemple, une transaction financière nécessite des signatures du responsable des prêts et du cadre. Vous pouvez utiliser l’API du service Signature pour vérifier toutes les signatures du document PDF. Lors de la vérification de plusieurs signatures numériques, vous pouvez vérifier l’état et les propriétés de chaque signature. Avant de faire confiance à une signature numérique, Adobe vous recommande de la vérifier.
+AEM vous permet de vérifier les signatures numériques dans les documents PDF. Un document PDF peut contenir plusieurs signatures numériques s’il est soumis à un processus d’entreprise qui requiert des signatures de plusieurs signataires. Par exemple, une transaction financière nécessite des signatures du responsable des prêts et du cadre. Vous pouvez utiliser l’API du service Signature pour vérifier toutes les signatures du document PDF. Lors de la vérification de plusieurs signatures numériques, vous pouvez vérifier l’état et les propriétés de chaque signature. Avant de faire confiance à une signature numérique, Adobe vous recommande de la vérifier.
 
 **Syntaxe**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -3192,7 +3195,7 @@ Vous pouvez récupérer les noms de tous les champs de signature d’un document
 
 L’exemple de code Java suivant récupère le champ de signature utilisé pour certifier le document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -3402,7 +3405,7 @@ public class GetPDFEncryption {
 
 ### Suppression d’un chiffrement avec mot de passe d’un PDF {#removing-password-encryption-from-pdf}
 
-Supprimez le chiffrement avec mot de passe d’un PDF pour permettre aux utilisateurs d’ouvrir le PDF dans Adobe Reader ou Acrobat sans avoir à spécifier de mot de passe. Une fois le chiffrement avec mot de passe supprimé du document PDF, le document n’est plus sécurisé.
+Supprimez le chiffrement avec mot de passe d’un document PDF pour permettre aux utilisateurs d’ouvrir le document PDF dans Adobe Reader ou Acrobat sans avoir à spécifier de mot de passe. Une fois le chiffrement avec mot de passe supprimé du document PDF, le document n’est plus sécurisé.
 
 **Syntaxe**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3428,75 +3431,75 @@ Supprimez le chiffrement avec mot de passe d’un PDF pour permettre aux utilisa
 L’exemple de code suivant supprime un chiffrement avec mot de passe d’un document PDF.
 
 ```java
-package com.adobe.docassurance.samples;
+    package com.adobe.docassurance.samples;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.apache.sling.jcr.api.SlingRepository;
+    import java.io.File;
+    import java.io.FileNotFoundException;
+    import org.apache.felix.scr.annotations.Component;
+    import org.apache.felix.scr.annotations.Reference;
+    import org.apache.felix.scr.annotations.Service;
+    import org.apache.sling.jcr.api.SlingRepository;
 
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.docassurance.client.api.DocAssuranceService;
+    import com.adobe.aemfd.docmanager.Document;
+    import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 
-/**
- * The following Java code example removes password-based encryption from a PDF document.
- * The master password value used to remove password-based encryption is PermissionPassword
- *
- */
-@Component(enabled=true,immediate=true)
-@Service(value=RemovePasswordEncryption.class)
-public class RemovePasswordEncryption {
+    /**
+    * The following Java code example removes password-based encryption from a PDF document.
+    * The master password value used to remove password-based encryption is PermissionPassword
+    *
+    */
+    @Component(enabled=true,immediate=true)
+    @Service(value=RemovePasswordEncryption.class)
+    public class RemovePasswordEncryption {
 
- // Create reference for DocAssuranceService
- @Reference
- private DocAssuranceService docAssuranceService;
+    // Create reference for DocAssuranceService
+    @Reference
+    private DocAssuranceService docAssuranceService;
 
- @Reference
-    private SlingRepository slingRepository;
+    @Reference
+        private SlingRepository slingRepository;
 
- /**
-  * The below sample code demonstrates removing password encryption from a PDF using AEM EncryptionService.
-  *
-  * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
-  *
-  * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"
-  * @throws Exception
-  */
- public void removePasswordEncryption(String inputFile, String outputFile) throws Exception {
+    /**
+    * The below sample code demonstrates removing password encryption from a PDF using AEM EncryptionService.
+    *
+    * @param inFilePath  path of the input PDF File
+    * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+    *
+    * @param outFilePath path where the output PDF File needs to be saved
+    * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"
+    * @throws Exception
+    */
+    public void removePasswordEncryption(String inputFile, String outputFile) throws Exception {
 
-  File inFile = new File(inputFile);
-  Document inDoc = new Document(inFile);
+    File inFile = new File(inputFile);
+    Document inDoc = new Document(inFile);
 
-  File outFile = new File(outputFile);
-  Document outDoc = null;
+    File outFile = new File(outputFile);
+    Document outDoc = null;
 
-     try{
+        try{
 
-      String password = "PermissionPassword"; //master password with which the pdf was encrypted
-                //in case if the pdf is encrypted only with user password, specify the
-                //user password
-      //Remove password-based encryption from the PDF document
-      outDoc = docAssuranceService.removePDFPasswordSecurity(inDoc,password);
+        String password = "PermissionPassword"; //master password with which the pdf was encrypted
+                    //in case if the pdf is encrypted only with user password, specify the
+                    //user password
+        //Remove password-based encryption from the PDF document
+        outDoc = docAssuranceService.removePDFPasswordSecurity(inDoc,password);
 
-     }finally{
-                /**
-                 * always close the PDFDocument object after your processing is done.
-                 */
-                if(inDoc != null){
-                    inDoc.close();
-                }
+        }finally{
+                    /**
+                    * always close the PDFDocument object after your processing is done.
+                    */
+                    if(inDoc != null){
+                        inDoc.close();
+                    }
 
-        }
+            }
 
-        outDoc.copyToFile(outFile);
+            outDoc.copyToFile(outFile);
 
- }
+    }
 
-}
+    }
 ```
 
 ### Suppression d’un chiffrement de certificat {#removing-certificate-encryption}
@@ -3531,94 +3534,94 @@ Vous pouvez supprimer le chiffrement avec certificat d’un document PDF afin qu
 L’exemple de code Java suivant supprime un chiffrement avec certificat d’un document PDF.
 
 ```java
-package com.adobe.docassurance.samples;
+    package com.adobe.docassurance.samples;
 
-import java.io.File;
+    import java.io.File;
 
-import javax.jcr.Session;
+    import javax.jcr.Session;
 
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.apache.sling.api.resource.ResourceResolver;
-import org.apache.sling.jcr.api.SlingRepository;
-import org.apache.sling.jcr.resource.JcrResourceResolverFactory;
+    import org.apache.felix.scr.annotations.Component;
+    import org.apache.felix.scr.annotations.Reference;
+    import org.apache.felix.scr.annotations.Service;
+    import org.apache.sling.api.resource.ResourceResolver;
+    import org.apache.sling.jcr.api.SlingRepository;
+    import org.apache.sling.jcr.resource.JcrResourceResolverFactory;
 
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.docassurance.client.api.DocAssuranceService;
+    import com.adobe.aemfd.docmanager.Document;
+    import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 
-/**
- * The following Java code example removes certificate-based encryption from a PDF document
- *
- */
-@Component(enabled=true,immediate=true)
-@Service(value=RemovePKIEncryption.class)
-public class RemovePKIEncryption {
-
- // Create reference for docAssuranceServiceInterface
- @Reference
- private DocAssuranceService docAssuranceService;
-
- @Reference
-    private SlingRepository slingRepository;
-
- @Reference
-    private JcrResourceResolverFactory jcrResourceResolverFactory ;
-
- /**
-  * The below sample code demonstrates encrypting PDF with Password using AEM docAssuranceService.
-  *
-  * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
-  *
-  * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"
-  *
-  * @throws Exception
-  */
- public void removePKIEncryption(String inputFile, String outputFile) throws Exception {
-
-  File inFile = new File(inputFile);
-  Document inDoc = new Document(inFile);
-
-  File outFile = new File(outputFile);
-  Document outDoc = null;
-
-        Session adminSession = null;
-        ResourceResolver resourceResolver = null;
-        try{
-    adminSession = slingRepository.loginAdministrative(null);
-    resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-
-    //Remove certificate-based encryption from the PDF document
     /**
-     * Here the alias("encryption") of the private credential stored in the keystore of the
-     * user has been provided with the user's resource resolver
-     */
-    outDoc = docAssuranceService.removePDFCertificateSecurity(inDoc, "encryption",resourceResolver);
+    * The following Java code example removes certificate-based encryption from a PDF document
+    *
+    */
+    @Component(enabled=true,immediate=true)
+    @Service(value=RemovePKIEncryption.class)
+    public class RemovePKIEncryption {
 
-        }catch(Exception e){
+    // Create reference for docAssuranceServiceInterface
+    @Reference
+    private DocAssuranceService docAssuranceService;
 
-         // TODO Auto-generated catch block
-        }finally{
-            /**
-             * always close the PDFDocument object after your processing is done.
-             */
-            if(inDoc != null){
-                inDoc.close();
-            }
-            if(adminSession != null && adminSession.isLive()){
-                if(resourceResolver != null){
-                    resourceResolver.close();
+    @Reference
+        private SlingRepository slingRepository;
+
+    @Reference
+        private JcrResourceResolverFactory jcrResourceResolverFactory ;
+
+    /**
+    * The below sample code demonstrates encrypting PDF with Password using AEM docAssuranceService.
+    *
+    * @param inFilePath  path of the input PDF File
+    * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+    *
+    * @param outFilePath path where the output PDF File needs to be saved
+    * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"
+    *
+    * @throws Exception
+    */
+    public void removePKIEncryption(String inputFile, String outputFile) throws Exception {
+
+    File inFile = new File(inputFile);
+    Document inDoc = new Document(inFile);
+
+    File outFile = new File(outputFile);
+    Document outDoc = null;
+
+            Session adminSession = null;
+            ResourceResolver resourceResolver = null;
+            try{
+        adminSession = slingRepository.loginAdministrative(null);
+        resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
+
+        //Remove certificate-based encryption from the PDF document
+        /**
+        * Here the alias("encryption") of the private credential stored in the keystore of the
+        * user has been provided with the user's resource resolver
+        */
+        outDoc = docAssuranceService.removePDFCertificateSecurity(inDoc, "encryption",resourceResolver);
+
+            }catch(Exception e){
+
+            // TODO Auto-generated catch block
+            }finally{
+                /**
+                * always close the PDFDocument object after your processing is done.
+                */
+                if(inDoc != null){
+                    inDoc.close();
                 }
-                adminSession.logout();
+                if(adminSession != null && adminSession.isLive()){
+                    if(resourceResolver != null){
+                        resourceResolver.close();
+                    }
+                    adminSession.logout();
+                }
             }
-        }
 
-        outDoc.copyToFile(outFile);
- }
+            outDoc.copyToFile(outFile);
+    }
 
- }
+    }
 ```
 
 ## Service Output {#output-service}
@@ -3629,7 +3632,7 @@ Le service Output fournit des API pour générer un fichier XDP aux formats .pdf
 
 * **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) :**génère un document PDF en fusionnant une conception de formulaire avec les données stockées dans une application.
 * **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p) :**fusionne une conception de formulaire avec des données pour générer un document PDF. Vous pouvez également générer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Génère une sortie PCL, PostScript ou ZPL à partir d’une conception de formulaire et d’un fichier de données stockés sur un emplacement réseau, un système de fichiers local ou un emplacement HTTP sous forme de valeurs littérales.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Génère une sortie PCL, PostScript ou ZPL à partir d’une conception de formulaire et d’un fichier de données stockés sur un emplacement réseau, un système de fichiers local ou un emplacement HTTP en tant que valeurs littérales.
 
 * **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Génère une sortie PCL, PostScript et ZPL à partir d’une conception de formulaire et d’un fichier de données stockés dans une application.
 
@@ -3665,79 +3668,79 @@ L’API generatePDFOutput génère un document PDF en fusionnant une conception 
 L’exemple de code Java suivant génère un document PDF en fusionnant une conception de formulaire avec des données stockées dans un fichier XML.
 
 ```java
-@Reference private OutputService outputService;
+    @Reference private OutputService outputService;
 
-private File generatePDFOutput(String contentRoot,File inputXML,String templateStr,String acrobatVersion,String tagged,String linearized, String locale) {
+    private File generatePDFOutput(String contentRoot,File inputXML,String templateStr,String acrobatVersion,String tagged,String linearized, String locale) {
 
-String outputFolder="C:/Output";
+    String outputFolder="C:/Output";
 
-Document doc=null;
+    Document doc=null;
 
-try {
+    try {
 
-        PDFOutputOptions option = new PDFOutputOptions();         option.setContentRoot(contentRoot);         if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
+            PDFOutputOptions option = new PDFOutputOptions();         option.setContentRoot(contentRoot);         if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
 
-        {
+            {
 
-            option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
+                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
 
-        } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {
+            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {
 
-            option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
+                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
 
-        } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {             option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {             option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+
+            }
+
+            if (tagged.equalsIgnoreCase("true") ) {
+
+                option.setTaggedPDF(true );
+
+            }
+
+            if (linearized.equalsIgnoreCase("true") ) {
+
+                option.setTaggedPDF(true );
+
+            }
+
+            if(locale!=null)
+
+            {
+
+                option.setLocale(locale);
+
+            }
+
+            InputStream in = new FileInputStream(inputXML);
+
+            doc = outputService.generatePDFOutput(templateStr,new Document(in),option);         File toSave = new File(outputFolder+"Output.pdf");
+
+            doc.copyToFile(toSave);
+
+            return toSave;
+
+        } catch (OutputServiceException e) {
+
+            e.printStackTrace();
+
+        }catch (FileNotFoundException e) {
+
+            e.printStackTrace();
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }finally{
+
+                    doc.dispose();
 
         }
 
-        if (tagged.equalsIgnoreCase("true") ) {
-
-            option.setTaggedPDF(true );
-
-        }
-
-        if (linearized.equalsIgnoreCase("true") ) {
-
-            option.setTaggedPDF(true );
-
-        }
-
-        if(locale!=null)
-
-        {
-
-            option.setLocale(locale);
-
-        }
-
-        InputStream in = new FileInputStream(inputXML);
-
-        doc = outputService.generatePDFOutput(templateStr,new Document(in),option);         File toSave = new File(outputFolder+"Output.pdf");
-
-        doc.copyToFile(toSave);
-
-        return toSave;
-
-    } catch (OutputServiceException e) {
-
-         e.printStackTrace();
-
-    }catch (FileNotFoundException e) {
-
-         e.printStackTrace();
-
-    } catch (IOException e) {
-
-         e.printStackTrace();
-
-    }finally{
-
-                doc.dispose();
+        return null;
 
     }
-
-    return null;
-
-}
 ```
 
 ### generatePDFOutput {#generatepdfoutput-1}
@@ -3772,82 +3775,82 @@ L’API generatePDFOutput génère un document PDF en fusionnant une conception 
 L’exemple de code Java suivant génère un document PDF en fusionnant une conception de formulaire avec des données stockées dans un fichier XML.
 
 ```java
-@Reference private OutputService outputService;
+    @Reference private OutputService outputService;
 
-private File generatePDFOutput2(String contentRoot, File inputXML, File templateStr, String acrobatVersion, String tagged, String linearized, String locale) {
+    private File generatePDFOutput2(String contentRoot, File inputXML, File templateStr, String acrobatVersion, String tagged, String linearized, String locale) {
 
-String outputFolder="C:/Output";
+    String outputFolder="C:/Output";
 
-Document doc=null;
+    Document doc=null;
 
-     try {
+        try {
 
-            PDFOutputOptions option = new PDFOutputOptions();             option.setContentRoot(contentRoot);
-            if(locale!=null)
+                PDFOutputOptions option = new PDFOutputOptions();             option.setContentRoot(contentRoot);
+                if(locale!=null)
 
-            {
+                {
 
-                option.setLocale(locale);
+                    option.setLocale(locale);
 
-            }
+                }
 
-            if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
+                if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
 
-            {
+                {
 
-                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
+                    option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
 
-            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
+                } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
 
-            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+                } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
 
-            }
+                }
 
-            if (tagged.equalsIgnoreCase("true") ) {
+                if (tagged.equalsIgnoreCase("true") ) {
 
-                option.setTaggedPDF(true );
+                    option.setTaggedPDF(true );
 
-            }
+                }
 
-            if (linearized.equalsIgnoreCase("true") ) {
+                if (linearized.equalsIgnoreCase("true") ) {
 
-                option.setTaggedPDF(true );
+                    option.setTaggedPDF(true );
 
-            }
+                }
 
-            InputStream inputXMLStream = new FileInputStream(inputXML);
+                InputStream inputXMLStream = new FileInputStream(inputXML);
 
-            InputStream templateStream = new FileInputStream(templateStr);;
+                InputStream templateStream = new FileInputStream(templateStr);;
 
-            doc = outputService.generatePDFOutput(new Document(templateStream),new             Document(inputXMLStream),option);
+                doc = outputService.generatePDFOutput(new Document(templateStream),new             Document(inputXMLStream),option);
 
-                     File toSave = new File(outputFolder,"Output.pdf");
+                        File toSave = new File(outputFolder,"Output.pdf");
 
-                     doc.copyToFile(toSave);
+                        doc.copyToFile(toSave);
 
-                    return toSave;
+                        return toSave;
 
-                } catch (OutputServiceException e) {
+                    } catch (OutputServiceException e) {
 
-                         e.printStackTrace();
+                            e.printStackTrace();
 
-               }catch (FileNotFoundException e) {
+                }catch (FileNotFoundException e) {
 
-                          e.printStackTrace();
+                            e.printStackTrace();
 
-               } catch (IOException e) {
+                } catch (IOException e) {
 
-                          e.printStackTrace();
+                            e.printStackTrace();
 
-               }finally{
+                }finally{
 
-                            doc.dispose();
+                                doc.dispose();
 
-              }
+                }
 
-                return null;
+                    return null;
 
-}
+    }
 ```
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
@@ -4145,7 +4148,7 @@ Document doc=null;
 
 ### generatePrintedOutputBatch {#generateprintedoutputbatch}
 
-Génère un  de format PS, PCL et ZPL en fusionnant une conception de formulaire avec des données. Vous pouvez également créer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF. Utilisez l’API generatePrintedOutputBatch pour les conceptions de formulaire ou les données stockées sur un emplacement réseau, un système de fichiers local ou un emplacement HTTP comme des valeurs littérales.
+Génère un document de formats PS, PCL et ZPL en fusionnant une conception de formulaire avec des données. Vous pouvez également créer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF. Utilisez l’API generatePrintedOutputBatch pour les conceptions de formulaire ou les données stockées sur un emplacement réseau, un système de fichiers local ou un emplacement HTTP comme des valeurs littérales.
 
 **Syntaxe`:`**`BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
@@ -4455,10 +4458,10 @@ Le service PDF Generator fournit des API pour convertir des formats de fichier n
 Le service GeneratePDFService fournit des API pour convertir de nombreux formats de fichiers, tels que .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, (obsolète).swf, .jpg, .bmp, .tif, .png, .html et bien d’autres formats de fichier en PDF. Il fournit également des API pour exporter des PDF vers différents formats de fichiers et optimiser les fichiers PDF. Le service prend en charge les API suivantes :
 
 * **createPDF** : convertit un type de fichier pris en charge en document PDF. Il prend en charge les formats de fichier tels que Microsoft Word, Microsoft PowerPoint, Microsoft Excel et Microsoft Project. Outre les applications ci-dessus, tout type d’application générique tierce qui génère des PDF peut également être connecté à l’API.
-* **exportPDF** : convertit un document PDF en type de fichier pris en charge. Cette méthode accepte un PDF en entrée et exporte le contenu du PDF dans le format du type de fichier spécifié. Vous pouvez exporter un PDF dans Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 avec CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word ( doc, docx) Classeur Microsoft Excel( xlsx), Présentation Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a RVB), formats PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). Vous pouvez également spécifier les [profils de contrôle en amont personnalisés](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) pour les sorties PDF.
+* **exportPDF** : convertit un document PDF en type de fichier pris en charge. Cette méthode accepte un PDF en entrée et exporte le contenu du PDF dans le format du type de fichier spécifié. Vous pouvez exporter un document PDF dans Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 avec CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Microsoft Word Document( doc, docx) Microsoft Excel Workbook( xlsx), Microsoft PowerPoint Presentation( pptx), PNG( png), PostScript( ps), Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(s RGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). Vous pouvez également spécifier les [profils de contrôle en amont personnalisés](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) pour les sorties PDF.
 
 * **optimizePDF** : optimise le document PDF et convertit également un document PDF d’un type à l’autre. Cette méthode accepte un document PDF en entrée.
-* **htmlToPdf2**: permet de convertir une page HTML en  PDF. Cette méthode accepte l’URL de la page HTML en entrée.
+* **htmlToPdf2**: Convertit une page HTML en document PDF. Cette méthode accepte l’URL de la page HTML en entrée.
 
 >[!NOTE]
 >
@@ -4479,7 +4482,7 @@ Le service GeneratePDFService fournit des API pour convertir de nombreux formats
    <td><strong>✓</strong></td>
   </tr>
   <tr>
-   <td>htmlToPDF</td>
+   <td>htmlToPdf</td>
    <td><strong>✓</strong></td>
    <td><strong>✓</strong></td>
   </tr>
@@ -4493,7 +4496,7 @@ Le service GeneratePDFService fournit des API pour convertir de nombreux formats
    <td>✖</td>
   </tr>
   <tr>
-   <td>PDF OCR (PDF indexable)</td>
+   <td>OCR PDF (PDF interrogeable)</td>
    <td><strong>✓</strong></td>
    <td>✖</td>
   </tr>
@@ -4568,7 +4571,7 @@ Le service createPDF renvoie les exceptions suivantes :
   </tr>
   <tr>
    <td>xmpDoc </td>
-   <td>Le fichier contient des informations de métadonnées appliquées au  PDF généré. Ce paramètre est facultatif.<br /> </td>
+   <td>Le fichier contient des informations de métadonnées appliquées au Document PDF généré. Ce paramètre est facultatif.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4651,7 +4654,7 @@ Le service createPDF renvoie les exceptions suivantes :
 
 **Syntaxe:**
 
-```
+```java
 Map exportPDF(Document inputDoc, String inputFileName, String formatType, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
@@ -4744,7 +4747,7 @@ Le service createPDF renvoie les exceptions suivantes :
 
 **Syntaxe:**
 
-```
+```java
 OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
@@ -4834,7 +4837,7 @@ Le service htmlToPdf2 renvoie les exceptions suivantes :
 
 **Syntaxe:**
 
-```
+```java
 HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String securitySettingsName, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
@@ -4928,11 +4931,11 @@ Le service createPDF renvoie les exceptions suivantes :
 
 #### createPDF {#createpdf-1}
 
-Convertit les formats pris en charge en documents PDF. Cette méthode accepte les fichiers au format .ps, .eps et .prn en entrée. Vous pouvez appliquer des autorisations de sécurité, des paramètres de sortie et des informations de métadonnées spécifiques au PDF de sortie.
+Convertit les formats pris en charge en documents PDF. Cette méthode accepte les fichiers au format .ps, .eps et .prn en entrée. Vous pouvez appliquer des autorisations de sécurité spécifiques, des paramètres de sortie et des informations de métadonnées au document PDF de sortie.
 
 **Syntaxe:**
 
-```
+```java
 Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
