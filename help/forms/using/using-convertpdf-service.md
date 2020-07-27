@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 94%
 
 ---
 
@@ -39,7 +42,7 @@ Le service ConvertPDF propose les deux API suivantes :
 
 ### Utilisation de l’API toPS avec un JSP ou des servlets {#using-tops-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -83,7 +86,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 ### Utilisation de l’API toImage avec un JSP ou des servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
-```java
+```jsp
 <%@ page import="java.util.List, java.io.File,
 
                 com.adobe.fd.cpdf.api.ConvertPdfService,
@@ -132,11 +135,11 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 Exécuter le service ConvertPDF à partir d’un flux de travail équivaut à l’exécuter à partir d’un JSP/servlet.
 
-La seule différence réside dans le fait qu’avec une exécution du service à partir d’un JSP/servlet, l’objet de document récupère automatiquement une instance d’objet ResourceResolver à partir de l’objet ResourceResolverHelper. Ce mécanisme automatique ne fonctionne pas lorsque le code est appelé à partir d’un processus. Pour un flux de travail, transmettez explicitement une occurrence de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l’objet  utilise l’objet ResourceResolver fourni pour lire le contenu du référentiel.
+La seule différence réside dans le fait qu’avec une exécution du service à partir d’un JSP/servlet, l’objet de document récupère automatiquement une instance d’objet ResourceResolver à partir de l’objet ResourceResolverHelper. Ce mécanisme automatique ne fonctionne pas lorsque le code est appelé à partir d’un processus. Pour un flux de travail, transmettez explicitement une occurrence de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l&#39;objet Document utilise l&#39;objet ResourceResolver fourni pour lire le contenu du référentiel.
 
 L’exemple de processus de flux de travail suivant convertit le document d’entrée en document PostScript. Le code est écrit dans ECMAScript et le document est transmis en tant que charge utile de flux de travail :
 
-```
+```javascript
 /*
  * Imports
  */
