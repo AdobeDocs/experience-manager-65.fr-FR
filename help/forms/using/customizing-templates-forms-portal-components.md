@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 70%
 
 ---
 
@@ -43,6 +46,7 @@ Pour créer un modèle personnalisé pour divers composants de Forms Portal, sui
       * Section Brouillons : /libs/fd/fp/draftsTemplate
       * Section Envois : /libs/fd/fp/submissionsTemplate
    * Component Lien : /libs/fd/fp/linkTemplate
+
    Ajoutez un titre que vous souhaitez afficher lors de la sélection des modèles de disposition.
 
    >[!NOTE]
@@ -59,7 +63,7 @@ Pour créer un modèle personnalisé pour divers composants de Forms Portal, sui
 
 Vous trouverez ci-dessous un exemple d’implémentation d’un modèle personnalisé dans lequel Forms Portal acquiert une disposition Geometrixx Gov Card Layout pour le composant Recherche et énumérateur.
 
-```mxml
+```xml
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
  <div class="__FP_boxes-thumbnail">
@@ -114,7 +118,7 @@ Les différents composants de Forms Portal fournissent des jeux exclusifs de mé
 
 Prise en charge de la localisation et du tri et utilisation des propriétés de configuration de l’interface utilisateur (Recherche et énumérateur uniquement) :
 
-1. **Prise en charge** des  : Pour localiser un texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, le cas échéant.
+1. **Prise en charge** des Localisations : Pour localiser un texte statique, utilisez l’attribut `${localize-YOUR_TEXT}` et rendez la valeur localisée disponible, si elle n’existe pas déjà.
    *Dans l’exemple présenté, les attributs`${localize-Apply}`et`${localize-Download}`sont utilisés pour localiser le texte Appliquer et Télécharger.*
 
 1. **Prise en charge du tri** : cliquez sur l’élément HTML pour trier les résultats de la recherche. Pour mettre en œuvre le tri dans une disposition de tableau, ajoutez l’attribut « data-sortKey » à l’en-tête spécifique du tableau. Ajoutez en outre sa valeur en tant que métadonnées pour lesquelles vous souhaitez effectuer un tri.
@@ -131,7 +135,7 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 
 ### Composant Brouillons et envois {#drafts-amp-submissions-component}
 
-* **Path** : chemin du nœud des métadonnées de bouillon/envoi. Utilisez-la avec l&#39;extension .HTML comme URL pour ouvrir un brouillon ou un envoi.
+* **Path** : chemin du nœud des métadonnées de bouillon/envoi. Utilisez-la avec l’extension .HTML comme URL pour ouvrir un brouillon ou un envoi.
 * **contextPath** : chemin du contexte de l’instance AEM.
 * **firstLetter** : première lettre (majuscule) du titre du formulaire adaptatif qui a été enregistré en tant que brouillon ou envoyé.
 * **formName** : titre du formulaire adaptatif qui a été enregistré en tant que brouillon ou envoyé.
@@ -155,7 +159,7 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 
 **A**. Elément conteneur
 
-**B.** Métadonnées &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
+**B.** les métadonnées &quot;path&quot; avec une hiérarchie fixe pour obtenir la miniature stockée pour chaque formulaire.
 
 **C.** Attribut répétable aux données utilisé pour la section de modèle de chaque formulaire
 
@@ -174,11 +178,11 @@ Par exemple, pour l&#39;en-tête &quot;Title&quot; dans la vue Grille, la valeur
 
 ## Articles connexes
 
-* [Activation des composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* [Créer une page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* [Activation des composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* [Créer une page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Drafts and Submissions](/help/forms/using/draft-submission-component.md)
-* [Personnaliser   de brouillons et de formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Personnalisation de l’enregistrement des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)
