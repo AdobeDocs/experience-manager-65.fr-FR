@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2304'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Rendu de formulaires HTML avec des barres d’outils personnalisées {#rendering-html-forms-with-custom-toolbars}
 
-Le service Forms vous permet de personnaliser une barre d’outils générée avec un formulaire HTML. Une barre d’outils peut être personnalisée pour modifier son aspect en remplaçant les styles CSS par défaut et pour ajouter un comportement dynamique en remplaçant les scripts Java. Une barre d’outils est personnalisée à l’aide d’un fichier XML nommé fscmenu.xml. Par défaut, le service Forms récupère ce fichier à partir d’un emplacement URI spécifié en interne.
+Le service Forms vous permet de personnaliser une barre d’outils générée avec un formulaire HTML. Une barre d’outils peut être personnalisée pour modifier son apparence en remplaçant les styles CSS par défaut et pour ajouter un comportement dynamique en remplaçant les scripts Java. Une barre d’outils est personnalisée à l’aide d’un fichier XML nommé fscmenu.xml. Par défaut, le service Forms récupère ce fichier à partir d’un emplacement URI spécifié en interne.
 
 >[!NOTE]
 >
->Cet emplacement URI se trouve dans le fichier adobe-forms-core.jar, qui se trouve dans le fichier adobe-forms-dsc.jar. Le fichier adobe-forms-dsc.jar se trouve dans C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). Vous pouvez utiliser un outil d’extraction de fichiers, tel que Win RAR, pour ouvrir Adobe.
+>Cet emplacement URI se trouve dans le fichier adobe-forms-core.jar, qui se trouve dans le fichier adobe-forms-dsc.jar. Le fichier adobe-forms-dsc.jar se trouve dans C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). Vous pouvez utiliser un outil d’extraction de fichiers, tel que Win RAR, pour ouvrir adobe.
 
-Vous pouvez copier le fichier fscmenu.xml à partir de cet emplacement, le modifier pour répondre à vos besoins, puis le placer dans un emplacement URI personnalisé. Ensuite, à l’aide de l’API Forms Service, définissez les options d’exécution qui génèrent le service Forms à l’aide du fichier fscmenu.xml à partir de l’emplacement spécifié. Ces actions entraînent le rendu par le service Forms d’un formulaire HTML doté d’une barre d’outils personnalisée.
+Vous pouvez copier le fichier fscmenu.xml à partir de cet emplacement, le modifier pour répondre à vos besoins, puis le placer dans un emplacement URI personnalisé. Ensuite, à l’aide de l’API Forms Service, définissez les options d’exécution qui génèrent le service Forms à l’aide de votre fichier fscmenu.xml à partir de l’emplacement spécifié. Ces actions entraînent le rendu par le service Forms d’un formulaire HTML doté d’une barre d’outils personnalisée.
 
 Outre le fichier fscmenu.xml, vous devez également obtenir les fichiers suivants :
 
@@ -39,23 +42,23 @@ Outre le fichier fscmenu.xml, vous devez également obtenir les fichiers suivant
 
 fscJS est le script Java associé à chaque noeud. Il est nécessaire d’en fournir un pour le `div#fscmenu` noeud et éventuellement pour `ul#fscmenuItem` les noeuds. Les fichiers JS implémentent la fonctionnalité de base de la barre d’outils et les fichiers par défaut fonctionnent.
 
-fscCSS est une feuille de style associée à un noeud particulier. Les styles des fichiers CSS définissent l’aspect de la barre d’outils. *fscVCSS* est une feuille de style pour une barre d’outils verticale, qui s’affiche à gauche du formulaire HTML rendu. *fscIECSS* est une feuille de style utilisée pour les formulaires HTML générés dans Internet Explorer.
+fscCSS est une feuille de style associée à un noeud particulier. Les styles des fichiers CSS définissent l’aspect de la barre d’outils. *fscVCSS* est une feuille de style pour une barre d’outils verticale qui s’affiche à gauche du formulaire HTML rendu. *fscIECSS* est une feuille de style utilisée pour les formulaires HTML générés dans Internet Explorer.
 
-Assurez-vous que tous les fichiers ci-dessus sont référencés dans le fichier fscmenu.xml. En d’autres termes, dans le fichier fscmenu.xml, spécifiez des emplacements URI pour pointer vers ces fichiers afin que le service Forms puisse les localiser. Par défaut, ces fichiers sont disponibles aux emplacements URI commençant par les mots-clés internes `FSWebRoot` ou `ApplicationWebRoot`.
+Assurez-vous que tous les fichiers ci-dessus sont référencés dans le fichier fscmenu.xml. En d’autres termes, dans le fichier fscmenu.xml, spécifiez des emplacements URI pour pointer vers ces fichiers afin que le service Forms puisse les localiser. Par défaut, ces fichiers sont disponibles à des emplacements URI commençant par des mots-clés internes `FSWebRoot` ou `ApplicationWebRoot`des emplacements URI.
 
-Pour personnaliser la barre d&#39;outils, remplacez les mots-clés à l&#39;aide du mot-clé externe `FSToolBarURI`. Ce mot-clé représente l’URI transmis au service Forms au moment de l’exécution (cette approche est présentée plus loin dans cette section).
+Pour personnaliser la barre d’outils, remplacez les mots-clés à l’aide du mot-clé externe `FSToolBarURI`. Ce mot-clé représente l’URI transmis au service Forms au moment de l’exécution (cette approche est présentée plus loin dans cette section).
 
 Vous pouvez également spécifier les emplacements absolus de ces fichiers JS et CSS, tels que https://www.mycompany.com/scripts/misc/fscmenu.js. Dans ce cas, vous n’avez pas besoin d’utiliser le `FSToolBarURI` mot-clé.
 
 >[!NOTE]
 >
->Il n’est pas recommandé de mélanger les méthodes de référence de ces fichiers. Autrement dit, tous les URI doivent être référencés à l’aide du `FSToolBarURI` mot-clé ou d’un emplacement absolu.
+>Il n’est pas recommandé de mélanger les méthodes de référencement de ces fichiers. En d’autres termes, toutes les URI doivent être référencées à l’aide du `FSToolBarURI` mot-clé ou d’un emplacement absolu.
 
-Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;serveur d’applications>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers sont situés dans le fichier WAR. Le fichier adobe-forms-&lt;serveur d’applications>.ear se trouve dans le dossier d’installation d’AEM forms (C:\ is the installation directory). Vous pouvez ouvrir adobe-forms-&lt;serveur d’applications>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
+Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;serveur d’applications>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers se trouvent dans le fichier WAR. Le fichier adobe-forms-&lt;serveur d’applications>.ear se trouve dans le dossier d’installation d’AEM forms (C:\ is the installation directory). Vous pouvez ouvrir le fichier adobe-forms-&lt;serveur d’applications>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
 
 La syntaxe XML suivante illustre un exemple de fichier fscmenu.xml.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -90,18 +93,18 @@ La syntaxe XML suivante illustre un exemple de fichier fscmenu.xml.
 
 >[!NOTE]
 >
->Le texte en gras représente les URI des fichiers CSS et JS à référencer.
+>Le texte en gras représente les URI des fichiers CSS et JS qui doivent être référencés.
 
 Les éléments suivants décrivent comment personnaliser une barre d’outils :
 
-* Modifiez les valeurs des attributs `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` (dans le fichier fscmenu.xml) pour refléter les emplacements personnalisés des fichiers référencés à l’aide de l’une des méthodes décrites dans cette section (par exemple, `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
-* Tous les fichiers CSS et JS doivent être spécifiés. Si aucun des fichiers n’est modifié, indiquez le fichier par défaut à l’emplacement personnalisé. Vous pouvez obtenir les fichiers par défaut en ouvrant différents fichiers comme décrit dans cette section.
+* Modifiez les valeurs des attributs `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` (dans le fichier fscmenu.xml) afin de refléter les emplacements personnalisés des fichiers référencés en utilisant l’une des méthodes décrites dans cette section (par exemple, `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
+* Tous les fichiers CSS et JS doivent être spécifiés. Si aucun des fichiers n’est modifié, indiquez le fichier par défaut à l’emplacement personnalisé. Vous pouvez obtenir les fichiers par défaut en ouvrant divers fichiers comme décrit dans cette section.
 * Il est possible de fournir une référence absolue (par exemple, https://www.example.com/scripts/custom-vertical-fscmenu.css) à tout fichier.
-* Les fichiers JS et CSS requis par le `div#fscmenu` noeud sont essentiels à la fonctionnalité de la barre d’outils. Certains `ul#fscmenuItem` noeuds peuvent avoir ou non des fichiers JS ou CSS pris en charge.
+* Les fichiers JS et CSS requis par le `div#fscmenu` noeud sont essentiels à la fonctionnalité de barre d’outils. Les `ul#fscmenuItem` noeuds individuels peuvent avoir ou non des fichiers JS ou CSS pris en charge.
 
 **Modification de la valeur locale**
 
-Dans le cadre de la personnalisation d’une barre d’outils, vous pouvez modifier la valeur des paramètres régionaux de la barre d’outils. C&#39;est-à-dire que vous pouvez l&#39;afficher dans une autre langue. L’illustration suivante présente une barre d’outils personnalisée affichée en français.
+Dans le cadre de la personnalisation d’une barre d’outils, vous pouvez modifier la valeur des paramètres régionaux de la barre d’outils. Autrement dit, vous pouvez l&#39;afficher dans une autre langue. L’illustration suivante présente une barre d’outils personnalisée qui s’affiche en français.
 
 >[!NOTE]
 >
@@ -109,7 +112,7 @@ Dans le cadre de la personnalisation d’une barre d’outils, vous pouvez modif
 
 Pour modifier la valeur des paramètres régionaux d’une barre d’outils, assurez-vous que le fichier fscmenu.xml contient la langue à afficher. La syntaxe XML suivante présente le fichier fscmenu.xml utilisé pour afficher une barre d’outils en français.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -144,19 +147,19 @@ Pour modifier la valeur des paramètres régionaux d’une barre d’outils, ass
 
 >[!NOTE]
 >
->Les Démarrages rapides associés à cette section utilisent ce fichier XML pour afficher une barre d’outils personnalisée en français, comme le montre l’illustration précédente.
+>Les Débuts rapides associés à cette section utilisent ce fichier XML pour afficher une barre d’outils personnalisée en français, comme le montre l’illustration précédente.
 
-Spécifiez également une valeur de paramètre régional valide en appelant la `HTMLRenderSpec` `setLocale` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la valeur du paramètre régional. Par exemple, passez `fr_FR` pour spécifier le français. Le service Forms est fourni avec des barres d’outils localisées.
+Spécifiez également une valeur de paramètre régional valide en appelant la `HTMLRenderSpec` `setLocale` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la valeur de paramètre régional. Par exemple, passez `fr_FR` pour spécifier le français. Le service Forms est fourni avec des barres d’outils localisées.
 
 >[!NOTE]
 >
->Avant de générer un formulaire HTML utilisant une barre d’outils personnalisée, vous devez connaître le mode de rendu des formulaires HTML. (voir [Rendu de formulaires au format HTML](/help/forms/developing/rendering-forms-html.md)).
+>Avant de générer un formulaire HTML qui utilise une barre d’outils personnalisée, vous devez connaître le mode de rendu des formulaires HTML. (Voir [Rendu de formulaires au format HTML](/help/forms/developing/rendering-forms-html.md).)
 
 For more information about the Forms service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
-Pour générer un formulaire HTML contenant une barre d’outils personnalisée, procédez comme suit :
+Pour générer un formulaire HTML contenant une barre d’outils personnalisée, effectuez les tâches suivantes :
 
 1. Incluez des fichiers de projet.
 1. Créez un objet API Java Forms.
@@ -174,13 +177,13 @@ Avant de pouvoir exécuter par programmation une opération prise en charge par 
 
 **Référence à un fichier XML fscmenu personnalisé**
 
-Pour générer un formulaire HTML contenant une barre d’outils personnalisée, référencez un fichier XML fscmenu qui décrit la barre d’outils. (Cette section fournit deux exemples d’un fichier XML fscmenu.) Assurez-vous également que le fichier fscmenu.xml spécifie correctement l’emplacement de tous les fichiers référencés. Comme mentionné plus haut dans cette section, assurez-vous que tous les fichiers sont référencés par le `FSToolBarURI` mot-clé ou par leur emplacement absolu.
+Pour générer un formulaire HTML contenant une barre d’outils personnalisée, référencez un fichier XML fscmenu qui décrit la barre d’outils. (Cette section fournit deux exemples d’un fichier XML fscmenu.) Assurez-vous également que le fichier fscmenu.xml spécifie correctement l’emplacement de tous les fichiers référencés. Comme mentionné plus haut dans cette section, veillez à ce que tous les fichiers soient référencés par le `FSToolBarURI` mot-clé ou leur emplacement absolu.
 
-**Rendu d’un formulaire HTML**
+**Génération d’un formulaire HTML**
 
-Pour générer un formulaire HTML, spécifiez une conception de formulaire créée dans Designer et enregistrée dans un fichier XDP. Sélectionnez également un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
+Pour générer un formulaire HTML, spécifiez une conception de formulaire qui a été créée dans Designer et enregistrée dans un fichier XDP. Sélectionnez également un type de transformation HTML. Par exemple, vous pouvez spécifier le type de transformation HTML qui effectue le rendu d’un fichier HTML dynamique pour Internet Explorer 5.0 ou version ultérieure.
 
-Le rendu d’un formulaire HTML requiert également des valeurs, telles que des valeurs URI, pour le rendu d’autres types de formulaire.
+Le rendu d’un formulaire HTML requiert également des valeurs, telles que des valeurs URI pour le rendu d’autres types de formulaire.
 
 **Ecrire le flux de données du formulaire dans le navigateur Web client**
 
@@ -196,13 +199,13 @@ Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de donn
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrage rapide de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Débuts rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendu de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Rendu des formulaires au format HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Création d&#39;applications Web qui renvoient des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Création d’Applications web renvoyant des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Générer un formulaire HTML avec une barre d’outils personnalisée à l’aide de l’API Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
@@ -223,21 +226,23 @@ Générer un formulaire HTML contenant une barre d’outils personnalisée à l�
    * Pour générer un formulaire HTML avec une barre d’outils, appelez la `HTMLRenderSpec` méthode de l’objet et transmettez une valeur `setHTMLToolbar` `HTMLToolbar` d’énumération. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
    * Spécifiez l’emplacement du fichier XML fscmenu en appelant la `HTMLRenderSpec` `setToolbarURI` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie l’emplacement URI du fichier XML.
    * Le cas échéant, définissez la valeur du paramètre régional en appelant la `HTMLRenderSpec` `setLocale` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la valeur du paramètre régional. La valeur par défaut est Anglais.
+
    >[!NOTE]
    >
-   >Les Démarrages rapides associés à cette section définissent cette valeur sur `fr_FR`*.*
+   >Les Débuts rapides associés à cette section définissent cette valeur sur `fr_FR`*.*
 
-1. Rendu d’un formulaire HTML
+1. Génération d’un formulaire HTML
 
-   Appelez la méthode `FormsServiceClient` `renderHTMLForm` de l’objet et transmettez les valeurs suivantes :
+   Appelez la méthode `FormsServiceClient` de l’ `renderHTMLForm` objet et transmettez les valeurs suivantes :
 
    * Valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Valeur `TransformTo` enum qui spécifie le type de préférence HTML. Par exemple, pour générer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Objet `com.adobe.idp.Document` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un `com.adobe.idp.Document` objet vide.
+   * Valeur `TransformTo` d’énumération qui spécifie le type de préférence HTML. Par exemple, pour générer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
+   * Objet `com.adobe.idp.Document` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un `com.adobe.idp.Document` objet vide.
    * Objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Valeur de chaîne qui spécifie la valeur d’ `HTTP_USER_AGENT` en-tête, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Objet `URLSpec` qui stocke les valeurs URI requises pour générer un formulaire HTML.
-   * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif, que vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+
    La `renderHTMLForm` méthode renvoie un `FormsResult` objet qui contient un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
 
 1. Ecrire le flux de données du formulaire dans le navigateur Web client
@@ -245,14 +250,14 @@ Générer un formulaire HTML contenant une barre d’outils personnalisée à l�
    * Créez un `com.adobe.idp.Document` objet en appelant la `FormsResult` méthode de l’ `getOutputContent` objet.
    * Obtenez le type de contenu de l’ `com.adobe.idp.Document` objet en appelant sa `getContentType` méthode.
    * Définissez le type de contenu de l’ `javax.servlet.http.HttpServletResponse` objet en appelant sa `setContentType` méthode et en transmettant le type de contenu de l’ `com.adobe.idp.Document` objet.
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données du formulaire dans le navigateur Web client en appelant la `javax.servlet.http.HttpServletResponse` `getOutputStream` méthode de l’objet.
+   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données du formulaire dans le navigateur Web client en appelant la `javax.servlet.http.HttpServletResponse` méthode de l’ `getOutputStream` objet.
    * Créez un `java.io.InputStream` objet en appelant la `com.adobe.idp.Document` méthode de l’ `getInputStream` objet.
-   * Créez un tableau d’octets et renseignez-le avec le flux de données du formulaire en appelant la `InputStream` `read` méthode de l’objet et en transmettant le tableau d’octets en tant qu’argument.
-   * Appelez la `javax.servlet.ServletOutputStream` `write` méthode de l’objet pour envoyer le flux de données du formulaire au navigateur Web client. Transmettez le tableau d’octets à la `write` méthode.
+   * Créez un tableau d’octets et remplissez-le avec le flux de données du formulaire en appelant la `InputStream` `read` méthode de l’objet et en transmettant le tableau d’octets en tant qu’argument.
+   * Appelez la méthode `javax.servlet.ServletOutputStream` de l’objet `write` pour envoyer le flux de données du formulaire au navigateur Web client. Transférez le tableau d’octets à la `write` méthode.
 
 **Voir également**
 
-[Démarrage rapide (mode SOAP) : Rendu d’un formulaire HTML avec une barre d’outils personnalisée à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Début rapide (mode SOAP) : Rendu d’un formulaire HTML avec une barre d’outils personnalisée à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -265,7 +270,7 @@ Générer un formulaire HTML contenant une barre d’outils personnalisée à l�
 1. Inclure les fichiers de projet
 
    * Créez des classes de proxy Java qui utilisent le WSDL du service Forms.
-   * Incluez les classes de proxy Java dans le chemin de classe.
+   * Incluez les classes proxy Java dans le chemin de classe.
 
 1. Création d’un objet API Java Forms
 
@@ -277,27 +282,29 @@ Générer un formulaire HTML contenant une barre d’outils personnalisée à l�
    * Pour générer un formulaire HTML avec une barre d’outils, appelez la `HTMLRenderSpec` méthode de l’objet et transmettez une valeur `setHTMLToolbar` `HTMLToolbar` d’énumération. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
    * Spécifiez l’emplacement du fichier XML fscmenu en appelant la `HTMLRenderSpec` `setToolbarURI` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie l’emplacement URI du fichier XML.
    * Le cas échéant, définissez la valeur du paramètre régional en appelant la `HTMLRenderSpec` `setLocale` méthode de l’objet et en transmettant une valeur de chaîne qui spécifie la valeur du paramètre régional. La valeur par défaut est Anglais.
+
    >[!NOTE]
    >
-   >Les Démarrages rapides associés à cette section définissent cette valeur sur `fr_FR`*.*
+   >Les Débuts rapides associés à cette section définissent cette valeur sur `fr_FR`*.*
 
-1. Rendu d’un formulaire HTML
+1. Génération d’un formulaire HTML
 
-   Appelez la méthode `FormsService` `renderHTMLForm` de l’objet et transmettez les valeurs suivantes :
+   Appelez la méthode `FormsService` de l’ `renderHTMLForm` objet et transmettez les valeurs suivantes :
 
    * Valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Valeur `TransformTo` enum qui spécifie le type de préférence HTML. Par exemple, pour générer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez-les `null`.
+   * Valeur `TransformTo` d’énumération qui spécifie le type de préférence HTML. Par exemple, pour générer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
+   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`.
    * Objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
-   * Valeur de chaîne qui spécifie la valeur d’ `HTTP_USER_AGENT` en-tête, telle `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
+   * Valeur de chaîne qui spécifie la valeur d’ `HTTP_USER_AGENT` en-tête, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
    * Objet `URLSpec` qui stocke les valeurs URI requises pour générer un formulaire HTML.
    * Objet `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous n’avez pas l’intention de joindre des fichiers au formulaire.
-   * Objet vide `com.adobe.idp.services.holders.BLOBHolder` renseigné par la `renderHTMLForm` méthode. Cette valeur de paramètre stocke le formulaire rendu.
-   * Objet vide `com.adobe.idp.services.holders.BLOBHolder` renseigné par la `renderHTMLForm` méthode. Ce paramètre stocke les données XML de sortie.
-   * Objet vide `javax.xml.rpc.holders.LongHolder` renseigné par la `renderHTMLForm` méthode. Cet argument enregistre le nombre de pages dans le formulaire.
-   * Objet vide `javax.xml.rpc.holders.StringHolder` renseigné par la `renderHTMLForm` méthode. Cet argument stocke la valeur du paramètre régional.
-   * Objet vide `javax.xml.rpc.holders.StringHolder` renseigné par la `renderHTMLForm` méthode. Cet argument stocke la valeur de rendu HTML utilisée.
+   * Objet vide `com.adobe.idp.services.holders.BLOBHolder` rempli par la `renderHTMLForm` méthode. Cette valeur de paramètre stocke le formulaire rendu.
+   * Objet vide `com.adobe.idp.services.holders.BLOBHolder` rempli par la `renderHTMLForm` méthode. Ce paramètre stocke les données XML de sortie.
+   * Objet vide `javax.xml.rpc.holders.LongHolder` rempli par la `renderHTMLForm` méthode. Cet argument enregistre le nombre de pages dans le formulaire.
+   * Objet vide `javax.xml.rpc.holders.StringHolder` rempli par la `renderHTMLForm` méthode. Cet argument stocke la valeur du paramètre régional.
+   * Objet vide `javax.xml.rpc.holders.StringHolder` rempli par la `renderHTMLForm` méthode. Cet argument stocke la valeur de rendu HTML utilisée.
    * Objet vide `com.adobe.idp.services.holders.FormsResultHolder` qui contiendra les résultats de cette opération.
+
    La `renderHTMLForm` méthode remplit l’ `com.adobe.idp.services.holders.FormsResultHolder` objet transmis en tant que valeur du dernier argument avec un flux de données de formulaire qui doit être écrit dans le navigateur Web client.
 
 1. Ecrire le flux de données du formulaire dans le navigateur Web client
@@ -306,10 +313,10 @@ Générer un formulaire HTML contenant une barre d’outils personnalisée à l�
    * Créez un `BLOB` objet contenant des données de formulaire en appelant la `FormsResult` méthode de l’ `getOutputContent` objet.
    * Obtenez le type de contenu de l’ `BLOB` objet en appelant sa `getContentType` méthode.
    * Définissez le type de contenu de l’ `javax.servlet.http.HttpServletResponse` objet en appelant sa `setContentType` méthode et en transmettant le type de contenu de l’ `BLOB` objet.
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données du formulaire dans le navigateur Web client en appelant la `javax.servlet.http.HttpServletResponse` `getOutputStream` méthode de l’objet.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `BLOB` `getBinaryData` de l’objet. Cette tâche affecte le contenu de l’ `FormsResult` objet au tableau d’octets.
-   * Appelez la `javax.servlet.http.HttpServletResponse` `write` méthode de l’objet pour envoyer le flux de données du formulaire au navigateur Web client. Transmettez le tableau d’octets à la `write` méthode.
+   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données du formulaire dans le navigateur Web client en appelant la `javax.servlet.http.HttpServletResponse` méthode de l’ `getOutputStream` objet.
+   * Créez un tableau d’octets et remplissez-le en appelant la `BLOB` `getBinaryData` méthode de l’objet. Cette tâche affecte le contenu de l’ `FormsResult` objet au tableau d’octets.
+   * Appelez la méthode `javax.servlet.http.HttpServletResponse` de l’objet `write` pour envoyer le flux de données du formulaire au navigateur Web client. Transférez le tableau d’octets à la `write` méthode.
 
 **Voir également**
 
-[Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Appel de AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
