@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2020'
+ht-degree: 60%
 
 ---
 
 
 # Didacticiel : Créer une communication interactive {#tutorial-create-interactive-communication}
 
-![09-style-votre-adaptatif-formulaire-petit](assets/09-style-your-adaptive-form-small.png)
+![09-style-votre-formulaire adaptatif-petit](assets/09-style-your-adaptive-form-small.png)
 
 This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
 
@@ -40,7 +43,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
 **Modèle de données de formulaire :** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Fragments  :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Fragments de Document :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
 **Fragments de mise en page :** [table_lf](../../forms/using/create-templates-print-web.md)
 
@@ -55,7 +58,8 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
 
-   1. Appuyez sur **Create** (Créer). 
+   1. Appuyez sur **Créer**. 
+
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -69,30 +73,30 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    | bill_summary_first_ic | BillSummary |
    | summary_charges_first_interactive_communication | Frais |
 
-   ![de fragments pour Interactive Communications](assets/create_first_ic_doc_fragments_new.png)
+   ![Fragments de Document pour les communications interactives](assets/create_first_ic_doc_fragments_new.png)
 
 1. Appuyez sur **Graphiques** dans la zone cible et appuyez sur **+** pour ajouter un composant **Graphique.**
-1. Tap the Chart component and select ![](assets/configure_icon.png) (Configure). Les propriétés du graphique s’affichent dans le volet gauche :
+1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). Les propriétés du graphique s’affichent dans le volet gauche :
 
    1. Spécifiez un nom pour le diagramme.
    1. Sélectionnez **Diagramme circulaire** dans la liste déroulante **Type de graphique**.
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Pression ![](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Appuyez sur ![done_icon](assets/done_icon.png).
    1. Sélectionnez **Fréquence** dans la liste déroulante **Fonctions**.
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Pression ![](assets/done_icon.png).
-   1. Tap ![](assets/done_icon.png) to save the chart properties.
+   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Appuyez sur ![done_icon](assets/done_icon.png).
+   1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
 
 1. Go to the **Assets** tab and apply the filter to display only the layout fragments in the left pane. Faites glisser le fragment de mise en page **table_lf** dans la zone cible **Appels détaillés**.
-1. Select the Text Field in the **Date** column and tap ![](assets/configure_icon.png) (Configure).
-1. Sélectionnez **Objet du modèle de données** dans la liste déroulante **Type de liaison** et sélectionnez **calls** > **calldate**. Tap ![](assets/done_icon.png) twice to save the properties.
+1. Select the Text Field in the **Date** column and tap ![configure_icon](assets/configure_icon.png) (Configure).
+1. Sélectionnez **Objet du modèle de données** dans la liste déroulante **Type de liaison** et sélectionnez **calls** > **calldate**. Tap ![done_icon](assets/done_icon.png) twice to save the properties.
 
    De même, créez une liaison avec **calltime**, **callnumber**, **callduration** et **callcharges** pour les champs texte dans les colonnes **Heure**, **Numéro**, **Durée** et **Frais**.
 
 1. Tap **PayNow** target area, and tap **+** to add an **Image** component.
-1. Tap the Image component and select ![](assets/configure_icon.png) (Configure). Les propriétés de l’image s’affichent dans le volet gauche :
+1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). Les propriétés de l’image s’affichent dans le volet gauche :
 
    1. Spécifiez **PayNow** comme nom de l’image dans le champ **Nom**.
    1. Appuyez sur **Télécharger**, sélectionnez l’image enregistrée sur le système de fichiers local, puis appuyez sur **Ouvrir**.
-   1. Tap ![](assets/done_icon.png) to save the image properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the image properties.
 
 1. Repeat steps 13 and 14 to add **ValueAddedServices** image to the **ValueAddedServices** target area.
 
@@ -104,7 +108,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
 **Modèle de données de formulaire :** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Fragments  :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Fragments de Document :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
 **Images :** PayNowWeb et ValueAddedServicesWeb
 
@@ -117,7 +121,8 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
 
-   1. Appuyez sur **Create** (Créer). 
+   1. Appuyez sur **Créer**. 
+
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -133,18 +138,18 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    | summary_charges_first_interactive_communication | Frais |
 
 1. Tap **Summary of Charges** target area, and tap **+** to add a **Chart** component.
-1. Tap the Chart component and select ![](assets/configure_icon.png) (Configure). Les propriétés du graphique s’affichent dans le volet gauche :
+1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). Les propriétés du graphique s’affichent dans le volet gauche :
 
    1. Spécifiez un nom pour le diagramme.
    1. Sélectionnez **Diagramme circulaire** dans la liste déroulante **Type de graphique**.
 
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Pression ![](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Appuyez sur ![done_icon](assets/done_icon.png).
 
    1. Sélectionnez **Fréquence** dans la liste déroulante **Fonctions**.
 
-   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Pression ![](assets/done_icon.png).
+   1. Select the **calltype** property from the **calls** data model object type in the **Y-axis** section. Appuyez sur ![done_icon](assets/done_icon.png).
 
-   1. Tap ![](assets/done_icon.png) to save the chart properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the chart properties.
 
 1. Sélectionnez l’onglet **Sources de données** dans le volet gauche et faites glisser l’objet de modèle de données **calls** vers la zone cible **Appels détaillés**. All properties in the **calls** data model object are displayed as table columns in the **Itemised Calls** target area in the right pane.
 
@@ -164,11 +169,11 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    1. Spécifiez l’URL de paiement dans le champ **Chemin d’accès**.
    1. Sélectionnez **Nouvel onglet** dans la liste déroulante **Cible**.
 
-   1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the hyperlink properties.
 
 1. Sélectionnez **Style** dans la liste déroulante en regard de l’option **Aperçu**.
 
-   ![Sélectionner le mode Style pour Interactive Communication](assets/select_style_ic_web_new.png)
+   ![Sélectionner le mode Style pour la communication interactive](assets/select_style_ic_web_new.png)
 
 1. Personnalisez le texte de l’hyperlien pour l’afficher en tant que bouton dans la communication interactive en suivant les étapes suivantes :
 
@@ -177,16 +182,17 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
    1. Sélectionnez Rouge comme couleur d’arrière-plan pour le bouton dans la section **Arrière-plan**.
    1. Dans le champ **Marge** de la section **Dimensions et position**, appuyez sur l’icône **Modifier simultanément** et définissez la marge de **droite** à **450 px**. Les zones Haut, Bas et Gauche sont définies comme vides.
-   ![Insérer un hyperlien dans Interactive Communication](assets/ic_web_hyperlink_new.png)
+
+   ![Insérer un hyperlien dans la communication interactive](assets/ic_web_hyperlink_new.png)
 
 1. Tap **Pay Now** target area, and tap **+** to add an **Image** component.
-1. Tap the Image component and select ![](assets/configure_icon.png) (Configure). Les propriétés de l’image s’affichent dans le volet gauche :
+1. Tap the Image component and select ![configure_icon](assets/configure_icon.png) (Configure). Les propriétés de l’image s’affichent dans le volet gauche :
 
    1. Spécifiez **PayNow** comme nom de l’image dans le champ **Nom**.
 
    1. Tap **Upload**, select the **PayNowWeb** image saved on the local file system, and tap **Open**.
 
-   1. Tap ![](assets/done_icon.png) to save the image properties.
+   1. Tap ![done_icon](assets/done_icon.png) to save the image properties.
 
 1. Based on the use case, insert a **Subscribe** button in the Interactive Communication that provides the user an option to subscribe to the value added services by clicking the button.
 
@@ -208,7 +214,8 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
    1. Select the **Use Print as Master for Web Channel** checkbox.
    1. Specify **Create_First_IC_templates** folder > **Create_First_IC_Web_Template** as the Web template and tap **Select**.
 
-   1. Appuyez sur **Create** (Créer). 
+   1. Appuyez sur **Créer**. 
+
    Un message de confirmation s’affiche pour confirmer que la communication interactive a été créée correctement.
 
 1. Appuyez sur **Modifier** pour ouvrir la communication interactive dans le volet droit.
@@ -232,6 +239,7 @@ Exécutez les étapes suivantes pour dériver le contenu du canal web à l’aid
    * Composant Récapitulatif de facturation dans le panneau Récapitulatif de facturation
    * Composant Récapitulatif des frais dans le panneau Récapitulatif des frais
    * Fragment de mise en page (tableau) dans le panneau Appels détaillés
+
    ![Arborescence de contenu Web](assets/ic_web_content_tree_new.png)
 
 1. Répétez les étapes 13 à 18 de la section [Créer une communication interactive pour canal web](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) pour insérer les hyperliens **Payer maintenant** et **S’abonner** dans le canal web de la communication interactive.
