@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
 workflow-type: tm+mt
 source-wordcount: '1970'
 ht-degree: 82%
@@ -43,7 +43,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    1. Utilisez l’événement initialize du formulaire pour masquer l’instance principale du sous-formulaire. Par exemple, le code ci-dessous masque l’instance principale du sous-formulaire lors de l’initialisation du formulaire. Il vérifie également le type d’application pour s’assurer que le script est exécuté uniquement du côté client : 
 
-      ```
+      ```javascript
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
       RepeatSubform.presence = "hidden";
       }
@@ -53,7 +53,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
       Le code ci-dessous vérifie l’instance masquée du sous-formulaire. Si l’instance masquée du sous-formulaire est trouvée, supprimez-la et insérez une nouvelle instance du sous-formulaire. Si l’instance masquée du sous-formulaire est introuvable, insérez simplement une nouvelle instance du sous-formulaire.
 
-      ```
+      ```javascript
       if (RepeatSubform.presence == "hidden")
       {
       RepeatSubform.instanceManager.insertInstance(0);
@@ -69,7 +69,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
       Le code vérifie le nombre de sous-formulaires. Si le nombre de sous-formulaire a atteint 1, le code masque le sous-formulaire au lieu de le supprimer.
 
-      ```
+      ```javascript
       if (RepeatSubform.instanceManager.count == 1) {
       RepeatSubform.presence = "hidden";
       } else {
@@ -79,7 +79,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    1. Ouvrez l’événement presubmit du formulaire pour le modifier. Ajoutez le script suivant à l’événement pour supprimer l’instance masquée du script avant de le modifier. Il empêche l’envoi de données du sous-formulaire masqué lors de l’envoi.
 
-      ```
+      ```javascript
       if(RepeatSubform.instanceManager.count == 1 && RepeatSubform.presence == "hidden") {
       RepeatSubform.instanceManager.removeInstance(0);
       }
@@ -91,11 +91,11 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi un texte est-il tronqué ou s’affiche-t-il incorrectement dans HTML5 ?
 
-   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue de conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
+   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue de conception de AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
 
 1. Je constate des problèmes de mise en page liés à du contenu manquant ou à des chevauchements. Quelle en est la raison ?
 
-   Réponse : S’il existe un élément Texte de dessin ou Image de dessin avec un autre élément se chevauchant à la même position (un rectangle, par exemple), le contenu Texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre de document (dans la vue Hiérarchie d’AEM Forms Designer). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
+   Réponse : S’il existe un élément Texte de dessin ou Image de dessin avec un autre élément se chevauchant à la même position (un rectangle, par exemple), le contenu Texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre de document (dans la vue de la hiérarchie de Designer AEM Forms). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
 
 1. Pourquoi certaines polices affichées dans le formulaire HTML sont-elles différentes de celles utilisées lors de la conception du formulaire ?
 
@@ -119,7 +119,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Pour les formulaires PDF, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, et des objets. Acrobat prend également en charge la présentation et les scripts.
 
-   Pour les formulaires HTML5, les navigateurs n’ont pas de moteur XTG intégré pour créer les structures de données intermédiaires, et les objets à partir d’octets bruts XDP. Ainsi, pour les formulaires HTML5, les objets intermédiaires sont générés sur le serveur et envoyés au client. Côté client, les scripts basés sur JavaScript et le moteur de mise en page utilisent ces structures intermédiaires.
+   Pour les formulaires HTML5, les navigateurs n’ont pas de moteur XTG intégré pour créer les structures de données intermédiaires, et les objets à partir d’octets bruts XDP. Ainsi, pour les formulaires HTML5, les objets intermédiaires sont générés sur le serveur et envoyés au client. Sur le client, les scripts basés sur JavaScript et le moteur de mise en page utilisent ces structures intermédiaires.
 
    La taille de la structure intermédiaire dépend de la taille du XDP original et des données fusionnées avec XDP.
 
