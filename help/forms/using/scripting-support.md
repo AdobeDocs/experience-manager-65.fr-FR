@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '3909'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +27,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <th>Propriétés </th>
+   <th>Property </th>
    <th>Description<br /> </th>
    <th>Exception</th>
   </tr>
@@ -72,12 +75,12 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>keydown</td>
    <td>Détermine si un utilisateur appuie sur une touche fléchée pour effectuer une sélection. Cette propriété est uniquement disponible pour les zones de liste et les listes déroulantes.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>modifier</td>
    <td>Détermine l’utilisation de la touche de modification (par exemple, Ctrl sous Microsoft® Windows®) lors de l’exécution d’un événement particulier.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -109,7 +112,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>platform</code></td>
    <td>Renvoie une chaîne représentant la plateforme de l’ordinateur qui exécute le script.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>title</code></td>
@@ -124,12 +127,12 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>calculationsEnabled</code></td>
    <td>Indique si les scripts de calcul seront exécutés ou non.<br /> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
    <td>Indique si les scripts de validation seront exécutés.<br /> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>pageUp</code></td>
@@ -159,7 +162,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>currentPage</td>
    <td><p>Définit la page active d’un document lors de l’exécution.</p> <p>Les valeurs de page sont de base 0, de sorte que la première page d’un document renvoie la valeur 0.</p> <p>La propriété currentPage est disponible lorsque l’événement layout:ready s’exécute sur un client. En revanche, elle n’est pas disponible lorsque l’événement layout:ready s’exécute sur le serveur, car l’exécution de la propriété doit être précédée par celle de la disposition du formulaire.</p> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -176,7 +179,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>presence</code></td>
    <td>Contrôle la participation de l’objet associé dans différentes phases de traitement. Si l’objet est un conteneur, le contenu du conteneur hérite des restrictions que cette commande applique.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>access</code></td>
@@ -191,12 +194,12 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>value</code></td>
    <td>Elément de contenu qui inclut une unité unique du contenu de données.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>rawValue</code></td>
    <td>Indique la valeur non formatée de ce champ.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>formattedValue</code></td>
@@ -241,97 +244,97 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td><code>length</code></td>
    <td>Le nombre d’éléments dans la liste.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>addItem</code></td>
    <td>Ajoute de nouveaux éléments au champ actuel.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>clearItem</code></td>
    <td>Supprime tous les éléments du champ.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>boundItem</code></td>
    <td>Récupère la valeur liée d’un élément d’affichage spécifique dans une liste déroulante ou une zone de liste.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>execCalculate</code></td>
    <td>Exécute le script de calcul du champ.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>execValidate</code></td>
    <td>Exécute le script de validation du champ.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>execEvent</code></td>
    <td>Exécute le script d’événement de l’objet.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>getItemState</code></td>
    <td>Renvoie l’état de sélection de l’élément spécifié</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>setItemState</code></td>
    <td>Définit l’état de sélection de l’élément spécifié.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>getDisplayItem</code></td>
    <td>Récupère le texte d’affichage de l’élément pour l’index d’élément spécifié.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>getSaveItem</code></td>
    <td>Récupère la valeur de données pour l’index d’élément spécifié.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>deleteItem</code></td>
    <td>Supprime l’élément à l’index spécifié.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td><code>setItems</code></td>
    <td>Définit les éléments spécifiés dans le champ en cours. Remplace les éléments préexistants.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Mesure de la hauteur pour la disposition.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Mesure indiquant la largeur pour la disposition.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Indique la coordonnée X du point d’ancrage d’un conteneur par rapport au coin supérieur gauche du conteneur parent lors d’un placement avec disposition positionnée.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Indique la coordonnée Y du point d’ancrage d’un conteneur par rapport au coin supérieur gauche du conteneur parent lors d’un placement avec disposition positionnée.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>caption</td>
    <td>L’objet caption décrit un libellé descriptif associé à un objet de conception de formulaire.<br /> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>parentSubform</td>
@@ -341,7 +344,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>selectedIndex</td>
    <td>Index du premier élément sélectionné.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -381,15 +384,15 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 | Propriétés | Description | Exception |
 |---|---|---|
-| createNode | Crée un nouveau nœud à partir d’un nom de classe correct. | Aucun |
-| `isContainer` | Indique si l’objet est un objet conteneur. | Aucun |
-| `isNull` | Indique si la valeur de données actuelle est la valeur nulle. | Aucun |
-| `resolveNode` | Evalue l’expression SOM spécifiée, en commençant par l’objet de modèle de l’objet de formulaire XML actif et renvoie la valeur de l’objet spécifié à l’expression SOM. | Aucun |
-| `resolveNodes` | Evalue l’expression SOM spécifiée, en commençant par l’objet de modèle de l’objet de formulaire XML actif et renvoie la valeur de l’objet spécifié à l’expression SOM. | Aucun |
-| oneOfChild | Crée un nouveau nœud à partir d’un nom de classe correct. | Aucun |
-| getElement | Renvoie un objet enfant spécifié. | Aucun |
-| getAttribute | Récupère une valeur de propriété spécifiée. | Aucun |
-| setAttribute | Définit la valeur d’une propriété spécifiée. | Aucun |
+| createNode | Crée un nouveau nœud à partir d’un nom de classe correct. | Aucune |
+| `isContainer` | Indique si l’objet est un objet conteneur. | Aucune |
+| `isNull` | Indique si la valeur de données actuelle est la valeur nulle. | Aucune |
+| `resolveNode` | Evalue l’expression SOM spécifiée, en commençant par l’objet de modèle de l’objet de formulaire XML actif et renvoie la valeur de l’objet spécifié à l’expression SOM. | Aucune |
+| `resolveNodes` | Evalue l’expression SOM spécifiée, en commençant par l’objet de modèle de l’objet de formulaire XML actif et renvoie la valeur de l’objet spécifié à l’expression SOM. | Aucune |
+| oneOfChild | Crée un nouveau nœud à partir d’un nom de classe correct. | Aucune |
+| getElement | Renvoie un objet enfant spécifié. | Aucune |
+| getAttribute | Récupère une valeur de propriété spécifiée. | Aucune |
+| setAttribute | Définit la valeur d’une propriété spécifiée. | Aucune |
 
 ## model {#model}
 
@@ -409,77 +412,77 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>instanceIndex</td>
    <td>Indique l’index de l’objet, par rapport aux autres instances instanciées.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>execEvent</td>
    <td>Exécute le script d’événement de l’objet.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>getInvalidObjects</td>
    <td>Renvoie une liste de nœuds contenus dans le sous-formulaire (inclus) qui n’ont pas passé le test de validation.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>border</td>
    <td>L’objet border décrit la bordure entourant un objet.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Indique la valeur de la couleur de la bordure pour ce champ. Vous devez définir la propriété border.edge.presence pour l’afficher séparément.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Mesure de la hauteur pour la disposition.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Mesure indiquant la largeur pour la disposition.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Indique la coordonnée X du point d’ancrage d’un conteneur par rapport au coin supérieur gauche du conteneur parent lors d’un placement avec disposition positionnée.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Indique la coordonnée Y du point d’ancrage d’un conteneur par rapport au coin supérieur gauche du conteneur parent lors d’un placement avec disposition positionnée.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
-   <td>nom est</td>
+   <td>name</td>
    <td>Identificateur utilisé pour identifier cet élément dans les expressions de script.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>presence</td>
    <td>Indique si un objet est visible ou non.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>access</td>
    <td>Définit l’accès de l’utilisateur au contenu d’un objet conteneur, tel qu’un sous-formulaire.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>execValidate</td>
    <td>Calcule l’index d’un sous-formulaire ou jeu de sous-formulaires en fonction de son emplacement par rapport à d’autres instances du même objet de formulaire.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>instanceManager</td>
    <td>L’objet instanceManager gère la création, la suppression et le déplacement de l’instance des objets de modèle de formulaire.<br /> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -509,34 +512,34 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
     </ul> </td>
   </tr>
   <tr>
-   <td>nom est</td>
+   <td>name</td>
    <td>Indique le nom de ce nœud.</td>
    <td>La configuration du nom à l’aide de scripts n’est pas autorisée en format HTML.</td>
   </tr>
   <tr>
    <td>parent</td>
    <td>Récupère le parent de ce nœud.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>index</td>
    <td>Renvoie la position de ce nœud dans sa collection de nœuds de même nom et compris dans la plage indiquée, comme les nœuds relationnels enfants.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>somExpression</td>
    <td>Récupère l’expression SOM de ce nœud.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>resolveNode</td>
    <td>Evalue l’expression SOM spécifiée, en commençant par l’objet de modèle de l’objet de formulaire XML actif et renvoie la valeur de l’objet spécifié à l’expression SOM.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>resolveNodes</td>
    <td>Evalue l’expression SOM spécifiée, en commençant par l’objet de modèle de l’objet de formulaire XML actif et renvoie la valeur de l’objet spécifié à l’expression SOM.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -545,7 +548,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 | Propriétés | Description | Exception |
 |---|---|---|
-| instanceManager | L’objet instanceManager gère la création, la suppression et le déplacement de l’instance des objets de modèle de formulaire. | Aucun |
+| instanceManager | L’objet instanceManager gère la création, la suppression et le déplacement de l’instance des objets de modèle de formulaire. | Aucune |
 
 ## content {#content}
 
@@ -727,7 +730,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td> </td>
   </tr>
   <tr>
-   <td>nom est</td>
+   <td>name</td>
    <td>Identificateur qui permet de désigner un objet ou un événement dans les expressions de script.</td>
    <td>La définition de la valeur lors de l’exécution n’est pas prise en charge</td>
   </tr>
@@ -812,12 +815,12 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>contentType</td>
    <td>Spécifie le type de contenu présent dans le document référencé, à savoir MIME.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
-   <td>nom est<br /> </td>
+   <td>name<br /> </td>
    <td>Identificateur utilisé pour identifier cet élément dans les expressions de script.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -880,7 +883,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>bordure</td>
    <td>L’objet border décrit la bordure entourant un objet.<br /> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -897,67 +900,67 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>layout</td>
    <td>Indique la stratégie de disposition utilisée par cet objet.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>border</td>
    <td>Indique la bordure entourant ce champ.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>mandatory</td>
    <td>Indique la valeur nullTest pour le champ.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Indique la valeur de couleur de bordure pour ce champ. Une bordure doit être définie avant de pouvoir modifier la couleur par script.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>borderWidth</td>
    <td>Indique la largeur de la bordure pour ce champ.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Mesure de la hauteur pour la disposition.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>transient</td>
    <td>Spécifie si l’application de traitement doit sauvegarder la valeur du groupe d’exclusion lors de l’envoi du formulaire ou d’une opération de sauvegarde.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Mesure indiquant la largeur pour la disposition.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Indique la coordonnée X du point d’ancrage d’un conteneur par rapport au coin supérieur gauche du conteneur parent lors d’un placement avec disposition positionnée.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Indique la coordonnée Y du point d’ancrage d’un conteneur par rapport au coin supérieur gauche du conteneur parent lors d’un placement avec disposition positionnée.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>caption</td>
    <td>L’objet caption décrit un libellé descriptif associé à un objet de conception de formulaire.<br /> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>dataNode</td>
    <td>Obtient le nœud de données auquel est lié un nœud de formulaire après la fusion.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>presence</td>
@@ -970,29 +973,29 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Pour les éléments individuels dans l’exclgrp, il renvoie toujours ouvert. </td>
   </tr>
   <tr>
-   <td>nom est</td>
+   <td>name</td>
    <td>Identificateur qui permet de désigner un objet ou un événement dans les expressions de script.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>members</td>
    <td>Indiquez les membres du groupe d’exclusion. </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>selectedMember</td>
    <td>Renvoie le membre sélectionné d’un groupe d’exclusion.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>execCalculate</td>
    <td>Exécute tous les scripts sur l’événement calculate de l’objet spécifié, ainsi que tous les objets enfants.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>calculate</td>
    <td>L’objet calculate contrôle le calcul de la valeur d’un champ.<br /> </td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
  </tbody>
 </table>
@@ -1088,7 +1091,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   <tr>
    <td>pagecontent</td>
    <td>Récupère les types d’objet de conception de formulaire à partir d’une page donnée d’un formulaire.</td>
-   <td>Aucun</td>
+   <td>Aucune</td>
   </tr>
   <tr>
    <td>absPageCount</td>
@@ -1106,7 +1109,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 | **Propriété** | **Description** | **Exception** |
 |---|---|---|
-| presence | Indique si un objet est visible ou non. | Aucun |
+| presence | Indique si un objet est visible ou non. | Aucune |
 
 ## FormCalc {#formcalc}
 
@@ -1254,12 +1257,12 @@ FormCalc est un langage spécifique à XFA pour la création d’une logique rel
   </tr>
   <tr>
    <td>console.println()</td>
-   <td>Cette API Acrobat transfère la sortie vers la console JavaScript.</td>
+   <td>Cette API Acrobat vide la sortie vers la console JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.alert()</td>
-   <td>Cette API Acrobat envoie un message d’alerte via une boîte de dialogue contextuelle JavaScript.</td>
+   <td>Cette API Acrobat envoie un message d’alerte par le biais de la fenêtre contextuelle JavaScript.</td>
    <td> </td>
   </tr>
   <tr>
