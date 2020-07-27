@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1469'
+ht-degree: 71%
 
 ---
 
@@ -37,7 +40,7 @@ Un schéma JSON se compose de types d’éléments simples et complexes. Les él
 
 Cette mise en correspondance des éléments JSON avec les composants de formulaires adaptatifs est la suivante :
 
-```
+```json
 "birthDate": {
               "type": "string",
               "format": "date",
@@ -109,23 +112,23 @@ Cette mise en correspondance des éléments JSON avec les composants de formulai
 
 Le formulaire adaptatif utilise les informations disponibles dans le schéma JSON pour mapper chaque champ généré. En particulier :
 
-* La propriété title sert de libellé aux composants du formulaire adaptatif.
-* La propriété description est définie comme une description longue pour un composant de formulaire adaptatif.
+* La propriété title sert de libellé pour les composants du formulaire adaptatif.
+* La propriété description est définie en tant que description longue pour un composant de formulaire adaptatif.
 * La propriété par défaut sert de valeur initiale à un champ de formulaire adaptatif.
-* La propriété maxLength est définie comme attribut maxlength du composant de champ de texte.
+* La propriété maxLength est définie sous la forme d’un attribut maxlength du composant de champ de texte.
 * Les propriétés minimales, maximales, exclusivesMinimum et exclusivesMaximum sont utilisées pour le composant de zone numérique.
-* Pour prendre en charge la plage du composant DatePicker, d’autres propriétés de schéma JSON minDate et maxDate sont fournies.
+* Pour prendre en charge la plage du composant DatePicker, d’autres propriétés de Schéma JSON minDate et maxDate sont fournies.
 * Les propriétés minItems et maxItems permettent de limiter le nombre d’éléments/de champs qui peuvent être ajoutés ou supprimés d’un composant de panneau.
 * La propriété readOnly définit l’attribut readonly d’un composant de formulaire adaptatif.
-* La propriété requise marque le champ du formulaire adaptatif comme étant obligatoire, alors que dans le cas d’un panneau (où type est objet), les données JSON finales envoyées comportent des champs avec une valeur vide correspondant à cet objet.
+* La propriété requise marque le champ du formulaire adaptatif comme obligatoire alors que dans le cas d’un panneau (où le type est un objet), les données JSON envoyées finales comportent des champs avec une valeur vide correspondant à cet objet.
 * La propriété pattern est définie en tant que modèle de validation (expression régulière) dans le formulaire adaptatif.
-* L’extension du fichier de schéma JSON doit être conservée dans .schema.json. Par exemple, &lt;nom_fichier>.schema.json.
+* L’extension du fichier de Schéma JSON doit être conservée dans .schéma.json. Par exemple, &lt;nom_fichier>.schéma.json.
 
 ## Exemple de schéma JSON {#sample-json-schema}
 
 Vous trouverez ci-dessous un exemple de schéma JSON.
 
-```
+```json
 {
  "$schema": "https://json-schema.org/draft-04/schema#",
  "definitions": {
@@ -307,7 +310,7 @@ Vous trouverez ci-dessous un exemple de schéma JSON.
 
 Les touches de définition sont utilisées pour identifier les schémas réutilisables. Les définitions de schéma réutilisables sont utilisées pour créer des fragments. Il est semblable à l’identification des types complexes dans XSD. Un exemple de schéma JSON dont la définition est fournie ci-dessous :
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
 
@@ -338,7 +341,7 @@ L’exemple ci-dessus définit un enregistrement de client dans lequel chaque cl
 
 You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom adaptive form component. Un exemple est répertorié ci-dessous :
 
-```
+```json
 {
     "properties": {
         "sizeInMB": {
@@ -356,13 +359,13 @@ You can use the **aem:afProperties** property to preconfigure JSON Schema field 
 }
 ```
 
-## Configuration de scripts ou d’expressions pour les objets de formulaire {#configure-scripts-or-expressions-for-form-objects}
+## Configuration de scripts ou d’expressions pour les objets de formulaire  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Vous pouvez préconfigurer des objets de formulaire pour [évaluer une expression](../../forms/using/adaptive-form-expressions.md) sur un événement de formulaire.
 
-Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou scripts de formulaire adaptatif pour les composants de formulaire adaptatif. Par exemple, lorsque l’événement initialize est déclenché, le code ci-dessous définit la valeur du champ de téléphone et imprime une valeur dans le journal :
+Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou scripts de formulaire adaptatif pour les composants de formulaire adaptatif. Par exemple, lorsque le événement d’initialisation est déclenché, le code ci-dessous définit la valeur du champ de téléphone et imprime une valeur dans le journal :
 
-```
+```json
 "telephone": {
   "type": "string",
   "pattern": "/\\d{10}/",
@@ -378,12 +381,12 @@ Utilisez la propriété aem:afproperties pour préconfigurer les expressions ou 
 }
 ```
 
-Vous devez être membre du groupe [](/help/forms/using/forms-groups-privileges-tasks.md) forms-power-user pour configurer des scripts ou des expressions pour l’objet de formulaire. Le tableau ci-dessous répertorie tous les événements de script pris en charge pour un composant de formulaire adaptatif.
+Vous devez être membre du groupe [d’utilisateurs](/help/forms/using/forms-groups-privileges-tasks.md) Forms-power pour configurer des scripts ou des expressions pour l’objet de formulaire. Le tableau ci-dessous liste tous les événements de script pris en charge pour un composant de formulaire adaptatif.
 
 <table>
  <tbody>
   <tr>
-   <th><strong></strong>Composant \ Evénement</th>
+   <th><strong></strong>Composant \ Événement</th>
    <th>initialize <br /> </th>
    <td>Calculer</td>
    <td>Visibilité</td>
@@ -391,7 +394,7 @@ Vous devez être membre du groupe [](/help/forms/using/forms-groups-privileges-t
    <td>Activé</td>
    <td>Validation de la valeur</td>
    <td>Cliquez sur </td>
-   <td>Options</td>
+   <td>Options </td>
   </tr>
   <tr>
    <td>Champ de texte</td>
@@ -526,7 +529,7 @@ Vous devez être membre du groupe [](/help/forms/using/forms-groups-privileges-t
    <td> </td>
   </tr>
   <tr>
-   <td>Courriel</td>
+   <td>Email</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -583,13 +586,13 @@ Vous devez être membre du groupe [](/help/forms/using/forms-groups-privileges-t
  </tbody>
 </table>
 
-Certains exemples d’utilisation d’événements dans un JSON masquent un champ sur un événement initialize et configurent la valeur d’un autre champ sur un événement de validation de valeur. Pour plus d’informations sur la création d’expressions pour les événements de script, voir Expressions [de formulaire](../../forms/using/adaptive-form-expressions.md)adaptatif.
+Certains exemples d’utilisation de événements dans un JSON masquent un champ sur l’initialisation du événement et la configuration de la valeur d’un autre champ sur le événement de validation de valeur. Pour plus d’informations sur la création d’expressions pour les événements de script, voir Expressions [de formulaires](../../forms/using/adaptive-form-expressions.md)adaptatifs.
 
 Voici l’exemple de code JSON pour les exemples susmentionnés.
 
-### Masquage d’un champ sur un événement initialize {#hiding-a-field-on-initialize-event}
+### Masquage d’un champ sur l’initialisation du événement {#hiding-a-field-on-initialize-event}
 
-```
+```json
 "name": {
     "type": "string",
     "aem:afProperties": {
@@ -600,9 +603,9 @@ Voici l’exemple de code JSON pour les exemples susmentionnés.
 }
 ```
 
-#### Configurer la valeur d’un autre champ sur l’événement de validation de valeur {#configure-value-of-another-field-on-value-commit-event}
+#### Configurer la valeur d&#39;un autre champ sur le événement de validation de valeur {#configure-value-of-another-field-on-value-commit-event}
 
-```
+```json
 "Income": {
     "type": "object",
     "properties": {
@@ -626,7 +629,7 @@ Voici l’exemple de code JSON pour les exemples susmentionnés.
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
+Vous pouvez ajouter les restrictions suivantes aux éléments de Schéma JSON pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
 
 <table>
  <tbody>
@@ -634,7 +637,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
    <td><p><strong> Propriété de schéma</strong></p> </td>
    <td><p><strong>Type de données</strong></p> </td>
    <td><p><strong>Description</strong></p> </td>
-   <td><p><strong>Component</strong></p> </td>
+   <td><p><strong>Composant</strong></p> </td>
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
@@ -660,7 +663,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   </tr>
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
-   <td><p>Booléen  </p> </td>
+   <td><p>Booléen</p> </td>
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td>
    <td>
     <ul>
@@ -671,7 +674,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
   </tr>
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
-   <td><p>Booléen  </p> </td>
+   <td><p>Booléen</p> </td>
    <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td>
    <td>
     <ul>
@@ -746,4 +749,4 @@ Vous disposez de deux options :
 
 **Quelle doit être l’extension du fichier de schéma JSON ?**
 
-L’extension du fichier de schéma JSON doit être .schema.json. Par exemple, &lt;nom_fichier>.schema.json.
+L’extension du fichier de Schéma JSON doit être .schéma.json. Par exemple, &lt;nom_fichier>.schéma.json.
