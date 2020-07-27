@@ -1,22 +1,25 @@
 ---
-title: Configuration des paramètres d’administration sécurisée pour AEM Forms sur JEE
-seo-title: Configuration des paramètres d’administration sécurisée pour AEM Forms sur JEE
-description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un de développement privé, ne sont pas requis dans un  de production  d’AEM Forms sur JEE.
-seo-description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un de développement privé, ne sont pas requis dans un  de production  d’AEM Forms sur JEE.
+title: Configuration des paramètres d’administration sécurisée pour AEM Forms on JEE
+seo-title: Configuration des paramètres d’administration sécurisée pour AEM Forms on JEE
+description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms sur JEE.
+seo-description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms sur JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 
-# Configuration des paramètres d’administration sécurisée pour AEM Forms sur JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Configuration des paramètres d’administration sécurisée pour AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un de développement privé, ne sont pas requis dans un  de production  d’AEM Forms sur JEE.
+Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms sur JEE.
 
 En règle générale, les développeurs n’utilisent pas l’environnement de production pour construire et tester leurs applications. Pour cette raison, vous devez administrer des comptes utilisateur et des services qui, bien que nécessaires dans un environnement de développement privé, ne le sont pas dans un environnement de production.
 
@@ -30,11 +33,11 @@ Bien que l’utilisation des services d’AEM Forms sur JEE implique la transmis
 
 Les services d’AEM Forms sur JEE doivent toujours disposer d’au moins un accès SOAP. Ces services sont généralement nécessaires pour Workbench, mais il peut également s’agir de services appelés par l’application Web Workspace.
 
-Suivez cette procédure à l’aide de la page Web Applications et services d’Administration Console :
+Suivez cette procédure en utilisant la page Web Applications et services d’Administration Console :
 
 1. Connectez-vous à Administration Console en saisissant l’URL suivante dans un navigateur Web :
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -69,7 +72,7 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
 
 1. Connectez-vous à la console d’administration en saisissant l’URL suivante dans un navigateur Web :
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
@@ -80,7 +83,7 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
 
    * AuthenticationManagerService
    * EJB
-   * Courrier électronique
+   * Email
    * JobManager
    * WatchedFolder
    * UsermanagerUtilService
@@ -99,19 +102,20 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
    * WorkspacePropertyService
    * OutputService
    * FormsService
+
    Si vous prévoyez d’exposer l’un de ces services pour les appels distants, vous devriez également envisager de désactiver l’accès anonyme pour ces services. Si vous ne le faites pas, tout appelant disposant d’un accès réseau à ce service pourra appeler le service sans spécifier d’informations d’identification valides.
 
    Nous vous conseillons de désactiver l’accès anonyme pour tous les services dont vous n’avez pas besoin. De nombreux services internes impliquent que l’authentification anonyme soit activée, car ils doivent pouvoir être appelés par potentiellement tout utilisateur du système sans préautorisation.
 
 ## Modification du délai d’expiration global par défaut {#changing-the-default-global-time-out}
 
-Les utilisateurs finaux peuvent s’authentifier auprès d’AEM Forms par le biais de Workbench, d’applications Web AEM Forms ou d’applications personnalisées qui appellent des services de serveur AEM Forms. Un paramètre de délai d’expiration permet de spécifier la durée pendant laquelle ces utilisateurs peuvent interagir avec AEM Forms (en utilisant une assertion SAML) avant d’être obligés de s’authentifier de nouveau. Par défaut, ce paramètre est défini sur deux heures. Dans un environnement de production, cette durée doit être réduite au nombre minimum de minutes acceptable.
+Les utilisateurs finaux peuvent s’authentifier auprès des AEM Forms par le biais de Workbench, d’applications Web AEM Forms ou d’applications personnalisées qui appellent des services de serveur AEM Forms. Un paramètre de délai d’expiration permet de spécifier la durée pendant laquelle ces utilisateurs peuvent interagir avec AEM Forms (en utilisant une assertion SAML) avant d’être obligés de s’authentifier de nouveau. Par défaut, ce paramètre est défini sur deux heures. Dans un environnement de production, cette durée doit être réduite au nombre minimum de minutes acceptable.
 
 ### Réduction au minimum de la durée limite avant réauthentification: {#minimize-reauthentication-time-limit}
 
 1. Connectez-vous à la console d’administration en saisissant l’URL suivante dans un navigateur Web :
 
-   ```as3
+   ```java
             https://[host name]:'port'/adminui
    ```
 
