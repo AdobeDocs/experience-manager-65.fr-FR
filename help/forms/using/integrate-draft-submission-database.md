@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 92%
@@ -338,7 +338,7 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
 1. Cliquez avec le bouton droit sur le nœud, cliquez sur **[!UICONTROL Créer un nouveau fichier]** et créez un fichier avec l’extension .txt. Par exemple, `js.txt` Ajoutez le code suivant au fichier .txt nouvellement créé et cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -349,7 +349,7 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
 1. Ajoutez le code suivant au fichier util.js et cliquez sur **[!UICONTROL Enregistrer tout]**. Le code valide la longueur du nom de fichier.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________
