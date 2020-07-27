@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 63%
 
 ---
 
@@ -29,8 +32,8 @@ La localisation des formulaires adaptatifs repose sur deux types de dictionnaire
 
 Lorsqu’un formulaire adaptatif est rendu, il identifie les paramètres régionaux requis en examinant les paramètres suivants dans l’ordre spécifié : 
 
-* Request parameter `afAcceptLang`
-To override the browser locale of users, you can pass the `afAcceptLang` request parameter to force the locale. Par exemple, l’URL suivante force le rendu du formulaire en japonais :
+* Paramètre de requête `afAcceptLang`Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre la variable 
+`afAcceptLang` pour forcer le paramètre régional. Par exemple, l’URL suivante force le rendu du formulaire dans les paramètres régionaux japonais :
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
@@ -43,7 +46,7 @@ S’il n’existe pas de bibliothèque client pour le paramètre régional requi
 
 ## Ajoutez la localisation pour les paramètres régionaux non pris en charge{#add-localization-support-for-non-supported-locales} 
 
-AEM Forms prend actuellement en charge les  de contenu de formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR).
+Le AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR).
 
 Pour ajouter un nouveau paramètre régional lors de l’exécution des formulaires adaptatifs :
 
@@ -65,13 +68,13 @@ Pour ajouter un nouveau paramètre régional lors de l’exécution des formulai
 
 ### Ajouter la bibliothèque XFA client pour un paramètre régional {#add-xfa-client-library-for-a-locale-br}
 
-Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec des  de `xfaforms.I18N.<locale>`, et ajoutez les fichiers suivants à la bibliothèque cliente :
+Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec catégorie `xfaforms.I18N.<locale>`, et ajoutez les fichiers suivants à la bibliothèque cliente :
 
 * **I18N.js** définissant `xfalib.locale.Strings` pour le `<locale>` comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 
 * **js.txt** contenant les éléments suivants :
 
-```
+```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
@@ -79,15 +82,15 @@ I18N.js
 
 ### Ajouter la bibliothèque cliente de formulaires adaptatifs pour un paramètre régional {#add-adaptive-form-client-library-for-a-locale-br}
 
-Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec les  de comme `guides.I18N.<locale>` et et les dépendances comme `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`. &quot;
+Créez un noeud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie comme `guides.I18N.<locale>` et les dépendances comme `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`. &quot;
 
 Ajouter les fichiers suivants à la bibliothèque client :
 
-* **i18n.js** définissant `guidelib.i18n`, ayant des modèles de &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, ,  pour le  conformément aux spécifications XFA décrites dans le de spécification de jeu de paramètres régionaux de l’. `currencySymbols``typefaces``<locale>`[](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf) You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
-* **LogMessages.js** définissant `guidelib.i18n.strings` et `guidelib.i18n.LogMessages` pour le `<locale>` comme défini dans `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
+* **i18n.js** définissant `guidelib.i18n`, ayant des modèles de &quot;calendarSymbols&quot;, `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, ,  pour la  conformément aux spécifications XFA décrites dans le  de spécification des ensembles de paramètres régionaux de l’. `currencySymbols``typefaces``<locale>`[](https://helpx.adobe.com/fr/content/dam/Adobe/specs/xfa_spec_3_3.pdf) You can also see how it is defined for other supported locales in `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **LogMessages.js** définissant `guidelib.i18n.strings` et `guidelib.i18n.LogMessages` pour le `<locale>` contenu comme défini dans `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.txt** contenant les éléments suivants :
 
-```
+```text
 i18n.js
 LogMessages.js
 ```
@@ -99,7 +102,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 1. Create an `nt:unstructured` node `languages` under `etc`, if not present already.
 
 1. Add a multi-valued string property `languages` to the node, if not present already.
-1. Ajouter les valeurs de paramètres régionaux `<locale>` par défaut `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, , ,, s’ils ne sont pas déjà présents.`zh-tw``ja``ko-kr`
+1. Ajoutez les valeurs de paramètres régionaux `<locale>` par défaut `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, , , ,, si elles ne sont pas déjà présentes.`zh-tw``ja``ko-kr`
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
