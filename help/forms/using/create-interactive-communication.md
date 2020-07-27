@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6120'
 ht-degree: 28%
 
 ---
@@ -187,7 +187,7 @@ Appuyez sur le fragment de document, appuyez sur ![configure_icon](assets/config
 
    ![webchannelassets](assets/webchannelassets.png)
 
-   Appuyez sur le fragment de document, appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer), puis sur **[!UICONTROL Propriétés]** dans le panneau latéral de la communication interactive. La section **[!UICONTROL Variables et Objets]** de modèle de données liste les variables, y compris les variables masquées, et les objets de modèle de données utilisés dans les fragments de document. Utilisez l’icône ![Modifier](assets/edit.svg) (Modifier) en regard de chaque objet ou variable de modèle de données pour modifier les propriétés. En outre, pour les fragments de document générés [](#synchronize) automatiquement dans le canal Web à l’aide du canal d’impression, utilisez l’icône ![](assets/cancelinheritance.png) (Annuler l’héritage) en regard de chaque objet et variable de modèle de données pour [annuler l’héritage](#cancelinheritance) et pour pouvoir les modifier.
+   Appuyez sur le fragment de document, appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer), puis sur **[!UICONTROL Propriétés]** dans le panneau latéral de la communication interactive. La section **[!UICONTROL Variables et Objets]** de modèle de données liste les variables, y compris les variables masquées, et les objets de modèle de données utilisés dans les fragments de document. Utilisez l’icône ![Modifier](assets/edit.svg) (Modifier) en regard de chaque objet ou variable de modèle de données pour modifier les propriétés. En outre, pour les fragments de document générés [](#synchronize) automatiquement dans le canal Web à l’aide du canal d’impression, utilisez l’icône ![Annuler l’héritage](assets/cancelinheritance.png) (Annuler l’héritage) en regard de chaque objet et variable de modèle de données pour [annuler l’héritage](#cancelinheritance) et pour pouvoir les modifier.
 
 1. Pour ajouter des composants supplémentaires dans le canal web, lorsque le canal web est sélectionné, appuyez sur **[!UICONTROL Composants]**. Faites glisser les composants dans le canal Web de votre communication interactive selon les besoins et procédez à leur configuration.
 
@@ -386,12 +386,12 @@ Appuyez sur le panneau racine du modèle Web et appuyez sur **+** pour ajouter u
 
 #### Ajouter ou modifier du texte dans les cellules du tableau {#addedittexttable}
 
-1. Sélectionnez la zone de texte par défaut dans la cellule du tableau et appuyez sur ![](assets/edit.png) (Modifier).
-1. Tapez le texte dans la cellule du tableau et appuyez sur ![](assets/done_icon.png) pour l’enregistrer.
+1. Sélectionnez la zone de texte par défaut dans la cellule du tableau et appuyez sur ![Modifier](assets/edit.png) (Modifier).
+1. Tapez le texte dans la cellule du tableau et appuyez sur ![done_icon](assets/done_icon.png) pour l’enregistrer.
 
 #### Créer une liaison entre les cellules du tableau et les éléments d’objet du modèle de données {#createbindingtablecells}
 
-1. Sélectionnez la zone de texte par défaut dans la ligne du tableau et appuyez sur ![](assets/edit.png) (Modifier).
+1. Sélectionnez la zone de texte par défaut dans la ligne du tableau et appuyez sur ![Modifier](assets/edit.png) (Modifier).
 1. Appuyez sur la liste déroulante Objets de modèle de données et sélectionnez la propriété.
 1. Appuyez sur pour enregistrer et créer une liaison entre la cellule de tableau et la propriété d’objet de modèle de données.
 
@@ -399,10 +399,10 @@ Appuyez sur le panneau racine du modèle Web et appuyez sur **+** pour ajouter u
 
 #### Création d’un hyperlien pour le texte dans la cellule du tableau {#createhyperlinktable}
 
-1. Sélectionnez la zone de texte par défaut dans la cellule du tableau et appuyez sur ![](assets/edit.svg) (Modifier).
+1. Sélectionnez la zone de texte par défaut dans la cellule du tableau et appuyez sur ![Modifier](assets/edit.svg) (Modifier).
 1. Sélectionnez le texte dans la cellule du tableau et appuyez sur l’icône Hyperlien.
 1. Specify the URL in the **Path** field.
-1. Tap ![](assets/done_icon.png) to save the hyperlink properties.
+1. Tap ![done_icon](assets/done_icon.png) to save the hyperlink properties.
 
 ![Créer un hyperlien](assets/create_hyperlink_table_new.png)
 
@@ -426,9 +426,9 @@ Le tri peut être appliqué aux colonnes de tableaux contenant :
 
 Pour activer le tri :
 
-1. Select the table and tap ![](assets/configure_icon.png) (Configure). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **contenu** dans le panneau latéral de la communication interactive.
+1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **contenu** dans le panneau latéral de la communication interactive.
 1. Sélectionnez **Activer le tri.**
-1. Tap ![](assets/done_icon.png) to save the table properties. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
+1. Tap ![done_icon](assets/done_icon.png) to save the table properties. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new-1.png)
 
@@ -479,7 +479,7 @@ Vous pouvez ajouter un bouton en tant que composant au canal Web de la communica
 Pour ajouter un bouton et définir des règles sur celui-ci :
 
 1. Appuyez sur le panneau racine du modèle Web et appuyez sur **+** pour ajouter le composant **Bouton** à la communication interactive.
-1. Appuyez sur le composant de bouton et appuyez sur ![](assets/edit-rules.png) pour définir des règles lorsque vous appuyez sur le bouton.
+1. Appuyez sur le composant de bouton et appuyez sur ![modifier les règles](assets/edit-rules.png) pour définir des règles sur le bouton.
 1. Dans la section **Lorsque** , sélectionnez **cliqué** dans l’état de la liste déroulante de bouton.
 1. In the **Then** section:
 
