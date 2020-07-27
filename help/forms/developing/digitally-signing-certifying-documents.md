@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '16977'
 ht-degree: 8%
@@ -526,7 +526,7 @@ Modifiez un champ de signature à l’aide de l’API de signature (service Web)
 
    >[!NOTE]
    >
-   >Pour afficher toutes les valeurs du dictionnaire de valeurs de départ que vous pouvez définir, voir la référence de `PDFSeedValueOptionSpec` classe. (Voir Référence [sur les API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
+   >Pour afficher toutes les valeurs du dictionnaire de valeurs de départ que vous pouvez définir, consultez la référence de `PDFSeedValueOptionSpec` classe. (Voir Référence [sur les API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms).
 
 1. Modification du champ de signature
 
@@ -589,8 +589,8 @@ Lors de l’utilisation d’informations d’identification HSM nCipher pour sig
 
 Vous pouvez ajouter la valeur de configuration suivante dans le fichier cknfastrc, qui se trouve dans /opt/nfast/cknfastrc (ou c:\nfast\cknfastrc) :
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Après avoir ajouté cette valeur de configuration au fichier cknfastrc, vous pouvez utiliser les nouvelles informations d’identification sans redémarrer le serveur d’applications J2EE.
@@ -1077,8 +1077,8 @@ Vous pouvez programmer la certification des documents PDF à l’aide de l’API
 
 Vous pouvez ajouter la valeur de configuration suivante dans le fichier cknfastrc, qui se trouve dans /opt/nfast/cknfastrc (ou c:\nfast\cknfastrc) :
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Après avoir ajouté cette valeur de configuration au fichier cknfastrc, vous pouvez utiliser les nouvelles informations d’identification sans redémarrer le serveur d’applications J2EE.
