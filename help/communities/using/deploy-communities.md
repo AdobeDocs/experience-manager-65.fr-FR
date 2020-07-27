@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1894'
 ht-degree: 6%
 
 ---
@@ -138,7 +138,7 @@ Pour plus d&#39;informations sur l&#39;installation des lots, consultez la page 
 
 #### Exemple : Groupe MySQL Connector installé {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### Package SCORM {#scorm-package}
 
@@ -222,7 +222,7 @@ Par défaut, la configuration `AEM Communities Publisher Configuration` OSGi est
 
 Par conséquent, il est nécessaire de **modifier la configuration sur toutes les instances** de publication secondaires pour décocher la **`Primary Publisher`** case.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 Pour toutes les autres instances de publication (secondaires) d’une batterie de publication :
 
@@ -266,11 +266,11 @@ Les images suivantes montrent les résultats du changement de port de 4503 à 61
 
 #### Agent par défaut (publication) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configurer-limites](../assets/configure-limits.png)
 
 #### Agent de réplication inverse (inversion de publication) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### Service de tunnel sur l’auteur {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ Pour activer le service tunnel :
 * cochez la **activer **case
 * sélectionnez **Enregistrer**
 
-![](/help/communities/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### Réplication de la clé Crypto {#replicate-the-crypto-key}
 
@@ -351,7 +351,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [actualisation du lot Granite Crypto](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### Actualiser l&#39;offre groupée Granite Crypto {#refresh-the-granite-crypto-bundle}
 
@@ -362,7 +362,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * localiser le `Adobe Granite Crypto Support` lot (com.adobe.granite.crypto)
 * sélectionner **Actualiser**
 
-![](/help/communities/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * au bout d&#39;un instant, une **boîte de dialogue de **réussite **doit s&#39;afficher :
    `Operation completed successfully.`
