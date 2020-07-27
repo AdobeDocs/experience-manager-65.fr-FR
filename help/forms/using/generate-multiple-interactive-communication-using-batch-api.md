@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 6%
@@ -28,7 +28,7 @@ Vous combinez un enregistrement à un modèle de communication interactif pour p
 
 **Un enregistrement unique dans un fichier JSON**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -41,7 +41,7 @@ Vous combinez un enregistrement à un modèle de communication interactif pour p
 
 **Plusieurs enregistrements dans un fichier JSON**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -89,7 +89,7 @@ Pour créer une communication interactive à partir d’enregistrements enregist
 1. Configurez les paramètres avancés :
    1. Ouvrez l’onglet **[!UICONTROL Avancé]** et ajoutez les propriétés personnalisées suivantes :
 
-      | Propriétés | Type | Description |
+      | Propriété | Type | Description |
       |--- |--- |--- |
       | templatePath | Chaîne | Spécifiez le chemin d’accès du modèle de communication interactif à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
       | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin d’un champ d’enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ id devient le nom de la communication interactive correspondante. La valeur par défaut est un UUID [](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID())aléatoire. |
@@ -151,7 +151,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
 1. Configurez les paramètres avancés :
    1. Ouvrez l’onglet **[!UICONTROL Avancé]** et ajoutez les propriétés personnalisées suivantes :
 
-      | Propriétés | Type | Description |
+      | Propriété | Type | Description |
       |--- |--- |--- |
       | templatePath | Chaîne | Spécifiez le chemin d’accès du modèle de communication interactif à utiliser. Par exemple, /content/dam/formsanddocuments/testsample/mediumic. Il s’agit d’une propriété obligatoire. |
       | recordPath | Chaîne | La valeur du champ recordPath permet de définir le nom d’une communication interactive. Vous pouvez définir le chemin d’un champ d’enregistrement comme valeur du champ recordPath. Par exemple, si vous spécifiez /employee/Id, la valeur du champ id devient le nom de la communication interactive correspondante. La valeur par défaut est un UUID [](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID())aléatoire. |  |
@@ -179,7 +179,7 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
 1. [Créez et déployez un projet AEM à l’aide d’Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) sur votre instance AEM.
 1. Ajoutez le SDK client [AEM Forms version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure dans la liste des dépendances du fichier POM de votre projet AEM. Par exemple :
 
-   ```XML
+   ```xml
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
