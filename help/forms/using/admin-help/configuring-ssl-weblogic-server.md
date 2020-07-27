@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 74%
 
 ---
 
@@ -43,7 +46,7 @@ La commande keytool se situe généralement dans le répertoire Java jre/bin et 
    <td>
     <ul>
      <li><p>Fichier de stockage des clés d'identité personnalisée : <code>ads-credentials</code></p></li>
-     <li><p>Fichier de stockage de clés d’approbation personnalisée : <code>bedrock</code></p></li>
+     <li><p>Fichier de stockage des clés d’approbation personnalisée : <code>bedrock</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -90,7 +93,7 @@ La commande keytool se situe généralement dans le répertoire Java jre/bin et 
    <td><p><code>"CN=</code><code>[User name]</code><code>,OU=</code><code>[Group Name]</code><code>, O=</code><code>[Company Name]</code><code>, L=</code><code>[City Name]</code><code>, S=</code><code>[State or province]</code><code>, C=</code><code>[Country Code]</code><code>"</code></p>
     <ul>
      <li><p><code><i>[User name]</i></code> est l’identification de l’utilisateur propriétaire du fichier de stockage des clés.</p></li>
-     <li><p><code><i>[Group Name]</i></code> est l’identification du groupe d’entreprises auquel appartient le propriétaire du fichier de stockage de clés.</p></li>
+     <li><p><code><i>[Group Name]</i></code> est l'identification du groupe d'entreprise auquel appartient le propriétaire du fichier de stockage des clés.</p></li>
      <li><p><code><i>[Company Name]</i></code> est le nom de votre organisation.</p></li>
      <li><p><code><i>[City Name]</i></code> est la ville où se trouve votre organisation.</p></li>
      <li><p><code><i>[State or province]</i></code> est l’état ou la province où se trouve votre organisation.</p></li>
@@ -115,7 +118,7 @@ Pour plus d’informations sur l’utilisation de la commande keytool, consultez
 
    Par exemple :
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
@@ -135,7 +138,7 @@ Pour plus d’informations sur l’utilisation de la commande keytool, consultez
 
    Par exemple :
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
@@ -152,7 +155,7 @@ Pour plus d’informations sur l’utilisation de la commande keytool, consultez
 
    Par exemple :
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
@@ -177,7 +180,7 @@ Configurez WebLogic pour qu’il utilise les fichiers de stockage des clés d’
 1. Cliquez sur **Change** pour afficher la liste des fichiers de stockage des clés sous forme de liste déroulante et sélectionnez **Custom Identity And Custom Trust**.
 1. Sous Identity, spécifiez les valeurs suivantes :
 
-   **Custom Identity Keystore**: *[domaine]* du serveur d’applications/adobe/nom *[du]* serveur /ads-credentials.jks, où *domaine[du serveur d’applications *correspond au chemin d’accès réel et au nom du] *[serveur correspond au nom du serveur d’applications.]*
+   **Custom Identity Keystore**: *[domaine]* du serveur d’applications/adobe/nom *[de]* serveur /ads-credentials.jks, où *domaine[du serveur d’applications *correspond au chemin d’accès réel et au nom] du *[]* serveur correspond au nom du serveur d’applications.
 
    **Custom Identity Keystore Type** : JKS
 
@@ -185,7 +188,7 @@ Configurez WebLogic pour qu’il utilise les fichiers de stockage des clés d’
 
 1. Sous Trust, spécifiez les valeurs suivantes :
 
-   **Nom** du fichier de stockage de clés d&#39;approbation personnalisée : `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, où `*[appserverdomain]*` est le chemin réel
+   **Nom** du fichier de stockage de clés d&#39;approbation personnalisée : `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, où `*[appserverdomain]*` est le chemin d’accès réel
 
    **Custom Trust Keystore Type** : JKS
 
