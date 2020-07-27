@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2301'
+ht-degree: 79%
 
 ---
 
@@ -44,7 +47,7 @@ Les cellules du corps sont par défaut des zones de texte. Vous pouvez remplacer
 
 Par exemple, la première rangée du corps du tableau ci-dessous inclut les composants Zone de texte, Sélecteur de dates et Liste déroulante comme cellules.
 
-![row-cell-types](assets/row-cell-types.png)
+![types de cellule-ligne](assets/row-cell-types.png)
 
 Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellules que vous souhaitez fusionner, puis en cliquant avec le bouton droit et en choisissant la commande **Fusionner**. Vous pouvez aussi diviser une cellule fusionnée en cliquant sur celle-ci et en sélectionnant **Fractionner les cellules**.
 
@@ -78,32 +81,32 @@ Vous pouvez ajouter une description au tableau pour expliquer comment il organis
 
 Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau dans le formulaire adaptatif. Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
 
-Le tri peut être appliqué aux colonnes du tableau contenant les éléments suivants :
+Le tri peut être appliqué aux colonnes du tableau contenant :
 
 * Texte statique
 * Propriétés de l’objet de modèle de données
 * Combinaison de texte statique et de propriétés d’objet de modèle de données
 
-Pour appliquer le tri aux colonnes du tableau, les cellules des colonnes du tableau doivent contenir l’un des composants suivants : Zone numérique, Etapes numériques, Champ de saisie de date, Sélecteur de date, Texte ou Zone de texte.
+Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du tableau doivent contenir l’un des composants suivants : Zone numérique, Procédure pas à pas numérique, champ de saisie de date, sélecteur de date, texte ou zone de texte.
 
 Pour activer le tri :
 
-1. Select the table and tap ![](assets/configure_icon.png) (Configure). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **contenu** dans le panneau latéral d’Interactive Communication.
+1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **contenu** dans le panneau latéral de la communication interactive.
 1. Sélectionnez **Activer le tri**.
-1. Tap ![](assets/done_icon.png) to save the table properties. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonne, indiquent que le tri a été activé.
+1. Tap ![done_icon](assets/done_icon.png) to save the table properties. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new.png)
 
-1. Passez en mode **** pour  la sortie. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
+1. Passez en mode **Prévisualisation** à la vue de la sortie. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
 1. Cliquez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
 
-   Un en-tête de colonne avec une flèche vers le haut indique que le tableau est trié en fonction de cette colonne. En outre, les valeurs de la colonne sont affichées dans l’ordre croissant.
+   Un en-tête de colonne avec une flèche vers le haut indique que le tableau est trié en fonction de cette colonne. En outre, les valeurs de la colonne s’affichent dans l’ordre croissant.
 
    ![Tri dans l’ordre croissant](assets/sorting_ascending_new.png)
 
    De même, un en-tête de colonne avec une flèche vers le bas représente que les valeurs de la colonne sont affichées dans l’ordre décroissant.
 
-   Vous pouvez également apporter des modifications au tableau en mode **** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
+   Vous pouvez également apporter des modifications au tableau en mode **Prévisualisation** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
 
 ## Configuration du style de tableau {#configure}
 
@@ -160,7 +163,7 @@ Pour obtenir la liste complète des classes de formulaires adaptatifs, des évé
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. Les formulaires AEM   deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
+Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
 
 Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
@@ -168,7 +171,7 @@ Vous pouvez configurer une disposition de tableau pour périphériques mobiles d
 
 Dans la disposition En-têtes à gauche, les en-têtes du tableau sont transposés à gauche. Une seule cellule apparaît pour un en-tête. Chaque ligne dans cette disposition s’affiche en tant que partie distincte. Les images suivantes comparent un tableau sur un bureau et le même tableau sur un périphérique mobile.
 
-![de bureau](assets/desktopview_new.png)
+![vue de bureau](assets/desktopview_new.png)
 
 Vue Bureau d’un tableau avec disposition En-têtes à gauche
 
@@ -200,7 +203,7 @@ Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors
 
 Prenons l’exemple du tableau récapitulatif de transaction bancaire suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
 
-![data-merge-table](assets/data-merge-table.png)
+![tableau de fusion-données](assets/data-merge-table.png)
 
 Dans cet exemple, la propriété Nom d’élément pour :
 
@@ -274,7 +277,7 @@ Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiq
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![data-merge-table](assets/data-merged-table.png)
+![tableau fusionné de données](assets/data-merged-table.png)
 
 ## Utilisation des composants XDP et des types complexes de schéma XSD {#use-xdp-components-and-xsd-complex-types}
 
