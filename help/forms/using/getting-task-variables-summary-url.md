@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 96%
 
 ---
 
@@ -28,6 +31,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
    * empid
    * reason
    * duration
+
    >[!NOTE]
    >
    >Ce rendu est le modèle de page de résumé.
@@ -36,7 +40,7 @@ Dans cet exemple d’orchestration, un employé envoie un formulaire de demande 
 
    `apps/Employees/PtoApplication/html.esp`
 
-   ```
+   ```html
    <html>
      <body>
        <table>
