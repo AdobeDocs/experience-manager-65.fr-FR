@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +24,7 @@ Avec le Générateur d’expression, vous pouvez créer des expressions ou des c
 
 ## Création d’expressions et de fonctions distantes avec Expression Builder {#creating-expressions-and-remote-functions-with-expression-builder}
 
-Le Générateur d’expression utilise en interne les bibliothèques EL JSP, de sorte que l’expression adhère à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
+Le créateur d’Expressions utilise en interne les bibliothèques EL JSP. L’expression adhère donc à la syntaxe JSPEL. Pour plus d’informations, voir [Exemples d’expressions](#exampleexpressions).
 
 ![Générateur d’expression](assets/expressionbuilder.png)
 
@@ -46,7 +49,7 @@ Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https:/
    * java.lang.Character
    * Caractère
    * java.lang.Boolean
-   * Booléen  
+   * Booléen
    * java.lang.Integer
    * Int
    * java.util.list
@@ -75,7 +78,7 @@ Les fonctions distantes offrent la possibilité d’utiliser la logique personna
 Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonctions distantes à utiliser dans les expressions. Pour créer un lot personnalisé afin d’exporter vos propres fonctions distantes, effectuez les tâches suivantes. Cet onglet indique comment créer une fonction personnalisée tirant parti de sa chaîne d’entrée.
 
 1. Définissez une interface pour le service OSGi, contenant des méthodes à exporter pour l’utilisation par Expression Manager.
-1. Déclarez les méthodes sur l’interface A et annotez-les avec l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L&#39;annotation ServiceMethod comporte les attributs facultatifs suivants, qui peuvent également être spécifiés :
+1. Déclarez les méthodes sur l’interface A et annotez-les avec l’annotation @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). Expression Manager ignore les méthodes non annotées. L&#39;annotation ServiceMethod possède les attributs facultatifs suivants, qui peuvent également être spécifiés :
 
    1. **Enabled** : indique si la méthode est activée. Expression Manager ignore toute méthode désactivée.
    1. **familyId** : indique la famille (groupe) de méthodes. Si cet attribut n’est pas spécifié, Expression Manager présume que la méthode appartient à la famille par défaut. Il n’y a aucun registre de familles (à l’exception de celui par défaut) d’où sont sélectionnées les fonctions. Expression Manager crée le registre de façon dynamique en prenant en compte l’ensemble des ID de famille spécifiés par toutes les fonctions exportées par les différents lots. Assurez-vous que l’ID spécifié ici est raisonnablement lisible étant donné qu’il apparaît également dans l’interface utilisateur de création d’expression.
@@ -99,7 +102,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    * java.lang.Character
    * Caractère
    * java.lang.Boolean
-   * Booléen  
+   * Booléen
    * java.lang.Integer
    * Int
    * java.lang.Short
@@ -119,7 +122,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
 
 1. Définissez l’implémentation de l’interface, configurez-la en tant que service OSGI et définissez les propriétés de service suivantes :
 
-```
+```jsp
 @org.apache.felix.scr.annotations.Properties({
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker", boolValue = true),
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker.alias", value = "<service_id>"),
@@ -128,7 +131,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
 
 L’entrée exm.service=true indique à Expression Manager que le service contient des fonctions distantes dont il peut se servir dans les expressions. La valeur &lt;service_id> doit être un identifiant Java valide (contenant uniquement des caractères alphanumériques ainsi que les symboles _ et $). Cette valeur, précédée du mot-clé REMOTE_, forme le préfixe utilisé au sein des expressions. Par exemple, une interface avec une méthode annotée bar() et un ID de service foo dans les propriétés de service peuvent être référencés dans les expressions à l’aide de la chaîne REMOTE_foo:bar().
 
-```
+```java
 package mergeandfuse.com;
 
 import org.apache.felix.scr.annotations.Component;
