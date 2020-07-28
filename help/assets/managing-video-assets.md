@@ -3,10 +3,10 @@ title: Gérez les fichiers vidéo dans [!DNL Adobe Experience Manager].
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '813'
-ht-degree: 41%
+source-wordcount: '816'
+ht-degree: 39%
 
 ---
 
@@ -23,17 +23,11 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 1. Dans le dossier Ressources numériques ou ses sous-dossiers, accédez à l’emplacement où vous souhaitez ajouter les ressources numériques.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Vous pouvez également le faire glisser directement jusqu’à la zone des ressources. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
-1. To preview a video in the Card view, click the **[!UICONTROL Play]** button on the video asset.
+1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
-   ![chlimage_1-65](assets/chlimage_1-201.png)
+1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
 
-   Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les boutons [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue Liste.
-
-1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card.
-
-   La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
-
-   ![chlimage_1-66](assets/chlimage_1-202.png)
+   ![Commandes de lecture vidéo](assets/video-playback-controls.png)
 
 ## Configuration pour télécharger des ressources d’une taille supérieure à 2 Go {#configuration-to-upload-assets-that-are-larger-than-gb}
 
@@ -41,7 +35,7 @@ By default, [!DNL Assets] does not let you upload any assets that are larger tha
 
 In addition to [!DNL Assets] configuration, change the following configurations to upload large assets:
 
-* Augmentez le délai d’expiration du jeton. Voir Servlet [!UICONTROL CSRF] Adobe Granite dans la console Web à l’adresse `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir Protection [](/help/sites-developing/csrf-protection.md)CSRF.
+* Augmentez le délai d’expiration du jeton. Voir Servlet [!UICONTROL CSRF] Granite Adobe dans la console Web à l’adresse `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir Protection [](/help/sites-developing/csrf-protection.md)CSRF.
 * Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir [Configuration du répartiteur Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
