@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
 workflow-type: tm+mt
 source-wordcount: '2110'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -112,7 +112,7 @@ La zone de contenu contient des informations pour l&#39;UGC publié :
 
 ### Rail de filtrage {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![open-filterail](assets/open-filterrail.png)
 
 L’icône du panneau latéral ouvre le rail de filtre. Le rail de filtre, qui s’affiche à gauche de la zone de contenu, fournit différents filtres, chacun ayant un effet immédiat sur l’UGC référencé qui s’affiche dans la zone de contenu.
 
@@ -141,17 +141,17 @@ Le chemin d’accès au contenu limite la référence de l’UGC affichée aux p
 
 La recherche textuelle limite l’affichage de l’UGC référencé aux publications contenant le texte saisi.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![recherche de texte](assets/text-search.png)
 
 #### Site {#site}
 
 Le site limite le contenu UGC référencé affiché aux publications à certains sites communautaires. Si aucun site n&#39;est coché, toutes les références à l&#39;UGC s&#39;affichent.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![site-panel](assets/site-panel.png)
 
 >[!NOTE]
 >
->Lorsqu’un administrateur accède à la console de modération en bloc, toutes les références à l’UGC s’affichent, y compris les sites non créés avec l’assistant [de création de](/help/communities/sites-console.md)site, tels que les exemples Geometrixx.
+>Lorsqu’un administrateur accède à la console de modération en bloc, toutes les références à l’UGC s’affichent, y compris les sites non créés avec l’assistant [de création de](/help/communities/sites-console.md)site, tels que les exemples de Geometrixx.
 >
 >Lorsque la console de modération en bloc est accessible lors de la publication par un membre approuvé de la communauté, seules les références à l’UGC créées pour les sites de la communauté que le membre est autorisé à modérer sont affichées et peuvent être filtrées avec le filtre Site.
 
@@ -189,8 +189,7 @@ Pour ajouter des ressources supplémentaires sur lesquelles filtrer :
    * Par exemple, pour filtrer les composants votants inclus, saisissez :
 
       `Voting=social/tally/components/hbs/voting`
-
-![chlimage_1-215](assets/chlimage_1-215.png)
+   ![additional-contenttype](assets/additional-contenttype.png)
 
 * Sélectionnez Enregistrer.
 * Actualisez la console Communautés - Modération.
@@ -216,25 +215,25 @@ Le marquage limite l’affichage de l’UGC référencé aux publications qui so
 
 Une fois qu’un élément de contenu est marqué, il reste marqué jusqu’à ce que vous démarquiez ce seul élément de contenu en sélectionnant à nouveau le bouton **Indicateur** . Notez qu’il n’existe aucun niveau de marquage, tel qu’important ou suivi.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![indicateur](assets/flagging.png)
 
 #### Membres {#members}
 
 Les membres limitent l&#39;UGC référencé affiché à l&#39;UGC publié par le nom de membre saisi.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![members](assets/members.png)
 
 #### Publié au cours du ou des derniers {#posted-in-the-last}
 
 Publié dans les dernières limites, l’UGC référencé s’affichait pour les publications effectuées au cours de la dernière heure, du dernier jour, de la dernière semaine, du dernier mois ou de l’année.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![posté-dernier](assets/posted-last.png)
 
 #### Opinion {#sentiment}
 
 [L’opinion](/help/communities/moderate-ugc.md#sentiment) limite l’UGC référencé affiché aux publications dont la valeur d’opinion est positive, négative ou neutre.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![opinion](assets/sentiment.png)
 
 ## Custom Filters {#custom-filters}
 
@@ -271,7 +270,7 @@ Pour exposer les filtres personnalisés sur des sites communautaires existants :
 
 [Les actions](/help/communities/moderate-ugc.md#moderation-actions) de modération peuvent être exécutées sur une ou plusieurs sélections effectuées dans la zone de contenu ou lors de l’affichage des détails du contenu.
 
-Pour modérer en bloc les publications, dans la zone de contenu, cliquez sur l’icône Sélectionner ( ![sélection](assets/selecticon.png)) sur une publication, qui s’affiche lorsque vous passez la souris sur celle-ci (bureau) ou lorsque vous appuyez et maintenez un doigt sur la publication (mobile). Ce faisant, vous entrez dans le mode de sélection multiple et pouvez désormais sélectionner les publications suivantes à modérer en bloc en cliquant simplement sur celles-ci. Utilisez les boutons affichés sur la barre d’outils pour effectuer des actions de modération sur les publications sélectionnées. Toutes les actions vous invitent à confirmer.
+Pour modérer en bloc les publications, dans la zone de contenu, cliquez sur l’icône Sélectionner (![sélection](assets/selecticon.png)) sur une publication, qui s’affiche lorsque vous passez la souris sur celle-ci (bureau) ou lorsque vous appuyez et maintenez un doigt sur la publication (mobile). Ce faisant, vous entrez dans le mode de sélection multiple et pouvez désormais sélectionner les publications suivantes à modérer en bloc en cliquant simplement sur celles-ci. Utilisez les boutons affichés sur la barre d’outils pour effectuer des actions de modération sur les publications sélectionnées. Toutes les actions vous invitent à confirmer.
 
 Pour modérer une publication unique dans la zone de contenu, passez le curseur de la souris (bureau) ou appuyez sur le bouton et maintenez-le enfoncé (mobile) pour que les boutons s’affichent sur la publication. Lorsque vous travaillez sur un seul détail de contenu, seule une action de suppression vous invite à confirmer.
 
@@ -318,19 +317,19 @@ Le texte de la publication figure sur la vue de carte au-dessus des icônes d’
 
 #### Répondre {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![répondre](assets/reply.png)
 
 Lorsque vous travaillez sur une seule publication, une icône de réponse s’affiche si le type UGC prend en charge les réponses et est configuré pour autoriser les réponses.
 
 #### Autoriser {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![autoriser](assets/allow.png)
 
 Lorsque vous travaillez sur une seule publication, l’icône Autoriser s’affiche lorsque la publication a été marquée ou refusée. Si elle est balisée, l&#39;option Autoriser efface tous les indicateurs.
 
 #### Refuser {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![refuser](assets/deny.png)
 
 L’action de modération **Refuser** n’est disponible que pour le contenu modéré et n’apparaît pas sur le contenu non modéré, sauf en mode de sélection multiple.
 
@@ -342,19 +341,19 @@ Le contenu qui quitte l’état en attente ne peut jamais revenir à un état en
 
 #### Supprimer {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![Supprimez](assets/delete.png)
 
 En mode sélection unique ou en mode vrac, vous pouvez sélectionner des éléments et les supprimer. L’action de suppression génère une boîte de dialogue de confirmation. Une fois supprimés, ces éléments disparaissent immédiatement de la zone de contenu. **Une fois l’UGC supprimé, il est définitivement supprimé du référentiel et ne peut plus être récupéré** ultérieurement.
 
 #### Fermer {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![close](assets/close.png)
 
 Lorsque vous travaillez sur une seule publication, une icône Fermer s’affiche si le type UGC prend en charge la possibilité d’empêcher d’autres publications pour cette ressource.
 
 #### Historique de modération {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![modération](assets/moderation.png)
 
 Lorsque vous travaillez sur une publication unique, une icône d’historique de modération s’affiche lorsque vous la survolez. La sélection de l’icône affiche un volet contenant l’historique des actions entreprises concernant la publication UGC.
 
@@ -362,11 +361,11 @@ Pour revenir à l’affichage de la zone de contenu de plusieurs publications UG
 
 Par exemple :
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![modération-historique](assets/moderation-history.png)
 
 #### Afficher le détail {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![vue](assets/view.png)
 
 Lorsque vous travaillez avec une seule publication, vous pouvez afficher plus de détails en ouvrant l’UGC en mode détaillé.
 
@@ -376,5 +375,5 @@ Pour revenir à l’affichage de la zone de contenu de plusieurs publications UG
 
 Par exemple :
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 
