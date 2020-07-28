@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
+source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2601'
 ht-degree: 67%
 
 ---
@@ -25,8 +25,9 @@ Cette page vous explique comment étendre les fonctionnalités de Multi Site Man
 
 * Découvrez les principaux membres de l’API Java de MSM.
 * Créez une nouvelle action de synchronisation pouvant être utilisée dans une configuration de déploiement.
-* Supprimez l’étape « Chapitres » dans l’assistant Créer un site.
 * Modifiez la langue par défaut et les codes pays.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
