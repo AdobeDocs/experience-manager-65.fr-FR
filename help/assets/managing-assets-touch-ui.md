@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '9234'
+source-wordcount: '9216'
 ht-degree: 64%
 
 ---
@@ -70,7 +70,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Vous pouvez suspendre le transfert des ressources volumineuses (dont la taille est supérieure à 500 Mo) et reprendre ultérieurement à partir de la même page. Cliquez sur **[!UICONTROL Pause]** en regard de la barre de progression qui s’affiche lorsqu’un téléchargement se début.
 
-   ![Barre de progression du téléchargement des fichiers](assets/chlimage_1-5.png)
+   ![Barre de progression du téléchargement des fichiers](assets/upload-progress-bar.png)
 
    Vous pouvez configurer la taille au-dessus de laquelle une ressource est considérée comme volumineuse. Par exemple, vous pouvez configurer le système de sorte qu’il considère les ressources dont la taille est supérieure à 1 000 Mo (au lieu de 500 Mo) comme des ressources volumineuses. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
@@ -80,7 +80,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Lorsque vous cliquez sur **[!UICONTROL Pause]**, l’option **[!UICONTROL Lecture]** est activée. Pour reprendre le téléchargement, cliquez sur **[!UICONTROL Lecture]**.
 
-   ![Reprendre le transfert de ressource suspendu](assets/chlimage_1-6.png)
+   ![Reprendre le transfert de ressource suspendu](assets/resume-paused-upload.png)
 
    Pour annuler une opération de chargement en cours, cliquez sur le bouton de fermeture (`X`) en regard de la barre de progression. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
@@ -94,7 +94,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les éventuelles modifications antérieures (annoter ou recadrer, par exemple) que vous avez apportées à la ressource existante sont supprimées. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
-   ![Boîte de dialogue Conflit de nom pour résoudre le conflit de nom des ressources](assets/chlimage_1-7.png)
+   ![Boîte de dialogue Conflit de nom pour résoudre le conflit de nom des ressources](assets/resolve-naming-conflict.png)
 
    >[!NOTE]
    >
@@ -108,7 +108,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
    >
    >The [!UICONTROL Duplicates Detected] dialog appears only when the duplicate detection feature is enabled. To enable the duplicate detection feature, see [Enable Duplicate Detection](/help/assets/duplicate-detection.md).
 
-   ![Boîte de dialogue Fichier détecté de Duplicata](assets/chlimage_1-8.png)
+   ![Boîte de dialogue Fichier détecté de Duplicata](assets/duplicate-asset-detected.png)
 
    Pour conserver la ressource de duplicata dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. To delete the duplicate asset you uploaded, click **[!UICONTROL Delete]**.
 
@@ -123,7 +123,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
    N’incluez pas de caractères spéciaux dans les extensions des noms de fichier.
 
-   ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui ne parviennent pas à être téléchargés](assets/chlimage_1-10.png)
+   ![La boîte de dialogue de progression du téléchargement affiche l’état des fichiers et fichiers téléchargés avec succès qui ne parviennent pas à être téléchargés](assets/bulk-upload-progress.png)
 
    In addition, the [!DNL Assets] user interface displays the most recent asset that you upload or the folder that you created first.
 
@@ -149,7 +149,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 >[!NOTE]
 >
->Pour télécharger des fichiers par FTP en mode Dynamic Media - Scene7, installez Feature Pack 18912 sur les instances d’ [!DNL Experience Manager] auteur. Contact [Adobe Customer Care](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)de ressources en vrac.
+>Pour télécharger des fichiers via FTP en mode Dynamic Media - Scene7, installez Feature Pack 18912 sur les instances d’ [!DNL Experience Manager] auteur. Contact [Adobe Customer Care](https://helpx.adobe.com/fr/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md)de ressources en vrac.
 >
 >If you use FTP for uploading assets, the upload settings specified in [!DNL Experience Manager] are ignored. Des règles de traitement de fichiers, telles qu’elles sont définies dans Dynamic Media Classic, sont utilisées à la place.  
 
@@ -236,7 +236,7 @@ Lorsque vous transférez des fichiers d’image PostScript (EPS) ou Illustrator 
 |  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
 |  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
-#### Définition des options de téléchargement Photoshop {#setting-photoshop-upload-options}
+#### Définition des options de transfert Photoshop {#setting-photoshop-upload-options}
 
 Les fichiers Photoshop Document (PSD) sont le plus souvent utilisés pour créer des modèles d’image. When you upload a PSD file, you can create an image template automatically from the file (select the [!UICONTROL Create Template] option on the Upload screen).
 
@@ -479,10 +479,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Vous pouvez ajouter ou supprimer des rendus correspondant à une ressource, à l’exception de celle d’origine. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez ajouter ou supprimer des rendus.
 
-1. Cliquez sur le fichier pour ouvrir sa page de ressources.
-
-   ![Page Détails des ressources pour gérer les rendus](assets/chlimage_1-15.png)
-
+1. Cliquez sur le fichier pour ouvrir sa page.
 1. Dans l’interface du Experience Manager, sélectionnez **[!UICONTROL Rendus]** dans la liste.
 
    ![Rangement de gauche pour ouvrir le menu et sélectionner l’option Rendus](assets/renditions_menu.png)
@@ -515,7 +512,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    De même, vous pouvez personnaliser l’image de la page Annotation en recouvrant `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Noeud de sélecteur de rendu d’incrustation dans CRXDE pour personnaliser l’image de page d’annotation](assets/chlimage_1-17.png)
+   ![Noeud de sélecteur de rendu d’incrustation dans CRXDE pour personnaliser l’image de page d’annotation](assets/renditionpicker-node-crxde.png)
 
    Pour configurer les dimensions du rendu d’une ressource vidéo, accédez au nœud `videopicker` dans le référentiel CRX à l’emplacement `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, recouvrez le nœud, puis modifiez la propriété adéquate.
 
@@ -671,21 +668,16 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. Sélectionnez une option dans la liste. La zone de recadrage s’affiche sur l’image en fonction de l’option choisie. L’option **Main libre** vous permet de recadrer l’image sans restriction de format.
 
-   ![Options de recadrage](assets/chlimage_1-23.png)
+   ![Options de recadrage](assets/crop-options.png)
 
 1. Sélectionnez la zone à recadrer et redimensionnez ou repositionnez-la sur l’image.
 
-1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** options to revert to the uncropped image or retain the cropped image, respectively.
-
-   ![Options Annuler et rétablir](assets/chlimage_1-25.png)
-
+1. Utilisez l’option **** Annuler ![](assets/do-not-localize/undo.png) Annuler la barre d’outils et l’option **[!UICONTROL Rétablir]** ![la barre d’outils les options pour rétablir l’image non recadrée ou conserver l’image recadrée, respectivement.](assets/do-not-localize/redo.png)
 1. Click the appropriate **[!UICONTROL Rotate]** option to rotate the image clockwise or anti-clockwise.
 
-   ![Options de rotation dans le sens des aiguilles d’une montre et dans le sens anti-horaire](assets/chlimage_1-26.png)
+   ![Options de rotation dans le sens des aiguilles d’une montre et dans le sens anti-horaire](assets/do-not-localize/rotate-options.png)
 
-1. Click the appropriate **[!UICONTROL Flip]** option to flip the image horizontally or vertically.
-
-   ![pour retourner une image horizontalement ou verticalement](assets/chlimage_1-27.png)
+1. Cliquez sur les options **[!UICONTROL Retourner]** appropriées pour retourner l’image horizontalement, ![refléter horizontalement l’option](assets/do-not-localize/flip-horizontal.png) ou ![refléter verticalement l’option](assets/do-not-localize/flip-vertical.png)verticale.
 
 1. Pour terminer la modification de l’image, cliquez sur l’option **** Terminer ![](assets/do-not-localize/check-ok-done-icon.png)Terminer. Le fait de cliquer sur **Terminer** début également la régénération des rendus.
 
@@ -731,23 +723,23 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    * [Actions rapides](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
 
-   ![Option Annoter](assets/chlimage_1-29.png)
+   ![Option Annoter](assets/annotate-option.png)
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
-   ![Zone Commentaire dans la boîte de dialogue Ajouter l’annotation](assets/chlimage_1-30.png)
+   ![Zone Commentaire dans la boîte de dialogue Ajouter l’annotation](assets/annotation-comment-box.png)
 
 1. Pour signaler une annotation à un utilisateur, indiquez l’adresse électronique de l’utilisateur et ajoutez le commentaire. Par exemple, pour signaler une annotation à Aaron MacDonald, saisissez @aa. Des conseils à l’usage des utilisateurs correspondant s’affichent dans une liste. Sélectionnez l’adresse électronique d’Aaron dans la liste pour la marquer avec le commentaire. De même, vous pouvez marquer d’autres utilisateurs à n’importe quel emplacement de l’annotation, avant ou après celle-ci.
 
+   ![Indiquez l’adresse électronique de l’utilisateur et ajoutez un commentaire pour en avertir l’utilisateur.](assets/annotation-add-user-email.png)
+
    >[!NOTE]
    >
-   >Si l’utilisateur ne dispose pas des droits d’administration, les suggestions s’affichent uniquement s’il dispose de droits de lecture sur */home* dans Crx-de.
-
-   ![Indiquez l’adresse électronique de l’utilisateur et ajoutez un commentaire pour en avertir l’utilisateur.](assets/chlimage_1-31.png)
+   >For a non-administrator user, the suggestions appear only if the user has read permissions at `/home` path in CRXDE.
 
 1. Après avoir ajouté l’annotation, cliquez sur **[!UICONTROL Ajouter]** pour l’enregistrer. Une notification relative à l’annotation est envoyée à Aaron.
 
-   ![Bouton Ajouter pour enregistrer une annotation](assets/chlimage_1-32.png)
+   ![Bouton Ajouter pour enregistrer une annotation](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -778,15 +770,15 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 1. Dans l’interface du Experience Manager, sélectionnez **[!UICONTROL Chronologie]**.
 
-   ![Options disponibles dans le Experience Manager](assets/chlimage_1-35.png)
+   ![Option Chronologie disponible dans le Experience Manager](assets/view-timeline.png)
 
 1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
-   ![Afficher toute la liste dans le journal](assets/chlimage_1-36.png)
+   ![Afficher toute la liste dans le journal](assets/timeline-show-all-option.png)
 
    Dans le panneau **[!UICONTROL Frise chronologique]**, cliquez sur un commentaire pour afficher l’annotation correspondate sur l’image.
 
-   ![Annotation de vue du panneau Montage sur l&#39;image](assets/chlimage_1-37.png)
+   ![Annotation de vue du panneau Montage sur l&#39;image](assets/timeline-view-annotations.png)
 
    Pour supprimer un commentaire spécifique, cliquez sur **[!UICONTROL Supprimer]**.
 
@@ -806,11 +798,9 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Pour imprimer des annotations spécifiques, sélectionnez-les dans la chronologie.
 
-   ![Sélectionnez une annotation dans le journal pour l&#39;imprimer.](assets/chlimage_1-38.png)
+   ![Sélectionnez une annotation dans le journal pour l&#39;imprimer.](assets/timeline-select-annotations.png)
 
    Pour n’imprimer que l’état de révision, sélectionnez-le dans la chronologie.
-
-   ![Pour imprimer uniquement l&#39;état de révision d&#39;Annotation, sélectionnez-le dans le journal](assets/chlimage_1-39.png)
 
 1. Click **[!UICONTROL Print]** from the toolbar.
 
@@ -828,7 +818,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
 1. Cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations/l’état de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
-   ![Annotation et état de révision sur le PDF généré](assets/chlimage_1-42.png)
+   ![Annotation et état de révision sur le PDF généré](assets/annotation-status-pdf.png)
 
 1. Télécharger l’option ![Télécharger pour les options d’](assets/do-not-localize/download.png) impression ou de téléchargement au format PDF ![](assets/do-not-localize/print.png) en utilisant les options en haut à droite.
 
@@ -838,7 +828,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des états, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/managing-assets-touch-ui.md#annotating).
 
-   ![Configuration pour imprimer l’annotation des ressources sur le document PDF](assets/chlimage_1-44.png)
+   ![Configuration pour imprimer l’annotation de ressource sur un document PDF](assets/annotation-print-pdf-config.png)
 
    Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
 
