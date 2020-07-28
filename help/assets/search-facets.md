@@ -3,10 +3,10 @@ title: Facettes de recherche.
 description: Comment créer, modifier et utiliser des facettes de recherche dans l’Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2525'
-ht-degree: 78%
+source-wordcount: '2515'
+ht-degree: 77%
 
 ---
 
@@ -28,11 +28,9 @@ Les facettes de recherche qui apparaissent dans le panneau Filtres sont définie
 For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Utilisez le prédicat Propriété pour rechercher les ressources qui correspondent à une propriété unique que vous spécifiez. Utilisez le prédicat Options pour rechercher les ressources correspondant à une ou plusieurs valeurs pour une propriété spécifique. Ajoutez le prédicat Période pour rechercher les ressources créées au cours d’une période donnée.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **Edit** ![edit icon](assets/do-not-localize/aemassets_edit.png).
+1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    ![Localisez et sélectionnez le rail de recherche d’administrateurs de ressources](assets/assets_admin_searchrail.png)
-
-   Localisez et sélectionnez le rail de recherche d’administrateurs de ressources
 
    >[!NOTE]
    >
@@ -76,7 +74,7 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Uti
 1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close.png) on the upper-right corner of the preview.
 1. Pour enregistrer les paramètres, cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher dans l’interface utilisateur d’Assets. Le prédicat Propriété est ajouté au panneau.
-1. Dans la zone de texte, saisissez une description de la ressource à rechercher. Saisissez par exemple « Adobe ». Lorsque vous effectuez une recherche, les ressources dont la description correspond à « Adobe » sont répertoriées dans les résultats de la recherche.
+1. Enter a description for the asset to be searched in the text box. For example, enter `Adobe`. When you perform a search, assets with description matching `Adobe` are listed in the search results.
 
 ## Ajout d’un prédicat Options {#adding-an-options-predicate}
 
@@ -90,13 +88,13 @@ Lorsque vous sélectionnez une option, la recherche est effectuée en fonction d
 
 Par exemple, si vous sélectionnez Images comme type de fichier, la requête de ressources est créée en combinant la propriété `value` à l’aide d’une opération OU. Par exemple, la requête relative à des images est créée en combinant les résultats correspondants pour *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* et *image/tiff* pour la propriété `jcr:content/metadata/dc:format` à l’aide d’une opération OU.
 
-![La propriété de valeur d’un type de fichier, telle que vue dans CRXDE, est utilisée pour que les requêtes fonctionnent.](assets/chlimage_1-418.png)
+![La propriété de valeur d’un type de fichier, telle que vue dans CRXDE, est utilisée pour que les requêtes fonctionnent.](assets/filetype-value-property.png)
 
 La propriété de valeur d’un type de fichier, telle que vue dans CRXDE, est utilisée pour que les requêtes fonctionnent.
 
 Au lieu de créer manuellement une structure de noeud pour les options du référentiel CRXDE, vous pouvez définir les options dans un fichier JSON en spécifiant les paires clé-valeur correspondantes. Spécifiez le chemin du fichier JSON dans le champ **[!UICONTROL Nom de la propriété]**. Par exemple, vous pouvez définir les paires clé-valeur `image/bmp`, `image/gif`, `image/jpeg` et `image/png`, puis spécifier leurs valeurs comme illustré dans l’échantillon de fichier JSON ci-dessous. In the **[!UICONTROL Property Name]** field, you can specify the CRXDE path for this file.
 
-```JSON
+```json
 {
     "options" :
  [
@@ -164,7 +162,7 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 
-   ![suggestion fournie par le Experience Manager lors de la saisie du nom de la balise](assets/chlimage_1-419.png)
+   ![suggestion fournie par le Experience Manager lors de la saisie du nom de la balise](assets/tag-suggestion.png)
 
    *Figure : suggestion fournie par le Experience Manager lors de la saisie du nom de la balise.*
 
