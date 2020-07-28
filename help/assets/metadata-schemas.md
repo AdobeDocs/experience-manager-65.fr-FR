@@ -3,9 +3,9 @@ title: 'schémas de métadonnées pour définir la disposition de la page des pr
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2667'
+source-wordcount: '2666'
 ht-degree: 52%
 
 ---
@@ -68,7 +68,7 @@ Pour ajouter un formulaire de schéma de métadonnées, procédez comme suit :
 
 Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouvellement ajouté. Le formulaire de schéma de métadonnées contient des onglets et des éléments de formulaire dans les onglets. Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées. Les onglets et les éléments de formulaire dérivés du parent sont à l’état verrouillé. Vous ne pouvez pas les modifier au niveau des enfants.
 
-1. Sur la page Formulaires [!UICONTROL de Schéma de] métadonnées, sélectionnez un formulaire et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
+1. Sur la page Forms [!UICONTROL du Schéma de] métadonnées, sélectionnez un formulaire et cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
 
 1. Sur la page Editeur **** de Schéma de métadonnées, personnalisez le formulaire de métadonnées. Faites glisser les composants nécessaires de l’onglet **[!UICONTROL Créer un formulaire]** vers l’un des onglets.
 
@@ -131,15 +131,15 @@ Pour garantir que le composant s’affiche correctement dans le formulaire de sc
 
 Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez rechercher des fichiers dont les métadonnées obligatoires sont manquantes. Dans le panneau **[!UICONTROL Filtres]**, développez le prédicat **[!UICONTROL Validation des métadonnées]** et sélectionnez l’option **[!UICONTROL Non valide]**. Les résultats de la recherche affichent des fichiers dont les métadonnées obligatoires que vous avez configurées via le formulaire de schéma sont manquantes.
 
-![Option non valide sélectionnée dans le prédicat Validation des métadonnées du panneau Filtres ](assets/chlimage_1-178.png)
+![Option sélectionnée dans le prédicat Validation des métadonnées du panneau Filtres](assets/invalid-metadata-predicate.png)
 
 Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous forme de liste sur la page Propriétés des ressources auxquelles ce       schéma particulier est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
 
-![Composant de métadonnées contextuelles répertoriant les onglets des propriétés de la ressource](assets/chlimage_1-179.png)
+![Composant de métadonnées contextuelles répertoriant les onglets des propriétés des ressources](assets/metadata-contextual-component-list.png)
 
 Pour afficher tout onglet de la page de propriétés en plus de l’onglet dans lequel le composant Métadonnées contextuelles est appliqué, sélectionnez l’onglet dans la liste. L’onglet est ajouté à la page Propriétés.
 
-![L’onglet sélectionné dans la liste de métadonnées contextuelles s’affiche sur la page des propriétés des ressources.](assets/contextual-metadata-asset-properties.png)
+![L’onglet sélectionné sur la liste de métadonnées contextuelles s’affiche sur la page des propriétés des ressources.](assets/contextual-metadata-asset-properties.png)
 
 *Figure : Métadonnées contextuelles dans la page de propriétés des ressources.*
 
@@ -151,13 +151,11 @@ Au lieu de définir les propriétés des options sous l’onglet **[!UICONTROL P
 
 L’éditeur de schéma vous permet d’ajouter ou de supprimer un onglet. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
 
-![Onglets par défaut dans le formulaire de Schéma de métadonnées](assets/chlimage_1-181.png)
+![Onglets par défaut dans le formulaire Schéma de métadonnées](assets/metadata-schema-form-tabs.png)
 
-Cliquez sur `+` pour ajouter un onglet à un formulaire de schéma. By default, the new tab has the name `Unnamed-1`. Vous pouvez modifier le nom à partir de l&#39;onglet **[!UICONTROL Paramètres]**.
+Cliquez sur `+` pour ajouter un onglet à un formulaire de schéma. By default, the new tab has the name `Unnamed-1`. Vous pouvez modifier le nom à partir de l&#39;onglet **[!UICONTROL Paramètres.]** Pour supprimer un onglet, cliquez sur `X`.
 
-Pour supprimer un onglet, cliquez sur `X`.
-
-![Ajouter ou supprimer un onglet à l’aide de l’éditeur de Schéma de métadonnées](assets/chlimage_1-182.png)
+![Ajouter ou supprimer un onglet à l’aide de l’éditeur de Schéma de métadonnées](assets/metadata-schema-form-new-tab.png)
 
 ## Suppression de formulaires de schéma de métadonnées {#delete-metadata-schema-forms}
 
@@ -238,7 +236,7 @@ Vous pouvez appliquer un autre schéma au sous-dossier. Les ressources d’un so
 
 1. Select the folder on which to apply the modified schema and then click **[!UICONTROL Apply]**.
 
-   ![Sélectionner le dossier dans lequel appliquer le Schéma de métadonnées](assets/chlimage_1-188.png)
+   ![Sélectionner le dossier dans lequel appliquer le Schéma de métadonnées](assets/metadata-schema-select-folder.png)
 
 1. Si d’autres métadonnées sont appliquées au dossier, un message s’affiche pour vous avertir que vous êtes sur le point de remplacer le schéma de métadonnées existant. Cliquez sur **Remplacer**.
 1. Cliquez sur **OK** pour fermer le message de confirmation.
@@ -265,7 +263,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
 1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message indiquant les métadonnées manquantes pour le champ obligatoire s’affiche sur la vue de carte de la ressource.
 
-   ![Message signalant l’absence de métadonnées obligatoires sur la vue de la carte de ressources lors du téléchargement de fichiers dans un dossier](assets/chlimage_1-192.png)
+   ![Message signalant l’absence de métadonnées obligatoires sur la vue de la carte de ressources lors du téléchargement de fichiers dans un dossier](assets/metadata-missing-info-card-view.png)
 
 1. (Facultatif) Accédez à `https://[aem_server]:[port]/system/console/components/`. Configurez et activez le composant `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` ; celui-ci est désactivé par défaut. Set a frequency at which [!DNL Experience Manager] checks for the validity of metadata on the assets. Cette configuration ajoute une propriété `hasValidMetadata` au nœud `jcr:content` des ressources. [!DNL Experience Manager] utilise cette propriété pour filtrer les actifs non valides dans un résultat de recherche. Si vous ajoutez un fichier après une vérification, le fichier n’est marqué avec `hasValidMetadata` aucun indicateur jusqu’à la prochaine vérification planifiée. Par conséquent, les ressources n’apparaissent pas dans les filtres de recherche pour les métadonnées non valides avant la prochaine vérification planifiée.
 
