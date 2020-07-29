@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 3%
@@ -33,7 +33,7 @@ Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-o
    * Version 2.6 ou ultérieure
    * Pas besoin de configurer les mongos ou le partage
    * Recommander fortement l&#39;utilisation d&#39;un jeu de [réplicas](#mongoreplicaset)
-   * Peut s’exécuter sur le même hôte qu’AEM ou à distance
+   * Peut s’exécuter sur le même hôte que AEM ou à distance
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -43,7 +43,7 @@ Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-o
    * Choix des modes d&#39;exécution :
       * Mode autonome
       * [Mode](solr.md#solrcloud-mode) SolrCloud (recommandé pour les environnements de production)
-   * Choix de la recherche multilingue (MLS)
+   * Choix de la recherche multilingue (MLS) :
       * [Installation de MLS standard](solr.md#installing-standard-mls)
       * [Installation de MLS avancé](solr.md#installing-advanced-mls)
 
@@ -102,7 +102,7 @@ Laissez vide si vous exécutez en mode SolrCloud.
 
 >[!NOTE]
 >
->La base de données mongoDB, dont le nom par défaut `communities`est le nom, ne doit pas être définie sur le nom d’une base de données utilisée pour les magasins de [noeuds ou les magasins de données (binaires)](../../help/sites-deploying/data-store-config.md). Reportez-vous également à la section Eléments [d’Enregistrement dans AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>La base de données mongoDB, dont le nom par défaut `communities`est le nom, ne doit pas être définie sur le nom d’une base de données utilisée pour les magasins de [noeuds ou les magasins de données (binaires)](../../help/sites-deploying/data-store-config.md). Voir aussi [Enregistrement Elements dans AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 
 ### Jeu de Copies MongoDB {#mongodb-replica-set}
@@ -224,7 +224,7 @@ Pour configurer MSRP pour une démonstration ou un environnement de développeme
 
 Assurez-vous que MSRP a été configuré comme fournisseur par défaut en vérifiant la configuration de l’option enregistrement. Par défaut, le fournisseur de ressources d’enregistrement est JSRP.
 
-Sur toutes les instances d’AEM d’auteur et de publication, consultez de nouveau la console [de configuration de l’](srp-config.md) Enregistrement ou vérifiez le référentiel AEM :
+Sur toutes les instances d’AEM création et de publication, consultez de nouveau la console [Configuration de l’](srp-config.md) Enregistrement ou vérifiez le référentiel AEM :
 
 * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -239,7 +239,7 @@ Un outil open source est disponible sur GitHub à cet effet :
 
 * [Outil de migration UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-L’outil de migration peut être personnalisé pour exporter l’UGC à partir de versions antérieures des communautés sociales AEM en vue de l’importer en AEM Communities 6.1 ou version ultérieure.
+L’outil de migration peut être personnalisé pour exporter l’UGC à partir de versions antérieures de communautés sociales AEM pour l’importer en AEM Communities 6.1 ou version ultérieure.
 
 ### Erreur - champ non défini provider_id {#error-undefined-field-provider-id}
 
