@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Accéder au nouveau site lors de la publication {#browse-to-new-site-on-publish}
 
-Maintenant que le site des communautés nouvellement créé a été publié, accédez à l’URL qui s’affiche lors de la création du site, mais sur le serveur de publication, par exemple.
+Maintenant que le site des communautés nouvellement créé a été publié, accédez à l’URL qui s’affiche lors de la création du site, mais sur le serveur de publication, par exemple :
 
 * URL de l’auteur = https://localhost:4502/content/sites/engage/en.html
 * URL de publication = https://localhost:4503/content/sites/engage/en.html
@@ -65,19 +65,20 @@ Pour protéger le contenu de votre site communautaire contre l’accès d’util
 
 1. Accédez à Propriétés **de** la page.
 
-   ![authentification de site](assets/site-authentication.png)
+   ![page-properties](assets/page-properties.png)
 
 1. Accédez à l’onglet **Avancé**.
 
-   ![page-properties](assets/page-properties.png)
-
 1. Enable **Authentication Requirement**.
+
+   ![authentification de site](assets/site-authentication.png)
+
 1. Ajoutez le chemin de la page de connexion. For example, **/content/......./GetStarted**.
 1. Publiez la page.
 
 ## Membre de la Communauté approuvé {#trusted-community-member}
 
-Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#demo-users) se voit attribuer le rôle de gestionnaire et de modérateur [](/help/communities/create-site.md#roles)communautaire. Dans le cas contraire, revenez à l’environnement d’auteur pour [modifier les paramètres](/help/communities/sites-console.md#modifying-site-properties) du site et sélectionnez Aaron McDonald comme gestionnaire de communauté et modérateur.
+Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#demo-users) se voit attribuer les rôles de gestionnaire et de modérateur [](/help/communities/create-site.md#roles)communautaire. Dans le cas contraire, revenez à l’environnement d’auteur pour [modifier les paramètres](/help/communities/sites-console.md#modifying-site-properties) du site et sélectionnez Aaron McDonald comme gestionnaire de communauté et modérateur.
 
 Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’utilisateur (aaron.mcdonald@mailinator.com) et le mot de passe (mot de passe). Vous pouvez vous connecter à l’aide des informations d’identification Twitter ou Facebook.
 
