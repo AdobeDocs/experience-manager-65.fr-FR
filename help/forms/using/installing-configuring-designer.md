@@ -11,7 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 080885a4fddbbce52968d3c324d6499ff1036de2
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 83%
 
 ---
 
@@ -38,4 +41,3 @@ Designer est disponible sous la forme d’un programme autonome et est égalemen
 1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Suivant.
 1. Cliquez sur Précédent pour modifier les préférences. Pour installer Designer, cliquez sur Installer.
 1. Cliquez sur Terminer à la fin de l’installation.
-
