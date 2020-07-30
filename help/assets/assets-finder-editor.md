@@ -3,7 +3,7 @@ title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
 workflow-type: tm+mt
 source-wordcount: '2130'
 ht-degree: 73%
@@ -171,7 +171,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -208,13 +208,13 @@ Pour créer une page Éditeur de ressources :
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-La page de base créée à l’aide du modèle Editeur de ressources Geometrixx se présente comme suit :
+La page de base créée à l’aide du modèle Éditeur de ressources Geometrixx se présente comme suit :
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
 Pour personnaliser votre page Éditeur de ressources, utilisez les éléments du sidekick. The Asset Editor page that is accessed from the **Geometrixx Press Center** is a customized version of a page based on this template:
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### Définition d’un éditeur de ressources à ouvrir à partir d’une page de partage de ressources {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -394,7 +394,7 @@ Les ressources du Experience Manager vous permettent d’apporter des modificati
 
 Pour modifier simultanément plusieurs ressources à l’aide de la page Éditeur de ressources :
 
-1. Ouvrez la page Centre **de** presse Geometrixx :
+1. Ouvrez la page Centre de **presse** Geometrixx :
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Sélectionnez les ressources :
