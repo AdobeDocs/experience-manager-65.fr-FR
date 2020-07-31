@@ -1,6 +1,6 @@
 ---
-title: Début rapide de l'API Java d'Acrobat Reader DC Extensions Service (SOAP)
-seo-title: Début rapide de l'API Java d'Acrobat Reader DC Extensions Service (SOAP)
+title: Début rapide de l'API Java du service d'extensions Acrobat Reader DC (SOAP)
+seo-title: Début rapide de l'API Java du service d'extensions Acrobat Reader DC (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 ---
 
 
-# Début rapide de l’API Java d’Acrobat Reader DC Extensions Service (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Début rapide de l&#39;API ServiceJava d&#39;extensions Acrobat Reader DC (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 Les Débuts rapides suivants sont disponibles pour le service Acrobat Reader DC Extensions.
 
@@ -31,7 +31,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec des AEM Forms sont basés sur le système d’exploitation du serveur Forms. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec les AEM Forms sont basés sur le système d&#39;exploitation Forms. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : application de droits d’utilisation à l’aide de l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
@@ -143,7 +143,6 @@ L’exemple de code Java suivant applique des droits d’utilisation à un docum
  } 
   
   
- 
 ```
 
 ## Début rapide (mode SOAP) : Suppression des droits d’utilisation d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
