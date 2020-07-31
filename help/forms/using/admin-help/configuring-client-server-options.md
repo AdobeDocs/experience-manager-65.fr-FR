@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '10273'
 ht-degree: 85%
@@ -61,7 +61,7 @@ Le fait de sélectionner cette option autorise les applications clientes à util
 
 **Largeur de contrôle HTML préférée pour l’authentification** étendue Spécifiez la largeur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
-**Hauteur de contrôle HTML préférée pour l’authentification** étendue Indiquez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
+**Hauteur de contrôle HTML préférée pour l’authentification** étendue Spécifiez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
 ***remarque **: Les limites de largeur et de hauteur de cette boîte de dialogue sont les suivantes :*Largeur : Minimum = 400, maximum = 900
 
@@ -822,7 +822,7 @@ Les extensions d’Acrobat Reader DC pour Microsoft Office sont un module suppl�
 1. Exportez le fichier de configuration de Document Security (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `PolicyServer`. Ajoutez un nœud `ClientVersionRules` comme enfant immédiat du nœud `PolicyServer`, s’il existe :
 
-   ```java
+   ```xml
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -879,7 +879,7 @@ Les extensions d’Acrobat Reader DC pour Microsoft Office sont un module suppl�
 
 Dans cet exemple, l’accès est refusé pour tous les clients Windows.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -897,7 +897,7 @@ Dans cet exemple, l’accès est refusé pour tous les clients Windows.
 
 Dans cet exemple, l’accès est refusé pour My Application version 3.0 et My Other Application version 2.0. La même URL d’informations de refus est utilisée quel que soit le motif du refus.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -922,7 +922,7 @@ Dans cet exemple, l’accès est refusé pour My Application version 3.0 et My O
 
 Dans cet exemple, toutes les requêtes émanant d’une installation Microsoft PowerPoint 2007 ou Microsoft PowerPoint 2010 des extension d’Acrobat Reader DC pour Microsoft Office sont refusées.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -955,7 +955,7 @@ Par défaut, vous pouvez définir un maximum de cinq éléments dans un filigran
 
    La deuxième entrée, *nombre maximal d’éléments* est le nombre maximal d’éléments qui est autorisée dans un filigrane. La valeur par défaut est 5.
 
-   ```java
+   ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -975,7 +975,7 @@ Les modifications suivantes apportées au fichier config.xml désactivent tous l
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `DisplaySettings`.
 1. To disable all external links, in the `DisplaySettings` node, add the following entry and then save the file: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```java
+   ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -989,7 +989,7 @@ Les modifications suivantes apportées au fichier config.xml activent la prise e
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `DisplaySettings`.
 1. Locate the following node: `<node name="ExternalUser">`
 
-   ```java
+   ```xml
    <node name="ExternalUser">
    ```
 
@@ -1005,7 +1005,7 @@ Les modifications suivantes apportées au fichier config.xml désactivent les po
 1. Exportez le fichier de configuration de Document Security (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 1. Ouvrez le fichier de configuration dans un éditeur et localisez le nœud suivant : `<node name="DRM">`
 
-   ```java
+   ```xml
    <node name="DRM">
    ```
 
@@ -1015,7 +1015,7 @@ Les modifications suivantes apportées au fichier config.xml désactivent les po
 
 1. Pour désactiver les points de fin SOAP pour les documents Document Security, définissez l’attribut de valeur sur **false**.
 
-   ```java
+   ```xml
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>
