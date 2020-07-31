@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '6822'
 ht-degree: 76%
@@ -33,7 +33,7 @@ L’éditeur de règles fournit une interface utilisateur intuitive et simplifi�
 * Appeler un service de modèle de données de formulaire et effectuer une opération
 * Définir la propriété d’un objet 
 
-L’éditeur de règles remplace les fonctionnalités de script dans AEM Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles.  Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[ Impact de l’éditeur de règles sur les scripts existants](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
+L’éditeur de règles remplace les fonctionnalités de script dans AEM version Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles.  Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[ Impact de l’éditeur de règles sur les scripts existants](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer de nouveaux scripts et modifier les scripts existants. Les utilisateurs appartenant au groupe d’utilisateurs de formulaires peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
@@ -164,7 +164,7 @@ La figure suivante illustre un exemple d’ajout dynamique de cases à cocher en
 
 **Enregistrer le formulaire** Enregistre le formulaire.
 
-**Envoyer des formulaires** Envoie le formulaire.
+**Envoyer Forms** Envoie le formulaire.
 
 **Réinitialiser le formulaire** Réinitialise le formulaire.
 
@@ -641,7 +641,7 @@ area = function(len) {
 
 **Expression et instruction de fonction** 
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -651,7 +651,7 @@ b.area = function(len) {
 
 **Déclaration de fonction en tant que variable** 
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -664,7 +664,7 @@ Limite : la fonction personnalisée prend uniquement la première déclaration 
 
 **Déclaration de fonction en tant qu’objet** 
 
-```
+```javascript
 var c = {
     b : {
         /** */
