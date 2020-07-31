@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 94%
@@ -178,7 +178,7 @@ Effectuez les étapes suivantes pour faire en sorte que le port soit dynamique e
 1. Open `[aem-forms_root]`\crx-repository\launchpad\sling.properties file for editing.
 1. Localisez la `sling.bootdelegation.ibm` propriété et ajoutez-la `com.ibm.websphere.ssl.*`au champ de valeur. Le champ mis à jour ressemble à ce qui suit :
 
-   ```java
+   ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
