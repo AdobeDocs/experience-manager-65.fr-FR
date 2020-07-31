@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 95%
@@ -20,7 +20,7 @@ ht-degree: 95%
 
 # Activation de l’authentification unique dans AEM forms{#enabling-single-sign-on-in-aem-forms}
 
-AEM Forms fournit deux méthodes pour activer l’authentification unique (SSO) : les en-têtes HTTP et SPNEGO.
+Les formulaires AEM offrent deux façons d’activer l’authentification unique (SSO) : les en-têtes HTTP et SPNEGO.
 
 Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
 
@@ -121,14 +121,14 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 
 Si vous rencontrez cette erreur :
 
-```java
+```shell
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 Essayez de spécifier l’utilisateur comme étant spnegodemo@um.lc.com :
 
-```java
+```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
