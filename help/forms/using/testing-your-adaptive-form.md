@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
+source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 10%
@@ -34,9 +34,9 @@ Les AEM Forms fournissent une structure de test, Calvin, pour automatiser les te
 
 Les suites de tests comportent un ensemble de cas de test. Vous pouvez avoir plusieurs suites de tests. Il est recommandé d’avoir une suite de tests distincte pour chaque formulaire. Pour créer une suite de tests :
 
-1. Connectez-vous à l’instance d’auteur AEM Forms en tant qu’administrateur. Ouvrez CRXDE Lite. Vous pouvez appuyer sur Logo AEM > **Outils** > **Général** > **CRXDE Lite** ou ouvrir l’URL [https://localhost:4502/crx/de/index.jsp dans un navigateur pour ouvrir CRXDE Lite.](https://localhost:4502/crx/de/index.jsp)
+1. Connectez-vous à l’instance d’auteur AEM Forms en tant qu’administrateur. Ouvrez CRXDE Lite. Vous pouvez appuyer sur AEM Logo > **Outils** > **Général** > **CRXDE Lite** ou ouvrir l’URL [https://localhost:4502/crx/de/index.jsp dans un navigateur pour ouvrir le CRXDE Lite.](https://localhost:4502/crx/de/index.jsp)
 
-1. Accédez à /etc/clientlibs dans CRXDE Lite. Cliquez avec le bouton droit sur le sous-dossier /etc/clientlibs et sélectionnez **Créer** > **Créer un nœud.** Dans le champ Nom, saisissez **WeRetailFormTestCases**. Sélectionnez le type **cq:ClientLibraryFolder** et cliquez sur **OK**. Il crée un noeud. Vous pouvez utiliser n&#39;importe quel nom à la place de WeRetailFormTestCases.
+1. Accédez à /etc/clientlibs dans le CRXDE Lite. Cliquez avec le bouton droit sur le sous-dossier /etc/clientlibs et sélectionnez **Créer** > **Créer un nœud.** Dans le champ Nom, saisissez **WeRetailFormTestCases**. Sélectionnez le type **cq:ClientLibraryFolder** et cliquez sur **OK**. Il crée un noeud. Vous pouvez utiliser n&#39;importe quel nom à la place de WeRetailFormTestCases.
 1. Add the following properties to the WeRetailFormTestCases node and tap **Save ALL**.
 
 <table>
@@ -101,7 +101,7 @@ Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme in
 
    Le code ci-dessus crée une suite de tests nommée **We commerce - Tests**.
 
-1. Ouvrez l’interface utilisateur de test AEM (AEM > Outils > Opérations > Tests). La suite de tests - **Nous commercialisons - Tests** - est répertoriée dans l’interface utilisateur.
+1. Ouvrez AEM interface utilisateur Tests (AEM > Outils > Opérations > Tests). La suite de tests - **Nous commercialisons - Tests** - est répertoriée dans l’interface utilisateur.
 
    ![we-commerce-détail-test-suite](assets/we-retail-test-suite.png)
 
@@ -177,7 +177,7 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
 
 1. Créez un fichier, `prefillTest.js`,dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajoutez le code ci-dessous dans le fichier. Le code crée un cas de test. Le cas de test préremplit tous les champs d’un formulaire et valide certains champs pour s’assurer que les valeurs sont saisies correctement.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
    
@@ -216,7 +216,7 @@ Une suite de tests peut comporter plusieurs cas de test. Vous pouvez exécuter t
 * A checkmark icon indicates a passed test: ![save_icon](assets/save_icon.svg)
 * An &quot;X&quot; icon indicates a failed test: ![close-icon](assets/close-icon.svg)
 
-1. Accédez à l’icône AEM > **[!UICONTROL Outils]**> **[!UICONTROL Opérations]**> **[!UICONTROL Tests]**
+1. Accédez à AEM icône > **[!UICONTROL Outils]**> **[!UICONTROL Opérations]**> **[!UICONTROL Tests]**
 1. Pour exécuter tous les tests de la suite de tests :
 
    1. Dans le panneau Tests, appuyez sur **[!UICONTROL Nous commercialisons - Tests (1)]**. Il La suite se développe pour afficher la liste de test.
