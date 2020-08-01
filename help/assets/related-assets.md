@@ -3,10 +3,10 @@ title: Ressources liées
 description: Découvrez comment relier des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 50%
+source-wordcount: '636'
+ht-degree: 47%
 
 ---
 
@@ -23,7 +23,7 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
 ## Lier les ressources {#relating-assets}
 
-1. From the Experience Manager interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. From the [!DNL Experience Manager] interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
 
    ![ouvrir la page Propriétés d’une ressource pour établir une relation avec la ressource](assets/asset-properties-relate-assets.png)
 
@@ -65,9 +65,9 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
 1. Click **[!UICONTROL OK]** to close the dialog. Les ressources pour lesquelles vous avez supprimé des relations sont supprimées de la liste des ressources mises en relation dans la section **[!UICONTROL En relation]**.
 
-## Traduction de ressources associées {#translating-related-assets}
+## Traduire les éléments connexes {#translating-related-assets}
 
-La création de relations source/dérivés entre des ressources à l’aide de la fonctionnalité Ressources mises en relation est également utile dans les processus de traduction. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
+La création de relations source/dérivée entre les ressources à l’aide de la fonction ressources connexes s’avère également utile dans les workflows de traduction. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
