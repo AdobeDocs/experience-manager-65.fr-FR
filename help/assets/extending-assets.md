@@ -1,21 +1,21 @@
 ---
-title: Personnalisation et extension des ressources d’Adobe Experience Manager
+title: Personnalisez et étendez [!DNL Adobe Experience Manager Assets].
 description: Découvrez les moyens par lesquels vous pouvez personnaliser et étendre le Partage de ressources et l’Éditeur de ressources, qui proposent aux utilisateurs une interface et un ensemble de fonctionnalités spécialement adaptés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 50%
+source-wordcount: '253'
+ht-degree: 52%
 
 ---
 
 
-# Personnalisation et extension des ressources {#customizing-and-extending-assets}
+# Personnaliser et étendre [!DNL Assets] {#customizing-and-extending-assets}
 
 Asset Editor est le principal point d’accès utilisé par les utilisateurs d’un site Web Adobe Enterprise Manager pour rechercher, vue et manipuler les ressources numériques de votre référentiel.
 
-En tant que développeur Experience Manager, vous pouvez personnaliser et étendre l’éditeur de ressources de plusieurs manières, en présentant aux utilisateurs une interface et un ensemble de fonctionnalités spécifiquement personnalisés.
+As an [!DNL Experience Manager] developer, you can customize and extend the Asset Editor in a number of ways, presenting users with a specifically tailored interface and set of functionality.
 
 Les aspects suivants de la fonctionnalité peuvent être adaptés ou développés :
 
@@ -36,6 +36,6 @@ Les aspects suivants de l’aspect de l’éditeur de ressources peuvent être p
 
 ## Personnalisation des rendus {#customizing-renditions}
 
-Dans la terminologie des ressources d’Experience Manager, un rendu est le formulaire sous lequel une ressource est présentée. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
+In [!DNL Experience Manager Assets] terminology a rendition is the form in which an asset is presented. En général, une ressource particulière peut posséder plusieurs rendus. Par exemple, une image en couleur peut avoir un rendu dans sa taille d’origine, une autre à un format réduit et une autre à la fois dans un format réduit et un format converti en niveaux de gris.
 
 Les rendus dans lesquels une ressource particulière est disponible peuvent être personnalisés, et de nouveaux rendus peuvent être créés.
