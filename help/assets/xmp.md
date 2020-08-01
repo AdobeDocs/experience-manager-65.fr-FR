@@ -1,29 +1,29 @@
 ---
-title: Prise en charge des métadonnées XMP dans les ressources Adobe Experience Manager.
-description: Découvrez la norme de métadonnées XMP (Extensible Metadata Platform) utilisée par Experience Manager Assets pour la gestion des métadonnées. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
+title: Prise en charge des métadonnées XMP dans [!DNL Adobe Experience Manager Assets].
+description: Learn about the XMP (Extensible Metadata Platform) metadata standard used by [!DNL Experience Manager Assets] for metadata management. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 81%
+source-wordcount: '776'
+ht-degree: 78%
 
 ---
 
 
 # Métadonnées XMP {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) est la norme de métadonnées utilisée par Adobe Experience Manager Assets pour la gestion de toutes les métadonnées. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
+XMP (Extensible Metadata Platform) est la norme de métadonnées utilisée par [!DNL Adobe Experience Manager Assets] la gestion de toutes les métadonnées. XMP offre un format standard pour la création, le traitement et l’échange de métadonnées pour une multitude d’applications.
 
-En plus d’un codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier, XMP fournit un [modèle de contenu](xmp.md#xmp-core-concepts) riche et est [pris en charge par Adobe](xmp.md#advantages-of-xmp) et d’autres sociétés. Ainsi, les utilisateurs XMP, en association avec Assets, disposent d’une plate-forme puissante sur laquelle s’appuyer.
+En plus d’un codage de métadonnées universel qui peut être incorporé dans tous les formats de fichier, XMP fournit un [modèle de contenu](xmp.md#xmp-core-concepts) riche et est [pris en charge par Adobe](xmp.md#advantages-of-xmp) et d’autres sociétés. Ainsi, les utilisateurs XMP, en association avec , disposent d’une plate-forme puissante sur laquelle s’appuyer.[!DNL Assets]
 
 La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible auprès d’Adobe.
 
 ## What is XMP? {#what-is-xmp}
 
-Les ressources prennent en charge de manière native le fichier XMP, la plate-forme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
+[!DNL Assets] prend nativement en charge le XMP - l&#39;Extensible Metadata Platform piloté par l&#39;Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
-Les professionnels de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations dans plusieurs formats de fichiers. Le référentiel de ressources extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
+Production professionals, for example, use the built-in XMP support within Adobe&#39;s applications to pass information across multiple file formats. [!DNL Assets] repository extracts the XMP metadata and uses it to manage the content lifecycle and offers the ability to create automation workflows.
 
 XMP normalise la façon dont les métadonnées sont définies, créées et traitées en fournissant un modèle de données, un modèle de stockage et des schémas. Tous ces concepts sont abordés dans cette section.
 
@@ -41,7 +41,7 @@ XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métado
 
 XMP est le plus souvent sérialisé et stocké à l’aide d’un sous-ensemble du [W3C](https://fr.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://fr.wikipedia.org/wiki/Resource_Description_Framework) (RDF), exprimé à son tour en format [XML](https://fr.wikipedia.org/wiki/Extensible_Markup_Language).
 
-## Avantages du mode XMP   {#advantages-of-xmp}
+## Avantages du mode XMP  {#advantages-of-xmp}
 
 La norme XMP présente les avantages suivants par rapport aux autres normes de codage et schémas :
 
@@ -71,15 +71,13 @@ For example, the `Creator` property in two independently designed schemas might 
 
 ### Propriétés et valeurs {#properties-and-values}
 
-XMP peut inclure des propriétés de l’un ou de plusieurs des schémas.
+XMP peut inclure des propriétés de l’un ou de plusieurs des schémas. Par exemple, un sous-ensemble classique utilisé par de nombreuses applications Adobe peut comprendre les éléments suivants :
 
-Par exemple, un sous-ensemble classique utilisé par de nombreuses applications Adobe peut comprendre les éléments suivants :
-
-* Schéma Dublin Core : dc:title, dc:creator, dc:subject, dc:format, dc:rights
-* Schéma de base XMP : xmp:CreateDate, xmp:CreatorTool, xmp:ModifyDate, xmp:metadataDate
-* Schéma de gestion des droits XMP : xmpRights:WebStatement, xmpRights:Marked
-* Schéma de gestion des médias XMP : xmpMM:DocumentID
+* Schéma Dublin Core : `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
+* XMP basic schema: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`.
+* XMP rights management schema: `xmpRights:WebStatement`, `xmpRights:Marked`.
+* XMP media management schema: `xmpMM:DocumentID`.
 
 ### Variantes linguistiques {#language-alternatives}
 
-XMP vous offre la possibilité d’ajouter une propriété `xml:lang` aux propriétés de texte pour spécifier la langue du texte.
+XMP lets you add an `xml:lang` property to text properties to specify the language of the text.
