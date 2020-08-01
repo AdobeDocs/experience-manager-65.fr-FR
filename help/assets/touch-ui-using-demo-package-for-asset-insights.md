@@ -3,10 +3,10 @@ title: Utiliser le package de démonstration pour Asset Insights
 description: Utilisez le module de démonstration afin de permettre à la fonction Statistiques sur les ressources d’Adobe de capturer les données d’une page web et de générer des informations pour cette page.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 75%
+source-wordcount: '160'
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 75%
 
 À l’aide du module de démonstration, vous pouvez permettre à Adobe Asset Insights de capturer les données d’un exemple de page web et de générer des informations pour cette page.
 
-## Utilisation des statistiques Experience Manager Assets avec une page Web d’exemple  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Informations sur une page Web d’exemple  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure Asset Insights using the instructions in [Configuring Asset Insights](touch-ui-configuring-asset-insights.md).
 1. Téléchargez le module d’exemple  Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
@@ -34,4 +34,4 @@ ht-degree: 75%
 
    >[!NOTE]
    >
-   >La page Web externe peut se trouver dans Experience Manager même.
+   >The external web page can be in [!DNL Experience Manager] itself.
