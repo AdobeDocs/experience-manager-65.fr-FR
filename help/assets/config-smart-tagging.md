@@ -3,9 +3,9 @@ title: Configurez le balisage des ressources à l’aide de Smart Content Servic
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1103'
 ht-degree: 56%
 
 ---
@@ -25,7 +25,7 @@ L’article détaille les tâches essentielles suivantes qui sont requises pour 
 
 ## Conditions préalables {#prerequisites}
 
-Avant d’utiliser Smart Content Service, vérifiez les éléments suivants pour créer une intégration sur Adobe Developer Console :
+Avant d’utiliser Smart Content Service, vérifiez les éléments suivants pour créer une intégration sur la console de développement Adobe :
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Le service de contenu dynamique est activé pour votre organisation.
@@ -33,7 +33,7 @@ Avant d’utiliser Smart Content Service, vérifiez les éléments suivants pour
 <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
 -->
 
-To enable Enhanced Smart Tags, in addition to the above, also install the latest [AEM service pack](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
+To enable Enhanced Smart Tags, in addition to the above, also install the latest [Experience Manager service pack](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
 ## Obtention d’un certificat public {#obtain-public-certificate}
 
@@ -79,9 +79,9 @@ Une fois qu’un certificat expire, il n’est plus approuvé. Vous ne pouvez pa
 1. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration Oauth]**.
 1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
 
-## Intégration de la console de développement Adobe {#create-adobe-i-o-integration}
+## Intégration de la Console développeur de création d’Adobes {#create-adobe-i-o-integration}
 
-Pour utiliser les API de Smart Content Service, créez une intégration dans Adobe Developer Console afin de générer la clé d’API, l’ID de compte technique, l’ID d’organisation et la clé secrète client.
+Pour utiliser les API de Smart Content Service, créez une intégration dans la Console développeur d’Adobes afin de générer la clé d’API, l’ID de compte technique, l’ID d’organisation et la clé secrète client.
 
 1. Accédez à l’URL [https://console.adobe.io](https://console.adobe.io/) dans un navigateur. Sélectionnez le compte approprié et vérifiez que le rôle d’organisation associé est administrateur système.
 1. Créez un projet portant le nom de votre choix. Cliquez sur **[!UICONTROL Add API]** (Ajouter une API).
@@ -94,7 +94,7 @@ Pour utiliser les API de Smart Content Service, créez une intégration dans Ado
 
 ## Configuration du service de contenu dynamique {#configure-smart-content-service}
 
-Pour configurer l’intégration, utilisez les valeurs des champs ID de compte technique, ID d’organisation, clé secrète client, serveur d’autorisation et clé d’API de l’intégration Adobe Developer Console. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
+Pour configurer l’intégration, utilisez les valeurs des champs ID de compte technique, ID d’organisation, clé secrète client, serveur d’autorisation et clé d’API de l’intégration de la console de développement d’Adobe. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
 
 1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
 1. Sous **[!UICONTROL Ressources – Balises intelligentes]**, ouvrez la configuration créée ci-dessus. Sur la page de paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
