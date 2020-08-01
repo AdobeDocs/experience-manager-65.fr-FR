@@ -3,10 +3,10 @@ title: Préparation des ressources pour la traduction
 description: Créez des dossiers racine de langue pour préparer les fichiers à la traduction afin de prendre en charge les fichiers multilingues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 66%
+source-wordcount: '440'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 66%
 
 Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues.
 
-Dans les ressources d’Adobe Experience Manager, les ressources multilingues sont incluses dans des dossiers, où chaque dossier contient les ressources dans une langue différente.
+In [!DNL Adobe Experience Manager Assets], multilingual assets are included in folders, where each folder contains the assets in a different language.
 
 Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’une copie de langue, nommé racine de langue, identifie la langue du contenu de la copie de langue. For example, */content/dam/it* is the Italian language root for the Italian language copy. Les copies de langue doivent utiliser une [racine de langue correctement configurée](preparing-assets-for-translation.md#creating-a-language-root) pour que la langue correcte soit ciblée lors de la traduction des ressources source.
 
@@ -46,7 +46,7 @@ Pour créer la racine de langue, créez un dossier, puis utilisez le code de lan
 
 Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie présente la propriété Nom `it`. La propriété Nom est utilisée comme nom du nœud de ressource dans le référentiel et détermine donc le chemin d’accès des ressources. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
-1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
+1. From the [!DNL Assets] console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Créer un dossier](assets/Create-folder.png)
 
@@ -54,13 +54,13 @@ Par exemple, la page racine de la copie en italien de l’exemple de hiérarchie
 
    ![Ajouter le code de langue dans le dossier](assets/Add-language-code-in-folder.png)
 
-1. Cliquez sur **[!UICONTROL Créer]**. La racine de langue est créée dans la console Ressources.
+1. Cliquez sur **[!UICONTROL Créer]**. The language root is created in the [!DNL Assets] console.
 
 ## Affichage des racines de langue {#viewing-language-roots}
 
-Experience Manager interface provides a **[!UICONTROL References]** panel that displays a list of language roots that have been created within Assets.
+[!DNL Experience Manager] fournit un panneau **[!UICONTROL Références]** qui affiche une liste des racines de langue qui ont été créées dans [!DNL Assets].
 
-1. Dans la console Ressources, choisissez le gabarit de langue pour lequel vous souhaitez créer des copies de langue.
+1. In the [!DNL Assets] console, select the language primary for which you want to create language copies.
 1. Dans le rail de gauche, sélectionnez l’option **[!UICONTROL Références]** pour ouvrir le volet [!UICONTROL Référence] .
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
