@@ -1,19 +1,19 @@
 ---
-title: Gérez les métadonnées de nombreux fichiers et collections dans Adobe Enterprise Manager.
+title: Gérez les métadonnées de nombreux fichiers et collections dans [!DNL Adobe Enterprise Manager].
 description: Modifiez simultanément les métadonnées de nombreux fichiers et collections afin de propager rapidement les modifications de métadonnées courantes.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 63%
+source-wordcount: '487'
+ht-degree: 65%
 
 ---
 
 
 # Gestion des ressources et des collections {#managing-multiple-assets-and-collections}
 
-Adobe Enterprise Manager Assets vous permet de modifier simultanément les métadonnées de plusieurs fichiers afin que vous puissiez rapidement propager les modifications de métadonnées courantes aux fichiers en bloc. Vous pouvez également modifier en gros les métadonnées de plusieurs collections.
+[!DNL Adobe Enterprise Manager Assets] vous permet de modifier les métadonnées de plusieurs ressources simultanément afin de propager rapidement et en masse les modifications de métadonnées communes vers les ressources. Vous pouvez également modifier en gros les métadonnées de plusieurs collections.
 
 Utilisez la page des propriétés pour effectuer des modifications de métadonnées sur plusieurs ressources ou collections :
 
@@ -28,7 +28,7 @@ Pour personnaliser la page des propriétés de métadonnées, y compris l’ajou
 
 ## Edit metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
 
-1. Dans l’interface utilisateur Ressources, accédez à l’emplacement des ressources à modifier.
+1. In the [!DNL Assets] user interface, navigate to the location of the assets you want to edit.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
 1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
