@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 54%
+source-wordcount: '630'
+ht-degree: 52%
 
 ---
 
@@ -16,21 +16,21 @@ ht-degree: 54%
 # Guide de l’utilisateur des ressources Experience Manager 6.5 {#assets}
 
 + [[!DNL Assets] guide de l&#39;utilisateur](home.md)
-+ [Notes de mise à jour d’AEM 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [Notes de mise à jour de Experience Manager 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Recommandations relatives aux ressources](best-practices-for-assets.md)
-+ Utiliser des AEM Assets {#using}
-   + [Expérience page d&#39;accueil AEM Assets](assets-home-page.md)
-   + [Recherche de ressources dans AEM ](search-assets.md)
++ Utiliser des ressources Experience Manager {#using}
+   + [Expérience de la page d&#39;accueil des ressources](assets-home-page.md)
+   + [Recherche de ressources numériques](search-assets.md)
    + [Ressources multilingues](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] Utilisation des ressources en AEM Assets](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Utilisation des ressources dans les ressources](aem-assets-adobe-stock.md)
    + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
    + [Traiter les actifs](assets-workflow.md)
    + [Ajouter des zones cliquables](image-maps.md)
    + [Réutilisation de ressources à l’aide de MSM](reuse-assets-using-msm.md)
-   + [Ressources connectées avec des AEM Sites](use-assets-across-connected-assets-instances.md)
+   + [Ressources connectées avec des sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
@@ -49,7 +49,7 @@ ht-degree: 54%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
-   + [Ajouter les fonctionnalités de Scene7 à votre page](scene7.md)
+   + [Ajouter les fonctionnalités Scene7 à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
@@ -76,14 +76,14 @@ ht-degree: 54%
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les ressources {#extending}
-   + [Personnaliser et étendre les AEM Assets](extending-assets.md)
+   + [Personnalisation et extension des ressources](extending-assets.md)
    + [Traiter des fichiers à l’aide de gestionnaires de médias et de workflows](media-handlers.md)
    + [Étendre la fonctionnalité de recherche](searchx.md)
-   + [Installation et [!DNL ImageMagick] configuration pour travailler avec des AEM Assets](best-practices-for-imagemagick.md)
+   + [Installation et [!DNL ImageMagick] configuration de ressources](best-practices-for-imagemagick.md)
    + [Intégration de ressources dans le flux d’activités](extending-activity-stream.md)
    + [Étendre l’éditeur de fichiers](asseteditorx.md)
    + [API HTTP Assets](mac-api-assets.md)
-   + [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](assets-api-content-fragments.md)
+   + [Prise en charge des fragments de contenu dans l’API HTTP Assets](assets-api-content-fragments.md)
    + [Développement du proxy de ressources](proxy.md)
 + Administration des ressources {#administer}
    + [Formats de fichiers pris en charge](assets-formats.md)
@@ -104,13 +104,13 @@ ht-degree: 54%
    + [Guide de migration des ressources](assets-migration-guide.md)
    + [Métadonnées XMP](xmp.md)
    + [Considérations sur le réseau d’Assets](assets-network-considerations.md)
-   + [AEM Assets et AEM MediaLibrary](medialibrary.md)
+   + [Ressources et MediaLibrary](medialibrary.md)
    + [Utiliser le pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert](configuring-asset-upload-restrictions.md)
-   + [Bonnes pratiques d’intégration d’AEM et de Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Intégration d’InDesign Server](indesign.md)
+   + [Intégration Experience Manager et Creative Cloud](aem-cc-integration-best-practices.md)
+   + [Intégrer à l&#39;InDesign Server](indesign.md)
    + [Profils de métadonnées](metadata-profiles.md)
-   + [Gestion des droits numériques dans les ressources](drm.md)
+   + [Digital Rights Management dans les ressources](drm.md)
    + [Utiliser le package de démonstration pour les informations sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
    + [Meilleures pratiques de surveillance des ressources](assets-monitoring-best-practices.md)
@@ -123,11 +123,11 @@ ht-degree: 54%
    + [Mettre vos fichiers en filigrane](watermarking.md)
    + [Importation et exportation de métadonnées en bloc](metadata-import-export.md)
    + [Modèles de ressources](asset-templates.md)
-   + [Recommandations relatives au partage de dossiers avec Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Recommandations relatives au partage de dossier avec le Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gérer les balises actives](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuration d’AEM Assets avec Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Configuration de ressources avec le portail de marques](configure-aem-assets-with-brand-portal.md)
    + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
    + [Publication de dossiers sur Brand Portal](brand-portal-publish-folder.md)
    + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
@@ -151,11 +151,11 @@ ht-degree: 54%
    + [Gestion des ressources vidéo](managing-video-assets.md)
    + [Création de projets de traduction](translation-projects.md)
    + [Préparation des ressources pour la traduction](preparing-assets-for-translation.md)
-   + [Téléchargement de ressources à partir d’AEM](download-assets-from-aem.md)
+   + [Téléchargement de fichiers à partir du Experience Manager](download-assets-from-aem.md)
    + [Tâches asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
-   + [Activation des informations sur les ressources via le lancement d’Adobe](touch-ui-using-dtm-for-asset-insights.md)
+   + [Activation des informations sur les ressources par le lancement d’Adobe](touch-ui-using-dtm-for-asset-insights.md)
    + [Configuration des informations sur les ressources](touch-ui-configuring-asset-insights.md)
    + [Archivage et extraction de fichiers](check-out-and-submit-assets.md)
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
