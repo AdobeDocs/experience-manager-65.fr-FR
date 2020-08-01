@@ -1,19 +1,19 @@
 ---
-title: Archivage et extraction de vos ressources numériques pour modification
+title: Archivez et extrayez vos ressources numériques pour les modifier.
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 60%
+source-wordcount: '408'
+ht-degree: 53%
 
 ---
 
 
-# Fichiers d’arrivée et de départ dans le DAM d’Experience Manager {#check-in-and-check-out-files-in-assets}
+# Check-in and check-out files in [!DNL Experience Manager] DAM {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager Assets vous permet d’extraire des fichiers pour les modifier et de les réarchiver une fois les modifications effectuées. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. D’autres utilisateurs ne peuvent pas effectuer l’une de ces opérations sur le fichier tant que vous n’avez pas réarchivé le fichier dans Ressources. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
+[!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Other users cannot perform any of these operations on the asset until you check the asset back in to [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
 Vous avez besoin d’un accès en écriture à ces ressources pour être en mesure de les extraire ou de les archiver.
 
@@ -21,7 +21,7 @@ Cette caractéristique permet d’empêcher les autres utilisateurs d’écraser
 
 ## Extraire les fichiers {#checking-out-assets}
 
-1. Dans l’interface utilisateur d’Assets, sélectionnez la ressource que vous souhaitez extraire. Vous pouvez également sélectionner plusieurs ressources à extraire.
+1. From the [!DNL Assets] user interface, select the asset you want to check out. Vous pouvez également sélectionner plusieurs ressources à extraire.
 1. Dans la barre d&#39;outils, cliquez sur **[!UICONTROL Passage en caisse]**.
 L&#39;option **[!UICONTROL Passage en caisse]** bascule vers **[!UICONTROL Archivage]**.
 Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous avez extraite, connectez-vous comme un utilisateur différent. Un symbole de verrou s’affiche sur la miniature de la ressource que vous avez récupérée.
@@ -44,14 +44,14 @@ Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous
 
    Vous pouvez également choisir d’annoter ou de publier la ressource.
 
-1. Sélectionnez le fichier modifié dans l’ [!DNL Assets] interface, puis cliquez sur **[!UICONTROL Archiver]** dans la barre d’outils. La ressource modifiée est archivée dans Assets et peut être modifiée par les autres utilisateurs.
+1. Sélectionnez le fichier modifié dans l’ [!DNL Assets] interface, puis cliquez sur **[!UICONTROL Archiver]** dans la barre d’outils. The modified asset is checked in to [!DNL Assets] and is available to other users for editing.
 
 ## Forced check in {#forced-check-in}
 
 Les administrateurs peuvent archiver les ressources extraites par d’autres utilisateurs.
 
-1. Connectez-vous à Assets en tant qu’administrateur.
-1. Dans l’interface utilisateur d’Assets, sélectionnez une ou plusieurs ressources extraites par d’autres utilisateurs.
+1. Log in to [!DNL Assets] as an administrator.
+1. From the [!DNL Assets] user interface select one or more assets that have been checked out by other users.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
@@ -59,6 +59,6 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 
 >[!MORELIKETHIS]
 >
->* [Comprendre l’archivage et l’extraction dans l’application de bureau Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
+>* [Comprendre l&#39;archivage et l&#39;extraction dans l&#39;application de bureau Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Didacticiel vidéo pour comprendre comment archiver et extraire des ressources](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
 
