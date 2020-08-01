@@ -3,9 +3,9 @@ title: Ajout d’un filigrane à vos ressources numériques.
 description: Découvrez comment utiliser la fonctionnalité d’application d’un filigrane pour ajouter un filigrane numérique aux ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5035d3457187f4d5fe5c2af255a1a886df7291b4
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 35%
 
 ---
@@ -39,4 +39,4 @@ To be able to apply watermark on assets, add the watermarking step in the [!UICO
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. From the [!DNL Assets] user interface, upload a sample asset. Le filigrane apparaît avec la taille de police, la couleur, etc., à l’emplacement configuré aux étapes ci-dessus.
 
-Pour mettre en filigrane des documents PDF par programmation ou avec des informations dynamiques, pensez à utiliser l’offre [AEM Document Services](/help/forms/using/overview-aem-document-services.md) .
+Pour mettre en filigrane des documents PDF par programmation ou avec des informations dynamiques, pensez à utiliser l’offre [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md) .
