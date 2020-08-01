@@ -1,27 +1,27 @@
 ---
 title: Détecter le type de fichier MIME à l’aide d’Apache Tika
-description: Activez Apache Tika pour aider Experience Manager Assets à détecter le type MIME de ressources du flux de contenu pendant l’opération de téléchargement au lieu de l’extension de fichier.
+description: Enable Apache Tika to help [!DNL Experience Manager Assets] detect the MIME type of assets from the content stream during the upload operation instead of the file extension.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 10%
+source-wordcount: '165'
+ht-degree: 11%
 
 ---
 
 
-# Detect MIME type of assets using Apache Tika {#detecting-mime-type-of-assets-using-apache-tika}
+# Détecter le type de fichiers MIME à l’aide de [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-En règle générale, Adobe Experience Manager Assets détecte le type MIME de ressources que vous téléchargez à partir de leur extension de fichier.
+En règle générale, [!DNL Adobe Experience Manager Assets] détecte le type MIME de ressources que vous téléchargez à partir de leur extension de fichier.
 
-Si vous utilisez Apache Tika pour télécharger des fichiers, Assets détecte leur type MIME dans le flux de contenu au cours de l’opération de téléchargement et non dans l’extension de fichier.
+If you use [!DNL Apache Tika] to upload assets, [!DNL Assets] detects their MIME type from the content stream during the upload operation instead of the file extension.
 
 Cette fonction est désactivée par défaut. To enable the feature, configure the **[!UICONTROL Day CQ DAM Mime Type]** service from [!UICONTROL Configuration Manager].
 
 >[!NOTE]
 >
->La détection de type MIME à l&#39;aide de la bibliothèque Apache Tika est une opération gourmande en ressources.
+>MIME type detection using the [!DNL Apache Tika] library is a resource-intensive operation.
 
 1. Pour ouvrir la console Web de Configuration Manager, accédez à `https://[aem_server]:[port]/system/console/configMgr`.
 
