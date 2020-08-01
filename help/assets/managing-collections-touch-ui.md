@@ -4,17 +4,17 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 65%
+source-wordcount: '2178'
+ht-degree: 63%
 
 ---
 
 
 # Gestion des collections {#managing-collections}
 
-Une collection est un ensemble de ressources dans Adobe Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou dynamique basée sur les résultats de la recherche.
+A collection is a set of assets within [!DNL Adobe Experience Manager Assets]. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou dynamique basée sur les résultats de la recherche.
 
 Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
 
@@ -28,7 +28,7 @@ Selon la façon dont elles rassemblent les ressources, les collections sont des 
 
 ## Accès à la console Collections {#navigating-the-collections-console}
 
-Pour ouvrir les **[!UICONTROL collections]**, dans l’interface du Experience Manager, accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**.
+Pour ouvrir les **[!UICONTROL collections]**, dans l’ [!DNL Experience Manager] interface, accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Collections]**.
 
 ## Création d’une collection {#creating-a-collection}
 
@@ -52,15 +52,15 @@ Vous pouvez créer une collection avec des références statiques, par exemple, 
 
    >[!NOTE]
    >
-   >Experience Manager Assets vous permet de créer des tâches de révision pour une collection de la même façon que vous créez des tâches de révision pour un dossier de ressources.
+   >[!DNL Experience Manager Assets] vous permet de créer des tâches de révision pour une collection de la même façon que vous créez des tâches de révision pour un dossier de ressources.
 
-   Pour ajouter des ressources à la collection, accédez à l’interface utilisateur Assets. Pour plus d’informations, voir [Ajout de ressources à une collection](#adding-assets-to-a-collection).
+   To add assets to the collection, navigate to the [!DNL Assets] user interface. Pour plus d’informations, voir [Ajout de ressources à une collection](#adding-assets-to-a-collection).
 
 ### Création de collections à l’aide de la zone de dépôt {#create-collections-using-dropzone}
 
-Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jusqu’à une collection. Vous pouvez également créer une copie d’une collection et faire glisser les ressources jusqu’à celle-ci.
+You can drag assets from the [!DNL Assets] user interface to a collection. Vous pouvez également créer une copie d’une collection et faire glisser les ressources jusqu’à celle-ci.
 
-1. Dans l’interface utilisateur Assets, sélectionnez les ressources à ajouter à une collection.
+1. From the [!DNL Assets] user interface, select the assets you want to add to a collection.
 1. Faites glisser les ressources jusqu’à la zone **[!UICONTROL Déposer dans la collection]**. Vous pouvez également cliquer sur **[!UICONTROL Vers la collection]** dans la barre d’outils.
 
    ![drop_in_collection](assets/drop_in_collection.png)
@@ -78,7 +78,7 @@ Une collection dynamique utilise des critères de recherche pour rassembler les
 
 Pour créer une collection dynamique, procédez comme suit :
 
-1. Accédez à l’interface utilisateur Ressources, puis cliquez sur Rechercher.
+1. Accédez à l’interface [!DNL Assets] utilisateur et cliquez sur Rechercher.
 
 1. Tapez le mot-clé de recherche dans la zone Omnisearch et appuyez sur `Enter`. Ouvrez le panneau Filtres et appliquez un filtre de recherche.
 
@@ -108,7 +108,7 @@ Pour créer une collection dynamique, procédez comme suit :
 
 Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour rassembler les ressources. Pour cette raison, les références statiques aux ressources et dossiers ne s’appliquent pas à celles-ci.
 
-1. Dans l’interface utilisateur Ressources, sélectionnez la ressource, puis cliquez sur **[!UICONTROL À la collection]** ![ajouter à la collection](assets/do-not-localize/add-to-collection.png) dans la barre d’outils.
+1. Dans l’interface utilisateur des [!DNL A]ressources, sélectionnez la ressource, puis cliquez sur **[!UICONTROL À la collection]** ![ajouter à la collection](assets/do-not-localize/add-to-collection.png) dans la barre d’outils.
 Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la région devient **[!UICONTROL Déposer pour Ajouter]**.
 
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la ressource.
@@ -119,9 +119,9 @@ Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Dé
 
 Les collections dynamiques sont créées en enregistrant une recherche afin que vous puissiez modifier leur contenu en changeant les paramètres de recherche de la [recherche enregistrée](#saved-searches).
 
-1. Dans l’interface utilisateur Ressources, cliquez sur l’option ![de recherche de l’option](assets/do-not-localize/search_icon.png) de recherche dans la barre d’outils.
+1. Dans l’interface [!DNL Assets] utilisateur, cliquez sur l’option de recherche ![](assets/do-not-localize/search_icon.png) Rechercher dans la barre d’outils.
 1. Placez le curseur dans la zone Omni-recherche et appuyez sur la touche Entrée.
-1. Dans l’interface du Experience Manager, ouvrez le panneau Filtres.
+1. Dans l’ [!DNL Experience Manager] interface, ouvrez le panneau Filtres.
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -156,7 +156,7 @@ Vous pouvez modifier simultanément les métadonnées de plusieurs collections. 
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. La liste des collections contient toutes les collections sélectionnées par défaut. Le Experience Manager ne met pas à jour les métadonnées des collections que vous supprimez.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. La liste des collections contient toutes les collections sélectionnées par défaut. [!DNL Experience Manager] ne met pas à jour les métadonnées des collections que vous supprimez.
    >* En haut de la liste, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des collections à l’effacement de la liste, et inversement.
 
 
@@ -175,15 +175,15 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
 
 ## Recherche de collections {#searching-collections}
 
-Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omnisearch, Assets recherche les noms de collection, les métadonnées et les balises ajoutées aux collections.
+Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. When you search with keywords in the Omnisearch box, [!DNL Assets] searches for collection names, metadata, and the tags added to the collections.
 
-Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
+Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. [!DNL Assets] ou les dossiers des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), tous les fichiers, dossiers et collections appropriés sont renvoyés.
 
 ## Search within collections {#searching-within-collections}
 
 Dans la console Collections, cliquez sur une collection pour l’ouvrir.
 
-Au sein d’une collection, la recherche des Experience Manager est limitée aux ressources (ainsi qu’à leurs balises et métadonnées) de la collection que vous visualisez. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
+Within a collection, [!DNL Experience Manager] search is restricted to assets (and their tags and metadata) within the collection that you are viewing. Lorsque vous effectuez une recherche dans un dossier, toutes les ressources correspondantes et les dossiers enfants du dossier actif sont renvoyés. Lorsque vous effectuez une recherche dans une collection, seuls les ressources, dossiers et autres collections correspondant aux membres directs de la collection sont renvoyés.
 
 ## Modification des paramètres d’une collection {#editing-collection-settings}
 
@@ -232,9 +232,9 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
 >
 >Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
 
-## Recherches enregistrées  {#saved-searches}
+## Recherches enregistrées   {#saved-searches}
 
-Dans l’interface utilisateur d’Assets, vous pouvez rechercher ou filtrer des ressources selon des règles, critères de recherche ou facettes de recherche personnalisées. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
+In the [!DNL Assets] user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. Si vous enregistrez ces éléments en tant que **[!UICONTROL recherches enregistrées]**, vous pouvez y accéder ultérieurement à partir de la liste **[!UICONTROL Recherches enregistrées]** du panneau Filtrer. La création d’une recherche enregistrée entraîne celle d’une collection dynamique.
 
 ![save_searches_liste](assets/saved_searches_list.png)
 
@@ -248,9 +248,9 @@ La modification des recherches enregistrées est identique à celle des collecti
 
 Pour supprimer des recherches enregistrées, procédez comme suit :
 
-1. Dans l’interface utilisateur Ressources, cliquez sur l’option ![de recherche](assets/do-not-localize/search_icon.png)de recherche.
+1. Dans l’interface [!DNL Assets] utilisateur, cliquez sur l’option ![](assets/do-not-localize/search_icon.png)Rechercher.
 1. Avec le curseur dans le champ Omnisearch, appuyez sur la touche Retour.
-1. Dans l’interface du Experience Manager, ouvrez le panneau Filtres.
+1. Dans l’ [!DNL Experience Manager] interface, ouvrez le panneau Filtres.
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
