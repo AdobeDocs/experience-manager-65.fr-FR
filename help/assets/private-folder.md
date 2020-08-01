@@ -1,25 +1,25 @@
 ---
-title: Créez et partagez un dossier privé dans Adobe Experience Manager.
-description: Découvrez comment créer un dossier privé dans les ressources d’Adobe Experience Manager et le partager avec d’autres utilisateurs et leur attribuer divers privilèges.
+title: Créez et partagez un dossier privé dans [!DNL Adobe Experience Manager].
+description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 42%
+source-wordcount: '480'
+ht-degree: 40%
 
 ---
 
 
 # Partage de dossiers privés {#private-folder-sharing}
 
-Vous pouvez créer un dossier privé dans l’interface utilisateur des ressources d’Adobe Experience Manager qui vous est réservé. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+You can create a private folder in the [!DNL Adobe Experience Manager Assets] user interface that is available exclusively to you. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
 >[!NOTE]
 >
 >Le dossier privé comporte au moins un membre doté du rôle Propriétaire.
 
-1. In the Assets console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
+1. In the [!DNL Assets] console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
    ![Créer un dossier de fichiers](assets/Create-folder.png)
 
@@ -49,9 +49,9 @@ Vous pouvez créer un dossier privé dans l’interface utilisateur des ressourc
    >
    >Le dossier privé comporte au moins un membre doté du rôle Propriétaire. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants (et l’administrateur lui-même) du dossier privé, l’administrateur doit ajouter un autre utilisateur en tant que propriétaire.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**. En fonction du rôle que vous attribuez, l’utilisateur se voit attribuer un jeu de privilèges sur votre dossier privé lorsqu’il se connecte à Ressources.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. Depending on the role you assign, the user is assigned a set of privileges on your private folder when the user logs in to [!DNL Assets].
 1. Cliquez sur **[!UICONTROL OK]** pour fermer le message de confirmation.
-1. L’utilisateur avec lequel vous partagez le dossier reçoit une notification de partage. Connectez-vous à  Assets à l’aide des informations d’identification de l’utilisateur pour afficher la notification.
+1. L’utilisateur avec lequel vous partagez le dossier reçoit une notification de partage. Log in to [!DNL Assets] with the credentials of the user to view the notification.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
