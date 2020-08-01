@@ -3,10 +3,10 @@ title: Traiter les ressources pour exécuter des processus d’entreprise, effec
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 29%
+source-wordcount: '985'
+ht-degree: 27%
 
 ---
 
@@ -66,7 +66,7 @@ Pour appliquer un processus à une ressource, procédez comme suit :
 
 ## Application d’un workflow à plusieurs ressources {#applying-a-workflow-to-multiple-assets}
 
-1. Dans la console Ressources, accédez à l’emplacement des ressources pour lesquelles vous souhaitez démarrer un workflow, puis sélectionnez les ressources. Sélectionnez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
+1. From the [!DNL Assets] console, navigate to the location of the assets for which you want to start a workflow, and select the assets. Sélectionnez **[!UICONTROL Chronologie]** dans le menu pour afficher la chronologie.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
