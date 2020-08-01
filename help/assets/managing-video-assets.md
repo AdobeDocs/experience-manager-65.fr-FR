@@ -3,10 +3,10 @@ title: Gérez les fichiers vidéo dans [!DNL Adobe Experience Manager].
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 39%
+source-wordcount: '814'
+ht-degree: 37%
 
 ---
 
@@ -19,9 +19,9 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 
 ## Chargement et prévisualisation des ressources vidéo {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualisation les rendus dans l’interface utilisateur Ressources.
+[!DNL Adobe Experience Manager Assets] génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualisation les rendus dans l’interface [!DNL Assets] utilisateur.
 
-1. Dans le dossier Ressources numériques ou ses sous-dossiers, accédez à l’emplacement où vous souhaitez ajouter les ressources numériques.
+1. Dans le dossier ou les sous-dossiers des ressources numériques, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
 1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Vous pouvez également le faire glisser directement jusqu’à la zone des ressources. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
@@ -71,7 +71,7 @@ Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web
 
 ## Annotation de ressources vidéo {#annotate-video-assets}
 
-1. From the Assets console, click [!UICONTROL Edit] on the asset card to display the asset details page.
+1. From the [!DNL Assets] console, click [!UICONTROL Edit] on the asset card to display the asset details page.
 1. Pour lire la vidéo, cliquez sur [!UICONTROL Prévisualisation].
 1. Pour annoter la vidéo, cliquez sur le bouton **[!UICONTROL Annoter]**. Une annotation est ajoutée au moment (image) particulier de la vidéo. Lorsque vous annotez, vous pouvez dessiner sur le canevas et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés.
 
