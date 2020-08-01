@@ -3,23 +3,23 @@ title: Schéma de métadonnées de dossier
 description: Découvrez comment créer un schéma de métadonnées pour les dossiers de ressources dans les ressources d'Adobe Experience Manager
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 71%
+source-wordcount: '1016'
+ht-degree: 74%
 
 ---
 
 
 # Schéma de métadonnées de dossier {#folder-metadata-schema}
 
-Les ressources d’Adobe Experience Manager vous permettent de créer des schémas de métadonnées pour les dossiers de ressources, qui définissent la mise en page et les métadonnées affichées dans les pages de propriétés des dossiers.
+[!DNL Adobe Experience Manager Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers.
 
 ## Ajout d’un formulaire de schéma de métadonnées de dossier  {#add-a-folder-metadata-schema-form}
 
 Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour créer et modifier des schémas de métadonnées pour les dossiers.
 
-1. Dans l’interface de Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de métadonnées]** de dossier.
+1. Dans [!DNL Experience Manager] l’interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de métadonnées]** de dossier.
 1. On the [!UICONTROL Folder Metadata Schema Forms] page, click **[!UICONTROL Create]**.
 1. Specify a name for the form, and click **[!UICONTROL Create]**. The new schema form is listed in the [!UICONTROL Schema Forms] page.
 
@@ -108,7 +108,7 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 ### Affectation d’un schéma à partir de la page Schéma de métadonnées de dossier  {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Dans l’interface de Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de métadonnées]** de dossier.
+1. Dans [!DNL Experience Manager] l’interface, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > Schémas **[!UICONTROL de métadonnées]** de dossier.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, sélectionnez le formulaire à appliquer à un dossier.
 1. From the toolbar, click **[!UICONTROL Apply to Folder(s)]**.
 
