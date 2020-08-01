@@ -1,13 +1,13 @@
 ---
 title: Instructions de formation de Smart Content Service
-description: Formation du service d’intelligence artificielle d’Adobe Sensei à l’application de balises actives aux ressources
+description: Former le service Adobe Sensei AI à l’application de balises actives aux ressources
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 68%
+source-wordcount: '462'
+ht-degree: 77%
 
 ---
 
@@ -22,15 +22,15 @@ Pour un résultat optimal, les images de votre corpus d’entraînement doivent 
 
 **Quantité et taille :** minimum 30 images par balise. Minimum 500 pixels sur le côté le plus long.
 
-**Cohérence** : les images pour une balise doivent être visuellement similaires.
+**Cohérence** : les images associées à une même balise doivent être visuellement similaires.
 
-For example, it is not a good idea to tag all of these images as `my-party` (for training) because they are not visually similar.
+Par exemple, il est déconseillé d’incorporer une balise `my-party` pour toutes ces images (en situation d’entraînement), car elles ne sont pas similaires visuellement.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](/help/assets/assets/do-not-localize/coherence.png)
 
-**Couverture** : les images d’entraînement doivent être suffisamment variées. L’idée est de fournir quelques exemples, mais raisonnablement variés, de sorte qu’Experience Manager apprenne à se concentrer sur les bonnes choses. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type.
+**Couverture** : les images d’entraînement doivent être suffisamment variées. L&#39;idée est de fournir quelques exemples, mais raisonnablement variés, pour que le Experience Manager apprenne à se concentrer sur les bonnes choses. Si vous appliquez la même balise sur des images visuellement différentes, incluez au moins cinq exemples de chaque type.
 
-Par exemple, pour la balise *pose-tête-baissée-mannequin*, incluez davantage d’images d’entraînement similaires à l’image mise en évidence ci-dessous pour que le service reconnaisse les images similaires avec plus de précision lors du balisage.
+Par exemple, pour la balise *mannequin-pose-tête-baissée*, incluez davantage d’images d’entraînement similaires à l’image mise en évidence ci-dessous pour que le service reconnaisse les images similaires avec plus de précision lors du balisage.
 
 ![Images d’illustration donnant un exemple d’instructions d’entraînement](/help/assets/assets/do-not-localize/coverage_1.png)
 
@@ -48,11 +48,11 @@ Par exemple, pour la balise *chaussure-décontractée*, la seconde image n’est
 
 Les balises actives améliorées reposent sur les modèles d’apprentissage des images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
 
-* Impossibilité d’identifier des différences subtiles dans les images. Par exemple, les chemises à l&#39;état mince ou les chemises à l&#39;état normal.
+* Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
 * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-* Le balisage est pris en charge dans les paramètres régionaux pris en charge par Experience Manager. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+* Tagging is supported in the locales that [!DNL Experience Manager] is supported in. Pour obtenir la liste des langues, voir [Notes de mise à jour du service de contenu dynamique](https://docs.adobe.com/content/help/fr-FR/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
-Pour rechercher des ressources avec des balises actives (régulières ou améliorées), utilisez la fonction Ressources Omnisearch (recherche de texte intégral). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
+To search for assets with smart tags (regular or enhanced), use the [!DNL Assets] Omnisearch (full-text search). Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 
 >[!NOTE]
 >
