@@ -1,26 +1,26 @@
 ---
-title: API HTTP Assets  dans [!DNL Adobe Experience Manager].
+title: API HTTP [ ! Ressources DNL] dans [!DNL Adobe Experience Manager].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1583'
-ht-degree: 91%
+source-wordcount: '1579'
+ht-degree: 87%
 
 ---
 
 
-# API HTTP Assets {#assets-http-api}
+# [!DNL Assets] API HTTP {#assets-http-api}
 
 ## Présentation {#overview}
 
-L’API HTTP Assets permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/assets-api-content-fragments.md).
+The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/assets-api-content-fragments.md).
 
 Pour accéder à l’API, procédez comme suit :
 
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
-1. Suivez le lien du service Assets pointant vers `https://[hostname]:[server]/api/assets.json`.
+1. Follow the [!DNL Assets] service link leading to `https://[hostname]:[server]/api/assets.json`.
 
 La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
 
@@ -34,7 +34,7 @@ Pour plus d’informations, voir [Prise en charge de fragments de contenu dans l
 
 ## Modèle de données {#data-model}
 
-L’API HTTP Assets présente deux éléments principaux : des dossiers et des ressources (pour les ressources standard).
+The [!DNL Assets] HTTP API exposes two major elements, folders and assets (for standard assets).
 
 Il expose également des éléments plus détaillés pour les modèles de données personnalisés décrivant le contenu structuré dans les fragments de contenu. Pour plus d’informations, voir [Modèles de données de fragments de contenu](/help/assets/assets-api-content-fragments.md#content-fragments).
 
@@ -75,7 +75,7 @@ Dans [!DNL Experience Manager], un dossier comprend les composants suivants :
 * Propriétés.
 * Liens.
 
-L’API Assets HTTP offre les fonctionnalités suivantes :
+The [!DNL Assets] HTTP API includes the following features:
 
 * [Récupérer une liste de dossiers](#retrieve-a-folder-listing).
 * [Créer un dossier](#create-a-folder)
