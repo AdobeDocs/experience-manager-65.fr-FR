@@ -3,10 +3,10 @@ title: Référence du schéma de métadonnées
 description: 'Découvrez les conventions standard permettant de décrire les métadonnées des ressources, y compris Dublin Core, IPTC et d’autres schémas de métadonnées. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 89%
+source-wordcount: '390'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ La référence ci-après contient des informations sur un schéma de métadonné
 
 ## Dublin Core {#dublin-core}
 
-La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans Assets, Dublin Core décrit les ressources numériques, y compris les vidéos, le son, les images et les documents.
+La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. In [!DNL Assets], the Dublin Core describes digital assets including video, sound, images, and documents.
 
 Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 
@@ -30,7 +30,7 @@ In addition to the DCMES, there are other metadata elements created by the Dubli
 | creator | Personne ou entreprise chargée de la création du contenu. |
 | date | Date ou période associée à la ressource. |
 | description | Informations supplémentaires sur la ressource. |
-| format | Format de fichier, support physique ou dimensions de la ressource. Experience Manager uses `dc:format` to denote the MIME type of the asset. |
+| format | Format de fichier, support physique ou dimensions de la ressource. [!DNL Experience Manager] utilise `dc:format` pour représenter le type MIME de la ressource. |
 | identifier | Référence unique à la ressource. |
 | language | Langue de la ressource (« en » pour l’anglais, par exemple). |
 | publisher | Personne ou entreprise chargée de rendre la ressource disponible. |
