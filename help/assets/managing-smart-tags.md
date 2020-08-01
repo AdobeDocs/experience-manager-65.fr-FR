@@ -3,10 +3,10 @@ title: Gestion des balises intelligentes et des recherches
 description: Mettez à jour ou supprimez les balises actives inexactes afin d’améliorer la pertinence des balises.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 70%
+source-wordcount: '444'
+ht-degree: 75%
 
 ---
 
@@ -25,15 +25,15 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 1. Dans l’encadré Omnisearch, recherchez des ressources sur la base d’une balise.
 1. Examinez les résultats de la recherche pour identifier une image que vous ne trouvez pas pertinente.
-1. Sélectionnez l’image, puis cliquez sur **[!UICONTROL Gérer les balises]** dans la barre d’outils.
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. If you don&#39;t want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Alternatively, click `X` symbol that appears beside the label.
-1. To assign a higher rank to a tag, select the tag and click **[!UICONTROL Promote]** from the toolbar. La balise faisant l’objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
-1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
+1. Select the image, and click **[!UICONTROL Manage Tags]** from the toolbar.
+1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. If you don&#39;t want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Sinon, cliquez sur le symbole `X` qui apparaît en face du libellé.
+1. To assign a higher rank to a tag, select the tag and click **[!UICONTROL Promote]** from the toolbar. La balise objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
+1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue de réussite.
 1. Accédez à la page Propriétés de l’image. Remarquez que la balise que vous avez convertie se voit attribuer une pertinence élevée et apparaît donc plus haut dans les résultats de la recherche.
 
-## Comprendre les résultats de recherche d’Experience Manager avec des balises actives {#understandsearch}
+## Understand [!DNL Experience Manager] search results with smart tags {#understandsearch}
 
-By default, Experience Manager search combines the search terms with an `AND` clause. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de
+By default, [!DNL Experience Manager] search combines the search terms with an `AND` clause. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de
 
 * ressources avec les mots-clés `woman` et `running` dans les métadonnées.
 
