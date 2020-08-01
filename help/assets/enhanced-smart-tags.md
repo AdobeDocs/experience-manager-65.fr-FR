@@ -3,10 +3,10 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1561'
-ht-degree: 75%
+source-wordcount: '1536'
+ht-degree: 76%
 
 ---
 
@@ -25,9 +25,9 @@ Pour que le service de contenu dynamique applique les balises adéquates, vous d
 
 Une fois une balise entraînée et prête, le service peut appliquer ces balises sur les ressources par un workflow de balisage.
 
-En arrière-plan, Smart Content Service utilise la structure de l’IA Adobe Sensei pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
+En arrière-plan, Smart Content Service utilise la structure Adobe Sensei AI pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Smart Content Service est un service cloud hébergé sur les E/S Adobe. Pour l&#39;utiliser dans l&#39;Adobe Experience Manager, l&#39;administrateur système doit intégrer votre déploiement Experience Manager avec les E/S Adobe.
+Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with Adobe I/O.
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
@@ -47,15 +47,15 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 ## Intégration {#onboarding}
 
-Le service de contenu dynamique est disponible à l’achat en tant que module complémentaire d’Experience Manager. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S Adobe.
+The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S d’Adobe.
 
-L’administrateur peut suivre le lien pour intégrer Smart Content Service au Experience Manager. To integrate the service with Experience Manager Assets, see [Configure Smart Tags](config-smart-tagging.md).
+L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. To integrate the service with [!DNL Experience Manager Assets], see [Configure Smart Tags](config-smart-tagging.md).
 
-Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans le Experience Manager.
+Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans [!DNL Experience Manager].
 
 >[!NOTE]
 >
->Si vous utilisez la version 6.3 ou antérieure de Experience Manager et que vous avez besoin du service de balisage pour vos ressources, voir [Balises](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)dynamiques. Les balises actives n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service amélioré de balisage intelligent.
+>Si vous utilisez la version [!DNL Experience Manager] 6.3 ou antérieure et que vous avez besoin du service de balisage pour vos ressources, reportez-vous à la section Balises [](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)dynamiques. Les balises actives n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service amélioré de balisage intelligent.
 
 ## Vérification des ressources et balises {#reviewing-assets-and-tags}
 
@@ -90,13 +90,13 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Une fois cette option sélectionnée pour un dossier, le Experience Manager exécute automatiquement un processus de formation pour former Smart Content Service aux ressources de dossier et à leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
+Once this option is selected for a folder, [!DNL Experience Manager] runs a training workflow automatically to train the Smart Content Service on the folder assets and their tags. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
 
 ### Entraînement à la demande {#on-demand-training}
 
 Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
 1. Dans la boîte de dialogue **[!UICONTROL Exécuter le processus]**, localisez le dossier de charge utile qui comprend les ressources balisées pour entraîner le service.
 1. Indiquez le titre du workflow et ajoutez un commentaire. Then, click **[!UICONTROL Run]**. Les ressources et les balises sont soumises à l’entraînement.
@@ -111,7 +111,7 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
-1. Dans l’interface de Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. Dans la page **[!UICONTROL Rapports de ressources]**, cliquez sur **[!UICONTROL Créer]**.
 1. Sélectionnez le rapport **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Suivant]** dans la barre d’outils.
 1. Indiquez un titre et une description pour le rapport. Sous **[!UICONTROL Planifier le rapport]**, laissez l’option **[!UICONTROL Maintenant]** sélectionnée. Si vous souhaitez planifier le rapport pour une date ultérieure, sélectionnez **[!UICONTROL Plus tard]** et spécifiez une date et une heure. Ensuite, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
@@ -153,7 +153,7 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 
 #### Balisage des ressources à l’aide de la console de workflow {#tagging-assets-from-the-workflow-console}
 
-1. In Experience Manager interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -167,7 +167,7 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 
 #### Balisage des ressources à partir de la chronologie {#tagging-assets-from-the-timeline}
 
-1. Depuis l’interface utilisateur Assets, sélectionnez le dossier contenant les ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises intelligentes.
+1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
 1. Dans le coin supérieur gauche, ouvrez la **[!UICONTROL Chronologie]**.
 1. Ouvrez les actions dans la partie inférieure de la barre latérale gauche et cliquez sur **[!UICONTROL Démarrer le processus]**.
 
