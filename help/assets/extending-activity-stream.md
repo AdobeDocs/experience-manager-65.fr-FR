@@ -1,23 +1,23 @@
 ---
-title: Intégration des ressources au flux d’activités
-description: Décrit les fonctionnalités d’enregistrement d’Experience Manager et comment le configurer pour enregistrer des événements spécifiques.
+title: Intégration [!DNL Assets] avec le flux d’activité.
+description: Describes the recording capabilities of [!DNL Experience Manager] and how to configure it to record specific events.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 51%
+source-wordcount: '267'
+ht-degree: 53%
 
 ---
 
 
-# Integrate Assets with activity stream {#integrating-assets-with-activity-stream}
+# Intégration [!DNL Assets] du flux d’activité {#integrating-assets-with-activity-stream}
 
-Les utilisateurs d’Adobe Experience Manager Assets effectuent de nombreuses actions, telles que la création, le téléchargement et la suppression de ressources. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’Experience Manager et comment configurer Experience Manager pour enregistrer des événements spécifiques.
+[!DNL Adobe Experience Manager Assets] les utilisateurs effectuent de nombreuses actions, telles que la création, le téléchargement et la suppression de fichiers. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. This section describes the recording capabilities of [!DNL Experience Manager] and how to configure [!DNL Experience Manager] in order to record specific events.
 
 ## Performance considerations and default behavior {#performance-considerations-and-default-behavior}
 
-Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. C’est pourquoi l’intégration des ressources au flux d’Activités est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. For these reasons the [!DNL Assets] integration with the Activity Stream is disabled by default.
 
 ## Supported action events {#supported-action-events}
 
@@ -39,7 +39,7 @@ Il est possible de configurer l’enregistrement des événements suivants :
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
 * Sous-ressource supprimée (SUBASSET_REMOVED)
 
-## Configuration de l’enregistrement des événements d’actifs {#configuring-aem-assets-events-recording}
+## Configuration de l’enregistrement des [!DNL Assets] événements {#configuring-aem-assets-events-recording}
 
 The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the Assets Event Recorder tuning. Pour configurer l’enregistreur de Événement des ressources, procédez comme suit :
 
