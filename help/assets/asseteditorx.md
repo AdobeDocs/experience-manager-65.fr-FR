@@ -3,10 +3,10 @@ title: Étendre l’éditeur de fichiers
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 88%
+source-wordcount: '688'
+ht-degree: 87%
 
 ---
 
@@ -17,11 +17,11 @@ L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur cli
 
 La configuration de l’éditeur à l’aide des composants de modification prédéfinis est traitée dans [Création et configuration d’une page Éditeur de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-Outre l’utilisation de composants d’éditeur préexistants, les développeurs Adobe Experience Manager peuvent également créer leurs propres composants.
+In addition to using pre-existing editor components, [!DNL Adobe Experience Manager] developers can also create their own components.
 
 ## Create an Asset Editor template {#creating-an-asset-editor-template}
 
-Les exemples de pages suivants sont inclus dans Geometrixx :
+Les exemples de pages suivants sont inclus dans le Geometrixx :
 
 * Exemple de page Geometrixx : `/content/geometrixx/en/press/asseteditor.html`
 * Exemple de modèle : `/apps/geometrixx/templates/asseteditor`
@@ -29,9 +29,9 @@ Les exemples de pages suivants sont inclus dans Geometrixx :
 
 ### Configurer Clientlib {#configuring-clientlib}
 
-Les composants de ressources utilisent une extension de la bibliothèque cliente d’édition WCM. Les clientlibs sont généralement chargés dans `init.jsp`.
+[!DNL Assets] les composants utilisent une extension de WCM edit clientlib. Les clientlibs sont généralement chargés dans `init.jsp`.
 
-Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un modèle  Assets doit répondre aux exigences suivantes :
+Par rapport au chargement du clientlib par défaut (au cœur d’`init.jsp`), un modèle doit répondre aux exigences suivantes :[!DNL Assets]
 
 * Le modèle doit inclure le clientlib `cq.dam.edit` (au lieu de `cq.wcm.edit`).
 
@@ -41,23 +41,23 @@ Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/
 
 ### Configuration des actions JS {#configuring-js-actions}
 
-Some of the Assets components require JS functions defined in `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
+Some of the [!DNL Assets] components require JS functions defined in `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-Cet exemple charge cette source JavaScript dans `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`).
+The sample loads this JavaScript source in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Additional style sheets {#additional-style-sheets}
 
-Certains composants Ressources utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains des [!DNL Assets] composants utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Feuille de style Geometrixx   {#geometrixx-style-sheet}
+### Feuille de style Geometrixx  {#geometrixx-style-sheet}
 
 Les exemples de composants de page nécessitent que tous les sélecteurs commencent par `.asseteditor` dans `static.css` (`/etc/designs/geometrixx/static.css`). Bonne pratique : copiez tous les sélecteurs `.asseteditor` dans votre feuille de style et ajustez les règles en fonction de vos besoins.
 
