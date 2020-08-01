@@ -3,10 +3,10 @@ title: Formats de fichiers pris en charge pour le traitement dans [!DNL Adobe Ex
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 58%
+source-wordcount: '1636'
+ht-degree: 60%
 
 ---
 
@@ -72,11 +72,11 @@ Outre les informations ci-dessus, tenez compte des points suivants :
 
 ## Supported 3D formats {#support-3d-formats}
 
-La liste suivante de formats 3D est prise en charge.
+Les formats 3D de la liste suivante sont pris en charge.
 
-Voir aussi [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.md)
+Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.md)
 
-| Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d&#39;accès | prévisualisation de miniature | prévisualisation 3D | diffusion Dynamic Media |
+| Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -128,7 +128,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Supported Image Transcoding library {#supported-image-transcoding-library}
 
-La bibliothèque Adobe Imaging Transcoding est une solution de traitement d’images qui exécute des fonctions essentielles de gestion d’images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
+La bibliothèque de transcodage d’images d’Adobe est une solution de traitement d’images qui exécute des fonctions essentielles de gestion d’images, telles que le codage, le transcodage, le rééchantillonnage et le redimensionnement.
 
 La bibliothèque de transcodage d’imagerie prend en charge les types MIME JPG/JPEG, PNG (8 et 16 bits), GIF, BMP, TIFF/TIFF compressé (sauf les fichiers TIFF 32 bits et les fichiers PTIFF), ICO et ICN.
 
@@ -136,9 +136,9 @@ See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Supported camera raw {#supported-camera-raw}
 
-La bibliothèque Adobe Camera Raw permet à Assets d’importer des images brutes. Voir Prise en charge [de](camera-raw.md)Camera Raw.
+The [!DNL Adobe Camera Raw] library enables [!DNL Assets] to ingest raw images. Voir Prise en charge [](camera-raw.md)Camera Raw.
 
-## Supported Assets document formats {#supported-document-formats}
+## Supported [!DNL Assets] document formats {#supported-document-formats}
 
 Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants:
 
@@ -249,9 +249,9 @@ Le tableau ci-dessous décrit l’applicabilité des processus de gestion des ac
 
 ## Pris en charge Types MIME {#supported-mime-types}
 
-Par défaut, le Experience Manager détecte le type de fichier à l’aide de l’extension de fichier. Le Experience Manager peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the Experience Manager Web Console.
+Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide de l’extension de fichier. [!DNL Experience Manager] peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
 
-Une liste de types MIME pris en charge est disponible dans CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Une liste de types MIME pris en charge est disponible dans le CRXDE Lite à `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Extension de fichier | Type MIME/type de support Internet | Valeur de jobParam par défaut | Valeur de jobParam autorisée |
 |---|---|---|---|
