@@ -3,9 +3,9 @@ title: Gérez des ressources composées contenant des références et des ressou
 description: Découvrez comment créer des références à des ressources numériques à partir de l’intérieur [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de pages pour vue des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1361'
 ht-degree: 18%
 
 ---
@@ -131,12 +131,12 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 ## Best practices and limitation {#best-practice-limitation-tips}
 
-* La génération de sous-ressources peut être très gourmande en ressources pour tout déploiement Experience Manager. Si vous générez des sous-ressources lorsque des ressources complexes sont téléchargées, ajoutez l’étape suivante dans le processus de mise à jour des ressources de gestion des actifs numériques. Si vous générez des sous-ressources à la demande, créez un processus distinct pour générer des sous-ressources. Un processus dédié vous permet d’ignorer les autres étapes du processus de mise à jour des actifs de gestion des actifs numériques et d’enregistrer des ressources de calcul.
+* La génération de sous-ressources peut nécessiter beaucoup de ressources lors de tout [!DNL Experience Manager] déploiement. Si vous générez des sous-ressources lorsque des ressources complexes sont téléchargées, ajoutez l’étape suivante dans le processus de mise à jour des ressources de gestion des actifs numériques. Si vous générez des sous-ressources à la demande, créez un processus distinct pour générer des sous-ressources. Un processus dédié vous permet d’ignorer les autres étapes du processus de mise à jour des actifs de gestion des actifs numériques et d’enregistrer des ressources de calcul.
 
 >[!MORELIKETHIS]
 >
 >* [Utilisation de l’appli de bureau Adobe Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)
 >* [Configuration des actions du bureau dans l&#39;Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
->* [Création d’objets dynamiques liés dans Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Importation de graphiques dans Adobe InDesign](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html)
+>* [Création d’objets dynamiques liés en Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [Importation de graphiques en Adobe InDesign](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html)
 
