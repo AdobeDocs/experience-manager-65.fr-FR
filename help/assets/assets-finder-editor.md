@@ -3,10 +3,10 @@ title: Création et configuration des pages de l’éditeur de ressources
 description: Découvrez comment créer des pages Éditeur de ressources personnalisées et modifier plusieurs ressources simultanément.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 73%
+source-wordcount: '2120'
+ht-degree: 72%
 
 ---
 
@@ -27,13 +27,13 @@ Ce document répond aux questions suivantes :
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. Lorsque vous passez d&#39;une solution à petite échelle pour un petit groupe d&#39;utilisateurs formés par des professionnels - par exemple des photographes ou des taxonomistes - à des groupes d&#39;utilisateurs plus nombreux et plus diversifiés - par exemple des utilisateurs d&#39;entreprise, des auteurs de WCM, des journalistes, etc. - la puissante interface utilisateur des ressources d&#39;Adobe Experience Manager pour les utilisateurs professionnels peut fournir trop d&#39;informations et de parties prenantes début pour demander des interfaces utilisateur ou des applications spécifiques pour accéder aux ressources numériques qui les intéressent.
+La gestion des actifs numériques est utilisée dans un nombre toujours plus grand de scénarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of [!DNL Adobe Experience Manager Assets] for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
 
 Ces applications centrées sur les ressources peuvent être de simples galeries de photos dans un intranet où les employés peuvent télécharger des photos à partir de visites de salons commerciaux ou d&#39;un centre de presse sur un site Web public. Les applications axées sur les ressources peuvent également s’étendre à des solutions complètes, y compris les paniers, le passage en caisse et les processus de vérification.
 
-La création d’une application axée sur les ressources devient, dans une large mesure, un processus de configuration ne nécessitant pas de codage, mais uniquement la connaissance des groupes d’utilisateurs et de leurs besoins ainsi que des métadonnées utilisées. Les applications axées sur les ressources créées avec Assets sont extensibles : avec un effort de codage minimal, il est possible de créer des composants réutilisables pour la recherche, l’affichage et la modification des ressources.
+La création d’une application axée sur les ressources devient, dans une large mesure, un processus de configuration ne nécessitant pas de codage, mais uniquement la connaissance des groupes d’utilisateurs et de leurs besoins ainsi que des métadonnées utilisées. Asset-centric applications created with [!DNL Assets] are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
 
-Dans le Experience Manager, une application axée sur les ressources consiste en une page de l’éditeur de ressources, qui peut être utilisée pour obtenir une vue détaillée d’une ressource spécifique. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
+An asset-centric application in [!DNL Experience Manager] consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. Une page Éditeur de ressources permet également de modifier les métadonnées, à condition que l’utilisateur accédant à la ressource dispose des autorisations nécessaires.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -387,7 +387,7 @@ Les actions suivantes sont disponibles :
 
 ## Multi-edit assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 
-Les ressources du Experience Manager vous permettent d’apporter des modifications à plusieurs ressources à la fois. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
+With [!DNL Experience Manager Assets] you can make changes to several assets at once. Après avoir sélectionné les ressources, vous pouvez simultanément modifier leurs :
 
 * Balises
 * Métadonnées
