@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 65%
 
 ---
 
@@ -46,11 +49,11 @@ AEM se présente sous la forme d’un seul fichier war à déployer.
 En cas de déploiement, le comportement par défaut est le suivant :
 
 * the run mode is `author`
-* l’instance (Repository, environnement Felix OSGI, lots, etc.) est installé à l’ `${user.dir}/crx-quickstart`emplacement `${user.dir}` du répertoire de travail actuel, ce chemin vers crx-quickstart est appelé `sling.home`
+* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installé dans `${user.dir}/crx-quickstart`où `${user.dir}` se trouve le répertoire de travail actuel, ce chemin vers crx-quickstart est appelé `sling.home`
 
 * the context root is the war file name e.g : `aem-6`
 
-#### Configuration{#configuration}
+#### Configuration {#configuration}
 
 Vous pouvez changer le comportement par défaut comme suit :
 
@@ -81,11 +84,11 @@ Pour vérifier que tous les éléments ont été installés, vous pouvez :
 À des fins de démonstration, il peut s’avérer utile d’installer les instances de création et de publication sur un seul serveur d’applications. Pour ce faire, procédez comme suit :
 
 1. Modifiez les variables sling.home et sling.run.modes de l’instance de publication.
-1. Décompressez le fichier WEB-INF/web.xml du fichier de guerre AEM.
+1. Décompressez le fichier WEB-INF/web.xml du fichier AEM war.
 1. Définissez le paramètre sling.home sur un autre chemin d’accès (les chemins d’accès absolus et relatifs sont possibles).
 1. Modifiez sling.run.modes pour publier pour l’instance de publication.
-1. Repérez le fichier web.xml.
-1. Renommez les fichiers de guerre afin qu’ils portent des noms différents : Par exemple, renommez aemauthor.war et aempublish.war.
+1. Recompressez le fichier web.xml.
+1. Renommez les fichiers de guerre afin qu’ils portent des noms différents : Par exemple, l’un renomme aemauthor.war et l’autre, aempublish.war.
 1. Utilisez des paramètres de mémoire plus élevés, par exemple pour les instances AEM par défaut, utilisez par exemple : -Xmx3072m
 1. Déployez les deux applications web.
 1. Une fois le déploiement effectué, arrêtez les deux applications web.
@@ -114,8 +117,8 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
    * Décompresser le fichier WEB-INF/web.xml
    * modifier le paramètre sling.run.modes pour publier
-   * décommentez le paramètre initial sling.home et définissez ce chemin selon vos besoins
-   * Réparation du fichier web.xml
+   * annuler la mise en commentaire du paramètre initial sling.home et définir ce chemin selon vos besoins
+   * Réparer le fichier web.xml
 
 * Déployez le fichier war AEM.
 
@@ -157,25 +160,25 @@ Dans ce cas, une simple disposition serveur est utilisée avec uniquement un ser
 
 * In `${myDomain}/config/config.xml`add to the security-configuration section:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` voir sur [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) pour connaître la position correcte (par défaut, la position à la fin de la section est correcte).
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` reportez-vous à la section [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) pour connaître la position correcte (par défaut, la position à la fin de la section est ok).
 
 * Augmentez les paramètres mémoire de la machine virtuelle :
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) search for WLS_MEM_ARGS, set, par exemple set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
-   * redémarrez WebLogic Server
+   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * redémarrage de WebLogic Server
 
 * Create in `${myDomain}` a packages folder and inside a cq folder and in it a Plan folder
 
 **Déploiement de l’application web AEM**
 
 * Téléchargez le fichier war AEM.
-* Placez le fichier de guerre AEM dans le dossier ${myDomain}/packages/cq.
+* Placez le fichier d&#39;AEM guerre dans le dossier ${myDomain}/packages/cq.
 * Make your configurations In `WEB-INF/web.xml` if needed (see above in the General Description)
 
    * Décompresser le `WEB-INF/web.xml`fichier
    * modifier le paramètre sling.run.modes pour publier
-   * décommentez le paramètre initial sling.home et définissez ce chemin selon vos besoins (voir Description générale).
-   * Réparation du fichier web.xml
+   * annuler la mise en commentaire du paramètre initial sling.home et définir ce chemin selon vos besoins (voir Description générale)
+   * Réparer le fichier web.xml
 
 * Déployez le fichier war AEM en tant qu’application (pour les autres paramètres, utilisez les valeurs par défaut).
 * L’installation peut prendre un certain temps.
@@ -195,39 +198,39 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
    * Tomcat n’active aucun accès de type administrateur ou gestionnaire au niveau de l’installation. Vous devez donc modifier manuellement le fichier `tomcat-users.xml` si vous souhaitez autoriser l’accès pour ces comptes :
 
       * Modifiez le fichier `tomcat-users.xml` afin d’inclure l’accès pour l’administrateur et le gestionnaire. La configuration doit être semblable à l’exemple suivant :
-      * 
-         ```
+
+         ```xml
          <?xml version='1.0' encoding='utf-8'?>
-          <tomcat-users>
-          <role rolename="manager"/>
-          <role rolename="tomcat"/>
-          <role rolename="admin"/>
-          <role rolename="role1"/>
-          <role rolename="manager-gui"/>
-          <user username="both" password="tomcat" roles="tomcat,role1"/>
-          <user username="tomcat" password="tomcat" roles="tomcat"/>
-          <user username="admin" password="admin" roles="admin,manager-gui"/>
-          <user username="role1" password="tomcat" roles="role1"/>
-          </tomcat-users>
+         <tomcat-users>
+         role rolename="manager"/>
+         role rolename="tomcat"/>
+         <role rolename="admin"/>
+         <role rolename="role1"/>
+         <role rolename="manager-gui"/>
+         <user username="both" password="tomcat" roles="tomcat,role1"/>
+         <user username="tomcat" password="tomcat" roles="tomcat"/>
+         <user username="admin" password="admin" roles="admin,manager-gui"/>
+         <user username="role1" password="tomcat" roles="role1"/>
+         </tomcat-users>
          ```
    * Si vous souhaitez déployer AEM à l’aide de la racine du contexte « / », vous devez tout d’abord modifier la racine de contexte de l’application web ROOT existante :
 
       * Arrêtez et annulez le déploiement de l’application web ROOT.
       * Renommez le dossier ROOT.war dans le dossier webapps de Tomcat.
       * Redémarrez l’application web.
-   * Si vous installez l’application web AEM à l’aide de l’interface utilisateur graphique du gestionnaire, vous devez augmenter la taille maximale d’un fichier chargé, étant donné que le paramètre par défaut autorise uniquement une taille de chargement de 50 Mo. Pour cela, ouvrez le fichier web.xml de l’application Web du gestionnaire,
+   * Si vous installez l’application web AEM à l’aide de l’interface utilisateur graphique du gestionnaire, vous devez augmenter la taille maximale d’un fichier chargé, étant donné que le paramètre par défaut autorise uniquement une taille de chargement de 50 Mo. Pour cela, ouvrez le fichier web.xml de l’application web manager,
 
       `webapps/manager/WEB-INF/web.xml`
 
-      et augmentez la taille de fichier maximale et la taille de requête maximale sur une valeur d’au moins 500 Mo. Reportez-vous à l’exemple `multipart-config` ci-dessous d’un fichier `web.xml` de ce type :
+      and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file.
 
-      ```
-        <multipart-config>
-         <!-- 500MB max -->
-         <max-file-size>524288000</max-file-size>
-         <max-request-size>524288000</max-request-size>
-         <file-size-threshold>0</file-size-threshold>
-         </multipart-config>
+      ```xml
+      <multipart-config>
+      <!-- 500MB max -->
+      <max-file-size>524288000</max-file-size>
+      <max-request-size>524288000</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
+      </multipart-config>
       ```
 
 
@@ -240,8 +243,8 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
       * Décompresser le fichier WEB-INF/web.xml
       * modifier le paramètre sling.run.modes pour publier
-      * décommentez le paramètre initial sling.home et définissez ce chemin selon vos besoins
-      * Réparation du fichier web.xml
+      * annuler la mise en commentaire du paramètre initial sling.home et définir ce chemin selon vos besoins
+      * Réparer le fichier web.xml
    * Renommez le fichier war AEM en ROOT.war si vous souhaitez effectuer un déploiement en tant qu’application web racine ; renommez-le en aemauthor.war, par exemple, si aemauthor doit être une racine de contexte.
    * Copiez-le dans le dossier webapps de Tomcat.
    * Attendez que l’application AEM soit installée.
@@ -252,4 +255,3 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 Pour plus d’informations sur la résolution des problèmes qui peuvent survenir en cours d’installation, voir :
 
 * [Résolution des incidents](/help/sites-deploying/troubleshooting.md)
-
