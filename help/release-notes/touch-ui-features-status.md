@@ -1,662 +1,179 @@
 ---
 title: État des fonctionnalités de l’IU tactile
-description: Notes de mise à jour spécifiques à l’interface utilisateur tactile d’Adobe Experience Manager.
-uuid: ceb081cc-7c33-4408-8032-3ac83d461268
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: f736581d-e6ea-4ec8-bfc7-16b9aa592097
-docset: aem65
+description: Notes de mise à jour spécifiques [!DNL Adobe Experience Manager] à l’interface utilisateur tactile.
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 49%
 
 ---
 
 
-# État des fonctionnalités de l’IU tactile{#touch-ui-feature-status}
+# État des fonctionnalités de l’IU tactile {#touch-ui-feature-status}
 
->[!CAUTION]
->
->[L’interface utilisateur classique est obsolète](../release-notes/deprecated-removed-features.md) depuis AEM 6.4. Adobe n’envisage pas d’apporter d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont encouragés à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
+AEM version 6.4 ou ultérieure de l’interface utilisateur [classique est obsolète](../release-notes/deprecated-removed-features.md). L’Adobe n’apporte pas d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
 
-Depuis la version 6.0, AEM est doté d’une nouvelle interface appelée IU optimisée pour les écrans tactiles (ou IU tactile) qui est cohérente avec Adobe Marketing Cloud et les instructions générales concernant les interfaces utilisateur Adobe. Avec la mise en œuvre quasi totale de la parité des fonctionnalités, cette interface est devenue l’interface utilisateur standard d’AEM. L’ancienne interface orientée bureau est dénommée « IU classique ».
+Starting with version 6.0, AEM introduced a new user interface referred as the &quot;touch-enabled UI&quot; (simply called &quot;Touch UI&quot;) that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. Avec la quasi parité des fonctionnalités atteinte, cette interface est devenue l’interface standard en AEM avec l’interface héritée et orientée bureau, appelée &quot;interface classique&quot;.
 
 Bien que la plupart des fonctionnalités soient déjà présentes dans l’interface utilisateur optimisée pour les écrans tactiles, il en reste certaines à intégrer, qui le seront dans les prochaines mises à jour.
 
-La liste suivante présente l’état actuel des fonctionnalités mises en oeuvre dans AEM 6.5.
+La liste suivante présente l&#39;état actuel des capacités mises en oeuvre dans l&#39;AEM 6.5.
 
-For recommendations for customers that upgrade to AEM 6.5, please see [User Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) for details.
-
->[!NOTE]
->
->Veuillez noter que cette page porte uniquement sur la parité des fonctionnalités avec l’IU classique.
->
->Les fonctionnalités qui ont été ajoutées à l’IU optimisée pour les écrans tactiles et qui sont absentes de l’IU classique ne sont pas répertoriées.
+For recommendations for customers that upgrade to AEM 6.5, see [User interface recommendations for customers](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
->Cette liste est la plus complète possible, mais ne doit pas être considérée comme exhaustive.
+>Cette page traite uniquement de la parité des fonctionnalités avec l’interface utilisateur classique. Les fonctionnalités ajoutées à l’interface utilisateur tactile et uniques qui ne sont pas présentes dans l’interface utilisateur classique ne sont pas répertoriées.
+
+>[!NOTE]
+>
+>Cette liste s&#39;efforce d&#39;être complète, mais n&#39;est pas exhaustive.
 
 ## Légende {#legend}
 
-* **Complète :** la fonctionnalité est entièrement disponible dans l’IU optimisée pour les écrans tactiles.
-* **Surtout**: La fonctionnalité est principalement disponible dans l’interface utilisateur tactile.
+* **Terminé**: Cette fonction est entièrement disponible dans l’interface utilisateur tactile.
+* **Principalement**: Cette fonction est principalement disponible dans l’interface utilisateur tactile.
 * **Absente :** la fonctionnalité n’est pas disponible dans l’IU optimisée pour les écrans tactiles. L’IU classique doit être utilisée pour exécuter cette action.
 * **Remplacée :** la fonctionnalité a été remplacée par une nouvelle implémentation qui fonctionne différemment.
 * **Supprimée :** la fonctionnalité n’existe plus dans l’IU optimisée pour les écrans tactiles et elle ne sera pas remplacée.
 
 ## État des fonctionnalités : Administration de sites {#feature-status-sites-admin}
 
-This is a list of capabilities the classic UI Site Admin ( `/siteadmin`) has and the status in the touch-enabled UI ( `/sites.html`).
+This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and the status in the touch-enabled UI (`/sites.html`).
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Fonctionnalité<br /> </strong></td>
-   <td><strong>État<br /> </strong></td>
-   <td><strong>Commentaire</strong></td>
-  </tr>
-  <tr>
-   <td>Navigation dans l’arborescence du site</td>
-   <td>Complète<br /> </td>
-   <td>AEM 6.4 a introduit une arborescence <a href="/help/sites-authoring/basic-handling.md#content-tree">de</a>contenu.</td>
-  </tr>
-  <tr>
-   <td>Démarrer le processus</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Créer une page</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Créer un site</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Créer un lancement</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Créer une Live Copy <br /> </td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Créer un dossier</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Afficher l’état de publication</td>
-   <td>Terminer</td>
-   <td>Depuis AEM 6.5, l’état du flux de travail s’affiche en mode Liste.</td>
-  </tr>
-  <tr>
-   <td>Rechercher</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Copier/coller une page (duplication)</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Déplacer une page</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Publier une page</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Publier une page sans droits de réplication</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Publier ultérieurement</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Publier l’arborescence</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Annuler la publication de page(s)</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Annuler la publication de page(s) sans droits de réplication</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Annuler la publication ultérieurement</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Supprimer</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Verrouiller/déverrouiller</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Afficher/modifier les propriétés</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Définir les autorisations sur les pages</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Historique des versions</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Restaurer la version</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Restaurer l’arborescence et les pages supprimées</td>
-   <td>Absente</td>
-   <td>Utiliser l’IU classique.</td>
-  </tr>
-  <tr>
-   <td>Afficher la différence entre l’ancienne et la nouvelle version<br /> </td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Actions Live Copy (déploiement)</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Afficher les copies de langue</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Rechercher et remplacer</td>
-   <td>Absente<br /> </td>
-   <td>Utiliser l’IU classique.</td>
-  </tr>
-  <tr>
-   <td>Boîte de réception des notifications (événements JCR)</td>
-   <td>Absente</td>
-   <td>Utiliser l’IU classique. Sera remplacée par une autre implémentation.</td>
-  </tr>
-  <tr>
-   <td>Références</td>
-   <td>Terminer</td>
-   <td>Affichage des liens de page entrants ajoutés à AEM 6.5.<br /> </td>
-  </tr>
- </tbody>
-</table>
+| Fonctionnalité | État | Commentaire |
+|--- |--- |--- |
+| Navigation dans l’arborescence du site | Terminer | AEM 6.4 a introduit une vue [d&#39;arborescence de](/help/sites-authoring/basic-handling.md#content-tree)contenu. |
+| Démarrer le worfklow | Terminer |  |
+| Créer une page | Complète |  |
+| Créer un site | Complète |  |
+| Créer un lancement | Complète |  |
+| Créer une Live Copy | Terminer |  |
+| Créer un dossier | Complète |  |
+| Afficher l’état de publication | Terminer | À partir de AEM 6.5, l’état du flux de travail s’affiche dans la vue de liste. |
+| Rechercher | Terminer |  |
+| Copier et coller la page (Duplicata) | Terminer |  |
+| Déplacer une page | Complète |  |
+| Publier une page | Complète |  |
+| Publier une page sans droits de réplication | Complète |  |
+| Publier ultérieurement | Complète |  |
+| Publier l’arborescence | Complète |  |
+| Annuler la publication de page(s) | Complète |  |
+| Annuler la publication de page(s) sans droits de réplication | Complète |  |
+| Annuler la publication ultérieurement | Terminer |  |
+| Supprimer | Complète |  |
+| Verrouiller/déverrouiller | Complète |  |
+| Afficher/modifier les propriétés | Complète |  |
+| Définir les autorisations sur les pages | Complète |  |
+| Historique des versions | Complète |  |
+| Restaurer la version | Terminer |  |
+| Restaurer l’arborescence et les pages supprimées | Absente | Utiliser l’IU classique. |
+| Afficher la différence entre l’ancienne et la nouvelle version | Terminer |  |
+| Actions Live Copy (déploiement) | Complète |  |
+| Afficher les copies de langue | Complète |  |
+| Rechercher et remplacer | Absente | Utiliser l’IU classique. |
+| Boîte de réception de notification (événements JCR) | Absente | Utiliser l’IU classique. Sera remplacée par une autre implémentation. |
+| Références | Terminer | Affichage des liens de page entrants ajoutés à AEM 6.5. |
 
 ## État des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
-This is a list of capabilities the classic UI Page Editor ( `/cf#`) has and the status in the touch-enabled ( `/editor.html`).
+This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the status in the touch-enabled (`/editor.html`).
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Fonctionnalité</strong></td>
-   <td><strong>État</strong></td>
-   <td><strong>Commentaire</strong></td>
-  </tr>
-  <tr>
-   <td>Modifier les pages web</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier les pages web mobiles<br /> </td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier le contenu importé via Design Importer <br /> </td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier les courriers électroniques</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier des applications mobiles hybrides</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier les formulaires</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier les offres</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier les modèles de processus<br /> </td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>ode : Modifier et prévisualiser</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Responsive Preview<br /> </td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Mode : Modifier la conception</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Mode : Scaffolding</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Mode : État des Live Copy<br /> </td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Ajouter des annotations</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Modifier les propriétés<br /> </td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Déployer la page</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Démarrer et afficher les processus</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Présentation des packages de processus</td>
-   <td>Principalement</td>
-   <td>Complètement accessible dans l’interface utilisateur tactile. Plusieurs charges utiles de flux de travail sont toujours présentées dans l’interface utilisateur classique.<br /> </td>
-  </tr>
-  <tr>
-   <td>Verrouiller/déverrouiller la page</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Publier la page <br /> </td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Annuler la publication de la page</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Copier la page</td>
-   <td>Supprimé<br /> </td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">copier les pages</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Déplacer la page</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">déplacer les pages</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Supprimer la page</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">supprimer les pages</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Afficher les références</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/author-environment-tools.md#references">voir la liste de référence détaillée</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Journal d’audit</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites et <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">ouvrez le rail d’activité</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Créer la version</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">créer de nouvelles versions</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Restaurer la version</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">restaurer des versions </a>.</td>
-  </tr>
-  <tr>
-   <td>Passer d’un lancement à un autre</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-authoring/launches-promoting.md">basculer entre les lancements</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Traduire la page</td>
-   <td>Supprimé</td>
-   <td>Utilisez Administration de sites pour <a href="/help/sites-administering/tc-manage.md">ajouter une page aux projets de traduction</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Timewarp (choisissez la date/l’heure et parcourez le site tel qu’il était avant) <br /> </td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Définir les autorisations</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>IU contextuelle du client <br /> </td>
-   <td>Remplacé</td>
-   <td>Utilisez dorénavant l’IU <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a>.</td>
-  </tr>
-  <tr>
-   <td>Outil de recherche de contenu pour les différents types de médias<br /> </td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Liste des composants</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Copier et coller des composants <br /> </td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Liste des composants du presse-papiers</td>
-   <td>Absente</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Annuler/rétablir</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Glisser du contenu dans un espace réservé aux composants</td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Avec la création automatique de composants, faites glisser le contenu directement dans l’espace réservé parsys<br /> </td>
-   <td>Complète</td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
+| Fonctionnalité | État | Commentaire |
+|--- |--- |--- |
+| Modifier les pages web | Complète |  |
+| Modifier les pages web mobiles | Terminer |  |
+| Modifier le contenu importé via Design Importer  | Terminer |  |
+| Modifier les courriers électroniques | Complète |  |
+| Modification d’applications mobiles hybrides | Terminer |  |
+| Modifier les formulaires | Terminer |  |
+| Modifier les offres | Terminer |  |
+| Modifier les modèles de processus | Terminer |  |
+| Mode : Modifier et Prévisualisation | Terminer |  |
+| Prévisualisation réactive | Terminer |  |
+| Mode : Modifier la conception | Complète |  |
+| Mode : Scaffolding | Complète |  |
+| Mode : État des Live Copy | Terminer |  |
+| Ajouter des annotations | Complète |  |
+| Modification des propriétés | Terminer |  |
+| Page de lancement | Terminer |  |
+| Flux de travaux de Début et d&#39;affichage | Terminer |  |
+| Gestion des packages de processus | Principalement | Entièrement accessible dans l’interface utilisateur tactile. Plusieurs charges utiles de flux de travail sont toujours présentées dans l’interface utilisateur classique. |
+| Verrouiller/déverrouiller la page | Complète |  |
+| Publier la page | Terminer |  |
+| Annuler la publication de la page | Complète |  |
+| Copie de la page | Supprimé | Utilisez Administration de sites pour [copier les pages](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
+| Déplacer la page | Supprimé | Utilisez Administration de sites pour [déplacer les pages](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
+| Supprimer la page | Supprimé | Utilisez Administration de sites pour [supprimer les pages](/help/sites-authoring/managing-pages.md#deleting-a-page). |
+| Afficher les références | Supprimé | Use Site Admin to see the [detailed reference list](/help/sites-authoring/author-environment-tools.md#references). |
+| Journal d’audit | Supprimé | Utilisez Administration de sites et [ouvrez le rail d’activité](/help/sites-authoring/author-environment-tools.md#events-timeline). |
+| Créer la version | Supprimé | Utilisez Administration de sites pour [créer de nouvelles versions](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
+| Restaurer la version | Supprimé | Utilisez Administration de sites pour [restaurer des versions ](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
+| Passer d’un lancement à un autre | Supprimé | Utilisez Administration de sites pour [basculer entre les lancements](/help/sites-authoring/launches-promoting.md). |
+| Traduire la page | Supprimé | Utilisez Administration de sites pour [ajouter une page aux projets de traduction](/help/sites-administering/tc-manage.md). |
+| Timewarp (choisissez la date/l’heure et parcourez le site tel qu’il était avant)  | Terminer |  |
+| Définir les autorisations | Complète |  |
+| IU contextuelle du client  | Remplacé | Utilisez dorénavant l’IU [ContextHub](/help/sites-authoring/ch-previewing.md). |
+| Outil de recherche de contenu pour les différents types de médias | Terminer |  |
+| Liste des composants | Terminer |  |
+| Copier et coller des composants | Terminer |  |
+| Liste des composants du presse-papiers | Absente |  |
+| Annuler/rétablir | Complète |  |
+| Faire glisser le contenu dans l’espace réservé du composant | Terminer |  |
+| Faire glisser le contenu directement dans l’espace réservé de l’analyse avec la création automatique de composant | Terminer |  |
 
 ## État des fonctionnalités : éditeurs de texte, d’image et de tableau {#feature-status-text-table-and-image-editors}
 
-Il s’agit d’une liste des fonctionnalités de l’interface utilisateur classique, à savoir l’éditeur de texte, de tableau et d’image, ainsi que l’état de l’interface utilisateur tactile.
+Il s’agit d’une liste des fonctionnalités de l’interface utilisateur classique Texte, Tableau et Editeur d’image et de l’état de l’interface utilisateur tactile.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Fonctionnalité</strong></td>
-   <td><strong>État </strong></td>
-   <td><strong>Commentaire<br /> </strong></td>
-  </tr>
-  <tr>
-   <td>Éditeur de texte enrichi</td>
-   <td>Terminer</td>
-   <td>Utile en place, dans la boîte de dialogue et en plein écran.</td>
-  </tr>
-  <tr>
-   <td>Activation/désactivation des plug-ins RTE</td>
-   <td>Complète<br /> </td>
-   <td>Vous pouvez utiliser l’éditeur <a href="/help/sites-authoring/templates.md">de</a>modèles.</td>
-  </tr>
-  <tr>
-   <td>Utiliser RTE pour le texte brut</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Liens et ancre</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Carte des caractères</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Copier/coller</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Coller à partir de Microsoft Word<br /> </td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Chercher et Remplacer</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Formats de texte (gras, ...)</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Sous-et exposant</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Justifier</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Listes (puces / nombres)</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Format de paragraphe</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Styles de texte</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Editeur de source (Modifier HTML)<br /> </td>
-   <td>Complète<br /> </td>
-   <td>Disponible uniquement dans la boîte de dialogue et en plein écran.<br /> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Vérificateur orthographique</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Tableau (éditeur de tableau intégré)</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Annuler/Rétablir<br /> </td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe RTE : Autoriser les images intégrées</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Editeur de tableau</td>
-   <td>Terminer</td>
-   <td>Utile en place, dans la boîte de dialogue et en plein écran.<br /> </td>
-  </tr>
-  <tr>
-   <td>Faire glisser et déposer l’image dans la cellule du tableau<br /> </td>
-   <td>Terminer</td>
-   <td>En ligne utilisable</td>
-  </tr>
-  <tr>
-   <td>Éditeur d’image<br /> </td>
-   <td>Terminer</td>
-   <td>Utile en place, dans la boîte de dialogue et en plein écran.<br /> </td>
-  </tr>
-  <tr>
-   <td>Activation/désactivation des modules externes IPE</td>
-   <td>Terminer</td>
-   <td>AEM 6.3 a introduit une interface utilisateur dans l’éditeur <a href="/help/sites-authoring/templates.md">de</a>modèles.</td>
-  </tr>
-  <tr>
-   <td>Module externe IPE : Recadrer</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe IPE : Retourner</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe IPE : Annuler/Rétablir</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe IPE : Zone cliquable</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe IPE : Rotation</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Module externe IPE : Zoom</td>
-   <td>Complète<br /> </td>
-   <td> </td>
-  </tr>
- </tbody>
-</table>
+| Fonctionnalité | État | Commentaire |
+|--- |--- |--- |
+| Éditeur de texte enrichi | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
+| Activation/désactivation des modules externes RTE | Terminer | Vous pouvez utiliser l’éditeur [de](/help/sites-authoring/templates.md)modèles. |
+| Utiliser RTE pour le texte brut | Terminer |  |
+| Module externe RTE : Liens et ancre | Terminer |  |
+| Module externe RTE : Zone cliquable | Terminer |  |
+| Module externe RTE : Copier/coller | Terminer |  |
+| Module externe RTE : Coller à partir de Microsoft Word | Terminer |  |
+| Module externe RTE : Rechercher et remplacer | Terminer |  |
+| Module externe RTE : Formats de texte (gras, ...) | Terminer |  |
+| Module externe RTE : Sous-et-exposant | Terminer |  |
+| Module externe RTE : Justifier | Terminer |  |
+| Module externe RTE : Listes (puces / numéros) | Terminer |  |
+| Module externe RTE : Format de paragraphe | Terminer |  |
+| Module externe RTE : Styles de texte | Terminer |  |
+| Module externe RTE : Éditeur de source (Modifier HTML) | Terminer | Uniquement disponible en boîte de dialogue et en plein écran. |
+| Module externe RTE : Vérificateur orthographique | Terminer |  |
+| Module externe RTE : Tableau (éditeur de tableau incorporé) | Terminer |  |
+| Module externe RTE : Annuler/Rétablir | Terminer |  |
+| Module externe RTE : Autoriser les images en ligne | Terminer |  |
+| Editeur de tableau | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
+| Faire glisser l’image dans la cellule du tableau | Terminer | Utilisation en ligne |
+| Éditeur d’image | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
+| Activation/désactivation des modules externes IPE | Terminer | AEM 6.3 a introduit une interface utilisateur dans l’éditeur [de](/help/sites-authoring/templates.md)modèles. |
+| Module externe IPE : Recadrer | Terminer |  |
+| Module externe IPE : Retourner | Terminer |  |
+| Module externe IPE : Annuler/Rétablir | Terminer |  |
+| Module externe IPE : Zone cliquable | Terminer |  |
+| Module externe IPE : Rotation | Terminer |  |
+| Module externe IPE : Zoom | Terminer |  |
 
 ## État des fonctionnalités : outils {#feature-status-tools}
 
 La liste ci-dessous répertorie divers outils proposés dans l’IU classique et indique leur état dans l’IU optimisée pour les écrans tactiles.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Fonctionnalité<br /> </strong></td>
-   <td><strong>État<br /> </strong></td>
-   <td><strong>Commentaire</strong></td>
-  </tr>
-  <tr>
-   <td>Gestion des tâches</td>
-   <td>Remplacé</td>
-   <td>6.0 Présentation <a href="/help/sites-authoring/projects.md">des projets et des tâches</a>.<br /> </td>
-  </tr>
-  <tr>
-   <td>Boîte de réception du processus<br /> </td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Configuration du modèle de flux de travail vers la page (<code>/etc/workflow/wcm/templates.html</code>)</td>
-   <td>Absente<br /> </td>
-   <td>Utiliser l’IU classique.</td>
-  </tr>
-  <tr>
-   <td>Interface utilisateur d’administration du balisage<br /> </td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Centre de contrôle MSM/Blueprint</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Interface utilisateur de Blueprint Manager</td>
-   <td>Terminer</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td>Interface utilisateur de configuration de déploiement</td>
-   <td>Absente</td>
-   <td>Utiliser l’IU classique.</td>
-  </tr>
-  <tr>
-   <td>Utilisateur, groupes et autorisations<br /> </td>
-   <td>Principalement terminé<br /> </td>
-   <td>Pour modifier des autorisations avancées, utilisez l’interface utilisateur classique.<br /> </td>
-  </tr>
-  <tr>
-   <td>Versions de purge (<code>/etc/versioning/purge.html</code>)</td>
-   <td>Absente</td>
-   <td>Utiliser l’IU classique.</td>
-  </tr>
-  <tr>
-   <td>Vérificateur de lien externe (<code>/etc/linkchecker.html</code>)</td>
-   <td>Absente</td>
-   <td>Utiliser l’IU classique.<br /> </td>
-  </tr>
-  <tr>
-   <td>Editeur en bloc (<code>/etc/importers/bulkeditor.html</code>)</td>
-   <td>Absente<br /> </td>
-   <td>Utiliser l’IU classique.</td>
-  </tr>
-  <tr>
-   <td>Télécharger des miniatures pour les ajouter ou les remplacer<br /> </td>
-   <td>Absente</td>
-   <td>Utiliser l’IU classique.</td>
-  </tr>
- </tbody>
-</table>
-
+| Fonctionnalité | État | Commentaire |
+|--- |--- |--- |
+| Gestion des tâches | Remplacé | 6.0 Introduction de projets et de tâches. |
+| Boîte de réception du processus | Terminer |  |
+| Configuration du modèle de flux de travail vers la page (`/etc/workflow/wcm/templates.html`) | Absente | Utiliser l’IU classique. |
+| Interface utilisateur d’administration du balisage | Terminer |  |
+| Centre de contrôle MSM/Blueprint | Terminer |  |
+| Interface utilisateur de Blueprint Manager | Terminer |  |
+| Interface utilisateur de configuration de lancement | Absente | Utiliser l’IU classique. |
+| IU des utilisateurs, groupes et autorisations | Principalement terminé | Pour modifier des autorisations avancées, utilisez l’interface utilisateur classique. |
+| Purger des versions (`/etc/versioning/purge.html`) | Absente | Utiliser l’IU classique. |
+| Vérificateur de lien externe (`/etc/linkchecker.html`) | Absente | Utiliser l’IU classique. |
+| Editeur en bloc (`/etc/importers/bulkeditor.html`) | Absente | Utiliser l’IU classique. |
+| Télécharger des miniatures pour les ajouter ou les remplacer | Absente | Utiliser l’IU classique. |
