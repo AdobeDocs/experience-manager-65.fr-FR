@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 2dad235c94c73c1c624fa05ff86a7260d4d4a01b
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2329'
 ht-degree: 83%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 83%
 La structure d’intégration comprend une couche d’intégration avec une API. Ce permet d’effectuer les opérations suivantes :
 
 * connecter un système eCommerce et d’extraire les données produit vers AEM ;
+
 * créer des composants AEM afin de disposer de fonctionnalités de commerce indépendantes du moteur eCommerce spécifique.
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -56,6 +57,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
       * Si elle est trouvée, la valeur est utilisée pour filtrer la recherche de service de commerce.
+
       * Dans le cas contraire, le service de commerce le mieux classé est utilisé.
    * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
 
@@ -69,7 +71,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 Consultez les exemples ci-dessous :
 
 | `cq:commerceProvider = geometrixx` | dans une installation AEM standard, une mise en oeuvre spécifique est requise ; par exemple, l’exemple geometrixx, qui inclut des extensions minimales à l’API générique. |
-|---|---|
+|--- |--- |
 | `cq:commerceProvider = hybris` | mise en oeuvre de l&#39;hybris |
 
 ### Exemple {#example}
@@ -117,6 +119,7 @@ Afin de développer pour hybris 4, les éléments suivants sont nécessaires :
 * Dans Configuration Manager OSGi :
 
    * Désactivez la prise en charge d’hybris 5 pour le service d’analyseur de réponse par défaut.
+
    * Assurez-vous que le service de gestionnaire d’authentification de base hybris possède un classement de service inférieur à celui du service de gestionnaire OAuth hybris.
 
 ### Gestion de session {#session-handling}
@@ -124,7 +127,9 @@ Afin de développer pour hybris 4, les éléments suivants sont nécessaires :
 hybris utilise une session utilisateur pour stocker des informations telles que le panier du client. L’ID de session est renvoyé par hybris dans un cookie `JSESSIONID` qui doit être envoyé lors des requêtes ultérieures transmises à hybris. Pour éviter de stocker l’ID de session dans le référentiel, il est codé dans un autre cookie stocké dans le navigateur du client. Les étapes suivantes sont effectuées :
 
 * Lors de la première requête, aucun cookie n’est défini lors de la requête du client. De cette façon, une requête est envoyée à l’instance hybris pour créer une session.
+
 * Les cookies de session sont extraits à partir de la réponse, codés dans un nouveau cookie (par exemple, `hybris-session-rest`) et définis dans la réponse au client. Le codage du nouveau cookie est nécessaire, car le cookie d’origine n’est valide que pour un certain chemin et ne serait sinon pas renvoyé à partir du navigateur lors des requêtes ultérieures. Les informations de chemin doivent également être ajoutées à la valeur du cookie.
+
 * On subsequent requests, the cookies are decoded from the `hybris-session-<*xxx*>` cookies and set on the HTTP client that is used to request data from hybris.
 
 >[!NOTE]
@@ -136,6 +141,7 @@ hybris utilise une session utilisateur pour stocker des informations telles que 
 * Cette session &quot;possède&quot; le **panier**
 
    * exécute les ajouts/suppressions/etc. ;
+
    * effectue les divers calculs sur le panier ;
 
       `commerceSession.getProductPrice(Product product)`
@@ -145,6 +151,7 @@ hybris utilise une session utilisateur pour stocker des informations telles que 
    `CommerceSession.getUserContext()`
 
 * Possède également la connexion du traitement des **paiements**
+
 * Possède également la connexion d’**exécution**
 
 ### Synchronisation et publication des produits {#product-synchronization-and-publishing}
@@ -163,33 +170,34 @@ Les données produit gérées dans hybris doivent être disponibles dans AEM. Le
 * Les modifications de catalogue dans hybris sont indiquées à AEM par le biais d’un flux, puis propagées vers AEM (b) :
 
    * Le produit est ajouté/supprimé/modifié par rapport à la version du catalogue.
+
    * Le produit est approuvé.
 
 * L’extension hybris fournit un importateur d’interrogations (hybris scheme), qui peut être configuré pour importer les modifications dans AEM selon un intervalle de temps donné spécifié en secondes (par exemple, toutes les 24 heures) :
 
-   * 
-
-      ```js
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```JavaScript
+       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+        {
+        * "jcr:mixinTypes": ["cq:PollConfig"],
+        * "enabled": true,
+        * "source": "hybris:outdoors",
+        * "jcr:primaryType": "cq:PageContent",
+        * "interval": 86400
+        }
+   ```
 
 * La configuration de catalogue dans AEM reconnaît les versions de catalogues **intermédiaires** et **en ligne**.
 
 * La synchronisation des produits entre les versions de catalogue nécessite une (dés-)activation de la page AEM correspondante (a, c) :
 
    * L’ajout d’un produit à une version de catalogue **en ligne** requiert l’activation de la page du produit.
+
    * La suppression d’un produit nécessite la désactivation.
 
 * L’activation d’une page dans AEM (c) nécessite une vérification (b) et est possible uniquement si :
 
    * le produit se trouve dans une version de catalogue **en ligne** pour les pages du produit ;
+
    * les produits référencés sont disponibles dans une version du catalogue **en ligne** pour d’autres pages (par exemple, des pages de campagne).
 
 * Les pages de produits activées doivent accéder à la version **en ligne** des données de produit (d).
@@ -213,7 +221,6 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 >[!NOTE]
 >
 >In effect a variant axes is determined by whatever `Product.getVariantAxes()` returns:
->
 >* hybris le définit pour la mise en œuvre hybris.
 >
 >
@@ -224,7 +231,7 @@ Bien que les produits (en général) peuvent présenter plusieurs axes de varian
    >
 1. plus un
 >
->   
+>
 This additional variant is selected via the `variationAxis` property of the product reference (usually `color` for Geometrixx Outdoors).
 
 #### Références et données de produits {#product-references-and-product-data}
@@ -237,7 +244,7 @@ En général :
 
 Il doit y avoir un mappage 1:1 entre les variations de produit et les nœuds de données de produit.
 
-Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit comporte des variantes S, M et L, les données du produit peuvent être.
+Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit présente des variations S, M et L, les données du produit peuvent être les suivantes :
 
 ```shell
 etc
@@ -249,7 +256,7 @@ etc
 |       |──shirt-l
 ```
 
-Bien qu’un catalogue &quot;Grand et grand&quot; ne contienne que des informations.
+Alors qu’un catalogue « grandes tailles » aurait uniquement :
 
 ```shell
 content
@@ -335,24 +342,30 @@ public class AxisFilter implements VariantFilter {
 
 * **Mécanisme de stockage général**
 
-   * Les nœuds de produit sont nt:unstructured.
+   * Product nodes are `nt:unstructured`.
+
    * Un nœud de produit peut être soit :
 
       * une référence, avec les données de produits stockées ailleurs :
 
          * Product references contain a `productData` property, which points to the product data (typically under `/etc/commerce/products`).
+
          * Les données de produit sont hiérarchiques. Les attributs de produit sont hérités des ancêtres d’un nœud de données de produit.
+
          * Les références de produit peuvent également contenir des propriétés locales qui remplacent celles spécifiées dans leurs données de produit.
       * un produit lui-même :
 
          * Without a `productData` property.
+
          * Un nœud de produit qui contient toutes les propriétés localement (et ne contient pas de propriété productData) hérite des attributs de produit directement de ses propres ancêtres.
 
 
 * **Structure de produit générique AEM**
 
    * Chaque variante doit avoir son propre nœud feuille.
+
    * L’interface du produit représente à la fois les produits et les variantes, mais le nœud du référentiel associé est spécifique.
+
    * Le nœud de produit décrit les attributs de produit et les axes de variante.
 
 #### Exemple {#example-1}
@@ -507,6 +520,7 @@ public class AxisFilter implements VariantFilter {
 **Traitement des paiements**
 
 * `CommerceSession` possède également la connexion du traitement des paiements.
+
 * Les implémenteurs doivent ajouter les appels spécifiques (au service de traitement des paiements de leur choix) à la mise en œuvre de `CommerceSession`.
 
 **Exécution des commandes**
