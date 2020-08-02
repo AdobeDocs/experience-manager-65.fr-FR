@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
 workflow-type: tm+mt
 source-wordcount: '2331'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -51,7 +51,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* AEM prend en charge `Resource.adaptTo()` `CommerceService` les `Product`
+* AEM prend en charge `Resource.adaptTo()` les `CommerceService` et `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -68,7 +68,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
 Consultez les exemples ci-dessous :
 
-| `cq:commerceProvider = geometrixx` | dans une installation AEM standard, une implémentation spécifique est requise ; par exemple, l’exemple geometrixx, qui inclut des extensions minimales à l’API générique. |
+| `cq:commerceProvider = geometrixx` | dans une installation AEM standard, une mise en oeuvre spécifique est requise ; par exemple, l’exemple geometrixx, qui inclut des extensions minimales à l’API générique. |
 |---|---|
 | `cq:commerceProvider = hybris` | mise en oeuvre de l&#39;hybris |
 
@@ -112,11 +112,7 @@ Afin de développer pour hybris 4, les éléments suivants sont nécessaires :
 
    `-P hybris4`
 
-   Il télécharge la distribution Hybris 4 préconfigurée et l&#39;incorpore dans l&#39;assemblage :
-
-   ```
-   cq-commerce-hybris-server
-   ```
+   Il télécharge la distribution Hybris 4 préconfigurée et l&#39;incorpore dans l&#39;assemblage `cq-commerce-hybris-server`.
 
 * Dans Configuration Manager OSGi :
 
@@ -173,7 +169,7 @@ Les données produit gérées dans hybris doivent être disponibles dans AEM. Le
 
    * 
 
-      ```
+      ```js
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -241,25 +237,25 @@ En général :
 
 Il doit y avoir un mappage 1:1 entre les variations de produit et les nœuds de données de produit.
 
-Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit présente des variations S, M et L, les données du produit peuvent être les suivantes :
+Les références de produit doivent également disposer d’un nœud pour chaque variation présentée, mais il n’est pas nécessaire de présenter toutes les variations. Par exemple, si un produit comporte des variantes S, M et L, les données du produit peuvent être.
 
 ```shell
 etc
-  commerce
-    products
-      shirt
-        shirt-s
-        shirt-m
-        shirt-l
+|──commerce
+|  |──products
+|     |──shirt
+|       |──shirt-s
+|       |──shirt-m
+|       |──shirt-l
 ```
 
-Alors qu’un catalogue « grandes tailles » aurait uniquement :
+Bien qu’un catalogue &quot;Grand et grand&quot; ne contienne que des informations.
 
 ```shell
 content
-  big-and-tall
-    shirt
-      shirt-l
+|──big-and-tall
+|  |──shirt
+|     |──shirt-l
 ```
 
 Enfin, il n’est pas nécessaire d’utiliser les données de produits. Vous pouvez placer toutes les données de produits sous les références dans le catalogue, mais vous ne pouvez pas vraiment avoir plusieurs catalogues sans dupliquer toutes les données de produits.
@@ -457,9 +453,9 @@ public class AxisFilter implements VariantFilter {
    Le schéma du contenu du panier est défini par l’API :
 
    ```java
-       public void addCartEntry(Product product, int quantity);
-       public void modifyCartEntry(int entryNumber, int quantity);
-       public void deleteCartEntry(int entryNumber);
+   public void addCartEntry(Product product, int quantity);
+   public void modifyCartEntry(int entryNumber, int quantity);
+   public void deleteCartEntry(int entryNumber);
    ```
 
 1. **Prix**
@@ -467,12 +463,12 @@ public class AxisFilter implements VariantFilter {
    Le schéma de prix est également fixé par le biais de l’API :
 
    ```java
-       public String getCartPreTaxPrice();
-       public String getCartTax();
-       public String getCartTotalPrice();
-       public String getOrderShipping();
-       public String getOrderTotalTax();
-       public String getOrderTotalPrice();
+   public String getCartPreTaxPrice();
+   public String getCartTax();
+   public String getCartTotalPrice();
+   public String getOrderShipping();
+   public String getOrderTotalTax();
+   public String getOrderTotalPrice();
    ```
 
 1. **Détails de la commande**
@@ -480,9 +476,9 @@ public class AxisFilter implements VariantFilter {
    Toutefois, les détails de la commande *ne sont pas fixés* par le biais de l’API :
 
    ```java
-       public void updateOrderDetails(Map<String, String> orderDetails);
-       public Map<String, String> getOrderDetails();
-       public void submitOrder();
+   public void updateOrderDetails(Map<String, String> orderDetails);
+   public Map<String, String> getOrderDetails();
+   public void submitOrder();
    ```
 
 **Calculs des frais d’expédition**
@@ -498,7 +494,7 @@ public class AxisFilter implements VariantFilter {
 >
 >Vous pouvez mettre en œuvre un sélecteur d’expédition, par exemple :
 >
->`yourProject/commerce/components/shippingpicker`:
+>`yourProject/commerce/components/shippingpicker` :
 >
 >* Essentially this could be a copy of `foundation/components/form/radio`, but with callbacks to the `CommerceSession` for:
    >
@@ -560,7 +556,7 @@ L’intégration est fournie entre AEM et différents systèmes eCommerce. Elle 
 
 * Comptes en hybris
 
-   AEM crée un compte correspondant (subordonné) en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui d’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
+   AEM crée un compte correspondant (subordonné) en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui de l’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
 
 #### Utilisateurs préexistants {#pre-existing-users}
 
@@ -592,7 +588,7 @@ Pour exploiter les fonctionnalités existantes, votre gestionnaire d’importati
 
 * has to implement the `ImportHandler` interface
 
-* can extend the `DefaultImportHandler`
+* can extend the `DefaultImportHandler`.
 
 ```java
 /**
@@ -602,66 +598,66 @@ Pour exploiter les fonctionnalités existantes, votre gestionnaire d’importati
  */
 public interface ImportHandler {
 
-    /**
-     * Not used.
-     */
-    public void createTaxonomie(ImporterContext ctx);
+  /**
+  * Not used.
+  */
+  public void createTaxonomie(ImporterContext ctx);
 
-    /**
-     * Creates a catalog with the given name.
-     * @param ctx   The importer context
-     * @param name  The catalog's name
-     * @return Path of created catalog
-     */
-    public String createCatalog(ImporterContext ctx, String name) throws Exception;
+  /**
+  * Creates a catalog with the given name.
+  * @param ctx   The importer context
+  * @param name  The catalog's name
+  * @return Path of created catalog
+  */
+  public String createCatalog(ImporterContext ctx, String name) throws Exception;
 
-    /**
-     * Creates a product from the given values.
-     * @param ctx                The importer context
-     * @param values             The product's properties
-     * @param parentCategoryPath The containing category's path
-     * @return Path of created product
-     */
-    public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a product from the given values.
+  * @param ctx                The importer context
+  * @param values             The product's properties
+  * @param parentCategoryPath The containing category's path
+  * @return Path of created product
+  */
+  public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 
-    /**
-     * Creates a variant product from the given values.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The base product's path
-     * @return Path of created product
-     */
-    public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
+  /**
+  * Creates a variant product from the given values.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The base product's path
+  * @return Path of created product
+  */
+  public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
 
-    /**
-     * Creates an asset for a product. This is usually a product
-     * image.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The product's path
-     * @return Path of created asset
-     */
-    public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
+  /**
+  * Creates an asset for a product. This is usually a product
+  * image.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The product's path
+  * @return Path of created asset
+  */
+  public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
 
-    /**
-     * Creates a category from the given values.
-     * @param ctx           The importer context
-     * @param values        The category's properties
-     * @param parentPath    Path of parent category or base path of import in case of root category
-     * @return Path of created category
-     */
-    public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a category from the given values.
+  * @param ctx           The importer context
+  * @param values        The category's properties
+  * @param parentPath    Path of parent category or base path of import in case of root category
+  * @return Path of created category
+  */
+  public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 }
 ```
 
-Pour que votre gestionnaire personnalisé soit reconnu par l’importateur, il doit définir la propriété `service.ranking` avec une valeur supérieure à 0, par exemple :
+For your custom handler to be recognized by the importer, it must specify the `service.ranking`property with a value higher than 0; for example.
 
 ```java
 @Component
 @Service
 @Property(name = "service.ranking", value = 100)
-public class MyImportHandler extends DefaultImportHandler {
-    ...
+public class MyImportHandler extends DefaultImportHandler
+{
+...
 }
 ```
-
