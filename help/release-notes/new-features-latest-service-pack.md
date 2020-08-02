@@ -4,10 +4,10 @@ description: Nouveautés d’Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,7 @@ Les Service Packs Adobe Experience Manager 6.5 offrent de nouvelles fonctionnali
 
 Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et certaines des versions [clés depuis la version 6.5.4.0](#key-releases-since-last-sp) du Experience Manager.
 
-## Sites Adobes Experience Manager {#aem-sites}
+## Adobe Experience Manager Sites {#aem-sites}
 
 ### Améliorations de l’accessibilité {#accessibility-sites}
 
@@ -56,7 +56,7 @@ Cet article présente les fonctionnalités incluses dans le dernier Service Pack
 
 * De nombreux éléments, contrôles et champs de formulaire d’entrée de l’interface utilisateur sont accessibles à l’aide du clavier.
 
-* La couleur et le contraste de certains éléments de l’interface utilisateur sont mis à jour afin que les utilisateurs ayant une vision limitée ou les utilisateurs sans perception de la couleur puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation des étoiles (par exemple, dans la section [!UICONTROL Évaluation] de l’onglet [!UICONTROL Avancé] dans [!UICONTROL Propriétés] de la ressource ou dans la vue de la carte) est modifiée pour un contraste approprié.
+* La couleur et le contraste de certains éléments de l’interface utilisateur ont été mis à jour afin que les utilisateurs disposant d’une vision limitée ou qui ne perçoivent pas les couleurs puissent distinguer ces éléments de l’interface utilisateur. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
 
    ![Icônes de classement avec contraste amélioré](assets/star-rating-icons.png)
 
@@ -90,7 +90,7 @@ Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un 
 
 ### [!DNL Oracle WebLogic] prise en charge du serveur d’applications {#weblogic-support}
 
-Adobe Experience Manager Forms a ajouté la prise en charge [!DNL Oracle WebLogic 12] d’Adobe Experience Manager Forms sur JEE. Vous pouvez effectuer une mise à niveau à partir d’une version précédente ou configurer un nouveau serveur Experience Manager 6.5 Forms sur JEE sur [!DNL Oracle WebLogic] 12.2.1.4 et versions ultérieures. Plus tard correspond aux changements mineurs de version, où x dans 12.2.1.x est remplacé par un numéro de version.
+Adobe Experience Manager Forms a ajouté la prise en charge de [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms on JEE. Vous pouvez effectuer une mise à niveau à partir d’une version précédente ou configurer un nouveau serveur Forms on JEE Experience Manager 6.5 sur [!DNL Oracle WebLogic] 12.2.1.4 et versions ultérieures. Plus tard correspond aux changements mineurs de version, où x dans 12.2.1.x est remplacé par un numéro de version.
 
 ### Améliorations de l’accessibilité {#accessibility-improvements}
 
@@ -108,7 +108,7 @@ Le modèle de données de formulaire prend désormais en charge l’authentifica
 
 ### Autres améliorations clés {#other-improvements}
 
-* Experience Manager 6.5 Forms sur JEE Document Security est désormais basé sur [!DNL Apache Struts 2].
+* Experience Manager 6.5 Forms on JEE Document Security est désormais basé sur [!DNL Apache Struts 2].
 
 * Prise en charge Ajoutée pour [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
@@ -134,7 +134,7 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 
 #### Configurer [!DNL Experience Manager Assets] avec [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Le canal d&#39;autorisation entre [!DNL Experience Manager Assets] et [!DNL Brand Portal] est modifié. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] est désormais configuré avec [!DNL Brand Portal] les E/S Adobe, qui obtiennent un jeton IMS pour l&#39;autorisation de votre [!DNL Brand Portal] client.
+Le canal d&#39;autorisation entre [!DNL Experience Manager Assets] et [!DNL Brand Portal] est modifié. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] est maintenant configuré avec les E/S [!DNL Brand Portal] par Adobe, qui obtiennent un jeton IMS pour l&#39;autorisation de votre [!DNL Brand Portal] locataire.
 
 The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. See [Configure Experience Manager Assets with Brand Portal](https://docs.adobe.com/content/help/fr-FR/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
@@ -167,9 +167,9 @@ Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les 
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Générer une sortie imprimable dans les workflows de formulaires Experience Manager (6.5.4.0) {#generate-printable-output}
+#### Générer une sortie imprimable dans les workflows Forms Experience Manager (6.5.4.0) {#generate-printable-output}
 
-L’étape de flux de travail Générer une sortie imprimable vous permet d’intégrer un fichier de modèle source à un fichier de données. Cette intégration vous permet d’imprimer ou d’enregistrer différentes copies du fichier de modèle. L’étape génère une sortie PCL, PostScript, ZPL, IPL, TPCL ou DPL. Pour plus d’informations sur cette fonctionnalité, voir Flux de travaux [Forms sur OSGi - Guide de référence](../forms/using/aem-forms-workflow-step-reference.md)des étapes.
+L’étape de flux de travail Générer une sortie imprimable vous permet d’intégrer un fichier de modèle source à un fichier de données. Cette intégration vous permet d’imprimer ou d’enregistrer différentes copies du fichier de modèle. L’étape génère une sortie PCL, PostScript, ZPL, IPL, TPCL ou DPL. Pour plus d’informations sur cette fonctionnalité, voir Processus [Forms sur OSGi - Guide de référence](../forms/using/aem-forms-workflow-step-reference.md)des étapes.
 
 ![Générer une sortie imprimable](assets/generate-print-output-step.gif)
 
@@ -195,7 +195,7 @@ Convertissez un champ de texte d’un formulaire XFA en champ de texte enrichi d
 
 #### Accessibility enhancements (6.5.4.0) {#forms-accessibility-enhancements-6540}
 
-Experience Manager Forms comprend les améliorations d’accessibilité suivantes :
+Experience Manager Forms inclut les améliorations d’accessibilité suivantes :
 
 * Les lecteurs d’écran annoncent correctement les cases à cocher, les liens, le sélecteur de date et les champs de saisie de date dans un formulaire adaptatif.
 
@@ -224,7 +224,7 @@ Entre le 05 mars 2020 et le 04 juin 2020, Adobe a publié ce qui suit, en plus d
 
 * [application de bureau Experience Manager 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
-* [Écrans du Experience Manager : Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experience Manager Screens : Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >
