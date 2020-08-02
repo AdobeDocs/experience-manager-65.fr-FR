@@ -3,10 +3,10 @@ title: Archivez et extrayez vos ressources numériques pour les modifier.
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 53%
+source-wordcount: '437'
+ht-degree: 51%
 
 ---
 
@@ -56,6 +56,10 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Annuler le verrouillage]**. La ressource est à nouveau archivée et disponible pour modification pour d’autres utilisateurs.
+
+## Bonnes pratiques et restrictions {#tips-limitations}
+
+* Il est possible de supprimer un *dossier* contenant des fichiers extraits. Avant de supprimer un dossier, assurez-vous qu’aucun fichier numérique n’est extrait par les utilisateurs.
 
 >[!MORELIKETHIS]
 >
