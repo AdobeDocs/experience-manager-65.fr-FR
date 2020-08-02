@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '9216'
+source-wordcount: '9240'
 ht-degree: 64%
 
 ---
@@ -524,9 +524,9 @@ Pour plus d’informations sur la création et l’affichage des sous-ressources
 
 ## Suppression des ressources {#deleting-assets}
 
-Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource.
+Pour supprimer des fichiers, un utilisateur doit disposer d’autorisations de suppression sur `dam/asset`. Si vous disposez uniquement d’autorisations de modification, vous pourrez seulement modifier les métadonnées de la ressource et ajouter des annotations à cette dernière. Toute suppression s’avérera impossible.
 
-De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
+Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Pour empêcher les utilisateurs de supprimer des ressources référencées et de laisser des liens rompus, désactivez l’option Forcer la suppression à l’aide d’une incrustation, .
 
 1. Accédez à l’emplacement des ressources que vous souhaitez supprimer.
 
@@ -542,11 +542,9 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
    >[!NOTE]
    >
-   >Pour supprimer des fichiers, un utilisateur doit disposer d’autorisations de suppression sur `dam/asset`. Si vous disposez uniquement d’autorisations de modification, vous pourrez seulement modifier les métadonnées de la ressource et ajouter des annotations à cette dernière. Toute suppression s’avérera impossible.
+   >* Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
+   >* Il est possible de supprimer un *dossier* contenant des fichiers extraits. Avant de supprimer un dossier, assurez-vous qu’aucun fichier numérique n’est extrait par les utilisateurs.
 
-   >[!NOTE]
-   >
-   >Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
 
 ## Téléchargement de ressources {#downloading-assets}
 
