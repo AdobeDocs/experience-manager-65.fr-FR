@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 5%
@@ -25,7 +25,7 @@ ht-degree: 5%
 
 Sur l’instance de AEM Author, à partir de la navigation globale :
 
-* Sélectionnez **[!UICONTROL Communautés] > **[!UICONTROL Sites]**.
+* Sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Sites]**.
 * Sélectionnez **[!UICONTROL engager le dossier]** pour l’ouvrir.
 * Sélectionnez la carte du site **[!UICONTROL en anglais du didacticiel]** de prise en main.
 
@@ -34,11 +34,11 @@ Sur l’instance de AEM Author, à partir de la navigation globale :
 
 Le résultat est d’atteindre la console [](/help/communities/groups.md)Groupes :
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![create-group](assets/create-group.png)
 
 La fonction de groupes s&#39;affiche sous la forme d&#39;un dossier dans lequel des instances de groupes sont créées. Sélectionnez le dossier Groupes pour l’ouvrir. Le groupe créé lors de la publication est visible.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## Créer un groupe d&#39;arts principaux {#create-main-arts-group}
 
@@ -94,11 +94,11 @@ Le `groups` dossier contient désormais deux groupes (actualisez la page).
 
 Avant de créer des groupes imbriqués dans le `arts` groupe, passez la souris sur la `arts` carte et sélectionnez l’icône de publication pour la publier.
 
-![composant d’aimer](assets/liking-component.png)
+![site de publication](assets/publish-site.png)
 
 Attendez la confirmation de la publication du groupe.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![groupe-publié](assets/group-published.png)
 
 Le `arts` groupe doit également contenir un `groups` dossier, mais un dossier vide dans lequel de nouveaux groupes peuvent être créés. Accédez au dossier du groupe arts et créez 3 groupes imbriqués, chacun avec un paramètre d’adhésion différent :
 
@@ -133,11 +133,11 @@ Pour accéder aux groupes imbriqués à partir de la console Sites de communaut�
 * Sélectionner la carte **[!UICONTROL arts]**
 * Sélectionner le dossier **[!UICONTROL Groupes]**
 
-![configure-like](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## Publication de groupes {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![site de publication](assets/publish-site.png)
 
 Après la publication du site communautaire principal :
 
@@ -149,7 +149,7 @@ Après la publication du site communautaire principal :
 
    * Tous les groupes doivent être publiés de manière descendante.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![groupe-publié](assets/group-published.png)
 
 ## Expérience sur la publication {#experience-on-publish}
 
