@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 99%
@@ -143,11 +143,7 @@ Pour ouvrir votre fragment à des fins de modification :
    >[!NOTE]
    >
    >1. Un message s’affiche si le fragment est déjà référencé dans une page de contenu.
-      >
-      >
-      >
-
-   2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
+   >2. Le panneau latéral peut être masqué/affiché en appuyant sur l’icône **Activer/désactiver le panneau latéral**.
 
 
 1. Naviguez parmi les trois modes à l’aide des icônes du panneau latéral :
