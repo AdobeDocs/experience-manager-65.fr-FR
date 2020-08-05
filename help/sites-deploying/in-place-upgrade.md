@@ -11,7 +11,10 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
+source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+workflow-type: tm+mt
+source-wordcount: '1275'
+ht-degree: 78%
 
 ---
 
@@ -25,6 +28,8 @@ source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
 ## Procédure pré-mise à niveau {#pre-upgrade-steps}
 
 Avant d’effectuer la mise à niveau, différentes étapes doivent être exécutées. Pour plus d’informations, reportez-vous aux sections [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance pré-mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). De plus, assurez-vous que le système répond à la configuration requise pour la nouvelle version d’AEM. Découvrez comment l’outil de détection des motifs peut vous aider à évaluer la complexité de votre mise à niveau. Pour plus d’informations, vous pouvez également consulter la section Portée et exigences de la mise à niveau de la rubrique [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md).
+
+Enfin, notez que le temps d’inactivité pendant la mise à niveau peut être considérablement réduit en indexant le référentiel **avant** d’effectuer la mise à niveau. Pour plus d’informations, voir [Utilisation de la réindexation hors ligne pour réduire les temps d’inactivité lors d’une mise à niveau.](/help/sites-deploying/upgrade-offline-reindexing.md)
 
 ## Prérequis pour la migration {#migration-prerequisites}
 
@@ -55,6 +60,7 @@ The actual migration is performed using the standard AEM quickstart jar file, ex
 >Si vous effectuez une migration du contenu du référentiel TarMK avec l’extension de démarrage rapide CRX2Oak, vous pouvez supprimer le mode d’exécution **samplecontent** en ajoutant la commande suivante à la ligne de commande de migration :
 >
 >* `--promote-runmode nosamplecontent`
+
 >
 
 
@@ -72,7 +78,7 @@ Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profil
   <tr>
    <td><strong>Référentiel source</strong></td>
    <td><strong>Référentiel cible</strong></td>
-   <td><strong>Profile</strong></td>
+   <td><strong>Profil</strong></td>
    <td><strong>Indicateurs supplémentaires</strong><br /> </td>
   </tr>
   <tr>
@@ -110,7 +116,7 @@ Where `<<YOUR_PROFILE>>` and `<<ADDITIONAL_FLAGS>>` are replaced with the profil
 
 **Où :**
 
-* `mongo-host` est l’adresse IP du serveur MongoDB (par exemple, 127.0.0.1)
+* `mongo-host` est l’adresse IP du serveur MongoDB (par exemple, 127.0.0.1).
 
 * `mongo-port` est le port du serveur MongoDB (par exemple : mai 2017)
 
@@ -178,13 +184,13 @@ Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas l
    ps -ef | grep java
    ```
 
-1. Recherchez le processus AEM. On dirait :
+1. Recherchez le processus AEM. Il ressemblera à quelque chose comme :
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. Modifiez la commande en remplaçant le chemin d’accès dans le fichier JAR existant (`crx-quickstart/app/aem-quickstart*.jar` dans ce cas) par le nouveau fichier JAR qui est un frère du dossier `crx-quickstart`. En prenant l&#39;exemple de notre commande précédente, nous vous ordonnons :
+1. Modifiez la commande en remplaçant le chemin d’accès dans le fichier JAR existant (`crx-quickstart/app/aem-quickstart*.jar` dans ce cas) par le nouveau fichier JAR qui est un frère du dossier `crx-quickstart`. À l&#39;aide de notre commande précédente, nous prendrions la commande suivante :
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
