@@ -12,7 +12,10 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+workflow-type: tm+mt
+source-wordcount: '865'
+ht-degree: 94%
 
 ---
 
@@ -24,6 +27,10 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 >La mise à niveau nécessite un temps d’interruption au niveau de l’auteur, car la plupart des mises à niveau d’AEM sont exécutées sur place. En suivant ces bonnes pratiques, vous pouvez réduire ou éliminer le temps d’interruption au niveau de la publication.
 
 Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre les environnements de création et de publication afin de limiter le temps d’interruption pour vos auteurs et vos utilisateurs finaux. Cette page décrit une procédure de haut niveau pour améliorer une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Étant donné que la procédure diffèrent entre les niveaux d’auteur et de publication, ainsi que les déploiements basés sur Mongo et TarMK, chaque niveau et micronoyau a été répertorié dans une section distincte. Lors du déploiement, nous vous conseillons d’abord de mettre à niveau votre environnement de création, de déterminer les critères de réussite, puis de passer aux environnments de publication.
+
+>[!IMPORTANT]
+>
+>Le temps d’inactivité pendant la mise à niveau peut être considérablement réduit en indexant le référentiel avant d’effectuer la mise à niveau. Pour plus d’informations, voir [Utilisation de la réindexation hors ligne pour réduire les temps d’inactivité lors d’une mise à niveau.](/help/sites-deploying/upgrade-offline-reindexing.md)
 
 ## Niveau d’auteur TarMK {#tarmk-author-tier}
 
@@ -68,7 +75,7 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 ### En cas d’échec (restauration) {#if-unsuccessful-rollback}
 
-![restauration](assets/rollback.jpg)
+![annulation](assets/rollback.jpg)
 
 1. Démarrez l’instance Cold Standby en tant que nouvelle instance principale
 
