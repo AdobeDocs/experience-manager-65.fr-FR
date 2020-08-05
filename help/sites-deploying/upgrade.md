@@ -12,7 +12,10 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 81%
 
 ---
 
@@ -24,6 +27,7 @@ Dans cette section, nous présentons la mise à niveau d’une installation AEM 
 * [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md)
 * [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)
 * [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)
+* [Utilisation de la réindexation hors connexion pour réduire les temps d’inactivité lors d’une mise à niveau](/help/sites-deploying/upgrade-offline-reindexing.md)
 * [Processus de mise à niveau](/help/sites-deploying/upgrade-procedure.md)
 * [Code et personnalisations de la mise à niveau](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
@@ -68,10 +72,10 @@ AEM a récemment introduit un [outil de détection des motifs](/help/sites-deplo
 
 Pour plus d’informations sur les autres points modifiés dans les versions récentes d’AEM, consultez les notes de mise à jour complètes :
 
-* [https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html ](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html )
+* [https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html ](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html )
 
 ## Vue d’ensemble de la mise à niveau {#upgrade-overview}
 
