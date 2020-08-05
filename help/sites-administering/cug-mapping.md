@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 74%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
   <tr>
    <td><p>Propriété : cq:cugEnabled</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
    <td><p>Autorisation :</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification :</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
-   <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Pour imposer l’exigence d’authentification sur un noeud, il suffit d’ajouter le type de mixin granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
+   <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Afin d’appliquer les exigences d’authentification sur un noeud, il suffit d’ajouter le type de mixin granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
   </tr>
   <tr>
    <td><p>Propriété : cq:cugPrincipals</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
@@ -84,7 +87,9 @@ Nom : com.day.cq.auth.impl.CugSupportImpl
 * Configuration de l’autorisation de CUG et activation/désactivation de l’évaluation.
 Service permettant de configurer la liste d’exclusion des entités qui ne doivent pas être affectées par l’autorisation CUG.
 
-   >[!NOTE] Si le paramètre CugExcludeImpl n&#39;est pas configuré, le paramètre CugConfiguration revient à la valeur par défaut.
+   >[!NOTE]
+   > 
+   >Si la variable `CugExcludeImpl` n’est pas configurée, la `CugConfiguration` valeur par défaut est rétablie.
 
    Il est possible de connecter une implémentation CugExclude personnalisée en cas de besoins spéciaux.
 
