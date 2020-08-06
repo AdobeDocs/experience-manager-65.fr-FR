@@ -11,10 +11,10 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 78%
+source-wordcount: '1242'
+ht-degree: 80%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 78%
 
 Avant d’effectuer la mise à niveau, différentes étapes doivent être exécutées. Pour plus d’informations, reportez-vous aux sections [Mise à niveau du code et personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) et [Tâches de maintenance pré-mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). De plus, assurez-vous que le système répond à la configuration requise pour la nouvelle version d’AEM. Découvrez comment l’outil de détection des motifs peut vous aider à évaluer la complexité de votre mise à niveau. Pour plus d’informations, vous pouvez également consulter la section Portée et exigences de la mise à niveau de la rubrique [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md).
 
-Enfin, notez que le temps d’inactivité pendant la mise à niveau peut être considérablement réduit en indexant le référentiel **avant** d’effectuer la mise à niveau. Pour plus d’informations, voir [Utilisation de la réindexation hors ligne pour réduire les temps d’inactivité lors d’une mise à niveau.](/help/sites-deploying/upgrade-offline-reindexing.md)
+<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Prérequis pour la migration {#migration-prerequisites}
 
