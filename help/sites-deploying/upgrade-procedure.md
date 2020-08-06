@@ -12,7 +12,7 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 94%
@@ -28,10 +28,9 @@ ht-degree: 94%
 
 Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre les environnements de création et de publication afin de limiter le temps d’interruption pour vos auteurs et vos utilisateurs finaux. Cette page décrit une procédure de haut niveau pour améliorer une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Étant donné que la procédure diffèrent entre les niveaux d’auteur et de publication, ainsi que les déploiements basés sur Mongo et TarMK, chaque niveau et micronoyau a été répertorié dans une section distincte. Lors du déploiement, nous vous conseillons d’abord de mettre à niveau votre environnement de création, de déterminer les critères de réussite, puis de passer aux environnments de publication.
 
->[!IMPORTANT]
+<!-->>[!IMPORTANT]
+>Le temps d’inactivité pendant la mise à niveau peut être considérablement réduit en indexant le référentiel avant d’effectuer la mise à niveau. Pour plus d&#39;informations, reportez-vous à la section [Utilisation de la réindexation hors ligne pour réduire les temps d&#39;inactivité lors d&#39;une mise à niveau](/help/sites-deploying/upgrade-offline-reindexing.md)—>
 >
->Le temps d’inactivité pendant la mise à niveau peut être considérablement réduit en indexant le référentiel avant d’effectuer la mise à niveau. Pour plus d’informations, voir [Utilisation de la réindexation hors ligne pour réduire les temps d’inactivité lors d’une mise à niveau.](/help/sites-deploying/upgrade-offline-reindexing.md)
-
 ## Niveau d’auteur TarMK {#tarmk-author-tier}
 
 ### Démarrage de la topologie {#starting-topology}
