@@ -1,5 +1,5 @@
 ---
-title: Utilisation des sélecteurs
+title: 'Utilisation des sélecteurs  '
 description: Sélection de ressources pour les images interactives, vidéos interactives et bannières de carrousel
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
@@ -8,52 +8,55 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 99%
 
 ---
 
 
-# Utilisation des sélecteurs {#working-with-selectors}
+# Utilisation des sélecteurs   {#working-with-selectors}
 
-Lorsque vous travaillez avec une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des fichiers et vous sélectionnez des sites et des produits pour les zones réactives et les zones cliquables à lier. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et des visionneuses de fichiers multimédia, vous sélectionnez également des fichiers à l’aide du sélecteur de fichiers.
+Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
 Cette rubrique décrit comment utiliser les sélecteurs de produits, de sites et de ressources, y compris comment naviguer, filtrer et trier dans les sélecteurs.
 
 Vous accédez aux sélecteurs lorsque vous créez des ensembles de carrousels, vous ajoutez des zones réactives et des zones cliquables et vous créez des vidéos et des images interactives.
 
-Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de produit si vous liez une zone réactive ou une zone cliquable à une page de visualisation rapide ; utilisez le sélecteur de site si vous liez une zone réactive ou une zone cliquable à un hyperlien ; utilisez le sélecteur de ressources lorsque vous créez une diapositive.
+Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de produits si vous liez une zone réactive ou une zone cliquable à une page d’aperçu rapide, le sélecteur de sites si vous liez une zone réactive ou une zone cliquable à un lien hypertexte et le sélecteur de ressources si vous créez une nouvelle diapositive.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de site fonctionne uniquement si vous êtes un client AEM Sites. Le sélecteur de produits nécessite également AEM Commerce.
+Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes client d’AEM Sites. Le sélecteur de produits nécessite également AEM Commerce.
 
 ## Selecting products {#selecting-products}
 
-Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaitez qu’une zone réactive ou une zone cliquable fournisse une vue rapide d’un produit spécifique dans votre catalogue de produits.
+Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaitez une zone réactive ou une zone cliquable pour proposer l’aperçu rapide d’un produit de votre catalogue de produits.
 
-1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
+1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis appuyez sur l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
-   The Product selector is in the **[!UICONTROL Action Type** area.
+   Le sélecteur de produits se trouve dans la zone **Type d’action [!UICONTROL**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Tap the **[!UICONTROL Product Selector]** icon (magnifying glass) and navigate to a product in the catalog.
+1. Appuyez sur l’icône du **[!UICONTROL sélecteur de produits]** (loupe) et accédez à un produit dans le catalogue.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   You can also filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or selecting tags, or both.
+   Vous pouvez également filtrer par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et en entrant des mots-clés ou en sélectionnant des balises, ou les deux à la fois.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   You can change where AEM browses for product data by tapping **[!UICONTROL Browse]** and navigating to another folder.
+   Vous pouvez modifier l’emplacement dans lequel AEM recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en accédant à un autre dossier.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tap **[!UICONTROL Sort]** by to change whether AEM sorts by newest to oldest or oldest to newest.
+   Appuyez sur **[!UICONTROL Trier]** pour indiquer si AEM trie du plus récent au plus ancien ou du plus ancien au plus récent.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Tap **[!UICONTROL View as]** to change how you view products – either **[!UICONTROL List View]** or **[!UICONTROL Card View]**.
+   Appuyez sur **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (mode **[!UICONTROL Liste]** ou mode **[!UICONTROL Carte]**).
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -61,7 +64,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. When in **[!UICONTROL Preview]** mode, you can tap the hotspot or image map, and see what the Quickview looks like.
+1. En mode **[!UICONTROL Aperçu]**, vous pouvez appuyer sur la zone réactive ou la zone cliquable et voir à quoi ressemble l’aperçu rapide.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
@@ -69,13 +72,13 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
 Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée dans AEM Sites.
 
-1. Navigate to the Carousel Set, Interactive Image, or Interactive Video, and tap the **[!UICONTROL Actions]** tab (only available if you have defined a hotspot or image map).
+1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis appuyez sur l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
-   The Site Selector is in the **[!UICONTROL Action Type]** area.
+   Le sélecteur de sites se trouve dans la zone **[!UICONTROL Type d’action]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tap the **[!UICONTROL Site Selector]** icon (folder with magnifying glass) and navigate to a page in your AEM sites that you want to link the hotspot or image map to.
+1. Appuyez sur l’icône **[!UICONTROL Sélecteur de sites]** (dossier avec loupe) et accédez à une page parmi vos sites AEM à laquelle vous voulez relier la zone réactive ou la zone cliquable.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -83,34 +86,34 @@ Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. When in **[!UICONTROL Preview]** mode if you tap the hotspot or image map, you navigate to the AEM site page you specified.
+1. En mode **[!UICONTROL Aperçu]**, si vous appuyez sur la zone réactive ou la zone cliquable, vous accédez à la page AEM Site que vous avez spécifiée.
 
 ## Sélection des ressources {#selecting-assets}
 
-Utilisez ce sélecteur pour choisir les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, des visionneuses de supports variés et des visionneuses à 360°. In interactive Video, the asset selector is available when you tap **[!UICONTROL Select Assets]** in the **[!UICONTROL Content]** tab. Dans les visionneuses de carrousel, le sélecteur de ressources est disponible lorsque vous créez une diapositive. Dans les visionneuses d’images, les visionneuses de supports variés et les visionneuses à 360°, le sélecteur de fichiers est disponible lorsque vous créez une visionneuse d’images, une visionneuse de supports variés ou une visionneuse à 360°, respectivement.
+Utilisez ce sélecteur pour sélectionner les images à utiliser dans une bannière de carrousel, une vidéo interactive, des visionneuses d’images, de contenus multimédia variés et à 360°. Dans la vidéo interactive, le sélecteur de ressources est disponible lorsque vous tapez sur **[!UICONTROL Sélectionner des ressources]** dans l’onglet **[!UICONTROL Contenu]**. Dans les ensembles de carrousels, le sélecteur de ressources est disponible lorsque vous créez une nouvelle diapositive. Dans les visionneuses d’images, de contenus multimédia variés et à 360°, le sélecteur de ressources est disponible lorsque vous créez respectivement une nouvelle visionneuse d’images, de contenus multimédia variés ou à 360°.
 
-See also [Asset Picker](search-assets.md#assetselector) for more information.
+Reportez-vous également à la section [Sélecteur de ressources](search-assets.md#assetpicker) pour plus d’informations.
 
-1. Accédez à la visionneuse de carrousel et créez une diapositive. Or, navigate to the Interactive Video, go the **[!UICONTROL Content]** tab and select assets. Vous pouvez également créer une visionneuse de supports variés, une visionneuse d’images ou une visionneuse à 360°.
-1. Tap the **[!UICONTROL Asset Selector]** icon (folder with magnifying glass) and navigate to an asset.
+1. Accédez à l’ensemble de carrousels et créez une nouvelle diapositive. Ou accédez à la vidéo interactive, accédez à l’onglet **[!UICONTROL Contenu]** et sélectionnez des ressources. Vous pouvez également créer des visionneuses de contenu multimédia varié, d’images ou à 360°.
+1. Tapez sur l’icône **[!UICONTROL Sélecteur de ressources]** (dossier avec loupe) et accédez à une ressource.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   You can also filter by keyword or tag by tapping **[!UICONTROL Filter]** and entering keywords, or adding criteria, or both.
+   Vous pouvez également filtrer par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et en entrant des mots-clés ou en ajoutant des critères, ou les deux à la fois.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
    Vous pouvez modifier l’emplacement où AEM recherche les ressources en accédant à un autre dossier dans le champ **[!UICONTROL Chemin]**.
 
-   Tap **[!UICONTROL Collection]** to only search for assets within collections.
+   Appuyez sur **[!UICONTROL Collection]** pour rechercher uniquement des ressources dans les collections.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Tap **[!UICONTROL View as]** to change how you view products - either **[!UICONTROL List View]**, **[!UICONTROL Column View]**, or **[!UICONTROL Card View]**.
+   Appuyez sur **[!UICONTROL Afficher comme]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Cochez la case pour sélectionner le fichier. La ressource s’affiche.
+1. Activez sur la coche pour sélectionner la ressource. La ressource s’affiche.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 
