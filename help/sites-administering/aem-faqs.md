@@ -8,7 +8,10 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc042696506bf1691c2eeffc6ab941be85fa274c
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '1354'
+ht-degree: 72%
 
 ---
 
@@ -47,7 +50,7 @@ If one requires the authors to manage projects as well, then the workaround is t
 Avant de créer un projet de traduction, créez une racine de langue et une copie de langue dans la racine.
 
 For example,
-Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Par la suite, créez une copie de langue de la page à partir du panneau de références et accédez à l’ `Create structure only` option `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
+Create a language root at `/content/geometrixx` with name as `fr_LU` (and title as French (Luxembourg)). Par la suite, créez une copie de langue de la page à partir du panneau des références et accédez à l’ `Create structure only` option dans `Create & Translate`. Enfin, créez un projet de traduction, puis ajoutez la copie de langue à la tâche de traduction.
 
 Pour plus d’informations, reportez-vous aux ressources supplémentaires ci-dessous :
 
@@ -69,11 +72,11 @@ Pour activer SSL par défaut, voir [SSL par défaut](/help/sites-administering/s
 
 Content Services est basé sur les modèles Sling et les développeurs AEM doivent fournir un profil de modèle Sling pour chaque composant exporté.
 
-Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html).
 
 Also, if the developers want to export a tree of components they can also implement the `ComponentExporter` and `ContainerExporter` interfaces as well as use the `ModelFactory` to iterate over the child components and return their model representation. Consultez les ressources ci-dessous :
 
-[1] Adobe- [Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
+[1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
 [2] [Apache Sling : Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 
@@ -85,7 +88,7 @@ Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide
 
 Please refer to [Understanding Reasons to Upgrade AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/upgrade-aem-article-understand.html) that describes high-level breakdown of key features for customers considering upgrading to the latest version of Adobe Experience Manager.
 
-## Assets {#assets}
+## Ressources {#assets}
 
 ### Why the Assets workflow repeats itself while uploading MP4 files (for example, using drag-and-drop method)? {#why-the-assets-workflow-repeats-itself-while-uploading-mp-files-for-example-using-drag-and-drop-method}
 
@@ -120,7 +123,7 @@ Pour configurer la fonction Statistiques sur les ressources pour Experience Mana
 
 #### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
 
-AEM fournit divers mécanismes pour vous permettre de personnaliser les consoles et la fonctionnalité de création de page de votre instance de création. Pour savoir comment créer une console personnalisée et modifier l’affichage par défaut d’une console, veuillez consulter la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
+AEM fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création. Pour savoir comment créer une console personnalisée et modifier l’affichage par défaut d’une console, veuillez consulter la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
@@ -144,10 +147,10 @@ Pour plus d’informations, veuillez consulter la rubrique [AEM Assets vs. AEM�
 
 Oui, un client utilisant WordPress peut utiliser Adobe Asset Picker pour sélectionner des images de son serveur AEM Assets et les ajouter aux publications sur son site WordPress.
 
-Pour plus d’informations, veuillez consulter la section [Sélecteur de ressources](../assets/search-assets.md#assetselector).
+Pour plus d’informations, veuillez consulter la section [Sélecteur de ressources](../assets/search-assets.md#assetpicker).
 
 #### Est-il possible d’étendre les facettes de recherche dans AEM Assets pour ajouter des prédicats supplémentaires ? {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
 
-Un déploiement à l’échelle de l’entreprise d’Adobe Experience Manager (AEM) Assets permet de stocker des quantités importantes de ressources. Vous pouvez ajouter des prédicats au formulaire par défaut ou utiliser un formulaire personnalisé qui comprend les facettes de votre choix.
+Un déploiement à l’échelle de l’entreprise d’Adobe Experience Manager (AEM) Assets permet de stocker des quantités importantes de ressources. Vous pouvez ajouter des prédicats au formulaire par défaut ou utiliser un formulaire personnalisé qui comprend les facettes de votre choix.
 
 Pour en savoir plus, consultez la section [Facettes de recherche](/help/assets/search-facets.md).
