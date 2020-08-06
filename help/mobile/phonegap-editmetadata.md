@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 translation-type: tm+mt
-source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 37%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
 
 The **Manage App** tile and &quot;Manage App&quot; page provides a means to view and edit application metadata. Les métadonnées d’application sont nécessaires pour publier une application dans la boutique d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. See the [Manage App Tile](/help/mobile/phonegap-app-details-tile.md) for further details on common and iOS metadata.
 
-## Modification des données d’application {#editing-the-app-data}
+## Modification des données de l’application {#editing-the-app-data}
 
 Pour modifier les métadonnées de l’application :
 
@@ -31,9 +34,9 @@ Pour modifier les métadonnées de l’application :
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Pour afficher ou modifier les détails en cliquant sur le bouton &quot;...&quot; dans le coin inférieur droit du volet **Gérer l’application** .
+1. Pour vue ou modifier des détails en cliquant sur le bouton &quot;...&quot; dans le coin inférieur droit du volet **Gérer l’application** .
 
-1. Entrez ou affichez les détails dans l’un des cinq onglets disponibles, comme illustré dans la figure ci-dessous.
+1. Saisissez ou vue les détails dans l’un des cinq onglets disponibles, comme illustré dans la figure ci-dessous.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -42,13 +45,13 @@ Pour modifier les métadonnées de l’application :
 Vous pouvez modifier les métadonnées courantes et IOS :
 
 * Sélectionnez l’onglet **Avancé** dans la page de description de l’application.
-* Modifiez ou affichez les métadonnées courantes et IOS. Pour plus de détails, voir les figures ci-dessous.
+* Modifiez ou vue les métadonnées courantes et IOS. Pour plus de détails, voir les figures ci-dessous.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
 
 ## Ajouter et supprimer des captures d&#39;écran {#add-and-remove-screenshots}
 
-Vous pouvez inclure des captures d’écran d’application au déploiement de métadonnées. Certains fournisseurs nécessitent des captures d’écran précises pour envoyer une application à leur boutique d’applications. Ces images doivent déjà figurer dans AEM Assets. Reportez-vous à la section [Sélecteur de ressources](../assets/search-assets.md#assetselector) pour transférer vos captures d’écran.
+Vous pouvez inclure des captures d’écran d’application au déploiement de métadonnées. Certains fournisseurs nécessitent des captures d’écran précises pour envoyer une application à leur boutique d’applications. Ces images doivent déjà figurer dans AEM Assets. Reportez-vous à la section [Sélecteur de ressources](../assets/search-assets.md#assetpicker) pour transférer vos captures d’écran.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -65,7 +68,7 @@ Pour ajouter une ressource en tant que capture d’écran :
 
 >[!NOTE]
 >
->La capture d’écran doit correspondre à la résolution d’écran du périphérique cible.
+>La capture d’écran doit correspondre à la résolution d’écran du périphérique de cible.
 
 ### Suppression de captures d’écran {#delete-screenshots}
 
@@ -89,5 +92,5 @@ Consultez les ressources suivantes pour en savoir plus sur les autres rôles de 
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 
-* [Développement pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/developing-in-phonegap.md)
+* [Développer pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/developing-in-phonegap.md)
 * [Administration de contenu pour Adobe PhoneGap Enterprise avec AEM](/help/mobile/administer-phonegap.md)
