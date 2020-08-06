@@ -3,9 +3,9 @@ title: Migration des ressources [!DNL Adobe Experience Manager Assets] en bloc.
 description: Describes how to bring assets into [!DNL Adobe Experience Manager], apply metadata, generate renditions, and activate them to publish instances.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1799'
 ht-degree: 66%
 
 ---
@@ -17,7 +17,7 @@ When migrating assets into [!DNL Adobe Experience Manager], there are several st
 
 ## Conditions préalables {#prerequisites}
 
-Before actually performing any of the steps in this methodology, please review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). La plupart des étapes, telles que la configuration des tâches simultanées maximales, améliorent considérablement la stabilité et les performances du serveur en charge. D’autres étapes, telles que la configuration d’un entrepôt de données basé sur les fichiers, sont beaucoup plus difficiles à effectuer une fois le système chargé avec des ressources.
+Before actually performing any of the steps in this methodology, review and implement the guidance in [Assets performance tuning tips](performance-tuning-guidelines.md). La plupart des étapes, telles que la configuration des tâches simultanées maximales, améliorent considérablement la stabilité et les performances du serveur en charge. D’autres étapes, telles que la configuration d’un entrepôt de données basé sur les fichiers, sont beaucoup plus difficiles à effectuer une fois le système chargé avec des ressources.
 
 >[!NOTE]
 >
