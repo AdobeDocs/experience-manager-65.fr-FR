@@ -3,7 +3,7 @@ title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 41%
@@ -58,7 +58,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 
 1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]** ou ouvrez un outil Adobe Analytics existant. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
 
-   ![Ajouter l’outil Analytics Adobe](assets/Add-Adobe-Analytics-Tool.png)
+   ![Outil Ajouter Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
    Sélectionnez des suites de rapports de production/intermédiaires, selon les besoins.
 
@@ -96,7 +96,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
              "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
              "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
              "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
-             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, please include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
+             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
        sObj.doPlugins = assetAnalytics.core.updateContextData;
