@@ -1,8 +1,8 @@
 ---
-title: Exportation de fragments d’expérience vers un Adobe Target
-seo-title: Exportation de fragments d’expérience vers un Adobe Target
-description: Exportation de fragments d’expérience vers un Adobe Target
-seo-description: Exportation de fragments d’expérience vers un Adobe Target
+title: Exportation de fragments d’expérience vers Adobe Target
+seo-title: Exportation de fragments d’expérience vers Adobe Target
+description: Exportation de fragments d’expérience vers Adobe Target
+seo-description: Exportation de fragments d’expérience vers Adobe Target
 uuid: 2df0faab-5d5e-4fc1-93b3-28b7e6f3c306
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,19 +11,19 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
 workflow-type: tm+mt
-source-wordcount: '1170'
-ht-degree: 48%
+source-wordcount: '1179'
+ht-degree: 47%
 
 ---
 
 
-# Exportation de fragments d’expérience vers un Adobe Target{#exporting-experience-fragments-to-adobe-target}
+# Exportation de fragments d’expérience vers Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de cette page nécessitent l’application d’AEM 6.5.3.0.
+>Certaines fonctionnalités de cette page nécessitent l&#39;application de AEM 6.5.3.0.
 >
 >6.5.3.0
 >
@@ -37,14 +37,15 @@ ht-degree: 48%
    >   
    * l’espace de travail par défaut.
    >   * un espace de travail nommé, spécifié dans la configuration Cloud.
->* AEM doit être [intégré à l’Adobe Target à l’aide des E/S](/help/sites-administering/integration-ims-adobe-io.md)Adobe.
+      >     **Remarque :** L’exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
+>* AEM doit être [intégré à Adobe Target en utilisant les E/S](/help/sites-administering/integration-ims-adobe-io.md)d&#39;Adobe.
 
 >
 >
 AEM 6.5.0.0 et 6.5.1.0 :
 >
->* Les fragments d’expérience AEM sont exportés dans l’espace de travail par défaut de l’Adobe Target.
->* AEM doit être intégré à l’Adobe Target conformément aux instructions de la section [Intégration à l’Adobe Target](/help/sites-administering/target.md).
+>* Les fragments d’expérience AEM sont exportés dans l’espace de travail par défaut de Adobe Target.
+>* AEM doit être intégré à Adobe Target selon les instructions de la section [Intégration à Adobe Target](/help/sites-administering/target.md).
 
 
 You can export [Experience Fragments](/help/sites-authoring/experience-fragments.md), created in Adobe Experience Manager (AEM), to Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
@@ -55,21 +56,21 @@ Il existe trois options de format pour exporter un fragment d’expérience vers
 * JSON : Prise en charge de la diffusion de contenu sans en-tête
 * HTML et JSON
 
-Les fragments d’expérience AEM peuvent être exportés vers l’espace de travail par défaut dans l’Adobe Target ou vers des espaces de travail définis par l’utilisateur pour l’Adobe Target. Ceci est effectué via les E/S Adobe, pour lesquelles AEM doit être [intégré à l’Adobe Target en utilisant les E/S](/help/sites-administering/integration-ims-adobe-io.md)Adobe.
+Les fragments d’expérience AEM peuvent être exportés vers l’espace de travail par défaut de Adobe Target ou vers des espaces de travail définis par l’utilisateur pour Adobe Target. Cela se fait par E/S d&#39;Adobe, pour lequel AEM doit être [intégré à Adobe Target à l&#39;aide d&#39;E/S](/help/sites-administering/integration-ims-adobe-io.md)d&#39;Adobe.
 
 >[!NOTE]
 >
->Les espaces de travail Adobe Target n&#39;existent pas dans l&#39;Adobe Target lui-même. Ils sont définis et gérés dans Adobe IMS (Identity Management System), puis sélectionnés pour une utilisation dans toutes les solutions à l’aide des intégrations d’E/S Adobe.
+>Les espaces de travail Adobe Target n&#39;existent pas dans Adobe Target lui-même. Ils sont définis et gérés dans l&#39;Adobe IMS (Identity Management System), puis sélectionnés pour une utilisation dans toutes les solutions à l&#39;aide d&#39;intégrations d&#39;E/S d&#39;Adobe.
 
 >[!NOTE]
 >
->Les espaces de travail d&#39;Adobe Target peuvent être utilisés pour permettre aux membres d&#39;une organisation (groupe) de créer et de gérer des offres et des activités pour cette organisation uniquement ; sans donner accès à d&#39;autres utilisateurs. Par exemple, les organisations spécifiques à un pays dans un contexte mondial.
+>Les espaces de travail Adobe Target peuvent être utilisés pour permettre aux membres d&#39;une organisation (groupe) de créer et de gérer des offres et des activités pour cette organisation uniquement ; sans donner accès à d&#39;autres utilisateurs. Par exemple, les organisations spécifiques à un pays dans un contexte mondial.
 
 >[!NOTE]
 >
 >Pour plus d&#39;informations, voir aussi :
 >
->* [Développement des Adobes Target](https://www.adobe.io/apis/experiencecloud/target.html)
+>* [Développement Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Composants principaux - Fragments d’expérience](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 
 >
@@ -80,11 +81,11 @@ Les fragments d’expérience AEM peuvent être exportés vers l’espace de tra
 
 >[!CAUTION]
 >
->Certaines fonctionnalités de cette page nécessitent l’application d’AEM 6.5.3.0.
+>Certaines fonctionnalités de cette page nécessitent l&#39;application de AEM 6.5.3.0.
 
 Plusieurs actions sont requises :
 
-1. Vous devez [intégrer AEM à l’Adobe Target en utilisant les E/S](/help/sites-administering/integration-ims-adobe-io.md)Adobe.
+1. Vous devez [intégrer AEM à Adobe Target à l&#39;aide des E/S](/help/sites-administering/integration-ims-adobe-io.md)d&#39;Adobe.
 2. Les fragments d’expérience sont exportés à partir de l’instance d’auteur AEM. Vous devez donc [configurer AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) sur l’instance d’auteur pour vous assurer que les références contenues dans le fragment d’expérience sont externalisées pour la diffusion Web.
 
    >[!NOTE]
@@ -134,11 +135,11 @@ Vous pouvez sélectionner les options obligatoires dans les **propriétés de pa
 
    >[!CAUTION]
    >
-   >Le domaine externaliseur est facultatif. Un externaliseur AEM est configuré lorsque vous souhaitez que le contenu exporté pointe vers un domaine de *publication* spécifique. Pour plus d’informations, voir [Configuration de l’Externalisateur](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de lien AEM.
+   >Le domaine externaliseur est facultatif. Un AEM externaliseur est configuré lorsque vous souhaitez que le contenu exporté pointe vers un domaine de *publication* spécifique. Pour plus d’informations, voir [Configuration de l’Externalisateur](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de lien AEM.
 
    Par exemple, pour un dossier :
 
-   ![Dossier - Cloud](assets/xf-target-integration-01.png "ServicesFolder - Cloud Service")
+   ![Dossier - Cloud](assets/xf-target-integration-01.png "ServicesFolder - Cloud Services")
 
 1. **Enregistrez et fermez**.
 
@@ -210,4 +211,4 @@ Pour éviter de tels problèmes :
 
       * L’offre sera probablement toujours affichée, car le code HTML du fragment d’expérience a été envoyé à la Cible.
       * Toute référence dans le fragment d’expérience peut ne pas fonctionner correctement si des ressources référencées ont également été supprimées dans AEM.
-   * Bien sûr, toute modification supplémentaire du fragment d’expérience est impossible, car le fragment d’expérience n’existe plus dans AEM.
+   * Bien sûr, toute modification supplémentaire du fragment d’expérience est impossible, car le fragment d’expérience n’existe plus en AEM.
