@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 95d9ed8a0ccfa7651b83058d337511dd6b15665f
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '3008'
+ht-degree: 86%
 
 ---
 
@@ -142,6 +145,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * **Créer un produit**
    * **Créer une variante de produit**
+
    ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
 
 1. Un assistant s’ouvre. Utilisez les onglets **Basique** et **Produit** afin de saisir les [attributs de produit](/help/sites-administering/concepts.md#product-attributes) pour le nouveau produit ou la nouvelle variante de produit.
@@ -166,7 +170,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 >
 >`/etc/commerce/products/...`
 >
->Cela signifie que, par défaut, elles sont bloquées par le [répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html). Configurez-les donc selon vos besoins.
+>Cela signifie que, par défaut, elles sont bloquées par le [répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html). Configurez-les donc selon vos besoins.
 
 #### Modification des informations sur les produits – IU optimisée pour les écrans tactiles {#editing-product-information-touch-optimized-ui}
 
@@ -175,6 +179,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) ;
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode).
+
    Sélectionnez l’icône **Afficher les données du produit** :
 
    ![chlimage_1-3](do-not-localize/chlimage_1-15.png)
@@ -199,6 +204,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * Accéder à la page produits
    * Modifier la page produits
+
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
 ### Rechercher des produits {#search-for-products}
@@ -251,7 +257,7 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
 1. Appuyez/cliquez sur **Ajouter**. Un nouvel espace réservé de ressource s’affiche.
-1. Appuyer/cliquer sur **Modifier **ouvre une boîte de dialogue qui vous permet de choisir un fichier.
+1. Appuyez/cliquez sur **Modifier **ouvre une boîte de dialogue qui vous permet de choisir un fichier.
 1. Sélectionnez la ressource que vous souhaitez ajouter.
 
    >[!NOTE]
@@ -323,7 +329,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 
 >[!NOTE]
 >
->Souvent, les informations sur les produits sont publiées par les pages qui y font référence. Par exemple, lorsque vous publiez la page X qui fait référence au produit Y, AEM vous demande si vous souhaitez également publier le produit Y.
+>Souvent, les informations sur les produits sont publiées par les pages qui y font référence. Par exemple, lors de la publication de la page X qui fait référence au produit Y, AEM vous demandera si vous souhaitez également publier le produit Y.
 >
 >Dans certains cas, AEM prend également en charge la publication directe à partir des données du produit.
 
@@ -332,6 +338,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 
    * les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) ;
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode).
+
    Sélectionnez l’icône **Modifier** ou **Annuler la publication** selon vos besoins :
 
    ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
@@ -340,7 +347,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 
 ### Flux de produit {#product-feed}
 
-L’intégration de Search&amp;Promote vous permet d’effectuer les opérations suivantes :
+L’intégration de Search &amp; Promote vous permet d’effectuer les opérations suivantes :
 
 * d’utiliser l’API eCommerce, indépendamment de la structure de référentiel et de la plateforme de commerce sous-jacentes ;
 * de tirer parti de la fonction de connecteur d’index de Search&amp;Promote pour constituer un flux de produit au format XML ;
@@ -379,7 +386,7 @@ Cliquez sur la zone réactive pour ouvrir une boîte de dialogue qui vous permet
 1. Accédez à la page à laquelle vous souhaitez ajouter le composant.
 1. Effectuez un glisser-déposer du composant dans la page.
 1. Effectuez un glisser-déposer d’une image dans le composant à partir du [navigateur des ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Vous pouvez :
+1. Vous pouvez effectuer l’une des actions suivantes :
 
    * cliquez sur le composant, puis sur l’icône Modifier
    * effectuer un double-clic lent.
@@ -398,7 +405,7 @@ Cliquez sur la zone réactive pour ouvrir une boîte de dialogue qui vous permet
 
 1. Modifiez et déplacez la forme selon vos besoins.
 1. Cliquez sur la forme.
-1. Cliquez sur l’icône Parcourir pour ouvrir le [Sélecteur de ressources](../assets/search-assets.md#assetselector).
+1. Cliquez sur l’icône Parcourir pour ouvrir le [Sélecteur de ressources](../assets/search-assets.md#assetpicker).
 
    >[!NOTE]
    >
@@ -517,6 +524,7 @@ Pour déployer un catalogue :
 
    * les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) ;
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode).
+
    Sélectionnez l’icône **Déployer les modifications** :
 
    ![](do-not-localize/chlimage_1-24.png)
@@ -587,6 +595,7 @@ Pour déployer un catalogue :
 
    * Ouvrez la page, puis cliquez sur le bouton Modifier pour ouvrir la boîte de dialogue Propriétés.
    * Sélectionnez la page dans la console Sites web, à l’aide du menu contextuel (qui s’ouvre généralement à l’aide du bouton droit de la souris) pour sélectionner **Propriétés** et pour ouvrir la boîte de dialogue Propriétés.
+
    Spécifiez le **type de promotion**, le **type de remise** et la **valeur de la remise**, ainsi que tout autre champ requis.
 
 1. Cliquez sur **OK** pour enregistrer.
@@ -638,7 +647,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 >
 >Souvenez-vous que, par défaut, AEM ne dispose pas des actions requises pour les fonctionnalités standard associées aux commandes, telles que le retour de marchandises, la mise à jour de l’état des commandes, la réalisation et la génération de bons de livraison. Il s’agit principalement d’un aperçu technologique.
 >
->La gestion des commandes génériques dans AEM a été conservée de base ; les champs disponibles dans l’assistant dépendent de l’échafaudage :
+>La gestion générique des commandes dans AEM a été maintenue de base ; les champs disponibles dans l’assistant dépendent de l’échafaudage :
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Si vous créez un modèle personnalisé, vous pouvez stocker davantage d’informations sur les commandes.
@@ -671,6 +680,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 
    * les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) ;
    * le [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode).
+
    Sélectionnez l’icône **Afficher les données de commande** :
 
    ![](do-not-localize/chlimage_1-15.png)
