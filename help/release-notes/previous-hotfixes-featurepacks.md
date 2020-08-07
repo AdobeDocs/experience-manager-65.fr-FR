@@ -1,9 +1,9 @@
 ---
-title: Notes de mise à jour des Service Pack précédents Adobe Experience Manager 6.5
+title: Notes de mise à jour du Service Pack précédent de Adobe Experience Manager 6.5
 description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Service Pack 3 et versions antérieures.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '8108'
 ht-degree: 36%
@@ -15,11 +15,11 @@ ht-degree: 36%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-L’Adobe Experience Manager 6.5.4.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, les améliorations et les performances des clients clés, la stabilité et les améliorations de sécurité, publiée depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur l&#39;Adobe Experience Manager 6.5.
+Adobe Experience Manager 6.5.4.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, des améliorations et des performances clés demandées par les clients, une stabilité et des améliorations de sécurité, publiée depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur Adobe Experience Manager 6.5.
 
-Voici quelques-unes des principales fonctionnalités et améliorations introduites dans l’Adobe Experience Manager 6.5.4.0 :
+Voici quelques-unes des principales fonctionnalités et améliorations introduites dans Adobe Experience Manager 6.5.4.0 :
 
-* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via la console d&#39;E/S Adobe.
+* Adobe Experience Manager Assets est désormais configuré avec Brand Portal via la console d’E/S d’Adobe.
 
 * Une nouvelle étape [Générer une sortie](../forms/using/aem-forms-workflow-step-reference.md) imprimable est désormais disponible pour les workflows Adobe Experience Manager Forms.
 
@@ -31,7 +31,7 @@ Voici quelques-unes des principales fonctionnalités et améliorations introduit
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.10.8.
 
-* Vous pouvez désormais synchroniser les sous-arborescences de contenu sélectif en mode ** Dynamic Media - Scene7 plutôt que toutes les sous-arborescences disponibles dans `content/dam`.
+* Vous pouvez désormais synchroniser des sous-arborescences de contenu sélectif en mode ** Contenu dynamique - Scene7 plutôt que de toutes les sous-arborescences disponibles dans `content/dam`.
 
 * L’intégration du modèle de données de formulaire avec le service Web SOAP prend désormais en charge les groupes de choix ou les attributs sur les éléments.
 
@@ -87,7 +87,7 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 * Le bouton permettant de déclencher le processus sur la page de collecte des ressources est désactivé (NPR-32471).
 
-* Un dossier sans nom est créé dans SPS (Scene7 Publishing System) lors du déplacement d’un fichier d’un dossier à un autre en Experience Manager avec la configuration Dynamic Media (NPR-32440).
+* Un dossier sans nom est créé dans SPS (Scene7 Publishing System) lors du déplacement d’un fichier d’un dossier à un autre dans le Experience Manager avec la configuration de Scene7 de Contenu multimédia dynamique (NPR-32440).
 
 * L&#39;action de déplacement de tous les actifs (à l&#39;aide de Sélectionner tout, puis de déplacer) vers un dossier contenant les actifs publiés échoue avec une erreur (NPR-32366).
 
@@ -119,11 +119,11 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 * La page de résultats de la recherche tactile dans l&#39;interface utilisateur (effectuée via Omnisearch) défile automatiquement vers le haut et perd la position de défilement de l&#39;utilisateur (NPR-31307).
 
-* La page des détails des ressources des fichiers PDF n’affiche pas les boutons d’action, à l’exception des boutons Collecte et Ajouter le rendu dans le Experience Manager exécuté en mode Scene7 (CQ-4286705).
+* La page des détails des ressources des fichiers PDF n’affiche pas les boutons d’action, à l’exception des boutons Collecte et Ajouter le rendu dans le Experience Manager s’exécutant en mode d’exécution Scene7 de Contenu multimédia dynamique (CQ-4286705).
 
 * Le traitement des ressources prend trop de temps lors du transfert par lots de Scene7 (CQ-4286445).
 
-* Le bouton Enregistrer n’importe pas la visionneuse à distance lorsque l’utilisateur n’a apporté aucune modification à l’éditeur de visionneuses dans le client Dynamic Media (CQ-4285690).
+* Le bouton Enregistrer n’importe pas la visionneuse à distance lorsque l’utilisateur n’a apporté aucune modification à l’éditeur de visionneuses dans le client de média dynamique (CQ-4285690).
 
 * La miniature de fichier 3D n’est pas instructive lorsqu’un modèle 3D pris en charge est assimilé à un Experience Manager (CQ-4283701).
 
@@ -131,7 +131,7 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 * Une hauteur de conteneur incorrecte d’un modèle 3D téléchargé prévisualisé dans la visionneuse 3D est observée sur la page de détails de la ressource (CQ-4283309).
 
-* L’éditeur de carrousel ne s’ouvre pas dans IE 11 en mode hybride Dynamic Media Experience Manager (CQ-4255590).
+* L’éditeur de carrousel ne s’ouvre pas dans IE 11 en mode hybride Contenu multimédia dynamique Experience Manager (CQ-4255590).
 
 * La sélection du clavier est bloquée dans la liste déroulante Courriel dans la boîte de dialogue Télécharger, dans les navigateurs Chrome et Safari (NPR-32067).
 
@@ -141,9 +141,9 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 * Le contrôle de la souris passe au champ de filtre précédent au lieu de rester dans le champ de filtre existant lors de la recherche de fichiers à l’aide du panneau Filtre (NPR-32538).
 
-* Balisage Platform : La recherche de balises en saisissant des balises dans les champs de balise affiche des balises en dehors des limites racines et ne respecte pas la propriété `rootPath` des champs de balise (NPR-31895).
+* Balisage de plateforme : La recherche de balises en saisissant des balises dans les champs de balise affiche des balises en dehors des limites racines et ne respecte pas la propriété `rootPath` des champs de balise (NPR-31895).
 
-* Interface utilisateur Platform : Le navigateur de chemins est rompu si un chemin non valide est ajouté dans le champ de texte (NPR-31884).
+* Interface utilisateur de la plate-forme : Le navigateur de chemins est rompu si un chemin non valide est ajouté dans le champ de texte (NPR-31884).
 
 * La notification est masquée derrière un menu collant lors de la sélection de la page (NPR-31628).
 
@@ -179,7 +179,7 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 ### Campaign Targeting {#campaign-targeting-6540}
 
-* La configuration du cloud de Cible échoue avec l’erreur d’obtention de la demande de mbox (CQ-4279880).
+* La configuration du cloud de cible échoue avec l’erreur d’obtention de la demande de mbox (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal-6540}
 
@@ -191,7 +191,7 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 * L’annulation de la publication d’un schéma de métadonnées renvoie un message d’erreur bien que le schéma soit supprimé du serveur principal.
 
-* L’image de Prévisualisation ne s’affiche pas pour un fichier publié (CQ-4285886).
+* L’image de prévisualisation ne s’affiche pas pour un fichier publié (CQ-4285886).
 
 * L’utilisateur ne peut pas publier ou annuler la publication de fichiers dont le nom contient un guillemet simple (CQ-4272686).
 
@@ -203,7 +203,7 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 * Le formulaire Créer un membre s’affiche en tant que page vierge (NPR-31997).
 
-* L&#39;utilisateur ne peut pas vue le rapport Analytics sur l&#39;instance d&#39;auteur (NPR-30913).
+* L’utilisateur ne peut pas vue le rapport Analytics sur l’instance d’auteur (NPR-30913).
 
 ### Chêne - Indexation et Requêtes {#oak-indexing-6540}
 
@@ -235,7 +235,7 @@ Pour obtenir une liste complète des fonctionnalités et des points saillants in
 
 * Workbench : Un message d’erreur s’affiche lors de l’utilisation du service Get PDF Properties for PDF Utilities (NPR-32150).
 
-* Sécurité du Document : Un fichier PDF protégé ne parvient pas à s&#39;ouvrir hors connexion avec l&#39;option DisableGlobalOfflineSynchronizationData définie sur True (NPR-32078).
+* Sécurité du document : Un fichier PDF protégé ne parvient pas à s&#39;ouvrir hors connexion avec l&#39;option DisableGlobalOfflineSynchronizationData définie sur True (NPR-32078).
 
 * Designer : Si l’option de balisage est activée, la bordure du sous-formulaire disparaît dans la sortie PDF générée (NPR-32547, NPR-31983, NPR-31950).
 
@@ -301,7 +301,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Les références de ressources dans les collections ne sont pas mises à jour lorsque les ressources référencées sont déplacées vers un autre emplacement, dans les cas où les mêmes ressources sont référencées par différentes collections par différents utilisateurs (NPR-31486).
 
-* Les balises IPTC Duplicata sont ajoutées aux métadonnées de fichier (NPR-31328).
+* Les balises IPTC duplicata sont ajoutées aux métadonnées de fichier (NPR-31328).
 
 * Le nombre de résultats de la recherche n&#39;est pas mis à jour correctement lorsqu&#39;une recherche est déclenchée à partir du rail de filtre (NPR-31316).
 
@@ -421,9 +421,9 @@ Remove one mention of this fix.
 
 * Les mises à jour de la configuration de la taille de la mémoire tampon pour le service HTTP basé sur Jetty ne sont pas enregistrées (NPR-30925).
 
-* QueryBuilder prend désormais en charge orderby ``fn:name()`` dans les requêtes xpath (NPR-31322).
+* QueryBuilder prend désormais en charge orderby `fn:name()` dans les requêtes xpath (NPR-31322).
 
-* L&#39;arborescence des activations de Duplicata est créée lors de la mise à niveau à partir de la version [!DNL Experience Manager] 6.3 (NPR-31513).
+* L&#39;arborescence des activations de duplicata est créée lors de la mise à niveau à partir de la version [!DNL Experience Manager] 6.3 (NPR-31513).
 
 * Les requêtes transférées ne conservent pas les en-têtes de réponse définis lors de l’authentification sling (NPR-30013).
 
@@ -431,7 +431,7 @@ Remove one mention of this fix.
 
 * Une erreur s’affiche lorsque vous joignez un fichier ZIP à une [!DNL Experience Manager Communities] publication en raison de différentes versions d’Apache POI et du lot Apache Tika (NPR-31018).
 
-* Le ``org.apache.sling.distribution.api`` lot est masqué dans le gestionnaire de configuration et n’est donc pas disponible pour les lots personnalisés (NPR-31720).
+* Le `org.apache.sling.distribution.api` lot est masqué dans le gestionnaire de configuration et n’est donc pas disponible pour les lots personnalisés (NPR-31720).
 
 ### Projets {#projects}
 
@@ -449,7 +449,7 @@ Remove one mention of this fix.
 * Lors de la création d’un dossier de contribution, un ou les deux sous-dossiers (NOUVEAU et PARTAGÉ) n’apparaissent pas dans le dossier de contribution (CQ-4282424).
 * Le système renvoie une exception si l’utilisateur tente de republier le dossier des contributions [!DNL Experience Manager] vers [!DNL Brand Portal] après avoir reçu de nouveaux actifs du dossier des contributions de [!DNL Brand Portal] fin (CQ-4279740).
 * La création d’un dossier de contribution dans un dossier de contribution (dossier imbriqué) est interdite pour éviter toute complexité (CQ-4278391).
-* Le système renvoie une exception lors du transfert de la liste [!DNL Brand Portal] utilisateur (.csv) importée de l’ [!DNL Experience Manager] Admin Console. Seuls les champs Courriel, Prénom et Nom du fichier .csv sont obligatoires (CQ-4278390).
+* Le système renvoie une exception lors du transfert de la liste [!DNL Brand Portal] utilisateur (.csv) importée du [!DNL Experience Manager] Admin Console. Seuls les champs Courriel, Prénom et Nom du fichier .csv sont obligatoires (CQ-4278390).
 
 ### Communities {#communities-6530}
 
@@ -534,7 +534,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * La fonctionnalité Ressources connectées a été améliorée afin d’ajouter la prise en charge de la récupération de documents à partir de déploiements DAM distants. Les auteurs de site peuvent désormais rechercher et filtrer les types de documents pris en charge dans l’outil Recherche de contenu. Les documents distants peuvent être ajoutés au composant Télécharger sur les pages web. Voir [Utilisation des ressources connectées](../assets/use-assets-across-connected-assets-instances.md).
 
-* filtres de type EnhanceDocument avec plus de types MIME pour prendre en charge les options à plusieurs valeurs.
+* Filtres de type EnhanceDocument avec plus de types MIME pour prendre en charge les options à plusieurs valeurs.
 * Un processus de retraitement externe pour la prise en charge de ressources multiples a été mis en place.
 * Optimisation [!DNL Dynamic Media] des performances en utilisant les filtres de ressources par défaut pour la réplication.
 * Les options de recadrage/rotation des fichiers ont été restaurées pour DMS7.
@@ -574,7 +574,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492 : Correctif pour CQ-4273651
 * Adding the [!DNL Dynamic Media]–Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641 : correctif pour CQ-4275962
 * Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490 : correctif pour CQ-4273614
-* [!DNL Dynamic Media]: Ajouté des filtres par défaut pour exclure les ressources du noeud de [!DNL Experience Manager] publication. NPR-30538 : correctif pour CQ-4274678
+* [!DNL Dynamic Media]: ajouté des filtres par défaut pour exclure les ressources de la réplication sur le noeud de [!DNL Experience Manager] publication. NPR-30538 : correctif pour CQ-4274678
 * Un processus de retraitement externe a été mis en place pour la prise en charge de ressources multiples afin d’autoriser le dossier comme charge utile. Le workflow comporte deux étapes : retraitement des fichiers sans poignées via un mappage de métadonnées à l’étape suivante et retéléchargement de tous les fichiers sans poignée de ressources vers S7 dans une seule tâche IPS. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489 : correctif pour CQ-4272903
 * Le téléchargement d’un fichier CSV incorrect après un fichier CSV correct efface le fichier CSV correct. Correctif pour CQ-4277694, CQ-4277814
 * L’icône incorrecte spécifique aux dossiers de contribution est à supprimer. Correctif pour CQ-4277580
@@ -955,7 +955,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Forms - Document Services - Inclus
 
-* OSGi uniquement : Ajouté un nouvel attribut PAGECOUNT dans Output et Forms Service. NPR-28922 : correctif pour CQ-4270870
+* OSGi uniquement : ajouté un nouvel attribut PAGECOUNT dans Output et Forms Service. NPR-28922 : correctif pour CQ-4270870
 * OSGi uniquement : Activation de la prise en charge de la création de fichiers PDF statiques à l’aide de Forms Service. NPR-28572 : correctif pour CQ-4270869
 * Autorisations activées sur XMLForm.exe pour les administrateurs et les utilisateurs racines. NPR-29237 : correctif pour CQ-4267080
 
