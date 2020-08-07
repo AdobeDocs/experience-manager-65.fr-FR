@@ -1,12 +1,12 @@
 ---
 title: 'Configuration des modules externes d’éditeur de texte enrichi '
-description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi d’Adobe Experience Manager pour activer des fonctionnalités individuelles.
+description: Découvrez comment configurer les modules externes Adobe Experience Manager Rich Text Editor pour activer des fonctionnalités individuelles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
-source-wordcount: '4400'
-ht-degree: 96%
+source-wordcount: '4397'
+ht-degree: 95%
 
 ---
 
@@ -607,7 +607,7 @@ Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de
 >[!NOTE]
 The message `Spell checking failed` is seen if a check is attempted for a language that is not installed. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
-Une installation AEM standard comprend les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
+Une installation AEM standard inclut les dictionnaires pour l&#39;anglais américain (`en_us`) et l&#39;anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -731,7 +731,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
       * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
-   * Tableau des **protocoles** valides (dont https://, https://, file://, mailto:, entre autres)
+   * Array of valid **protocols** (including `https://`, `https://`, `file://`, and `mailto:` amongst others)
 
       * **Nom** `protocols`
       * **Type** `String[]`
