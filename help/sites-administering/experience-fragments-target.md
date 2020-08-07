@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
+source-git-commit: e6d02717811ac78b77dc459814941d654e94733f
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 47%
@@ -37,15 +37,17 @@ ht-degree: 47%
    >   
    * l’espace de travail par défaut.
    >   * un espace de travail nommé, spécifié dans la configuration Cloud.
-      >     **Remarque :** L’exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
->* AEM doit être [intégré à Adobe Target en utilisant les E/S](/help/sites-administering/integration-ims-adobe-io.md)d&#39;Adobe.
+   >   * **Remarque :** L’exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
+>
+>* aem doit être [intégré à Adobe Target en utilisant les E/S](/help/sites-administering/integration-ims-adobe-io.md)d&#39;Adobe.
 
 >
 >
-AEM 6.5.0.0 et 6.5.1.0 :
+
+aem 6.5.0.0 et 6.5.1.0 :
 >
 >* Les fragments d’expérience AEM sont exportés dans l’espace de travail par défaut de Adobe Target.
->* AEM doit être intégré à Adobe Target selon les instructions de la section [Intégration à Adobe Target](/help/sites-administering/target.md).
+>* aem doit être intégré à Adobe Target selon les instructions de la section [Intégration à Adobe Target](/help/sites-administering/target.md).
 
 
 You can export [Experience Fragments](/help/sites-authoring/experience-fragments.md), created in Adobe Experience Manager (AEM), to Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
@@ -92,7 +94,7 @@ Plusieurs actions sont requises :
    >
    >Pour la réécriture de liens, non couverte par le format par défaut, il existe un [fournisseur de réécriture de liens des fragments d’expérience](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Cela vous permet de développer des règles personnalisées pour votre instance.
 
-## Ajouter la configuration de Cloud {#add-the-cloud-configuration}
+## ajouter la configuration de Cloud {#add-the-cloud-configuration}
 
 Avant d’exporter un fragment, vous devez ajouter la **configuration cloud** pour **Adobe Target** au fragment ou au dossier. Cela vous permet également de :
 
