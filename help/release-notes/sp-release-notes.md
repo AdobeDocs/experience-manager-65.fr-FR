@@ -4,9 +4,9 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
+source-git-commit: ca965d8495c0460b2b6bc5e08d8818b91f9fcdee
 workflow-type: tm+mt
-source-wordcount: '4522'
+source-wordcount: '4531'
 ht-degree: 7%
 
 ---
@@ -79,6 +79,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 * Lorsqu’un utilisateur copie et colle un Conteneur de mise en page sur la même page, les composants d’un Conteneur de mise en page ne s’affichent pas (NPR-33648).
 * La vérification d&#39;intégrité du répartiteur affiche un message d&#39; `Invalid cookie header` avertissement dans les fichiers journaux (NPR-33629).
 * XSS reflété dans PreferencesServlet (NPR-33438).
+* Les utilisateurs anonymes peuvent accéder aux fonctionnalités CRX DE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -136,7 +137,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Le menu du rail de gauche est maintenant accessible. Les lecteurs d&#39;écran annoncent à juste titre la fonctionnalité et l&#39;objectif de l&#39;extension du menu (NPR-33068).
 
-* La zone de Liste et de nombreux autres éléments de l’interface utilisateur sont désormais accessibles aux utilisateurs de lecteurs d’écran non voyants. Les lecteurs d’écran annoncent les informations suivantes (NPR-33040) :
+* La zone de liste et de nombreux autres éléments de l’interface utilisateur sont désormais accessibles aux utilisateurs de lecteurs d’écran non voyants. Les lecteurs d’écran annoncent les informations suivantes (NPR-33040) :
 
    * si la saisie de l’utilisateur est requise sur un élément avant l’envoi du formulaire.
    * si un élément n’est pas modifiable.
@@ -182,7 +183,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 [!DNL Adobe Experience Manager] 6.5.5.0 Le module Ressources résout les problèmes suivants :
 
-* [!UICONTROL L’option Début] de la boîte de dialogue [!UICONTROL Créer un flux de travail] pour les ressources d’une collection est désactivée, ce qui empêche le déclenchement du flux de travail (NPR-32471).
+* [!UICONTROL L’option début] de la boîte de dialogue [!UICONTROL Créer un flux de travail] pour les ressources d’une collection est désactivée, ce qui empêche le déclenchement du flux de travail (NPR-32471).
 
 * Lors de l’utilisation d’une fenêtre contextuelle en cascade dans des schémas de métadonnées, lors de la sélection et de l’enregistrement d’une option déroulante contenant une apostrophe (dans la liste déroulante enfant), l’option d’apostrophe sélectionnée disparaît après la réouverture des [!UICONTROL propriétés] de la ressource (NPR-32649).
 
@@ -220,7 +221,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * La création d’une configuration Contenu multimédia dynamique sur un Experience Manager fonctionne, mais dans l’interface utilisateur, rien ne se passe lorsque vous sélectionnez Enregistrer (CQ-4292442).
 
-* La Prévisualisation des fichiers vidéo F4V ne fonctionne pas dans la lecture progressive sur Safari/Mac (CQ-4289844).
+* La prévisualisation des fichiers vidéo F4V ne fonctionne pas dans la lecture progressive sur Safari/Mac (CQ-4289844).
 
 * Un dossier supplémentaire est créé lors du recadrage intelligent d’un fichier se trouvant dans un dossier parent dont le nom contient un caractère point `.` (CQ-4289337).
 
@@ -273,7 +274,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les balises traduites ne sont pas importées en Experience Manager à partir de services de traduction tiers (NPR-33154).
 * La page de configuration de traduction affiche un fournisseur de traduction incorrect par rapport à celui utilisé pour la traduction (NPR-32971).
-* Ajouter un dossier de fragments d’expérience à un projet de traduction existant crée un nouveau projet (NPR-32843).
+* ajouter un dossier de fragments d’expérience à un projet de traduction existant crée un nouveau projet (NPR-32843).
 * Une `NullPointerException` erreur s&#39;affiche dans les journaux d&#39;exécution d&#39;une tâche de traduction (NPR-32628).
 
 ### WCM {#wcm-6550}
@@ -286,7 +287,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Removing a published metadata schema from [!DNL Brand Portal] results in an error (CQ-4292063).
 * Si un administrateur configure la version [!DNL Experience Manager Assets] 6.5.4 avec le portail de marque via Adobe Developer Console, l’ [!DNL Brand Portal] utilisateur ne peut pas publier la ressource d’un dossier de contribution de [!DNL Brand Portal] à [!DNL Experience Manager] (NPR-33046).
-* Réplication Duplicata des dossiers parents à l’origine de conflits (NPR-33001).
+* Réplication duplicata des dossiers parents à l’origine de conflits (NPR-33001).
 
 ### [!DNL Communities] {#communities-6550}
 
@@ -340,7 +341,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 >[!NOTE]
 >
->Adobe ne recommande pas de supprimer ou de désinstaller le package Adobe Experience Manager 6.5.5.0.
+>adobe ne recommande pas de supprimer ou de désinstaller le package Adobe Experience Manager 6.5.5.0.
 
 ### Installation du Service Pack {#install-service-pack}
 
@@ -348,13 +349,13 @@ Effectuez les étapes suivantes pour installer le Service Pack sur une instance 
 
 1. Téléchargez le Service Pack depuis [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip).
 
-1. Ouvrez Package Manager et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package. Pour savoir comment l’utiliser, voir [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html).
+1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. Pour savoir comment l’utiliser, voir [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Select the package and click **[!UICONTROL Install]**.
 
 >[!NOTE]
 >
->La boîte de dialogue de l’interface utilisateur de Package Manager se ferme parfois lors de l’installation du Service Pack. Adobe vous recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de vous assurer que l&#39;installation est réussie. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
+>La boîte de dialogue de l’interface utilisateur de Package Manager se ferme parfois lors de l’installation du Service Pack. adobe vous recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de vous assurer que l&#39;installation est réussie. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Installation automatique**
 
