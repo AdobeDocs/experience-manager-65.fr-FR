@@ -21,7 +21,7 @@ ht-degree: 60%
 
 # Paramètres de configuration OSGi{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique des AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
 OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés*&quot;.
 
@@ -39,19 +39,19 @@ Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont
 
 >[!NOTE]
 >
->L’outil OSGi Configuration Diff, qui fait partie des outils [](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, peut être utilisé pour liste des configurations OSGi par défaut.
+>L&#39;outil OSGi Configuration Diff, qui fait partie des outils [](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, peut être utilisé pour liste des configurations OSGi par défaut.
 
 >[!NOTE]
 >
 >D’autres lots peuvent être nécessaires pour des zones spécifiques de fonctionnalité dans AEM. Dans ce cas, les informations de configuration figurent sur la page liée à la fonctionnalité en question.
 
-**Configuration du module d’écoute** du Événement de réplication AEM :
+**aem Réplication Événement Listener** Configurer :
 
 * Modes d&#39; **exécution**, dans lesquels les événements de réplication seront distribués aux auditeurs. Par exemple, s’il est défini comme auteur, il s’agit du système qui &quot;lance&quot; la réplication.
 
 * Le mode d&#39;exécution **Publication** doit être ajouté si le code du projet traite des événements de réplication (réplication inverse) dans un environnement de publication. Par exemple, lorsque le répartiteur est utilisé pour vider de l’environnement de publication ou lorsque la réplication standard vers d’autres instances de publication se produit.
 
-**Configuration de l’écouteur** de modification du référentiel AEM :
+**aem Repository change listener** Configurer :
 
 * Les **chemins**, emplacements pour écouter les événements du référentiel prêts à être distribués.
 
@@ -90,7 +90,7 @@ Pour plus d’informations, reportez-vous à [Journalisation AEM](/help/sites-de
 * **Taille**de la file d&#39;attente, taille maximale de la file d&#39;attente de thread si le pool est épuisé.
 La valeur recommandée est `-1` car la file d’attente est définie sur illimitée ; si une limite est définie, des pertes peuvent survenir lorsqu&#39;elle est dépassée.
 
-* La modification de ces paramètres peut améliorer les performances dans les scénarios présentant un grand nombre de événements ; par exemple, une utilisation intensive de la gestion des actifs numériques AEM ou du flux de travail.
+* La modification de ces paramètres peut améliorer les performances dans les scénarios présentant un grand nombre de événements ; par exemple, une utilisation importante de la gestion des actifs numériques AEM ou du flux de travail.
 * Les valeurs spécifiques à votre scénario doivent être établies à l’aide de tests.
 * Ces paramètres peuvent affecter les performances de votre instance. Ne les modifiez donc pas sans raison et sans considération.
 
@@ -108,11 +108,11 @@ Ne désactivez pas le JSON.
 
 Certains paramètres peuvent nuire aux performances et doivent être désactivés dans la mesure du possible, en particulier pour une instance de production. 
 
-* La **marchine virtuelle source** et la **machine virtuelle cible** définissent la version JDK utilisée comme mode d’exécution JVM
+* La **machine virtuelle source** et la **machine virtuelle cible** définissent la version du JDK utilisée comme mode d’exécution JVM
 
 * Pour les instances de production :
 
-   * Désactivez l’option **Générer les informations de débogage**
+   * Désactivez **Generate Debug Info (Générer les informations de débogage)**
 
 **Programme d&#39;installation** JCR d&#39;Apache Sling Ces paramètres n&#39;ont probablement pas besoin d&#39;être configurés, mais peuvent s&#39;avérer utiles lors du développement ou du débogage. Par exemple, le dossier d’installation peut être utile pour archiver/extraire ou créer un module.
 
@@ -124,7 +124,7 @@ Certains paramètres peuvent nuire aux performances et doivent être désactivé
 
 * **Intervalle** de nouvelle tentative, Reprises **** maximales, Tâches **parallèles** maximales, **Reconnaître le temps d’attente**, entre autres.
 
-* La modification de ces paramètres peut améliorer les performances dans les scénarios comportant un grand nombre de tâches ; par exemple, une utilisation intensive de la gestion des actifs numériques et des Workflows AEM.
+* La modification de ces paramètres peut améliorer les performances dans les scénarios comportant un grand nombre de tâches ; par exemple, une utilisation intensive de la gestion des actifs numériques AEM et des Workflows.
 * Les valeurs spécifiques à votre scénario doivent être établies à l’aide de tests.
 * Ne modifiez pas ces paramètres sans raison, mais modifiez-les uniquement après mûre réflexion.
 
@@ -132,7 +132,7 @@ Certains paramètres peuvent nuire aux performances et doivent être désactivé
 
 Cela concerne surtout les instances de production :
 
-* Désactivez **Generate Debug Info (Générer des informations de débogage)**
+* Désactivez **Generate Debug Info (Générer les informations de débogage)**
 * Désactivez **Keep Generated Java (Conserver le Java généré)**
 * Désactivez **Mapped Content (Contenu mappé)**
 * Désactivez **Display Source Fragments (Afficher les fragments source)**
@@ -264,7 +264,7 @@ When creating a new configuration, do not make changes to the factory configurat
 * **Clé d’API**
 * **URL enregistrée**
 
-**Gestionnaire** de bibliothèques HTML Granite Adobe Configurez cette option pour contrôler la gestion des bibliothèques client (css ou js) ; par exemple, la façon dont la structure sous-jacente est vue.
+**Gestionnaire** de bibliothèques HTML Granite Adobe Configurez cette option pour contrôler la gestion des bibliothèques clientes (css ou js); par exemple, la façon dont la structure sous-jacente est vue.
 
 * Pour les instances de production :
 
@@ -277,16 +277,16 @@ When creating a new configuration, do not make changes to the factory configurat
 
    * Désactivez l’option **Minify (Réduire)**
    * Activez l’option **Debug (Déboguer)** pour séparer les fichiers du débogage et de l’utilisation avec Firebug. 
-   * Activez l’option **Timing (Minutage)** si le minutage vous interesse.
+   * Activez l’option **Timing (Minutage)** si le minutage vous intéresse.
    * Activez la console **de débogage** pour voir les messages de journal de la console JS. 
 
 >[!CAUTION]
 >
->Lorque vous changez le paramètre sur **Minify (Réduire)** ou **Gzip**, vous devez également supprimer le contenu de `/var/clientlibs`. Il s’agit d’une version mise en cache des clientlibs, qui sera recréée lors de la prochaine demande. 
+>Lorsque vous changez le paramètre sur **Minify (Réduire)** ou **Gzip**, vous devez également supprimer le contenu de `/var/clientlibs`. Il s’agit d’une version mise en cache des clientlibs, qui sera recréée lors de la prochaine demande. 
 
 >[!NOTE]
 >
->Ce paramètre est automatiquement configuré pour les instances de production si vous utilisez le [mode prêt pour la production](/help/sites-administering/production-ready.md). 
+>Ce paramètre est automatiquement configuré pour les instances de production si vous exécutez AEM en [mode prêt pour la production](/help/sites-administering/production-ready.md).
 
 **Gestionnaire** d&#39;authentification d&#39;en-tête HTTP Day CQ pour la méthode d&#39;authentification de base de la requête HTTP.
 
@@ -314,7 +314,7 @@ Lorsque vous utilisez des [groupes d’utilisateurs fermés](/help/sites-adminis
 
 **Mappage** racine Day CQ Configuration :
 
-* **Chemin d’accès** de la Cible pour définir à quel emplacement une requête vers &quot; `/`&quot; sera redirigée.
+* **Chemin d’accès** de la cible pour définir à quel emplacement une requête vers &quot; `/`&quot; sera redirigée.
 
 Il existe deux interfaces utilisateur disponibles dans AEM :
 
@@ -339,7 +339,7 @@ En utilisant le mappage racine d’AEM, vous pouvez configurer l’IU que vous s
 >
 >Pour une installation standard, l’IU optimisée pour les écrans tactiles est l’UI par défaut.
 
-**Gestionnaire** d’authentification unique Granite Adobe Configuration des détails de l’authentification unique (SSO) ; elles sont souvent nécessaires dans les configurations des auteurs d’entreprise, souvent conjointement avec LDAP.
+**Gestionnaire** d&#39;authentification SSO Granite Adobe Configuration des détails de la connexion unique (SSO); elles sont souvent nécessaires dans les configurations des auteurs d’entreprise, souvent conjointement avec LDAP.
 
 Différentes propriétés de configuration sont disponibles :
 
@@ -356,7 +356,7 @@ La valeur par défaut est `0`.
 * **Nom des paramètres** Les noms des paramètres de requête pouvant fournir l’identifiant utilisateur.
 
 * **La carte utilisateur** Pour les utilisateurs sélectionnés, le nom d’utilisateur extrait de la requête HTTP peut être remplacé par un nom différent dans l’objet des informations d’authentification. Le mappage est défini ici. Si le nom d’utilisateur 
-`admin` s’affiche de chaque côté de la carte, le mappage est ignoré. N’oubliez pas que le caractère « = » doit tre précédé de « \ ».
+`admin` s’affiche de chaque côté de la carte, le mappage est ignoré. N’oubliez pas que le caractère « = » doit être précédé de « \ ».
 
 * **Format** indique le format dans lequel l’identifiant utilisateur est fourni. Utilisation:
 
@@ -381,13 +381,13 @@ The other modes can be accessed from the sidekick, or the suffix `?wcmmode=disab
 
 **Configurateur** du vérificateur de liens WCM Day CQ Configuration :
 
-* **Liste de configuration des réécritures** pour specifier une liste d’emplacements pour les configurations des vérifications de liens basées sur le contenu. Les configurations peuvent étre basées sur un mode d’exécution ; c’est pour cela qu’il est important de distinguer les environnement d’auteur et de publication, vu que les paramètre de vérification de lien peuvent varier de l’un à l’autre.
+* **Liste de configuration des réécritures** pour spécifier une liste d’emplacements pour les configurations des vérifications de liens basées sur le contenu. Les configurations peuvent être basées sur un mode d’exécution ; c’est pour cela qu’il est important de distinguer les environnement d’auteur et de publication, étant donné que les paramètre de vérification de lien peuvent varier de l’un à l’autre.
 
 **Processeur** de page WCM Day CQ Configuration :
 
 * **Paths (chemins d’accès)**, une liste d’emplacements où le système détecte des modifications de page avant de déclencher `jcr:Event`.
 
-**Suivi des impressions** de page Adobe Pour une instance d’auteur configurée :
+**adobe Page Impressions Tracker** Pour une instance d&#39;auteur configurée :
 
 * **sling.auth.requirements**: définissez la valeur de cette propriété sur `-/libs/wcm/stats/tracker`
 
@@ -459,16 +459,16 @@ Permet de contrôler l’analyseur HTML pour le module de réécriture CQ.
 
 Comme c’est une configuration d’usine, plusieurs instances peuvent être configurées.
 
-**Service** Adobe CQ Media DPS Sessions Gérez les sessions DPS à utiliser avec les publications.
+**Service** Sessions DPS Media Adobe CQ Gérez les sessions DPS à utiliser avec les publications.
 
 Vous pouvez notamment définir `dps.session.service.url.name` : la valeur par défaut est définie sur [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
-**CDN Rewriter** La communication entre AEM et un CDN doit être assurée afin que les ressources/binaires soient distribués à l’utilisateur final de manière sécurisée. Cela implique deux opérations :
+**CDN Rewriter** La communication entre l’AEM et un CDN doit être assurée afin que les fichiers/binaires soient distribués à l’utilisateur final de manière sécurisée. Cela implique deux opérations :
 
 * Accédez à la ressource AEM via CDN la toute première fois (ou après son expiration dans le cache).
 * Accédez à la ressource mise en cache dans le CDN en toute sécurité, car une fois que la ressource est mise en cache dans le CDN, la demande ne sera pas envoyée à AEM et tous les utilisateurs qui ont accès à cette ressource doivent être servis à partir du CDN.
 
-AEM propose un module de réécriture pour réécrire les URL des ressources internes en des URL CDN externes. Il réécrit les liens devant être transmis au CDN avec une signature JWS, ainsi qu’un délai d’expiration pour pemettre à la ressource d’être accessible en toute sécurité. Cettre fonctionnalité doit être utilisée sur les instance d’auteur.
+AEM propose un module de réécriture pour réécrire les URL des ressources internes en des URL CDN externes. Il réécrit les liens devant être transmis au CDN avec une signature JWS, ainsi qu’un délai d’expiration pour permettre à la ressource d’être accessible en toute sécurité. Cette fonctionnalité doit être utilisée sur les instance d’auteur.
 
 Le flux global est le suivant :
 
