@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 97%
@@ -450,7 +450,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://docs.adobe.com/con
 
    Si aucune suite de rapports n’est disponible, votre administrateur Adobe Analytics ou vous-même devez en créer une avant de poursuivre la configuration.
 
-   Voir [Rapports et suites de rapports](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/analytics-basics/ref-reports-report-suites.html) et [Création d’une suite de rapports](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-console/create-report-suite.html).
+   Voir [Rapports et suites de rapports](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) et [Création d’une suite de rapports](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-console/create-report-suite.html).
 
    Dans Adobe Analytics, les suites de rapports sont gérées sous **[!UICONTROL Admin > Suites de rapports]**.
 
@@ -464,7 +464,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://docs.adobe.com/con
 
    Il est possible d’utiliser n’importe quel type de variable pris en charge par Adobe Analytics. La décision concernant le type de variable (tel que [props] de trafic personnalisé et [eVar] de conversion) doit être motivée par les besoins spécifiques à votre implémentation Analytics.
 
-   Voir [Présentation de props et eVar](https://docs.adobe.com/content/help/fr-FR/analytics/implementation/analytics-basics/traffic-props-evars/props-evars.html).
+   Voir [Présentation de props et eVar](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html).
 
    Aux fins de cette documentation, seule une variable de trafic personnalisé (props) sera utilisée, car elle sera disponible dans un rapport Analytics quelques minutes après qu’une action a eu lieu sur une page web.
 
@@ -660,7 +660,7 @@ La publication d’une bibliothèque implique les deux étapes suivantes :
 Conditions préalables :
 
 * AEM exécute les instances d’auteur et de publication.
-* Le noeud d’auteur AEM est configuré en mode d’exécution Dynamic Media - Scene7 (dynamicmedia_s7)
+* aem noeud d’auteur est configuré dans Contenu multimédia dynamique - Mode d’exécution Scene7 (dynamicmedia_s7)
 * Les composants WCM Dynamic Media sont activés dans AEM Sites.
 
 La configuration d’AEM comprend les deux étapes principales suivantes :
@@ -839,7 +839,7 @@ Par exemple, `https://ims-na1.adobelogin.com/`
 1. Sur la page **[!UICONTROL Production]** (3/3 pages) de la fenêtre **[!UICONTROL Créer une configuration Adobe Launch]**, si nécessaire, corrigez l’URI de production auto-renseigné de la même manière que sur la page **[!UICONTROL Évaluation]** précédente.
 1. Près du coin supérieur droit, cliquez sur **[!UICONTROL Créer]**.
 
-   Votre nouvelle configuration Adobe Launch Cloud est maintenant créée et répertoriée en regard de votre site Web, comme dans l’exemple suivant :
+   Votre nouvelle configuration de Adobe Launch Cloud est maintenant créée et répertoriée en regard de votre site Web, comme dans l’exemple suivant :
 
 1. Sélectionnez votre nouvelle configuration du cloud Adobe Launch (une coche apparaît à gauche du titre de la configuration lorsqu’elle est sélectionnée). Dans la barre d’outils, cliquez sur **[!UICONTROL Publier]**.
 
