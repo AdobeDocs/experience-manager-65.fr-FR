@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: 636224c2ea165e43f8979797926fd05197a15905
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 74%
+source-wordcount: '931'
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Sign autorise les processus de signature électronique pour les formulaire
 
 Dans un scénario Adobe Sign et de formulaires adaptatifs standard, un utilisateur remplit un formulaire adaptatif pour effectuer une **demande de service**. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le prestataire de services passe en revue la demande et utilise Adobe Sign pour marquer la demande approuvée. Pour activer les processus de signature électronique similaires, vous pouvez intégrer Adobe Sign à AEM Forms.
 
-Pour utiliser Adobe Sign avec des AEM Forms, configurez Adobe Sign en AEM cloud services :
+Pour utiliser Adobe Sign avec AEM Forms, configurez Adobe Sign dans AEM Cloud Services :
 
 ## Conditions préalables {#prerequisites}
 
@@ -65,7 +65,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    * widget_write
    * workflow_read
 
-   Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application Adobe Sign et l’obtention des clés, voir [Configurer les paramètres oAuth pour la documentation](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) dans la documentation du développeur.
+   Pour obtenir des informations détaillées sur la configuration des paramètres OAuth pour une application Adobe Sign et l’obtention des clés, voir [Configurer les paramètres oAuth pour la documentation](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) dans la documentation du développeur.
 
    ![Configuration OAuth](assets/oauthconfig_new.png)
 
@@ -112,6 +112,6 @@ L’intervalle par défaut pour synchroniser l’état d’Adobe Sign est désor
 ## Related Articles {#related-articles}
 
 * [Utilisation d’Adobe Sign dans un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md)
-* [Utilisation de Adobe Sign avec des AEM Forms (vidéo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Utilisation de Adobe Sign avec AEM Forms (vidéo)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
 * [Incorporation d’Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 
