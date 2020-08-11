@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 8%
 
 ---
 
@@ -20,27 +23,27 @@ source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ## Présentation {#overview}
 
-Pour les communautés AEM, plusieurs rapports peuvent être accessibles de plusieurs manières à partir de l’auteur   de l’.
+Pour AEM Communities, divers rapports peuvent être consultés de plusieurs manières depuis l’environnement auteur.
 
 En général, les différents rapports sont les suivants :
 
 * [Rapport des affectations](#assignments-report)
 
-   Dans le cas d’une communauté [d’](/help/communities/overview.md#enablement-community)activation, fournit un aperçu des progrès des apprenants sur leurs affectations, y compris un score associé lors de la mise en oeuvre de la norme SCORM.
+   Pour une communauté [d’](/help/communities/overview.md#enablement-community)activation, fournit une vue d’ensemble des progrès des apprenants sur leurs tâches, y compris un score associé si la mise en oeuvre de la norme SCORM est mise en oeuvre.
 
 * [Rapport des vues](#views-report)
 
-   Fournit un tableau des  de contenu par les membres de la communauté et les du site pour tout site communautaire.
+   Fournit un tableau des vues de contenu par les membres de la communauté et les visiteurs du site pour tout site communautaire.
 
 * [Rapport des publications](#posts-report)
 
-   Fournit un tableau des différents types de publications par les membres de la communauté sur n’importe quel site de la communauté.
+   Fournit un graphique des différents types de publications par les membres de la communauté sur n’importe quel site de la communauté.
 
-Lorsque [Adobe Analytics est activé](/help/communities/sites-console.md#analytics), les rapports incluent le nombre de , de lectures, de commentaires et d’évaluations pour chaque ressource d’activation au fil du temps.
+Lorsque [Adobe Analytics est activé](/help/communities/sites-console.md#analytics), les rapports incluent le nombre de vues, de lectures, de commentaires et d’évaluations pour chaque ressource d’activation au fil du temps.
 
 Les rapports tabulaires peuvent être exportés au format .csv pour un traitement ultérieur.
 
-## Consoles {#reporting-consoles}
+## Consoles de rapports {#reporting-consoles}
 
 ### Rapports pour les sites communautaires {#reports-for-community-sites}
 
@@ -50,7 +53,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
    * **[!UICONTROL Rapport des affectations]**
 
-      * Générez un rapport pour le site, l’utilisateur ou le groupe de la communauté sélectionné et l’affectation.
+      * Générez un rapport pour le site de la communauté, l’utilisateur ou le groupe sélectionné et l’affectation.
    * **[!UICONTROL Rapport des publications]**
 
       * Générez un rapport pour le site de la communauté, le type de contenu et la période sélectionnés.
@@ -60,7 +63,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![rapports](assets/reports1.png)
 
 ### Rapports sur les ressources d’activation et les chemins d’apprentissage {#reports-for-enablement-resources-and-learning-paths}
 
@@ -68,11 +71,11 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 * Sélectionnez un site communautaire d&#39;activation existant :
 
-   * Sélectionnez l’icône **Rapport** pour générer des rapports qui couvrent toutes les ressources d’activation.
+   * Sélectionnez l&#39;icône **Rapport** pour générer des rapports qui couvrent toutes les ressources d&#39;activation.
    * Sélectionnez un chemin d’apprentissage d’activation.
-   * Sélectionnez l&#39;icône **Rapport** pour laquelle générer des rapports pour :
+   * Sélectionnez l&#39;icône **Rapport** pour générer des rapports pour :
 
-      * Ressources d’activation incluses.
+      * Les ressources d’activation incluses.
       * Les apprenants affectés au chemin d’apprentissage.
 
 * Ces rapports fournissent :
@@ -82,18 +85,18 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
       * Identification de l’apprenant
       * Leur statut
       * Affecté ou accessible via le catalogue
-      * Nombre de commentaires
-      * Note d&#39;étoiles donnée
+      * Nombre de commentaires formulés
+      * Évaluation par étoiles donnée
 
 Pour plus d&#39;informations, reportez-vous à la section [](/help/communities/resources.md#report) Rapports de la console Ressources.
 
 ## Rapport des affectations {#assignments-report}
 
-La console Affectations permet de filtrer les rapports par site, utilisateurs ou groupes de la communauté d’activation et par affectation.
+La console Affectations permet de filtrer les rapports par site, utilisateurs ou groupes de la communauté d&#39;activation et par affectation.
 
-Le rapport fournit des informations sur les progrès accomplis ainsi que sur les commentaires ou les évaluations fournis.
+Le rapport fournit des renseignements sur leurs progrès ainsi que sur les commentaires ou évaluations qui ont été fournis.
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![rapport d&#39;affectation](assets/assignment-report.png)
 
 Sélectionnez les critères du rapport :
 
@@ -104,21 +107,22 @@ Sélectionnez les critères du rapport :
 * **Utilisateur ou groupe**
    * Sélectionnez Utilisateur pour générer un rapport pour un seul stagiaire.
    * Sélectionnez Groupe pour générer un rapport pour un groupe d’apprenants.
-   Le service tunnel accède aux membres et aux groupes de membres à partir du  de publication .
+
+   Le service tunnel accède aux membres et aux groupes de membres à partir de l&#39;environnement de publication.
 
 * **Affectation**
 
-   Faites votre choix parmi les ressources d’activation affectées aux apprenants sélectionnés.
+   Faites votre choix parmi les ressources d&#39;activation attribuées aux apprenants sélectionnés.
 
 Sélectionnez **Générer** pour créer le rapport :
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![generate-report](assets/generate-assignment-report.png)
 
 ## Rapport des vues {#views-report}
 
-La console  permet de générer des rapports sur les de page  par fonction(s) de la communauté pendant une période donnée.
+La console Vues permet de générer des rapports sur les vues de page par fonction(s) de la communauté pendant une période donnée.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![vue-rapport](assets/view-report.png)
 
 Sélectionnez les critères du rapport :
 
@@ -128,11 +132,11 @@ Sélectionnez les critères du rapport :
 
 * **[!UICONTROL Type de contenu]**
 
-   Vous pouvez choisir Tout le contenu ou sélectionner l&#39;une des fonctionnalités présentes sur le site.
+   Vous pouvez choisir Tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
 
 * **[!UICONTROL Période]**
 
-   Sélectionnez l’une des options suivantes :
+   Sélectionnez l&#39;une des options suivantes :
 
    * 7 derniers jours
    * 30 derniers jours
@@ -141,13 +145,13 @@ Sélectionnez les critères du rapport :
 
 Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![generate-vues](assets/generate-views.png)
 
 ## Rapport des publications {#posts-report}
 
 La console Publications permet de générer des rapports sur le nombre de publications pour les fonctionnalités de la communauté pendant une période donnée.
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![post-report](assets/posts-report.png)
 
 Sélectionnez les critères du rapport :
 
@@ -157,11 +161,11 @@ Sélectionnez les critères du rapport :
 
 * **[!UICONTROL Type de contenu]**
 
-   Vous pouvez choisir Tout le contenu ou sélectionner l&#39;une des fonctionnalités présentes sur le site.
+   Vous pouvez choisir Tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
 
 * **[!UICONTROL Période]**
 
-   Sélectionnez l’une des options suivantes :
+   Sélectionnez l&#39;une des options suivantes :
 
    * 7 derniers jours
    * 30 derniers jours
@@ -170,16 +174,16 @@ Sélectionnez les critères du rapport :
 
 Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![generate-report](assets/generate-posts-report.png)
 
 ## Résolution des incidents {#troubleshooting}
 
 ### Aucun site de communauté répertorié {#no-community-sites-listed}
 
-Si aucun site de la communauté n’est répertorié, vérifiez qu’Adobe Analytics a été activé pour un site. Si vous choisissez des rapports sur les affectations, assurez-vous que la fonction des affectations est dans la structure du site de la communauté.
+Si aucun site de la communauté n’est répertorié, vérifiez que l’Adobe Analytics a été activé pour un site. Si vous choisissez des rapports sur les affectations, assurez-vous que la fonction des affectations est dans la structure du site de la communauté.
 
-### Les rapports ne s’affichent pas dans l’instance d’auteur AEM {#reports-do-not-show-in-aem-author-instance}
+### Les rapports ne s’affichent pas dans l’instance Auteur AEM {#reports-do-not-show-in-aem-author-instance}
 
-Si les rapports ne s’affichent pas dans l’instance Auteur AEM, vérifiez les personnalisations, comme le mappage des URL sur l’instance Publication. Si le mappage des URL est effectué uniquement sur l’instance de publication AEM du site des communautés, assurez-vous que la même opération a été configurée dans l’instance d’auteur AEM dans la configuration des composants sociaux en usine **des rapports de tendances** du site.
+Si les rapports ne s’affichent pas dans l’instance Auteur AEM, recherchez les personnalisations, telles que le mappage des URL sur l’instance Publication. Si le mappage des URL est effectué uniquement sur l’instance de publication AEM du site des communautés, assurez-vous que la même instance a été configurée dans l’instance d’auteur AEM dans la configuration de l’usine **de composants sociaux du rapport de tendances du** site.
 
-![Mappage d’URL sur AEM Author](assets/sitetrend.png)
+![Mappage d’URL sur l’auteur AEM](assets/sitetrend.png)
