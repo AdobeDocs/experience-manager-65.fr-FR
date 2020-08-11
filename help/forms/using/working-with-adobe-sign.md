@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70052a5a8cba16dd2d73179e6e1d617347d716bc
+source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
 workflow-type: tm+mt
-source-wordcount: '3679'
+source-wordcount: '3643'
 ht-degree: 63%
 
 ---
@@ -75,7 +75,7 @@ Effectuez les étapes suivantes pour créer un formulaire adaptatif compatible a
 
    1. Indiquez le **nom** et le **titre** du formulaire adaptatif.
 
-   1. Sélectionnez le conteneur [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuration créé lors de la configuration de Adobe Sign avec des AEM Forms.
+   1. Sélectionnez le conteneur [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuration créé lors de la configuration d&#39;Adobe Sign avec AEM Forms.
 
 1. Dans l’onglet Modèle **[!UICONTROL de]** formulaire, sélectionnez l’une des options suivantes :
 
@@ -91,7 +91,7 @@ Pour utiliser l’Adobe Sign dans un formulaire adaptatif existant, procédez co
 
 1. Accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
 1. Select the adaptive form and tap **[!UICONTROL Properties]**.
-1. Dans l’onglet **[!UICONTROL Réglages de base]** , sélectionnez le conteneur [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuration créé lors de la configuration de Adobe Sign avec des AEM Forms.
+1. Dans l’onglet **[!UICONTROL Réglages de base]** , sélectionnez le conteneur [de](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) configuration créé lors de la configuration de Adobe Sign avec AEM Forms.
 1. Dans l’onglet Mode **** de formulaire, sélectionnez l’une des options suivantes :
 
    * Sélectionnez l’option **[!UICONTROL Associer le modèle de formulaire comme modèle]** de Document d’enregistrement et sélectionnez un modèle de Document d’enregistrement. Si vous utilisez un formulaire adaptatif basé sur un modèle de formulaire, les documents envoyés pour signature affichent uniquement les champs basés sur le modèle de formulaire associé. Il n’affiche pas tous les champs du formulaire adaptatif.
@@ -166,7 +166,7 @@ Effectuez les étapes suivantes pour sélectionner un service cloud et un ordre 
 
    Dans l’ordre simultané, plusieurs signataires à la fois peuvent signer un formulaire.
 
-1. [Ajoutez les signataires sur un formulaire](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) adaptatif et appuyez sur l’icône Terminé [aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications.
+1. [ajoutez les signataires sur un formulaire](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) adaptatif et appuyez sur l’icône Terminé [aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications.
 
 
 ### Ajouter des signataires à un formulaire adaptatif {#addsignerstoanadaptiveform}
@@ -184,7 +184,7 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
 
    * **Le signataire et la personne remplissant le formulaire sont-ils les mêmes ? :** Sélectionnez **Oui** si l’utilisateur et le premier signataire sont la même personne. Si l’option est définie sur **Non,** n’utilisez pas le composant d’étape de signature dans le formulaire adaptatif. Si le formulaire contient un composant Étape de signature, le champ est automatiquement défini sur Oui.
 
-   * **Adresse électronique du signataire :** spécifiez l’adresse électronique du signataire. Le signataire reçoit les documents/formulaires à signer à l’adresse électronique indiquée. Vous pouvez choisir d’utiliser une adresse électronique fournie dans un champ de formulaire, dans le profil utilisateur AEM de l’utilisateur connecté ou d’entrer manuellement une adresse électronique. C’est une étape obligatoire. Assurez-vous que l’adresse électronique du premier signataire ou du seul signataire (dans le cas d’un signataire unique) n’est pas identique au compte Adobe Sign utilisé pour configurer les AEM cloud services.
+   * **Adresse électronique du signataire :** spécifiez l’adresse électronique du signataire. Le signataire reçoit les documents/formulaires à signer à l’adresse électronique indiquée. Vous pouvez choisir d’utiliser une adresse électronique fournie dans un champ de formulaire, dans le profil utilisateur AEM de l’utilisateur connecté ou d’entrer manuellement une adresse électronique. C’est une étape obligatoire. Assurez-vous que l’adresse électronique du premier signataire ou du seul signataire (dans le cas d’un signataire unique) n’est pas identique au compte Adobe Sign utilisé pour configurer les services cloud AEM.
 
    * **Méthode d’authentification du signataire :** spécifiez la méthode pour authentifier un utilisateur avant d’ouvrir un formulaire à des fins de signature. Vous pouvez choisir entre le téléphone, la base de connaissances et l’authentification basée sur l’identité de réseau social.
    >[!NOTE]
@@ -206,9 +206,10 @@ Après avoir ajouté des champs Adobe Sign à un formulaire adaptatif, activé A
 
 En outre, un formulaire adaptatif Adobe Sign est envoyé uniquement après que tous les signataires ont signé le formulaire. Vous pouvez trouver un formulaire partiellement signé dans la section En attente de signature du portail des formulaires. Le service de configuration d’Adobe Sign interroge le serveur Adobe Sign à [intervalles réguliers](../../forms/using/adobe-sign-integration-adaptive-forms.md) pour vérifier l’état des signatures. Si tous les signataires terminent la signature du formulaire, le service d’action d’envoi est démarré et le formulaire est envoyé. Si vous utilisez une action d’envoi personnalisée et que le formulaire utilise Adobe Sign, mettez à jour votre action d’envoi personnalisée pour utiliser le service d’action d’envoi.
 
+<!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Les données du formulaire adaptatif sont stockées temporairement sur le portail des formulaires. Il est recommandé d’utiliser le [stockage personnalisé pour le portail des formulaires](/help/forms/using/configuring-draft-submission-storage.md). Il garantit que les données PII (informations personnellement identifiables) ne sont pas stockées sur les serveurs AEM.
+>Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. -->
 
 Votre expérience de signature de formulaire est prête. Vous pouvez prévisualiser le formulaire pour vérifier l’expérience de signature. Sur le formulaire publié, les champs Bloc Adobe Sign sont affichés lorsqu’un signataire reçoit le formulaire à signer dans un courrier électronique. Cette expérience est également connue comme expérience de signature hors du formulaire. Vous pouvez également configurer une expérience de signature dans le formulaire pour le premier signataire. Pour les étapes détaillées, voir [Créer une expérience de signature dans le formulaire](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
@@ -239,7 +240,7 @@ Après avoir [modifié les propriétés du formulaire adaptatif pour le signe](.
    Appliquez des signatures numériques au formulaire adaptatif à l’aide des éléments suivants :
 
    * Signatures de cloud : Signez avec un ID [](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) numérique hébergé par un prestataire d’approbation.
-   * Adobe Acrobat ou Reader : Téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, d’un jeton USB ou d’un ID numérique basé sur des fichiers.
+   * adobe acrobat ou Reader : Téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, d’un jeton USB ou d’un ID numérique basé sur des fichiers.
 
    Après avoir ajouté le champ de signature du cloud au formulaire adaptatif, effectuez les étapes suivantes pour terminer le processus de configuration :
 
@@ -307,7 +308,7 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 
 **Réponse :** Le formulaire adaptatif créé à l’aide du modèle avancé est configuré pour utiliser Adobe Sign. Pour résoudre l’erreur, créez et sélectionnez une configuration cloud Adobe Sign et configurez un signataire Adobe Sign pour le formulaire adaptatif.
 
-**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs Adobe Sign à un formulaire adaptatif doté de l’option [Document d’enregistrement](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir la [documentation d’Adobe Sign](https://helpx.adobe.com/fr/sign/help/text-tags.html). Notez également que les formulaires adaptatifs offre une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le [bloc Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
+**Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs Adobe Sign à un formulaire adaptatif doté de l’option [Document d’enregistrement](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir la [documentation d’Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html). Notez également que les formulaires adaptatifs offre une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le [bloc Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
 **Réponse** : Vous pouvez utiliser simultanément les deux composants dans un formulaire. Voici quelques recommandations relatives à l’utilisation des composants suivants :
 
@@ -327,12 +328,12 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 * Assurez-vous que l’application d’API sur le serveur Adobe Sign utilisé pour configurer le service Adobe Sign Cloud dispose des autorisations requises.
 * Si vous utilisez plusieurs services Adobe Sign Cloud, pointez l’URL **[!UICONTROL d’]** authentification de tous les services sur le même **[!UICONTROL Adobe Sign Shard]**.
 
-* Utilisez des adresses électroniques distinctes pour configurer le compte Adobe Sign et pour le premier signataire et le signataire unique. L’adresse électronique du premier signataire ou du seul signataire (dans le cas d’un signataire unique) ne peut pas être identique au compte Adobe Sign utilisé pour configurer les AEM cloud services.
+* Utilisez des adresses électroniques distinctes pour configurer le compte Adobe Sign et pour le premier signataire et le signataire unique. L’adresse électronique du premier signataire ou du seul signataire (dans le cas d’un signataire unique) ne peut pas être identique au compte Adobe Sign utilisé pour configurer les services cloud AEM.
 
 ## Related Articles {#related-articles}
 
 * [Incorporation d’Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [Utilisation d’Adobe Sign dans un formulaire adaptatif](../../forms/using/working-with-adobe-sign.md)
 
-* [Utilisation de Adobe Sign avec des AEM Forms (vidéo)
+* [Utilisation de Adobe Sign avec AEM Forms (vidéo)
    ](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
