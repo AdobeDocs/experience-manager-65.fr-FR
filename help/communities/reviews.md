@@ -1,8 +1,8 @@
 ---
 title: Utilisation des révisions et du résumé des révisions (affichage)
 seo-title: Utilisation des révisions et du résumé des révisions (affichage)
-description: Ajout des composants Résumé des révisions et révisions à une page
-seo-description: Ajout des composants Résumé des révisions et révisions à une page
+description: ajouter les composants Résumé des révisions et révisions à une page
+seo-description: ajouter les composants Résumé des révisions et révisions à une page
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 36%
 
 ---
 
@@ -23,32 +26,32 @@ The `Reviews Summary (Display)` component provides a summary of an active or clo
 
 >[!NOTE]
 >
->La publication anonyme d’une révision n’est pas possible. Les du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer. Les visiteurs connectés peuvent mettre à jour leurs révisions à tout moment.
+>La publication anonyme d’une révision n’est pas possible. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer. Les visiteurs connectés peuvent mettre à jour leurs révisions à tout moment.
 
 
 ## Ajout d’une révision à une page {#adding-a-review-to-a-page}
 
-Pour ajouter un `Reviews` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Reviews` et le faire glisser vers son emplacement sur une page, par exemple une position relative à la fonction à réviser par les utilisateurs.
+Pour ajouter un `Reviews` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Reviews` et le faire glisser sur une page, par exemple une position relative à la fonction à réviser pour les utilisateurs.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews`component will appear.
+When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews` component will appear.
 
-![chlimage_1-340](assets/chlimage_1-340.png)
+![create-review](assets/create-review.png)
 
 ## Configuration des révisions {#configuring-reviews}
 
 Select the placed `Reviews` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-341](assets/chlimage_1-341.png)
+![configure-new](assets/configure-new.png)
 
-Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of ratings to be shown to members. The first rating should be an overall/general rating, as it is the rating which provides the average rating for the `Review Summary (Display)` component. Les deux évaluations suivantes dans la configuration par défaut doivent se voir attribuer un titre différent, autre que &quot;Subrating 1&quot; ou &quot;Subrating 2&quot;.
+Under the **[!UICONTROL Allowed Ratings]** tab, specify the complete list of ratings to be shown to members. The first rating should be an overall/general rating, as it is the rating which provides the average rating for the `Review Summary (Display)` component. Les deux évaluations suivantes dans la configuration par défaut doivent recevoir un titre différent, autre que &quot;Subrating 1&quot; ou &quot;Subrating 2&quot;.
 
-![chlimage_1-342](assets/chlimage_1-342.png)
+![évaluation autorisée](assets/configure-review1.png)
 
 * **[!UICONTROL Evaluations autorisées]**
 
-   de notes à partir duquel un membre peut choisir.
+   Liste de notes à partir de laquelle un membre peut choisir.
 
    Utilisez les flèches Haut et Bas, ainsi que les boutons de suppression, pour modifier les choix visibles.
 
@@ -58,11 +61,11 @@ Under the **[!UICONTROL Required Ratings]** tab, re-enter items from the list of
 
 Sur le site web, les évaluations requises sont signalées d’un astérisque. Si un élément obligatoire n’est pas marqué, un message s’affiche à l’intention du membre, et sa soumission est refusée jusqu’à ce que toutes les évaluations requises soient marquées.
 
-![chlimage_1-343](assets/chlimage_1-343.png)
+![qualification requise](assets/configure-review2.png)
 
 * **[!UICONTROL Evaluations requises]**
 
-   Sous-ensemble des évaluations autorisées, indiquant les évaluations requises.
+   Un sous-ensemble d’évaluations autorisées, indiquant les évaluations requises.
 
    Utilisez les flèches Haut et Bas, ainsi que les boutons de suppression, pour modifier les choix visibles.
 
@@ -75,7 +78,7 @@ Sur le site web, les évaluations requises sont signalées d’un astérisque. S
 
 Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
-![chlimage_1-344](assets/chlimage_1-344.png)
+![Révisions](assets/configure-review3.png)
 
 * **[!UICONTROL Permettre des réponses]**
 
@@ -83,7 +86,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **[!UICONTROL Fermé]**
 
-   Si cette option est cochée, la révision est fermée aux nouvelles révisions et réponses. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, la révision est fermée aux nouveaux examens et réponses. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser les transferts de fichiers]**
 
@@ -99,27 +102,27 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 * **[!UICONTROL Types de fichier autorisés]**
 
-   N’est pertinent que si l’option **[!UICONTROL Autoriser les téléchargements]** de fichiers est cochée. d’extensions de fichier séparé par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   N’est pertinent que si l’option **[!UICONTROL Autoriser les téléchargements]** de fichiers est cochée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **[!UICONTROL Éditeur de texte enrichi]**
 
-   Si cette option est cochée, les publications peuvent être saisies avec une annotation. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les publications peuvent être saisies avec une annotation. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Autoriser le vote]**
 
-   Si cette option est cochée, incluez la fonction de vote pour une rubrique. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction de vote pour une rubrique. Cette option n’est pas cochée par défaut.
 
 Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](moderate-ugc.md).
 
-![chlimage_1-345](assets/chlimage_1-345.png)
+![modération utilisateur](assets/configure-review4.png)
 
 * **[!UICONTROL Prémodération]**
 
-   Si cette option est cochée, les révisions doivent être approuvées avant qu’elles n’apparaissent sur un site de publication. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, les révisions doivent être approuvées avant d’apparaître sur un site de publication. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Supprimer les révisions]**
 
-   Si cette option est cochée, le membre qui a publié la révision peut la supprimer. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, le membre qui a publié la révision peut la supprimer. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Refuser les révisions]**
 
@@ -135,7 +138,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 * **[!UICONTROL Marquer la liste de motifs]**
 
-   Si cette option est cochée, permettez aux membres de choisir, dans un  déroulant, la raison pour laquelle ils signalent une révision comme inappropriée. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, permettez aux membres de choisir, dans une liste déroulante, la raison pour laquelle ils signalent une révision comme inappropriée. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Motif de la marque personnalisée]**
 
@@ -143,11 +146,11 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted reviews a
 
 * **[!UICONTROL Seuil de modération]**
 
-   Entrez le nombre de fois où une révision doit être marquée par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est une fois (1).
+   Indiquez le nombre de fois où une révision doit être signalée par les membres avant que les modérateurs ne soient avertis. La valeur par défaut est une fois (1).
 
 * **[!UICONTROL Limite de marquage]**
 
-   Entrez le nombre de fois où une révision doit être marquée avant d’être masquée du public. Dans le cas contraire, cette valeur doit être supérieure ou égale au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
+   Indiquez le nombre de fois où une révision doit être marquée avant d’être masquée de la vue publique. Dans le cas contraire, cette valeur doit être supérieure ou égale au **[!UICONTROL seuil de modération]**. La valeur par défaut est 5.
 
 ### Ajout d’un résumé des révisions (affichage) à une page {#adding-a-review-summary-display-to-a-page}
 
@@ -161,7 +164,7 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](reviews-basics.md#essentials-for-client-side) are included, this is how the `Reviews Summary (Display)`component will appear.
 
-![chlimage_1-346](assets/chlimage_1-346.png)
+![review-summary](assets/configure-review5.png)
 
 >[!NOTE]
 >
@@ -172,21 +175,21 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 
 Select the placed `Reviews Summary (Display)` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![configurer](assets/configure-new.png)
 
 Sous l’onglet **[!UICONTROL Résumé des critiques]**
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![review-summary](assets/configure-review6.png)
 
 * `Review Path`
 
-   entrez ou accédez à l’instance placée du `reviews`composant pour résumer, par exemple, si elle est ajoutée à la page Web du site [Geometrixx Engage,](getting-started.md) le chemin serait le suivant :
+   entrez ou accédez à l&#39;instance placée du `reviews`composant pour résumer, par exemple, si elle est ajoutée à la page Web du site [Interagir,](getting-started.md) le chemin serait le suivant :
 
    `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-   Si cette option est cochée, incluez l’affichage d’un graphique à barres indiquant le nombre de chaque note d’étoile dans les révisions résumées. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, incluez un graphique à barres indiquant le nombre de chaque évaluation d’étoiles dans les révisions résumées. Cette option n’est pas cochée par défaut.
 
 ### Passage à un type de commentaire personnalisé {#changing-to-a-custom-review-type}
 
@@ -196,25 +199,25 @@ En modifiant le type de ressource de commentaire, le système de commentaires ne
 
 Once the custom resource types is known, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Comments` component to open a dialog with an additional tab.
 
-Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting`components:
+Under the **[!UICONTROL Resource Types]** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![vote de commentaires](assets/configure-review7.png)
 
 * **[!UICONTROL Type de ressource de commentaire]**
 
-   Accédez à resourceType d’un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
+   Accédez à resourceType d&#39;un `comment`composant étendu (commentaire unique) dans /apps. Par exemple, `/apps/social/commons/components/hbs/comments/comment`.
 
-   Cette ressource identifie le type de ressource de l’UGC créé lorsqu’un publie un commentaire.
+   Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un visiteur publie un commentaire.
 
 * **[!UICONTROL Type de ressource de vote]**
 
-   Accédez à resourceType d’un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
+   Accédez à resourceType d&#39;un `voting`composant étendu dans /apps. Par exemple, `/apps/social/components/hbs/voting`.
 
-   Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un publie un vote.
+   Cette ressource identifie le type de ressource de l&#39;UGC créé lorsqu&#39;un visiteur publie un vote.
 
 * **[!UICONTROL Type de ressource système de commentaires]**
 
-   Accédez à resourceType d’un `comments`composant étendu (système de commentaires) dans /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include).
+   Accédez à resourceType d&#39;un `comments`composant étendu (système de commentaires) dans /apps. Leave blank unless the page template [dynamically includes](scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](handlebars-helpers.md#include).
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -224,12 +227,12 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 ### Membres {#members}
 
-Lorsque le visiteur est connecté, selon la configuration, il peut :
+Lorsque le visiteur est connecté, selon la configuration, il peut:
 
-* Publiez une nouvelle révision.
-* Modifiez leur propre révision.
-* Supprimez leur propre révision.
-* Signalez les commentaires des autres utilisateurs.
+* Publier une nouvelle révision
+* Modifier leur propre révision
+* Supprimer leur propre révision
+* Signaler les commentaires des autres parties
 
 Une seule évaluation est autorisée par membre.  Le membre peut modifier son évaluation à tout moment.
 
