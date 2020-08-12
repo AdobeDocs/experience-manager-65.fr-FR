@@ -1,8 +1,8 @@
 ---
 title: Fonction de recherche
 seo-title: Fonction de recherche
-description: Ajout et configuration de la recherche sur un site des communautés
-seo-description: Ajout et configuration de la recherche sur un site des communautés
+description: ajouter et configurer la recherche sur un site des communautés
+seo-description: ajouter et configurer la recherche sur un site des communautés
 uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 31%
 
 ---
 
@@ -37,23 +40,24 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search` component will appear.
 
-![chlimage_1-373](assets/chlimage_1-373.png)
+![add-search](assets/add-search.png)
 
 ### Configuration du composant Rechercher {#configure-the-added-search}
 
 Select the placed `Search` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![confiter](assets/configure-new.png)
 
 Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are search when a query is entered by a visitor.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![paramètres de recherche](assets/search-settings.png)
 
 * **[!UICONTROL Chemins de recherche]** Lorsque vous ajoutez des chemins de recherche à l’aide du bouton Ajouter un élément, la recherche de contenu est limitée. Par exemple, pour limiter la recherche à un forum spécifique, sélectionnez un composant de forum placé dans une page :
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Page]** de résultats Les résultats apparaîtront sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant le `Search Results` composant.
+* **[!UICONTROL Page]** de résultats Les résultats apparaîtront sur une page distincte spécifiée à l’aide du navigateur pour sélectionner une page contenant la variable 
+`Search Results` component.
 
 ## Résultats de la recherche {#search-results}
 
@@ -71,17 +75,17 @@ For necessary information, visit [Communities Components Basics](basics.md).
 
 When the required client-side library, `cq.social.hbs.search`, is included, this is how the `Search Result` component will appear:
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![résultat de la recherche](assets/search-result1.png)
 
 ### Configuration du composant Résultats de la recherche ajouté {#configure-the-added-search-result}
 
 Select the placed `Search Results` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-377](assets/chlimage_1-377.png)
+![configurer](assets/configure-new.png)
 
 Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify what paths are included in the search when a query is entered by a visitor.
 
-![chlimage_1-378](assets/chlimage_1-378.png)
+![search-result-settings](assets/search-result-settings.png)
 
 * **[!UICONTROL Résultats de la recherche par page]**
 
@@ -89,7 +93,7 @@ Under the **[!UICONTROL Search Result Settings]** tab, it is possible to specify
 
 * **[!UICONTROL Chemins de recherche]**
 
-   En ajoutant des chemins de recherche à l’aide du bouton Ajouter élément, la recherche de contenu est limitée.
+   En ajoutant des chemins de recherche à l&#39;aide du bouton Ajouter un élément, la recherche de contenu est limitée.
 
 ## Informations supplémentaires {#additional-information}
 
