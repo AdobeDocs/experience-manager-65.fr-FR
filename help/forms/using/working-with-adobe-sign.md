@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
+source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
 workflow-type: tm+mt
-source-wordcount: '3643'
-ht-degree: 63%
+source-wordcount: '3839'
+ht-degree: 60%
 
 ---
 
@@ -304,12 +304,16 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 
 ## Forum aux questions {#frequently-asked-questions}
 
+**Q :** Vous pouvez incorporer un formulaire adaptatif dans un autre formulaire adaptatif. Le formulaire adaptatif intégré peut-il être activé pour Adobe Sign ?
 **Réponse :** Non, AEM Forms ne prend pas en charge l’utilisation d’un formulaire adaptatif incorporant un formulaire adaptatif activé pour Adobe Sign à des fins de signature
 
+**Q :** Lorsque je crée un formulaire adaptatif à l’aide du modèle avancé et que je l’ouvre pour modification, un message d’erreur &quot;Signature électronique ou Signataires non configurés correctement&quot; s’affiche. s’affiche. Comment résoudre le message d’erreur ?
 **Réponse :** Le formulaire adaptatif créé à l’aide du modèle avancé est configuré pour utiliser Adobe Sign. Pour résoudre l’erreur, créez et sélectionnez une configuration cloud Adobe Sign et configurez un signataire Adobe Sign pour le formulaire adaptatif.
 
+**Q :** Puis-je utiliser des balises de texte Adobe Sign dans un composant de texte statique d’un formulaire adaptatif ?
 **Réponse :** Oui, vous pouvez utiliser des balises de texte dans un composant de texte pour ajouter des champs Adobe Sign à un formulaire adaptatif doté de l’option [Document d’enregistrement](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (option de document d’enregistrement généré automatiquement uniquement). Pour en savoir plus sur la procédure et les règles de création d’une balise de texte, voir la [documentation d’Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html). Notez également que les formulaires adaptatifs offre une prise en charge limitée des balises de texte. Vous pouvez utiliser les balises de texte pour créer uniquement les champs pris en charge par le [bloc Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
+**Q :** aem forms fournit à la fois des composants de bloc Adobe Sign et des étapes Signature. Peut-on les utiliser simultanément dans un formulaire adaptatif ?
 **Réponse** : Vous pouvez utiliser simultanément les deux composants dans un formulaire. Voici quelques recommandations relatives à l’utilisation des composants suivants :
 
 **Bloc Adobe Sign :** Vous pouvez utiliser le bloc Adobe Sign pour ajouter des champs Adobe Sign n’importe où dans le formulaire adaptatif. Il permet également d’attribuer des champs spécifiques aux signataires. Lorsqu’un formulaire adaptatif est prévisualisé ou publié, le bloc Adobe Sign n’est pas visible par défaut. Ces blocs sont disponibles uniquement dans le document de signature. Dans le document de signature, seuls les champs affectés à un signataire sont activés. Le bloc Adobe Sign peut être utilisé avec les premiers et futurs signataires.
@@ -329,6 +333,14 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 * Si vous utilisez plusieurs services Adobe Sign Cloud, pointez l’URL **[!UICONTROL d’]** authentification de tous les services sur le même **[!UICONTROL Adobe Sign Shard]**.
 
 * Utilisez des adresses électroniques distinctes pour configurer le compte Adobe Sign et pour le premier signataire et le signataire unique. L’adresse électronique du premier signataire ou du seul signataire (dans le cas d’un signataire unique) ne peut pas être identique au compte Adobe Sign utilisé pour configurer les services cloud AEM.
+
+
+**Problème** Lorsque Adobe Sign est configuré pour un formulaire adaptatif, le processus configuré à l’aide de l’option Invoke Forms Workflow ne s’début pas.
+
+**Résolution**
+
+* Lorsque vous utilisez Adobe Sign sans l’étape Signature ou que le formulaire requiert des signatures de plusieurs personnes, le serveur AEM Forms attend que le Planificateur confirme que toutes les personnes ont signé le formulaire. Le Planificateur n’envoie le formulaire adaptatif qu’une fois que toutes les personnes ont terminé la signature et les débuts de flux de travail après un envoi réussi du formulaire adaptatif. Vous pouvez raccourcir l’intervalle entre le [Planificateur](adobe-sign-integration-adaptive-forms.md) pour vérifier l’état de la signature du formulaire à des intervalles rapides et faciliter l’envoi du formulaire.
+
 
 ## Related Articles {#related-articles}
 
