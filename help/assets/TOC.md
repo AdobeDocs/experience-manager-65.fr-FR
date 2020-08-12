@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 52%
+source-wordcount: '635'
+ht-degree: 51%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 52%
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
    + [Traiter les actifs](assets-workflow.md)
-   + [Ajouter des zones cliquables](image-maps.md)
+   + [ajouter des zones cliquables](image-maps.md)
    + [Réutilisation de ressources à l’aide de MSM](reuse-assets-using-msm.md)
    + [Ressources connectées avec des sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
@@ -38,7 +38,7 @@ ht-degree: 52%
    + [Configuration de Dynamic Media – mode Scene7](config-dms7.md)
    + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
    + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
-   + [Migration de Dynamic Media - Mode hybride vers le mode Dynamic Media - S7](migrate-from-hybrid-to-dms7.md)
+   + [Migration de Contenu multimédia dynamique - Mode hybride vers Contenu multimédia dynamique - Mode S7](migrate-from-hybrid-to-dms7.md)
    + [Gestion des ressources Dynamic Media](managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Gestion des paramètres prédéfinis de la visionneuse Dynamic Media](managing-viewer-presets.md)
@@ -49,7 +49,7 @@ ht-degree: 52%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
-   + [Ajouter les fonctionnalités Scene7 à votre page](scene7.md)
+   + [ajouter les fonctionnalités Scene7 à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
@@ -58,7 +58,7 @@ ht-degree: 52%
    + [Images panoramiques](panoramic-images.md)
    + [Visionneuses de médias mixtes](mixed-media-sets.md)
    + [Visionneuses à 360°](spin-sets.md)
-   + [Vidéo au Dynamic Media](video.md)
+   + [Vidéo dans Contenu multimédia dynamique](video.md)
    + [Bannières de carrousel](carousel-banners.md)
    + [Images interactives](interactive-images.md)
    + [Vidéos interactives](interactive-videos.md)
@@ -72,7 +72,7 @@ ht-degree: 52%
    + [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
    + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Annulation de la validité du contenu mis en cache dans le réseau de diffusion de contenu (CDN)](invalidate-cdn-cached-content.md)
+   + [Invalidation du cache CDN par le biais de Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les ressources {#extending}
