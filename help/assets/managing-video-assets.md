@@ -3,7 +3,7 @@ title: Gérez les fichiers vidéo dans [!DNL Adobe Experience Manager].
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 37%
@@ -79,13 +79,13 @@ Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web
 
    Pour quitter l’assistant d’annotation, cliquez sur **[!UICONTROL Fermer]**.
 
-1. Pour passer à un point spécifique de la vidéo, indiquez le moment en secondes dans le champ **texte** et cliquez sur **Aller**. Par exemple, pour sauter les 20 premières secondes de la vidéo, saisissez 10 dans le champ texte.
+1. Pour passer à un point spécifique de la vidéo, indiquez le moment en secondes dans le champ **texte** et cliquez sur **Aller**. Par exemple, pour sauter les 20 premières secondes de la vidéo, saisissez 20 dans le champ texte.
 
    ![Recherche d’une durée de la vidéo à sauter selon les secondes spécifiées](assets/seek-in-video.png)
 
 1. Pour l’afficher dans la chronologie, cliquez sur une annotation. Pour supprimer l’annotation de la chronologie, cliquez sur **[!UICONTROL Supprimer]**.
 
-   ![Annotations de Vue et détails dans la chronologie](assets/timeline-view-annotation.png)
+   ![Annotations de vue et détails dans la chronologie](assets/timeline-view-annotation.png)
 
 >[!MORELIKETHIS]
 >
