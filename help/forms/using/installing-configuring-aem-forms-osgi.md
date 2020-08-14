@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 79%
+source-wordcount: '1927'
+ht-degree: 77%
 
 ---
 
@@ -39,12 +39,12 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 ## Configuration requise {#system-requirements}
 
-Avant de commencer à installer et à configurer la fonctionnalité de capture de données des AEM Forms, assurez-vous que :
+Avant de commencer à installer et à configurer la fonctionnalité de capture de données d’AEM Forms, assurez-vous que :
 
 * Le matériel et l’infrastructure logicielle sont en place. Pour obtenir une liste détaillée des matériels et logiciels pris en charge, voir [Conditions techniques applicables](/help/sites-deploying/technical-requirements.md).
 
 * Le chemin d’installation de l’instance AEM ne contient aucun espace blanc.
-* Une instance AEM est en cours d’utilisation. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins deux instances [AEM (une instance de création et une instance de publication) ](/help/sites-deploying/deploy.md) pour exécuter les fonctionnalités de capture de données AEM Forms :
+* Une instance AEM est en cours d’utilisation. Pour les utilisateurs de Windows, installez l’instance AEM en mode élevé. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins deux instances [AEM (une instance de création et une instance de publication) ](/help/sites-deploying/deploy.md) pour exécuter les fonctionnalités de capture de données AEM Forms :
 
    * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site Web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
    * **Publication** : instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
@@ -111,18 +111,36 @@ Avant de commencer à installer et à configurer la fonctionnalité de capture d
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des captures de données AEM Forms et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
 
-1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
-1. In the **[!UICONTROL Filters]** section:
-   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
-1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Open [Software Distribution](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Dans la section **[!UICONTROL Filtres]** :
+   1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
+   2. Sélectionnez la version et le type du package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
+1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
-   Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [AEM Forms Release](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) .
+   You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) article.
 1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d&#39;arrêter le serveur AEM Forms, patientez jusqu&#39;à ce que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d&#39;apparaître dans le `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` fichier et que le journal soit stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
+
+### (Windows uniquement) Installation automatique des redistributables Visual Studio {#automatic-installation-visual-studio-redistributables}
+
+Si vous installez une instance AEM en mode élevé, les tables de redistribution Visual Studio manquantes sont installées automatiquement lors de l&#39;installation du module complémentaire AEM Forms.
+
+Pour déterminer si les tables de redistribution Visual Studio sont installées automatiquement, ouvrez le `error.log` fichier disponible dans le `/crx-repository/logs/` répertoire. Les journaux contiennent le message suivant :
+
+`Redist <service name> already installed on system, will not attempt re-installation`
+
+Si l&#39;installation des redistributables échoue, les journaux contiennent le message suivant :
+
+`Current user does not have elevated privileges, aborting installation of redist <service name>`
+
+Pour résoudre ce problème, redémarrez le serveur AEM, installez AEM en mode élevé, puis installez le module complémentaire AEM Forms.
+
+Si la vérification des privilèges échoue, les journaux contiennent le message suivant :
+
+`Privilege escalation check failed with error: <error message>`
 
 ## Configurations post-installation {#post-installation-configurations}
 
