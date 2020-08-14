@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+workflow-type: tm+mt
+source-wordcount: '1027'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +29,7 @@ Découvrons d’abord les exigences et les étapes préparatoires avant de confi
 
 Avant de configurer le chargement différé des fragments d’un formulaire adaptatif, il est essentiel de définir des stratégies afin de créer des fragments, d’identifier les valeurs utilisées dans les scripts ou référencées dans d’autres fragments, ou encore de définir des règles de contrôle de la visibilité des champs des fragments chargés.
 
-* **Identifier et créer des fragments** Vous pouvez configurer uniquement des fragments de formulaire adaptatif pour un chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et qui peut être réutilisé dans les formulaires. Ainsi, la première étape de l’implémentation du chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant en tant que fragment.
+* **Identifier et créer des fragments** Vous pouvez configurer uniquement des fragments de formulaire adaptatif pour un chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et peut être réutilisé dans plusieurs formulaires. Ainsi, la première étape de l’implémentation du chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant en tant que fragment.
 
     Pour plus d’informations sur la création de fragments, voir [Fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md).
 
@@ -65,7 +68,7 @@ Vous pouvez marquer les valeurs des objets du fragment chargé en différé comm
 Voici certaines restrictions, recommandations et aspects importants à garder à l’esprit lorsque vous travaillez avec le chargement différé :
 
 * Il est recommandé d’utiliser les formulaires adaptatifs basés sur un schéma XSD plutôt que les formulaires adaptatifs basés sur XFA pour configurer le chargement différé des formulaires volumineux. Le gain de performances en raison de l’implémentation du chargement différé dans les formulaires adaptatifs basés sur XFA est moins important que dans les formulaires adaptatifs XSD.
-* Ne configurez pas le chargement différé sur des fragments d’une disposition en grille réactive. Vous risqueriez de causer une baisse des performances.
+* Ne configurez pas le chargement différé sur les fragments d’un formulaire adaptatif qui utilisent le format **[!UICONTROL réactif - tout sur une page sans disposition de navigation]** pour le panneau racine. En raison de la configuration de la mise en page réactive, tous les fragments se chargent simultanément dans un formulaire adaptatif. Elle peut également entraîner une dégradation des performances.
 * Il est recommandé de ne pas configurer le chargement différé sur des fragments du premier panneau s’affichant au chargement du formulaire adaptatif.
 * Le chargement différé est pris en charge jusqu’à deux niveaux dans la hiérarchie de fragment.
 * Assurez-vous que les champs signalés comme étant globaux sont uniques sur un formulaire adaptatif.
