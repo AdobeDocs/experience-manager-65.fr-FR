@@ -8,10 +8,10 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 4c4a5a15e9cbb5cc22bc5999fb40f1d6db3bb091
+source-git-commit: 5bbafd9006b04d761ffab218e8480c1e94903bb6
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 47%
+source-wordcount: '2060'
+ht-degree: 37%
 
 ---
 
@@ -175,13 +175,18 @@ L’interface utilisateur de l’agent offre une prise en charge intégrée de 2
 
 Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un ou plusieurs brouillons pour chaque communication interactive et récupérer le brouillon ultérieurement pour continuer à travailler dessus. Vous pouvez spécifier un nom différent pour chaque brouillon afin de l’identifier.
 
-Adobe recommande d’exécuter ces instructions en séquence pour enregistrer une communication interactive en tant que brouillon.
+L’Adobe recommande d’exécuter ces instructions en séquence pour enregistrer une communication interactive en tant que brouillon.
 
 ### Activation de la fonction Enregistrer en tant que brouillon {#before-save-as-draft}
 
 Par défaut, la fonction Enregistrer en tant que brouillon n’est pas activée. Pour activer cette fonction, effectuez les étapes suivantes :
 
-1. Implémentez l’interface [SPI (](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html) ccrDocumentInstancePrestataire Interface). L’interface SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon en tant qu’identifiant unique.
+1. Implémentez l’interface [SPI (](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) ccrDocumentInstancePrestataire Interface).
+
+   L’interface SPI vous permet d’enregistrer la version préliminaire de la communication interactive dans la base de données avec un ID de brouillon en tant qu’identifiant unique. Ces instructions supposent que vous connaissez déjà comment créer un lot OSGi à l&#39;aide d&#39;un projet Maven.
+
+   Pour un exemple d’implémentation SPI, voir [Exemple d’implémentation](#sample-ccrDocumentInstance-spi)SPI ccrDocumentInstance.
+1. Ouvrez `http://<hostname>:<port>/ system/console/bundles` et appuyez sur **[!UICONTROL Installer/Mettre à jour]** pour télécharger le lot OSGi. Vérifiez que l’état du package téléchargé s’affiche comme **Principal**. Redémarrez le serveur si l’état du package ne s’affiche pas comme **Principal**.
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
 1. Tap **[!UICONTROL Create Correspondence Configuration]**.
 1. Sélectionnez **[!UICONTROL Activer l’enregistrement à l’aide de CCRDocumentInstanceService]** et appuyez sur **[!UICONTROL Enregistrer]**.
@@ -209,3 +214,233 @@ Après avoir enregistré une communication interactive en tant que brouillon, vo
 >[!NOTE]
 >
 >Si vous apportez des modifications à la communication interactive après l’avoir enregistrée en tant que brouillon, le brouillon de version ne s’ouvre pas.
+
+### Exemple d’implémentation SPI ccrDocumentInstance {#sample-ccrDocumentInstance-spi}
+
+Mettez en oeuvre l’ `ccrDocumentInstance` interface SPI pour enregistrer une communication interactive en tant que brouillon. The following is a sample implementation of the `ccrDocumentInstance` SPI.
+
+```javascript
+package Implementation;
+
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.exception.CCRDocumentException;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.model.CCRDocumentInstance;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.services.CCRDocumentInstanceService;
+import org.apache.commons.lang3.StringUtils;
+import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.*;
+
+
+@Component(service = CCRDocumentInstanceService.class, immediate = true)
+public class CCRDraftService implements CCRDocumentInstanceService {
+
+ private static final Logger logger = LoggerFactory.getLogger(CCRDraftService.class);
+
+ private HashMap<String, Object> draftDataMap = new HashMap<>();
+
+ @Override
+ public String save(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", ccrDocumentInstance.getName());
+         if (!CCRDocumentInstance.Status.SUBMIT.equals(ccrDocumentInstance.getStatus())) {
+             ccrDocumentInstance = mySQLDataBaseServiceCRUD(ccrDocumentInstance,null, "SAVE");
+         }
+     } else {
+         logger.error("Could not save data as draft name is empty");
+     }
+     return ccrDocumentInstance.getId();
+ }
+
+ @Override
+ public void update(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", documentInstanceName);
+         mySQLDataBaseServiceCRUD(ccrDocumentInstance, ccrDocumentInstance.getId(), "UPDATE");
+     } else {
+         logger.error("Could not save data as draft Name is empty");
+     }
+ }
+
+ @Override
+ public CCRDocumentInstance get(String id) throws CCRDocumentException {
+     CCRDocumentInstance cCRDocumentInstance;
+     if (StringUtils.isEmpty(id)) {
+         logger.error("Could not retrieve data as draftId is empty");
+         cCRDocumentInstance = null;
+     } else {
+         cCRDocumentInstance = mySQLDataBaseServiceCRUD(null, id,"GET");
+     }
+     return cCRDocumentInstance;
+ }
+
+ @Override
+ public List<CCRDocumentInstance> getAll(String userId, Date creationTime, Date updateTime,
+                                         Map<String, Object> optionsParams) throws CCRDocumentException {
+     List<CCRDocumentInstance> ccrDocumentInstancesList = new ArrayList<>();
+
+     HashMap<String, Object> allSavedDraft = mySQLGetALLData();
+     for (String key : allSavedDraft.keySet()) {
+         ccrDocumentInstancesList.add((CCRDocumentInstance) allSavedDraft.get(key));
+     }
+     return ccrDocumentInstancesList;
+ }
+
+ //The APIs call the service in the database using the following section.
+ private CCRDocumentInstance mySQLDataBaseServiceCRUD(CCRDocumentInstance ccrDocumentInstance,String draftId, String method){
+     if(method.equals("SAVE")){
+
+         String autoGenerateId = draftDataMap.size() + 1 +"";
+         ccrDocumentInstance.setId(autoGenerateId);
+         draftDataMap.put(autoGenerateId, ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if (method.equals("UPDATE")){
+
+         draftDataMap.put(ccrDocumentInstance.getId(), ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if(method.equals("GET")){
+
+         return (CCRDocumentInstance) draftDataMap.get(draftId);
+
+     }
+     return null;
+ }
+
+ private HashMap<String, Object> mySQLGetALLData(){
+     return draftDataMap;
+ }
+}
+```
+
+Les opérations `save`, `update`, `get`et `getAll` appellent le service de base de données pour enregistrer une communication interactive en tant que brouillon, mettre à jour une communication interactive, récupérer des données de la base de données et récupérer des données pour toutes les communications interactives disponibles dans la base de données. Cet exemple utilise `mySQLDataBaseServiceCRUD` le nom du service de base de données.
+
+Le tableau suivant explique l’exemple d’implémentation `ccrDocumentInstance` SPI. Il montre comment les `save`opérations, `update`, `get`et `getAll` appellent le service de base de données dans l’exemple d’implémentation.
+
+<table> 
+ <tbody>
+ <tr>
+  <td><p><strong>Operation</strong></p></td>
+  <td><p><strong>Exemples de service de base de données</strong></p></td> 
+   </tr>
+  <tr>
+   <td><p>Vous pouvez soit créer un brouillon pour une communication interactive, soit l’envoyer directement. L’API pour l’opération d’enregistrement vérifie si la communication interactive est envoyée en tant que brouillon et contient un nom de brouillon. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec la méthode d’entrée Save.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Save comme méthode d’entrée et génère un ID de brouillon généré automatiquement et le renvoie à l’AEM. La logique de génération d’un ID de brouillon peut varier en fonction de la base de données.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   </tr>
+  <tr>
+   <td><p>L’API pour l’opération de mise à jour récupère l’état du brouillon de communication interactive et vérifie si la communication interactive comporte un nom de brouillon. L'API appelle le service mySQLDataBaseServiceCRUD pour mettre à jour cet état dans la base de données.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Update comme méthode d’entrée et enregistre l’état du brouillon de communication interactive dans la base de données.</br></p><img src="assets/update-operation-service.png"/></td>
+   </tr>
+   <tr>
+   <td><p>L’API pour l’opération d’obtention vérifie si la communication interactive contient un brouillon d’ID. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec Get comme méthode d’entrée pour récupérer les données pour la communication interactive.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie Get comme méthode d’entrée et récupère les données pour la communication interactive en fonction de l’ID de brouillon.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   </tr>
+   <tr>
+   <td><p>L'API pour l'opération getAll appelle le service mySQLGetALLData pour récupérer les données de toutes les communications interactives enregistrées dans la base de données.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>Le service mySQLGetALLData récupère des données pour toutes les communications interactives enregistrées dans la base de données.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   </tr>
+  </tbody>
+</table>
+
+Voici un exemple du fichier `pom.xml` qui fait partie de l’implémentation :
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.adobe.livecycle</groupId>
+    <artifactId>draft-sample</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+
+    <name>Interact</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.aemfd</groupId>
+            <artifactId>aemfd-client-sdk</artifactId>
+            <version>6.0.122</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D D E F I N I T I O N -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.3.0</version>
+                <extensions>true</extensions>
+                <executions>
+                    <!--Configure extra execution of 'manifest' in process-classes phase to make sure SCR metadata is generated before unit test runs-->
+                    <execution>
+                        <id>scr-metadata</id>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <exportScr>true</exportScr>
+                    <instructions>
+                        <!-- Enable processing of OSGI DS component annotations -->
+                        <_dsannotations>*</_dsannotations>
+                        <!-- Enable processing of OSGI metatype annotations -->
+                        <_metatypeannotations>*</_metatypeannotations>
+                        <Bundle-SymbolicName>${project.groupId}-${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>autoInstall</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+```
+
+>[!NOTE]
+>
+>Assurez-vous de mettre à jour la `aemfd-client-sdk` dépendance à 6.0.122 dans le `pom.xml` fichier.
