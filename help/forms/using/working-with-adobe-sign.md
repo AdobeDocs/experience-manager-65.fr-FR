@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
+source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3853'
 ht-degree: 60%
 
 ---
@@ -334,6 +334,7 @@ Maintenant, l’expérience de signature dans le formulaire est prête. Vous pou
 
 * Utilisez des adresses électroniques distinctes pour configurer le compte Adobe Sign et pour le premier signataire et le signataire unique. L’adresse électronique du premier signataire ou du seul signataire (dans le cas d’un signataire unique) ne peut pas être identique au compte Adobe Sign utilisé pour configurer les services cloud AEM.
 
+### Le processus AEM Forms configuré pour un formulaire adaptatif compatible Adobe Sign ne s’début pas {#adobe-sign-aem-form-workflow-failures}
 
 **Problème** Lorsque Adobe Sign est configuré pour un formulaire adaptatif, le processus configuré à l’aide de l’option Invoke Forms Workflow ne s’début pas.
 
