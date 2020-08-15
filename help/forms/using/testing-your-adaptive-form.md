@@ -8,15 +8,15 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
+source-git-commit: 1a816672b3e97346f5a7a984fcb4dc0df1a5b0da
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '966'
 ht-degree: 10%
 
 ---
 
 
-# Didacticiel : Test de votre formulaire adaptatif{#tutorial-testing-your-adaptive-form}
+# Didacticiel : Test de votre formulaire adaptatif {#tutorial-testing-your-adaptive-form}
 
 ![](do-not-localize/10-test-your-adaptive-form.png)
 
@@ -24,7 +24,7 @@ Ce didacticiel est une étape de la série [Création de votre premier formulair
 
 Une fois que le formulaire adaptatif est prêt, il est important de le tester avant de le déployer pour les utilisateurs finaux. Vous pouvez tester manuellement (des tests fonctionnels) chaque champ ou automatiser le test de votre formulaire adaptatif. Lorsque vous disposez de plusieurs formulaires adaptatifs, le test manuel de chaque champ de tous les formulaires adaptatifs devient une tâche intimidante.
 
-Les AEM Forms fournissent une structure de test, Calvin, pour automatiser les tests de vos formulaires adaptatifs. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit des API JavaScript pour la création de tests. Les tests automatisés vous permettent de tester l’expérience de préremplissage d’un formulaire adaptatif, d’envoyer l’expérience d’un formulaire adaptatif, les règles d’expression, depuis les validations, le chargement différé et les interactions de l’interface utilisateur. Ce didacticiel vous guide tout au long des étapes nécessaires pour créer et exécuter des tests automatisés sur un formulaire adaptatif. À la fin de ce didacticiel, vous serez capable de :
+aem fournit une structure de test, Calvin, pour automatiser les tests de vos formulaires adaptatifs. [!DNL Forms] Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit des API JavaScript pour la création de tests. Les tests automatisés vous permettent de tester l’expérience de préremplissage d’un formulaire adaptatif, d’envoyer l’expérience d’un formulaire adaptatif, les règles d’expression, depuis les validations, le chargement différé et les interactions de l’interface utilisateur. Ce didacticiel vous guide tout au long des étapes nécessaires pour créer et exécuter des tests automatisés sur un formulaire adaptatif. À la fin de ce didacticiel, vous serez capable de :
 
 * [Créer une suite de tests pour votre formulaire adaptatif](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Création de tests pour votre formulaire adaptatif](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -34,48 +34,48 @@ Les AEM Forms fournissent une structure de test, Calvin, pour automatiser les te
 
 Les suites de tests comportent un ensemble de cas de test. Vous pouvez avoir plusieurs suites de tests. Il est recommandé d’avoir une suite de tests distincte pour chaque formulaire. Pour créer une suite de tests :
 
-1. Connectez-vous à l’instance d’auteur AEM Forms en tant qu’administrateur. Ouvrez CRXDE Lite. Vous pouvez appuyer sur AEM Logo > **Outils** > **Général** > **CRXDE Lite** ou ouvrir l’URL [https://localhost:4502/crx/de/index.jsp dans un navigateur pour ouvrir le CRXDE Lite.](https://localhost:4502/crx/de/index.jsp)
+1. Log to AEM [!DNL Forms] author instance in as an administrator. Open [!UICONTROL CRXDE Lite]. Vous pouvez appuyer sur AEM Logo > **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]** ou ouvrir l’URL [https://localhost:4502/crx/de/index.jsp dans un navigateur pour ouvrir le CRXDE Lite.](https://localhost:4502/crx/de/index.jsp)
 
-1. Accédez à /etc/clientlibs dans le CRXDE Lite. Cliquez avec le bouton droit sur le sous-dossier /etc/clientlibs et sélectionnez **Créer** > **Créer un nœud.** Dans le champ Nom, saisissez **WeRetailFormTestCases**. Sélectionnez le type **cq:ClientLibraryFolder** et cliquez sur **OK**. Il crée un noeud. Vous pouvez utiliser n&#39;importe quel nom à la place de WeRetailFormTestCases.
-1. Add the following properties to the WeRetailFormTestCases node and tap **Save ALL**.
+1. Accédez à /etc/clientlibs dans le [!UICONTROL CRXDE Lite]. Cliquez avec le bouton droit sur le sous-dossier /etc/clientlibs et sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Créer un nœud]**. Dans le champ **[!UICONTROL Name]** , saisissez **WeRetailFormTestCases**. Sélectionnez le type **cq:ClientLibraryFolder** et cliquez sur **[!UICONTROL OK]**. Il crée un noeud. Vous pouvez utiliser n’importe quel nom à la place de `WeRetailFormTestCases`.
+1. Add the following properties to the `WeRetailFormTestCases` node and tap **[!UICONTROL Save ALL]**.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriété</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Multi</strong></td>
-   <td><strong>Valeur</strong></td>
-  </tr>
-  <tr>
-   <td>categories</td>
-   <td>Chaîne</td>
-   <td>Activé</td>
-   <td>
-    <ul>
-     <li>granite.testing.hobbes.tests<br /> </li>
-     <li>granite.testing.calvin.tests</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>dependencies</td>
-   <td>Chaîne</td>
-   <td>Activé</td>
-   <td>
-    <ul>
-     <li>granite.testing.hobbes.testrunner <br /> </li>
-     <li>granite.testing.calvin <br /> </li>
-     <li>apps.testframework.all</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+    <tbody>
+     <tr>
+      <td><strong>Propriété</strong></td>
+      <td><strong>Type</strong></td>
+      <td><strong>Multi</strong></td>
+      <td><strong>Valeur</strong></td>
+     </tr>
+     <tr>
+      <td>categories</td>
+      <td>Chaîne</td>
+      <td>Activé</td>
+      <td>
+       <ul>
+        <li>granite.testing.hobbes.tests<br /> </li>
+        <li>granite.testing.calvin.tests</li>
+       </ul> </td>
+     </tr>
+     <tr>
+      <td>dependencies</td>
+      <td>Chaîne</td>
+      <td>Activé</td>
+      <td>
+       <ul>
+        <li>granite.testing.hobbes.testrunner <br /> </li>
+        <li>granite.testing.calvin <br /> </li>
+        <li>apps.testframework.all</li>
+       </ul> </td>
+     </tr>
+    </tbody>
+   </table>
 
-Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme indiqué ci-dessous :
+   Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme indiqué ci-dessous :
 
-![dependencies](assets/dependencies.png)
+   ![dependencies](assets/dependencies.png)
 
-1. Right-click the **[!UICONTROL WeRetailFormTestCases]** node click **Create** > **Create File**. In the Name field, type `js.txt` and click **OK**.
+1. Right-click the **[!UICONTROL WeRetailFormTestCases]** node click **[!UICONTROL Create]** > **[!UICONTROL Create File]**. In the **[!UICONTROL Name]** field, type `js.txt` and click **[!UICONTROL OK]**.
 1. Ouvrez le fichier js.txt pour le modifier, ajoutez le code suivant, puis enregistrez le fichier :
 
    ```text
@@ -83,7 +83,7 @@ Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme in
     init.js
    ```
 
-1. Créez un fichier, init.js, dans le `WeRetailFormTestCases`noeud. Ajoutez le code ci-dessous dans le fichier et appuyez sur **[!UICONTROL Enregistrer tout]**.
+1. Créez un fichier, init.js, dans le `WeRetailFormTestCases`noeud. ajoutez le code ci-dessous dans le fichier et appuyez sur **[!UICONTROL Enregistrer tout]**.
 
    ```javascript
    (function(window, hobs) {
@@ -101,7 +101,7 @@ Assurez-vous que chaque propriété est ajoutée à une zone distincte, comme in
 
    Le code ci-dessus crée une suite de tests nommée **We commerce - Tests**.
 
-1. Ouvrez AEM interface utilisateur Tests (AEM > Outils > Opérations > Tests). La suite de tests - **Nous commercialisons - Tests** - est répertoriée dans l’interface utilisateur.
+1. Ouvrez AEM interface utilisateur Tests (AEM > **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Tests]**). La suite de tests - **Nous commercialisons - Tests** - est répertoriée dans l’interface utilisateur.
 
    ![we-commerce-détail-test-suite](assets/we-retail-test-suite.png)
 
@@ -111,7 +111,7 @@ Un cas de test est un ensemble d’actions permettant de tester une fonctionnali
 
 Une action est une activité spécifique sur un formulaire adaptatif, telle qu’un clic sur un bouton. Pour créer un cas de test et des actions permettant de valider les données utilisateur pour chaque champ de formulaire adaptatif :
 
-1. Dans CRXDE Lite, accédez au `/content/forms/af/create-first-adaptive-form` dossier. Cliquez avec le bouton droit sur le noeud de dossier **[!UICONTROL create-first-adaptive-form]** et cliquez sur **[!UICONTROL Créer]**> **[!UICONTROL Créer un fichier]**. In the Name field, type `prefill.xml` and click **[!UICONTROL OK]**. Ajoutez le code suivant au fichier 
+1. Dans [!UICONTROL CRXDE Lite], accédez au `/content/forms/af/create-first-adaptive-form` dossier. Cliquez avec le bouton droit sur le noeud de dossier **[!UICONTROL create-first-adaptive-form]** et cliquez sur **[!UICONTROL Créer]**> **[!UICONTROL Créer un fichier]**. In the **[!UICONTROL Name]** field, type `prefill.xml` and click **[!UICONTROL OK]**. Ajoutez le code suivant au fichier 
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -136,37 +136,37 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
 
 1. Add the following properties to the **[!UICONTROL WeRetailFormTests]** node.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriété</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Multi</strong></td>
-   <td><strong>Valeur</strong></td>
-  </tr>
-  <tr>
-   <td>categories</td>
-   <td>Chaîne</td>
-   <td>Activé</td>
-   <td>
-    <ul>
-     <li>granite.testing.hobbes.tests<br /> </li>
-     <li>granite.testing.hobbes.tests.testForm</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>dependencies</td>
-   <td>Chaîne</td>
-   <td>Activé</td>
-   <td>
-    <ul>
-     <li>granite.testing.calvin.tests</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+    <tbody>
+     <tr>
+      <td><strong>Propriété</strong></td>
+      <td><strong>Type</strong></td>
+      <td><strong>Multi</strong></td>
+      <td><strong>Valeur</strong></td>
+     </tr>
+     <tr>
+      <td>categories</td>
+      <td>Chaîne</td>
+      <td>Activé</td>
+      <td>
+       <ul>
+        <li>granite.testing.hobbes.tests<br /> </li>
+        <li>granite.testing.hobbes.tests.testForm</li>
+       </ul> </td>
+     </tr>
+     <tr>
+      <td>dependencies</td>
+      <td>Chaîne</td>
+      <td>Activé</td>
+      <td>
+       <ul>
+        <li>granite.testing.calvin.tests</li>
+       </ul> </td>
+     </tr>
+     </tbody>
+   </table>
 
-1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajoutez les éléments suivants dans le fichier :
+1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]** . ajoutez les éléments suivants dans le fichier :
 
    ```shell
    #base=.
@@ -175,7 +175,7 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
 
    Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-1. Créez un fichier, `prefillTest.js`,dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajoutez le code ci-dessous dans le fichier. Le code crée un cas de test. Le cas de test préremplit tous les champs d’un formulaire et valide certains champs pour s’assurer que les valeurs sont saisies correctement.
+1. Créez un fichier, `prefillTest.js`,dans le noeud **[!UICONTROL WeRetailFormTests]** . ajoutez le code ci-dessous dans le fichier. Le code crée un cas de test. Le cas de test préremplit tous les champs d’un formulaire et valide certains champs pour s’assurer que les valeurs sont saisies correctement.
 
    ```javascript
    (function (window, hobs) {
@@ -219,17 +219,17 @@ Une suite de tests peut comporter plusieurs cas de test. Vous pouvez exécuter t
 1. Accédez à AEM icône > **[!UICONTROL Outils]**> **[!UICONTROL Opérations]**> **[!UICONTROL Tests]**
 1. Pour exécuter tous les tests de la suite de tests :
 
-   1. Dans le panneau Tests, appuyez sur **[!UICONTROL Nous commercialisons - Tests (1)]**. Il La suite se développe pour afficher la liste de test.
+   1. Dans le panneau [!UICONTROL Tests] , appuyez sur **[!UICONTROL Nous commercialisons - Tests (1)]**. Il La suite se développe pour afficher la liste de test.
    1. Appuyez sur le bouton **[!UICONTROL Exécuter les tests]** . La zone vierge sur le côté droit de l’écran est remplacée par le formulaire adaptatif au fur et à mesure que le test s’exécute.
 
-   ![exécution-tout-test](assets/run-all-test.png)
+      ![exécution-tout-test](assets/run-all-test.png)
 
 1. Pour exécuter un seul test à partir de la suite de tests :
 
    1. Dans le panneau Tests, appuyez sur **[!UICONTROL Nous commercialisons - Tests (1)]**. Il La suite se développe pour afficher la liste de test.
    1. Appuyez sur le test **[!UICONTROL de]** préremplissage et sur le bouton **[!UICONTROL Exécuter les tests]** . La zone vierge sur le côté droit de l’écran est remplacée par le formulaire adaptatif au fur et à mesure que le test s’exécute.
 
-1. Appuyez sur le nom du test, Test de préremplissage, pour examiner les résultats du test. Il ouvre le panneau Résultat. Appuyez sur le nom de votre cas de test dans la vue du panneau Résultat pour obtenir tous les détails du test.
+1. Appuyez sur le nom du test, Test de préremplissage, pour examiner les résultats du test. Il ouvre le panneau [!UICONTROL Résultat] . Appuyez sur le nom de votre cas de test dans le panneau [!UICONTROL Résultat] pour vue tous les détails du test.
 
    ![révision-résultats](assets/review-results.png)
 
