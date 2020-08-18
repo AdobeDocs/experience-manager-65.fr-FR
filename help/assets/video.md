@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: ba6f94435a4d4945d54614db19f7ff612a317692
 workflow-type: tm+mt
 source-wordcount: '11830'
 ht-degree: 96%
@@ -21,13 +21,13 @@ ht-degree: 96%
 
 Cette section décrit l’utilisation de vidéos dans Dynamic Media.
 
-## Démarrage rapide : vidéos  {#quick-start-videos}
+## Démarrage rapide : vidéos   {#quick-start-videos}
 
 Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapidement les opérations liées aux visionneuses de vidéos adaptatives dans Dynamic Media. Chaque étape comporte des renvois à des rubriques contenant de plus amples informations.
 
 >[!NOTE]
 >
->Avant de travailler sur la vidéo dans Dynamic Media, assurez-vous que votre administrateur AEM a déjà activé et configuré les Cloud Service Dynamic Media en mode Dynamic Media - Scene7 ou Dynamic Media - Hybrid.
+>Avant de travailler sur la vidéo dans Contenu multimédia dynamique, assurez-vous que votre administrateur AEM déjà activé et configuré les Cloud Services Contenu multimédia dynamique en mode Contenu multimédia dynamique ou Contenu multimédia dynamique hybride.
 >
 >* Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode Scene7 et [Dépannage de Dynamic Media – mode Scene7.](/help/assets/troubleshoot-dms7.md)
    >
@@ -100,7 +100,7 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
 1. Pour **publier les vidéos Dynamic Media**, effectuez l’une des opérations suivantes :
 
-   * Si vous utilisez l’Adobe Experience Manager comme système de gestion de contenu Web, vous pouvez ajouter des vidéos directement à vos pages Web.
+   * Si vous utilisez Adobe Experience Manager comme système de gestion de contenu Web, vous pouvez ajouter des vidéos directement à vos pages Web.
 
       * [Ajout de vidéos à des pages web](adding-dynamic-media-assets-to-pages.md).
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos dans vos pages web.
@@ -117,7 +117,7 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
 
 
-## Utilisation de vidéo dans Dynamic Media  {#working-with-video-in-dynamic-media}
+## Utilisation de vidéo dans Dynamic Media   {#working-with-video-in-dynamic-media}
 
 La vidéo dans Dynamic Media est une solution complète qui facilite la publication de vidéos adaptatives haute qualité pour la diffusion sur plusieurs écrans, notamment les postes de travail et les appareils mobiles iOS, Android, Blackberry et Windows. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
 
@@ -176,7 +176,7 @@ En combinant dans un lecteur unique la capacité de concevoir les composants de 
 
 Voir aussi [À propos des visionneuses HTML5](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) dans le guide de référence des visionneuses d’Adobe Scene7.
 
-### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5  {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5   {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
@@ -263,7 +263,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
  </tbody>
 </table>
 
-## Architecture de la solution vidéo Dynamic Media  {#architecture-of-dynamic-media-video-solution}
+## Architecture de la solution vidéo Dynamic Media   {#architecture-of-dynamic-media-video-solution}
 
 Le graphique suivant montre le workflow global de création de vidéos qui sont chargées et codées par le biais de DMGateway (dans le mode Hybride Dynamic Media) et mises à disposition pour une consommation publique.
 
@@ -323,7 +323,7 @@ Ce tableau décrit la façon dont les résultats de la formule se traduisent en 
 
 Par exemple, une vidéo qui a une largeur de 1440 pour une hauteur de 1080 a un format de 1440/1080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
 
-### Débit binaire    {#bitrate}
+### Débit binaire     {#bitrate}
 
 Le débit correspond à la quantité de données encodées pour produire une seule seconde de lecture vidéo. Le débit de données est mesuré en kilobits par seconde (kbit/s).
 
@@ -411,7 +411,7 @@ Supposons, par exemple, que la résolution de votre vidéo source soit équivale
 
 Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, la vidéo est de haute qualité mais dans un fichier au volume compressé.
 
-## Publication de vidéos sur YouTube  {#publishing-videos-to-youtube}
+## Publication de vidéos sur YouTube   {#publishing-videos-to-youtube}
 
 Vous pouvez publier des ressources vidéo AEM on-premise directement sur une chaîne YouTube que vous avez précédemment créée.
 
@@ -435,7 +435,7 @@ Pour garantir une authentification serveur à serveur sécurisée avec YouTube, 
 
 Vous pouvez également [annuler la publication de vidéos pour les supprimer de YouTube](#unpublishing-videos-to-remove-them-from-youtube).
 
-### Configuration des paramètres de Google Cloud  {#configuring-google-cloud-settings}
+### Configuration des paramètres de Google Cloud   {#configuring-google-cloud-settings}
 
 Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous disposez d’un compte GMAIL, alors vous disposez déjà d’un compte Google ; si vous ne disposez pas d’un compte Google, vous pouvez facilement en créer un. Un compte est nécessaire, car vous avez besoin des informations d’identification pour publier des ressources vidéo sur YouTube. Si vous avez déjà créé un compte, ignorez cette tâche et passez directement à [Création d’une chaîne YouTube](#creating-a-youtube-channel).
 
@@ -586,7 +586,7 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 * Pour configurer YouTube dans une version d’AEM antérieure à 6.4, voir [Configuration de YouTube dans une version d’AEM antérieure à 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
 * Pour configurer YouTube dans AEM 6.4 ou versions ultérieures, reportez-vous à [Configuration de YouTube dans AEM 6.4 et versions ultérieures](#setting-up-youtube-in-aem-and-later).
 
-#### Configuration de YouTube dans AEM 6.4 et versions ultérieures  {#setting-up-youtube-in-aem-and-later}
+#### Configuration de YouTube dans AEM 6.4 et versions ultérieures   {#setting-up-youtube-in-aem-and-later}
 
 1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
 1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la publication sur YouTube.]**
@@ -742,7 +742,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous a
 
    Voir [Profils de métadonnées](/help/assets/metadata-profiles.md) et [Profils vidéo](/help/assets/video-profiles.md).
 
-### Publication de vidéos sur votre chaîne YouTube  {#publishing-videos-to-your-youtube-channel}
+### Publication de vidéos sur votre chaîne YouTube   {#publishing-videos-to-your-youtube-channel}
 
 Vous devez maintenant associer les balises que vous avez précédemment ajoutées aux ressources vidéo. Ce processus permet à AEM de déterminer les ressources à publier sur votre chaîne YouTube.
 
@@ -760,7 +760,7 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 >
 >Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
 
-Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :
+Pour publier des vidéos sur votre chaîne YouTube :
 
 1. Dans AEM, accédez à la ressource vidéo que vous souhaitez publier sur votre chaîne YouTube.
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
@@ -806,7 +806,7 @@ Pour lier les URL YouTube à votre application web, procédez comme suit :
 1. Cliquez sur l’onglet **[!UICONTROL Avancé]**.
 1. Sous l’en-tête Publication YouTube, dans la liste des URL YouTube, sélectionnez le texte de l’URL et copiez-le dans votre navigateur web pour prévisualiser la ressource ou l’ajouter à votre page de contenu web.
 
-### Annulation de la publication d’une vidéo pour la supprimer de YouTube  {#unpublishing-videos-to-remove-them-from-youtube}
+### Annulation de la publication d’une vidéo pour la supprimer de YouTube   {#unpublishing-videos-to-remove-them-from-youtube}
 
 Lorsque vous annulez la publication d’une ressource vidéo dans AEM, la vidéo est supprimée de YouTube.
 
@@ -829,7 +829,7 @@ Pour annuler la publication de vidéos afin de les supprimer de YouTube, procéd
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Suivant.]**
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Annuler la publication.]**
 
-## Surveillance du codage vidéo et de la progression de la publication sur YouTube  {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Surveillance du codage vidéo et de la progression de la publication sur YouTube   {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage vidéo a été appliqué ou que vous publiez votre vidéo sur YouTube, vous pouvez contrôler la manière dont votre codage vidéo/publication YouTube progresse (ou échoue) de plusieurs façons. La progression de la publication YouTube réelle est uniquement disponible via les journaux mais sa réussite ou son échec sont également répertoriés et décrits dans la procédure suivante. En outre, vous pouvez recevoir des notifications par e-mail lorsqu’un processus de publication YouTube ou un codage vidéo est terminé ou interrompu.
 
@@ -1001,7 +1001,7 @@ Specify the beginning and end date range for which you want video data, and then
 
 1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
-### Affichage de rapports vidéo reposant sur une visionneuse de vidéo créée à l’aide du SDK Scene7 HMTL5 Viewer  {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Affichage de rapports vidéo reposant sur une visionneuse de vidéo créée à l’aide du SDK Scene7 HMTL5 Viewer   {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée reposant sur une visionneuse de vidéos prête à l’emploi, aucune autre étape n’est nécessaire pour afficher les rapports vidéo. En revanche, si vous avez créé votre propre visionneuse de vidéos en vous reposant sur le SDK de la visionneuse HTML5 de Scene7, suivez les étapes ci-après pour vous assurer que votre visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
 
@@ -1101,7 +1101,7 @@ Pour ajouter des sous-titres à une vidéo:
    En règle générale, vous devez attribuer au fichier de sous-titres VTT le même nom qu’au fichier vidéo et vous lui ajoutez l’indicateur de paramètres régionaux, comme -EN, -FR ou -DE, et ainsi de suite. Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 
 1. Dans AEM, chargez votre fichier de sous-titres WebVTT dans DAM.
-1. Accédez à la *ressource vidéo publiée que vous souhaitez associer au fichier de sous-titrage que vous avez téléchargé.
+1. Accédez à la ressource vidéo *publiée* à associer au fichier de sous-titres que vous avez chargé.
 
    N’oubliez pas que les URL ne peuvent être copiées qu’*après* la *publication* des ressources.
 
