@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Moderation Console {#moderation-console}
 
-En AEM Communities, la [modération en bloc du contenu](/help/communities/moderate-ugc.md) de la communauté est possible à la fois de la part de l’auteur et des environnements de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté de confiance affectés en tant que modérateurs).
+En AEM Communities, la [modération en masse du contenu](/help/communities/moderate-ugc.md) de la communauté est possible à partir des environnements d’auteur et de publication par les administrateurs et les modérateurs de la communauté (membres de la communauté de confiance affectés en tant que modérateurs).
 
 Les administrateurs et les modérateurs de la communauté peuvent également effectuer une modération [](/help/communities/in-context.md) dans le contexte dans l’environnement de publication.
 
@@ -241,22 +241,22 @@ Outre les filtres prêts à l’emploi du rail [de](/help/communities/moderation
 
 ![filtre-balise personnalisée](assets/custom-tag-filter.png)
 
-L’ [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) sur Github implémente un filtre de balises afin de filtrer la liste UGC selon si les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des filtres analogues pour d’autres champs de métadonnées UGC similaires.
+L’ [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) sur Github implémente un filtre de balises afin de filtrer la liste UGC selon si les balises spécifiques sont appliquées au contenu généré par l’utilisateur. Vous pouvez suivre l’exemple de code et créer des filtres analogues pour d’autres champs de métadonnées UGC similaires.
 
 Pour installer l’exemple du filtre Balises :
 
-1. Ouvrez le gestionnaire de packages sur les instances de AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) et de AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Ouvrez le gestionnaire de packages sur les instances d’auteur AEM ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) et d’AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
 1. Créez le package `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` à partir du code Github, puis installez et activez-le.
-1. Ouvrez la console des lots sur les instances de AEM Author ( `https://[aem-author]:4502/system/console/bundles`) et de AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Ouvrez la console des lots sur les instances d’auteur AEM ( `https://[aem-author]:4502/system/console/bundles`) et de publication AEM ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Créez le package ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` à partir de Github, installez et activez-le.
-1. Accédez au noeud **/apps/social/modération/facettes** sur le AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) et le AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
-1. Ajoutez un utilisateur technique **communautés-utilitaire-reader** avec `jcr:read` des autorisations.
+1. Accédez au noeud **/apps/social/modération/facettes** sur AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) et AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
+1. ajoutez un utilisateur technique **communautés-utilitaire-reader** avec `jcr:read` des autorisations.
 
 Pour exposer les filtres personnalisés sur des sites communautaires existants :
 
 1. Modification `Clientlibs` de la page de modération existante `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
-   * Ajouter une nouvelle catégorie `cq.social.hbs.moderation.v2.`
+   * ajouter une nouvelle catégorie `cq.social.hbs.moderation.v2.`
 
 1. Accédez à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
@@ -303,7 +303,7 @@ En mode de sélection unique, il est possible de :
 * [Refuser](#deny)
 * [Supprimer](#delete)
 * [Fermer](#close)
-* Historique [de modération de Vue](#moderation-history)
+* Historique [de modération de vue](#moderation-history)
 * [Afficher les détails](#viewdetails)
 
 Le texte de la publication figure sur la vue de carte au-dessus des icônes d’action de modération et les données ci-dessous indiquent :
