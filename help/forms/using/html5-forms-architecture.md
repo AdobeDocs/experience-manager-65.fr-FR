@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 84dd0d551431169239f63cff62a015e15f998e7d
+workflow-type: tm+mt
+source-wordcount: '2043'
+ht-degree: 78%
 
 ---
 
@@ -22,9 +25,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 HTML5 forms functionality is deployed as a package within the embedded AEM instance and is exposesd as a REST end point over HTTP/S using RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-`<style> .background{ display: none; position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.8; opacity:.80; filter: alpha(opacity=80); } .content { display: none; position: fixed; top: 50%; left: 50%; width: 1200px; height: 756px; margin-left: -600px; margin-top: -378px; border:10px solid orange; background-color: white; z-index:1002; overflow: visible; } </style>` [ 01-aem-forms-architecture ![](assets/01-aem-forms-architecture.jpg)*Taille réelle *](javascript:void(0).md)
-
-[ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
+![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Utilisation de la structure Sling {#using-sling-framework}
 
@@ -32,7 +33,7 @@ HTML5 forms functionality is deployed as a package within the embedded AEM insta
 
 For details on REST endpoint and supported request parameters, see [Rendering Form Template](/help/forms/using/rendering-form-template.md).
 
-Lorsqu’un utilisateur émet une requête à partir d’un périphérique client, tel qu’un navigateur iOS ou Android, Sling résout d’abord le noeud  en fonction de l’URL de requête. Dans ce nœud de profil, il lit **sling:resourceSuperType** et **sling:resourceType** pour déterminer tous les scripts disponibles capables de gérer cette requête de rendu de formulaire. Il utilise ensuite les sélecteurs de requête Sling avec la méthode de requête pour identifier le script le mieux adapté pour traiter cette requête. Une fois que la requête atteint un JSP de rendu du profil, le JSP appelle le service Forms OSGi.
+Lorsqu’un utilisateur effectue une requête à partir d’un périphérique client tel qu’un navigateur iOS ou Android, Sling résout d’abord le noeud de Profil en fonction de l’URL de requête. Dans ce nœud de profil, il lit **sling:resourceSuperType** et **sling:resourceType** pour déterminer tous les scripts disponibles capables de gérer cette requête de rendu de formulaire. Il utilise ensuite les sélecteurs de requête Sling avec la méthode de requête pour identifier le script le mieux adapté pour traiter cette requête. Une fois que la requête atteint un JSP de rendu du profil, le JSP appelle le service Forms OSGi.
 
 Pour plus d’informations sur la résolution du script sling, reportez-vous à [Aide-mémoire sur AEM Sling](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) ou à [Décomposition de l’URL d’Apache Sling](https://sling.apache.org/site/url-decomposition.html).
 
@@ -51,9 +52,9 @@ HTML5 forms ne met pas en cache les modèles avec des références d’images ou
 Le service Forms OSGi traite une requête en deux étapes :
 
 * **Génération de mises en page et d’état de formulaire initial ** : le service de rendu Forms OSGi appelle le composant Forms Cache pour déterminer si le formulaire a déjà été mis en cache et s’il n’a pas été invalidé. Si le formulaire est mis en cache et valide, il sert la sortie HTML du cache. Si le formulaire est invalidé, le service de rendu Forms OSGi génère la mise en page et l’état initial du formulaire au format XML. Ce fichier XML est transformé en mise en page HTML et en état de formulaire JSON initial par le service Forms OSGi, puis mis en mémoire cache pour les requêtes suivantes.
-* **Formulaires** préremplis : Lors du rendu, si un utilisateur demande des formulaires avec des données préremplies, le service de rendu Forms OSGi appelle le du service Forms et génère un nouvel état de formulaire avec des données fusionnées. Toutefois, dans la mesure où une mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel exécute uniquement la fusion des données et les scripts sur les données.
+* **Forms** prérempli : Lors du rendu, si un utilisateur demande des formulaires contenant des données préremplies, le service de rendu Forms OSGi appelle le conteneur de service Forms et génère un nouvel état de formulaire avec des données fusionnées. Toutefois, dans la mesure où une mise en page est déjà créée à l’étape précédente, cet appel est plus rapide que le premier. Cet appel exécute uniquement la fusion des données et les scripts sur les données.
 
-S’il existe une mise à jour dans le formulaire ou l’un des actifs utilisés dans le formulaire, le composant de cache de formulaire la détecte et le cache de ce formulaire particulier est invalidé. Une fois que le service Forms OSGi a terminé le traitement, le JSP du rendu du profil ajoute les références à la bibliothèque JavaScript et le style à ce formulaire et renvoie la réponse au client. Un serveur Web standard tel qu’[Apache](https://httpd.apache.org/) peut être utilisé ici avec la compression HTML activée. Un serveur Web réduirait considérablement la taille de la réponse, le trafic réseau et le temps nécessaire pour diffuser les données entre le serveur et l’ordinateur client.
+S’il existe une mise à jour dans le formulaire ou l’un des actifs utilisés dans le formulaire, le composant de cache de formulaire la détecte et le cache de ce formulaire particulier est invalidé. Une fois que le service Forms OSGi a terminé le traitement, le JSP du rendu du profil ajoute les références à la bibliothèque JavaScript et le style à ce formulaire et renvoie la réponse au client. Un serveur Web standard tel qu’[Apache](https://httpd.apache.org/) peut être utilisé ici avec la compression HTML activée. Un serveur Web réduirait considérablement la taille de réponse, le trafic réseau et le temps nécessaire pour diffuser les données entre le serveur et l’ordinateur client.
 
 When a user submits the form, the browser sends state of form in JSON format to the [submit service proxy](../../forms/using/service-proxy.md); then the submit service proxy generates a data XML using JSON data and submits that data XML to submit endpoint.
 
@@ -63,7 +64,7 @@ Vous avez besoin du package de module complémentaire d’AEM Forms pour autoris
 
 ### Composants OSGi (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** est le nom d’affichage du lot OSGi de formulaires HTML5 lorsqu’il est affiché à partir du d’assemblage de la console d’administration Felix (https://[hôte]:[port]/system/console/bundles).
+**L’Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** est le nom d’affichage du lot OSGi de formulaires HTML5 lorsqu’il est affiché à partir de la Vue d’assemblage de la console d’administration Felix (https://[hôte]:[port]/system/console/bundles).
 
 Ce composant contient les composants OSGi pour le rendu, la gestion de la mémoire cache et les paramètres de configuration.
 
@@ -71,7 +72,7 @@ Ce composant contient les composants OSGi pour le rendu, la gestion de la mémoi
 
 Ce service OSGi contient la logique de génération d’un XDP au format HTML et gère l’envoi d’un formulaire pour générer des données XML. Ce service utilise le conteneur de services de formulaires. Le conteneur de services de formulaires appelle en interne le composant natif `XMLFormService.exe` qui effectue le traitement.
 
-Si une demande de rendu est reçue, ce composant appelle le de service Forms pour générer des informations de mise en page et d’état qui sont traitées plus avant afin de générer des états DOM de formulaire HTML et JSON.
+Si une demande de rendu est reçue, ce composant appelle le conteneur de service Forms pour générer des informations de mise en page et d’état qui sont ensuite traitées pour générer des états DOM de formulaire HTML et JSON.
 
 Ce composant est également responsable de la génération de données XML à partir de l’état du formulaire au format JSON envoyé.
 
@@ -86,7 +87,7 @@ HTML5 Forms utilise la mise en mémoire cache pour optimiser le débit et le tem
    <th>Description</th>
   </tr>
   <tr>
-   <td>Aucun</td>
+   <td>Aucune</td>
    <td>Les artefacts ne sont pas mis en mémoire cache<br /> </td>
   </tr>
   <tr>
@@ -142,7 +143,7 @@ Pour plus d’informations sur les widgets et les contrats correspondants, voir 
 
 #### Style {#styling}
 
-Le style associé aux éléments HTML est ajouté en ligne ou en fonction du bloc CSS incorporé. Certains styles courants qui ne dépendent pas du formulaire font partie de la bibliothèque cliente CQ avec le  de xfaforms..
+Le style associé aux éléments HTML est ajouté en ligne ou en fonction du bloc CSS incorporé. Certains styles courants qui ne dépendent pas du formulaire font partie de la bibliothèque cliente CQ avec le nom de catégorie xfaforms.profil.
 
 En plus des propriétés de style par défaut, chaque élément du formulaire contient également certaines classes CSS en fonction du type d’élément, du nom et d’autres propriétés. A l’aide de ces classes, vous pouvez redéfinir le style des éléments en spécifiant leur propre CSS.
 
@@ -161,7 +162,7 @@ Le moteur de script client :
 
 #### Lots des ressources de localisation {#localization-resource-bundles}
 
-Les formulaires HTML5 prennent en charge l’italien (it), l’espagnol (es), le portugais brésilien (pt_BR), le chinois simplifié (zh_CN), le chinois traditionnel (support limité uniquement) (zh_TW), le coréen (ko_KR), l’anglais (en_US), le français (fr_FR), l’allemand (de_DE) et le japonais (ja). En fonction du jeu de paramètres régionaux reçus dans l’en-tête de requête, le lot de ressources correspondant est envoyé au client. Ce lot de ressources est ajouté au profil JSP sous la forme d’une bibliothèque cliente CQ sous le nom de catégorie **xfaforms.I18N**. Vous pouvez remplacer la logique du profil consistant à prendre les packages avec paramètres régionaux.
+Les formulaires HTML5 prennent en charge l’italien (it), l’espagnol (es), le portugais brésilien (pt_BR), le chinois simplifié (zh_CN), le chinois traditionnel (prise en charge limitée uniquement) (zh_TW), le coréen (ko_KR), l’anglais (fr_FR), le français (fr_FR), l’allemand (de_DE) et le japonais (ja). En fonction du jeu de paramètres régionaux reçus dans l’en-tête de requête, le lot de ressources correspondant est envoyé au client. Ce lot de ressources est ajouté au profil JSP sous la forme d’une bibliothèque cliente CQ sous le nom de catégorie **xfaforms.I18N**. Vous pouvez remplacer la logique du profil consistant à prendre les packages avec paramètres régionaux.
 
 ### Composants Sling (adobe-lc-forms-content-pkg.zip) {#sling-components-adobe-lc-forms-content-pkg-zip}
 
