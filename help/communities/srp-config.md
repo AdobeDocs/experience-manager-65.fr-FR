@@ -1,8 +1,8 @@
 ---
-title: Stockage   Configuration
-seo-title: Stockage   Configuration
-description: 'Accès à la console de configuration  '
-seo-description: 'Accès à la console de configuration  '
+title: Configuration du stockage
+seo-title: Configuration du stockage
+description: Accès à la console de configuration d'Enregistrement
+seo-description: Accès à la console de configuration d'Enregistrement
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,46 +10,49 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 5%
 
 ---
 
 
 # Configuration du stockage {#storage-configuration}
 
- configuration  est le moyen d’identifier le  choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC).
+La configuration des Enregistrements est le moyen d’identifier l’enregistrement choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC).
 
-Ce paramètre informe le code des communautés AEM du choix de l’implémentation du fournisseur de ressources  (SRP) à utiliser lors de l’accès au contenu UGC et doit refléter la topologie établie lors du déploiement d’AEM.
+Ce paramètre informe le code AEM Communities de la mise en oeuvre du fournisseur de ressources d’enregistrement (SRP) à utiliser lors de l’accès au CU et doit refléter la topologie établie lors du déploiement de l’AEM.
 
-Pour une discussion sur les options de   et les topologies de déploiement, visitez :
+Pour consulter les options d’enregistrement et les topologies de déploiement, visitez :
 
-* [Community Content Store](working-with-srp.md)
+* [Communauté Content Store](working-with-srp.md)
 * [Topologies recommandées](topologies.md)
 
-##  Console de configuration {#storage-configuration-console}
+## Console de configuration des Enregistrements {#storage-configuration-console}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
-Dans le  de l&#39;auteur , pour accéder à la console de configuration du .
+Dans l’environnement d’auteur, pour accéder à la console de configuration de l’enregistrement.
 
-* Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL configuration]**
+* Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > Configuration des **[!UICONTROL Enregistrements.]**
 
-Pour sélectionner une option  de autre que le JCR par défaut :
+Pour sélectionner une option d’enregistrement autre que le JCR par défaut :
 
 * Sélectionner une option
 * Configurer correctement
 
    * Voir les détails de la [sélection du MSRP](msrp.md#select-msrp)
    * Voir les détails de la [sélection de DSRP](dsrp.md#select-dsrp)
-   * Voir les détails de la [sélection d’ASRP](asrp.md#select-asrp)
+   * Voir les détails de la [sélection d&#39;ASRP](asrp.md#select-asrp)
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
-### A propos du  JCR {#about-jcr-storage}
+### À propos de l’Enregistrement JCR {#about-jcr-storage}
 
 Sachez que si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
 
-JCR *n’est pas* un magasin commun partagé par l’auteur et publie  . Le contenu de la communauté n’est visible que depuis l’auteur ou la publication  le  dans lequel il a été créé.
+JCR *n’est pas* un magasin commun partagé par l’auteur et les environnements de publication. Le contenu de la communauté n’est visible que depuis l’environnement d’auteur ou de publication dans lequel il a été créé.
 
 Consultez le magasin [](jsrp.md) JCR pour plus d’informations.
 
