@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 9%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ## Présentation {#overview}
 
-Le balisage du contenu généré par l’utilisateur (UGC) est le moyen par lequel les membres de la communauté peuvent aider d’autres membres à rechercher du contenu.
+Le balisage du contenu généré par l’utilisateur est le moyen par lequel les membres de la communauté peuvent aider les autres membres à rechercher du contenu.
 
-En règle générale, les balises sont appliquées par les auteurs et les administrateurs dans le  l’auteur . Le balisage UGC est unique dans la mesure où les balises UGC sont appliquées par les membres de la communauté dans l’environnement de publication.
+En règle générale, les balises sont appliquées par les auteurs et les administrateurs dans l’environnement d’auteur. Le balisage UGC est unique en ce sens que les balises UGC sont appliquées par les membres de la communauté dans l’environnement de publication.
 
-La balise   et les taxonomies sont identiques pour les deux applications.
+Les espaces de nommage de balise et les taxonomies sont identiques pour les deux applications.
 
 ## Fonctionnalités des communautés {#communities-features}
 
-Les fonctionnalités des communautés AEM qui peuvent être configurées pour autoriser le balisage sont les suivantes :
+Les fonctionnalités AEM Communities qui peuvent être configurées pour autoriser le balisage sont les suivantes :
 
 * [Blog](blog-feature.md)
 * [Calendrier](calendar.md)
@@ -37,21 +40,21 @@ Les fonctionnalités des communautés AEM qui peuvent être configurées pour au
 
 ## Administration des balises {#administering-tags}
 
-Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour la création et la gestion des balises   et taxonomies.
+Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour la création et la gestion des espaces de nommage de balises et des taxonomies.
 
 Voir [Tag Essentials](tag.md) pour en savoir plus sur les développeurs.
 
-Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour l’ajout d’un composant Social Tag Cloud à une page afin de faciliter la recherche d’UGC publié à l’aide des balises appliquées.
+Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour ajouter un composant Social Tag Cloud à une page afin de faciliter la recherche d’UGC publié à l’aide des balises appliquées.
 
-### Autorisations de balise {#tag-permissions}
+### Permissions de balise {#tag-permissions}
 
-Les autorisations par défaut sont définies de manière à ne pas autoriser les balises  les à être lus par tout le monde dans le de publication .
+Les autorisations par défaut sont définies de manière à ne pas autoriser la lecture des espaces de nommage de balises par tous les utilisateurs de l’environnement de publication.
 
-Etant donné que les balises sont appliquées à l’UGC dans le  de publication , l’autorisation de lecture doit être activée pour les membres de la communauté afin qu’ils puissent sélectionner les balises à appliquer.
+Les balises étant appliquées à l’UGC dans l’environnement de publication, les autorisations de lecture doivent être activées pour les membres de la communauté afin qu’ils puissent sélectionner les balises à appliquer.
 
 See [Setting Tag Permissions](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Voici comment il s’affiche dans CRXDE lorsqu’un administrateur applique des autorisations de lecture `/etc/tag/discussions` pour le groupe `Community Engage Members`.
+Voici comment il apparaît dans CRXDE lorsqu’un administrateur applique des autorisations de lecture `/etc/tag/discussions` au groupe `Community Engage Members`.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![balises-permissions](assets/tag-permissions.png)
 
