@@ -1,8 +1,8 @@
 ---
-title: 'Communautés '
-seo-title: 'Communautés '
-description: Les membres de la communauté interagissent avec d’autres membres par courrier électronique
-seo-description: Les membres de la communauté interagissent avec d’autres membres par courrier électronique
+title: Abonnements des communautés
+seo-title: Abonnements des communautés
+description: Les membres de la communauté interagissent avec d’autres membres par courrier électronique.
+seo-description: Les membres de la communauté interagissent avec d’autres membres par courrier électronique.
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,60 +10,63 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
 
-# Communautés {#communities-subscriptions}
+# Abonnements des communautés {#communities-subscriptions}
 
 ## Présentation {#overview}
 
-Depuis le [FP1](deploy-communities.md#latestfeaturepack)des communautés, les membres de la communauté peuvent interagir avec la communauté par courriel à l’aide d’une fonction appelée  .
+À compter de la section Collectivités [FP1](deploy-communities.md#latestfeaturepack), les membres de la communauté peuvent interagir avec la communauté par courriel à l’aide d’une fonction appelée abonnements.
 
-  sont similaires aux [notifications](notifications.md) , car les membres peuvent s&#39;abonner à des articles de blog, des sujets de forum ou des questions sur la qualité de vie.
+Les Abonnements sont similaires aux [notifications](notifications.md) , car les membres peuvent s&#39;abonner lorsqu&#39;ils suivent des articles de blog, des sujets de forum ou des questions sur la qualité de l&#39;expérience.
 
-Ce qui distingue   des notifications est :
+Ce qui distingue les abonnements des notifications est :
 
-* Les membres ne peuvent s&#39;abonner lorsqu&#39;ils suivent les autres membres.
-* La seule action que les membres doivent effectuer est de sélectionner `Email Subscriptions` quand ils suivent.
+* Les membres ne peuvent s&#39;abonner lorsqu&#39;ils suivent d&#39;autres membres.
+* La seule action que les membres doivent entreprendre est de sélectionner `Email Subscriptions` quand ils suivent.
 * Lorsque la réponse par courrier électronique est configurée, les membres peuvent effectivement publier du contenu en répondant simplement au courrier électronique reçu.
 
 ### Conditions requises {#requirements}
 
 **Configurer le courrier électronique**
 
-Le courrier électronique doit être configuré pour que   être fonctionnel et que les membres puissent répondre par courrier électronique.
+Le courriel doit être configuré pour que les abonnements soient fonctionnels et que les membres puissent répondre par courriel.
 
-Pour plus d’informations sur la configuration du courrier électronique, voir [Configuration du courrier électronique](email.md).
+Pour obtenir des instructions sur la configuration du courrier électronique, voir [Configuration du courrier électronique](email.md).
 
-**Activer   et suivre**
+**Activer les Abonnements et suivre**
 
-Les composants doivent être configurés afin d’activer   *et les* éléments suivants. Les fonctionnalités qui permettent   sont [blog](blog-feature.md), [forum](forum.md) et [QnA](working-with-qna.md).
+Les composants doivent être configurés pour activer les abonnements *et les* éléments suivants. Les fonctionnalités qui permettent aux abonnements sont [blog](blog-feature.md), [forum](forum.md) et [QnA](working-with-qna.md).
 
-##  de  de suivi {#subscriptions-from-following}
+## abonnements de suivi {#subscriptions-from-following}
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![abonnement suivant](assets/subscription-following.png)
 
-Le bouton **Suivre** permet de suivre les entrées sous forme de  , de  et/ou de notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection.
+Le bouton **Suivre** permet de suivre les entrées comme activités, abonnements et/ou notifications. Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection.
 
-Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivant**. Pour des raisons pratiques, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
+Si une méthode de suivi est sélectionnée, le texte du bouton devient **Suivant**. Pour plus de commodité, il est possible de choisir `Unfollow All` de désactiver toutes les méthodes.
 
-Le bouton **Suivre** inclut l’ `Email Subscriptions` option uniquement lorsqu’un forum, une évaluation qualité de service ou un blog est configuré pour activer l’ de  par courrier électronique. Ce bouton apparaît :
+Le bouton **Suivre** inclut l&#39; `Email Subscriptions` option uniquement lorsqu&#39;un forum, une QnA ou un blog est configuré pour activer les abonnements de messagerie. Ce bouton apparaît :
 
-* Sur la page principale des fonctionnalités du forum activé, QnA ou blog enverra un courrier électronique à tous les   sous cette fonctionnalité.
+* Sur la page principale de la fonctionnalité pour le forum activé, QnA, ou blog Envoie un courriel pour toute l&#39;activité sous cette fonction.
 
-* Pour une entrée spécifique, telle qu’un sujet de forum, une question sur la qualité de l’expérience ou un article de blog, enverra un courriel lorsqu’il y a   pour cette entrée spécifique.
+* Pour une entrée spécifique, telle qu&#39;un sujet de forum, une question QnA ou un article de blog Envoie un courriel lorsqu&#39;il y a activité pour cette entrée spécifique.
 
-## Réponse par courriel {#reply-by-email}
+## Répondre par courriel {#reply-by-email}
 
 Lorsque le courrier électronique est [configuré pour répondre par courrier électronique](email.md#configure-polling-importer), le membre qui s’est abonné reçoit un courrier électronique contenant le contenu publié et un lien vers le contenu en ligne.
 
-S’ils répondent à l’e-mail, le contenu qu’ils saisissent dans la réponse apparaîtra comme contenu en ligne.
+S&#39;ils répondent à l&#39;e-mail, le contenu qu&#39;ils saisissent dans la réponse apparaîtra en ligne.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![email-response](assets/email-reply.png)
 
-Le temps nécessaire à la publication d’une réponse est contrôlé par l’intervalle [de mise à jour de l’importateur d’](email.md#configure-polling-importer)interrogation.
+Le temps nécessaire à la publication d&#39;une réponse est contrôlé par l&#39;intervalle [de mise à jour de l&#39;importateur d&#39;](email.md#configure-polling-importer)interrogation.
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![AQ](assets/qa.png)
 
