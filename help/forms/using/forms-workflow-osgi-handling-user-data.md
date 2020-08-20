@@ -8,7 +8,10 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+workflow-type: tm+mt
+source-wordcount: '1011'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +23,7 @@ Les flux de travail AEM basé sur l’utilisation de Forms vous permettent d’a
 Un flux de travail basé sur l’utilisation de Forms peut être déclenché ou lancé à l’aide de l’une des méthodes suivantes :
 
 * Envoi d’une demande depuis la boîte de réception AEM
-* Envoi d’une demande depuis l’application AEM Forms
+* Submitting an application from AEM [!DNL Forms] App
 * Envoi d’un formulaire adaptatif
 * Utilisation d’un dossier de contrôle
 * Envoi d’une communication interactive ou d’une lettre
@@ -41,8 +44,8 @@ Les emplacements de référentiel par défaut où la charge utile, les brouillon
  <tbody>
   <tr>
    <td> </td>
-   <td>AEM 6.4 Forms</td>
-   <td>AEM 6.3 Forms</td>
+   <td><b>aem 6.4 [ ! DNL Forms]</b></td>
+   <td><b>aem 6.3 [ ! DNL Forms]</b></td>
   </tr>
   <tr>
    <td><strong>Instance <br /> de flux de travail </strong></td>
@@ -87,9 +90,11 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
 1. Selon les informations disponibles, effectuez l’une des requêtes suivantes :
 
    * Exécutez la commande suivante si l’initiateur de flux de travail est connu :
+
    `SELECT &ast; FROM [cq:Workflow] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[initiator]='*initiator-ID*'`
 
-   * Exécutez ce qui suit si l’utilisateur dont vous trouvez les données est le responsable actuel du flux de travail :
+   * Exécutez les actions suivantes si l’utilisateur dont vous recherchez les données est la personne désignée pour le flux de travail actuel :
+
    `SELECT &ast; FROM [cq:WorkItem] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[assignee]='*assignee-id*'`
 
    La requête renvoie l’emplacement de toutes les instances de flux de travail de l’initiateur de flux de travail spécifié ou de la personne à laquelle le flux de travail est actuellement assigné.
@@ -104,7 +109,7 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
 
 1. In the workflow instance node, navigate to `data/payload/`. La propriété `path` enregistre le chemin de la charge utile de l’instance de flux de travail. Vous pouvez accéder au chemin d’accès des données stockées dans la charge utile.
 
-   ![payload-path](assets/payload-path.png)
+   ![chemin_charge](assets/payload-path.png)
 
 1. Accédez aux emplacements des brouillons et de l’historique de l’instance de flux de travail.
 
@@ -116,9 +121,9 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
 
 1. Répétez les étapes 3 à 5 pour toutes les instances de flux de travail renvoyées par la requête à l’étape 2.
 
->[!NOTE]
->
->L’application AEM Forms stocke également les données en mode hors ligne. Les données d’une instance de flux de travail peuvent être enregistrées localement sur des appareils individuels et envoyées au serveur Forms lorsque l’application se synchronise avec le serveur.
+   >[!NOTE]
+   >
+   >AEM [!DNL Forms] app also stores data in offline mode. It is possible that data for a workflow instance is locally stored on individual devices and gets submitted to the [!DNL Forms] server when the app synchronizes with the server.
 
 ### Suppression de données utilisateur {#delete-user-data}
 
@@ -136,9 +141,10 @@ Vous devez être un administrateur AEM pour supprimer des données utilisateur d
    1. Accédez à `https://'[server]:[port]'/aem/start.html` et connectez-vous avec les informations d’identification de l’administrateur.
    1. Accédez à **[!UICONTROL Outils > Flux de travail > Modèles]**.
    1. Sélectionnez les instances de flux de travail correspondant à l’utilisateur et appuyez sur **[!UICONTROL Arrêter]** pour arrêter les instances en cours d’exécution.
-   For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
 
-1. Go to CRXDE Lite console, navigate to the payload path for a workflow instance, and delete the `payload` node.
+      For more information about working with workflow instances, see [Administering Workflow Instances](/help/sites-administering/workflows-administering.md).
+
+1. Go to [!DNL CRXDE Lite] console, navigate to the payload path for a workflow instance, and delete the `payload` node.
 1. Accédez au chemin d’accès des brouillons d’une instance de flux de travail et supprimez le nœud `draft`.
 1. Navigate to the history path for a workflow instance, and delete the `history` node.
 1. Navigate to the workflow instance path for a workflow instance, and delete the `[workflow-instance-ID]` node for the workflow.
@@ -148,7 +154,7 @@ Vous devez être un administrateur AEM pour supprimer des données utilisateur d
    >La suppression du nœud d’une instance de flux de travail entraîne la suppression de l’instance de flux de travail pour tous les participants au flux.
 
 1. Répétez les étapes 2 à 6 pour toutes les instances de flux de travail identifiées pour un utilisateur.
-1. Identifiez et supprimez les données de brouillon et d’envoi hors ligne dans la boîte d’envoi de l’application AEM Forms des participants au flux de travail afin d’éviter tout envoi au serveur.
+1. Identify and delete offline draft and submission data from AEM [!DNL Forms] app outbox of workflow participants to avoid any submission to the server.
 
 Vous pouvez également utiliser des API pour accéder et supprimer des nœuds et des propriétés. Consultez les documents suivants pour plus d’informations.
 
