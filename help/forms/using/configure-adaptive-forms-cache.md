@@ -10,18 +10,21 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 76%
 
 ---
 
 
-# Configurer le cache de formulaires adaptatifs{#configure-adaptive-forms-cache}
+# Configurer le cache de formulaires adaptatifs {#configure-adaptive-forms-cache}
 
 Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux données, réduire le temps de réponse et améliorer les vitesses d’entrée/sortie (E/S). Le cache de formulaires adaptatifs stocke uniquement le contenu HTML et la structure JSON d’un formulaire adaptatif sans enregistrer les données pré-renseignées. Cela permet de réduire le temps nécessaire pour effectuer le rendu d’un formulaire ou d’un document adaptatif sur le client. Il est spécialement conçu pour les formulaires adaptatifs et prend également en charge les documents adaptatifs.
 
 >[!NOTE]
 >
->Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le répartiteur AEM pour masquer les bibliothèques client (CSS et Javascript) d’un formulaire ou d’un document adaptatif.
+>When using the adaptive forms cache, use the AEM [!DNL Dispatcher] to cache client libraries (CSS and JavaScript) of an adaptive form or document.
 
 >[!NOTE]
 >
@@ -29,11 +32,11 @@ Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux don
 
 ## Configurer le cache {#configure-the-cache}
 
-Effectuez les étapes suivantes pour configurer le cache des formulaires adaptatifs :
+Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
 1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration.
-1. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   
+1. Cliquez sur la **[!UICONTROL configuration de canal web de communication interactive de formulaire adaptatif]** pour éditer ses valeurs de configuration.
+1. In the [!UICONTROL edit configuration values] dialog, specify the maximum number of forms or documents an instance of the AEM [!DNL Forms] server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. La valeur par défaut est 100.   
 
    >[!NOTE]
    >
@@ -41,5 +44,4 @@ Effectuez les étapes suivantes pour configurer le cache des formulaires adaptat
 
    ![Boîte de dialogue de configuration du cache HTML de formulaires adaptatifs](assets/cache-configuration-edit.png)
 
-1. Cliquez sur **Enregistrer** pour enregistrer la configuration 
-
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration 
