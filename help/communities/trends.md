@@ -1,8 +1,8 @@
 ---
 title: Tendances d’activité
 seo-title: Tendances d’activité
-description: Ajouter un composant Liste d'Activité communautaire à une page
-seo-description: Ajouter un composant Liste d'Activité communautaire à une page
+description: ajouter un composant Liste d'Activité communautaire à une page
+seo-description: ajouter un composant Liste d'Activité communautaire à une page
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 30%
+ht-degree: 29%
 
 ---
 
@@ -27,15 +27,15 @@ The `Community Activity List` component provides the ability to add trending inf
 
 Le document décrit :
 
-* Ajouter le `Community Activity List` composant à un site [](/help/communities/overview.md#community-sites)communautaire.
+* ajouter le `Community Activity List` composant à un site [](/help/communities/overview.md#community-sites)communautaire.
 
 * Configuration settings for the `Community Activity List` component.
 
 ### Condition requise {#requirement}
 
-Les données relatives au site `Community Activity List` sont disponibles uniquement lorsque Adobe Analytics est sous licence et configuré pour le site communautaire.
+Les données pour le site `Community Activity List` sont disponibles uniquement lorsque Adobe Analytics est sous licence et configuré pour le site communautaire.
 
-Voir Configuration [Analytics pour les fonctionnalités](/help/communities/analytics.md)des communautés.
+Voir Configuration [d’Analytics pour les fonctionnalités](/help/communities/analytics.md)des communautés.
 
 ### Adding a Community Activity List to a Page {#adding-a-community-activity-list-to-a-page}
 
@@ -55,11 +55,11 @@ Placé pour la première fois sur une page d’un site de communauté, voici à 
 
 Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![configurer](assets/configure-new.png)
 
 Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour les fichiers transférés apparaissent :
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![propriétés](assets/activity-list-properties.png)
 
 * **Type**
 
@@ -126,5 +126,5 @@ Cette option est cochée par défaut.
 
 **Configuration du contenu** de tendance : Type = Contenu, type d’Activité = Publications
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![composants](assets/activity-list-components.png)
 
