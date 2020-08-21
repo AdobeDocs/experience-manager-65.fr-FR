@@ -9,10 +9,10 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 3cbcd23254e16231a199276aa2f9e70d6ff39b34
 workflow-type: tm+mt
 source-wordcount: '2042'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ Pour créer un formulaire adaptatif, suivez la procédure décrite ci-après.
 
 1. Entrez vos informations d’identification dans la page de connexion d’AEM.
 
-   Une fois connecté, dans le coin supérieur gauche, appuyez sur **[!UICONTROL Adobe Experience Manager > Formulaires > Formulaires et documents]**.
+   After you are logged in, in the top-left corner, tap **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**.
 
    >[!NOTE]
    >
