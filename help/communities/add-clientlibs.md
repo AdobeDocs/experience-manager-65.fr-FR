@@ -1,8 +1,8 @@
 ---
-title: Ajouter des bibliothèques clientes
-seo-title: Ajouter des bibliothèques clientes
-description: Ajouter un dossier ClientLibrary
-seo-description: Ajouter un dossier ClientLibrary
+title: ajouter les bibliothèques clientes
+seo-title: ajouter les bibliothèques clientes
+description: ajouter un dossier ClientLibrary
+seo-description: ajouter un dossier ClientLibrary
 uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
 
-# Ajouter des bibliothèques clientes {#add-clientlibs}
+# ajouter les bibliothèques clientes {#add-clientlibs}
 
-## Ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
-Créez un dossier ClientLibraryFolder nommé `clientlibs`qui contiendra les fichiers JS et CSS utilisés pour générer les pages de votre site.
+Créez un dossier ClientLibraryFolder nommé `clientlibs` qui contiendra les fichiers JS et CSS utilisés pour générer les pages de votre site.
 
-La valeur de `categories`propriété donnée à cette bibliothèque cliente est l’identifiant utilisé pour inclure directement cette bibliothèque cliente à partir d’une page de contenu ou pour l’incorporer à d’autres bibliothèques clientes.
+La valeur `categories` de propriété donnée à cette bibliothèque cliente est l’identifiant utilisé pour inclure directement cette bibliothèque cliente à partir d’une page de contenu ou pour l’incorporer à d’autres bibliothèques clientes.
 
 1. Using **CRXDE Lite**, expand `/etc/designs`
 
@@ -36,7 +36,7 @@ La valeur de `categories`propriété donnée à cette bibliothèque cliente est 
 
 1. Cliquez sur **OK**
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![add-client-library](assets/add-client-library.png)
 
 Dans l’onglet **Propriétés** du nouveau `clientlibs` noeud, saisissez la propriété **catégories** :
 
@@ -46,7 +46,7 @@ Dans l’onglet **Propriétés** du nouveau `clientlibs` noeud, saisissez la pro
 * Cliquez sur **Ajouter**
 * Cliquez sur **Enregistrer tout**
 
-Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : Ajoutez l’espace réservé `js.tx`t et **`css.txt`** les fichiers. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
+Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : ajoutez l’espace réservé `js.tx`t et **`css.txt`** les fichiers. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
 
 1. Right-click **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Sélectionner **Créer un fichier...**
@@ -55,7 +55,7 @@ Remarque : la préface de la valeur catégories avec &quot;applications&quot;. e
 1. Enter **Name:** `js.txt`
 1. Cliquez sur **Enregistrer tout**
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![clientlibs-css](assets/clientlibs-css.png)
 
 La première ligne des fichiers css.txt et js.txt identifie l’emplacement de base à partir duquel les listes de fichiers suivantes doivent être trouvées.
 
@@ -89,7 +89,7 @@ Dans ce cas, les clients SCF les plus basiques qui sont les clientlibs d&#39;aut
 * Nom (name) : **`embed`**
 * Type : **`String`**
 * Cliquez sur **`Multi`**
-* Valeur: **`cq.social.scf`**
+* Valeur : **`cq.social.scf`**
 
    * Il affiche une boîte de dialogue, **`+`** cliquez après chaque entrée pour ajouter les catégories clientlib suivantes :
 
@@ -103,11 +103,11 @@ Dans ce cas, les clients SCF les plus basiques qui sont les clientlibs d&#39;aut
 
 * Cliquez sur **Enregistrer tout**
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![scf-clientlibs](assets/scf-clientlibs.png)
 
 Voici comment `/etc/designs/an-scf-sandbox/clientlibs` doit s’afficher le référentiel :
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![scf-clientlibs-vue](assets/scf-clientlibs1.png)
 
 ### Inclure les bibliothèques clientes dans le modèle PlayPage {#include-clientlibs-in-playpage-template}
 
@@ -115,11 +115,11 @@ Sans inclure la catégorie `apps.an-scf-sandbox` ClientLibraryFolder sur la page
 
 Par exemple, sans inclure les clientlibs, le composant de commentaires SCF apparaît sans style :
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![clientlibs-comment](assets/clientlibs-comment.png)
 
 Une fois les clientlibs apps.an-scf-sandbox inclus, le composant de commentaires SCF s’affiche avec le style suivant :
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![clientlibs-comment-style](assets/clientlibs-comment1.png)
 
 L’instruction include appartient à la `head` section du `html` script. La valeur par défaut **`foundation head.jsp`** inclut un script qui peut être superposé : **`headlibs.jsp`**.
 
@@ -150,7 +150,7 @@ Chargez votre site Web dans le navigateur et vérifiez si l’arrière-plan n’
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![communauté-play](assets/community-play.png)
 
 ### Sauver votre travail jusqu&#39;à présent {#saving-your-work-so-far}
 
@@ -160,7 +160,7 @@ Ce paquet existe sur le tutoriel [Créer un exemple de page](/help/communities/c
 
 Pour créer un pack :
 
-* Dans CRXDE Lite, cliquez sur l’icône [Package](https://localhost:4502/crx/packmgr/)
+* Dans le CRXDE Lite, cliquez sur l’icône [Package](https://localhost:4502/crx/packmgr/)
 * Cliquez sur **Créer un package**
 
    * Nom du package : an-scf-sandbox-minimal-pkg
