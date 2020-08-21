@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 4%
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 # Blog Essentials {#blog-essentials}
 
-Depuis AEM 6.1 Communities, un blog est une activité communautaire. Les articles de blog sont maintenant publiés depuis l&#39;environnement de publication, où auparavant les articles de blog ne pouvaient être créés que dans l&#39;environnement de l&#39;auteur et publiés.
+Depuis AEM 6.1 Communautés, un blog est une activité communautaire. Les articles de blog sont maintenant publiés depuis l&#39;environnement de publication, où auparavant les articles de blog ne pouvaient être créés que dans l&#39;environnement de l&#39;auteur et publiés.
 
 Les articles de blog peuvent maintenant être créés par n&#39;importe quel membre de la communauté, sauf s&#39;ils sont réservés aux membres privilégiés.
 
@@ -71,8 +71,8 @@ La fonction de blog est composée de deux composants principaux disponibles en a
 
 | **resourceType** | social/journal/composants/hbs/barre latérale |
 |---|---|
-| [**inclus **](/help/communities/scf.md#add-or-include-a-communities-component) | Non |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**inclus**](/help/communities/scf.md#add-or-include-a-communities-component) | Non |
+| [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **propriétés** | voir Fonctionnalité [du blog](/help/communities/blog-feature.md) |
@@ -96,7 +96,7 @@ Une structure de site communautaire qui inclut la fonction [](/help/communities/
 L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération du contenu](/help/communities/moderate-ugc.md)généré par l’utilisateur.
 
-Depuis AEM 6.1 Communities, l’utilisation d’un magasin [](/help/communities/working-with-srp.md) commun pour UGC inclut l’accès par programmation à UGC, quelle que soit l’option d’enregistrement choisie (telle que ASRP, MSRP ou JSRP).
+AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](/help/communities/working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
 **L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
@@ -107,21 +107,21 @@ Voir :
 * [Accès à l&#39;UGC avec SRP](/help/communities/accessing-ugc-with-srp.md) - directives de codage.
 * [SocialUtils Refactoring](/help/communities/socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
 
-## Principal Editeur {#primary-publisher}
+## Éditeur Principal {#primary-publisher}
 
-Lorsque le déploiement est une batterie de publication, il est nécessaire d’identifier un éditeur principal qui interrogera les articles dont la publication est planifiée.
+Lorsque le déploiement est une batterie de publication, il est nécessaire d’identifier un éditeur Principal qui interrogera les articles dont la publication est planifiée.
 
-Voir [Principal Publisher](/help/communities/deploy-communities.md#primary-publisher) pour plus d’informations.
+Voir Editeur [](/help/communities/deploy-communities.md#primary-publisher) Principal pour plus d’informations.
 
 ## Autoriser les médias enrichis {#allowing-rich-media}
 
-La plate-forme AEM bloque les liens d’autres sites Web pour empêcher les attaques XSS, comme décrit dans la section
+La plateforme AEM bloque les liens d’autres sites Web pour empêcher les attaques XSS, comme décrit dans la section
 
 * [Protection contre les scripts de site à site (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-Depuis AEM 6.2, les modifications qui devaient auparavant être apportées manuellement sont incluses dans le fichier de configuration par défaut d’AntiSamy.
+A partir de AEM 6.2, les modifications qui devaient être effectuées manuellement sont incluses dans le fichier de configuration par défaut d&#39;AntiSamy.
 
 Les médias enrichis sont incorporés dans un article de blog en sélectionnant l&#39; `Embed Media from External Sites` icône :
 
-![chlimage_1-471](assets/chlimage_1-471.png)
+![media](assets/media-icon.png)
 
