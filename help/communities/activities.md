@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Flux d’activités
 seo-title: Fonctionnalité Flux d’activités
-description: Activités d'un membre de la communauté inscrit
-seo-description: Activités d'un membre de la communauté inscrit
+description: activités d'un membre de la communauté inscrit
+seo-description: activités d'un membre de la communauté inscrit
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -29,7 +29,7 @@ La possibilité de suivi ajoute une autre vue des activités lorsque des membres
 
 Le document décrit :
 
-* Ajouter le composant Flux d’Activité à un site AEM
+* ajouter le composant Flux d&#39;Activité à un site AEM
 * Paramètres de configuration du composant Flux d’Activité
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
@@ -44,13 +44,13 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/essentials-activities.md#essentials-for-client-side) are included, this is how the `Activity Streams` component will appear :
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![activité-flux](assets/activity-component.png)
 
 ### Configuration du composant Flux d’activités {#configuring-activity-streams}
 
 Select the placed `Activity Streams` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configurer](assets/configure-new.png)
 
 Dans l’onglet **Activités de l’utilisateur**, spécifiez les activités à afficher :
 
@@ -80,7 +80,7 @@ Dans l’onglet **Activités de l’utilisateur**, spécifiez les activités à 
 
 Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendar, filelibrary et les commentaires.](/help/communities/calendar.md)[](/help/communities/file-library.md)[](/help/communities/comments.md)
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![vue suivante](assets/following-activities.png)
 
 Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md)ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La `Email Subscriptions` sélection n’est présente que lorsqu’elle est configurée.
 
