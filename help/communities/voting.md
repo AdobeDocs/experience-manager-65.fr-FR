@@ -1,8 +1,8 @@
 ---
 title: Utilisation du composant Vote
 seo-title: Utilisation du composant Vote
-description: Ajout du composant Vote à une page
-seo-description: Ajout du composant Vote à une page
+description: ajouter le composant Voting à une page
+seo-description: ajouter le composant Voting à une page
 uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 25%
 
 ---
 
@@ -21,23 +24,23 @@ The `Voting` component is a useful tool that allows community members to rate a 
 
 ## Ajout d’un composant Vote à une page {#adding-voting-to-a-page}
 
-Pour ajouter un `Voting` composant à une page en mode d’auteur, utilisez le navigateur de composants pour le localiser `Communities / Voting` et le faire glisser vers son emplacement sur une page, par exemple une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
+Pour ajouter un `Voting` composant à une page en mode création, utilisez l’explorateur de composants pour le localiser `Communities / Voting` et le faire glisser sur une page, par exemple une position relative à la fonction sur laquelle les utilisateurs peuvent voter.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
 When the [required client-side libraries](essentials-voting.md#essentials-for-client-side) are included, this is how the `Voting` component will appear.
 
-![chlimage_1-307](assets/chlimage_1-307.png)
+![composante de vote](assets/voting-component.png)
 
 ## Configuration du composant Vote {#configuring-voting}
 
 Select the placed `Voting` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-308](assets/chlimage_1-308.png)
+![configurer](assets/configure-new.png)
 
 Under the **[!UICONTROL Texts &amp; Labels]** tab, specify the properties used to record votes.
 
-![chlimage_1-309](assets/chlimage_1-309.png)
+![libellé de vote](assets/voting-label.png)
 
 * **[!UICONTROL Etiquette de réponse positive]**
 
