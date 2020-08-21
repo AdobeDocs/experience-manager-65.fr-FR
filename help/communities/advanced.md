@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 La notation avancée permet l&#39;attribution de badges pour identifier les membres comme experts. La notation avancée attribue des points en fonction de la quantité ** et de la qualité du contenu créé par un membre, tandis que la notation de base attribue des points simplement en fonction de la quantité de contenu créé.
 
-Cette différence est due au moteur de notation utilisé pour calculer les scores. Le moteur de score de base applique des maths simples. Le moteur de score avancé est un algorithme adaptatif qui récompense les membres actifs qui contribuent à un contenu pertinent et précieux, déduit par le traitement du langage naturel (NLP) d’une rubrique.
+Cette différence est due au moteur de notation utilisé pour calculer les scores. Le moteur de score de base applique des maths simples. Le moteur de score avancé est un algorithme adaptatif qui récompense les membres principaux qui contribuent à un contenu pertinent et précieux, déduit par le traitement du langage naturel (NLP) d’une rubrique.
 
 Outre la pertinence du contenu, les algorithmes de notation prennent en compte les activités membres, telles que le vote et le pourcentage de réponses. Bien que le score de base les inclut quantitativement, le score avancé les utilise de manière algorithmique.
 
@@ -62,9 +62,9 @@ Les différences dans la configuration des règles de notation et de badge sont 
 
 Le moteur d’évaluation avancé fournit une configuration OSGi avec des paramètres qui affectent l’algorithme d’évaluation avancé.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![moteur de score avancé](assets/advanced-scoring-engine.png)
 
-* **poids de score**
+* **Poids de score**
 
    Pour une rubrique, spécifiez le verbe qui doit recevoir la priorité la plus élevée lors du calcul du score. Une ou plusieurs rubriques peuvent être entrées, mais limitées à **un verbe par rubrique**. Voir [Rubriques et verbes](/help/communities/implementing-scoring.md#topics-and-verbs).
 Entré sous forme `topic,verb` d’échappement de la virgule. Par exemple :
@@ -93,7 +93,7 @@ Dans le score de base, la quantité nécessaire pour gagner un badge est connue.
 
 Dans le cadre d’un score avancé, la quantité nécessaire est constamment ajustée en fonction de la quantité de données de qualité au sein du système. Le score est calculé en permanence de la même manière qu&#39;une courbe en cloche.
 
-Si un membre a gagné un badge d&#39;expert sur un sujet qui n&#39;est plus actif, il est possible qu&#39;il perde son badge à cause de la dégradation au fil du temps.
+Si un membre a gagné un badge d&#39;expert sur un sujet qui n&#39;est plus principal, il est possible qu&#39;il perde son badge à cause de la dégradation au fil du temps.
 
 ### scoringType {#scoringtype}
 
@@ -103,7 +103,7 @@ Pour appeler le moteur d’évaluation avancé, la valeur `scoringType`doit `adv
 
 Voir Sous-règles [](/help/communities/implementing-scoring.md#scoring-sub-rules)de score.
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![type de score avancé](assets/advanced-scoring-type.png)
 
 ### Mots-clés {#stopwords}
 
@@ -123,14 +123,14 @@ Les propriétés de règle de badge avancées diffèrent des propriétés [de r�
 
 Au lieu d&#39;associer des points à une image de badge, il suffit d&#39;identifier le nombre d&#39;experts autorisés et l&#39;image de badge à attribuer.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![règles avancées de badge](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Type</th>
-   <th>Description de la valeur</th>
+   <th>Valeur Description</th>
   </tr>
   <tr>
    <td>badgingPath</td>
@@ -165,7 +165,7 @@ Cette version bêta comprend un badge d&#39;expert basé sur la récompense :
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![badge d&#39;expert](assets/included-badge.png)
 
 Pour que le badge d&#39;expert s&#39;affiche comme une récompense pour l&#39;activité, assurez-vous que :
 
