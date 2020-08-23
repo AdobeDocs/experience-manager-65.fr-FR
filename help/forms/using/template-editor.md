@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1984'
+ht-degree: 90%
 
 ---
 
@@ -52,13 +55,13 @@ Lorsque vous ouvrez un modèle à des fins d’édition, vous pouvez voir les co
    * **Activer/désactiver le panneau latéral** : permet d’afficher ou de masquer la barre latérale.
    * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication, les vignettes, les bibliothèques côté client, la stratégie de page et la bibliothèque côté client de conceptions de pages.
    * **Émulateur** : permet de simuler et de personnaliser l’aspect des différents dispositifs.
-   * **Sélecteur de calque :** Permet de modifier le calque.
+   * **Sélecteur de calques :** Permet de modifier le calque.
 Vous pouvez choisir le calque **Structure** ou le calque **Contenu initial**. Le calque Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le calque Contenu initial vous permet de personnaliser le contenu du formulaire.
 
-   * **:** Vous permet de  l’aspect du modèle lorsque vous le publiez. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
+   * **Prévisualisation :** Permet de prévisualisation l’aspect du modèle lorsque vous le publiez. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
 
 * **Barre latérale :** fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
-* **Barre d’outils du composant :** Lorsque vous sélectionnez un composant, une barre d’outils s’affiche pour vous permettre de le personnaliser.
+* **Barre d&#39;outils de composants :** Lorsque vous sélectionnez un composant, une barre d’outils s’affiche, vous permettant de personnaliser le composant.
 * **Page** : la zone dans laquelle vous ajoutez le contenu pour créer le modèle.
 
 Voir [Présentation de la création de formulaires adaptatifs](../../forms/using/introduction-forms-authoring.md) pour découvrir l’éditeur d’interface utilisateur tactile.
@@ -80,7 +83,7 @@ Lorsque vous sélectionnez le calque de structure dans l’éditeur de modèles,
 
 Conteneurs de dispositions dans le calque de structure
 
-**A.** de mise en page pour le composant d’en-tête **B.** de mise en page pour le composant Pied de page
+**A.** conteneur de mise en page pour le composant d’en-tête **B.** conteneur de mise en page pour le composant Pied de page
 
 Faites glisser et déposez le composant d’en-tête de formulaire adaptatif dans le conteneur de dispositions au-dessus du conteneur de formulaires adaptatifs. Une fois que vous avez ajouté le composant, vous pouvez spécifier les propriétés qui vous permettent d’ajouter un logo et d’indiquer un titre.
 
@@ -117,7 +120,7 @@ Voir [Barre latérale](../../forms/using/introduction-forms-authoring.md#sidebar
 
 >[!NOTE]
 >
->Lorsque vous sélectionnez Stocker le contenu ou StockerPDF en tant qu’action d’envoi, vous avez la possibilité de spécifier le   de chemin d’accès. Si vous spécifiez le chemin dans le modèle, tous les formulaires créés à partir de ce modèle ont le même chemin d’accès. Vous pouvez spécifier le chemin de stockage correct. Vous pouvez également veiller à ce que les auteurs de formulaires le mettent à jour pour empêcher que les données de chaque formulaire soient stockées au même emplacement.
+>Lorsque vous sélectionnez Stocker le contenu ou StockerPDF comme action d’envoi, vous avez la possibilité de spécifier le chemin d’accès à l’Enregistrement. Si vous spécifiez le chemin dans le modèle, tous les formulaires créés à partir de ce modèle ont le même chemin d’accès. Vous pouvez spécifier le chemin de stockage correct. Vous pouvez également veiller à ce que les auteurs de formulaires le mettent à jour pour empêcher que les données de chaque formulaire soient stockées au même emplacement.
 
 #### Création d’un modèle de formulaire adaptatif avec des onglets et des panneaux  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
@@ -139,11 +142,9 @@ Pour créer les onglets Informations générales et Informations professionnelle
 
 #### Ajout de contenu dans les onglets {#adding-content-in-tabs}
 
-[ ![Ajout de champs dans le modèle de formulaire adaptatif](assets/template-edit-initial-content.png)
+![Ajout de champs dans le modèle de formulaire adaptatif](assets/template-edit-initial-content.png)
 
-Ajout de champs dans le modèle
-
-](assets/template-edit-initial-content-1.png) Après avoir ajouté des panneaux et les avoir structurés sous forme d’onglets, vous pouvez ajouter des champs dans les onglets. Lorsque vous sélectionnez un onglet dans l’éditeur, vous pouvez voir l’option **Faire glisser les composants** ici. Vous pouvez faire glisser et déposer les composants tels que les zones de texte, les éléments de liste et les boutons. Vous pouvez faire glisser les composants depuis le navigateur de composants et les déposer dans la barre latérale.
+Une fois que vous avez ajouté les panneaux et que vous les avez structurés sous forme d’onglets, vous pouvez ajouter des champs dans les onglets. Lorsque vous sélectionnez un onglet dans l’éditeur, vous pouvez voir l’option **Faire glisser les composants** ici. Vous pouvez faire glisser et déposer les composants tels que les zones de texte, les éléments de liste et les boutons. Vous pouvez faire glisser les composants depuis le navigateur de composants et les déposer dans la barre latérale.
 
 Chaque composant possède des propriétés qui améliorent la capture et la manipulation des données. Par exemple, vous pouvez activer la propriété **Champ obligatoire** d’un composant. Les auteurs peuvent définir un message que vos clients voient lorsqu’ils omettent de remplir un champ obligatoire. Specify the message in **Required Field Message** property.
 
