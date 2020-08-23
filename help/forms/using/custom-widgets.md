@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 66%
 
 ---
@@ -92,11 +92,14 @@ window.formBridge.registerConfig("widgetConfig",
 
 La configuration du widget est fournie sous la forme d’un objet JSON (ensemble de paires clé/valeur) où la clé identifie les champs et la valeur représente le widget à utiliser avec ces champs. Voici un exemple de configuration :
 
+```
 *{*
 
-*“identifier1” : “customwidgetname”, “identifier2” : “customwidgetname2”,
+*“identifier1” : “customwidgetname”,
+“identifier2” : “customwidgetname2”,
 ..
 }*
+```
 
 où &quot;identifier&quot; est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. Les listes suivantes indiquent la valeur de l’identifiant dans différents cas :
 
