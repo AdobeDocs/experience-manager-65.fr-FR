@@ -3,10 +3,10 @@ title: Écriture différée XMP sur les rendus
 description: Découvrez comment la fonctionnalité d’écriture différée XMP propage les modifications apportées aux métadonnées d’une ressource à l’ensemble des rendus de la ressource ou uniquement à certains d’entre eux.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 57%
+source-wordcount: '789'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ Pour activer la propagation des modifications apportées aux métadonnées aux r
 
 1. Pour ouvrir Configuration Manager, accédez à `https://[aem_server]:[port]/system/console/configMgr`.
 1. Ouvrez la configuration **[!UICONTROL Créateur de rendus de gestion des actifs numériques Adobe CQ]**.
-1. Sélectionnez l&#39;option **[!UICONTROL Propagate XMP[!UICONTROL **, puis enregistrez les modifications.
+1. Sélectionnez l’option **[!UICONTROL Propager XMP]**, puis enregistrez les modifications.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
