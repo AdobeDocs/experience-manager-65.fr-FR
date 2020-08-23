@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 23dfcc944a83dd683078cfe00f85c4cc734e7752
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 58%
+source-wordcount: '1722'
+ht-degree: 61%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 58%
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. You do this by entering [!UICONTROL Design] mode and enabling the dynamic media components. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media et Interactive Media sont dynamiques : ils détectent si vous ajoutez une image ou une vidéo et les options disponibles changent en conséquence.
 
-Vous pouvez ajouter directement des ressources multimédias dynamiques à la page si vous utilisez AEM en tant que WCM.
+Vous pouvez ajouter directement des fichiers multimédias dynamiques à la page si vous utilisez AEM comme gestion de contenu Web.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez c
 
 ## Composants Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] et [!UICONTROL Interactive Media] sont disponibles dans le [!UICONTROL Sidekick] sous **[!UICONTROL Dynamic Media.]** Vous utilisez le composant **[!UICONTROL Interactive Media]** pour toutes les ressources interactives telles que du contenu vidéo interactif, des images interactives ou des ensembles de carrousels. Pour tous les autres composants Dynamic Media, utilisez le composant **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Contenu multimédia] dynamique et Contenu multimédia  interactif sont disponibles dans le [!UICONTROL Sidekick] sous Contenu multimédia **[!UICONTROL dynamique.]** Vous utilisez le composant **[!UICONTROL Interactive Media]** pour toutes les ressources interactives telles que du contenu vidéo interactif, des images interactives ou des ensembles de carrousels. Pour tous les autres composants Dynamic Media, utilisez le composant **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -58,7 +58,7 @@ Pour ajouter un composant/une visionneuse Dynamic Media à une page, procédez c
 
 ### Composant Dynamic Media {#dynamic-media-component}
 
-Le composant Dynamic Media est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
+Le composant Contenu multimédia dynamique est intelligent ; selon que vous ajoutez une image ou une vidéo, vous disposez de différentes options. Le composant prend en charge les paramètres d’image prédéfinis, ainsi que les visionneuses d’images telles que les visionneuses d’images, les visionneuses à 360°, les visionneuses de médias mixtes et le contenu vidéo. En outre, le lecteur est réactif. Autrement dit, la taille de l’écran change automatiquement en fonction de la taille de l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Il s’agit de la seule option disponible si vous affichez des visionneuses d’
 
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
-**[!UICONTROL Modificateurs]** d’image : vous pouvez modifier les effets d’image en fournissant des commandes d’image supplémentaires. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificateurs]** d’image : vous pouvez modifier les effets d’image en fournissant des commandes d’image supplémentaires. These are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://docs.adobe.com/content/help/fr-FR/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Cette option n’est pas disponible si vous affichez des visionneuses d’images, à 360° ou de supports variés.
 
@@ -159,7 +159,7 @@ Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en cli
 
 **[!UICONTROL Largeur et Hauteur]** - Saisissez une valeur en pixels si vous souhaitez que la vidéo soit d’une taille fixe. Si vous ne fournissez pas de valeurs, la vidéo devient adaptative.
 
-You can edit the following **[!UICONTROL Add To Cart** settings by clicking **[!UICONTROL Edit]** in the component.
+Vous pouvez modifier les paramètres **[!UICONTROL Ajouter au panier]** ci-après en cliquant sur **[!UICONTROL Modifier]** dans le composant.
 
 **[!UICONTROL Afficher le fichier]** du produit - Par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
 
