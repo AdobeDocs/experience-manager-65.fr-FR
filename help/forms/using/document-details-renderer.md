@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 56%
@@ -28,7 +28,7 @@ Dans l’espace de travail AEM Forms, plusieurs types de formulaires sont pris e
 * Images
 * Applications tierces (par exemple, Correspondence Management)
 
-Ce document explique le fonctionnement de ces rendus du point de vue de la personnalisation sémantique/réutilisation des composants, afin que les exigences du client soient satisfaites sans compromettre le rendu. Bien que l’espace de travail AEM Forms autorise tout changement d’interface utilisateur/sémantique, il est recommandé de ne pas modifier la logique de rendu des différents types de formulaire, sinon les résultats peuvent être imprévisibles. Ce document fournit des conseils/des connaissances pour prendre en charge le rendu du même formulaire, avec les mêmes composants de Workspace dans différents portails, et non pour modifier la logique de rendu elle-même.
+Ce document explique le fonctionnement de ces rendus du point de vue de la personnalisation sémantique/réutilisation des composants, afin que les exigences du client soient satisfaites sans compromettre le rendu. Bien que l’espace de travail AEM Forms autorise tout changement d’interface utilisateur/sémantique, il est recommandé de ne pas modifier la logique de rendu des différents types de formulaires, sinon les résultats peuvent être imprévisibles. Ce document fournit des conseils/des connaissances pour prendre en charge le rendu du même formulaire, avec les mêmes composants de Workspace dans différents portails, et non pour modifier la logique de rendu elle-même.
 
 ## Formulaires PDF {#pdf-forms}
 
@@ -84,15 +84,15 @@ Ce protocole est défini par le `WsNextAdapter.swf`. Les `flexMessageHandlers` e
 
 Les applications tierces sont rendues à l’aide de la vue ExtAppTaskForm.
 
-**Communication de l&#39;application tierce vers l&#39;espace de travail AEM Forms**
+**Communication de l’application tierce vers l’espace de travail AEM Forms**
 
 AEM Forms workspace listens on `window.global.postMessage([Message],[Payload])`
 
-[Le message] peut être une chaîne spécifiée comme `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir l&#39;espace de travail AEM Forms si nécessaire. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque la tâche est envoyée, il doit pouvoir nettoyer la fenêtre de tâche.
+[Le message] peut être une chaîne spécifiée comme `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`dans le `runtimeMap`. Les applications tierces doivent utiliser cette interface pour avertir AEM Forms Workspace si nécessaire. L’utilisation de cette interface est obligatoire, car l’espace de travail AEM Forms doit savoir que lorsque la tâche est envoyée, il doit pouvoir nettoyer la fenêtre de tâche.
 
-**Communication entre l&#39;espace de travail AEM Forms et l&#39;application tierce**
+**Communication de l’espace de travail AEM Forms à une application tierce**
 
-Si les boutons d’action directe de l’espace de travail AEM Forms sont visibles, il appelle `window.[External-App-Name].getMessage([Action])`, où [ `Action]` est lu à partir du `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
+Si les boutons d’action directe de l’espace de travail AEM Forms sont visibles, il appelle `window.[External-App-Name].getMessage([Action])`, où `[Action]` est lu à partir du `routeActionMap`. The third-party application must listen on this interface, and then notify AEM Forms workspace via the `postMessage ()` API.
 
 For example, a Flex application can define `ExternalInterface.addCallback('getMessage', listener)` to support this communication. If the third-party application wants to handle form submission via its own buttons, then you should specify `hideDirectActions = true() in the runtimeMap` and you may skip this listener. Par conséquent, cette syntaxe est facultative.
 
