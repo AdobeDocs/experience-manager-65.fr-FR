@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4360'
+source-wordcount: '4353'
 ht-degree: 97%
 
 ---
@@ -35,7 +35,7 @@ Cette section décrit comment créer, modifier et gérer les paramètres prédé
 >
 >Notez que la modification des *paramètres prédéfinis de visionneuse prêts à l’emploi* n’est pas un scénario pris en charge. Si vous tentez de modifier un paramètre de visionneuse prédéfini de base, vous serez invité à enregistrer ce paramètre de visionneuse prédéfini en utilisant un nouveau nom.
 
-## Accessibilité clavier pour les visionneuses  {#keyboard-accessibility-for-viewers}
+## Accessibilité clavier pour les visionneuses   {#keyboard-accessibility-for-viewers}
 
 Toutes les visionneuses prêtes à l’emploi prennent en charge l’accessibilité clavier.
 
@@ -43,7 +43,7 @@ Voir aussi [Accessibilité clavier et navigation](https://docs.adobe.com/content
 
 ## Gestion des paramètres prédéfinis de visionneuse {#managing-viewer-presets-1}
 
-Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et prévisualiser des paramètres prédéfinis de visionneuse dans AEM en appuyant sur **[!UICONTROL Outils** (icône de marteau) > **[!UICONTROL Ressources > Paramètres prédéfinis de la visionneuse.]**
+Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et prévisualiser des paramètres prédéfinis de visionneuse dans AEM en appuyant sur **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources > Paramètres prédéfinis de la visionneuse.]**
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -51,7 +51,7 @@ Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et pr�
 >
 >Par défaut, le système affiche 15 paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des détails d’une ressource. Vous pouvez augmenter cette limite. Voir [Augmentation du nombre de paramètres de visionneuse prédéfinis qui s’affichent](#increasing-the-number-of-viewer-presets-that-display).
 
-### Prise en charge de la visionneuse pour les pages web en responsive design  {#viewer-support-for-responsive-designed-web-pages}
+### Prise en charge de la visionneuse pour les pages web en responsive design   {#viewer-support-for-responsive-designed-web-pages}
 
 Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Autrement, elle peut être « réactive » et affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et les pages web réactives.
 
@@ -418,7 +418,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
 **Pour créer un paramètre prédéfini de visionneuse**
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils** (icône Marteau)**[!UICONTROL > Ressources > Paramètres prédéfinis de la visionneuse**.
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -474,7 +474,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
    Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
 
-### Remarques spéciales sur la création d’un paramètre de visionneuse interactive prédéfini  {#special-considerations-for-creating-an-interactive-viewer-preset}
+### Remarques spéciales sur la création d’un paramètre de visionneuse interactive prédéfini   {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **À propos des modes d’affichage des miniatures dans le panneau**
 
@@ -542,12 +542,12 @@ Les paramètres de visionneuse prédéfinis qui sont disponibles dans l’interf
 
 **Pour activer ou désactiver les paramètres prédéfinis de visionneuse**
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils** (icône Marteau)**[!UICONTROL  > Ressources > Paramètres prédéfinis de la visionneuse.]**
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis.]**
 1. Dans la page Paramètre de visionneuse prédéfini, sous l’en-tête de colonne **[!UICONTROL État]**, appuyez sur le curseur pour activer ou désactiver un paramètre de visionneuse prédéfini.
 
    Le curseur des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le curseur des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
 
-## Publication de paramètres de visionneuse prédéfinis  {#publishing-viewer-presets}
+## Publication de paramètres de visionneuse prédéfinis   {#publishing-viewer-presets}
 
 Lorsqu’un paramètre prédéfini de visionneuse est activé, cela signifie qu’il est visible dans les composants Dynamic Media et Interactive Media, et ce, dès que vous affichez une ressource.
 
@@ -559,13 +559,13 @@ Voir aussi [Prévisualisation de ressources](/help/assets/previewing-assets.md).
 
 **Pour publier les paramètres prédéfinis de visionneuse**
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils** (icône Marteau)**[!UICONTROL  > Ressources > Paramètres prédéfinis de la visionneuse.]**
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis.]**
 1. Sélectionnez un ou plusieurs paramètres de visionneuse prédéfinis que vous souhaitez publier.
 1. Appuyez sur l’icône **[!UICONTROL Publier]** de la barre d’outils.
 
-## Tri des paramètres de visionneuse prédéfinis  {#sorting-viewer-presets}
+## Tri des paramètres de visionneuse prédéfinis   {#sorting-viewer-presets}
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils** (icône Marteau)**[!UICONTROL  > Ressources > Paramètres prédéfinis de la visionneuse.]**
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis.]**
 1. Cliquez sur **[!UICONTROL Titre prédéfini]**, **[!UICONTROL Type]**, **[!UICONTROL Publié]** ou **[!UICONTROL État]** afin de trier en fonction de cette colonne. Cliquez par exemple sur **[!UICONTROL Type]** pour trier les types de paramètres prédéfinis de visionneuse dans l’ordre alphabétique standard ou inversé.
 
 ## Modification d’un paramètre prédéfini de visionneuse {#editing-viewer-presets}
@@ -574,7 +574,7 @@ Notez que la modification des *paramètres prédéfinis de visionneuse prêts à
 
 **Pour modifier les paramètres prédéfinis de visionneuse**
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils** (icône Marteau)**[!UICONTROL  > Ressource > Paramètres prédéfinis de la visionneuse.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets.]**
 1. Sélectionnez un paramètre prédéfini en cochant la case à gauche du titre du paramètre prédéfini de la visionneuse.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
 1. Sur la page **[!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse]**, apportez les modifications souhaitées au paramètre prédéfini de la visionneuse à l’aide des options disponibles dans les onglets **[!UICONTROL Apparence]** et **[!UICONTROL Comportement]**.
