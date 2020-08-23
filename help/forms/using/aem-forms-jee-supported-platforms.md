@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 456460d54650bcb71d8eee47fdf0e859a383b3d4
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3228'
 ht-degree: 77%
@@ -511,8 +511,7 @@ Les sous-systèmes suivants d’AEM Forms ne sont pas conformes à la section [5
 Pour la configuration requise supplémentaire, voir :
 
 * [Configuration requise pour le déploiement d’un serveur unique AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Configuration requise pour le déploiement en grappe d’AEM Forms on JEE
-   ](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [Configuration requise pour le déploiement en grappe d’AEM Forms on JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
 
 ## Clients pris en charge pour AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
