@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 translation-type: tm+mt
-source-git-commit: e37ff1c9e657c580c607f2656adca01a2b39f81f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 84%
 
 ---
 
@@ -23,7 +26,7 @@ ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez util
 
 >[!WARNING]
 >
->Les exemples de candidats au magasin sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet et ne doivent donc pas être utilisés directement.
+>Les exemples de candidats de magasin sont fournis comme configurations de référence pour vous aider à créer votre propre configuration dédiée pour votre projet et ne doivent donc pas être utilisés directement.
 
 ## Exemple de magasin candidat aem.segmentation {#aem-segmentation-sample-store-candidate}
 
@@ -37,7 +40,7 @@ Magasin pour les segments ContextHub résolus et non résolus. Récupère automa
 
 Le magasin candidat aem.segmentation étend [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-### Configuration{#configuration-segmentation}
+### Configuration {#configuration-segmentation}
 
 Lorsque vous créez un magasin aem.segmentation, vous n’avez pas besoin de fournir une configuration détaillée. La configuration par défaut spécifie l’emplacement des définitions de segment ContextHub.
 
@@ -63,7 +66,7 @@ Le magasin candidat de modèles contexthub.geolocation utilise Google Maps pour 
 
 The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-### Configuration{#configuration-geolocation}
+### Configuration {#configuration-geolocation}
 
 La configuration par défaut spécifie des informations sur le service Google et les coordonnées de latitude et de longitude initiales.
 
@@ -107,13 +110,13 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 
 >[!NOTE]
 >
->Une stratégie de sécurité introduite dans Chrome 50.x exige que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
+>Une stratégie de sécurité introduite dans Chrome 50.x exige que tous les appels liés à la géolocalisation soient effectués sur une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
 ## Exemple de magasin candidat contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 
 Stocke des informations sur l’environnement client actuel, telles que l’appareil, la fenêtre, le navigateur, la date et l’heure.
 
-### Emplacement source {#source-location-surferinfo
+### Emplacement du code source {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
@@ -121,7 +124,7 @@ Stocke des informations sur l’environnement client actuel, telles que l’appa
 
 The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
-### Configuration{#configuration-surferinfo}
+### Configuration {#configuration-surferinfo}
 
 The default configuration is inherited from `ContextHub.Store.PersistedStore`.
 
@@ -188,7 +191,7 @@ L’exemple de magasin candidat granite.emulators stocke des informations sur le
 
 The contexthub.geolocation store candidate extends [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
-### Configuration{#configuration-emulators}
+### Configuration {#configuration-emulators}
 
 La configuration par défaut inclut une table nommée `defaultEmulators` qui contient des informations sur différents appareils. Lorsque vous créez un magasin, fournissez des profils d’appareil différents dans la propriété Configuration détaillée selon les besoins, en respectant le format illustré dans l’exemple suivant :
 
@@ -321,7 +324,7 @@ Stocke des informations sur l’utilisateur actuel.
 
 The contexthub.datetime store candidate extends [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
-### Configuration{#configuration-profile}
+### Configuration {#configuration-profile}
 
 La configuration par défaut suivante est utilisée. Vous ne devriez pas changer cette configuration.
 
