@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2076'
 ht-degree: 96%
 
 ---
@@ -39,7 +39,7 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 
 Pour démarrer rapidement :
 
-1. [Téléchargez vos images source principales pour plusieurs vues.](#uploading-assets-in-image-sets)
+1. [Chargez les images sources originales pour plusieurs vues.](#uploading-assets-in-image-sets)
 
    Commencez par télécharger les images pour les visionneuses d’images. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse d’images, tenez compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
@@ -54,7 +54,7 @@ Pour démarrer rapidement :
    Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
-   >Les visionneuses de lots sont créées par le système IPS (Image Production System) dans le cadre de l’assimilation de fichiers et sont disponibles uniquement en mode Dynamic Media - Scene7.
+   >Les visionneuses de lots sont créées par IPS (Image Production System) dans le cadre de l’assimilation de ressources et sont disponibles uniquement en mode Contenu multimédia dynamique - Scene7.
 
    Voir [Préparation du chargement de ressources de visionneuse d’images et Chargement des fichiers](#uploading-assets-in-image-sets).
 
@@ -99,7 +99,7 @@ Avant de créer une visionneuse d’images, assurez-vous que la taille et le for
 
 Pour créer une visionneuse d’images à plusieurs vues, vous avez besoin d’images qui montrent un élément depuis différents points de vue ainsi que différents aspects du même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
 
-Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la dimension la plus grande des images comporte au moins 2000 pixels.  Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la dimension la plus grande des images comporte au moins 2000 pixels. Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou 
 >[!NOTE]
 >
 >Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
->**Important :**Les ensembles par lot sont créés par le système IPS (Image Production System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans le mode Scene7 de Dynamic Media.
+>**Important :** Les ensembles par lot sont créés par le système IPS (Image Production System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans le mode Scene7 de Dynamic Media.
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement des ressources une fois qu’elles ont été ajoutées.
 
@@ -184,11 +184,11 @@ Notez toutefois que les visionneuses créées à l’aide de paramètres prédé
 
    ![6_5_imageset-assetproperties](assets/6_5_imageset-assetproperties2.png)
 
-* À partir de l’image membre d’une visionneuse, sélectionnez le menu **[!UICONTROL Visionneuses** pour afficher les visionneuses dont la ressource fait partie.
+* À partir de l’image membre d’une visionneuse, sélectionnez le menu **[!UICONTROL Visionneuses]** pour afficher les visionneuses dont la ressource fait partie.
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* Dans la recherche, vous pouvez sélectionner **[!UICONTROL Filtres**, puis développer **[!UICONTROL Dynamic Media** et sélectionner **[!UICONTROL Visionneuses.]**
+* From search, you can select **[!UICONTROL Filter]**, then expand **[!UICONTROL Dynamic Media]** and select **[!UICONTROL Sets.]**
 
    La recherche renvoie les visionneuses correspondantes qui ont soit été créées manuellement dans l’interface utilisateur, soit automatiquement au moyen de paramètres prédéfinis d’ensemble par lot. Dans le cas des visionneuses automatisées, la requête de recherche est effectuée à l’aide du critère « Commence par », à la différence de la recherche AEM qui repose sur l’utilisation du critère « Contient ». Définir le filtre sur **[!UICONTROL Visionneuses]** est le seul moyen de rechercher des ensembles automatisés.
 
