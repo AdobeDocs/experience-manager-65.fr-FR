@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 80%
 
 ---
 
@@ -29,8 +32,7 @@ Tout cela est effectué avec une série de [composants de formulaire](/help/site
 Outre le [développement de nouveaux composants](/help/sites-developing/developing-components-samples.md) utilisables sur vos formulaires, vous pouvez :
 
 * [Précharger des valeurs dans votre formulaire](#preloading-form-values)
-* [Précharger plusieurs valeurs dans (certains) champs
-   ](#preloading-form-fields-with-multiple-values)
+* [Précharger plusieurs valeurs dans (certains) champs](#preloading-form-fields-with-multiple-values)
 * [Développer de nouvelles actions](#developing-your-own-form-actions)
 * [Développer de nouvelles contraintes](#developing-your-own-form-constraints)
 * [Afficher ou masquer des champs de formulaire spécifiques](#showing-and-hiding-form-components)
@@ -39,7 +41,7 @@ Outre le [développement de nouveaux composants](/help/sites-developing/developi
 
 >[!NOTE]
 >
->Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
+>Ce document porte sur le développement de formulaires à l’aide des [composants Foundation](/help/sites-authoring/default-components-foundation.md) dans l’IU classique. Adobe recommande de tirer parti des nouveaux [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et des [conditions de masquage](/help/sites-developing/hide-conditions.md) pour le développement de formulaires dans l’interface utilisateur tactile.
 
 ## Préchargement de valeurs de formulaire {#preloading-form-values}
 
@@ -130,10 +132,11 @@ You can add your own action under `/apps` as follows:
 
    1. Créer un script de publication.
 The name of the script is `post.POST.<extension>`, e.g. `post.POST.jsp`
-The post script is invoked when a form is submitted to process the form, it contains the code that handles the data arriving from the form `POST`.
+The post script is invoked when a form is submitted to process the form, it contains the code that handles the data arriving from the form 
+`POST`.
 
    1. Ajouter un script de transfert qui est appelé lors de l’envoi du formulaire.
-Le nom du script est `forward.<extension`>, par exemple `forward.jsp`Ce script peut définir un chemin. La requête actuelle est ensuite transmise au chemin d’accès spécifié.
+Le nom du script est `forward.<extension`>, par exemple `forward.jsp`Ce script peut définir un chemin d’accès. La requête actuelle est ensuite transmise au chemin d’accès spécifié.
    The necessary call is `FormsHelper#setForwardPath` (2 variants). Un cas de figure classique consiste à effectuer une validation, ou logique, pour trouver le chemin cible, puis à effectuer un transfert vers ce chemin, laissant au servlet POST Sling par défaut le soin de procéder au stockage proprement dit dans JCR.
 
    Un autre servlet peut également procéder au traitement. Dans ce cas, l’action de formulaire et le fichier `forward.jsp` font simplement office de code de collage. An example of this is the mail action at `/libs/foundation/components/form/actions/mail`, which forwards details to `<currentpath>.mail.html`where a mail servlet sits.
@@ -142,6 +145,7 @@ Le nom du script est `forward.<extension`>, par exemple `forward.jsp`Ce script p
 
    * Un fichier `post.POST.jsp` est utile pour les petites opérations qui sont entièrement effectuées par l’action proprement dite.
    * Le fichier `forward.jsp`, en revanche, est utile lorsque la délégation seule est requise.
+
    L’ordre d’exécution des scripts est le suivant :
 
    * Upon rendering the form ( `GET`):
@@ -167,13 +171,13 @@ Le nom du script est `forward.<extension`>, par exemple `forward.jsp`Ce script p
 1. De nouveau dans le dossier, vous pouvez éventuellement ajouter l’un des éléments suivants :
 
    1. Un script pour ajouter des champs.
-Le nom du script est `addfields.<extension>`, par exemple, `addfields.jsp`un script addfields est appelé immédiatement après l’écriture du code HTML pour le démarrage du formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
+Le nom du script est `addfields.<extension>`, par exemple, `addfields.jsp`un script addfields est appelé immédiatement après l’écriture du code HTML du début de formulaire. Cela permet à l’action d’ajouter les champs de saisie personnalisés ou tout autre code HTML à l’intérieur du formulaire.
 
    1. Un script d’initialisation.
-Le nom du script est `init.<extension>`, par exemple, `init.jsp`ce script est appelé lorsque le formulaire est généré. Il peut être utilisé pour initialiser des caractéristiques d’action. ``
+Le nom du script est `init.<extension>`, par exemple, `init.jsp`Ce script est appelé lorsque le formulaire est rendu. Il peut être utilisé pour initialiser des caractéristiques d’action. ``
 
    1. Un script de nettoyage.
-Le nom du script est `cleanup.<extension>`, par exemple, `cleanup.jsp`ce script peut être utilisé pour effectuer le nettoyage.
+Le nom du script est `cleanup.<extension>`, par exemple `cleanup.jsp`Ce script peut être utilisé pour effectuer un nettoyage.
 
 1. Utilisez le composant **Forms** dans un système de paragraphes (parsys). Le liste déroulante **Type d’action** contient désormais votre nouvelle action.
 
@@ -215,10 +219,10 @@ You can add your own constraints for an individual field (under `/apps`) as foll
 1. Les scripts suivants peuvent s’avérer nécessaires à l’intérieur de ce dossier :
 
    * Un script de validation client :
-Le nom du script est `clientvalidation.<extension>`, par exemple, `clientvalidation.jsp`Il est appelé lorsque le champ du formulaire est généré. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
+Le nom du script est `clientvalidation.<extension>`, par exemple, `clientvalidation.jsp`Il est appelé lorsque le champ de formulaire est généré. Il peut être utilisé pour créer le JavaScript client afin de valider le champ sur le client.
 
-   * Un script de validation de serveur :
-Le nom du script est `servervalidation.<extension>`, par exemple, `servervalidation.jsp`Il est appelé lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur une fois qu’il a été envoyé.
+   * Un script de validation du serveur :
+Le nom du script est `servervalidation.<extension>`, par exemple `servervalidation.jsp`Il est appelé lorsque le formulaire est envoyé. Il peut être utilisé pour valider le champ sur le serveur une fois qu’il a été envoyé.
 
 >[!NOTE]
 >
@@ -280,6 +284,7 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
       * **n’importe quelle(s)** si uniquement une ou plusieurs conditions doivent être vraies pour afficher ou masquer le composant.
    * Dans la ligne de condition (une est présentée par défaut), sélectionnez un composant et un opérateur, puis spécifiez une valeur.
    * Si nécessaire, ajoutez d’autres conditions en cliquant sur **Ajouter une condition**.
+
    Par exemple :
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
@@ -306,9 +311,9 @@ Dans JavaScript, les conditions utilisent la valeur de la propriété Nom de l�
 
 #### Gestion de références de composant interrompues {#handling-broken-component-references}
 
-Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher/Masquer n’est pas valide lorsque l’une des conditions fait référence à un composant supprimé ou que la propriété Nom de l’élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
+Les conditions Afficher / Masquer utilisent la valeur de la propriété Nom de l’élément pour faire référence aux autres composants dans le formulaire. La configuration Afficher/Masquer n&#39;est pas valide lorsque l&#39;une des conditions fait référence à un composant supprimé ou si la propriété Nom de l&#39;élément a été modifiée. Dans ce cas, vous devez mettre à jour manuellement les conditions, sans quoi une erreur se produira au chargement du formulaire.
 
-Lorsque la configuration Afficher/Masquer n’est pas valide, la configuration est fournie uniquement sous forme de code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
+Lorsque la configuration Afficher/Masquer n&#39;est pas valide, la configuration est fournie uniquement en tant que code JavaScript. Modifiez le code pour résoudre les problèmes. Le code utilise la propriété Nom de l’élément utilisée initialement pour faire référence aux composants.
 
 ### Développement de scripts à utiliser avec des formulaires {#developing-scripts-for-use-with-forms}
 
