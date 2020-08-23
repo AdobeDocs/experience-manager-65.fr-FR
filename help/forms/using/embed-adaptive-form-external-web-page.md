@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 74%
@@ -132,7 +132,7 @@ Examinons un exemple de la manière dont vous pouvez configurer un serveur de pr
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Replace `[AEM_Instance`] with the AEM server publish URL in the rules.
+   Replace `[AEM_Instance]` with the AEM server publish URL in the rules.
 
 Si vous ne montez pas le serveur AEM sur un chemin de contexte, les règles de proxy de la couche Apache seront les suivantes :
 
@@ -165,7 +165,7 @@ Lorsque vous incorporez un formulaire adaptatif dans une page Web, prenez en com
 
 ## Activer AEM Forms pour diffuser des formulaires adaptatifs vers un site interdomaines {#cross-site}
 
-1. Sur l’instance d’auteur AEM, accédez à Configuration Manager de la console Web AEM à `https://'[server]:[port]'/system/console/configMgr`.
+1. Sur AEM instance d’auteur, accédez à AEM Web Console Configuration Manager à l’adresse `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez et ouvrez la configuration **Apache Sling Referrer Filter** .
 1. Dans le champ Hôtes autorisés, spécifiez le domaine dans lequel la page Web se trouve. Cette opération permet à l’hôte de créer des requêtes POST vers le serveur AEM. Vous pouvez également utiliser l’expression régulière pour spécifier une série de domaines d’application externes.
 
