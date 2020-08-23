@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4719'
+source-wordcount: '4718'
 ht-degree: 68%
 
 ---
@@ -50,7 +50,7 @@ Avant de commencer à configurer ou coder réellement votre composant, vous deve
 Avant toute considération sérieuse sur le développement de composants, vous devez savoir quelle IU vos auteurs vont utiliser :
 
 * **Interface utilisateur optimisée pour les écrans tactiles**
-   [L’interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard repose sur l’expérience utilisateur unifiée de l’Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
+   [L’interface](/help/sites-developing/touch-ui-concepts.md) utilisateur standard est basée sur l’expérience utilisateur unifiée pour Adobe Marketing Cloud, en utilisant les technologies sous-jacentes de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral et de l’interface utilisateur [](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite.
 * **Interface utilisateur** utilisateur classique basée sur la technologie ExtJS qui a été abandonnée avec AEM 6.4.
 
 Voir [Recommandations d’IU destinées aux clients](/help/sites-deploying/ui-recommendations.md) pour plus de détails.
@@ -61,19 +61,19 @@ Pour cette raison, nous allons aborder les notions de base des deux interfaces
 
 >[!NOTE]
 >
->Adobe recommande de tirer parti de l’interface utilisateur tactile pour tirer parti des dernières technologies. [AEM Modernination Tools&amp;(modernatzion-tools.md)] peut faciliter la migration.
+>adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [Les outils](modernization-tools.md) de modernisation AEM peuvent faciliter la migration.
 
 ### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
 Il est recommandé de garder le code responsable du balisage et du rendu distinct de celui qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
-Cette approche est compatible avec [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Cette logique (facultative) est appelée à partir de HTL avec une commande spécifique. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
+Cette approche est compatible avec [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Cette logique (facultative) est appelée à partir de HTL avec une commande spécifique. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTL est un langage de modèle HTML introduit avec AEM 6.0.
 
-Le choix entre l’utilisation de [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) ou de JSP (Java Server Pages) lors du développement de vos propres composants devrait être simple à faire dans la mesure où HTL est aujourd’hui le langage de script recommandé pour AEM.
+Le choix entre l’utilisation de [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) ou de JSP (Java Server Pages) lors du développement de vos propres composants devrait être simple à faire dans la mesure où HTL est aujourd’hui le langage de script recommandé pour AEM.
 
 HTL et JSP peuvent être utilisés pour développer des composants de l’IU classique et de l’IU tactile. Bien que la tendance laisse à supposer que HTL est réservé à l’IU tactile et JSP à l’IU classique, c’est une idée reçue que l’on attribue à une synchronisation fortuite. L’IU tactile et HTL ont été intégrés à AEM à peu près en même temps. Puisque HTL est aujourd’hui le langage recommandé, il est utilisé pour les nouveaux composants, qui sont plus souvent développés pour l’IU tactile.
 
@@ -536,7 +536,7 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
    * boîtes de dialogue
    * descriptions (y compris les images miniatures, les icônes, etc.)
 
-* **Hiérarchie des Conteneurs**
+* **Hiérarchie des conteneurs**
 
    Il est utilisé pour renseigner les paramètres de configuration du composant enfant et est le plus souvent utilisé dans un scénario parsys.
 
@@ -626,27 +626,27 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr>
   <tr>
    <td>-</td>
-   <td>Ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td>
+   <td>ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td>
   </tr>
   <tr>
    <td><code>edit</code></td>
-   <td>Ajoute un bouton pour modifier le composant.</td>
+   <td>ajoute un bouton pour modifier le composant.</td>
   </tr>
       <tr>
     <td><code>editannotate</code></td>
-    <td>Ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
+    <td>ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
    </tr>
   <tr>
    <td><code>delete</code></td>
-   <td>Ajoute un bouton pour supprimer le composant</td>
+   <td>ajoute un bouton pour supprimer le composant</td>
   </tr>
   <tr>
    <td><code>insert</code></td>
-   <td>Ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td>
+   <td>ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td>
   </tr>
   <tr>
    <td><code>copymove</code></td>
-   <td>Ajoute un bouton pour copier et couper le composant.</td>
+   <td>ajoute un bouton pour copier et couper le composant.</td>
   </tr>
  </tbody>
 </table>
