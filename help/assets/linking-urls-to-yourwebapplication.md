@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 94%
+source-wordcount: '1274'
+ht-degree: 96%
 
 ---
 
@@ -30,11 +30,11 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
-Voir aussi [Liaison d’URL YouTube à une application web](video.md).
+Voir aussi [Liaison d’URL YouTube à une application web.](video.md)
 
-Voir aussi [Diffusion d’images optimisées pour un site réactif](responsive-site.md).
+Voir aussi [Diffusion d’images optimisées pour un site réactif.](responsive-site.md)
 
-Voir aussi [Téléchargement de ressources](managing-assets-touch-ui.md#uploading-assets).
+Voir aussi [Téléchargement de ressources.](managing-assets-touch-ui.md#uploading-assets)
 
 ## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
 
@@ -115,7 +115,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Par exemple, `https://aem.com/is/content/adobe/image.gif`.
-   * Tap **[!UICONTROL Asset > Dynamic Renditions]**, then tap a dynamic rendition of the static asset and copy the URL.
+   * Appuyez sur **[!UICONTROL Ressource > Rendu(s) dynamique(s)]**, puis sur le rendu dynamique de la ressource statique et copiez l’URL.
 
       Modifiez l’URL copiée afin d’utiliser `is/content` au lieu de `is/image/` dans le chemin d’accès.
 
@@ -138,7 +138,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
