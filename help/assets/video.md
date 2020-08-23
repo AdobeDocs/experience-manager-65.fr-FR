@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ba6f94435a4d4945d54614db19f7ff612a317692
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '11830'
+source-wordcount: '11828'
 ht-degree: 96%
 
 ---
@@ -689,7 +689,7 @@ Pour automatiser la définition des propriétés YouTube par défaut pour vos vi
 
 1. Dans le coin supérieur gauche d’AEM, cliquez sur le logo AEM, puis, dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** (icône en forme de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées.]**
 1. Cliquez sur l’option **[!UICONTROL Par défaut.]** (N’ajoutez pas de coche à la case de sélection située à gauche de &quot;valeur par défaut&quot;.)
-1. Sur la page **[!UICONTROL par défaut]**, cochez la case à gauche de **[!UICONTROL vidéo]**, puis cliquez sur **Modifier.]**
+1. Sur la page **[!UICONTROL par défaut]**, cochez la case à gauche de **[!UICONTROL vidéo]**, puis cliquez sur **[!UICONTROL Modifier.]**
 1. Sur la page Éditeur de schéma de métadonnées, cliquez sur l’onglet **[!UICONTROL Avancé]**.
 1. Sous l’en-tête Publication YouTube, cliquez sur **[!UICONTROL Catégorie YouTube.]**
 1. Dans la partie droite de la page, sous l’onglet **[!UICONTROL Paramètres]**, procédez comme suit :
@@ -723,7 +723,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous a
    * (Facultatif) Dans la partie droite de la page, sous l’onglet Paramètres, dans le champ de texte Libellé du champ, saisissez `YouTube Publishing`.
    * Cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**, puis faites glisser le composant appelé **[!UICONTROL Texte à plusieurs valeurs]** et déposez-le sous l’en-tête **[!UICONTROL Publication YouTube]** que vous venez de créer.
 
-   * Cliquez sur **[!UICONTROL Libellé du champ** pour sélectionner le composant.
+   * Cliquez sur **[!UICONTROL Libellé du champ]** pour sélectionner le composant.
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
 1. Ajoutez les valeurs de confidentialité YouTube copiées au profil en procédant comme suit :
@@ -1228,7 +1228,7 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode «
 
 1. Accédez à une ressource vidéo téléchargée dont vous souhaitez changer l’image miniature.
 1. Dans l’un des modes de sélection des ressources (mode **[!UICONTROL Liste]** ou **[!UICONTROL Carte]**), appuyez sur la ressource vidéo.
-1. On the toolbar, tap the **[!UICONTROL Properties** icon (a circle with an &quot;i&quot; in it).
+1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Propriétés]** (icône en forme de cercle avec un « i » à l’intérieur).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature.]**
 1. Sur la page Modifier la miniature, effectuez l’une des opérations suivantes :
 
