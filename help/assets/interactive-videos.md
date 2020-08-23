@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6053'
+source-wordcount: '6050'
 ht-degree: 98%
 
 ---
@@ -39,7 +39,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->Si vous créez une vidéo interactive pour lancer une page web lorsqu’un utilisateur clique sur une vignette, certains dispositifs bloquent l’ouverture de la page web contextuelle. Dans ce cas, vous devez modifier le paramètre de blocage des fenêtres contextuelles sur le dispositif. For example, on an Apple iPhone 6, tap **[!UICONTROL Settings** > **Safari** > **Block Pop-ups**, then slide the control to **[!UICONTROL Off**. À présent, lorsque vous visionnez une vidéo interactive et que vous cliquez sur une vignette, vous êtes invité à ouvrir la fenêtre contextuelle. Si vous acceptez, la page web s’affiche.
+>Si vous créez une vidéo interactive pour lancer une page web lorsqu’un utilisateur clique sur une vignette, certains dispositifs bloquent l’ouverture de la page web contextuelle. Dans ce cas, vous devez modifier le paramètre de blocage des fenêtres contextuelles sur le dispositif. Par exemple, sur un Apple iPhone 6, appuyez sur **[!UICONTROL Paramètres]** > **safari** > **Bloquer les fenêtres contextuelles**, puis faites glisser la commande sur **[!UICONTROL Désactivé]**. À présent, lorsque vous visionnez une vidéo interactive et que vous cliquez sur une vignette, vous êtes invité à ouvrir la fenêtre contextuelle. Si vous acceptez, la page web s’affiche.
 
 ### Découvrez comment les vidéos interactives sont créées    {#watch-how-interactive-videos-are-created}
 
@@ -120,7 +120,7 @@ Normalement, il n’est pas nécessaire d’utiliser des outils de débogage sp�
 
 * Pour voir toutes les demandes HTTP sortantes dans Google Chrome, appuyez sur **F12** (Windows) ou **Contrôle+Options+I** (Mac) pour ouvrir le panneau Outils de développement, puis cliquez sur l’onglet **Réseau**.
 
-* Dans Firefox, vous pouvez activer le plug-in Firebug en appuyant sur **F12** (Windows) ou **Contrôle+Option+I** (Mac) et utiliser l’onglet **Réseau**. Sinon, vous pouvez utiliser l’outil Inspecteur intégré et son onglet Réseau.
+* In Firefox, you can either activate the Firebug plug-in by pressing **F12** (Windows) or **Command+Option+I** (Mac) and use its **`[Net]`** tab, or you can use the built-in Inspector tool and its Network tab.
 
 * Dans Internet Explorer, activez l’outil de débogage en appuyant sur **F12**.
 
