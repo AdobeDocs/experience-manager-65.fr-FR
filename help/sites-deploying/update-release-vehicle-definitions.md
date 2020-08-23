@@ -10,21 +10,21 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '768'
 ht-degree: 50%
 
 ---
 
 
-# Définitions des véhicules de la version d’AEM Update{#update-release-vehicle-definitions}
+# aem mettre à jour les définitions des véhicules de version{#update-release-vehicle-definitions}
 
 Ce document contient des informations à propos des différents types de versions d’Adobe Experience Manager, dont les versions intégrales, les packs de fonctionnalités et les Service Packs mis par Adobe à la disposition des clients.
 
->[!NNote]
+>[!NOTE]
 >
->Pour connaître le calendrier de publication des mises à jour d’AEM, reportez-vous à la feuille de route des mises à jour [AEM.](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
+>Pour connaître le calendrier de publication des AEM mises à jour, reportez-vous à la feuille de route des mises à jour [AEM](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
 
 ## Version intégrale {#full-release}
 
@@ -44,7 +44,7 @@ Ce document contient des informations à propos des différents types de version
     <ul>
      <li>Les numéros de version pour les versions majeures augmentent en fonction de la formule X+1.Y.Z. </li>
      <li>Les numéros de version pour les versions mineures augmentent en fonction de la formule X.Y+1.Z</li>
-    </ul> <p>Où X est le numéro de version principal, Y est le numéro de version secondaire et Z le numéro de correctif.</p> </td>
+    </ul> <p>Où X est le numéro de version Principal, Y est le numéro de version secondaire et Z le numéro de correctif.</p> </td>
   </tr>
   <tr>
    <td><strong>Inclusions</strong></td>
@@ -72,7 +72,7 @@ Ce document contient des informations à propos des différents types de version
    <td>
     <ul>
      <li>Livré en tant que programme d’installation de produit autonome</li>
-     <li>Disponible sur le site Web de gestion des licences et le site Web de gestion des licences des services</li>
+     <li>Disponible sur le site Web de gestion des licences et le site Web de gestion des licences Managed Services</li>
      <li>Peut nécessiter une migration du référentiel de contenu</li>
     </ul> </td>
   </tr>
@@ -101,7 +101,7 @@ Ce document contient des informations à propos des différents types de version
     <ul>
      <li>Le numéro de version du correctif est un numéro à un chiffre.</li>
      <li>Après l'installation, augmentera le chiffre de correctif du numéro de version installé, en fonction de la formule X.Y.Z.SPx</li>
-     <li>Où X est le numéro de version principal, Y est le numéro de version secondaire et Z le numéro de correctif. x est le numéro du Service Pack. </li>
+     <li>Où X est le numéro de version Principal, Y est le numéro de version secondaire et Z le numéro de correctif. x est le numéro du Service Pack. </li>
     </ul> </td>
   </tr>
   <tr>
@@ -161,7 +161,7 @@ Ce document contient des informations à propos des différents types de version
   </tr>
   <tr>
    <td><strong>Dénomination</strong></td>
-   <td><p>X.Y.Z.CFPx</p> <p>Où X est le numéro de version principal, Y est le numéro de version secondaire et Z le numéro de correctif. x est le numéro cumulé du Service Pack. </p> </td>
+   <td><p>X.Y.Z.CFPx</p> <p>Où X est le numéro de version Principal, Y est le numéro de version secondaire et Z le numéro de correctif. x est le numéro cumulé du Service Pack. </p> </td>
   </tr>
   <tr>
    <td><strong>Inclusions</strong></td>
@@ -221,7 +221,7 @@ Ce document contient des informations à propos des différents types de version
    <td><strong>Disponibilité et installation</strong></td>
    <td>
     <ul>
-     <li>Fourni en tant que package par le service à la clientèle AEM</li>
+     <li>Livré sous forme de package par AEM service à la clientèle</li>
      <li>Pas nécessairement inclus dans les Service Packs ou les versions complètes</li>
     </ul> </td>
   </tr>
@@ -272,7 +272,7 @@ Ce document contient des informations à propos des différents types de version
    <td>
     <ul>
      <li>Livré par le biais de Service Packs</li>
-     <li>Disponible sur Package Share. Les clients acceptent les conditions générales d’Adobe par le biais du partage de package.</li>
+     <li>Disponible sur Package Share. Les clients acceptent les termes et conditions de l’Adobe par le biais du partage de package.</li>
     </ul> </td>
   </tr>
   <tr>
