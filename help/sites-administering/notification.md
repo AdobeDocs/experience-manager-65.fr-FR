@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 77%
 
 ---
 
@@ -63,9 +66,9 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 1. Dans CRXDE Lite, ajoutez un dossier nommé `config` sous votre dossier d’application.
 1. Dans le dossier de configuration, ajoutez un noeud nommé :
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` type `sling:OsgiConfig`
+   `com.day.cq.wcm.notification.email.impl.EmailChannel` de type `sling:OsgiConfig`
 
-1. Add a `String` property to the node] named `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
+1. Add a `String` property to the node named `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
 
 1. Cliquez sur **Enregistrer tout**.
 
@@ -140,9 +143,9 @@ Le modèle doit avoir le format suivant :
 * `${userFullName}`, le nom complet de l’utilisateur ayant déclenché l’événement.
 
 * `${userId}`, l’ID de l’utilisateur ayant déclenché l’événement.
-* `${modifications}`, décrit le type d’événement de page et le chemin de page au format :
+* `${modifications}`, décrit le type de événement de page et le chemin de page au format :
 
-   &lt;page event type> => &lt;page path>
+   &lt;type d&#39;événement de page> => &lt;chemin de page>
 
    Par exemple :
 
@@ -256,7 +259,7 @@ The method `${payload.path.open}` reveals the path to the payload of the workite
 
 Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique :
 
-* `${event.EventType}`, type de l’événement
+* `${event.EventType}`, type du événement
 * `${event.TimeStamp}`, date et heure de l’événement
 * `${event.User}`, utilisateur ayant déclenché l’événement
 * `${initiator.home}`, le chemin du noeud initiateur
@@ -270,7 +273,7 @@ Les variables suivantes peuvent être utilisées dans le modèle de courrier él
 * `${participant.email}`, adresse électronique du participant
 * `${participant.name}`, nom du participant
 * `${participant.familyName}`, nom de famille du participant
-* `${participant.id}`, ID du participant
+* `${participant.id}`, identifiant du participant
 * `${participant.language}`, la langue du participant
 * `${instance.id}`, l’ID de processus
 * `${instance.state}`, l’état du processus
