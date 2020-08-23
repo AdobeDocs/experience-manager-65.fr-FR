@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6822'
+source-wordcount: '6814'
 ht-degree: 76%
 
 ---
@@ -120,7 +120,7 @@ Par exemple, une liste comporte quatre options : Rouge, Bleu, Vert et Jaune. Lo
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction Lorsque permet de créer des conditions complexes avec plusieurs champs.
+Lorsque vous écrivez une règle Lorsque, vous pouvez déclencher l’action Effacer la valeur de. L’action Effacer la valeur de efface la valeur de l’objet spécifié. L’option Clear Value of (Effacer la valeur de) de l’instruction When permet de créer des conditions complexes avec plusieurs champs.
 
 ![claivalueof](assets/clearvalueof.png)
 
@@ -170,7 +170,7 @@ La figure suivante illustre un exemple d’ajout dynamique de cases à cocher en
 
 **Valider le formulaire** Valide le formulaire.
 
-**Ajouter l’instance** Ajoute une instance du panneau ou de la ligne de tableau répétable spécifiée.
+**Instance** Ajoute Ajoute une instance du panneau ou de la ligne de tableau répétable spécifiée.
 
 **Supprimer une instance** Supprime une instance de la ligne de tableau ou du panneau répétable spécifiée.
 
@@ -333,11 +333,10 @@ Pour lancer l’interface utilisateur de l’éditeur de règles :
    Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran.  Pour plus d’informations sur la gestion des règles existantes, reportez-vous à la section[ Gestion des règles](../../forms/using/rule-editor.md#p-manage-rules-p).
 
 1. Tap **[!UICONTROL Create]** to write a new rule. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’ouvre par défaut lorsque vous lancez l’éditeur de règles la première fois.
-[ ![Interface utilisateur de l’éditeur de règles](assets/rule-editor-ui.png)
 
-   Cliquez pour afficher une image agrandie
+   ![Interface utilisateur de l’éditeur de règles](assets/rule-editor-ui.png)
 
-   ](assets/rule-editor-ui-1.png)Examinons en détail chaque composant de l’interface utilisateur de l’éditeur de règles.
+Examinons en détail chaque composant de l’interface utilisateur de l’éditeur de règles. 
 
 ### A. Affichage composant-règle {#a-component-rule-display}
 
@@ -577,7 +576,7 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
 
 * **Syntaxe du type**de retour : 
 Vous pouvez également utiliser une `@return {type}`autre solution, `@returns {type}`.
-Ajoute des informations sur la fonction, telles que son objectif.
+ajoute des informations sur la fonction, telles que son objectif.
 {type} représente le type de retour de la fonction. Les types de retour autorisés sont les suivants : 
 
    1. chaîne
