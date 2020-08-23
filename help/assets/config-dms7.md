@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a482b183f25eb30edb6c1c4817e3ff697b394f57
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '5779'
-ht-degree: 88%
+source-wordcount: '5778'
+ht-degree: 87%
 
 ---
 
@@ -39,7 +39,7 @@ Par défaut, [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manag
 
 >[!NOTE]
 >
->Dynamic Media - Le mode Scene7 est réservé à l’instance de AEM Author. Par conséquent, vous devez effectuer la configuration `runmode=dynamicmedia_scene7` sur l’instance de AEM Author, *pas* sur l’instance de AEM Publish.
+>Contenu multimédia dynamique : le mode Scene7 est réservé à l’instance d’auteur AEM. En tant que tel, vous devez configurer `runmode=dynamicmedia_scene7` l’instance Auteur AEM, *pas* l’instance Publication AEM.
 
 Pour activer Dynamic Media, vous devez démarrer AEM en mode d’exécution `dynamicmedia_scene7` à partir de la ligne de commande en saisissant la commande suivante dans une fenêtre de terminal (dans l’exemple, le port utilisé est 4502) :
 
@@ -67,17 +67,17 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 The installation of feature pack 18912 is *optional*.
 
-Feature Pack 18912 vous permet soit d’assimiler des fichiers en vrac par FTP, soit de migrer des fichiers du mode Dynamic Media - Hybrid ou de Dynamic Media Classic vers le mode Dynamic Media - Scene7 sur AEM. Il est disponible à [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
+Feature Pack 18912 vous permet soit d’assimiler des fichiers en vrac par FTP, soit de migrer des fichiers du mode Contenu multimédia dynamique - hybride ou Contenu multimédia dynamique vers le mode Contenu multimédia dynamique - Scene7 sur AEM. Il est disponible à [Adobe Professional Services](https://www.adobe.com/fr/experience-cloud/consulting-services.html).
 
 Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la migration](/help/assets/bulk-ingest-migrate.md) de ressources en vrac.
 
-## Création d’une configuration Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Création d’une configuration multimédia dynamique {#configuring-dynamic-media-cloud-services}
 
 **Avant de configurer Dynamic Media** : après réception de l’e-mail de mise en service contenant les informations d’identification Dynamic Media, vous devez [vous connecter](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à Dynamic Media Classic pour changer votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Pour créer une configuration Dynamic Media**
+**Pour créer une configuration de média dynamique**
 
 1. In AEM, tap the AEM logo to access the global navigation console and tap or click the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
 1. Sur la page du navigateur de configuration de Dynamic Media, dans le volet de gauche, appuyez sur **[!UICONTROL global]** (ne sélectionnez ou n’appuyez pas sur l’icône de dossier située à gauche de **[!UICONTROL global]**), puis sur **[!UICONTROL Créer.]**
@@ -106,7 +106,7 @@ Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la mig
    * **[!UICONTROL Mode de synchronisation Dynamic Media]**
       * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Désactivé par défaut]** : la configuration n’est appliquée à aucun dossier tant que vous ne marquez pas explicitement un dossier sélectionné pour synchronisation avec Dynamic Media.
-Pour marquer un dossier sélectionné pour synchronisation vers Dynamic Media, sélectionnez un dossier de ressources, puis sur la barre d’outils, cliquez sur **[!UICONTROL Propriétés.]** Sous l’onglet **[!UICONTROL Détails]** , dans la liste déroulante Mode **[!UICONTROL de synchronisation]** Dynamic Media, choisissez l’une des trois options suivantes. When you are done tap **[!UICONTROL Save.]** *Rappelez-vous : ces trois options ne sont pas disponibles si vous avez sélectionné&#x200B;**Synchroniser tout le contenu**plus tôt.*
+Pour marquer un dossier sélectionné en vue de sa synchronisation avec Contenu multimédia dynamique, sélectionnez un dossier de ressources, puis, sur la barre d’outils, cliquez sur **[!UICONTROL Propriétés.]** Sous l’onglet **[!UICONTROL Détails]** , dans la liste déroulante Mode **[!UICONTROL de synchronisation des médias]** dynamiques, choisissez l’une des trois options suivantes. When you are done tap **[!UICONTROL Save.]** *Rappelez-vous : ces trois options ne sont pas disponibles si vous avez sélectionné&#x200B;**Synchroniser tout le contenu**plus tôt.*
          * **[!UICONTROL Hérité]** : aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut dans la configuration du cloud. Le statut détaillé de l’héritage s’affiche par le biais d’une info-bulle.
          * **[!UICONTROL Activé pour les sous-dossiers]** : incluez tous les éléments de cette sous-arborescence dans la synchronisation avec Dynamic Media. Les paramètres propres au dossier remplacent le mode par défaut dans la configuration du cloud.
          * **[!UICONTROL Désactivé pour les sous-dossiers]** : excluez tous les éléments de cette sous-arborescence de la synchronisation avec Dynamic Media.
@@ -172,7 +172,7 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 * **[!UICONTROL Valeurs par défaut des champs de catalogue]** : ces paramètres concernent la résolution et le type de miniature par défaut des images.
 * **[!UICONTROL Attributs de gestion des couleurs]** : ces paramètres déterminent les profils de couleurs ICC utilisés.
 * **[!UICONTROL Attributs de compatibilité]** : ce paramètre permet aux paragraphes de début et de fin des calques de texte d’être traités tels qu’ils l’étaient dans la version 3.6, ce qui les rend rétrocompatibles.
-* **[!UICONTROL Aide à la localisation]** : ces paramètres vous permettent de gérer divers attributs de paramètres régionaux. Ils vous permettent également de définir une chaîne de mappage de paramètres régionaux afin de définir les langues à prendre en charge pour les différentes info-bulles dans les visionneuses. Pour plus d’informations sur la configuration de l’**Aide à la localisation**, voir [Considérations à prendre en compte lors de la configuration de la localisation des ressources](https://help.adobe.com/fr_FR/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Aide à la localisation]** : ces paramètres vous permettent de gérer divers attributs de paramètres régionaux. Ils vous permettent également de définir une chaîne de mappage de paramètres régionaux afin de définir les langues à prendre en charge pour les différentes info-bulles dans les visionneuses. For more information about setting up **[Localization Support]**, see [Considerations when setting up localization of assets](https://help.adobe.com/fr_FR/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
 
 #### Configuration des paramètres généraux de l’application {#configuring-application-general-settings}
 
@@ -213,7 +213,7 @@ Pour configurer les propriétés de couleur par défaut afin d’activer la corr
    * **[!UICONTROL Espace colorimétrique CMJN par défaut]** : nom du profil de couleurs CMJN par défaut.
    * **[!UICONTROL Espace colorimétrique de niveaux de gris par défaut]** : nom du profil de niveaux de gris par défaut.
    * **[!UICONTROL Espace colorimétrique RVB par défaut]** : nom du profil de couleurs RVB par défaut.
-   * **[!UICONTROL Intention de rendu de conversion de couleurs]** : indique l’intention de rendu. Les valeurs possibles sont les suivantes : **[!UICONTROL perception]**, **[!UICONTROL colorimétrie relative]**, **[!UICONTROL saturation]** et **[!UICONTROL colorimétrie absolue.]** Adobe recommande d’utiliser **[!UICONTROL colorimétrie relative]**comme valeur par défaut.
+   * **[!UICONTROL Intention de rendu de conversion de couleurs]** : indique l’intention de rendu. Les valeurs possibles sont les suivantes : **[!UICONTROL perception]**, **[!UICONTROL colorimétrie relative]**, **[!UICONTROL saturation]** et **[!UICONTROL colorimétrie absolue.]** adobe recommande **[!UICONTROL relative]** comme valeur par défaut.
 
 1. Appuyez sur **[!UICONTROL Enregistrer.]**
 
@@ -427,7 +427,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez l’assistance technique.
 
-1. Dans la barre de navigation située en haut de la page, cliquez sur **[!UICONTROL Configuration > Configuration de l’application > Paramètres prédéfinis d’ensemble par lot > Paramètre prédéfini d’ensemble par lot**.
+1. On the navigation bar near the top of the page, click **[!UICONTROL Setup]>[!UICONTROL Application Setup]>[!UICONTROL Batch Set Presets]>[!UICONTROL Batch Set Preset]**.
 
    Notez que l’option **[!UICONTROL Afficher le formulaire]**, indiquée dans le coin supérieur droit de la page Détails, correspond à la vue par défaut.
 
@@ -481,7 +481,7 @@ Lorsque la visionneuse à 360° est téléchargée et publiée, vous activez le 
 
 ### (Facultatif) Optimisation des performances du mode Scene7 de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Pour que le mode Dynamic Media - Scene7 fonctionne correctement, l’Adobe recommande les conseils de réglage précis des performances et de l’évolutivité de la synchronisation suivants :
+Pour que le mode Contenu multimédia dynamique - Scene7 fonctionne correctement, l’Adobe recommande les conseils de réglage précis des performances et de l’évolutivité de la synchronisation suivants :
 
 * Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
 * Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
@@ -550,11 +550,11 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
 1. Appuyez sur **[!UICONTROL Enregistrer.]**
 
-#### Mise à jour de la connexion de transfert Dynamic Media Classic {#updating-the-scene-upload-connection}
+#### Mise à jour de la connexion de téléchargement de Dynamic Media Classic {#updating-the-scene-upload-connection}
 
 Le paramètre de connexion de chargement vers Scene7 synchronise les ressources AEM avec les serveurs Dynamic Media Classic.
 
-**Pour mettre à jour la connexion de transfert Dynamic Media Classic**
+**Pour mettre à jour la connexion de téléchargement de Dynamic Media Classic**
 
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Nombre de connexions]** et/ou **[!UICONTROL Délai d’expiration des tâches actives]**, modifiez le nombre en fonction de vos besoins.
@@ -573,13 +573,13 @@ Le paramètre de connexion de chargement vers Scene7 synchronise les ressources 
 
 In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your AEM author environment to the AEM publish node. Ce processus est nécessaire car les serveurs de publication AEM diffusent également les ressources.
 
-Cependant, dans les déploiements Dynamic Media, dans la mesure où les ressources sont distribuées par le biais du service cloud, il n’est pas nécessaire de répliquer ces mêmes ressources sur AEM noeuds de publication. Un tel processus de &quot;publication hybride&quot; permet d’éviter des coûts d’enregistrement supplémentaires et des délais de traitement plus longs pour la réplication des ressources. Les autres contenus, tels que les pages de site, continuent à être diffusés à partir des nœuds de publication AEM.
+Cependant, dans les déploiements de Contenu multimédia dynamique, dans la mesure où les ressources sont distribuées par le biais du service cloud, il n’est pas nécessaire de répliquer ces mêmes ressources sur AEM noeuds de publication. Un tel processus de &quot;publication hybride&quot; permet d’éviter des coûts d’enregistrement supplémentaires et des délais de traitement plus longs pour la réplication des ressources. Les autres contenus, tels que les pages de site, continuent à être diffusés à partir des nœuds de publication AEM.
 
 Les filtres vous permettent d’*empêcher* que les ressources ne soient répliquées vers le nœud de publication AEM.
 
 #### Utilisation des filtres de ressources par défaut pour la réplication {#using-default-asset-filters-for-replication}
 
-Si vous utilisez Dynamic Media pour l’imagerie et/ou la vidéo, vous pouvez utiliser les filtres par défaut que nous fournissons en l’état. Les filtres suivants sont activés par défaut :
+Si vous utilisez Contenu multimédia dynamique pour la création d’images et/ou la vidéo, vous pouvez utiliser les filtres par défaut que nous fournissons en l’état. Les filtres suivants sont activés par défaut :
 
 <table>
  <tbody>
@@ -590,7 +590,7 @@ Si vous utilisez Dynamic Media pour l’imagerie et/ou la vidéo, vous pouvez ut
    <td><strong>Rendus</strong></td>
   </tr>
   <tr>
-   <td>Dynamic Media Image Diffusion</td>
+   <td>Diffusion d’image de média dynamique</td>
    <td><p>filter-images</p> <p>ensembles de filtres</p> <p> </p> </td>
    <td><p>Débuts avec <strong>image/</strong></p> <p>Contient l’ <strong>application/</strong> et se termine par <strong>set</strong>.</p> </td>
    <td>Les "images-filtres" prêtes à l’emploi (s’appliquent aux fichiers d’images uniques, y compris aux images interactives) et les "visionneuses de filtres" (s’appliquent aux visionneuses à 360°, aux visionneuses d’images, aux visionneuses de supports variés et aux visionneuses de carrousel) :
@@ -599,7 +599,7 @@ Si vous utilisez Dynamic Media pour l’imagerie et/ou la vidéo, vous pouvez ut
     </ul> </td>
   </tr>
   <tr>
-   <td>Diffusion vidéo Dynamic Media</td>
+   <td>Diffusion vidéo de média dynamique</td>
    <td>filter-video</td>
    <td>Débuts avec <strong>vidéo/</strong></td>
    <td>La "vidéo-filtre" prête à l'emploi permet de :
@@ -643,7 +643,7 @@ Si vous utilisez Dynamic Media pour l’imagerie et/ou la vidéo, vous pouvez ut
  <tbody>
   <tr>
    <td><strong>Caractère à utiliser</strong></td>
-   <td><strong>filtres des ressources pour la réplication</strong></td>
+   <td><strong>Filtres des ressources pour la réplication</strong></td>
   </tr>
   <tr>
    <td>*</td>
