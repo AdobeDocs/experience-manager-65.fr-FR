@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4814'
+source-wordcount: '4813'
 ht-degree: 98%
 
 ---
@@ -43,7 +43,7 @@ Regardez une présentation guidée de 10 min et 33 s sur la [création de bann
 
 >[!NOTE]
 >
->Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **d[!UICONTROL am-users ]**.
+>Les utilisateurs non administrateurs doivent être ajoutés au groupe **[!UICONTROL dam-users]** de façon à pouvoir créer ou modifier des bannières de carrousel. Si vous rencontrez des problèmes lors de la création ou de la modification des bannières, contactez votre administrateur système pour qu’il vous ajoute au groupe **d[!UICONTROL am-users]**.
 
 ## Démarrage rapide : bannières de carrousel {#quick-start-carousel-banners}
 
@@ -86,12 +86,10 @@ Pour démarrer rapidement :
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * [Ajout d’une bannière de carrousel à votre page web
-      ](#adding-a-carousel-banner-to-your-website-page)Vous pouvez ajouter le code intégré ou l’URL de la bannière de carrousel que vous avez copié sur la page web.
+   * [Ajout d’une bannière de carrousel à votre page web](#adding-a-carousel-banner-to-your-website-page) Vous pouvez ajouter le code intégré ou l’URL de la bannière de carrousel que vous avez copié sur la page web.
 
       * [Intégrez la bannière de carrousel à un aperçu rapide existant](#integrating-the-carousel-banner-with-an-existing-quickview). Si vous utilisez un système de gestion de contenu web externe, vous devez intégrer la nouvelle bannière de carrousel à la mise en œuvre de l’aperçu rapide existant sur votre site web.
-   * [Ajout d’une bannière de carrousel à votre site web dans AEM
-      ](/help/assets/adding-dynamic-media-assets-to-pages.md)Si vous êtes client AEM Sites, vous pouvez ajouter le carrousel défini directement à la page dans AEM, à l’aide du composant Interactive Media.
+   * [Ajout d’une bannière de carrousel à votre site web dans AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Si vous êtes client AEM Sites, vous pouvez ajouter le carrousel défini directement à la page dans AEM, à l’aide du composant Interactive Media.
 
 
 Si vous devez modifier des ensembles de carrousels, voir [Modification d’ensembles de carrousels.](#editing-carousel-sets) De plus, vous pouvez afficher et modifier les [propriétés d’un ensemble de carrousel](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties).
@@ -200,8 +198,7 @@ Pour transférer des bannières d’image, reportez-vous à la section [Téléch
    * Dans le coin supérieur gauche de la page, appuyez sur l’icône **[!UICONTROL Ajouter une diapositive]**.
 
    * Près du milieu de la page, appuyez sur **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources.]**
-
-   Appuyez pour sélectionner les ressources à inclure dans votre ensemble de carrousel. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Sélectionner**.
+   Appuyez pour sélectionner les ressources à inclure dans votre ensemble de carrousel. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, appuyez sur **[!UICONTROL Sélectionner]**.
 
    Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant ou en cliquant sur **[!UICONTROL Entrée.]** Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis appuyez sur l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en appuyant sur l’icône Affichage et en sélectionnant **[!UICONTROL Mode Colonnes]**, **[!UICONTROL Mode Carte]** ou **[!UICONTROL Mode Liste.]**
 
@@ -286,7 +283,7 @@ Voir aussi [Ajout de zones cliquables](/help/assets/image-maps.md).
 
    * Appuyez sur **[!UICONTROL Aperçu rapide.]**
 
-      * Si vous êtes un client AEM Sites et de commerce électronique, appuyez sur l’icône Sélecteur de produits (loupe) pour ouvrir la page Sélectionner un produit. Appuyez sur le produit à utiliser, puis sur la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de bannière de carrousel.
+      * Si vous êtes client AEM Sites et eCommerce, appuyez sur l’icône Sélecteur de produits (loupe) pour ouvrir la page Sélectionner un produit. Appuyez sur le produit à utiliser, puis sur la coche dans le coin supérieur droit de la page pour revenir à l’éditeur de bannière de carrousel.
       * Si vous n’êtes pas client AEM Sites ou eCommerce
 
          * Voir [Identification des variables de zone réactive](#identifying-hotspot-and-image-map-variables), car vous souhaitez peut-être définir ces variables.
@@ -383,7 +380,7 @@ Vous pouvez afficher un aperçu des bannières de carrousel dans l’éditeur de
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Appuyez sur **Aperçu.]**
+1. Appuyez sur **[Aperçu.]**
 1. Appuyez sur les zones réactives ou cliquables de l’image pour tester les actions associées.
 
 **Pour afficher un aperçu des bannières de carrousel à partir de la liste Visionneuses**
