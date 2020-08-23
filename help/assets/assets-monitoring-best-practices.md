@@ -3,9 +3,9 @@ title: Meilleures pratiques de [!DNL Adobe Experience Manager Assets] surveillan
 description: Best practices to monitor the environment and performance of your [!DNL Adobe Experience Manager] deployment after it is deployed.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1671'
 ht-degree: 68%
 
 ---
@@ -95,7 +95,7 @@ Mémoire
 * Seuil d’alarme : lorsque l’utilisation de la mémoire allouée ou non allouée sur le tas dépasse de 75 % la mémoire maximale correspondante.
 * Définition de l’alarme : la mémoire système est insuffisante ou il y a une fuite de mémoire dans le code. Analysez une image mémoire des threads pour trouver une définition.
 
->[!NNote]
+>[!NOTE]
 >
 >Les informations fournies par ce bean sont exprimées en octets.
 
@@ -122,7 +122,7 @@ Agents de réplication
 
 * Définition de l’alarme : une file d’attente est bloquée dans le système, indiquant que la cible de réplication n’est pas active ou qu’elle est hors d’atteinte. Très souvent, les problèmes d’infrastructure ou de réseau provoquent la mise en attente d’un nombre excessif d’entrées, ce qui peut affecter les performances du système.
 
->[!NNote]
+>[!NOTE]
 >
 >For the MBean and URL parameters, replace `<AGENT_NAME>` with the name of the replication agent you want to monitor.
 
