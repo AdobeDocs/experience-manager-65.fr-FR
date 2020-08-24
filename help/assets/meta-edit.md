@@ -3,10 +3,10 @@ title: Modification ou ajout de métadonnées
 description: Learn about asset metadata in [!DNL Adobe Experience Manager Assets] an various ways by which you can edit asset metadata.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4748eed3ce484e8446b641ccbc7b5d76cb66f428
+source-git-commit: fc14ccc834c9a41b67eb8cf17dd8b34f5dff2406
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 25%
+source-wordcount: '473'
+ht-degree: 23%
 
 ---
 
@@ -55,6 +55,10 @@ Vous pouvez ajouter vos propres espaces de noms à [!DNL Experience Manager]. Ju
 1. Pour accéder à la page Administration des espaces de nommage, cliquez sur **[!UICONTROL Espaces de nommage]** en haut de la page.
 1. Pour ajouter un espace de nommage, cliquez sur **[!UICONTROL Nouveau]** en bas de la page.
 1. Spécifiez un espace de nommage personnalisé dans la convention d’espace de nommage XML. Spécifiez l’identifiant sous la forme d’un URI et d’un préfixe associé pour l’identifiant. Cliquez sur **[!UICONTROL Enregistrer]**.
+
+## Conseils et restrictions {#best-practices-limitations}
+
+* Les métadonnées sont mises à jour via l’interface utilisateur tactile pour modifier les propriétés de métadonnées dans l’ `dc` espace de nommage. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans l’ `jcr` espace de nommage. Voir [comment mettre à jour les métadonnées à l’aide de l’API](/help/assets/mac-api-assets.md#update-asset-metadata)HTTP.
 
 >[!MORELIKETHIS]
 >
