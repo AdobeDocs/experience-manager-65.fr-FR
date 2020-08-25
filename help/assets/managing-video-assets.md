@@ -3,7 +3,7 @@ title: Gérez les fichiers vidéo dans [!DNL Adobe Experience Manager].
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
+source-git-commit: 268689d534f8bf649335269f9169455c381f9554
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 37%
@@ -51,8 +51,8 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 
    ![Nœud de recouvrement](assets/overlay-node-path.png)
 
-1. Actualisez le navigateur. Le nœud de recouvrement `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` est sélectionné.
-1. Dans l’onglet **[!UICONTROL Propriétés]**, saisissez la valeur appropriée en octets pour définir la taille maximale souhaitée. Par exemple, pour augmenter la taille limite à 30 Go, entrez la valeur `{sizeLimit : "32212254720"}`.
+1. Actualisez le navigateur. Le nœud de recouvrement `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` est sélectionné.
+1. Dans l’onglet **[!UICONTROL Propriétés]**, saisissez la valeur appropriée en octets pour définir la taille maximale souhaitée. Par exemple, pour augmenter la taille limite à 30 Go, entrez la valeur `32212254720`.
 
 1. From the toolbar, click **[!UICONTROL Save All]**.
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
@@ -81,7 +81,7 @@ Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web
 
 1. Pour passer à un point spécifique de la vidéo, indiquez le moment en secondes dans le champ **texte** et cliquez sur **Aller**. Par exemple, pour sauter les 20 premières secondes de la vidéo, saisissez 20 dans le champ texte.
 
-   ![Recherche d’une durée de la vidéo à sauter selon les secondes spécifiées](assets/seek-in-video.png)
+   ![Rechercher une heure dans une vidéo à sauter selon les secondes spécifiées](assets/seek-in-video.png)
 
 1. Pour l’afficher dans la chronologie, cliquez sur une annotation. Pour supprimer l’annotation de la chronologie, cliquez sur **[!UICONTROL Supprimer]**.
 
