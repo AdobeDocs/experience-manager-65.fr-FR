@@ -3,9 +3,9 @@ title: Gérez les fichiers vidéo dans [!DNL Adobe Experience Manager].
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 268689d534f8bf649335269f9169455c381f9554
+source-git-commit: 93b8fccc2a0c4663104150fdba3651ff5e4f6bbc
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '810'
 ht-degree: 37%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 37%
 
 Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] Les offres développent des offres et des fonctionnalités pour gérer tout le cycle de vie des ressources vidéo après leur création.
 
-Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager Assets]. Also, if you are licensed to use [!DNL Dynamic Media], see the [Dynamic Media video documentation](/help/assets/video.md).
+Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager Assets]. Le codage et le transcodage vidéo, par exemple, le transcodage FFmpeg, sont possibles à l’aide de [!DNL Dynamic Media] l’intégration.
 
 ## Chargement et prévisualisation des ressources vidéo {#upload-and-preview-video-assets}
 
 [!DNL Adobe Experience Manager Assets] génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualisation les rendus dans l’interface [!DNL Assets] utilisateur.
 
 1. Dans le dossier ou les sous-dossiers des ressources numériques, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
-1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Files]**. Vous pouvez également le faire glisser directement jusqu’à la zone des ressources. See [upload assets](managing-assets-touch-ui.md#uploading-assets) for details around the upload operation.
+1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](managing-assets-touch-ui.md#uploading-assets) pour plus d’informations.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
 1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
@@ -67,17 +67,15 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
-Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web sous la forme d’une URL ou les incorporer directement. Pour plus d’informations, reportez-vous à la page [Publication de fichiers](/help/assets/publishing-dynamicmedia-assets.md)multimédias dynamiques.
+Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web sous la forme d’une URL ou les incorporer directement. Pour plus d’informations, voir [Publication de fichiers](/help/assets/publishing-dynamicmedia-assets.md)Contenu multimédia dynamique.
 
 ## Annotation de ressources vidéo {#annotate-video-assets}
 
-1. From the [!DNL Assets] console, click [!UICONTROL Edit] on the asset card to display the asset details page.
-1. Pour lire la vidéo, cliquez sur [!UICONTROL Prévisualisation].
-1. Pour annoter la vidéo, cliquez sur le bouton **[!UICONTROL Annoter]**. Une annotation est ajoutée au moment (image) particulier de la vidéo. Lorsque vous annotez, vous pouvez dessiner sur le canevas et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés.
+1. Dans la [!DNL Assets] console, sélectionnez **[!UICONTROL Modifier]** sur la carte de ressources pour afficher la page des détails de la ressource.
+1. Pour lire la vidéo, cliquez sur **[!UICONTROL Prévisualisation]**.
+1. To annotate the video, click **[!UICONTROL Annotate]**. Une annotation est ajoutée au moment (image) particulier de la vidéo. Lorsque vous annotez, vous pouvez dessiner sur le canevas et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés. Pour quitter l’assistant d’annotation, cliquez sur **[!UICONTROL Fermer]**.
 
    ![Dessin et annotation sur une image vidéo](assets/annotate-video.png)
-
-   Pour quitter l’assistant d’annotation, cliquez sur **[!UICONTROL Fermer]**.
 
 1. Pour passer à un point spécifique de la vidéo, indiquez le moment en secondes dans le champ **texte** et cliquez sur **Aller**. Par exemple, pour sauter les 20 premières secondes de la vidéo, saisissez 20 dans le champ texte.
 
@@ -91,4 +89,5 @@ Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web
 >
 >* [Gestion des ressources numériques dans les ressources Experience Manager](/help/assets/managing-assets-touch-ui.md)
 >* [Gestion des collections dans les ressources Experience Manager](/help/assets/managing-collections-touch-ui.md)
+>* [Documentation](/help/assets/video.md)vidéo sur les médias dynamiques.
 
