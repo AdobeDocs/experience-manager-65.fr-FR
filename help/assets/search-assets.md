@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 4efe5247d91fa846c4a444c81245b0fa1515a7b4
 workflow-type: tm+mt
 source-wordcount: '5858'
 ht-degree: 54%
@@ -403,7 +403,7 @@ Vous pouvez effectuer les opérations suivantes avec les ressources que vous ave
 
 ### Tri des résultats de recherche {#sort}
 
-Triez les résultats de la recherche pour découvrir plus rapidement les ressources nécessaires. You can sort the search results in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel.[!DNL Experience Manager Assets]utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
+Triez les résultats de la recherche pour découvrir plus rapidement les ressources requises. You can sort the search results in list view and only when you select **[!UICONTROL [Files]](#searchui)** from the **[!UICONTROL Filters]** panel. [!DNL Experience Manager Assets] utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
 
 En mode Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date de) création, (Date de) publication, Workflow et Extraits.
 
