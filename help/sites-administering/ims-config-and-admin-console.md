@@ -1,8 +1,8 @@
 ---
-title: Authentification Adobe IMS et [!Console d’administration DNL] Prise en charge des services gérés AEM
-seo-title: Authentification Adobe IMS et [!Console d’administration DNL] Prise en charge des services gérés AEM
-description: Découvrez comment utiliser la[!console d’administration DNL] dans AEM.
-seo-description: Découvrez comment utiliser la[!console d’administration DNL] dans AEM.
+title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
+description: Découvrez comment utiliser le[ !Admin Console DNL] en AEM.
+seo-description: Découvrez comment utiliser le[ !Admin Console DNL] en AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: a9931024f5cd79e2e363ed46edaef5e3e66c6e14
+source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 60%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: a9931024f5cd79e2e363ed46edaef5e3e66c6e14
 
 AEM 6.4.3.0 introduces [!DNL Admin Console] support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.
 
-AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services customers to manage all Experience Cloud users in one console. Les utilisateurs et les groupes peuvent être affectés aux  de produits associés aux instances AEM, ce qui leur permet de se connecter à une instance spécifique.
+AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services customers to manage all Experience Cloud users in one console. Les utilisateurs et les groupes peuvent être affectés à des profils de produits associés à des instances AEM, ce qui leur permet de se connecter à une instance spécifique.
 
 ## Principales caractéristiques {#key-highlights}
 
@@ -35,7 +38,7 @@ AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services custo
 * Product Profiles in [!DNL Admin Console] will determine which instances a user can access
 * L’authentification fédérée à l’aide des propres fournisseurs d’identité des clients conformes SAML 2 est prise en charge
 * Seuls les ID d’entreprise ou fédérés (pour l’authentification unique du client) sont pris en charge, et non les Adobe ID personnels.
-* [!DNL User Management](dans Adobe [!DNL Admin Console]) continuera à appartenir aux administrateurs du client.
+* [!DNL User Management] (dans l’Adobe [!DNL Admin Console]) continuera d’appartenir aux administrateurs du client.
 
 ## Architecture {#architecture}
 
@@ -47,11 +50,11 @@ Le flux d’identifiant de connexion utilisateur est indiqué ci-dessous, l’ut
 
 ## Méthode de configuration {#how-to-set-up}
 
-### Les organisations intégrées aux [!DNL Admin Console]{#onboarding-organizations-to-admin-console}
+### Onboarding Organizations to [!DNL Admin Console] {#onboarding-organizations-to-admin-console}
 
 The customer onboarding to [!DNL Admin Console] is a pre-requisite to using Adobe IMS for AEM authentication.
 
-Pour commencer, une organisation doit être configurée pour les clients dans Adobe IMS. Adobe Enterprise customers are represented as IMS Organizations in the [Adobe [!DNL Admin Console]](https://helpx.adobe.com/enterprise/using/admin-console.html).
+Pour commencer, une organisation doit être configurée pour les clients dans Adobe IMS. Les clients Adobe Enterprise sont représentés en tant qu’organisations IMS dans [Adobe [!DNL Admin Console]](https://helpx.adobe.com/fr/enterprise/using/admin-console.html).
 
 AEM Managed Services customers should already have an organization provisioned, and as part of the IMS provisioning, the customer instances will be made available in the [!DNL Admin Console] for managing user entitlements and access.
 
@@ -69,11 +72,11 @@ Une fois qu’un client est défini en tant qu’organisation IMS et qu’AMS a 
 
 >[!NOTE]
 >
->Pour plus d’informations sur les bases de la gestion des identités dans Adobe, y compris sur la configuration de fournisseur d’identité, voir l’article présenté [sur cette page.](https://helpx.adobe.com/enterprise/using/set-up-identity.html)
+>Pour plus d’informations sur les bases de la gestion des identités dans Adobe, y compris sur la configuration de fournisseur d’identité, voir l’article présenté [sur cette page.](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html)
 >
->For more info about the Enterprise Administration and [!DNL Admin Console] see the article [this page](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+>For more info about the Enterprise Administration and [!DNL Admin Console] see the article [this page](https://helpx.adobe.com/fr/enterprise/managing/user-guide.html).
 
-### Intégration d’utilisateurs aux [!DNL Admin Console]{#onboarding-users-to-the-admin-console}
+### Intégration d’utilisateurs à [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
 Il existe trois méthodes d’intégration des utilisateurs en fonction de la taille du client et de ses préférences :
 
@@ -103,7 +106,7 @@ When User Sync runs, it fetches a list of users from the organization’s Active
 
 The tool allows the system admin to map user groups in the customer’s directory with product configuration and user groups in the [!DNL Admin Console], the new UST version also allows dynamic creation of user groups in the [!DNL Admin Console].
 
-To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [[!DNL User Management] API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
+Pour configurer la synchronisation des utilisateurs, l’organisation doit créer un ensemble d’informations d’identification de la même manière qu’avec l’[[!DNL User Management] API ](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 
@@ -135,7 +138,7 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités du group
 >
 >La configuration IMS d’AEM sera gérée par l’équipe Adobe Managed Services. Cependant, l’administrateur du client peut la modifier en fonction de ses besoins (par exemple, pour gérer l’appartenance automatique des groupes ou le mappage de groupes). Le client IMS sera également enregistré par votre équipe Managed Services.
 
-## Procédure d’utilisation {#how-to-use}
+## Utilisation {#how-to-use}
 
 ### Managing Products and User Access in [!DNL Admin Console] {#managing-products-and-user-access-in-admin-console}
 
@@ -191,19 +194,19 @@ Une fois l’authentification terminée, l’utilisateur est redirigé vers AEM 
 
 Pour les instances AEM existantes qui utilisent une autre méthode d’authentification et qui sont désormais migrées vers IMS, une étape de migration est nécessaire.
 
-Les utilisateurs existants dans le référentiel AEM (provenant localement via LDAP ou SAML) peuvent être migrés pour pointer vers IMS en tant que fournisseur interne à l’aide de l’utilitaire de migration d’utilisateurs.
+Les utilisateurs existants dans le référentiel AEM (provenant localement, via LDAP ou SAML) peuvent être migrés pour pointer vers IMS en tant que IDP à l’aide de l’utilitaire de migration d’utilisateur.
 
 Cet utilitaire sera exécuté par votre équipe AMS dans le cadre de la mise en service de l’IMS.
 
 ### Gestion des autorisations et des listes de contrôle d’accès dans AEM {#managing-permissions-and-acls-in-aem}
 
-Les  et autorisations d’continueront d’être gérées dans AEM. Pour ce faire, vous pouvez séparer les groupes d’utilisateurs provenant d’IMS (par exemple, AEM-GRP-008 dans l’exemple ci-dessous) et les groupes locaux où les autorisations et le  de sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
+Le contrôle d&#39;accès et les autorisations continueront d’être gérés en AEM, ce qui peut se faire en séparant les groupes d’utilisateurs des IMS (par exemple AEM-GRP-008 dans l’exemple ci-dessous) et des groupes locaux où les autorisations et le contrôle d&#39;accès sont définis. Les groupes d’utilisateurs synchronisés à partir de l’IMS peuvent être attribués aux groupes locaux et hériter des autorisations.
 
-In the example below, we are adding synced groups to the local *Dam_Users* group as an example.
+Dans l’exemple ci-dessous, nous ajoutons des groupes synchronisés au groupe local *Dam_Users* comme exemple.
 
-Here, a user has also been assigned to a few groups in the [!DNL Admin Console]. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the[!DNL Admin Console]**above).
+Here, a user has also been assigned to a few groups in the [!DNL Admin Console]. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the[!DNL Admin Console]** above).
 
-&amp;ast;Notez que les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance. Pour les clients qui ont un grand nombre d’utilisateurs et de groupes, un utilitaire de synchronisation de groupes peut être exécuté par AMS afin de prérécupérer les groupes pour la gestion des  et des autorisations décrites ci-dessus.
+&amp;ast;Notez que les groupes d’utilisateurs ne sont synchronisés que lorsque les utilisateurs se connectent à l’instance, pour les clients qui ont un grand nombre d’utilisateurs et de groupes, un utilitaire de synchronisation de groupes peut être exécuté par AMS pour prérécupérer les groupes pour la gestion des contrôles d&#39;accès et des autorisations décrite ci-dessus.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
