@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.5 Forms
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3704'
 ht-degree: 70%
 
 ---
@@ -42,11 +42,8 @@ ht-degree: 70%
       + [Didacticiel : Créer des modèles](using/create-templates-print-web.md)
       + [Didacticiel : Créer une communication interactive](using/create-interactive-communication0.md)
    + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
-      + [Configuration et configuration des sites de référence en libre-service We.Finance et Employee](using/setup-reference-sites.md)
-      + [Configuration du site de référence We.Gov](/help/forms/using/forms-install-configure-gov-reference-site.md)
-      + [Présentation du site de référence We.Finance](using/finance-reference-site-walkthrough.md) 
-      + [Présentation du site de référence We.Gov](/help/forms/using/forms-gov-reference-site-user-demo.md)
-      + [Présentation du site de référence de libre-service dédié aux employés](/help/forms/using/employee-self-service-reference-site.md)
+      + [Configuration du site de référence We.Gov et We.Finance](/help/forms/using/forms-install-configure-gov-reference-site.md)
+      + [Présentation du site de référence We.Gov et We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Présentation du site de référence de recrutement des employés](/help/forms/using/employee-recruitment-reference-site.md)
       + [Site de référence Renouvellement d&#39;assurance auto de We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [Présentation de la loi sur l’accès à l’information pour le site de référence We.Gov](/help/forms/using/gov-reference-site-foia-walkthrough.md)
