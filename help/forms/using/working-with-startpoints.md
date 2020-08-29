@@ -10,14 +10,17 @@ topic-tags: forms-app
 discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 81%
 
 ---
 
 
 # Utilisation des points de départ{#working-with-startpoints}
 
-Un point de départ appelle un processus créé dans Workbench. Il est associé à un formulaire qui appelle le processus lors de l’envoi du formulaire. Voir [Présentation du site de référence Geometrixx Finance](../../forms/using/finance-reference-site-walkthrough.md) pour comprendre les processus.
+Un point de départ appelle un processus créé dans Workbench. Il est associé à un formulaire qui appelle le processus lors de l’envoi du formulaire.
 
 >[!NOTE]
 >
@@ -32,7 +35,7 @@ To initiate a process from the AEM Forms app, you need to have a startpoint of t
 1. Pour afficher les points de départ disponibles dans l’application AEM Forms, accédez à l’écran [Accueil](../../forms/using/home-screen.md).
 1. On the **[!UICONTROL Home]** screen, by default, the **[!UICONTROL All Forms]** list is displayed.
 
-   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans le  pour l’ouvrir.
+   Le point de départ est associé à un formulaire. Appuyez sur le formulaire associé au point de départ dans la liste pour l’ouvrir.
 
    Le formulaire associé au point de départ s’ouvre.
 
