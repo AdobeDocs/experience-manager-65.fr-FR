@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
 workflow-type: tm+mt
 source-wordcount: '2470'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 74%
 
 ## Présentation {#overview}
 
-L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des formulaires mobiles et des jeux de formulaires sur les périphériques mobiles, en fonction de votre serveur. Vous pouvez définir des processus en tant que [Processus spécifiques à Forms on OSGi](/help/forms/using/aem-forms-workflow.md) ou [Processus Forms on JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application). Par exemple, vous dirigez un établissement bancaire et utilisez AEM Forms pour gérer les demandes et les communications de vos clients. Vos clients remplissent un formulaire et le soumettent pour vérification. Si vous activez le formulaire sur des périphériques mobiles, vos clients peuvent remplir le formulaire dans l’application AEM Forms. Vous pouvez également gérer le processus de vérification en activant le formulaire de vérification sur les périphériques mobiles. Votre agent de terrain peut apporter un périphérique mobile au client, vérifier les détails et envoyer le formulaire. L’application AEM Forms se synchronise avec le serveur AEM Forms et récupère les formulaires compatibles avec les périphériques mobiles. Si l’application est hors ligne, elle enregistre les données localement.
+L’application AEM Forms permet de synchroniser des formulaires adaptatifs, des formulaires mobiles et des jeux de formulaires sur les périphériques mobiles, en fonction de votre serveur. Vous pouvez définir des processus en tant que [Processus spécifiques à Forms on OSGi](/help/forms/using/aem-forms-workflow.md) ou Processus Forms on JEE. Par exemple, vous dirigez un établissement bancaire et utilisez AEM Forms pour gérer les demandes et les communications de vos clients. Vos clients remplissent un formulaire et le soumettent pour vérification. Si vous activez le formulaire sur des périphériques mobiles, vos clients peuvent remplir le formulaire dans l’application AEM Forms. Vous pouvez également gérer le processus de vérification en activant le formulaire de vérification sur les périphériques mobiles. Votre agent de terrain peut apporter un périphérique mobile au client, vérifier les détails et envoyer le formulaire. L’application AEM Forms se synchronise avec le serveur AEM Forms et récupère les formulaires compatibles avec les périphériques mobiles. Si l’application est hors ligne, elle enregistre les données localement.
 
-Le code source de l&#39;application AEM Forms est disponible pour les clients via la distribution de logiciels. Le package de code source de Software Distribution est disponible sous la forme : `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+Le code source de l’application AEM Forms est accessible via la Distribution de logiciels. The source code package in Software Distribution is available as: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 L’application AEM Forms est prise en charge sur les périphériques iOS, Android, Windows. Vous pouvez installer une application AEM Forms pour Android depuis Google Play, iOS depuis l’App Store et Windows depuis le Windows Store.
 
@@ -50,7 +50,7 @@ Si vous avez un serveur AEM Forms, vous pouvez générer des formulaires adapta
 
 ### Formulaires autonomes ou application AEM Forms avec des serveurs sans le serveur AEM Forms Workflow {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
-Un serveur AEM Forms qui n’utilise pas AEM Forms Workflow est un serveur AEM Forms on OSGi ou un formulaire adaptatif ou mobile autonome. L’application AEM Forms fonctionne avec votre implémentation d’AEM Forms on [OSGi](/help/sites-deploying/configuring-osgi.md). Les formulaires que vous activez et publiez pour l’application AEM Forms sont disponibles dans votre application.
+Un serveur AEM Forms qui n’utilise pas AEM Forms Workflow est un serveur AEM Forms on OSGi ou un formulaire adaptatif ou mobile autonome. L’application AEM Forms fonctionne avec votre implémentation d’AEM Forms on [OSGi](/help/sites-deploying/configuring-osgi.md). Forms que vous activez et publiez pour l’application AEM Forms est disponible dans votre application.
 
 Les formulaires sont téléchargés sur votre application et sont disponibles hors ligne. Par exemple, vous dirigez un établissement bancaire et un client remplit une demande sur votre site. L’application est un formulaire adaptatif qui accepte les informations de vos clients, puis les stocke en vue d’une révision. L’administrateur examine le formulaire et crée un formulaire de vérification dans l’instance d’auteur AEM. L’administrateur active la synchronisation du formulaire avec l’application AEM Forms, et le publie. Si le formulaire de vérification est disponible dans l’application AEM Forms, votre agent de terrain peut utiliser un périphérique mobile pour vérifier les détails de votre client. Le périphérique mobile se synchronise avec le serveur et le formulaire de vérification est chargés dans l’application. Votre agent de terrain peut rendre visite à votre client, vérifier les détails, enregistrer les données en tant que brouillon ou envoyer le formulaire de vérification. Le formulaire est synchronisé avec le serveur dès que l’application est en ligne.
 
@@ -150,7 +150,7 @@ Avec les jeux de formulaires, plusieurs formulaires associés à un service ou p
 
 L’application AEM Forms fournit une solution mobile permettant aux agents de terrain de travailler sur les formulaires qui leur sont assignés. L’application met en cache les données complètes à partir du serveur et apporte une expérience utilisateur supérieure en enregistrant le travail en local. Les données du disque sont envoyées au serveur via les mises à jour régulières de synchronisation.
 
-L&#39;application AEM Forms est une application PhoneGap 5.0 dans laquelle le modèle Backbone est utilisé efficacement pour présenter les données stockées dans les modèles par le biais de vues. Toutes les opérations natives sont exécutées via des modules externes PhoneGap.
+L’application AEM Forms est une application PhoneGap 5.0 dans laquelle le modèle Backbone est utilisé efficacement pour présenter les données stockées dans les modèles par le biais de vues. Toutes les opérations natives sont exécutées via des modules externes PhoneGap.
 
 ## Personnaliser, créer et distribuer l’application AEM Forms {#customize-build-distribute}
 
@@ -158,7 +158,7 @@ L&#39;application AEM Forms est une application PhoneGap 5.0 dans laquelle le mo
 >
 >Applicable uniquement si vous utilisez le code source de l’application AEM Forms pour créer l’application.
 
-L’application AEM Forms est facile à personnaliser en fonction des besoins spécifiques de l’entreprise. Le code source de l’application est fourni avec AEM Forms. Vous pouvez modifier le code source et concevoir votre propre solution mobile destinée au personnel de terrain. Vous pouvez également signer l’application avec votre propre clé d’entreprise.
+L’application AEM Forms est facile à personnaliser en fonction des besoins de l’entreprise. Le code source de l’application est fourni avec AEM Forms. Vous pouvez modifier le code source et concevoir votre propre solution mobile destinée au personnel de terrain. Vous pouvez également signer l’application avec votre propre clé d’entreprise.
 
 ### Personnalisation {#customize}
 
@@ -168,7 +168,7 @@ Vous pouvez personnaliser votre application aux fins suivantes :
 
 **Thème**: Modifiez les styles de couleur, de police et d’espacement dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation du thème](/help/forms/using/theme-customization.md).
 
-**Mouvement**: Modifiez les mouvements, tels que le glissement vers la droite et le glissement vers la gauche, dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation des gestes](/help/forms/using/gesture-customization.md).
+**Mouvement**: Modifiez les mouvements, tels que le glissement vers la droite ou vers la gauche, dans l’interface utilisateur de l’application AEM Forms. Pour plus d’informations, consultez [Personnalisation des gestes](/help/forms/using/gesture-customization.md).
 
 Pour plus d’informations sur la configuration d’un projet d’application AEM Forms à des fins de personnalisation, consultez :
 
@@ -181,15 +181,15 @@ Pour plus d’informations sur la configuration d’un projet d’application AE
 
 The source code for the AEM Forms app can be extracted from the `adobe-lc-mobileworkspace-src.zip` that is available as part of the AEM Forms app source package on Software Distribution.
 
-Pour obtenir le code source de l’application AEM Forms, suivez les étapes ci-après :
+Pour obtenir le code source de l’application AEM Forms, procédez comme suit :
 
-1. Distribution [](https://experience.adobe.com/downloads)de logiciels ouverts. Vous avez besoin d&#39;un Adobe ID pour vous connecter à la distribution de logiciels.
-1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
-1. In the **[!UICONTROL Filters]** section:
-   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]** .
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option Téléchargements **[!UICONTROL de]** recherche pour filtrer les résultats.
-1. Appuyez sur le nom du pack applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les termes]** du contrat de licence de l’utilisateur final et appuyez sur **[!UICONTROL Télécharger]**.
-1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
+1. Open [Software Distribution](https://experience.adobe.com/fr/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
+1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
+1. Dans la section **[!UICONTROL Filtres]** :
+   1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
+   2. Sélectionnez la version et le type du package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
+1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
 **Pour iOS** :
