@@ -1,26 +1,26 @@
 ---
-title: Présentation du site de référence We.Gov
-seo-title: Présentation du site de référence We.Gov
-description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du package de démonstration We.Gov.
-seo-description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du package de démonstration We.Gov.
+title: Présentation du site de référence We.Gov et We.Finance
+seo-title: Présentation du site de référence We.Gov et We.Finance
+description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du package de démonstration We.Gov et We.Finance.
+seo-description: Utilisez des utilisateurs et des groupes fictifs pour exécuter des tâches AEM Forms à l’aide du package de démonstration We.Gov et We.Finance.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1da42d7274e9a4257b9e8effae2b754e0104aa4
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 2%
+source-wordcount: '2548'
+ht-degree: 1%
 
 ---
 
 
-# Présentation du site de référence We.Gov {#we-gov-reference-site-walkthrough}
+# Présentation du site de référence We.Gov et We.Finance {#we-gov-reference-site-walkthrough}
 
 ## Conditions préalables {#pre-requisites}
 
-Set up the reference site as described in [Set up and configure We.Gov reference site](../../forms/using/forms-install-configure-gov-reference-site.md).
+Configurez le site de référence comme décrit dans [Configuration et configuration du site](../../forms/using/forms-install-configure-gov-reference-site.md)de référence We.Gov et We.Finance.
 
 ## Article utilisateur {#user-story}
 
@@ -80,7 +80,7 @@ Les groupes suivants sont également inclus :
 1. **Se faire passer pour**: Utilisateurs et groupes définis dans AEM démonstration.
 1. **Bouton**: Rectangle coloré ou flèche circulaire pour la navigation.
 1. **Cliquez sur**: Pour exécuter une action dans l’article utilisateur.
-1. **Liens**: Situé en haut du menu principal du site Web We.Gov.
+1. **Liens**: Situé en haut du menu principal du site We.Gov.
 1. **Instructions** utilisateur : Ensemble d’étapes numériques à suivre pour parcourir l’article de l’utilisateur.
 1. **Portail** Forms : *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
 1. **Vue** mobile : utilisateur We.Gov pour répliquer une vue mobile avec un navigateur redimensionné.
