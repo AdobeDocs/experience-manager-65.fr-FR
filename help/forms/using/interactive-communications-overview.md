@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
-source-git-commit: dc7804c9985bf9a14bfad40f546e393b39615dab
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +23,7 @@ Cet article comprend une présentation, des exemples de cas d’utilisation, un 
 
 ![](do-not-localize/correspondence-management.png)
 
-Interactive Communications centralise et gère la création, l’assemblage et la livraison de correspondances sécurisées, personnalisées et interactives, telles que la correspondance commerciale, les documents, les relevés, les avis d’avantages, les courriers marketing, les factures et les kits de bienvenue.
+Interactive Communications centralise et gère la création, l&#39;assemblage et la diffusion de correspondances sécurisées, personnalisées et interactives telles que la correspondance d&#39;affaires, les documents, les relevés, les avis d&#39;avantages, les courriels marketing, les factures et les kits de bienvenue.
 
 ## Fonctionnalités essentielles {#key-capabilities}
 
@@ -30,18 +33,14 @@ Voici les fonctionnalités principales des communications interactives :
 * Interface de création intégrée pour les canaux d’impression et web avec fonction de génération automatique du canal web à partir du canal d’impression
 * Graphiques de présentation de l’information dans des formats visuels facilement compréhensibles sur papier et sur le Web
 * Éditeur de règles de support de fragments de document et modèle de données de formulaire
-* L’interface utilisateur de l’agent affiche l’aperçu imprimé et Web d’Interactive Communication.
+* L&#39;interface utilisateur de l&#39;agent affiche l&#39;impression et la prévisualisation Web de la communication interactive.
 * Glisser-déposer les composants pour construire rapidement les canaux web et d’impression
-
-## Exemples de cas d’utilisation {#sample-use-case}
-
-The [Welcome kit for a credit card customer](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) sample use case showcases the capabilities of an Interactive Communication.
 
 ## Création de la communication interactive  {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
-### Processus {#workflow}
+### Workflow {#workflow}
 
 To create an Interactive Communication, have the [building blocks](#buildingblocks) for Interactive Communication ready and then complete the following steps:
 
@@ -68,11 +67,11 @@ Les blocs de construction requis pour la création d’une communication interac
 * [Modèles de canaux web et d’impression](/help/forms/using/web-channel-print-channel.md)
 * [Fragments de document](/help/forms/using/document-fragments.md)
 * Images
-* [Thèmes](/help/forms/using/themes.md) du canal Web
+* [Thèmes](/help/forms/using/themes.md) pour le canal Web
 
 ## Comparaison entre les communications interactives et Correspondence Management {#interactive-communications-vs-correspondence-management}
 
-Interactive Communication est l’approche recommandée par défaut pour créer des communications avec les clients. Pour continuer à utiliser la création de lettres dans AEM 6.3 Forms et AEM 6.2 Forms, vous devez [installer un package de compatibilité](/help/forms/using/compatibility-package.md). Voici une comparaison entre les fonctionnalités de la communication interactive et de la lettre.
+La communication interactive est l’approche recommandée par défaut pour créer des communications client. Pour continuer à utiliser la création de lettres dans AEM 6.3 Forms et AEM 6.2 Forms, vous devez [installer un package de compatibilité](/help/forms/using/compatibility-package.md). Vous trouverez ci-dessous une comparaison entre les fonctionnalités de la communication interactive et de la lettre.
 
 <table>
  <tbody>
@@ -106,7 +105,7 @@ Interactive Communication est l’approche recommandée par défaut pour créer 
    <td>Aucune interface utilisateur pour la création d’une expression conditionnelle</td>
   </tr>
   <tr>
-   <td>Création</td>
+   <td>Création  </td>
    <td>Interface glisser-déposer pour la construction des canaux web et d’impression</td>
    <td>Aucun mécanisme de glisser-déposer </td>
   </tr>
