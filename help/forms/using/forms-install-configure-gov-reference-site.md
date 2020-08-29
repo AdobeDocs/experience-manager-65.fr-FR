@@ -1,5 +1,5 @@
 ---
-title: Configuration du site de référence We.Gov
+title: Configuration du site de référence We.Gov et We.Finance
 seo-title: Configuration du site de référence We.Gov
 description: Installez, configurez et personnalisez un package de démonstration AEM Forms.
 seo-description: Installez, configurez et personnalisez un package de démonstration AEM Forms.
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c42e5e5274c41469824f12b228698a77bf5d4a6
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4742'
 ht-degree: 4%
 
 ---
 
 
-# Configuration du site de référence We.Gov {#set-up-and-configure-we-gov-reference-site}
+# Configuration du site de référence We.Gov et We.Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Détails du package de démonstration {#demo-package-details}
 
@@ -432,7 +432,7 @@ Les données AEM Forms Analytics sont disponibles hors ligne ou sans configurati
    ![analyse AEM Sites](assets/sites_analysis.jpg)
 
 1. De retour sur la page de vue de page (accessible à l’étape 3), vous pouvez également vue les informations de vue de page en modifiant le paramètre d’affichage en éléments de vue dans la &quot;Vue de Liste&quot;.
-1. Recherchez le menu déroulant &quot;Vue&quot; et sélectionnez &quot;Vue de Liste&quot;.
+1. Recherchez le menu déroulant &quot;Vue&quot; et sélectionnez &quot;Vue Liste&quot;.
 
    ![Mode Liste](assets/list_view.jpg)
 
