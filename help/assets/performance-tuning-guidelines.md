@@ -4,7 +4,7 @@ description: Suggestions et conseils [!DNL Experience Manager] sur la configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 54%
@@ -239,7 +239,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 >
 >Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant que dernière étape d’un workflow, généralement Ressource de mise à jour de gestion des actifs numériques.
 
-## Indices de recherche {#search-indexes}
+## Recherche des index    {#search-indexes}
 
 Veillez à mettre en œuvre les derniers Service Packs et les correctifs liés aux performances étant donné qu’ils contiennent souvent des mises à jour des index du système. Voir les conseils [d’optimisation des](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) performances pour connaître certaines optimisations d’index.
 
