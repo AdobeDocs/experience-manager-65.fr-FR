@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +34,7 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 L’outil de détection des motifs est publié séparément sous forme de [module](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l&#39;aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
-## Procédure d’utilisation {#how-to-use}
+## Utilisation {#how-to-use}
 
 >[!NOTE]
 >
@@ -50,7 +53,7 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
 1. Go to the AEM Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
 1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
 
-   ![capture d&#39;écran-2018-2-5détecteur de motif](assets/screenshot-2018-2-5pattern-detector.png)
+   ![capture d&#39;écran-2018-2-5détecteur à motifs](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via une interface JSON standard ou une interface en mode texte réactive**
 
@@ -216,7 +219,7 @@ Actuellement, l’outil de détection des motifs permet de vérifier :
 
 * l’incompatibilité des exportations et importations de lots OSGi ;
 * la surutilisation des ressources de type Sling et des super types (avec superpositions de contenu de chemin de recherche) ;
-* les définitions des index Oak (compatibilité) ;
+* définitions des index de chêne (compatibilité)
 * les modules VLT (surutilisation) ;
 * la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth).
 
