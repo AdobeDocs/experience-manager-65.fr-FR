@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur de création d’interface utilisateur classique d’AEM 6.5
+user-guide-title: Guide de l’utilisateur de création de l’interface utilisateur classique d’AEM 6.5
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '257'
 ht-degree: 89%
 
 ---
@@ -58,13 +58,11 @@ ht-degree: 89%
    + [Création de lancements](classic-launches-creating.md)
    + [Modification de lancements](classic-launches-editing.md)
    + [Conversion de lancements](classic-launches-promoting.md)
-+ Personnalisation  {#personalization}
++ Personnalisation   {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
-   + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
    + [Pages d’entrée](classic-personalization-campaigns-landingpage.md)
    + [Offres Target](classic-personalization-campaigns-target-offers.md)
-   + [Utilisation du Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Marketing par messagerie électronique](classic-personalization-campaigns-email.md)
    + [Suivi des messages rejetés](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
