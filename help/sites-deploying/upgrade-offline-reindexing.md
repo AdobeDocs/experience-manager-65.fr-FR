@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 1%
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 ## Présentation {#introduction}
 
-L’un des principaux défis de la mise à niveau de Adobe Experience Manager est le temps d’inactivité associé à l’environnement d’auteur lorsqu’une mise à niveau statique est effectuée. Les auteurs de contenu ne pourront pas accéder à l’environnement pendant une mise à niveau. Par conséquent, il est souhaitable de réduire au minimum le temps nécessaire à l’exécution de la mise à niveau. Pour les référentiels volumineux, en particulier les projets AEM Assets, qui disposent généralement de grands entrepôts de données et d’un niveau élevé de téléchargements d’actifs par heure, la réindexation des indices Oak prend une part significative du temps de mise à niveau.
+L’un des principaux défis de la mise à niveau de Adobe Experience Manager est le temps d’inactivité associé à l’environnement d’auteur lorsqu’une mise à niveau statique est effectuée. Les auteurs de contenu ne pourront pas accéder à l’environnement pendant une mise à niveau. Par conséquent, il est souhaitable de réduire au minimum le temps nécessaire à l’exécution de la mise à niveau. Pour les grands référentiels, en particulier les projets AEM Assets, qui disposent généralement de grands entrepôts de données et d’un niveau élevé de téléchargements de ressources par heure, la réindexation des index Oak prend une part significative du temps de mise à niveau.
 
-Cette section décrit comment utiliser l&#39;outil d&#39;exécution en chêne pour réindexer le référentiel **avant** d&#39;effectuer la mise à niveau, réduisant ainsi le temps d&#39;inactivité pendant la mise à niveau réelle. Les étapes présentées peuvent être appliquées aux indices [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) pour les versions AEM 6.4 et ultérieures.
+Cette section décrit comment utiliser l&#39;outil d&#39;exécution en chêne pour réindexer le référentiel **avant** d&#39;effectuer la mise à niveau, réduisant ainsi le temps d&#39;inactivité pendant la mise à niveau réelle. Les étapes présentées peuvent être appliquées aux index [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) pour les versions AEM 6.4 et ultérieures.
 
 ## Présentation {#overview}
 
-De nouvelles versions de l’AEM introduisent des modifications aux définitions d’index Oak au fur et à mesure que l’ensemble de fonctionnalités est développé. Les modifications apportées aux indices Oak forcent la réindexation lors de la mise à niveau de l’instance AEM. La réindexation est coûteuse pour les déploiements de ressources, car le texte des ressources (par exemple, le texte du fichier pdf) est extrait et indexé. Avec les référentiels MongoMK, les données sont conservées sur le réseau, ce qui augmente encore le temps nécessaire à la réindexation.
+De nouvelles versions de l’AEM introduisent des modifications aux définitions d’index Oak au fur et à mesure que l’ensemble de fonctionnalités est développé. Les modifications apportées aux index Oak forcent la réindexation lors de la mise à niveau de l’instance AEM. La réindexation est coûteuse pour les déploiements de ressources, car le texte des ressources (par exemple, le texte du fichier pdf) est extrait et indexé. Avec les référentiels MongoMK, les données sont conservées sur le réseau, ce qui augmente encore le temps nécessaire à la réindexation.
 
 Le problème auquel la plupart des clients sont confrontés au cours d’une mise à niveau est la réduction de la durée d’inactivité. La solution consiste à **ignorer** l’activité de réindexation au cours de la mise à niveau. Pour ce faire, vous devez créer les nouveaux index **avant** la mise à niveau, puis simplement les importer pendant la mise à niveau.
 
@@ -37,9 +37,9 @@ L&#39;idée est de créer l&#39;index avant la mise à niveau, par rapport aux d
 En outre, il s&#39;agit de l&#39;ordre des étapes décrit dans l&#39;approche :
 
 1. Le texte des binaires est extrait en premier.
-2. Les définitions d&#39;index de Cible sont créées
-3. Les indices hors ligne sont créés
-4. Les indices sont ensuite importés pendant le processus de mise à niveau.
+2. Les définitions d&#39;index de cible sont créées
+3. Les index hors ligne sont créés.
+4. Les index sont ensuite importés pendant le processus de mise à niveau.
 
 ### Extraction de texte {#text-extraction}
 
@@ -166,7 +166,7 @@ D&#39;autres détails techniques sont disponibles dans la documentation [de gest
 
 ### Importation d&#39;indices {#importing-indices}
 
-Avec AEM 6.4 et les versions plus récentes, AEM a la capacité d&#39;importer des indices à partir d&#39;un disque dans la séquence de démarrage. Le dossier `<repository>/indexing-result/indices` est surveillé pour vérifier la présence de données d’index au démarrage. Vous pouvez copier l’index précréé à l’emplacement ci-dessus pendant le processus [de](in-place-upgrade.md#performing-the-upgrade) mise à niveau avant de commencer avec la nouvelle version du fichier jar **cible** AEM. AEM l&#39;importe dans le référentiel et supprime le point de contrôle correspondant du système. Ainsi, un réindice est complètement évité.
+Avec AEM 6.4 et les versions plus récentes, AEM a la capacité d&#39;importer des indices à partir d&#39;un disque dans la séquence de démarrage. Le dossier `<repository>/indexing-result/indices` est surveillé pour vérifier la présence de données d’index au démarrage. Vous pouvez copier l’index précréé à l’emplacement ci-dessus pendant le processus [de](in-place-upgrade.md#performing-the-upgrade) mise à niveau avant de commencer avec la nouvelle version du fichier jar **cible** AEM. aem l&#39;importe dans le référentiel et supprime le point de contrôle correspondant du système. Ainsi, un réindice est complètement évité.
 
 ## Autres conseils et dépannage {#troubleshooting}
 
