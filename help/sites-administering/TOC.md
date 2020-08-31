@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: Guide de l’utilisateur de l’administration d’AEM 6.5
+user-guide-title: aem 6.5 Guide de l’utilisateur pour l’administration
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '619'
 ht-degree: 96%
 
 ---
@@ -94,8 +94,8 @@ ht-degree: 96%
    + [Affichage principal de la gestion des autorisations](touch-ui-principal-view.md)
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
-+ Personnalisation  {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation   {#personalization}
+   + [Personnalisation  ](personalization.md)
    + [Configuration de ContextHub](contexthub-config.md)
    + [Contexte client](client-context.md)
    + [Campagnes](campaigns.md)
@@ -137,7 +137,6 @@ ht-degree: 96%
    + [Recettes AEM Livefyre](aem-livefyre-recipes.md)
    + [Résolution des problèmes d’intégration](troubleshooting-integration-issues.md)
    + [Intégration à BrightEdge Content Optimizer](brightedge.md)
-   + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
    + [Producteur de catalogue](catalog-producer.md)
    + [Configuration de l’intégration d’AEM Assets avec Experience Cloud et Creative Cloud](configure-assets-cc-integration.md)
    + [Intégration à Silverpop Engage](silverpop.md)
@@ -151,7 +150,7 @@ ht-degree: 96%
    + [Classifications Adobe](adobeanalytics-classifications.md)
    + [Intégration à Adobe Search&amp;Promote](search-and-promote.md)
    + [Intégration de solutions](integration.md)
-   + [Exportation de fragments d’expérience vers un Adobe Target](experience-fragments-target.md)
+   + [Exportation de fragments d’expérience vers Adobe Target](experience-fragments-target.md)
    + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
    + [Intégration à Livefyre](livefyre.md)
 + Bonnes pratiques {#bestpractices}
