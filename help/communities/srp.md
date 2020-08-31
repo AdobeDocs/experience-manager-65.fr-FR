@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 2%
@@ -100,7 +100,7 @@ Dans le cas de JSRP, alors que l’UGC est stockée dans le JCR et accessible pa
 
 En outre, le référentiel des environnements d’auteur et de publication n’est pas partagé. Bien qu’un cluster d’instances de publication produise un référentiel de publication partagé, l’UGC saisi lors de la publication ne sera pas visible sur l’auteur, ce qui empêche la gestion de l’UGC à partir de l’auteur. L’UGC n’est conservé que dans le référentiel AEM (JCR) de l’instance sur laquelle il a été saisi.
 
-JSRP utilise les indices Oak pour les requêtes.
+JSRP utilise les index de chêne pour les requêtes.
 
 ## A propos des noeuds fantômes dans JCR {#about-shadow-nodes-in-jcr}
 
