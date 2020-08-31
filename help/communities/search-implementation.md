@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 6%
@@ -83,18 +83,18 @@ Les fonctions de recherche personnalisée doivent utiliser l’API [de recherche
 
 #### Indexation des chênes {#oak-indexing}
 
-Bien que les indices Oak ne soient pas automatiquement créés pour la recherche AEM plate-forme, à partir de AEM 6.2, ils ont été ajoutés pour AEM Communities afin d&#39;améliorer les performances et de fournir la prise en charge de la pagination lors de la présentation des résultats de recherche UGC.
+Bien que les index Oak ne soient pas automatiquement créés pour la recherche AEM plate-forme, à partir de AEM 6.2, ils ont été ajoutés pour AEM Communities afin d&#39;améliorer les performances et de fournir la prise en charge de la pagination lors de la présentation des résultats de recherche UGC.
 
-Si les propriétés personnalisées sont en cours d’utilisation et que les recherches sont lentes, des indices supplémentaires devront être créés pour que les propriétés personnalisées soient plus performantes. Pour préserver la portabilité, respectez les exigences [de](#naming-of-custom-properties) nommage lors de la création de propriétés personnalisées pouvant faire l’objet de recherches.
+Si les propriétés personnalisées sont en cours d’utilisation et que les recherches sont lentes, des index supplémentaires doivent être créés pour que les propriétés personnalisées soient plus performantes. Pour préserver la portabilité, respectez les exigences [de](#naming-of-custom-properties) nommage lors de la création de propriétés personnalisées pouvant faire l’objet de recherches.
 
-Pour modifier des indices existants ou créer des indices personnalisés, reportez-vous aux Requêtes [en chêne et à l&#39;indexation](../../help/sites-deploying/queries-and-indexing.md).
+Pour modifier des index existants ou créer des index personnalisés, reportez-vous aux Requêtes [en chêne et à l&#39;indexation](../../help/sites-deploying/queries-and-indexing.md).
 
 Le Gestionnaire [de l&#39;index](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) Oak est disponible sur ACS AEM Commons. Il fournit :
 
-* Vue des indices existants.
+* Vue des index existants.
 * Possibilité de lancer la réindexation.
 
-Pour vue des indices Oak en [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), l&#39;emplacement est le suivant :
+Pour vue des index de chêne existants en [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), l&#39;emplacement est le suivant :
 
 * `/oak:index/socialLucene`
 
