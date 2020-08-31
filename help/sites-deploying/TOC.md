@@ -2,13 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de déploiement d’AEM 6.5
+user-guide-title: aem 6.5 - Guide de déploiement
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 95%
+source-wordcount: '328'
+ht-degree: 92%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 95%
    + [Compatibilité descendante dans AEM 6.5](backward-compatibility.md)
    + [Processus de mise à niveau](upgrade-procedure.md)
    + [Réalisation d’une mise à niveau statique](in-place-upgrade.md)
+   + [Utilisation de la réindexation hors connexion pour réduire les temps d’inactivité lors d’une mise à niveau](upgrade-offline-reindexing.md)
    + [Migration différée du contenu](lazy-content-migration.md)
    + [Utilisation de l’outil de migration CRX2OAK](using-crx2oak.md)
    + [Tâches de maintenance avant la mise à niveau](pre-upgrade-maintenance-tasks.md)
