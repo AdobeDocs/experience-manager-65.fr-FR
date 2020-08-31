@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 1%
@@ -147,7 +147,7 @@ Pour plus d&#39;informations, consultez Création [de](https://jackrabbit.apache
 
 **Exécution de l’indexation hors connexion pour les définitions d’index générées**
 
-La réindexation de Lucene peut être effectuée hors ligne à l&#39;aide d&#39;une exécution au chêne. Ce processus crée des données d&#39;index dans le disque sous `indexing-result/indices`. Il n’écrit **pas** dans le référentiel et ne nécessite donc pas d’arrêter l’instance AEM en cours d’exécution. La banque de texte créée est intégrée à ce processus :
+La réindexation de Lucene peut être effectuée hors ligne à l&#39;aide d&#39;une exécution au chêne. Ce processus crée des données d&#39;index dans le disque sous `indexing-result/indexes`. Il n’écrit **pas** dans le référentiel et ne nécessite donc pas d’arrêter l’instance AEM en cours d’exécution. La banque de texte créée est intégrée à ce processus :
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -155,7 +155,7 @@ java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --re
 Sample <checkpoint> looks like r16c85700008-0-8
 —fds-path: path to data store.
 --pre-extracted-text-dir: Directory of pre-extracted text.
-merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indices in this file will be re-indexed.
+merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indexes in this file will be re-indexed.
 ```
 
 L&#39;utilisation du `--doc-traversal-mode` paramètre est pratique avec les installations MongoMK car elle améliore considérablement le temps de réindexation en diffusant le contenu du référentiel dans un fichier plat local. Cependant, il nécessite un espace disque supplémentaire de doublon de la taille du référentiel.
@@ -164,9 +164,9 @@ Dans le cas de MongoMK, ce processus peut être accéléré si cette étape est 
 
 D&#39;autres détails techniques sont disponibles dans la documentation [de gestion de chêne pour l&#39;indexation](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
-### Importation d&#39;indices {#importing-indices}
+### Importation d&#39;index {#importing-indexes}
 
-Avec AEM 6.4 et les versions plus récentes, AEM a la capacité d&#39;importer des indices à partir d&#39;un disque dans la séquence de démarrage. Le dossier `<repository>/indexing-result/indices` est surveillé pour vérifier la présence de données d’index au démarrage. Vous pouvez copier l’index précréé à l’emplacement ci-dessus pendant le processus [de](in-place-upgrade.md#performing-the-upgrade) mise à niveau avant de commencer avec la nouvelle version du fichier jar **cible** AEM. aem l&#39;importe dans le référentiel et supprime le point de contrôle correspondant du système. Ainsi, un réindice est complètement évité.
+Avec AEM 6.4 et les versions plus récentes, AEM a la capacité intégrée d&#39;importer des index à partir du disque au démarrage. Le dossier `<repository>/indexing-result/indexes` est surveillé pour vérifier la présence de données d’index au démarrage. Vous pouvez copier l’index précréé à l’emplacement ci-dessus pendant le processus [de](in-place-upgrade.md#performing-the-upgrade) mise à niveau avant de commencer avec la nouvelle version du fichier jar **cible** AEM. aem l&#39;importe dans le référentiel et supprime le point de contrôle correspondant du système. Ainsi, un réindice est complètement évité.
 
 ## Autres conseils et dépannage {#troubleshooting}
 
