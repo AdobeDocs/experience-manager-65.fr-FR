@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.5 Forms
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '3704'
+source-wordcount: '3700'
 ht-degree: 70%
 
 ---
@@ -501,7 +501,6 @@ ht-degree: 70%
       + [Configuration des messages de validation](/help/forms/using/admin-help/configuring-validation-messages.md)
    + Configuration d’Output {#configure-output}
       + [Présentation du service de sortie](/help/forms/using/admin-help/overview-8.md)
-      + [Modification du jeu de caractères](/help/forms/using/admin-help/change-character-set.md)
       + [Définition des options de configuration XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Configuration du cache pour Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Définition des emplacements de fichiers pour Output](/help/forms/using/admin-help/specify-file-locations-output.md)
