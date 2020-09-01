@@ -5,17 +5,17 @@ audience: end-user
 user-guide-title: Notes de mise à jour d’AEM 6.5
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 73%
+source-wordcount: '57'
+ht-degree: 66%
 
 ---
 
 
 # Notes de mise à jour d’AEM 6.5 {#release-notes}
 
-+ [Présentation d’AEM 6.5](home.md)
++ [Présentation de AEM 6.5](home.md)
 + [Notes de mise à jour générales](release-notes.md)
 + Notes de mise à jour du Service Pack {#service-pack}
    + [Nouveautés](new-features-latest-service-pack.md)
@@ -23,8 +23,9 @@ ht-degree: 73%
    + [Notes de mise à jour précédentes du Service Pack](previous-hotfixes-featurepacks.md)
 + [Notes de mise à jour d’AEM Sites](sites.md)
 + [Notes de mise à jour d’AEM Assets](assets.md)
++ [Programme d’installation des correctifs AEM Forms JEE](jee-patch-installer-65.md)
 + [Notes de mise à jour d’AEM Communities](communities-release-notes.md)
 + [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 + [Problèmes connus](known-issues.md)
-+ [AEM Foundation et Repository](wcm-platform.md)
++ [aem Foundation et Repository](wcm-platform.md)
 + [État des fonctionnalités de l’IU tactile](touch-ui-features-status.md)
