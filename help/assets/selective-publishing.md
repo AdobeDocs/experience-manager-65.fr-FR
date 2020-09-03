@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6e7368663d18dd0b5b46be9e292dba17577acf70
+source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 4%
@@ -202,6 +202,7 @@ Vous pouvez éventuellement utiliser ces cases à cocher conjointement avec le p
    | Publier vers Dynamic Media | Publication sélective | Publié dans Contenu multimédia dynamique uniquement. |
    | Annuler la publication à partir de Dynamic Media | Immédiatement ou A l&#39;Activation | Non annulé de la publication à partir d’AEM, de Contenu multimédia dynamique ou des deux. |
    | Annuler la publication à partir de Dynamic Media | Publication sélective | Annulation de la publication à partir de Contenu multimédia dynamique uniquement. |
+
 1. Sous **[!UICONTROL Planification]**, définissez le moment de la désactivation.
 | Planification sélectionnée | Que se passe-t-il ? |
 | — | — |
