@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
+source-git-commit: 32f8e42325314d5afbec3b3e1611fd696e1a4603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 51%
+source-wordcount: '642'
+ht-degree: 50%
 
 ---
 
@@ -72,6 +72,7 @@ ht-degree: 51%
    + [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
    + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
+   + [Utilisation de la publication sélective dans un média dynamique](selective-publishing.md)
    + [Invalidation du cache CDN par le biais de Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
@@ -115,7 +116,7 @@ ht-degree: 51%
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
    + [Meilleures pratiques de surveillance des ressources](assets-monitoring-best-practices.md)
    + [Prise en charge de Camera Raw](camera-raw.md)
-   + [Détecter le type de fichier MIME à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
+   + [Détecter le type MIME de fichiers à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Bibliothèque de transcodage des images](imaging-transcoding-library.md)
    + [Prise en charge des métadonnées IPTC](iptc-support.md)
    + [Schémas de métadonnées](metadata-schemas.md)
