@@ -8,21 +8,22 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7a1da89805799f392f4397b1582bcc83d9bc67de
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 76%
+source-wordcount: '461'
+ht-degree: 81%
 
 ---
 
 
 # Publication de ressources Dynamic Media  {#publishing-dynamic-media-assets}
 
-Pour publier vos fichiers Dynamic Media, sélectionnez les fichiers que vous avez déjà téléchargés et appuyez sur Publier **** ou Publier **[!UICONTROL rapidement.]** Une fois vos fichiers Dynamic Media publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
+Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide.]** Une fois vos fichiers Contenu multimédia dynamique publiés, vous pouvez les inclure dans une page Web au moyen d’une URL ou en incorporant le code sur la page.
 
-Vous pouvez également publier immédiatement les ressources que vous téléchargez, sans intervention de l’utilisateur. See [Configuring Dynamic Media - Scene7 mode](config-dms7.md).
+Vous pouvez également publier immédiatement les ressources que vous chargez, sans intervention de l’utilisateur. See [Configuring Dynamic Media - Scene7 mode.](config-dms7.md)
+Vous pouvez également publier des fichiers de manière sélective sur Contenu multimédia dynamique ou AEM, mutuellement exclusifs les uns des autres, à l’aide de Publication **** sélective au niveau du dossier. See [Working with Selective Publish in Dynamic Media.](/help/assets/selective-publishing.md)
 
-Dans la Vue **** Carte, une petite icône en forme de globe apparaît directement sous le nom d’un fichier et à gauche de la date et de l’heure pour indiquer qu’il est publié. En mode **[!UICONTROL Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
+En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource et à gauche de la date et de l’heure pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
 >[!NOTE]
 >
