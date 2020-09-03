@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 32f8e42325314d5afbec3b3e1611fd696e1a4603
+source-git-commit: c57cc70fbdeabfdff1e8977d3bf8187f7c41ce77
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '651'
 ht-degree: 50%
 
 ---
@@ -73,7 +73,8 @@ ht-degree: 50%
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
    + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
    + [Utilisation de la publication sélective dans un média dynamique](selective-publishing.md)
-   + [Invalidation du cache CDN par le biais de Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Invalidation du cache CDN par le biais de Contenu multimédia dynamique](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidation du cache CDN par le biais de Contenu multimédia dynamique classique](invalidate-cdn-cache-dm-classic.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les ressources {#extending}
