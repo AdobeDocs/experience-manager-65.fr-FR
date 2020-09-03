@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6da27dfda2bb504fc7a1de24260e94141f1a22ab
+source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
 workflow-type: tm+mt
 source-wordcount: '4407'
 ht-degree: 7%
@@ -154,7 +154,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
    *Figure :[!UICONTROL Rechercher de l&#39;aide]dans le menu[!UICONTROL Aide]*
 
-   * le message d’erreur si une valeur incorrecte est saisie dans le champ [!ICONTROL Faire passer l’identité comme] sous l’option [!UICONTROL Utilisateur] et que le focus se déplace correctement vers le champ de texte (NPR-33804).
+   * le message d’erreur si une valeur incorrecte est saisie dans le champ [!UICONTROL Faire passer l’identité comme] sous l’option [!UICONTROL Utilisateur] et que le focus se déplace correctement vers le champ de texte (NPR-33804).
 
    ![Menu Utilisateur dans l’en-tête](assets/User_aem_header.png)
 
