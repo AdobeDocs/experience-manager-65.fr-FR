@@ -3,10 +3,10 @@ title: Gestion des balises intelligentes et des recherches
 description: Mettez à jour ou supprimez les balises actives inexactes afin d’améliorer la pertinence des balises.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 75%
+source-wordcount: '464'
+ht-degree: 72%
 
 ---
 
@@ -43,4 +43,8 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 
 1. correspondances de `woman running` dans les différents champs de métadonnées.
 1. correspondances de `woman running` dans les balises intelligentes.
-1. correspondances de `woman` ou de `running` dans des balises intelligentes.
+1. correspondances de `woman` ou de `running` dans les balises intelligentes.
+
+>[!CAUTION]
+>
+>Si l’indexation Lucene est désactivée, [!DNL Adobe Experience Manager] la recherche basée sur les balises actives ne fonctionne pas comme prévu.
