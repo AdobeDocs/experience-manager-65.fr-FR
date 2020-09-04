@@ -12,9 +12,9 @@ discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
 translation-type: tm+mt
-source-git-commit: f0ec3415ffef70c985828f17b32dc0d453c1ae7c
+source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3423'
 ht-degree: 66%
 
 ---
@@ -190,7 +190,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 1. Modifiez le fichier, puis ajoutez les options de configuration requises par votre configuration.
 1. Démarrez AEM.
 
-### Mise à nouveau vers une nouvelle version du connecteur 1.10.x S3 {#upgrading-to-a-new-version-of-the-x-s-connector}
+### Mise à nouveau vers une nouvelle version du connecteur 1.10.x S3 {#upgrading-to-a-new-version-of-the-s-connector}
 
 Si vous devez effectuer une mise à niveau vers une nouvelle version du connecteur 1.10.x S3 (par exemple, de la version 1.10.0 vers la version 1.10.4), procédez comme suit :
 
@@ -204,7 +204,7 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
 
    >[!NOTE]
    >
-   >Les noms de fichier présentés ci-dessus sont utilisés à titre d’exemple uniquement et ne sont pas définitifs.
+   >Les noms de fichier présentés ci-dessus sont utilisés à des fins d’illustration uniquement.
 
 1. Téléchargez la dernière version du Feature Pack 1.8.x depuis le [référentiel Adobe](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Unzip the contents to a separate folder, then navigate to `jcr_root/libs/system/install/15`.
