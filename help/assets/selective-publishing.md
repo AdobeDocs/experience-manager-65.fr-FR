@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
+source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2934'
 ht-degree: 6%
@@ -114,6 +114,7 @@ Voir [Création d’une configuration](#configuring-dynamic-media-cloud-services
 
 1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
 1. Dans la page **[!UICONTROL Gérer la publication - Portée]** , effectuez l’une des opérations suivantes :
+
    * Si nécessaire, sélectionnez un ou plusieurs fichiers à supprimer de la publication.
    * Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication - Portée]** , appuyez sur **[!UICONTROL Publier]** ou **[!UICONTROL Publier dans le contenu multimédia dynamique.]**
 1. Appuyez sur **[!UICONTROL OK.]**
