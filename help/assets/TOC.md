@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur des ressources Experience Manager 6.5
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: c57cc70fbdeabfdff1e8977d3bf8187f7c41ce77
+source-git-commit: d4cd304fccba9c06078790ea97bee74fc12d8df0
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '650'
 ht-degree: 50%
 
 ---
@@ -157,7 +157,7 @@ ht-degree: 50%
    + [Tâches asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
-   + [Activation des informations sur les ressources par le lancement d’Adobe](touch-ui-using-dtm-for-asset-insights.md)
+   + [Activation des informations sur les ressources via la gestion dynamique des balises](touch-ui-using-dtm-for-asset-insights.md)
    + [Configuration des informations sur les ressources](touch-ui-configuring-asset-insights.md)
    + [Archivage et extraction de fichiers](check-out-and-submit-assets.md)
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
