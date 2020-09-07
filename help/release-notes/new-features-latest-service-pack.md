@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8980348736825f45647a91062b1fe4e4a790b8f1
+source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: '2462'
 ht-degree: 6%
 
 ---
@@ -126,6 +126,8 @@ Vous pouvez désormais joindre plusieurs fichiers au composant de pièce jointe 
 * Prise en charge du lecteur d’écran améliorée.
 
 #### Autres améliorations clés (6.5.5.0) {#other-enhancements-sites}
+
+* L&#39;accès anonyme au CRXDE Lite n&#39;est pas autorisé pour améliorer la sécurité. Les utilisateurs sont redirigés vers l’écran de connexion. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 * Lors de la copie ou du collage d’une arborescence de page, vous avez désormais la possibilité de coller la page racine ou de coller la page racine avec les sous-pages de l’arborescence.
 
