@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour du Service Pack précédent de Adobe Experience Manager 6.5
-description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 Service Pack 3 et versions antérieures.
+title: '[ !DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes du Service Pack.'
+description: Notes de mise à jour des Service Packs de [!DNL Adobe Experience Manager] la version 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: a842da57a155f56ad3efc268610c167fe140998b
+source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
 workflow-type: tm+mt
-source-wordcount: '11431'
+source-wordcount: '11438'
 ht-degree: 26%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 26%
 
 # Correctifs et packs de fonctionnalités inclus dans les packs de service précédents {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
 Adobe Experience Manager 6.5.5.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, des améliorations clés demandées par les clients et des améliorations des performances, de la stabilité et de la sécurité, publiées depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur Adobe Experience Manager 6.5.
 
-Voici quelques-unes des principales fonctionnalités et améliorations introduites dans Adobe Experience Manager 6.5.5.0 :
+Voici quelques-unes des principales fonctionnalités et améliorations introduites dans la [!DNL Adobe Experience Manager] version 6.5.5.0 :
 
-* Personnalisez les noms des colonnes qui s’affichent dans la boîte de réception Adobe Experience Manager.
+* L&#39;accès anonyme au CRXDE Lite est interdit. Les utilisateurs sont redirigés vers l’écran de connexion. See [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
+* Personnalisez les noms des colonnes qui s&#39;affichent dans [!DNL Adobe Experience Manager] la boîte de réception.
 
 * Amélioration de l’accessibilité dans diverses zones de la Gestion de contenu Web Experience Manager (WCM), telles que l’éditeur de page, les composants principaux, RTE et l’interface utilisateur d’administration.
 
@@ -69,7 +71,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 * Lorsqu’un utilisateur copie et colle un Conteneur de mise en page sur la même page, les composants d’un Conteneur de mise en page ne s’affichent pas (NPR-33648).
 * La vérification d&#39;intégrité du répartiteur affiche un message d&#39; `Invalid cookie header` avertissement dans les fichiers journaux (NPR-33629).
 * XSS reflété dans PreferencesServlet (NPR-33438).
-* Les utilisateurs anonymes peuvent accéder aux fonctionnalités CRX DE Lite (GRANITE-27790).
+* Les utilisateurs anonymes peuvent accéder aux fonctions de CRXDE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
