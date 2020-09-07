@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 097109edcf66cc06460c9d962037e49613e3405b
+source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 7%
+source-wordcount: '822'
+ht-degree: 8%
 
 ---
 
 
 # Configuration du courrier électronique {#configuring-email}
 
-Les AEM Communities utilisent le courrier électronique pour :
+aem communities utilise le courrier électronique pour :
 
 * [Notifications des communautés](notifications.md)
 * [Abonnements des communautés](subscriptions.md)
@@ -30,14 +30,14 @@ Par défaut, la fonction de messagerie n’est pas fonctionnelle, car elle requi
 
 >[!CAUTION]
 >
->Le courrier électronique pour les notifications et les abonnements doit être configuré uniquement sur l’éditeur [](deploy-communities.md#primary-publisher)principal.
+>Le courrier électronique pour les notifications et les abonnements doit être configuré uniquement sur l’éditeur [](deploy-communities.md#primary-publisher)Principal.
 
 
 ## Configuration par défaut du service de messagerie {#default-mail-service-configuration}
 
 Le service de messagerie par défaut est requis pour les notifications et les abonnements.
 
-* Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la console [](../../help/sites-deploying/configuring-osgi.md)Web :
+* Connectez-vous à l’éditeur Principal avec les droits d’administrateur et accédez à la console [](../../help/sites-deploying/configuring-osgi.md)Web :
 
    * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -76,7 +76,7 @@ Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement
 
    Si cette case est cochée, active la journalisation des interactions du serveur SMTP.
 
-## Configuration des courriers électroniques des AEM Communities {#aem-communities-email-configuration}
+## Configuration du courrier électronique AEM Communities {#aem-communities-email-configuration}
 
 Une fois le service [de messagerie](#default-mail-service-configuration) par défaut configuré, les deux instances existantes de la configuration `AEM Communities Email Reply Configuration` OSGi, incluses dans la version, deviennent fonctionnelles.
 
@@ -92,7 +92,7 @@ Seule l’instance pour les abonnements doit être configurée plus avant lors d
 
 Pour atteindre les instances de configuration du courrier électronique des Communautés :
 
-* Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la console [Web.](../../help/sites-deploying/configuring-osgi.md)
+* Connectez-vous à l&#39;éditeur Principal avec les droits d&#39;administrateur et accédez à la console [Web.](../../help/sites-deploying/configuring-osgi.md)
 
    * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -112,7 +112,7 @@ Cette configuration ne doit pas être modifiée.
 
 * Vérifiez que la fonction **Créer une publication à partir du courrier électronique** de réponse est `unchecked`activée.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### Configuration des Abonnements {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 * Sélectionnez l’icône Modifier.
 * Vérifiez que le **nom** est `subscriptions-email`.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL Nom]**
 
@@ -131,16 +131,17 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 * **[!UICONTROL Créer une publication à partir d’un courrier électronique de réponse]**
 
    Si cette case est cochée, le destinataire de l’abonnement de messagerie peut publier du contenu en envoyant une réponse. Cette option est cochée par défaut.
-* **[!UICONTROL Ajouter l’identifiant suivi à l’en-tête]**
+* **[!UICONTROL ajouter l’identifiant suivi à l’en-tête]**
 
    La valeur par défaut est `Reply-To`.
 
 * **[!UICONTROL Longueur maximale de l’objet]**
 
    Si l’ID d’outil de suivi est ajouté à la ligne d’objet, il s’agit de la longueur maximale de l’objet, à l’exclusion de l’ID suivi, après quoi il sera coupé. Notez que cette valeur doit être aussi petite que possible pour éviter la perte des informations d’ID de suivi. La valeur par défaut est 200.
-* **[!UICONTROL Adresse électronique &quot;De&quot;]**
 
-   *(Obligatoire)* Adresse à partir de laquelle le courrier électronique de notification est envoyé. Il est probable que le même utilisateur **** SMTP spécifié pour le service [de messagerie](#configuredefaultmailservice)par défaut. La valeur par défaut est `no-reply@example.com`.
+* **[!UICONTROL Adresse électronique de réponse]**
+
+   Adresse électronique utilisée comme adresse électronique de réponse. La valeur par défaut est `communities@adobe.com`.
 
 * **[!UICONTROL Répondre au délimiteur]**
 
@@ -168,13 +169,13 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 
 Pour que le courrier électronique soit introduit dans le référentiel, il est nécessaire de configurer un importateur d’interrogation et de configurer ses propriétés manuellement dans le référentiel.
 
-### Ajouter un nouvel importateur d&#39;interrogation {#add-new-polling-importer}
+### ajouter un nouvel importateur d&#39;interrogation {#add-new-polling-importer}
 
-* Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à la console de l’importateur d’interrogation :
+* Connectez-vous à l’éditeur Principal avec les droits d’administrateur et accédez à la console d’interrogation de l’importateur :
 
    Par exemple, [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Sélectionner le **[!UICONTROL Ajoute]**
+* Sélectionner l&#39; **[!UICONTROL Ajoute]**
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -210,11 +211,11 @@ Une fois la nouvelle configuration d&#39;interrogation enregistrée, il est néc
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Connectez-vous à l’éditeur principal avec les droits d’administrateur et accédez à [https://&lt;serveur>:&lt;port>/crx/de/index.jsp#/etc/importateurs/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
+* Connectez-vous à l’éditeur Principal avec les droits d’administrateur et accédez à [https://&lt;serveur>:&lt;port>/crx/de/index.jsp#/etc/importateurs/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Sélectionnez la nouvelle configuration et modifiez les propriétés suivantes :
 
    * **feedType**: Remplacer `pop3s` par **`emailreply`**
-   * **source**: Remplacez le protocole source `pop3s://` par **`emailreply://`**
+   * **source**: Remplacez le protocole de la source `pop3s://` par **`emailreply://`**
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
