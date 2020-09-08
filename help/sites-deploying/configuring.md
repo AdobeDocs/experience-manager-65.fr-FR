@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8f35717324cd2c1524fb2cf931b3ce21be05729a
+workflow-type: tm+mt
+source-wordcount: '2132'
+ht-degree: 88%
 
 ---
 
@@ -27,7 +30,7 @@ De nombreux aspects d’AEM peuvent être configurés :
 
 Selon la configuration spécifique, ces modifications peuvent être effectuées en utilisant au choix :
 
-* **Adobe CQ Web Console**
+* **Console Web Adobe CQ**
 
    Il s’agit d’un emplacement standard pour la configuration des lots et services OSGi.
 
@@ -41,7 +44,7 @@ Selon la configuration spécifique, ces modifications peuvent être effectuées 
 
 * **Système de fichiers**
 
-   Quelques fichiers de configuration résident dans le système de fichiers.
+   Quelques fichiers de configuration se trouvent dans le système de fichiers.
 
 * **Gestion de contenu Web AEM**
 
@@ -98,7 +101,7 @@ Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le ch
 
    par exemple `https://123.1.1.4:4502`
 
-* nom de serveur
+* un nom de serveur ;
 
    par exemple, `https://www.yourserver.com:4502`
 
@@ -120,7 +123,7 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* des paramètres spécifiques pour les services individuels (par exemple, un fichier journal individuel et un format pour les messages de journaux).
+* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et un format pour les messages du journal
 
 Voir [Journalisation](/help/sites-deploying/configure-logging.md) pour des détails complets.
 
@@ -163,7 +166,7 @@ Pour plus de détails, voir [Réplication](/help/sites-deploying/replication.md)
 
 ### Paramètres de configuration OSGi {#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique des AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
 Voir [Paramètres de configuration d’OSGi](/help/sites-deploying/osgi-configuration-settings.md) afin d’obtenir la liste des différents lots pertinents pour la mise en œuvre d’un projet (répertoriés par lot). Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 
@@ -179,9 +182,9 @@ Pour la gestion des utilisateurs au sein d’AEM (y compris l’affectation des 
 
 ### Configuration de Dispatcher {#configuring-the-dispatcher}
 
-Dispatcher est l’outil d’équilibrage de charge et/ou de mise en cache d’Adobe. Son utilisation aide également à protéger votre serveur AEM des attaques. Par conséquent, vous pouvez augmenter la sécurité de l’instance AEM en utilisant Dispatcher conjointement à un serveur web de niveau élevé.
+Le répartiteur est un outil de mise en cache et/ou d’équilibrage de charge Adobe Experience Manager qui peut être utilisé conjointement avec un serveur Web d’entreprise.
 
-Voir [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) pour plus de détails, notamment [Configuration de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) pour plus informations sur la configuration.
+Voir [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) pour plus de détails, notamment [Configuration de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour plus informations sur la configuration.
 
 ### Configuration d’AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
@@ -213,7 +216,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 ### Entrepôt de données partagé {#shared-data-store}
 
-Le magasin de données du référentiel est utilisé pour décharger le stockage des fichiers binaires volumineux du référentiel proprement dit dans une zone distincte, de sorte que plusieurs instances du même fichier binaire (une image, par exemple) dans l’arborescence du référentiel ne soient stockées qu’une seule fois.
+Le magasin de données du référentiel est utilisé pour décharger l&#39;enregistrement de binaires volumineux du référentiel proprement dit dans une zone distincte, de sorte que plusieurs instances du même binaire (une image, par exemple) dans l&#39;arborescence du référentiel ne soient stockées qu&#39;une seule fois.
 
 Cette fonction de stockage unique et référencement multiple peut être étendue pour servir non seulement une arborescence de référentiel, mais des référentiels entiers, en configurant l’entrepôt de données de chacun d’entre eux de façon à ce qu’il fasse référence au même emplacement de système de fichiers partagé.
 
@@ -233,7 +236,7 @@ Voir [Activation de HTTP via SSL](/help/sites-administering/ssl-by-default.md) p
 
 Un portail est une application Web qui fournit la personnalisation, la connexion unique et l’intégration du contenu provenant de sources différentes, et qui héberge la couche de présentation des systèmes d’information. Le composant portlet permet également d’incorporer un portlet sur la page. Pour accéder au contenu fourni par CQ5 WCM, le serveur du portail peut être équipé d’un portlet CQ5 Portal Director. Pour ce faire, vous devez installer, configurer et ajouter le portlet sur la page de portail.
 
-Voir [Portal et Portlets](/help/sites-administering/aem-as-portal.md) pour en savoir plus.
+Pour plus d’informations, voir [Portal et Portlets](/help/sites-administering/aem-as-portal.md) .
 
 ### Expiration des objets statiques {#expiration-of-static-objects}
 
