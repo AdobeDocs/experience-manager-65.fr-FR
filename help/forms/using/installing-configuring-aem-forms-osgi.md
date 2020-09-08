@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
+source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 77%
+source-wordcount: '1910'
+ht-degree: 75%
 
 ---
 
@@ -180,7 +180,7 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Le répartiteur est l’outil de mise en cache et d’équilibrage de charge pour AEM. Le répartiteur AEM aide également à protéger le serveur AEM des attaques.  Vous pouvez augmenter la sécurité de votre instance AEM en utilisant le répartiteur conjointement avec un serveur Web de niveau élevé. If you use [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
+Le répartiteur est un outil de mise en cache et/ou d’équilibrage de charge Adobe Experience Manager qui peut être utilisé conjointement avec un serveur Web d’entreprise. If you use [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
 
 1. Configurez l’accès à AEM Forms:
 
