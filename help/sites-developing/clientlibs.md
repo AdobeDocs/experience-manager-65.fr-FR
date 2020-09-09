@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4db76ca1de97d8353ac88a6e66e14f41fb0b87db
+source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2740'
 ht-degree: 60%
 
 ---
@@ -103,7 +103,7 @@ Pour obtenir plus d’informations, y compris des attributs de filtrage des bibl
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, qui par le passé était généralement utilisé pour inclure des bibliothèques clientes, a été abandonné depuis AEM 5.6. [ doit `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) être utilisé à la place comme indiqué ci-dessus.
+>`<cq:includeClientLib>`, qui par le passé était généralement utilisé pour inclure les bibliothèques clientes, a été abandonné depuis AEM 5.6. [ devrait `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) être utilisé à la place comme indiqué ci-dessus.
 
 ## Création de dossiers de bibliothèques clientes {#creating-client-library-folders}
 
@@ -182,8 +182,8 @@ Then you set the `allowProxy` property on `foo` to true.
 1. Sélectionnez le dossier de bibliothèques clientes et cliquez ensuite sur **Créer > Créer un fichier**.
 1. Dans la zone du nom de fichier, saisissez l’un des noms suivants et cliquez ensuite sur OK :
 
-   * **`js.txt`:**Utilisez ce nom de fichier pour générer un fichier JavaScript.
-   * **`css.txt`:**Utilisez ce nom de fichier pour générer une feuille de style en cascade.
+   * **`js.txt`:** Utilisez ce nom de fichier pour générer un fichier JavaScript.
+   * **`css.txt`:** Utilisez ce nom de fichier pour générer une feuille de style en cascade.
 
 1. Ouvrez le fichier et saisissez le texte suivant pour identifier la racine du chemin d’accès des fichiers sources :
 
@@ -233,7 +233,7 @@ Utilisez la propriété catégories pour identifier le dossier de bibliothèque 
 * **Type :** Chaîne[]
 * **Valeur :** Valeur de la propriété catégories du `cq:ClientLibraryFolder` noeud à incorporer.
 
-#### Utilisation de l’incorporation pour réduire les requêtes {#using-embedding-to-minimize-requests}
+<!-- #### Using Embedding to Minimize Requests {#using-embedding-to-minimize-requests}
 
 In some cases you may find that the final HTML generated for typical page by your publish instance includes a relatively large number of `<script>` elements, particularly if your site is using client context information for analaytics or targeting. For example, in a non-optimized project you might find the following series of `<script>` elements in the HTML for a page:
 
@@ -247,9 +247,9 @@ In some cases you may find that the final HTML generated for typical page by you
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
-Dans ce cas, il peut être utile de combiner tout le code de bibliothèque cliente requis dans un seul fichier afin de réduire le nombre de requêtes aller-retour lors du chargement de la page. Pour ce faire, vous pouvez `embed`incorporer les bibliothèques requises dans la bibliothèque cliente spécifique à l’application à l’aide de la propriété du nœud `cq:ClientLibraryFolder`.
+In such cases, it can be useful to combine all the required client library code in to a single file so that the number of back and forth requests on page load is reduced. To do this you can `embed` the required libraries into you app-specific client library using the embed property of the `cq:ClientLibraryFolder` node.
 
-Les catégories de bibliothèques clientes suivantes sont fournies avec AEM. N’incorporez que celles qui sont obligatoires pour le bon fonctionnement de votre site. Cependant, **vous devez conserver l’ordre indiqué ici** :
+The following client library categories are incuded with AEM. You should embed only those that are required for he functioning of your particular site. However, **you should maintain the order listed here**:
 
 1. `browsermap.standard`
 1. `browsermap`
@@ -269,6 +269,10 @@ Les catégories de bibliothèques clientes suivantes sont fournies avec AEM. N�
 1. `cq.collab.toggle`
 1. `cq.collab.forum`
 1. `cq.cleditor`
+
+EDITOR NOTE: removed as requested on CQDOC-16765
+
+-->
 
 #### Chemins d’accès dans les fichiers CSS {#paths-in-css-files}
 
@@ -449,6 +453,7 @@ The `dumplibs` component includes a test selector that displays the source code 
    * Ouvrez l’URL suivante dans votre navigateur Web (utilisez un hôte et un port différents selon les besoins) :
 
       * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+
    La page par défaut affiche le résultat pour les balises ne comportant aucune valeur pour l’attribut categories.
 
 1. To see the output for a category, type the value of the client library&#39;s `categories` property and click **Submit Query**.
