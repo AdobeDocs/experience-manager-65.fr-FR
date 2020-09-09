@@ -2,7 +2,7 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 de Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: f0dc620926a3ba2558313153f7a0fd3f8cd3c712
+source-git-commit: 1e6feac534fe990d614997c4bd3ab999a4a8d479
 workflow-type: tm+mt
 source-wordcount: '1722'
 ht-degree: 45%
@@ -49,7 +49,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | Développeurs | Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. Jusqu’à AEM 6.4, YUI était par défaut en mesure de réduire JavaScript avec l’option permettant de passer au Compilateur de fermeture Google (GCC). À partir d’AEM 6.5, GCC est l’option par défaut. | adobe recommande aux clients qui effectuent la mise à niveau vers AEM 6.5 pour passer à GCC pour leur mise en oeuvre |
 | Développeurs | Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart). | Aucun remplacement n&#39;est disponible. |
 | Formulaires | L&#39;intégration de AEM Forms avec AEM Mobile est obsolète. | Aucun remplacement n’est disponible. |  | Développeurs | Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue pour l’interface utilisateur classique fourni avec la distribution (Quickstart). | Aucun remplacement n&#39;est disponible. |
-| Formulaires | Bibliothèque cliente de lodash/trait de soulignement. L&#39;Adobe ne prévoit pas de continuer à gérer et à mettre à jour la bibliothèque cliente Lodash/underscore fournie dans le cadre de la distribution (Quickstart). | adobe recommande aux clients qui ont encore besoin de Lodash/trait de soulignement pour leur code de l&#39;ajouter à leur base de code de projet. |
+| Développeurs | Bibliothèque cliente de lodash/trait de soulignement. L&#39;Adobe ne prévoit pas de continuer à gérer et à mettre à jour la bibliothèque cliente Lodash/underscore fournie dans le cadre de la distribution (Quickstart). | adobe recommande aux clients qui ont encore besoin de Lodash/trait de soulignement pour leur code de l&#39;ajouter à leur base de code de projet. |
 
 ## Fonctionnalités supprimées {#removed-features}
 
