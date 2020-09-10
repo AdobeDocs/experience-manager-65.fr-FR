@@ -1,6 +1,6 @@
 ---
-title: Configuration d’AEM Assets avec Brand Portal
-seo-title: Configuration d’AEM Assets avec Brand Portal
+title: Configuration d’AEM Assets avec Brand Portal
+seo-title: Configuration d’AEM Assets avec Brand Portal
 description: Découvrez comment configurer AEM Assets avec Brand Portal pour publier des ressources et des collections sur Brand Portal.
 seo-description: Découvrez comment configurer AEM Assets avec Brand Portal pour publier des ressources et des collections sur Brand Portal.
 uuid: b95c046e-9988-444c-b50e-ff5ec8cafe14
@@ -10,15 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5baef6f4d570aff738444e0620b982729b897f89
+source-git-commit: 8633216807061c73f4bc692d13f9eba37845cffc
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 46%
+source-wordcount: '2028'
+ht-degree: 45%
 
 ---
 
 
-# Configuration d’AEM Assets avec Brand Portal {#configure-integration-65}
+# Configuration d’AEM Assets avec Brand Portal {#configure-integration-65}
 
 Adobe Experience Manager (AEM) Assets est configuré avec Brand Portal via Adobe Developer Console, qui fournit un jeton IMS pour autoriser votre client Brand Portal.
 
@@ -357,6 +357,8 @@ Pour valider la configuration, procédez comme suit :
    >[!NOTE]
    >
    >Evitez de désactiver les agents de réplication. Cela peut entraîner l’échec de la réplication de certains actifs.
+   >
+   >Assurez-vous que les quatre agents de réplication sont configurés pour éviter les erreurs de délai d’attente. See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Votre instance d’auteur AEM Assets a été correctement configurée avec Brand Portal. Vous pouvez désormais :
 
