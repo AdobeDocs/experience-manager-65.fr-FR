@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
+source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -112,7 +112,7 @@ Cette configuration ne doit pas être modifiée.
 
 * Vérifiez que la fonction **Créer une publication à partir du courrier électronique** de réponse est `unchecked`activée.
 
-![chlimage_1-100](assets/configure-email.png)
+![configure-email-response](assets/configure-email-reply.png)
 
 ### Configuration des Abonnements {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 * Sélectionnez l’icône Modifier.
 * Vérifiez que le **nom** est `subscriptions-email`.
 
-   ![chlimage_1-101](assets/configure-email-subscription.png)
+   ![configure-email-abonnement](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Nom]**
 
@@ -141,7 +141,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 
 * **[!UICONTROL Adresse électronique de réponse]**
 
-   Adresse électronique utilisée comme adresse électronique de réponse. La valeur par défaut est `communities@adobe.com`.
+   Adresse électronique utilisée comme adresse électronique de réponse. La valeur par défaut est `no-reply@example.com`.
 
 * **[!UICONTROL Répondre au délimiteur]**
 
