@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
+source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
 workflow-type: tm+mt
-source-wordcount: '4423'
+source-wordcount: '4422'
 ht-degree: 7%
 
 ---
@@ -112,7 +112,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * La page de recherche et la page de résultats de recherche ont désormais des titres plus informatifs pour mieux comprendre les utilisateurs de lecteurs d’écran (NPR-34093).
 
-* Les lecteurs d’écran annoncent maintenant les options de suppression des balises sélectionnées dans l’onglet [!UICONTROL Simple] des boutons Propriétés de la ressource pour supprimer les balises sélectionnées (NPR-33972).
+* Les lecteurs d’écran annoncent maintenant les options de suppression des balises sélectionnées dans l’onglet [!UICONTROL Réglages de base] des boutons [!UICONTROL Propriétés] de la ressource pour supprimer les balises sélectionnées (NPR-33972).
 
 * Les éléments de chaque ligne de la vue de liste sont désormais correctement annoncés comme éléments de la même ligne par les lecteurs d’écran (NPR-33932).
 
