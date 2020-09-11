@@ -3,23 +3,21 @@ title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 3fbf32ec0930b8e832f8bea5b466fcb6bd38fbd3
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 41%
+source-wordcount: '680'
+ht-degree: 34%
 
 ---
 
 
 # Activation des statistiques sur les ressources via DTM   {#enable-asset-insights-through-dtm}
 
-La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics.
+La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Asset Insights ou utiliser la gestion dynamique des balises pour insérer des balises Asset Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
 
-Bien que vous puissiez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser les statistiques sur les ressources, Adobe vous recommande d’utiliser la gestion dynamique des balises pour insérer des balises de statistiques sur les ressources.
-
->[!NOTE]
+>[!CAUTION]
 >
->Les statistiques sont uniquement prises en charge et fournies pour les images.
+>La gestion dynamique des balises Adobe est abandonnée en faveur de Adobe Experience Platform Launch et va bientôt [prendre fin](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). adobe vous recommande d’ [utiliser Lancer pour obtenir des informations](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sur les ressources.
 
 Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressources grâce à DTM.
 
@@ -58,7 +56,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 
 1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]** ou ouvrez un outil Adobe Analytics existant. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.
 
-   ![Outil Ajouter Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
+   ![Outil Ajoute Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
    Sélectionnez des suites de rapports de production/intermédiaires, selon les besoins.
 
