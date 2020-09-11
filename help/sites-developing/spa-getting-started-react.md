@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 40%
 
 ---
 
@@ -34,7 +37,7 @@ La fonction de création d’application d’une seule page constitue une soluti
 
 Cet article résume le fonctionnement de base d’une application d’une seule page simple et ce que vous devez savoir pour que la vôtre soit opérationnelle.
 
-Pour plus d’informations sur le fonctionnement des applications monopages dans AEM, voir les documents suivants :
+Pour plus d’informations sur le fonctionnement des applications monopages en AEM, voir les documents suivants :
 
 * [Présentation et présentation des applications monopages](/help/sites-developing/spa-walkthrough.md)
 * [Introduction à la création d’une application d’une seule page](/help/sites-developing/spa-overview.md)
@@ -58,9 +61,9 @@ Le `package.json` fichier définit les exigences du pack d’application d’une
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -120,13 +123,13 @@ Une fois construit, le module peut être téléchargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
-Tout projet AEM doit tirer parti de l’archétype [du projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et exploite le SDK de l’application d’une seule page.
+Tout projet AEM doit tirer parti de l’archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et qui utilise le SDK d’application d’une seule page.
 
 ## Structure d’application {#application-structure}
 
-L’inclusion des dépendances et la création de votre application comme décrit précédemment vous laisseront avec un package d’application d’une seule page que vous pourrez télécharger sur votre instance AEM.
+L’inclusion des dépendances et la création de votre application comme décrit précédemment vous laisseront avec un pack d’applications monopages fonctionnel que vous pourrez télécharger sur votre instance AEM.
 
-La section suivante de ce document décrit la structure d’une application monopage dans AEM, les fichiers importants qui pilotent l’application et leur fonctionnement commun.
+La section suivante de ce document vous permettra de découvrir comment une application SPA est structurée en AEM, les fichiers importants qui pilotent l&#39;application et comment elle fonctionne ensemble.
 
 Un composant d’image simplifié est utilisé comme exemple, mais tous les composants de l’application sont basés sur le même concept.
 
@@ -137,7 +140,7 @@ Le point d’entrée dans l’application d’une seule page est bien entendu le
 ```
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -162,7 +165,7 @@ Lorsque le composant est instancié de manière statique à l’aide du modèle 
 En effectuant le rendu de l’application, `index.js` appelle `App.js`, présenté ici dans une version simplifiée pour que l’on se concentre sur le contenu important.
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -180,7 +183,7 @@ export default withModel(App);
 En rendant la page, `App.js` les appels `Page.js` sont répertoriés ici dans une version simplifiée.
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -201,7 +204,7 @@ Avec la page rendue, les composants tels que `Image.js` présentés ici peuvent 
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -244,7 +247,7 @@ Vous pouvez exporter un composant et le laisser modifiable.
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -277,10 +280,10 @@ Il est régulièrement nécessaire que les composants d’une application d’un
 
 ## Étapes suivantes {#next-steps}
 
-Pour obtenir un guide détaillé sur la création de votre propre application d’une seule page, consultez le didacticiel [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)Prise en main de l’éditeur d’applications d’une seule page - Événements WKND.
+Pour obtenir un guide détaillé sur la création de votre propre application d’une seule page d’accueil, consultez le didacticiel [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)Prise en main de l’éditeur d’applications d’une seule page d’AEM - Événements WKND.
 
-Pour plus d’informations sur la manière de vous organiser pour développer des applications monopages pour AEM, voir l’article [Développement d’applications monopages pour AEM](/help/sites-developing/spa-architecture.md).
+Pour plus d’informations sur la manière de vous organiser pour développer des applications monopages pour AEM voir l’article [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md)(Développement d’applications monopages pour).
 
-Pour plus d’informations sur le mappage entre le modèle dynamique et les composants et son fonctionnement dans les applications monopages dans AEM, voir l’article Mappage entre le modèle [dynamique et les composants pour les applications monopages](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Pour plus d’informations sur le mappage du modèle dynamique aux composants et son fonctionnement dans les applications monopages dans AEM, voir l’article Mappage du modèle [dynamique aux composants pour les applications monopages](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 Si vous souhaitez mettre en oeuvre des applications monopages dans AEM pour une structure autre que React ou Angular ou si vous souhaitez simplement plonger dans le fonctionnement du SDK SPA pour AEM, reportez-vous à l’article [SPA Blueprint](/help/sites-developing/spa-blueprint.md) .
