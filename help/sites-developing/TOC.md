@@ -2,12 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur du développement d’AEM 6.5
+user-guide-title: aem 6.5 Élaboration du Guide de l’utilisateur
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '820'
 ht-degree: 79%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 79%
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
-   + [Utilisation de Sling Resource Merger dans AEM  ](sling-resource-merger.md)
+   + [Utilisation de Sling Resource Merger dans AEM   ](sling-resource-merger.md)
    + [Recouvrements](overlays.md)
    + [Conventions de dénomination](naming-conventions.md)
    + [Création d’un composant de champ d’IU Granite](granite-ui-component.md)
@@ -104,7 +104,7 @@ ht-degree: 79%
       + [Présentation et présentation des applications monopages](spa-walkthrough.md)
       + [Didacticiel sur le WKND SPA](spa-wknd.md)
       + [Prise en main des applications monopages dans AEM - Réagir](spa-getting-started-react.md)
-      + [Prise en main des applications monopages dans AEM - Angular](spa-getting-started-angular.md)
+      + [Prise en main des applications monopages en AEM - Angular](spa-getting-started-angular.md)
       + [Mise en oeuvre d’un composant de réaction pour l’application d’une seule page](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
       + [Aperçu de l’éditeur d’application d’une seule page](spa-overview.md)
@@ -113,9 +113,9 @@ ht-degree: 79%
       + [Composant de page SPA](spa-page-component.md)
       + [Mappage Modèle dynamique/Composant pour les applications monopages](spa-dynamic-model-to-component-mapping.md)
       + [Routage de modèle SPA](spa-routing.md)
-      + [Intégration de l’application d’une seule page et du lancement d’Adobe Experience Platform](spa-launch.md)
+      + [Intégration SPA et Adobe Experience Platform Launch](spa-launch.md)
       + [SPA et rendu côté serveur](spa-ssr.md)
-      + [Références de l’API JavaScript SPA](spa-reference-materials.md)
+      + [Documents de référence SPA](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
    + [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
@@ -135,7 +135,7 @@ ht-degree: 79%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation {#personlization}
++ Personnalisation  {#personlization}
    + [ContextHub](contexthub.md)
    + [Guide de référence pour l’API Javascript ContextHub](contexthub-api.md)
    + [Extension de ContextHub](ch-extend.md)
@@ -165,9 +165,9 @@ ht-degree: 79%
       + [Référence sur les processus de workflow](workflows-process-ref.md)
       + [Variables dans les workflows AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Extension du Multi Site Manager](extending-msm.md)
-   + Suivi et Analytics{#extending-analytics}
+   + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
-      + [Ajouter le suivi Analytics d&#39;Adobe aux composants](extending-analytics-components.md)
+      + [ajouter le suivi des Adobe Analytics aux composants](extending-analytics-components.md)
       + [Personnalisation du cadre Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
@@ -199,7 +199,7 @@ ht-degree: 79%
    + [Test de votre interface utilisateur](hobbes.md)
 + Bonnes pratiques{#bestpractices}
    + [Présentation des meilleures pratiques](best-practices.md)
-   + [Directives et bonnes pratiques de développement AEM](dev-guidelines-bestpractices.md)
+   + [Lignes directrices AEM développement et bonnes pratiques](dev-guidelines-bestpractices.md)
    + [Meilleures pratiques de développement](development-practices.md)
    + [Content Architecture](content-architecture.md)
    + [Architecture logicielle](software-architecture.md)
