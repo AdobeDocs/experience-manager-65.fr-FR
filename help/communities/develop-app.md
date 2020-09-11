@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 7%
@@ -48,7 +48,7 @@ Utilisation de CRXDE Lite:
 
 ### Scripts de tête et de corps {#head-and-body-scripts}
 
-1. Dans le volet **de l’explorateur CRXDE Lite** , accédez au fichier `/apps/an-scf-sandbox/components/playpage` et cliquez avec le doublon sur celui-ci `playpage.jsp` pour l’ouvrir dans le volet d’édition.
+1. Dans le volet **CRXDE Lite** explorer, accédez à `/apps/an-scf-sandbox/components/playpage` l’explorateur et cliquez sur le fichier en doublon `playpage.jsp` pour l’ouvrir dans le volet d’édition.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -183,4 +183,4 @@ Remplacez l’URL du navigateur par la page racine : [http://localhost:4502/edit
 
 Une fois le site publié, la navigation vers la page racine d’une instance de publication redirige vers la page en anglais.
 
-La dernière étape avant de jouer avec les composants SCF des communautés est d&#39;ajouter un dossier de bibliothèque client (clientlibs) .... [Ajouter les clientes](add-clientlibs.md)
+La dernière étape avant de jouer avec les composants SCF des communautés est d&#39;ajouter un dossier de bibliothèque client (clientlibs) .... [ajouter les clientes](add-clientlibs.md)
