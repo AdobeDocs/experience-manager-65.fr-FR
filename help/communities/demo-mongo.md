@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '792'
 ht-degree: 2%
 
 ---
@@ -60,9 +60,9 @@ Cette configuration convient aux environnements *non productifs* tels que le dé
    * Le chemin d&#39;accès au répertoire de données défini sera appelé &lt;mongo-dbpath>.
 
 
-* MongoDB peut s’exécuter sur le même hôte qu’AEM ou à distance.
+* MongoDB peut s&#39;exécuter sur le même hôte que AEM ou à distance.
 
-### MongoDB Début {#start-mongodb}
+### MongoDB début {#start-mongodb}
 
 * &lt;mongo-install>/bin/mongod —dbpath &lt;mongo-dbpath>
 
@@ -75,7 +75,7 @@ Ceci début un serveur MongoDB à l’aide du port par défaut 27017.
 >Si MongoDB est démarré *après* AEM, **redémarrez** toutes les instances **AEM** afin qu’elles se connectent correctement à MongoDB.
 
 
-### Option de production de démonstration : Configurer un jeu de Copies MongoDB {#demo-production-option-setup-mongodb-replica-set}
+### Option de production de démonstration : Configurer un jeu de Secondaires MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
 Les commandes suivantes constituent un exemple de configuration d’un jeu de réplicas avec 3 noeuds sur localhost :
 
@@ -100,7 +100,7 @@ Les commandes suivantes constituent un exemple de configuration d’un jeu de r�
 * Téléchargez Solr depuis [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Adapté à tous les systèmes d’exploitation.
-   * Utilisez la version 4.10 ou la version 5.
+   * Solr version 7.0.
    * Le solaire requiert Java 1.7 ou version ultérieure.
 
 * Configuration de base
@@ -109,7 +109,7 @@ Les commandes suivantes constituent un exemple de configuration d’un jeu de r�
    * Aucun service n&#39;est nécessaire.
    * Le dossier Solr installé sera appelé &lt;solr-install>.
 
-### Configurer Solr pour les AEM Communities {#configure-solr-for-aem-communities}
+### Configurer Solr pour AEM Communities {#configure-solr-for-aem-communities}
 
 Pour configurer une collection Solr pour MSRP pour la démonstration, deux décisions doivent être prises (sélectionnez les liens vers la documentation principale pour plus de détails) :
 
@@ -143,9 +143,9 @@ Pour exécuter une configuration solrCloud de base (pas de production), début s
 
 ## Identifier MongoDB comme magasin commun {#identify-mongodb-as-common-store}
 
-Lancez l’auteur et publiez les instances AEM, si nécessaire.
+Lancez les instances d’auteur et de publication AEM, si nécessaire.
 
-Si AEM s’exécutait avant le démarrage de MongoDB, les instances AEM devront être redémarrées.
+Si l&#39;AEM était en cours d&#39;exécution avant le démarrage de MongoDB, les instances AEM devront être redémarrées.
 
 Suivez les instructions de la page de documentation principale : [MSRP - Magasin commun MongoDB](msrp.md)
 
@@ -175,6 +175,7 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
    * Utilisateur `core selector` à sélectionner `collection1`
    * Sélectionner `Query`
    * Sélectionner `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## Résolution des incidents {#troubleshooting}
@@ -185,7 +186,8 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
 1. Assurez-vous que MSRP a été configuré comme fournisseur par défaut :
 
-   * Sur toutes les instances d’AEM d’auteur et de publication, revisitez la console de configuration de l’ [Enregistrement.](srp-config.md)
+   * Sur toutes les instances d’AEM création et de publication, passez de nouveau en revue la console de configuration de l’ [Enregistrement.](srp-config.md)
+
    Ou vérifiez le référentiel AEM :
 
    * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
@@ -194,4 +196,4 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
    * Si le noeud srpc existe et contient la configuration [par](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)défaut du noeud, les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
 
 
-1. Assurez-vous qu’AEM a été redémarré après avoir sélectionné MSRP.
+1. Assurez-vous que l&#39;AEM a été redémarré après avoir sélectionné MSRP.
