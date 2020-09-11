@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur de la gestion d’AEM 6.5
+user-guide-title: aem 6.5 Gestion du guide de l’utilisateur
+breadcrumb-title: Managing Guide
 user-guide-description: Learn how to manage an AEM project.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 79%
@@ -19,7 +20,7 @@ ht-degree: 79%
 + Gestion : liste de contrôle des meilleures pratiques {#managing-best-practices-checklist}
    + [Gestion des projets : liste de contrôle des meilleures pratiques](best-practices.md)
    + [La liste de contrôle](best-practices-checklist.md)
-   + [Glossaire   ](best-practices-glossary.md)
+   + [Glossaire ](best-practices-glossary.md)
    + [La liste de contrôle – Référence supplémentaire](best-practices-further-reference.md)
 + Gestion – Plus de références {#managing-further-reference}
    + [Consignes de dimensionnement du matériel](hardware-sizing-guidelines.md)
