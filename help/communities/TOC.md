@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur des communautés AEM 6.5
+user-guide-title: aem 6.5 Guide de l’utilisateur des communautés
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 26%
@@ -34,12 +35,12 @@ ht-degree: 26%
    + [Déploiement de Communities](deploy-communities.md)
    + [Mise à niveau vers les communautés AEM 6.5](upgrade.md)
    + [Topologies recommandées pour Communities](topologies.md)
-   + [Configuration du Dispatcher pour les communautés](dispatcher.md)
+   + [Configuration du répartiteur pour les communautés](dispatcher.md)
 + Administration {#administer}
    + [Service de gestion des utilisateurs et du contenu qu’ils génèrent dans AEM Communities](user-ugc-management-service.md)
    + [Sites des communautés](administer-landing.md)
    + [Consoles de communautés](consoles.md)
-   + [Configuration Analytics pour les communautés, fonctionnalités](analytics.md)
+   + [Fonctionnalités de configuration d’Analytics pour les communautés](analytics.md)
    + [Fontionnalités Configuration de l’activation](enablement.md)
    + [Configuration de la messagerie](messaging.md)
    + [Modération du contenu de la communauté](moderate-ugc.md)
@@ -66,7 +67,7 @@ ht-degree: 26%
    + [Fichier mpeg pour les communautés](ffmpeg.md)
    + [Modération en contexte](in-context.md)
    + [Scores et badges avancés](advanced.md)
-   + [ASRP - Fournisseur de ressources d&#39;Enregistrement Adobe](asrp.md)
+   + [ASRP - Fournisseur de ressources d&#39;Enregistrement d&#39;Adobe](asrp.md)
    + [MSRP - Fournisseur de ressources d&#39;Enregistrement MongoDB](msrp.md)
    + [Configuration de MongoDB pour la démonstration](demo-mongo.md)
    + [DSRP - Fournisseur de ressources d&#39;Enregistrement de données relationnelles](dsrp.md)
@@ -91,7 +92,7 @@ ht-degree: 26%
    + [Aide-mémoire SCF](handlebars-helpers.md)
    + [Présentation du fournisseur de ressources d&#39;Enregistrement](srp.md)
    + [Site communautaire Essentials](sites-for-developers.md)
-   + [Activité Stream Essentials](essentials-activities.md)
+   + [activité Stream Essentials](essentials-activities.md)
    + [Affectations Essentials](essentials-assignments.md)
    + [Blog Essentials](blog-developer-basics.md)
    + [Calendrier essentiel](calendar-basics-for-developers.md)
@@ -125,13 +126,13 @@ ht-degree: 26%
    + [Contenu initial du sandbox](initial-content.md)
    + [Développement d’une application Sandbox](develop-app.md)
    + [Développement du contenu du sandbox](develop-content.md)
-   + [Ajouter des bibliothèques clientes](add-clientlibs.md)
+   + [ajouter les bibliothèques clientes](add-clientlibs.md)
    + [Composant de commentaires d’incrustation](overlay-comments.md)
    + [Page Créer des commentaires](overlay-create-comments-page.md)
    + [Créer des noeuds](overlay-create-nodes.md)
    + [Modification de l’aspect](overlay-alter-appearance.md)
    + [Création des composants](extend-create-components.md)
-   + [Ajouter le commentaire à l&#39;exemple de page](extend-sample-page.md)
+   + [ajouter un commentaire sur un exemple de page](extend-sample-page.md)
    + [Étendre le composant Commentaires](extend-comments.md)
    + [Modification de l’aspect (HBS)](extend-alter-appearance.md)
    + [Créer un exemple de page](create-sample-page.md)
