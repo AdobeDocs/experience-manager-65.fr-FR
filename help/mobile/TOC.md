@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide de l’utilisateur d’AEM 6.5 Mobile
+user-guide-title: Guide de l’utilisateur AEM 6.5 Mobile
+breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 26%
@@ -18,23 +19,23 @@ ht-degree: 26%
 + [Guide de l’utilisateur mobile](home.md)
 + Introduction to AEM Mobile {#introduction}
    + [Prise en main d’AEM Mobile](getting-started-aem-mobile.md)
-   + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
+   + [aem mobile à la demande](getting-started-aem-mobile-on-demand.md)
    + [Applications mobiles](mobile-apps.md)
-   + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
+   + [aem Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile – Préparation pour le RGPD](aem-mobile-gdpr-compliance.md)
    + [Développement d’applications mobiles](develop-mobile-apps.md)
 + Création de l&#39;application On-Demand Services {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gestion du contenu](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Publier un contenu non publié](mobile-on-demand-publishing-unpublishing.md)
-   + [Tableau de bord d&#39;applications AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
+   + [tableau de bord d’application AEM Mobile](mobile-apps-ondemand-application-dashboard.md)
    + [Actions de création et de configuration d’application](mobile-apps-ondemand-application-create-configure-action.md)
    + [Gestion des articles](mobile-on-demand-managing-articles.md)
    + [Chargement des ressources partagées](mobile-on-demand-shared-resources.md)
    + [Configuration du cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestion des bannières](mobile-on-demand-managing-banners.md)
 + Développement d&#39;une application de services à la demande {#developing}
-   + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
+   + [aem mobile à la demande](aem-mobile-on-demand.md)
    + [Modèles d’application et composants](app-templates-and-components1.md)
    + [Propriétés de contenu et noeuds](content-properties.md)
    + [Création de la configuration d&#39;exportation des ressources partagées](creating-shared-resources-export-configuration.md)
@@ -48,20 +49,20 @@ ht-degree: 26%
    + [Content Services](developing-content-services.md)
    + [Diffusion de contenu](develop-content-as-a-service.md)
 + Administration des applications On-Demand Services {#administering}
-   + [AEM Mobile On-Demand](aem-mobile.md)
-   + [Configuration d&#39;AEM Mobile](aem-mobile-setup.md)
+   + [aem mobile à la demande](aem-mobile.md)
+   + [Configuration AEM Mobile](aem-mobile-setup.md)
    + [Configuration d’utilisateurs et de groupes d’utilisateurs](aem-mobile-configure-users.md)
    + [Aperçu avec contrôle en amont](aem-mobile-manage-ondemand-services.md)
    + [Applications mobiles](administer-mobile-apps.md)
    + [Présentation des modèles](model-management.md)
    + [Espaces et entités](spaces-and-entities.md)
    + [Gestion des collections](mobile-on-demand-managing-collections.md)
-+ Création de Adobe PhoneGap Enterprise {#author-phonegap}
++ Création d’Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [Modification de métadonnées d’application](phonegap-editmetadata.md)
    + [Définitions d’application](phonegap-app-definitions.md)
    + [Création et gestion de contenu d’application](phonegap-manage-app-content.md)
-   + [Création d&#39;une application AEM Mobile à l&#39;aide de l&#39;assistant de création](phonegap-create-new-app.md)
+   + [Création d’une application AEM Mobile à l’aide de l’assistant de création](phonegap-create-new-app.md)
    + [Création d’applications mobiles](phonegap-authoring-apps.md)
    + [Mosaïque Gestion de l’application](phonegap-app-details-tile.md)
    + [Personnalisation du contenu AEM Mobile](phonegap-aem-mobile-content-personalization.md)
@@ -75,17 +76,17 @@ ht-degree: 26%
    + [Développement d&#39;applications avec l&#39;interface de ligne de commande PhoneGap](phonegap-apps-pg-cli.md)
    + [Gestionnaires d’applications prêts à l’emploi](contentsync-app-handlers.md)
    + [Création et modification d’applications à l’aide de la console d’applications](phonegap-apps-console.md)
-   + [Votre application hybride est-elle prête pour AEM Mobile ?](phonegap-adding-content-to-imported-app.md)
+   + [Votre application hybride est-elle prête pour l&#39;AEM Mobile ?](phonegap-adding-content-to-imported-app.md)
    + [Accéder aux fonctionnalités du périphérique](phonegap-access-device-features.md)
-   + [Ajouter Adobe Analytics à votre application mobile](phonegap-add-analytics-to-apps.md)
+   + [ajouter Adobe Analytics à votre application mobile](phonegap-add-analytics-to-apps.md)
    + [Modèles de page pour les applications mobiles](phonegap-apps-arch-page-templates.md)
-   + [Configuration du Cloud Service d&#39;Adobe Target](aem-mobile-configuring-cloud-service.md)
+   + [Configuration de l’Cloud Service Adobe Target](aem-mobile-configuring-cloud-service.md)
    + [des applications sur une seule page ;](phonegap-single-page-applications.md)
    + [Modèles dans le référentiel](administer-mobile-apps.md)
-   + [Démarrage d’AEM PhoneGap](starting-aem-phonegap-app.md)
+   + [Démarrage AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Test des applications mobiles](develop-mobile-apps-testing.md)
    + [Structure d’une application](phonegap-structure-an-app.md)
-   + [Suivi des performances des applications avec Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
+   + [Suivi des performances des applications avec les analyses mobiles Adobe](phonegap-intro-to-app-analytics.md)
 + Administration de Adobe PhoneGap Enterprise {#administering-phonegap}
    + [Démarrage rapide mobile](phonegap-mobile-quickstart.md)
    + [Administration de contenu pour Adobe PhoneGap Enterprise avec AEM](administer-phonegap.md)
