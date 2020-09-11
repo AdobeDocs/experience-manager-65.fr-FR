@@ -1,8 +1,8 @@
 ---
 title: MSRP - Fournisseur de ressources d'Enregistrement MongoDB
 seo-title: MSRP - Fournisseur de ressources d'Enregistrement MongoDB
-description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
-seo-description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
+description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
+seo-description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 412200c1bb0c7050c981fc5dc2a5430f37b3beb3
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## A propos de MSRP {#about-msrp}
 
-Lorsque les AEM Communities sont configurés pour utiliser MSRP comme magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir à effectuer de synchronisation ni de réplication.
+Lorsque AEM Communities est configuré pour utiliser MSRP comme magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir à effectuer de synchronisation ni de réplication.
 
 Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-of-srp-options) SRP et Topologies [](topologies.md)recommandées.
 
@@ -37,7 +37,7 @@ Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-o
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Version 4.10 ou version 5
+   * Solr version 7.0
    * Le serveur requiert Java 1.7 ou version ultérieure
    * Aucun service requis
    * Choix des modes d&#39;exécution :
@@ -80,7 +80,7 @@ Sur author, pour accéder à la console de configuration d’Enregistrement :
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper**
 
       Lors de l’exécution en mode [](solr.md#solrcloud-mode) SolrCloud avec un ZooKeeper externe, définissez cette valeur sur la valeur `HOST:PORT` pour le ZooKeeper, telle que *my.server.com:2181.*
 
@@ -105,15 +105,15 @@ Laissez vide si vous exécutez en mode SolrCloud.
 >La base de données mongoDB, dont le nom par défaut `communities`est le nom, ne doit pas être définie sur le nom d’une base de données utilisée pour les magasins de [noeuds ou les magasins de données (binaires)](../../help/sites-deploying/data-store-config.md). Voir aussi [Enregistrement Elements dans AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 
-### Jeu de Copies MongoDB {#mongodb-replica-set}
+### Jeu de Secondaires MongoDB {#mongodb-replica-set}
 
-Pour l’environnement de production, il est vivement recommandé de configurer un jeu de réplicas, un cluster de serveurs MongoDB qui implémente la réplication primaire et secondaire et le basculement automatisé.
+Pour l’environnement de production, il est fortement recommandé de configurer un jeu de réplicas, un cluster de serveurs MongoDB qui implémente la réplication Principale-secondaire et le basculement automatisé.
 
 Pour en savoir plus sur les jeux de réplicas, consultez la documentation sur la [réplication](https://docs.mongodb.org/manual/replication/) de MongoDB.
 
 Pour utiliser des jeux de réplicas et apprendre à définir des connexions entre les applications et les instances MongoDB, consultez la documentation sur le format [URI de chaîne de](https://docs.mongodb.org/manual/reference/connection-string/) connexion de MongoDB.
 
-#### Exemple d’URL pour la connexion à un jeu de Copies  {#example-url-for-connecting-to-a-replica-set}
+#### Exemple d’URL pour la connexion à un jeu de Secondaires  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -137,7 +137,7 @@ Pour plus d&#39;informations sur la configuration, reportez-vous à la section C
 
 Si la mise à niveau à partir d’une version antérieure configurée avec MSRP, il sera nécessaire de :
 
-1. Effectuer la [mise à niveau vers le AEM Communities](upgrade.md)
+1. Effectuer la [mise à niveau vers AEM Communities](upgrade.md)
 1. Installer de nouveaux fichiers de configuration Solr
    * Pour MLS [standard](solr.md#installing-standard-mls)
    * Pour MLS [avancé](solr.md#installing-advanced-mls)
@@ -233,13 +233,13 @@ Sur toutes les instances d’AEM création et de publication, consultez de nouve
 
 ### UGC disparaît après la mise à niveau {#ugc-disappears-after-upgrade}
 
-Si la mise à niveau à partir d&#39;un site AEM Communities 6.0 existant, tout UGC préexistant doit être converti pour se conformer à la structure requise pour l&#39;API [SRP](srp.md) après la mise à niveau vers AEM Communities 6.3.
+Si une mise à niveau à partir d’un site AEM Communities 6.0 existant, tout fichier UGC préexistant doit être converti en fonction de la structure requise pour l’API [SRP](srp.md) après la mise à niveau vers AEM Communities 6.3.
 
 Un outil open source est disponible sur GitHub à cet effet :
 
 * [Outil de migration UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-L’outil de migration peut être personnalisé pour exporter l’UGC à partir de versions antérieures de communautés sociales AEM pour l’importer en AEM Communities 6.1 ou version ultérieure.
+L’outil de migration peut être personnalisé pour exporter l’UGC à partir de versions antérieures d’AEM communautés sociales en vue de son importation dans AEM Communities 6.1 ou version ultérieure.
 
 ### Erreur - champ non défini provider_id {#error-undefined-field-provider-id}
 
