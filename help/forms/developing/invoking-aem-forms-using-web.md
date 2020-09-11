@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '9966'
 ht-degree: 6%
@@ -20,24 +20,24 @@ ht-degree: 6%
 
 # Appel d’AEM Forms utilisant des services Web {#invoking-aem-forms-using-web-services}
 
-La plupart des services AEM Forms du conteneur de services sont configurés pour exposer un service Web, avec la prise en charge complète de la génération de langage de définition de service Web (WSDL). En d’autres termes, vous pouvez créer des objets proxy qui utilisent la pile SOAP native d’un service AEM Forms. En conséquence, les services AEM Forms peuvent échanger et traiter les messages SOAP suivants :
+La plupart des services AEM Forms du conteneur de services sont configurés pour exposer un service Web, avec la prise en charge complète de la génération de langage de définition de service Web (WSDL). En d’autres termes, vous pouvez créer des objets proxy qui utilisent la pile SOAP native d’un service AEM Forms. Par conséquent, les services AEM Forms peuvent échanger et traiter les messages SOAP suivants :
 
 * **Demande** SOAP : Envoyé à un service Forms par une application cliente demandant une action.
 * **Réponse** SOAP : Envoyé à une application cliente par un service Forms après le traitement d’une demande SOAP.
 
-Les services Web vous permettent d’effectuer les mêmes opérations de services AEM Forms que vous pouvez en utilisant l’API Java. L’utilisation des services Web pour appeler les services AEM Forms présente l’avantage de permettre de créer une application cliente dans un environnement de développement prenant en charge SOAP. Une application cliente n’est pas liée à un environnement de développement ou à un langage de programmation spécifique. Par exemple, vous pouvez créer une application cliente en utilisant Microsoft Visual Studio .NET et C# comme langage de programmation.
+Les services Web vous permettent d’effectuer les mêmes opérations de services AEM Forms que vous pouvez en utilisant l’API Java. L’utilisation des services Web pour appeler les services AEM Forms présente un avantage : vous pouvez créer une application cliente dans un environnement de développement qui prend en charge SOAP. Une application cliente n’est pas liée à un environnement de développement ou à un langage de programmation spécifique. Par exemple, vous pouvez créer une application cliente en utilisant Microsoft Visual Studio .NET et C# comme langage de programmation.
 
-Les services AEM Forms sont exposés sur le protocole SOAP et sont conformes à la norme WSI Basic Profil 1.1. Web Services Interoperability (WSI) est une organisation ouverte qui fait la promotion de l&#39;interopérabilité des services Web entre les plateformes. Pour plus d’informations, voir [https://www.ws-i.org/](https://www.ws-i.org).
+Les services AEM Forms sont exposés via le protocole SOAP et sont conformes à WSI Basic Profil 1.1. Web Services Interoperability (WSI) est une organisation ouverte qui fait la promotion de l&#39;interopérabilité des services Web entre les plateformes. Pour plus d’informations, voir [https://www.ws-i.org/](https://www.ws-i.org).
 
-AEM Forms prend en charge les normes de service Web suivantes :
+aem forms prend en charge les normes de service Web suivantes :
 
-* **Encodage**: Prend uniquement en charge le codage document et littéral (qui est le codage préféré selon le Profil de base WSI). (Voir [Appel de AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
-* **MTOM**: Représente un moyen de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel de AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Représente une autre façon de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel de AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
-* **SOAP avec pièces jointes**: Prend en charge à la fois MIME et DIME (Encapsulation de messages Internet directs). Ces protocoles sont des moyens standard d’envoyer des pièces jointes par le biais de SOAP. Les applications Microsoft Visual Studio .NET utilisent DIME. (Voir [Appel de AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
-* **WS-Security**: Prend en charge un profil de jeton de mot de passe de nom d&#39;utilisateur, qui est un moyen standard d&#39;envoyer des noms d&#39;utilisateur et des mots de passe dans le cadre de l&#39;en-tête SOAP de sécurité WS. Les AEM Forms prennent également en charge l’authentification de base HTTP. (Voir [Transmission d’informations d’identification à l’aide d’en-têtes](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html)WS-Security.)
+* **Encodage**: Prend uniquement en charge le codage document et littéral (qui est le codage préféré selon le Profil de base WSI). (Voir [Appel d’AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
+* **MTOM**: Représente un moyen de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel d’AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: Représente une autre façon de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel d’AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
+* **SOAP avec pièces jointes**: Prend en charge à la fois MIME et DIME (Encapsulation de messages Internet directs). Ces protocoles sont des moyens standard d’envoyer des pièces jointes par le biais de SOAP. Les applications Microsoft Visual Studio .NET utilisent DIME. (Voir [Appel d’AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
+* **WS-Security**: Prend en charge un profil de jeton de mot de passe de nom d&#39;utilisateur, qui est un moyen standard d&#39;envoyer des noms d&#39;utilisateur et des mots de passe dans le cadre de l&#39;en-tête SOAP de sécurité WS. aem forms prend également en charge l’authentification de base HTTP. (Voir [Transmission d’informations d’identification à l’aide d’en-têtes](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html)WS-Security.)
 
-Pour appeler des services AEM Forms à l’aide d’un service Web, vous créez généralement une bibliothèque proxy qui utilise le service WSDL. La section *Appeler des AEM Forms à l’aide de services* Web utilise JAX-WS pour créer des classes proxy Java afin d’appeler des services. (Voir [Création de classes de proxy Java à l’aide de JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
+Pour appeler des services AEM Forms à l’aide d’un service Web, vous créez généralement une bibliothèque proxy qui utilise le service WSDL. La section *Appel d’AEM Forms à l’aide des services* Web utilise JAX-WS pour créer des classes proxy Java afin d’appeler des services. (Voir [Création de classes de proxy Java à l’aide de JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
 Vous pouvez récupérer un WDSL de service en spécifiant la définition d’URL suivante (les éléments entre crochets sont facultatifs) :
 
@@ -47,14 +47,14 @@ Vous pouvez récupérer un WDSL de service en spécifiant la définition d’URL
 
 où :
 
-* *your_serverhost* représente l’adresse IP du serveur d’applications J2EE hébergeant des AEM Forms.
+* *your_serverhost* représente l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms.
 * *your_port* représente le port HTTP utilisé par le serveur d’applications J2EE.
 * *service_name* représente le nom du service.
 * *version* représente la version de cible d’un service (la dernière version de service est utilisée par défaut).
 * `async` spécifie la valeur `true` permettant d’activer des opérations supplémentaires pour un appel asynchrone ( `false` par défaut).
-* *lc_version* représente la version de AEM Forms que vous souhaitez appeler.
+* *lc_version* représente la version d’AEM Forms que vous souhaitez appeler.
 
-Le tableau suivant listes les définitions WSDL du service WSDL (en supposant que le AEM Forms soit déployé sur l’hôte local et que la publication soit 8080).
+Le tableau suivant listes les définitions WSDL du service WSDL (en supposant que AEM Forms soit déployé sur l’hôte local et que la publication soit 8080).
 
 <table>
  <thead>
@@ -143,7 +143,7 @@ Le tableau suivant listes les définitions WSDL du service WSDL (en supposant qu
  </tbody>
 </table>
 
-**Définitions WSDL de processus AEM Forms**
+**Définitions WSDL du processus AEM Forms**
 
 Vous devez spécifier le nom de l’application et le nom du processus dans la définition WSDL pour accéder à un fichier WSDL qui appartient à un processus créé dans Workbench. Supposons que le nom de l’application soit `MyApplication` le nom du processus `EncryptDocument`. Dans ce cas, spécifiez la définition WSDL suivante :
 
@@ -165,7 +165,7 @@ Vous devez spécifier le nom de l’application et le nom du processus dans la d
 
 **Accès à de nouvelles fonctionnalités à l’aide de services Web**
 
-Les nouveaux services AEM Forms sont accessibles à l’aide des services Web. Par exemple, en AEM Forms, la possibilité de coder des pièces jointes à l’aide de MTOM est introduite. (Voir [Appel de AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
+La nouvelle fonctionnalité du service AEM Forms est accessible à l’aide des services Web. Par exemple, en AEM Forms, la possibilité de coder des pièces jointes à l’aide de MTOM est introduite. (Voir [Appel d’AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
 
 Pour accéder aux nouvelles fonctionnalités introduites en AEM Forms, spécifiez l’ `lc_version` attribut dans la définition WSDL. Par exemple, pour accéder à de nouvelles fonctionnalités de service (y compris la prise en charge de MTOM), spécifiez la définition WSDL suivante :
 
@@ -179,9 +179,9 @@ Pour accéder aux nouvelles fonctionnalités introduites en AEM Forms, spécifie
 
 **Type de données BLOB de service Web**
 
-Les fichiers WSDL de service AEM Forms définissent de nombreux types de données. L’un des types de données les plus importants exposés dans un service Web est un `BLOB` type. Ce type de données correspond à la `com.adobe.idp.Document` classe lorsque vous utilisez des API Java AEM Forms. (See [Passing data to AEM Forms services using the Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+Les fichiers WSDL du service AEM Forms définissent de nombreux types de données. L’un des types de données les plus importants exposés dans un service Web est un `BLOB` type. Ce type de données correspond à la `com.adobe.idp.Document` classe lorsque vous utilisez des API Java AEM Forms. (See [Passing data to AEM Forms services using the Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-Un `BLOB` objet envoie et récupère des données binaires (par exemple, des fichiers PDF, des données XML, etc.) vers et depuis des services AEM Forms. Le `BLOB` type est défini dans un WSDL de service comme suit :
+Un `BLOB` objet envoie et récupère des données binaires (par exemple, des fichiers PDF, des données XML, etc.) vers et depuis les services AEM Forms. Le `BLOB` type est défini dans un WSDL de service comme suit :
 
 ```xml
  <complexType name="BLOB">
@@ -210,21 +210,21 @@ Les `MTOM` champs et `swaRef` sont pris en charge uniquement en AEM Forms. Vous 
 
 **Fourniture d&#39;objets BLOB dans des demandes de service**
 
-Si une opération de service AEM Forms requiert un `BLOB` type en tant que valeur d’entrée, créez une instance du `BLOB` type dans la logique de votre application. (La plupart des débuts rapides de services Web situés dans *Programmation avec AEM Forms* montrent comment utiliser un type de données BLOB.)
+Si une opération de service AEM Forms requiert un `BLOB` type en tant que valeur d’entrée, créez une instance du `BLOB` type dans la logique de votre application. (La plupart des débuts rapides de services Web situés dans *Programmation avec des formulaires* AEM montrent comment utiliser un type de données BLOB.)
 
 Affectez des valeurs aux champs qui appartiennent à l’ `BLOB` instance comme suit :
 
-* **Base64**: Pour transmettre des données sous forme de texte codé au format Base64, définissez les données dans le `BLOB.binaryData` champ et le type de données au format MIME (par exemple `application/pdf`) dans le `BLOB.contentType` champ. (Voir [Appel de AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
-* **MTOM**: Pour transmettre des données binaires dans une pièce jointe MTOM, définissez les données dans le `BLOB.MTOM` champ. Ce paramètre associe les données à la demande SOAP à l’aide de la structure Java JAX-WS ou de l’API native de la structure SOAP. (Voir [Appel de AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Pour transmettre des données binaires dans une pièce jointe WS-I SwaRef, définissez les données dans le `BLOB.swaRef` champ. Ce paramètre associe les données à la demande SOAP à l’aide de la structure Java JAX-WS. (Voir [Appel de AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
-* **Pièce jointe** MIME ou DIME : Pour transmettre des données dans une pièce jointe MIME ou DIME, joignez les données à la demande SOAP à l’aide de l’API native de la structure SOAP. Définissez l’identifiant de la pièce jointe dans le `BLOB.attachmentID` champ. (Voir [Appel de AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
-* **URL** distante : Si les données sont hébergées sur un serveur Web et accessibles via une URL HTTP, définissez l’URL HTTP dans le `BLOB.remoteURL` champ. (Voir [Appel de AEM Forms à l’aide de données BLOB sur HTTP](#invoking-aem-forms-using-blob-data-over-http).)
+* **Base64**: Pour transmettre des données sous forme de texte codé au format Base64, définissez les données dans le `BLOB.binaryData` champ et le type de données au format MIME (par exemple `application/pdf`) dans le `BLOB.contentType` champ. (Voir [Appel d’AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
+* **MTOM**: Pour transmettre des données binaires dans une pièce jointe MTOM, définissez les données dans le `BLOB.MTOM` champ. Ce paramètre associe les données à la demande SOAP à l’aide de la structure Java JAX-WS ou de l’API native de la structure SOAP. (Voir [Appel d’AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
+* **SwaRef**: Pour transmettre des données binaires dans une pièce jointe WS-I SwaRef, définissez les données dans le `BLOB.swaRef` champ. Ce paramètre associe les données à la demande SOAP à l’aide de la structure Java JAX-WS. (Voir [Appel d’AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
+* **Pièce jointe** MIME ou DIME : Pour transmettre des données dans une pièce jointe MIME ou DIME, joignez les données à la demande SOAP à l’aide de l’API native de la structure SOAP. Définissez l’identifiant de la pièce jointe dans le `BLOB.attachmentID` champ. (Voir [Appel d’AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
+* **URL** distante : Si les données sont hébergées sur un serveur Web et accessibles via une URL HTTP, définissez l’URL HTTP dans le `BLOB.remoteURL` champ. (Voir [Appel d’AEM Forms à l’aide de données BLOB sur HTTP](#invoking-aem-forms-using-blob-data-over-http).)
 
 **Accès aux données dans les objets BLOB renvoyés à partir de services**
 
 Le protocole de transmission des `BLOB` objets retournés dépend de plusieurs facteurs, qui sont pris en compte dans l&#39;ordre suivant, s&#39;arrêtant lorsque la condition principale est remplie :
 
-1. **L’URL de la Cible spécifie le protocole** de transmission. Si l’URL de cible spécifiée lors de l’appel SOAP contient le paramètre `blob="`*BLOB_TYPE *&quot;,* BLOB_TYPE *détermine le protocole de transmission.* BLOB_TYPE *est un espace réservé pour base64, dime, mime, http, mtom ou swaref.
+1. **L’URL de la cible spécifie le protocole** de transmission. Si l’URL de cible spécifiée lors de l’appel SOAP contient le paramètre `blob="`*BLOB_TYPE*&quot;, *BLOB_TYPE* détermine le protocole de transmission. *BLOB_TYPE* est un espace réservé pour base64, dime, mime, http, mtom ou swaref.
 1. **Le point de terminaison SOAP du service est Smart**. Si les conditions suivantes sont vraies, les documents de sortie sont renvoyés à l’aide du même protocole de transmission que les documents d’entrée :
 
    * Le paramètre de point de terminaison SOAP du service Default Protocol for Output Blob Objects est défini sur Smart.
@@ -338,7 +338,7 @@ Le tableau suivant liste les types de données Java et affiche le type de donné
   </tr>
   <tr>
    <td><p><code>org.w3c.dom.Document</code></p></td>
-   <td><p>Le type XML, défini dans un WSDL de service, est le suivant :</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Si une opération de service AEM Forms accepte une <code>org.w3c.dom.Document</code> valeur, transmettez les données XML dans le <code>XML.document</code> champ.</p><p>La définition du <code>XML.element</code> champ entraîne une exception d’exécution. Si le service renvoie une valeur <code>org.w3c.dom.Document</code>, les données XML sont renvoyées dans le <code>XML.document</code> champ.</p></td>
+   <td><p>Le type XML, défini dans un WSDL de service, est le suivant :</p><p><code>&lt;complexType name="XML"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="document" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="element" </code><code>type="xsd:string" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>Si une opération de service AEM Forms accepte une <code>org.w3c.dom.Document</code> valeur, transmettez les données XML dans le <code>XML.document</code> champ.</p><p>La définition du <code>XML.element</code> champ entraîne une exception d’exécution. Si le service renvoie un <code>org.w3c.dom.Document</code>, les données XML sont renvoyées dans le <code>XML.document</code> champ.</p></td>
   </tr>
   <tr>
    <td><p><code>org.w3c.dom.Element</code></p></td>
@@ -349,7 +349,7 @@ Le tableau suivant liste les types de données Java et affiche le type de donné
 
 **Site Web d’Adobe Developer** 
 
-Le site Web Adobe Developer contient l’article suivant qui traite de l’appel de services AEM Forms à l’aide de l’API du service Web :
+Le site Web Adobe Developer contient l’article suivant qui traite de l’appel des services AEM Forms à l’aide de l’API de service Web :
 
 [Création d&#39;applications ASP.NET de rendu de formulaire](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
 
@@ -361,17 +361,17 @@ Le site Web Adobe Developer contient l’article suivant qui traite de l’appel
 
 ## Création de classes de proxy Java à l’aide de JAX-WS {#creating-java-proxy-classes-using-jax-ws}
 
-Vous pouvez utiliser JAX-WS pour convertir un fichier WSDL de service Forms en classes proxy Java. Ces classes vous permettent d’appeler des opérations de services AEM Forms. Apache Ant vous permet de créer un script de build qui génère des classes proxy Java en référençant un service AEM Forms WSDL. Vous pouvez générer des fichiers proxy JAX-WS en procédant comme suit :
+Vous pouvez utiliser JAX-WS pour convertir un WSDL de service Forms en classes proxy Java. Ces classes vous permettent d’appeler des opérations de services AEM Forms. Apache Ant vous permet de créer un script de génération qui génère des classes de proxy Java en référençant un service AEM Forms WSDL. Vous pouvez générer des fichiers proxy JAX-WS en procédant comme suit :
 
 1. Installez Apache Ant sur l’ordinateur client. (Voir [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi).)
 
-   * Ajoutez le répertoire bin à votre chemin de classe.
+   * ajoutez le répertoire bin à votre chemin de classe.
    * Définissez la variable `ANT_HOME` d’environnement sur le répertoire dans lequel vous avez installé Ant.
 
 1. Installez JDK 1.6 ou version ultérieure.
 
-   * Ajoutez le répertoire bin JDK sur votre chemin de classe.
-   * Ajoutez le répertoire bin JRE sur votre chemin de classe. Ce répertoire se trouve dans le `[JDK_INSTALL_LOCATION]/jre` répertoire.
+   * ajoutez le répertoire bin JDK sur votre chemin de classe.
+   * ajoutez le répertoire bin JRE sur votre chemin de classe. Ce répertoire se trouve dans le `[JDK_INSTALL_LOCATION]/jre` répertoire.
    * Définissez la variable `JAVA_HOME` d’environnement sur le répertoire dans lequel vous avez installé le JDK.
 
    Le JDK 1.6 inclut le programme wsimport utilisé dans le fichier build.xml. Le JDK 1.5 n’inclut pas ce programme.
@@ -425,11 +425,11 @@ Vous pouvez utiliser JAX-WS pour convertir un fichier WSDL de service Forms en c
     </project>
    ```
 
-   Dans ce script de génération Ant, notez que la `url` propriété est définie pour référencer le WSDL du service Encryption s’exécutant sur localhost. Les propriétés `username` et `password` doivent être définies sur un nom d’utilisateur et un mot de passe AEM forms valides. Notez que l’URL contient l’ `lc_version` attribut. Sans spécifier l’ `lc_version` option, vous ne pouvez pas appeler de nouvelles opérations de service AEM Forms.
+   Dans ce script de génération Ant, notez que la `url` propriété est définie pour référencer le WSDL du service Encryption s’exécutant sur localhost. Les propriétés `username` et `password` doivent être définies sur un nom d’utilisateur et un mot de passe valides AEM forms. Notez que l’URL contient l’ `lc_version` attribut. Sans spécifier l’ `lc_version` option, vous ne pouvez pas appeler de nouvelles opérations de service AEM Forms.
 
    >[!NOTE]
    >
-   >Remplacez `EncryptionService`par le nom de service AEM Forms que vous souhaitez appeler à l’aide de classes proxy Java. Par exemple, pour créer des classes proxy Java pour le service Rights Management, spécifiez :
+   >Remplacez `EncryptionService`par le nom du service AEM Forms que vous souhaitez appeler à l’aide de classes proxy Java. Par exemple, pour créer des classes proxy Java pour le service de Rights Management, spécifiez :
 
    ```java
     http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1
@@ -458,7 +458,7 @@ Vous pouvez utiliser JAX-WS pour convertir un fichier WSDL de service Forms en c
 
    >[!NOTE]
    >
-   >Tous les débuts rapides du service Web Java (à l’exception du service Forms) situés dans Programmation avec AEM forms créent des fichiers proxy Java à l’aide de JAX-WS. En outre, tous les débuts rapides des services Web Java, utilisez SwaRef. (Voir [Appel de AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
+   >Tous les débuts rapides des services Web Java (à l’exception du service Forms) situés dans Programmation avec AEM formulaires créent des fichiers proxy Java à l’aide de JAX-WS. En outre, tous les débuts rapides des services Web Java, utilisez SwaRef. (Voir [Appel d’AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
 
 **Voir également**
 
@@ -472,21 +472,21 @@ Vous pouvez utiliser JAX-WS pour convertir un fichier WSDL de service Forms en c
 
 ## Création de classes de proxy Java à l’aide de l’axe Apache {#creating-java-proxy-classes-using-apache-axis}
 
-Vous pouvez utiliser l’outil Apache Axis WSDL2Java pour convertir un service Forms en classes proxy Java. Ces classes vous permettent d’appeler des opérations du service Forms. Apache Ant vous permet de générer des fichiers de bibliothèque Axis à partir d’un service WSDL. Vous pouvez télécharger Apache Axis à l&#39;adresse URL [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
+Vous pouvez utiliser l’outil Apache Axis WSDL2Java pour convertir un service Forms en classes proxy Java. Ces classes vous permettent d’appeler des opérations de service Forms. Apache Ant vous permet de générer des fichiers de bibliothèque Axis à partir d’un service WSDL. Vous pouvez télécharger Apache Axis à l&#39;adresse URL [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
 
 >[!NOTE]
 >
->Les débuts rapides du service Web associés au service Forms utilisent des classes de proxy Java créées à l’aide d’Apache Axis. Les débuts rapides du service Web Forms utilisent également Base64 comme type de codage. (Voir Débuts [rapides de l’API du service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Forms).
+>Les débuts rapides de service Web associés au service Forms utilisent des classes de proxy Java créées à l’aide d’Apache Axis. Les débuts rapides du service Web Forms utilisent également Base64 comme type de codage. (voir Débuts [rapides de l’API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Forms Service).
 
 Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comme suit :
 
 1. Installez Apache Ant sur l’ordinateur client. Il est disponible à l&#39;adresse [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi).
 
-   * Ajoutez le répertoire bin à votre chemin de classe.
+   * ajoutez le répertoire bin à votre chemin de classe.
    * Définissez la variable `ANT_HOME` d’environnement sur le répertoire dans lequel vous avez installé Ant.
 
 1. Installez Apache Axis 1.4 sur l’ordinateur client. Il est disponible à l&#39;adresse [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md).
-1. Configurez le chemin de classe pour utiliser les fichiers JAR Axis dans votre client de service Web, comme décrit dans les instructions d&#39;installation d&#39;Axis à l&#39;adresse [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
+1. Configurez le chemin de classe pour utiliser les fichiers JAR Axis dans votre client de service Web, comme décrit dans les instructions d&#39;installation Axis à l&#39;adresse [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Utilisez l&#39;outil Apache WSDL2Java dans Axis pour générer des classes de proxy Java. Créez un script de création Ant pour accomplir cette tâche. Le script suivant est un exemple de script de création Ant nommé build.xml :
 
    ```java
@@ -516,7 +516,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
     </project>
    ```
 
-   Dans ce script de génération Ant, notez que la `url` propriété est définie pour référencer le WSDL du service Encryption s’exécutant sur localhost. Les propriétés `username` et `password` doivent être définies sur un nom d’utilisateur et un mot de passe AEM forms valides.
+   Dans ce script de génération Ant, notez que la `url` propriété est définie pour référencer le WSDL du service Encryption s’exécutant sur localhost. Les propriétés `username` et `password` doivent être définies sur un nom d’utilisateur et un mot de passe valides AEM forms.
 
 1. Créez un fichier BAT pour exécuter le script de création Ant. La commande suivante peut se trouver dans un fichier BAT chargé d’exécuter le script de build Ant :
 
@@ -524,7 +524,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
     ant -buildfile "build.xml" encryption-wsdl2java-client
    ```
 
-   Les fichiers JAVA sont écrits sur la propriété C:\JavaFiles folder as specified by the `output` . Pour appeler le service Forms, importez ces fichiers JAVA dans votre chemin de classe.
+   Les fichiers JAVA sont écrits sur la propriété C:\JavaFiles folder as specified by the `output` . Pour appeler le service Forms avec succès, importez ces fichiers JAVA dans votre chemin de classe.
 
    Par défaut, ces fichiers appartiennent à un package Java nommé `com.adobe.idp.services`. Il est recommandé de placer ces fichiers JAVA dans un fichier JAR. Importez ensuite le fichier JAR dans le chemin de classe de l’application cliente.
 
@@ -544,7 +544,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
     http://localhost:8080/soap/services/EncryptionService?blob=base64;
    ```
 
-1. Ajoutez les fichiers JAR Axis suivants au chemin de classe de votre projet Java :
+1. ajoutez les fichiers JAR Axis suivants au chemin de classe de votre projet Java :
 
    * activation.jar
    * axis.jar
@@ -578,7 +578,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
 
 Vous pouvez appeler un service AEM Forms à l’aide de l’encodage Base64. Base64 code les pièces jointes envoyées avec une demande d’appel de service Web. En d’autres termes, `BLOB` les données sont codées en Base64, et non le message SOAP entier.
 
-&quot;Appel de AEM Forms à l’aide de l’encodage Base64&quot; traite de l’appel du processus de courte durée AEM Forms suivant nommé `MyApplication/EncryptDocument` à l’aide de l’encodage Base64.
+&quot;Appel d’AEM Forms à l’aide de l’encodage Base64&quot; traite de l’appel du processus de courte durée AEM Forms suivant nommé `MyApplication/EncryptDocument` à l’aide de l’encodage Base64.
 
 >[!NOTE]
 >
@@ -591,7 +591,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 ### Création d&#39;un assembly client .NET utilisant le codage Base64 {#creating-a-net-client-assembly-that-uses-base64-encoding}
 
-Vous pouvez créer un assembly client .NET pour appeler un service Forms à partir d’un projet Microsoft Visual Studio .NET. Pour créer un assembly client .NET utilisant le codage base64, effectuez les étapes suivantes :
+Vous pouvez créer un assembly client .NET pour appeler un service Forms à partir d&#39;un projet Microsoft Visual Studio .NET. Pour créer un assembly client .NET utilisant le codage base64, effectuez les étapes suivantes :
 
 1. Créez une classe proxy basée sur une URL d’appel AEM Forms.
 1. Créez un projet Microsoft Visual Studio .NET qui produit l&#39;assembly client .NET.
@@ -620,7 +620,7 @@ Localisez la chaîne et attribuez-lui la valeur:
  "https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64";
 ```
 
-La section *Appel de AEM Forms à l’aide de l’encodage* Base64 `MyApplication/EncryptDocument` en est un exemple. Si vous créez un assembly client .NET pour un autre service Forms, veillez à remplacer `MyApplication/EncryptDocument` par le nom du service.
+La section *Appel d’AEM Forms à l’aide de l’encodage* Base64 utilise `MyApplication/EncryptDocument` comme exemple. Si vous créez un assembly client .NET pour un autre service Forms, veillez à remplacer `MyApplication/EncryptDocument` par le nom du service.
 
 **Développement de l&#39;assembly client .NET**
 
@@ -658,7 +658,7 @@ Vous pouvez appeler le `MyApplication/EncryptDocument` service (qui a été cré
 1. Créez un assembly client Microsoft .NET qui consomme le `MyApplication/EncryptDocument` service WSDL.
 1. Créez un projet Microsoft .NET client. Référencez l&#39;assembly client Microsoft .NET dans le projet client. Voir aussi `System.Web.Services`.
 1. A l&#39;aide de l&#39;assembly client Microsoft .NET, créez un `MyApplication_EncryptDocumentService` objet en appelant son constructeur par défaut.
-1. Définissez la `MyApplication_EncryptDocumentService` propriété de l’ `Credentials` objet avec un `System.Net.NetworkCredential` objet. Dans le `System.Net.NetworkCredential` constructeur, spécifiez un nom d’utilisateur AEM forms et le mot de passe correspondant. Définissez des valeurs d&#39;authentification pour permettre à votre application cliente .NET d&#39;échanger des messages SOAP avec des AEM Forms.
+1. Définissez la `MyApplication_EncryptDocumentService` propriété de l’ `Credentials` objet avec un `System.Net.NetworkCredential` objet. Dans le `System.Net.NetworkCredential` constructeur, spécifiez un nom d’utilisateur AEM forms et le mot de passe correspondant. Définissez des valeurs d&#39;authentification pour permettre à votre application cliente .NET d&#39;échanger des messages SOAP avec AEM Forms.
 1. Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker un document PDF transmis au `MyApplication/EncryptDocument` processus.
 1. Create a `System.IO.FileStream` object by invoking its constructor. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF et le mode d’ouverture du fichier.
 1. Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
@@ -680,7 +680,7 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et d
 
    >[!NOTE]
    >
-   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant les AEM Forms.*
+   >Remplacez `hiro-xp` par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms *par celle du serveur d’applications J2EE.*
 
 1. Compressez les classes proxy Java créées à l’aide de JAX-WS dans un fichier JAR.
 1. Incluez le fichier JAR du proxy Java et les fichiers JAR situés dans le chemin d’accès suivant :
@@ -691,7 +691,7 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et d
 
 1. Créez un objet `MyApplicationEncryptDocumentService` en utilisant son constructeur.
 1. Créez un `MyApplicationEncryptDocument` objet en appelant la `MyApplicationEncryptDocumentService` méthode de l’ `getEncryptDocument` objet.
-1. Définissez les valeurs de connexion requises pour appeler des AEM Forms en attribuant des valeurs aux membres de données suivants :
+1. Définissez les valeurs de connexion requises pour appeler AEM Forms en attribuant des valeurs aux membres de données suivants :
 
    * Affectez le point de terminaison WSDL et le type de codage au `javax.xml.ws.BindingProvider` `ENDPOINT_ADDRESS_PROPERTY` champ de l’objet. Pour appeler le `MyApplication/EncryptDocument` service à l’aide du codage Base64, spécifiez la valeur d’URL suivante :
 
@@ -728,7 +728,7 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et d
 
 ## Appel de AEM Forms à l’aide de MTOM {#invoking-aem-forms-using-mtom}
 
-Vous pouvez appeler des services AEM Forms en utilisant le MTOM standard du service Web. Cette norme définit la manière dont les données binaires, telles qu’un document PDF, sont transmises sur Internet ou sur l’intranet. L’utilisation de l’ `XOP:Include` élément est une fonctionnalité de MTOM. Cet élément est défini dans la spécification XOP (XML Binary Optimized Packaging) pour référencer les pièces jointes binaires d’un message SOAP.
+Vous pouvez appeler les services AEM Forms à l’aide du MTOM standard du service Web. Cette norme définit la manière dont les données binaires, telles qu’un document PDF, sont transmises sur Internet ou sur l’intranet. L’utilisation de l’ `XOP:Include` élément est une fonctionnalité de MTOM. Cet élément est défini dans la spécification XOP (XML Binary Optimized Packaging) pour référencer les pièces jointes binaires d’un message SOAP.
 
 The discussion here is about using MTOM to invoke the following AEM Forms short-lived process named `MyApplication/EncryptDocument`.
 
@@ -749,7 +749,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 >
 >Les applications Web JAX utilisant le protocole de transmission MTOM sont limitées à 25 Mo de données envoyées et reçues. Cette limitation est due à un bogue dans JAX-WS. Si la taille combinée de vos fichiers envoyés et reçus dépasse 25 Mo, utilisez le protocole de transmission SwaRef au lieu du protocole MTOM. Dans le cas contraire, il existe une possibilité d&#39; `OutOfMemory` exception.
 
-La discussion porte sur l&#39;utilisation de MTOM dans un projet Microsoft .NET pour appeler des services AEM Forms. Le .NET framework utilisé est 3.5 et l&#39;environnement de développement est Visual Studio 2008. Si des améliorations de service Web (WSE) sont installées sur votre ordinateur de développement, supprimez-le. La structure .NET 3.5 prend en charge une structure SOAP nommée Windows Communication Foundation (WCF). Lorsque vous appelez des AEM Forms à l’aide de MTOM, seul WCF (et non WSE) est pris en charge.
+La discussion porte sur l&#39;utilisation de MTOM dans un projet Microsoft .NET pour appeler les services AEM Forms. Le .NET framework utilisé est 3.5 et l&#39;environnement de développement est Visual Studio 2008. Si des améliorations de service Web (WSE) sont installées sur votre ordinateur de développement, supprimez-le. La structure .NET 3.5 prend en charge une structure SOAP nommée Windows Communication Foundation (WCF). Lorsque vous appelez AEM Forms à l’aide de MTOM, seul WCF (et non WSE) est pris en charge.
 
 ### Création d’un projet .NET qui appelle un service à l’aide de MTOM {#creating-a-net-project-that-invokes-a-service-using-mtom}
 
@@ -759,17 +759,17 @@ Vous pouvez créer un projet Microsoft .NET qui peut appeler un service AEM Form
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
 ```
 
-Remplacez `localhost` par l’adresse IP du serveur d’applications J2EE hébergeant les AEM Forms. Remplacez par `MyApplication/EncryptDocument` le nom du service AEM Forms à appeler. Par exemple, pour appeler une opération Rights Management, spécifiez :
+Remplacez `localhost` par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms. Remplacez par `MyApplication/EncryptDocument` le nom du service AEM Forms à appeler. Par exemple, pour appeler une opération de Rights Management, spécifiez :
 
 `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`
 
-Cette `lc_version` option garantit la disponibilité des fonctionnalités AEM Forms, telles que MTOM. Sans spécifier l’ `lc_version` option, vous ne pouvez pas appeler de AEM Forms à l’aide de MTOM.
+Cette `lc_version` option garantit la disponibilité de la fonctionnalité AEM Forms, telle que MTOM. Sans spécifier l’ `lc_version` option, vous ne pouvez pas appeler AEM Forms à l’aide de MTOM.
 
 Une fois que vous avez créé une référence de service, les types de données associés au service AEM Forms peuvent être utilisés dans votre projet .NET. Pour créer un projet .NET qui appelle un service AEM Forms, procédez comme suit :
 
 1. Créez un projet .NET à l&#39;aide de Microsoft Visual Studio 2008.
-1. Dans le menu **Projet** , sélectionnez **Ajouter la référence** de service.
-1. Dans la boîte de dialogue **Adresse** , spécifiez le WSDL au service AEM Forms. Par exemple :
+1. Dans le menu **Projet** , sélectionnez **Ajouter la référence** du service.
+1. Dans la boîte de dialogue **Adresse** , spécifiez le WSDL pour le service AEM Forms. Par exemple :
 
    ```java
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
@@ -793,7 +793,7 @@ Prenons le `MyApplication/EncryptDocument` processus qui accepte un document PDF
 
    >[!NOTE]
    >
-   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant les AEM Forms.*
+   >Remplacez `hiro-xp` par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms *par celle du serveur d’applications J2EE.*
 
 1. Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du membre `EncryptDocumentClient.Endpoint.Binding` de données. Convertissez la valeur de retour en `BasicHttpBinding`.
 1. Définissez le membre `System.ServiceModel.BasicHttpBinding` de données de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
@@ -842,9 +842,9 @@ Prenons le `MyApplication/EncryptDocument` processus qui accepte un document PDF
 
 ## Appel de AEM Forms à l’aide de SwaRef {#invoking-aem-forms-using-swaref}
 
-Vous pouvez appeler des services AEM Forms à l’aide de SwaRef. Le contenu de l’élément `wsi:swaRef` XML est envoyé sous forme de pièce jointe dans un corps SOAP qui stocke la référence à la pièce jointe. Lors de l’appel d’un service Forms à l’aide de SwaRef, créez des classes de proxy Java à l’aide de l’API Java pour les services Web XML (JAX-WS). (voir API [Java pour les services](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html)Web XML).
+Vous pouvez appeler les services AEM Forms à l’aide de SwaRef. Le contenu de l’élément `wsi:swaRef` XML est envoyé sous forme de pièce jointe dans un corps SOAP qui stocke la référence à la pièce jointe. Lors de l’appel d’un service Forms à l’aide de SwaRef, créez des classes de proxy Java à l’aide de l’API Java pour les services Web XML (JAX-WS). (voir API [Java pour les services](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html)Web XML).
 
-La discussion porte sur l’appel du processus de courte durée de vie de Forms suivant nommé `MyApplication/EncryptDocument` à l’aide de SwaRef.
+La discussion ici porte sur l&#39;appel du processus de courte durée de Forms suivant nommé `MyApplication/EncryptDocument` à l&#39;aide de SwaRef.
 
 >[!NOTE]
 >
@@ -857,7 +857,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 >[!NOTE]
 >
->Prise en charge de SwaRef ajoutée en AEM Forms
+>Ajout de la prise en charge de SwaRef en AEM Forms
 
 La discussion ci-dessous porte sur la manière d’appeler les services Forms en utilisant SwaRef dans une application cliente Java. L’application Java utilise des classes proxy créées à l’aide de JAX-WS.
 
@@ -875,7 +875,7 @@ Pour appeler le `MyApplication/EncryptDocument` processus à l’aide de fichier
 
    >[!NOTE]
    >
-   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant les AEM Forms.*
+   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms.*
 
 1. Compressez les classes proxy Java créées à l’aide de JAX-WS dans un fichier JAR.
 1. Incluez le fichier JAR du proxy Java et les fichiers JAR situés dans le chemin d’accès suivant :
@@ -886,7 +886,7 @@ Pour appeler le `MyApplication/EncryptDocument` processus à l’aide de fichier
 
 1. Créez un objet `MyApplicationEncryptDocumentService` en utilisant son constructeur.
 1. Créez un `MyApplicationEncryptDocument` objet en appelant la `MyApplicationEncryptDocumentService` méthode de l’ `getEncryptDocument` objet.
-1. Définissez les valeurs de connexion requises pour appeler des AEM Forms en attribuant des valeurs aux membres de données suivants :
+1. Définissez les valeurs de connexion requises pour appeler AEM Forms en attribuant des valeurs aux membres de données suivants :
 
    * Affectez le point de terminaison WSDL et le type de codage au `javax.xml.ws.BindingProvider` `ENDPOINT_ADDRESS_PROPERTY` champ de l’objet. Pour appeler le `MyApplication/EncryptDocument` service à l’aide du codage SwaRef, spécifiez la valeur d’URL suivante :
 
@@ -929,7 +929,7 @@ Pour appeler le `MyApplication/EncryptDocument` processus à l’aide de fichier
 
 Vous pouvez appeler des services AEM Forms à l’aide de services Web et transmettre des données BLOB sur HTTP. La transmission de données BLOB sur HTTP est une autre technique que l’encodage base64, DIME ou MIME. Par exemple, vous pouvez transmettre des données via HTTP dans un projet Microsoft .NET qui utilise Web Service Enhancement 3.0, qui ne prend pas en charge DIME ou MIME. Lors de l’utilisation de données BLOB sur HTTP, les données d’entrée sont téléchargées avant l’appel du service AEM Forms.
 
-&quot;Invoking AEM Forms using BLOB Data over HTTP&quot; (Appeler des  à l’aide de données BLOB via HTTP) traite de l’appel d’un processus de courte durée AEM Forms nommé `MyApplication/EncryptDocument` par la transmission de données BLOB via HTTP.
+&quot;Appeler AEM Forms à l’aide de données BLOB sur HTTP&quot; traite de l’appel du processus de courte durée AEM Forms suivant nommé `MyApplication/EncryptDocument` en transmettant des données BLOB sur HTTP.
 
 >[!NOTE]
 >
@@ -942,11 +942,11 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 >[!NOTE]
 >
->Il est recommandé de se familiariser avec l’appel de AEM Forms à l’aide de SOAP. (See [Invoking AEM Forms using Web Services](#invoking-aem-forms-using-web-services).)
+>Il est recommandé de se familiariser avec l’utilisation de SOAP pour appeler AEM Forms. (See [Invoking AEM Forms using Web Services](#invoking-aem-forms-using-web-services).)
 
 ### Création d&#39;un assembly client .NET utilisant des données sur HTTP {#creating-a-net-client-assembly-that-uses-data-over-http}
 
-Pour créer un assembly client qui utilise des données sur HTTP, suivez la procédure spécifiée dans la section [Appeler des AEM Forms à l&#39;aide du codage](#invoking-aem-forms-using-base64-encoding)Base64. Cependant, modifiez l’URL dans la classe proxy pour l’inclure `?blob=http` au lieu de `?blob=base64`. Cette action permet de s’assurer que les données sont transmises via HTTP. Dans la classe proxy, recherchez la ligne de code suivante :
+Pour créer un assembly client qui utilise des données sur HTTP, suivez la procédure spécifiée dans [Appeler AEM Forms à l&#39;aide du codage](#invoking-aem-forms-using-base64-encoding)Base64. Cependant, modifiez l’URL dans la classe proxy pour l’inclure `?blob=http` au lieu de `?blob=base64`. Cette action permet de s’assurer que les données sont transmises via HTTP. Dans la classe proxy, recherchez la ligne de code suivante :
 
 ```java
  "http://localhost:8080/soap/services/MyApplication/EncryptDocument";
@@ -974,7 +974,7 @@ Vous pouvez appeler le `MyApplication/EncryptDocument` service (qui a été cré
 1. Créez l&#39;assembly client .NET.
 1. Référencez l&#39;assembly client Microsoft .NET. Créez un projet Microsoft .NET client. Référencez l&#39;assembly client Microsoft .NET dans le projet client. Voir aussi `System.Web.Services`.
 1. A l&#39;aide de l&#39;assembly client Microsoft .NET, créez un `MyApplication_EncryptDocumentService` objet en appelant son constructeur par défaut.
-1. Définissez la `MyApplication_EncryptDocumentService` propriété de l’ `Credentials` objet avec un `System.Net.NetworkCredential` objet. Dans le `System.Net.NetworkCredential` constructeur, spécifiez un nom d’utilisateur AEM forms et le mot de passe correspondant. Définissez des valeurs d&#39;authentification pour permettre à votre application cliente .NET d&#39;échanger des messages SOAP avec des AEM Forms.
+1. Définissez la `MyApplication_EncryptDocumentService` propriété de l’ `Credentials` objet avec un `System.Net.NetworkCredential` objet. Dans le `System.Net.NetworkCredential` constructeur, spécifiez un nom d’utilisateur AEM forms et le mot de passe correspondant. Définissez des valeurs d&#39;authentification pour permettre à votre application cliente .NET d&#39;échanger des messages SOAP avec AEM Forms.
 1. Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour transmettre des données au `MyApplication/EncryptDocument` processus.
 1. Attribuez une valeur de chaîne au membre `BLOB` de données de l’ `remoteURL` objet qui spécifie l’emplacement URI d’un document PDF à transmettre au `MyApplication/EncryptDocument`service.
 1. Appelez le `MyApplication/EncryptDocument` processus en appelant la `MyApplication_EncryptDocumentService` méthode de l’ `invoke` objet et en transmettant l’ `BLOB` objet. Ce processus renvoie un document PDF chiffré dans un `BLOB` objet.
@@ -998,7 +998,7 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 
    >[!NOTE]
    >
-   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant les AEM Forms.*
+   >Remplacez `hiro-xp` *par l’adresse IP du serveur d’applications J2EE hébergeant AEM Forms.*
 
 1. Compressez les classes proxy Java créées à l’aide de JAX-WS dans un fichier JAR.
 1. Incluez le fichier JAR du proxy Java et les fichiers JAR situés dans le chemin d’accès suivant :
@@ -1009,7 +1009,7 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 
 1. Créez un objet `MyApplicationEncryptDocumentService` en utilisant son constructeur.
 1. Créez un `MyApplicationEncryptDocument` objet en appelant la `MyApplicationEncryptDocumentService` méthode de l’ `getEncryptDocument` objet.
-1. Définissez les valeurs de connexion requises pour appeler des AEM Forms en attribuant des valeurs aux membres de données suivants :
+1. Définissez les valeurs de connexion requises pour appeler AEM Forms en attribuant des valeurs aux membres de données suivants :
 
    * Affectez le point de terminaison WSDL et le type de codage au `javax.xml.ws.BindingProvider` `ENDPOINT_ADDRESS_PROPERTY` champ de l’objet. Pour appeler le `MyApplication/EncryptDocument` service à l’aide du codage BLOB sur HTTP, spécifiez la valeur d’URL suivante :
 
@@ -1040,7 +1040,7 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 
 ## Appel de AEM Forms à l’aide de DIME {#invoking-aem-forms-using-dime}
 
-Vous pouvez appeler des services AEM Forms à l’aide de SOAP avec des pièces jointes. Les AEM Forms prennent en charge les normes de service Web MIME et DIME. DIME vous permet d’envoyer des pièces jointes binaires, telles que des documents PDF, ainsi que des demandes d’appel au lieu de coder la pièce jointe. La section *Appeler des AEM Forms à l’aide de DIME* traite de l’appel du processus de courte durée AEM Forms suivant nommé `MyApplication/EncryptDocument` à l’aide de DIME.
+Vous pouvez appeler les services AEM Forms à l’aide de SOAP avec des pièces jointes. aem forms prend en charge les normes de service Web MIME et DIME. DIME vous permet d’envoyer des pièces jointes binaires, telles que des documents PDF, ainsi que des demandes d’appel au lieu de coder la pièce jointe. La section *Appel d’AEM Forms à l’aide de DIME* traite de l’appel du processus de courte durée AEM Forms suivant nommé `MyApplication/EncryptDocument` à l’aide de DIME.
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
@@ -1051,14 +1051,14 @@ Ce processus n’est pas basé sur un processus AEM Forms existant. To follow a
 
 >[!NOTE]
 >
->L’appel d’opérations de service AEM Forms à l’aide de DIME est obsolète. Il est recommandé d’utiliser MTOM. (Voir [Appel de AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
+>L’appel d’opérations de service AEM Forms à l’aide de DIME est obsolète. Il est recommandé d’utiliser MTOM. (Voir [Appel d’AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
 
 ### Création d&#39;un projet .NET utilisant DIME {#creating-a-net-project-that-uses-dime}
 
-Pour créer un projet .NET pouvant appeler un service Forms à l’aide de DIME, effectuez les tâches suivantes :
+Pour créer un projet .NET qui peut appeler un service Forms à l’aide de DIME, effectuez les tâches suivantes :
 
 * Installez les améliorations des services Web 2.0 sur votre ordinateur de développement.
-* Dans votre projet .NET, créez une référence Web au service FormsAEM Forms.
+* Dans votre projet .NET, créez une référence Web au service Forms FormsAEM.
 
 **Installation des améliorations des services Web 2.0**
 
@@ -1107,7 +1107,7 @@ Vous pouvez appeler un service Forms à l’aide de DIME. Prenons le `MyApplicat
 
 1. Créez un projet Microsoft .NET qui vous permet d’appeler un service Forms à l’aide de DIME. Veillez à inclure les améliorations des services Web 2.0 et à créer une référence Web au service AEM Forms.
 1. Après avoir défini une référence Web au `MyApplication/EncryptDocument` processus, créez un `EncryptDocumentServiceWse` objet à l’aide de son constructeur par défaut.
-1. Définissez le membre `EncryptDocumentServiceWse` de données de l’ `Credentials` objet avec une `System.Net.NetworkCredential` valeur qui spécifie le nom d’utilisateur et le mot de passe d’AEM forms.
+1. Définissez le membre `EncryptDocumentServiceWse` de données de l’ `Credentials` objet avec une `System.Net.NetworkCredential` valeur qui spécifie le nom d’utilisateur et la valeur de mot de passe AEM forms.
 1. Create a `Microsoft.Web.Services2.Dime.DimeAttachment` object by using its constructor and passing the following values:
 
    * Valeur de chaîne qui spécifie une valeur GUID. Vous pouvez obtenir une valeur GUID en appelant la `System.Guid.NewGuid.ToString` méthode.
@@ -1116,7 +1116,7 @@ Vous pouvez appeler un service Forms à l’aide de DIME. Prenons le `MyApplicat
    * Valeur de chaîne spécifiant l’emplacement du document PDF à transmettre au processus AEM Forms.
 
 1. Créez un objet `BLOB` en utilisant son constructeur.
-1. Ajoutez la pièce jointe DIME à l’ `BLOB` objet en attribuant la valeur de membre `Microsoft.Web.Services2.Dime.DimeAttachment` de données de l’objet au membre `Id` de données de l’ `BLOB` `attachmentID` objet.
+1. ajoutez la pièce jointe DIME à l’ `BLOB` objet en affectant la valeur de membre `Microsoft.Web.Services2.Dime.DimeAttachment` de données de l’objet au membre `Id` de données de l’ `BLOB` `attachmentID` objet.
 1. Appelez la `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` méthode et transmettez l’ `Microsoft.Web.Services2.Dime.DimeAttachment` objet.
 1. Appelez le `MyApplication/EncryptDocument` processus en appelant la `EncryptDocumentServiceWse` méthode de l’ `invoke` objet et en transmettant l’ `BLOB` objet contenant la pièce jointe DIME. Ce processus renvoie un document PDF chiffré dans un `BLOB` objet.
 1. Récupérez la valeur de l’identifiant de pièce jointe en obtenant la valeur du membre `BLOB` de données de l’objet `attachmentID` renvoyé.
@@ -1145,7 +1145,7 @@ Pour appeler le `MyApplication/EncryptDocument` service (qui a été créé dans
    ```
 
 1. Créez un `EncryptDocumentSoapBindingStub` objet en appelant son constructeur et en transmettant l’ `MyApplicationEncryptDocumentServiceLocator`objet et l’ `URL` objet.
-1. Définissez le nom d’utilisateur et la valeur de mot de passe d’AEM forms en appelant les méthodes `EncryptDocumentSoapBindingStub` et `setUsername` `setPassword` objets.
+1. Définissez le nom d’utilisateur et la valeur de mot de passe AEM forms en appelant les méthodes `EncryptDocumentSoapBindingStub` et `setUsername` `setPassword` de l’objet.
 
    ```java
     encryptionClientStub.setUsername("administrator");
@@ -1174,20 +1174,20 @@ Pour appeler le `MyApplication/EncryptDocument` service (qui a été créé dans
 
 ## Utilisation de l’authentification SAML {#using-saml-based-authentication}
 
-Les AEM Forms prennent en charge divers modes d’authentification des services Web lors de l’appel de services. Un mode d’authentification consiste à spécifier un nom d’utilisateur et une valeur de mot de passe à l’aide d’un en-tête d’autorisation de base dans l’appel de service Web. Les AEM Forms prennent également en charge l’authentification basée sur l’assertion SAML. Lorsqu’une application cliente appelle un service AEM Forms à l’aide d’un service Web, l’application cliente peut fournir des informations d’authentification de l’une des manières suivantes :
+aem forms prend en charge divers modes d’authentification de service Web lors de l’appel de services. Un mode d’authentification consiste à spécifier un nom d’utilisateur et une valeur de mot de passe à l’aide d’un en-tête d’autorisation de base dans l’appel de service Web. aem forms prend également en charge l’authentification basée sur l’assertion SAML. Lorsqu’une application cliente appelle un service AEM Forms à l’aide d’un service Web, l’application cliente peut fournir des informations d’authentification de l’une des manières suivantes :
 
 * Transmission des informations d’identification dans le cadre de l’autorisation de base
 * Transmission du jeton username dans l&#39;en-tête WS-Security
 * Transmission d’une assertion SAML dans le cadre de l’en-tête WS-Security
 * Transmission du jeton Kerberos dans l&#39;en-tête WS-Security
 
-Les AEM Forms ne prennent pas en charge l’authentification standard par certificat, mais ils prennent en charge l’authentification par certificat sous une autre forme.
+aem forms ne prend pas en charge l’authentification par certificat standard, mais il prend en charge l’authentification par certificat sous une autre forme.
 
 >[!NOTE]
 >
->Les débuts rapides du service Web dans Programmation avec des AEM Forms spécifient les valeurs de nom d’utilisateur et de mot de passe pour effectuer l’autorisation.
+>Les débuts rapides du service Web dans Programmation avec AEM Forms spécifient le nom d’utilisateur et le mot de passe pour effectuer l’autorisation.
 
-L’identité des utilisateurs d’AEM forms peut être représentée par une assertion SAML signée à l’aide d’une clé secrète. Le code XML suivant illustre un exemple d’assertion SAML.
+L’identité des utilisateurs de AEM forms peut être représentée par une assertion SAML signée à l’aide d’une clé secrète. Le code XML suivant illustre un exemple d’assertion SAML.
 
 ```xml
  <Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion"
@@ -1234,24 +1234,24 @@ Cet exemple d’assertion est émis pour un utilisateur administrateur. Cette af
 * Elle est valide pour une certaine durée.
 * Il est émis pour un utilisateur particulier.
 * Il est signé numériquement. Toute modification apportée à cette dernière romprait donc la signature.
-* Il peut être présenté aux AEM Forms comme un jeton d’identité de l’utilisateur similaire à son nom d’utilisateur et à son mot de passe.
+* Il peut être présenté à AEM Forms sous la forme d’un jeton d’identité de l’utilisateur similaire au nom d’utilisateur et au mot de passe.
 
-Une application cliente peut récupérer l&#39;affirmation de toute API AuthenticationManager AEM Forms qui renvoie un `AuthResult` objet. Vous pouvez obtenir une `AuthResult` instance en appliquant l’une des deux méthodes suivantes :
+Une application cliente peut récupérer l’assertion de toute API AEM Forms AuthenticationManager qui renvoie un `AuthResult` objet. Vous pouvez obtenir une `AuthResult` instance en appliquant l’une des deux méthodes suivantes :
 
 * Authentification de l’utilisateur à l’aide de l’une des méthodes d’authentification exposées par l’API AuthenticationManager. En règle générale, on utilise le nom d&#39;utilisateur et le mot de passe ; toutefois, vous pouvez également utiliser l’authentification par certificat.
-* Utilisation de la `AuthenticationManager.getAuthResultOnBehalfOfUser` méthode. Cette méthode permet à une application cliente d’obtenir un `AuthResult` objet pour tout utilisateur d’AEM forms.
+* Utilisation de la `AuthenticationManager.getAuthResultOnBehalfOfUser` méthode. Cette méthode permet à une application cliente d’obtenir un `AuthResult` objet pour tout utilisateur de formulaires AEM.
 
-un utilisateur AEM forms peut être authentifié à l’aide d’un jeton SAML obtenu. Cette assertion SAML (fragment xml) peut être envoyée dans le cadre de l&#39;en-tête WS-Security avec l&#39;appel du service Web pour l&#39;authentification des utilisateurs. En règle générale, une application cliente a authentifié un utilisateur mais n’a pas enregistré ses informations d’identification. (Ou l’utilisateur s’est connecté à ce client par le biais d’un mécanisme autre que l’utilisation d’un nom d’utilisateur et d’un mot de passe.) Dans ce cas, l’application cliente doit appeler des AEM Forms et se faire passer pour un utilisateur spécifique autorisé à appeler des AEM Forms.
+un utilisateur de AEM forms peut être authentifié à l’aide d’un jeton SAML obtenu. Cette assertion SAML (fragment xml) peut être envoyée dans le cadre de l&#39;en-tête WS-Security avec l&#39;appel du service Web pour l&#39;authentification des utilisateurs. En règle générale, une application cliente a authentifié un utilisateur mais n’a pas enregistré ses informations d’identification. (Ou l’utilisateur s’est connecté à ce client par le biais d’un mécanisme autre que l’utilisation d’un nom d’utilisateur et d’un mot de passe.) Dans ce cas, l’application cliente doit appeler AEM Forms et se faire passer pour un utilisateur spécifique autorisé à appeler AEM Forms.
 
 Pour vous faire passer pour un utilisateur spécifique, appelez la `AuthenticationManager.getAuthResultOnBehalfOfUser` méthode à l’aide d’un service Web. Cette méthode renvoie une `AuthResult` instance contenant l&#39;assertion SAML de cet utilisateur.
 
-Ensuite, utilisez cette assertion SAML pour appeler tout service nécessitant une authentification. Cette action implique l&#39;envoi de l&#39;assertion dans le cadre de l&#39;en-tête SOAP. Lorsqu’un appel de service Web est effectué avec cette assertion, les AEM Forms identifient l’utilisateur comme étant celui représenté par cette assertion. En d’autres termes, l’utilisateur spécifié dans l’affirmation est l’utilisateur qui appelle le service.
+Ensuite, utilisez cette assertion SAML pour appeler tout service nécessitant une authentification. Cette action implique l&#39;envoi de l&#39;assertion dans le cadre de l&#39;en-tête SOAP. Lorsqu’un appel de service Web est effectué avec cette assertion, AEM Forms identifie l’utilisateur comme étant celui représenté par cette assertion. En d’autres termes, l’utilisateur spécifié dans l’affirmation est l’utilisateur qui appelle le service.
 
 ### Utilisation des classes Apache Axis et de l’authentification SAML {#using-apache-axis-classes-and-saml-based-authentication}
 
 Vous pouvez appeler un service AEM Forms par des classes proxy Java créées à l’aide de la bibliothèque Axis. (Voir [Création de classes de proxy Java à l’aide d’Apache Axis](#creating-java-proxy-classes-using-apache-axis).)
 
-Lors de l’utilisation d’AXIS qui utilise l’authentification SAML, enregistrez le gestionnaire de requêtes et de réponses avec Axis. Apache Axis appelle le gestionnaire avant d’envoyer une demande d’appel aux AEM Forms. Pour enregistrer un gestionnaire, créez une classe Java qui étend `org.apache.axis.handlers.BasicHandler`.
+Lors de l’utilisation d’AXIS qui utilise l’authentification SAML, enregistrez le gestionnaire de requêtes et de réponses avec Axis. Apache Axis appelle le gestionnaire avant d’envoyer une demande d’appel à AEM Forms. Pour enregistrer un gestionnaire, créez une classe Java qui étend `org.apache.axis.handlers.BasicHandler`.
 
 **Création d’un gestionnaire d’assertions avec un axe**
 
@@ -1299,7 +1299,7 @@ Pour enregistrer un gestionnaire avec Axis, créez un fichier client-config.wsdd
 
 **Appeler un service AEM Forms**
 
-L’exemple de code suivant appelle un service AEM Forms à l’aide de l’authentification SAML.
+L’exemple de code suivant appelle un service AEM Forms en utilisant l’authentification SAML.
 
 ```java
  public class ImpersonationExample {
@@ -1351,7 +1351,7 @@ L&#39;architecture WSE utilise les types de données Stratégies, Affirmations e
 
 **Création de l’affirmation et du filtre**
 
-L&#39;exemple de code C# suivant crée des classes de filtrage et d&#39;assertion. Cet exemple de code crée un SamlAssertionOutputFilter. Ce filtre est appelé par la structure WSE avant que la demande SOAP ne soit envoyée aux AEM Forms.
+L&#39;exemple de code C# suivant crée des classes de filtrage et d&#39;assertion. Cet exemple de code crée un SamlAssertionOutputFilter. Ce filtre est appelé par la structure WSE avant que la demande SOAP ne soit envoyée à AEM Forms.
 
 ```java
  class LCSamlPolicyAssertion : Microsoft.Web.ServicES4.Design.PolicyAssertion
@@ -1405,7 +1405,7 @@ Créez une classe pour représenter l&#39;assertion SAML. La tâche principale q
 
 **Appeler un service AEM Forms**
 
-L’exemple de code C# suivant appelle un service Forms en utilisant l’authentification SAML.
+L&#39;exemple de code C# suivant appelle un service Forms en utilisant l&#39;authentification SAML.
 
 ```java
  public class ImpersonationExample
@@ -1497,7 +1497,7 @@ Si vous tentez d’appeler de manière asynchrone une opération de service AEM 
 
 Utilisez ce fichier XML lors de la création de fichiers proxy Java à l’aide de JAX-WS. (Voir [Création de classes de proxy Java à l’aide de JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
-Référencez ce fichier XML lors de l’exécution de l’outil JAX-WS (wsimport.exe) à l’aide de l’option de ligne de commande - `b` . Mettez à jour l’ `wsdlLocation` élément dans le fichier XML de liaison afin de spécifier l’URL des AEM Forms.
+Référencez ce fichier XML lors de l’exécution de l’outil JAX-WS (wsimport.exe) à l’aide de l’option de ligne de commande - `b` . Mettez à jour l’ `wsdlLocation` élément dans le fichier XML de liaison afin de spécifier l’URL d’AEM Forms.
 
 Pour vous assurer que l’appel asynchrone fonctionne, modifiez la valeur de l’URL du point de fin et spécifiez `async=true`. Par exemple, pour les fichiers proxy Java créés avec JAX-WS, spécifiez ce qui suit pour le `BindingProvider.ENDPOINT_ADDRESS_PROPERTY`.
 
@@ -1506,7 +1506,7 @@ Pour vous assurer que l’appel asynchrone fonctionne, modifiez la valeur de l�
 La liste suivante spécifie d’autres services qui ont besoin d’un fichier de liaison personnalisé lorsqu’ils sont appelés de manière asynchrone :
 
 * PDFG 3D
-* Gestionnaire de Tâches
+* Gestionnaire de tâches
 * Application Manager
 * Gestionnaire de répertoires
 * Distiller
@@ -1515,9 +1515,9 @@ La liste suivante spécifie d’autres services qui ont besoin d’un fichier de
 
 ### Différences entre les serveurs d’applications J2EE {#differences-in-j2ee-application-servers}
 
-Parfois, une bibliothèque proxy créée à l’aide d’un serveur d’applications J2EE spécifique n’appelle pas les AEM Forms hébergés sur un autre serveur d’applications J2EE. Prenons l’exemple d’une bibliothèque proxy générée à l’aide de AEM Forms qui est déployée sur WebSphere. Cette bibliothèque proxy ne parvient pas à appeler les services AEM Forms déployés sur le serveur d’applications JBoss.
+Il arrive qu’une bibliothèque proxy créée à l’aide d’un serveur d’applications J2EE spécifique n’appelle pas AEM Forms hébergée sur un autre serveur d’applications J2EE. Prenons l’exemple d’une bibliothèque proxy générée à l’aide d’AEM Forms déployée sur WebSphere. Cette bibliothèque proxy ne parvient pas à appeler les services AEM Forms déployés sur le serveur d’applications JBoss.
 
-Certains types de données AEM Forms complexes, tels que `PrincipalReference`, sont définis différemment lorsque des AEM Forms sont déployés sur WebSphere par rapport à JBoss Application Server. Les différences dans les JDK utilisés par les différents services d’applications J2EE expliquent les différences dans les définitions WSDL. Par conséquent, utilisez des bibliothèques proxy générées à partir du même serveur d’applications J2EE.
+Certains types de données complexes AEM Forms, tels que `PrincipalReference`, sont définis différemment lorsque AEM Forms est déployé sur WebSphere par rapport à JBoss Application Server. Les différences dans les JDK utilisés par les différents services d’applications J2EE expliquent les différences dans les définitions WSDL. Par conséquent, utilisez des bibliothèques proxy générées à partir du même serveur d’applications J2EE.
 
 ### Accès à plusieurs services à l’aide de services Web {#accessing-multiple-services-using-web-services}
 
@@ -1532,7 +1532,7 @@ La liste suivante spécifie les types de données qui ne peuvent pas être parta
 * `Roles`
 * `BLOB`
 
-Pour éviter ce problème, il est recommandé de qualifier complètement les types de données. Prenons l’exemple d’une application .NET qui référence à la fois le service Forms et le service Signature à l’aide d’une référence de service. Les deux références de service contiendront une `BLOB` classe. Pour utiliser une `BLOB` instance, qualifiez l’ `BLOB` objet lorsque vous le déclarez. Cette approche est présentée dans l’exemple de code suivant. Pour plus d’informations sur cet exemple de code, voir Signature [numérique de formulaires](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)interactifs.
+Pour éviter ce problème, il est recommandé de qualifier complètement les types de données. Prenons l’exemple d’une application .NET qui référence à la fois le service Forms et le service Signature à l’aide d’une référence de service. Les deux références de service contiendront une `BLOB` classe. Pour utiliser une `BLOB` instance, qualifiez l’ `BLOB` objet lorsque vous le déclarez. Cette approche est présentée dans l’exemple de code suivant. Pour plus d’informations sur cet exemple de code, voir Signature [numérique d’un Forms](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)interactif.
 
 L’exemple de code C# suivant montre comment signer un formulaire interactif rendu par le service Forms. L’application cliente comporte deux références de service. L’ `BLOB` instance associée au service Forms appartient à l’ `SignInteractiveForm.ServiceReference2` espace de nommage. De même, l’ `BLOB` instance associée au service Signature appartient à l’ `SignInteractiveForm.ServiceReference1` espace de nommage. Le formulaire interactif signé est enregistré en tant que fichier PDF nommé *LoanXFASigned.pdf*.
 
@@ -1749,5 +1749,5 @@ L’exemple de code C# suivant montre comment signer un formulaire interactif re
 
 ### Services commençant par la lettre Je crée des fichiers proxy non valides {#services-starting-with-the-letter-i-produce-invalid-proxy-files}
 
-Le nom de certaines classes de proxy générées par le AEM Forms est incorrect lors de l&#39;utilisation de Microsoft .Net 3.5 et WCF. Ce problème survient lorsque des classes proxy sont créées pour IBMFilenetContentRepositoryConnector, IDPSchedulerService ou tout autre service dont le nom est début avec la lettre I. Par exemple, le nom du client généré dans le cas d&#39;IBMFileNetContentRepositoryConnector est `BMFileNetContentRepositoryConnectorClient`. La lettre que je manque dans la classe proxy générée.
+Le nom de certaines classes de proxy générées par AEM Forms est incorrect lors de l&#39;utilisation de Microsoft .Net 3.5 et WCF. Ce problème survient lorsque des classes proxy sont créées pour IBMFilenetContentRepositoryConnector, IDPSchedulerService ou tout autre service dont le nom est début avec la lettre I. Par exemple, le nom du client généré dans le cas d&#39;IBMFileNetContentRepositoryConnector est `BMFileNetContentRepositoryConnectorClient`. La lettre que je manque dans la classe proxy générée.
 
