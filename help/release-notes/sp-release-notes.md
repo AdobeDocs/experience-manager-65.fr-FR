@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
+source-git-commit: 74606bc3e9c768c3d94b7d05c722980f29e20e0e
 workflow-type: tm+mt
-source-wordcount: '4422'
+source-wordcount: '4418'
 ht-degree: 7%
 
 ---
@@ -47,9 +47,9 @@ Les principales fonctionnalités et améliorations introduites dans Adobe Experi
 
 * Prise en charge des balises de texte Adobe Sign dans le service de conversion Forms automatisé.
 
-* Prise en charge des protocoles SMB 2 et SMB 3.
+* Prise en charge de la conversion des formulaires colorés en formulaires adaptatifs à l’aide de [!DNL Automated Forms Conversion service].
 
-* Prise en charge de la conversion de formulaires colorés en formulaires adaptatifs à l’aide du service de conversion Forms automatisée.
+* Prise en charge des protocoles SMB 2 et SMB 3.
 
 * Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.22.4.
 
