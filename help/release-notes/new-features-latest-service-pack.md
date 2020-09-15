@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
+source-git-commit: 5cf27977d3d94d39c9dfec51eb50778048f76dfd
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2482'
 ht-degree: 6%
 
 ---
@@ -88,6 +88,10 @@ Vous pouvez désormais configurer le [!DNL Experience Manager Forms] serveur pou
 ### Prise en charge Ajoutée des [!DNL Adobe Sign] balises de texte dans le service de conversion automatisée de Forms {#sign-integration-acroform-afcs}
 
 Si un AcroForm inclut des [!DNL Adobe Sign] balises de texte, ces champs sont maintenant reconnus et représentés comme [!DNL Adobe Sign] champs dans le formulaire adaptatif converti à l’aide de [!DNL Automated Forms Conversion service]. Un signataire peut remplir ces champs lors de la signature du formulaire adaptatif.
+
+### Prise en charge de la conversion de PDF forms colorés en formulaires adaptatifs {#colore-PDF-forms}
+
+Vous pouvez utiliser [!DNL Automated Forms Conversion service] pour convertir des PDF forms colorés en formulaires adaptatifs.
 
 ### Prise en charge des protocoles SMB 2 et SMB 3 {#smb-support}
 
