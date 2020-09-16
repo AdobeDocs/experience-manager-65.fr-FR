@@ -3,7 +3,7 @@ title: Rapports sur l’utilisation et le partage de vos ressources numériques.
 description: Rapports sur vos ressources [!DNL Adobe Experience Manager Assets] dans lesquels vous pouvez comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
+source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 47%
@@ -25,7 +25,7 @@ Si un rapport est généré, vous êtes averti par un courrier électronique (fa
 
 ## Condition requise {#prerequisite-for-reporting}
 
-Pour générer des rapports, veillez à ce que :
+Pour générer des rapports, procédez comme suit :
 
 * Activez le service d’enregistrement [!UICONTROL de Événement DAM] Day CQ dans **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > Console **[!UICONTROL Web.]**
 * Sélectionnez les activités ou les événements sur lesquels vous souhaitez effectuer un rapports. Par exemple, pour générer un rapport sur les ressources téléchargées, sélectionnez [!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)].
@@ -40,7 +40,7 @@ Pour générer des rapports, veillez à ce que :
 * Téléchargement
 * Expiration
 * Modification
-* Publier
+* Publication 
 * [!DNL Brand Portal] publish
 * Utilisation du disque
 * Fichiers
@@ -50,7 +50,7 @@ Pour générer des rapports, veillez à ce que :
 
 1. Dans [!DNL Experience Manager] l’interface, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Rapports]**.
 
-![Page Outils pour parcourir le rapport des ressources](assets/AssetsReportNavigation.png)
+   ![Page Outils pour parcourir le rapport des ressources](assets/AssetsReportNavigation.png)
 
 1. On the [!UICONTROL Asset Reports] page, click **[!UICONTROL Create]** from the toolbar.
 1. From the **[!UICONTROL Create Report]** page, choose the report you want to create and click **[!UICONTROL Next]**.
@@ -59,11 +59,12 @@ Pour générer des rapports, veillez à ce que :
 
    >[!NOTE]
    >
-   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Download] report. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
+   >By default, the Content Fragments and link shares are included in the Asset [!UICONTROL Download] report. Sélectionnez l’option appropriée pour créer un rapport de partages de lien ou pour exclure les fragments de contenu du rapport de téléchargement.
 
    >[!NOTE]
    >
-   >Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources sélectionnées individuellement et téléchargées ou téléchargées à l’aide de l’action rapide. Cependant, il n’inclut pas les détails des ressources qui se trouvaient dans un dossier téléchargé.
+   >Le rapport [!UICONTROL Télécharger] affiche uniquement les détails des ressources téléchargées après sélection individuelle ou téléchargées à l’aide de l’action rapide. Toutefois, il n’inclut pas les détails des ressources se trouvant dans un dossier téléchargé.
+
 1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. By default, the folder path is `/content/dam`. Vous pouvez spécifier un autre chemin.
 
    ![Page pour ajouter des détails sur le rapport](assets/report_configuration.png)
@@ -119,7 +120,7 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Téléchargement
 * Expiration
 * Modification
-* Publier
+* Publication 
 * [!DNL Brand Portal] publish
 * Fichiers
 
