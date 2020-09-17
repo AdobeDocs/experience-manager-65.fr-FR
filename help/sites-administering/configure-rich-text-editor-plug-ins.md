@@ -3,9 +3,9 @@ title: 'Configuration des modules externes d’éditeur de texte enrichi '
 description: Découvrez comment configurer les modules externes Adobe Experience Manager Rich Text Editor pour activer des fonctionnalités individuelles.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4398'
 ht-degree: 95%
 
 ---
@@ -731,7 +731,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
       * **Nom** `cssExternal`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
-   * Array of valid **protocols** (including `https://`, `https://`, `file://`, and `mailto:` amongst others)
+   * Tableau de **protocoles** valides. Les protocoles pris en charge sont `http://`, `https://`, `file://`et `mailto:`.
 
       * **Nom** `protocols`
       * **Type** `String[]`
