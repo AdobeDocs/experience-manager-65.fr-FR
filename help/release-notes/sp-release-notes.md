@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
+source-git-commit: 4f6b2bbb58f7f18798eb01a6c8f2cef4b02063a3
 workflow-type: tm+mt
-source-wordcount: '4402'
+source-wordcount: '4413'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ Les principales fonctionnalités et améliorations introduites dans Adobe Experi
 
 * Prise en charge des balises de texte Adobe Sign dans le service de conversion Forms automatisé.
 
-* Prise en charge de la conversion des formulaires colorés en formulaires adaptatifs à l’aide de [!DNL Automated Forms Conversion service].
+* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
 
 * Prise en charge des protocoles SMB 2 et SMB 3.
 
@@ -169,6 +169,8 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 **Problèmes résolus dans les ressources Experience Manager**
 
 [!DNL Adobe Experience Manager] La version 6.5.6.0 [!DNL Assets] apporte des correctifs aux problèmes suivants :
+
+* Les annotations ne sont pas mises en surbrillance lorsqu’elles sont sélectionnées dans la chronologie de la ressource (CQ-4302422).
 
 * La prévisualisation des actifs collatéraux marketing (tels que Brochure, Brochure et Carte de visite) créés à l’aide d’un [!DNL Adobe InDesign] modèle n’affiche pas les sauts de ligne et les sauts de paragraphe (NPR-34268).
 
