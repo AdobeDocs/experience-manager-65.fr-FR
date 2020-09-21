@@ -3,9 +3,9 @@ title: '[ !DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes
 description: Notes de mise à jour des Service Packs de [!DNL Adobe Experience Manager] la version 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
+source-git-commit: 5db4dd7ccc7d722f0503b22fdd5ff9e5508be4ea
 workflow-type: tm+mt
-source-wordcount: '11438'
+source-wordcount: '11482'
 ht-degree: 26%
 
 ---
@@ -74,6 +74,10 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 * Les utilisateurs anonymes peuvent accéder aux fonctions de CRXDE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
+
+>[!IMPORTANT]
+>
+>Il est conseillé aux utilisateurs de Windows de [!DNL Experience Manager desktop app] mettre à niveau vers la version 2.0.3.2 [de l’application de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) bureau pour accéder au référentiel DAM sur [!DNL Adobe Experience Manager 6.5.5.0] l’instance. Ils peuvent rencontrer des problèmes lors de l’accès au référentiel DAM sur l’instance [!DNL Adobe Experience Manager] 6.5.5.0 à l’aide de l’application de bureau version 2.0.2.
 
 **Améliorations de l’accessibilité dans les ressources des Experience Manager**
 
