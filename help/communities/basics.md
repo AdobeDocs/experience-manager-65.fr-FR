@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les composants d’AEM Communities
 seo-title: Notions fondamentales sur les composants d’AEM Communities
-description: Ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
-seo-description: Ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
+description: ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
+seo-description: ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 57%
@@ -47,11 +47,11 @@ For details, see [Configuring Components in Design Mode](../../help/sites-author
 
 Vous trouverez ci-dessous des images de la sélection de quelques composants Communities et de leur affichage dans l’explorateur de composants :
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![conception de composant](assets/component-design.png)
 
 Les composants sélectionnés sont à présent disponibles dans le navigateur de composants :
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![component-design1](assets/component-design1.png)
 
 ## Clientlibs requises {#required-clientlibs}
 
@@ -61,11 +61,11 @@ Lorsque vous ajoutez un composant de communauté à une page, s’il en résulte
 
 ### Example: Initially placed reviews without client libraries... {#example-initially-placed-reviews-without-client-libraries}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![clientlibs1](assets/clientlibs1.png)
 
 ### ... And with client libraries {#and-with-client-libraries}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![clientlibs2](assets/clientlibs2.png)
 
 ## Balisage {#tagging}
 
