@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2492'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ Vous pouvez désormais choisir de publier ou d’annuler la publication de fichi
 
 ### Autres améliorations des ressources {#other-enhancements-assets-6560}
 
-* Les groupes d’utilisateurs de dossiers privés sont maintenant supprimés du référentiel lors de la suppression de dossiers privés. La suppression d’un dossier privé nettoie le référentiel des groupes d’utilisateurs orphelins, qui sont créés chaque fois qu’un dossier privé est créé.
+* Les groupes d’utilisateurs de dossiers privés sont maintenant supprimés du référentiel lors de la suppression de dossiers privés. La suppression d’un dossier privé nettoie le référentiel des groupes d’utilisateurs orphelins, qui sont créés chaque fois qu’un dossier privé est créé. Pour plus d’informations, voir Suppression de groupes d’ [utilisateurs lors de la suppression](#group-removal-on-folder-deletion)de dossiers.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -87,7 +87,7 @@ Vous pouvez désormais configurer le [!DNL Experience Manager Forms] serveur pou
 
 Si un AcroForm inclut des [!DNL Adobe Sign] balises de texte, ces champs sont maintenant reconnus et représentés comme [!DNL Adobe Sign] champs dans le formulaire adaptatif converti à l’aide de [!DNL Automated Forms Conversion service]. Un signataire peut remplir ces champs lors de la signature du formulaire adaptatif.
 
-### Prise en charge de la conversion de PDF forms colorés en formulaires adaptatifs {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
 
 Vous pouvez utiliser [!DNL Automated Forms Conversion service] pour convertir des PDF forms colorés en formulaires adaptatifs.
 
