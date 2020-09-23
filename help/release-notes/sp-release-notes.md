@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4da9481dbd74a8cecf13c51b78c94abc4d48332e
+source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4495'
 ht-degree: 7%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 7%
 | Type | Version du Service Pack |
 | Date | 3 septembre 2020 |
 | URL de téléchargement | [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
-
->[!NOTE]
->
->Une version mise à jour de AEM 6.5 Service Pack 6 est disponible. Si vous avez déjà installé une version antérieure du Service Pack 6, effectuez la mise à niveau vers la dernière version disponible.
 
 ## Éléments inclus dans Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -319,6 +315,8 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les formulaires adaptatifs disposent de certains résolveurs de ressources ouverts. Cela entraîne des échecs d’envoi. Le problème se produit par intermittence (CQ-4299407).
 
+* Lors de la première ouverture de la configuration de champ, l’icône de propriétés ne s’affiche pas (CQ-4296284).
+
 **Processus**
 
 * Lorsqu’un approbateur de processus télécharge une pièce jointe, celle-ci est renommée `undefined` (NPR-33699).
@@ -386,6 +384,10 @@ Effectuez les étapes suivantes pour installer le Service Pack sur une instance 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. Pour savoir comment l’utiliser, voir [Package Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 1. Select the package and click **[!UICONTROL Install]**.
+
+>[!NOTE]
+>
+>En raison d’un problème connu, un Service Pack mis à jour est disponible. Il est recommandé d’installer le package.
 
 >[!NOTE]
 >
