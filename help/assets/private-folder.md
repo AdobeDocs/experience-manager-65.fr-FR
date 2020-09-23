@@ -3,10 +3,10 @@ title: Dossier privé dans [!DNL Adobe Experience Manager Assets]
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 25%
+source-wordcount: '641'
+ht-degree: 22%
 
 ---
 
@@ -67,26 +67,30 @@ Pour créer et partager un dossier privé :
 
 >[!NOTE]
 >
->Pour créer un dossier privé, vous devez disposer des autorisations de lecture et de modification de l’ACL sur le dossier parent sous lequel vous souhaitez créer un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de `/content/dam`. Dans ce cas, commencez par obtenir ces autorisations pour votre ID utilisateur/groupe avant d’essayer de créer des dossiers privés ou d’afficher les paramètres de dossier.
+>To create a private folder, you require Read and Modify [access control permissions](/help/sites-administering/security.md#permissions-in-aem) on the parent folder under which you want to create a private folder. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de `/content/dam`. Dans ce cas, obtenez d’abord ces autorisations pour votre ID utilisateur/groupe avant de tenter de créer des dossiers privés.
 
 ## Suppression de dossiers privés {#delete-private-folder}
 
-Vous pouvez supprimer un dossier privé en le sélectionnant et en sélectionnant l’option [!UICONTROL Supprimer] dans le menu supérieur ou en utilisant la touche Retour arrière de votre clavier.
+Vous pouvez supprimer un dossier en le sélectionnant et en sélectionnant l’option [!UICONTROL Supprimer] dans le menu supérieur ou en utilisant la touche Retour arrière de votre clavier.
 
-### Suppression d’un groupe d’utilisateurs lors de la suppression d’un dossier {#group-removal-on-folder-deletion}
-
-Si vous supprimez un dossier privé à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés. Toutefois, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de [JMX](#group-clean-up-jmx).
+![option de suppression dans le menu supérieur](assets/delete-option.png)
 
 >[!CAUTION]
 >
 >Si vous supprimez un dossier privé du CRXDE Lite, les groupes d’utilisateurs redondants restent dans le référentiel.
 
+>[!NOTE]
+>
+>Si vous supprimez un dossier à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés.
+Toutefois, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de [JMX](#group-clean-up-jmx).
+
 ### Utiliser JMX pour nettoyer les groupes d’utilisateurs inutilisés {#group-clean-up-jmx}
 
 Pour nettoyer le référentiel des groupes d’utilisateurs inutilisés :
 
-1. Ouvrez le JMX pour nettoyer les groupes redondants des ressources `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+1. Ouvrez le JMX pour nettoyer les groupes redondants des ressources de votre instance d’ [!DNL Experience Manager] auteur à partir de `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+Par exemple, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
 
 1. Appelez la `clean` méthode à partir de ce JMX.
 
-Vous pouvez constater que tous les groupes d’utilisateurs redondants ou les groupes générés automatiquement (créés lors de la création d’un dossier privé portant le même nom qu’un groupe précédemment supprimé) sont supprimés du chemin d’accès `/home/groups/mac/default/<user_name>/<folder_name>`.
+Vous pouvez constater que tous les groupes d’utilisateurs redondants ou les groupes générés automatiquement (créés lors de la création d’un dossier portant le même nom qu’un groupe précédemment supprimé) sont supprimés du chemin d’accès `/home/groups/mac/default/<user_name>/<folder_name>`.
