@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1676'
 ht-degree: 46%
 
 ---
@@ -40,7 +40,7 @@ La fonction Blog comporte les éléments suivants :
 
 Cette section de la documentation décrit : :
 
-* Ajouter la fonction de blog à un site AEM
+* ajouter la fonction de blog à un site AEM
 * Paramètres de configuration des composants de blog
 
 >[!NOTE]
@@ -61,19 +61,15 @@ et faites glisser les composants sur la page à l’endroit où le blog doit fig
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear :
+When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear:
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-Et comment `Blog Sidebar` apparaîtra :
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### Configuration du blog {#configuring-blog}
 
 Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![configurer](assets/configure-new.png)
 
 ![Paramètres du blog](assets/blog-configure.png)
 
@@ -103,7 +99,7 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Membres privilégiés autorisés**
 
-   Ajoutez les membres privilégiés autorisés à créer du contenu.
+   ajoutez les membres privilégiés autorisés à créer du contenu.
 
 * **Bloquer le contenu généré par l’utilisateur en mode d’édition d’auteur**
 
@@ -125,7 +121,7 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Sujets par page**
 
-   Définit le nombre d&#39;entrées/commentaires de blog affichés par page. La valeur par défaut est 10.
+   Définit le nombre d&#39;entrées/commentaires de blog affichés par page. La valeur par défaut est de 10.
 
 * **Modéré**
 
@@ -153,7 +149,7 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Types de fichier autorisés**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -307,7 +303,7 @@ Les articles de blog sont visibles sous l’onglet correspondant (Publié, Versi
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’[activités de modération](/help/communities/moderate-ugc.md) (autorisées par la configuration du composant) pour tous les articles et commentaires de blog publiés sur un blog.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![modérateur-page d&#39;accueil](assets/moderator-homepage.png)
 
 #### Membres {#members}
 
@@ -322,15 +318,15 @@ Plus précisément, il est autorisé à:
 * Supprimer leur propre article ou commentaire de blog
 * Signaler les articles ou commentaires sur le blog d&#39;autres internautes
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![membre-page d&#39;accueil](assets/member-homepage.png)
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### Anonyme {#anonymous}
 
 Les visiteurs non inscrits peuvent lire les articles et les commentaires publiés sur un blog et les traduire lorsque cela est possible. Toutefois, ils ne sont pas autorisés à ajouter un article ou un commentaire de blog, ni à marquer les articles ou les commentaires d’autres membres.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![anonyme-user-vue](assets/anonymous-user-view.png)
 
 ## Informations supplémentaires {#additional-information}
 
