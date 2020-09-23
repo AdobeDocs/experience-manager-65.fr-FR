@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2480'
 ht-degree: 6%
 
 ---
@@ -70,7 +70,7 @@ Vous pouvez désormais choisir de publier ou d’annuler la publication de fichi
 
 ### Autres améliorations des ressources {#other-enhancements-assets-6560}
 
-* Les groupes d’utilisateurs de dossiers privés sont maintenant supprimés du référentiel lors de la suppression de dossiers privés. La suppression d’un dossier privé nettoie le référentiel des groupes d’utilisateurs orphelins, qui sont créés chaque fois qu’un dossier privé est créé. Pour plus d’informations, voir Suppression de groupes d’ [utilisateurs lors de la suppression](#group-removal-on-folder-deletion)de dossiers.
+* Les groupes d’utilisateurs associés aux dossiers (privés et non privés) sont maintenant supprimés du référentiel lors de la [suppression de ces dossiers](/help/assets/private-folder.md#delete-private-folder). Toutefois, les groupes d’utilisateurs redondants, orphelins, inutilisés et générés automatiquement peuvent être supprimés du référentiel à l’aide de JMX.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
