@@ -4,10 +4,10 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '9368'
-ht-degree: 64%
+source-wordcount: '9410'
+ht-degree: 63%
 
 ---
 
@@ -538,25 +538,30 @@ Pour plus d’informations sur la création et l’affichage des sous-ressources
 
 Pour supprimer des fichiers, un utilisateur doit disposer d’autorisations de suppression sur `dam/asset`. Si vous disposez uniquement d’autorisations de modification, vous pourrez seulement modifier les métadonnées de la ressource et ajouter des annotations à cette dernière. Toute suppression s’avérera impossible.
 
-Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Pour empêcher les utilisateurs de supprimer des ressources référencées et de laisser des liens rompus, désactivez l’option Forcer la suppression à l’aide d’une incrustation, .
+Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Pour empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus, désactivez l’option Forcer la suppression à l’aide d’une incrustation.
 
-1. Accédez à l’emplacement des ressources que vous souhaitez supprimer.
+Pour supprimer un fichier ou un dossier contenant un fichier :
 
-1. Select the asset, and click **[!UICONTROL Delete]** ![Delete option](assets/do-not-localize/deleteoutline.png) from the toolbar.
+1. Accédez à l’emplacement de la ressource ou du dossier à supprimer.
 
-1. Dans la boîte de dialogue de confirmation, sélectionnez l’une des options suivantes :
+1. Sélectionnez le fichier ou le dossier, puis cliquez sur l’option **** Supprimer ![](assets/do-not-localize/deleteoutline.png) Supprimer de la barre d’outils.
 
-   * **[!UICONTROL Annuler]** pour arrêter l’action
-   * **[!UICONTROL Supprimer]** pour confirmer l’action :
+   Une fois la suppression confirmée :
 
-      * Si la ressource ne comporte aucune référence, elle est supprimée.
-      * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées.** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+   * Si la ressource ne comporte aucune référence, elle est supprimée.
 
+   * If the asset has references, an error-message informs you that **One or more assets are referenced**. You can select **[!UICONTROL Force Delete]** or **[!UICONTROL Cancel]**.
    >[!NOTE]
    >
    >* Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
    >* Il est possible de supprimer un *dossier* contenant des fichiers extraits. Avant de supprimer un dossier, assurez-vous qu’aucun fichier numérique n’est extrait par les utilisateurs.
 
+
+>[!NOTE]
+>
+>Si vous supprimez un dossier à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés.
+>
+>Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être nettoyés du référentiel à l’aide de `clean` la méthode JMX dans votre instance d’auteur (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 ## Téléchargement de ressources {#downloading-assets}
 
