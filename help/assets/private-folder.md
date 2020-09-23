@@ -1,23 +1,27 @@
 ---
-title: Créez et partagez un dossier privé dans [!DNL Adobe Experience Manager].
+title: Dossier privé dans [!DNL Adobe Experience Manager Assets]
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 40%
+source-wordcount: '642'
+ht-degree: 25%
 
 ---
 
 
-# Partage de dossiers privés {#private-folder-sharing}
+# Dossier privé dans [!DNL Adobe Experience Manager Assets] {#private-folder}
 
 You can create a private folder in the [!DNL Adobe Experience Manager Assets] user interface that is available exclusively to you. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
 >[!NOTE]
 >
 >Le dossier privé comporte au moins un membre doté du rôle Propriétaire.
+
+## Création et partage de dossiers privés {#create-share-private-folder}
+
+Pour créer et partager un dossier privé :
 
 1. In the [!DNL Assets] console, click **[!UICONTROL Create]** from the toolbar and then choose **[!UICONTROL Folder]** from the menu.
 
@@ -63,4 +67,26 @@ You can create a private folder in the [!DNL Adobe Experience Manager Assets] us
 
 >[!NOTE]
 >
->Pour pouvoir créer un dossier privé, vous devez disposer d’autorisations ACL en lecture et en modification au niveau du dossier parent dans lequel vous souhaitez créer un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de `/content/dam`. Dans ce cas, commencez par obtenir ces autorisations pour votre ID utilisateur/groupe avant d’essayer de créer des dossiers privés ou d’afficher les paramètres de dossier.
+>Pour créer un dossier privé, vous devez disposer des autorisations de lecture et de modification de l’ACL sur le dossier parent sous lequel vous souhaitez créer un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de `/content/dam`. Dans ce cas, commencez par obtenir ces autorisations pour votre ID utilisateur/groupe avant d’essayer de créer des dossiers privés ou d’afficher les paramètres de dossier.
+
+## Suppression de dossiers privés {#delete-private-folder}
+
+Vous pouvez supprimer un dossier privé en le sélectionnant et en sélectionnant l’option [!UICONTROL Supprimer] dans le menu supérieur ou en utilisant la touche Retour arrière de votre clavier.
+
+### Suppression d’un groupe d’utilisateurs lors de la suppression d’un dossier {#group-removal-on-folder-deletion}
+
+Si vous supprimez un dossier privé à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés. Toutefois, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de [JMX](#group-clean-up-jmx).
+
+>[!CAUTION]
+>
+>Si vous supprimez un dossier privé du CRXDE Lite, les groupes d’utilisateurs redondants restent dans le référentiel.
+
+### Utiliser JMX pour nettoyer les groupes d’utilisateurs inutilisés {#group-clean-up-jmx}
+
+Pour nettoyer le référentiel des groupes d’utilisateurs inutilisés :
+
+1. Ouvrez le JMX pour nettoyer les groupes redondants des ressources `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+
+1. Appelez la `clean` méthode à partir de ce JMX.
+
+Vous pouvez constater que tous les groupes d’utilisateurs redondants ou les groupes générés automatiquement (créés lors de la création d’un dossier privé portant le même nom qu’un groupe précédemment supprimé) sont supprimés du chemin d’accès `/home/groups/mac/default/<user_name>/<folder_name>`.
