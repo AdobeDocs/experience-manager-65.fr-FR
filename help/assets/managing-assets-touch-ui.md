@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2de85f2fc8daaf1cc30a1e12b7c18b20a640c747
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '9370'
+source-wordcount: '9368'
 ht-degree: 64%
 
 ---
@@ -94,7 +94,7 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 >
 >La valeur par défaut lorsque le transfert de blocs est déclenché est de 500 Mo et la taille du bloc est de 50 Mo. Si vous modifiez la configuration [de jetonOak d&#39;](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) Apache Jackrabbit pour la définir sur `timeout configuration` une valeur inférieure au temps nécessaire au téléchargement d&#39;un fichier, vous pouvez alors vous trouver dans une situation de dépassement de délai de session pendant que le chargement de l&#39;actif est en cours. Par conséquent, vous devez modifier le `chunkUploadMinFileSize` et `chunksize`, de sorte que chaque requête de bloc actualise la session.
 >
->Compte tenu du délai d’expiration des informations d’identification, de la latence, de la bande passante et des chargements simultanés attendus, la valeur la plus élevée qui vous permet de vous assurer que les deux éléments suivants sont sélectionnés :
+>Compte tenu du délai d’expiration des informations d’identification, de la latence, de la bande passante et des chargements simultanés attendus, la valeur la plus élevée qui vous permet de vous assurer que les éléments suivants sont sélectionnés :
 >
 >* Assurez-vous que le transfert de blocs est activé pour les fichiers dont la taille risque de provoquer l’expiration des informations d’identification pendant le transfert est en cours.
    >
