@@ -7,10 +7,13 @@ uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: page-authoring
+topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ Cette section vous donne un aperçu des tâches principales que vous exécuterez
 
 Elle traite des sujets suivants :
 
-* [Prise en main](#getting-started):Détail de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
+* [Prise en main](#getting-started): Détail de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
 
-* [Autres actions](#further-actions):Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
+* [Autres actions](#further-actions): Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
 
 ## Prise en main {#getting-started}
 
@@ -52,7 +55,7 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 * [Couper/Copier/Coller un composant](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Annulation et rétablissement des modifications de page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Utilisation du mode Aperçu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (pour avoir un aperçu du contenu avant publication)
-* [Verrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Verrouillage d’une page   ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Déverrouillage d’une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publication d’une page {#publishing-a-page}
