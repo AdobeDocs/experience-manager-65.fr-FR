@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '363'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -80,7 +80,7 @@ Utilisation de l’exemple du didacticiel [d’](getting-started-enablement.md)a
 
    * Par exemple, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* Ajouter un noeud de filtres enfant
+* ajouter un noeud de filtres enfant
 
    * Sélectionner le `catalog`noeud
    * Sélectionner **[!UICONTROL Créer un noeud]**
@@ -89,34 +89,34 @@ Utilisation de l’exemple du didacticiel [d’](getting-started-enablement.md)a
       * Type : `nt:unstructured`
       * Select **[!UICONTROL Save All]**
 
-* Ajouter `se_resource-tags` la propriété au `filters` noeud
+* ajouter `se_resource-tags` la propriété au `filters` noeud
 
    * Sélectionner le `filters` noeud
-   * Ajouter une propriété multi
+   * ajouter une propriété multi
 
       * Nom (name) : `se_resource-tags`
       * Type : Chaîne
       * Valeur : *&lt;entrez un ID de[balise](#pre-filter-tagids)>*
          * Sélectionner **[!UICONTROL plusieurs]**
-         * Sélectionner le **[!UICONTROL Ajoute]**
+         * Sélectionner l&#39; **[!UICONTROL Ajoute]**
 
             * Dans la boîte de dialogue contextuelle, sélectionnez `+` l’option d’ajout d’identifiants de balise préfiltrés.
 
 * Republier le site de la communauté
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-catalog](assets/configure-catalog.png)
 
 #### Identifiants de balise préfiltrés {#pre-filter-tagids}
 
 Les [TagID](../../help/sites-developing/framework.md#tagid) de préfiltre doivent correspondre exactement aux balises appliquées aux ressources d’activation. Elles sont visibles dans le `resources` dossier du site en tant que valeurs de la propriété `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-filtres](assets/configure-catalog1.png)
 
 ### API de référence {#reference-apis}
 
 * [API d&#39;activation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
 
-* [API Rapports](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API rapports](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API Rapports Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API d&#39;analyse de rapports](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 
