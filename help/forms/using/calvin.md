@@ -6,11 +6,11 @@ seo-description: En utilisant Calvin, vous pouvez créer des cas de test dans CR
 uuid: 7bf4fc8f-96df-4407-8d10-cf18880518bd
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 85%
@@ -163,7 +163,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
    * Nom : testForm (le nom de votre formulaire)
    * Type : cq:ClientLibraryFolder
 
-1. Ajoutez les propriétés suivantes au nouveau noeud (ici testForm) pour tester un formulaire adaptatif :
+1. ajoutez les propriétés suivantes au nouveau noeud (ici testForm) pour tester un formulaire adaptatif :
 
    | **Propriété** | **Type** | **Valeur** |
    |---|---|---|
@@ -311,7 +311,7 @@ Les étapes de test de vos formulaires adaptatifs AEM sont similaires aux étape
 * Affichage de suites de tests
 * Exécution de plusieurs tests
 
-## Glossaire    {#glossary}
+## Glossaire  {#glossary}
 
 <table>
  <tbody>
