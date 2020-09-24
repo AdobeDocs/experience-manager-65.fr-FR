@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 3%
@@ -53,7 +53,7 @@ Sur l’auteur, pour passer en mode d’édition, insérez soit `editor.html` , 
 
 >[!NOTE]
 >
->En mode d’édition, les liens d’une page ne sont pas actifs.
+>En mode d’édition, les liens d’une page ne sont pas principaux.
 >
 >Pour accéder à une page de composant, sélectionnez d’abord le mode Prévisualisation pour activer les liens.
 >
@@ -70,25 +70,25 @@ Le guide fournit une liste des composants SCF disponibles pour la prévisualisat
 
 Guide des composants tel qu’il est affiché sur une instance d’auteur en mode d’édition :
 
-![chlimage_1-404](assets/chlimage_1-404.png)
+![community-component1](assets/community-component1.png)
 
 ## Pages de composants {#component-pages}
 
 Sélectionnez un composant dans la liste située le long du côté gauche de la page.
 
-![chlimage_1-405](assets/chlimage_1-405.png)
+![community-component-pages](assets/community-component2.png)
 
 Le corps principal du guide s’affiche :
 
 1. Titre : Nom du composant sélectionné
-1. [Bibliothèques](#client-side-libraries)côté client : liste d’une ou de plusieurs catégories obligatoires
+1. [Bibliothèques](#client-side-libraries)côté client : Liste d’une ou de plusieurs catégories obligatoires
 1. [Inclus](scf.md#add-or-include-a-communities-component): Si le composant peut être inclus dynamiquement, l’état peut être basculé en mode d’édition de l’auteur :
 
    * S’il est ajouté, le texte affiché est le suivant : &quot;Ce composant est inclus via son noeud par.&quot;
    * Si inclus, le texte affiché est : &quot;Ce composant est inclus dynamiquement.&quot;
    * S’il n’est pas inclus, aucun texte n’est affiché.
 
-1. Exemple de composant ou de fonction : instance active du composant ou de la fonction. Si un composant est modifié, il peut l’être avec les modifications apportées aux modèles, CSS et données fournis dans la section d’onglet.
+1. Exemple de composant ou de fonction : une instance principale du composant ou de la fonction. Si un composant est modifié, il peut l’être avec les modifications apportées aux modèles, CSS et données fournis dans la section d’onglet.
 
 >[!NOTE]
 >
@@ -100,11 +100,11 @@ Lors de l’utilisation du guide sur une instance d’auteur, il est possible de
 
 Pour le guide Composants de la communauté, certains paramètres de la boîte de dialogue des composants sont superposés avec l’état de bascule [Inclusible](scf.md#add-or-include-a-communities-component) . Pour basculer entre l&#39;utilisation de la ressource existante ou d&#39;une ressource incluse de manière dynamique, en mode d&#39;édition, sélectionnez le composant et le texte inclus et cliquez sur le doublon pour ouvrir la boîte de dialogue d&#39;édition :
 
-![chlimage_1-406](assets/chlimage_1-406.png)
+![community-component3](assets/community-component3.png)
 
 Sous l’onglet **Modèles** :
 
-![chlimage_1-407](assets/chlimage_1-407.png)
+![community-component4](assets/community-component4.png)
 
 * **Inclure le composant enfant avec sling:include**
 
@@ -152,7 +152,7 @@ Pour tester rapidement les personnalisations, la `scg:showIde`propriété doit �
 
 Utilisation du composant de commentaires comme exemple, sur l’instance d’auteur ou de publication, connecté avec des droits d’administrateur :
 
-1. Accédez à [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Accéder au [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    For example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -173,7 +173,9 @@ Utilisation du composant de commentaires comme exemple, sur l’instance d’aut
 
 1. Notez qu’il existe maintenant 3 onglets pour les modèles, CSS et Données.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
+![community-component5](assets/community-component5.png)
+
+![community-component6](assets/community-component6.png)
 
 ### Onglet Modèles {#templates-tab}
 
