@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +29,7 @@ Pour obtenir des informations de base, visitez :
 
 * [Utilisation des bibliothèques](/help/sites-developing/clientlibs.md) côté client qui fournit des détails d’utilisation ainsi que des outils de débogage
 * [Clientlibs pour SCF](/help/communities/client-customize.md#clientlibs) qui fournit des informations utiles lors de la personnalisation des composants SCF
-* [Blog : Bibliothèques clientes AEM expliquées par exemple](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog : aem bibliothèques clientes expliquées par l’exemple](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Raisons pour lesquelles les bibliothèques clientes sont requises {#why-clientlibs-are-required}
 
@@ -41,32 +41,32 @@ Lorsque les clientlibs requis sont manquants, [l’ajout d’un composant Commun
 
 ### Exemple : Révisions placées sans bibliothèques clientes {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![examens placés](assets/placed-reviews.png)
 
 ### Exemple : Révisions référencées avec des bibliothèques clientes {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![reviews-clientlibs](assets/reviews-clientlibs.png)
 
 ## Identification des bibliothèques clientes requises {#identifying-required-clientlibs}
 
 Les informations essentielles pour les développeurs identifient les clients requis.
 
-En outre, à partir d’une instance AEM, l’accès au Guide [des composants de la](/help/communities/components-guide.md) communauté permet d’accéder à une liste des catégories clientlib requises pour un composant.
+De plus, à partir d’une instance AEM, l’accès au Guide [des composants](/help/communities/components-guide.md) de la communauté permet d’accéder à une liste des catégories clientlib requises pour un composant.
 
 Par exemple, en haut de la page [](https://localhost:4502/content/community-components/en/reviews.html) Révisions, les clientlibs requis répertoriés sont
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![clientlibs-reviews](assets/clientlibs-reviews.png)
 
-## Ajouter les bibliothèques clientes requises {#adding-required-clientlibs}
+## ajouter les bibliothèques clientes requises {#adding-required-clientlibs}
 
 Si vous souhaitez ajouter un composant Communautés à une page, vous devez ajouter les clientlibs requis pour le composant si celui-ci n’est pas déjà présent.
 
 Utilisez [CRXDE|Lite](#using-crxde-lite) pour modifier une liste de clients existante pour une page de site communautaire.
 
-Pour ajouter une bibliothèque cliente pour un site communautaire à l’aide de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Pour ajouter une bibliothèque cliente à un site communautaire à l&#39;aide de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Accédez à [https://&lt;serveur>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Localisez le `clientlibslist` noeud de la page sur laquelle vous souhaitez ajouter le composant :
@@ -92,7 +92,7 @@ Pour ajouter une bibliothèque cliente pour un site communautaire à l’aide de
 >Si le site n&#39;est pas un site communautaire, il faudrait découvrir l&#39;existence ou l&#39;emplacement des bibliothèques clientes utilisées pour le site.
 
 
-L’exemple [Prise en main des AEM Communities](/help/communities/getting-started.md) , où `site-name` est *engagé*, illustre l’affichage de la liste cliente si vous ajoutez le composant de révision :
+A l’aide de l’exemple [Prise en main d’AEM Communities](/help/communities/getting-started.md) , où `site-name` est *engagé*, voici comment la liste cliente s’affichera si vous ajoutez le composant de révision :
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![composant de révision](assets/review-component.png)
 
