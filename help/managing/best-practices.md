@@ -6,12 +6,15 @@ seo-description: La gestion d’un projet de mise en œuvre d’Adobe Experience
 uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 810d4e9fa93bd0913ba6c928a2508587c605c07e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '3316'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +58,7 @@ La feuille de calcul de **pulsation du projet** fournit un aperçu graphique des
 
 ## État par rôle {#status-by-role}
 
-La feuille de calcul **État par rôle** indique le détail de l’[**état **, la** qualité&#x200B;**et la** complétude **](#projectheartbeat)par**[ phase](#phases-and-milestones)** et **[personnage](#persona)**.
+La feuille de calcul **État par rôle** indique le détail de l’[**état**, la **qualité** et la **complétude**](#projectheartbeat) par **[phase](#phases-and-milestones)** et **[personnage](#persona)**.
 
 ## Phases et jalons {#phases-and-milestones}
 
@@ -199,6 +202,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    * la façon dont elles interagiront les unes avec les autres et avec les utilisateurs ;
    * les données à consommer et générées par les applications, plutôt que leur structure interne.
+
    Les définitions doivent englober :
 
    * la structure du code de base pour le projet ;
@@ -214,7 +218,7 @@ La planification du développement est essentielle pour vous assurer que votre p
    Pour l’intégration système, vous devez prévoir (et ensuite implémenter) :
 
    * la façon dont tous les sous-systèmes et [intégrations de solutions](/help/sites-administering/integration.md) seront assemblés pour fonctionner comme un système cohérent ;
-   * Comment les systèmes tiers seront-ils intégrés? ainsi que toutes les considérations spéciales, telles que la gestion hors ligne/en ligne, côté client/côté navigateur ou la gestion du basculement lorsqu’un système tiers est hors service
+   * Comment les systèmes tiers seront-ils intégrés ? ainsi que toutes les considérations spéciales, telles que la gestion hors ligne/en ligne, côté client/côté navigateur ou la gestion du basculement lorsqu’un système tiers est hors service
 
 * **Concept de test**
 
@@ -238,7 +242,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    Avant le développement, tous les processus de support, nécessaires pour déployer, publier, tester et signaler les problèmes doivent être en place.
 
-   Voir aussi le [portail d’assistance d’Adobe](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+   Voir aussi le [portail d’assistance d’Adobe](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
 ### Les opérations et leur planification {#operations-planning-and-operations}
 
@@ -257,6 +261,7 @@ De la même façon, les opérations doivent être correctement planifiées de ma
    * Definition of the use of privileges that impact the publish environment; for example, `replicate`
    * Pour les utilisateurs qui disposent de privilèges minimaux, les processus doivent être définis
    * Users in the `editor` group should not have `admin` rights nor be part of the `administrators` group
+
    For more information, see [User Administration and Security](/help/sites-administering/security.md).
 
 * **Surveillance et maintenance**
@@ -265,6 +270,7 @@ De la même façon, les opérations doivent être correctement planifiées de ma
 
    * ce qui doit être surveillé ;
    * les tâches de maintenance, aussi bien la maintenance standard que les cas spéciaux.
+
    Voir également [Surveillance et maintenance](/help/sites-deploying/monitoring-and-maintaining.md) pour plus d’informations.
 
 * **Migration**
@@ -293,7 +299,7 @@ Le développement est une étape essentielle nécessitant plus qu’un simple co
          * un système de suivi des problèmes, comme Jira ;
          * un environnement de développement intégré (IDE), comme Eclipse ;
          * un outil de gestion des compilations, comme Maven ;
-         * un outil d&#39;intégration continue; comme Jenkins
+         * un outil d&#39;intégration continue ; tels que Jenkins
          * un outil pour le contrôle de version, comme GIT/SVN ;
          * un gestionnaire de référentiel des artefacts de compilation, comme Archiva/Nexus ;
    * les dépendances/l’intégration des logiciels tiers ;
@@ -367,6 +373,7 @@ Une fois la nouvelle application disponible, elle doit subir des tests stricts, 
 
    * la solution remplit les exigences des utilisateurs/clients ;
    * les clients/utilisateurs acceptent la solution (fonction, conception et performances) ;
+
    Il doit exister une liste de contrôle formalisée pour la remise au client, idéalement automatisée et exécutée la nuit sur un instantané. Les résultats doivent être envoyés au chef de projet et à l’équipe de développement.
 
 * **Tests de performance et de charge**
@@ -622,9 +629,9 @@ Pour connaître les meilleures pratiques de déploiement, d’administration, de
 
       * [Développement – les principes de base](/help/sites-developing/the-basics.md)
       * [Concepts MSM](/help/sites-administering/msm.md)
-      * [Langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+      * [Langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 
 * Documentation connexe
 
-   * Adobe Experience Cloud – [Planification pour Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+   * Adobe Experience Cloud – [Planification pour Adobe Experience Cloud](https://helpx.adobe.com/fr/marketing-cloud/how-to/planning.html)
 
