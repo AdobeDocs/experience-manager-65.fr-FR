@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 Les consoles AEM Communities, disponibles dans l’environnement d’auteur à partir du panneau de navigation global, permettent d’accéder à des tâches administratives telles que :
 
 * [Création d’un site communautaire](sites-console.md)
-* Ajouter [des groupes](groups.md) imbriqués dans le site
+* ajouter [des groupes](groups.md) imbriqués dans le site
 * Gestion des modèles de site [de la communauté](sites.md)
 * Gestion des membres [de la communauté](members.md)
 * [Modération](moderate-ugc.md) du contenu généré par l’utilisateur (UGC)
@@ -41,8 +41,6 @@ Dans l’environnement d’auteur, après la connexion avec des droits d’admin
 
 ## Panneau de navigation global {#global-navigation-panel}
 
-![chlimage_1-91](assets/chlimage_1-91.png)
-
 Sélectionnez l’ `Adobe Experience Manager` icône dans le coin supérieur gauche pour ouvrir le panneau de navigation global et accéder à deux icônes :
 
 * [Console de navigation](#navigation-console)
@@ -52,7 +50,7 @@ Sélectionnez l’ `Adobe Experience Manager` icône dans le coin supérieur gau
 
 Pour accéder aux diverses consoles de communautés, à partir de la navigation globale sélectionnez **navigation, Communautés**.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![communautés](assets/communities.png)
 
 * [Sites](sites-console.md)
 
@@ -68,7 +66,7 @@ Pour accéder aux diverses consoles de communautés, à partir de la navigation 
 
 * [Rapports](reports.md)
 
-   La console Rapports permet de générer des rapports sur les affectations, les vues de page et le contenu publié lorsqu’un site communautaire a [activé Adobe Analytics](sites-console.md#analytics). La console n’est disponible que dans l’environnement d’auteur.
+   La console Rapports permet de générer des rapports sur les affectations, les vues de page et le contenu publié (UGC) lorsqu’un site communautaire a [activé Adobe Analytics](sites-console.md#analytics). La console n’est disponible que dans l’environnement d’auteur.
 
 * [Ressources](resources.md)
 
