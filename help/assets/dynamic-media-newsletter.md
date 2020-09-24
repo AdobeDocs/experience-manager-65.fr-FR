@@ -3,12 +3,12 @@ title: Newsletter Dynamic Media
 description: 'La newsletter Dynamic Media d’Experience League est un bulletin d’information mensuel. Il est conçu pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin que vous puissiez commencer à en tirer parti immédiatement. De précieuses ressources d’acquisition de connaissances sont disponibles dans cette newsletter, notamment des informations sur la façon de réaliser des vidéos, des aperçus des solutions et des présentations de certaines fonctionnalités importantes telles que les paramètres d’image prédéfinis, les paramètres prédéfinis de la visionneuse, les profils vidéo, etc. '
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 contentOwner: Rick Brough
-solution: Dynamic Media
+solution: Dynamic Media Classic, Experience Manager
 translation-type: tm+mt
-source-git-commit: aeb1dde163a295047ca515d9a8089238a112cdf4
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '1151'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -50,6 +50,7 @@ Dans cette newsletter, découvrez des ressources précieuses pour développer vo
    * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
    * En savoir plus sur nos audits Dynamic Media Classic gratuits.
    * Faites la connaissance de John Monroe, responsable de programme senior pour les services de la réussite client.
+
    >[!IMPORTANT]
    >
    >Nous voulons nous assurer que nous n’envoyons la newsletter Dynamic Media qu’à ceux qui veulent la recevoir. Pour continuer à recevoir la newsletter après ce numéro, inscrivez-vous [ici](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0).
