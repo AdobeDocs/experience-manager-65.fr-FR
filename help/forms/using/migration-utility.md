@@ -5,14 +5,17 @@ description: L’utilitaire de migration vous permet de migrer des ressources et
 seo-description: L’utilitaire de migration vous permet de migrer des ressources et des documents AEM Forms d’AEM 6.3 Forms ou versions antérieures vers AEM 6.4 Forms.
 uuid: a3fdf940-7fc2-441c-91c8-ad66ba47e5f2
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1809'
+ht-degree: 71%
 
 ---
 
@@ -36,15 +39,15 @@ You can [upgrade](../../forms/using/upgrade.md) to the latest version of AEM For
 
 **En cas de mise à niveau statique**
 
-Si vous avez effectué une mise à niveau statique, l’instance mise à niveau contient déjà les ressources et les documents. Toutefois, afin de pouvoir utiliser les ressources et les documents, vous devez installer le [package de compatibilité AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (comprenant le package de compatibilité Correspondence Management)
+Si vous avez effectué une mise à niveau statique, l’instance mise à niveau contient déjà les ressources et les documents. Toutefois, afin de pouvoir utiliser les ressources et les documents, vous devez installer le [package de compatibilité AEMFD](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) (comprenant le package de compatibilité Correspondence Management)
 
 Vous devez ensuite les mettre à jour en [exécutant l’utilitaire de migration](#runningmigrationutility).
 
 **En cas d’installation dynamique**
 
-If it is an out of place (fresh) installation, before you can use the assets and documents, you will need to install [AEMFD Compatibility package](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (includes the Correspondence Management Compatibility package).
+If it is an out of place (fresh) installation, before you can use the assets and documents, you will need to install [AEMFD Compatibility package](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) (includes the Correspondence Management Compatibility package).
 
-Then you need to import your asset package (zip or cmp) on the new setup and then update the assets and documents by [running the Migration utility](#runningmigrationutility). Adobe recommande de créer de nouveaux actifs sur la nouvelle configuration uniquement après l’exécution de l’utilitaire de migration.
+Then you need to import your asset package (zip or cmp) on the new setup and then update the assets and documents by [running the Migration utility](#runningmigrationutility). adobe recommande de créer de nouveaux actifs sur la nouvelle configuration uniquement après avoir exécuté l’utilitaire de migration.
 
 En raison de changements [liés à la rétrocompatibilité](/help/sites-deploying/backward-compatibility.md), les emplacements de quelques dossiers dans crx-repository ont changé. Exportez et importez manuellement les dépendances (bibliothèques et ressources personnalisées) de la configuration précédente vers un nouvel environnement.
 
@@ -69,7 +72,7 @@ Pour les ressources de Correspondence Management :
 
 ### Exécution de l’utilitaire de migration {#runningmigrationutility}
 
-Exécutez l’utilitaire de migration avant toute modification ou création de ressources. Nous vous recommandons de ne pas exécuter l’utilitaire après une modification ou création de ressources. Assurez-vous que l’interface utilisateur Correspondence Management ou Ressources de formulaires adaptatifs n’est pas ouverte pendant l’exécution du processus de migration.
+Exécutez l’utilitaire de migration avant toute modification ou création de ressources. Nous vous recommandons de ne pas exécuter l’utilitaire après une modification ou création de ressources. Assurez-vous que l’interface utilisateur Correspondence Management ou Ressources Forms adaptatives n’est pas ouverte pendant l’exécution du processus de migration.
 
 Lorsque vous exécutez l’utilitaire de migration pour la première fois, un journal est créé avec le chemin et le nom suivants : \[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log. Ce journal conserve les informations de migration mises à jour de Correspondence Management et des formulaires adaptatifs, telles que le déplacement des ressources.
 
@@ -99,6 +102,7 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
       * Thèmes
       * Lettres
       * Dictionnaires de données
+
    >[!NOTE]
    >
    >Pendant la migration des actifs, des messages d’avertissement tels que « Conflit détecté pour ... » peuvent s’afficher. Ces messages indiquent que les règles de certains composants des formulaires adaptatifs n’ont pas pu être migrées. Par exemple, si le composant possède un événement qui contient à la fois des règles et des scripts, si les règles se produisent après un script, aucune des règles du composant n’est migrée. Cependant, de telles règles peuvent être migrées en ouvrant l’éditeur de règles dans la création de formulaires adaptatifs.
@@ -108,7 +112,7 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
    >
    >
    >
-   >    * Pour migrer des règles et des scripts (non requis si la mise à niveau de la version 6.3) dans des composants personnalisés, appuyez sur Migration des composants personnalisés des formulaires adaptatifs, puis, dans l’écran suivant, appuyez sur Démarrer la migration. Les éléments suivants sont migrés : >
+   >    * Pour migrer des règles et des scripts (non requis si la mise à niveau de la version 6.3) dans des composants personnalisés, appuyez sur Migration des composants personnalisés de Forms adaptatif et, dans l’écran suivant, appuyez sur Migration des Débuts. Les éléments suivants sont migrés :    >
       >
       >
       >        
@@ -117,14 +121,15 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
       >        * Scripts créés à l’aide de l’onglet Script dans l’interface utilisateur de la version 6.1 et versions antérieures
    >
    >
-   >    * Pour migrer des modèles (non requis si la mise à niveau est effectuée à partir des versions 6.3 et 6.4), appuyez sur Migration de modèles de formulaires adaptatifs, puis, dans l’écran suivant, appuyez sur Démarrer la migration. Les éléments suivants sont migrés :
+   >    * Pour migrer des modèles (non requis si la mise à niveau est effectuée à partir des versions 6.3 et 6.4), appuyez sur Migration de modèles Forms adaptatif et, dans l’écran suivant, appuyez sur Migration de Débuts. Les éléments suivants sont migrés :
+
       >
       >
       >
       >        
 
 
-      * Anciens modèles : modèles de formulaires adaptatifs créés sous /apps à l’aide d’AEM Forms 6.1 ou version antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
+      * Anciens modèles : modèles de formulaires adaptatifs créés sous /apps à l’aide d’AEM version Forms 6.1 ou antérieure. Ceci inclut les scripts qui ont été définis dans les composants du modèle.
       >        * Nouveaux modèles - Modèles de formulaires adaptatifs créés à l’aide de l’éditeur de modèles sous /conf. Cela inclut la migration des règles et des scripts créés à l’aide de l’éditeur de règles.
 
 
@@ -135,7 +140,8 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
    * To migrate adaptive form templates, tap **Adaptive Forms Template Migration** and in the Custom Components Migration page, tap **Start Migration**. Les éléments suivants sont migrés :
 
       * Les modèles de formulaire adaptatif créés sous /apps ou /conf à l’aide de l’éditeur de modèles AEM.
-   * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous /conf). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans /etc sont déplacés vers /conf. Si vous ne disposez d’aucune personnalisation des services Cloud dépendant des chemins hérités (/etc), il est recommandé d’exécuter l’utilitaire de migration juste après la mise à niveau vers la version 6.5 et d’utiliser l’interface utilisateur tactile de configuration Cloud pour tout travail ultérieur. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (/conf), puis exécutez l’utilitaire de migration.
+   * Migrez les services de configuration cloud d’AEM Forms pour exploiter le nouveau paradigme de service cloud contextuel comprenant l’interface utilisateur tactile (sous /conf). Lorsque vous migrez les services de configuration cloud d’AEM Forms, les services cloud dans /etc sont déplacés vers /conf. Si vous ne disposez d’aucune personnalisation des services de cloud qui dépend des chemins hérités (/etc), il est recommandé d’exécuter l’utilitaire de migration juste après la mise à niveau vers la version 6.5 et d’utiliser l’interface utilisateur tactile de configuration de cloud pour toute autre tâche. Si vous disposez déjà de personnalisations de services cloud, continuez à utiliser l’interface utilisateur classique dans la configuration mise à niveau jusqu’à ce que les personnalisations soient mises à jour et concordent avec les chemins migrés (/conf), puis exécutez l’utilitaire de migration.
+
    To migrate **AEM Forms cloud services**, which include the following, tap AEM Forms Cloud Configuration Migration (cloud config migration is independent of AEMFD Compatibility package), tap AEM Forms Cloud Configurations Migration and then on the Configuration Migration page, tap **Start Migration**:
 
    * Services cloud du modèle de données de formulaire
@@ -154,10 +160,12 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
       * Chemin d’accès source : /etc/cloudservices/typekit
       * Chemin d’accès cible : /conf/global/settings/cloudconfigs/typekit
+
    La fenêtre du navigateur affiche les éléments suivants pendant le processus de migration :
 
    * Lorsque les actifs sont mis à jour : mise à jour des actifs effectuée avec succès.
    * Une fois la migration terminée : migration des actifs terminée.
+
    Lorsqu’il est exécuté, l’utilitaire de migration effectue les opérations suivantes :
 
    * **Ajoute les balises aux actifs** : ajoute la balise « Correspondence Management : actifs migrés » / « Formulaires adaptatifs : actifs migrés » aux actifs migrés, afin que les utilisateurs puissent identifier les actifs migrés. Lorsque vous exécutez l’utilitaire de migration, tous les actifs existants du système sont marqués comme migrés.
@@ -185,7 +193,7 @@ Lorsque vous exécutez l’utilitaire de migration pour la première fois, un jo
 
 Après avoir exécuté l’utilitaire de migration, effectuez les tâches de gestion interne suivantes :[](../../forms/using/import-export-forms-templates.md)
 
-1. Assurez-vous que la version XFA des mises en page et des mises en page de fragments est 3.3 ou ultérieure. Si vous utilisez des mises en page et des mises en page de fragments d’une ancienne version, il se peut que le rendu de la lettre pose problème. Pour mettre à jour une version d’un XFA plus ancien vers la dernière version, procédez comme suit :
+1. Assurez-vous que la version XFA des mises en page et des mises en page de fragments est 3.3 ou ultérieure. Si vous utilisez des mises en page et des mises en page de fragments d’une version antérieure, il se peut que le rendu de la lettre pose problème. Pour mettre à jour une version d’un XFA plus ancien vers la dernière version, procédez comme suit :
 
    1. [Téléchargez XFA sous la forme d’un fichier zip](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) depuis l’interface utilisateur de Forms.
    1. Extrayez le fichier.
