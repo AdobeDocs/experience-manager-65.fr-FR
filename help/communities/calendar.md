@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 42%
@@ -27,7 +27,7 @@ La fonction Calendrier offre des informations relatives aux événements de la c
 
 Cette section de la documentation décrit :
 
-* Ajouter la fonction de calendrier à un site AEM
+* ajouter la fonction Calendrier à un site AEM
 * Configuration settings for `Calendar` components
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
@@ -42,15 +42,15 @@ For necessary information, visit [Communities Components Basics](/help/communiti
 
 When the [required client-side libraries](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![calendar-component](assets/calendar-component.png)
 
 ### Configuration du calendrier {#configuring-calendar}
 
 Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![configurer](assets/configure-new.png)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-calendar](assets/configure-calendar1.png)
 
 #### Onglet Settings {#settings-tab}
 
@@ -90,7 +90,7 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Types de fichier autorisés**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -98,7 +98,7 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Types autorisés d’image de couverture**
 
-   liste séparée par des virgules des extensions de fichiers d’image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
+   Liste séparée par des virgules des extensions de fichiers d’image avec le séparateur &quot;point&quot;. La valeur par défaut est `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **Autoriser les réponses à thème**
 
@@ -193,7 +193,7 @@ Les autres choix varient selon que le visiteur est modérateur, administrateur, 
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’[activités de modération](/help/communities/moderate-ugc.md) (autorisées par la configuration du composant) pour tous les événements et commentaires de calendrier publiés pour un événement.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![modérateurs-vue](assets/moderators-view.png)
 
 #### Membres {#members}
 
@@ -207,15 +207,15 @@ Plus précisément, il est autorisé à:
 * Supprimer leur propre événement de calendrier ou commentaire
 * Marquer les événements ou commentaires du calendrier d’autres utilisateurs
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![create-événement](assets/configure-calendar2.png)
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![événement-post](assets/configure-calendar3.png)
 
 #### Anonyme {#anonymous}
 
 Les visiteurs non inscrits peuvent lire les événements de calendrier et les traduire lorsque cela est possible. Toutefois, ils ne sont pas autorisés à ajouter un événement ou un commentaire de calendrier, ni à marquer les événements ou les commentaires d’autres membres.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![anonyme-user-vue](assets/anonymous-user-view1.png)
 
 ## Informations supplémentaires {#additional-information}
 
