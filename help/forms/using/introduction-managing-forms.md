@@ -6,11 +6,11 @@ seo-description: AEM Forms met à la disposition des utilisateurs des outils des
 uuid: 2275a0b6-b31e-4d8e-8154-ccdfff3705aa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: c0e4c9bb-e12a-4f9a-a8fa-1a8ad41d3995
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8d352255ace00499412a21564f45f61f45060f4d
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 69%
@@ -53,7 +53,7 @@ The create button is the starting point of the process of creating or uploading 
 
 * **Fragment de formulaire adaptatif :** bien que chaque formulaire soit conçu pour un rôle spécifique, certains segments sont communs à la plupart des formulaires, comme les informations personnelles telles que le nom et l’adresse, les informations relatives à la famille et aux revenus, etc. Vous pouvez créer un actif pour les sections de ce type.  Ces segments réutilisables et autonomes sont appelés fragments de formulaire adaptatif. Pour plus de détails, l’article relatif aux [fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md).
 
-* **Jeu de formulaires :** un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés aux utilisateurs finaux comme un ensemble unique de formulaires. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, les formulaires passent facilement d’un formulaire à l’autre. A la fin, un utilisateur peut envoyer tous les formulaires, en tant qu’entité unique, en un seul clic. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](../../forms/using/formset-in-aem-forms.md).
+* **Jeu de formulaires :** un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés aux utilisateurs finaux comme un ensemble unique de formulaires. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, les formulaires passent facilement d’un formulaire à l’autre. À la fin, un utilisateur peut envoyer tous les formulaires, en un seul clic, en tant qu’entité. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
 * **Dossier :**[!DNL Forms]l’interface utilisateur d’AEM utilise des dossiers pour classer les ressources. Elle prend en charge deux types de dossiers :
 
