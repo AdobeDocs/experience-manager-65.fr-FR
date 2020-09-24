@@ -7,11 +7,14 @@ uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: testing
+topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 71%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 
 >[!NOTE]
 >
->A partir d’AEM 6.5, la structure de test de l’interface utilisateur hobbes.js est obsolète. Adobe n’envisage pas d’apporter d’autres améliorations et recommande aux clients d’utiliser l’automatisation du sélénium.
+>A partir de AEM version 6.5, la structure de test de l’interface utilisateur de hobbes.js est obsolète. adobe n&#39;envisage pas d&#39;apporter d&#39;autres améliorations et recommande aux clients d&#39;utiliser l&#39;automatisation du sélénium.
 >
 >See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
 
-AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit une API JavaScript pour la création de tests.
+AEM fournit un framework pour l’automatisation des tests pour votre IU AEM. Grâce au framework, vous développez et exécutez des tests d’IU directement dans un navigateur Web. La structure fournit une API javascript pour la création de tests.
 
-La structure de test AEM utilise Hobbes.js, une bibliothèque de tests écrite en JavaScript. La structure Hobbes.js a été développée pour tester AEM dans le cadre du processus de développement. Le framework est aujourd’hui disponible au public pour tester les applications AEM.
+La structure de test AEM utilise Hobbes.js, une bibliothèque de test écrite en JavaScript. Le cadre de Hobbes.js a été développé pour tester AEM dans le cadre du processus de développement. Le framework est aujourd’hui disponible au public pour tester les applications AEM.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Lors de l’utilisation de tests automatisés dans AEM, il est important de comp
 | Action | An **Action** is a specific activity on a web page such as clicking a link or a button. |
 |---|---|
 | Cas de test | Un cas **de** test est une situation spécifique qui peut être constituée d’une ou de plusieurs **actions**. |
-| Suite de tests | Une suite de **tests** est un groupe de cas **de** test associés qui testent ensemble un cas d’utilisation spécifique. |
+| Suite de tests | Une suite **de** tests est un groupe de cas **de** test connexes qui testent ensemble un cas d&#39;utilisation spécifique. |
 
 ## Exécution de tests {#executing-tests}
 
@@ -109,8 +112,8 @@ Pour plus d’informations sur la création de vos propres suites de tests, repo
 1. Right-click the `/etc/clientlibs` folder and click **Create > Create Folder**. Tapez `myTests` comme nom et cliquez sur **OK**.
 1. Right-click the `/etc/clientlibs/myTests` folder and click **Create > Create Node**. Entrez les valeurs de propriété suivantes, puis cliquez sur **OK** :
 
-   * Nom: `myFirstTest`
-   * Type: `cq:ClientLibraryFolder`
+   * Nom : `myFirstTest`
+   * Type : `cq:ClientLibraryFolder`
 
 1. Ajoutez les propriétés suivantes au nœud myFirstTest :
 
