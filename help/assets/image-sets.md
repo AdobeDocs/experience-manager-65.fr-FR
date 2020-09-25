@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '2076'
 ht-degree: 96%
@@ -117,7 +117,7 @@ Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou 
 
 >[!NOTE]
 >
->Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+>Vous pouvez également créer des visionneuses d’images automatiquement par l’intermédiaire des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >**Important :** Les ensembles par lot sont créés par le système IPS (Image Production System) dans le cadre de l’ingestion des ressources et sont disponibles uniquement dans le mode Scene7 de Dynamic Media.
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement des ressources une fois qu’elles ont été ajoutées.
@@ -168,11 +168,11 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
    >
    >Lors de la création de la visionneuse d’images, vous pouvez modifier la miniature de la visionneuse d’images ou autoriser AEM à la sélectionner automatiquement en fonction des fichiers de la visionneuse d’images. Pour sélectionner une miniature, appuyez sur **[!UICONTROL Modifier la miniature]** au-dessus du champ Titre de la page de l’éditeur de visionneuse d’images, puis sélectionnez une image (vous pouvez également accéder à d’autres dossiers pour rechercher des images). Si vous avez sélectionné une miniature, puis souhaitez qu’AEM en génère une depuis la visionneuse d’images, sélectionnez **[!UICONTROL Basculer vers]** **[!UICONTROL les miniatures automatiques.]**
 
-1. Cliquez sur **[!UICONTROL Save (Enregistrer).]** La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
+1. Cliquez sur **[!UICONTROL Save.]** La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
 
 ## Affichage de visionneuses d’images  {#viewing-image-sets}
 
-Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating%20batch%20set%20presets%20to%20auto-generate%20image%20sets%20and%20spin%20sets).
+Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 >[!IMPORTANT]
 >
