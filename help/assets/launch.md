@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '6623'
 ht-degree: 97%
@@ -133,7 +133,7 @@ Voir [Installation et configuration des extensions](#installing-and-setup-of-ext
 
 ## Utilisation de l’extension Visionneuses Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
-Comme indiqué dans [Cas d’utilisation de l’intégration](#use%20cases%20for%20the%20integration), il est possible d’effectuer le suivi des visionneuses Dynamic Media avec la nouvelle intégration d’Adobe Launch dans AEM Sites et à l’aide du code intégré.
+Comme indiqué dans [Cas d’utilisation de l’intégration](#use-cases-for-the-integration), il est possible d’effectuer le suivi des visionneuses Dynamic Media avec la nouvelle intégration d’Adobe Launch dans AEM Sites et à l’aide du code intégré.
 
 ### Suivi des visionneuses Dynamic Media dans AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -149,7 +149,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 Les clients qui n’utilisent pas AEM Sites, ou n’incorporent pas les visionneuses Dynamic Media dans des pages web en dehors d’AEM Sites, ou les deux, peuvent toujours utiliser l’intégration d’Adobe Launch.
 
-Vous devez suivre les étapes de configuration des sections [Configuration d’Adobe Analytics](#configuringadobeanalytics) et [Configuration d’Adobe Launch](#configuringadobelaunch). Toutefois, les étapes de configuration liées à AEM ne sont pas nécessaires.
+Vous devez suivre les étapes de configuration des sections [Configuration d’Adobe Analytics](#configuring-adobe-analytics-for-the-integration) et [Configuration d’Adobe Launch](#configuring-adobe-launch-for-the-integration). Toutefois, les étapes de configuration liées à AEM ne sont pas nécessaires.
 
 Une fois la configuration appropriée effectuée, vous pouvez ajouter la prise en charge d’Adobe Launch à une page web à l’aide d’une visionneuse Dynamic Media.
 
@@ -162,7 +162,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **Pour effectuer le suivi des visionneuses Dynamic Media à l’aide du code intégré**:
 
 1. Préparez une page web sur laquelle vous voulez incorporer une visionneuse Dynamic Media.
-1. Obtenez le code intégré de la bibliothèque Adobe Launch en vous connectant d’abord à Adobe Launch (voir [Configuration d’Adobe Launch](#configuringadobelaunch)).
+1. Obtenez le code intégré de la bibliothèque Adobe Launch en vous connectant d’abord à Adobe Launch (voir [Configuration d’Adobe Launch](#configuring-adobe-launch-for-the-integration)).
 1. Cliquez sur **[!UICONTROL Propriété]**, puis sur l’onglet **[!UICONTROL Environnements]**.
 1. Sélectionnez le niveau Environnement correspondant à l’environnement de la page web. Ensuite, dans la colonne **[!UICONTROL Installer]**, cliquez sur l’icône en forme de boîte.
 1. Dans la boîte de dialogue **[!UICONTROL Instructions d’installation web]**, copiez le code intégré complet de la bibliothèque Adobe Launch, ainsi que les balises `<script/>` qui l’entourent.
