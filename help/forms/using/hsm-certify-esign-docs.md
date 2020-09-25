@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 86%
 
 ---
 
@@ -54,8 +57,7 @@ Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes 
    ```shell
    sling.bootdelegation.sun=sun.*,com.sun.*,sun.misc.*
    sling.bootdelegation.ibm=com.ibm.xml.*,com.ibm.*
-   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
-   sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
+   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*  
    ```
 
 1. Enregistrez et fermez le fichier sling.properties.
@@ -91,7 +93,7 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 >[!NOTE]
 >
->Pour passer à l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification Reader Extensions avant de mettre à jour des informations d’identification expirées ou d’évaluation.
+>Pour passer à l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification d’extensions de Reader avant de mettre à jour des informations d’identification expirées ou d’évaluation.
 
 ## Création d’un alias pour le périphérique{#configuredeviceinaemconsole} 
 
@@ -104,12 +106,14 @@ L’alias contient l’ensemble des paramètres dont a besoin un périphérique 
    * **Chemin du DLL** : spécifiez le chemin d’accès complet à la bibliothèque cliente de votre module HSM ou etoken sur le serveur. Par exemple, C:\Program Files\LunaSA\cryptoki.dll. Dans un environnement organisé en grappe, ce chemin d’accès doit être identique pour l’ensemble des serveurs de la grappe.
    * **Code secret HSM** : indiquez le mot de passe requis pour accéder à la clé du module.
    * **Id d’emplacement HSM** : indiquez un identifiant d’emplacement de type entier. L’ID d’emplacement est défini pour les clients de façon individuelle. Si vous enregistrez un second ordinateur sur une partition différente (par exemple, HSMPART2 sur le même module HSM), l’emplacement 1 est associé à la partition HSMPART2 pour ce client.
+
    >[!NOTE]
    >
    >Lors de la configuration d’Etoken, spécifiez une valeur numérique pour le champ d’ID d’emplacement HSM. Une valeur numérique est nécessaire pour que les opérations de signature fonctionnent.
 
    * **Certificat SHA1** : indiquez la valeur SHA1 (empreinte numérique) du fichier de clé publique (.cer) pour les informations d’identification utilisées. Veillez à ce que la valeur SHA1 ne contienne aucun espace. Si vous utilisez un certificat physique, cette valeur n’est pas requise.
    * **Type de module HSM** : sélectionnez l’éditeur du module HSM (Luna ou autre) ou eToken.
+
    Cliquez sur **Enregistrer**. Le module de sécurité matérielle est configuré pour AEM Forms. Désormais, vous pouvez utiliser le module de sécurité matérielle avec AEM Forms pour signer ou certifier des documents.
 
 ## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module  {#programatically}
