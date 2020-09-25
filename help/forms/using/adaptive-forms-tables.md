@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2301'
+source-wordcount: '2302'
 ht-degree: 79%
 
 ---
@@ -159,11 +159,11 @@ Alors que les tableaux et les lignes ne prennent en charge que les expressions d
 
 L’expression de visibilité d’un tableau ou d’une ligne peut être définie dans l’onglet Propriétés du panneau de la boîte de dialogue Modifier le composant correspondant. Les expressions pour une cellule peuvent être définies dans l’onglet Script de la boîte de dialogue Modifier le composant correspondant.
 
-Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)
+Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html)
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
+Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. aem forms offre deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
 
 Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
