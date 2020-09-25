@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2766'
+source-wordcount: '2767'
 ht-degree: 77%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 77%
 
 Les formulaires adaptatifs facilitent et optimisent le remplissage des formulaires pour les utilisateurs finaux à l’aide de fonctions de script dynamique. Il vous permet d’écrire des expressions pour ajouter divers comportements tels que des champs et panneaux dynamiques d’affichage/masquage. Il vous permet également d’ajouter des champs calculés, de rendre les champs en lecture seule, d’ajouter une logique de validation, etc. Le comportement dynamique se base sur les entrées de l’utilisateur ou les données pré-renseignées.
 
-JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)
+JavaScript est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html)
 
 ## Recommandations relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
@@ -51,13 +51,13 @@ Dans les formulaires adaptatifs, vous pouvez écrire des expressions pour ajoute
 * **[Expressions d’accès](#access-expression-enablement-expression)** : pour activer/désactiver un champ.
 * **[Expressions de calcul](#calculate-expression)** : pour calculer automatiquement la valeur d’un champ.
 * **[Expression de clic](#click-expression)** : pour gérer les actions en utilisant l’événement clic d’un bouton.
-* **[Script d’initialisation](#initialization-script) :**effectuez une action lors de l’initialisation d’un champ.
+* **[Script d’initialisation](#initialization-script) :** effectuez une action lors de l’initialisation d’un champ.
 * **[Expression d’options](#options-expression)** : pour remplir de façon dynamique une liste déroulante.
 * **[Expression récapitulative](#summary)** : pour calculer de façon dynamique le titre d’un accordéon.
 * **[Expressions de validation](#validate-expression)** : pour valider un champ.
-* **[Script](#value-commit-script)de validation de valeur :**pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
+* **[Script](#value-commit-script)de validation de valeur :** pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
 * **[Expression de visibilité](#visibility-expression)** : pour contrôler la visibilité d’un champ et d’un panneau.
-* **[expression](#step-completion-expression)**de fin d’étape : pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
+* **[Expression](#step-completion-expression)** de fin d’étape : pour empêcher un utilisateur de passer à l’étape suivante d’un assistant.
 
 ### Expression d’accès (expression d’activation) {#access-expression-enablement-expression}
 
@@ -252,7 +252,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->Dans AEM, il est recommandé d’écrire du code dans une bibliothèque cliente et de l’inclure dans votre page (header.jsp ou footer.jsp de la page).
+>En AEM, il est recommandé d’écrire du code dans une bibliothèque cliente et de l’inclure dans votre page (header.jsp ou footer.jsp de la page).
 
 Pour utiliser GuideBridge après l’initialisation du formulaire (l’événement `bridgeInitializeComplete` est distribué), obtenez l’instance GuideBridge à l’aide de `window.guideBridge`. Vous pouvez vérifier l’état d’initialisation de GuideBridge à l’aide de l’API `guideBride.isConnected`.
 
