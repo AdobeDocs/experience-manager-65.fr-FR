@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
+source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 75%
@@ -160,8 +160,7 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
    ```shell
-   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
-   sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
+   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*  
    ```
 
 1. Enregistrez et fermez le fichier, puis démarrez l’instance AEM.
@@ -173,7 +172,7 @@ Effectuez les étapes suivantes sur toutes les instances d’auteur et de public
 
 1. Ouvrez AEM Configuration Manager dans une fenêtre de navigateur. L’URL par défaut est `https://'[server]:[port]'/system/console/configMgr`.
 1. Recherchez **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** et ouvrez la configuration.
-1. Add the **sun.util.calendar** package to the **allowlist** field. Cliquez sur **Enregistrer**.
+1. Add the **sun.util.calendar** package to the **allowlist** field. Cliquez sur **Save**.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
 
 ### Configurations post-installation facultatives {#optional-post-installation-configurations}
@@ -204,7 +203,7 @@ La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès
 Effectuez les étapes suivantes pour configurer le cache de formulaires adaptatifs :
 
 1. Go to AEM web console configuration manager at https://&#39;[server]:[port]&#39;/system/console/configMgr.
-1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   Cliquez sur **Enregistrer**.
+1. Cliquez sur la **configuration de canal web de communication interactive de formulaire adaptatif** pour éditer ses valeurs de configuration. In the edit configuration values dialog, specify the maximum number of forms or documents an instance of the AEM Forms server can cache in the **Number of Adaptive Forms** field. La valeur par défaut est 100.   Cliquez sur **Save**.
 
    >[!NOTE]
    >
