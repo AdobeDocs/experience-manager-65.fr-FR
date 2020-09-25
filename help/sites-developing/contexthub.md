@@ -10,7 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 78%
 
 ---
 
@@ -31,12 +34,12 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 
 ## Persistance {#persistence}
 
-ContextHub stocke les données de contexte de persistance sur le client. L’API Javascript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données, le cas échéant. En tant que tel, ContextHub représente une couche de données sur vos pages.
+ContextHub stocke les données de contexte de persistance sur le client. L’API Javascript ContextHub vous permet d’accéder aux magasins pour créer, mettre à jour et supprimer des données si nécessaire. En tant que tel, ContextHub représente une couche de données sur vos pages.
 
 Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 
 * ContextHub fournit plusieurs [exemples de types de magasin](/help/sites-developing/ch-samplestores.md).
-* Utilisez les consoles AEM pour [créer des magasins](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* Utilisez les consoles AEM pour [créer des magasins](ch-configuring.md#creating-a-contexthub-store).
 * Developers can [create custom store types](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Les développeurs peuvent [accéder aux données du magasin](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via Javascript.
 
@@ -51,7 +54,7 @@ La barre d’outils [ContextHub](/help/sites-authoring/ch-previewing.md) permet 
 Chaque module d’IU ContextHub est une instance d’un type de module prédéfini :
 
 * ContextHub fournit plusieurs [exemples de types de module](/help/sites-developing/ch-samplemodules.md).
-* Utilisez les consoles AEM pour [ajouter des modules d’IU](/help/sites-administering/contexthub-config.md#adding-a-ui-module) et [pour les regrouper en modes IU](/help/sites-administering/contexthub-config.md#adding-a-ui-mode).
+* Utilisez les consoles AEM pour [ajouter des modules d’IU](ch-configuring.md#adding-a-ui-module) et [pour les regrouper en modes IU](ch-configuring.md#adding-a-ui-mode).
 
 * Les développeurs peuvent [créer des types de module personnalisés](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
