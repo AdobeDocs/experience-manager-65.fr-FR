@@ -6,7 +6,7 @@ user-guide-title: aem 6.5 Guide de l’utilisateur pour l’administration
 breadcrumb-title: Administering Guide
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 96%
@@ -97,7 +97,7 @@ ht-degree: 96%
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personnalisation   {#personalization}
    + [Personnalisation  ](personalization.md)
-   + [Configuration de ContextHub](contexthub-config.md)
+   + [Configuration de ContextHub](/help/sites-developing/ch-configuring.md)
    + [Contexte client](client-context.md)
    + [Campagnes](campaigns.md)
    + [Configuration de la segmentation avec ContextHub](segmentation.md)
