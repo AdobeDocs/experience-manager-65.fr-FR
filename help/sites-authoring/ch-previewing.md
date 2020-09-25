@@ -10,12 +10,15 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 96%
 
 ---
 
 
-# Aperçu des pages à l’aide des données ContextHub{#previewing-pages-using-contexthub-data}
+# Aperçu des pages à l’aide des données ContextHub {#previewing-pages-using-contexthub-data}
 
 La barre d’outils [ContextHub](/help/sites-developing/contexthub.md) affiche les données ContextHub et vous permet de modifier les données de la boutique. Elle est utile pour prévisualiser le contenu déterminé par des données dans une boutique ContextHub.
 
@@ -24,7 +27,7 @@ La barre d’outils consiste en une série de modes d’IU qui contiennent un ou
 * Les modes d’IU sont les icônes qui s’affichent dans la partie gauche de la barre d’outils. Lorsque vous cliquez ou appuyez sur une icône, la barre d’outils affiche les modules d’IU qu’elle contient.
 * Les modules d’IU affichent les données d’une ou plusieurs boutiques ContextHub. Certains modules d’IU vous permettent également de manipuler les données de boutique.
 
-ContextHub installe plusieurs modes d’IU et modules d’IU. Votre administrateur a peut-être [configuré ContextHub](/help/sites-administering/contexthub-config.md) pour en afficher d’autres.
+ContextHub installe plusieurs modes d’IU et modules d’IU. Votre administrateur a peut-être [configuré ContextHub](/help/sites-developing/ch-configuring.md) pour en afficher d’autres.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
@@ -46,7 +49,7 @@ La barre d’outils ContextHub est disponible en mode aperçu. La barre d’outi
 
 Chaque module d’IU fournit un ensemble de fonctionnalités différent, mais les types de fonctionnalités suivants sont communs. Les modules d’IU étant redimensionnables, votre développeur peut mettre en œuvre d’autres fonctionnalités selon les besoins.
 
-### Contenu de la barre d’outils {#toolbar-content}
+### Contenu de la barre d’outils   {#toolbar-content}
 
 Les modules d’IU peuvent afficher des données d’une ou de plusieurs boutiques ContextHub sur la barre d’outils. Les modules d’IU utilisent une icône et un titre pour s’identifier.
 
@@ -62,7 +65,7 @@ Certains modules d’IU affichent une fenêtre contextuelle lorsque l’utilisat
 
 La fenêtre contextuelle d’un module peut contenir des éléments de formulaire qui vous permettent de changer les données contenues dans la boutique ContextHub. Si le contenu de la page est déterminé par les données de la boutique, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
 
-### Mode Plein écran {#fullscreen-mode}
+### Mode Plein écran   {#fullscreen-mode}
 
 Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez ou appuyez afin que le contenu de la fenêtre contextuelle englobe l’intégralité de la fenêtre du navigateur.
 
