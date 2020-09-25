@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 96%
@@ -71,7 +71,7 @@ Les ressources vidéo 360 qui sont chargées dans AEM sont considérées comme 
 
    N’oubliez pas que cette approche augmente les demandes sur le réseau et le processeur de l’utilisateur final.
 
-1. [Téléchargez votre vidéo dans le dossier](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+1. [Téléchargez votre vidéo dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 ## Remplacement du rapport d’aspect par défaut des vidéos 360  {#overriding-the-default-aspect-ratio-of-videos}
 
@@ -119,7 +119,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](https
    * Faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de vue de la scène statique.
    * Appuyez sur le bouton **[!UICONTROL Lecture]** de la vidéo pour commencer la lecture ; pendant la lecture de la vidéo, faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de vue.
 
-   ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
 
    * Dans la liste des visionneuses, appuyez sur **[!UICONTROL Video360VR.]**
 
