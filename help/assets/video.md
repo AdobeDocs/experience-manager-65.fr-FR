@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 96%
@@ -51,7 +51,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
    * Chargez les vidéos issues de sources originales dans les dossiers. Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
-      * [Chargement des vidéos](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+      * [Chargement des vidéos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/assets-formats.md#supported-multimedia-formats).
    * Contrôle la façon dont l’[encodage vidéo progresse](#monitoring-video-encoding-and-youtube-publishing-progress) du point de vue de la ressource ou du processus.
 
@@ -65,7 +65,7 @@ Le workflow détaillé décrit ci-après vise à vous aider à maîtriser rapide
       * [Organisation des ressources numériques](/help/assets/organize-assets.md)
 En savoir plus sur les [bonnes pratiques relatives à l’organisation des ressources numériques en vue de l’utilisation de profils de traitement](organize-assets.md)
 
-      * [Recherche de ressources vidéo](search-assets.md#custompredicates) ou [Recherche de ressources](managing-assets-touch-ui.md#search-assets)
+      * [Recherche de ressources vidéo](search-assets.md#custompredicates) ou [Recherche de ressources](/help/assets/search-assets.md)
    * Prévisualiser et publier des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
@@ -1224,7 +1224,7 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode «
    * créé un dossier pour vos ressources vidéo ;
    * [attribué un profil vidéo au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) ;
 
-   * [téléchargé vos vidéos dans le dossier](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+   * [téléchargé vos vidéos dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Accédez à une ressource vidéo téléchargée dont vous souhaitez changer l’image miniature.
 1. Dans l’un des modes de sélection des ressources (mode **[!UICONTROL Liste]** ou **[!UICONTROL Carte]**), appuyez sur la ressource vidéo.
