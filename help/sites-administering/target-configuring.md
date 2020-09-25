@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '2202'
 ht-degree: 74%
@@ -38,7 +38,7 @@ Les valeurs de propriétés suivantes sont utilisées dans la configuration de c
 * **Courriel :** Comme indiqué dans l’assistant d’ouverture de session.
 * **Mot de passe :** Comme indiqué dans l’assistant d’ouverture de session.
 * **Type d&#39;API :** REPOSE
-* **Synchroniser les segments à partir de l&#39;Adobe Target :** Sélectionné.
+* **Synchroniser les segments à partir d’Adobe Target :** Sélectionné.
 
 * **Bibliothèque cliente :** mbox.js.
 * **Utilisez la gestion dynamique des balises pour diffuser la bibliothèque cliente :** Non sélectionné. Select this option if you [use DTM](/help/sites-administering/dtm.md) or another tag management system to host the mbox.js or AT.js file. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
@@ -149,7 +149,7 @@ Utilisez la procédure suivante pour créer une configuration de cloud Target da
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration de cloud Analytics utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
 
    * **Utiliser un ciblage précis :** Cette case à cocher est activée par défaut. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque qui suit.
-   * **Synchroniser les segments à partir d&#39;un Adobe Target :** Sélectionnez cette option pour télécharger les segments définis dans la Cible afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
+   * **Synchroniser les segments à partir d’Adobe Target :** Sélectionnez cette option pour télécharger les segments définis dans la Cible afin de les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
    * **Bibliothèque cliente :** Indiquez si vous souhaitez utiliser la bibliothèque cliente mbox.js ou AT.js.
    * **Utilisez la gestion dynamique des balises pour diffuser la bibliothèque** client : sélectionnez cette option pour utiliser AT.js ou mbox.js de la gestion dynamique des balises ou un autre système de gestion des balises. You must [configure the DTM integration](/help/sites-administering/dtm.md) to use this option. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
    * **Fichier mbox.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier mbox.js par défaut. Vous pouvez également télécharger votre fichier mbox.js personnalisé. S’affiche uniquement si vous avez sélectionné mbox.js.
@@ -167,7 +167,7 @@ Utilisez la procédure suivante pour créer une configuration de cloud Target da
 
 ### Ajout d’une structure Target {#adding-a-target-framework}
 
-Une fois que vous avez configuré la configuration de cloud Target, ajoutez une structure Target. La structure identifie les paramètres par défaut qui sont envoyés à Adobe Target à partir des composants [ClientContext](/help/sites-administering/client-context.md) ou [ContextHub](/help/sites-administering/contexthub-config.md). Target utilise les paramètres pour déterminer les segments qui s’appliquent au contexte actuel.
+Une fois que vous avez configuré la configuration de cloud Target, ajoutez une structure Target. La structure identifie les paramètres par défaut qui sont envoyés à Adobe Target à partir des composants [ClientContext](/help/sites-administering/client-context.md) ou [ContextHub](/help/sites-developing/ch-configuring.md). Target utilise les paramètres pour déterminer les segments qui s’appliquent au contexte actuel.
 
 Vous pouvez créer des structures multiples pour une même configuration Target. Les structures multiples s’avèrent utiles lorsque vous devez envoyer un jeu de paramètres différent à Target pour différentes sections de votre site web. Créez une structure pour chaque jeu de paramètres que vous avez besoin d’envoyer. Associez chaque section de votre site web à la structure appropriée. Notez qu’une page web peut utiliser uniquement une structure à la fois.
 
@@ -176,7 +176,7 @@ Vous pouvez créer des structures multiples pour une même configuration Target.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-   La page de structure s’ouvre. Sidekick provides components that represent information from the [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-administering/contexthub-config.md) that you can map.
+   La page de structure s’ouvre. Sidekick provides components that represent information from the [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-developing/ch-configuring.md) that you can map.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
