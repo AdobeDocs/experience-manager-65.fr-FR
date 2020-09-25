@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 100%
@@ -29,7 +29,7 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 
 >[!NOTE]
 >
->Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
+>Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
@@ -68,7 +68,7 @@ Grâce aux fragments de contenu :
    * Peuvent se fier à du contenu multimédia associé toujours pertinent.
    * Peuvent créer des variations de contenu ad hoc à la volée tout en garantissant leur gestion centralisée dans le fragment.
 
-## Ajout d’un fragment de contenu à une page  {#adding-a-content-fragment-to-your-page}
+## Ajout d’un fragment de contenu à une page   {#adding-a-content-fragment-to-your-page}
 
 1. Ouvrez la page à modifier.
 
@@ -144,11 +144,11 @@ Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide 
 >
 >Comme toujours, la modification de la source du fragment affectera toutes les pages qui font référence à ce fragment de contenu.
 
-### Ajout de contenu intermédiaire  {#adding-in-between-content}
+### Ajout de contenu intermédiaire   {#adding-in-between-content}
 
 Lorsqu’un fragment de contenu particulier est ajouté à la page, un espace réservé **Faire glisser les composants ici** est présent entre chaque paragraphe HTML (en haut/en bas) du fragment.
 
-Cela permet d’ajouter du contenu supplémentaire [à l’intérieur (c’est-à-dire au niveau intermédiaire)](/help/assets/content-fragments/content-fragments.md#inbetweencontent) du contenu du fragment (au niveau de tout point disponible), sans avoir à modifier le fragment racine.
+Cela permet d’ajouter du contenu supplémentaire [à l’intérieur (c’est-à-dire au niveau intermédiaire)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) du contenu du fragment (au niveau de tout point disponible), sans avoir à modifier le fragment racine.
 
 Dans le cas du contenu intermédiaire, plusieurs possibilités vous sont offertes :
 
@@ -184,7 +184,7 @@ Cela peut donner l’impression que le positionnement relatif a changé, dans la
 
 
 
-### Utilisation de contenu associé  {#using-associated-content}
+### Utilisation de contenu associé   {#using-associated-content}
 
 Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragments-assoc-content.md) au [fragment de contenu](/help/assets/content-fragments/content-fragments.md), ces ressources seront disponibles à partir du panneau latéral (après avoir placé le fragment sur la page de contenu). Le contenu associé est en fait une source spéciale de contenu pour le [contenu intermédiaire](#adding-in-between-content).
 
