@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 94%
@@ -40,7 +40,7 @@ L’API permet d’utiliser AEM en tant que système de gestion de contenu (CMS)
 
 Par exemple, les applications monopages, basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
-Bien que les composants principaux d’AEM fournissent une API très complète, flexible et personnalisable qui peut servir les opérations de lecture requises à cette fin et dont la sortie JSON peut être personnalisée, ils nécessitent le savoir-faire d’AEM WCM (Gestion de contenu Web) pour la mise en oeuvre car ils doivent être hébergés dans des pages (API) basées sur des modèles AEM dédiés. Les entreprises de développement d’applications monopages n’ont pas toutes accès à ces ressources.
+Bien que AEM Core Components fournisse une API très complète, flexible et personnalisable qui peut servir les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils nécessitent AEM savoir-faire WCM (Web Gestion de contenu) pour la mise en oeuvre car ils doivent être hébergés dans des pages (API) basées sur des modèles de AEM dédiés. Les entreprises de développement d’applications monopages n’ont pas toutes accès à ces ressources.
 
 Dans ce cas, l’API REST Assets peut être utilisée. Elle permet aux développeurs d’accéder à des ressources (par exemple, des images et des fragments de contenu) directement, sans devoir d’abord les intégrer dans une page puis diffuser leur contenu au format JSON sérialisé. (Remarque : Il est impossible de personnaliser la sortie JSON de l’API REST Assets.) L’API REST Assets permet également aux développeurs de modifier du contenu, en créant, en mettant à jour ou en supprimant des ressources, des fragments de contenu et des dossiers.
 
@@ -143,7 +143,7 @@ Les fragments de contenu sont un type spécifique de ressource ; voir [Utilisat
 
 Pour plus d’informations sur les fonctions disponibles dans l’API, voir :
 
-* [Fonctions disponibles](/help/assets/mac-api-assets.md#available-features) de l’API REST Assets
+* [Fonctions disponibles](/help/assets/mac-api-assets.md#assets) de l’API REST Assets
 * [Types d’entités](/help/assets/assets-api-content-fragments.md#entity-types)
 
 ### Pagination {#paging}
@@ -203,7 +203,7 @@ Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) es
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
-#### Représentation  {#representation}
+#### Représentation   {#representation}
 
 Les fragments de contenu :
 
@@ -212,7 +212,7 @@ Les fragments de contenu :
 
 * Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
 
-#### Modèles et fragments de contenu  {#content-models-and-content-fragments}
+#### Modèles et fragments de contenu   {#content-models-and-content-fragments}
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
 
@@ -363,14 +363,14 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    }
    ```
 
-## Référence d’API  {#api-reference}
+## Référence d’API   {#api-reference}
 
 Pour accéder aux références d’API détaillées :
 
 * [API Adobe Experience Manager Assets - Fragments de contenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [API HTTP Assets](/help/assets/mac-api-assets.md)
 
-   * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#available-features)
+   * [Fonctionnalités disponibles](/help/assets/mac-api-assets.md#assets)
 
 ## Ressources supplémentaires {#additional-resources}
 
