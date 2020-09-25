@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '4813'
 ht-degree: 98%
@@ -223,11 +223,10 @@ Pour transférer des bannières d’image, reportez-vous à la section [Téléch
    >    * Animation. Par défaut, la transition entre chaque diapositive est un fondu. Vous pouvez prévoir une transition affichant une diapositive.
    >    * Style des boutons. Les utilisateurs peuvent faire alterner les bannières en appuyant sur chaque point ou numéro. Vous pouvez modifier l’emplacement d’affichage des boutons de définition des indicateurs (et s’ils sont de style numérique ou en pointillé) et leur taille.
    >    * Modification du style de mise en évidence d’une zone cliquable ou de l’icône utilisée pour les zones réactives.
-   >    * Avant de modifier un paramètre prédéfini de visionneuse, choisissez le style de votre choix. Si vous ne faites pas ceci, lorsque vous commencez à modifier le paramètre prédéfini de visionneuse, vous perdrez toutes les modifications si vous décidez de changer de paramètre prédéfini.
+   >    * Avant de modifier un paramètre prédéfini de visionneuse, choisissez le style de votre choix. Si vous ne faites pas ceci, lorsque vous commencez à modifier le paramètre prédéfini de visionneuse, vous perdrez toutes les modifications si vous décidez de changer de paramètre prédéfini..
 
    >
-   >
-   >Pour des instructions détaillées et plus d’informations sur l’éditeur de visionneuses, voir [Considérations spécifiques aux bannières de carrousel](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset).
+   >Pour des instructions détaillées et plus d’informations sur l’éditeur de visionneuses, voir [Considérations spécifiques aux bannières de carrousel](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
    Vous pouvez également afficher un aperçu de l’apparence de la bannière de carrousel. Voir [(Facultatif) Aperçu des bannières de carrousel](#optional-previewing-carousel-banners).
 
