@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 92%
@@ -30,7 +30,7 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 Pour qu’une ressource téléchargée soit une image panoramique sphérique utilisable avec la visionneuse d’images panoramiques, la ressource doit présenter l’une ou l’autre des caractéristiques suivantes, ou les deux :
 
 * Un rapport d’aspect de 2.
-Vous pouvez remplacer le paramètre de format par défaut de 2 dans CRXDE Lite par le paramètre suivant :
+Vous pouvez remplacer le paramètre de format par défaut de 2 en CRXDE Lite par le paramètre suivant :
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Avec les mots-clés `equirectangular`, ou `spherical` et `panorama`, ou `spherical` et `panoramic`. Voir [Utilisation des balises](/help/sites-authoring/tags.md).
@@ -72,11 +72,11 @@ Pour que la visionneuse d’images panoramiques fonctionne correctement au sein 
 
 Si vous avez fait glisser une image dans le composant Média panoramique au sein de votre WCM et que l’espace réservé au composant s’est réduit, vous pouvez procéder de la manière suivante :
 
-* Si vous rencontrez une erreur 403 Interdit, elle peut être due à la taille excessive de l’image demandée. Vérifiez les paramètres **[!UICONTROL Limite de taille de l’image de réponse]** dans [Configuration de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Si vous rencontrez une erreur 403 Interdit, elle peut être due à la taille excessive de l’image demandée. Vérifiez les paramètres **[!UICONTROL Limite de taille de l’image de réponse]** dans [Configuration de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * En cas d’erreur « Verrou incorrect » ou « Erreur d’analyse » sur la page, vérifiez que Mode d’obscurcissement de requête de vérification et Mode de verrouillage de requête sont désactivés.
 * Pour une erreur de canevas corrompu, configurez un chemin de fichier de définitions de règles et l’option Invalider sur le réseau de diffusion de contenu pour les demandes précédentes de la ressource d’image.
-* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. A typical setting for the **[!UICONTROL Quality]** field is `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Si la qualité d’image devient très faible après une demande d’image dont la taille dépasse la limite prise en charge, vérifiez que le paramètre **[!UICONTROL Attributs d’encodage JPEG > Qualité]** n’est pas vide. A typical setting for the **[!UICONTROL Quality]** field is `95`. Vous trouverez le paramètre sur la page Publication sur hébergeur d’images. Pour accéder à la page, voir [Configuration de Dynamic Media Classic (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 ## Aperçu des images panoramiques {#previewing-panoramic-images}
 
