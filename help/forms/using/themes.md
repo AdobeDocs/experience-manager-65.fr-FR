@@ -10,10 +10,10 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '6067'
-ht-degree: 81%
+source-wordcount: '6062'
+ht-degree: 80%
 
 ---
 
@@ -348,7 +348,7 @@ Dans la barre d’outils de la zone de travail se trouvent les éléments suivan
 * **Activer/désactiver le panneau** latéral ![pour activer/désactiver le panneau](assets/toggle-side-panel.png)latéral : Permet d’afficher ou de masquer la barre latérale.
 * **Options** du thème Options ![](assets/theme-options.png)du thème-options: Fournit trois options
 
-   * Configurer : Fournit des options pour sélectionner le formulaire de prévisualisation ou la communication interactive, la bibliothèque cliente de base et la configuration du typekit.
+   * Configurer : Fournit des options permettant de sélectionner le formulaire de prévisualisation ou la configuration de communication interactive, clientlib de base et Adobe Fonts.
    * Afficher le thème CSS : génère des CSS pour le thème sélectionné.
    * Gérer les styles : fournit des options de gestion des styles de texte et d’images
    * Aide : exécute une visite guidée de l’image de l’éditeur de thèmes.
@@ -485,23 +485,23 @@ Vous pouvez définir le style des composants de formulaire ou de communication i
 
 ### Utilisation des polices web dans un thème {#using-web-fonts-in-a-theme}
 
-Vous pouvez désormais utiliser les polices disponibles dans un service Web dans un formulaire adaptatif ou une communication interactive. [Typekit](https://typekit.com/), le service prêt à l’emploi de polices Web d’Adobe, est disponible sous forme de configuration. Pour utiliser Typekit, créez un kit et des polices, et obtenez l’ID du kit sur le [site Web de Typekit](https://typekit.com/).
+Vous pouvez désormais utiliser les polices disponibles dans un service Web dans un formulaire adaptatif ou une communication interactive. Out-of-the-box, [Adobe Fonts](https://fonts.adobe.com/), Adobe&#39;s web font service, is available as a configuration. Pour utiliser Adobe Fonts, créez un kit, ajoutez-y des polices et obtenez l’identifiant du kit auprès de [Adobe Fonts](https://fonts.adobe.com/).
 
-Effectuez les étapes suivantes pour configurer Typekit dans AEM :
+Effectuez les étapes suivantes pour configurer Adobe Fonts dans AEM :
 
 1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Deployment > Cloud Services.
-1. On the **Cloud Services** page, navigate to **Third Party Services** > **Typekit** , and click **Configure Now** under Typekit. Si une configuration est déjà disponible, cliquez sur le bouton **+** pour créer une nouvelle instance.
+1. Sur la page **Cloud Services** , accédez à l’option **Adobe Fonts** et ouvrez-la. Ouvrez le dossier de configuration, puis cliquez sur **Créer**.
 1. Dans la boîte de dialogue **Créer une configuration**, indiquez un titre pour la configuration et cliquez sur **Créer**.
 
    Vous êtes redirigé sur la page de configuration.
 
 1. Dans la boîte de dialogue Modifier le composant qui s’affiche, indiquez votre ID de kit et cliquez sur **OK**.
 
-Pour configurer un thème de sorte qu’il utilise la configuration Typekit, procédez comme suit :
+Effectuez les étapes suivantes pour configurer un thème afin d’utiliser la configuration Adobe Fonts :
 
 1. Dans l’instance de l’auteur, ouvrez un thème dans l’éditeur de thèmes.
 1. In the theme editor, navigate to **Theme Options** ![theme-options](assets/theme-options.png) > **Configure**.
-1. Dans le champ **Configuration de Typekit**, sélectionnez un kit et cliquez sur **Enregistrer**.
+1. In **Adobe Fonts Configuration** field, select a kit, and click **Save**.
 
    Maintenant, vous pouvez voir que les polices sont ajoutées à la propriété font-family du thème.
 
