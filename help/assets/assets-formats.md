@@ -1,9 +1,9 @@
 ---
-title: Formats de fichiers pris en charge pour le traitement dans [!DNL Adobe Experience Manager Assets].
+title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 60%
@@ -85,11 +85,11 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
 | USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
-## Formats d’image pixellisée non pris en charge dans Dynamic Media {#unsupported-image-formats-dynamic-media}
+## Formats d’image pixellisée non pris en charge dans Contenu multimédia dynamique {#unsupported-image-formats-dynamic-media}
 
-La liste suivante décrit les sous-types de formats de fichier image pixellisée qui *ne sont pas* pris en charge dans Dynamic Media.
+La liste suivante décrit les sous-types de formats de fichier image pixellisée qui *ne sont pas* pris en charge dans Contenu multimédia dynamique.
 
-Voir aussi [Détection des formats de fichier non pris en charge pour Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Voir aussi [Détection de formats de fichier non pris en charge pour le contenu multimédia](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)dynamique.
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
@@ -142,7 +142,7 @@ The [!DNL Adobe Camera Raw] library enables [!DNL Assets] to ingest raw images. 
 
 Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants:
 
-| Format | Stockage | [Gestion des métadonnées](metadata.md) | extraction de texte<br> intégral | [Extraction de métadonnées](metadata.md) | Thumbnail<br> generation | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
+| Format | Stockage | [Gestion des métadonnées](metadata.md) | Extraction de texte<br> intégral | [Extraction de métadonnées](metadata.md) | Thumbnail<br> generation | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
@@ -163,7 +163,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Formats de document pris en charge dans Dynamic Media {#supported-document-formats-dynamic-media}
+## Formats de document pris en charge dans Contenu multimédia dynamique {#supported-document-formats-dynamic-media}
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -237,7 +237,7 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 ## Autres formats pris en charge {#other-supported-formats}
 
-Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques habituelle, telle que l’enregistrement, le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées, à l’exception de Dynamic Media Diffusion, est prise en charge pour tous les fichiers.
+Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques habituelle, telle que l’enregistrement, le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées, à l’exception de la Diffusion Contenu multimédia dynamique, est prise en charge pour tous les fichiers.
 
 | Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
