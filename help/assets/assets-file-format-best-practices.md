@@ -1,12 +1,12 @@
 ---
-title: Recommandations relatives au traitement des différents formats de fichier pris en charge à l’aide [!DNL Adobe Experience Manager Assets]de.
+title: Recommandations relatives au traitement des formats de fichier pris en charge
 description: Meilleures pratiques pour traiter les différents types de fichiers pris en charge à l’aide [!DNL Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 46%
+source-wordcount: '465'
+ht-degree: 47%
 
 ---
 
@@ -19,15 +19,15 @@ Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AE
 
 >[!TIP]
 >
->If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Collaborez avec le représentant du service à la clientèle Adobe pour mettre en oeuvre ces meilleures pratiques pour votre déploiement AMS et pour choisir les meilleurs outils et modèles possibles pour les formats propriétaires Adobe. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
+>If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Collaborez avec le service à la clientèle d’Adobe pour mettre en oeuvre ces meilleures pratiques pour votre déploiement AMS et choisir les meilleurs outils et modèles possibles pour les formats propriétaires des Adobes. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## [!DNL Adobe Camera Raw] bibliothèque {#adobe-camera-raw-library}
 
-Pour des performances optimales, Adobe recommande d’utiliser [!DNL Adobe Camera Raw] la bibliothèque pour les fichiers RAW et DNG.
+Pour des performances optimales, l’Adobe recommande d’utiliser [!DNL Adobe Camera Raw] la bibliothèque pour les fichiers RAW et DNG.
 
 [!DNL Adobe Camera Raw] prend en charge le profil de couleurs CMJN en tant qu’entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
 
-Pour plus d’informations, voir Prise en charge [de](/help/assets/camera-raw.md)Camera Raw.
+Pour plus d’informations, voir Prise en charge [](/help/assets/camera-raw.md)Camera Raw.
 
 ## Bibliothèque Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -62,7 +62,7 @@ To know how to set up the [!DNL ImageMagick] library in [!DNL Experience Manager
 
 ## Bibliothèque de transcodage d’imagerie (ITL) {#image-transcoding-library}
 
-La bibliothèque de transcodage d’images Adobe est une solution de traitement d’images qui exécute des fonctions essentielles de gestion d’images, notamment le codage d’images, le transcodage, le rééchantillonnage, le redimensionnement, etc.
+La bibliothèque de transcodage d’images d’Adobe est une solution de traitement d’images qui exécute des fonctions de gestion d’images de base, notamment le codage d’images, le transcodage, le ré-échantillonnage, le redimensionnement, etc.
 
 La bibliothèque de transcodage d’imagerie (ITL) prend en charge les types MIME suivants :
 
