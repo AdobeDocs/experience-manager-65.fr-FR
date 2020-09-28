@@ -1,12 +1,12 @@
 ---
-title: Manage your digital assets in [!DNL Adobe Experience Manager Assets].
+title: Gérer vos ressources numériques
 description: Découvrez les tâches de gestion des ressources telles que le téléchargement, la modification, la recherche, la suppression, l’annotation et la version de vos ressources numériques.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '9410'
+source-wordcount: '9409'
 ht-degree: 63%
 
 ---
