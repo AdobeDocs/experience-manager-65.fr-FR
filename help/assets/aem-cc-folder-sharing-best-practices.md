@@ -1,11 +1,11 @@
 ---
-title: '[ !Adobe Experience Manager DNL] [!DNL Adobe Creative Cloud] vers le dossier où partager les meilleures pratiques.'
+title: Méthodes [!DNL Adobe Creative Cloud] de partage de dossiers
 description: ' [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] Configurez pour échanger des dossiers avec des utilisateurs Adobe Creative Cloud (CC).'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '957'
 ht-degree: 17%
 
 ---
@@ -39,9 +39,9 @@ Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 L’intégration comprend les éléments suivants :
 
 * **[!DNL Experience Manager Assets]** déployés dans le réseau d’entreprise (services gérés ou sur site) : Le partage de dossiers est initié ici.
-* **[!DNL Adobe Marketing Cloud Assets]service **principal : Agit en tant qu&#39;intermédiaire entre les services[!DNL Experience Manager]et les services[!DNL Creative Cloud]d&#39;enregistrement. Un administrateur d’une organisation qui utilise l’intégration doit établir une relation de confiance entre l’organisation de Marketing Cloud et le[!DNL Assets]déploiement. They also[define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that[!DNL Assets]users can share folders too for additional security.
+* **[!DNL Adobe Marketing Cloud Assets]service** principal : Agit en tant qu&#39;intermédiaire entre les services [!DNL Experience Manager] et les services [!DNL Creative Cloud] d&#39;enregistrement. Un administrateur d’une organisation qui utilise l’intégration doit établir une relation de confiance entre l’organisation de Marketing Cloud et le [!DNL Assets] déploiement. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
 
-* **[!DNL Creative Cloud]Services **Web Assets (interface utilisateur Web d’enregistrement et de[!DNL Creative Cloud]fichiers) : C’est là que des utilisateurs d’applications Creative Cloud spécifiques, avec lesquels un[!DNL Assets]dossier a été partagé, peuvent accepter l’invitation et voir le dossier dans leur enregistrement de compte Creative Cloud.
+* **[!DNL Creative Cloud]Services** Web Assets (interface utilisateur Web d’enregistrement et de [!DNL Creative Cloud] fichiers) : C’est là que des utilisateurs d’applications Creative Cloud spécifiques, avec lesquels un [!DNL Assets] dossier a été partagé, peuvent accepter l’invitation et voir le dossier dans leur enregistrement de compte Creative Cloud.
 * **Application** de bureau Creative Cloud : (Facultatif) Permet un accès direct aux dossiers/fichiers partagés depuis le bureau de l’utilisateur créatif via la synchronisation avec l’enregistrement [!DNL Creative Cloud] Ressources.
 
 ## Caractéristiques et limites {#characteristics-and-limitations}
@@ -49,7 +49,7 @@ L’intégration comprend les éléments suivants :
 * **Propagation unidirectionnelle des modifications :** Les modifications apportées aux fichiers sont propagées dans une seule direction - à partir du système ([!DNL Experience Manager] ou [!DNL Creative Cloud Assets]), où la ressource a été créée à l’origine (téléchargée). L’intégration ne fournit pas de synchronisation entièrement automatisée et bidirectionnelle entre les deux systèmes.
 * **Contrôle de version:**
 
-   * [!DNL Experience Manager] crée uniquement des versions d’un fichier lors des mises à jour si le fichier est d’origine [!DNL Experience Manager] et y est mis à jour.
+   * [!DNL Experience Manager] ne crée des versions d’un fichier que lors des mises à jour si le fichier est d’origine [!DNL Experience Manager] et y est mis à jour.
    * [!DNL Creative Cloud] Assets fournit sa propre [fonctionnalité de création de versions](https://helpx.adobe.com/fr/creative-cloud/help/versioning-faq.html), qui vise les mises à jour de travail en cours (en général, les mises à jour sont conservées 10 jours).
 
 * **Limites d&#39;espace :** Les tailles et les volumes des fichiers échangés sont limités par le quota [d’actifs](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud spécifique pour les utilisateurs créatifs (dépend du niveau d’abonnement) et par une taille de fichier maximale de 5 Go. L’espace est en outre limité par le quota de ressources que l’organisation possède dans le service principal d’Adobe Marketing Cloud Assets.
