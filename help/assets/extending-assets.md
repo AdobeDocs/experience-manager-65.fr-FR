@@ -1,9 +1,9 @@
 ---
-title: Personnalisez et étendez [!DNL Adobe Experience Manager Assets].
+title: Personnaliser et étendre [!DNL Assets]
 description: Découvrez les moyens par lesquels vous pouvez personnaliser et étendre le Partage de ressources et l’Éditeur de ressources, qui proposent aux utilisateurs une interface et un ensemble de fonctionnalités spécialement adaptés.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 52%
@@ -13,7 +13,7 @@ ht-degree: 52%
 
 # Personnaliser et étendre [!DNL Assets] {#customizing-and-extending-assets}
 
-Asset Editor est le principal point d’accès utilisé par les utilisateurs d’un site Web Adobe Enterprise Manager pour rechercher, vue et manipuler les ressources numériques de votre référentiel.
+Asset Editor est le Principal point d’accès que les utilisateurs d’un site Web Adobe Enterprise Manager utilisent pour rechercher, vue et manipuler les ressources numériques de votre référentiel.
 
 As an [!DNL Experience Manager] developer, you can customize and extend the Asset Editor in a number of ways, presenting users with a specifically tailored interface and set of functionality.
 
