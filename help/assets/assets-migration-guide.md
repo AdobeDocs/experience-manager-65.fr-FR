@@ -1,12 +1,12 @@
 ---
-title: Migration des ressources [!DNL Adobe Experience Manager Assets] en bloc.
+title: Migration des actifs en bloc
 description: Describes how to bring assets into [!DNL Adobe Experience Manager], apply metadata, generate renditions, and activate them to publish instances.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1799'
-ht-degree: 66%
+source-wordcount: '1798'
+ht-degree: 67%
 
 ---
 
