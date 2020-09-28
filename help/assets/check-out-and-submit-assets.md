@@ -1,11 +1,11 @@
 ---
-title: Archivez et extrayez vos ressources numériques pour les modifier.
+title: Archivage et extraction de fichiers pour modification
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '435'
 ht-degree: 51%
 
 ---
