@@ -1,12 +1,12 @@
 ---
-title: Performance tuning for [!DNL Adobe Experience Manager Assets].
+title: Réglage [!DNL Assets]des performances.
 description: Suggestions et conseils [!DNL Experience Manager] sur la configuration, les modifications apportées au matériel, aux logiciels et aux composants réseau afin de supprimer les goulets d'étranglement et d'optimiser les performances [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 54%
 
 ---
