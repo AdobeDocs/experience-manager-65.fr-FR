@@ -10,10 +10,10 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 63%
+source-wordcount: '824'
+ht-degree: 50%
 
 ---
 
@@ -26,27 +26,38 @@ La localisation des formulaires adaptatifs repose sur deux types de dictionnaire
 
 **Dictionnaire** spécifique au formulaire Contient les chaînes utilisées dans les formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, et ainsi de suite. It is managed as a set of XLIFF files for each locale and you can access it at `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Dictionnaires** globaux Il existe deux dictionnaires globaux, gérés en tant qu’objets JSON, dans la bibliothèque cliente AEM. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, et ainsi de suite. Vous pouvez trouver ces dictionnaires dans CRXDe Lite à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Étant donné que les dictionnaires globaux ne sont généralement pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque jeu de paramètres régionaux permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur. 
+**Dictionnaires** globaux Il existe deux dictionnaires globaux, gérés en tant qu’objets JSON, dans AEM bibliothèque cliente. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, et ainsi de suite. Vous pouvez trouver ces dictionnaires dans CRXDe Lite à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Étant donné que les dictionnaires globaux ne sont généralement pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque jeu de paramètres régionaux permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur. 
 
 ### Comment fonctionne la localisation des formulaires adaptatifs{#how-localization-of-adaptive-form-works} 
 
-Lorsqu’un formulaire adaptatif est rendu, il identifie les paramètres régionaux requis en examinant les paramètres suivants dans l’ordre spécifié : 
+Il existe deux méthodes pour identifier les paramètres régionaux du formulaire adaptatif. Lorsqu’un formulaire adaptatif est rendu, il identifie les paramètres régionaux requis par :
 
-* Paramètre de requête `afAcceptLang`Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre la variable 
+* affichage du `[local]` sélecteur dans l’URL du formulaire adaptatif. The format of the URL is `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L’utilisation du `[local]` sélecteur permet la mise en cache d’un formulaire adaptatif.
+
+* en examinant les paramètres suivants dans l’ordre spécifié :
+
+   * Paramètre de requête `afAcceptLang`Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre la variable 
 `afAcceptLang` pour forcer le paramètre régional. Par exemple, l’URL suivante force le rendu du formulaire dans les paramètres régionaux japonais :
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
+   * The browser locale set for the user, which is specified in the request using the `Accept-Language` header.
 
-* Paramètre de langue de l’utilisateur spécifié dans AEM.  
+   * Paramètre de langue de l’utilisateur spécifié dans AEM.  
 
-Une fois que le paramètre régional est identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique aux formulaires correspondant au paramètre régional requis n’est pas trouvé, il utilise le dictionnaire anglais (en). 
+   * Par défaut, les paramètres régionaux du navigateur sont activés. Pour modifier les paramètres régionaux du navigateur, procédez comme suit :
+      * Ouvrez le gestionnaire de configuration. The URL is `http://[server]:[port]/system/console/configMgr`
+      * Locate and open the **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuration.
+      * Modifiez l’état de l’option **[!UICONTROL Utiliser les paramètres régionaux]** du navigateur et **[!UICONTROL enregistrez]** la configuration.
+
+Une fois que le paramètre régional est identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire pour les paramètres régionaux demandés est introuvable, il utilise le dictionnaire pour la langue dans laquelle le formulaire adaptatif a été créé.
+
+Si aucune information de paramètre régional n’est présente, le formulaire adaptatif est distribué dans la langue d’origine du formulaire. La langue d’origine est la langue utilisée lors du développement du formulaire adaptatif.
 
 S’il n’existe pas de bibliothèque client pour le paramètre régional requis, il recherche une bibliothèque client correspondant au code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA`  ( (anglais Afrique du sud) et qu’il n’existe pas de bibliothèque client correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque client correspondant à la langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
 
 ## Ajoutez la localisation pour les paramètres régionaux non pris en charge{#add-localization-support-for-non-supported-locales} 
 
-Le AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR).
+aem forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-taïwanais (zh-TW) et coréen (ko-KR).
 
 Pour ajouter un nouveau paramètre régional lors de l’exécution des formulaires adaptatifs :
 
@@ -102,7 +113,7 @@ Perform this step only if the `<locale>` you are adding is not among `en`, `de`,
 1. Create an `nt:unstructured` node `languages` under `etc`, if not present already.
 
 1. Add a multi-valued string property `languages` to the node, if not present already.
-1. Ajoutez les valeurs de paramètres régionaux `<locale>` par défaut `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, , , ,, si elles ne sont pas déjà présentes.`zh-tw``ja``ko-kr`
+1. ajoutez les valeurs de paramètres régionaux `<locale>` par défaut `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, , , ,, si elles ne sont pas déjà présentes.`zh-tw``ja``ko-kr`
 
 1. Add the `<locale>` to the values of the `languages` property of `/etc/languages`.
 
