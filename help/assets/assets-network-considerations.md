@@ -1,11 +1,11 @@
 ---
-title: Considérations et exigences relatives au réseau [ ! Ressources DNL].
+title: Considérations et exigences relatives au réseau
 description: Discusses network considerations when designing an [!DNL Adobe Experience Manager Assets] deployment.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 72%
 
 ---
@@ -22,7 +22,7 @@ Veillez à inclure les éléments suivants dans votre diagramme de réseau :
 * Uplink to the internet from the corporate network and the [!DNL Experience Manager] environment.
 * Topology of the [!DNL Experience Manager] environment.
 * Define simultaneous consumers of the [!DNL Experience Manager] network interface.
-* workflows définis du [!DNL Experience Manager] déploiement.
+* Workflows définis du [!DNL Experience Manager] déploiement.
 
 ## Connectivité de l’appareil client au réseau d’entreprise {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -68,7 +68,7 @@ Les exemples de diagrammes vous permettent de conclure que six périphériques p
 
 Designing the topology of the [!DNL Experience Manager] environment requires detailed knowledge of the system configuration and how the network is connected within the user environment.
 
-L’exemple de scénario inclut une batterie de publication dotée de cinq serveurs, une banque binaire S3 et Dynamic Media configurée.
+L’exemple de scénario comprend une batterie de publication dotée de cinq serveurs, une banque de données binaires S3 et un Contenu multimédia dynamique.
 
 The dispatcher shares it&#39;s 100Mbps connection with two entities, the outside world and the [!DNL Experience Manager] deployment. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
 
@@ -76,7 +76,7 @@ The [!DNL Experience Manager] deployment shares it&#39;s 1Gbps connection with m
 
 Reviewing the network from the client device to the [!DNL Experience Manager] deployment, the smallest choke-point appears to be the 10 Mbit enterprise firewall throttle. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
 
-## workflows définis du [!DNL Experience Manager] déploiement {#defined-workflows-of-the-aem-deployment}
+## Workflows définis du [!DNL Experience Manager] déploiement {#defined-workflows-of-the-aem-deployment}
 
 En tenant compte des performances du réseau, il peut être important de prendre en considération les workflows et la publication qui auront lieu dans le système. De plus, S3 ou tout autre stockage en réseau que vous utilisez, ainsi que les requêtes E/S consomment de la bande passante du réseau. Par conséquent, même dans un réseau entièrement optimisé, la performance peut être limitée par les E/S du disque.
 
