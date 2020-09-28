@@ -1,19 +1,19 @@
 ---
-title: Utilisez PDF rasterizer pour générer des rendus de fichiers PDF.
-description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer de [!DNL Adobe Experience Manager].
+title: Utiliser le pixelliseur PDF pour générer des rendus
+description: Générez des miniatures et des rendus de haute qualité à l’aide de la bibliothèque Adobe PDF Rasterizer dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 40%
+source-wordcount: '732'
+ht-degree: 43%
 
 ---
 
 
 # Utilisation de PDF Rasterizer {#using-pdf-rasterizer}
 
-When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise que la sortie d’une bibliothèque par défaut. Adobe recommande d’utiliser la bibliothèque PDF Rasterizer dans les cas suivants :
+When you upload large, content-intensive PDF or AI files to [!DNL Adobe Experience Manager Assets], the default conversion may not generate an accurate output. La bibliothèque Adobe PDF Rasterizer peut générer une sortie plus fiable et plus précise que la sortie d’une bibliothèque par défaut. adobe recommande d’utiliser la bibliothèque PDF Rasterizer pour les scénarios suivants :
 
 * Fichiers AI ou PDF lourds et intensifs en contenu.
 * Fichiers AI et fichiers PDF contenant des miniatures qui ne sont pas générés par défaut.
@@ -86,7 +86,7 @@ Les miniatures et les aperçus générés à l’aide de PDF Rasterizer sont d�
    * Types MIME : `application/pdf` ou `application/postscript`
 
    * Commandes: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. Ajoutez la configuration personnalisée des miniatures, le cas échéant.
+   * Add thumbnail sizes: `319:319`, `140:100`, `48:48`. ajoutez la configuration personnalisée des miniatures, le cas échéant.
 
    Voici des arguments de ligne de commande de la commande `PDFRasterizer` :
 
