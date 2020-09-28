@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Comparaison et offre de la bibliothèque de médias.'
+title: ' [!DNL Assets] Comparaison des offres de la bibliothèque de supports'
 description: Comparaison [!DNL Experience Manager Assets] des offres de la bibliothèque de médias et connaissance des différences.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 24%
@@ -82,7 +82,7 @@ For this use case it is not required to buy [!DNL Assets], even the use of the M
 * Prise en charge Camera Raw
 * Gestion et configuration des facettes de recherche
 * Workflows DAM préconfigurés (par exemple, séance photo)
-* rapports et analyses des ressources appelés statistiques
+* Rapports et analyses des ressources appelés statistiques
 * Gestion des ressources 3D
 * Ressources connectées
 * Brand Portal
