@@ -1,11 +1,11 @@
 ---
-title: Traiter les ressources pour exécuter des processus d’entreprise, effectuer des audits, assurer la conformité et préserver les fondamentaux de la santé mentale
+title: Traiter les actifs à l’aide de workflows
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '975'
 ht-degree: 27%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 27%
 
 ## Comprendre les workflows {#understand-workflows}
 
-Pour le traitement des ressources, [!DNL Experience Manager] utilise des workflows. Les Workflows permettent d’automatiser la logique ou les activités métier. Les étapes granulaires permettant d’accomplir des tâches spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des workflows. Par exemple, un processus peut appliquer un filigrane aux images téléchargées en fonction de critères spécifiques, tels que le dossier dans lequel elles sont téléchargées, la résolution de l’image, etc. Un autre exemple est un processus configuré pour le filigrane et qui permet d’ajouter simultanément des métadonnées, de créer des rendus, d’ajouter des balises intelligentes et de publier sur une banque de données.
+Pour le traitement des ressources, [!DNL Experience Manager] utilise des workflows. Les workflows permettent d’automatiser la logique ou les activités métier. Les étapes granulaires permettant d’accomplir des tâches spécifiques sont fournies par défaut et les développeurs peuvent créer leurs propres étapes personnalisées. Ces étapes peuvent être combinées dans un ordre logique pour créer des workflows. Par exemple, un processus peut appliquer un filigrane aux images téléchargées en fonction de critères spécifiques, tels que le dossier dans lequel elles sont téléchargées, la résolution de l’image, etc. Un autre exemple est un processus configuré pour le filigrane et qui permet d’ajouter simultanément des métadonnées, de créer des rendus, d’ajouter des balises intelligentes et de publier sur une banque de données.
 
-## workflows par défaut disponibles dans [!DNL Experience Manager] {#default-workflows}
+## Workflows par défaut disponibles dans [!DNL Experience Manager] {#default-workflows}
 
 Par défaut, toutes les ressources téléchargées sont traitées à l’aide du processus [!UICONTROL DAM Update Asset] . Le processus s’exécute pour chaque ressource téléchargée et exécute les tâches de gestion des ressources de base telles que la génération de rendu, l’écriture différée des métadonnées, l’extraction de page, l’extraction du média et le transcodage.
 
@@ -86,7 +86,7 @@ La procédure à suivre pour appliquer un workflow à plusieurs dossiers est sim
 
 Voir [appliquer un processus à une collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
 
-## début automatique d’un processus pour traiter les ressources de manière conditionnelle {#auto-execute-workflow-on-some-assets}
+## Début automatique d’un processus pour traiter les ressources de manière conditionnelle {#auto-execute-workflow-on-some-assets}
 
 Les administrateurs peuvent configurer le processus pour exécuter et traiter automatiquement les ressources en fonction de conditions prédéfinies. Cette fonctionnalité s’avère utile pour les utilisateurs et les marketeurs de la gamme d’activités, par exemple pour créer un processus personnalisé sur des dossiers spécifiques. Disons que tous les fichiers provenant de la prise de vue d&#39;une agence peuvent être marqués d&#39;un filigrane ou que tous les fichiers téléchargés par un indépendant peuvent être traités pour créer des rendus spécifiques.
 
@@ -98,7 +98,7 @@ Pour un modèle de processus, les utilisateurs peuvent créer un lanceur de proc
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 
 * Pour la conception des workflows, prenez en compte vos besoins pour tous les types de rendus. Si vous ne prévoyez pas la nécessité d’un rendu futur, supprimez son étape de création dans le workflow. Il est impossible par la suite de supprimer les rendus en masse. Les rendus superflus peuvent occuper beaucoup d’espace de stockage suite à une utilisation prolongée d’[!DNL Experience Manager]. Pour les ressources individuelles, vous pouvez supprimer manuellement les rendus à l’aide de l’interface utilisateur. Si plusieurs ressources sont concernées, vous pouvez, au choix, personnaliser [!DNL Experience Manager] pour supprimer des rendus spécifiques, ou supprimer les ressources et les charger à nouveau.
-* Par défaut, le processus de mise à jour des ressources  DAM comprend certaines étapes pour créer des miniatures et des rendus Web. Si des rendus par défaut sont supprimés du flux de travail, l’interface utilisateur de [!DNL Assets] ne s’affiche pas correctement.
+* Par défaut, le processus de mise à jour des ressources  DAM comprend quelques étapes pour créer des miniatures et des rendus Web. Si des rendus par défaut sont supprimés du flux de travail, l’interface utilisateur de [!DNL Assets] ne s’affiche pas correctement.
 
 >[!MORELIKETHIS]
 >
