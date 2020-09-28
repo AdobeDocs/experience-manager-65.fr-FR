@@ -1,12 +1,12 @@
 ---
-title: Réutilisation de ressources à l’aide de MSM pour [!DNL Adobe Experience Manager Assets].
-description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une copie principale et, en quelques clics, reçoivent les mises à jour des ressources parents.
+title: Réutilisation de ressources à l’aide de MSM
+description: Utilisez des ressources sur plusieurs pages/dossiers qui sont dérivées des ressources parents et liées à celles-ci. Les ressources restent synchronisées avec une copie Principale et, en quelques clics, reçoivent les mises à jour des ressources parents.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 75%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 75%
 Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and reused across multiple web-locations. The same is available for digital assets as MSM for [!DNL Assets] functionality. Using MSM for [!DNL Assets], you can:
 
 * créer des ressources une fois, puis en effectuer des copies pour les réutiliser dans d’autres zones du site ;
-* Maintenez plusieurs copies synchronisées et mettez à jour la copie principale d’origine une seule fois afin de transmettre les modifications aux copies enfants.
+* Maintenez plusieurs copies synchronisées et mettez à jour la copie Principale d’origine une seule fois pour transmettre les modifications aux copies enfants.
 * effectuer des modifications locales en suspendant temporairement ou définitivement la liaison entre les ressources parents et enfants.
 
 ## Conditions préalables {#configprereq}
@@ -28,7 +28,7 @@ To use MSM for [!DNL Assets], install at least Service Pack 1. Pour plus d’inf
 
 ### Fonctionnement et avantages {#how-it-works-and-the-benefits}
 
-Pour comprendre les scénarios d’utilisation afin de réutiliser le même contenu (texte et ressources) sur plusieurs emplacements web, consultez les [scénarios MSM possibles](/help/sites-administering/msm.md). [!DNL Experience Manager] conserve un lien entre la ressource d’origine et ses copies liées, appelées Live Copies. La liaison conservée permet de transmettre des modifications centralisées à de nombreuses Live Copies. Cela permet d’effectuer des mises à jour plus rapides tout en éliminant les limites liées à la gestion des copies en double. La propagation des modifications n’entraîne aucune erreur et est centralisée. Cette fonctionnalité permet des mises à jour qui sont limitées aux Live Copies sélectionnées. Les utilisateurs peuvent détacher la liaison, c’est-à-dire rompre l’héritage, et effectuer des modifications locales qui ne sont pas remplacées lors de la prochaine mise à jour de la copie principale et de l’application des modifications. La désolidarisation peut être effectuée pour certains champs de métadonnées sélectionnés ou pour une ressource entière. Il permet de mettre à jour localement les ressources héritées à l’origine d’une copie principale.
+Pour comprendre les scénarios d’utilisation afin de réutiliser le même contenu (texte et ressources) sur plusieurs emplacements web, consultez les [scénarios MSM possibles](/help/sites-administering/msm.md). [!DNL Experience Manager] conserve un lien entre la ressource d’origine et ses copies liées, appelées Live Copies. La liaison conservée permet de transmettre des modifications centralisées à de nombreuses Live Copies. Cela permet d’effectuer des mises à jour plus rapides tout en éliminant les limites liées à la gestion des copies en double. La propagation des modifications n’entraîne aucune erreur et est centralisée. Cette fonctionnalité permet des mises à jour qui sont limitées aux Live Copies sélectionnées. Les utilisateurs peuvent détacher la liaison, c’est-à-dire rompre l’héritage, et effectuer des modifications locales qui ne sont pas remplacées lors de la prochaine mise à jour de la copie Principale et de l’application des modifications. La désolidarisation peut être effectuée pour certains champs de métadonnées sélectionnés ou pour une ressource entière. Il permet de mettre à jour localement les ressources héritées à l’origine d’une copie Principale.
 
 MSM entretient une relation dynamique entre la ressource source et ses Live Copies de sorte que :
 
@@ -37,7 +37,7 @@ MSM entretient une relation dynamique entre la ressource source et ses Live Copi
 
 ### Glossary of MSM for [!DNL Assets] terms {#glossary}
 
-**Source :** Fichiers ou dossiers d’origine. Copie de Principal à partir de laquelle les copies en direct sont dérivées.
+**Source :** Fichiers ou dossiers d’origine. Copie Principal à partir de laquelle les copies dynamiques sont dérivées.
 
 **Copie en direct :** Copie des fichiers/dossiers source synchronisés avec sa source. Les Live Copies peuvent être une source d’autres Live Copies. Découvrez comment créer des Live Copies.
 
@@ -132,7 +132,7 @@ Pour vérifier les informations et les états d’une ressource ou d’un dossie
 
    ![Affichage des états des Live Copies dans la console Live Copy de la source](assets/livecopy-statuses.png)
 
-   *Figure : Etat des Vues des copies dynamiques dans la consoleLive Copy de la source.*
+   *Figure : Etat des vues des copies dynamiques dans la consoleLive Copy de la source.*
 
 1. Pour afficher les informations détaillées sur chaque fichier dans le dossier de la copie dynamique, sélectionnez un fichier et cliquez sur **[!UICONTROL État de la relation]** dans la barre d’outils.
 
