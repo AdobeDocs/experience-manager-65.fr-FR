@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Intégrer [!DNL Adobe InDesign Server]'
+title: ' [!DNL Assets] Intégrer [!DNL InDesign Server]'
 description: Learn how to integrate [!DNL Adobe Experience Manager Assets] with [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 38%
@@ -23,7 +23,7 @@ To fully upload files to [!DNL Experience Manager Assets] that you have created 
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] est proposé sous forme de deux offres distinctes. [Application de bureau Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) qui permet de concevoir des mises en page pour l’impression et la distribution numérique. [Adobe InDesign Server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer par programmation des documents automatisés en fonction de ce que vous avez créé [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/scripting.html) . Les scripts sont écrits dans [!DNL ExtendScript], ce qui est similaire à [!DNL JavaScript]la méthode. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] est proposé sous forme de deux offres distinctes. [Application de bureau Adobe InDesign](https://www.adobe.com/fr/products/indesign.html) utilisée pour concevoir des mises en page de page pour l’impression et la distribution numérique. [adobe indesign server](https://www.adobe.com/fr/products/indesignserver.html) vous permet de créer par programmation des documents automatisés en fonction de ce que vous avez créé [!DNL InDesign]. Il fonctionne comme un service offrant une interface à son moteur [ExtendScript](https://www.adobe.com/devnet/scripting.html) .Les scripts sont écrits dans [!DNL ExtendScript], ce qui est similaire à [!DNL JavaScript]celui-ci. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## How the extraction works {#how-the-extraction-works}
 
@@ -44,9 +44,10 @@ Ce script de commande permet d’effectuer les opérations suivantes :
       * Des rendus PDF et JPG sont générés.
       * Des rendus HTML et IDML sont générés.
    * Post the resulting files back to [!DNL Experience Manager Assets].
+
    >[!NOTE]
    >
-   >IDML est un format XML qui effectue le rendu de tout le contenu du [!DNL InDesign] fichier. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. Pour plus d’informations, voir Formats d’échange [InDesign INX et IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML est un format XML qui effectue le rendu de tout le contenu du [!DNL InDesign] fichier. It is stored as an compressed package using [ZIP](https://www.techterms.com/definition/zip) compression. Pour plus d’informations, voir Formats d’échange d’ [InDesigns INX et IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
@@ -111,7 +112,7 @@ Arguments d’extraction de médias et chemins de scripts
 
 * **Étendre les scripts**: Vous pouvez spécifier différentes combinaisons de script ici. If you want your own scripts to be executed on the [!DNL InDesign Server], save the scripts at `/apps/settings/dam/indesign/scripts`.
 
-Pour plus d’informations sur [!DNL Adobe InDesign] les scripts, reportez-vous à la documentation destinée aux développeurs [InDesign.](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Pour plus d’informations sur [!DNL Adobe InDesign] les scripts, voir la documentation destinée aux développeurs d’ [InDesigns.](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -232,5 +233,5 @@ You can change the default administrator credentials (user name and password) fo
 
 >[!MORELIKETHIS]
 >
->* [A propos d’Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [A propos de Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
 
