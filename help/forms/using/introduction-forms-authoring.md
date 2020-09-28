@@ -10,10 +10,10 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '3075'
-ht-degree: 85%
+source-wordcount: '3115'
+ht-degree: 83%
 
 ---
 
@@ -146,7 +146,7 @@ Il vous permet de faire glisser des éléments du modèle de formulaire sur le f
   </tr>
   <tr>
    <td>Fichier en pièce jointe</td>
-   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque :</strong> le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichiers dans des formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formats de fichiers pris en charge</a>.</p> </td>
+   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire. Vous pouvez joindre plusieurs fichiers à un composant de pièce jointe.</p> <p><strong> Remarque : </strong><ul> <li> Pour joindre plusieurs fichiers à un composant de pièce jointe ouvert dans le navigateur Apple Safari, sélectionnez et joignez les fichiers un par un. Vous ne pouvez pas sélectionner et joindre plusieurs fichiers à la fois.</li> <li>Le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichier dans les formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formats de fichiers pris en charge</a>. </li> </ul></p> </td>
   </tr>
   <tr>
    <td>Liste des pièces jointes</td>
