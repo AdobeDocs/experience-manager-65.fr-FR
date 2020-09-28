@@ -1,11 +1,11 @@
 ---
-title: Configurez le balisage des ressources à l’aide de Smart Content Service.
+title: Configuration du balisage des ressources à l’aide de Smart Content Service
 description: Learn how to configure smart tagging and enhanced smart tagging in [!DNL Adobe Experience Manager], using the Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 506b965e4f1c18230357f25532d3fdd10f526ef0
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1240'
 ht-degree: 47%
 
 ---
@@ -44,7 +44,7 @@ To enable Enhanced Smart Tags, in addition to the above, also install the latest
 
 Un certificat public permet d’authentifier votre profil sur Adobe Developer Console.
 
-1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Service]** > Cloud Service **** hérités.
+1. Dans l’interface [!DNL Experience Manager] utilisateur, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > Cloud Services **** hérités.
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 
