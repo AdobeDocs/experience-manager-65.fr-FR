@@ -1,9 +1,9 @@
 ---
-title: Best Practices for [!DNL Assets].
+title: Best Practices for [!DNL Assets]
 description: Améliore la stabilité et les performances du système en charge en identifiant et en respectant les meilleures pratiques qui dépendent de votre déploiement et de votre configuration.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 25%
