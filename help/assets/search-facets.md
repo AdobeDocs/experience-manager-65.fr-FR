@@ -1,12 +1,12 @@
 ---
-title: Facettes de recherche.
+title: Facettes de recherche pour filtrer les résultats de la recherche
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 76%
+source-wordcount: '2489'
+ht-degree: 78%
 
 ---
 
@@ -44,9 +44,9 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Uti
 
 1. Sur la page Modifier des formulaires de recherche, faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
-   ![Appuyez et déplacez un prédicat pour personnaliser les filtres de recherche.](assets/drag_predicate.png)
+   ![Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche](assets/drag_predicate.png)
 
-   *Figure : Appuyez et déplacez un prédicat pour personnaliser les filtres de recherche.*
+   *Figure : Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche.*
 
 1. Sous l’onglet Paramètres, saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat.
 
@@ -64,14 +64,14 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Uti
 
    Associez une propriété de métadonnées à un prédicat dans le champ Nom de propriété
 
-1. Click the **[!UICONTROL Preview]** ![preview](assets/do-not-localize/preview_icon.png) to generate a preview of the Filters panel as it appears after you add the predicate.
+1. Cliquez sur **[!UICONTROL Aperçu]** ![aperçu](assets/do-not-localize/preview_icon.png) pour générer un aperçu du panneau Filtres tel qu’il apparaît une fois le prédicat ajouté.
 1. Examinez la structure du prédicat en mode Aperçu.
 
    ![Aperçu du formulaire de recherche avant de soumettre les modifications](assets/preview-1.png)
 
    Aperçu du formulaire de recherche avant de soumettre les modifications
 
-1. To close the preview, click the **[!UICONTROL Close]** ![close](assets/do-not-localize/close.png) on the upper-right corner of the preview.
+1. Pour fermer l’aperçu, cliquez sur **[!UICONTROL Fermer]** ![fermer](assets/do-not-localize/close.png) dans le coin supérieur droit de l’aperçu.
 1. Pour enregistrer les paramètres, cliquez sur **[!UICONTROL Terminé]**.
 1. Navigate to the Search panel in the [!DNL Assets] user interface. Le prédicat Propriété est ajouté au panneau.
 1. Enter a description for the asset to be searched in the text box. For example, enter `Adobe`. When you perform a search, assets with description matching `Adobe` are listed in the search results.
@@ -130,7 +130,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Dans le champ **[!UICONTROL Description]**, saisissez une description facultative, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher. Le prédicat Options est ajouté au panneau **Rechercher**. Les options proposées pour **[!UICONTROL Type de fichier]** sont présentées sous la forme de cases à cocher.
 
-## Ajouter un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
+## ajouter un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
 
 Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusieurs valeurs dans des ressources. Consider a scenario where you have images of multiple products in [!DNL Assets] and the metadata for each image includes an SKU number associated with the product. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
 
@@ -168,7 +168,7 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## Ajouter d&#39;autres prédicats {#adding-other-predicates}
+## ajouter d&#39;autres prédicats {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
