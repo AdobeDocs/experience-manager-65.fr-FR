@@ -1,12 +1,12 @@
 ---
-title: Install and configure ImageMagick to work with [!DNL Adobe Experience Manager Assets].
+title: Installation et configuration d’ImageMagick
 description: Découvrez le logiciel ImageMagick, comment l’installer, configurer l’étape de processus de ligne de commande et l’utiliser pour modifier, composer et générer des miniatures à partir d’images.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 48%
+source-wordcount: '693'
+ht-degree: 49%
 
 ---
 
@@ -21,7 +21,7 @@ Pour traiter des fichiers volumineux à l’aide d’ImageMagick, veuillez tenir
 
 >[!NOTE]
 >
->Si vous utilisez [!DNL Experience Manager] le service [!DNL Adobe Managed Services] (AMS), contactez le service à la clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB haute résolution. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
+>Si vous utilisez [!DNL Experience Manager] le service [!DNL Adobe Managed Services] (AMS), contactez le service à la clientèle Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB haute résolution. [!DNL Experience Manager] peut ne pas traiter de fichiers PSB très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## Installation d’ImageMagick {#installing-imagemagick}
 
