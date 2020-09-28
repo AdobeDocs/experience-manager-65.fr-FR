@@ -1,11 +1,11 @@
 ---
-title: Gérez les fichiers vidéo dans [!DNL Adobe Experience Manager].
+title: 'Gestion des ressources vidéo '
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93b8fccc2a0c4663104150fdba3651ff5e4f6bbc
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '809'
 ht-degree: 37%
 
 ---
@@ -57,7 +57,7 @@ Pour configurer une limite de taille de fichier supérieure, procédez comme sui
 1. From the toolbar, click **[!UICONTROL Save All]**.
 1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. On the [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles] page, under the Name column of the table, locate and click **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
-1. On the [!UICONTROL Adobe Granite Workflow External Process Job Handler] page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours). Cliquez sur **[!UICONTROL Enregistrer]**.
+1. On the [!UICONTROL Adobe Granite Workflow External Process Job Handler] page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours). Cliquez sur **[!UICONTROL Save]**.
 1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
 1. On the Workflow Models page, select **[!UICONTROL Dynamic Media Encode Video]**, then click **[!UICONTROL Edit]**.
 1. On the workflow page, double-click the **[!UICONTROL Dynamic Media Video Service Process]** component.
