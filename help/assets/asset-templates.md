@@ -1,11 +1,11 @@
 ---
-title: Modèles de ressources dans [!DNL Adobe Experience Manager Assets].
+title: Modèles de ressources
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1555'
 ht-degree: 33%
 
 ---
@@ -96,7 +96,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
    >[!NOTE]
    >
-   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Pour plus d’informations, reportez-vous à la page [Intégration de ressources de Experience Manager avec InDesign Server](/help/assets/indesign.md).
+   >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Pour plus d’informations, reportez-vous à la page [Intégration de ressources de Experience Manager à l’InDesign Server](/help/assets/indesign.md).
 
 1. Pour modifier le texte d’un champ modifiable, cliquez sur le champ de texte à partir de la liste des champs modifiables et modifiez le texte du champ.
 
