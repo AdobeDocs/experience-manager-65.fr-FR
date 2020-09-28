@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 13%
@@ -21,7 +21,7 @@ ht-degree: 13%
 
 # Fonction de messagerie {#messaging-feature}
 
-Outre les interactions visibles par le public qui se produisent dans les forums et les commentaires, la fonction de messagerie des AEM Communities permet aux membres de la communauté d&#39;interagir entre eux de façon plus privée.
+Outre les interactions visibles par le public qui se produisent dans les forums et les commentaires, la fonction de messagerie d&#39;AEM Communities permet aux membres de la communauté d&#39;interagir entre eux de manière plus privée.
 
 This feature can be included when a [community site](/help/communities/overview.md#communitiessites) is created.
 
@@ -41,7 +41,9 @@ La fonction de messagerie permet de :
 
 **G** - restaurer un message supprimé
 
-![message-section](assets/messaging-section.png) - ![restauration-message](assets/restore-message.png)
+![section de messagerie](assets/messaging-section.png)
+
+![restore-message](assets/restore-message.png)
 
 Pour activer et modifier la fonction de messagerie, voir :
 
@@ -87,17 +89,17 @@ Une fois l&#39;héritage annulé, il est possible de sélectionner l&#39;icône 
 
    Si cette option est cochée, l’URL de réponse et l’URL de Vue font référence à une ressource ; dans le cas contraire, les données sont transmises en tant que paramètres de requête dans l’URL.
 
-* **Formulaire d&#39;affichage de Profil**
+* **Formulaire d&#39;affichage de profil**
 
-   profil à utiliser pour afficher le profil des expéditeurs.
+   Profil à utiliser pour afficher le profil des expéditeurs.
 
 * **Dossier Corbeille**
 
-   Si cette case est cochée, ce composant de Liste de messages affiche uniquement les messages signalés comme supprimés (corbeille).
+   Si cette case est cochée, ce composant de Liste de messages affiche uniquement les messages marqués comme supprimés (corbeille).
 
 * **Chemins des dossiers**
 
-   (*Obligatoire*) Référence aux valeurs définies pour **inbox.path.name** et **stitems.path.name** dans le service d&#39;exploitation de messagerie [AEM Communities. ](/help/communities/messaging.md#messaging-operations-service) Lors de la configuration pour une `Inbox`, ajoutez une entrée en utilisant la valeur de **inbox.path.name**. Lors de la configuration d’une `Outbox`entrée, ajoutez une entrée en utilisant la valeur de **stitems.path.name**. Lors de la configuration pour `Trash`, ajoutez deux entrées avec les deux valeurs.
+   (*Obligatoire*) Référence aux valeurs définies pour **inbox.path.name** et **stitems.path.name** dans le service d’opérations de messagerie [AEM Communities. ](/help/communities/messaging.md#messaging-operations-service) Lors de la configuration pour une `Inbox`, ajoutez une entrée en utilisant la valeur de **inbox.path.name**. Lors de la configuration d’une `Outbox`entrée, ajoutez une entrée en utilisant la valeur de **stitems.path.name**. Lors de la configuration pour `Trash`, ajoutez deux entrées avec les deux valeurs.
 
 #### Onglet Affichage {#display-tab}
 
