@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 23aee6802e625e82d18a205586eb77341b6ef16e
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 77%
+source-wordcount: '3247'
+ht-degree: 76%
 
 ---
 
@@ -32,7 +32,6 @@ Ce document répertorie les plateformes client et serveur prises en charge pour 
 >
 >* Pour une liste complète des exceptions concernant les plateformes de serveur prises en charge, voir [Exceptions aux plateformes de serveur prises en charge](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >* AEM Forms on JEE ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
-
 >
 
 
@@ -457,11 +456,9 @@ aem forms App prend désormais en charge Apache Cordova. Voici les versions spé
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
 >* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
-
    >
    >
 * Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
-
 >
 
 
@@ -640,7 +637,6 @@ Pour la configuration requise supplémentaire, voir :
 >* Administration Console n’est pas prise en charge sur Safari.
 >* Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
 >* Forms Portal prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
-
 >
 
 
@@ -675,7 +671,6 @@ Pour la configuration requise supplémentaire, voir :
 >[!NOTE]
 >
 >* Le Portail Formulaires est pris en charge sur Safari sur iPad uniquement.
-
 >
 
 
@@ -688,7 +683,7 @@ L’application AEM Forms est disponible sur les plateformes suivantes :
 
 | **Plate-forme** | **Appareils mobiles** |
 |---|---|
-| Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 11 et versions ultérieures. |
+| Apple iOS  | Apple iPhone, iPad, iPad Air et iPad mini exécutant iOS 12 et versions ultérieures. |
 | Google Android | Android 5.1 et versions ultérieures. L&#39;application AEM Forms est certifiée sur les tablettes Samsung Galaxy 7 et 10 pouces et les smartphones les plus courants. |
 | Microsoft Windows | Périphériques Microsoft Surface, tablettes, ordinateurs portables et ordinateurs de bureau exécutant le système d&#39;exploitation Microsoft Windows 10. |
 
@@ -734,3 +729,8 @@ Dans des circonstances échappant au contrôle d’Adobe, des correctifs de four
 Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de référence prises en charge par une version d’AEM Forms on JEE et les définitions de correctif prises en charge à tout moment.
 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
+
+## Historique des révisions {#revision-history}
+
+* 9 septembre 2020
+   * Version prise en charge d’iOS pour l’application AEM Forms remplacée par iOS 12. La version précédente était iOS 11.
