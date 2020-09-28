@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
 workflow-type: tm+mt
-source-wordcount: '7077'
+source-wordcount: '7109'
 ht-degree: 51%
 
 ---
@@ -51,7 +51,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 >[!NOTE]
 >
->Pour accéder à l’interface utilisateur de l’agent de communications interactives dans la boîte de réception AEM, vous devez disposer d’affectations de groupe cm-agent-users et workflow-users.
+>Pour accéder à l&#39;interface utilisateur de l&#39;agent de communications interactives dans AEM boîte de réception, vous devez disposer d&#39;affectations de groupe cm-agent-users et de groupes workflow-users.
 
 * **Formulaire adaptatif ou chemin** de communication interactive : Spécifiez le chemin d’accès du formulaire adaptatif ou de la communication interactive. Vous pouvez utiliser le formulaire adaptatif ou la communication interactive envoyé au flux de travail, disponible à un chemin absolu, ou récupérer le formulaire adaptatif à partir d’un chemin stocké dans une variable de type de données de chaîne.
 * **Sélectionnez le fichier PDF d’entrée à l’aide de :** Spécifiez le chemin d’accès d’un document PDF non interactif. Le champ apparaît lorsque vous sélectionnez un document PDF non interactif dans le champ Type. Vous pouvez sélectionner le fichier PDF d’entrée à l’aide du chemin d’accès relatif à la charge utile, enregistré à un chemin absolu ou à l’aide d’une variable de type de données de Document. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. Le chemin n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour utiliser l’option Chemin d’accès du fichier PDF.
@@ -70,7 +70,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **Informations envoyées :** les champs répertoriés ci-dessous servent d’emplacement de sortie pour la tâche :
 
    * **Enregistrez le fichier de données de sortie à l’aide de :** Enregistrez le fichier de données (.json,. xml, .doc ou modèle de données de formulaire). Le fichier de données contient des informations envoyées via le formulaire associé. Vous pouvez enregistrer le fichier de données de sortie à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document, XML ou JSON. For example, [Payload_Directory]/Workflow/data, where data is a file.
-   * **Enregistrez les pièces jointes à l’aide de :** Enregistrez les pièces jointes fournies dans une tâche. Vous pouvez enregistrer les pièces jointes à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de tableau de type de données de Document.
+   * **Enregistrez les pièces jointes à l’aide de :** Enregistrez les pièces jointes de formulaire fournies dans une tâche. Vous pouvez enregistrer les pièces jointes à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de tableau de type de données de Document.
    * **Enregistrer le Document d&#39;enregistrement à l&#39;aide de :** Chemin d’accès pour enregistrer un fichier Document d’enregistrement. For example, [Payload_Directory]/DocumentofRecord/credit-card.pdf. Vous pouvez enregistrer le Document d’enregistrement à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données de Document. Si vous sélectionnez l’option **Relatif à la charge** , le Document d’enregistrement n’est pas généré si le champ de chemin est laissé vide. Cette option est disponible uniquement si vous sélectionnez Formulaire adaptatif dans la liste déroulante Type.
 
    * **Enregistrer les données de Canal Web à l&#39;aide de :** Enregistrez le fichier de données de Canal Web à l’aide d’un chemin d’accès relatif à la charge utile ou stockez-le dans une variable de type de données Document, JSON ou Modèle de données de formulaire. Cette option est disponible uniquement si vous sélectionnez Interface utilisateur de l’agent de communication interactif dans la liste déroulante Type.
@@ -93,7 +93,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **Modèle de courrier électronique HTML** : sélectionnez un modèle de courrier électronique pour la notification électronique. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
 * **Autoriser la délégation à :** la boîte de réception AEM permet à l’utilisateur connecté de déléguer le processus affecté à un autre utilisateur. Vous pouvez déléguer la tâche au sein du même groupe ou à l’utilisateur du processus d’un autre groupe. Si la tâche est affectée à un utilisateur unique et que l’option **Autoriser la délégation aux membres du groupe désigné** est sélectionnée, vous ne pouvez pas déléguer la tâche à un utilisateur ou à un autre groupe.
-* **Paramètres de partage :** La boîte de réception AEM propose des options permettant de partager une ou toutes les tâches de la boîte de réception avec d’autres utilisateurs :
+* **Paramètres de partage :** aem boîte de réception propose des options permettant de partager une ou toutes les tâches de la boîte de réception avec d’autres utilisateurs :
    * Lorsque l’option **Autoriser les personnes désignées à partager explicitement dans la boîte de réception** est sélectionnée, l’utilisateur peut cliquer sur la tâche et la partager avec un autre utilisateur AEM.
    * Lorsque l’option **Autoriser les personnes désignées à partager par le biais de la boîte de réception** est sélectionnée et qu’un utilisateur partage ses éléments de boîte de réception ou permet à d’autres utilisateurs d’accéder à ses éléments de boîte de réception, seules les tâches dont l’option est activée sont partagées avec d’autres utilisateurs.
 
@@ -251,7 +251,8 @@ L’étape Invoquer le service de modèle de données de formulaire contient les
 * **Sélectionnez le document JSON d’entrée à l’aide** de : Fichier JSON contenant des valeurs pour tous les arguments de service. Le chemin d’accès du fichier JSON peut être **relatif à la charge utile** ou à un **chemin d’accès absolu.** Vous pouvez également récupérer le document JSON d’entrée à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
 
 * **JSON Dot Notation :** laissez le champ vide pour utiliser tous les objets du fichier JSON spécifié en tant qu’entrée pour les arguments de service. Pour lire un objet JSON spécifique à partir du fichier JSON spécifié en tant qu’entrée pour des arguments de service, spécifiez la notation par point pour l’objet JSON. Par exemple, si vous avez un fichier JSON identique à l’un des fichiers indiqué au début de la section, spécifiez insurance.customerDetails pour fournir tous les détails d’un client en tant qu’entrée du service.
-* **Output de service > Mappez et écrivez des valeurs de sortie à une variable ou à des métadonnées :** Sélectionnez l’option permettant d’enregistrer les valeurs de sortie en tant que propriétés du noeud de métadonnées de l’instance de processus dans crx-repository. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable de type Long.
+* **Output de service > Mappez et écrivez des valeurs de sortie à une variable ou à des métadonnées :** Sélectionnez l’option permettant d’enregistrer les valeurs de sortie en tant que propriétés du noeud de métadonnées de l’instance de processus dans crx-repository. Spécifiez le nom de la propriété de métadonnées et sélectionnez l’attribut de sortie de service correspondant à mapper avec la propriété de métadonnées, par exemple, mappez la valeur numéro_de_téléphone renvoyé par le service de sortie avec la propriété numéro_de_téléphone des métadonnées du processus. De même, vous pouvez stocker la sortie dans une variable de type de données Long.Lorsque vous sélectionnez une propriété pour l&#39;option de mappage **[!UICONTROL de l&#39;attribut de sortie]** Service, seules les variables capables de stocker les données de la propriété sélectionnée sont renseignées pour l&#39;option **[!UICONTROL Enregistrer la sortie dans]**.
+
 * **Output de service > Save output to variable or a JSON file :** Sélectionnez l’option permettant d’enregistrer les valeurs de sortie dans un fichier JSON à un chemin absolu, à un chemin relatif à la charge utile ou dans une variable.
 * **Enregistrez le document JSON de sortie à l’aide des options ci-dessous :** Enregistrez le fichier JSON de sortie. Le chemin d’accès du fichier JSON peut être relatif à la charge utile ou à un chemin d’accès absolu. Vous pouvez également enregistrer le fichier JSON de sortie à l’aide d’une variable de type de données JSON ou Modèle de données de formulaire.
 
@@ -279,9 +280,9 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 
 ## Etapes Services de document {#document-services-steps}
 
-Les services de document AEM sont un ensemble de services permettant de créer, d’assembler et de sécuriser des documents PDF. AEM Forms fournit une étape AEM Workflow distincte pour chaque service de document.
+Les services de document AEM sont un ensemble de services permettant de créer, d’assembler et de sécuriser des documents PDF. aem forms fournit une étape de flux de travail AEM distincte pour chaque service de document.
 
-À l’instar des autres étapes du processus AEM Forms, telles que Affecter une Tâche, Envoyer un courriel et Signer le Document, vous pouvez utiliser des variables dans toutes les étapes des services de Document AEM. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans les workflows](../../forms/using/variable-in-aem-workflows.md)AEM.
+À l’instar des autres étapes du processus AEM Forms, telles que Affecter une Tâche, Envoyer un courriel et Signer un Document, vous pouvez utiliser des variables dans toutes les étapes AEM services de Document. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans AEM workflows](../../forms/using/variable-in-aem-workflows.md).
 
 ### Étape Appliquer l’horodatage du document {#apply-document-time-stamp-step}
 
@@ -344,7 +345,7 @@ Optimise les fichiers PDF en réduisant leur taille. Cette conversion a pour eff
 
 Les paramètres d’optimisation spécifient comment les fichiers sont optimisés. Voici des exemples de paramètres :
 
-* Version PDF Cible
+* Version PDF cible
 * Ignorer les objets tels que les actions JavaScript et les vignettes incorporées
 * Ignorer les données utilisateur telles que les commentaires et les pièces jointes
 * Ignorer les paramètres incorrects ou inutilisés
