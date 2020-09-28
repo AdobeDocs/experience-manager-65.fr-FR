@@ -1,11 +1,11 @@
 ---
-title: Étendre la fonctionnalité de recherche de [!DNL Adobe Experience Manager Assets].
+title: Étendre la fonctionnalité de recherche.
 description: Étendez les fonctionnalités de recherche [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 77%
 
 ---
@@ -21,7 +21,7 @@ You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommande l’utilisation de l’interface utilisateur tactile. For customization, see [search facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). adobe recommande l’utilisation de l’interface utilisateur tactile. For customization, see [search facets](/help/assets/search-facets.md).
 
 ## Incrustation {#overlaying}
 
