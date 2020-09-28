@@ -1,11 +1,11 @@
 ---
-title: Process assets using media handlers and workflows in [!DNL Adobe Experience Manager].
+title: Traiter des fichiers à l’aide de gestionnaires de médias et de workflows
 description: Découvrez les gestionnaires de médias et comment utiliser des workflows pour effectuer des tâches sur vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2108'
 ht-degree: 52%
 
 ---
@@ -50,7 +50,7 @@ Tous les gestionnaires effectuent les tâches suivantes :
 * extraction de toutes les métadonnées disponibles dans la ressource.
 * création d’une image miniature d’un fichier.
 
-Pour vue des gestionnaires de médias actifs :
+Pour vue des gestionnaires de médias principaux :
 
 1. Dans votre navigateur, accédez à la page suivante : `http://localhost:4502/system/console/components`.
 1. Cliquez sur `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
