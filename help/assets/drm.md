@@ -1,12 +1,12 @@
 ---
-title: Gestion des droits numériques dans AEM [!DNL Adobe Experience Manager Assets].
+title: Digital Rights Management des actifs
 description: Découvrez comment gérer les informations d’expiration et d’état des ressources sous licence dans [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 84%
+source-wordcount: '1423'
+ht-degree: 83%
 
 ---
 
