@@ -1,12 +1,12 @@
 ---
-title: Téléchargez des ressources numériques depuis [!DNL Adobe Experience Manager].
+title: Télécharger des ressources
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 76%
+source-wordcount: '850'
+ht-degree: 77%
 
 ---
 
