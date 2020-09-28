@@ -1,11 +1,11 @@
 ---
-title: Lightbox comme galerie d'images personnelle dans [!DNL Adobe Experience Manager Assets].
-description: Découvrez Lightbox en tant que galerie d’images personnelle dans Adobe Experience Manager Assets].
+title: Lightbox comme galerie d’images personnelle
+description: Découvrez Lightbox comme votre galerie d’images personnelle dans Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '249'
 ht-degree: 53%
 
 ---
