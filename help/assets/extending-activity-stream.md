@@ -1,9 +1,9 @@
 ---
-title: Intégration [!DNL Assets] avec le flux d’activité.
+title: Intégration [!DNL Assets] avec le flux d’activité
 description: Describes the recording capabilities of [!DNL Experience Manager] and how to configure it to record specific events.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 53%
@@ -53,7 +53,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 1. Vérifiez les **[!UICONTROL types d’événement]** que vous souhaitez enregistrer dans le flux d’activités de l’utilisateur. 
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Save]**.
 
 ## Lire les événements enregistrés {#reading-recorded-events}
 
