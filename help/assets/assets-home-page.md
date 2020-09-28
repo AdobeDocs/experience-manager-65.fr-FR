@@ -1,17 +1,17 @@
 ---
-title: Expérience de Page d'accueil de [ ! Ressources d’Adobe Experience Manager DNL].
+title: Expérience de Page d'accueil [ ! Ressources DNL]
 description: Personalize the [!DNL Experience Manager Assets] Home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '562'
 ht-degree: 35%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Assets] Expérience de Page d&#39;accueil {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Expérience de page d&#39;accueil {#aem-assets-home-page-experience}
 
 Personalize the [!DNL Adobe Experience Manager Assets] home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
 
@@ -65,7 +65,7 @@ Cette section s’affiche sous la section Bienvenue et contient des widgets prê
 * Récent
 * Découvrez
 
-**Activité**: Sous cette section, le widget **[!UICONTROL Mon Activité]** affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les téléchargements, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
+**activité**: Sous cette section, le widget **[!UICONTROL Mon Activité]** affiche les activités récentes effectuées par l’utilisateur connecté avec des ressources (y compris des ressources sans rendus), par exemple les téléchargements, les téléchargements, la création de ressources, les modifications, les commentaires, les annotations et les partages.
 
 **Récent**: Le widget **[!UICONTROL Récemment affiché]** sous cette section affiche les entités récemment consultées par l’utilisateur connecté, y compris les dossiers, les collections et les projets.
 
