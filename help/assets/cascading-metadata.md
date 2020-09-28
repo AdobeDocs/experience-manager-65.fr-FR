@@ -1,9 +1,9 @@
 ---
-title: Métadonnées en cascade dans [!DNL Adobe Experience Manager Assets].
+title: Métadonnées en cascade dans [!DNL Assets]
 description: Cet article décrit comment définir des métadonnées en cascade pour des ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 82%
