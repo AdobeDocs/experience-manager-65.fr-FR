@@ -1,11 +1,11 @@
 ---
-title: API HTTP [ ! Ressources DNL] dans [!DNL Adobe Experience Manager].
+title: API HTTP [ ! Ressources DNL].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1672'
 ht-degree: 82%
 
 ---
