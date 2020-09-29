@@ -3,10 +3,10 @@ title: Dossiers privés pour le partage de fichiers
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 22%
+source-wordcount: '591'
+ht-degree: 24%
 
 ---
 
@@ -82,15 +82,4 @@ Vous pouvez supprimer un dossier en le sélectionnant et en sélectionnant l’o
 >[!NOTE]
 >
 >Si vous supprimez un dossier à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés.
-Toutefois, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de [JMX](#group-clean-up-jmx).
-
-### Utiliser JMX pour nettoyer les groupes d’utilisateurs inutilisés {#group-clean-up-jmx}
-
-Pour nettoyer le référentiel des groupes d’utilisateurs inutilisés :
-
-1. Ouvrez le JMX pour nettoyer les groupes redondants des ressources de votre instance d’ [!DNL Experience Manager] auteur à partir de `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-Par exemple, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-
-1. Appelez la `clean` méthode à partir de ce JMX.
-
-Vous pouvez constater que tous les groupes d’utilisateurs redondants ou les groupes générés automatiquement (créés lors de la création d’un dossier portant le même nom qu’un groupe précédemment supprimé) sont supprimés du chemin d’accès `/home/groups/mac/default/<user_name>/<folder_name>`.
+Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être nettoyés du référentiel à l’aide de la `clean` méthode JMX dans votre instance d’auteur (http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redondants+groups+for+Assets).
