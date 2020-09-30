@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: add17f46dfb292aeaf8425e5f75cfe955ed93cbc
 workflow-type: tm+mt
-source-wordcount: '2424'
-ht-degree: 61%
+source-wordcount: '2468'
+ht-degree: 58%
 
 ---
 
@@ -37,7 +37,7 @@ L’utilisation de Maven pour créer votre projet AEM présente plusieurs avanta
 
 ### Maven Project Archetypes {#maven-project-archetypes}
 
-Adobe fournit deux archétypes Maven qui peuvent servir de base à vos projets AEM. Pour plus d&#39;informations, consultez les liens ci-dessous :
+adobe fournit deux archétypes Maven qui peuvent servir de base à vos projets AEM. Pour plus d&#39;informations, consultez les liens ci-dessous :
 
 * [archétype du projet AEM](https://github.com/adobe/aem-project-archetype)
 * [Maven archetype for Single Page Applications Starter Kit](https://github.com/adobe/aem-spa-project-archetype)
@@ -46,22 +46,26 @@ Adobe fournit deux archétypes Maven qui peuvent servir de base à vos projets A
 
 ### What is the UberJar? {#what-is-the-uberjar}
 
-&quot;UberJar&quot; est le nom informel donné au fichier spécial d&#39;archives Java (JAR) fourni par Adobe. Ces fichiers JAR contiennent toutes les API Java publiques exposées par Adobe Experience Manager. Ils comprennent également des bibliothèques externes limitées, en particulier toutes les API publiques disponibles dans AEM qui proviennent d&#39;Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, et deux bibliothèques utilisées pour le traitement d&#39;image (la bibliothèque CYMK JPEG ImageIO de Werner Randelshofer et la bibliothèque d&#39;images TwelveMonkeys). Les variables UberJars contiennent uniquement des interfaces et des classes d’API, ce qui signifie qu’elles contiennent uniquement des interfaces et des classes qui sont exportées par un lot OSGi dans AEM. They also contain a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
+&quot;UberJar&quot; est le nom informel donné au fichier spécial d&#39;archives Java (JAR) fourni par l&#39;Adobe. Ces fichiers JAR contiennent toutes les API Java publiques exposées par Adobe Experience Manager. Ils comprennent également des bibliothèques externes limitées, en particulier toutes les API publiques disponibles dans AEM qui proviennent d&#39;Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, et deux bibliothèques utilisées pour le traitement d&#39;images (la bibliothèque CYMK JPEG ImageIO de Werner Randelshofer et la bibliothèque d&#39;images TwelveMonkeys). Les variables UberJars contiennent uniquement des interfaces et des classes d&#39;API, ce qui signifie qu&#39;elles contiennent uniquement des interfaces et des classes qui sont exportées par un lot OSGi dans AEM. They also contain a *MANIFEST.MF* file containing the correct package export versions for all of these exported packages, thus ensuring that projects built against the UberJar have the correct package import ranges.
 
 ### Why did Adobe create the UberJars? {#why-did-adobe-create-the-uberjars}
 
 Auparavant, les développeurs devaient gérer un nombre relativement élevé de dépendances individuelles par rapport aux différentes bibliothèques AEM. Chaque fois qu’une nouvelle API était utilisée, une ou plusieurs dépendances individuelles devaient être ajoutées au projet. Sur un seul projet, l’introduction du fichier UberJar a entraîné la suppression de 30 dépendances distinctes.
 
-Depuis AEM 6.5, Adobe fournit deux variables UberJars : l&#39;une qui inclut des interfaces obsolètes et l&#39;autre qui supprime ces interfaces obsolètes. En en référençant explicitement un au moment de la création, les clients sont sûrs de comprendre s’ils dépendent d’un code obsolète.
+À partir de AEM 6.5, Adobe fournit deux UberJars : l&#39;une qui inclut des interfaces obsolètes et l&#39;autre qui supprime ces interfaces obsolètes. En en référençant explicitement un au moment de la création, les clients sont sûrs de comprendre s’ils dépendent d’un code obsolète.
 
 La seconde variable Uber Jar supprime toutes les classes, méthodes et propriétés obsolètes afin que les clients puissent les compiler et déterminer si le code personnalisé est un BAT futur.
 
 ### Quel UberJar utiliser ? {#which-uberjar-to-use}
 
-AEM 6.5 est disponible en deux versions d’Uber Jar :
+aem 6.5 est disponible en deux versions d&#39;Uber Jar :
 
 1. Uber Jar - Inclut uniquement les interfaces publiques qui ne sont pas marquées pour la dépréciation. Il s’agit de l’UberJar **recommandé** à utiliser, car il aide les futurs BAT à utiliser le code de base à partir d’API obsolètes.
-1. Jar Uber avec des API obsolètes - Inclut toutes les interfaces publiques, y compris celles marquées pour la dépréciation dans une future version d’AEM.
+1. Uber Jar avec des API obsolètes - Inclut toutes les interfaces publiques, y compris celles marquées pour la dépréciation dans une future version d&#39;AEM.
+
+>[!NOTE]
+>
+>A partir de AEM 6.5.6, UberJar et d’autres artefacts associés sont disponibles dans le référentiel [](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) Maven Central au lieu du référentiel Adobe Public Maven (repo.adobe.com). Le fichier UberJar principal est renommé `uber-jar-<version>.jar`. Par conséquent, il n’existe aucune `classifier`valeur, avec `apis` comme valeur, pour la `dependency` balise.
 
 ### Comment utiliser UberJars ? {#how-do-i-use-the-uberjars}
 
@@ -83,7 +87,7 @@ If you are using Apache Maven as a build system (which is the case for most AEM 
 
 >[!CAUTION]
 >
->Adobe recommande de procéder au déploiement sur le Jar Uber pour que ***ne contienne pas* **les API obsolètes afin de s’assurer que vos applications s’exécuteront correctement sur les versions futures d’AEM.
+>L’Adobe recommande le déploiement sur le Jar Uber pour que ***ne contienne pas* **les API obsolètes afin de s’assurer que vos applications s’exécuteront correctement sur les versions futures de l’AEM.
 >
 >N&#39;utilisez Uber Jar avec prise en charge d&#39;API obsolète que si le code qui repose sur les API obsolètes ne peut pas être modifié pour prendre en charge les modifications.
 
@@ -97,7 +101,7 @@ If you are using Apache Maven as a build system (which is the case for most AEM 
 </dependency>
 ```
 
-Si votre entreprise utilise déjà un gestionnaire de référentiel Maven, tel que Sonatype Nexus, Apache Archiva ou JFrog Artifactory, ajoutez la configuration appropriée à votre projet pour référencer ce gestionnaire et ajoutez le référentiel Maven d’Adobe ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) à votre gestionnaire de référentiel.
+If your company is already using a Maven Repository Manager such as Sonatype Nexus, Apache Archiva, or JFrog Artifactory, add the appropriate configuration to your project to reference this repository manager and add Adobe&#39;s Maven repository ([https://repo.maven.apache.org/maven2/](https://repo.maven.apache.org/maven2/)) to your repository manager.
 
 If you are not using a repository manager, then you will need to add a *repository* element to your *pom.xml* file:
 
@@ -106,7 +110,7 @@ If you are not using a repository manager, then you will need to add a *reposito
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -114,7 +118,7 @@ If you are not using a repository manager, then you will need to add a *reposito
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
