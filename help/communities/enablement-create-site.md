@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1728'
 ht-degree: 4%
 
 ---
@@ -98,7 +98,7 @@ Assurez-vous que la plupart des cases à cocher sont désélectionnées pour [Us
 
 #### TAGGING {#tagging}
 
-Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant les espaces de nommage AEM précédemment définis dans la console [de](/help/sites-administering/tags.md#tagging-console) balisage (tel que l’espace de nommage [de](/help/communities/enablement-setup.md#create-tutorial-tags)didacticiel).
+Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de nommage précédemment définis dans la console [](/help/sites-administering/tags.md#tagging-console) Balisage (tel que l’espace de nommage [](/help/communities/enablement-setup.md#create-tutorial-tags)de didacticiel).
 
 En outre, la sélection des Espaces de nommage de balises pour le site communautaire limite la sélection présentée lors de la définition de catalogues et de ressources d’activation. Voir Ressources [d’activation du](/help/communities/tag-resources.md) balisage pour obtenir des informations importantes.
 
@@ -135,7 +135,7 @@ Acceptez les paramètres globaux par défaut pour la [modération](/help/communi
 
 #### ANALYTICS {#analytics}
 
-Dans la liste déroulante, sélectionnez la structure de service cloud Analytics configurée pour ce site communautaire.
+Dans la liste déroulante, sélectionnez la structure de service cloud Analytics configurée pour ce site de la communauté.
 
 La sélection affichée dans la capture d’écran `Communities`, est l’exemple de structure de la documentation de [configuration.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
@@ -160,7 +160,7 @@ Pour une communauté d’activation, il est nécessaire d’identifier un ou plu
    * Type `s`
    * Sélectionner `Sirius Nilson`
 
-* **Identifiant** d’organisation Marketing Cloud (facultatif) Identifiant d’un compte Adobe Analytics nécessaire lors de l’inclusion de la version de test [de pulsation](/help/communities/analytics.md#video-heartbeat-analytics) vidéo dans le rapports d’activation.
+* **ID** d’organisation du Marketing Cloud (facultatif) ID d’un compte Adobe Analytics nécessaire lors de l’inclusion d’Analyses [de pulsation](/help/communities/analytics.md#video-heartbeat-analytics) vidéo dans le rapports d’activation.
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -262,7 +262,7 @@ Dans cet exemple, le groupe `Community Ski Class` est ajouté en tant que membre
 
 Une fois qu’un site a été configuré et envoyé pour publication, [configurez le mappage](/help/communities/sites-console.md#configure-for-authentication-error) de connexion ( `Adobe Granite Login Selector Authentication Handler`) sur l’instance de publication. L’avantage est que lorsque les informations d’identification de connexion ne sont pas saisies correctement, l’erreur d’authentification affiche à nouveau la page de connexion du site de la communauté avec un message d’erreur.
 
-Ajoutez une `Login Page Mapping` comme :
+ajoutez un `Login Page Mapping` comme :
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -291,7 +291,7 @@ Pour commencer :
 
 1. Avec le nouveau `localhost.4503` noeud sélectionné
 
-   * Ajouter, propriété
+   * ajoute, propriété
 
       * **Nom** sling:match
       * **Chaîne de type**
@@ -299,7 +299,7 @@ Pour commencer :
 
    (doit se terminer par &#39;$&#39; char)
 
-   * Ajouter, propriété
+   * ajoute, propriété
 
       * **Nom** sling:internalRedirect
       * **Chaîne de type**
@@ -321,17 +321,17 @@ Pour commencer :
 
 #### Dépannage : Erreur lors de l&#39;enregistrement de la carte {#troubleshooting-error-saving-map}
 
-Si vous ne parvenez pas à enregistrer les modifications, assurez-vous que le nom du noeud est `localhost.4503`, avec un séparateur de point, et non `localhost:4503` avec un séparateur de point, car `localhost` il ne s’agit pas d’un préfixe d’espace de nommage valide.
+Si vous ne parvenez pas à enregistrer les modifications, assurez-vous que le nom du noeud est `localhost.4503`, avec un séparateur de points, et non `localhost:4503` avec un séparateur de points, car `localhost` il ne s’agit pas d’un préfixe d’espace de nommage valide.
 
 ![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Dépannage : Echec de la redirection {#troubleshooting-fail-to-redirect}
 
-La valeur &quot;**$**&quot; à la fin de la chaîne d’expression `sling:match` normale est cruciale, de sorte que seul le mappage exact `https://localhost:4503/` est effectué, sinon la valeur de redirection est précédée de tout chemin d’accès qui peut exister après le serveur:port dans l’URL. Par conséquent, lorsqu’AEM tente de rediriger vers la page de connexion, elle échoue.
+La valeur &quot;**$**&quot; à la fin de la chaîne d’expression `sling:match` normale est cruciale, de sorte que seul le mappage exact `https://localhost:4503/` est effectué, sinon la valeur de redirection est précédée de tout chemin d’accès qui peut exister après le serveur:port dans l’URL. Ainsi, lorsque AEM tente de rediriger vers la page de connexion, elle échoue.
 
 ## Modification du site communautaire {#modifying-the-community-site}
 
-Une fois le site créé, les auteurs peuvent utiliser l’icône [](/help/communities/sites-console.md#authoring-site-content) Ouvrir le site pour effectuer des activités de création AEM standard.
+Une fois le site créé, les auteurs peuvent utiliser l&#39;icône [](/help/communities/sites-console.md#authoring-site-content) Ouvrir le site pour effectuer des activités de création AEM standard.
 
 En outre, les administrateurs peuvent utiliser l&#39;icône [](/help/communities/sites-console.md#modifying-site-properties) Modifier le site pour modifier les propriétés du site, comme le titre.
 
@@ -342,7 +342,7 @@ Après toute modification, n’oubliez pas d’ **enregistrer** et de publier à
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
 
-### Ajouter un catalogue {#add-a-catalog}
+### ajouter un catalogue {#add-a-catalog}
 
 Le modèle de site communautaire choisi pour ce site communautaire doit contenir la fonctionnalité de catalogue.
 
@@ -350,7 +350,7 @@ Dans le cas contraire, la fonction de catalogue peut être facilement ajoutée. 
 
 Si la structure du site contient déjà la fonctionnalité de catalogue, son titre peut être modifié.
 
-Pour modifier la structure du site, accédez à la console **Communautés, Sites** , ouvrez le `enable` dossier et sélectionnez l&#39;icône **Modifier le site** pour accéder aux propriétés de `Enablement Tutorial`.
+Pour modifier la structure du site, accédez à **[!UICONTROL Communautés]** > Console **[!UICONTROL Sites]** , ouvrez le dossier, puis sélectionnez l&#39;icône `enable` Modifier le site **** pour accéder aux propriétés de .`Enablement Tutorial`
 
 Sélectionnez le panneau STRUCTURE pour ajouter un catalogue ou modifier un catalogue existant :
 
