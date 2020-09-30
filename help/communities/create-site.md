@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
 source-wordcount: '1661'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 4%
 
 ## Créer un site communautaire {#create-a-community-site}
 
-Utilisez l’instance d’auteur pour créer un site communautaire. Sur l&#39;instance de AEM Author :
+Utilisez l’instance d’auteur pour créer un site communautaire. Sur l’instance d’auteur AEM :
 
 1. Connectez-vous avec des droits d’administrateur.
-1. A partir de la navigation globale, accédez à **Navigation, Communautés, Sites.**
+1. Dans la navigation globale, accédez à **[!UICONTROL Communautés]** > **[!UICONTROL Sites]**.
 
 La console Sites des communautés fournit un assistant qui vous guide tout au long des étapes de création d&#39;un site communautaire. Il est possible de passer à l&#39; `Next` étape ou `Back` à l&#39;étape précédente avant de valider le site dans l&#39;étape finale.
 
@@ -71,7 +71,7 @@ Sélectionnez le style à appliquer au modèle. Une fois sélectionné, le thèm
 
 (Facultatif) Téléchargez une image de bannière pour l’afficher sur les pages du site. La bannière est épinglée sur le bord gauche du navigateur, entre l’en-tête du site de la communauté et les liens de navigation. La hauteur de la bannière est rognée à 120 pixels. Il n’existe aucun redimensionnement de la bannière pour s’adapter à la largeur du navigateur et à la hauteur de 120 pixels.
 
-![chlimage_1-284](assets/chlimage_1-284.png)
+![marque communautaire-site](assets/community-site-branding.png)
 
 ![upload-image-site](assets/upload-image-site.png)
 
@@ -81,7 +81,7 @@ Sélectionnez **Suivant**.
 
 A l’étape Paramètres, avant de sélectionner `Next`, notez que sept sections donnent accès à des configurations impliquant la gestion des utilisateurs, le balisage, la modération, la gestion de groupe, les analyses, la traduction et l’activation.
 
-Consultez le didacticiel [Prise en main des AEM Communities pour l’activation](/help/communities/getting-started-enablement.md) pour découvrir comment utiliser les fonctionnalités d’activation.
+Consultez le didacticiel [Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md) pour découvrir comment utiliser les fonctionnalités d’activation.
 
 #### Gestion des utilisateurs {#user-management}
 
@@ -102,14 +102,14 @@ Cochez toutes les cases de gestion des [utilisateurs.](/help/communities/sites-c
 
 #### TAGGING {#tagging}
 
-Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant les espaces de nommage AEM précédemment définis dans la console [de](/help/sites-administering/tags.md#tagging-console) balisage (tel que l’espace de nommage [de](/help/communities/setup.md#create-tutorial-tags)didacticiel).
+Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de nommage précédemment définis dans la console [](/help/sites-administering/tags.md#tagging-console) Balisage (tel que l’espace de nommage [](/help/communities/setup.md#create-tutorial-tags)de didacticiel).
 
 La recherche d&#39;espaces de nommage est facile avec la recherche par type. Par exemple :
 
 * Type `tut`
 * Sélectionner `Tutorial`
 
-![chlimage_1-286](assets/chlimage_1-286.png)
+![tagging](assets/tagging.png)
 
 #### ROLES {#roles}
 
@@ -133,15 +133,15 @@ Par exemple :
 
 Acceptez les paramètres globaux par défaut pour la [modération](/help/communities/sites-console.md#moderation) du contenu généré par l’utilisateur (UGC).
 
-![chlimage_1-287](assets/chlimage_1-287.png)
+![modération](assets/moderation1.png)
 
 #### ANALYTICS {#analytics}
 
 Si Adobe Analytics est sous licence et qu’un service et une structure de cloud Analytics ont été configurés, il est possible d’activer Analytics et de sélectionner la structure.
 
-Voir Configuration [Analytics pour les fonctionnalités](/help/communities/analytics.md)des communautés.
+Voir Configuration [d’Analytics pour les fonctionnalités](/help/communities/analytics.md)des communautés.
 
-![chlimage_1-288](assets/chlimage_1-288.png)
+![analyses](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -154,23 +154,23 @@ Les paramètres [de](/help/communities/sites-console.md#translation) traduction 
 * Sélectionner **Traduire la page entière**
 * Option de persistance par défaut
 
-![chlimage_1-289](assets/chlimage_1-289.png)
+![traduction-paramètres](assets/translation-settings.png)
 
 #### ENABLEMENT {#enablement}
 
 Laissez vide lorsque vous créez une communauté d’engagement.
 
-Pour consulter un didacticiel similaire sur la création rapide d’une communauté [d’](/help/communities/overview.md#enablement-community)activation, voir [Prise en main des AEM Communities pour l’activation](/help/communities/getting-started-enablement.md).
+Pour consulter un didacticiel similaire sur la création rapide d’une communauté [d’](/help/communities/overview.md#enablement-community)activation, voir [Prise en main de AEM Communities pour l’activation](/help/communities/getting-started-enablement.md).
 
 Sélectionnez **Suivant**.
 
-![chlimage_1-290](assets/chlimage_1-290.png)
+![activation](assets/enablement.png)
 
 ### Étape 4 : Créer un site de communautés {#step-create-communities-site}
 
 Sélectionnez **Créer.**
 
-![chlimage_1-291](assets/chlimage_1-291.png)
+![create-site](assets/create-site2.png)
 
 Une fois le processus terminé, le dossier du nouveau site s&#39;affiche dans la console Communautés - Sites.
 
@@ -236,11 +236,9 @@ Notez que UGC n&#39;est pas inclus dans le package du site.
 
 Une fois que le serveur de publication est en cours d’exécution, sélectionnez l’icône du monde pour publier le site de la communauté.
 
-![chlimage_1-292](assets/chlimage_1-292.png)
+![site de publication](assets/publish-site.png)
 
-Une fois le site de la communauté publié, un message s’affiche brièvement :
-
-![chlimage_1-293](assets/chlimage_1-293.png)
+Une fois le site de la communauté publié, un message s’affiche brièvement sous la forme &quot;Site publié&quot;.
 
 ### Nouveaux groupes d’utilisateurs de la communauté {#new-community-user-groups}
 
@@ -261,17 +259,17 @@ Notez que [Aaron McDonald](/help/communities/tutorials.md#demo-users) est membre
 * Modérateurs d’engagement de la communauté
 * Interagir avec la communauté Membres (indirectement en tant que membre du groupe Modérateurs)
 
-![chlimage_1-294](assets/chlimage_1-294.png)
+![groupe d’utilisateurs](assets/user-group.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![engager](assets/engage.png)
 
 ## Erreur de configuration pour l’authentification {#configure-for-authentication-error}
 
 Une fois qu’un site a été configuré et envoyé pour publication, [configurez le mappage](/help/communities/sites-console.md#configure-for-authentication-error) de connexion ( `Adobe Granite Login Selector Authentication Handler`) sur l’instance de publication. L’avantage est que lorsque les informations d’identification de connexion ne sont pas saisies correctement, l’erreur d’authentification affiche à nouveau la page de connexion du site de la communauté avec un message d’erreur.
 
-Ajouter un `Login Page Mapping` comme
+ajouter un `Login Page Mapping` sous
 
 * `/content/sites/engage/en/signin:/content/sites/engage/en`
 
@@ -298,12 +296,12 @@ Pour commencer :
 
 1. Avec le nouveau `localhost.4503` noeud sélectionné :
 
-   * Ajouter, propriété :
+   * ajoute, propriété :
 
    * **Nom** sling:match
       * **Chaîne de type**
       * **Valeur** localhost.4503/$(doit se terminer par &#39;$&#39; char)
-   * Ajouter, propriété :
+   * ajoute, propriété :
 
       * **Nom** sling:internalRedirect
       * **Chaîne de type**
@@ -321,21 +319,21 @@ Pour commencer :
 >Pour le désactiver, il vous suffit de préfixer la valeur de la `sling:match` propriété avec un &quot;x&quot; - `xlocalhost.4503/$` - et **Enregistrer tout**.
 
 
-![chlimage_1-297](assets/chlimage_1-297.png)
+![étapes facultatives](assets/optional-steps.png)
 
 #### Dépannage : Erreur lors de l&#39;enregistrement de la carte {#troubleshooting-error-saving-map}
 
 Si vous ne parvenez pas à enregistrer les modifications, assurez-vous que le nom du noeud est `localhost.4503`, avec un séparateur de points, et non `localhost:4503` avec un séparateur de points, car `localhost`il ne s’agit pas d’un préfixe d’espace de nommage valide.
 
-![chlimage_1-298](assets/chlimage_1-298.png)
+![message d’erreur](assets/error-message.png)
 
 #### Dépannage : Echec de la redirection {#troubleshooting-fail-to-redirect}
 
-La valeur &quot;**$**&quot; à la fin de la `sling:match`chaîne d’expression normale est cruciale, de sorte que seul le mappage exact `https://localhost:4503/` est effectué, sinon la valeur de redirection est précédée d’un chemin d’accès qui peut exister après le serveur:port dans l’URL. Par conséquent, lorsqu’AEM tente de rediriger vers la page de connexion, elle échoue.
+La valeur &quot;**$**&quot; à la fin de la `sling:match`chaîne d’expression normale est cruciale, de sorte que seul le mappage exact `https://localhost:4503/` est effectué, sinon la valeur de redirection est précédée d’un chemin d’accès qui peut exister après le serveur:port dans l’URL. Ainsi, lorsque AEM tente de rediriger vers la page de connexion, elle échoue.
 
 ### Modifier le site {#modify-the-site}
 
-Une fois le site créé, les auteurs peuvent utiliser l’icône [](/help/communities/sites-console.md#authoring-site-content) Ouvrir le site pour effectuer des activités de création AEM standard.
+Une fois le site créé, les auteurs peuvent utiliser l&#39;icône [](/help/communities/sites-console.md#authoring-site-content) Ouvrir le site pour effectuer des activités de création AEM standard.
 
 En outre, les administrateurs peuvent utiliser l&#39;icône [](/help/communities/sites-console.md#modifying-site-properties) Modifier le site pour modifier les propriétés du site, comme le titre.
 
