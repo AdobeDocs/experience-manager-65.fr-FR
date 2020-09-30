@@ -3,10 +3,10 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
 workflow-type: tm+mt
-source-wordcount: '2103'
-ht-degree: 96%
+source-wordcount: '2159'
+ht-degree: 93%
 
 ---
 
@@ -157,7 +157,9 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
 Les ressources récupérées peuvent être utilisées comme n’importe quelle autre ressource locale, à la différence que les métadonnées associées ne peuvent pas être modifiées.
 
-## Restrictions {#limitations}
+## Limitations and best practices {#tips-and-limitations}
+
+* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Asset Insight](/help/assets/touch-ui-asset-insights.md) sur l’ [!DNL Sites] instance.
 
 ### Autorisations et gestion des ressources {#permissions-and-managing-assets}
 
@@ -165,7 +167,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 * Les ressources locales sont des copies en lecture seule. Les composants [!DNL Experience Manager] effectuent des modifications non destructives des ressources. Aucune autre modification n’est autorisée.
 * Les ressources récupérées localement sont disponibles à des fins d’écriture uniquement. Les workflows de mise à jour de ressources ne peuvent pas être appliqués et les métadonnées ne peuvent pas être modifiées.
 * Seules les images et les formats de document répertoriés sont pris en charge. Les ressources [!DNL Dynamic Media], ainsi que les fragments de contenu et d’expérience, ne sont pas pris en charge.
-* Les schémas de métadonnées ne sont pas récupérés.
+* [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Cela signifie que toutes les métadonnées extraites peuvent ne pas être affichées. Si le schéma est mis à jour séparément, toutes les propriétés s’affichent.
 * Tous les auteurs [!DNL Sites] disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
 * Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
@@ -184,6 +186,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 * L’opération de récupération échoue après 5 secondes. Les auteurs peuvent rencontrer des problèmes lors de la récupération des ressources, par exemple en cas de problèmes de réseau. Les auteurs peuvent effectuer une nouvelle tentative et faire glisser la ressource distante de l’[!UICONTROL outil de recherche de contenu] vers l’[!UICONTROL éditeur de page].
 * Les modifications simples non destructives et les modifications prises en charge par le composant `Image` peuvent être effectuées sur les ressources récupérées. Les ressources sont en lecture seule.
 * La seule méthode pour récupérer à nouveau la ressource consiste à la faire glisser sur une page. Il n’existe aucune prise en charge d’API ni aucune autre méthode pour récupérer à nouveau une ressource afin de la mettre à jour.
+* Si des ressources sont désaffectées de la gestion des actifs numériques, elles continuent d’être utilisées sur [!DNL Sites] les pages.
 
 ## Résolution des problèmes   {#troubleshoot}
 
