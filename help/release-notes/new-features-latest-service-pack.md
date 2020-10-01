@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
+source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2518'
 ht-degree: 6%
 
 ---
@@ -199,6 +199,12 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 Par exemple, `On Time (MM-DD-YYYY HH:mm)`. Ici MM est le mois en format à deux chiffres, AAAA est l&#39;année, JJ est le jour en format à deux chiffres, HH est l&#39;heure en format militaire à 24 heures et mm est la minute.
 
 * Les lecteurs d’écran annoncent maintenant le `X` symbole pour supprimer les balises sélectionnées ainsi que le nombre de balises sélectionnées.
+
+#### Colonne triable pour la date de création des actifs dans la vue de liste (6.5.3.0) {#sortable-date-created-column}
+
+Une nouvelle colonne pouvant être triée pour la date de création des ressources est ajoutée dans la vue de liste DAM et dans les résultats de la recherche de ressources dans la vue de liste.
+
+![Colonne triable pour la date créée](assets/asset-created-date.png)
 
 #### Recherche visuelle pour [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
