@@ -12,6 +12,9 @@ discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
+workflow-type: tm+mt
+source-wordcount: '2447'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +29,7 @@ Cet article permet d’établir des objectifs clairs, et d’identifier les phas
 
 Le processus de mise à niveau d’AEM nécessite une planification soigneuse, une analyse et des phases d’exécution avec des livrables clés définis pour chaque phase.
 
-Notez qu’il est possible de mettre à niveau directement les versions 6.0 et 6.5 d’AEM. Les clients qui exécutent la version 5.6.x ou antérieure doivent d’abord effectuer la mise à niveau vers la version 6.0 ou ultérieure, avec la version 6.0(SP3) recommandée. Veuillez également noter que le nouveau format OAK Segment Tar est utilisé pour l’entrepôt de nœuds de segments depuis la version 6.3. Une migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
+Notez qu&#39;il est possible de mettre à niveau directement AEM versions 6.0 et jusqu&#39;à 6.5. Les clients exécutant la version 5.6.x et antérieure doivent d&#39;abord effectuer la mise à niveau vers la version 6.0 ou ultérieure, avec la version 6.0(SP3) recommandée. Veuillez également noter que le nouveau format OAK Segment Tar est utilisé pour l’entrepôt de nœuds de segments depuis la version 6.3. Une migration du référentiel vers ce nouveau format est obligatoire, même pour les versions 6.0, 6.1 et 6.2.
 
 >[!CAUTION]
 >
@@ -39,7 +42,7 @@ Vous trouverez ci-dessous la liste des domaines qui sont impactés dans un proje
 <table>
  <tbody>
   <tr>
-   <td><strong>Component</strong></td>
+   <td><strong>Composant</strong></td>
    <td><strong>Impact</strong></td>
    <td><strong>Description</strong></td>
   </tr>
@@ -112,7 +115,7 @@ L’environnement de production doit être dupliqué de manière exacte pour y e
 
 Durant la mise à niveau, il est possible que vous ayez aussi besoin de mettre à niveau d’autres composants de votre équipement technique, comme le système d’exploitation ou JVM. De même, il est possible qu’en raison de modifications dans la structure du référentiel, du matériel supplémentaire soit nécessaire. Cela concerne en général uniquement les clients effectuant la migration à partir des instances antérieures à 6.x, mais il est important de prendre ce point en considération. Il se peut enfin que des modifications soient nécessaires à vos pratiques opérationnelles, dont les processus de surveillance, de maintenance et de sauvegarde, et de reprise sur sinistre. 
 
-![doi_crpped](assets/doi_cropped.png)
+![doi_craded](assets/doi_cropped.png)
 
 Passez en revue les exigences techniques pour AEM 6.5 et vérifiez si votre logiciel et votre matériel actuels sont suffisants. Pour toutes modifications à vos processus opérationnels, voir les documents suivants :
 
@@ -136,7 +139,7 @@ Passez en revue les exigences techniques pour AEM 6.5 et vérifiez si votre log
 
 #### Observations relatives à la restructuration du contenu {#content-restructuring-considerations}
 
-AEM s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de telle sorte qu’elle ne nécessite pas de modifications du code au moment de la mise à niveau 6.5, bien qu’il soit recommandé de consulter les détails de la section [Restructuration du référentiel dans AEM](/help/sites-deploying/repository-restructuring.md) lors de la planification d’une mise à niveau.
+AEM s’accompagne de modifications au niveau de la structure du référentiel pour rendre les mises à niveau encore plus transparentes. Cela consiste notamment à déplacer le contenu du dossier /etc vers les dossiers /libs, /apps et /content, selon que le contenu appartient à Adobe ou à un client, ce qui limite les risques d’écrasement du contenu au cours des publications. La restructuration du référentiel a été effectuée de telle sorte qu’elle ne nécessite pas de modifications du code au moment de la mise à niveau 6.5, bien qu’il soit recommandé de consulter les détails de la section Restructuration du [référentiel dans AEM](/help/sites-deploying/repository-restructuring.md) lors de la planification d’une mise à niveau.
 
 ### Évaluation de la complexité de la mise à niveau {#assessing-upgrade-complexity}
 
@@ -154,7 +157,7 @@ L’outil de détection des motifs introduit récemment devrait vous donner une 
 
 Même si la documentation du processus de mise à niveau d’une instance AEM est disponible, la structure de réseau, l’architecture de déploiement et les personnalisations de chaque client nécessitent une mise au point et une adaptation de cette approche. Ainsi, nous vous encourageons à passer en revue toute la documentation mise à votre disposition et à l’utiliser pour documenter un runbook spécifique au projet, exposant les procédures de restauration et de mise à niveau spécifiques à suivre dans votre environnement. Si vous effectuez une mise à niveau à partir de CRX2, assurez-vous d’evaluer le temps nécessaire pour passer de CRX2 à Oak. Cela peut prendre beaucoup de temps pour les grands référentiels.
 
-![runbook-diagramme](assets/runbook-diagram.png)
+![schéma du Runbook](assets/runbook-diagram.png)
 
 Nous vous présentons les procédures de restauration et de mise à niveau dans la section [Procédure de mise à niveau ](/help/sites-deploying/upgrade-procedure.md), ainsi que la marche à suivre pour appliquer la mise à niveau lorsque vous effectuez une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Veuillez prendre connaissance de ces instructions en prenant en compte la structure de votre système, vos personnalisations, et votre tolérance vis-à-vis des temps d’arrêt, en établissant les procédures de restauration et de mise en marche que vous exécuterez durant la mise à niveau. Toutes les modifications relatives à la taille du seveur ou de l’architecture doivent être incluses lors de la création de votre runbook personnalisé. It est important de noter que cela doit être traité comme une version préliminaire. Pendant que votre équipe termine le contrôle qualité et les cycles de développement, et déploie la mise à niveau sur l’environnement d’évaluation, il est problable que vous ayez besoin de prendre des mesures supplémentaires. Ce document doit en principe contenir suffisamment d’informations pour permettre à tout membre du personnel d’exploitation d’effectuer une mise à niveau intégrale en s’y référant uniquement. 
 
@@ -195,6 +198,6 @@ Cette étape est cruciale, car c’est la seule fois où vous êtes en mesure de
 
 Une fois que l’authorisation finale a été donnée par toutes les parties prenantes, il est temps d’exécuter les procédures définies dans le runbook. Les étapes de mise à niveau et de restauration ont été présentées dans la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)et les étapes d’installation lors de la réalisation d’une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md). Cela sert de point de référence.
 
-![performance-upgrade](assets/perform-upgrade.png)
+![exécution-mise à niveau](assets/perform-upgrade.png)
 
 Nous avons fourni quelques étapes dans les instructions de mise à niveau pour la validation de l’environnement. Celles-ci comprennent des vérifications de base, comme l’analyse des journaux de mise à niveau et la vérification du démarrage correct des lots OSGi. Cependant, nous recommandons de procéder à la validation également à l’aide de vos propres scénarios de test basés sur vos processus opérationnels. Nous recommandons aussi de vérifier le programme de nettoyage des révisions en ligne d’AEM, ainsi que d’autres routines associées, pour garantir qu’ils auront lieu durant une période calme pour votre organisation. Ces routines sont indispensables à la performance d’AEM sur le long terme.
