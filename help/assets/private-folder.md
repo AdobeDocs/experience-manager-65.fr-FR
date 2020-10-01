@@ -3,9 +3,9 @@ title: Dossiers privés pour le partage de fichiers
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
+source-git-commit: 2bd850ff421494dda83bafb59fa695365498bbbe
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '578'
 ht-degree: 24%
 
 ---
@@ -82,4 +82,4 @@ Vous pouvez supprimer un dossier en le sélectionnant et en sélectionnant l’o
 >[!NOTE]
 >
 >Si vous supprimez un dossier à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés.
-Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être nettoyés du référentiel à l’aide de la `clean` méthode JMX dans votre instance d’auteur (http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redondants+groups+for+Assets).
+Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être nettoyés du référentiel à l’aide de `clean` la méthode JMX dans votre instance d’auteur (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
