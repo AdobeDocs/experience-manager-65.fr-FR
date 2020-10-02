@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cb531bfc009fc766bab20d28cf332856b1e95c7b
 workflow-type: tm+mt
-source-wordcount: '9409'
+source-wordcount: '9408'
 ht-degree: 63%
 
 ---
@@ -92,7 +92,7 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 
 >[!CAUTION]
 >
->La valeur par défaut lorsque le transfert de blocs est déclenché est de 500 Mo et la taille du bloc est de 50 Mo. Si vous modifiez la configuration [de jetonOak d&#39;](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) Apache Jackrabbit pour la définir sur `timeout configuration` une valeur inférieure au temps nécessaire au téléchargement d&#39;un fichier, vous pouvez alors vous trouver dans une situation de dépassement de délai de session pendant que le chargement de l&#39;actif est en cours. Par conséquent, vous devez modifier le `chunkUploadMinFileSize` et `chunksize`, de sorte que chaque requête de bloc actualise la session.
+>La valeur par défaut lorsque le transfert de blocs est déclenché est de 500 Mo et la taille du bloc est de 50 Mo. Si vous modifiez la configuration [de jetonOak d&#39;](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) Apache Jackrabbit pour la définir sur `timeout configuration` une valeur inférieure au temps nécessaire au téléchargement d&#39;un fichier, vous pouvez rencontrer un problème de délai d&#39;expiration de session pendant le chargement de l&#39;actif. Par conséquent, vous devez modifier le `chunkUploadMinFileSize` et `chunksize`, de sorte que chaque requête de bloc actualise la session.
 >
 >Compte tenu du délai d’expiration des informations d’identification, de la latence, de la bande passante et des chargements simultanés attendus, la valeur la plus élevée qui vous permet de vous assurer que les éléments suivants sont sélectionnés :
 >
