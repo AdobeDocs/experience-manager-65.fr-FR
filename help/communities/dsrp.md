@@ -1,8 +1,8 @@
 ---
 title: DSRP - Fournisseur de ressources d'Enregistrement de données relationnelles
 seo-title: DSRP - Fournisseur de ressources d'Enregistrement de données relationnelles
-description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
-seo-description: Configurer des AEM Communities pour utiliser une base de données relationnelle comme magasin commun
+description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
+seo-description: Configurer AEM Communities pour utiliser une base de données relationnelle comme magasin commun
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## A propos de DSRP {#about-dsrp}
 
-Lorsque les AEM Communities sont configurés pour utiliser une base de données relationnelle comme magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
+Lorsque AEM Communities est configuré pour utiliser une base de données relationnelle en tant que magasin commun, le contenu généré par l’utilisateur est accessible à partir de toutes les instances d’auteur et de publication sans avoir besoin de synchronisation ni de réplication.
 
 Voir aussi [Caractéristiques des options](working-with-srp.md#characteristics-of-srp-options) SRP et Topologies [](topologies.md)recommandées.
 
@@ -71,7 +71,7 @@ Sur l’auteur, pour accéder à la console de configuration de l’Enregistreme
       >[!NOTE]
       >
       >La configuration par défaut de l&#39;enregistrement est maintenant stockée dans conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Il est conseillé de suivre les étapes [de](#zerodt-migration-steps) migration pour que les paramètres par défaut fonctionnent comme prévu.
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Configuration de la base de données**
@@ -90,7 +90,7 @@ Sur l’auteur, pour accéder à la console de configuration de l’Enregistreme
 
 * **SolrConfiguration**
 
-   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper **
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper**
 
       Laissez cette valeur vide si Solr est exécuté à l’aide du ZooKeeper interne. Sinon, lorsque vous exécutez en mode [](solr.md#solrcloud-mode) SolrCloud avec un ZooKeeper externe, définissez cette valeur sur l’URI du ZooKeeper, par exemple *my.server.com:80.*
 
