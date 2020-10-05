@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 7%
@@ -48,7 +48,7 @@ Il est basé sur la documentation relative à la [configuration de la notificati
 
 Par exemple (renseigné avec des valeurs à des fins d’illustration uniquement) :
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+![email-config](assets/email-config.png)
 
 * **[!UICONTROL Nom d’hôte du serveur SMTP]**
 
@@ -98,7 +98,7 @@ Pour atteindre les instances de configuration du courrier électronique des Comm
 
 * Localisez `AEM Communities Email Reply Configuration`.
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+![email-response-config](assets/email-reply-config.png)
 
 ### Configuration des notifications {#configuration-for-notifications}
 
@@ -177,7 +177,7 @@ Pour que le courrier électronique soit introduit dans le référentiel, il est 
 
 * Sélectionner l&#39; **[!UICONTROL Ajoute]**
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![interrogation-importateur](assets/polling-importer.png)
 
 * **[!UICONTROL Type]**
 
@@ -207,7 +207,7 @@ Pour que le courrier électronique soit introduit dans le référentiel, il est 
 
 ### Modifier le protocole pour le nouvel importateur d&#39;interrogation {#adjust-protocol-for-new-polling-importer}
 
-Une fois la nouvelle configuration d&#39;interrogation enregistrée, il est nécessaire de modifier davantage les propriétés de l&#39;importateur de messages électroniques d&#39;abonnement afin de modifier le protocole de `POP3` en `emailreply`
+Une fois la nouvelle configuration d&#39;interrogation enregistrée, il est nécessaire de modifier davantage les propriétés de l&#39;importateur de messages électroniques d&#39;abonnement afin de modifier le protocole de `POP3` à `emailreply`.
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -217,7 +217,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * **feedType**: Remplacer `pop3s` par **`emailreply`**
    * **source**: Remplacez le protocole de la source `pop3s://` par **`emailreply://`**
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![vote-protocole](assets/polling-protocol.png)
 
 Les triangles rouges indiquent les propriétés modifiées. Veillez à enregistrer les modifications :
 
