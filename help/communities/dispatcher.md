@@ -1,8 +1,8 @@
 ---
-title: Configuration du Dispatcher pour les communautés
-seo-title: Configuration du Dispatcher pour les communautés
-description: Configuration du répartiteur pour les AEM Communities
-seo-description: Configuration du répartiteur pour les AEM Communities
+title: Configuration du répartiteur pour les communautés
+seo-title: Configuration du répartiteur pour les communautés
+description: Configuration du répartiteur pour AEM Communities
+seo-description: Configuration du répartiteur pour AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 6%
@@ -18,23 +18,23 @@ ht-degree: 6%
 ---
 
 
-# Configuration du Dispatcher pour les communautés {#configuring-dispatcher-for-communities}
+# Configuration du répartiteur pour les communautés {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
-Pour les AEM Communities, il est nécessaire de configurer le Dispatcher pour assurer le bon fonctionnement des sites [](overview.md#community-sites)communautaires. Des configurations supplémentaires sont nécessaires lors de l’inclusion de fonctionnalités telles que l’activation des communautés et la connexion sociale.
+Pour AEM Communities, il est nécessaire de configurer le Répartiteur pour assurer le bon fonctionnement des sites [](overview.md#community-sites)communautaires. Des configurations supplémentaires sont nécessaires lors de l’inclusion de fonctionnalités telles que l’activation des communautés et la connexion sociale.
 
 Pour savoir ce qui est nécessaire à votre déploiement et à votre conception de site
 
 * Contact [Customer Care](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
 
-Consultez également la documentation [principale du](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Dispatcher.
+Consultez également la documentation [principale du](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)répartiteur.
 
 ## Dispatcher Caching {#dispatcher-caching}
 
 ### Présentation {#overview}
 
-La mise en cache des Dispatchers pour les AEM Communities permet au répartiteur de fournir des versions entièrement mises en cache des pages d’un site communautaire.
+La mise en cache du répartiteur pour AEM Communities permet au répartiteur de diffuser des versions entièrement mises en cache des pages d’un site communautaire.
 
 Actuellement, il n’est pris en charge que pour les visiteurs anonymes du site, tels que les utilisateurs qui parcourent le site de la communauté ou accèdent à une page de la communauté à la suite d’une recherche, ainsi que pour les moteurs de recherche qui indexent les pages. L&#39;avantage est que les utilisateurs anonymes et les moteurs de recherche connaîtront de meilleures performances.
 
@@ -44,8 +44,8 @@ Lorsqu’elle est configurée pour prendre en charge la mise en cache du répart
 
 ### Conditions requises {#requirements}
 
-* Dispatcher version 4.1.2 ou ultérieure (voir [Installation du Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) pour la dernière version)
-* [Package AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
+* Répartiteur version 4.1.2 ou ultérieure (voir [Installation du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) pour la dernière version)
+* [Package ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Version 3.3.2 ou ultérieure
    * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` Configuration OSGi
@@ -61,7 +61,7 @@ La configuration OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max 
 * Localiser `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Sélectionnez l&#39;icône &quot;+&quot; pour créer une nouvelle configuration de connexion.
 
-   ![chlimage_1-339](assets/chlimage_1-339.png)
+   ![dispatcher](assets/dispatcher.png)
 
 * **Modèles de filtre**
 
@@ -71,11 +71,11 @@ La configuration OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max 
 
    *(obligatoire)* âge maximal (en secondes) à ajouter à l&#39;en-tête de contrôle du cache. La valeur doit être supérieure à zéro (0).
 
-## En-têtes de client Dispatcher {#dispatcher-client-headers}
+## En-têtes de client du répartiteur {#dispatcher-client-headers}
 
 Dans la section /clientheaders de `dispatcher.any`, si vous listez un ensemble spécifique d’en-têtes, il est nécessaire d’inclure `"CSRF-Token"` pour que la fonction [](enablement.md) d’activation fonctionne correctement.
 
-## Filtres Dispatchers {#dispatcher-filters}
+## Filtres du répartiteur {#dispatcher-filters}
 
 La section /filter du `dispatcher.any` fichier est documentée dans [Configuration de l&#39;accès au contenu - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
@@ -87,7 +87,7 @@ Les exemples suivants utilisent des noms de propriété qui devront probablement
 
 Voir également :
 
-* [Liste de contrôle de sécurité des Dispatchers](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Liste de contrôle de sécurité du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Les entrées suivantes doivent être ajoutées à la fin de la section /filter, 
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Règles Dispatcher {#dispatcher-rules}
+## Règles de répartiteur {#dispatcher-rules}
 
 La section Règles de `dispatcher.any` définit les réponses à mettre en cache en fonction de l’URL demandée. Pour les communautés, la section des règles est utilisée pour définir ce qui ne doit jamais être mis en cache.
 
