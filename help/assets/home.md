@@ -1,22 +1,21 @@
 ---
 title: Guide des ressources
-seo-title: Guide des ressources Adobe Experience Manager 6.5
 description: Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
-seo-description: Couvre toutes les tâches de ressources du Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
+user-guide-title: Guide des ressources
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 18%
+source-wordcount: '339'
+ht-degree: 20%
 
 ---
 
 
-# Guide des ressources Adobe Experience Manager 6.5
+# Guide des ressources
 
-Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
+Ce guide couvre toutes les [!DNL Experience Manager Assets] tâches, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 
-## Articles Experience Manager clés
+## Principaux [!DNL Experience Manager] articles
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -26,7 +25,7 @@ Ce guide porte sur toutes les tâches de ressources Experience Manager, telles q
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md)
 
-## Guides Experience Manager 6.5
+## [!DNL Experience Manager] 6,5 guides
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -43,7 +42,7 @@ Ce guide porte sur toutes les tâches de ressources Experience Manager, telles q
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
 
-## Ressources Experience Manager clés
+## Ressources [!DNL Experience Manager] clés
 
 * [Tutorials vidéo Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
