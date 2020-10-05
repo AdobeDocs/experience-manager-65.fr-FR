@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -44,7 +44,7 @@ Utilisation de CRXDE Lite:
 1. Click the green **[!UICONTROL +Add]** button.
 1. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![page-script](assets/page-script.png)
 
 ### Scripts de tête et de corps {#head-and-body-scripts}
 
@@ -128,13 +128,13 @@ Vous devriez non seulement voir l’en-tête Lecture **** communautaire, mais au
 
 Le panneau latéral Ressources/Composant s’affiche lorsque les deux panneaux latéraux sont ouverts et que la fenêtre est suffisamment large pour que le contenu latéral et le contenu de la page s’affichent.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![vue-page](assets/view-page.png)
 
 * IU classique : [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Voici comment la page de lecture s’affiche dans l’interface utilisateur classique, y compris avec l’outil de recherche de contenu (cf) :
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![lecture-page-vue](assets/play-page-view.png)
 
 ## Composants d’AEM Communities {#communities-components}
 
