@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: 6337a57ea12f1e026f6c754a083307ce018a1c13
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -37,13 +37,13 @@ The examples that follow use the community site created from the `Reference Site
 
 This is the page that loads on publish when the **Groups** menu item is selected:
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![nouveau groupe](assets/new-group.png)
 
 Lorsque vous sélectionnez l’icône **Nouveau groupe**, une boîte de dialogue de modification s’ouvre.
 
 Dans l’onglet **Paramètres**, spécifiez les fonctionnalités de base du groupe :
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![group-settings](assets/group-settings.png)
 
 * **Nom du groupe**
 
@@ -55,7 +55,7 @@ Dans l’onglet **Paramètres**, spécifiez les fonctionnalités de base du grou
 
 * **Invitation**
 
-   liste de membres à inviter à rejoindre le groupe. La recherche par saisie anticipée suggère des membres de la communauté à inviter.
+   Liste de membres à inviter à rejoindre le groupe. La recherche par saisie anticipée suggère des membres de la communauté à inviter.
 
 * **Nom de l’URL de groupe**
 
@@ -72,21 +72,21 @@ Dans l’onglet **Paramètres**, spécifiez les fonctionnalités de base du grou
 Under the **Template** tab is the ability to
 select from the list of community group templates that were specified when the groups function was included in the community site&#39;s structure or in a community site template.
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![group-template](assets/group-template.png)
 
 L’onglet **Image** permet de transférer une image à afficher pour le groupe sur la page Groupes du site de la communauté. La feuille de style par défaut dimensionne l’image à 170 x 90 pixels.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![group-image](assets/group-image.png)
 
 Lorsque le bouton **Créer un groupe** est sélectionné, les pages du groupe sont créées selon le modèle sélectionné, un groupe d’utilisateurs est créé pour l’abonnement et la page Groupes est mise à jour pour afficher la nouvelle sous-communauté.
 
 Par exemple, la page Groupes comportant une nouvelle sous-communauté nommée « Groupe d’orientation », pour laquelle une miniature a été transférée, a l’apparence suivante (l’utilisateur étant encore connecté en tant qu’administrateur de groupe de communautés) :
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![page de groupe](assets/group-page.png)
 
 Selecting the `Focus Group` link will open the Focus Group page in the browser, which has an initial appearance based on the chosen template, and includes a submenu underneath the main community site&#39;s menu:
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![open-group-page](assets/open-group-page.png)
 
 ### Composant Liste des membres de groupes de communautés {#community-group-member-list-component}
 
