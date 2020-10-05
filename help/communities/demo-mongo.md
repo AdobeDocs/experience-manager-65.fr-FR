@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
 workflow-type: tm+mt
 source-wordcount: '792'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -157,26 +157,26 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 1. Connectez-vous pour publier un commentaire :
 1. Saisissez du texte dans la zone de saisie du commentaire, puis cliquez sur **[!UICONTROL Publier.]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![post-commentaire](assets/post-comment.png)
 
 1. Il vous suffit de vue le commentaire sur l’instance [d’](http://localhost:4502/content/community-components/en/comments.html) auteur (probablement toujours connecté en tant qu’administrateur/administrateur).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![vue-commentaire](assets/view-comment.png)
 
-   Remarque : bien qu’il y ait des noeuds JCR sous le chemin *asipath* sur l’auteur, il s’agit de la structure SCF. L’UGC réel n’est pas dans le JCR, mais dans la MongoDB.
+   Remarque : Bien qu’il y ait des noeuds JCR sous le chemin d’accès ** secondaire sur l’auteur, il s’agit de la structure SCF. L’UGC réel n’est pas dans le JCR, mais dans la MongoDB.
 
 1. Vue de l’UGC dans mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+   ![ugc-content](assets/ugc-content.png)
 
 1. Vue de l&#39;UGC à Solr :
 
-   * Accédez au tableau de bord Solr : [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * Utilisateur `core selector` à sélectionner `collection1`
-   * Sélectionner `Query`
-   * Sélectionner `Execute Query`
+   * Accédez au tableau de bord Solr : [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * Utilisateur `core selector` à sélectionner `collection1`.
+   * Sélectionner `Query`.
+   * Sélectionner `Execute Query`.
 
-   ![chlimage_1-194](assets/chlimage_1-194.png)
+   ![ugc-solr](assets/ugc-solr.png)
 
 ## Résolution des incidents {#troubleshooting}
 
@@ -186,14 +186,9 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
 1. Assurez-vous que MSRP a été configuré comme fournisseur par défaut :
 
-   * Sur toutes les instances d’AEM création et de publication, passez de nouveau en revue la console de configuration de l’ [Enregistrement.](srp-config.md)
+   * Sur toutes les instances d’AEM création et de publication, consultez de nouveau la console [Configuration de l’](srp-config.md) Enregistrement ou vérifiez le référentiel AEM :
 
-   Ou vérifiez le référentiel AEM :
-
-   * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
-
-   * Ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur d’enregistrements est JSRP
+   * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur d’enregistrement est JSRP.
    * Si le noeud srpc existe et contient la configuration [par](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)défaut du noeud, les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
-
 
 1. Assurez-vous que l&#39;AEM a été redémarré après avoir sélectionné MSRP.
