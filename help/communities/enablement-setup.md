@@ -10,33 +10,33 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 
 # Configuration initiale pour l&#39;activation  {#initial-setup-for-enablement}
 
-## Instances d’auteur et de publication de Début {#start-author-and-publish-instances}
+## Instances d’auteur et de publication de début {#start-author-and-publish-instances}
 
 Pour des raisons de développement et de démonstration, il sera nécessaire d’exécuter un auteur et une instance de publication.
 
-Suivez les instructions de base de [prise en main](../../help/sites-deploying/deploy.md#getting-started) d’AEM, qui vous permettront de
+Suivez les instructions de base AEM [Prise en main](../../help/sites-deploying/deploy.md#getting-started) qui se traduiront par
 
-* environnement de l’auteur sur [localhost:4502](http://localhost:4502/)
+* Environnement de l’auteur sur [localhost:4502](http://localhost:4502/)
 * Publier l’environnement sur [localhost:4503](http://localhost:4503/)
 
-Pour les AEM Communities,
+Pour AEM Communities,
 
 * L&#39;environnement de l&#39;auteur est destiné à :
 
    * Développement de sites, de modèles, de composants, de ressources d’activation et de chemins d’apprentissage.
    * Affectation de membres et de groupes de membres aux ressources d’activation et aux chemins d’apprentissage.
    * Génération de rapports sur les affectations, les vues et les publications.
-   * tâches d’administration et de configuration.
+   * Tâches d’administration et de configuration.
 
 * L’environnement de publication est destiné à :
 
@@ -55,7 +55,7 @@ Ce didacticiel crée un site [communautaire d’](overview.md#enablement-communi
 
 * [Dernières versions](deploy-communities.md#latest-releases)
 
-Pour consulter un didacticiel qui crée un site [communautaire d’](overview.md#engagement-community)engagement, consultez [Prise en main du AEM Communities](getting-started.md).
+Pour consulter un didacticiel qui crée un site [communautaire d’](overview.md#engagement-community)engagement, consultez [Prise en main de AEM Communities](getting-started.md).
 
 ## Configuration des fonctionnalités d’activation {#configure-enablement-features}
 
@@ -94,14 +94,14 @@ Utilisez la console [](../../help/sites-administering/tags.md#tagging-console) B
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-417](assets/chlimage_1-417.png)
+![tutorial-tags](assets/tutorial-tags.png)
 
 Suivez ensuite les instructions pour :
 
 1. [Définir les autorisations de balise](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [Publication des balises](../../help/sites-administering/tags.md#publishing-tags)
 
-Exemple de package de balises créées pour les didacticiels de prise en main des AEM Communities
+Exemple de package de balises créées pour les Tutorials de prise en main AEM Communities
 
 [Obtenir le fichier](assets/communities_tutorialtags-10.zip)
 
@@ -157,14 +157,14 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et se voi
 * **Prénom**: Quinn
 * **Nom**: Harper
 
-### Ajouter un groupe d&#39;utilisateurs - Classe de ski de communauté {#add-a-user-group-community-ski-class}
+### ajouter un groupe d&#39;utilisateurs - Classe de ski communautaire {#add-a-user-group-community-ski-class}
 
-[Ajoutez un nouveau groupe](members.md#create-new-group) nommé Community Ski Class.
+[ajoutez un nouveau groupe](members.md#create-new-group) nommé Community Ski Class.
 
 * **ID**: community-ski-class
 * **Nom**: Classe de ski communautaire
 * **Description**: un groupe d&#39;exemples pour l&#39;affectation de ressources d&#39;activation
-* **Ajouter les membres au groupe** &quot;ajouter&quot; :
+* **ajouter les membres au groupe** &quot;ajouter&quot; :
 
    * riley
    * annexe
@@ -173,7 +173,7 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et se voi
 
 ### Propriétés de la classe de ski de communauté {#community-ski-class-properties}
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![ski-class-properties](assets/ski-class-properties.png)
 
 >[!NOTE]
 >
@@ -219,5 +219,5 @@ Faites défiler la page jusqu&#39;à `Add User to Groups`:
 
 * Sélectionnez **[!UICONTROL Enregistrer]**
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![admin-role](assets/admin-role.png)
 
