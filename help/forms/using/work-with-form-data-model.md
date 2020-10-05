@@ -9,17 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
 workflow-type: tm+mt
-source-wordcount: '4102'
-ht-degree: 61%
+source-wordcount: '4162'
+ht-degree: 60%
 
 ---
 
 
 # Utilisation d’un modèle de données de formulaire{#work-with-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![intégration des données](do-not-localize/data-integeration.png)
 
 L’éditeur de modèle de données de formulaire fournit une interface utilisateur intuitive et des outils d’édition et de configuration d’un modèle de données de formulaire. L’éditeur vous permet d’ajouter et de configurer des objets, des propriétés et des services de modèle de données provenant de sources de données associées dans le modèle de données de formulaire. En outre, il vous permet de créer des objets et des propriétés de modèle de données sans sources de données et de les lier ultérieurement aux objets et propriétés de modèle de données respectifs. Vous pouvez également générer et modifier des exemples de données pour les propriétés d’objet de modèle de données que vous pouvez utiliser pour préremplir des formulaires adaptatifs et des communications interactives lors de la prévisualisation. Vous pouvez tester les objets et services de modèle de données configurés dans un modèle de données de formulaire afin de vous assurer de leur intégration correcte aux sources de données.
 
@@ -179,7 +179,7 @@ Sélectionnez Attribut **[!UICONTROL de Profil]** utilisateur dans le menu déro
 
 Le nom d’attribut spécifié dans le champ Valeur **[!UICONTROL de]** liaison doit inclure le chemin de liaison complet jusqu’au nom d’attribut de l’utilisateur. Ouvrez l’URL suivante pour accéder aux détails de l’utilisateur sur CRXDE :
 
-https://&lt;nom du serveur>:&lt;numéro de port>/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Profil utilisateur](assets/binding_crxde_user_profile_new.png)
 
@@ -195,15 +195,31 @@ Utilisez l’attribut request pour récupérer les propriétés associées à pa
 
 1. Sélectionnez Attribut **[!UICONTROL de]** requête dans le menu déroulant **[!UICONTROL Liaison à]** et saisissez le nom de l’attribut dans le champ Valeur **[!UICONTROL de]** liaison.
 
-1. Ouvrez head.jsp pour définir les détails d’attribut sur CRXDE :\
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Créez une [incrustation](../../../help/sites-developing/overlays.md) pour head.jsp. Pour créer l’incrustation, ouvrez CRX DE et copiez le `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` fichier dans `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
-1. Insérez le texte suivant dans le fichier head.jsp :
+   >[!NOTE]
+   >
+   > * Si vous utilisez un modèle statique, superposez le fichier head.jsp à l’adresse suivante :
+/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * Si vous utilisez un modèle modifiable, superposez le fichier aftemplatedpage.jsp à l’adresse suivante :
+/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+
+1. Définissez [!DNL paramMap] l’attribut de requête. Par exemple, incluez le code suivant dans le fichier .jsp du dossier des applications :
+
+   ```javascript
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+   ```
+
+   Par exemple, utilisez le code ci-dessous pour récupérer la valeur de petid à partir de la source de données :
+
+
+   ```javascript
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
    ```
 
 Les détails sont récupérés à partir de la source de données en fonction du nom d’attribut spécifié dans la requête.
