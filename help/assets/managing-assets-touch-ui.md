@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
+source-git-commit: 0c6a1afff62d4a962edfc8c2e6574d65a18534ac
 workflow-type: tm+mt
-source-wordcount: '9618'
+source-wordcount: '9619'
 ht-degree: 62%
 
 ---
@@ -453,7 +453,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 ## Move and rename assets {#moving-or-renaming-assets}
 
 Lorsque vous déplacez des fichiers (ou des dossiers) vers un autre emplacement, les fichiers (ou dossiers) ne sont pas dupliqués, contrairement à ce qui se produit lors de la copie du fichier. Les fichiers (ou les dossiers) sont placés à l’emplacement de la cible et sont supprimés de l’emplacement source. Vous pouvez également renommer la ressource lorsque vous la déplacez vers le nouvel emplacement.
-Si vous déplacez un fichier publié vers un autre emplacement, vous avez la possibilité de le republier. Par défaut, l’opération de déplacement sur une ressource publiée annule automatiquement sa publication. La ressource déplacée est republiée si l’auteur sélectionne l’option [!UICONTROL Republier] lors du déplacement de la ressource.
+Si vous déplacez un fichier publié vers un autre emplacement, vous avez la possibilité de le republier. Par défaut, l’opération de déplacement sur une ressource publiée annule automatiquement sa publication. Une ressource déplacée est republiée si l’auteur sélectionne l’option [!UICONTROL Republier] lors du déplacement de la ressource.
 
 ![Vous pouvez republier un fichier déjà publié lors de son déplacement.](assets/republish-on-move.png)
 
@@ -498,7 +498,7 @@ Pour déplacer des fichiers ou des dossiers :
 
 Vous pouvez déplacer des fichiers (ou des dossiers) vers un dossier frère, la collection [!UICONTROL Lightbox] ou une autre collection en les faisant glisser vers l’emplacement de la cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans la vue de liste.
 
-Le déplacement d’actifs par glisser-déplacer n’ouvre pas l’assistant [!UICONTROL Déplacer des actifs] , de sorte que vous n’avez pas la possibilité de renommer les actifs lors du déplacement. En outre, les fichiers déjà publiés sont republiés en les déplaçant par glisser-déplacer, sans demander l’approbation de la republication de l’utilisateur.
+Le déplacement d’actifs par glisser-déplacer n’ouvre pas l’assistant [!UICONTROL Déplacer des actifs] . Par conséquent, vous n’avez pas la possibilité de renommer les actifs lors du déplacement. En outre, les fichiers déjà publiés sont republiés en les déplaçant par glisser-déplacer, sans demander l’approbation de la republication de l’utilisateur.
 
 ![Déplacement de fichiers dans des dossiers frères en les faisant glisser](assets/move-by-drag.gif)
 
@@ -634,7 +634,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
 1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] option from the toolbar to display the properties page.
 1. Sous l’onglet **[!UICONTROL Autorisations]**, ajoutez les membres ou les groupes sous **[!UICONTROL Groupe d’utilisateurs fermé]**.
 
-   ![ajouter un utilisateur dans un groupe d’utilisateurs fermé](assets/add_user.png)
+   ![Ajouter un utilisateur dans un groupe d’utilisateurs fermé](assets/add_user.png)
 
 1. Pour afficher un écran de connexion lorsque les utilisateurs accèdent au dossier, sélectionnez l’option **[!UICONTROL Activer]**. Then, select the path to a login page in [!DNL Experience Manager], and save the changes.
 
