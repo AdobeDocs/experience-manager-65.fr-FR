@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 La console Groupes permet d&#39;accéder à la création de groupes communautaires lorsqu&#39;une structure [de](/help/communities/sites-console.md#step1) modèle de site communautaire inclut la fonction [](/help/communities/functions.md#groups-function)Groupes.
 
-* Les AEM Communities prennent en charge l’imbrication de groupes au sein d’autres groupes. L&#39;imbrication de groupe est possible lorsque la [structure du nouveau groupe](/help/communities/tools-groups.md) contient la fonction groups.
+* AEM Communities prend en charge l’imbrication de groupes dans d’autres groupes. L&#39;imbrication de groupe est possible lorsque la [structure du nouveau groupe](/help/communities/tools-groups.md) contient la fonction groups.
 * Pour l&#39;environnement auteur uniquement, il existe un assistant de création de groupe similaire à l&#39;assistant de création de site.
 * Si (ou non) les membres peuvent créer des groupes dans l’environnement de publication, il est configurable lors de l’ajout d’une fonction Groupes à une structure de site de communauté ou de groupe de communauté.
 
@@ -39,14 +39,14 @@ Les différentes facettes des groupes communautaires sont les suivantes :
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+-->
 
 >[!NOTE]
 >
 >Cette console Groupes, accessible uniquement à partir de la console Sites des communautés, ne doit pas être confondue avec la console [](/help/communities/members.md) Groupes de membres pour la gestion des groupes de membres.
 >
 >Les groupes membres sont des groupes d&#39;utilisateurs enregistrés dans l&#39;environnement de publication et accessibles depuis l&#39;environnement auteur à l&#39;aide du service [](/help/communities/deploy-communities.md#tunnel-service-on-author)tunnel.
-
 
 ## Création de groupe {#group-creation}
 
@@ -98,7 +98,7 @@ La racine par défaut est le site parent, mais elle peut être déplacée à n�
 
    Nom de la page racine du groupe qui s’affiche dans l’URL.
 
-   * Vérifiez par Doublon le nom, car il n’est pas facilement modifié une fois le groupe créé.
+   * Vérifiez par doublon le nom, car il n’est pas facilement modifié une fois le groupe créé.
    * L’URL de base s’affichera sous le `Community Group Name`.
    * Pour une URL valide, ajoutez &quot;.html&quot;
       *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
@@ -113,7 +113,7 @@ La racine par défaut est le site parent, mais elle peut être déplacée à n�
 
 ![community_grouptheme](assets/communitygrouptheme.png)
 
-La structure utilise [Twitter Bootstrap](https://twitterbootstrap.org/) pour apporter une conception adaptée et flexible au site. Un des nombreux thèmes Bootstrap préchargés peut être sélectionné pour mettre en forme le modèle de groupe de communautés sélectionné ou un thème Bootstrap peut être téléchargé.
+La structure utilise le Bootstrap [](https://twitterbootstrap.org/) Twitter pour apporter une conception souple et adaptée au site. Un des nombreux thèmes de Bootstrap préchargés peut être sélectionné pour mettre en forme le modèle de groupe de communautés sélectionné ou un thème de Bootstrap peut être téléchargé.
 
 Une fois sélectionné, le thème sera superposé avec une coche bleue opaque.
 
@@ -170,7 +170,7 @@ Le paramètre d&#39;adhésion permet de choisir l&#39;une des trois façons d&#3
 
 * **Abonnement requis**
 
-   S’il est sélectionné, le groupe de la communauté est un groupe ouvert. Les membres du site de la communauté peuvent vue le contenu du groupe, mais doivent rejoindre le groupe pour publier du contenu. Les membres se joignent en sélectionnant le `Join` bouton dans l’environnement de publication. La valeur par défaut n’est pas sélectionnée.
+   Si cette option est sélectionnée, le groupe de la communauté est un groupe ouvert. Les membres du site de la communauté peuvent vue le contenu du groupe, mais doivent rejoindre le groupe pour publier du contenu. Les membres se joignent en sélectionnant le `Join` bouton dans l’environnement de publication. La valeur par défaut n’est pas sélectionnée.
 
 * **Abonnement restreint**
 
@@ -203,7 +203,6 @@ Une fois le processus terminé, la carte du nouveau site (groupe) de sous-commun
 >[!NOTE]
 >
 >Le groupe est créé dans toutes les langues, comme indiqué à l’ [étape 1 : Modèle](/help/communities/groups.md#step-community-group-template) de groupe communautaire dans d&#39;autres langues de groupe communautaire disponibles, dans la console Groupes communautaires des sites communautaires respectifs.
-
 
 ## Contenu du groupe d’auteurs {#author-group-content}
 
@@ -256,13 +255,11 @@ Modifiez l&#39;ordre des fonctions tel qu&#39;il s&#39;affiche dans la barre de 
 >
 >Par exemple, renommer l’URL ne déplace pas l’UGC existant, avec pour effet de &quot;perdre&quot; l’UGC.
 
-
 >[!CAUTION]
 >
 >La fonction de groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
 >
 >Toute autre fonction, telle que la fonction [de](/help/communities/functions.md#page-function)page, doit être incluse et répertoriée en premier.
-
 
 **Exemple : Ajouter une fonction de calendrier à une structure de sous-communauté (groupe)**
 
@@ -304,7 +301,6 @@ Une fois le groupe publié, un message s’affiche :
 >Le site de la communauté parent et les groupes parents auraient déjà dû être publiés.
 >
 >Le site communautaire et les groupes imbriqués devraient être publiés de manière descendante.
-
 
 ## Supprimer le groupe {#delete-the-group}
 
