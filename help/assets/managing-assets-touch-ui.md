@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0c6a1afff62d4a962edfc8c2e6574d65a18534ac
+source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
 workflow-type: tm+mt
-source-wordcount: '9619'
+source-wordcount: '9613'
 ht-degree: 62%
 
 ---
@@ -496,7 +496,7 @@ Pour déplacer des fichiers ou des dossiers :
 
 ### Déplacement de fichiers à l’aide de l’opération de glisser {#move-using-drag}
 
-Vous pouvez déplacer des fichiers (ou des dossiers) vers un dossier frère, la collection [!UICONTROL Lightbox] ou une autre collection en les faisant glisser vers l’emplacement de la cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans la vue de liste.
+Vous pouvez déplacer des fichiers (ou des dossiers) vers un dossier frère en les faisant glisser vers l’emplacement de la cible, au lieu d’utiliser l’option [!UICONTROL Déplacer] dans l’interface utilisateur. Toutefois, cette opération n’est possible que dans la vue de liste.
 
 Le déplacement d’actifs par glisser-déplacer n’ouvre pas l’assistant [!UICONTROL Déplacer des actifs] . Par conséquent, vous n’avez pas la possibilité de renommer les actifs lors du déplacement. En outre, les fichiers déjà publiés sont republiés en les déplaçant par glisser-déplacer, sans demander l’approbation de la republication de l’utilisateur.
 
