@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 67%
@@ -34,7 +34,6 @@ Pour en savoir plus sur la création d’un site de communauté, voir :
 >[!NOTE]
 >
 >If not familiar with the authoring environment, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
-
 
 ## Composants d’AEM Communities disponibles {#available-communities-components}
 
@@ -82,7 +81,6 @@ See also the interactive [Community Components guide](/help/communities/componen
 >[!NOTE]
 >
 >Le composant Sondage n’est plus disponible et n’est plus pris en charge dans les communautés Experience Manager.
-
 
 ## Documentation sur les communautés associée {#related-communities-documentation}
 
