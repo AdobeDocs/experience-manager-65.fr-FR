@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 1%
@@ -111,7 +111,6 @@ Dans l’environnement de publication, selon les [paramètres](sites-console.md#
 >
 >Si un visiteur de site s&#39;inscrit en tant que membre d&#39;un site communautaire ouvert, il devient automatiquement membre d&#39;autres sites communautaires ouverts sur le même environnement de publication.
 
-
 ### Publier les rôles de groupe {#publish-group-roles}
 
 | Si membre du groupe... | Rôle Principal |
@@ -150,8 +149,7 @@ Lorsqu&#39;une fonction de communauté n&#39;est pas sécurisée (aucun groupe d
 
 >[!NOTE]
 >
->ajouter un utilisateur à un groupe de membres privilégiés pour un site communautaire ne lui accordera des privilèges de création que s&#39;il est également membre de ce même site communautaire.
-
+>Ajouter un utilisateur à un groupe de membres privilégiés pour un site communautaire ne lui accordera des privilèges de création que s&#39;il est également membre de ce même site communautaire.
 
 ## Création de membres de la communauté {#creating-community-members}
 
@@ -167,7 +165,7 @@ L’utilisation des consoles [Membres et Groupes](members.md) Communautés crée
 
 Pour spécifier un chemin personnalisé, vous devez utiliser l’interface utilisateur de sécurité classique, accessible à l’adresse [https://&lt;serveur>:&lt;port>/useradmin](http://localhost:4503/useradmin).
 
-Pour accorder des privilèges de lecture pour les chemins de membres personnalisés, sur toutes les instances de publication, définissez des listes de contrôle d’accès similaires à `/home/users/community`:
+Pour accorder des privilèges de lecture aux chemins de membres personnalisés, sur toutes les instances de publication, définissez des listes de contrôle d’accès similaires à `/home/users/community`:
 
 ```xml
 <allow
