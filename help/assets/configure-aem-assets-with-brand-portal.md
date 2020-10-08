@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c03ba5e2ec7954cca8b129f453919d151956df5
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 33%
@@ -22,7 +22,7 @@ ht-degree: 33%
 
 Le portail Marque des ressources Adobe Experience Manager Assets vous permet de publier des ressources de marque approuvées depuis Adobe Experience Manager Assets sur le portail des marques et de les distribuer aux utilisateurs du portail des marques.
 
-aem assets est configuré avec Brand Portal via Adobe Developer Console, qui fournit un jeton de compte IMS (Adobe Identity Management Services) pour l’autorisation du locataire du portail Marque.
+AEM Assets est configuré avec Brand Portal via Adobe Developer Console, qui fournit un jeton de compte IMS (Adobe Identity Management Services) pour l’autorisation du locataire du portail Marque.
 
 >[!NOTE]
 >
@@ -32,16 +32,14 @@ aem assets est configuré avec Brand Portal via Adobe Developer Console, qui fou
 >
 >La configuration via la passerelle OAuth héritée n’est plus prise en charge à partir du 6 avril 2020 et est remplacée par Adobe Developer Console.
 
-
 >[!TIP]
 >
 >***Pour les clients existants uniquement***
 >
 >Il est recommandé de continuer à utiliser la configuration héritée de la passerelle OAuth. Si vous rencontrez des problèmes avec la configuration héritée de la passerelle OAuth, supprimez la configuration existante et créez une nouvelle configuration via Adobe Developer Console.
 
-
-
 Cette aide décrit les deux cas d’utilisation suivants :
+
 * [Nouvelle configuration](#configure-new-integration-65): Si vous êtes un nouvel utilisateur du portail Marques et souhaitez configurer votre instance d’auteur AEM Assets avec Brand Portal, vous pouvez créer une configuration via Adobe Developer Console.
 * [Configuration](#upgrade-integration-65)de la mise à niveau : Si vous êtes un utilisateur existant du portail de marques ayant une configuration sur la passerelle OAuth héritée, supprimez la configuration existante et créez une nouvelle configuration via Adobe Developer Console.
 
@@ -58,7 +56,6 @@ Pour configurer AEM Assets avec Brand Portal, vous devez disposer des élémen
 * Une instance d’auteur AEM Assets en cours d’exécution avec le dernier Service Pack
 * URL du client du portail de marques
 * Utilisateur disposant de droits d’administrateur système sur l’organisation IMS du locataire du portail de marque
-
 
 [Téléchargement et installation de AEM 6.5](#aemquickstart)
 
@@ -94,12 +91,9 @@ La configuration d’AEM Assets avec Brand Portal nécessite des configurations 
 1. Dans AEM Assets, configurez le service cloud du portail des marques à l’aide du compte IMS et du point de terminaison du portail des marques (URL de l’organisation).
 1. Testez votre configuration en publiant un fichier d’AEM Assets vers Brand Portal.
 
-
 >[!NOTE]
 >
 >Une instance d’auteur AEM Assets ne doit être configurée qu’avec un seul client du portail de marques.
-
-
 
 Effectuez les étapes suivantes dans la séquence répertoriée si vous configurez AEM Assets avec Brand Portal pour la première fois :
 1. [Obtention d’un certificat public](#public-certificate)
@@ -269,7 +263,6 @@ Effectuez les étapes suivantes pour configurer le compte IMS.
 
    ![Configuration du compte IMS](assets/create-new-integration6.png)
 
-
 1. Sélectionnez la configuration de compte IMS et cliquez sur **[!UICONTROL Contrôle de l’intégrité]**.
 
    Cliquez sur **[!UICONTROL Vérifier]** dans la boîte de dialogue. Une fois la configuration réussie, un message s’affiche avec la mention *Jeton récupéré avec succès*.
@@ -281,8 +274,6 @@ Effectuez les étapes suivantes pour configurer le compte IMS.
 >Vous ne devez avoir qu’une seule configuration IMS.
 >
 >Assurez-vous que la configuration IMS réussit le contrôle d’intégrité. Si tel n’est pas le cas, elle n’est pas valide. Vous devez la supprimer et créer une configuration valide.
-
-
 
 ### Configuration du service cloud {#configure-the-cloud-service}
 
@@ -326,11 +317,9 @@ Pour valider la configuration, procédez comme suit :
 
    ![](assets/test-integration3.png)
 
-
    >[!NOTE]
    >
    >Les agents de réplication fonctionnent en parallèle et partagent la répartition des tâches de manière égale, augmentant ainsi la vitesse de publication de quatre fois la vitesse initiale. Une fois le service cloud configuré, aucune configuration supplémentaire n’est requise pour activer les agents de réplication activés par défaut pour permettre la publication parallèle de plusieurs actifs.
-
 
 1. To verify the connection between AEM Assets and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 
