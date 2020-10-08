@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -108,7 +108,6 @@ Les styles personnalisés remplacent désormais les styles de cadre par défaut 
 >Tout nom de classe CSS précédé du préfixe `scf-js` a une utilisation spécifique dans le code JavaScript. Ces classes affectent l’état d’un composant (par exemple, bascule de masqué à visible) et ne doivent ni être remplacées ni supprimées.
 >
 >Bien que les `scf-js` classes n&#39;affectent pas les styles, les noms de classe peuvent être utilisés dans les feuilles de style avec la mise en garde que, dans la mesure où ils contrôlent l&#39;état des éléments, il peut y avoir des effets secondaires.
-
 
 ## Extension de JavaScript {#extending-javascript}
 
