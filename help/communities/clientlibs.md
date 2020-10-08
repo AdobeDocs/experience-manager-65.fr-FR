@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Par exemple, en haut de la page [](https://localhost:4502/content/community-comp
 
 ![clientlibs-reviews](assets/clientlibs-reviews.png)
 
-## ajouter les bibliothèques clientes requises {#adding-required-clientlibs}
+## Ajouter les bibliothèques clientes requises {#adding-required-clientlibs}
 
 Si vous souhaitez ajouter un composant Communautés à une page, vous devez ajouter les clientlibs requis pour le composant si celui-ci n’est pas déjà présent.
 
@@ -90,7 +90,6 @@ Pour ajouter une bibliothèque cliente à un site communautaire à l&#39;aide de
 >[!NOTE]
 >
 >Si le site n&#39;est pas un site communautaire, il faudrait découvrir l&#39;existence ou l&#39;emplacement des bibliothèques clientes utilisées pour le site.
-
 
 A l’aide de l’exemple [Prise en main d’AEM Communities](/help/communities/getting-started.md) , où `site-name` est *engagé*, voici comment la liste cliente s’affichera si vous ajoutez le composant de révision :
 
