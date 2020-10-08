@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2884'
 ht-degree: 3%
 
 ---
@@ -31,14 +31,14 @@ Les principaux aspects de la notation et des badges sont les suivants :
 * [Attribuer des badges](#assign-and-revoke-badges) pour identifier le rôle d&#39;un membre dans la communauté.
 
 * [Attribution de base de badges](#enable-scoring) aux membres pour encourager leur participation (quantité de contenu créé).
+
 * [Attribution avancée de badges](/help/communities/advanced.md) pour identifier les membres comme experts (qualité du contenu créé).
 
 **Notez** que l’attribution de badges [n’est pas activée par défaut](/help/communities/implementing-scoring.md#main-pars-text-237875536).
 
 >[!CAUTION]
 >
->La structure d’implémentation visible dans CRXDE Lite peut être modifiée une fois que l’interface utilisateur est disponible.
-
+>La structure d’implémentation visible dans le CRXDE Lite peut être modifiée une fois que l’interface utilisateur est disponible.
 
 ## Badges {#badges}
 
@@ -76,7 +76,7 @@ Cette version comprend trois badges basés sur les rôles :
 
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+   ![badges assignés](assets/assigned-badges.png)
 
 ### Insignes attribués {#awarded-badges}
 
@@ -101,14 +101,13 @@ La version comprend trois badges basés sur la récompense :
 
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+   ![badges primés](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >Les règles de score peuvent être configurées pour affecter des points négatifs aux publications marquées comme inappropriées et affecter ainsi la valeur de score. Cependant, une fois qu’un badge est gagné, il ne sera pas automatiquement supprimé en raison de la réduction du point de notation ou des modifications de la règle de notation.
 >
 >Les badges attribués peuvent être révoqués de la même manière que les badges attribués. Voir la section [Attribuer et révoquer des insignes](#assign-and-revoke-badges) . Les améliorations futures comprendront une interface utilisateur pour gérer les badges des membres.
-
 
 ### Badges personnalisés {#custom-badges}
 
@@ -140,13 +139,12 @@ Si le noeud est de type `cq:Page` (recommandé), ajoutez les propriétés à son
 
 | **Propriété** | **Type** | **Description** |
 |---|---|---|
-| badgingRules | Chaîne[] | une liste de tableau des règles de [mise en badge](#badging-rules) |
-| scoringRules | Chaîne[] | liste de tableau des règles de [notation](#scoring-rules) |
+| badgingRules | Chaîne | une liste de tableau des règles de [mise en badge](#badging-rules) |
+| scoringRules | Chaîne | liste de tableau des règles de [notation](#scoring-rules) |
 
 >[!NOTE]
 >
 >Si une règle d’évaluation ne semble pas avoir d’effet sur l’attribution des badges, assurez-vous que la règle d’évaluation n’a pas été bloquée par la propriété scoringRules de la règle d’évaluation. Consultez la section intitulée Règles [de](#badging-rules)mise en badge.
-
 
 ### Activer les badges pour le composant {#enable-badges-for-component}
 
@@ -156,12 +154,11 @@ Propriété booléenne, `allowBadges`active/désactive l’affichage des badges 
 
 #### Exemple : allowBadges pour l’instance de composant Forum {#example-allowbadges-for-forum-component-instance}
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
 >
 >N’importe quel composant peut être superposé pour afficher les badges à l’aide du code HBS trouvé dans les forums, QnA et les commentaires comme exemple.
-
 
 ## Règles de score {#scoring-rules}
 
@@ -191,9 +188,9 @@ Les scores sont stockés dans SRP.
 >Les noms des règles de score doivent être globalement uniques ; ils ne devraient pas se terminer par le même nom.
 >
 >Voici un exemple de ce que *ne pas* faire :
+>
 >/libs/settings/community/scoring/rules/site1/forums-score
 >/libs/settings/community/scoring/rules/site2/forums-score
-
 
 ### Sous-règles de score {#scoring-sub-rules}
 
@@ -239,7 +236,7 @@ Les sous-règles sont des noeuds de type `cq:Page` avec des propriétés sur son
   </tr>
   <tr>
    <td><code>topics</code></td>
-   <td>Chaîne[]</td>
+   <td>Chaîne</td>
    <td>
     <ul>
      <li>facultatif ; restreint la sous-règle aux composants de la communauté identifiés par des sujets de événement</li>
@@ -310,8 +307,8 @@ Toute modification ou tout ajout apporté aux règles de notation ou aux sous-r�
 
 Les règles de mise en badge lient les règles de notation aux badges en spécifiant :
 
-* Règle de score.
-* Le score nécessaire pour recevoir un badge spécifique.
+* Règle de score
+* Score nécessaire pour obtenir un badge spécifique
 
 Les règles de mise en badge sont des noeuds de type `cq:Page` avec des propriétés sur son `jcr:content` noeud qui mettent en corrélation les règles de notation avec des scores et des badges.
 
@@ -337,8 +334,7 @@ La `scoringRules` propriété d’une règle de badge limite simplement les règ
 >
 >Meilleure pratique : créez des images de badge propres à chaque site AEM.
 
-
-![chlimage_1-101](assets/chlimage_1-101.png)
+![badging-rule-configuration](assets/badging-rule-configuration.png)
 
 <table>
  <tbody>
@@ -349,7 +345,7 @@ La `scoringRules` propriété d’une règle de badge limite simplement les règ
   </tr>
   <tr>
    <td>seuils</td>
-   <td>Chaîne[]</td>
+   <td>Chaîne</td>
    <td><em>(obligatoire)</em> Chaîne à plusieurs valeurs du formulaire "numéro|chemin"
     <ul>
      <li>nombre = score</li>
@@ -364,7 +360,7 @@ La `scoringRules` propriété d’une règle de badge limite simplement les règ
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>Chaîne[]</td>
+   <td>Chaîne</td>
    <td>(<em>facultatif</em>) Chaîne à plusieurs valeurs pour limiter la règle de badge aux événements de notation identifiés par les règles de notation</td>
   </tr>
  </tbody>
@@ -374,9 +370,9 @@ La `scoringRules` propriété d’une règle de badge limite simplement les règ
 
 Cette version comprend deux règles de mise en badge qui correspondent aux [forums et aux règles](#includedscoringrules)de score des commentaires.
 
-* /libs/settings/community/badging/rules/comments-badging
+* `/libs/settings/community/badging/rules/comments-badging`
 
-* /libs/settings/community/badging/rules/forums-badging
+* `/libs/settings/community/badging/rules/forums-badging`
 
 **Notes:**
 
@@ -416,9 +412,6 @@ cURL -i -X POST -H *header* -u *signature* -F *opération* -F *badge membre-prof
 >* Peut faire référence à une instance d’auteur si le service [](/help/communities/users.md#tunnel-service) tunnel est activé.
 >* Il peut s’agir d’un nom obscur et aléatoire - voir Liste de contrôle [de](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) sécurité concernant l’ID autorisé.
 
->
-
-
 
 ### Exemples: {#examples}
 
@@ -454,8 +447,7 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 >
 >Une nouvelle propriété booléenne `allowBadges`, active/désactive l’affichage des badges pour une instance de composant. Il sera configurable dans les boîtes de dialogue [de modification des](/help/communities/author-communities.md) composants mises à jour par le biais d’une case à cocher intitulée **Badges** d’affichage.
 
-
-**[Composant](/help/communities/calendar.md)**Calendrier SocialEvent`topic`= com/adobe/cq/social/calendar
+**[Composant](/help/communities/calendar.md)** Calendrier SocialEvent `topic`= com/adobe/cq/social/calendar
 
 | **Verbe** | **Description** |
 |---|---|
@@ -464,7 +456,7 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 | UPDATE | le événement de calendrier ou le commentaire du membre est modifié |
 | DELETE | le événement de calendrier ou le commentaire du membre est supprimé |
 
-**[Composant](/help/communities/comments.md)**Commentaires SocialEvent`topic`= com/adobe/cq/social/comment
+**[Composant](/help/communities/comments.md)** Commentaires SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verbe** | **Description** |
 |---|---|
@@ -473,7 +465,7 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 | UPDATE | le commentaire du membre est modifié |
 | DELETE | le commentaire du membre est supprimé |
 
-**[Composant](/help/communities/file-library.md)**de bibliothèque de fichiers SocialEvent`topic`= com/adobe/cq/social/fileLibrary
+**[Composant](/help/communities/file-library.md)** de bibliothèque de fichiers SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbe** | **Description** |
 |---|---|
@@ -482,7 +474,7 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 | UPDATE | met à jour un dossier ou un fichier |
 | DELETE | supprime un dossier ou un fichier |
 
-**[Composant](/help/communities/forum.md)**du forum SocialEvent`topic`= com/adobe/cq/social/forum
+**[Composant](/help/communities/forum.md)** du forum SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verbe** | **Description** |
 |---|---|
@@ -491,7 +483,7 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 | UPDATE | le sujet ou la réponse du forum du membre est modifié |
 | DELETE | le sujet ou la réponse du membre du forum est supprimé |
 
-**[Composant](/help/communities/blog-feature.md)**Journal SocialEvent`topic`= com/adobe/cq/social/journal
+**[Composant](/help/communities/blog-feature.md)** journal SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbe** | **Description** |
 |---|---|
@@ -500,7 +492,7 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 | UPDATE | article ou commentaire du blog du membre modifié |
 | DELETE | article ou commentaire du blog du membre supprimé |
 
-**[Composant](/help/communities/working-with-qna.md)**QnA SocialEvent`topic`= com/adobe/cq/social/qna
+**[Composant](/help/communities/working-with-qna.md)** QnA SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbe** | **Description** |
 |---|---|
@@ -511,7 +503,7 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 | DÉSÉLECTIONNER | la réponse du membre est désélectionnée |
 | DELETE | QnUne question ou réponse du membre est supprimée |
 
-**[Composant](/help/communities/reviews.md)**de révision SocialEvent`topic`= com/adobe/cq/social/review
+**[Composant](/help/communities/reviews.md)** de révision SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verbe** | **Description** |
 |---|---|
@@ -519,18 +511,18 @@ Pour les composants de communautés livrés, les tableaux suivants décrivent la
 | UPDATE | révision du membre est modifiée |
 | DELETE | la révision du membre est supprimée |
 
-**[Composant](/help/communities/rating.md)**de notation SocialEvent`topic`= com/adobe/cq/social/tally/rating/rating
+**[Composant](/help/communities/rating.md)** de notation SocialEvent `topic`= com/adobe/cq/social/tally/rating/rating
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTER LA COTATION | le contenu du membre a été amélioré |
+| AJOUTE | le contenu du membre a été amélioré |
 | SUPPRESSION DE LA COTE | le contenu du membre a été réduit |
 
-**[Composant](/help/communities/voting.md)**de vote SocialEvent`topic`= com/adobe/cq/social/tally/vote
+**[Composant](/help/communities/voting.md)** de vote SocialEvent `topic`= com/adobe/cq/social/tally/vote
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTER le vote | le contenu du député a été voté |
+| AJOUTER VOTE | le contenu du député a été voté |
 | SUPPRIMER LE VOTE | le contenu du député a été rejeté, voté |
 
 **Composants** SocialEvent prenant en charge la modération `topic`= com/adobe/cq/social/modération
@@ -574,7 +566,7 @@ Si la fonction ne fonctionne pas comme prévu, assurez-vous que les données ont
 
 Il est possible d’essayer rapidement de marquer et de marquer des points à l’aide du site [Getting Started Tutorial](/help/communities/getting-started.md) (engager) :
 
-* Accédez à CRXDE Lite sur author.
+* Accédez au CRXDE Lite sur l’auteur.
 * Accédez à la page de base :
 
    * /content/sites/learn/fr/jcr:content
@@ -584,7 +576,7 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
    * **Nom** : `badgingRules`
    * **Type** : `String`
    * Sélectionner **plusieurs**
-   * Sélectionner le **Ajoute**
+   * Sélectionner l&#39; **Ajoute**
    * Enter `/libs/settings/community/badging/rules/forums-badging`
    * Sélectionner **+**
    * Enter `/libs/settings/community/badging/rules/comments-badging`
@@ -595,7 +587,7 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
    * **Nom** : `scoringRules`
    * **Type** : `String`
    * Sélectionner **plusieurs**
-   * Sélectionner le **Ajoute**
+   * Sélectionner l&#39; **Ajoute**
    * Enter `/libs/settings/community/scoring/rules/forums-scoring`
    * Sélectionner **+**
    * Enter `/libs/settings/community/scoring/rules/comments-scoring`
@@ -603,11 +595,11 @@ Il est possible d’essayer rapidement de marquer et de marquer des points à l�
 
 * Select **Save All**.
 
-![chlimage_1-102](assets/chlimage_1-102.png)
+![test-score-badging](assets/test-scoring-badging.png)
 
 Ensuite, assurez-vous que les composants du forum et des commentaires permettent l&#39;affichage des badges :
 
-* Encore une fois en utilisant CRXDE Lite.
+* Encore une fois en utilisant le CRXDE Lite.
 * Accédez au composant de forum
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -618,7 +610,7 @@ Ensuite, assurez-vous que les composants du forum et des commentaires permettent
    * **Type** : `Boolean`
    * **Valeur**: `true`
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![test-forum-component](assets/test-forum-component.png)
 
 Ensuite, [republiez](/help/communities/sites-console.md#publishing-the-site) le site de la communauté.
 
