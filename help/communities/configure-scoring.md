@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -154,7 +154,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
       `/content/sites/engage/en/forum/jcr:content`
 
-   * ajouter les propriétés d’évaluation et de mise en badge
+   * Ajouter les propriétés d’évaluation et de mise en badge
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
@@ -171,7 +171,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * ajouter la propriété d’affichage des badges
+   * Ajouter la propriété d’affichage des badges
 
       `allowBadges = true`
 
@@ -185,7 +185,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
 
       `/content/community-components/en/forum/jcr:content`
 
-   * ajouter les propriétés d’évaluation et de mise en badge
+   * Ajouter les propriétés d’évaluation et de mise en badge
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
@@ -202,7 +202,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * ajouter la propriété d’affichage des badges
+   * Ajouter la propriété d’affichage des badges
 
       `allowBadges = true`
 
@@ -224,15 +224,14 @@ Les captures d’écran des données du référentiel proviennent de la configur
 >Cet exemple ne suit pas les bonnes pratiques suivantes :
 >
 >* Les noms des règles de score doivent être globalement uniques ; ils ne devraient pas se terminer par le même nom.
-   >  Voici un exemple de ce que *ne pas* faire :
-   >  /libs/settings/community/scoring/rules/site1/forums-score
-   >  /libs/settings/community/scoring/rules/site2/forums-score
-   >
-   >
-* Création d’images de badge uniques pour différents sites AEM
-
 >
-
+>  
+Voici un exemple de ce que *ne pas* faire :
+>
+>  /libs/settings/community/scoring/rules/site1/forums-score
+>  /libs/settings/community/scoring/rules/site2/forums-score
+>
+>* Création d’images de badge uniques pour différents sites AEM
 
 
 ### Accès au score UGC {#access-scoring-ugc}
