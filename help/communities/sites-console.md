@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '3292'
 ht-degree: 4%
@@ -33,7 +33,6 @@ Voir [Prise en main de l’AEM Communities](/help/communities/getting-started.md
 >[!NOTE]
 >
 >Les principaux menus Collectivités pour la création de sites [](/help/communities/sites-console.md)communautaires, de modèles [de sites](/help/communities/sites.md)communautaires, de modèles de groupes de [communautés et de fonctions de](/help/communities/tools-groups.md) [communauté ne sont utilisés que dans l&#39;environnement d&#39;auteur.](/help/communities/functions.md)
-
 
 ## Conditions préalables {#prerequisites}
 
@@ -180,7 +179,6 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 >
 >Pour ce faire, activez l’ ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` environnement d’auteur.
 
-
 #### USER MANAGEMENT {#user-management}
 
 ![createsitetetetetsettings](assets/createsitesettings.png)
@@ -190,7 +188,6 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 >Il est recommandé que les sites [de la communauté d’](/help/communities/overview.md#enablement-community) activation soient privés (pour plus d’informations, contactez le représentant de votre compte).
 >
 >Un site communautaire est privé lorsque des visiteurs anonymes du site se voient refuser l’accès, peuvent ne pas s’enregistrer eux-mêmes et ne pas utiliser de connexion sociale.
-
 
 * **Autoriser l&#39;enregistrement d&#39;utilisateur**
 
@@ -227,7 +224,6 @@ Ne vérifiez pas la présence d&#39;un site communautaire *privé* . Cette optio
 >**Autorisation des connexions aux réseaux sociaux**
 >
 >Bien que des exemples de configurations Facebook et Twitter puissent exister et être sélectionnables, pour un environnement [de](/help/sites-administering/production-ready.md)production, il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir Connexion [aux réseaux sociaux avec Facebook et Twitter](/help/communities/social-login.md).
-
 
 #### TAGGING {#tagging}
 
@@ -358,7 +354,7 @@ Default is *selected*.
 
 ![activation de site](assets/site-enablement.png)
 
-Les `ENABLEMENT`paramètres sont applicables lorsque le modèle de site de la communauté choisi inclut la fonction [](/help/communities/functions.md#assignments-function)assignations, qui est disponible lorsque les fonctions d&#39;activation sont sous licence et [configurées](/help/communities/enablement.md). Le modèle de site de référence qui inclut la fonction d&#39;affectations est `Reference Structured Learning Site Template.`
+Les `ENABLEMENT`paramètres sont applicables lorsque le modèle de site de la communauté choisi inclut la fonction [](/help/communities/functions.md#assignments-function)assignations, qui est disponible lorsque les fonctionnalités d&#39;activation sont sous licence et [configurées](/help/communities/enablement.md). Le modèle de site de référence qui inclut la fonction d&#39;affectations est `Reference Structured Learning Site Template.`
 
 * **Gestionnaires** d&#39;activation (Obligatoire) Seuls les membres du `Community Enablementmanagers` groupe peuvent être sélectionnés pour la gestion de cette communauté d&#39;activation. Les gestionnaires d&#39;activation sont chargés d&#39;affecter les membres aux ressources. Voir aussi [Gestion des utilisateurs et des groupes](/help/communities/users.md)d’utilisateurs.
 
@@ -402,7 +398,6 @@ Le contenu d&#39;un site peut être créé avec les mêmes outils que tout autre
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
-
 
 ## Modification des propriétés du site {#modifying-site-properties}
 
@@ -450,7 +445,6 @@ Le panneau STRUCTURE permet de modifier la structure initialement créée à par
 >
 >Vous pouvez modifier l&#39;ordre de toutes les fonctions de la Structure du site, à l&#39;exception de la fonction située en haut. Par conséquent, la page d&#39;accueil du site des communautés ne peut pas être modifiée.
 
-
 >[!CAUTION]
 >
 >* Bien que le titre d’affichage puisse être modifié sans effets secondaires, il n’est pas recommandé de modifier le nom d’URL d’une fonction de communauté appartenant à un site communautaire.
@@ -458,15 +452,13 @@ Le panneau STRUCTURE permet de modifier la structure initialement créée à par
 >
 Par exemple, renommer l’URL ne déplace pas l’UGC existant, avec pour effet de &quot;perdre&quot; l’UGC.
 
-
 >[!CAUTION]
 >
 >La fonction de groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
 >
 >Toute autre fonction, telle que la fonction [de](/help/communities/functions.md#page-function)page, doit être incluse et répertoriée en premier.
 
-
-#### Exemple : ajouter une fonction de catalogue à une structure de site communautaire {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### Exemple : Ajouter une fonction de catalogue à une structure de site communautaire {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![add-catalog-site](assets/add-catalog-site.png)
 
@@ -551,7 +543,6 @@ Pour plus d’informations, voir [Gestion des utilisateurs et des groupes](/help
 >
 >
 est créée, le service [cloud](/help/communities/social-login.md#createafacebookcloudservice) Facebook appliqué doit être configuré pour ajouter des utilisateurs à ce groupe.
-
 
 ## Erreur de configuration pour l’authentification {#configure-for-authentication-error}
 
