@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 6%
@@ -161,8 +161,8 @@ En outre, sélectionnez des composants **[!UICONTROL généraux]** , tels que
 >[!NOTE]
 >
 >Les composants activés pour la page par sont stockés dans le référentiel en tant que valeur de la `components` propriété de la variable
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` .
-
+>
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
 ## Page d’entrée {#landing-page}
 
@@ -183,4 +183,4 @@ Remplacez l’URL du navigateur par la page racine : [http://localhost:4502/edit
 
 Une fois le site publié, la navigation vers la page racine d’une instance de publication redirige vers la page en anglais.
 
-La dernière étape avant de jouer avec les composants SCF des communautés est d&#39;ajouter un dossier de bibliothèque client (clientlibs) .... [ajouter les clientes](add-clientlibs.md)
+La dernière étape avant de jouer avec les composants SCF des communautés est d&#39;ajouter un dossier de bibliothèque client (clientlibs) .... [Ajouter les clientes](add-clientlibs.md)
