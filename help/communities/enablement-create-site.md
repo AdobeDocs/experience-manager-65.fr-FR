@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1728'
 ht-degree: 4%
@@ -123,7 +123,6 @@ Par exemple :
 >[!NOTE]
 >
 >[Le service](/help/communities/deploy-communities.md#tunnel-service-on-author) Tunnel permet de sélectionner les membres et les groupes existants uniquement dans l’environnement de publication.
-
 
 ![rôles d&#39;activation](assets/site-admin.png)
 
@@ -262,7 +261,7 @@ Dans cet exemple, le groupe `Community Ski Class` est ajouté en tant que membre
 
 Une fois qu’un site a été configuré et envoyé pour publication, [configurez le mappage](/help/communities/sites-console.md#configure-for-authentication-error) de connexion ( `Adobe Granite Login Selector Authentication Handler`) sur l’instance de publication. L’avantage est que lorsque les informations d’identification de connexion ne sont pas saisies correctement, l’erreur d’authentification affiche à nouveau la page de connexion du site de la communauté avec un message d’erreur.
 
-ajoutez un `Login Page Mapping` comme :
+Ajoutez un `Login Page Mapping` comme :
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -291,7 +290,7 @@ Pour commencer :
 
 1. Avec le nouveau `localhost.4503` noeud sélectionné
 
-   * ajoute, propriété
+   * Ajoute, propriété
 
       * **Nom** sling:match
       * **Chaîne de type**
@@ -299,7 +298,7 @@ Pour commencer :
 
    (doit se terminer par &#39;$&#39; char)
 
-   * ajoute, propriété
+   * Ajoute, propriété
 
       * **Nom** sling:internalRedirect
       * **Chaîne de type**
@@ -315,7 +314,6 @@ Pour commencer :
 >[!NOTE]
 >
 >Pour désactiver cette fonction, il vous suffit de pré-ajouter la valeur de la `sling:match` propriété à l’aide de &quot;x&quot; - `xlocalhost.4503/$` - et **d’enregistrer tout**.
-
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -341,8 +339,7 @@ Après toute modification, n’oubliez pas d’ **enregistrer** et de publier à
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
 
-
-### ajouter un catalogue {#add-a-catalog}
+### Ajouter un catalogue {#add-a-catalog}
 
 Le modèle de site communautaire choisi pour ce site communautaire doit contenir la fonctionnalité de catalogue.
 
