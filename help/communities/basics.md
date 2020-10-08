@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les composants d’AEM Communities
 seo-title: Notions fondamentales sur les composants d’AEM Communities
-description: ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
-seo-description: ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
+description: Ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
+seo-description: Ajouter les fonctionnalités Communautés aux sites AEM en mode d’édition et configurer les composants
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 57%
@@ -37,7 +37,6 @@ Les composants de communauté disponibles sont répertoriés [ici](author-commun
 >For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 >
 >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
-
 
 ### Accès au mode de conception {#entering-design-mode}
 
