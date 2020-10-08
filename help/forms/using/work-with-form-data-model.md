@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '4162'
+source-wordcount: '4148'
 ht-degree: 60%
 
 ---
@@ -200,9 +200,9 @@ Utilisez l’attribut request pour récupérer les propriétés associées à pa
    >[!NOTE]
    >
    > * Si vous utilisez un modèle statique, superposez le fichier head.jsp à l’adresse suivante :
-/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Si vous utilisez un modèle modifiable, superposez le fichier aftemplatedpage.jsp à l’adresse suivante :
-/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Définissez [!DNL paramMap] l’attribut de requête. Par exemple, incluez le code suivant dans le fichier .jsp du dossier des applications :
