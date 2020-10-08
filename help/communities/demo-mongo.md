@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 1%
@@ -74,7 +74,6 @@ Ceci début un serveur MongoDB à l’aide du port par défaut 27017.
 >
 >Si MongoDB est démarré *après* AEM, **redémarrez** toutes les instances **AEM** afin qu’elles se connectent correctement à MongoDB.
 
-
 ### Option de production de démonstration : Configurer un jeu de Secondaires MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
 Les commandes suivantes constituent un exemple de configuration d’un jeu de réplicas avec 3 noeuds sur localhost :
@@ -133,7 +132,6 @@ Ceci début un serveur HTTP Solr en utilisant le port par défaut 8983. Vous pou
 >
 >Si Solr Console n&#39;est pas disponible, vérifiez les journaux sous &lt;solrinstall>/example/logs. Vérifiez si SOLR tente de se lier à un nom d’hôte spécifique qui ne peut pas être résolu (ex. &quot;user-macbook-pro&quot;).
 Si c&#39;est le cas, mettez à jour le fichier etc/hosts avec une nouvelle entrée pour ce nom d&#39;hôte (par exemple, 127.0.0.1 user-macbook-pro) et Solr sera correctement début.
-
 
 ### SolrCloud {#solrcloud}
 
