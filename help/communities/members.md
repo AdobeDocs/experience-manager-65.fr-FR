@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 4%
@@ -26,7 +26,7 @@ Les fonctionnalités AEM Communities exigent souvent que les visiteurs du site s
 
 ### Membres (utilisateurs) sur Publier {#members-users-on-publish}
 
-En utilisant les consoles de membres et de groupes des communautés, les membres et les groupes de membres enregistrés dans l&#39;environnement de *publication* peuvent être créés et gérés à partir de l&#39;environnement *auteur* . Cela n&#39;est possible que lorsque le service [de](deploy-communities.md#tunnel-service-on-author) tunnel est activé.
+En utilisant les consoles des membres et groupes des communautés, les membres et les groupes de membres enregistrés dans l&#39;environnement de *publication* peuvent être créés et gérés à partir de l&#39;environnement *auteur* . Cela n&#39;est possible que lorsque le service [de](deploy-communities.md#tunnel-service-on-author) tunnel est activé.
 
 ### Utilisateurs sur l’auteur {#users-on-author}
 
@@ -39,7 +39,6 @@ Pour gérer les utilisateurs et les groupes enregistrés dans l’environnement 
 >
 >Avec un exemple de contenu déployé et activé, de nombreux exemples d’utilisateurs existent dans les environnements d’auteur et de publication. Ces utilisateurs ne seront pas présents lors de l’exécution avec le mode [d’exécution](../../help/sites-administering/production-ready.md)nosamplecontent.
 
-
 ## Console Membres {#members-console}
 
 Dans l’environnement d’auteur, pour accéder à la console Membres de gestion des membres enregistrés dans l’environnement de publication :
@@ -49,7 +48,6 @@ Dans l’environnement d’auteur, pour accéder à la console Membres de gestio
 >[!CAUTION]
 >
 >Il ne sera pas possible d&#39;utiliser la console Membres si le service [](deploy-communities.md#tunnel-service-on-author) tunnel n&#39;est pas activé.
-
 
 ![member-console1](assets/member-console1.png)
 
@@ -156,7 +154,7 @@ Voir aussi [Scoring and Badges](implementing-scoring.md).
 
 ![create-member2](assets/create-member2.png)
 
-* **[!UICONTROL Ajouter des badges]**
+* **[!UICONTROL badges d&#39;Ajoute]**
    * Commencez la saisie pour sélectionner l’un des badges [](badges.md)disponibles. Une fois un badge sélectionné, choisissez chaque site ou tous les sites sur lesquels le badge doit être affiché avec l&#39;avatar du membre.
    * Plusieurs badges et sites peuvent être choisis.
 * **[!UICONTROL Suppression de badges]**
@@ -174,7 +172,6 @@ Pour accéder à la console Groupes :
 >[!CAUTION]
 >
 >Il ne sera pas possible d&#39;utiliser la console Groupes si le service [de](deploy-communities.md#tunnel-service-on-author) tunnel n&#39;est pas activé.
-
 
 ### Créer un groupe {#create-new-group}
 
