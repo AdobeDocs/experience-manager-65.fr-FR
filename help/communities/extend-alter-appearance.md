@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -28,7 +28,6 @@ Pour une simple démonstration, une fonction visuelle, l’avatar affiché par l
 >[!NOTE]
 >
 >Pour utiliser l&#39;extension, l&#39;instance du système de commentaires d&#39;un site Web à affecter (/content) doit définir resourceType comme système de commentaires personnalisé.
-
 
 ## Modification des scripts HBS {#modify-the-hbs-scripts}
 
