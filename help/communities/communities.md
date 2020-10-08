@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 10%
@@ -22,7 +22,7 @@ ht-degree: 10%
 
 ## Présentation {#overview}
 
-Le AEM Communities simplifie la création et la personnalisation de fonctionnalités de la communauté telles que les forums, les groupes d’utilisateurs, les blogs, les questions et réponses, les calendriers, les commentaires, les commentaires, les votes, les évaluations et les affectations. Ces fonctions entraînent la saisie de contenu généré par l’utilisateur (UGC) dans l’environnement de publication.
+AEM Communities simplifie la création et la personnalisation de fonctionnalités de la communauté telles que les forums, les groupes d’utilisateurs, les blogs, les questions et réponses, les calendriers, les commentaires, les commentaires, les votes, les évaluations et les affectations. Ces fonctions entraînent la saisie de contenu généré par l’utilisateur (UGC) dans l’environnement de publication.
 
 La fondation d&#39;un site [](overview.md#communitiessites) communautaire est le cadre [des composantes](scf.md) sociales (SCF). La création d&#39;un site communautaire commence par la sélection d&#39;un modèle [de site](sites-console.md) communautaire composé de fonctions [](functions.md)communautaires.
 
@@ -35,7 +35,6 @@ Pour une présentation et des didacticiels de prise en main, visitez :
 >[!NOTE]
 > 
 >Il est vivement recommandé de rester à jour avec les [dernières versions](deploy-communities.md#latest-releases).
-
 
 ## Déploiements recommandés {#recommended-deployments}
 
