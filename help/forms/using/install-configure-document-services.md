@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 70%
@@ -45,7 +45,7 @@ AEM Forms fournit un ensemble de services OSGi pour exécuter différentes opé
 
    Le service Signature accède aux certificats et aux informations d’identification stockées dans le Trust Store. For more information, see [Signature Service](/help/forms/using/aem-document-services-programmatically.md).
 
-aem forms est une plate-forme puissante de classe entreprise et les services de document ne sont qu&#39;une des capacités de AEM Forms. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms est une plate-forme puissante de classe entreprise et les services de document ne sont qu&#39;une des capacités de AEM Forms. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologie de déploiement {#deployment-topology}
 
@@ -511,7 +511,7 @@ Sous Microsoft Windows, le service PDF Generator utilise Adobe Acrobat pour con
 
 ### (Windows uniquement) Configurez l’itinéraire Principal pour la conversion HTML vers PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-Le service PDF Generator fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : WebKit, Acrobat WebCapture (Windows uniquement) et PhantomJS. adobe recommande l’utilisation de l’itinéraire PhantomJS, car il est capable de gérer le contenu dynamique et ne dépend pas des bibliothèques 32 bits, du JDK 32 bits ou ne nécessite aucune police supplémentaire. En outre, l’itinéraire PhantomJS ne requiert pas d’accès sudo ou root pour exécuter la conversion.
+Le service PDF Generator fournit plusieurs itinéraires pour convertir des fichiers HTML en documents PDF : WebKit, Acrobat WebCapture (Windows uniquement) et PhantomJS. Adobe recommande l’utilisation de l’itinéraire PhantomJS, car il est capable de gérer le contenu dynamique et ne dépend pas des bibliothèques 32 bits, du JDK 32 bits ou ne nécessite aucune police supplémentaire. En outre, l’itinéraire PhantomJS ne requiert pas d’accès sudo ou root pour exécuter la conversion.
 
 L’itinéraire principal par défaut pour les conversions HTML en PDF est WebKit. Pour modifier l’itinéraire de conversion :
 
@@ -553,8 +553,7 @@ Effectuez les étapes suivantes pour configurer les certificats :
 
    >[!NOTE]
    >
-   >* Dans l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification d’extensions de Reader avant de mettre à jour des informations d’identification expirées ou d’évaluation.
-
+   >Dans l’environnement de production, remplacez les informations d’identification d’évaluation par celles de production. Veillez à supprimer vos anciennes informations d’identification d’extensions de Reader avant de mettre à jour des informations d’identification expirées ou d’évaluation.
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** sur la page **[!UICONTROL Modifier les paramètres]** utilisateur.
 
