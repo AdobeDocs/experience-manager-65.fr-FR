@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 7%
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 # Configuration du courrier électronique {#configuring-email}
 
-aem communities utilise le courrier électronique pour :
+AEM Communities utilise le courrier électronique pour :
 
 * [Notifications des communautés](notifications.md)
 * [Abonnements des communautés](subscriptions.md)
@@ -31,7 +31,6 @@ Par défaut, la fonction de messagerie n’est pas fonctionnelle, car elle requi
 >[!CAUTION]
 >
 >Le courrier électronique pour les notifications et les abonnements doit être configuré uniquement sur l’éditeur [](deploy-communities.md#primary-publisher)Principal.
-
 
 ## Configuration par défaut du service de messagerie {#default-mail-service-configuration}
 
@@ -131,7 +130,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 * **[!UICONTROL Créer une publication à partir d’un courrier électronique de réponse]**
 
    Si cette case est cochée, le destinataire de l’abonnement de messagerie peut publier du contenu en envoyant une réponse. Cette option est cochée par défaut.
-* **[!UICONTROL ajouter l’identifiant suivi à l’en-tête]**
+* **[!UICONTROL Ajouter l’identifiant suivi à l’en-tête]**
 
    La valeur par défaut est `Reply-To`.
 
@@ -169,7 +168,7 @@ Pour les abonnements des communautés, il est possible d’activer ou de désact
 
 Pour que le courrier électronique soit introduit dans le référentiel, il est nécessaire de configurer un importateur d’interrogation et de configurer ses propriétés manuellement dans le référentiel.
 
-### ajouter un nouvel importateur d&#39;interrogation {#add-new-polling-importer}
+### Ajouter un nouvel importateur d&#39;interrogation {#add-new-polling-importer}
 
 * Connectez-vous à l’éditeur Principal avec les droits d’administrateur et accédez à la console d’interrogation de l’importateur :
 
