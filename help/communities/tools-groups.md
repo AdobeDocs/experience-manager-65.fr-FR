@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 3%
@@ -33,10 +33,9 @@ Au moment où une action est entreprise pour créer un nouveau groupe communauta
 >
 >Les consoles pour la création de sites [](/help/communities/sites-console.md)communautaires, de modèles [de sites](/help/communities/sites.md)communautaires, de modèles de groupes de [communautés et de fonctions de](/help/communities/tools-groups.md) [communauté ne sont utilisées que dans l&#39;environnement d&#39;auteur.](/help/communities/functions.md)
 
-
 ## Console Modèles de groupe {#group-templates-console}
 
-Pour accéder à la console des modèles de groupes dans l’environnement AEM Author :
+Pour accéder à la console des modèles de groupes dans l’environnement Auteur AEM :
 
 * Sélectionner les **outils | Communautés | Modèles de groupe,** à partir de la navigation globale.
 
@@ -78,12 +77,11 @@ Dans le panneau Informations de base, un nom, une description et si le modèle e
 
 >[!CAUTION]
 >
->Si vous travaillez avec AEM 6.1 Communities FP4 ou version antérieure, n’ajoutez pas de fonction de groupes à un modèle de groupe.
+>Si vous travaillez avec AEM 6.1 Communautés FP4 ou version antérieure, n’ajoutez pas de fonction de groupes à un modèle de groupe.
 >
 >La fonction Groupes imbriqués est disponible à partir du [FP1](/help/communities/communities.md#latestfeaturepack)des communautés.
 >
 >Il n&#39;est toujours pas autorisé d&#39;ajouter une fonction Groupes en tant que première ou seule fonction dans un modèle.
-
 
 ![Éditeur de modèle de groupe](assets/template-editor.png)
 
