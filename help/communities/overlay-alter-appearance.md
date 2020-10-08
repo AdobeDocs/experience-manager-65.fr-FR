@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -62,14 +62,13 @@ Poussez le composant de commentaires superposés sur l’instance de publication
 >
 >Une forme de réplication plus robuste consisterait à créer un package dans Package Manager et à l’ [activer](/help/sites-administering/package-manager.md#replicating-packages) . Un package peut être exporté et archivé.
 
-
 Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** , puis cliquez sur **[!UICONTROL Activer l’arborescence.]**
 
 Pour le chemin d’accès au Début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
-### Résultats de la Vue {#view-results}
+### Résultats de la vue {#view-results}
 
 Si vous vous connectez à l’instance de publication en tant qu’administrateur (https://localhost:4503/crx/de en tant qu’administrateur/administrateur, par exemple), vous pouvez vérifier que les composants superposés sont bien présents.
 
