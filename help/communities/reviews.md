@@ -1,8 +1,8 @@
 ---
 title: Utilisation des révisions et du résumé des révisions (affichage)
 seo-title: Utilisation des révisions et du résumé des révisions (affichage)
-description: ajouter les composants Résumé des révisions et révisions à une page
-seo-description: ajouter les composants Résumé des révisions et révisions à une page
+description: Ajouter les composants Résumé des révisions et révisions à une page
+seo-description: Ajouter les composants Résumé des révisions et révisions à une page
 uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 36%
@@ -27,7 +27,6 @@ The `Reviews Summary (Display)` component provides a summary of an active or clo
 >[!NOTE]
 >
 >La publication anonyme d’une révision n’est pas possible. Les visiteurs du site doivent s&#39;inscrire (devenir membre) et se connecter pour participer. Les visiteurs connectés peuvent mettre à jour leurs révisions à tout moment.
-
 
 ## Ajout d’une révision à une page {#adding-a-review-to-a-page}
 
@@ -75,7 +74,6 @@ Sur le site web, les évaluations requises sont signalées d’un astérisque. S
 >
 >If an item is entered on the **[!UICONTROL Required Ratings]** tab that is not specified on the **[!UICONTROL Allowed Ratings]** tab, then it is not included in the items to rate.
 
-
 Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
 ![Révisions](assets/configure-review3.png)
@@ -92,7 +90,7 @@ Under the **[!UICONTROL Reviews]** tab, specify how reviews are handled.
 
    Si cette option est cochée, autorisez le téléchargement des pièces jointes pour la révision. Cette option n’est pas cochée par défaut.
 
-* **Taille maximale du fichier **
+* **Taille maximale du fichier**
 
    N’est pertinent que si l’option **[!UICONTROL Autoriser les téléchargements]** de fichiers est cochée. Ce champ limite la taille (en octets) d’un fichier téléchargé. La valeur par défaut est de 10 Mo.
 
@@ -169,7 +167,6 @@ When the [required client-side libraries](reviews-basics.md#essentials-for-clien
 >[!NOTE]
 >
 >La « moyenne » reflète les votes pour le premier élément visible dans l’onglet Évaluations autorisées de la révision qui fait l’objet d’un résumé.
-
 
 ### Configuration du résumé des révisions (affichage) {#configuring-reviews-summary-display}
 
