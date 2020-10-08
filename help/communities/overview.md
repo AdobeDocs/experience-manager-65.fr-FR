@@ -1,8 +1,8 @@
 ---
 title: Présentation d’AEM Communities
 seo-title: Présentation d’AEM Communities
-description: Présentation des fonctionnalités et de la configuration AEM Communities
-seo-description: Présentation des fonctionnalités et de la configuration AEM Communities
+description: Présentation des fonctionnalités et de la configuration d’AEM Communities
+seo-description: Présentation des fonctionnalités et de la configuration d’AEM Communities
 uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 5%
@@ -23,11 +23,11 @@ ht-degree: 5%
 
 Adobe Experience Manager (AEM) Communities permet de créer rapidement un site de communauté local doté de performances et d’une gestion de sites améliorées, et qui encourage les visiteurs à devenir membres de la communauté.
 
-Contactez votre gestionnaire de compte pour plus d’informations sur la licence des AEM Communities, ainsi que sur les licences supplémentaires pour les fonctionnalités d’activation et Adobe Analytics.
+Contactez le représentant de votre compte pour obtenir des informations sur la licence d’AEM Communities, ainsi que des licences supplémentaires pour les fonctionnalités d’activation et Adobe Analytics.
 
 ## Fonctionnalités des communautés {#communities-features}
 
-Le AEM Communities permet le développement d&#39;une relation avec les visiteurs du site, qui :
+AEM Communities permet le développement d&#39;une relation avec les visiteurs du site, qui :
 
 * **Informe** les utilisateurs au moyen de blogs, de questions et réponses et de calendriers événements,
 * Tout en **obtenant des informations** par le biais de forums, de commentaires et d’autres contenus de la communauté, souvent appelés contenu généré par l’utilisateur (UGC).
@@ -80,11 +80,11 @@ les membres voient les événements qui les concernent et le contenu généré p
    * Marque : téléchargement facultatif d’une image de bannière pour affichage sur toutes les pages du site de la communauté
    * Menu Navigation : des liens de navigation sont fournis pour les fonctionnalités incluses dans le modèle de site communautaire.
 
-Pour découvrir la facilité de création rapide d&#39;un nouveau site communautaire, consultez [Prise en main avec les AEM Communities](/help/communities/getting-started.md).
+Pour découvrir la facilité de création rapide d&#39;un nouveau site communautaire, consultez [Prise en main avec AEM Communities](/help/communities/getting-started.md).
 
 ## Persistance du contenu de la communauté {#community-content-persistence}
 
-Pour améliorer les performances et la synchronisation du contenu de la communauté, les AEM Communities ont besoin d’un magasin commun spécifique pour le contenu généré par l’utilisateur (UGC) partagé entre toutes les instances d’AEM (auteur et publication).
+Pour améliorer les performances et la synchronisation du contenu de la communauté, AEM Communities a besoin d’un magasin commun spécifique pour le contenu généré par l’utilisateur (UGC) partagé entre toutes les instances d’AEM (auteur et publication).
 
 Le contenu de la communauté est facilement accessible par l&#39;intermédiaire du fournisseur de ressources d&#39;enregistrement (SRP), qui fournit une couche pour séparer l&#39;accès de la topologie sous-jacente et prend en charge un magasin commun pour l&#39;UGC.
 
@@ -157,7 +157,7 @@ Voir la console [Modèles de](/help/communities/sites.md)site.
 
 ## Fonctions de la communauté {#community-functions}
 
-Les caractéristiques attendues d&#39;une expérience communautaire sont bien connues. Avec les AEM Communities, ces fonctionnalités sont disponibles sous forme de blocs de construction, appelés fonctions communautaires.
+Les caractéristiques attendues d&#39;une expérience communautaire sont bien connues. Avec AEM Communities, ces fonctionnalités sont disponibles sous forme de blocs de création, appelés fonctions communautaires.
 
 Les fonctions de la communauté sont des pages AEM normales qui comprennent des composants reliés entre eux dans une fonction qui est facilement intégrée dans un modèle de site communautaire.
 
@@ -175,7 +175,7 @@ Voir également :
 
 * [Console](/help/communities/groups.md) Groupes de sites pour la création de sous-communautés dans l’environnement d’auteur.
 * [Console](/help/communities/tools-groups.md) Modèles de groupe pour la création de la structure du site pour les groupes.
-* [Prise en main des AEM Communities](/help/communities/getting-started.md) pour des didacticiels permettant de créer rapidement un site communautaire incluant des groupes imbriqués.
+* [Prise en main de AEM Communities](/help/communities/getting-started.md) pour des didacticiels permettant de créer rapidement un site communautaire incluant des groupes imbriqués.
 
 ## Composants communautaires {#community-components}
 
@@ -205,9 +205,9 @@ Les caractéristiques d&#39;une communauté d&#39;engagement peuvent inclure :
 * Modération
 * Notifications
 * Scores et badges
-* rapports Analytics
+* Rapports Analytics
 
-Pour découvrir la facilité de création rapide d&#39;une nouvelle communauté d&#39;engagement, consultez [Prise en main avec les AEM Communities](/help/communities/getting-started.md).
+Pour découvrir la facilité de création rapide d&#39;une nouvelle communauté d&#39;engagement, consultez [Prise en main avec AEM Communities](/help/communities/getting-started.md).
 
 ### Communauté d&#39;activation {#enablement-community}
 
@@ -224,9 +224,9 @@ Les caractéristiques d&#39;une communauté d&#39;activation peuvent être les s
 
 Une communauté d&#39;activation peut être créée lorsque le module complémentaire [d&#39;activation est configuré](/help/communities/enablement.md), ce qui nécessite une licence supplémentaire pour une utilisation dans un environnement de production. Un site communautaire d&#39;activation inclut la fonction [](#community-functions)assignations.
 
-Pour découvrir la facilité de création d’une communauté d’activation, consultez [Prise en main des AEM Communities pour l’activation](/help/communities/getting-started-enablement.md).
+Pour découvrir la facilité de création d’une communauté d’activation, consultez [Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md).
 
-## AEM machine de démonstration {#aem-demo-machine}
+## aem machine de démonstration {#aem-demo-machine}
 
 L’AEM [Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) gère et exécute des démos pour AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities, Appset Forms, qui nécessitent souvent plus de configuration que de simplement lancer une instance QuickStart. ](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms) AEM Demo Machine va installer une [infrastructure](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) supplémentaire telle que MongoDB, Solr, MySQL, FFmpeg et les serveurs de messagerie.
 
@@ -245,8 +245,7 @@ L&#39;AEM Demo Machine requiert une licence AEM valide.
 >
 >Vue une présentation [](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) vidéo de l&#39;AEM Demo Machine (13:26).
 
-
-## Documentation AEM Communities {#aem-communities-documentation}
+## Documentation de l’AEM Communities {#aem-communities-documentation}
 
 * Visit [Deploying Communities](deploy-communities.md) to learn about recommended deployments.
 * Visitez [Administration des sites](administer-landing.md) des communautés pour en savoir plus sur la création d’un site communautaire, l’ajout de groupes communautaires, la configuration de modèles de site communautaire, la modération du contenu communautaire, la gestion des membres, le balisage, les notifications, la notation et les badges.
