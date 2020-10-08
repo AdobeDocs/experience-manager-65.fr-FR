@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 46%
@@ -40,7 +40,7 @@ La fonction Blog comporte les éléments suivants :
 
 Cette section de la documentation décrit : :
 
-* ajouter la fonction de blog à un site AEM
+* Ajouter la fonction de blog à un site AEM
 * Paramètres de configuration des composants de blog
 
 >[!NOTE]
@@ -48,7 +48,6 @@ Cette section de la documentation décrit : :
 >Les composants `Journal` et `Journal Sidebar` sont intitulés `Blog` et `Blog Sidebar`.
 >
 >La fonction Blog disponible dans AEM 6.0 et versions antérieures a été supprimée. Elle était basée sur un modèle et autorisait uniquement les auteurs à créer du contenu dans l’environnement de création.
-
 
 ## Ajout de composants de blog à une page {#adding-blog-components-to-a-page}
 
@@ -99,7 +98,7 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Membres privilégiés autorisés**
 
-   ajoutez les membres privilégiés autorisés à créer du contenu.
+   Ajoutez les membres privilégiés autorisés à créer du contenu.
 
 * **Bloquer le contenu généré par l’utilisateur en mode d’édition d’auteur**
 
@@ -112,8 +111,8 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 >[!NOTE]
 >
 >Le titre du Journal permet de créer automatiquement l&#39;URL du blog.
+>
 >Le titre du journal que vous spécifiez ici permet d&#39;utiliser au maximum 50 caractères (avec 5 caractères supplémentaires pour l&#39;unicité) pour créer l&#39;URL du blog.
-
 
 * **Description du journal**
 
