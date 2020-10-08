@@ -11,7 +11,7 @@ topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 30%
@@ -25,15 +25,13 @@ ht-degree: 30%
 >
 >Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
 
-
-aem communities expose les API prêtes à l’emploi pour gérer les profils utilisateur et gérer en bloc le contenu généré par l’utilisateur. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Ces API permettent également aux contrôleurs et aux processeurs des données client de se conformer au Règlement général sur la protection des données (RGPD) de l&#39;Union européenne et à d&#39;autres mandats de confidentialité inspirés du RGPD.
+AEM Communities expose les API prêtes à l’emploi pour gérer les profils utilisateur et gérer en bloc le contenu généré par l’utilisateur. Once enabled, the **UserUgcManagement** service allows the privileged users (community administrators and moderators) to disable user profiles, and bulk delete or bulk export UGC for specific users. Ces API permettent également aux contrôleurs et aux processeurs des données client de se conformer au Règlement général sur la protection des données (RGPD) de l&#39;Union européenne et à d&#39;autres mandats de confidentialité inspirés du RGPD.
 
 Pour plus d’informations, voir la [page RGPD du centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Si vous avez configuré [Adobe Analytics sur le site AEM Communities](/help/communities/analytics.md) , les données utilisateur capturées sont envoyées au serveur Adobe Analytics. adobe analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur et de respecter les règles GDPR. Pour plus d’informations, voir [Envoyer des demandes d’accès et de suppression](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
-
+>Si vous avez configuré [Adobe Analytics sur le site AEM Communities](/help/communities/analytics.md) , les données utilisateur capturées sont envoyées au serveur Adobe Analytics. Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur et de respecter les règles GDPR. Pour plus d’informations, voir [Envoyer des demandes d’accès et de suppression](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 To put these APIs to use, you need to enable the `/services/social/ugcmanagement` endpoint by activating the UserUgcManagement service. To activate this service, install the [sample servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) available on [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Ensuite, accédez au point de terminaison de l’instance de publication de votre site de communautés avec les paramètres appropriés à l’aide d’une requête http, semblable à :
 
@@ -81,7 +79,6 @@ Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, re
 >
 >La désactivation d’un utilisateur supprime tout le contenu qu’il a généré et qui se trouve sur le serveur.
 
-
 For example, to delete the profile of a user having authorizable ID `weston.mccall@dodgit.com` through http-POST request, use the following parameters:
 
 * l’utilisateur = `weston.mccall@dodgit.com`
@@ -90,5 +87,3 @@ For example, to delete the profile of a user having authorizable ID `weston.mcca
 >[!NOTE]
 >
 >L’API deleteUserAccount() désactive un seul profil utilisateur dans le système, puis supprime le contenu généré par l’utilisateur. However, to delete a user profile from the system, navigate to **CRXDE Lite**: [https://&lt;server>/crx/de](https://localhost:4502/crx/de), locate the user node and delete it.
-
-
