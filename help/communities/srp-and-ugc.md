@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -46,7 +46,6 @@ Lors de la mise à niveau à partir de AEM 6.0 ou d&#39;une version antérieure,
 >
 >Pour les utilitaires de remplacement, voir Refactorisation [de](socialutils.md)SocialUtils.
 
-
 ## Méthode d&#39;utilitaire d&#39;accès à l&#39;UGC {#utility-method-to-access-ugc}
 
 Pour accéder à l’UGC, utilisez une méthode issue du package SocialResourceUtilities qui renvoie un chemin d’accès approprié pour accéder à l’UGC à partir de SRP et remplace la méthode déconseillée trouvée dans le package SocialUtils.
@@ -74,7 +73,6 @@ Pour obtenir des instructions de codage, consultez [Accès à l’UGC avec SRP](
 >
 >La ressource de cheminToUGCStoragePath() renvoyée *ne convient pas* à la vérification [de](srp.md#for-access-control-acls)l&#39;ACL.
 
-
 ## Méthode d&#39;utilitaire pour accéder aux listes ACL {#utility-method-to-access-acls}
 
 Certaines implémentations SRP, telles que ASRP et MSRP, stockent le contenu de la communauté dans des bases de données qui ne fournissent aucune vérification ACL. Les noeuds d’ombre fournissent un emplacement dans le référentiel local auquel les ACL peuvent être appliquées.
@@ -101,7 +99,6 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >[!CAUTION]
 >
 >Le chemin renvoyé par resourceToACLPath() *ne convient pas* pour [accéder à l&#39;UGC](#utility-method-to-access-acls) lui-même.
-
 
 ## Emplacements d&#39;Enregistrements liés à l&#39;UGC {#ugc-related-storage-locations}
 
@@ -136,4 +133,3 @@ L’UGC n’est créé dans aucun de ces emplacements et ne doit être accessibl
 * [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - Présentation et présentation de l&#39;utilisation du référentiel.
 * [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - Règles de codage.
 * [Refactorisation](socialutils.md) de SocialUtils - Mise en correspondance des méthodes d’utilitaire obsolètes avec les méthodes d’utilitaire SRP actuelles.
-
