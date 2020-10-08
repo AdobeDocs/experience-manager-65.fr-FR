@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 6%
@@ -32,7 +32,6 @@ Les deux composants doivent être mis en place, en particulier si vous personnal
 >Un seul système de commentaires par page de site est autorisé.
 >
 >De nombreuses fonctions de communautés incluent déjà un système de commentaires dont resourceType peut être modifié pour référencer le système de commentaires étendu.
-
 
 ## Create the Comments Component {#create-the-comments-component}
 
@@ -154,7 +153,7 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
    * **Nom** : `clientlibs`
    * **Type** : `cq:ClientLibraryFolder`
-   * Ajoutez à l&#39;onglet **[!UICONTROL Propriétés]** :
+   * Ajouter à l&#39;onglet **[!UICONTROL Propriétés]** :
 
       * **Nom** `categories`**Type** `String` **Valeur** `cq.social.author.hbs.comments` `Multi`
       * **Nom** `dependencies`**Type** `String` **Valeur** `cq.social.scf` `Multi`
