@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 2%
@@ -42,7 +42,7 @@ Lorsqu’une structure d’intégration de traduction est configurée en plus du
 
 ## Service de traduction par défaut {#the-default-translation-service}
 
-aem communities est livré avec une licence [d’](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) évaluation pour un service [de traduction](../../help/sites-administering/tc-msconf.md) par défaut activé pour plusieurs langues.
+AEM Communities est livré avec une licence [d’](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) évaluation pour un service [de traduction](../../help/sites-administering/tc-msconf.md) par défaut activé pour plusieurs langues.
 
 Lors de la [création d’un site](sites-console.md)communautaire, le service de traduction par défaut est activé lorsque `Allow Machine Translation` est coché à partir du sous-panneau [TRADUCTION](sites-console.md#translation) .
 
@@ -51,7 +51,6 @@ Lors de la [création d’un site](sites-console.md)communautaire, le service de
 >Le service de traduction par défaut est réservé à la démonstration.
 >
 >Pour un système de production, un service de traduction sous licence est requis. Si elle n’est pas autorisée, le service de traduction par défaut doit être [désactivé](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
-
 
 ## Traduction globale de l&#39;UGC {#global-translation-of-ugc}
 
@@ -70,7 +69,6 @@ Par exemple, si un forum a été établi sur le site de base, que des copies de 
 >Bien que l’UGC soit toujours dans le magasin [](working-with-srp.md)commun, il est situé sous l’emplacement UGC spécifique à la langue, tandis que le nouveau contenu, ajouté après la configuration de la traduction globale, est récupéré depuis l’emplacement de stockage partagé global.
 >
 >Il n’existe aucun outil de migration pour déplacer ou fusionner du contenu spécifique à une langue dans la boutique partagée globale.
-
 
 ### Configuration de l’intégration de traduction {#translation-integration-configuration}
 
@@ -145,7 +143,6 @@ Le nouveau service cloud d’intégration de traduction doit être activé sur l
 >La langue préférée est la préférence de langue définie dans le profil d’un utilisateur, lorsque le visiteur du site est connecté et a spécifié une préférence de langue.
 >
 >Lorsque le visiteur du site est anonyme ou n’a pas indiqué de préférence de langue dans son profil, la langue préférée est la langue de base du modèle de page.
-
 
 ### Préférences utilisateur {#user-preference}
 
