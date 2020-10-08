@@ -1,6 +1,6 @@
 ---
-title: Création d’Applications web qui renvoient des formulaires
-seo-title: Création d’Applications web qui renvoient des formulaires
+title: Création d’Applications web renvoyant Forms
+seo-title: Création d’Applications web renvoyant Forms
 description: 'null'
 seo-description: 'null'
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 1%
@@ -19,9 +19,9 @@ ht-degree: 1%
 ---
 
 
-# Création d’Applications web renvoyant des formulaires {#creating-web-applications-thatrenders-forms}
+# Création d’Applications web renvoyant Forms {#creating-web-applications-thatrenders-forms}
 
-## Création d’Applications web renvoyant des formulaires {#creating-web-applications-that-renders-forms}
+## Création d’Applications web renvoyant Forms {#creating-web-applications-that-renders-forms}
 
 Vous pouvez créer une application Web qui utilise des servlets Java pour appeler le service Forms et générer des formulaires. L’utilisation d’une servlet Java™ présente l’avantage de permettre d’écrire la valeur de retour du processus dans un navigateur Web client. En d’autres termes, une servlet Java peut être utilisée comme lien entre le service Forms qui renvoie un formulaire et un navigateur Web client.
 
@@ -59,7 +59,7 @@ où &lt;répertoire ** d’installation> correspond au chemin d’installation. 
 
 Pour accéder à la conception de formulaire Purchase Order Dynamic.xdp, spécifiez `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` le nom du formulaire (premier paramètre transmis à la `renderPDFForm` méthode) et `repository:///` la valeur URI racine du contenu.
 
-Les fichiers de données XML utilisés par l’application Web ont été déplacés du dossier Data vers `C:\Adobe`(le système de fichiers qui appartient au serveur d’applications J2EE hébergeant des AEM Forms). Les noms de fichier sont Purchase Order *Canada.xml* et Purchase Order *US.xml*.
+Les fichiers de données XML utilisés par l’application Web ont été déplacés du dossier Data vers `C:\Adobe`(le système de fichiers qui appartient au serveur d’applications J2EE hébergeant AEM Forms). Les noms de fichier sont Purchase Order *Canada.xml* et Purchase Order *US.xml*.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Pour créer des applications Web qui effectuent le rendu de formulaires basés s
 
 >[!NOTE]
 >
->Certaines de ces étapes dépendent de l’application J2EE sur laquelle les AEM Forms sont déployés. Par exemple, la méthode que vous utilisez pour déployer un fichier WAR dépend du serveur d’applications J2EE que vous utilisez. Cette section suppose que le AEM Forms est déployé sur JBoss®.
+>Certaines de ces étapes dépendent de l’application J2EE sur laquelle AEM Forms est déployé. Par exemple, la méthode que vous utilisez pour déployer un fichier WAR dépend du serveur d’applications J2EE que vous utilisez. Cette section suppose que AEM Forms est déployé sur JBoss®.
 
 ### Creating a web project {#creating-a-web-project}
 
@@ -119,11 +119,11 @@ For the location of these JAR files, see [Including AEM Forms Java library files
 
 >[!NOTE]
 >
->Pour plus d’informations sur la création de la page HTML qui appelle la servlet `RenderFormFragment` Java, voir[Création de la page](/help/forms/developing/rendering-forms.md#creating-the-web-page)Web.
+>Pour plus d’informations sur la création de la page HTML qui appelle la servlet `RenderFormFragment` Java, voir [Création de la page](/help/forms/developing/rendering-forms.md#creating-the-web-page)Web.
 
 ### Création de la logique d&#39;application Java pour la servlet {#creating-java-application-logic-for-the-servlet}
 
-Vous créez une logique d’application Java qui appelle le service Forms à partir de la servlet Java. Le code suivant illustre la syntaxe du servlet `RenderFormFragment` Java :
+Vous créez une logique d’application Java qui appelle le service Forms depuis la servlet Java. Le code suivant illustre la syntaxe du servlet `RenderFormFragment` Java :
 
 ```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
@@ -168,7 +168,7 @@ Pour générer un formulaire basé sur des fragments à l’aide de l’API du s
 1. Créez un tableau d’octets pour le remplir avec le flux de données du formulaire en appelant la `InputStream` `read`méthode de l’objet et en transmettant le tableau d’octets comme argument.
 1. Appelez la méthode `javax.servlet.ServletOutputStream` de l’objet `write` pour envoyer le flux de données du formulaire au navigateur Web client. Transférez le tableau d’octets à la `write` méthode.
 
-L’exemple de code suivant représente la servlet Java qui appelle le service Forms et génère un formulaire basé sur des fragments.
+L’exemple de code suivant représente la servlet Java qui appelle le service Forms et rend un formulaire basé sur des fragments.
 
 ```java
  /*
@@ -379,11 +379,11 @@ Pour déployer la servlet Java qui appelle le service Forms, incluez votre appli
 
 1. Dans la fenêtre Explorateur **de** projets, cliquez avec le bouton droit sur le `FragmentsWebApplication` projet et sélectionnez **Exporter** > Fichier **** WAR.
 1. Dans la zone de texte du module **** Web, saisissez `FragmentsWebApplication` le nom du projet Java.
-1. Dans la zone de texte **Destination** , saisissez `FragmentsWebApplication.war`****le nom du fichier, indiquez l’emplacement de votre fichier WAR, puis cliquez sur Terminer.
+1. Dans la zone de texte **Destination** , saisissez `FragmentsWebApplication.war`**** le nom du fichier, indiquez l’emplacement de votre fichier WAR, puis cliquez sur Terminer.
 
 ### Déploiement du fichier WAR sur le serveur d’applications J2EE {#deploying-the-war-file-to-the-j2ee-application-server}
 
-Vous pouvez déployer le fichier WAR sur le serveur d’applications J2EE sur lequel les AEM Forms sont déployés. Une fois le fichier WAR déployé, vous pouvez accéder à la page Web HTML à l’aide d’un navigateur Web.
+Vous pouvez déployer le fichier WAR sur le serveur d’applications J2EE sur lequel AEM Forms est déployé. Une fois le fichier WAR déployé, vous pouvez accéder à la page Web HTML à l’aide d’un navigateur Web.
 
 **Pour déployer le fichier WAR sur le serveur d’applications J2EE :**
 
@@ -391,7 +391,7 @@ Vous pouvez déployer le fichier WAR sur le serveur d’applications J2EE sur le
 
 ### Test de votre application Web {#testing-your-web-application}
 
-Après avoir déployé l’application Web, vous pouvez la tester à l’aide d’un navigateur Web. En supposant que vous utilisiez le même ordinateur qui héberge des AEM Forms, vous pouvez spécifier l’URL suivante :
+Après avoir déployé l’application Web, vous pouvez la tester à l’aide d’un navigateur Web. En supposant que vous utilisiez le même ordinateur qui héberge AEM Forms, vous pouvez spécifier l’URL suivante :
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
