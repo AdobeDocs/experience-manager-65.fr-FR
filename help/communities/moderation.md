@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2110'
 ht-degree: 4%
@@ -62,7 +62,6 @@ Seules les tâches de modération peuvent être exécutées lorsqu’elles sont 
 >
 >L’UGC de l’environnement de publication n’est visible sur l’auteur que si le fournisseur de services de gestion des ressources sélectionné met en oeuvre un magasin commun. Par exemple, par défaut, l’enregistrement est JSRP, qui n’est pas un magasin commun pour l’auteur et la publication. See [Community Content Storage](/help/communities/working-with-srp.md).
 
-
 ![modération-consoleauthor](assets/moderationconsoleauthor.png)
 
 ## Interface utilisateur de la console de modération {#moderation-console-ui}
@@ -109,7 +108,6 @@ La zone de contenu contient des informations pour l&#39;UGC publié :
 > 
 >La zone de contenu comporte un défilement ** infini, ce qui signifie que vous pourrez continuer à faire défiler le contenu jusqu’à ce que vous ayez atteint la fin du contenu. La barre d’outils reste à une position fixe et visible au-dessus de la zone de contenu, même si vous faites défiler la page.
 
-
 ### Rail de filtrage {#ootbfilters}
 
 ![open-filterail](assets/open-filterrail.png)
@@ -125,7 +123,6 @@ Cependant, si vous cochez **Question** et **En attente**, vous ne verrez que le 
 >[!NOTE]
 >
 >Les modérateurs de la communauté peuvent mettre en signet les filtres prédéfinis dans l’interface utilisateur de la console de modération. Comme ces filtres sont annexés à la fin de l’URL (en tant que paramètres de chaîne de requête), les modérateurs peuvent revenir aux filtres mis en signet ultérieurement et partager ces liens.
-
 
 ![searchicon](assets/searchicon.png)
 
@@ -154,7 +151,6 @@ Le site limite le contenu UGC référencé affiché aux publications à certains
 >Lorsqu’un administrateur accède à la console de modération en bloc, toutes les références à l’UGC s’affichent, y compris les sites non créés avec l’assistant [de création de](/help/communities/sites-console.md)site, tels que les exemples de Geometrixx.
 >
 >Lorsque la console de modération en bloc est accessible lors de la publication par un membre approuvé de la communauté, seules les références à l’UGC créées pour les sites de la communauté que le membre est autorisé à modérer sont affichées et peuvent être filtrées avec le filtre Site.
-
 
 #### Type de contenu {#content-type}
 
@@ -206,7 +202,6 @@ L’état limite l’UGC référencé affiché aux publications de l’état sé
 >
 >Si seul l’état Non répondu est sélectionné, le modérateur verra l’ensemble du contenu (pour tous les types de contenu), à l’exception des questions auxquelles il a répondu. En effet, la propriété responsable de la question à réponse n&#39;existe pas dans le cas de questions sans réponse et d&#39;autres contenus tels que le sujet du forum, l&#39;article de blog ou les commentaires.
 
-
 ![états](assets/statuses.png)
 
 #### Marquage {#flagging}
@@ -250,13 +245,13 @@ Pour installer l’exemple du filtre Balises :
 1. Ouvrez la console des lots sur les instances d’auteur AEM ( `https://[aem-author]:4502/system/console/bundles`) et de publication AEM ( `https://[aem-publish]:4503/system/console/bundles`).
 1. Créez le package ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` à partir de Github, installez et activez-le.
 1. Accédez au noeud **/apps/social/modération/facettes** sur AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) et AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/modération/facettes](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
-1. ajoutez un utilisateur technique **communautés-utilitaire-reader** avec `jcr:read` des autorisations.
+1. Ajoutez un utilisateur technique **communautés-utilitaire-reader** avec `jcr:read` des autorisations.
 
 Pour exposer les filtres personnalisés sur des sites communautaires existants :
 
 1. Modification `Clientlibs` de la page de modération existante `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
-   * ajouter une nouvelle catégorie `cq.social.hbs.moderation.v2.`
+   * Ajouter une nouvelle catégorie `cq.social.hbs.moderation.v2.`
 
 1. Accédez à `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
@@ -290,7 +285,7 @@ Les actions de modération qui peuvent être exécutées sur plusieurs publicati
 
 Les icônes permettant ces actions s’affichent uniquement sur la barre d’outils lorsque plusieurs publications sont sélectionnées.
 
-![bulkmodéré](assets/bulkmoderate.png)
+![bulgare](assets/bulkmoderate.png)
 
 ### Modération d’une seule publication {#moderating-a-single-post}
 
