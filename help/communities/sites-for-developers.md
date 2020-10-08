@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 3%
@@ -28,7 +28,7 @@ Pour ce faire :
 
 * Créez un modèle personnalisé.
 * Incrustez le chemin d’accès au modèle de site par défaut.
-* ajoutez le modèle personnalisé au chemin d’accès de l’incrustation.
+* Ajoutez le modèle personnalisé au chemin d’accès de l’incrustation.
 * Spécifiez le modèle personnalisé en ajoutant une `page-template` propriété au `configuration` noeud.
 
 **Modèle** par défaut :
@@ -55,11 +55,9 @@ Par exemple : `/content/sites/engage/en/configuration`
 >
 >Tous les noeuds du chemin superposé doivent uniquement être de type `Folder`.
 
-
 >[!CAUTION]
 >
 >Si le modèle personnalisé porte le nom *sitepage.hbs*, tous les sites de la communauté seront personnalisés.
-
 
 ### Exemple de modèle de site personnalisé {#custom-site-template-example}
 
