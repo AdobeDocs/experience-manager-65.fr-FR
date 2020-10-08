@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 2%
@@ -33,7 +33,6 @@ Tous les composants SCF sont implémentés à l&#39;aide de l&#39;API SRP, ce qu
 >[!NOTE]
 >
 >**Composants** personnalisés : Pour les clients disposant d’une licence d’AEM Communities, l’API SRP est disponible pour les développeurs de composants personnalisés afin d’accéder à l’UGC sans tenir compte de la topologie sous-jacente. Voir [SRP et UGC Essentials](srp-and-ugc.md).
-
 
 Voir également :
 
@@ -68,7 +67,6 @@ Lorsque l’UGC est enregistré dans un enregistrement partagé, il existe une i
 >Voir [SRP et UGC Essentials](srp-and-ugc.md) pour obtenir un exemple de code et des détails supplémentaires.
 >
 >Voir [Accès à l’UGC avec SRP](accessing-ugc-with-srp.md) pour connaître les meilleures pratiques en matière de codage.
-
 
 ### ASRP {#asrp}
 
@@ -130,7 +128,6 @@ Les noeuds d’ombre fournissent un emplacement adressable Sling dans le référ
 >[!CAUTION]
 >
 >Comme le noeud fantôme a plusieurs utilisations, la présence d’un noeud fantôme *n’implique pas* que le composant est un NER.
-
 
 ### Emplacement de l&#39;Enregistrement {#storage-location}
 
