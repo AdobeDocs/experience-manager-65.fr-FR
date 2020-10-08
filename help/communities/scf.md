@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Pour personnaliser ou étendre les composants, vous écrivez uniquement les incr
 * Pour ajouter une nouvelle opération personnalisée :
    * Créez une opération [de publication](server-customize.md#postoperation-class)Sling.
    * Utilisez [OperationServices](server-customize.md#operationservice-class) existant si nécessaire.
-   * ajoutez le code JavaScript pour appeler votre opération du côté client si nécessaire.
+   * Ajoutez le code JavaScript pour appeler votre opération du côté client si nécessaire.
 
 ## Structure côté serveur {#server-side-framework}
 
@@ -126,7 +126,7 @@ Visitez Personnalisations [côté](server-customize.md) serveur pour en savoir p
 
 ## Handlebars JS Template Language {#handlebars-js-templating-language}
 
-L’un des changements les plus notables dans la nouvelle structure est l’utilisation du langage de modèle HBS ( [Handlebars JS template),](https://www.handlebarsjs.com/)une technologie open source populaire pour le rendu client-serveur.
+L&#39;un des changements les plus notables dans la nouvelle structure est l&#39;utilisation du langage de modèle HBS ( [Handlebars JS template Language)](https://www.handlebarsjs.com/), une technologie open source populaire pour le rendu serveur-client.
 
 Les scripts HBS sont simples, sans logique, compilent sur le serveur et le client, sont faciles à recouvrir et à personnaliser, et sont naturellement liés au client UX parce que HBS prend en charge le rendu côté client.
 
@@ -142,13 +142,13 @@ Pour ce faire, tous les modèles HBS du chemin de recherche sling (tous les fich
 
 L&#39;accès HTTP aux fichiers .hbs n&#39;est pas interdit.
 
-### ajouter ou inclure un composant Collectivités {#add-or-include-a-communities-component}
+### Ajouter ou inclure un composant Collectivités {#add-or-include-a-communities-component}
 
 La plupart des composants de communautés doivent être *ajoutés* en tant que ressource adressable Sling. Un certain nombre de composants Communautés peuvent être *inclus* dans un modèle en tant que ressource non existante afin de permettre l’inclusion et la personnalisation dynamiques de l’emplacement où écrire le contenu généré par l’utilisateur (CU).
 
 Dans les deux cas, les bibliothèques [clientes](clientlibs.md) requises du composant doivent également être présentes.
 
-**ajouter un composant**
+**Ajouter un composant**
 
 L’Ajoute d’un composant fait référence au processus d’ajout d’une instance d’une ressource (composant), par exemple lorsqu’elle est glissée du navigateur de composants (sidekick) sur une page en mode d’édition de l’auteur.
 
@@ -183,7 +183,6 @@ Le Guide [des composants](components-guide.md) de la communauté permet d&#39;é
 >[!NOTE]
 >
 >Pour ajouter un composant à une page de manière dynamique, au lieu de l’ajouter ou de l’inclure dans un modèle, voir Téléchargement [de](sideloading.md)composant.
-
 
 ### Handlebars Helpers {#handlebars-helpers}
 
