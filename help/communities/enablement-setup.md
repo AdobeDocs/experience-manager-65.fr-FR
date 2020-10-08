@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 2%
@@ -47,7 +47,6 @@ Pour AEM Communities,
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
-
 
 ## Installer la dernière version des communautés {#install-latest-communities-release}
 
@@ -123,7 +122,6 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et se voi
 >
 >A la place, plus tard, ils seront [affectés au groupe](enablement-create-site.md#assignuserstocommunityenablemembersgroup)de membres.
 
-
 ### Riley Taylor - Enrollee {#riley-taylor-enrollee}
 
 [Créez un membre](members.md#create-new-member) qui sera ajouté à un groupe d&#39;apprenants - le groupe de cours de ski communautaire.
@@ -157,14 +155,14 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et se voi
 * **Prénom**: Quinn
 * **Nom**: Harper
 
-### ajouter un groupe d&#39;utilisateurs - Classe de ski communautaire {#add-a-user-group-community-ski-class}
+### Ajouter un groupe d&#39;utilisateurs - Classe de ski communautaire {#add-a-user-group-community-ski-class}
 
-[ajoutez un nouveau groupe](members.md#create-new-group) nommé Community Ski Class.
+[Ajoutez un nouveau groupe](members.md#create-new-group) nommé Community Ski Class.
 
 * **ID**: community-ski-class
 * **Nom**: Classe de ski communautaire
 * **Description**: un groupe d&#39;exemples pour l&#39;affectation de ressources d&#39;activation
-* **ajouter les membres au groupe** &quot;ajouter&quot; :
+* **Ajouter les membres au groupe** &quot;ajouter&quot; :
 
    * riley
    * annexe
@@ -178,7 +176,6 @@ Un quatrième utilisateur est créé dans l’environnement d’auteur et se voi
 >[!NOTE]
 >
 >Pendant la création du site communautaire, les membres et les groupes existants peuvent être ajoutés au groupe de membres du site communautaire.
-
 
 ## Rôle Administrateur de la communauté {#community-administrator-role}
 
