@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 03e3bb3a6843ef19b63a4ed915d9821dd706c3d4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 5%
@@ -23,9 +23,9 @@ ht-degree: 5%
 
 ## Présentation {#overview}
 
-adobe analytics et Adobe Experience Manager (AEM) sont deux solutions de Adobe Marketing Cloud.
+Adobe Analytics et Adobe Experience Manager (AEM) sont deux solutions de Adobe Marketing Cloud.
 
-adobe analytics peut être configuré pour AEM Communities de sorte que, lorsqu&#39;un membre interagit avec les fonctions de communautés prises en charge, des événements soient envoyés à Adobe Analytics à partir desquels les rapports sont générés.
+Adobe Analytics peut être configuré pour AEM Communities de sorte que, lorsqu&#39;un membre interagit avec les fonctions de communautés prises en charge, des événements soient envoyés à Adobe Analytics à partir desquels les rapports sont générés.
 
 Par exemple, lorsqu’un membre d’un site de communauté d’activation vue une ressource vidéo qui lui est affectée, le lecteur de ressources envoie des événements à Analytics, y compris des données de pulsation vidéo. Depuis le site communautaire, les administrateurs peuvent consulter divers rapports sur la lecture de la vidéo.
 
@@ -384,7 +384,6 @@ Si de nouveaux composants personnalisés créés pour Analytics sont créés, il
 >
 >Les composants de journal sont utilisés pour implémenter la fonction de blog.
 
-
 ### Analyses mises en correspondance avec AEM variables {#mapped-analytics-to-aem-variables}
 
 Une fois le site de la communauté enregistré avec Analytics activé et la structure de configuration du cloud sélectionnée, les variables AEM seront automatiquement mises en correspondance avec les eVars et les événements Analytics en commençant par evar1 et événement1, respectivement, et en augmentant par 1.
@@ -661,7 +660,7 @@ Par exemple, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 ## Gestion des données utilisateur dans Analytics {#manage-user-data-in-analytics}
 
-adobe analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur. Pour plus d’informations, voir [Envoyer des demandes d’accès et de suppression](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur. Pour plus d’informations, voir [Envoyer des demandes d’accès et de suppression](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## Ressources {#resources}
 
