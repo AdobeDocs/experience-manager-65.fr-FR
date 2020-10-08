@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 3%
@@ -221,7 +221,7 @@ Pour activer le moteur de détection des messages indésirables, procédez comme
 
 1. Ouvrez la console [](https://localhost:4502/system/console/configMgr)Web en accédant à `/system/console/configMgr`.
 
-1. Localisez la configuration de modération **automatique** AEM Communities et modifiez-la.
+1. Localisez la configuration de la modération **automatique** AEM Communities et modifiez-la.
 1. Ajoutez l&#39;entrée **[!UICONTROL SpamProcess]** .
 
 ![spamprocess](assets/spamprocess.png)
@@ -229,7 +229,6 @@ Pour activer le moteur de détection des messages indésirables, procédez comme
 >[!NOTE]
 >
 >La détection des messages indésirables n&#39;est mise en oeuvre que pour les paramètres régionaux anglais.
-
 
 ### Opinion {#sentiment}
 
@@ -275,11 +274,11 @@ Pour configurer l’opinion et les mots de contrôle :
 
 * **Mots de contrôle positifs**
 
-   liste séparée par des virgules de mots qui contribuent à une opinion positive qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
+   Liste séparée par des virgules de mots qui contribuent à une opinion positive qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
 
 * **Mots de contrôle négatifs**
 
-   liste séparée par des virgules de mots qui contribuent à une opinion négative qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
+   Liste séparée par des virgules de mots qui contribuent à une opinion négative qui remplace les valeurs par défaut. La valeur par défaut est une liste vide.
 
 * **Chemin explicite vers le noeud Watchwords**
 
