@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 6%
@@ -25,7 +25,6 @@ Incrustez le système de commentaires avec une version personnalisée en copiant
 >[!CAUTION]
 >
 >Le contenu du dossier /libs n&#39;est jamais modifié car toute réinstallation ou mise à niveau peut supprimer ou remplacer le dossier /libs alors que le contenu du dossier /apps reste intact.
-
 
 En utilisant [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) sur une instance d’auteur, commencez par créer un chemin d’accès dans le dossier /apps identique au chemin d’accès aux composants superposés du dossier /libs.
 
@@ -82,9 +81,6 @@ Certains noeuds du chemin d’accès sont des dossiers et d’autres sont des co
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
->
-
 
 
 La propre propriété `Type`(propriété `sling:resourceType`) de l’incrustation doit être une auto-référence relative afin que tout contenu introuvable dans /apps soit ensuite recherché dans /libs.
