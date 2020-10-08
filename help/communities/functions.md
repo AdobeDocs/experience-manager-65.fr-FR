@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2458'
 ht-degree: 10%
@@ -23,12 +23,11 @@ ht-degree: 10%
 
 Le type de caractéristiques attendues d&#39;une expérience communautaire est bien connu. Les fonctions communautaires sont disponibles en tant que fonctions communautaires. Il s’agit essentiellement d’une ou de plusieurs pages pré-programmées pour mettre en oeuvre une fonctionnalité de communauté qui nécessite plus qu’un simple ajout d’un composant à une page en mode création. Il s’agit des éléments de base utilisés pour définir la structure d’un modèle [de site](/help/communities/sites.md) communautaire à partir duquel des sites communautaires sont [créés](/help/communities/sites-console.md).
 
-Une fois un site communautaire créé, le contenu peut être ajouté aux pages résultantes à l’aide du mode [standard de création](/help/sites-authoring/editing-content.md)AEM. Diverses fonctions communautaires sont disponibles, comme le montre la console des fonctions communautaires.
+Une fois un site communautaire créé, le contenu peut être ajouté aux pages résultantes en utilisant le mode [de création](/help/sites-authoring/editing-content.md)AEM standard. Diverses fonctions communautaires sont disponibles, comme le montre la console des fonctions communautaires.
 
 >[!NOTE]
 >
 >Les consoles pour la création de sites [](/help/communities/sites-console.md)communautaires, de modèles de sites [](/help/communities/sites.md)communautaires, de modèles de groupes de [communautés et de fonctions de](/help/communities/tools-groups.md)[communauté ne sont utilisées que dans l’environnement d’auteur.](/help/communities/functions.md)
-
 
 ## Console des fonctions de la communauté {#community-functions-console}
 
@@ -40,7 +39,7 @@ Pour accéder à la console des fonctions de la communauté dans l’environneme
 
 ## Fonctions préétablies {#pre-built-functions}
 
-Voici une brève description des fonctions fournies avec les AEM Communities. Chaque fonction comprend une ou plusieurs pages AEM contenant des composants Communities connectés ensemble à une fonction qui est facilement intégrée dans un modèle [de site](/help/communities/sites.md)communautaire.
+Voici une brève description des fonctions fournies avec AEM Communities. Chaque fonction comprend une ou plusieurs pages AEM contenant des composants Communities connectés ensemble dans une fonction qui est facilement intégrée dans un modèle [de site](/help/communities/sites.md)communautaire.
 
 Un modèle de site communautaire fournit la structure d’un site communautaire, y compris les fonctions de connexion, les profils utilisateur, les notifications, les messages, le menu du site, la recherche, le thème et l’identité graphique.
 
@@ -234,7 +233,6 @@ Lorsqu’elle est ajoutée à un modèle, la boîte de dialogue suivante s’ouv
 >
 >Toute autre fonction, telle que la fonction [de](#page-function)page, doit être incluse et répertoriée en premier.
 
-
 La fonction de groupes permet aux membres de la communauté de créer des sous-communautés au sein du site communautaire dans l’environnement de publication.
 
 En fonction des [paramètres](/help/communities/sites-console.md#groupmanagement) lorsque la fonction Groupes est incluse dans un modèle [de site](/help/communities/sites.md)communautaire, les groupes peuvent être publics ou privés et un ou plusieurs modèles de groupes communautaires peuvent être configurés pour fournir un choix de modèles lorsque le groupe de communauté est effectivement créé (à partir de l’environnement de publication, par exemple). Un modèle [de groupe de](/help/communities/tools-groups.md) communautés spécifie les fonctions de communautés qui sont créées pour les pages de groupe, telles que les forums et les calendriers.
@@ -317,7 +315,7 @@ La valeur par défaut est désélectionnée.
 
 ### Fonction Page {#page-function}
 
-La fonction de page ajoute une page vierge au site communautaire qu’elle est intégrée aux fonctionnalités du site communautaire : connexion, menu, notifications, messagerie, thème et marque. Le contenu est ajouté à la page à l’aide du mode [de création](/help/sites-authoring/editing-content.md)standard d’AEM.
+La fonction de page ajoute une page vierge au site communautaire qu’elle est intégrée aux fonctionnalités du site communautaire : connexion, menu, notifications, messagerie, thème et marque. Le contenu est ajouté à la page en utilisant le mode [de création AEM](/help/sites-authoring/editing-content.md)standard.
 
 Lorsqu’elle est ajoutée à un modèle, la seule configuration concerne les paramètres [de](#title-and-url-settings)titre et d’URL.
 
@@ -353,7 +351,7 @@ Lorsqu’elle est ajoutée à un modèle, la configuration autorise la restricti
 
 ## Créer une fonction de communauté {#create-community-function}
 
-Pour créer une fonction de communauté, sélectionnez l’ `Create Community Function` icône située en haut de la console Fonctions de la communauté. Plusieurs fonctions basées sur le même plan directeur AEM peuvent être créées, puis personnalisées de manière unique en s’ouvrant en mode d’édition Auteur.
+Pour créer une fonction de communauté, sélectionnez l’ `Create Community Function` icône située en haut de la console Fonctions de la communauté. Il est possible de créer plusieurs fonctions basées sur le même modèle AEM, puis de les personnaliser de manière unique en s’ouvrant en mode d’édition Auteur.
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -401,7 +399,7 @@ Sélectionnez l’ `Open Community Function` icône permettant de passer en mode
 
 ### Configuration des composants {#configuring-components}
 
-Une fonction de communauté est implémentée en tant que Live Copy d’un plan directeur AEM, dont les détails sont documentés dans le Gestionnaire de [sites multiples](/help/sites-administering/msm.md).
+Une fonction communautaire est mise en oeuvre sous forme de Live Copy d&#39;un plan directeur AEM, dont les détails sont documentés dans le Gestionnaire [](/help/sites-administering/msm.md)multisite.
 
 Il est possible non seulement de créer du contenu de page, mais aussi de configurer des composants.
 
