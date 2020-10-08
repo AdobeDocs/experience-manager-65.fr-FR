@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c0834e9b70266e8b678771510fb1756c8091ea8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 4%
@@ -29,9 +29,9 @@ ht-degree: 4%
 
 * Licences facultatives pour :
 
-   * [adobe analytics pour les communautés, fonctionnalités](/help/communities/analytics.md)
+   * [Adobe Analytics pour les communautés, fonctionnalités](/help/communities/analytics.md)
    * [MongoDB pour MSRP](/help/communities/msrp.md)
-   * [adobe Cloud pour ASRP](/help/communities/asrp.md)
+   * [Adobe Cloud pour ASRP](/help/communities/asrp.md)
 
 ## Liste de contrôle d&#39;installation {#installation-checklist}
 
@@ -151,7 +151,7 @@ Le moteur AEM Communities SCORM est requis pour la fonction d’ [activation](/h
 
 1. Installez le package [cq-social-scorm-package, version 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) à partir du partage de package.
 1. Téléchargez `/libs/social/config/scorm/database_scormengine_data.sql` l&#39;instance cq et exécutez-la dans mysql server pour créer un schéma scormEngineDB mis à niveau.
-1. ajouter `/content/communities/scorm/RecordResults` dans la propriété Chemins exclus du filtre CSRF depuis `https://<hostname>:<port>/system/console/configMgr` les éditeurs.
+1. Ajouter `/content/communities/scorm/RecordResults` dans la propriété Chemins exclus du filtre CSRF depuis `https://<hostname>:<port>/system/console/configMgr` les éditeurs.
 
 #### Journalisation SCORM {#scorm-logging}
 
@@ -329,7 +329,6 @@ Pour copier la documentation clé de l&#39;auteur vers toutes les autres instanc
 >
 >Si une autre fonction de sécurité a déjà été configurée basée sur les clés de cryptage, la réplication des clés de cryptage pourrait endommager la configuration. Pour obtenir de l’aide, [contactez le service à la clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
-
 #### Réplication du référentiel {#repository-replication}
 
 Le fait que la clé soit stockée dans le référentiel, comme c&#39;était le cas pour AEM 6.2 et les versions antérieures, peut être conservé en spécifiant la propriété système suivante au premier démarrage de chaque instance AEM (qui crée le référentiel initial) :
@@ -339,7 +338,6 @@ Le fait que la clé soit stockée dans le référentiel, comme c&#39;était le c
 >[!NOTE]
 >
 >Il est important de vérifier que l&#39;agent de [réplication sur l&#39;auteur](#replication-agents-on-author) est correctement configuré.
-
 
 Avec le matériel clé stocké dans le référentiel, la manière de répliquer la clé de chiffrement de l&#39;auteur à d&#39;autres instances est la suivante :
 
