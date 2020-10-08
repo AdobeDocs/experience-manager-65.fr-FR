@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -28,7 +28,6 @@ Le chemin d&#39;accès au composant est unique et référence le composant par d
 >
 >L’extension d’un composant [superposé](client-customize.md#overlays) n’est pas prise en charge.
 
-
 ## Exemple {#example}
 
 Supposons que l’en-tête du composant de commentaire s’affiche avec un autre aspect sur un site de l’instance AEM, tout en s’affichant avec l’affichage par défaut sur un autre site. Au lieu de superposer le commentaire par défaut, qui modifie le composant de commentaire pour toutes les instances, une meilleure solution consiste à s’assurer que plusieurs composants de commentaire sont disponibles pour l’utilisation sur divers sites.
@@ -40,6 +39,6 @@ Le composant de commentaire est en fait l&#39;un des deux composants qui compose
 Pour ajouter des commentaires, vous devez :
 
 1. [Création des composants](extend-create-components.md)
-1. [Ajouter le commentaire à l&#39;exemple de page](extend-sample-page.md)
+1. [Ajouter un commentaire sur un exemple de page](extend-sample-page.md)
 1. [Modification de l’aspect](extend-alter-appearance.md)
 
