@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4742'
 ht-degree: 4%
@@ -67,8 +67,8 @@ Le package [de démonstration](https://experience.adobe.com/#/downloads/content/
 Les actifs inclus dans ce package sont les suivants :
 
 * aem des pages de site avec des modèles modifiables
-* aem forms adaptatif Forms
-* aem forms Interactive Communications (Impression et Canal Web)
+* AEM Forms adaptatif Forms
+* AEM Forms Interactive Communications (Impression et Canal Web)
 * document d’enregistrement XDP AEM Forms
 * Modèle de données AEM Forms MS Dynamics Forms
 * Intégration d’Adobe Sign
@@ -371,7 +371,7 @@ Ce package est préconfiguré pour se connecter à Adobe Analytics. Les étapes 
 
 1. Dans la même page, cliquez sur &quot;We.Gov Adobe Analytics Framework (Analytics Framework)&quot; si vous souhaitez mettre à jour les configurations de la structure (voir [Activer la création](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) d’AEM pour activer la création).
 
-#### adobe analytics Localisation des informations d’identification d’utilisateur {#analytics-locating-user-credentials}
+#### Adobe Analytics Localisation des informations d’identification d’utilisateur {#analytics-locating-user-credentials}
 
 Pour localiser les informations d’identification d’utilisateur d’un compte Adobe Analytics, l’administrateur du compte doit effectuer les tâches suivantes.
 
@@ -402,7 +402,7 @@ Les administrateurs peuvent fournir aux utilisateurs AEM autorisations d’analy
 
 1. Sélectionnez Accès administrateur complet à Analytics.
 
-1. ajoutez un utilisateur au Profil.
+1. Ajoutez un utilisateur au Profil.
 
    ![Accès administrateur complet à Analytics](assets/aftia-full-admin-access.jpg)
 
@@ -425,7 +425,7 @@ Les données AEM Forms Analytics sont disponibles hors ligne ou sans configurati
 1. Sélectionnez &quot;AEM Forms We.Gov Site&quot; pour vue des pages du site.
 1. Sélectionnez l’une des pages du site (par exemple, Accueil), puis sélectionnez &quot;Analyses et Recommendations&quot;.
 
-   ![analyse et Recommendations](assets/analytics_recommendations.jpg)
+   ![Analyse et Recommendations](assets/analytics_recommendations.jpg)
 
 1. Sur cette page, vous verrez les informations extraites d&#39;Adobe Analytics qui se rapportent à la page AEM Sites (remarque : par conception, ces informations sont périodiquement actualisées à partir de l&#39;Adobe Analytics et ne sont pas affichées en temps réel).
 
@@ -469,7 +469,7 @@ Pour installer et configurer AEM Forms avec l’Adobe Forms, les utilisateurs de
 
 1. Autorisation de créer une intégration avec le service de conversion Forms Adobe.
 
-1. adobe AEM Service Pack version 6.5 s’exécute en tant qu’auteur.
+1. Adobe AEM Service Pack version 6.5 s’exécute en tant qu’auteur.
 
 Veuillez consulter les éléments suivants avant de lire d&#39;autres instructions :
 
@@ -788,10 +788,10 @@ Pour les configurer afin qu’ils soient activés dans le flux de travail, les u
 
 1. Ouvrez la définition de service et activez l’appel des services sélectionnés dans le processus.
 
->[!NOTE]
-Juste parce qu’un utilisateur active le service dans la page Configuration Manager, les utilisateurs doivent toujours configurer une configuration de service pour communiquer avec les services externes demandés.
+   >[!NOTE]
+   Juste parce qu’un utilisateur active le service dans la page Configuration Manager, les utilisateurs doivent toujours configurer une configuration de service pour communiquer avec les services externes demandés.
 
-![package de formulaires gov](assets/aftia-configuration-options.jpg)
+   ![package de formulaires gov](assets/aftia-configuration-options.jpg)
 
 1. Une fois terminé, cliquez sur le bouton Enregistrer pour enregistrer les paramètres.
 
