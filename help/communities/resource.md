@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 7%
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # Créer et affecter des ressources d&#39;activation {#create-and-assign-enablement-resources}
 
-## ajouter une ressource d&#39;activation {#add-an-enablement-resource}
+## Ajouter une ressource d&#39;activation {#add-an-enablement-resource}
 
 Pour ajouter une ressource d’activation au nouveau site de la communauté :
 
@@ -64,7 +64,7 @@ Renseignez les informations de base de la ressource :
 
 * **[!UICONTROL Ajouter image]**
 
-   ajoutez une image pour représenter la Ressource au membre dans sa vue Affectations.
+   Ajoutez une image pour représenter la Ressource au membre dans sa vue Affectations.
 
    ![basic-info](assets/basic-info.png)
 
@@ -140,7 +140,7 @@ L’Activation est confirmée par un message de réussite :
 
 ![publier-ressource](assets/publish-resource.png)
 
-## ajouter une deuxième ressource d&#39;activation {#add-a-second-enablement-resource}
+## Ajouter une deuxième ressource d&#39;activation {#add-a-second-enablement-resource}
 
 Répétez les étapes ci-dessus pour créer et publier une seconde ressource d’activation associée à partir de laquelle un chemin d’apprentissage sera créé.
 
@@ -154,7 +154,7 @@ Revenez à la liste des ressources du didacticiel d&#39;activation.
 
 ![ressource actualisée](assets/refresh-resource.png)
 
-## ajouter un parcours de formation {#add-a-learning-path}
+## Ajouter un parcours de formation {#add-a-learning-path}
 
 Un parcours d&#39;apprentissage est un regroupement logique de ressources d&#39;activation qui forment un cours.
 
@@ -163,7 +163,7 @@ Un parcours d&#39;apprentissage est un regroupement logique de ressources d&#39;
 
 ![add-learning-path](assets/add-learning-path.png)
 
-ajoutez les informations **** de base :
+Ajoutez les informations **** de base :
 
 * **[!UICONTROL Nom du cursus de formation]**
 
@@ -198,7 +198,6 @@ Dans le panneau Ajouter les ressources :
 >[!NOTE]
 >
 >Vous pouvez uniquement sélectionner les ressources disponibles au même niveau que le chemin d’apprentissage. Par exemple, pour un parcours d’apprentissage créé dans un groupe, seules les ressources au niveau du groupe sont disponibles ; pour un parcours d&#39;apprentissage créé dans un site communautaire, les ressources de ce site sont disponibles pour l&#39;ajout au chemin d&#39;apprentissage.
-
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
