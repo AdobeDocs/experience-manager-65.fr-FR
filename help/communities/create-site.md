@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '1661'
 ht-degree: 3%
@@ -97,7 +97,6 @@ Cochez toutes les cases de gestion des [utilisateurs.](/help/communities/sites-c
 >
 >Pour un environnement de production, il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir Connexion [aux réseaux sociaux avec Facebook et Twitter](/help/communities/social-login.md).
 
-
 ![paramètres du site communautaire](assets/site-settings.png)
 
 #### TAGGING {#tagging}
@@ -125,7 +124,6 @@ Par exemple :
 >[!NOTE]
 >
 >[Le service](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) Tunnel permet de sélectionner les membres et les groupes existants uniquement dans l’environnement de publication.
-
 
 ![rôles d’utilisateur dans le nouveau site](assets/site-admin-1.png)
 
@@ -228,9 +226,6 @@ Notez que UGC n&#39;est pas inclus dans le package du site.
 >1. **[!UICONTROL Cliquez sur OK]**.
 >1. (Facultatif) Sélectionnez **[!UICONTROL Effacer]** ou **[!UICONTROL Forcer une nouvelle tentative]** pour réinitialiser la file d&#39;attente de réplication.
 
->
-
-
 
 ### Sélectionnez Publier {#select-publish}
 
@@ -269,7 +264,7 @@ Notez que [Aaron McDonald](/help/communities/tutorials.md#demo-users) est membre
 
 Une fois qu’un site a été configuré et envoyé pour publication, [configurez le mappage](/help/communities/sites-console.md#configure-for-authentication-error) de connexion ( `Adobe Granite Login Selector Authentication Handler`) sur l’instance de publication. L’avantage est que lorsque les informations d’identification de connexion ne sont pas saisies correctement, l’erreur d’authentification affiche à nouveau la page de connexion du site de la communauté avec un message d’erreur.
 
-ajouter un `Login Page Mapping` sous
+Ajouter un `Login Page Mapping` sous
 
 * `/content/sites/engage/en/signin:/content/sites/engage/en`
 
@@ -296,12 +291,12 @@ Pour commencer :
 
 1. Avec le nouveau `localhost.4503` noeud sélectionné :
 
-   * ajoute, propriété :
+   * Ajoute, propriété :
 
    * **Nom** sling:match
       * **Chaîne de type**
       * **Valeur** localhost.4503/$(doit se terminer par &#39;$&#39; char)
-   * ajoute, propriété :
+   * Ajoute, propriété :
 
       * **Nom** sling:internalRedirect
       * **Chaîne de type**
@@ -317,7 +312,6 @@ Pour commencer :
 >[!NOTE]
 >
 >Pour le désactiver, il vous suffit de préfixer la valeur de la `sling:match` propriété avec un &quot;x&quot; - `xlocalhost.4503/$` - et **Enregistrer tout**.
-
 
 ![étapes facultatives](assets/optional-steps.png)
 
@@ -342,5 +336,3 @@ Après toute modification, n’oubliez pas d’ **enregistrer** et de publier à
 >[!NOTE]
 >
 >If not familiar with AEM, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
-
-
