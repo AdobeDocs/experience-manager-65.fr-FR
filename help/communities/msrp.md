@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 3%
@@ -103,7 +103,6 @@ Laissez vide si vous exécutez en mode SolrCloud.
 >[!NOTE]
 >
 >La base de données mongoDB, dont le nom par défaut `communities`est le nom, ne doit pas être définie sur le nom d’une base de données utilisée pour les magasins de [noeuds ou les magasins de données (binaires)](../../help/sites-deploying/data-store-config.md). Voir aussi [Enregistrement Elements dans AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
-
 
 ### Jeu de Secondaires MongoDB {#mongodb-replica-set}
 
@@ -206,7 +205,6 @@ cURL -u *signature* -d *data* *reindex-url*
 >[!NOTE]
 >
 >Si vous [réindexez DSRP Solr](dsrp.md), l’URL est **/services/social/datastore/rdb/reindex.**
-
 
 ### Exemple de réindexation MSRP {#msrp-reindex-example}
 
