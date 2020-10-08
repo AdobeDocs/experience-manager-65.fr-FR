@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 42%
@@ -27,7 +27,7 @@ La fonction Calendrier offre des informations relatives aux événements de la c
 
 Cette section de la documentation décrit :
 
-* ajouter la fonction Calendrier à un site AEM
+* Ajouter la fonction Calendrier à un site AEM
 * Configuration settings for `Calendar` components
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
@@ -171,7 +171,6 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 >[!NOTE]
 >
 >Consultez la rubrique [Administration des balises](/help/sites-administering/tags.md) pour savoir comment ajouter un espace de noms de balise (taxonomie).
-
 
 #### Onglet Traduction {#translation-tab}
 
