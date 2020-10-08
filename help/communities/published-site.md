@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Une limitation connue expose le contenu du site communautaire à des visiteurs a
 
 Pour protéger le contenu de votre site communautaire contre l’accès d’utilisateurs anonymes par le biais de contenu jcr et json, procédez comme suit :
 
-1. Sur l’instance de AEM Author, accédez à https:// hostname:port/editor.html/content/site/sitename.html.
+1. Sur l’instance d’auteur AEM, accédez à https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ Pour protéger le contenu de votre site communautaire contre l’accès d’util
 
 ## Membre de la Communauté approuvé {#trusted-community-member}
 
-Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#demo-users) se voit attribuer les rôles de gestionnaire et de modérateur [](/help/communities/create-site.md#roles)communautaire. Dans le cas contraire, revenez à l’environnement d’auteur pour [modifier les paramètres](/help/communities/sites-console.md#modifying-site-properties) du site et sélectionnez Aaron McDonald comme gestionnaire de communauté et modérateur.
+Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#demo-users) se voit attribuer le rôle de gestionnaire et de modérateur [](/help/communities/create-site.md#roles)communautaire. Dans le cas contraire, revenez à l’environnement d’auteur pour [modifier les paramètres](/help/communities/sites-console.md#modifying-site-properties) du site et sélectionnez Aaron McDonald comme gestionnaire de communauté et modérateur.
 
 Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’utilisateur (aaron.mcdonald@mailinator.com) et le mot de passe (mot de passe). Vous pouvez vous connecter à l’aide des informations d’identification Twitter ou Facebook.
 
@@ -86,7 +86,7 @@ Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’u
 
 Une fois connecté en tant que membre enregistré de la communauté, notez les options de menu suivantes pour cliquer et explorer votre site communautaire :
 
-* **L’option Profil** vous permet de vue et de modifier votre profil.
+* **L’option profil** vous permet de vue et de modifier votre profil.
 * [L&#39;option Messages](/help/communities/configure-messaging.md) vous dirige vers la section Messagerie directe, où vous pouvez :
 
    1. Vue des messages directs que vous avez reçus (boîte de réception), envoyés (Éléments envoyés) et supprimés (corbeille).
@@ -107,9 +107,6 @@ Notez que la page Calendrier correspond à la page d&#39;accueil, car le modèle
 >
 >* [Composants](/help/communities/author-communities.md) de communautés (pour les auteurs)
 >* [Composants, fonctions et fonctionnalités essentiels](/help/communities/essentials.md) (pour les développeurs)
-
->
-
 
 
 ### Lien du forum {#forum-link}
