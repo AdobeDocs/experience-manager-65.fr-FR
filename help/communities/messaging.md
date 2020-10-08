@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Présentation {#overview}
 
-La fonction de messagerie pour les AEM Communities permet aux visiteurs (membres) du site connectés d&#39;envoyer des messages les uns aux autres qui sont accessibles lorsqu&#39;ils sont connectés au site.
+La fonction de messagerie pour AEM Communities permet aux visiteurs (membres) du site connectés d&#39;envoyer des messages les uns aux autres qui sont accessibles lorsqu&#39;ils sont connectés au site.
 
 La messagerie est activée pour un site communautaire en cochant une case lors de la création [d&#39;un site](/help/communities/sites-console.md)communautaire.
 
@@ -33,7 +33,7 @@ For additional information for developers, see [Messaging Essentials](/help/comm
 
 ## Service des opérations de messagerie {#messaging-operations-service}
 
-Le service [de messagerie de](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) AEM Communities de la configuration identifie le point de terminaison qui traite les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et, si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
+La configuration [AEM Communities Messaging Operations Service](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point de terminaison qui traite les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour stocker les messages et si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
 
 Pour les sites de la communauté créés à l’aide du `Communities Sites console`, il existe déjà une instance du service, avec la boîte de réception définie sur `/mail/inbox`.
 
@@ -111,13 +111,13 @@ Pour ajouter une nouvelle configuration, sélectionnez l’icône plus &quot;**+
 
    Si supportAttachments est coché, cette valeur spécifie la taille totale maximale autorisée (en octets) de toutes les pièces jointes. Default is *104857600* (100 MB).
 
-* **liste bloquée de type de pièce jointe**
+* **Liste bloquée de type de pièce jointe**
 
-   liste bloquée des extensions de nom de fichier, précédée de &#39;**.**&quot;, cela sera rejeté par le système. Si elle n’est pas placée sur l&#39;liste bloquée, l’extension est autorisée. Les extensions peuvent être ajoutées ou supprimées à l&#39;aide des icônes &quot;**+**&quot; et &quot;**-**&quot;.
+   Liste bloquée des extensions de nom de fichier, précédée de &#39;**.**&quot;, cela sera rejeté par le système. Si elle n’est pas placée sur la liste bloquée, l’extension est autorisée. Les extensions peuvent être ajoutées ou supprimées à l&#39;aide des icônes &quot;**+**&quot; et &quot;**-**&quot;.
 
 * **Types de pièces jointes autorisés**
 
-   **(*Action requise*)** liste autorisée des extensions de nom de fichier, à l’opposé de la liste bloquée. Pour autoriser toutes les extensions de nom de fichier, à l&#39;exception de celles placées sur l&#39;liste bloquée, utilisez l&#39;icône &quot;**-**&quot; pour supprimer l&#39;entrée vide unique.
+   **(*Action requise*)** liste autorisée des extensions de nom de fichier, à l’opposé de la liste bloquée. Pour autoriser toutes les extensions de nom de fichier, à l&#39;exception de celles placées sur la liste bloquée, utilisez l&#39;icône &quot;**-**&quot; pour supprimer l&#39;entrée vide unique.
 
 * **Sélecteur de service**
 
@@ -133,8 +133,7 @@ Pour ajouter une nouvelle configuration, sélectionnez l’icône plus &quot;**+
 >
 >Chaque fois qu’une `Messaging Operations Service` configuration est ouverte pour modification, si `allowedAttachmentTypes.name` elle a été supprimée, une entrée vide est ajoutée pour rendre la propriété configurable. Une seule entrée vide désactive efficacement les pièces jointes.
 >
->Pour autoriser toutes les extensions de nom de fichier, à l’exception de celles placées sur l&#39;liste bloquée, utilisez l’icône &quot;**-**&quot; pour (à nouveau) supprimer l’entrée vide avant de cliquer sur **Enregistrer**.
-
+>Pour autoriser toutes les extensions de nom de fichier, à l’exception de celles placées sur la liste bloquée, utilisez l’icône &quot;**-**&quot; pour (à nouveau) supprimer l’entrée vide avant de cliquer sur **Enregistrer**.
 
 ## Group Messaging {#group-messaging}
 
