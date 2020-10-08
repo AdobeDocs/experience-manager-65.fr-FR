@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 5%
@@ -66,7 +66,7 @@ Pour les composants Communities fournis dans la version, les tableaux suivants d
 | UPDATE | Le sujet ou la réponse du membre sur le forum est modifié |
 | DELETE | Le sujet ou la réponse du membre sur le forum est supprimé |
 
-[Composant](blog-developer-basics.md)Journal SocialEvent `topic`= com/adobe/cq/social/journal
+[Composant](blog-developer-basics.md)journal SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **Verbe** | **Description** |
 |---|---|
@@ -98,14 +98,14 @@ Pour les composants Communities fournis dans la version, les tableaux suivants d
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTER LA COTATION | Le contenu du membre a été amélioré |
+| AJOUTE | Le contenu du membre a été amélioré |
 | SUPPRESSION DE LA COTE | Le contenu du membre a été abaissé |
 
 [Composant](essentials-voting.md)de vote SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verbe** | **Description** |
 |---|---|
-| AJOUTER le vote | Le contenu du membre a été voté |
+| AJOUTER VOTE | Le contenu du membre a été voté |
 | SUPPRIMER LE VOTE | Le contenu du membre a été rejeté |
 
 **Composants** SocialEvent prenant en charge la modération `topic`= com/adobe/cq/social/modération
@@ -128,7 +128,6 @@ Le événement personnalisé remplacerait la méthode `getVerb()` afin qu’un p
 >[!NOTE]
 >
 >Assurez-vous qu’une extension personnalisée est enregistrée avec un classement inférieur à toute implémentation existante dans le produit.
-
 
 ### Code pseudo pour le Événement de composants personnalisés {#pseudo-code-for-custom-component-event}
 
