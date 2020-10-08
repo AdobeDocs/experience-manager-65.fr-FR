@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 Les consoles AEM Communities, disponibles dans l’environnement d’auteur à partir du panneau de navigation global, permettent d’accéder à des tâches administratives telles que :
 
 * [Création d’un site communautaire](sites-console.md)
-* ajouter [des groupes](groups.md) imbriqués dans le site
+* Ajouter [des groupes](groups.md) imbriqués dans le site
 * Gestion des modèles de site [de la communauté](sites.md)
 * Gestion des membres [de la communauté](members.md)
 * [Modération](moderate-ugc.md) du contenu généré par l’utilisateur (UGC)
@@ -37,7 +37,6 @@ Dans l’environnement d’auteur, après la connexion avec des droits d’admin
 >[!NOTE]
 >
 >Dans l’environnement de publication, un site [](sites-console.md) communautaire affiche un `Administration` menu lorsque le membre connecté dispose des privilèges appropriés.
-
 
 ## Panneau de navigation global {#global-navigation-panel}
 
