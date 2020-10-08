@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 6%
@@ -35,12 +35,9 @@ Pour plus d’informations, voir [Configuration de l’activation](enablement.md
 >
 >Si SCORM est installé après la création du site de la communauté, toutes les ressources d’activation présentes avant l’installation de SCORM doivent être recréées.
 
-
-
 >[!NOTE]
 >
 >Avec la sortie de [AEM 6.3](deploy-communities.md#latestfeaturepack) et des packages de fonctionnalités Communautés équivalents [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) et [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la fonction d’activation ne nécessite plus de  de base de données [MySQL.](mysql.md)
-
 
 ## Terminologie {#terminology}
 
@@ -52,7 +49,7 @@ Caractéristiques d&#39;une ressource :
 
 * Peut être de type :
    * Image (JPG, PNG, GIF, BMP)
-   * Vidéo (MP4)
+   * Video (MP4)
    * Flash (SWF)
    * Document (PDF)
    * Quiz (SCORM)
@@ -251,7 +248,6 @@ Sélectionnez la ressource `'+' icon`, dans le coin supérieur droit, pour comme
 >
 >Si un membre est inscrit à la fois dans une ressource et dans un chemin d&#39;apprentissage qui fait référence à cette ressource, ses affectations montreront à la fois la ressource unique et la ressource dans le chemin d&#39;apprentissage.
 
-
 * **[!UICONTROL Paramètres des réseaux sociaux]**
 
    Ces paramètres déterminent si les apprenants sont en mesure de fournir des informations concernant la ressource d’activation. Les paramètres [de](sites-console.md#moderation) modération sont ceux du site de la communauté parent.
@@ -389,7 +385,6 @@ Pour les ressources d&#39;activation incluses dans un parcours d&#39;apprentissa
 >
 >Vous pouvez uniquement sélectionner les ressources disponibles au même niveau que le chemin d’apprentissage. Par exemple, pour un parcours d’apprentissage créé dans un groupe, seules les ressources au niveau du groupe sont disponibles ; pour un parcours d&#39;apprentissage créé dans un site communautaire, les ressources de ce site sont disponibles pour l&#39;ajout au chemin d&#39;apprentissage.
 
-
 * Sélectionnez **[!UICONTROL Suivant]**.
 
 ### Paramètres {#settings-1}
@@ -411,7 +406,6 @@ Pour les ressources d&#39;activation incluses dans un parcours d&#39;apprentissa
 >Les ressources d’activation référencées à partir du chemin d’apprentissage ne doivent pas liste les mêmes personnes désignées (apprenants), le cas échéant.
 >
 >Si un membre est inscrit à la fois dans une ressource d&#39;activation et dans un chemin d&#39;apprentissage qui référence cette ressource, ses affectations montreront à la fois la ressource unique et la ressource dans le chemin d&#39;apprentissage.
-
 
 ## Gestion d&#39;une ressource {#managing-a-resource}
 
@@ -502,11 +496,11 @@ L’axe vertical est le nombre de événements.
 
 L’axe horizontal est l’heure du calendrier.
 
-[adobe analytics requis](sites-console.md#analytics).
+[Adobe Analytics requis](sites-console.md#analytics).
 
 #### Engagement de la visionneuse {#viewer-engagement}
 
-Le rapport Engagement de la visionneuse Analytics montre, pour les ressources vidéo, le nombre d’apprenants qui ont affiché la ressource et, s’ils n’ont pas lu la ressource jusqu’à la fin, à quel moment les apprenants ont cessé de la lire.
+Le rapport Engagement de la visionneuse Analytics montre, pour les ressources vidéo, le nombre d’apprenants qui ont consulté la ressource et, s’ils n’ont pas lu la ressource jusqu’à la fin, à quel moment les apprenants ont cessé de la lire.
 
 L&#39;axe vertical est le nombre d&#39;apprenants qui ont consulté cette ressource.
 
