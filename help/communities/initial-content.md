@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 6%
@@ -109,5 +109,3 @@ En cas de problème lors de l’enregistrement de la configuration, reconnectez-
 >[!NOTE]
 >
 >L’utilisation de `cq:designPath` est facultative et n’est pas liée à l’ [utilisation de clientlibs](develop-app.md#includeclientlibsintemplate), qui sont essentiellement requis puisque les composants SCF utilisent [clientlibs](client-customize.md#clientlibs-for-scf) pour gérer leurs fichiers JS et CSS.
-
-
