@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 35%
@@ -34,7 +34,7 @@ La fonction Forum offre un espace aux visiteurs connectés (membres de la commun
 
 Cette section de la documentation décrit:
 
-* Ajouter la fonctionnalité de forum à un site AEM.
+* Ajouter la fonction du forum à un site AEM.
 * Configuration settings for the `Forum` component.
 
 ### Ajout d’un forum à une page {#adding-a-forum-to-a-page}
@@ -122,7 +122,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Types de fichier autorisés**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **Taille** de fichier d’image de pièce jointe maximale adaptée uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
@@ -173,7 +173,6 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 >[!NOTE]
 >
 >Il peut être nécessaire de vérifier à la fois `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` d&#39;activer les commentaires sur un sujet.
-
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
