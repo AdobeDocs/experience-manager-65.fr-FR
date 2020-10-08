@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 5%
@@ -122,7 +122,7 @@ Une structure de site communautaire, créée à l’aide de l’assistant, inclu
 
 ### Exemple de code : Notification de réception du message {#sample-code-message-received-notification}
 
-La fonction de messagerie sociale lance des événements pour des opérations, par exemple `send``marking read`, `marking delete`. Ces événements peuvent être capturés et des mesures prises sur les données contenues dans le événement.
+La fonction de messagerie sociale lance des événements pour des opérations, par exemple `send`, `marking read`, `marking delete`. Ces événements peuvent être capturés et des mesures prises sur les données contenues dans le événement.
 
 L’exemple suivant illustre un gestionnaire de événements qui écoute le `message sent` événement et envoie un courriel à tous les destinataires de messagerie qui utilisent le `Day CQ Mail Service`.
 
