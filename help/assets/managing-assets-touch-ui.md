@@ -4,9 +4,9 @@ description: Découvrez les tâches de gestion des ressources telles que le tél
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '9613'
+source-wordcount: '9565'
 ht-degree: 62%
 
 ---
@@ -508,9 +508,6 @@ Le déplacement d’actifs par glisser-déplacer n’ouvre pas l’assistant [!U
 
 1. Cliquez sur le fichier pour ouvrir sa page.
 1. Dans l’interface du Experience Manager, sélectionnez **[!UICONTROL Rendus]** dans la liste.
-
-   ![Rangement de gauche pour ouvrir le menu et sélectionner l’option Rendus](assets/renditions_menu.png)
-
 1. Dans le panneau **[!UICONTROL Rendus]**, consultez la liste des rendus générés pour la ressource.
 
    ![Panneau Rendus sur la page Détails du fichier](assets/renditions_panel.png)
@@ -666,10 +663,6 @@ You can view, navigate through, and select assets with any of the available view
 
 Dans la vue de la vue de liste et de la colonne, l’option **[!UICONTROL Sélectionner]** s’affiche lorsque vous placez le pointeur sur la miniature de la ressource.
 
-![Sélection de fichiers dans la vue de liste](assets/select_quick_in_listview.png)
-
-![Sélection de fichiers dans la vue de colonnes](assets/select_quick_in_columnview.png)
-
 Dans la vue de carte, l’option **[!UICONTROL Sélectionner]** s’affiche sous la forme d’une action rapide.
 
 ![Sélectionner une action rapide sur la vue de cartes](assets/select_quick_action.png)
@@ -690,9 +683,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
    * Select the asset and then click **[!UICONTROL Edit]** in the toolbar.
    * Click **[!UICONTROL Edit]** option that displays on an asset in the card view.
-   * Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils.
-
-   ![Option Modifier de la barre d’outils](assets/do-not-localize/edit_icon.png)
+   * Cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils de l’option ![Modifier de la barre d’outils](assets/do-not-localize/edit_icon.png).
 
 1. Pour recadrer l’image, cliquez sur **[!UICONTROL Recadrer]** ![l’option pour recadrer une image](assets/do-not-localize/crop.png).
 
@@ -751,9 +742,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Click the **[!UICONTROL Annotate]** option from one of the following:
 
    * [Actions rapides](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
-
-   ![Option Annoter](assets/annotate-option.png)
+   * Dans la barre d’outils, après avoir sélectionné la ressource   ou avoir accédé à la page de la ressource.
 
 1. Ajoutez un commentaire dans la zone **[!UICONTROL Commentaire]** en bas de la chronologie. Une autre solution consiste à marquer une zone de l’image et à ajouter une annotation dans la boîte de dialogue **[!UICONTROL Ajouter une annotation]**.
 
@@ -768,8 +757,6 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
    >For a non-administrator user, the suggestions appear only if the user has read permissions at `/home` path in CRXDE.
 
 1. Après avoir ajouté l’annotation, cliquez sur **[!UICONTROL Ajouter]** pour l’enregistrer. Une notification relative à l’annotation est envoyée à Aaron.
-
-   ![Bouton Ajouter pour enregistrer une annotation](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -799,12 +786,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Pour afficher les annotations enregistrées pour une ressource, accédez à l’emplacement de la ressource et ouvrez la page de la ressource.
 
 1. Dans l’interface du Experience Manager, sélectionnez **[!UICONTROL Chronologie]**.
-
-   ![Option Chronologie disponible dans le Experience Manager](assets/view-timeline.png)
-
 1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
-
-   ![Afficher toute la liste dans le journal](assets/timeline-show-all-option.png)
 
    Dans le panneau **[!UICONTROL Frise chronologique]**, cliquez sur un commentaire pour afficher l’annotation correspondate sur l’image.
 
@@ -833,8 +815,6 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    Pour n’imprimer que l’état de révision, sélectionnez-le dans la chronologie.
 
 1. Click **[!UICONTROL Print]** from the toolbar.
-
-   ![Option Imprimer dans la barre d’outils](assets/do-not-localize/print.png)
 
 1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/l’état de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou l’état de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
 
@@ -923,8 +903,6 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
 
    * Cliquez sur **[!UICONTROL Afficher tout]** dans le [!UICONTROL journal].
    * Cliquez sur **[!UICONTROL Versions]**. Toutes les versions créées pour une ressource sont répertoriées dans la barre latérale gauche.
-
-      ![ Option Sélectionner des versions du journal](assets/versions_option.png)
 
    * Sélectionnez une version spécifique de la ressource, puis cliquez sur Version **[!UICONTROL de la]** Prévisualisation.
 
