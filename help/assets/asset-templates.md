@@ -3,10 +3,10 @@ title: Modèles de ressources
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 33%
+source-wordcount: '1544'
+ht-degree: 32%
 
 ---
 
@@ -50,17 +50,11 @@ Imaginons que vous voulez créer des contenus numériques papier, comme des broc
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Demander qu’un ou plusieurs modèles INDD soient chargés et disponibles [!DNL Experience Manager] à l’avance. Choose a template for your brochure, and click **[!UICONTROL Next]**.
-
-   ![chlimage_1-103](assets/chlimage_1-308.png)
-
 1. Entrez un nom et éventuellement une description pour la brochure.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Facultatif) Cliquez sur **[!UICONTROL Balises]** et sélectionnez une ou plusieurs balises pour la brochure. Click **[!UICONTROL Confirm]** to confirm your selection.
-
-   ![chlimage_1-105](assets/chlimage_1-310.png)
-
 1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue s’ouvre pour confirmer que la nouvelle brochure a été créée. Click **[!UICONTROL Open]** to open the brochure in edit mode.
 
    <!--![chlimage_1-106](assets/.png) -->
@@ -92,8 +86,6 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
    Les champs modifiables sont affichés à droite. For a field to be editable in [!DNL Experience Manager Assets], corresponding field in the template must be tagged in [!DNL InDesign]. In other words, they should be marked as editable in [!DNL InDesign].
 
-   ![chlimage_1-110](assets/chlimage_1-315.png)
-
    >[!NOTE]
    >
    >Ensure that your [!DNL Experience Manager] deployment is integrated with an [!DNL InDesign Server] to enable [!DNL Experience Manager Assets] to extract data from the [!DNL InDesign] template and make it available for editing. Pour plus d’informations, reportez-vous à la page [Intégration de ressources de Experience Manager à l’InDesign Server](/help/assets/indesign.md).
@@ -106,11 +98,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
 1. Cliquez sur **[!UICONTROL Prévisualisation]** pour prévisualisation des modifications de texte.
 
-   ![Modifications de la vue](assets/view-changes.png)
-
-1. To swap an image, click the **[!UICONTROL Asset Finder]**.
-
-   ![chlimage_1-113](assets/chlimage_1-318.png)
+1. Pour permuter une image, cliquez sur l’outil de recherche de **[!UICONTROL ressources]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Sélectionnez le champ d’image dans la liste des champs modifiables, puis faites glisser l’image souhaitée du sélecteur de ressource vers le champ modifiable.
 
@@ -121,12 +109,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Cliquez sur **[!UICONTROL Prévisualisation]** pour prévisualisation de l’image.
-
-   ![Modifications de la vue](assets/view-changes.png)
-
 1. Pour modifier une page spécifique dans une documentation multipage, utilisez le navigateur de page situé en bas.
-
-   ![navigateur de page](assets/page-navigator.png)
 
 1. Click **[!UICONTROL Preview]** on the toolbar to preview all the changes. Click **[!UICONTROL Done]** to save the editing changes to the collateral.
 
@@ -175,11 +158,7 @@ Vous pouvez modifier un document immédiatement après sa création. Alternative
 
    You can browse through the [!DNL Experience Manager Assets] repository or collections, and navigate to the location of the desired templates and then select them to merge.
 
-   ![chlimage_1-124](assets/chlimage_1-329.png)
-
    Vous pouvez appliquer différents filtres pour rechercher les modèles souhaités. Par exemple, vous pouvez rechercher des modèles en fonction de leur type ou de leurs balises.
-
-   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Click **[!UICONTROL Next]** from the toolbar.
 1. In the **[!UICONTROL Preview &amp; Reorder]** screen, rearrange the templates if required and preview the selection of templates to merge. Then, click **[!UICONTROL Next]** from the toolbar.
