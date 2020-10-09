@@ -3,10 +3,10 @@ title: Facettes de recherche pour filtrer les résultats de la recherche
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 78%
+source-wordcount: '2438'
+ht-degree: 77%
 
 ---
 
@@ -42,19 +42,13 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Uti
    >1. Enregistrez les modifications.
 
 
-1. Sur la page Modifier des formulaires de recherche, faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
+1. Sur la page [!UICONTROL Modifier des formulaires de recherche], faites glisser un prédicat de l’onglet **[!UICONTROL Sélectionner le prédicat]** vers le volet principal. Faites glisser, par exemple, **[!UICONTROL Prédicat de la propriété]**.
 
    ![Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche](assets/drag_predicate.png)
 
    *Figure : Appuyez sur un prédicat et déplacez-le pour personnaliser les filtres de recherche.*
 
-1. Sous l’onglet Paramètres, saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat.
-
-   Le libellé d’en-tête de l’onglet Paramètres identifie le type de prédicat sélectionné.
-
-   ![Utilisez l’onglet Paramètres pour définir les options requises d’un prédicat](assets/settings.png)
-
-   Utilisez l’onglet Paramètres pour définir les options requises d’un prédicat
+1. Sous l’onglet [!UICONTROL Paramètres], saisissez un libellé de champ, un texte d’espace réservé et une description pour le prédicat. Indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. The header label in the [!UICONTROL Settings] tab identifies the type of the selected predicate.
 
 1. Dans le champ **[!UICONTROL Nom de la propriété]**, indiquez un nom valide pour la propriété de métadonnées que vous souhaitez associer au prédicat. Il s’agit du nom sur lequel la recherche se base. Par exemple, saisissez `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`.
 
@@ -130,7 +124,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 1. Dans le champ **[!UICONTROL Description]**, saisissez une description facultative, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher. Le prédicat Options est ajouté au panneau **Rechercher**. Les options proposées pour **[!UICONTROL Type de fichier]** sont présentées sous la forme de cases à cocher.
 
-## ajouter un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
+## Ajouter un prédicat de propriété à plusieurs valeurs {#adding-a-multi-value-property-predicate}
 
 Le prédicat de propriété à plusieurs valeurs vous permet de rechercher plusieurs valeurs dans des ressources. Consider a scenario where you have images of multiple products in [!DNL Assets] and the metadata for each image includes an SKU number associated with the product. Vous pouvez utiliser ce prédicat pour rechercher des images de produit sur la base de plusieurs numéros de SKU.
 
@@ -154,21 +148,13 @@ Le prédicat Balise vous permet d’effectuer des recherches de ressources basé
 1. Configurez la propriété Chemin d’accès aux balises racines de ce prédicat pour renseigner les différentes balises dans la liste Balises.
 1. Sélectionnez **[!UICONTROL Option d’affichage de correspondance de toutes les balises]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-   ![Paramètres standard du prédicat de balises](assets/tags_predicate.png)
-
-   Paramètres standard du prédicat de balises
-
 1. Dans le champ **[!UICONTROL Description]**, saisissez une description facultative, puis cliquez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 
-   ![suggestion fournie par le Experience Manager lors de la saisie du nom de la balise](assets/tag-suggestion.png)
-
-   *Figure : suggestion fournie par le Experience Manager lors de la saisie du nom de la balise.*
-
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-## ajouter d&#39;autres prédicats {#adding-other-predicates}
+## Ajouter d&#39;autres prédicats {#adding-other-predicates}
 
 Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous pouvez ajouter les autres prédicats suivants au panneau Rechercher :
 
