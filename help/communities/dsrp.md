@@ -70,6 +70,7 @@ Sur l’auteur, pour accéder à la console de configuration de l’Enregistreme
       >[!NOTE]
       >
       >La configuration par défaut de l&#39;enregistrement est maintenant stockée dans conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) au lieu de etc path (`/etc/socialconfig/srpc/defaultconfiguration`). Il est conseillé de suivre les étapes [de](#zerodt-migration-steps) migration pour que les paramètres par défaut fonctionnent comme prévu.
+
    ![dsrp-config](assets/dsrp-config.png)
 
 * Select **[!UICONTROL Database Storage Resource Provider (DSRP)]**

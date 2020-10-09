@@ -62,7 +62,8 @@ Une sauvegarde complète est souvent effectuée à intervalles réguliers (par e
 >Sans cela, la sauvegarde est potentiellement inutile (au pire des cas).
 >
 >[!NOTE]
-Pour plus d’informations sur les performances de sauvegarde, consultez la section [Performance de sauvegarde](/help/sites-deploying/configuring-performance.md#backup-performance).
+>
+>Pour plus d’informations sur les performances de sauvegarde, consultez la section [Performance de sauvegarde](/help/sites-deploying/configuring-performance.md#backup-performance).
 
 ### Prise en charge de votre installation logicielle {#backing-up-your-software-installation}
 
@@ -74,13 +75,16 @@ Pour ce faire, vous devez [sauvegarder entièrement votre référentiel](#backin
 1. Back up the entire `<cq-installation-dir>` from your file system.
 
 >[!CAUTION]
-Si vous gérez un serveur d’application tiers, des fichiers supplémentaires peuvent se trouver sur un emplacement différent et doivent galement être pris en charge. Découvrez [comment installer AEM avec un serveur d’application](/help/sites-deploying/application-server-install.md) pour plus d’informations sur la configuration des serveurs d’applications. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
+>
+>Si vous gérez un serveur d’application tiers, des fichiers supplémentaires peuvent se trouver sur un emplacement différent et doivent galement être pris en charge. Découvrez [comment installer AEM avec un serveur d’application](/help/sites-deploying/application-server-install.md) pour plus d’informations sur la configuration des serveurs d’applications. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
 
 >[!CAUTION]
-La sauvegarde incrémentielle de l’entrepôt de données de fichier est prise en charge ; lorsque vous utilisez la sauvegarde incrémentielle pour d’autres composants (tels que l’index Lucene), assurez-vous que les fichiers supprimés sont également marqués comme supprimé dans la sauvegarde.
+>
+>La sauvegarde incrémentielle de l’entrepôt de données de fichier est prise en charge ; lorsque vous utilisez la sauvegarde incrémentielle pour d’autres composants (tels que l’index Lucene), assurez-vous que les fichiers supprimés sont également marqués comme supprimé dans la sauvegarde.
 
 >[!NOTE]
-La duplication du disque peut également être utilisée comme mécanisme de sauvegarde.
+>
+>La duplication du disque peut également être utilisée comme mécanisme de sauvegarde.
 
 ### Sauvegarde de votre référentiel {#backing-up-your-repository}
 
@@ -132,7 +136,8 @@ Pour purger les versions d’un site web, procédez comme suit :
 1. Cliquez sur **Purge** pour lancer le processus.
 
 >[!CAUTION]
-Les nœuds purgés ne peuvent pas être rétablis sans restaurer le référentiel. Vous devez veiller à votre configuration. Nous vous recommandons de toujours lancer une exécution d’essai avant la purge. 
+>
+>Les nœuds purgés ne peuvent pas être rétablis sans restaurer le référentiel. Vous devez veiller à votre configuration. Nous vous recommandons de toujours lancer une exécution d’essai avant la purge. 
 
 ### Analyse de la console {#analyzing-the-console}
 
@@ -180,7 +185,8 @@ La rotation de fichier journal fait référence au processus qui limite la crois
 * Les fichiers journaux précédents ne sont pas supprimés, il est donc de votre responsabilité de nettoyer régulièrement les anciens fichiers journaux afin de limiter l&#39;utilisation du disque.
 
 >[!NOTE]
-Si vous mettez à niveau votre installation d’AEM, notez que tout fichier journal existant qui n’est plus utilisé par AEM restera sur le disque. Vous pouvez les supprimer en toute sécurité. Toutes les nouvelles entrées de journal seront écrites dans les nouveaux fichiers journaux.
+>
+>Si vous mettez à niveau votre installation d’AEM, notez que tout fichier journal existant qui n’est plus utilisé par AEM restera sur le disque. Vous pouvez les supprimer en toute sécurité. Toutes les nouvelles entrées de journal seront écrites dans les nouveaux fichiers journaux.
 
 ### Recherche de fichiers journaux {#finding-the-log-files}
 
@@ -223,7 +229,8 @@ Fournit un journal de toutes les opérations de mise à niveau qui s’exécuten
 Révision des informations de journalisation.
 
 >[!NOTE]
-Les journaux ImageServer et s7access ne sont pas inclus dans le **Télécharger le **package complet généré à partir de la **page **system/console/status-Bundlelist **page. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
+>
+>Les journaux ImageServer et s7access ne sont pas inclus dans le **Télécharger le **package complet généré à partir de la **page **system/console/status-Bundlelist **page. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
 
 ### Activation du niveau de journalisation DEBUG {#activating-the-debug-log-level}
 
@@ -232,7 +239,8 @@ Le niveau de journalisation par défaut ([configuration des journaux Apache Slin
 Pour activer le niveau de journalisation de débogage pour un journal, définissez la propriété `org.apache.sling.commons.log.level` pour le débogage dans le référentiel. For example, on `/libs/sling/config/org.apache.sling.commons.log.LogManager` to configure the [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
-Ne laissez pas le journal au niveau de débogage plus longtemps que nécéssaire, car cela génère un grand nombre d’entrées, causant ainsi du gaspillage de ressources.
+>
+>Ne laissez pas le journal au niveau de débogage plus longtemps que nécéssaire, car cela génère un grand nombre d’entrées, causant ainsi du gaspillage de ressources.
 
 Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
 
@@ -251,7 +259,8 @@ Les niveaux de journalisation sont les suivants :
 ### Création d’un fichier journal personnalisé {#create-a-custom-log-file}
 
 >[!NOTE]
-Lorsque vous utilisez Adobe Experience Manager, vous disposez de plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Consultez [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour obtenir plus de détails et les pratiques recommandées.
+>
+>Lorsque vous utilisez Adobe Experience Manager, vous disposez de plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Consultez [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour obtenir plus de détails et les pratiques recommandées.
 
 Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un niveau de journalisation différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
 
@@ -266,7 +275,8 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Type : `sling:OsgiConfig`
    >[!NOTE]
-   Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<*identifier*>` unique.
+   >
+   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<*identifier*>` unique.
 
 1. Définissez les propriétés suivantes sur ce nœud :
 
@@ -301,33 +311,38 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
-   `org.apache.sling.commons.log.pattern` prend en charge jusqu’à six arguments.
+   >
+   >`org.apache.sling.commons.log.pattern` prend en charge jusqu’à six arguments.
 
    >{0} L’horodatage de type `java.util.Date` {1} l’indicateur de journal {2} le nom du thread actuel {3} le nom de l’enregistreur {4} le niveau de journalisation {5} le message de journal
 
    >Si l’appel de journal comprend un `Throwable`, la trace de pile est ajoutée au message. 
 
    >[!CAUTION]
-   org.apache.sling.commons.log.names doit avoir une valeur.
+   >
+   >org.apache.sling.commons.log.names doit avoir une valeur.
 
    >[!NOTE]
-   Log writer paths are relative to the `crx-quickstart` location.
-   Par conséquent, un fichier journal spécifié en tant que :
-   `logs/thelog.log`
+   >
+   >Log writer paths are relative to the `crx-quickstart` location.
+   >Par conséquent, un fichier journal spécifié en tant que :
+   >`logs/thelog.log`
 
    >écrit à :
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
-   Et un fichier journal spécifié en tant que :
-   `../logs/thelog.log`
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
+   >Et un fichier journal spécifié en tant que :
+   >`../logs/thelog.log`
 
    >écrit à un répertoire :
-   ` <*cq-installation-dir*>/logs/`
+   >` <*cq-installation-dir*>/logs/`
+
 &quot;(c’est-à-dire en regard de ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
 
 1. Cette étape est nécessaire uniquement lorsqu’un nouvel auteur est nécessaire (c’est-à-dire avec une configuration différente de l’auteur par défaut).
 
    >[!CAUTION]
-   Une nouvelle configuration d’auteur de journalisation est uniquement nécessaire lorsque celle par défaut n’est pas appropriée. 
+   >
+   >Une nouvelle configuration d’auteur de journalisation est uniquement nécessaire lorsque celle par défaut n’est pas appropriée. 
 
    >Si aucun auteur explicite n’est configuré, le système génère automatiquement un auteur implicite par défaut.
 
@@ -339,7 +354,8 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    * Type : `sling:OsgiConfig`
    >[!NOTE]
-   Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<*identifier*>` unique.
+   >
+   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<*identifier*>` unique.
 
    Définissez les propriétés suivantes sur ce nœud :
 
@@ -365,9 +381,10 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
          Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
-   * une taille maximale de fichier
-   * une planification heure/date
+   >
+   >`org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
+   >* une taille maximale de fichier
+   >* une planification heure/date
 
    pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
    * Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
@@ -455,10 +472,11 @@ Pour surveiller un agent de réplication :
    * **Forcer un nouvel essai** sur tous les éléments de la file d’attente si nécessaire.
 
    >[!CAUTION]
-   N’utilisez pas le lien « Tester la connexion » pour la boîte d’envoi de la réplication inverse sur l’instance de publication. 
-   Si un test de réplication est effectué pour une file d’attente de la boîte d’envoi, les éléments qui sont plus anciens que la réplication de test sont retraités avec chaque réplication inverse.
-   Si de tels éléments existent déjà dans la file d’attente, ils peuvent être recherchés avec la requête XPath JCR suivante et doivent être supprimés.
-   `/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
+   >
+   >N’utilisez pas le lien « Tester la connexion » pour la boîte d’envoi de la réplication inverse sur l’instance de publication. 
+   >Si un test de réplication est effectué pour une file d’attente de la boîte d’envoi, les éléments qui sont plus anciens que la réplication de test sont retraités avec chaque réplication inverse.
+   >Si de tels éléments existent déjà dans la file d’attente, ils peuvent être recherchés avec la requête XPath JCR suivante et doivent être supprimés.
+   >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Again you can develop a solution to detect all replication agents (located under `/etc/replication/author` or `/etc/replication/publish`), then check the status of the agent ( `enabled`, `disabled`) and the underlying queue ( `active`, `idle`, `blocked`).
 
@@ -469,7 +487,8 @@ Again you can develop a solution to detect all replication agents (located under
 Les méthodes utilisées lors de la collecte des informations pour le ciblage peuvent également être utilisées pour une surveillance continue.
 
 >[!NOTE]
-Les configurations[ spécifiques disponibles pour améliorer la performance](/help/sites-deploying/configuring-performance.md#configuring-for-performance) peuvent également être vérifiées.
+>
+>Les configurations[ spécifiques disponibles pour améliorer la performance](/help/sites-deploying/configuring-performance.md#configuring-for-performance) peuvent également être vérifiées.
 
 Vous trouverez ci-après une liste des problèmes de performance qui surviennent de temps à autre, ainsi que des solutions potentielles sur la façon de les repérer et de les résoudre.
 
@@ -854,7 +873,8 @@ Depuis JDK 1.6, la commande d’outil `jvisualvm` est disponible. Une fois que 
 1. Démarrez votre instance AEM.
 
    >[!NOTE]
-   If using Java 5 you can add the `-Dcom.sun.management.jmxremote` argument to the java command line that starts your JVM. JMX est activé par défaut avec Java 6.
+   >
+   >If using Java 5 you can add the `-Dcom.sun.management.jmxremote` argument to the java command line that starts your JVM. JMX est activé par défaut avec Java 6.
 
 1. Exécutez l’une des deux options suivantes :
 
@@ -1018,11 +1038,12 @@ Répétez la procédure ci-dessus sur votre instance de publication.
 Voici une liste de suggestions des éléments à vérifier si vous commencez à rencontrer certains problèmes de performance. La liste n’est (malheureusement) pas tout à fait complète.
 
 >[!NOTE]
-Consultez les articles suivants pour plus d’informations :
-* [Images de mémoire de threads](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
-* [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
-* [Analyse à l’aide du profileur intégré](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
-* [Analyse des processus lents et bloqués](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>
+>Consultez les articles suivants pour plus d’informations :
+>* [Images de mémoire de threads](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
+>* [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
+>* [Analyse à l’aide du profileur intégré](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
+>* [Analyse des processus lents et bloqués](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 
 
@@ -1115,5 +1136,6 @@ Ou JConsole :
 Cela vous aidera à déterminer la quantité de mémoire utilisée, les algorithmes GC utilisés, leur durée d’exécution et l’impact sur la performance de l’application. Sans cela, le réglage n&#39;est que des &quot;boutons à bascule aléatoire&quot;.
 
 >[!NOTE]
-Pour la machine virtuelle d’Oracle, il existe également des informations à l’adresse suivante : 
-[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>
+>Pour la machine virtuelle d’Oracle, il existe également des informations à l’adresse suivante : 
+>[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
