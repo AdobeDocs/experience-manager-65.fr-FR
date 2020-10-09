@@ -3,9 +3,9 @@ title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Ex
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1413'
 ht-degree: 99%
 
 ---
@@ -219,7 +219,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 ### Métadonnées spécifiques à l’impression {#print-specific-metadata}
 
 * PDF et PDF/X – Adobe PDF et applications tierces.
-* PRISM – [ Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata). ](https://www.prismstandard.org)
+* PRISM – [ Exigences de publication pour les métadonnées standard du secteur (Publishing Requirements for Industry Standard Metadata). ](https://www.idealliance.org/prism-metadata/)
 * XMP – [!DNL Extensible Metadata Platform].
 * `xmpPG` – Métadonnées XMP pour le texte paginé.
 
