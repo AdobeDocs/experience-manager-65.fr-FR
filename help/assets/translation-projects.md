@@ -3,9 +3,9 @@ title: Création de projets de traduction
 description: Apprenez à créer des projets de traduction dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1885'
 ht-degree: 68%
 
 ---
@@ -17,7 +17,7 @@ To create a language copy, trigger one of the following language copy workflows 
 
 * **Créer et traduire**: Dans ce processus, les ressources à traduire sont copiées dans la langue racine de la langue à traduire. En outre, en fonction des options que vous sélectionnez, un projet de traduction est créé pour les ressources dans la console Projets. En fonction des paramètres, vous pouvez démarrer le projet de traduction manuellement ou autoriser son exécution automatique dès sa création.
 
-* **Mise à jour des copies de langue**: Exécutez ce processus pour traduire un groupe supplémentaire de ressources et l’inclure dans une copie de langue pour un paramètre régional particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
+* **Mettre à jour les copies** de langue : Exécutez ce processus pour traduire un groupe supplémentaire de ressources et l’inclure dans une copie de langue pour un paramètre régional particulier. Dans ce cas, les ressources traduites sont ajoutées au dossier cible qui contient des ressources précédemment traduites.
 
 >[!NOTE]
 >
@@ -47,8 +47,6 @@ Utilisez l’option **[!UICONTROL Créer uniquement la structure]** pour créer 
 1. Click **[!UICONTROL Create &amp; Translate]** at the bottom.
 
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la langue pour laquelle vous souhaitez créer une structure de dossiers.
-
-   ![sélectionner la langue de la cible](assets/target-language.png)
 
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Créer uniquement la structure]**.
 
@@ -132,8 +130,6 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
 
 1. Dans la liste **[!UICONTROL Langues cibles]**, choisissez la ou les langues pour lesquelles vous souhaitez créer une structure de dossiers.
 
-   ![sélectionner la langue de la cible](assets/target-language.png)
-
 1. Dans la liste **[!UICONTROL Projet]**, sélectionnez **[!UICONTROL Ajouter à un projet de traduction existant]** afin d’exécuter le workflow de traduction sur le dossier.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -143,8 +139,6 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
    >Si vous sélectionnez l’option **[!UICONTROL Ajouter à un projet de traduction existant]**, votre projet de traduction est ajouté à un projet préexistant uniquement si les paramètres du projet correspondent exactement à ceux du projet préexistant. Dans le cas contraire, un nouveau projet est créé.
 
 1. Dans la liste **[!UICONTROL Projet de traduction existant]**, choisissez un projet auquel ajouter la ressource à traduire.
-
-   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Cliquez sur **[!UICONTROL Créer]**. Les fichiers à traduire sont ajoutés au dossier cible. Le dossier mis à jour est répertorié sous la section **[!UICONTROL Copies de langue]**.
 
@@ -174,8 +168,6 @@ Si vous utilisez cette option, le workflow de traduction s’exécute pour les r
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    Un message indique le début de la tâche de traduction.
-
-   ![chlimage_1-82](assets/chlimage_1-82.png)
 
 1. Pour afficher l’état de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction.]**
 
@@ -210,8 +202,6 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
 
 1. Dans le champ **[!UICONTROL Titre du projet]**, saisissez un titre pour le projet.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
 1. Cliquez sur **[!UICONTROL Démarrer]**.
 1. Accédez à la console Projets. Le dossier de traduction est copié dans la console Projets.
 
@@ -230,8 +220,6 @@ Si vous utilisez cette option, un projet de traduction est créé pour l’ensem
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    Un message indique le début de la tâche de traduction.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. Pour afficher l’état de la tâche de traduction, cliquez sur les points de suspension en bas de la mosaïque **[!UICONTROL Tâche de traduction.]**
 
@@ -261,8 +249,6 @@ Si vous utilisez cette option, l’ensemble de ressources est ajouté à un proj
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Dans la liste **[!UICONTROL Projet de traduction existant]**, choisissez un projet auquel ajouter la ressource à traduire.
-
-   ![sélectionner un projet](assets/select-a-project.png)
 
 1. Cliquez sur **[!UICONTROL Démarrer]**.
 1. Voir les étapes 9 à 14 de la section [Ajouter à un projet de traduction existant](translation-projects.md#add-to-existing-translation-project) pour accomplir le reste de la procédure.
