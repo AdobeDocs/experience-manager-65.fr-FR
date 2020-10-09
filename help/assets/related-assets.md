@@ -3,9 +3,9 @@ title: Ressources liées
 description: Découvrez comment relier des ressources numériques qui partagent certains attributs communs. Créez également des relations dérivées de la source entre les ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '632'
 ht-degree: 47%
 
 ---
@@ -44,8 +44,6 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
    * Pour mettre en relation un fichier dérivé avec la ressource, sélectionnez **[!UICONTROL Dérivés]** dans la liste.
    * Pour créer une relation réciproque entre les ressources, sélectionnez **[!UICONTROL Autres]** dans la liste.
 
-   ![chlimage_1-276](assets/chlimage_1-276.png)
-
 1. Sur l’écran **[!UICONTROL Sélectionner une ressource]**, accédez à l’emplacement de la ressource que vous souhaitez mettre en relation et sélectionnez-la.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
@@ -55,9 +53,7 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Pour annuler la relation entre un élément, cliquez sur **[!UICONTROL Annuler la relation]** dans la barre d’outils.
-
-   ![ressources non liées](assets/do-not-localize/link-unrelate-icon.png)
+1. Pour annuler la relation entre un élément, cliquez sur **[!UICONTROL Annuler la relation]** des éléments ![](assets/do-not-localize/link-unrelate-icon.png) non liés dans la barre d’outils.
 
 1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
@@ -81,8 +77,6 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. From the [!UICONTROL Projects] page, open the translation folder.
 
-   ![chlimage_1-283](assets/chlimage_1-283.png)
-
 1. Cliquez sur la mosaïque du projet pour ouvrir la page de détails.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
@@ -97,8 +91,4 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. Pour vérifier si les fichiers associés à la source ont été traduits, cliquez sur le fichier source.
 
-   ![chlimage_1-287](assets/chlimage_1-287.png)
-
 1. Select the asset that is related to the source, and then click **[!UICONTROL Reveal in Assets]**. La ressource associée traduite s’affiche.
-
-   ![chlimage_1-288](assets/chlimage_1-288.png)
