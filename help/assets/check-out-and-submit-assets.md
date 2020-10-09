@@ -3,10 +3,10 @@ title: Archivage et extraction de fichiers pour modification
 description: Découvrez comment extraire les ressources pour modification et les archiver à nouveau une fois les modifications effectuées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 51%
+ht-degree: 49%
 
 ---
 
@@ -64,5 +64,5 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 >[!MORELIKETHIS]
 >
 >* [Comprendre l&#39;archivage et l&#39;extraction dans l&#39;application de bureau Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Didacticiel vidéo pour comprendre comment archiver et extraire des ressources](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/checkin-checkout-technical-video-understand.html)
+>* [Didacticiel vidéo pour comprendre comment archiver et extraire des ressources](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
