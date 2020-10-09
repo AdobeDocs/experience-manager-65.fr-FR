@@ -8,10 +8,10 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1354'
-ht-degree: 72%
+source-wordcount: '1356'
+ht-degree: 70%
 
 ---
 
@@ -31,7 +31,7 @@ Le mode sans fichier binaire étant activé, les modules de contenu distribués 
 #### Comment activer la distribution sans fichier binaire ? {#how-do-i-enable-binary-less-distribution}
 
 Pour activer la distribution sans fichier binaire, déployez un entrepôt de grands objets binaires partagé.
-Check the `useBinaryReferences` property in the OSGI configuration with the factory PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*that your agent is using.
+Check the `useBinaryReferences` property in the OSGI configuration with the factory PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* that your agent is using.
 
 #### How can I customize the error messages while navigating page hierarchy in AEM sites console? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
@@ -119,11 +119,11 @@ Comme solution, vous pouvez également désactiver manuellement le composant via
 
 #### How to configure Asset Insights with AEM 6.5 instance? {#how-to-configure-asset-insights-with-aem-instance}
 
-Pour configurer la fonction Statistiques sur les ressources pour Experience Manager déployé via Adobe Activation (gestion dynamique des balises), veuillez consulter la section [Configuration de la fonction Statistiques sur les ressources avec AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+To setup and configure Asset Insights for Experience Manager deployed via Adobe Activation (DTM), see how to [Set up Asset Insights with AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-#### Comment personnaliser les consoles d’administration ? {#how-to-customize-admin-consoles}
+#### How to customize admin consoles? {#how-to-customize-admin-consoles}
 
-AEM fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création. Pour savoir comment créer une console personnalisée et modifier l’affichage par défaut d’une console, veuillez consulter la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
+aem fournit divers mécanismes permettant de personnaliser les consoles et les fonctionnalités de création de page de votre instance de création. Pour savoir comment créer une console personnalisée et modifier l’affichage par défaut d’une console, veuillez consulter la section [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Quelle est la différence entre les composants basés sur CoralUI 2 et CoralUI 3 ? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
