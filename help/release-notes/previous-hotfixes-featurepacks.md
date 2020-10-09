@@ -3,9 +3,9 @@ title: '[ !DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes
 description: Notes de mise à jour des Service Packs de [!DNL Adobe Experience Manager] la version 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 359eb60c0ba3845d7aa0ca58488aa945a9f45aea
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '11484'
+source-wordcount: '11487'
 ht-degree: 26%
 
 ---
@@ -270,7 +270,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 * Les balises traduites ne sont pas importées en Experience Manager à partir de services de traduction tiers (NPR-33154).
 * La page de configuration de traduction affiche un fournisseur de traduction incorrect par rapport à celui utilisé pour la traduction (NPR-32971).
-* ajouter un dossier de fragments d’expérience à un projet de traduction existant crée un nouveau projet (NPR-32843).
+* Ajouter un dossier de fragments d’expérience à un projet de traduction existant crée un nouveau projet (NPR-32843).
 * Une `NullPointerException` erreur s&#39;affiche dans les journaux d&#39;exécution d&#39;une tâche de traduction (NPR-32628).
 
 ### WCM {#wcm-6550}
@@ -886,7 +886,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Share Link feature is not working on [!DNL Experience Manager] instance with DMS7 configuration. NPR-30080, NPR-30492 : Correctif pour CQ-4273651
 * Adding the [!DNL Dynamic Media]–Scene7 component to the page, and then publishing the page does not trigger the dmscene7 configuration every time. NPR-30641 : correctif pour CQ-4275962
 * Added an IPSJobJournal in [!DNL Experience Manager] to create only one Intrusion Prevention Systems (IPS) job per processing profile. NPR-30490 : correctif pour CQ-4273614
-* [!DNL Dynamic Media]: ajouté des filtres par défaut pour exclure les ressources de la réplication sur le noeud de [!DNL Experience Manager] publication. NPR-30538 : correctif pour CQ-4274678
+* [!DNL Dynamic Media]: Ajouté des filtres par défaut pour exclure les ressources de la réplication sur le noeud de [!DNL Experience Manager] publication. NPR-30538 : correctif pour CQ-4274678
 * Un processus de retraitement externe a été mis en place pour la prise en charge de ressources multiples afin d’autoriser le dossier comme charge utile. Le workflow comporte deux étapes : retraitement des fichiers sans poignées via un mappage de métadonnées à l’étape suivante et retéléchargement de tous les fichiers sans poignée de ressources vers S7 dans une seule tâche IPS. For more details, see Configuring [!DNL Dynamic Media] Cloud Services. NPR-30489 : correctif pour CQ-4272903
 * Le téléchargement d’un fichier CSV incorrect après un fichier CSV correct efface le fichier CSV correct. Correctif pour CQ-4277694, CQ-4277814
 * L’icône incorrecte spécifique aux dossiers de contribution est à supprimer. Correctif pour CQ-4277580
@@ -1259,7 +1259,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Ressources - incluses
 
-* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html). NPR-29199 : correctif pour CQ-4259922
+* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199 : correctif pour CQ-4259922
 
 #### Sites - inclus
 
@@ -1267,7 +1267,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Forms - Document Services - Inclus
 
-* OSGi uniquement : ajouté un nouvel attribut PAGECOUNT dans Output et Forms Service. NPR-28922 : correctif pour CQ-4270870
+* OSGi uniquement : Ajouté un nouvel attribut PAGECOUNT dans Output et Forms Service. NPR-28922 : correctif pour CQ-4270870
 * OSGi uniquement : Activation de la prise en charge de la création de fichiers PDF statiques à l’aide de Forms Service. NPR-28572 : correctif pour CQ-4270869
 * Autorisations activées sur XMLForm.exe pour les administrateurs et les utilisateurs racines. NPR-29237 : correctif pour CQ-4267080
 
