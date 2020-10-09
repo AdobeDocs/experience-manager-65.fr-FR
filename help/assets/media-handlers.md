@@ -3,7 +3,7 @@ title: Traiter des fichiers à l’aide de gestionnaires de médias et de workfl
 description: Découvrez les gestionnaires de médias et comment utiliser des workflows pour effectuer des tâches sur vos ressources numériques.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 52%
@@ -446,7 +446,7 @@ Les conversions suivantes peuvent être automatiquement exécutées et stockées
 
 * Transformation EPS et AI à l’aide d’[ImageMagick](https://www.imagemagick.org/script/index.php) et de [Ghostscript](https://www.ghostscript.com/).
 * Transcodage vidéo FLV à l’aide de [FFmpeg](https://ffmpeg.org/).
-* Encodage MP3 à l’aide de [LAME](http://lame.sourceforge.net/).
+* Encodage MP3 à l’aide de [LAME](https://lame.sourceforge.io/).
 * Traitement audio à l’aide de [SOX](http://sox.sourceforge.net/).
 
 >[!NOTE]
