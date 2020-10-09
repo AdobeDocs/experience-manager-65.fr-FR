@@ -1,16 +1,16 @@
 ---
-title: Notes de mise à jour d’AEM 6.5
+title: Notes de mise à jour de Adobe Experience Manager 6.5
 description: Les Notes de mise à jour AEM couvrent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 27%
+source-wordcount: '374'
+ht-degree: 25%
 
 ---
 
 
-# Notes de mise à jour d’AEM 6.5
+# Notes de mise à jour de Adobe Experience Manager 6.5
 
 Les Notes de mise à jour AEM couvrent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus.
 
@@ -20,7 +20,7 @@ Les Notes de mise à jour AEM couvrent des informations importantes sur la derni
 * [Mises à jour récentes de la documentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Liste de contrôle de la sécurité AEM](/help/sites-administering/security-checklist.md)
 
-## AEM 6.5 guides d’utilisation
+## aem 6.5 guides d’utilisation
 
 | Guide de l’utilisateur | Description |
 |--- |---|
@@ -39,8 +39,8 @@ Les Notes de mise à jour AEM couvrent des informations importantes sur la derni
 
 ## Principales ressources AEM
 
-* [AEM didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html)
-* [Guide de l&#39;utilisateur Dispatcher](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
+* [aem didacticiels](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html)
+* [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
 * [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
 * [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
