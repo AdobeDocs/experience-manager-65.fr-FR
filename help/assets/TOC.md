@@ -6,9 +6,9 @@ user-guide-title: Guide des ressources
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '619'
 ht-degree: 50%
 
 ---
@@ -23,13 +23,14 @@ ht-degree: 50%
 + Utiliser des ressources Experience Manager {#using}
    + [Expérience de la page d&#39;accueil des ressources](assets-home-page.md)
    + [Recherche de ressources numériques](search-assets.md)
+   + [Utilisation des métadonnées de fichier](metadata.md)
    + [Ressources multilingues](multilingual-assets.md)
    + [ [!DNL Adobe Stock] Utilisation des ressources dans les ressources](aem-assets-adobe-stock.md)
    + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
    + [Traiter les actifs](assets-workflow.md)
-   + [ajouter des zones cliquables](image-maps.md)
+   + [Ajouter des zones cliquables](image-maps.md)
    + [Réutilisation de ressources à l’aide de MSM](reuse-assets-using-msm.md)
    + [Ressources connectées avec des sites](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
@@ -50,7 +51,7 @@ ht-degree: 50%
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
    + [Vidéo](s7-video.md)
-   + [ajouter les fonctionnalités Scene7 à votre page](scene7.md)
+   + [Ajouter les fonctionnalités Scene7 à votre page](scene7.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
@@ -91,28 +92,24 @@ ht-degree: 50%
 + Administration des ressources {#administer}
    + [Formats de fichiers pris en charge](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
-   + [Gestion des métadonnées pour les fichiers](metadata.md)
+   + [Comprendre les concepts de métadonnées](metadata-concepts.md)
+   + [Configuration de la fonctionnalité de métadonnées](metadata-config.md)
    + [Écriture différée XMP sur les rendus](xmp-writeback.md)
    + [Partage des liens des ressources](link-sharing.md)
    + [Rapports de ressources](asset-reports.md)
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
    + [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
-   + [Métadonnées en cascade](cascading-metadata.md)
    + [Création et configuration des pages de l’éditeur de ressources](assets-finder-editor.md)
    + [Guide de dimensionnement des ressources](assets-sizing-guide.md)
-   + [Référence du schéma de métadonnées](meta-ref.md)
    + [Meilleures pratiques de traduction des ressources](best-practices-for-translating-assets-efficiently.md)
    + [Guide de réglage des performances des ressources](performance-tuning-guidelines.md)
-   + [Ajout ou modification de métadonnées](meta-edit.md)
    + [Guide de migration des ressources](assets-migration-guide.md)
-   + [Métadonnées XMP](xmp.md)
    + [Considérations sur le réseau d’Assets](assets-network-considerations.md)
    + [Ressources et MediaLibrary](medialibrary.md)
    + [Utiliser le pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert](configuring-asset-upload-restrictions.md)
    + [Intégration Experience Manager et Creative Cloud](aem-cc-integration-best-practices.md)
    + [Intégrer à l&#39;InDesign Server](indesign.md)
-   + [Profils de métadonnées](metadata-profiles.md)
    + [Digital Rights Management dans les ressources](drm.md)
    + [Utiliser le package de démonstration pour les informations sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
@@ -120,14 +117,11 @@ ht-degree: 50%
    + [Prise en charge de Camera Raw](camera-raw.md)
    + [Détecter le type MIME de fichiers à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Bibliothèque de transcodage des images](imaging-transcoding-library.md)
-   + [Prise en charge des métadonnées IPTC](iptc-support.md)
    + [Schémas de métadonnées](metadata-schemas.md)
    + [Multiplénitude pour les collections, les fragments et les modèles de fragments de code](multi-tenancy.md)
    + [Mettre vos fichiers en filigrane](watermarking.md)
-   + [Importation et exportation de métadonnées en bloc](metadata-import-export.md)
    + [Modèles de ressources](asset-templates.md)
    + [Recommandations relatives au partage de dossier avec le Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-   + [Schéma de métadonnées de dossier](folder-metadata-schema.md)
    + [Gérer les balises actives](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [Configuration de ressources avec le portail de marques](configure-aem-assets-with-brand-portal.md)
@@ -147,7 +141,6 @@ ht-degree: 50%
 + Manage Assets {#managing}
    + [Gestion des éléments numériques](managing-assets-touch-ui.md)
    + [Gestion des collections](managing-collections-touch-ui.md)
-   + [Gestion de plusieurs ressources et collections](managing-multiple-assets.md)
    + [Configuration du balisage à l’aide de Smart Content Service](config-smart-tagging.md)
    + [Activation de la détection de doublons](duplicate-detection.md)
    + [Organisation des ressources numériques](organize-assets.md)
