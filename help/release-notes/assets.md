@@ -2,7 +2,7 @@
 title: Notes de mise à jour de [!DNL Adobe Experience Manager Assets] 6.5.
 description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 43%
@@ -36,7 +36,7 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Image et licence d’Prévisualisation Adobe Stock depuis les ressources Experience Manager](assets/stock_image_preview_license_options.png)
+![Image et licence d’prévisualisation Adobe Stock depuis les ressources Experience Manager](assets/stock_image_preview_license_options.png)
 
 *Figure : Prévisualisation[!DNL Adobe Stock]image et licence depuis[!DNL Experience Manager Assets].*
 
@@ -100,9 +100,9 @@ Vous pouvez désormais sélectionner toutes les ressources chargées dans un dos
 
 ## Améliorations des métadonnées {#metadata-enhancements}
 
-[!DNL Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers. Vous pouvez désormais attribuer un schéma de métadonnées de dossier à un dossier existant ou lors de la création d’un dossier. Pour plus d’informations, consultez la section [Schéma de métadonnées de dossier](/help/assets/folder-metadata-schema.md).
+[!DNL Assets] vous permet de créer des schémas de métadonnées pour des dossiers de ressources. Ces schémas définissent la disposition et les métadonnées affichées dans les pages de propriétés des dossiers. Vous pouvez désormais attribuer un schéma de métadonnées de dossier à un dossier existant ou lors de la création d’un dossier. Pour plus d’informations, consultez la section [Schéma de métadonnées de dossier](/help/assets/metadata-config.md#folder-metadata-schema).
 
-Lors de la spécification des métadonnées en cascade, les options peuvent être chargées à partir d’un fichier JSON à l’exécution, au lieu de les saisir manuellement dans le formulaire. Pour plus d’informations, consultez la section [Schéma de métadonnées de dossier](/help/assets/cascading-metadata.md).
+Lors de la spécification des métadonnées en cascade, les options peuvent être chargées à partir d’un fichier JSON à l’exécution, au lieu de les saisir manuellement dans le formulaire. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
 
 ## Amélioration des rapports {#reporting-enhancements}
 
