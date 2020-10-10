@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 91%
@@ -23,7 +23,7 @@ Un profil est une recette indiquant les options à appliquer aux ressources qui 
 
 Ces règles peuvent inclure l’ajout de métadonnées, le recadrage intelligent des images ou la mise en place de profils de codage vidéo. AEM vous permet de créer trois types de profils, qui sont abordés en détail sous les liens suivants :
 
-* [Profils de métadonnées](/help/assets/metadata-profiles.md)
+* [Profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles)
 * [Profils d’image](/help/assets/image-profiles.md)
 * [Profils vidéo](/help/assets/video-profiles.md)
 
