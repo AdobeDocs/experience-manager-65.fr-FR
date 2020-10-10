@@ -3,10 +3,10 @@ title: Balises intelligentes améliorées
 description: Balises intelligentes améliorées
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 76%
+source-wordcount: '1587'
+ht-degree: 74%
 
 ---
 
@@ -44,6 +44,7 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Le service de contenu dynamique est activé pour votre organisation.
+* Le package de base de Content Services Smart ne peut être ajouté qu’à un déploiement pour lequel un package de [!DNL Sites] [!DNL Assets] base et un module complémentaire ont reçu une licence.
 
 ## Intégration {#onboarding}
 
@@ -107,7 +108,7 @@ Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est 
 >
 >Une fois que les ressources d’un dossier sont traitées pour la formation, seules les ressources modifiées sont traitées au cours des cycles de formation suivants.
 
-### Rapports de formation Vue {#viewing-training-reports}
+### Rapports de formation vue {#viewing-training-reports}
 
 Pour vérifier que le service de contenu dynamique est entraîné sur vos balises dans la série de ressources d’entraînement, examinez le rapport de workflow d’entraînement dans la console Rapports.
 
@@ -179,3 +180,7 @@ Vous pouvez déclencher le workflow de balisage à partir des emplacements suiva
 >[!NOTE]
 >
 >Lors des cycles de balisage suivants, seules les ressources modifiées seront à nouveau balisées avec des balises nouvellement entraînées. Cependant, même les ressources inchangées seront balisées si l’écart entre le dernier cycle de balisage et le cycle de balisage actuel du workflow de balisage dépasse 24 heures. Pour les workflows de balisage périodiques, les ressources inchangées sont balisées lorsque l’intervalle dépasse 6 mois.
+
+## Conseils et restrictions {#tips-best-practices-limitations}
+
+* L’utilisation de Smart Content Services est limitée à 2 millions d’images balisées par an. Toutes les images de duplicata qui sont traitées et balisées sont comptabilisées comme une image balisée.
