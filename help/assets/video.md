@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 96%
@@ -740,7 +740,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous a
 1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer.]**
 1. Appliquez le profil des métadonnées de publication YouTube aux dossiers dans lesquels vous allez transférer des vidéos. Vous devez avoir configuré le profil des métadonnées et le profil vidéo.
 
-   Voir [Profils de métadonnées](/help/assets/metadata-profiles.md) et [Profils vidéo](/help/assets/video-profiles.md).
+   Voir [Profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) et [Profils vidéo](/help/assets/video-profiles.md).
 
 ### Publication de vidéos sur votre chaîne YouTube   {#publishing-videos-to-your-youtube-channel}
 
