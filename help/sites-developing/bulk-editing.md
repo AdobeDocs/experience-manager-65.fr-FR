@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+source-git-commit: b08149e00c418319ebacec71c56472ad4e8e1089
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 88%
@@ -36,13 +36,14 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >* Indisponible dans l’IU classique.
 >* Indisponible pour les pages d’une live copy.
 >* Uniquement disponible pour les pages ayant le même type de ressource.
+
 >
 
 
 
 >[!NOTE]
 >
->La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/managing-multiple-assets.md) You can customize the fields in the Bulk Metadata editor for Assets using the [Schema editor](/help/assets/metadata-schemas.md).
+>La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/metadata.md) You can customize the fields in the Bulk Metadata editor for Assets using the [Schema editor](/help/assets/metadata-schemas.md).
 
 ## Activation d’un champ {#enabling-a-field}
 
@@ -56,6 +57,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
@@ -73,9 +75,10 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
 1. Navigate to the required field within the `cq:dialog` definition.
 1. Définissez la propriété suivante sur le nœud de champ :
 
-   * **Name** (Nom) : `allowBulkEdit`
-   * **Type**: `Boolean`
+   * **Nom** : `allowBulkEdit`
+   * **Type** : `Boolean`
    * **Valeur**: `true`
+
    Par exemple, pour le [composant de base](/help/sites-authoring/default-components-foundation.md) de page standard :
 
    `/libs/foundation/components/page`
