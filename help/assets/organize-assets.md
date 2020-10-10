@@ -3,7 +3,7 @@ title: Organisez vos ressources numériques.
 description: Organisez vos fichiers numériques, images, fichiers, dossiers, etc. à l’aide du Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 8%
@@ -26,7 +26,7 @@ La méthode la plus élémentaire pour organiser les fichiers consiste à les en
 
    * **Dossiers** de développement : contient des ressources numériques sur lesquelles vous travaillez actuellement.
    * **Dossiers** client : contient des ressources numériques basées sur les noms de clients ou de projets.
-   * **Dossiers** de Principal : contient des ressources numériques source d’origine.
+   * **Dossiers** Principal : contient des ressources numériques source d’origine.
    * **Dossiers** de rendu : contient des rendus et des copies des ressources numériques sources d’origine.
    * **Dossiers** Taille du fichier : contient des ressources numériques en fonction de tailles de fichier petites, moyennes ou grandes.
    * **Dossiers** intermédiaires : contient des ressources numériques prêtes à être publiées en direct sur votre site Web.
@@ -46,7 +46,7 @@ Grâce aux balises, en tant que métadonnées, vous pouvez facilement rechercher
 Pour plus d’informations, reportez-vous aux articles suivants :
 
 * [A propos des balises dans le Experience Manager](/help/sites-authoring/tags.md)
-* [Modification des métadonnées de fichier](meta-edit.md)
+* [Modification des métadonnées de fichier](metadata.md)
 * [Amélioration des balises actives dans les ressources](enhanced-smart-tags.md)
 
 ## Organiser en tant que collections {#organize-as-collections}
@@ -62,14 +62,14 @@ Add back links to blog posts by marketing?
 
 ## Organiser vos ressources pour utiliser des profils {#organize-to-use-profiles}
 
-Un profil de traitement contient des commandes [!DNL Assets] de traitement qui s’appliquent aux fichiers qui sont téléchargés vers des dossiers prédéfinis. Les Profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou des ressources fraîchement téléchargées. Vous pouvez tirer parti des profils pour mieux organiser vos ressources.
+Un profil de traitement contient des commandes [!DNL Assets] de traitement qui s’appliquent aux fichiers qui sont téléchargés vers des dossiers prédéfinis. Les profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou des ressources fraîchement téléchargées. Vous pouvez tirer parti des profils pour mieux organiser vos ressources.
 
 La normalisation de l’utilisation des métadonnées, du nommage de fichiers et de la structure des dossiers permet d’appliquer des profils de traitement aux dossiers avec plus de précision et de cohérence à mesure que votre pool de ressources numériques s’accroît.
 
 >[!MORELIKETHIS]
 >
 >* [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md).
->* [Profils de métadonnées](metadata-profiles.md).
+>* [Profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles).
 >* [Profils vidéo](video-profiles.md).
->* [profils](image-profiles.md)d&#39;image Dynamic Media.
+>* [Profils](image-profiles.md)d’image Contenu multimédia dynamique.
 
