@@ -4,7 +4,7 @@ description: Découvrez les tâches de gestion des collections de ressources, te
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: cedefb58919d7d215040e72b4cc41159161938a8
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 63%
@@ -109,7 +109,7 @@ Pour créer une collection dynamique, procédez comme suit :
 Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour rassembler les ressources. Pour cette raison, les références statiques aux ressources et dossiers ne s’appliquent pas à celles-ci.
 
 1. Dans l’interface utilisateur des [!DNL A]ressources, sélectionnez la ressource, puis cliquez sur **[!UICONTROL À la collection]** ![ajouter à la collection](assets/do-not-localize/add-to-collection.png) dans la barre d’outils.
-Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la région devient **[!UICONTROL Déposer pour Ajouter]**.
+Vous pouvez également faire glisser la ressource vers la zone **[!UICONTROL Déposer dans la collection]** de l’interface. Ajoutez les ressources lorsque le libellé de la région devient **[!UICONTROL Faire glisser pour Ajouter]**.
 
 1. Sur la page **[!UICONTROL Ajouter à la collection]**, sélectionnez la collection à laquelle vous souhaitez ajouter la ressource.
 
@@ -137,7 +137,7 @@ Les collections dynamiques sont créées en enregistrant une recherche afin que 
 1. Click **[!UICONTROL Overwrite]** to replace the original smart collection with the edited collection. Sinon, sélectionnez **[!UICONTROL Enregistrer sous]** pour enregistrer la collection modifiée séparément.
 1. In the confirmation dialog, Click **[!UICONTROL Save]** to complete the process.
 
-## Affichage et modification des métadonnées {#viewing-and-editing-collection-metadata}
+## Affichage et modification des métadonnées {#view-edit-collection-metadata}
 
 Les métadonnées de collection incluent les données sur la collection, notamment toute balise qui est ajoutée.
 
@@ -192,7 +192,7 @@ Vous pouvez modifier les paramètres d’une collection, tels que le titre et la
 1. Select a collection, and click **[!UICONTROL Settings]** in the toolbar. Vous pouvez également utiliser l’action rapide **[!UICONTROL Paramètres]** à partir de la miniature de la collection.
 1. Modify the collection settings in the **[!UICONTROL Collection Settings]** page. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
 
-1. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer]**.
+1. To save the changes, click **[!UICONTROL Save]**.
 
 ## Suppression d’une collection {#deleting-a-collection}
 
