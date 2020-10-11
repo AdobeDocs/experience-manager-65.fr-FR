@@ -3,10 +3,10 @@ title: API HTTP [ ! Ressources DNL].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 82%
+source-wordcount: '1727'
+ht-degree: 79%
 
 ---
 
@@ -170,7 +170,7 @@ Met à jour le binaire d’un fichier (rendu avec le nom original). Une mise à 
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
-Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux namespaces.
+Met à jour les propriétés de métadonnées de fichier. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux namespaces.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
@@ -307,3 +307,9 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 * 200 - OK - si le dossier a été supprimé avec succès.
 * 412 - ÉCHEC DE LA PRÉCONDITION - si la collection racine est introuvable ou inaccessible.
 * 500 - ERREUR INTERNE DU SERVEUR - si une autre erreur s’est produite.
+
+## Conseils et restrictions {#tips-best-practices-limitations}
+
+* [L’API HTTP met à jour les propriétés](#update-asset-metadata) de métadonnées dans l’ `jcr` espace de nommage. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans l’ `dc` espace de nommage.
+
+* L’API de ressources ne renvoie pas les métadonnées complètes. Dans l&#39;API, les espaces de nommage sont codés en dur et ceux-ci ne sont renvoyés que. Si vous avez besoin de métadonnées complètes, examinez le chemin d’accès au fichier `/jcr_content/metadata.json`.
