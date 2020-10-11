@@ -6,10 +6,10 @@ user-guide-title: Guide des ressources
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 50%
+source-wordcount: '586'
+ht-degree: 49%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 50%
 # Guide des ressources {#assets}
 
 + [[!DNL Assets] guide de l&#39;utilisateur](home.md)
-+ [Notes de mise à jour de Experience Manager 6.5 Assets](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Notes de mise à jour des ressources](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Recommandations relatives aux ressources](best-practices-for-assets.md)
 + Utiliser des ressources Experience Manager {#using}
-   + [Expérience de la page d&#39;accueil des ressources](assets-home-page.md)
+   + [[!DNL Assets] Expérience page d&#39;accueil](assets-home-page.md)
    + [Recherche de ressources numériques](search-assets.md)
    + [Utilisation des métadonnées de fichier](metadata.md)
    + [Ressources multilingues](multilingual-assets.md)
@@ -32,7 +32,7 @@ ht-degree: 50%
    + [Traiter les actifs](assets-workflow.md)
    + [Ajouter des zones cliquables](image-maps.md)
    + [Réutilisation de ressources à l’aide de MSM](reuse-assets-using-msm.md)
-   + [Ressources connectées avec des sites](use-assets-across-connected-assets-instances.md)
+   + [Fichiers connectés avec [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
    + [Newsletter sur Dynamic Media par Experience League](dynamic-media-newsletter.md)
    + [Configuration de Dynamic Media](administering-dynamic-media.md)
@@ -80,15 +80,15 @@ ht-degree: 50%
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les ressources {#extending}
-   + [Personnalisation et extension des ressources](extending-assets.md)
+   + [Personnaliser et étendre [!DNL Assets]](extending-assets.md)
    + [Traiter des fichiers à l’aide de gestionnaires de médias et de workflows](media-handlers.md)
    + [Étendre la fonctionnalité de recherche](searchx.md)
-   + [Installation et [!DNL ImageMagick] configuration de ressources](best-practices-for-imagemagick.md)
+   + [Installation et [!DNL ImageMagick] configuration avec lesquelles travailler [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Intégration de ressources dans le flux d’activités](extending-activity-stream.md)
    + [Étendre l’éditeur de fichiers](asseteditorx.md)
-   + [API HTTP Assets](mac-api-assets.md)
-   + [Prise en charge des fragments de contenu dans l’API HTTP Assets](assets-api-content-fragments.md)
-   + [Développement du proxy de ressources](proxy.md)
+   + [[!DNL Assets] API HTTP](mac-api-assets.md)
+   + [Prise en charge des fragments de contenu [!DNL Assets] dans l’API HTTP](assets-api-content-fragments.md)
+   + [[!DNL Assets] développement par proxy](proxy.md)
 + Administration des ressources {#administer}
    + [Formats de fichiers pris en charge](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
@@ -102,14 +102,14 @@ ht-degree: 50%
    + [Création et configuration des pages de l’éditeur de ressources](assets-finder-editor.md)
    + [Guide de dimensionnement des ressources](assets-sizing-guide.md)
    + [Meilleures pratiques de traduction des ressources](best-practices-for-translating-assets-efficiently.md)
-   + [Guide de réglage des performances des ressources](performance-tuning-guidelines.md)
-   + [Guide de migration des ressources](assets-migration-guide.md)
-   + [Considérations sur le réseau d’Assets](assets-network-considerations.md)
-   + [Ressources et MediaLibrary](medialibrary.md)
+   + [[!DNL Assets] guide de réglage des performances](performance-tuning-guidelines.md)
+   + [[!DNL Assets] guide de migration](assets-migration-guide.md)
+   + [[!DNL Assets] considérations relatives au réseau](assets-network-considerations.md)
+   + [[!DNL Assets] et MediaLibrary](medialibrary.md)
    + [Utiliser le pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert](configuring-asset-upload-restrictions.md)
-   + [Intégration Experience Manager et Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Intégrer à l&#39;InDesign Server](indesign.md)
+   + [[!DNL Experience Manager] and [!DNL Creative Cloud] intégration](aem-cc-integration-best-practices.md)
+   + [Intégrer à [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management dans les ressources](drm.md)
    + [Utiliser le package de démonstration pour les informations sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
@@ -121,13 +121,13 @@ ht-degree: 50%
    + [Multiplénitude pour les collections, les fragments et les modèles de fragments de code](multi-tenancy.md)
    + [Mettre vos fichiers en filigrane](watermarking.md)
    + [Modèles de ressources](asset-templates.md)
-   + [Recommandations relatives au partage de dossier avec le Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Recommandations relatives au partage de dossier avec [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
    + [Gérer les balises actives](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [Configuration de ressources avec le portail de marques](configure-aem-assets-with-brand-portal.md)
-   + [Publication de ressources sur Brand Portal](brand-portal-publish-assets.md)
-   + [Publication de dossiers sur Brand Portal](brand-portal-publish-folder.md)
-   + [Publication de collections sur Brand Portal](brand-portal-publish-collection.md)
+   + [ [!DNL Assets] Configuration [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publier des fichiers vers [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Publier des dossiers dans [!DNL Brand Portal]](brand-portal-publish-folder.md)
+   + [Publier des collections dans [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Fragments de contenu {#fragments}
    + [Utilisation de fragments de contenu](content-fragments/content-fragments.md)
    + [Gestion des fragments de contenu](content-fragments/content-fragments-managing.md)
@@ -148,7 +148,6 @@ ht-degree: 50%
    + [Création de projets de traduction](translation-projects.md)
    + [Préparation des ressources pour la traduction](preparing-assets-for-translation.md)
    + [Téléchargement de fichiers à partir du Experience Manager](download-assets-from-aem.md)
-   + [Tâches asynchrones](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
    + [Informations sur les ressources](touch-ui-asset-insights.md)
    + [Activation des informations sur les ressources via la gestion dynamique des balises](touch-ui-using-dtm-for-asset-insights.md)
