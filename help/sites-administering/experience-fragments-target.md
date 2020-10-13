@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 410858ee7d1b8022070445937731644724a90155
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 47%
+source-wordcount: '1233'
+ht-degree: 45%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 47%
 >6.5.3.0
 >
 >* **Les domaines** Externalizer peuvent désormais être sélectionnés.
+   >  **Remarque :** Les domaines Externalizer ne concernent que le contenu du fragment d’expérience envoyé à la Cible, et non les métadonnées telles que Contenu de l’Offre des Vues.
 >
 >
 6.5.2.0:
@@ -94,7 +95,7 @@ Plusieurs actions sont requises :
    >
    >Pour la réécriture de liens, non couverte par le format par défaut, il existe un [fournisseur de réécriture de liens des fragments d’expérience](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Cela vous permet de développer des règles personnalisées pour votre instance.
 
-## ajouter la configuration de Cloud {#add-the-cloud-configuration}
+## Ajouter la configuration de Cloud {#add-the-cloud-configuration}
 
 Avant d’exporter un fragment, vous devez ajouter la **configuration cloud** pour **Adobe Target** au fragment ou au dossier. Cela vous permet également de :
 
@@ -136,7 +137,11 @@ Vous pouvez sélectionner les options obligatoires dans les **propriétés de pa
 
    >[!CAUTION]
    >
-   >Le domaine externaliseur est facultatif. Un AEM externaliseur est configuré lorsque vous souhaitez que le contenu exporté pointe vers un domaine de *publication* spécifique. Pour plus d’informations, voir [Configuration de l’Externalisateur](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de lien AEM.
+   >Le domaine externaliseur est facultatif.
+   >
+   > Un AEM externaliseur est configuré lorsque vous souhaitez que le contenu exporté pointe vers un domaine de *publication* spécifique. Pour plus d’informations, voir [Configuration de l’Externalisateur](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)de lien AEM.
+   >
+   > Notez également que les domaines Externalizer ne concernent que le contenu du fragment d’expérience envoyé à la Cible, et non les métadonnées telles que Contenu de l’Offre de Vue.
 
    Par exemple, pour un dossier :
 
