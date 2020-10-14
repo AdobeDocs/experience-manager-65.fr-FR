@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
+source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+workflow-type: tm+mt
+source-wordcount: '2436'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +47,7 @@ Les avantages de la synchronisation des utilisateurs à l’aide de la distribut
 
 >[!NOTE]
 >
->Si des sessions sont requises, il est recommandé d’utiliser une solution SSO ou une session attractive et de demander aux clients de se connecter s’ils passent à un autre éditeur.
+>Si des sessions sont requises, il est recommandé d’utiliser une solution SSO ou une session bascule et de demander aux clients de se connecter s’ils passent à un autre éditeur.
 
 >[!CAUTION]
 >
@@ -74,7 +77,7 @@ Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et
 
 1. Vérifiez que le code le plus récent a été installé :
 
-* [Mise à jour de la plateforme AEM](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [Mise à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
 * [Mises à jour d’AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
@@ -92,7 +95,7 @@ Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et
       * select the existing configuration to open for edit (pencil icon)
 Verify `name`: **`socialpubsync`**
 
-      * sélectionnez la `Enabled` case à cocher
+      * cochez la `Enabled` case
       * select `Save`
 
 
@@ -124,6 +127,7 @@ Verify `name`: **`socialpubsync`**
 >
 >* L’utilisateur par défaut affecté est l’utilisateur **`admin`**.
 >* Ne pas utiliser `communities-user-admin user.`
+
 >
 
 
@@ -139,9 +143,9 @@ Verify `name`: **`socialpubsync`**
 * select the `+` button to add an ACL entry
 
    * **Entité de sécurité :** : *recherchez l’utilisateur créé pour la synchronisation des utilisateurs*
-   * **Type**: `Allow`
+   * **Type** : `Allow`
    * **Privilèges**: `jcr:all`
-   * **Restrictions** rep:glob : `*/activities/*`
+   * **Restrictions** rep : glob : `*/activities/*`
    * sélectionnez **OK**
 
 * sélectionnez **Enregistrer tout**
@@ -153,7 +157,7 @@ Voir également
 * [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Troubleshooting section [Modify Operation Exception During Response Processing](#modify-operation-exception-during-response-processing).
 
-### 3. Informations d’identification de transfert de distribution Apache Sling - Fournisseur secret du transfert de distribution basé sur les informations d’identification de l’utilisateur {#adobegraniteencpasswrd}
+### 3. Distribution Adobe Granite - Fournisseur secret du transport de mot de passe chiffré {#adobegraniteencpasswrd}
 
 **Configurer les autorisations**
 
@@ -165,7 +169,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
    * accédez à la [console Web](/help/sites-deploying/configuring-osgi.md)
 
       * par exemple, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * localiser `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
+   * localiser `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * select the existing configuration to open for edit (pencil icon)
 Verify `property name`: **`socialpubsync-publishUser`**
 
@@ -191,9 +195,9 @@ Verify `property name`: **`socialpubsync-publishUser`**
       * select the existing configuration to open for edit (pencil icon)
 Verify `Name`: `socialpubsync-reverse`
 
-      * sélectionnez la `Enabled` case à cocher
+      * cochez la `Enabled` case
       * select `Save`
-   * **repeat **pour chaque instance de publication
+   * **répéter **pour chaque instance de publication
 
 
 
@@ -215,7 +219,7 @@ Verify `Name`: `socialpubsync-reverse`
 
          Vérifier `agent name`: `socialpubsync-reverse`
 
-      * sélectionnez la `Enabled` case à cocher
+      * cochez la `Enabled` case
       * select `Save`
 
 
@@ -238,7 +242,7 @@ Par défaut, l’auteur interroge les modifications toutes les 30 secondes. Pou
       * sélectionnez la configuration existante à ouvrir pour modification (icône de crayon)
 
          * Vérifier `Name`: `socialpubsync-scheduled-trigger`
-      * définissez l’intervalle `Interval in Seconds` sur
+      * définir l’intervalle `Interval in Seconds` de votre choix
       * select `Save`
 
 
@@ -272,7 +276,7 @@ Verify `Name`: `socialpubsync`
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
-* **Points de fin** de l’importateur Il doit y avoir un point de fin d’importateur pour chaque éditeur. Par exemple, s’il existe 2 éditeurs, localhost:4503 et 4504, il doit y avoir 2 entrées :
+* **Points de terminaison** de l’importateur Il doit y avoir un point de terminaison d’importateur pour chaque éditeur. Par exemple, s’il existe 2 éditeurs, localhost:4503 et 4504, il doit y avoir 2 entrées :
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -333,7 +337,7 @@ Si l’identifiant Sling est identique pour plusieurs instances de modification 
 
 Pour vérifier que toutes les valeurs d’identifiant Sling diffèrent, sur chaque instance de publication :
 
-1. naviguer vers `http://<host>:<port>/system/console/status-slingsettings`
+1. accéder à `http://<host>:<port>/system/console/status-slingsettings`
 1. vérifiez la valeur de l’**identifiant Sling**
 
 ![](assets/chlimage_1-27.png)
@@ -351,7 +355,7 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
       * par exemple, sur un système Windows :
          `use windows explorer and search for *sling.id.file*`
 
-1. de l’instance de publication
+1. début de l’instance de publication
 
    * au démarrage, un nouvel identifiant Sling lui est affecté
 
@@ -368,7 +372,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 
    * par exemple, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-* localisez la variable `Apache Sling Distribution Packaging - Vault Package Builder Factory`
+* recherchez `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
    * `Builder name: socialpubsync-vlt`
 
@@ -549,7 +553,7 @@ To configure or enable user sync, go to step 1: [Apache Sling Distribution Agent
 
 Lorsqu’une instance de publication n’est plus disponible, elle ne doit pas être supprimée si elle doit être de nouveau en ligne à l’avenir. Les modifications sont mises en file d’attente pour l’éditeur et, une fois l’instance de nouveau en ligne, elles sont traitées.
 
-Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée, car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans le de l’auteur  .
+Si l’instance de publication n’est jamais remise en ligne, si elle est hors ligne de manière permanente, elle doit être supprimée car l’accumulation de files d’attente entraînera une utilisation notable de l’espace disque dans l’environnement d’auteur.
 
 Lorsqu’un éditeur est en panne, le journal de création comporte des exceptions similaires à :
 
