@@ -3,10 +3,10 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
+source-git-commit: d2bc8c7c52084a415faaf8a5b68be7dc6fc461c4
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 93%
+source-wordcount: '2224'
+ht-degree: 91%
 
 ---
 
@@ -33,8 +33,8 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]sur AMS** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]on-premise** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] sur AMS** | Pris en charge | Pris en charge | Pris en charge |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] on-premise** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
 
 ### Formats de fichiers pris en charge {#mimetypes}
 
@@ -194,3 +194,4 @@ Pour résoudre le scénario d’erreur courant, procédez comme suit :
 
 * Si vous ne pouvez pas rechercher des ressources distantes à partir de l’[!UICONTROL outil de recherche de contenu], vérifiez que les rôles et autorisations requis sont bien appliqués.
 * Une ressource récupérée à partir du DAM distant peut ne pas être publiée sur une page web pour une ou plusieurs raisons, notamment son absence sur le serveur distant, l’absence d’autorisations appropriées pour la récupérer ou une défaillance du réseau. Assurez-vous que la ressource n’est pas supprimée du DAM distant. Assurez-vous que les autorisations appropriées sont en place et que les conditions préalables sont remplies. Essayez de rajouter la ressource à la page et de la republier. Recherchez dans la [liste des tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) les erreurs de récupération de ressources.
+* Si vous ne pouvez pas accéder au déploiement DAM distant à partir du [!DNL Sites] déploiement local, assurez-vous que les cookies intersites sont autorisés. Si des cookies intersites sont bloqués, les deux déploiements de [!DNL Experience Manager] ne peuvent pas s’authentifier. Par exemple, [!DNL Google Chrome] en mode Incognito peut bloquer les cookies tiers. Dans [!DNL Chrome], cliquez sur l’icône &quot;oeil&quot; dans la barre d’adresse pour autoriser les cookies ou consultez l’aide sur la [façon d’activer les cookies](https://support.google.com/chrome/answer/95647)tiers.
