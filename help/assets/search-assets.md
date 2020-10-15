@@ -4,15 +4,15 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 421f18bef4b0dbcad74e91316eead70036c9750e
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '5955'
-ht-degree: 52%
+source-wordcount: '5968'
+ht-degree: 51%
 
 ---
 
 
-# Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Search assets in [!DNL Adobe Experience Manager] {#assets-search-in-aem}
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes réduisent le temps de mise sur le marché grâce à une expérience de recherche intelligente et transparente, grâce à des fonctionnalités prêtes à l&#39;emploi et à des méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
 
@@ -43,7 +43,7 @@ Familiarisez-vous avec l’interface de recherche et les actions disponibles.
 
 ![Comprendre l&#39;interface des résultats de la recherche des ressources du Experience Manager](assets/aem_search_results.png)
 
-*Figure : Comprendre l&#39;interface des résultats de[!DNL Experience Manager Assets]la recherche.*
+*Figure : Comprendre l&#39;interface des résultats de [!DNL Experience Manager Assets] la recherche.*
 
 **R.** Enregistrez la recherche en tant que collection dynamique. **B.** Filtres ou prédicats pour limiter les résultats de la recherche. **C.** Affiche les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omnisearch avec mot-clé de recherche fourni par l&#39;utilisateur. **G.** Sélectionnez les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés sur l&#39;ensemble des résultats de recherche. **I.** Fermer la recherche **J.** Basculer entre la vue de carte et la vue de liste.
 
@@ -178,13 +178,13 @@ Vous pouvez rechercher des fichiers en fonction des valeurs exactes de champs de
 | Hauteur de l’image | height:lowerboundupperbound |
 | Personne | person:John |
 
-The properties `path`, `limit`, `size`, and `orderby` cannot be *ORed* with any other property.
+Les propriétés `path`, `limit`, `size`et `orderby` ne peuvent pas être combinées à l’aide de `OR` l’opérateur avec une autre propriété.
 
 Le mot-clé d’une propriété générée par un utilisateur correspond au libellé de son champ dans l’éditeur de propriétés en minuscules et sans espace.
 
 Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
-* Pour afficher toutes les ressources avec plusieurs champs de facettes (par exemple : title=John Doe et creator tool=Adobe Photoshop) :  `tiltle:"John Doe" creatortool:Adobe*`
+* Pour afficher toutes les ressources avec plusieurs champs de facettes (par exemple : title=John Doe et creator tool=Adobe Photoshop) :  `title:"John Doe" creatortool:Adobe*`
 * Pour afficher toutes les ressources lorsque la valeur de la facette est une expression et non un seul mot (par exemple : le titre est Scott Reynolds) : `title:"Scott Reynolds"`
 * Pour afficher les ressources avec plusieurs valeurs d’une seule propriété (le titre est Scott Reynolds ou John Doe, par exemple) : `title:"Scott Reynolds" OR "John Doe"`
 * Pour afficher les ressources avec des valeurs de propriété commençant par une chaîne spécifique (par exemple : le titre est Scott Reynolds) : `title:Scott*`
@@ -285,6 +285,8 @@ Les performances de la fonctionnalité de recherche peuvent être limitées dans
 
 * **Indexation** : seules les métadonnées et les ressources indexées sont renvoyées dans les résultats de recherche. Pour une meilleure couverture et de meilleures performances, veillez à une indexation appropriée et suivez les bonnes pratiques. Voir [Indexation](#searchindex).
 
+* Pour exclure des ressources spécifiques des résultats de la recherche, utilisez `excludedPath` la propriété dans l’index Lucene.
+
 ## Quelques exemples illustrant la recherche {#samples}
 
 Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressources contenant exactement l’expression dans l’ordre exact spécifié par l’utilisateur.
@@ -328,7 +330,7 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 La découverte des ressources repose sur l’indexation du contenu de la gestion des actifs numériques, y compris les métadonnées. La découverte plus rapide et précise des ressources repose sur une indexation optimisée et des configurations appropriées. Voir index [de](/help/assets/performance-tuning-guidelines.md#search-indexes)recherche, requêtes de [chêne et indexation](/help/sites-deploying/queries-and-indexing.md), et [bonnes pratiques](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-Pour exclure des ressources spécifiques des résultats de la recherche, utilisez `excludedPath` la propriété de l’index Lucene.
+Pour exclure des ressources spécifiques des résultats de la recherche, utilisez `excludedPath` la propriété dans l’index Lucene.
 
 ### Recherche visuelle ou par analogie {#configvisualsearch}
 
@@ -438,7 +440,7 @@ Il est possible d’effectuer des mises à jour en masse des champs de métadonn
 
 For the assets that are available in a single folder or a collection, it is easier to [update the metadata in bulk](/help/assets/metadata.md) without using the search functionality. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est plus rapide de mettre à jour les métadonnées en masse par l’intermédiaire d’une recherche.
 
-### Collections dynamiques {#collections-1}
+### Collections dynamiques {#smart-collections}
 
 Une collection est un ensemble ordonné de ressources pouvant inclure des ressources provenant de différents emplacements, car les collections ne contiennent que des références à ces ressources. Les collections sont de deux types :
 
@@ -463,7 +465,7 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 
 >[!MORELIKETHIS]
 >
->* [Guide de mise en oeuvre de la recherche Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [[!DNL Experience Manager] guide de mise en oeuvre de la recherche](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Configuration avancée pour améliorer les résultats de recherche](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Configuration de la recherche de traduction intelligente](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 
