@@ -2,14 +2,14 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: aem 6.5 - Guide de déploiement
-breadcrumb-title: Deploying Guide
-user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
+user-guide-title: Guide de déploiement d’AEM 6.5
+breadcrumb-title: Guide de déploiement
+user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.5, y compris sur le déploiement cloud d’Adobe Managed Services.
 translation-type: tm+mt
 source-git-commit: cb07e24b01084f57ad46615cb463ad5a0329c181
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 94%
+source-wordcount: '345'
+ht-degree: 95%
 
 ---
 
