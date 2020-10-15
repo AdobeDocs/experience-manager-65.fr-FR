@@ -3,9 +3,9 @@ title: Configuration et administration de la fonctionnalité de métadonnées.
 description: Configuration et administration [!DNL Experience Manager Assets] des fonctionnalités liées à l’ajout et à la gestion de métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1953'
 ht-degree: 55%
 
 ---
@@ -109,7 +109,7 @@ Un profil de métadonnées vous permet d’appliquer des métadonnées par défa
 1. Click **[!UICONTROL Delete Metadata Profiles]** in the toolbar.
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Supprimer]** pour confirmer l’opération de suppression. Le profil de métadonnées est supprimé de la liste.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps.
+<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
 These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
@@ -269,7 +269,6 @@ Enter metadata values in the various fields and click **[!UICONTROL Save]** to s
 >[!MORELIKETHIS]
 >
 >* [Concepts et compréhension](metadata-concepts.md)des métadonnées.
->* [Modification des propriétés de métadonnées de plusieurs collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [Modification des propriétés de métadonnées de plusieurs collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
 >* [Importation et exportation des métadonnées dans les ressources](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)Experience Manager.
 >* [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md).
