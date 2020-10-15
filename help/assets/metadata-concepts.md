@@ -3,7 +3,7 @@ title: Comprendre les concepts de métadonnées
 description: Découvrez le besoin et les types de métadonnées qui facilitent la catégorisation et l’organisation des fichiers.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
 source-wordcount: '2732'
 ht-degree: 86%
@@ -120,7 +120,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * Album – [!DNL Adobe Photoshop Album].
 * CQ – utilisées par [!DNL Experience Manager Assets].
 * DAM – utilisées par [!DNL Experience Manager Assets].
-* DEX – [Optima SC Description explorer](http://www.optimasc.com/products/dex/index.html) est une collection d’outils pour la gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
+* DEX – [Optima SC Description explorer](https://www.optimasc.com/products/dex/index.html) est une collection d’outils pour la gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
 * CRS – [Adobe Photoshop Camera Raw](https://helpx.adobe.com/fr/camera-raw/using/introduction-camera-raw.html).
 * LR – [!DNL Adobe Lightroom].
 * MediaPro – [iView MediaPro](https://fr.wikipedia.org/wiki/Phase_One_Media_Pro).
