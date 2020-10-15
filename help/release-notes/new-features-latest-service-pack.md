@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
+source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2561'
 ht-degree: 6%
 
 ---
@@ -34,7 +34,7 @@ Vous pouvez désormais utiliser l’interface utilisateur pour[!DNL  Dynamic Med
 
 * Sélection de fichiers et de paramètres prédéfinis associés par le biais du sélecteur de fichiers
 
-* ajouter des URL de fichier complètes
+* Ajouter des URL de fichier complètes
 
 ### Publication sélective d’actifs vers [!DNL Experience Manager] et [!DNL Dynamic Media] {#selective-publishing}
 
@@ -77,7 +77,7 @@ Vous pouvez désormais choisir de publier ou d’annuler la publication de fichi
 ### Préremplir un formulaire adaptatif au niveau du client {#prefill-merge-data-at-client}
 
 Lorsque vous préremplissez un formulaire adaptatif, le [!DNL Experience Manager Forms] serveur fusionne les données avec un formulaire adaptatif et vous transmet le formulaire rempli. Par défaut, l’action de fusion des données a lieu sur le serveur.
-Vous pouvez désormais configurer le [!DNL Experience Manager Forms] serveur pour qu’il effectue l’action de fusion des données sur le client plutôt que sur le serveur. Il réduit considérablement le temps nécessaire pour préremplir et générer les formulaires adaptatifs.
+Vous pouvez maintenant configurer le [!DNL Experience Manager Forms] serveur pour qu’il [exécute l’action de fusion des données sur le client](../../help/forms/using/prepopulate-adaptive-form-fields.md) plutôt que sur le serveur. Il réduit considérablement le temps nécessaire pour préremplir et générer les formulaires adaptatifs.
 
 ### Intégration du modèle de données de formulaire avec les API RESTful sur un serveur avec une implémentation SSL bidirectionnelle {#fdm-integration-rest-apis-two-way-ssl}
 
@@ -87,7 +87,7 @@ Vous pouvez désormais configurer le [!DNL Experience Manager Forms] serveur pou
 
 Si un AcroForm inclut des [!DNL Adobe Sign] balises de texte, ces champs sont maintenant reconnus et représentés comme [!DNL Adobe Sign] champs dans le formulaire adaptatif converti à l’aide de [!DNL Automated Forms Conversion service]. Un signataire peut remplir ces champs lors de la signature du formulaire adaptatif.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 Vous pouvez utiliser [!DNL Automated Forms Conversion service] pour convertir des PDF forms colorés en formulaires adaptatifs.
 
@@ -97,7 +97,7 @@ Vous pouvez utiliser [!DNL Automated Forms Conversion service] pour convertir de
 
 ### Mise en cache améliorée pour les pages de formulaires adaptatifs converties {#enhanced-caching-translated-adaptive-forms}
 
-Vous pouvez désormais spécifier des paramètres régionaux en tant que sélecteur plutôt qu’en tant qu’argument URL. Il permet de mettre en cache les formulaires adaptatifs convertis sur [!DNL Experience Manager Dispatcher].
+Vous pouvez désormais spécifier un [paramètre régional en tant que sélecteur dans l’URL du formulaire adaptatif au lieu d’un argument dans l’URL](../../help/forms/using/supporting-new-language-localization.md)du formulaire adaptatif. Il permet de mettre en cache les formulaires adaptatifs convertis sur [!DNL Experience Manager Dispatcher]. La mise en cache des formulaires adaptatifs traduits n’était pas possible dans les versions précédentes. Pour plus d’informations sur la configuration de la mise en cache pour l’utilisation des paramètres régionaux en tant que sélecteur dans l’URL du formulaire adaptatif, voir [Configurer le cache de formulaire adaptatif sur le répartiteur](../../help/forms/using/configure-adaptive-forms-cache.md).
 
 ### Enregistrer la sortie du service de modèle de données de formulaire dans une variable {#save-fdm-service-to-variable}
 
@@ -105,7 +105,9 @@ Le modèle de données de formulaire vous permet d’enregistrer la sortie d’u
 
 ### Joindre plusieurs fichiers pour le composant Pièce jointe {#attach-multiple-files}
 
-Vous pouvez désormais joindre plusieurs fichiers au composant de pièce jointe  de formulaires adaptatifs.
+Vous pouvez maintenant [joindre plusieurs fichiers](../../help/forms/using/introduction-forms-authoring.md) au composant [!UICONTROL Pièce jointe] des formulaires adaptatifs.
+
+
 
 ## Principales fonctionnalités des Service Packs version 6.5 du Experience Manager précédent {#key-features-previous-service-packs}
 
@@ -236,11 +238,11 @@ Vous pouvez utiliser l’interface utilisateur de l’agent pour enregistrer un 
 
 #### [!DNL Oracle WebLogic] prise en charge du serveur d’applications (6.5.5.0) {#weblogic-support}
 
-adobe experience manager forms a ajouté la prise en charge de [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms on JEE. Vous pouvez effectuer une mise à niveau à partir d’une version précédente ou configurer un nouveau serveur Forms on JEE Experience Manager 6.5 sur [!DNL Oracle WebLogic] 12.2.1.4 et versions ultérieures. Plus tard correspond aux changements mineurs de version, où x dans 12.2.1.x est remplacé par un numéro de version.
+Adobe Experience Manager Forms a ajouté la prise en charge de [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms on JEE. Vous pouvez effectuer une mise à niveau à partir d’une version précédente ou configurer un nouveau serveur Forms on JEE Experience Manager 6.5 sur [!DNL Oracle WebLogic] 12.2.1.4 et versions ultérieures. Plus tard correspond aux changements mineurs de version, où x dans 12.2.1.x est remplacé par un numéro de version.
 
 #### Améliorations de l&#39;accessibilité (6.5.5.0) {#accessibility-improvements}
 
-adobe experience manager forms comprend les améliorations d’accessibilité suivantes :
+Adobe Experience Manager Forms comprend les améliorations d’accessibilité suivantes :
 
 * Lorsqu’un utilisateur prévisualisation un formulaire adaptatif sous la forme d’un formulaire HTML, le champ Signature  tactile conserve la cible d’action de l’onglet.
 
@@ -315,7 +317,7 @@ Entre le 04 juin 2020 et le 03 septembre 2020, Adobe a publié ce qui suit, en p
 
 * [application de bureau Experience Manager 2.0 (2.0.3.2)](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
-* [experience manager screens : Feature Pack 202008](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
+* [Experience Manager Screens : Feature Pack 202008](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
 
 >[!MORELIKETHIS]
 >
