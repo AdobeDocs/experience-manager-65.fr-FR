@@ -3,9 +3,9 @@ title: Meilleures pratiques de [!DNL Assets] surveillance du déploiement
 description: Best practices to monitor the environment and performance of your [!DNL Adobe Experience Manager] deployment after it is deployed.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1668'
 ht-degree: 68%
 
 ---
@@ -32,7 +32,7 @@ La surveillance en temps réel est conseillée lors de la phase de test des perf
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html) : Top est une commande Linux ouvrant un tableau de bord qui affiche des statistiques d’utilisation, notamment sur le processeur, la mémoire et les E/S. Vous obtenez ainsi une vue d’ensemble de ce qui se produit sur une instance.
 * [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop can be installed on most Linux systems using `yum install htop` or `apt-get install htop`.
 
-* [Iotop](https://guichaz.free.fr/iotop/) : Iotop fournit un tableau de bord détaillé sur l’utilisation des disques en lecture/écriture. Il fournit des informations détaillées sur les processus qui utilisent les E/S sur les disques ainsi que le volume utilisé. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
+* Iotop : Iotop fournit un tableau de bord détaillé sur l’utilisation des disques en lecture/écriture. Il fournit des informations détaillées sur les processus qui utilisent les E/S sur les disques ainsi que le volume utilisé. Iotop can be installed on most Linux systems using `yum install iotop` or `apt-get install iotop`.
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation des ports ethernet et réseau. Iftop affiche des statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop can be installed on most Linux systems using `yum install iftop` or `apt-get install iftop`.
 
