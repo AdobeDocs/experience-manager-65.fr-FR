@@ -3,10 +3,10 @@ title: Télécharger des ressources
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 77%
+source-wordcount: '866'
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ Pour télécharger des fichiers, procédez comme suit :
 
    ![Options disponibles lors du téléchargement de ressources à partir d’Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
-   *Figure : Options de la boîte de dialogue Télécharger.*
+   *Figure : Options disponibles dans la boîte de dialogue de téléchargement.*
 
 1. Dans la boîte de dialogue Télécharger, sélectionnez les options de téléchargement de votre choix.
 
@@ -73,6 +73,7 @@ Le `Asset Download Servlet` peut être désactivé sur une instance  Publish en
 
 >[!MORELIKETHIS]
 >
+>* [Téléchargement de fichiers à l’aide du portail de marque](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Téléchargement de ressources protégées par DRM](drm.md).
 >* [Téléchargez des fichiers à l’aide d’une application de bureau Experience Manager sur un ordinateur de bureau](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)Windows ou Mac.
 >* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html).
