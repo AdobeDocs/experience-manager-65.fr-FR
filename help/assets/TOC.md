@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Guide des ressources
-breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+user-guide-title: Guide d’Assets
+breadcrumb-title: Guide d’Assets
+user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
 source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 49%
+source-wordcount: '595'
+ht-degree: 51%
 
 ---
 
 
-# Guide des ressources {#assets}
+# Guide d’Assets {#assets}
 
 + [[!DNL Assets] guide de l&#39;utilisateur](home.md)
 + [[!DNL Experience Manager] 6.5 Notes de mise à jour des ressources](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
