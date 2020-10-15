@@ -1,18 +1,18 @@
 ---
 title: Notes de mise à jour de Adobe Experience Manager 6.5
-description: Les Notes de mise à jour AEM couvrent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus.
+description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 translation-type: tm+mt
 source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 25%
+ht-degree: 45%
 
 ---
 
 
 # Notes de mise à jour de Adobe Experience Manager 6.5
 
-Les Notes de mise à jour AEM couvrent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et supprimées et les problèmes connus.
+Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 
 ## Principaux articles AEM
 
