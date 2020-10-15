@@ -3,10 +3,10 @@ title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Ex
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '2436'
-ht-degree: 57%
+source-wordcount: '2423'
+ht-degree: 56%
 
 ---
 
@@ -49,7 +49,7 @@ Pour modifier les métadonnées d’un fichier dans [!DNL Assets] l’interface 
 
    ![Sélectionner les propriétés d’un fichier pour vue ses métadonnées](assets/asset-metadata.png)
 
-   *Figure : Modifiez ou ajoutez des métadonnées sur la page[!UICONTROL Propriétés]du fichier.*
+   *Figure : Modifiez ou ajoutez des métadonnées sur la page [!UICONTROL Propriétés] du fichier.*
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
@@ -68,7 +68,7 @@ XMP write-back is supported and enabled for the platforms and file formats descr
 * Remplacer les propriétés de métadonnées par une valeur commune
 * Ajouter ou modifier des balises
 
-Pour personnaliser la page des propriétés de métadonnées, y compris l’ajout, la modification et la suppression de propriétés de métadonnées, utilisez l’éditeur de schéma.
+To customize the metadata properties page, including adding, modifying, deleting metadata properties, use the [schema editor](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
-### Application de profils de métadonnées à des dossiers à partir de l’interface utilisateur des profils {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Apply metadata profiles to folders from [!UICONTROL Profiles] user interface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Pour appliquer un profil de métadonnées, procédez comme suit :
 
@@ -196,7 +196,7 @@ Pour appliquer un profil de métadonnées, procédez comme suit :
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
-### Application de profils de métadonnées aux dossiers à partir des propriétés {#applying-metadata-profiles-to-folders-from-properties}
+### Apply metadata profiles to folders from [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. In the left rail, click **[!UICONTROL Assets]** then navigate to the folder that you want to apply a metadata profile to.
 1. On the folder, click the check mark to select it and then click **[!UICONTROL Properties]**.
@@ -205,9 +205,11 @@ Pour appliquer un profil de métadonnées, procédez comme suit :
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+
 ### Apply metadata profile globally {#metadata-profile-global}
 
-Pour plus d’informations, voir [Configuration pour appliquer le profil de métadonnées globalement](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### Remove a metadata profile from folders {#removing-a-metadata-profile-from-folders}
 
