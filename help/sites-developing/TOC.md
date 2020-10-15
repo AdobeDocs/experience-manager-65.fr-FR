@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: aem 6.5 Élaboration du Guide de l’utilisateur
-breadcrumb-title: Developing Guide
-user-guide-description: This guide covers how to build out your AEM instance.
+user-guide-title: Guide de l’utilisateur pour le développement d’AEM 6.5
+breadcrumb-title: Guide de développement
+user-guide-description: Ce guide explique comment créer votre instance AEM.
 translation-type: tm+mt
 source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 79%
+source-wordcount: '835'
+ht-degree: 80%
 
 ---
 
 
-# AEM 6.5 Developing User Guide {#developing}
+# Guide de l’utilisateur pour le développement d’AEM 6.5 {#developing}
 
 + [Présentation du guide de développement d’utilisateur](home.md)
 + Présentation pour les développeurs{#introduction}
@@ -102,21 +102,21 @@ ht-degree: 79%
    + [Sans tête et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md) 
    + des applications sur une seule page ;{#spas}
-      + [Présentation et présentation des applications monopages](spa-walkthrough.md)
-      + [Didacticiel sur le WKND SPA](spa-wknd.md)
-      + [Prise en main des applications monopages dans AEM - Réagir](spa-getting-started-react.md)
-      + [Prise en main des applications monopages en AEM - Angular](spa-getting-started-angular.md)
-      + [Mise en oeuvre d’un composant de réaction pour l’application d’une seule page](spa-implementing-react-component.md)
+      + [SPA Introduction et présentation](spa-walkthrough.md)
+      + [Didacticiel sur SPA WKND](spa-wknd.md)
+      + [Prise en main des SPA dans AEM - Réagir](spa-getting-started-react.md)
+      + [Prise en main des SPA en AEM - Angular](spa-getting-started-angular.md)
+      + [Mise en oeuvre d’un composant de réaction pour SPA](spa-implementing-react-component.md)
       + [SPA Deep Dives](spa-deep-dives.md)
       + [Aperçu de l’éditeur d’application d’une seule page](spa-overview.md)
-      + [Développement d’applications monopages pour AEM](spa-architecture.md)
+      + [Développement de SPA pour l&#39;AEM](spa-architecture.md)
       + [Plan directeur d’applications sur une seule page (SPA)](spa-blueprint.md)
       + [Composant de page SPA](spa-page-component.md)
-      + [Mappage Modèle dynamique/Composant pour les applications monopages](spa-dynamic-model-to-component-mapping.md)
-      + [Routage de modèle SPA](spa-routing.md)
+      + [Mappage entre le modèle dynamique et le composant pour SPA](spa-dynamic-model-to-component-mapping.md)
+      + [routage de modèle SPA](spa-routing.md)
       + [Intégration SPA et Adobe Experience Platform Launch](spa-launch.md)
-      + [SPA et rendu côté serveur](spa-ssr.md)
-      + [Documents de référence SPA](spa-reference-materials.md)
+      + [Rendu SPA et côté serveur](spa-ssr.md)
+      + [SPA Documents de référence](spa-reference-materials.md)
    + [API HTTP](/help/assets/mac-api-assets.md)
    + [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
    + [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
@@ -169,7 +169,7 @@ ht-degree: 79%
    + [Extension du Multi Site Manager](extending-msm.md)
    + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
-      + [ajouter le suivi des Adobe Analytics aux composants](extending-analytics-components.md)
+      + [Ajouter le suivi des Adobe Analytics aux composants](extending-analytics-components.md)
       + [Personnalisation du cadre Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
