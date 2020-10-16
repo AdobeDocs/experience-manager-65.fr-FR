@@ -1,11 +1,11 @@
 ---
-title: '[ !DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes du Service Pack.'
+title: '[!DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes du Service Pack'
 description: Notes de mise à jour des Service Packs de [!DNL Adobe Experience Manager] la version 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: 263a25b70fe4a3e7de65b47f07932d2e5f3d0197
 workflow-type: tm+mt
-source-wordcount: '11487'
+source-wordcount: '11483'
 ht-degree: 26%
 
 ---
@@ -693,7 +693,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * Une exception s’affiche lors de l’interrogation [!DNL Experience Manager] des détails d’une tâche d’une ressource (CQ-4283569).
 
-### Sites {#sites}
+### Sites
 
 * Si l’héritage de LiveCopy est rompu, les pages de copie dynamique affichent des liens de copie de langue au lieu de liens LiveCopy (NPR-30980).
 * Pour un nouveau plan directeur, si le nombre d&#39;enregistrements est supérieur à 40, seuls les 40 premiers enregistrements sont affichés. Le plan directeur affiche des lignes vierges pour le reste des enregistrements (NPR-31182).
@@ -725,7 +725,7 @@ Remove one mention of this fix.
 
 * Deux fenêtres contextuelles de calendrier s’affichent lorsque vous sélectionnez l’option Échéance dans une tâche de traduction (NPR-31270).
 
-### Plate-forme {#platform}
+### Plate-forme
 
 * L&#39;option de type Mime dans la console Web ne fonctionne pas (NPR-31108).
 
@@ -745,7 +745,7 @@ Remove one mention of this fix.
 
 * Le `org.apache.sling.distribution.api` lot est masqué dans le gestionnaire de configuration et n’est donc pas disponible pour les lots personnalisés (NPR-31720).
 
-### Projets {#projects}
+### Projets
 
 * La permutation des vues de calendrier ne fonctionne pas (NPR-31271).
 
@@ -854,7 +854,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Une correction a été apportée pour assurer que la vue en colonne de l’interface utilisateur Asset affiche uniquement le contenu spécifique au client.
 * Une correction a été apportée pour permettre aux modifications d’accordéon de style de se refléter dans les résultats de la recherche.
 
-### Ressources {#assets}
+### Ressources
 
 **Améliorations apportées au produit**
 
@@ -961,7 +961,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 
 * L’instance mise à niveau de 6.3.3.2 vers 6.5 entraîne la duplication des configurations OSGi. NPR-30130 : correctif pour CQ-4274016
 
-### Intégration {#integration}
+### Intégration
 
 * Le contenu personnalisé ne s’affiche pas correctement sur l’instance de publication tant que l’instance n’a pas été redémarrée. NPR-30377 : correctif pour CQ-4273706
 * Lors de la configuration de Launch sur un site web, l’adresse de la bibliothèque comporte une barre oblique (/) pré-activée, ce qui entraîne une intervention manuelle à chaque fois. NPR-30694 : correctif pour CQ-4275501
@@ -976,7 +976,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Added &#39;Auto&#39; setting to `RenderAtClient` in `PDFFormRenderOptions` API for [!DNL Experience Manager] Forms OSGi.
 
-#### Package de modules complémentaires Forms {#forms-add-on-package}
+#### Package de modules complémentaires Forms
 
 **Intégration dorsale**
 
@@ -1006,7 +1006,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 * Lors de l’utilisation de l’option Accès aux ordinateurs de bureau non visuels en mode Navigation pour lire un formulaire HTML5, le navigateur Chrome affiche &quot;graphic&quot; avant chaque graphique vectoriel évolutif (SVG) dans la conception du formulaire. NPR-30449 : correctif pour CQ-4274732
 
-#### Programme d’installation de Forms JEE {#forms-jee-installer}
+#### Programme d’installation de Forms JEE
 
 **Forms - Document Security**
 
@@ -1021,7 +1021,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 * Le service HTMLtoPDF n’affiche pas maxReuseCount dans la console JMX. NPR-30134, NPR-30304 : correctif pour CQ-4273763
 * Adding or editing a Web Service connection by invoking web services from [!DNL Experience Manager Forms] Workbench throws an error: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105 : correctif pour CQ-4273217
 
-### Packs de fonctionnalités inclus {#feature-packs-included}
+### Packs de fonctionnalités inclus
 
 >[!NOTE]
 >
