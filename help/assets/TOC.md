@@ -6,9 +6,9 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
-source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 51%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 51%
    + [ [!DNL Adobe Stock] Utilisation des ressources dans les ressources](aem-assets-adobe-stock.md)
    + [Prévisualisation de fichiers 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
+   + [Balises intelligentes améliorées](enhanced-smart-tags.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
    + [Traiter les actifs](assets-workflow.md)
    + [Ajouter des zones cliquables](image-maps.md)
@@ -93,11 +94,12 @@ ht-degree: 51%
    + [Formats de fichiers pris en charge](assets-formats.md)
    + [Facettes de recherche](search-facets.md)
    + [Comprendre les concepts de métadonnées](metadata-concepts.md)
-   + [Configuration de la fonctionnalité de métadonnées](metadata-config.md)
+   + [Configurer la fonctionnalité de métadonnées](metadata-config.md)
+   + [Schémas de métadonnées](metadata-schemas.md)
    + [Écriture différée XMP sur les rendus](xmp-writeback.md)
    + [Partage des liens des ressources](link-sharing.md)
    + [Rapports de ressources](asset-reports.md)
-   + [Balises intelligentes améliorées](enhanced-smart-tags.md)
+   + [Configuration de Smart Content Service pour le balisage](config-smart-tagging.md)
    + [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md)
    + [Création et configuration des pages de l’éditeur de ressources](assets-finder-editor.md)
    + [Guide de dimensionnement des ressources](assets-sizing-guide.md)
@@ -117,12 +119,10 @@ ht-degree: 51%
    + [Prise en charge de Camera Raw](camera-raw.md)
    + [Détecter le type MIME de fichiers à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Bibliothèque de transcodage des images](imaging-transcoding-library.md)
-   + [Schémas de métadonnées](metadata-schemas.md)
    + [Multiplénitude pour les collections, les fragments et les modèles de fragments de code](multi-tenancy.md)
    + [Mettre vos fichiers en filigrane](watermarking.md)
    + [Modèles de ressources](asset-templates.md)
    + [Recommandations relatives au partage de dossier avec [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-   + [Gérer les balises actives](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [ [!DNL Assets] Configuration [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publier des fichiers vers [!DNL Brand Portal]](brand-portal-publish-assets.md)
@@ -141,7 +141,6 @@ ht-degree: 51%
 + Manage Assets {#managing}
    + [Gestion des éléments numériques](managing-assets-touch-ui.md)
    + [Gestion des collections](managing-collections-touch-ui.md)
-   + [Configuration du balisage à l’aide de Smart Content Service](config-smart-tagging.md)
    + [Activation de la détection de doublons](duplicate-detection.md)
    + [Organisation des ressources numériques](organize-assets.md)
    + [Gestion des ressources vidéo](managing-video-assets.md)
@@ -158,5 +157,4 @@ ht-degree: 51%
    + [Gestion des ressources composites](managing-linked-subassets.md)
    + [Ressources liées](related-assets.md)
    + [Partage de dossiers privés](private-folder.md)
-   + [Instructions de formation relatives à Smart Content Service](smart-tags-training-guidelines.md)
    + [Rendus vidéo](video-renditions.md)
