@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 51%
@@ -358,7 +358,7 @@ La recherche visuelle utilise un balisage intelligent et requiert la version [!D
 1. Dans CRXDE, dans le `/oak-index/damAssetLucene` noeud, définissez la `reindex` propriété sur `true`. Enregistrez les modifications.
 1. (Facultatif) Si vous avez personnalisé le formulaire de recherche, copiez le `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` noeud dans `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
 
-Pour plus d’informations, voir [Comprendre les balises actives en Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) et [comment gérer les balises](/help/assets/managing-smart-tags.md)actives.
+Pour plus d’informations, voir [Comprendre les balises actives en Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) et [comment gérer les balises](/help/assets/enhanced-smart-tags.md)actives.
 
 >[!CAUTION]
 >
