@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: ee2b13f2fc1f044f119ff54f332844d458663287
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 54%
+source-wordcount: '1802'
+ht-degree: 46%
 
 ---
 
@@ -35,7 +35,7 @@ L’intégration des données prend en charge OAuth2.0, l’authentification de 
 
 Vous pouvez configurer des bases de données relationnelles à l’aide de la configuration de la console Web AEM. Procédez comme suit :
 
-1. Accédez à la console Web AEM à l’adresse https://server:host/system/console/configMgr.
+1. Accédez à AEM console Web à l’adresse https://server:host/system/console/configMgr.
 1. Recherchez la configuration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Appuyez pour ouvrir la configuration en mode édition.
 1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, tels que :
 
@@ -44,6 +44,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    * Nom de classe Java pour le pilote JDBC
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion avec le pilote JDBC
+
    >[!NOTE]
    >
    >Veillez à chiffrer les informations sensibles telles que les mots de passe avant de configurer la source de données. Pour chiffrer :
@@ -51,7 +52,8 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >    
    >    
    >    1. Go to https://&#39;[server]:[port]&#39;/system/console/crypto.
-   >    1. Dans le champ **[!UICONTROL Texte brut]**, spécifiez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
+   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
+
    >    
    >    
    >    
@@ -79,6 +81,7 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE]
    >
    >The ***** in the above example denotes all nodes under the `profile/empLocation/` node in AEM user profile in CRXDE structure. It means that the form data model can access the `city` property of type `string` present in any node under the `profile/empLocation/` node. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
@@ -109,7 +112,7 @@ Pour configurer le dossier pour les configurations de service cloud :
 
 ## Configurer les services Web RESTful {#configure-restful-web-services}
 
-RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Pour configurer le service Web RESTful en AEM cloud services, veillez à disposer du fichier Swagger sur votre système de fichiers ou de l’URL d’hébergement du fichier.
+RESTful web service can be described using [Swagger specifications](https://swagger.io/specification/) in JSON or YAML format in a Swagger definition file. Pour configurer le service Web RESTful dans les services cloud AEM, veillez à disposer du fichier Swagger sur votre système de fichiers ou de l’URL d’hébergement du fichier.
 
 Procédez comme suit pour configurer les services RESTful :
 
@@ -127,8 +130,11 @@ Procédez comme suit pour configurer les services RESTful :
       * Hôte : Nom de domaine ou adresse IP de l’hôte qui diffuse l’API REST. Ce champ est obligatoire.
       * Chemin d’accès de base : Préfixe d’URL pour tous les chemins d’API. Ce champ est facultatif.\
          Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
-   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base, Clé d’API ou Authentification personnalisée — pour accéder au service RESTful et, par conséquent, fournir des détails pour l’authentification.
+   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base, Clé d’API, Authentification personnalisée ou Authentification mutuelle — pour accéder au service RESTful et, en conséquence, fournir des détails pour l’authentification.
+
    Si vous sélectionnez Clé **** d&#39;API comme type d&#39;authentification, spécifiez la valeur de la clé d&#39;API. La clé d&#39;API peut être envoyée en tant qu&#39;en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ Nom **[!UICONTROL du]** paramètre en conséquence.
+
+   Si vous sélectionnez l’authentification **** mutuelle comme type d’authentification, voir Authentification mutuelle basée sur des [certificats pour les services](#mutual-authentication)Web RESTful et SOAP.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
@@ -145,10 +151,12 @@ Les services Web basés sur SOAP sont décrits à l’aide des [spécifications 
 
    * URL WSDL pour le service Web.
    * Point de fin du service. Spécifiez une valeur dans ce champ pour remplacer le point de terminaison de service mentionné dans WSDL.
-   * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base, Authentification personnalisée ou Jeton X509 — pour accéder au service SOAP et, par conséquent, fournir les détails de l’authentification.
+   * Sélectionnez le type d’authentification : Aucun, OAuth2.0, Authentification de base, Authentification personnalisée, Jeton X509 ou Authentification mutuelle, pour accéder au service SOAP et, par conséquent, fournir les détails de l’authentification.
 
-      Si vous sélectionnez Jeton X509 comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configuration des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+      Si vous sélectionnez Jeton **** X509 comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configuration des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Spécifiez l’alias KeyStore pour le certificat X509 dans le champ **[!UICONTROL Key Alias]** (Alias de clé). Spécifiez la durée, en secondes, jusqu’à ce que la demande d’authentification reste valide, dans le champ **[!UICONTROL Durée de vie]** . Vous pouvez également choisir de signer le corps du message ou l’en-tête d’horodatage ou les deux.
+
+      Si vous sélectionnez l’authentification **** mutuelle comme type d’authentification, voir Authentification mutuelle basée sur des [certificats pour les services](#mutual-authentication)Web RESTful et SOAP.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service Web SOAP.
 
@@ -168,10 +176,24 @@ Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365
 
    * URL racine du service pour le service OData à configurer.
    * Sélectionnez le type d’authentification — Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée — pour accéder au service OData et, par conséquent, fournir les détails de l’authentification.
+
    >[!NOTE]
    Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services Microsoft Dynamics à l’aide du point de terminaison OData en tant que racine du service.
 
 1. Tap **Create** to create the cloud configuration for the OData service.
+
+## Authentification mutuelle basée sur des certificats pour les services Web RESTful et SOAP {#mutual-authentication}
+
+Lorsque vous activez l’authentification mutuelle pour le modèle de données de formulaire, la source de données et AEM serveur exécutant le modèle de données de formulaire authentifient l’identité de chacun avant de partager des données. Vous pouvez utiliser l’authentification mutuelle pour les connexions REST et SOAP (sources de données). Pour configurer l’authentification mutuelle pour un modèle de données de formulaire sur votre environnement AEM Forms :
+
+1. Téléchargez la clé privée (certificat) sur [!DNL AEM Forms] le serveur. Pour télécharger la clé privée :
+   1. Connectez-vous à votre [!DNL AEM Forms] serveur en tant qu’administrateur.
+   1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Sélectionnez l’ `fd-cloudservice` utilisateur et appuyez sur **[!UICONTROL Propriétés]**.
+   1. Ouvrez l&#39;onglet **[!UICONTROL Keystore]** , développez l&#39;option **[!UICONTROL Ajouter la clé privée à partir du fichier]** KeyStore, téléchargez le fichier KeyStore, spécifiez les alias, mots de passe et appuyez sur **[!UICONTROL Envoyer]**. Le certificat est téléchargé.  L’alias de clé privée est mentionné dans le certificat et défini lors de la création du certificat.
+1. Téléchargez le certificat d’approbation vers le Trust Store global. Pour télécharger le certificat :
+   1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Trust Store]**.
+   1. Développez l’option **[!UICONTROL Ajouter le certificat à partir du fichier]** CER, appuyez sur **[!UICONTROL Sélectionner un fichier]** de certificat, téléchargez le certificat et appuyez sur **[!UICONTROL Envoyer]**.
+1. Configurez les services Web [SOAP](#configure-soap-web-services) ou [RESTful](#configure-restful-web-services) comme source de données et sélectionnez l’authentification **** mutuelle comme type d’authentification. Si vous configurez plusieurs certificats auto-signés pour `fd-cloudservice` l’utilisateur, spécifiez le nom de l’alias de clé pour le certificat.
 
 ## Étapes suivantes {#next-steps}
 
