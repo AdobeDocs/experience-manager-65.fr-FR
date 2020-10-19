@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 55f6517073ace72d468bb70853b745c2980b11f2
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 100%
+source-wordcount: '761'
+ht-degree: 94%
 
 ---
 
@@ -57,9 +57,8 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
 ## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media Classic ?{#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-Pour basculer vers le HTTP/2, vous devez en faire la demande auprès de l’assistance technique Adobe, car cette procédure n’est pas automatique.`s7support@adobe.com`
-
-1. Indiquez les informations suivantes dans votre demande de support :
+1. Vous devez [utiliser le Admin Console pour créer un dossier](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de support et demander à passer à HTTP/2 ; ce n&#39;est pas automatiquement fait pour vous.
+1. Fournissez les informations suivantes dans votre dossier de support :
 
    * Nom, adresse électronique et numéro de téléphone du contact principal.
    * Tous les domaines pour lesquels activer HTTP/2. C’est-à-dire, `images.company.com` ou `mycompany.scene7.com`.
