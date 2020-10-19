@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
 workflow-type: tm+mt
-source-wordcount: '1720'
-ht-degree: 99%
+source-wordcount: '1730'
+ht-degree: 98%
 
 ---
 
@@ -96,7 +96,7 @@ Non. L’imagerie dynamique fonctionne parfaitement avec vos paramètres d’ima
 
 Voir également [Suis-je autorisé à utiliser l’imagerie dynamique ?](#am-i-eligible-to-use-smart-imaging) pour connaître les conditions préalables requises pour l’imagerie dynamique.
 
-## Smart Imaging fonctionne-t-il avec HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
+## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
 
 L’imagerie dynamique fonctionne avec les images diffusées sur HTTP ou HTTPS. Elle fonctionne également sur HTTP/2.
 
@@ -117,8 +117,8 @@ Votre premier domaine personnalisé n’entraîne aucun coût supplémentaire av
 
 Vous devez envoyer la demande d’utilisation de l’imagerie dynamique ; elle n’est pas activée automatiquement.
 
-1. Envoyez une demande de support technique (à l’adresse : `s7support@adobe.com`). 
-1. Indiquez les informations suivantes dans votre demande de support :
+1. [Utilisez le Admin Console pour créer un dossier de support.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Fournissez les informations suivantes dans votre dossier de support :
 
    1. nom, adresse électronique et numéro de téléphone du contact principal.
    1. Tous les domaines à activer pour l’imagerie dynamique (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`).
