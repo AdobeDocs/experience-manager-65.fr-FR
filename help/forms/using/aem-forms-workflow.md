@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 149e505eb4dac0d9a56c53036ce1c6b8d16ad0f1
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 85%
@@ -136,7 +136,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 >
 >Vous devez être membre du groupe administrateur-fd pour être en mesure de créer et de gérer les demandes de processus.
 
-1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
+1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** and taps **[!UICONTROL Create]**.
 1. In the Create Workflow Application window, provide inputs for the following fields, and taps **Create**. Une nouvelle demande est créée et est répertoriée dans l’écran Demandes de processus.
 
 <table>
@@ -218,7 +218,7 @@ Vous pouvez configurer la synchronisation, l’envoi et le déclenchement d’un
 
 Un administrateur (un membre du groupe administrateur-fd) peut configurer un dossier réseau pour exécuter un processus préconfiguré lorsqu’un utilisateur y place un fichier (tel qu’un fichier PDF). Une fois que le processus est terminé, vous pouvez enregistrer le fichier de sortie dans un dossier de sortie spécifié. Un tel fichier est appelé [Dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md). Effectuez la procédure suivante pour configurer un dossier de contrôle afin de lancer un processus :
 
-1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) **>**[!UICONTROL  Forms ]**> Configure Watched Folder.** Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**.  Une liste de dossiers de contrôle déjà configurés s’affiche.
 1. Appuyez sur **[!UICONTROL Nouveau]**. Une liste des champs s’affiche. Spécifiez une valeur pour les champs suivants afin de configurer un dossier de contrôle pour un processus :
 
 <table>
