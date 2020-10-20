@@ -4,9 +4,9 @@ description: Suggestions et conseils [!DNL Experience Manager] sur la configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2743'
 ht-degree: 54%
 
 ---
@@ -53,7 +53,7 @@ Once the high performance temporary volume is ready, set the JVM parameter `-Dja
 
 ### Version Java {#java-version}
 
-adobe recommande le déploiement [!DNL Experience Manager Assets] sur Java 8 pour des performances optimales.
+Adobe recommande le déploiement [!DNL Experience Manager Assets] sur Java 8 pour des performances optimales.
 
 <!-- TBD: Link to the latest official word around Java.
 -->
@@ -205,7 +205,7 @@ En outre, définissez le chemin du dossier temporaire d’ImageMagick dans le fi
 
 >[!CAUTION]
 >
->Une configuration incorrecte peut rendre votre serveur instable si ImageMagick utilise tout l’espace disque disponible. The policy changes required to process large files using ImageMagick may impact the [!DNLExperience Manager] performance. Pour plus d’informations, voir [Installation et configuration d’ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+>Une configuration incorrecte peut rendre votre serveur instable si ImageMagick utilise tout l’espace disque disponible. The policy changes required to process large files using ImageMagick may impact the [!DNL Experience Manager] performance. Pour plus d’informations, voir [Installation et configuration d’ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 >[!NOTE]
 >
@@ -251,8 +251,8 @@ Some optimizations can be done on the Oak index configurations that can help imp
 
 1. Open CRXDe `/crx/de/index.jsp` and log in as an administrative user.
 1. Accédez à `/oak:index/lucene`.
-1. ajoutez une `String[]` propriété `excludedPaths` avec des valeurs `/var`, `/etc/workflow/instances`et `/etc/replication`.
-1. Accédez à `/oak:index/damAssetLucene`. ajoutez une `String[]` propriété `includedPaths` avec une valeur `/content/dam`. Enregistrez les modifications.
+1. Ajoutez une `String[]` propriété `excludedPaths` avec des valeurs `/var`, `/etc/workflow/instances`et `/etc/replication`.
+1. Accédez à `/oak:index/damAssetLucene`. Ajoutez une `String[]` propriété `includedPaths` avec une valeur `/content/dam`. Enregistrez les modifications.
 
 Si vos utilisateurs n’ont pas besoin de rechercher des ressources en texte intégral, par exemple, en recherchant du texte dans des documents PDF, désactivez-le. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l’extraction [!DNL Apache Lucene] de texte, procédez comme suit :
 
