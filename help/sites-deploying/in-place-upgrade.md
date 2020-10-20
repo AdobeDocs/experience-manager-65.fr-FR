@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1275'
 ht-degree: 80%
 
 ---
@@ -175,6 +175,10 @@ Where `/path/to/datastore` represents the path to your File Datastore.
 ### Détermination de la commande de démarrage de mise à niveau appropriée {#determining-the-correct-upgrade-start-command}
 
 Pour effectuer la mise à niveau, il est important de démarrer AEM à l’aide du fichier JAR pour activer l’instance. For upgrading to 6.5, please also see other content restructuring and migration options in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) that you can choose with the upgrade command.
+
+>[!IMPORTANT]
+>
+>Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM. Pour plus d’informations, voir Considérations [relatives à](/help/sites-deploying/custom-standalone-install.md#java-considerations)Java 11.
 
 Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clients démarrent AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage de manière à inclure des commutateurs pour les configurations d’environnement, comme les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, il est recommandé de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
 
