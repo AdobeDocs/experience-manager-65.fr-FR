@@ -1,12 +1,12 @@
 ---
-title: Notes de mise à jour de [ !DNL Adobe Experience Manager] 6.5 Service Pack.
+title: '[!DNL Adobe Experience Manager] 6.5 Notes de mise à jour du Service Pack'
 description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 6.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
+source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
 workflow-type: tm+mt
-source-wordcount: '4518'
+source-wordcount: '4530'
 ht-degree: 7%
 
 ---
@@ -39,15 +39,15 @@ Les principales fonctionnalités et améliorations introduites dans Adobe Experi
 
 * Les options par défaut pour `test` et `aiprocess` sont mises à jour vers `Thumbnail`, depuis `Rasterize` précédemment dans Contenu multimédia dynamique, afin de garantir que les utilisateurs doivent créer uniquement des vignettes et ignorer l’extraction de page et l’extraction de mot-clé.
 
-* Préremplissez un formulaire adaptatif sur le client.
+* [Préremplissez un formulaire adaptatif sur le client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
-* Intégration du modèle de données de formulaire avec les API RESTful sur un serveur avec une implémentation SSL bidirectionnelle.
+* [Intégration du modèle de données de formulaire avec les API RESTful sur un serveur avec une implémentation](../../help/forms/using/configure-data-sources.md)SSL bidirectionnelle.
 
-* Mise en cache améliorée pour les pages de formulaires adaptatifs converties.
+* [Amélioration de la mise en cache des pages](../../help/forms/using/configure-adaptive-forms-cache.md)de formulaires adaptatifs converties.
 
-* Prise en charge des balises de texte Adobe Sign dans le service de conversion Forms automatisé.
+* Prise en charge des balises de texte [Adobe Sign dans le service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html)de conversion automatisée Forms.
 
-* Support to convert colored forms to adaptive forms using [!DNL Automated Forms Conversion service].
+* Prise en charge de la [conversion des formulaires colorés en formulaires](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) adaptatifs à l’aide de [!DNL Automated Forms Conversion service].
 
 * Prise en charge des protocoles SMB 2 et SMB 3.
 
@@ -152,13 +152,13 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
    ![Menu Aide de l’en-tête](assets/Help_aem_header.png)
 
-   *Figure :[!UICONTROL Recherchez Aide]dans le menu[!UICONTROL Aide].*
+   *Figure : [!UICONTROL Recherchez Aide] dans le menu [!UICONTROL Aide] .*
 
    * Le message d’erreur si une valeur incorrecte est saisie dans le champ [!UICONTROL Faire passer l’identité comme] sous l’option [!UICONTROL Utilisateur] et que le focus se déplace correctement vers le champ de texte (NPR-33804).
 
    ![Menu Utilisateur dans l’en-tête](assets/User_aem_header.png)
 
-   *Figure :[!UICONTROL Faire l’emprunt d’identité comme]champ dans le menu[!UICONTROL Utilisateur]de l’en-tête.*
+   *Figure : [!UICONTROL Faire l’emprunt d’identité comme] champ dans le menu [!UICONTROL Utilisateur] de l’en-tête.*
 
 * L’utilisateur peut désormais modifier la cible d’action à l’aide du clavier dans :
 
@@ -383,7 +383,7 @@ Pour plus d&#39;informations sur les mises à jour de sécurité, consultez la p
 
 >[!NOTE]
 >
->adobe ne recommande pas de supprimer ou de désinstaller le package Adobe Experience Manager 6.5.6.0.
+>Adobe ne recommande pas de supprimer ou de désinstaller le package Adobe Experience Manager 6.5.6.0.
 
 ### Installation du Service Pack {#install-service-pack}
 
@@ -401,7 +401,7 @@ Effectuez les étapes suivantes pour installer le Service Pack sur une instance 
 
 >[!NOTE]
 >
->La boîte de dialogue de l’interface utilisateur de Package Manager se ferme parfois lors de l’installation du Service Pack. adobe vous recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de vous assurer que l&#39;installation est réussie. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
+>La boîte de dialogue de l’interface utilisateur de Package Manager se ferme parfois lors de l’installation du Service Pack. Adobe vous recommande d’attendre que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les journaux spécifiques liés à la désinstallation du lot de mise à jour avant de vous assurer que l&#39;installation est réussie. Typically, this happens on [!DNL Safari] but can intermittently happen on any browser.
 
 **Installation automatique**
 
