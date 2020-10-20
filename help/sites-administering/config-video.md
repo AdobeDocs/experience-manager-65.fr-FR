@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '465'
 ht-degree: 22%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 22%
 
 The [Video component](/help/sites-authoring/default-components-foundation.md#video) lets you place a predefined, out-of-the-box (OOTB) video asset on your page.
 
-Pour un transcodage correct, un administrateur installe FFmpeg séparément. Reportez-vous à la page [Installation de FFmpeg et configuration d’AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
+Pour un transcodage correct, un administrateur installe FFmpeg séparément. Voir [Installation de Fmpeg et configuration des AEM](#install-ffmpeg). Administrators also [Configure Video Profiles](#configure-video-profiles) for use with HTML5 elements.
 
 ## Configuration des profils vidéo {#configure-video-profiles}
 
@@ -32,7 +32,7 @@ Pour utiliser des éléments HTML5, définissez des profils vidéo. Les profils 
 
 From this dialog, you can also configure the design of the Video component and parameters for [!UICONTROL Playback], [!UICONTROL Flash], and [!UICONTROL Advanced].
 
-## Installation de mpeg et configuration d’AEM {#install-ffmpeg}
+## Installation de FFmpeg et configuration des AEM {#install-ffmpeg}
 
 Le composant Vidéo repose sur le produit open source tiers FFmpeg pour le transcodage de vidéos. Téléchargé depuis [https://ffmpeg.org/](https://ffmpeg.org/). Après avoir installé FFmpeg, configurez AEM pour utiliser un codec audio spécifique et des options d’exécution spécifiques.
 
@@ -45,7 +45,7 @@ Pour installer FFmpeg sous **Windows**, procédez comme suit :
 
 Pour installer FFmpeg sous **Mac OS X**, procédez comme suit :
 
-1. Installez Xcode disponible à l’adresse [developer.apple.com/xcode](hhttps://developer.apple.com/xcode/).
+1. Installez Xcode disponible à l’adresse [developer.apple.com/xcode](https://developer.apple.com/xcode/).
 1. Installation disponible à [XQuartz](https://www.xquartz.org) pour obtenir [X11](https://support.apple.com/fr-fr/HT201341).
 1. Installez MacPorts disponible à l’adresse [www.macports.org](https://www.macports.org/).
 1. Dans la console, exécutez `sudo port install ffmpeg` la commande et suivez les instructions qui s’affichent à l’écran. Assurez-vous que le chemin d’accès de l’ `FFmpeg` exécutable est ajouté à la variable `PATH` système.
@@ -78,4 +78,4 @@ Pour **configurer AEM**, procédez comme suit :
 
 >[!NOTE]
 >
->Les modifications apportées aux modèles de processus prêts à l’emploi par défaut ne sont pas conservées lors de la mise à niveau de votre instance AEM. Adobe recommande de copier les modèles de processus modifiés avant de les modifier. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
+>Les modifications apportées aux modèles de processus prêts à l’emploi par défaut ne sont pas conservées lorsque vous mettez à niveau votre instance AEM. Adobe vous recommande de copier les modèles de processus modifiés avant de les modifier. For example, copy the OOTB [!UICONTROL DAM Update Asset] model before editing the FFmpeg Transcoding step in the [!UICONTROL DAM Update Asset] model to pick video-profile names that existed before the upgrade. Then, you can overlay the `/apps` node to let AEM retrieve the custom changes to the OOTB model.
