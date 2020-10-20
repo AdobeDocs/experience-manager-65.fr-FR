@@ -7,16 +7,16 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 5b5937303dd543195b6c8300e6579a58e03a97d1
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3710'
 ht-degree: 70%
 
 ---
 
 # Guide de Forms Adobe Experience Manager 6.5 {#forms}
 
-+ [Guide de l’utilisateur d’AEM 6.5 Forms](home.md)
++ [Guide de Forms AEM 6.5](home.md)
 + Notes de mise à jour {#release-notes-new-features}
    + [Notes de mise à jour](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
    + [Récapitulatif des nouvelles fonctionnalités](using/whats-new.md)
