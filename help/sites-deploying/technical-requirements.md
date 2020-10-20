@@ -11,10 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a299e26668b1f1f08cca8d4a8085da185522ec96
+source-git-commit: 7065a6b984afb18c188acd848b9b77da7da67749
 workflow-type: tm+mt
 source-wordcount: '3118'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -38,7 +38,7 @@ Configuration minimale requise pour installer Adobe Experience Manager :
 
 ### Configuration minimale requise en matière d’espace disque et de mémoire {#minimum-sizing-requirements}
 
-Configuration minimale requise pour l’exécution d’Adobe Experience Manager :
+Configuration minimale requise pour l’exécution de Adobe Experience Manager :
 
 * 5 Go d’espace disque disponible dans le répertoire d’installation
 * Mémoire de 2 Go
@@ -47,6 +47,7 @@ Configuration minimale requise pour l’exécution d’Adobe Experience Manager 
 >
 >* Les cas d’utilisation des ressources numériques nécessitent plus de mémoire de base. Voir [Deploiement et maintenance](/help/sites-deploying/deploy.md#default-local-install) pour plus de détails.
 >* [Le module complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) nécessite 15 Go d’espace temporaire.
+
 >
 
 
@@ -224,7 +225,7 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 | Oracle Solaris 11 | Z : Non pris en charge |
 | IBM AIX 7.2 | Z : Non pris en charge |
 
-1. Linux Kernel 2.6, 3.x et 4.x inclut des dérivés de la distribution Red Hat, y compris Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions du module complémentaire AEM Form sont uniquement prises en charge sur CentOS 7 et Red Hat Enterprise Linux 7.
+1. Linux Kernel 2.6, 3.x et 4.x inclut des dérivés de la distribution Red Hat, y compris Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7 et Red Hat Enterprise Linux 7.
 1. AEM Forms est pris en charge uniquement sur Ubuntu 16.04 LTS
 1. Distribution Linux prise en charge par Adobe Managed Services
 1. Les déploiements en production Microsoft Windows sont pris en charge pour les clients effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement de production. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
@@ -252,7 +253,7 @@ L’utilisation des serveurs web ci-dessous est prise en charge avec Dispatcher 
 | Microsoft IIS 10 (Internet Information Server) | A : Pris en charge |
 | Microsoft IIS 8.5 (Internet Information Server) | Z : Non pris en charge |
 
-1. Les serveurs web développés sur la base du code source Apache httpd bénéficieront du même niveau de prise en charge que la version de httpd sur laquelle ils sont basés : En cas de doute, demandez à Adobe de confirmer le niveau de support associé au produit serveur correspondant. Cas suivants :
+1. Les serveurs web développés sur la base du code source Apache httpd bénéficieront du même niveau de prise en charge que la version de httpd sur laquelle ils sont basés : En cas de doute, demandez à l’Adobe de confirmer le niveau de support associé au produit serveur correspondant. Cas suivants :
 
    1. le serveur HTTP a été développé en utilisant uniquement les distributions source Apache officielles; ou
    1. le serveur HTTP a été distribué comme composant du système d’exploitation sur lequel il est exécuté. Exemples : Serveur IBM HTTP, Serveur Oracle HTTP 
@@ -457,7 +458,7 @@ Pour Windows x86 :
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> - Dernière version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> Dernière version</td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
@@ -499,9 +500,11 @@ Pour Windows x86 :
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
 >* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+
    >
    >
 * Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
+
 >
 
 
@@ -519,6 +522,6 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Formats** de fichier : JPEG, PNG, TIFF, PDF, INDD, AI et EPS.
 
-### Conditions requises pour AEM Assets pour le traitement des ressources lourdes en métadonnées sous Linux {#assetsonlinux}
+### Configuration requise pour AEM Assets pour le traitement des ressources lourdes en métadonnées sous Linux {#assetsonlinux}
 
 Le processus XMPFilesProcessor nécessite le fonctionnement de la bibliothèque GLIBC_2.14. Utilisez un noyau Linux qui contient GLIBC_2.14, par exemple un noyau Linux version 3.1.x. Il améliore les performances de traitement des fichiers qui contiennent une grande quantité de métadonnées, comme les fichiers PSD. L’utilisation d’une version précédente de GLIBC entraîne une erreur dans les journaux commençant par `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
