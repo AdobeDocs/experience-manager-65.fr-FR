@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 23aee6802e625e82d18a205586eb77341b6ef16e
+source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
 workflow-type: tm+mt
-source-wordcount: '3247'
-ht-degree: 76%
+source-wordcount: '3276'
+ht-degree: 75%
 
 ---
 
@@ -186,7 +186,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
 * La fragmentation MongoDB n’est pas pris en charge dans AEM. 
 * AEM Forms on JEE ne prend pas en charge MySQL pour la persistance de RDBMK.
 * Le module Document Security n’utilise pas Content Repository. Cela signifie que si vous utilisez uniquement Document Security et ne prévoyez pas d’utiliser Workspace HTML, les formulaires HTML5 ou les formulaires adaptatifs, vous n’avez pas besoin d’installer Content Repository.
-* aem forms on JEE ne prend pas en charge l’utilisation de MySQL pour la conservation du référentiel AEM (CRX-Repository).
+* AEM Forms on JEE ne prend pas en charge l’utilisation de MySQL pour la conservation du référentiel AEM (CRX-Repository).
 
 
 ### Pilotes de base de données {#database-drivers}
@@ -264,7 +264,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</br><b>Remarque :</b> Red Hat Enterprise Linux 6 a atteint la fin de la phase de maintenance et les transitions à la phase de durée de vie prolongée le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour la mise à niveau et les nouvelles installations.</p> </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -311,7 +311,7 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environn
 
 Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de configuration d’AEM Forms on JEE.
 
-1. aem forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
+1. AEM Forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
 1. AEM Forms on JEE ne prend pas en charge et JBoss sur SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® que le JDK IBM®.
@@ -398,7 +398,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 
 ### Prise en charge de Cordova {#support-for-cordova}
 
-aem forms App prend désormais en charge Apache Cordova. Voici les versions spécifiques à la plate-forme de Cordova prises en charge :
+AEM Forms App prend désormais en charge Apache Cordova. Voici les versions spécifiques à la plate-forme de Cordova prises en charge :
 
 * Apache Cordova 6.4.0
 * Cordova iOS 4.3.0
@@ -414,7 +414,7 @@ aem forms App prend désormais en charge Apache Cordova. Voici les versions spé
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">acrobat 2017 Classic track</a> Dernière version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> Dernière version</td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
