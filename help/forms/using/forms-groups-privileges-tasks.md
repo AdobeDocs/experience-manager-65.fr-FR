@@ -11,10 +11,10 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+source-git-commit: 494551d3d886c1ed70d252a28b03cfa9d8e82a6a
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 91%
+ht-degree: 78%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 91%
 
 Vous pouvez [créer des groupes](/help/sites-administering/user-group-ac-admin.md#group-administration) et affecter des stratégies et des [utilisateurs](/help/sites-administering/user-group-ac-admin.md#user-administration) aux groupes dans AEM. Ces stratégies contrôlent les privilèges des utilisateurs qui font partie du groupe.
 
-Une fois que vous avez installé le [package du module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), les groupes mentionnés dans cet article, tels que forms-user et forms-power-user, sont automatiquement disponibles pour affectation. Le tableau suivant répertorie les tâches qu’un utilisateur peut effectuer pour AEM Forms sur OSGi en fonction des affectations de groupe :
+Once you install [AEM Forms add-on package](../../forms/using/installing-configuring-aem-forms-osgi.md), the groups mentioned in this article, such as forms-users and forms-power-user, are automatically available for assignment. Le tableau suivant répertorie les tâches qu’un utilisateur peut effectuer pour AEM Forms sur OSGi en fonction des affectations de groupe :
 
 <table>
  <tbody>
@@ -32,7 +32,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
    <td>Tâches</td> 
   </tr>
   <tr>
-   <td>forms-user <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
@@ -94,7 +94,7 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Utiliser les applications<br /> de boîte de réception AEM <strong>Remarque : </strong>Pour accéder à l’interface utilisateur de l’agent de communications interactives dans la boîte de réception AEM, vous devez disposer d’affectations de groupe cm-agent-users et workflow-users.</li> 
+     <li>Utiliser AEM applications<br /> de boîte de réception <strong>Remarque : </strong>Pour accéder à l'interface utilisateur de l'agent de communications interactives dans AEM boîte de réception, vous devez disposer d'affectations de groupe cm-agent-users et de groupes workflow-users.</li> 
      <li>Gérer les instances de processus</li> 
     </ul> </td> 
   </tr>
@@ -110,6 +110,6 @@ Une fois que vous avez installé le [package du module complémentaire AEM Form
  </tbody>
 </table>
 
-1. L’utilisateur disposant des privilèges du groupe forms-user ne peut pas écrire de scripts pour les formulaires adaptatifs.
+1. L’utilisateur disposant de droits de groupe d’utilisateurs de formulaires ne peut pas écrire de scripts pour les formulaires adaptatifs.
 1. L’utilisateur disposant des privilèges template-authors ne peut pas écrire de scripts pour les modèles.
 
