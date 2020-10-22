@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
+source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+workflow-type: tm+mt
+source-wordcount: '544'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 AEM vous propose deux environnements :
 
 * Création
-* Publication
+* Publication 
 
 Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent le lire.
 
@@ -35,10 +38,6 @@ L’environnement de création fournit les mécanismes de création, de mise à 
 ![chlimage_1-132](assets/chlimage_1-132.png)
 
 Dans l’environnement de création, les fonctions d’AEM sont accessibles dans deux interfaces utilisateur. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs.
-
->[!NOTE]
->
->AEM et le répartiteur sont utilisés pour publier cette documentation AEM.
 
 ### Environnement de création {#author-environment}
 
@@ -89,11 +88,11 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
    >
    >
 * **Répliquer/Réplication**
-   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, contenu de la page, fichiers, code, commentaires des utilisateurs) d&#39;un   à un autre; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires des utilisateurs.
+   >  Il s&#39;agit des termes techniques utilisés pour indiquer le mouvement des données (par exemple, le contenu des pages, les fichiers, le code, les commentaires des utilisateurs) d&#39;un environnement à l&#39;autre ; c’est-à-dire lors de la publication ou de la réplication inversée des commentaires d’utilisateur.
 >
 
 
 
 #### Dispatcher {#dispatcher}
 
-Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
+Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
