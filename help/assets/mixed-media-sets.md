@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 95%
@@ -27,7 +27,7 @@ Les visionneuses de supports variés sont désignées par une bannière contenan
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/managing-assets-touch-ui.md).
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-assets.md).
 
 ## Démarrage rapide : Visionneuses de supports variés {#quick-start-mixed-media-sets}
 
@@ -67,7 +67,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Voir [Liaison d’une visionneuse de supports variés à une page web](/help/assets/linking-urls-to-yourwebapplication.md) et [Incorporation de la vidéo ou de la visionneuse d’images](/help/assets/embed-code.md).
 
-Le cas échéant, vous pouvez modifier une [visionneuse de supports variés](#editing-mixed-media-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse de supports variés](/help/assets/managing-assets-touch-ui.md#editing-properties).
+Le cas échéant, vous pouvez modifier une [visionneuse de supports variés](#editing-mixed-media-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse de supports variés](/help/assets/manage-assets.md#editing-properties).
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 ## Modification d’une visionneuse de médias mixtes   {#editing-mixed-media-sets}
 
-Vous pouvez effectuer diverses tâches de modification sur les ressources dans les visionneuses de supports variés, directement dans l’interface utilisateur, [comme vous le feriez dans AEM Assets](/help/assets/managing-assets-touch-ui.md). Vous pouvez également effectuer les actions suivantes dans les visionneuses de supports variés :
+Vous pouvez effectuer diverses tâches de modification sur les ressources dans les visionneuses de supports variés, directement dans l’interface utilisateur, [comme vous le feriez dans AEM Assets](/help/assets/manage-assets.md). Vous pouvez également effectuer les actions suivantes dans les visionneuses de supports variés :
 
 * Ajouter des ressources à la visionneuse de supports variés.
 * Réorganiser des ressources de la visionneuse de supports variés.
