@@ -3,7 +3,7 @@ title: Présentation [!DNL Adobe Experience Manager Assets].
 description: Découvrez ce qu'est la gestion des ressources numériques, ses cas d'utilisation, [!DNL Adobe Experience Manager Asset] et l'offre.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 32%
@@ -65,9 +65,9 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 * **Balisage**: [!DNL Assets] peuvent être balisés et classifiés. Voir [organisation des ressources](/help/assets/organize-assets.md).
 
-* **Rendus**: Un rendu est la représentation binaire d’une ressource. [!DNL Assets] toujours avoir une représentation principale - celle du fichier téléchargé. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir différentes tailles, différentes résolutions et un filigrane ou d’autres caractéristiques modifiées.
+* **Rendus**: Un rendu est la représentation binaire d’une ressource. [!DNL Assets] toujours avoir une Principale représentation - celle du fichier téléchargé. Elle peut en avoir d’autres qui sont créées par des étapes de workflow personnalisées ou lors du téléchargement de la ressource, par exemple. Les rendus peuvent avoir différentes tailles, différentes résolutions et un filigrane ou d’autres caractéristiques modifiées.
 
-* **Versions**: Le contrôle de version crée un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. See [versioning in Assets](managing-assets-touch-ui.md#asset-versioning).
+* **Versions**: Le contrôle de version crée un instantané des ressources numériques à un moment donné. Vous pouvez restaurer la version précédente des ressources. See [versioning in Assets](manage-assets.md#asset-versioning).
 
 * **Sous-ressources**: Les sous-ressources sont des ressources qui constituent un actif, par exemple, des calques d’un [!DNL Adobe Photoshop] fichier ou des pages d’un fichier PDF. In [!DNL Assets], you can manage sub-assets as you would assets.
 
@@ -75,10 +75,10 @@ When working with digital assets in [!DNL Experience Manager], you need to under
 
 Vous effectuez une action sur une ressource ou une collection. Les actions peuvent créer ou modifier des ressources, des collections et des rendus. La plupart des actions de base que vous effectuez sur les ressources (téléchargement, suppression, mise à jour, enregistrement de sous-ressources) déclenchent des workflows préconfigurés. These are automatically turned on in [!DNL Assets] and are described in detail in [!DNL Assets] media handlers.
 
-tâches que vous pouvez exécuter avec ces workflows préconfigurés :
+Tâches que vous pouvez exécuter avec ces workflows préconfigurés :
 
 * Enregistrez la ressource dans le référentiel ou supprimez-la.
-* Extraire et enregistrer les métadonnées de la ressource ; les éléments de métadonnées individuels sont enregistrés au format XMP.
+* Extraire et enregistrer les métadonnées de la ressource ; les éléments de métadonnées individuels sont enregistrés en tant que XMP.
 * Générer des rendus et des miniatures pour la ressource ; y compris le redimensionnement et le recadrage automatiques si nécessaire.
 * Transcodez le fichier si nécessaire. Par exemple, la vidéo destinée aux utilisateurs mobiles et Web est transcodée avec 24 images par seconde, la vidéo téléchargée avec 30 images par seconde. L’audio pour l’utilisation mobile et Web est transcodé avec 128 Kbits/s, l’audio pour le téléchargement avec 192 Kbits/s.
 
