@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5968'
 ht-degree: 51%
@@ -35,7 +35,7 @@ Search for assets using the Omnisearch field at the top of the [!DNL Experience 
 
 Utilisez le panneau **[!UICONTROL Filtres]** pour restreindre votre recherche en filtrant les résultats de recherche en fonction des différentes options (prédicats), telles que le type de fichier, la taille de fichier, la date de dernière modification, l’état du fichier, les données d’informations et la licence Adobe Stock. Vos administrateurs peuvent personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide de facettes de recherche. Le filtre Type [!UICONTROL de] fichier du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Par conséquent, à moins que vous ne sélectionniez tous les prédicats imbriqués (ou formats), les cases à cocher de premier niveau sont partiellement cochées.
 
-[!DNL Experience Manager]La fonctionnalité de recherche prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager]La fonctionnalité de recherche prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/manage-collections.md).
 
 ## Présentation de l’interface de recherche {#searchui}
 
@@ -222,7 +222,7 @@ Les auteurs peuvent utiliser l’outil de recherche de contenu pour rechercher l
 
 ### Recherche de collections {#collections}
 
-[!DNL Experience Manager]La fonctionnalité de recherche prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager]La fonctionnalité de recherche prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/manage-collections.md).
 
 ## Sélecteur de ressources {#assetpicker}
 
@@ -374,7 +374,7 @@ Pour accélérer la découverte, [!DNL Experience Manager Assets] offres les fac
 
 ### Extraire du texte lors du téléchargement de fichiers {#extracttextupload}
 
-Vous pouvez configurer [!DNL Experience Manager] l’extraction du texte des fichiers lorsque les utilisateurs téléchargent des fichiers, tels que des fichiers PSD ou PDF. [!DNL Experience Manager] indexe le texte extrait et aide les utilisateurs à rechercher ces ressources en fonction du texte extrait. See [upload assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Vous pouvez configurer [!DNL Experience Manager] l’extraction du texte des fichiers lorsque les utilisateurs téléchargent des fichiers, tels que des fichiers PSD ou PDF. [!DNL Experience Manager] indexe le texte extrait et aide les utilisateurs à rechercher ces ressources en fonction du texte extrait. See [upload assets](/help/assets/manage-assets.md#uploading-assets).
 
 Si l’extraction de texte devient trop gourmande en ressources pour votre déploiement, pensez à [désactiver l’extraction](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html)de texte.
 
@@ -447,7 +447,7 @@ Une collection est un ensemble ordonné de ressources pouvant inclure des ressou
 * Une liste de référence statique de ressources, dossiers et autres collections
 * Une liste dynamique (collection dynamique) qui peuple la collection de ressources en fonction de critères de recherche
 
-Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gestion des collections](/help/assets/managing-collections-touch-ui.md).
+Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gestion des collections](/help/assets/manage-collections.md).
 
 ## Résolution des problèmes et des résultats de recherche inattendus {#troubleshoot-unexpected-search-results-and-issues}
 
