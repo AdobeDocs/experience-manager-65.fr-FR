@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 93%
@@ -82,7 +82,7 @@ Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez
 
 ### Collections de ressources {#asset-collections}
 
-Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/managing-collections-touch-ui.md) directement à votre projet. Vous définissez les collections dans AEM Assets.
+Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans AEM Assets.
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 
