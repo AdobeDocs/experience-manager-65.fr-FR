@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 99%
@@ -30,7 +30,7 @@ Les fragments de contenu peuvent également être livrés au format JSON, à l�
 
 Cette page et les suivantes portent sur les tâches de création, de configuration et de gestion de vos fragments de contenu :
 
-* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)  : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
+* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)    : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : activation, création et définition de vos modèles.
 * [Variations – création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md) : créez le contenu du fragment et créez des variantes du maître.
 * [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md) : utilisation de la syntaxe Markdown pour votre fragment.
@@ -58,7 +58,7 @@ Les fragments de contenu vous permettent de :
 
 Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses expériences sur de multiples canaux.
 
-## Fragments de contenu et Content Services  {#content-fragments-and-content-services}
+## Fragments de contenu et Content Services    {#content-fragments-and-content-services}
 
 Les services de contenu AEM sont conçus pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
 
@@ -76,7 +76,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 
 >[!NOTE]
 >
->Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
+>Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 
@@ -209,7 +209,7 @@ Les actifs de fragment de contenu se composent des parties suivantes (directemen
    * Les ressources sont [associées aux fragments via des collections](/help/assets/content-fragments/content-fragments-assoc-content.md) ; les collections associées permettent à l’auteur de déterminer les ressources à utiliser lors de la création d’une page.
 
       * Les collections peuvent être associées à des fragments à l’aide de modèles, en tant que contenu par défaut, ou par les auteurs lors de la création du fragment.
-      * Les [Collections de ressources (DAM)](/help/assets/managing-collections-touch-ui.md) servent de base au contenu associé des fragments.
+      * Les [Collections de ressources (DAM)](/help/assets/manage-collections.md) servent de base au contenu associé des fragments.
    * Vous pouvez également ajouter le fragment lui-même à une collection pour en faciliter le suivi.
 
 
@@ -287,7 +287,7 @@ Pour créer, modifier et utiliser des fragments de contenu, vous aurez égalemen
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
-## Cas d’utilisation  {#example-usage}
+## Cas d’utilisation    {#example-usage}
 
 Un fragment, avec ses éléments et ses variations, peut être utilisé afin de créer du contenu homogène sur plusieurs canaux. Lors de la conception d’un fragment, vous devez prendre en compte où vous utiliserez chacun de ses éléments.
 
