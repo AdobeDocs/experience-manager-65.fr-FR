@@ -6,7 +6,7 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 51%
@@ -113,7 +113,7 @@ ht-degree: 51%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] intégration](aem-cc-integration-best-practices.md)
    + [Intégrer à [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management dans les ressources](drm.md)
-   + [Utiliser le package de démonstration pour les informations sur les ressources](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Utiliser le package de démonstration pour les informations sur les ressources](use-demo-package-for-asset-insights.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
    + [Meilleures pratiques de surveillance des ressources](assets-monitoring-best-practices.md)
    + [Prise en charge de Camera Raw](camera-raw.md)
@@ -139,21 +139,21 @@ ht-degree: 51%
    + [Fragments de contenu - Markdown](content-fragments/content-fragments-markdown.md)
    + [Création de projets de traduction pour des fragments de contenu](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
-   + [Gestion des éléments numériques](managing-assets-touch-ui.md)
-   + [Gestion des collections](managing-collections-touch-ui.md)
+   + [Gestion des éléments numériques](manage-assets.md)
+   + [Gestion des collections](manage-collections.md)
    + [Activation de la détection de doublons](duplicate-detection.md)
    + [Organisation des ressources numériques](organize-assets.md)
    + [Gestion des ressources vidéo](managing-video-assets.md)
    + [Création de projets de traduction](translation-projects.md)
    + [Préparation des ressources pour la traduction](preparing-assets-for-translation.md)
    + [Téléchargement de fichiers à partir du Experience Manager](download-assets-from-aem.md)
-   + [Lightbox](touch-ui-light-box.md)
-   + [Informations sur les ressources](touch-ui-asset-insights.md)
-   + [Activation des informations sur les ressources via la gestion dynamique des balises](touch-ui-using-dtm-for-asset-insights.md)
-   + [Configuration des informations sur les ressources](touch-ui-configuring-asset-insights.md)
+   + [Lightbox](light-box.md)
+   + [Informations sur les ressources](asset-insights.md)
+   + [Activation des informations sur les ressources via la gestion dynamique des balises](use-dtm-for-asset-insights.md)
+   + [Configuration des informations sur les ressources](configure-asset-insights.md)
    + [Archivage et extraction de fichiers](check-out-and-submit-assets.md)
    + [Application de services cloud de traduction à des dossiers](transition-cloud-services.md)
-   + [Utiliser le suivi de page et le code incorporé dans les pages Web](touch-ui-using-page-tracker.md)
+   + [Utiliser le suivi de page et le code incorporé dans les pages Web](use-page-tracker.md)
    + [Gestion des ressources composites](managing-linked-subassets.md)
    + [Ressources liées](related-assets.md)
    + [Partage de dossiers privés](private-folder.md)
