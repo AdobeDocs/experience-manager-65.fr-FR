@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 56c9bc1ea99dcb93af21d8b26bac8792512f4d42
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2312'
 ht-degree: 95%
@@ -24,7 +24,7 @@ Dynamic Media permet de charger, gérer, afficher et diffuser des ressources 3D 
 * Prise en charge optimisée de l’affichage de ressources 3D avec le paramètre prédéfini de visionneuse Dimensionnel de haute qualité et interactive, optimisée par Adobe Dimension.
 * Ajout aisé de ressources 3D à vos pages AEM Sites grâce au composant de gestion du contenu web Média 3D.
 
-Aucune configuration supplémentaire n’est nécessaire pour utiliser les ressources 3D dans Dynamic Media.
+Aucune configuration supplémentaire n’est requise pour utiliser des ressources 3D dans Contenu multimédia dynamique.
 
 ![chaussure en 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -45,19 +45,19 @@ Voir aussi [Formats 3D pris en charge.](/help/assets/assets-formats.md)
 
 ## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 
-La description de flux de travaux détaillée suivante est conçue pour vous aider à maîtriser rapidement les opérations liées aux fichiers 3D en mode Dynamic Media - Scene7.
+La description de flux de travaux détaillée suivante est conçue pour vous aider à maîtriser rapidement les opérations liées aux ressources 3D en mode Contenu multimédia dynamique - Scene7.
 
 >[!NOTE]
 >
->Les ressources 3D ne sont pas prises en charge en mode Dynamic Media - Hybrid.
+>Les ressources 3D ne sont pas prises en charge en mode Contenu multimédia dynamique - hybride.
 
-Avant de travailler avec des ressources 3D dans Dynamic Media, assurez-vous que votre administrateur AEM a déjà activé et configuré Dynamic Media Cloud Service en mode Dynamic Media - Scene7.
+Avant d’utiliser des fichiers 3D dans Contenu multimédia dynamique, assurez-vous que votre administrateur AEM déjà activé et configuré les Cloud Services Contenu multimédia dynamique en mode Scene7 de Contenu multimédia dynamique.
 
 Voir [Configuration des services cloud Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media – mode Scene7 et [Dépannage de Dynamic Media – mode Scene7.](/help/assets/troubleshoot-dms7.md)
 
 1. **Chargement de ressources 3D**
 
-   * [Chargement de ressources 3D pour les utiliser dans Dynamic Media](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   * [Chargement de ressources 3D pour les utiliser dans Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
    * [Formats de ressources 3D pris en charge pour le chargement dans Dynamic Media](#supported-three-d-file-formats-in-dm).
 
 1. **Gestion des ressources 3D**
@@ -111,7 +111,7 @@ Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicie
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans AEM.
 
-   Voir [Chargement de ressources 3D pour les utiliser dans Dynamic Media.](/help/assets/managing-assets-touch-ui.md#uploading-assets)
+   Voir [Chargement de ressources 3D pour les utiliser dans Dynamic Media.](/help/assets/manage-assets.md#uploading-assets)
 
 1. Dans AEM, sur la page de **[!UICONTROL navigation]**, appuyez sur **[!UICONTROL Ressources > Fichiers.]**
 1. Dans l’angle supérieur droit de la page, dans la liste déroulante **[!UICONTROL Vue]**, appuyez sur **[!UICONTROL Mode Carte.]**
