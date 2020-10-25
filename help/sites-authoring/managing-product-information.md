@@ -10,14 +10,17 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 70%
 
 ---
 
 
 # Projet de création et intégration à PIM{#creative-project-and-pim-integration}
 
-Si vous êtes spécialiste du marketing ou de la création, vous pouvez utiliser les outils de projet créatif d’Adobe Experience Manager (AEM) pour gérer la photographie de produit liée au commerce électronique et les processus créatifs associés au sein de votre entreprise.
+Si vous êtes spécialiste du marketing ou de la création, vous pouvez utiliser les outils de projet créatif de Adobe Experience Manager (AEM) pour gérer la photographie de produit liée au commerce électronique et les processus créatifs associés au sein de votre entreprise.
 
 En particulier, vous pouvez utiliser la fonction Projet de création pour simplifier les tâches suivantes du worfklow de séance photo :
 
@@ -73,7 +76,7 @@ Un projet de séance photo du produit comprend les workflows prêts à l’emplo
 
 Utilisez le worfklow Séance photo du produit (Intégration de commerce) pour associer les ressources d’images aux produits d’AEM. Ce worfklow tire parti de l’intégration de commerce pour lier les images approuvées aux données de produit existantes à l’emplacement */etc/commerce*.
 
-Le flux de travaux Product Photo Shoot (intégration commerciale) comprend les tâches suivantes :
+Le flux de travaux de prise de vue photo de produit (intégration commerciale) comprend les tâches suivantes :
 
 * Créer une liste de plans
 * Transférer la séance photo
@@ -99,7 +102,7 @@ Les deux workflows incluent des étapes pour lier les produits à leurs ressourc
 * Lancement d’un worfklow de projet : explique comment lancer une séance photo du produit.
 * Détails des tâches de worfklow : fournit le détail des tâches disponibles dans le worfklow.
 
-## Suivi de la progression du projet {#tracking-project-progress}
+## Suivi de la progression du projet   {#tracking-project-progress}
 
 Vous pouvez effectuer le suivi de l’avancement d’un projet en consultant les tâches actives/terminées au sein d’un projet.
 
@@ -109,7 +112,7 @@ Utilisez les éléments suivants pour surveiller la progression d’un projet :
 
 * **Liste de tâches**
 
-La fiche de travail décrit l&#39;avancement général du projet. Elle s’affiche sur la page Détails du projet si celui-ci contient des tâches associées. La carte des tâches affiche l’état d’achèvement actuel du projet en fonction du nombre de tâches terminées. Elle n’inclut pas les tâches ultérieures.
+La carte de Tâche illustre l&#39;avancement général du projet. Elle s’affiche sur la page Détails du projet si celui-ci contient des tâches associées. La carte des tâches affiche l’état d’achèvement actuel du projet en fonction du nombre de tâches terminées. Elle n’inclut pas les tâches ultérieures.
 
 La carte des tâches contient les informations suivantes :
 
@@ -153,6 +156,7 @@ Pour configurer le worfklow **Séance photo du produit** :
    * Retoucher la séance photo
    * Critique de la séance photo
    * Déplacer vers la production
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 Cette section décrit comment intégrer la gestion des informations produit (PIM) à votre projet de création.
@@ -219,11 +223,12 @@ La tâche **Créer une liste de plans** permet au propriétaire du projet de sé
    * Les ressources correspondant à la hiérarchie de produit sont créées dans un dossier portant le même nom que le titre du worfklow.
    * Les métadonnées des ressources peuvent être modifiées depuis la console Ressources, avant même que le photographe ne fournisse les images.
    * Un dossier Séance photo est créé pour stocker les images fournies par le photographe. Ce dossier contient des sous-dossiers pour chaque entrée de produit figurant dans la liste de plans.
+
    Transférer la liste de plans est la première tâche du worfklow Séance photo du produit (sans intégration de commerce). Appuyez/cliquez sur **Transférer la liste de plans** pour transférer un fichier **shotlist.csv**. Le fichier CSV doit contenir l’ID du produit. Les autres champs sont facultatifs. Vous pouvez les utiliser pour mapper les ressources aux produits.
 
 ### Transférer une tâche de liste de plans {#upload-shot-list-task}
 
-Cette tâche fait partie du worfklow Séance photo du produit. Vous effectuez cette tâche si les informations produit ne sont pas disponibles dans AEM. Dans ce cas, vous transférez dans un fichier CSV la liste des produits pour lesquels des ressources d’images sont requises. En fonction des détails du fichier CSV, vous mappez les fichiers d’image aux produits.
+Cette tâche fait partie du worfklow Séance photo du produit. Vous effectuez cette tâche si les informations produit ne sont pas disponibles dans AEM. Dans ce cas, vous transférez dans un fichier CSV la liste des produits pour lesquels des ressources d’images sont requises. En fonction des détails contenus dans le fichier CSV, vous mappez les fichiers d’image aux produits.
 
 Utilisez le lien **Afficher la liste de plans** sous la carte du projet de la procédure précédente pour télécharger un exemple de fichier CSV. Consultez le fichier d’exemple pour connaître le contenu habituel d’un fichier CSV.
 
@@ -344,7 +349,7 @@ Cette tâche déplace les ressources approuvées dans le dossier Prêt pour la p
 
 ## Affichage des métadonnées des ressources de gestion des actifs numériques {#viewing-dam-asset-metadata}
 
-Après votre approbation, les ressources sont liées aux produits correspondants. La [page des propriétés](/help/assets/managing-assets-touch-ui.md#editing-properties) des ressources approuvées comprend maintenant un nouvel onglet **Données du produit** (les informations sur les produits liés) Cet onglet affiche les détails du produit, le numéro SKU ainsi que d’autres détails relatifs au produit lié à la ressource. Appuyez/cliquez sur l’icône **Modifier** pour mettre à jour une propriété de ressource. Les informations relatives aux produits restent en lecture seule.
+Après votre approbation, les ressources sont liées aux produits correspondants. La [page des propriétés](/help/assets/manage-assets.md#editing-properties) des ressources approuvées comprend maintenant un nouvel onglet **Données du produit** (les informations sur les produits liés) Cet onglet affiche les détails du produit, le numéro SKU ainsi que d’autres détails relatifs au produit lié à la ressource. Appuyez/cliquez sur l’icône **Modifier** pour mettre à jour une propriété de ressource. Les informations relatives aux produits restent en lecture seule.
 
 Appuyez/cliquez sur le lien qui s’affiche pour accéder à la page des détails du produit correspondante dans la console du produit à laquelle la ressource est associée.
 
@@ -359,11 +364,11 @@ Vous pouvez personnaliser les workflows de travaux de séance photo du projet en
    ![chlimage_1-163](assets/chlimage_1-163a.png)
 
 1. Open the **Role Based Task** step.
-1. Sous l’onglet **Tâche**, saisissez le nom de la tâche qui s’affichera dans la liste **Tâche**. Vous pouvez également affecter la tâche à un rôle, définir la priorité par défaut, fournir une description et spécifier le moment auquel la tâche doit être exécutée.
+1. Sous l’onglet **Tâche**, saisissez le nom de la tâche qui s’affichera dans la liste **Tâche**. Vous pouvez également attribuer la tâche à un rôle, définir la priorité par défaut, fournir une description et spécifier l’heure d’échéance de la tâche.
 
    ![chlimage_1-164](assets/chlimage_1-164a.png)
 
-1. Sous l’onglet **Acheminement**, spécifiez les actions pour la tâche. Pour ajouter plusieurs actions, appuyez/cliquez sur le lien **Ajouter un élément **lien.
+1. Sous l’onglet **Acheminement**, spécifiez les actions pour la tâche. Pour ajouter plusieurs actions, appuyez/cliquez sur le lien **Ajouter l’élément **lien.
 
    ![chlimage_1-165](assets/chlimage_1-165a.png)
 
