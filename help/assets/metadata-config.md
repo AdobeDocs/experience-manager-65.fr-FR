@@ -3,7 +3,7 @@ title: Configuration et administration de la fonctionnalité de métadonnées.
 description: Configuration et administration [!DNL Experience Manager Assets] des fonctionnalités liées à l’ajout et à la gestion de métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '1953'
 ht-degree: 55%
@@ -269,7 +269,7 @@ Enter metadata values in the various fields and click **[!UICONTROL Save]** to s
 >[!MORELIKETHIS]
 >
 >* [Concepts et compréhension](metadata-concepts.md)des métadonnées.
->* [Modification des propriétés de métadonnées de plusieurs collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+>* [Modification des propriétés de métadonnées de plusieurs collections](manage-collections.md#editing-collection-metadata-in-bulk).
 >* [Importation et exportation des métadonnées dans les ressources](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)Experience Manager.
 >* [Profils de traitement des métadonnées, des images et des vidéos](processing-profiles.md).
 >* [Bonnes pratiques pour organiser vos ressources numériques en vue d’utiliser des profils](/help/assets/organize-assets.md)de traitement.
