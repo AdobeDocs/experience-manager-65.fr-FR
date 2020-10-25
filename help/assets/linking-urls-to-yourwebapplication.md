@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1274'
 ht-degree: 96%
@@ -34,7 +34,7 @@ Voir aussi [Liaison d’URL YouTube à une application web.](video.md)
 
 Voir aussi [Diffusion d’images optimisées pour un site réactif.](responsive-site.md)
 
-Voir aussi [Téléchargement de ressources.](managing-assets-touch-ui.md#uploading-assets)
+Voir aussi [Téléchargement de ressources.](manage-assets.md#uploading-assets)
 
 ## Obtention d’une URL pour une ressource  {#obtaining-a-url-for-an-asset}
 
