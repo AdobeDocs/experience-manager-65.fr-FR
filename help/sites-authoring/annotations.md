@@ -10,14 +10,17 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
-source-git-commit: 55a4c7eee6f1305fe84a22bc9b23cd77d73d414a
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 97%
 
 ---
 
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
-L’ajout de contenu aux pages de votre site Web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu (contrairement, par exemple, à la mise en page) permettent d’ajouter une annotation.
+L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu (contrairement, par exemple, à la mise en page) permettent d’ajouter une annotation.
 
 Une annotation place une note autocollante colorée sur la page. L’annotation vous permet (ainsi qu’aux autres utilisateurs) de laisser des commentaires ou des questions à l’intention d’autres auteurs ou réviseurs.
 
@@ -35,7 +38,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->Selon vos besoins, vous pouvez également développer un flux de travail pour envoyer des notifications lorsque des annotations sont ajoutées, mises à jour ou supprimées.
+>Selon vos besoins, vous pouvez également développer un workflow pour envoyer des notifications lorsque celles-ci sont ajoutées, mises à jour ou supprimées.
 
 ## Annotations {#annotations}
 
@@ -49,8 +52,9 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 >
 >Vous pouvez annoter un large éventail de ressources :
 >
->* [Annotation de ressources](/help/assets/managing-assets-touch-ui.md#annotating)
+>* [Annotation de ressources](/help/assets/manage-assets.md#annotating)
 >* [Annotation de ressources vidéo](/help/assets/managing-video-assets.md#annotate-video-assets)
+
 >
 
 
@@ -82,15 +86,17 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
    Utilisez alors le champ et/ou l’icône appropriée pour effectuer ce qui suit :
 
    * Entrez le texte de l’annotation.
-   * Créez une esquisse (lignes et formes) pour mettre en surbrillance une zone du composant.
+   * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
-      Le curseur se transforme en fil croisé lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
+      Le curseur prend la forme d&#39;un fil croisé lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Choisissez/changez la couleur :
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * Supprimez l’annotation.
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Pour fermer la boîte de dialogue de l’annotation, cliquez ou appuyez en dehors de la boîte de dialogue. Une vue tronquée (le premier mot) de l’annotation s’affiche avec les schémas :
@@ -103,7 +109,7 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
 
       * Il n’est pas possible de supprimer les esquisses indépendamment de l’annotation.
    * Repositionner la marque de texte.
-   * Cliquez/appuyez sur un trait du schéma pour sélectionner ce dernier et le faire glisser jusqu’à la position voulue.
+   * Cliquez/appuyez sur un trait du schéma pour le sélectionner et le faire glisser jusqu’à la position voulue.
    * Déplacer ou copier un composant.
 
       * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées ; leur position par rapport au paragraphe demeure inchangée.
