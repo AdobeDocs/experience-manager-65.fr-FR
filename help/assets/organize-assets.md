@@ -3,7 +3,7 @@ title: Organisez vos ressources numériques.
 description: Organisez vos fichiers numériques, images, fichiers, dossiers, etc. à l’aide du Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 8%
@@ -19,7 +19,7 @@ L’ensemble des ressources numériques, des métadonnées et du contenu des doc
 
 ## Organisation des fichiers dans des dossiers {#organize-using-folders}
 
-La méthode la plus élémentaire pour organiser les fichiers consiste à les enregistrer dans des dossiers. Il est analogue à l&#39;organisation de fichiers dans des dossiers de notre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, voir [Gestion des fichiers](managing-assets-touch-ui.md). La manière dont vous nommez les fichiers et les dossiers, dont vous disposez les sous-dossiers et dont vous traitez les fichiers dans ces dossiers peut avoir un impact significatif sur la manière dont ces fichiers sont traités. En appliquant des stratégies cohérentes et appropriées de nommage de fichiers et de dossiers, ainsi que de bonnes pratiques de métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
+La méthode la plus élémentaire pour organiser les fichiers consiste à les enregistrer dans des dossiers. Il est analogue à l&#39;organisation de fichiers dans des dossiers de notre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, voir [Gestion des fichiers](manage-assets.md). La manière dont vous nommez les fichiers et les dossiers, dont vous disposez les sous-dossiers et dont vous traitez les fichiers dans ces dossiers peut avoir un impact significatif sur la manière dont ces fichiers sont traités. En appliquant des stratégies cohérentes et appropriées de nommage de fichiers et de dossiers, ainsi que de bonnes pratiques de métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
 
 * Dans la plupart des cas, votre référentiel de ressources numériques est toujours en croissance. Par conséquent, il est important de formaliser l’utilisation des métadonnées, la structure des dossiers et le nommage des fichiers au début du cycle de création de contenu.
 * Utilisez les dossiers uniquement pour imposer une structure de stockage cohérente pour vos ressources numériques. Cette cohérence permet de mieux traiter et gérer vos ressources. Par exemple, les fichiers placés dans les types de dossiers suivants peuvent vous aider à utiliser les [profils appropriés pour le traitement](processing-profiles.md)des fichiers :
@@ -53,7 +53,7 @@ Pour plus d’informations, reportez-vous aux articles suivants :
 
 Avec les collections de ressources intégrées [!DNL Experience Manager Assets], vous pouvez rationaliser la possibilité de créer, de modifier et de partager des ressources entre utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de référence statique de ressources, de dossiers et de collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche.  Vous pouvez également créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs avec différents niveaux d’accès, d’affichage et de modification des privilèges.
 
-For more information, see [manage collections](managing-collections-touch-ui.md)
+For more information, see [manage collections](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
