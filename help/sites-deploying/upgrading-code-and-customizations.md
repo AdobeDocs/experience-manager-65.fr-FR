@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '2204'
 ht-degree: 77%
@@ -133,7 +133,7 @@ Vous pouvez préparer des personnalisations dans l’interface utilisateur Resso
 
 ### Génération d’identifiants pour les ressources existantes {#generating-asset-ids-for-existing-assets}
 
-Pour générer des identifiants pour les ressources existantes, mettez à jour les ressources en même temps que l’instance AEM pour exécuter la version 6.5. Cela nécessite d’activer la [fonctionnalité Assets Insights](/help/assets/touch-ui-asset-insights.md). For more details, see [Add embed code](/help/assets/touch-ui-using-page-tracker.md#add-embed-code).
+Pour générer des identifiants pour les ressources existantes, mettez à jour les ressources en même temps que l’instance AEM pour exécuter la version 6.5. Cela nécessite d’activer la [fonctionnalité Assets Insights](/help/assets/asset-insights.md). For more details, see [Add embed code](/help/assets/use-page-tracker.md#add-embed-code).
 
 Pour mettre à niveau les ressources, configurez le module d’identifiants de ressources associé dans la console JMX. En fonction du nombre de ressources dans le référentiel, `migrateAllAssets`   peut prendre beaucoup de temps. Selon nos tests internes, cela peut prendre environ une heure pour 125 000 ressources sur TarMK.
 
