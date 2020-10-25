@@ -3,7 +3,7 @@ title: 'Gestion des ressources vidéo '
 description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 37%
@@ -22,7 +22,7 @@ Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager 
 [!DNL Adobe Experience Manager Assets] génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualisation les rendus dans l’interface [!DNL Assets] utilisateur.
 
 1. Dans le dossier ou les sous-dossiers des ressources numériques, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
-1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](managing-assets-touch-ui.md#uploading-assets) pour plus d’informations.
+1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](manage-assets.md#uploading-assets) pour plus d’informations.
 1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
 
 1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
@@ -87,7 +87,7 @@ Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web
 
 >[!MORELIKETHIS]
 >
->* [Gestion des ressources numériques dans les ressources Experience Manager](/help/assets/managing-assets-touch-ui.md)
->* [Gestion des collections dans les ressources Experience Manager](/help/assets/managing-collections-touch-ui.md)
+>* [Gestion des ressources numériques dans les ressources Experience Manager](/help/assets/manage-assets.md)
+>* [Gestion des collections dans les ressources Experience Manager](/help/assets/manage-collections.md)
 >* [Documentation](/help/assets/video.md)vidéo sur les médias dynamiques.
 
