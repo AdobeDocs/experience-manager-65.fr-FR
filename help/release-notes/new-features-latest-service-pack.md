@@ -4,7 +4,7 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 750e3729a33718d54dca8b2514468d4a40910d4c
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 6%
@@ -194,7 +194,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 [!DNL Experience Manager Assets] comprend les améliorations d’accessibilité suivantes :
 
-* Les touches fléchées du clavier permettent de déplacer et de faire défiler des zones dans les images agrandies. Pour plus d’informations, voir Fichiers de [prévisualisation utilisant uniquement](../assets/managing-assets-touch-ui.md#previewing-assets)les touches du clavier.
+* Les touches fléchées du clavier permettent de déplacer et de faire défiler des zones dans les images agrandies. Pour plus d’informations, voir Fichiers de [prévisualisation utilisant uniquement](../assets/manage-assets.md#previewing-assets)les touches du clavier.
 
 * Les cases à cocher d’état mixte (dans lesquelles, à moins que vous ne sélectionniez tous les prédicats imbriqués, les cases de premier niveau ne sont pas sélectionnées et sont enfoncées) dans le panneau Filtres sont lisibles par les lecteurs d’écran.
 
