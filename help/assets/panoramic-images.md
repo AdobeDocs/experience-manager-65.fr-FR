@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 92%
@@ -37,7 +37,7 @@ Vous pouvez remplacer le paramètre de format par défaut de 2 en CRXDE Lite par
 
 Les critères de format et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant WCM `Panoramic Media`.
 
-Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, voir [Téléchargement de ressources](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Pour télécharger des ressources à utiliser avec la visionneuse d’images panoramiques, voir [Téléchargement de ressources](/help/assets/manage-assets.md#uploading-assets).
 
 ## Configuration de Dynamic Media Classic (Scene7) {#configuring-dynamic-media-classic-scene}
 
