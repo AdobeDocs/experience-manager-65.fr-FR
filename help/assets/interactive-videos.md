@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '6050'
 ht-degree: 98%
@@ -236,14 +236,14 @@ Pour créer votre propre paramètre prédéfini de visionneuse de vidéos intera
 
 Si vous avez déjà chargé votre vidéo et les ressources miniatures, passez à la section [Ajout d’interactivité à votre vidéo](#adding-interactivity-to-your-video).
 
-Si vous n’avez pas transféré les vidéos ou images appropriées, ou si vous souhaitez supprimer les vidéos ou images transférées dont vous n’avez plus besoin, reportez-vous à la section [Suppression de ressources](/help/assets/managing-assets-touch-ui.md#deleting-assets).
+Si vous n’avez pas transféré les vidéos ou images appropriées, ou si vous souhaitez supprimer les vidéos ou images transférées dont vous n’avez plus besoin, reportez-vous à la section [Suppression de ressources](/help/assets/manage-assets.md#deleting-assets).
 
 Pour télécharger une vidéo et ses ressources miniatures associées :
 
 1. Téléchargez la vidéo et les ressources miniatures associées dans le dossier ou les dossiers de votre choix.
 
-   Voir [Chargement de ressources](/help/assets/managing-assets-touch-ui.md).
-Voir [Chargement de ressources à l’aide de la planification de tâches FTP](/help/assets/managing-assets-touch-ui.md).
+   Voir [Chargement de ressources](/help/assets/manage-assets.md).
+Voir [Chargement de ressources à l’aide de la planification de tâches FTP](/help/assets/manage-assets.md).
 
    Ajoutez maintenant l’interactivité à votre vidéo.
 
