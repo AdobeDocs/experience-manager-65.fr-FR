@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
 1. Vous pouvez :
 
-   * Sélectionnez [**Afficher les propriétés **pour ouvrir les boîtes de dialogue](/help/assets/managing-assets-touch-ui.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
+   * Sélectionnez [**Afficher les propriétés** pour ouvrir les boîtes de dialogue](/help/assets/manage-assets.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
    * Ouvrez[ le fragment de contenu à modifier](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor), puis sélectionnez **Métadonnées** dans le panneau latéral.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
