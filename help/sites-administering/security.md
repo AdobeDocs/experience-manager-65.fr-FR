@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 79%
@@ -67,19 +67,19 @@ Les tableaux suivants répertorient chaque élément avec :
   </tr>
   <tr>
    <td><p>admin</p> <p>Mot de passe par défaut : admin</p> </td>
-   <td>Utilisateur</td>
+   <td>User</td>
    <td><p>Compte d’administration système avec droits d’accès complets.</p> <p>Ce compte est utilisé pour la connexion entre AEM WCM et CRX.</p> <p>Si vous supprimez ce compte par erreur, il sera recréé au redémarrage du référentiel (dans la configuration par défaut).</p> <p>Le compte administrateur est une exigence de la plateforme AEM. Par conséquent, ce compte ne peut pas être supprimé.</p> </td>
    <td><p>Adobe recommande vivement que le mot de passe de ce compte utilisateur soit différent de la valeur par défaut.</p> <p>De préférence à l’issue de l’installation, bien que ceci puisse s’effectuer par la suite.</p> <p>Remarque : ce compte ne doit pas être confondu avec le compte d’administrateur du moteur de servlet CQ.</p> </td>
   </tr>
   <tr>
    <td><p>anonymous</p> <p> </p> </td>
-   <td>Utilisateur</td>
+   <td>User</td>
    <td><p>Détient les droits par défaut pour l’accès non authentifié à une instance. Par défaut, il s’agit des droits d’accès minimum.</p> <p>Si vous supprimez ce compte par erreur, il sera recréé au redémarrage. Il ne peut pas être supprimé définitivement, mais peut être désactivé.</p> </td>
    <td>Évitez de supprimer ou de désactiver ce compte, car cela aura une incidence négative sur le fonctionnement des instances d’auteur. S’il existe des exigences de sécurité qui vous obligent à le supprimer, assurez-vous d’abord de tester correctement les effets qu’il a sur vos systèmes.</td>
   </tr>
   <tr>
    <td><p>Auteur </p> <p>Mot de passe par défaut : author</p> </td>
-   <td>Utilisateur</td>
+   <td>User</td>
    <td><p>Un compte d’auteur autorisé à écrire dans /content. Comprend les autorisations de contributeur et de surfeur.</p> <p>Peut être utilisé comme webmaster, car il dispose de l’accès à toute l’arborescence /content.</p> <p>Ce n’est pas un utilisateur intégré, mais un autre utilisateur de démonstration Geometrixx</p> </td>
    <td><p>Adobe vous recommande de supprimer complètement le compte ou de modifier le mot de passe par défaut.</p> <p>De préférence à l’issue de l’installation, bien que ceci puisse s’effectuer par la suite.</p> </td>
   </tr>
@@ -151,7 +151,7 @@ You can change the permissions granted/denied to a given user by selecting or cl
 
 L’emplacement de la coche sur la grille indique également de quelles autorisations les utilisateurs disposent et à quels endroits dans AEM (c’est-à-dire, les chemins d’accès).
 
-### Actions   {#actions}
+### Actions  {#actions}
 
 Les actions peuvent être effectuées sur une page (ressource). Pour chaque page dans la hiérarchie, vous pouvez spécifier quelle action l’utilisateur est autorisé à effectuer sur cette page. [Les autorisations](#permissions-and-acls) vous permettent d’autoriser ou de refuser une action.
 
@@ -205,7 +205,7 @@ Les actions peuvent être effectuées sur une page (ressource). Pour chaque page
 
 >[!NOTE]
 >
->AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/managing-collections-touch-ui.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
+>AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/manage-collections.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
 
 ### Listes de contrôle d’accès et leur méthode d’évaluation {#access-control-lists-and-how-they-are-evaluated}
 
@@ -238,8 +238,8 @@ Les listes de contrôle d’accès sont composées d’autorisations spécifique
 
 | **Action** | **Description** |
 |---|---|
-| Autoriser (coche) | AEM WCM permet à l’utilisateur d’effectuer l’action sur cette page ou sur n’importe quelle page enfant. |
-| Refuser (aucune coche) | AEM WCM ne permet pas à l’utilisateur d’effectuer l’action sur cette page ni sur aucune page enfant. |
+| Autoriser (coche) | aem WCM permet à l’utilisateur d’effectuer l’action sur cette page ou sur n’importe quelle page enfant. |
+| Refuser (aucune coche) | aem WCM ne permet pas à l’utilisateur d’effectuer l’action sur cette page ni sur aucune page enfant. |
 
 Les autorisations sont également appliquées à toutes les pages enfants.
 
@@ -457,9 +457,11 @@ Pour créer un groupe ou un utilisateur :
 1. Saisissez les détails requis, selon que vous créez un utilisateur ou un groupe.
 
    * Si vous sélectionnez **Créer un utilisateur**, entrez l’ID de connexion, le prénom et le nom, l’adresse électronique et un mot de passe. Par défaut, AEM crée un chemin d’accès en fonction de la première lettre du nom de famille, mais vous pouvez choisir un autre chemin d’accès.
+
    ![createuserdialog](assets/createuserdialog.png)
 
    * Si vous sélectionnez **Créer un groupe**, entrez un ID de groupe et une description facultative.
+
    ![creategroupdialog](assets/creategroupdialog.png)
 
 1. Cliquez sur **Créer**. L’utilisateur ou le groupe que vous avez créé apparaît dans l’arborescence.
@@ -638,6 +640,7 @@ L’autorisation de réplication est le droit de publier du contenu, et elle peu
 >* Un droit de réplication appliqué à un groupe s’applique à tous les utilisateurs figurant dans ce groupe.
 >* Les autorisations de réplication de l’utilisateur remplacent les autorisations de réplication du groupe.
 >* Les droits de réplication Autoriser ont une priorité supérieure aux droits de réplication Refuser. See [Permissions in AEM](#permissions-in-aem) for more information.
+
 >
 
 
@@ -700,7 +703,7 @@ Pour emprunter l’identité d’un utilisateur existant :
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
 ### Définition de préférences d’utilisateur et de groupe {#setting-user-and-group-preferences}
 
