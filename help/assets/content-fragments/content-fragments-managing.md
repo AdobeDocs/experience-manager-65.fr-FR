@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 99%
@@ -120,7 +120,7 @@ Sélectionnez le fragment pour afficher la barre d’outils avec les actions app
 
 >[!NOTE]
 >
->La plupart de ces actions sont [standard pour Assets](/help/assets/managing-assets-touch-ui.md) et/ou l’[application de bureau AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html).
+>La plupart de ces actions sont [standard pour Assets](/help/assets/manage-assets.md) et/ou l’[application de bureau AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html).
 
 ## Ouverture de l’éditeur de fragments {#opening-the-fragment-editor}
 
@@ -233,14 +233,14 @@ Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de
 
 ## Chronologie pour les fragments de contenu  {#timeline-for-content-fragments}
 
-Outre les options standard, la [Chronologie](/help/assets/managing-assets-touch-ui.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
+Outre les options standard, la [Chronologie](/help/assets/manage-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
 * Affichage des informations sur les versions, commentaires et annotations
 * Actions pour les versions
 
-   * **[Revenir à cette version](#reverting-to-a-version)**(sélectionner un fragment existant, puis une version spécifique)
+   * **[Revenir à cette version](#reverting-to-a-version)** (sélectionner un fragment existant, puis une version spécifique)
 
-   * **[Comparer à actuel](#comparing-fragment-versions)**(sélectionner un fragment existant, puis une version spécifique)
+   * **[Comparer à actuel](#comparing-fragment-versions)** (sélectionner un fragment existant, puis une version spécifique)
 
    * Ajouter un **libellé** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
 
