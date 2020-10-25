@@ -3,7 +3,7 @@ title: Traiter les actifs à l’aide de workflows
 description: Traitement des ressources pour convertir des formats, créer des rendus, gérer des ressources, valider des ressources et exécuter des workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 27%
@@ -27,7 +27,7 @@ Pour afficher les différents modèles de processus disponibles par défaut, voi
 
 ![Certains flux de travaux par défaut](assets/aem-default-workflows.png)
 
-*Figure : Certains des workflows par défaut disponibles dans[!DNL Experience Manager].*
+*Figure : Certains des workflows par défaut disponibles dans [!DNL Experience Manager].*
 
 ## Apply workflows to process assets {#applying-workflows-to-assets}
 
@@ -84,7 +84,7 @@ La procédure à suivre pour appliquer un workflow à plusieurs dossiers est sim
 
 ## Application d’un workflow à une collection {#applying-a-workflow-to-a-collection}
 
-Voir [appliquer un processus à une collection](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+Voir [appliquer un processus à une collection](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Début automatique d’un processus pour traiter les ressources de manière conditionnelle {#auto-execute-workflow-on-some-assets}
 
