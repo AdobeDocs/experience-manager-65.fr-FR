@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Le contenu associé fournit la connexion afin que les ressources puissent (éven
 >
 >Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
-Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
+Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md#adding-assets-to-a-collection). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
 
 1. Ouvrez votre fragment et sélectionnez ensuite **Contenu associé** dans le panneau latéral.
 
