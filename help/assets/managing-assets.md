@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%
@@ -22,7 +22,7 @@ La gestion des ressources Dynamic Media (images, vidéos et ressources interact
 
 Lors de l’aperçu, vous pouvez également appliquer des paramètres d’image prédéfinis (pour les images uniquement) ou des paramètres prédéfinis de visionneuse (pour la vidéo et les images). Vous ne pouvez pas appliquer les deux à une ressource. Voir [Application de paramètres prédéfinis de visionneuse](/help/assets/viewer-presets.md) et [Application de paramètres d’image prédéfinis](/help/assets/image-sets.md).
 
-Pour des informations générales sur la gestion des ressources, consultez [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/managing-assets-touch-ui.md).
+Pour des informations générales sur la gestion des ressources, consultez [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-assets.md).
 
 Les rubriques suivantes décrivent les tâches que vous devez effectuer pour gérer des ressources Dynamic Media :
 
