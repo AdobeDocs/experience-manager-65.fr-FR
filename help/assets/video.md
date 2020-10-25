@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '11828'
 ht-degree: 96%
@@ -71,7 +71,7 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
          [Prévisualisation de vidéos](managing-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](previewing-assets.md)
          [Affichage des rendus vidéo](video-renditions.md)
-         [Gestion des rendus vidéo](managing-assets-touch-ui.md#managing-renditions)
+         [Gestion des rendus vidéo](manage-assets.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de la visionneuse](managing-viewer-presets.md)
       * [Publication de ressources](publishing-dynamicmedia-assets.md)
@@ -81,16 +81,16 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
          [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
       * Modifiez les propriétés de la vidéo, telles que le titre, la description et les balises, ainsi que les champs de métadonnées personnalisés :
-         [Modification des propriétés vidéo](managing-assets-touch-ui.md#editing-properties)
+         [Modification des propriétés vidéo](manage-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
       * [Schémas de métadonnées](metadata-schemas.md)
    * Examiner, approuver et annoter des vidéos et conserver le contrôle total des versions
 
-      * [Annotation de vidéos](managing-video-assets.md#annotate-video-assets) ou [annotation de fichiers](managing-assets-touch-ui.md#annotating)
+      * [Annotation de vidéos](managing-video-assets.md#annotate-video-assets) ou [annotation de fichiers](manage-assets.md#annotating)
 
-      * [Création d’une version](managing-assets-touch-ui.md#asset-versioning)
-      * [Application de workflows à des ressources](assets-workflow.md) ou voir [Démarrage d’un processus sur une ressource](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Création d’une version](manage-assets.md#asset-versioning)
+      * [Application de workflows à des ressources](assets-workflow.md) ou voir [Démarrage d’un processus sur une ressource](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Examiner les ressources des dossiers](bulk-approval.md)
       * [Projets](../sites-authoring/projects.md)
@@ -1166,7 +1166,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
      En règle générale, vous attribuez au fichier de chapitres VTT le même nom que celui du fichier vidéo et lui ajoutez le mot « chapitres ». Ainsi, vous pouvez automatiser aisément la génération des URL de vidéo avec le système de gestion de contenu web existant.
 1. Dans AEM, chargez votre fichier de chapitres WebVTT.
 
-   Voir la section [Chargement des ressources](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Voir la section [Chargement des ressources](/help/assets/manage-assets.md#uploading-assets).
 
 1. Utilisez l’une des méthodes suivantes :
 
