@@ -3,7 +3,7 @@ title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Ex
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 56%
@@ -163,7 +163,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 
 ## Modification des métadonnées des collections {#collections-metadata}
 
-Pour plus d’informations, voir [vue et modification des métadonnées](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) de collection et [modification des métadonnées de plusieurs collections en bloc](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk).
+Pour plus d’informations, voir [vue et modification des métadonnées](/help/assets/manage-collections.md#view-edit-collection-metadata) de collection et [modification des métadonnées de plusieurs collections en bloc](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Application d’un profil de métadonnées à des dossiers {#applying-a-metadata-profile-to-folders}
 
@@ -242,7 +242,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier dans le menu **[
 >[!MORELIKETHIS]
 >
 >* [Concepts et compréhension](metadata-concepts.md)des métadonnées.
->* [Modification des propriétés de métadonnées de plusieurs collections](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Modification des propriétés de métadonnées de plusieurs collections](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Importation et exportation des métadonnées dans les ressources Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
