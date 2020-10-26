@@ -4,7 +4,7 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '4530'
 ht-degree: 7%
@@ -248,7 +248,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 ### Interface utilisateur {#ui-6560}
 
 * L’interface du navigateur de déchargement n’affiche pas toutes les rubriques de tâches (NPR-34308).
-* L&#39;interface du navigateur de configuration n&#39;affiche pas toutes les configurations (NPR-33644).
+* L&#39;interface [Configuration Browser](/help/sites-administering/configurations.md) n&#39;affiche pas toutes les configurations (NPR-33644).
 * Lorsque vous appuyez sur la `Esc` touche lorsque vous recherchez des utilisateurs à faire passer pour des utilisateurs, la boîte de dialogue **[!UICONTROL Utilisateur]** se ferme à la place de la liste utilisateur (NPR-34084).
 
 ### Intégrations {#integrations-6560}
