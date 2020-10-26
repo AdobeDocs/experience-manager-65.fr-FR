@@ -10,10 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 68%
+source-wordcount: '1661'
+ht-degree: 67%
 
 ---
 
@@ -52,6 +52,7 @@ AEM 6.5 est livré avec le module 1.2.6 de Livefyre pré-installé. Ce module in
 ### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General > Configuration Browser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Cliquez sur **Créer** pour ouvrir la boîte de dialogue Créer une configuration.
 1. Name your configuration and check the **Cloud Configurations** checkbox.
 
@@ -70,7 +71,7 @@ Configurez AEM pour utiliser les informations d’identification de licence Live
 
    >[!NOTE]
    >
-   >Pour que les configurations Livefyre puissent être ajoutées aux dossiers, les configurations de cloud doivent être activées dans leurs propriétés. Les dossiers de configuration sont créés et gérés dans l’explorateur de configurations.
+   >Pour que les configurations Livefyre puissent être ajoutées aux dossiers, les configurations de cloud doivent être activées dans leurs propriétés. Configuration folders are created and managed in the [Configuration Browser.](/help/sites-administering/configurations.md)
    >
    >Vous ne pouvez pas créer de nom pour une configuration, celle-ci étant référencée par le chemin d’accès au dossier dans laquelle elle se trouve. Vous ne pouvez disposer que d’une configuration par dossier.
 
@@ -222,7 +223,7 @@ Après avoir importé le catalogue de produits, les produits apparaissent en tem
 | Commentaires | X | X | X | X |
 | Filmstrip |  | X | X | X |
 | LiveBlog | X | X | X | X |
-| Mapper | X | X | X | X |
+| Map | X | X | X | X |
 | Mur multimédia | X | X | X | X |
 | Mosaïque | X | X | X | X |
 | Sondage |  | X | X | X |
