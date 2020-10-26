@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 63%
 
 ---
 
@@ -32,7 +35,7 @@ Pour télécharger le modèle, vous devez être membre du groupe forms-user. Sui
 
 1. Sélectionnez **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
 
-1. Appuyez sur **[!UICONTROL Créer]**>**[!UICONTROL Chargement de fichier]**.
+1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL File Upload]** (Téléchargement de fichier). 
 
    Naviguez et sélectionnez le modèle de canal d’impression approprié (XDP), puis appuyez sur **[!UICONTROL Ouvrir]**.
 
@@ -42,22 +45,23 @@ Les auteurs de modèles et les administrateurs peuvent créer, modifier et activ
 
 ### Création de modèle de canal web {#authoring-web-channel-template}
 
-Pour créer un modèle de canal web, vous devez d’abord créer un dossier modèle. Une fois que vous avez créé un modèle Web dans un dossier de modèles, vous devez activer le modèle pour permettre aux utilisateurs de formulaires de créer un canal Web d’une communication interactive basée sur le modèle.
+Pour créer un modèle de canal web, vous devez d’abord créer un dossier modèle. Une fois que vous avez créé un modèle Web dans un dossier de modèle, vous devez activer ce modèle pour permettre aux utilisateurs de formulaires de créer un canal Web d’une communication interactive basée sur ce modèle.
 
 Pour créer un modèle de canal Web, procédez comme suit :
 
-1. Créez un dossier Modèle pour conserver vos modèles Web de communication interactive, si vous n’en avez pas déjà un. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
+1. Créez un dossier Modèle pour conserver vos modèles Web de communication interactive, si vous n’en avez pas encore. For more information, see Template Folders in [Page Templates - Editable](/help/sites-developing/page-templates-editable.md).
 
    1. Tap **[!UICONTROL Tools]** ![tools](assets/tools.png) > **[!UICONTROL Configuration Browser]**.
+      * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
    1. In the Configuration Browser page, tap **[!UICONTROL Create]**.
    1. In the Create Configuration dialog, specify a title for the folder, check **[!UICONTROL Editable Templates]**, and tap **[!UICONTROL Create]**.
 
-      Le dossier est créé et répertorié dans la page du navigateur de configuration.
+      Le dossier est créé et répertorié dans la page Navigateur de configuration.
 
 1. Accédez au dossier de modèle approprié et créez un modèle web.
 
    1. Navigate to the appropriate template folder by selecting **[!UICONTROL Tools]** > **[!UICONTROL Templates]** > **`[Folder]`**.
-   1. Appuyez sur **[!UICONTROL Créer]**.
+   1. Appuyez sur **[!UICONTROL Créer]**. 
    1. Select **[!UICONTROL Interactive Communication - Web Channel]** and tap **[!UICONTROL Next]**.
    1. Entrez un titre et une description de modèle, puis appuyez sur **[!UICONTROL Créer]**.
 
@@ -67,7 +71,7 @@ Pour créer un modèle de canal Web, procédez comme suit :
 
       L’Éditeur de modèle s’affiche.
 
-      ![webchannel eltemplate](assets/webchanneltemplate.png)
+      ![webchanneltemplate](assets/webchanneltemplate.png)
 
       Lors de la création ou de la modification d’un modèle, un auteur de modèles peut définir différents aspects. La création ou la modification d’un modèle est similaire à la création de pages. For more information, see Editing Templates - Template Authors in [Creating Page Templates](/help/sites-authoring/templates.md).
 
@@ -82,5 +86,5 @@ Pour créer un modèle de canal Web, procédez comme suit :
 
 Lors de la création d’une communication interactive, les auteurs peuvent sélectionner cette option pour créer le canal web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme base pour le canal web garantit que le contenu, l’héritage et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression peuvent être répercutées sur le canal web. Les auteurs de communication interactive sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins.
 
-![Canal d&#39;impression en tant que canal](assets/create_ic_print_master_new.png) Web maître ![avec canal d&#39;impression en tant que canal maître](assets/create_ic_print_master_web_new.png)
+![Imprimer le canal en tant que canal](assets/create_ic_print_master_new.png) Web maître ![avec le canal d&#39;impression en tant que maître](assets/create_ic_print_master_web_new.png)
 
