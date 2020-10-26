@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 69%
+source-wordcount: '1812'
+ht-degree: 68%
 
 ---
 
@@ -53,7 +53,7 @@ Based on the [use case](/help/forms/using/create-your-first-interactive-communic
 * Résumé : Comprend un fragment de document (sous-formulaire Frais) et un graphique (sous-formulaire Graphiques).
 * Appels analysés : Inclut un tableau (fragment de mise en page)
 * Payer maintenant : Inclut une image
-* Services Ajoutés de valeur : Inclut une image
+* Services à valeur Ajoutée : Inclut une image
 
 ![create_print_template](assets/create_print_template.gif)
 
@@ -180,6 +180,7 @@ Pour créer un modèle de canal web, définissez un dossier dans lequel vous pou
 Exécutez les étapes suivantes pour créer un dossier pour les modèles modifiables :
 
 1. Tap **Tools** ![hammer-icon](assets/hammer-icon.svg) > **Configuration Browser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. In the Configuration Browser page, tap **Create**.
 1. In the **Create Configuration** dialog, specify **Create_First_IC_templates** as the title for the folder, check **Editable Templates**, and tap **Create**.
 
