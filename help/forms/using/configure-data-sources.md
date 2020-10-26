@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ee2b13f2fc1f044f119ff54f332844d458663287
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1810'
 ht-degree: 46%
 
 ---
@@ -98,6 +98,7 @@ All cloud service configurations in AEM are consolidated in the `/conf` folder i
 Pour configurer le dossier pour les configurations de service cloud :
 
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Procédez comme suit pour activer le dossier global pour les configurations cloud ou ignorez cette étape pour créer et configurer un autre dossier pour les configurations de service cloud.
 
    1. Dans le **[!UICONTROL navigateur de configuration]**, sélectionnez le dossier `global` et appuyez sur **[!UICONTROL Propriétés]**.
