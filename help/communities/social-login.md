@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2803'
 ht-degree: 2%
 
 ---
@@ -109,6 +109,8 @@ L’instance Application OAuth et Fournisseur [Granite](#adobe-granite-oauth-app
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Sélectionnez votre contexte et modifiez les propriétés. Activez les Configurations de cloud si elles ne sont pas encore activées.
 
    ![config-propertiespng](assets/config-propertiespng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. **Créez/modifiez** la configuration du service cloud Facebook.
 
@@ -259,6 +261,8 @@ L’instance Application OAuth et Fournisseur [Granite](#adobe-granite-oauth-app
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Sélectionnez votre contexte et modifiez les propriétés. Activez les Configurations de cloud si elles ne sont pas encore activées.
 
    ![twitterconfigproppng](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Créez/modifiez la configuration du service cloud Twitter.
 
@@ -446,7 +450,7 @@ Pour localiser l’instance créée pour une application Facebook ou Twitter :
 
 Pour chaque configuration du gestionnaire d’authentification OAuth, deux configurations supplémentaires sont créées dans l’instance :
 
-* Gestionnaire de synchronisation par défaut d’Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) - Aucune modification n’est requise, mais vous pouvez examiner les mappages des champs utilisateur comment les champs Facebook sont mappés à un noeud de profil d’utilisateur CQ. Notez également que &quot;Nom du gestionnaire de synchronisation&quot; correspond à l’ID de configuration du fournisseur OAuth.
+* Gestionnaire de synchronisation par défaut d’Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.DefaultSyncHandler) - Aucune modification n’est requise, mais vous pouvez examiner les mappages de champs utilisateur comment les champs Facebook sont mappés à un noeud de profil d’utilisateur CQ. Notez également que &quot;Nom du gestionnaire de synchronisation&quot; correspond à l’ID de configuration du fournisseur OAuth.
 * Module de connexion externe Apache Jackrabbit Oak (org.apache.jackrabbit.oak.spi.security.authentication.external.impl.ExternalLoginModuleFactory) - Aucune modification n&#39;est requise ici, mais vous pouvez remarquer que &#39;Nom du fournisseur d&#39;identité&#39; et &#39;Nom du gestionnaire de synchronisation&#39; sont identiques et pointent vers les configurations OAuth et de gestionnaire de synchronisation correspondantes, respectivement.
 
 For more information, see [Authentication with Apache Oak External Login Module](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
@@ -459,7 +463,7 @@ Si des avertissements de traversée sont affichés dans les journaux, il est rec
 
 Sur une instance d’auteur, connectée avec des privilèges d’administration :
 
-1. A partir de la navigation globale : sélectionnez **Outils,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. A partir de la navigation globale : sélectionnez **Outils, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Créez un index nommé ntBaseLucene-oauth à partir d&#39;une copie de ntBaseLucene :
 
    * Sous le noeud `/oak:index`
