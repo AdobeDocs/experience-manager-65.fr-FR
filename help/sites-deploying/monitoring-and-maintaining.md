@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 9f22cb618d487a2b02dc17149d11b81a9e9e27be
 workflow-type: tm+mt
-source-wordcount: '5899'
+source-wordcount: '5895'
 ht-degree: 81%
 
 ---
@@ -34,7 +34,7 @@ Un facteur clé est qu’en vue d’identifier des problèmes potentiels, vous d
 | Les [fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sont surveillés. |  |  |
 | Le contrôle du système s’exécute (constamment) en arrière-plan. | Cela comprend l’usage du processeur, de la mémoire, du disque et du réseau. En utilisant, par exemple, iostat / vmstat / perfmon. | Les données enregistrées sont visualisées et peuvent être utilisées pour suivre les problèmes de performance. Les données brutes sont accessibles. |
 | [Les performances d’AEM sont surveillées](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Cela comprend le [décompte des demandes](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) pour surveiller les niveaux de trafic. | Si une perte de performance significative ou sur le long terme est constatée, il convient d’entreprendre une investigation approfondie. |
-| Vous surveillez vos [agents de réplication](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). `` |  |  |
+| Vous surveillez vos [agents de réplication](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Purge régulière des instances de workflow. | Taille du référentiel et performance des workflows. | Voir [Purge régulière des instances de workflow](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Sauvegardes {#backups}
@@ -58,9 +58,9 @@ Une sauvegarde complète est souvent effectuée à intervalles réguliers (par e
 >[!CAUTION]
 >
 >Lors de l’exécution des sauvegardes de vos instances de production, des tests *doivent* être effectués pour vous assurer que la sauvegarde peut être restaurée.
-
->Sans cela, la sauvegarde est potentiellement inutile (au pire des cas).
 >
+>Sans cela, la sauvegarde est potentiellement inutile (au pire des cas).
+
 >[!NOTE]
 >
 >Pour plus d’informations sur les performances de sauvegarde, consultez la section [Performance de sauvegarde](/help/sites-deploying/configuring-performance.md#backup-performance).
@@ -100,13 +100,13 @@ Cette section traite des opérations de maintenance liées à la fonctionnalité
 
 ### Présentation {#overview}
 
-L’outil **Purge de versions** est disponible dans la console **[Outils](/help/sites-administering/tools-consoles.md)**sous**Versions **ou directement à l’adresse :
+L’outil **Purge de versions** est disponible dans la console **[Outils](/help/sites-administering/tools-consoles.md)** sous **Versions** ou directement à l’adresse :
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Chemin** du Début Chemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
+**Chemin** du début Chemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
 
 **Récursif** Lors de la purge de données, vous pouvez choisir entre exécuter l’opération sur un noeud ou sur une hiérarchie entière en sélectionnant Recursif.  Dans ce cas, le chemin donné définit le nœud racine de la hiérarchie. 
 
@@ -122,7 +122,7 @@ L’outil **Purge de versions** est disponible dans la console **[Outils](/help/
 
 Pour purger les versions d’un site web, procédez comme suit :
 
-1. Accédez à la console **[Outils](/help/sites-administering/tools-consoles.md)******, sélectionnez **Versions**et double-cliquez sur **Purger les versions.**
+1. Accédez à la console **[Outils](/help/sites-administering/tools-consoles.md)******, sélectionnez **Versions** et double-cliquez sur **Purger les versions.**
 1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
 
    * Si vous souhaitez purger uniquement le nœud défini par le chemin, désélectionner **Récursif**.
@@ -145,7 +145,7 @@ Les processus **Exécution d’essai** et **Purge** répertorient tous les noeud
 
 * `ignore (not versionnable)`: le noeud ne prend pas en charge le contrôle de version et est ignoré pendant le processus.
 
-* `ignore (no version)`: le noeud n’a aucune version et est ignoré pendant le processus. &quot;
+* `ignore (no version)`: le noeud n’a aucune version et est ignoré pendant le processus.
 
 * `retained`: le noeud n’est pas purgé.
 * `purged`: le noeud est purgé.
@@ -223,7 +223,7 @@ Contient des messages de journaux indiquant les événements pendant le démarra
 Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir de la variable 
 `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor` packages.
 
-* `<*cq-installation-dir*>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository`
 
    * `revision.log`
 Révision des informations de journalisation.
@@ -264,19 +264,19 @@ Les niveaux de journalisation sont les suivants :
 
 Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un niveau de journalisation différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
 
-1. S’il n’existe pas déjà, créez un dossier de configuration (`sling:Folder`) pour votre projet `/apps/<*project-name*>/config`.
-1. Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
+1. S’il n’existe pas déjà, créez un dossier de configuration (`sling:Folder`) pour votre projet `/apps/<project-name>/config`.
+1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
-   * Nom : `org.apache.sling.commons.log.LogManager.factory.config-<*identifier*>` (s’agissant d’un enregistreur)
+   * Nom : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (s’agissant d’un enregistreur)
 
-      Où `<*identifier*>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information).
+      Où `<identifier>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information).
 
       Par exemple, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Type : `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<*identifier*>` unique.
+   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<identifier>` unique.
 
 1. Définissez les propriétés suivantes sur ce nœud :
 
@@ -313,9 +313,19 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.pattern` prend en charge jusqu’à six arguments.
-
-   >{0} L’horodatage de type `java.util.Date` {1} l’indicateur de journal {2} le nom du thread actuel {3} le nom de l’enregistreur {4} le niveau de journalisation {5} le message de journal
-
+   >
+   >{0} Horodatage de type `java.util.Date`
+   >
+   >{1} le marqueur de journal
+   >
+   >{2} nom du thread actuel
+   >
+   >{3} nom de la journalisation
+   >
+   >{4} au niveau du journal
+   >
+   >{5} le message du journal
+   >
    >Si l’appel de journal comprend un `Throwable`, la trace de pile est ajoutée au message. 
 
    >[!CAUTION]
@@ -325,37 +335,42 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >[!NOTE]
    >
    >Log writer paths are relative to the `crx-quickstart` location.
+   >
    >Par conséquent, un fichier journal spécifié en tant que :
+   >
    >`logs/thelog.log`
-
+   >
    >écrit à :
-   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
+   >
+   >`<cq-installation-dir>/crx-quickstart/logs/thelog.log`.
+   >
    >Et un fichier journal spécifié en tant que :
+   >
    >`../logs/thelog.log`
-
+   >
    >écrit à un répertoire :
-   >` <*cq-installation-dir*>/logs/`
-
-&quot;(c’est-à-dire en regard de ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
+   >
+   >`<cq-installation-dir>/logs/`\
+   >(c’est-à-dire à côté de `<cq-installation-dir>/crx-quickstart/`)
 
 1. Cette étape est nécessaire uniquement lorsqu’un nouvel auteur est nécessaire (c’est-à-dire avec une configuration différente de l’auteur par défaut).
 
    >[!CAUTION]
    >
    >Une nouvelle configuration d’auteur de journalisation est uniquement nécessaire lorsque celle par défaut n’est pas appropriée. 
-
+   >
    >Si aucun auteur explicite n’est configuré, le système génère automatiquement un auteur implicite par défaut.
 
-   Under `/apps/<*project-name*>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
+   Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
-   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (as this is a Writer)
+   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
 
-      As with the Logger, `<*identifier*>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Par exemple, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Par exemple, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Type : `sling:OsgiConfig`
    >[!NOTE]
    >
-   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<*identifier*>` unique.
+   >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<identifier>` unique.
 
    Définissez les propriétés suivantes sur ce nœud :
 
@@ -383,25 +398,36 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
+   >
    >* une taille maximale de fichier
    >* une planification heure/date
 
-   pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
-   * Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
-   * Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
+   >
+   >pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
+   >
+   >* Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
 
-   La valeur par défaut est de &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
-   Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
-   | `'.'yyyy-MM` | Rotation au début de chaque mois |
-   |---|---|
-   | `'.'yyyy-ww` | Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
-   | `'.'yyyy-MM-dd` | Rotation à minuit tous les jours. |
-   | `'.'yyyy-MM-dd-a` | Rotation à minuit et midi de chaque jour. |
-   | `'.'yyyy-MM-dd-HH` | Rotation au sommet de chaque heure. |
-   | `'.'yyyy-MM-dd-HH-mm` | Rotation au début de chaque minute. |
-   Remarque : Lorsque vous spécifiez une heure/date :
-   1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
-pour éviter que certains caractères ne soient interprétés comme des lettres types.
+   >
+   >La valeur par défaut est de &#39;.&#39;yyyy-MM-dd (pour la rotation quotidienne du journal).
+   >
+   >Par exemple, à minuit le 20 janvier 2010 (ou pour être précis, lorsque le premier message de journal après cette heure est envoyé), ../logs/error.log sera renommé ../logs/error.log.2010-01-20. La journalisation du 21 janvier sera générée vers ../logs/error.log (nouveau et vide) jusqu’à ce qu’elle soit remplacée lors de la prochaine modification quotidienne.
+   >
+   >| `'.'yyyy-MM` | Rotation au début de chaque mois |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotation au premier jour de chaque semaine (dépend du paramètre régional). |
+   >| `'.'yyyy-MM-dd` | Rotation à minuit tous les jours. |
+   >| `'.'yyyy-MM-dd-a` | Rotation à minuit et midi de chaque jour. |
+   >| `'.'yyyy-MM-dd-HH` | Rotation au sommet de chaque heure. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotation au début de chaque minute. |
+   >
+   >Remarque : Lorsque vous spécifiez une heure/date :
+   > 1. Vous devez placer le texte littéral &quot;escape&quot; dans une paire de guillemets simples (&#39; &#39;);
+      >
+      >     
+      pour éviter que certains caractères ne soient interprétés comme des lettres types.
+      >
+      >  
    1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
 
 
@@ -433,7 +459,7 @@ Ces entrées contiennent les mêmes informations que lors de la modification d�
 
 #### Enregistrements d’audit OSGi dans la console web {#osgi-audit-records-from-the-web-console}
 
-OSGi events also generate audit records which can be seen from the **Configuration Status** tab -> **Log Files **tab in the AEM Web Console:
+Les événements OSGi produisent également des enregistrements d’audit pouvant être affichés dans l’onglet **État de la configuration** tab -> **Fichiers journaux** dans la console web Adobe AEM : 
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -474,8 +500,11 @@ Pour surveiller un agent de réplication :
    >[!CAUTION]
    >
    >N’utilisez pas le lien « Tester la connexion » pour la boîte d’envoi de la réplication inverse sur l’instance de publication. 
+   >
    >Si un test de réplication est effectué pour une file d’attente de la boîte d’envoi, les éléments qui sont plus anciens que la réplication de test sont retraités avec chaque réplication inverse.
+   >
    >Si de tels éléments existent déjà dans la file d’attente, ils peuvent être recherchés avec la requête XPath JCR suivante et doivent être supprimés.
+   >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Again you can develop a solution to detect all replication agents (located under `/etc/replication/author` or `/etc/replication/publish`), then check the status of the agent ( `enabled`, `disabled`) and the underlying queue ( `active`, `idle`, `blocked`).
@@ -644,7 +673,7 @@ En totalisant toutes les entrées GET d’une période spécifique (par exemple 
 
 Le journal des demande est un point de départ intéressant pour l’analyse de performances :
 
-`<*cq-installation-dir*>/crx-quickstart/logs/request.log`
+`<cq-installation-dir>/crx-quickstart/logs/request.log`
 
 Le journal se présente comme suit (les lignes sont raccourcis pour plus de simplificité) :
 
@@ -712,7 +741,7 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 ### Utilisation de rlog.jar pour trouver des demandes avec de longues durées {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM includes various helper tools located in:
-`<*cq-installation-dir*>/crx-quickstart/opt/helpers`
+`<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar` , , peut être utilisé pour trier rapidement `request.log` de sorte que les demandes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte.
 
@@ -1040,10 +1069,13 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 >[!NOTE]
 >
 >Consultez les articles suivants pour plus d’informations :
+>
 >* [Images de mémoire de threads](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
 >* [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 >* [Analyse à l’aide du profileur intégré](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
 >* [Analyse des processus lents et bloqués](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+
+>
 
 
 
@@ -1138,4 +1170,5 @@ Cela vous aidera à déterminer la quantité de mémoire utilisée, les algorith
 >[!NOTE]
 >
 >Pour la machine virtuelle d’Oracle, il existe également des informations à l’adresse suivante : 
+>
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
