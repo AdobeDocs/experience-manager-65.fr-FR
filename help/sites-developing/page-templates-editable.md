@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3218'
 ht-degree: 74%
 
 ---
@@ -51,7 +51,7 @@ Dans ce document, nous partons du principe que vous êtes déjà rompu à la cr�
 >[!NOTE]
 >
 >Le didacticiel suivant peut également être intéressant pour la configuration d’un modèle de page modifiable dans un nouveau projet :
->[Prise en main des sites AEM Partie 2 - Création d’une page et d’un modèle de base](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Prise en main de AEM Sites Partie 2 - Création d&#39;une page et d&#39;un modèle de base](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Création d’un modèle {#creating-a-new-template}
 
@@ -78,6 +78,7 @@ Lors de la création d’un modèle modifiable :
       * Si vous créez un modèle dans un dossier personnalisé en dehors de l’exemple de contenu We.Retail, vous pouvez sélectionner des composants Foundation ou utiliser des [composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
    * Si vous souhaitez que les créateurs de pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
    * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le contenu initial.
+
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    Pour connaître les détails techniques de la structure, consultez la section [Structure](/help/sites-developing/page-templates-editable.md#structure) de ce document.
@@ -88,6 +89,7 @@ Lors de la création d’un modèle modifiable :
 
       * Par exemple, les composants disponibles ou les dimensions minimales/maximales.
    * Elles s’appliquent au modèle (et aux pages créées avec le modèle).
+
    Pour plus d’informations sur la façon dont un créateur de modèles définit des stratégies, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    Pour connaître les détails techniques des stratégies, consultez la section [Stratégies de contenu](/help/sites-developing/page-templates-editable.md#content-policies) de ce document.
@@ -96,6 +98,7 @@ Lors de la création d’un modèle modifiable :
 
    * Le contenu initial définit le contenu qui s’affiche lors de la création d’une page basée sur le modèle.
    * Le contenu initial peut ensuite être modifié par les créateurs de la page.
+
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-initial-content-author).
 
    Pour connaître les détails techniques du contenu initial, consultez la section [Contenu initial](/help/sites-developing/page-templates-editable.md#initial-content) de ce document.
@@ -104,6 +107,7 @@ Lors de la création d’un modèle modifiable :
 
    * Vous pouvez définir la mise en page du modèle pour différents appareils.
    * La mise en page réactive pour les modèles fonctionne de la même manière que pour la création de pages.
+
    Pour plus d’informations sur la façon dont le créateur d’un modèle définit la mise en page de ce dernier, voir [Création de modèles de page](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
 
    Pour connaître les détails techniques de la mise en page du modèle, consultez la section [Mise en page](/help/sites-developing/page-templates-editable.md#layout) de ce document.
@@ -112,6 +116,7 @@ Lors de la création d’un modèle modifiable :
 
    * Un modèle peut être activé ou désactivé pour être mis à la disposition (ou non) des créateurs de pages.
    * Un modèle peut être rendu disponible ou indisponible pour certaines branches de la page.
+
    Pour plus d’informations sur la façon dont un créateur de modèles active un modèle, voir [Création de modèles de page](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
    Pour obtenir des informations techniques sur l’activation d’un modèle, consultez la section [Activation et autorisation d’un modèle à utiliser](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use) dans ce document
@@ -120,6 +125,7 @@ Lors de la création d’un modèle modifiable :
 
    * Lorsque vous utilisez un modèle pour créer une page, il n’existe aucune différence visible ni indication permettant de distinguer les modèles statiques des modèles modifiables.
    * Pour le créateur de pages, le processus est transparent.
+
    For details on how a page author uses templates to create a page, see [Creating and Organizing Pages](/help/sites-authoring/managing-pages.md#templates).
 
    Pour obtenir des informations techniques sur la création de pages à l’aide de modèles modifiables, consultez la section [Pages de contenu créées](/help/sites-developing/page-templates-editable.md#resultant-content-pages) de ce document.
@@ -174,7 +180,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
 ## Utilisation de CRXDE Lite {#using-crxde-lite}
 
-1. Un nouveau dossier (sous /conf) peut être créé pour votre instance par programmation ou avec CRXDE Lite.
+1. Un nouveau dossier (sous /conf) peut être créé pour votre instance par programmation ou avec un CRXDE Lite.
 
    La structure ci-dessous doit être utilisée :
 
@@ -191,7 +197,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
    `<your-folder-name> [sling:Folder]`
 
-   Nom (name) : `jcr:title`
+   Nom : `jcr:title`
 
    * Type : `String`
 
@@ -220,6 +226,8 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 >[!NOTE]
 >
 >Dans l’explorateur de configurations, vous pouvez modifier le dossier global et activer l’option **Modèles modifiables** si vous souhaitez créer des modèles dans ce dossier. Il ne s’agit toutefois pas de la méthode recommandée.
+>
+>See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 ### ACL et groupes {#acls-and-groups}
 
@@ -242,7 +250,7 @@ Le tableau suivant récapitule les autorisations nécessaires pour la modificati
 <table>
  <tbody>
   <tr>
-   <th>Chemin  </th>
+   <th>Chemin   </th>
    <th>Rôle/Groupe</th>
    <th>Autorisations<br /> </th>
    <th>Description</th>
@@ -302,7 +310,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table>
  <tbody>
   <tr>
-   <th>Chemin  </th>
+   <th>Chemin   </th>
    <th>Rôle/Groupe</th>
    <th>Autorisations<br /> </th>
    <th>Description</th>
@@ -487,9 +495,9 @@ Les éléments principaux sont les suivants :
 
 Ce nœud contient des propriétés pour le modèle :
 
-* **Name** (Nom) : `jcr:title`
+* **Nom** : `jcr:title`
 
-* **Name** (Nom) : `status`
+* **Nom** : `status`
 
    * ``**Type**: `String`
 
@@ -528,7 +536,7 @@ When [editing a template you can define the layout](/help/sites-authoring/templa
 
 Les stratégies de contenu (ou de conception) définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les stratégies de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 
-* La propriété `cq:policy`, sur le `root` noeud
+* The property `cq:policy`, on the `root` node
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fournit une référence relative à la stratégie de contenu pour le système de paragraphes de la page.
 
@@ -572,58 +580,59 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
          * Nom : status
          * Type : Chaîne
-         * Valeur: `enabled`
+         * Valeur : `enabled`
 
 1. **Modèles autorisés**
 
-   * [Définissez le(s) chemin(s) d’accès des modèles autorisés dans les **Propriétés de page **](/help/sites-authoring/templates.md#allowing-a-template-author)de la page appropriée ou de la page racine d’une sous-branche.
+   * [Définissez le(s) chemin(s) d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-authoring/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
       `cq:allowedTemplates`
-Sur la `jcr:content`
-   `jcr:content` du noeud de la branche requise.
+Sur la 
+`jcr:content` du noeud de la branche requise.
+   Par exemple, avec la valeur suivante :
 
-   `/conf/<your-folder>/settings/wcm/templates/.*`Par exemple, avec la valeur suivante :
+   `/conf/<your-folder>/settings/wcm/templates/.*`
 
-## `/conf/<your-folder>/settings/wcm/templates/.*`
+## Pages de contenu créées {#resultant-content-pages}
 
-Pages de contenu créées {#resultant-content-pages}
-
-* Les pages créées à partir de modèles modifiables :`structure``initial`
+Les pages créées à partir de modèles modifiables :
 
 * sont créées avec une sous-arborescence qui est fusionnée à partir de `structure` et `initial` dans le modèle ;
 
-   * contiennent des références aux informations contenues dans le modèle et le type de modèle. Pour cela, on utilise un nœud `jcr:content` avec les propriétés suivantes :
+* contiennent des références aux informations contenues dans le modèle et le type de modèle. Pour cela, on utilise un nœud `jcr:content` avec les propriétés suivantes :
 
    * `cq:template`
 Fournit la référence dynamique au modèle proprement dit ; fait en sorte que les modifications apportées au modèle soient répercutées sur les pages proprement dites.
 
-`cq:templateType`
-Fournit une référence au type de modèle.](assets/chlimage_1-71.png)
+   * `cq:templateType`
+Fournit une référence au type de modèle.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
-* Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et les composants :`/content/<my-site>/<my-page>`
+Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et les composants :
 
-* Contrôleur - `/content/<my-site>/<my-page>`Page résultante référençant le modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.[](#template-definitions)
+* Contrôleur - `/content/<my-site>/<my-page>`Page résultante référençant le modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.
 
 * Configuration : `/conf/<my-folder>/settings/wcm/templates/<my-template>`le [modèle et les stratégies](#template-definitions) de contenu associées définissent la configuration de la page.
 
-* Modèle – Lots OSGi Les [lots OSGi](/help/sites-deploying/osgi-configuration-settings.md) mettent en œuvre la fonctionnalité.](/help/sites-developing/components.md)
+* Modèle – Lots OSGi Les [lots OSGi](/help/sites-deploying/osgi-configuration-settings.md) mettent en œuvre la fonctionnalité.
 
-View - `/apps/<my-site>/components`
+* View - `/apps/<my-site>/components`
 On both the author and publish environments the content is rendered by [components](/help/sites-developing/components.md).
 
-* **Lors du rendu d’une page :**
+Lors du rendu d’une page :
 
-   * **Modèles**:
+* **Modèles**:
 
-* The `cq:template` property of its `jcr:content` node will be referenced to access the template that corresponds to that page.
+   * The `cq:template` property of its `jcr:content` node will be referenced to access the template that corresponds to that page.
 
-   * **Composants**:
+* **Composants**:
 
    * The page component will merge the `structure/jcr:content` tree of the template with the `jcr:content` tree of the page.
-   * Le composant de page autorisera uniquement l’auteur à modifier les nœuds de la structure du modèle qui ont été marqués comme étant modifiables (ainsi que ses éventuels enfants).`jcr:content``policies/jcr:content`
 
-      * Lors du rendu d’un composant sur une page, le chemin d’accès relatif de ce composant est prélevé dans le nœud `jcr:content` ; une recherche est ensuite effectuée dans le même emplacement sous le nœud `policies/jcr:content` du modèle.
+   * Le composant de page autorisera uniquement l’auteur à modifier les nœuds de la structure du modèle qui ont été marqués comme étant modifiables (ainsi que ses éventuels enfants).
+   * Lors du rendu d’un composant sur une page, le chemin d’accès relatif de ce composant est prélevé dans le nœud `jcr:content` ; une recherche est ensuite effectuée dans le même emplacement sous le nœud `policies/jcr:content` du modèle.
 
       * The `cq:policy` property of this node points to the actual content policy (i.e. it holds the design configuration for that component).
+
+      * De cette manière, vous pouvez disposer de plusieurs modèles qui réutilisent les mêmes configurations de stratégie de contenu.
