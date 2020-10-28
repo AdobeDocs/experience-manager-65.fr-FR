@@ -3,7 +3,7 @@ title: Préparation des ressources pour la traduction
 description: Créez des dossiers racine de langue pour préparer les fichiers à la traduction afin de prendre en charge les fichiers multilingues.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 1d3e908eafa1cdcbc6ef557da509f12cdd9418cc
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 62%
@@ -21,16 +21,16 @@ Chaque dossier de langue est appelé une copie de langue. Le dossier racine d’
 
 La copie de langue pour laquelle vous ajoutez initialement des ressources est le gabarit de langue. Le gabarit de langue est la source qui est traduite dans d’autres langues. L’exemple de hiérarchie de dossiers comporte plusieurs racines de langue :
 
-```
- /content
-  /- dam
-   |- en
-   |- fr
-   |- de
-   |- es
-   |- it
-   |- ja
-   |- zh
+```shell
+/content
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 Procédez comme suit pour préparer la traduction de vos ressources :
