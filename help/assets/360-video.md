@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: 0d5ee29141c897284f3f298d921f4f8528216f8f
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 96%
@@ -52,7 +52,7 @@ Les ressources vidéo 360 qui sont chargées dans AEM sont considérées comme 
 **Pour télécharger des ressources pour une utilisation avec la visionneuse de vidéos 360 :**
 
 1. Créez un dossier dédié à votre ressource vidéo 360.
-1. [Appliquez un profil de vidéo adaptative au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+1. [Appliquez un profil de vidéo adaptative au dossier.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
 
    Les exigences du rendu de contenu vidéo 360 sont plus élevées pour la résolution vidéo source et pour la résolution des rendus codée que pour le contenu vidéo standard.
 
@@ -98,7 +98,7 @@ Voir également [Modification de paramètres de visionneuse prédéfinis](/help/
 
 Lorsque vous êtes satisfait de la vidéo 360, vous pouvez la publier.
 
-Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
+Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
 Voir [Liaison d’URL à une application web](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
 Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
