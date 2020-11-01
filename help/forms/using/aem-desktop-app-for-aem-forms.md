@@ -1,8 +1,7 @@
 ---
-title: Application de bureau AEM pour AEM Forms
-seo-title: Application de bureau AEM pour AEM Forms
-description: 'null'
-seo-description: 'null'
+title: aem application pour ordinateur de bureau pour AEM Forms
+seo-title: aem application pour ordinateur de bureau pour AEM Forms
+description: aem application pour ordinateur de bureau pour AEM Forms
 uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +9,17 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3460909eb77cc078b728d1af4becd47cc4377b73
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 57%
 
 ---
 
 
 # AEM desktop app for AEM Forms {#aem-desktop-app-for-aem-forms}
 
-L’application de bureau AEM vous permet de mapper le référentiel de ressources Adobe Experience Manager (AEM) et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. Vous pouvez afficher les actifs et les fichiers binaires synchronisés dans un explorateur de fichiers et utiliser différentes applications pour modifier les fichiers selon les besoins. Outre l’affichage des fichiers, vous pouvez également créer, charger et supprimer les fichiers binaires. Vous pouvez également ouvrir, modifier et enregistrer les fichiers directement à partir du logiciel. Par exemple, vous pouvez directement ouvrir et modifier un fichier XDP à partir de Designer. Les modifications apportées aux actifs localement sont répercutés dans le référentiel des actifs AEM et dans l’interface utilisateur AEM Forms.
+aem application de bureau vous permet de mapper le référentiel Adobe Experience Manager (AEM) Assets et les fichiers binaires AEM Forms à un répertoire réseau sur votre système. Vous pouvez afficher les actifs et les fichiers binaires synchronisés dans un explorateur de fichiers et utiliser différentes applications pour modifier les fichiers selon les besoins. Outre l’affichage des fichiers, vous pouvez également créer, charger et supprimer les fichiers binaires. Vous pouvez également ouvrir, modifier et enregistrer les fichiers directement à partir du logiciel. Par exemple, vous pouvez directement ouvrir et modifier un fichier XDP à partir de Designer. Les modifications apportées aux actifs localement sont répercutés dans le référentiel des actifs AEM et dans l’interface utilisateur AEM Forms.
 
 Vous pouvez télécharger l’application à partir d’une instance AEM. For detailed information about downloading the app, see [AEM desktop app Release Notes](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html).
 
@@ -31,13 +33,13 @@ Vous pouvez utiliser l’application pour synchroniser les fichiers binaires des
 
 ## Enable AEM Forms for AEM desktop app {#enable-aem-forms-for-aem-desktop-app}
 
-L’application de bureau AEM utilise le protocole WebDAV sous Microsoft Windows et SMB1 sous Mac OS X pour se connecter à un serveur AEM Forms. Le serveur AEM Forms n’est pas prêt de synchroniser les fichiers binaires et autres ressources avec un client WebDAV ou SMB. Effectuez les étapes suivantes pour activer AEM Forms pour l’application de bureau AEM :
+aem application de bureau utilise le protocole WebDAV sous Microsoft Windows et SMB1 sous Mac OS X pour se connecter à un serveur AEM Forms. Le serveur AEM Forms n’est pas activé pour synchroniser les fichiers binaires et autres ressources avec un client WebDAV ou SMB. Suivez les étapes ci-après pour activer AEM Forms pour AEM application de bureau :
 
 1. Connectez-vous à AEM Forms en tant qu’administrateur.
 1. In the author instance, click ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![hammer](assets/hammer.png) **[!UICONTROL > Deployment > Operations > Web Console]**. La console Web s’ouvre dans une nouvelle fenêtre.
 1. Dans la fenêtre de la console Web, recherchez et ouvrez l’option **[!UICONTROL Configuration du module complémentaire Forms Manager]**.
 1. Dans la boîte de dialogue Configuration du module complémentaire Forms Manager, désélectionnez la case à cocher **[!UICONTROL Synchroniser les ressources de façon asynchrone]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
-1. Redémarrez le serveur AEM Forms. Après le redémarrage, le serveur AEM Forms est activé pour accepter et partager le contenu avec l’application de bureau AEM.
+1. Redémarrez le serveur AEM Forms. Après le redémarrage, le serveur AEM Forms est activé pour accepter et partager du contenu avec AEM application de bureau.
 1. Ouvrez l’application et connectez-vous au serveur AEM Forms.
 
    On successful connection, the app populates the `content/dam` and `content/dam/formsanddocuments` folders. En plus de déplacer des fichiers des dossiers ci-dessus vers des dossiers locaux et vice versa, vous pouvez utiliser l’application pour déplacer le contenu entre des dossiers remplis automatiquement.
