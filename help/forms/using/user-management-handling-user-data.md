@@ -1,14 +1,16 @@
 ---
 title: User Management Forms | Gestion des données utilisateur
 seo-title: User Management Forms | Gestion des données utilisateur
-description: 'null'
-seo-description: 'null'
+description: User Management Forms | Gestion des données utilisateur
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 81%
 
 ---
 
@@ -122,6 +124,7 @@ Exécutez les commandes de base de données suivantes pour exporter les données
    >
    >
 * Replace `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+
 >
 
 
@@ -184,7 +187,7 @@ To view user created in AEM repository, log into `https://'[server]:[port]'/lc/u
 
 Pour supprimer un utilisateur :
 
-1. Accédez à `https://'[server]:[port]'/lc/useradmin` avec les informations d’identification de l’administrateur AEM.
+1. Accédez à `https://'[server]:[port]'/lc/useradmin` avec les informations d’identification AEM administrateur.
 1. Recherchez un utilisateur et cliquez deux fois sur le nom d’utilisateur pour ouvrir ses propriétés. Copy the `Path` property.
 1. Go to AEM CRX DELite at `https://'[server]:[port]'/lc/crx/de/index.jsp` and navigate or search the user path.
 1. Supprimer le chemin d’accès et cliquez sur **[!UICONTROL Enregistrer tout]** pour supprimer définitivement l’utilisateur du référentiel AEM.
