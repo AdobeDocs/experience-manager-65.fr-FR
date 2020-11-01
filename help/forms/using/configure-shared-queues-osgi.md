@@ -3,13 +3,11 @@ title: Configuration des files d’attente partagées
 seo-title: Configuration des files d’attente partagées
 description: Découvrez comment utiliser les files d’attente partagées pour les workflows centrés sur Forms sur AEM Forms sur OSGi.
 seo-description: Découvrez comment utiliser les files d’attente partagées pour les workflows centrés sur Forms sur AEM Forms sur OSGi.
-uuid: null
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: null
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 4%
