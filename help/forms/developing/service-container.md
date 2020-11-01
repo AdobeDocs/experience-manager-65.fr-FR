@@ -1,8 +1,7 @@
 ---
 title: Conteneur de service
 seo-title: Conteneur de service
-description: 'null'
-seo-description: 'null'
+description: Services AEM Forms situés dans le conteneur de service
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '915'
 ht-degree: 2%
 
 ---
@@ -42,11 +41,11 @@ Le tableau suivant décrit les différentes manières dont vous pouvez appeler l
   </tr>
   <tr>
    <td><p>Services Web</p></td>
-   <td><p>aem forms prend en charge les normes de service Web telles que SOAP/HTTP. Un service peut être présenté comme un service Web, le WSDL respectant les normes de service Web définies par le W3C.</p><p>Un service peut être appelé à partir de n'importe quelle pile de services Web, y compris .NET Framework et Sun™ Web Services SDK. (See <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Invoking AEM Forms using Web Services</a>.)</p></td>
+   <td><p>AEM Forms prend en charge les normes de service Web telles que SOAP/HTTP. Un service peut être présenté comme un service Web, le WSDL respectant les normes de service Web définies par le W3C.</p><p>Un service peut être appelé à partir de n'importe quelle pile de services Web, y compris .NET Framework et Sun™ Web Services SDK. (See <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Invoking AEM Forms using Web Services</a>.)</p></td>
   </tr>
   <tr>
    <td><p>Demandes REST</p></td>
-   <td><p>aem forms prend en charge les demandes REST. Un service peut être appelé directement à partir d’une page HTML. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Appel d’AEM Forms à l’aide de requêtes</a>REST.)</p></td>
+   <td><p>AEM Forms prend en charge les demandes REST. Un service peut être appelé directement à partir d’une page HTML. (Voir <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Appel d’AEM Forms à l’aide de requêtes</a>REST.)</p></td>
   </tr>
  </tbody>
 </table>
