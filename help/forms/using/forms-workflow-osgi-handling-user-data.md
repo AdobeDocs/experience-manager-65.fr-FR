@@ -1,16 +1,15 @@
 ---
 title: Flux de travail basé sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
 seo-title: Flux de travail basé sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
-description: 'null'
-seo-description: 'null'
+description: Flux de travail basé sur l’utilisation de Forms sur OSGi | Gestion des données utilisateur
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1016'
 ht-degree: 79%
 
 ---
@@ -55,7 +54,7 @@ Les emplacements de référentiel par défaut où la charge utile, les brouillon
   <tr>
    <td><strong>Charge utile</strong></td>
    <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [id-charge-utile]/</td>
-   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [id-charge-utile/</td>
+   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [id-charge-utile]/</td>
   </tr>
   <tr>
    <td><strong>Brouillons</strong></td>
