@@ -1,21 +1,23 @@
 ---
 title: Flux de travail AEM Forms JEE | Gestion des données utilisateur
 seo-title: Flux de travail AEM Forms JEE | Gestion des données utilisateur
-description: 'null'
-seo-description: 'null'
+description: Flux de travail AEM Forms JEE | Gestion des données utilisateur
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '1371'
+ht-degree: 70%
 
 ---
 
 
 # Flux de travail AEM Forms JEE | Gestion des données utilisateur {#forms-jee-workflows-handling-user-data}
 
-Les processus AEM Forms JEE fournissent des outils pour concevoir, créer et gérer des processus d’entreprise. Un processus de flux de travail se compose d’une série d’étapes effectuées dans un ordre spécifique. Chaque étape exécute une action spécifique, par exemple, attribuer une tâche à un utilisateur ou envoyer un message électronique. Un processus peut interagir avec les ressources, les comptes utilisateur et les services. Il peut également être déclenché à l’aide de l’une des méthodes suivantes :
+Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gérer des processus d’entreprise. Un processus de flux de travail se compose d’une série d’étapes effectuées dans un ordre spécifique. Chaque étape exécute une action spécifique, par exemple, attribuer une tâche à un utilisateur ou envoyer un message électronique. Un processus peut interagir avec les ressources, les comptes utilisateur et les services. Il peut également être déclenché à l’aide de l’une des méthodes suivantes :
 
 * Démarrage d’un processus de l’espace de travail AEM Forms
 * Utilisation du service SOAP ou RESTful
@@ -23,7 +25,7 @@ Les processus AEM Forms JEE fournissent des outils pour concevoir, créer et gé
 * Utilisation d’un dossier de contrôle
 * Utilisation du courrier électronique
 
-For more information about creating AEM Forms JEE workflow process, see [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65).
+For more information about creating AEM Forms JEE workflow process, see [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65_fr).
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
@@ -31,13 +33,13 @@ Lorsqu’un processus est déclenché et tout au long de sa progression, il capt
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
-Lorsqu’un processus est déclenché, un ID d’instance de processus unique et un ID d’appel de longue durée sont générés et associés à l’instance de processus. Vous pouvez accéder et supprimer des données pour une instance de processus en fonction de l’ID d’appel de longue durée. Vous pouvez déduire l’ID d’appel de longue durée d’une instance de processus avec le nom d’utilisateur de l’initiateur du processus ou des participants au processus qui ont envoyé leurs tâches.
+Lorsqu’un processus est déclenché, un ID d’instance de processus unique et un ID d’appel de longue durée sont générés et associés à l’instance de processus. Vous pouvez accéder et supprimer des données pour une instance de processus en fonction de l’ID d’appel de longue durée. Vous pouvez déduire l’ID d’appel de longue durée d’une instance de processus avec le nom d’utilisateur de l’initiateur du processus ou des participants au processus qui ont soumis leurs tâches.
 
 Vous ne pouvez toutefois pas identifier l’ID de l’instance de processus pour un initiateur dans les cas suivants :
 
 * **Processus déclenché par un dossier de contrôle** : une instance de processus ne peut pas être identifiée à l’aide de son initiateur si le processus est déclenché par un dossier de contrôle. Dans ce cas, les informations de l’utilisateur sont codées dans les données stockées.
 * **Processus lancé à partir d’une instance de publication AEM** : toutes les instances de processus déclenchées depuis une instance de publication AEM ne capturent pas d’informations sur l’initiateur. Toutefois, les données utilisateur peuvent être capturées dans le formulaire associé au processus qui est stocké dans des variables de flux de travail.
-* **Processus initié par courrier électronique**: L’ID de courrier électronique de l’expéditeur est capturé en tant que propriété dans une colonne blob opaque de la table de `tb_job_instance` base de données, qui ne peut pas être interrogée directement.
+* **Processus initié par courrier électronique**: L&#39;ID d&#39;adresse électronique de l&#39;expéditeur est capturé en tant que propriété dans une colonne blob opaque de la table de la `tb_job_instance` base de données, qui ne peut pas être interrogée directement.
 
 ### Identification des ID de l’instance de processus lorsque l’initiateur ou le participant de flux de travail est connu {#initiator-participant}
 
@@ -78,7 +80,7 @@ Suivez les étapes ci-dessous pour identifier les ID de l’instance de processu
 
 ### Identification des ID de l’instance de processus lorsque les données utilisateur sont stockées dans des variables de type primitif {#primitive}
 
-Un flux de travail peut être conçu de telle sorte que les données utilisateur soient capturées dans une variable qui est stockée sous la forme d’un objet blob dans la base de données. Dans ce cas, vous pouvez interroger les données utilisateur uniquement si elles sont stockées dans l’une des variables de type primitif suivantes :
+Un processus peut être conçu de telle sorte que les données utilisateur soient capturées dans une variable qui est stockée en tant que blob dans la base de données. Dans ce cas, vous pouvez interroger les données utilisateur uniquement si elles sont stockées dans l’une des variables de type primitif suivantes :
 
 * **Chaîne** : contient l’ID utilisateur tel quel ou sous forme de sous-chaîne. Elle peut être interrogée via SQL.
 * **Numérique** : contient l’ID utilisateur tel quel.
@@ -166,6 +168,7 @@ Une fois les ID de tâche obtenus, procédez comme suit pour purger les fichiers
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
+
       Les fichiers possédant ces extensions sont les fichiers de marquage. Ils sont enregistrés avec des noms de fichier au format suivant :
 
       `<file_name_guid>.session<session_id_string>`
