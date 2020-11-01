@@ -1,8 +1,7 @@
 ---
 title: Présentation des processus AEM Forms
 seo-title: Présentation des processus AEM Forms
-description: 'null'
-seo-description: 'null'
+description: Présentation des processus AEM Forms
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '793'
 ht-degree: 3%
 
 ---
@@ -36,7 +35,7 @@ Cependant, il arrive qu’un processus ne puisse pas être exécuté de façon s
 
 >[!NOTE]
 >
->aem forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé.
+>AEM Forms ne crée pas d’enregistrement lorsqu’un processus de courte durée est appelé.
 
 A l’aide de la valeur d’identifiant d’appel, vous pouvez suivre l’état du processus de longue durée. Par exemple, vous pouvez utiliser la valeur de l’identifiant d’appel de processus pour effectuer des opérations Process Manager telles que l’arrêt d’une instance de processus en cours d’exécution.
 
