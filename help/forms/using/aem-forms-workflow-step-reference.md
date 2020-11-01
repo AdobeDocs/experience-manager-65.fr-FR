@@ -4,13 +4,12 @@ seo-title: Référence sur les étapes du processus basé sur l’utilisation de
 description: Les étapes du processus basé sur l’utilisation de Forms on OSGi vous permettent de créer rapidement des formulaires adaptatifs basés sur des processus.
 seo-description: Les étapes du processus basé sur l’utilisation de Forms on OSGi vous permettent de créer rapidement des formulaires adaptatifs basés sur des processus.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
-contentOwner: null
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aff67332de7295936ea45e3f38cd204fd448a570
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
 source-wordcount: '7109'
 ht-degree: 51%
@@ -280,7 +279,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 
 ## Etapes Services de document {#document-services-steps}
 
-Les services de document AEM sont un ensemble de services permettant de créer, d’assembler et de sécuriser des documents PDF. aem forms fournit une étape de flux de travail AEM distincte pour chaque service de document.
+Les services de document AEM sont un ensemble de services permettant de créer, d’assembler et de sécuriser des documents PDF. AEM Forms fournit une étape de flux de travail AEM distincte pour chaque service de document.
 
 À l’instar des autres étapes du processus AEM Forms, telles que Affecter une Tâche, Envoyer un courriel et Signer un Document, vous pouvez utiliser des variables dans toutes les étapes AEM services de Document. Pour plus d’informations sur la création et la gestion des variables, voir [Variables dans AEM workflows](../../forms/using/variable-in-aem-workflows.md).
 
