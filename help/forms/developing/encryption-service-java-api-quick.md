@@ -1,8 +1,7 @@
 ---
 title: API Java du service de chiffrement QuickStart (SOAP)
 seo-title: API Java du service de chiffrement QuickStart (SOAP)
-description: 'null'
-seo-description: 'null'
+description: API Java du service de chiffrement QuickStart (SOAP)
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 1%
+source-wordcount: '460'
+ht-degree: 0%
 
 ---
 
@@ -32,11 +31,11 @@ ht-degree: 1%
 
 [Début rapide (mode SOAP) : Détermination du type de chiffrement à l’aide de l’API Java](encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec AEM forms dépendent du serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec AEM formulaires sont basés sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : Chiffrement d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
