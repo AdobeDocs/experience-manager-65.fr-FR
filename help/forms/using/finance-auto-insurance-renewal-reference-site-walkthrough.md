@@ -1,8 +1,7 @@
 ---
 title: Présentation du site de référence de renouvellement de l’assurance automobile We.Finance
 seo-title: Présentation du site de référence de renouvellement de l’assurance automobile We.Finance
-description: 'null'
-seo-description: 'null'
+description: Présentation du site de référence de renouvellement de l’assurance automobile We.Finance
 uuid: c749a6f7-71f1-4f47-b824-9c7b699072c7
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +9,10 @@ content-type: reference
 discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 35%
+source-wordcount: '748'
+ht-degree: 36%
 
 ---
 
