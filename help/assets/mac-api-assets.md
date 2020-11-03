@@ -1,9 +1,9 @@
 ---
-title: API HTTP [ ! Ressources DNL].
+title: '[!DNL Assets] API HTTP.'
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 79%
@@ -183,7 +183,7 @@ Met à jour les propriétés de métadonnées de fichier. Si vous mettez à jour
 
 ### Mise à jour des métadonnées de synchronisation entre `dc` et `jcr` l’espace de nommage {#sync-metadata-between-namespaces}
 
-La méthode API met à jour les propriétés de métadonnées dans l’ `jcr` espace de nommage. Les mises à jour effectuées à l’aide de l’interface utilisateur tactile modifient les propriétés de métadonnées dans l’ `dc` espace de nommage. Pour synchroniser les valeurs de métadonnées entre `dc` et `jcr` l’espace de nommage, vous pouvez créer un processus et configurer le Experience Manager pour qu’il exécute le processus lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
+La méthode API met à jour les propriétés de métadonnées dans l’ `jcr` espace de nommage. Les mises à jour effectuées à l’aide de l’interface utilisateur modifient les propriétés de métadonnées dans l’ `dc` espace de nommage. Pour synchroniser les valeurs de métadonnées entre `dc` et `jcr` l’espace de nommage, vous pouvez créer un processus et configurer le Experience Manager pour qu’il exécute le processus lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
