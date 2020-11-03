@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4803'
 ht-degree: 98%
 
 ---
@@ -92,7 +92,7 @@ Pour démarrer rapidement :
    * [Ajout d’une bannière de carrousel à votre site web dans AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Si vous êtes client AEM Sites, vous pouvez ajouter le carrousel défini directement à la page dans AEM, à l’aide du composant Interactive Media.
 
 
-Si vous devez modifier des ensembles de carrousels, voir [Modification d’ensembles de carrousels.](#editing-carousel-sets) De plus, vous pouvez afficher et modifier les [propriétés d’un ensemble de carrousel](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties).
+Si vous devez modifier des ensembles de carrousels, voir [Modification d’ensembles de carrousels.](#editing-carousel-sets) De plus, vous pouvez afficher et modifier les [propriétés d’un ensemble de carrousel](manage-assets.md#editing-properties).
 
 ## Identification des variables de zone réactive et de zone cliquable {#identifying-hotspot-and-image-map-variables}
 
