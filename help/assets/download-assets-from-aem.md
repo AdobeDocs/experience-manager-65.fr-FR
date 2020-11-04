@@ -3,9 +3,9 @@ title: Télécharger des ressources
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '862'
 ht-degree: 75%
 
 ---
@@ -23,11 +23,11 @@ Les types de ressources Visionneuses d’images, Visionneuses à 360°, Visionne
 
 Pour télécharger des fichiers, procédez comme suit :
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
-1. On the Navigation page, tap **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
+1. Dans le coin supérieur gauche, cliquez sur le logo. Dans le rail de gauche, cliquez sur **[!UICONTROL Navigation]**.
+1. On the [!UICONTROL Navigation] page, click **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
 1. Accédez à un dossier contenant les ressources à télécharger.
 1. Sélectionnez le dossier ou une ou plusieurs ressources qu’il contient.
-1. Dans la barre d’outils, appuyez sur **[!UICONTROL Télécharger.]**
+1. On the toolbar, click **[!UICONTROL Download.]**
 
    ![Options disponibles lors du téléchargement de ressources à partir d’Experience Manager Assets](/help/assets/assets/asset-download1.png)
 
@@ -44,7 +44,7 @@ Pour télécharger des fichiers, procédez comme suit :
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis AEM. Un fichier zip contenant les rendus de recadrage intelligent est créé et téléchargé sur votre ordinateur local. |
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus à créer dynamiquement dans la liste [Paramètre d’image prédéfini](image-presets.md). <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). Cette option n’est disponible que si vous avez activé [!DNL Dynamic Media]. |
 
-1. Dans la boîte de dialogue, appuyez sur **[!UICONTROL Télécharger.]**.
+1. In the dialog box, click **[!UICONTROL Download.]**.
 
 Lorsque vous sélectionnez un dossier à télécharger, l’ensemble de la hiérarchie des ressources sous ce dossier est téléchargé. Pour inclure chaque ressource que vous téléchargez (dont les ressources dans les dossiers enfants imbriqués sous le dossier parent) dans un dossier individuel, sélectionnez **[!UICONTROL Créer un dossier distinct pour chaque ressource]**.
 
