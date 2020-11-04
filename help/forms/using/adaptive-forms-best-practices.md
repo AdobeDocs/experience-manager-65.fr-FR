@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 translation-type: tm+mt
-source-git-commit: d5efcec4a0397d99c899643ff13a883a0ed02c81
+source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 83%
+source-wordcount: '4296'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +26,7 @@ Ce document fournit des instructions et des recommandations dont peuvent bénéf
 
 En outre, voici quelques recommandations de lecture concernant les meilleures pratiques générales d’AEM :
 
-* [Meilleures pratiques : Déploiement et maintenance d’AEM](/help/sites-deploying/best-practices.md)
+* [Meilleures pratiques : Déploiement et gestion des AEM](/help/sites-deploying/best-practices.md)
 * [Meilleures pratiques : création de contenu](/help/sites-authoring/best-practices.md)
 * [Meilleures pratiques : administration d’AEM](/help/sites-administering/administer-best-practices.md)
 * [Meilleures pratiques : développement de solutions](/help/sites-developing/best-practices.md)
@@ -66,9 +66,9 @@ Une fois votre projet AEM configuré, définissez la stratégie de création et 
 * AEM Forms vous permet de créer des formulaires adaptatifs qui reposent sur les modèles de formulaire suivants. Les modèles de formulaire ont un rôle d’interface destinée à l’échange des données entre un formulaire et un système AEM, et fournissent une structure XML pour le flux de données dans le formulaire adaptatif ou à l’extérieur. En outre, les modèles de formulaire imposent des règles et contraintes aux formulaires adaptatifs sous forme de schéma et de contraintes XFA.
 
    * **Aucun** : les formulaires adaptatifs créés avec cette option n’utilisent pas de modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
-   * **schéma** XML ou JSON : Les schémas XML et JSON représentent la structure dans laquelle les données sont produites ou utilisées par le système principal de votre entreprise. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet du modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
+   * **SCHÉMA** XML ou JSON : Les schémas XML et JSON représentent la structure dans laquelle les données sont générées ou utilisées par le système principal de votre entreprise. Vous pouvez associer un schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma sont disponibles dans l’onglet Objet du modèle de données du navigateur de contenu pour la création de formulaires adaptatifs. Vous pouvez faire glisser et déposer les éléments du schéma pour créer le formulaire.
    * **Modèle de formulaire XFA** : il s’agit du modèle de formulaire idéal si vous avez des investissements dans des formulaires HTML5 de type XFA. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les motifs.
-   * **Modèle** de données de formulaire : Il s’agit d’un modèle de formulaire recommandé si vous souhaitez intégrer vos systèmes principaux tels que les bases de données, les services Web et le profil utilisateur AEM afin de préremplir les formulaires adaptatifs et de réécrire les données de formulaire envoyées dans les systèmes principaux. Un éditeur de modèle de données de formulaire vous permet de définir et de configurer des entités et des services dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Pour plus d’informations, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
+   * **Modèle** de données de formulaire : Il s’agit d’un modèle de formulaire préféré si vous souhaitez intégrer vos systèmes principaux tels que les bases de données, les services Web et le profil utilisateur AEM pour préremplir les formulaires adaptatifs et réécrire les données de formulaire envoyées dans les systèmes principaux. Un éditeur de modèle de données de formulaire vous permet de définir et de configurer des entités et des services dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Pour plus d’informations, voir [Intégration des données AEM Forms](/help/forms/using/data-integration.md).
 
 Il est important de sélectionner avec soin le modèle de données qui correspond à vos besoins, tout en optimisant vos investissements existants dans les ressources XFA et XSD, le cas échéant. Il est recommandé d’utiliser XSD Model pour créer des modèles de formulaire car le fichier XML généré contient les données selon l’expression XPATH définie par le schéma. L’utilisation de XSD Model comme choix par défaut pour le modèle de données de formulaire est également utile, car il dissocie la conception de formulaire du système d’arrière-plan qui traite et consomme les données et il améliore les performances du formulaire en raison du mappage un-à-un du champ de formulaire. En outre, la valeur BindRef du champ peut être utilisée comme XPATH de sa valeur de données dans le fichier XML.
 
@@ -181,7 +181,7 @@ Vous pouvez préremplir des champs de formulaires adaptatifs avec des données e
 * Les données XML préremplies doivent être conformes au schéma du modèle de formulaire associé au formulaire adaptatif.
 * Incluez les sections `afBoundedData` et `afUnBoundedData` dans le fichier XML prérempli pour préremplir les champs liés et non liés d’un formulaire adaptatif.
 
-* Pour les formulaires adaptatifs basés sur le modèle de données de formulaire, les AEM Forms fournissent le service prérempli de modèle de données de formulaire prêt à l’emploi. Le service de préremplissage récupère les sources de données pour les objets de modèle de données dans le formulaire adaptatif et préremplit les valeurs de champ lors du rendu du formulaire.
+* Pour les formulaires adaptatifs basés sur le modèle de données de formulaire, AEM Forms fournit le service de préremplissage de modèle de données de formulaire prêt à l’emploi. Le service de préremplissage récupère les sources de données pour les objets de modèle de données dans le formulaire adaptatif et préremplit les valeurs de champ lors du rendu du formulaire.
 * Vous pouvez également utiliser les formulaires adaptatifs de préremplissage de protocoles de fichier, crx, de services ou http.
 * AEM Forms prend en charge les services de préremplissage personnalisés que vous pouvez brancher en tant que service OSGi pour préremplir des formulaires adaptatifs.
 
@@ -258,7 +258,7 @@ Certaines meilleures pratiques en matière de localisation des formulaires adapt
 
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* Le AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR). Cependant, vous pouvez ajouter la prise en charge de nouveaux paramètres régionaux pour les formulaires adaptatifs à l’exécution.  Pour plus d’informations, voir [Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs](/help/forms/using/supporting-new-language-localization.md).
+* AEM Forms prend actuellement en charge la localisation du contenu des formulaires adaptatifs en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-taïwanais (zh-TW) et coréen (ko-KR). Cependant, vous pouvez ajouter la prise en charge de nouveaux paramètres régionaux pour les formulaires adaptatifs à l’exécution.  Pour plus d’informations, voir [Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs](/help/forms/using/supporting-new-language-localization.md).
 
 ## Préparation du projet de formulaires à des fins de production {#prepare-forms-project-for-production}
 
@@ -310,6 +310,8 @@ Dans un environnement de production, il est recommandé de ne pas stocker les do
 * **Stockage des données** d&#39;envoi : Si vous utilisez le magasin d’envoi de Forms Portal, vous devez implémenter une interface SPI personnalisée pour stocker les données d’envoi dans une base de données. See [Sample for integrating drafts &amp; submissions component with database](/help/forms/using/integrate-draft-submission-database.md) for a sample integration.
 
    Vous pouvez également écrire une action d’envoi personnalisée qui stocke les données de formulaires et les pièces jointes dans un espace de stockage sécurisé. See [Writing custom Submit action for adaptive forms](/help/forms/using/custom-submit-action-form.md) for more information.
+
+* **Longueur de l&#39;ID** de brouillon : Lorsque vous enregistrez un formulaire adaptatif en tant que brouillon, un ID de brouillon est généré pour identifier de manière unique le brouillon. La longueur minimale du champ ID de brouillon est de 26 caractères. L’Adobe recommande de définir la longueur du brouillon d’ID sur 26 caractères ou plus.
 
 ### Traitement des informations d’identification personnelle {#handling-personally-identifiable-information}
 
