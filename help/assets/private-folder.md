@@ -3,10 +3,10 @@ title: Dossiers privés pour le partage de fichiers
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 24%
+source-wordcount: '572'
+ht-degree: 15%
 
 ---
 
@@ -47,11 +47,11 @@ Pour créer et partager un dossier privé :
 
    >[!NOTE]
    >
-   >Vous pouvez affecter différents rôles (tels que Éditeur, Propriétaire ou Observateur) à l’utilisateur avec lequel vous partagez le dossier. Si vous attribuez un rôle Propriétaire à l’utilisateur, l’utilisateur possède des privilèges Éditeur sur le dossier. En outre, il peut partager le dossier avec d’autres utilisateurs. Si vous affectez le rôle Éditeur, l’utilisateur peut modifier les ressources situées dans votre dossier privé. Si vous attribuez un rôle de lecteur de contenu, l’utilisateur peut uniquement vue les fichiers de votre dossier privé.
+   >You can assign various roles, such as `Editor`, `Owner`, or `Viewer` to the user with whom you share the folder. If you assign an `Owner` role to the user, the user has `Editor` privileges on the folder. En outre, il peut partager le dossier avec d’autres utilisateurs. If you assign an `Editor` role, the user can edit the assets in your private folder. Si vous attribuez un rôle de lecteur de contenu, l’utilisateur peut uniquement vue les fichiers de votre dossier privé.
 
    >[!NOTE]
    >
-   >Le dossier privé comporte au moins un membre doté du rôle Propriétaire. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants (et l’administrateur lui-même) du dossier privé, l’administrateur doit ajouter un autre utilisateur en tant que propriétaire.
+   >Le dossier privé comporte au moins un membre avec `Owner` un rôle. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants (et l’administrateur lui-même) du dossier privé, l’administrateur doit ajouter un autre utilisateur en tant que propriétaire.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Depending on the role you assign, the user is assigned a set of privileges on your private folder when the user logs in to [!DNL Assets].
 1. Cliquez sur **[!UICONTROL OK]** pour fermer le message de confirmation.
@@ -59,7 +59,7 @@ Pour créer et partager un dossier privé :
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Cliquez sur Notifications pour ouvrir la liste des notifications.
+1. Cliquez sur [!UICONTROL Notifications] pour ouvrir une liste de notifications.
 
    ![Liste des notifications](assets/Assets-Notification.png)
 
@@ -83,4 +83,4 @@ Vous pouvez supprimer un dossier en le sélectionnant et en sélectionnant l’o
 >
 >Si vous supprimez un dossier à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés.
 >
->Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être nettoyés du référentiel à l’aide de `clean` la méthode JMX dans votre instance d’auteur (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de la `clean` méthode JMX dans l’instance d’auteur (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
