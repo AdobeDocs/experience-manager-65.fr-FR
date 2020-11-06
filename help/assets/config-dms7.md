@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 648b9601445a46b6a2734d5a47545c0439b9c283
 workflow-type: tm+mt
-source-wordcount: '5944'
-ht-degree: 84%
+source-wordcount: '5964'
+ht-degree: 82%
 
 ---
 
@@ -155,8 +155,8 @@ Les tâches d’installation et de configuration incluent :
 * [Configuration de la publication pour Image Server](#publishing-setup-for-image-server)
 * [Configuration des paramètres généraux de l’application](#configuring-application-general-settings)
 * [Configuration de la gestion des couleurs](#configuring-color-management)
-* [Configuration du traitement des ressources](#configuring-asset-processing)
-* [Ajout de types MIME personnalisés pour les formats non pris en charge](#adding-custom-mime-types-for-unsupported-formats)
+* [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
+* [Ajouter les types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
 * [Création de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Configuration de la publication pour Image Server  {#publishing-setup-for-image-server}
@@ -228,18 +228,18 @@ Cela aura les effets suivants :
 * Les rendus dynamiques qui renvoient une sortie RVB, la renverront dans l’espace colorimétrique *sRVB*.
 * Les rendus dynamiques qui renvoient une sortie CMJN, la renverront dans l’espace colorimétrique *WebCoated*.
 
-#### Configuration du traitement des ressources {#configuring-asset-processing}
+#### Modification des types MIME pour les formats pris en charge {#editing-mime-types-for-supported-formats}
 
 Vous pouvez définir les types de ressources qui doivent être traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un PDF Adobe en ressource de catalogue électronique.
 * Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript encapsulé Adobe Photoshop (.eps).
-* Remarque : des profils vidéo et d’images peuvent être utilisés pour définir le traitement des vidéos et des images, respectivement.
+* [Les Profils](/help/assets/video-profiles.md) vidéo et les Profils [](/help/assets/image-profiles.md) d’imagerie peuvent être utilisés pour définir le traitement des vidéos et des images, respectivement.
 
 Voir la section [Chargement des ressources](/help/assets/manage-assets.md#uploading-assets).
 
-**Pour configurer le traitement des ressources**
+**Pour modifier les types MIME pour les formats pris en charge**
 
 1. In AEM, click the AEM logo to access the global navigation console, then click **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. Dans le rail de gauche, accédez à ce qui suit :
@@ -262,11 +262,11 @@ Voir la section [Chargement des ressources](/help/assets/manage-assets.md#upload
 
 1. Dans le coin supérieur gauche de la page, appuyez sur **[!UICONTROL CRXDE Lite]** pour revenir dans AEM.
 
-#### Ajout de types MIME personnalisés pour les formats non pris en charge {#adding-custom-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
 Vous pouvez ajouter des types MIME personnalisés pour les formats non pris en charge dans AEM Assets. Pour vous assurer que tout nouveau nœud ajouté dans CRXDE Lite n’est pas supprimé par AEM, vous devez vous assurer que vous déplacez le type MIME avant `image_` et que sa valeur activée est définie sur **[!UICONTROL false.]**
 
-**Pour ajouter des types MIME personnalisés pour des formats non pris en charge**
+**Pour ajouter des types MIME pour des formats non pris en charge**
 
 1. Dans AEM, appuyez sur **[!UICONTROL Outils > Opérations > Console web.]**
 
@@ -521,11 +521,13 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Dans le champ **[!UICONTROL Nombre maximal de tâches en parallèle]**, modifiez le nombre en fonction de la valeur souhaitée.
 
-   Par défaut, le nombre maximal de tâches en parallèle dépend du nombre de cœurs de processeur disponibles. Par exemple, sur un serveur à 4 cœurs, 2 threads de traitement sont attribués. (Une valeur comprise entre 0,0 et 1,0 est basée sur un ratio, ou tout nombre supérieur à 1 attribuera le nombre de threads de traitement.)
+   Vous pouvez augmenter le **[!UICONTROL nombre maximum de tâches]** parallèles afin de prendre en charge de manière adéquate le téléchargement intensif de fichiers dans Contenu multimédia dynamique. La valeur exacte dépend de la capacité matérielle. Dans certains cas, c’est-à-dire lors d’une migration initiale ou d’un transfert en vrac unique, vous pouvez utiliser une valeur importante. Sachez toutefois que l’utilisation d’une valeur élevée (par exemple deux fois le nombre de coeurs) peut avoir des effets négatifs sur d’autres activités simultanées. Vous devez donc tester et ajuster la valeur en fonction de votre cas d’utilisation particulier.
 
-   Adobe recommande de configurer 32 comme **[!UICONTROL nombre maximal de tâches en parallèle]**, de façon à prendre en charge de manière adéquate le transfert massif de fichiers vers Dynamic Media Classic (Scene7).
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic (Scene7). -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Appuyez sur **[!UICONTROL Enregistrer.]**
 
