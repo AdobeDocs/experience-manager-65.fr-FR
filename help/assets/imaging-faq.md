@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 283802809d665cd979e2f1a4fa969b6ddc491ed6
+source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 98%
+source-wordcount: '2085'
+ht-degree: 79%
 
 ---
 
@@ -60,11 +60,23 @@ Non. L’imagerie dynamique est incluse dans votre licence Dynamic Media Classic
 
 ## Comment fonctionne l’imagerie dynamique ? {#how-does-smart-imaging-work}
 
-L’imagerie dynamique utilise Adobe Sensei pour convertir automatiquement les images en optimisant au maximum le format, la taille et la qualité, selon les fonctionnalités du navigateur :
+Lorsqu’une image est demandée par un consommateur, nous vérifions les caractéristiques de l’utilisateur et la convertissons au format d’image approprié en fonction du navigateur utilisé. Ces conversions de format sont effectuées de manière à ne pas dégrader la fidélité visuelle. L’imagerie intelligente convertit automatiquement les images dans différents formats en fonction des fonctionnalités du navigateur, comme suit.
 
-* Conversion automatique au format WebP pour les navigateurs tels que Chrome, Firefox, Microsoft Edge, Android et Opera.
-* Conversion automatique au format JPEG2000 pour les navigateurs tels que Safari.
-* Conversion automatique au format JPEG pour les navigateurs tels qu’Internet Explorer 9+.
+* Convertir automatiquement en WebP pour les navigateurs suivants :
+   * Chrome
+   * Firefox
+   * Microsoft Edge
+   * Safari 14.0 +
+      * Safari 14 uniquement avec iOS 14.0 et versions ultérieures et macOS BigSur et versions ultérieures
+   * Android
+   * Opera
+* Prise en charge héritée du navigateur pour les éléments suivants :
+
+   | Navigateur | Version du navigateur/du système d’exploitation | Format |
+   | --- | --- | --- |
+   | Safari | iOS 14.0 ou version antérieure | JPEG2000 |
+   | Edge | 18 ou version antérieure | JPEGXR |
+   | Internet Explorer | 9+ | JPEGXR |
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
@@ -90,11 +102,15 @@ L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis ex
 
 ## Vais-je devoir modifier des URL ou des paramètres d’image prédéfinis, ou déployer du nouveau code sur mon site pour exploiter l’imagerie dynamique ? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Non. L’imagerie dynamique fonctionne parfaitement avec vos paramètres d’image prédéfinis et URL d’image existants. En outre, l’imagerie dynamique n’exige pas que vous ajoutiez du code sur votre site web pour détecter le navigateur d’un utilisateur. Tout cela est géré automatiquement.
+L’imagerie dynamique fonctionne en toute transparence avec vos URL d’image et paramètres d’image prédéfinis existants si vous configurez l’imagerie dynamique sur votre domaine personnalisé existant. En outre, l’imagerie dynamique n’exige pas que vous ajoutiez du code sur votre site web pour détecter le navigateur d’un utilisateur. Tout cela est géré automatiquement.
 
-<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
+Si vous devez configurer un nouveau domaine personnalisé pour utiliser l’imagerie intelligente, les URL devront être mises à jour pour refléter ce domaine personnalisé.
 
 Voir également [Suis-je autorisé à utiliser l’imagerie dynamique ?](#am-i-eligible-to-use-smart-imaging) pour connaître les conditions préalables requises pour l’imagerie dynamique.
+
+<!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
+
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 ## L’imagerie dynamique est-elle compatible avec le protocole HTTPS ? Et qu’en est-il du protocole HTTP/2 ?  {#does-smart-imaging-working-with-https-how-about-http}
 
@@ -177,6 +193,34 @@ Au cours de la transition initiale, les images non mises en cache accèdent dir
 Toutes les images ne sont pas converties. L’imagerie dynamique détermine si la conversion est requise en vue d’améliorer les performances. Dans certains cas, si aucune amélioration des performances n’est attendue, ou que le format n’est pas JPEG ou PNG, l’image n’est pas convertie.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
+
+## Comment puis-je connaître le gain de performance ? Y a-t-il un moyen de noter les avantages de Smart Imaging ? {#performance-gain}
+
+**A propos des en-têtes Smart Imaging**
+
+Les valeurs d’en-tête Smart Imaging ne fonctionnent que lorsque des requêtes non mises en cache sont diffusées à compter de maintenant. Cela permet de maintenir la compatibilité du cache actuel et d’éviter d’avoir à effectuer des calculs lorsque les images sont diffusées par le biais du cache.
+
+Pour utiliser des en-têtes d’imagerie intelligente, vous devez ajouter le`cache=off`modificateur à vos requêtes. Voir[Cache dans l’API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html)de diffusion et de rendu des images de Contenu multimédia dynamique.
+
+Exemple d’utilisation `cache=off` (à des fins d’illustration uniquement) :
+
+`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
+
+Après avoir utilisé une telle requête, dans la section En-têtes de réponse, vous pouvez voir `-x-adobe-smart-imaging` l’en-tête. Reportez-vous à la capture d&#39;écran suivante avec `-x-adobe-smart-imaging` mise en évidence.
+
+![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
+
+Cette valeur d’en-tête indique ce qui suit :
+
+* Smart Imaging travaille pour la société.
+* La valeur positive (>=0) indique que la conversion a réussi. Dans ce cas, une nouvelle image (webP ici) est renvoyée.
+* La valeur négative (&lt;0) indique que la conversion a échoué. Dans ce cas, l’image d’origine demandée est renvoyée (JPEG par défaut, si elle n’est pas spécifiée).
+* La valeur indique la différence en octets entre l’image demandée et la nouvelle image. Dans ce cas, les octets enregistrés sont de 75048, soit environ 75 Ko pour une image. 
+   * La valeur négative indique que l’image demandée est plus petite que la nouvelle image. La différence de taille est négative, mais l&#39;image diffusée est l&#39;image demandée d&#39;origine uniquement
+
+**Quand utiliser les en-têtes d&#39;imagerie intelligente ?**
+
+Les en-têtes de réponse Smart Imaging sont activés à des fins de débogage ou tout en mettant en évidence les avantages de Smart Imaging uniquement. L’utilisation`cache=off`dans des scénarios normaux peut avoir un impact significatif sur les temps de charge.
 
 ## Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ? {#turning-off-smart-imaging}
 
