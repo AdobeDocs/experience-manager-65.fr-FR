@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
+source-git-commit: 141a1783f275c0b3587ebc374bde19a21e107409
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 91%
@@ -97,7 +97,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
 1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow > Models.]**
-1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources.]**
+1. Sur la page Modèles de workflow, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 
    ![Page Modèles de workflow avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
 
@@ -117,9 +117,9 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
    ![Boîte de dialogue des propriétés](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done.]**
+1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialog box, click **[!UICONTROL Done]**.
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync.]** Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
+1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 
