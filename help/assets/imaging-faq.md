@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
+source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
 workflow-type: tm+mt
-source-wordcount: '2085'
-ht-degree: 79%
+source-wordcount: '1816'
+ht-degree: 90%
 
 ---
 
@@ -193,34 +193,6 @@ Au cours de la transition initiale, les images non mises en cache accèdent dir
 Toutes les images ne sont pas converties. L’imagerie dynamique détermine si la conversion est requise en vue d’améliorer les performances. Dans certains cas, si aucune amélioration des performances n’est attendue, ou que le format n’est pas JPEG ou PNG, l’image n’est pas convertie.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-## Comment puis-je connaître le gain de performance ? Y a-t-il un moyen de noter les avantages de Smart Imaging ? {#performance-gain}
-
-**A propos des en-têtes Smart Imaging**
-
-Les valeurs d’en-tête Smart Imaging ne fonctionnent que lorsque des requêtes non mises en cache sont diffusées à compter de maintenant. Cela permet de maintenir la compatibilité du cache actuel et d’éviter d’avoir à effectuer des calculs lorsque les images sont diffusées par le biais du cache.
-
-Pour utiliser des en-têtes d’imagerie intelligente, vous devez ajouter le`cache=off`modificateur à vos requêtes. Voir[Cache dans l’API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html)de diffusion et de rendu des images de Contenu multimédia dynamique.
-
-Exemple d’utilisation `cache=off` (à des fins d’illustration uniquement) :
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-Après avoir utilisé une telle requête, dans la section En-têtes de réponse, vous pouvez voir `-x-adobe-smart-imaging` l’en-tête. Reportez-vous à la capture d&#39;écran suivante avec `-x-adobe-smart-imaging` mise en évidence.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-Cette valeur d’en-tête indique ce qui suit :
-
-* Smart Imaging travaille pour la société.
-* La valeur positive (>=0) indique que la conversion a réussi. Dans ce cas, une nouvelle image (webP ici) est renvoyée.
-* La valeur négative (&lt;0) indique que la conversion a échoué. Dans ce cas, l’image d’origine demandée est renvoyée (JPEG par défaut, si elle n’est pas spécifiée).
-* La valeur indique la différence en octets entre l’image demandée et la nouvelle image. Dans ce cas, les octets enregistrés sont de 75048, soit environ 75 Ko pour une image. 
-   * La valeur négative indique que l’image demandée est plus petite que la nouvelle image. La différence de taille est négative, mais l&#39;image diffusée est l&#39;image demandée d&#39;origine uniquement
-
-**Quand utiliser les en-têtes d&#39;imagerie intelligente ?**
-
-Les en-têtes de réponse Smart Imaging sont activés à des fins de débogage ou tout en mettant en évidence les avantages de Smart Imaging uniquement. L’utilisation`cache=off`dans des scénarios normaux peut avoir un impact significatif sur les temps de charge.
 
 ## Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ? {#turning-off-smart-imaging}
 
