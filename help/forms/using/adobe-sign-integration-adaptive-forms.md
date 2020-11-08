@@ -10,10 +10,10 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 69%
+source-wordcount: '999'
+ht-degree: 65%
 
 ---
 
@@ -49,7 +49,10 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
 
    >[!NOTE]
    >
-   >Vérifiez que l’URL de la page de configuration des services cloud commence par **HTTPS**. Si ce n’est pas le cas, [activez SSL](/help/sites-administering/ssl-by-default.md) pour le serveur AEM Forms.
+   >Vous pouvez exécuter les étapes 1 à 4 pour créer un conteneur de configuration et créer une configuration Adobe Sign dans le conteneur ou utiliser le `global` dossier existant dans **Outils** ![Marteau](assets/hammer.png) > **Cloud Services** > Adobe Sign. **** Si vous créez la configuration dans le nouveau conteneur de configuration, veillez à spécifier le nom du conteneur dans le champ Conteneur **[!UICONTROL de]** configuration lorsque vous créez un formulaire adaptatif.
+
+   >[!NOTE]
+   Vérifiez que l’URL de la page de configuration des services cloud commence par **HTTPS**. Si ce n’est pas le cas, [activez SSL](/help/sites-administering/ssl-by-default.md) pour le serveur AEM Forms.
 
 1. On the configuration page, tap **[!UICONTROL Create]** to create Adobe Sign configuration in AEM Forms.
 1. In the **[!UICONTROL General]** tab of the **[!UICONTROL Create Adobe Sign Configuration]** page, specify a **Name** for the configuration and tap **Next**. Vous avez la possibilité d’indiquer un titre et de rechercher et de sélectionner une vignette pour la configuration.
