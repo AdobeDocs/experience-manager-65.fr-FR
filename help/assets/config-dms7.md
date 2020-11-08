@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 648b9601445a46b6a2734d5a47545c0439b9c283
+source-git-commit: ee527712b4d7f6ebf9ef2996de1405f6f9c3d335
 workflow-type: tm+mt
 source-wordcount: '5964'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -73,7 +73,7 @@ Pour plus d’informations, voir [Installation de Feature Pack 18912 pour la mig
 
 ## Création d’une configuration multimédia dynamique en Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Avant de configurer Dynamic Media** : après réception de l’e-mail de mise en service contenant les informations d’identification Dynamic Media, vous devez [vous connecter](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à Dynamic Media Classic pour changer votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
+**Avant de configurer Contenu multimédia** dynamique - Une fois que vous avez reçu votre courrier électronique de mise en service avec les informations d’identification Contenu multimédia dynamique, vous devez vous [connecter](https://www.adobe.com/fr/marketing-cloud/experience-manager/scene7-login.html) à Contenu multimédia dynamique pour modifier votre mot de passe. Le mot de passe fourni dans l’e-mail de mise en service est généré par le système et il est attribué uniquement de manière temporaire. Il est important que vous mettiez à jour le mot de passe afin que Dynamic Media Cloud Service soit configuré avec les informations d’identification correctes.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
