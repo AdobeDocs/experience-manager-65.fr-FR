@@ -3,9 +3,9 @@ title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Ex
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '2421'
 ht-degree: 56%
 
 ---
@@ -243,7 +243,7 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier dans le menu **[
 >
 >* [Concepts et compréhension](metadata-concepts.md)des métadonnées.
 >* [Modification des propriétés de métadonnées de plusieurs collections](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importation et exportation des métadonnées dans les ressources Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importation et exportation des métadonnées dans les ressources Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
