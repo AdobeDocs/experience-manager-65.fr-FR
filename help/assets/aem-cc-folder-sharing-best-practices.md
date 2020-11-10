@@ -3,10 +3,10 @@ title: Méthodes [!DNL Adobe Creative Cloud] de partage de dossiers
 description: ' [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] Configurez pour échanger des dossiers avec des utilisateurs Adobe Creative Cloud (CC).'
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 17%
+source-wordcount: '953'
+ht-degree: 16%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!CAUTION]
 >
->The [!DNL Experience Manager] to [!DNL Creative Cloud] Folder Sharing feature is deprecated. L’Adobe recommande vivement d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou application [de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)Experience Manager. Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
+>The [!DNL Experience Manager] to [!DNL Creative Cloud] Folder Sharing feature is deprecated. L’Adobe recommande vivement d’utiliser des fonctionnalités plus récentes, telles que [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou application [de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)Experience Manager. Learn more in [Experience Manager and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] peuvent être configurés pour permettre aux utilisateurs de [!DNL Assets] partager des dossiers avec les utilisateurs d’ [!DNL Adobe Creative Cloud] applications, de sorte qu’ils soient disponibles sous forme de dossiers partagés dans le service [!DNL Adobe Creative Cloud] ressources. The feature can be used to exchange files between creative teams and [!DNL Assets] users, especially when the creative users do not have access to the [!DNL Assets] deployment (they are not on the enterprise network).
 
@@ -39,7 +39,7 @@ Le diagramme suivant offre une vue d’ensemble du processus d’intégration.
 L’intégration comprend les éléments suivants :
 
 * **[!DNL Experience Manager Assets]** déployés dans le réseau d’entreprise (services gérés ou sur site) : Le partage de dossiers est initié ici.
-* **[!DNL Adobe Marketing Cloud Assets]service** principal : Agit en tant qu&#39;intermédiaire entre les services [!DNL Experience Manager] et les services [!DNL Creative Cloud] d&#39;enregistrement. Un administrateur d’une organisation qui utilise l’intégration doit établir une relation de confiance entre l’organisation de Marketing Cloud et le [!DNL Assets] déploiement. They also [define a list of approved Creative Cloud collaborators](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
+* **[!DNL Adobe Marketing Cloud Assets]service** principal : Agit en tant qu&#39;intermédiaire entre les services [!DNL Experience Manager] et les services [!DNL Creative Cloud] d&#39;enregistrement. Un administrateur d’une organisation qui utilise l’intégration doit établir une relation de confiance entre l’organisation de Marketing Cloud et le [!DNL Assets] déploiement. They also [define a list of approved Creative Cloud collaborators](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html), that [!DNL Assets] users can share folders too for additional security.
 
 * **[!DNL Creative Cloud]Services** Web Assets (interface utilisateur Web d’enregistrement et de [!DNL Creative Cloud] fichiers) : C’est là que des utilisateurs d’applications Creative Cloud spécifiques, avec lesquels un [!DNL Assets] dossier a été partagé, peuvent accepter l’invitation et voir le dossier dans leur enregistrement de compte Creative Cloud.
 * **Application** de bureau Creative Cloud : (Facultatif) Permet un accès direct aux dossiers/fichiers partagés depuis le bureau de l’utilisateur créatif via la synchronisation avec l’enregistrement [!DNL Creative Cloud] Ressources.
