@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
+source-git-commit: cc3a2ce7cb3dc020f5466a4b65cf5a9714e7a344
 workflow-type: tm+mt
-source-wordcount: '1599'
-ht-degree: 71%
+source-wordcount: '1571'
+ht-degree: 70%
 
 ---
 
 
 # SharePoint Connector{#sharepoint-connector}
 
-Cet article contient des informations détaillées sur Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0.
+Cet article contient des informations détaillées sur l’Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0.
 
 SharePoint Connector prend en charge les fonctionnalités de base suivantes :
 
@@ -45,7 +45,7 @@ Toutes les fonctionnalités sont mises en œuvre en utilisant les services web S
 Pour débuter avec le connecteur, effectuez les opérations suivantes :
 
 * Assurez-vous de disposer au moins de Java 7.
-* Téléchargez le fichier de distribution du module de connecteur depuis Package Share.
+* Téléchargez le fichier de distribution du module Connector à partir de Software Distribution.
 * Copiez un fichier *license.properties* valide vers le répertoire contenant le fichier *cq-quickstart-6.4.0.jar*.
 
 * Double-cliquez/appuyez sur le fichier .jar pour démarrer AEM ou démarrez-le à partir de la ligne de commande.
@@ -66,7 +66,7 @@ Le connecteur nécessite ce qui suit :
 * Informations d’identification et autorisations de l’utilisateur pour les référentiels CRX et SharePoint
 * [Plateformes prises en charge](#supported-platforms)
 
-SharePoint Connector est disponible en téléchargement à partir de [packageshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+The SharePoint connector is available for downloading from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Plateformes prises en charge {#supported-platforms}
 
@@ -89,9 +89,8 @@ Le connecteur prend en charge les applications suivantes :
 
 ### Installation standard {#standard-installation}
 
-AEM Package Share est utilisé pour la distribution des fonctionnalités produit, des exemples et des correctifs logiciels. For details, see the [Package Share documentation](/help/sites-administering/package-manager.md#package-share).
+La distribution de logiciels permet de distribuer des fonctions de produit, des exemples et des correctifs logiciels. Pour plus d&#39;informations, reportez-vous à la documentation [sur la distribution de](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)logiciels.
 
-To access Package Share on the AEM Welcome page, tap/click **Tools** and then select **Package Share**. Vous avez besoin d’un Adobe ID valide incluant votre adresse électronique de société. En outre, après vous être connecté à votre compte, demandez l’accès à Package Share.
 
 #### Intégration à AEM {#integrating-with-aem}
 
@@ -135,7 +134,7 @@ Par défaut, le connecteur expose un espace de travail JCR unique. Le serveur Sh
 
 Dans AEM, effectuez une étape en plus des étapes de configuration ci-dessus. Liste autorisée du lot &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Pour liste autorisée de lots dans AEM, effectuez les étapes suivantes :
+Pour liste autorisée des lots dans AEM, effectuez les opérations suivantes :
 
 1. Accédez à la console de gestion OSGi : http://localhost:4502/system/console/configMgr.
 1. Recherchez le service Apache Sling Login Admin Whitelist.
@@ -197,10 +196,10 @@ En particulier, les types d’authentification suivants sont disponibles :
 * Revendications – de base
 * Revendications – reposant sur les formulaires
 
-AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prennent en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
+L’AEM JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013, version 4.0. prend en charge l’authentification basée sur les revendications (suggérée par Microsoft), qui fonctionne dans les modes suivants :
 
 * **Authentification de base/NTLM** : le connecteur tente d’abord de se connecter à l’aide de l’authentification de base. Si elle n’est pas disponible, il passe à l’authentification basée sur NTLM.
-* **Authentification** basée sur des formulaires : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
+* **Authentification** basée sur Forms : SharePoint valide les utilisateurs en fonction des informations d’identification saisies par les utilisateurs dans un formulaire de connexion (généralement une page Web). Le système génère un jeton pour les requêtes authentifiées contenant une clé pour rétablir l’identité des requêtes ultérieures.
 
 **Configuration de l’authentification reposant sur les formulaires**
 
@@ -210,7 +209,7 @@ Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 1. Recherchez Day JCR Connector for Microsoft SharePoint.
 1. Cliquez sur Modifier les valeurs de configuration.
 1. Définissez la valeur de Fabrique de connexions SharePoint sur com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory/.
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
 **Configuration de l’authentification de base (Windows)**
 
@@ -220,7 +219,7 @@ Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 1. Recherchez **Day JCR Connector for Microsoft SharePoint**.
 1. Cliquez sur `Edit the configuration values`.
 1. Définissez la valeur de Fabrique de connexions SharePoint sur `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
 Seul un utilisateur authentifié à la fois sur AEM et SharePoint peut accéder au contenu SharePoint par le biais du connecteur.
 
@@ -247,7 +246,7 @@ Pour ajouter l’utilisateur au groupe administrateur :
 
 ### Désactivation de l’authentification par jeton {#disable-token-authentication}
 
-1. Download and install the package `basic auth`. `zip` depuis Package Share.
+1. Download and install the package `basic auth`. `zip` de Software Distribution.
 
 1. Fermez QuickStart.
 1. Ouvrez le fichier *\crx-quickstart\repository\repository.xml*.
