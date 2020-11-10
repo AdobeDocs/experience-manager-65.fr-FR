@@ -3,10 +3,10 @@ title: Télécharger des ressources
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 75%
+source-wordcount: '856'
+ht-degree: 74%
 
 ---
 
@@ -67,14 +67,14 @@ Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lo
 
 Le `Asset Download Servlet` peut être désactivé sur une instance  Publish en mettant à jour la configuration du dispatcher afin de bloquer toute demande de téléchargement de ressources. [!DNL Experience Manager] Le servlet peut également être désactivé manuellement par l’intermédiaire de la console OSGi.
 
-1. To block asset download requests via a dispatcher configuration, edit the `dispatcher.any` configuration and add a rule to the [filter section](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. To block asset download requests via a dispatcher configuration, edit the `dispatcher.any` configuration and add a rule to the [filter section](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Pour désactiver le composant OSGi sur une instance de publication, accédez à la console OSGi à `http://[aem_server]:[port]/system/console/components`. Recherchez `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` et cliquez ensuite sur **[!UICONTROL Désactiver]**.
 
 >[!MORELIKETHIS]
 >
->* [Téléchargement de fichiers à l’aide du portail de marque](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Téléchargement de fichiers à l’aide du portail de marque](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Téléchargement de ressources protégées par DRM](drm.md).
->* [Téléchargez des fichiers à l’aide d’une application de bureau Experience Manager sur un ordinateur de bureau](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets)Windows ou Mac.
+>* [Téléchargez des fichiers à l’aide d’une application de bureau Experience Manager sur un ordinateur de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)Windows ou Mac.
 >* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html).
 
