@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 9ba00322588326df6fbcc02bdfba88491d39c289
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 6%
+source-wordcount: '680'
+ht-degree: 8%
 
 ---
 
@@ -92,8 +92,13 @@ Voir également :
 >[!NOTE]
 >
 >**Exemples de noms de propriété**
->
 >Tous les noms de propriété affichés, tels que **/0050** et **/0170**, doivent être ajustés pour tenir dans un fichier de configuration dispatcher.any existant.
+
+
+>[!CAUTION]
+>
+>Voir [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) pour en savoir plus sur la limitation de l’accès en utilisant Dispatcher. Lisez également la liste de vérification [de sécurité](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/security-checklist.html) AEM pour plus d’informations sur la sécurité de votre installation AEM.
+
 
 Les entrées suivantes doivent être ajoutées à la fin de la section /filter, en particulier après toutes les entrées de refus.
 
