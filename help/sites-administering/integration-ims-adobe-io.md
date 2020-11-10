@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12ebf77d2af389e0a3aea5c7f311c828ecd7c17
+source-git-commit: 26efba567985dcb89b2610935cab18943b7034b3
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1335'
 ht-degree: 11%
 
 ---
@@ -231,6 +231,17 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
 
    * **Authentification**: IMS
    * **ID** du client : l&#39;Adobe IMS - ID de client
+
+      >[!NOTE]
+      >
+      >Pour IMS, cette valeur doit être prise de la Cible elle-même. Vous pouvez vous connecter à la Cible et extraire l’ID de client de l’URL.
+      >
+      >Par exemple, si l’URL est :
+      >
+      >`https://experience.adobe.com/#/@yourtenantid/target/activities`
+      >
+      >Alors vous utiliseriez `yourtenantid`.
+
    * **Configuration** IMS : sélectionner le nom de la configuration IMS
    * **Type** d&#39;API : REPOSE
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration de cloud Analytics utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
