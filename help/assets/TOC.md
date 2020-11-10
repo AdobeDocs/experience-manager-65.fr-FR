@@ -7,10 +7,10 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 51%
+source-wordcount: '583'
+ht-degree: 52%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 51%
 # Guide d’Assets {#assets}
 
 + [[!DNL Assets] guide de l&#39;utilisateur](home.md)
-+ [[!DNL Experience Manager] 6.5 Notes de mise à jour des ressources](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Notes de mise à jour des ressources](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Recommandations relatives aux ressources](best-practices-for-assets.md)
 + Utiliser des ressources Experience Manager {#using}
@@ -88,7 +88,7 @@ ht-degree: 51%
    + [Installation et [!DNL ImageMagick] configuration avec lesquelles travailler [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Intégration de ressources dans le flux d’activités](extending-activity-stream.md)
    + [Étendre l’éditeur de fichiers](asseteditorx.md)
-   + [[!DNL Assets] API HTTP](mac-api-assets.md)
+   + API HTTP [[!DNL Assets]  ](mac-api-assets.md)
    + [Prise en charge des fragments de contenu [!DNL Assets] dans l’API HTTP](assets-api-content-fragments.md)
    + [[!DNL Assets] développement par proxy](proxy.md)
 + Administration des ressources {#administer}
