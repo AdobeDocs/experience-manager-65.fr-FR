@@ -3,9 +3,9 @@ title: 'Activation des statistiques sur les ressources via DTM  '
 description: Découvrez comment utiliser la gestion dynamique des balises Adobe pour activer les statistiques sur les ressources.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d13381d961f7663366b041168da369c0b01c9336
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '671'
 ht-degree: 34%
 
 ---
@@ -17,7 +17,7 @@ La gestion dynamique des balises Adobe est un outil permettant d’activer vos o
 
 >[!CAUTION]
 >
->La gestion dynamique des balises Adobe est abandonnée en faveur de Adobe Experience Platform Launch et va bientôt [prendre fin](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande d’ [utiliser Lancer pour obtenir des informations](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sur les ressources.
+>La gestion dynamique des balises Adobe est abandonnée au profit de [!DNL Adobe Experience Platform Launch] et atteindra bientôt la [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande d’ [ [!DNL Launch] utiliser des informations](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)sur les ressources.
 
 Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressources grâce à DTM.
 
@@ -31,7 +31,7 @@ Effectuez les étapes ci-dessous pour activer les Statistiques sur les ressource
 
    * Select the **[!UICONTROL Web Properties]** tab, and then click **[!UICONTROL Add Property]**.
 
-   * Update the fields as appropriate, and click **[!UICONTROL Create Property]**. See [documentation](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Update the fields as appropriate, and click **[!UICONTROL Create Property]**. See [documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Créer une propriété web d’édition](assets/Create-edit-web-property.png)
 
