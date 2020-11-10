@@ -3,10 +3,10 @@ title: Gérer des ressources composées avec des références et plusieurs pages
 description: Découvrez comment créer des références à des ressources numériques à partir de l’intérieur [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilisez la fonction Visionneuse de pages pour vue des pages de sous-ressources individuelles de fichiers de plusieurs pages, tels que des fichiers PDF, INDD, PPT, PPTX et AI.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 18%
+source-wordcount: '1348'
+ht-degree: 17%
 
 ---
 
@@ -25,7 +25,7 @@ Les références sont résolues sur la base du chemin d’accès, du document et
 
 You can reference existing digital assets from within an [!DNL Adobe Illustrator] file.
 
-1. A l’aide d’une application [de bureau](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)Experience Manager, récupérez les ressources numériques sur le système de fichiers local. Accédez à l&#39;emplacement du système de fichiers de la ressource à référencer.
+1. A l’aide d’une application [[!DNL Experience Manager] de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)bureau, récupérez les ressources numériques sur le système de fichiers local. Accédez à l&#39;emplacement du système de fichiers de la ressource à référencer.
 1. Drag the asset from the local folder to the [!DNL Illustrator] file.
 
 1. Save the [!DNL Illustrator] file to the mounted drive, or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
@@ -68,7 +68,7 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 
 ## Ajouter des ressources numériques en tant que références dans [!DNL Adobe Photoshop] {#refps}
 
-1. Utilisez [!DNL Experience Manager] l&#39;application de bureau pour accéder [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer lié] dans [!DNL Adobe Photoshop]. Reportez-vous à la page [Placement de fichiers dans une application](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de bureau.
+1. Utilisez [!DNL Experience Manager] l&#39;application de bureau pour accéder [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer lié] dans [!DNL Adobe Photoshop]. Reportez-vous à la page [Placement de fichiers dans une application](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)de bureau.
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
@@ -119,7 +119,7 @@ Pour [!DNL InDesign]cela, vous pouvez extraire des pages à l’aide [!DNL InDes
 
 Les options suivantes sont disponibles dans la barre d’outils, dans le rail de gauche et dans les commandes de la visionneuse de pages :
 
-* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide d’une application [!DNL Experience Manager] de bureau. Découvrez comment [configurer les actions](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) pour ordinateur si vous utilisez une application [!DNL Experience Manager] de bureau.
+* **[!UICONTROL Actions]** de bureau pour ouvrir ou afficher une sous-ressource spécifique à l’aide d’une application [!DNL Experience Manager] de bureau. Découvrez comment [configurer les actions](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) pour ordinateur si vous utilisez une application [!DNL Experience Manager] de bureau.
 
 * **[!UICONTROL L’option Propriétés]** ouvre la page [!UICONTROL Propriétés] de la sous-ressource spécifique.
 
@@ -135,8 +135,8 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 >[!MORELIKETHIS]
 >
->* [Utilisation de l’appli de bureau Adobe Experience Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-desktop-app/using/using.html)
->* [Configuration des actions de bureau dans Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Utilisation de l’appli de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Configuration des actions de bureau dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Création d’objets dynamiques liés en Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Importation de graphiques en Adobe InDesign](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html)
 
