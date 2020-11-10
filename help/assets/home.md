@@ -3,10 +3,10 @@ title: Guide d’Assets
 description: Ce guide porte sur toutes les tâches de ressources Experience Manager, telles que la création, la gestion, la diffusion et l’optimisation des ressources numériques.
 user-guide-title: Guide d’Assets
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 27%
+source-wordcount: '330'
+ht-degree: 16%
 
 ---
 
@@ -22,7 +22,7 @@ Ce guide couvre toutes les [!DNL Experience Manager Assets] tâches, telles que 
 
 * [Prise en main du Experience Manager](https://helpx.adobe.com/fr/experience-manager/get-started.html)
 * [Notes de mise à jour de Experience Manager 6.5](/help/release-notes/home.md)
-* [Mises à jour récentes de la documentation](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md)
 
 ## [!DNL Experience Manager] 6,5 guides
@@ -35,12 +35,12 @@ Ce guide couvre toutes les [!DNL Experience Manager Assets] tâches, telles que 
 | [Guide d’administration](/help/sites-administering/home.md) | Comprendre comment administrer le Experience Manager. |
 | [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création en Experience Manager. |
 | [Guide de création d’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création en Experience Manager dans l’interface utilisateur classique. |
-| [Guide de l’utilisateur des écrans](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution de signalisation numérique pour publier des expériences numériques dynamiques et interactives. |
+| [Guide de l’utilisateur des écrans](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Découvrez la solution de signalisation numérique pour publier des expériences numériques dynamiques et interactives. |
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base du Experience Manager. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment élaborer votre déploiement de Experience Manager. |
 | [Gestion du guide de l’utilisateur](/help/managing/home.md) | Ce guide décrit comment gérer un projet Experience Manager avec succès. |
 | [Guide de l&#39;utilisateur mobile](/help/mobile/home.md) | Ce guide décrit comment créer et gérer du contenu pour les applications mobiles. |
-| [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
+| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Ce guide vous explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
 
 ## Ressources [!DNL Experience Manager] clés
 
@@ -48,7 +48,7 @@ Ce guide couvre toutes les [!DNL Experience Manager Assets] tâches, telles que 
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Forum de la communauté des ressources Experience Manager](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
-* [Guide de l&#39;utilisateur du répartiteur](https://docs.adobe.com/content/help/fr-FR/experience-manager-dispatcher/using/dispatcher.html)
-* [Guide de l’utilisateur HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
-* [Guide de l’utilisateur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Guide de l&#39;utilisateur du répartiteur](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
+* [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
