@@ -3,9 +3,9 @@ title: Utilisation des ressources connectées pour partager des ressources DAM d
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2636ce720849c0e01f70f6af64a5f21e00181d33
+source-git-commit: 916b49572981115f6178c04f260ce63bcfc6d054
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2251'
 ht-degree: 88%
 
 ---
@@ -28,7 +28,7 @@ Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
 * Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] en tant que Cloud Service. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager as a Cloud Service], voir Fonctionnalité Ressources [connectées dans Experience Manager en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] en tant que Cloud Service. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager as a Cloud Service], voir Ressources [connectées en Experience Manager en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
