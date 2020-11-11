@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 93%
@@ -19,7 +19,7 @@ ht-degree: 93%
 ---
 
 
-# Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
 
 ## Présentation {#overview}
 
@@ -43,9 +43,10 @@ L’outil de détection des motifs est publié séparément sous forme de [modul
 >* augmenter le taux de détection
 >* éviter les ralentissements sur les instances critiques de l’entreprise
 
-
->en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements de production sur le plan des applications utilisateur, du contenu et des configurations.
 >
+>
+en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements de production sur le plan des applications utilisateur, du contenu et des configurations.
+
 Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’outil de détection des motifs :
 
 * **Via la console Felix Inventory :**
@@ -56,7 +57,6 @@ Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’out
    ![capture d&#39;écran-2018-2-5détecteur à motifs](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via une interface JSON standard ou une interface en mode texte réactive**
-
 * **Via une interface de lignes JSON réactives, **qui génère un document JSON distinct dans chaque ligne.
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
@@ -211,7 +211,8 @@ Avec le résultat suivant :
 ```
 
 >[!NOTE]
-La méthode recommandée consiste à enregistrer toute la sortie à partir de curl dans le fichier, puis de la traiter via `jq` ou `grep` pour effectuer un filtrage sur le type d’informations.
+>
+>La méthode recommandée consiste à enregistrer toute la sortie à partir de curl dans le fichier, puis de la traiter via `jq` ou `grep` pour effectuer un filtrage sur le type d’informations.
 
 ## Domaine de détection {#scope}
 
@@ -224,5 +225,5 @@ Actuellement, l’outil de détection des motifs permet de vérifier :
 * la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth).
 
 >[!NOTE]
-Notez que l’outil de détection des motifs tente de prévoir avec précision les avertissements pour la mise à niveau. Cependant, il peut générer des faux positifs dans certains scénarios.
-
+>
+>Notez que l’outil de détection des motifs tente de prévoir avec précision les avertissements pour la mise à niveau. Cependant, il peut générer des faux positifs dans certains scénarios.
