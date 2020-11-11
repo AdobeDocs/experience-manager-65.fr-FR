@@ -1,40 +1,30 @@
 ---
-title: Utiliser le mode Mise en page pour redimensionner les composants
-seo-title: Utiliser le mode Mise en page pour redimensionner les composants
+title: Utiliser le mode Mise en page pour redimensionner les composants des formulaires adaptatifs
 description: 'Définir la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
-seo-description: 'Définir la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
-uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
-contentOwner: anujkapo
-topic-tags: interactive-communications, author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
 
 
-# Utiliser le mode Mise en page pour redimensionner les composants{#use-layout-mode-to-resize-components}
+# Utiliser le mode Mise en page pour redimensionner les composants {#use-layout-mode-to-resize-components}
 
-L&#39;interface de création de canaux Web de formulaires adaptatifs et de communications interactives vous permet de redimensionner les composants en mode Mise en page. Faites glisser des points bleus dans les colonnes pour définir le début et les points d’extrémité à positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille réactive. La grille réactive est composée de 12 colonnes égales. L’ombrage blanc et bleu des autres colonnes différencie une colonne de l’autre.
+L’interface de création de formulaires adaptatifs vous permet de redimensionner des composants en mode Mise en page. Faites glisser des points bleus dans les colonnes pour définir le début et les points d’extrémité à positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille réactive. La grille réactive est composée de 12 colonnes égales. L’ombrage blanc et bleu des autres colonnes différencie une colonne de l’autre.
 
 Vous pouvez utiliser le mode Mise en page pour redimensionner les composants pour tous les types de périphériques, tels que les ordinateurs de bureau, tablettes, smartphones et autres périphériques plus petits. La tablette dérive automatiquement la configuration de la mise en page de la version de bureau et les périphériques plus petits dérivent la configuration de la mise en page de la version de téléphone. Cependant, vous pouvez remplacer les configurations dérivées automatiquement pour définir une configuration différente pour chaque type de périphérique.
 
-Si vous créez le canal Web à l’aide du canal [Imprimer en tant que gabarit](../../forms/using/create-interactive-communication.md) pour une communication interactive, les composants disponibles pour le redimensionnement incluent également les sous-formulaires et les champs qui sont générés automatiquement dans le canal Web à l’aide du canal Imprimer. Le canal Web conserve la mise en page des éléments du canal Imprimer en mode Mise en page.
-
 ## Accès au mode Mise en page {#access-layout-mode}
 
-Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut du formulaire adaptatif et de l’interface de création Interactive Communication en regard de l’option **Prévisualisation** . Le formulaire s’affiche en mode Mise en page.
+Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut de l’interface de création de formulaires adaptatifs en regard de l’option **Prévisualisation** . Le formulaire s’affiche en mode Mise en page.
 
 1. Connectez-vous à l’instance d’auteur AEM et accédez à **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
-1. [Créez](../../forms/using/create-interactive-communication.md) ou ouvrez un formulaire adaptatif existant ou une communication interactive.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut à côté de l’option **Prévisualisation** . Le formulaire s’affiche en mode Mise en page.
 
-   ![Mode de mise en page pour les communications interactives](assets/layout_mode_ic_new.png)
+   ![Mode de mise en page](assets/layout_mode_ic_new.png)
 
 ## Redimensionnement des composants {#resize-components}
 
@@ -56,9 +46,9 @@ Sélectionnez **Disposition** dans la liste déroulante qui s’affiche en haut 
 
 ### Exemple {#example}
 
-**Objectif :** Vous souhaitez insérer un composant de tableau et un composant d’image et les positionner en parallèle dans une communication interactive.
+**Objectif :** Vous souhaitez insérer un composant de tableau et un composant d’image et les positionner en parallèle dans un formulaire adaptatif.
 
-1. Insérez le tableau et les composants d’image en mode Edition dans le canal Web. Le composant d’image s’affiche après le composant de tableau.
+1. Insérez le tableau et les composants d’image en mode Edition dans le formulaire adaptatif. Le composant d’image s’affiche après le composant de tableau.
 1. Passez en mode Mise en page et appuyez sur le composant Tableau. Les points bleus pour redimensionner le composant s’affichent aux colonnes 1 et 12.
 1. Faites glisser le point bleu de la colonne 12 vers la colonne 6 de la grille réactive.
 
