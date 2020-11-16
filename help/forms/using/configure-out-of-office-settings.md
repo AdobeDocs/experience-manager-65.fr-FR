@@ -34,7 +34,7 @@ Vous pouvez séparer la délégation d’éléments en fonction des modèles de 
 
 ## Activation du paramètre Absence du bureau pour votre compte {#enable-out-of-office}
 
-Suivez les étapes ci-après pour activer le paramètre d’absence du bureau pour votre compte et déléguer vos éléments de boîte de réception à un autre utilisateur :
+Effectuez les étapes suivantes pour activer le paramètre d’absence du bureau pour votre compte et déléguez vos éléments de boîte de réception à un autre utilisateur :
 
 1. Connectez-vous à l’instance AEM  Appuyez sur l’icône ![Boîte de réception](assets/bell.svg) et appuyez sur **[!UICONTROL Vue tout]**. Une liste de vos éléments de boîte de réception s’affiche.
 1. Appuyez sur l’icône Sélecteur ![de](assets/viewlist.svg) Vue ou Sélecteur ![de](assets/calendar.svg) Vue située en regard du bouton **[!UICONTROL Créer]** et appuyez sur **[!UICONTROL Paramètres.]** La boîte de dialogue des paramètres s’affiche.
@@ -46,7 +46,7 @@ Suivez les étapes ci-après pour activer le paramètre d’absence du bureau po
 
    En outre, pour affecter tous les éléments, quel que soit le modèle de processus, à un utilisateur particulier, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de processus. <br>
 
-   Pour affecter des éléments à un utilisateur particulier pour tous les modèles de processus sauf quelques-uns, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter les exceptions]**et spécifiez les modèles de processus à exclure.
+   Pour affecter des éléments à un utilisateur particulier pour tous les modèles de processus sauf quelques-uns, sélectionnez **[!UICONTROL Tous les Workflows]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter les exceptions]**et spécifiez les modèles de processus à ignorer.
    <br>
 
    Répétez l’étape pour ajouter d’autres personnes désignées. <br>
@@ -62,7 +62,7 @@ Désormais, les éléments qui vous sont affectés au cours de la période d’a
 
 >[!NOTE]
 >
->(Pour les éléments de flux de travaux centrés sur les formulaires uniquement) Activez l’option **Autoriser les personnes désignées à déléguer à l’aide des paramètres** &quot;Absence du bureau&quot; de l’étape **Attribuer la tâche** du processus. Seuls les éléments pour lesquels l’option ci-dessus est activée sont délégués à d’autres utilisateurs.
+>(Pour les éléments de flux de travaux centrés sur Forms uniquement) Activez l’option **Autoriser les personnes désignées à déléguer à l’aide des paramètres** &quot;Absence du bureau&quot; de l’étape **Attribuer la tâche** dans le processus. Seuls les éléments pour lesquels l’option ci-dessus est activée sont délégués à d’autres utilisateurs.
 
 ## Restrictions {#limitations}
 
