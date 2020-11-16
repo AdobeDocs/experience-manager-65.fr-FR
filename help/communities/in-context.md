@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Modération en contexte {#in-context-moderation}
 
-Pour les AEM Communities, la modération peut être effectuée par les administrateurs et les membres de la communauté de confiance directement sur la page publiée où le contenu de la communauté a été publié.
+Pour AEM Communities, la modération peut être effectuée par les administrateurs et les membres de la communauté de confiance directement sur la page publiée sur laquelle le contenu de la communauté a été publié.
 
 Lors de l’utilisation d’une console [de](moderation.md)modération, les informations affichées pour le contenu incluent un lien vers la page publiée afin d’autoriser l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
 
@@ -40,7 +40,7 @@ L’interface utilisateur présentée au modérateur sur l’instance de publica
 
 ## Exemple {#example}
 
-En utilisant le site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lors de la [prise en main des AEM Communities](getting-started.md), il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication, comme indiqué ci-dessous.
+En utilisant le site [Geometrixx Interagir](http://localhost:4503/content/sites/engage/en.html) créé lors de la [mise en route de AEM Communities](getting-started.md), il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication, comme indiqué ci-dessous.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) a été identifié comme un membre de confiance de la communauté en l&#39;ajoutant au groupe communautaire-modérateurs-engagés lors de la création du site.
 
@@ -126,7 +126,7 @@ Avis:
 
 Sélectionnez l’option de menu Administration pour accéder à la console [de](moderation.md) modération à partir de l’environnement de publication.
 
-Notez que, pour un administrateur, tout le contenu modérable est visible, pas seulement le contenu du site de la communauté Geometrixx Engage.
+Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
 Le filtre de recherche est un panneau latéral qui bascule entre l’ouverture et la fermeture.
 
@@ -151,7 +151,7 @@ Sélectionnez l’option de menu Administration pour accéder à la console [de]
 
 Notez que, pour un modérateur de communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 
-Notez que le modérateur de la communauté dispose des mêmes options que l’administrateur (l’image est avec la barre latérale de recherche basculée vers la fermeture), mais pas d’accès aux autres consoles AEM.
+Notez que le modérateur de la communauté dispose des mêmes options que l’administrateur (l’image est avec la barre latérale de recherche basculée fermée), mais aucun accès à d’autres consoles AEM.
 
 Déconnexion.
 
