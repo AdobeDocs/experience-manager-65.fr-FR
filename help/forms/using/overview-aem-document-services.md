@@ -11,6 +11,9 @@ discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+workflow-type: tm+mt
+source-wordcount: '1423'
+ht-degree: 95%
 
 ---
 
@@ -85,7 +88,7 @@ Vous pouvez utiliser DDX pour étendre les documents PDF dans le cadre de l’as
 
 Vous pouvez utiliser une simple mise en correspondance des entrées pour indiquer l’emplacement des documents source et cible. Il est également possible d’utiliser les types d’URL suivants pour les données externes :
 
-* Fichier
+* File
 * FTP
 * HTTP/HTTPS
 
@@ -130,4 +133,4 @@ Le service Doc Assurance ne peut pas être utilisé immédiatement. To configur
 
 ## Service SendToPrinter {#send-to-printer-service}
 
-Le service Send To Printer fournit une API pour envoyer des documents vers une imprimante spécifiée en vue de l’impression.
+Le service Send To Printer fournit une API pour envoyer des documents vers une imprimante spécifiée pour l’impression.
