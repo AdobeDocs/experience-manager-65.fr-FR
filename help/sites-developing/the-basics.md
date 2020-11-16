@@ -153,7 +153,7 @@ The path specified by the `sling:resourceType` can be either:
 * absolu
 * relative, à un paramètre de configuration
 
-   Les chemins relatifs sont recommandés par Adobe, car ils augmentent la portabilité.
+   Les chemins relatifs sont recommandés par l’Adobe lorsqu’ils augmentent la portabilité.
 
 All Sling scripts are stored in subfolders of either `/apps` or `/libs`, which will be searched in this order (see [Customizing Components and Other Elements](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -177,9 +177,9 @@ Using the above example, if the `sling:resourceType` is `hr/jobs` then for:
 
    Le script sera /apps/hr/jobs/jobs.esp; la dernière section de sling:resourceType forme le nom de fichier.
 
-* Requêtes POST (tous les types de requête, à l’exception de GET/HEAD, le nom de la méthode doit être en majuscules)
+* Requêtes de POST (tous les types de requête, à l’exclusion des GET/HEAD, le nom de la méthode doit être en majuscules)
 
-   POST sera utilisé dans le nom du script.
+   Le POST sera utilisé dans le nom du script.
 
    Le script sera `/apps/hr/jobs/jobs.POST.esp`écrit.
 
@@ -355,7 +355,7 @@ Avec currentNode comme objet de noeud actif.
 
 Pour plus d’informations sur la manipulation des objets Node, reportez-vous aux [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**Widget** Dans AEM, toutes les entrées utilisateur sont gérées par des widgets. Ceux-ci sont souvent utilisés pour contrôler la modification d’un contenu.
+**Widget** Dans AEM toutes les entrées utilisateur sont gérées par des widgets. Ceux-ci sont souvent utilisés pour contrôler la modification d’un contenu.
 
 Les boîtes de dialogue sont construites en combinant des Widgets.
 
