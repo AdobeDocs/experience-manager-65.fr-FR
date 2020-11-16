@@ -1,8 +1,8 @@
 ---
-title: Considérations générales sur la sécurité pour AEM Forms sur JEE
-seo-title: Considérations générales sur la sécurité pour AEM Forms sur JEE
-description: Découvrez comment vous préparer au renforcement de votre environnement AEM Forms sur JEE.
-seo-description: Découvrez comment vous préparer au renforcement de votre environnement AEM Forms sur JEE.
+title: Considérations générales sur la sécurité pour AEM Forms on JEE
+seo-title: Considérations générales sur la sécurité pour AEM Forms on JEE
+description: Découvrez comment vous préparer au renforcement de votre environnement AEM Forms on JEE.
+seo-description: Découvrez comment vous préparer au renforcement de votre environnement AEM Forms on JEE.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
@@ -11,11 +11,14 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+workflow-type: tm+mt
+source-wordcount: '1082'
+ht-degree: 61%
 
 ---
 
 
-# Considérations générales sur la sécurité pour AEM Forms sur JEE{#general-security-considerations-for-aem-forms-on-jee}
+# Considérations générales sur la sécurité pour AEM Forms on JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 Cet article fournit des informations d’introduction qui vous aideront à préparer le renforcement de votre environnement AEM Forms. Elle inclut des informations prérequises sur la sécurité d’AEM Forms sur JEE, des systèmes d’exploitation, des serveurs d’applications et des bases de données. Vérifiez ces informations avant de continuer à verrouiller votre environnement.
 
@@ -27,14 +30,14 @@ Utilisez les liens proposés dans cette section pour accéder à des information
 
 ### Informations sur la sécurité des systèmes d’exploitation {#operating-system-security-information}
 
-Lorsque vous sécurisez votre système d’exploitation, réfléchissez soigneusement à la mise en oeuvre des mesures décrites par le fournisseur de votre système d’exploitation, notamment :
+Lorsque vous sécurisez votre système d&#39;exploitation, réfléchissez soigneusement à la mise en oeuvre des mesures décrites par le fournisseur de votre système d&#39;exploitation, notamment :
 
 * définir et contrôler les utilisateurs, les rôles et les droits ;
 * surveiller les journaux et les journaux d’audit ;
 * supprimer les services et les applications inutiles ;
 * sauvegarder les fichiers.
 
-Pour plus d’informations sur la sécurité des systèmes d’exploitation pris en charge par AEM Forms sur JEE, voir les ressources du tableau :
+Pour plus d’informations sur la sécurité des systèmes d’exploitation pris en charge par AEM Forms on JEE, voir les ressources du tableau :
 
 <table>
  <thead>
@@ -50,7 +53,7 @@ Pour plus d’informations sur la sécurité des systèmes d’exploitation pris
   </tr>
   <tr>
    <td><p>Microsoft Windows Server® 2016 </p> </td>
-   <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guide de sécurité Windows Server 2016</a></p> </td>
+   <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guide de sécurité de Windows Server 2016</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Linux® AP ou ES</p> </td>
@@ -58,11 +61,11 @@ Pour plus d’informations sur la sécurité des systèmes d’exploitation pris
   </tr>
   <tr>
    <td><p>Sun Solaris 11</p> </td>
-   <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Directives de sécurité et de renforcement</a></p> </td>
+   <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Règles de sécurité et de renforcement</a></p> </td>
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guide de sécurité de la version 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guide de sécurité pour la version 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -110,7 +113,7 @@ Pour plus de détails sur la sécurité des serveurs d’applications pris en ch
 
 ### Informations sur la sécurité des bases de données {#database-security-information}
 
-Lorsque vous sécurisez votre base de données, pensez à implémenter les mesures décrites par le fournisseur de votre base de données, notamment :
+Lorsque vous sécurisez votre base de données, pensez à implémenter les mesures décrites par le revendeur de votre base de données, notamment :
 
 * restreindre les opérations avec des listes de contrôle d’accès (ACL) ;
 * utiliser des ports non standard ;
@@ -209,18 +212,18 @@ Le serveur d’applications JBoss utilise 8080 en tant que port HTTP par défaut
 
 1. Ouvrez le fichier suivant pour le modifier :
 
-   Installation sur un seul serveur : racine [JBoss]/standalone/configuration/standalone.xml
+   Installation sur serveur unique : [racine]JBoss /standalone/configuration/standalone.xml
 
-   Installations de cluster : racine [JBoss]/domain/configuration/domain.xml
+   Installations de cluster : [racine]JBoss /domain/configuration/domain.xml
 
-1. Remplacez la valeur de l’attribut **port** dans la balise **&lt;socket-binding>** par un numéro de port personnalisé. Par exemple, le code suivant utilise le port 8090 :
+1. Remplacez la valeur de l’attribut **port** de la balise **&lt;socket-binding>** par un numéro de port personnalisé. Par exemple, le code suivant utilise le port 8090 :
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Enregistrez et fermez le fichier 
 1. Redémarrez le serveur d’applications JBoss.
 
-## Considérations sur la sécurité d’AEM Forms sur JEE {#aem-forms-on-jee-security-considerations}
+## Considérations sur la sécurité d’AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
 
 Cette section décrit certains problèmes de sécurité d’AEM Forms sur JEE que vous devez connaître.
 
@@ -230,9 +233,9 @@ Les informations d’identification stockées par les applications ne sont pas c
 
 ### Contenu sensible pour Rights Management dans la base de données {#sensitive-content-for-rights-management-in-the-database}
 
-AEM Forms sur JEE utilise la base de données d’AEM Forms sur JEE pour stocker des informations de clé de document sensibles et d’autres documents cryptographiques utilisés pour les documents de stratégie. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
+AEM Forms on JEE utilise la base de données AEM Forms on JEE pour stocker des informations de clé de document sensibles et d’autres données cryptographiques utilisées pour les documents de stratégie. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
 
-### Mot de passe dans un formulaire texte en clair {#password-in-clear-text-format-in-adobe-ds-xml}
+### Mot de passe dans un formulaire en texte clair {#password-in-clear-text-format-in-adobe-ds-xml}
 
 Le serveur d’applications utilisé pour exécuter AEM Forms sur JEE nécessite sa propre configuration pour accéder à votre base de données via une source de données configurée sur le serveur d’applications. Assurez-vous que votre serveur d’applications n’expose pas le mot de passe de votre base de données en texte clair dans son fichier de configuration de source de données.
 
@@ -242,8 +245,8 @@ Le fichier lc_[database].xml ne doit pas contenir de mot de passe au format text
 >
 >Le programme d’installation de la clé en main de Jboss d’AEM Forms sur JEE chiffre le mot de passe de la base de données.
 
-Il est possible que le serveur d’applications IBM WebSphere et qu’Oracle WebLogic Server chiffrent les mots de passe des sources de données par défaut. Vérifiez toutefois que cela se produit avec la documentation du serveur d’applications.
+Il est possible que le serveur d’applications IBM WebSphere et qu’Oracle WebLogic Server chiffrent les mots de passe des sources de données par défaut. Vérifiez toutefois avec la documentation de votre serveur d’applications que cela se produit.
 
 ### Protection de la clé privée stockée dans Trust Store {#protecting-the-private-key-stored-in-trust-store}
 
-Les clés privées ou les informations d’identification importées dans Trust Store sont stockées dans la base de données d’AEM Forms sur JEE. Prenez les précautions appropriées pour sécuriser la base de données et restreindre l’accès aux seuls administrateurs désignés.
+Les clés privées ou les informations d’identification importées dans Trust Store sont stockées dans la base de données d’AEM Forms sur JEE. Prendre les précautions appropriées pour sécuriser la base de données et limiter l&#39;accès aux seuls administrateurs désignés.
