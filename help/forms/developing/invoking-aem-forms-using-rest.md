@@ -1,6 +1,6 @@
 ---
-title: Appeler des AEM Forms à l’aide de requêtes REST
-seo-title: Appeler des AEM Forms à l’aide de requêtes REST
+title: Appeler AEM Forms à l’aide de requêtes REST
+seo-title: Appeler AEM Forms à l’aide de requêtes REST
 description: 'null'
 seo-description: 'null'
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
@@ -18,11 +18,11 @@ ht-degree: 4%
 ---
 
 
-# Appeler des AEM Forms à l’aide de requêtes REST {#invoking-aem-forms-using-rest-requests}
+# Appeler AEM Forms à l’aide de requêtes REST {#invoking-aem-forms-using-rest-requests}
 
-les processus créés dans Workbench peuvent être configurés pour être invoqués via des demandes REST (Representational State Transfer). Ces demandes sont envoyées à partir de pages HTML. En d’autres termes, vous pouvez appeler un processus Forms directement à partir d’une page Web à l’aide d’une requête REST. Par exemple, vous pouvez ouvrir une nouvelle instance d’une page Web. Vous pouvez ensuite appeler un processus Forms et charger un document PDF rendu avec des données qui ont été envoyées dans une requête HTTP POST.
+les processus créés dans Workbench peuvent être configurés pour être invoqués via des demandes REST (Representational State Transfer). Ces demandes sont envoyées à partir de pages HTML. En d’autres termes, vous pouvez appeler un processus Forms directement à partir d’une page Web à l’aide d’une requête REST. Par exemple, vous pouvez ouvrir une nouvelle instance d’une page Web. Ensuite, vous pouvez appeler un processus Forms et charger un document PDF rendu avec des données qui ont été envoyées dans une demande de POST HTTP.
 
-Il existe deux types de clients HTML. Le premier client HTML est un client AJAX écrit en JavaScript. Le deuxième client est un formulaire HTML contenant un bouton d’envoi. Une application cliente HTML n’est pas le seul client REST possible. Toute application cliente prenant en charge les requêtes HTTP peut appeler un service à l’aide d’un appel REST. Par exemple, vous pouvez appeler un service en utilisant un appel REST à partir d’un formulaire PDF. (Voir [Appel du processus MyApplication/EncryptDocument à partir d’Acrobat](#rest-invocation-examples).)
+Il existe deux types de clients HTML. Le premier client HTML est un client AJAX qui est écrit en JavaScript. Le deuxième client est un formulaire HTML contenant un bouton d’envoi. Une application cliente HTML n’est pas le seul client REST possible. Toute application cliente prenant en charge les requêtes HTTP peut appeler un service à l’aide d’un appel REST. Par exemple, vous pouvez appeler un service en utilisant un appel REST à partir d’un formulaire PDF. (Voir [Appel du processus MyApplication/EncryptDocument depuis Acrobat](#rest-invocation-examples).)
 
 Lors de l’utilisation de requêtes REST, il est recommandé de ne pas appeler directement les services Forms. Appelez plutôt les processus créés dans Workbench. Lors de la création d’un processus destiné à un appel REST, utilisez un point de début programmatique. Dans ce cas, le point de terminaison REST est ajouté automatiquement. Pour plus d’informations sur la création de processus dans Workbench, voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
@@ -30,7 +30,7 @@ Lorsque vous appelez un service à l’aide de REST, vous êtes invité à saisi
 
 Pour appeler un service Forms (un processus devient un service lorsque le processus est activé) à l’aide de REST, configurez un point de terminaison REST. (voir Gestion des points de terminaison dans l’aide [à l’](https://www.adobe.com/go/learn_aemforms_admin_63)administration).
 
-Une fois qu’un point de terminaison REST est configuré, vous pouvez appeler un service Forms à l’aide d’une méthode HTTP GET ou POST.
+Une fois qu’un point de terminaison REST est configuré, vous pouvez appeler un service Forms à l’aide d’une méthode de GET HTTP ou d’une méthode de POST.
 
 ```java
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
@@ -49,7 +49,7 @@ Les types de données suivants sont pris en charge lors de l’appel de services
 
    Ces types de données sont généralement acceptés en tant que valeurs d’entrée pour les processus créés dans Workbench.
 
-   Si un service Forms est appelé avec la méthode HTTP POST, les arguments sont transmis dans le corps de la requête HTTP. Si la signature du service AEM Forms comporte un paramètre d’entrée de chaîne, le corps de la requête peut contenir la valeur de texte du paramètre d’entrée. Si la signature du service définit plusieurs paramètres de chaîne, la requête peut suivre la `application/x-www-form-urlencoded` notation HTTP avec les noms de paramètre utilisés comme noms de champ du formulaire.
+   Si un service Forms est appelé avec la méthode de POST HTTP, les arguments sont transmis dans le corps de la requête HTTP. Si la signature du service AEM Forms comporte un paramètre d’entrée de chaîne, le corps de la requête peut contenir la valeur de texte du paramètre d’entrée. Si la signature du service définit plusieurs paramètres de chaîne, la requête peut suivre la `application/x-www-form-urlencoded` notation HTTP avec les noms de paramètre utilisés comme noms de champ du formulaire.
 
    Si un service Forms renvoie un paramètre de chaîne, le résultat est une représentation textuelle du paramètre de sortie. Si un service renvoie plusieurs paramètres de chaîne, le résultat est un document XML codant les paramètres de sortie au format suivant :
    ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
@@ -58,11 +58,11 @@ Les types de données suivants sont pris en charge lors de l’appel de services
    >
    >La `output-paramater1` valeur représente le nom du paramètre de sortie.
 
-   Si un service Forms requiert un `com.adobe.idp.Document` paramètre, le service ne peut être appelé qu’à l’aide de la méthode HTTP POST. Si le service requiert un `com.adobe.idp.Document` paramètre, le corps de la requête HTTP devient le contenu de l’objet de Document d’entrée.
+   Si un service Forms requiert un `com.adobe.idp.Document` paramètre, le service ne peut être appelé qu’à l’aide de la méthode du POST HTTP. Si le service requiert un `com.adobe.idp.Document` paramètre, le corps de la requête HTTP devient le contenu de l’objet de Document d’entrée.
 
    Si un service AEM Forms requiert plusieurs paramètres d’entrée, le corps de la requête HTTP doit être un message MIME en plusieurs parties, tel que défini par la RFC 1867. (RFC 1867 est une norme utilisée par les navigateurs Web pour télécharger des fichiers sur des sites Web.) Chaque paramètre d’entrée doit être envoyé en tant que partie distincte du message multipartie et codé au `multipart/form-data` format. Le nom de chaque pièce doit correspondre au nom du paramètre.
 
-   Les Listes et les mappages sont également utilisés comme valeurs d’entrée pour les processus AEM Forms créés dans Workbench. Par conséquent, vous pouvez utiliser ces types de données lors de l’utilisation d’une requête REST. Les tableaux Java ne sont pas pris en charge car ils ne sont pas utilisés comme valeur d’entrée pour un processus AEM Forms.
+   Les listes et les mappages sont également utilisés comme valeurs d’entrée pour les processus AEM Forms créés dans Workbench. Par conséquent, vous pouvez utiliser ces types de données lors de l’utilisation d’une requête REST. Les tableaux Java ne sont pas pris en charge car ils ne sont pas utilisés comme valeur d’entrée pour un processus AEM Forms.
 
    Si un paramètre d’entrée est une liste, un client REST peut l’envoyer en le spécifiant plusieurs fois (une fois pour chaque élément de la liste). Par exemple, si A est une liste de documents, l&#39;entrée doit être un message en plusieurs parties composé de plusieurs parties nommées A. Dans ce cas, chaque partie nommée A devient un élément dans la liste d&#39;entrée. Si B est une liste de chaînes, l’entrée peut être un `application/x-www-form-urlencoded` message composé de plusieurs champs nommés B. Dans ce cas, chaque champ de formulaire nommé B devient un élément dans la liste d’entrée.
 
@@ -117,7 +117,7 @@ Une fois la tâche terminée et le résultat récupéré, la tâche peut être �
 
 Si la tâche est correctement éliminée, cette URL renvoie un message vide.
 
-## rapports d’erreur {#error-reporting}
+## Rapports d’erreur {#error-reporting}
 
 Si une demande d’appel synchrone ou asynchrone ne peut pas être effectuée en raison d’une exception émise sur le serveur, l’exception est signalée dans le message de réponse HTTP. Si l’URL d’appel (ou l’ `async_result` URL en cas d’appel asynchrone) ne comporte pas de suffixe .xml, le fournisseur REST renvoie le code HTTP `500 Internal Server Error` suivi d’un message d’exception.
 
@@ -145,7 +145,7 @@ L’ `DSCError` élément est facultatif et présent uniquement si l’exception
 
 ## Sécurité et authentification {#security-and-authentication}
 
-Pour fournir des appels REST avec un transport sécurisé, un administrateur AEM forms peut activer le protocole HTTPS sur le serveur d’applications J2EE hébergeant des AEM Forms. Cette configuration est spécifique au serveur d’applications J2EE ; il ne fait pas partie de la configuration du serveur de formulaires.
+Pour fournir des appels REST avec un transport sécurisé, un administrateur d’AEM forms peut activer le protocole HTTPS sur le serveur d’applications J2EE hébergeant AEM Forms. Cette configuration est spécifique au serveur d’applications J2EE ; il ne fait pas partie de la configuration du serveur de formulaires.
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ Bien qu’il soit recommandé d’appeler directement des processus créés à l
 
 Pour créer une stratégie, vous devez définir des types de données complexes tels qu’un `PolicyEntry` objet. Un `PolicyEntry` objet définit des attributs tels que les autorisations associées à la stratégie. (Voir [Création de stratégies](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
-Au lieu d’envoyer une requête REST pour créer une stratégie (qui inclurait la définition de types de données complexes tels qu’un `PolicyEntry` objet), créez un processus qui crée une stratégie à l’aide de Workbench. Définissez le processus pour accepter des variables d’entrée primitives, telles qu’une valeur de chaîne qui définit le nom du processus ou un entier qui définit la période d’ouverture hors connexion.
+Au lieu d’envoyer une demande REST pour créer une stratégie (qui inclurait la définition de types de données complexes tels qu’un `PolicyEntry` objet), créez un processus qui crée une stratégie à l’aide de Workbench. Définissez le processus pour accepter des variables d’entrée primitives, telles qu’une valeur de chaîne qui définit le nom du processus ou un entier qui définit la période d’ouverture hors connexion.
 
 Ainsi, vous n’avez pas à créer une demande d’appel REST qui inclut des types de données complexes requis par l’opération. Le processus définit les types de données complexes et tout ce que vous faites à partir du client REST est d’appeler le processus et de transmettre des types de données primitifs. Pour plus d’informations sur l’appel d’un processus à l’aide de REST, voir [Appel du processus MyApplication/EncryptDocument à l’aide de REST](#rest-invocation-examples).
 
@@ -179,13 +179,13 @@ Les exemples d’appel REST suivants sont fournis :
 * Transmission de valeurs de document et de texte à un processus AEM Forms
 * Transmission de valeurs de énumération à un processus AEM Forms
 * Appel du processus MyApplication/EncryptDocument à l’aide de REST
-* Appel du processus MyApplication/EncryptDocument à partir d’Acrobat
+* Appel du processus MyApplication/EncryptDocument depuis Acrobat
 
    Chaque exemple montre comment transférer différents types de données à un processus AEM Forms
 
 **Transfert de valeurs booléennes à un processus**
 
-L&#39;exemple HTML suivant transmet deux `Boolean` valeurs à un processus AEM Forms nommé `RestTest2`. Le nom de la méthode d’appel est `invoke` 1.0 et la version est 1.0. Notez que la méthode de publication HTML est utilisée.
+L’exemple HTML suivant transmet deux `Boolean` valeurs à un processus AEM Forms nommé `RestTest2`. Le nom de la méthode d’appel est `invoke` 1.0 et la version est 1.0. Notez que la méthode de publication HTML est utilisée.
 
 ```html
  <html>
@@ -224,7 +224,7 @@ L’exemple HTML suivant transmet une valeur de date à un processus AEM Forms n
 
 **Transmission de documents à un processus**
 
-L’exemple HTML suivant appelle un processus AEM Forms nommé `MyApplication/EncryptDocument` qui requiert un document PDF. Pour plus d’informations sur ce processus, voir [Appel de AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
+L’exemple HTML suivant appelle un processus AEM Forms nommé `MyApplication/EncryptDocument` qui requiert un document PDF. Pour plus d’informations sur ce processus, voir [Appeler AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).
 
 ```html
  <html>
@@ -313,9 +313,9 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
     </body>
    ```
 
-**Appel du processus MyApplication/EncryptDocument à partir d’Acrobat** {#invoke-process-acrobat}
+**Appel du processus MyApplication/EncryptDocument depuis Acrobat** {#invoke-process-acrobat}
 
-Vous pouvez appeler un processus Forms à partir d’Acrobat en utilisant une requête REST. Par exemple, vous pouvez appeler le processus *MyApplication/EncryptDocument* . Pour appeler un processus Forms à partir d’Acrobat, placez un bouton d’envoi sur un fichier XDP dans Designer. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
+Vous pouvez appeler un processus Forms à partir de Acrobat en utilisant une requête REST. Par exemple, vous pouvez appeler le processus *MyApplication/EncryptDocument* . Pour appeler un processus Forms à partir de Acrobat, placez un bouton d’envoi sur un fichier XDP dans Designer. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
 Spécifiez l’URL permettant d’appeler le processus dans le champ *Envoyer à l’URL* du bouton, comme illustré ci-dessous.
 
@@ -323,4 +323,4 @@ L’URL complète permettant d’appeler le processus est https://hiro-xp:8080/r
 
 Si le processus nécessite un document PDF en tant que valeur d’entrée, veillez à envoyer le formulaire au format PDF, comme illustré ci-dessus. En outre, pour appeler un processus avec succès, le processus doit renvoyer un document PDF. Dans le cas contraire, Acrobat ne peut pas gérer la valeur renvoyée et une erreur se produit. Il n’est pas nécessaire de spécifier le nom de la variable de processus d’entrée. Par exemple, le processus *MyApplication/EncryptDocument* comporte une variable d’entrée nommée `inDoc`. Il n’est pas nécessaire de spécifier inDoc tant que le formulaire est envoyé au format PDF.
 
-Vous pouvez également envoyer des données de formulaire au format XML à un processus Forms. Pour envoyer des données XML, assurez-vous que la liste `Submit As` déroulante spécifie du code XML. La valeur renvoyée par le processus devant être un document PDF, le document PDF s’affiche dans Acrobat.
+Vous pouvez également envoyer des données de formulaire au format XML à un processus Forms. Pour envoyer des données XML, veillez à ce que la liste `Submit As` déroulante indique XML. Dans la mesure où la valeur renvoyée par le processus doit être un document PDF, le document PDF s’affiche dans Acrobat.
