@@ -11,6 +11,9 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 69%
 
 ---
 
@@ -24,8 +27,8 @@ Correspondence Management offre une prise en charge par défaut et intégrée de
 Vous pouvez par exemple insérer les caractères spéciaux suivants :
 
 * Symboles de devise tels que €, ¥ et £
-* Symboles mathématiques tels que Δ, √, Δet ^
-* Symboles de ponctuation ‟ et&quot;
+* Symboles mathématiques tels que Δ, √,  et ^
+* Symboles de ponctuation comme ‟ et&quot;
 
 Vous pouvez insérer des caractères spéciaux sous forme de lettres :
 
@@ -57,7 +60,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
 
       >[!NOTE]
       >
-      >N&#39;apportez pas de modifications dans la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N&#39;apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
       >
       >
       >
@@ -97,7 +100,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Ajouter un caractère spécial personnalisé</td>
    <td>
     <ol>
-     <li>Ajouter un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" avec des propriétés obligatoires.</li>
+     <li>Ajoutez un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" avec les propriétés obligatoires.</li>
      <li>Cliquez sur Enregistrer tout</li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.</li>
     </ol> </td>
@@ -117,7 +120,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>
     <ol>
      <li>Recouvrez le noeud à masquer sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters".</li>
-     <li>Ajouter la propriété sling:hideResource (booléenne) au noeud (sous les applications) à masquer. </li>
+     <li>Ajoutez la propriété sling:hideResource (booléenne) au noeud (sous apps) à masquer. </li>
      <li>Cliquez sur Enregistrer tout. </li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li>
     </ol> </td>
@@ -126,7 +129,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Masquer plusieurs caractères spéciaux</td>
    <td>
     <ol>
-     <li>Ajouter la propriété "sling:hideChildren (String or String[])" à "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
+     <li>Ajoutez la propriété "sling:hideChildren (String or String[])" sur "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
      <li>Ajoutez des noms de nœud (caractères spéciaux à masquer) sous forme de valeurs pour la propriété sling:hideChildren. </li>
      <li>Cliquez sur Enregistrer tout. </li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li>
@@ -136,7 +139,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Classement des caractères spéciaux</td>
    <td>
     <ol>
-     <li>Ajouter un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" avec des propriétés obligatoires. </li>
+     <li>Ajoutez un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" avec les propriétés obligatoires. </li>
      <li>Ajoutez la propriété « sling:orderBefore (String) » au nœud enfant qui vient d’être créé. </li>
      <li>Ajoutez le nom du nœud comme valeur devant laquelle le caractère spécial récemment ajouté doit être affiché. </li>
      <li>Cliquez sur Enregistrer tout. </li>
