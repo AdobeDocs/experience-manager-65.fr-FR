@@ -10,6 +10,9 @@ discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
 translation-type: tm+mt
 source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 84%
 
 ---
 
@@ -37,19 +40,19 @@ Le service de traduction automatique traduit directement le contenu de vos formu
    >[!NOTE]
    >
    >* Avant d’ouvrir la version localisée du formulaire dans la fenêtre du navigateur, assurez-vous que les paramètres régionaux du navigateur permettent d’afficher le formulaire. Par exemple, si le formulaire est traduit en Allemand(de), définissez les paramètres régionaux du navigateur sur Allemand(de).
-   >* Les composants de formulaire adaptatif ne prennent pas en charge les langues s’écrivant de droite à gauche (RTL). Par exemple, l&#39;hébreu.
+   >* Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). Par exemple, hébreu.
 
 
    Avec le formulaire adaptatif, le document d’enregistrement généré automatiquement est également localisé.
 
-   Pour plus d’informations sur les paramètres et la configuration du document d’enregistrement, voir :
+   Pour plus d&#39;informations sur les paramètres et la configuration du Document d&#39;enregistrement, voir :
 
    [Configuration du modèle de document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
    [Paramètres des documents d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personnalisez les informations de marque du document d’enregistrement](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) et assurez-vous que les paramètres régionaux du navigateur correspondent à la langue dans laquelle vous avez localisé le formulaire adaptatif à l’aide de la langue de la machine. Les paramètres régionaux du navigateur permettent de localiser les informations de marque dans le document d’enregistrement.
-1. Pour afficher le document d’enregistrement localisé, appuyez sur Générer l’aperçu. Le document PDF d’enregistrement est généré et ouvert dans un nouvel onglet de votre navigateur.
+1. Pour afficher le document d’enregistrement localisé, appuyez sur Générer l’aperçu. Le document d’enregistrement PDF est généré et ouvert dans un nouvel onglet de votre navigateur.
 
 ## Localisation d’un formulaire adaptatif et de son document d’enregistrement à l’aide de la traduction humaine {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
@@ -73,7 +76,8 @@ Effectuez les étapes suivantes pour localiser un formulaire et son document d�
 
 >[!NOTE]
 >
->* Les composants de formulaire adaptatif ne prennent pas en charge les langues s’écrivant de droite à gauche (RTL). Par exemple, l&#39;hébreu.
+>* Les composants de formulaire adaptatif ne prennent pas en charge les langues de droite à gauche (RTL). Par exemple, hébreu.
+
 >
 
 
