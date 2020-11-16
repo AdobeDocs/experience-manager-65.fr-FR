@@ -27,7 +27,7 @@ ht-degree: 89%
 
 ## Présentation {#introduction}
 
-Contrairement à Jackrabbi, Oak 2, n’indexe pas le contenu par défaut. Des index personnalisés doivent être créés si nécessaire, comme pour les bases de données relationnelles classiques. S’il n’existe aucun index pour une requête spécifique, plusieurs nœuds seront probablement parcourus. La requête peut toujours fonctionner, mais sera probablement très lente.
+Contrairement à Jackrabbit 2, Oak n’indexe pas le contenu par défaut. Des index personnalisés doivent être créés si nécessaire, comme pour les bases de données relationnelles classiques. S’il n’existe aucun index pour une requête spécifique, plusieurs nœuds seront probablement parcourus. La requête peut toujours fonctionner, mais sera probablement très lente.
 
 Si Oak rencontre une requête sans index, un message de journal de niveau WARN s’affiche :
 
@@ -150,7 +150,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 Pour définir un index de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous **oak:index:**
 
-* **Nom (name) :**`LucenePropertyIndex`
+* **Nom:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`
 
 Une fois que le nœud a été créé, ajoutez les propriétés suivantes :
@@ -177,7 +177,7 @@ Une fois que le nœud a été créé, ajoutez les propriétés suivantes :
 
 >[!NOTE]
 >
->Par rapport à l’index standard de propriété, l’index de propriété Lucene est toujours configuré en mode asynchrone. Par conséquent, les résultats renvoyés par l’index peuvent ne pas toujours reflèter la version la plus récente du référentiel.
+>Par rapport à l’index standard de propriété, l’index de propriété Lucene est toujours configuré en mode asynchrone. Par conséquent, les résultats renvoyés par l’index peuvent ne pas toujours refléter la version la plus récente du référentiel.
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
 1. Ajouter une propriété au nœud par défaut avec les propriétés suivantes :
 
-   * **Nom (name) :**`class`
+   * **Nom:** `class`
    * **Type:** `String`
    * **Valeur:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
 
@@ -217,7 +217,7 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
    Vous pouvez également définir l’analyseur à utiliser avec une version spécifique de Lucene à l’aide de la propriété de chaîne facultative `luceneMatchVersion`. Un syntaxe valide pour l’utiliser avec Lucene 4.7 serait :
 
-   * **Nom (name) :**`luceneMatchVersion`
+   * **Nom:** `luceneMatchVersion`
    * **Type:** `String`
    * **Valeur:** `LUCENE_47`
 
@@ -225,7 +225,7 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
 1. If you wish to add a stopwords file to the analyzer configurations, you can create a new node under the `default` one with the following properties:
 
-   * **Nom (name) :**`stopwords`
+   * **Nom:** `stopwords`
    * **Type:** `nt:file`
 
 #### Création d’analyseurs via la composition {#creating-analyzers-via-composition}
@@ -234,35 +234,35 @@ Analyzers can also be composed based on `Tokenizers`, `TokenFilters` and `CharFi
 
 Prenez cette structure de nœud comme exemple :
 
-* **Nom (name) :**`analyzers`
+* **Nom:** `analyzers`
 
-   * **Nom (name) :**`default`
+   * **Nom:** `default`
 
-      * **Nom (name) :**`charFilters`
+      * **Nom:** `charFilters`
       * **Type:** `nt:unstructured`
 
-         * **Nom (name) :**`HTMLStrip`
-         * **Nom (name) :**`Mapping`
-      * **Nom (name) :**`tokenizer`
+         * **Nom:** `HTMLStrip`
+         * **Nom:** `Mapping`
+      * **Nom:** `tokenizer`
 
          * **Nom de la propriété :**`name`
 
             * **Type:** `String`
             * **Valeur:** `Standard`
-      * **Nom (name) :**`filters`
+      * **Nom:** `filters`
       * **Type:** `nt:unstructured`
 
-         * **Nom (name) :**`LowerCase`
-         * **Nom (name) :**`Stop`
+         * **Nom:** `LowerCase`
+         * **Nom:** `Stop`
 
             * **Nom de la propriété:** `words`
 
                * **Type:** `String`
                * **Valeur:** `stop1.txt, stop2.txt`
-            * **Nom (name) :**`stop1.txt`
+            * **Nom:** `stop1.txt`
 
                * **Type:** `nt:file`
-            * **Nom (name) :**`stop2.txt`
+            * **Nom:** `stop2.txt`
 
                * **Type:** `nt:file`
 
@@ -444,7 +444,7 @@ Vous pouvez activer la journalisation en suivant cette procédure :
 1. Dans la ligne que vous venez de créer, ajoutez les catégories mentionnées ci-dessus. Vous pouvez utiliser le signe **+** pour ajouter plus d’une catégorie à un seul journal.
 1. Sélectionnez **DEBUG** dans la liste déroulante **la liste déroulante** Log level (Niveau de journal).
 1. Set the output file to `logs/queryDebug.log`. Cela corrélera tous les événements DEBUG dans un seul fichier journal.
-1. Exécutez la requête ou effectuez le endu de la page qui utilise la requête que vous souhaitez débogger.
+1. Exécutez la requête ou effectuez le rendu de la page qui utilise la requête que vous souhaitez déboguer.
 1. Une fois que vous avez exécuté la requête, revenez à la console de journalisation et modifiez le niveau du journal nouvellement créé en le passant sur **INFO**.
 
 #### Configuration de l’index {#index-configuration}
