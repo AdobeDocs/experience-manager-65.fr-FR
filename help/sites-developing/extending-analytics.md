@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 53%
 
 ---
 
@@ -58,7 +61,7 @@ En voici un exemple :
 </span>
 ```
 
-At page load, all `data-tracking` attributes will be collected and added to the event store of the ContextHub, where they can be mapped to Adobe Analytics events. Les événements qui ne sont pas mappés ne seront pas suivis par Adobe Analytics. See [Connecting to Adobe Analytics](/help/sites-administering/adobeanalytics.md) for more details about mapping events.
+At page load, all `data-tracking` attributes will be collected and added to the event store of the ContextHub, where they can be mapped to Adobe Analytics events. Les événements non mappés ne seront pas suivis par Adobe Analytics. See [Connecting to Adobe Analytics](/help/sites-administering/adobeanalytics.md) for more details about mapping events.
 
 ### Suivi d’événements personnalisés après le chargement d’une page {#tracking-custom-events-after-page-load}
 
@@ -72,7 +75,7 @@ Où :
 
 * `values` contient toutes les valeurs à suivre.
 * `collect` est facultatif et renvoie un tableau contenant l’événement et l’objet de données.
-* `options` est facultative et contient des options de suivi de liens telles que l’élément HTML `obj` et ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` est facultatif et contient des options de suivi de liens telles que l’élément HTML `obj` et ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
 * `componentPath` est un attribut nécessaire et il est recommandé de le définir sur `<%=resource.getResourceType()%>`
 
@@ -86,13 +89,13 @@ Par exemple, avec la définition suivante, un utilisateur cliquant sur le lien *
 
 ## Accès aux valeurs dans ContextHub {#accessing-values-in-the-contexthub}
 
-L’API JavaScript ContextHub possède une `getStore(name)` fonction qui renvoie le magasin spécifié, le cas échéant. La boutique possède une `getItem(key)` fonction qui renvoie la valeur de la clé spécifiée, le cas échéant. La `getKeys()` fonction permet de récupérer un tableau de clés définies pour le magasin spécifique.
+L’API JavaScript ContextHub possède une `getStore(name)` fonction qui renvoie le magasin spécifié, si disponible. La banque de données a une `getItem(key)` fonction qui renvoie la valeur de la clé spécifiée, si elle est disponible. La `getKeys()` fonction permet de récupérer un tableau de clés définies pour le magasin spécifique.
 
-Vous pouvez être averti des changements de valeur sur un magasin en liant une fonction à l’aide de la `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` fonction.
+Vous pouvez être averti des modifications de valeur sur un magasin en liant une fonction à l’aide de la `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` fonction.
 
 The best way to be notified of initial availability of the ContextHub is to use the `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` function.
 
-**Evénements supplémentaires pour ContextHub :**
+**Événements supplémentaires pour ContextHub :**
 
 Toutes les boutiques sont prêtes :
 
@@ -108,7 +111,7 @@ Une boutique spécifique :
 
 ## Ajout de rappels d’enregistrement {#adding-record-callbacks}
 
-Les rappels avant et après sont enregistrés à l’aide des fonctions `CQ_Analytics.registerBeforeCallback(callback,rank)` et `CQ_Analytics.registerAfterCallback(callback,rank)`.
+Les rappels avant et après sont enregistrés à l&#39;aide des fonctions `CQ_Analytics.registerBeforeCallback(callback,rank)` et `CQ_Analytics.registerAfterCallback(callback,rank)`.
 
 Les deux fonctions prennent une fonction comme premier argument et un classement comme deuxième argument, ce qui détermine l’ordre dans lequel les rappels sont exécutés.
 
