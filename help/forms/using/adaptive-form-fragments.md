@@ -10,6 +10,9 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+workflow-type: tm+mt
+source-wordcount: '2089'
+ht-degree: 96%
 
 ---
 
@@ -38,6 +41,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
 
    * **Aucun** : indique de créer un fragment à partir de zéro, sans utiliser aucun modèle de formulaire.
    * **Modèle de formulaire** : indique de créer le fragment à l’aide d’un modèle XDP téléchargé dans AEM Forms. Sélectionnez le modèle XDP correspondant en tant que modèle de formulaire pour le fragment.
+
    ![Création d’un formulaire adaptatif avec le modèle de formulaire comme modèle](assets/form-template-model.png)
 
    Les sous-formulaires marqués comme fragments dans le modèle de formulaire sélectionné sont également affichés. Vous pouvez sélectionner un sous-formulaire comme fragment de formulaire adaptatif dans la liste déroulante.
@@ -47,6 +51,7 @@ Vous pouvez créer un fragment de formulaire adaptatif à partir de zéro ou enr
    En outre, vous pouvez créer un fragment de formulaire adaptatif en utilisant les sous-formulaires qui ne sont pas marqués comme des fragments dans le modèle de formulaire en spécifiant l’expression SOM du sous-formulaire dans la liste déroulante.
 
    * **Schéma XML** : indique de créer un fragment à partir d’un schéma XML téléchargé dans AEM Forms. Vous pouvez télécharger ou sélectionner l’un des schémas XML comme modèle de formulaire pour le fragment.
+
    ![Création d’un fragment de formulaire adaptatif basé sur un schéma XML comme modèle](assets/xml-schema-model.png)
 
    Vous pouvez également créer un fragment de formulaire adaptatif en choisissant un type complexe présent dans le schéma sélectionné dans la liste déroulante.
@@ -91,6 +96,7 @@ Si vous choisissez **/** comme racine du modèle de fragment, l’arborescence c
    * **Référence de schéma XSD** : s’affiche uniquement dans les formulaires adaptatifs XSD. Il indique l’emplacement du schéma XML. 
 
    * **Référence de XDP** : s’affiche uniquement dans les formulaires adaptatifs basés sur XDP. Il indique l’emplacement du modèle de formulaire XDP.
+
    ![save-fragment](assets/save-fragment.png)
 
    Boîte de dialogue Enregistrer sous forme de fragment 
@@ -234,8 +240,8 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 * Lorsque vous publiez un formulaire adaptatif, vous devez publier le fragment de formulaire adaptatif autonome inséré par référence dans le formulaire adaptatif.
 * Lorsque vous publiez de nouveau un fragment de formulaire adaptatif mis à jour, les modifications sont répercutées dans les instances publiées du formulaire adaptatif dans lequel le fragment est utilisé.
 * Le formulaire adaptatif contenant le composant Vérifier ne prend pas en charge les utilisateurs anonymes. En outre, il n’est pas recommandé d’utiliser pour le composant Vérifier dans un fragment de formulaire adaptatif.
-* (**Mac uniquement**) Pour vous assurer que la fonctionnalité des fragments de formulaire fonctionne parfaitement dans tous les scénarios, ajoutez l’entrée suivante au fichier /private/etc/hosts :
-   `127.0.0.1 <Host machine>` Ordinateur **** hôte : Ordinateur Apple Mac sur lequel AEM Forms est déployé.
+* (**Mac uniquement**) Pour vous assurer que la fonctionnalité de fragments de formulaire fonctionne parfaitement dans tous les scénarios, ajoutez l’entrée suivante au fichier /private/etc/hosts :
+   `127.0.0.1 <Host machine>` **Ordinateur** hôte : Ordinateur Apple Mac sur lequel AEM Forms est déployé.
 
 ## Fragments de référence {#reference-fragments}
 
