@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 77%
 
 ---
 
@@ -86,7 +89,7 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
   </tr>
   <tr>
    <td>Centre d’abonnement</td>
-   <td>Un centre d’abonnement est une page Web sur laquelle un abonné peut contrôler les messages qu’il reçoit de votre organisation.</td>
+   <td>Un centre d’abonnements est une page Web sur laquelle un abonné peut contrôler les messages qu’il reçoit de votre organisation.</td>
   </tr>
   <tr>
    <td>Suivi sur les ouvertures de courrier électronique</td>
@@ -109,6 +112,7 @@ Le composant **Outils de messagerie électronique** pour ExactTarget permet d’
    >
    >
 * Deux des outils de messagerie électronique sont obligatoires, à savoir : **Adresse postale physique (requise)** et **Centre de profils (requis)**. Lorsque le message électronique est publié sur ExactTarget, ces deux outils de messagerie sont ajoutés, par défaut, au bas de chaque message.
+
 >
 
 
