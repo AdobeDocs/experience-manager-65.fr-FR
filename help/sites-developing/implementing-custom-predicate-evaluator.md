@@ -12,6 +12,9 @@ discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 71%
 
 ---
 
@@ -43,7 +46,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-search-custom-prédicate-évaluator sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [Ouvrez le projet aem-search-custom-prédicate-évaluator sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip).
 
 ### L’évaluateur de prédicat en détail {#predicate-evaluator-in-detail}
@@ -58,7 +61,7 @@ Il mappe une contrainte de recherche de plus haut niveau (par exemple, « width
 
 ### Mise en œuvre d’un évaluateur de prédicat personnalisé pour les métadonnées de réplication {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
-À titre d’exemple, cette section explique comment créer un évaluateur de prédicats personnalisé qui aide les données en fonction des métadonnées de réplication :
+Cette section vous explique, par exemple, comment créer un évaluateur de prédicats personnalisé qui aide les données en fonction des métadonnées de réplication :
 
 * `cq:lastReplicated` qui stocke la date de la dernière action de réplication.
 
@@ -98,7 +101,7 @@ replic.since=2013-01-01T00:00:00.000+01:00
 replic.action=Activate
 ```
 
-Le regroupement des prédicats de métadonnées de réplication avec un évaluateur de prédicats personnalisé permet de créer une requête significative.
+Le regroupement des prédicats de métadonnées de réplication à l’aide d’un évaluateur de prédicats personnalisé permet de créer une requête significative.
 
 #### Mise à jour des dépendances Maven {#updating-maven-dependencies}
 
