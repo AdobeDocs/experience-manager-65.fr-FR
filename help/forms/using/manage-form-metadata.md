@@ -11,6 +11,9 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+workflow-type: tm+mt
+source-wordcount: '1994'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +55,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
    <td><strong>Description</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td>Titre</td> 
+   <td>Title (Titre)</td> 
    <td>Tout type, à l’exception du type ressource</td> 
    <td>Nom d’affichage du formulaire.<br /> </td> 
   </tr> 
@@ -70,7 +73,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
      <li>Formulaire PDF, formulaire PDF (AcroForm) ou formulaire PDF (signé)</li> 
      <li>Document, document (signé)</li> 
      <li>Formulaire adaptatif</li> 
-     <li>Ressource</li> 
+     <li>Resource</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -148,7 +151,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   </tr> 
   <tr> 
    <td>Références</td> 
-   <td><p>Formulaire adaptatif</p> <p>Modèle de formulaire</p> <p>Ressource</p> </td> 
+   <td><p>Formulaire adaptatif</p> <p>Modèle de formulaire</p> <p>Resource</p> </td> 
    <td><p>Liste des ressources (formulaires ou ressources) auxquelles ce formulaire est associé. Ces ressources peuvent appartenir à deux catégories :</p> 
     <ul> 
      <li>Fait référence : ressources auxquelles le formulaire actuel fait référence.</li> 
@@ -162,7 +165,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
     <ul> 
      <li>Modèle de formulaire : un modèle de formulaire est sélectionné parmi ceux figurant dans le référentiel. Cette valeur peut être mise à jour.</li> 
      <li>Schéma XML : un fichier XSD est téléchargé. Cette valeur peut être mise à jour.</li> 
-     <li>Aucun</li> 
+     <li>Aucune</li> 
     </ul> 
     <div>
       Un modèle de formulaire sélectionné peut être mis à jour mais pas supprimé. 
@@ -179,7 +182,7 @@ Les ressources possèdent des valeurs de propriété qui peuvent être affichée
 
 1. Ouvrez la page de propriétés à l’aide de l’une des méthodes suivantes :
 
-   1. Cliquez sur l’icône Afficher les propriétés ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) dans Actions rapides.
+   1. Cliquez sur l&#39;icône Propriétés de la Vue ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) dans Actions rapides.
 
       >[!NOTE]
       >
@@ -194,6 +197,7 @@ Les ressources possèdent des valeurs de propriété qui peuvent être affichée
 
    * Modifier : ![aem6forms_edit](assets/aem6forms_edit.png) Modifier les valeurs des propriétés de métadonnées
    * View: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigate to the form details page, which opens the form in the preview mode.
+
    La section du contenu est divisée en deux parties :
 
    * Le panneau de gauche contient la miniature du formulaire
@@ -220,6 +224,7 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
 
    * Cancel: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancel any changes made to metadata property values so far
    * Done: ![aem6forms_check](assets/aem6forms_check.png) Save all the changes made to metadata property values so far
+
    Ces deux actions redirigent l’utilisateur dans le mode lecture seule de la page de propriétés contenant les valeurs mises à jour.
 
 ### Mise à jour de la miniature du formulaire {#update-the-form-thumbnail}
@@ -234,6 +239,7 @@ Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité
 >
 >* Utilisez une image carrée pour la miniature. Lorsque vous utilisez une image qui n’est pas carrée et affichez la miniature dans une vue de liste, la miniature apparaît tronquée.
 >* Une fois qu’une nouvelle image est téléchargée ou générée, la miniature est remplacée par celle-ci et l’image précédente ne peut pas être rétablie.
+
 >
 
 
