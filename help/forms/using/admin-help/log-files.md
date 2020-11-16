@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 73%
 
 ---
 
@@ -25,7 +28,7 @@ Les événements, comme les erreurs d’exécution ou de démarrage, sont enregi
 * server.log.*[aaaa-mm-jj]*
 * server.log
 
-(WebLogic) Les fichiers journaux de domaine se trouvent dans le `[appserverdomain]` répertoire et les fichiers journaux de serveur dans le `[appserverdomain]/servers/[appserver name]/logs` répertoire :
+(WebLogic) Les fichiers journaux de domaine se trouvent dans le `[appserverdomain]` répertoire et les fichiers journaux de serveur se trouvent dans le `[appserverdomain]/servers/[appserver name]/logs` répertoire :
 
 * `access.log`
 * `[appserver name].log`
