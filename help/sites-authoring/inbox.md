@@ -148,22 +148,22 @@ L’option Contrôle d’administration permet aux administrateurs d’effectuer
 
 L’option Contrôle d’administration n’est visible que pour les membres du `administrators` groupe ou `workflow-administrators` du groupe.
 
-* **Personnalisation** des colonnes : Personnalisez une boîte de réception AEM pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un processus.
-   * **Ajouter la colonne**: Sélectionnez une colonne à ajouter dans la boîte de réception AEM.
+* **Personnalisation** des colonnes : Personnalisez une boîte de réception AEM pour modifier le titre par défaut d&#39;une colonne, réorganiser la position d&#39;une colonne et afficher des colonnes supplémentaires en fonction des données d&#39;un flux de travail.
+   * **Ajouter la colonne**: Sélectionnez une colonne à ajouter dans AEM boîte de réception.
    * **Modifier la colonne**: Placez le pointeur de la souris sur le titre de la colonne et appuyez sur l’icône ![Modifier](assets/edit.svg) pour entrer un nom d’affichage de colonne.
-   * **Supprimer la colonne**: Appuyez sur l’icône ![Supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception AEM.
-   * **Déplacer la colonne**: Faites glisser l’icône de ![déplacement](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception AEM.
+   * **Supprimer la colonne**: Appuyez sur l’icône ![Supprimer](assets/delete_updated.svg) pour supprimer la colonne de AEM boîte de réception.
+   * **Déplacer la colonne**: Faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans AEM boîte de réception.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personnalisation de l’identité graphique**
 
-   * **Personnaliser le texte de l&#39;en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte de l’ **Adobe Experience Manager** par défaut.
+   * **Personnaliser le texte de l&#39;en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
 
    * **Personnaliser le logo :** Spécifiez l’image à afficher dans l’en-tête sous forme de logo. Téléchargez une image dans le module de gestion des actifs numériques (DAM) et référencez-la dans le champ.
 
 * **Navigation de l’utilisateur**
-   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte de l’Adobe Experience Manager.
+   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation comprennent des liens vers d’autres solutions, des liens d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
 * **Enregistrer :** Appuyez/cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
