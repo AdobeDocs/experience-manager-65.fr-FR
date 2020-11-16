@@ -12,6 +12,9 @@ discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+workflow-type: tm+mt
+source-wordcount: '1230'
+ht-degree: 79%
 
 ---
 
@@ -25,9 +28,9 @@ Les visiteurs individuels de votre site web ne peuvent être identifiés que lor
 
    Vous devrez peut-être limiter l’accès à votre site Web (ou à certaines sections) à des visiteurs spécifiques.
 
-* [Personnalisation](/help/sites-administering/personalization.md) Permet aux visiteurs de configurer certains aspects de la manière dont ils accèdent à votre site Web.
+* [Personnalisation](/help/sites-administering/personalization.md) Permet aux visiteurs de configurer certains aspects de leur accès à votre site Web.
 
-La fonctionnalité de connexion (et de déconnexion) est mise à disposition par un [compte avec un **profil **](#profiles-and-user-accounts)contenant des informations supplémentaires sur le visiteur (utilisateur) enregistré. Les processus réels pour l’enregistrement et l’autorisation peuvent différer :
+La fonctionnalité de connexion (et de déconnexion) est mise à disposition par un [compte avec un **profil**](#profiles-and-user-accounts) contenant des informations supplémentaires sur le visiteur (utilisateur) enregistré. Les processus réels pour l’enregistrement et l’autorisation peuvent différer :
 
 * Auto-inscription à partir du site Web
 
@@ -35,11 +38,11 @@ La fonctionnalité de connexion (et de déconnexion) est mise à disposition par
 
 * Demande d&#39;inscription sur le site Web
 
-   Dans le cas d’un groupe d’utilisateurs fermé, vous pouvez autoriser les visiteurs à demander l’enregistrement, mais imposer l’autorisation au moyen d’un processus.
+   Dans le cas d’un groupe d’utilisateurs fermé, vous pouvez autoriser les visiteurs à demander l’enregistrement, mais appliquer l’autorisation au moyen d’un processus.
 
-* Enregistrement de chaque compte à partir de l’environnement d’auteur
+* Enregistrer chaque compte à partir de l’environnement auteur
 
-   Si vous disposez d&#39;un petit nombre de profils, qui devront quand même être autorisés, vous pouvez décider de vous enregistrer directement.
+   Si vous avez un petit nombre de profils, qui auront de toute façon besoin d&#39;une autorisation, vous pouvez décider d&#39;enregistrer chacun directement.
 
 Pour permettre aux visiteurs de s’enregistrer, une série de composants et de formulaires peut être utilisée pour recueillir les informations d’identification nécessaires, puis d’autres informations de profil (facultatives). Une fois qu’ils se sont enregistrés, ils doivent également pouvoir vérifier et mettre à jour les informations qu’ils ont envoyées.
 
@@ -59,7 +62,7 @@ Un [formulaire](/help/sites-authoring/default-components.md#form-component) peut
 For example, users can request a new profile, using the Geometrixx page
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![enregistrer](assets/registerform.png)
+![enregistré](assets/registerform.png)
 
 Lors de l’envoi de la demande, la page de profil s’affiche lorsque l’utilisateur peut fournir des détails personnels.
 
@@ -85,18 +88,18 @@ Tout comme il y a un mécanisme de connexion, un mécanisme de déconnexion est 
 
 ## Affichage et mise à jour d’un profil {#viewing-and-updating-a-profile}
 
-En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré des informations sur son profil. Il doit pouvoir les afficher et/ou les mettre à jour ultérieurement. Cela peut se faire sous une forme similaire; par exemple, dans Geometrixx :
+En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré des informations sur son profil. Il doit pouvoir les afficher et/ou les mettre à jour ultérieurement. Cela peut se faire sous une forme similaire ; par exemple, en Geometrixx :
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour voir les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d&#39;une page ; par exemple avec le `admin` compte :
+Pour voir les détails de votre profil, cliquez sur **Mon Profil** dans le coin supérieur droit de n&#39;importe quelle page ; par exemple avec le `admin` compte :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
 
-1. Ouvrez une page ; par exemple, la page Geometrixx :
+1. Ouvrez une page ; par exemple, la page de Geometrixx :
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -127,6 +130,7 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
    * **Nom de l’élément** - `favoriteColor`
    * **Titre** - `Favorite Color`
    * **Éléments** : ajoutez plusieurs couleurs sous forme d’éléments
+
    Cliquez sur **OK** pour enregistrer.
 
 1. Fermez la page et revenez à la console **Sites web** et activez la page Mon profil.
@@ -191,7 +195,7 @@ Dans une configuration standard (création ou publication), chacun possède un a
 
 Ces droits d’accès sont définis par la liste de contrôle d’accès générique suivante :
 
-/home tout le monde autorise jcr:read rep:glob = */profile*
+/home all allow jcr:read rep:glob = */profil*
 
 Elle autorise :
 
@@ -200,7 +204,7 @@ Elle autorise :
 
 Si cet accès n’est pas approprié pour votre installation, vous pouvez modifier ces paramètres par défaut.
 
-This can be done using the **[Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)**tab:
+This can be done using the **[Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -217,23 +221,23 @@ Ce composant fournit deux champs pour :
 
 Avec les paramètres par défaut, le composant ressemble à celui-ci :
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![dc_profils_checkedpassword](assets/dc_profiles_checkedpassword.png)
 
 ### Photo de l’avatar du profil {#profile-avatar-photo}
 
 Ce composant fournit à l’utilisateur une méthode pour sélectionner un fichier de photo d’avatar et le télécharger.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![dc_profils_avatarphoto](assets/dc_profiles_avatarphoto.png)
 
 ### Nom détaillé du profil {#profile-detailed-name}
 
 Ce composant permet à l’utilisateur de saisir un nom détaillé.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![dc_profils_detailedname](assets/dc_profiles_detailedname.png)
 
 ### Sexe du profil {#profile-gender}
 
 Ce composant permet à l’utilisateur d’indiquer son sexe.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![dc_profils_gender](assets/dc_profiles_gender.png)
 
