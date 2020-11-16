@@ -12,6 +12,9 @@ discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a156e09e77951041dce017f2f78069bc050b6bdb
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: a156e09e77951041dce017f2f78069bc050b6bdb
 
 AEM 6.5 introduit la gestion des autorisations pour les utilisateurs et pour les groupes. La fonctionnalité principale reste la même que celle de l’interface utilisateur classique, mais celle-ci est plus efficace et conviviale.
 
-## Procédure d’utilisation {#how-to-use}
+## Utilisation {#how-to-use}
 
 ### Accès à l’interface utilisateur {#accessing-the-ui}
 
