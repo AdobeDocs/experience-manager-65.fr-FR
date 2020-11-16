@@ -12,6 +12,9 @@ discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '3381'
+ht-degree: 83%
 
 ---
 
@@ -138,7 +141,7 @@ Vous pouvez utiliser ce composant CTA pour ajouter le lien texte sur la page d�
 
 **Libellé** Le texte que les utilisateurs voient. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
 
-**URL** cible Entrez l’URI que les utilisateurs doivent visiter s’ils cliquent sur le texte.
+**URL** de la cible Entrez l’URI que les utilisateurs doivent visiter s’ils cliquent sur le texte.
 
 **Options** de rendu Décrit les options de rendu. Vous avez le choix entre les options suivantes :
 
@@ -149,7 +152,7 @@ Vous pouvez utiliser ce composant CTA pour ajouter le lien texte sur la page d�
 
 **CSS** Dans l’onglet Style, saisissez le chemin d’accès à votre feuille de style CSS.
 
-**ID** Dans l’onglet Style, saisissez un ID pour le composant afin de l’identifier de manière unique.
+**ID** Dans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
 
 Voici un exemple de lien de clics publicitaires :
 
@@ -163,7 +166,7 @@ Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un l
 
 **Libellé** Le texte que les utilisateurs voient dans le graphique. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
 
-**URL** cible Entrez l’URI que les utilisateurs doivent visiter s’ils cliquent sur l’image.
+**URL** de la cible Entrez l’URI que les utilisateurs doivent visiter s’ils cliquent sur l’image.
 
 **Options** de rendu Décrit les options de rendu. Vous avez le choix entre les options suivantes :
 
@@ -174,7 +177,7 @@ Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un l
 
 **CSS** Dans l’onglet Style, saisissez le chemin d’accès à votre feuille de style CSS.
 
-**ID** Dans l’onglet Style, saisissez un ID pour le composant afin de l’identifier de manière unique.
+**ID** Dans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
 
 Voici un exemple de lien graphique :
 
@@ -261,7 +264,7 @@ La section suivante décrit les composants disponibles pour les formulaires de p
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**Formulaire** de piste Ajoutez ce composant pour ajouter un formulaire de piste à votre page d&#39;entrée. Un formulaire de piste comprend automatiquement un champ Début du formulaire de piste et un champ Fin de formulaire de piste. Entre les deux, vous ajoutez les composants « Formulaire de piste » décrits dans cette section.
+**Formulaire** de piste Ajoutez ce composant pour ajouter un formulaire de piste à votre landing page. Un formulaire de piste comprend automatiquement un champ Début du formulaire de piste et un champ Fin de formulaire de piste. Entre les deux, vous ajoutez les composants « Formulaire de piste » décrits dans cette section.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -278,7 +281,7 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 **Page de remerciement**
 Page à référencer pour remercier les visiteurs qui ont saisi des données. Si ce champ est laissé vide, le formulaire est réaffiché après la soumission.
 
-**Démarrer le processus** Détermine quel processus est déclenché une fois qu&#39;un formulaire de piste est envoyé.
+**Processus** du début Détermine le processus qui est déclenché une fois qu&#39;un formulaire de piste est envoyé.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -286,17 +289,17 @@ Page à référencer pour remercier les visiteurs qui ont saisi des données. Si
 
 * Créer une piste
 * Service de messagerie électronique : créer un abonné et l’ajouter à la liste. Sélectionnez cette option si vous utilisez un fournisseur de services de messagerie tel que ExactTarget.
-* Service Email : Envoyer un message de répondeur automatique : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
-* Service Email : Désabonner l’utilisateur de la liste - Utilisez cette option si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
+* Service de messagerie : Envoyer un courriel de répondeur automatique : à utiliser si vous utilisez un prestataire de messagerie comme ExactTarget.
+* Service de messagerie : Désabonner l&#39;utilisateur de la liste : à utiliser si vous utilisez un prestataire de messagerie tel qu&#39;ExactTarget.
 * Désabonner l’utilisateur
 
-**Identifiant** de formulaire L’identifiant de formulaire identifie de manière unique le formulaire de piste. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
+**Identificateur** de formulaire L&#39;identifiant de formulaire identifie de manière unique le formulaire de piste. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
 
-**Chemin** de chargement indique le chemin d’accès aux propriétés du noeud utilisé pour charger des valeurs prédéfinies dans les champs du formulaire de piste.
+**Load Path** est le chemin d’accès aux propriétés de noeud utilisé pour charger des valeurs prédéfinies dans les champs de formulaire de piste.
 
 Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
-**Validation** du client Indique si la validation du client est requise pour ce formulaire (la validation du serveur se produit toujours). Cela peut être réalisé conjointement avec le composant Forms Captcha.
+**Validation** du client Indique si la validation du client est requise pour ce formulaire (la validation du serveur se produit toujours). Ceci peut être réalisé en association avec le composant Forms Captcha.
 
 **Type** de ressource de validation Définit le type de ressource de validation de formulaire si vous souhaitez valider la totalité du formulaire de piste (au lieu de champs individuels).
 
@@ -382,7 +385,7 @@ En supposant que le bloc de conception soit prêt, les étapes suivantes décriv
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Faites glisser le bloc de conception vers la zone de déplacement. Comme vous pouvez le constater, la flèche change de sens lorsque vous faites glisser un bloc. 
-1. Après avoir effectué cette opération, la page d’entrée apparaît en lieu et place de la page d’importateur. Votre page d&#39;entrée HTML a été importée.
+1. Après avoir effectué cette opération, la page d’entrée apparaît en lieu et place de la page d’importateur. Votre landing page HTML a été importé avec succès.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
@@ -458,7 +461,7 @@ Il convient toutefois de signaler une exception : lorsque vous supprimez une pa
 
 ### Publication d’une page d’entrée {#publishing-a-landing-page}
 
-Vous pouvez publier la page d’entrée et toutes ses dépendances, tout comme publier une page normale.
+Vous pouvez publier le landing page et toutes ses dépendances comme si vous publiiez une page normale.
 
 >[!NOTE]
 >
