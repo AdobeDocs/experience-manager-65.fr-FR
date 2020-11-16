@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
 source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+workflow-type: tm+mt
+source-wordcount: '6722'
+ht-degree: 86%
 
 ---
 
@@ -35,12 +38,13 @@ Cet environnement est utilisé par les auteurs qui créent et mettent à jour du
 
 ## Environnement de publication {#publish-environment}
 
-Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs. Dans ce cas, le nombre de demandes est encore plus élevé et la vitesse est tout aussi vitale, mais comme la nature des demandes est moins dynamique, des mécanismes supplémentaires d&#39;amélioration des performances peuvent être appliqués; comme la mise en cache du contenu ou l’équilibrage de charge.
+Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs. Dans ce cas, le nombre de demandes est encore plus élevé et la vitesse est tout aussi vitale, mais comme la nature des demandes est moins dynamique, des mécanismes supplémentaires d&#39;amélioration des performances peuvent être appliqués ; comme la mise en cache du contenu ou l’équilibrage de charge.
 
 >[!NOTE]
 >
 >* Une fois l’optimisation des performances configurée, suivez les procédures dans [Tough Day](/help/sites-developing/tough-day.md) pour tester l’environnement en le soumettant à une charge importante.
 >* Voir aussi [Conseils pour le réglage des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 
@@ -55,7 +59,7 @@ Une méthodologie d’optimisation des performances pour les projets CQ peut se 
 1. [Maintien de la pertinence](#stay-relevant)
 1. [Cycles d’itération agile](#agile-iteration-cycles)
 
-Ces règles, dans une large mesure, s&#39;appliquent aux projets Web en général et sont pertinentes pour les gestionnaires de projet et les administrateurs système afin de s&#39;assurer que leurs projets ne seront pas confrontés à des problèmes de performance lorsque le moment du lancement viendra.
+Ces règles, dans une large mesure, s&#39;appliquent aux projets Web en général et sont pertinentes pour les gestionnaires de projets et les administrateurs système afin de s&#39;assurer que leurs projets ne seront pas confrontés à des problèmes de performance au moment du lancement.
 
 ### Planification de l’optimisation {#planning-for-optimization}
 
@@ -63,7 +67,7 @@ Ces règles, dans une large mesure, s&#39;appliquent aux projets Web en généra
 
 Environ 10 % des efforts liés à un projet doivent être planifiés en vue de la phase d’optimisation des performances. Bien sûr, les exigences d’optimisation des performances dépendront du niveau de complexité d’un projet donné et de l’expérience de l’équipe de développement. Même si votre projet peut (au final) ne pas consommer tout le temps alloué, il est recommandé de toujours planifier l’optimisation des performances dans la zone géographique proposée.
 
-Dans la mesure du possible, un projet doit d&#39;abord être lancé en douceur vers un  limité afin de rassembler l&#39;expérience réelle et d&#39;effectuer d&#39;autres optimisations, sans la pression supplémentaire qui suit une annonce complète.
+Chaque fois que cela est possible, un projet doit d&#39;abord être lancé en douceur à une audience limitée afin de collecter l&#39;expérience réelle et d&#39;effectuer d&#39;autres optimisations, sans la pression supplémentaire qui suit une annonce complète.
 
 Une fois que le site est « en ligne », l’optimisation des performances se poursuit. C’est le moment où vous faites face à la réelle charge que subit votre système. Il est important de prévoir des ajustements supplémentaires après le lancement.
 
@@ -75,13 +79,13 @@ Dans la mesure où la charge de votre système change et que les profils de perf
 
 Si vous avez mis en ligne un site web et que vous identifiez, après le lancement, des problèmes de performances, une seule raison peut les expliquer : vos tests de charge et de performance n’ont pas simulé la réalité le plus fidèlement possible.
 
-Simuler la réalité est difficile et le montant des efforts que vous voudrez raisonnablement investir pour devenir &quot;réel&quot; dépend de la nature de votre projet. Cette réalité signifie non seulement un « code réel » et un « trafic réel », mais aussi du « contenu réel », en particulier en ce qui concerne la taille et la structure. Gardez à l’esprit que vos modèles peuvent se comporter différemment selon la taille et la structure du référentiel.
+Simuler la réalité est difficile et le degré d&#39;effort que vous voudrez raisonnablement investir pour devenir &quot;réel&quot; dépend de la nature de votre projet. Cette réalité signifie non seulement un « code réel » et un « trafic réel », mais aussi du « contenu réel », en particulier en ce qui concerne la taille et la structure. Gardez à l’esprit que vos modèles peuvent se comporter différemment selon la taille et la structure du référentiel.
 
 ### Établissement d’objectifs solides {#establish-solid-goals}
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-Il ne faut pas sous-estimer l&#39;importance d&#39;établir correctement les objectifs de rendement. Souvent, une fois que les gens se concentrent sur des objectifs de rendement précis, il est très difficile de les modifier par la suite, même s&#39;ils sont fondés sur des hypothèses délirantes.
+Il ne faut pas sous-estimer l&#39;importance d&#39;établir correctement les objectifs de rendement. Souvent, une fois que les gens se concentrent sur des objectifs de rendement précis, il est très difficile de changer ces objectifs par la suite, même s&#39;ils sont fondés sur des hypothèses délirantes.
 
 L’établissement d’objectifs de performances réalisables et viables est vraiment l’un des aspects les plus délicats. Il est souvent préférable de se fier à des journaux et des repères réels d’un site web comparable (par exemple, le prédécesseur du nouveau site web).
 
@@ -95,7 +99,7 @@ Il est important de résoudre un seul goulot d’étranglement à la fois. Si vo
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
-L’optimisation des performances est un processus itératif qui implique des activités de mesure, d’analyse, d’optimisation et de validation jusqu’à ce que l’objectif soit atteint. Afin de prendre correctement en compte cet aspect, mettez en oeuvre un processus de validation souple au cours de la phase d’optimisation plutôt qu’un processus de test  plus intensif après chaque itération.
+L’optimisation des performances est un processus itératif qui implique des activités de mesure, d’analyse, d’optimisation et de validation jusqu’à ce que l’objectif soit atteint. Afin de prendre correctement en compte cet aspect, implémentez un processus de validation souple dans la phase d&#39;optimisation plutôt qu&#39;un processus de test plus intensif à poids après chaque itération.
 
 Cela signifie notamment que le développeur implémentant l’optimisation doit disposer d’un moyen rapide pour savoir si l’optimisation a déjà atteint l’objectif. Ces informations sont précieuses, car une fois l’objectif atteint, l’optimisation est terminée.
 
@@ -138,7 +142,7 @@ En raison de l’important volume de données impliquées lors du chargement et 
 
 À cet égard, deux composants matériels affectent les performances :
 
-* UC : plusieurs coeurs permettent un travail plus fluide lors du transcodage
+* CPU : plusieurs coeurs permettent un travail plus fluide lors du transcodage
 * Disques durs : les disques RAID parallèles ont le même effet
 
 Pour améliorer les performances, vous pouvez prendre en compte les éléments suivants :
@@ -171,7 +175,7 @@ Le diagramme suivant illustre le parcours que peut suivre une demande de contenu
 
 Les performances sont également un compromis entre volume et capacité :
 
-**Volume** Quantité de sortie qui est traitée et diffusée par le système.
+**Volume** Quantité de la sortie qui est traitée et diffusée par le système.
 
 **Capacité** Capacité du système à fournir le volume.
 
@@ -223,14 +227,14 @@ Limitez le nombre de workflow en cours d’exécution pour améliorer les perfor
 
 Par exemple, lorsque des images (ou des ressources de gestion des actifs numériques en général) sont chargées, les workflows importent automatiquement les images dans la gestion des actifs numériques (DAM). Les images, en haute résolution le plus souvent, peuvent facilement consommer des centaines de Mo de segment de mémoire pour le traitement. La manipulation de ces images en parallèle impose une charge élevée sur le sous-système de mémoire et le nettoyeur de mémoire.
 
-Le moteur de workflow utilise les files d’attente de tâches Apache Sling pour gérer et planifier le traitement des éléments de travail. Les services de file d’attente de travaux suivants ont été créés par défaut à partir de la fabrique de services de configuration de file d’attente de travaux Apache Sling pour les tâches de processus de traitement :
+Le moteur de workflow utilise les files d’attente de tâches Apache Sling pour gérer et planifier le traitement des éléments de travail. Les services de file d’attente de travaux suivants ont été créés par défaut à partir de la fabrique de services de configuration de file d’attente de travaux Apache Sling pour le traitement des tâches de flux de travaux :
 
-* File d’attente de processus granite : La plupart des étapes du processus, telles que celles qui traitent les ressources DAM, utilisent le service Granite Workflow Queue.
-* File d’attente de travaux de processus externe Granite Workflow : Ce service est utilisé pour des étapes de processus externes spéciales, généralement utilisées pour contacter un système externe et interroger les résultats. Par exemple, l’étape du processus de  des médias InDesign est implémentée en tant que processus externe. Le moteur de workflow utilise la file d’attente externe pour traiter l’interrogation. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* File d&#39;attente de processus granite : La plupart des étapes de processus, telles que celles qui traitent les ressources DAM, utilisent le service Granite Workflow Queue.
+* File d&#39;attente de travaux de processus externe Granite Workflow : Ce service est utilisé pour les étapes de processus externes spéciales, généralement utilisées pour contacter un système externe et interroger les résultats. Par exemple, l’étape InDesign Media Extraction Process est implémentée en tant que processus externe. Le moteur de workflow utilise la file d’attente externe pour traiter l’interrogation. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configurez ces services pour limiter le nombre maximal de workflows en cours d’exécution.
 
-**Remarque :** La configuration de ces files d’attente de travaux affecte tous les  de travaux, sauf si vous avez créé une file d’attente de travaux pour un modèle de processus spécifique (voir [Configuration de la file d’attente pour un modèle](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) de processus spécifique ci-dessous).
+**Remarque :** La configuration de ces files d&#39;attente de travaux affecte tous les workflows, sauf si vous avez créé une file d&#39;attente de travaux pour un modèle de processus spécifique (voir [Configuration de la file d&#39;attente pour un modèle](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) de processus spécifique ci-dessous).
 
 **Configuration dans le référentiel**
 
@@ -384,41 +388,41 @@ Il faut tester les composants stratégiques dans des conditions moyennes et de p
 
 Dans les deux cas, vous pouvez définir le nombre attendu de transactions par seconde lorsqu’un nombre prédéfini d’utilisateurs utilise le système.
 
-| Composant | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
+| Composant | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Utilisateur unique de la page d&#39;accueil | Différentiel par moyenne | 1 | 1 |  |  |
+| Utilisateur unique de la page d&#39;accueil | Moyenne | 1 | 1 |  |  |
 |  | Crête | 1 | 3 |  |  |
-| 100 utilisateurs de la page d&#39;accueil | Différentiel par moyenne | 100 | 3 |  |  |
+| 100 utilisateurs de la page d&#39;accueil | Moyenne | 100 | 3 |  |  |
 |  | Crête | 100 | 3 |  |
 
 #### Tests sur des composants combinés {#combined-component-tests}
 
 En testant une combinaison de composants, vous vous dotez d’une visibilité plus précise sur le comportement des applications. Là encore, il faut tester des conditions moyennes et de pointe.
 
-| Scénario | Composant | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
+| Scénario | Composant | #Utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
 | Moyenne mixte | Page d’accueil | 10 | 1 |  |  |
 |  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 10 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
-|  |   | 10 | 3 |  |  du comportement de l’auteur. |
+|  | Activations | 10 | 3 |  | Simulation du comportement de l’auteur. |
 | Pic mixte | Page d’accueil | 100 | 5 |  |  |
 |  | Rechercher | 50 | 5 |  |  |
 |  | Actualités | 100 | 10 |  |  |
 |  | Événements | 100 | 10 |  |  |
-|  |   | 20 | 20 |  |  du comportement de l’auteur. |
+|  | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
 
 #### Tests de mise en ligne {#going-live-tests}
 
 Au cours des premiers jours suivant la mise en ligne de votre site web, attendez-vous à un niveau élevé d’intérêt. Il sera probablement plus important que les valeurs de pointe que vous avez testées. Il est fortement recommandé de tester les scénarios de mise en ligne pour s’assurer que le système est capable de gérer cette situation.
 
-| Scénario | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
+| Scénario | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Aller au sommet en direct | Page d’accueil | 200 | 20 |  |  |
+| Aller en direct au sommet | Page d’accueil | 200 | 20 |  |  |
 |  | Rechercher | 100 | 10 |  |  |
 |  | Actualités | 200 | 20 |  |  |
 |  | Événements | 200 | 20 |  |  |
-|  |   | 20 | 20 |  |  du comportement de l’auteur. |
+|  | Activations | 20 | 20 |  | Simulation du comportement de l’auteur. |
 
 #### Test de scénarios d’erreur {#error-scenario-tests}
 
@@ -429,10 +433,10 @@ Les scénarios d’erreur doivent également être testés pour s’assurer que 
 
 Lors de la conception de ces tests, il faut garder à l’esprit que tous les scénarios ne se produiront pas régulièrement. Cependant, leur impact sur l’ensemble du système est important.
 
-| Scénario d’erreur | Type d’erreur | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
+| Scénario d’erreur | Type d’erreur | #Utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
-| Surcharge du composant de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
-|  | Mot d&#39;arrêt | 20 | 2 |  | Recherche d&#39;un mot-clé. |
+| Surcharge des composants de recherche | Recherche sur un caractère générique global (astérisque) | 10 | 1 |  | &amp;ast;&amp;ast;&amp;ast;&amp;ast; sont recherchées. |
+|  | Mot d’arrêt | 20 | 2 |  | Recherche d&#39;un mot d&#39;arrêt. |
 |  | Chaîne vide | 10 | 1 |  | Recherche d’une chaîne vide. |
 |  | Caractères spéciaux | 10 | 1 |  | Recherche de caractères spéciaux. |
 
@@ -440,13 +444,13 @@ Lors de la conception de ces tests, il faut garder à l’esprit que tous les sc
 
 Certains problèmes ne feront surface qu’après une période continue de fonctionnement du système, qu’il s’agisse d’heures ou même de jours. Un test d’endurance sert à tester une charge moyenne constante sur une période de temps donnée. Toute dégradation des performances peut ensuite être analysée.
 
-| Scénario | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (Testé) | Description |
+| Scénario | Type de test | #Utilisateurs | Tx/s (attendu) | Tx/s (testé) | Description |
 |---|---|---|---|---|---|
 | Essai d&#39;endurance (72 heures) | Page d’accueil | 10 | 1 |  |  |
 |  | Rechercher | 10 | 1 |  |  |
 |  | Actualités | 20 | 2 |  |  |
 |  | Événements | 10 | 1 |  |  |
-|  |   | 1 | 3 |  |  du comportement de l’auteur. |
+|  | Activations | 1 | 3 |  | Simulation du comportement de l’auteur. |
 
 ### Optimisation {#optimization}
 
@@ -497,6 +501,7 @@ Le dispatcher propose un certain nombre de mécanismes intégrés pour optimiser
 >
 >* vous pouvez mettre en cache tous les éléments que vous pouvez enregistrer en tant que page et effectuer une demande à l’aide d’une URL ;
 >* vous ne pouvez pas enregistrer d’autres éléments, tels que des cookies, des données de session et des données de formulaire.
+
 >
 >
 En général, de nombreuses stratégies de mise en cache impliquent de sélectionner les URL appropriées et de ne pas s’en tenir à ces informations supplémentaires.
@@ -617,6 +622,7 @@ Le dispatcher ne peut pas mettre en cache des données personnalisées. Il est d
 >
 >* Utiliser des iFrames pour partager la page en une partie identique pour tous les utilisateurs et une partie identique pour toutes les pages de l’utilisateur. Vous pouvez ensuite mettre en cache les deux parties.
 >* Utiliser du JavaScript côté client pour afficher des informations personnalisées. Cependant, vous devez vous assurer que la page s’affiche toujours correctement si un utilisateur désactive JavaScript.
+
 >
 
 
@@ -639,7 +645,7 @@ Pour la plupart des fichiers, le type MIME est implicite dans l’extension du 
 
 Si le nom de fichier n’a pas d’extension, il s’affiche en tant que texte brut.
 
-Avec la version 4.1.11 du dispatcher, vous pouvez mettre en cache les en-têtes de réponse. Si vous ne mettez pas en cache les en-têtes de réponse sur le dispatcher, sachez que le type MIME fait partie de l’en-tête HTTP. Par conséquent, si votre application AEM renvoie des fichiers qui ne comportent pas de fin de fichier reconnue et dépendent plutôt du type MIME, ces fichiers risquent d’être incorrectement affichés.
+Avec la version 4.1.11 du dispatcher, vous pouvez mettre en cache les en-têtes de réponse. Si vous ne mettez pas en cache les en-têtes de réponse sur le dispatcher, sachez que le type MIME fait partie de l’en-tête HTTP. Par conséquent, si votre application AEM renvoie des fichiers dont la fin n’est pas reconnue et que vous vous fiez plutôt au type MIME, ces fichiers risquent d’être incorrectement affichés.
 
 Pour s’assurer que ces fichiers sont correctement mis en cache, suivez les consignes suivantes :
 
@@ -688,7 +694,7 @@ Le tableau suivant illustre la taille des volumes de données utilisés dans les
    <td>237</td>
   </tr>
   <tr>
-   <td>Petit contenu pour une sauvegarde incrémentielle</td>
+   <td>Petit contenu pour la sauvegarde incrémentielle</td>
    <td><br type="_moz" /> </td>
    <td>+100</td>
    <td>+2</td>
@@ -710,9 +716,9 @@ L’essai comparatif de sauvegarde est réitéré avec des jeux de contenu suppl
 
 Les essais comparatifs de sauvegarde couvrent deux scénarios principaux : les sauvegardes lorsque le système est soumis à une charge applicative importante et lorsqu’il est inactif. Selon la recommandation générale, les sauvegardes doivent être effectuées lorsque le système CQ est aussi inactif que possible. Pourtant, il existe des situations où il est nécessaire que la sauvegarde soit exécutée quand le système est en charge.
 
-**Les sauvegardes d’état** inactif ne sont effectuées avec aucun autre   sur CQ.
+**Les sauvegardes d’état** inactif sont effectuées sans autre activité sur CQ.
 
-**Sous Charger** les sauvegardes sont exécutées alors que le système est sous 80 % chargé à partir des processus en ligne. Variation du délai de sauvegarde pour déterminer l’impact sur la charge.
+**Sous Sauvegardes de charge** sont exécutées alors que le système est sous 80 % chargé à partir de processus en ligne. Variation du délai de sauvegarde pour déterminer l’impact sur la charge.
 
 La durée des sauvegardes et la taille des sauvegardes en résultant sont obtenues à partir des journaux du serveur CQ. Il est généralement recommandé de planifier des sauvegardes pendant des périodes d’interruption lorsque CQ est inactif, par exemple au milieu de la nuit. Ce scénario est représentatif de l’approche recommandée.
 
@@ -720,7 +726,7 @@ La charge comporte des activités de création/suppression, parcours et requête
 
 L’impact de la charge sur les performances de sauvegarde peut être évalué par la différence entre les performances avec et sans cette charge applicative. L’impact de la sauvegarde sur le débit de l’application est obtenu en comparant le débit du scénario dans les transactions horaires avec et sans sauvegarde simultanée à des sauvegardes soumises à différents paramètres de « délai de sauvegarde ».
 
-**Paramètres** de délai Pour plusieurs des scénarios, nous avons également modifié le paramètre de délai de sauvegarde, en utilisant des valeurs de 10 ms (par défaut), 1 ms et 0 ms, afin d’étudier comment ce paramètre affectait les performances des sauvegardes.
+**Paramètres** de délai Pour plusieurs des scénarios, nous avons également modifié le paramètre de délai de sauvegarde, en utilisant des valeurs de 10 ms (par défaut), 1 ms et 0 ms, afin d&#39;explorer comment ce paramètre a affecté les performances des sauvegardes.
 
 **Type** de sauvegarde Toutes les sauvegardes étaient des sauvegardes externes du référentiel effectuées dans un répertoire de sauvegarde sans création de fichier zip, sauf dans un cas pour la comparaison où la commande tar était directement utilisée. Étant donné que les sauvegardes incrémentielles ne peuvent pas être créées dans un fichier zip ou si la sauvegarde complète antérieure est un fichier zip, la méthode du répertoire de sauvegarde est la plus souvent utilisée dans des situations de production.
 
