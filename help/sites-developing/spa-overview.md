@@ -1,8 +1,8 @@
 ---
 title: Aperçu de l’éditeur d’application d’une seule page
 seo-title: Aperçu de l’éditeur d’application d’une seule page
-description: Cet article présente un aperçu complet de l’éditeur d’applications monopages et de son fonctionnement, y compris des workflows détaillés d’interaction de l’éditeur d’applications monopages dans AEM.
-seo-description: Cet article présente un aperçu complet de l’éditeur d’applications monopages et de son fonctionnement, y compris des workflows détaillés d’interaction de l’éditeur d’applications monopages dans AEM.
+description: Cet article présente un aperçu complet de l'éditeur SPA et de son fonctionnement, y compris des workflows détaillés d'interaction de l'éditeur SPA dans l'AEM.
+seo-description: Cet article présente un aperçu complet de l'éditeur SPA et de son fonctionnement, y compris des workflows détaillés d'interaction de l'éditeur SPA dans l'AEM.
 uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -27,7 +27,7 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 >[!NOTE]
 >
->L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
 
 ## Présentation {#introduction}
 
@@ -48,14 +48,14 @@ Le composant de page d’une application d’une seule page ne fournit pas les c
 
 ### Gestion du modèle de page {#page-model-management}
 
-The resolution and the management of the page model is delegated to a provided `PageModel` library. L’application d’une seule page doit utiliser la bibliothèque de modèles de page pour être initialisée et créée par l’éditeur d’applications d’une seule page. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et l’application d’une seule page. Par conséquent, elle doit toujours être présente. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajoutée afin de permettre la communication avec l’éditeur de page.
+The resolution and the management of the page model is delegated to a provided `PageModel` library. Le SPA doit utiliser la bibliothèque de modèles de page pour être initialisé et écrit par l&#39;éditeur SPA. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et l’application d’une seule page. Par conséquent, elle doit toujours être présente. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajoutée afin de permettre la communication avec l’éditeur de page.
 
 Si le composant de page SPA hérite du composant principal de la page, deux options sont possibles pour faire en sorte que la catégorie de la bibliothèque cliente `cq.authoring.pagemodel.messaging` soit disponible :
 
 * Si le modèle est modifiable, ajoutez-le à la stratégie de page.
 * Vous pouvez également ajouter les catégories via `customfooterlibs.html`.
 
-Pour chaque ressource du modèle exporté, l’application d’une seule page met en correspondance un composant réel qui effectue le rendu. Le modèle, représenté sous la forme JSON, est ensuite rendu à l’aide des mappages de composants au sein d’un conteneur.
+Pour chaque ressource du modèle exporté, le SPA mappe un composant réel qui effectue le rendu. Le modèle, représenté sous la forme JSON, est ensuite rendu à l’aide des mappages de composants au sein d’un conteneur.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]
@@ -70,7 +70,7 @@ When the `cq.authoring.pagemodel.messaging` category is added to the page, it wi
 
 ## Workflow {#workflow}
 
-Vous pouvez comprendre le flux de l’interaction entre l’application d’une seule page et l’AEM en considérant l’éditeur d’une seule page comme un médiateur entre les deux.
+Vous pouvez comprendre le flux de l&#39;interaction entre le SPA et l&#39;AEM en voyant l&#39;éditeur de SPA comme un médiateur entre les deux.
 
 * La communication s’effectue au format JSON au lieu du format HTML.
 * L’éditeur de page fournit la dernière version du modèle de page à l’application d’une seule page par le biais de l’API de messagerie et de l’iFrame.
@@ -79,28 +79,28 @@ Vous pouvez comprendre le flux de l’interaction entre l’application d’une 
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
-### Processus de l’éditeur d’applications monopages de base {#basic-spa-editor-workflow}
+### Processus de l’éditeur de SPA de base {#basic-spa-editor-workflow}
 
-En gardant à l’esprit les éléments clés de l’éditeur d’applications monopages, la procédure de modification d’une application d’une seule page d’une AEM s’affiche comme suit pour l’auteur.
+En gardant à l’esprit les éléments clés de l’éditeur SPA, la procédure générale de modification d’un SPA au sein d’un AEM s’affiche comme suit pour l’auteur.
 
 ![untitled1](assets/untitled1.gif)
 
-1. L’éditeur d’applications monopages se charge.
-1. L’application d’une seule page est chargée dans un cadre distinct.
-1. L’application d’une seule page demande du contenu JSON et effectue le rendu des composants côté client.
+1. SPA Editeur charge.
+1. SPA est chargé dans un cadre distinct.
+1. SPA demande du contenu JSON et effectue le rendu des composants côté client.
 1. SPA Editor détecte les composants rendus et génère des incrustations.
 1. L’auteur clique sur l’incrustation et affiche la barre d’outils de modification du composant.
-1. L’éditeur d’applications monopages conserve les modifications avec une demande de POST adressée au serveur.
-1. L’éditeur d’applications monopages demande la mise à jour de JSON dans l’éditeur d’applications monopages, qui est envoyé à l’application avec un Événement DOM.
-1. L’application d’une seule page effectue le rendu du composant concerné, en mettant à jour son DOM.
+1. SPA Editor conserve les modifications avec une requête de POST envoyée au serveur.
+1. SPA Editor demande la mise à jour de JSON à SPA Editor, qui est envoyé au SPA avec un Événement DOM.
+1. SPA restitue le composant concerné, en mettant à jour son DOM.
 
 >[!NOTE]
 >
 >Gardez à l’esprit :
 >
 >* Le SPA est toujours responsable de son affichage.
->* L’éditeur d’application d’une seule page est isolé de l’application d’une seule page.
->* En production (publication), l’éditeur d’application d’une seule page n’est jamais chargé.
+>* L&#39;éditeur SPA est isolé de la SPA elle-même.
+>* En production (publication), l’éditeur SPA n’est jamais chargé.
 
 >
 
@@ -108,7 +108,7 @@ En gardant à l’esprit les éléments clés de l’éditeur d’applications m
 
 ### Processus de montage de page client-serveur {#client-server-page-editing-workflow}
 
-Il s’agit d’un aperçu plus détaillé de l’interaction client-serveur lors de la modification d’une application d’une seule page.
+Il s’agit d’un aperçu plus détaillé de l’interaction client-serveur lors de la modification d’un SPA.
 
 ![page_editor_spa_authingmediator-2](assets/page_editor_spa_authoringmediator-2.png)
 
@@ -162,7 +162,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et limites {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page pour modifier le contenu d’une application d’une seule page, votre application d’une seule page doit être mise en oeuvre pour interagir avec le SDK AEM SPA Editor. Veuillez consulter le [guide Prise en main des applications monopages dans AEM](/help/sites-developing/spa-getting-started-react.md) document pour obtenir un minimum de connaissances nécessaires pour que vous puissiez exécuter les vôtres.
+Pour permettre à l’auteur d’utiliser l’éditeur de page pour modifier le contenu d’un SPA, votre application SPA doit être mise en oeuvre pour interagir avec le SDK de l’éditeur de . Veuillez consulter le [guide Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) document pour obtenir un minimum de connaissances nécessaires pour que le vôtre fonctionne.
 
 ### Structures prises en charge {#supported-frameworks}
 
@@ -171,19 +171,19 @@ Le SDK SPA Editor prend en charge les versions minimales suivantes :
 * Réagir à 16.x et plus
 * Angular 6.x et supérieur
 
-Les versions précédentes de ces structures peuvent fonctionner avec le SDK AEM SPA Editor, mais ne sont pas prises en charge.
+Les versions précédentes de ces structures peuvent fonctionner avec l’AEM SDK SPA Editor, mais ne sont pas prises en charge.
 
 ### Cadres supplémentaires {#additional-frameworks}
 
-D’autres infrastructures SPA peuvent être mises en oeuvre pour fonctionner avec le SDK AEM SPA Editor. Veuillez consulter le document de [plan directeur](/help/sites-developing/spa-blueprint.md) de l’application d’une seule page pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à la structure composée de modules, de composants et de services pour travailler avec l’éditeur AEM d’application d’une seule page.
+Des structures SPA supplémentaires peuvent être mises en oeuvre pour fonctionner avec AEM SDK de l’éditeur SPA. Veuillez consulter le document [SPA Plan directeur](/help/sites-developing/spa-blueprint.md) pour connaître les exigences qu&#39;un cadre doit satisfaire pour créer une couche spécifique à un cadre composée de modules, de composants et de services pour travailler avec l&#39;AEM Éditeur.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 
-D’autres sélecteurs personnalisés peuvent être définis et utilisés dans le cadre d’une application d’une seule page d’application d’une seule page développée pour le SDK d’une application d’une seule page AEM. Toutefois, cette prise en charge requiert que le `model` sélecteur soit le premier sélecteur et que l’extension soit `.json` celle [requise par l’exportateur JSON.](json-exporter-components.md#multiple-selectors)
+D’autres sélecteurs personnalisés peuvent être définis et utilisés dans le cadre d’un SPA développé pour AEM SDK. Toutefois, cette prise en charge requiert que le `model` sélecteur soit le premier sélecteur et que l’extension soit `.json` celle [requise par l’exportateur JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Exigences de l’éditeur de texte {#text-editor-requirements}
 
-Si vous souhaitez utiliser l’éditeur en place d’un composant de texte créé dans l’application d’une seule page, une configuration supplémentaire est requise.
+Si vous souhaitez utiliser l’éditeur en place d’un composant de texte créé dans SPA, une configuration supplémentaire est requise.
 
 1. Définissez un attribut (il peut s’agir de n’importe quel attribut) sur l’élément wrapper de conteneur contenant le texte HTML. Dans le cas d’un exemple de contenu du Journal WKND, il s’agit d’un `<div>` élément et le sélecteur utilisé est `data-rte-editelement`celui qui a été utilisé.
 1. Définissez la configuration `editElementQuery` du composant de texte AEM correspondant `cq:InplaceEditingConfig` qui pointe vers ce sélecteur, par ex. `data-rte-editelement`. Cela permet à l’éditeur de savoir quel élément HTML encapsule le texte HTML.
@@ -194,7 +194,7 @@ Pour plus d’informations sur la `editElementQuery` propriété et la configura
 
 ### Restrictions {#limitations}
 
-L’AEM SPA Editor SDK a été introduit avec AEM 6.4 Service Pack 2. Il est entièrement soutenu par l&#39;Adobe et, en tant que nouvelle fonctionnalité, il continue d&#39;être amélioré et élargi. Les fonctionnalités AEM suivantes ne sont pas encore prises en charge par l’éditeur d’applications monopages :
+L’AEM SPA Editor SDK a été introduit avec l’ 6.4 Service Pack 2. Il est entièrement soutenu par l&#39;Adobe et, en tant que nouvelle fonctionnalité, il continue d&#39;être amélioré et élargi. Les fonctionnalités AEM suivantes ne sont pas encore prises en charge par SPA Editor :
 
 * Mode cible
 * ContextHub
