@@ -1,8 +1,8 @@
 ---
 title: Utilisation des évaluations
 seo-title: Utilisation des évaluations
-description: ajouter un composant Note à une page
-seo-description: ajouter un composant Note à une page
+description: Ajouter un composant Note à une page
+seo-description: Ajouter un composant Note à une page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
