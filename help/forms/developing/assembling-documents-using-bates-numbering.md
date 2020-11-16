@@ -46,7 +46,7 @@ Dans le cadre de cette discussion, l’identifiant de page unique est placé dan
  </DDX>
 ```
 
-Ce document DDX fusionne deux documents PDF nommés *map.pdf* et *directions.pdf* en un seul document PDF. Le document PDF résultant contient un en-tête constitué d’un identifiant de page unique. Par exemple, le document de l’illustration ci-dessus montre 000016.
+Ce document DDX fusionne en un seul document PDF deux documents PDF nommés *map.pdf* et *directions.pdf* . Le document PDF résultant contient un en-tête constitué d’un identifiant de page unique. Par exemple, le document de l’illustration ci-dessus montre 000016.
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Pour assembler un document PDF contenant un identifiant de page unique (numérot
 1. Incluez des fichiers de projet.
 1. Créez un client PDF Assembler.
 1. Référencez un document DDX existant.
-1. documents PDF d’entrée de référence.
+1. Documents PDF d’entrée de référence.
 1. Définissez la valeur initiale du nombre Bates.
 1. Assemblage des documents PDF d’entrée.
 1. Extrayez les résultats.
@@ -81,10 +81,10 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-Si le AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel les AEM Forms sont déployés. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un client PDF Assembler**
 
@@ -94,13 +94,13 @@ Avant de pouvoir exécuter une opération Assembler par programmation, vous deve
 
 Un document DDX doit être référencé pour assembler un document PDF. Prenons l’exemple du document DDX introduit dans cette section. Pour assembler un document PDF contenant des identifiants de page uniques, le document DDX doit contenir l’ `BatesNumber` élément.
 
-**documents PDF d’entrée de référence**
+**Documents PDF d’entrée de référence**
 
 Les documents PDF d’entrée doivent être référencés pour assembler un document PDF. Par exemple, les documents map.pdf et directions.pdf doivent être référencés pour assembler ces documents PDF en un seul document PDF.
 
 **Définir la valeur initiale du nombre Bates**
 
-Vous pouvez définir la valeur du numéro Bates initial pour répondre aux besoins de votre entreprise. Supposons, par exemple, qu’il soit nécessaire de définir la valeur initiale sur 000100. Si vous ne définissez pas la valeur initiale, la valeur de la première page est 000000.
+Vous pouvez définir la valeur initiale du numéro Bates pour répondre aux besoins de votre entreprise. Supposons, par exemple, qu’il soit nécessaire de définir la valeur initiale sur 000100. Si vous ne définissez pas la valeur initiale, la valeur de la première page est 000000.
 
 **Assemblage des documents PDF d’entrée**
 
@@ -140,7 +140,7 @@ Assemblez un document PDF qui utilise des identificateurs de page uniques (numé
    * Créez un `java.io.FileInputStream` objet qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
-1. documents PDF d’entrée de référence.
+1. Documents PDF d’entrée de référence.
 
    * Créez un `java.util.Map` objet utilisé pour stocker des documents PDF d’entrée à l’aide d’un `HashMap` constructeur.
    * Pour chaque document PDF d’entrée, créez un `java.io.FileInputStream` objet en utilisant son constructeur et en transmettant l’emplacement du document PDF d’entrée. Dans ce cas, transmettez l’emplacement d’un document PDF non sécurisé.
@@ -191,7 +191,7 @@ Assemblez un document PDF qui utilise des identificateurs de page uniques (numé
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF Assembler.
 
@@ -214,7 +214,7 @@ Assemblez un document PDF qui utilise des identificateurs de page uniques (numé
    * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` méthode de l’ `Read` objet. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
 
-1. documents PDF d’entrée de référence.
+1. Documents PDF d’entrée de référence.
 
    * Pour chaque document PDF d’entrée, créez un `BLOB` objet à l’aide de son constructeur. L’ `BLOB` objet est utilisé pour stocker le document PDF d’entrée.
    * Create a `System.IO.FileStream` object by invoking its constructor. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.
@@ -224,8 +224,8 @@ Assemblez un document PDF qui utilise des identificateurs de page uniques (numé
    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Cet objet de collection est utilisé pour stocker les documents PDF d’entrée.
    * Pour chaque document PDF d’entrée, créez un `MyMapOf_xsd_string_To_xsd_anyType_Item` objet. Par exemple, si deux documents PDF d’entrée sont utilisés, créez deux `MyMapOf_xsd_string_To_xsd_anyType_Item` objets.
    * Attribuez une valeur de chaîne qui représente le nom de clé au `MyMapOf_xsd_string_To_xsd_anyType_Item` `key` champ de l’objet. Cette valeur doit correspondre à la valeur de l’élément source PDF spécifié dans le document DDX. (Effectuez cette tâche pour chaque document PDF d’entrée.)
-   * Affectez l’ `BLOB` objet qui stocke le document PDF au `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` champ de l’objet. (Effectuez cette tâche pour chaque document PDF d’entrée.)
-   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet sur l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object&#39;s `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Effectuez cette tâche pour chaque document PDF d’entrée.)
+   * Affectez l’objet `BLOB` qui stocke le document PDF au `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` champ de l’objet. (Effectuez cette tâche pour chaque document PDF d’entrée.)
+   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet à l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object&#39;s `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Effectuez cette tâche pour chaque document PDF d’entrée.)
 
 1. Définissez la valeur initiale du nombre Bates.
 
