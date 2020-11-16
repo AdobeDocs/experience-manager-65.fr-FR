@@ -12,6 +12,9 @@ discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 7d93df515bf98f0a947428b8093e059d63b21a34
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 87%
 
 ---
 
@@ -58,5 +61,5 @@ Vous trouverez, ci-dessous, la liste complète des `CodeUpgradeTasks` introduite
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | Différé | Nettoie **/etc/cloudsettings** (contenant la configuration ContextHub). La migration de la configuration est effectuée automatiquement lors du premier accès. Si la migration différée du contenu est lancée avec la mise à niveau, le contenu de **/etc/cloudsettings** doit être conservé via le package avant la mise à niveau et réinstallé pour que la transformation implicite soit lancée, avec une désinstallation ultérieure du package une fois la procédure terminée. |
 | `CQ64UsersTitleFixTask` | &lt; 6.4 | Différé | Définit la structure de titre héritée sur le titre du nœud de profil utilisateur. |
 | `CQ64CommerceMigrationTask` | &lt; 6.4 | Différé | Migrez le contenu commercial de **/etc/commerce** vers **/var/commerce**. Lors de la migration, le contenu est déplacé et les références au contenu déplacé sont mises à jour pour refléter le nouvel emplacement. |
-| `CQ65DMMigrationTask` | &lt; 6.5 | Différé | Migration des paramètres de catalogue hérités et des paramètres des services de cloud de média dynamique de **/etc** vers **/conf** |
+| `CQ65DMMigrationTask` | &lt; 6.5 | Différé | Migration des paramètres de catalogue hérités et des paramètres des services de cloud de médias dynamiques de **/etc** vers **/conf** |
 | `CQ65LegacyClientlibsCleanupTask` | &lt; 6.5 | Différé | Nettoyer les clientlibs hérités existants sous **/etc/clientlibs** |
