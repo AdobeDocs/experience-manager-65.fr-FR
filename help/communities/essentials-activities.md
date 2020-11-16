@@ -35,7 +35,7 @@ Un membre peut suivre un flux d&#39;activités, soit en suivant un autre individ
 
 Un flux *d&#39;* information est une fusion des flux d&#39;activités suivis par un membre dans un flux unique.
 
-Un graphique *[](/help/communities/essentials-socialgraph.md)*social capture les relations suivantes d’un membre à un autre.
+Un graphique *[](/help/communities/essentials-socialgraph.md)* social capture les relations suivantes d’un membre à un autre.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
