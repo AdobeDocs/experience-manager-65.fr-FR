@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 87%
 
 ---
 
@@ -46,7 +49,7 @@ L’élément de champ contient deux éléments imbriqués : widget et légende
 L’élément widget contient l’élément de l’interface utilisateur d’interaction avec les utilisateurs. Il comporte trois classes CSS :
 
 * **Widget**: Chaque widget a cette classe.
-* **name**: Tous les widgets fournis avec AEM contiennent la classe de nom du widget. Pour les widgets personnalisés, le développeur de widgets fournit la classe de nom Widget.
+* **name**: Tous les widgets fournis avec AEM contiennent la classe de nom de widget. Pour les widgets personnalisés, le développeur de widgets fournit la classe de nom Widget.
 * **type**: Chaque widget comporte un élément d’interface utilisateur. Cette classe définit le type de l’élément d’interface utilisateur.
 
 ```xml
@@ -75,10 +78,10 @@ Outre les classes type et name, le composant de champ contient également une au
   <tr>
    <td><strong>Composant</strong></td>
    <td><strong>Type</strong></td>
-   <td><strong>Name (Nom)</strong></td>
+   <td><strong>Nom</strong></td>
   </tr>
   <tr>
-   <td>Page</td>
+   <td>Page  </td>
    <td>page</td>
    <td>Nom défini par l’utilisateur<br /> ou<br /> Page&lt;pageNumber&gt; (valeur par défaut)</td>
   </tr>
