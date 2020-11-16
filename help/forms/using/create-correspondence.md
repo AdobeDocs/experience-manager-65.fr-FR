@@ -10,6 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+workflow-type: tm+mt
+source-wordcount: '3720'
+ht-degree: 67%
 
 ---
 
@@ -35,13 +38,14 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
    >[!NOTE]
    >
-   >Si aucun dictionnaire de données n’est associé à la lettre, l’aperçu de la lettre s’affiche. Dans le cas contraire, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options  et personnalisées dans le menu  du et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. When the [Data Dictionary has associated test data](../../forms/using/data-dictionary.md#p-working-with-test-data-p), then on selecting the preview option, the normal preview opens with the test data populated.
+   >Si aucun dictionnaire de données n’est associé à la lettre, l’aperçu de la lettre s’affiche. Sinon, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options de Prévisualisation et de personnalisation dans le menu Prévisualisation et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. When the [Data Dictionary has associated test data](../../forms/using/data-dictionary.md#p-working-with-test-data-p), then on selecting the preview option, the normal preview opens with the test data populated.
 
-1. Pour pouvoir générer une correspondance lors de sa prévisualisation, vous devez être administrateur ou faire partie d’un des groupes suivants :
+1. Pour pouvoir générer une correspondance lors de sa prévisualisation, vous devez être administrateur ou faire partie de l’un des groupes suivants :
 
    * forms-users (pour prévisualiser sur instance d’auteur)
    * cm-agent-users (pour le rendu sur une instance de publication)
-   Si vous ne disposez pas des autorisations requises, contactez votre administrateur pour obtenir des droits d’accès appropriés. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). Si vous tentez de générer une correspondance sans disposer des autorisations appropriées, la page d’erreur 404 s’affiche.
+
+   Si vous ne disposez pas des autorisations requises, contactez votre administrateur pour obtenir des droits d’accès appropriés. For more information on creating and adding users to groups, see [Adding Users or Groups to a Group](/help/sites-administering/security.md). Si vous essayez de générer une correspondance sans disposer des autorisations appropriées, la page d’erreur 404 s’affiche.
 
 1. Si vous avez sélectionné **Aperçu**> **Personnalisation**, une boîte de dialogue s&#39;ouvre. In the dialog, select a data file, corresponding to the data dictionary, to preview the letter with and then select **Preview**. Un fichier de données est créé à partir d’un dictionnaire de données pour une lettre particulière. For more information on the data file, see [Data Dictionary](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
 
@@ -65,7 +69,7 @@ Sous l’onglet Données, renseignez les champs de mise en page et les espaces r
 
    Appuyez sur une valeur de champ de données dans l’aperçu de lettre HTML pour mettre en surbrillance le champ de données correspondant dans l’onglet Données.
 
-   ![Saisir des données dans la lettre](assets/2_enterdata.png) ![2_1_entdata](assets/2_1_enterdata.png)
+   ![Saisir des données dans la lettre](assets/2_enterdata.png) ![2_1_enterdata](assets/2_1_enterdata.png)
 
 ### Gérer le contenu {#managecontent}
 
@@ -79,7 +83,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    Par exemple, la ligne « Nous avons passé en revue… » est choisie dans le graphique ci-dessous et le module de contenu approprié est choisi dans l’onglet Contenu.
 
-   ![4_surligntmoduleincontent](assets/4_highlightmoduleincontent.png)
+   ![4_highlight_moduleincontent](assets/4_highlightmoduleincontent.png)
 
    In the Content or Data tab, by tapping Highlight Selected Modules ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) on upper left of the HTML letter preview, you can disable or enable functionality to go to the content/data module when the relevant text, paragraph, or data field is selected in the letter preview.
 
@@ -93,7 +97,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    Le vérificateur orthographique par défaut dans les vérifications orthographiques des navigateurs dans l’éditeur de texte. Pour gérer les vérifications d’orthographe et de grammaire, vous pouvez modifier les paramètres du vérificateur orthographique de votre navigateur ou installer des modules/adjonctions externes de navigateur pour vérifier l’orthographe et la grammaire.
 
-   Vous pouvez également utiliser les différents raccourcis clavier de l’éditeur de texte pour gérer, modifier et mettre en forme le texte. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#correspondence-management) keyboard shortcuts in Correspondence Management Keyboard Shortcuts.
+   Vous pouvez également utiliser les divers raccourcis clavier de l’éditeur de texte pour gérer, modifier et mettre en forme du texte. For more information on [Text Editor](/help/forms/using/keyboard-shortcuts.md#correspondence-management) keyboard shortcuts in Correspondence Management Keyboard Shortcuts.
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
@@ -124,8 +128,9 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 1. Si nécessaire, insérez des caractères spéciaux dans la correspondance. Vous pouvez, par exemple, utiliser la palette des caractères spéciaux pour insérer les caractères suivants :
 
    * Symboles de devise tels que €, ¥ et £
-   * Symboles mathématiques tels que Δ, √, Δet ^
+   * Symboles mathématiques tels que Δ, √,  et ^
    * Symboles de ponctuation tels que ‟ et&quot;
+
    ![specialcharacters](assets/specialcharacters.png)
 
    Correspondence Management offre une prise en charge intégrée de 210 caractères spéciaux. The admin can [add support for more/custom special characters by customization](../../forms/using/custom-special-characters.md).
@@ -156,16 +161,18 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
    * Champs obligatoires.
    * Champs de mise en page s’ils sont obligatoires et liés à l’utilisateur.
    * Uniquement les instances de variables uniques. Si un module, une zone de cible ou un modèle de lettre contient au moins deux instances de la même variable, le nombre affiché est 1 (un). Toutefois, pour chacune des instances, le nombre affiché est 1.
+
    Le nombre de variables vides ne comprend pas les modules non sélectionnés. Si un module est inclus dans un modèle de lettre, mais n’est pas dans la lettre, le nombre de variables vides de ce module n’est pas affiché.
 
-   Pour la zone cible, le module et la variable, le nombre est affiché à droite de chaque objet dans le modèle de lettre. Toutefois, pour le modèle complet, le nombre s’affiche dans la barre d’état de création de correspondance.
+   Pour la zone cible, le module et la variable, le nombre est affiché à droite de chaque objet dans le modèle de lettre. Cependant, pour le modèle complet, le nombre s’affiche dans la barre d’état de création de correspondance.
 
    Les modules d’un modèle de lettre affichent le nombre de variables vides comme décrit ci-dessous :
 
-   * **Texte** Affiche la somme des variables d’espace réservé vides uniques et des éléments de dictionnaire de données contenus dans le module de texte.
+   * **Texte** Affiche la somme des variables d’espace réservé vides uniques et des éléments du dictionnaire de données contenus dans le module de texte.
    * **Condition** Affiche la somme des variables de condition vides uniques contenues dans la condition et des variables contenues dans les modules résultants.
-   * **** du Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés au  du.
-   * **Zone** de  Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la zone de .
+   * **Liste** Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la liste.
+   * **Zone** de cible Affiche la somme de toutes les variables vides uniques contenues dans les modules affectés à la zone de cible.
+
    Notez ce qui suit concernant les variables avec des valeurs par défaut :
 
    * Un champ de variable booléenne est défini par défaut sur *false*. Toutefois, la variable est considérée comme vide. This implies that the variable count includes all Boolean variable fields with value *false*.
@@ -188,7 +195,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 * Sélection (icône représentant un œil) : permet d’inclure ou d’exclure le module de la lettre.
 * Ignorer les puces (applicable pour les modules de liste et leurs modules enfants) : ignore les puces dans un module particulier.
 * Saut de page avant (applicable pour les modules enfants de la zone cible) : insère un saut de page avant le module.
-* Saut de page après (applicable pour les modules enfants de la zone  du) : Insère un saut de page avant le module.
+* Saut de page après (applicable pour les modules enfants de la zone de cible) : Insère un saut de page avant le module.
 * Valeurs vides (information) : indique le nombre de variables vides dans la zone cible.
 * Modification (modules de texte uniquement) : ouvrez l’éditeur de texte enrichi pour modifier le module de texte.
 * Panneau de données (modules de texte et de condition) : permet de déverrouiller toutes les variables du module.
@@ -197,12 +204,12 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
 * Insertion d’une ligne vide : permet d’insérer une nouvelle ligne vide.
 * Bibliothèque de contenu : ouvre la bibliothèque de contenu pour ajouter des modules à la liste.
-* Paramètre de  (imbriqué  uniquement) :
+* Paramètre de liste (liste imbriquée uniquement) :
 * Verrouillage d’ordre (information) : indique que l’ordre des éléments de la liste ne peut pas être modifié.
 
 ### Gestion des pièces jointes {#manage-attachments}
 
-1. Sélectionnez **les pièces jointes**. Correspondence Management affiche les pièces jointes disponibles, telles qu’elles sont configurées lors de la création du modèle de lettre.
+1. Sélectionnez **les pièces jointes**. Correspondence Management affiche les pièces jointes disponibles, telles qu’elles ont été configurées lors de la création du modèle de lettre.
 1. Vous pouvez choisir de ne pas envoyer une pièce jointe avec la lettre en appuyant sur l’icône Afficher et en appuyant sur la croix dans la pièce jointe pour la supprimer de la lettre. Pour les pièces jointes spécifiées, lors de la création d’un modèle de lettre, comme étant obligatoires, les icônes Afficher et Supprimer sont désactivées.
 1. Tap the Library Access ( ![libraryaccess](assets/libraryaccess.png)) icon to access Content Library to insert DAM assets as attachments.
 
@@ -268,17 +275,17 @@ Vous pouvez effectuer des modifications relatives à la mise en page et au conte
 
 ## Enregistrement des brouillons et envoi d’instances de lettre {#savingdrafts}
 
-Lorsqu’une lettre est générée dans l’interface utilisateur de création de correspondance, vous pouvez enregistrer la lettre comme étant en cours de consultation.
+Lorsqu’une lettre est rendue dans l’interface utilisateur de création de correspondance, vous pouvez enregistrer la lettre comme étant en cours de consultation.
 
 Il existe deux types d’instances de lettre pouvant être enregistrées : instance Brouillon ou instance Envoyer.
 
 * **Instance Brouillon** : l’instance Brouillon capture l’état actuel de la lettre que vous prévisualisez. Pour enregistrer une instance Brouillon, assurez-vous d’abord que la lettre et tous les actifs auxquels la lettre fait référence sont à l’état Publié. Pour plus d’informations sur la publication d’une lettre, voir [Publication d’un actif](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Vous devez publier une lettre avant de pouvoir l’enregistrer en tant que brouillon, car lorsque vous publiez une lettre, vous créez une version de la lettre, de ses actifs dépendants et de données à ce stade. La version publiée d’une lettre ne peut pas être modifiée par vous ou un autre utilisateur et peut être restaurée ultérieurement sans aucune incompatibilité inattendue à partir de la version publiée. Vous pouvez retourner à cette instance plus tard et reprendre où vous en étiez.
 
-* **Instance Envoyer** : l’instance Envoyer capture l’état de la lettre envoyée. L’instance Envoyer stocke l’état PDF de l’instance de lettre après son post-traitement, ainsi que les données saisies par l’utilisateur dans l’interface utilisateur de création de correspondance.
+* **Instance Envoyer** : l’instance Envoyer capture l’état de la lettre envoyée. L’instance Envoyer stocke l’état PDF de l’instance de lettre après son post-traitement avec les données saisies par l’utilisateur dans l’interface utilisateur de création de correspondance.
 
 Ces instances peuvent être enregistrées uniquement lorsque la lettre est en cours de consultation sur l’instance Publication. Par défaut, l’enregistrement sur les instances est désactivé. Pour activer l’enregistrement des instances de lettre, effectuez les étapes suivantes.
 
-1. Dans AEM, ouvrez la configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : https://&lt;serveur>:&lt;port>/&lt;chemin_contexte>/system/console/configMgr
+1. Dans AEM, ouvrez Configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : https://&lt;serveur>:&lt;port>/&lt;chemin_contexte>/system/console/configMgr
 1. Locate **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Cochez la configuration **[!UICONTROL Gestion des instances de lettre sur Publication]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -294,13 +301,13 @@ Cette option est destinée aux personnes ayant des inquiétudes quant à l’enr
 
 #### Activer l’enregistrement à distance {#enable-remote-save}
 
-1. Dans AEM, ouvrez la configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez Configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. Search for **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Locate the **[!UICONTROL Remote Save]** configuration, check it, and the click **[!UICONTROL Save]**.
 
 #### Spécifiez les paramètres d’auteur de traitement {#specify-processing-author-settings}
 
-1. Dans AEM, ouvrez la configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez Configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Configuration de la console Web d’Adobe Experience Manager](assets/2configmanager.png)
 
@@ -344,7 +351,7 @@ For more information on scripting support in HTML5 forms, see [Scripting support
 
 ### Changement du mode de rendu d’une lettre {#changerenditionmode}
 
-Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de  de lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
+Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de prévisualisation de lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
 
 For more information on browser compatibility with letter preview, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
@@ -352,5 +359,5 @@ Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 
 1. Go to `https://[system]:'port'/system/console/configMgr` and, if necessary, log in as Admin.
 1. Accédez à **[!UICONTROL Configurations de Correspondence Management]** > **[!UICONTROL Type de rendu]** et sélectionnez **Rendu HTML** (par défaut) ou **Rendu PDF**.
-1. Cliquez sur **[!UICONTROL Save]** (Enregistrer).
+1. Cliquez sur **[!UICONTROL Save]**.
 
