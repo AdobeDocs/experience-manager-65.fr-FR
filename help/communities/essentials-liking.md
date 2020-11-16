@@ -73,7 +73,7 @@ La publication anonyme d’un &quot;j’aime&quot; n’est pas prise en charge. 
 L’UGC doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération du contenu](moderate-ugc.md)généré par l’utilisateur.
 
-Depuis AEM 6.1 Communities, l’utilisation d’un magasin [](working-with-srp.md) commun pour UGC inclut l’accès par programmation à UGC, quelle que soit l’option d’enregistrement choisie (telle que ASRP, MSRP ou JSRP).
+AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
 **L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
