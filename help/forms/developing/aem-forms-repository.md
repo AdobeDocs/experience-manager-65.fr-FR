@@ -267,7 +267,7 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 ### Écrire des ressources à l’aide de l’API Java {#write-resources-using-the-java-api}
 
-Ecrivez une ressource à l’aide de l’API du service Repository (Java) :
+Ecrivez une ressource à l’aide de l’API du service de référentiel (Java) :
 
 1. Inclure les fichiers de projet
 
