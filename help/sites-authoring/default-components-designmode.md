@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 83%
 
 ---
 
@@ -86,6 +89,7 @@ Pour activer ou désactiver un composant :
 
    * Composants autorisés
    * Paramètres
+
    **Composants autorisés**
 
    On the **Allowed Components** tab, you define which components are available for the parsys.
@@ -95,6 +99,7 @@ Pour activer ou désactiver un composant :
    * Le signe moins indique qu’au moins un élément du groupe est sélectionné, mais pas tous.
    * Un champ de recherche est disponible pour filtrer un composant en fonction de son nom.
    * Les chiffres à droite du nom du groupe de composants représentent le nombre total de composants sélectionnés dans ce groupe, quel que soit le filtre.
+
    La configuration s’effectue par composant de page. Si des pages enfants utilisent le même modèle et/ou composant de page (généralement aligné), la même configuration est appliquée au système de paragraphes correspondant.
 
    >[!NOTE]
@@ -130,6 +135,7 @@ Pour activer ou désactiver un composant :
    * Principal
    * Fonctionnalités
    * Styles
+
    **Propriétés**
 
    L’onglet **Propriétés** vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant Image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
@@ -148,7 +154,7 @@ Pour activer ou désactiver un composant :
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilisez l’icône ** Supprimer **pour supprimer une entrée d’une liste de dialogue à entrées multiples.
+   Utilisez l&#39;icône ** Supprimer **pour supprimer une entrée d&#39;une liste de dialogue à entrées multiples.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 
