@@ -156,7 +156,7 @@ Supposons que vous souhaitez remplir la liste déroulante **Etat** en fonction d
 
    Ajoutez les noms des pays à afficher dans la liste Pays. Dans la liste Etat, ajoutez un script pour la remplir selon le nom du pays de la liste Pays.
 
-   ![Ajouter des noms](assets/country-dropdown.png) de pays ![Ajouter un script pour renseigner les noms](assets/state-dropdown.png) d’état ![Pays et Etat listes déroulantes pour rassembler](assets/2dropdowns.png)
+   ![Ajouter les noms](assets/country-dropdown.png) de pays ![Ajouter un script pour renseigner les noms](assets/state-dropdown.png) d’état ![Pays et Etat listes déroulantes pour rassembler](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(
