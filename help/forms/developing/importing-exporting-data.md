@@ -25,7 +25,7 @@ ht-degree: 6%
 Le service d’intégration des données de formulaire peut importer des données dans un formulaire PDF et exporter des données d’un formulaire PDF. Les opérations d’importation et d’exportation prennent en charge deux types de PDF forms :
 
 * Un formulaire Acrobat (créé dans Acrobat) est un document PDF qui contient des champs de formulaire.
-* Un formulaire XML Adobe (créé dans Designer) est un document PDF conforme à l’architecture de formulaires XML Adobe (XFA).
+* Un Adobe de formulaire XML (créé dans Designer) est un document PDF conforme à l’Adobe XML Forms Architecture (XFA).
 
 Les données de formulaire peuvent exister dans l’un des formats suivants, selon le type de formulaire PDF :
 
@@ -49,7 +49,7 @@ Pour importer des données dans un formulaire créé dans Designer, vous devez r
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XML XDP valide qui correspond au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à l’architecture de formulaires XML (XFA). Le code XML suivant représente une source de données XML XDP qui correspond à l’exemple de formulaire de demande de prêt immobilier.
+Pour importer des valeurs de données dans ce formulaire, vous devez disposer d’une source de données XML XDP valide qui correspond au formulaire. Vous ne pouvez pas utiliser une source de données XML arbitraire pour importer des données dans un formulaire à l’aide du service d’intégration des données de formulaire. La différence entre une source de données XML arbitraire et une source de données XML XDP est qu’une source de données XDP est conforme à l’architecture Forms XML (XFA). Le code XML suivant représente une source de données XML XDP qui correspond à l’exemple de formulaire de demande de prêt immobilier.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>
@@ -106,8 +106,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -202,12 +202,12 @@ Importez des données de formulaire à l’aide de l’API d’intégration des 
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client du service d’intégration des données de formulaire.
 
    * Create a `FormDataIntegrationClient` object by using its default constructor.
-   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `FormDataIntegrationClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -257,7 +257,7 @@ Importez des données de formulaire à l’aide de l’API d’intégration des 
 
 ## Exportation des données de formulaire {#exporting-form-data}
 
-Vous pouvez exporter des données de formulaire à partir d’un formulaire PDF interactif à l’aide du service d’intégration des données de formulaire. Le format des données exportées dépend du type de formulaire. Si le type de formulaire est un formulaire Acrobat créé dans Acrobat, les données exportées sont alors au format XFDF. Si le type de formulaire est un formulaire XML créé dans Designer, les données exportées sont au format XDP.
+Vous pouvez exporter des données de formulaire à partir d’un formulaire PDF interactif à l’aide du service d’intégration des données de formulaire. Le format des données exportées dépend du type de formulaire. Si le type de formulaire est un formulaire Acrobat créé dans Acrobat, les données exportées sont XFDF. Si le type de formulaire est un formulaire XML créé dans Designer, les données exportées sont au format XDP.
 
 >[!NOTE]
 >
@@ -282,8 +282,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
 **Création d’un client de service d’intégration de données de formulaire**
 
@@ -360,12 +360,12 @@ Exportez les données de formulaire à l’aide de l’API d’intégration des 
 
    Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
 
-   * Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   * Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client du service d’intégration des données de formulaire.
 
    * Create a `FormDataIntegrationClient` object by using its default constructor.
-   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
+   * Create a `FormDataIntegrationClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service. Spécifiez toutefois `?blob=mtom` l’utilisation de MTOM.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `FormDataIntegrationClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
