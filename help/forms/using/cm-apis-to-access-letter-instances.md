@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 62%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 A l’aide de l’interface utilisateur de création de correspondance de Correspondence Management, vous pouvez enregistrer des brouillons d’instances de lettre en cours. Vous y trouverez également les instances de lettre envoyées.
 
-Correspondence Management vous fournit des API grâce auxquelles vous pouvez créer l’interface d’énumération pour travailler sur des instances de lettre envoyées ou des brouillons. Les API répertorient et ouvrent les instances de lettre envoyée et de lettre préliminaire d’un agent, de sorte que l’agent puisse continuer à travailler sur les instances de lettre préliminaire ou envoyée.
+Correspondence Management vous fournit des API grâce auxquelles vous pouvez créer l’interface d’énumération pour travailler sur des instances de lettre envoyées ou des brouillons. Les API liste et ouvrent les instances de lettre envoyée et de lettre brouillon d’un agent, de sorte que l’agent puisse continuer à travailler sur les instances de lettre brouillon ou envoyée.
 
 ## Récupérer des instances de lettre {#fetching-letter-instances}
 
@@ -39,7 +42,7 @@ Correspondence Management expose les API pour récupérer des instances de lett
 
 ### Utilisation de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet de requête est nul, il renvoie toutes les instances de lettre. This API returns list of [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objects, which can be used for extracting additional information of letter instance
+L’API suivante recherche les instances de lettre en fonction de l’objet de la requête (envoyée et brouillon). Si l’objet requête est nul, il renvoie toutes les instances de lettre. This API returns list of [LetterInstanceVO](https://helpx.adobe.com/experience-manager/6-2/forms/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objects, which can be used for extracting additional information of letter instance
 
 **Syntaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -77,7 +80,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 #### Exemple 2 : récupérer toutes les instances de lettre envoyées par un utilisateur, le type d’instance de lettre étant BROUILLON {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
 
-Le code suivant comporte plusieurs instructions dans la même requête pour que les résultats soient filtrés selon différents critères, tels que l’instance de lettre envoyée (attribut submittedby) par un utilisateur et le type de letterInstanceType est BROUILLON.
+Le code suivant comporte plusieurs instructions dans la même requête pour que les résultats soient filtrés en fonction de différents critères tels que l’instance de lettre envoyée (attribut submittedby) par un utilisateur et le type de letterInstanceType est BROUILLON.
 
 ```java
 @Reference
@@ -106,7 +109,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 Récupérez une instance de lettre identifiée par l’ID de l’instance de lettre en question. Elle renvoie &quot;null si l’ID d’instance ne correspond pas.
 
-**** Syntaxe : `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
+**Syntaxe :** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
 ```java
 @Reference
@@ -141,7 +144,7 @@ L’instance de lettre peut être de type Envoyée ou Brouillon. L’ouverture d
 
 ### Ouverture d’un brouillon d’instance de lettre  {#opening-draft-letter-instance-nbsp}
 
-L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, qui peut être utilisé pour la lettre rechargée.
+L’interface utilisateur CCR prend en charge le paramètre cmLetterInstanceId, qui peut être utilisé pour une lettre rechargée.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 
