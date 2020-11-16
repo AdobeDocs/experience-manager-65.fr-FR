@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 92%
 
 ---
 
@@ -43,7 +46,7 @@ Pour créer des mappages de formulaire personnalisés, vous devez suivre ces ét
 
 ### Création du tableau personnalisé dans Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau d’événements :
+Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau de événement :
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
