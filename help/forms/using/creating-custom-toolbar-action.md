@@ -36,7 +36,7 @@ Outre l’ensemble d’actions proposé par défaut, vous pouvez créer des acti
 
 La procédure ci-dessous illustre la création d’une action personnalisée dans la barre d’outils. Elle décrit la création d’un bouton permettant aux utilisateurs finaux de parcourir tous les champs d’un formulaire adaptatif avant d’envoyer un formulaire complété.
 
-1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. Dans CRXDE, copiez le `fileattachmentlisting` noeud de `/libs/fd/af/components/actions/fileattachmentlisting` à `/apps/customaction`.
+1. All the default actions supported by adaptive forms are present in `/libs/fd/af/components/actions` folder. Dans CRXDE, copiez le `fileattachmentlisting` noeud `/libs/fd/af/components/actions/fileattachmentlisting` dans `/apps/customaction`.
 
 1. After copying the node to `apps/customaction` folder, rename the node name to `reviewbeforesubmit`. Also, change the `jcr:title` and `jcr:description` properties of the node.
 
