@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 81%
 
 ---
 
@@ -48,7 +51,7 @@ Avant d’utiliser les outils de développement AEM, vous devez :
 
 Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
 
-1. Parcourez le [**site web AEM **Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
+1. Parcourez le [**site web AEM** Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copiez le **Lien d’installation**.
 
@@ -151,7 +154,7 @@ Assurez-vous d’ajouter la version appropriée pour votre déploiement d’AEM.
 
 Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
 
-* Le [**guide de l’utilisateur **Apache Sling IDE tooling for Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) : cette documentation vous guide à travers les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par AEM Development Tools.
+* Le [**guide de l’utilisateur** Apache Sling IDE tooling for Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) : cette documentation vous guide à travers les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par AEM Development Tools.
 * La section [Dépannage](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * La [liste des problèmes connus](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
