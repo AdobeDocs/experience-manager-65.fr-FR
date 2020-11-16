@@ -12,6 +12,9 @@ discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 74%
 
 ---
 
@@ -34,7 +37,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | axis2-kernel | [Apache ](#apache) |
 | Backport-util-simultané | Domaine public |
 | commons-codec | [Apache ](#apache) |
-| commons-collections | [Apache ](#apache) |
+| communs-collections | [Apache ](#apache) |
 | commons-fileupload | [Apache ](#apache) |
 | commons-httpclient | [Apache ](#apache) |
 | commons-io | [Apache ](#apache) |
@@ -46,7 +49,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | jackrabbit-jcr2spi | [Apache ](#apache) |
 | jackrabbit-jcr-commons | [Apache ](#apache) |
 | jackrabbit-spi-commons | [Apache ](#apache) |
-| lapin-lapin | [Apache ](#apache) |
+| jackrabbit-spi | [Apache ](#apache) |
 | jaxen | BSD |
 | log4j | [Apache ](#apache) |
 | lucene-core | [Apache ](#apache) |
@@ -58,7 +61,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | wstx-asl | [Apache ](#apache) |
 | xalan | [Apache ](#apache) |
 | xbean | [Apache ](#apache) |
-| xml-apis | [Apache](#apache) (contient des portions couvertes par les licences du domaine public et du logiciel W3C) |
+| xml-apis | [Apache](#apache) (contient des portions couvertes par les licences de domaine public et de logiciel W3C) |
 | XmlSchema | [Apache ](#apache) |
 
 ## Présentation des bibliothèques CRX tierces {#overview-of-crx-rd-party-libraries}
@@ -172,7 +175,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
    <td><a href="#apache">Apache </a></td>
   </tr>
   <tr>
-   <td>geronimo-spec-j2ee-connector-1.0-M1.jar</td>
+   <td>géronimo-spec-j2ee-connector-1.0-M1.jar</td>
    <td><a href="#apache">Apache </a></td>
   </tr>
   <tr>
