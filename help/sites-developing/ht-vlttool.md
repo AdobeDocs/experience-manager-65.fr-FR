@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 63%
 
 ---
 
@@ -23,7 +26,7 @@ L’outil VLT s’exécute à partir de la ligne de commande. Ce document expliq
 
 ## Concepts et architecture {#concepts-and-architecture}
 
-Pour une vue d&#39;ensemble complète des concepts et de la structure de l&#39;outil Filevault, reportez-vous à la page [Filevault Overview](https://jackrabbit.apache.org/filevault/overview.html) et [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) de la documentation [officielle d&#39;](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault.
+Consultez la page [Filevault Overview](https://jackrabbit.apache.org/filevault/overview.html) and [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) de la documentation [officielle d&#39;](https://jackrabbit.apache.org/filevault/index.html) Apache Jackrabbit Filevault pour un aperçu complet des concepts et de la structure de l&#39;outil Filevault.
 
 ## Prise en main de VLT {#getting-started-with-vlt}
 
@@ -39,12 +42,12 @@ Pour utiliser VLT, vous devez effectuer les opérations suivantes :
 
 Pour utiliser l’outil VLT, vous devez d’abord l’installer. Il n’est pas installé par défaut, car il s’agit d’un outil supplémentaire. En outre, vous devez définir la variable d’environnement de votre système.
 
-1. Téléchargez le fichier d’archive FileVault à partir du référentiel d’artefacts [Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
+1. Téléchargez le fichier d&#39;archive FileVault à partir du référentiel d&#39;artefacts [Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
-   >La source de l’outil VLT est [disponible sur GitHub.](https://github.com/apache/jackrabbit-filevault)
+   >La source de l&#39;outil VLT est [disponible sur GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Extrayez le fichier d’archives.
-1. Ajouter `<archive-dir>/vault-cli-<version>/bin` à votre  de sorte `PATH` que les fichiers de commande `vlt` ou `vlt.bat` soient accessibles selon les besoins. Par exemple :
+1. Ajoutez `<archive-dir>/vault-cli-<version>/bin` à votre environnement `PATH` afin que les fichiers de commande `vlt` ou `vlt.bat` les fichiers de commande soient accessibles selon les besoins. Par exemple :
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
@@ -298,13 +301,13 @@ Voici une liste des options VLT disponibles pour toutes les commandes. Reportez-
 | Option | Description |
 | `-Xjcrlog <arg>` | Options JcrLog étendues |
 | `-Xdavex <arg>` | Options de suppression JCR étendues |
-| `--credentials <arg>` | Les informations d’identification par défaut à utiliser |
+| `--credentials <arg>` | Informations d’identification par défaut à utiliser |
 | `--config <arg>` | La configuration JcrFs à utiliser |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprimer le moins possible |
+| `-q (--quiet)` | imprimer aussi peu que possible |
 | `--version` | Imprime les informations de version et quitte le fichier VLT |
 | `--log-level <level>` | Indique le niveau de journal, par exemple, le niveau de journal log4j. |
-| `-h (--help) <command>` | Imprime l’aide pour cette commande particulière |
+| `-h (--help) <command>` | Imprime l&#39;aide pour cette commande particulière |
 
 ## Commandes VLT {#vlt-commands}
 
@@ -313,20 +316,20 @@ Le tableau suivant décrit toutes les commandes VLT disponibles. Reportez-vous �
 |  |  |  |
 |--- |--- |--- |
 | Commande | Commande abrégée | Description |
-| `export` |  | Exporte du référentiel JCR (système de fichiers en chambre forte) vers le système de fichiers local sans fichiers de contrôle. |
+| `export` |  | Exporte d’un référentiel JCR (système de fichiers en chambre forte) vers le système de fichiers local sans fichiers de contrôle. |
 | `import` |  | Importe un système de fichiers local dans un référentiel JCR (système de fichiers en chambre forte). |
-| `checkout` | `co` | Extrait un système de fichiers Vault. Utilisez cette option pour un référentiel JCR initial dans le système de fichiers local. (Remarque : Vous devez d’abord extraire le référentiel dans subversion.) |
+| `checkout` | `co` | Récupère un système de fichiers Vault. Utilisez cette option pour un référentiel JCR initial dans le système de fichiers local. (Remarque : Vous devez d&#39;abord extraire le référentiel dans la subversion.) |
 | `analyze` |  | Analyse les modules. |
 | `status` | `st` | Imprime l’état des fichiers et des répertoires de travail. |
 | `update` | `up` | Importe les modifications du référentiel dans la copie de travail. |
 | `info` |  | Affiche des informations relatives à un fichier local. |
 | `commit` | `ci` | Valide et envoie les modifications de votre copie de travail au référentiel. |
-| `revert` | `rev` | Rétablit le fichier de copie de travail à son état d’origine et annule la plupart des modifications locales. |
-| `resolved` | `res` | Supprime l’état conflictuel sur les fichiers ou répertoires de copie de travail. |
+| `revert` | `rev` | Rétablit le fichier de la copie de travail à son état d’origine et annule la plupart des modifications locales. |
+| `resolved` | `res` | Supprime un état conflictuel sur les fichiers ou répertoires de copie de travail. |
 | `propget` | `pg` | Imprime la valeur d’une propriété dans des fichiers ou répertoires. |
 | `proplist` | `pl` | Imprime les propriétés dans des fichiers ou répertoires. |
 | `propset` | `ps` | Définit la valeur d’une propriété sur des fichiers ou répertoires. |
-| `add` |  | Place les fichiers et répertoires sous le contrôle de version. |
+| `add` |  | Place les fichiers et répertoires sous contrôle de version. |
 | `delete` | `del` ou `rm` | Supprime les fichiers et les répertoires de la gestion des versions. |
 | `diff` | `di` | Affiche les différences entre deux chemins. |
 | `console` |  | Exécute une console interactive. |
@@ -335,7 +338,7 @@ Le tableau suivant décrit toutes les commandes VLT disponibles. Reportez-vous �
 
 ### Export {#export}
 
-Exporte le système de fichiers Vault monté sur &lt;uri> vers le système de fichiers local sur &lt;local-path>. Un &lt;jcr-path> facultatif peut être spécifié afin d’exporter uniquement une sous-arborescence.
+Exporte le système de fichiers Vault monté sur &lt;uri> vers le système de fichiers local sur &lt;local-path>. Vous pouvez spécifier un &lt;jcr-path> facultatif afin d’exporter uniquement une sous-arborescence.
 
 #### Syntaxe {#syntax}
 
@@ -348,9 +351,9 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
-| `-t (--type) <arg>` | spécifie le type d’exportation, plateforme ou jar. |
+| `-t (--type) <arg>` | spécifie le type d&#39;exportation, plate-forme ou jar. |
 | `-p (--prune-missing)` | indique si les fichiers locaux manquants doivent être supprimés |
-| `<uri>` | mountpoint uri |
+| `<uri>` | uri point de montage |
 | `<jcrPath>` | Chemin JCR |
 | `<localPath>` | chemin local |
 
@@ -376,7 +379,7 @@ import -v|-s <uri> <local-path> <jcr-path>
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
 | `-s (-- sync)` | place les fichiers locaux sous contrôle de sécurité |
-| `<uri>` | mountpoint uri |
+| `<uri>` | uri point de montage |
 | `<jcrPath>` | Chemin JCR |
 | `<localPath>` | chemin local |
 
@@ -402,9 +405,9 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 |--- |--- |
 | `--force` | force l&#39;extraction à remplacer les fichiers locaux s&#39;ils existent déjà |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
-| `-f (--filter) <file>` | spécifie le  automatique si aucun paramètre n’est défini |
-| `<uri>` | mountpoint uri |
+| `-q (--quiet)` | imprime aussi peu que possible |
+| `-f (--filter) <file>` | spécifie les filtres automatiques si aucun n&#39;est défini |
+| `<uri>` | uri point de montage |
 | `<jcrPath>` | (facultatif) chemin distant |
 | `<localPath>` | (facultatif) chemin local |
 
@@ -442,9 +445,9 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | format printf pour les liens de correctif (nom, id, par exemple) `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | format printf pour les liens de correctifs (nom, id), par exemple `[CQ520_HF_%s|%s]` |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `<localPaths> [<localPaths> ...]` | chemin local |
 
 ### État {#status}
@@ -464,7 +467,7 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-u (--show-update)` | affiche les informations de mise à jour |
 | `-N (--non-recursive)` | fonctionne sur un seul répertoire |
 | `<file> [<file> ...]` | fichier ou répertoire d’affichage de l’état |
@@ -484,7 +487,7 @@ update -v|-q|--force|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `--force` | force le remplacement des fichiers locaux |
 | `-N (--non-recursive)` | fonctionne sur un seul répertoire |
 | `<file> [<file> ...]` | fichier ou répertoire à mettre à jour |
@@ -504,9 +507,9 @@ info -v|-q|-R <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-R (--recursive)` | opère récursive |
-| `<file> [<file> ...]` | fichier ou répertoire d’affichage des informations |
+| `<file> [<file> ...]` | fichier ou répertoire dans lequel afficher les informations |
 
 ### Commit {#commit}
 
@@ -523,7 +526,7 @@ commit -v|-q|--force|-N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `--force` | force la validation même si la copie distante est modifiée |
 | `-N (--non-recursive)` | fonctionne sur un seul répertoire |
 | `<file> [<file> ...]` | fichier ou répertoire à valider |
@@ -542,7 +545,7 @@ revert -q|-R <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-R (--recursive)` | descend de manière récursive |
 | `<file> [<file> ...]` | fichier ou répertoire à valider |
 
@@ -564,7 +567,7 @@ resolved -q|-R|--force <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-R (--recursive)` | descend de manière récursive |
 | `--force` | résout, même s’il existe des marqueurs de conflit |
 | `<file> [<file> ...]` | fichier ou répertoire à résoudre |
@@ -583,10 +586,10 @@ propget -q|-R <propname> <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-R (--recursive)` | descend de manière récursive |
 | `<propname>` | nom de la propriété |
-| `<file> [<file> ...]` | pour obtenir la propriété à partir du fichier ou du répertoire |
+| `<file> [<file> ...]` | fichier ou répertoire à partir duquel obtenir la propriété |
 
 ### Proplist {#proplist}
 
@@ -602,9 +605,9 @@ proplist -q|-R <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-R (--recursive)` | descend de manière récursive |
-| `<file> [<file> ...]` | pour des propriétés à partir du fichier ou du répertoire |
+| `<file> [<file> ...]` | pour liste des propriétés à partir du fichier ou du répertoire |
 
 ### Propset {#propset}
 
@@ -628,11 +631,11 @@ propset -q|-R <propname> <propval> <file1> [<file2> ...]
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-R (--recursive)` | descend de manière récursive |
 | `<propname>` | nom de la propriété |
 | `<propval>` | la valeur de propriété |
-| `<file> [<file> ...]` | pour définir la propriété sur |
+| `<file> [<file> ...]` | fichier ou répertoire dans lequel définir la propriété |
 
 ### Ajoutez {#add}
 
@@ -649,7 +652,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `-N (--non-recursive)` | fonctionne sur un seul répertoire |
 | `--force` | force l’exécution de l’opération. |
 | `<file> [<file> ...]` | fichier ou répertoire local à ajouter |
@@ -669,7 +672,7 @@ delete -v|-q|--force <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-v (--verbose)` | sortie détaillée |
-| `-q (--quiet)` | imprime le moins possible |
+| `-q (--quiet)` | imprime aussi peu que possible |
 | `--force` | force l’exécution de l’opération. |
 | `<file> [<file> ...]` | fichier ou répertoire local à supprimer |
 
@@ -688,7 +691,7 @@ diff -N <file1> [<file2> ...]
 |  |  |
 |--- |--- |
 | `-N (--non-recursive)` | fonctionne sur un seul répertoire |
-| `<file> [<file> ...]` | pour afficher les différences de |
+| `<file> [<file> ...]` | pour afficher les différences |
 
 ### Console {#console}
 
@@ -708,7 +711,7 @@ console -F <file>
 
 ### Rcp {#rcp}
 
-Copie une arborescence de nœuds entre deux référentiels distants. `<src>` pointe vers le noeud source et `<dst>` indique le chemin de destination, où le noeud parent doit exister. Rcp traite les nœuds en diffusant les données en continu.
+Copie une arborescence de nœuds entre deux référentiels distants. `<src>` pointe vers le noeud source et `<dst>` spécifie le chemin de destination, où le noeud parent doit exister. Rcp traite les nœuds en diffusant les données en continu.
 
 #### Syntaxe {#syntax-17}
 
@@ -721,13 +724,13 @@ rcp -q|-r|-b <size>|-t <seconds>|-u|-n|-e <arg1> [<arg2> ...] <src> <dst>
 |  |  |
 |--- |--- |
 | `-q (--quiet)` | Imprime le moins possible. |
-| `-r (--recursive)` | Décrit récursivement. |
+| `-r (--recursive)` | Descend récursivement. |
 | `-b (--batchSize) <size>` | Nombre de noeuds à traiter avant un enregistrement intermédiaire. |
-| `-t (--throttle) <seconds>` | Nombre de secondes à attendre après un enregistrement intermédiaire. |
+| `-t (--throttle) <seconds>` | Nombre de secondes d’attente après un enregistrement intermédiaire. |
 | `-u (--update)` | Remplacer/supprimer des noeuds existants. |
 | `-n (--newer)` | Respectez les propriétés lastModified pour la mise à jour. |
 | `-e (--exclude) <arg> [<arg> ...]` | Regexp des chemins source exclus. |
-| `<src>` | Adresse du référentiel de l’arborescence source. |
+| `<src>` | Adresse du référentiel de l&#39;arborescence source. |
 | `<dst>` | Adresse du référentiel du noeud de destination. |
 
 #### Exemples {#examples-3}
@@ -865,13 +868,13 @@ Chaque dossier de synchronisation stocke la configuration et l’état dans troi
 * `.vlt-sync-config.properties`: fichier de configuration.
 
 * `.vlt-sync.log`: fichier journal contenant des informations sur les opérations effectuées lors de la synchronisation.
-* `.vlt-sync-filter.xml`:  qui définissent les parties du référentiel qui sont synchronisées. The format of this file is decribed by the [Performing a filtered checkout](#performing-a-filtered-checkout) section.
+* `.vlt-sync-filter.xml`: filtres qui définissent les parties du référentiel qui sont synchronisées. The format of this file is decribed by the [Performing a filtered checkout](#performing-a-filtered-checkout) section.
 
 The `.vlt-sync-config.properties` file allows you to configure the following properties:
 
 **désactivé** Active ou désactive la synchronisation. Par défaut, ce paramètre est défini sur false pour permettre la synchronisation.
 
-**sync-once** Si l&#39;analyse suivante ne vide pas, le dossier sera synchronisé dans la direction donnée, le paramètre sera effacé. Deux valeurs sont possibles :
+**sync-once** Si l&#39;analyse suivante n&#39;est pas vide, elle synchronise le dossier dans la direction indiquée, le paramètre est effacé. Deux valeurs sont possibles :
 
 * `JCR2FS` : exporte tout le contenu du référentiel JCR et écrit sur le disque local.
 * `FS2JCR` : importe tout le contenu du disque dans le référentiel JCR.
