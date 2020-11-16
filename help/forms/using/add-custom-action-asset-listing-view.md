@@ -47,7 +47,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 
-1. In the apps folder, create a folder named items with path/structure similar to the items folder located in selection folder using the following steps:
+1. Dans le dossier d’applications, créez un dossier nommé éléments avec un chemin/une structure similaires au dossier d’éléments situé dans le dossier de sélection, en procédant comme suit :
 
    1. Right-click the **items** folder at the following path and select **Overlay Node**:
 
