@@ -11,6 +11,9 @@ discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+workflow-type: tm+mt
+source-wordcount: '2143'
+ht-degree: 94%
 
 ---
 
@@ -43,8 +46,8 @@ L’exemple suivant représente un document DDX utilisé pour assembler ce docum
 </PDF>
 ```
 
-L’assemblage de documents produit un document cible qui contient le contenu suivant et\
-caractéristiques:
+L&#39;assemblage de documents produit un document résultant qui contient le contenu suivant et\
+caractéristiques :
 
 * L’intégralité ou une partie de chacun des documents source ;
 * L’intégralité ou une partie des signets de chacun des documents source, normalisés pour le document cible assemblé ;
@@ -162,7 +165,7 @@ Vous pouvez spécifier la valeur de l’attribut resolveAssets dans la balise XD
 #### Résolution de toutes les références source dans un document XDP {#resolve-all-source-references-in-an-xdp-document}
 
 Pour résoudre toutes les références dans les documents XDP source, spécifiez l’attribut resolveAssets pour la variable\
-document cible à tous, comme dans l’exemple ci-dessous :
+document obtenu pour tous, comme dans l’exemple ci-dessous :
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -174,7 +177,7 @@ document cible à tous, comme dans l’exemple ci-dessous :
 </DDX
 ```
 
-Vous pouvez également spécifier l’attribut pour tous les documents XDP source indépendamment afin d’obtenir le même\
+Vous pouvez également spécifier l’attribut pour tous les documents XDP source indépendamment pour obtenir la même valeur\
 résultat.
 
 ```xml
@@ -308,8 +311,8 @@ Vous pouvez utiliser le service Assembler pour obtenir les informations suivante
    * Emplacement de chaque mot sur chaque page du document.
    * Nombre de phrases dans chaque paragraphe, sur chaque page du document.
 
-* Nombre de signets (incluant le numéro de la page, le titre, la destination et l’apparence). Vous pouvez exporter ceci\
-   données d’un document PDF et importez-les dans un document PDF.
+* Nombre de signets (incluant le numéro de la page, le titre, la destination et l’apparence). Vous pouvez l’exporter\
+   données d’un document PDF et importez-le dans un document PDF.
 
 * Pièces jointes, y compris les informations sur les fichiers. Pour les pièces jointes au niveau de la page, elle inclut également la variable\
    emplacement de l’annotation de pièce jointe du fichier. Vous pouvez exporter ces données à partir d’un document PDF et\
