@@ -20,7 +20,7 @@ ht-degree: 8%
 
 # Leaderboard Essentials {#leaderboard-essentials}
 
-Cette page fournit les informations essentielles pour travailler avec le tableau de bord.
+Cette page fournit les informations essentielles pour travailler avec la fonction de classement.
 
 Avant d’inclure le composant de tableau de bord dans une page, il est nécessaire de configurer le score et les badges [des communautés](implementing-scoring.md).
 
