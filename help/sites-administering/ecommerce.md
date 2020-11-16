@@ -12,13 +12,16 @@ discoiquuid: e972ee05-f0cb-40ca-9ae2-34395791c709
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 46610888fd61900c52b197e73a8a5850dc9c4c35
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 90%
 
 ---
 
 
 # eCommerce{#ecommerce}
 
-* [Concepts](/help/sites-administering/concepts.md)
+* [Concepts ](/help/sites-administering/concepts.md)
 * [Administration (générique)](/help/sites-administering/generic.md)
 
 Adobe propose deux versions de la structure d’intégration de Commerce :
@@ -140,6 +143,7 @@ AEM eCommerce fournit ce qui suit :
    * Produits récemment affichés
    * Bons
    * Autres
+
    ![](assets/chlimage_1-130.png)
 
    >[!NOTE]
@@ -152,13 +156,14 @@ AEM eCommerce fournit ce qui suit :
    * Recherche du système de commerce électronique
    * Recherche tierce (Search&amp;Promote par exemple)
    * Ou une combinaison de ces trois fonctions
+
    ![](assets/chlimage_1-131.png)
 
 * Uses the AEM ability to **present your content on multiple channels**, be that full browser window or mobile device. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
 
    ![](assets/chlimage_1-132.png)
 
-* La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction de la[structure d’AEM eCommerce](#the-framework)**.
+* La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction de la [structure d’AEM eCommerce](#the-framework)**.
 
    Les deux mises en œuvre actuellement disponibles reposent sur la même base et complètent l’API générale (la structure). La mise en œuvre d’une nouvelle intégration implique seulement de mettre en œuvre les fonctionnalités dont votre intégration a besoin. Les composants frontaux peuvent être utilisés par les nouvelles mises en œuvre puisqu’ils utilisent des interfaces (et sont donc indépendants de la mise en œuvre).
 
@@ -166,6 +171,7 @@ AEM eCommerce fournit ce qui suit :
 
    * Par exemple, une réduction des frais de livraison proposée lorsque le montant total d’une commande dépasse un montant spécifique.
    * Autre exemple : la possibilité de proposer des offres à certaines occasions à partir des informations de profil (tel le lieu). Ces possibilités peuvent ensuite être mises en avant, là encore en fonction d’autres facteurs, si nécessaire.
+
    Dans l’exemple ci-dessous, un teaser est affiché lorsque le contenu du panier est inférieur à 75 $ :
 
    ![](assets/chlimage_1-133.png)
