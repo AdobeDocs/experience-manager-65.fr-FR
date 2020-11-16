@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 translation-type: tm+mt
 source-git-commit: 24290b65a126822eb918fbecc978372394b5b655
+workflow-type: tm+mt
+source-wordcount: '1267'
+ht-degree: 64%
 
 ---
 
@@ -127,7 +130,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 ### Options d’entrepôts de nœuds {#node-store-options}
 
-* `--cache`: Taille du cache en Mo (valeur par défaut `256`)
+* `--cache`: Taille du cache en Mo (la valeur par défaut est `256`)
 
 * `--mmap`: Activer l’accès aux fichiers mappés en mémoire pour le magasin de segments
 * `--src-password:` Mot de passe de la base de données RDB source
@@ -136,27 +139,27 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--user`: Utilisateur de la RDB ciblée
 
-* `--password`: Mot de passe de la RDB cible.
+* `--password`: Mot de passe de la cible RDB.
 
 ### Options de migration {#migration-options}
 
-* `--early-shutdown`: Ferme le référentiel JCR2 source après la copie des noeuds et avant l’application des crochets de validation.
+* `--early-shutdown`: Ferme le référentiel source JCR2 après la copie des noeuds et avant l’application des crochets de validation.
 * `--fail-on-error`: Force un échec de la migration si les noeuds ne peuvent pas être lus à partir du référentiel source.
 * `--ldap`: Migration des utilisateurs LDAP d’une instance CQ 5.x vers une instance Oak. Pour que cela fonctionne, le fournisseur d’identité dans la configuration Oak doit être nommé ldap. Pour plus d’informations, consultez la [documentation LDAP](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Utilisez-le conjointement avec le `--ldap` paramètre pour les référentiels CQ 5.x qui utilisaient plusieurs serveurs LDAP pour l’authentification. You can use it to point to the CQ 5.x `ldap_login.conf` or `jaas.conf` configuration files. Le format est `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Utilisez cette méthode conjointement avec le `--ldap` paramètre pour les référentiels CQ 5.x qui utilisaient plusieurs serveurs LDAP pour l’authentification. You can use it to point to the CQ 5.x `ldap_login.conf` or `jaas.conf` configuration files. Le format est `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Options d’entrepôt de versions {#version-store-options}
 
 * `--copy-orphaned-versions`: Ignore la copie des versions orphelines. Parameters supported are: `true`, `false` and `yyyy-mm-dd`. La valeur par défaut est `true`.
 
-* `--copy-versions:` Copie le stockage de la version. Parameters: `true`, `false`, `yyyy-mm-dd`. La valeur par défaut est `true`.
+* `--copy-versions:` Copie l’enregistrement de version. Paramètres: `true`, `false`, `yyyy-mm-dd`. La valeur par défaut est `true`.
 
 #### Options de chemin {#path-options}
 
-* `--include-paths:` Liste de chemins séparés par des virgules à inclure lors de la copie
-* `--merge-paths`: Liste de chemins séparés par des virgules à fusionner pendant la copie
-* `--exclude-paths:` Liste de chemins séparés par des virgules à exclure pendant la copie.
+* `--include-paths:` Liste séparée par des virgules des chemins à inclure lors de la copie
+* `--merge-paths`: Liste séparée par des virgules des chemins à fusionner pendant la copie
+* `--exclude-paths:` Liste des chemins d’accès à exclure au cours de la copie séparés par des virgules.
 
 ### Options de stockage du Blob source {#source-blob-store-options}
 
@@ -176,7 +179,7 @@ See the [Apache Documentation](https://jackrabbit.apache.org/oak/docs/migration.
 
 * `--s3datastore`: Répertoire de la banque de données à utiliser pour la cible `S3DataStore`
 
-* `--s3config`: Fichier de configuration pour la cible `S3DataStore`.
+* `--s3config`: Fichier de configuration de la cible `S3DataStore`.
 
 ### Options d’aide {#help-options}
 
