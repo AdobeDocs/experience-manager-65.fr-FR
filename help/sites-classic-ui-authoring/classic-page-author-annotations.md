@@ -12,13 +12,16 @@ content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 translation-type: tm+mt
 source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 95%
 
 ---
 
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
-L’ajout de contenu aux pages de votre site Web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu (contrairement, par exemple, à la mise en page) permettent d’ajouter une annotation.
+L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu (contrairement, par exemple, à la mise en page) permettent d’ajouter une annotation.
 
 Une annotation place une note autocollante colorée sur la page. L’annotation vous permet (ainsi qu’aux autres utilisateurs) de laisser des commentaires ou des questions à l’intention d’autres auteurs ou réviseurs.
 
@@ -36,7 +39,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->Selon vos besoins, vous pouvez également développer un flux de travail pour envoyer des notifications lorsque des annotations sont ajoutées, mises à jour ou supprimées.
+>En fonction de vos besoins, vous pouvez également développer un processus d’envoi de notifications lorsque des annotations sont ajoutées, mises à jour ou supprimées.
 
 ## Annotations {#annotations}
 
@@ -50,7 +53,7 @@ Vous pouvez déplacer l’annotation dans une nouvelle position sur la page. Cli
 
 Les annotations (y compris les schémas qui leur sont associés) sont également comprises dans toute action de copie, de découpe ou de suppression affectant le paragraphe auquel elles sont jointes ; pour les actions de copie et de découpe, la position de l’annotation (et des schémas qui lui sont associés) est conservée par rapport au paragraphe d’origine.
 
-La taille de l’annotation peut également être augmentée ou diminuée en faisant glisser le coin inférieur droit.
+La taille de l&#39;annotation peut également être augmentée ou diminuée en faisant glisser le coin inférieur droit.
 
 À des fins de suivi, la ligne de pied de page indique l’utilisateur qui a créé l’annotation et la date. Les auteurs consécutifs peuvent modifier la même annotation (le pied de page est alors mis à jour), ou créer une nouvelle annotation pour le même paragraphe.
 
@@ -76,6 +79,7 @@ Les trois icônes dans la partie supérieure gauche vous permettent de minimiser
 >
 >* l’icône ne s’affiche pas ;
 >* les schémas existants, créés dans un autre navigateur, ne s’affichent pas.
+
 >
 
 
