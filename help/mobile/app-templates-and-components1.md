@@ -1,8 +1,8 @@
 ---
 title: Modèles d’application et composants
 seo-title: Modèles d’application et composants
-description: Suivez cette page pour en savoir plus sur les modèles et les composants d’application. Il fournit des informations détaillées sur la structure des modèles.
-seo-description: Suivez cette page pour en savoir plus sur les modèles et les composants d’application. Il fournit des informations détaillées sur la structure des modèles.
+description: Suivez cette page pour en savoir plus sur les modèles d’application et les composants. Il fournit des informations détaillées sur la structure des modèles.
+seo-description: Suivez cette page pour en savoir plus sur les modèles d’application et les composants. Il fournit des informations détaillées sur la structure des modèles.
 uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 51%
 
 ---
 
@@ -60,20 +63,21 @@ This node contains *a jcr:content (cq:PageContent)* node which be used as the ba
 >
 >* [Modèles](/help/sites-developing/templates.md)
 >* [Composants](/help/sites-developing/components.md)
+
 >
 
 
 
 Une fois que vous avez une bonne compréhension des modèles et des composants, consultez les ressources suivantes :
 
-* [Création et ajout de modèles et de composants](/help/mobile/mobile-ondemand-app-templates.md)
+* [Création et Ajoute de modèles et de composants](/help/mobile/mobile-ondemand-app-templates.md)
 * [Utilisation des propriétés de contenu pour exporter du contenu](/help/mobile/on-demand-content-properties-exporting.md)
-* [Meilleures pratiques](/help/mobile/best-practices-aem-mobile.md)
-* [Développement d&#39;AEM Mobile Content Services](//help/mobile/developing-content-services.md)
+* [Bonnes pratiques](/help/mobile/best-practices-aem-mobile.md)
+* [Développement des services de contenu AEM Mobile](//help/mobile/developing-content-services.md)
 
 ### Ressources supplémentaires {#additional-resources}
 
-Pour en savoir plus sur d’autres sujets sur les applications mobiles, voir les liens ci-dessous :
+Pour en savoir plus sur d’autres rubriques sur les applications mobiles, voir les liens ci-dessous :
 
 * [Mobile avec Content Sync](/help/mobile/mobile-ondemand-contentsync.md)
 * [Test des applications mobiles](/help/mobile/develop-mobile-apps-testing.md)
