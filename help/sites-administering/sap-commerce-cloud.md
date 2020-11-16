@@ -12,6 +12,9 @@ discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1726'
+ht-degree: 91%
 
 ---
 
@@ -42,7 +45,7 @@ Après l’installation, vous pouvez configurer votre instance :
 1. **Ouvrez l’éditeur** sur **Sample Solr Configuration for clothescatalog**.
 
 1. Sous **Catalog versions**, utilisez **Add Catalog version** pour ajouter `outdoors-Staged` et `outdoors-Online` à la liste.
-1. **Enregistrez** la configuration.
+1. **Enregistrez la configuration.**
 1. Ouvrez **SOLR Item types** pour ajouter **SOLR Sorts** à `ClothesVariantProduct` :
 
    * relevance (« Pertinence », score)
@@ -50,6 +53,7 @@ Après l’installation, vous pouvez configurer votre instance :
    * name-desc (« Nom (descendant) », nom)
    * price-asc (« Prix (ascendant) », priceValue)
    * price-desc (« Prix (descendant) », priceValue)
+
    >[!NOTE]
    >
    >Use the context menu (usually right-button click) to select `Create Solr sort`.
@@ -98,7 +102,7 @@ Après l’installation, vous pouvez configurer votre instance :
 1. **Enregistrez** les modifications.
 1. Ouvrez **System**, **Facet search**, puis **Indexer operation wizard**. Commencez une tâche cronjob :
 
-   * **Opération** de l&#39;indexeur : `full`
+   * **Opération** d&#39;indexation : `full`
    * **Configuration** Solr : `Sample Solr Config for Clothes`
 
 ## Configuration de la version du catalogue {#configure-the-catalog-version}
@@ -240,7 +244,7 @@ Les propriétés ci-dessous indiquent le lien avec Hybris :
        /etc/commerce/products/outdoors
    ```
 
-   Vous pouvez l’ouvrir dans CRXDE Lite ; par exemple :
+   Vous pouvez l’ouvrir en CRXDE Lite ; par exemple :
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
@@ -250,7 +254,7 @@ Les propriétés ci-dessous indiquent le lien avec Hybris :
 
    `/etc/commerce/products`
 
-   Vous pouvez l’ouvrir dans CRXDE Lite ; par exemple :
+   Vous pouvez l’ouvrir en CRXDE Lite ; par exemple :
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -282,7 +286,7 @@ Le processus d’importation peut être long. Ainsi, en prolongement de la synch
 
    `/etc/commerce/products`
 
-   Vous pouvez l’ouvrir dans CRXDE Lite ; par exemple :
+   Vous pouvez l’ouvrir en CRXDE Lite ; par exemple :
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -350,6 +354,7 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
 
    * **Enable product removal**
    * **Enable product asset removal**
+
    >[!NOTE]
    >
    >Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md). Pour obtenir une liste exhaustive des paramètres configurables et de leurs valeurs par défaut, reportez-vous également à la console.
@@ -358,6 +363,7 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
 
    * Le premier cycle de mise à jour génère un ensemble de produits modifiés, mentionnés dans la liste de journaux.
    * Pour la seconde mise à jour, aucun produit ne doit être mis à jour.
+
    >[!NOTE]
    >
    >La première importation permet d’initialiser les informations du produit. La deuxième importation vérifie que tout a fonctionné et que l’ensemble de produits est prêt.
@@ -374,7 +380,7 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
 
    * Ouvrez la page [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit).
    * Sélectionner le catalogue `Outdoors Staged`
-   * Rechercher `Cajamara`
+   * Recherchez `Cajamara`
    * Sélectionnez ce produit et définissez l’état d’approbation sur `unapproved`.
 
 1. Procédez à une autre mise à jour incrémentielle (voir [Importation d’un catalogue](#catalog-import)). Le produit supprimé apparaît dans le journal.
@@ -382,12 +388,12 @@ Pour supprimer un ou plusieurs produits du catalogue, procédez comme suit :
 
    Par exemple :
 
-   * Ouvrez:
+   * Ouvrez :
 
       [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
    * Rollout the `Hybris Base` catalog
-   * Ouvrez:
+   * Ouvrez :
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
@@ -423,6 +429,7 @@ Pour ajouter un historique de commandes à [ClientContext](/help/sites-developin
 
       * ClientContext affiche un récapitulatif de l’historique des commandes.
       * Un message stipulant que vous êtes un client régulier s’affiche.
+
    >[!NOTE]
    >
    >Le message est obtenu de la façon suivante :
