@@ -23,7 +23,7 @@ ht-degree: 77%
 
 ## Présentation {#introduction}
 
-Dans AEM 6, le tableau de bord des opérations permet aux opérateurs système de surveiller d’un simple coup d’œil l’intégrité du système AEM. Il fournit également des informations de diagnostic générées automatiquement sur les aspects pertinents d’AEM et permet de configurer et d’exécuter l’automatisation de maintenance autonome afin de réduire considérablement les opérations de projet et les cas de support. Le tableau de bord des opérations peut être étendu en y intégrant des contrôles de l’intégrité et des tâches de maintenance personnalisés. En outre, les données du tableau de bord des opérations sont accessibles à l’aide des outils de surveillance externes par le biais de JMX.
+Dans AEM 6, le tableau de bord des opérations permet aux opérateurs système de surveiller d’un simple coup d’œil l’intégrité du système AEM. Il fournit également des informations de diagnostic générées automatiquement sur les aspects pertinents de l&#39;AEM et permet de configurer et d&#39;exécuter une automatisation de maintenance autonome afin de réduire considérablement les opérations de projet et les cas de support. Le tableau de bord des opérations peut être étendu en y intégrant des contrôles de l’intégrité et des tâches de maintenance personnalisés. En outre, les données du tableau de bord des opérations sont accessibles à l’aide des outils de surveillance externes par le biais de JMX.
 
 **Le tableau de bord des opérations :**
 
@@ -233,7 +233,7 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
        <li>renvoie l'état OK s'il y a moins de 45 minutes </li>
       </ul> </li>
      <li>renvoie « OK » si aucune de ces conditions n’est remplie.</li>
-    </ul> <p>Les seuils des états Critique et Avertissement sont configurables. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque : </strong>Cette vérification d’intégrité est disponible avec AEM 6.4 et a été renvoyée à AEM 6.3.0.1.</p> </td>
+    </ul> <p>Les seuils des états Critique et Avertissement sont configurables. The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Remarque : </strong>Cette vérification de l'état de santé est disponible avec AEM 6.4 et a été reportée à AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Index Lucene volumineux</td>
@@ -439,7 +439,7 @@ Exemples :
 
 >[!NOTE]
 >
->**Avec AEM 6.4**, les tâches de maintenance sont déconnectées de la boîte dans un format plus riche en informations au niveau des informations. L’état des tâches de maintenance est ainsi plus lisible.
+>**Avec AEM 6.4**, les tâches de maintenance sont déconnectées de la boîte dans un format plus riche en informations au niveau INFO. L’état des tâches de maintenance est ainsi plus lisible.
 >
 >Si vous utilisez des outils tiers (comme Splunk) pour surveiller l’activité des tâches de maintenance et y réagir, vous pouvez utiliser les instructions de journal suivantes :
 
@@ -515,7 +515,7 @@ It can be accessed by going to **Tools - Operations - Diagnosis **from the Welco
 
 It can also be accessed directly at this URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![capture d&#39;écran_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
+![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
 
 L’interface utilisateur peut être utilisée pour filtrer les index dans le tableau en entrant les critères de filtre dans la zone de recherche située dans le coin supérieur gauche de l’écran.
 
@@ -573,7 +573,7 @@ Utilisez la tâche Nettoyage des binaires Lucene pour purger les fichiers binair
 La tâche de maintenance a été conçue en vue de réduire les objets inutilisés dans les révisions liés à Lucene, mais elle présente en outre des avantages d’ordre général en termes d’efficacité :
 
 * L’exécution hebdomadaire de la tâche de nettoyage d’un entrepôt de données se terminera plus rapidement.
-* Il peut également légèrement améliorer les performances globales d’AEM
+* Il peut également légèrement améliorer les performances AEM globales
 
 You can access the Lucene Binaries Cleanup task from: **AEM > Tools > Operations > Maintenance > Daily Maintenance Window > Lucene Binaries Cleanup**.
 
