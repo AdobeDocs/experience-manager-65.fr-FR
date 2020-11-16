@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 60%
 
 ---
 
 
 # Choix de l’interface utilisateur{#selecting-your-ui}
 
-Puisque l’interface utilisateur tactile remplace l’interface utilisateur classique, l’utilisateur ou l’administrateur de l’instance AEM doit prendre la décision active de continuer à utiliser l’interface utilisateur classique. Comme l’interface utilisateur classique n’est plus conservée, l’utilisateur auteur ne peut plus simplement passer de l’interface utilisateur classique à l’équivalent dans l’interface utilisateur tactile.
+Comme l’interface utilisateur tactile remplace l’interface utilisateur classique, l’utilisateur ou l’administrateur de l’instance AEM doit prendre une principale décision de continuer à utiliser l’interface utilisateur classique. L’interface utilisateur classique n’étant plus conservée, l’utilisateur auteur ne peut plus simplement passer de l’interface utilisateur classique à l’équivalent dans l’interface utilisateur tactile.
 
 Pour offrir davantage de confort à ces utilisateurs, l’IU destinée aux écrans tactiles permet de basculer vers l’IU classique lorsque cela s’avère nécessaire. Pour plus d’informations, voir [Choix de l’interface utilisateur](/help/sites-authoring/select-ui.md) dans la documentation de création standard.
 
