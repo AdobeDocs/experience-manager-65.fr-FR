@@ -514,7 +514,7 @@ Assurez-vous de pouvoir créer une intégration dans votre domaine d&#39;Adobe s
 
 1. L&#39;utilisation de la clé publique de la section 2.1 la place dans l&#39;intégration de la clé.
 
-1. Sélectionnez un profil pour votre conversion automatisée de formulaires.
+1. Sélectionnez un profil pour votre automated forms conversion.
 
    ![Créer une nouvelle intégration](assets/aftia-create-new-integration.jpg)
 
@@ -640,7 +640,7 @@ Une fois la configuration configurée, les utilisateurs peuvent la tester en té
 
 #### Problèmes et remarques connus {#known-issues-notes}
 
-Le service de conversion Forms automatisée comprend certaines [bonnes pratiques, des modèles](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)complexes connus et des problèmes [](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html)connus. Vérifiez ces informations avant de commencer à utiliser le service de conversion Forms automatisée AEM Forms.
+Le service d’Automated forms conversion comprend certaines [bonnes pratiques, des modèles](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)complexes connus et des problèmes [](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html)connus. Vérifiez ces informations avant de commencer à utiliser le service Automated forms conversion AEM Forms.
 
 1. Générez le formulaire avec Générer le ou les formulaires adaptatifs sans que les liaisons de données soient activées si vous souhaitez lier le formulaire à un FDM après la conversion.
 
