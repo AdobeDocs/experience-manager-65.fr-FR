@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: 47b69098a45f774501ebb62ee1a14a8d209ad101
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 59%
 
 ---
 
 
 # Conflits de déploiement de MSM{#msm-rollout-conflicts}
 
-Des conflits peuvent se produire si de nouvelles pages portant le même nom de page sont créées dans la branche blueprint et dans une branche de copie dynamique dépendante.
+Des conflits peuvent survenir si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche du plan directeur et dans une branche de la copie dynamique dépendante.
 
 Ces conflits doivent être gérés et résolus lors du déploiement.
 
@@ -49,24 +52,24 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
 
    * Activated on publish as `/b`, together with the child page.
 
-**Avant déploiement**
+**Avant le déploiement**
 
 <table>
  <tbody>
   <tr>
-   <td><strong>plan directeur avant le déploiement</strong></td>
+   <td><strong>avant le déploiement</strong></td>
    <td><strong>copie dynamique avant le déploiement</strong></td>
    <td><strong>publier avant le déploiement</strong></td>
   </tr>
   <tr>
-   <td><code>b</code> <br /> (créé dans la branche blueprint, prêt pour le déploiement)<br /> </td>
+   <td><code>b</code> <br /> (créé dans la branche du plan directeur, prêt pour le déploiement)<br /> </td>
    <td><code>b</code> <br /> (créé manuellement dans une branche de copie dynamique)<br /> </td>
-   <td><code>b</code> <br /> (contient le contenu de la page b qui a été créée manuellement dans la branche de la copie dynamique)</td>
+   <td><code>b</code> <br /> (contient le contenu de la page b créée manuellement dans la branche de la copie dynamique)</td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code> <br /> (créé manuellement dans une branche de copie dynamique)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page<br /> enfant-level-1 créée manuellement dans la branche de la copie dynamique)</td>
+   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page<br /> child-level-1 créée manuellement dans la branche de la copie dynamique)</td>
   </tr>
  </tbody>
 </table>
@@ -81,7 +84,7 @@ Le gestionnaire de déploiement permet d’activer ou de désactiver la gestion 
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
-   Définissez cette variable sur true si le gestionnaire de déploiement doit gérer les conflits d’une page créée dans la copie dynamique avec un nom existant dans le plan directeur.
+   Définissez cette variable sur true si le gestionnaire de déploiement doit gérer les conflits provenant d&#39;une page créée dans la copie dynamique avec un nom présent dans le plan directeur.
 
 AEM possède un [comportement prédéfini lorsque la gestion des conflits a été désactivée](#behavior-when-conflict-handling-deactivated).
 
@@ -129,22 +132,22 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. The live copy 
    <td><strong>plan directeur après le déploiement</strong></td>
    <td><strong>copie dynamique après le déploiement</strong><br /> </td>
    <td></td>
-   <td><strong>copie dynamique après le déploiement</strong><br /><br /><br /> </td>
-   <td><strong>publier après le déploiement</strong><br /><br /> </td>
+   <td><strong>copie dynamique après le déploiement</strong><br /> <br /> <br /> </td>
+   <td><strong>publier après le déploiement</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (a le contenu de la page du plan directeur b qui a été déployée)<br /> </td>
+   <td><code>b</code> <br /> (a le contenu de la page du plan directeur b qui a été publiée)<br /> </td>
    <td></td>
    <td><code>b_msm_moved</code> <br /> (contient le contenu de la page b qui a été créée manuellement dans la branche de la copie dynamique)</td>
-   <td><code>b</code> <br /> (aucun changement; contient le contenu de la page d’origine b qui a été créée manuellement dans la branche de la copie dynamique et qui s’appelle désormais b_msm_move)<br /> </td>
+   <td><code>b</code> <br /> (aucun changement ; contient le contenu de la page d'origine b qui a été créée manuellement dans la branche de la copie dynamique et est maintenant appelée b_msm_move)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code class="code"> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (aucun changement)</td>
+   <td><code> /lc-level-1</code> <br /> (aucune modification)</td>
    <td><code> </code></td>
-   <td><code> /lc-level-1</code> <br /> (aucun changement)</td>
+   <td><code> /lc-level-1</code> <br /> (aucune modification)</td>
   </tr>
  </tbody>
 </table>
@@ -177,7 +180,7 @@ Dans ce cas, la Live Copy prévaut effectivement. The blueprint page `/b` is not
 
 * blueprint: `/b`
 
-   N’est pas copiée du tout, mais est ignorée.
+   N’est pas copié du tout, mais est ignoré.
 
 * live copy: `/b`
 
@@ -190,18 +193,18 @@ Dans ce cas, la Live Copy prévaut effectivement. The blueprint page `/b` is not
  <tbody>
   <tr>
    <td><strong>plan directeur après le déploiement</strong></td>
-   <td><strong>copie dynamique après le déploiement</strong><br /><br /><br /> </td>
-   <td><strong>publier après le déploiement</strong><br /><br /> </td>
+   <td><strong>copie dynamique après le déploiement</strong><br /> <br /> <br /> </td>
+   <td><strong>publier après le déploiement</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (aucun changement; a le contenu de la page b qui a été créée manuellement dans la branche de la copie dynamique)</td>
-   <td><code>b</code> <br /> (aucun changement; contient le contenu de la page b qui a été créée manuellement dans la branche de la copie dynamique)<br /> </td>
+   <td><code>b</code> <br /> (aucun changement ; a le contenu de la page b créée manuellement dans la branche de la copie dynamique)</td>
+   <td><code>b</code> <br /> (aucun changement ; contient le contenu de la page b créée manuellement dans la branche de la copie dynamique)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code> </td>
-   <td><code> /lc-level-1</code> <br /> (aucun changement)</td>
-   <td><code> /lc-level-1</code> <br /> (aucun changement)</td>
+   <td><code> /lc-level-1</code> <br /> (aucune modification)</td>
+   <td><code> /lc-level-1</code> <br /> (aucune modification)</td>
   </tr>
  </tbody>
 </table>
