@@ -12,6 +12,9 @@ discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 79%
 
 ---
 
@@ -20,10 +23,10 @@ source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
 
 Analytics peut vous apporter des informations importantes et intéressantes sur l’utilisation de votre site web.
 
-Diverses configurations prêtes à l’emploi sont disponibles pour l’intégration au service approprié, par exemple :
+Diverses configurations prêtes à l&#39;emploi sont disponibles pour l&#39;intégration au service approprié, par exemple :
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
-* [Adobe Target](/help/sites-administering/target.md)
+* [Adobe Target](/help/sites-administering/target.md)
 
 Vous pouvez également configurer votre propre instance des **Extrait de code Analytics générique** afin de définir de nouvelles configurations de service.
 
