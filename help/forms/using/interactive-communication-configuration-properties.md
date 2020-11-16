@@ -12,6 +12,9 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 60%
 
 ---
 
@@ -38,14 +41,14 @@ Tap **Document Fragments configuration** on the **Adobe Experience Manager Web C
 <table>
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Propriété</td> 
    <td>Description</td> 
    <td>Valeur par défaut</td> 
    <td>Valeurs acceptables</td> 
   </tr> 
   <tr> 
    <td>Data Display Formats</td> 
-   <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, les variables et les éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour l’impression et d’un  Web.</td> 
+   <td>Format d’affichage spécifique aux paramètres régionaux pour les champs, variables et éléments de modèle de données de formulaire disponibles lors de la création d’une communication interactive pour l’impression et les canaux Web.</td> 
    <td> 
     <ul> 
      <li>locale = en_US, de_DE, fr_FR et ja_JP</li> 
@@ -84,7 +87,7 @@ Tap **Create Correspondence Configuration** on the **Adobe Experience Manager We
 <table>
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Propriété</td> 
    <td>Description</td> 
    <td>Valeur par défaut</td> 
    <td>Valeurs acceptables</td> 
@@ -102,8 +105,8 @@ Tap **Create Correspondence Configuration** on the **Adobe Experience Manager We
    <td>Non applicable</td> 
   </tr> 
   <tr> 
-   <td>Activer l’incorporation des polices dans le PDF</td> 
-   <td><p>Cochez la case pour activer l’incorporation de polices dans le PDF. Après avoir sélectionné cette option, vous pouvez incorporer de nouvelles polices après avoir généré ou prévisualisé le PDF à l’aide de l’interface utilisateur de l’agent. Utilisez le d’impression de la communication interactive pour générer et  des  PDF.</p> <p>L’incorporation de polices dans un PDF est utile si une police est disponible sur un ordinateur utilisé pour générer le PDF et non sur l’ordinateur client qui accède au PDF.</p> <p>Pour plus d’informations sur l’incorporation de polices, voir <a href="../../forms/using/customize-text-editor.md" target="_blank">Personnalisation de l’éditeur</a>de texte.</p> </td> 
+   <td>Activer l’incorporation de polices dans le PDF</td> 
+   <td><p>Cochez la case pour activer l’incorporation de polices dans les documents PDF. Après avoir sélectionné cette option, vous pouvez incorporer de nouvelles polices après avoir généré ou prévisualisé les documents PDF à l’aide de l’interface utilisateur de l’agent. Utilisez le canal d’impression de la communication interactive pour générer et prévisualisation des documents PDF.</p> <p>L’incorporation de polices dans un document PDF s’avère utile si une police est disponible sur un ordinateur utilisé pour générer le PDF et n’est pas disponible sur l’ordinateur client qui accède au PDF.</p> <p>Pour plus d’informations sur l’incorporation de polices, voir <a href="../../forms/using/customize-text-editor.md" target="_blank">Personnalisation de l’éditeur</a>de texte.</p> </td> 
    <td>Non sélectionné</td> 
    <td>Ne s’applique pas</td> 
   </tr> 
@@ -114,7 +117,7 @@ Tap **Create Correspondence Configuration** on the **Adobe Experience Manager We
 
 Tap **Adaptive Form and Interactive Communication Web Channel Configuration** on the **Adobe Experience Manager Web Console Configuration** page to view the configuration properties for Adaptive Forms and Interactive Communications Web channel. Le tableau suivant décrit les propriétés liées aux communications interactives :
 
-| Propriétés | Description | Valeur par défaut | Valeurs acceptables |
+| Propriété | Description | Valeur par défaut | Valeurs acceptables |
 |---|---|---|---|
 | Afficher l’espace réservé | Cochez la case pour activer l’affichage des espaces réservés pour les champs inclus dans les formulaires adaptatifs et les communications interactives. | Sélectionné | Non applicable |
 | Nombre maximal d’entrées de cache | Définissez le nombre maximal de formulaires adaptatifs et de communications interactives pouvant être récupérés à l’aide de la mémoire cache. | 100 | Nombre |
@@ -127,7 +130,7 @@ Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuratio
 <table>
  <tbody> 
   <tr> 
-   <td>Propriétés</td> 
+   <td>Propriété</td> 
    <td>Description</td> 
    <td>Valeur par défaut</td> 
    <td>Valeurs acceptables</td> 
