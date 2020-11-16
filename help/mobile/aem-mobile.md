@@ -1,8 +1,8 @@
 ---
-title: AEM Mobile On-Demand
-seo-title: AEM Mobile On-Demand
-description: Suivez cette page pour commencer à administrer l'application AEM Mobile On-Demand Services. Il fournit un aperçu des rôles et responsabilités d’un administrateur AEM pour les services à la demande.
-seo-description: Suivez cette page pour commencer à administrer l'application AEM Mobile On-Demand Services. Il fournit un aperçu des rôles et responsabilités d’un administrateur AEM pour les services à la demande.
+title: AEM Mobile à la demande
+seo-title: AEM Mobile à la demande
+description: Suivez cette page pour commencer à administrer AEM application de services mobiles à la demande. Il donne un aperçu des rôles et responsabilités d'un administrateur AEM des services à la demande.
+seo-description: Suivez cette page pour commencer à administrer AEM application de services mobiles à la demande. Il donne un aperçu des rôles et responsabilités d'un administrateur AEM des services à la demande.
 uuid: fd99c032-287a-489b-9690-b18980c55c29
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,11 +11,14 @@ topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 7%
 
 ---
 
 
-# AEM Mobile On-Demand {#aem-mobile-on-demand}
+# AEM Mobile à la demande {#aem-mobile-on-demand}
 
 >[!NOTE]
 >
@@ -23,7 +26,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Si vous n&#39;utilisez pas AEM comme source de gestion de contenu, reportez-vous à l&#39;Aide [des services à la demande](https://helpx.adobe.com/digital-publishing-solution/topics.html)AEM Mobile.
+>Si vous n’utilisez pas AEM comme source de gestion de contenu, consultez l’aide [](https://helpx.adobe.com/digital-publishing-solution/topics.html)AEM Mobile On-demand Services.
 
 ## Administrateur AEM {#aem-administrator}
 
@@ -31,30 +34,30 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 >
 >**Condition préalable requise :**
 >
->Avant de commencer la configuration de votre environnement pour les services à la demande AEM Mobile, reportez-vous au tableau de bord de l&#39;application [AEM Mobile ou au Centre](/help/mobile/mobile-apps-ondemand-application-dashboard.md)de contrôle.
+>Avant de commencer à configurer votre environnement pour AEM Mobile On-demand Services, consultez le Tableau de bord d&#39;application [AEM Mobile ou le Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un administrateur ****** AEM est responsable de l&#39;ajout d&#39;une nouvelle application au catalogue AEM Mobile, soit en créant une nouvelle application à l&#39;aide de l&#39;assistant de création, soit en important une application existante. Les administrateurs AEM qui créent une nouvelle application à l&#39;aide de l&#39;assistant *de* création d&#39;AEM Mobile sélectionnent généralement l&#39;un des modèles d&#39;application souhaités, soit à partir des exemples de référence prêts à l&#39;emploi, soit (dans la plupart des cas) à partir d&#39;un modèle d&#39;application personnalisé créé par les développeurs *AEM.*
+Un administrateur ***AEM*** est chargé d’ajouter une nouvelle application au catalogue AEM Mobile, soit en créant une nouvelle application à l’aide de l’assistant de création, soit en important une application existante. aem administrateurs qui créent une application à l’aide de l’assistant *de* création AEM Mobile sélectionnent généralement l’un des modèles d’application souhaités, soit à partir des exemples de référence prêts à l’emploi, soit (dans la plupart des cas) à partir d’un modèle d’application personnalisé créé par des développeurs *AEM.*
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration des groupes et autorisations AEM, cliquez sur [Création de rôles utilisateur et Accès](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) en ligne dans l’aide en ligne.
+>Pour plus d&#39;informations sur la configuration des groupes AEM et des autorisations, cliquez sur [Création de rôles utilisateur et octroi d&#39;accès](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) dans l&#39;aide en ligne.
 
-Un administrateur AEM est responsable des tâches suivantes lors de la création d&#39;une application à l&#39;aide des services à la demande AEM Mobile :
+Un administrateur AEM est responsable des tâches suivantes lors de la création d’une application à l’aide de AEM Mobile On-demand Services :
 
-* [Configuration d&#39;AEM Mobile](/help/mobile/aem-mobile-setup.md), qui couvre
+* [Configuration de AEM Mobile](/help/mobile/aem-mobile-setup.md), qui couvre
 
    * Approvisionnement AEM Mobile
    * Création de projets pour AEM Mobile
-   * Configuration d&#39;un connecteur AEM Mobile
-   * Ajout des rôles utilisateur d&#39;AEM Mobile et attribution des autorisations
+   * Configuration d’un connecteur AEM Mobile
+   * Ajouter les rôles utilisateur AEM Mobile et attribuer des autorisations
 
-* [Configuration des utilisateurs et des groupes d’utilisateurs](/help/mobile/aem-mobile-configure-users.md)
+* [Configuration de vos groupes d’utilisateurs et d’utilisateurs](/help/mobile/aem-mobile-configure-users.md)
 * [Aperçu avec contrôle en amont](/help/mobile/aem-mobile-manage-ondemand-services.md)
 * [Administration de Content Services](//help/mobile/developing-content-services.md)
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour en savoir plus sur les deux autres rôles et responsabilités de création d&#39;une application de services à la demande AEM Mobile, reportez-vous aux ressources suivantes :
+Pour en savoir plus sur les deux autres rôles et responsabilités de création d’une application AEM Mobile On-demand Services, consultez les ressources suivantes :
 
-* [Développement de contenu AEM pour les services à la demande AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Création de contenu AEM pour l&#39;application AEM Mobile On-Demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Développement de contenu AEM pour AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Création de contenu AEM pour une application AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
