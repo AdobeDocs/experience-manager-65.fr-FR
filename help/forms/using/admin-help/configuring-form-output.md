@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
    **HTML complet :** pour effectuer le rendu du formulaire avec des balises HTML complètes (page HTML complète). Il s’agit de la valeur par défaut.
 
-   **** Corps du formulaire : Pour effectuer le rendu du formulaire dans `<BODY>` des balises (pas dans une page HTML complète).
+   **Corps du formulaire :** Pour effectuer le rendu du formulaire au sein de `<BODY>` balises (page HTML non complète).
 
 1. Cliquez sur Enregistrer.
 
