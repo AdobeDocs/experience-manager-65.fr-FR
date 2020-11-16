@@ -10,6 +10,9 @@ discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 translation-type: tm+mt
 source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 58%
 
 ---
 
@@ -22,8 +25,8 @@ This tutorial is a step in the [Create your first Interactive Communication](/he
 
 Les fragments de document sont des composants réutilisables d’une correspondance utilisés pour composer une communication interactive. Les fragments de document sont composés des types suivants :
 
-* Texte : un actif de texte est un élément de contenu constitué d’un ou de plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
-*  -  est un groupe de fragments de, y compris du texte, desconditions, des conditions et des images.
+* Texte : un actif de texte est un élément de contenu constitué d&#39;un ou de plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
+* Liste - Liste est un groupe de fragments de document, y compris du texte, des listes, des conditions et des images.
 * Condition : les conditions vous permettent de définir le contenu à inclure dans la communication interactive en fonction des données reçues du modèle de données de formulaire.
 
 This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section. À la fin de ce didacticiel, vous serez capable de :
@@ -32,7 +35,7 @@ This tutorial walks you through the steps to create multiple text document fragm
 * Créer des variables
 * Créer et appliquer des règles
 
-![text___fragments](assets/text_document_fragments.gif)
+![text_document_fragments](assets/text_document_fragments.gif)
 
 Voici la liste des fragments de document créés dans ce didacticiel :
 
@@ -78,13 +81,15 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    1. Saisissez **Invoicenumber** comme nom de la variable.
    1. Sélectionnez **Chaîne** comme type.
-   1. Appuyez sur **Create** (Créer). 
+   1. Appuyez sur **Créer**. 
+
    ![Créer une variable de type chaîne](assets/variable_create_string_new.png)
 
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
    * Billperiod : type de chaîne
    * BillDate : type de date
+
    ![Informations de facturation](assets/variable_bill_details_new.png)
 
 1. Créez du texte statique pour les champs suivants à l’aide du volet de droite :
@@ -93,6 +98,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
    * Période de facturation
    * Date de facturation
    * Votre planification
+
    ![Texte statique](assets/variable_bill_details_static_text_new.png)
 
 1. Placez le curseur en regard du champ **N° de facture** et cliquez deux fois sur la variable **InvoiceNumber** de l’onglet **Variables** dans le volet de gauche.
@@ -139,7 +145,8 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    1. Enter **Placesupply** as the name of the variable.
    1. Sélectionnez **Chaîne** comme type.
-   1. Appuyez sur **Create** (Créer). 
+   1. Appuyez sur **Créer**. 
+
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
    * Statecode : type de numéro
@@ -156,7 +163,8 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
    * Numéro de relation
    * Code du pays
    * Nombre de connexions
-   ![Détails du client Texte statique](assets/customer_details_static_text_new.png)
+
+   ![Détails du client texte statique](assets/customer_details_static_text_new.png)
 
 1. Place the cursor next to the **Mobile Number** field and double-click the **customer** > **mobilenum** property.
 1. Place the cursor next to the **Alternate Contact Number** field and double-click the** customer** > **alternatemobilenumber** property.
@@ -171,7 +179,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 ## Étape 3 : Créer le fragment de document texte de récapitulatif de facturation {#step-create-bill-summary-text-document-fragment}
 
-Le fragment de Résumé de facture comprend les champs suivants :
+Le fragment de document de synthèse des factures comprend les champs suivants :
 
 | Field (Champ) | Source de données |
 |---|---|
@@ -201,7 +209,8 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
    1. Enter **Previousbalance** as the name of the variable.
    1. Select **Number** as type.
-   1. Appuyez sur **Create** (Créer). 
+   1. Appuyez sur **Créer**. 
+
    Répétez les étapes 4 et 5 pour créer les variables suivantes :
 
    * Payments : type de numéro
@@ -219,7 +228,8 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
    * Montant dû
    * Échéance
    * Les frais de retard de paiement après l’échéance sont de 20 $.
-   ![Texte statique du résumé des factures](assets/bill_summary_static_new.png)
+
+   ![Texte statique Synthèse des factures](assets/bill_summary_static_new.png)
 
 1. Place the cursor next to the **Previous Balance** field and double-click the **Previousbalance** variable.
 1. Place the cursor next to the **Payments** field and double-click the **Payments** variable.
@@ -234,7 +244,7 @@ Exécutez les étapes suivantes pour créer des variables pour les champs avec l
 
 ## Étape 4 : Créer le fragment de document texte de récapitulatif des frais {#step-create-summary-of-charges-text-document-fragment}
 
-Le fragment Résumé des frais  inclut les champs suivants :
+Le fragment Résumé du document des frais inclut les champs suivants :
 
 | Field (Champ) | Source de données |
 |---|---|
@@ -273,7 +283,8 @@ Exécutez les étapes suivantes pour créer du texte statique et utiliser des é
    * Frais de services à valeur ajoutée
    * Frais totaux
    * TOTAL À PAYER
-   ![Charges récapitulatives](assets/summary_charges_static_new.png)
+
+   ![Frais récapitulatifs](assets/summary_charges_static_new.png)
 
 1. Sélectionnez l’onglet **Objets de modèle de données**.
 1. Place the cursor next to the **Call Charges** field and double-click the **bills** > **callcharges** property.
@@ -295,8 +306,9 @@ Exécutez les étapes suivantes pour créer du texte statique et utiliser des é
 
    1. Sélectionnez **est inférieur à** comme opérateur.
    1. Sélectionnez **Nombre** et entrez la valeur **60**.
+
    En fonction de cette condition, la ligne Frais de services à valeur ajoutée ne s’affiche que si la valeur du champ Frais d’appel est inférieure à 60.
 
-   ![create_Rules_caption](assets/create_rules_caption.gif)
+   ![create_rules_caption](assets/create_rules_caption.gif)
 
 1. Click **Save** to create the Summary of charges text document fragment.
