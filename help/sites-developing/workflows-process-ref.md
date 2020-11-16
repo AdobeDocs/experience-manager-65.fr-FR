@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 84%
 
 ---
 
@@ -42,7 +45,7 @@ Dans le cas le plus courant, la charge utile est un nœud JCR du référentiel (
 
 Certains processus de workflow acceptent les arguments spécifiés par l’administrateur lors de la configuration de l’étape de workflow.
 
-Les arguments sont saisis sous la forme d’une chaîne unique dans la propriété **Arguments du processus** du volet **Propriétés** de l’éditeur de workflow. Pour chaque processus décrit ci-dessous, le format de la chaîne d’arguments est décrit dans une grammaire EBNF simple. Par exemple, l’exemple suivant indique que la chaîne d’arguments est constituée d’une ou de plusieurs paires séparées par des virgules, où chaque paire est composée d’un nom (chaîne) et d’une valeur, séparées par deux-points :
+Les arguments sont saisis sous la forme d’une chaîne unique dans la propriété **Arguments du processus** du volet **Propriétés** de l’éditeur de workflow. Pour chaque processus décrit ci-dessous, le format de la chaîne d’arguments est décrit dans une grammaire EBNF simple. Par exemple, l’exemple suivant indique que la chaîne d’arguments est composée d’une ou de plusieurs paires séparées par des virgules, où chaque paire se compose d’un nom (chaîne) et d’une valeur, séparés par un deux-points doublon :
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -152,7 +155,7 @@ Les processus suivants exécutent des tâches simples ou servent simplement d’
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
 >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
@@ -212,7 +215,7 @@ Il s’agit d’un processus de workflow simple qui appelle l’URL indiquée. E
         password := /* The password to access the URL */
 ```
 
-Par exemple: `http://localhost:4502/my.jsp, mylogin, mypassword`
+Par exemple : `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 * **Délai d’expiration** : ignoré
 
@@ -220,9 +223,9 @@ Par exemple: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 Verrouille la charge utile du workflow.
 
-* **** Classe Java : `com.day.cq.workflow.impl.process.LockProcess`
+* **Classe Java:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **** Charge utile : JCR_PATH et JCR_UUID
+* **Charge utile :** JCR_PATH et JCR_UUID
 * **Arguments** : aucun
 * **Délai d’expiration** : ignoré.
 
@@ -235,9 +238,9 @@ L’étape n’a aucun effet dans les cas suivants :
 
 Déverrouille la charge utile du workflow.
 
-* **** Classe Java : `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Classe Java:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **** Charge utile : JCR_PATH et JCR_UUID
+* **Charge utile :** JCR_PATH et JCR_UUID
 * **Arguments** : aucun
 * **Délai d’expiration** : ignoré.
 
@@ -254,7 +257,7 @@ Le processus suivant effectue une tâche relative à la version.
 
 Crée une version de la charge utile du workflow (page AEM ou ressource DAM).
 
-* **Classe** Java : `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* **Classe Java**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
 * **Charge utile** : chemin JCR ou UUIF faisant référence à une page ou une ressource DAM
 * **Arguments** : aucun
