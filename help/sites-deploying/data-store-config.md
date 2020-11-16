@@ -287,7 +287,7 @@ Le cache local sera vérifié pour l’enregistrement du fichier/blob demandé a
 
 **Téléchargement asynchrone**
 
-Le cache prend en charge les téléchargements asynchrones vers le DataStore. Les fichiers sont placés localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à les télécharger. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. Also, the percentage of cache available for downloads is calculated as **(100 -`stagingSplitPercentage`) *`cacheSize`**.
+Le cache prend en charge les téléchargements asynchrones vers le DataStore. Les fichiers sont placés localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à les télécharger. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. Also, the percentage of cache available for downloads is calculated as **(100 - `stagingSplitPercentage`) *`cacheSize`**.
 
 The asynchronous uploads are multi-threaded and the number of threads is configured by using the `uploadThreads` parameter.
 
