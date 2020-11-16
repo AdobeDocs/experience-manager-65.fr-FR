@@ -208,8 +208,8 @@ Vous pouvez éventuellement utiliser ces cases à cocher conjointement avec le p
 
    | Action sélectionnée | Paramètre Publier les ressources dans la configuration de Contenu multimédia dynamique | Les ressources sont |
    | --- | --- | --- |
-   | Publication  | Immédiatement ou A l&#39;Activation | Publié sur AEM et Contenu multimédia dynamique. |
-   | Publication  | Publication sélective | Publié sur AEM uniquement. |
+   | Publication | Immédiatement ou A l&#39;Activation | Publié sur AEM et Contenu multimédia dynamique. |
+   | Publication | Publication sélective | Publié sur AEM uniquement. |
    | Annuler la publication | Immédiatement ou A l&#39;Activation | Non publié à partir d’AEM et de Contenu multimédia dynamique. |
    | Annuler la publication | Publication sélective | Non publié à partir d&#39;AEM uniquement. |
    | Publier vers Dynamic Media | Immédiatement ou A l&#39;Activation | Non publié sur AEM, Contenu multimédia dynamique ou les deux. |
@@ -229,9 +229,9 @@ Vous pouvez éventuellement utiliser ces cases à cocher conjointement avec le p
 
    | Paramètre Publier les ressources dans la configuration de Contenu multimédia dynamique | Action sélectionnée | Cible de publication |
    | --- | --- | --- |
-   | Immédiatement ou <br>à l&#39;Activation | Publication  | aem et contenu multimédia dynamique |
+   | Immédiatement ou <br>à l&#39;Activation | Publication | aem et contenu multimédia dynamique |
    | Immédiatement ou <br>à l&#39;Activation | Publier vers Dynamic Media | Aucune |
-   | Publication sélective | Publication  | AEM |
+   | Publication sélective | Publication | AEM |
    | Publication sélective | Publier vers Dynamic Media | Dynamic Media |
    | Immédiatement ou <br>à l&#39;Activation | Annuler la publication | aem et contenu multimédia dynamique |
    | Immédiatement ou <br>à l&#39;Activation | Annuler la publication à partir de Dynamic Media | Aucune |
