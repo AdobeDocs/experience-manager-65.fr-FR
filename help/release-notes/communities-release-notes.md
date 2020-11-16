@@ -20,7 +20,7 @@ Pour obtenir la version la plus récente, consultez la section [Déploiement de 
 
 ### Améliorations de l’engagement communautaire {#enhancements-to-community-engagement}
 
-**@Mentions soutien** les AEM Communities permettent désormais aux utilisateurs enregistrés de marquer (mentionner) d&#39;autres membres enregistrés pour attirer leur attention, dans Contenu généré par l&#39;utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le Contenu généré par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer/de désactiver les notifications par e-mail et web.
+**@Mentions support** AEM Communities permet maintenant aux utilisateurs enregistrés de marquer (mentionner) d&#39;autres membres enregistrés pour attirer leur attention, dans Contenu généré par l&#39;utilisateur. Les membres balisés (mentionnés) sont ensuite notifiés, avec un lien profond vers le Contenu généré par l’utilisateur correspondant. Les utilisateurs peuvent toutefois choisir d’activer/de désactiver les notifications par e-mail et web.
 
 ![Prise en charge des mentions @](assets/at-mentions.png)
 
@@ -36,7 +36,7 @@ Les membres de la communauté enregistrés peuvent désormais envoyer des messag
 
 ### Améliorations apportées à la modération en bloc {#enhancements-to-bulk-moderation}
 
-filtres personnalisés dans la modération en bloc
+Filtres personnalisés dans la modération en bloc
 
 [Les filtres](/help/communities/moderation.md#custom-filters) personnalisés peuvent désormais être développés et ajoutés à l’interface de modération en bloc.
 
@@ -67,9 +67,9 @@ Les administrateurs de site peuvent créer un groupe à n’importe quel niveau 
 The enablement functionality of AEM 6.5 Communities support Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
 
 * Prise en charge de la navigation par clavier sur les composants d’activation
-* Les composants d’activation (tels que Catalogue et Lecture des cours, Affectations, Bibliothèque de fichiers) en AEM Communities prennent en charge la navigation par clavier pour une meilleure accessibilité.
+* Les composants d’activation (par exemple, Lecture de catalogue et de cours, Affectations, Bibliothèque de fichiers) dans AEM Communities prennent en charge la navigation clavier pour une meilleure accessibilité.
 
 ### Autres améliorations {#other-enhancements}
 
 * Prise en charge de Solr 7
-* AEM 6.5 Communities prend en charge la version Apache Solr 7.0 de la plate-forme de recherche lors de la configuration de MSRP et DSRP.
+* aem 6.5 Communities prend en charge la version Apache Solr 7.0 de la plate-forme de recherche lors de la configuration de MSRP et DSRP.
