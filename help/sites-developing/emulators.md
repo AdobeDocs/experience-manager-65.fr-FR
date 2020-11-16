@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 67%
 
 ---
 
@@ -121,11 +124,11 @@ When the page component relies on the mobile page component ( `/libs/wcm/mobile/
 * Le script d’initialisation de l’émulateur de base mobile définit via Javascript :
 
    * la configuration de tous les émulateurs qui sont définis pour la page (emulatorConfigs) ;
-   * Le gestionnaire d’émulateur qui intègre les fonctionnalités de l’émulateur dans la page par le biais :
+   * Gestionnaire d&#39;émulateurs qui intègre les fonctionnalités de l&#39;émulateur dans la page par :
 
       `emulatorMgr.launch(config)`;
 
-      Le gestionnaire d’émulateur est défini par :
+      Le gestionnaire d&#39;émulateurs est défini par :
 
       `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
@@ -133,23 +136,23 @@ When the page component relies on the mobile page component ( `/libs/wcm/mobile/
 
 Pour créer un émulateur mobile personnalisé :
 
-1. Ci-dessous, `/apps/myapp/components/emulators` créez le composant `myemulator` (type de noeud : 
-     `cq:Component`).
+1. Ci-dessous, `/apps/myapp/components/emulators` créez le composant `myemulator` (type de noeud : `cq:Component`).
 
 1. Définissez la propriété `sling:resourceSuperType` sur `/libs/wcm/mobile/components/emulators/base`
 
-1. Définissez une bibliothèque cliente CSS avec une catégorie `cq.wcm.mobile.emulator` pour l’aspect de l’émulateur : name = `css`, node type = `cq:ClientLibrary`
+1. Définissez une bibliothèque cliente CSS avec catégorie `cq.wcm.mobile.emulator` pour l’aspect de l’émulateur : name = `css`, node type = `cq:ClientLibrary`
 
-   Vous pouvez, par exemple, faire référence au noeud `/libs/wcm/mobile/components/emulators/iPhone/css`
+   Par exemple, vous pouvez vous référer au noeud `/libs/wcm/mobile/components/emulators/iPhone/css`
 
 1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple pour définir un module externe spécifique : name = js, node type = cq:ClientLibrary
 
-   Vous pouvez, par exemple, faire référence au noeud `/libs/wcm/mobile/components/emulators/base/js`
+   Par exemple, vous pouvez vous référer au noeud `/libs/wcm/mobile/components/emulators/base/js`
 
-1. Si l’émulateur prend en charge des fonctionnalités spécifiques définies par les modules externes (comme le défilement tactile), créez un noeud de configuration sous l’émulateur : name = `cq:emulatorConfig`, node type = `nt:unstructured` et ajoutez la propriété qui définit le module externe :
+1. Si l’émulateur prend en charge des fonctionnalités spécifiques définies par des modules externes (comme le défilement tactile), créez un noeud de configuration sous l’émulateur : name = `cq:emulatorConfig`, node type = `nt:unstructured` et ajoutez la propriété qui définit le module externe :
 
    * Nom = `canRotate`, Type = `Boolean`, Valeur = `true`: pour inclure la fonctionnalité de rotation.
 
    * Name = `touchScrolling`, Type = `Boolean`, Value = `true`: to include the touch scrolling functionality.
+
    Plus de fonctionnalités peuvent être ajoutées en définissant vos propres modules externes.
 
