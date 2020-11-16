@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 61%
 
 ---
 
@@ -41,7 +44,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrir le projet aem-dialog-conversion sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion)
+* [Ouvrez le projet aem-dialog-conversion sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/archive/master.zip).
 
 >[!NOTE]
@@ -55,7 +58,7 @@ Procédez comme suit pour installer l’outil de conversion de boîte de dialogu
 
 ## Conversion d’une boîte de dialogue {#converting-a-dialog}
 
-L’outil convertit les boîtes de dialogue en créant une boîte de dialogue correspondante dans l’interface Granite / Coral 3 au même emplacement que la boîte de dialogue d’origine dans l’arborescence de contenu. In the case of Granite UI / Coral 2 dialogs, these are copied to a backup location (a `.coral2` suffix is appended to the dialog node name) so as not to be overridden. L’outil peut convertir aussi bien des boîtes de dialogue de conception que des boîtes de dialogue de modification.
+L&#39;outil convertit les boîtes de dialogue en créant une boîte de dialogue correspondante dans l&#39;interface utilisateur Granite / Coral 3 au même emplacement que la boîte de dialogue d&#39;origine dans l&#39;arborescence de contenu. In the case of Granite UI / Coral 2 dialogs, these are copied to a backup location (a `.coral2` suffix is appended to the dialog node name) so as not to be overridden. L’outil peut convertir aussi bien des boîtes de dialogue de conception que des boîtes de dialogue de modification.
 
 Procédez comme suit pour convertir une ou plusieurs boîtes de dialogue :
 
@@ -73,10 +76,11 @@ Procédez comme suit pour convertir une ou plusieurs boîtes de dialogue :
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
-   Le tableau répertorie toutes les boîtes de dialogue héritées existantes sous le chemin saisi. Chaque boîte de dialogue a son type répertorié. Les types sont les suivants :
+   Le tableau liste toutes les boîtes de dialogue héritées existantes sous le chemin saisi. Chaque boîte de dialogue a son type répertorié. Les types sont les suivants :
 
-   * **** Classique : Noeuds de type `cq:Dialog` qui ont un nom de noeud `dialog` ou `design_dialog`
-   * **** Corail 2 : Noeuds nommés `cq:dialog` ou `cq:design_dialog` dont le type de ressource Interface utilisateur Granite / Coral 2 se trouve sur leur noeud de contenu enfant
+   * **Classique :** Noeuds de type `cq:Dialog` ayant un nom de noeud `dialog` ou `design_dialog`
+   * **Corail 2 :** Noeuds nommés `cq:dialog` ou `cq:design_dialog` ayant un type de ressource Granite UI / Coral 2 sur leur noeud de contenu enfant
+
    Chaque ligne contient un lien pour afficher la boîte de dialogue et un autre lien vers CRXD Lite pour afficher la structure de son nœud.
 
    >[!NOTE]
@@ -111,9 +115,9 @@ L’outil de conversion de boîte de dialogue applique cette méthode pour réé
 
 ### Algorithme {#algorithm}
 
-L’algorithme de réécriture accepte comme paramètre l’arborescence à réécrire et un ensemble de règles de réécriture. Il·effectue·un·parcours préfixe de l’arborescence et, pour chaque nœud, il vérifie si une règle s’applique à la sous-arborescence dont la racine se situe au niveau de ce nœud. La première règle qui correspond est appliquée à cette sous-arborescence afin de la réécrire. La traversée redémarre ensuite depuis la racine. L’algorithme s’arrête dès que toute l’arborescence a été parcourue et que plus aucune règle ne correspond à une sous-arborescence. En tant que mesure d’optimisation, l’algorithme effectue le suivi d’un ensemble de noeuds qui sont définitifs et ne doivent donc pas être revus pour les correspondances lors des traversées suivantes. Il appartient aux règles de réécriture de déterminer quels sont les nœuds définitifs dans l’arborescence réécrite et lesquels devront faire l’objet d’une nouvelle visite lors des prochains passages de l’algorithme.
+L’algorithme de réécriture accepte comme paramètre l’arborescence à réécrire et un ensemble de règles de réécriture. Il·effectue·un·parcours préfixe de l’arborescence et, pour chaque nœud, il vérifie si une règle s’applique à la sous-arborescence dont la racine se situe au niveau de ce nœud. La première règle qui correspond est appliquée à cette sous-arborescence afin de la réécrire. La traversée redémarre ensuite depuis la racine. L’algorithme s’arrête dès que toute l’arborescence a été parcourue et que plus aucune règle ne correspond à une sous-arborescence. En tant que mesure d’optimisation, l’algorithme conserve le suivi d’un ensemble de noeuds qui sont finaux et n’ont donc pas besoin d’être revus pour les correspondances lors des traversées suivantes. Il appartient aux règles de réécriture de déterminer quels sont les nœuds définitifs dans l’arborescence réécrite et lesquels devront faire l’objet d’une nouvelle visite lors des prochains passages de l’algorithme.
 
-The entry point for the conversion is the `DialogConversionServlet`, which is registered on POST requests to `/libs/cq/dialogconversion/content/convert.json`. Il accepte un paramètre de requête de chemin, qui est un tableau contenant les chemins d’accès aux boîtes de dialogue à convertir. Pour chaque boîte de dialogue, le servlet réécrit ensuite l’arborescence correspondante en appliquant toutes les règles de réécriture des boîtes de dialogue définies.
+The entry point for the conversion is the `DialogConversionServlet`, which is registered on POST requests to `/libs/cq/dialogconversion/content/convert.json`. Il accepte un paramètre de requête de chemin, qui est un tableau contenant les chemins d&#39;accès aux boîtes de dialogue qui doivent être converties. Pour chaque boîte de dialogue, le servlet réécrit ensuite l’arborescence correspondante en appliquant toutes les règles de réécriture des boîtes de dialogue définies.
 
 ### Types de règles de réécriture {#rewrite-rule-types}
 
@@ -155,7 +159,7 @@ rule
 
 Cet exemple définit une règle contenant deux **modèles** (arborescences dont les racines sont `foo` et `foo1`) et un **remplacement** (arborescence dont la racine est `bar`). Les arborescences modèles et de remplacement sont des arborescences arbitraires contenant des nœuds et des propriétés. La règle correspond à une sous-arborescence si l’un des modèles définis correspond. Pour qu’un modèle corresponde, l’arborescence en question doit contenir les mêmes nœuds (correspondance de noms). De plus, toutes les propriétés définies dans le modèle doivent correspondre à celles de l’arborescence.
 
-Dans le cas d’une correspondance, la sous-arborescence correspondante (appelée arbre d’origine) sera remplacée par le remplacement. L’arborescence de remplacement peut définir des propriétés mappées qui hériteront de la valeur d’une propriété de l’arborescence d’origine. Elles doivent être du type `String` et présenter le format suivant :
+Dans le cas d&#39;une correspondance, la sous-arborescence correspondante (appelée arbre d&#39;origine) sera remplacée par le remplacement. L’arborescence de remplacement peut définir des propriétés mappées qui hériteront de la valeur d’une propriété de l’arborescence d’origine. Elles doivent être du type `String` et présenter le format suivant :
 
 `${<path>}`
 
@@ -165,7 +169,7 @@ Si la propriété référencée n’existe pas dans l’arborescence d’origine
 
 Properties that contain &#39; `:`&#39; characters can be single quoted to avoid conflict with providing a default value. Boolean properties are negated if the expression is prefixed with &#39; `!`&#39;. Les propriétés mappées peuvent être à plusieurs valeurs, auquel cas la valeur de la première propriété qui existe dans l’arborescence correspondante leur sera affectée.
 
-Par exemple, la valeur de la propriété `one` `./two/three` de l’arborescence d’origine correspondante est affectée à la propriété suivante.
+Par exemple, la propriété suivante `one` se verra attribuer la valeur de la propriété `./two/three` de l’arborescence d’origine correspondante.
 
 ```xml
 ...
@@ -185,17 +189,17 @@ Les règles prennent également en charge les propriétés facultatives suivante
 
 * `cq:rewriteRanking` (integer)
 
-   Définissez cette propriété sur le noeud de règle pour affecter l’ordre d’application des règles. Cela peut s’avérer utile pour faire en sorte que les règles génériques n’écrasent pas des règles qui gèrent des structures plus spécifiques. Les règles de classement inférieur sont prioritaires sur celles de classement plus élevé. All rules by default receive `Integer.MAX_VALUE` as their ranking.
+   Définissez cette propriété sur le noeud de la règle pour modifier l’ordre d’application des règles. Cela peut s’avérer utile pour faire en sorte que les règles génériques n’écrasent pas des règles qui gèrent des structures plus spécifiques. Les règles de classement inférieur sont prioritaires sur celles de classement plus élevé. All rules by default receive `Integer.MAX_VALUE` as their ranking.
 
 L’arborescence de remplacement prend également en charge les propriétés spéciales suivantes (commençant par `cq:rewrite`) :
 
-* `cq:rewriteMapChildren` (chaîne)
+* `cq:rewriteMapChildren` (string)
 
    The node containing this property will receive a copy of the children of the node in the original tree referenced by the property value (e.g. `cq:rewriteMapChildren=./items`).
 
 * `cq:rewriteFinal` (booléen)
 
-   Il s’agit d’une mesure d’optimisation qui indique à l’algorithme que le noeud contenant cette propriété est final et qu’il n’est pas nécessaire de le vérifier à nouveau pour rechercher des règles de réécriture correspondantes. Lorsqu’il est placé sur le noeud de remplacement lui-même, l’arborescence de remplacement est considérée comme définitive.
+   Il s’agit d’une mesure d’optimisation qui indique à l’algorithme que le noeud contenant cette propriété est final et qu’il n’est pas nécessaire de le vérifier à nouveau pour vérifier si des règles de réécriture correspondantes sont disponibles. Lorsqu&#39;elle est placée sur le noeud de remplacement lui-même, l&#39;arborescence de remplacement complète est considérée comme définitive.
 * `cq:rewriteCommonAttrs` (booléen)
 
    Set this property on the replacement node ( `rule`/ `replacement`) to map relevant properties of the original root node to Granite common attribute equivalents in the copy root. It will handle data attributes by copying/creating the `granite:data` subnode on the target and writing `data-*` properties there.
@@ -207,7 +211,7 @@ In addition, a `cq:rewriteProperties` node can be added to a replacement node to
 
 * `pattern`: Regex à comparer, par ex. `"(?:coral-Icon-)(.+)"`
 
-* `replacement`: Fourni à la `replaceAll` fonction de correspondance, p. ex. `"$1"`
+* `replacement`: Fourni à la fonction `replaceAll` de correspondance, p. ex. `"$1"`
 
 Voici un exemple de réécriture des propriétés d’icône Coral 2 sur les propriétés Coral 3 équivalentes :
 
@@ -310,12 +314,12 @@ The `cq-dialog-conversion-content` package contains several predefined rewrite r
   <tr>
    <td><strong>Règle</strong></td>
    <td><strong>Composant hérité</strong></td>
-   <td><strong>Interface utilisateur granitique / Remplacement du corail 3</strong></td>
+   <td><strong>Interface utilisateur Granit / Remplacement de Coral 3</strong></td>
   </tr>
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.CqDialogRewriteRule</code></td>
    <td>Noeud de type <code>cq:Dialog</code>, gère différentes sous-structures</td>
-   <td><p>Une <code>granite/ui/components/foundation/container</code> utilisation d’une <code>fixedcolumns</code> ou d’une <code>tabs</code> mise en page</p> <p>Les composants réels de la boîte de dialogue sont copiés et réécrits dans les passages suivants de l’algorithme.</p> </td>
+   <td><p>Un <code>granite/ui/components/foundation/container</code> à l’aide d’une <code>fixedcolumns</code> ou <code>tabs</code> d’une mise en page</p> <p>Les composants réels de la boîte de dialogue sont copiés et réécrits dans les passes suivantes de l’algorithme.</p> </td>
   </tr>
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.IncludeRule</code></td>
@@ -399,6 +403,6 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-touchui-dialogconversion-samples sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples)
+* [Ouvrez le projet aem-touchui-dialogconversion-samples sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples/archive/master.zip).
 
