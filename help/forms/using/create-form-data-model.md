@@ -174,7 +174,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * **Objet de modèle de sortie** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma de détails du client
+         schéma d&#39;informations personnalisées
 
       * **Revenir au tableau** : désactivez l’option **Revenir au tableau**.
       * **Arguments** : sélectionnez l’argument nommé **ID**.
@@ -194,7 +194,7 @@ Procédez comme suit pour configurer le modèle de données de formulaire :
 
       * **Objet de modèle d’entrée** : sélectionnez le schéma contenant les données du client. Par exemple :
 
-         schéma de détails du client
+         schéma d&#39;informations personnalisées
 
       * **Type de sortie** : sélectionnez **VALEUR BOOLEENNE**.
 
