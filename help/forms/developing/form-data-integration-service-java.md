@@ -26,11 +26,11 @@ Les Débuts rapides suivants sont disponibles pour le service d’intégration d
 
 [Début rapide (mode SOAP) : Exportation des données de formulaire à l’aide de l’API Java](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec AEM forms dépendent du serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec AEM formulaires reposent sur le serveur Forms déployé sur JBoss Application Server et le système d’exploitation Microsoft Windows. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : Importation de données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
