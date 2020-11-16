@@ -27,7 +27,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <th>Property </th>
+   <th>Propriété </th>
    <th>Description<br /> </th>
    <th>Exception</th>
   </tr>
@@ -90,7 +90,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
    <th>Exception</th>
   </tr>
@@ -172,7 +172,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <th><strong><span>Propriétés</span></strong></th>
+   <th><strong><span>Propriété</span></strong></th>
    <th><strong><span>Description<br /> </span></strong></th>
    <th><strong><span>Exception</span></strong></th>
   </tr>
@@ -357,7 +357,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 ## InstanceManager {#instancemanager}
 
-| Propriétés | Description |
+| Propriété | Description |
 |---|---|
 | `name` | Identificateur utilisé pour identifier cet élément dans les expressions de script. |
 | `occur` | Décrit les contraintes liées au nombre d’instances autorisées pour son conteneur englobant. |
@@ -372,7 +372,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 ## list {#list}
 
-| Propriétés | Description |
+| Propriété | Description |
 |---|---|
 | `length` | Le nombre d’éléments dans la liste. |
 | `item` | Index à base zéro dans la collection. |
@@ -382,7 +382,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 ## node {#node}
 
-| Propriétés | Description | Exception |
+| Propriété | Description | Exception |
 |---|---|---|
 | createNode | Crée un nouveau nœud à partir d’un nom de classe correct. | Aucune |
 | `isContainer` | Indique si l’objet est un objet conteneur. | Aucune |
@@ -396,7 +396,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 ## model {#model}
 
-| Propriétés | Description | Exception |
+| Propriété | Description | Exception |
 |---|---|---|
 | N/A | N/A | N/A |
 
@@ -405,7 +405,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
    <th>Exception</th>
   </tr>
@@ -489,7 +489,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 ### submit {#submit}
 
-| Propriétés | Description |
+| Propriété | Description |
 |---|---|
 | target | Adresse URL à laquelle les données sont envoyées. L’omission de cet attribut implique que l’application de traitement XFA obtienne l’URI à l’aide d’une technique spécifique au produit, telle que l’accès aux informations spécifiques au produit dans l’objet config. |
 
@@ -498,7 +498,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
    <th>Exception</th>
   </tr>
@@ -546,7 +546,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 ## subformset {#subformset}
 
-| Propriétés | Description | Exception |
+| Propriété | Description | Exception |
 |---|---|---|
 | instanceManager | L’objet instanceManager gère la création, la suppression et le déplacement de l’instance des objets de modèle de formulaire. | Aucune |
 
@@ -567,7 +567,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés </strong></td>
+   <td><strong>Propriété </strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -588,7 +588,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -609,7 +609,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -630,7 +630,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -647,7 +647,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -668,7 +668,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -689,7 +689,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -710,7 +710,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td>Propriétés</td>
+   <td>Propriété</td>
    <td>Description</td>
    <td>Exception</td>
   </tr>
@@ -747,7 +747,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -768,7 +768,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -785,7 +785,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés<br /> </strong></td>
+   <td><strong>Propriété<br /> </strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -808,7 +808,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -842,7 +842,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -859,7 +859,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -876,7 +876,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -893,7 +893,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
@@ -1005,7 +1005,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés<strong></strong></strong></td>
+   <td><strong>Propriété<strong></strong></strong></td>
    <td><strong>Description<strong></strong></strong></td>
    <td><strong>Exception<strong></strong></strong></td>
   </tr>
@@ -1022,7 +1022,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés<strong></strong></strong></td>
+   <td><strong>Propriété<strong></strong></strong></td>
    <td><strong>Description<strong></strong></strong></td>
    <td><strong>Exception<strong></strong></strong></td>
   </tr>
@@ -1039,7 +1039,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
    <td><strong>Exception</strong></td>
   </tr>
