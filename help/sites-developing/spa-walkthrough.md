@@ -1,8 +1,8 @@
 ---
-title: Présentation et présentation des applications monopages
-seo-title: Présentation et présentation des applications monopages
-description: Cet article présente les concepts d’une application d’une seule page et décrit comment elle se rapporte à l’AEM sous-jacent de l’éditeur d’une seule page.
-seo-description: Cet article présente les concepts d’une application d’une seule page et décrit comment elle se rapporte à l’AEM sous-jacent de l’éditeur d’une seule page.
+title: SPA Introduction et présentation
+seo-title: SPA Introduction et présentation
+description: Cet article présente les concepts d’un SPA et décrit comment il se rapporte à l’éditeur de l’ sous-jacent en utilisant une application SPA de base pour la création.
+seo-description: Cet article présente les concepts d’un SPA et décrit comment il se rapporte à l’éditeur de l’ sous-jacent en utilisant une application SPA de base pour la création.
 uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,23 +19,23 @@ ht-degree: 3%
 ---
 
 
-# Présentation et présentation des applications monopages{#spa-introduction-and-walkthrough}
+# SPA Introduction et présentation{#spa-introduction-and-walkthrough}
 
 Les applications d’une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
-L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une application d’application d’une seule page pour la création et montre comment elle se rapporte à l’AEM SPA Editor sous-jacent.
+L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une application SPA de base pour la création et montre comment elle se rapporte à l’AEM SPA Editor sous-jacent.
 
 >[!NOTE]
 >
->L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
 
 ## Présentation {#introduction}
 
 ### Objectif de l&#39;article {#article-objective}
 
-Cet article présente les concepts de base des applications monopages avant de guider le lecteur dans une présentation pas à pas de l’éditeur d’applications monopages en utilisant une application d’application monopages simple pour démontrer l’édition de base du contenu. Il détaille ensuite la construction de la page et comment l&#39;application SPA se rattache à l&#39;éditeur SPA AEM et interagit avec lui.
+Cet article présente les concepts de base de SPA avant de guider le lecteur dans une présentation de l&#39;éditeur SPA en utilisant une simple application de la SPA pour démontrer les fonctions de base de la modification du contenu. Il détaille ensuite la construction de la page et comment l&#39;application SPA se rapporte et interagit avec l&#39;AEM rédacteur en chef.
 
-L’objectif de cette introduction et de cette présentation est de montrer à un développeur AEM pourquoi les applications monopages sont pertinentes, comment elles fonctionnent généralement, comment l’éditeur d’applications monopages AEM gère les applications monopages et comment elles diffèrent d’une application d’application d’un site Web standard.
+L’objectif de cette introduction et de cette présentation est de montrer à un développeur AEM pourquoi SPA est pertinent, comment ils fonctionnent généralement, comment un SPA est géré par l’éditeur d’ et comment il est différent d’une application d’ standard.
 
 La procédure pas à pas est basée sur la fonctionnalité AEM standard et l&#39;exemple d&#39;application de Journal We.Retail. Les exigences suivantes doivent être respectées :
 
@@ -46,19 +46,19 @@ La procédure pas à pas est basée sur la fonctionnalité AEM standard et l&#39
 >
 >Ce document utilise l’application [de Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail à des fins de démonstration uniquement. Il ne doit être utilisé pour aucun travail de projet.
 >
->Tout projet AEM doit tirer parti de l’archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et qui utilise le SDK d’application d’une seule page.
+>Tout projet AEM doit tirer parti de l&#39;archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets SPA à l&#39;aide de React ou Angular et qui utilise le SDK .
 
-### Qu&#39;est-ce qu&#39;un APM ? {#what-is-a-spa}
+### Qu&#39;est-ce qu&#39;un SPA ? {#what-is-a-spa}
 
-Une application d’une seule page diffère d’une page conventionnelle en ce qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger des données et mettre à jour dynamiquement la page. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
+Une application d’une seule page (SPA) diffère d’une page conventionnelle en ce qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre à jour dynamiquement la page. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
 
 Cela réduit la nécessité d’actualiser les pages et offre à l’utilisateur une expérience transparente, rapide et qui ressemble davantage à une expérience d’application native.
 
-L’éditeur d’applications d’une seule page permet aux développeurs de créer des applications d’une seule page qui peuvent être intégrées à un site AEM, ce qui permet aux auteurs de contenu de modifier le contenu de l’application d’une seule page aussi facilement que tout autre contenu de l’AEM.
+L’AEM SPA Editor permet aux développeurs frontaux de créer des SPA qui peuvent être intégrées dans un site , ce qui permet aux auteurs de contenu de modifier le contenu  aussi facilement que tout autre contenu .
 
-### Pourquoi une ZPS ? {#why-a-spa}
+### Pourquoi un SPA ? {#why-a-spa}
 
-En étant plus rapide, fluide et plus semblable à une application native, une application d’une seule page devient une expérience très attrayante non seulement pour le visiteur de la page Web, mais également pour les marketeurs et les développeurs en raison de la nature du fonctionnement des applications d’une seule page.
+En étant plus rapide, fluide et plus semblable à une application native, une SPA devient une expérience très attrayante non seulement pour le visiteur de la page Web, mais aussi pour les marketeurs et les développeurs en raison de la nature du SPA fonctionne.
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
@@ -77,27 +77,27 @@ En étant plus rapide, fluide et plus semblable à une application native, une a
 * Les développeurs veulent une séparation nette des préoccupations entre le contenu et la présentation.
 * Une séparation nette rend le système plus extensible et permet un développement frontal indépendant.
 
-### Comment fonctionne une application d’une seule page ? {#how-does-a-spa-work}
+### Comment fonctionne un SPA ? {#how-does-a-spa-work}
 
-L’idée Principale derrière une application d’une seule page est que les appels et la dépendance sur un serveur sont réduits afin de minimiser les retards causés par les appels au serveur, de sorte que l’application d’une seule page puisse approcher la réactivité d’une application native.
+L&#39;idée Principale derrière une SPA est que les appels et la dépendance sur un serveur sont réduits afin de minimiser les retards causés par les appels serveur de sorte que le SPA s&#39;approche de la réactivité d&#39;une application native.
 
 Dans une page Web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque le visiteur passe à une autre page, le serveur est appelé pour les ressources supplémentaires. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de retard car la page doit rattraper les demandes du visiteur.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
-Pour une expérience plus fluide, qui approche ce qu’un visiteur attend des applications mobiles natives, une application d’une seule page charge toutes les données nécessaires pour le visiteur au premier chargement. Bien que cette opération puisse prendre un peu plus de temps au début, elle élimine ensuite la nécessité d’appels de serveur supplémentaires.
+Pour une expérience plus fluide, qui approche ce qu’un visiteur attend des applications mobiles natives, un SPA charge toutes les données nécessaires pour le visiteur au premier chargement. Bien que cette opération puisse prendre un peu plus de temps au début, elle élimine ensuite la nécessité d’appels de serveur supplémentaires.
 
 En effectuant le rendu côté client, l’élément de page réagit plus rapidement et les interactions avec la page par le visiteur sont immédiates. Toute donnée supplémentaire qui peut être nécessaire est appelée de manière asynchrone afin d’optimiser la vitesse de la page.
 
 >[!NOTE]
 >
->Pour obtenir des détails techniques sur le fonctionnement des applications monopages en AEM, consultez l’article [Prise en main des applications monopages en AEM](/help/sites-developing/spa-getting-started-react.md).
+>Pour plus d&#39;informations techniques sur le fonctionnement de SPA en AEM, reportez-vous à l&#39;article [Prise en main de l&#39;SPA en](/help/sites-developing/spa-getting-started-react.md).
 >
->Pour un aperçu plus approfondi de la conception, de l’architecture et du processus technique de l’éditeur d’applications monopages, consultez l’article Présentation [de l’éditeur d’](/help/sites-developing/spa-overview.md)applications monopages.
+>Pour un aperçu plus approfondi de la conception, de l’architecture et du processus technique de SPA Editor, consultez l’article [SPA Editor Overview](/help/sites-developing/spa-overview.md)(Présentationde l’éditeur).
 
-## Modification du contenu avec l’application d’une seule page {#content-editing-experience-with-spa}
+## Modification du contenu avec SPA {#content-editing-experience-with-spa}
 
-Lorsqu’une application d’une seule page est créée pour tirer parti de l’éditeur d’une seule page, l’auteur du contenu ne remarque aucune différence lors de la modification et de la création de contenu. Une fonctionnalité AEM commune est disponible et aucune modification du flux de travail de l’auteur n’est requise.
+Lorsqu’un SPA est créé pour tirer parti de l’AEM Éditeur, l’auteur du contenu ne remarque aucune différence lors de la modification et de la création de contenu. Une fonctionnalité AEM commune est disponible et aucune modification du flux de travail de l’auteur n’est requise.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Lorsqu’une application d’une seule page est créée pour tirer parti de l’
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
    >[!NOTE]
-   >Pour plus d’informations sur l’éditeur de texte et les [SPA en place, consultez la section Présentation](spa-overview.md#requirements-limitations) de l’éditeur d’applications monopages (SPA).
+   >Pour plus d’informations sur l’éditeur de texte et l’SPA en place, consultez la Présentation [de](spa-overview.md#requirements-limitations) SPA Editor.
 
 1. Utilisez l’explorateur de ressources pour faire glisser une nouvelle image dans un composant d’image.
 
@@ -135,17 +135,17 @@ Lorsqu’une application d’une seule page est créée pour tirer parti de l’
 
    ![screen_shot_2018-06-07at143732](assets/screen_shot_2018-06-07at143732.png)
 
-D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la mise en page, sont pris en charge, comme dans toute application autre que SPA.
+D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la mise en page, sont pris en charge comme dans toute application non SPA.
 
 >[!NOTE]
 >
->L’éditeur d’applications monopages ne modifie pas le DOM de l’application. L&#39;APS lui-même est responsable du DOM.
+>L’éditeur SPA ne modifie pas le DOM de l’application. Le SPA lui-même est responsable du DOM.
 >
->Pour voir comment cela fonctionne, passez à la section suivante de cet article Applications [SPA et à l’éditeur](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)d’applications SPA AEM.
+>Pour voir comment cela fonctionne, passez à la section suivante de cet article [SPA Applications et l&#39;AEM éditeur](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)SPA.
 
-## Applications d’application d’une seule page et éditeur d’applications d’une seule page AEM {#spa-apps-and-the-aem-spa-editor}
+## SPA Apps et l&#39;AEM-Éditeur {#spa-apps-and-the-aem-spa-editor}
 
-L’expérience de comportement d’une application d’une seule page d’une seule page d’une seule page permet de mieux comprendre comment une application SAP fonctionne avec l’éditeur d’une seule page d’AEM.
+L’expérience d’un SPA se comporte pour l’utilisateur final, puis l’inspection de la page SPA permet de mieux comprendre le fonctionnement d’une application SAP avec l’Éditeur de SPA dans l’.
 
 ### Utilisation d’une application SPA {#using-an-spa-application}
 
@@ -167,13 +167,13 @@ L’expérience de comportement d’une application d’une seule page d’une s
 
    Il y a très peu de trafic lorsque vous passez d’une page à l’autre dans l’application. La page n’est pas rechargée et seules les nouvelles images sont demandées.
 
-   L’application d’une seule page gère le contenu et le routage entièrement du côté client.
+   Le SPA gère le contenu et le routage entièrement du côté client.
 
 Ainsi, si la page n’est pas rechargée lors de la navigation dans les pages enfants, comment est-elle chargée ?
 
-La section suivante, [Chargement d’une application](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application)d’application d’une seule page, approfondit les mécanismes de chargement de l’application d’une seule page et explique comment le contenu peut être chargé de façon synchrone et asynchrone.
+La section suivante, [Chargement d’une application](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application)SPA, approfondit la procédure de chargement du SPA et explique comment le contenu peut être chargé de façon synchrone et asynchrone.
 
-### Chargement d’une application d’application d’une seule page {#loading-an-spa-application}
+### Chargement d’une application SPA {#loading-an-spa-application}
 
 1. Si ce n’est pas déjà fait, chargez l’application de Journal We.Retail sur le serveur de publication ou à l’aide de la **Vue d’options Publié** dans le menu Informations **sur la** page de l’éditeur de page.
 
@@ -228,9 +228,9 @@ La section suivante, [Chargement d’une application](/help/sites-developing/spa
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   L’éditeur d’applications monopages AEM utilise [AEM Content Services](/help/assets/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous forme de modèle JSON.
+   L’AEM SPA Editor utilise [AEM Content Services](/help/assets/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous la forme d’un modèle JSON.
 
-   En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à l’application d’une seule page. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
+   En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à la SPA. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
 
    Chaque composant choisit ce qu’il expose et comment il est rendu (côté serveur avec HTL ou côté client avec React). Bien sûr, cet article se concentre sur le rendu côté client avec React.
 
@@ -248,13 +248,13 @@ La section suivante, [Chargement d’une application](/help/sites-developing/spa
 
    ![screen_shot_2018-06-07at155738](assets/screen_shot_2018-06-07at155738.png)
 
-### Interaction avec l’éditeur d’applications monopages {#interaction-with-the-spa-editor}
+### Interaction avec l’éditeur de SPA {#interaction-with-the-spa-editor}
 
 En utilisant l&#39;exemple d&#39;application de Journal We.Retail, vous savez comment se comporte l&#39;application et comment elle est chargée lorsqu&#39;elle est publiée, en exploitant les services de contenu pour la diffusion de contenu JSON ainsi que le chargement asynchrone des ressources.
 
-De plus, pour l’auteur de contenu, la création de contenu à l’aide d’un éditeur d’application d’une seule page est transparente dans AEM.
+De plus, pour l’auteur de contenu, la création de contenu à l’aide d’un éditeur de SPA est transparente dans AEM.
 
-Dans la section suivante, nous étudierons le contrat qui permet à l&#39;éditeur d&#39;application d&#39;une seule page d&#39;établir des relations entre les composants de l&#39;application d&#39;une seule page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une page d&#39;une autre.
+Dans la section suivante, nous étudierons le contrat qui permet à SPA Editor de relier les composants du SPA aux composants de l&#39;AEM et de réaliser cette expérience de modification transparente.
 
 1. Chargez l&#39;application de Journal We.Retail dans l&#39;éditeur et passez en mode **Prévisualisation** .
 
@@ -272,7 +272,7 @@ Dans la section suivante, nous étudierons le contrat qui permet à l&#39;édite
 
    Ces chemins permettent de récupérer et d’associer l’objet de configuration de contexte de modification de chaque composant.
 
-   Il s’agit du seul attribut de balisage requis par l’éditeur pour reconnaître qu’il s’agit d’un composant modifiable dans l’application d’une seule page. En fonction de cet attribut, l’éditeur d’applications monopages détermine la configuration modifiable associée au composant, de sorte que le cadre, la barre d’outils, etc. appropriés soient définis. est chargé.
+   Il s’agit du seul attribut de balisage nécessaire à l’éditeur pour reconnaître ce composant comme un composant modifiable dans le SPA. En fonction de cet attribut, l&#39;éditeur SPA déterminera la configuration modifiable associée au composant, de sorte que le cadre, la barre d&#39;outils, etc. appropriés soient définis. est chargé.
 
    Certains noms de classe spécifiques sont également ajoutés pour marquer les espaces réservés et pour la fonctionnalité de glisser-déposer des ressources.
 
@@ -281,12 +281,12 @@ Dans la section suivante, nous étudierons le contrat qui permet à l&#39;édite
    >Il s’agit d’un changement de comportement des pages générées côté serveur dans AEM, où un `cq` élément est inséré pour chaque composant modifiable.
    >
    >
-   >Cette approche dans l’application d’une seule page permet d’éliminer la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui simplifie le balisage pour le développeur frontal.
+   >Cette approche dans SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous comprenez l’expérience de modification de l’application d’une seule page en AEM et comment une application d’une seule page se rapporte à l’éditeur d’une seule page, plongez-vous dans la compréhension de la création d’une application d’une seule page.
+Maintenant que vous comprenez l&#39;expérience de SPA montage en AEM et comment un SPA se rapporte à l&#39;éditeur de , plongez-vous plus profondément dans la compréhension de la façon dont un  est construit.
 
-* [Prise en main des applications monopages dans AEM](/help/sites-developing/spa-getting-started-react.md) montre comment une application monopage de base est conçue pour fonctionner avec l’éditeur d’applications monopages en AEM
-* [Présentation](/help/sites-developing/spa-overview.md) de l’éditeur d’applications d’une seule page approfondit le modèle de communication entre l’AEM et l’application d’une seule page.
-* [Le développement d’une application d’une seule page pour AEM](/help/sites-developing/spa-architecture.md) décrit comment convaincre les développeurs de l’interface de développer une application d’une seule page pour les AEM ainsi que comment les applications d’une seule page interagissent avec l’architecture de l’AEM.
+* [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) montre comment un SPA de base est créé pour fonctionner avec l’éditeur de  dans l’
+* [SPA Editor Overview](/help/sites-developing/spa-overview.md) approfondit le modèle de communication entre AEM et la SPA.
+* [Le blog Developing SPA for AEM](/help/sites-developing/spa-architecture.md) décrit comment impliquer les développeurs frontaux dans le développement d&#39;un SPA pour les  ainsi que la manière dont les  interagissent avec l&#39;architecture des .
