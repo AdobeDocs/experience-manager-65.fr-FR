@@ -78,6 +78,7 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 >  * &quot;Sazanami Mincho&quot;
 >  * &quot;Adobe Heiti Std&quot;
 >  * &quot;Adobe Song Std&quot;
+
    >
    >
 * Pour télécharger un fichier à partir du système de fichiers local, utilisez l’option Télécharger le fichier de la page HTML en PDF.
@@ -88,6 +89,7 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 
    * Dans le champ Télécharger, saisissez le chemin d’accès et le nom du fichier HTML ou ZIP, ou cliquez sur Parcourir pour le rechercher et le sélectionner.
    * Dans le champ Spécifier l’URL, saisissez l’URL de la page ou du site Web à convertir.
+
    >[!NOTE]
    >
    >le fichier que vous convertissez doit porter l’extension .html, .htm ou .zip.
