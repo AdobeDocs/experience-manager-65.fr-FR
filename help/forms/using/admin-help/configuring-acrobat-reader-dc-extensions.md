@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Si les utilisateurs de votre installation AEM Forms utilisent la fonctionnalité de capture des données de Content Services (obsolète), nous vous recommandons de créer un rôle avec un accès en lecture seule pour ces utilisateurs.
 
-***Remarque ** : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour en savoir plus sur la configuration de Content Services (obsolète), voir[Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).*
+***Remarque ** : Adobe® LiveCycle® Content Services ES (obsolète) est un système de gestion de contenu installé avec LiveCycle. Il permet aux utilisateurs de concevoir, gérer, surveiller et optimiser des processus pour des intervenants humains. La prise en charge de Content Services (obsolète) s’est terminée le 31/12/2014. Consultez le[ Document sur le cycle de vie des produits Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Pour en savoir plus sur la configuration de Content Services (obsolète), voir [Administration de Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf).*
 
 La capture des données nécessite d’affecter un rôle utilisateur pour l’accès à SampleReaderExtensionsCredential. Vous pouvez affecter le rôle Trust Administrator standard mais n’oubliez pas que ce rôle confère à des utilisateurs type, non administrateurs, de puissants privilèges d’administrateur capables de contrôler les paramètres d’approbation PKI et de gérer les informations d’identification PKI. Cela peut compromettre la sécurité de votre installation AEM Forms dans un environnement de production. Il est recommandé que l’administrateur système AEM Forms crée un nouveau rôle qui accorde un accès en lecture seule uniquement à Trust Store et affecte ce nouveau rôle à des utilisateurs non administrateurs utilisant la capture des données.
 
