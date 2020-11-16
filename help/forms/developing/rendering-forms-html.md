@@ -1,6 +1,6 @@
 ---
-title: Rendu des formulaires au format HTML
-seo-title: Rendu des formulaires au format HTML
+title: Rendu de Forms au format HTML
+seo-title: Rendu de Forms au format HTML
 description: 'null'
 seo-description: 'null'
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
@@ -19,9 +19,9 @@ ht-degree: 1%
 ---
 
 
-# Rendu des formulaires au format HTML {#rendering-forms-as-html}
+# Rendu de Forms au format HTML {#rendering-forms-as-html}
 
-Le service Forms effectue le rendu des formulaires au format HTML en réponse à une requête HTTP provenant d’un navigateur Web. Le rendu d’un formulaire au format HTML présente l’avantage de ne pas nécessiter Adobe Reader, Acrobat ou Flash Player pour l’ordinateur sur lequel se trouve le navigateur Web client (pour les guides de formulaire (obsolète)).
+Le service Forms effectue le rendu des formulaires au format HTML en réponse à une requête HTTP provenant d’un navigateur Web. Le rendu d’un formulaire au format HTML présente l’avantage que l’ordinateur sur lequel se trouve le navigateur Web client ne nécessite ni Adobe Reader, ni Acrobat, ni Flash Player (pour les guides de formulaire (obsolète)).
 
 Pour générer un formulaire au format HTML, la conception de formulaire doit être enregistrée dans un fichier XDP. Une conception de formulaire enregistrée au format PDF ne peut pas être générée au format HTML. Lorsque vous développez une conception de formulaire dans Designer qui sera rendue au format HTML, tenez compte des critères suivants :
 
@@ -55,11 +55,11 @@ Lorsque les conceptions de formulaire sont générées sous forme de formulaires
 
 Lorsqu’un formulaire est rendu sous la forme d’un formulaire HTML, les formats de page (requis pour paginer les formulaires rendus au format PDF) n’ont aucune signification. Un formulaire avec une disposition souple pouvant atteindre un nombre infini de pages HTML, il est important d’éviter les pieds de page sur le gabarit. Un pied de page situé sous la zone de contenu d’un gabarit peut remplacer le contenu HTML qui déborde d’une limite de page.
 
-Vous devez explicitement passer d’un panneau à l’autre à l’aide des méthodes `xfa.host.pageUp` et `xfa.host.pageDown` . Vous modifiez les pages en envoyant un formulaire au service Forms et en demandant au service Forms de le rendre à nouveau sur le périphérique client, généralement un navigateur Web.
+Vous devez explicitement passer d’un panneau à l’autre à l’aide des méthodes `xfa.host.pageUp` et `xfa.host.pageDown` . Vous changez de page en envoyant un formulaire au service Forms et en demandant au service Forms de le rendre à nouveau sur le périphérique client, généralement un navigateur Web.
 
 >[!NOTE]
 >
->Le processus d’envoi d’un formulaire au service Forms, puis de réacheminement du formulaire par le service Forms vers le périphérique client est appelé données d’extraction arrondies vers le serveur.
+>Le processus d’envoi d’un formulaire au service Forms, puis de réacheminement du formulaire par le service Forms vers le périphérique client est appelé données de récupération arrondies vers le serveur.
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ Vous devez explicitement passer d’un panneau à l’autre à l’aide des mét
 
 ## Exécution de scripts {#running-scripts}
 
-Un auteur de formulaire indique si un script s’exécute sur le serveur ou sur le client. Le service Forms crée un environnement de traitement de événement distribué pour l’exécution de l’intelligence des formulaires qui peut être distribué entre le client et le serveur à l’aide de l’ `runAt` attribut. Pour plus d’informations sur cet attribut ou la création de scripts dans les conceptions de formulaire, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+Un auteur de formulaire indique si un script s’exécute sur le serveur ou sur le client. Le service Forms crée un environnement de traitement distribué et événement pour l’exécution de l’intelligence des formulaires qui peut être distribué entre le client et le serveur à l’aide de l’ `runAt` attribut. Pour plus d’informations sur cet attribut ou la création de scripts dans les conceptions de formulaire, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Le service Forms peut exécuter des scripts pendant la génération du formulaire. Par conséquent, vous pouvez préremplir un formulaire avec des données en vous connectant à une base de données ou à des services Web qui ne sont peut-être pas disponibles sur le client. Vous pouvez également définir le `Click` événement d’un bouton pour qu’il s’exécute sur le serveur, de sorte que le client effectue un aller-retour des données vers le serveur. Cela permet au client d’exécuter des scripts qui peuvent nécessiter des ressources serveur, telles qu’une base de données d’entreprise, pendant qu’un utilisateur interagit avec un formulaire. Pour les formulaires HTML, les scripts formcalc peuvent être exécutés sur le serveur uniquement. Par conséquent, vous devez marquer ces scripts pour qu’ils s’exécutent sur `server` ou `both`.
 
-Vous pouvez concevoir des formulaires qui se déplacent d’une page à l’autre (panneaux) en appelant `xfa.host.pageUp` et en `xfa.host.pageDown` appliquant les méthodes. Ce script est placé dans le `Click` événement d’un bouton et l’ `runAt` attribut est défini sur `Both`. La raison de votre choix `Both` est que Adobe Reader ou Acrobat (pour les formulaires rendus au format PDF) peut modifier les pages sans passer par le serveur et que les formulaires HTML peuvent modifier les pages en arrondissant les données de tri au serveur. En d’autres termes, un formulaire est envoyé au service Forms et un formulaire est rendu au format HTML avec la nouvelle page affichée.
+Vous pouvez concevoir des formulaires qui se déplacent d’une page à l’autre (panneaux) en appelant `xfa.host.pageUp` et en `xfa.host.pageDown` appliquant les méthodes. Ce script est placé dans le `Click` événement d’un bouton et l’ `runAt` attribut est défini sur `Both`. La raison que vous choisissez `Both` est que Adobe Reader ou Acrobat (pour les formulaires rendus au format PDF) peut modifier les pages sans passer par le serveur et que les formulaires HTML peuvent modifier les pages en arrondissant les données à l’ensemble du serveur. En d’autres termes, un formulaire est envoyé au service Forms et un formulaire est rendu au format HTML avec la nouvelle page affichée.
 
 Il est recommandé de ne pas donner aux variables de script et aux champs de formulaire les mêmes noms que les éléments, par exemple. Certains navigateurs Web, tels qu’Internet Explorer, peuvent ne pas initialiser une variable portant le même nom qu’un champ de formulaire, ce qui entraîne une erreur de script. Il est recommandé de donner différents noms aux champs de formulaire et aux variables de script.
 
@@ -126,13 +126,13 @@ Lors de l’exécution de scripts sur le client, seul le panneau actif affiché 
 
 Vous devez également être prudent lors de l’utilisation d’expressions de modèle d’objet de script (SOM) dans des scripts exécutés sur le client. Seuls les scripts exécutés sur le client prennent en charge un sous-ensemble simplifié d’expressions SOM.
 
-## Horodatage du Événement {#event-timing}
+## Horodatage du événement {#event-timing}
 
 Le sous-ensemble XFA définit les événements XFA qui sont associés à des événements HTML. Il y a une légère différence de comportement dans le timing des événements de calcul et de validation. Dans un navigateur Web, un événement de calcul complet est exécuté lorsque vous quittez un champ. Les événements de calcul ne sont pas automatiquement exécutés lorsque vous modifiez la valeur d’un champ. Vous pouvez forcer un événement de calcul en appelant la `xfa.form.execCalculate` méthode.
 
 Dans un navigateur Web, les événements de validation ne sont exécutés que lorsque vous quittez un champ ou envoyez un formulaire. Vous pouvez forcer un événement de validation à l’aide de la `xfa.form.execValidate` méthode.
 
-Les formulaires affichés dans un navigateur Web (par opposition à Adobe Reader ou Acrobat) sont conformes au test null XFA (erreurs ou avertissements) pour les champs obligatoires.
+Forms affiché dans un navigateur Web (par opposition à Adobe Reader ou Acrobat) est conforme au test null XFA (erreurs ou avertissements) pour les champs obligatoires.
 
 * Si le test null génère une erreur et que vous quittez un champ sans spécifier de valeur, une boîte de message s’affiche et vous êtes repositionné dans le champ après avoir cliqué sur OK.
 * Si un test null génère un avertissement et que vous quittez un champ sans spécifier de valeur, vous êtes invité à cliquer sur OK ou sur Annuler, ce qui vous permet de continuer sans spécifier de valeur ou de revenir au champ pour entrer une valeur.
@@ -194,7 +194,7 @@ For more information about the Forms service, see [Services Reference for AEM Fo
 Pour générer un formulaire HTML, procédez comme suit :
 
 1. Incluez des fichiers de projet.
-1. Créez un objet API du client Forms.
+1. Créez un objet API Client Forms.
 1. Définissez les options d’exécution HTML.
 1. Générer un formulaire HTML.
 1. Ecrivez le flux de données du formulaire dans le navigateur Web client.
@@ -203,7 +203,7 @@ Pour générer un formulaire HTML, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Création d’un objet API du client Forms**
+**Création d’un objet API Client Forms**
 
 Avant de pouvoir importer des données par programmation dans une API FormsClient PDF, vous devez créer un client du service d’intégration des données de formulaire. Lors de la création d’un client de service, vous définissez les paramètres de connexion requis pour appeler un service.
 
@@ -219,7 +219,7 @@ Lorsqu’une barre d’outils HTML s’affiche sur un formulaire HTML, un utilis
 
 Lors du rendu d’un formulaire au format HTML, vous pouvez spécifier une valeur d’agent utilisateur. Une valeur user-agent fournit des informations sur le navigateur et le système. Il s’agit d’une valeur facultative et vous pouvez transmettre une valeur de chaîne vide. Le début rapide Rendu d’un formulaire HTML à l’aide de l’API Java montre comment obtenir une valeur d’agent utilisateur et l’utiliser pour générer un formulaire au format HTML.
 
-Les URL HTTP vers l’emplacement de publication des données du formulaire peuvent être spécifiées en définissant l’URL de cible à l’aide de l’API du client Forms Service ou peuvent être spécifiées dans le bouton Envoyer contenu dans la conception de formulaire XDP. Si l’URL de la cible est spécifiée dans la conception de formulaire, ne définissez pas de valeur à l’aide de l’API du client Forms Service.
+Les URL HTTP vers l’emplacement de publication des données du formulaire peuvent être spécifiées en définissant l’URL de cible à l’aide de l’API Client du service Forms ou peuvent être spécifiées dans le bouton Envoyer contenu dans la conception de formulaire XDP. Si l’URL de la cible est spécifiée dans la conception de formulaire, ne définissez pas de valeur à l’aide de l’API du client de service Forms.
 
 >[!NOTE]
 Le rendu d’un formulaire HTML avec une barre d’outils est facultatif.
@@ -235,7 +235,7 @@ Le rendu d’un formulaire HTML requiert également des valeurs, telles que des 
 
 **Ecrire le flux de données du formulaire dans le navigateur Web client**
 
-Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur Web client. Lorsqu’il est écrit dans le navigateur Web client, le formulaire HTML est visible pour l’utilisateur.
+Lorsque le service Forms effectue le rendu d’un formulaire HTML, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur Web client. Lorsqu’il est écrit dans le navigateur Web client, le formulaire HTML est visible pour l’utilisateur.
 
 **Voir également**
 
@@ -247,13 +247,13 @@ Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de donn
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Débuts rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Débuts rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendu de formulaires HTML avec des barres d’outils personnalisées](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
+[Rendu de HTML Forms avec des barres d’outils personnalisées](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
-[Création d’Applications web renvoyant des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Création d’Applications web renvoyant Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Générer un formulaire au format HTML à l’aide de l’API Java {#render-a-form-as-html-using-the-java-api}
 
@@ -263,7 +263,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (Java) :
 
    Incluez des fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
-1. Création d’un objet API du client Forms
+1. Création d’un objet API Client Forms
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
@@ -276,7 +276,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (Java) :
    * Pour effectuer le rendu du formulaire HTML au sein de balises HTML complètes, appelez la `HTMLRenderSpec` méthode de l’objet et transmettez `setOutputType` `OutputType.FullHTMLTags`. (Ce paramètre est facultatif.)
 
    >[!NOTE]
-   Les formulaires ne sont pas rendus correctement dans le code HTML lorsque l’ `StandAlone` option est `true` sélectionnée et que le `ApplicationWebRoot` serveur fait référence à un serveur autre que le serveur d’applications J2EE hébergeant des AEM Forms (la `ApplicationWebRoot` valeur est spécifiée à l’aide de l’ `URLSpec` objet transmis à la `FormsServiceClient` méthode de l’ `(Deprecated) renderHTMLForm` objet). Lorsqu’il `ApplicationWebRoot` s’agit d’un autre serveur provenant d’un AEM Forms hôte, la valeur de l’URI racine Web dans Administration Console doit être définie en tant que valeur de l’URI de l’application Web du formulaire. Pour ce faire, connectez-vous à Administration Console, cliquez sur Services > Forms et définissez l’URI racine Web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   Le rendu de Forms ne s’effectue pas correctement dans le code HTML lorsque l’ `StandAlone` option est `true` sélectionnée et que le serveur `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la `ApplicationWebRoot` valeur est spécifiée à l’aide de l’ `URLSpec` objet transmis à la `FormsServiceClient` méthode de l’ `(Deprecated) renderHTMLForm` objet). Lorsqu’il `ApplicationWebRoot` s’agit d’un autre serveur de l’AEM Forms hôte, la valeur de l’URI racine Web dans Administration Console doit être définie en tant que valeur de l’URI de l’application Web du formulaire. Pour ce faire, connectez-vous à Administration Console, cliquez sur Services > Forms et définissez l’URI racine Web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Génération d’un formulaire HTML
 
@@ -304,7 +304,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (Java) :
 
 **Voir également**
 
-[Rendu des formulaires au format HTML](#rendering-forms-as-html)
+[Rendu de Forms au format HTML](#rendering-forms-as-html)
 
 [Début rapide (mode SOAP) : Rendu d’un formulaire HTML à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
@@ -321,7 +321,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (service Web) :
    * Créez des classes de proxy Java qui utilisent le WSDL du service Forms.
    * Incluez les classes proxy Java dans votre chemin de classe.
 
-1. Création d’un objet API du client Forms
+1. Création d’un objet API Client Forms
 
    Créez un `FormsService` objet et définissez des valeurs d’authentification.
 
@@ -333,7 +333,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (service Web) :
    * Pour effectuer le rendu du formulaire HTML au sein de balises HTML complètes, appelez la `HTMLRenderSpec` méthode de l’objet et transmettez `setOutputType` `OutputType.FullHTMLTags`.
 
    >[!NOTE]
-   Les formulaires ne sont pas rendus correctement dans le code HTML lorsque l’ `StandAlone` option est `true` sélectionnée et que le `ApplicationWebRoot` serveur fait référence à un serveur autre que le serveur d’applications J2EE hébergeant des AEM Forms (la `ApplicationWebRoot` valeur est spécifiée à l’aide de l’ `URLSpec` objet transmis à la `FormsServiceClient` méthode de l’ `(Deprecated) renderHTMLForm` objet). Lorsqu’il `ApplicationWebRoot` s’agit d’un autre serveur provenant d’un AEM Forms hôte, la valeur de l’URI racine Web dans Administration Console doit être définie en tant que valeur de l’URI de l’application Web du formulaire. Pour ce faire, connectez-vous à Administration Console, cliquez sur Services > Forms et définissez l’URI racine Web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   Le rendu de Forms ne s’effectue pas correctement dans le code HTML lorsque l’ `StandAlone` option est `true` sélectionnée et que le serveur `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la `ApplicationWebRoot` valeur est spécifiée à l’aide de l’ `URLSpec` objet transmis à la `FormsServiceClient` méthode de l’ `(Deprecated) renderHTMLForm` objet). Lorsqu’il `ApplicationWebRoot` s’agit d’un autre serveur de l’AEM Forms hôte, la valeur de l’URI racine Web dans Administration Console doit être définie en tant que valeur de l’URI de l’application Web du formulaire. Pour ce faire, connectez-vous à Administration Console, cliquez sur Services > Forms et définissez l’URI racine Web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Génération d’un formulaire HTML
 
@@ -341,7 +341,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (service Web) :
 
    * Valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Valeur `TransformTo` d’énumération qui spécifie le type de préférence HTML. Par exemple, pour générer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`. (Voir [Préremplissage de formulaires avec des dispositions](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)à disposition souple.)
+   * Objet `BLOB` contenant des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`. (Voir [Préremplissage de Forms avec des mises en page](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)souple.)
    * Objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Valeur de chaîne qui spécifie la valeur d’ `HTTP_USER_AGENT` en-tête ; par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
    * Objet `URLSpec` qui stocke les valeurs URI nécessaires au rendu d’un formulaire HTML. (voir [Spécification des valeurs](/help/forms/developing/rendering-interactive-pdf-forms.md)URI).
@@ -367,7 +367,7 @@ Générer un formulaire HTML à l’aide de l’API Forms (service Web) :
 
 **Voir également**
 
-[Rendu des formulaires au format HTML](#rendering-forms-as-html)
+[Rendu de Forms au format HTML](#rendering-forms-as-html)
 
 [Appel de AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
