@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 6%
 
 ---
 
 
 # Idéal Essentials {#ideation-essentials}
 
-Cette page fournit les informations essentielles pour travailler avec la fonction d&#39;idéation, qui est similaire à un forum, mais avec la possibilité d&#39;enregistrer en tant que brouillon et une impression de collaboration.
+Cette page fournit les informations essentielles pour travailler avec la fonction d&#39;idéation, qui est similaire à un forum, mais avec la possibilité d&#39;enregistrer en tant que brouillon et une atmosphère plus collaborative.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -45,7 +48,7 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Fonctionnalité <a href="ideation-feature.md">d’information</a></td>
+   <td>Voir Fonctionnalité <a href="ideation-feature.md">d’orientation.</a></td>
   </tr>
  </tbody>
 </table>
@@ -54,4 +57,4 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
 
 ### Fonction de conceptualisation {#ideation-function}
 
-Une structure de site de la communauté qui inclut la fonction [d’](functions.md#ideation-function)information, inclut un `ideation` composant configuré.
+Une structure de site communautaire qui comprend la fonction [](functions.md#ideation-function)Idéation, comprend un `ideation` composant configuré.
