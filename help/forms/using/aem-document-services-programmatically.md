@@ -1035,7 +1035,7 @@ public class ModifySignatureField {
 Vous pouvez définir un document PDF en le certifiant avec un type de signature particulier appelé signature certifiée. Une signature certifiée se différencie d’une signature numérique de plusieurs manières :
 
 * Elle doit être la première signature appliquée au document PDF. En d’autres termes, lorsque la signature certifiée est appliquée, les autres champs de signature du document doivent être non signés. Une seule signature certifiée est autorisée dans un document PDF. Pour signer et certifier un document PDF, certifiez-le avant de le signer. Après avoir certifié un document PDF, vous pouvez signer numériquement les champs de signature supplémentaires.
-* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, la signature certifiée est non valide. En outre, Acrobat génère un avertissement lorsqu’un utilisateur ouvre le document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
+* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, la signature certifiée est non valide. En outre, Acrobat émet un avertissement lorsqu’un utilisateur ouvre le document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
 * Au moment de la signature, les différents types de contenus du document susceptibles de rendre le document ambigu ou trompeur sont analysés. Par exemple, une annotation peut assombrir du texte sur une page qui est essentiel pour comprendre ce qui est certifié. Une explication (attestation légale) peut être fournie pour un type de contenu.
 
 **Syntaxe**:
@@ -1362,7 +1362,7 @@ En outre, les listes de révocation des certificats (CRL) fournissent des inform
 
 >[!NOTE]
 >
->Avant de chiffrer un document PDF avec un certificat, vous devez vous assurer d’ajouter le certificat au Trust Store d’AEM.
+>Avant de chiffrer un document PDF avec un certificat, vous devez vous assurer d’ajouter le certificat à AEM Trust Store.
 
 **Application de droits d’utilisation aux documents PDF**
 
@@ -1382,11 +1382,11 @@ La clé publique est stockée dans le certificat de l’utilisateur, celle-ci do
 
 >[!NOTE]
 >
->Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
+>Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans AEM Keystore. Les informations d’identification sont la clé privée utilisée pour la signature.
 
 >[!NOTE]
 >
->AEM Forms also supports *[CAdES](https://fr.wikipedia.org/wiki/CAdES)*specification for digitally signing PDF documents.
+>AEM Forms also supports *[CAdES](https://fr.wikipedia.org/wiki/CAdES)* specification for digitally signing PDF documents.
 
 **Certification de documents PDF**
 
@@ -1410,7 +1410,7 @@ Par exemple, une annotation peut assombrir du texte sur une page qui est essenti
 
 >[!NOTE]
 >
->Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans le magasin de clés AEM. Les informations d’identification sont la clé privée utilisée pour la signature.
+>Avant de signer numériquement un document PDF, vous devez vous assurer d’ajouter les informations d’identification dans AEM Keystore. Les informations d’identification sont la clé privée utilisée pour la signature.
 
 **Syntaxe**:
 
@@ -2084,7 +2084,7 @@ Si le message d’erreur suivant s’affiche pendant que l’utilisateur étend 
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
-Cela signifie que le service Reader Extension n’est pas en mesure d’exécuter les scripts JavaScript utilisés dans le document dans le délai d’expiration défini.
+Cela signifie que le service Reader Extension n&#39;est pas en mesure d&#39;exécuter les scripts JavaScript utilisés dans le document dans le délai d&#39;attente défini.
 
 Gérez l’intervalle de dépassement de délai défini pour les scripts JavaScript dans le document PDF à l’aide des éléments suivants :
 
@@ -3628,13 +3628,13 @@ L’exemple de code Java suivant supprime un chiffrement avec certificat d’un 
 
 Le service Output fournit des API pour générer un fichier XDP aux formats .pdf, .pcl, .zpl, et .ps. Le service prend en charge les API suivantes :
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) :**génère un document PDF en fusionnant une conception de formulaire avec des données stockées sur un emplacement réseau, un système de fichiers local, un emplacement HTTP comme des valeurs littérales.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) :** génère un document PDF en fusionnant une conception de formulaire avec des données stockées sur un emplacement réseau, un système de fichiers local, un emplacement HTTP comme des valeurs littérales.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) :**génère un document PDF en fusionnant une conception de formulaire avec les données stockées dans une application.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p) :**fusionne une conception de formulaire avec des données pour générer un document PDF. Vous pouvez également générer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Génère une sortie PCL, PostScript ou ZPL à partir d’une conception de formulaire et d’un fichier de données stockés sur un emplacement réseau, un système de fichiers local ou un emplacement HTTP en tant que valeurs littérales.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) :** génère un document PDF en fusionnant une conception de formulaire avec les données stockées dans une application.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p) :** fusionne une conception de formulaire avec des données pour générer un document PDF. Vous pouvez également générer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Génère une sortie PCL, PostScript ou ZPL à partir d’une conception de formulaire et d’un fichier de données stockés sur un emplacement réseau, un système de fichiers local ou un emplacement HTTP en tant que valeurs littérales.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Génère une sortie PCL, PostScript et ZPL à partir d’une conception de formulaire et d’un fichier de données stockés dans une application.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Génère une sortie PCL, PostScript et ZPL à partir d’une conception de formulaire et d’un fichier de données stockés dans une application.
 
 ### generatePDFOutput {#generatepdfoutput}
 
@@ -4150,7 +4150,7 @@ Document doc=null;
 
 Génère un document de formats PS, PCL et ZPL en fusionnant une conception de formulaire avec des données. Vous pouvez également créer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF. Utilisez l’API generatePrintedOutputBatch pour les conceptions de formulaire ou les données stockées sur un emplacement réseau, un système de fichiers local ou un emplacement HTTP comme des valeurs littérales.
 
-**Syntaxe`:`**`BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
+**Syntaxe`:`** `BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
 #### Paramètres d’entrée {#input-parameters-4}
 
@@ -4287,8 +4287,8 @@ String outputFolder="C:/Output";
 
 Le service Forms fournit des API pour importer et exporter des données d’un formulaire PDF interactif ou vers celui-ci. Un formulaire PDF interactif est un document PDF contenant un ou plusieurs champs utilisés pour afficher et recueillir des informations des utilisateurs. Le service prend en charge les API suivantes :
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p) :**exporte les données d’un formulaire PDF.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p) :**importe des données dans un formulaire PDF interactif.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p) :** exporte les données d’un formulaire PDF.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p) :** importe des données dans un formulaire PDF interactif.
 
 ### exportData {#exportdata}
 
