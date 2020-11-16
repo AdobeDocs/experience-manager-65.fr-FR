@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +25,7 @@ We.Retail a été conçu avec une structure de site globalisée qui offre des ga
 ## Test {#trying-it-out}
 
 1. Ouvrez la console Sites à partir de **Navigation globale -> Sites**.
-1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l&#39;exemple de structure par pays avec la Suisse, les Etats-Unis, la France, etc., en plus des Maîtres de Langue.
+1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l&#39;exemple de structure de pays avec la Suisse, les Etats-Unis, la France, etc., au côté des Principal linguistiques.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
