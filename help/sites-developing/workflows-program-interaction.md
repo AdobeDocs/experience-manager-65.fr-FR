@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
 source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 54%
 
 ---
 
@@ -56,11 +59,11 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 ## Utilisation de l’API REST Workflow {#using-the-workflow-rest-api}
 
-La console de flux de travail utilise abondamment l&#39;API REST ; cette page décrit donc l’API REST pour les  de.
+La console de flux de travaux utilise fortement l&#39;API REST ; cette page décrit donc l’API REST pour les workflows.
 
 >[!NOTE]
 >
->L’outil de ligne de commande curl vous permet d’utiliser l’API REST de flux de travail pour accéder aux objets de flux de travail et gérer les cycles de vie des instances. Les exemples figurant sur cette page illustrent l’utilisation de l’API REST au moyen de l’outil de ligne de commande curl.
+>L’outil de ligne de commande curl vous permet d’utiliser l’API REST de Workflow pour accéder aux objets de workflow et gérer les cycles de vie des instances. Les exemples figurant sur cette page illustrent l’utilisation de l’API REST au moyen de l’outil de ligne de commande curl.
 
 Les actions suivantes sont prises en charge par l’API REST :
 
@@ -89,15 +92,15 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions</td>
+   <td>Actions </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td> les instances de flux de travail disponibles.</td>
+   <td>Liste les instances de processus disponibles.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crée une nouvelle instance de processus. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> La charge utile est envoyée en tant que paramètre <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
+   <td><p>Crée une instance de processus. The parameters are:<br /> - <code>model</code>: the ID (URI) of the respective workflow model<br /> - <code>payloadType</code>: containing the type of the payload (for example <code>JCR_PATH</code> or URL).<br /> La charge utile est envoyée en tant que paramètre <code>payload</code>. A <code>201</code> (<code>CREATED</code>) response is sent back with a location header containing the URL of the new workflow instance resource.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -108,9 +111,9 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| Méthode de requête HTTP | Actions |
+| Méthode de requête HTTP | Actions  |
 |---|---|
-| `GET` |  les instances de flux de travail disponibles et leurs états ( `RUNNING`, `SUSPENDED`, `ABORTED` ou `COMPLETED`) |
+| `GET` | Liste les instances de processus disponibles et leurs états ( `RUNNING`, `SUSPENDED`, `ABORTED` ou `COMPLETED`) |
 
 #### Gestion d’une instance de workflow en fonction de son ID {#managing-a-workflow-instance-by-its-id}
 
@@ -122,15 +125,15 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions</td>
+   <td>Actions </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>Obtient les données des instances (définition et métadonnées), y compris le lien vers le modèle de flux de travail correspondant.</td>
+   <td>Récupère les données d’instances (définition et métadonnées), y compris le lien vers le modèle de processus correspondant.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Modifie l’état de l’instance. Le nouvel état est envoyé en tant que paramètre <code>state</code> et doit avoir l’une des valeurs suivantes : <code>RUNNING</code>, <code>SUSPENDED</code>ou <code>ABORTED</code>.<br /> Si le nouvel état n’est pas accessible (par exemple lors de la suspension d’une instance terminée), une réponse <code>409</code> (<code>CONFLICT</code>) est renvoyée au client.</td>
+   <td>Modifie l’état de l’instance. Le nouvel état est envoyé en tant que paramètre <code>state</code> et doit avoir l’une des valeurs suivantes : <code>RUNNING</code>, <code>SUSPENDED</code>ou <code>ABORTED</code>.<br /> Si le nouvel état n'est pas accessible (par exemple lors de la suspension d'une instance terminée), une <code>409</code> réponse (<code>CONFLICT</code>) est renvoyée au client.</td>
   </tr>
  </tbody>
 </table>
@@ -145,15 +148,15 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions</td>
+   <td>Actions </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td> les modèles de flux de travail disponibles.</td>
+   <td>Liste les modèles de processus disponibles.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Crée un nouveau modèle de processus. If the parameter <code>title</code> is sent, a new model is created with the specified title. Attaching a JSON model definition as parameter <code>model</code> creates a new workflow model according to the provided definition.<br /> Une <code>201</code> réponse (<code>CREATED</code>) est renvoyée avec un en-tête d’emplacement contenant l’URL de la nouvelle ressource de modèle de processus.<br /> Il en va de même lorsqu’une définition de modèle est jointe en tant que paramètre de fichier appelé <code>modelfile</code>.<br /> Dans les deux cas de <code>model</code> et <code>modelfile</code> , un paramètre supplémentaire appelé <code>type</code> est nécessaire pour définir le format de sérialisation. De nouveaux formats de sérialisation peuvent être intégrés à l’aide de l’API OSGI. Un sérialiseur JSON standard est fourni avec le moteur de workflow. Il est de type JSON. Vous trouverez, ci-dessous, un exemple de ce format.</td>
+   <td>Crée un nouveau modèle de processus. If the parameter <code>title</code> is sent, a new model is created with the specified title. Attaching a JSON model definition as parameter <code>model</code> creates a new workflow model according to the provided definition.<br /> Une <code>201</code> réponse (<code>CREATED</code>) est renvoyée avec un en-tête d'emplacement contenant l'URL de la nouvelle ressource de modèle de processus.<br /> Il en va de même lorsqu'une définition de modèle est jointe en tant que paramètre de fichier appelé <code>modelfile</code>.<br /> Dans les deux cas des paramètres <code>model</code> et <code>modelfile</code> , un paramètre supplémentaire appelé <code>type</code> est nécessaire pour définir le format de sérialisation. De nouveaux formats de sérialisation peuvent être intégrés à l’aide de l’API OSGI. Un sérialiseur JSON standard est fourni avec le moteur de workflow. Il est de type JSON. Vous trouverez, ci-dessous, un exemple de ce format.</td>
   </tr>
  </tbody>
 </table>
@@ -230,7 +233,7 @@ Where `*{uri}*` is the path to the model node in the repository.
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions</td>
+   <td>Actions </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -242,7 +245,7 @@ Where `*{uri}*` is the path to the model node in the repository.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Même comportement qu'avec PUT. Needed because AEM widgets do not support <code>PUT</code> operations.</td>
+   <td>Même comportement qu'avec le PUT. Needed because AEM widgets do not support <code>PUT</code> operations.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -335,9 +338,9 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| Méthode de requête HTTP | Actions |
+| Méthode de requête HTTP | Actions  |
 |---|---|
-| `GET` | Obtient les données du modèle dans la version donnée (le cas échéant). |
+| `GET` | Récupère les données du modèle dans la version donnée (le cas échéant). |
 
 ### Gestion de boîtes de réception (utilisateur){#managing-user-inboxes}
 
@@ -349,15 +352,15 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
  <tbody>
   <tr>
    <td>Méthode de requête HTTP</td>
-   <td>Actions</td>
+   <td>Actions </td>
   </tr>
   <tr>
    <td><code>GET</code></td>
-   <td>les tâches qui se trouvent dans la boîte de réception de l’utilisateur, qui est identifié par les en-têtes d’authentification HTTP.</td>
+   <td>Liste les tâches qui se trouvent dans la boîte de réception de l’utilisateur, qui est identifié par les en-têtes d’authentification HTTP.</td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Termine l’élément de travail dont l’URI est envoyé en tant que paramètre <code>item</code> et avance l’instance de flux de travail appropriée vers le ou les noeuds suivants, qui est défini par le paramètre <code>route</code> ou <code>backroute</code> en cas de retour en arrière.<br /> Si le paramètre <code>delegatee</code> est envoyé, la tâche identifiée par le paramètre <code>item</code> est déléguée au participant spécifié.</td>
+   <td>Termine l’élément de travail dont l’URI est envoyé en tant que paramètre <code>item</code> et avance l’instance de flux de travail appropriée sur le ou les noeuds suivants, qui est défini par le paramètre <code>route</code> ou <code>backroute</code> en cas de retour en arrière.<br /> Si le paramètre <code>delegatee</code> est envoyé, la tâche identifiée par le paramètre <code>item</code> est déléguée au participant spécifié.</td>
   </tr>
  </tbody>
 </table>
@@ -368,9 +371,9 @@ Les méthodes de requête HTTP suivantes s’appliquent à :
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| Méthode de requête HTTP | Actions |
+| Méthode de requête HTTP | Actions  |
 |---|---|
-| `GET` | Obtient les données (définition et métadonnées) de la boîte de réception `WorkItem` identifiées par son ID. |
+| `GET` | Récupère les données (définition et métadonnées) de la boîte de réception `WorkItem` identifiée par son identifiant. |
 
 ## Exemples {#examples}
 
@@ -409,7 +412,7 @@ Pour modifier le **Titre du workflow** affiché dans l’onglet **Instances** de
 * avec les paramètres suivants :
 
    * `action`: sa valeur doit être : `UPDATE`
-   * `workflowTitle`: titre du flux de travail
+   * `workflowTitle`: titre du processus
 
 #### Comment modifier le titre du workflow – REST avec curl {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -492,6 +495,7 @@ Lors de la création d’un modèle :
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
+
    Lorsque vous créez un modèle, vous devez d’abord créer ce nœud `cq:Page` et utiliser son nœud `jcr:content` comme parent du nœud de modèle.
 
 * The `id` argument that some methods require for identifying the model is the absolute path of the model node in the repository:
@@ -807,7 +811,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Écoute des événements de workflow {#listening-for-workflow-events}
 
-Utilisez la structure d’événement OSGi pour écouter les événements définis par la classe [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Cette classe propose également plusieurs méthodes utiles pour obtenir des informations sur le sujet de l’événement. La méthode `getWorkItem`, par exemple, renvoie l’objet `WorkItem` de l’élément de travail qui est impliqué dans l’événement.
+Utilisez la structure d’événement OSGi pour écouter les événements définis par la classe [`com.adobe.granite.workflow.event.WorkflowEvent`. ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) Cette classe propose également plusieurs méthodes utiles pour obtenir des informations sur le sujet de l’événement. La méthode `getWorkItem`, par exemple, renvoie l’objet `WorkItem` de l’élément de travail qui est impliqué dans l’événement.
 
 L’exemple de code suivant définit un service qui écoute les événements de workflow et exécute les tâches selon le type d’événement.
 
