@@ -163,7 +163,7 @@ Pour obtenir la liste complète des classes de formulaires adaptatifs, des évé
 
 ## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. aem forms offre deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
+Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions mobiles pour les tableaux : En-têtes à gauche et Colonnes réductibles.
 
 Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
