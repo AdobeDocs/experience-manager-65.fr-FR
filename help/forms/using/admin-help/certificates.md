@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 83%
 
 ---
 
@@ -41,6 +44,7 @@ Vous pouvez également importer et supprimer des certificats à l’aide de l’
    * **Approbation d’authentification de certificats :** indique que des certificats sont utilisés par AEM forms pour authentifier des utilisateurs par le biais d’une authentification de certificat ou de carte à puce.
    * **Approbation de serveur OCSP :** indique qu’AEM forms peut utiliser des certificats pour établir une connexion à des répondeurs OCSP externes.
    * **Approbation d’identité :** indique que des certificats peuvent être utilisés pour approuver des types d’informations autres que ceux indiqués ci-dessus.
+
    >[!NOTE]
    >
    >un certificat racine Adobe est implicitement approuvé par le Trust Store pour l’authentification de certificat, la signature, la certification de signature et l’identité.
