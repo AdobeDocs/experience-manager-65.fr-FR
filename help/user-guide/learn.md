@@ -18,7 +18,7 @@ ht-degree: 32%
 
 AEM Sites est un système de gestion de contenu au sein d’Adobe Experience Manager qui vous permet de créer, gérer et diffuser des contenus numériques sur des sites Web, des sites mobiles et des écrans sur site afin de les rendre accessibles au monde entier, mais aussi pertinents et attrayants pour vous. [Pour en savoir plus](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) ou [découvrir quelques-uns de nos didacticiels sur les nouvelles fonctionnalités vidéo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
-## AEM Assets {#aem-assets}
+## AEM Assets {#aem-assets}
 
 AEM Assets vous permet de facilement créer, gérer, diffuser et optimiser des ressources digitales à partir d’une plate-forme cloud multilocataire. [Découvrez quelques-uns de nos nouveaux didacticiels vidéo sur AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
 
