@@ -10,6 +10,9 @@ discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '859'
+ht-degree: 76%
 
 ---
 
@@ -42,6 +45,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >N’effectuez pas de copier-coller de la valeur spécifiée dans le champ des conditions d’authentification requises, car ceci risquerait d’endommager les caractères spéciaux dans la valeur. Saisissez plutôt la valeur spécifiée dans le champ.
@@ -51,12 +55,12 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
 ### Désactiver le mode Protégé {#disable-protected-mode}
 
-Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour le désactiver, procédez comme suit :
+Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé par défaut. Laissez-le activé pour les environnements de production. Vous pouvez la désactiver pour un environnement de développement afin de prévisualiser les formulaires HTML5 dans Designer. Pour la désactiver, procédez comme suit :
 
 1. Connectez-vous à la console Web AEM en tant qu’administrateur. 
 
-   * L’URL d’AEM Forms sur OSGi est `https://'[server]:[port]'/system/console/configMgr`
-   * L’URL d’AEM Forms sur JEE est `https://'[server]:[port]'/lc/system/console/configMgr`
+   * L’URL de AEM Forms sur OSGi est `https://'[server]:[port]'/system/console/configMgr`
+   * L’URL de AEM Forms on JEE est `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
 1. Désélectionnez l’option **[!UICONTROL Mode Protégé]** et cliquez sur **[!UICONTROL Enregistrer]**.
@@ -69,18 +73,19 @@ Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé 
    * **URL de serveur** : URL du serveur de AEM Forms.
 
    * **Numéro de port HTTP** : port du serveur AEM. La valeur par défaut est 4502.   
-   * **Contexte des  HTML :** Chemin du pour le rendu des formulaires XFA. Les  par défaut suivantes sont utilisées pour  le formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
+   * **Contexte de la Prévisualisation HTML :** Chemin d’accès du profil pour le rendu des formulaires XFA. Les profils par défaut suivants permettent de prévisualisation du formulaire dans Designer. Cependant, vous pouvez également spécifier un chemin vers un profil personnalisé.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
+      * `/content/xfaforms/profiles/default.html` (AEM Forms on OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM  Forms on JEE)
+      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
    * **Contexte de Forms Manager :** chemin de contexte du déploiement de l’interface utilisateur de Forms Manager. Les valeurs par défaut sont :
 
-      * `/aem/forms` (AEM Forms on OSGi)
-      * `/lc/forms` (AEM  Forms on JEE)
+      * `/aem/forms` (AEM Forms on OSGi)
+      * `/lc/forms` (AEM Forms on JEE)
+
    >[!NOTE]
    >
-   >Vérifiez que le serveur AEM Forms est en cours d’exécution. The HTML preview connects to the CRX server to *generate* a preview.
+   >Assurez-vous que le serveur AEM Forms est en cours d’exécution. The HTML preview connects to the CRX server to *generate* a preview.
 
    ![Options d’AEM Forms Designer ](assets/server_options.png)
 
@@ -99,7 +104,7 @@ Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé 
 
    >[!CAUTION]
    >
-   >Pour tester la véritable expérience de l’utilisateur final, vos formulaires dans des navigateurs externes (Google Chrome, Microsoft Edge, Mozilla Firefox, etc.). Chaque navigateur utilise un moteur distinct pour générer du code HTML. Il peut donc exister des différences dans la manière dont un de formulaire  dans Designer et un navigateur externe.
+   >Pour tester la véritable expérience de l’utilisateur final, prévisualisation vos formulaires dans des navigateurs externes (Google Chrome, Microsoft Edge, Mozilla Firefox, etc.). Chaque navigateur utilise un moteur distinct pour générer du code HTML. Il peut donc exister des différences dans la manière dont un formulaire est prévisualisation dans Designer et dans un navigateur externe.
 
 ## Pour prévisualiser un formulaire contenant des données d’exemple {#to-preview-a-form-using-sample-data}
 
