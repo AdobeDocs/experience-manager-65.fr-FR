@@ -12,6 +12,9 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 translation-type: tm+mt
 source-git-commit: b6c013a31b70166cba80fea53dffc3794ffee5b8
+workflow-type: tm+mt
+source-wordcount: '1434'
+ht-degree: 89%
 
 ---
 
@@ -57,20 +60,20 @@ Un formulaire HTML5 peut s’exécuter dans plusieurs centaines de pages. Un for
 
 Les formulaires HTML5 peuvent contenir des champs axés sur des données (tableaux et sous-formulaires). Ces champs augmentent la taille du formulaire à l’exécution. Par exemple, un tableau axé sur des données d’un formulaire HTML5 peut contenir des milliers de lignes. Ces tableaux peuvent entraîner une dégradation de la mise en page et des performances. Les optimisations suggérées ci-dessous peuvent vous aider à réduire le temps de chargement des formulaires HTML5 contenant des champs axés sur des données :
 
-* Utilisez des scripts XFA pour obtenir une navigation paginée pour afficher les champs axés sur des données (tableaux et sous-formulaires). Dans la navigation paginée, seules des données spécifiques sont affichées sur une page. Elle limite l’opération de peinture du navigateur aux champs affichés à la fois et facilite la navigation dans un formulaire. De plus, les utilisateurs des périphériques mobiles sont intéressés uniquement par un sous-ensemble de données. Cela permet de fournir une expérience utilisateur de grande qualité et de réduire le délai nécessaire au chargement des données requises. Vous obtenez deux solutions pour le prix d’une.  Notez également que la navigation par page n’est pas disponible en dehors de la zone. Vous pouvez utiliser des scripts XFA en vue de développer la navigation paginée.
+* Utilisez des scripts XFA pour obtenir une navigation paginée pour afficher les champs axés sur des données (tableaux et sous-formulaires). Dans la navigation paginée, seules des données spécifiques sont affichées sur une page. Il limite l’opération de peinture du navigateur aux champs affichés à la fois et facilite la navigation dans un formulaire. De plus, les utilisateurs des périphériques mobiles sont intéressés uniquement par un sous-ensemble de données. Cela permet de fournir une expérience utilisateur de grande qualité et de réduire le délai nécessaire au chargement des données requises. Vous obtenez deux solutions pour le prix d’une.  Notez également que la navigation par pagination n’est pas disponible en dehors de la zone. Vous pouvez utiliser des scripts XFA en vue de développer la navigation paginée.
 
 * Envisagez de fusionner plusieurs colonnes en lecture seule en une seule colonne. Cela réduit la mémoire requise pour afficher le formulaire. En outre, il est préférable de ne pas afficher les colonnes qui n’exigent aucune intervention de la part de l’utilisateur.
-* Envisagez de diviser le formulaire axé sur des données pour obtenir un [ensemble de formulaires](https://helpx.adobe.com/fr/aem-forms/6-3/formset-in-aem-forms.html) si les suggestions ci-dessus ne produisent pas de nombreuses améliorations. Par exemple, si un tableau contient plus de 1 000 lignes, déplacez alors chaque ensemble de 100 lignes dans un formulaire différent. Cela permet d’améliorer le temps de chargement et les performances des formulaires.  Notez également qu’un jeu de formulaires génère un XML d’envoi consolidé pour tous les formulaires. Pour différencier les données de chaque formulaire, utilisez différentes racines de données. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](https://helpx.adobe.com/fr/aem-forms/6-3/formset-in-aem-forms.html).
+* Envisagez de diviser le formulaire axé sur des données pour obtenir un [ensemble de formulaires](https://helpx.adobe.com/fr/aem-forms/6-3/formset-in-aem-forms.html) si les suggestions ci-dessus ne produisent pas de nombreuses améliorations. Par exemple, si un tableau contient plus de 1 000 lignes, déplacez alors chaque ensemble de 100 lignes dans un formulaire différent. Cela permet d’améliorer le temps de chargement et les performances des formulaires.  Notez également qu’un jeu de formulaires produit un XML d’envoi consolidé pour tous les formulaires. Pour différencier les données de chaque formulaire, utilisez différentes racines de données. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](https://helpx.adobe.com/fr/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Power of two for Document of Record (DOR) {#power-of-two-for-document-of-record-dor}
 
-Dans un formulaire XFA, un grand nombre de sections peut être dédié uniquement à un document d’enregistrement. Pour réduire le nombre de noeuds et améliorer les performances d’un tel formulaire, vous pouvez conserver différentes copies du formulaire : une copie pour remplir le formulaire et une autre pour générer des  d’enregistrement sur le serveur. Dans la copie utilisée pour remplir le formulaire XFA, affichez les champs requis uniquement pour capturer des données. Dans le formulaire XFA de génération du document d’enregistrement, conservez les champs requis uniquement dans la sortie imprimée du formulaire. Avant de choisir l’approche suggérée, évaluez le gain de performances et la surcharge de maintenance.
+Dans un formulaire XFA, un grand nombre de sections peut être dédié uniquement à un document d’enregistrement. Pour réduire le nombre de noeuds et améliorer les performances d’un tel formulaire, vous pouvez conserver différentes copies du formulaire : une copie pour remplir le formulaire et une autre pour générer un Document d’enregistrement sur le serveur. Dans la copie utilisée pour remplir le formulaire XFA, affichez les champs requis uniquement pour capturer des données. Dans le formulaire XFA de génération du document d’enregistrement, conservez les champs requis uniquement dans la sortie imprimée du formulaire. Avant de choisir l’approche suggérée, évaluez le gain de performances et la surcharge de maintenance.
 
 ## Lectures recommandées  {#recommended-reads}
 
 Adobe Experience Manager (AEM) Forms vous permet de transformer des opérations complexes en de simples et remarquables expériences numériques. Toutefois, vous devez chercher à développer des formulaires efficaces et productifs. Outre les formulaires HTML5, voici quelques recommandations de lecture au sujet des meilleures pratiques générales concernant AEM :
 
-* [Meilleures pratiques pour le déploiement et la maintenance d’AEM](/help/sites-deploying/best-practices.md)
+* [Meilleures pratiques pour le déploiement et la maintenance AEM](/help/sites-deploying/best-practices.md)
 * [Meilleures pratiques pour la création de contenu](/help/sites-authoring/best-practices.md)
 * [Meilleures pratiques d’administration dans AEM](/help/sites-administering/administer-best-practices.md) 
 * [Meilleures pratiques pour le développement de solutions](/help/sites-developing/best-practices.md)
@@ -80,4 +83,4 @@ Adobe Experience Manager (AEM) Forms vous permet de transformer des opération
 ## Carte de référence rapide {#quick-reference-card}
 
 Vous pouvez imprimer la carte suivante (cliquez sur la carte pour télécharger une version haute résolution) et la conserver sur votre bureau pour une référence rapide :
-Carte de référence rapide des meilleures pratiques des formulaires[ ![HTML5](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[ ![Carte de référence rapide des meilleures pratiques HTML5 Forms](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
