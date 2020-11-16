@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '411'
+ht-degree: 81%
 
 ---
 
@@ -34,8 +37,9 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 
 1. Saisissez les informations suivantes :
 
-   * **** Titre : Nom d’affichage du dossier
+   * **Titre :** Nom d’affichage du dossier
    * **Nom :** *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
+
    >[!NOTE]
    >
    >Par défaut, la valeur du champ de nom est automatiquement renseignée à partir du titre. Le nom peut contenir uniquement des caractères alphanumériques, des tirets (-) et des traits de soulignement (_). Tout autre caractère spécial saisi dans le titre est automatiquement remplacé par un tiret. Vous êtes alors invité à confirmer le nouveau nom. Vous pouvez choisir de conserver le nom proposé ou de le modifier.
