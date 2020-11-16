@@ -12,6 +12,9 @@ discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 0a94bf49a7136c5831c42eb274d07517c12014ec
+workflow-type: tm+mt
+source-wordcount: '3522'
+ht-degree: 76%
 
 ---
 
@@ -119,7 +122,7 @@ If any attribute like id or class is applied on the body tag for example `<body 
 
 ### Transfert de fichiers ZIP par glisser-déposer {#drag-and-drop-zip}
 
-Le transfert par glisser-déplacer n’est pas pris en charge pour Internet Explorer et Firefox versions 3.6 et antérieures. Pour télécharger une conception à l’aide de ces navigateurs, cliquez sur la zone de déplacement de fichiers afin d’ouvrir une boîte de dialogue de téléchargement et de l’utiliser pour réaliser le transfert.
+Le transfert par glisser-déposer de fichiers zip n’est pas pris en charge pour Internet Explorer et Firefox versions 3.6 et antérieures. Pour télécharger une conception à l’aide de ces navigateurs, cliquez sur la zone de déplacement de fichiers afin d’ouvrir une boîte de dialogue de téléchargement et de l’utiliser pour réaliser le transfert.
 
 Les navigateurs qui prennent en charge le « glisser-déposer » du fichier ZIP de conception sont Chrome, Safari 5.x, Firefox 4 et versions ultérieures.
 
@@ -321,18 +324,18 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 
 **Fonctionnalités prises en charge**
 
-* Les champs de piste prédéfinis - prénom, nom, adresse, dob, sexe, about, userId, emailId, submit button sont disponibles dans le sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de piste.
+* Les champs de piste prédéfinis - prénom, nom, adresse, dob, genre, about, userId, emailId, submit button sont disponibles dans le sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de piste.
 * Grâce à ces composants, l’auteur peut concevoir un formulaire de piste autonome. Ces champs correspondent à ceux du formulaire de piste. Dans une application ZIP importée ou autonome, l’utilisateur peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
-* Mappez les champs de formulaire de piste à l&#39;aide de noms prédéfinis spécifiques du formulaire de piste CTA, par exemple : firstName pour le prénom dans le formulaire de piste, etc.
+* Faites correspondre les champs de formulaire de piste à l&#39;aide de noms prédéfinis spécifiques du formulaire de piste CTA, par exemple, firstName pour le prénom dans le formulaire de piste, etc.
 * Les champs qui ne sont pas mis en correspondance avec un formulaire de piste le sont avec des composants cq:form : texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe.
 * L’utilisateur peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de prospect CTA).
-* La page de remerciement et la liste d&#39;abonnement peuvent être fournies en tant que paramètre masqué du formulaire (présent dans index.htm) ou être ajoutées/modifiées à partir de la barre d&#39;édition de &quot;Début du formulaire de piste&quot;
+* La page de remerciement et la liste d&#39;abonnement peuvent être fournies en tant que paramètre masqué du formulaire (présent dans index.htm) ou peuvent être ajoutées/modifiées à partir de la barre d&#39;édition de &quot;Début du formulaire de piste&quot;
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-détaillant/en/user/register/Thank_you&quot;/>
+   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-commerce/fr/user/register/Thank_you&quot;/>
 
    &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
-* Des contraintes telles que - obligatoire peuvent être fournies à partir de la configuration de modification de chaque composant.
+* Des contraintes telles que - requises peuvent être fournies à partir de la configuration de modification de chaque composant.
 
 Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. En l’occurrence, « firstName » est mis en correspondance avec le formulaire de piste firstName etc., à l’exception des cases à cocher. Ces deux cases à cocher sont mises en correspondance avec le composant Liste déroulante cq:form.
 
@@ -452,7 +455,7 @@ Supposons que vous souhaitiez référencer un composant dans votre fichier HTML 
 
 Le chemin d’accès dans l’attribut data-cq-component doit être le resourceType du composant.
 
-### Meilleures pratiques {#best-practices}
+### Bonnes pratiques {#best-practices}
 
 L’utilisation de sélecteurs CSS semblables à ceux présentés ci-dessous est déconseillée avec des éléments marqués pour la conversion de composants lors de l’importation.
 
@@ -469,12 +472,12 @@ L’utilisation de sélecteurs CSS semblables à ceux présentés ci-dessous est
 Cela est dû au fait que d’autres éléments HTML, comme la balise &lt;div>, sont ajoutés au fichier HTML généré après l’importation.
 
 * L’utilisation de scripts organisés selon une structure semblable à celle décrite ci-dessus est déconseillée avec des éléments marqués en vue d’une conversion en composants AEM.
-* Il n’est pas recommandé d’utiliser des styles sur les balises pour la conversion des composants tels que &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
+* Il n’est pas recommandé d’utiliser des styles sur les balises pour la conversion de composants tels que &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
 * La mise en page de conception doit suivre les meilleures pratiques relatives au modèle HTML5 Boilerplate. Read more on: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuration de modules OSGI {#configuring-osgi-modules}
 
-Les composants qui exposent des propriétés configurables via la console OSGI sont les suivants :
+Les composants qui exposent les propriétés configurables via la console OSGI sont les suivants :
 
 * Importateur de conception de page d’entrée
 * Générateur de pages d’entrée
@@ -486,7 +489,7 @@ Vous trouverez dans le tableau ci-dessous une brève description des propriété
 <table>
  <tbody>
   <tr>
-   <td><strong>Component</strong></td>
+   <td><strong>Composant</strong></td>
    <td><strong>Nom de la propriété</strong></td>
    <td><strong>Description de la propriété  </strong></td>
   </tr>
@@ -498,12 +501,12 @@ Vous trouverez dans le tableau ci-dessous une brève description des propriété
   <tr>
    <td>Générateur de pages d’entrée</td>
    <td>Modèle de fichier</td>
-   <td>Le créateur de pages d’entrée peut être configuré pour gérer les fichiers HTML correspondant à une expression régulière, comme défini par le modèle de fichier.</td>
+   <td>Le créateur de Landings page peut être configuré pour gérer les fichiers HTML correspondant à une expression normale, comme défini par le modèle de fichier.</td>
   </tr>
   <tr>
    <td>Générateur de pages d’entrée pour mobiles</td>
    <td>Modèle de fichier</td>
-   <td>Le créateur de pages d’entrée peut être configuré pour gérer les fichiers HTML correspondant à une expression régulière, comme défini par le modèle de fichier.</td>
+   <td>Le créateur de Landings page peut être configuré pour gérer les fichiers HTML correspondant à une expression normale, comme défini par le modèle de fichier.</td>
   </tr>
   <tr>
    <td> </td>
@@ -513,12 +516,12 @@ Vous trouverez dans le tableau ci-dessous une brève description des propriété
   <tr>
    <td>Préprocesseur de saisie de pages d’entrée</td>
    <td>Modèle de recherche </td>
-   <td>Modèle à rechercher, dans le contenu d’entrée de l’archive. Cette expression régulière correspond à l’entrée de contenu ligne par ligne. Lors de la correspondance, le texte correspondant est remplacé par le modèle de remplacement spécifié.<br /> <br /> Reportez-vous à la remarque ci-dessous concernant les limitations actuelles du préprocesseur de saisie de pages d’entrée.</td>
+   <td>Modèle à rechercher, dans le contenu d’entrée de l’archive. Cette expression régulière est mise en correspondance ligne par ligne avec le contenu d’entrée. Lors de la correspondance, le texte correspondant est remplacé par le modèle de remplacement spécifié.<br /> <br /> Reportez-vous à la remarque ci-dessous concernant les limitations actuelles du préprocesseur de saisie de pages d’entrée.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Modèle de remplacement</td>
-   <td>Modèle qui remplace les correspondances trouvées. Vous pouvez utiliser des références de groupe regex telles que $1, $2. De plus, ce modèle prend en charge les mots-clés tels que {designPath} qui sont résolus avec la valeur réelle pendant l’importation.</td>
+   <td>Modèle qui remplace les correspondances trouvées. Vous pouvez utiliser des références de groupe regex telles que $1, $2. De plus, ce modèle prend en charge les mots-clés tels que {designPath} qui sont résolus avec la valeur réelle au cours de l’importation.</td>
   </tr>
  </tbody>
 </table>
@@ -544,14 +547,14 @@ Si le module de conception contient des balises de composant parsys, le Sidekick
 
 ### Messages d’erreur affichés au cours de l’importation {#error-messages-displayed-during-import}
 
-En cas d’erreur (par exemple, le package importé n’est pas un fichier zip valide), l’importation de conception n’importe pas le package et affiche un message d’erreur au-dessus de la page juste au-dessus de la zone de glisser-déposer. Des exemples de scénarios d’erreur sont présentés ici. Une fois l’erreur corrigée, vous pouvez réimporter le fichier ZIP mis à jour sur la même page d’entrée vierge. Vous trouverez, ci-dessous, différents scénarios entraînant la génération d’erreurs :
+En cas d’erreur (par exemple, le package importé n’est pas un zip valide), l’importation de conception n’importe pas le package et affiche à la place un message d’erreur au-dessus de la page juste au-dessus de la zone de glisser-déposer. Des exemples de scénarios d’erreur sont présentés ici. Une fois l’erreur corrigée, vous pouvez réimporter le fichier ZIP mis à jour sur la même page d’entrée vierge. Vous trouverez, ci-dessous, différents scénarios entraînant la génération d’erreurs :
 
 * Le module de conception importé n’est pas une archive ZIP valide.
 * Le package de conception importé ne contient pas index.html au niveau supérieur.
 
 ### Avertissements affichés après l’importation {#warnings-displayed-after-import}
 
-En cas d’avertissement (par exemple, HTML fait référence à des images qui n’existent pas dans le package), l’importateur de conception importe le fichier zip, mais affiche en même temps une liste de problèmes/avertissements dans le volet des résultats. En cliquant sur le lien des problèmes, vous affichez une liste d’avertissements qui signalent des problèmes dans le package de conception. Les différents scénarios dans lesquels les avertissements sont capturés et affichés par l’importateur de conception sont les suivants :
+En cas d’avertissements (par exemple, HTML fait référence à des images qui n’existent pas dans le package), l’importateur de conception importe le fichier zip mais affiche en même temps une liste de problèmes/avertissements dans le volet des résultats, en cliquant sur le lien Problèmes, affiche une liste d’avertissements qui signalent tout problème dans le package de conception. Les différents scénarios selon lesquels les avertissements sont interceptés et affichés par l’importateur de conceptions sont les suivants :
 
 * HTML fait référence aux images qui n’existent pas dans le package.
 * HTML fait référence aux scripts qui n’existent pas dans le package.
