@@ -11,6 +11,9 @@ discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '258'
+ht-degree: 61%
 
 ---
 
@@ -43,9 +46,9 @@ Voici les étapes pour configurer les **[!UICONTROL paramètres AEM DS]** :
 
 1. Ajoutez les informations suivantes dans les champs respectifs :
 
-   **[!UICONTROL URL]** du serveur de traitement : Le serveur de traitement est le serveur sur lequel le processus Forms ou AEM doit être déclenché. Il peut s’agir de l’URL de l’instance d’auteur AEM ou de l’autre URL du serveur (https://localhost:port/).
+   **[!UICONTROL URL]** du serveur de traitement : Le serveur de traitement est le serveur sur lequel le flux de travail Forms ou AEM doit être déclenché. Il peut s’agir de l’URL de l’instance d’auteur AEM ou de l’autre URL de serveur (https://localhost:port/).
 
-   **[!UICONTROL Nom]** d’utilisateur du serveur de traitement : Nom d’utilisateur de l’utilisateur du processus [en fonction de l’URL du serveur utilisé]
+   **[!UICONTROL Nom]** d’utilisateur du serveur de traitement : Nom d’utilisateur de l’utilisateur de Workflow [en fonction de l’URL du serveur utilisé]
 
    **[!UICONTROL Mot de passe du serveur de traitement]** : mot de passe de l’utilisateur du processus
 
