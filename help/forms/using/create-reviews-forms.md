@@ -11,6 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 88%
 
 ---
 
@@ -24,7 +27,7 @@ Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajo
 ## Configuration d’une révision {#setting-up-a-review}
 
 1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
-1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Cliquez sur l’icône Commencer la révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. If the asset does not have a review in progress, a Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icon appears in the Action bar. Cliquez sur l’icône Révision du Début ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
 1. Saisissez les informations suivantes :
 
    * Nom de la révision : (Obligatoire) peut contenir des caractères alphanumériques, des traits d’union ou des caractères de soulignement.
@@ -57,7 +60,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
 1. If an asset has a review in progress and you are the initiator of the review, a Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icons appears in the Action bar. Seul l’initiateur de la révision peut gérer (mettre à jour/terminer) la révision.
 
-   Cliquez sur Gérer la révision ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)virgule.
+   Cliquez sur Gérer la révision ![aem6forms_review_chat_](assets/aem6forms_review_chat_comment.png)commenticon.
 
    Cette icône est désactivée pour les utilisateurs autres que l’initiateur.
 
