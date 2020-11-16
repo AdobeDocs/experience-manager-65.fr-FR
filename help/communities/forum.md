@@ -118,7 +118,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Taille maximale du fichier**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. 
 
 * **Types de fichier autorisés**
 
