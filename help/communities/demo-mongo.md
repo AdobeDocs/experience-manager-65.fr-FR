@@ -28,7 +28,7 @@ Avec cette configuration, le contenu de la communauté est accessible à partir 
 
 Cette configuration convient aux environnements *non productifs* tels que le développement et/ou la démonstration.
 
-**Un *environnement de production*doit :**
+**Un *environnement de production* doit :**
 
 * Exécution de MongoDB avec un jeu de réplicas
 * Utiliser SolrCloud
