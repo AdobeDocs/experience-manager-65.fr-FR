@@ -12,6 +12,9 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 99%
 
 ---
 
@@ -35,10 +38,10 @@ Le sidekick est un outil clé lors de la création de pages. Il est toujours vis
 Plusieurs onglets et icônes sont disponibles, notamment :
 
 * Composants
-* Page
+* Page  
 * Informations
-* Création de versions
-* Processus
+* Contrôle de version
+* Workflow
 * Modes
 * Génération de modèles automatique
 * Contexte client
@@ -76,6 +79,7 @@ Pour insérer un nouveau composant :
 
    * Faites glisser un composant à partir de la barre d’outils flottante (appelée sidekick) pour insérer un nouveau paragraphe.
    * Cliquez avec le bouton droit sur un paragraphe existant et sélectionnez ensuite **Nouveau...** ; la barre d’outils Insérer un nouveau composant s’ouvre. Sélectionnez un composant et cliquez sur **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. La liste des composants (types de paragraphe) disponibles est affichée dans le sidekick et dans la barre d’outils **Insérer un nouveau composant**. Ils peuvent être divisés en plusieurs sections (par exemple : Général, Colonnes, etc.), qui peuvent être développées suivant les besoins.
@@ -101,9 +105,9 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
 >
 >Ce comportement peut être configuré pour votre installation. Pour plus d’informations, voir [Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
 
-Pour créer un composant, faites glisser l’un des types de ressource ci-dessus :
+Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
-1. Assurez-vous que votre page est en [**mode Édition **](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
+1. Assurez-vous que votre page est en mode [**Édition**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
 1. Ouvrez l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Faites glisser la ressource jusqu’à la position requise. L’[espace réservé du composant](#componentplaceholder) indique où le composant va être positionné.
 
@@ -134,7 +138,7 @@ Pour déplacer un paragraphe :
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. Faites glisser le paragraphe vers son nouvel emplacement. AEM affiche une coche verte pour indiquer les destinations possibles. Déposez le paragraphe à l’emplacement souhaité.
-1. Votre paragraphe est déplacé.
+1. Votre paragraphe est déplacé:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
@@ -185,9 +189,11 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
    Si un composant fait partie d’une live copy ou d’un lancement, il est signalé par une icône de cadenas. Vous pouvez cliquer sur le cadenas pour annuler l’héritage.
 
    * L’icône de cadenas s’affiche lorsque le composant est sélectionné, par exemple :
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
    * Le cadenas s’affiche également dans la boîte de dialogue des composants, par exemple :
+
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **Un système de paragraphes hérité**
@@ -200,7 +206,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Les [Annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages {#previewing-pages}
+## Aperçu des pages    {#previewing-pages}
 
 Deux icônes disponibles dans la bordure inférieure du sidekick sont importantes pour afficher un aperçu des pages :
 
@@ -220,7 +226,7 @@ Deux icônes disponibles dans la bordure inférieure du sidekick sont importante
 
 ## Rechercher et remplacer {#find-replace}
 
-Pour les modifications à plus grande échelle d’une même expression, utilisez l’option **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**pour rechercher et remplacer plusieurs instances d’une chaîne dans une section du site web.
+Pour les modifications à plus grande échelle d’une même expression, utilisez l’option **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** pour rechercher et remplacer plusieurs instances d’une chaîne dans une section du site web.
 
 ## Verrouillage d’une page {#locking-a-page}
 
@@ -250,7 +256,7 @@ Pour déverrouiller une page :
 1. Double-cliquez sur la page pour l’ouvrir.
 1. Dans l’onglet **Page** du sidekick, sélectionnez **Déverrouiller la page**.
 
-## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
+## Annulation et rétablissement des modifications de page {#undoing-and-redoing-page-edits}
 
 Utilisez les raccourcis clavier suivants lorsque le cadre de contenu de la page est actif :
 
@@ -261,9 +267,9 @@ Lorsque vous annulez ou rétablissez une opération de suppression, d’ajout ou
 
 >[!NOTE]
 >
->Voir [Annulation et rétablissement des modifications de page – Théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
+>Voir [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
 
-## Undoing and Redoing Page Edits - The Theory {#undoing-and-redoing-page-edits-the-theory}
+## Annulation et rétablissement des modifications de page : la théorie {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
@@ -282,6 +288,7 @@ Les commandes Annuler et Rétablir fonctionnent de la même manière que dans le
 >* Rétablir des opérations pour autant qu’aucune modification de page n’ait été effectuée depuis la dernière utilisation de la commande Annuler.
 >* Annuler jusqu’à 20 opérations de modification (paramètre par défaut).
 >* Vous pouvez également utiliser les [raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour les opérations d’annulation et de rétablissement.
+
 >
 
 
