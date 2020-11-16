@@ -27,7 +27,7 @@ Il existe différentes méthodes pour assurer le suivi des événements vidéo, 
 >
 >Before you continue, make sure** **that you have a** playable video** uploaded within AEM.
 
->Pour vous assurer que vos vidéos sont lisibles dans la page, consultez **[ce didacticiel](/help/sites-authoring/default-components-foundation.md#video)**pour plus d’informations sur le transcodage de fichiers vidéo dans AEM.
+>Pour vous assurer que vos vidéos sont lisibles dans la page, consultez **[ce didacticiel](/help/sites-authoring/default-components-foundation.md#video)** pour plus d’informations sur le transcodage de fichiers vidéo dans AEM.
 
 Appliquez la procédure ci-dessous pour configurer une structure pour le suivi des vidéos à l’aide de chaque méthode.
 
@@ -52,13 +52,13 @@ Appliquez la procédure ci-dessous pour configurer une structure pour le suivi d
    * [Jalons hérités](/help/sites-administering/adobeanalytics.md)
    * [Secondes héritées](/help/sites-administering/adobeanalytics.md)
 
-1. Lorsque vous sélectionnez une méthode de suivi, la liste de variables CQ change en conséquence. Utilisez les sections suivantes pour savoir comment configurer davantage le composant et mapper les variables CQ avec les propriétés Adobe.
+1. Lorsque vous sélectionnez une méthode de suivi, la liste de variables CQ change en conséquence. Pour plus d’informations sur la configuration du composant et la mise en correspondance des variables CQ avec les propriétés Adobe Analytics, reportez-vous aux sections suivantes.
 
 ## Jalons {#milestones}
 
 La méthode Jalons suit la plupart des informations sur la vidéo. Elle est hautement personnalisable et facile à configurer.
 
-Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsqu’une lecture vidéo franchit un jalon, la page appelle Adobe pour effectuer le suivi du événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe. Le format du nom de ces variables CQ est le suivant :
+Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsqu’une lecture vidéo franchit un jalon, la page appelle Adobe Analytics pour effectuer le suivi du événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics. Le format du nom de ces variables CQ est le suivant :
 
 ```shell
 eventdata.events.milestoneXX
@@ -78,7 +78,7 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
  <tbody>
   <tr>
    <th>Variables CQ</th>
-   <th>Propriétés Adobe</th>
+   <th>Propriétés Adobe Analytics</th>
   </tr>
   <tr>
    <td>eventdata.videoName </td>
@@ -114,7 +114,7 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Envoyé à chaque jalon ; s’affiche sous la forme pev3 dans l’appel Analytics Adobe, généralement envoyé sous la forme "video"<br /> </td>
+   <td>Envoyé à chaque jalon ; apparaît sous la forme pev3 dans l’appel Adobe Analytics, généralement envoyé sous la forme "vidéo".<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -139,11 +139,11 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
 
    Les valeurs de décalage doivent être des entiers supérieurs à 0. La valeur par défaut est `10,25,50,75`.
 
-1. Pour mapper les variables CQ avec les propriétés Analytics Adobe, faites glisser les propriétés Adobe Analytics de ContentFinder à côté de la variable CQ sur le composant.
+1. Pour mapper les variables CQ aux propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics depuis ContentFinder en regard de la variable CQ sur le composant.
 
    For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
 
-1. [Ajoutez la structure](/help/sites-administering/adobeanalytics.md) sur la page.
+1. [Ajoutez la structure](/help/sites-administering/adobeanalytics.md) à la page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
 
 Les exemples de données de suivi Adobe Analytics qui suivent s’appliquent au suivi par jalon à l’aide de décalages de suivi de 4,8,16,20 et 24, et les mappages suivants pour les variables CQ :
@@ -152,7 +152,7 @@ Les exemples de données de suivi Adobe Analytics qui suivent s’appliquent au 
  <tbody>
   <tr>
    <th>Variable CQ</th>
-   <th>Propriété Adobe</th>
+   <th>Propriété Adobe Analytics</th>
   </tr>
   <tr>
    <td>eventdata.videoName </td>
@@ -223,7 +223,7 @@ Dans cet exemple, le composant Vidéo s’affiche comme suit dans la page de la 
 
 >[!NOTE]
 >
->Pour voir les appels effectués à Adobe Analytics, utilisez un outil approprié, tel que DigitalPulse Debugger ou Fiddler.
+>Pour voir les appels envoyés à Adobe Analytics, utilisez un outil approprié, tel que DigitalPulse Debugger ou Fiddler.
 
 Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent ressembler à celui-ci lors de l’affichage avec le débogueur DigitalPulse :
 
@@ -249,9 +249,9 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent ressembl
 
 La méthode Jalons non hérités est similaire à la méthode Jalons, excepté que les jalons sont définis à l’aide de pourcentages de la durée du suivi. Les points communs sont les suivants :
 
-* Lorsqu’une lecture vidéo franchit un jalon, la page appelle Adobe pour effectuer le suivi du événement.
+* Lorsqu’une lecture vidéo franchit un jalon, la page appelle Adobe Analytics pour effectuer le suivi du événement.
 * The [static set of CQ variables](#cqvars) that are defined for mapping with Adobe Analytics properties.
-* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe.
+* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
 
 Le format du nom de ces variables CQ est le suivant :
 
@@ -274,11 +274,11 @@ eventdata.events.milestoneXX
 
    Les valeurs de décalage doivent être des entiers supérieurs à 0.
 
-1. Pour mapper les variables CQ avec les propriétés Analytics Adobe, faites glisser les propriétés Adobe Analytics de ContentFinder à côté de la variable CQ sur le composant.
+1. Pour mapper les variables CQ aux propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics depuis ContentFinder en regard de la variable CQ sur le composant.
 
    For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
 
-1. [Ajoutez la structure](/help/sites-administering/adobeanalytics.md) sur la page.
+1. [Ajoutez la structure](/help/sites-administering/adobeanalytics.md) à la page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
 
 ## Jalons hérités {#legacy-milestones}
@@ -293,7 +293,7 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
 
    * Par exemple, 10, 50, 75, 100
 
-   De plus, les informations envoyées à Adobe Analytics sont moins personnalisables ; seules 3 variables sont disponibles pour le mappage :
+   En outre, les informations envoyées à Adobe Analytics sont moins personnalisables ; seules 3 variables sont disponibles pour le mappage :
 
 <table>
  <tbody>
@@ -320,7 +320,7 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
 
    The **rest of the relevant information** in the call will be sent concatenated into **one** variable named **pev3**.
 
-   **Les exemples d’appels** à Adobe Analytics à l’aide de l’exemple fourni doivent ressembler à celui-ci lors de l’affichage avec le débogueur DigitalPulse :
+   **Les exemples d’appels** vers Adobe Analytics à l’aide de l’exemple fourni doivent ressembler à celui-ci lors de l’affichage avec le débogueur DigitalPulse :
 
    ![lmilestones1](assets/lmilestones1.png)
 
@@ -334,13 +334,13 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
 
    * *Total des secondes de lecture* : nombre total de secondes de lecture de la vidéo (*25*)
 
-   * *Horodatage* Début - Horodatage qui identifie le moment où la lecture de la vidéo a commencé (*1331035567*)
+   * *Horodatage* début - Horodatage qui identifie le moment où la lecture de la vidéo a commencé (*1331035567*)
 
    * *Play Session* - Détails de la session de lecture. Ce champ indique comment l’utilisateur a interagi avec la vidéo. This might include data such as where they started playing the video, whether they used the video slider to advance the video, and where they stopped playing the video (*L10E24S58L58 - video was stopped at sec. 25 de la section L10, puis avance rapide jusqu’à la seconde 48*)
 
 ## Secondes héritées {#legacy-seconds}
 
-Lors de l’utilisation de la méthode** legacy seconds**, les appels Adobe sont déclenchés toutes les N-e secondes, où N est spécifié dans le champ de décalage de la piste.
+Lors de l’utilisation de la méthode** legacy seconds**, les appels Adobe Analytics sont déclenchés toutes les N-e secondes, où N est spécifié dans le champ de décalage de suivi.
 
 1. Définissez le décalage de la piste sur n’importe quel nombre de secondes,
 
