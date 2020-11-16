@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '615'
+ht-degree: 81%
 
 ---
 
@@ -49,6 +52,7 @@ Suivez ces étapes pour configurer la purge du journal d’audit :
    * **Chemin d’accès au contenu :** chemin d’accès au contenu auquel la règle s’appliquera.
    * **Âge minimum :** nombre de jours pendant lesquels les journaux d’audit doivent être conservés.
    * **Type de journal d’audit :** type de journal d’audit à purger.
+
    >[!NOTE]
    >
    >The content path only applies to children of the `/var/audit/com.day.cq.wcm.core.page` node in the repository.
@@ -64,9 +68,9 @@ Suivez ces étapes pour configurer la purge du journal d’audit :
 
 1. Vous pouvez inspecter la date de la prochaine exécution, configurer la prochaine exécution ou l’exécuter manuellement en appuyant sur le bouton de lecture.
 
-Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâche de purge du journal d’audit ne puisse se terminer, la tâche s’arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
+Dans AEM 6.3, si la fenêtre de maintenance planifiée se ferme avant que la tâche de purge du journal d&#39;audit ne puisse se terminer, la tâche s&#39;arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
 
-**Avec AEM 6.5**, vous pouvez arrêter manuellement une tâche de purge du journal d’audit en cours d’exécution en cliquant sur l’icône **Arrêter** . La tâche reprendra sans risque à la prochaine exécution.
+**Avec AEM 6.5**, vous pouvez arrêter manuellement une Tâche de purge du journal d&#39;audit en cours d&#39;exécution en cliquant sur l&#39;icône **Arrêter** . La tâche reprendra sans risque à la prochaine exécution.
 
 >[!NOTE]
 >
