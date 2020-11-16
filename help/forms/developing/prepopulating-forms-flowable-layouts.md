@@ -1,6 +1,6 @@
 ---
-title: Préremplissage des formulaires avec des dispositions souple
-seo-title: Préremplissage des formulaires avec des dispositions souple
+title: Préremplissage de Forms avec des mises en page souples
+seo-title: Préremplissage de Forms avec des mises en page souples
 description: 'null'
 seo-description: 'null'
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
@@ -18,9 +18,9 @@ ht-degree: 4%
 ---
 
 
-# Préremplissage des formulaires avec des dispositions souple {#prepopulating-forms-with-flowable-layouts1}
+# Préremplissage de Forms avec des mises en page souples {#prepopulating-forms-with-flowable-layouts1}
 
-## Préremplissage des formulaires avec des dispositions souple {#prepopulating-forms-with-flowable-layouts2}
+## Préremplissage de Forms avec des mises en page souples {#prepopulating-forms-with-flowable-layouts2}
 
 Le préremplissage de formulaires affiche les données pour les utilisateurs dans un formulaire rendu. Supposons, par exemple, qu’un utilisateur se connecte à un site Web avec un nom d’utilisateur et un mot de passe. Si l’authentification réussit, l’application cliente requête une base de données pour obtenir des informations sur l’utilisateur. Les données sont fusionnées dans le formulaire, puis le formulaire est rendu à l’utilisateur. Par conséquent, l’utilisateur peut vue des données personnalisées dans le formulaire.
 
@@ -57,7 +57,7 @@ Une fois que vous avez prérempli le formulaire de confirmation avec cette sourc
 
 ### Préremplissage de formulaires avec des dispositions à disposition souple {#prepopulating_forms_with_flowable_layouts-1}
 
-Les formulaires dotés de dispositions à disposition souple sont utiles pour afficher une quantité indéterminée de données pour les utilisateurs. Comme la disposition du formulaire s’ajuste automatiquement à la quantité de données fusionnées, il n’est pas nécessaire de prédéfinir une disposition ou un nombre de pages fixes pour le formulaire, comme vous le devez pour un formulaire avec une disposition fixe.
+Les Forms avec des dispositions souples sont utiles pour afficher une quantité indéterminée de données pour les utilisateurs. Comme la disposition du formulaire s’ajuste automatiquement à la quantité de données fusionnées, il n’est pas nécessaire de prédéfinir une disposition ou un nombre de pages fixes pour le formulaire, comme vous le devez pour un formulaire avec une disposition fixe.
 
 Un formulaire est généralement renseigné avec des données obtenues lors de l’exécution. Par conséquent, vous pouvez préremplir un formulaire en créant une source de données XML en mémoire et en plaçant les données directement dans la source de données XML en mémoire.
 
@@ -104,7 +104,7 @@ Le diagramme suivant illustre un exemple de formulaire de bon de commande. Les i
 
 ### Considérations relatives à la conception de formulaire {#form-design-considerations}
 
-Les formulaires dotés de dispositions souples sont basés sur les conceptions de formulaire créées dans Designer. Une conception de formulaire spécifie un ensemble de règles de disposition, de présentation et de capture de données, y compris le calcul de valeurs en fonction des entrées utilisateur. Les règles sont appliquées lorsque des données sont entrées dans un formulaire. Les champs ajoutés à un formulaire sont des sous-formulaires qui se trouvent dans la conception de formulaire. Par exemple, dans le formulaire de bon de commande illustré dans le diagramme précédent, chaque ligne est un sous-formulaire. Pour plus d’informations sur la création d’une conception de formulaire contenant des sous-formulaires, voir [Création d’un formulaire de bon de commande doté d’une disposition](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)souple.
+Les Forms avec des dispositions souples sont basées sur les conceptions de formulaire créées dans Designer. Une conception de formulaire spécifie un ensemble de règles de disposition, de présentation et de capture de données, y compris le calcul de valeurs en fonction des entrées utilisateur. Les règles sont appliquées lorsque des données sont entrées dans un formulaire. Les champs ajoutés à un formulaire sont des sous-formulaires qui se trouvent dans la conception de formulaire. Par exemple, dans le formulaire de bon de commande illustré dans le diagramme précédent, chaque ligne est un sous-formulaire. Pour plus d’informations sur la création d’une conception de formulaire contenant des sous-formulaires, voir [Création d’un formulaire de bon de commande doté d’une disposition](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)souple.
 
 ### Présentation des sous-groupes de données {#understanding-data-subgroups}
 
@@ -171,7 +171,7 @@ La source de données XML suivante est utilisée pour préremplir le formulaire 
 
 Notez que chaque sous-groupe de données contient quatre éléments XML qui correspondent à ces informations :
 
-* Numéro de pièce d&#39;articles
+* Numéro de pièce des articles
 * Description des éléments
 * Quantité d&#39;articles
 * Prix unitaire
@@ -187,7 +187,7 @@ Chaque sous-groupe de données doit contenir des éléments XML correspondant au
 
 >[!NOTE]
 >
->Si vous tentez de préremplir un formulaire avec une source de données contenant des éléments XML répétitifs et que vous définissez l’ `RenderAtClient` option sur `No`, seul le premier enregistrement de données est fusionné dans le formulaire. Pour vous assurer que tous les enregistrements de données sont fusionnés dans le formulaire, définissez la variable `RenderAtClient` sur `Yes`. Pour plus d’informations sur l’ `RenderAtClient` option, voir [Rendu de formulaires sur le client](/help/forms/developing/rendering-forms-client.md).
+>Si vous tentez de préremplir un formulaire avec une source de données contenant des éléments XML répétitifs et que vous définissez l’ `RenderAtClient` option sur `No`, seul le premier enregistrement de données est fusionné dans le formulaire. Pour vous assurer que tous les enregistrements de données sont fusionnés dans le formulaire, définissez la variable `RenderAtClient` sur `Yes`. Pour plus d’informations sur l’ `RenderAtClient` option, voir [Rendu Forms sur le client](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
@@ -232,11 +232,11 @@ Vous générez un formulaire prérempli comme tout autre formulaire. La seule di
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Débuts rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Débuts rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Création d’Applications web renvoyant des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Création d’Applications web renvoyant Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Préremplissage de formulaires à l’aide de l’API Java {#prepopulating-forms-using-the-java-api}
 
@@ -303,13 +303,13 @@ Pour préremplir un formulaire avec une disposition souple à l’aide de l’AP
    * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour envoyer un flux de données de formulaire au navigateur Web client.
    * Créez un `com.adobe.idp.Document` objet en appelant la `FormsResult` méthode de l’ `getOutputContent` objet.
    * Créez un `java.io.InputStream` objet en appelant la `com.adobe.idp.Document` méthode de l’ `getInputStream` objet.
-   * Créez un tableau d’octets pour le remplir avec le flux de données du formulaire en invoquant la `InputStream` `read` méthode de l’objet et en transmettant le tableau d’octets comme argument.
+   * Créez un tableau d’octets pour le remplir avec le flux de données du formulaire en appelant la `InputStream` `read` méthode de l’objet et en transmettant le tableau d’octets comme argument.
    * Appelez la méthode `javax.servlet.ServletOutputStream` de l’objet `write` pour envoyer le flux de données du formulaire au navigateur Web client. Transférez le tableau d’octets à la `write` méthode.
 
 
 **Voir également**
 
-[Début rapide (mode SOAP) : Préremplissage de formulaires avec des dispositions souple à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Début rapide (mode SOAP) : Préremplissage de Forms avec des dispositions souple à l’aide de l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
