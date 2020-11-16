@@ -68,7 +68,7 @@ Pour assembler un document PDF unique à partir de plusieurs documents PDF, effe
 1. Incluez des fichiers de projet.
 1. Créez un client PDF Assembler.
 1. Référencez un document DDX existant.
-1. documents PDF d’entrée de référence.
+1. Documents PDF d’entrée de référence.
 1. Définissez les options d’exécution.
 1. Assemblage des documents PDF d’entrée.
 1. Extrayez les résultats.
@@ -82,10 +82,10 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si le AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel les AEM Forms sont déployés.
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Création d’un client PDF Assembler**
 
@@ -95,7 +95,7 @@ Avant de pouvoir exécuter une opération Assembler par programmation, vous deve
 
 Un document DDX doit être référencé pour assembler un document PDF. Prenons l’exemple du document DDX introduit dans cette section. Ce document DDX demande au service Assembler de fusionner deux documents PDF en un seul document PDF.
 
-**documents PDF d’entrée de référence**
+**Documents PDF d’entrée de référence**
 
 Référencez les documents PDF d’entrée que vous souhaitez transmettre au service Assembler. Par exemple, si vous souhaitez transmettre deux documents PDF d’entrée nommés Carte et Direction, vous devez transmettre les fichiers PDF correspondants.
 
@@ -107,7 +107,7 @@ Le fichier map.pdf et le fichier directions.pdf doivent tous deux être placés 
 
 **Définition des options d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de `AssemblerOptionSpec` classe dans Référence [API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de `AssemblerOptionSpec` classe dans Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Assemblage des documents PDF d’entrée**
 
@@ -172,7 +172,7 @@ Assemblage d’un document PDF à l’aide de l’API Service Assembler (Java) :
    * Créez un `java.io.FileInputStream` objet qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
-1. documents PDF d’entrée de référence.
+1. Documents PDF d’entrée de référence.
 
    * Créez un `java.util.Map` objet utilisé pour stocker des documents PDF d’entrée à l’aide d’un `HashMap` constructeur.
    * Pour chaque document PDF d’entrée, créez un `java.io.FileInputStream` objet en utilisant son constructeur et en transmettant l’emplacement du document PDF d’entrée.
@@ -227,7 +227,7 @@ Assemblage de documents PDF à l’aide de l’API Service Assembler (service We
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF Assembler.
 
@@ -250,7 +250,7 @@ Assemblage de documents PDF à l’aide de l’API Service Assembler (service We
    * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’ `BLOB` objet en attribuant sa `MTOM` propriété au contenu du tableau d’octets.
 
-1. documents PDF d’entrée de référence.
+1. Documents PDF d’entrée de référence.
 
    * Pour chaque document PDF d’entrée, créez un `BLOB` objet à l’aide de son constructeur. L’ `BLOB` objet est utilisé pour stocker le document PDF d’entrée.
    * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.
@@ -260,8 +260,8 @@ Assemblage de documents PDF à l’aide de l’API Service Assembler (service We
    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Cet objet de collection est utilisé pour stocker les documents PDF d’entrée.
    * Pour chaque document PDF d’entrée, créez un `MyMapOf_xsd_string_To_xsd_anyType_Item` objet. Par exemple, si deux documents PDF d’entrée sont utilisés, créez deux `MyMapOf_xsd_string_To_xsd_anyType_Item` objets.
    * Attribuez une valeur de chaîne qui représente le nom de clé au `MyMapOf_xsd_string_To_xsd_anyType_Item` `key` champ de l’objet. Cette valeur doit correspondre à la valeur de l’élément source PDF spécifié dans le document DDX. (Effectuez cette tâche pour chaque document PDF d’entrée.)
-   * Affectez l’ `BLOB` objet qui stocke le document PDF au `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` champ de l’objet. (Effectuez cette tâche pour chaque document PDF d’entrée.)
-   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet sur l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object&#39;s `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Effectuez cette tâche pour chaque document PDF d’entrée.)
+   * Affectez l’objet `BLOB` qui stocke le document PDF au `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` champ de l’objet. (Effectuez cette tâche pour chaque document PDF d’entrée.)
+   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet à l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object&#39;s `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Effectuez cette tâche pour chaque document PDF d’entrée.)
 
 1. Définissez les options d’exécution.
 
