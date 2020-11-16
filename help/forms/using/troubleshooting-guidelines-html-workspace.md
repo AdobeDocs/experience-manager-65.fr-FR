@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 80%
 
 ---
 
@@ -23,7 +26,7 @@ Cet article explique comment déboguer l’espace de travail AEM Forms en activa
 
 Après l’installation du correctif, ouvrez l’espace de travail AEM Forms. If you encounter the No Resource Found error, open the CRX Package Manager, and reinstalling the `adobe-lc-workspace-pkg-<version>.zip` package.
 
-Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
+Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, effectuez les étapes suivantes :
 
 1. Connectez-vous à CRX DE Lite. The default url is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Supprimez le noeud suivant :
