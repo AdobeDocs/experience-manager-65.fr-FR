@@ -1,6 +1,6 @@
 ---
-title: Aide-mémoire pour Sling
-seo-title: Aide-mémoire pour Sling
+title: 'Aide-mémoire pour Sling '
+seo-title: 'Aide-mémoire pour Sling '
 description: Référence Sling
 seo-description: Référence Sling
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
@@ -13,13 +13,13 @@ translation-type: tm+mt
 source-git-commit: c6b1d651940b5c556dea81d19354aac36d14b423
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 38%
+ht-degree: 100%
 
 ---
 
 
-# Aide-mémoire pour Sling{#sling-cheatsheet}
+# Aide-mémoire pour Sling {#sling-cheatsheet}
 
 ![Présentation de la résolution du script Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Utilisation de SlingPostServlet : il s’agit du gestionnaire par défaut pour vos requêtes POST ; il peut faire pratiquement n&#39;importe quoi.](assets/sling-cheatsheet-02.png)
+![Utilisation de SlingPostServlet : il s’agit du gestionnaire par défaut pour vos requêtes POST ; il peut pratiquement tout faire.](assets/sling-cheatsheet-02.png)
