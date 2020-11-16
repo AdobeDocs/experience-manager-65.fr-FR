@@ -25,7 +25,7 @@ Pour vue et modifier la page de propriétés d’un fichier, procédez comme sui
 
    ![Onglet de base Propriétés du fichier, où le type de fichier ne peut pas être modifié](assets/asset-properties-basic-tab.png)
 
-*Figure : Onglet Simple sur[!UICONTROL Propriétés]du fichier.*
+*Figure : Onglet Simple sur [!UICONTROL Propriétés]du fichier.*
 
 Pour modifier le type MIME d’une ressource, utilisez un formulaire de schéma de métadonnées personnalisé ou modifiez un formulaire existant. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. Si vous modifiez le schéma de métadonnées d’un type MIME, la mise en page des propriétés des fichiers et de tous les sous-types est modifiée. Par exemple, la modification d’un schéma jpeg sous `default/image` concerne uniquement la disposition des métadonnées (propriétés de ressource) des ressources du type MIME `image/jpeg`. Si vous modifiez le schéma par défaut, les modifications changent toutefois la disposition des métadonnées pour tous les types de ressources.
 
@@ -74,7 +74,7 @@ Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouve
 
    ![Editeur de Schéma de métadonnées pour personnaliser la page Propriétés du fichier](assets/metadata-schema-editor.png)
 
-   *Figure : Page de l’éditeur[!UICONTROL de Schéma de]métadonnées contenant des onglets disponibles.*
+   *Figure : Page de l’éditeur [!UICONTROL de Schéma de] métadonnées contenant des onglets disponibles.*
 
 1. Pour configurer un composant, sélectionnez-le et modifiez ses propriétés dans l’onglet **[!UICONTROL Paramètres]**.
 
