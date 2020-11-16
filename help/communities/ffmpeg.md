@@ -22,13 +22,13 @@ ht-degree: 1%
 
 ## Présentation {#overview}
 
-FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu et, lorsqu’elle est installée, elle est utilisée pour le transcodage approprié des fichiers [](../../help/sites-authoring/default-components-foundation.md#video) vidéo ainsi que pour la fonction d’activation des AEM Communities.
+FFmpeg est une solution de conversion et de diffusion audio et vidéo en flux continu et, lorsqu’elle est installée, elle est utilisée pour le transcodage correct des ressources [](../../help/sites-authoring/default-components-foundation.md#video) vidéo ainsi que pour la fonction d’activation des communautés AEM.
 
 Le mpeg est utilisé dans l’environnement d’auteur pour obtenir des métadonnées pour les ressources d’activation téléchargées et pour générer une miniature à afficher lors de la mise en vente de la ressource d’activation.
 
 ## Installation de FFmpeg {#installing-ffmpeg}
 
-FFmpeg doit être installé sur le ou les serveurs hébergeant les instances d’ *auteur* AEM.
+FFmpeg doit être installé sur le ou les serveurs hébergeant les instances d&#39; *auteur* AEM.
 
 1. Go to [https://www.ffmpeg.org](https://www.ffmpeg.org/).
 1. Téléchargez la dernière version de FFmpeg pour votre environnement spécifique (Macintosh, Windows ou Linux).
@@ -54,7 +54,7 @@ Pour modifier le processus de mise à jour des actifs  DAM et, dans cet exemple,
 * Connectez-vous à l’instance d’auteur avec des privilèges d’administration.
 * Dans la navigation globale, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
 * Locate **[!UICONTROL DAM Update Asset]**.
-* Cliquez sur le Doublon pour ouvrir le processus de modification dans l’interface utilisateur de Classic.
+* Cliquez sur le doublon pour ouvrir le processus de modification dans l’interface utilisateur de Classic.
 
    Emplacement résultant : [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
