@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +81,7 @@ Vous pouvez configurer le fournisseur de services de référentiel à utiliser a
 
 Les options suivantes sont disponibles :
 
-**Nom actuel du fournisseur de référentiel :** Nom du de référentiel actuel
+**Nom actuel du fournisseur de référentiel :** Nom du prestataire de référentiel actuel
 
 **Fournisseur de référentiel IBM FileNet :** Fait du fournisseur de référentiel FileNet le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
 
