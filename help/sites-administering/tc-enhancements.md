@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 67%
 
 ---
 
@@ -20,7 +23,7 @@ Cette page présente les améliorations et les perfectionnements incrémentiels 
 
 ## Automatisation des projets de traduction {#translation-project-automation}
 
-Des options permettant d’améliorer la productivité des projets de traduction ont été ajoutées, comme la promotion et la suppression automatiques des lancements de traduction et la planification de l’exécution récurrente d’un projet de traduction.
+Des options ont été ajoutées pour améliorer la productivité du travail avec les projets de traduction, telles que la promotion et la suppression automatiques des lancements de traduction et la planification de l’exécution récurrente d’un projet de traduction.
 
 1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension en bas de la mosaïque **Résumé de traduction**.
 
@@ -30,17 +33,17 @@ Des options permettant d’améliorer la productivité des projets de traduction
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
-1. Vous pouvez éventuellement sélectionner si, après réception du contenu traduit, les lancements de traduction doivent être automatiquement promus et supprimés.
+1. Vous pouvez éventuellement sélectionner si, après avoir reçu du contenu traduit, les lancements de traduction doivent être automatiquement promus et supprimés.
 
    ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. Pour sélectionner l’exécution périodique d’un projet de traduction, sélectionnez la fréquence avec la liste déroulante sous **Répéter la traduction**. L’exécution récurrente du projet créera et exécutera automatiquement les tâches de traduction aux intervalles spécifiés.
+1. Pour sélectionner l’exécution périodique d’un projet de traduction, sélectionnez la fréquence avec la liste déroulante sous **Répéter la traduction**. L&#39;exécution périodique du projet créera et exécutera automatiquement des tâches de traduction aux intervalles spécifiés.
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
 ## Projets de traduction multilingues {#multilingual-translation-projects}
 
-Il est possible de configurer plusieurs langues cibles dans un projet de traduction, afin de réduire le nombre total de projets de traduction créés.
+Il est possible de configurer plusieurs langues de cible dans un projet de traduction, afin de réduire le nombre total de projets de traduction créés.
 
 1. Dans votre projet de traduction, cliquez ou appuyez sur les points de suspension au bas de la mosaïque **Résumé de traduction**.
 
@@ -86,6 +89,7 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
+
 >
 >
 Cette copie de la langue `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
