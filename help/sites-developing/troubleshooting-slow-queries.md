@@ -421,7 +421,7 @@ Therefore, ensure an indexes satisfy queries, except if the combination of path 
 
 ### Prise en charge par Adobe {#adobe-supported}
 
-* **Débogueur du créateur de Requêtes**
+* **Débogueur du créateur de requêtes**
 
    * Interface utilisateur web destinée à exécuter des requêtes Query Builder et à générer le XPath connexe (à utiliser dans l’outil Expliquer la requête ou dans le Générateur de définitions d’index en Oak).
    * Located on AEM at [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
