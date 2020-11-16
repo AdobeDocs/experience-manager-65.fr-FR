@@ -12,6 +12,9 @@ discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 91%
 
 ---
 
@@ -26,7 +29,7 @@ D’autres composants sont également disponibles. Vous pouvez utiliser le mode 
 >
 >Soyez prudent lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges (et de l’expérience) appropriés, généralement un administrateur ou un développeur. Pour plus d’informations, reportez-vous à la section [Développement de composants](/help/sites-developing/components.md).
 
-Cela implique en fait d’ajouter, ou de supprimer, les composants autorisés dans le système de paragraphe pour la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
+Cela implique en fait d&#39;ajouter, ou de supprimer, les composants autorisés dans le système de paragraphes pour la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
 
 Par exemple, le contenu d’une page des produits peut contenir un système de paragraphes avec les éléments suivants :
 
