@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +26,7 @@ Ils représentent généralement une bonne partie du traitement effectué dans u
 
 Il est donc vivement conseillé de planifier soigneusement vos implémentations de workflow.
 
-## Configuration{#configuration}
+## Configuration {#configuration}
 
 Lors de la configuration des processus de workflow (qu’ils soient personnalisés et/ou standard), vous devez tenir compte de plusieurs éléments.
 
@@ -58,7 +61,7 @@ Pour remédier à ce problème, Adobe recommande de configurer le **nombre maxim
 
 To configure **Maximum Parallel Jobs**, you can either:
 
-* Configure the **[OSGi Configuration](/help/sites-deploying/configuring-osgi.md)**from the AEM Web console; for **Queue: Granite Workflow Queue**(an **Apache Sling Job Queue Configuration**).
+* Configure the **[OSGi Configuration](/help/sites-deploying/configuring-osgi.md)** from the AEM Web console; for **Queue: Granite Workflow Queue** (an **Apache Sling Job Queue Configuration**).
 
 * Configure the queue can from the **Sling Jobs** option of the AEM Web console; for **Job Queue Configuration: Granite Workflow Queue**, at `http://localhost:4502/system/console/slingevent`.
 
@@ -106,6 +109,7 @@ Les modèles de workflow sont stockés dans le référentiel en fonction de leur
    >
    >* placer vos modèles de workflow personnalisés dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -141,6 +145,7 @@ Les définitions du lanceur de workflow sont également stockées dans le réfé
    >
    >* placer vos lanceurs de workflow personnalisés dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -172,6 +177,7 @@ Les scripts de workflow sont également stockés dans le référentiel en foncti
    >
    >* placer vos scripts de workflow personnalisés dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -199,6 +205,7 @@ Les notifications de workflow sont également stockées dans le référentiel en
    >
    >* placer vos définitions de notification de workflow personnalisées dans ce dossier,
    >* edit anything in `/libs`
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -295,7 +302,7 @@ Il est recommandé d’utiliser l’avance du gestionnaire, car elle offre les m
 
 Vous pouvez définir des [phases de processus](/help/sites-developing/workflows.md#workflow-stages), puis affecter des tâches/étapes à une phase spécifique.
 
-Ces informations sont utilisées pour afficher la progression d’un workflow lorsque vous cliquez sur l’onglet [**Informations du processus **d’un élément de travail dans la** Boîte de réception **](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Les modèles de workflow existants peuvent être modifiés pour ajouter des phases.
+Ces informations sont utilisées pour afficher la progression d’un workflow lorsque vous cliquez sur l’onglet [**Informations du processus** d’un élément de travail dans la **Boîte de réception**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Les modèles de workflow existants peuvent être modifiés pour ajouter des phases.
 
 ### Étape Activer le processus de page {#activate-page-process-step}
 
