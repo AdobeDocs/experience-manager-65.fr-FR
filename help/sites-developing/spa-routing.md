@@ -1,8 +1,8 @@
 ---
-title: Routage de modèle SPA
-seo-title: Routage de modèle SPA
-description: Pour les applications d’une seule page dans AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
-seo-description: Pour les applications d’une seule page dans AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+title: routage de modèle SPA
+seo-title: routage de modèle SPA
+description: Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+seo-description: Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 uuid: 93b4f85a-a240-42d4-95e2-e8b790df7723
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,13 +18,13 @@ ht-degree: 4%
 ---
 
 
-# Routage de modèle SPA{#spa-model-routing}
+# routage de modèle SPA{#spa-model-routing}
 
-Pour les applications d’une seule page dans AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 
 >[!NOTE]
 >
->L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
 
 ## Routage du projet {#project-routing}
 
@@ -32,7 +32,7 @@ L’application est propriétaire du routage et est ensuite implémentée par le
 
 ## Architecture {#architecture}
 
-Pour une description détaillée, reportez-vous à la section [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) du document de plan d&#39;application d&#39;une seule page.
+Pour obtenir une description détaillée, consultez la section [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) du document de schéma directeur SPA.
 
 ## ModelRouter {#modelrouter}
 
@@ -40,7 +40,7 @@ Lorsque cette option est activée, `ModelRouter` - encapsule les fonctions de l�
 
 ## Routage de modèle manuel ou automatique {#manual-vs-automatic-model-routing}
 
-Le `ModelRouter` système automatise la récupération des fragments du modèle. Mais comme tout outil automatisé vient avec des limites. Si nécessaire, `ModelRouter` vous pouvez désactiver ou configurer le paramètre pour ignorer les chemins d’accès à l’aide des propriétés de métadonnées (voir la section Meta Properties du document de composants [de page](/help/sites-developing/spa-page-component.md) SPA). Les développeurs frontaux peuvent alors mettre en oeuvre leur propre couche de routage de modèle en demandant `PageModelManager` à la fonction de charger tout fragment de modèle donné à l&#39;aide de la `getData()` fonction.
+Le `ModelRouter` système automatise la récupération des fragments du modèle. Mais comme tout outil automatisé vient avec des limites. Si nécessaire, `ModelRouter` vous pouvez désactiver ou configurer le paramètre pour ignorer les chemins à l&#39;aide des propriétés de métadonnées (voir la section Meta Properties du document de composants [de page](/help/sites-developing/spa-page-component.md) SPA). Les développeurs frontaux peuvent alors mettre en oeuvre leur propre couche de routage de modèle en demandant `PageModelManager` à la fonction de charger tout fragment de modèle donné à l&#39;aide de la `getData()` fonction.
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Le `ModelRouter` système automatise la récupération des fragments du modèle.
 
 ## Contrat de routage {#routing-contract}
 
-L’implémentation actuelle repose sur l’hypothèse que le projet d’application d’une seule page utilise l’API d’historique HTML5 pour le routage des différentes pages de l’application.
+L’implémentation actuelle repose sur l’hypothèse que le projet SPA utilise l’API d’historique HTML5 pour le routage sur les différentes pages de l’application.
 
 ### Configuration {#configuration}
 
