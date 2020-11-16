@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 79%
 
 ---
 
@@ -46,7 +49,7 @@ Les autorisations au niveau du nœud déterminent si les liens sont visibles ou 
 
 * **Ressources numériques:** `/libs/wcm/core/content/damadmin`
 
-* **** Communauté : `/libs/collab/core/content/admin`
+* **Communauté :** `/libs/collab/core/content/admin`
 
 * **Campagnes:** `/libs/mcm/content/admin`
 
@@ -56,7 +59,7 @@ Les autorisations au niveau du nœud déterminent si les liens sont visibles ou 
 
 * **Outils:** `/libs/wcm/core/content/misc`
 
-* **** Balisage : `/libs/cq/tagging/content/tagadmin`
+* **Balisage:** `/libs/cq/tagging/content/tagadmin`
 
 Par exemple :
 
@@ -83,11 +86,11 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td> </td>
   </tr>
   <tr>
-   <td> Services cloud</td>
+   <td> Cloud Services</td>
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>
-   <td> Workflows</td>
+   <td> Workflows   </td>
    <td><code>/libs/cq/core/content/welcome/resources/workflows</code></td>
   </tr>
   <tr>
@@ -196,6 +199,7 @@ In `/libs/cq/core/components/welcome/welcome.jsp` use is made of [ConsoleUtil](h
 >Exécutez la requête suivante pour afficher la liste existante :
 >
 >* `select * from cq:Console`
+
 >
 
 
