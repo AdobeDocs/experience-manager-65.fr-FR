@@ -72,10 +72,10 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si le AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel le AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un client Assembler**
 
@@ -91,7 +91,7 @@ Un document PDF non sécurisé doit être référencé et transmis au service As
 
 **Définition des options d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de `AssemblerOptionSpec` classe dans Référence [API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de `AssemblerOptionSpec` classe dans Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Chiffrer le document**
 
@@ -162,7 +162,7 @@ Si un seul document PDF est transmis au service Assembler, le service Assembler 
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Assembler.
 
