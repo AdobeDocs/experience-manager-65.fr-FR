@@ -45,7 +45,7 @@ Contactez le service à la [clientèle](https://helpx.adobe.com/fr/marketing-clo
 
 Si le contenu UGC préexistant doit être conservé, les moyens de le faire dépendent du stockage [sur site](#on-premise-storage) ou dans le cloud [d&#39;](#adobe-cloud-storage)Adobe du déploiement.
 
-### enregistrement Adobe Cloud {#adobe-cloud-storage}
+### Enregistrement Adobe Cloud {#adobe-cloud-storage}
 
 Si le site mis à niveau a été configuré pour utiliser l&#39;enregistrement Adobe Cloud, il peut apparaître (incorrectement) comme si l&#39;ensemble de l&#39;UGC avait été perdu car les méthodes SRP ne pourront pas localiser l&#39;UGC préexistant à l&#39;ancien emplacement.
 
