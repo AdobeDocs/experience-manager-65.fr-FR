@@ -12,6 +12,9 @@ discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 66%
 
 ---
 
@@ -26,9 +29,9 @@ Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide
 
 >[!NOTE]
 >
->Il existe diverses réglementations en matière de protection des données et de confidentialité; y compris, par exemple, le RDPC et l&#39;ACCP. Les sites AEM sont prêts à aider les clients à respecter leurs obligations en matière de protection des données et de confidentialité. Cette page guide les clients à travers les procédures de souscription à la collecte de statistiques d’utilisation agrégées (et d’exclusion de celle-ci).
+>Il existe divers règlements en matière de protection des données et de protection de la vie privée ; y compris, par exemple, le RGPD et l&#39;ACCP. AEM Sites est prêt à aider les clients à respecter leurs obligations en matière de protection des données et de respect de la vie privée. Cette page guide les clients à travers les procédures de souscription à la collecte de statistiques d’utilisation agrégées (et d’exclusion de celle-ci).
 >
->Pour plus d’informations, consultez également le Centre [de confidentialité d’](https://www.adobe.com/privacy.html)Adobe.
+>Pour plus d&#39;informations, consultez également le Centre [de confidentialité des](https://www.adobe.com/privacy.html)Adobes.
 
 >[!NOTE]
 >
@@ -67,11 +70,11 @@ Vous pouvez souscrire (ou vous exclure) à l’aide de la console web, comme sui
 1. Recherchez **Collecte de statistiques d’utilisation agrégées**.
 1. Click the **Edit** icon.
 
-   ![usage_statistics_collection_edit](assets/usage_statisticscollectionedit.png)
+   ![usage_statistics_collectionedit](assets/usage_statisticscollectionedit.png)
 
 1. Select the **Enabled** checkbox. Vous pouvez également désélectionner la case si vous souhaitez vous exclure de la collecte de statistiques d’utilisation.
 
    ![usage_statistics_select](assets/usage_statisticsselect.png)
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
