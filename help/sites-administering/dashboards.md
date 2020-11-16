@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 71%
 
 ---
 
@@ -86,13 +89,13 @@ Les composants de génération de rapports sont initialisés avec une configurat
 
 L’onglet **De base** vous donne accès aux entrées de configuration suivantes :
 
-**Titre** Titre affiché dans le tableau de bord.
+**Titre** Titre affiché sur le tableau de bord.
 
 **Type** de demande Mode de demande des données.
 
-**Configuration de SiteCatalyst (facultatif)** Configuration que vous souhaitez utiliser pour vous connecter à SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
+**Configuration du SiteCatalyst (facultative)** Configuration à utiliser pour la connexion au SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
 
-**Identifiant de Report Suite (facultatif)** Suite de rapports SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
+**Identifiant de Report Suite (facultatif)** Suite de rapports de SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
 
 #### Configuration du rapport {#report-configuration}
 
@@ -102,9 +105,9 @@ Pour pouvoir afficher des statistiques web, vous devez définir la plage de date
 >
 >La définition d’une plage de dates étendue a pour effet de diminuer la réactivité du tableau de bord.
 
-**Date à partir** de la date absolue ou relative à partir de laquelle les données sont récupérées.
+**Date à partir** de la date absolue ou relative à partir de laquelle les données sont extraites.
 
-**Date jusqu’à** Date absolue ou relative à laquelle les données sont récupérées.
+**Date à** la date absolue ou relative à laquelle les données sont extraites.
 
 Chaque composant définit également des paramètres spécifiques.
 
@@ -112,29 +115,29 @@ Chaque composant définit également des paramètres spécifiques.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularité par date** Unité d&#39;heure de l&#39;axe X (par exemple, jour, heure).
+**Granularité** de la date Unité d&#39;heure de l&#39;axe X (par exemple, jour, heure).
 
-**Mesures** Liste des événements à afficher.
+**Mesures** liste des événements à afficher.
 
-**Eléments** Liste des éléments qui ventile les données de mesures dans le graphique.
+**Eléments** liste des éléments qui ventilent les données de mesures dans le graphique.
 
 #### Rapport de liste avec classement {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**Eléments** Elément qui ventile les données de mesures dans le graphique.
+**Eléments** Elément qui ventile les données des mesures dans le graphique.
 
-**Mesures** Événement à afficher.
+**Mesures** événement à afficher.
 
-**Non. des principaux éléments** Nombre d’éléments affichés par le rapport.
+**Non. des principaux éléments** Nombre d&#39;éléments affichés par le rapport.
 
 #### Rapport avec classement {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
-**Mesures** Événement à afficher.
+**Mesures** événement à afficher.
 
-**Eléments** Elément qui ventile les données de mesures dans le graphique.
+**Eléments** Elément qui ventile les données des mesures dans le graphique.
 
 #### Rapport de section du site supérieur {#top-site-section-report}
 
@@ -148,11 +151,11 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularité par date** Unité d&#39;heure de l&#39;axe X (par exemple, jour, heure).
+**Granularité** de la date Unité d&#39;heure de l&#39;axe X (par exemple, jour, heure).
 
-**Mesures** Événement à afficher.
+**Mesures** événement à afficher.
 
-**Eléments** Elément qui ventile les données de mesures dans le graphique.
+**Eléments** Elément qui ventile les données des mesures dans le graphique.
 
 ## Extension du tableau de bord {#extending-dashboard}
 
@@ -235,7 +238,7 @@ $.ajax({
 });
 ```
 
-Le `JSP` rapport comprend les deux `global.jsp` et `clientlib`.
+Le `JSP` comprend à la fois `global.jsp` et `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 
