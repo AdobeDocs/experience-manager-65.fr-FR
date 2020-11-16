@@ -148,7 +148,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 >
 >Les nouveaux profils vidéo et leurs modifications doivent être activés pour la publication.
 
-1. Dans AEM, appuyez sur **[!UICONTROL Outils]> Console** de configuration.
+1. Dans AEM, appuyez sur **[!UICONTROL Outils] > Console ** de configuration.
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
 1. Créez un nouveau profil vidéo S7. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Attribuez un nom à la nouvelle page de profil vidéo et cliquez sur **[!UICONTROL Créer.]**
 
@@ -158,7 +158,7 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
    ![chlimage_1-367](assets/chlimage_1-367.png)
 
-   | Propriétés | Description |
+   | Propriété | Description |
    |---|---|
    | Configuration de cloud Scene7 | Configuration de cloud à utiliser pour les paramètres prédéfinis de codage. |
    | Paramètre prédéfini de codage Scene7 | Paramètre prédéfini de codage à associer à ce profil vidéo. |
