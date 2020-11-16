@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 translation-type: tm+mt
 source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+workflow-type: tm+mt
+source-wordcount: '1593'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +76,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 1. Indiquez à quel moment User Manager recherchera de nouveaux domaines d’adresses électroniques. Cette recherche doit être postérieure à la synchronisation des domaines, car la création de groupes dynamiques n’est pertinente que lorsque la synchronisation des domaines est terminée.
 
    * Pour activer une synchronisation automatique quotidienne, saisissez l’heure au format 24 heures dans la zone Se produit Quotidiennement à. Lorsque vous enregistrez vos paramètres, cette valeur est convertie en expression cron, qui s’affiche dans la zone située au-dessous.
-   * Pour programmer la synchronisation un jour donné de la semaine ou du mois, ou un mois donné, sélectionnez Expression cron et saisissez l’expression appropriée dans la zone. La valeur par défaut est `0 00 4 ? * *`(ce qui signifie vérifier à 4 heures du matin). tous les jours).
+   * Pour programmer la synchronisation un jour donné de la semaine ou du mois, ou un mois donné, sélectionnez Expression cron et saisissez l’expression appropriée dans la zone. La valeur par défaut est `0 00 4 ? * *`(ce qui signifie que la vérification a lieu à 4 heures du matin tous les jours).
 
       L’utilisation de l’expression cron est basée sur le système de planification des tâches Open Source de Quartz, version 1.4.0 
 
@@ -94,7 +97,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 
    **Description :** description de l’utilisateur, tel que « Informaticien ».
 
-   **** Nom canonique : Nom canonique de l’utilisateur, tel que `ou=adobe.com`
+   **Nom canonique :** Nom canonique de l’utilisateur, tel que `ou=adobe.com`
 
    **Nom de domaine :** nom du domaine auquel l’utilisateur appartient, par exemple `DefaultDom`. L’attribut Nom de domaine est sensible à la casse lorsque vous utilisez l’opérateur Contient. Cet attribut n’est pas sensible à la casse lorsque vous utilisez les opérateurs Commence par, Se termine par ou Egal.
 
