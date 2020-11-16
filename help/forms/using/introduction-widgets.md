@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 91%
 
 ---
 
@@ -33,11 +36,11 @@ Vous trouverez ci-après une définition des options globales. Ces options sont 
 <table>
  <tbody>
   <tr>
-   <th>Propriétés </th>
+   <th>Propriété </th>
    <th>Description</th>
   </tr>
   <tr>
-   <td>nom est</td>
+   <td>name</td>
    <td>Identificateur qui permet de désigner un objet ou un événement dans les expressions de script. Par exemple, cette propriété indique le nom de l’application hôte.</td>
   </tr>
   <tr>
@@ -132,7 +135,7 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
   </tr>
   <tr>
    <td>click:function()</td>
-   <td>Place l’accent sur le champ et appelle XFA_CLICK_.</td>
+   <td>Place l’accent sur le champ et appelle XFA_CLICK_ÉVÉNEMENT.</td>
   </tr>
   <tr>
    <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td>
@@ -213,7 +216,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
   </tr>
   <tr>
    <td><p>addItem:<em> function(itemValues)<br /> itemValues : objet contenant la valeur affichée et d’enregistrement <br /> {sDisplayVal : &lt;displayValue&gt;, sSaveVal : &lt;save Value&gt;}</em></p> </td>
-   <td>Ajoute un élément au .</td>
+   <td>Ajoute un élément à la liste.</td>
   </tr>
   <tr>
    <td>deleteItem<em> : function(nIndex)<br /> nIndex : index de l’élément à supprimer de la liste<br /> </em><br /> <br /> </td>
@@ -228,7 +231,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 
 ### NumericEdit : champ numérique, champ décimal {#numericedit-numericfield-decimalfield}
 
-| Options | Description |
+| Options  | Description |
 |---|---|
 | dataType | Chaîne représentant le type de données du champ (entier/décimal). |
 | leadDigits | Nombre maximal de chiffres autorisés dans le nombre décimal. |
@@ -241,7 +244,7 @@ Tous les widgets personnalisés doivent être conformes aux spécifications ci-d
 <table>
  <tbody>
   <tr>
-   <th>Options</th>
+   <th>Options </th>
    <th>Description</th>
   </tr>
   <tr>
