@@ -27,7 +27,7 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
    ![ouvrir la page Propriétés d’une ressource pour établir une relation avec la ressource](assets/asset-properties-relate-assets.png)
 
-   *Figure :[!DNL Assets][!UICONTROL Page de propriétés]pour associer des ressources.*
+   *Figure : [!DNL Assets] [!UICONTROL Page de propriétés] pour associer des ressources.*
 
    Vous pouvez également sélectionner la ressource en mode Liste.
 
