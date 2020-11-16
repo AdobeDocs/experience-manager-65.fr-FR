@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 translation-type: tm+mt
 source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 83%
 
 ---
 
@@ -57,7 +60,7 @@ Pour plus d’informations sur l’intégration de votre site AEM et d’ExactTa
 
 ## Intégration à Facebook et Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook et Twitter sont des services de réseau social populaires. L’intégration d’AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion Facebook ou Twitter sur les propriétés numériques détenues, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
+Facebook et Twitter sont des services de réseau social populaires. L’intégration AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion Facebook ou Twitter sur les propriétés numériques détenues, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
 
 See [Social Login](/help/communities/social-login.md) for more information.
 
