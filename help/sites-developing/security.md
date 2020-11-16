@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 76%
 
 ---
 
@@ -21,7 +24,7 @@ La sécurité des applications débute lors de la phase de développement. Adobe
 
 ## Utilisation de la session de requête {#use-request-session}
 
-Conformément au principe des privilèges d’accès allégés, Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l’utilisateur et en contrôlant correctement l’accès.
+Conformément au principe des privilèges allégés, l&#39;Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l&#39;utilisateur et au contrôle d&#39;accès approprié.
 
 ## Protection contre les scripts de site à site (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -29,11 +32,11 @@ Les scripts de site à site (XSS) permettent aux pirates d’injecter du code da
 
 AEM applique le principe de filtrage de l’ensemble du contenu fourni par l’utilisateur lors de la sortie. La prévention du script intersite (XSS) se voit accorder la priorité la plus élevée lors des phases de développement et de test.
 
-Le mécanisme de protection XSS proposé par AEM est basé sur la [Bibliothèque Java AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fournie par [OWASP (The Open Web Application Security Project)](https://www.owasp.org/). La configuration par défaut d’AntiSamy se trouve à l’adresse
+Le mécanisme de protection XSS proposé par AEM est basé sur la [Bibliothèque Java AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fournie par [OWASP (The Open Web Application Security Project)](https://www.owasp.org/). La configuration par défaut d&#39;AntiSamy se trouve à l&#39;adresse
 
 `/libs/cq/xssprotection/config.xml`
 
-Il est important que vous adaptiez cette configuration à vos propres besoins de sécurité en superposant le fichier de configuration. Vous trouverez, dans la [documentation officielle d’AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project), toutes les informations nécessaires pour satisfaire vos exigences en matière de sécurité.
+Il est important que vous adaptiez cette configuration à vos besoins de sécurité en superposant le fichier de configuration. Vous trouverez, dans la [documentation officielle d’AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project), toutes les informations nécessaires pour satisfaire vos exigences en matière de sécurité.
 
 >[!NOTE]
 >
@@ -55,7 +58,7 @@ Le module webservicesupport enregistre des statistiques et des informations de c
 
 Avec les autorisations par défaut :
 
-* Environnement d’auteur : `read` for `contributors`
+* Environnement de l’auteur : `read` for `contributors`
 
 * Environnement de publication : `read` for `everyone`
 
