@@ -12,6 +12,9 @@ discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +35,7 @@ Par exemple :
 
 MCM vous permet d’accéder aux éléments suivants :
 
-* **[Tableau de bord](#dashboard)**Le tableau de bord se compose de quatre volets :
+* **[Tableau de bord](#dashboard)** Le tableau de bord se compose de quatre volets :
 
    * [Listes](#lists) Ce volet affiche les listes que vous avez déjà créées, ainsi que le nombre de pistes figurant dans chacune d’elles. Il vous permet de créer une liste entièrement nouvelle ou en important des pistes.
 Lorsque vous sélectionnez une liste spécifique, vous accédez à la section [Listes](#lists) qui affiche des détails à son sujet.
@@ -45,19 +48,19 @@ Lorsque vous sélectionnez un rapport, sa page s’ouvre.
 
    * [Campagnes](#campaigns) Ce volet répertorie les expériences de campagne, telles que les [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) et les [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Pistes](#leads)**Ce volet vous permet de gérer vos pistes. Vous pouvez créer ou importer des pistes, modifier des détails spécifiques ou supprimer ceux dont vous n’avez plus besoin. Vous pouvez également placer les pistes dans différents groupes, appelés listes.**Remarque :**Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité.
- Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+* **[Pistes](#leads)** Ce volet vous permet de gérer vos pistes. Vous pouvez créer ou importer des pistes, modifier des détails spécifiques ou supprimer ceux dont vous n’avez plus besoin. Vous pouvez également placer les pistes dans différents groupes, appelés listes. **Remarque :** Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité.
+ Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md). 
 
-* **[Listes](#lists)**Ce volet vous permet de gérer vos listes (de pistes).**Remarque :**Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité.
- Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
+* **[Listes](#lists)** Ce volet vous permet de gérer vos listes (de pistes). **Remarque :** Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité.
+ Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md). 
 
-* **[Campagnes](#campaigns)**Ce volet vous permet de gérer vos marques, campagnes et expériences.
+* **[Campagnes](#campaigns)** Ce volet vous permet de gérer vos marques, campagnes et expériences.
 
 ## Tableau de bord {#dashboard}
 
 Le tableau de bord se compose de quatre volets qui vous donnent un aperçu des listes (de pistes), segments, rapports et campagnes. L’accès aux fonctionnalités de base est également possible à partir de ce tableau de bord.
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_tableau de bord](assets/mcm_dashboard.png)
 
 ### Pistes {#leads}
 
@@ -164,7 +167,7 @@ Deux modes d’affichage sont disponibles pour chaque campagne :
 
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
-   * **Créer un** nouveau... expérience; par exemple, Adobe Target propose des offres, des teasers et des bulletins d’information.
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * **Modifier** les détails d’une newsletter ou d’une page de teaser spécifique (vous pouvez également effectuer un double-clic).
    * Définir les **Propriétés...** d’une newsletter ou d’une page de teaser spécifique
    * **Simuler** l’aspect et la fonctionnalité d’une expérience (newsletter ou page de teaser).
@@ -188,4 +191,4 @@ Vous avez également la possibilité d’ouvrir le sidekick (en cliquant sur la 
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page au fil du temps s’affiche alors.
 
-![mcm_campaign analysis](assets/mcm_campaignanalyze.png)
+![mcm_campaign analyser](assets/mcm_campaignanalyze.png)
