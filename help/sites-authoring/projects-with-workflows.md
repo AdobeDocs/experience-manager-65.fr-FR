@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: 0033dfac2540f56b3903c19f6ca19677af050db3
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 100%
 
 ---
 
@@ -19,10 +22,10 @@ source-git-commit: 0033dfac2540f56b3903c19f6ca19677af050db3
 
 Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 
-* **Processus** d’approbation de projet : ce processus vous permet d’affecter du contenu à un utilisateur, de le consulter, puis de l’approuver.
-* **Lancement** de la demande : processus qui demande un lancement.
-* **Demande de page** d&#39;entrée : ce processus demande une page d&#39;entrée.
-* **Demander l’adresse électronique** - ce workflow demande une adresse électronique.
+* **Workflow d’approbation de projet** : Ce workflow vous permet d’attribuer le contenu à un utilisateur, de le passer en revue, puis de l’approuver.
+* **Demander le lancement** : ce workflow demande un lancement.
+* **Demander la page d’entrée** : ce workflow demande une page d’entrée.
+* **Demander l’adresse électronique** : ce workflow demande une adresse électronique.
 * **Séance photo du produit et séance photo du produit (Commerce)** - associe les ressources aux produits.
 * **Gestion des actifs numériques – Créer et traduire la copie et Gestion des actifs numériques – Créer une copie de langue** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
 
@@ -34,15 +37,15 @@ Selon le modèle de projet sélectionné, certains workflows sont disponibles :
 | Séance photo du produit |  | x | x |  |
 | Séance photo du produit (Commerce) |  |  | x |  |
 | Approbation de projet | x |  |  |  |
-| Lancement de la demande | x |  |  |  |
+| Demander le lancement | x |  |  |  |
 | Demander la page d’entrée | x |  |  |  |
 | Adresse de demande | x |  |  |  |
-| DAM Create Language Copy&amp;ast; |  |  |  | x |
-| DAM Créer et traduire la copie et la traduction de langue;ast; |  |  |  | x |
+| DAM Créer copie de langue&amp;ast; |  |  |  | x |
+| DAM Créer et traduire copie de langue&amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md). 
+>&amp;ast;Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-administering/tc-manage.md). 
 
 Les étapes permettant de lancer et de terminer les workflows sont identiques quel que soit le workflow choisi. Seules les étapes changent.
 
@@ -52,11 +55,11 @@ Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-
 
 * [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
 * [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md)
-* [Configuration de workflow](/help/sites-administering/workflows.md) 
+* [Configuration de workflow](/help/sites-administering/workflows.md)
 
 Cette section décrit les workflows disponibles pour les projets.
 
-## Workflow de demande de copie {#request-copy-workflow}
+## Workflow de demande de copie   {#request-copy-workflow}
 
 Ce workflow vous permet de demander un manuscrit à un utilisateur, puis de l’approuver. Pour démarrer le workflow de demande de copie :
 
@@ -77,7 +80,7 @@ Les workflows Séance photo du produit (commerce et sans commerce) sont abordés
 
 Dans le workflow d’approbation de projet, vous attribuez du contenu à un utilisateur et passez en revue ce contenu, puis vous l’approuvez.
 
-1. In your Simple project, select the **`+`** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. Dans votre projet Simple, sélectionnez le signe **`+`** dans la mosaïque **Workflows**, puis sélectionnez **Worfklow d’approbation de projet**.
 1. Entrez un titre et sélectionnez la personne à laquelle l’affecter dans la liste Équipe. Le cas échéant, entrez une description, le chemin d’accès au contenu, la priorité de tâche et la date d’échéance.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -86,16 +89,16 @@ Dans le workflow d’approbation de projet, vous attribuez du contenu à un util
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## Worfklow Lancement de la demande {#request-launch-workflow}
+## Worfklow Demander le lancement {#request-launch-workflow}
 
 Ce workflow vous permet de demander un lancement.
 
-1. Dans votre projet simple, sélectionnez l’option de connexion **+** dans la mosaïque **Workflows**, puis sélectionnez **Worfklow Lancement de la demande**.
+1. Dans votre projet simple, sélectionnez l’option de connexion **+** dans la mosaïque **Workflows**, puis sélectionnez **Worfklow Demander le lancement**.
 1. Entrez le titre du lancement et indiquez le chemin d’accès à la source du lancement. Vous pouvez également ajouter une description et une date active, le cas échéant. Sélectionnez l’option Hériter des données actives de la page source ou excluez les sous-pages selon la manière dont le lancement doit se produire.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Cliquez sur **Créer**. Le workflow commence. **Le flux de travaux s’affiche dans la liste** Processus **(cliquez sur ellipses**... sur le volet **Processus** pour accéder à cette liste).
+1. Cliquez sur **Créer**. Le workflow commence. Le workflow apparaît dans la liste **Workflows** (cliquez sur les points de suspension **...** de la mosaïque **Workflows** pour accéder à cette liste).
 
 ## Worfklow Demander la page d’entrée {#request-landing-page-workflow}
 
