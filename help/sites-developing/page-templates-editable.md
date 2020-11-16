@@ -250,7 +250,7 @@ Le tableau suivant récapitule les autorisations nécessaires pour la modificati
 <table>
  <tbody>
   <tr>
-   <th>Chemin   </th>
+   <th>Chemin</th>
    <th>Rôle/Groupe</th>
    <th>Autorisations<br /> </th>
    <th>Description</th>
@@ -310,7 +310,7 @@ Templates should no longer be stored in `/conf/global`, however for some legacy 
 <table>
  <tbody>
   <tr>
-   <th>Chemin   </th>
+   <th>Chemin</th>
    <th>Rôle/Groupe</th>
    <th>Autorisations<br /> </th>
    <th>Description</th>
