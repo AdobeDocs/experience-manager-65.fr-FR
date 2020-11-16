@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 translation-type: tm+mt
 source-git-commit: c38c27d6f7172734f80735dd2f42cfa7bf58ad1d
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 76%
 
 ---
 
@@ -33,13 +36,13 @@ Les champs doivent être configurés spécifiquement si une modification est req
 
 * Propriété de page qui doit être disponible dans la vue de création (assistant **Créer une page**, par exemple) :
 
-   * Nom: `cq:showOnCreate`
-   * Type: `Boolean`
+   * Nom : `cq:showOnCreate`
+   * Type : `Boolean`
 
 * Page property to be available in the edit view (e.g. **View**/**Edit**) **Properties** option):
 
-   * Nom: `cq:hideOnEdit`
-   * Type: `Boolean`
+   * Nom : `cq:hideOnEdit`
+   * Type : `Boolean`
 
 Reportez-vous, par exemple, aux paramètres des champs regroupés sous l’onglet **Autres titres et description** de l’onglet **De base** du composant Page de base. Ils sont visibles dans l’assistant **Créer une page**, étant donné que `cq:showOnCreate` a été défini sur `true` :
 
@@ -49,13 +52,13 @@ Reportez-vous, par exemple, aux paramètres des champs regroupés sous l’ongle
 
 >[!TIP]
 >
->Pour obtenir un guide sur la personnalisation des propriétés de page, reportez-vous au didacticiel [Propriétés de page](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) extensible.
+>Consultez le didacticiel [](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) Extension des propriétés de page pour obtenir un guide sur la personnalisation des propriétés de page.
 
 ## Configuration de vos propriétés de page {#configuring-your-page-properties}
 
 Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de nœud appropriées.
 
-Par exemple, l’[**assistant Créer une page **](/help/sites-authoring/managing-pages.md#creating-a-new-page)affiche, par défaut, les champs regroupés sous** Autres titres et description **. Pour masquer ces derniers, définissez la configuration suivante :
+Par exemple, l’[**assistant Créer une page**](/help/sites-authoring/managing-pages.md#creating-a-new-page) affiche, par défaut, les champs regroupés sous **Autres titres et description**. Pour masquer ces derniers, définissez la configuration suivante :
 
 1. Créez votre composant de page sous `/apps`.
 1. Create an override (using *dialog diff* provided by the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) for the `basic` section of your page component; for example:
@@ -70,10 +73,10 @@ Par exemple, l’[**assistant Créer une page **](/help/sites-authoring/managing
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    However, you ***must*** not change anything in the `/libs` path.
-   This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
    La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
-   1. Make any changes within `/apps`
+   1. Apportez les modifications désirées dans `/apps`
 
 
 1. Définissez la `path` propriété sur `basic` pour pointer vers le remplacement de l’onglet de base (voir également l’étape suivante). Par exemple :
@@ -82,7 +85,7 @@ Par exemple, l’[**assistant Créer une page **](/help/sites-authoring/managing
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Créez un remplacement de la section `basic` - `moretitles` sur le chemin correspondant ; par exemple :
+1. Créez un remplacement de la section `basic` - `moretitles` au chemin d’accès correspondant ; par exemple :
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -90,9 +93,10 @@ Par exemple, l’[**assistant Créer une page **](/help/sites-authoring/managing
 
 1. Appliquez la propriété de nœud appropriée :
 
-   * **Nom**: `cq:showOnCreate`
-   * **Type**: `Boolean`
+   * **Nom** : `cq:showOnCreate`
+   * **Type** : `Boolean`
    * **Valeur**: `false`
+
    La section **Autres titres et description** ne sera plus affichée dans l’assistant **Créer une page**.
 
 >[!NOTE]
@@ -106,4 +110,4 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-extension-page-dialog sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [Ouvrez le projet aem-authoring-extension-page-dialog sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
