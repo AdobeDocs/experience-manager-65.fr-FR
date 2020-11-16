@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 100%
 
 ---
 
@@ -34,7 +37,7 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
    >
    >Vous pouvez utiliser l’onglet **Page** du sidekick pour effectuer des actions telles que **Créer une page enfant**, entre autres. 
 
-## Modification d’une configuration de lancement {#editing-a-launch-configuration}
+## Modification d’une configuration de lancement   {#editing-a-launch-configuration}
 
 Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vous pouvez également indiquer une image à associer au lancement.
 
@@ -47,14 +50,15 @@ Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vou
       * **Titre**
       * **Date de mise en service** : ceci équivaut à la date de lancement 
       * **Prêt pour la production**
+
       Reportez-vous à [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour obtenir des informations sur l’objectif et l’interaction de ces champs.
 
    * Dans l’onglet **Image**, vous pouvez télécharger un fichier d’image.
 
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
-## Identification de l’état de lancement d’une page {#discovering-the-launch-status-of-a-page}
+## Identification de l’état de lancement d’une page   {#discovering-the-launch-status-of-a-page}
 
 Lorsque vous modifiez le lancement d’une page, les informations sur le lancement s’affichent au bas de l’onglet **Création de versions** du sidekick :
 
