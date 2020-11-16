@@ -8,6 +8,9 @@ contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 translation-type: tm+mt
 source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 76%
 
 ---
 
@@ -16,9 +19,9 @@ source-git-commit: 85a3dac5db940b81da9e74902a6aa475ec8f1780
 
 >[!IMPORTANT]
 >
->Le RDMD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les règles de protection des données et de protection de la vie privée; comme le RMR, l&#39;ACCP, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations relatives à la protection des données et à la protection de la vie privée ; comme le RGPD, l&#39;ACCP, etc.
 
-Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018. Pour plus d’informations, voir la [page RGPD du centre de traitement des données personnelles d’Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018. Pour plus d’informations, voir la [page RGPD du centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
