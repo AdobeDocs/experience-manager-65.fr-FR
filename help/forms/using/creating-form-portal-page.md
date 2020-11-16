@@ -11,6 +11,9 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+workflow-type: tm+mt
+source-wordcount: '1668'
+ht-degree: 82%
 
 ---
 
@@ -40,7 +43,7 @@ Le composant Search &amp; Lister, disponible dans la catégorie des composants D
 * Le volet Liste, où les formulaires sont répertoriés
 * Le volet Recherche, où ajouter la fonction de recherche
 
-Vous pouvez faire glisser le composant Search &amp; Lister depuis la catégorie de composants Document Services dans l’explorateur de composants vers la page. Une fois ajouté, le composant se présente comme suit.
+ Une fois ajouté, le composant se présente comme suit.
 
 ![Composant Search &amp; Lister dans une page](assets/fp-grid-viw.png)
 
@@ -204,7 +207,7 @@ Pour configurer l’attribut de propriétés, procédez comme suit :
 1. Dans l’onglet Options, cliquez sur **Ajouter un élément.**
 1. Sélectionnez une propriété dans la liste déroulante et spécifiez un libellé de recherche pour la propriété dans le champ situé sous la liste déroulante.
 1. Répétez l’étape 4 pour ajouter d’autres propriétés. Vous pouvez également indiquer une valeur de filtre par défaut pour répertorier les formulaires basés sur les critères spécifiés et masquer la propriété pour les recherches effectuées par les utilisateurs finaux. Cochez la case Hide (Masquer) d’une propriété et spécifiez la valeur de filtre par défaut.
-Par exemple, si vous souhaitez afficher les formulaires dont le titre contient le mot « voyage », sélectionnez Masquer à côté de la propriété de titre. En outre, spécifiez Voyage dans la zone de texte Valeur de filtre par défaut.
+Par exemple, si vous souhaitez afficher les formulaires dont le titre contient le mot « voyage », sélectionnez Masquer à côté de la propriété de titre. En outre, indiquez Voyage dans la zone de texte de valeur de filtre par défaut.
 
 1. Appuyez sur **OK**
 
@@ -231,7 +234,7 @@ Pour répertorier les formulaires qui sont à l’état Brouillon et ceux qui on
 
 ## Compatibilité avec les périphériques mobiles {#mobile-device-friendliness}
 
-Le composant Search &amp; Lister de Forms Portal est compatible avec les périphériques mobiles et s’adapte en conséquence. Les trois vues par défaut : Grille, Carte, Représentations du panneau en fonction du périphérique sur lequel le site est ouvert, à condition que la page Web s’adapte également. Search &amp; Lister n’est qu’un simple composant et ne contrôle pas le style au niveau de la page.
+Le composant Search &amp; Lister de Forms Portal est compatible avec les périphériques mobiles et s’adapte en conséquence. Les trois vues par défaut : La grille, la carte, les mises en page du panneau en fonction du périphérique sur lequel le site est ouvert, à condition que la page Web s’adapte également. Search &amp; Lister n’est qu’un simple composant et ne contrôle pas le style au niveau de la page.
 
 L’image suivante montre le composant Search &amp; Lister lorsqu’il est ouvert sur un périphérique mobile :
 
@@ -249,11 +252,11 @@ Forms Portal propose des actions de rendu prêtes à l’emploi. Vous pouvez pe
 
 ## Articles connexes
 
-* [Activation des composants Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
-* [Créer une page Forms Portal](/help/forms/using/creating-form-portal-page.md)
+* [Activation des composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
+* [Créer une page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
 * [Affichage de la liste des formulaires sur une page Web à l’aide d’API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utiliser le composant Drafts and Submissions](/help/forms/using/draft-submission-component.md)
-* [Personnalisation du stockage des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
+* [Personnalisation de l’enregistrement des brouillons et des formulaires envoyés](/help/forms/using/draft-submission-component.md)
 * [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](/help/forms/using/integrate-draft-submission-database.md)
 * [Personnalisation de modèles pour les composants Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Présentation de la publication de formulaires sur un portail](/help/forms/using/introduction-publishing-forms.md)
