@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '3163'
+ht-degree: 90%
 
 ---
 
@@ -122,7 +125,7 @@ Crée un objet CQ_Analytics.JSONPStore.
 
 **Renvoie**
 
-Le nouvel objet CQ_Analytics.JSONPStore, ou null si storeName est nul.
+Le nouvel objet CQ_Analytics.JSONPStore, ou la valeur null si storeName a la valeur null.
 
 #### getServiceURL() {#getserviceurl}
 
@@ -130,7 +133,7 @@ Récupère l’URL du service JSONP que cet objet utilise pour récupérer les d
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -152,7 +155,7 @@ Aucune valeur retournée.
 
 #### registerNewInstance(storeName, serviceURL, dynamicData, callback) {#registernewinstance-storename-serviceurl-dynamicdata-callback}
 
-Crée un objet CQ_Analytics.JSONPStore et enregistre le magasin dans Client Context.
+Crée un objet CQ_Analytics.JSONPStore et enregistre le magasin dans le contexte client.
 
 **Paramètres**
 
@@ -179,7 +182,7 @@ Aucune valeur retournée.
 
 ## CQ_Analytics.JSONStore {#cq-analytics-jsonstore}
 
-Conteneur pour un objet JSON. Créez une instance de cette classe pour créer un magasin de sessions non persistantes contenant des données JSON :
+Conteneur pour un objet JSON. Créez une instance de cette classe pour créer un magasin de sessions non persistant contenant des données JSON :
 
 `myjsonstore = new CQ_Analytics.JSONStore`
 
@@ -207,7 +210,7 @@ Supprime les données du magasin de sessions et supprime toutes les propriétés
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -232,7 +235,7 @@ Récupère les données du magasin de sessions au format JSON.
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -244,7 +247,7 @@ Efface le magasin de sessions et l’initialise avec la propriété d’initiali
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -351,7 +354,7 @@ Crée un objet CQ_Analytics.PersistedJSONPStore.
 
 **Renvoie**
 
-Le nouvel objet CQ_Analytics.PersistedJSONPStore, ou null si storeName est nul.
+Nouvel objet CQ_Analytics.PersistedJSONPStore, ou null si storeName a la valeur null.
 
 #### getServiceURL() {#getserviceurl-1}
 
@@ -359,7 +362,7 @@ Récupère l’URL du service JSONP que cet objet utilise pour récupérer les d
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -381,7 +384,7 @@ Aucune valeur retournée.
 
 #### registerNewInstance(storeName, serviceURL, dynamicData, callback) {#registernewinstance-storename-serviceurl-dynamicdata-callback-1}
 
-Crée un objet CQ_Analytics.PersistedJSONPStore et enregistre le magasin dans Client Context.
+CQ_Analytics.PersistedJSONPStore crée un objet CQ_Analytics.PersistedJSONPStore et enregistre le magasin avec le contexte client.
 
 **Paramètres**
 
@@ -445,7 +448,7 @@ Récupère les données du magasin de sessions au format JSON.
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -521,7 +524,7 @@ Retrieves the `STOREKEY` property.
 
 **Paramètres**
 
-Aucun
+Aucune
 
 **Renvoie**
 
@@ -549,7 +552,7 @@ Déclenche l’événement `persist` à la fin de l’opération.
 
 **Paramètres**
 
-Aucun
+Aucune
 
 **Renvoie**
 
@@ -616,7 +619,7 @@ Supprime toutes les propriétés de données du magasin.
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -652,7 +655,7 @@ Renvoie le nom du magasin de sessions.
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -689,7 +692,7 @@ Renvoie le magasin de sessions associé à l’objet actif.
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -701,7 +704,7 @@ Marque le magasin comme initialisé et déclenche l’événement `initialize`.
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -713,7 +716,7 @@ Indique si le magasin de sessions est initialisé.
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
@@ -750,7 +753,7 @@ Restaure les valeurs initiales du magasin de données. L’implémentation par d
 
 **Paramètres**
 
-Aucun.
+Aucune.
 
 **Renvoie**
 
