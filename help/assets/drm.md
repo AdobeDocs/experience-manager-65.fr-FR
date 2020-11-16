@@ -23,7 +23,7 @@ You can view the expiration status of an asset in the [!DNL Assets] console in b
 
 ![expired_flag_liste](assets/expired_flag_list.png)
 
-*Figure : Dans la vue de liste, la colonne[!UICONTROL Etat]affiche la bannière[!UICONTROL Expiré].*
+*Figure : Dans la vue de liste, la colonne [!UICONTROL Etat] affiche la bannière [!UICONTROL Expiré] .*
 
 You can view the expiration status of an asset in the [!UICONTROL Timeline] in left rail.
 
@@ -96,7 +96,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
    ![définir la date et l’heure d’expiration de l’actif dans le champ Expire](assets/asset-properties-advanced-tab.png)
 
-   *Figure :[!UICONTROL Onglet Avancé]dans la page[!UICONTROL Propriétés]du fichier pour définir l’expiration du fichier.*
+   *Figure : [!UICONTROL Onglet Avancé] dans la page [!UICONTROL Propriétés] du fichier pour définir l’expiration du fichier.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL Fermer]** pour afficher la console Ressources.
 1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. En mode Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
