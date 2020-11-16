@@ -1,6 +1,6 @@
 ---
-title: 'Texte (Markdown) '
-seo-title: 'Texte (Markdown) '
+title: Texte (Markdown)
+seo-title: Texte (Markdown)
 description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
 seo-description: Lors du processus de création, l’éditeur de fragments de contenu utilise la syntaxe markdown pour vous permettre d’écrire aisément du contenu.
 uuid: afcbf82f-3a75-4491-9172-706188db65bb
