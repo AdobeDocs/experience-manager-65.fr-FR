@@ -37,8 +37,7 @@ L’image suivante illustre les blocs de construction nécessaires à la créati
 * Créer une communication interactive
 * Tester et publier une communication interactive
 
-## Cas d’utilisation{#use-case}
-
+## Cas d’utilisation {#use-case}
 
 La procédure commence par l’apprentissage du cas d’utilisation :
 
