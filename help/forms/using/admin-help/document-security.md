@@ -12,6 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '2546'
+ht-degree: 99%
 
 ---
 
@@ -83,6 +86,7 @@ Divers types d’utilisateurs recourent à Document Security pour accomplir diff
    * Affichage des événements
    * Déléguer
    * Invitation d’utilisateurs externes
+
    **Administrateur de Document Security**
 
    Les utilisateurs bénéficiant de ce rôle peuvent configurer le serveur Document Security à l’aide de la page Configuration de la section Document Security dans Administration Console. Cette autorisation est associée au rôle Gestion de la configuration.
@@ -101,6 +105,7 @@ Divers types d’utilisateurs recourent à Document Security pour accomplir diff
    * Gestion des éditeurs
    * Affichage des événements
    * Déléguer
+
    >[!NOTE]
    >
    >Les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.
@@ -112,6 +117,7 @@ Divers types d’utilisateurs recourent à Document Security pour accomplir diff
    * Gestion des utilisateurs invités et locaux
    * Invitation d’utilisateurs externes
    * Accès aux pages Web destinées aux utilisateurs finaux
+
    >[!NOTE]
    >
    >Les utilisateurs bénéficiant de ce rôle doivent également disposer du rôle Utilisateur dans Administration Console pour être à même de se connecter à la console et de modifier les paramètres relatifs à la configuration.
@@ -122,6 +128,7 @@ Divers types d’utilisateurs recourent à Document Security pour accomplir diff
 
    * Invitation d’utilisateurs externes
    * Accès aux pages Web destinées aux utilisateurs finaux
+
    **Utilisateur final de Document Security**
 
    Les utilisateurs bénéficiant de ce rôle peuvent accéder aux pages Web Document Security destinées aux utilisateurs finaux. Ce rôle peut également être attribué aux administrateurs pour leur permettre de créer des stratégies à l’aide des pages destinées aux utilisateurs finaux. Cette autorisation est associée au rôle avec le rôle Accès aux pages Web destinées aux utilisateurs finaux.
