@@ -47,9 +47,9 @@ Les conditions préalables à la création d’une communication interactive son
    * **[!UICONTROL Modèle]** de données de formulaire : Recherchez et sélectionnez le modèle de données de formulaire. For more information on Form Data Model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
    * **[!UICONTROL Service]** de préremplissage : Sélectionnez le service de préremplissage pour récupérer les données et préremplir la communication interactive.
-   * **[!UICONTROL Post-traitement Type]**: Vous pouvez sélectionner le processus AEM ou Forms à déclencher lors de l’envoi de la communication interactive. Sélectionnez le type de processus à déclencher.
+   * **[!UICONTROL Post-traitement Type]**: Vous pouvez sélectionner AEM ou Forms Workflow à déclencher lors de l’envoi de la communication interactive. Sélectionnez le type de processus à déclencher.
 
-   * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez le processus AEM, fournissez les options Chemin de pièce jointe, Chemin de mise en page, Chemin PDF, Chemin d’accès aux données d’impression et Chemin de données Web.
+   * **[!UICONTROL Post-traitement]** : sélectionnez le nom du processus à déclencher. Lorsque vous sélectionnez AEM flux de travail, fournissez les options Chemin de pièce jointe, Chemin de mise en page, Chemin PDF, Chemin d’accès aux données d’impression et Chemin de données Web.
    * **[!UICONTROL Balises]**: Sélectionnez les balises à appliquer à la communication interactive. Vous pouvez également saisir un nom de balise nouveau ou personnalisé et appuyer sur Entrée pour créer la balise.
    * **[!UICONTROL Auteur]** : le nom de l’auteur est automatiquement extrait du nom de l’utilisateur connecté.
    * **[!UICONTROL Date de publication :]** entrez la date de publication de la communication interactive.
@@ -64,8 +64,8 @@ Les conditions préalables à la création d’une communication interactive son
    * **[!UICONTROL Modèle]** Web de communication interactive : Recherchez et sélectionnez le modèle Web.
    * **[!UICONTROL Thème]** et **[!UICONTROL Sélectionner le thème]**: Recherchez et sélectionnez le thème pour mettre en forme le canal Web de la communication interactive. Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/using/themes.md).
 
-   * **[!UICONTROL Utiliser l&#39;impression en tant que Maître pour le Canal]** Web : Sélectionnez cette option pour créer le canal Web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme page principale du canal web garantit que le contenu et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous appuyez sur Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, consultez [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
-Si vous sélectionnez l&#39;option **[!UICONTROL Utiliser l&#39;impression comme Maître pour le Canal]** Web, vous pouvez sélectionner l&#39;un des modes suivants pour générer un canal Web :
+   * **[!UICONTROL Utiliser l&#39;impression comme Principal pour le Canal]** Web : Sélectionnez cette option pour créer le canal Web en synchronisation avec le canal d’impression. L’utilisation du canal d’impression comme page principale du canal web garantit que le contenu et la liaison des données du canal web sont dérivés du canal d’impression et que les modifications apportées au canal d’impression sont répercutées sur le canal web lorsque vous appuyez sur Synchroniser. Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants spécifiques dans le canal web, selon les besoins. Pour plus d’informations, consultez [Synchroniser le canal web avec le canal d’impression](../../forms/using/create-interactive-communication.md#synchronize).
+Si vous sélectionnez l&#39;option **[!UICONTROL Utiliser l&#39;impression comme Principal pour le Canal]** Web, vous pouvez sélectionner l&#39;un des modes suivants pour générer un canal Web :
 
       * **[!UICONTROL Mise en page]** automatique : Sélectionnez ce mode pour générer automatiquement des espaces réservés, du contenu et des liaisons de données pour le canal Web à partir du canal d&#39;impression.
       * **[!UICONTROL Organiser]** manuellement : Sélectionnez ce mode pour sélectionner manuellement et ajouter des éléments de canal d&#39;impression au canal Web à l&#39;aide du contenu maître disponible dans l&#39;onglet Sources **[!UICONTROL de]** données. Pour plus d&#39;informations, voir [Sélectionner des éléments de canal d&#39;impression pour créer du contenu](#selectprintchannelelements)de canal Web.
@@ -242,7 +242,7 @@ Dans le canal d’impression, vous pouvez configurer les pièces jointes et l’
    * **[!UICONTROL Autoriser l’accès à la bibliothèque]** : sélectionnez cette option pour permettre à l’agent d’accéder à la bibliothèque dans l’interface utilisateur de l’agent. Si cette option est activée, l’agent peut ajouter des fichiers depuis la bibliothèque tout en préparant la communication interactive.
    * **[!UICONTROL Autoriser la réorganisation des pièces jointes]** : sélectionnez cette option pour permettre à l’agent de réorganiser les pièces jointes avec la communication interactive.
    * **[!UICONTROL Nombre max de pièces jointes autorisé]** : spécifiez le nombre maximum de pièces jointes autorisées avec la communication interactive.
-   * **[!UICONTROL Fichiers à joindre]**: Appuyez sur **[!UICONTROL Ajouter]** et parcourez pour sélectionner les fichiers à joindre et spécifiez les éléments suivants :
+   * **[!UICONTROL Fichiers à joindre]**: Appuyez sur **[!UICONTROL Ajouter]** et parcourez les fichiers à joindre pour sélectionner les fichiers à joindre et spécifiez les éléments suivants :
 
       * **[!UICONTROL Joindre ce fichier au document par défaut]** : vous pouvez modifier cette option si seule la pièce jointe n’est pas obligatoire.
       * **[!UICONTROL Obligatoire :]** l’agent ne pourra pas supprimer la pièce jointe dans l’interface utilisateur de l’agent.
@@ -304,7 +304,7 @@ Le tableau suivant liste un exemple des valeurs qui s’affichent suite à la d�
 
 Si aucun modèle d’affichage n’est spécifié pour une variable ou un élément de modèle de données de formulaire, la configuration [du fragment de document](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) global est utilisée par défaut.
 
-Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, la prévisualisation d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration de fragment de document global par défaut, l’interface utilisateur de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour les paramètres régionaux.
+Si vous n’appliquez pas de modèle d’affichage à une variable de type de données numérique, la prévisualisation d’impression affiche le modèle en fonction de la configuration globale du fragment de document. Si vous appliquez des modifications à la configuration de fragment de document global par défaut, l’interface utilisateur de l’agent affiche toujours le modèle en fonction des séparateurs par défaut définis pour le paramètre régional.
 
 De même, pour les champs, si le modèle d’affichage n’est pas spécifié, le modèle défini lors de la création du modèle d’impression (XDP) est appliqué au champ. S’il n’existe aucun modèle lors de la création du modèle d’impression, les modèles par défaut basés sur les spécifications XFA sont appliqués aux champs.
 
@@ -382,7 +382,7 @@ Appuyez sur le panneau racine du modèle Web et appuyez sur **+** pour ajouter u
 
 ![Barre d’outils des composants](assets/component_toolbar_table_row_new.png)
 
-**A.** Ajouter la ligne **B.** Supprimer la ligne **C.** Monter vers le **D.** Descendre vers le bas
+**A.** Ajouter la ligne **B.** Supprimer la ligne **C.** Monter vers **D.** Descendre vers le bas
 
 #### Ajouter ou modifier du texte dans les cellules du tableau {#addedittexttable}
 
@@ -451,7 +451,7 @@ Une fois que vous avez créé une communication interactive, vous pouvez modifie
 Utilisez la page **Propriétés** pour effectuer les opérations suivantes :
 
 * Modifiez les valeurs des champs spécifiés lors de la création de la communication interactive, tels que Titre et Description.
-* Ajoutez ou supprimez un canal Web pour une communication interactive existante.
+* Ajouter ou supprimer un canal Web pour une communication interactive existante.
 * Prévisualisation, téléchargement ou suppression de la communication interactive
 * Ouvrez l’interface utilisateur [de l’](/help/forms/using/prepare-send-interactive-communication.md)agent.
 
@@ -463,16 +463,16 @@ Pour accéder à la page **Propriétés** :
 
 ### Ajouter ou supprimer le canal Web {#add-or-delete-the-web-channel}
 
-Exécutez les étapes suivantes pour ajouter le canal Web d’une communication interactive existante :
+Exécutez les étapes suivantes pour ajouter le canal Web d&#39;une communication interactive existante :
 
 1. Dans la page **Propriétés** , sélectionnez l’onglet **Canaux** .
 1. Cochez la case **Web** et sélectionnez un modèle pour le canal Web.
-1. Sélectionnez **Utiliser l&#39;impression comme Maître pour le Canal** Web pour activer la synchronisation entre le canal Web et le canal d&#39;impression.
+1. Sélectionnez **Utiliser l&#39;impression comme Principal pour le Canal** Web pour activer la synchronisation entre le canal Web et le canal d&#39;impression.
 1. Tap **Save &amp; Close** to save the changes.
 
    De même, vous pouvez cocher la case **Web** dans l&#39;onglet **Canaux** pour supprimer le canal Web de la communication interactive.
 
-## Ajouter le composant Bouton au canal Web {#add-button-component-to-the-web-channel}
+## Composant Bouton d’Ajoute au canal Web {#add-button-component-to-the-web-channel}
 
 Vous pouvez ajouter un bouton en tant que composant au canal Web de la communication interactive. Définissez des règles à l’aide de l’éditeur [de](../../forms/using/rule-editor.md) règles afin de pouvoir accéder à d’autres communications interactives, formulaires adaptatifs, autres ressources telles que des images ou des fragments de document, ou à une URL externe lorsque vous appuyez sur le bouton.
 
@@ -493,7 +493,7 @@ Pour ajouter un bouton et définir des règles sur celui-ci :
 
 1. Prévisualisation de la communication interactive et appuyez sur le bouton pour vue de la communication interactive, du formulaire adaptatif, d’un fichier ou d’une page Web spécifiée à l’étape 4 b).
 
-## Ajouter le composant Panneau au canal Web {#add-panel-component-to-the-web-channel}
+## Ajouter le composant Panneau de configuration au canal Web {#add-panel-component-to-the-web-channel}
 
 Le composant Panneau est un espace réservé pour regrouper d’autres composants et contrôle la disposition d’un groupe de composants (accordéons et onglets) dans la communication interactive. Un composant de panneau vous permet également de permettre la répétition d’un groupe de composants pour l’utilisateur final, par exemple dans plusieurs entrées requises pour remplir les informations d’identification.
 
@@ -513,15 +513,15 @@ Pour ajouter un composant Panneau au canal Web, procédez comme suit :
 
 ## Synchronisation du canal web avec canal d’impression {#synchronize}
 
-Lorsque vous sélectionnez Imprimer en tant que Maître pour le Canal Web lors de la création d&#39;une communication interactive, le canal Web est créé en synchronisation avec le canal d&#39;impression et le contenu et la liaison de données du canal Web sont dérivés du canal d&#39;impression et les modifications apportées au canal d&#39;impression peuvent être répercutées dans le canal Web lorsque vous appuyez sur Synchroniser.
+Lorsque vous sélectionnez l&#39;option Imprimer en tant que Principal pour le Canal Web lors de la création d&#39;une communication interactive, le canal Web est créé en synchronisation avec le canal d&#39;impression et le contenu et la liaison de données du canal Web sont dérivés du canal d&#39;impression et les modifications apportées au canal d&#39;impression peuvent être répercutées dans le canal Web lorsque vous appuyez sur Synchroniser.
 
 Les auteurs sont toutefois autorisés à interrompre l’héritage pour des composants dans le canal web, selon les besoins.
 
-![Créer un Maître](assets/create_ic_print_master_new-1.png) d&#39;impression Web ![du Maître d&#39;impression](assets/create_ic_print_master_web_new-1.png)
+![Créer un Principal](assets/create_ic_print_master_new-1.png) d&#39;impression ![Web de Principal d&#39;impression](assets/create_ic_print_master_web_new-1.png)
 
 ### Synchronisation automatique {#autosync}
 
-Si vous sélectionnez l&#39;option **[!UICONTROL Utiliser l&#39;impression comme Maître pour le Canal]** Web, vous pouvez sélectionner l&#39;un des modes suivants pour générer un canal Web :
+Si vous sélectionnez l&#39;option **[!UICONTROL Utiliser l&#39;impression comme Principal pour le Canal]** Web, vous pouvez sélectionner l&#39;un des modes suivants pour générer un canal Web :
 
 * **[!UICONTROL Mise en page]** automatique : Sélectionnez ce mode pour générer automatiquement des espaces réservés, du contenu et des liaisons de données pour le canal Web à partir du canal d&#39;impression.
 * **[!UICONTROL Organiser]** manuellement : Sélectionnez ce mode pour sélectionner manuellement et ajouter des éléments de canal d&#39;impression au canal Web à l&#39;aide du contenu maître disponible dans l&#39;onglet Sources de données. Pour plus d&#39;informations, voir [Sélectionner des éléments de canal d&#39;impression pour créer du contenu](#selectprintchannelelements)de canal Web.
@@ -536,9 +536,9 @@ Si vous sélectionnez l&#39;option **[!UICONTROL Utiliser l&#39;impression comme
 
 Si vous sélectionnez l’option Imprimer en tant que gabarit lors de la création de la communication interactive et que vous ne sélectionnez pas l’option de synchronisation automatique, vous pouvez également faire glisser des éléments de canal d’impression vers l’interface de création de canal Web.
 
-Accédez à Sources **de** données > Contenu **du** Maître pour vue des éléments du canal d’impression. Faites glisser les zones de cible, les champs ou les tableaux vers l&#39;interface de création de canal Web. Un cercle bleu en regard du nom de l’élément indique que l’élément canal d’impression a déjà été inclus dans le canal Web.
+Accédez à Sources **de** données > Contenu **du** Principal pour vue des éléments du canal d’impression. Faites glisser les zones de cible, les champs ou les tableaux vers l&#39;interface de création de canal Web. Un cercle bleu en regard du nom de l’élément indique que l’élément canal d’impression a déjà été inclus dans le canal Web.
 
-![Contenu Maître](assets/master_content.png)
+![Contenu du Principal](assets/master_content.png)
 
 ### Annuler l’héritage {#cancelinheritance}
 
@@ -562,7 +562,7 @@ Appuyez sur **[!UICONTROL Oui]**.
 
 ### Synchroniser {#synchronize-1}
 
-Si vous utilisez l&#39;impression en tant que Maître pour le Canal Web et apportez des modifications au canal d&#39;impression, vous pouvez synchroniser le contenu pour apporter les modifications nouvellement apportées au canal Web.
+Si vous utilisez l&#39;impression en tant que Principal pour le Canal Web et apportez des modifications au canal d&#39;impression, vous pouvez synchroniser le contenu pour apporter les modifications nouvellement apportées au canal Web.
 
 1. Pour synchroniser le canal Web avec le canal d&#39;impression, passez au canal Web et appuyez sur l&#39;icône Plus d&#39;options.
 
@@ -587,7 +587,7 @@ Appuyez sur le composant pour vue aux options suivantes :
 * **Coller :** Collez le composant que vous avez coupé ou copié à l’aide des options décrites ci-dessus.
 * **Groupe :** Sélectionnez plusieurs composants si vous souhaitez couper, copier ou coller plusieurs composants ensemble.
 * **Parent :** Sélectionnez le parent d’un composant.
-* **Expression SOM Vue :** Vue de l’expression [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM du composant.
+* **Expression SOM vue :** Vue de l’expression [](../../forms/using/using-som-expressions-adaptive-forms.md) SOM du composant.
 
 * **Associer des objets dans le panneau :** Regroupez les composants d’un panneau pour pouvoir effectuer des opérations simultanément sur ces composants. Pour plus d’informations, voir [Associer des objets dans le panneau](#groupobjectspanel).
 
