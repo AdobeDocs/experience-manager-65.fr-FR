@@ -11,6 +11,9 @@ discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 73%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ## Adding attachments in forms synced with AEM Forms Workflow server (AEM Forms on JEE) {#adding-annotations}
 
-L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé depuis un serveur de flux de travail AEM Forms, vos pièces jointes sont ajoutées au formulaire. You can tap the attachment button ![attachments-app](assets/attachments-app.png) to see all the attachments in a form together. La notification rouge indique le nombre de pièces jointes du formulaire. S’il n’existe aucune pièce jointe dans le formulaire, le bouton rouge des notifications ne s’affiche pas. If there are no attachments in the form, when you tap the attachments button ![attch](assets/attch.png), you get options to attach photos or scribbles.
+L’application AEM Forms vous permet de joindre des images, des annotations et des notes de texte à votre formulaire synchronisé avec le serveur AEM Forms JEE. Si votre formulaire est chargé depuis un serveur de flux de travail AEM Forms, vos pièces jointes sont ajoutées au formulaire. You can tap the attachment button ![attachments-app](assets/attachments-app.png) to see all the attachments in a form together. La notification rouge indique le nombre de pièces jointes du formulaire. S’il n’y a aucune pièce jointe dans le formulaire, le bouton rouge des notifications ne s’affiche pas. If there are no attachments in the form, when you tap the attachments button ![attch](assets/attch.png), you get options to attach photos or scribbles.
 
 Vous avez le choix entre :
 
@@ -78,6 +81,7 @@ L’option **Notes** vous permet d’ajouter des annotations à main levée et d
    * **Bouton Terminé** : joint l’annotation en cours.
    * **Bouton Annuler** : supprime l’annotation en cours et quitte l’interface utilisateur de saisie tactile.
    * ![clavier](assets/keyboard.png): Efface la saisie tactile et vous permet d’ajouter une note de texte.
+
    ![Clavier de saisie tactile de l’application AEM Forms](assets/keyboard-inapp.png)
 
 ## Pièces jointes dans les formulaires synchronisés avec les serveurs AEM Forms sans flux de travaux AEM Forms (AEM Forms sur OSGi) {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
