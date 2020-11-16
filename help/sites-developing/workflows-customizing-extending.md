@@ -68,6 +68,7 @@ The `/libs/cq/workflow/components/model/step` component is the nearest common an
 
    * **Courant** : pour modifier le titre et la description.
    * **Avancé** : pour modifier les propriétés de notification par courrier électronique.
+
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -102,7 +103,7 @@ Les composants d’étape de processus se [créent comme tout autre composant](/
 
 Pour hériter de l’un des composants de l’étape de base (existante), ajoutez la propriété suivante au nœud `cq:Component` :
 
-* Nom: `sling:resourceSuperType`
+* Nom : `sling:resourceSuperType`
 * Type : `String`
 * Valeur : l’un des chemins suivants qui se résout en un composant de base :
 
@@ -121,6 +122,7 @@ Utilisez la procédure suivante pour spécifier les valeurs par défaut des cham
 >* La boîte de dialogue de modification de l’étape stocke le titre et la description dans les emplacements suivants : >
 >* `./jcr:title`
 >* `./jcr:description` emplacements
+
 >
 >  
 This requirement is satisfied when the edit dialog uses the Common tab that the `/libs/cq/flow/components/step/step` component implements.
@@ -130,15 +132,16 @@ This requirement is satisfied when the edit dialog uses the Common tab that the 
 
 1. Below the `cq:Component` node, add the following node:
 
-   * Nom: `cq:editConfig`
+   * Nom : `cq:editConfig`
    * Type : `cq:EditConfig`
+
    >[!NOTE]
    >
    >For more information about the cq:editConfig node, see [Configuring the Edit Behavior of a Component](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Below the `cq:EditConfig` node, add the following node:
 
-   * Nom: `cq:formParameters`
+   * Nom : `cq:formParameters`
    * Type : `nt:unstructured`
 
 1. Add `String` properties of the following names to the `cq:formParameters` node:
@@ -180,13 +183,14 @@ Pour utiliser le composant dans un scénario de processus spécifique, configure
 
 1. Sous le nœud cq:component, ajoutez le nœud suivant :
 
-   * Nom: `cq:editConfig`
+   * Nom : `cq:editConfig`
    * Type : `cq:EditConfig`
+
    Pour plus d’informations sur le nœud cq:editConfig, voir [Configuration du comportement de modification d’un composant](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Sous le nœud cq:EditConfig, ajoutez le nœud suivant :
 
-   * Nom: `cq:formParameters`
+   * Nom : `cq:formParameters`
    * Type : `nt:unstructured`
 
 1. Add a `String` property to the `cq:formParameters` node. Le supertype de composant détermine le nom de la propriété :
@@ -214,24 +218,25 @@ Peform the following procedure on your new component (see [Creating Custom Workf
 
 1. Below the `cq:Component` node, add the following node:
 
-   * Nom: `cq:editConfig`
+   * Nom : `cq:editConfig`
    * Type : `cq:EditConfig`
+
    For more information about the cq:editConfig node, see [Configuring the Edit Behavior of a Component](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. Sous le nœud cq:EditConfig, ajoutez le nœud suivant :
 
-   * Nom: `cq:formParameters`
+   * Nom : `cq:formParameters`
    * Type : `nt:unstructured`
 
 1. Pour présenter un formulaire lorsque l’utilisateur ouvre l’élément de travail, ajoutez la propriété suivante au nœud `cq:formParameters` :
 
-   * Nom: `FORM_PATH`
+   * Nom : `FORM_PATH`
    * Type : `String`
    * Valeur : chemin d’accès qui résout le formulaire
 
 1. Pour présenter une boîte de dialogue personnalisée lorsque l’utilisateur effectue l’élément de travail, ajoutez la propriété suivante au nœud `cq:formParameters`
 
-   * Nom: `DIALOG_PATH`
+   * Nom : `DIALOG_PATH`
    * Type : `String`
    * Valeur : chemin d’accès qui résout la boîte de dialogue
 
@@ -239,7 +244,7 @@ Peform the following procedure on your new component (see [Creating Custom Workf
 
 Below the `cq:Component` node, add a `cq:EditConfig` node. Below that add an `nt:unstructured` node (must be named `cq:formParameters`) and to that node add the following properties:
 
-* Nom: `PROCESS_AUTO_ADVANCE`
+* Nom : `PROCESS_AUTO_ADVANCE`
 
    * Type : `Boolean`
    * Valeur:
@@ -247,7 +252,7 @@ Below the `cq:Component` node, add a `cq:EditConfig` node. Below that add an `nt
       * when set to `true` the workflow will run that step and continue - this is default and also recommended
       * si sa valeur est `false`, le processus s’exécute et s’arrête. Ceci nécessite une manipulation supplémentaire, donc la valeur `true` est recommandée
 
-* Nom: `DO_NOTIFY`
+* Nom : `DO_NOTIFY`
 
    * Type : `Boolean`
    * Valeur : indique si les notifications par e-mail doivent être envoyées pour les étapes de participation de l’utilisateur (et suppose que le serveur de messagerie est correctement configuré)
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
       * Projets
       * Processus de gestion de contenu web
       * Workflow
+
    ![wf-35](assets/wf-35.png)
 
 1. Vous pouvez désormais ouvrir un modèle de processus pour le modifier. Dans le navigateur d’étapes, vous pouvez filtrer pour voir **Mon étape personnalisée** :
@@ -887,6 +894,7 @@ Après avoir suivi la procédure [Création de l’étape de base](#creating-the
       Définit le titre par défaut sur la carte étape dans la carte modèle et dans le champ **Titre** de la boîte de dialogue de configuration **Mes propriétés d’étape personnalisées**.
 
    * Vous pouvez également définir vos propres propriétés personnalisées.
+
    ![wf-40](assets/wf-40.png)
 
 1. Configure the properties on the node `cq:listeners`.
@@ -899,6 +907,7 @@ Après avoir suivi la procédure [Création de l’étape de base](#creating-the
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    Cette configuration est essentielle au bon fonctionnement de l’éditeur. Dans la plupart des cas, cette configuration ne doit pas être modifiée.
 
    However, setting `cq:inherit` to true (on the `cq:editConfig` node, see above) allows you to inherit this configuration, without needing to explicitly include it in your step definition. Si aucun héritage n’est en place, vous devez ajouter ce noeud avec les propriétés et valeurs suivantes.
@@ -1040,6 +1049,7 @@ The `_cq_dialog/.content.xml` sample used in this example:
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 You must not modify anything in `/libs`, simply use them as examples. If you want to leverage any of the existing steps, copy them to `/apps` and modify them there.
