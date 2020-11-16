@@ -20,7 +20,7 @@ ht-degree: 18%
 
 # Composants, fonctions et caractéristiques essentielles  {#component-function-and-feature-essentials}
 
-Les fonctionnalités AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au site [de la](overview.md#communitiessites) communauté avant de pouvoir publier du contenu. Ainsi, les modèles [de site](sites.md)communautaire, à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion ainsi que des profils d’utilisateur, des messages, des recherches, de la modération et des traductions.
+Les fonctionnalités AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au site [de la](overview.md#communitiessites) communauté avant de pouvoir publier du contenu. Ainsi, les modèles [de site](sites.md)communautaire, à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion ainsi que des profils d’utilisateur, la messagerie, la recherche, la modération et la traduction.
 
 Un site communautaire aidera les membres à créer des groupes communautaires lorsque les groupes [communautaires fonctionnent](functions.md#groups-function) est inclus dans le modèle de site communautaire sélectionné.
 
@@ -70,7 +70,7 @@ Vous trouverez ci-dessous des liens vers des informations essentielles sur les c
 
 ## Javadocs {#javadocs}
 
-Les javadocs [](../../help/sites-developing/reference-materials.md) en ligne reflètent les API disponibles dans la version 6.3 d’AEM.
+Les javadocs [](../../help/sites-developing/reference-materials.md) en ligne reflètent les API disponibles dans la version AEM 6.3.
 Les API de communautés se trouvent dans `com.adobe.cq.social.*` des packages.
 
 Pour chaque pack [de fonctionnalités](deploy-communities.md#latestfeaturepack), un javadoc est disponible. Pour plus d’informations, consultez [Utilisation de Maven pour les communautés](maven.md#javadocs).
