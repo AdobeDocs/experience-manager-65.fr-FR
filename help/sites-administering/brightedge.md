@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 100%
 
 ---
 
@@ -26,6 +29,7 @@ Lorsque vous créez la configuration, vous spécifiez un titre. Le titre doit ê
 
    * Configurer maintenant : ce lien s’affiche lorsque aucune configuration n’a été créée.
    * Afficher les configurations : ce lien s’affiche lorsqu’une ou plusieurs configurations ont été créées.
+
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. Si vous avez cliqué sur Afficher les configurations, cliquez sur le lien « + » en regard des configurations disponibles.
