@@ -12,6 +12,9 @@ discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 743512254850698a32fd77151e2278dd8cc4ce7d
+workflow-type: tm+mt
+source-wordcount: '1154'
+ht-degree: 80%
 
 ---
 
@@ -70,28 +73,28 @@ Pour utiliser l’éditeur en bloc pour modifier simultanément différents él�
 <table>
  <tbody>
   <tr>
-   <td>Champ</td>
-   <td>Propriétés</td>
+   <td>Field (Champ)</td>
+   <td>Propriété</td>
   </tr>
   <tr>
    <td>Chemin racine</td>
-   <td>Indique le chemin racine que l’éditeur en masse recherche.<br /> Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue une recherche dans tous les nœuds enfants.</td>
+   <td>Indique le chemin racine recherché par l’éditeur en bloc.<br /> Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue une recherche dans tous les nœuds enfants.</td>
   </tr>
   <tr>
    <td>Paramètres de requête</td>
-   <td>A l’aide des paramètres GQL, entrez la chaîne de recherche que l’éditeur en masse doit rechercher dans le référentiel ; par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel" et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "anglais". Vous pouvez rechercher uniquement des chaînes.</td>
+   <td>A l’aide des paramètres GQL, entrez la chaîne de recherche que l’éditeur en vrac doit rechercher dans le référentiel ; par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel" et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "anglais". Vous pouvez rechercher uniquement des chaînes.</td>
   </tr>
   <tr>
-   <td>Mode Contenu, case à cocher</td>
-   <td>Activez cette case à cocher pour lire les propriétés dans le <code>jcr:content</code> sous-noeud des résultats de recherche, le cas échéant. À utiliser uniquement pour des pages. Les noms de propriété sont précédés du préfixe <code>"jcr:content/"</code></td>
+   <td>Case à cocher Mode de contenu</td>
+   <td>Activez cette case à cocher pour lire les propriétés dans le <code>jcr:content</code> sous-noeud des résultats de la recherche, le cas échéant. À utiliser uniquement pour des pages. Les noms de propriété sont précédés du préfixe <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Propriétés / Colonnes</td>
-   <td>Cochez les cases correspondant aux propriétés que vous souhaitez voir renvoyer l’éditeur en bloc. Les propriétés que vous sélectionnez sont les titres de colonne dans le volet de résultats. Par défaut, le chemin d’accès au nœud est affiché dans les résultats.</td>
+   <td>Cochez les cases correspondant aux propriétés que l’éditeur en vrac doit renvoyer. Les propriétés que vous sélectionnez sont les titres de colonne dans le volet de résultats. Par défaut, le chemin d’accès au nœud est affiché dans les résultats.</td>
   </tr>
   <tr>
    <td>Propriétés / Colonnes personnalisées</td>
-   <td>Entrez les autres propriétés qui ne sont pas répertoriées dans le champ <strong>Propriétés/Colonnes</strong> . Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i></i> Remarque : Si vous ajoutez une propriété personnalisée qui n’existe pas encore, AEM WCM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété qui vient d’être créée doit respecter les contraintes de type de nœud et les espaces de noms des propriétés.</td>
+   <td>Entrez les autres propriétés qui ne sont pas répertoriées dans le champ <strong>Propriétés/Colonnes</strong> . Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i>Remarque :</i> Si vous ajoutez une propriété personnalisée qui n’existe pas encore, AEM WCM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété qui vient d’être créée doit respecter les contraintes de type de nœud et les espaces de noms des propriétés.</td>
   </tr>
  </tbody>
 </table>
@@ -117,10 +120,10 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
-* **** chemin : uniquement rechercher les noeuds sous ce chemin. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
-* **** type : renvoie uniquement les noeuds des types de noeud donnés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds correspondant à l’un des types spécifiés.
-* **** order : trier le résultat selon les propriétés données. Vous pouvez spécifier plusieurs noms de propriété séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple : order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également le paramètre par défaut.
-* **** limit : limite le nombre de résultats à l’aide d’un intervalle. Par exemple : limit:10.20 Veuillez noter que l’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert : limit:10.. ou limite :..20 Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie au maximum ce nombre de résultats. Par exemple, limit:10 (renverra les 10 premiers résultats)
+* **chemin :** recherchez uniquement les noeuds sous ce chemin. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
+* **type :** renvoie uniquement les noeuds des types de noeud donnés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds correspondant à l’un des types spécifiés.
+* **order :** trier le résultat selon les propriétés données. Vous pouvez spécifier plusieurs noms de propriété séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple : order:-name. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également le paramètre par défaut.
+* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple : limit:10.20 Veuillez noter que l&#39;intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert : limit:10.. ou limite :..20 Si les points sont omis et qu&#39;une seule valeur est spécifiée, GQL renvoie au maximum ce nombre de résultats. Par exemple, limit:10 (renverra les 10 premiers résultats)
 
 ### Exportation de contenu {#exporting-content}
 
@@ -133,7 +136,7 @@ Pour exporter du contenu, procédez comme suit :
 
    >[!NOTE]
    >
-   >Par défaut, les modifications sont codées en [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (également appelé « CP-1252 »). Vous pouvez cocher UTF-8 pour exporter les modifications au format UTF-8.
+   >Par défaut, les modifications sont codées en [Windows-1252](https://fr.wikipedia.org/wiki/Windows-1252) (également appelé « CP-1252 »). Vous pouvez cocher UTF-8 pour exporter les modifications au format UTF-8.
 
    ![](assets/srchrsesultexport.png)
 
