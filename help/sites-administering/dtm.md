@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '2222'
+ht-degree: 67%
 
 ---
 
 
 # Intégration à Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Intégrez la [gestion dynamique des balises Adobe](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) à AEM afin de pouvoir utiliser vos propriétés web de gestion dynamique des balises pour effectuer le suivi des sites AEM. La gestion dynamique des balises permet aux spécialistes du marketing de gérer les balises pour la collecte de données et de distribuer les données sur les systèmes de marketing numérique. Par exemple, utilisez la gestion dynamique des balises pour collecter les données d’utilisation de votre site Web AEM et les distribuer pour analyse dans Adobe Analytics ou Adobe Target.
+Intégrez la [gestion dynamique des balises Adobe](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) à AEM afin de pouvoir utiliser vos propriétés web de gestion dynamique des balises pour effectuer le suivi des sites AEM. La gestion dynamique des balises permet aux spécialistes du marketing de gérer les balises pour la collecte de données et de distribuer les données sur les systèmes de marketing numérique. Par exemple, utilisez la gestion dynamique des balises pour collecter des données d’utilisation pour votre site Web AEM et distribuer les données pour l’analyse dans Adobe Analytics ou Adobe Target.
 
 Avant de procéder à l’intégration, vous devez créer la [propriété web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) de gestion dynamique des balises qui surveille le domaine de votre site AEM. The [hosting options](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) of the web property must be configured so that you can configure AEM to access the Dynamic Tag Management libraries.
 
@@ -27,8 +30,9 @@ Une fois que vous avez configuré l’intégration, les modifications apportées
 >
 >Si vous utilisez la gestion dynamique des balises avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’AEM utilisent des API 3.x et d’autres des API 4.x :
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -56,7 +60,7 @@ Si vous le souhaitez, votre instance de création peut utiliser les bibliothèqu
 
 ### Utilisation du crochet de déploiement de la gestion dynamique des balises {#using-the-dynamic-tag-management-deployment-hook}
 
-Lorsqu’AEM héberge les bibliothèques de gestion dynamique des balises, vous pouvez utiliser le service de crochet de déploiement de gestion dynamique des balises pour pousser automatiquement les mises à jour de la bibliothèque vers AEM. Les mises à jour de la bibliothèque sont envoyées lorsque des modifications sont apportées aux bibliothèques, par exemple lorsque les propriétés Web de la gestion dynamique des balises sont modifiées.
+Lorsqu’AEM héberge les bibliothèques de gestion dynamique des balises, vous pouvez utiliser le service de crochet de déploiement de gestion dynamique des balises pour pousser automatiquement les mises à jour de la bibliothèque vers AEM. Les mises à jour de la bibliothèque sont répercutées lorsque des modifications sont apportées aux bibliothèques, par exemple lorsque les propriétés de la propriété Web Gestion dynamique des balises sont modifiées.
 
 Pour utiliser le crochet de déploiement, la gestion dynamique des balises doit pouvoir se connecter à l’instance AEM qui héberge les bibliothèques. You must [enable access to AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) for the Dynamic Tag Management servers.
 
@@ -71,15 +75,15 @@ Autorisez le service de crochet de déploiement de gestion dynamique des balises
 
 Exécutez la configuration à l’aide de la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou d’un nœud [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
-* Dans la console Web, utilisez l’élément Configuration du Hook de déploiement de la gestion dynamique des balises d’Adobe sur la page Configuration.
+* Dans la console Web, utilisez l’élément Configuration du Hook de déploiement de la gestion dynamique des balises Adobe de la page Configuration.
 * Pour une configuration OSGi, le PID du service est `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
 
 Le tableau suivant décrit les propriétés à configurer.
 
-| Propriété de la console Web | OSGi, propriété | Description |
+| Propriété de la console Web | Propriété OSGi | Description |
 |---|---|---|
-| Liste blanche d’IP de la gestion dynamique des balises | `dtm.staging.ip.whitelist` | adresse IP du serveur de gestion dynamique des balises qui met à jour les bibliothèques d’évaluation. |
-| Liste blanche d’IP de la gestion dynamique des balises de production | `dtm.production.ip.whitelist` | adresse IP du serveur de gestion dynamique des balises qui met à jour les bibliothèques de production. |
+| Liste autorisée IP de gestion dynamique des balises | `dtm.staging.ip.whitelist` | Adresse IP du serveur de gestion dynamique des balises qui met à jour les bibliothèques d’évaluation. |
+| Liste autorisée IP de la gestion dynamique des balises de production | `dtm.production.ip.whitelist` | Adresse IP du serveur de gestion dynamique des balises qui met à jour les bibliothèques de production. |
 
 ## Création de la configuration de gestion dynamique des balises {#creating-the-dynamic-tag-management-configuration}
 
@@ -94,24 +98,24 @@ Créez une configuration cloud de sorte que l’instance AEM puisse s’authenti
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
   </tr>
   <tr>
    <td>Jeton API</td>
-   <td>Valeur de la propriété Jeton API de votre compte utilisateur de la gestion dynamique des balises. AEM utilise cette propriété pour l’authentification auprès de la gestion dynamique des balises.</td>
+   <td>Valeur de la propriété Jeton API de votre compte utilisateur Gestion dynamique des balises. AEM utilise cette propriété pour l’authentification auprès de la gestion dynamique des balises.</td>
   </tr>
   <tr>
    <td>Société</td>
    <td>Société à laquelle votre ID de connexion est associé.</td>
   </tr>
   <tr>
-   <td>Propriétés</td>
+   <td>Propriété</td>
    <td>Nom de la propriété Web que vous avez créée pour gérer les balises de votre site AEM.</td>
   </tr>
   <tr>
    <td>Inclure le code de production sur l'auteur</td>
-   <td><p>Sélectionnez cette option pour que les instances d’auteur et de publication AEM utilisent la version de production des bibliothèques de la gestion dynamique des balises. </p> <p>Lorsque cette option n’est pas sélectionnée, les paramètres intermédiaires s’appliquent à l’instance de création et les paramètres de production à l’instance de publication.</p> </td>
+   <td><p>Sélectionnez cette option pour que les instances d’auteur et de publication de l’AEM utilisent la version de production des bibliothèques de la gestion dynamique des balises. </p> <p>Lorsque cette option n’est pas sélectionnée, les paramètres intermédiaires s’appliquent à l’instance de création et les paramètres de production à l’instance de publication.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -131,16 +135,16 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
   </tr>
   <tr>
-   <td>Utiliser l’auto-hébergement</td>
-   <td>Sélectionnez cette option lorsque vous hébergez le fichier de bibliothèque Gestion dynamique des balises sur AEM. Sélectionnez cette option pour afficher les autres propriétés figurant dans ce tableau.</td>
+   <td>Utiliser l'auto-hébergement</td>
+   <td>Sélectionnez le moment où vous hébergez le fichier de bibliothèque Gestion dynamique des balises sur AEM. Sélectionnez cette option pour afficher les autres propriétés figurant dans ce tableau.</td>
   </tr>
   <tr>
    <td>URL du lot de gestion dynamique des balises</td>
-   <td>URL à utiliser pour le téléchargement de la bibliothèque de la gestion dynamique des balises. Procurez-vous cette valeur à partir de la section des URL de téléchargement de la page de téléchargement des bibliothèques de la gestion dynamique des balises. Pour des raisons de sécurité, cette valeur doit être configurée manuellement.</td>
+   <td>URL à utiliser pour télécharger la bibliothèque de la gestion dynamique des balises. Procurez-vous cette valeur à partir de la section des URL de téléchargement de la page de téléchargement des bibliothèques de la gestion dynamique des balises. Pour des raisons de sécurité, cette valeur doit être configurée manuellement.</td>
   </tr>
   <tr>
    <td>Processus de téléchargement</td>
@@ -148,19 +152,19 @@ Lorsque les bibliothèques de gestion dynamique des balises sont hébergées sur
   </tr>
   <tr>
    <td>Conseil du domaine</td>
-   <td><p>(Facultatif) Domaine du serveur AEM hébergeant la bibliothèque de gestion dynamique des balises. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTP intermédiaire ou le chemin d’accès HTTP de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td>
+   <td><p>(Facultatif) Domaine du serveur AEM qui héberge la bibliothèque de gestion dynamique des balises. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTP intermédiaire ou le chemin d’accès HTTP de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td>
   </tr>
   <tr>
    <td>Conseil du domaine sécurisé</td>
-   <td><p>(Facultatif) Domaine du serveur AEM qui héberge la bibliothèque de gestion dynamique des balises sur HTTPS. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTPS intermédiaire ou le chemin d’accès HTTPS de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td>
+   <td><p>(Facultatif) Domaine du serveur AEM qui héberge la bibliothèque Gestion dynamique des balises sur HTTPS. Specify a value to override the default domain that is configured for the <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer service</a>.</p> <p>Lorsqu’il est connecté à la gestion dynamique des balises, AEM utilise cette valeur pour configurer le chemin d’accès HTTPS intermédiaire ou le chemin d’accès HTTPS de production des propriétés Téléchargement de bibliothèque de la propriété web de gestion dynamique des balises.</p> </td>
   </tr>
   <tr>
    <td>Secret partagé</td>
-   <td><p>(Facultatif) Secret partagé à utiliser pour déchiffrer le téléchargement. Récupérez cette valeur dans le champ Secret partagé de la page Téléchargement de bibliothèque de la gestion dynamique des balises.</p> <p><strong></strong> Remarque : Les bibliothèques <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> doivent être installées sur l’ordinateur sur lequel AEM est installé afin qu’AEM puisse déchiffrer les bibliothèques téléchargées.</p> </td>
+   <td><p>(Facultatif) Secret partagé à utiliser pour déchiffrer le téléchargement. Récupérez cette valeur dans le champ Secret partagé de la page Téléchargement de bibliothèque de la gestion dynamique des balises.</p> <p><strong>Remarque :</strong> Les bibliothèques <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> doivent être installées sur l’ordinateur où AEM est installé afin que AEM puisse déchiffrer les bibliothèques téléchargées.</p> </td>
   </tr>
   <tr>
    <td>Activer l'importateur d'interrogations</td>
-   <td><p>(Facultatif) Sélectionnez cette option pour télécharger et installer régulièrement la bibliothèque de la gestion dynamique des balises afin de vous assurer que vous utilisez une version mise à jour. Lorsqu’elle est sélectionnée, la gestion dynamique des balises n’envoie pas les requêtes HTTP POST à l’URL du Hook de déploiement.</p> <p>AEM configure automatiquement la propriété Deploy Hook URL des propriétés de téléchargement de bibliothèque pour la propriété web Gestion dynamique des balises. Si cette option est sélectionnée, la propriété est configurée sans valeur. Lorsqu’elle n’est pas sélectionnée, la propriété est configurée avec l’URL de votre configuration de la gestion dynamique des balises.</p> <p>Activez l’importateur d’interrogation lorsque le hook de déploiement de la gestion dynamique des balises ne peut pas se connecter à AEM, par exemple lorsqu’AEM se trouve derrière un pare-feu.</p> </td>
+   <td><p>(Facultatif) Sélectionnez cette option pour télécharger et installer régulièrement la bibliothèque Gestion dynamique des balises afin de vous assurer que vous utilisez une version mise à jour. Lorsqu’elle est sélectionnée, la gestion dynamique des balises n’envoie pas de requêtes de POST HTTP à l’URL du Hook de déploiement.</p> <p>aem configure automatiquement la propriété Deploy Hook URL de la propriété Library Download pour la propriété web Gestion dynamique des balises. Si cette option est sélectionnée, la propriété est configurée sans valeur. Lorsqu’elle n’est pas sélectionnée, la propriété est configurée avec l’URL de votre configuration de la gestion dynamique des balises.</p> <p>Activez l’importateur d’interrogation lorsque le hook de déploiement de la gestion dynamique des balises ne peut pas se connecter à AEM, par exemple lorsque AEM se trouve derrière un pare-feu.</p> </td>
   </tr>
   <tr>
    <td>Enoncé de planification</td>
@@ -178,12 +182,12 @@ Configurez les propriétés suivantes pour votre configuration de gestion dynami
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
   </tr>
   <tr>
-   <td>Utiliser l’auto-hébergement</td>
-   <td>Désactivez cette option lorsque le fichier de bibliothèque Gestion dynamique des balises est hébergé dans le cloud.</td>
+   <td>Utiliser l'auto-hébergement</td>
+   <td>Supprimez cette option lorsque le fichier de bibliothèque Gestion dynamique des balises est hébergé dans le cloud.</td>
   </tr>
   <tr>
    <td>Code d'en-tête</td>
@@ -191,7 +195,7 @@ Configurez les propriétés suivantes pour votre configuration de gestion dynami
   </tr>
   <tr>
    <td>Code de pied de page</td>
-   <td><p>Code de pied de page pour l’évaluation obtenu à partir de la gestion dynamique des balises pour votre hôte. Cette valeur est automatiquement renseignée lorsque vous vous connectez à la gestion dynamique des balises.</p> <p>Pour afficher le code dans la gestion dynamique des balises, cliquez sur l’onglet Incorporer, puis sur le nom d’hôte. Développez la section Code de pied de page et cliquez sur l’option Copier le code intégré de la zone Code intégré intermédiaire ou Code intégré de production selon les besoins.</p> </td>
+   <td><p>Code de pied de page de l’évaluation obtenu à partir de la gestion dynamique des balises pour votre hôte. Cette valeur est automatiquement renseignée lorsque vous vous connectez à la gestion dynamique des balises.</p> <p>Pour afficher le code dans la gestion dynamique des balises, cliquez sur l’onglet Incorporer, puis sur le nom d’hôte. Développez la section Code de pied de page et cliquez sur l’option Copier le code intégré de la zone Code intégré intermédiaire ou Code intégré de production selon les besoins.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -205,6 +209,7 @@ La procédure suivante utilise l’IU optimisée pour les écrans tactiles afin 
 
    * Cliquez sur Configurer maintenant s’il s’agit de la première configuration que vous ajoutez.
    * Cliquez sur Afficher les configurations, puis sur le lien + en regard de Configurations disponibles si une ou plusieurs configurations ont été créées.
+
    ![chlimage_1-354](assets/chlimage_1-354.png)
 
 1. Saisissez le titre de la configuration, puis cliquez sur Créer.
@@ -243,6 +248,7 @@ Téléchargez manuellement les bibliothèques de gestion dynamique des balises p
 >* `companyID`
 >* `propertyID`
 >* `servertype`
+
 >
 
 
