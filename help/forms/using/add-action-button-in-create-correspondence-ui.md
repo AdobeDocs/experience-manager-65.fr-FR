@@ -164,7 +164,7 @@ Le fichier ACMExtensionsMessages.properties contient des libellés et des messag
 
 #### Redémarrage du lot du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés. Par conséquent, le lot du bloc de création Adobe Asset Composer nécessite un redémarrage.
+Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés. Par conséquent, le lot du bloc de création Asset Composer Adobe nécessite un redémarrage.
 
 >[!NOTE]
 >
@@ -354,7 +354,7 @@ Le processus LCA s’exécute sur le serveur LiveCycle et requiert l’adresse d
 
 #### Installation de LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
 
-Processus LiveCycle requis qui active le processus du service de messagerie électronique.
+Processus de LiveCycle requis qui active le processus de service de messagerie.
 
 >[!NOTE]
 >
@@ -403,11 +403,11 @@ Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle
 
 1. In **SMTP Host**, configure the email service.
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
 #### Configuration du service DSC {#configure-the-dsc-service}
 
-Pour utiliser l’API Correspondence Management, téléchargez le fichier DSCSample.jar (joint à ce document dans le cadre de components.zip) et téléchargez-le sur le serveur LiveCycle. Une fois le fichier DSCSample.jar téléchargé sur le serveur LiveCycle, le serveur AEM utilise le fichier DSCSample.jar pour accéder à l’API renderLetter.
+Pour utiliser l’API Correspondence Management, téléchargez le fichier DSCSample.jar (joint à ce document dans le cadre de components.zip) et téléchargez-le sur le serveur de LiveCycle. Une fois le fichier DSCSample.jar téléchargé sur le serveur de LiveCycle, le serveur AEM utilise le fichier DSCSample.jar pour accéder à l’API renderLetter.
 
 Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
