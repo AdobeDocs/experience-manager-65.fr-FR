@@ -14,13 +14,16 @@ pagetitle: Deploying eCommerce with Demandware
 redirecttarget: https //github.com/adobe/commerce-salesforce
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 71%
 
 ---
 
 
 # Salesforce Commerce Cloud{#salesforce-commerce-cloud}
 
-Le déploiement des packs eCommerce nécessaires fournira toutes les fonctionnalités de la structure eCommerce, ainsi qu’une implémentation de référence de la fonctionnalité eCommerce, fournie avec une implémentation Salesforce Commerce Cloud / Demandware (y compris un catalogue de démonstration).
+Le déploiement des packs eCommerce nécessaires fournira la fonctionnalité complète de la structure eCommerce, ainsi qu&#39;une implémentation de référence de la fonctionnalité eCommerce telle qu&#39;elle est fournie avec une implémentation Salesforce Commerce Cloud / Demandware (y compris un catalogue de démonstration).
 
 ## Modules nécessaires à eCommerce avec Salesforce Commerce Cloud {#packages-needed-for-ecommerce-with-salesforce-commerce-cloud}
 
@@ -58,13 +61,13 @@ La connexion serveur entre AEM et le sandbox Demandware doit être configurée. 
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 1. Cliquez sur **Demandware TransportHandler Plugin for WebDAV**.
 1. Définissez l’**utilisateur WebDAV** et le **mot de passe utilisateur WebDAV**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
 #### Réplication {#replication}
 
