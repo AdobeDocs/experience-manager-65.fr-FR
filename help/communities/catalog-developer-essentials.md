@@ -80,7 +80,7 @@ Utilisation de l’exemple du didacticiel [d’](getting-started-enablement.md)a
 
    * Par exemple, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
 
-* ajouter un noeud de filtres enfant
+* Ajouter un noeud de filtres enfant
 
    * Sélectionner le `catalog`noeud
    * Sélectionner **[!UICONTROL Créer un noeud]**
@@ -89,14 +89,14 @@ Utilisation de l’exemple du didacticiel [d’](getting-started-enablement.md)a
       * Type : `nt:unstructured`
       * Select **[!UICONTROL Save All]**
 
-* ajouter `se_resource-tags` la propriété au `filters` noeud
+* Ajouter `se_resource-tags` la propriété au `filters` noeud
 
    * Sélectionner le `filters` noeud
-   * ajouter une propriété multi
+   * Ajouter une propriété multi
 
       * Nom (name) : `se_resource-tags`
       * Type : Chaîne
-      * Valeur : *&lt;entrez un ID de[balise](#pre-filter-tagids)>*
+      * Valeur : *&lt;entrez un ID de [balise](#pre-filter-tagids)>*
          * Sélectionner **[!UICONTROL plusieurs]**
          * Sélectionner l&#39; **[!UICONTROL Ajoute]**
 
