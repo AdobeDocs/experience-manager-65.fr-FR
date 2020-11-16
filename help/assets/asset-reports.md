@@ -40,7 +40,7 @@ Pour générer des rapports, procédez comme suit :
 * Téléchargement
 * Expiration
 * Modification
-* Publication 
+* Publication
 * [!DNL Brand Portal] publish
 * Utilisation du disque
 * Fichiers
@@ -120,7 +120,7 @@ Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour affi
 * Téléchargement
 * Expiration
 * Modification
-* Publication 
+* Publication
 * [!DNL Brand Portal] publish
 * Fichiers
 
