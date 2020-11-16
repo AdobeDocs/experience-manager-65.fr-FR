@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 translation-type: tm+mt
 source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+workflow-type: tm+mt
+source-wordcount: '1600'
+ht-degree: 80%
 
 ---
 
 
 # Restructuration des référentiels dans AEM 6.5 {#sites-repository-restructuring-in-aem}
 
-As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Sites Solution. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Sites Solution. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avec la mise à niveau vers la version 6.5**
 
@@ -57,10 +60,10 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     <ol>
      <li>Copy any new or modified ContextHub Segments from the previous location to the appropriate new location (/<code>apps</code>, <code>/conf/global</code> or <code>/conf/&lt;tenant&gt;</code>)</li>
      <li>Update references to ContextHub Segments in the previous location to the migrated ContextHub Segments in the new locations (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-    </ol> <p>La requête QueryBuilder ci-dessous recherche toutes les références aux segments ContextHub dans les emplacements précédents.<br /> <br /><code class="code">path=/content
+    </ol> <p>La requête QueryBuilder ci-dessous recherche toutes les références aux segments ContextHub dans les emplacements précédents.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> Cette opération peut être exécutée via l’interface utilisateur <br /> du débogueur d’ <a href="/help/sites-developing/querybuilder-api.md" target="_blank"></a>AEM QueryBuilder. Notez qu’il s’agit d’une requête transversale. Par conséquent, ne l’exécutez pas en production et vérifiez que les limites de traversée sont ajustées en fonction des besoins.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Cette opération peut être exécutée via <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM interface utilisateur</a>du débogueur QueryBuilder. Notez qu’il s’agit d’une requête transversale. Par conséquent, ne l’exécutez pas en production et vérifiez que les limites de traversée sont ajustées en fonction des besoins.</p> </td>
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
@@ -166,14 +169,14 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
    <td>Toute nouvelle configuration d’émulateur d’appareil mobile doit être migrée vers le nouvel emplacement.
     <ol>
      <li>Copy any new Mobile Device Emulator Configurations from the Previous Location to the new location (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Pour toutes les pages de sites AEM qui dépendent de ces configurations d’émulateur de périphériques mobiles, mettez à jour le <span class="code">noeud <code>
+     <li>Pour toutes les pages AEM Sites qui dépendent de ces configurations d’émulateur de périphérique mobile, mettez à jour le <span class="code"><code>
         jcr
-       </code>de la page <code>
+       </code><code>
         :content
-       </code></span> : <br /> <span class="code">[cq:Page]/jcr:content@cq:
+       </code></span> noeud de la page : <br /> <span class="code">[cq:Page]/jcr:content@cq:
        <code>
         deviceGroups
-       </code> = String[ mobile/groups/response ]</span></li>
+       </code> = Chaîne[ mobile/groupes/réactif ]</span></li>
      <li>For any Editable Templates that depend on these Mobile Device Emulator Configurations, update the Editable Templates, pointing the <span class="code">
        <code>
         cq
@@ -207,7 +210,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Nouveaux emplacements</strong></td>
-   <td><p><code>/apps/msm</code> (Configurations du plan directeur client)</p> <p><code>/libs/msm</code> (Configurations du plan directeur prêtes à l’emploi pour les écrans, Commerce)</p> </td>
+   <td><p><code>/apps/msm</code> (Configurations du plan directeur client)</p> <p><code>/libs/msm</code> (Configurations du plan directeur prêtes à l'emploi pour les écrans, Commerce)</p> </td>
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
