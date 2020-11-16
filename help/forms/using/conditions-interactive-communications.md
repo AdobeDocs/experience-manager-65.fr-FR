@@ -10,6 +10,9 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1511'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +23,7 @@ Création et modification de fragments de condition à utiliser dans Communicati
 
 ## Présentation {#overview}
 
-La condition est un fragment de document que vous pouvez inclure dans une communication interactive. Les autres fragments de document sont [texte](../../forms/using/texts-interactive-communications.md), liste et fragment de mise en page. Les conditions vous permettent de définir une ou plusieurs ressources contextuelles qui sont incluses dans une communication interactive en fonction des données et des règles fournies.
+La condition est un fragment de document que vous pouvez inclure dans une communication interactive. Les autres fragments de document sont [texte](../../forms/using/texts-interactive-communications.md), liste et fragment de mise en page. Les conditions vous permettent de définir une ou plusieurs ressources contextuelles qui sont incluses dans une communication interactive en fonction des données et règles fournies.
 
 Exemples :
 
@@ -42,7 +45,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 1. Sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Condition]**.
 1. Saisissez les informations suivantes :
 
-   * **[!UICONTROL Titre]**: (Facultatif) Entrez le titre de la condition. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les conditions sont référencées par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
+   * **[!UICONTROL Titre]**: (Facultatif) Saisissez le titre de la condition. Les titres ne doivent pas nécessairement être uniques et peuvent contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les conditions sont référencées par leur titre (le cas échéant) comme dans les vignettes et les propriétés.
    * **[!UICONTROL Nom]**: Nom unique de la condition, dans un dossier. Aucun fragment de document (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre fragment de document dans un dossier. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
    * **[!UICONTROL Description]** : entrez une description du fragment de document.
@@ -50,7 +53,7 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    * **[!UICONTROL Balises]** : éventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Lorsque vous enregistrez cette condition, les balises nouvellement ajoutées sont créées.
 
-1. Appuyez sur **[!UICONTROL Suivant]**.
+1. Appuyez sur **[!UICONTROL Next]** (Suivant).
 
    La page Créer une condition apparaît.
 
@@ -72,27 +75,31 @@ Les actifs des conditions rendues en fonction des règles appliquées et des val
 
    Vous pouvez utiliser les options suivantes pour gérer les actifs dans une condition :
 
-   ![createconditionscreenassetsaddannoted](assets/createconditionscreenassetsaddedannotated.png)
+   ![createconditionscreenassetsaddedannotted](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Rejetez]Le Changement.**Appuyez sur cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.   **[Acceptez]Le Changement.**Appuyez sur cette icône pour accepter les modifications que vous avez apportées à l’actif et à la règle dans la condition.   **[C]Ressource .**Appuyez sur cette icône pour créer une copie de l’actif avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et l’actif pour l’actif dupliqué. La duplication d’un actif est utile pour créer des règles similaires afin d’afficher des actifs alternatifs basés sur un contexte particulier.   **[D]Afficher .**Appuyez sur cette icône pour afficher un aperçu de l’actif dans la page Créer/Modifier la condition.   **Réorganisation &quot;serveur&quot;.** Appuyez et maintenez cette icône enfoncée pour glisser-déposer des actifs et les réorganiser dans une condition.
+   **[Un] Rejet Du Changement.** Appuyez sur cette icône pour rejeter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
+   **[B] Accepter le changement.** Appuyez sur cette icône pour accepter les modifications que vous avez apportées à l’actif et à la règle dans la condition.
+   **[C] Duplicata Asset.** Appuyez sur cette icône pour créer une copie de l’actif avec la règle appliquée, le cas échéant, dans la condition. Vous pouvez ensuite modifier la règle et l’actif pour l’actif dupliqué. La duplication d’un actif est utile pour créer des règles similaires afin d’afficher des actifs alternatifs basés sur un contexte particulier.
+   **[D] Afficher la Prévisualisation.** Appuyez sur cette icône pour afficher un aperçu de l’actif dans la page Créer/Modifier la condition.
+   **Réorganisation de &quot;serveur&quot;.** Appuyez et maintenez cette icône enfoncée pour glisser-déposer des actifs et les réorganiser dans une condition.
 
    Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
    * **Evaluation des résultats multiples désactivée/Evaluation des résultats multiples activée** : lorsque cette option est activée (s’affiche comme « Evaluation des résultats multiples activée »), toutes les règles sont évaluées et le résultat est la somme de toutes les règles réelles. Si cette option est désactivée (« Évaluation des résultats multiples désactivée »), alors seule la première règle qui s’avère vraie est évaluée et devient la sortie de la condition.
 
-   * **Saut** de page : Sélectionnez cette option ( ![saut](assets/break.png)) pour ajouter un saut de page entre les ressources des conditions. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page in the print output, the whole condition is shifted to the next page instead of breaking in the page between the assets in the condition.
+   * **Saut** de page : Sélectionnez cette option ( ![saut](assets/break.png)) pour ajouter un saut de page entre les actifs des conditions. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page in the print output, the whole condition is shifted to the next page instead of breaking in the page between the assets in the condition.
 
 1. Appuyez sur **[!UICONTROL Créer une règle]** pour ajouter des règles d’affichage ou de masquage des actifs, selon les besoins. Pour utiliser des variables dans les règles, consultez la section [Créer des variables](#variables). Pour plus d’informations, consultez la section [Ajouter des règles à la condition](#ruleeditor).
 
    Les règles créées apparaissent dans la colonne RULE de l’écran Créer une condition.
 
-   ![createconditionscreenrulés ajoutés](assets/createconditionscreenrulesadded.png)
+   ![createconditionscreenrulés ajouté](assets/createconditionscreenrulesadded.png)
 
    >[!NOTE]
    >
    >Vous pouvez insérer dans votre condition des actifs dans lesquels des règles ou des répétitions ont déjà été appliquées.
 
-1. Appuyez sur **[!UICONTROL Enregistrer]**.
+1. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
 
    La condition est créée. Vous pouvez maintenant utiliser la condition comme bloc de construction lors de la création d’une communication interactive.
 
@@ -129,6 +136,7 @@ Vous pouvez modifier une condition en suivant les étapes suivantes. Vous pouvez
 
    * Propriétés du modèle de données de formulaire associé
    * Les [variables](#variables) que vous avez potentiellement créées.
+
    ![createruledialog](assets/createruledialog.png)
 
    Sélectionnez l’option pertinente à évaluer.
@@ -148,7 +156,7 @@ Vous pouvez modifier une condition en suivant les étapes suivantes. Vous pouvez
 
    * Vous pouvez également créer plusieurs conditions dans une règle.
 
-1. Appuyez sur **[!UICONTROL Terminé]**.
+1. Appuyez sur **[!UICONTROL Done]** (Terminé). 
 
    La règle est appliquée à l’actif.
 
@@ -167,15 +175,15 @@ Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Cré
 
    La boîte de dialogue développée, pleine fenêtre, s’affiche.
 
-   ![expandeditruledialog](assets/expandededitruledialog.png)
+   ![ditruledialog extendededededededi](assets/expandededitruledialog.png)
 
 1. Dans le volet de gauche, appuyez sur **[!UICONTROL Variables]**.
 
    Le volet Variables apparaît.
 
-   ![expandeditrulevariables](assets/expandededitrulevariables.png)
+   ![ditrulevariables expandedededededitrables](assets/expandededitrulevariables.png)
 
-1. Appuyez sur **[!UICONTROL Créer]**.
+1. Appuyez sur **[!UICONTROL Créer]**. 
 
    Le volet Créer des variables apparaît.
 
@@ -186,7 +194,7 @@ Appuyez à nouveau sur Redimensionner pour revenir à la boîte de dialogue Cré
    * **[!UICONTROL Type]**: Sélectionnez un type de variable : Chaîne, Nombre, Valeur booléenne ou Date.
    * **[!UICONTROL Autoriser les valeurs spécifiques uniquement]** : pour les variables de type Chaîne et Nombre, vous pouvez garantir que l’agent choisisse parmi un ensemble spécifique de valeurs pour un espace réservé dans l’interface utilisateur de l’agent. To specify the set of values, select this option and then specify comma-separated values that are allowed in the **[!UICONTROL Values]** field.
 
-1. Appuyez sur **[!UICONTROL Créer]**.
+1. Appuyez sur **[!UICONTROL Créer]**. 
 
    La variable est créée et répertoriée dans le volet Variables.
 
