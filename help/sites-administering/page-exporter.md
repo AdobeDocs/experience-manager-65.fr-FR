@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 26%
+ht-degree: 29%
 
 ---
 
@@ -63,11 +63,11 @@ Sélectionnez le modèle requis pour votre site, puis confirmez avec **OK**.
 
 ## Création d’une configuration de l’exportateur de page pour votre site {#creating-a-page-exporter-configuration-for-your-site}
 
-The page exporter is based on the [Content Sync framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html). Les configurations disponibles dans la boîte de dialogue Propriétés **de la** page sont des modèles d’exportation qui définissent les dépendances requises pour une page.
+The page exporter is based on the [Content Sync framework](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html). Les configurations disponibles dans la boîte de dialogue Propriétés **de la** page sont des modèles d’exportation qui définissent les dépendances requises pour une page.
 
 Lorsqu’une exportation de page est déclenchée, le modèle d’exportation est référencé et le chemin de page et le chemin de conception sont appliqués dynamiquement. Le fichier compressé est alors créé à l’aide de la fonctionnalité de synchronisation de contenu standard.
 
-Une installation prête à l’emploi d’AEM comprend un modèle par défaut sous `/etc/contentsync/templates/default`.
+Une installation AEM prête à l’emploi comprend un modèle par défaut sous `/etc/contentsync/templates/default`.
 
 * Il s’agit du modèle de secours lorsqu’aucun modèle d’exportation n’est trouvé dans le référentiel.
 
@@ -107,7 +107,7 @@ Une fois votre modèle configuré, vous devez le rendre disponible :
 
 ### Nœuds de configuration de l’exportateur de page {#page-exporter-configuration-nodes}
 
-Le modèle est constitué d’une structure de noeuds, dans la mesure où il utilise la structure [de synchronisation de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html)contenu.  Chaque nœud possède une propriété `type` qui définit une action spécifique dans le processus de création du fichier compressé.
+Le modèle est constitué d’une structure de noeuds, dans la mesure où il utilise la structure [de synchronisation de](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html)contenu.  Chaque nœud possède une propriété `type` qui définit une action spécifique dans le processus de création du fichier compressé.
 
 <!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
 -->
