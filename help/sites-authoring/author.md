@@ -26,7 +26,7 @@ ht-degree: 88%
 AEM vous propose deux environnements :
 
 * Création
-* Publication 
+* Publication
 
 Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent le lire.
 
