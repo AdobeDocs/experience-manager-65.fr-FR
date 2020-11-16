@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '2345'
+ht-degree: 82%
 
 ---
 
@@ -33,7 +36,7 @@ Notez que l’outil Traducteur et les dictionnaires que vous gérez servent à p
 
 >[!NOTE]
 >
->Bien que l’outil Translator dispose d’une interface utilisateur classique, il est utilisé pour la traduction d’expressions, quelle que soit l’interface dans laquelle elles sont trouvées.
+>Bien que l’outil Translator dispose d’une interface utilisateur classique, elle est utilisée pour la traduction d’expressions, quelle que soit l’interface dans laquelle elles se trouvent.
 
 Le traducteur répertorie les textes utilisés dans AEM avec les diverses traductions correspondantes :
 
@@ -93,7 +96,7 @@ Créez un dictionnaire pour gérer vos chaînes d’IU localisées. Après avoir
 
 ## Gestion des chaînes de dictionnaire {#managing-dictionary-strings}
 
-Utilisez l’outil de traduction pour gérer les chaînes de caractères de vos dictionnaires. Vous pouvez ajouter, modifier et supprimer des chaînes en anglais et fournir des chaînes traduites.
+Utilisez l’outil de traduction pour gérer les chaînes de caractères de vos dictionnaires. Vous pouvez ajouter, modifier et supprimer des chaînes en anglais et fournir également des chaînes traduites.
 
 >[!CAUTION]
 >
@@ -109,7 +112,7 @@ Les chaînes que vous ajoutez à un dictionnaire doivent correspondre exactement
 
 **Fournir des indications pour la traduction**
 
-Utilisez la propriété Comment de la chaîne du dictionnaire pour fournir au traducteur des informations sur la signification de la chaîne. En règle générale, l’IU aide les utilisateurs à déterminer la signification des mots ambigus. Cependant, le traducteur ne voit pas la chaîne dans le contexte de l’interface utilisateur. L’indice de traduction permet de lever toute ambiguïté. Par exemple, un commentaire permet au traducteur de comprendre que le mot anglais Request est utilisé comme nom plutôt que comme verbe.
+Utilisez la propriété Comment de la chaîne du dictionnaire pour fournir au traducteur des informations sur la signification de la chaîne. En règle générale, l’IU aide les utilisateurs à déterminer la signification des mots ambigus. Cependant, le traducteur ne voit pas la chaîne dans le contexte de l’interface utilisateur. L’indice de traduction permet de lever toute ambiguïté. Par exemple, un commentaire aide le traducteur à comprendre que le mot anglais Request est utilisé comme nom plutôt que comme verbe.
 
 Les indices de traduction permettent également de différencier les chaînes qui sont identiques, mais qui ont des significations différentes. Par exemple, le terme « Search » peut être un substantif ou un verbe ; deux entrées « Search » sont donc requises dans le dictionnaire avec deux indices de traduction différents. Le code qui demande la chaîne contient également l’indice de traduction, de sorte que la chaîne correcte soit utilisée dans l’interface utilisateur.
 
@@ -174,8 +177,8 @@ Procédez comme suit pour supprimer une chaîne d’un dictionnaire.
 
 La barre de recherche située au bas de l’outil Traducteur fournit des options de sélection de chaînes :
 
-* **** Filtrer par texte : Un modèle à associer à la chaîne, au commentaire ou aux traductions en anglais. Seuls les éléments qui correspondent à l’ensemble ou à une partie du schéma s’affichent dans le tableau.
-* **** Modifications : Tout, Modifié, Nouveau, Supprimé : Afficher les éléments qui ont été modifiés et non enregistrés.
+* **Filtrer par texte :** Un modèle à associer à la chaîne, au commentaire ou aux traductions en anglais. Seuls les éléments qui correspondent à l’ensemble ou à une partie du schéma s’affichent dans le tableau.
+* **Modifications : Tout, Modifié, Nouveau, Supprimé :** Afficher les éléments qui ont été modifiés et non enregistrés.
 
    * N’importe lequel : affiche les éléments qui ont été modifiés, ajoutés ou supprimés.
    * Modifié : affiche les éléments qui ont été modifiés.
@@ -209,9 +212,11 @@ Une fois que vous avez ajouté la chaîne anglaise à un dictionnaire, vous pouv
 1. Pour modifier les textes traduits pour l’une des chaînes, vous pouvez effectuer l’une des opérations suivantes :
 
    * Double-cliquez sur la langue adéquate de la chaîne requise pour modifier ce texte :
+
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
    * Double-cliquez sur le champ **String** (Chaîne) ou **Comment** (Commentaire) de la chaîne requise pour ouvrir la boîte de dialogue **Edit string** (Modifier la chaîne). Modifiez les traductions, puis cliquez sur **OK** pour fermer la boîte de dialogue :
+
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
 1. Cliquez sur **Save** (Enregistrer) pour valider vos modifications.
@@ -265,7 +270,7 @@ Ajoutez ou supprimez des langues prises en charge par l’outil de traduction et
 
 ### Modification des langues répertoriées dans le tableau de dictionnaire {#changing-languages-listed-in-the-dictionary-table}
 
-L’outil Traducteur inclut les langues suivantes dans le tableau du dictionnaire :
+L’outil Translator inclut les langues suivantes dans le tableau du dictionnaire :
 
 * de - Allemand
 * fr - Français
@@ -285,12 +290,13 @@ Procédez comme suit pour ajouter ou supprimer des langues.
 
 1. Sur ce nœud, créez une propriété :
 
-   * **Nom**: `languages`
-   * **Type**: `Multi-String`
+   * **Nom** : `languages`
+   * **Type** : `Multi-String`
    * **Value** : liste des langues à afficher. Par exemple :
 
       * fr
       * es
+
    >[!NOTE]
    >
    >Les codes de langue doivent être en minuscules.
@@ -376,7 +382,7 @@ De même, le test des chaînes du dictionnaire doit être effectué dans le cadr
 
 >[!NOTE]
 >
->La fonctionnalité de publication régulière, ou réplication, ne doit pas être utilisée pour les dictionnaires. Les dictionnaires doivent être traités de la même manière que le code et la configuration. Cela inclut l’utilisation du contrôle de code source pour suivre les modifications et l’utilisation de packages de contenu pour appliquer les modifications à l’auteur et à la publication.
+>La fonctionnalité de publication régulière, ou la réplication, ne doit pas être utilisée pour les dictionnaires. Au lieu de cela, les dictionnaires doivent être traités de la même manière que le code et la configuration. Cela inclut l’utilisation du contrôle de code source pour effectuer le suivi des modifications et l’utilisation de packages de contenu pour appliquer les modifications à l’auteur et à la publication.
 
 >[!NOTE]
 >
