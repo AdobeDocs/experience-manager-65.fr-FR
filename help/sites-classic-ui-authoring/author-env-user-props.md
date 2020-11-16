@@ -12,17 +12,21 @@ discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 88%
 
 ---
 
 
-# Configuration de votre environnement de compte{#configuring-your-account-environment}
+# Configuration de l’environnement du compte{#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
-* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils (affichée en haut de la fenêtre du navigateur) met à votre disposition les boutons **Copier**, **Couper**, **Coller** et **Supprimer** utilisables avec les composants de paragraphe sur cette page :
+* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous permet de 
+**Boutons Copier**, **Couper**, **Coller**, **Supprimer** pour une utilisation avec les composants de paragraphe de cette page :
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher
