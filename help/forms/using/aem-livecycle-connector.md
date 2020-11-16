@@ -31,7 +31,7 @@ AEM LiveCycle Connector fait partie du [package de module complémentaire AEM Fo
 
 Bien que les propriétés soient explicites, les plus importantes sont les suivantes :
 
-* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que LiveCycle et AEM communiquent via https, début AEM avec la JVM suivante
+* **URL du serveur** : indique l’URL du serveur LiveCycle. Si vous souhaitez que l’LiveCycle et l’AEM communiquent via https, début AEM avec la JVM suivante
 
    ```java
    argument
@@ -52,7 +52,7 @@ Les applications clientes peuvent démarrer des services LiveCycle par programma
 1. Chaque service fournit une classe de client. Pour démarrer un service, créez-en une instance de client.
 1. Démarrez le service et traitez le résultat.
 
-AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur LiveCycle fournit les fonctionnalités suivantes :
+AEM LiveCycle Connector simplifie ce flux en exposant ces instances de client comme des services OSGi accessibles par des méthodes OSGi standard. Le connecteur de LiveCycle offre les fonctionnalités suivantes :
 
 * Client instances as OSGi Service: The clients packaged as OSGI bundles are listed in the [Document Services list](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) section. Chaque jar client enregistre l’instance de client comme service OSGi auprès du registre de services OSGi.
 * Propagation des informations d’identification : les détails de connexion requis pour la connexion au serveur LiveCycle sont gérés de manière centralisée.
