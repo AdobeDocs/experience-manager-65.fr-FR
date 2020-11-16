@@ -66,7 +66,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    * **Lien**[](#insert-hyperlink) : Insérer un lien hypertexte dans le texte.
    * **Répéter** : Imprime l’élément Collection dans le dictionnaire de données au moyen d’un délimiteur.
    * **Condition** : cliquez pour insérer une condition. Insérez le texte en fonction de la condition. Si la condition est vraie, le texte est visible dans la lettre, sinon il ne l’est pas.
-   * **Description** de l&#39;Ajoute : ajouter l&#39;annotation à un bout de texte. Il s’agit de métadonnées visibles pour l’auteur mais pas d’une partie de la lettre créée.
+   * **Description** de l&#39;Ajoute : Ajouter l&#39;annotation à un bout de texte. Il s’agit de métadonnées visibles pour l’auteur mais pas d’une partie de la lettre créée.
    * **Saut de page** : Si vous définissez l’attribut de saut de page d’un module de texte sur false, le module de texte n’est pas fractionné sur plusieurs pages.
 
    L’éditeur de texte s’ouvre. Saisissez le texte. La barre d’outils change selon le type de modifications que vous souhaitez effectuer : paragraphes, alignement ou liste :
@@ -503,8 +503,8 @@ Cet exemple montre comment créer un tableau dynamique et statique, lier le tabl
 
 1. Dans Designer, créez deux fichiers XDP (fragments de mise en page) : un tableau dynamique et un tableau statique. Pour les deux mises en pages :
 
-   * ajoutez le sous-formulaire à la colonne du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
-   * ajoutez un sous-formulaire à la cellule du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
+   * Ajoutez le sous-formulaire à la colonne du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
+   * Ajoutez un sous-formulaire à la cellule du tableau. Veillez à rendre souple la mise en page du sous-formulaire parent du tableau et à supprimer les liaisons du sous-formulaire dans le tableau.
 
    Ou utilisez les fichiers XDP statiques et dynamiques liés à cette étape.
 
