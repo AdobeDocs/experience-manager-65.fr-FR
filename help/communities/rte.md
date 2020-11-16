@@ -61,7 +61,7 @@ Pour des raisons de sécurité, les options d’hyperlien ne sont pas incluses d
 
 Pour ajouter les options d’hyperlien à la barre d’outils :
 
-* ajouter une barre d&#39;outils nommée &quot; `links`&quot;
+* Ajouter une barre d&#39;outils nommée &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Select **[!UICONTROL Save All]**
 
