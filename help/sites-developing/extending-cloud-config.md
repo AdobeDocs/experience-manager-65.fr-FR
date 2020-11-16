@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 66%
 
 ---
 
@@ -30,7 +33,7 @@ Les principes suivis dans le développement des configurations sont basés sur l
 * Référencées à partir du(des) nœud(s) analytique(s) par chemin.
 * Facilement extensibles.
 * Has the flexibility to cater for more complex configurations, such as [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Prise en charge des dépendances (les modules externes [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) doivent être configurés [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) , par exemple).
+* Prise en charge des dépendances (par exemple, les modules externes [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) nécessitent une configuration [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) ).
 
 ## Structure {#structure}
 
@@ -63,7 +66,7 @@ Le fournisseur de services doit également fournir la page de service :
 
 `/etc/cloudservices/<service-name>`
 
-### Modèle {#template}
+### Template (Modèle){#template}
 
 Votre modèle étendra le modèle de base :
 
@@ -169,12 +172,12 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Description</strong></td>
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Chemin de référence vers un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> est incluse (normalement avant la <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> <code>body</code> balise).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td>
+   <td>Chemin d’accès de référence à un composant à inclure automatiquement dans la page.<br /> Ceci est utilisé pour des fonctionnalités supplémentaires et des inclusions JS.<br /> Cela inclut le composant sur la page où<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> est incluse (normalement avant la <code>body</code> balise).<br /> Dans le cas de Google Analytics et Target, nous utilisons ceci pour insérer des fonctionnalités supplémentaires, telles que des appels JavaScript, afin de suivre le comportement des visiteurs.</td>
   </tr>
   <tr>
    <td>description</td>
@@ -186,11 +189,11 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr>
   <tr>
    <td>classement</td>
-   <td>Classement des services à utiliser dans les listes.</td>
+   <td>Classement des services à utiliser dans les annonces.</td>
   </tr>
   <tr>
    <td>selectableChildren</td>
-   <td>Filtre permettant d’afficher les configurations dans la boîte de dialogue des propriétés de la page.</td>
+   <td>Filtre permettant d’afficher les configurations dans la boîte de dialogue des propriétés de page.</td>
   </tr>
   <tr>
    <td>serviceUrl</td>
@@ -202,11 +205,11 @@ La propriété est alors automatiquement chiffrée (en utilisant le service `Cry
   </tr>
   <tr>
    <td>thumbnailPath</td>
-   <td>Chemin d’accès à la miniature du service.</td>
+   <td>Chemin d’accès à la miniature pour le service.</td>
   </tr>
   <tr>
    <td>visible</td>
-   <td>Visibilité dans la boîte de dialogue des propriétés de la page ; visible par défaut (facultatif)</td>
+   <td>Visibilité dans la boîte de dialogue des propriétés de page ; visible par défaut (facultatif)</td>
   </tr>
  </tbody>
 </table>
