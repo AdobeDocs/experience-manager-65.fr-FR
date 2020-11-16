@@ -1,8 +1,8 @@
 ---
 title: Fonction de recherche
 seo-title: Fonction de recherche
-description: ajouter et configurer la recherche sur un site des communautés
-seo-description: ajouter et configurer la recherche sur un site des communautés
+description: Ajouter et configurer la recherche sur un site des communautés
+seo-description: Ajouter et configurer la recherche sur un site des communautés
 uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
