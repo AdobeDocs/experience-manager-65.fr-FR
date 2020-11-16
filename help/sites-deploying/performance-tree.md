@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 92%
 
 ---
 
@@ -55,13 +58,13 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
  <tbody>
   <tr>
    <td><strong>Étape</strong></td>
-   <td><strong>Titre</strong></td>
+   <td><strong>Title (Titre)</strong></td>
    <td><strong>Ressources</strong></td>
   </tr>
   <tr>
    <td><strong>Étape 0</strong></td>
    <td>Analyse du flux de demandes</td>
-   <td><p>Vous pouvez utiliser l’analyse de demandes HTTP standard dans le navigateur afin d’analyser le flux de demandes. Pour plus d’informations sur la façon de procéder sur Chrome, voir :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
+   <td><p>Vous pouvez utiliser l’analyse de demandes HTTP standard dans le navigateur afin d’analyser le flux de demandes. Pour plus d’informations sur la façon de procéder sur Chrome, voir :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href=" https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 2</strong></td>
@@ -106,7 +109,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étapes 10 et 29</strong></td>
    <td>Examen de la couche réseau</td>
-   <td><p>Examinez la couche réseau pour les problèmes de saturation et de latence.</p> <p>Pour le niveau de l’auteur, il est recommandé d’utiliser une latence ne dépassant pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous<a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html"> à cette page</a>.</p> </td>
+   <td><p>Examinez la couche réseau pour les problèmes de saturation et de latence.</p> <p>Pour le niveau de l’auteur, il est recommandé d’utiliser une latence ne dépassant pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous<a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html"> à cette page</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Étape 11</strong></td>
@@ -183,7 +186,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
    <td>Réglage du référentiel</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Conseils de réglage de la performance</a></li>
+     <li><a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">Conseils de réglage de la performance</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configuration des performances</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Réglage de la performance du référentiel</a></li>
     </ul> </td>
@@ -211,7 +214,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Service de synchronisation des ressources</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Plusieurs instances de gestion des actifs numériques</a></li>
-     <li>Articles contenant des conseils pratiques d’amélioration de la performance <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">ici</a> et <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">ici</a>.<br />  </li>
+     <li>Articles contenant des conseils pratiques d’amélioration de la performance <a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">ici</a> et <a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">ici</a>.<br />  </li>
     </ol> </td>
   </tr>
   <tr>
@@ -252,12 +255,12 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étape 34</strong></td>
    <td>Mise à niveau de la version du dispatcher </td>
-   <td><p>Vous pouvez télécharger la dernière version du Dispatcher à cet emplacement :</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Suivez le lien.</a></p> </td>
+   <td><p>Vous pouvez télécharger la dernière version du Dispatcher à cet emplacement :</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Suivi du lien</a></p> </td>
   </tr>
   <tr>
    <td><strong>Étape 35</strong></td>
    <td>Configuration du dispatcher</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuration du dispatcher</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuration du dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 36</strong></td>
@@ -271,7 +274,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étapes 37 et 38</strong></td>
    <td>Chargement différé</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Voir la session sur la performance web d’AEM.</a><br /> </td>
+   <td><a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html ">Voir la session sur la performance web d’AEM.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 39</strong></td>
@@ -291,7 +294,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étape 49</strong></td>
    <td>Réduction de la taille de la charge utile</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html"> réduisez la taille de l’image</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html "> réduisez la taille de l’image</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étapes 42 et 43</strong></td>
@@ -311,7 +314,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
      <li>Concaténez les ressources (images, sprite CSS, JSON, etc.)<br /> </li>
      <li>Incorporation de Clientlibs :
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers</a> de bibliothèque client - voir Utilisation de l’incorporation pour minimiser les requêtes</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers</a> de bibliothèque client - voir Utilisation de l’en-tête Intégration pour réduire les requêtes</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -323,7 +326,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étapes 50 et 51</strong></td>
    <td>Blocage du code JS</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.Adobe.com/ddc/fr/gems/aem-web-performance.html</a></td>
+   <td><a href="https://docs.Adobe.com/ddc/fr/gems/aem-web-performance.html">https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html </a></td>
   </tr>
  </tbody>
 </table>
