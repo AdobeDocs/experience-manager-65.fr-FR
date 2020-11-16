@@ -36,7 +36,7 @@ La stratégie de sauvegarde d’AEM forms implique deux types de sauvegardes :
 
 **Image système :** Sauvegarde complète du système que vous pouvez utiliser pour restaurer le contenu de votre ordinateur si le disque dur ou l&#39;ordinateur entier cesse de fonctionner. Une sauvegarde de l’image système doit être exécutée avant tout déploiement de production d’AEM Forms. Les stratégies internes à l’entreprise définissent ensuite la fréquence d’exécution des sauvegardes de l’image système.
 
-**Données spécifiques à AEM forms :** Les données d’application existent dans la base de données, l’Enregistrement de Document global (GDS) et le référentiel AEM et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
+**Données spécifiques aux formulaires AEM :** Les données d’application existent dans la base de données, le répertoire de stockage global de Documents (GDS) et le référentiel AEM, et doivent être sauvegardées en temps réel. Le répertoire de stockage global de documents est un répertoire utilisé pour stocker les fichiers de longue durée utilisés dans le cadre d’un processus. Ces fichiers comprennent des PDF, des stratégies ou des modèles de formulaires.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Avant de redémarrer le serveur Forms après une récupération, procédez comme
    1. Cliquez sur **Admin Options** (Options d’administration).
    1. Cliquez sur **Start** (Démarrer) pour synchroniser les actifs du référentiel.
 
-1. Dans un environnement organisé en grappes, le noeud principal (par rapport à AEM) doit être supérieur aux noeuds secondaires.
+1. Dans un environnement organisé en grappes, le noeud Principal (par rapport à l&#39;AEM) doit être supérieur aux noeuds secondaires.
 1. Assurez-vous qu’aucun processus n’est initialisé à partir de sources internes ou externes telles que les initiateurs de processus Web, SOAP ou EJB jusqu’à ce que le fonctionnement normal du système soit validé.
 
 Si la base de données principale d’AEM forms est déplacée ou modifiée, consultez les guides d’installation correspondant à votre serveur d’applications pour connaître les détails de mise à jour des informations de connexion des sources de données IDP_DS et EDC_DS pour AEM Forms.
