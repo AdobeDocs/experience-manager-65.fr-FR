@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 93%
 
 ---
 
@@ -46,13 +49,13 @@ Outre ces vérifications, observez les recommandations ci-dessous relatives au p
 
 * Sauvegardez le répertoire de stockage global de documents en utilisant un système d’exploitation disponible ou un utilitaire de sauvegarde tiers (voir [Emplacement du répertoire de stockage global de documents](/help/forms/using/admin-help/files-back-recover.md#gds-location)).
 * (facultatif) Sauvegardez le répertoire racine de stockage de contenu en utilisant un système d’exploitation disponible ou un utilitaire de sauvegarde tiers (voir [Emplacement racine de stockage de contenu (environnement autonome)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) ou [Emplacement racine de stockage de contenu (environnement organisé en grappes)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)).
-* Sauvegardez les instances   instances d’auteur et de publication (sauvegarde crx -repository).
+* Sauvegardez les instances   instances d’auteur et de publication ( sauvegarde crx -repository).
 
    Pour sauvegarder l’environnement de la solution Correspondence Management, effectuez la procédure relative aux instances d’auteur et de publication décrite dans le document [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md).
 
    Considérez les points suivants lors de la sauvegarde des instances d’auteur et de publication :
 
-   * Assurez-vous que  les instances d’auteur et de publication sont synchronisées pour démarrer en même temps. Bien que vous puissiez continuer à utiliser les instances d’auteur et de publication pendant la sauvegarde, il est recommandé de ne publier aucun fichier pendant la sauvegarde afin d’éviter toute modification non capturée. Patientez jusqu’à ce que la sauvegarde des instances d’auteur et de publication soit terminée avant de publier de nouveaux actifs.
+   * Assurez-vous que  les instances d’auteur et de publication sont synchronisées au début en même temps. Bien que vous puissiez continuer à utiliser les instances d’auteur et de publication pendant la sauvegarde, il est recommandé de ne pas publier de fichier pendant la sauvegarde afin d’éviter toute modification non capturée. Patientez jusqu’à ce que la sauvegarde des instances d’auteur et de publication soit terminée avant de publier de nouveaux actifs.
    * La sauvegarde complète de nœud d’auteur inclut la sauvegarde des données de Forms Manager et de l’espace de travail AEM Forms.
    * Les développeurs de Workbench peuvent continuer à travailler sur leurs processus localement. Ils ne doivent pas déployer de nouveaux processus au cours de la phase de sauvegarde.
    * La décision concernant la durée de chaque session de sauvegarde (en mode de sauvegarde restauration) doit être basée sur la durée totale nécessaire pour sauvegarder toutes les données dans AEM forms (base de données, stockage global de données, référentiel AEM et toutes les autres données personnalisées supplémentaires).
@@ -95,8 +98,9 @@ Vous pouvez utiliser les scripts `LCBackupMode` de l’interface de ligne de com
 1. Modifiez le script `LCBackupMode.cmd` ou `LCBackupMode.sh` de façon à indiquer les valeurs par défaut correspondant à votre système d’exploitation.
 1. Dans l’invite de commande, exécutez la commande suivante sur une seule ligne :
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*nom d’hôte *`] [-port=`*portnumber* nomd’utilisateur `] [-user=`**mot de passe nom d’`] [-password=`*étiquettesecondes*`] [-label=`**`] [-timeout=`**`]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*nom d’hôte *`] [-port=`*portnumber* nomd’ `] [-user=`*utilisateur *`] [-password=`*mot de passe  nom d’étiquette*`] [-label=`**`]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*nom d’hôte* `] [-port=`*portnumber* nom d’ `] [-user=`*utilisateur* `] [-password=`*mot de passe nom d’étiquettesecondes* `] [-label=`**`] [-timeout=`**`]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*nom d’hôte* `] [-port=`*portnumber* nom d’ `] [-user=`*utilisateur* `] [-password=`*mot de passe labelname* `] [-label=`**`]`
+
    Dans les commandes précédentes, les emplacements réservés peuvent être définis comme suit :
 
    `Host` est le nom d’hôte sur lequel AEM Forms est exécuté.
@@ -138,8 +142,8 @@ Vous pouvez utiliser l’interface de ligne de commande et sortir AEM Forms du m
 
 1. Exécutez la commande suivante sur une même ligne :
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nom d’hôte *`] [-port=`*numérode port* nom d’ `] [-user=`*utilisateur *`] [-password=`*mot de passe*`]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname *`] [-port=`*portnumber* `] [-user=`*username *`] [-password=`*password* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `]`
 
       Dans les commandes précédentes, les emplacements réservés peuvent être définis comme suit :
 
