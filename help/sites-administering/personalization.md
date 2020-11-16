@@ -1,6 +1,6 @@
 ---
-title: 'Personnalisation '
-seo-title: 'Personnalisation '
+title: 'Personnalisation  '
+seo-title: 'Personnalisation  '
 description: En savoir plus sur la personnalisation dans AEM.
 seo-description: En savoir plus sur la personnalisation dans AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 78%
 
 ---
 
 
-# Personnalisation {#personalization}
+# Personnalisation  {#personalization}
 
 ## What is Personalization? {#what-is-personalization}
 
@@ -25,7 +28,7 @@ La personnalisation vise à proposer à l’utilisateur un environnement sur mes
 
 Trois éléments principaux sont impliqués dans la personnalisation :
 
-Les **utilisateurs**
+**Utilisateurs**
 
 * Ils disposent de profils, personnels ou de groupe. Ces profils présentent des caractéristiques (par exemple, description de poste, lieu, intérêts) qui peuvent être utilisées pour personnaliser le contenu que les utilisateurs peuvent afficher.
 * Ils effectuent des actions. Ces actions peuvent être analysées et associées à des règles de comportement dans le but de personnaliser le contenu affiché.
@@ -34,7 +37,7 @@ Les **utilisateurs**
 
 * Constitue ce que l’utilisateur souhaite voir. Il s’agit de préférence d’un contenu ciblé et permettant à l’utilisateur d’effectuer ses tâches.
 * Il peut être classé, donc mis à la disposition des utilisateurs selon des règles prédéfinies. Le contenu doit être dynamique, à savoir qu’il doit être
-* doit, d’une certaine manière, dépendre de l’utilisateur ; si chaque utilisateur voit le même contenu, la personnalisation est redondante.
+* doit, d’une certaine manière, dépendre de l’utilisateur. Si chaque utilisateur voit le même contenu, la personnalisation est redondante.
 
 Les **règles**
 
@@ -58,7 +61,7 @@ La personnalisation peut être utilisée dans de nombreuses situations, par exem
 
 **Pages intranet**
 
-* Le contenu peut être diffusé en fonction de l’emplacement, du service et/ou du rôle d’un utilisateur, déjà défini dans un réseau interne.
+* Le contenu peut être diffusé en fonction de l&#39;emplacement, du département et/ou du rôle d&#39;un utilisateur, déjà défini dans un réseau interne.
 * Selon le choix disponible, l’utilisateur peut effectuer d’autres sélections.
 
 **Groupes d’utilisateurs spécifiques, restreints et ciblés (extranet)**
@@ -107,12 +110,12 @@ Lors de l’utilisation de la personnalisation, tenez compte des points suivants
 
 * La personnalisation qui se base sur la surveillance du comportement de l’utilisateur ou la définition de règles basées sur le profil de l’utilisateur doit être précise et logique.
 * Il n’y a rien de plus frustrant pour un utilisateur que de se voir imposer ou refuser un contenu en raison de la logique inexacte d’une règle.
-* Par conséquent, les règles doivent être bien pensées - avec les exigences de l’utilisateur au premier plan. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
+* Par conséquent, les règles doivent être bien pensées, les exigences de l&#39;utilisateur étant au premier plan. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
 
 **Quand utiliser la personnalisation**
 
-* Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation bénéficiera-t-elle vraiment à l’utilisateur ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation risque d’être une fonctionnalité que les utilisateurs configurent une fois (pour voir comment elle fonctionne) et une seule fois, car elle ne leur apporte aucun avantage réel.
-* La personnalisation n’a de sens que lorsque le contenu est dynamique, selon l’utilisateur. Si tous les utilisateurs voient le même contenu, la personnalisation est redondante.
+* Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation bénéficiera-t-elle vraiment à l’utilisateur ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation risque d’être une fonction que les utilisateurs configurent une fois (pour voir comment elle fonctionne) et une seule fois, car elle ne leur apporte aucun avantage réel.
+* La personnalisation n’a de sens que lorsque le contenu est dynamique, en fonction de l’utilisateur d’une certaine manière. Si tous les utilisateurs voient le même contenu, la personnalisation est redondante.
 
 **Confidentialité**
 
@@ -130,24 +133,24 @@ Toutefois, le contrôle d’accès peut être utilisé pour créer une forme de 
 
 Divers composants sont fournis avec AEM en vue de la personnalisation. Certains de ces composants permettent aux utilisateurs de se connecter et de modifier leur profil, tandis que d’autres (par exemple, Mes gadgets) leur permettent de configurer une page spécifique :
 
-| Titre dans Sidekick | Objectif |
+| Titre dans le Sidekick | Objectif |
 |---|---|
 | Champ du mot de passe coché | Demande le mot de passe et la confirmation de celui-ci. |
 | Inscription combinée | Permet à l’utilisateur de se connecter à un compte existant ou de s’inscrire à un nouveau compte. |
-| Champ d’adresse des formulaires | Un champ complexe permettant la saisie d’une adresse internationale. |
-| Forms Begin | Commence une définition de formulaire |
+| Champ d’adresse Forms | Un champ complexe permettant la saisie d’une adresse internationale. |
+| Début de Forms | Début d’une définition de formulaire |
 | Forms Captcha | Un champ consistant en un mot alphanumérique actualisé automatiquement. Le composant Captcha protège les sites Web contre les virus. |
-| Groupe de cases à cocher Formulaires | Plusieurs éléments organisés en une liste et précédés par des cases à cocher. Les utilisateurs peuvent sélectionner plusieurs cases à cocher. |
-| Liste déroulante Formulaires | Plusieurs éléments organisés en une liste déroulante. Le commutateur Plusieurs sélections possibles spécifie si plusieurs éléments peuvent être sélectionnés depuis la liste. |
-| Fin de formulaire | Termine la définition du formulaire. |
-| Téléchargement de fichier de formulaires | Un élément de téléchargement qui permet à l’utilisateur de télécharger un fichier sur le serveur. |
-| Champ masqué des formulaires | Ce champ ne s’affiche pas pour l’utilisateur. Il peut être utilisé pour le transport d’une valeur au client et de retour au serveur. Ce champ ne devrait avoir aucune contrainte. |
-| Bouton Image de formulaires | Un bouton d’envoi supplémentaire pour le formulaire qui est rendu en une image. |
-| Champ Mot de passe de formulaires | Similaire au champ de texte mais seule une ligne est autorisée et la saisie de texte par l’utilisateur n’est pas visible dans le champ. |
+| Groupe de cases à cocher Forms | Plusieurs éléments organisés en une liste et précédés par des cases à cocher. Les utilisateurs peuvent sélectionner plusieurs cases à cocher. |
+| Liste déroulante Forms | Plusieurs éléments organisés en une liste déroulante. Le commutateur Plusieurs sélections possibles spécifie si plusieurs éléments peuvent être sélectionnés depuis la liste. |
+| Fin de Forms | Termine la définition du formulaire. |
+| Transfert de fichier Forms | Un élément de téléchargement qui permet à l’utilisateur de télécharger un fichier sur le serveur. |
+| Champ masqué Forms | Ce champ ne s’affiche pas pour l’utilisateur. Il peut être utilisé pour le transport d’une valeur au client et de retour au serveur. Ce champ ne devrait avoir aucune contrainte. |
+| Bouton Forms Image | Un bouton d’envoi supplémentaire pour le formulaire qui est rendu en une image. |
+| Champ Mot de passe Forms | Similaire au champ de texte mais seule une ligne est autorisée et la saisie de texte par l’utilisateur n’est pas visible dans le champ. |
 | Groupe radio Forms | Plusieurs éléments organisés en une liste et précédés par des cases d’option. Les utilisateurs ne doivent sélectionner qu’une seule case d’option. |
-| Bouton Envoyer des formulaires | Un bouton d’envoi supplémentaire pour le formulaire avec le titre affiché comme texte sur le bouton. |
-| Champ de texte Formulaires | Champ de texte qui permet aux utilisateurs de saisir des informations. |
-| My Gadgets | Vous permet d’inclure l’un des nombreux gadgets disponibles. |
+| Bouton Envoyer Forms | Un bouton d’envoi supplémentaire pour le formulaire avec le titre affiché comme texte sur le bouton. |
+| Champ de texte Forms | Champ de texte qui permet aux utilisateurs de saisir des informations. |
+| My Gadgets | Vous permet d&#39;inclure l&#39;un des gadgets disponibles. |
 | Photo de l’avatar du profil | Permet la saisie d’une photo Avatar. |
 | Nom détaillé du profil | Entrée des détails du nom, y compris les éléments tels que le titre, le deuxième prénom et le suffixe le cas échéant. |
 | Nom d&#39;affichage du profil | Nom à afficher. |
@@ -155,10 +158,10 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Sexe du profil | Permet la saisie du sexe. |
 | Principal numéro de téléphone du profil | Permet la saisie d’un numéro de téléphone. |
 | Principale URL du profil | Permet la saisie d’une URL. |
-| Texte général du profil, propriété | Propriétés du profil. |
+| Profil Texte général, propriété | Propriétés du profil. |
 | Connexion | Permet d’envoyer un nom d’utilisateur et un mot de passe lors de la connexion. |
-| Se déconnecter | Indique l’utilisateur actuellement connecté et vous donne un lien permettant de vous déconnecter. |
-| Nuage de tags | Cloud de balises pour afficher une sélection de balises sous forme graphique dans votre site Web |
+| Se déconnecter | Indique l’utilisateur actuellement connecté et fournit un lien permettant de se déconnecter. |
+| Nuage de tags | Cloud de balises pour afficher une sélection de balises présentée sous forme graphique dans votre site Web |
 | Teaser | Elément de contenu (généralement une image) affiché sur une page principale pour &quot;inciter&quot; les utilisateurs à accéder au contenu sous-jacent. |
 
 ## Personnalisation et contenu de la communauté {#personalization-and-community-content}
