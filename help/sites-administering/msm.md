@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 78%
 
 ---
 
@@ -163,9 +166,9 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
 <table>
  <tbody>
   <tr>
-   <td><strong>Term</strong></td>
+   <td><strong>Terme</strong></td>
    <td><strong>Définition</strong></td>
-   <td><strong>Plus de détails</strong></td>
+   <td><strong>Détails supplémentaires</strong></td>
   </tr>
   <tr>
    <td><strong>Source</strong></td>
@@ -173,8 +176,8 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
    <td>Synonyme de pages Blueprints et/ou Blueprint.</td>
   </tr>
   <tr>
-   <td><strong>Live Copy</strong></td>
-   <td>La copie (de la source), conservée par les actions de synchronisation définies par les configurations de déploiement. </td>
+   <td><strong>Live Copy </strong></td>
+   <td>Copie (de la source), gérée par des actions de synchronisation définies par les configurations de déploiement. </td>
    <td> </td>
   </tr>
   <tr>
@@ -184,42 +187,42 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
   </tr>
   <tr>
    <td><strong>Relations en direct</strong><br /> </td>
-   <td>Définition efficace de l'héritage pour une ressource donnée; les connexions entre la source et les copies en direct.<br /> </td>
+   <td>Définition efficace de l'héritage pour une ressource donnée ; les connexions entre la source et les copies en direct.<br /> </td>
    <td>Assure que les modifications apportées à la source peuvent être synchronisées avec la Live Copy.</td>
   </tr>
   <tr>
    <td><strong>Blueprint</strong></td>
-   <td>Synonyme de Source.</td>
-   <td>Peut être défini par une configuration de plan directeur.</td>
+   <td>Synonyme avec Source.</td>
+   <td>Peut être défini par une configuration de plan.</td>
   </tr>
   <tr>
    <td><strong>Configuration du plan directeur</strong></td>
-   <td>Configuration prédéfinie spécifiant un chemin source.</td>
+   <td>Configuration prédéfinie spécifiant un chemin d’accès source.</td>
    <td>Lorsqu’une page de plan directeur est référencée dans une configuration de plan directeur, la commande Déployer devient disponible.</td>
   </tr>
   <tr>
    <td><strong>Synchronisation</strong></td>
-   <td>Terme générique de synchronisation du contenu entre la source et les copies dynamiques (par <strong>déploiement</strong> et <strong>synchronisation</strong>).</td>
+   <td>Terme générique pour la synchronisation du contenu entre la source et les copies dynamiques (par <strong>déploiement</strong> et <strong>synchronisation</strong>).</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Déployer</strong><br /> </td>
-   <td>Synchronise la source avec la bibliothèque en direct.<br /> Peut être déclenché par un auteur (sur une page de plan directeur) ou par un événement système (tel que défini par la configuration de déploiement).</td>
+   <td>Synchronise la source avec la bibliothèque livecopy.<br /> Peut être déclenché par un auteur (sur une page de plan directeur) ou par un événement système (tel que défini par la configuration de déploiement).</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Configuration du déploiement</strong></td>
-   <td>Règles qui déterminent les propriétés à synchroniser, comment et quand.</td>
+   <td>Règles qui déterminent quelles propriétés seront synchronisées, comment et quand.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Synchroniser</strong></td>
-   <td>Demande manuelle de synchronisation, effectuée à partir des pages de la bibliothèque.</td>
+   <td>Demande manuelle de synchronisation, effectuée à partir des pages livecopy.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Héritage</strong></td>
-   <td>Une page/un composant de copie dynamique hérite du contenu de sa page/composant source lors de la synchronisation.</td>
+   <td>Une page/composant de copie dynamique hérite du contenu de sa page/composant source lors de la synchronisation.</td>
    <td> </td>
   </tr>
   <tr>
@@ -275,7 +278,7 @@ In the previous example, `/content/we-retail/language-masters/en` is the global 
 
 * The content below `/content/we-retail/language-masters/en` is the source.
 
-* Le contenu ci-dessous `/content/we-retail/language-masters/en` est copié sous les `/content/we-retail/us/en/`, `/content/we-retail/gb/en`, `/content/we-retail/ca/en`et `/content/we-retail/au/en` noeuds. Il s’agit des Live Copies.
+* Le contenu ci-dessous `/content/we-retail/language-masters/en` est copié sous les `/content/we-retail/us/en/`noeuds, `/content/we-retail/gb/en`, `/content/we-retail/ca/en`et `/content/we-retail/au/en` . Il s’agit des Live Copies.
 
 * Authors make changes to pages below `/content/we-retail/language-masters/en`.
 * Une fois la synchronisation déclenchée, MSM synchronise ces modifications vers les Live Copies.
@@ -298,7 +301,7 @@ La forme de base de la Live Copy comprend :
 * Des relations en direct définies pour chaque ressource :
 
    * Liez la ressource de Live Copy à son plan directeur/sa source.
-   * Sont utilisées lors de la réalisation de l’héritage et du déploiement.
+   * Sont utilisés lors de la réalisation de l’héritage et du déploiement.
 
 * Changes can be [synchronized](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) according to requirements.
 
@@ -315,7 +318,7 @@ Lorsque vous créez une Live Copy dans AEM, vous pouvez voir et naviguer dans la
 
 #### Live Copies imbriquées {#nested-live-copies}
 
-When you (or a process) create a [new page within an existing live copy](#live-copy-with-non-live-copy-pages) this new page can also be set up as a live copy of a different blueprint. Il s’agit d’une Live Copy imbriquée. Ici, le comportement de la seconde copie dynamique (interne) est affecté par la première copie dynamique (externe) de la manière suivante :
+When you (or a process) create a [new page within an existing live copy](#live-copy-with-non-live-copy-pages) this new page can also be set up as a live copy of a different blueprint. Il s’agit d’une copie dynamique imbriquée, où le comportement de la deuxième copie dynamique (interne) est affecté par la première copie dynamique (externe) de la manière suivante :
 
 * Un déploiement profond déclenché pour la Live Copy supérieure peut continuer dans la Live Copy imbriquée (par exemple, si le déclencheur correspond).
 * Tous les liens entre les sources sont réécrits dans les Live Copies.
@@ -336,7 +339,7 @@ Une Live Copy est appelée Live Copy empilée lorsqu’elle est créée en tant 
 
 N’importe quelle page ou branche de pages peut être utilisée comme source d’une Live Copy.
 
-Toutefois, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin d’accès source. L&#39;utilisation d&#39;une configuration de plan directeur présente les avantages suivants :
+Toutefois, MSM vous permet également de définir une configuration de plan directeur qui spécifie un chemin d’accès source. L&#39;utilisation d&#39;une configuration de schéma directeur présente les avantages suivants :
 
 * Allow the author to use the **Rollout** option on a blueprint - to (explicitly) push modifications to live copies that inherit from this blueprint.
 * Allow the author to use **Create Site**; this allows the user to easily select languages and configure the structure of the live copy.
@@ -346,13 +349,13 @@ La source d’une Live Copy peut comprendre des pages normales ou des pages engl
 
 La source forme le plan directeur de la Live Copy. Le plan directeur est défini lorsque vous effectuez l’une des opérations suivantes :
 
-* [Création d’une configuration de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)
+* [Créer une configuration de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)
 
    La configuration définit (à l’avance) les pages à utiliser pour créer la copie dynamique.
 
 * [Création d’une copie dynamique d’une page](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   Les pages utilisées pour créer la copie dynamique (les pages source) sont les pages de plan.
+   Les pages utilisées pour créer la copie dynamique (les pages sources) sont les pages de plan.
 
    La page source peut être référencée par une configuration de plan directeur, ou non.
 
@@ -429,9 +432,9 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 
 1. Déterminez à quel endroit vous devez [spécifier les configurations de déploiement à utiliser](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) et procédez aux configurations en fonction de vos besoins.
 1. If required, [create a blueprint configuration](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration) that identifies the source content of the live copy.
-1. [Créez une copie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy)en direct.
+1. [Créez une copie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy)dynamique.
 1. Apportez des modifications au contenu source selon vos besoins. Vous devez suivre le processus normal d’examen et d’approbation du contenu établi par votre entreprise.
-1. [Exécutez](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) le plan directeur ou [synchronisez la copie](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) dynamique avec les modifications.
+1. [Exécutez](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) le plan ou [synchronisez la copie](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) dynamique avec les modifications.
 
 ## Personnalisation de MSM {#customizing-msm}
 
@@ -443,6 +446,6 @@ MSM fournit des outils afin que votre implémentation puisse s’adapter aux com
 * **Actions de synchronisation personnalisée**
    [Créez une action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) de synchronisation personnalisée lorsque les actions installées ne répondent pas aux exigences spécifiques de votre application. MSM fournit une API Java permettant de créer des actions de synchronisation personnalisées.
 
-## Meilleures pratiques {#best-practices}
+## Bonnes pratiques {#best-practices}
 
 La page [Meilleures pratiques MSM](/help/sites-administering/msm-best-practices.md) contient des informations importantes sur votre implémentation.
