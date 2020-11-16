@@ -11,6 +11,9 @@ discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 85%
 
 ---
 
@@ -128,7 +131,7 @@ Le profil d’action par défaut a rendu le formulaire XDP au format PDF. Ce com
 
 Voici certaines questions fréquentes sur les profils d’action :
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quels processus de rendu/envoi seront disponibles en standard ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quels processus de rendu/d’envoi seront disponibles prêts à l’emploi ?**
 
 * Render Guide (Guides est obsolète)
 * Render Form Guide
@@ -139,7 +142,7 @@ Voici certaines questions fréquentes sur les profils d’action :
 
 Et, les processus d’envoi équivalents.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Quel d&#39;action sera disponible en standard ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Quels Profils d&#39;action seront disponibles en standard ?**
 
 Pour des formulaires XDP:
 
@@ -153,7 +156,7 @@ Rien. Le profil d’action par défaut est choisi automatiquement, et le mode de
 
 L’utilisateur doit sélectionner le bouton radio HTML pour le profil par défaut.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du d&#39;actions par défaut  comportement ?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Y aura-t-il un impact de mise à niveau sur la modification du comportement du profil d&#39;action par défaut ?**
 
 Oui ; étant donné que le rendu précédent et les services d’envoi associés au profil d’action par défaut étaient différents, ils sont gérés en tant que personnalisations des formulaires existants. On clicking **Restore Defaults**, the default render and submit services are set instead.
 
