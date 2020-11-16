@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 89%
 
 ---
 
@@ -26,17 +29,17 @@ Quand un processus bloque, l’exécution de toutes les opérations suivantes es
 
 Pour chaque élément bloqué, la liste présente les informations suivantes :
 
-**** Nom de l&#39;opération ou nom de la branche : Nom de l’opération ou de la branche.
+**Nom de l&#39;opération ou nom de la branche :** Nom de l&#39;opération ou de la branche.
 
-**** État : Toujours BLOQUÉ pour les éléments bloqués.
+**État :** Toujours BLOQUE pour les éléments bloqués.
 
-**** Erreur : Brève description du problème.
+**Erreur :** Brève description du problème.
 
-**** ID du processus : Entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée initie un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**ID du processus :** Entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**** Nom du processus - Version : Nom du processus affecté dans Workbench.
+**Nom du processus - Version :** Nom du processus affecté dans Workbench.
 
-**** Date bloquée : date et heure auxquelles l&#39;opération ou la branche est bloquée.
+**Date bloquée :** date et heure auxquelles l&#39;opération ou la branche est bloquée.
 
 Vous pouvez exécuter les tâches suivantes dans la page Opérations bloquées ou Branches bloquées :
 
