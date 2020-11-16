@@ -80,13 +80,13 @@ Les composants sont les blocs de construction d’un formulaire adaptatif. AEM [
    <table> 
     <tbody> 
      <tr> 
-      <td><b>Property</b></td> 
+      <td><b>Propriété</b></td> 
       <td><b>Zone de texte 1<br/></b></td> 
       <td><b>Zone de texte 2<br/></b></td> 
       <td><b>Zone de texte 3</b></td> 
      </tr> 
      <tr> 
-      <td>Title (Titre)</td> 
+      <td>Titre</td> 
       <td>Nom<br /> </td> 
       <td>Adresse d’expédition</td> 
       <td>État</td> 
