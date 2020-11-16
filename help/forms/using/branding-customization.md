@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 79%
 
 ---
 
@@ -40,8 +43,9 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 1. (***Pour la personnalisation des icônes***) En mode navigateur de Capture, accédez à **[!UICONTROL Capturer > Capture > Fichiers pris en charge > Capture-info.plist]**. Cliquez sur la liste déroulante à côté des fichiers d’icônes. Spécifiez le nom du fichier d’icône (.png) et chargez le fichier sur **[!UICONTROL Capturer > Capture > Ressources > icônes]**. Les dimensions actuellement prises en charge sont les suivantes : 29x29, 50x50, 58x58, 72x72, 100x100 et 144x144.
 1. (***Pour la personnalisation des images de lancement***) Vérifiez que les noms de fichiers de vos images sont les suivantes :
 
-   * Pour portrait : `Default-Portrait~ipad.png` et `Default-Portrait@2x~ipad.png`
+   * Portrait : `Default-Portrait~ipad.png` et `Default-Portrait@2x~ipad.png`
    * Pour paysage : `Default-Landscape~ipad.png` et `Default-Landscape@2x~ipad.png`
+
    Chargez-les sur le projet de capture pour remplacer les fichiers existants du projet.
 
    >[!NOTE]
@@ -63,6 +67,7 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
+
    >[!NOTE]
    >
    >Vérifiez que le nom et la résolution de votre image correspondent à l’image que vous remplacez dans le projet.
@@ -90,7 +95,7 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 ### Pour iOS {#for-ios-1}
 
 1. Ouvrez le projet `Capture.xcodeproj` dans Xcode.
-1. Dans le du navigateur de Capture, accédez à **[!UICONTROL Capture > Capture > Fichiers pris en charge > InfoPlist.strings]**.
+1. Dans la vue du navigateur de Capture, accédez à **[!UICONTROL Capture > Capture > Fichiers pris en charge > InfoPlist.strings]**.
 
    Mettez à jour la valeur de l’ `CFBundleDisplayName` attribut vers un nom que vous souhaitez afficher pour l’application.
 
@@ -115,7 +120,7 @@ Exécutez les étapes suivantes pour personnaliser l’icône par défaut et l�
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Mettez à jour la valeur dans la `<name>...</name>` balise .
+1. Mettez à jour la valeur de la `<name>...</name>` balise .
 1. Régénérez l’application AEM Forms.
 
    Pour en savoir plus sur la création de l’application pour Windows, consultez la section [Configuration du projet Visual Studio et génération d’une application Windows](/help/forms/using/setup-visual-studio-project-build-installer.md).
