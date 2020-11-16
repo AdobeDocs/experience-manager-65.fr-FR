@@ -12,6 +12,9 @@ content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 81%
 
 ---
 
@@ -36,7 +39,7 @@ Vous trouverez, aux pages suivantes, des liens rapides vers certains des princip
 
 * [Commerce électronique](/help/sites-administering/ecommerce.md)
 
-   La fonctionnalité eCommerce d’AEM comprend également une gamme de composants contenus dans le groupe **Commerce** .  L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
+   La fonctionnalité eCommerce de AEM comprend également une gamme de composants contenus dans le groupe **Commerce** . L&#39;utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ## Utilisation du mode de conception pour configurer des composants {#using-design-mode-to-configure-components}
 
