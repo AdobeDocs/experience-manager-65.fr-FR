@@ -23,9 +23,9 @@ ht-degree: 88%
 
 Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) sont disponibles, notamment le mode Développeur. Celui-ci ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours. Les trois onglets sont :
 
-* **[Composants](#components)**pour visualiser les informations de structure et de performances.
-* **[Tests](#tests)**pour exécuter des tests et analyser les résultats.
-* **[Erreurs](#errors)**pour afficher les problèmes rencontrés.
+* **[Composants](#components)** pour visualiser les informations de structure et de performances.
+* **[Tests](#tests)** pour exécuter des tests et analyser les résultats.
+* **[Erreurs](#errors)** pour afficher les problèmes rencontrés.
 
 Ils aident les développeurs à :
 
@@ -39,6 +39,7 @@ Ils aident les développeurs à :
 >
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
+
    >
    >   
    * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
@@ -53,6 +54,7 @@ Ils aident les développeurs à :
 >
 >* sur une instance d’auteur à l’aide du mode d’exécution nosamplecontent
 >* sur une instance de publication.
+
 >
 >
 Il doit être désactivé à nouveau après utilisation.
@@ -63,6 +65,7 @@ Il doit être désactivé à nouveau après utilisation.
 >
 >* L’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour d’autres conseils et outils.
 >* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+
 >
 
 
@@ -75,7 +78,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](/help/sites-developing/developer-mode.md#components)**: affiche une arborescence de composants, similaire à l&#39;arborescence[de](/help/sites-authoring/author-environment-tools.md#content-tree)contenu pour les auteurs.
+* **[Composants](/help/sites-developing/developer-mode.md#components)** : affiche une arborescence de composants, similaire à l&#39;arborescence [de](/help/sites-authoring/author-environment-tools.md#content-tree) contenu pour les auteurs.
 
 * **[Erreurs](/help/sites-developing/developer-mode.md#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
@@ -108,6 +111,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
    * tous les scripts de composants utilisés pour le rendu du composant ;
    * le chemin du contenu de référentiel pour cet élément spécifique.
+
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Modifier le script** : lien qui :
@@ -118,6 +122,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
    * la hiérarchie au sein du composant sélectionné ;
    * les temps de rendu pour le composant sélectionné de manière isolée, tous les composants individuels imbriqués qu’il contient, ainsi que le total combiné.
+
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
