@@ -1,6 +1,6 @@
 ---
-title: Ajouter le commentaire à l'exemple de page
-seo-title: Ajouter le commentaire à l'exemple de page
+title: Ajouter un commentaire sur un exemple de page
+seo-title: Ajouter un commentaire sur un exemple de page
 description: Ajouter des commentaires personnalisés sur une page
 seo-description: Ajouter des commentaires personnalisés sur une page
 uuid: ab258960-6de2-4943-80a7-e72904c0fd8e
@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# Ajouter le commentaire à l&#39;exemple de page  {#add-comment-to-sample-page}
+# Ajouter un commentaire sur un exemple de page  {#add-comment-to-sample-page}
 
 Maintenant que les composants du système de commentaires personnalisés sont en place dans le répertoire de l’application (/apps), il est possible d’utiliser le composant étendu. L’instance du système de commentaires d’un site Web à affecter doit définir resourceType comme système de commentaires personnalisé et inclure toutes les bibliothèques clientes nécessaires.
 
@@ -63,7 +63,7 @@ Une fois le composant personnalisé ajouté à la page, il est également néces
 
 #### Publier : Alt Commenter sur l&#39;exemple de page {#publish-alt-comment-on-sample-page}
 
-Après avoir publié à la fois l’application personnalisée et l’exemple de page, il est possible de saisir un commentaire. Lorsque vous êtes connecté, que ce soit avec un utilisateur [de](/help/communities/tutorials.md#demo-users) démonstration ou un administrateur, il est possible de publier un commentaire.
+Après avoir publié à la fois l’application personnalisée et l’exemple de page, il est possible de saisir un commentaire. Une fois connecté, avec un utilisateur [ou un administrateur de](/help/communities/tutorials.md#demo-users) démonstration, il est possible de publier un commentaire.
 
 aaron.mcdonald@mailinator.com a posté un commentaire :
 
