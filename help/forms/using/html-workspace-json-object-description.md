@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 93%
 
 ---
 
@@ -25,12 +28,12 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
   <tr>
-   <td>nom est</td>
+   <td>name</td>
    <td>F</td>
    <td>Nom de la catégorie</td>
   </tr>
@@ -74,7 +77,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
    |---|---|---|
    | categoryId | F | Contient l’ID de la catégorie à laquelle appartient le point de départ. |
    | description | F | Contient une description pour un point de départ. |
-   | nom est | F | Contient le nom du point de départ. |
+   | name | F | Contient le nom du point de départ. |
    | serializedImageTicket | F | Contient le ticket de l’image correspondant au point de départ. Le ticket de cette image est utilisé dans le champ imageUrl du point de départ, pour obtenir l’image pour le point de départ à partir du serveur. |
    | serviceName | F | Contient le nom du service pour le point de départ. |
    | startpointId | F | Contient l’ID du point de départ. |
@@ -90,7 +93,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td>Propriétés<br /> </td>
+   <td>Propriété<br /> </td>
    <td>Client uniquement<br /> </td>
    <td>Commentaires<br /> </td>
   </tr>
@@ -389,7 +392,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
@@ -399,7 +402,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
    <td>True si la file d’attente est la file d’attente par défaut de l’utilisateur connecté, sinon false.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>nom est<br type="_moz" /> </td>
+   <td>name<br type="_moz" /> </td>
    <td>F</td>
    <td>Nom du propriétaire de la file d’attente.<br type="_moz" /> </td>
   </tr>
@@ -440,7 +443,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
   <tr>
    <td>dateRanges<br type="_moz" /> </td>
    <td>F</td>
-   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planification, le champ startDate contient la date de  de planification et le champ endDate contient la date de fin de la planification. If endDate is null in schedule, it implies that user has not scheduled the end date of out-of-office schedule.<br type="_moz" /> </td>
+   <td>Contient des objets de tableau des plannings d’absences du bureau d’un utilisateur. Dans chaque objet de planification, le champ startDate contient la date de début de la planification et le champ endDate contient la date de fin de la planification. If endDate is null in schedule, it implies that user has not scheduled the end date of out-of-office schedule.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td>
@@ -492,7 +495,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
@@ -554,7 +557,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
@@ -593,7 +596,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
@@ -637,7 +640,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
@@ -681,7 +684,7 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
@@ -763,14 +766,14 @@ Les objets JSON utilisés dans l’espace de travail AEM Forms sont décrits ci-
  </tbody>
 </table>
 
-1. Utilisateur
+1. User
 
    Vous trouverez ci-dessous les propriétés de l’objet utilisateur.
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Propriétés</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Client uniquement</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
