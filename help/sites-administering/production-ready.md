@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 80%
 
 ---
 
@@ -58,14 +61,14 @@ Plus spécifiquement, les modifications de configuration suivantes seront effect
 
 1. **Le gestionnaire de bibliothèque Adobe Granite HTML** est configuré avec les paramètres suivants :
 
-   1. **** Minifier : `enabled`
+   1. **Minifier :** `enabled`
    1. **Déboguer:** `disabled`
-   1. **** Gzip : `enabled`
-   1. **** Minutage : `disabled`
+   1. **Gzip :** `enabled`
+   1. **Minutage :** `disabled`
 
 1. Le servlet **Apache Sling GET** est configuré pour prendre en charge les configurations sécurisées par défaut, comme suit :
 
-| **Configuration** | **Créateur** | **Publier** |
+| **Configuration** | **Auteur** | **Publication** |
 |---|---|---|
 | Rendu TXT | disabled | disabled |
 | Rendu HTML | disabled | disabled |
