@@ -34,11 +34,11 @@ Le Début rapide API Java (SOAP) est disponible pour les processus. Une instance
 
 [Début rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les débuts rapides situés dans Programmation avec AEM Forms sont basés sur Forms si vous utilisez un autre système d’exploitation, tel que Unix, remplacez les chemins spécifiques Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Les débuts rapides situés dans Programmation avec AEM Forms sont basés sur Forms si vous utilisez un autre système d&#39;exploitation, tel que Unix, remplacez les chemins spécifiques Windows par les chemins pris en charge par le système d&#39;exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Début rapide (mode SOAP) : Recherche d’instances de processus à l’aide de l’API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
@@ -538,7 +538,7 @@ Le code Java suivant purge les données d’un processus appelé *SecureDocument
 
 ## Début rapide (mode SOAP) : Récupération de l’état d’une tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-L&#39;exemple de code suivant récupère l&#39;état de 10 tâches AEM Forms.
+L’exemple de code suivant récupère l’état de 10 tâches AEM Forms.
 
 ```java
  /*
