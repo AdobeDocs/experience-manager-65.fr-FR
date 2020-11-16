@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 98%
 
 ---
 
@@ -40,6 +43,7 @@ Pour de plus amples informations sur le langage SAML, voir [Présentation techni
 
    * un lien vers la page de connexion du fournisseur d’identité SAML tiers, dans laquelle les utilisateurs appartenant à un domaine d’entreprise peuvent s’authentifier ;
    * un lien vers la page de connexion AEM forms, dans laquelle les utilisateurs appartenant à un domaine local peuvent s’authentifier.
+
    Lorsque cette option n’est pas sélectionnée, les utilisateurs sont directement dirigés vers la page de connexion du fournisseur d’identité SAML tiers, dans laquelle les utilisateurs appartenant à un domaine d’entreprise peuvent s’authentifier.
 
 1. (Facultatif) Sélectionnez Activer la liaison d’artefact pour activer la prise en charge de la liaison d’artefact. Par défaut, la liaison POST est utilisée avec le langage SAML. Mais si vous avez configuré la liaison d’artefact, sélectionnez cette option. Lorsque cette option est sélectionnée, l’assertion de l’utilisateur ne passe pas par la requête navigateur. C’est un pointeur vers cette assertion qui est passé et cette dernière est récupérée via un appel au service Web du serveur principal.
@@ -55,6 +59,7 @@ Pour de plus amples informations sur le langage SAML, voir [Présentation techni
       `saml.sp.use.relaystate=true`
 
    * Ajoutez la propriété personnalisée suivante afin de configurer l’URL pour le JSP (Java Server Pages) personnalisé, celle-ci sera utilisée pour effectuer le rendu de la liste enregistrée des fournisseurs d’identité. Si vous n’avez pas déployé d’application Web personnalisée, la page User Management par défaut sera utilisée pour effectuer le rendu de la liste.
+
    `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Cliquez sur Enregistrer.
