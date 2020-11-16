@@ -1,6 +1,6 @@
 ---
-title: Utilisation de Sling Resource Merger dans AEM
-seo-title: Utilisation de Sling Resource Merger dans AEM
+title: 'Utilisation de Sling Resource Merger dans AEM   '
+seo-title: 'Utilisation de Sling Resource Merger dans AEM   '
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 seo-description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
@@ -11,29 +11,32 @@ content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 99%
 
 ---
 
 
-# Utilisation de Sling Resource Merger dans AEM{#using-the-sling-resource-merger-in-aem}
+# Utilisation de Sling Resource Merger dans AEM   {#using-the-sling-resource-merger-in-aem}
 
 ## Objectif {#purpose}
 
 Sling Resource Merger propose des services pour accéder à des ressources et les fusionner. Il fournit des mécanismes de différenciation (diff) pour les deux éléments suivants :
 
-* **[Incrustations](/help/sites-developing/overlays.md)**de ressources à l’aide de[chemins de recherche configurés](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* **[Incrustations](/help/sites-developing/overlays.md)** de ressources à l’aide de [chemins de recherche configurés](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
 * **Remplacements** de boîtes de dialogue de composant pour l’interface utilisateur tactile (`cq:dialog`), à l’aide de la hiérarchie des types de ressource (par le biais de la propriété `sling:resourceSuperType`).
 
-Avec Sling Resource Merger, les ressources et/ou propriétés incrustation/remplacement sont fusionnées avec les ressources/propriétés d’origine :
+Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/remplacement sont fusionnées avec les ressources/propriétés d’origine :
 
-* Le contenu de la définition personnalisée a une priorité plus élevée que celle d’origine (en d’autres termes, elle la *superpose* ou elle la *remplace*).
+* Le contenu de la définition personnalisée a une priorité plus élevée que celle d’origine (en d’autres termes, elle la *recouvre* ou elle la *remplace*).
 
 * Si nécessaire, les [propriétés](#properties) définies dans la personnalisation indiquent comment utiliser le contenu fusionné à partir de l’original.
 
 >[!CAUTION]
 >
->Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’interface utilisateur tactile standard ; les remplacements définis de cette manière, notamment, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
+>Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’interface utilisateur tactile standard ; les remplacements définis de cette manière, notamment, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
 >
 >S’agissant des incrustations/remplacements relatifs à d’autres sections (y compris d’autres aspects d’un composant tactile ou de l’interface utilisateur classique), le nœud et la structure appropriés doivent être copiés à l’endroit où la personnalisation sera définie à partir de l’original.
 
@@ -44,26 +47,27 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 * S’assurer que les changements de personnalisation ne sont pas effectués dans `/libs`.
 * Réduire la structure qui est répliquée à partir de `/libs`.
 
-   When using the Sling Resource Merger it is not recommended to copy the entire structure from `/libs` as this would result in too much information being held in the customization (usually `/apps`). Dupliquer les informations augmente inutilement le risque que des problèmes surviennent lorsque le système est mis à niveau.
+   Lorsque vous utilisez Sling Resource Merger, il est déconseillé de copier toute la structure depuis `/libs`, car cela entraînerait le stockage d’une trop grande quantité d’informations dans la personnalisation (généralement `/apps`). Dupliquer les informations augmente inutilement le risque que des problèmes surviennent lorsque le système est mis à niveau.
 
 >[!NOTE]
 >
 >Les remplacements ne dépendent pas des chemins de recherche. Ils utilisent la propriété `sling:resourceSuperType` pour établir la connexion.
 >
->However, overrides are often defined under `/apps`, as best practice in AEM is to define customizations under `/apps`; this is because you must not change anything under `/libs`.
+>Cependant, les remplacements sont souvent définis sous `/apps`, car une pratique recommandée dans AEM consiste à définir des personnalisations sous `/apps`, du fait que vous ne devez rien changer sous `/libs`.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
 >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
    >
    >
-1. Make any changes within `/apps`
+1. Apportez les modifications désirées dans `/apps`
+
 >
 
 
@@ -72,57 +76,57 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 
 Resource Merger fournit les propriétés suivantes :
 
-* `sling:hideProperties` ( `String` ou `String[]`)
+* `sling:hideProperties` (`String` ou `String[]`)
 
-   Indique la propriété, ou liste de propriétés, à masquer.
+   Indique la propriété, ou la liste des propriétés, à masquer.
 
-   The wildcard `*` hides all.
+   Le caractère générique `*` masque tout.
 
-* `sling:hideResource` ( `Boolean`)
+* `sling:hideResource` (`Boolean`)
 
-   Indique si les ressources doivent être entièrement masquées, y compris ses enfants.
+   Indique si les ressources doivent être complètement masquées, y compris leurs enfants.
 
-* `sling:hideChildren` ( `String` ou `String[]`)
+* `sling:hideChildren` (`String` ou `String[]`)
 
-   Contient le noeud enfant, ou liste des noeuds enfants, à masquer. Les propriétés du nœud seront conservées.
+   Contient le nœud enfant, ou la liste des nœuds enfants, à masquer. Les propriétés du nœud seront conservées.
 
-   The wildcard `*` hides all.
+   Le caractère générique `*` masque tout.
 
-* `sling:orderBefore` ( `String`)
+* `sling:orderBefore` (`String`)
 
    Contient le nom du nœud frère devant lequel le nœud actuel doit être positionné.
 
-These properties affect how the corresponding/original resources/properties (from `/libs`) are used by the overlay/override (often in `/apps`).
+Ces propriétés déterminent la façon dont les ressources/propriétés correspondantes/d’origine (issues de `/libs`) sont utilisées par le recouvrement/remplacement (souvent dans `/apps`).
 
 ### Création de la structure {#creating-the-structure}
 
-Pour créer une incrustation ou un remplacement, vous devez recréer le nœud d’origine, avec la structure équivalente, sous la destination (qui est généralement `/apps`). Par exemple :
+Pour créer un recouvrement ou un remplacement, vous devez recréer le nœud d’origine, avec la structure équivalente, sous la destination (qui est généralement `/apps`). Par exemple :
 
-* Incrustation
+* Recouvrement
 
-   * La définition de l&#39;entrée de navigation pour la console Sites, comme illustré dans le rail, est définie à l&#39;adresse suivante :
+   * La définition de l’entrée de navigation pour la console Sites, comme illustrée dans le rail, est définie à l’emplacement suivant :
 
       `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * Pour superposer cette opération, créez le noeud suivant :
+   * Pour recouvrir cela, créez le nœud suivant :
 
       `/apps/cq/core/content/nav/sites`
 
-      Mettez ensuite la propriété à jour `jcr:title` suivant vos besoins.
+      Mettez ensuite la propriété `jcr:title` à jour selon les besoins.
 
 * Remplacement
 
-   * La définition de la boîte de dialogue tactile pour la console Textes est définie à l’adresse suivante :
+   * La définition de la boîte de dialogue tactile pour la console Textes est définie à l’emplacement suivant :
 
       `/libs/foundation/components/text/cq:dialog`
 
-   * Pour le remplacer, créez le noeud suivant, par exemple :
+   * Pour remplacer cela, créez le nœud suivant ; par exemple :
 
       `/apps/the-project/components/text/cq:dialog`
 
-Pour créer l’un de ces éléments, vous devez simplement recréer l’ossature. To simplify the recreation of the structure all intermediary nodes can be of type `nt:unstructured` (they do not have to reflect the original node type; for example, in `/libs`).
+Pour créer l’un de ces éléments, vous devez simplement recréer l’ossature. Pour simplifier la reconstitution de la structure, tous les nœuds intermédiaires peuvent être de type `nt:unstructured` (ils ne doivent pas nécessairement refléter le type de nœud d’origine ; par exemple, dans `/libs`).
 
-Ainsi, dans l’exemple d’incrustation ci-dessus, les nœuds suivants sont nécessaires :
+Ainsi, dans l’exemple de recouvrement ci-dessus, les nœuds suivants sont nécessaires :
 
 ```shell
 /apps
@@ -135,7 +139,7 @@ Ainsi, dans l’exemple d’incrustation ci-dessus, les nœuds suivants sont né
 
 >[!NOTE]
 >
->When using the Sling Resource Merger (i.e. when dealing with the standard, touch-enabled UI) it is not recommended to copy the entire structure from `/libs` as it would result in too much information being held in `/apps`. Cela peut entraîner des problèmes lorsque le système est mis à niveau.
+>Lorsque vous utilisez Sling Resource Merger (c’est-à-dire lorsque vous employez l’interface utilisateur tactile standard), il est déconseillé de copier toute la structure depuis `/libs`, car cela entraînerait le stockage d’une trop grande quantité d’informations dans `/apps`. Cela peut entraîner des problèmes lorsque le système est mis à niveau.
 
 ### Cas d’utilisation {#use-cases}
 
@@ -143,39 +147,38 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
 * **Ajouter une propriété**
 
-   The property does not exist in the `/libs` definition, but is required in the `/apps` overlay/override.
+   La propriété n’existe pas dans la définition `/libs`, mais elle est requise dans le recouvrement/remplacement `/apps`.
 
-   1. Create the corresponding node within `/apps`
-   1. Créer une propriété sur ce noeud &quot;
+   1. Créez le nœud correspondant dans `/apps`.
+   1. Créez la propriété sur ce nœud.
 
 * **Redéfinir une propriété (pas les propriétés créées automatiquement)**
 
-   The property is defined in `/libs`, but a new value is required in the `/apps` overlay/override.
+   La propriété est définie dans `/libs`, mais une nouvelle valeur est requise dans le recouvrement/remplacement `/apps`.
 
-   1. Create the corresponding node within `/apps`
+   1. Créez le nœud correspondant dans `/apps`.
    1. Créez la propriété correspondante sur ce nœud (sous /`apps`).
 
       * La priorité de la propriété sera basée sur la configuration de Sling Resource Resolver.
       * Le type de la propriété peut être modifié.
 
-         If you use a property type different to the one used in `/libs`, then the property type you define will be used.
+         Si vous utilisez un type de propriété différent de celui utilisé dans `/libs`, c’est le type que vous avez défini qui sera utilisé.
    >[!NOTE]
    >
    >Le type de la propriété peut être modifié.
 
 * **Redéfinir une propriété créée automatiquement**
 
-   By default, auto-created properties (such as `jcr:primaryType`) are not subject to an overlay/override to ensure that the node type currently under `/libs` is respected. To impose an overlay/override you have to recreate the node in `/apps`, explicitly hide the property and redefine it:
+   Par défaut, les propriétés créées automatiquement (telles que `jcr:primaryType`) ne sont pas soumises à une opération de recouvrement/remplacement pour s’assurer que le type de nœud défini actuellement sous `/libs` est respecté. Pour imposer un recouvrement/remplacement, vous devez recréer le nœud dans `/apps`, masquer explicitement la propriété, puis la redéfinir :
 
-   1. Create the corresponding node under `/apps` with the desired `jcr:primaryType`
-   1. Créez la propriété `sling:hideProperties` sur ce noeud, avec la valeur définie sur celle de la propriété créée automatiquement ;
-par exemple, `jcr:primaryType`
+   1. Créez le nœud correspondant sous `/apps` avec la propriété `jcr:primaryType` souhaitée.
+   1. Créez la propriété `sling:hideProperties` sur ce nœud, avec la valeur définie sur celle de la propriété créée automatiquement ; par exemple, `jcr:primaryType`
 
-      Cette propriété, définie sous `/apps`, prend désormais la priorité sur celle définie sous `/libs`
+      Cette propriété, définie sous `/apps`, est désormais prioritaire par rapport à celle définie sous `/libs`
 
 * **Redéfinir un nœud et ses enfants**
 
-   The node and its children are defined in `/libs`, but a new configuration is required in the `/apps` overlay/override.
+   Le nœud et ses enfants sont définis dans `/libs`, mais une nouvelle configuration est requise dans le recouvrement/remplacement de `/apps`.
 
    1. Combinez les actions des opérations suivantes :
 
@@ -184,10 +187,10 @@ par exemple, `jcr:primaryType`
 
 * **Masquer une propriété**
 
-   The property is defined in `/libs`, but not required in the `/apps` overlay/override.
+   La propriété est définie dans `/libs`, mais elle n’est pas requise dans le recouvrement/remplacement de `/apps`.
 
-   1. Create the corresponding node within `/apps`
-   1. Create a property `sling:hideProperties` of type `String` or `String[]`. Utilisez-la pour spécifier les propriétés à masquer/ignorer. Des caractères génériques peuvent également être utilisés. Par exemple :
+   1. Créez le nœud correspondant dans `/apps`.
+   1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez-la pour spécifier les propriétés à masquer/ignorer. Des caractères génériques peuvent également être utilisés. Par exemple :
 
       * `*`
       * `["*"]`
@@ -196,43 +199,44 @@ par exemple, `jcr:primaryType`
 
 * **Masquer un nœud et ses enfants**
 
-   The node and its children are defined in `/libs`, but not required in the `/apps` overlay/override.
+   Le nœud et ses enfants sont définis dans `/libs`, mais ils ne sont pas nécessaires dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant sous /apps.
-   1. Create a property `sling:hideResource`
+   1. Créez une propriété `sling:hideResource`
 
       * type: `Boolean`
       * value: `true`
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
-   Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. The node and its properties are required in the `/apps` overlay/override, but some or all of the child nodes are not required in the `/apps` overlay/override.
+   Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le nœud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, tandis que la totalité ou une partie des nœuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant sous `/apps`
-   1. Create the property `sling:hideChildren`:
+   1. Créez la propriété `sling:hideChildren` :
 
       * type: `String[]`
-      * value: a list of the child nodes (as defined in `/libs`) to hide/ignore
-      &amp;ast; peut être utilisé pour masquer/ignorer tous les noeuds enfants.
+      * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
+
+      Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
 
 
 * **Réorganiser les nœuds**
 
-   Le nœud et ses frères sont définis dans `/libs`. A new position is required so the node is recreated in the `/apps` overlay/override, where the new position is defined in reference to the appropriate sibling node in `/libs`.
+   Le nœud et ses frères sont définis dans `/libs`. Une nouvelle position est requise pour que le nœud soit recréé dans le recouvrement/remplacement de `/apps`. Cette position y est définie en référence au nœud frère approprié dans `/libs`.
 
-   * Use the `sling:orderBefore` property:
+   * Utilisez la propriété `sling:orderBefore` :
 
       1. Créez le nœud correspondant sous `/apps`
-      1. Create the property `sling:orderBefore`:
+      1. Créez la propriété `sling:orderBefore` :
 
-         Ceci spécifie le noeud (comme dans `/libs`) où le noeud actuel doit être placé avant :
+         Cela spécifie le nœud (comme dans `/libs`) devant lequel le nœud actif doit être positionné :
 
          * type: `String`
          * value: `<before-SiblingName>`
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}
 
-Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les incrustations et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code en utilisant un point de montage :
+Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les recouvrements et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code en utilisant un point de montage :
 
 >[!NOTE]
 >
@@ -240,20 +244,20 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 >
 >De cette manière, vous avez la garantie que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (réduction de la structure qui doit être répliquée à partir de `/libs`).
 
-* Incrustation :
+* Recouvrement :
 
-   * objectif : fusionner les ressources en fonction de leur chemin de recherche
-   * mount point: `/mnt/overlay`
-   * usage: `mount point + relative path`
+   * Objectif : fusionner les ressources en fonction de leur chemin de recherche
+   * Point de montage :`/mnt/overlay`
+   * Usage : `mount point + relative path`
    * Exemple :
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * Remplacement :
 
-   * objectif : fusionner les ressources en fonction de leur super-type
-   * mount point: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * Objectif : fusionner les ressources en fonction de leur super-type
+   * Point de montage :`/mnt/overide`
+   * Usage : `mount point + absolute path`
    * Exemple :
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
@@ -262,7 +266,7 @@ Sling Resource Merger comprend deux fournisseurs de ressources personnalisés�
 
 Quelques exemples sont traités :
 
-* Incrustation :
+* Recouvrement :
 
    * [Personnalisation des consoles](/help/sites-developing/customizing-consoles-touch.md)
    * [Personnalisation de la création de pages](/help/sites-developing/customizing-page-authoring-touch.md)
