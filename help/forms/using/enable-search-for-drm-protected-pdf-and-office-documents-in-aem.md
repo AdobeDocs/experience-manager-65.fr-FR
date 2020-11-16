@@ -42,7 +42,7 @@ Une connexion sécurisée permet un flux d’informations harmonieux entre AEM F
 1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Recherchez et ouvrez le bundle de SDK client AEM Forms. Spécifiez la valeur des propriétés suivantes :
 
-   * **URL du serveur :** spécifiez l’URL HTTP d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms on JEE avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage des clés AEM Forms on JEE>.
+   * **URL du serveur :** spécifiez l’URL HTTP d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms on JEE à l’aide du paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage de clés AEM Forms on JEE>.
    * **Nom du service** : ajoutez RightsManagementService à la liste des services spécifiés.
    * **Nom d’utilisateur :** indiquez le nom d’utilisateur du compte AEM Forms on JEE à utiliser pour lancer des appels à partir du serveur AEM Forms on JEE. Le compte spécifié doit disposer des autorisations pour appeler Document services sur le serveur AEM Forms on JEE.
    * **Mot de passe** : indiquez le mot de passe du compte AEM Forms on JEE mentionné dans le champ Nom d’utilisateur.
@@ -55,7 +55,7 @@ Une connexion sécurisée permet un flux d’informations harmonieux entre AEM F
 1. Accédez au gestionnaire de configuration et connectez-vous à AEM en tant qu’administrateur. L’URL par défaut est https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Recherchez et ouvrez le bundle de SDK client AEM Forms. Spécifiez la valeur des propriétés suivantes :
 
-   * **URL du serveur** : spécifiez l’URL HTTPS d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms on JEE avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage des clés AEM Forms on JEE>.
+   * **URL du serveur** : spécifiez l’URL HTTPS d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM Forms on JEE à l’aide du paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage de clés AEM Forms on JEE>.
    * **Activer SSL bidirectionnel** : activez l’option Activer SSL bidirectionnel.
    * **URL du fichier KeyStore** : indiquez l’URL du fichier de stockage de clés.
    * **URL du fichier TrustStore** : indiquez l’URL du fichier de magasin approuvé.
