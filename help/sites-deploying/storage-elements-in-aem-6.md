@@ -12,6 +12,9 @@ discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +38,7 @@ Actuellement, il existe deux implémentations de stockage de nœud disponibles d
 
 >[!CAUTION]
 >
->Le PID du magasin de noeuds de segments est passé de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Veillez à effectuer les ajustements de configuration nécessaires pour refléter cette modification.
+>Le PID de la banque de noeuds de segments a été modifié par org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes de AEM 6 à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Assurez-vous d’effectuer les ajustements de configuration nécessaires pour refléter cette modification.
 
 Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Pour configuer manuellement les paramètres de stockage, suivez la procédure ci-dessous :
 
@@ -74,10 +77,10 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
 1. Modifiez le fichier, puis définissez les options de configuration. Les options suivantes sont disponibles :
 
-   * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est `mongodb://localhost:27017`
+   * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est de `mongodb://localhost:27017`
    * `db` : nom de la base de donnée Mongo. Par défaut, les nouvelles installations d’AEM 6 utilisent **aem-author** comme nom de la base de données.
-   * `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est 256.
-   * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est 256.
+   * `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est de 256.
+   * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est de 256.
    * `customBlobStore` : valeur booléenne indiquant qu’un entrepôt de données personnalisé sera utilisé. La valeur par défaut est false.
 
 1. Créez un fichier de configuration avec le PID de l’entrepôt de données que vous souhaitez utiliser et modifiez le fichier afin de définir les options de configuration. Pour plus d’informations, voir [Configuration des stocks de nœuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
@@ -118,7 +121,8 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 >De plus, vous pouvez également consulter les ressources suivantes :
 >
 >* For more information regarding Transparent Huge Pages on Red Hat Linux, see this [article](https://access.redhat.com/solutions/46111).
->* For Linux tuning tips, see this [article](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>* For Linux tuning tips, see this [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 
