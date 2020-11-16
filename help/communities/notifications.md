@@ -1,8 +1,8 @@
 ---
 title: Notifications des communautés
 seo-title: Notifications des communautés
-description: Les AEM Communities disposent de notifications qui affichent les événements d'intérêt pour le membre de la communauté connecté
-seo-description: Les AEM Communities disposent de notifications qui affichent les événements d'intérêt pour le membre de la communauté connecté
+description: AEM Communities dispose de notifications qui affichent les événements d'intérêt pour le membre de la communauté connecté
+seo-description: AEM Communities dispose de notifications qui affichent les événements d'intérêt pour le membre de la communauté connecté
 uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -23,9 +23,9 @@ ht-degree: 2%
 
 ## Présentation {#overview}
 
-Le AEM Communities fournit une section de notifications qui affiche les événements d’intérêt pour le membre de la communauté qui a signé.
+AEM Communities fournit une section de notifications qui affiche les événements d’intérêt pour les membres de la communauté connectés.
 
-Les notifications sont semblables aux [activités](/help/communities/essentials-activities.md) et aux [abonnements](/help/communities/subscriptions.md) qui peuvent découler :
+Les notifications sont semblables aux [activités](/help/communities/essentials-activities.md) et [abonnements](/help/communities/subscriptions.md) qui peuvent découler :
 
 * Membre qui publie du contenu.
 * Le membre qui choisit de suivre un autre membre.
@@ -46,8 +46,8 @@ Ce qui distingue les notifications des activités et abonnements est :
 
 En ce qui concerne les communautés [FP1](/help/communities/deploy-communities.md#latestfeaturepack), les canaux de notification disponibles sont les suivants :
 
-* canal Web, accessible à l’aide du `Notifications` lien.
-* canal de messagerie, disponible lorsque le courrier électronique est correctement configuré.
+* Canal Web, accessible à l’aide du `Notifications` lien.
+* Canal de messagerie, disponible lorsque le courrier électronique est correctement configuré.
 
 Les futurs canaux sont mobiles et de bureau.
 
