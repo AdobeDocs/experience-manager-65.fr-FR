@@ -12,6 +12,9 @@ discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 97%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
 
 La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
 
-It can be accessed from **Tools ->** **General ->** **Components**. Dans la console, les modes Carte et Liste sont disponibles. En l’absence d’arborescence, le mode d’affichage Colonnes n’est pas disponible.
+Elle est accessible via **Outils** -> **Général** -> **Composants**. Dans la console, les modes Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
 
-![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
+![capture d&#39;écran_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
@@ -30,7 +33,7 @@ It can be accessed from **Tools ->** **General ->** **Components**. Dans la cons
 
 ## Recherche {#searching}
 
-Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants : 
+Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants :
 
 ![screen-shot_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
 
@@ -53,7 +56,7 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
       * Cliquez sur le type de super-ressource pour accéder à ce composant.
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >Étant donné que les `/apps` ne sont pas modifiables à l’exécution, la console Composants est en lecture seule.
 
 * **Stratégies**
 
@@ -65,7 +68,7 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
 
    >[!CAUTION]
    >
-   >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps. 
+   >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps.
 
 * **Documentation**
 
