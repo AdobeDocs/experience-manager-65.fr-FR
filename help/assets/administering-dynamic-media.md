@@ -1,5 +1,5 @@
 ---
-title: Configuration de Dynamic Media
+title: Configuration de Dynamic Media
 description: Pour configurer Dynamic Media, vous devez configurer un média dynamique et gérer les paramètres prédéfinis d’image et de visionneuse.
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
@@ -9,14 +9,14 @@ translation-type: tm+mt
 source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 51%
+ht-degree: 71%
 
 ---
 
 
-# Configuration de Dynamic Media   {#setting-up-dynamic-media}
+# Configuration de Dynamic Media  {#setting-up-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) vous aide à gérer les ressources en fournissant des ressources visuelles de marchandisage et marketing à la demande, automatiquement mises à l’échelle pour être consommées sur des sites Web, mobiles et sociaux. Grâce à un ensemble de ressources sources principales, Dynamic Media génère et diffuse en temps réel de multiples variantes de contenu riche grâce à son réseau global, évolutif et optimisé pour les performances.
+[Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) facilite la gestion des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
 >[!NOTE]
 >
@@ -26,9 +26,9 @@ ht-degree: 51%
 
 Si vous administrez des médias dynamiques, les rubriques suivantes peuvent vous intéresser :
 
-* [Configuration du mode](config-dms7.md) Dynamic Media-Scene7 : utilisez cette configuration si vous êtes un nouveau client Dynamic Media.
-* [Configuration du mode](config-dynamic.md) Dynamic Media-Hybrid : utilisez cette configuration si vous êtes un client Dynamic Media existant qui met à niveau AEM.
-* [Gestion des paramètres d’image prédéfinis   ](managing-image-presets.md)
+* [Configuration du mode](config-dms7.md) Contenu multimédia dynamique - Scene7 : utilisez cette configuration si vous êtes un nouveau client Contenu multimédia dynamique.
+* [Configuration du mode](config-dynamic.md) Contenu hybride Contenu multimédia dynamique : utilisez cette configuration si vous êtes un utilisateur de Contenu multimédia dynamique qui effectue une mise à niveau AEM.
+* [Gestion des paramètres d’image prédéfinis](managing-image-presets.md)
 * [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md)
 * [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
 
