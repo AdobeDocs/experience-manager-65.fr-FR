@@ -8,6 +8,9 @@ discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 77%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
 
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
 
-* Texte
+* Text (Texte)
 * Texte et Image
 * Tableau
 
@@ -105,9 +108,9 @@ Les fonctions **[!UICONTROL Couper]** et **[!UICONTROL Copier]** standard sont d
 * Paste
 This is the default paste mechanism (Ctrl-V) for the component; when installed out-of-the-box this is configured to be [!UICONTROL Paste from Word].
 
-* Coller comme texte : Renvoie tous les styles et le formatage pour ne coller que le texte brut.
+* Coller comme texte : Supprime tous les styles et la mise en forme pour coller uniquement le texte brut.
 
-* Coller à partir de Word : Le contenu est alors collé au format HTML (avec quelques reformatages nécessaires).
+* Coller à partir de Word : Cette opération colle le contenu au format HTML (avec quelques reformatages nécessaires).
 
 ### Annuler, Rétablir {#undo-redo}
 
@@ -129,7 +132,7 @@ AEM conserve un historique des 50 dernières actions effectuées dans le compos
 
 Le texte peut être aligné à gauche, au centre ou à droite.
 
-![cq55_rte_align_use](assets/cq55_rte_alignment_use.png)
+![cq55_rte_alignement_use](assets/cq55_rte_alignment_use.png)
 
 ### Indentation {#indentation}
 
@@ -149,13 +152,13 @@ Vous pouvez créer des listes imbriquées en mettant en retrait un ou plusieurs 
 
 Vous pouvez modifier le style d’une liste en positionnant simplement le curseur dans la liste, puis en sélectionnant un autre style. Une sous-liste peut également présenter un style différent de sa liste parent ; vous pouvez lui appliquer ce style après l’avoir créée (par mise en retrait).
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_listes_use](assets/cq55_rte_lists_use.png)
 
 ### Liens {#links}
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Un lien vers une URL (que ce soit dans votre site Web ou dans un emplacement externe) est généré en surlignant le texte requis, puis en cliquant sur l’icône d’hyperlien :
+Un lien vers une URL (que ce soit dans votre site Web ou dans un emplacement externe) est généré en mettant en surbrillance le texte requis, puis en cliquant sur l’icône d’hyperlien :
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -165,11 +168,11 @@ Une boîte de dialogue vous permet de spécifier l’URL cible, ainsi que de dé
 
 Vous pouvez :
 
-* Tapez directement un URI
+* Saisissez directement une URI.
 * Utiliser la carte du site pour sélectionner une page de votre site Web
 * Enter the URI, then append the target anchor; e.g. `www.TargetUri.org#AnchorName`
 * Enter an anchor only (to reference &quot;the current page&quot;); For example, `#anchor`
-* Recherchez une page dans l’outil de recherche de contenu, puis faites glisser l’icône de page dans la boîte de dialogue Hyperlien.
+* Recherchez une page dans l’outil de recherche de contenu, puis faites glisser et déposez l’icône de page dans la boîte de dialogue Hyperlien.
 
 >[!NOTE]
 >
@@ -283,17 +286,17 @@ Les propriétés de base du tableau peuvent être configurées avant de cliquer 
 
 * **Bordure**: Taille de la bordure du tableau.
 
-* **Marge intérieure** des cellules : Définit l’espace blanc entre le contenu de la cellule et ses bordures.
+* **Marge intérieure** des cellules : Cela définit l’espace blanc entre le contenu de la cellule et ses bordures.
 
-* **Espacement** des cellules : Définit la distance entre les cellules.
+* **Espacement** des cellules : Cela définit la distance entre les cellules.
 
 >[!NOTE]
 >
->Quelques propriétés de cellule, comme Largeur et Hauteur, peuvent être définies sous forme de pixels ou de pourcentages.
+>Quelques propriétés de cellule, telles que Largeur et Hauteur, peuvent être définies en pixels ou en pourcentages.
 
 >[!CAUTION]
 >
->Adobe recommande de définir une largeur pour votre tableau.
+>Adobe vous recommande de définir une largeur pour votre tableau.
 
 #### Propriétés de la cellule {#cell-properties}
 
@@ -305,10 +308,10 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 
 * **Largeur**
 * **Hauteur**
-* **Alignement horizontal** - Gauche, Centre ou Droite
+* **Alignement** horizontal - Gauche, Centre ou Droite
 * **Alignement** vertical - Haut, Milieu, Bas ou Ligne de base
 * **Type** de cellule - Données ou En-tête
-* **** Appliquer à : Cellule unique, rangée entière, colonne entière
+* **Appliquer à :** Cellule unique, rangée entière, colonne Entière
 
 #### Ajouter ou supprimer des lignes {#add-or-delete-rows}
 
