@@ -11,6 +11,9 @@ discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +45,7 @@ Tenez compte des points suivants au sujet de la recherche de base :
 
 * Si les données et les valeurs d’affichage des champs dans les propriétés de métadonnées sont différentes, vous ne pouvez pas utiliser ces valeurs comme paramètres de recherche. Par exemple, vous ne pouvez effectuer une recherche sur la base de l’état, tel que Modifié ou Publié, car ces propriétés sont stockées dans un format différent.
 
-## Paramètres avancés {#advanced-search}
+## Recherche avancée {#advanced-search}
 
 Dans les critères de recherche, outre la requête, vous pouvez spécifier certains paramètres de recherche pour améliorer l’efficacité et la précision de la recherche.
 
@@ -102,7 +105,7 @@ Vous pouvez choisir un grand nombre de types de ressource. La recherche renvoie 
    <td>Recherche dans tous les formulaires adaptatifs.</td> 
   </tr>
   <tr>
-   <td>Ressource</td> 
+   <td>Resource</td> 
    <td>Recherche dans toutes les ressources.<br /> </td> 
   </tr>
  </tbody>
