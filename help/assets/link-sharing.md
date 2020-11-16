@@ -63,7 +63,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    ![Partage de liens vers des ressources directement depuis la boîte de dialogue Partage de lien](assets/Asset-Sharing-LinkShareDialog.png)
 
-   *Figure : Partagez des liens vers des ressources directement à partir de la boîte de dialogue Partage[!UICONTROL de]liens.*
+   *Figure : Partagez des liens vers des ressources directement à partir de la boîte de dialogue Partage [!UICONTROL de] liens.*
 
    >[!NOTE]
    >
@@ -119,7 +119,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Save]**.
 
 ## Configuration de la taille maximale des données  {#maxdatasize}
 
