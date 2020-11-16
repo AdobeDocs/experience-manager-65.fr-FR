@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
 source-wordcount: '2979'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -53,7 +53,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 >
 >Cliquez ou appuyez sur **Sites** pour commencer.
 
-### Navigation dans le produit    {#product-navigation}
+### Navigation dans le produit  {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
@@ -69,7 +69,7 @@ Pour passer d’une console à une autre, utilisez le panneau de navigation glob
 
 Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant sur **Fermer** pour revenir à votre position précédente.
 
-![bh-03](assets/bh-03.png)
+![bh-05](assets/bh-03.png)
 
 >[!NOTE]
 >
@@ -77,14 +77,14 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole 
 * **[Outils](/help/sites-authoring/basic-handling.md#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
-### Panneau de navigation    {#navigation-panel}
+### Panneau de navigation  {#navigation-panel}
 
-Le panneau de navigation permet d’accéder aux consoles AEM :
+Le panneau de navigation donne accès aux AEM consoles :
 
 ![bh-01](assets/bh-01.png)
 
@@ -119,7 +119,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/home.md">formulaires et documents</a>.</td>
   </tr>
   <tr>
-   <td>Personnalisation </td>
+   <td>Personnalisation  </td>
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td>
   </tr>
   <tr>
@@ -225,9 +225,9 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Navigation au clavier
 
-   Vous pouvez naviguer sur un site Web à l’aide du clavier uniquement. Cette fonction utilise la fonctionnalité de navigateur standard de la touche **TAB** (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page qui peuvent être *activés*.
+   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*.
 
-   Dans la console **Sites** , vous pouvez ajouter l’option **Passer au contenu** principal. Cela devient visible lorsque vous *appuyez sur* les options d’en-tête et accélère votre navigation en vous permettant d’ignorer les éléments standard de la barre d’outils (produit) et de vous diriger directement vers le contenu principal.
+   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
 
    ![bh-30](assets/bh-30.png)
 
@@ -253,7 +253,7 @@ Plusieurs ressources d’aide sont disponibles :
 
    Parcourez cet aperçu comme vous le feriez avec l’[aperçu de navigation du produit](/help/sites-authoring/basic-handling.md#product-navigation) la première fois que vous accédez à une console.
 
-   Dans le menu [**Informations sur la page **, sélectionnez l’option** Aide **](/help/sites-authoring/author-environment-tools.md#accessing-help)pour afficher de nouveau cette présentation à tout moment.
+   Dans le menu [**Informations sur la page**, sélectionnez l’option **Aide**](/help/sites-authoring/author-environment-tools.md#accessing-help) pour afficher de nouveau cette présentation à tout moment.
 
 * **Console Outils**
 
@@ -294,7 +294,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 >
 >Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides    {#quick-actions}
+## Actions rapides  {#quick-actions}
 
 Dans le [mode Carte](#cardviewquickactions), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -317,7 +317,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 >
 >Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources    {#selecting-resources}
+### Sélection de ressources  {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
