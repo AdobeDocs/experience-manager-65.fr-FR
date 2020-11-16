@@ -20,7 +20,7 @@ ht-degree: 81%
 
 # Configuration de l’utilisation de cookies{#configuring-cookie-usage}
 
-AEM fournit un service qui vous permet de configurer et de contrôler la manière dont les cookies sont utilisés dans vos pages Web :
+aem fournit un service qui vous permet de configurer et de contrôler l’utilisation des cookies dans vos pages Web :
 
 * Un service configurable côté serveur conserve la liste des cookies qui peuvent être utilisés.
 * Une API JavaScript permet à votre code JavaScript de vérifier qu’un cookie peut être utilisé.
@@ -37,7 +37,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
 |---|---|---|
 | Cookies d’exclusion | optout.cookies | Nom des cookies qui indiquent, lorsqu’ils sont présents sur le périphérique de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
 | En-têtes HTTP d’exclusion | optout.headers | Noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à utiliser des cookies. |
-| Cookies de Liste blanche | optout.whitelist.cookies | liste de cookies essentiels au fonctionnement du site Web et pouvant être utilisés sans le consentement de l’utilisateur. |
+| Cookies de Liste blanche | optout.whitelist.cookies | Liste de cookies essentiels au fonctionnement du site Web et pouvant être utilisés sans le consentement de l’utilisateur. |
 
 ## Validation de l’utilisation de cookies {#validating-cookie-usage}
 
