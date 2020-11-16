@@ -1,8 +1,8 @@
 ---
-title: Mappage Modèle dynamique/Composant pour les applications monopages
-seo-title: Mappage Modèle dynamique/Composant pour les applications monopages
-description: Cet article décrit comment le mappage modèle dynamique/composant se produit dans le SDK SPA JavaScript pour AEM.
-seo-description: Cet article décrit comment le mappage modèle dynamique/composant se produit dans le SDK SPA JavaScript pour AEM.
+title: Mappage entre le modèle dynamique et le composant pour SPA
+seo-title: Mappage entre le modèle dynamique et le composant pour SPA
+description: Cet article décrit comment le mappage modèle dynamique avec composant se produit dans le SDK SPA JavaScript pour AEM.
+seo-description: Cet article décrit comment le mappage modèle dynamique avec composant se produit dans le SDK SPA JavaScript pour AEM.
 uuid: 337b8d90-efd7-442e-9fac-66c33cc26212
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Mappage Modèle dynamique/Composant pour les applications monopages{#dynamic-model-to-component-mapping-for-spas}
+# Mappage entre le modèle dynamique et le composant pour SPA{#dynamic-model-to-component-mapping-for-spas}
 
 Ce document décrit comment le mappage modèle dynamique avec composant se produit dans le SDK SPA JavaScript pour AEM.
 
 >[!NOTE]
 >
->L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
 
 ## Module ComponentMapping {#componentmapping-module}
 
@@ -38,7 +38,7 @@ Voir aussi le package npm : [https://www.npmjs.com/package/@adobe/aem-spa-compon
 
 ## Application d&#39;une seule page pilotée par un modèle {#model-driven-single-page-application}
 
-Les applications d’une seule page qui utilisent le SDK SPA Javascript pour AEM sont pilotées par des modèles :
+Les applications d’une seule page qui utilisent le SDK SPA JavaScript pour AEM sont pilotées par des modèles :
 
 1. Les composants frontaux s&#39;enregistrent dans le magasin [de mappage des](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module)composants.
 1. Ensuite, le [Conteneur](/help/sites-developing/spa-blueprint.md#container), une fois fourni avec un modèle par le fournisseur [de](/help/sites-developing/spa-blueprint.md#the-model-provider)modèles, effectue une itération sur son contenu de modèle ( `:items`).
