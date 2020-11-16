@@ -10,6 +10,9 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
 source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+workflow-type: tm+mt
+source-wordcount: '2747'
+ht-degree: 62%
 
 ---
 
@@ -22,7 +25,7 @@ This tutorial is a step in the [Create your first Interactive Communication](/he
 
 ## À propos du didacticiel {#about-the-tutorial}
 
-Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données principales disparates, telles que les  d’utilisateurs AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet du modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
+Le module d’intégration des données AEM Forms vous permet de créer un modèle de données de formulaire à partir de sources de données dorsales disparates, telles que le profil d’utilisateur AEM, les services Web RESTful, les services Web SOAP, les services OData et les bases de données relationnelles. Vous pouvez configurer des objets et des services de modèle de données dans un modèle de données de formulaire et les associer à un formulaire adaptatif. Les champs de formulaire adaptatif sont liés aux propriétés de l’objet du modèle de données. Les services vous permettent de préremplir le formulaire adaptatif et d’écrire les données de formulaire soumises dans l’objet de modèle de données.
 
 Pour plus d’informations sur l’intégration des données de formulaire et sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -38,7 +41,7 @@ Le modèle de données de formulaire se présente comme ceci :
 
 ![Modèle de données de formulaire](assets/form_data_model_callouts_new.png)
 
-**A.** Sources de données configurées **B.** de source de données  **C.** Services disponibles **D.** Objets de modèle de données **E.** Services configurés
+**A.** Sources de données configurées **B.** schémas de source de données **C.** Services disponibles **D.** Objets de modèle de données E. Services configurés ****
 
 ## Conditions préalables {#prerequisites}
 
@@ -54,7 +57,7 @@ Une base de données est essentielle pour créer une communication interactive. 
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-Utilisez l’instruction DDL suivante pour créer la table **du client** dans la base de données.
+Use the following DDL statement to create the **customer** table in database.
 
 ```sql
 CREATE TABLE `customer` (
@@ -69,7 +72,7 @@ CREATE TABLE `customer` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Utilisez l’instruction DDL suivante pour créer la table des **factures** dans la base de données.
+Use the following DDL statement to create the **bills** table in database.
 
 ```sql
 CREATE TABLE `bills` (
@@ -92,7 +95,7 @@ CREATE TABLE `bills` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Utilisez l’instruction DDL suivante pour créer la table des **appels** dans la base de données.
+Use the following DDL statement to create the **calls** table in database.
 
 ```sql
 CREATE TABLE `calls` (
@@ -135,7 +138,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
 
       * **Classe de pilote JDBC** : spécifiez le nom de la classe Java du pilote JDBC. Pour la base de données MySQL, spécifiez **com.mysql.jdbc.Driver**.
 
-      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données MySQL s’exécutant sur le port 3306 et  teleca, l’URL est : `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données MySQL s’exécutant sur le port 3306 et sur le canal de communication par schéma, l’URL est : `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Nom d’utilisateur :** nom d’utilisateur de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Test lors de l’emprunt :** activez l’option **Test lors de l’emprunt.**
@@ -157,14 +160,14 @@ AEM Forms provide an intuitive user interface to [create a form data mode](https
 
 Procédez comme suit pour créer un modèle de données de formulaire :
 
-1. In AEM author instance, navigate to **Forms** > **Data Integrations**.
-1. Tap **Create** > **Form Data Model**.
-1. In the Create Form Data Model wizard, specify a **name** for the form data model. For example, **FDM_Create_First_IC**. Appuyez sur **Suivant**.
+1. Dans l’instance d’auteur AEM, accédez à **Forms** (Formulaires) > **Data Integrations** (Intégrations de données).
+1. Appuyez sur **Create** (Créer) > **Form Data Model** (Modèle de données de formulaire).
+1. In the Create Form Data Model wizard, specify a **name** for the form data model. For example, **FDM_Create_First_IC**. Appuyez sur **Next** (Suivant).
 1. L’écran Sélectionner la source de données répertorie toutes les sources de données configurées. Select **MySQL** data source and tap **Create**.
 
    ![Source de données MYSQL](assets/fdm_mysql_data_source_new.png)
 
-1. Cliquez sur **Terminé**. The **FDM_Create_First_IC** form data model is created.
+1. Cliquez sur **Done** (Terminé). The **FDM_Create_First_IC** form data model is created.
 
 ## Étape 4 : Configurer un modèle de données de formulaire {#step-configure-form-data-model}
 
@@ -196,9 +199,10 @@ La configuration d’un modèle de données de formulaire inclut :
 
       * get
       * mise à jour
+
    Appuyez sur **Ajouter la sélection** pour ajouter des objets et des services de modèle de données sélectionnés au modèle de données de formulaire.
 
-   ![Sélectionner des services d’objets de modèle de données](assets/select_data_model_object_services_new.png)
+   ![Sélectionner les services d’objets du modèle de données](assets/select_data_model_object_services_new.png)
 
    Les factures, les appels et les objets du modèle de données client sont affichés dans le volet de droite de l’onglet **Modèle**. Les services get et update sont affichés dans l’onglet **Services**.
 
@@ -221,10 +225,11 @@ Exécutez les étapes suivantes pour créer des propriétés enfant calculées p
    1. Saisissez **usagecharges** comme nom de propriété enfant.
    1. Activez **Calculé**.
    1. Select **Float** as the type and tap **Done** to add the child property to the **bills** data model object.
+
    ![Créer une propriété enfant](assets/create_child_property_new.png)
 
 1. Tap **Edit Rule** to open the Rule Editor.
-1. Appuyez sur **Créer**. The **Set Value** rule window opens.
+1. Appuyez sur **Create** (Créer). The **Set Value** rule window opens.
 1. Dans la liste déroulante Sélectionner une option, sélectionnez **Expression mathématique**.
 
    ![Éditeur de règles sur les frais d&#39;utilisation](assets/usage_charges_rule_editor_new.png)
@@ -233,9 +238,9 @@ Exécutez les étapes suivantes pour créer des propriétés enfant calculées p
 
    L’image suivante décrit l’expression mathématique dans l’éditeur de règles :
 
-   ![Règle des frais d’utilisation](assets/usage_charges_rule_all_new.png)
+   ![Règle des frais d&#39;utilisation](assets/usage_charges_rule_all_new.png)
 
-1. Appuyez sur **Terminé**. La règle est créée dans l’éditeur de règles.
+1. Appuyez sur **Done** (Terminé). La règle est créée dans l’éditeur de règles.
 1. Tap **Close** to close the Rule Editor window.
 
 ### Ajouter des associations entre les objets de modèle de données {#add-associations-between-data-model-objects}
@@ -264,7 +269,8 @@ Procédez comme suit pour créer des associations entre objets de modèle de don
    * Sélectionnez **get** dans la liste déroulante **Service**.
 
    * Tap **Add** to link the **customer** data model object to **calls** data model object using a property. En fonction du cas d’utilisation, l’objet de modèle de données calls doit être lié à la propriété de numéro de mobile dans l’objet de modèle de données customer. The **Add Argument** dialog box opens.
-   ![Association Ajouter](assets/add_association_new.png)
+
+   ![Association d&#39;Ajoutes](assets/add_association_new.png)
 
 1. Dans la boîte de dialogue **Ajouter un argument** :
 
@@ -277,11 +283,12 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
    * Sélectionnez **mobilenum** dans la liste déroulante **Valeur de liaison**.
 
    * Appuyez sur **Ajouter**.
-   ![Ajouter association pour un argument](assets/add_association_argument_new.png)
+
+   ![Association d&#39;Ajoute pour un argument](assets/add_association_argument_new.png)
 
    La propriété mobilenum s’affiche dans la section **Arguments**.
 
-   ![Association d&#39;arguments Ajouter](assets/add_argument_association_new.png)
+   ![Association d&#39;arguments d&#39;Ajoute](assets/add_argument_association_new.png)
 
 1. Tap **Done** to create a 1:n association between customer and calls data model objects.
 
@@ -303,7 +310,8 @@ Plusieurs enregistrements d’appels sont disponibles dans le tableau des appels
    * Sélectionnez **customerplan** dans la liste déroulante **Valeur de liaison**.
 
    * Tap **Done** to create a binding between the billplan and customerplan properties.
-   ![Association Ajouter pour la facture client](assets/add_association_customer_bills_new.png)
+
+   ![Association d&#39;Ajoute pour la facture client](assets/add_association_customer_bills_new.png)
 
    L’image suivante décrit les associations entre les objets de modèle de données et les propriétés utilisées pour créer des associations entre eux :
 
@@ -335,7 +343,7 @@ Après avoir créé des associations entre l’objet customer et d’autres obje
 
 1. Select the check box at the top of the **calls** data model object to select it and tap **Edit Properties**. Le panneau **Modifier les propriétés** s’ouvre.
 1. Désactiver l’**Objet de niveau supérieur** pour l’objet de modèle de données **calls**.
-1. Appuyez sur **Terminé**.
+1. Appuyez sur **Done** (Terminé). 
 
    Répétez les étapes 8 à 10 pour configurer les propriétés pour l’objet de modèle de données **bills**.
 
@@ -349,6 +357,7 @@ Après avoir créé des associations entre l’objet customer et d’autres obje
    * Sélectionnez **customer** depuis la liste déroulante **Objet de modèle de sortie**.
 
    * Tap **Done** to save the properties.
+
    ![Modification des propriétés](assets/edit_properties_get_details_new.png)
 
 1. Select the **update** service and tap **Edit Properties**. Le panneau **Modifier les propriétés** s’ouvre.
@@ -357,8 +366,9 @@ Après avoir créé des associations entre l’objet customer et d’autres obje
    * Saisissez un titre et une description facultatifs.
    * Select **customer** from the **Input Model Object** drop-down list.
 
-   * Appuyez sur **Terminé**.
-   * Appuyez sur **Enregistrer** pour enregistrer le modèle de données de formulaire.
+   * Appuyez sur **Done** (Terminé). 
+   * Appuyez sur **Save** (Enregistrer) pour enregistrer le modèle de données de formulaire.
+
    ![Mettre à jour les propriétés du service](assets/update_service_properties_new.png)
 
 ## Étape 5 : Tester le modèle de données de formulaire et les services {#step-test-form-data-model-and-services}
