@@ -12,6 +12,9 @@ discoiquuid: deae8ecb-a2ee-4442-97ca-98bfd1b85738
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+workflow-type: tm+mt
+source-wordcount: '1623'
+ht-degree: 79%
 
 ---
 
@@ -40,6 +43,7 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 >* ces chiffres doivent figurer après un tiret
 >* si le nom du fichier comporte d’autres chiffres, alors le numéro du port doit comporter le préfixe `-p`
 >* le préfixe « cq5 » au début du nom du fichier est ignoré
+
 >
 
 
@@ -109,7 +113,8 @@ Pour installer et démarrer AEM en tant que service Windows :
 
    * prunsrv_amd64 
    * prunsrv_ia64 
-   Cette commande appelle le script approprié qui démarre le démon du service Windows dans Java 64 bits au lieu de Java 32 bits.
+
+   Cette commande appelle le script approprié qui début le démon de service Windows dans Java 64 bits au lieu de Java 32 bits.
 
 1. Pour empêcher le processus de se diviser en plusieurs processus, augmentez la taille maximale du tas ainsi que les paramètres JVM PermGen. Locate the `set jvm_options` command and set the value as follows:
 
@@ -124,9 +129,11 @@ Pour installer et démarrer AEM en tant que service Windows :
 1. Démarrez le service en procédant comme suit :
 
    * Dans le panneau de commande Services, cliquez sur cq5, puis sur Démarrer.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    * Sur la ligne de commande, tapez net start cq5.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
 1. Windows indique que le service est en cours d’exécution. AEM démarre et l’exécutable prunsrv apparaît dans le gestionnaire de tâches. Dans le navigateur Web, accédez à AEM, par exemple `https://localhost:4502` pour commencer à l’utiliser.
@@ -158,7 +165,7 @@ If you want to change the location of the temporary folder (for example, if you 
 
 ## Autres options disponibles à partir du fichier de démarrage rapide {#further-options-available-from-the-quickstart-file}
 
-D’autres options et conventions de changement de nom sont décrites dans le fichier d’aide Quickstart, disponible via l’option -help. Pour accéder à l’aide, tapez :
+D&#39;autres options et conventions de changement de nom sont décrites dans le fichier d&#39;aide Quickstart, disponible via l&#39;option -help. Pour accéder à l’aide, tapez :
 
 * `java -jar cq5-<*version*>.jar -help`
 
@@ -298,10 +305,10 @@ Avant d’installer l’instance de publication sur l’environnement EC2, proc�
 Vous pouvez utiliser les liens suivants afin de vérifier que l’installation fonctionne (tous les exemples présument que l’instance s’exécute sur le port 8080 de localhost, que CRX est installé sous /crx et Launchpad sous /) :
 
 * `https://localhost:8080/crx/de`
-Console CRXDE Lite.
+Console du CRXDE Lite.
 
 * `https://localhost:8080/system/console`
-La console Web.
+Console Web.
 
 ## Actions après l’installation {#actions-after-installation}
 
@@ -339,7 +346,9 @@ To access the Adobe CQ Web console you can select **OSGi Console** from the welc
 ```
 
 Par exemple :
-`https://localhost:4502/system/console`ou pour la page Bundles`https://localhost:4502/system/console/bundles`
+`https://localhost:4502/system/console`
+ou pour la page Bundles
+`https://localhost:4502/system/console/bundles`
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
