@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 70%
 
 ---
 
@@ -41,6 +44,6 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Open Tools project sur GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
+* [Projet d&#39;outils ouverts sur GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip).
 
