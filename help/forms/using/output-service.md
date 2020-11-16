@@ -11,6 +11,9 @@ discoiquuid: 51ab91ff-c0c0-4165-ae02-f306e45eea03
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 80%
 
 ---
 
@@ -19,14 +22,14 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ## Présentation {#overview}
 
-Le service Output est un service OSGi qui fait partie d’AEM Document Services. Le service Output prend en charge divers formats de sortie et fonctionnalités de conception de sortie d’AEM Forms Designer. Le service Output peut convertir les modèles XFA et les données XML pour générer des documents d’impression dans différents formats.
+Le service Output est un service OSGi qui fait partie d’AEM Document Services. Le service Output prend en charge divers formats de sortie et fonctions de conception de sortie d’AEM Forms Designer. Le service Output peut convertir les modèles XFA et les données XML pour générer des documents d’impression dans différents formats.
 
 Le service Output permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
 * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
 * Générer des formulaires de sortie dans différents formats, y compris des flux d’impression PDF non interactifs, PostScript, PCL et ZPL.
 * Générer des fichiers PDF d’impression à partir de fichiers PDF de formulaire XFA.
-* Générez des documents PDF, PostScript, PCL et ZPL en bloc en fusionnant plusieurs jeux de données avec les modèles fournis.
+* Générez en bloc des documents PDF, PostScript, PCL et ZPL en fusionnant plusieurs jeux de données avec des modèles fournis.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ Le service Output permet de créer des applications grâce auxquelles vous pouve
 
 ## Création de documents de formulaire non interactifs {#creating-non-interactive-form-documents}
 
-![usingoutput_changed](assets/usingoutput_modified.png)
+![utilisation de output_changed](assets/usingoutput_modified.png)
 
 En général, vous créez des modèles dans AEM Forms Designer. Les API `generatePDFOutput` et `generatePrintedOutput` du service Output permettent de convertir directement ces modèles en divers formats, y compris au format PDF, PostScript, ZPL et PCL.
 
