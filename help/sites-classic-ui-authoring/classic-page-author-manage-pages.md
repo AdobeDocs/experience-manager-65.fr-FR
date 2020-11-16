@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 91%
 
 ---
 
@@ -23,11 +26,11 @@ Cette section décrit comment créer et gérer des pages avec Adobe Experience�
 >
 >Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et [des autorisations appropriés](/help/sites-administering/security.md#permissions) sur votre compte pour agir sur les pages, notamment pour créer, copier, déplacer, modifier et supprimer du contenu.
 >
->En cas de problèmes, contactez votre administrateur système.
+>En cas de problème, contactez votre administrateur système.
 
 ## Organisation du site web {#organizing-your-website}
 
-En tant qu’auteur, vous devez organiser votre site web dans AEM. Ceci implique de créer et de nommer vos pages de contenu afin que vous puissiez faire ce qui suit :
+En tant qu’auteur, vous devez organiser votre site web dans AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
 
 * les trouver facilement dans l’environnement de création ;
 * les visiteurs sur votre site peuvent facilement les parcourir dans l’environnement de publication.
@@ -72,16 +75,16 @@ This structure can be viewed from the Websites console, which you can use to [na
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-### Page Naming Conventions {#page-naming-conventions}
+### Conventions de dénomination des pages {#page-naming-conventions}
 
 Lors de la création d’une page, il y a deux champs clés :
 
-* **[Titre](#title)**:
+* **[Titre](#title)** :
 
-   * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification. 
+   * Il s’affiche pour l’utilisateur dans la console et dans la partie supérieure du contenu de la page lors de la modification.
    * Ce champ est obligatoire.
 
-* **[Nom](#name)**:
+* **[Nom](#name)** :
 
    * Il est utilisé pour générer l’URI.
    * L’entrée utilisateur pour ce champ est facultative. Si le nom n’est pas spécifié, il est dérivé du titre.
@@ -100,7 +103,7 @@ N’utilisez que ces caractères pour vous assurer qu’ils sont acceptés/utili
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Dans les deux types d’interfaces utilisateur (IU), le champ **Titre** contenant des caractères non valides est accepté, mais le nom est modifié en remplaçant les caractères non valides. Par exemple :
+Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom**[ de la page de cette chaîne et valide le nom en fonction des conventions imposées par AEM et JCR. ](/help/sites-developing/naming-conventions.md) Dans les deux types d’interfaces utilisateur (IU), le champ **Titre** contenant des caractères non valides est accepté, mais le nom est modifié en remplaçant les caractères non valides. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -109,7 +112,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 #### Nom {#name}
 
-Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
+Si vous indiquez un **nom**[ de page lors de la création d’une page, AEM valide le nom en fonction des conventions imposées par AEM et JCR.](/help/sites-developing/naming-conventions.md)
 
 In the Classic UI you **cannot enter invalid characters** in the **Name** field.
 
@@ -141,7 +144,7 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec une gamme de composants prêts à l’emploi qui fournissent des fonctionnalités complètes ; il s’agit notamment des suivantes :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. aem est livré avec une gamme de composants prêts à l&#39;emploi qui offrent des fonctionnalités complètes ; il s&#39;agit notamment :
 
 * Texte
 * Image
@@ -207,7 +210,7 @@ Vous pouvez ouvrir la page à [modifier](/help/sites-classic-ui-authoring/classi
 
 * Après avoir ouvert une page, vous pouvez accéder à d’autres pages du site (en vue de les modifier) en cliquant sur des liens hypertexte.
 
-### Copie et collage d’une page {#copying-and-pasting-a-page}
+### Copier et coller une page   {#copying-and-pasting-a-page}
 
 Vous pouvez copier, au choix :
 
@@ -226,6 +229,7 @@ Vous pouvez copier, au choix :
 
    * **Coller** pour coller la page, ainsi que toutes les sous pages.
    * **Maj + Coller** pour coller uniquement la page sélectionnée.
+
    La ou les pages sont collées au nouvel emplacement.
 
    >[!NOTE]
@@ -319,7 +323,7 @@ Pour déplacer ou renommer une page :
 
 ### Verrouillage d’une page {#locking-a-page}
 
-Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est ou non verrouillée.
+Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) à partir d’une console ou lorsque vous modifiez une page. Les deux environnements indiquent également si une page est verrouillée ou non.
 
 ### Création d’un dossier {#creating-a-new-folder}
 
