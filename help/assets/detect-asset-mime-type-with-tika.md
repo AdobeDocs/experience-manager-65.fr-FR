@@ -1,5 +1,5 @@
 ---
-title: Détecter le type de fichier MIME à l’aide d’Apache Tika
+title: Détecter le type MIME de fichiers à l’aide d’Apache Tika
 description: Enable Apache Tika to help [!DNL Experience Manager Assets] detect the MIME type of assets from the content stream during the upload operation instead of the file extension.
 contentOwner: AG
 translation-type: tm+mt
