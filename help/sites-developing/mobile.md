@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '3864'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La création d’un site mobile est similaire à celle d’un site classique en ce sens qu’il faut également créer des modèles et des composants. Pour plus de détails sur la création de modèles et de composants, reportez-vous aux pages suivantes : [Modèles](/help/sites-developing/templates.md), [Composants](/help/sites-developing/components.md) et [Prise en main du développement de sites AEM](/help/sites-developing/getting-started.md). La principale différence réside dans l’activation des fonctionnalités mobiles intégrées d’AEM au sein du site. Pour ce faire, il convient de créer un modèle qui repose sur le composant de page mobile.
+La création d’un site mobile est similaire à celle d’un site classique en ce sens qu’il faut également créer des modèles et des composants. Pour plus de détails sur la création de modèles et de composants, reportez-vous aux pages suivantes : [Modèles](/help/sites-developing/templates.md), [Composants](/help/sites-developing/components.md) et [Prise en main du développement de sites AEM](/help/sites-developing/getting-started.md). La principale différence consiste à activer les fonctionnalités mobiles intégrées AEM au site. Pour ce faire, il convient de créer un modèle qui repose sur le composant de page mobile.
 
 Il est aussi préférable d’utiliser le [responsive design](/help/sites-developing/responsive.md) pour créer un seul site web prenant en charge plusieurs tailles d’écran.
 
@@ -69,11 +72,11 @@ Utilisez Multi Site Manager (MSM) pour créer une Live Copy mobile à partir d�
 
 Les packages Java contenant les classes mobiles sont les suivants :
 
-* [com.day.cq.wcm.mobile.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) : définit MobileConstants.
-* [com.day.cq.wcm.mobile.api.device](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) : définit Device, DeviceGroup et DeviceGroupList.
-* [com.day.cq.wcm.mobile.api.device.Capacity](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - définit DeviceCapability.
+* [com.day.cq.wcm.mobile.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - définit MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - définit Device, DeviceGroup et DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.ability](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - définit DeviceCapability.
 * [com.day.cq.wcm.mobile.api.wurfl](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - définit WurflQueryEngine.
-* [com.day.cq.wcm.mobile.core](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) : définit MobileUtil, qui fournit diverses méthodes d’utilitaire tournant autour de WCM Mobile.
+* [com.day.cq.wcm.mobile.core](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - définit MobileUtil, qui fournit diverses méthodes d&#39;utilitaire concernant WCM Mobile.
 
 ### Composants mobiles {#mobile-components}
 
@@ -94,27 +97,27 @@ The **We.Retail Mobile Demo Site** uses the following mobile components which ar
   <tr>
    <td>Image mobile</td>
    <td>Mobile</td>
-   <td>- en fonction du composant<br /> de fondation d’image - rend une image si le périphérique est capable<br /> </td>
+   <td>- en fonction du composant<br /> Image foundation - restitue une image si le périphérique est capable<br /> </td>
   </tr>
   <tr>
    <td>Liste mobile</td>
    <td>Mobile</td>
-   <td>- en fonction du composant<br /> de base de liste - listitem_teaser.jsp effectue le rendu d’une image si le périphérique est compatible<br /> </td>
+   <td>- basé sur le composant<br /> de fondation de liste - listitem_teaser.jsp restitue une image si le périphérique est capable<br /> </td>
   </tr>
   <tr>
    <td>mobilelogo</td>
    <td>hidden</td>
-   <td>- en fonction du composant<br /> de fondation du logo - rend une image si le périphérique est capable<br /> </td>
+   <td>- basé sur le composant<br /> de fondation du logo - rend une image si le périphérique est compatible<br /> </td>
   </tr>
   <tr>
    <td>Référence mobile</td>
    <td>Mobile</td>
-   <td><p>- semblable au composant de base de référence</p> <p>- mappe un composant textimage à un composant mobiletextimage et un composant d’image à un composant mobileimage</p> </td>
+   <td><p>- semblable au composant de base de référence</p> <p>- mappe un composant textimage à un composant mobiletextimage un et un composant d’image à un composant mobileimage un</p> </td>
   </tr>
   <tr>
    <td>mobiletextimage</td>
    <td>Mobile</td>
-   <td>- en fonction du composant<br /> de base textimage - rend une image si le périphérique est capable</td>
+   <td>- basé sur le composant<br /> de fondation textimage - rend une image si le périphérique est capable</td>
   </tr>
   <tr>
    <td>mobiletopnav</td>
@@ -128,29 +131,30 @@ The **We.Retail Mobile Demo Site** uses the following mobile components which ar
 
 Le framework AEM Mobile permet de développer des composants sensibles au type d’appareil émettant la requête. Les exemples de code suivants montrent comment utiliser l’API AEM Mobile dans un composant jsp et en particulier comment : 
 
-* Récupérez le périphérique à partir de la requête :
+* Récupérez le périphérique à partir de la demande :
    `Device device = slingRequest.adaptTo(Device.class);`
 
 * Obtenez le groupe de périphériques :
    `DeviceGroup deviceGroup = device.getDeviceGroup();`
 
-* Obtenez les fonctionnalités du groupe de périphériques :
+* Bénéficiez des fonctionnalités de groupe de périphériques :
    `Collection<DeviceCapability> capabilities = deviceGroup.getCapabilities();`
 
-* Récupérez les attributs de l&#39;appareil (clé/valeurs de capacité brute de la base de données WURFL) :
+* Récupérez les attributs du périphérique (clé/valeurs de capacité brute de la base de données WURFL) :
    `Map<String,String> deviceAttributes = device.getAttributes();`
 
-* Obtenez l&#39;agent utilisateur du périphérique :
+* Obtenez l&#39;agent-utilisateur du périphérique :
    `String userAgent = device.getUserAgent();`
 
-* Récupérez la liste des groupes de périphériques (groupes de périphériques affectés au site par l’auteur) à partir de la page active :
+* Récupérez la liste de groupe de périphériques (groupes de périphériques affectés au site par l’auteur) à partir de la page active :
    `DeviceGroupList deviceGroupList = currentPage.adaptTo(DeviceGroupList.class);`
 
 * Vérifier si le groupe de périphériques prend en charge les images
    `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
 ...
 OU
-   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
+
+...   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
 ...
 
 >[!NOTE]
@@ -174,9 +178,9 @@ Pour créer un émulateur, reportez-vous à la section [Création d’un émulat
 * A device group is composed of one of more emulators: the device group configuration page, e.g. /etc/mobile/groups/touch, contains the `emulators` property below the `jcr:content` node.
 Remarque : bien que le même émulateur puisse être affecté à plusieurs groupes d’appareils, ce n’est pas très logique.
 
-* Via the device group&#39;s configuration dialog, the `emulators` property is set with the path of the desired emulator(s). Par exemple: `/libs/wcm/mobile/components/emulators/iPhone4`.
+* Via the device group&#39;s configuration dialog, the `emulators` property is set with the path of the desired emulator(s). Par exemple : `/libs/wcm/mobile/components/emulators/iPhone4`.
 
-* Les composants de l’émulateur (ex. `/libs/wcm/mobile/components/emulators/iPhone4`) étendez le composant d’émulateur mobile de base ( `/libs/wcm/mobile/components/emulators/base`).
+* Les composants de l&#39;émulateur (p. ex. `/libs/wcm/mobile/components/emulators/iPhone4`) étendez le composant d’émulateur mobile de base ( `/libs/wcm/mobile/components/emulators/base`).
 
 * Chaque composant qui étend l’émulateur mobile de base peut être sélectionné lors de la configuration d’un groupe d’appareils. Les émulateurs personnalisés sont ainsi facilement créés ou étendus.
 * Au moment de la requête en mode de modification, l’implémentation de l’émulateur est utilisée pour le rendu de la page.
@@ -197,7 +201,7 @@ Device groups are defined as content pages below `/etc/mobile/devices` and use t
 Lorsque vous créez un site mobile, vous devez affecter des groupes d’appareils au site. AEM propose trois groupes d’appareils en fonction des capacités de rendu HTML et JavaScript de l’appareil :
 
 * **Téléphones portables** pour les appareils comme le Sony Ericsson W800 avec prise en charge de HTML basique, mais pas des images ni de JavaScript.
-* **Smartphones** , pour des appareils comme Blackberry avec prise en charge du code HTML et des images de base, mais pas de JavaScript.
+* **Les téléphones intelligents** , pour les appareils comme le Blackberry avec la prise en charge du code HTML et des images de base, mais pas de prise en charge de JavaScript.
 
 * **Appareils tactiles** pour les tablettes comme l’iPad avec prise en charge complète de HTML, des images, de JavaScript et de la rotation des appareils.
 
@@ -260,9 +264,11 @@ Dans l’onglet **Général** :
    * **Fonctions** : définit si le groupe peut gérer les images, CSS, JavaScript ou la rotation des appareils.
    * **Largeur d’écran minimale** et **Hauteur**
    * **Désactiver l’émulateur** : pour activer/désactiver l’émulateur lors de la modification du contenu.
+
    Dans l’onglet **Émulateurs** :
 
    * **Émulateurs** : sélectionnez les émulateurs affectés à ce groupe d’appareils.
+
    Dans l’onglet **Filtres** :
 
    * Pour ajouter un filtre, cliquez sur Ajouter un élément et sélectionnez un filtre dans la liste déroulante.
@@ -301,7 +307,7 @@ Pour plus d’informations, accédez à [Création de filtres de groupe d’appa
 
 AEM uses a truncated version of the [WURFL](https://wurfl.sourceforge.net/)™ database to query device capabilities, such as screen resolution or javascript support, based on the device&#39;s User-Agent.
 
-Le code XML de la base de données WURFL™ est représenté sous la forme de noeuds `/var/mobile/devicespecs` en analysant le `wurfl.xml`fichier à `/libs/wcm/mobile/devicespecs/wurfl.xml.` L’extension aux noeuds se produit lors du premier démarrage du `cq-mobile-core` lot.
+Le code XML de la base de données WURFL™ est représenté sous la forme de noeuds en dessous `/var/mobile/devicespecs` en analysant le `wurfl.xml`fichier à `/libs/wcm/mobile/devicespecs/wurfl.xml.` L&#39;extension aux noeuds se produit la première fois que l&#39; `cq-mobile-core` assemblage est démarré.
 
 Les caractéristiques des appareils sont stockées en tant que propriétés de nœud. Les nœuds représentent les modèles d’appareil. Vous pouvez utiliser des requêtes pour récupérer les caractéristiques d’un appareil ou son user-agent.
 
@@ -334,21 +340,21 @@ AEM automatically parses the `wurfl.xml` file and updates the nodes below `/var/
 
 #### Ajout d’un mappage User-Agent basé sur une expression régulière {#adding-a-regexp-based-user-agent-matching}
 
-Ajoutez un agent utilisateur en tant qu’expression régulière sous /apps/wcm/mobile/devicespecs/wurfl/regexp pour pointer vers un type de périphérique WURFL™ existant.
+Ajoutez un agent utilisateur comme expression régulière sous /apps/wcm/mobile/devicespecs/wurfl/regexp pour pointer vers un type de périphérique WURFL™ existant.
 
 1. Dans **CRXDE Lite**, créez un nœud sous /apps/wcm/mobile/devicespecs/regexp, par exemple. apple_ipad_ver1.
 1. Ajoutez les propriétés suivantes au nœud  :
 
-   * **regexp**: expression régulière définissant les agents utilisateur, par exemple :.*Mozilla.*iPad.*AppleWebKit.*Safari.*
-   * **deviceId**: l’ID de périphérique tel que défini dans le fichier wurfl.xml, par exemple : apple_ipad_ver1
+   * **regexp**: expression régulière définissant les agents utilisateur, par exemple : .*Mozilla.*iPad.*AppleWebKit.*Safari.*
+   * **deviceId**: l’identifiant de périphérique tel que défini dans le fichier wurfl.xml, par exemple : apple_ipad_ver1
 
-La configuration ci-dessus entraîne le mappage des périphériques pour lesquels User-Agent correspond à l’expression régulière fournie avec l’ID de périphérique apple_ipad_ver1 WURFL™, le cas échéant.
+La configuration ci-dessus fait que les périphériques pour lesquels User-Agent correspond à l&#39;expression régulière fournie sont mappés à l&#39;identifiant de périphérique apple_ipad_ver1 WURFL™, s&#39;il existe.
 
 ## Détection d’appareils côté client {#client-side-device-detection}
 
 Cette section explique comment utiliser la détection côté client d’AEM afin d’optimiser le rendu des pages ou de proposer au client des versions de site web secondaires.
 
-AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` est envoyée dans AEM en tant que bibliothèque cliente sous `/etc/clientlibs/browsermap`.
+AEM supports device client-side detection based on `BrowserMap`. `BrowserMap` est expédié en AEM en tant que bibliothèque cliente sous `/etc/clientlibs/browsermap`.
 
 `BrowserMap` offre trois alternatives pour fournir un site web secondaire à un client. Elles sont appliquées dans l’ordre suivant :
 
@@ -366,7 +372,7 @@ The `PageVariantsProvider` OSGi service is capable of generating alternate links
 
 The `cq:siteVariant` node needs to have the following properties:
 
-* `cq:childNodesMapTo` - détermine l&#39;attribut de l&#39;élément de lien auquel les noeuds enfants seront mappés ; il est recommandé d’organiser le contenu de votre site Web de manière à ce que les enfants du noeud racine représentent la racine d’une variante de langue de votre site Web global (ex. `/content/mysite/en`, `/content/mysite/de`), auquel cas la valeur de la `cq:childNodesMapTo` variable doit être `hreflang`;
+* `cq:childNodesMapTo` - détermine à quel attribut de l&#39;élément de lien les noeuds enfants seront mappés ; il est recommandé d’organiser le contenu de votre site Web de telle sorte que les enfants du noeud racine représentent la racine d’une variante de langue de votre site Web global (ex. `/content/mysite/en`, `/content/mysite/de`), auquel cas la valeur de la `cq:childNodesMapTo` variable doit être `hreflang`;
 * `cq:variantDomain` - indique le domaine `Externalizer` qui sera utilisé pour générer les URL absolues de variantes de page. Si cette valeur n’est pas définie, les variantes de page sont générées avec des liens relatifs.
 * `cq:variantFamily` - indique à quelle famille de sites appartient ce site. Plusieurs rendus spécifiques à chaque appareil d’un même site web doivent appartenir à la même famille.
 * `media` - stocke les valeurs de l’attribut media de l’élément link. Il est recommandé d’utiliser le nom du `BrowserMap` enregistré avec `DeviceGroups`, de sorte que la bibliothèque `BrowserMap` puisse automatiquement rediriger les clients vers la bonne variante du site web.
@@ -539,14 +545,14 @@ AEM traite les requêtes émises par des appareils mobiles appartenant au groupe
 
 1. An iPad sends a request to the AEM publish instance, e.g. `https://localhost:4503/content/geometrixx_mobile/en/products.html`
 1. AEM determines whether the site of the requested page is a mobile site (by checking whether the first level page `/content/geometrixx_mobile` extends the mobile page component). Si oui :
-1. AEM recherche les fonctionnalités du périphérique en fonction de l’agent utilisateur dans l’en-tête de requête.
+1. aem recherche les fonctionnalités du périphérique en fonction de l’User-Agent dans l’en-tête de requête.
 1. AEM maps the device capabilities to the device group and sets `touch` as the device group selector.
-1. AEM redirige la requête vers `https://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
-1. AEM envoie la réponse à l’iPad :
+1. aem redirige la requête vers `https://localhost:4503/content/geometrixx_mobile/en/products.touch.html.`
+1. aem envoie la réponse à l’iPad :
 
    * La page `products.touch.html` est diffusée de manière habituelle et peut être mise en cache.
    * Les composants de rendu utilisent des sélecteurs pour adapter la présentation.
-   * AEM ajoute automatiquement le sélecteur de mobile à tous les liens internes de la page.
+   * aem ajoute automatiquement le sélecteur de dispositifs portables à tous les liens internes de la page.
 
 ### Statistiques {#statistics}
 
