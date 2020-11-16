@@ -36,8 +36,8 @@ Les modules AEM forms (par exemple, Forms, Rights Management et Output) fonction
 
 Une implémentation complète d’AEM forms comprend des services de serveur d’applications et de base de données :
 
-* *`[application server]`* pour AEM Forms
-* *`[database]`* pour AEM Forms
+* *`[application server]`* pour les formulaires AEM
+* *`[database]`* pour les formulaires AEM
 
 On Windows, these services are accessible through the **Administrative Tools** > **Services panel**. Par exemple, si vous avez installé AEM forms sur JBoss à l’aide de la méthode clé en main, les services suivants sont disponibles :
 
