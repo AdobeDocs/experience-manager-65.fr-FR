@@ -11,6 +11,9 @@ discoiquuid: affba49e-9712-4d29-858b-2f8ec4f2b1f1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+workflow-type: tm+mt
+source-wordcount: '1286'
+ht-degree: 75%
 
 ---
 
@@ -37,9 +40,9 @@ Une fois que vous avez créé un formulaire, les modifications apportées à la 
 
 AEM Quickstart fournit les modèles de formulaires adaptatifs suivants :
 
-* Modèle d&#39;enquête : Vous permet de créer un formulaire adaptatif d’une seule page à l’aide de la disposition réactive dont plusieurs colonnes sont configurées. La disposition s’ajuste automatiquement selon les dimensions des différents écrans sur lesquels vous souhaitez afficher le formulaire.
+* Modèle de questionnaire : Vous permet de créer un formulaire adaptatif d’une seule page à l’aide de la disposition réactive dont plusieurs colonnes sont configurées. La disposition s’ajuste automatiquement selon les dimensions des différents écrans sur lesquels vous souhaitez afficher le formulaire.
 * Modèle Simple Enrollment : Permet de créer un formulaire adaptatif à plusieurs étapes à l’aide d’une disposition d’assistant. Dans cette disposition, vous pouvez spécifier une expression d’achèvement d’étape pour chaque étape, qui est validée avant que l’assistant ne passe à l’étape suivante.
-* Modèle d’inscription à onglets : Vous permet de créer un formulaire adaptatif à plusieurs onglets à l’aide d’une disposition d’onglets sur la gauche, où vous pouvez consulter les onglets de manière aléatoire.
+* Modèle d’inscription avec onglets : Permet de créer un formulaire adaptatif à plusieurs onglets à l’aide d’une disposition d’onglets sur la gauche, dans laquelle vous pouvez consulter les onglets de manière aléatoire.
 * Modèle Inscription avancée : permet de créer un formulaire avec plusieurs onglets et l’assistant. Il utilise une disposition d’onglets sur la gauche qui vous permet de consulter les onglets dans n’importe quel ordre. Il utilise les services d’Adobe Document Cloud eSign pour la signature et la vérification. 
 * Modèle vierge : permet de créer un formulaire sans aucun contenu d’en-tête, de pied de page et initial. Vous pouvez ajouter des composants tels que des zones de texte, des boutons et des images. Le modèle vierge permet de créer un formulaire que vous pouvez [incorporer dans des pages du site AEM](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -50,7 +53,7 @@ Le tableau suivant montre l’association entre les modèles et le composant de 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Modèle</strong></p> </td>
+   <td><p><strong>Template (Modèle)</strong></p> </td>
    <td><p><strong>Composant de page</strong></p> </td>
   </tr>
   <tr>
@@ -116,14 +119,14 @@ Pour créer un modèle personnalisé comme simpleEnrollmentTemplate, suivez la p
 
 ## Création d’un composant de page de formulaire adaptatif {#create-an-adaptive-form-page-component}
 
-Le modèle personnalisé possède les mêmes styles que le modèle par défaut, car il référence le composant de page /libs/fd/af/components/page/base. Vous pouvez trouver la référence au composant en tant que propriété `sling:resourceType` définie sur le nœud /apps/mycompany/templates/enrollment-template/jcr:content. Etant donné que base est un composant de produit principal, ne modifiez pas ce composant.
+Le modèle personnalisé possède les mêmes styles que le modèle par défaut, car il référence le composant de page /libs/fd/af/components/page/base. Vous pouvez trouver la référence au composant en tant que propriété `sling:resourceType` définie sur le nœud /apps/mycompany/templates/enrollment-template/jcr:content. Dans la mesure où base est un composant de produit principal, ne modifiez pas ce composant.
 
 1. Accédez au nœud /apps/mycompany/templates/enrollment-template/jcr:content et modifiez la valeur de la propriété `sling:resourceType` en /apps/mycompany/components/page/enrollmentpage
 1. Copiez le nœud /libs/fd/af/components/page/base dans le dossier /apps/mycompany/components/page.
 
 1. Renommez le composant copié en `enrollmentpage`.
 
-1. **(Uniquement si vous disposez déjà d’une page de contenu)** Effectuez les étapes suivantes (a-d), si vous disposez d’un `contentpage`composant existant pour votre site Web. If you do not have an existing `contentpage`component for your website, you can leave the `resourceSuperType`property to point to the OOTB base page.
+1. **(Uniquement si vous disposez déjà d’une page de contenu)** Exécutez les étapes suivantes (a-d), si vous disposez d’un `contentpage`composant existant pour votre site Web. If you do not have an existing `contentpage`component for your website, you can leave the `resourceSuperType`property to point to the OOTB base page.
 
    1. For the `enrollmentpage` node, set value of the property `sling:resourceSuperType` to mycompany/components/page/contentpage. Le composant `contentpage` est le composant de page base de votre site. D’autres composants de page peuvent l’étendre. Remove script files under `enrollmentpage`, except `head.jsp`, `content.jsp`, and `library.jsp`. The `sling:resourceSuperType` component, which is `contentpage` in this case, includes all such scripts. Les en-têtes, dont la barre de navigation et le pied de page, sont hérités du composant `contentpage`
 
