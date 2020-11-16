@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 77%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité (Gestion des pistes et des listes).
->Il est recommandé d’exploiter [Adobe Campaign et son intégration](/help/sites-administering/campaign.md)AEM.
+>L&#39;Adobe ne prévoit pas d&#39;améliorer davantage cette capacité (Gestion des pistes et des Listes).
+>La recommandation consiste à tirer parti de l&#39; [Adobe Campaign et de son intégration](/help/sites-administering/campaign.md)AEM.
 
 Users can be asked to subscribe to **Email Service Provider&#39;s** mailing lists with the help of the **Form** component used on an AEM web page. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
 
@@ -93,15 +96,15 @@ Pour désabonner des utilisateurs de listes :
 
 Pour configurer un message de répondeur automatique pour un abonné, procédez comme suit :
 
-1. Ouvrez les propriétés de page de la page AEM qui possèdent le formulaire d’inscription pour configurer le répondeur automatique pour une piste.
+1. Ouvrez les propriétés de page de la page AEM qui possède le formulaire d&#39;inscription pour configurer le répondeur automatique pour une piste.
 1. Appliquez la configuration ExactTarget à la page.
 
 1. Ajoutez un composant **Formulaire** à la page en le faisant glisser à partir du sidekick. Si le composant n’est pas disponible, basculez vers le mode de conception et activez le groupe **Formulaire**.
 1. Click **Edit** in the **Start of Form** bar and navigate to the **Advanced** tab.
 1. In the **Form** drop-down menu, select **E-mail Service: Send auto responder email.**
-1. **Sélectionnez un courrier électronique** (il s’agit du courrier électronique envoyé en tant que message de répondeur automatique).
+1. **Sélectionnez un courriel** (il s’agit du courriel envoyé en tant que courriel de répondeur automatique).
 
-1. **Sélectionnez Classification** (cette classification est utilisée pour envoyer le courrier électronique).
+1. **Sélectionnez Classification** (cette classification est utilisée pour envoyer le courriel).
 1. Select the **Thank you** page (the page where users are directed to once they submit the form).
 
    Dans l’onglet **Formulaire**, sélectionnez la page de remerciement à laquelle doivent accéder les utilisateurs après avoir envoyé le formulaire. (Si aucune donnée n’est saisie, le formulaire s’affiche à nouveau lors de l’envoi.) Cliquez sur **OK**.
