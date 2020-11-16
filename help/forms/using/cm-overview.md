@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 91%
 
 ---
 
@@ -36,7 +39,7 @@ Elle améliore la qualité des communications en vous permettant :
 * de gérer les règles métier et le contenu approuvé dans un référentiel de contenu centralisé ;
 * utilisez AEM DAM pour les images de gestion ;
 * de créer des fichiers Adobe PDF à des fins d’archivage et d’audit ;
-* Créez des messages conformes à l’organisation à l’aide de contenu préapprouvé par le biais de règles de fonctionnement intégrées.
+* Créez des messages conformes à l’organisation à l’aide de contenu préapprouvé par le biais de règles métier intégrées.
 
 ### Etendue {#extensive}
 
