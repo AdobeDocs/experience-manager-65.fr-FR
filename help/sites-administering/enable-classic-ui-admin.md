@@ -12,6 +12,9 @@ discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 69%
 
 ---
 
@@ -24,11 +27,11 @@ Every console that has a Classic UI version in `/libs/cq/core/content/nav` can b
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
-1. À l’aide de CRXDE Lite, recherchez le noeud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’interface utilisateur classique. Il se trouve sous :
+1. A l’aide de CRXDE Lite, recherchez le noeud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’interface utilisateur classique. Il se trouve sous :
 
    `/libs/cq/core/content/nav`
 
-   Par exemple
+   Par exemple, 
 
    [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
