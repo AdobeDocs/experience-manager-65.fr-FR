@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 translation-type: tm+mt
 source-git-commit: 7caf09f7020c066072eac04a349a19b144dfeb7b
+workflow-type: tm+mt
+source-wordcount: '1199'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 7caf09f7020c066072eac04a349a19b144dfeb7b
 
 ## Assembler {#assembler}
 
-AEM Forms fournit des processus personnalisés pour appeler les API de service Assembler suivantes :
+AEM Forms fournit des workflows personnalisés pour appeler les API de service Assembler suivantes :
 
 * **invoke** : permet d’appeler des opérations spécifiées dans input DDX sur les entrées fournies.
 * **toPDFA** : permet de convertir un document PDF d’entrée en document PDF/A.
@@ -43,7 +46,7 @@ Le flux de travail Invoke DDX nécessite les documents d’entrée suivants :
 
 * **Create Map from PayLoad** : si vous activez cette option, les documents sous le dossier de charge sont ajoutés au mappage de document d’entrée pour l’API `invoke` dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
 
-* **Input Document&#39;s Map**: Spécifie la carte du document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
+* **Carte** du Document d’entrée : Indique la carte du Document d’entrée. Vous pouvez ajouter plusieurs entrées, où chaque entrée spécifie la clé du document dans la carte et la source du document.
 
 #### Options d&#39;environnement {#environment-options}
 
@@ -58,7 +61,7 @@ L’onglet Environment Options permet de définir différentes options de traite
 
 Selon input DDX, l’API d’appel peut produire plusieurs documents de sortie. L’onglet Output documents vous permet de sélectionner le document de sortie à enregistrer.
 
-1. *Enregistrer la sortie dans Payload*: Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si la charge est un fichier.
+1. *Enregistrer la sortie dans la charge*: Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile si celle-ci est un fichier.
 1. *Output Document’s Map* : permet de spécifier explicitement où enregistrer chaque document de sortie en ajoutant une entrée par document de sortie. Chaque entrée spécifie le document et l’emplacement d’enregistrement. Output document peut écraser la charge ou être enregistré dans le dossier de charge. Cette option peut être utile lorsque qu’il y a plusieurs documents de sortie.
 
 1. *Job Log* : indique l’emplacement d’enregistrement du document de journal de tâche, ce qui peut être utile pour le dépannage des échecs.
@@ -100,7 +103,7 @@ L’onglet Output documents vous permet de spécifier la destination des documen
 * *PDFA Document* : indique l’emplacement où le document PDF/A converti est enregistré. Ce paramètre peut écraser le document de charge utile ou l’enregistrer dans le dossier de charge utile.
 * *Conversion Log* : indique l’emplacement où les journaux de conversion sont enregistrés. Ce paramètre peut écraser le document de charge utile ou l’enregistrer dans le dossier de charge utile.
 
-## Forms {#forms}
+## Formulaires {#forms}
 
 Le flux de travail Render PDF Form est une enveloppe de l’API du service Forms `renderPDFForm` qui permet de créer un PDF à l’aide d’un modèle XDP et de fichiers de données .xml.
 
