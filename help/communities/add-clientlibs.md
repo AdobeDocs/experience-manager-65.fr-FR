@@ -1,8 +1,8 @@
 ---
-title: ajouter les bibliothèques clientes
-seo-title: ajouter les bibliothèques clientes
-description: ajouter un dossier ClientLibrary
-seo-description: ajouter un dossier ClientLibrary
+title: Ajouter les bibliothèques clientes
+seo-title: Ajouter les bibliothèques clientes
+description: Ajouter un dossier ClientLibrary
+seo-description: Ajouter un dossier ClientLibrary
 uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -19,9 +19,9 @@ ht-degree: 7%
 ---
 
 
-# ajouter les bibliothèques clientes {#add-clientlibs}
+# Ajouter les bibliothèques clientes {#add-clientlibs}
 
-## ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
+## Ajouter un dossier ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
 Créez un dossier ClientLibraryFolder nommé `clientlibs` qui contiendra les fichiers JS et CSS utilisés pour générer les pages de votre site.
 
@@ -46,7 +46,7 @@ Dans l’onglet **Propriétés** du nouveau `clientlibs` noeud, saisissez la pro
 * Cliquez sur **Ajouter**
 * Cliquez sur **Enregistrer tout**
 
-Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : ajoutez l’espace réservé `js.tx`t et **`css.txt`** les fichiers. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
+Remarque : la préface de la valeur catégories avec &quot;applications&quot;. est une convention permettant d&#39;identifier l&#39;application propriétaire comme se trouvant dans le dossier /apps et non /libs.  IMPORTANT : Ajoutez l’espace réservé `js.tx`t et **`css.txt`** les fichiers. (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans eux.)
 
 1. Right-click **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Sélectionner **Créer un fichier...**
@@ -154,7 +154,7 @@ Chargez votre site Web dans le navigateur et vérifiez si l’arrière-plan n’
 
 ### Sauver votre travail jusqu&#39;à présent {#saving-your-work-so-far}
 
-A ce stade, il existe un sandbox minimaliste, et il peut être utile d&#39;enregistrer sous forme de package pour que, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez le début, vous puissiez éteindre votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, et ne pas avoir à répéter ces étapes les plus basiques.
+A ce stade, il existe un sandbox minimaliste, et il peut être utile d&#39;enregistrer sous forme de package pour que, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez le début, vous puissiez désactiver votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, et ne pas avoir à répéter ces étapes les plus basiques.
 
 Ce paquet existe sur le tutoriel [Créer un exemple de page](/help/communities/create-sample-page.md) pour ceux qui ne peuvent pas attendre d&#39;entrer et de début de lecture !...
 
