@@ -90,7 +90,7 @@ Les groupes suivants sont également inclus :
 
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **adobe Site** We.Gov : *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
+1. **Adobe Site** We.Gov : *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
 1. **Boîte de réception** Adobe : Icône [](assets/bell.svg) Bell située dans la barre de menu supérieure dans AEM backend.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
@@ -98,13 +98,13 @@ Les groupes suivants sont également inclus :
 1. **Client** de messagerie : Moyen privilégié de vue de vos e-mails (Gmail, Outlook)
 1. **DEC**: Appel à l&#39;action
 1. **Naviguer**: Pour localiser un point de référence spécifique sur la page du navigateur.
-1. **AFC**: Conversion Forms automatisée
+1. **AFC**: automated forms conversion
 
-## Conversion Forms automatisée (Camila) {#automated-forms-conversion}
+## automated forms conversion (Camila) {#automated-forms-conversion}
 
 **Cette section**: Camila the CX Lead dispose d’un formulaire PDF existant qui a été utilisé dans le cadre d’un processus papier. Dans le cadre d’un effort de modernisation, elle souhaite utiliser ce formulaire PDF pour créer automatiquement une nouvelle Forms adaptative moderne.
 
-### Conversion automatisée de Forms - We.Gov (Camila) {#automated-forms-conversion-wegov}
+### automated forms conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
@@ -140,13 +140,13 @@ Les groupes suivants sont également inclus :
 
 1. Camilla ajoute ensuite toutes les transformations CSS et les modifications de terrain nécessaires pour produire le produit final.
 
-   ![ajouter CSS](assets/aftia-add-css.jpg)
+   ![Ajouter CSS](assets/aftia-add-css.jpg)
 
 ### Modèle de données de formulaire et sources de données (Camila) {#data-sources}
 
 **Cette section**: Une fois que le document a été converti et créé un formulaire adaptatif, Camila doit alors connecter le formulaire adaptatif à une source de données.
 
-1. Camila ouvre les Propriétés sur le formulaire qui a été converti en Conversion [automatisée Forms - We.Gov](#automated-forms-conversion-wegov).
+1. Camila ouvre les Propriétés sur le formulaire qui a été converti en [Automated forms conversion - We.Gov](#automated-forms-conversion-wegov).
 
 1. Camila sélectionne ensuite Modèle de formulaire > Sélectionne Modèle de données de formulaire dans la liste déroulante Sélectionner dans > Sélectionne l&#39;inscription We.gov FDM à partir de la liste de l&#39;option.
 
@@ -270,7 +270,7 @@ Aya doit passer en revue certains documents à la maison avant de pouvoir rempli
 
    Après avoir envoyé Aya reçoit une page de remerciement. Il est possible qu&#39;elle reçoive également un courriel qu&#39;elle peut ouvrir pour signer le document d&#39;enregistrement par voie électronique avec Adobe Sign.
 
-### Facultatif : adobe sign (Aya) {#adobe-sign}
+### Facultatif : Adobe Sign (Aya) {#adobe-sign}
 
 **Instructions utilisateur :**
 
@@ -386,7 +386,7 @@ George approuve la demande d’Aya et, grâce à un processus automatisé exista
    1. Vous pouvez éventuellement ajouter une nouvelle activité d&#39;appel directement dans Dynamics.
    1. Ouvrez la section &quot;**Activités**&quot;.
    1. Cliquez sur l&#39;option &quot;**Nouvel appel** téléphonique&quot;.
-   1. ajouter les détails de l&#39;appel téléphonique.
+   1. Ajouter les détails de l&#39;appel téléphonique.
    1. Enregistrez et fermez la fenêtre.
 
 1. De retour en AEM, accédez au coin supérieur gauche et cliquez sur &quot;**Envoyer**&quot; pour envoyer la demande.
