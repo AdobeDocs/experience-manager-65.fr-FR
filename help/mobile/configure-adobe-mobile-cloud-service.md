@@ -1,8 +1,8 @@
 ---
 title: Configuration de votre service cloud Adobe Mobile Services
 seo-title: Configuration de votre service cloud Adobe Mobile Services
-description: Suivez cette page pour configurer votre service Adobe Mobile Services Cloud.
-seo-description: Suivez cette page pour configurer votre service Adobe Mobile Services Cloud.
+description: Suivez cette page pour configurer votre Cloud Service Adobe Mobile Services.
+seo-description: Suivez cette page pour configurer votre Cloud Service Adobe Mobile Services.
 uuid: 21fe5b24-dc4d-4ee4-9e7f-ed4783baf276
 contentOwner: User
 content-type: reference
@@ -12,6 +12,9 @@ discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 32%
 
 ---
 
@@ -29,11 +32,11 @@ Le SDK [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analy
 Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
 1. **Collecte de données pour les canaux mobiles** : collectez des données complètes pour vos sites web et applications mobiles sur tous les grands systèmes d’exploitation.
-1. **Analyse** de l&#39;engagement sur les dispositifs portables - Comprenez l&#39;engagement des utilisateurs dans votre application mobile, votre site Web ou votre vidéo, y compris la fréquence à laquelle les consommateurs lancent le canal, s&#39;ils y effectuent des achats, etc.
-1. **Tableaux de bord et rapports** d&#39;applications mobiles - Obtenez des rapports d&#39;utilisation qui incluent des mesures de cycle de vie pour vos applications et des mesures de boutique d&#39;applications — voir les tendances pour les utilisateurs, les lancements, la durée moyenne de session, la durée de rétention et les blocages.
-1. **Analyse** des campagnes mobiles : quantifiez l&#39;efficacité des campagnes mobiles spécifiques, telles que les SMS, les publicités de recherche mobile, les publicités d&#39;affichage mobile et les codes QR.
-1. **Analyse** de géolocalisation : déterminez où les utilisateurs de votre application lancent et interagissent avec vos expériences mobiles par emplacement GPS ou points ciblés.
-1. **Analyse** du cheminement : découvrez comment les utilisateurs naviguent dans votre application pour déterminer les écrans et les éléments de l’interface utilisateur qui intéressent les utilisateurs et qui les poussent à abandonner.
+1. **Analyse** d’engagement mobile - Comprenez l’engagement des utilisateurs au sein de votre application mobile, de votre site Web ou de votre vidéo, notamment la fréquence de lancement du canal par les clients, la fréquence à laquelle ils effectuent des achats, etc.
+1. **Tableaux de bord et rapports** d&#39;applications mobiles - Obtenez des rapports d&#39;utilisation qui incluent des mesures de cycle de vie pour vos applications et des mesures de boutique d&#39;applications — afficher les tendances pour les utilisateurs, les lancements, la durée de session moyenne, la durée de rétention et les blocages.
+1. **Analyse** des campagnes mobiles : quantifiez l&#39;efficacité des campagnes spécifiques aux mobiles telles que les SMS, les publicités de recherche mobile, les publicités d&#39;affichage mobile et les codes QR.
+1. **Analyse** de géolocalisation - Recherchez où les utilisateurs de votre application lancent et interagissent avec vos expériences mobiles par localisation GPS ou points ciblés.
+1. **Analyse** du cheminement : déterminez comment les utilisateurs naviguent dans votre application afin de déterminer quels écrans et éléments de l’interface utilisateur attirent les utilisateurs et ce qui les pousse à abandonner.
 
 >[!CAUTION]
 >
@@ -47,11 +50,11 @@ Mosaïque Mesures du centre de commande AEM
 
 Pour exploiter pleinement Adobe Mobile Services Analytics, vous devez configurer le service cloud AEM Mobile Analytics avec les informations de votre compte Adobe Analytics.
 
-1. Cliquez sur l’icône en haut à droite pour ajouter ou modifier les services Cloud à partir du volet **Gérer les services** Cloud du tableau de bord de l’application.
+1. Cliquez sur l’icône en haut à droite de l’écran pour ajouter ou modifier les Cloud Services à partir de la mosaïque **Gérer les Cloud Services** à partir du tableau de bord de l’application.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. L’écran **Ajouter ou modifier des services** Cloud s’affiche. Sélectionnez **Adobe Mobile Services** et cliquez sur **Suivant**.
+1. L’écran **Ajouter ou Modifier les Cloud Services** s’affiche. Sélectionnez **Adobe Mobile Services** et cliquez sur **Suivant**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -67,13 +70,13 @@ Pour exploiter pleinement Adobe Mobile Services Analytics, vous devez configurer
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-1. Une fois que vous avez configuré une configuration de cloud, vous pouvez afficher la même configuration dans votre tableau de bord.
+1. Une fois que vous avez configuré une configuration de cloud, vous pouvez en vue la même dans votre tableau de bord.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
    >[!NOTE]
    >
-   >Une fois que vous avez configuré la configuration du cloud, vous pouvez afficher la mosaïque **Analyser les mesures** dans le tableau de bord de votre application.
+   >Une fois que vous avez configuré la configuration du cloud, vous pouvez vue la mosaïque **Analyser les mesures** dans votre tableau de bord d’application.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
