@@ -60,11 +60,11 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
    <td><strong>Mise en œuvre</strong></td>
   </tr>
   <tr>
-   <td><p>Spécifiez le type de document pour assurer un rendu cohérent.</p> <p>ajouter DOCTYPE au début (HTML ou XHTML)</p> </td>
+   <td><p>Spécifiez le type de document pour assurer un rendu cohérent.</p> <p>Ajouter DOCTYPE au début (HTML ou XHTML)</p> </td>
    <td><p>Est configurable en modifiant la propriété <i>cq:doctype</i> dans<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>La valeur par défaut est "XHTML" :</p> <p>&lt; ! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitionnel//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Peut être remplacé par "HTML_5" :</p> <p>&lt; ! DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Spécifiez la définition des caractères pour garantir le rendu correct des caractères spéciaux.</p> <p>ajouter la déclaration CHARSET (par exemple iso-8859-15, UTF-8) à &lt;head&gt;</p> </td>
+   <td><p>Spécifiez la définition des caractères pour garantir le rendu correct des caractères spéciaux.</p> <p>Ajouter la déclaration CHARSET (par exemple iso-8859-15, UTF-8) à &lt;head&gt;</p> </td>
    <td><p>Est défini sur UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
@@ -100,10 +100,10 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 
 | **Bonne pratique** | **Mise en œuvre** |
 |---|---|
-| ajouter des attributs *alt* aux images | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
+| Ajouter des attributs *alt* aux images | L’attribut *alt* a été défini comme obligatoire pour le composant d’image. |
 | Utiliser *jpg* au lieu du format *png* pour les images | Les images seront toujours diffusées au format JPG par le composant d’image. |
 | Utilisez l’ `<img>` élément au lieu des images d’arrière-plan dans un tableau. | Aucune donnée d’image d’arrière-plan n’est utilisée dans les modèles. |
-| ajoutez l’attribut style=&quot;bloc d’affichage&quot; sur les images. Permet d’obtenir un affichage correct dans Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;bloc d’affichage&quot;* . |
+| Ajoutez l’attribut style=&quot;bloc d’affichage&quot; sur les images. Permet d’obtenir un affichage correct dans Gmail. | Toutes les images contiennent par défaut l’attribut *style=&quot;bloc d’affichage&quot;* . |
 
 ### Texte et liens {#text-and-links}
 
@@ -132,7 +132,7 @@ Utilisez ces meilleures pratiques pour créer votre propre newsletter.
 |---|---|
 | Utilisez le validateur W3C pour corriger le code HTML. Assurez-vous que toutes les balises ouvertes sont correctement fermées. | Le code a été validé. For XHTML transitional Doctype only the missing xmlns attribute for the `<html>` element is missing. |
 | Ne vous embêtez pas à JavaScript ou au Flash : ces technologies ne sont généralement pas prises en charge par les clients de messagerie. | Ni JavaScript ni Flash ne sont utilisés dans le modèle de newsletter. |
-| ajoutez une version en texte brut pour l’envoi en plusieurs parties. | Un nouveau widget a été créé dans les propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
+| Ajoutez une version en texte brut pour l’envoi en plusieurs parties. | Un nouveau widget a été créé dans les propriétés de la page pour extraire facilement une version en texte brut du contenu de la page. Ceci peut être utilisé comme point de départ pour la version en texte brut finale. |
 
 ## Modèles et exemples de newsletter de campagne {#campaign-newsletter-templates-and-examples}
 
