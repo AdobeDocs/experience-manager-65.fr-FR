@@ -1,8 +1,8 @@
 ---
 title: Configuration d’utilisateurs et de groupes d’utilisateurs
 seo-title: Configuration d’utilisateurs et de groupes d’utilisateurs
-description: Suivez cette page pour comprendre les rôles utilisateur et comment configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de vos applications mobiles.
-seo-description: Suivez cette page pour comprendre les rôles utilisateur et comment configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de vos applications mobiles.
+description: Suivez cette page pour comprendre les rôles d’utilisateur et comment configurer vos utilisateurs et groupes afin de prendre en charge la création et la gestion de vos applications mobiles.
+seo-description: Suivez cette page pour comprendre les rôles d’utilisateur et comment configurer vos utilisateurs et groupes afin de prendre en charge la création et la gestion de vos applications mobiles.
 uuid: 55cea2b3-d7e6-4174-92b3-ee97e46b59c4
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 51%
 
 ---
 
@@ -23,16 +26,16 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Ce chapitre décrit les rôles utilisateur et comment configurer vos utilisateurs et groupes pour qu’ils prennent en charge la création et la gestion de vos applications mobiles.
 
-## Utilisateurs des applications AEM Mobile et administration des groupes {#aem-mobile-application-users-and-group-administration}
+## Utilisateurs de l’application AEM Mobile et administration des groupes {#aem-mobile-application-users-and-group-administration}
 
-Pour organiser et gérer le modèle d’autorisation pour les applications AEM, les deux groupes suivants sont disponibles :
+Pour aider à organiser et à gérer le modèle d’autorisation pour les applications AEM, les deux groupes suivants sont disponibles :
 
 * administrateurs d’applications pour les administrateurs d’applications
 * créateurs d’applications pour les auteurs d’applications
 
 ### Développeurs de contenu d’application AEM Mobile (groupe app-author) {#aem-mobile-application-content-authors-app-author-group}
 
-Les membres du groupe app-author sont responsables de la création de contenu d&#39;application AEM Mobile, y compris des pages, du texte, des images et des vidéos.
+Les membres du groupe d’auteurs d’applications sont chargés de créer AEM contenu d’applications mobiles, y compris des pages, du texte, des images et des vidéos.
 
 #### Configuration du groupe - app-authors {#group-configuration-app-authors}
 
@@ -48,7 +51,7 @@ Les membres du groupe app-author sont responsables de la création de contenu d&
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-   Ajout d’auteurs d’applications au groupe Auteurs
+   Ajouter les auteurs d’applications au groupe Auteurs
 
 1. Maintenant que vous avez créé le groupe d’utilisateurs app-authors, vous pouvez lui ajouter d’autres membres dans la [console d’administration des utilisateurs](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
@@ -58,17 +61,17 @@ Les membres du groupe app-author sont responsables de la création de contenu d&
 
 1. Navigate to the [Permissions console](http://localhost:4502/useradmin) and add permissions to administer cloudservices
 
-   * (Lecture) sur /etc/cloudservices
+   * (Lire) sur /etc/cloudservices
    >[!NOTE]
    >
-   >Les auteurs d’applications étendent le groupe d’auteurs de contenu par défaut d’AEM, héritant ainsi de la possibilité de créer du contenu sous /content/phonegap
+   >Les auteurs d’applications étendent le groupe d’auteurs de contenu (auteurs) par défaut de l’AEM, héritant ainsi de la possibilité de créer du contenu sous /content/phonegap
 
 ### Groupe Administrateurs d’application AEM Mobile (groupe app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
 Members of the app-admins group can author application content with the same permissions included with app-authors **AND** in addition are also responsible for:
 
 * La configuration des services cloud PhoneGap Build et Adobe Mobile Services dans AEM
-* Mise à jour OTA de la synchronisation de contenu de l’application d’évaluation, de publication et d’effacement
+* Mises à jour OTA de synchronisation de contenu de l’application d’évaluation, de publication et d’effacement
 
 >[!NOTE]
 >
@@ -83,6 +86,7 @@ Members of the app-admins group can author application content with the same per
 
    * content-authors
    * workflow-users
+
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
 1. Navigate to the [Permissions console](http://localhost:4502/useradmin) and add permissions to administer cloudservices
@@ -90,10 +94,11 @@ Members of the app-admins group can author application content with the same per
    * (lire, modifier, créer, supprimer, répliquer) sur /etc/cloudservices/mobileservices
    * (lire, modifier, créer, supprimer, répliquer) sur /etc/cloudservices/phonegap-build
 
-1. Dans la même console d’autorisations, ajoutez des autorisations pour l’affichage, la publication et l’effacement des mises à jour du contenu de l’application.
+1. Dans la même console Permissions, ajoutez des autorisations pour l’affichage, la publication et l’effacement des mises à jour du contenu de l’application.
 
    * (lire, modifier, créer, supprimer, répliquer) sur /etc/packages/mobileapp
    * (lire) sur /var/contentsync
+
    >[!NOTE]
    >
    >La réplication de package sert à publier des mises à jour d’application de l’instance de création vers l’instance de publication
@@ -108,18 +113,18 @@ Members of the app-admins group can author application content with the same per
 
 ## Autorisations de la mosaïque Tableau de bord {#dashboard-tile-permissions}
 
-Les mosaïques Tableau de bord peuvent présenter différentes actions selon les droits de l’utilisateur. La section suivante décrit les actions disponibles pour chaque volet.
+Les mosaïques Tableau de bord peuvent présenter différentes actions selon les droits de l’utilisateur. Le document suivant décrit les actions disponibles pour chaque mosaïque.
 
-Outre ces autorisations, une action peut également être affichée/masquée selon la façon dont l’application est configurée. Par exemple, il n’y a aucun intérêt à exposer l’action &quot;Génération à distance&quot; si une configuration de cloud PhoneGap n’a pas été affectée à l’application. These will be listed below under &#39;**Configuration Condition**&#39; sections.
+Outre ces autorisations, une action peut également être affichée/masquée selon la façon dont l’application est configurée. Par exemple, il n&#39;y a aucun intérêt à exposer l&#39;action &quot;Génération à distance&quot; si une configuration de cloud PhoneGap n&#39;a pas été affectée à l&#39;application. These will be listed below under &#39;**Configuration Condition**&#39; sections.
 
 ### Mosaïque Gestion de l’application {#manage-app-tile}
 
 La mosaïque ne présente actuellement aucune action nécessitant des autorisations. Toutefois, la page de détails de l’application propose les actions suivantes:
 
-* *Modifier* pour app-author et app-admin (Déclencheur de l’interface utilisateur - jcr:write - sur /content/phonegap/{suffix})
+* *Modification* pour app-author et app-admin (Déclencheur de l’interface utilisateur - jcr:write - on /content/phonegap/{suffix})
 * *Téléchargement* pour app-author et app-admin (déclencheur de l’interface utilisateur - sur /content/phonegap/{suffix})
 
-L’image ci-dessous présente les options de téléchargement et de modification d’une application :
+L’image ci-dessous présente les options de téléchargement et de modification pour une application :
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
