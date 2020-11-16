@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 48%
 
 ---
 
@@ -50,37 +53,37 @@ Pour mapper des composants de page d’entrée sur Adobe Analytics :
   </tr>
   <tr>
    <td><strong>Lien des clics publicitaires CTA</strong></td>
-   <td><i>eventdata.clickthroughLinkLabel</i><br /> </td>
+   <td><i>eventdata.clickthroughLinkLabel</i> <br /> </td>
    <td>Libellé du lien ou texte du lien </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clickthroughLinkTarget</i><br /> </td>
-   <td>La destination à laquelle vous vous rendez lorsque vous cliquez sur le lien </td>
+   <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
+   <td>La destination à laquelle vous accédez lorsque vous cliquez sur le lien </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.events.clickthroughLinkClick</i><br /> </td>
+   <td><i>eventdata.événements.clickthroughLinkClick</i> <br /> </td>
    <td>Evénement de clic. </td>
   </tr>
   <tr>
    <td><strong>Lien graphique CTA</strong></td>
-   <td><i>eventdata.clicktroughImageLabel</i><br /> </td>
+   <td><i>eventdata.clicktroughImageLabel</i> <br /> </td>
    <td>Titre de l'image CTA </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clicktroughImageTarget</i><br /> </td>
+   <td><i>eventdata.clicktroughImageTarget</i> <br /> </td>
    <td>Destination à laquelle vous accédez lorsque vous cliquez sur l’image contenant un lien.</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.clicktroughImageAsset</i><br /> </td>
+   <td><i>eventdata.clicktroughImageAsset</i> <br /> </td>
    <td>Chemin d’accès au fichier d’image dans le référentiel </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.events.clicktroughImageClick</i><br /> </td>
+   <td><i>eventdata.événements.clicktroughImageClick</i> <br /> </td>
    <td>Evénement de clic.</td>
   </tr>
  </tbody>
