@@ -73,10 +73,10 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si le AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel le AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un client PDF Assembler**
 
@@ -92,7 +92,7 @@ Un document PDF doit être référencé et transmis au service Assembler pour d�
 
 **Définition des options d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de `AssemblerOptionSpec` classe dans Référence [API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de `AssemblerOptionSpec` classe dans Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
 
 **Récupération d’informations sur le document PDF**
 
@@ -189,7 +189,7 @@ Déterminez si un document PDF est compatible PDF/A à l’aide de l’API Assem
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF Assembler.
 
@@ -222,8 +222,8 @@ Déterminez si un document PDF est compatible PDF/A à l’aide de l’API Assem
    * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Cet objet de collection est utilisé pour stocker le document PDF.
    * Create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
    * Attribuez une valeur de chaîne qui représente le nom de clé au `MyMapOf_xsd_string_To_xsd_anyType_Item` `key` champ de l’objet. Cette valeur doit correspondre à la valeur de l’élément source PDF spécifié dans le document DDX.
-   * Affectez l’ `BLOB` objet qui stocke le document PDF au `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` champ de l’objet.
-   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet sur l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Appelez la `MyMapOf_xsd_string_To_xsd_anyType` méthode de l’ `Add` objet et transmettez l’ `MyMapOf_xsd_string_To_xsd_anyType` objet.
+   * Affectez l’objet `BLOB` qui stocke le document PDF au `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` champ de l’objet.
+   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet à l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Appelez la `MyMapOf_xsd_string_To_xsd_anyType` méthode de l’ `Add` objet et transmettez l’ `MyMapOf_xsd_string_To_xsd_anyType` objet.
 
 1. Définissez les options d’exécution.
 
