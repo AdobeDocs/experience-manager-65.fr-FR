@@ -21,15 +21,15 @@ ht-degree: 0%
 
 # Rendu des PDF forms interactifs {#rendering-interactive-pdf-forms}
 
-Le service Forms effectue le rendu de PDF forms interactifs sur les périphériques clients, généralement les navigateurs Web, afin de recueillir des informations auprès des utilisateurs. Une fois qu’un formulaire interactif est rendu, un utilisateur peut saisir des données dans les champs du formulaire et cliquer sur un bouton d’envoi situé sur le formulaire pour renvoyer les informations au service Forms. Adobe Reader ou Acrobat doit être installé sur l’ordinateur hébergeant le navigateur Web client pour qu’un formulaire PDF interactif soit visible.
+Le service Forms effectue le rendu de PDF forms interactifs sur les périphériques clients, généralement les navigateurs Web, afin de recueillir des informations auprès des utilisateurs. Une fois le formulaire interactif rendu, un utilisateur peut saisir des données dans les champs du formulaire et cliquer sur un bouton d’envoi situé sur le formulaire pour renvoyer les informations au service Forms. Adobe Reader ou Acrobat doit être installé sur l’ordinateur hébergeant le navigateur Web client pour qu’un formulaire PDF interactif soit visible.
 
 >[!NOTE]
 >
->Avant de pouvoir générer un formulaire à l’aide du service Forms, vous devez créer une conception de formulaire. En règle générale, une conception de formulaire est créée dans Designer et enregistrée dans un fichier XDP. Pour plus d’informations sur la création d’une conception de formulaire, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Avant de pouvoir générer un formulaire à l’aide du service Forms, créez une conception de formulaire. En règle générale, une conception de formulaire est créée dans Designer et enregistrée dans un fichier XDP. Pour plus d’informations sur la création d’une conception de formulaire, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **Exemple de demande de prêt**
 
-Un exemple de demande de prêt est présenté pour montrer comment le service Forms utilise des formulaires interactifs pour collecter des informations auprès des utilisateurs. Cette application permet à un utilisateur de remplir un formulaire avec les données nécessaires pour sécuriser un prêt, puis d’envoyer les données au service Forms. Le diagramme suivant présente le flux logique de la demande de prêt.
+Un exemple de demande de prêt est présenté pour montrer comment le service Forms utilise des formulaires interactifs pour collecter des informations auprès des utilisateurs. Cette application permet à un utilisateur de remplir un formulaire contenant les données nécessaires pour sécuriser un prêt, puis d’envoyer les données au service Forms. Le diagramme suivant présente le flux logique de la demande de prêt.
 
 ![ri_ri_finsrv_loanapp_v1](assets/ri_ri_finsrv_loanapp_v1.png)
 
@@ -57,11 +57,11 @@ Le tableau suivant décrit les étapes de ce diagramme.
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>Le servlet <code>HandleData</code> Java utilise l’API Client du service Forms pour traiter l’envoi du formulaire et récupérer les données du formulaire. Les données sont ensuite stockées dans une base de données d’entreprise. (Voir <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">Gestion des formulaires</a>envoyés.)</p></td>
+   <td><p>Le servlet <code>HandleData</code> Java utilise l’API Client du service Forms pour traiter l’envoi du formulaire et récupérer les données du formulaire. Les données sont ensuite stockées dans une base de données d’entreprise. (Voir <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">Gestion des Forms</a>envoyés.)</p></td>
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>Un formulaire de confirmation est rendu au navigateur Web. Les données telles que le prénom et le nom de l’utilisateur sont fusionnées avec le formulaire avant d’être générées. (Voir <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Préremplissage de formulaires avec des dispositions</a>à disposition souple.)</p></td>
+   <td><p>Un formulaire de confirmation est rendu au navigateur Web. Les données telles que le prénom et le nom de l’utilisateur sont fusionnées avec le formulaire avant d’être générées. (Voir <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Préremplissage de Forms avec des mises en page</a>souple.)</p></td>
   </tr>
  </tbody>
 </table>
@@ -78,7 +78,7 @@ Ce formulaire est généré par le servlet `HandleData` Java de la demande de pr
 
 ![ri_ri_verify](assets/ri_ri_confirm.png)
 
-Le servlet `HandleData` Java préremplit ce formulaire avec le prénom et le nom de l’utilisateur, ainsi que le montant. Une fois le formulaire prérempli, il est envoyé au navigateur Web client. (Voir [Préremplissage de formulaires avec des dispositions](/help/forms/developing/prepopulating-forms-flowable-layouts.md)souple).
+Le servlet `HandleData` Java préremplit ce formulaire avec le prénom et le nom de l’utilisateur, ainsi que le montant. Une fois le formulaire prérempli, il est envoyé au navigateur Web client. (Voir [Préremplissage de Forms avec des mises en page](/help/forms/developing/prepopulating-forms-flowable-layouts.md)souple).
 
 **Servlets Java**
 
@@ -109,7 +109,7 @@ Normalement, vous ne placez pas le code API du client du service Forms dans une 
 Pour générer un formulaire PDF interactif, effectuez les tâches suivantes :
 
 1. Incluez des fichiers de projet.
-1. Créez un objet API du client Forms.
+1. Créez un objet API Client Forms.
 1. Spécifiez des valeurs URI.
 1. Joindre des fichiers au formulaire (facultatif).
 1. Générer un formulaire PDF interactif
@@ -119,9 +119,9 @@ Pour générer un formulaire PDF interactif, effectuez les tâches suivantes :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Création d’un objet API du client Forms**
+**Création d’un objet API Client Forms**
 
-Avant de pouvoir exécuter par programmation une opération d’API du client du service Forms, vous devez créer un objet d’API du client Forms. Si vous utilisez l’API Java, créez un `FormsServiceClient` objet. Si vous utilisez l’API du service Web de Forms, créez un `FormsService` objet.
+Avant de pouvoir exécuter par programmation une opération d’API Client de service Forms, vous devez créer un objet API Client Forms. Si vous utilisez l’API Java, créez un `FormsServiceClient` objet. Si vous utilisez l’API du service Web Forms, créez un `FormsService` objet.
 
 **Spécification des valeurs URI**
 
@@ -135,7 +135,7 @@ Pour accéder à cette conception de formulaire, spécifiez `Applications/FormsA
 >
 >Pour plus d’informations sur la création d’une application Forms à l’aide de Workbench, voir Aide [de](https://www.adobe.com/go/learn_aemforms_workbench_63)Workbench.
 
-Le chemin d’accès à une ressource située dans une application Forms est :
+Le chemin d&#39;accès à une ressource située dans une application Forms est le suivant :
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -156,11 +156,11 @@ Si vous disposez d’un formulaire contenant un bouton d’envoi et un bouton de
 
 >[!NOTE]
 >
->Au lieu de spécifier une valeur d’URL pour référencer un fichier XDP, vous pouvez également transmettre une `com.adobe.idp.Document` instance au service Forms. L’ `com.adobe.idp.Document` instance contient une conception de formulaire. (Voir [Transmission de Documents au service](/help/forms/developing/passing-documents-forms-service.md)Forms.)
+>Au lieu de spécifier une valeur d’URL pour référencer un fichier XDP, vous pouvez également transmettre une `com.adobe.idp.Document` instance au service Forms. L’ `com.adobe.idp.Document` instance contient une conception de formulaire. (voir [Transmission de Documents au service](/help/forms/developing/passing-documents-forms-service.md)Forms).
 
 **Joindre des fichiers au formulaire**
 
-Vous pouvez joindre des fichiers à un formulaire. Lorsque vous générez un formulaire PDF contenant des pièces jointes, les utilisateurs peuvent récupérer les pièces jointes dans Acrobat à l’aide du volet de pièces jointes. Vous pouvez associer différents types de fichier à un formulaire, tel qu’un fichier texte, ou à un fichier binaire tel qu’un fichier JPG.
+Vous pouvez joindre des fichiers à un formulaire. Lorsque vous générez un formulaire PDF avec des pièces jointes, les utilisateurs peuvent récupérer les pièces jointes en Acrobat à l’aide du volet de pièces jointes. Vous pouvez associer différents types de fichier à un formulaire, tel qu’un fichier texte, ou à un fichier binaire tel qu’un fichier JPG.
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Vous pouvez joindre des fichiers à un formulaire. Lorsque vous générez un for
 
 Pour générer un formulaire, utilisez une conception de formulaire créée dans Designer et enregistrée dans un fichier XDP ou PDF. Vous pouvez également générer un formulaire créé à l’aide d’Acrobat et enregistré au format PDF. Pour générer un formulaire PDF interactif, appelez la `FormsServiceClient` méthode ou la `renderPDFForm` `renderPDFForm2` méthode de l’objet.
 
-L’objet `renderPDFForm` utilise un `URLSpec` objet. La racine de contenu du fichier XDP est transmise au service Forms à l’aide de la `URLSpec` méthode de l’objet `setContentRootURI` . Le nom de la conception de formulaire ( `formQuery`) est transmis en tant que valeur de paramètre distincte. Les deux valeurs sont concaténées pour obtenir la référence absolue à la conception de formulaire.
+L’objet `renderPDFForm` utilise un `URLSpec` objet. La racine de contenu du fichier XDP est transmise au service Forms à l’aide de la `URLSpec` méthode de l’ `setContentRootURI` objet. Le nom de la conception de formulaire ( `formQuery`) est transmis en tant que valeur de paramètre distincte. Les deux valeurs sont concaténées pour obtenir la référence absolue à la conception de formulaire.
 
 La `renderPDFForm2` méthode accepte une `com.adobe.idp.Document` instance contenant le document XDP ou PDF à rendre.
 
@@ -186,7 +186,7 @@ Générer un formulaire PDF interactif à l’aide de l’API Forms (Java) :
 
    Incluez des fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
-1. Création d’un objet API du client Forms
+1. Création d’un objet API Client Forms
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
@@ -241,7 +241,7 @@ Générer un formulaire PDF interactif à l’aide de l’API Forms (service Web
    * Créez des classes de proxy Java qui utilisent le WSDL du service Forms.
    * Incluez les classes proxy Java dans votre chemin de classe.
 
-1. Création d’un objet API du client Forms
+1. Création d’un objet API Client Forms
 
    Créez un `FormsService` objet et définissez des valeurs d’authentification.
 
@@ -292,4 +292,4 @@ Générer un formulaire PDF interactif à l’aide de l’API Forms (service Web
 
 **Ecrire le flux de données du formulaire dans le navigateur Web client**
 
-Lorsque le service Forms génère un formulaire, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur Web client. Lorsqu’il est écrit dans le navigateur Web client, le formulaire est visible pour l’utilisateur.
+Lorsque le service Forms effectue le rendu d’un formulaire, il renvoie un flux de données de formulaire que vous devez écrire dans le navigateur Web client. Lorsqu’il est écrit dans le navigateur Web client, le formulaire est visible pour l’utilisateur.
