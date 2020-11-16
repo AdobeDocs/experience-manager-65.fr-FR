@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 translation-type: tm+mt
 source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 81%
 
 ---
 
@@ -62,6 +65,7 @@ Dans cet exemple, nous créons un fichier JSSP personnalisé et l’appelons du 
 
    * Vous avez établi une connexion entre AEM et Campaign
    * Le service cloud de Campaign est configuré sur **/content/geometrixx-outdoors**
+
    The most important object in this example is the **GenericCampaignConnector**, which allows you to call (get and post) jssp files on the Adobe Campaign side.
 
    Voici un petit extrait de code :
@@ -169,7 +173,7 @@ AEM propose des API prêtes à l’emploi pour récupérer les objets disponible
 >
 >[Pour cet exemple, reportez-vous à la section Geometrixx](/help/sites-developing/we-retail.md), disponible dans Package Share.
 
-Pour chaque noeud de l’explorateur, il existe une API qui y est liée. Par exemple pour le noeud :
+Pour chaque noeud de l&#39;explorateur, il existe une API qui lui est liée. Par exemple, pour le noeud :
 
 * [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
