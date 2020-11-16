@@ -37,6 +37,7 @@ Ce tutoriel détaillé explique comment afficher une nouvelle colonne dans la co
 >
 >* Console Digital Assets
 >* Console Community
+
 >
 
 
@@ -112,6 +113,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >
 >* Votre implémentation doit déterminer, sur la base de la requête et/ou de la ressource fournies, si elle doit ou non ajouter les informations à l’objet JSON.
 >* Si votre implémentation de `ListInfoProvider` définit une propriété qui existe déjà dans l’objet de réponse, sa valeur est remplacée par celle que vous fournissez.
+
 >
 >  
  Vous pouvez utiliser le [classement de service](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) pour gérer l’ordre d’exécution de plusieurs implémentations de `ListInfoProvider`.
