@@ -176,7 +176,7 @@ Activez ces options pour spécifier le mode de conversion des pages HTML. Les va
 
 **Marges :** Indique les marges (Haut, Bas, Gauche et Droite) du document PDF généré.
 
-**ajouter les signets au format PDF :** ajoute les signets au document PDF.
+**Ajouter les signets au format PDF :** Ajoute les signets au document PDF.
 
 **Activer le PDF balisé :** Incorpore des balises dans le document PDF.
 
@@ -416,7 +416,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Excel sont
 
 **Créer un fichier compatible avec le format PDF/A-1a **: rend obligatoire l’utilisation du paramètre PDF/A-1b:2005 RVB Adobe PDF.
 
-**ajouter des signets à Adobe PDF**: permet de convertir les noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
+**Ajouter des signets à Adobe PDF**: permet de convertir les noms de feuille de calcul Excel en signets. Cette option est sélectionnée par défaut.
 
 **Ajuster la feuille de calcul à une seule page**: Réduit la taille du texte pour qu’il s’adapte à la feuille de calcul sur une seule page.
 
@@ -424,7 +424,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Excel sont
 
 **Exécuter automatiquement** les macros : exécute toutes les macros du document Excel (par exemple une macro qui insère l’heure actuelle) avant de convertir le document.
 
-**Convertir les informations** de Document : ajoute les propriétés du document PDF en fonction des informations de document contenues dans le fichier source. Cela inclut des informations telles que le titre, l’auteur, le sujet et les mots-clés du document.
+**Convertir les informations** de Document : Ajoute les propriétés du document PDF en fonction des informations de document contenues dans le fichier source. Cela inclut des informations telles que le titre, l’auteur, le sujet et les mots-clés du document.
 
 **Ajouter des liens à Adobe PDF **: permet de convertir les liens hypertexte du fichier source en liens hypertexte dans le document PDF.
 
@@ -527,7 +527,7 @@ Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal 
 
 **Convertir les informations sur le document **: permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut. Cette option est activée par défaut.
 
-**ajouter des liens vers Adobe PDF**: Conserve tous les liens. Cette option est sélectionnée par défaut.
+**Ajouter des liens vers Adobe PDF**: Conserve tous les liens. Cette option est sélectionnée par défaut.
 
 **Ajouter des signets à Adobe PDF **: permet de convertir des titres en signets.  Cette option est sélectionnée par défaut.
 
