@@ -31,8 +31,8 @@ Effectuez les étapes suivantes pour ajouter et configurer un graphique dans une
 1. Appuyez sur **Composants** depuis le panneau latéral de la communication interactive.
 1. Faites glisser le composant **Graphique** vers l&#39;un des composants suivants :
 
-   * canal d&#39;impression : Zone de Cible ou champ d’image
-   * canal Web : Panneau ou zone de Cible
+   * Canal d&#39;impression : Zone de cible ou champ d’image
+   * Canal Web : Panneau ou zone de Cible
 
 1. Appuyez sur le composant de graphique dans l’éditeur Interactive Communication et sélectionnez **[!UICONTROL Configurer (]** configure_icon ![](assets/configure_icon.png)) dans la barre d’outils Composant.
 
@@ -83,7 +83,7 @@ Configurez les propriétés suivantes lors de la création de graphiques pour l�
   </tr>
   <tr>
    <td>Série &gt; Objet de modèle de données</td>
-   <td>Nom de l’élément de collecte de modèle de données de formulaire à ajouter plusieurs séries au graphique.<br /> Choisissez une propriété d’objet de modèle de données de formulaire parent pour les propriétés tracées sur l’axe X et l’axe Y pour former une série significative. L’objet de modèle de données que vous liez doit être de type Nombre, Chaîne ou Date.</td>
+   <td>Nom de l’élément de collecte du modèle de données de formulaire à ajouter plusieurs séries au graphique.<br /> Choisissez une propriété d’objet de modèle de données de formulaire parent pour les propriétés tracées sur l’axe X et l’axe Y pour former une série significative. L’objet de modèle de données que vous liez doit être de type Nombre, Chaîne ou Date.</td>
    <td>Impression et web</td>
   </tr>
   <tr>
