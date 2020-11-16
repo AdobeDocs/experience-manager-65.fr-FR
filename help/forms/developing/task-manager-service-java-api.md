@@ -1,6 +1,6 @@
 ---
-title: API Java du service Tâche Manager QuickStart (SOAP)
-seo-title: API Java du service Tâche Manager QuickStart (SOAP)
+title: API Java du service tâche Manager QuickStart (SOAP)
+seo-title: API Java du service tâche Manager QuickStart (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
@@ -36,7 +36,7 @@ Les Débuts rapides suivants sont disponibles pour le service Tâche Manager.
 
 [Début rapide (mode SOAP) : Récupération des informations de tâche à l’aide de l’API Java](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API forte
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec des AEM Forms sont basés sur le système d’exploitation du serveur Forms. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec AEM Forms sont basés sur le système d&#39;exploitation Forms. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : Affectation de tâches à l’aide de l’API Java {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
