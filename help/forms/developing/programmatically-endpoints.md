@@ -28,8 +28,8 @@ Le service de registre des points de terminaison permet de gérer les points de 
 * méthode d’objet
 * Watched Folder
 * Email
-* (Obsolète pour AEM Forms) Remoting
-* Gestionnaire de Tâches
+* (Obsolète pour les formulaires AEM) Remoting
+* Gestionnaire de tâches
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Vous pouvez accomplir ces tâches à l’aide du service de registre des points 
 
 * Ajoutez des points de terminaison EJB. (Voir [Ajouter des points de terminaison](programmatically-endpoints.md#adding-ejb-endpoints)EJB.)
 * Ajoutez des points de terminaison SOAP. (Voir [Ajouter des points de terminaison](programmatically-endpoints.md#adding-soap-endpoints)SOAP.)
-* Ajoutez les points de fin Watched Folder (voir [Ajoute des points de fin](programmatically-endpoints.md#adding-watched-folder-endpoints)Watched Folder).
+* Ajoutez les points de terminaison Watched Folder (voir [Ajoute des points de terminaison](programmatically-endpoints.md#adding-watched-folder-endpoints)Watched Folder).
 * Ajouter les points de fin de courrier électronique. (See [Adding Email Endpoints](programmatically-endpoints.md#adding-email-endpoints).)
 * Ajouter les points de terminaison Remoting. (Voir [Ajouter des points de terminaison](programmatically-endpoints.md#adding-remoting-endpoints)distants.)
 * Ajoutez les points de terminaison TaskManager (voir [Ajoute des points de terminaison TaskManager](programmatically-endpoints.md#adding-taskmanager-endpoints)).
@@ -55,7 +55,7 @@ Vous pouvez accomplir ces tâches à l’aide du service de registre des points 
 
 ## Ajouter des points de terminaison EJB {#adding-ejb-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison EJB à un service en utilisant l’API Java AEM Forms. En ajoutant un point de terminaison EJB à un service, vous activez une application cliente pour appeler le service en utilisant le mode EJB. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler des AEM Forms, vous pouvez sélectionner le mode EJB. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+Vous pouvez ajouter par programmation un point de terminaison EJB à un service en utilisant l’API Java AEM Forms. En ajoutant un point de terminaison EJB à un service, vous activez une application cliente pour appeler le service en utilisant le mode EJB. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode EJB. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -81,8 +81,8 @@ Incluez les fichiers nécessaires dans votre projet de développement. Les fichi
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -158,7 +158,7 @@ Ajoutez un point de terminaison EJB à l’aide de l’API Java :
 
 ## Ajouter des points de terminaison SOAP {#adding-soap-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison SOAP à un service en utilisant l’API Java AEM Forms. En ajoutant un point de terminaison SOAP, vous activez une application cliente pour appeler le service en utilisant le mode SOAP. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler des AEM Forms, vous pouvez sélectionner le mode SOAP.
+Vous pouvez ajouter par programmation un point de terminaison SOAP à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison SOAP, vous activez une application cliente pour appeler le service en utilisant le mode SOAP. En d’autres termes, lorsque vous définissez les propriétés de connexion requises pour appeler AEM Forms, vous pouvez sélectionner le mode SOAP.
 
 >[!NOTE]
 >
@@ -186,8 +186,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 Ces fichiers JAR sont nécessaires pour créer un point de terminaison SOAP. Cependant, vous avez besoin de fichiers JAR supplémentaires si vous utilisez le point de terminaison SOAP pour appeler le service. Pour plus d’informations sur les fichiers JAR AEM Forms, voir [Inclusion de fichiers](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)de bibliothèque Java AEM Forms.
 
@@ -223,7 +223,7 @@ Après avoir créé un nouveau point de terminaison, vous devez l’activer. Lor
 
 ### Ajouter un point de terminaison SOAP à l’aide de l’API Java {#add-a-soap-endpoint-using-the-java-api}
 
-Ajoutez un point de terminaison SOAP à un service en utilisant l’API Java :
+Ajoutez un point de terminaison SOAP à un service à l’aide de l’API Java :
 
 1. Incluez des fichiers de projet.
 
@@ -296,8 +296,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -331,7 +331,7 @@ La liste suivante spécifie les valeurs de configuration qui sont définies lors
 * **userName**: Nom d’utilisateur utilisé lors de l’appel d’un service de cible à partir du dossier de contrôle. Cette valeur est obligatoire. La valeur par défaut est SuperAdmin.
 * **domainName**: Domaine de l’utilisateur. Cette valeur est obligatoire. La valeur par défaut est DefaultDom.
 * **batchSize**: Nombre de fichiers ou de dossiers à sélectionner par analyse. Utilisez cette valeur pour éviter une surcharge sur le système ; l’analyse simultanée d’un trop grand nombre de fichiers peut entraîner un blocage. La valeur par défaut est 2.   
-* **waitTime**: Durée, en millisecondes, d’attente avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si le temps d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce fichier est récupéré après 59 minutes ou plus. Cet attribut est utile pour s’assurer qu’un fichier ou un dossier est entièrement copié dans le dossier input. Par exemple, si vous avez un fichier volumineux à traiter et que le téléchargement du fichier prend dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
+* **waitTime**: Durée, en millisecondes, d’attente avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si le temps d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce fichier est récupéré après 59 minutes ou plus. Cet attribut est utile pour s’assurer qu’un fichier ou un dossier est entièrement copié dans le dossier input. Par exemple, si vous devez traiter un fichier volumineux et que le téléchargement du fichier prend dix minutes, définissez le délai d’attente sur 10&amp;amp ; ast ; 60 &amp;amp ; ast ; 1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
 * **excludeFilePattern**: modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers présentant ce modèle ne seront pas analysés en vue de leur traitement. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Le contenu du dossier peut être copié dans un dossier dont le nom sera choisi par le dossier de contrôle. Cette étape empêche le dossier de contrôle de sélectionner un dossier à traiter avant que le dossier ne soit complètement copié dans le dossier d’entrée. For example, if the excludeFilePattern value is `data*`, all files and folders that match `data*` are not picked up. This includes files and folders named `data1`, `data2`, and so on. En outre, le modèle peut être complété par des modèles génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
 * **includeFilePattern**: modèle utilisé par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. For example, if this value is `*`, all files and folders that match `input*` are picked up. This includes files and folders named `input1`, `input2`, and so on. La valeur par défaut est `*`. Cette valeur indique tous les fichiers et dossiers. En outre, le modèle peut être complété par des modèles génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières. Cette valeur est obligatoire.
 * **resultFolderName**: dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d&#39;accès absolu ou relatif au répertoire. Si les résultats ne se trouvent pas dans ce dossier, vérifiez le dossier failure. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier de résultats dans le dossier de contrôle.
@@ -420,7 +420,7 @@ Ajoutez un point de terminaison Watched Folder à l’aide de l’API Java AEM F
 
    >[!NOTE]
    >
-   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument, reportez-vous à l’exemple de code Java situé dans [QuickStart : Ajouter un point de terminaison Watched Folder à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)Java.
+   >Pour afficher toutes les valeurs de configuration définies pour le service EncryptDocument, reportez-vous à l’exemple de code Java situé dans [QuickStart : Ajoute d’un point de terminaison Watched Folder à l’aide de l’API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)Java.
 
 1. Définissez les valeurs des paramètres d’entrée.
 
@@ -498,7 +498,7 @@ Le [QuickStart : Ajouter un point de terminaison Watched Folder à l’aide de l
 
 Vous pouvez ajouter par programmation un point de terminaison de courrier électronique à un service en utilisant l’API Java AEM Forms. En ajoutant un point de fin Courrier électronique, vous permettez aux utilisateurs d’envoyer un message électronique contenant une ou plusieurs pièces jointes à un compte de messagerie spécifié. Ensuite, l’opération de configuration du service est appelée et manipule les fichiers. Une fois que le service a effectué l’opération spécifiée, il envoie à l’expéditeur un message électronique contenant les fichiers modifiés en tant que pièces jointes.
 
-Pour ajouter par programmation un point de fin de courrier électronique à un service, tenez compte du processus de courte durée suivant, *MyApplication\EncryptDocument*. Pour plus d’informations sur les processus de courte durée, voir [Présentation des processus](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
+Pour ajouter par programmation un point de fin de courrier électronique à un service, tenez compte du processus de courte durée suivant, *MyApplication\EncryptDocument*. Pour plus d’informations sur les processus de courte durée, voir [Compréhension des processus](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)AEM Forms.
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -529,8 +529,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -558,7 +558,7 @@ Vous devez spécifier des valeurs de configuration pour un point de terminaison 
 
 Les valeurs de configuration suivantes sont définies lors de l’ajout programmatique d’un point de terminaison E-mail à un service :
 
-* **cronExpression**: expression cron si le courrier électronique doit être planifié à l’aide d’une expression cron.
+* **cronExpression**: Expression cron si le courrier électronique doit être planifié à l’aide d’une expression cron.
 * **repeatCount**: Nombre de fois où le point de terminaison du courrier électronique analyse le dossier ou le répertoire. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 * **repeatInterval**: Taux d&#39;analyse en secondes que le destinataire utilise pour vérifier le courrier entrant. La valeur par défaut est 10.   
 * **startDelay**: Temps d’attente pour l’analyse après les débuts du Planificateur. L’heure par défaut est 0.
@@ -636,7 +636,7 @@ Après avoir créé un point de fin de courrier électronique, vous devez l’ac
 
 ### Ajouter un point de fin de courrier électronique à l’aide de l’API Java {#add-an-email-endpoint-using-the-java-api}
 
-Ajoutez un point de terminaison de courrier électronique à l’aide de l’API Java :
+Ajoutez un point de fin de courrier électronique à l’aide de l’API Java :
 
 1. Incluez des fichiers de projet.
 
@@ -750,9 +750,9 @@ Le [QuickStart : Ajouter un point de terminaison de courrier électronique à l�
 
 >[!NOTE]
 >
->Les API LiveCycle Remoting sont obsolètes pour AEM forms on JEE.
+>API de LiveCycle Remoting obsolètes pour AEM forms on JEE.
 
-Vous pouvez par programmation ajouter un point de terminaison Remoting à un service en utilisant l’API Java AEM Forms. En ajoutant un point de terminaison Remoting, vous activez une application Flex pour appeler le service à distance. (Voir [Appel de AEM Forms à l’aide de AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)(obsolète pour AEM forms).)
+Vous pouvez par programmation ajouter un point de terminaison Remoting à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison Remoting, vous autorisez une application Flex à appeler le service en utilisant la commande Remoting. (Voir [Appel d’AEM Forms à l’aide de AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)(obsolète pour les formulaires AEM).)
 
 Pour ajouter par programmation un point de terminaison Remoting à un service, tenez compte du processus de courte durée suivant, *EncryptDocument*.
 
@@ -784,8 +784,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -861,7 +861,7 @@ Ajoutez un point de terminaison Remoting à l’aide de l’API Java :
 
 ## Ajouter des points de terminaison TaskManager {#adding-taskmanager-endpoints}
 
-Vous pouvez ajouter par programmation un point de terminaison TaskManager à un service en utilisant l’API Java AEM Forms. En ajoutant un point de terminaison TaskManager à un service, vous permettez à un utilisateur de Workspace d’appeler le service. En d’autres termes, un utilisateur travaillant dans Workspace peut appeler un processus qui possède un point de terminaison TaskManager correspondant.
+Vous pouvez ajouter par programmation un point de terminaison TaskManager à un service à l’aide de l’API Java AEM Forms. En ajoutant un point de terminaison TaskManager à un service, vous permettez à un utilisateur de Workspace d’appeler le service. En d’autres termes, un utilisateur travaillant dans Workspace peut appeler un processus qui possède un point de terminaison TaskManager correspondant.
 
 >[!NOTE]
 >
@@ -886,8 +886,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -897,7 +897,7 @@ Avant de pouvoir ajouter par programmation un point de terminaison TaskManager, 
 
 **Création d’une catégorie pour le point de terminaison**
 
-Les Catégories sont utilisées pour organiser les services dans Workspace. En d’autres termes, un utilisateur de Workspace peut appeler un service qui possède un point de terminaison TaskManager en sélectionnant une catégorie dans Workspace. Lors de la création d’un point de terminaison TaskManager, vous pouvez référencer une catégorie existante ou créer une nouvelle catégorie par programmation.
+Les catégories sont utilisées pour organiser les services dans Workspace. En d’autres termes, un utilisateur de Workspace peut appeler un service qui possède un point de terminaison TaskManager en sélectionnant une catégorie dans Workspace. Lors de la création d’un point de terminaison TaskManager, vous pouvez référencer une catégorie existante ou créer une nouvelle catégorie par programmation.
 
 >[!NOTE]
 >
@@ -1007,8 +1007,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1084,7 +1084,7 @@ Modifiez un point de terminaison à l’aide de l’API Java :
 
 ## Suppression de points de terminaison {#removing-endpoints}
 
-Vous pouvez supprimer par programmation un point de terminaison d’un service en utilisant l’API Java AEM Forms. Une fois que vous avez supprimé un point de terminaison, le service ne peut pas être appelé à l’aide de la méthode d’appel activée par le point de terminaison. Par exemple, si vous supprimez un point de terminaison SOAP d’un service, vous ne pouvez pas appeler le service à l’aide du mode SOAP.
+Vous pouvez supprimer par programmation un point de terminaison d’un service à l’aide de l’API Java AEM Forms. Une fois que vous avez supprimé un point de terminaison, le service ne peut pas être appelé à l’aide de la méthode d’appel activée par le point de terminaison. Par exemple, si vous supprimez un point de terminaison SOAP d’un service, vous ne pouvez pas appeler le service à l’aide du mode SOAP.
 
 Pour montrer comment supprimer un point de terminaison d’un service, cette section supprime un point de terminaison EJB d’un service appelé *EncryptDocument*.
 
@@ -1109,8 +1109,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1182,7 +1182,7 @@ Pour montrer comment récupérer des informations sur les connecteurs de point d
 
 >[!NOTE]
 >
->Cette rubrique utilise l’ `ConnectorRegistryClient` API pour récupérer des informations sur les connecteurs de point de terminaison. (Voir Référence [sur les API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
+>Cette rubrique utilise l’ `ConnectorRegistryClient` API pour récupérer des informations sur les connecteurs de point de terminaison. (Voir Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.)
 
 ### Résumé des étapes {#summary_of_steps-8}
 
@@ -1201,10 +1201,10 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss Application Server)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss Application Server)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss Application Server)
 
-Si le AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, remplacez adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel les AEM Forms sont déployés. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge qui n’est pas JBoss, remplacez adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un objet Client ConnectorRegistry**
 
