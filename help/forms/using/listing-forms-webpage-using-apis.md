@@ -21,7 +21,7 @@ ht-degree: 84%
 
 AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points de fin de rendu.
 
-Pour rechercher des formulaires à l’aide de l’API REST, envoyez une requête GET au serveur à l’ `https://'[server]:[port]'/libs/fd/fm/content/manage.json` aide des paramètres de requête décrits ci-dessous.
+Pour rechercher des formulaires à l’aide de l’API REST, envoyez une demande de GET au serveur `https://'[server]:[port]'/libs/fd/fm/content/manage.json` avec les paramètres de requête décrits ci-dessous.
 
 ## Paramètres de requête {#query-parameters}
 
