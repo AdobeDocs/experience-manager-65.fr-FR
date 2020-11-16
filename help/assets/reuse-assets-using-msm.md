@@ -72,7 +72,7 @@ Pour créer des Live Copies à l’aide de la première méthode, procédez comm
 
    ![Création d’une copie dynamique à partir de l’interface du Experience Manager](assets/create_lc1.png)
 
-   *Figure : Créez une copie dynamique à partir de[!DNL Experience Manager]l’interface.*
+   *Figure : Créez une copie dynamique à partir de [!DNL Experience Manager] l’interface.*
 
 1. Sélectionnez un dossier de destination. Cliquez sur **[!UICONTROL Suivant]**.
 1. Indiquez un titre et un nom. Les ressources ne possèdent pas d’enfants. Lorsque vous créez une Live Copy des dossiers, vous pouvez choisir d’inclure ou d’exclure des enfants.
@@ -84,7 +84,7 @@ Pour créer des Live Copies à l’aide de la seconde méthode, procédez comme 
 
    ![Création d’une copie dynamique à partir de l’interface du Experience Manager](assets/create_lc2.png)
 
-   *Figure : Créez une copie dynamique à partir de[!DNL Experience Manager]l’interface.*
+   *Figure : Créez une copie dynamique à partir de [!DNL Experience Manager] l’interface.*
 
 1. Sélectionnez la ressource ou le dossier source. Cliquez sur **[!UICONTROL Suivant]**.
 1. Sélectionnez le dossier de destination. Cliquez sur **[!UICONTROL Suivant]**.
@@ -132,7 +132,7 @@ Pour vérifier les informations et les états d’une ressource ou d’un dossie
 
    ![Affichage des états des Live Copies dans la console Live Copy de la source](assets/livecopy-statuses.png)
 
-   *Figure : Etat des vues des copies dynamiques dans la consoleLive Copy de la source.*
+   *Figure : Etat des vues des copies dynamiques dans la console  Live Copy de la source.*
 
 1. Pour afficher les informations détaillées sur chaque fichier dans le dossier de la copie dynamique, sélectionnez un fichier et cliquez sur **[!UICONTROL État de la relation]** dans la barre d’outils.
 
@@ -278,7 +278,7 @@ Si un dossier de Live Copy comporte plusieurs ressources, il peut être fastidie
 
    ![Mettez facilement à jour de nombreuses ressources dans les dossiers de Live Copy depuis la console Aperçu de la Live Copy](assets/livecopyconsole_update_many_assets.png)
 
-   *Figure : Mettez facilement à jour de nombreux fichiers dans des dossiers de copie dynamique à partir de la console Aperçu[!UICONTROL de]Live Copy.*
+   *Figure : Mettez facilement à jour de nombreux fichiers dans des dossiers de copie dynamique à partir de la console Aperçu [!UICONTROL de] Live Copy.*
 
 ## Extend MSM for [!DNL Assets] {#extendapi}
 
