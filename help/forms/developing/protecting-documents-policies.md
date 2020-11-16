@@ -22,9 +22,9 @@ ht-degree: 4%
 
 **À propos du service de sécurité Document**
 
-Le service Document Security permet aux utilisateurs d’appliquer de manière dynamique des paramètres de confidentialité aux documents PDF Adobe et de conserver un contrôle sur les documents, quelle que soit leur diffusion.
+Le service Document Security permet aux utilisateurs d&#39;appliquer de manière dynamique des paramètres de confidentialité aux documents Adobe PDF et de garder le contrôle sur les documents, quelle que soit leur diffusion.
 
-Le service Document Security empêche la diffusion des informations au-delà de la portée de l’utilisateur en permettant à ce dernier de contrôler la manière dont les destinataires utilisent le document PDF protégé par une stratégie. Un utilisateur peut spécifier qui peut ouvrir un document, comment l’utiliser et contrôler le document une fois distribué. Un utilisateur peut également contrôler dynamiquement l’accès à un document protégé par une stratégie et peut même révoquer dynamiquement l’accès au document.
+Le service Document Security empêche la diffusion des informations au-delà de la portée de l’utilisateur en permettant à ce dernier de contrôler la manière dont les destinataires utilisent le document PDF protégé par une stratégie. Un utilisateur peut spécifier qui peut ouvrir un document, limiter son utilisation et contrôler le document une fois distribué. Un utilisateur peut également contrôler dynamiquement l’accès à un document protégé par une stratégie et peut même révoquer dynamiquement l’accès au document.
 
 Le service Document Security protège également d&#39;autres types de fichiers tels que les fichiers Microsoft Word (fichiers DOC). Vous pouvez utiliser l&#39;API du client Document Security pour utiliser ces types de fichiers. Les versions suivantes sont prises en charge :
 
@@ -44,7 +44,7 @@ Vous pouvez exécuter ces tâches à l’aide du service Document Security :
 * supprimer des stratégies. Pour plus d’informations, voir [Suppression de stratégies](protecting-documents-policies.md#deleting-policies).
 * Appliquer des stratégies aux documents PDF. Pour plus d’informations, voir [Application de stratégies à des Documents](protecting-documents-policies.md#applying-policies-to-pdf-documents)PDF.
 * Supprimez les stratégies des documents PDF. Pour plus d’informations, voir [Suppression de stratégies de Documents](protecting-documents-policies.md#removing-policies-from-pdf-documents)PDF.
-* Inspectez les documents protégés par une stratégie. Pour plus d’informations, voir [Inspection des Documents](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protégés par une stratégie.
+* Documents Inspect protégés par une stratégie. Pour plus d’informations, voir [Inspection des Documents](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)PDF protégés par une stratégie.
 * Révoquer l’accès aux documents PDF. Pour plus d’informations, voir [Révocation de l’accès aux Documents](protecting-documents-policies.md#revoking-access-to-documents).
 * Rétablit l’accès aux documents révoqués. Pour plus d’informations, voir [Rétablissement de l’accès aux Documents](protecting-documents-policies.md#reinstating-access-to-revoked-documents)révoqués.
 * Créez des filigranes. Pour plus d’informations, voir [Création de filigranes](protecting-documents-policies.md#creating-watermarks).
@@ -60,8 +60,8 @@ Vous pouvez créer des stratégies par programmation à l’aide de l’API Java
 
 Les stratégies vous permettent d’effectuer les tâches suivantes :
 
-* Spécifiez les personnes qui peuvent ouvrir le document. Les Destinataires peuvent appartenir à votre organisation ou être externes à celle-ci.
-* Indiquez comment les destinataires peuvent utiliser le document. Vous pouvez restreindre l’accès à différentes fonctions d’Acrobat et d’Adobe Reader. Ces fonctionnalités permettent d’imprimer et de copier du texte, d’ajouter des signatures et d’ajouter des commentaires à un document.
+* Spécifiez les personnes qui peuvent ouvrir le document. Les destinataires peuvent appartenir à votre organisation ou être externes à celle-ci.
+* Indiquez comment les destinataires peuvent utiliser le document. Vous pouvez restreindre l’accès à différentes fonctionnalités Acrobat et Adobe Reader. Ces fonctionnalités permettent d’imprimer et de copier du texte, d’ajouter des signatures et d’ajouter des commentaires à un document.
 * Modifiez les paramètres d’accès et de sécurité à tout moment, même après avoir distribué le document protégé par une stratégie.
 * Surveillez l’utilisation du document après sa distribution. Vous pouvez voir comment le document est utilisé et qui l’utilise. Par exemple, vous pouvez déterminer quand quelqu’un a ouvert le document.
 
@@ -152,17 +152,17 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre projet :
 
 * adobe-rightsmanagement-client.jar
-* espace de nommage.jar (si le AEM Forms est déployé sur JBoss)
-* jaxb-api.jar (si le AEM Forms est déployé sur JBoss)
-* jaxb-impl.jar (si le AEM Forms est déployé sur JBoss)
-* jaxb-libs.jar (si le AEM Forms est déployé sur JBoss)
-* jaxb-xjc.jar (si le AEM Forms est déployé sur JBoss)
-* relaxngDatatype.jar (si le AEM Forms est déployé sur JBoss)
-* xsdlib.jar (si le AEM Forms est déployé sur JBoss)
+* espace de nommage.jar (si AEM Forms est déployé sur JBoss)
+* jaxb-api.jar (si AEM Forms est déployé sur JBoss)
+* jaxb-impl.jar (si AEM Forms est déployé sur JBoss)
+* jaxb-libs.jar (si AEM Forms est déployé sur JBoss)
+* jaxb-xjc.jar (si AEM Forms est déployé sur JBoss)
+* relaxngDatatype.jar (si AEM Forms est déployé sur JBoss)
+* xsdlib.jar (si AEM Forms est déployé sur JBoss)
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
-* jbossall-client.jar (utilisez un fichier JAR différent si le AEM Forms n’est pas déployé sur JBoss)
+* jbossall-client.jar (utilisez un fichier JAR différent si AEM Forms n’est pas déployé sur JBoss)
 
 For information about the location of these JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -203,7 +203,7 @@ Une entrée de stratégie associe des entités, qui sont des groupes et des util
 
 * Créez et enregistrez une entrée de stratégie qui permet à un groupe de ne vue qu&#39;un document en ligne et interdit aux destinataires de la copier.
 * Joignez l’entrée de stratégie à la stratégie.
-* Sécurisez un document avec la stratégie à l’aide d’Acrobat.
+* Sécurisez un document avec la stratégie en utilisant Acrobat.
 
 Ces actions ont pour conséquence que les destinataires ne peuvent que vue en ligne du document et ne peuvent pas le copier. Le document reste sécurisé jusqu&#39;à ce que la sécurité en soit supprimée.
 
@@ -238,9 +238,9 @@ Créez une stratégie à l’aide de l’API Document Security (Java) :
 
    * Créez une entrée de stratégie en appelant la `InfomodelObjectFactory` méthode statique de l’ `createPolicyEntry` objet. Cette méthode renvoie un `PolicyEntry` objet.
    * Spécifiez les autorisations de la stratégie en appelant la méthode statique de l’ `InfomodelObjectFactory` objet `createPermission` . Transmettez un membre de données statiques qui appartient à l’ `Permission` interface qui représente l’autorisation. Cette méthode renvoie un `Permission` objet. Par exemple, pour ajouter l’autorisation permettant aux utilisateurs de copier des données d’un document PDF protégé par une stratégie, transmettez `Permission.COPY`. (Répétez cette étape pour chaque autorisation d’ajout).
-   * Ajoutez l’autorisation d’accès à l’entrée de stratégie en appelant la `PolicyEntry` méthode de l’ `addPermission` objet et en transmettant l’ `Permission` objet. (Répétez cette étape pour chaque `Permission` objet que vous avez créé).
+   * Ajoutez l’autorisation à l’entrée de stratégie en appelant la `PolicyEntry` méthode de l’ `addPermission` objet et en transmettant l’ `Permission` objet. (Répétez cette étape pour chaque `Permission` objet que vous avez créé).
    * Créez l’entité de sécurité de la stratégie en appelant la `InfomodelObjectFactory` méthode statique de l’ `createSpecialPrincipal` objet. Transmettez un membre de données qui appartient à l’ `InfomodelObjectFactory` objet qui représente l’entité de sécurité. Cette méthode renvoie un `Principal` objet. Par exemple, pour ajouter l’éditeur du document en tant que principal, transmettez `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * Ajoutez l’entité de sécurité à l’entrée de stratégie en appelant la `PolicyEntry` méthode de l’objet et en transmettant l’ `setPrincipal``Principal` objet.
+   * Ajoutez l’entité de sécurité à l’entrée de stratégie en appelant la `PolicyEntry` méthode de l’ `setPrincipal`objet et en transmettant l’ `Principal` objet.
    * Ajoutez l’entrée de stratégie à la stratégie en appelant la `Policy` méthode de l’objet et en transmettant l’ `addPolicyEntry` `PolicyEntry` objet.
 
 1. Enregistrez la stratégie.
@@ -273,12 +273,12 @@ Créez une stratégie à l’aide de l’API Document Security (service Web) :
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -413,12 +413,12 @@ Modifiez une stratégie existante à l’aide de l’API Document Security (serv
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -477,7 +477,7 @@ Avant de pouvoir exécuter par programmation une opération du service Document 
 
 **Supprimer la stratégie**
 
-Pour supprimer une stratégie, vous spécifiez la stratégie à supprimer et le jeu de stratégies auquel elle appartient. L’utilisateur dont les paramètres sont utilisés pour appeler des AEM Forms doit être autorisé à supprimer la stratégie ; dans le cas contraire, une exception se produit. De même, si vous tentez de supprimer une stratégie qui n’existe pas, une exception se produit.
+Pour supprimer une stratégie, vous spécifiez la stratégie à supprimer et le jeu de stratégies auquel elle appartient. L’utilisateur dont les paramètres sont utilisés pour appeler AEM Forms doit être autorisé à supprimer la stratégie ; dans le cas contraire, une exception se produit. De même, si vous tentez de supprimer une stratégie qui n’existe pas, une exception se produit.
 
 ### Suppression de stratégies à l’aide de l’API Java {#delete-policies-using-the-java-api}
 
@@ -516,12 +516,12 @@ Supprimez une stratégie à l’aide de l’API Document Security (service Web) 
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -550,7 +550,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 Vous pouvez appliquer une stratégie à un document PDF afin de sécuriser le document. En appliquant une stratégie à un document PDF, vous restreignez l’accès au document. Vous ne pouvez pas appliquer une stratégie à un document si le document est déjà sécurisé avec une stratégie.
 
-Pendant que le document est ouvert, vous pouvez également restreindre l’accès aux fonctions d’Acrobat et de Adobe Reader, notamment la possibilité d’imprimer et de copier du texte, d’apporter des modifications et d’ajouter des signatures et des commentaires à un document. En outre, vous pouvez révoquer un document PDF protégé par une stratégie lorsque vous ne souhaitez plus que les utilisateurs accèdent au document.
+Pendant que le document est ouvert, vous pouvez également restreindre l’accès aux fonctionnalités Acrobat et Adobe Reader, y compris la possibilité d’imprimer et de copier du texte, d’apporter des modifications et d’ajouter des signatures et des commentaires à un document. En outre, vous pouvez révoquer un document PDF protégé par une stratégie lorsque vous ne souhaitez plus que les utilisateurs accèdent au document.
 
 Vous pouvez contrôler l’utilisation d’un document protégé par une stratégie après l’avoir distribué. C&#39;est-à-dire, vous pouvez voir comment le document est utilisé et qui l&#39;utilise. Par exemple, vous pouvez savoir quand quelqu’un a ouvert le document.
 
@@ -659,7 +659,7 @@ Appliquez une stratégie à un document PDF à l’aide de l’API Document Secu
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
@@ -804,12 +804,12 @@ Supprimez une stratégie d’un document PDF protégé par une stratégie à l�
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -947,12 +947,12 @@ Révoquez l’accès à un document PDF protégé par une stratégie à l’aide
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Création d’un objet API Client de sécurité Document
 
    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1079,12 +1079,12 @@ Rétablissement de l’accès à un document révoqué à l’aide de l’API Do
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1125,7 +1125,7 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 Vous pouvez utiliser l’API Document Security Service (Java et service Web) pour inspecter les documents PDF protégés par une stratégie. L’inspection des documents PDF protégés par une stratégie renvoie des informations sur le document PDF protégé par une stratégie. Vous pouvez, par exemple, déterminer la stratégie utilisée pour sécuriser le document et la date à laquelle le document a été sécurisé.
 
-Vous ne pouvez pas effectuer cette tâche si votre version de LiveCycle est 8.x ou une version antérieure. La prise en charge de l’inspection des documents protégés par une stratégie est ajoutée en AEM Forms. Si vous tentez d’inspecter un document protégé par une stratégie à l’aide de LiveCycle 8.x (ou version antérieure), une exception est générée.
+Vous ne pouvez pas effectuer cette tâche si votre version de LiveCycle est 8.x ou une version antérieure. La prise en charge de l’inspection des documents protégés par une stratégie est ajoutée à AEM Forms. Si vous tentez d’inspecter un document protégé par une stratégie à l’aide de LiveCycle 8.x (ou version antérieure), une exception est générée.
 
 >[!NOTE]
 >
@@ -1152,7 +1152,7 @@ Avant de pouvoir exécuter par programmation une opération du service Document 
 
 Pour inspecter un document protégé par une stratégie, récupérez-le. Si vous tentez d’inspecter un document non sécurisé avec une stratégie ou révoqué, une exception est générée.
 
-**Inspecter le document**
+**Inspect, le document**
 
 Après avoir récupéré un document protégé par une stratégie, vous pouvez l’inspecter.
 
@@ -1170,9 +1170,9 @@ Si le document est sécurisé à l’aide d’une stratégie contenue dans un je
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Inspecter les Documents PDF protégés par une stratégie à l’aide de l’API Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
+### Documents PDF protégés par une stratégie Inspect à l’aide de l’API Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
 
-Inspectez un document PDF protégé par une stratégie à l’aide de l’API Document Security Service (Java) :
+Inspect un document PDF protégé par une stratégie à l’aide de l’API Document Security Service (Java) :
 
 1. Incluez des fichiers de projet.
 
@@ -1188,10 +1188,10 @@ Inspectez un document PDF protégé par une stratégie à l’aide de l’API Do
    * Créez un `java.io.FileInputStream` objet représentant le document PDF protégé par une stratégie à l’aide de son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
-1. Inspectez le document.
+1. Inspect le document.
 
    * Créez un `DocumentManager` objet en appelant la `RightsManagementClient` méthode de l’ `getDocumentManager` objet.
-   * Inspectez le document protégé par une stratégie en appelant la `LicenseManager` méthode de l’ `inspectDocument` objet. Transmettez l’ `com.adobe.idp.Document` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `RMInspectResult` objet contenant des informations sur le document protégé par une stratégie.
+   * Inspect le document protégé par une stratégie en appelant la `LicenseManager` méthode de l’ `inspectDocument` objet. Transmettez l’ `com.adobe.idp.Document` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `RMInspectResult` objet contenant des informations sur le document protégé par une stratégie.
 
 1. Obtenez des informations sur le document protégé par une stratégie.
 
@@ -1203,9 +1203,9 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 * &quot;Début rapide (mode SOAP) : Contrôle des documents PDF protégés par une stratégie à l’aide de l’API Java&quot;
 
-### Inspecter les Documents PDF protégés par une stratégie à l’aide de l’API du service Web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
+### Documents PDF protégés par une stratégie Inspect à l’aide de l’API du service Web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
-Inspectez un document PDF protégé par une stratégie à l’aide de l’API Document Security Service (service Web) :
+Inspect un document PDF protégé par une stratégie à l’aide de l’API Document Security Service (service Web) :
 
 1. Incluez des fichiers de projet.
 
@@ -1213,12 +1213,12 @@ Inspectez un document PDF protégé par une stratégie à l’aide de l’API Do
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1237,9 +1237,9 @@ Inspectez un document PDF protégé par une stratégie à l’aide de l’API Do
    * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` méthode de l’ `Read` objet. Passez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
 
-1. Inspectez le document.
+1. Inspect le document.
 
-   Inspectez le document protégé par une stratégie en appelant la `RightsManagementServiceClient` méthode de l’ `inspectDocument` objet. Transmettez l’ `BLOB` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `RMInspectResult` objet contenant des informations sur le document protégé par une stratégie.
+   Inspect le document protégé par une stratégie en appelant la `RightsManagementServiceClient` méthode de l’ `inspectDocument` objet. Transmettez l’ `BLOB` objet contenant le document PDF protégé par une stratégie. Cette méthode renvoie un `RMInspectResult` objet contenant des informations sur le document protégé par une stratégie.
 
 1. Obtenez des informations sur le document protégé par une stratégie.
 
@@ -1433,12 +1433,12 @@ Créez un filigrane à l’aide de l’API Document Security (service Web) :
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1580,12 +1580,12 @@ Modifiez un filigrane à l’aide de l’API Document Security (service Web) :
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1620,16 +1620,16 @@ Pour obtenir des exemples de code à l’aide du service Document Security, repo
 
 ## Recherche de Événements {#searching-for-events}
 
-Le service Rights Management effectue le suivi des actions spécifiques à mesure qu’elles se produisent, telles que l’application d’une stratégie à un document, l’ouverture d’un document protégé par une stratégie et la révocation de l’accès aux documents. Le contrôle des Événements doit être activé pour le service Rights Management ou les événements ne sont pas suivis.
+Le service de Rights Management effectue le suivi d’actions spécifiques à mesure qu’elles se produisent, telles que l’application d’une stratégie à un document, l’ouverture d’un document protégé par une stratégie et la révocation de l’accès aux documents. Le contrôle des événements doit être activé pour le service de Rights Management ou les événements ne sont pas suivis.
 
-Les Événements tombent dans l’une des catégories suivantes :
+Les événements tombent dans l’une des catégories suivantes :
 
 * Les événements d’administrateur sont des actions liées à un administrateur, telles que la création d’un nouveau compte d’administrateur.
-* Les événements de Document sont des actions liées à un document, telles que la fermeture d’un document protégé par une stratégie.
+* Les événements de document sont des actions liées à un document, telles que la fermeture d’un document protégé par une stratégie.
 * Les événements de stratégie sont des actions liées à une stratégie, telles que la création d’une nouvelle stratégie.
 * Les événements de service sont des actions liées au service Rights Management, telles que la synchronisation avec l’annuaire d’utilisateurs.
 
-Vous pouvez rechercher des événements spécifiques à l’aide de l’API Java de Rights Management ou de l’API de service Web. En recherchant des événements, vous pouvez effectuer des tâches, comme la création d’un fichier journal de certains événements.
+Vous pouvez rechercher des événements spécifiques en utilisant l’API Java Rights Management ou l’API de service Web. En recherchant des événements, vous pouvez effectuer des tâches, comme la création d’un fichier journal de certains événements.
 
 >[!NOTE]
 >
@@ -1637,7 +1637,7 @@ Vous pouvez rechercher des événements spécifiques à l’aide de l’API Java
 
 ### Résumé des étapes {#summary_of_steps-10}
 
-Pour rechercher un événement Rights Management, procédez comme suit :
+Pour rechercher un événement de Rights Management, procédez comme suit :
 
 1. Incluez des fichiers de projet.
 1. Créez un objet API Client Rights Management.
@@ -1650,7 +1650,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Création d’un objet API Client Rights Management**
 
-Avant de pouvoir exécuter une opération de service Rights Management par programmation, vous devez créer un objet client de service Rights Management. Si vous utilisez l’API Java, créez un `DocumentSecurityClient` objet. Si vous utilisez l’API du service Web Rights Management, créez un `DocumentSecurityServiceService` objet.
+Avant de pouvoir exécuter une opération de service de Rights Management par programmation, vous devez créer un objet client de service de Rights Management. Si vous utilisez l’API Java, créez un `DocumentSecurityClient` objet. Si vous utilisez l’API du service Web Rights Management, créez un `DocumentSecurityServiceService` objet.
 
 **Spécifiez les événements à rechercher**
 
@@ -1658,7 +1658,7 @@ Vous devez spécifier le événement à rechercher. Vous pouvez, par exemple, re
 
 **Rechercher le événement**
 
-Après avoir spécifié le événement à rechercher, vous pouvez utiliser l’API Java de Rights Management ou l’API du service Web Rights Management pour rechercher le événement.
+Après avoir spécifié le événement à rechercher, vous pouvez utiliser l’API Java Rights Management ou l’API du service Web Rights Management pour rechercher le événement.
 
 **Voir également**
 
@@ -1694,13 +1694,13 @@ Recherchez des événements à l’aide de l’API Rights Management (Java) :
 
 **Exemples de code**
 
-Pour obtenir des exemples de code à l’aide du service Rights Management, voir les Débuts rapides suivants :
+Pour obtenir des exemples de code à l’aide du service Rights Management, reportez-vous aux Débuts rapides suivants :
 
 * &quot;Début rapide (SOAP) : Recherche de événements à l’aide de l’API Java&quot;
 
 ### Rechercher des événements à l’aide de l’API du service Web {#search-for-events-using-the-web-service-api}
 
-Recherchez des événements à l’aide de l’API Rights Management (service Web) :
+Recherchez des événements à l’aide de l’API du Rights Management (service Web) :
 
 1. Inclure les fichiers de projet
 
@@ -1708,12 +1708,12 @@ Recherchez des événements à l’aide de l’API Rights Management (service We
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Création d’un objet API Client Rights Management
 
    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -1938,7 +1938,7 @@ Recherchez des événements à l’aide de l’API Rights Management (service We
 
 **Exemples de code**
 
-Pour obtenir des exemples de code à l’aide du service Rights Management, voir les Débuts rapides suivants :
+Pour obtenir des exemples de code à l’aide du service Rights Management, reportez-vous aux Débuts rapides suivants :
 
 * &quot;Début rapide (MTOM) : Recherche de événements à l’aide de l’API du service Web&quot;
 * &quot;Quick Début (SwaRef) : Recherche de événements à l’aide de l’API du service Web&quot;
@@ -2053,12 +2053,12 @@ Appliquez une stratégie à un document Word à l’aide de l’API Document Sec
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API Client de sécurité Document.
 
    * Create a `DocumentSecurityServiceClient` object by using its default constructor.
-   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `DocumentSecurityServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `DocumentSecurityServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -2197,12 +2197,12 @@ Supprimez une stratégie d’un document Word protégé par une stratégie à l�
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Création d’un objet API Client de sécurité Document
 
    * Create a `RightsManagementServiceClient` object by using its default constructor.
-   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Create a `RightsManagementServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `RightsManagementServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
