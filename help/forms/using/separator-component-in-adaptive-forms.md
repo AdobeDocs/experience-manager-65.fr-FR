@@ -10,6 +10,9 @@ discoiquuid: a8aa77fe-5880-4c4e-9e1b-3c5a8772c29d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 85%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
 Vous pouvez utiliser le composant Separator pour isoler visuellement les volets d’un formulaire. Vous pouvez définir l’aspect général et le style d’un composant Separator en spécifiant les propriétés suivantes du composant :
 
 * **Nom d’élément :** spécifie le nom du composant. L’expression SOM intègre au composant la valeur spécifiée dans le champ de nom d’élément.
-* **** Epaisseur : Indique l’épaisseur du composant de séparateur en pixels.
+* **Epaisseur :** Indique l’épaisseur du composant de séparateur en pixels.
 
 * **Classe CSS :** spécifie la classe CSS personnalisée pour le composant de séparateur
 
 * **Styles en ligne :** avec AEM Forms, vous pouvez désormais appliquer des styles CSS en ligne à chaque composant de formulaire adaptatif et prévisualiser les modifications en temps réel.
 
-Vous pouvez utiliser le mode Disposition pour définir le nombre de colonnes auquel s’étend le composant Separator. Pour plus d’informations, voir [Utilisation du mode Disposition pour redimensionner des composants](../../forms/using/resize-using-layout-mode.md).
+Vous pouvez utiliser le mode Disposition pour définir le nombre de colonnes auxquelles s’étend le composant Separator. Pour plus d’informations, voir [Utilisation du mode Mise en page pour redimensionner des composants](../../forms/using/resize-using-layout-mode.md).
 
 Pour définir les propriétés d’un composant de séparateur :
 
