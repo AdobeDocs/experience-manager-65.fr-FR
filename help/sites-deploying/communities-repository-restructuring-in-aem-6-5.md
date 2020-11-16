@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 translation-type: tm+mt
 source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 60%
 
 ---
 
 
 # Restructuration des référentiels pour AEM Communities dans la version 6.5 {#repository-restructuring-for-aem-communities-in}
 
-As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Communities Solution. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Communities Solution. Certaines modifications nécessitent un effort de travail pendant le processus de mise à niveau AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avec la mise à niveau vers la version 6.5**
 
@@ -97,7 +100,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td>Une tâche de migration différée est disponible pour nettoyer les configurations de Communities.<br /> <p>La tâche déplace les mots-clés <code>/etc/watchwords</code> vers <code>/conf/global/settings/community/watchwords</code>.</p> <p>If customized watchwords are stored in SCM, then they should be deployed to <code>/apps/settings/...</code> and you must ensure that there is not an overlaying <code>/conf/global/settings/...</code> configuration that would take precedence.</p> <p>Migration task removes <code>/etc</code> locations.</p> </td>
+   <td>Une tâche de migration différée est disponible pour nettoyer les configurations de Communities.<br /> <p>La Tâche déplace les mots-clés <code>/etc/watchwords</code> vers <code>/conf/global/settings/community/watchwords</code>.</p> <p>If customized watchwords are stored in SCM, then they should be deployed to <code>/apps/settings/...</code> and you must ensure that there is not an overlaying <code>/conf/global/settings/...</code> configuration that would take precedence.</p> <p>Migration task removes <code>/etc</code> locations.</p> </td>
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
@@ -338,7 +341,7 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr>
   <tr>
    <td><strong>Notes</strong></td>
-   <td>Les modèles personnalisés existants se déplaceraient vers <code>/conf/global/settings/community/template/&lt;groups/sites/functions&gt;</code></td>
+   <td>Les modèles personnalisés existants seront déplacés vers <code>/conf/global/settings/community/template/&lt;groups/sites/functions&gt;</code></td>
   </tr>
  </tbody>
 </table>
