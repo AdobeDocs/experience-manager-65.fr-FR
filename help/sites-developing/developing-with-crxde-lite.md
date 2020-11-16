@@ -25,12 +25,12 @@ Cette section explique comment développer votre application AEM à l’aide de 
 
 Reportez-vous à la documentation de présentation pour plus d’informations sur les différents environnements de développement disponibles.
 
-CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur. CRXDE Lite vous permet de créer un projet, de créer et de modifier des fichiers (tels que .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des noeuds, des propriétés et des lots lors de la journalisation.
+CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur. Avec CRXDE Lite, vous pouvez créer un projet, créer et modifier des fichiers (tels que .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des noeuds, des propriétés et des lots lors de la journalisation.
 CRXDE Lite est recommandé si vous ne disposez pas d’un accès direct au serveur AEM, lorsque vous développez une application en étendant ou modifiant les composants prêts à l’emploi et les bundles Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la complétion de code et de la mise en surbrillance de la syntaxe.
 
 >[!NOTE]
 >
->A partir d’AEM 6.5.5.0, l’accès anonyme à CRXDE Lite n’est plus possible.
+>A partir de AEM 6.5.5.0, l&#39;accès anonyme du CRXDE Lite n&#39;est plus possible.
 >Les utilisateurs sont redirigés vers l’écran de connexion.
 
 
