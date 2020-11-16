@@ -12,6 +12,9 @@ discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 76%
 
 ---
 
@@ -33,6 +36,7 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 >
 >* 3.x is configured with [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x is configured with [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -75,6 +79,7 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
 
    * **ID de membre**
    * **Numéro de compte**
+
    >[!NOTE]
    >
    >In order to get this information **yourself,** first you need to log into
@@ -90,15 +95,15 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
    >
    >**Où :**
    >
-   >    * **XXXXXXXX** correspond à votre ID de membre****
-   >    * **spYYYYYYYYYY** correspond à votre numéro de **compte**
+   >    * **XXXXXXXX** correspond à votre ** ID de membre**
+   >    * **spYYYYYYYYYYY** correspond à votre numéro de **compte**
 
 
 1. Cliquez sur **Connexion à Search&amp;Promote**.
 
    Lorsque le message de réussite de la connexion apparaît, cliquez sur **OK**.
 
-   (Après la connexion, le texte du bouton devient** Se reconnecter à Search&amp;Promote***.)
+   (Après la connexion, le texte du bouton devient ** Se reconnecter à un Search &amp; Promote**.)
 
 1. Cliquez sur **OK**. La page Paramètres Search&amp;Promote s’affiche pour la configuration que vous venez de créer.
 
@@ -147,7 +152,7 @@ Lorsque vous configurez les propriétés Search&amp;Promote d’une page, toutes
 
 ## Flux de produit {#product-feed}
 
-L’intégration de Search&amp;Promote vous permet d’effectuer les opérations suivantes :
+L’intégration de Search &amp; Promote vous permet d’effectuer les opérations suivantes :
 
 * d’utiliser l’API eCommerce, indépendamment de la structure de référentiel et de la plateforme de commerce sous-jacentes ;
 * de tirer parti de la fonction de connecteur d’index de Search&amp;Promote pour constituer un flux de produit au format XML ;
