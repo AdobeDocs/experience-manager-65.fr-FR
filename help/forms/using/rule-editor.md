@@ -576,7 +576,7 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
 
 * **Syntaxe du type**de retour : 
 Vous pouvez également utiliser une `@return {type}`autre solution, `@returns {type}`.
-ajoute des informations sur la fonction, telles que son objectif.
+Ajoute des informations sur la fonction, telles que son objectif.
 {type} représente le type de retour de la fonction. Les types de retour autorisés sont les suivants : 
 
    1. chaîne
