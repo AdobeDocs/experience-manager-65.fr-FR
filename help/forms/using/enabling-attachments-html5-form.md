@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 translation-type: tm+mt
 source-git-commit: 00e14be8a0775149b3ee7ce8cd781dd7f1e49e4f
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 00e14be8a0775149b3ee7ce8cd781dd7f1e49e4f
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
 1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec la propriété de chaîne à choix multiple `mfAttachmentOptions`.
-1. In the custom profile, specify properties `fileSizeLimit`, `multiSelect`, and `buttonTex`t to configure options of the file attachment widget. Si nécessaire, vous pouvez également spécifier d’autres propriétés personnalisées.
+1. In the custom profile, specify properties `fileSizeLimit`, `multiSelect`, and `buttonTex`t to configure options of the file attachment widget. Si nécessaire, vous pouvez également spécifier davantage de propriétés personnalisées.
 
 1. Dans le profil personnalisé, utilisez les configurations suivantes :
 
@@ -27,6 +30,7 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
    * **fileSizeLimit** -> value_in_mb (par exemple 5) (2 Mo par défaut)
    * **buttonText** -> Texte du bouton pour la fenêtre contextuelle (&quot;Joindre&quot; par défaut)
    * **accept** -> types de fichiers à accepter (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; par défaut)
+
    >[!NOTE]
    >
    >Microsoft Internet Explorer 9 permet aux utilisateurs de joindre un fichier plus volumineux que la limite spécifiée. Il s’agit d’un problème connu.
