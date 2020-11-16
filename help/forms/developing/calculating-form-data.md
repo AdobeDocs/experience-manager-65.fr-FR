@@ -30,7 +30,7 @@ L’utilisateur saisit des valeurs dans le formulaire et clique sur le bouton Ca
 * L’utilisateur accède à une page HTML nommée StartLoan.html qui fait office de page de début de l’application Web. Cette page appelle une servlet Java nommée `GetLoanForm`.
 * La `GetLoanForm` servlet génère un formulaire de prêt. Ce formulaire contient un script, des champs interactifs, un bouton Calculer et un bouton Envoyer.
 * L’utilisateur saisit des valeurs dans les champs du formulaire et clique sur le bouton Calculer. Le formulaire est envoyé au servlet `CalculateData` Java où le script est exécuté. Le formulaire est renvoyé à l’utilisateur avec les résultats de calcul affichés dans le formulaire.
-* L’utilisateur continue à saisir et à calculer les valeurs jusqu’à ce qu’un résultat satisfaisant s’affiche. Lorsque l’utilisateur est satisfait, il clique sur le bouton Envoyer pour traiter le formulaire. Le formulaire est envoyé à un autre servlet Java nommé `ProcessForm` qui est chargé de récupérer les données envoyées. (Voir [Gestion des formulaires](/help/forms/developing/rendering-forms.md#handling-submitted-forms)envoyés.)
+* L’utilisateur continue à saisir et à calculer les valeurs jusqu’à ce qu’un résultat satisfaisant s’affiche. Lorsque l’utilisateur est satisfait, il clique sur le bouton Envoyer pour traiter le formulaire. Le formulaire est envoyé à un autre servlet Java nommé `ProcessForm` qui est chargé de récupérer les données envoyées. (Voir [Gestion des Forms](/help/forms/developing/rendering-forms.md#handling-submitted-forms)envoyés.)
 
 
 Le diagramme suivant illustre le flux logique de l’application.
@@ -99,7 +99,7 @@ Dans cette conception de formulaire, le bouton Calculer est un bouton de command
 Pour calculer les données de formulaire, effectuez les tâches suivantes :
 
 1. Incluez des fichiers de projet.
-1. Créez un objet API du client Forms.
+1. Créez un objet API Client Forms.
 1. Récupérez un formulaire contenant un script de calcul.
 1. Réécriture du flux de données de formulaire dans le navigateur Web client
 
@@ -107,15 +107,15 @@ Pour calculer les données de formulaire, effectuez les tâches suivantes :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Création d’un objet API du client Forms**
+**Création d’un objet API Client Forms**
 
-Avant de pouvoir exécuter par programmation une opération d’API Client de service Forms, vous devez créer un client de service Forms. Si vous utilisez l’API Java, créez un `FormsServiceClient` objet. Si vous utilisez l’API du service Web de Forms, créez un `FormsServiceService` objet.
+Avant de pouvoir exécuter par programmation une opération d’API Client de service Forms, vous devez créer un client de service Forms. Si vous utilisez l’API Java, créez un `FormsServiceClient` objet. Si vous utilisez l’API du service Web Forms, créez un `FormsServiceService` objet.
 
 **Récupération d’un formulaire contenant un script de calcul**
 
-Utilisez l’API Client du service Forms pour créer une logique d’application qui gère un formulaire contenant un script configuré pour s’exécuter sur le serveur. Le processus est similaire à la gestion d’un formulaire envoyé. (Voir [Gestion des formulaires](/help/forms/developing/handling-submitted-forms.md)envoyés.)
+Vous utilisez l’API Client du service Forms pour créer une logique d’application qui gère un formulaire contenant un script configuré pour s’exécuter sur le serveur. Le processus est similaire à la gestion d’un formulaire envoyé. (Voir [Gestion des Forms](/help/forms/developing/handling-submitted-forms.md)envoyés.)
 
-Vérifiez que l’état de traitement associé au formulaire envoyé est `1``(Calculate)`le cas, ce qui signifie que le service Forms effectue une opération de calcul sur les données du formulaire et que les résultats doivent être consignés à l’utilisateur. Dans ce cas, un script configuré pour s’exécuter sur le serveur est exécuté automatiquement.
+Vérifiez que l’état de traitement associé au formulaire envoyé est `1``(Calculate)`le cas, ce qui signifie que le service Forms effectue une opération de calcul sur les données du formulaire et que les résultats doivent être renvoyés à l’utilisateur. Dans ce cas, un script configuré pour s’exécuter sur le serveur est exécuté automatiquement.
 
 **Réécriture du flux de données de formulaire dans le navigateur Web client**
 
@@ -124,7 +124,7 @@ Une fois que vous avez vérifié l’état de traitement associé à un formulai
 **Voir aussi**
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Calculer les données de formulaire à l’aide de l’API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Java Calculer les données de formulaire à l’aide de l’API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[du service Web Définition des propriétés de connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)[API du service Forms Débuts](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Rendu de PDF forms interactifsCréation d’Applications web renvoyant des formulaires[](/help/forms/developing/rendering-interactive-pdf-forms.md)[](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Calculer les données de formulaire à l’aide de l’API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Java Calculer les données de formulaire à l’aide de l’API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[du service Web Définition des propriétés](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)[de connexion Débuts](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)Rendu des PDF forms interactifsCréation d’Applications web qui génèrent des Forms[](/help/forms/developing/rendering-interactive-pdf-forms.md)[](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcul des données de formulaire à l’aide de l’API Java {#calculate-form-data-using-the-java-api}
 
@@ -134,7 +134,7 @@ Calculez les données de formulaire à l’aide de l’API Forms (Java) :
 
    Incluez des fichiers JAR client, tels que adobe-forms-client.jar, dans le chemin de classe de votre projet Java.
 
-1. Création d’un objet API du client Forms
+1. Création d’un objet API Client Forms
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Create an `FormsServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
@@ -177,7 +177,7 @@ Calculez les données de formulaire à l’aide de l’API Forms (service Web) :
    * Créez des classes de proxy Java qui utilisent le WSDL du service Forms.
    * Incluez les classes proxy Java dans votre chemin de classe.
 
-1. Création d’un objet API du client Forms
+1. Création d’un objet API Client Forms
 
    Créez un `FormsService` objet et définissez des valeurs d’authentification.
 
@@ -216,4 +216,4 @@ Calculez les données de formulaire à l’aide de l’API Forms (service Web) :
    * Créez un tableau d’octets et remplissez-le en appelant la `BLOB` `getBinaryData` méthode de l’objet. Cette tâche affecte le contenu de l’ `FormsResult` objet au tableau d’octets.
    * Appelez la méthode `javax.servlet.http.HttpServletResponse` de l’objet `write` pour envoyer le flux de données du formulaire au navigateur Web client. Transférez le tableau d’octets à la `write` méthode.
 
-**Voir aussi**[Appel de AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Voir aussi**[Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
