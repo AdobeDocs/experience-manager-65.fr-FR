@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +27,7 @@ HTML5 forms prend en charge les clauses d’image XFA pour afficher la valeur et
 
 >[!NOTE]
 >
->Mobile Forms ne prend actuellement pas en charge la clause de modification de l’image. En outre, les symboles de clause DateTime et Image d’heure ne sont pas pris en charge.
+>Mobile Forms ne prend actuellement pas en charge la clause de modification de l’image. En outre, les symboles de clause DateTime et Image horaire ne sont pas pris en charge.
 
 ## Symboles de champ date pris en charge {#supported-date-field-symbols}
 
