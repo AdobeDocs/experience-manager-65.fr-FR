@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
 source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
+workflow-type: tm+mt
+source-wordcount: '606'
+ht-degree: 67%
 
 ---
 
@@ -30,6 +33,7 @@ Pour configurer cela :
    * Spécifiez un **Titre**.
    * Vous pouvez éventuellement spécifier le **Nom**, pour le nœud qui stocke les détails de la structure dans le référentiel.
    * Select **Adobe Analytics Classifications**
+
    puis cliquez sur **Créer**.
 
    ![Boîte de dialogue Créer une structure](assets/aa-25.png)
@@ -46,7 +50,7 @@ Pour configurer cela :
    | Remplacer en cas de conflit | Sélectionnez **Oui** pour remplacer toute collision de données. Par défaut, cette option est définie sur **Non**. |
    | Suppression traitée | Si elle est définie sur **Oui**, supprime les nœuds traités après leur exportation. La valeur par défaut est **Faux**. |
    | Description de la tâche d’exportation | Saisissez une description pour la tâche d’Adobe Classifications. |
-   | Message de notification | Entrez une adresse électronique pour la notification des classifications Adobe. |
+   | Message de notification | Entrez une adresse électronique pour la notification des classifications d’Adobes. |
    | Suite de rapports | Saisissez la suite de rapports pour laquelle exécuter la tâche d’importation. |
    | Ensemble de données | Saisissez l’ID de relation de l’ensemble de données pour lequel exécuter la tâche d’importation. |
    | Transformateur | Dans le menu déroulant, sélectionnez une mise en œuvre de transformateur. |
@@ -57,9 +61,9 @@ Pour configurer cela :
 
 ## Modification de la taille des pages {#modifying-page-size}
 
-Les enregistrements sont traités par pages. Par défaut, les classifications Adobe créent des pages d’un format de page de 1 000.
+Les enregistrements sont traités par pages. Par défaut, les classifications d’Adobes créent des pages d’un format de page de 1 000.
 
-Une page peut avoir une taille maximale de 2 5000 par définition dans les classifications Adobe et peut être modifiée à partir de la console Felix. Lors de l’exportation, les classifications Adobe verrouillent le noeud source pour empêcher les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
+Une page peut avoir une taille maximale de 25 000 par définition dans les Classifications d&#39;Adobe et peut être modifiée à partir de la console Felix. Au cours de l’exportation, les classifications d’Adobes verrouillent le noeud source afin d’éviter les modifications simultanées. Le nœud est déverrouillé après l’exportation, en cas d’erreur, ou lorsque la session est fermée.
 
 Pour modifier la taille de page :
 
