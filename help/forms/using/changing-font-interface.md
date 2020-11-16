@@ -31,7 +31,7 @@ Follow the [Generic steps for AEM Forms workspace customization](../../forms/usi
 
 Par exemple, pour remplacer la police du texte de la barre de navigation supérieure par Courier New, procédez comme suit :
 
-1. Connectez-vous à CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Connectez-vous au CRXDE Lite en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Utilisez l’une des méthodes suivantes :
 
    1. Pour modifier la famille de police dans un style existant, ajoutez la ligne suivante dans le fichier newStyle.css sous /apps/ws/css.
