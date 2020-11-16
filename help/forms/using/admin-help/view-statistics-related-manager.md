@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 80%
 
 ---
 
@@ -26,53 +29,53 @@ L’onglet Work Manager affiche les statistiques liées aux éléments de Work M
 
 ### Catégorie {#category}
 
-**** Par défaut : Toutes les tâches auxquelles le client n’a pas affecté de catégorie lors de leur envoi. Ces tâches étant gérées par Work Manager, les états lui appartiennent.
+**Par défaut :** Toutes les tâches auxquelles le client n’a pas affecté de catégorie lors de leur envoi. Ces tâches étant gérées par Work Manager, les états lui appartiennent.
 
-**** Job Manager : Toutes les tâches qui appartiennent à Job Manager. Job Manager gère ses propres tâches et dispose de ses propres états de tâches. Reportez-vous aux états spécifiques des tâches, décrits ci-dessous.
+**Job Manager :** Toutes les tâches qui appartiennent à Job Manager. Job Manager gère ses propres tâches et dispose de ses propres états de tâches. Reportez-vous aux états spécifiques des tâches, décrits ci-dessous.
 
-**** Workflow : Toutes les tâches qui appartiennent à l’exécution du processus. Workflow ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
+**Workflow :** Toutes les tâches qui appartiennent à l’exécution du flux de travail. Workflow ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
 
-**** Evénements : Toutes les tâches qui appartiennent à la gestion des événements. Gestion des événements ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
+**Événements :** Toutes les tâches qui appartiennent à Événement Management. Gestion des événements ne gère pas ses propres tâches, mais s’appuie sur Work Manager ; les états appartiennent donc à ce dernier.
 
 ### Etat (pour les catégories Par défaut, Workflow ou Evénements uniquement) {#status-for-default-workflow-or-events-categories-only}
 
-**** Afficher tout : Affiche toutes les tâches en cours.
+**Afficher tout :** Affiche toutes les tâches en cours.
 
-**** Planifiée : Affiche toutes les tâches prêtes à être exécutées par le serveur d’applications mais pas encore démarrées.
+**Programmé :** Affiche toutes les tâches prêtes à être exécutées par le serveur d’applications mais pas encore démarrées.
 
-**** En pause : Affiche toutes les tâches planifiées mises en pause par l’application cliente. Elles peuvent être exécutées ou supprimées (voir Gestion des tâches). 
+**En pause :** Affiche toutes les tâches planifiées mises en pause par l’application cliente. Elles peuvent être exécutées ou supprimées (voir Gestion des tâches). 
 
-**** En cours : Affiche toutes les tâches que Work Manager du serveur d’applications a sélectionnées et qui seront terminées ou échoueront. Vous ne pouvez pas utiliser d’opérations sur ces tâches.
+**En cours :** affiche toutes les tâches que Work Manager du serveur d’applications a sélectionnées et qui seront terminées ou échoueront. Vous ne pouvez pas utiliser d’opérations sur ces tâches.
 
-**** Terminé : Affiche toutes les tâches qui ont été exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces tâches en utilisant l’opération Supprimer les éléments (voir Gestion des tâches). 
+**Terminé :** Affiche toutes les tâches qui ont été exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés. Vous pouvez supprimer ces tâches en utilisant l’opération Supprimer les éléments (voir Gestion des tâches). 
 
-**** Échec : Affiche toutes les tâches qui n’ont pas été exécutées correctement en raison d’une condition d’erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
+**Échec :** affiche toutes les tâches qui n’ont pas été exécutées correctement en raison d’une condition d’erreur. Ces tâches peuvent être relancées à plusieurs reprises en utilisant l’opération Essayer de relancer les éléments (voir Gestion des tâches). Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
 
-**** Inconnu : Affiche toutes les tâches dont l’état est inconnu.
+**Inconnu :** Affiche toutes les tâches dont l’état est inconnu.
 
 ### Etat (pour la catégorie Job Manager uniquement) {#status-for-job-manager-category-only}
 
-**** Terminé : Affiche toutes les tâches qui ont été exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés.
+**Terminé :** Affiche toutes les tâches qui ont été exécutées avec succès. Les tâches persistantes restent dans cet état et les tâches non persistantes sont supprimées une fois les rappels vers les gestionnaires de rappel terminés.
 
-**** Terminé demandé : Affiche les tâches pour lesquelles une demande complète a été effectuée.
+**Demande terminée :** Affiche les tâches pour lesquelles une demande complète a été effectuée.
 
-**** Echec de la demande : Affiche les tâches pour lesquelles une demande d’échec a été effectuée.
+**Echec de la demande :** Affiche les tâches pour lesquelles une demande d’échec a été effectuée.
 
-**** Échec : Affiche les tâches qui n’ont pas été exécutées correctement en raison d’une condition d’erreur. Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
+**Échec :** affiche les tâches qui n’ont pas été exécutées correctement en raison d’une condition d’erreur. Un lien Echec dans la colonne Etat vous permet d’accéder à des informations détaillées se rapportant à l’échec.
 
-**** Arrêter la demande : Affiche les tâches pour lesquelles une demande d’arrêt a été effectuée.
+**Arrêter la demande :** Affiche les tâches pour lesquelles une demande d&#39;arrêt a été effectuée.
 
-**** Interrompu : Affiche les tâches qui se sont terminées sans avoir été exécutées.
+**Interrompu :** affiche les tâches qui ont pris fin sans avoir été exécutées.
 
-**** Suspendre la demande : Affiche les tâches pour lesquelles une demande de suspension a été effectuée.
+**Suspendre la demande :** Affiche les tâches pour lesquelles une demande de suspension a été effectuée.
 
-**** Suspendu : Affiche les tâches suspendues.
+**Suspendu :** Affiche les tâches suspendues.
 
-**** Reprise de la demande : Affiche les tâches pour lesquelles une demande de reprise a été effectuée.
+**Reprise de la demande :** Affiche les tâches pour lesquelles une demande de reprise a été effectuée.
 
-**** En file d&#39;attente : Affiche les tâches qui se trouvent dans la file d’attente.
+**En file d&#39;attente :** Affiche les tâches se trouvant dans la file d’attente.
 
-**** En cours : Affiche les tâches en cours d’exécution.
+**En cours :** Affiche les tâches en cours d’exécution.
 
 ### Server Name {#server-name}
 
