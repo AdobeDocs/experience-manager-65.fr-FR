@@ -1,8 +1,8 @@
 ---
-title: Mise en oeuvre d’un composant de réaction pour l’application d’une seule page
-seo-title: Mise en oeuvre d’un composant de réaction pour l’application d’une seule page
-description: Cet article présente un exemple d’adaptation d’un composant Réagir simple et existant pour travailler avec l’éditeur d’applications monopages AEM.
-seo-description: Cet article présente un exemple d’adaptation d’un composant Réagir simple et existant pour travailler avec l’éditeur d’applications monopages AEM.
+title: Mise en oeuvre d’un composant de réaction pour SPA
+seo-title: Mise en oeuvre d’un composant de réaction pour SPA
+description: Cet article présente un exemple d'adaptation d'un composant de réaction simple et existant pour travailler avec AEM SPA Editor.
+seo-description: Cet article présente un exemple d'adaptation d'un composant de réaction simple et existant pour travailler avec AEM SPA Editor.
 uuid: ae6a0a6f-0c3c-4820-9b58-c2a85a9f5291
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,28 +19,28 @@ ht-degree: 11%
 ---
 
 
-# Mise en oeuvre d’un composant de réaction pour l’application d’une seule page{#implementing-a-react-component-for-spa}
+# Mise en oeuvre d’un composant de réaction pour SPA{#implementing-a-react-component-for-spa}
 
 Les applications d’une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
-La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant Réagir simple et existant pour travailler avec l’éditeur d’applications monopages AEM.
+La fonction de création d’application d’une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d&#39;adaptation d&#39;un composant de réaction simple et existant pour travailler avec AEM SPA Editor.
 
 >[!NOTE]
 >
->L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
 
 ## Présentation {#introduction}
 
-Grâce au contrat simple et léger requis par AEM et établi entre le SPA et le SPA Editor, prendre une application Javascript existante et l&#39;adapter pour l&#39;utiliser avec un SPA en AEM est une chose simple.
+Grâce au contrat simple et léger qui est requis par l&#39;AEM et établi entre le SPA et le rédacteur en chef de la SPA, prendre une application Javascript existante et l&#39;adapter pour l&#39;utiliser avec un  en  est une chose simple.
 
-Cet article illustre l&#39;exemple de la composante météorologique de l&#39;exemple d&#39;application d&#39;une seule page d&#39;accueil de Journal We.Retail.
+Cet article illustre l&#39;exemple de la composante météorologique sur l&#39;SPA d&#39;échantillon de Journal We.Retail.
 
-Avant de lire cet article, vous devez connaître la [structure d’une application d’application d’une seule page pour AEM](/help/sites-developing/spa-getting-started-react.md) .
+Avant de lire cet article, vous devez connaître la [structure d’une application SPA pour AEM](/help/sites-developing/spa-getting-started-react.md) .
 
 >[!CAUTION]
 >Ce document utilise l’application [de Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail à des fins de démonstration uniquement. Il ne doit être utilisé pour aucun travail de projet.
 >
->Tout projet AEM doit tirer parti de l’archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets d’application d’une seule page à l’aide de React ou d’Angular et qui utilise le SDK d’application d’une seule page.
+>Tout projet AEM doit tirer parti de l&#39;archétype [de projet](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, qui prend en charge les projets SPA à l&#39;aide de React ou Angular et qui utilise le SDK .
 
 ## La composante météorologique {#the-weather-component}
 
@@ -50,7 +50,7 @@ Le composant météorologique se trouve dans le coin supérieur gauche de l&#39;
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Lors de la création de contenu de l’application d’une seule page dans l’éditeur d’applications monopages, le composant météorologique apparaît sous la forme de tout autre composant AEM, avec une barre d’outils complète, et il est modifiable.
+Lors de la création de contenu du SPA dans l’éditeur de SPA, le composant météorologique s’affiche sous la forme de tout autre composant AEM, avec une barre d’outils complète, et il est modifiable.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
@@ -64,7 +64,7 @@ Le changement est persistant et le composant se met automatiquement à jour avec
 
 ### Mise en oeuvre des composants météorologiques {#weather-component-implementation}
 
-Le composant météorologique est en fait basé sur un composant React disponible au public, appelé [React Open Weather](https://www.npmjs.com/package/react-open-weather), qui a été adapté pour fonctionner en tant que composant dans l&#39;exemple d&#39;application SPA du Journal We.Retail.
+Le composant météorologique est en fait basé sur un composant React disponible au public, appelé [React Open Weather](https://www.npmjs.com/package/react-open-weather), qui a été adapté pour fonctionner comme un composant dans l&#39;application d&#39;exemple SPA de Journal We.Retail.
 
 Voici quelques extraits de la documentation du MNP sur l&#39;utilisation du composant Réagir aux intempéries.
 
@@ -73,7 +73,7 @@ Voici quelques extraits de la documentation du MNP sur l&#39;utilisation du comp
 Vérification du code du composant météorologique personnalisé ( `Weather.js`) dans l&#39;application de Journal We.Retail :
 
 * **Ligne 16**: Le widget Réagir au temps ouvert est chargé selon les besoins.
-* **Ligne 46**: La `MapTo` fonction associe ce composant Réagir à un composant AEM correspondant afin qu’il puisse être modifié dans l’éditeur d’applications monopages.
+* **Ligne 46**: La `MapTo` fonction associe ce composant Réagir à un composant AEM correspondant afin qu’il puisse être modifié dans l’éditeur SPA.
 
 * **Lignes 22 à 29**: Le `EditConfig` est défini, en vérifiant si la ville a été peuplée et en définissant la valeur si elle est vide.
 
@@ -128,8 +128,8 @@ class Weather extends Component {
 MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig);
 ```
 
-Bien qu&#39;un composant principal doive déjà exister, le développeur frontal peut exploiter le composant Réagir aux intempéries dans l&#39;application Web.Retail Journal SPA avec très peu de codage.
+Bien qu&#39;un composant principal doive déjà exister, le développeur frontal peut exploiter le composant Réagir à la météo ouverte dans le Journal We.Retail SPA avec très peu de codage.
 
 ## Étape suivante {#next-step}
 
-Pour plus d’informations sur le développement d’applications monopages pour AEM voir l’article [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md).
+Pour plus d&#39;informations sur le développement de SPA pour AEM voir l&#39;article [Développer des SPA pour les](/help/sites-developing/spa-architecture.md).
