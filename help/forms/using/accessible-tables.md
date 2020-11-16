@@ -21,7 +21,7 @@ ht-degree: 79%
 
 L’implémentation par défaut des tableaux dans les formulaires HTML5 utilise des éléments DIV HTML pour créer le rendu d’un tableau. Le rendu requiert l’utilisation de rôles ARIA pour répondre aux exigences en matière d’accessibilité.
 
-Pour éviter les problèmes d’accessibilité avec les lecteurs d’écran qui ne prennent pas entièrement en charge les rôles ARIA utilisés avec les tableaux de données, les formulaires HTML5 fournissent un rendu alternatif pour les tableaux. Ces tableaux sont basés sur le nouveau format de tableau introduit dans Designer prenant également en charge :
+Pour éviter les problèmes d’accessibilité avec les lecteurs d’écran qui ne prennent pas entièrement en charge les rôles ARIA utilisés avec les tableaux de données, HTML5 Forms fournit un rendu alternatif pour les tableaux. Ces tableaux sont basés sur le nouveau format de tableau introduit dans Designer prenant également en charge :
 
 * les en-têtes de ligne ;
 * l’étendue de ligne.
