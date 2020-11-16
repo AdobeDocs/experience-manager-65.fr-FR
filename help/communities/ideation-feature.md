@@ -1,8 +1,8 @@
 ---
 title: Fonction d’orientation
 seo-title: Fonction d’orientation
-description: Ajoute et configuration de la fonction Idéation
-seo-description: Ajoute et configuration de la fonction Idéation
+description: Ajoute et configuration de la fonction d’orientation
+seo-description: Ajoute et configuration de la fonction d’orientation
 uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -105,7 +105,7 @@ Under the **[!UICONTROL Settings]** tab, specify settings for ideas and comments
 
 * **Types de fichier autorisés**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -163,7 +163,7 @@ Under the **[!UICONTROL User Moderation]** tab, specify how the posted ideas and
 
 * **Marquer les publications**
 
-   Si cette option est cochée, autorisez les membres à signaler les sujets ou commentaires d&#39;autres personnes comme inappropriés. Cette option n’est pas cochée par défaut.
+    Cette option n’est pas cochée par défaut.
 
 * **Marquer la liste de motifs**
 
