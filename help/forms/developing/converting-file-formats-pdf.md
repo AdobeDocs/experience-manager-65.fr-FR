@@ -30,7 +30,7 @@ Le service Generate PDF utilise des applications natives pour convertir les for
 
 >[!NOTE]
 >
->acrobat® 9.2 ou version ultérieure est nécessaire pour convertir le format Microsoft XPS au format PDF.
+>Acrobat® 9.2 ou version ultérieure est nécessaire pour convertir le format Microsoft XPS au format PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 et 2009 pour convertir les fichiers DWF, DWG et DXW (en anglais uniquement)
 * Corel WordPerfect 12 et X4 pour convertir WPD, QPW, SHW (en anglais uniquement)
@@ -40,14 +40,14 @@ Le service Generate PDF utilise des applications natives pour convertir les for
 >
 >le service Generate PDF ne prend pas en charge les versions 64 bits d’OpenOffice.
 
-* adobe photoshop® CS2 pour convertir un fichier PSD (Windows uniquement)
+* Adobe Photoshop® CS2 pour convertir un fichier PSD (Windows uniquement)
 
 >[!NOTE]
 >
 >Photoshop CS3 et CS4 ne sont pas pris en charge car ils ne prennent pas en charge Windows Server 2003 ou Windows Server 2008.
 
-* adobe framemaker® 7.2 et 8 pour convertir des fichiers FM (Windows uniquement)
-* adobe PageMaker® 7.0 pour convertir les formats PMD, PM6, P65 et PM (Windows uniquement)
+* Adobe FrameMaker® 7.2 et 8 pour convertir des fichiers FM (Windows uniquement)
+* Adobe PageMaker® 7.0 pour convertir les formats PMD, PM6, P65 et PM (Windows uniquement)
 * Formats natifs pris en charge par les applications tierces (requiert le développement de fichiers d’installation spécifiques à l’application) (Windows uniquement)
 
 Le service Generate PDF peut convertir les formats standards suivants en PDF.
@@ -562,7 +562,7 @@ Conversion d’un document PDF en fichier RTF à l’aide de l’API Generate PD
 
 [Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## ajouter la prise en charge d’autres formats de fichier natifs {#adding-support-for-additional-native-file-formats}
+## Ajouter la prise en charge d’autres formats de fichier natifs {#adding-support-for-additional-native-file-formats}
 
 Cette section explique comment ajouter la prise en charge de formats de fichier natifs supplémentaires. Il fournit un aperçu des interactions entre le service Generate PDF et les applications natives utilisées par ce service pour convertir des formats de fichier natifs en PDF.
 
@@ -692,7 +692,7 @@ Si le service Generate PDF trouve une correspondance pour la boîte de dialogue,
 
 Si le service Generate PDF rencontre une boîte de dialogue qui n’est décrite dans aucun des fichiers précédemment répertoriés, le service Generate PDF incorpore la légende de la boîte de dialogue dans l’entrée de fichier journal. La tâche en cours d&#39;exécution arrive à expiration. Vous pouvez ensuite utiliser les informations contenues dans le fichier journal pour composer de nouvelles instructions dans le fichier XML de boîte de dialogue supplémentaire pour l’application native.
 
-### ajouter ou modifier la prise en charge d’un format de fichier natif {#adding-or-modifying-support-for-a-native-file-format}
+### Ajouter ou modifier la prise en charge d’un format de fichier natif {#adding-or-modifying-support-for-a-native-file-format}
 
 Cette section décrit les tâches que vous devez effectuer pour prendre en charge d’autres formats de fichier natifs ou pour modifier la prise en charge d’un format de fichier natif déjà pris en charge.
 
@@ -730,9 +730,9 @@ Les fichiers de boîte de dialogue et de script résident dans le fichier appmon
 Après avoir ajouté ces fichiers XML au fichier adobe-appmondata.jar, vous devez redéployer le composant GeneratePDF. Pour ajouter des fichiers XML de boîte de dialogue et de script au fichier adobe-appmondata.jar, effectuez les tâches suivantes :
 
 1. A l’aide d’un outil tel que WinZip ou WinRAR, ouvrez le fichier adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > fichier adobe-appmondata.jar.
-1. ajoutez les fichiers XML de boîte de dialogue et de script dans le fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Création ou modification d’un fichier XML de script pour une](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)application native et [Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)native.)
+1. Ajoutez les fichiers XML de boîte de dialogue et de script dans le fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Création ou modification d’un fichier XML de script pour une](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)application native et [Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)native.)
 1. A l’aide d’un outil tel que WinZip ou WinRAR, ouvrez adobe-generatepdf-dsc.jar > adobe-appmondata.jar.
-1. ajoutez les fichiers XML de boîte de dialogue et de script dans le fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Création ou modification d’un fichier XML de script pour une](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)application native et [Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)native.) Après avoir ajouté les fichiers XML au fichier adobe-appmondata.jar, importez le nouveau fichier adobe-appmondata.jar dans le fichier adobe-generatepdf-dsc.jar.
+1. Ajoutez les fichiers XML de boîte de dialogue et de script dans le fichier appmondata.jar ou modifiez les fichiers XML existants dans ce fichier. (Voir [Création ou modification d’un fichier XML de script pour une](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)application native et [Création ou modification d’un fichier XML de boîte de dialogue supplémentaire pour une application](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)native.) Après avoir ajouté les fichiers XML au fichier adobe-appmondata.jar, importez le nouveau fichier adobe-appmondata.jar dans le fichier adobe-generatepdf-dsc.jar.
 1. Si vous avez ajouté la prise en charge d’un format de fichier natif supplémentaire, créez une variable d’environnement système qui fournit le chemin d’accès de l’application (voir [Création d’une variable d’environnement pour localiser l’application](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)native).
 
 **Pour redéployer le composant GeneratePDF**
@@ -869,7 +869,7 @@ Vous devez classer `windowList` les éléments qui apparaissent en tant qu’enf
 
 Vous pouvez modifier le fichier XML de la boîte de dialogue générale pour répondre aux boîtes de dialogue générées par le système ou pour répondre aux boîtes de dialogue communes à plusieurs applications.
 
-#### ajouter une entrée de type de fichier dans le fichier de configuration XML {#adding-a-filetype-entry-in-the-xml-configuration-file}
+#### Ajouter une entrée de type de fichier dans le fichier de configuration XML {#adding-a-filetype-entry-in-the-xml-configuration-file}
 
 Cette procédure explique comment mettre à jour le fichier de configuration du service Generate PDF pour associer des types de fichiers à des applications natives. Pour mettre à jour ce fichier de configuration, vous devez utiliser Administration Console pour exporter les données de configuration dans un fichier. Le nom de fichier par défaut des données de configuration est native2pdfconfig.xml.
 
@@ -937,7 +937,7 @@ Après avoir créé la nouvelle variable d’environnement, vous devez redémarr
 
 #### Fichiers XML {#xml-files}
 
-aem forms inclut des exemples de fichiers XML qui font en sorte que le service Generate PDF utilise le Bloc-notes pour traiter tous les fichiers portant l’extension .txt du nom de fichier. Ce code est inclus dans cette section. En outre, vous devez apporter les autres modifications décrites dans cette section.
+AEM Forms inclut des exemples de fichiers XML qui font en sorte que le service Generate PDF utilise le Bloc-notes pour traiter tous les fichiers portant l’extension .txt du nom de fichier. Ce code est inclus dans cette section. En outre, vous devez apporter les autres modifications décrites dans cette section.
 
 #### Fichier XML de boîte de dialogue supplémentaire {#additional-dialog-xml-file}
 
