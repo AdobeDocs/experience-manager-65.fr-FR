@@ -50,20 +50,20 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 ## Ressources {#assets}
 
 * **Rechercher :** La recherche n’entraîne aucune valeur renvoyée si la chaîne de recherche contient des espaces de début ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)).
-* **Schéma de métadonnées des dossiers** : après l’ajout d’un bouton de choix, les champs ID et Valeur ne sont pas restitués comme prévu et la fonctionnalité de suppression ne fonctionne pas. (CQ-4261144)
-* Lors de l’attribution d’un nouveau nom à une ressource, il n’est pas possible d’utiliser un espace dans le nom. (CQ-4266403)
+* **Schéma de métadonnées des dossiers** : après l’ajout d’un bouton de choix, les champs ID et Valeur ne sont pas restitués comme prévu et la fonctionnalité de suppression ne fonctionne pas. (CQ-4261144).
+* Lors de l’attribution d’un nouveau nom à une ressource, il n’est pas possible d’utiliser un espace dans le nom. (CQ-4266403).
 
 ## Formulaires {#forms}
 
-* Lorsque le AEM Forms est installé sur le système d’exploitation Linux, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721)
-* (AEM Forms sur WebSphere uniquement) L’option **Forms Workflow**> **Recherche de tâche** ne renvoie aucun résultat si vous recherchez un **Administrateur** avec un **Nom d’utilisateur** comme critère de recherche. (CQ-4266457)
+* Lorsque AEM Forms est installé sur un système d’exploitation Linux, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721).
+* (AEM Forms sur WebSphere uniquement) L’option **Forms Workflow**> **Recherche de tâche** ne renvoie aucun résultat si vous recherchez un **Administrateur** avec un **Nom d’utilisateur** comme critère de recherche. (CQ-4266457).
 
-* Les AEM Forms ne parviennent pas à convertir les fichiers TIF et TIFF avec compression JPEG en Documents PDF. (CQ-4265972)
-* Les options **Analyseur de ressources AEM Forms** et **Migration de la correspondance vers la communication interactive** ne fonctionnent pas sur la page **Migration d’AEM Forms**. (CQ-4266572)
+* AEM Forms ne parvient pas à convertir les fichiers TIF et TIFF avec compression JPEG en Documents PDF. (CQ-4265972).
+* Les options **Analyseur de ressources AEM Forms** et **Migration de la correspondance vers la communication interactive** ne fonctionnent pas sur la page **Migration d’AEM Forms**. (CQ-4266572).
 
-* (JBoss 7 uniquement) Lorsque vous effectuez une mise à niveau d’une version précédente vers AEM 6.5 Forms et que la version précédente contenait des processus (.lca) qui créaient et utilisaient une copie du processus d’envoi ou de rendu par défaut, HTML5 Forms utilisant de tels processus (.lca) n’effectue pas les actions requises. (CQ-4243928)
-* Dans une version adaptative, lorsqu’un service de modèle de données de formulaire est appelé à partir de l’éditeur de règle pour mettre à jour de manière dynamique les valeurs du composant de choix d’image, les valeurs du composant de choix d’image ne sont pas mises à jour. (CQ-4254754)
-* AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668)
+* (JBoss 7 uniquement) Lorsque vous effectuez une mise à niveau d’une version précédente vers AEM 6.5 Forms et que la version précédente contenait des processus (.lca) qui créaient et utilisaient une copie du processus d’envoi ou de rendu par défaut, HTML5 Forms utilisant de tels processus (.lca) n’effectue pas les actions requises. (CQ-4243928).
+* Dans une version adaptative, lorsqu’un service de modèle de données de formulaire est appelé à partir de l’éditeur de règle pour mettre à jour de manière dynamique les valeurs du composant de choix d’image, les valeurs du composant de choix d’image ne sont pas mises à jour. (CQ-4254754).
+* AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668).
 
 * PDF Generator ne prend pas en charge l’authentification par carte à puce.  Lorsqu’un administrateur active la stratégie de groupe `Interactive Logon: Require Smart card` sur un serveur Windows, tous les utilisateurs existants de PDF Generator sont invalidés.
 
@@ -77,6 +77,6 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Multiple : faux
    * Création automatique : False
 
-   La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679)
+   La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679).
 
-* Lorsque le AEM Forms est démarré, l’ `SAX Security Manager could not be setup` avertissement s’affiche.
+* Lorsque AEM Forms est démarré, l’ `SAX Security Manager could not be setup` avertissement s’affiche.
