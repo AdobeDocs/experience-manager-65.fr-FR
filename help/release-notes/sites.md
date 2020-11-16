@@ -31,7 +31,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
    * Déclarations de variables avec un jeu de données :
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Paramètres de contrôle de Liste et de répétition : begin, step, end :
+   * Paramètres de contrôle de liste et de répétition : begin, step, end :
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identifiants pour l&#39;annulation de l&#39;encapsulation des données :
@@ -56,7 +56,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 >[!CAUTION]
 >
->AEM inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
+>aem inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
 
 ## Administration de sites {#site-administration}
 
@@ -95,7 +95,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 * Pour les configurations de déploiement qui utilisent PushOnModify, une meilleure gestion de l’opération de déplacement de page pour éviter des incohérences d’état
 * La création d’une nouvelle page dans la structure de livecopy créera désormais par défaut une page autonome.
-* Utiliser les fonctionnalités MSM dans les applications d’une seule page qui utilisent le SDK JS (également appelé éditeur d’applications monopages)
+* Utilisez les fonctionnalités MSM dans les applications d’une seule page qui utilisent le SDK JS (également appelé SPA Editor).
 
 ## Lancements {#launches}
 
@@ -106,7 +106,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 
 * Le code JavaScript de la couche de données ContextHub et du moteur de règles côté client a été mis à jour pour utiliser jQuery 3 par défaut.
 
-## AEM et Adobe Target {#aem-amp-adobe-target}
+## aem et Adobe Target {#aem-amp-adobe-target}
 
 >[!CAUTION]
 >
@@ -116,12 +116,12 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 * Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
 * `at.js` la version 1.5.0 est désormais incluse. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
 
-## AEM et Adobe Analytics {#aem-amp-adobe-analytics}
+## aem et Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 est inclus. Adobe vous recommande de basculer l’implémentation sur `AppMeasurement.js`
 * `AppMeasurement.js` v1.8.0 est inclus. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
 
-## AEM et commerce {#aem-commerce}
+## aem et commerce {#aem-commerce}
 
 Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
