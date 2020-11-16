@@ -11,6 +11,9 @@ discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 76%
 
 ---
 
@@ -48,7 +51,7 @@ Another (and a more secure) way to call the Create Correspondence application co
 
 | **Nom** | **Type** | **Description** |
 |---|---|---|
-| cmLetterInstanceId | Chaîne | Identifiant de l’instance de lettre. |
+| cmLetterInstanceId | Chaîne | Identificateur de l’instance de lettre. |
 | cmLetterId | Chaîne | Nom du modèle de lettre. |
 
 L’ordre des paramètres du tableau indique la préférence de paramètres utilisés pour le chargement de la lettre.
