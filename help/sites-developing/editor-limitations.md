@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
 source-git-commit: 844d42ed50da153077423190684aa85265bce12f
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 75%
 
 ---
 
@@ -27,11 +30,11 @@ Un auteur peut être confronté aux limites fonctionnelles suivantes lors de l�
 
 When [editing a page](/help/sites-authoring/editing-content.md), links are not active.
 
-* [Passez en mode ****](/help/sites-authoring/editing-content.md#preview-mode) pour naviguer à l’aide des liens de votre contenu.
+* [Passez en mode **** Prévisualisation](/help/sites-authoring/editing-content.md#preview-mode) pour naviguer à l’aide des liens de votre contenu.
 
 ### Pages de structure {#structure-pages}
 
-Impossible de nommer les pages `structure`. Les pages nommées `structure` ne peuvent pas être modifiées dans l’éditeur de page.
+Impossible de nommer les pages `structure`. Les pages nommées `structure` ne seront pas modifiables dans l’éditeur de pages.
 
 ## Limitations CSS {#css-limitations}
 
@@ -45,7 +48,7 @@ Les éléments à positionnement absolu peuvent occasionner des problèmes au ni
 
 ### Unités vh {#vh-units}
 
-`vh` ne sont pas prises en charge, car la hauteur de l’iframe doit être automatiquement ajustée par AEM.
+`vh` ne sont pas prises en charge, car la hauteur de l&#39;iframe doit être automatiquement ajustée par AEM.
 
 ### Images d’arrière-plan fixes {#fixed-background-images}
 
@@ -57,7 +60,7 @@ Il est possible que les images d’arrière-plan fixes ne puissent pas être aff
 
 La hauteur de 100 % n’est pas prise en charge sur l’élément de corps d’une page.
 
-* Une solution de contournement est possible pour implémenter un corps plein écran en &quot;étirant&quot; l’élément de corps comme suit :
+* Une solution de contournement est possible pour mettre en oeuvre un corps plein écran en &quot;étirant&quot; l’élément de corps comme suit :
 
 ```xml
 body {
