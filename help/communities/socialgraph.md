@@ -1,8 +1,8 @@
 ---
 title: Utilisation du graphique des réseaux sociaux
 seo-title: Utilisation du graphique des réseaux sociaux
-description: ajouter un composant Suivant à une page
-seo-description: ajouter un composant Suivant à une page
+description: Ajouter un composant Suivant à une page
+seo-description: Ajouter un composant Suivant à une page
 uuid: 8be6334b-e6c9-40bc-90a8-750b98419470
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
