@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +24,7 @@ Au fur et à mesure que Granite intègre l’implémentation du référentiel CR
 
 These accounts are the underlying basis of the [AEM accounts](/help/sites-administering/security.md) and any account changes made with the Granite administration will be reflected if/when the accounts are accessed from the [AEM Users console](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (e.g. `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
 
-Les consoles d’administration des utilisateurs et des groupes Granite sont disponibles via la console **[Outils](/help/sites-administering/tools-consoles.md)**de l’interface utilisateur optimisée pour les écrans tactiles :
+Les consoles d’administration des utilisateurs et des groupes Granite sont disponibles via la console **[Outils](/help/sites-administering/tools-consoles.md)** de l’interface utilisateur optimisée pour les écrans tactiles :
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
@@ -72,7 +75,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Confirmer le mot de passe**
 
-      Ceci est obligatoire car requis pour la confirmation du mot de passe.
+      Ceci est obligatoire car il est nécessaire pour la confirmation du mot de passe.
 
    * **Prénom**
    * **Nom**
@@ -86,10 +89,11 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **État**
    * **Titre**
    * **Sexe**
-   * **À propos**
+   * **À propos d’**
    * **Paramètres du compte**
 
-      * **Statut** Vous pouvez signaler le compte comme étant **actif** ou **inactif**.
+      * **Statut** Vous pouvez marquer le compte comme 
+**principal** ou **inactif**.
    * **Photo**
 
       Vous pouvez ici télécharger une photo à utiliser comme avatar.
@@ -104,7 +108,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Groupes**
 
-      Liste des groupes auxquels l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      Liste du ou des groupes dont l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
 
 
 1. Lorsque vous avez défini le compte d’utilisateur, utilisez :
@@ -187,7 +191,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Description**
 
-       Description du groupe.
+      Description du groupe.
 
    * **Ajouter des membres au groupe**
 
@@ -195,7 +199,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **Membres du groupe**
 
-      Liste des utilisateurs du groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      Liste d’utilisateurs du groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
 
 1. Lorsque vous avez défini le groupe, utilisez :
 
