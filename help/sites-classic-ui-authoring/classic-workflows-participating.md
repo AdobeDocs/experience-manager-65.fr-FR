@@ -1,6 +1,6 @@
 ---
-title: Participation aux processus
-seo-title: Participation aux processus
+title: Participation aux workflows
+seo-title: Participation aux workflows
 description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe.
 seo-description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +48,7 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
 ### Notifications d’actions de workflow attribués {#notifications-of-assigned-workflow-actions}
 
-Lorsqu’un élément de travail vous est attribué (par exemple, **Approuver le contenu**), différentes alertes et/ou notifications s’affichent :
+Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
 * La colonne **État** de la console Sites web indique quand une page fait partie d’un workflow :
 
@@ -53,7 +56,7 @@ Lorsqu’un élément de travail vous est attribué (par exemple, **Approuver le
 
 * Lorsque vous ou un groupe auquel vous appartenez vous voyez attribuer un élément de travail dans le cadre d’un workflow, l’élément de travail apparaît dans votre boîte de réception Worfklow AEM.
 
-   ![workflow inbox](assets/workflowinbox.png)
+   ![workfleinbox](assets/workflowinbox.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
@@ -68,7 +71,7 @@ Lorsque vous avez suivi l’étape qui vous a été attribuée, vous pouvez fina
 
 1. Cliquez sur **OK** pour confirmer l’action.
 
-### Délégation d’une étape de participant {#delegating-a-participant-step}
+### Délégation d’une étape de participant   {#delegating-a-participant-step}
 
 Procédez comme suit pour déléguer un élément de travail.
 
