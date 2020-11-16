@@ -107,8 +107,8 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
 **Création d’un client PDF Assembler**
 
@@ -222,12 +222,12 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Service Assembler (serv
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client PDF Assembler.
 
    * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `AssemblerServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transférez une valeur de chaîne qui spécifie le WSDL au service AEM Forms, par exemple `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un `AssemblerServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms, par exemple `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.
    * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `AssemblerServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
@@ -256,7 +256,7 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Service Assembler (serv
    * Pour chaque fichier d’entrée, créez un `MyMapOf_xsd_string_To_xsd_anyType_Item` objet.
    * Attribuez une valeur de chaîne qui représente le nom de clé au `MyMapOf_xsd_string_To_xsd_anyType_Item` `key` champ de l’objet. Cette valeur doit correspondre à la valeur de l’élément spécifié dans le document DDX. (Effectuez cette tâche pour chaque fichier XDP d’entrée.)
    * Affectez l’ `BLOB` objet qui stocke le fichier d’entrée au `MyMapOf_xsd_string_To_xsd_anyType_Item` `value` champ de l’objet. (Effectuez cette tâche pour chaque fichier XDP d’entrée.)
-   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet sur l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object&#39;s `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Effectuez cette tâche pour chaque document XDP d’entrée.)
+   * Ajoutez l’ `MyMapOf_xsd_string_To_xsd_anyType_Item` objet à l’ `MyMapOf_xsd_string_To_xsd_anyType` objet. Invoke the `MyMapOf_xsd_string_To_xsd_anyType` object&#39;s `Add` method and pass the `MyMapOf_xsd_string_To_xsd_anyType` object. (Effectuez cette tâche pour chaque document XDP d’entrée.)
 
 1. Définissez les options d’exécution.
 
@@ -283,4 +283,4 @@ Assemblez plusieurs fragments XDP à l’aide de l’API Service Assembler (serv
 
 **Voir également**
 
-[Assemblage de plusieurs fragments](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)[XDP appelant des AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Assemblage de plusieurs fragments](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)[XDP appelant l’AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
