@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 67%
 
 ---
 
@@ -75,11 +78,11 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Indique si TLS doit être démarré sur les connexions.</td>
   </tr>
   <tr>
-   <td><strong>Désactiver la vérification des certificats</strong></td>
+   <td><strong>Désactiver la vérification de certificat</strong></td>
    <td>Indique si la validation du certificat du serveur doit être désactivée.</td>
   </tr>
   <tr>
-   <td><strong>Nom de domaine de liaison</strong></td>
+   <td><strong>DN de liaison</strong></td>
    <td>ND de l’utilisateur pour l’authentification. Si ce champ n’est pas renseigné, la liaison est anonyme.</td>
   </tr>
   <tr>
@@ -91,12 +94,12 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Durée jusqu’à ce que la recherche expire</td>
   </tr>
   <tr>
-   <td><strong>Groupe d’administrateurs max. actif</strong></td>
-   <td>Taille maximale active du pool de connexions d’administration.</td>
+   <td><strong>Principal max du pool d’administrateurs</strong></td>
+   <td>Taille principale maximale du pool de connexions d’administration.</td>
   </tr>
   <tr>
-   <td><strong>Actif max. du pool d’utilisateurs</strong></td>
-   <td>Taille maximale active du pool de connexions utilisateur.</td>
+   <td><strong>Principal maximal du pool d’utilisateurs</strong></td>
+   <td>Taille principale maximale du pool de connexions utilisateur.</td>
   </tr>
   <tr>
    <td><strong>ND de base utilisateur</strong></td>
@@ -104,18 +107,18 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
   </tr>
   <tr>
    <td><strong>Classes d’objets utilisateur</strong></td>
-   <td>Liste des classes d’objets qu’une entrée utilisateur doit contenir.</td>
+   <td>Liste des classes d'objets qu'une entrée utilisateur doit contenir.</td>
   </tr>
   <tr>
-   <td><strong>Attribut ID utilisateur</strong></td>
+   <td><strong>Attribut d’ID utilisateur</strong></td>
    <td>Nom de l’attribut contenant l’ID utilisateur.</td>
   </tr>
   <tr>
    <td><strong>Filtre supplémentaire utilisateur</strong></td>
-   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
+   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)'</td>
   </tr>
   <tr>
-   <td><strong>Chemins ND utilisateur</strong></td>
+   <td><strong>Chemins DN utilisateur</strong></td>
    <td>Contrôle si le DN doit être utilisé pour calculer une partie du chemin intermédiaire.</td>
   </tr>
   <tr>
@@ -123,24 +126,24 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>ND de base pour les recherches de groupe.</td>
   </tr>
   <tr>
-   <td><strong>Classes d’objets Groupe</strong></td>
-   <td>Liste des classes d’objets qu’une entrée de groupe doit contenir.</td>
+   <td><strong>Classes d’objets de groupe</strong></td>
+   <td>Liste des classes d'objets qu'une entrée de groupe doit contenir.</td>
   </tr>
   <tr>
    <td><strong>Attribut de nom de groupe</strong></td>
-   <td>Nom de l’attribut contenant le nom du groupe.</td>
+   <td>Nom de l’attribut qui contient le nom du groupe.</td>
   </tr>
   <tr>
-   <td><strong>Filtre supplémentaire du groupe</strong></td>
+   <td><strong>Filtre supplémentaire de groupe</strong></td>
    <td>Filtre LDAP supplémentaire à utiliser lors de la recherche de groupes. Le filtre final est formaté comme suit : '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
-   <td><strong>Chemins ND du groupe</strong></td>
+   <td><strong>Chemins DN du groupe</strong></td>
    <td>Contrôle si le DN doit être utilisé pour calculer une partie du chemin intermédiaire.</td>
   </tr>
   <tr>
    <td><strong>Attribut de membre du groupe</strong></td>
-   <td>Attribut de groupe contenant le ou les membres d’un groupe.</td>
+   <td>Attribut de groupe contenant le ou les membres d'un groupe.</td>
   </tr>
  </tbody>
 </table>
@@ -164,12 +167,12 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
    <td>Durée jusqu’à ce qu’un utilisateur synchronisé expire.</td>
   </tr>
   <tr>
-   <td><strong>Abonnement automatique utilisateur</strong></td>
-   <td>Liste des groupes auxquels un utilisateur synchronisé est automatiquement ajouté.</td>
+   <td><strong>Abonnement automatique des utilisateurs</strong></td>
+   <td>Liste des groupes auxquels un utilisateur synchronisé est ajouté automatiquement.</td>
   </tr>
   <tr>
    <td><strong>Mappage des propriétés utilisateur</strong></td>
-   <td>Définition de mappage de liste des propriétés locales à partir de propriétés externes.</td>
+   <td>Définition de mappage des listes des propriétés locales par rapport aux propriétés externes.</td>
   </tr>
   <tr>
    <td><strong>Préfixe de chemin d’accès utilisateur</strong></td>
@@ -177,10 +180,10 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
   </tr>
   <tr>
    <td><strong>Expiration de l’abonnement utilisateur</strong></td>
-   <td>Heure d’expiration de l’abonnement.<br /> </td>
+   <td>Heure après laquelle l’adhésion expire.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Profondeur d’imbrication de l’appartenance utilisateur</strong></td>
+   <td><strong>Profondeur d'imbrication de l'appartenance des utilisateurs</strong></td>
    <td>Renvoie la profondeur maximale de l’imbrication de groupes lors de la synchronisation des relations d’appartenance. Une valeur égale à 0 désactive la recherche de l’appartenance à un groupe. Une valeur égale à 1 ajoute uniquement les groupes directs d’un utilisateur. Cette valeur est sans effet lorsque des groupes individuels uniquement sont synchronisés dans le cadre de la synchronisation d’un ancêtre d’appartenance d’utilisateur.</td>
   </tr>
   <tr>
@@ -193,7 +196,7 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
   </tr>
   <tr>
    <td><strong>Mappage des propriétés du groupe</strong></td>
-   <td>Définition de mappage de liste des propriétés locales à partir de propriétés externes.</td>
+   <td>Définition de mappage des listes des propriétés locales par rapport aux propriétés externes.</td>
   </tr>
   <tr>
    <td><strong>Préfixe de chemin de groupe</strong></td>
@@ -216,8 +219,8 @@ Les options de configuration suivantes sont disponibles :
 
 | **Classement JAAS** | Spécification du classement (ordre de tri) de cette entrée de module de connexion. Les entrées sont triées dans l’ordre décroissant (les configurations ayant une valeur de rang supérieure apparaissent en premier). |
 |---|---|
-| **Indicateur de contrôle JAAS** | Propriété spécifiant si un LoginModule est OBLIGATOIRE, REQUIS, SUFFICIENT ou FACULTATIF.Consultez la documentation de configuration JAAS pour plus d&#39;informations sur la signification de ces indicateurs. |
-| **JAAS Realm** | Nom du domaine (ou nom de l&#39;application) pour lequel le LoginModule est enregistré. Si aucun nom de domaine n’est indiqué, le module de connexion est enregistré avec un domaine par défaut tel que configuré dans la configuration Felix JAAS. |
+| **Indicateur de contrôle JAAS** | Propriété spécifiant si un LoginModule est OBLIGATOIRE, REQUIS, SUFFISANT ou FACULTATIF.Reportez-vous à la documentation de configuration JAAS pour plus de détails sur la signification de ces indicateurs. |
+| **JAAS Realm** | Nom de domaine (ou nom de l&#39;application) pour lequel le LoginModule est enregistré. Si aucun nom de domaine n’est indiqué, le module de connexion est enregistré avec un domaine par défaut tel que configuré dans la configuration Felix JAAS. |
 | **Nom du fournisseur d’identité** | Nom du fournisseur d&#39;identité. |
 | **Nom du gestionnaire de synchronisation** | Nom du gestionnaire de synchronisation. |
 
@@ -243,7 +246,7 @@ Les certificats auto-signés peuvent être utilisés lors de la configuration d�
 
 1. Assurez-vous qu’une bibliothèque SSL est installée et fonctionne. Cette procédure utilise OpenSSL comme exemple.
 
-1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier **openssl.cnf **configuration par défaut et personnalisez-le. On UNIX systems, it is usually located at `/usr/lib/ssl/openssl.cnf`
+1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration **openssl.cnf **et personnalisez-le. On UNIX systems, it is usually located at `/usr/lib/ssl/openssl.cnf`
 
 1. Créez la clé racine CA en exécutant la commande ci-dessous sur un terminal :
 
