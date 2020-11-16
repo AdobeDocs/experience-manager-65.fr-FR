@@ -1,11 +1,11 @@
 ---
-title: Développement de proxy [!DNL Assets]
+title: '[!DNL Assets] développement par proxy'
 description: Un proxy est [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] un proxy, des opérations prises en charge, des composants de proxy et la manière de développer un agent proxy personnalisé.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '859'
 ht-degree: 58%
 
 ---
