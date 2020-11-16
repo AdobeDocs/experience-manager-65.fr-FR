@@ -1,8 +1,8 @@
 ---
 title: Utilisation du composant Vote
 seo-title: Utilisation du composant Vote
-description: ajouter le composant Voting à une page
-seo-description: ajouter le composant Voting à une page
+description: Ajouter le composant Voting à une page
+seo-description: Ajouter le composant Voting à une page
 uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
