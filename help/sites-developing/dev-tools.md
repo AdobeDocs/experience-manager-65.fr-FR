@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 62%
 
 ---
 
@@ -21,7 +24,7 @@ Pour développer vos applications JCR, Apache Sling ou AEM, les jeux d’outils
 
 * one set consisting of [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) and WebDAV. CRXDE Lite est incorporé dans CRX/AEM et permet d’effectuer des tâches de développement standard dans le navigateur. Avec CRXDE Lite, vous pouvez créer et modifier des fichiers (par exemple, dotés des extensions .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des nœuds, des propriétés et des lots lors de la connexion et de l’intégration à SVN.
 
-   CRXDE Lite est recommandé lorsque vous n’avez pas d’accès direct au serveur CRX/AEM, lorsque vous développez une application en étendant ou en modifiant les composants prêts à l’emploi et les lots Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la saisie du code et de la mise en évidence de la syntaxe.
+   CRXDE Lite est recommandé lorsque vous n’avez pas d’accès direct au serveur CRX/AEM, lorsque vous développez une application en étendant ou en modifiant les composants prêts à l’emploi et les lots Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la saisie du code et de la mise en surbrillance de la syntaxe.
 
 * one set consisting of an Integrated Development Environment (for example: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) or [IntelliJ](/help/sites-developing/ht-intellij.md)), a build tool (for example: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault which has been developed by Adobe to map a repository to a file system, a version control system (for example: Subversion), a bug tracker system (for example: Jira), a central dependency management system (for example: Apache Archiva) and a build automation system (for example: Apache Continuum).
 
@@ -58,5 +61,5 @@ Outils facilitant la création de projets :
 >[!NOTE]
 >
 >Le didacticiel suivant peut être intéressant pour le démarrage d’un nouveau projet AEM :
->[Prise en main des sites AEM Partie 1 - Configuration du projet](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>[Prise en main de AEM Sites Partie 1 - Configuration du projet](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
 
