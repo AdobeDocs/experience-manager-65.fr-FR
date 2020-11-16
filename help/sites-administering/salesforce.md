@@ -12,6 +12,9 @@ discoiquuid: bee7144e-4276-4e81-a3a0-5b7273af34fe
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1552'
+ht-degree: 79%
 
 ---
 
@@ -55,7 +58,7 @@ Pour configurer AEM de manière à l’intégrer à Salesforce :
 
    >[!NOTE]
    >
-   >La nouvelle configuration redirige vers une nouvelle page : **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Il s’agit exactement de la même valeur que celle que vous devez spécifier dans l’URL de rappel lors de la création de l’application d’accès distant dans Salesforce. Ces valeurs doivent correspondre.
+   >La nouvelle configuration redirige vers une nouvelle page : **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Il s’agit de la même valeur que celle que vous devez spécifier dans l’URL de rappel lors de la création de l’application d’accès à distance dans Salesforce. Ces valeurs doivent correspondre.
 
 1. Log in to your salesforce account (or if you do not have one, create one at [https://developer.force.com](https://developer.force.com).)
 1. In Salesforce, navigate to **Create** > **Apps** to get to **Connected Apps** (in former versions of salesforce, the workflow was **Deploy** > **Remote Access**).
@@ -81,10 +84,10 @@ Pour configurer AEM de manière à l’intégrer à Salesforce :
 
    ![chlimage_1-15](assets/chlimage_1-15.jpeg)
 
-   | URL de connexion | Il s’agit du point de terminaison de l’autorisation Salesforce. Sa valeur est prérenseignée et convient dans la plupart des cas. |
+   | URL de connexion | Il s&#39;agit du point de terminaison de l&#39;autorisation Salesforce. Sa valeur est prérenseignée et convient dans la plupart des cas. |
    |---|---|
-   | Clé de client | Entrez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance dans salesforce.com |
-   | Secret client | Entrez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance dans salesforce.com |
+   | Clé client | Saisissez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance sur salesforce.com |
+   | Secret client | Saisissez la valeur obtenue à partir de la page Enregistrement des demandes d&#39;accès à distance sur salesforce.com |
 
 1. Cliquez sur **Connexion à Salesforce** pour vous connecter. Salesforce vous demande d’autoriser votre configuration à se connecter à Salesforce.
 
