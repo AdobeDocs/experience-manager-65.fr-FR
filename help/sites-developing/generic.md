@@ -45,7 +45,7 @@ Le framework eCommerce est compatible avec n’importe quelle solution eCommerce
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* AEM prend en charge `Resource.adaptTo()` `CommerceService` les `Product`
+* aem prend en charge `Resource.adaptTo()` les `CommerceService` et `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
