@@ -12,6 +12,9 @@ discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+workflow-type: tm+mt
+source-wordcount: '1904'
+ht-degree: 80%
 
 ---
 
@@ -54,7 +57,7 @@ Cette approche fonctionne bien pour un nœud unique avec un entrepôt de donnée
 
 >[!NOTE]
 >
->Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit parce que les ID d’objet blob supprimés dans une précédente collecte de déchets sont de nouveau référencés de manière incorrecte par d’autres noeuds de la grappe ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’affecte pas les performances ou les fonctionnalités.
+>Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit car les ID d’objet blob supprimés dans une précédente collecte de déchets sont de nouveau référencés de manière incorrecte par d’autres noeuds de la grappe ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’affecte pas les performances ou les fonctionnalités.
 
 ## Exécution du nettoyage de la mémoire d’entrepôt de données {#running-data-store-garbage-collection}
 
@@ -79,22 +82,22 @@ Le tableau ci-dessous indique le type de nettoyage de la mémoire d’entrepôt 
   <tr>
    <td>TarMK</td>
    <td>TarMK</td>
-   <td>Nettoyage de révision (les fichiers binaires sont intégrés au magasin de segments)</td>
+   <td>Nettoyage de la révision (les fichiers binaires sont intégrés au magasin de segments)</td>
   </tr>
   <tr>
    <td>TarMK</td>
    <td>Système de fichiers externe</td>
-   <td><p>Tâche de collecte de déchets du magasin de données via le tableau de bord Opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de collecte des déchets de la banque de données via le Tableau de bord d’exploitation</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>MongoDB</td>
-   <td><p>Tâche de collecte de déchets du magasin de données via le tableau de bord Opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de collecte des déchets de la banque de données via le Tableau de bord d’exploitation</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>Système de fichiers externe</td>
-   <td><p>Tâche de collecte de déchets du magasin de données via le tableau de bord Opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de collecte des déchets de la banque de données via le Tableau de bord d’exploitation</p> <p>Console JMX</p> </td>
   </tr>
  </tbody>
 </table>
@@ -135,7 +138,7 @@ Cette section aborde le nettoyage de la mémoire d’entrepôt de données via l
 Pour exécuter le nettoyage de la mémoire :
 
 1. Dans la console de gestion OSGi Apache Felix, sélectionnez l’onglet **Principal**, puis **JMX** dans le menu suivant.
-1. Ensuite, recherchez et cliquez sur le MB **Gestionnairede** référentiel (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. Ensuite, recherchez et cliquez sur le MBean du Gestionnaire **de** référentiel (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Cliquez sur **startDataStoreGC(boolean markOnly)**.
 1. enter &quot;`true`&quot; for the `markOnly` parameter if required:
 
@@ -161,9 +164,9 @@ La période de maintenance hebdomadaire intégrée, disponible via le [tableau d
 
 >[!NOTE]
 >
->La raison de ne pas l’exécuter simultanément est que les anciens fichiers de stockage de données (et inutilisés) sont également sauvegardés, de sorte que, s’il est nécessaire de restaurer une ancienne version, les fichiers binaires sont toujours présents dans la sauvegarde.
+>La raison de ne pas l’exécuter simultanément est que les anciens fichiers de stockage de données (et inutilisés) sont également sauvegardés, de sorte que s’il est nécessaire de revenir à une ancienne révision, les fichiers binaires sont toujours présents dans la sauvegarde.
 
-Si vous ne souhaitez pas exécuter la collecte des déchets de stockage de données avec la fenêtre de maintenance hebdomadaire du tableau de bord Opérations, elle peut également être automatisée à l’aide des clients HTTP wget ou curl. Voici un exemple d’automatisation de la sauvegarde à l’aide de curl :
+Si vous ne souhaitez pas exécuter la collecte des déchets de stockage de données avec la fenêtre de maintenance hebdomadaire du Tableau de bord des opérations, elle peut également être automatisée à l&#39;aide des clients HTTP wget ou curl. Voici un exemple d’automatisation de la sauvegarde à l’aide de curl :
 
 >[!CAUTION]
 >
