@@ -74,7 +74,7 @@ Pour personnaliser des polices en modifiant le fichier tbxeditor-config.xml, pro
 
 1. Ouvrez le fichier tbxeditor-config.xml dans apps/fd/cm/config, puis effectuez les modifications requises.
 
-   1. Cliquez avec le Doublon sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
+   1. Cliquez avec le doublon sur le fichier tbxeditor-config.xml dans apps/fd/cm/config. Le fichier s’ouvre.
 
       ```xml
       <editorConfig>
@@ -186,7 +186,7 @@ Pour plus d’informations sur l’installation des polices, consultez les artic
 
 ## Accéder à la personnalisation des polices {#access-font-customizations}
 
-Après avoir apporté des modifications aux polices dans le fichier tbxeditor-config.xml dans CRX et installé les polices requises sur l’ordinateur client utilisé pour accéder aux AEM Forms, les modifications apparaissent dans l’éditeur de texte.
+Après avoir apporté des modifications aux polices dans le fichier tbxeditor-config.xml dans CRX et installé les polices requises sur l’ordinateur client utilisé pour accéder à AEM Forms, les modifications apparaissent dans l’éditeur de texte.
 
 For example, the Sazanami Mincho Medium font added in the [Customize fonts by editing the tbxeditor-config.xml file in CRX](#customizefonts) procedure appears in the text editor UI as following:
 
