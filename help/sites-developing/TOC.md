@@ -118,7 +118,7 @@ ht-degree: 80%
       + [Intégration SPA et Adobe Experience Platform Launch](spa-launch.md)
       + [Rendu SPA et côté serveur](spa-ssr.md)
       + [SPA Documents de référence](spa-reference-materials.md)
-   + [API HTTP](/help/assets/mac-api-assets.md)
+   + API HTTP [ ](/help/assets/mac-api-assets.md)
    + [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
    + [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
    + [Présentation des fragments de contenu et de Content Services dans AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
