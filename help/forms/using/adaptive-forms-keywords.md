@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +58,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
    <td><p>instances</p> </td>
   </tr>
   <tr>
-   <td><p>titre</p> </td>
+   <td><p>title</p> </td>
    <td><p>resolveNode</p> </td>
    <td><p>syncXFAProps</p> </td>
   </tr>
@@ -97,7 +100,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
   <tr>
    <td><p>editPictureClause</p> </td>
    <td><p>xsdRef</p> </td>
-   <td><p>nom est</p> </td>
+   <td><p>name</p> </td>
   </tr>
   <tr>
    <td><p>mandatory</p> </td>
@@ -150,7 +153,7 @@ Les mots-clés de formulaires adaptatifs sont prédéfinis, les identifiants ré
    <td><p>dataType</p> </td>
   </tr>
   <tr>
-   <td><p>Type</p> </td>
+   <td><p>type</p> </td>
    <td><p>addInstance</p> </td>
    <td><p>leadDigits</p> </td>
   </tr>
