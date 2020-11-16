@@ -91,11 +91,11 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi un texte est-il tronqué ou s’affiche-t-il incorrectement dans HTML5 ?
 
-   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue de conception de AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
+   Réponse : lorsque l’espace attribué à un champ de texte constitué d’une illustration ou d’une légende est insuffisant et ne lui permet pas d’afficher le contenu, le texte apparaît tronqué dans le formulaire pour périphériques mobiles généré. Cette troncature est également visible dans la vue de conception d’AEM Forms Designer. Bien que cette troncature puisse être prise en charge dans les fichiers PDF, ce n’est pas le cas dans les formulaires HTML5. Pour éviter ce problème, assurez-vous de prévoir un espace suffisant pour qu’un champ de texte constitué d’une illustration ou d’une légende puisse s’afficher sans être tronqué dans le mode de conception de AEM Forms Designer.
 
 1. Je constate des problèmes de mise en page liés à du contenu manquant ou à des chevauchements. Quelle en est la raison ?
 
-   Réponse : S’il existe un élément Texte de dessin ou Image de dessin avec un autre élément se chevauchant à la même position (un rectangle, par exemple), le contenu Texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre de document (dans la vue de la hiérarchie de Designer AEM Forms). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
+   Réponse : S’il existe un élément Texte de dessin ou Image de dessin avec un autre élément se chevauchant à la même position (un rectangle, par exemple), le contenu Texte de dessin n’est pas visible s’il apparaît plus loin dans l’ordre de document (dans la vue de la hiérarchie de AEM Forms Designer). Le format PDF prend en charge la mise en calque transparente mais ce n’est pas le cas du HTML et des navigateurs.
 
 1. Pourquoi certaines polices affichées dans le formulaire HTML sont-elles différentes de celles utilisées lors de la conception du formulaire ?
 
