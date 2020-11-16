@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
 source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+workflow-type: tm+mt
+source-wordcount: '3783'
+ht-degree: 88%
 
 ---
 
@@ -27,16 +30,16 @@ Cette page fournit d’autres détails qui précisent et/ou enrichissent les doc
 
 ### Fonctions au sein d’AEM {#features-within-aem}
 
-When implementing AEM (particularly for the first time) you will need to review the [capabilites and workflows of AEM](https://www.adobe.com/marketing/experience-manager.html) to be sure of which areas you want/need.
+When implementing AEM (particularly for the first time) you will need to review the [capabilites and workflows of AEM](https://www.adobe.com/fr/marketing/experience-manager.html) to be sure of which areas you want/need.
 
 Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votre travail de conception, par exemple :
 
 * [Commerce](/help/sites-administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
-* [Assets](/help/assets/assets.md)
+* [Screens](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Ressources](/help/assets/assets.md)
 * [Balises](/help/sites-administering/tags.md)
 * [Gestion de sites multiples·et traduction](/help/sites-administering/msm-and-translation.md)
-* [Forms](/help/forms/home.md)
+* [Formulaires](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
@@ -141,7 +144,7 @@ Ces indicateurs peuvent être :
    * Utilisés pour mesurer les objectifs métier clés.
    * Il est important de sélectionner des IPC pertinents pour votre activité/scénario avec des définitions claires de leur nature, de la façon dont ils seront mesurés, de leur utilisation et des personnes qui les utiliseront.
 
-* des indicateurs de performances :
+* Performances:
 
    * Définissez comment mesurer la performance du système.
    * Il peut s’agir notamment du temps de chargement des pages, du temps de réponse du serveur, ainsi que de la performance des requêtes de la base de données.
@@ -216,7 +219,7 @@ En fonction de votre situation et de la signification stratégique du site web, 
 * Nombre de serveurs
 * Nombre d’instances AEM (auteur et publication)
 
-### Performance {#performance}
+### Performances {#performance}
 
 Il existe plusieurs facteurs de performance pouvant être évalués :
 
@@ -357,9 +360,9 @@ Avant de discuter des mesures relatives, une définition rapide des termes :
    | Client | Puissance de calcul de l’ordinateur de l’utilisateur. | Complexité de la mise en page. |
    | Réseau | Bande passante réseau. | Taille de la page (code, images, etc.). |
    | Cache du répartiteur | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur Web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
-   | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages dans le cache de sortie, nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
-   | Serveur web | Puissance informatique du serveur Web. | Nombre de requêtes. La mise en cache réduit ce volume. |
-   | Modèle | Puissance informatique du serveur Web. | Complexité des modèles. |
+   | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages du cache de sortie, nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
+   | Serveur web | Puissance de calcul du serveur Web. | Nombre de demandes. La mise en cache réduit ce volume. |
+   | Template (Modèle) | Puissance de calcul du serveur Web. | Complexité des modèles. |
    | Référentiel | Performances du référentiel. | Nombre de pages chargées à partir du référentiel. |
 
 ### Autres mesures {#other-metrics}
@@ -385,6 +388,7 @@ La [liste de contrôle de sécurité](/help/sites-administering/security-checkli
 >* Offers an overview related to the *first* implemention of an AEM project.
 >* Il s’agit d’une présentation abstraite ; voir la [liste de contrôle de projet](/help/managing/best-practices.md) pour les phases/jalons/tâches spécifiques.
 >* Toute échelle temporelle est théorique.
+
 >
 
 
@@ -499,14 +503,14 @@ Les mesures de site suivantes doivent être définies :
 |---|---|
 | Nombre de sites Internet |  |
 | Nombre de sites intranet |  |
-| Nombre de bases de code (par exemple si Internet et Intranet diffèrent) |  |
+| Nombre de bases de code (par exemple, si Internet et intranet diffèrent) |  |
 | Nombre de pages individuelles |  |
 | Nombre de visites du site / jour |  |
-| Nombre de pages vues / jour |  |
+| Nombre de vues de page / jour |  |
 | Volume (en Go) du transfert de données/jour |  |
-| Nombre d’utilisateurs simultanés (Groupe d’utilisateurs fermé) |  |
+| Nombre d’utilisateurs simultanés (groupe d’utilisateurs fermé) |  |
 | Nombre de visiteurs simultanés (publication) |  |
-| Nombre d’auteurs simultanés |  |
+| Nombre d&#39;auteurs simultanés |  |
 | Nombre d&#39;auteurs enregistrés |  |
 | Nombre d&#39;activations de page / jour ouvrable |  |
 | Nombre d’activations de page pendant le déploiement |  |
@@ -523,13 +527,13 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM fournit lui-même toute une gamme de mécanismes pour vous aider à surveiller, tester, enquêter et déboguer votre application ; y compris:</p>
+   <td><p>aem fournit une gamme de mécanismes pour vous aider à surveiller, tester, rechercher et déboguer votre application ; y compris :</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Mode Développeur</a></li>
-     <li>La Console <a href="/help/sites-developing/hobbes.md">Tests</a></li>
+     <li>La console <a href="/help/sites-developing/hobbes.md">Tests</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">Tableau de bord des opérations</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">Content Insight </a></li>
-     <li>L'arbre <a href="/help/sites-authoring/author-environment-tools.md#content-tree">de contenu</a></li>
+     <li>L'arborescence <a href="/help/sites-authoring/author-environment-tools.md#content-tree">de contenu</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -554,11 +558,11 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse est un IDE Open Source, composé de différents projets. Ils sont concentrés sur la création d’une plate-forme de développement ouverte, composée de structures extensibles, d’outils et de runtimes pour la conception, le déploiement et la gestion des logiciels tout au long du cycle de vie.</p> <p>Voir <a href="/help/sites-developing/howto-projects-eclipse.md">Comment développer des projets AEM à l’aide d’Eclipse</a> pour en savoir plus.</p> </td>
+   <td><p>Eclipse est un IDE Open Source, composé de divers projets. Ils sont concentrés sur la création d’une plate-forme de développement ouverte, composée de structures extensibles, d’outils et de runtimes pour la conception, le déploiement et la gestion des logiciels tout au long du cycle de vie.</p> <p>Voir <a href="/help/sites-developing/howto-projects-eclipse.md">Comment développer des projets AEM à l’aide d’Eclipse</a> pour plus d’informations.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Un IDE professionnel (et donc responsable des coûts de licence) offrant une gamme complète de fonctionnalités. </p> <p>Voir <a href="/help/sites-developing/ht-intellij.md">Comment développer des projets AEM à l’aide d’IntelliJ IDEA</a> pour en savoir plus.</p> </td>
+   <td><p>Un IDE professionnel (et donc susceptible de supporter les coûts de licence) offrant une gamme complète de fonctionnalités. </p> <p>Voir <a href="/help/sites-developing/ht-intellij.md">Comment développer des projets AEM à l'aide d'IntelliJ IDEA</a> pour plus d'informations.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
@@ -575,12 +579,12 @@ En outre, les sections ci-après sont particulièrement intéressantes :
 * [Exigences techniques](/help/sites-deploying/technical-requirements.md)
 * [Surveillance et maintenance de votre instance](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Meilleures pratiques {#best-practices}
+### Bonnes pratiques {#best-practices}
 
 Adobe propose d’autres meilleures pratiques pour toutes les phases et tous les publics :
 
 * [Déploiement](/help/sites-deploying/best-practices.md)
-* [Création](/help/sites-authoring/best-practices.md)
+* [Création  ](/help/sites-authoring/best-practices.md)
 * [Administration](/help/sites-administering/administer-best-practices.md)
 * [Développement](/help/sites-developing/best-practices.md)
 * [Gestion de projets](/help/managing/best-practices.md)
