@@ -546,7 +546,7 @@ Si les eVars et les événements des communautés remplacent les mappages qui ex
 
 >[!CAUTION]
 >
->Il est important de procéder à une mise en mémoire avant la [publication](#publishing-the-community-site) du site de la communauté avec Analytics activé, faute de quoi il existe un risque de perte de données.
+>Il est important de procéder à une mise en mémoire avant que le site de la communauté ne soit [publié](#publishing-the-community-site) avec Analytics activé, faute de quoi il existe un risque de perte de données.
 
 #### Exemple d’étape 1 : Faire glisser Analytics evar14 dans la table de mappage {#example-step-dragging-analytics-evar-into-mapping-table}
 
