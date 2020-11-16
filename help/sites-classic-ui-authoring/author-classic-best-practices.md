@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques
-seo-title: Meilleures pratiques
+title: Bonnes pratiques
+seo-title: Bonnes pratiques
 description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 seo-description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 65%
 
 ---
 
 
-# Meilleures pratiques{#best-practices}
+# Bonnes pratiques{#best-practices}
 
 Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 
@@ -35,7 +38,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>
@@ -52,7 +55,7 @@ Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Cont
   <tr>
    <td>Imagerie dynamique</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Meilleures pratiques en matière d’imagerie dynamique </a></td>
-   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure méthode pour optimiser la qualité de vos images si vous utilisez la fonctionnalité Contenu multimédia dynamique ou si vous effectuez une intégration avec Contenu multimédia dynamique classique. </p> </td>
+   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure façon d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Contenu multimédia dynamique ou si vous effectuez une intégration avec Contenu multimédia dynamique classique. </p> </td>
   </tr>
   <tr>
    <td>Ressources multilingues</td>
@@ -66,9 +69,9 @@ Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Cont
 
 Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
 
-Création : Environnement et outils [Auteur](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fournit un aperçu de la création de pages.
+Création : [Environnement et outils](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) Auteur - Fournit un aperçu de la manière de créer des pages.
 
-## Forms {#forms}
+## Formulaires {#forms}
 
 Formulaires adaptatifs : [Meilleures pratiques pour l’utilisation des formulaires](/help/forms/using/adaptive-forms-best-practices.md) adaptatifs : décrit les meilleures pratiques pour la configuration, la création et la personnalisation des formulaires adaptatifs.
 
