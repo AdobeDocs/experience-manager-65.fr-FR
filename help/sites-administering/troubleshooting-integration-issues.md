@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '1109'
+ht-degree: 69%
 
 ---
 
@@ -100,10 +103,10 @@ Pour résoudre ce problème, vous pouvez essayer les méthodes suivantes :
 * Check ACLs on `/etc/cloudservices`. Les listes de contrôle d’accès doivent être les suivantes :
 
    * allow; jcr:read; webservice-support-servicelibfinder
-   * allow; jcr:read; tout le monde; rep:glob:&amp;ast;/defaul/&amp;ast;
-   * allow; jcr:read; tout le monde; rep:glob:&amp;ast;/default
-   * allow; jcr:read; tout le monde; rep:glob:&amp;ast;/public/&amp;ast;
-   * allow; jcr:read; tout le monde; rep:glob:&amp;ast;/public
+   * allow; jcr:read; tous ; rep:glob:&amp;ast;/defaul/&amp;ast;
+   * allow; jcr:read; tous ; rep:glob:&amp;ast;/default
+   * allow; jcr:read; tous ; rep:glob:&amp;ast;/public/&amp;ast;
+   * allow; jcr:read; tous ; rep:glob:&amp;ast;/public
 
 Pour plus d’informations sur la gestion des listes de contrôle d’accès, consultez la page [Administration et sécurité des utilisateurs](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -210,7 +213,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Si la réponse contient la ligne `a4tEnabled:false`, contactez l’[Assistance clientèle Adobe](https://helpx.adobe.com/contact.html) pour que votre compte soit correctement configuré.
+Si la réponse contient la ligne `a4tEnabled:false`, contactez l’[Assistance clientèle Adobe](https://helpx.adobe.com/fr/contact.html) pour que votre compte soit correctement configuré.
 
 ### API Target utiles {#helpful-target-apis}
 
