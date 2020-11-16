@@ -1062,7 +1062,7 @@ Appelez le processus de courte durée `MyApplication/EncryptDocument` à l’aid
 
    >[!NOTE]
    >
-   >Un processus de longue durée peut être appelé en transmettant la valeur `false` en tant que quatrième paramètre de la méthode `createInvocationRequest`. La transmission de la valeur`false`* crée une requête asynchrone.*
+   >Un processus de longue durée peut être appelé en transmettant la valeur `false` en tant que quatrième paramètre de la méthode `createInvocationRequest`. La transmission de la valeur `false`*crée une requête asynchrone.*
 
 1. Récupérer la valeur de retour de processus en invoquant la méthode `InvocationReponse` de l’objet `getOutputParameter` et passant à une valeur string qui spécifie le nom du paramètre de sortie. In this situation, specify `outDoc` ( `outDoc` is the name of the output parameter for the `MyApplication/EncryptDocument` process). Convertissez la valeur de retour en `Document`, comme le montre l’exemple suivant.
 
