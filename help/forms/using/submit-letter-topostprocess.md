@@ -1,7 +1,7 @@
 ---
 title: Post-traitement des lettres et communications interactives
 seo-title: Post-traitement des lettres
-description: Post-traitement de lettres dans Correspondence Management vous permet de créer des post-processus AEM et Forms, tels que l’impression et le courrier électronique, et de les intégrer à vos lettres.
+description: Post-traitement de lettres dans Correspondence Management vous permet de créer des AEM et de Forms post-traitements, tels que l’impression et le courrier électronique, et de les intégrer à vos lettres.
 seo-description: Le post-traitement des lettres dans Correspondence Management vous permet de créer des post-processus de formulaires et d’AEM, tels que l’impression et le courrier électronique, et de les intégrer dans vos lettres.
 uuid: 40cb349d-6ba2-4794-9ec6-dcab15c35b8d
 content-type: reference
@@ -28,13 +28,13 @@ Les agents peuvent associer et exécuter les flux de travaux de post-traitement 
 
 Pour associer les post-traitements aux lettres et communications interactives, vous devez commencer par configurer les post-traitements. Deux types de workflows peuvent être exécutés sur les lettres envoyées :
 
-1. **Processus des formulaires :** Il s’agit des workflows de gestion des processus AEM Forms on JEE. Instructions for setting up [Forms Workflow](#formsworkflow).
+1. **Forms Workflow :** Il s’agit des workflows de gestion des processus AEM Forms on JEE. Instructions for setting up [Forms Workflow](#formsworkflow).
 
-1. **Processus AEM :** Les workflows AEM peuvent également être utilisés comme post-traitements pour les lettres envoyées. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
+1. **Processus AEM :** aem workflows peuvent également être utilisés comme post-traitement pour les lettres envoyées. Instructions for setting up [AEM Workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Processus des formulaires {#formsworkflow}
 
-1. Dans AEM, ouvrez la configuration de la console Web d’Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez Configuration de la console Web Adobe Experience Manager pour votre serveur à l’aide de l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Configuration du gestionnaire](assets/2configmanager-1.png)
 
@@ -46,9 +46,9 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 1. Indiquez le nom d’utilisateur et le mot de passe.
 1. Assurez-vous que sun.util.calendar est ajouté à la configuration du pare-feu de désérialisation.
 
-   Accédez à Configuration du pare-feu de désérialisation et sous des classes Placées sur l&#39;liste autorisée de préfixes de package, ajoutez sun.util.calendar.
+   Accédez à Configuration du pare-feu de désérialisation et sous des classes Placées sur la liste autorisée de préfixes de package, ajoutez sun.util.calendar.
 
-1. Désormais, vos serveurs sont mappés et les post-traitements dans AEM Forms on JEE sont disponibles dans l’interface utilisateur d’AEM lors de la création de lettres.
+1. Désormais, vos serveurs sont mappés et les post-traitements dans AEM Forms on JEE sont disponibles dans l’interface utilisateur AEM lors de la création de lettres.
 
    ![Création de l’écran des lettres à l’aide des post-traitements répertoriés](assets/0configmanager.png)
 
@@ -60,9 +60,9 @@ Pour associer les post-traitements aux lettres et communications interactives, v
 
    Go to the Adobe Experience Manager Web Console Configurations page > **[!UICONTROL Correspondence Management Configurations]** and set up the following parameters:
 
-   1. **inPDFDoc (paramètre de document PDF) :** document PDF en entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
-   1. **inXMLDoc (paramètre de données XML) :** document XML en tant qu’entrée. Cette entrée contient des données saisies par l’utilisateur sous la forme XML.
-   1. **inXDPDoc (paramètre de document XDP) :** document XML en tant qu’entrée. Cette entrée contient une mise en page sous-jacente (XDP).
+   1. **inPDFDoc (paramètre de document PDF) :** Document PDF en entrée. Cette entrée contient la lettre générée comme entrée. Les noms de paramètre indiqués peuvent être configurés. Ils peuvent être configurés depuis les configurations de Correspondence Management, sous Configuration.
+   1. **inXMLDoc (paramètre de données XML) :** Document XML en tant qu’entrée. Cette entrée contient des données saisies par l’utilisateur sous la forme XML.
+   1. **inXDPDoc (paramètre de document XDP) :** Document XML en tant qu’entrée. Cette entrée contient une mise en page sous-jacente (XDP).
    1. **inAttachmentDocs (paramètre de Documents de pièce jointe) :** Paramètre d’entrée de liste. Cette entrée contient toutes les pièces jointes comme entrée.
    1. **redirectURL (Sortie d’URL de redirection) :** Type de sortie indiquant l’URL vers laquelle effectuer la redirection.
 
