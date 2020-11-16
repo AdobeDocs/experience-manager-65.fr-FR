@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 75%
 
 ---
 
@@ -27,7 +30,7 @@ Si vous souhaitez utiliser certaines des propriétés d’un formulaire adaptati
 
 Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
-1. Cliquez sur l’icône Copier ![aem6forms_copy](assets/aem6forms_copy.png) dans Actions rapides.
+1. Cliquez sur l’icône Copier ![aem6forms_copy](assets/aem6forms_copy.png) depuis Actions rapides.
 
    >[!NOTE]
    >
@@ -51,7 +54,7 @@ Clicking the copy action automatically exits the selection mode and makes the pa
 
 Si vous collez le formulaire dans le même dossier ou s’il existe déjà un autre fichier portant le même nom de nœud (avec lequel il est stocké dans le référentiel CRX) dans ce dossier cible, une unité est ajoutée au suffixe (par exemple, myaf devient myaf1 et si myaf1 existe déjà au même emplacement, myaf devient myaf2). Toutes les autres propriétés restent identiques au formulaire adaptatif d’origine.
 
-Après avoir cliqué sur l’icône de collage ![aem6forms_coller](assets/aem6forms_paste.png) , elle est à nouveau masquée. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
+Après avoir cliqué sur l’icône de collage ![aem6forms_coller](assets/aem6forms_paste.png) , elle est de nouveau masquée. Vous ne pouvez effectuer qu’une seule opération de copie à la fois. Pour créer une autre copie d’un même élément, copiez le à nouveau.
 
 ### Modification du contenu du nouveau formulaire adaptatif {#change-contents-of-new-adaptive-form}
 
@@ -61,7 +64,7 @@ Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant l
 
    Vous pouvez modifier les propriétés de métadonnées du formulaire adaptatif ; le titre et la description, par exemple. For more details about metadata properties and how they can be changed, see [Managing Form Metadata](/help/forms/using/manage-form-metadata.md)
 
-1. **Modifier XFA/XSD pour les formulaires adaptatifs XFA/XSD :**
+1. **Modifiez XFA/XSD pour Forms adaptatif basé sur XFA/XSD :**
 
    Vous pouvez modifier le XFA/XSD utilisé dans les formulaires adaptatifs. Pour savoir comment ces formulaires adaptatifs peuvent être modifiés, reportez-vous à la section [Gestion des métadonnées de formulaire](/help/forms/using/manage-form-metadata.md) 
 
