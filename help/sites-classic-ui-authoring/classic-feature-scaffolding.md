@@ -12,6 +12,9 @@ discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '1502'
+ht-degree: 80%
 
 ---
 
@@ -64,7 +67,7 @@ To create a new scaffold go to the **Tools** console, then **Default Page Scaffo
 
 Go to the **Page Properties** of the new page and set the *Title Text*, *Description*, *Target Template* and *Target Path*, as described above.
 
-Vous devez ensuite définir la structure de la page qui sera créée par ce scaffold. To do this go into **[design mode](/help/sites-authoring/page-authoring.md#sidekick)**on the scaffold page. Un lien s’affiche alors pour vous permettre de modifier le scaffold dans l’**éditeur de boîte de dialogue**.
+Vous devez ensuite définir la structure de la page qui sera créée par ce scaffold. To do this go into **[design mode](/help/sites-authoring/page-authoring.md#sidekick)** on the scaffold page. Un lien s’affiche alors pour vous permettre de modifier le scaffold dans l’**éditeur de boîte de dialogue**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -82,9 +85,9 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 ![textedit](assets/textedit.png)
 
-La liste des propriétés de ce champ s’affiche sur le côté droit de l’éditeur de dialogue, comme suit :
+La liste de propriétés de ce champ s’affiche sur le côté droit de l’éditeur de dialogue, comme suit :
 
-![list_of_properties](assets/list_of_properties.png)
+![liste_of_properties](assets/list_of_properties.png)
 
 Notez la propriété name de ce champ. Elle porte la valeur suivante :
 
@@ -105,7 +108,7 @@ Pour spécifier ces deux informations, vous devez utiliser des champs masqués. 
 
 Les propriétés de ce champ masqué sont les suivantes :
 
-![hidden_list_props](assets/hidden_list_props.png)
+![hidden_liste_props](assets/hidden_list_props.png)
 
 La propriété name de ce champ masqué est
 
@@ -125,7 +128,7 @@ Vous pouvez afficher le second champ masqué en cliquant sur celui-ci comme ceci
 
 Les propriétés de ce champ masqué sont les suivantes :
 
-![hidden_list_props2](assets/hidden_list_props2.png)
+![hidden_liste_props2](assets/hidden_list_props2.png)
 
 La propriété name de ce champ masqué est
 
