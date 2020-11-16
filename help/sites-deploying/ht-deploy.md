@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 257f3e4a-4b59-4cbb-bf61-f72f173676e6
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 85%
 
 ---
 
@@ -22,7 +25,7 @@ Les rubriques suivantes décrivent comment effectuer certaines tâches de déplo
 * [Comment utiliser la visionneuse de journaux](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [Comment purger les workflows et le journal d’audit](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Conseils de réglage de la performance](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+* [Conseils de réglage de la performance](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html)
 * [Comment supprimer des fonctions de l’écran de bienvenue](/help/sites-developing/customizing-the-welcome-console.md)
 * [Comment désactiver la fonction de suivi de l’emplacement](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
 
