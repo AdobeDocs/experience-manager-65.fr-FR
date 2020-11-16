@@ -1,6 +1,6 @@
 ---
-title: Création de contenu accessible pour l’Adobe Experience Manager (conformité WCAG 2.1)
-description: Utiliser AEM pour aider à rendre le contenu Web accessible et utilisable par les personnes handicapées
+title: Création de contenu accessible pour Adobe Experience Manager (conformité WCAG 2.1)
+description: Utiliser AEM pour aider à rendre le contenu Web accessible aux personnes handicapées et utilisable par elles
 translation-type: tm+mt
 source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
 workflow-type: tm+mt
@@ -71,7 +71,7 @@ Pour les images statiques, la règle de base consiste à fournir un équivalent 
 
 >[!NOTE]
 >
->Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ**Texte de remplacement **pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ**Étiquette **(onglet**[Accessibilité](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
+>Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
 >
 >Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt`[ afin que les auteurs puissent l’ajouter au contenu (voir Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
