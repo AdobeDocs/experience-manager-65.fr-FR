@@ -22,7 +22,7 @@ ht-degree: 81%
 
 Créez une configuration pour que le service cloud Microsoft Translator utilise votre compte Microsoft Traduction pour traduire le contenu des pages ou des communautés, ou des ressources AEM.
 
-| Propriétés | Description |
+| Propriété | Description |
 |---|---|
 | Libellé de traduction | Nom d’affichage du service de traduction. |
 | Attribution de traduction | (Optional) For user-generated content, the attribution that appears next to translated text, for example `Translations by Microsoft`. |
