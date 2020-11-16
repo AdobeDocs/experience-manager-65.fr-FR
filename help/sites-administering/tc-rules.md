@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 74%
 
 ---
 
@@ -170,7 +173,7 @@ Then you need to select your context and then click **Edit**. Cette action ouvre
 
 There are 4 attributes that you can change via the UI: `isDeep`, `inherit`, `translate` and `updateDestinationLanguage`.
 
-**isDeep** Cet attribut s’applique aux filtres de noeud et est défini sur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
+**isDeep** Cet attribut est applicable sur les filtres de noeud et est true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
 
 For example, child nodes are getting added into a translation job even when the parent node is having property `draftOnly` set to true to flag draft content. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
@@ -192,7 +195,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**translate** L’attribut translate est simplement utilisé pour indiquer si une propriété doit être traduite ou non.
+**translate** L&#39;attribut translate est simplement utilisé pour spécifier si une propriété doit être traduite ou non.
 
 In the UI, you can check/uncheck **Translate** in the **Properties** tab.
 
