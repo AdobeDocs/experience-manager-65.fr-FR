@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 91%
 
 ---
 
@@ -33,16 +36,16 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Vous avez modifié une page et l’avez répliquée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
 
-* **Motif** :
+* **Raison**:
 
    * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
 
-* **Solutions** :
+* **Solutions**:
 
    * Plusieurs solutions sont possibles :
    * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
-   * Ajoutez `?` à la fin de l’URL de la page.Par exemple :
+   * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
 
       `http://localhost:4502/sites.html/content?`
 
@@ -56,21 +59,21 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Le sidekick n’est pas visible lors de la modification d’une page de contenu dans l’environnement de création.
 
-* **Motif** :
+* **Raison**:
 
    * Dans de rares cas, il se peut que vous ayez positionné l’en-tête de votre sidekick en dehors de votre fenêtre active. Ceci signifie que vous ne pouvez pas le repositionner.
 
-* **Solution** :
+* **Solution**:
 
    * Fermez votre session en cours et rouvrez-la. Le sidekick revient à sa position par défaut.
 
 ## Rechercher et remplacer - Toutes les instances ne sont pas remplacées {#find-replace-not-all-instances-are-replaced}
 
-* **Problème :**
+* **Problème:**
 
    * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
 
-* **Motif** :
+* **Raison**:
 
    * The capability of **Find &amp; Replace** depends on how the content is saved, and whether it can be searched upon. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
 
@@ -79,7 +82,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
       * `jcr:text`
       * `text`
 
-* **Solution** :
+* **Solution**:
 
    * Ces définitions peuvent être modifiées dans la configuration du **servlet Day CQ WCM Find Replace** à l’aide de la **console Web**, par exemple à l’adresse
 
