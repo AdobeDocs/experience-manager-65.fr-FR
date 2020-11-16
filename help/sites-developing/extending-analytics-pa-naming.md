@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 72%
 
 ---
 
@@ -80,7 +83,7 @@ L’interface AnalyticsPageNameProvider définit deux méthodes que vous devez m
 
 * `getPageName`: Renvoie une `String` valeur qui représente la valeur à utiliser comme `s.pageName` propriété.
 
-* `getResource`: Renvoie un `org.apache.sling.api.resource.Resource` objet qui représente la page associée à la `s.pageName` propriété.
+* `getResource`: Renvoie un objet `org.apache.sling.api.resource.Resource` qui représente la page associée à la `s.pageName` propriété.
 
 Both methods take a `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext` object as a parameter. La classe `AnalyticsPageNameContext` fournit des informations sur le contexte des appels Analytics :
 
