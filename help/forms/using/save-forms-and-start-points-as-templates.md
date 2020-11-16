@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 80%
 
 ---
 
@@ -21,13 +24,13 @@ Parfois, lorsque les utilisateurs remplissent un formulaire, les entrées à cer
 
 Pour créer un modèle, procédez comme suit :
 
-1. Ouvrez un formulaire et sélectionnez ou remplissez les champs dont les valeurs sont identiques presqu’à chaque fois que vous l’utilisez. Vous pouvez inclure une pièce jointe avec le modèle que vous ajoutez généralement lorsque vous remplissez le formulaire.
-1. Appuyez sur l’icône **Enregistrer en tant que modèle** ![save_as_](assets/save_as_template.png)template. Une boîte de dialogue pour indiquer le nom du modèle s’affiche.
+1. Ouvrez un formulaire et sélectionnez ou remplissez les champs dont les valeurs sont identiques presqu’à chaque fois que vous l’utilisez. Vous pouvez inclure une pièce jointe au modèle que vous ajoutez généralement lorsque vous remplissez le formulaire.
+1. Appuyez sur l’icône **Enregistrer en tant que modèle** ![save_as_](assets/save_as_template.png)templaticon. Une boîte de dialogue pour indiquer le nom du modèle s’affiche.
 1. Specify the name of the template and tap **Save**. Le modèle s’affiche dans le dossier Templates.
 
    Si un modèle portant le même nom existe, une boîte de dialogue de confirmation de remplacement du modèle existant s’affiche. Pour remplacer le modèle existant par le nouveau modèle, appuyez sur **Continuer** ou pour enregistrer le modèle sous un autre nom, appuyez sur **Annuler**.
 
-Désormais, vous pouvez ouvrir le modèle enregistré. Chaque fois qu’un modèle est ouvert, un nouveau formulaire ou une nouvelle tâche est créé, et le formulaire présente les données enregistrées et les options. Avec les modèles, vous pouvez modifier les données préremplies, ajouter une pièce jointe, enregistrer en tant que brouillon, envoyer la tâche ou créer un autre modèle à l’aide de celle-ci. Les modèles sont propres aux périphériques mobiles et ne sont pas synchronisés avec le serveur Adobe Experience Manager Forms.
+Désormais, vous pouvez ouvrir le modèle enregistré. Chaque fois qu’un modèle est ouvert, un nouveau formulaire ou une nouvelle tâche est créé, et le formulaire présente les données enregistrées et les options. Les modèles vous permettent de modifier les données préremplies, d’ajouter une pièce jointe, d’enregistrer en tant que brouillon, d’envoyer la tâche ou de créer un autre modèle à l’aide de celle-ci. Les modèles sont propres aux périphériques mobiles et ne sont pas synchronisés avec le serveur Adobe Experience Manager Forms.
 
 Vous pouvez également supprimer un modèle s’il n’est plus nécessaire. Pour supprimer un modèle, accédez au dossier Templates, appuyez sur les points de suspension et appuyez sur **Supprimer le modèle**.
 
