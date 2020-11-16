@@ -387,7 +387,7 @@ The other modes can be accessed from the sidekick, or the suffix `?wcmmode=disab
 
 * **Paths (chemins d’accès)**, une liste d’emplacements où le système détecte des modifications de page avant de déclencher `jcr:Event`.
 
-**adobe Page Impressions Tracker** Pour une instance d&#39;auteur configurée :
+**Adobe Page Impressions Tracker** Pour une instance d&#39;auteur configurée :
 
 * **sling.auth.requirements**: définissez la valeur de cette propriété sur `-/libs/wcm/stats/tracker`
 
