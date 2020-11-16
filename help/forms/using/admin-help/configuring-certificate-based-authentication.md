@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 94%
 
 ---
 
@@ -54,28 +57,29 @@ Lorsque vous testez un certificat, User Management télécharge les contrôles p
 
    Vous pouvez utiliser les caractères suivants dans l’expression regex :
 
-   *  . (n’importe quel caractère)
-   *  &amp;ast; (0 occurrence ou plus)
+   *  : (n’importe quel caractère)
+   * &amp;ast; (0 occurrence ou plus)
    * () (spécifier le groupe entre parenthèses)
    * \ (permet d’utiliser un caractère regex en tant que caractère normal)
    * $n (permet de faire référence au énième groupe)
+
    Exemples d’expressions régulières :
 
    * Pour extraire « Alex Dupont » de « Alex Dupont (Authentification) »
 
-      **Regex :** (.&amp;ast;) \(Authentication\)
+      **Regex :** (.&amp;ast;) \(Authentification\)
 
    * Pour extraire « Alex Dupont » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
    * Pour extraire « Dupont Alex » de « Alex (Authentification) Dupont »
 
-      **Regex :** (.&amp;ast;)\(Authentication\) (.&amp;ast;)
+      **Regex :** (.&amp;ast;)\(Authentification\) (.&amp;ast;)
 
       Ordre personnalisé : $2 $1 (renvoyer le second groupe concaténé au premier groupe, capturé par un caractère espace)
 
-   * Pour extraire «&nbsp;adupont@orgexemple.fr&nbsp;» de «&nbsp;smtp:adupont@orgexemple.fr&nbsp;»
+   * Pour extraire « adupont@orgexemple.fr » de « smtp:adupont@orgexemple.fr »
 
       **Regex :** smtp:(.&amp;ast;)
    Pour plus de détails sur l’utilisation des expressions régulières, reportez-vous au [Didacticiel Java sur les expressions régulières](https://java.sun.com/docs/books/tutorial/essential/regex/).
