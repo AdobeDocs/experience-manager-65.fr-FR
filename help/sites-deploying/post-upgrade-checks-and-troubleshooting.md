@@ -12,6 +12,9 @@ discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '1829'
+ht-degree: 95%
 
 ---
 
@@ -176,7 +179,7 @@ La manière de gérer le code personnalisé erroné consiste à réaliser en pre
 
 ### Personnalisations manquantes sous /etc {#missing-customizations-under-etc}
 
-`/apps` et `/libs` sont bien gérées par la mise à niveau, mais les modifications apportées à `/etc` la section peuvent nécessiter une restauration manuelle à partir de `/var/upgrade/PreUpgradeBackup` la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
+`/apps` et `/libs` sont bien gérés par la mise à niveau, mais les modifications sous `/etc` peuvent devoir être restaurées manuellement à partir de `/var/upgrade/PreUpgradeBackup` la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
 
 ### Analyse des journaux error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
@@ -190,7 +193,7 @@ grep -v UnrelatedErrorString
 
 Certains messages d’erreur peuvent ne pas être immédiatement explicatifs. Dans ce cas, l’étude du contexte dans lequel ils se sont produits peut également aider à comprendre où l’erreur a été créée. Vous pouvez séparer l’erreur à l’aide de :
 
-* `grep -B` pour ajouter des lignes avant l&#39;erreur;
+* `grep -B` pour ajouter des lignes avant l&#39;erreur ;
 
 ou
 
