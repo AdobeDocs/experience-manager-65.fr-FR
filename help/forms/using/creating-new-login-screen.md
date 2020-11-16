@@ -289,7 +289,7 @@ css.newLoginContentArea {
 
 ### Ajoutez de nouvelles images {#add-new-images}
 
-1. Suivez les étapes pour Ajouter un nouveau style ou modifier le style existant (comme indiqué ci-dessus).
+1. Suivez les étapes pour Ajouter un nouveau style ou modifier le style existant (décrites ci-dessus).
 1. Add new images in `/apps/livecycle/core/content/login`. Pour ajouter une image :
 
    1. Installez le client WebDAV.
@@ -297,7 +297,7 @@ css.newLoginContentArea {
 
    1. Ajoutez de nouvelles images.
 
-1. Ajoutez de nouveaux styles `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
+1. Ajouter de nouveaux styles `/apps/livecycle/core/content/login/login.css,` correspondant aux nouvelles images ajoutées dans `/apps/livecycle/core/content/login`.
 1. Use the new styles in `login.jsp` at `/apps/livecycle/core/components`.
 
 Par exemple :
