@@ -1,6 +1,6 @@
 ---
 title: Glossaire
-seo-title: 'Glossaire   '
+seo-title: Glossaire
 description: Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables de la liste de contrôle de projet.
 seo-description: Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables de la liste de contrôle de projet.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
@@ -12,11 +12,14 @@ discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ca25e66b280db479f69c487753a557b0240233da
+workflow-type: tm+mt
+source-wordcount: '7050'
+ht-degree: 96%
 
 ---
 
 
-# Glossaire   {#glossary}
+# Glossaire {#glossary}
 
 This glossary lists (alpabetically) details of all Deliverable documents from the [Project Checklist](/help/managing/best-practices-checklist.md).
 
@@ -63,15 +66,15 @@ Formation pour le personnel qui produit du contenu pour la solution. Voir les [s
 
 ### Examen de certification AEM {#aem-certification-exam}
 
-Assurez-vous que les personnages appropriés sont inscrits pour passer les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) pertinents.
+Assurez-vous que les personnages appropriés sont inscrits pour passer les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinents.
 
 ### Certifié AEM {#aem-certified}
 
-Assurez-vous que les personnages appropriés ont réussi les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) pertinents.
+Assurez-vous que les personnages appropriés ont réussi les [examens de certification](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinents.
 
 ### Formation technique AEM {#aem-technical-training}
 
-assurer une formation technique à la personne appropriée; par exemple, les développeurs, les architectes, les ingénieurs et les professionnels du monde des affaires.
+dispenser une formation technique à la personne concernée ; par exemple, les développeurs, les architectes, les ingénieurs et les professionnels du monde des affaires.
 
 ### Accord sur les indicateurs de performances clés, définis comme les objectifs du projet {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -106,7 +109,7 @@ Outre les tâches de maintenance standard d’Adobe Experience Manager (AEM), 
 
 Assurez-vous que votre équipe se compose d’un personnel ayant reçu une formation appropriée. Pour les équipes de projet, nous recommandons chacun des éléments suivants :
 
-* au moins un développeur principal certifié AEM
+* au moins un développeur de pistes certifié AEM
 * au moins un architecte certifié AEM
 * au moins 75 % de vos développeurs certifiés AEM ; cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors, ainsi que de garantir le partage et la transparence des connaissances.
 
@@ -175,7 +178,7 @@ Toute l’équipe de projet et l’ensemble des parties prenantes doivent confir
 
 ### Concept de sauvegarde et de restauration {#backup-and-restore-concept}
 
-Le concept de sauvegarde et de restauration décrit les fonctionnalités techniques qui seront mises en œuvre dans la solution. Elle est requise par la stratégie de sauvegarde et de restauration de la société.
+Le concept de sauvegarde et de restauration décrit les fonctionnalités techniques qui seront mises en œuvre dans la solution. Elle est requise par la politique de sauvegarde et de restauration de la Société.
 
 ### Sauvegarde et restauration testées {#backup-and-restore-tested}
 
@@ -205,7 +208,7 @@ Les indicateurs de performances clés métier définissent des valeurs mesurable
 
 Le document des exigences de l’entreprise décrit la solution d’entreprise pour un projet, en spécifiant clairement les besoins et attentes métier du client. Le document des exigences de l’entreprise distingue également la solution métier et la solution technique.
 
-Lors de l’examen de la solution commerciale, le BRD doit répondre à la question suivante :
+Lors de l&#39;examen de la solution commerciale, la BRD doit répondre à la question suivante :
 &quot;Que veut faire l&#39;entreprise ?&quot;
 
 ### Validation par l’entreprise de tous les réglages nécessaires de la solution ou de l’architecture identifiée et alignée par rapport aux attentes de retour sur investissement et d’IPC {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
@@ -353,7 +356,7 @@ Rapports du client pour le responsable de la qualité au cours de la période de
 
 Tous les correctifs et/ou personnalisations appliqués doivent être documentés, car ils peuvent affecter les futures mises à niveau :
 
-* AEM peut être hautement personnalisé selon vos besoins. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toute modification majeure apportée à l’interface utilisateur d’AEM.
+* AEM peut être hautement personnalisé selon vos besoins. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toute modification majeure apportée à l’interface utilisateur de l’AEM.
 * Toutes les mises à jour requises pour la solution actuelle doivent être entièrement documentées. Celles-ci peuvent inclure :
 
    * des Cumulative Fix Packs (CFP) ;
@@ -461,13 +464,13 @@ Un schéma (ou un ensemble de schémas) des systèmes et des dépendances exista
 
 ### Définitions et critères de réussite attendus {#expected-success-definitions-and-criteria}
 
-Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de toutes les attentes au début d&#39;un projet, car elles devraient influencer toutes les décisions prises tout au long de la mise en oeuvre.
+Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de l&#39;ensemble complet des attentes au début d&#39;un projet, car celles-ci devraient influencer toutes les décisions prises tout au long de la mise en oeuvre.
 
 Les exceptions peuvent inclure :
 
 * les IPC spécifiques, tels que l’augmentation du pourcentage de pages proposées ;
 * un temps de publication du contenu réduit ;
-* des objectifs de niveau supérieur, comme une interface conviviale ;
+* objectifs de niveau supérieur, tels qu’une interface conviviale
 
 ### Exigences de conception de l’expérience {#experience-designs-requirements}
 
@@ -531,7 +534,7 @@ Estimations initiales des éléments suivants :
 
 ### Le matériel sera mis à disposition pour remplir les exigences {#hardware-will-be-available-to-fulfill-requirements}
 
-Confirmation que tous les environnements disposent du matériel minimal requis.
+Confirmation que tous les environnements auront le matériel minimum requis en place.
 
 ### Exigences de haut niveau {#high-level-requirements}
 
@@ -1266,7 +1269,7 @@ Rapports détaillant les résultats des tests, notamment :
 * l’état des cas de test exécutés ;
 * les autres remarques relatives à la qualité.
 
-Il convient de noter les informations suivantes :
+Il convient de noter les éléments suivants :
 
 * N’importe quelle équipe de test devrait pouvoir rester neutre et fournir les résultats de test.
 * Il est de la responsabilité du chef de projet d’évaluer toutes les implications des résultats et de décider de l’action appropriée.
