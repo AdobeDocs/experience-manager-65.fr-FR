@@ -33,7 +33,7 @@ Lorsque des utilisateurs cliquent sur des liens figurant sur les pages de votre 
 
 ## Suivi des téléchargements de fichiers {#tracking-file-downloads}
 
-Configurez la structure Adobe Analytics de sorte que les fichiers téléchargés à partir des pages associées soient automatiquement suivis en tant que téléchargements dans Adobe Analytics. Lorsque vous activez le suivi des téléchargements, seuls les types de fichiers que vous spécifiez sont suivis.
+Configurez la structure Adobe Analytics de sorte que les fichiers téléchargés à partir des pages associées fassent automatiquement l’objet d’un suivi en tant que téléchargements dans Adobe Analytics. Lorsque vous activez le suivi des téléchargements, seuls les types de fichiers que vous spécifiez sont suivis.
 
 Les téléchargements des types de fichiers suivants sont suivis par défaut :
 
@@ -68,7 +68,7 @@ Pour activer le suivi des téléchargements pour votre structure Adobe Analytics
 
 Vous pouvez effectuer le suivi des clics sur les liens externes (liens de sortie) sur vos pages.
 
-Pour effectuer le suivi des liens externes pour votre structure Analytics Adobe :
+Pour effectuer le suivi des liens externes pour votre structure Adobe Analytics :
 
 1. [Ouvrez la structure Adobe Analytics et développez la section **Configuration du suivi des liens**.](#configuring-link-tracking-for-an-adobe-analytics-framework)
 1. Configurez les propriétés suivantes, en fonction de vos besoins.
@@ -108,7 +108,7 @@ s.linkLeaveQueryString= false;
 
 Vous pouvez configurer AEM pour envoyer des données de événement et de variable à Adobe Analytics lorsqu’un utilisateur clique sur un lien. The **Link Tracking Configuration** properties enable you to specify the Adobe Analytics events and variables to track when link clicks occur.
 
-Les mappages de structure déterminent les valeurs d’événement et de variable. Vous pouvez mapper les variables Adobe Analytics aux variables de vos composants de contenu qui stockent les données dont vous souhaitez effectuer le suivi lorsque vous cliquez sur des liens.
+Les mappages de structure déterminent les valeurs d’événement et de variable. Vous pouvez mapper des variables Adobe Analytics aux variables de vos composants de contenu qui stockent les données dont vous souhaitez effectuer le suivi lorsque vous cliquez sur des liens.
 
 Pour envoyer des données de variable avec des clics sur des liens :
 
@@ -117,13 +117,13 @@ Pour envoyer des données de variable avec des clics sur des liens :
 
 Pour envoyer des propriétés données variables avec des clics sur des liens :
 
-* **Événements de suivi des liens** Saisissez les variables de événement Analytics Adobe que vous souhaitez utiliser pour comptabiliser les clics sur les liens.
+* **Événements** de suivi des liens Saisissez les variables de événement Adobe Analytics que vous souhaitez utiliser pour comptabiliser les clics sur les liens.
 
    S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
    The default value of `None` causes no event tracking.
 
-* **Vars de suivi des liens** Entrez les variables Analytics Adobe que vous souhaitez envoyer à Adobe Analytics lorsque vous cliquez sur des liens. S’il y a plusieurs noms de variables, séparez-les par une virgule.
+* **Vars de suivi des liens** Entrez les variables Adobe Analytics que vous souhaitez envoyer à Adobe Analytics lorsque vous cliquez sur des liens. S’il y a plusieurs noms de variables, séparez-les par une virgule.
 
    The default value of `None` causes no variable data to be sent.
 
@@ -136,7 +136,7 @@ s.linkTrackVars= 'prop4';
 
 ## Exemple de configuration du suivi des liens {#example-link-tracking-configuration}
 
-Suivez les procédures suivantes pour explorer le comportement de suivi des liens de l’intégration Adobe. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+Suivez les procédures suivantes pour explorer le comportement de suivi des liens de l’intégration Adobe Analytics. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
 ### Configuration générale {#general-configuration}
 
@@ -243,9 +243,9 @@ L’appel ressemblera à ceci une fois affiché avec Adobe Marketing Cloud Debug
 1. Activez **Laisser la chaîne de requête**.
 1. Rechargez l’aperçu de la page, puis cliquez sur le lien.
 
-Les détails de l’appel qui s’affichent dans le débogueur d’Adobe Marketing Cloud sont similaires à l’exemple suivant :
+Les détails de l’appel qui s’affichent dans le débogueur Adobe Marketing Cloud sont similaires à l’exemple suivant :
 
-![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
+![aa-leavequerysearch-principal](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
