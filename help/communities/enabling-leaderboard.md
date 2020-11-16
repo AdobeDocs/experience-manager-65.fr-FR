@@ -107,7 +107,7 @@ Configuration du composant de tableau de bord :
 * Onglet Settings:
 
    * Nom d’affichage = `Participation Board`
-   * `checked`:
+   * `checked` :
 
       * Badge
       * Nom du badge
@@ -131,7 +131,7 @@ Configuration du composant de tableau de bord :
 * Onglet Settings:
 
    * Nom d’affichage = `Expertise Board`
-   * `checked`:
+   * `checked` :
 
       * Badge
       * Utiliser un avatar
