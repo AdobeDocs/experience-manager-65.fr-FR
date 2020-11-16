@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 64%
 
 ---
 
@@ -89,7 +92,7 @@ IntelliJ IDEA doit comprendre où trouver les JSP pour débogage. Comme IDEA ne 
 1. Go to **File -> Project Structure**
 1. Select the **Content** module
 1. Click **+** above the list of modules and select **Web**
-1. En tant que répertoire des ressources Web, sélectionnez le nom `content/src/main/content/jcr_root subdirectory` de votre projet comme illustré dans la capture d’écran ci-dessous.
+1. En tant que Répertoire de ressources Web, sélectionnez le nom `content/src/main/content/jcr_root subdirectory` de votre projet, comme le montre la capture d&#39;écran ci-dessous.
 
 ![chlimage_1-48](assets/chlimage_1-48a.png)
 
