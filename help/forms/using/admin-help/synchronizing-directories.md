@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 97%
 
 ---
 
@@ -69,7 +72,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
 1. Sous Expression cron d’achèvement de synchronisation, saisissez une expression cron représentant l’intervalle auquel User Management tente d’effectuer à nouveau les synchronisations ayant échoué. L’utilisation de l’expression cron est basée sur le système de planification des tâches Open Source de Quartz, version 1.4.0 
 
-   La valeur par défaut est 0 0/13 &amp;ast; ?  &amp;ast; , ce qui signifie que la vérification a lieu toutes les 13 minutes.
+   La valeur par défaut est 0 0/13 &amp;ast; ? &amp;ast; , ce qui signifie que la vérification a lieu toutes les 13 minutes.
 
 ## Synchronisation manuelle des annuaires {#manually-synchronize-directories}
 
