@@ -576,7 +576,7 @@ Par exemple, pour afficher le paramètre prédéfini Analytics sur le noeud d’
        trackingServer=aemvideodal.d2.sc.omtrdc.net
       ```
 
-   * **Vérifiez le paramètre prédéfini Analyses vidéo à l’aide de l’outil Rapports vidéo dans AEM****[!UICONTROL Outils defrappe > Ressources > Rapports vidéo.]**
+   * **Vérifiez le paramètre prédéfini Analyses vidéo à l’aide de l’outil Rapports vidéo dans AEM****[!UICONTROL Outils detouche > Ressources > Rapports vidéo.]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -1064,7 +1064,7 @@ Une fois que vous avez installé le Feature Pack, vous devez configurer les pro
    <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
    <td>Chaîne</td>
    <td>relative</td>
-   <td><p>Indique le mode de rendu. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>adobe recommande <strong>relative </strong><i></i>comme valeur par défaut.</p> </td>
+   <td><p>Indique le mode de rendu. Acceptable values are: <strong>perceptual, relative, saturation, absolute. </strong><i></i>Adobe recommande <strong>relative </strong><i></i>comme valeur par défaut.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1086,7 +1086,7 @@ Les profils de couleurs installés sont les suivants :
   <tr>
    <td>AdobeRGB</td>
    <td>RVB</td>
-   <td>adobe rgb (1998)</td>
+   <td>Adobe RGB (1998)</td>
   </tr>
   <tr>
    <td>AppleRGB</td>
