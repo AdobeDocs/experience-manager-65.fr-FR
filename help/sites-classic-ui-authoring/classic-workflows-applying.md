@@ -1,6 +1,6 @@
 ---
-title: Application de processus aux pages
-seo-title: Application de workflows aux pages
+title: 'Application de workflows aux pages  '
+seo-title: 'Application de workflows aux pages  '
 description: Les workflows peuvent être démarrés à partir de la console Sites web ou, lors de la modification d’une page, à partir du sidekick.
 seo-description: Les workflows peuvent être démarrés à partir de la console Sites web ou, lors de la modification d’une page, à partir du sidekick.
 uuid: 55f6f1d7-da54-4732-b9ff-b7479622db51
@@ -11,15 +11,18 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
 
-# Application de workflows aux pages{#applying-workflows-to-pages}
+# Application de workflows aux pages  {#applying-workflows-to-pages}
 
 Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes :
 
-* Le workflow à appliquer.
+* Workflow à appliquer.
 
    Vous pouvez appliquer n’importe quel workflow (auquel vous avez accès, selon les affectations réalisées par votre administrateur AEM).
 * Si vous le souhaitez :
