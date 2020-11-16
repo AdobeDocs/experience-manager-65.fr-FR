@@ -184,7 +184,7 @@ Pour ajouter une expérience de visionnage interactif à un site réactif par l�
 
    >[!NOTE]
    >
-   >Si les composants WCM de Scene7 ne sont pas disponibles, veillez à les activer via le mode Création.
+   >Si les composants Scene7 WCM ne sont pas disponibles, veillez à les activer via le mode Création.
 
 1. Dans un site web dont les composants Scene7 sont activés, faites glisser une visionneuse **Image** vers la page.
 1. Modifiez le composant et ajustez les points d’arrêt dans l’onglet **Paramètres de Scene7**.
@@ -221,7 +221,7 @@ Dans le composant Fenêtre déroulante HTML5, l’élément s’affiche sous la 
 >
 >Si le composant Fenêtre déroulante utilise une taille personnalisée, cette taille personnalisée est utilisée et la configuration réactive du composant est désactivée.
 >
->Si votre composant Fenêtre déroulante utilise la taille par défaut, telle que définie dans la vue de conception, la taille par défaut est utilisée et le composant s’étire pour s’adapter à la taille de mise en page avec la configuration adaptée du composant activée. Sachez toutefois qu’il existe une limite à la configuration réactive du composant. Lorsque vous utilisez le composant Fenêtre déroulante avec la configuration réactive, vous ne devez pas l’utiliser avec l’étirement de pleine page. Dans le cas contraire, la fenêtre déroulante peut s’étendre au-delà de la bordure droite de la page.
+>Si votre composant Fenêtre déroulante utilise la taille par défaut, telle qu’elle est définie dans la vue de conception, la taille par défaut est utilisée et le composant s’étire pour s’adapter à la taille de la mise en page avec la configuration adaptée du composant activée. Sachez toutefois qu’il existe une limite à la configuration réactive du composant. Lorsque vous utilisez le composant Fenêtre déroulante avec la configuration réactive, vous ne devez pas l’utiliser avec l’étirement de pleine page. Dans le cas contraire, la fenêtre déroulante peut s’étendre au-delà de la bordure droite de la page.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -239,7 +239,7 @@ Le composant Image de Scene7 permet d’ajouter la fonctionnalité Scene7 aux im
 
 **Paramètre prédéfini** de visionneuse Sélectionnez un paramètre prédéfini existant dans le menu déroulant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
-**Configuration** de Scene7 Sélectionnez la configuration Scene7 à utiliser pour récupérer les paramètres d’image prédéfinis actifs à partir de SPS.
+**Configuration** Scene7 Sélectionnez la configuration Scene7 à utiliser pour récupérer les paramètres d’image prédéfinis principaux à partir de SPS.
 
 **Paramètre** d’image prédéfini Sélectionnez un paramètre d’image prédéfini existant dans le menu déroulant. Si le paramètre d’image prédéfini que vous recherchez n’est pas visible, vous devrez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
@@ -259,13 +259,13 @@ Cliquez sur **Modifier** pour configurer le composant. You can configure [sett
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-**Référence du fichier, Largeur et Hauteur** Voir les paramètres communs à tous les composants Scene7.
+**Référence du fichier, Largeur, Hauteur** Voir les paramètres communs à tous les composants Scene7.
 
 >[!NOTE]
 >
 >Les commandes et paramètres d’URL Scene7 ne peuvent pas être ajoutés directement à l’URL Référence du fichier. Ils ne peuvent être définis que dans l’interface utilisateur du composant, dans le panneau **Paramètre**.
 
-**Titre, Texte** de remplacement Dans l’onglet Modèle d’image de Scene7, ajoutez un titre à l’image et un texte de remplacement pour les utilisateurs dont les graphiques sont désactivés.
+**Titre, Texte** de remplacement Dans l’onglet Modèle d’image Scene7, ajoutez un titre à l’image et un texte de remplacement pour les utilisateurs dont les graphiques sont désactivés.
 
 **URL, Ouvrir dans** Vous pouvez définir un fichier à partir duquel ouvrir un lien. Définissez l’URL, puis dans le champ Ouvrir dans, indiquez si vous souhaitez l’ouvrir dans la même fenêtre ou une nouvelle fenêtre.
 
@@ -318,7 +318,7 @@ Pour plus d’informations sur le fonctionnement des vidéos avec l’intégrati
 
 ### Limitations connues du composant vidéo {#known-limitations-for-the-video-component}
 
-Adobe DAM et WCM indiquent si une vidéo source principale est téléchargée. Elles n’affichent pas les éléments proxy suivants :
+Adobe DAM et WCM indique si une vidéo source Principale est téléchargée. Elles n’affichent pas les éléments proxy suivants :
 
 * Rendus codés Scene7
 * Ensembles de vidéos adaptables Scene7
@@ -390,11 +390,11 @@ Par défaut, AEM recherche le dossier sélectionné et tous les sous-dossiers.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuration** Si plusieurs configurations Scene7 sont définies en Cloud Service, vous pouvez les sélectionner ici. De ce fait, le dossier change selon la configuration que vous avez choisie.
+**Configuration** Si plusieurs configurations Scene7 sont définies en Cloud Services, vous pouvez les sélectionner ici. De ce fait, le dossier change selon la configuration que vous avez choisie.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Type** de fichier Dans le navigateur Scene7, vous pouvez filtrer les résultats pour inclure les éléments suivants : images, modèles, vidéos et visionneuses de vidéos adaptatives. Si vous ne sélectionnez aucun type d’élément, AEM recherche par défaut tous les types d’élément.
+**Type** de ressource Dans le navigateur Scene7, vous pouvez filtrer les résultats pour inclure les éléments suivants : images, modèles, vidéos et visionneuses de vidéos adaptatives. Si vous ne sélectionnez aucun type d’élément, AEM recherche par défaut tous les types d’élément.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
