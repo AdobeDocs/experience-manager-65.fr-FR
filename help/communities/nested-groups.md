@@ -23,7 +23,7 @@ ht-degree: 5%
 
 ## Création de groupes sur l’auteur {#creating-groups-on-author}
 
-Sur l’instance de AEM Author, à partir de la navigation globale :
+Sur l’instance d’auteur AEM, à partir de la navigation globale :
 
 * Sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Sites]**.
 * Sélectionnez **[!UICONTROL engager le dossier]** pour l’ouvrir.
@@ -155,12 +155,12 @@ Après la publication du site communautaire principal :
 
 Il est possible d’expérimenter les différents groupes lorsqu’ils sont connectés, par exemple avec les utilisateurs [de](/help/communities/tutorials.md#demo-users) démonstration utilisés pour :
 
-* Membre du groupe Art/Historique : emily.andrews@mailinator.com/mot de passe
+* Membre du groupe Art/Historique : emily.andrews@mailinator.com/password
    * Le groupe restreint (secret), arts/histoire, est visible :
    * Peut afficher les groupes facultatifs (publics).
    * Peut rejoindre des groupes restreints (ouverts).
 
-* Gestionnaire de groupe : aaron.mcdonald@mailinator.com/mot de passe
+* Gestionnaire de groupe : aaron.mcdonald@mailinator.com/password
 
    * Peut afficher les groupes facultatifs (publics).
    * Peut rejoindre des groupes restreints (ouverts).
