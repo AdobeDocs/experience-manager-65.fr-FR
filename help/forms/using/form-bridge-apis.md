@@ -175,7 +175,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 **setFocus (som)** Définit la cible d’action sur le champ spécifié dans l’expression Som
 
-* **Input :** expression du champ sur lequel définir la cible d’action
+* **Input :** Expression du champ sur lequel définir la cible d’action
 * **Output :** aucune
 * **Error :** renvoie une exception si l’expression Som est incorrecte
 
@@ -183,7 +183,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 
 * **Entrée:**
 
-   * **som :** tableau contenant les expressions Som du champ. expression de définition de la valeur des champs.
+   * **som :** tableau contenant les expressions Som du champ. Expression de définition de la valeur des champs.
    * **value:** Tableau contenant les valeurs correspondant aux expressions Som fournies dans un **** tableau somarray. Si le type de données de la valeur n’est pas identique à fieldType, la valeur n’est pas modifiée.
 
 * **Output :** aucune
