@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 85%
 
 ---
 
@@ -108,7 +111,7 @@ Pour plus d’informations sur la définition des différents nœuds de configur
 
 ## Définition de lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
-Il est également possible de spécifier des lots supplémentaires à installer pour un mode d’exécution en particulier. Pour ces définitions, les dossiers d’installation sont utilisés pour conserver les lots. Là aussi, le mode d’exécution est indiqué par un préfixe :
+Il est également possible de spécifier des lots supplémentaires à installer pour un mode d’exécution en particulier. Pour ces définitions, les dossiers d’installation sont utilisés pour contenir les lots. Là aussi, le mode d’exécution est indiqué par un préfixe :
 
 * `install.author`
 * `install.publish`
@@ -120,7 +123,7 @@ Ces dossiers sont de type `nt:folder` et doivent contenir le lot approprié.
 Si vous avez défini des configurations pour plusieurs modes d’exécution, vous devez définir celle à utiliser au démarrage. Différentes méthodes permettent de spécifier le mode d’exécution à utiliser. La séquence de résolution est la suivante :
 
 1. [ `sling.properties` approuvé](#using-the-sling-properties-file)
-1. [ `-r` , option](#using-the-r-option)
+1. [ `-r` option](#using-the-r-option)
 1. [propriétés système (`-D`)](#using-a-system-property-in-the-start-script)
 
 1. [Détection du nom de fichier](#filename-detection-renaming-the-jar-file)
@@ -135,7 +138,7 @@ Vous pouvez utiliser le fichier `sling.properties` pour définir le mode d’ex�
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Ajoutez les propriétés suivantes : l’exemple suivant est destiné à l’auteur :
+1. Ajoutez les propriétés suivantes ; l’exemple suivant est destiné à author :
 
    `sling.run.modes=author`
 
@@ -151,16 +154,16 @@ java -jar cq-56-p4545.jar -r dev
 
 Une propriété système dans le script de démarrage peut être utilisée pour spécifier le mode d’exécution.
 
-* Par exemple, utilisez ce qui suit pour lancer une instance en tant qu’instance de publication de production située aux Etats-Unis :
+* Par exemple, utilisez les méthodes suivantes pour lancer une instance en tant qu’instance de publication de production située aux Etats-Unis :
 
    `-Dsling.run.modes=publish,prod,us`
 
 ### Détection de nom de fichier : attribution d’un nouveau nom au fichier JAR {#filename-detection-renaming-the-jar-file}
 
-Les deux modes d’exécution d’installation suivants peuvent être activés en renommant le fichier JAR d’installation avant l’installation :
+Les deux modes d&#39;exécution d&#39;installation suivants peuvent être activés en renommant le fichier JAR d&#39;installation avant l&#39;installation :
 
-* serveur 
-* author
+* publish
+* Auteur 
 
 Le fichier JAR doit suivre la convention de dénomination :
 
