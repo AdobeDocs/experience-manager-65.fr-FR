@@ -11,6 +11,9 @@ discoiquuid: 084075b8-826d-4f27-9342-35f33368f24f
 noindex: true
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 88%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Oak-run prend en charge tous les scénarios d’indexation sur la ligne de commande, sans qu’il faille orchestrer l’exécution de ces scénarios par le biais de la console JMX d’AEM.
 
-Les principaux avantages de l’utilisation de l’approche de commande de l’index oak-run.jar pour la gestion des index Oak sont les suivants :
+Les principaux avantages de l&#39;utilisation de l&#39;approche de commande de l&#39;index oak-run.jar pour la gestion des index Oak sont les suivants :
 
-1. La commande Oak-run index fournit un nouvel ensemble d’outils d’indexation pour AEM 6.4.
+1. La commande Oak-run index fournit un nouvel ensemble d&#39;outils d&#39;indexation pour AEM 6.4.
 1. Oak-run réduit la durée de réindexation, ce qui a un effet bénéfique sur les délais de réindexation des référentiels de grande taille.
 1. Oak-run réduit la consommation des ressources au cours de la réindexation dans AEM, ce qui se traduit par de meilleures performances globales du système.
 1. Oak-run fournit une réindexation hors-bande. Cette méthode prend en charge les situations dans lesquelles un environnement de production doit être disponible. Aucune maintenance ou période d’indisponibilité normalement requise pour la réindexation n’est tolérée.
@@ -84,11 +87,11 @@ Pour diagnostiquer certains des cas relatifs aux performances des requêtes, Ado
 
 Les opérations ci-dessus peuvent désormais être effectuées par le biais des commandes d’index d’opération suivantes :
 
-* `--index-info` - Collecte et vide diverses statistiques relatives aux index
+* `--index-info` - Collecte et vidage de diverses statistiques relatives aux index
 
 * `--index-definitions` - Collecte et vidage des définitions d&#39;index
 
-* `--index-dump` - Extraction du contenu de l&#39;index
+* `--index-dump` - Extrait le contenu de l&#39;index
 
 Vous trouverez, ci-dessous, un exemple d’utilisation pratique des commandes :
 
