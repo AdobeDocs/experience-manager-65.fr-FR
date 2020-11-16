@@ -40,7 +40,7 @@ Si une instance de publication devient inaccessible, tous les utilisateurs authe
 
 Pour permettre une évolutivité horizontale, la solution consiste à recourir à une authentification sans état grâce à la nouvelle prise en charge des jetons encapsulés dans AEM.
 
-Le jeton encapsulé est un élément de cryptographie qui permet à AEM de créer et de valider en toute sécurité des informations d’authentification hors ligne, sans accéder au référentiel. Ainsi, une demande d’authentification peut être effectuée sur toutes les instances de publication, sans nécessiter de connexions persistantes. Elle offre également l’avantage d’optimiser les performances d’authentification, car il n’est pas nécessaire d’accéder au référentiel pour chaque demande d’authentification.
+Le jeton encapsulé est un élément de cryptographie qui permet aux AEM de créer et de valider en toute sécurité des informations d&#39;authentification hors ligne, sans accéder au référentiel. Ainsi, une demande d’authentification peut être effectuée sur toutes les instances de publication, sans nécessiter de connexions persistantes. Elle offre également l’avantage d’optimiser les performances d’authentification, car il n’est pas nécessaire d’accéder au référentiel pour chaque demande d’authentification.
 
 Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué géographiquement avec les instances de création MongoMK et de publication TarMK ci-dessous :
 
@@ -61,7 +61,7 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 >* Les sessions bascules sont activées ou
    >
    >
-* Les utilisateurs sont déjà créés dans AEM au début de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les situations où les gestionnaires **créent** des utilisateurs pendant le processus de synchronisation.
+* Les utilisateurs sont déjà créés dans AEM lors du début de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les situations où les gestionnaires **créent** des utilisateurs pendant le processus de synchronisation.
 
 
 Lors de la configuration du jeton encapsulé, différents éléments doivent être pris en compte :
@@ -81,6 +81,7 @@ Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 1. Cherchez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
 
    * &lt;rép-install-aem-création>/crx-quickstart/launchpad/felix/bundle21
+
    Le fichier `bundle.info` à l’intérieur de chaque dossier identifie le nom du lot.
 
 1. Accédez au dossier des données. Par exemple :
