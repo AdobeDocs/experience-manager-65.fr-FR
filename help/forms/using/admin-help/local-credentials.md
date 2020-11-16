@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 98%
 
 ---
 
@@ -33,6 +36,7 @@ Pour obtenir des informations et des instructions concernant les extensions d’
    * **Informations d’identification de signature de document :** informations d’identification utilisées pour émettre une signature numérique sur un document.
    * **Informations d’identification des extensions d’Acrobat Reader DC :** certificat numérique spécifique des extensions d’Acrobat Reader DC qui permet l’activation de droits Adobe Reader dans les documents PDF générés.
    * **Par défaut :** indique qu’il s’agit des informations d’identification par défaut à utiliser avec les extensions d’Acrobat Reader DC.
+
    Pour plus d’informations sur l’obtention d’informations d’identification, voir [Préparation à l’installation d’AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
 
 1. Dans la zone Alias, saisissez un identificateur pour les informations d’identification. Cet identifiant sert de nom d’affichage aux informations d’identification dans les extensions d’Acrobat Reader DC et dans le service Signature. Il permet également d’accéder automatiquement aux informations d’identification via le SDK d’AEM Forms.
