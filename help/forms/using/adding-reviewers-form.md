@@ -61,7 +61,7 @@ Avant d’effectuer les étapes suivantes, reportez-vous à la section [Conditio
 
 To create a group and add members to it, navigate to **Tools** > **Operations** > **Security** > **Groups**.
 For more information, see [User Administration and Services](/help/sites-administering/security.md).
-Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Ce groupe d’utilisateurs est fourni avec des AEM Forms et garantit que les utilisateurs sont ajoutés en tant que réviseurs d’envoi.
+Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Ce groupe d’utilisateurs est fourni avec AEM Forms et garantit que les utilisateurs sont ajoutés en tant que réviseurs d’envoi.
 
 Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 
