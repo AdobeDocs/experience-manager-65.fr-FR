@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 77%
 
 ---
 
@@ -73,7 +76,7 @@ WebLogic Server Administration Console n’est plus accessible et l’invite de 
 
 ## Démarrage de WebLogic Administration Console {#start-weblogic-administration-console}
 
-1. If WebLogic Admin Server is not already running, from a command prompt, go to the *[appserver root]\user_projects\domains\[domainname]*directory, and enter the following command:
+1. If WebLogic Admin Server is not already running, from a command prompt, go to the *[appserver root]\user_projects\domains\[domainname]* directory, and enter the following command:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
@@ -109,7 +112,7 @@ Après avoir arrêté WebLogic Server, vous pouvez fermer l’invite de commande
 
 ## Arrêt d’ un serveur géré WebLogic {#stop-a-weblogic-managed-server}
 
-1. Start WebLogic Server administration console by typing `https://`*[host name]:[port ]*`/console`in the URL line of a web browser.
+1. Start WebLogic Server administration console by typing `https://`*[host name]:[port ]*`/console` in the URL line of a web browser.
 1. Sous Domain Structure, cliquez sur Environment > Servers.
 1. Dans le volet de droite, cliquez sur l’onglet Configuration.
 1. Sélectionnez le serveur géré que vous souhaitez arrêter.
