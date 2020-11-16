@@ -11,6 +11,9 @@ discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 **- Conditions requises**
 
-**Connaissances** préalables requises Avant de pouvoir ajouter AEM Forms Workspace à SharePoint Server, vous devez avoir accès à SharePoint Server avec les privilèges appropriés et connaître l’URL d’accès à Workspace. Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
+**Connaissances** préalables Avant de pouvoir ajouter AEM Forms Workspace à SharePoint Server, vous devez avoir accès à SharePoint Server avec les privilèges appropriés et connaître l’URL d’accès à Workspace. Les étapes ci-dessous supposent que vous connaissez SharePoint Server. Pour en savoir plus sur les composants Webpart de SharePoint Server, consultez Composants Webpart sous Windows SharePoint Services.
 
 **Niveau d’utilisateur** Début
 
