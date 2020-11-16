@@ -44,7 +44,7 @@ Communication à l’aide de `window.postMessage` / `window.attachEvent('message
 
 Cette méthode est la méthode standard de communication entre un cadre parent et un iframe. Les écouteurs d’événement existants issus de formulaires PDF précédemment ouverts sont supprimés avant d’en ajouter un nouveau. Cette purge tient également compte du passage de l’onglet Formulaire à l’onglet Historique et vice-versa dans la vue Détails de la tâche.
 
-**PDF.html -`FormBridge`javascript dans le PDF rendu**
+**PDF.html - `FormBridge` javascript dans le PDF rendu**
 
 Communication à l’aide de `pdfObject.postMessage` / `pdfObject.messageHandler`
 
