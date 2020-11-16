@@ -124,8 +124,8 @@ MLS avancé comprend des améliorations pour la recherche de contenu dans les la
 * Anglais : Remplacement du tige par un lemmatiseur.
 * Allemand : Décompresseur Ajouté.
 * Français : Manipulation d’une décision Ajoutée.
-* Chinois (simplifié) : ajouté un jetizer plus intelligent.
-* Différentes langues : ajouté un vermifuge, une liste de mots-clés et un banaliseur.
+* Chinois (simplifié) : Ajouté un jetizer plus intelligent.
+* Différentes langues : Ajouté un vermifuge, une liste de mots-clés et un banaliseur.
 
 Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 
