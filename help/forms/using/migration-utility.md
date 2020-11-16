@@ -47,7 +47,7 @@ Vous devez ensuite les mettre à jour en [exécutant l’utilitaire de migration
 
 If it is an out of place (fresh) installation, before you can use the assets and documents, you will need to install [AEMFD Compatibility package](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) (includes the Correspondence Management Compatibility package).
 
-Then you need to import your asset package (zip or cmp) on the new setup and then update the assets and documents by [running the Migration utility](#runningmigrationutility). adobe recommande de créer de nouveaux actifs sur la nouvelle configuration uniquement après avoir exécuté l’utilitaire de migration.
+Then you need to import your asset package (zip or cmp) on the new setup and then update the assets and documents by [running the Migration utility](#runningmigrationutility). Adobe recommande de créer de nouveaux actifs sur la nouvelle configuration uniquement après avoir exécuté l’utilitaire de migration.
 
 En raison de changements [liés à la rétrocompatibilité](/help/sites-deploying/backward-compatibility.md), les emplacements de quelques dossiers dans crx-repository ont changé. Exportez et importez manuellement les dépendances (bibliothèques et ressources personnalisées) de la configuration précédente vers un nouvel environnement.
 
