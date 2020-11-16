@@ -701,7 +701,7 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
       %>
       ```
 
-   1. Ajoutez les éléments suivants avant le début de la balise &lt;tr> (&lt;tr &lt;%= attrs.build() %>) :
+   1. Ajoutez ce qui suit avant le début de la balise &lt;tr> (&lt;tr &lt;%= attrs.build() %&quot;) :
 
       ```jsp
       <%
@@ -731,7 +731,7 @@ Suivez les étapes ci-après pour afficher la propriété personnalisée dans l�
 
    La colonne et la propriété d’interface utilisateur ajoutées au cours de cette procédure s’affichent pour tous les types de ressource. Toutefois, les valeurs de ces propriétés peuvent être entrées et affichées uniquement pour les types de ressource pour lesquels vous avez initialement ajouté la propriété personnalisée.
 
-   Par exemple, en utilisant le scénario : En Ajoutant des propriétés personnalisées pour des types de ressource spécifiques, vous ajoutez une propriété personnalisée aux ressources de texte, vous pouvez saisir des propriétés personnalisées pour les ressources de texte uniquement. Si, toutefois, vous affichez cette propriété personnalisée dans l’interface utilisateur, la colonne s’affiche pour tous les types de fichier.
+   Par exemple, en utilisant le scénario : En Ajoutant des propriétés personnalisées pour des types de ressource spécifiques, vous ajoutez une propriété personnalisée à des ressources de texte, vous pouvez saisir des propriétés personnalisées pour des ressources de texte uniquement. Si, toutefois, vous affichez cette propriété personnalisée dans l’interface utilisateur, la colonne s’affiche pour tous les types de fichier.
 
    ![custompropertyinlistview](assets/custompropertyinlistview.png)
 
