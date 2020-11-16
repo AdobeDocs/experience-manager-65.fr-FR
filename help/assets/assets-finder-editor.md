@@ -252,7 +252,7 @@ Pour ajouter des composants de l’Éditeur de ressources :
 
 | Composant | Description |
 |---|---|
-| **[!UICONTROL Formulaire]de métadonnées et champ de texte de[!UICONTROL métadonnées]** | Vous permet d’ajouter des métadonnées supplémentaires à un fichier et d’effectuer une action, telle que l’envoi, sur ce fichier. |
+| **[!UICONTROL Formulaire] de métadonnées et champ de texte de [!UICONTROL métadonnées]** | Vous permet d’ajouter des métadonnées supplémentaires à un fichier et d’effectuer une action, telle que l’envoi, sur ce fichier. |
 | **[!UICONTROL Sous-ressources]** | Permet de personnaliser des sous-ressources. |
 | **Balises** | Permet aux utilisateurs de sélectionner et d’ajouter des balises à un fichier. |
 | **[!UICONTROL Miniature]** | Affiche une miniature du fichier, son nom de fichier et vous permet d’ajouter un texte de remplacement. Vous pouvez également ajouter des actions de l’Éditeur de ressources dans ce composant. |
