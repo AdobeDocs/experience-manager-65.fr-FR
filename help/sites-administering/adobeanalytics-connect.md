@@ -21,10 +21,10 @@ ht-degree: 63%
 
 # Connexion à Adobe Analytics et création de structures {#connecting-to-adobe-analytics-and-creating-frameworks}
 
-Pour effectuer le suivi des données Web de vos pages AEM dans Adobe Analytics, créez une configuration Cloud Service Adobe Analytics Adobe et une structure Analytics :
+Pour suivre les données Web de vos pages AEM dans Adobe Analytics, créez une configuration Adobe Analytics Cloud Services et une structure Adobe Analytics :
 
 * **Configuration Adobe Analytics :** Informations relatives à votre compte Adobe Analytics. La configuration Adobe Analytics permet à AEM de se connecter à Adobe Analytics. Créez une configuration Adobe Analytics pour chaque compte que vous utilisez.
-* **Cadre de Analytics en Adobe :** Ensemble de mappages entre les propriétés de la suite de rapports Adobe et les variables CQ. Utilisez une structure pour configurer la façon dont les données de votre site web renseignent vos rapports Adobe Analytics. Les cadres sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
+* **Cadre Adobe Analytics :** Ensemble de mappages entre les propriétés de la suite de rapports Adobe Analytics et les variables CQ. Utilisez une structure pour configurer la façon dont les données de votre site web renseignent vos rapports Adobe Analytics. Les cadres sont associés à une configuration Adobe Analytics. Vous pouvez créer plusieurs structures pour chaque configuration.
 
 Lorsque vous associez une page Web à une structure, celle-ci effectue le suivi pour cette page et ses descendants. Les vues de page peuvent ensuite être récupérées dans Adobe Analytics et affichées dans la console Sites.
 
@@ -32,7 +32,7 @@ Lorsque vous associez une page Web à une structure, celle-ci effectue le suivi 
 
 ### Compte Adobe Analytics {#adobe-analytics-account}
 
-Pour effectuer le suivi des données AEM dans Adobe, vous devez disposer d’un compte d’Adobe Marketing Cloud Adobe valide.
+Pour effectuer le suivi des données AEM dans Adobe Analytics, vous devez disposer d’un compte Adobe Marketing Cloud valide.
 
 Le compte Adobe Analytics doit :
 
@@ -47,13 +47,13 @@ Le compte Adobe Analytics doit :
 
 Avant de commencer, assurez-vous que vos informations d’identification vous permettent de vous connecter à Adobe Analytics. Via :
 
-* [Connexion à Adobe Experience Cloud](https://login.experiencecloud.adobe.com/exc-content/login.html)
+* [Connexion Adobe Experience Cloud](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [Connexion Adobe](https://sc.omniture.com/login/)
+* [Connexion Adobe Analytics](https://sc.omniture.com/login/)
 
 ### Configuration d’AEM pour utiliser vos centres de données Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Vous devez configurer AEM pour qu’il utilise le centre de données qui héberge votre suite de rapports Adobe Analytics. Le tableau suivant répertorie les centres de données disponibles et leur URL.
+Adobe Analytics [data centers](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) collect, process and store data associated with your Adobe Analytics report suite. Vous devez configurer AEM pour utiliser le centre de données qui héberge votre suite de rapports Adobe Analytics. Le tableau suivant répertorie les centres de données disponibles et leur URL.
 
 | Centre de données | URL |
 |---|---|
@@ -113,7 +113,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 >Par exemple, une structure est configurée pour utiliser la suite de rapports *diiweretail* et l’instance de serveur sélectionnée est l’instance de création. Lorsque les pages sont publiées avec la structure, les appels sont toujours émis vers Adobe Analytics, mais ces appels ne contiennent pas le RSID. Seuls les appels effectués à partir de l’instance de création incluent le RSID.
 
 1. Avec la **Navigation**, sélectionnez **Outils**, **Services cloud**, puis **Services cloud hérités**.
-1. Faites défiler l’écran jusqu’à **Adobe** et sélectionnez **Afficher les configurations**.
+1. Accédez à **Adobe Analytics** et sélectionnez **Afficher les configurations**.
 1. Click the **[+]** link next to your Adobe Analytics configuration.
 
 1. Dans la boîte de dialogue **Créer une structure** :
@@ -130,7 +130,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 
    >[!NOTE]
    >
-   >L’outil de recherche de contenu sur la gauche est renseigné par les variables Adobe Analytics (Variables SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
+   >L’outil de recherche de contenu situé à gauche est renseigné par des variables Adobe Analytics (variables de SiteCatalyst) lorsque vous sélectionnez un identifiant de suite de rapports.
 
 1. Utilisez ensuite le menu déroulant **Mode d’exécution** (situé à côté de l’identifiant de suite de rapports) pour sélectionner les instances de serveur qui doivent envoyer des informations à la suite de rapports.
 
@@ -140,7 +140,7 @@ Pour l’identifiant de suite de rapports (RSID) que vous utilisez, vous pouvez 
 
 ### Configuration des paramètres de serveur pour Adobe Analytics {#configuring-server-settings-for-adobe-analytics}
 
-Le système de cadre vous permet de modifier les paramètres du serveur dans chaque cadre Adobe.
+Le système de structure vous permet de modifier les paramètres du serveur dans chaque structure Adobe Analytics.
 
 >[!CAUTION]
 >
@@ -170,20 +170,20 @@ Commencez par ouvrir le panneau. Appuyez sur la flèche vers le bas située en r
 
 ## Association d’une page à une structure Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
-Lorsqu’une page est associée à un cadre Adobe Analytics, la page envoie des données à Adobe Analytics lors du chargement de la page. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont extraites d’Adobe Analytics.
+Lorsqu’une page est associée à une structure Adobe Analytics, la page envoie des données à Adobe Analytics au chargement de la page. Les variables que la page renseigne sont mappées et extraites des variables Adobe Analytics dans la structure. Par exemple, les pages vues sont extraites d’Adobe Analytics.
 
 Les descendants de la page héritent de l’association avec la structure. Par exemple, lorsque vous associez la page racine de votre site à une structure, toutes les pages du site sont associées à cette structure.
 
 1. From the **Sites** console, select the page you wish to set up with tracking.
 1. Ouvrez les **[Propriétés de la page](/help/sites-authoring/editing-page-properties.md)**, directement à partir de la console ou via l’éditeur de page.
-1. Ouvrez l&#39;onglet** Cloud Service**.
+1. Ouvrez l&#39;onglet** Cloud Services**.
 
 1. Use the **Add Configuration** drop down to select **Adobe Analytics** from the available options. Si l’héritage est en place, vous devez le désactiver pour que le sélecteur devienne disponible.
 
 1. Le sélecteur déroulant pour **Adobe Analytics** est ajouté aux options disponibles. Utilisez-le pour sélectionner la configuration de structure requise.
 
 1. Sélectionnez **Enregistrer et fermer**.
-1. **[Publiez](/help/sites-authoring/publishing-pages.md)**la page pour activer la page et tous les fichiers/configurations connecté(e)s.
+1. **[Publiez](/help/sites-authoring/publishing-pages.md)** la page pour activer la page et tous les fichiers/configurations connecté(e)s.
 1. La dernière étape consiste à visiter la page sur l’instance de publication et à rechercher un mot-clé (par exemple, aubergine) à l’aide du composant **Rechercher**.
 1. You can then check the calls made to Adobe Analytics using an appropriate tool; for example, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 1. Dans l’exemple fourni, l’appel doit contenir la valeur entrée (c’est-à-dire, aubergine) dans eVar7 et la liste des événements doit contenir event3.
