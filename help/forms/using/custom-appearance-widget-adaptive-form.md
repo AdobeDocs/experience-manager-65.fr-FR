@@ -32,7 +32,7 @@ Tout d’abord, examinons les termes et concepts clés utilisés dans cet articl
 
 **Module externe** jQuery Fournit un mécanisme standard, basé sur la structure du widget jQuery, pour implémenter une autre apparence.
 
-**ClientLib** Système de bibliothèques côté client dans le traitement côté client AEM piloté par du code JavaScript et CSS complexe. Pour plus d’informations, consultez la section Utilisation des bibliothèques côté client.
+**ClientLib** Système de bibliothèques côté client dans AEM traitement côté client piloté par du code JavaScript et CSS complexe. Pour plus d’informations, consultez la section Utilisation des bibliothèques côté client.
 
 **Archétype** A Maven project template toolkit défini comme modèle ou modèle original pour les projets Maven. Pour en savoir plus, voir Présentation des archétypes.
 
