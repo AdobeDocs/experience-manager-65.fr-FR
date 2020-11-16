@@ -102,7 +102,7 @@ Le tableau suivant présente quelques exemples d’ID de balise, leurs élément
    <td><strong>ID de balise<br /> </strong></td>
    <td><strong>Espace de noms</strong></td>
    <td><strong>ID local</strong></td>
-   <td><strong>Balise(s) de Conteneur</strong></td>
+   <td><strong>Balise(s) de conteneur</strong></td>
    <td><strong>Balise de feuille</strong></td>
    <td><strong>Chemin d’accès absolu à la balise Repository<br /></strong></td>
   </tr>
@@ -266,7 +266,7 @@ A special value for the `cq:movedTo` property is `nirvana`: it is applied when t
 
 ## Migration des balises {#tags-migration}
 
-Les balises Experience Manager 6.4 et ultérieures sont stockées sous `/content/cq:tags`, qui étaient précédemment stockées sous `/etc/tags`. Cependant, dans les cas où l’Adobe Experience Manager a été mis à niveau à partir de la version précédente, les balises sont toujours présentes sous l’ancien emplacement `/etc/tags`. Dans les systèmes mis à niveau, les balises doivent être migrées sous `/content/cq:tags`.
+Les balises Experience Manager 6.4 et ultérieures sont stockées sous `/content/cq:tags`, qui étaient précédemment stockées sous `/etc/tags`. Cependant, dans les cas où Adobe Experience Manager a été mis à niveau à partir de la version précédente, les balises sont toujours présentes sous l’ancien emplacement `/etc/tags`. Dans les systèmes mis à niveau, les balises doivent être migrées sous `/content/cq:tags`.
 
 >[!NOTE]
 >
