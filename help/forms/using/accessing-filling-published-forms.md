@@ -11,6 +11,9 @@ discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '962'
+ht-degree: 95%
 
 ---
 
@@ -82,7 +85,7 @@ Une fois le formulaire complété, l’utilisateur l’envoie en cliquant sur le
 
 >[!NOTE]
 >
->Les formulaires envoyés apparaissent dans l’onglet Formulaires envoyés uniquement si l’action d’envoi du formulaire adaptatif est configurée comme Action d’envoi du portail de formulaires. Pour plus d’informations sur les actions d’envoi, reportez-vous à la section [Configuration de l’action Envoyer](../../forms/using/configuring-submit-actions.md).
+>Les formulaires envoyés apparaissent dans l’onglet Forms envoyé uniquement si l’action d’envoi du formulaire adaptatif est configurée comme Action d’envoi du portail Forms. Pour plus d’informations sur les actions d’envoi, reportez-vous à la section [Configuration de l’action Envoyer](../../forms/using/configuring-submit-actions.md).
 
 ![Composant Brouillons et envois](assets/draft-submission.png)
 
@@ -94,6 +97,6 @@ Il existe des formulaires que vous devez remplir et envoyer très souvent. Par e
 
 AEM Forms peut vous aider à optimiser l’opération de remplissage du formulaire et à réduire considérablement le temps de remplissage et d’envoi d’un formulaire déjà envoyé au préalable. Les utilisateurs finaux peuvent démarrer un nouveau formulaire avec des données d’un formulaire qui a déjà été envoyé. Cette fonctionnalité est intégrée dans le composant [Drafts and Submissions](../../forms/using/draft-submission-component.md). Lorsque vous ajoutez un composant Drafts and Submission à votre page Forms Portal et que vous le publiez, les utilisateurs finaux ont une option dans les onglets Formulaires envoyés et Brouillons de formulaires pour démarrer un nouveau formulaire en utilisant des données d’un formulaire déjà envoyé. L’image suivante illustre cette option.
 
-![start-a-new-form](assets/start-a-new-form.png)
+![début-un-nouveau-formulaire](assets/start-a-new-form.png)
 
 Lorsque vous cliquez sur le bouton pour commencer un nouveau formulaire, il ouvre un formulaire avec les données du formulaire envoyé correspondant. Vous pouvez maintenant revoir et mettre à jour les informations, selon les besoins, puis envoyer le formulaire.
