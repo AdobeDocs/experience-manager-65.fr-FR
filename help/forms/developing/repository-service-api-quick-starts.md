@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Débuts rapides de l’API Repository Service {#repository-service-api-quick-starts}
 
-Les Débuts rapides suivants sont disponibles pour le service Repository AEM Forms.
+Les Débuts rapides suivants sont disponibles pour le service AEM Forms Repository.
 
 [Début rapide (mode SOAP) : Création d’un dossier à l’aide de l’API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
@@ -42,13 +42,13 @@ Les Débuts rapides suivants sont disponibles pour le service Repository AEM For
 
 [Début rapide (mode SOAP) : Suppression d&#39;une ressource à l&#39;aide de l&#39;API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 **Applications/FormsApplication**
 
 La plupart des débuts rapides du service de référentiel AEM Forms interagissent avec une application nommée `Applications/FormsApplication,` , comme illustré ci-dessous.
 
-Le dossier FormsFolder se trouve dans le référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir Début [rapide (mode SOAP) : Création d’un dossier à l’aide de l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.)
+Le dossier FormsFolder est un emplacement du référentiel AEM Forms. Vous pouvez, par exemple, ajouter ce dossier par programmation à `Applications/FormsApplication`. (Voir Début [rapide (mode SOAP) : Création d’un dossier à l’aide de l’API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)Java.)
 
 Le chemin d&#39;accès à une ressource située dans le référentiel AEM Forms est :
 
@@ -734,7 +734,7 @@ L&#39;exemple de code Java suivant recherche Loan.xdp dans `Applications/FormsAp
 
 ## Début rapide (mode SOAP) : Création de relations entre les ressources à l’aide de l’API Java {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-L&#39;exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)de ressources.)
+L’exemple de code Java suivant crée une relation entre deux ressources dans le référentiel AEM Forms. (Voir [Création de relations](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)de ressources.)
 
 ```java
  /*
