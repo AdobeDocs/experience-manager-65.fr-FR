@@ -84,7 +84,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
 
 ### Sling {#sling}
 
-[**Resource **](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)s’adapte à :
+[**Resource**](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) s’adapte à :
 
 <table>
  <tbody>
@@ -215,7 +215,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
  </tbody>
 </table>
 
-[**ResourceResolver **](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html)s’adapte à :
+[**ResourceResolver**](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) s’adapte à :
 
 <table>
  <tbody>
@@ -267,11 +267,11 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
  </tbody>
 </table>
 
-[**SlingHttpServletRequest **](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)s’adapte à :
+[**SlingHttpServletRequest**](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) s’adapte à :
 
 Pas encore de cible, mais implémente l’interface Adaptable et peut être utilisé comme source dans une AdapterFactory personnalisée.
 
-[**SlingHttpServletResponse **](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)s’adapte à :
+[**SlingHttpServletResponse**](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) s’adapte à :
 
 <table>
  <tbody>
@@ -284,7 +284,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 #### WCM {#wcm}
 
-**[Page](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)**s’adapte à :
+**[Page](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)** s’adapte à :
 
 <table>
  <tbody>
@@ -307,7 +307,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
  </tbody>
 </table>
 
-**[Component](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)**s’adapte à :
+**[Component](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)** s’adapte à :
 
 | [Resource](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
 |---|---|
@@ -315,7 +315,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 | [Node](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud du composant. |
 | … | Tous les éléments auxquels la ressource du composant peut être adaptée. |
 
-**[Template](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)**s’adapte à :
+**[Template](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)** s’adapte à :
 
 <table>
  <tbody>
