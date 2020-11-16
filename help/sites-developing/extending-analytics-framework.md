@@ -1,6 +1,6 @@
 ---
-title: Personnalisation d’Adobe Analytics Framework
-seo-title: Personnalisation d’Adobe Analytics Framework
+title: Personnalisation du cadre Adobe Analytics
+seo-title: Personnalisation du cadre Adobe Analytics
 description: 'null'
 seo-description: 'null'
 uuid: 444a29c2-3b4e-4d21-adc0-5f317ece2b77
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 translation-type: tm+mt
 source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
+workflow-type: tm+mt
+source-wordcount: '1620'
+ht-degree: 55%
 
 ---
 
 
-# Personnalisation d’Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
+# Personnalisation du cadre Adobe Analytics{#customizing-the-adobe-analytics-framework}
 
-La structure d’Adobe Analytics détermine les informations suivies avec Adobe Analytics. Pour personnaliser la structure par défaut, vous utilisez javascript pour ajouter un suivi personnalisé, intégrer des modules externes Adobe Analytics et modifier les paramètres généraux de la structure utilisée pour le suivi.
+La structure Adobe Analytics détermine les informations suivies avec Adobe Analytics. Pour personnaliser la structure par défaut, vous utilisez javascript pour ajouter un suivi personnalisé, intégrer des modules externes Adobe Analytics et modifier les paramètres généraux de la structure utilisée pour le suivi.
 
 ## À propos du javascript généré pour des frameworks {#about-the-generated-javascript-for-frameworks}
 
@@ -61,7 +64,7 @@ Lorsque vous utilisez un code javascript personnalisé pour personnaliser le fra
 
 ## Configuration des propriétés Adobe Analytics {#configuring-adobe-analytics-properties}
 
-Adobe Analytics comporte un certain nombre de variables prédéfinies configurables sur une structure. The **charset**, **cookieLifetime**, **currencyCode** and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
+Il existe un certain nombre de variables prédéfinies en Adobe Analytics qui peuvent être configurées sur une structure. The **charset**, **cookieLifetime**, **currencyCode** and **trackInlineStats** variables are included in the **General Analytics Settings** list by default.
 
 ![aa-22](assets/aa-22.png)
 
@@ -91,7 +94,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 Utilisez la procédure suivante pour ajouter des variables à la liste :
 
-1. Dans la page de structure d’Adobe Analytics, développez la zone Paramètres **d’Analytics** généraux.
+1. Dans la page de la structure Adobe Analytics, développez la zone Paramètres **d’analyse** générale.
 1. Sous la liste des variables, cliquez sur Ajouter un élément pour ajouter une nouvelle variable à la liste.
 1. Dans la cellule de gauche, entrez le nom de la variable, par exemple `prop10`.
 
@@ -109,9 +112,9 @@ Utilisez la procédure suivante pour ajouter des variables à la liste :
 >
 >Some of the variables in this list are **mandatory** in order for Adobe Analytics calls to function correctly, (e.g. **currencyCode**, **charSet**)
 >
->Ainsi, même s’ils sont supprimés de la structure elle-même, ils seront toujours associés à une valeur par défaut lors de l’appel Adobe Analytics.
+>Ainsi, même s’ils sont supprimés du cadre lui-même, ils seront toujours attachés avec une valeur par défaut lorsque l’appel Adobe Analytics est effectué.
 
-### Ajout de code JavaScript personnalisé à une structure Adobe Analytics {#adding-custom-javascript-to-an-adobe-analytics-framework}
+### Ajouter un javascript personnalisé à un Adobe Analytics Framework {#adding-custom-javascript-to-an-adobe-analytics-framework}
 
 The free-from javascript box in the **General Analytics Settings** area enables you to add custom code to a Adobe Analytics framework.
 
@@ -125,7 +128,7 @@ The code in the [analytics.sitecatalyst.js](/help/sites-developing/extending-ana
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-La procédure suivante explique comment utiliser la zone javascript pour personnaliser le suivi Adobe Analytics. If your javascript needs to use Adobe Analytics plugins, [integrate them](/help/sites-administering/adobeanalytics.md) into AEM.
+La procédure suivante montre comment utiliser la zone javascript pour personnaliser le suivi Adobe Analytics. If your javascript needs to use Adobe Analytics plugins, [integrate them](/help/sites-administering/adobeanalytics.md) into AEM.
 
 1. Ajoutez le code javascript suivant à la zone afin que `s.doPlugins` soit exécuté :
 
@@ -139,19 +142,19 @@ La procédure suivante explique comment utiliser la zone javascript pour personn
 
    >[!CAUTION]
    >
-   >Ce code est nécessaire si vous souhaitez envoyer des variables dans un appel Adobe Analytics qui ont été personnalisées d’une manière qui ne peut pas être effectuée via l’interface de base de glisser-déplacer OU via javascript intégré dans la vue Adobe Analytics.
+   >Ce code est nécessaire si vous souhaitez envoyer des variables dans un appel Adobe Analytics qui ont été personnalisées d’une manière qui ne peut pas être effectuée via l’interface de glisser-déposer de base OU via le javascript intégré dans la Vue Adobe Analytics.
    >
-   >Si les variables personnalisées sont en dehors de la fonction s_doPlugins, elles sont envoyées sous la forme *undefined *dans l’appel Adobe Analytics
+   >Si les variables personnalisées sont en dehors de la fonction s_doPlugins, elles seront envoyées sous la forme *undefined *dans l’appel Adobe Analytics
 
 1. Add your javascript code in the **s_doPlugins** function.
 
 L’exemple suivant concatène les données capturées sur une page dans l’ordre hiérarchique, en utilisant un séparateur commun de &quot;|&quot;.
 
-Une structure Adobe Analytics possède les configurations suivantes :
+Une structure Adobe Analytics comporte les configurations suivantes :
 
-* La variable `prop2` Adobe Analytics est associée à la propriété `pagedata.sitesection` du site.
+* La variable `prop2` Adobe Analytics est mappée à la propriété `pagedata.sitesection` site.
 
-* La variable `prop3` Adobe Analytics est associée à la propriété `pagedata.subsection` du site.
+* La variable `prop3` Adobe Analytics est mappée à la propriété `pagedata.subsection` site.
 
 * Le code suivant est ajouté à la zone javascript au format libre :
 
@@ -165,7 +168,7 @@ Une structure Adobe Analytics possède les configurations suivantes :
 
 * Lorsque la page Web qui utilise le cadre est visitée (ou, en mode d’édition, la page est rechargée ou prévisualisée), les appels à Adobe Analytics sont effectués.
 
-Par exemple, les valeurs suivantes sont générées dans Adobe Analytics :
+Par exemple, les valeurs suivantes sont générées en Adobe Analytics :
 
 ![aa-20](assets/aa-20.png)
 
@@ -184,7 +187,7 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-Le code du fichier analytics.sitecatalyst.js (qui comprend le contenu du fichier s_code.js d’Adobe Analytics) contient le code suivant :
+Le code du fichier analytics.sitecatalyst.js (qui comprend le contenu du fichier s_code.js Adobe Analytics) contient le code suivant :
 
 if (s.usePlugins) s.doPlugins(s)
 
@@ -229,7 +232,7 @@ Therefore, your javascript should set `s.usePlugins` to `true` so that any code 
    s.doPlugins=s_doPlugins;
    ```
 
-   Le code JavaScript généré par le script /apps/cq/analytics/components/sitecatalyst/config.js.jsp est maintenant inséré dans le fichier analytics.sitecatalyst.js pour toutes les pages qui utilisent une structure Adobe Analytics.
+   Le code javascript généré par le script /apps/cq/analytics/components/sitecatalyst/config.js.jsp est maintenant inséré dans le fichier analytics.sitecatalyst.js pour toutes les pages qui utilisent une structure Adobe Analytics.
 
 1. Ajoutez le code javascript que vous voulez exécuter dans la fonction `s_doPlugins`, puis cliquez sur Enregistrer tout.
 
@@ -239,7 +242,7 @@ Therefore, your javascript should set `s.usePlugins` to `true` so that any code 
 
 ### Using Adobe Analytics Plugins in AEM {#using-adobe-analytics-plugins-in-aem}
 
-Procurez-vous le code JavaScript pour les modules externes Adobe Analytics et intégrez-les dans votre structure Adobe Analytics dans AEM. Ajoutez le code dans un dossier de bibliothèque cliente de la catégorie `sitecatalyst.plugins` afin qu’il soit disponible pour votre code javascript personnalisé.
+Procurez-vous le code javascript pour les modules externes Adobe Analytics et intégrez-les dans votre structure Adobe Analytics en AEM. Ajoutez le code dans un dossier de bibliothèque cliente de la catégorie `sitecatalyst.plugins` afin qu’il soit disponible pour votre code javascript personnalisé.
 
 Par exemple, si vous intégrez le module externe `getQueryParams`, vous pouvez appeler le module externe depuis la fonction `s_doPlugins` de votre javascript personnalisé. The following example code sends the query string in **&quot;pid&quot;** from the referrer&#39;s URL as **eVar1**, when a Adobe Analytics call is triggered.
 
@@ -252,7 +255,7 @@ function s_doPlugins(s) {
 s.doPlugins=s_doPlugins;
 ```
 
-AEM installe les modules externes Adobe Analytics suivants, de sorte qu’ils soient disponibles par défaut :
+aem installe les modules externes Adobe Analytics suivants, de sorte qu’ils soient disponibles par défaut :
 
 * getQueryParam()
 * getPreviousValue()
@@ -280,6 +283,7 @@ Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente d
    * Type : Chaîne
    * Valeur : sitecatalyst.plugins
    * Multi : sélectionné
+
    Cliquez sur OK dans la fenêtre Modifier pour confirmer la valeur de la propriété.
 
 1. Cliquez avec le bouton droit sur le dossier de la bibliothèque cliente que vous venez de créer et cliquez sur Créer > Créer un fichier. Pour le nom de fichier, tapez js.txt, puis cliquez sur OK.
