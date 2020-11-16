@@ -26,7 +26,7 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
 <table>
  <tbody>
   <tr>
-   <td><strong>Property</strong></td>
+   <td><strong>Propriété</strong></td>
    <td><strong>Commentaires</strong></td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ To display the `description` property of the process instance in the process ins
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html`par `text!/lc/`**des applications **/ws/js/runtime/templates/processinstance.html.
+   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html`par `text!/lc/`**des applications**/ws/js/runtime/templates/processinstance.html.
 
 1. Les changements ci-dessus peuvent nécessiter une mise à jour du fichier CSS en ajoutant une entrée dans la feuille de style /apps/ws/css/newStyle.css comme suit :
 
