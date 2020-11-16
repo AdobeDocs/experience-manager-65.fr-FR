@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 66%
 
 ---
 
@@ -51,7 +54,7 @@ To enable Save as Draft functionality for your existing [custom profile](/help/f
 
 Après l’activation de la fonctionnalité Enregistrer en tant que brouillon pour un formulaire, lorsque le formulaire est enregistré, il est répertorié dans le [composant Drafts and Submissions](/help/forms/using/draft-submission-component.md). Vous pouvez extraire le formulaire enregistré et commencer son remplissage depuis le composant Drafts and Submissions.
 
-Pour activer la liste des formulaires pour le composant Brouillon et Envoi, ajoutez la propriété suivante au noeud de profil :
+Pour activer la liste des formulaires pour le composant Drafts and Submission, ajoutez la propriété suivante au noeud de profil :
 
 <table>
  <tbody>
