@@ -12,6 +12,9 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +75,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Configuration de traduction</td>
   </tr>
   <tr>
-   <td>Processus</td>
+   <td>Workflow</td>
    <td> </td>
   </tr>
   <tr>
@@ -257,7 +260,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Permissions</td>
+   <td>Autorisations</td>
   </tr>
   <tr>
    <td> </td>
@@ -265,23 +268,23 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>TrustStore</td>
+   <td>Trust Store</td>
   </tr>
   <tr>
    <td> </td>
    <td>Configurations d’Adobe IMS</td>
   </tr>
   <tr>
-   <td>Services cloud<br /> </td>
+   <td>Cloud Services<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Services cloud hérités</td>
+   <td>Cloud Services hérités</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Services cloud de traduction</td>
+   <td>Cloud Services de traduction</td>
   </tr>
   <tr>
    <td> </td>
@@ -325,7 +328,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Stockage   Configuration</td>
+   <td>Configuration du stockage</td>
   </tr>
   <tr>
    <td> </td>
@@ -379,7 +382,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique. Les configurations de cloud par défaut et marketing sont définies ici.<br /> </td>
   </tr>
   <tr>
-   <td>Configuration des services cloud<br /> </td>
+   <td>Configuration de Cloud Services<br /> </td>
    <td>Contient les configurations liées à l’intégration à Adobe Marketing Cloud.</td>
   </tr>
   <tr>
@@ -391,7 +394,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet d’accéder aux importateurs et aux différentes données de produit.</td>
   </tr>
   <tr>
-   <td>Gestion des actifs numériques (DAM) </td>
+   <td>Gestion des actifs numériques </td>
    <td>Permet d’accéder à différentes options.</td>
   </tr>
   <tr>
@@ -459,7 +462,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet de purger les versions de page, au besoin.</td>
   </tr>
   <tr>
-   <td>Processus</td>
+   <td>Workflow</td>
    <td>Les workflows contrôlent une série d’actions dans des pages ou des ressources numériques prenant en charge tout processus éditorial.</td>
   </tr>
  </tbody>
