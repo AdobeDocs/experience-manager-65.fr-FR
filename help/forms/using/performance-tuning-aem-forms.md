@@ -26,7 +26,7 @@ Cet article explique les stratégies et les recommandations que vous pouvez impl
 
 Vous pouvez configurer et contrôler la stratégie de mise en cache d’AEM Forms à l’aide du composant **Mobile Forms Configurations** de la console d’administration Web d’AEM à l’adresse :
 
-* (AEM Forms on OSGi) `https://'[server]:[port]'/system/console/configMgr`
+* (AEM Forms on OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms on JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 Les options disponibles pour la mise en cache sont les suivantes :
@@ -148,9 +148,9 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 
 * Répertoire d’installation d’AEM. S’il n’est pas possible d’exclure le répertoire complet, excluez les fichiers suivants :
 
-   * [Répertoire]d’installation d’AEM \crx-repository\temp
-   * [Répertoire]d’installation d’AEM \crx-repository\repository
-   * [Répertoire]d’installation d’AEM \crx-repository\launchpad
+   * [Répertoire]d’installation AEM \crx-repository\temp
+   * [Répertoire]d’installation AEM \crx-repository\repository
+   * [Répertoire]d’installation AEM \crx-repository\launchpad
 
 * Répertoire temporaire du serveur d’applications. L’emplacement par défaut est :
 
@@ -173,7 +173,7 @@ Pour améliorer les performances, vous pouvez configurer le logiciel antivirus p
 >
 >* If you are using a different location for GDS and temporary directory, open AdminUI at `https://'[server]:[port]'/adminui`, navigate to **Home > Settings > Core System Settings > Core Configurations** to confirm the location in use.
 
-* Si le serveur AEM Forms se comporte lentement même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
+* Si le serveur AEM Forms fonctionne lentement même après avoir exclu les répertoires suggérés, excluez également le fichier exécutable Java (java.exe).
 
 
 
