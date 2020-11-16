@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '131'
+ht-degree: 100%
 
 ---
 
@@ -30,8 +33,9 @@ Les informations suivantes sont disponibles sur l’intégration d’AEM à d’
 >
 >Si vous utilisez une configuration proxy personnalisée avec votre intégration, vous devez configurer les deux configurations proxy de client HTTP, car certaines fonctionnalités d’AEM utilisent les API 3.x et d’autres les API 4.x :
 >
->* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
