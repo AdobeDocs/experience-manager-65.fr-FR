@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1364'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +48,7 @@ Lorsque vous sélectionnez un processus, les onglets Formulaires et Détails s�
 
 1. Sélectionnez un processus en cliquant sur une tâche. Le formulaire associé au processus s’ouvre dans l’onglet Formulaire.
 
-   Chaque formulaire d’un processus possède une URL unique. Vous pouvez utiliser l’URL unique pour lancer directement Workspace HTML avec le processus et le formulaire spécifiques. Le format de l’URL est https://&lt;serveur>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;NomApplication>%2F&lt;NomProcessus>. La chaîne &lt;ApplicationName>%2F&lt;ProcessName> est toujours codée en URL. Un exemple d’URL est http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La chaîne ApplicationName%2FProcessName de l&#39;exemple est codée en URL.
+   Chaque formulaire d’un processus possède une URL unique. Vous pouvez utiliser l’URL unique pour lancer directement l’espace de travail HTML avec le processus et le formulaire spécifiques. Le format de l’URL est https://&lt;serveur>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;NomApplication>%2F&lt;NomProcessus>. La chaîne &lt;ApplicationName>%2F&lt;ProcessName> est toujours codée en URL. Par exemple, http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. La chaîne ApplicationName%2FProcessName de l&#39;exemple est codée en URL.
 
 1. Remplissez le formulaire selon les instructions fournies. If necessary, click **Maximize** to increase the visible area of the form.
 1. Si l’onglet Pièces jointes est disponible, ajoutez des pièces jointes comme requis.
@@ -54,6 +57,7 @@ Lorsque vous sélectionnez un processus, les onglets Formulaires et Détails s�
 
    * Cliquez sur le bouton Envoyer sur le formulaire, s’il y en a un.
    * Cliquez sur Terminer sous le formulaire, si le formulaire n’a pas de bouton Envoyer.
+
    Process Management démarre le processus et achemine le formulaire vers les listes de tâches des personnes appropriées qui doivent effectuer la tâche suivante dans le processus.
 
    Si vous devez fermer un formulaire avant de l’envoyer et sans perdre les données que vous avez entrées, enregistrez un brouillon et terminez-le ultérieurement si le processus le permet. Si le formulaire et le processus le permettent, vous pouvez également cliquer sur **Hors connexion** et l’envoyer plus tard depuis Adobe Reader®, Adobe Acrobat® Professional ou Acrobat Standard.
@@ -79,7 +83,7 @@ Vous pouvez ajouter plusieurs notes, modifier les notes écrites, et les supprim
 1. Ouvrez une tâche et cliquez sur l’onglet **Notes**, si le processus vous le permet.
 1. Saisissez un titre pour la note dans la zone **Titre**, puis saisissez le texte de la note dans la zone **Note**.
 1. Sélectionnez le niveau des **Autorisations** relatives à la note pour les autres utilisateurs participant au processus.
-1. Cliquez sur **OK**. Un fichier texte contenant votre note est attaché au formulaire. Vous pouvez mettre à jour une note en cliquant sur celle-ci et en modifiant directement le texte. Vous pouvez supprimer une note en cliquant sur le bouton **Supprimer** ![Image d’une corbeille à côté](assets/icondelete.png) de la note.
+1. Cliquez sur **OK**. Un fichier texte contenant votre note est attaché au formulaire. Vous pouvez mettre à jour une note en cliquant sur celle-ci et en modifiant directement le texte. Vous pouvez supprimer une note en cliquant sur le bouton **Supprimer** ![](assets/icondelete.png) Image d’une corbeille en regard de la note.
 
 ### Ajout d’une pièce jointe {#add-an-attachment}
 
@@ -94,7 +98,7 @@ Vous pouvez également ajouter vos commentaires sur la pièce jointe. Vous pouve
 1. Cliquez sur l’onglet **Pièces jointes** et sélectionnez **Pièce jointe**.
 1. Cliquez sur **Parcourir** pour sélectionner le fichier à attacher.
 1. Sélectionnez le niveau des **Autorisations** relatives à la pièce jointe pour les autres utilisateurs participant au processus. Si vous sélectionnez **Lecture**, d’autres utilisateurs peuvent enregistrer le fichier localement. Si vous sélectionnez l’une des autorisations de modification, les autres utilisateurs peuvent également télécharger un nouveau fichier pour remplacer votre pièce jointe.
-1. Cliquez sur **OK**. Le fichier est attaché au formulaire. Vous pouvez supprimer un fichier en cliquant sur le bouton **Supprimer** ![Image d’une corbeille à côté](assets/icondelete.png) de la pièce jointe.
+1. Cliquez sur **OK**. Le fichier est attaché au formulaire. Vous pouvez supprimer un fichier en cliquant sur le bouton **Supprimer** ![](assets/icondelete.png) Image d’une corbeille en regard de la pièce jointe.
 
 ## Enregistrement des brouillons de formulaires {#saving-draft-copies-of-forms}
 
