@@ -28,7 +28,7 @@ Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM cl
 * des applications mobiles natives ;
 * d’autres canaux et points de contact externes à AEM.
 
-Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez fournir des services de contenu en utilisant l’exportateur JSON pour fournir le contenu d’une page AEM (y) au format de modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
+Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez fournir des services de contenu en utilisant l’exportateur JSON pour fournir le contenu d’une page AEM(y) au format de modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez f
 
 Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
-Dans AEM, la diffusion est réalisée à l’aide du sélecteur `model` et de l’ `.json` extension.
+AEM la diffusion est réalisée à l&#39;aide du sélecteur `model` et de l&#39; `.json` extension.
 
 `.model.json`
 
