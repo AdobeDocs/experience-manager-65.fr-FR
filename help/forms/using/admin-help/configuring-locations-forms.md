@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 75%
 
 ---
 
@@ -25,7 +28,7 @@ Vous pouvez indiquer les emplacements URL, URI et fichier des attributs, tels qu
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URL de base :** URL de base où se trouvent les ressources du formulaire, telles que les images et les scripts. Cette valeur est nécessaire pour les transformations HTML incluant des références HREF à des dépendances externes, telles que des images ou des scripts. Un tel script est xfasubset.js, requis pour que les formulaires HTML exécutent les fonctions intelligentes XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
+**URL de base :** URL de base où se trouvent les ressources de formulaire, telles que les images et les scripts. Cette valeur est nécessaire pour les transformations HTML incluant des références HREF à des dépendances externes, telles que des images ou des scripts. Un tel script est xfasubset.js, requis pour que les formulaires HTML exécutent les fonctions intelligentes XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
 
 >[!NOTE]
 >
@@ -59,7 +62,7 @@ La valeur par défaut est une chaîne vide.
 
 La valeur par défaut est une chaîne vide.
 
-**URI de configuration XCI :** Emplacement relatif ou absolu dans lequel le fichier XCI utilisé pour le rendu est trouvé. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
+**URI de configuration XCI :** Emplacement relatif ou absolu du fichier XCI utilisé pour le rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa.xci`.
 
@@ -73,17 +76,17 @@ L’exemple suivant présente une entrée dans le fichier de mappage de polices�
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Fichier PDF initial :** Fichier PDF initial utilisé dans une transformation PDFForm pour optimiser les  de. Le fichier PDF initial indique un fichier PDF personnalisé (qui ne contient que des ressources de flux XFA, d’image et de police) qui est ajouté à la conception et aux données du formulaire. Le formulaire est rendu par Acrobat (version 7 ou ultérieure) et s’applique à la transformation PDFForm.
+**Fichier PDF initial :** Fichier PDF initial utilisé dans une transformation PDFForm pour optimiser la diffusion. Le fichier PDF initial indique un fichier PDF personnalisé (qui ne contient que des ressources de flux XFA, d’image et de police) qui est ajouté à la conception et aux données du formulaire. Le formulaire est rendu par Acrobat (version 7 ou ultérieure) et s’applique à la transformation PDFForm.
 
 La valeur par défaut est une chaîne vide.
 
-**Emplacement du cache :** Indique l’emplacement du cache disque de Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** Indique l’emplacement du cache disque Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
 
 **Emplacement par défaut :** Il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
-* **JBoss :** Accueil [JBoss]\server\[type d’installation]\svcdata\FormServer\Cache
-* **WebLogic :** Accueil [WebLogic]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur de formulaires]\FormServer\Cache
-* **WebSphere :** Accueil [IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **JBoss :** [Accueil]de JBoss \server\[type d’installation]\svcdata\FormServer\Cache
+* **WebLogic :** [WebLogic Home]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur forms]\FormServer\Cache
+* **WebSphere :** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
 **Répertoire temporaire LC :** Le cache est créé dans un sous-répertoire du répertoire temporaire d’AEM forms, qui est spécifié dans Administration Console sous Paramètres > Paramètres de Core System > Configurations > Emplacement du répertoire temporaire. The subdirectory is named adobeform_[servername].
 
