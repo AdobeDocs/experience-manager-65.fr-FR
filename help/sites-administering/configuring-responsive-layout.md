@@ -29,7 +29,7 @@ ht-degree: 81%
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
-* Composant [**Conteneur de mises en page **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
+* Composant [**Conteneur de mises en page**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
    Ce composant fournit un système de paragraphes de grille qui vous permet d&#39;ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme paramètre par défaut pour votre page et/ou mis à la disposition des auteurs dans l’explorateur de composants.
 
@@ -45,10 +45,11 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
          Le conteneur de mises en page peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**de mise en page Une fois que le conteneur de mise en page est positionné sur votre page, vous pouvez utiliser la variable
+* **[Mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** de mise en page Une fois que le conteneur de mise en page est positionné sur votre page, vous pouvez utiliser la variable 
 **Mode de mise en page** pour positionner le contenu dans la grille réactive.
 
-* [**Émulateur **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Permet de créer et de modifier des sites web en responsive design qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
+* [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
+Permet de créer et de modifier des sites web en responsive design qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
 >[!CAUTION]
 >
