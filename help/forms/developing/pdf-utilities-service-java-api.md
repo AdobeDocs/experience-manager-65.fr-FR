@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Début rapide de l’API Java du service d’utilitaires PDF (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
+# DÉBUT rapide de l’API Java du service d’utilitaires PDF (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
 Les Débuts rapides suivants sont disponibles pour le service PDF Utilities.
 
@@ -32,11 +32,11 @@ Les Débuts rapides suivants sont disponibles pour le service PDF Utilities.
 
 [Début rapide (mode SOAP) : Assainissement des documents PDF](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec AEM forms reposent sur le système d’exploitation Forms Server. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec des formulaires AEM sont basés sur le système d’exploitation Forms Server. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : Conversion d’un document PDF en document XDP à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
@@ -241,7 +241,7 @@ L’exemple de code suivant convertit un document XDP en document PDF. (voir [Co
 
 ## Début rapide (mode SOAP) : Récupération des propriétés du document PDF à l’aide de l’API Java {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-L’exemple de code suivant détermine si le document est un document PDF et, dans l’affirmative, la première version d’Acrobat capable de le lire. (voir [Récupération des propriétés](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)du Document PDF).
+L’exemple de code suivant détermine si le document est un document PDF et, dans l’affirmative, la première version Acrobat capable de le lire. (voir [Récupération des propriétés](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)du Document PDF).
 
 ```java
  /*
