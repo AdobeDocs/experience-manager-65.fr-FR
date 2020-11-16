@@ -1,6 +1,6 @@
 ---
-title: Création d’une page pour les périphériques mobiles
-seo-title: Création d’une page pour les périphériques mobiles
+title: 'Création d’une page pour les appareils mobiles '
+seo-title: 'Création d’une page pour les appareils mobiles '
 description: Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule le périphérique mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
 seo-description: Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule le périphérique mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 92%
 
 ---
 
 
-# Création d’une page pour les périphériques mobiles{#authoring-a-page-for-mobile-devices}
+# Création d’une page pour les appareils mobiles{#authoring-a-page-for-mobile-devices}
 
 Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule le périphérique mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
 
@@ -23,9 +26,9 @@ Les périphériques sont regroupés en fonction des catégories : fonction, int
 
 >[!NOTE]
 >
->Pour créer un site mobile en fonction d’un site standard existant, créez une live copy du site standard. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
+>Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. (See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
->Les développeurs AEM peuvent créer des groupes de périphériques. (See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
+>Les développeurs d’AEM peuvent créer de nouveaux groupes d’appareils. (See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
 
 Utilisez la procédure suivante pour créer une page mobile :
 
@@ -46,5 +49,5 @@ La page ressemble à celle-ci :
 
 >[!NOTE]
 >
->Les émulateurs sont désactivés lorsqu’une page de l’instance de création est demandée à partir d’un périphérique mobile. La création peut alors se faire à l’aide de l’interface utilisateur tactile.
+>Les émulateurs sont désactivés lorsqu’une page de l’instance de création est demandée à partir d’un appareil mobile. La création peut alors s’effectuer à l’aide de l’interface utilisateur tactile.
 
