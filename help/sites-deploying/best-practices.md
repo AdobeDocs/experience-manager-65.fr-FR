@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 57%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Les meilleures pratiques de déploiement expliquent comment déployer ou maintenir AEM de la façon la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 
-La documentation disponible sur le déploiement et la mise à jour des meilleures pratiques et recommandations est disponible dans les domaines suivants :
+Les domaines suivants contiennent de la documentation sur le déploiement et la mise à jour des meilleures pratiques et des recommandations :
 
 * [OAK](#oak)
 * [Communautés](#communities)
 * [Interface utilisateur](#ui)
-* [Performance](#performance)
+* [Performances](#performance)
 
 Pour les meilleures pratiques d’administration, de développement ou de création, consultez l’un des liens suivants :
 
@@ -43,7 +46,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
   <tr>
    <td><p>Évolutivité, performances et reprise après sinistre</p> </td>
    <td><a href="/help/sites-deploying/performance.md">Performance et évolutivité</a></td>
-   <td>Fournit un livre blanc sur l'agilité technique, les performances élevées et les fonctionnalités de reprise après sinistre fiables</td>
+   <td>Fournit un livre blanc sur l'agilité technique, les performances élevées et les fonctionnalités de reprise après sinistre fiables.</td>
   </tr>
   <tr>
    <td>Déploiements OAK recommandés</td>
@@ -51,14 +54,14 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
    <td>Décrit les scénarios de déploiement</td>
   </tr>
   <tr>
-   <td>Topologie mongo</td>
+   <td>Topologie Mongo</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Meilleures pratiques en matière de topologie Mongo</a></td>
    <td>Décrit la topologie du mongo - quand utiliser quelle topologie.</td>
   </tr>
   <tr>
    <td>Options de la banque de données</td>
-   <td><a href="/help/sites-deploying/data-store-config.md">Configuration des entrepôts de données et des noeuds</a></td>
-   <td>Ce document décrit les meilleures pratiques en matière de stockage des données binaires et des noeuds de contenu. Inclut des informations sur l’utilisation de l’entrepôt de données Amazon S3.</td>
+   <td><a href="/help/sites-deploying/data-store-config.md">Configuration des entrepôts de données et de noeuds</a></td>
+   <td>Ce document décrit les meilleures pratiques relatives au stockage des données binaires et des noeuds de contenu. Inclut des informations sur l’utilisation de l’entrepôt de données Amazon S3.</td>
   </tr>
   <tr>
    <td>Recherche dans OAK</td>
@@ -70,9 +73,9 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Communities {#communities}
 
-Les communautés AEM simplifient la création et la gestion des communautés sur site. Les bonnes pratiques pour les communautés AEM sont décrites ici :
+AEM Communities simplifie la création et la gestion de communautés sur site. Les bonnes pratiques pour AEM Communities sont décrites ici :
 
-[Community Content Store](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité de stockage partagé pour le contenu généré par l’utilisateur (UGC) et des considérations relatives au choix de la [topologie](/help/communities/topologies.md)sous-jacente.
+[Communauté Content Store](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité d’enregistrement partagé pour le contenu généré par l’utilisateur et des considérations à prendre en compte pour choisir la [topologie](/help/communities/topologies.md)sous-jacente.
 
 [Déploiements recommandés pour les communautés](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Décrit les déploiements recommandés pour les communautés. |
 
@@ -82,9 +85,9 @@ Les meilleures pratiques relatives à l’interface utilisateur sont présentée
 
 [Recommandations d’interfaces utilisateur aux clients](/help/sites-deploying/ui-recommendations.md)
 
-AEM possède actuellement deux interfaces utilisateur : IU classique et optimisée pour les écrans tactiles dans la même version. Les clients doivent donc décider laquelle utiliser lors de la mise en œuvre du projet. Ce document a pour but d&#39;aider à trouver le bon choix.
+aem dispose actuellement de deux interfaces utilisateur : IU classique et optimisée pour les écrans tactiles dans la même version. Les clients doivent donc décider laquelle utiliser lors de la mise en œuvre du projet. Ce document vise à aider à trouver le bon choix.
 
-## Les performances {#performance}
+## Performances {#performance}
 
 Les meilleures pratiques relatives à la performance sont répertoriées ici :
 
