@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 40%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
 
 Découvrez comment utiliser le Catalog Producer dans AEM Assets pour générer des catalogues de produits à l’aide de vos ressources numériques.
 
-Grâce à Adobe Experience Manager (AEM) Assets Catalog Producer, vous pouvez créer des catalogues pour vos produits de marque à l’aide de modèles InDesign importés à partir d’une application InDesign. Pour importer des modèles InDesign, vous devez d’abord intégrer AEM Assets à un serveur InDesign.
+Grâce à Adobe Experience Manager (AEM) Assets Catalog Producer, vous pouvez créer des catalogues pour vos produits de marque à l’aide de modèles InDesign importés à partir d’une application InDesign. Pour importer des modèles d’InDesign, vous devez d’abord intégrer AEM Assets à un serveur d’InDesign.
 
 ## Intégration à un serveur InDesign {#integrating-with-indesign-server}
 
@@ -26,9 +29,9 @@ As part of the integration process, configure the **DAM Update Asset** workflow,
 
 >[!NOTE]
 >
->Vous pouvez générer des modèles InDesign à partir de fichiers InDesign avant de les importer dans AEM Assets. Pour plus d’informations, voir [Utilisation de fichiers et de modèles](https://helpx.adobe.com/indesign/using/files-templates.html).
+>Vous pouvez générer des modèles InDesign à partir de fichiers InDesign avant de les importer dans AEM Assets. Pour plus d’informations, voir [Utilisation de fichiers et de modèles](https://helpx.adobe.com/fr/indesign/using/files-templates.html).
 >
->Vous pouvez associer les éléments dans vos modèles InDesign à des balises XML. Les balises mappées s’affichent sous forme de propriétés lorsque vous mappez les propriétés d’un produit aux propriétés d’un modèle dans Catalog Producer. To learn about XML tagging in InDesign files, see [Tagging content for XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
+>Vous pouvez associer les éléments dans vos modèles InDesign à des balises XML. Les balises mappées s’affichent sous forme de propriétés lorsque vous mappez les propriétés d’un produit aux propriétés d’un modèle dans Catalog Producer. To learn about XML tagging in InDesign files, see [Tagging content for XML](https://helpx.adobe.com/fr/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >
@@ -61,7 +64,7 @@ Catalog Producer utilise des données de gestion d’informations sur les produ
 
 1. Pour créer d’autres pages, répétez les étapes 6 à 9. To create similar pages for other products, select the page and tap/click the **Create similar pages** icon from the toolbar.
 
-   ![create_like_pages](assets/create_similar_pages.png)
+   ![create_similaire_pages](assets/create_similar_pages.png)
 
    >[!NOTE]
    >
@@ -91,8 +94,8 @@ Catalog Producer utilise des données de gestion d’informations sur les produ
 
 1. Appuyez/cliquez sur **Suivant**. To add an existing InDesign file as a cover page, tap/click **Browse** beside the **Choose Cover Page** box, and specify the path for the cover page template.
 1. Tap/click **Save**, and then tap/click **Done** to close the confirmation dialog.
-Lorsque vous sélectionnez l’option **Terminé** , une boîte de dialogue s’ouvre pour indiquer si vous souhaitez un rendu .pdf.
-   ![exporter au format PDF](assets/CatalogPDF.png)Si l’option Acrobat(PDF) est sélectionnée, un rendu PDF est créé dans **/jcr:content/renditions** en plus du rendu InDesign. Vous pouvez télécharger tous les rendus en cochant la case &quot;Rendus&quot; dans la boîte de dialogue de téléchargement.
+Lorsque vous sélectionnez l’option **Terminé** , une boîte de dialogue s’ouvre pour indiquer si vous souhaitez obtenir un rendu .pdf.
+   ![exporter au format PDF](assets/CatalogPDF.png)Si l’option Acrobat(PDF) est sélectionnée, un rendu pdf est créé dans **/jcr:content/renditions** en plus du rendu indesign. Vous pouvez télécharger tous les rendus en cochant la case &quot;Rendus&quot; dans la boîte de dialogue de téléchargement.
 
 1. To generate a preview for the catalog you created, select it in the **Catalogs** console, and then click the **Preview** icon from the toolbar.
 
