@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 70%
 
 ---
 
@@ -63,6 +66,7 @@ Ce document contient des instructions détaillées.
 
    * **Adobe Campaign Email (AC 6.1)** : permet d’ajouter du contenu à un modèle prédéfini avant de l’envoyer vers Adobe Campaign 6.1 pour diffusion.
    * **Adobe Campaign Email (ACS)** : permet d’ajouter du contenu à un modèle prédéfini avant de l’envoyer vers Adobe Campaign Standard pour diffusion.
+
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
 1. Click **Create** to create your email or newsletter.
@@ -112,8 +116,8 @@ Vous pouvez modifier le contenu d’un courrier électronique dans l’interface
 
 Lorsque vous modifiez votre contenu, vous pouvez insérer les éléments suivants :
 
-* Champs de contexte Adobe Campaign. Il s’agit de champs que vous pouvez insérer dans votre texte et qui s’adapteront en fonction des données du destinataire (prénom, nom ou toute donnée de la dimension cible, par exemple).
-* Blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfini qui ne sont pas liés aux données du destinataire, comme un logo de marque ou un lien vers une page miroir.
+* Champs de contexte Adobe Campaign. Il s’agit de champs que vous pouvez insérer dans votre texte et qui s’adapteront en fonction des données du destinataire (par exemple, prénom, nom ou toute donnée de la dimension cible).
+* Blocs de personnalisation Adobe Campaign. Il s’agit de blocs de contenu prédéfini qui ne sont pas liés aux données du destinataire, tels qu’un logo de marque ou un lien vers une page miroir.
 
 Pour une description complète des composants Adobe Campaign, reportez-vous à la section [Composants Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
@@ -121,6 +125,7 @@ Pour une description complète des composants Adobe Campaign, reportez-vous à l
 >
 >* Seuls les champs de la dimension cible **Profils** d’Adobe Campaign sont pris en compte.
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. Vous pouvez y accéder directement à partir du courrier électronique en cours de modification.
+
 >
 
 
