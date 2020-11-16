@@ -91,7 +91,7 @@ Lorsque vous ajoutez un nouvel annuaire à un domaine, définissez les paramètr
 
 **Utilisateur :** L&#39;authentification est requise. Dans le champ Nom, indiquez le nom de l’enregistrement utilisateur qui peut accéder à l’annuaire. Il est généralement conseillé d’entrer le nom distinctif complet (ND) du compte utilisateur, par exemple : cn=Jane Doe, ou=user, dc=can, dc=com. Dans le champ Mot de passe, indiquez le mot de passe associé. Ces paramètres sont obligatoires lorsque vous sélectionnez Utilisateur pour l’option Liaison.
 
-**Nom :** Nom qui peut être utilisé pour la connexion à la base de données LDAP lorsque l’accès anonyme n’est pas activé. Pour Active Directory 2003, spécifiez `[domain name]\[userid]`. Pour Sun™ One, eDirectory ou IBM Tivoli Directory Server, spécifiez le nom qualifié complet de l’utilisateur, comme uid=lcuser,ou=it,o=company.com.
+**Nom :** Nom qui peut être utilisé pour la connexion à la base de données LDAP lorsque l’accès anonyme n’est pas activé. Pour Principale Directory 2003, indiquez `[domain name]\[userid]`. Pour Sun™ One, eDirectory ou IBM Tivoli Directory Server, spécifiez le nom qualifié complet de l’utilisateur, comme uid=lcuser,ou=it,o=company.com.
 
 **Mot de passe :** Mot de passe correspondant au nom que vous avez spécifié pour la connexion à la base de données LDAP lorsque l’accès anonyme n’est pas activé.
 
@@ -99,7 +99,7 @@ Lorsque vous ajoutez un nouvel annuaire à un domaine, définissez les paramètr
 
 **Récupérer les DN de base :** Récupère les DN de base et les affiche dans la liste déroulante. Ce paramètre est utile lorsque vous avez plusieurs DN de base et que vous devez sélectionner une valeur.
 
-**Activer le référent :** Ce paramètre est applicable lorsque votre organisation utilise plusieurs domaines Active Directory organisés dans une structure hiérarchique et que vous avez spécifié des paramètres d&#39;annuaire pour le domaine parent uniquement. Dans ce cas, lorsque vous sélectionnez cette option, User Management peut accéder aux détails des utilisateurs et des groupes à partir des domaines enfants.
+**Activer le référent :** Ce paramètre s’applique lorsque votre organisation utilise plusieurs domaines Principale Directory organisés dans une structure hiérarchique et que vous avez spécifié des paramètres d’annuaire pour le domaine parent uniquement. Dans ce cas, lorsque vous sélectionnez cette option, User Management peut accéder aux détails des utilisateurs et des groupes à partir des domaines enfants.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Bien que le paramètre ND de base soit obligatoire dans Administration Console, 
 
 **Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé à l’utilisateur. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs. (Voir Syntaxe des filtres de recherche, en anglais ou la RFC 2254.) Pour obtenir des informations supplémentaires sur le schéma Microsoft AD, voir Active Directory Schema (en anglais).
 
-**Description :** Attribut de Schéma pour la description de l’utilisateur
+**Description :** Attribut de schéma pour la description de l’utilisateur
 
 **Nom complet :** (obligatoire) attribut de Schéma pour le nom complet de l’utilisateur.
 
@@ -135,7 +135,7 @@ Bien que le paramètre ND de base soit obligatoire dans Administration Console, 
 
 **Prénom :** (obligatoire) attribut de Schéma pour le prénom de l’utilisateur.
 
-**Initiales :** Attribut de Schéma pour les initiales de l’utilisateur.
+**Initiales :** Attribut de schéma pour les initiales de l’utilisateur.
 
 **Calendrier professionnel :** Permet de mapper un calendrier professionnel à un utilisateur, en fonction de la valeur de ce paramètre (clé de calendrier professionnel). Les calendriers professionnels définissent les jours ouvrés et non ouvrés. AEM forms peut faire appel à des calendriers professionnels lors du calcul des dates et heures futures associées à des événements, tels que rappels, échéances et transmissions. Les clés de calendrier professionnel sont attribuées à des utilisateurs en fonction du domaine utilisé (domaine d’entreprise, local ou hybride). Voir Configuration des calendriers professionnels. 
 
@@ -145,19 +145,19 @@ L’espace utilisé pour l’affichage du nom de clé du calendrier professionne
 
 **Modifier l’horodatage :** Pour activer la synchronisation d’annuaires delta, définissez cette valeur sur modify TimeStamp. Voir Activation de la synchronisation d’annuaires delta.
 
-**Organisation :** Attribut de Schéma pour le nom de l’organisation à laquelle appartient l’utilisateur.
+**Organisation :** Attribut de schéma pour le nom de l’organisation à laquelle appartient l’utilisateur.
 
-**Courriel du Principal :** attribut de Schéma pour l’adresse électronique principale de l’utilisateur.
+**Courriel Principal :** attribut de schéma pour l’adresse électronique Principale de l’utilisateur.
 
-**Courriel Secondaire :** attribut de Schéma pour l’adresse électronique secondaire de l’utilisateur.
+**Courriel Secondaire :** attribut de schéma pour l’adresse électronique secondaire de l’utilisateur.
 
-**Téléphone :** attribut de Schéma pour le numéro de téléphone de l’utilisateur.
+**Téléphone :** attribut de schéma pour le numéro de téléphone de l’utilisateur.
 
-**Adresse postale :** attribut de Schéma pour l’adresse postale de l’utilisateur.
+**Adresse postale :** attribut de schéma pour l’adresse postale de l’utilisateur.
 
-**Paramètres régionaux :** attribut de Schéma contenant les informations de paramètres régionaux ISO. La valeur de cet attribut est un code de langue à deux lettres ou un code de langue et de pays.
+**Paramètres régionaux :** attribut de schéma contenant les informations de paramètres régionaux ISO. La valeur de cet attribut est un code de langue à deux lettres ou un code de langue et de pays.
 
-**Fuseau horaire :** attribut de Schéma qui contient le fuseau horaire où se trouve l’utilisateur. La valeur de cet attribut est une chaîne de type Ville/Pays.
+**Fuseau horaire :** attribut de schéma qui contient le fuseau horaire où se trouve l’utilisateur. La valeur de cet attribut est une chaîne de type Ville/Pays.
 
 **Activer le contrôle VLV (Virtual Liste Vue) :** Contrôle LDAP permettant à AEM forms de récupérer des données par lots à partir du serveur d’annuaire. Si vous utilisez Sun One en tant qu’annuaire LDAP et si cet annuaire contient de nombreux utilisateurs, l’activation du contrôle VLV crée un index que User Management peut utiliser lors de la recherche d’utilisateurs. Cette option se révèle tout particulièrement utile lors de l’utilisation d’un compte utilisateur normal capable de synchroniser un volume limité de données seulement. Vous pouvez également activer le contrôle VLV pour les groupes. Si vous sélectionnez l’option Activer le contrôle VLV (Virtual List View), spécifiez un nom dans la zone Champ de tri.
 
@@ -165,7 +165,7 @@ L’espace utilisé pour l’affichage du nom de clé du calendrier professionne
 >
 >pour activer le contrôle VLV, configurez Sun One. See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Champ de tri :** Si vous avez sélectionné Activer le contrôle VLV (Virtual Liste Vue Control), spécifiez le nom d’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut (uid, par exemple) spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
+**Champ de tri :** Si vous avez sélectionné Activer le contrôle VLV (Virtual Liste Vue), spécifiez le nom d’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut (uid, par exemple) spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
 
 ### Paramètres du groupe {#group-settings}
 
@@ -181,7 +181,7 @@ Bien que le paramètre ND de base soit obligatoire dans Administration Console, 
 
 **Filtre de recherche :** (obligatoire) filtre de recherche à utiliser pour trouver l’enregistrement associé au groupe. Vous pouvez effectuer une recherche sur un seul niveau ou sur les niveaux inférieurs.
 
-**Description :** Attribut de Schéma pour la description du groupe
+**Description :** Attribut de schéma pour la description du groupe
 
 **Nom complet :** (obligatoire) attribut de Schéma pour le nom complet du groupe
 
@@ -193,11 +193,11 @@ Si un attribut non ND est spécifié pour l’option ND de membre, User Manageme
 
 Si ND est spécifié comme identificateur unique, il n’est pas nécessaire de configurer l’identificateur unique de membre.
 
-**Organisation :** Attribut de Schéma pour le nom de l&#39;organisation à laquelle appartient le groupe
+**Organisation :** Attribut de schéma pour le nom de l&#39;organisation à laquelle appartient le groupe
 
-**Courriel du Principal :** Attribut de Schéma pour l&#39;adresse électronique principale du groupe
+**Courriel Principal :** Attribut de schéma pour l&#39;adresse électronique Principale du groupe
 
-**Courriel Secondaire :** Attribut de Schéma pour l&#39;adresse électronique secondaire du groupe
+**Courriel Secondaire :** Attribut de schéma pour l&#39;adresse électronique secondaire du groupe
 
 **Modifier l’horodatage :** Pour activer la synchronisation d’annuaires delta, définissez cette valeur sur modify TimeStamp. Voir Activation de la synchronisation d’annuaires delta.
 
@@ -207,7 +207,7 @@ Si ND est spécifié comme identificateur unique, il n’est pas nécessaire de 
 >
 >pour activer le contrôle VLV, configurez Sun One. See [Configure User Management to use Virtual List View (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Nom du champ de tri :** Si vous avez sélectionné Activer le contrôle VLV (Virtual Liste Vue Control), spécifiez le nom d’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
+**Nom du champ de tri :** Si vous avez sélectionné Activer le contrôle VLV (Virtual Liste Vue), spécifiez le nom d’attribut utilisé pour trier l’index. Il s’agit du nom de l’attribut spécifié lors de la création d’un index pour VLV sur le serveur d’annuaire.
 
 >[!NOTE]
 >
@@ -276,7 +276,7 @@ Vous trouverez ci-dessous un exemple de script LDIF pour une entrée VLV relativ
 
    >[!NOTE]
    >
-   >par convention, le nom de l’entrée vlvIndex est également `lcuser`, mais vous pouvez le nommer différemment. Utilisez le même nom dans l’outil vlvindex. Voir [Création de l’index du serveur d’annuaire pour VLV](configuring-directories.md#create-the-directory-server-index-for-vlv)*.*
+   >par convention, le nom de l’entrée vlvIndex est également `lcuser`, mais vous pouvez le nommer différemment. Utilisez le même nom dans l’outil vlvindex. Voir [Création de l’index du serveur d’annuaire pour VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.*
 
 1. En vous aidant de l’outil `ldapmodify` fourni par le serveur Sun ONE, créez une entrée similaire pour les groupes en utilisant respectivement le nom distinctif de base du groupe, le filtre de recherche et le champ de tri :
 
@@ -312,7 +312,7 @@ Après avoir configuré les paramètres d’annuaire et créé les entrées VLV 
 
 1. Si le contrôle VLV est activé pour les groupes, créez l’index correspondant pour les groupes. Vérifiez que les index ont été créés en exécutant la commande suivante :
 
-   *sun un serveur annuaire* `\shared\bin>ldapsearch -h`*hostname *`-p`*port no* `-s base -b "" objectclass=*`
+   *sun un serveur annuaire* `\shared\bin>ldapsearch -h`*hostname* `-p`*port no* `-s base -b "" objectclass=*`
 
    Une sortie du type de celle des données fournies à titre d’exemple est générée :
 
