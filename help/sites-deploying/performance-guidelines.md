@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 translation-type: tm+mt
 source-git-commit: a678716e2c0520891e4228bc49b075f070ea45b7
+workflow-type: tm+mt
+source-wordcount: '2993'
+ht-degree: 85%
 
 ---
 
@@ -24,7 +27,7 @@ Cet page fournit des directives générales sur l’optimisation de la performan
 * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
 * [Exigences techniques](/help/sites-deploying/technical-requirements.md)
 
-Vous trouverez ci-dessous les options de déploiement disponibles pour AEM (faites défiler pour afficher toutes les options) :
+Les options de déploiement disponibles pour l’AEM (faites défiler jusqu’à la vue de toutes les options) sont illustrées ci-dessous :
 
 <table>
  <tbody>
@@ -51,7 +54,7 @@ Vous trouverez ci-dessous les options de déploiement disponibles pour AEM (fait
    <td><p>LDAP</p> </td>
    <td><p>Tar</p> </td>
    <td><p>Segment</p> </td>
-   <td><p>Propriétés</p> </td>
+   <td><p>Propriété</p> </td>
    <td><p>Apache </p> </td>
    <td><p>Edge</p> </td>
    <td><p>Cible</p> </td>
@@ -64,11 +67,11 @@ Vous trouverez ci-dessous les options de déploiement disponibles pour AEM (fait
    <td><p>IBM</p> </td>
    <td><p>SAML</p> </td>
    <td><p>MongoDB</p> </td>
-   <td><p>Fichier</p> </td>
+   <td><p>File</p> </td>
    <td><p>Lucene</p> </td>
    <td><p>IIS</p> </td>
    <td><p>IE</p> </td>
-   <td><p>Analyse</p> </td>
+   <td><p>Analyses</p> </td>
   </tr>
   <tr>
    <td><p>Communautés</p> </td>
@@ -85,7 +88,7 @@ Vous trouverez ci-dessous les options de déploiement disponibles pour AEM (fait
    <td><p>Campagne</p> </td>
   </tr>
   <tr>
-   <td><p>Forms</p> </td>
+   <td><p>Formulaires</p> </td>
    <td><p>Déchargement d’auteur</p> </td>
    <td><p>HP-UX</p> </td>
    <td><p>Tomcat </p> </td>
@@ -289,7 +292,7 @@ Le déploiement d’AEM repose sur trois composants clés. L’**instance d’au
 
 ### Micronoyaux {#micro-kernels}
 
-Les micronoyaux servent de gestionnaires de persistence dans AEM. Il existe trois types de noyaux micro utilisés avec AEM : TarMK, MongoDB et la base de données relationnelle (sous prise en charge restreinte). Le choix d’un exemple correspondant à vos besoins dépend de la finalité de l’instance et du type de déploiement envisagé. For additional information about Micro Kernels, see the [Recommended Deployments](/help/sites-deploying/recommended-deploys.md) page.
+Les micronoyaux servent de gestionnaires de persistence dans AEM. Il existe trois types de micro-noyaux utilisés avec les AEM : TarMK, MongoDB et la base de données relationnelle (sous prise en charge restreinte). Le choix d’un exemple correspondant à vos besoins dépend de la finalité de l’instance et du type de déploiement envisagé. For additional information about Micro Kernels, see the [Recommended Deployments](/help/sites-deploying/recommended-deploys.md) page.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -303,7 +306,7 @@ Dans AEM, des données binaires peuvent être stockées indépendamment des nœu
 
 >[!CAUTION]
 >
->La prise en charge du micronoyau de la base de données relationnelle est limitée. Contactez[ l’assistance clientèle d’Adobe](https://helpx.adobe.com/marketing-cloud/contact-support.html) avant d’utiliser ce type de micronoyau.
+>La prise en charge du micronoyau de la base de données relationnelle est limitée. Contactez[ l’assistance clientèle d’Adobe](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) avant d’utiliser ce type de micronoyau.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -372,7 +375,7 @@ Les scénarios de test détaillés ci-dessous sont utilisés pour les sections d
 
 **Scénario de produit unique**
 
-AEM Assets:
+AEM Assets:
 
 * Interactions utilisateur : Parcourir les ressources / Rechercher les ressources / Télécharger les ressources / Lire les métadonnées des ressources / Mettre à jour les métadonnées des ressources / Transférer la ressource / Exécuter le workflow Transférer la ressource
 * Mode d’exécution : utilisateurs simultanés, une interaction par utilisateur
@@ -428,7 +431,7 @@ Les consignes sur l’architecture pour AEM Sites et AEM Assets sont illustré
 
 ### Directives sur les paramètres TarMK {#tarmk-settings-guideline}
 
-Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
@@ -451,7 +454,7 @@ Pour une bonne performance, nous vous conseillons de suivre les conseils relatif
    <td> </td>
   </tr>
   <tr>
-   <td>Paramètres JVM</td>
+   <td>Paramètres JVM   </td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> </td>
    <td><p>500 000</p> <p>100 000</p> <p>250 000</p> <p>True</p> </td>
    <td>Ajoutez ces paramètres JVM dans le script de démarrage AEM afin d’empêcher les requêtes coûteuses de surcharger les systèmes.</td>
@@ -489,11 +492,11 @@ Pour une bonne performance, nous vous conseillons de suivre les conseils relatif
 
 Les tests comparatifs ont été effectués selon les spécifications suivantes :
 
-|  | **Noeud Auteur** |
+|  | **Noeud d’auteur** |
 |---|---|
 | Serveur | Matériel métallique nu (HP) |
 | Système d’exploitation | RedHat Linux |
-| UC / Coeurs | Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs |
+| UC / Coeurs | Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs |
 | Mémoire RAM | 32 Go |
 | Disque | Magnétique |
 | Java | Oracle JRE version 8 |
@@ -538,14 +541,14 @@ Pour créer une bonne performance lorsque vous utilisez MongoMK, il est conseill
 
 ### Directives de paramètres MongoMK {#mongomk-settings-guidelines}
 
-Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+Pour une bonne performance, nous vous conseillons de suivre les conseils relatifs aux paramètres présentés ci-dessous. For instructions on how to change the settings, [see this page](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
   <tr>
    <td><strong>Configuration</strong></td>
    <td><strong>Paramètre</strong></td>
-   <td><strong>Valeur (par défaut)</strong></td>
+   <td><strong>Valeur (default)</strong></td>
    <td><strong>Description</strong></td>
   </tr>
   <tr>
@@ -561,7 +564,7 @@ Pour une bonne performance, nous vous conseillons de suivre les conseils relatif
    <td> </td>
   </tr>
   <tr>
-   <td>Paramètres JVM</td>
+   <td>Paramètres JVM   </td>
    <td><p><code>Doak.queryLimitInMemory</code></p> <p><code>Doak.queryLimitReads</code></p> <p><code>Dupdate.limit</code></p> <p><code>Doak.fastQuerySize</code></p> <p><code>Doak.mongo.maxQueryTimeMS</code></p> </td>
    <td><p>500 000</p> <p>100 000</p> <p>250 000</p> <p>True</p> <p>60 000</p> </td>
    <td>Ajoutez ces paramètres JVM dans le script de démarrage AEM afin d’empêcher les requêtes coûteuses de surcharger les systèmes.</td>
@@ -603,9 +606,9 @@ Les tests comparatifs ont été effectués selon les spécifications suivantes 
 |---|---|---|
 | Serveur | Matériel métallique nu (HP) | Matériel métallique nu (HP) |
 | Système d’exploitation | RedHat Linux | RedHat Linux |
-| UC / Coeurs | Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs | Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs |
+| UC / Coeurs | Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs | Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs |
 | Mémoire RAM | 32 Go | 32 Go |
-| Disque | Magnétique - >1 000 E/S | Magnétique - >1 000 E/S |
+| Disque | Magique - >1 000 IOPS | Magique - >1 000 IOPS |
 | Java | Oracle JRE version 8 | N/A |
 | Tas JVM | 16 Go | N/A |
 | Produit | AEM 6.2 | MongoDB 3.2 WiredTiger |
@@ -677,8 +680,8 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
   </tr>
   <tr>
    <td>UC / Coeurs</td>
-   <td>Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs</td>
-   <td>Processeur Intel(R) Xeon(R) E5-2407 @2.40GHz, 8 coeurs</td>
+   <td>Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs</td>
+   <td>Processeur Intel(R) Xeon(R) E5-2407 à 2,40 GHz, 8 coeurs</td>
    <td> </td>
   </tr>
   <tr>
@@ -689,8 +692,8 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
   </tr>
   <tr>
    <td>Disque</td>
-   <td>Magnétique - &gt;1 000 E/S</td>
-   <td>Magnétique - &gt;1 000 E/S</td>
+   <td>Magique - &gt;1 000 IOPS</td>
+   <td>Magique - &gt;1 000 IOPS</td>
    <td> </td>
   </tr>
   <tr>
@@ -746,7 +749,7 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
  <tbody>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>Noeud TarMK d’auteur</strong></td>
+   <td><strong>Noeud TarMK de l’auteur</strong></td>
    <td><strong>Noeud MongoMK de l’auteur</strong></td>
    <td><strong>Noeud MongoDB</strong></td>
   </tr>
@@ -776,9 +779,9 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
   </tr>
   <tr>
    <td>Disque</td>
-   <td>SSD - 10 000 E/S par seconde</td>
-   <td>SSD - 10 000 E/S par seconde</td>
-   <td>SSD - 10 000 E/S par seconde</td>
+   <td>SSD - 10 000 E/S</td>
+   <td>SSD - 10 000 E/S</td>
+   <td>SSD - 10 000 E/S</td>
   </tr>
   <tr>
    <td>Java</td>
@@ -852,6 +855,6 @@ Les conseils répertoriés sur cette page peuvent être résumés comme suit :
 
    * Les index Lucene doivent être utilisés pour les index personnalisés
 
-* **La personnalisation du flux de travail peut améliorer sensiblement les performances**, par exemple en supprimant l’étape vidéo dans le flux de travail &quot;Mettre à jour le fichier&quot;, en désactivant les écouteurs qui ne sont pas utilisés, etc.
+* **La personnalisation du flux de travail peut améliorer considérablement les performances**, par exemple en supprimant l’étape vidéo dans le flux de travail &quot;Mettre à jour le fichier&quot;, en désactivant les écouteurs qui ne sont pas utilisés, etc.
 
 Pour plus d’informations, consultez également la page [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md).
