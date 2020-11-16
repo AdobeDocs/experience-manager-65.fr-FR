@@ -1,8 +1,8 @@
 ---
-title: Présentation des composants
+title: Composants Présentation
 seo-title: Composants
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
-seo-description: Composants sont des unités modulaires qui réalisent des fonctionnalités spécifiques pour présenter votre contenu sur votre site Web.
+seo-description: Composants sont des unités modulaires qui offrent des fonctionnalités spécifiques pour présenter votre contenu sur votre site Web.
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 translation-type: tm+mt
 source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 64%
 
 ---
 
@@ -23,7 +26,7 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 
 * Unités modulaires qui réalisent des fonctionnalités spécifiques pour présenter votre contenu sur votre site Web.
 * Réutilisable.
-* Développé en tant qu’unités autonomes dans un dossier du référentiel.
+* Développé en tant qu&#39;unités autonomes dans un dossier du référentiel.
 * Ils ne comportent aucun fichier de configuration masqué.
 * Ils peuvent contenir d’autres composants.
 * Ils peuvent s’exécuter n’importe où dans n’importe quel système AEM ; leur exécution peut également être limitée à des composants spécifiques.
@@ -36,9 +39,9 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 Compte tenu de la nature modulaire des composants, vous pouvez effectuer les opérations suivantes :
 
 * Développer un nouveau composant sur votre instance locale.
-* Déployez-le dans votre environnement de test.
+* Déployez-le sur votre environnement de test.
 * Déployer le composant sur votre environnement de création actif et permettre ainsi aux auteurs et/ou développeurs d’ajouter et de configurer du contenu.
-* Déployez-le dans votre ou vos environnement(s) de publication en direct, où ils sont utilisés pour générer le contenu pour les visiteurs de votre site Web. Certains composants (c’est le cas de Communities, par exemple) acceptent la saisie de contenu de la part des utilisateurs.
+* Déployez-le sur vos environnements de publication en direct, où il est utilisé pour générer du contenu pour des visiteurs sur votre site Web. Certains composants (c’est le cas de Communities, par exemple) acceptent la saisie de contenu de la part des utilisateurs.
 
 Chaque composant AEM :
 
@@ -52,7 +55,7 @@ AEM est fourni avec un éventail de [composants prêts à l’emploi](/help/site
 
 * Système de paragraphes ( `parsys`)
 * Page ( `responsivegrid` - touch-enabled UI only)
-* Texte
+* Text (Texte)
 * Image, avec texte d’accompagnement
 * Barre d’outils
 
@@ -62,18 +65,18 @@ Les composants fournis et leur utilisation dans les [exemples de sites web We.Re
 
 Il existe deux groupes de composants AEM fournis par Adobe :
 
-* [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Composants de base](/help/sites-authoring/default-components-foundation.md)
 
-**Les composants** principaux ont été introduits avec AEM 6.3 et offrent une fonctionnalité de création flexible et riche en fonctionnalités. The [We.Retail reference site](/help/sites-developing/we-retail.md) illustrates how the core components can be used and represent the current best-practices of component development.
+**Les composants** principaux ont été introduits avec AEM 6.3 et l&#39;offre de fonctionnalités de création flexibles et riches en fonctionnalités. The [We.Retail reference site](/help/sites-developing/we-retail.md) illustrates how the core components can be used and represent the current best-practices of component development.
 
 Les **composants de base** sont fournis avec AEM depuis de nombreuses versions et sont disponibles prêts à l’emploi dans une installation AEM standard. Bien qu’ils soient toujours pris en charge, la plupart d’entre eux ont été abandonnés, ne sont plus améliorés et reposent sur des technologies héritées.
 
 >[!NOTE]
 >
->Les [composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) représentent les méthodes recommandées en matière de conception et de développement de composants. Ils font également office d’implémentations de référence.
+>Les [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) représentent les méthodes recommandées en matière de conception et de développement de composants. Ils font également office d’implémentations de référence.
 >
->[Les outils](modernization-tools.md) de modernisation d’AEM peuvent vous aider à migrer vers les composants principaux.
+>[Les outils](modernization-tools.md) de modernisation AEM peuvent aider à migrer vers les composants principaux.
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
@@ -93,7 +96,7 @@ Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tou
 
 ## Ressources supplémentaires {#further-reading}
 
-Les pages suivantes fournissent des informations plus détaillées sur le développement de ces composants et d’autres composants :
+Les pages suivantes fournissent des informations plus détaillées sur le développement de ces composants et d&#39;autres composants :
 
 * [Composants AEM – Principes de base](/help/sites-developing/components-basics.md)
 * [Développement de composants AEM](/help/sites-developing/developing-components.md)
