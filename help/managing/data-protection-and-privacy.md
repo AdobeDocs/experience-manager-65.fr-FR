@@ -31,7 +31,7 @@ ht-degree: 23%
 >
 >Pour plus d&#39;informations sur la réponse des Adobes aux questions de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, consultez le Centre [de confidentialité des](https://www.adobe.com/privacy.html)Adobes.
 
-adobe fournit de la documentation et des procédures (avec des API lorsqu&#39;elles sont disponibles), pour que l&#39;administrateur de la protection des données des clients ou l&#39;administrateur de l&#39;AEM puisse traiter les demandes de protection des données et de confidentialité des données et aider nos clients à se conformer à ces règles. Les procédures documentées permettront aux clients d&#39;exécuter les demandes de réglementation manuellement ou en appelant les API, le cas échéant, à partir d&#39;un portail ou d&#39;un service externe.
+Adobe fournit de la documentation et des procédures (avec des API lorsqu&#39;elles sont disponibles), pour que l&#39;administrateur de la protection des données des clients ou l&#39;administrateur de l&#39;AEM puisse traiter les demandes de protection des données et de confidentialité des données et aider nos clients à se conformer à ces règles. Les procédures documentées permettront aux clients d&#39;exécuter les demandes de réglementation manuellement ou en appelant les API, le cas échéant, à partir d&#39;un portail ou d&#39;un service externe.
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Pour Adobe Experience Manager :
 
    * L&#39;Adobe fournira de la documentation et des procédures à l&#39;administrateur de la confidentialité du client et/ou à l&#39;administrateur AEM, leur permettant d&#39;exécuter manuellement les demandes liées à la réglementation sur la confidentialité.
 
-adobe fournit des procédures pour traiter les demandes de confidentialité liées à Access, Delete and Opt-Out for Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou de scripts pour faciliter l’automatisation.
+Adobe fournit des procédures pour traiter les demandes de confidentialité liées à Access, Delete and Opt-Out for Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou de scripts pour faciliter l’automatisation.
 
 Le diagramme suivant illustre à quoi peut ressembler un processus de demande de confidentialité (illustré à l’aide de Adobe Experience Manager 6.5) :
 
@@ -116,7 +116,7 @@ Voir [AEM Mobile - Protection des données et état de préparation](/help/mobil
 Ces intégrations de Adobe Experience Manager s’inscrivent dans le cadre de services de protection des données et de protection de la vie privée (par exemple, RMMD ou ACCP). Aucune donnée personnelle provenant d&#39;Adobe Target ou d&#39;Adobe Analytics n&#39;est stockée en AEM par rapport aux intégrations.
 Pour plus d’informations, voir :
 
-* [adobe target - Présentation de la confidentialité](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+* [Adobe Target - Présentation de la confidentialité](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
 
 * [Processus de confidentialité des données Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
 
