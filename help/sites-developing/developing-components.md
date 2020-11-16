@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
 workflow-type: tm+mt
 source-wordcount: '3452'
-ht-degree: 86%
+ht-degree: 88%
 
 ---
 
@@ -82,7 +82,7 @@ Votre composant est rendu dans le langage [HTML](https://www.w3schools.com/htmL/
 
 ### Utilisation du langage de modèle HTML {#using-the-html-template-language}
 
-Le [langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs web qui souhaitent créer des sites web d’entreprise performants, HTL contribue à améliorer l’efficacité au niveau de la sécurité et du développement.
+Le [langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs web qui souhaitent créer des sites web d’entreprise performants, HTL contribue à améliorer l’efficacité au niveau de la sécurité et du développement.
 
 >[!NOTE]
 >
@@ -94,7 +94,7 @@ Cette logique facultative sélectionne et/ou calcule le contenu dont il faut ré
 
 Le mécanisme permettant de séparer la logique de l’aspect aide à définir clairement ce qui est appelé pour un affichage donné. Cela permet également de changer de logique pour différentes représentations de la même ressource.
 
-### Utilisation de Java {#using-java}
+### Utilisation de Java  {#using-java}
 
 [L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée.](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html) Cela permet d’utiliser le code Java pour implémenter la logique de sélection et de configuration du contenu du composant.
 
@@ -132,9 +132,9 @@ Les boîtes de dialogue permettent à l’auteur d’interagir avec le composant
 
 ### IU Coral et IU Granite {#coral-ui-and-granite-ui}
 
-L’[IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) et l’[IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) définissent l’aspect moderne d’AEM.
+L’[IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) et l’[IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) définissent l’aspect moderne d’AEM.
 
-[L’IU Granite offre un vaste éventail de composants de base (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et [créer votre propre widget](#creatinganewwidget).
+[L’IU Granite offre un vaste éventail de composants de base (widgets)](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) nécessaires pour créer une boîte de dialogue dans l’environnement de création. Si nécessaire, vous pouvez étendre cette sélection et [créer votre propre widget](#creatinganewwidget).
 
 Pour plus d’informations sur le développement de composants avec des types de ressources Coral et Granite, voir : [Création de composants Experience Manager avec des types de ressources Coral/Granite](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
@@ -149,8 +149,8 @@ Pour plus d’informations, voir :
 * IU Granite
 
    * Fournit le balisage de l’IU Coral encapsulé dans les composants Sling pour la création de consoles d’interface utilisateur et de boîtes de dialogue
-   * [Concepts de l’interface utilisateur AEM Touch-Enabled - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+   * [Concepts de l’interface utilisateur tactile AEM - IU Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+   * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Pour créer un widget à utiliser dans une boîte de dialogue de composant pour 
 
 >[!NOTE]
 >
->Pour plus de détails sur l’IU Granite, veuillez consulter la [documentation relative à l’IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Pour plus de détails sur l’IU Granite, veuillez consulter la [documentation relative à l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 Si vous configurez votre boîte de dialogue comme un conteneur simple pour un élément de formulaire, vous pouvez également voir le contenu principal du contenu de la boîte de dialogue sous la forme de champs de formulaire. La création d’un champ de formulaire nécessite la création d’un type de ressource. Cela équivaut à créer un composant. Pour vous aider dans cette tâche, l’IU Granite propose un composant de champ générique duquel hériter (en utilisant `sling:resourceSuperType`) :
 
@@ -294,7 +294,7 @@ La structure du contenu décrit la structure sémantique ; elle ne devrait (doi
 
 Pour marquer un champ comme étant obligatoire, définissez la propriété suivante sur le nœud de contenu du champ :
 
-* Nom (name) : `required`
+* Nom : `required`
 * Type : `Boolean`
 
 Pour consulter un exemple, reportez-vous à la section :
@@ -340,7 +340,7 @@ Voir [Extension de la création de page - Ajouter une action à une barre d’ou
 
 ## Configuration d’un composant pour le rail Références (emprunté/prêté) {#configuring-a-component-for-the-references-rail-borrowed-lent}
 
-Si votre nouveau composant fait référence au contenu d’autres pages, vous pouvez indiquer s’il doit se répercuter sur les sections **Contenu emprunté** et **Contenu prêté** du rail [**Références **](/help/sites-authoring/basic-handling.md#references).
+Si votre nouveau composant fait référence au contenu d’autres pages, vous pouvez indiquer s’il doit se répercuter sur les sections **Contenu emprunté** et **Contenu prêté** du rail [**Références**](/help/sites-authoring/basic-handling.md#references).
 
 AEM prêt à l’emploi ne vérifie que le composant Référence. Pour ajouter votre composant, vous devez configurer le bundle OSGi **WCM Authoring Content Reference Configuration**.
 
@@ -373,13 +373,13 @@ Ce comportement et la relation actif à composant requise peuvent être configur
 
    Créez un nœud :
 
-   * Nom (name) : `cq:authoring`
+   * Nom : `cq:authoring`
    * Type : `nt:unstructured`
 
 
 1. Sous cela, créez un nouveau nœud qui contiendra tous les mappages actif à composant :
 
-   * Nom (name) : `assetToComponentMapping`
+   * Nom : `assetToComponentMapping`
    * Type : `nt:unstructured`
 
 1. Pour chaque mappage actif à composant, créez un nœud :
@@ -389,23 +389,23 @@ Ce comportement et la relation actif à composant requise peuvent être configur
 
    Chacun possédant les propriétés suivantes :
 
-   * `assetGroup`:
+   * `assetGroup` :
 
       * Type : `String`
       * Value: the group that the related asset belongs to; for example, `media`
-   * `assetMimetype`:
+   * `assetMimetype` :
 
       * Type : `String`
       * Valeur : type mime de l’actif associé, par exemple `image/*`
-   * `droptarget`:
+   * `droptarget` :
 
       * Type : `String`
       * Valeur : cible de dépôt, par exemple, `image`
-   * `resourceType`:
+   * `resourceType` :
 
       * Type : `String`
       * Value: the related component resource; for example, `foundation/components/image`
-   * `type`:
+   * `type` :
 
       * Type : `String`
       * Valeur : type, par exemple, `Images`
@@ -439,7 +439,7 @@ L’[extension AEM Brackets](/help/sites-developing/aem-brackets.md) fournit un
 L’extension :
 
 * Facilite la synchronisation (aucun Maven ou File Vault requis) pour améliorer le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets.
-* Provides some [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) support, the template language designed to simplify component development and increase security.
+* Provides some [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) support, the template language designed to simplify component development and increase security.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 
 * HTL
 
-   * L’utilisation d’[HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * L’utilisation d’[HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Composants
 
