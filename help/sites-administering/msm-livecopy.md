@@ -233,7 +233,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
    ![Plan de déploiement](assets/rollout-blueprint.png)
 
-Les déploiements sont traités en tant que tâches asynchrones et peuvent être vérifiés dans le tableau de bord [**d&#39;état **des tâches](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -> **Tools** -> **Operations** -> **Jobs**
 
 >[!NOTE]
 >
@@ -241,7 +241,7 @@ Les déploiements sont traités en tant que tâches asynchrones et peuvent être
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In the **Sites** console, select the page in the blueprint and open the **[References](/help/sites-authoring/basic-handling.md#references)**panel (from the toolbar).
+1. In the **Sites** console, select the page in the blueprint and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar).
 1. Sélectionnez l’option **Plan directeur** dans la liste pour afficher les plans directeurs associés à cette page.
 1. Sélectionnez le plan directeur requis dans la liste.
 1. Cliquez ou appuyez sur **Déployer**.
@@ -259,7 +259,7 @@ Les déploiements sont traités en tant que tâches asynchrones et peuvent être
 
 1. Après avoir défini ces détails, sélectionnez **Déployer** pour exécuter l’opération.
 
-Les déploiements sont traités en tant que tâches asynchrones et peuvent être vérifiés dans le tableau de bord [**d&#39;état **des tâches](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -> **Tools** -> **Operations** -> **Jobs**
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ L’[action Déployer est également disponible dans l’aperçu de la Live Copy
 
    ![Plan de déploiement](assets/rollout-blueprint.png)
 
-Les déploiements sont traités en tant que tâches asynchrones et peuvent être vérifiés dans le tableau de bord [**d&#39;état **des tâches](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)asynchrones à la navigation****globale ->** Outils **-> Opérations -> Tâches********
+Rollouts are processed as asynchronous jobs and can be checked in the [**Async Jobs Status** dashboard](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Global Navigation** -> **Tools** -> **Operations** -> **Jobs**
 
 >[!NOTE]
 >
@@ -569,7 +569,7 @@ L’[action Réinitialiser est également disponible dans l’aperçu de la Live
 To track the changes you have made, you can view the blueprint page in **References** and compare it with its live copy page:
 
 1. Dans la console **Sites**, [accédez à la page Live Copy ou de plan directeur et sélectionnez-la](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)**et sélectionnez :
+1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** et sélectionnez :
 
    * **Plan directeur** (lorsqu’une page de copie dynamique est sélectionnée)
    * **Copies** en direct (lorsqu’une page de plan directeur est sélectionnée)
