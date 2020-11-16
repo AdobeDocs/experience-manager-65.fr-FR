@@ -12,6 +12,9 @@ discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 36%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 In AEM, the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (e.g. `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
 
-Comme une instance ne peut pas connaître son URL visible en externe si elle est exécutée derrière un calque Web et qu’il est parfois nécessaire de créer un lien en dehors de l’étendue de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
+Comme une instance ne peut pas connaître son URL visible en externe si elle s’exécute derrière une couche Web et qu’il est parfois nécessaire de créer un lien en dehors de l’étendue de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
 
-Cette page explique comment configurer le service **Externalizer** et l’utiliser. Pour plus d’informations, reportez-vous aux [JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Cette page explique comment configurer le service **Externalizer** et l’utiliser. Pour plus d’informations, reportez-vous aux [JavaDocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Configuration du service Externalizer {#configuring-the-externalizer-service}
 
@@ -30,7 +33,7 @@ The **Externalizer** service allows you to centrally define multiple domains tha
 
 Pour définir un mappage de domaine pour le service **Externalizer**, procédez comme suit :
 
-1. Accédez au gestionnaire de configuration via **Outils**, puis Console **** Web ou saisissez :
+1. Accédez au gestionnaire de configuration via **Outils**, puis Console **** Web, ou saisissez :
 
    `https://<host>:<port>/system/console/configMgr`
 
@@ -50,21 +53,23 @@ Pour définir un mappage de domaine pour le service **Externalizer**, procédez 
 
    * **schéma** est généralement http ou https, mais peut aussi être ftp, etc.
 
-      * utiliser https pour appliquer les liens https, le cas échéant
+      * utiliser https pour appliquer les liens https, si nécessaire
       * il sera utilisé si le code client ne remplace pas le schéma lors de la demande d’externalisation d’une URL.
-   * **server** est le nom d’hôte (peut être un nom de domaine ou une adresse IP).
+   * **server** est le nom d’hôte (peut être un nom de domaine ou une adresse ip).
    * **port** (facultatif) est le numéro de port.
-   * **contextpath** (facultatif) n’est défini que si AEM est installé en tant qu’application Web sous un chemin de contexte différent.
-   Par exemple: `production https://my.production.instance`
+   * **contextpath** (facultatif) n’est défini que si AEM est installé en tant qu’application web sous un chemin de contexte différent.
 
-   Les noms de mappage suivants sont prédéfinis et doivent toujours être définis en fonction d’AEM :
+   Par exemple : `production https://my.production.instance`
+
+   Les noms de mappage suivants sont prédéfinis et doivent toujours être définis en fonction de leur utilisation AEM :
 
    * `local` - l&#39;instance locale
    * `author` - le DNS du système de création
-   * `publish` - le DNS du site Web public
+   * `publish` - DNS du site Web destiné au public
+
    >[!NOTE]
    >
-   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, telle que `production`les systèmes non AEM, `staging` ou même des systèmes externes, tels que `my-internal-webservice`. Il est utile d’éviter de figer ces URL à différents emplacements de la base de code d’un projet.
+   >Une configuration personnalisée vous permet d’ajouter une nouvelle catégorie, telle que `production``staging` , ou même des systèmes non AEM externes, tels que `my-internal-webservice`. Il est utile d’éviter de figer de telles URL à différents emplacements de la base de code d’un projet.
 
 1. Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
@@ -91,6 +96,7 @@ Cette section illustre quelques exemples d’utilisation du service **Externaliz
    En supposant le mappage de domaines :
 
    * `publish https://www.website.com`
+
    `myExternalizedUrl` se termine par la valeur :
 
    * `https://www.website.com/contextpath/my/page.html`
@@ -105,6 +111,7 @@ Cette section illustre quelques exemples d’utilisation du service **Externaliz
    En supposant le mappage de domaines :
 
    * `author https://author.website.com`
+
    `myExternalizedUrl` se termine par la valeur :
 
    * `https://author.website.com/contextpath/my/page.html`
@@ -119,9 +126,10 @@ Cette section illustre quelques exemples d’utilisation du service **Externaliz
    En supposant le mappage de domaines :
 
    * `local https://publish-3.internal`
+
    `myExternalizedUrl` se termine par la valeur :
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
 
-1. Vous trouverez d’autres exemples dans les [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+1. Vous trouverez d’autres exemples dans les [Javadocs](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
