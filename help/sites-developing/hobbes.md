@@ -23,7 +23,7 @@ ht-degree: 71%
 
 >[!NOTE]
 >
->A partir de AEM version 6.5, la structure de test de l’interface utilisateur de hobbes.js est obsolète. adobe n&#39;envisage pas d&#39;apporter d&#39;autres améliorations et recommande aux clients d&#39;utiliser l&#39;automatisation du sélénium.
+>A partir de AEM version 6.5, la structure de test de l’interface utilisateur de hobbes.js est obsolète. Adobe n&#39;envisage pas d&#39;apporter d&#39;autres améliorations et recommande aux clients d&#39;utiliser l&#39;automatisation du sélénium.
 >
 >See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
 
