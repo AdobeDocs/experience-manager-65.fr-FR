@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '4618'
+ht-degree: 87%
 
 ---
 
@@ -125,7 +128,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
 
 #### **Post-déploiement** {#post-deployment}
 
-* Surveillez les journaux pour les requêtes qui déclenchent une traversée de gros noeuds ou une grande consommation de mémoire de tas : &quot;
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de grands noeuds ou une consommation importante de mémoire de tas : &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimisez la requête afin de réduire le nombre de nœuds parcourus transversalement.
@@ -135,7 +138,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Optimisez la requête pour réduire la consommation de mémoire de tas.
 
-Pour les versions 6.0 à 6.2 d’AEM, vous pouvez régler le seuil de traversée des noeuds au moyen des paramètres JVM dans le script de démarrage d’AEM afin d’empêcher les requêtes volumineuses de surcharger l’environnement.
+Pour AEM versions 6.0 à 6.2, vous pouvez régler le seuil de traversée des noeuds au moyen de paramètres JVM dans le script d’début AEM afin d’éviter que les requêtes volumineuses ne surchargent l’environnement.
 
 Les valeurs recommandées sont les suivantes :
 
@@ -221,11 +224,12 @@ La réindexation des index Oak doit être évitée à moins d’être justifié
 
 >[!NOTE]
 >
->Avant de consulter les tableaux ci-dessous pour déterminer si la réindexation est utile,** toujours **vérifier :
+>Avant de consulter les tableaux ci-dessous pour déterminer si la réindexation est utile,** toujours **verify :
 >
 >* la requête est correcte
 >* la requête résout l’index attendu (au moyen de l’outil [Expliquer la requête](/help/sites-administering/operations-dashboard.md#diagnosis-tools)) ;
 >* le processus d’indexation est terminé.
+
 >
 
 
@@ -292,7 +296,7 @@ Problèmes possibles et solutions :
 
       * Si le contenu existant n’est pas affecté par les modifications, seule une actualisation est nécessaire
 
-         * [Actualisez](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l’index lucene en définissant [oak:queryIndexDefinition]@refresh=true
+         * [Actualisez](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l&#39;index lucene en définissant [oak:queryIndexDefinition]@refresh=true
       * Sinon, [réindexez ](#how-to-re-index)l’index Lucene
 
          * Remarque : L’état de l’index depuis la dernière réindexation effective (ou l’indexation initiale) sera utilisé jusqu’à ce qu’une nouvelle réindexation soit déclenchée
@@ -331,13 +335,13 @@ Problèmes possibles et solutions :
 
       [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
-      la navigation dans le référentiel détermine si d’autres fichiers binaires (outre les fichiers lucene) sont manquants.
+      la navigation dans le référentiel détermine si d&#39;autres fichiers binaires (en plus des fichiers lucene) sont manquants
 
    * Si des binaires autres que les index Lucene sont manquants, restaurez à partir de la sauvegarde
    * Otherwise, [re-index](#how-to-re-index) *all* lucene indexes
    * Remarque :
 
-      Cette condition indique une erreur de configuration de la banque de données qui peut entraîner TOUT binaire (ex. des binaires de ressources).
+      Cette condition indique qu’une banque de données mal configurée peut entraîner un résultat binaire (p. ex. des binaires de ressources).
 
       Dans ce cas, restaurez la dernière version fonctionnelle connue du référentiel pour récupérer tous les binaires manquants.
 
@@ -368,7 +372,7 @@ Problèmes possibles et solutions :
    * If this does not resolve the issue, and the `AsyncIndexUpdate` exceptions persist then:
 
       1. [Réindexez ](#how-to-re-index)l’index erroné
-      1. Also file an [Adobe Support](https://helpx.adobe.com/support.html) ticket
+      1. Also file an [Adobe Support](https://helpx.adobe.com/fr/support.html) ticket
 
 
 ### Procédure de réindexation {#how-to-re-index}
@@ -393,7 +397,7 @@ Problèmes possibles et solutions :
 #### Réindexation des index de propriété Lucene {#re-indexing-lucene-property-indexes}
 
 * Utilisez [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) pour réindexer l’index de la propriété Lucene.
-* Définissez la propriété async-reindex sur true dans l’index de propriété  lucene, propriété index
+* Définissez la propriété async-reindex sur true dans l’index de propriété  index de propriété lucene
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
@@ -435,7 +439,7 @@ Dans le cadre du fonctionnement normal d’AEM, par exemple le chargement de res
 * Une fenêtre de maintenance permettant de générer le fichier CSV ET d’effectuer la réindexation finale
 * Version d’Oak : 1.0.18+, 1.2.3+
 * [oak-run.](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)jarversion 1.7.4+
-* Un dossier/partage de système de fichiers pour stocker le texte extrait accessible à partir des instances d’indexation AEM
+* Un dossier/partage de système de fichiers pour stocker le texte extrait accessible à partir des instances d&#39;AEM d&#39;indexation
 
    * La config OSGi de pré-extraction de texte requiert un chemin d’accès au système de fichiers vers les fichiers texte extraits. Ils doivent donc être accessibles directement depuis l’instance AEM (lecteur local ou montage de partage de fichiers).
 
@@ -443,7 +447,7 @@ Dans le cadre du fonctionnement normal d’AEM, par exemple le chargement de res
 
 >[!NOTE]
 >
->***Les commandes oak-run.jar décrites ci-dessous sont entièrement énumérées à l’adresse[https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html.](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
+>***Les commandes oak-run.jar décrites ci-dessous sont énumérées en détail à l’adresse [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html.](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
 >
 >Le schéma ci-dessus et les étapes ci-dessous servent à expliquer et à compléter les étapes de pré-extraction de texte technique décrites dans la documentation d’Apache Oak.
 
@@ -479,5 +483,5 @@ Le texte pré-extrait peut être ajouté de manière incrémentielle au fil du t
 
 3a. La [réindexation](#how-to-re-index) des index Lucene est invoquée dans AEM.
 
-3b. La configuration OSGi PréExtraitTextProvider du magasin de données Apache Jackrabbit Oak (configurée pour pointer vers le texte Extrait via un chemin d’accès au système de fichiers) indique à Oak de fournir du texte intégral à partir des fichiers Extraits et évite d’accéder directement aux données stockées dans le référentiel et de les traiter.
+3b. La configuration OSGi d&#39;Apache Jackrabbit Oak DataStore PreExtraitsTextProvider (configurée pour pointer vers le texte extrait via un chemin d&#39;accès au système de fichiers) indique à Oak de trouver du texte intégral à partir des fichiers extraits, et évite d&#39;accéder directement aux données stockées dans le référentiel et de les traiter.
 
