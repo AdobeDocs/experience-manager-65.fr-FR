@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Flux d’activités
 seo-title: Fonctionnalité Flux d’activités
-description: activités d'un membre de la communauté inscrit
-seo-description: activités d'un membre de la communauté inscrit
+description: Activités d'un membre de la communauté inscrit
+seo-description: Activités d'un membre de la communauté inscrit
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -29,7 +29,7 @@ La possibilité de suivi ajoute une autre vue des activités lorsque des membres
 
 Le document décrit :
 
-* ajouter le composant Flux d&#39;Activité à un site AEM
+* Ajouter le composant Flux d&#39;Activité à un site AEM
 * Paramètres de configuration du composant Flux d’Activité
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
