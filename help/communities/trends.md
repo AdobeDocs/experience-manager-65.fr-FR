@@ -1,8 +1,8 @@
 ---
 title: Tendances d’activité
 seo-title: Tendances d’activité
-description: ajouter un composant Liste d'Activité communautaire à une page
-seo-description: ajouter un composant Liste d'Activité communautaire à une page
+description: Ajouter un composant Liste d'Activité communautaire à une page
+seo-description: Ajouter un composant Liste d'Activité communautaire à une page
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -27,7 +27,7 @@ The `Community Activity List` component provides the ability to add trending inf
 
 Le document décrit :
 
-* ajouter le `Community Activity List` composant à un site [](/help/communities/overview.md#community-sites)communautaire.
+* Ajouter le `Community Activity List` composant à un site [](/help/communities/overview.md#community-sites)communautaire.
 
 * Configuration settings for the `Community Activity List` component.
 
@@ -63,7 +63,7 @@ Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour l
 
 * **Type**
 
-   Indiquez s’il faut afficher les données concernant les membres de la communauté ou le contenu généré par l’utilisateur.
+   Indiquez si les données relatives aux membres de la communauté ou au contenu généré par l’utilisateur doivent être affichées.
 
    Faites un choix parmi 
 
