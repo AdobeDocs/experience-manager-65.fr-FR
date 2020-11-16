@@ -11,6 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1099'
+ht-degree: 73%
 
 ---
 
@@ -34,7 +37,7 @@ Pour configurer une image de logo de votre choix, procédez comme suit :
 1. Create the appropriate [folder structure in CRX](#creatingfolderstructure).
 1. [Téléchargez le nouveau fichier](#uploadlogo) de logo dans le dossier que vous avez créé dans CRX.
 
-1. [Configurez le fichier CSS](#createcss) sur CRX pour faire référence au nouveau logo.
+1. [Configurez la page CSS](#createcss) sur CRX pour faire référence au nouveau logo.
 1. Clear the browser history and [refresh the Create Correspondence UI](#refreshccrui).
 
 ## Création de la structure de dossiers requise {#creatingfolderstructure}
@@ -45,9 +48,9 @@ Pour une personnalisation, créez une structure de dossiers parallèle, comme ex
 
 La branche /apps (structure de dossiers) :
 
-* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de feature pack ou de correctif, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont remplacées.
+* Garantit que vos fichiers sont sûrs en cas de mise à jour du système. En cas de mise à niveau, de feature pack ou de correctif logiciel, la branche /libs est mise à jour et si vous hébergez vos modifications dans la branche /libs, elles sont remplacées.
 * Vous aide à ne pas toucher au système/à la branche actuels, que vous pouvez ébranler par erreur si vous utilisez les emplacements par défaut pour enregistrer les fichiers personnalisés.
-* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. AEM est configuré pour effectuer d’abord une recherche dans la branche /apps, puis dans la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
+* Aide vos ressources pour obtenir une priorité plus élevée si AEM recherche des ressources. aem est configuré pour rechercher d&#39;abord la branche /apps, puis la branche /libs pour trouver une ressource. Ce mécanisme signifie que le système utilise votre recouvrement (et les personnalisations qui y sont définies).
 
 Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans la branche /apps :
 
@@ -72,7 +75,7 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
       >[!NOTE]
       >
-      >N&#39;apportez pas de modifications dans la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
+      >N&#39;apportez aucune modification à la branche /libs. Toutes les modifications que vous apportez risquent d’être perdues, car cette branche est exposée aux modifications chaque fois que vous :
       >
       >    
       >    
@@ -139,7 +142,7 @@ Suivez les étapes ci-dessous pour télécharger le fichier du logo personnalis�
 
    La boîte de dialogue Edit jcr:data s&#39;affiche.
 
-   Cliquez maintenant sur le dossier newlogo.png,  cliquez sur jcr:content (option dim) et définissez type nt:resource. Dans le cas contraire, créez une propriété du nom de jcr:content.
+   Cliquez maintenant sur le dossier newlogo.png, cliquez sur jcr:content (option dim) en doublon et définissez type nt:resource. Dans le cas contraire, créez une propriété du nom de jcr:content.
 
 1. Dans la boîte de dialogue Edit jcr:data, cliquez sur **Parcourir** et sélectionnez le fichier image que vous souhaitez utiliser comme logo (ici, CustomLogo.png).
 
