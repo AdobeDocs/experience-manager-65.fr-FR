@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 89%
 
 ---
 
@@ -25,7 +28,7 @@ L’interface utilisateur tactile d’AEM s’accompagne de plusieurs principes 
 
 L’interface utilisateur convient à la fois aux appareils mobiles et aux ordinateurs de bureau. Cependant, au lieu de créer deux styles distincts, Adobe a décidé d’utiliser un seul style qui fonctionne pour tous les écrans et terminaux.
 
-Tous les modules utilisent la même mise en page de base. Dans AEM, ceci peut être considéré comme :
+Tous les modules utilisent la même mise en page de base, AEM ceci peut être considéré comme :
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -52,7 +55,7 @@ La barre d’en-tête affiche des éléments globaux, parmi lesquels :
 
 Le contenu de cette barre varie en fonction de l’emplacement. Elle affiche des outils permettant de contrôler la vue ou des ressources dans la page ci-dessous. La barre d’outils est propre au produit, mais elle contient des éléments communs.
 
-La barre d’outils affiche les actions actuellement disponibles à tout emplacement :
+La barre d’outils affiche les actions actuellement disponibles à n’importe quel emplacement :
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -164,7 +167,7 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur les concepts relatifs à l’interface utilisateur tactile, consultez l’article [Concepts de l’interface utilisateur](/help/sites-developing/touch-ui-concepts.md)tactile d’AEM.
+Pour plus d’informations sur les concepts relatifs à l’interface utilisateur tactile, reportez-vous à l’article [Concepts de l’interface utilisateur](/help/sites-developing/touch-ui-concepts.md)tactile AEM.
 
-Pour plus d’informations techniques, reportez-vous à la documentation [JS définie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.
+Pour plus d’informations techniques, voir la documentation [JS définie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.
 
