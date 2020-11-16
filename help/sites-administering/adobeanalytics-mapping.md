@@ -12,6 +12,9 @@ discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 6f49e01aa3e9841c7b2917870593452b778667d2
+workflow-type: tm+mt
+source-wordcount: '1470'
+ht-degree: 54%
 
 ---
 
@@ -35,7 +38,7 @@ Les données mappées sont envoyées à Adobe Analytics lorsque la page se charg
 * La page est associée à la structure.
 * La page utilise les composants ajoutés à la structure.
 
-Procédez comme suit pour mapper les variables de composant CQ avec les propriétés de rapport Adobe Analytics.
+Suivez la procédure suivante pour mapper des variables de composant CQ avec des propriétés de rapport Adobe Analytics.
 
 1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category.
 
@@ -61,7 +64,7 @@ Procédez comme suit pour mapper les variables de composant CQ avec les proprié
    >
    >Il est vivement recommandé de suivre les indications suivantes :
    >    
-   >    * `eVars` et `props` sont mappées à des variables CQ commençant par `pagedata.X` ou `eventdata.X`
+   >    * `eVars` et `props` sont mappés à des variables CQ commençant par `pagedata.X` ou `eventdata.X`
       >    
       >    
    * tandis que les événements doivent être mappés à des variables commençant par `eventdata.events.X`.
@@ -71,7 +74,7 @@ Procédez comme suit pour mapper les variables de composant CQ avec les proprié
 
 ## Mappage de variables liées à des produits {#mapping-product-related-variables}
 
-AEM utilise une convention pour nommer les variables et événements liés aux produits qui doivent être mappés aux propriétés liées aux produits Adobe Analytics :
+aem utilise une convention pour nommer les variables et les événements liés aux produits qui sont censés être mappés aux propriétés liées aux produits Adobe Analytics :
 
 | Variable CQ | Variable Analytics | Description |
 |---|---|---|
@@ -90,11 +93,11 @@ Plusieurs composants d’AEM Commerce utilisent ces noms de variables.
 
 ### Vérification des rapports dans Adobe Analytics {#checking-reports-on-adobe-analytics}
 
-1. Connectez-vous au site Web Adobe Analytics à l’aide des mêmes informations d’identification que celles fournies à AEM.
+1. Connectez-vous au site Web Adobe Analytics en utilisant les mêmes informations d’identification que celles fournies à AEM.
 1. Assurez-vous que le RSID sélectionné est celui utilisé lors des étapes précédentes.
 1. Dans **Rapports** (dans la partie gauche de la page), sélectionnez **Conversion personnalisée**, puis **Conversion personnalisée 1-10** et sélectionnez la variable correspondant à `eVar7`.
 
-1. Selon la version d’Adobe Analytics que vous utilisez, vous devez attendre en moyenne 45 minutes pour que le rapport soit mis à jour avec le terme de recherche utilisé ; par exemple, l&#39;aubergine dans l&#39;exemple
+1. Selon la version d’Adobe Analytics que vous utilisez, vous devez attendre en moyenne 45 minutes pour que le rapport soit mis à jour avec le terme de recherche utilisé ; par exemple, aubergine dans l&#39;exemple
 
 ## Utilisation de l’outil de recherche de contenu (cf#) avec les structures Adobe Analytics {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -117,13 +120,14 @@ La liste peut être manipulée comme suit :
    * If the **Traffic** button is selected, the list will only show the variables belonging to the Traffic section.
    * If the **Conversion** button is selected, the list will only show the variables belonging to the Conversion section.
    * Si vous sélectionnez le bouton **Événements**, seules les variables appartenant à la section Événements sont répertoriées dans la liste.
+
    >[!NOTE]
    >
    >Un seul bouton de filtre peut être actif à la fois.
 
    >[!NOTE]
    >
-   >Les variables Search&amp;Promote appartiennent également à la section Conversion.
+   >Les variables de Search &amp; Promote appartiennent également à la section Conversion.
 
    1. La liste comporte également une fonctionnalité de recherche, qui filtre les éléments en fonction du texte saisi dans le champ de recherche.
    1. Si une option de filtre est activée lors de la recherche des éléments de la liste, les résultats affichés sont également filtrés en fonction du bouton actif.
@@ -131,9 +135,10 @@ La liste peut être manipulée comme suit :
    1. Si vous sélectionnez plusieurs RSID dans la structure, toutes les variables de la liste s’affichent à l’aide de toutes les étiquettes utilisées dans les RSID sélectionnés.
 
 
-1. Dans la vue Adobe Analytics, l’outil de recherche de contenu affiche toutes les variables CQ appartenant aux composants de suivi déplacés dans la vue CQ.
+1. Dans Adobe Analytics vue, l’outil de recherche de contenu affiche toutes les variables CQ appartenant aux composants de suivi glissés dans la vue CQ.
 
    * e.g. in case the **Download component** is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder wil look like this when switching to Adobe Analytics view:
+
    ![aa-22](assets/aa-22.png)
 
    * The variables can be dragged&amp;dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion** and **Events**).
@@ -145,7 +150,7 @@ La liste peut être manipulée comme suit :
 
 ## Utilisation de la vue AEM et de la vue Analytics {#using-aem-view-and-analytics-view}
 
-A tout moment, les utilisateurs ont la possibilité de basculer entre deux modes d’affichage des mappages Adobe Analytics sur une page de structure. Les deux vues offrent une meilleure présentation des mappages dans la structure, de deux points de vue différents.
+A tout moment, les utilisateurs ont la possibilité de basculer entre deux méthodes d’affichage des mappages Adobe Analytics sur une page de structure. Les deux vues offrent une meilleure présentation des mappages dans la structure, de deux points de vue différents.
 
 ### Vue AEM {#aem-view}
 
@@ -154,7 +159,7 @@ A tout moment, les utilisateurs ont la possibilité de basculer entre deux modes
 En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propriétés suivantes :
 
 1. Voici la vue par défaut à l’ouverture de la structure.
-1. Côté gauche : l’outil de recherche de contenu (cf#) est renseigné par les variables Adobe Analytics en fonction du ou des RSID sélectionnés.
+1. Côté gauche : l&#39;outil de recherche de contenu (cf#) est renseigné par des variables Adobe Analytics en fonction du ou des RSID sélectionnés.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
 1. **Vue AEM**:
@@ -180,14 +185,14 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 1. Sur la gauche de l’écran : outil de recherche de contenu (cf#) renseigné par des variables CQ en fonction des composants déplacés sur la structure dans la vue CQ.
 1. En-têtes d’onglets (**vue AEM** et **vue Analytics**) : à utiliser pour basculer entre les vues.
 
-1. Les trois tableaux (Trafic, Conversion, Événement) répertorient toutes les variables Adobe Analytics disponibles. des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
+1. Les trois tableaux (Trafic, Conversion, Événement) liste toutes les variables Adobe Analytics disponibles. des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
 
    * **Trafic** :
 
       * Traffic variable ( `prop1`) mapped to a CQ variable ( `eventdata.downloadLink`)
 
       * Lorsque le composant comporte un cadenas en regard de son nom, cela signifie qu’il est hérité d’une structure parente et ne peut donc pas être modifié.
-   * **Conversion** :
+   * **Conversion**:
 
       * Conversion variable ( `eVar1`) mapped to a CQ variable ( `pagedata.title`)
 
@@ -204,7 +209,8 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 >
 >* Par exemple, en regard de `prop3` vous pouvez ajouter
 >* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-   >  *pour envoyer le* titre *d’une page concaténée avec sa* section *de site à l’aide de*: (deux-points) et avec le préfixe *Adobe* comme `prop3`
+   >  pour envoyer le *titre* d&#39;une page concaténée avec sa section *de* site à l&#39;aide de *:* (deux-points) et précédés d’un *Adobe* comme `prop3`
+
 >
 
 
