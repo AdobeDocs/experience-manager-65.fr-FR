@@ -25,7 +25,7 @@ Le nœud de profil présente la propriété **sling:resourceSuperType** et la va
 
 Les scripts Sling sont des scripts JSP. Ces scripts JSP servent de conteneurs pour rassembler le code HTML du formulaire demandé et les artefacts JS/CSS requis. Ces scripts Sling sont également appelés des **scripts de rendu de profil**. Le rendu de profil appelle le service Forms OSGi pour effectuer le rendu du formulaire demandé.
 
-Le script de profil est dans html.jsp et html.POST.jsp pour les requêtes GET et POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N&#39;apportez aucune modification statique, la mise à jour du correctif écrase ces modifications.
+Le script de profil se trouve dans html.jsp et html.POST.jsp pour les demandes de GET et de POST. Vous pouvez copier et modifier un ou plusieurs fichiers à remplacer pour y ajouter vos personnalisations. N&#39;apportez aucune modification statique, la mise à jour du correctif écrase ces modifications.
 
 Un profil comporte divers modules : les modules formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp, et footer.jsp.
 
