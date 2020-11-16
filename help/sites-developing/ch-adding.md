@@ -12,7 +12,7 @@ ht-degree: 67%
 
 # Ajout de ContextHub à des pages et accès à des magasins {#adding-contexthub-to-pages-and-accessing-stores}
 
-ajoutez ContextHub sur vos pages pour activer les fonctionnalités ContextHub et pour créer un lien vers les bibliothèques Javascript ContextHub.
+Ajoutez ContextHub sur vos pages pour activer les fonctionnalités ContextHub et pour créer un lien vers les bibliothèques Javascript ContextHub.
 
 L’API JavaScript ContextHub permet d’accéder aux données contextuelles gérées par ContextHub. Cette page décrit brièvement les principales fonctionnalités de l’API pour l’accès et la manipulation des données contextuelles. Suivez les liens vers la documentation de référence de l’API pour consulter des informations détaillées et des exemples de code.
 
