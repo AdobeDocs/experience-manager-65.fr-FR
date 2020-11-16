@@ -1,6 +1,6 @@
 ---
 title: Lancements
-seo-title: Lancements
+seo-title: 'Les lancements  '
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 seo-description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
@@ -12,6 +12,9 @@ discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +34,7 @@ Par exemple, les pages de produits saisonniers de votre boutique en ligne sont m
 
 Les lancements peuvent également être :
 
-* Créés pour plusieurs branches racine. Même si vous pouvez créer un lancement pour le site dans son intégralité (et y apporter des modifications), cette méthode n’est pas pratique puisque l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers, de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
+* Créés pour plusieurs branches racine. Même si vous pouvez créer un lancement pour le site dans son intégralité (et y apporter des modifications), cette méthode n’est pas pratique puisque l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
 * Imbriqués (un lancement dans un lancement). Vous pouvez ainsi créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
 
 Cette section explique comment créer, modifier et convertir (et, le cas échéant, [supprimer](/help/sites-authoring/launches-creating.md#deleting-a-launch)) les pages de lancement de la console Sites ou de la console [Lancements](#the-launches-console) :
@@ -46,15 +49,16 @@ La fonction Lancements vous permet de développer efficacement le contenu en vue
 
 La fonction Lancements vous permet de :
 
-* Créer une copie de vos pages source :
+* Créez une copie de vos pages source :
 
-   * La copie correspond au lancement.
-   * Les pages source de niveau supérieur s’appellent des **pages de production**.
+   * La copie est votre lancement.
+   * Les pages source de niveau supérieur sont connues sous le nom de **Production**.
 
       * Les pages source peuvent être extraites de plusieurs branches (distinctes).
+
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-* Modifier la configuration des lancements :
+* Modifier la configuration de lancement :
 
    * Ajoutez ou supprimez des pages et/ou des branches vers/à partir du lancement.
    * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**. 
@@ -68,10 +72,10 @@ La fonction Lancements vous permet de :
       * Convertissez toutes les pages ou uniquement celles qui ont été modifiées.
    * Automatiquement, ce qui implique les étapes suivantes : 
 
-      * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification d’un lancement.
+      * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
 
       * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
-      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Une fois la conversion faite, les pages de production sont automatiquement publiées.\
+      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la date de **lancement** (**En direct**) spécifiée ****. Après la promotion, les pages de production sont automatiquement publiées.\
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 
 
@@ -79,12 +83,14 @@ La fonction Lancements vous permet de :
 
    * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy). 
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source. 
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 * [Créer un lancement imbriqué](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) (lancement dans un lancement) :
 
    * La source est un lancement existant.
    * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) dans n’importe quelle cible. Il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
+
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
    >[!CAUTION]
@@ -93,7 +99,7 @@ La fonction Lancements vous permet de :
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
 >Si vous rencontrez des difficultés, contactez votre administrateur système. 
 
@@ -103,7 +109,7 @@ La console de lancements fournit un aperçu de vos lancements et permet d’appl
 
 * La console **Outils** : **Outils**, **Sites**, **Lancements**.
 
-* Or directly with [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* Ou directement avec [.https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
 
@@ -115,4 +121,4 @@ La console de lancements fournit un aperçu de vos lancements et permet d’appl
 
 1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![capture d&#39;écran_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
