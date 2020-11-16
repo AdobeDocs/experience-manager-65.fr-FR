@@ -32,7 +32,7 @@ Ces instructions décrivent comment se connecter au serveur MySQL et établir la
 
    * [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server version 5.6 ou ultérieure
 
-      * Peut s’exécuter sur le même hôte qu’AEM ou à distance
+      * Peut s’exécuter sur le même hôte que AEM ou à distance
    * [Outils MySQL](https://dev.mysql.com/downloads/tools/workbench/)
 
 
@@ -42,7 +42,7 @@ Ces instructions décrivent comment se connecter au serveur MySQL et établir la
 
 ### Noms de table en minuscules {#lower-case-table-names}
 
-SQL n&#39;étant pas sensible à la casse, pour les systèmes d&#39;exploitation sensibles à la casse, il est nécessaire d&#39;inclure un paramètre permettant de mettre en minuscules tous les noms de table.
+SQL n&#39;étant pas sensible à la casse, pour les systèmes d&#39;exploitation sensibles à la casse, il est nécessaire d&#39;inclure un paramètre permettant d&#39;abaisser la casse de tous les noms de table.
 
 Par exemple, pour spécifier tous les noms de table en minuscules sur un système d’exploitation Linux :
 
@@ -87,7 +87,7 @@ Lorsque MySQL Workbench est lancé pour la première fois, sauf s’il est déj�
 1. Sélectionnez l’ `+` icône à droite de `MySQL Connections`.
 1. Dans la boîte de dialogue `Setup New Connection`, saisissez les valeurs appropriées à votre plateforme.
 
-   A des fins de démonstration, avec l’instance AEM d’auteur et MySQL sur le même serveur :
+   A des fins de démonstration, avec l’instance d’AEM d’auteur et MySQL sur le même serveur :
 
    * Nom de la connexion: `Communities`
    * Méthode de connexion : `Standard (TCP/IP)`
@@ -117,7 +117,7 @@ Ouvrez la connexion Communities pour installer la base de données.
 
 Le script SQL est obtenu à partir du référentiel AEM :
 
-1. Accédez à CRXDE Lite
+1. Accéder au CRXDE Lite
 
    * For example, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -166,11 +166,11 @@ Une fois le script exécuté, il est nécessaire d’actualiser la `SCHEMAS` sec
 
 La configuration OSGi pour le pool **de connexions JDBC** Day Commons permet de configurer le pilote JDBC MySQL.
 
-Toutes les instances AEM de publication et de création doivent pointer vers le même serveur MySQL.
+Toutes les instances d’AEM de publication et d’auteur doivent pointer vers le même serveur MySQL.
 
-Lorsque MySQL s’exécute sur un serveur différent d’AEM, le nom d’hôte du serveur doit être spécifié à la place de &quot;localhost&quot; dans le connecteur JDBC.
+Lorsque MySQL s’exécute sur un serveur différent de AEM, le nom d’hôte du serveur doit être spécifié à la place de &quot;localhost&quot; dans le connecteur JDBC.
 
-* Sur chaque instance d’auteur et de publication AEM.
+* Sur chaque instance d’AEM d’auteur et de publication.
 * Connecté avec des droits d’administrateur.
 * Access the [web console](../../help/sites-deploying/configuring-osgi.md).
 
@@ -186,7 +186,7 @@ Lorsque MySQL s’exécute sur un serveur différent d’AEM, le nom d’hôte d
    * **[!UICONTROL Classe]** de pilote JDBC : `com.mysql.jdbc.Driver`
    * **[!UICONTROL URI de connexion JDBC]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Spécifiez le serveur à la place de localhost si le serveur MySQL n’est pas identique à &quot;this&quot; *les communautés* de serveur AEM est le nom de base de données par défaut (schéma).
+      Spécifiez le serveur à la place de localhost si le serveur MySQL n’est pas identique à &quot;this&quot; AEM *communautés* de serveurs est le nom de base de données (schéma) par défaut.
 
    * **[!UICONTROL Nom d&#39;utilisateur]**: `root`
 
