@@ -12,8 +12,8 @@ docset: aem65
 translation-type: tm+mt
 source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1022'
+ht-degree: 21%
 
 ---
 
@@ -66,7 +66,7 @@ Suivez les étapes ci-dessous pour activer et configurer la mise en cache des fo
 1. Ouvrez l’URL suivante pour chaque instance de publication de votre environnement et configurez l’agent de réplication :
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [ajoutez les éléments suivants à votre fichier](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)dispatcher.any :
+1. [Ajoutez les éléments suivants à votre fichier](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)dispatcher.any :
 
    ```JSON
       /invalidate
@@ -95,7 +95,7 @@ Suivez les étapes ci-dessous pour activer et configurer la mise en cache des fo
    * Un formulaire adaptatif reste en cache jusqu’à ce qu’une version mise à jour du formulaire ne soit pas publiée.
 
    * Lorsqu’une nouvelle version de la ressource référencée dans un formulaire adaptatif est publiée, les formulaires adaptatifs concernés sont automatiquement invalidés. Il existe certaines exceptions à l’invalidation automatique des ressources référencées. Pour contourner les exceptions, reportez-vous à la section [Dépannage](#troubleshooting) .
-1. [ajoutez le fichier dispatcher.any des règles ci-dessous ou le fichier](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache)de règles personnalisées. Elle exclut les URL qui ne prennent pas en charge la mise en cache. Par exemple, Communication interactive.
+1. [Ajoutez le fichier dispatcher.any des règles ci-dessous ou le fichier](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache)de règles personnalisées. Elle exclut les URL qui ne prennent pas en charge la mise en cache. Par exemple, Communication interactive.
 
    ```JSON
       /0000 {
@@ -119,7 +119,7 @@ Suivez les étapes ci-dessous pour activer et configurer la mise en cache des fo
       }
    ```
 
-1. [ajoutez les paramètres suivants à la liste](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)des paramètres d’URL ignorés :
+1. [Ajoutez les paramètres suivants à la liste](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)des paramètres d’URL ignorés :
 
    ```JSON
       /ignoreUrlParams {
@@ -165,7 +165,7 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
 
 1. Ouvrez le fichier conf.d/httpd-dispatcher.conf ou tout autre fichier de configuration configuré pour se charger au moment de l’exécution.
 
-1. ajoutez le code suivant dans votre fichier et enregistrez-le. Il s’agit d’un exemple de code que vous pouvez modifier en fonction de votre environnement.
+1. Ajoutez le code suivant dans votre fichier et enregistrez-le. Il s’agit d’un exemple de code que vous pouvez modifier en fonction de votre environnement.
 
 ```XML
    <VirtualHost *:80>
