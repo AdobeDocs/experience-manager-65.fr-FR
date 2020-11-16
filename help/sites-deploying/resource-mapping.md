@@ -12,6 +12,9 @@ discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 66%
 
 ---
 
@@ -63,7 +66,7 @@ Les listes associe **un modèle**, une expression régulière correspondant à l
 
 Par exemple :
 
-**Modèle**`^[^/]+/[^/]+/welcome$`
+**Modèle** `^[^/]+/[^/]+/welcome$`
 
 déclenche :
 
