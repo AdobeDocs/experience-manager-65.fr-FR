@@ -368,7 +368,7 @@ Cela permet aux comptes d’emprunteurs d’identité d’exécuter des tâches 
 
 La section suivante décrit les meilleures pratiques lorsque vous travaillez avec des autorisations et droits d’accès :
 
-| Règle | Reason |
+| Règle | Raison |
 |--- |--- |
 | *Utiliser des groupes* | Evitez d’attribuer des droits d’accès utilisateur par utilisateur. Il y a plusieurs raisons à cela :<ul><li>Vous avez beaucoup plus d’utilisateurs que de groupes, de sorte que les groupes simplifient la structure.</li><li>Les groupes vous aident à fournir un aperçu de tous les comptes.</li> <li>L&#39;héritage est plus simple avec les groupes.</li><li>Les utilisateurs vont et viennent. Les groupes sont créés à long terme.</li></ul> |
 | *Être positif* | Utilisez toujours les instructions Allow pour spécifier les droits du groupe (dans la mesure du possible). Évitez d’utiliser une instruction Deny. Les groupes sont évalués dans l’ordre, et l’ordre peut être défini différemment par utilisateur. En d&#39;autres termes : Vous pouvez avoir peu de contrôle sur l’ordre dans lequel les instructions sont implémentées et évaluées. Si vous utilisez uniquement des instructions Autoriser, l’ordre n’a pas d’importance. |
