@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 translation-type: tm+mt
 source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 73%
 
 ---
 
 
 # Ciblage d’un élément de campagne Adobe Campaign{#targeting-your-adobe-campaign}
 
-Pour cibler votre newsletter Adobe Campaign, vous devez d’abord configurer la segmentation, ce qui n’est possible que dans l’IU classique. Vous pouvez ensuite créer des expériences ciblées pour Adobe Campaign.
+Pour cibler votre newsletter Adobe Campaign, vous devez d’abord configurer la segmentation, ce qui n’est possible que dans l’IU classique. Ensuite, vous pouvez créer des expériences ciblées pour Adobe Campaign.
 
 ## Configuration de la segmentation dans AEM {#setting-up-segmentation-in-aem}
 
@@ -36,7 +39,7 @@ Pour créer des segments :
 1. Sélectionnez la page créée dans l’arborescence située sur le côté gauche.
 1. Créez un segment, par exemple en ciblant les utilisateurs hommes, en créant une nouvelle page sous le segment créé et intitulé Masculin, puis sélectionnez le modèle **Segment (Adobe Campaign)**.
 1. Ouvrez la page du segment créé et faites glisser **ID de segment** à partir du sidekick jusque sur la page.
-1. Double-click the trait, enter the ID representing in this case, the male segment defined in Adobe Campaign - for example, **MALE** - and click **OK**. Le message suivant doit s’afficher : `targetData.segmentCode == "MALE"`
+1. Double-click the trait, enter the ID representing in this case, the male segment defined in Adobe Campaign - for example, **MALE** - and click **OK**. Le message suivant doit apparaître : `targetData.segmentCode == "MALE"`
 1. Recommencez ces étapes pour un autre segment, par exemple, un segment ciblant les utilisateurs femmes.
 
 ### Création d’une marque {#creating-a-brand}
@@ -68,7 +71,7 @@ Pour créer des expériences liées à des segments :
 
 Une fois que vous avez créé des segments, une marque, une campagne et une expérience, vous pouvez créer une newsletter avec du contenu ciblé. Après avoir créé l’expérience, vous l’associez à vos segments.
 
-Vous pouvez créer la newsletter avec du contenu ciblé dans l’interface utilisateur tactile et classique. Ce document décrit la procédure de l’interface utilisateur tactile.
+Vous pouvez créer le bulletin d’information avec du contenu ciblé dans l’interface utilisateur tactile et classique. Ce document décrit la procédure de l’interface utilisateur tactile.
 
 Pour créer une newsletter avec du contenu ciblé :
 
