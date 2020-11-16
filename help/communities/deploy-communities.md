@@ -35,7 +35,7 @@ ht-degree: 5%
 
 ## Liste de contrôle d&#39;installation {#installation-checklist}
 
-**Pour la plateforme[AEM](/help/sites-deploying/deploy.md#what-is-aem)**
+**Pour la plateforme [AEM](/help/sites-deploying/deploy.md#what-is-aem)**
 
 * Installer les dernières mises à jour [AEM 6.5](#aem64updates)
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 * [Répliquer la clé de chiffrement](#replicate-the-crypto-key)
 * Si vous prenez en charge la mondialisation, [configurez la traduction](/help/sites-administering/translation.md)automatisée (la configuration d’exemple est fournie pour le développement).
 
-**Pour la fonctionnalité[Communautés](/help/communities/overview.md)**
+**Pour la fonctionnalité [Communautés](/help/communities/overview.md)**
 
 * Si vous déployez une batterie [de](/help/sites-deploying/recommended-deploys.md#tarmk-farm)publication, [identifiez l’éditeur Principal.](#primary-publisher)
 
