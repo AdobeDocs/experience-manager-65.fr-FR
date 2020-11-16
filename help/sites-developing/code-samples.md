@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 72%
 
 ---
 
@@ -21,7 +24,7 @@ L’équipe Adobe Consulting Services a établi une série d’exemples de code�
 
 A multi-part tutorial designed for developers new to AEM covering fundamental topics like project setup, Core Components, Editable Templates, Client Libraries and component development: [Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
-L’équipe Adobe AEM Community crée des articles de procédure à l’intention des développeurs. Ces articles peuvent être consultés [ici](https://helpx.adobe.com/experience-manager/topics/how-to.html).
+L’équipe Adobe AEM Community crée des articles de procédure à l’intention des développeurs. Ces articles peuvent être consultés [ici](https://helpx.adobe.com/fr/experience-manager/topics/how-to.html).
 
 Un modèle Maven permettant de créer un projet AEM comme point de départ du développement de votre fonctionnalité est disponible [ici](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
