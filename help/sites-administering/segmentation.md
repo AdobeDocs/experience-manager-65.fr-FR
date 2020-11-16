@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 73%
 
 ---
 
@@ -77,18 +80,18 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
  <tbody>
   <tr>
    <td>Propriété-Valeur<br /> </td>
-   <td>Compare une propriété d’un magasin à une valeur définie<br /> </td>
+   <td>Compare une propriété d’une boutique à une valeur définie<br /> </td>
   </tr>
   <tr>
    <td>Propriété-Propriété</td>
    <td>Compare une propriété d’un magasin à une autre propriété<br /> </td>
   </tr>
   <tr>
-   <td>Référence du segment de propriété</td>
+   <td>Référence des segments de propriété</td>
    <td>Compare une propriété d’un magasin à un autre segment référencé<br /> </td>
   </tr>
   <tr>
-   <td>Référence du script de propriété</td>
+   <td>Référence des scripts de propriété</td>
    <td>Compare une propriété d’un magasin aux résultats d’un script<br /> </td>
   </tr>
   <tr>
@@ -116,7 +119,7 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
  <tbody>
   <tr>
    <td>Référence de segment<br /> </td>
-   <td>Evaluer le segment référencé</td>
+   <td>Évaluer le segment référencé</td>
   </tr>
   <tr>
    <td>Référence de script</td>
@@ -156,7 +159,7 @@ Pour définir votre nouveau segment :
 
 Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Cette tâche sera plus facile si vous tenez compte de certains aspects élémentaires :
 
-* Le niveau supérieur de la définition est toujours le conteneur ET initialement créé. Cette modification ne peut pas être apportée, mais elle n’a aucun effet sur le reste de votre définition de segment.
+* Le niveau supérieur de la définition est toujours le conteneur ET initialement créé. Cette modification ne peut pas être modifiée, mais n’a aucun effet sur le reste de votre définition de segment.
 * Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme les crochets de votre expression booléenne.
 
 L’exemple suivant permet de sélectionner les visiteurs qui sont considérés comme appartenant à notre classe d’âges principale :
@@ -167,7 +170,7 @@ OU
 
 Femme et entre 30 et 59 ans
 
-Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous ajoutez deux conteneurs ET et dans ces deux conteneurs, vous pouvez ajouter la propriété ou les composants de référence.
+Commencez par placer un composant de conteneur OU dans le conteneur ET par défaut. Dans le conteneur OU, vous ajoutez deux conteneurs ET et dans ces deux , vous pouvez ajouter la propriété ou les composants de référence.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
 
@@ -232,7 +235,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 1. Sélectionnez une personne qui correspond au segment que vous avez créé.
 1. ContextHub permet de résoudre les segments applicables pour la personne sélectionnée.
 
-Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique qui correspond à ces critères indique si le segment est résolu avec succès :
+Par exemple, notre définition de segment simple pour identifier les utilisateurs dans notre classe d’âges principale est une définition de segment simple basée sur l’âge et le sexe de l’utilisateur. Le chargement d’une personne spécifique qui correspond à ces critères indique si le segment a été résolu avec succès :
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
