@@ -1,6 +1,6 @@
 ---
-title: Ajout du suivi Adobe Analytics aux composants
-seo-title: Ajout du suivi Adobe Analytics aux composants
+title: Ajouter le suivi des Adobe Analytics aux composants
+seo-title: Ajouter le suivi des Adobe Analytics aux composants
 description: 'null'
 seo-description: 'null'
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '1263'
+ht-degree: 44%
 
 ---
 
 
-# Ajout du suivi Adobe Analytics aux composants{#adding-adobe-analytics-tracking-to-components}
+# Ajouter le suivi des Adobe Analytics aux composants{#adding-adobe-analytics-tracking-to-components}
 
 ## Including the Adobe Analytics Module in a Page Component {#including-the-adobe-analytics-module-in-a-page-component}
 
-Page template components (e.g. `head.jsp, body.jsp`) need JSP includes in order to load the ContextHub and the Adobe Analytics integration (which is a part of Cloud Services). Tous ces éléments comprennent le chargement de fichiers JavaScript.
+Page template components (e.g. `head.jsp, body.jsp`) need JSP includes in order to load the ContextHub and the Adobe Analytics integration (which is a part of Cloud Services). Tous comprennent le chargement de fichiers JavaScript.
 
-L’entrée ContextHub doit être incluse immédiatement sous la `<head>` balise, tandis que les services Cloud doivent être inclus dans `<head>` et avant la `</body>` section ; par exemple :
+L’entrée ContextHub doit être incluse immédiatement sous la `<head>` balise, tandis que les Cloud Services doivent être inclus dans la `<head>` section et avant la `</body>` section ; par exemple :
 
 ```xml
 <head>
@@ -38,7 +41,7 @@ L’entrée ContextHub doit être incluse immédiatement sous la `<head>` balise
 
 The `contexthub` script that you insert after the `<head>` element adds the ContextHub features to the page.
 
-Les `cloudservices` scripts que vous ajoutez dans les sections `<head>` et `<body>` s’appliquent aux configurations de services cloud ajoutées à la page. (Si la page utilise plusieurs configurations de services Cloud, vous devez inclure les fichiers Jsp ContextHub et Jsp des services Cloud une seule fois.)
+Les `cloudservices` scripts que vous ajoutez dans les sections `<head>` et `<body>` les sections s’appliquent aux configurations des services cloud qui sont ajoutées à la page. (Si la page utilise plusieurs configurations Cloud Services, vous devez inclure les fichiers jsp ContextHub et jsp Cloud Services une seule fois.)
 
 Lorsqu’une structure Adobe Analytics est ajoutée à la page, les `cloudservices` scripts génèrent du javascript associé à Adobe Analytics et des références à des bibliothèques côté client, comme dans l’exemple suivant :
 
@@ -126,32 +129,32 @@ Cet événement est déclenché pour indiquer que le suivi de page est terminé.
 
 ## Mise en oeuvre du suivi Adobe Analytics pour les composants personnalisés {#implementing-adobe-analytics-tracking-for-custom-components}
 
-Activez vos composants AEM pour interagir avec la structure Adobe Analytics. Configurez ensuite votre structure de sorte qu’Adobe Analytics suive les données des composants.
+Permettre à vos composants AEM d’interagir avec la structure Adobe Analytics. Configurez ensuite votre structure de sorte qu’Adobe Analytics suive les données du composant.
 
-Les composants qui interagissent avec la structure Adobe Analytics apparaissent dans SideKick lorsque vous modifiez une structure. Après avoir fait glisser le composant vers la structure, les propriétés du composant apparaissent et vous pouvez ensuite les mapper avec les propriétés Adobe Analytics. (See [Setting Up a Framework For Basic Tracking](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
+Les composants qui interagissent avec la structure Adobe Analytics apparaissent dans SideKick lorsque vous modifiez une structure. Après avoir fait glisser le composant vers la structure, les propriétés du composant s’affichent et vous pouvez ensuite les mapper avec les propriétés Adobe Analytics. (See [Setting Up a Framework For Basic Tracking](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
 
 Components can interact with the Adobe Analytics framework when the component has a child node named `analytics`. Le nœud `analytics` possède les propriétés suivantes :
 
-* `cq:trackevents`: Identifie les événements CQ que le composant expose. (Voir Événements personnalisés.)
+* `cq:trackevents`: Identifie les événements CQ exposés par le composant. (Voir Événements personnalisés.)
 * `cq:trackvars`: Nomme les variables CQ mises en correspondance avec les propriétés Adobe Analytics.
 * `cq:componentName` : nom du composant qui s’affiche dans le sidekick.
-* `cq:componentGroup`: Groupe dans Sidekick qui inclut le composant.
+* `cq:componentGroup`: Groupe dans le Sidekick qui inclut le composant.
 
 Le code dans le composant JSP ajoute le code JavaScript à la page pour déclencher le suivi et définir les données qui font l’objet d’un suivi. The event name and data names used in the javascript must match the corresponding values of the `analytics` node properties.
 
 * Utilisez l’attribut data-tracking pour suivre les données d’événement lors du chargement d’une page. (Voir [Suivi d’événements personnalisés lors du chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
 * Utilisez la fonction CQ_Analytics.record pour suivre les données d’événement lorsque les utilisateurs interagissent avec les fonctions de page. (Voir [Suivi d’événements personnalisés après le chargement d’une page](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
 
-Lorsque vous utilisez ces méthodes de suivi des données, le module d’intégration Adobe Analytics effectue automatiquement les appels à Adobe Analytics pour enregistrer les événements et les données.
+Lorsque vous utilisez ces méthodes de suivi de données, le module d&#39;intégration Adobe Analytics effectue automatiquement les appels à Adobe Analytics pour enregistrer les événements et les données.
 
 ### Exemple : suivi des clics de topnav {#example-tracking-topnav-clicks}
 
-Etendez le composant de base topnav de sorte qu’Adobe Analytics suive les clics sur les liens de navigation en haut de la page. Lorsqu’un utilisateur clique sur un lien de navigation, Adobe Analytics enregistre le lien sur lequel l’utilisateur a cliqué et la page sur laquelle il a cliqué.
+Etendez le composant de base topnav de sorte que Adobe Analytics effectue le suivi des clics sur les liens de navigation en haut de la page. Lorsqu’un utilisateur clique sur un lien de navigation, Adobe Analytics enregistre le lien sur lequel l’utilisateur a cliqué et la page sur laquelle il a cliqué.
 
 Les procédures suivantes nécessitent que vous ayez déjà effectué les tâches suivantes :
 
 * Création d’une application CQ
-* Création d’une configuration Adobe Analytics et d’une structure Adobe Analytics.
+* Création d’une configuration Adobe Analytics et d’un cadre Adobe Analytics.
 
 #### Copie du composant topnav {#copy-the-topnav-component}
 
@@ -161,14 +164,14 @@ Copiez le composant topnav sur votre application CQ. La procédure requiert que 
 1. Cliquez avec le bouton droit sur le dossier Components sous votre dossier d’application et cliquez sur Coller.
 1. Cliquez sur Enregistrer tout.
 
-#### Intégration De La Topnav À La Structure Adobe Analytics {#integrating-topnav-with-the-adobe-analytics-framework}
+#### Intégration De La Topnav Dans Le Cadre Adobe Analytics {#integrating-topnav-with-the-adobe-analytics-framework}
 
 Configurez le composant topnav et modifiez le fichier JSP pour définir les événements et les données de suivi.
 
 1. Cliquez avec le bouton droit sur le nœud topnav et cliquez sur Créer > Créer un nœud. Spécifiez les valeurs suivantes pour les propriétés, puis cliquez sur OK :
 
-   * Nom: `analytics`
-   * Type: `nt:unstructured`
+   * Nom : `analytics`
+   * Type : `nt:unstructured`
 
 1. Ajoutez la propriété suivante au nœud analytics pour nommer l’événement de suivi :
 
@@ -291,7 +294,7 @@ The content of the `topnav.jsp` file should appear as follows:
 
 #### Ajout du composant de suivi au sidekick {#adding-the-tracking-component-to-sidekick}
 
-Ajoutez dans le Sidekick les composants activés pour le suivi avec Adobe Analytics afin de les ajouter à votre structure.
+Ajoutez les composants qui sont activés pour le suivi avec le panneau latéral Adobe Analytics à afin que vous puissiez les ajouter à votre structure.
 
 1. Ouvrez votre structure Adobe Analytics à partir de votre configuration Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. Dans le sidekick, cliquez sur le bouton Créer.
@@ -307,20 +310,20 @@ Ajoutez dans le Sidekick les composants activés pour le suivi avec Adobe Analyt
 
 #### Ajout du composant topnav à votre structure {#adding-the-topnav-component-to-your-framework}
 
-Faites glisser le composant topnav vers votre structure Adobe Analytics et mappez les variables et événements de composant aux variables et événements Adobe Analytics. (See [Setting Up a Framework For Basic Tracking](/help/sites-administering/adobeanalytics-connect.md).)
+Faites glisser le composant topnav vers votre structure Adobe Analytics et mappez les variables et les événements des composants aux variables et événements Adobe Analytics. (See [Setting Up a Framework For Basic Tracking](/help/sites-administering/adobeanalytics-connect.md).)
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-Le composant topnav est désormais intégré à la structure Adobe Analytics. Lorsque vous ajoutez le composant à une page, un clic sur les éléments dans la barre de navigation supérieure provoque l’envoi des données de suivi vers Adobe Analytics.
+Le composant topnav est désormais intégré au cadre Adobe Analytics. Lorsque vous ajoutez le composant à une page, un clic sur les éléments dans la barre de navigation supérieure entraîne l’envoi de données de suivi à Adobe Analytics.
 
-### Envoi des données s.products à Adobe Analytics {#sending-s-products-data-to-adobe-analytics}
+### Envoi de données s.products à Adobe Analytics {#sending-s-products-data-to-adobe-analytics}
 
 Les composants peuvent générer des données pour la variable s.products envoyée à Adobe Analytics. Concevez vos composants pour contribuer à la variable s.products :
 
 * Enregistrez une valeur nommée `product` avec une structure spécifique.
 * Expose the data members of the `product` value so that they can be mapped with Adobe Analytics variables in the Adobe Analytics framework.
 
-La variable s.products d’Adobe Analytics utilise la syntaxe suivante :
+La variable s.products Adobe Analytics utilise la syntaxe suivante :
 
 ```
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
