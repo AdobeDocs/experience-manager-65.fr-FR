@@ -12,6 +12,9 @@ discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+workflow-type: tm+mt
+source-wordcount: '1435'
+ht-degree: 77%
 
 ---
 
@@ -49,8 +52,8 @@ Vos formulaires adaptatifs peuvent utiliser certains paramètres, configurations
 
    * Mises en page personnalisées
    * Aspects personnalisés
-   * Fichier CSS - pris comme entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
-   * Catégorie de bibliothèque cliente - prise en tant qu’entrée dans la boîte de dialogue des propriétés du conteneur de formulaires adaptatifs
+   * Fichier CSS - pris comme entrée dans la boîte de dialogue Propriétés du conteneur de formulaire adaptatif
+   * Catégorie de la bibliothèque cliente : saisie en tant qu’entrée dans la boîte de dialogue Propriétés du conteneur de formulaires adaptatifs
    * Une autre bibliothèque client qui peut être incluse dans le modèle de formulaire adaptatif.
    * Chemins de conception
 
@@ -67,19 +70,20 @@ Un élément peut présenter les états suivants :
 1. Connectez-vous au serveur AEM Forms.
 1. Utilisez l’un des éléments suivants pour sélectionner et publier un élément.
 
-   1. Placez le pointeur sur un fichier et appuyez sur **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
+   1. Déplacez le pointeur sur un fichier et appuyez sur **[!UICONTROL Publier]** ![aem6forms_globe](assets/aem6forms_globe.pngasset.png).
    1. Effectuez l’une des actions suivantes, puis appuyez sur Publier :
 
       * If you are in the card view, tap **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png), and tap the asset. L’élément est sélectionné.
       * Si le mode Liste est actif, cochez la case correspondant à un élément. L’élément est sélectionné.
       * Appuyez sur un élément pour en afficher les détails.
       * Display an asset&#39;s properties by tapping View Properties ![viewproperties](assets/viewproperties.png).
+
       >[!NOTE]
       >
       >Ne sélectionnez pas plusieurs éléments. La publication simultanée de plusieurs fichiers n’est pas prise en charge.
 
 
-1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. In the dialog box that contains related assets, tap **[!UICONTROL Publish]**. Le fichier est publié et la boîte de dialogue Publication des fichiers réussie s’affiche.
+1. Au lancement de la procédure de publication, une boîte de dialogue de confirmation s’ouvre. Elle répertorie l’ensemble des éléments et des ressources connexes. In the dialog box that contains related assets, tap **[!UICONTROL Publish]**. La ressource est publiée et la boîte de dialogue Publication des ressources réussie s’affiche.
 
    >[!NOTE]
    >
@@ -110,7 +114,7 @@ Procédez comme suit pour publier tous les actifs de Correspondence Management s
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   La page Publier tous les actifs de Correspondence Management s’affiche et affiche les informations sur la dernière tentative de publication des actifs de Correspondence Management.
+   La page Publier tous les actifs de Correspondence Management s’affiche et affiche les informations relatives à la dernière tentative de publication des actifs de Correspondence Management.
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
@@ -120,7 +124,7 @@ Procédez comme suit pour publier tous les actifs de Correspondence Management s
 
    >[!NOTE]
    >
-   >Le processus de publication ne peut pas être annulé une fois lancé. En outre, pendant que l’opération de publication est en cours, ne créez, supprimez, modifiez ou publiez aucun actif, ni ne lancez l’opération Exporter tous les actifs de Correspondence Management.
+   >Le processus de publication ne peut pas être annulé une fois lancé. En outre, pendant que l’opération de publication est en cours, ne créez, supprimez, modifiez ou publiez aucun actif ou ne lancez pas l’opération Exporter tous les actifs de Correspondence Management.
 
 ## Automatisation de la publication ou de l’annulation de publication de formulaires et documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
@@ -129,7 +133,7 @@ AEM Forms permet de planifier la publication et l’annulation de publication de
 Procédez comme suit pour planifier la date et l’heure de publication et d’annulation de publication des éléments de formulaires et documents :
 
 1. Select an asset and tap **[!UICONTROL View Properties]**. La page Propriétés des métadonnées s’ouvre.
-1. Dans la page Propriétés des métadonnées, appuyez sur **[!UICONTROL Avancé]**, puis sur **[!UICONTROL Modifier]** illustrator cc_penciltool_cur_edit_2_17 ![](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. Dans la page Propriétés des métadonnées, appuyez sur **[!UICONTROL Avancé]**, puis sur **[!UICONTROL Modifier]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
 1. Sélectionnez la date et l’heure dans les champs **[!UICONTROL Heure de début de publication]** et **[!UICONTROL Heure de fin de publication]**.\
    Appuyez sur **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
 
