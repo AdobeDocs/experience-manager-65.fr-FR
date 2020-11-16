@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 87%
 
 ---
 
@@ -58,7 +61,7 @@ Cela peut être effectué en copiant et en remplaçant la définition existante.
 
 Par exemple :
 
-* [Personnalisation d’un composant](/help/sites-developing/components.md)
+* [Personnalisation d&#39;un composant](/help/sites-developing/components.md)
 
    Cela impliquait de superposer une définition de composant :
 
@@ -80,9 +83,9 @@ Par exemple :
 
 >[!CAUTION]
 >
->You **must not** change anything in the `/libs` path.
+>Vous ne devez **** rien modifier dans le chemin `/libs`.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
 >
 >Pour la configuration et les autres modifications :
 >
@@ -97,7 +100,7 @@ Lorsqu’elles sont utilisées correctement, les requêtes JCR sont un puissant 
 * requêtes des utilisateurs finaux, telles que les recherches en texte intégral sur le contenu ;
 * les occasions où le contenu structuré doit pouvoir être recherché sur le référentiel entier.
 
-   Dans ce cas, assurez-vous que les requêtes ne s’exécutent que lorsque cela est absolument nécessaire, par exemple sur l’activation des composants ou l’invalidation du cache (par opposition aux étapes des processus, aux gestionnaires d’événements qui se déclenchent lors des modifications de contenu, aux filtres, etc.).
+   Dans ce cas, veillez à ce que les requêtes ne s’exécutent que lorsqu’elles sont absolument requises, par exemple sur l’activation des composants ou l’invalidation du cache (par opposition aux étapes Workflows, aux gestionnaires de Événements qui se déclenchent lors des modifications de contenu, Filtres, etc.).
 
 Les requêtes JCR ne devraient jamais être employées pour des requêtes de rendu pures. Par exemple, les requêtes JCR ne sont pas utiles pour :
 
