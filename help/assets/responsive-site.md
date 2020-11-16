@@ -9,13 +9,16 @@ content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 translation-type: tm+mt
 source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 94%
 
 ---
 
 
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Diffusion d’images optimisées pour un site réactif {#delivering-optimized-images-for-a-responsive-site}
 
-Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
+Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web. Utilisez la fonctionnalité de code réactif (**[!UICONTROL RESS]**) lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web.
 
 Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve sur AEM à la place, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
 
@@ -23,9 +26,9 @@ Voir aussi [Incorporation de la visionneuse de vidéos dans une page web.](embed
 
 Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
 
-**Pour diffuser des images optimisées pour un site** réactif :
+**Pour diffuser des images optimisées pour un site réactif, procédez comme suit** :
 
-1. Navigate to the image you want supply responsive code for and in the drop-down menu, tap **[!UICONTROL Renditions]**.
+1. Accédez à l’image pour laquelle vous voulez fournir du code réactif et, dans le menu déroulant, appuyez sur **[!UICONTROL Rendus]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -35,19 +38,19 @@ Voir aussi [Liaison d’URL à une application web.](linking-urls-to-yourwebappl
 
    >[!NOTE]
    >
-   >The selected asset *and* the selected image preset or viewer preset must be published to make the **[!UICONTROL URL]** or **[!UICONTROL RESS]** buttons available.
+   >La ressource sélectionnée *et* le paramètre d’image prédéfini ou le paramètre de visionneuse prédéfini sélectionné doivent être publiés pour que le bouton **[!UICONTROL URL]** ou **[!UICONTROL RESS]** soit disponible.
    >
-   >Contenu multimédia dynamique - Le mode hybride nécessite la publication des paramètres d’image prédéfinis ; Contenu multimédia dynamique : le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
+   >Contenu multimédia dynamique - Le mode hybride nécessite la publication de paramètres d’image prédéfinis ; Contenu multimédia dynamique : le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
 
 1. Appuyez sur **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Incorporer une image]** réactive, sélectionnez et copiez le texte du code réactif et collez-le dans votre site Web pour accéder au fichier réactif.
+1. Dans la boîte de dialogue **[!UICONTROL Intégrer une image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site web pour accéder au fichier réactif.
 1. Modifiez les points d’arrêt par défaut dans le code incorporé pour qu’ils correspondent à ceux du site web réactif directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
 
 ## Utilisation du protocole HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. La diffusion de ressources Dynamic Media est prise en charge via HTTP/2 pour améliorer les temps de réponse et de chargement.
 
-Voir [Diffusion du contenu sur HTTP/2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
+Voir [Diffusion du contenu sur HTTP/2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
