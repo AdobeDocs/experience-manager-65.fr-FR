@@ -27,7 +27,7 @@ Il prend en charge :
 * la signature et le chiffrement des messages ;
 * la création automatique d’utilisateurs ;
 * la synchronisation des groupes avec les groupes existants dans AEM.
-* Authentification initiée par le Prestataire et le fournisseur d’identité
+* Authentification initiée par le prestataire et le fournisseur d’identité
 
 Ce gestionnaire stocke le message de réponse SAML chiffré dans le nœud utilisateur (`usernode/samlResponse`) pour faciliter la communication avec un fournisseur tiers.
 
@@ -68,7 +68,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >
 >Le nom d’hôte du fournisseur d’identité doit être ajouté à la configuration OSGi **Filtre de référents Sling Apache**. Voir la section [Console web](/help/sites-deploying/configuring-osgi.md) pour plus d’informations.
 
-**ID** d&#39;entité de Prestataire qui identifie de manière unique ce prestataire avec le fournisseur d&#39;identité. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
+**ID** d&#39;entité de prestataire qui identifie de manière unique ce prestataire avec le fournisseur d&#39;identité. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
 
 **Redirection** par défaut Emplacement par défaut vers lequel rediriger après une authentification réussie.
 
