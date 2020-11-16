@@ -23,9 +23,9 @@ ht-degree: 89%
 
 >[!CAUTION]
 >
->L’interface utilisateur classique ayant été abandonnée dans AEM 6.4, le contenu de cette page n’a pas été mis à jour pour WCAG 2.1.
+>Comme l’interface utilisateur classique a été abandonnée dans AEM 6.4, le contenu de cette page n’a pas été mis à jour pour WCAG 2.1.
 >
->Consultez les pages suivantes pour plus d’informations sur AEM et WCAG 2.1 :
+>Consultez les pages suivantes pour plus d&#39;informations sur AEM et WCAG 2.1 :
 >
 >* [AEM et les consignes pour l’accessibilité web](/help/managing/web-accessibility.md)
 >* [Guide rapide relatif à WCAG 2.1](/help/managing/qg-wcag.md)
@@ -104,7 +104,7 @@ Le champ **Texte de remplacement** est disponible dans l’onglet des propriét�
 
 Par défaut, AEM ajoute un **texte de remplacement** à vos images. For the classic UI there are two different scenarios for how the default attribute is created (though the default value may not be sufficient as an alternative and will most likely need to be edited in the **Advanced** image properties tab):
 
-* Fichier:
+* File:
 
    Une image est téléchargée à partir du disque dur de l’utilisateur. Si vous ajoutez un composant d’image à une page, puis choisissez une image sur votre disque dur, ou une autre source, la valeur par défaut pour Texte **** Alt est `file`. Cette modification doit être apportée dans l’onglet Propriétés **avancées** des images. Là encore, cette valeur n’est pas affichée dans le champ Texte **** Alt, mais lorsque la valeur est modifiée, la nouvelle valeur s’affiche dans le champ.
 
@@ -141,7 +141,7 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 
 * Illustration :
 
-   Ce sont des images de personnes, d&#39;objets ou de lieux. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of[object ]*, but may be dependent on the surrounding text.
+   Ce sont des images de personnes, d&#39;objets ou de lieux. Think about the role of the photo in the page; an appropriate text equivalent is likely to be *Photo of [object]*, but may be dependent on the surrounding text.
 
 * Icônes :
 
