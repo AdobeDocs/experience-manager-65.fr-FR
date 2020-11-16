@@ -1,8 +1,8 @@
 ---
 title: Nuage de balises sociales
 seo-title: Nuage de balises sociales
-description: ajouter un composant Social Tag Cloud à une page
-seo-description: ajouter un composant Social Tag Cloud à une page
+description: Ajouter un composant Social Tag Cloud à une page
+seo-description: Ajouter un composant Social Tag Cloud à une page
 uuid: 8c400030-976c-457a-bb5f-e473909647a9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
