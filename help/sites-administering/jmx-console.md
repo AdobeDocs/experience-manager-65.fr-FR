@@ -131,7 +131,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Commentaire de début
    * Titre du workflow
 
-**PurgeActive** Supprime les instances de flux de travail actives d&#39;une période spécifique. Vous pouvez purger des instances actives pour tous les modèles ou pour un modèle spécifique seulement. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**PurgeActive** Supprime les instances de flux de travail principales d&#39;un âge spécifique. Vous pouvez purger des instances actives pour tous les modèles ou pour un modèle spécifique seulement. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -372,7 +372,7 @@ Informations sur le référentiel CRX
   </tr>
   <tr>
    <td>node.type.management.inheritance</td>
-   <td><p>Indique le niveau de prise en charge du référentiel pour l’héritage du type de nœud. Les valeurs possibles sont les suivantes :</p> <p>node.type.management.inheritance.minimal : l’enregistrement des types de nœuds principaux se limite aux types qui contiennent uniquement le supertype nt:base. L’enregistrement des types de nœuds Mixin se limite aux types ne comportant pas de supertype.</p> <p>node.type.management.héritage.single: L'enregistrement des types de noeud principal est limité à ceux avec un supertype. L’enregistrement des types de nœuds Mixin se limite aux types comportant un supertype au maximum.</p> <p><br /> node.type.management.héritage.multiple : Les types de noeud de Principal peuvent être enregistrés avec un ou plusieurs supertypes. Les types de nœuds Mixin peuvent être enregistrés sans supertype ou avec un ou plusieurs supertypes.</p> </td>
+   <td><p>Indique le niveau de prise en charge du référentiel pour l’héritage du type de nœud. Les valeurs possibles sont les suivantes :</p> <p>node.type.management.inheritance.minimal : l’enregistrement des types de nœuds principaux se limite aux types qui contiennent uniquement le supertype nt:base. L’enregistrement des types de nœuds Mixin se limite aux types ne comportant pas de supertype.</p> <p>node.type.management.héritage.single: L'enregistrement des types de noeuds Principaux est limité à ceux avec un supertype. L’enregistrement des types de nœuds Mixin se limite aux types comportant un supertype au maximum.</p> <p><br /> node.type.management.héritage.multiple : Les types de noeuds Principal peuvent être enregistrés avec un ou plusieurs supertypes. Les types de nœuds Mixin peuvent être enregistrés sans supertype ou avec un ou plusieurs supertypes.</p> </td>
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
@@ -615,7 +615,7 @@ Lecture seule.
 
 **traversalCheck** Traverse et corrige éventuellement les incohérences dans une sous-arborescence commençant à un noeud spécifique. Cet aspect est abordé en détail dans la documentation sur les gestionnaires de persistance.
 
-**constanceVérifier les** contrôles et, éventuellement, corriger la cohérence dans la banque de données. Cet aspect est abordé en détail dans la documentation sur l’entrepôt de données.
+**constanceVérifier les** vérifications et, éventuellement, corriger la cohérence dans la banque de données. Cet aspect est abordé en détail dans la documentation sur l’entrepôt de données.
 
 ## Statistiques du référentiel (TimeSeries) {#repository-statistics-timeseries}
 
