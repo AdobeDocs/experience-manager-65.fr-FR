@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
 source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 89%
 
 ---
 
@@ -109,7 +112,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
   </tr>
   <tr>
    <td>Récapitulatif des frais</td>
-   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Condition sur le champ des frais de services à valeur ajoutée</p> </td>
+   <td><p>Frais d’appel</p> <p>Frais de conférence téléphonique</p> <p>Frais de SMS </p> <p>Frais d’Internet mobile</p> <p>Frais d’itinérance nationale</p> <p>Frais d’itinérance internationale</p> <p>Frais de services à valeur ajoutée</p> <p>Frais totaux</p> <p>TOTAL À PAYER</p> <p>Condition sur le champ Frais de services Ajoutés de valeur</p> </td>
    <td><p>Valeurs des champs suivants :</p>
     <ul>
      <li>Frais d’appel</li>
@@ -120,7 +123,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Frais d’itinérance internationale</li>
      <li>Frais de services à valeur ajoutée</li>
      <li>Total des frais (champ calculé à partir des frais d’utilisation)</li>
-     <li>TOTAL PAYABLE (champ calculé usagecharges)</li>
+     <li>TOTAL PAYABLE (champ de calcul usagecharges)</li>
     </ul> <p>Tableau - factures</p> </td>
    <td>Aucun champ</td>
    <td>--</td>
@@ -129,7 +132,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
    <td>Appels détaillés - Sortants</td>
    <td><p>Noms des colonnes :</p>
     <ul>
-     <li>Date </li>
+     <li>Date</li>
      <li>Heure</li>
      <li>Nombre</li>
      <li>Durée</li>
