@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 12%
 
 ---
 
@@ -37,7 +40,7 @@ Vous pouvez interagir par programmation avec le service d’informations d’ide
 
 Vous pouvez importer par programmation des informations d’identification dans AEM Forms à l’aide de l’API Trust Manager. Par exemple, vous pouvez importer des informations d’identification utilisées pour signer un document PDF. (See [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
-Lors de l’importation d’informations d’identification, vous spécifiez un alias pour ces informations d’identification. L’alias est utilisé pour effectuer une opération Forms nécessitant des informations d’identification. Une fois importé, les informations d’identification peuvent être affichées dans Administration Console, comme illustré ci-dessous. Notez que l’alias des informations d’identification est *sécurisé*.
+Lors de l’importation d’informations d’identification, vous spécifiez un alias pour ces informations d’identification. L’alias est utilisé pour effectuer une opération Forms nécessitant des informations d’identification. Une fois importé, les informations d’identification peuvent être affichées dans Administration Console, comme le montre l’illustration suivante. Notez que l’alias des informations d’identification est *sécurisé*.
 
 ![ww_ww_truststore](assets/ww_ww_truststore.png)
 
@@ -72,9 +75,9 @@ For information about the location of these JAR files, see [Including AEM Forms 
 
 Avant de pouvoir importer par programmation des informations d’identification dans AEM Forms, créez un client de service d’informations d’identification. Pour plus d’informations, voir [Définition des propriétés](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)de connexion.
 
-**Référencer les informations d’identification**
+**Référence aux informations d’identification**
 
-Référencez les informations d’identification que vous souhaitez importer dans AEM Forms. Le démarrage rapide associé à cette section fait référence à un fichier P12 situé dans le système de fichiers.
+Référencez les informations d’identification que vous souhaitez importer dans AEM Forms. Le début rapide associé à cette section fait référence à un fichier P12 situé dans le système de fichiers.
 
 **Exécution de l’opération d’importation**
 
@@ -88,7 +91,7 @@ Après avoir référencé les informations d’identification, importez-les dans
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Démarrage rapide de l’API du service d’identification](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
+[Débuts rapides de l’API Credential Service](/help/forms/developing/credential-service-java-api-quick.md#credential-service-java-api-quick-start-soap)
 
 [Suppression des informations d’identification à l’aide de l’API Trust Manager](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
@@ -105,26 +108,26 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’A
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
    * Créez un objet `CredentialServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`. 
 
-1. Référencer les informations d’identification
+1. Référence aux informations d’identification
 
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur. Transmettez une valeur de chaîne qui spécifie l’emplacement des informations d’identification.
-   * Créez un `com.adobe.idp.Document` objet qui stocke les informations d’identification à l’aide du `com.adobe.idp.Document` constructeur. Transmettez l’ `java.io.FileInputStream` objet contenant les informations d’identification au constructeur.
+   * Créez un `com.adobe.idp.Document` objet qui stocke les informations d’identification à l’aide du `com.adobe.idp.Document` constructeur. Transférez l’objet `java.io.FileInputStream` contenant les informations d’identification au constructeur.
 
 1. Exécution de l’opération d’importation
 
    * Créez un tableau de chaînes contenant un élément. Affectez la valeur `truststore.usage.type.sign` à l’élément.
-   * Appelez la méthode `CredentialServiceClient` `importCredential` de l’objet et transmettez les valeurs suivantes :
+   * Appelez la méthode `CredentialServiceClient` de l’ `importCredential` objet et transmettez les valeurs suivantes :
 
-      * Valeur de chaîne qui spécifie la valeur d’alias des informations d’identification.
+      * Valeur de chaîne qui spécifie la valeur d’alias pour les informations d’identification.
       * L’ `com.adobe.idp.Document` instance qui stocke les informations d’identification.
       * Valeur de chaîne qui spécifie le mot de passe associé aux informations d’identification.
-      * Tableau de chaînes contenant la valeur d’utilisation. Par exemple, vous pouvez spécifier cette valeur `truststore.usage.type.sign`. Pour importer des informations d’identification Reader Extension, spécifiez `truststore.usage.type.lcre`.
+      * Tableau de chaînes contenant la valeur d’utilisation. Par exemple, vous pouvez spécifier cette valeur `truststore.usage.type.sign`. Pour importer des informations d’identification d’extension de Reader, spécifiez `truststore.usage.type.lcre`.
 
 **Voir également**
 
 [Importation des informations d’identification à l’aide de l’API Trust Manager](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[Démarrage rapide (mode SOAP) : Importation des informations d’identification à l’aide de l’API Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Début rapide (mode SOAP) : Importation des informations d’identification à l’aide de l’API Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -132,7 +135,7 @@ Importez des informations d’identification dans AEM Forms à l’aide de l’A
 
 ## Suppression des informations d’identification à l’aide de l’API Trust Manager {#deleting-credentials-by-using-the-trust-manager-api}
 
-Vous pouvez supprimer par programmation des informations d’identification à l’aide de l’API Trust Manager. Lors de la suppression d’informations d’identification, vous spécifiez un alias correspondant aux informations d’identification. Une fois supprimées, les informations d’identification ne peuvent plus être utilisées pour effectuer une opération.
+Vous pouvez supprimer par programmation des informations d’identification à l’aide de l’API Trust Manager. Lors de la suppression d’informations d’identification, vous spécifiez un alias correspondant aux informations d’identification. Une fois supprimée, les informations d’identification ne peuvent plus être utilisées pour effectuer une opération.
 
 >[!NOTE]
 >
@@ -191,13 +194,13 @@ Supprimez des informations d’identification d’AEM Forms à l’aide de l’A
 
 1. Exécution de l’opération de suppression
 
-   Appelez la méthode `CredentialServiceClient` `deleteCredential` de l’objet et transmettez une valeur de chaîne qui spécifie la valeur d’alias.
+   Appelez la méthode `CredentialServiceClient` de l’objet `deleteCredential` et transmettez une valeur de chaîne qui spécifie la valeur d’alias.
 
 **Voir également**
 
 [Suppression des informations d’identification à l’aide de l’API Trust Manager](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[Démarrage rapide (mode SOAP) : Suppression des informations d’identification à l’aide de l’API Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Début rapide (mode SOAP) : Suppression des informations d’identification à l’aide de l’API Java](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [Inclusion des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
