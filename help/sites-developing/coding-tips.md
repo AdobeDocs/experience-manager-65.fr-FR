@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +44,7 @@ Dans la base de code AEM, les conventions suivantes sont utilisées :
 
 Notez que ces conventions ne doivent pas nécessairement s’appliquer aux implémentations des clients, mais il est important qu’elles soient définies et respectées pour que le code soit maintenable.
 
-Idéalement, les noms doivent décrire clairement leur intention. Un test de code courant pour les noms qui ne sont pas aussi clairs qu’ils devraient l’être est la présence de commentaires expliquant à quoi sert la variable ou la méthode :
+Idéalement, les noms doivent décrire clairement leur intention. Un test de code courant pour les noms qui ne sont pas aussi clairs qu&#39;ils devraient l&#39;être est la présence de commentaires expliquant à quoi sert la variable ou la méthode :
 
 <table>
  <tbody>
@@ -66,7 +69,7 @@ DRY indique que le même ensemble de code ne doit jamais être dupliqué. Cela s
 
 ### Éviter les règles CSS nues {#avoid-naked-css-rules}
 
-Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *.myapp-centertext* serait une règle plus spécifique car elle spécifie *du texte* centré dans le contexte de votre application.
+Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *.myapp-centertext* serait une règle plus spécifique car elle spécifie le *texte* centré dans le contexte de votre application.
 
 ### Ne pas utiliser d’API obsolètes {#eliminate-usage-of-deprecated-apis}
 
@@ -90,7 +93,7 @@ Pour le code Java, AEM prend en charge slf4j comme API standard pour la journali
 
 * ERROR : si des éléments de code ne fonctionnent pas correctement et que le traitement ne peut pas continuer. L’erreur se produit notamment à la suite d’une exception inattendue. Il est généralement utile d’inclure des traces de pile dans ces scénarios.
 * WARN : si des éléments de code ne fonctionnent pas correctement, mais que le traitement peut continuer. C’est souvent le résultat d’une exception attendue, par exemple, *PathNotFoundException*.
-* INFO : informations utiles lors de la surveillance d’un système. Gardez à l’esprit qu’il s’agit de la valeur par défaut et que la plupart des clients la laisseront en place dans leur environnement. Par conséquent, ne les utilisez pas excessivement.
+* INFO : informations utiles lors de la surveillance d’un système. Gardez à l’esprit qu’il s’agit de la valeur par défaut et que la plupart des clients la laissent sur leurs environnements. Par conséquent, ne les utilisez pas excessivement.
 * DEBUG : informations de niveau inférieur sur le traitement. Utile lors du débogage d’un problème lié au support.
 * TRACE : informations de niveau le plus bas, par exemple, entrée/sortie de méthodes. Niveau généralement utilisé par les développeurs uniquement.
 
