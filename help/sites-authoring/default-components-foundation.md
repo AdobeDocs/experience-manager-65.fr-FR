@@ -29,7 +29,7 @@ ht-degree: 87%
 >
 >Adobe recommande l’utilisation des ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)composants principaux[ plus modernes et extensibles dans les projets AEM. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
->Vous pouvez utiliser [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) pour refaçonner votre site basé sur les composants de base afin d’utiliser les composants principaux.
+>Vous pouvez utiliser la suite [](https://opensource.adobe.com/aem-modernize-tools/) AEM Moderniser les outils pour refaçonner votre site basé sur les composants de base afin d’utiliser les composants de base.
 
 Les composants de base ont été conçus pour être utilisés lors de la création de contenu d’une page web standard. Ils forment un sous-ensemble des composants disponibles « prêts à l’emploi » pour une installation AEM standard.
 
@@ -305,7 +305,7 @@ Le composant d’intégration d’application externe (**Externe**) permet d’i
 
 * **Externe**
 
-   * **Application** de Cible Indiquez l’URL de l’application Web à intégrer ; par exemple :
+   * **Application** de cible Indiquez l’URL de l’application Web à intégrer ; par exemple :
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
@@ -586,7 +586,7 @@ Vous pouvez configurer :
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-### Référence {#reference}
+### Référence  {#reference}
 
 >[!CAUTION]
 Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html).
@@ -907,7 +907,7 @@ Une fois une instance du composant placée sur la page, vous pouvez configurer l
 Les formats pris en charge sont les suivants :
 * `.mp4`
 * `Ogg`
-* `FLV` (Vidéo Flash)
+* `FLV` (vidéo Flash)
 
 
 ## Columns {#columns}
