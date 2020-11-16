@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +33,7 @@ Utilisez la page Configurer les attributs système avancés pour modifier certai
 
    **Seuil d’identification (en secondes) :** cette valeur indique une durée de mise en mémoire pour compenser les retards dus aux différences de temps système entre le serveur d’applications AEM forms d’une grappe. AEM forms antidate la durée de connexion d’un utilisateur en fonction de la durée (en secondes) spécifiée dans cette propriété. Valid values are `0` to `3600`. La valeur par défaut est `60`. Ce paramètre met à jour la clé d’entrée `SAML/Producer/assertionThresholdInSeconds` dans le fichier de configuration.
 
-   **Nombre maximal de renouvellements autorisés pour une identification :** nombre maximal de fois où la session d’un utilisateur peut être renouvelée de façon transparente sans nécessiter une ouverture de session. Valid values are `0` to `9999`. Une valeur de `0` signifie que les assertions ne sont pas renouvelées. La valeur par défaut est 10. Ce paramètre met à jour la clé d’entrée `SAML/Producer/maxAssertionRenewalCount` dans le fichier de configuration.
+   **Nombre maximal de renouvellements autorisés pour une identification :** nombre maximal de fois où la session d’un utilisateur peut être renouvelée de façon transparente sans nécessiter une ouverture de session. Valid values are `0` to `9999`. Une valeur de `0` signifie que les assertions ne sont pas renouvelées. La valeur par défaut est 10.   Ce paramètre met à jour la clé d’entrée `SAML/Producer/maxAssertionRenewalCount` dans le fichier de configuration.
 
 1. (Facultatif) Modifiez l’un des attributs de synchronisation des annuaires suivants :
 
