@@ -88,7 +88,7 @@ Le tableau suivant vous donne un aperçu des principales fonctionnalités qui so
 | Mise en page réactive   | Pour toutes les pages | Uniquement Geometrixx Media |
 | Modèles modifiables | Pour toutes les pages | Non disponible |
 | HTL | Tous les composants | Limited |
-| Ciblage | Pour toutes les pages | Uniquement Geometrixx Outdoor |
+| Ciblage | Pour toutes les pages | Uniquement Geometrixx Outdoors |
 | Screens | Disponible | Non disponible |
 | Mobile | Non disponible | Disponible |
 | Manuscrits | Non disponible | Disponible |
@@ -101,7 +101,7 @@ Le tableau suivant vous donne un aperçu des principales fonctionnalités qui so
 >
 >Cette liste est la plus complète possible, mais ne doit pas être considérée comme exhaustive.
 
-## Contribute {#contribute}
+## Contribution {#contribute}
 
 We.Retail a été publié en tant que projet Open Source et la dernière version du code source peut également être téléchargée depuis GitHub.
 
