@@ -10,6 +10,9 @@ discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 83%
 
 ---
 
@@ -85,7 +88,7 @@ Si un fichier XDP est mis à jour, vous voyez une icône dans l’éditeur, lors
 
 ## Synchronisation des formulaires adaptatifs avec le fichier XDP le plus récent {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-Lorsqu’un formulaire adaptatif qui n’est pas synchronisé avec le fichier XDP est ouvert en vue de sa création, le message suivant s’affiche :**Schema/Form Template for the Adaptive Form has been updated.`Click Here`pour la rebaser sur la nouvelle version.**
+Lorsqu’un formulaire adaptatif qui n’est pas synchronisé avec le fichier XDP est ouvert en vue de sa création, le message suivant s’affiche :**Schema/Form Template for the Adaptive Form has been updated. `Click Here` pour la rebaser sur la nouvelle version.**
 
 Lorsque vous cliquez sur le message, les champs du formulaire adaptatif sont synchronisés avec les champs correspondants du fichier XDP.
 
