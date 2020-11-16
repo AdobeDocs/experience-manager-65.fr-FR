@@ -12,6 +12,9 @@ discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '1080'
+ht-degree: 74%
 
 ---
 
@@ -80,7 +83,7 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
   </tr>
   <tr>
    <td> Mots-clés de référence<br /> </td>
-   <td>Mots-clés à associer aux informations du site Web référent. <br /> </td>
+   <td>Mots-clés pour correspondre aux informations du site Web référent. <br /> </td>
   </tr>
   <tr>
    <td> Script</td>
@@ -96,7 +99,7 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
   </tr>
   <tr>
    <td> Âge de l’utilisateur<br /> </td>
-   <td>Comme extrait du profil utilisateur.<br /> </td>
+   <td>Extrait du profil utilisateur.<br /> </td>
   </tr>
   <tr>
    <td> Propriété de l’utilisateur<br /> </td>
@@ -107,11 +110,11 @@ Les caractéristiques de segment suivantes sont disponibles clé en main ; elle
 
 You can combine these traits using the boolean operators OR and AND (see [Creating a New Segment](#creating-a-new-segment)) to define the exact scenario for selecting this segment.
 
-Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. Si plusieurs segments sont applicables, le facteur **[Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor)**est également utilisé.
+Lorsque l’intégralité de l’instruction est vraie, alors ce segment a été résolu. Si plusieurs segments sont applicables, le facteur **[Amplifier](/help/sites-administering/campaign-segmentation.md#boost-factor)** est également utilisé.
 
 >[!CAUTION]
 >
->L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B, qui à son tour fait référence au segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
+>L’éditeur de segment ne vérifie aucune référence circulaire. Par exemple, le segment A fait référence à un autre segment B qui, à son tour, fait référence au segment A. Vous devez vous assurer que vos segments ne contiennent aucune référence circulaire.
 
 >[!NOTE]
 >
@@ -166,11 +169,11 @@ Puisque l’opérateur principal est OU, vous devez commencer par le **Conteneur
 Une fois le segment défini, les résultats potentiels peuvent être testés avec l’aide du **[ClientContext](/help/sites-administering/client-context.md)** :
 
 1. Sélectionnez le segment à tester.
-1. Appuyez sur les touches **[Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)**pour ouvrir le**[ ClientContext](/help/sites-administering/client-context.md)**, qui affiche les données collectées. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
+1. Appuyez sur les touches **[Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** pour ouvrir le **[ClientContext](/help/sites-administering/client-context.md)**, qui affiche les données collectées. For testing purposes you can **Edit** certain values, or **Load** another profile to see the impact there.
 
 1. En fonction des caractéristiques définies, les données disponibles pour la page en cours peuvent ou non correspondre à la définition de segment. Le statut de la correspondance s’affiche sous la définition.
 
-Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique montre que le segment est résolu avec succès :
+Par exemple, une seule définition de segment peut être fonction de l’âge et du sexe de l’utilisateur. Le chargement d’un profil spécifique montre que le segment a été résolu avec succès :
 
 ![](assets/screen_shot_2012-02-02at105926am.png)
 
