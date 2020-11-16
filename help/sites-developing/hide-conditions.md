@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 76%
 
 ---
 
@@ -31,7 +34,7 @@ Grâce aux conditions de masquage, les administrateurs, développeurs et super-u
 
 ## Détails relatifs à la mise en œuvre et à l’utilisation {#implementation-and-usage-details}
 
-`com.adobe.granite.ui.components.FilteringResourceWrapper` est responsable du filtrage des ressources en fonction de l’existence et de la valeur de la `granite:hide` propriété, située sur le champ à filtrer. L’implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` inclut une instance de `FilteringResourceWrapper.`
+`com.adobe.granite.ui.components.FilteringResourceWrapper` est responsable du filtrage des ressources en fonction de l’existence et de la valeur de la `granite:hide` propriété, située sur le champ à filtrer. L’implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` comprend une instance de `FilteringResourceWrapper.`
 
 The implementation makes use of the Granite [ELResolver API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) and adds a `cqDesign` custom variable via the ExpressionCustomizer.
 
@@ -55,7 +58,7 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 ## Exemple {#example}
 
-Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en particulier. Prenons notamment l’exemple du [composant principal Liste](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
+Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) en particulier. Prenons notamment l’exemple du [composant principal Liste](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 
 [A l’aide de l’éditeur](/help/sites-authoring/templates.md)de modèles, l’auteur du modèle peut définir dans la boîte de dialogue de conception les options du composant de liste qui sont disponibles pour l’auteur de la page. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
 
