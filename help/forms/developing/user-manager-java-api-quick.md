@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Le Début rapide des API Java (SOAP) est disponible pour l’API User Manager.
 
-[Début rapide (mode SOAP) : Ajouter des utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Début rapide (mode SOAP) : Ajouter les utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [Début rapide (mode SOAP) : Suppression d’utilisateurs à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
@@ -36,15 +36,15 @@ Le Début rapide des API Java (SOAP) est disponible pour l’API User Manager.
 
 [Début rapide (mode SOAP) : Gestion par programmation des noeuds de préférences à l’aide de l’API Java](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les débuts rapides situés dans Programmation avec AEM forms dépendent du Document si vous utilisez un autre système d’exploitation, tel que Unix, pour remplacer les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les débuts rapides situés dans Programmation avec AEM formulaires sont basés sur le Document si vous utilisez un autre système d’exploitation, tel que Unix, pour remplacer les chemins spécifiques à Windows par des chemins pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, assurez-vous de spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Début rapide (mode SOAP) : Ajouter des utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
+## Début rapide (mode SOAP) : Ajouter les utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue aux AEM Forms. (Voir [Ajouter des utilisateurs](/help/forms/developing/users.md#adding-users).)
+L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajoute des utilisateurs](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -162,7 +162,7 @@ L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy
 
 ## Début rapide (mode SOAP) : Suppression d’utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-L&#39;exemple de code suivant supprime un utilisateur nommé Wendy Blue des AEM Forms. (Voir [Suppression d’utilisateurs](/help/forms/developing/users.md#deleting-users).)
+L&#39;exemple de code suivant supprime un utilisateur nommé Wendy Blue d&#39;AEM Forms. (Voir [Suppression d’utilisateurs](/help/forms/developing/users.md#deleting-users).)
 
 ```java
  /*
@@ -632,9 +632,9 @@ L’exemple de code Java suivant synchronise les utilisateurs à l’aide des AP
  
 ```
 
-## Début rapide (mode SOAP) : Ajouter des utilisateurs à l’aide de l’API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
+## Début rapide (mode SOAP) : Ajouter les utilisateurs à l’aide de l’API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue aux AEM Forms. (Voir [Ajouter des utilisateurs](/help/forms/developing/users.md#adding-users).)
+L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy Blue à AEM Forms. (Voir [Ajoute des utilisateurs](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -752,7 +752,7 @@ L&#39;exemple de code suivant montre comment ajouter un utilisateur nommé Wendy
 
 ## Début rapide (mode SOAP) : Création de groupes à l’aide de l’API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-L’exemple de code suivant crée un groupe nommé AdobeGroup en AEM Forms. (Voir [Création de groupes](/help/forms/developing/users.md#creating-groups).)
+L’exemple de code suivant crée un groupe nommé AdobeGroup vers AEM Forms. (Voir [Création de groupes](/help/forms/developing/users.md#creating-groups).)
 
 ```java
  /*
