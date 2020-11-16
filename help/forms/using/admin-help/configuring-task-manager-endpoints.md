@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 51%
 
 ---
 
@@ -23,24 +26,24 @@ Les points de fin TaskManager permettent à un utilisateur Workspace d’appeler
 
 Définissez les paramètres suivants pour configurer un point de fin TaskManager.
 
-**** Nom : (obligatoire) identifie le point de fin. Le nom est affiché dans l’affichage carte de Workspace. N’incluez pas de caractère « &lt; », car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point de fin, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
+**Nom :** (obligatoire) identifie le point de terminaison. Le nom est affiché dans l’affichage carte de Workspace. N’incluez pas de caractère « &lt; », car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point de fin, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
 
-**** Description : Description du point de fin. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
+**Description :** Description du point de terminaison. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
 
-**** Instructions de la tâche : Instructions à l’intention de l’utilisateur qui lance ce flux de travail.
+**Instructions de tâche :** Instructions destinées à l’utilisateur qui début ce processus.
 
-**** Propriétaire du processus : Nom de la personne responsable du processus.
+**Propriétaire du processus :** Nom de la personne responsable du processus.
 
-**** L’utilisateur peut transférer la tâche : Permet à l’utilisateur de transférer la tâche initiale.
+**L’utilisateur peut transférer la Tâche :** Permet à l’utilisateur de transférer la tâche initiale.
 
-**** Afficher la fenêtre de pièce jointe : Permet à l’utilisateur de voir la fenêtre de pièce jointe.
+**Afficher la fenêtre des pièces jointes :** Permet à l’utilisateur d’afficher la fenêtre des pièces jointes.
 
-**** Autoriser l’ajout de pièces jointes : Permet à l’utilisateur d’ajouter des pièces jointes et des notes.
+**Autoriser l’Ajoute des pièces jointes :** Permet à l’utilisateur d’ajouter des pièces jointes et des notes.
 
-**** Tâche initialement verrouillée : Verrouille la tâche initiale.
+**Tâche initialement verrouillée :** Verrouille la tâche initiale.
 
-**** Ajouter des listes de contrôle d’accès pour les files d’attente partagées : La tâche initiale est créée avec des listes de contrôle d’accès pour les utilisateurs de files d’attente partagées.
+**Ajouter des listes ACL pour les files d&#39;attente partagées :** La tâche initiale est créée avec des listes ACL pour les utilisateurs de files d’attente partagées.
 
-**** Catégorisation : (obligatoire) catégorie dans laquelle l’utilisateur verra le formulaire dans Workspace. Sélectionnez une catégorie dans la liste ou sélectionnez Nouvelle catégorie pour ajouter une catégorie.
+**Catégorisation :** (obligatoire) catégorie d’affichage du formulaire par l’utilisateur dans Workspace. Sélectionnez une catégorie dans la liste ou sélectionnez Nouvelle catégorie pour ajouter une catégorie.
 
-**** Nom de l’opération : (obligatoire) liste des opérations pouvant être attribuées au point de fin.
+**Nom de l&#39;opération :** (obligatoire) liste d’opérations qui peut être affectée au point de terminaison.
