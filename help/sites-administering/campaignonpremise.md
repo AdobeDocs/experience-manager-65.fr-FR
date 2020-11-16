@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '2270'
+ht-degree: 68%
 
 ---
 
@@ -27,7 +30,7 @@ Pour utiliser les deux solutions conjointement et simultanément, vous devez d�
 
 L’utilisation d’Adobe Campaign dans AEM comprend la possibilité d’envoyer un courrier électronique par le biais d’Adobe Campaign. Cette possibilité est décrite dans la section [Utilisation d’Adobe Campaign](/help/sites-authoring/campaign.md). Cela inclut également l’utilisation de formulaires dans des pages AEM pour manipuler des données.
 
-En outre, les rubriques suivantes peuvent être utiles lors de l’intégration d’AEM avec [Adobe Campaign](https://helpx.adobe.com/support/campaign/classic.html) :
+En outre, les rubriques suivantes peuvent être utiles lors de l’intégration d’AEM avec [Adobe Campaign](https://helpx.adobe.com/fr/support/campaign/classic.html) :
 
 * [Meilleures pratiques des modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md)
 * [Résolution des incidents liés à votre intégration Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
@@ -107,7 +110,7 @@ Au préalable, assurez-vous de disposer des éléments suivants :
 
 * [Une instance de création AEM](/help/sites-deploying/deploy.md#getting-started)
 * [Une instance de publication AEM](/help/sites-deploying/deploy.md#author-and-publish-installs)
-* [Une instance](https://helpx.adobe.com/support/campaign/classic.html) d’Adobe Campaign Classic - y compris un client et un serveur
+* [Une instance](https://helpx.adobe.com/fr/support/campaign/classic.html) Adobe Campaign Classic, comprenant un client et un serveur
 * Internet Explorer 11
 
 >[!NOTE]
@@ -123,7 +126,7 @@ Au préalable, assurez-vous de disposer des éléments suivants :
 You must install the **AEM Integration** package in Adobe Campaign. Pour ce faire :
 
 1. Accédez à l’instance Adobe Campaign à lier à AEM.
-1. *Sélectionnez* Outils *>* Avancé&#x200B;*>* Importer un package....
+1. Select *Tools* > *Advanced* > *Import package...*.
 
    ![chlimage_1-132](assets/chlimage_1-132a.png)
 
@@ -153,6 +156,7 @@ Vous devez configurer un compte externe permettant de connecter Adobe Campaign �
 >
 >* When installing the **AEM Integration** package, an external AEM account is created. Vous pouvez configurer la connexion à votre instance AEM ou en créer une autre.
 >* Dans AEM, veillez à définir le mot de passe de l’utilisateur distant d’Adobe Campaign. Vous devez définir ce mot de passe pour connecter Adobe Campaign à AEM. Connectez-vous en tant qu’administrateur et, dans la console d’administration des utilisateurs, recherchez l’utilisateur à distance d’Adobe Campaign et cliquez sur **Définir le mot de passe**.
+
 >
 
 
@@ -165,7 +169,7 @@ Pour configurer un compte externe AEM :
 
    >[!NOTE]
    >
-   >Assurez-vous que l’adresse du serveur ne se termine **pas** par une barre oblique. Par exemple, saisissez `https://yourserver:4502` plutôt que `https://yourserver:4502/`
+   >Assurez-vous que l’adresse du serveur ne se termine **pas** par une barre oblique. For example, enter `https://yourserver:4502` instead of `https://yourserver:4502/`
 
    ![chlimage_1-135](assets/chlimage_1-135a.png) ![chlimage_1-136](assets/chlimage_1-136a.png)
 
@@ -205,7 +209,7 @@ Le contenu créé à partir de l’instance de création AEM est d’abord envoy
 >[!NOTE]
 >
 >If you do not want to use the replication URL but instead use the public-facing URL, you can set the **Public URL** in the following configuration setting in the OSGi (**AEM logo** >  **Tools** icon >  **Operations** > **Web Console** > **OSGi Configuration** > **AEM Campaign Integration - Configuration**):
-**** URL publique : com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+**URL publique :** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
 
 Cette étape est également nécessaire pour répliquer certaines configurations d’instance de création dans l’instance de publication.
 
@@ -235,7 +239,7 @@ Avant que vous puissiez utiliser AEM et Adobe Campaign ensemble, vous devez éta
 1. Create a new configuration by entering a **Title** and click **Create**, or choose the existing configuration that you want to link with your Adobe Campaign instance.
 1. Modifiez la configuration afin qu’elle corresponde aux paramètres de votre instance Adobe Campaign.
 
-   * **Nom d&#39;utilisateur**: **aemserver**, l’opérateur de package d’intégration AEM d’Adobe Campaign utilisé pour établir le lien entre les deux solutions.
+   * **Nom d&#39;utilisateur**: **aemserver**, l’opérateur de package d’intégration AEM Adobe Campaign utilisé pour établir le lien entre les deux solutions.
    * **Mot de passe** : mot de passe de l’opérateur aemserver Adobe Campaign. Vous devrez peut-être respécifier le mot de passe pour cet opérateur directement dans Adobe Campaign.
    * **Point de terminaison de l’API** : URL de l’instance Adobe Campaign.
 
