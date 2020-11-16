@@ -10,6 +10,9 @@ discoiquuid: 0ffbb4d3-9371-4705-8496-f98e22d9c4a6
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 74%
 
 ---
 
@@ -31,9 +34,9 @@ Configuration de la page de redirection
 
 Les auteurs de formulaires peuvent utiliser les paramètres suivants qui sont transmis à la page de remerciement. For all the available submit actions, `status` and `owner` parameters are passed. Outre ces deux paramètres, des paramètres supplémentaires sont transmis pour les actions d’envoi suivantes :
 
-* **Action** Stocker le contenu (obsolète) : `contentPath`(chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées) est transmis.
+* **Action** Stocker le contenu (obsolète) : `contentPath`—le chemin d’accès du noeud dans le référentiel où sont stockées les données envoyées est transmis.
 
-* **Action** Stocker le PDF (obsolète) : `contentPath`(des données envoyées et du chemin d’accès au noeud stockant le fichier PDF dans le référentiel) est transmis.
+* **Action** Stocker le PDF (obsolète) : `contentPath`—des données envoyées et du chemin d’accès au noeud qui stocke le fichier PDF dans le référentiel—est transmis.
 
 * **Flux de travail Envoyer aux formulaires** : les paramètres de sortie renvoyés à partir du flux de travail des formulaires sont transmis.
 
