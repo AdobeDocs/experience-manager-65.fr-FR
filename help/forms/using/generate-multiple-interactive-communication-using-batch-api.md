@@ -68,7 +68,7 @@ Vous combinez un enregistrement à un modèle de communication interactif pour p
 
 ### Utilisation de l’API de lot avec des dossiers de contrôle {#using-the-batch-api-watched-folders}
 
-Pour faciliter l’expérience de l’API, les AEM Forms fournissent un service Watched Folder configuré pour utiliser l’API de traitement par lots, prêt à l’emploi. Vous pouvez accéder au service via l’interface utilisateur AEM Forms pour générer plusieurs communications interactives. Vous pouvez également créer des services personnalisés en fonction de vos besoins. Vous pouvez utiliser les méthodes répertoriées ci-dessous pour utiliser l’API de lot avec le dossier de contrôle :
+Pour faciliter l’expérience de l’API, AEM Forms fournit un service Watched Folder configuré pour utiliser l’API de traitement par lots, prêt à l’emploi. Vous pouvez accéder au service via l’interface utilisateur d’AEM Forms pour générer plusieurs communications interactives. Vous pouvez également créer des services personnalisés en fonction de vos besoins. Vous pouvez utiliser les méthodes répertoriées ci-dessous pour utiliser l’API de lot avec le dossier de contrôle :
 
 * Spécifier les données d’entrée (enregistrements) au format de fichier JSON pour produire une communication interactive
 * Utiliser les données d’entrée (enregistrements) enregistrées dans une source de données externe et accessibles via un modèle de données de formulaire pour produire une communication interactive
@@ -126,7 +126,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
    1. Enregistrez les propriétés et le modèle de données de formulaire.
 1. Configurez la valeur pour l’attribut Request :
    1. Créez un fichier .json sur votre système de fichiers et ouvrez-le pour le modifier.
-   1. Créez un tableau JSON et spécifiez l’attribut principal pour récupérer les données du modèle de données de formulaire. Par exemple, le fichier JSON suivant demande à FDM d’envoyer des données d’enregistrements dont l’ID est 27126 ou 27127 :
+   1. Créez un tableau JSON et spécifiez l’attribut Principal pour récupérer les données du modèle de données de formulaire. Par exemple, le fichier JSON suivant demande à FDM d’envoyer des données d’enregistrements dont l’ID est 27126 ou 27127 :
 
       ```json
           [
@@ -177,7 +177,7 @@ Avant de déployer la servlet Java, assurez-vous que vous disposez d’une commu
 
 1. Connectez-vous à votre instance AEM et créez une communication interactive. Pour utiliser la communication interactive mentionnée dans l&#39;exemple de code ci-dessous, [cliquez ici](assets/SimpleMediumIC.zip).
 1. [Créez et déployez un projet AEM à l’aide d’Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) sur votre instance AEM.
-1. Ajoutez le SDK client [AEM Forms version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure dans la liste des dépendances du fichier POM de votre projet AEM. Par exemple :
+1. Ajoutez [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) ou ultérieure dans la liste des dépendances du fichier POM de votre projet AEM. Par exemple :
 
    ```xml
        <dependency>
