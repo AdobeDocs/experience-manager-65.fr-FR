@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +25,7 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
 <table>
  <thead>
   <tr>
-   <th><p>Propriétés</p></th>
+   <th><p>Propriété</p></th>
    <th><p>Objectif</p></th>
    <th><p>Valeur par défaut</p></th>
   </tr>
