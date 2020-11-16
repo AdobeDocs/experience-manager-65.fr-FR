@@ -55,6 +55,7 @@ The order of precedence is (in descending order) `/conf`, `/apps`, `/libs`.
    >
    >
 1. Apportez les modifications désirées dans `/apps`
+
 >
 
 
@@ -119,7 +120,7 @@ Plus de détails sur les nœuds et leurs propriétés :
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>requis<br /> </p> </td>
+     <td><p><code>String</code></p> <p>required<br /> </p> </td>
      <td>Titre du modèle (affiché dans l’assistant <strong>Créer un fragment</strong> ).</td>
     </tr>
     <tr>
