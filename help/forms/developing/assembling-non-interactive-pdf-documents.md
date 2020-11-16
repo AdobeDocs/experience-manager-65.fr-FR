@@ -76,10 +76,10 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (requis si le AEM Forms est déployé sur JBoss)
-* jbossall-client.jar (requis si le AEM Forms est déployé sur JBoss)
+* adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
+* jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si le AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel le AEM Forms est déployé.
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé.
 
 **Création d’un client Assembler**
 
@@ -168,7 +168,7 @@ Assemblage d’un document PDF non interactif à l’aide de l’API Assembler S
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant les AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Assembler.
 
