@@ -22,13 +22,13 @@ ht-degree: 5%
 
 Une variable dans un modèle de processus est un moyen de stocker une valeur en fonction de son type de données. Vous pouvez ensuite utiliser le nom de la variable dans n’importe quelle étape du processus pour récupérer la valeur stockée dans la variable. Vous pouvez également utiliser des noms de variable pour définir des expressions pour prendre des décisions routages.
 
-Dans les modèles de processus AEM, vous pouvez :
+Dans AEM modèles de processus, vous pouvez :
 
 * [Créez une variable](../../forms/using/variable-in-aem-workflows.md#create-a-variable) d’un type de données en fonction du type d’informations que vous souhaitez y stocker.
 * [Définissez une valeur pour la variable](../../forms/using/variable-in-aem-workflows.md#set-a-variable) à l’aide de l’étape de flux de travail Définir la variable.
 * [Utilisez la variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) dans toutes les étapes du flux de travail AEM Forms pour récupérer la valeur stockée et dans OU Fractionner et atteindre les étapes pour définir une expression de routage.
 
-La vidéo suivante montre comment créer, définir et utiliser des variables dans les modèles de processus AEM :
+La vidéo suivante montre comment créer, définir et utiliser des variables dans AEM modèles de processus :
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
@@ -36,22 +36,22 @@ Les variables sont une extension de l&#39;interface existante de [MetaDataMap](h
 
 ## Création d’une variable {#create-a-variable}
 
-Vous pouvez créer des variables à l’aide de la section Variables disponible dans le panneau latéral du modèle de flux de travail. Les variables de processus AEM prennent en charge les types de données suivants :
+Vous pouvez créer des variables à l’aide de la section Variables disponible dans le panneau latéral du modèle de flux de travail. aem variables de processus prennent en charge les types de données suivants :
 
 * **Types** de données primitifs : Long, Doublon, Boolean, Date et String
 * **Types** de données complexes : [Document](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), instance [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)et modèle de données de formulaire.
 
 >[!NOTE]
 >
->Les Workflows ne prennent en charge que le format ISO8601 pour les variables de type Date.
+>Les workflows ne prennent en charge que le format ISO8601 pour les variables de type Date.
 
-Vous avez besoin d’un package [de module complémentaire](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) AEM Forms pour les types de données Document et Modèle de données de formulaire.  Utilisez le type de données ArrayList pour créer des collections de variables. Vous pouvez créer une variable ArrayList pour tous les types de données primitifs et complexes. Par exemple, créez une variable ArrayList et sélectionnez String comme sous-type pour stocker plusieurs valeurs de chaîne à l’aide de la variable.
+Vous avez besoin du package [de module complémentaire](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) AEM Forms pour les types de données Document et Modèle de données de formulaire.  Utilisez le type de données ArrayList pour créer des collections de variables. Vous pouvez créer une variable ArrayList pour tous les types de données primitifs et complexes. Par exemple, créez une variable ArrayList et sélectionnez String comme sous-type pour stocker plusieurs valeurs de chaîne à l’aide de la variable.
 
 Pour créer une variable, procédez comme suit :
 
 1. Sur une instance AEM, accédez à Outils ![](/help/forms/using/assets/hammer.png) > Processus > Modèles.
 1. Appuyez sur **[!UICONTROL Créer]** et spécifiez le titre et un nom facultatif pour le modèle de processus. Sélectionnez le modèle et appuyez sur **[!UICONTROL Modifier]**.
-1. Appuyez sur l’icône de variables disponible dans le panneau latéral du modèle de processus et appuyez sur **[!UICONTROL Ajouter la variable]**.
+1. Appuyez sur l’icône de variables disponible dans le panneau latéral du modèle de processus et appuyez sur Variable **** Ajoute.
 
    ![Ajouter une variable](assets/variables_add_variable_new.png)
 
@@ -67,7 +67,7 @@ Pour créer une variable, procédez comme suit :
 
 Lorsque vous créez des variables, prenez en compte les bonnes pratiques suivantes :
 
-* Créez autant de variables qu’un flux de travail le requiert. Toutefois, pour conserver les ressources de base de données, utilisez le nombre minimum de variables requises et réutilisez les variables dès que possible.
+* Créez autant de variables qu’un processus le requiert. Toutefois, pour conserver les ressources de base de données, utilisez le nombre minimum de variables requises et réutilisez les variables dès que possible.
 * Les variables sont sensibles à la casse. Assurez-vous de référencer des variables en utilisant le même cas dans votre flux de travail.
 * Evitez d’utiliser des caractères spéciaux dans le nom de la variable
 
@@ -92,7 +92,7 @@ En fonction du type de données de la variable, vous pouvez utiliser les options
 
 Vous pouvez également mettre à jour des éléments spécifiques d’une variable de type JSON ou XML à l’aide de la notation JSON DOT ou XPATH.
 
-### Ajouter le mappage entre les variables {#add-mapping-between-variables}
+### Mappage des Ajoutes entre les variables {#add-mapping-between-variables}
 
 Exécutez les étapes suivantes pour ajouter un mappage entre les variables :
 
@@ -127,7 +127,7 @@ Utilisez l’éditeur d’expressions pour :
 * Définissez la valeur des variables à l’aide d’autres variables de processus, nombres ou expressions mathématiques.
 * Utiliser des variables de processus, une chaîne, un nombre ou une expression dans une expression mathématique
 * Ajoutez des conditions pour définir les valeurs des variables.
-* Ajoutez des opérateurs entre les conditions.
+* Ajouter des opérateurs entre les conditions.
 
 ![Editeur d’expression](assets/variables_expression_editor_new.png)
 
@@ -151,7 +151,7 @@ Vous pouvez utiliser des variables pour récupérer les entrées et les sorties 
 
 ### Procédure de flux de travaux avec prise en charge des variables {#workflow-steps-with-support-for-variables}
 
-L’étape Atteindre, OU Scinder, et toutes les étapes de processus AEM Forms prennent en charge les variables.
+L’étape Atteindre, OU Fractionner, et toutes les étapes du processus AEM Forms prennent en charge les variables.
 
 #### OU Étape de fractionnement {#or-split-step}
 
@@ -161,11 +161,11 @@ Vous pouvez définir l&#39;expression d&#39;routage d&#39;une branche à l&#39;a
 
 Vous pouvez utiliser des variables pour définir l’expression d’routage à l’aide de l’éditeur d’expressions. Pour plus d’informations sur l’utilisation des expressions d’routage pour l’étape de fractionnement OU, voir [OU fractionner l’étape](/help/sites-developing/workflows-step-ref.md#or-split).
 
-Dans cet exemple, avant de définir l’expression d’routage, utilisez [l’exemple 2](../../forms/using/variable-in-aem-workflows.md#example2) pour définir la valeur de la variable de valeur **** totale. La branche 1 est active si la valeur de la variable de valeur **** totale est supérieure à 50000. De même, vous pouvez définir une règle pour activer la branche 2 si la valeur de la variable de valeur **** totale est inférieure à 50 000.
+Dans cet exemple, avant de définir l’expression d’routage, utilisez [l’exemple 2](../../forms/using/variable-in-aem-workflows.md#example2) pour définir la valeur de la variable de valeur **** totale. La branche 1 est principale si la valeur de la variable de valeur **** totale est supérieure à 50000. De même, vous pouvez définir une règle pour rendre la branche 2 principale si la valeur de la variable **totalvalue** est inférieure à 50 000.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
-De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions d’routage afin d’évaluer la branche active. Appuyez sur **[!UICONTROL Renommer la branche]** pour spécifier un autre nom pour la branche.
+De même, sélectionnez un chemin d’accès au script externe ou spécifiez le script ECMA pour les expressions routages afin d’évaluer la branche principale. Appuyez sur **[!UICONTROL Renommer la branche]** pour spécifier un autre nom pour la branche.
 
 Pour plus d’exemples, voir [Création d’un modèle](../../forms/using/aem-forms-workflow.md#create-a-workflow-model)de processus.
 
@@ -183,9 +183,9 @@ Dans cet exemple, l’étape Atteindre indique la demande de carte de crédit Re
 
 Pour plus d’exemples sur l’utilisation de la définition de règle dans l’étape Goto, voir [Simulation d’une boucle](/help/sites-developing/workflows-step-ref.md#simulateforloop)For.
 
-#### Procédure de flux de travaux orientée processus des formulaires {#forms-workflow-centric-workflow-steps}
+#### Étapes de flux de travaux centrées sur le Forms {#forms-workflow-centric-workflow-steps}
 
-Toutes les étapes de processus AEM Forms prennent en charge les variables. For more information, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
+Toutes les étapes du processus AEM Forms prennent en charge les variables. For more information, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
 
 ### Procédure de flux de travaux sans prise en charge des variables {#workflow-steps-without-support-for-variables}
 
@@ -203,7 +203,7 @@ Utilisez les API suivantes dans le script ECMA pour récupérer les valeurs des 
 | Modèle de données de formulaire | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Vous avez besoin d’un package [de module complémentaire](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) AEM Forms pour les types de données de variable Document et Modèle de données de formulaire.
+Vous avez besoin du package [de module complémentaire](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html) AEM Forms pour les types de données de variable Document et Modèle de données de formulaire.
 
 **Exemple**
 
@@ -288,4 +288,4 @@ Pour supprimer une variable, procédez comme suit :
 
 ## Références {#references}
 
-Pour plus d’exemples sur l’utilisation des variables dans les étapes du flux de travail en AEM Forms, reportez-vous à la section [Variables dans les workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html)AEM.
+Pour plus d’exemples sur l’utilisation des variables dans les étapes du processus AEM Forms, voir [Variables dans les workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html)AEM.
