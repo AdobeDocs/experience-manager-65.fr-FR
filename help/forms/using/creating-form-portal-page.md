@@ -43,7 +43,7 @@ Le composant Search &amp; Lister, disponible dans la catégorie des composants D
 * Le volet Liste, où les formulaires sont répertoriés
 * Le volet Recherche, où ajouter la fonction de recherche
 
- Une fois ajouté, le composant se présente comme suit.
+Vous pouvez faire glisser et déposer le composant Search &amp; Lister depuis la catégorie de composants Document Services dans l’explorateur de composants sur la page. Une fois ajouté, le composant se présente comme suit.
 
 ![Composant Search &amp; Lister dans une page](assets/fp-grid-viw.png)
 
