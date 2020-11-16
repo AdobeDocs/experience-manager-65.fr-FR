@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +32,7 @@ Vous disposez des options suivantes pour configurer l’intégration :
 
 * Exclusion de l’intégration
 
-   Sélectionnez cette option si vous préférez [configurer manuellement l’intégration](/help/sites-administering/marketing-cloud.md). Voir aussi la rubrique [Intégration d’AEM à Adobe Target et Adobe Analytics à l’aide de DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+   Sélectionnez cette option si vous préférez [configurer manuellement l’intégration](/help/sites-administering/marketing-cloud.md). Voir aussi la rubrique [Intégration d’AEM à Adobe Target et Adobe Analytics à l’aide de DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Définissez la configuration et la mise en service à l’aide d’un script.
 
@@ -182,6 +185,7 @@ Les paramètres que vous envoyez dépendent de ce qui suit :
    * `automaticProvisioning`= `true`
    * `servicename`= `analytics|target`
    * `path`=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées
+
    Par exemple, une requête curl qui crée à la fois des configurations Analytics et Target, et les joint à la page we.retail prendrait la forme suivante :
 
    ```shell
@@ -194,13 +198,14 @@ Les paramètres que vous envoyez dépendent de ce qui suit :
    * servicename= `analytics|target`
    * path=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées ; plusieurs chemins peuvent être définis
    * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
+   * analytics.société= `Name of company`
    * analytics.username= `me`
    * analytics.secret= `secret`
    * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+   * cible.clientcode= `mycompany`
+   * cible.email= `me@adobe.com`
+   * cible.password= `password`
+
    Dans ce cas, la requête curl qui crée à la fois des configurations Analytics et Target, et les joint à la page we-retail prendrait la forme suivante :
 
    ```shell
