@@ -1,6 +1,6 @@
 ---
-title: Rendu de formulaires HTML avec des barres d’outils personnalisées
-seo-title: Rendu de formulaires HTML avec des barres d’outils personnalisées
+title: Rendu de HTML Forms avec des barres d’outils personnalisées
+seo-title: Rendu de HTML Forms avec des barres d’outils personnalisées
 description: 'null'
 seo-description: 'null'
 uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
@@ -19,9 +19,9 @@ ht-degree: 1%
 ---
 
 
-# Rendu de formulaires HTML avec des barres d’outils personnalisées {#rendering-html-forms-with-customtoolbars}
+# Rendu de HTML Forms avec des barres d’outils personnalisées {#rendering-html-forms-with-customtoolbars}
 
-## Rendu de formulaires HTML avec des barres d’outils personnalisées {#rendering-html-forms-with-custom-toolbars}
+## Rendu de HTML Forms avec des barres d’outils personnalisées {#rendering-html-forms-with-custom-toolbars}
 
 Le service Forms vous permet de personnaliser une barre d’outils générée avec un formulaire HTML. Une barre d’outils peut être personnalisée pour modifier son apparence en remplaçant les styles CSS par défaut et pour ajouter un comportement dynamique en remplaçant les scripts Java. Une barre d’outils est personnalisée à l’aide d’un fichier XML nommé fscmenu.xml. Par défaut, le service Forms récupère ce fichier à partir d’un emplacement URI spécifié en interne.
 
@@ -29,7 +29,7 @@ Le service Forms vous permet de personnaliser une barre d’outils générée av
 >
 >Cet emplacement URI se trouve dans le fichier adobe-forms-core.jar, qui se trouve dans le fichier adobe-forms-dsc.jar. Le fichier adobe-forms-dsc.jar se trouve dans C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). Vous pouvez utiliser un outil d’extraction de fichiers, tel que Win RAR, pour ouvrir adobe.
 
-Vous pouvez copier le fichier fscmenu.xml à partir de cet emplacement, le modifier pour répondre à vos besoins, puis le placer dans un emplacement URI personnalisé. Ensuite, à l’aide de l’API Forms Service, définissez les options d’exécution qui génèrent le service Forms à l’aide de votre fichier fscmenu.xml à partir de l’emplacement spécifié. Ces actions entraînent le rendu par le service Forms d’un formulaire HTML doté d’une barre d’outils personnalisée.
+Vous pouvez copier le fichier fscmenu.xml à partir de cet emplacement, le modifier pour répondre à vos besoins, puis le placer dans un emplacement URI personnalisé. Ensuite, à l’aide de l’API Service Forms, définissez les options d’exécution qui génèrent le service Forms en utilisant votre fichier fscmenu.xml à partir de l’emplacement spécifié. Ces actions entraînent le rendu par le service Forms d’un formulaire HTML doté d’une barre d’outils personnalisée.
 
 Outre le fichier fscmenu.xml, vous devez également obtenir les fichiers suivants :
 
@@ -54,7 +54,7 @@ Vous pouvez également spécifier les emplacements absolus de ces fichiers JS et
 >
 >Il n’est pas recommandé de mélanger les méthodes de référencement de ces fichiers. En d’autres termes, toutes les URI doivent être référencées à l’aide du `FSToolBarURI` mot-clé ou d’un emplacement absolu.
 
-Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;serveur d’applications>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers se trouvent dans le fichier WAR. Le fichier adobe-forms-&lt;serveur d’applications>.ear se trouve dans le dossier d’installation d’AEM forms (C:\ is the installation directory). Vous pouvez ouvrir le fichier adobe-forms-&lt;serveur d’applications>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
+Vous pouvez obtenir les fichiers JS et CSS en ouvrant le fichier adobe-forms-&lt;serveur d’applications>.ear. Dans ce fichier, ouvrez le fichier adobe-forms-res.war. Tous ces fichiers se trouvent dans le fichier WAR. Le fichier adobe-forms-&lt;serveur d’applications>.ear se trouve dans le dossier d’installation AEM forms (C:\ is the installation directory). Vous pouvez ouvrir le fichier adobe-forms-&lt;serveur d’applications>.ear à l’aide d’un outil d’extraction de fichiers tel que WinRAR.
 
 La syntaxe XML suivante illustre un exemple de fichier fscmenu.xml.
 
@@ -153,7 +153,7 @@ Spécifiez également une valeur de paramètre régional valide en appelant la `
 
 >[!NOTE]
 >
->Avant de générer un formulaire HTML qui utilise une barre d’outils personnalisée, vous devez connaître le mode de rendu des formulaires HTML. (Voir [Rendu de formulaires au format HTML](/help/forms/developing/rendering-forms-html.md).)
+>Avant de générer un formulaire HTML qui utilise une barre d’outils personnalisée, vous devez connaître le mode de rendu des formulaires HTML. (Voir [Rendu de Forms au format HTML](/help/forms/developing/rendering-forms-html.md).)
 
 For more information about the Forms service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
@@ -199,13 +199,13 @@ Lorsque le service Forms génère un formulaire HTML, il renvoie un flux de donn
 
 [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Débuts rapides de l’API Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Débuts rapides de l’API du service Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Rendu des PDF forms interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendu des formulaires au format HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendu de Forms au format HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Création d’Applications web renvoyant des formulaires](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Création d’Applications web renvoyant Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Générer un formulaire HTML avec une barre d’outils personnalisée à l’aide de l’API Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
@@ -265,7 +265,7 @@ Générer un formulaire HTML contenant une barre d’outils personnalisée à l�
 
 ### Rendu d’un formulaire HTML avec une barre d’outils personnalisée à l’aide de l’API du service Web {#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api}
 
-Générer un formulaire HTML contenant une barre d’outils personnalisée à l’aide de l’API Forms Service (service Web) :
+Générer un formulaire HTML contenant une barre d’outils personnalisée à l’aide de l’API Service Forms (service Web) :
 
 1. Inclure les fichiers de projet
 
