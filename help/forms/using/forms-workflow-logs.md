@@ -1,8 +1,8 @@
 ---
 title: Connexion aux workflows AEM Forms
 seo-title: Connexion aux workflows AEM Forms
-description: Utilisez les journaux pour déboguer les problèmes de flux de travaux des AEM Forms.
-seo-description: Utilisez les journaux pour déboguer les problèmes de flux de travaux des AEM Forms.
+description: Utilisez les journaux pour déboguer les problèmes de flux de travaux AEM Forms.
+seo-description: Utilisez les journaux pour déboguer les problèmes de flux de travaux AEM Forms.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # Connexion aux workflows AEM Forms{#logging-in-aem-forms-workflows}
 
-Les étapes du processus des formulaires fournissent des journaux détaillés pour déboguer facilement les problèmes liés au processus. Activez la journalisation du débogage pour les workflows AEM Forms afin de vue des journaux.
+Les étapes du processus Forms fournissent des journaux détaillés pour déboguer les problèmes liés au processus. Activez la journalisation du débogage pour les workflows AEM Forms afin de vue des journaux.
 
 By default, all logging information is available in the **error.log** file at the */crx-repository/logs/* directory.
 
@@ -81,7 +81,7 @@ S’il existe une exception, vous pouvez vue la trace complète de la pile pour 
 
 Effectuez les étapes suivantes pour activer la journalisation du débogage pour les workflows AEM Forms :
 
-1. Accédez au gestionnaire de configuration de la console Web AEM à l’adresse :
+1. Accédez à AEM gestionnaire de configuration de la console Web à l’adresse :
 
    https://&#39;[server]:[port]&#39;/system/console/configMgr
 
