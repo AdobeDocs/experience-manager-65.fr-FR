@@ -1,8 +1,8 @@
 ---
 title: Configuration des paramètres d’administration sécurisée pour AEM Forms on JEE
 seo-title: Configuration des paramètres d’administration sécurisée pour AEM Forms on JEE
-description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms sur JEE.
-seo-description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms sur JEE.
+description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms on JEE.
+seo-description: Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -19,7 +19,7 @@ ht-degree: 80%
 
 # Configuration des paramètres d’administration sécurisée pour AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms sur JEE.
+Découvrez comment administrer des comptes d’utilisateurs et des services qui, bien que requis dans un environnement de développement privé, ne sont pas requis dans un environnement de production de AEM Forms on JEE.
 
 En règle générale, les développeurs n’utilisent pas l’environnement de production pour construire et tester leurs applications. Pour cette raison, vous devez administrer des comptes utilisateur et des services qui, bien que nécessaires dans un environnement de développement privé, ne le sont pas dans un environnement de production.
 
@@ -109,7 +109,7 @@ Certains services du serveur de formulaires permettent d’appeler sans authenti
 
 ## Modification du délai d’expiration global par défaut {#changing-the-default-global-time-out}
 
-Les utilisateurs finaux peuvent s’authentifier auprès des AEM Forms par le biais de Workbench, d’applications Web AEM Forms ou d’applications personnalisées qui appellent des services de serveur AEM Forms. Un paramètre de délai d’expiration permet de spécifier la durée pendant laquelle ces utilisateurs peuvent interagir avec AEM Forms (en utilisant une assertion SAML) avant d’être obligés de s’authentifier de nouveau. Par défaut, ce paramètre est défini sur deux heures. Dans un environnement de production, cette durée doit être réduite au nombre minimum de minutes acceptable.
+Les utilisateurs finaux peuvent s’authentifier auprès d’AEM Forms par le biais de Workbench, d’applications Web AEM Forms ou d’applications personnalisées appelant les services de serveur AEM Forms. Un paramètre de délai d’expiration permet de spécifier la durée pendant laquelle ces utilisateurs peuvent interagir avec AEM Forms (en utilisant une assertion SAML) avant d’être obligés de s’authentifier de nouveau. Par défaut, ce paramètre est défini sur deux heures. Dans un environnement de production, cette durée doit être réduite au nombre minimum de minutes acceptable.
 
 ### Réduction au minimum de la durée limite avant réauthentification: {#minimize-reauthentication-time-limit}
 
