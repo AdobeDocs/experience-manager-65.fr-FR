@@ -22,7 +22,7 @@ ht-degree: 74%
 
 Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-components.md) de l’espace de travail AEM Forms dans votre propre application Web. L’exemple d’implémentation suivant utilise des composants d’un paquet de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application Web. Personnalisez la solution ci-dessous en fonction de vos besoins. The sample implementation reuses `UserInfo`, `FilterList`, and `TaskList`components inside a web portal.
 
-1. Connectez-vous à CRXDE Lite environnement à `https://'[server]:[port]'/lc/crx/de/`. Assurez-vous que vous avez installé un package de développement d’espace de travail AEM Forms.
+1. Connectez-vous à l&#39;environnement CRXDE Lite à `https://'[server]:[port]'/lc/crx/de/`. Assurez-vous que vous avez installé un package de développement d’espace de travail AEM Forms.
 1. Créez un chemin `/apps/sampleApplication/wscomponents`.
 1. Copiez css, images, js/libs, js/runtime et js/registry.js
 
