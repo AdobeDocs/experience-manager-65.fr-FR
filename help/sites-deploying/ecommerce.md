@@ -10,6 +10,9 @@ content-type: reference
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5d46836a8b7b66daa8f27bc6fad14319ab1f58a7
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 56%
 
 ---
 
@@ -25,11 +28,11 @@ Adobe propose deux versions de la structure d’intégration de commerce :
 | Versions d’AEM prises en charge | AEM sur site ou AMS 6.x | AEM AMS 6.4 et 6.5 |
 | Back-end | - AEM, Java <br> - Intégration monolithique, mappage de pré-génération (modèle)<br> - référentiel JCR | - Magento <br>- Java et JavaScript <br>- Aucune donnée commerciale stockée dans le référentiel JCR |
 | Frontal | Pages rendues côté serveur AEM | Application de page mixte (rendu hybride) |
-| Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec AEM ou pages proxy | - Pas d&#39;importation de produit <br>- Modèles génériques <br>- Données à la demande via un connecteur |
+| Catalogue de produits | - Importateur de produits, éditeur, mise en cache dans AEM <br>- Catalogues réguliers avec des pages AEM ou proxy | - Pas d&#39;importation de produit <br>- Modèles génériques <br>- Données à la demande via un connecteur |
 | Évolutivité | - Peut prendre en charge jusqu&#39;à quelques millions de produits (selon le cas d&#39;utilisation) <br> - Mise en cache du répartiteur | - Aucune limitation de volume <br>- Mise en cache sur le répartiteur ou le CDN |
 | Modèle de données normalisé | Non | Oui, schéma Magento GraphQL |
-| Disponibilité | <br> Oui : - SAP Commerce Cloud (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4 <br>- Salesforce Commerce Cloud (Connector open-source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
-| Quand utiliser la personnalisation | Cas d’utilisation limités : Dans les cas où des catalogues statiques de petite taille peuvent être importés | Solution conseillée dans la plupart des cas d’utilisation |
+| Disponibilité | Oui :<br> - Commerce Cloud SAP (Extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4 <br>- Commerce Cloud Salesforce (Connector open-source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Magento Commerce (prend en charge Magento 2.3.2 (par défaut) et compatible avec Magento 2.3.1). |
+| Quand utiliser la personnalisation | Cas d&#39;utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 
 ## Déploiement d’autres applications {#deploying-other-implementations}
