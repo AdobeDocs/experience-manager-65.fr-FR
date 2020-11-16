@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 translation-type: tm+mt
 source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+workflow-type: tm+mt
+source-wordcount: '1138'
+ht-degree: 78%
 
 ---
 
@@ -45,10 +48,12 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
          * To create an add panel button, select **Add Instance**, and drag-drop the panel using ![toggle-side-panel](assets/toggle-side-panel.png) or select it using **Drop object or select here.**
          * To create a delete panel button, select **Remove Instance**, and drag-drop the panel using ![toggle-side-panel](assets/toggle-side-panel.png) or select it using **Drop object or select here.**
+
       Sélectionnez **Éditeur de code** dans la ligne Objets et fonctions de formulaire. Cliquez sur **Modifier les règles** et dans la zone de code :
 
       * Pour créer un bouton d’ajout de panneau, spécifiez `this.panel.instanceManager.addInstance()`.
       * To create a delete panel button, specify `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+
       Cliquez sur **Terminé**.
 
       >[!NOTE]
