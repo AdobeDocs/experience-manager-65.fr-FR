@@ -28,7 +28,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de c
 
 * Lors de la configuration des propriétés d’un noeud de configuration du dossier de contrôle, saisissez le chemin d’accès complet du répertoire parent dans la propriété folderPath et ajoutez le nom du dossier de contrôle à créer, comme indiqué dans l’exemple suivant : `C:/MyPDFs/MyWatchedFolder`
 Le 
-`MyWatchedFolder`n’existe pas, les AEM Forms tentent de créer le dossier à l’emplacement spécifié.
+`MyWatchedFolder`n’existe pas, AEM Forms tente de créer le dossier à l’emplacement spécifié.
 
 * Créez un dossier dans le système de fichiers avant de configurer un point de fin Watched Folder, puis indiquez son chemin d’accès complet dans la propriété folderPath (chemin de fichier). Pour plus d’informations sur la propriété folderPath, voir [Propriétés de dossier de contrôle](#watchedfolderproperties).
 
