@@ -38,7 +38,7 @@ Les étapes de ce didacticiel sont les suivantes :
 * [Application Sandbox initiale](initial-app.md)
 * [Contenu initial du sandbox](initial-content.md)
 * [Développement d’une application Sandbox](develop-app.md)
-* [ajouter les bibliothèques clientes](add-clientlibs.md)
+* [Ajouter les bibliothèques clientes](add-clientlibs.md)
 * [Développement du contenu du sandbox](develop-content.md)
 
 >[!CAUTION]
