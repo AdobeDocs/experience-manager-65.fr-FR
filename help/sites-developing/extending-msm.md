@@ -33,7 +33,7 @@ Cette page vous explique comment étendre les fonctionnalités de Multi Site Man
 >
 >Lire cette page en lien avec [Réutilisation du contenu : Multi Site Manager](/help/sites-administering/msm.md).
 >
->Les sections suivantes de la section Restructuration du référentiel de sites dans AEM 6.4 peuvent également présenter un intérêt :
+>Les sections suivantes de la section Restructuration du référentiel de sites dans AEM 6.4 pourraient également être intéressantes :
 >* [Configurations Blueprint de Multi-site Manager](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-blueprint-configurations)
 >* [Configurations du déploiement de Multi-site Manager](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-rollout-configurations)
 
@@ -65,7 +65,7 @@ Les principaux objets de l’API MSM interagissent comme suit (voir aussi [Terme
       * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
       * Définit la configuration de déploiement par défaut pour toutes les Live Copy résultantes.
 
-* **`LiveRelationship`** Le `LiveRelationship` spécifie la connexion (relation) entre une ressource de la branche de la copie dynamique et sa ressource source/prototype équivalente.
+* **`LiveRelationship`** Le `LiveRelationship` spécifie la connexion (relation) entre une ressource dans la branche de la copie dynamique et sa ressource source/prototype équivalente.
 
    * Les relations sont utilisées lors de la réalisation de l’héritage et du déploiement.
    * `LiveRelationship` les objets fournissent un accès (références) aux configurations de déploiement ( `RolloutConfig`), `LiveCopy`et `LiveStatus` aux objets liés à la relation.
@@ -180,7 +180,7 @@ La nouvelle configuration de déploiement est disponible quand vous définissez 
 
 Pour créer une configuration de déploiement :
 
-1. Ouvrez CRXDE Lite ; par exemple :
+1. CRXDE Lite ouvert ; par exemple :
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Accédez à :
@@ -231,7 +231,7 @@ Les configurations de déploiement sont stockées sous le noeud [de configuratio
 
 Add child nodes of type `cq:LiveSyncAction` to add synchronization actions to the rollout configuration. L’ordre des nœuds d’action de synchronisation détermine l’ordre dans lequel les actions se produisent.
 
-1. Toujours dans CRXDE Lite, sélectionnez votre noeud Configuration [](#create-the-rollout-configuration) de déploiement.
+1. Toujours en CRXDE Lite, sélectionnez votre noeud Configuration [](#create-the-rollout-configuration) de déploiement.
 
    Par exemple :
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
