@@ -29,7 +29,7 @@ L’exemple présenté dans ce document est une implémentation de référence d
 >
 >* Les exemples et les configurations décrits dans ce document correspondent à MySQL 5.6.24 et vous devez les remplacer de manière appropriée selon votre système de base de données. 
 >* Vérifiez que vous avez installé la dernière version du package complémentaire AEM Forms. Pour obtenir la liste des packages disponibles, consultez l’article sur les [versions d’AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html).
->* L’exemple de package fonctionne uniquement avec les actions d’envoi Formulaires adaptatifs.
+>* L’exemple de package fonctionne uniquement avec les actions d’envoi Forms adaptatif.
 
 
 ## Installer et configurer l’exemple {#set-up-and-configure-the-sample}
