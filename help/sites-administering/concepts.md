@@ -216,7 +216,7 @@ Si les deux catégories ci-dessous peuvent être différenciées, vous pouvez cr
 
    `/products/mens/shoes/sneakers`
 
-* *catégories marketing*
+* *Catégories marketing*
 
    All other categories a *product can belong to*; for example:
 
@@ -269,7 +269,7 @@ Les différents attributs de produit peuvent dépendre du moteur eCommerce utili
 
 * **Catégorie de ressources par défaut**
 
-   catégorie par défaut pour les ressources.
+   Catégorie par défaut pour les ressources.
 
 * **Données ERP**
 
@@ -368,7 +368,7 @@ Ces compartiments prennent la forme de dossiers fantômes introduits dans la str
 
 Ce scénario consiste à configurer deux instances de création :
 
-1. Instance d’auteur Maître
+1. Instance d’auteur de Principal
 
    Importe les données de produit de PIM, sur lesquelles le post-traitement des chemins d’accès aux ressources est désactivé.
 
@@ -393,11 +393,11 @@ En l’absence de ressources (images) à importer pour des produits, vous pouvez
 
 Le test de performances doit être pris en compte dans les mises en œuvre d’AEM eCommerce :
 
-* environnement de l’auteur :
+* Environnement de l’auteur :
 
    L’activité en arrière-plan (par exemple, l’importation) peut se produire en même temps que l’activité normale de l’utilisateur (par exemple, la modification des pages) et même si les performances frontales sont (en général) prioritaires, les mauvaises performances constatées par les auteurs en ligne peuvent entraîner une frustration susceptible de bloquer une décision d’activation.
 
-* environnement de la publication :
+* Environnement de la publication :
 
    La réplication est un processus essentiel pour s’assurer que le contenu est publié rapidement et de manière fiable. qui peut être influencée par la façon dont le créateur regroupe le contenu à publier.
 
@@ -594,7 +594,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 >
 >Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
 
-## Personnalisation  {#personalization}
+## Personnalisation   {#personalization}
 
 ### Enregistrement et comptes des clients {#customer-registration-and-accounts}
 
@@ -779,7 +779,7 @@ Différentes informations sont stockées, notamment :
 
 * **Eléments de contenu**
 
-   liste des articles commandés.
+   Liste des articles commandés.
 
 * **Sous-total**
 
@@ -823,7 +823,7 @@ Différentes informations sont stockées, notamment :
 
 * **Lien de suivi**
 
-   Lien utilisé pour le suivi de la commande en cours d&#39;expédition.
+   Lien utilisé pour le suivi de la commande lors de son expédition.
 
 >[!NOTE]
 >
@@ -849,7 +849,7 @@ Après avoir passé une commande, les acheteurs reviennent souvent sur le site p
 
 Après réception de la commande, ils peuvent également consulter l’historique des commandes passées pendant une période donnée.
 
-L’exécution et le suivi des commandes sont généralement gérés par le moteur eCommerce. Les informations peuvent être affichées par AEM à l’aide du composant Historique des commandes, qui présente tous les détails pertinents, y compris les bons et les promotions appliqués. Par exemple :
+L’exécution et le suivi des commandes sont généralement gérés par le moteur eCommerce. Les informations peuvent être affichées par AEM à l&#39;aide du composant Historique des commandes, qui affiche tous les détails pertinents, y compris les bons et les promotions appliqués. Par exemple :
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
