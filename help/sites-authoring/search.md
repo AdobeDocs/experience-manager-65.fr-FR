@@ -12,6 +12,9 @@ discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 96%
 
 ---
 
@@ -32,13 +35,13 @@ La recherche est disponible dans la barre d’outils supérieure :
 
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
-* Recherchez un mot-clé, un chemin ou une balise.
-* Filtrez selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
-* Définissez et utilisez une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus.
+* Rechercher un mot-clé, un chemin ou une balise.
+* Filtrer selon des critères spécifiques aux ressources, dates de modification, état de la page, taille du fichier, etc.
+* Définir et utiliser une [recherche enregistrée](#saved-searches) sur la base des critères ci-dessus.
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>Vous pouvez également accéder à la fonction de recherche en appuyant sur la touche `/` (barre oblique) lorsque le rail de recherche est visible.
 
 ## Rechercher et filtrer {#search-and-filter}
 
@@ -57,7 +60,7 @@ Pour rechercher et filtrer vos ressources :
 
    Vous pouvez sélectionner une ressource spécifique (pour appliquer d’autres actions) ou accéder à d’autres actions en sélectionnant le type de ressource concerné, par exemple **Afficher tous les sites** :
 
-   ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
+   ![capture d&#39;écran_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
 1. Si vous souhaitez accéder à plus d’options, sélectionnez le symbole représentant un rail (en haut à gauche) pour ouvrir le panneau latéral **Filtres et options**.
 
@@ -71,6 +74,7 @@ Pour rechercher et filtrer vos ressources :
    * Répertoire de recherche
    * Balises
    * Critères de recherche, par exemple, les dates de modification, l’état de publication, l’état LiveCopy. 
+
    >[!NOTE]
    >
    >Les critères de recherche peuvent varier :
@@ -83,11 +87,11 @@ Pour rechercher et filtrer vos ressources :
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
-1. Vous pouvez également ajouter des termes de recherche :
+1. Vous pouvez également ajouter des termes de recherche:
 
    ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
-1. Fermez la fonction de **recherche** en cliquant sur la **croix** (en haut à droite).
+1. Fermez **Rechercher** à l’aide du **X** (en haut à droite).
 
 >[!NOTE]
 >
@@ -95,7 +99,7 @@ Pour rechercher et filtrer vos ressources :
 >
 >Lorsque vous sélectionnez un élément sur la page de résultats de recherche et lorsque vous revenez à la page de recherche après avoir utilisé le bouton Précédent du navigateur, les critères de recherche restent inchangés.
 
-## Saved Searches {#saved-searches}
+## Recherches enregistrées {#saved-searches}
 
 Outre la recherche selon diverses facettes, vous pouvez également enregistrer une configuration de recherche particulière pour la récupérer et la réutiliser ultérieurement :
 
@@ -105,17 +109,17 @@ Outre la recherche selon diverses facettes, vous pouvez également enregistrer u
 
 1. Attribuez-lui un nom, puis cliquez sur **Enregistrer** pour confirmer :
 
-   ![screen-shot_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
+   ![capture d&#39;écran_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
 
 1. La recherche enregistrée sera disponible dans le sélecteur lors de votre prochain accès au panneau de recherche :
 
-   ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
+   ![capture d&#39;écran_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
 1. Une fois enregistrée, vous pouvez :
 
    * Cliquer sur la **croix** (à côté du nom de la recherche enregistrée) pour lancer une nouvelle requête (la recherche enregistrée elle-même ne sera pas supprimée).
    * **Modifier la recherche enregistrée**, modifier les critères de recherche, puis **enregistrer** la recherche une nouvelle fois.
 
-Vous pouvez modifier une recherche enregistrée en la sélectionnant, puis en cliquant sur **Modifier la recherche** en bas du panneau de recherche.
+Les recherches enregistrées peuvent être modifiées en sélectionnant la recherche enregistrée et en cliquant sur **Modifier la recherche enregistrée** au bas du panneau de recherche.
 
 ![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
