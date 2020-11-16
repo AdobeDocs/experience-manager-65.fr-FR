@@ -21,7 +21,7 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->Les AEM Forms offrent la possibilité [d’éditeur](/help/forms/using/themes.md) de thème pour créer et modifier des [thèmes](/help/forms/using/themes.md)de formulaires adaptatifs. Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne comporte pas d’éditeur [de](/help/forms/using/themes.md) thème et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers Less/CSS (méthode d’éditeur de thème préalable).
+>AEM Forms fournit la fonctionnalité Editeur [de](/help/forms/using/themes.md) thème pour créer et modifier des [thèmes](/help/forms/using/themes.md)de formulaires adaptatifs. Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne comporte pas d’éditeur [de](/help/forms/using/themes.md) thème et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers Less/CSS (méthode d’éditeur de thème préalable).
 
 ## Conditions préalables {#prerequisites}
 
