@@ -12,6 +12,9 @@ discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '3023'
+ht-degree: 85%
 
 ---
 
@@ -45,7 +48,7 @@ La structure ClientContext fournit une [API JavaScript](/help/sites-developing/
 
 Les données de magasin de session restent sur le client. ClientContext ne les réécrit pas sur le serveur. Pour envoyer des données au serveur, utilisez un formulaire ou développez du code JavaScript personnalisé.
 
-Chaque magasin de sessions est un ensemble de paires propriété-valeur. Le magasin de sessions représente un ensemble de données (de n’importe quel type), dont la signification conceptuelle peut être déterminée par le concepteur et/ou le développeur. L’exemple de code JavaScript suivant définit un objet qui représente les données de profil que le magasin de sessions peut contenir :
+Chaque magasin de sessions est un ensemble de paires propriété-valeur. Le magasin de sessions représente un ensemble de données (de n’importe quel type), dont la signification conceptuelle peut être déterminée par le concepteur et/ou le développeur. L’exemple de code javascript suivant définit un objet qui représente les données de profil que le magasin de sessions peut contenir :
 
 ```
 {
@@ -88,7 +91,7 @@ Pour obtenir une description des composants Magasin de contexte (ContextStore) i
 
 Des informations de profil sont également utilisées pour diffuser du [contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
 
-![clientcontext_targetedcontentdelivery](assets/clientcontext_targetedcontentdelivery.png) ![clientcontext_targetedcontentdelivery detail](assets/clientcontext_targetedcontentdeliverydetail.png)
+![clientcontext_targetedcontentdelivery](assets/clientcontext_targetedcontentdelivery.png) ![clientcontext_targetedcontentdeliverydetail](assets/clientcontext_targetedcontentdeliverydetail.png)
 
 ## Ajout de ClientContext à une page {#adding-client-context-to-a-page}
 
@@ -301,7 +304,7 @@ The `/libs/cq/personalization/components/contextstores/profiledata` context stor
 
 Pour effectuer le rendu des données de magasin à l’aide d’un composant genericstore, vous devez :
 
-* Ajoutez la balise personalization:storeRendererTag au script JSP du composant pour identifier le nom du magasin de sessions.
+* Ajoutez la balise personalization:storeRendererTag sur le script JSP du composant pour identifier le nom du magasin de sessions.
 * Implémenter une méthode de rendu sur la classe du magasin de sessions.
 
 #### Identification du magasin de sessions genericstore {#identifying-the-genericstore-session-store}
@@ -433,7 +436,7 @@ CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) 
 
 La page en cours doit être associée à une page pour mobiles correspondante ; cela est déterminé uniquement si la page possède une Live Copy configurée pour un déploiement sur mobiles (`rolloutconfig.path.toLowerCase` contient `mobile`).
 
-#### Configuration{#configuration}
+#### Configuration {#configuration}
 
 Lors du passage de la page pour ordinateurs de bureau à la page équivalente pour mobiles :
 
@@ -522,7 +525,7 @@ Une boîte de dialogue de modification est requise pour le composant Magasin de 
    | Nom | Type | Valeur |
    |---|---|---|
    | cls | Chaîne | x-form-fieldset-description |
-   | text | Chaîne | Le composant Geoloc ne nécessite aucune configuration. |
+   | text | Chaîne | Le composant géologique ne nécessite aucune configuration. |
    | xtype | Chaîne | static |
 
 1. Cliquez sur Enregistrer tout.
@@ -593,7 +596,7 @@ Ajoutez le code au fichier JSP du composant geoloc pour effectuer le rendu des d
 Ajoutez le composant Location Store à ClientContext afin qu’il soit initialisé lors du chargement de la page.
 
 1. Open the Geometrixx Outdoors home page on the author instance ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
-1. Cliquez sur Ctrl-Alt-c (Windows) ou Ctrl-option-c (Mac) pour ouvrir Client Context.
+1. Cliquez sur Ctrl-Alt-c (windows) ou Ctrl-option-c (Mac) pour ouvrir Client Context.
 1. Cliquez sur l’icône de modification dans la partie supérieure de ClientContext pour ouvrir Client Context Designer.
 
    ![](do-not-localize/chlimage_1.png)
@@ -605,7 +608,7 @@ Ajoutez le composant Location Store à ClientContext afin qu’il soit initialis
 Ouvrez la page d’accueil de Geometrixx Outdoors en mode d’édition, puis ouvrez ClientContext pour afficher les données du composant Location Store.
 
 1. Ouvrez la page anglaise du site Geometrixx Outdoors. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
-1. Pour ouvrir Client Context, appuyez sur Ctrl-Alt-c (Windows) ou Ctrl-option-c (Mac).
+1. Pour ouvrir Client Context, appuyez sur Ctrl-Alt-c (windows) ou Ctrl-option-c (Mac).
 
 ## Création d’un ClientContext personnalisé {#creating-a-customized-client-context}
 
@@ -613,7 +616,7 @@ Pour créer un deuxième ClientContext, vous devez dupliquer la branche :
 
 `/etc/clientcontext/default`
 
-* Le sous-dossier :
+* Sous-dossier :
    `/content`
 contiendra le contenu du contexte client personnalisé.
 
