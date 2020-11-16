@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques
-seo-title: Meilleures pratiques
+title: Bonnes pratiques
+seo-title: Bonnes pratiques
 description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
 seo-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
@@ -11,11 +11,14 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
 source-git-commit: e594c53b2a26c1c9e484ac07220dc89c283cf7da
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 91%
 
 ---
 
 
-# Meilleures pratiques{#best-practices}
+# Bonnes pratiques{#best-practices}
 
 La section Meilleures pratiques décrit comment développer, administrer ou utiliser AEM de la manière la plus efficace possible. Cette liste de rubriques, qui évolue constamment, inclut un grand nombre de zones dans AEM.
 
@@ -34,18 +37,18 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>
   <tr>
-   <td>Meilleures pratiques dans différents domaines liés aux ressources pour améliorer la stabilité du système et les performances sous charge</td>
-   <td><a href="/help/assets/best-practices-for-assets.md">Meilleures pratiques pour les ressources</a></td>
+   <td>Meilleures pratiques dans différents domaines liés aux ressources pour améliorer la stabilité et les performances du système en situation de charge</td>
+   <td><a href="/help/assets/best-practices-for-assets.md">Bonnes pratiques pour les ressources</a></td>
    <td>Inclut des liens vers des guides des meilleures pratiques dans différentes zones autour des ressources. Après avoir consulté ce contenu, vous disposerez des connaissances et des outils vous permettant de créer et gérer un système de gestion de ressources d’entreprise.</td>
   </tr>
   <tr>
    <td>Comment organiser votre contenu (hiérarchie des dossiers)</td>
-   <td><a href="/help/assets/organize-assets.md">Meilleures pratiques pour la gestion des fichiers</a></td>
+   <td><a href="/help/assets/organize-assets.md">Bonnes pratiques relatives à la gestion des fichiers</a></td>
    <td>De nombreux profils de traitement basés sur des dossiers sous formes de vidéo, de métadonnées, de traitement d’image sont toujours appliquées aux dossiers. Ce document sur les meilleures pratiques décrit la procédure à suivre pour définir et configurer votre hiérarchie de dossiers. La hiérarchie a un impact considérable sur la manière dont le contenu est traité. </td>
   </tr>
   <tr>
@@ -98,7 +101,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Décrit les meilleures pratiques lorsque vous travaillez avec des autorisations et droits d’accès </td>
   </tr>
   <tr>
-   <td>Workflows</td>
+   <td>Workflows   </td>
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Meilleures pratiques de workflows : Configuration</a></td>
    <td>Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement qui se produit dans un environnement AEM. Il est donc hautement recommandé de planifier et de configurer avec soin les implémentations de workflows.</td>
   </tr>
