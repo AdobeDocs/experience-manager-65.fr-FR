@@ -32,7 +32,7 @@ Cette section traite du développement de composants à utiliser avec le ciblage
 
 ## Activation du ciblage avec Adobe Target sur vos pages {#enabling-targeting-with-adobe-target-on-your-pages}
 
-Pour utiliser des composants ciblés dans vos pages qui interagissent avec l’Adobe Target, incluez du code client spécifique dans l’élément &lt;head>.
+Pour utiliser des composants ciblés dans vos pages qui interagissent avec Adobe Target, incluez du code client spécifique dans l’élément &lt;head>.
 
 ### Section head {#the-head-section}
 
@@ -127,7 +127,7 @@ The Target functionality on the client side is managed by the `CQ_Analytics.Test
  </div>
 ```
 
-Le JSP ajoute les objets javascript d’analyse requis et les références aux bibliothèques JavaScript côté client. Le fichier testandtarget.js contient les fonctions mbox.js. Le code HTML généré par le script est similaire à l’exemple suivant :
+Le JSP ajoute les objets javascript d’analyse requis et les références aux bibliothèques javascript côté client. Le fichier testandtarget.js contient les fonctions mbox.js. Le code HTML généré par le script est similaire à l’exemple suivant :
 
 ```xml
 <script type="text/javascript">
