@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* des paramètres spécifiques pour les services individuels (par exemple, un fichier journal individuel et un format pour les messages de journaux).
+* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et un format pour les messages du journal
 
 Il s’agit toutes de [configurations OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -64,17 +67,17 @@ AEM utilise ce qui suit pour écrire des messages de journal dans un fichier :
 
 Ces éléments sont liés par les paramètres suivants pour les éléments appropriés :
 
-* **Journalisation (Journalisation)**
+* **Enregistreur (enregistreur de journalisation)**
 
    Définissez le ou les services qui génèrent les messages.
 
 * **Fichier journal (Journalisation)**
 
-   Définissez le fichier physique pour le stockage des messages du journal.
+   Définissez le fichier physique pour stocker les messages du journal.
 
    Ceci est utilisé pour lier un enregistreur de journalisation à un rédacteur de journalisation. La valeur doit être identique au même paramètre de la configuration du rédacteur de journalisation pour que la connexion s’effectue.
 
-* **Fichier journal (enregistreur de journal)**
+* **Fichier journal (enregistreur de journalisation)**
 
    Définissez le fichier physique dans lequel les messages du journal seront écrits.
 
@@ -100,7 +103,7 @@ Le premier est un cas particulier car il contrôle à la fois les fichiers `requ
 
       (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Writes the messages to either `request.log` or `access.log`.
+   * Écrit les messages dans `request.log` ou `access.log`.
 
 Ceux-ci peuvent être personnalisés si nécessaire, bien que la configuration standard convienne à la plupart des installations.
 
@@ -112,7 +115,7 @@ Les autres paires suivent la configuration standard :
 
       (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * Écrit `Information` des messages à `logs/error.log`.
+   * Écrit des messages `Information` sur `logs/error.log`.
 
 * Est lié au rédacteur :
 
@@ -124,7 +127,7 @@ Les autres paires suivent la configuration standard :
 
    * Apache Sling Logging Logger Configuration (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Écrit `Warning` des messages à `../logs/error.log` pour le service `org.apache.pdfbox`.
+   * Écrit des messages `Warning` sur `../logs/error.log` pour le service `org.apache.pdfbox`.
 
 * N’est pas lié à un rédacteur spécifique, et crée et utilise donc un rédacteur implicite avec une configuration par défaut (rotation quotidienne du journal).
 
