@@ -11,6 +11,9 @@ discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
 source-git-commit: acc2a3977353386d7e1dfd1344a61d78812fe3fc
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 44%
 
 ---
 
@@ -29,9 +32,9 @@ Cet article décrit la procédure pour activer l’action Courrier électronique
 >
 >You can also use the **[!UICONTROL Send PDF via email]** option to send the completed form by email as a PDF attachment. The configuration options available for this action are the same as the options available for the **[!UICONTROL Send email]** action. L’action PDF par courrier électronique est disponible uniquement pour les formulaires adaptatifs basés sur XFA.
 
-## Action Envoyer un courrier électronique {#email-action}
+## Envoyer une action de courrier électronique {#email-action}
 
-L’action Envoyer un courrier électronique permet à un auteur d’envoyer automatiquement un courrier électronique à un ou plusieurs lors de l’envoi réussi d’un formulaire adaptatif.
+L’action Envoyer un courrier électronique permet à un auteur d’envoyer automatiquement un courrier électronique à un ou plusieurs destinataires lors de l’envoi réussi d’un formulaire adaptatif.
 
 >[!NOTE]
 >
@@ -41,7 +44,7 @@ L’action Envoyer un courrier électronique permet à un auteur d’envoyer aut
 
 1. Open an adaptive form in **[!UICONTROL edit]** mode.
 
-1. Dans l’onglet **[!UICONTROL Contenu]** , appuyez sur **[!UICONTROL de de]** formulaire et appuyez sur ![Configurer](assets/configure-icon.svg) pour  les propriétés du formulaire adaptatif.
+1. Dans l’onglet **[!UICONTROL Contenu]** , appuyez sur Conteneur **[!UICONTROL de]** formulaire et appuyez sur ![Configurer](assets/configure-icon.svg) pour vue les propriétés du formulaire adaptatif.
 
 1. In the **[!UICONTROL Submission]** section, select **[!UICONTROL Send email]** from the **[!UICONTROL Submit Action]** drop-down list.
 
@@ -67,7 +70,7 @@ Dans un formulaire adaptatif, les noms de champ sont appelés espaces réservés
 
 In the **[!UICONTROL Send email]** action, you can use placeholders that are processed when the action is performed. It implies that the headers of the email (such as **[!UICONTROL To]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Subject]**) are generated when the user submits the form.
 
-Pour définir un espace réservé, spécifiez `${<field name>}` dans un champ après avoir sélectionné **[!UICONTROL Envoyer un courrier électronique]** comme action d’envoi.
+Pour définir un espace réservé, indiquez `${<field name>}` dans un champ après avoir sélectionné **[!UICONTROL Envoyer un courrier électronique]** comme action d’envoi.
 
 For example, if the form contains the **[!UICONTROL Email address]** field, named `email_addr`, for capturing the email ID of a user, you can specify the following in the **[!UICONTROL To]**, **[!UICONTROL CC]**, or **[!UICONTROL BCC]** fields.
 
