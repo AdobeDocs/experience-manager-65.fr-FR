@@ -1,6 +1,6 @@
 ---
-title: Configuration de votre environnement de compte
-seo-title: Configuration de votre environnement de compte
+title: 'Configuration de votre environnement de compte  '
+seo-title: 'Configuration de votre environnement de compte  '
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
 seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
@@ -12,11 +12,14 @@ discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 99%
 
 ---
 
 
-# Configuration de votre environnement de compte{#configuring-your-account-environment}
+# Configuration de votre environnement de compte  {#configuring-your-account-environment}
 
 AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 
@@ -32,7 +35,7 @@ La boîte de dialogue **Paramètres utilisateur** donne accès aux options suiva
 
    * La fonction [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur de travailler au nom d’un autre.
 
-* Profile
+* Profil
 
    * Offre un lien pratique vers vos [paramètres utilisateur](/help/sites-administering/security.md).
 
@@ -48,7 +51,7 @@ La boîte de dialogue **Mes préférences** est accessible par l’intermédiair
 
 Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
-![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
+![capture d&#39;écran_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
 
 * **Langue**
 
@@ -102,6 +105,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
    * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+
    Cette option active les raccourcis clavier. Ils sont activés par défaut, mais il est possible de les désactiver, par exemple si un utilisateur a certaines exigences d’accessibilité.
 
 * **Utilisez une expérience de création de contenu classique**
