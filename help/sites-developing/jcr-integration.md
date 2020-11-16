@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +26,7 @@ L’API Sling fonctionne à un niveau plus avancé et plus abstrait que l’API 
 
 ## Éviter les requêtes autant que possible {#avoid-queries-wherever-possible}
 
-Pour récupérer des données, il est toujours plus simple de naviguer dans le référentiel plutôt que d’exécuter une requête. Dans certains cas, les requêtes sont nécessaires, par exemple, une requête d’utilisateur final ou s’il faut trouver du contenu structuré à travers le référentiel entier, mais pour toutes les autres situations, il est préférable de naviguer jusqu’aux nœuds demandés. Les requêtes doivent toujours être évitées dans la logique de rendu telle que les composants de navigation, une &quot;liste d’éléments récents&quot;, le nombre d’éléments, etc. Dans ces cas, il est préférable de parcourir la hiérarchie ou de pré-mettre en cache le résultat afin qu’il puisse être utilisé directement lors du rendu.
+Pour récupérer des données, il est toujours plus simple de naviguer dans le référentiel plutôt que d’exécuter une requête. Dans certains cas, les requêtes sont nécessaires, par exemple, une requête d’utilisateur final ou s’il faut trouver du contenu structuré à travers le référentiel entier, mais pour toutes les autres situations, il est préférable de naviguer jusqu’aux nœuds demandés. Les requêtes doivent toujours être évitées dans la logique de rendu telle que les composants de navigation, une &quot;liste d’éléments récente&quot;, le nombre d’éléments, etc. Dans ces cas, il est préférable de parcourir la hiérarchie ou de pré-mettre en cache le résultat afin qu’il puisse être utilisé directement lors du rendu.
 
 ## Limiter la portée de l’observation JCR {#restrict-the-scope-of-jcr-observation}
 
