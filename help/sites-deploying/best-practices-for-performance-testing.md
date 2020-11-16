@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1925'
+ht-degree: 92%
 
 ---
 
@@ -49,22 +52,22 @@ Avant de commencer les tests de performance, il est nécessaire de définir des 
 
 ### Outils {#tools}
 
-De nombreux outils de test de performance sont proposés sur le marché. Lors de l’exécution d’un outil de génération de charge, il est important de s’assurer que les ordinateurs qui exécutent les tests disposent d’une bande passante réseau suffisante. À défaut, une fois que la machine de test atteint les limites de sa connexion, aucune charge supplémentaire n’est générée sur l’environnement testé.
+De nombreux outils de test de performance sont proposés sur le marché. Lors de l’exécution d’un outil de génération de charge, il est important de s’assurer que les ordinateurs qui effectuent les tests disposent d’une bande passante réseau suffisante. À défaut, une fois que la machine de test atteint les limites de sa connexion, aucune charge supplémentaire n’est générée sur l’environnement testé.
 
 #### Outils de test {#testing-tools}
 
-* L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe d’ingénieurs AEM d’Adobe utilise en fait cet outil pour effectuer des tests de chargement du produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
+* L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe AEM d’ingénieurs d’Adobe utilise en fait l’outil pour tester la charge du produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
 
 * AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation Tableau de bord des opérations.
 * Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter can be found on Apache’s website at [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** est un produit de test de charge de niveau entreprise. Une version d&#39;évaluation gratuite est disponible. Pour plus d&#39;informations, consultez le site [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Load Runner** est un produit de test de charge de niveau entreprise. Une version d&#39;évaluation gratuite est disponible. Pour plus d&#39;informations, voir [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
 * Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/web-performance/load-testing) peuvent également être utilisés.
 * Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante réseau et en simulant des connexions mobiles plus lentes telles que 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles **](https://www.charlesproxy.com/) : application proxy de débogage web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Prend en charge Windows, OS X et Linux.[](https://www.charlesproxy.com/)
+   * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Prend en charge Windows, OS X et Linux. [](https://www.charlesproxy.com/)
 
 #### Outils d’optimisation {#optimization-tools}
 
@@ -102,13 +105,13 @@ Pour les types d’environnements dont les exigences de chargement de ressources
 
 Sur les systèmes dotés de serveurs principaux MongoDB, AEM fournit plusieurs MBeans [JMX](/help/sites-administering/jmx-console.md) qu’il faut surveiller lors des tests de charge ou de performance :
 
-* MBean **Consolidated Cache Statistics**. Vous pouvez y accéder directement en accédant à :
+* MBean **Consolidated Cache Statistics**. Vous pouvez y accéder directement en vous rendant à :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
 For the cache named **Document-Diff**, the hit rate should be over `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
 
-* Mbean **Oak Repository Statistics**. Vous pouvez y accéder directement en accédant à :
+* Mbean **Oak Repository Statistics**. Vous pouvez y accéder directement en vous rendant à :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
@@ -138,7 +141,7 @@ Après avoir exécuté des tests de performance sur l’instance de création, t
 * Recherchez, dans le journal des erreurs, les erreurs ou les avertissements. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
 * Surveillez les ressources matérielles du système telles que l’utilisation de la mémoire et du processeur, les E/S de disque ou les E/S réseau. Ces ressources sont souvent la cause de la détérioration des performances.
 * Optimisez l’architecture des pages et la façon dont elles sont adressées afin de minimiser l’utilisation des paramètres d’URL pour permettre un niveau maximal de mise en cache.
-* Lisez la documentation [Optimisation des performances](/help/sites-deploying/configuring-performance.md) et [Conseils pour le réglage des performances](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+* Lisez la documentation [Optimisation des performances](/help/sites-deploying/configuring-performance.md) et [Conseils pour le réglage des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 * Si des problèmes surviennent lors de la modification de certaines pages ou composants sur des instances de création, utilisez le mode Développeur de l’UI tactile pour inspecter la page en question. Cela permet de décomposer chaque zone de contenu sur la page ainsi que son temps de chargement.
 * Réduisez tous les JS et CSS sur le site. Pour plus d’informations sur la procédure à suivre, voir cet [article de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
