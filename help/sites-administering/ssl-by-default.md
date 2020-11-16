@@ -12,13 +12,16 @@ discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '772'
+ht-degree: 77%
 
 ---
 
 
 # SSL par défaut{#ssl-by-default}
 
-Afin d’améliorer en permanence la sécurité d’AEM, Adobe a introduit une fonctionnalité appelée SSL par défaut. L’objectif est d’inciter à utiliser le protocole HTTPS pour se connecter aux instances AEM.
+Afin d&#39;améliorer en permanence la sécurité de l&#39;AEM, l&#39;Adobe a introduit une fonctionnalité appelée SSL By Default (SSL par défaut). L’objectif est d’inciter à utiliser le protocole HTTPS pour se connecter aux instances AEM.
 
 ## Activation de SSL par défaut {#enabling-ssl-by-default}
 
@@ -32,7 +35,7 @@ Dans la liste, sélectionnez et ouvrez l’alerte **Configurer HTTPS** :
 >
 >If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-Un utilisateur du service appelé « **ssl-service** » a été créé pour cette fonctionnalité. Une fois l’alerte ouverte, vous serez guidé dans l’assistant de configuration suivant :
+Un utilisateur du service appelé « **ssl-service** » a été créé pour cette fonctionnalité. Une fois que vous avez ouvert l&#39;alerte, vous serez guidé dans l&#39;assistant de configuration suivant :
 
 1. Tout d’abord, configurez les informations d’identification du magasin. These are the credentials for the **ssl-service** system user&#39;s key store that will contain the private key and trust store for the HTTPS listener.
 
@@ -202,20 +205,20 @@ Vous pouvez également automatiser la configuration SSL à l’aide de l’outi
 
 Voici les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
 
-* `-F "keystorePassword=password"` - le mot de passe du fichier de stockage des clés;
+* `-F "keystorePassword=password"` - le mot de passe du fichier de stockage des clés ;
 
 * `-F "keystorePasswordConfirm=password"` - confirmer le mot de passe du fichier de stockage des clés ;
 
-* `-F "truststorePassword=password"` - le mot de passe truststore;
+* `-F "truststorePassword=password"` - le mot de passe Trust Store ;
 
-* `-F "truststorePasswordConfirm=password"` - confirmer le mot de passe truststore;
+* `-F "truststorePasswordConfirm=password"` - confirmer le mot de passe truststore ;
 
-* `-F "privatekeyFile=@localhostprivate.der"` - spécifier la clé privée;
+* `-F "privatekeyFile=@localhostprivate.der"` - spécifier la clé privée ;
 
-* `-F "certificateFile=@localhost.crt"` - préciser le certificat;
+* `-F "certificateFile=@localhost.crt"` - préciser le certificat ;
 
-* `-F "httpsHostname=host.example.com"`- indiquer le nom d&#39;hôte;
-* `-F "httpsPort=8443"` - port sur lequel l’écouteur HTTPS fonctionne.
+* `-F "httpsHostname=host.example.com"`- indiquer le nom d&#39;hôte ;
+* `-F "httpsPort=8443"` - port sur lequel l&#39;écouteur HTTPS fonctionne.
 
 >[!NOTE]
 >
