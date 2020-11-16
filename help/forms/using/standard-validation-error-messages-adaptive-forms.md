@@ -27,8 +27,8 @@ De même, les formulaires adaptatifs peuvent désormais s’intégrer à des ser
 
 Si les valeurs d’entrée ne répondent pas aux critères de validation et que le message d’erreur de validation du serveur n’est pas au format de message standard, les formulaires adaptatifs offrent un mécanisme permettant de transformer les messages d’erreur de validation en format standard afin qu’ils s’affichent au niveau du champ dans le formulaire. Vous pouvez transformer le message d’erreur en format standard en utilisant l’une des deux méthodes suivantes :
 
-* Ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi du formulaire adaptatif
-* Ajouter un gestionnaire personnalisé à l’action Appeler le service à l’aide de l’éditeur de règles
+* Ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi d’un formulaire adaptatif
+* Ajouter un gestionnaire personnalisé à l’action Invoke Service à l’aide de l’éditeur de règles
 
 Cet article décrit le format standard des messages d’erreur de validation et les instructions de transformation des messages d’erreur d’un format personnalisé en format standard.
 
@@ -78,7 +78,7 @@ Avant d’ajouter un gestionnaire personnalisé, vous devez configurer le formul
 
 1. Appuyez sur ![Save](assets/save_icon.png) (Enregistrer) pour enregistrer les propriétés.
 
-### Ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi du formulaire adaptatif {#add-custom-error-handler-af-submission}
+### Ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi d’un formulaire adaptatif {#add-custom-error-handler-af-submission}
 
 AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de réussite ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
 
