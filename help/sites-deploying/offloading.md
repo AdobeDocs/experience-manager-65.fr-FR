@@ -75,7 +75,7 @@ Pour chaque grappe, une liste de membres indique l’ordre dans lequel chaque me
 
 Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées à la topologie :
 
-* liste autorisée de rubriques pour le client de travaux de l’instance.
+* Liste autorisée de rubriques pour le client de travaux de l’instance.
 * Les points de terminaison exposés pour la connexion à la topologie.
 * Les rubriques de tâche pour lesquelles l’instance est enregistrée pour le déchargement.
 * Les rubriques de tâches que l’instance traite.
@@ -148,7 +148,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>liste autorisée du connecteur de topologie</td>
+   <td>Liste autorisée du connecteur de topologie</td>
    <td>topologyConnectorWhitelist</td>
    <td>Liste d’adresses IP ou de noms d’hôtes autorisés par le service Topology Connector dans la topologie. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
@@ -200,6 +200,7 @@ Les tâches sont réparties entre les instances pour lesquelles la rubrique asso
    * Activé : cette instance consomme les tâches de cette rubrique. 
    * Désactivé : cette instance ne consomme pas les tâches de cette rubrique.
    * Exclusif : cette instance consomme uniquement les tâches de cette rubrique.
+
    **Remarque :** Lorsque vous sélectionnez Exclusif pour une rubrique, toutes les autres rubriques sont automatiquement réglées sur Désactivé.
 
 ### Consommateurs de tâches installés {#installed-job-consumers}
@@ -227,8 +228,8 @@ Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propr
 
 | Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| liste autorisée de rubrique | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
-| liste bloquée de rubrique | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
+| Liste autorisée de rubrique | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste bloquée de rubrique | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création des agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
 
