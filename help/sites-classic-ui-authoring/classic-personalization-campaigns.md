@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 94%
 
 ---
 
@@ -34,11 +37,14 @@ Ce document décrit les différents éléments qui composent les campagnes. Vous
 La gestion de campagnes comprend plusieurs éléments :
 
 * **Marques**
-In AEM, brands are the top level unit and form a collection of **Campaigns**.
+En AEM, les marques sont l’unité de niveau supérieur et forment une collection de 
+**Campagnes**.
 
-* **Campagnes** Une campagne est un ensemble d’**expériences** individuelles.
+* **Campagnes** Une campagne est un ensemble de campagnes individuelles. 
+**Expériences**.
 
-* **Expériences** Le contenu ciblé constitue les différentes expériences présentées au visiteur au niveau de **points de contact**. Plusieurs types d’expérience sont disponibles :
+* **Expériences** Le contenu ciblé forme les différentes expériences, présentées au visiteur à la section 
+**Points de contact**. Plusieurs types d’expérience sont disponibles :
 
    * **Teasers**
       [Les paragraphes / pages de teaser](#teasers) sont utilisés pour diriger des **Segments** de visiteurs spécifiques vers le contenu qui est centré sur leurs intérêts.
@@ -47,13 +53,14 @@ In AEM, brands are the top level unit and form a collection of **Campaigns**.
 
       * proposer au visiteur un éventail d’options,
       * n’afficher qu’un seul paragraphe de teaser basé sur le segment de visiteurs spécifique ; le paragraphe de teaser peut, par exemple, dépendre de l’âge du visiteur.
+
       Typiquement, une page de teaser est une action temporaire qui dure pour une période spécifique, jusqu’à son remplacement par la page de teaser suivante.
 
    * **Newsletters**
 
       [Les communications par courrier électronique](#emailmarketing) sont utilisées pour inciter les utilisateurs à visiter votre site Web. Elles se présentent généralement sous la forme d’une newsletter, envoyée à vos **Pistes** (lesquelles sont habituellement regroupées dans des **Listes**). **Remarque :** Adobe ne prévoit pas d’améliorer davantage cette fonctionnalité.  Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md). 
 
-   * **Adobe Target**
+   * **Adobe Target**
 
       Cette expérience permet une intégration à Adobe Target (connu auparavant sous le nom de Test&amp;Target). Elle met à la disposition des spécialistes du marketing un outil d’optimisation de site web de conversion disposant des fonctionnalités nécessaires pour adapter continuellement leur contenu et leurs offres en ligne à leurs clients, pour des taux de conversion supérieurs. Adobe Target s’accompagne d’une interface intuitive permettant de concevoir et d’exécuter des tests, de créer des segments d’audience et de cibler du contenu, le tout à partir d’une seule et même application.
 
