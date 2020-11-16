@@ -1,5 +1,5 @@
 ---
-title: Participation aux processus
+title: Participation aux workflows
 seo-title: Participation aux workflows
 description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource.
 seo-description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource.
@@ -12,11 +12,14 @@ discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 98%
 
 ---
 
 
-# Participation aux workflows{#participating-in-workflows}
+# Participation aux workflows  {#participating-in-workflows}
 
 Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe. L’utilisateur reçoit la notification et peut alors réaliser l’action appropriée :
 
@@ -27,9 +30,9 @@ Les workflows incluent généralement les étapes qu’une personne doit suivre 
 * [Ouverture d’un élément de workflow pour afficher les détails (et réaliser des actions)](#opening-a-workflow-item-to-view-details-and-take-actions)
 * [Affichage de la charge utile de workflow (plusieurs ressources)](#viewing-the-workflow-payload-multiple-resources)
 
-## Notifications d’actions de workflow disponibles {#notifications-of-available-workflow-actions}
+## Notifications d’actions de workflow disponibles   {#notifications-of-available-workflow-actions}
 
-Lorsqu’un élément de travail vous est attribué (par exemple, **Approuver le contenu**), différentes alertes et/ou notifications s’affichent :
+Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
 * Votre indicateur de [notification](/help/sites-authoring/inbox.md) (barre d’outils) sera incrémenté :
 
@@ -46,7 +49,8 @@ Lorsqu’un élément de travail vous est attribué (par exemple, **Approuver le
    * Le nombre de workflows auxquels la page est soumise. Vous pouvez :
 
       * utiliser les flèches gauche/droite pour parcourir les informations d’état des différents workflows.
-      * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le worfklow que vous souhaitez afficher dans la barre d’état.
+      * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
+
    ![wf-59](assets/wf-59.png)
 
    >[!NOTE]
@@ -58,7 +62,7 @@ Lorsqu’un élément de travail vous est attribué (par exemple, **Approuver le
 
 * Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez/appuyez sur la bannière d’avertissement, les actions disponibles sont également affichées :
 
-   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+   ![capture d&#39;écran_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
@@ -69,51 +73,51 @@ Pour cette action, vous pouvez indiquer :
 * **Étape suivante** : la prochaine étape à suivre ; vous pouvez la sélectionner dans la liste fournie.
 * **Commentaire** : si nécessaire
 
-Vous pouvez terminer une étape de participant à partir de :
+Vous pouvez terminer une étape de participant à partir des éléments suivants :
 
 * [la boîte de réception](#completing-a-participant-step-inbox)
 * [l’éditeur de page](#completing-a-participant-step-page-editor)
-* [la chronologie](#completing-a-participant-step-timeline)
+* [Chronologie](#completing-a-participant-step-timeline)
 * l’[ouverture d’un élément de workflow pour en afficher les détails](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Réalisation d’une étape de participant - Boîte de réception {#completing-a-participant-step-inbox}
 
-Utilisez la procédure suivante pour terminer l’élément de tâche :
+Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel que vous souhaitez agir (appuyez/cliquez sur la miniature).
-1. Select **Complete** from the toolbar.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez **Terminer** dans la barre d’outils.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire** s’il y a lieu.
+1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant - Éditeur de page {#completing-a-participant-step-page-editor}
 
-Utilisez la procédure suivante pour terminer l’élément de tâche :
+Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez la [page à modifier](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **Complete** from the status bar at the top.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Select the **Next Step** from the drop down selector and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Sélectionnez **Terminer** dans la barre d’état en haut.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire** s’il y a lieu.
+1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant - Chronologie {#completing-a-participant-step-timeline}
 
 Vous pouvez également utiliser la chronologie pour terminer et avancer d’une étape :
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page):
+1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page) :
 
-   ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
+   ![capture d&#39;écran_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
 1. Cliquez/appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez l’option **Avancer** :
 
-   ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
+   ![capture d&#39;écran_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
 1. Selon le workflow, vous pouvez choisir l’étape suivante :
 
-   ![screen-shot_2019-03-05at120905](assets/screen-shot_2019-03-05at120905.png)
+   ![capture d&#39;écran_2019-03-05at120905](assets/screen-shot_2019-03-05at120905.png)
 
 1. Sélectionnez l’option **Avancer** pour confirmer l’action.
 
-### Délégation d’une étape de participant {#delegating-a-participant-step}
+### Délégation d’une étape de participant   {#delegating-a-participant-step}
 
 Si une étape vous a été affectée, mais que pour une raison quelconque, vous ne pouvez pas vous en charger, vous pouvez la déléguer à un autre utilisateur ou groupe.
 
@@ -132,42 +136,42 @@ Vous pouvez déléguer une étape de participant à partir de :
 
 * [la boîte de réception](#delegating-a-participant-step-inbox)
 * [l’éditeur de page](#delegating-a-participant-step-page-editor)
-* [la chronologie](#delegating-a-participant-step-timeline)
+* [Chronologie](#delegating-a-participant-step-timeline)
 * l’[ouverture d’un élément de workflow pour en afficher les détails](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Délégation d’une étape de participant - Boîte de réception {#delegating-a-participant-step-inbox}
 
-Utilisez la procédure suivante pour déléguer un élément de tâche :
+Utilisez la procédure suivante pour déléguer un élément de travail :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel que vous souhaitez agir (appuyez/cliquez sur la miniature).
-1. Select **Delegate** from the toolbar.
-1. Une boîte de dialogue s’ouvre. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez **Déléguer** dans la barre d’outils.
+1. Une boîte de dialogue s’ouvre. Définissez l’**utilisateur** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire** si nécessaire.
+1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant - Éditeur de page {#delegating-a-participant-step-page-editor}
 
-Utilisez la procédure suivante pour déléguer un élément de tâche :
+Utilisez la procédure suivante pour déléguer un élément de travail :
 
 1. Ouvrez la [page à modifier](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **Delegate** from the status bar at the top.
-1. Une boîte de dialogue s’ouvre. Specify the **User** from the drop down selector (this can also be a group) and add a **Comment** if required.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Sélectionnez **Déléguer** dans la barre d’état en haut.
+1. Une boîte de dialogue s’ouvre. Définissez l’**utilisateur** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire** si nécessaire.
+1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant - Chronologie {#delegating-a-participant-step-timeline}
 
 Vous pouvez également utiliser la chronologie pour déléguer et/ou attribuer une étape :
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page).
 1. Cliquez/appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Changer le cessionnaire** :
 
-   ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
+   ![capture d&#39;écran_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
 1. Spécifiez un nouveau cessionnaire :
 
-   ![screen-shot_2019-03-05at121025](assets/screen-shot_2019-03-05at121025.png)
+   ![capture d&#39;écran_2019-03-05at121025](assets/screen-shot_2019-03-05at121025.png)
 
-1. Select **Assign** to confirm the action.
+1. Sélectionnez **Attribuer** pour confirmer l’action.
 
 ### Revenir d’une étape de participant en arrière {#performing-step-back-on-a-participant-step}
 
@@ -182,7 +186,7 @@ Vous pouvez revenir d’une étape de participant en arrière à partir de :
 
 * [la boîte de réception](#performing-step-back-on-a-participant-step-inbox)
 * [l’éditeur de page](#performing-step-back-on-a-participant-step-page-editor)
-* [la chronologie](#performing-step-back-on-a-participant-step-timeline)
+* [Chronologie](#performing-step-back-on-a-participant-step-timeline)
 * l’[ouverture d’un élément de workflow pour en afficher les détails](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Revenir d’une étape de participant en arrière - Boîte de réception {#performing-step-back-on-a-participant-step-inbox}
@@ -190,26 +194,26 @@ Vous pouvez revenir d’une étape de participant en arrière à partir de :
 Utilisez la procédure suivante pour revenir en arrière :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel que vous souhaitez agir (appuyez/cliquez sur la miniature).
-1. Select **Step Back** to open the dialog.
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez **Revenir en arrière** pour ouvrir la boîte de dialogue.
 
 1. Définissez l’**étape précédente** et ajoutez un **commentaire** si nécessaire.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Revenir d’une étape de participant en arrière - Éditeur de page {#performing-step-back-on-a-participant-step-page-editor}
 
 Utilisez la procédure suivante pour revenir en arrière :
 
 1. Ouvrez la [page à modifier](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **Step Back** from the status bar at the top.
+1. Sélectionnez **Revenir en arrière** dans la barre d’état en haut.
 1. Définissez l’**étape précédente** et ajoutez un **commentaire** si nécessaire.
-1. Use **OK** to complete the step (or the **Cancel** to abort the action).
+1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Revenir d’une étape de participant en arrière - Chronologie {#performing-step-back-on-a-participant-step-timeline}
 
 Vous pouvez également utiliser la chronologie pour revenir à une étape précédente et la restaurer :
 
-1. Select the required page and open **Timeline** (or open **Timeline** and select the page).
+1. Sélectionnez la page requise et ouvrez la **chronologie** (ou ouvrez la **chronologie** et sélectionnez la page).
 1. Cliquez/appuyez sur la bannière d’alerte pour afficher les actions disponibles. Sélectionnez **Restaurer** :
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
@@ -218,7 +222,7 @@ Vous pouvez également utiliser la chronologie pour revenir à une étape préc�
 
    ![screen-shot_2019-03-05at121158](assets/screen-shot_2019-03-05at121158.png)
 
-1. Select **Roll back** to confirm the action.
+1. Sélectionnez **Restaurer** pour confirmer l’action.
 
 ### Ouverture d’un élément de workflow pour afficher les détails (et réaliser des actions) {#opening-a-workflow-item-to-view-details-and-take-actions}
 
@@ -226,11 +230,11 @@ Affichez les détails de l’élément de travail du workflow et réalisez les a
 
 Les détails de workflow s’affichent dans des onglets, et les actions appropriées sont disponibles dans la barre d’outils :
 
-* **WORKITEM** , onglet :
+* Onglet **ÉLÉMENT DE TRAVAIL** :
 
    ![wf-72](assets/wf-72.png)
 
-* **INFO** DE PROCESSUS :
+* Onglet **INFORMATIONS DU WORFKLOW** :
 
    ![wf-73](assets/wf-73.png)
 
@@ -238,7 +242,7 @@ Les détails de workflow s’affichent dans des onglets, et les actions appropri
 
    ![wf-107](assets/wf-107.png)
 
-* **COMMENTAIRES** , onglet :
+* Onglet **COMMENTAIRES** :
 
    ![wf-75](assets/wf-75.png)
 
@@ -252,21 +256,21 @@ Vous pouvez ouvrir les détails de l’élément de travail à partir de :
 Pour ouvrir un élément de workflow et en afficher les détails :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel que vous souhaitez agir (appuyez/cliquez sur la miniature).
-1. Select **Open** to open the information tabs.
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez **Ouvrir** pour ouvrir les onglets d’informations.
 
 1. Si nécessaire, choisissez l’action appropriée, saisissez les informations et confirmez avec **OK** (ou **Annuler**).
-1. Use **Save** or **Cancel** to exit.
+1. Utilisez **Enregistrer** ou **Annuler** pour quitter.
 
 #### Ouverture des détails de workflow - Éditeur de page {#opening-workflow-details-page-editor}
 
 Pour ouvrir un élément de workflow et en afficher les détails :
 
 1. Ouvrez la [page à modifier](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Select **View Details** from the status bar to open the information tabs.
+1. Sélectionnez **Afficher les détails** dans la barre d’état pour ouvrir les onglets d’informations.
 
 1. Si nécessaire, choisissez l’action appropriée, saisissez les informations et confirmez avec **OK** (ou **Annuler**).
-1. Use **Save** or **Cancel** to exit.
+1. Utilisez **Enregistrer** ou **Annuler** pour quitter.
 
 ### Affichage de la charge utile de workflow (plusieurs ressources) {#viewing-the-workflow-payload-multiple-resources}
 
@@ -275,8 +279,8 @@ Vous pouvez afficher les détails de la charge utile associée à l’instance d
 Pour afficher la charge utile et les ressources de l’instance de workflow :
 
 1. Ouvrez la **[boîte de réception AEM](/help/sites-authoring/inbox.md)**.
-1. Sélectionnez l’élément de workflow sur lequel que vous souhaitez agir (appuyez/cliquez sur la miniature).
-1. Select **View Payload** from the toolbar to open the dialog.
+1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
+1. Sélectionnez **Afficher la charge utile** dans la barre d’outils pour ouvrir la boîte de dialogue.
 
    Un module de workflow étant simplement un ensemble de pointeurs vers les chemins d’accès au sein du référentiel, vous pouvez y ajouter, supprimer ou modifier les entrées pour définir ce qu’il référence. Utilisez le composant **Définition de la ressource** pour ajouter de nouvelles entrées.
 
