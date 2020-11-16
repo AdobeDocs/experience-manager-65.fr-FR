@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1788'
+ht-degree: 77%
 
 ---
 
@@ -27,7 +30,7 @@ Toutefois, aucune de ces méthodes n’a été conçue selon le [principe de moi
 
 ### Priority 0: Is the feature active/needed/derelict? {#priority-is-the-feature-active-needed-derelict}
 
-Il peut y avoir des cas où la session administrateur n’est pas utilisée, ou la fonction est complètement désactivée. Si tel est le cas avec votre mise en œuvre, assurez-vous de supprimer la fonction entièrement ou accompagnez-la d’une [instruction nulle](https://en.wikipedia.org/wiki/NOP).
+Il peut y avoir des cas où la session administrateur n’est pas utilisée, ou la fonction est complètement désactivée. Si tel est le cas avec votre mise en œuvre, assurez-vous de supprimer la fonction entièrement ou accompagnez-la d’une [instruction nulle](https://fr.wikipedia.org/wiki/Instruction_nulle).
 
 ### Priorité 1 : utilisez la session de requête {#priority-use-the-request-session}
 
@@ -67,7 +70,7 @@ En outre, assurez-vous que toutes les nouvelles fonctions que vous développez s
 
 ## Contrôle d’accès strict {#strict-access-control}
 
-Que vous utilisiez le contrôle d’accès lors de la restructuration du contenu ou lorsque vous le faisiez pour un nouvel utilisateur de service, vous devez appliquer les listes de contrôle d’accès les plus strictes possible. Utilisez tous les moyens de contrôle d’accès possibles :
+Que vous appliquiez un contrôle d&#39;accès lors de la restructuration du contenu ou lorsque vous le faisiez pour un nouvel utilisateur de service, vous devez appliquer les ACL les plus strictes possible. Utilisez tous les moyens de contrôle d’accès possibles :
 
 * For example, instead of applying `jcr:read` on `/apps`, only apply it to `/apps/*/components/*/analytics`
 
@@ -149,10 +152,10 @@ En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous
 Pour ajouter une mise en correspondance de votre service avec les utilisateurs système correspondants, vous devez créer une configuration de fabrique pour le service ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)`. Pour conserver la modularité, de telles fonctionnalités peuvent être fournies·par le [mécanisme d’amendement de Sling](https://issues.apache.org/jira/browse/SLING-3578). La méthode recommandée pour installer ces configurations avec votre lot consiste à utiliser le [chargement du contenu initial de Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html) :
 
 1. Créez un sous-dossier SLING-INF/content sous le dossier src/main/resources de votre lot
-1. Dans ce dossier, créez un fichier nommé org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modify-&lt;nom unique de votre configuration d’usine>.xml avec le contenu de votre configuration d’usine (y compris tous les mappages d’utilisateurs de sous-services). Exemple:
+1. Dans ce dossier, créez un fichier nommé org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.changed-&lt;un nom unique pour votre configuration d’usine>.xml avec le contenu de votre configuration d’usine (y compris tous les mappages d’utilisateurs de sous-services). Exemple :
 
 1. Create a `SLING-INF/content` folder below the `src/main/resources` folder of your bundle;
-1. Dans ce dossier, créez un fichier `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` avec le contenu de votre configuration d’usine, y compris tous les mappages utilisateur de sous-service.
+1. Dans ce dossier, créez un fichier `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` avec le contenu de votre configuration d’usine, y compris tous les mappages d’utilisateurs de sous-services.
 
    À des fins d’illustration, prenez le fichier nommé `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml` :
 
@@ -173,7 +176,7 @@ Pour ajouter une mise en correspondance de votre service avec les utilisateurs s
    </node>
    ```
 
-1. Reference the Sling initial content in the configuration of the `maven-bundle-plugin` in the `pom.xml` of your bundle. Exemple:
+1. Reference the Sling initial content in the configuration of the `maven-bundle-plugin` in the `pom.xml` of your bundle. Exemple :
 
    ```xml
    <Sling-Initial-Content>
@@ -189,7 +192,7 @@ Pour ajouter une mise en correspondance de votre service avec les utilisateurs s
 
 ## Traitement des sessions partagées dans les services {#dealing-with-shared-sessions-in-services}
 
-Calls to `loginAdministrative()` often appear together with shared sessions. Ces sessions sont acquises lors de l’activation du service et ne sont déconnectées qu’après l’arrêt du service. Bien qu&#39;il s&#39;agisse d&#39;une pratique courante, elle soulève deux problèmes :
+Calls to `loginAdministrative()` often appear together with shared sessions. Ces sessions sont acquises lors de l’activation du service et ne sont déconnectées qu’après l’arrêt du service. Bien que cette pratique soit courante, elle soulève deux problèmes :
 
 * **Sécurité** : ces sessions d’administrateur sont utilisées pour mettre en cache et renvoyer les ressources ou d’autres objets qui sont liés à la session partagée. Plus loin dans la pile d’appels, ces objets peuvent être adaptés aux sessions ou aux résolveurs de ressources avec des autorisations élevées, or il n’est souvent pas évident pour l’appelant que la session utilisée est une session d’administrateur.
 * **Performances** : dans Oak, les sessions partagées peuvent entraîner des problèmes de performances, et il n’est pas recommandé de les utiliser à l’heure actuelle.
@@ -217,19 +220,19 @@ Lors du traitement d’événements, de tâches, et dans certains cas, de workfl
 
    **Avantages :** facilité d’utilisation.
 
-   **** Inconvénients : Utilisations `loginAdministrative()`. Il réauthentifie une requête qui a déjà été authentifiée.
+   **Inconvénients :** Toujours utilisé `loginAdministrative()`. Il réauthentifie une requête qui a déjà été authentifiée.
 
 1. Créez ou réutilisez un utilisateur de service ayant accès aux données.
 
    **Avantages :** cohérent par rapport à la conception actuelle. Nécessite un minimum de modifications.
 
-   **** Inconvénients : Les utilisateurs de services très puissants doivent être flexibles, ce qui peut facilement conduire à des réaffectations de privilèges. Évite le modèle de sécurité.
+   **Inconvénients :** Il faut des utilisateurs de services très puissants pour être flexibles, ce qui peut facilement conduire à des réaffectations de privilèges. Évite le modèle de sécurité.
 
 1. Pass a serialization of the `Subject` in the event payload, and create a `ResourceResolver` based on that subject. Un exemple serait d’utiliser le JAAS `doAsPrivileged` dans le `ResourceResolverFactory`.
 
    **Avantages :** mise en œuvre propre du point de vue de la sécurité. Cela évite la réauthentification et utilise les privilèges d’origine. Le code relevant de la sécurité est transparent pour le consommateur de l’événement.
 
-   **** Inconvénients : Il faut refaçonner. Le fait que le code relevant de la sécurité soit transparent pour le consommateur de l’événement peut également entraîner des problèmes.
+   **Inconvénients :** Il faut refaçonner. Le fait que le code relevant de la sécurité soit transparent pour le consommateur de l’événement peut également entraîner des problèmes.
 
 La troisième approche est actuellement la technique de traitement préférée.
 
