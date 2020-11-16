@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '818'
+ht-degree: 70%
 
 ---
 
@@ -37,7 +40,7 @@ Check that you have configured the **aemserver** operator in Adobe Campaign.
 
 ## Si les images n’apparaissent pas dans la console Adobe Campaign.{#if-images-do-not-appear-in-the-adobe-campaign-console}
 
-Vérifiez la source HTML et confirmez que vous pouvez ouvrir l’URL à partir de l’ordinateur client. Si l’URL contient localhost:4503, modifiez la configuration de Day CQ Link Externalizer sur votre instance d’auteur afin qu’il pointe vers une instance de publication accessible à partir de la console Adobe Campaign.
+Vérifiez la source HTML et confirmez que vous pouvez ouvrir l’URL à partir de l’ordinateur client. Si l’URL contient localhost:4503, modifiez la configuration de Day CQ Link Externalizer sur votre instance d’auteur afin qu’elle pointe vers une instance de publication accessible à partir de la console Adobe Campaign.
 
 See [Configuring the Externalizer.](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
 
@@ -77,7 +80,7 @@ Utilisez la solution de contournement suivante :
 1. Modifier la ligne 467 de la méthode &quot;amcGetSeedMetaData&quot;
 1. Change `label : [inclView.@label](mailto:inclView.@label)` to `label : String([inclView.@label](mailto:inclView.@label))`
 
-1. Enregistrez.
+1. Enregistrer.
 1. Redémarrez le serveur.
 
 ## Si Adobe Campaign affiche une erreur lorsque vous cliquez sur le bouton Synchroniser. {#if-adobe-campaign-displays-an-error-when-clicking-the-synchronize-button}
@@ -133,4 +136,4 @@ When creating a mail template for Adobe Campaign, you must include the property 
 
 ## Si vous obtenez l’erreur « com.day.cq.mcm.campaign.servlets.util.ParameterMapper » dans les journaux.{#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 
-Lorsque vous utilisez votre modèle personnalisé, vous obtenez l’erreur &quot;com.day.cq.mcm.campaign.servlets.util.ParameterMapper&quot; dans vos journaux. Dans ce cas, veillez à installer le Feature Pack 6576 à partir de [Package Share](/help/sites-administering/package-manager.md#package-share). Il s’agit d’un problème en raison duquel, si la propriété acMapping est définie sur une valeur autre que Recipient.firstName, une valeur vide est créée du côté Gestionnaire de campagnes Adobe.
+Lors de l’utilisation de votre modèle personnalisé, vous obtenez l’erreur &quot;com.day.cq.mcm.campaign.servlets.util.ParameterMapper&quot; dans vos journaux. Dans ce cas, veillez à installer le Feature Pack 6576 à partir de [Package Share](/help/sites-administering/package-manager.md#package-share). Il s’agit d’un problème en raison duquel si la propriété acMapping est définie sur une valeur autre que destinataire.firstName, une valeur vide est créée du côté Gestionnaire de Adobe Campaign.
