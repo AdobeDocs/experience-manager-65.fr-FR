@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 47%
 
 ---
 
@@ -29,11 +32,11 @@ This script is made to ease the analysis of the `access.log` files producing a r
 
 Il produit le nombre global de requêtes, GET vs POST, la répartition des requêtes au fil du temps, etc.
 
-La sortie est en syntaxe Markdown. Il sera donc plus facile de la convertir au format PDF avec des outils tels que pandoc ou de l’afficher dans un navigateur avec des plug-ins tels que la visionneuse Markdown.
+La sortie est effectuée en syntaxe Markdown. Il sera donc plus facile de la convertir en PDF avec des outils tels que pandoc ou de l’afficher dans un navigateur avec des plug-ins tels que Markdown viewer.
 
 Il peut analyser un chemin personnalisé fourni sur la ligne de commande.
 
-Prise du commentaire dans le fichier qui indique comment l’exécuter :
+Prise du commentaire dans le fichier qui vous indique comment l’exécuter :
 
 Analyse CQ `access.log` extrapolating various informations and producing a Markdown output on `stdout`.
 
