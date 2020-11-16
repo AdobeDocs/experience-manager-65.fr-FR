@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 87%
 
 ---
 
@@ -49,7 +52,7 @@ Lors de l’exécution de l’instance à partir de la ligne de commande, vous a
 
 ## À l’aide de l’indicateur -nointeractive {#using-the-nointeractive-flag}
 
-Vous pouvez également choisir de spécifier le mot de passe dans un fichier de propriétés. Pour ce faire, utilisez l’ `-nointeractive` indicateur associé à la propriété système`-Dadmin.password.file` .
+Vous pouvez également choisir de spécifier le mot de passe dans un fichier de propriétés. Pour ce faire, utilisez l’indicateur `-nointeractive` associé à la propriété`-Dadmin.password.file` système.
 
 Voici un exemple :
 
