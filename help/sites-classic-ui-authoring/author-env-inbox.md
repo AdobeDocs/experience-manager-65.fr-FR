@@ -1,6 +1,6 @@
 ---
-title: Votre boîte de réception
-seo-title: Votre boîte de réception
+title: 'Votre boîte de réception  '
+seo-title: 'Votre boîte de réception  '
 description: Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
 seo-description: Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
@@ -12,11 +12,14 @@ discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 95%
 
 ---
 
 
-# Votre boîte de réception{#your-inbox}
+# Votre boîte de réception  {#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
 
@@ -44,6 +47,7 @@ Pour afficher vos notifications, procédez comme suit :
 
    * [S’abonner aux notifications](#subscribing-to-notifications)
    * [Traitement des notifications](#processing-your-notifications)
+
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
 ## S’abonner aux notifications {#subscribing-to-notifications}
@@ -69,6 +73,7 @@ Pour souscrire à des notifications :
 
    * **Boîte de réception** : les notifications seront affichées dans votre boîte de réception AEM.
    * **Courrier électronique** : les notifications seront envoyées à l’adresse électronique définie dans votre profil utilisateur.
+
    >[!NOTE]
    >
    >L’envoi de notifications par courrier électronique nécessite la configuration de certains paramètres. Il est également possible de personnaliser le modèle de courrier électronique ou d’ajouter un tel modèle pour une nouvelle langue. Pour configurer des notifications par courrier électronique dans AEM, reportez-vous à la section [Configuration des notifications électroniques](/help/sites-administering/notification.md#configuringemailnotification).
@@ -94,6 +99,7 @@ Lorsqu’une page est supprimée ou déplacée, une action de suppression est au
 Si vous souhaitez n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.
 
    * Pour autoriser la règle, définissez **Règle** sur **Autoriser**. Si cette option est définie sur **Refuser**, la règle est refusée, mais elle n’est pas supprimée. Elle pourra être autorisée ultérieurement.
+
    Pour supprimer une définition, sélectionnez la ligne en cliquant sur une cellule du tableau, puis cliquez sur **Supprimer**.
 
 1. Cliquez sur **OK** pour enregistrer la configuration.
