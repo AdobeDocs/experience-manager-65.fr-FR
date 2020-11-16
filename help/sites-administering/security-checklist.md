@@ -51,7 +51,7 @@ Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis 
 
 ### Modification des mots de passe par défaut pour les comptes administrateur d’AEM et de la console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe strongly recommends that after installation you change the password for the privileged [**AEM **`admin`accounts](#changing-the-aem-admin-password)(on all instances).
+Adobe strongly recommends that after installation you change the password for the privileged [**AEM** `admin` accounts](#changing-the-aem-admin-password) (on all instances).
 
 Ces comptes sont les suivants :
 
@@ -238,7 +238,7 @@ Pour chacun des services ci-dessous, les paramètres spécifiés doivent être m
 
 * [Gestionnaire de scripts Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
-   * Désactivez l’option **Générer les informations de débogage**
+   * Désactivez **Generate Debug Info (Générer les informations de débogage)**
    * Désactivez **Mapped Content (Contenu mappé)**
 
 Pour plus d’informations, voir [Paramètres de configuration d’OSGi](/help/sites-deploying/osgi-configuration-settings.md).
@@ -302,7 +302,7 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 
       **Résultats** max JSON ( `json.maximumresults`)
 
-      dans la configuration pour le [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
+      dans la configuration pour le servlet [de GET](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet)Apache Sling. Lorsque cette limite est dépassée, le rendu est réduit. La valeur par défaut pour Sling dans AEM est `200`.
 
    * À titre de mesure préventive, désactivez les autres outils de rendu par défaut (HTML, texte brut, XML). Là encore, en configurant le [servlet Sling GET d’Apache](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
@@ -328,7 +328,7 @@ Pour atténuer ce problème, veuillez procéder comme suit :
 1. Recherchez **Day CQ WCM Form Chooser Servlet**
 1. Après avoir cliqué sur l’entrée, désactivez la **Recherche avancée requise** dans la fenêtre suivante.
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
 **Atténuer les attaques par déni de service (DoS) provoquées par l’utilisation du servlet de téléchargement de ressources**
 
