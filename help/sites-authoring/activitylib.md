@@ -1,6 +1,6 @@
 ---
-title: 'Gestion des activités  '
-seo-title: 'Gestion des activités  '
+title: Gestion des activités
+seo-title: Gestion des activités
 description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
 seo-description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
 uuid: 0aebf88e-f298-410a-8c82-4076b671624f
@@ -19,7 +19,7 @@ ht-degree: 96%
 ---
 
 
-# Gestion des activités  {#managing-activities}
+# Gestion des activités {#managing-activities}
 
 La console Activités vous permet de créer, d’organiser et de gérer les [activités](/help/sites-authoring/personalization.md#activities) marketing de vos marques :
 
@@ -72,7 +72,7 @@ Quand vous créez une marque avec la console Activités, elle apparaît égaleme
 1. Saisissez le titre de la marque tel qu’il doit apparaître dans les consoles Activités et Offres. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**. Votre marque apparaît dans la console Activités.
 
-## Ajout/modification d’une activité à l’aide de la console Activités    {#adding-editing-an-activity-using-the-activities-console}
+## Ajout/modification d’une activité à l’aide de la console Activités  {#adding-editing-an-activity-using-the-activities-console}
 
 Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur certaines audiences. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
 
@@ -142,7 +142,7 @@ Pour ajouter une activité :
 Vous devez publier les activités afin de les rendre disponibles. À l’inverse, vous pouvez rendre les activités non disponibles en annulant leur publication.
 
 >[!NOTE]
-Lorsque vous annulez la publication d’une activité, l’état de l’activité ne change que si vous actualisez la page.
+Lorsque vous annulez la publication d’une activité,   l’état de l’activité ne change que si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
@@ -153,14 +153,14 @@ Pour publier des activités ou annuler leur publication :
 
 1. Pour publier, appuyez ou cliquez sur **Publier**. Pour annuler la publication, appuyez ou cliquez sur **Annuler la publication**. Les activités sont publiées ou leur publication est annulée, et leur état change dans la console Activités (une actualisation peut être nécessaire).
 
-## Activités sur les instances de création et de publication    {#activities-on-author-and-publish-instances}
+## Activités sur les instances de création et de publication  {#activities-on-author-and-publish-instances}
 
 Lorsqu’une activité qui utilise le moteur ciblé Adobe Target est activée, une seconde activité est créée sur l’instance de publication :
 
 * L’activité sur l’instance de création suit l’activité sur l’instance de création et s’avère utile pour simuler l’expérience des visiteurs. Les analyses enregistrées pour cette activité ne reflètent que ce qui se produit sur l’instance de création.
 * L’activité sur l’instance de publication reflète l’activité sur le serveur de publication et y réagit. Il s’agit de l’activité qui s’exécute sur le site web public. Seule l’activité de publication est pertinente pour suivre et analyser l’utilisation du site public.
 
-## Affichage des performances et conversion des expériences gagnantes (test A/B)    {#viewing-performance-and-converting-winning-experiences-a-b-test}
+## Affichage des performances et conversion des expériences gagnantes (test A/B)  {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
 Vous pouvez afficher les performances de n’importe quelle activité Adobe Target (XT ou A/B). Si vous utilisez les tests A/B, vous pouvez également convertir l’expérience gagnante, qui devient alors l’expérience par défaut.
 
@@ -185,7 +185,7 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
 1. Cliquez ou appuyez sur **Oui** pour confirmer que vous souhaitez convertir le gagnant, c’est-à-dire désactiver l’expérience actuelle et la remplacer par le contenu de l’expérience gagnante.
 
-## Synchronisation des activités avec Adobe Target    {#synchronizing-activities-with-adobe-target}
+## Synchronisation des activités avec Adobe Target  {#synchronizing-activities-with-adobe-target}
 
 Les activités qui utilisent le moteur de ciblage Adobe Target sont synchronisées avec les campagnes Adobe Target. Une activité est automatiquement synchronisée avec Adobe Target lorsque les conditions suivantes sont réunies :
 
@@ -206,7 +206,7 @@ Les activités _author sont synchronisées immédiatement lorsque l’activité 
 
 Les activités de publication sont synchronisées lorsque l’activité est publiée sur l’instance de publication AEM.
 
-## Résolution des problèmes de synchronisation d’activité    {#troubleshooting-activity-synchronization}
+## Résolution des problèmes de synchronisation d’activité  {#troubleshooting-activity-synchronization}
 
 Lorsque AEM synchronise une activité avec Adobe Target, AEM ajoute une propriété appelée `thirdPartyId`. La valeur de cette propriété est basée sur le chemin de l’activité dans le référentiel AEM. Dans Adobe Target, les campagnes ne peuvent avoir la même valeur pour la propriété `thirdPartyId`. Par conséquent, une activité ne se synchronise pas si une campagne existante (d’un autre type A/B ou XT) dans Adobe Target utilise la même valeur pour `thirdPartyId`.
 
