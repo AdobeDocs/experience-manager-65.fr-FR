@@ -1,8 +1,8 @@
 ---
 title: Ajouter Adobe Analytics à votre application mobile
 seo-title: Ajouter Adobe Analytics à votre application mobile
-description: Suivez cette page pour en savoir plus sur l’utilisation de Mobile App Analytics dans vos applications AEM en vous intégrant à Adobe Mobile Services.
-seo-description: Suivez cette page pour en savoir plus sur l’utilisation de Mobile App Analytics dans vos applications AEM en vous intégrant à Adobe Mobile Services.
+description: Suivez cette page pour en savoir plus sur l’utilisation des analyses des applications mobiles dans vos applications AEM en les intégrant à Adobe Mobile Services.
+seo-description: Suivez cette page pour en savoir plus sur l’utilisation des analyses des applications mobiles dans vos applications AEM en les intégrant à Adobe Mobile Services.
 uuid: d3ff6f9b-0467-4abe-9a59-b3495a6af0f8
 contentOwner: User
 content-type: reference
@@ -24,13 +24,13 @@ ht-degree: 2%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Souhaitez-vous créer des expériences pertinentes et attrayantes pour vos utilisateurs d’applications mobiles ? Si vous n’utilisez pas le SDK Adobe Mobile Services pour surveiller et mesurer le cycle de vie et l’utilisation des applications, sur quoi basez-vous vos décisions ? Où sont vos clients les plus fidèles ? Comment pouvez-vous garantir que vous restez pertinent et que vous optimisez les conversions ?
+Souhaitez-vous créer des expériences pertinentes et attrayantes pour vos utilisateurs d’applications mobiles ? Si vous n’utilisez pas l’Adobe Mobile Services SDK pour surveiller et mesurer le cycle de vie et l’utilisation des applications, sur quoi basez-vous vos décisions ? Où sont vos clients les plus fidèles ? Comment pouvez-vous garantir que vous restez pertinent et que vous optimisez les conversions ?
 
 Vos utilisateurs accèdent-ils à tout le contenu ? Est-ce qu&#39;ils abandonnent l&#39;application, et si oui, où ? À quelle fréquence restent-ils dans l’application et à quelle fréquence reviennent-ils pour l’utiliser ? Quels changements pouvez-vous introduire et ensuite mesurer cette augmentation de la rétention ? Qu’en est-il des taux de plantage ? Votre application se bloque-t-elle pour vos utilisateurs ?
 
-Tirez parti de [Mobile App Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) dans vos applications AEM en les intégrant à [Adobe Mobile Services](https://www.adobe.com/marketing-cloud/mobile-marketing.html).
+Tirez parti des analyses [des applications](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) mobiles dans vos applications AEM en les intégrant à [Adobe Mobile Services](https://www.adobe.com/marketing-cloud/mobile-marketing.html).
 
-Instruments de vos applications AEM pour effectuer le suivi, créer des rapports et comprendre comment vos utilisateurs interagissent avec votre application mobile et votre contenu, ainsi que pour mesurer les mesures clés de cycle de vie, telles que les lancements, le temps passé dans l’application et le taux de plantage.
+Appliquez des outils à vos applications AEM pour suivre, créer des rapports et comprendre comment vos utilisateurs interagissent avec votre application et votre contenu mobiles et pour mesurer les mesures clés de cycle de vie, telles que les lancements, le temps passé dans l’application et le taux de plantage.
 
 Cette section décrit comment les *développeurs* AEM peuvent :
 
@@ -39,7 +39,7 @@ Cette section décrit comment les *développeurs* AEM peuvent :
 
 ## Conditions préalables {#prerequisties}
 
-AEM Mobile requiert un compte Adobe Analytics pour collecter et rapporter les données de suivi dans votre application. Dans le cadre de la configuration, l’ *administrateur* AEM devra d’abord :
+AEM Mobile requiert un compte Adobe Analytics pour collecter et rapporter les données de suivi dans votre application. Dans le cadre de la configuration, l&#39; *Administrateur* AEM devra d&#39;abord :
 
 * Configurez un compte Adobe Analytics et créez une suite de rapports pour votre application dans Mobile Services.
 * Configurez un Cloud Service AMS dans Adobe Experience Manager (AEM).
@@ -48,11 +48,11 @@ AEM Mobile requiert un compte Adobe Analytics pour collecter et rapporter les do
 
 ### Configuration de ContentSync pour extraire le fichier de configuration {#configure-contentsync-to-pull-in-configuration-file}
 
-Une fois le compte Analytics configuré, vous devez créer une configuration de synchronisation de contenu pour intégrer le contenu dans votre application mobile.
+Une fois le compte Analytics configuré, vous devez créer une configuration Content Sync pour extraire le contenu dans votre application mobile.
 
-Pour plus d’informations, voir Configuration du contenu de la synchronisation du contenu. La configuration devra indiquer à Content Sync de placer ADBMobileConfig dans le répertoire /www. Par exemple, dans l’application Geometrixx Outdoors, la configuration Content Sync se trouve à l’emplacement suivant : */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Il existe également une configuration pour le développement ; toutefois, il est identique à la configuration sans développement dans le cas de Geometrixx Outdoors.
+Pour plus d’informations, voir Configuration du contenu de la synchronisation du contenu. La configuration devra indiquer à Content Sync de placer ADBMobileConfig dans le répertoire /www. Par exemple, dans l’application Geometrixx Outdoors, la configuration Content Sync se trouve à l’emplacement suivant : */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Il existe également une configuration pour le développement ; toutefois, elle est identique à la configuration de non-développement dans le cas des Geometrixx Outdoors.
 
-Pour plus d&#39;informations sur la façon de télécharger ADBMobileConfig depuis votre tableau de bord d&#39;applications AEM Mobile, consultez le fichier de configuration Analytics - Mobile Services - Adobe Mobile Services SDK.
+Pour plus d’informations sur la façon de télécharger ADBMobileConfig depuis votre tableau de bord d’applications AEM pour applications mobiles, consultez le fichier de configuration du SDK Analytics - Mobile Services - Adobe Mobile Services.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -112,7 +112,7 @@ Vous pourrez ainsi effectuer le suivi des états et des actions, tels que l’em
 * ADB.trackState()
 * ADB.trackAction()
 
-À titre de référence, vous pouvez jeter un oeil au code de l’application Geometrixx Outdoors. Dans l’application Geometrixx Outdoors, tous les navigations de page sont suivis à l’aide de la méthode ADB.trackState(). Pour plus d’informations, consultez le code source pour /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
+A titre de référence, vous pouvez consulter le code de l’application Geometrixx Outdoors. Dans l’application Geometrixx Outdoors, tous les navigations de page sont suivis à l’aide de la méthode ADB.trackState(). Pour plus d’informations, consultez le code source pour /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 En instrumentant votre code source avec ces appels de méthode, vous pouvez collecter des mesures complètes par rapport à votre application.
 
@@ -122,7 +122,7 @@ En instrumentant votre code source avec ces appels de méthode, vous pouvez coll
 
 | **Libellé** | **Description** | **Valeur par défaut** |
 |---|---|---|
-| Point de terminaison API | URL de base des API HTTP Adobe Mobile Services | https://api.omniture.com |
+| Point de terminaison API | URL de base des API HTTP de Mobile Services Adobe | https://api.omniture.com |
 | Point de terminaison de configuration | URL utilisée pour récupérer la configuration mobile ADB pour l’identifiant de suite de rapports donné | /ams/1.0/app/config/ |
 | Applications Mobile Service | Obtenir une liste d&#39;applications dans la société des utilisateurs | /ams/1.0/apps |
 
