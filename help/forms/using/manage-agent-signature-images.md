@@ -11,6 +11,9 @@ discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 71%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ## Présentation {#overview}
 
-Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature de l’agent dans les lettres. Après avoir configuré l’image de la signature de l’agent lors de la création d’une lettre, vous pouvez rendre l’image de la signature de l’agent dans la lettre comme signature de l’agent expéditeur.
+Dans Correspondence Management, vous pouvez utiliser une image pour rendre la signature de l’agent dans les lettres. Après avoir configuré l’image de signature de l’agent, lors de la création d’une lettre, vous pouvez rendre l’image de signature de l’agent dans la lettre en tant que signature de l’agent expéditeur.
 
 Le DDE agentSignatureImage est un DDE calculé qui représente l’image de la signature de l’agent. L’expression de ce DDE calculé utilise une nouvelle fonction personnalisée qui est exposée par le bloc de création Expression Manager. Cette fonction personnalisée prend agentID et agentFolder comme paramètres d’entrée et récupère le contenu d’image en se basant sur ces paramètres. Le dictionnaire de données système SystemContext donne aux lettres dans Correspondence Management l’accès aux informations dans le contexte système actuel. Le contexte du système contient des informations sur l’utilisateur actuellement connecté, ainsi que sur les paramètres de configuration actifs.
 
 Vous pouvez ajouter des images sous le dossier cmuserroot. Dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md), à l’aide de la propriété Racine de l’utilisateur de CM, vous pouvez changer le dossier d’où l’image de la signature de l’agent est récupérée.
 
-La valeur du DDE agentFolder est extraite du paramètre de configuration CMUserRoot pour les propriétés de configuration de Correspondence Management. Par défaut, ce paramètre de configuration pointe vers/content/cmUserRoot dans le référentiel CRX. Vous pouvez modifier la valeur de la configuration CMUserRoot dans les Propriétés de configuration.
+La valeur du DDE agentFolder est extraite du paramètre de configuration CMUserRoot pour les propriétés de configuration de Correspondence Management. Par défaut, ce paramètre de configuration pointe vers/content/cmUserRoot dans le référentiel CRX. Vous pouvez modifier la valeur de la configuration CMUserRoot dans Propriétés de configuration.
 Vous pouvez également remplacer la fonction personnalisée par défaut de manière à définir votre propre logique pour récupérer l’image de la signature de l’utilisateur.
 
 ## Ajouter l’image de la signature de l’agent {#adding-agent-signature-image}
@@ -61,7 +64,7 @@ Vous pouvez également remplacer la fonction personnalisée par défaut de mani�
 
       Under the `cmUserRoot` folder, a new folder called `JohnDoe` (or the name you have given in the previous step) is created.
 
-   1. Cliquez sur le nouveau dossier que vous avez créé (ici`JohnDoe` ). L’Explorateur de contenu affiche le contenu du dossier en grisé.
+   1. Cliquez sur le nouveau dossier que vous avez créé (ici`JohnDoe` ). L’explorateur de contenu affiche le contenu du dossier en grisé.
 
    1. Double-click the **jcr:content** property, set its type as **nt:resource**, and then click the green check mark to save the entry.
 
