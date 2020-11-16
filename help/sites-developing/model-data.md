@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 89%
 
 ---
 
@@ -39,7 +42,7 @@ J’aimerais combler cette lacune en exprimant mon opinion personnelle sur la fa
 
 ## Sept règles simples {#seven-simple-rules}
 
-### Règle #1 : Données d&#39;abord, structure plus tard. Maybe. {#rule-data-first-structure-later-maybe}
+### Règle 1 : Les données d&#39;abord, la structure plus tard. Maybe. {#rule-data-first-structure-later-maybe}
 
 #### Explication {#explanation-1}
 
@@ -91,7 +94,7 @@ Je vais modéliser un simple système de blogage comme suit. Vous constaterez qu
 /content/myblog/comments/iphone_shipping/i_like_it_too/i_hate_it
 ```
 
-Je pense que l&#39;une des choses qui deviennent évidentes est que nous comprenons tous la structure du contenu basé sur l&#39;exemple sans plus d&#39;explications.
+Je pense que l&#39;une des choses qui deviennent évidentes est que nous comprenons tous la structure du contenu basé sur l&#39;exemple sans aucune explication supplémentaire.
 
 Au début, le fait que je ne stocke pas les « commentaires » avec l’article peut sembler étonnant. Cela est dû au contrôle d’accès que je souhaite appliquer d’une manière hiérarchique raisonnable.
 
@@ -218,7 +221,7 @@ Dès lors, ce n’est pas parce que vous aimeriez être en mesure de référence
 
 #### Exemple {#example-7}
 
-Utilisez :
+Utilisation:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
