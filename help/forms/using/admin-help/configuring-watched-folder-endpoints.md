@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '7174'
+ht-degree: 87%
 
 ---
 
@@ -115,23 +118,23 @@ Le processus d’appel d’un service à l’aide des dossiers de contrôle fonc
 
 Définissez les paramètres suivants pour configurer un point de fin Watched Folder.
 
-**Nom :** (obligatoire) identifie le point de fin. N’incluez pas de caractère « &lt; », car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point de fin, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
+**Nom :** (obligatoire) identifie le point de terminaison. N’incluez pas de caractère « &lt; », car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point de fin, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
 
-**Description :** Description du point de fin. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
+**Description :** Description du point de terminaison. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
 
 **Chemin :** (obligatoire) indique l’emplacement du dossier de contrôle. Dans un environnement organisé en grappe, ce paramètre doit pointer vers un dossier réseau partagé accessible à tous les ordinateurs de la grappe.
 
 **Asynchrone :** Identifie le type d’appel comme étant asynchrone ou synchrone. La valeur par défaut est asynchrone. Le mode asynchrone est recommandé pour les processus de longue durée, tandis que le mode synchrone est préférable pour les processus transitoires ou de courte durée.
 
-**Cron   :** Entrez un cron   si le dossier de contrôle doit être planifié à l’aide d’un cron . Si ce paramètre est configuré, l’intervalle de répétition est ignoré.
+**Expression cron :** Saisissez une expression cron si le dossier de contrôle doit être planifié à l’aide d’une expression cron. Si ce paramètre est configuré, l’intervalle de répétition est ignoré.
 
-**Intervalle de répétition :** Intervalle en secondes pour l’analyse du dossier de contrôle en vue de l’entrée. A moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être défini sur une valeur supérieure à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Taille du lot.
+**Intervalle de répétition :** Intervalle en secondes d’analyse du dossier de contrôle pour l’entrée. A moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être défini sur une valeur supérieure à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur par défaut est 5. Pour plus d’informations, voir la description du paramètre Taille du lot.
 
 **Nombre de répétitions :** Nombre de fois où le dossier de contrôle analyse le dossier ou le répertoire. La valeur -1 indique une analyse indéfinie. La valeur par défaut est -1.
 
-**Ralentir :** Lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle qu’AEM forms traite à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches. Voir A propos du ralentissement .
+**Ralentissement :** Lorsque cette option est sélectionnée, elle limite le nombre de tâches du dossier de contrôle que AEM forms traite à un moment donné. La valeur Taille du lot détermine le nombre maximal de tâches. Voir A propos du ralentissement .
 
-**Nom d’utilisateur :** (obligatoire) nom d’utilisateur utilisé lors de l’appel d’un service de  à partir du dossier de contrôle. La valeur par défaut est SuperAdmin.
+**Nom d’utilisateur :** (obligatoire) nom d’utilisateur utilisé lors de l’appel d’un service de cible à partir du dossier de contrôle. La valeur par défaut est SuperAdmin.
 
 **Nom de domaine :** (obligatoire) domaine de l’utilisateur. La valeur par défaut est DefaultDom.
 
@@ -143,11 +146,11 @@ Si un gros volume de fichiers est déposé, définissez une grande taille de lot
 
 Lorsque des fichiers sont déposés dans le dossier de contrôle, ce dernier les répertorie dans les entrées, ce qui réduit parfois les performances si l’analyse s’effectue toutes les secondes. L’allongement de l’intervalle d’analyse permet d’améliorer les performances. Si le volume des fichiers déposés est réduit, ajustez la taille du lot et l’intervalle de répétition en conséquence. Par exemple, si 10 fichiers sont déposés toutes les secondes, essayez de définir l’intervalle de répétition sur 1 et la taille du lot sur 10. 
 
-**Temps d’attente :** Temps, en millisecondes, à attendre avant d’analyser un dossier ou un fichier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé une minute auparavant, ce dernier est sélectionné après 59 minutes ou plus. La valeur par défaut est 0.
+**Durée d’attente :** Temps d’attente, en millisecondes, avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé une minute auparavant, ce dernier est sélectionné après 59 minutes ou plus. La valeur par défaut est 0.
 
-Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux et que le téléchargement du fichier dure dix minutes, définissez le délai d’attente sur 10&amp;ast;60 &amp;ast;1000 millisecondes. ce qui évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
+Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux et que le téléchargement du fichier prend dix minutes, définissez le délai d’attente sur 10&amp;amp ; ast ; 60 &amp;amp ; ast ; 1000 millisecondes. ce qui évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
 
-**Exclure le modèle de fichier :** un point-virgule **;** délimité de modèles utilisés par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. 
+**Exclure le modèle de fichier :** un point-virgule **;** liste délimitée de modèles utilisés par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. 
 
 Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée.
 
@@ -157,13 +160,13 @@ Vous pouvez utiliser des modèles de fichiers pour exclure les types de fichiers
 * Fichiers portant des noms spécifiques, par exemple data.&amp;ast; would exclude files and folders named *data1*, *data2*, and so on.
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Inclure le modèle de fichier :** (obligatoire) un point-virgule **;** délimité de modèles que le dossier de contrôle utilise pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si le modèle de fichier Inclure est input&amp;ast;, tous les fichiers et dossiers qui correspondent input&amp;ast; sont ramassées. Cela concerne les fichiers et les dossiers nommés input1, input2, etc.
+**Inclure le modèle de fichier :** (obligatoire) un point-virgule **;** liste délimitée de modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si Inclure le modèle de fichier est input&amp;ast;, tous les fichiers et dossiers qui correspondent input&amp;ast; sont ramassées. Cela concerne les fichiers et les dossiers nommés input1, input2, etc.
 
 La valeur par défaut est &amp;ast; et indique tous les fichiers et dossiers.
 
@@ -173,14 +176,14 @@ Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers
 * Fichiers portant des noms spécifiques, par exemple data.&amp;ast; would include files and folders named *data1*, *data2*, and so on.
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
-**Dossier de résultats :** Dossier dans lequel les résultats enregistrés sont stockés. Si les résultats ne se trouvent pas dans ce dossier, vérifiez le dossier failure. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu répondant aux modèles de fichiers suivants :
+**Dossier de résultats :** dossier dans lequel les résultats enregistrés sont stockés. Si les résultats ne se trouvent pas dans ce dossier, vérifiez le dossier failure. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu répondant aux modèles de fichiers suivants :
 
 * %F = préfixe du nom du fichier
 * %E = extension du nom du fichier
@@ -205,7 +208,7 @@ Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé 
 >
 >plus les dossiers de résultats sont petits, plus les performances de Watched Folder augmentent. Par exemple, si la charge estimée pour le dossier de contrôle est de 1 000 fichiers par heure, utilisez un modèle de type `result/%Y%M%D%H`, afin qu’un nouveau sous-dossier soit créé toutes les heures. Si la charge est moindre (par exemple, 1 000 fichiers par jour), vous pouvez utiliser un modèle de type `result/%Y%M%D`.
 
-**Conserver le dossier :** Emplacement où les fichiers sont stockés après une analyse et un ramassage réussis. Ce chemin d’accès de répertoire peut être absolu, relatif ou null. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
+**Conserver le dossier :** Emplacement de stockage des fichiers après une analyse et un prélèvement réussis. Ce chemin d’accès de répertoire peut être absolu, relatif ou null. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
 
 **Dossier d’échec :** Dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result.
 
@@ -215,19 +218,19 @@ La valeur par défaut est failure/%Y/%M/%D/.
 
 **Conserver en cas d’échec :** Conserver les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
 
-**Ecraser les noms de  de fichiers :** Lorsque la valeur est True, les fichiers du dossier des résultats et du dossier preserve sont remplacés. Lorsqu’il est défini sur false, les fichiers et les dossiers pourvus d’un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
+**Remplacer les noms de Duplicata :** Lorsque la valeur est True, les fichiers du dossier des résultats et du dossier preserve sont remplacés. Lorsqu’il est défini sur false, les fichiers et les dossiers pourvus d’un suffixe d’index numérique sont utilisés pour le nom. La valeur par défaut est False.
 
 **Durée de la purge :** (obligatoire) Les fichiers et les dossiers du dossier result sont purgés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. 
 
 La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
 
-**Nom de l’opération :** (obligatoire) d’opérations pouvant être affecté au point de fin Watched Folder.
+**Nom de l&#39;opération :** (obligatoire) liste d’opérations qui peut être affectée au point de terminaison du dossier de contrôle.
 
 **Mappages des paramètres d’entrée :** Permet de configurer l’entrée requise pour traiter le service et l’opération. Les paramètres disponibles dépendent du service utilisant le point de fin Watched Folder. Il existe deux types d’entrées :
 
 **Littéral :** Le dossier de contrôle utilise la valeur saisie dans le champ telle qu’elle est affichée. Tous les types Java de base sont pris en charge. Par exemple, si une interface API utilise une entrée de type chaîne, long, nombre entier ou valeur booléenne, cette entrée est convertie en type approprié, puis le service est appelé.
 
-**Variable :** La valeur saisie est un modèle de fichier utilisé par le dossier de contrôle pour sélectionner l’entrée. Par exemple, dans le cas du service de mot de passe chiffré, où le d’entrée doit être un fichier PDF, l’utilisateur peut utiliser &amp;ast;.pdf comme modèle de fichier. Le dossier de contrôle sélectionne tous les fichiers qu’il contient correspondant à ce modèle et appelle le service pour chaque fichier. Si une variable est utilisée, tous les fichiers d’entrée sont convertis en documents. Seules les API utilisant le type d’entrée Document sont prises en charge.
+**Variable :** La valeur saisie est un modèle de fichier utilisé par le dossier de contrôle pour sélectionner l’entrée. Par exemple, dans le cas du service de mot de passe chiffré, où le document d’entrée doit être un fichier PDF, l’utilisateur peut utiliser &amp;ast;.pdf comme modèle de fichier. Le dossier de contrôle sélectionne tous les fichiers qu’il contient correspondant à ce modèle et appelle le service pour chaque fichier. Si une variable est utilisée, tous les fichiers d’entrée sont convertis en documents. Seules les API utilisant le type d’entrée Document sont prises en charge.
 
 **Mappages des paramètres de sortie :** Permet de configurer les sorties du service et de l’opération. Les paramètres disponibles dépendent du service utilisant le point de fin du dossier de contrôle. 
 
@@ -245,7 +248,7 @@ Les administrateurs peuvent indiquer le type du fichier servant à appeler un se
 * Fichiers portant des noms spécifiques, par exemple data.&amp;ast;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
-   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
@@ -350,6 +353,7 @@ Lorsque Watched Folder ne peut pas traiter les fichiers source dans le dossier s
 
    * Dans Applications et services, modifiez le paramètre Inclure le modèle de fichier pour le point de fin du dossier de contrôle et donnez-lui une valeur qui ne correspond à aucun nouveau fichier d’entrée (par exemple, saisissez `NOMATCH`).
    * Mettez un terme au processus de création de nouveaux fichiers d’entrée.
+
    Patientez jusqu’à ce qu’AEM Forms récupère et traite tous les fichiers. La majorité des fichiers devra être récupérée et tous les nouveaux fichiers d’entrée correctement traités. Le temps nécessaire à Watched Folder pour récupérer et traiter les fichiers dépendra de la durée de l’opération pour l’appel, ainsi que du nombre de fichiers à récupérer.
 
 1. Déterminez les fichiers ne pouvant pas être traités. Si vous avez suffisamment attendu, que vous avez terminé l’étape précédente et qu’il reste encore des fichiers non traités dans le dossier stage, passez à l’étape suivante.
@@ -372,11 +376,11 @@ Vous trouverez ci-dessous quelques conseils et astuces concernant la configurati
 * Si un dossier de contrôle sous Windows traite des fichiers image, définissez des valeurs pour les options Inclure le modèle de fichier ou Exclure le modèle de fichier afin d’éviter que le fichier Thumbs.db généré automatiquement par Windows ne soit interrogé par le dossier de contrôle.
 * Si une expression cron est spécifiée, l’intervalle de répétition est ignoré. L’utilisation de l’expression cron est basée sur le système de planification des tâches Open Source de Quartz, version 1.4.0 
 * La taille du lot correspond au nombre de fichiers ou de dossiers pouvant être sélectionnés dans le cadre d’une analyse du dossier de contrôle. Si la taille du lot est définie pour deux fichiers ou dossiers et que dix d’entre eux sont déposés dans le dossier input du dossier de contrôle, uniquement deux seront sélectionnés pour l’analyse. Lors de l’analyse suivante, qui intervient après le délai indiqué dans l’intervalle de répétition, les deux fichiers suivants seront sélectionnés.
-* En ce qui concerne les modèles de fichier, les administrateurs peuvent définir des expressions régulières afin de prendre en charge les modèles génériques. Watched Folder modifie le  normal  pour prendre en charge les modèles de caractères génériques tels que &amp;ast;.&amp;ast; ou &amp;ast;.pdf. qui ne sont pas pris en charge par les expressions régulières.
+* En ce qui concerne les modèles de fichier, les administrateurs peuvent définir des expressions régulières afin de prendre en charge les modèles génériques. Watched Folder modifie l’expression régulière afin de prendre en charge les modèles génériques tels que &amp;ast;.&amp;ast; ou &amp;ast;.pdf. qui ne sont pas pris en charge par les expressions régulières.
 * Watched Folder analyse le dossier input pour les sélectionner mais ne sait pas si le fichier ou le dossier source est entièrement copié dans le dossier input avant de lancer le traitement. Pour vous assurer que le fichier ou le dossier source est entièrement copié dans le dossier input du dossier de contrôle avant leur sélection, procédez comme suit :
 
-   * Utilisez l’attribut Durée d’attente qui correspond au temps d’attente de Watched Folder en millisecondes depuis l’heure de dernière modification. Cette fonction est utile si les fichiers à traiter sont volumineux. Par exemple, si le téléchargement d’un fichier prend 10 minutes, spécifiez le temps d’attente comme 10&amp;ast;60 &amp;ast;1000 millisecondes. Cela évitera à Watched Folder de sélectionner le fichier s’il ne date pas d’au moins 10 minutes.
-   * Utilisez les modèles de fichiers exclus et inclus. For example, if the exclude file pattern is `ex*` and the include file pattern is `in*`, Watched Folder will pick up the files that start with &quot;in&quot; and will not pick up the files that start with &quot;ex&quot;. Pour copier des fichiers ou des dossiers volumineux, renommez tout d’abord le fichier ou le dossier de sorte que leur nom commence par « ex ». Une fois le fichier ou le dossier nommé &quot;ex&quot; complètement copié dans le dossier de contrôle, renommez-le en &quot;in&amp;ast;&quot;.
+   * Utilisez l’attribut Durée d’attente qui correspond au temps d’attente de Watched Folder en millisecondes depuis l’heure de dernière modification. Cette fonction est utile si les fichiers à traiter sont volumineux. Par exemple, si le téléchargement d’un fichier prend 10 minutes, indiquez le temps d’attente comme 10&amp;amp ; ast ; 60 &amp;amp ; ast ; 1 000 millisecondes. Cela évitera à Watched Folder de sélectionner le fichier s’il ne date pas d’au moins 10 minutes.
+   * Utilisez les modèles de fichiers exclus et inclus. For example, if the exclude file pattern is `ex*` and the include file pattern is `in*`, Watched Folder will pick up the files that start with &quot;in&quot; and will not pick up the files that start with &quot;ex&quot;. Pour copier des fichiers ou des dossiers volumineux, renommez tout d’abord le fichier ou le dossier de sorte que leur nom commence par « ex ». Une fois que le fichier ou le dossier nommé &quot;ex&quot; est complètement copié dans le dossier de contrôle, renommez-le en &quot;in&amp;ast;&quot;.
 
 * Utilisez l’attribut Durée de la purge pour nettoyer le dossier result. Watched Folder nettoie tous les fichiers dont la date est antérieure à la durée mentionnée dans l’attribut Durée de la purge. Cette durée est exprimée en jours.
 * Lorsque vous ajoutez un point de fin Watched Folder, après la sélection du nom de l’opération, le mappage des paramètres d’entrée est renseigné. Pour chaque entrée d’opération, un champ de mappage des paramètres d’entrée est généré. Vous trouverez ci-dessous quelques exemples de mappage des paramètres d’entrée :
@@ -384,7 +388,7 @@ Vous trouverez ci-dessous quelques conseils et astuces concernant la configurati
    * Pour une entrée `com.adobe.idp.Document` : si l’opération de service dispose d’une entrée du type `Document`, l’administrateur peut définir le type de mappage sur `Variable`. Watched Folder va prélever de l’entrée du dossier de contrôle d’entrée du dossier basé sur le fichier motif spécifié pour le paramètre d’entrée. If the administrator specifies `*.pdf` as the parameter, each file that has an extension of .pdf will be picked up, converted to `com.adobe.idp.Document`, and the service invoked.
    * Pour une entrée `java.util.Map` : si l’opération de service dispose d’une entrée du type `Map`, l’administrateur peut définir le type de mappage sur `Variable` et saisir une valeur de mappage avec un modèle du type `*.pdf`. Par exemple, un service a besoin d’un mappage de deux objets `com.adobe.idp.Document`, ce qui représente deux fichiers dans le dossier input, du type 1.pdf et 2.pdf. Watched Folder créera alors une mappe avec pour clé le nom du fichier et pour valeur `com.adobe.idp.Document`.
    * Pour une entrée `java.util.List`  : si l’opération de service dispose d’une entrée du type List, l’administrateur peut définir le type de mappage sur `Variable` et saisir une valeur de mappage avec un modèle du type `*.pdf`. Lorsque les fichiers PDF seront déposés dans le dossier input, Watched Folder créera une liste des objets `com.adobe.idp.Document` représentant ces fichiers et appellera le service cible.
-   * Pour `java.lang.String` : l’administrateur dispose de deux options. Tout d’abord, l’administrateur peut spécifier le type de mappage `Literal` et saisir une valeur de mappage sous la forme d’une chaîne, telle que `hello.` Watched Folder appellera le service avec la chaîne `hello`. Deuxième option : l’administrateur peut définir le type de mappage sur `Variable`, puis saisir une valeur de mappage avec un modèle du type `*.txt`. Dans le deuxième cas, les fichiers ayant pour extension .txt seront lus comme un document converti sous forme de chaîne pour appeler le service.
+   * Pour `java.lang.String` : l’administrateur dispose de deux options. Tout d’abord, l’administrateur peut spécifier le type de mappage `Literal` et entrer une valeur de mappage sous la forme d’une chaîne, telle que `hello.` Watched Folder appellera le service avec la chaîne `hello`. Deuxième option : l’administrateur peut définir le type de mappage sur `Variable`, puis saisir une valeur de mappage avec un modèle du type `*.txt`. Dans le deuxième cas, les fichiers ayant pour extension .txt seront lus comme un document converti sous forme de chaîne pour appeler le service.
    * Java primitive type: The administrator can specify the mapping type as `Literal` and provide the value. Watched Folder appellera le service avec la valeur indiquée.
 
 * Watched Folder fonctionne avec des documents. The supported outputs are `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, as well as a list and map of these types. Tout autre type conduira à une sortie en échec dans le dossier failure.
@@ -397,7 +401,7 @@ Vous trouverez ci-dessous quelques conseils et astuces concernant la configurati
 
       1. Spécifiez un modèle pour Exclure le modèle de fichier, tel que temp&amp;ast;.ps.
       1. Copiez les fichiers commençant par temp (par exemple, temp1.ps) dans le dossier de contrôle.
-      1. Une fois le fichier complètement copié dans le dossier de contrôle, renommez-le pour qu’il corresponde au modèle spécifié pour l’option Inclure le modèle de fichier. Watched Folder déplace alors le fichier copié vers le dossier des fichiers traités.
+      1. Une fois le fichier entièrement copié dans le dossier de contrôle, renommez-le pour qu’il corresponde au modèle spécifié pour l’option Inclure le modèle de fichier. Watched Folder déplace alors le fichier copié vers le dossier des fichiers traités.
    * Solution n°2
 
       Si vous connaissez la durée maximale requise par la copie de vos fichiers dans un dossier de contrôle, spécifiez cette durée en secondes dans l’option Temps d’attente du fichier. Watched Folder attend alors que ce laps de temps soit écoulé avant de déplacer le fichier vers le dossier des fichiers traités.
