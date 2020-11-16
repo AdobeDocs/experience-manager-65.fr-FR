@@ -102,8 +102,8 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   *Figure : vue de carte.*
+   *Figure : Vue de carte.*
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Figure : vue de Liste.*
+   *Figure : Vue de liste.*
