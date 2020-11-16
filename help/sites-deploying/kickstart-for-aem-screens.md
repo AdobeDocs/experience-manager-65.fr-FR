@@ -1,6 +1,6 @@
 ---
-title: (Redirection) Guide de démarrage de Kickstart
-seo-title: (Redirection) Guide de démarrage de Kickstart
+title: (Redirection) Guide de démarrage rapide
+seo-title: (Redirection) Guide de démarrage rapide
 description: 'null'
 seo-description: 'null'
 uuid: 745b98e6-54ba-44e2-8710-3332391d1ea0
@@ -10,9 +10,12 @@ noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/screens/using/kickstart-for-aem-screens
 translation-type: tm+mt
 source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+workflow-type: tm+mt
+source-wordcount: '11'
+ht-degree: 18%
 
 ---
 
 
-# (Redirection) Guide de démarrage de Kickstart{#redirect-kickstart-guide}
+# (Redirection) Guide de démarrage rapide{#redirect-kickstart-guide}
 
