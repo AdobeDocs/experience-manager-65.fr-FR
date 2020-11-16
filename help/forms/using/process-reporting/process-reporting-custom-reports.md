@@ -26,7 +26,7 @@ Vous pouvez utiliser l&#39;interface REST de QueryBuilder ou créer un service O
 
 Avant d&#39;ajouter un rapport personnalisé, effectuez la procédure de modèle suivante :
 
-1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans le Rapports de processus. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**sur l’interface utilisateur du Rapports de processus.
+1. Les données utilisées dans les rapports personnalisés doivent être disponibles dans le Rapports de processus. Pour garantir la disponibilité des données, planifiez une tâche cron ou utilisez l’option **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** sur l’interface utilisateur du Rapports de processus.
 1. La requête d’URL (encapsulant la requête souhaitée) doit renvoyer un objet de résultat de requête approprié. Pour créer une requête, vous pouvez utiliser l’interface REST de [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) pour créer un service OSGi à l’aide de l’API QueryBuilder. Vous pouvez créer des requêtes dynamiques ou statiques.
 
 1. Créez une interface utilisateur personnalisée pour afficher les résultats. Vous pouvez créer une interface utilisateur autonome ou intégrer un résultat à l’interface utilisateur de Rapports de processus existante.
@@ -66,7 +66,7 @@ La création d’un service à l’aide de l’API du créateur de Requêtes né
     predicateGroup.setAllRequired(true);
    ```
 
-1. Ajoutez des prédicats au nouveau predicateGroup. Quelques éléments de prédicat utiles sont [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator et TypePredicateEvaluator.](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)
+1. Ajoute les prédicats au nouveau predicateGroup. Quelques éléments de prédicat utiles sont [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator et TypePredicateEvaluator.](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)[](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html)
 
    Pour les rapports statiques, codez en dur les prédicats, tandis que pour les rapports dynamiques, récupérez les prédicats à partir de la requête.
 
@@ -439,7 +439,7 @@ Les conditions préalables à la création d’une interface utilisateur distinc
 
 1. Ajoutez un gestionnaire de succès approprié à l’appel Ajax pour analyser et afficher le résultat. Vous pouvez analyser le résultat dans plusieurs formats (json/csv/user defined) et l’afficher dans un tableau ou dans d’autres formulaires.
 
-1. (Facultatif) Ajoutez un gestionnaire d’erreurs approprié à l’appel Ajax.
+1. (Facultatif) Ajoutez un gestionnaire d’erreurs approprié pour l’appel Ajax.
 
 Un exemple de code JSP qui utilise le service OSGi et l’API QueryBuilder est le suivant :
 
