@@ -151,6 +151,7 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
+
       Le magasin ContextHub définit la couche de persistance utilisée pour afficher l’état actuel de la persistance. Toutes les couches devraient être cochées.
 
 
@@ -180,6 +181,7 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
+
       Le magasin ContextHub définit la couche de persistance utilisée pour afficher l’état actuel de la persistance. Toutes les couches devraient être cochées.
 
 
