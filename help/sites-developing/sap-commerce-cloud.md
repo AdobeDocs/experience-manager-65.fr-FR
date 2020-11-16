@@ -52,7 +52,7 @@ La structure eCommerce peut être utilisée avec n’importe quelle solution d�
 
    * Les moteurs peuvent être distingués par une propriété de service `commerceProvider`.
 
-* AEM prend en charge `Resource.adaptTo()` les `CommerceService` et `Product`
+* aem prend en charge `Resource.adaptTo()` les `CommerceService` et `Product`
 
    * The `adaptTo` implementation looks for a `cq:commerceProvider` property in the resource&#39;s hierarchy:
 
@@ -570,7 +570,7 @@ L’intégration est fournie entre AEM et différents systèmes eCommerce. Elle 
 
 * Comptes en hybris
 
-   AEM crée un compte correspondant (subordonné) en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui de l’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
+   aem crée un compte (Secondaire) correspondant en hybris pour chaque acheteur. Le nom d’utilisateur de ce compte est identique à celui de l’AEM. Un mot de passe aléatoire sur le plan cryptographique est généré automatiquement et stocké (chiffré) dans AEM.
 
 #### Utilisateurs préexistants {#pre-existing-users}
 
