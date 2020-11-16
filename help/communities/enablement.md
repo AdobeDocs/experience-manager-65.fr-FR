@@ -52,7 +52,7 @@ Configuration facultative de :
 
 * **Adobe Analytics**
 
-   L’intégration à Adobe Analytics ajoute des fonctionnalités de rapports complètes et prend en charge l’ajout de Video Heartbeat à Analytics.
+   L’intégration à Adobe Analytics ajoute des fonctionnalités de rapports complètes et prend en charge l’ajout de la pulsation vidéo à Analytics.
 
 * **Dispatcher**
 
@@ -107,7 +107,7 @@ Chaque étape donne un lien vers la documentation qui fournit les détails néce
 
 1. (*Facultatif*) **[Configuration du service Analytics](analytics.md)**
 
-   Utiliser Outils, Déploiement, console Cloud Service : *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Utiliser Outils, Déploiement, console Cloud Services : *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[Configurer FFmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -130,4 +130,4 @@ Chaque étape donne un lien vers la documentation qui fournit les détails néce
 
 ## Dispatcher {#dispatcher}
 
-Lorsque le déploiement inclut le Dispatcher [d’](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM, pour que les fonctions d’activation fonctionnent correctement, les sections `clientheader` et `filter` les sections doivent être modifiées. Voir [Configuration d’un Dispatcher pour les communautés](dispatcher.md#enablement).
+Lorsque le déploiement inclut [AEM Répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), pour que les fonctions d&#39;activation fonctionnent correctement, les `clientheader` sections et `filter` les sections doivent être modifiées. Voir [Configuration du répartiteur pour les communautés](dispatcher.md#enablement).
