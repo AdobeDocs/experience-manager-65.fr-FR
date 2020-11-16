@@ -1,8 +1,8 @@
 ---
 title: Page Créer des commentaires
 seo-title: Page Créer des commentaires
-description: Page Commentaires de Vue
-seo-description: Page Commentaires de Vue
+description: Page Commentaires de vue
+seo-description: Page Commentaires de vue
 uuid: 1f043133-51c6-41e8-bbdb-d9fd7780136b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Page Créer des commentaires {#create-comments-page}
 
-**[⇐ Incrustation Composant](overlay-comments.md)Commentaires[Créer des noeuds](overlay-create-nodes.md)**
+**[⇐ Incrustation Composant](overlay-comments.md) Commentaires [Créer des noeuds](overlay-create-nodes.md)**
 
 ## Page Commentaires {#comments-page}
 
@@ -32,4 +32,4 @@ Vue de la page sur l’instance d’auteur :
 
 ![commentaires](assets/comments.png)
 
-**[⇐ Incrustation Composant](overlay-comments.md)Commentaires[Créer des noeuds](overlay-create-nodes.md)**
+**[⇐ Incrustation Composant](overlay-comments.md) Commentaires [Créer des noeuds](overlay-create-nodes.md)**
