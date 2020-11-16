@@ -360,7 +360,7 @@ Le package standard (exemple de package de services de préremplissage) contient
    * `label:` Le paramètre label spécifie le nom d’affichage du service. Par exemple, service de préremplissage par défaut
 
 1. Save and close the `Prefill.java` file.
-1. ajoutez le `AEM Forms Client SDK` package sur le chemin de génération du projet standard.
+1. Ajoutez le `AEM Forms Client SDK` package sur le chemin de génération du projet standard.
 1. Compilez le projet et créez le fichier .jar pour le groupe.
 
 #### Démarrage et utilisation du service de préremplissage {#start-and-use-the-prefill-service}
