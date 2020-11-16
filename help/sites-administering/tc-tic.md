@@ -33,7 +33,7 @@ For an overview of the content translation features in AEM, see [Translating Con
 Créez une configuration de cloud qui connecte AEM à votre fournisseur de services de traduction. AEM permet d’établir par défaut une connexion à Microsoft Translator.
  Les fournisseurs de services de traduction ci-dessous fournissent une mise en œuvre de la nouvelle API pour les projets de traduction. Liens pour en savoir plus sur l’intégration :
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (partenaire Premier d&#39;Adobe Exchange)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -53,6 +53,7 @@ Créez une configuration de cloud qui connecte AEM à votre fournisseur de servi
 >
 >* [Traduction humaine dans AEM](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [Traduction automatique dans AEM](https://www.adobe.com/go/aem-machine-translation-connectors)
+
 >
 
 
@@ -89,7 +90,7 @@ Les propriétés des sites contrôlent la façon dont le contenu des pages est t
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
   </tr>
   <tr>
@@ -133,10 +134,10 @@ Les propriétés des sites contrôlent la façon dont le contenu des pages est t
 
 Les propriétés des communautés contrôlent la façon dont le contenu créé par l’utilisateur est traduit. La traduction de contenu créé par l’utilisateur a toujours recours à la traduction automatique. Pour obtenir plus d’informations, voir [Traduction de contenu créé par l’utilisateur](/help/communities/translate-ugc.md).
 
-| Propriétés | Description |
+| Propriété | Description |
 |---|---|
 | Fournisseur de traduction | Sélectionnez le fournisseur de traduction pour effectuer la traduction. Le fournisseur pour lequel des configurations de cloud sont créées est répertorié dans la liste. |
-| Catégorie de contenu | catégorie qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
+| Catégorie de contenu | Catégorie qui décrit le contenu que vous êtes en train de traduire. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
 | Choisissez Une Langue À Utiliser Comme Magasin De Partage Global | (Facultatif) En sélectionnant un paramètre régional pour le stockage de l’UGC, les publications de toutes les copies de langue apparaîtront dans une seule conversation globale. Par convention, choisissez la langue de [base](/help/communities/sites-console.md#translation) du site Web. Si vous sélectionnez Pas de magasin commun, la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
@@ -146,7 +147,7 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 <table>
  <tbody>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <th>Description</th>
   </tr>
   <tr>
