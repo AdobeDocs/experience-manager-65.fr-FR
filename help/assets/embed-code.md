@@ -11,18 +11,18 @@ translation-type: tm+mt
 source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
+# Intégration de la visionneuse de vidéos ou d’images Dynamic Media, ou de la visionneuse dimensionnelle dans une page web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Utilisez la fonction **[!UICONTROL Code incorporé]** lorsque vous souhaitez lire une vidéo ou afficher une ressource incorporée dans une page web. Vous copiez le code incorporé dans le Presse-papiers afin de le coller dans vos pages web. Vous ne pouvez pas modifier le code dans la boîte de dialogue **[!UICONTROL Code incorporé]**.
 
 Vous devez incorporer les URL uniquement si vous _n’utilisez pas_ AEM comme outil de gestion de contenu web. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page.](adding-dynamic-media-assets-to-pages.md)
 
-Voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
+Voir [Liaison d’URL à une application web.](linking-urls-to-yourwebapplication.md)
 
 Consultez aussi [Diffusion d’images optimisées pour un site réactif.](responsive-site.md)
 
