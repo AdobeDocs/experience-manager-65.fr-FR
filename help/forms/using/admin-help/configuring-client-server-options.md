@@ -63,7 +63,8 @@ Le fait de sélectionner cette option autorise les applications clientes à util
 
 **Hauteur de contrôle HTML préférée pour l’authentification** étendue Spécifiez la hauteur de la boîte de dialogue d’authentification étendue qui s’ouvre dans Acrobat pour la saisie des informations d’identification de l’utilisateur.
 
-***remarque **: Les limites de largeur et de hauteur de cette boîte de dialogue sont les suivantes :*Largeur : Minimum = 400, maximum = 900
+***remarque **: Les limites de largeur et de hauteur de cette boîte de dialogue sont les suivantes :*
+Largeur : Minimum = 400, maximum = 900
 
 Hauteur : minimum = 450 ; maximum = 800
 
@@ -181,7 +182,7 @@ Vous devez rouler deux fois les clés principales avant que les clés précéden
 
 1. Dans la page Document Security, cliquez sur Configuration > Gestion des clés.
 1. Cliquez sur Exécuter le roulement des clés maintenant, puis sur OK.
-1. Attendez 10 minutes environ. The following log message appears in the server log: `Done RightsManagement key rollover for`*N *`principals`. Dans ce message, la lettre* N *correspond au nombre d’utilisateurs du système Document Security.
+1. Attendez 10 minutes environ. The following log message appears in the server log: `Done RightsManagement key rollover for`*N* `principals`. Dans ce message, la lettre *N* correspond au nombre d’utilisateurs du système Document Security.
 1. Cliquez sur Exécuter le roulement des clés maintenant, puis sur OK.
 1. Attendez 10 minutes environ.
 
@@ -281,7 +282,7 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Evénements de document**
 
-**Document de Vue :** Un destinataire vue un document protégé par une stratégie.
+**Document de vue :** Un destinataire vue un document protégé par une stratégie.
 
 **Document de fermeture :** Un destinataire ferme un document protégé par une stratégie.
 
@@ -345,7 +346,7 @@ Vous pouvez activer et désactiver le contrôle des événements et spécifier l
 
 **Utilisateurs désactivés :** Un administrateur désactive un compte d’utilisateur local.
 
-**Mise à jour du Profil :** Les utilisateurs invités modifient leur nom, nom d’organisation et mot de passe.
+**Mise à jour du profil :** Les utilisateurs invités modifient leur nom, nom d’organisation et mot de passe.
 
 **Compte verrouillé :** un administrateur verrouille un compte.
 
@@ -483,7 +484,7 @@ Vous pouvez créer des modèles de filigrane dynamique. Ces modèles restent dis
 1. Cliquez sur Nouveau.
 1. Dans la zone Nom, saisissez le nom du nouveau filigrane.
 
-   ***Remarque ** : certains caractères spéciaux ne peuvent être utilisés dans le nom ou la description des filigranes ou des éléments de filigrane. (voir les limites listées dans[Eléments à prendre en compte concernant la modification de stratégies](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies)).*
+   ***Remarque ** : certains caractères spéciaux ne peuvent être utilisés dans le nom ou la description des filigranes ou des éléments de filigrane. (voir les limites listées dans [Eléments à prendre en compte concernant la modification de stratégies](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies)).*
 
 1. Dans le champ Nom, à côté du signe plus, saisissez un nom significatif pour l’élément de filigrane, comme en-tête par exemple, ajoutez une description, puis cliquez sur le signe plus pour afficher les options.
 1. Dans Source, sélectionnez le type de filigrane souhaité : texte ou PDF.
@@ -760,7 +761,7 @@ Dans le fichier de configuration de Document Security, vous pouvez définir la f
 1. Ouvrez le fichier de configuration dans un éditeur et recherchez le nœud `PolicyServer`. Sous ce nœud, recherchez le nœud `ServerSettings`.
 1. Dans le nœud `ServerSettings`, ajoutez l’entrée suivante, puis enregistrez le fichier :
 
-   `<entry key="BackgroundSyncFrequency" value="`*durée *`"/>`
+   `<entry key="BackgroundSyncFrequency" value="`*durée* `"/>`
 
    où *time* correspond au nombre de secondes entre les synchronisations automatiques en arrière-plan. Si vous définissez cette valeur sur `0`, la synchronisation a lieu en continu. The default value is `14400` seconds (every four hours).
 
