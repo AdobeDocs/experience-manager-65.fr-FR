@@ -64,7 +64,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 
    Notez qu’il est nécessaire de quitter le mode de sauvegarde restauration après une restauration.
 
-1. Arrêtez l’un des noeuds secondaires de la grappe par rapport à AEM. (Voir la section [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+1. Arrêtez l’un des noeuds secondaires de la grappe par rapport à l’AEM. (Voir la section [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Sur n’importe quel nœud, sauvegardez la base de données, le stockage global de documents et les connecteurs. (Voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover).)
 1. Effectuez les étapes suivantes pour sauvegarder le référentiel AEM hors ligne :
 
@@ -83,7 +83,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 
    Notez qu’il est nécessaire de quitter le mode de sauvegarde restauration après une restauration.
 
-1. Arrêtez l’un des noeuds secondaires de la grappe par rapport à AEM. (Voir la section [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+1. Arrêtez l’un des noeuds secondaires de la grappe par rapport à l’AEM. (Voir la section [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Sur n’importe quel nœud, sauvegardez la base de données, le stockage global de documents et les connecteurs. (Voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover).)
 1. Effectuez les étapes suivantes pour sauvegarder le référentiel AEM en ligne :
 
@@ -118,7 +118,7 @@ Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tel
 
    >[!NOTE]
    >
-   >Si le noeud corrompu est un noeud principal AEM, arrêtez l’ensemble du noeud de la grappe.
+   >Si le noeud corrompu est un noeud Principal AEM, arrêtez l’ensemble du noeud de la grappe.
 
 1. Recréez le système physique à partir d’une image système.
 1. Appliquez à AEM Forms les correctifs et mises à jour qui ont été appliqués depuis que l’image a été réalisée. Cette information a été mentionnée durant la procédure de sauvegarde. AEM Forms doit être récupéré au même niveau de correctif auquel il se trouvait lors de la sauvegarde du système.
@@ -142,9 +142,9 @@ Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tel
 >
 >Examinez les points suivants :
 
-* Si le noeud en échec était un noeud principal AEM, copiez tout le contenu du dossier du référentiel secondaire (crx-repository\crx.0000 où 0000 peut être n’importe quels chiffres) dans le dossier du référentiel crx-repository\ et supprimez le dossier du référentiel secondaire.
-* Avant de redémarrer un noeud de grappe, assurez-vous de supprimer le référentiel /clustered.txt du noeud principal.
-* Assurez-vous que le noeud principal est démarré en premier et qu’une fois complètement démarré, début les autres noeuds.
+* Si le noeud en panne était un noeud Principal AEM, copiez tout le contenu du dossier du référentiel secondaire (crx-repository\crx.0000 où 0000 peut être n’importe quels chiffres) dans le dossier du référentiel crx-repository\ et supprimez le dossier du référentiel secondaire.
+* Avant de redémarrer un noeud de grappe, assurez-vous de supprimer le référentiel /clustered.txt du noeud Principal.
+* Assurez-vous que le noeud Principal est démarré en premier et qu’une fois complètement démarré, début les autres noeuds.
 
 ### Restauration de l’ensemble de la grappe {#restoring-the-entire-cluster}
 
@@ -172,13 +172,13 @@ Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tel
 >
 >Examinez les points suivants :
 
-* Si le noeud en échec était un noeud principal AEM, copiez tout le contenu du dossier du référentiel secondaire (il ressemble à crx-repository\crx.0000 où 0000 peut être n’importe quels chiffres) dans le dossier du référentiel crx-repository\.
-* Avant de redémarrer un noeud de grappe, assurez-vous de supprimer le référentiel /clustered.txt du noeud principal.
-* Assurez-vous que le noeud principal est démarré en premier et qu’une fois complètement démarré, début les autres noeuds.
+* Si le noeud en panne était un noeud Principal AEM, copiez tout le contenu du dossier du référentiel secondaire (il ressemble à crx-repository\crx.0000 où 0000 peut être n’importe quels chiffres) dans le dossier du référentiel crx-repository\.
+* Avant de redémarrer un noeud de grappe, assurez-vous de supprimer le référentiel /clustered.txt du noeud Principal.
+* Assurez-vous que le noeud Principal est démarré en premier et qu’une fois complètement démarré, début les autres noeuds.
 
 ## Sauvegarde et restauration du nœud d’éditeur de la solution Correspondence Management {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Le noeud d’éditeur n’a aucune relation primaire-secondaire dans un environnement organisé en grappes. Vous pouvez réaliser une sauvegarde de tout nœud d’éditeur en suivant le document [Sauvegarde et restauration](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+Le noeud d’éditeur n’a aucune relation Principale-secondaire dans un environnement organisé en grappes. Vous pouvez réaliser une sauvegarde de tout nœud d’éditeur en suivant le document [Sauvegarde et restauration](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 ### Récupération d’un seul nœud d’éditeur {#recover-a-single-publisher-node}
 
@@ -189,5 +189,5 @@ Le noeud d’éditeur n’a aucune relation primaire-secondaire dans un environn
 
 1. Arrêtez la grappe.
 1. Restaurez le noeud de publication à l’aide de [Restauration de la sauvegarde](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring la sauvegarde).
-1. Début du noeud principal suivi du noeud secondaire de la grappe d’auteurs.
+1. Début du noeud Principal suivi du noeud secondaire de la grappe d’auteurs.
 
