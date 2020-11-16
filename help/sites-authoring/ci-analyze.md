@@ -12,6 +12,9 @@ discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 translation-type: tm+mt
 source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 98%
 
 ---
 
@@ -84,7 +87,7 @@ L’état de la recommandations d’optimisation pour les moteurs de recherche i
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation des tâches](/help/sites-authoring/task-content.md).
+Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation de Tâches](/help/sites-authoring/task-content.md).
 
 Utilisez la procédure suivante afin de créer une tâche pour une recommandation d’optimisation pour les moteurs de recherche.
 
@@ -104,6 +107,7 @@ Utilisez la procédure suivante afin de créer une tâche pour une recommandatio
    * Description : Une description de l’activité requise pour terminer la tâche. La description par défaut correspond aux informations accompagnant la recommandation d’optimisation pour les moteurs de recherche.
    * Priorité de la tâche : La priorité de la tâche.
    * Échéance : La date à laquelle la tâche doit être terminée.
+
    **Remarque :** La tâche créée inclut également le chemin d’accès à la page à laquelle la recommandation d’optimisation pour les moteurs de recherche s’applique.
 
 1. Cliquez ou appuyez sur Terminé pour fermer le message Tâche créée.
