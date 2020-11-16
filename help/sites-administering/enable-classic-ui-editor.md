@@ -12,6 +12,9 @@ discoiquuid: 54903f3a-1e7e-4083-a2c9-b2ea4555d7fc
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +29,7 @@ Pour réactiver l’option **Ouvrir dans l’IU classique** dans le menu **infor
 
    `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-   Par exemple
+   Par exemple, 
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
