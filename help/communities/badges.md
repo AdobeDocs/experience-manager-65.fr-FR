@@ -45,7 +45,7 @@ Cette console affiche les badges actuellement disponibles et à partir desquels 
 
 ## Créer le badge {#create-badge}
 
-Un badge est créé en téléchargeant une image suffisamment petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/libs/settings/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
+Un badge est créé en téléchargeant une image convenablement petite (72 dpi avec une hauteur comprise entre 26 et 32 pixels) et en fournissant un nom. L’image de badge est stockée dans le référentiel à l’emplacement `/libs/settings/community/badging/images` et automatiquement répliquée dans l’environnement de publication.
 
 Si l’environnement de publication est une batterie d’éditeurs, il est nécessaire de configurer la synchronisation [](/help/communities/sync.md)utilisateur.
 
