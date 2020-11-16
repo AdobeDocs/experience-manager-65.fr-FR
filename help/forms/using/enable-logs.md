@@ -12,6 +12,9 @@ discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 73%
 
 ---
 
@@ -38,7 +41,7 @@ Effectuez les étapes suivantes pour configurer les journaux côté serveur :
    >
    >Pour générer des journaux dans le répertoire de formulaires HTML5, ajoutez ../logs/ avant le nom de fichier.
 
-1. Modifiez **Logger** en **HTMLFormsPerfLogger**. Cliquez sur **Save** (Enregistrer).
+1. Modifiez **Logger** en **HTMLFormsPerfLogger**. Cliquez sur **Save**.
 
 ## Configuration de la journalisation du client {#configuring-client-logging}
 
@@ -169,7 +172,7 @@ Par exemple :
 >
 >Le niveau de journalisation par défaut de chaque catégorie de journalisation a (xfa), b (xfaView) et c (xfaPerf) est de 2 (ERROR). En conséquence, pour configurer la journalisation 2-b6, les niveaux de journalisation des différentes catégories sont les suivants :
 >a (xfa) : 2 (niveau par défaut ERROR)
->b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
+>b (xfaView) : 6 (TRACE spécifiée par l’utilisateur)
 >a (xfaPerf) : 2 (niveau par défaut ERROR)
 
 ### Activation de la journalisation à l’aide de Configuration Manager {#enabling-logging-using-configuration-manager}
