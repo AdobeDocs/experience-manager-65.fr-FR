@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +36,7 @@ http://localhost:4502
 
 Cette adresse URL, lors d’une connexion au niveau du système d’exploitation, permet à WebDAV d’accéder à l’espace de travail par défaut (`crx.default`). Si cette approche est plus simple pour l’utilisateur, elle n’offre toutefois pas la flexibilité supplémentaire de spécifier des noms d’espace de travail, ce qui peut être effectué à l’aide d’[adresses URL WebDAV](/help/sites-administering/webdav-access.md#webdav-urls) supplémentaires.
 
-AEM affiche le contenu du référentiel comme suit :
+aem affiche le contenu du référentiel comme suit :
 
 * Un nœud du type `nt:folder` s’affiche sous la forme d’un dossier. Les nœuds situés sous le nœud `nt:folder` s’affichent comme contenu du dossier.
 
@@ -156,6 +159,7 @@ Pour vous connecter à AEM par le biais de WebDAV dans un environnement Windows,
    * **Lecteur** : sélectionnez une lettre disponible
    * **Dossier**: `http://localhost:4502`
    * Activez l’option **Se connecter à l’aide d’informations d’identification différentes**.
+
    Cliquez sur Terminer.
 
    ![chlimage_1-113](assets/chlimage_1-113a.png)
@@ -213,14 +217,14 @@ Pour vous connecter à AEM par le biais de WebDAV avec GNOME, procédez comme su
 1. Cliquez sur **Connecter**. AEM vous invite à saisir votre mot de passe.
 1. Saisissez le mot de passe `admin` et cliquez sur **Connecter**.
 
-GNOME a maintenant monté AEM en tant que volume et vous pouvez l&#39;utiliser comme n&#39;importe quel autre volume.
+GNOME a maintenant monté AEM volume et vous pouvez l&#39;utiliser comme n&#39;importe quel autre volume.
 
 #### KDE {#kde}
 
 1. Ouvrez l’assistant Dossier réseau.
 1. Sélectionnez **WebFolder** (webdav), puis cliquez sur Suivant.
 1. Sous **Nom**, saisissez un nom de connexion.
-1. Dans **Utilisateur**, saisissez `admin.` Adobe recommande d’utiliser le compte d’administrateur préconfiguré.
+1. Dans **Utilisateur**, saisissez `admin.` Adobe qui vous recommande d’utiliser le compte d’administration préconfiguré.
 1. Dans **Server**, saisissez `http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
@@ -232,4 +236,4 @@ GNOME a maintenant monté AEM en tant que volume et vous pouvez l&#39;utiliser c
 1. Cliquez sur **Enregistrer et connecter**.
 1. Lorsque vous êtes invité à saisir votre mot de passe, saisissez `admin` et cliquez sur **Connecter**.
 
-KDE a désormais monté AEM en tant que volume et vous pouvez l’utiliser comme n’importe quel autre volume.
+KDE a désormais monté AEM en tant que volume et vous pouvez l&#39;utiliser comme n&#39;importe quel autre volume.
