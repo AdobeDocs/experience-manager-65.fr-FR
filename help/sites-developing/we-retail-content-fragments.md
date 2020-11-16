@@ -20,7 +20,7 @@ ht-degree: 79%
 
 # Test des fragments de contenu dans We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (comme disponible dans une instance prête à l’emploi d’AEM) fournit le fragment **Arctic Surfing in Lofoten** en tant qu’exemple de base. On peut en tirer les enseignements suivants :
+Les fragments de contenu vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variantes (éventuellement spécifiques aux canaux). **We.Retail** (comme disponible dans une instance prête à l&#39;emploi de AEM) fournit le fragment **Arctic Surfing in Lofoten** en tant qu&#39;échantillon de base. On peut en tirer les enseignements suivants :
 
 * Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). 
 
@@ -36,10 +36,11 @@ Pour consulter la documentation complète traitant de la création, de la gestio
 
 >[!NOTE]
 >
->Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)**représentent deux fonctions distinctes d’AEM :
+>Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >
 >* Les **fragments de contenu** sont des contenus éditoriaux, composés essentiellement de texte et des images associées. Il s’agit exclusivement de contenu, sans aucun élément de conception ni de mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
+
 >
 >
 Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
@@ -64,7 +65,7 @@ Vous pouvez [modifier et gérer](/help/assets/content-fragments/content-fragment
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**, y compris[Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**, y compris [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md) 
 * **[Contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md)**
 * **[Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md)**
 
