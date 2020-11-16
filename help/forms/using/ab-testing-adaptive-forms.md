@@ -11,6 +11,9 @@ discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+workflow-type: tm+mt
+source-wordcount: '1581'
+ht-degree: 93%
 
 ---
 
@@ -61,7 +64,7 @@ Si vous configurez Target pour la première fois, cliquez sur **Configurer maint
 1. Dans le champ **Target URLs**, spécifiez toutes les URL où les tests A/B seront exécutés. For example, https://&lt;*hostname*>:&lt;*port*>/ for AEM Forms server on OSGi or https://&lt;*hostname*>:&lt;*port*>/lc/ for AEM Forms server on JEE.
  Si vous souhaitez configurer une URL Target pour une instance de publication à laquelle vos clients peuvent accéder à l’aide du nom d’hôte ou de l’adresse IP, vous devez configurer les deux comme des URL Target (via le nom d’hôte ainsi que l’adresse IP). Si vous configurez uniquement une des URL, votre test A/B ne s’exécutera pas pour les clients provenant de l’autre URL. Cliquez sur le signe **+** pour spécifier plusieurs URL.
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
 Votre serveur Target est intégré à AEM Forms. Vous pouvez désormais activer le test A/B si vous disposez d’une licence complète vous permettant d’utiliser Adobe Target. 
 
