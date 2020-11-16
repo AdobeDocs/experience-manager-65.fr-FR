@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +56,7 @@ Pour créer la racine de langue, créez une page, puis utilisez le code de langu
 
 * `<language-code>`Le code de langue pris charge est un code à deux lettres défini par la norme ISO-639-1, par exemple en`en`.
 
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>`le code de pays pris en charge est un code à deux lettres minuscule ou majuscule, comme défini par ISO 3166, par exemple `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>`Le code de pays pris en charge est un code à deux lettres minuscules ou majuscules, comme défini par ISO 3166, par exemple `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international.  Par exemple, la propriété Nom de la page racine de la copie de langue française de l’exemple de site Geometrixx est définie sur `fr`. Notez que la propriété Nom est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès à la page. (http://localhost:4502/content/geometrixx/fr.html)
 
