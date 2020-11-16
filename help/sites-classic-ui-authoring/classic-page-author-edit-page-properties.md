@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +24,7 @@ Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent 
 
 ## Propriétés de page {#page-properties}
 
-Les propriétés sont réparties sur plusieurs onglets :
+Les propriétés sont réparties sur plusieurs onglets:
 
 ### De base {#basic}
 
@@ -33,7 +36,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Balises**
 
-   Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection :
+   Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection:
 
    * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
    * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
@@ -65,7 +68,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Heure d’activation**
 
-   Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée. 
+   Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée.
 
    Ne complétez pas ces champs pour les pages que vous souhaitez publier immédiatement (scénario normal).
 
@@ -79,11 +82,11 @@ Les propriétés sont réparties sur plusieurs onglets :
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et plus explicite.
 
-   Par exemple, si l’URL de vanité est définie sur w `elcome`à la page identifiée par le chemin / `v1.0/startpage`pour le site Web, il `ttp://example.com,` `ttp://example.com/welcome`sera alors l’URL de vanité de h `ttp://example.com/content/v1.0/startpage`
+   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
-   >L’URL Vanity :
+   >L’URL de redirection :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
    >* Ne prend pas en charge les modèles d’expression régulière.
@@ -91,7 +94,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Rediriger l’URL Vanity**
 
-   Indique si vous souhaitez que la page utilise l’URL Vanity.
+   Indique si vous souhaitez que la page utilise l’URL de redirection.
 
 ### Avancé {#advanced}
 
@@ -131,7 +134,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
    Indiquez une configuration d’exportation.
 
-### Miniature {#thumbnail}
+### Miniature  {#thumbnail}
 
 * **Miniature de page**
 
@@ -145,17 +148,17 @@ Les propriétés sont réparties sur plusieurs onglets :
 
       Télécharge une image à utiliser comme miniature.
 
-### Services cloud {#cloud-services}
+### Cloud Services {#cloud-services}
 
-* **Services cloud**
+* **Cloud Services**
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation  {#personalization}
+### Personnalisation   {#personalization}
 
 * **Personnalisation**
 
-   Sélectionnez [une marque pour spécifier la portée du ciblage](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+   Sélectionnez une [marque pour spécifier la portée du ciblage](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ### Autorisations {#permissions}
 
@@ -167,17 +170,17 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Blueprint**
 
-   Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à Live Copy.
+   Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
-* **Live Copy**
+* **Live Copy**
 
-   Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à partir du plan directeur.
+   Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site {#site-structure}
+### Structure du site  {#site-structure}
 
-* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres. 
+* Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
 ## Modification des propriétés de page {#editing-page-properties-2}
 
