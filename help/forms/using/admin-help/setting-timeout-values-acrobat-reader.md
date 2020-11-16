@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 85%
 
 ---
 
@@ -23,7 +26,7 @@ Lorsque vous travaillez sur de nombreux fichiers PDF dans les extensions d’Acr
 
 vous pouvez définir cette valeur dans Administration Console. Cliquez sur Paramètres > Paramètres de Core System > Configurations, puis indiquez une valeur dans le champ Délai par défaut avant suppression du document.
 
-**** Délai d’expiration d’AEM forms User Manager : Cette valeur peut être définie en modifiant le fichier config.xml. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration, puis sur Exporter. Ouvrez le fichier config.xml exporté, puis modifiez les lignes ci-après de la façon suivante :
+**Délai d’AEM des formulaires User Manager :** Cette valeur peut être définie en modifiant le fichier config.xml. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration, puis sur Exporter. Ouvrez le fichier config.xml exporté, puis modifiez les lignes ci-après de la façon suivante :
 
 &lt;entry key= &quot;assertionValidityInMinutes&quot; value= &quot;600&quot;/>
 
@@ -31,4 +34,4 @@ vous pouvez définir cette valeur dans Administration Console. Cliquez sur Param
 
 Enregistrez le fichier config.xml, puis réimportez-le dans Administration Console.
 
-**** Délai d’expiration de la session du serveur d’applications : Cette valeur peut être définie sur le serveur d’applications. Pour plus d’informations, consultez la documentation de votre serveur d’applications.
+**Délai d’expiration de la session du serveur d’applications :** Cette valeur peut être définie sur le serveur d’applications. Pour plus d’informations, consultez la documentation de votre serveur d’applications.
