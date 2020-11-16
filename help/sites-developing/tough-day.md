@@ -12,6 +12,9 @@ discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '1909'
+ht-degree: 54%
 
 ---
 
@@ -36,7 +39,7 @@ La suite par défaut qui s’exécute après l’ajout des paramètres s’appel
 * Obtenir la page d’accueil
 * Exécuter des requêtes dans le générateur de requêtes
 * Créer des hiérarchies de ressources
-* Supprimer des ressources
+* Suppression des ressources
 
 La suite contient 15 % d’actions d’écriture et 85 % d’actions de lecture.
 
@@ -72,7 +75,7 @@ Le tableau ci-dessous décrit des paramètres d’aide pertinents.
   </tr>
   <tr>
    <td>--help</td>
-   <td>Imprime des informations globales, par exemple : actions disponibles, suites prédéfinies, modes d’exécution et paramètres globaux.</td>
+   <td>Imprime des informations globales, par exemple : les actions disponibles, les suites prédéfinies, les modes d'exécution et les paramètres globaux.</td>
    <td> </td>
   </tr>
   <tr>
@@ -92,23 +95,23 @@ Le tableau ci-dessous décrit des paramètres d’aide pertinents.
   </tr>
   <tr>
    <td> —help —runmode/publishmode type=&lt;Mode&gt;</td>
-   <td>Répertorie les informations sur le mode d’exécution ou de publication spécifié.</td>
+   <td>Liste des informations sur le mode d’exécution ou de publication spécifié.</td>
    <td><p>java -jar toughday2.jar —help —runmode type=constantload</p> <p>java -jar toughday2.jar —help —publishmode type=intervalles</p> </td>
   </tr>
   <tr>
-   <td>—help —suite=&lt;Nom de la suite&gt;</td>
-   <td>Répertorie tous les tests d’une suite donnée et leurs propriétés configurables respectives.</td>
+   <td>—help —suite=&lt;NomSuite&gt;</td>
+   <td>Liste tous les tests d’une suite donnée et leurs propriétés configurables respectives.</td>
    <td><br /> java -jar toughday2.jar —help —suite=get_tests</td>
   </tr>
   <tr>
    <td> —help —tag=&lt;Balise&gt;</td>
-   <td><br /> Répertorie tous les éléments qui possèdent la balise spécifiée.</td>
+   <td><br /> Liste tous les éléments qui ont la balise spécifiée.</td>
    <td>java -jar toughday2.jar —help —tag=publish</td>
   </tr>
   <tr>
    <td>—help &lt;TestClass/PublisherClass&gt;</td>
-   <td><br /> Répertorie toutes les propriétés configurables pour le test ou l’éditeur donné.</td>
-   <td><p>java -jar toughday2.jar —help UploadPDFTest</p> <p>java -jar toughday2.jar —help CSVPublisher</p> </td>
+   <td><br /> Liste toutes les propriétés configurables pour le test ou l’éditeur donné.</td>
+   <td><p>java -jar toughday2.jar —help UploadPDFTest</p> <p>java -jar toughday2.jar —help CSVPubliher</p> </td>
   </tr>
  </tbody>
 </table>
@@ -130,14 +133,14 @@ Voici la liste des paramètres pertinents :
 | `--host=<Val>` | Nom d’hôte ou adresse IP qui sera ciblé. |  |  |
 | `--port=<Val>` | Port de l’hôte. | 4502 |  |
 | `--user=<Val>` | Nom d’utilisateur de l’instance. | admin |  |
-| `--password=<Val>` | Mot de passe de l’utilisateur donné. | admin |  |
+| `--password=<Val>` | Mot de passe pour l’utilisateur donné. | admin |  |
 | `--duration=<Val>` | Durée des tests. Can be expressed in (**s**)econds, (**m**)inutes, (**h**)ours and (**d**)ays. | 1d |  |
-| `--timeout=<Val>` | Durée d&#39;exécution d&#39;un test avant qu&#39;il ne soit interrompu et marqué comme ayant échoué. Exprimé en secondes. | 180 |  |
-| `--suite=<Val>` | La valeur peut être une ou une liste (séparée par des virgules) de suites de tests prédéfinies. | douloureux |  |
-| `--configfile=<Val>` | Fichier de configuration Yaml ciblé. |  |  |
-| `--contextpath=<Val>` | Chemin d’accès au contexte de l’instance. |  |  |
-| `--loglevel=<Val>` | Niveau de journal du moteur Tough Day 2. | INFO | TOUT, DÉBOGUER, INFO, AVERTIR, ERREUR, FATAL, OFF |
-| `--dryrun=<Val>` | Si la valeur est true, imprime la configuration obtenue et n’exécute aucun test. | false | true ou false |
+| `--timeout=<Val>` | Durée pendant laquelle un test s&#39;exécute avant d&#39;être interrompu et signalé comme échec. Exprimé en secondes. | 180 |  |
+| `--suite=<Val>` | La valeur peut être une ou une liste (séparée par des virgules) de suites de tests prédéfinies. | jour difficile |  |
+| `--configfile=<Val>` | Le fichier de configuration de l&#39;image cible. |  |  |
+| `--contextpath=<Val>` | Chemin d’accès contextuel de l’instance. |  |  |
+| `--loglevel=<Val>` | Niveau de journal du moteur de journée difficile 2. | INFO | TOUT, DÉBOGUER, INFORMATIONS, AVERTISSEMENT, ERREUR, FATAL, OFF |
+| `--dryrun=<Val>` | Si la valeur est true, imprime la configuration résultante et n’exécute aucun test. | false | true ou false |
 
 ## Personnalisation {#customizing}
 
@@ -285,7 +288,7 @@ Tough Day 2 can run in one of the following modes: **normal** and **constant loa
 
 The **normal** run mode has two parameters:
 
-* `concurrency` - concurrency représente le nombre de threads que Tough Day 2 va créer pour l&#39;exécution des tests. Sur ces threads, les tests sont exécutés jusqu’à ce que la durée soit écoulée ou qu’il n’y ait plus de tests à exécuter.
+* `concurrency` - concurrence représente le nombre de threads que Tough Day 2 va créer pour l&#39;exécution du test. Sur ces threads, les tests sont exécutés jusqu’à ce que la durée soit écoulée ou qu’il n’y ait plus de tests à exécuter.
 
 * `waittime` : temps d’attente entre deux exécutions de test consécutives sur le même thread. La valeur doit être exprimée en millisecondes.
 
@@ -352,21 +355,21 @@ Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez év
 | **Nom** | **Description** |
 |---|---|
 | Timestamp | Horodatage de la dernière exécution de test terminée. |
-| Transmis | Nombre d’exécutions réussies. |
-| Échec | Nombre d’exécutions ayant échoué. |
+| Transmis | Nombre d&#39;exécutions réussies. |
+| Échec | Nombre d&#39;exécutions ayant échoué. |
 | Min* | Durée la plus faible d’exécution du test. |
-| Max* | Durée la plus élevée d’exécution du test. |
+| Max* | Durée d’exécution du test la plus élevée. |
 | Médiane* | Durée médiane calculée de toutes les exécutions de test. |
-| Différentiel par moyenne* | Durée moyenne calculée de toutes les exécutions de test. |
+| Moyenne* | Durée moyenne calculée de toutes les exécutions de test. |
 | StdDev* | Écart type. |
-| 90 p* | 90%. |
-| 99 p* | 99%. |
+| 90 p* | 90 centile. |
+| 99 p* | 99 pour cent. |
 | 99.9 p* | 99,9 centile. |
 | Débit réel* | Nombre d’exécutions divisé par le temps d’exécution écoulé. |
 
 These metrics are written with the help of publishers that can be added with the `add` parameter (similarly to adding tests). Actuellement, il existe deux options :
 
-* **CSVPublisher** : la sortie est un fichier CSV.
+* **CSVPubliher** - la sortie est un fichier CSV.
 * **ConsolePublisher** : la sortie s&#39;affiche dans la console.
 
 Par défaut, les deux éditeurs sont activés.
@@ -396,14 +399,14 @@ publishmode:
 
 ### Journalisation {#logging}
 
-Tough Day 2 crée un dossier de journaux dans le répertoire où vous avez exécuté Tough Day 2. Ce dossier contient deux types de journaux :
+Tough Day 2 crée un dossier de journaux dans le même répertoire que celui où vous avez exécuté Tough Day 2. Ce dossier contient deux types de journaux :
 
 * **toughday.log** : contient les messages relatifs à l’état de l’application, aux informations de débogage et aux messages d’ordre général.
 * **toughday_&lt;testname>.log** : messages liés au test spécifié.
 
 Les journaux ne sont pas remplacés, les exécutions subséquentes ajoutent des messages aux journaux existants. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Exemple d’utilisation {#example-usage}
+#### Cas d’utilisation    {#example-usage}
 
 #### Problèmes connus {#known-issues}
 
