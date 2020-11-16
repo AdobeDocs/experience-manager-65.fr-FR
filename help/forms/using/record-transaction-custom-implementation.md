@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Utilisez l&#39;API TransactionRecorder pour enregistrer automatiquement les actions qui ne sont pas comptabilisées comme des transactions
 
-Vous pouvez utiliser un code personnalisé pour envoyer un formulaire PDF, pour envoyer l’URL de prévisualisation de l’interface utilisateur de l’agent aux utilisateurs finaux afin de prévisualisation une communication interactive ou pour envoyer un formulaire à l’aide de méthodes personnalisées plutôt que d’utiliser des méthodes d’envoi fournies avec des AEM Forms. Toutes les actions mentionnées précédemment et les implémentations personnalisées des API AEM Forms ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), pour enregistrer des actions telles que des transactions.
+Vous pouvez utiliser un code personnalisé pour envoyer un formulaire PDF, pour envoyer l’URL de prévisualisation de l’interface utilisateur de l’agent aux utilisateurs finaux afin de prévisualisation une communication interactive ou pour envoyer un formulaire à l’aide de méthodes personnalisées au lieu d’utiliser les méthodes d’envoi fournies avec AEM Forms. Toutes les actions mentionnées précédemment et les implémentations personnalisées des API AEM Forms ne sont pas comptabilisées comme des transactions. AEM Forms fournit une API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), pour enregistrer des actions telles que des transactions.
 
-Pour enregistrer une transaction, écrivez la servlet [sling](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) standard et appelez la servlet d&#39;un client pour enregistrer une transaction. Vous pouvez appeler la servlet à l’aide d’AJAX ou de toute autre méthode standard.
+Pour enregistrer une transaction, écrivez la servlet [sling](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) standard et appelez la servlet d&#39;un client pour enregistrer une transaction. Vous pouvez appeler la servlet à l&#39;aide d&#39;AJAX ou de toute autre méthode standard.
 
 ## Exemple de code côté serveur {#sample-server-sided-code}
 
