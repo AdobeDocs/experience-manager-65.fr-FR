@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
 source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 25%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 50c0bdfc3203410d392e53536bc7cd00245406e5
 
 Les articles, bannières et collections sont représentés sous la forme cq:Pages dans AEM.
 
-Ils partagent les mêmes propriétés communes que celles trouvées dans cq:Page, en plus de plusieurs autres, illustrées ci-dessous, qui représentent les métadonnées des services Mobile On-Demand d’Adobe Experience Manager (AEM) et les propriétés de prise en charge de l’intégration.
+Ils partagent les mêmes propriétés communes que celles qui se trouvent dans cq:Page, en plus de plusieurs autres qui représentent les métadonnées de services à la demande Adobe Experience Manager (AEM) Mobile On-Demand et les propriétés de prise en charge de l&#39;intégration.
 
 Les tableaux suivants décrivent les propriétés et les noeuds de contenu.
 
@@ -31,12 +34,12 @@ Les tableaux suivants décrivent les propriétés et les noeuds de contenu.
 
 | **Nom de la propriété** | **Type** | **Valeurs par défaut ou attendues** | **Description** |
 |---|---|---|---|
-| dps-id | Chaîne |  | attribué par AEM Mobile et stocké par AEM une fois téléchargé vers AEM Mobile ou importé depuis AEM Mobile |
+| dps-id | Chaîne |  | affecté par AEM Mobile et stocké par AEM une fois téléchargé vers AEM Mobile ou importé de AEM Mobile |
 | dps-resourceType | Chaîne | dps:Article | dps:Bannière | dps:Collection | propriété de type d&#39;entité |
-| dps-version | Chaîne |  | version de l&#39;entité AEM Mobile (également incluse dans l&#39;aemm-id complet) |
-| dps-lastSynced | Date |  | date de la dernière synchronisation/importation depuis AEM Mobile vers AEM |
-| dps-lastUploaded | Date |  | date du dernier téléchargement d&#39;AEM vers AEM Mobile |
-| dps-lastUploadedBy | String:userid |  | ID utilisateur ayant effectué la dernière demande de transfert d&#39;AEM vers AEM Mobile |
+| dps-version | Chaîne |  | version de l’entité AEM Mobile (également incluse dans l’aemm-id complet) |
+| dps-lastSynced | Date |  | date de la dernière synchronisation/importation d&#39;AEM Mobile vers AEM |
+| dps-lastUploaded | Date |  | date du dernier transfert de l’AEM vers AEM Mobile |
+| dps-lastUploadedBy | String:userid |  | ID de l’utilisateur qui a effectué la dernière demande de transfert d’AEM à AEM Mobile |
 
 ## Propriétés de métadonnées de base {#core-metadata-properties}
 
@@ -47,10 +50,10 @@ Les tableaux suivants décrivent les propriétés et les noeuds de contenu.
 | dps-abstract | Chaîne |  |
 | dps-shortAbstract | Chaîne |  |
 | dps-département | Chaîne |  |
-| dps- | Chaîne |  |
+| dps-catégorie | Chaîne |  |
 | dps-keywords | Chaîne[] |  |
 | dps-internalKeywords | Chaîne[] |  |
-| dps-importance | Chaîne[] | Importance de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| importance dps | Chaîne[] | Importance de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Articles {#articles}
 
@@ -89,7 +92,7 @@ Les tableaux suivants décrivent les propriétés et les noeuds de contenu.
 
 | Nom du nœud | Type | Valeurs par défaut ou attendues | Description |
 |--- |--- |--- |--- |
-| image | jcr:PrimaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
+| image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entités {#entities}
 
@@ -97,7 +100,7 @@ Les tableaux suivants décrivent les propriétés et les noeuds de contenu.
 
 | Nom du nœud | Type | Valeurs attendues par défaut | Description |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr:PrimaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |
+| social-share-image |  | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |
 
 #### Bannières {#banners-1}
 
@@ -109,4 +112,4 @@ Les tableaux suivants décrivent les propriétés et les noeuds de contenu.
 
 | Nom du nœud | Type | Valeurs attendues par défaut | Description |
 |--- |--- |--- |--- |
-| arrière-plan-image | jcr:PrimaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
+| image d’arrière-plan | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
