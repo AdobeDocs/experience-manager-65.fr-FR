@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 65%
 
 ---
 
@@ -41,19 +44,19 @@ The `<ui:includeClientLib>` tag Includes a AEM html client library, which can be
 
 Elle présente les attributs suivants :
 
-**categories** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
+**catégories** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**theme** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
+**thème** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
+**js** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
+**css** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
 
 Equivalent à: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
@@ -109,21 +112,21 @@ Il présente les attributs facultatifs ci-dessous :
 
 **oldValue** - Valeur à utiliser pour la sortie diff. Si cet attribut est présent, il annule l’utilisation de l’attribut property.
 
-**escapeXml** - Définit si les caractères &lt;, >, &amp;, &quot; et &quot; de la chaîne résultante doivent être convertis en leur code d&#39;entité de caractère correspondant. La valeur par défaut est false. Notez que l’échappement est appliqué après la mise en forme facultative.
+**escapeXml** - Définit si les caractères &lt;, >, &amp;, &#39; et &quot; de la chaîne résultante doivent être convertis en codes d&#39;entité de caractères correspondants. La valeur par défaut est false. Notez que l’échappement est appliqué après la mise en forme facultative.
 
-**format** : java.text.Format facultatif à utiliser pour le formatage du texte.
+**format** - Facultatif java.text.Format à utiliser pour le formatage du texte.
 
-**noDiff** : supprime le calcul d’une sortie diff, même si une information diff est présente.
+**noDiff** - Supprime le calcul d&#39;une sortie diff, même si une information diff est présente.
 
 **tagClass** - nom de classe CSS d’un élément qui entoure une sortie non vide. Si elle est vide, aucun élément n’est ajouté.
 
-**tagName** : nom de l’élément qui entourera une sortie non vide. Cet attribut est défini, par défaut, sur DIV.
+**tagName** : nom de l’élément qui entoure une sortie non vide. Cet attribut est défini, par défaut, sur DIV.
 
-**espace réservé** - Valeur par défaut à utiliser pour le texte vide ou nul en mode d’édition, c’est-à-dire l’espace réservé. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie. Elle est définie par défaut sur :
+**espace réservé** : valeur par défaut à utiliser pour le texte vide ou nul en mode d’édition, c’est-à-dire l’espace réservé. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie. Elle est définie par défaut sur :
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
-**default** - Valeur par défaut à utiliser pour le texte nul ou vide. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie.
+**default** - valeur par défaut à utiliser pour le texte vide ou nul. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie.
 
 Some examples how the `<cq:text>` tag can be used in a JSP:
 
@@ -161,17 +164,17 @@ The `<cq:setContentBundle>` tag creates an i18n localization context and stores 
 
 Elle présente les attributs suivants :
 
-**language** - Langue du paramètre régional pour laquelle récupérer le regroupement de ressources.
+**langue** : langue du paramètre régional pour laquelle récupérer le regroupement de ressources.
 
-**source** : source à partir de laquelle le paramètre régional doit être pris. Les valeurs définies peuvent être les suivantes :
+**source** : source à partir de laquelle le paramètre régional doit être extrait. Les valeurs définies peuvent être les suivantes :
 
 * **static** : le paramètre régional est extrait de l’ `language` attribut si disponible, sinon du paramètre régional par défaut du serveur.
 
-* **page** : le paramètre régional est extrait de la langue de la page ou de la ressource en cours, le cas échéant, de l’ `language` attribut si disponible, sinon du paramètre régional par défaut du serveur.
+* **page** : le paramètre régional est extrait de la langue de la page ou de la ressource active si elle est disponible, sinon de l’attribut `language` s’il est disponible, sinon du paramètre régional par défaut du serveur.
 
-* **request** : le paramètre régional est extrait du paramètre régional de requête ( `request.getLocale()`).
+* **request** : le paramètre régional est extrait du paramètre régional de la demande ( `request.getLocale()`).
 
-* **auto** : le paramètre régional est extrait de l’ `language` attribut si disponible, sinon de la langue de la page ou de la ressource active si disponible, sinon de la requête.
+* **auto** : le paramètre régional est extrait de l’ `language` attribut s’il est disponible, sinon de la langue de la page ou de la ressource en cours si disponible, sinon de la requête.
 
 Si l’attribut `source` n’est pas défini :
 
@@ -256,25 +259,25 @@ Should you use `<cq:include>` or `<sling:include>`?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` est obsolète depuis AEM 5.6. [ doit `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) être utilisé à la place.
+>`<cq:includeClientLib>` est devenu obsolète depuis AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) devrait être utilisé à la place.
 
 The `<cq:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css or a theme library. Pour plusieurs inclusions de types différents, par exemple js et css, cette balise doit être utilisée plusieurs fois dans le fichier jsp. Cette balise est une enveloppe dite de commodité (convenience wrapper) utilisée autour de l’interface de service `com.day.cq.widget.HtmlLibraryManager`.
 
 Elle présente les attributs suivants :
 
-**categories** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
+**catégories** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
 
 Equivalent à: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**theme** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
+**thème** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
 
 Equivalent to: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
+**js** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
 
 Equivalent à: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** - Liste des catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
+**css** - liste de catégories de lib client séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
 
 Equivalent à: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
@@ -448,7 +451,7 @@ Cela vous permet de créer des liens vers la page en cours avec des paramètres 
 
 The use of `addParam` or `removeParam` only changes the occurrence of the given parameter, all other parameters are unaffected.
 
-`<cq:requestURL>` ne comporte aucun attribut.
+`<cq:requestURL>` n’a aucun attribut.
 
 Exemples :
 
