@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '2065'
+ht-degree: 80%
 
 ---
 
@@ -37,35 +40,35 @@ Lorsque vous accédez à cette console pour la première fois, vous pouvez const
 
 Les configurations par défaut disponibles sont les suivantes :
 
-* **Éditeur de page (recherche de documents):**
+* **Éditeur de page (recherche de documents) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de documents dans l’explorateur d’actifs (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de document dans l’explorateur d’actifs (lors de la modification d’une page).
 
-* **Éditeur de page (recherche d’images):**
+* **Éditeur de page (recherche d’images) :**
 
-   Cette configuration définit les options disponibles lors de la recherche d’images dans l’explorateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche d’images dans le navigateur de ressources (lors de la modification d’une page).
 
-* **Éditeur de page (recherche de manuscrits):**
+* **Éditeur de page (recherche de manuscrits) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de manuscrits dans l’explorateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de manuscrits dans le navigateur de ressources (lors de la modification d’une page).
 
-* **Éditeur de page (recherche de pages):**
+* **Éditeur de page (recherche de pages) :**
 
    Cette configuration définit les options disponibles lors de la recherche de pages dans l’explorateur d’actifs (lors de la modification d’une page).
 
-* **Éditeur de page (recherche de paragraphes):**
+* **Éditeur de page (recherche de paragraphes) :**
 
    Cette configuration définit les options disponibles lors de la recherche de paragraphes dans l’explorateur d’actifs (lors de la modification d’une page).
 
-* **Éditeur de page (recherche de produits):**
+* **Éditeur de page (recherche de produits) :**
 
-   Cette configuration définit les options disponibles lors de la recherche de produits dans l’explorateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de produits dans l’explorateur d’actifs (lors de la modification d’une page).
 
-* **Éditeur de page (recherche Scene7)**:
+* **Éditeur de page (recherche Scene7)** :
 
-   Cette configuration définit les options disponibles lors de la recherche de ressources Scene7 dans l’explorateur de ressources (lors de la modification d’une page).
+   Cette configuration définit les options disponibles lors de la recherche de ressources Scene7 dans le navigateur de ressources (lors de la modification d’une page).
 
-* **Rail de recherche d’administration de site**:
+* **Rail de recherche d’administrateurs de sites** :
 
    Cette configuration définit les options de recherche disponibles pour l&#39;utilisateur lors de l&#39;utilisation du rail de recherche de la console Sites.
 
@@ -73,7 +76,7 @@ Les configurations par défaut disponibles sont les suivantes :
 
    Cette configuration définit les options disponibles lors de la recherche de vidéos dans le navigateur de ressources (lors de la modification d’une page).
 
-* **Rail de recherche d’administrateurs de ressources:**
+* **Rail de recherche d’administrateurs de ressources :**
 
    Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de l’utilisation de la console Ressources.
 
@@ -91,9 +94,9 @@ Les configurations par défaut disponibles sont les suivantes :
 
 * **Rail de recherche d’administrateurs de produits:**
 
-   Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de produits commerciaux.
+   Cette configuration définit les options de recherche disponibles pour l&#39;utilisateur lors de la recherche de produits commerciaux.
 
-* **Rail de recherche d’administrateurs de projets:**
+* **Rail de recherche d’administrateurs de projets :**
 
    Cette configuration définit les options de recherche disponibles pour l’utilisateur lors de la recherche de projets.
 
@@ -111,8 +114,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    <th>Paramètres</th>
   </tr>
   <tr>
-   <td>Analyse </td>
-   <td>Fonctionnalités de recherche/filtrage dans le navigateur Sites lors de l’affichage des données optimisées par Analytics. Les filtres de recherche Analytics se chargent jusqu’à correspondre aux colonnes d’analyses personnalisées mappées.</td>
+   <td>Analyses </td>
+   <td>Fonctionnalités de recherche/filtrage dans le navigateur Sites lors de l’affichage de données optimisées par l’analyse. Les filtres de recherche Analyses sont chargés de façon à correspondre aux colonnes Analyses personnalisées mappées.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -121,12 +124,12 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Dernière modification de la ressource </td>
-   <td>Date de la dernière modification du fichier.<br /> </td>
+   <td>Date de la dernière modification de la ressource.<br /> </td>
    <td>Prédicat personnalisé, basé sur l’attribut de date.</td>
   </tr>
   <tr>
    <td>Composants </td>
-   <td>Permet à un auteur de rechercher/filtrer les pages comportant un composant spécifique. Par exemple, une galerie d’images.<br /> </td>
+   <td>Permet à un auteur de rechercher/filtrer des pages comportant un composant spécifique. Par exemple, une galerie d’images.<br /> </td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -137,8 +140,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date </td>
-   <td>Recherche de fichiers selon un curseur en fonction d’une propriété de date.</td>
+   <td>Date    </td>
+   <td>Recherche de fichiers à l’aide de curseurs basée sur une propriété de date.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -147,8 +150,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date Plage </td>
-   <td>Recherchez les ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
+   <td>Date    Plage </td>
+   <td>Rechercher des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -161,7 +164,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>État d’expiration </td>
-   <td>Recherche de fichiers en fonction de l’état d’expiration.</td>
+   <td>Recherche de ressources en fonction de l’état d’expiration.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -171,7 +174,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Taille de fichier </td>
-   <td>Recherchez des fichiers en fonction de leur taille.</td>
+   <td>Recherche de fichiers en fonction de leur taille.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -192,8 +195,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Filtre masqué</td>
-   <td>Filtre sur la propriété et la valeur, invisible pour l’utilisateur.</td>
+   <td>Masqué   Filtrer</td>
+   <td>Filtrez selon la propriété et la valeur, invisible pour l’utilisateur.</td>
    <td>
     <ul>
      <li>Nom de la propriété</li>
@@ -202,8 +205,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Options </td>
-   <td><p>Les options sont des noeuds de contenu créés par l’utilisateur.</p> <p>See <a href="#addinganoptionspredicate">Adding an Options Predicate</a> for more information.</p> </td>
+   <td>Options  </td>
+   <td><p>Les options sont des nœuds de contenu créés par l’utilisateur.</p> <p>Pour plus d’informations, voir <a href="#addinganoptionspredicate">Ajout d’un prédicat Options</a>.</p> </td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -227,7 +230,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Page État </td>
+   <td>Page   État </td>
    <td>Rechercher des pages en fonction de leur état.</td>
    <td>
     <ul>
@@ -238,23 +241,23 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin </td>
-   <td>Rechercher des fichiers situés sous un chemin spécifique.</td>
+   <td>Chemin    </td>
+   <td>Recherche de fichiers situés sous un chemin d’accès spécifique.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
-     <li>Ajouter un chemin de recherche</li>
+     <li>Ajouter le chemin de recherche</li>
      <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Propriétés </td>
-   <td>Recherche sur une propriété spécifiée.</td>
+   <td>Propriété </td>
+   <td>Effectuez une recherche sur une propriété spécifiée.</td>
    <td>none</td>
   </tr>
   <tr>
    <td>État de publication </td>
-   <td>Recherche de fichiers en fonction de leur état de publication</td>
+   <td>Recherche de ressources en fonction de leur état de publication</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -264,7 +267,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Plage </td>
-   <td>Rechercher des ressources qui se trouvent dans une plage spécifiée. Vous pouvez spécifier, dans le panneau Rechercher, les valeurs minimale et maximale de la période concernée.</td>
+   <td>Recherchez des ressources figurant dans une plage spécifiée. Vous pouvez spécifier, dans le panneau Rechercher, les valeurs minimale et maximale de la plage concernée.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -273,8 +276,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Options d’étendue </td>
-   <td>Un prédicat de recherche spécifique pour les ressources et le même prédicat de curseur commun. Il reste disponible en raison de problèmes de rétrocompatibilité.</td>
+   <td>Plage Options  </td>
+   <td>Prédicat de recherche spécifique pour les ressources et identique à Prédicat de curseur commun. Il reste disponible en raison de problèmes de rétrocompatibilité.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -307,7 +310,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Plage du curseur </td>
-   <td>Un prédicat de recherche courant étend le prédicat de plage avec la fonctionnalité de curseur. La valeur de la propriété recherchée doit être comprise entre les limites du curseur.</td>
+   <td>Prédicat de recherche courant étendant le prédicat de plage avec la fonctionnalité de curseur. La valeur de la propriété recherchée doit être comprise entre les limites du curseur.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -317,7 +320,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Balise </td>
-   <td>Recherche de fichiers en fonction de balises. Vous pouvez configurer la propriété de chemin d’accès pour renseigner les différentes balises dans la liste de balises.</td>
+   <td>Recherche de ressources en fonction de balises. Vous pouvez configurer la propriété de chemin d’accès pour renseigner les différentes balises dans la liste de balises.</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -328,7 +331,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Balises </td>
-   <td>Recherche basée sur des balises.</td>
+   <td>Effectuez une recherche en fonction de balises.</td>
    <td>
     <ul>
      <li>Espace réservé</li>
@@ -341,7 +344,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 
 >[!NOTE]
 >
->* Les prédicats de recherche courants sont définis dans :
+>* Les prédicats de recherche courants sont définis dans :
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
    >
    >
@@ -350,6 +353,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 * Les prédicats de recherche liés uniquement à siteadmin (interface utilisateur classique) se trouvent sous :
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Elles sont obsolètes et disponibles uniquement pour une compatibilité ascendante.
+
 >
 >
 Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
@@ -360,49 +364,53 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Libellé du champ**
 
-   Libellé qui apparaîtra comme en-tête réductible ou comme libellé de champ du prédicat.
+   Libellé qui s’affiche sous forme d’en-tête réductible ou de libellé de champ du prédicat.
 
 * **Description**
 
-   Description de l’utilisateur.
+   Informations descriptives à l’intention de l’utilisateur.
 
 * **Espace réservé**
 
-   Texte vide ou espace réservé du prédicat au cas où aucun texte de filtrage n’est saisi.
+   Texte non renseigné ou espace réservé du prédicat au cas où aucun texte de filtrage ne serait saisi.
 
 * **Nom de la propriété**
 
-   Propriété à rechercher. It uses a relative path and the wildcards `*/*/*` specify the depth of the property relative to the `jcr:content` node (each asterisk represents one node level).
+   Propriété selon laquelle effectuer la recherche. Elle utilise un chemin relatif et les caractères génériques `*/*/*` pour spécifier la profondeur de la propriété par rapport au nœud `jcr:content` (chaque astérisque représente un niveau de nœud).
 
-   If you want to search only on a first level child node of the resource that has the `x` property on the `jcr:content` node use `*/jcr:content/x`
+   Si vous souhaitez effectuer une recherche uniquement sur le nœud enfant de premier niveau de la ressource, dont la propriété `x` est égale au nœud `jcr:content`, utilisez `*/jcr:content/x`.
 
 * **Détails de propriété**
 
-   Profondeur maximale pour rechercher cette propriété dans les ressources. Une recherche sur cette propriété peut donc être exécutée sur une ressource et des enfants récursifs jusqu’au niveau auquel les enfants sont égaux à la profondeur spécifiée.
+   Détails maximum selon lesquels rechercher cette propriété dans les ressources. Une recherche sur cette propriété peut donc être exécutée sur une ressource et des enfants récursifs jusqu’au niveau auquel les enfants sont égaux à la profondeur spécifiée.
 
 * **Valeur de la propriété**
 
-   The property value as an absolute string or as an expression language; for example, `cq:Page` or
+   Valeur de la propriété sous forme de chaîne absolue ou de langage utilisant des expressions ; par exemple, `cq:Page` ou
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Texte de la plage**
 
-   The label of the range field in the **Date Range** predicate.
+   Libellé du champ de plage dans le prédicat **Plage de dates**.
 
 * **Chemin d’accès aux options**
 
-   L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’explorateur de chemins dans l’onglet Paramètres de prédiction. puis cliquer sur l’icône « **+** » pour ajouter la sélection à la liste des options valides (puis sur l’icône « **-** » pour la supprimer, si nécessaire).
+   L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, puis cliquer sur l’icône « **+** » pour ajouter la sélection à la liste des options valides (puis sur l’icône « **-** » pour la supprimer, si nécessaire).
 
-   Les options sont des noeuds de contenu créés par l’utilisateur, avec la structure suivante :
+   Les options sont des nœuds de contenu créés par l’utilisateur, qui possèdent la structure suivante :
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Chemin d’accès au nœud d’options** Globalement identique à **Chemin d’accès aux options**, à la différence qu’il se trouve dans le champ de prédicat commun, tandis que l’autre est spécifique aux ressources.
+* **Chemin d’accès au nœud d’options**
+Dans la pratique, il est identique au 
+**Chemin d’accès aux options**, à la différence qu’il s’agit du champ de prédicat commun, l’autre étant spécifique aux ressources.
 
-* **Sélection simple** Si cette case est cochée, les options sont présentées sous forme de cases à cocher qui ne permettent qu’une sélection simple. Si cette option est sélectionnée par erreur, une case à cocher peut être désélectionnée.
+* **Sélection simple**
+Si cette case est cochée, les options sont présentées sous forme de cases à cocher qui ne permettent qu’une sélection simple. Si cette option est sélectionnée par erreur, vous pouvez désélectionner la case à cocher correspondante.
 
-* **Nom des propriétés de publication et Live Copy** Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
+* **Nom des propriétés de publication et Live Copy**
+Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
 
 * The &amp;ast; on the field labels in the **Settings** tab means the fields are required and if left blank an error message will appear
 
@@ -436,13 +444,13 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. Selon que :
 
-   * Vous ajoutez un nouveau champ :
+   * Vous ajoutiez ou non un nouveau champ :
 
-      Après avoir ajouté le prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
+      Après l’ajout du prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
 
-   * Vous souhaitez mettre à jour un prédicat existant :
+   * Vous souhaitiez ou non mettre à jour un prédicat existant :
 
-      Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres** .
+      Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres**.
    Par exemple, les paramètres du **prédicat de plage de dates** :
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
@@ -461,7 +469,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. **Fermez** l’aperçu pour terminer la configuration.
 
-### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
+### Suppression d’un champ de prédicat   {#deleting-a-predicate-field}
 
 1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
@@ -488,7 +496,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options {#adding-options-predicates}
+### Ajout de prédicats d’options   {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 
@@ -502,19 +510,20 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
    * `jcr:title` : libellé de champ à afficher dans le champ de recherche
    * `value` : valeur de la propriété à rechercher
+
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
-   >You ***must*** not change anything in the `/libs` path.
+   >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
    >
-   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
    >
    >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   >1. Recreate the required item, as it exists in `/libs`, under `/apps`. Dans ce cas dans :
+   >1. Recréez l’élément nécessaire, tel qu’il existe dans `/libs`, sous `/apps`. Dans ce cas dans :
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Make any changes within `/apps.`
+   >1. Apportez les modifications désirées dans `/apps.`
 
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**.
@@ -526,19 +535,19 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
    * **Nom de la propriété**
 
-      Spécifiez la propriété de noeud à rechercher sur les noeuds cible. Par exemple :
+      Spécifique à la propriété du nœud à rechercher sur les nœuds cibles. Par exemple :
 
       `jcr:content/cq:template`
 
-   * **Chemin du noeud d’option**
+   * **Chemin d’accès du nœud d’option**
 
-      Sélectionnez le chemin vers lequel vos options sont conservées. Par exemple :
+      Sélectionnez le chemin d’accès vers lequel vos options sont conservées. Par exemple :
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![chlimage_1-380](assets/chlimage_1-380.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
-1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche :
+1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Rechercher**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche:
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
@@ -550,19 +559,19 @@ Le tableau ci-dessous répertorie les autorisations nécessaires à la modificat
  <tbody>
   <tr>
    <td><strong>Action</strong></td>
-   <td><strong>Permissions</strong></td>
+   <td><strong>Autorisations</strong></td>
   </tr>
   <tr>
    <td>Modifier </td>
-   <td>Autorisations de lecture et d’écriture sur le <code>/apps </code>noeud.</td>
+   <td>Autorisations de lecture et d’écriture sur le nœud <code>/apps </code>.</td>
   </tr>
   <tr>
    <td>Supprimer</td>
-   <td>Autorisations de lecture, d’écriture et de suppression sur le <code>/apps</code> noeud</td>
+   <td>Autorisations de lecture, d’écriture et de suppression sur le nœud <code>/apps</code>.</td>
   </tr>
   <tr>
    <td>Aperçu</td>
-   <td>Autorisations de lecture, d’écriture et de suppression sur le <code>/var/dam/content</code> noeud.<br /> Autorisations de lecture et d’écriture sur le <code>/apps</code> noeud.</td>
+   <td>Autorisations de lecture, d’écriture et de suppression sur le nœud <code>/var/dam/content</code>.<br /> Autorisations de lecture et d’écriture sur le nœud <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>
