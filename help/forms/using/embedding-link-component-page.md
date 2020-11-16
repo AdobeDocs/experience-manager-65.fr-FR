@@ -11,6 +11,9 @@ discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 94%
 
 ---
 
@@ -42,7 +45,7 @@ Suivez les étapes ci-après pour ajouter un composant Link à la page :
    * **Chemin d’accès à l’actif** : chemin d’accès au référentiel de stockage de l’actif.
 
    * **Type de rendu** : le format de rendu : PDF, HTML ou Auto. Le type de rendu Auto détecte l’environnement de l’utilisateur et effectue le rendu du formulaire en conséquence, au format HTML ou PDF. Par exemple, si le formulaire est utilisé sur un périphérique mobile, le type de rendu Auto est effectué au format HTML.
-   * **** URL d’envoi :  URL de la servlet sur laquelle les données du formulaire sont envoyées.
+   * **URL d’envoi :**  URL de la servlet sur laquelle les données du formulaire sont envoyées.
    * **Profil HTML** : profil de rendu du formulaire au format HTML.
    * **Profil PDF** : profil de rendu du formulaire au format PDF.
 
