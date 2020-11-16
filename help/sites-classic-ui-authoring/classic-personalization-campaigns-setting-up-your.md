@@ -12,6 +12,9 @@ discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 translation-type: tm+mt
 source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 99%
 
 ---
 
@@ -236,7 +239,7 @@ Importation de pistes à partir d’une liste de valeurs séparées par des virg
    >La première ligne de la liste CSV contient des étiquettes dont la formulation doit être parfaitement identique à l’exemple ci-dessous :
    >
    >
-   >`email,givenName,familyName` - s&#39;il est écrit comme `givenname`, par exemple, le système ne le reconnaîtra pas.
+   >`email,givenName,familyName` - s&#39;il est écrit comme `givenname`par exemple, le système ne le reconnaîtra pas.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
