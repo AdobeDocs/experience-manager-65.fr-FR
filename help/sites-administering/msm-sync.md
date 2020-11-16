@@ -263,7 +263,7 @@ La nouvelle configuration de déploiement est alors disponible lorsque vous déf
 
 ### Exclusion des propriétés et des types de nœuds de la synchronisation {#excluding-properties-and-node-types-from-synchronization}
 
-Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes afin qu’ils n’affectent pas des types de nœuds et des propriétés spécifiques. Par exemple, de nombreuses propriétés et sous-noeuds liés au fonctionnement interne d’AEM ne doivent pas être inclus dans une copie dynamique. Seul le contenu pertinent pour l’utilisateur de la page doit être copié.
+Vous pouvez configurer différents services OSGi qui prennent en charge les actions de synchronisation correspondantes afin qu’ils n’affectent pas des types de nœuds et des propriétés spécifiques. Par exemple, de nombreuses propriétés et sous-noeuds liés au fonctionnement interne de l’AEM ne doivent pas être inclus dans une copie dynamique. Seul le contenu pertinent pour l’utilisateur de la page doit être copié.
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
@@ -287,15 +287,15 @@ Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
   </tr>
   <tr>
    <td><p>Nodetypes exclus</p> <p>cq.wcm.msm.action.excludednodetypes</p> </td>
-   <td>expression régulière qui correspond aux types de noeud à exclure de l’action de synchronisation.</td>
+   <td>Expression régulière qui correspond aux types de noeud à exclure de l’action de synchronisation.</td>
   </tr>
   <tr>
    <td><p>Éléments de paragraphe exclus</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
-   <td>expression régulière qui correspond aux éléments de paragraphe à exclure de l’action de synchronisation.</td>
+   <td>Expression régulière qui correspond aux éléments de paragraphe à exclure de l’action de synchronisation.</td>
   </tr>
   <tr>
    <td><p>Propriétés de page exclues</p> <p>cq.wcm.msm.action.excludedprops</p> </td>
-   <td>expression régulière qui correspond aux propriétés de page à exclure de l’action de synchronisation.</td>
+   <td>Expression régulière qui correspond aux propriétés de page à exclure de l’action de synchronisation.</td>
   </tr>
   <tr>
    <td><p>Types de noeuds mixtes ignorés</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
@@ -357,10 +357,10 @@ MSM permet de spécifier des groupes de configurations de déploiement général
 
 La liste ci-après des emplacements où vous pouvez spécifier les configurations de déploiement à utiliser décrit comment MSM détermine les configurations de déploiement à utiliser pour une Live Copy :
 
-* **[Propriétés des pages Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page) :**lorsqu’une page Live Copy est configurée pour utiliser une ou plusieurs configurations de déploiement, MSM utilise ces configurations de déploiement.
-* **[Propriétés des pages de plan directeur](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page) :**lorsqu’une Live Copy est basée sur un plan directeur et que la page Live Copy n’est pas configurée avec une configuration de déploiement, la configuration du déploiement associée à la page source du plan directeur est utilisée.
+* **[Propriétés des pages Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page) :** lorsqu’une page Live Copy est configurée pour utiliser une ou plusieurs configurations de déploiement, MSM utilise ces configurations de déploiement.
+* **[Propriétés des pages de plan directeur](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page) :** lorsqu’une Live Copy est basée sur un plan directeur et que la page Live Copy n’est pas configurée avec une configuration de déploiement, la configuration du déploiement associée à la page source du plan directeur est utilisée.
 * **Propriétés de la page parente de la copie dynamique :** Lorsque ni la page de copie dynamique ni la page source du plan directeur ne sont configurées avec une configuration de déploiement, la configuration de déploiement qui s&#39;applique à la page parente de la page de copie dynamique est utilisée.
-* **[Valeur par défaut](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)du système :**Lorsque la configuration de déploiement de la page parente de la copie dynamique ne peut pas être déterminée, la configuration de déploiement par défaut du système est utilisée.
+* **[Valeur par défaut](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)du système :** Lorsque la configuration de déploiement de la page parente de la copie dynamique ne peut pas être déterminée, la configuration de déploiement par défaut du système est utilisée.
 
 Par exemple, un plan directeur utilise le site de référence We.Retail comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste ci-dessous décrit un scénario d’utilisation distinct des configurations de déploiement :
 
