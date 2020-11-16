@@ -33,7 +33,7 @@ Dans cette procédure :
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the credential and keystore:
 
-   `keytool -genkey -dname "CN=`*Nom *d’hôte`, OU=`** Nom `, O=`*de *Société Nom`,L=`** Ville NomÉtat Code du pays&quot; key_passwordnom_stockage`, S=`* *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
+   `keytool -genkey -dname "CN=`*Nom* d’hôte `, OU=`** Nom `, O=`*de* Société Nom `,L=`** Ville NomÉtat Code du pays&quot; key_passwordnom_stockage `, S=`**`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Dans cette procédure :
    * (Grappe de serveurs) `keytool -export -alias "AEMForms Cert" -file AEMForms_cert.cer -keystore [appserver root]/domain/configuration/keystorename.keystore`
 
 1. Saisissez le *mot_de_passe_clés* lorsque vous êtes invité à saisir un mot de passe.
-1. Copy the AEMForms_cert.cer file to the *[appserver root]\conf *directory by typing the following command:
+1. Copy the AEMForms_cert.cer file to the *[appserver root] \conf* directory by typing the following command:
 
    * (Windows Single Server) `copy AEMForms_cert.cer [appserver root]\standalone\configuration`
    * (Grappe Windows Server) `copy AEMForms_cert.cer [appserver root]\domain\configuration`
@@ -78,7 +78,7 @@ Dans cette procédure :
 
 1. Importez le certificat en saisissant la commande suivante :
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Type `changeit` as the password. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
 1. Lorsque vous êtes invité à saisir `Trust this certificate? [no]`:, tapez `yes`. La confirmation « Certificate was added to keystore » s’affiche.
@@ -169,7 +169,7 @@ Dans cette procédure :
 
 1. In a command prompt, navigate to *[JAVA HOME]*/bin and type the following command to create the keystore and the key:
 
-   `keytool -genkey -dname "CN=`*Nom *d’hôte`, OU=`** Nom `, O=`*de *Société Nom`, L=`** Ville NomÉtat Code du pays&quot;--key_passwordnom_stockage_clés`, S=`* *`, C=`**`-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
+   `keytool -genkey -dname "CN=`*Nom* d’hôte `, OU=`** Nom `, O=`*de* Société Nom `, L=`** Ville NomÉtat Code du pays&quot;--key_passwordnom_stockage_clés `, S=`**`, C=`**`-alias "AEMForms Cert"``-keyalg RSA -keypass`**`-keystore`**`.keystore`
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ Dans cette procédure :
 
 1. Saisissez le commande suivante afin de générer une demande de certificat à envoyer à l’autorité de certification :
 
-   `keytool -certreq -alias` &quot;AEMForms Cert&quot; `-keystore`*nom_stockage *de clés`.keystore -file`*AEMFormscertRequest.csr*
+   `keytool -certreq -alias` &quot;AEMForms Cert&quot; `-keystore`*nom_stockage* de clés `.keystore -file`*AEMFormscertRequest.csr*
 
 1. Dès que votre demande de certificat est remplie, passez à la procédure suivante.
 
@@ -195,7 +195,7 @@ Dans cette procédure :
 
 1. In a command prompt, navigate to *`[JAVA HOME]`*/bin and type the following command to import the credential into the keystore:
 
-   `keytool -import -trustcacerts -file`*CACertificateName *`.crt -keystore`*keystorename* `.keystore`
+   `keytool -import -trustcacerts -file`*CACertificateName* `.crt -keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
