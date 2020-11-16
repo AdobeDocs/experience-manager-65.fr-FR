@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +30,7 @@ L’IU Granite fournit toute une gamme de composants conçus pour être utilisé
 
 >[!NOTE]
 >
->Pour plus d’informations sur les champs, consultez la [documentation de l’IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Pour plus d’informations sur les champs, consultez la [documentation de l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 Utilisez la structure de base de l’IU Granite pour développer et/ou étendre les composants Granite. Elle comprend deux éléments :
 
