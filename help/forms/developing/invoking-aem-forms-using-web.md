@@ -29,13 +29,13 @@ Les services Web vous permettent d’effectuer les mêmes opérations de service
 
 Les services AEM Forms sont exposés via le protocole SOAP et sont conformes à WSI Basic Profil 1.1. Web Services Interoperability (WSI) est une organisation ouverte qui fait la promotion de l&#39;interopérabilité des services Web entre les plateformes. Pour plus d’informations, voir [https://www.ws-i.org/](https://www.ws-i.org).
 
-aem forms prend en charge les normes de service Web suivantes :
+AEM Forms prend en charge les normes de service Web suivantes :
 
 * **Encodage**: Prend uniquement en charge le codage document et littéral (qui est le codage préféré selon le Profil de base WSI). (Voir [Appel d’AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
 * **MTOM**: Représente un moyen de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel d’AEM Forms à l’aide de MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: Représente une autre façon de coder des pièces jointes avec des requêtes SOAP. (Voir [Appel d’AEM Forms à l’aide de SwaRef](#invoking-aem-forms-using-swaref).)
 * **SOAP avec pièces jointes**: Prend en charge à la fois MIME et DIME (Encapsulation de messages Internet directs). Ces protocoles sont des moyens standard d’envoyer des pièces jointes par le biais de SOAP. Les applications Microsoft Visual Studio .NET utilisent DIME. (Voir [Appel d’AEM Forms à l’aide du codage](#invoking-aem-forms-using-base64-encoding)Base64.)
-* **WS-Security**: Prend en charge un profil de jeton de mot de passe de nom d&#39;utilisateur, qui est un moyen standard d&#39;envoyer des noms d&#39;utilisateur et des mots de passe dans le cadre de l&#39;en-tête SOAP de sécurité WS. aem forms prend également en charge l’authentification de base HTTP. (Voir [Transmission d’informations d’identification à l’aide d’en-têtes](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html)WS-Security.)
+* **WS-Security**: Prend en charge un profil de jeton de mot de passe de nom d&#39;utilisateur, qui est un moyen standard d&#39;envoyer des noms d&#39;utilisateur et des mots de passe dans le cadre de l&#39;en-tête SOAP de sécurité WS. AEM Forms prend également en charge l’authentification de base HTTP. (Voir [Transmission d’informations d’identification à l’aide d’en-têtes](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html)WS-Security.)
 
 Pour appeler des services AEM Forms à l’aide d’un service Web, vous créez généralement une bibliothèque proxy qui utilise le service WSDL. La section *Appel d’AEM Forms à l’aide des services* Web utilise JAX-WS pour créer des classes proxy Java afin d’appeler des services. (Voir [Création de classes de proxy Java à l’aide de JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -365,13 +365,13 @@ Vous pouvez utiliser JAX-WS pour convertir un WSDL de service Forms en classes p
 
 1. Installez Apache Ant sur l’ordinateur client. (Voir [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi).)
 
-   * ajoutez le répertoire bin à votre chemin de classe.
+   * Ajoutez le répertoire bin à votre chemin de classe.
    * Définissez la variable `ANT_HOME` d’environnement sur le répertoire dans lequel vous avez installé Ant.
 
 1. Installez JDK 1.6 ou version ultérieure.
 
-   * ajoutez le répertoire bin JDK sur votre chemin de classe.
-   * ajoutez le répertoire bin JRE sur votre chemin de classe. Ce répertoire se trouve dans le `[JDK_INSTALL_LOCATION]/jre` répertoire.
+   * Ajoutez le répertoire bin JDK sur votre chemin de classe.
+   * Ajoutez le répertoire bin JRE sur votre chemin de classe. Ce répertoire se trouve dans le `[JDK_INSTALL_LOCATION]/jre` répertoire.
    * Définissez la variable `JAVA_HOME` d’environnement sur le répertoire dans lequel vous avez installé le JDK.
 
    Le JDK 1.6 inclut le programme wsimport utilisé dans le fichier build.xml. Le JDK 1.5 n’inclut pas ce programme.
@@ -482,7 +482,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
 
 1. Installez Apache Ant sur l’ordinateur client. Il est disponible à l&#39;adresse [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi).
 
-   * ajoutez le répertoire bin à votre chemin de classe.
+   * Ajoutez le répertoire bin à votre chemin de classe.
    * Définissez la variable `ANT_HOME` d’environnement sur le répertoire dans lequel vous avez installé Ant.
 
 1. Installez Apache Axis 1.4 sur l’ordinateur client. Il est disponible à l&#39;adresse [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md).
@@ -544,7 +544,7 @@ Vous pouvez générer des fichiers de bibliothèque Java Axis en procédant comm
     http://localhost:8080/soap/services/EncryptionService?blob=base64;
    ```
 
-1. ajoutez les fichiers JAR Axis suivants au chemin de classe de votre projet Java :
+1. Ajoutez les fichiers JAR Axis suivants au chemin de classe de votre projet Java :
 
    * activation.jar
    * axis.jar
@@ -1040,7 +1040,7 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 
 ## Appel de AEM Forms à l’aide de DIME {#invoking-aem-forms-using-dime}
 
-Vous pouvez appeler les services AEM Forms à l’aide de SOAP avec des pièces jointes. aem forms prend en charge les normes de service Web MIME et DIME. DIME vous permet d’envoyer des pièces jointes binaires, telles que des documents PDF, ainsi que des demandes d’appel au lieu de coder la pièce jointe. La section *Appel d’AEM Forms à l’aide de DIME* traite de l’appel du processus de courte durée AEM Forms suivant nommé `MyApplication/EncryptDocument` à l’aide de DIME.
+Vous pouvez appeler les services AEM Forms à l’aide de SOAP avec des pièces jointes. AEM Forms prend en charge les normes de service Web MIME et DIME. DIME vous permet d’envoyer des pièces jointes binaires, telles que des documents PDF, ainsi que des demandes d’appel au lieu de coder la pièce jointe. La section *Appel d’AEM Forms à l’aide de DIME* traite de l’appel du processus de courte durée AEM Forms suivant nommé `MyApplication/EncryptDocument` à l’aide de DIME.
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
@@ -1116,7 +1116,7 @@ Vous pouvez appeler un service Forms à l’aide de DIME. Prenons le `MyApplicat
    * Valeur de chaîne spécifiant l’emplacement du document PDF à transmettre au processus AEM Forms.
 
 1. Créez un objet `BLOB` en utilisant son constructeur.
-1. ajoutez la pièce jointe DIME à l’ `BLOB` objet en affectant la valeur de membre `Microsoft.Web.Services2.Dime.DimeAttachment` de données de l’objet au membre `Id` de données de l’ `BLOB` `attachmentID` objet.
+1. Ajoutez la pièce jointe DIME à l’ `BLOB` objet en affectant la valeur de membre `Microsoft.Web.Services2.Dime.DimeAttachment` de données de l’objet au membre `Id` de données de l’ `BLOB` `attachmentID` objet.
 1. Appelez la `EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add` méthode et transmettez l’ `Microsoft.Web.Services2.Dime.DimeAttachment` objet.
 1. Appelez le `MyApplication/EncryptDocument` processus en appelant la `EncryptDocumentServiceWse` méthode de l’ `invoke` objet et en transmettant l’ `BLOB` objet contenant la pièce jointe DIME. Ce processus renvoie un document PDF chiffré dans un `BLOB` objet.
 1. Récupérez la valeur de l’identifiant de pièce jointe en obtenant la valeur du membre `BLOB` de données de l’objet `attachmentID` renvoyé.
@@ -1174,14 +1174,14 @@ Pour appeler le `MyApplication/EncryptDocument` service (qui a été créé dans
 
 ## Utilisation de l’authentification SAML {#using-saml-based-authentication}
 
-aem forms prend en charge divers modes d’authentification de service Web lors de l’appel de services. Un mode d’authentification consiste à spécifier un nom d’utilisateur et une valeur de mot de passe à l’aide d’un en-tête d’autorisation de base dans l’appel de service Web. aem forms prend également en charge l’authentification basée sur l’assertion SAML. Lorsqu’une application cliente appelle un service AEM Forms à l’aide d’un service Web, l’application cliente peut fournir des informations d’authentification de l’une des manières suivantes :
+AEM Forms prend en charge divers modes d’authentification de service Web lors de l’appel de services. Un mode d’authentification consiste à spécifier un nom d’utilisateur et une valeur de mot de passe à l’aide d’un en-tête d’autorisation de base dans l’appel de service Web. AEM Forms prend également en charge l’authentification basée sur l’assertion SAML. Lorsqu’une application cliente appelle un service AEM Forms à l’aide d’un service Web, l’application cliente peut fournir des informations d’authentification de l’une des manières suivantes :
 
 * Transmission des informations d’identification dans le cadre de l’autorisation de base
 * Transmission du jeton username dans l&#39;en-tête WS-Security
 * Transmission d’une assertion SAML dans le cadre de l’en-tête WS-Security
 * Transmission du jeton Kerberos dans l&#39;en-tête WS-Security
 
-aem forms ne prend pas en charge l’authentification par certificat standard, mais il prend en charge l’authentification par certificat sous une autre forme.
+AEM Forms ne prend pas en charge l’authentification par certificat standard, mais il prend en charge l’authentification par certificat sous une autre forme.
 
 >[!NOTE]
 >
