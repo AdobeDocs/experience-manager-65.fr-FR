@@ -21,7 +21,7 @@ ht-degree: 81%
 
 # Introduction à la personnalisation de l’espace de travail AEM Forms{#introduction-to-customizing-aem-form-workspace}
 
-L’espace de travail AEM forms permet de modifier la sémantique de la présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
+L’espace de travail de formulaire AEM permet de modifier la sémantique de présentation et les fonctionnalités de son interface. Les types de personnalisations pour modifier le style, la mise en page, le formatage, la marque et les principales fonctionnalités sont décrits ci-dessous.
 
 ![cu_custom_workspace_example](assets/cu_customized_workspace_example.png)
 
@@ -55,7 +55,7 @@ Pour personnaliser l’espace de travail, nous vous recommandons de vous familia
   </tr>
   <tr>
    <td><p>#header</p> </td>
-   <td><p>En-tête de l'espace de travail AEM Forms</p> </td>
+   <td><p>En-tête de l’espace de travail AEM Forms</p> </td>
   </tr>
   <tr>
    <td><p>.categoryList</p> </td>
@@ -130,7 +130,7 @@ Les étapes de niveau supérieur pour une personnalisation CSS sont les suivante
 * Ajoutez des éléments de style dans ce fichier CSS. Voir Description des styles CSS pour plus d’informations.
 * Update its references in `html.jsp`.
 
-For the exact steps to do these customizations, see [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md). Le fichier CSS fourni avec l&#39;espace de travail AEM Forms se trouve dans /libs/ws/css/. Pour les personnalisations CSS, utilisez la commande [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Vous trouverez des exemples spécifiques de personnalisations CSS dans les rubriques d’aide connexes à la fin de cet article.
+For the exact steps to do these customizations, see [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md). Le fichier CSS fourni avec l’espace de travail AEM Forms se trouve dans /libs/ws/css/. Pour les personnalisations CSS, utilisez la commande [Ship Package](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Vous trouverez des exemples spécifiques de personnalisations CSS dans les rubriques d’aide connexes à la fin de cet article.
 
 #### Image {#image}
 
@@ -172,7 +172,7 @@ Pour plus d’informations conceptuelles sur les composants qui font partie du c
 
 ### Composants réutilisables {#reusable-components}
 
-Comme l&#39;espace de travail AEM Forms est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
+Comme AEM Forms Workspace est un logiciel basé sur des composants, il peut être facilement personnalisé et réutilisé. Vous pouvez intégrer facilement les composants de l’espace de travail avec vos applications Web.
 
 For more conceptual information, see the [Description of reusable components](/help/forms/using/description-reusable-components.md) and for instruction about using the components, see [Integrating AEM Forms workspace components in web applications](/help/forms/using/description-reusable-components.md).
 
@@ -212,7 +212,7 @@ Il est essentiellement destiné aux personnalisations, car il permet de génére
 
             * initializer - contient le fichier initializer.js utilisé pour initialiser les vues et les modèles Backbone utilisés dans l’espace de travail AEM Forms.
             * models - contient les modèles Backbone de tous les composants présents dans l’espace de travail AEM Forms.
-            * routes - contient des fichiers JavaScript et HTML qui chargent les processus de début, les tâches, le suivi et les préférences dans l’espace de travail AEM Forms.
+            * routes - contient des fichiers JavaScript et HTML qui chargent les processus, les tâches, le suivi et les préférences du début dans l’espace de travail AEM Forms.
             * services - contient le fichier service.js utilisé dans l’espace de travail AEM Forms. Tous les appels de serveur sont effectués via service.js.
             * templates - contient tous les contrôleurs, c’est-à-dire les fichiers HTML de toutes les vues dans l’espace de travail AEM Forms.
             * util - contient tous les fichiers d’utilitaire (JavaScript) utilisés dans l’espace de travail AEM Forms.
@@ -354,7 +354,7 @@ mvn clean -P Dev install sur client-pkg
 
       * initializer : contient initializer.js et modelcontrollerpath.js.
       * models : contient les modèles de tous les composants de l’espace de travail AEM Forms.
-      * routes - contient des fichiers JavaScript et HTML qui chargent les processus de début, les tâches, le suivi et les préférences dans l’espace de travail AEM Forms.
+      * routes - contient des fichiers JavaScript et HTML qui chargent les processus, les tâches, le suivi et les préférences du début dans l’espace de travail AEM Forms.
       * services - contient le fichier service.js utilisé dans l’espace de travail AEM Forms. 
       * templates - contient tous les modèles, c’est-à-dire les fichiers HTML de tous les composants dans l’espace de travail AEM Forms.
       * util - contient tous les fichiers d’utilitaire (JavaScript) utilisés dans l’espace de travail AEM Forms.
