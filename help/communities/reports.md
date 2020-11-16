@@ -132,7 +132,7 @@ Sélectionnez les critères du rapport :
 
 * **[!UICONTROL Type de contenu]**
 
-   Vous pouvez choisir Tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
+   Vous pouvez choisir tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
 
 * **[!UICONTROL Période]**
 
@@ -161,7 +161,7 @@ Sélectionnez les critères du rapport :
 
 * **[!UICONTROL Type de contenu]**
 
-   Vous pouvez choisir Tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
+   Vous pouvez choisir tout le contenu ou sélectionner l’une des fonctionnalités présentes sur le site.
 
 * **[!UICONTROL Période]**
 
