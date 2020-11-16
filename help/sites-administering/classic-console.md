@@ -12,6 +12,9 @@ discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '871'
+ht-degree: 69%
 
 ---
 
@@ -45,15 +48,22 @@ for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 1. Dans les deux cas, saisissez
 
-   * **Titre**(*Obligatoire*) Titre d’affichage de la balise. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
+   * **Titre**
+(
+*Obligatoire*) Titre d’affichage de la balise. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
 
-      * `colon (:)` - délimiteur d’espace de noms
+      * `colon (:)` - Délimiteur d&#39;espace de nommage
       * `forward slash (/)` - délimiteur de sous-balises
+
       Si vous saisissez ces caractères, ils ne s’affichent pas.
 
-   * **Nom**(*Obligatoire*) Nom du noeud pour la balise .
+   * **Nom**
+(
+*Obligatoire*) Nom du noeud pour la balise .
 
-   * **Description**(*Facultatif*) Description de la balise .
+   * **Description**
+(
+*facultatif*) Description de la balise.
 
    * Sélectionnez **Créer**.
 
