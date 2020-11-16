@@ -58,7 +58,7 @@ Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour l
 
 * **Autoriser les commentaires sur les fichiers**
 
-   Si cette case est cochée, autorisez des commentaires sur les fichiers téléchargés. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les commentaires sur les fichiers téléchargés. Cette option n’est pas cochée par défaut.
 
 * **Commentaires par page**
 
@@ -74,7 +74,7 @@ Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour l
 
 * **Types de fichier autorisés**
 
-   liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. La valeur par défaut n&#39;est pas spécifiée de sorte que tous les types de fichier soient autorisés.
+   Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. La valeur par défaut n&#39;est pas spécifiée de sorte que tous les types de fichier soient autorisés.
 
 * **Éditeur de texte enrichi**
 
