@@ -1,6 +1,6 @@
 ---
-title: Adobe Experience Manager (AEM) et directives d’accessibilité du Web
-description: Introduction à l’Adobe Experience Manager (AEM) et aux directives d’accessibilité du Web
+title: Adobe Experience Manager (AEM) et les directives d'accessibilité du Web
+description: Introduction à Adobe Experience Manager (AEM) et aux directives sur l'accessibilité au Web
 translation-type: tm+mt
 source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
@@ -12,9 +12,9 @@ ht-degree: 84%
 
 # AEM et les consignes pour l’accessibilité web{#aem-and-the-web-accessibility-guidelines}
 
-De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible au public cible, quelles que soient ses situations de handicap ou ses limitations. L’accessibilité au Web avec l’Adobe Experience Manager (AEM) est donc un aspect de plus en plus important de la bonne conception Web.
+De nombreuses motivations sociales, économiques et juridiques peuvent vous inciter à vous assurer que votre contenu web est conçu de façon à être aussi accessible que possible au public cible, quelles que soient ses situations de handicap ou ses limitations. L&#39;accessibilité au Web avec Adobe Experience Manager (AEM) est donc un aspect de plus en plus important d&#39;une bonne conception Web.
 
-Création de sites Web et de contenu accessibles avec les impacts d’AEM :
+Création de sites Web et de contenu accessibles avec un impact AEM :
 
 * les administrateurs chargés de configurer AEM pour s’assurer que les fonctions d’accessibilité sont correctement activées ;
 
@@ -56,7 +56,7 @@ En utilisant Adobe Experience Manager, les auteurs de contenu et/ou les propri
 >
 >Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
 
-## L’accessibilité chez Adobe  {#accessibility-at-adobe}
+## L’accessibilité chez Adobe   {#accessibility-at-adobe}
 
 Pour plus d’informations, consultez le [Centre de ressources sur l’accessibilité Adobe](https://www.adobe.com/accessibility/).
 
