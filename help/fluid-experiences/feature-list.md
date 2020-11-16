@@ -47,7 +47,7 @@ Les tableaux ci-dessous définissent les fonctionnalités des AEM Expériences f
 
 |  |
 |---|
-| [API HTTP](/help/assets/mac-api-assets.md) |
+| API HTTP [ ](/help/assets/mac-api-assets.md) |
 | [Modèles de contenu structuré](/help/assets/content-fragments/content-fragments.md) |
 | [Services de contenu](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) |
