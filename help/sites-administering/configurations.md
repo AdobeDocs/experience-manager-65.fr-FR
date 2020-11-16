@@ -197,7 +197,7 @@ Pour ce faire, la recherche de configuration dans AEM dispose d’un mécanisme 
 
 Les configurations dans AEM sont basées sur les configurations Sling de prise en compte du contexte. Les lots Sling fournissent une API de service qui peut être utilisée pour obtenir des configurations contextuelles. Les configurations sensibles au contexte sont des configurations qui sont liées à une ressource de contenu ou à une arborescence de ressources, comme [décrit dans l&#39;exemple précédent.](#developer-example)
 
-Pour plus d’informations sur les configurations basées sur le contexte, des exemples et la manière de les utiliser, [consultez la documentation Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Pour plus d’informations sur les configurations basées sur le contexte, des exemples et comment les utiliser, [consultez la documentation Sling.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
 ### Console Web ConfMgr {#confmgr-web-console}
 
