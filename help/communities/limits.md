@@ -40,7 +40,7 @@ Cette configuration OSGi :
 
 Pour atteindre cette configuration OSGi :
 
-* Dans l’éditeur principal :
+* Sur l’éditeur Principal :
 * Connectez-vous avec des droits d’administrateur.
 * Access the [Web Console](../../help/sites-deploying/configuring-osgi.md).
 
@@ -71,9 +71,9 @@ Pour atteindre cette configuration OSGi :
 
 * **[!UICONTROL Domaines]**
 
-   liste de liste autorisée d’un ou de plusieurs domaines de courriel. Sélectionnez l’icône + pour effectuer d’autres entrées.
+   Liste de liste autorisée d’un ou de plusieurs domaines de courriel. Sélectionnez l’icône + pour effectuer d’autres entrées.
 
-   Les utilisateurs dont les adresses électroniques se placent sur l&#39;liste autorisée de domaines ne sont pas affectés lorsque les limites de contribution UGC sont automatiquement appliquées. Par exemple, si un domaine `mycompany.com` est ajouté à la liste des domaines, un membre avec une adresse électronique `me@mycompany.com` n’est jamais limité à la publication.
+   Les utilisateurs dont les adresses électroniques se placent sur la liste autorisée de domaines ne sont pas affectés lorsque les limites de contribution UGC sont automatiquement appliquées. Par exemple, si un domaine `mycompany.com` est ajouté à la liste des domaines, un membre avec une adresse électronique `me@mycompany.com` n’est jamais limité à la publication.
 
    La valeur par défaut est une liste autorisée vide.
 
