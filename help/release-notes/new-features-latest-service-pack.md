@@ -84,7 +84,7 @@ Vous pouvez maintenant configurer le [!DNL Experience Manager Forms] serveur pou
 [!DNL Experience Manager Forms] Le modèle de données de formulaire peut désormais [s’intégrer aux API RESTful sur un serveur sur lequel un protocole SSL bidirectionnel est implémenté](../../help/forms/using/configure-data-sources.md).
 
 
-### Prise en charge Ajoutée des [!DNL Adobe Sign] balises de texte dans le service de conversion automatisée de Forms {#sign-integration-acroform-afcs}
+### Prise en charge Ajoutée des [!DNL Adobe Sign] balises de texte dans Automated forms conversion Service {#sign-integration-acroform-afcs}
 
 Si un AcroForm inclut des [!DNL Adobe Sign] balises de texte, ces champs sont maintenant reconnus et représentés comme [!DNL Adobe Sign] champs dans le formulaire adaptatif converti à l’aide de [!DNL Automated Forms Conversion service]. Un signataire peut remplir ces champs lors de la signature du formulaire adaptatif.
 
