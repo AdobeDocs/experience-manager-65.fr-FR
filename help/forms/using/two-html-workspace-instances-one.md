@@ -26,7 +26,7 @@ Les administrateurs d’AEM Forms personnalisent l’espace de travail afin de c
 Procédez comme suit pour configurer l’espace de travail AEM Forms.
 
 1. Installez le package de développement de l’espace de travail AEM Forms sur votre serveur. Voir [Package de développement](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) pour obtenir des instructions de création.
-1. Connectez-vous à CRXDE Lite en tant qu’administrateur en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Connectez-vous au CRXDE Lite en tant qu’administrateur en y accédant `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copiez et collez le nœud ws dans /content. Attribuez au nœud le nom ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. Dans les propriétés de ce nœud, attribuez à `sling:resourceType` la valeur ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. 
 
 1. Copiez le dossier ws dans /libs et collez-le dans /apps. Attribuez au dossier le nom ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. 
