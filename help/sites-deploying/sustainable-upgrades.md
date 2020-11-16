@@ -12,6 +12,9 @@ discoiquuid: e35c9352-f0d5-4db5-b88f-0720af8f6883
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '859'
+ht-degree: 77%
 
 ---
 
@@ -52,7 +55,7 @@ Pour permettre aux utilisateurs de mieux comprendre les zones de **/libs** qui p
 
 * **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Nodes can be overlaid or inherited ( `sling:resourceSupertype`) but must not be used directly ( `sling:resourceType`).
 
-* **Final (granite:FinalArea)** : définit un nœud comme étant final. Les noeuds classés comme finaux ne doivent idéalement pas être superposés ou hérités. Final nodes can be used directly via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
+* **Final (granite:FinalArea)** : définit un nœud comme étant final. Dans l&#39;idéal, les noeuds classés comme finaux ne doivent pas être superposés ou hérités. Final nodes can be used directly via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
 
 * ***Internal (granite:InternalArea)*** *- *Définit un noeud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement aux fonctionnalités internes d’AEM.
 
@@ -82,13 +85,13 @@ Mixins applied in CRXDE Lite will show content nodes and trees that are marked a
 
 >[!NOTE]
 >
->Depuis AEM 6.5, Adobe recommande d’utiliser le détecteur de schémas pour détecter les violations d’accès au contenu. Les rapports des détecteurs de schémas sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
+>À partir de AEM 6.5, l’Adobe recommande d’utiliser le Détecteur de schémas pour détecter les violations d’accès au contenu. Les rapports des détecteurs de schémas sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
 >
->Pour plus d’informations, voir [Évaluation de la complexité de la mise à niveau avec le détecteur](/help/sites-deploying/pattern-detector.md)de schémas.
+>Pour plus d’informations, voir [Evaluation de la complexité de la mise à niveau avec le Détecteur](/help/sites-deploying/pattern-detector.md)de schémas.
 
 AEM 6.5 sera distribué avec un contrôle d’intégrité pour informer les clients si du contenu référencé ou superposé est utilisé d’une manière non conforme à la classification du contenu.
 
-La vérification** Sling/Granite Content Access Check** est une nouvelle vérification d’intégrité qui surveille le référentiel pour déterminer si le code client accède incorrectement aux noeuds protégés dans AEM.
+Le contrôle d&#39;accès au contenu** Sling/Granite est un nouveau contrôle d&#39;intégrité qui surveille le référentiel pour voir si le code du client accède incorrectement aux noeuds protégés dans AEM.
 
 Ce contrôle analyse **/apps** et son exécution demande généralement quelques secondes.
 
