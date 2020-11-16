@@ -49,7 +49,7 @@ Adobe prend officiellement en charge Java 6, 7 et 8, toutefois, il semble que N
 
 ## Installation de l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}
 
-L’agent NotSoSerial n’est pas inclus dans la distribution standard d’AEM pour les serveurs d’applications. Cependant, vous pouvez l’extraire du fichier de distribution JAR d’AEM et l’utiliser avec la configuration de votre serveur d’applications :
+L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM pour les serveurs d’applications. Cependant, vous pouvez l’extraire du fichier de distribution JAR d’AEM et l’utiliser avec la configuration de votre serveur d’applications :
 
 1. Tout d’abord, téléchargez le fichier QuickStart AEM et extrayez-le :
 
