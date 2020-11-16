@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 63%
 
 ---
 
@@ -56,7 +59,7 @@ Tout d’abord, vérifiez la connexion entre les instances de création et de pu
 
 1. Commencez dans siteadmin.
 1. Parcourez l’arborescence jusqu’à atteindre l’emplacement où vous souhaitez créer le formulaire dans le site web sélectionné.
-1. **Sélectionnez** Nouveau **>** Nouvelle page....
+1. Select **New** > **New page...**.
 1. Select either **Adobe Campaign Profile (AC 6.1)** or **Adobe Campaign Profile (ACS)** template and enter the page properties.
 
    >[!NOTE]
@@ -80,7 +83,7 @@ Les formulaires dédiés à Adobe Campaign présentent des composants spécifiqu
 Cette section présente uniquement les liens spécifiques à Adobe Campaign. For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Accédez au formulaire que vous souhaitez modifier.
-1. **Dans la boîte à outils, sélectionnez** Page **> Propriétés de la** page... accédez ensuite à l’onglet Services **** Cloud de la fenêtre contextuelle.
+1. In the toolbox, select **Page** > **Page Properties...** then go to the **Cloud Services** tab of the pop-up window.
 1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service&#39;s drop down list. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -94,6 +97,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. For
    * **Adobe Campaign : enregistrer le profil** : vous permet de créer ou de mettre à jour un destinataire dans Adobe Campaign (valeur par défaut).
    * **Adobe Campaign : s’abonner aux services** : vous permet de gérer les abonnements d’un destinataire dans Adobe Campaign.
    * **Adobe Campaign : se désabonner des services** : vous permet d’annuler les abonnements d’un destinataire dans Adobe Campaign.
+
    The **Action Configuration** field lets you specify whether or not you would like to create the recipient profile in the Adobe Campaign database if it does not yet exist. To do this, check the **Create user if not existing** option.
 
 1. Ajoutez vos composants sélectionnés en les faisant glisser depuis la boîte à outils et en les plaçant dans le formulaire. Pour plus d’informations sur les éléments spécifiques d’Adobe Campaign disponibles, voir [Composants de formulaire Adobe](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
