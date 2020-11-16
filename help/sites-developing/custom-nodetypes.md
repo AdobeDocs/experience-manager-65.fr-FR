@@ -20,12 +20,12 @@ ht-degree: 61%
 
 # Types de nœuds personnalisés{#custom-node-types}
 
-AEM étant basé sur Sling et utilisant un référentiel JCR, les types de noeud proposés par ces deux solutions sont disponibles pour utilisation :
+Comme AEM est basé sur Sling et utilise un référentiel JCR, les types de noeud proposés par ces deux types sont disponibles pour l’utilisation :
 
 * [Types de nœuds JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-De plus, AEM fournit une gamme de types de noeud personnalisés.
+De plus, aem fournit une gamme de types de noeud personnalisés.
 
 ## Audit {#audit}
 
@@ -138,7 +138,7 @@ Définit le type d’un nœud de rétrolien.
 
 Définit la page CQ par défaut.
 
-* `@node jcr:content` - Contenu du Principal de la page.
+* `@node jcr:content` - Contenu Principal de la page.
 
 **Définition**
 
@@ -238,7 +238,7 @@ Définit un composant CQ.
 * `@node design_dialog` - Boîte de dialogue de conception.
 * `@prop cq:cellName` - Nom de la cellule de conception.
 * `@prop cq:isContainer` - Indique s&#39;il s&#39;agit d&#39;un composant de conteneur. Cela oblige à utiliser les noms de cellule des composants enfants au lieu des noms de chemin d’accès. Par exemple, `parsys` est un composant de conteneur. Si cette valeur n’est pas définie, la vérification est effectuée sur la base de l’existence d’une propriété `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Si la valeur est true, aucune `div` balise de décoration n&#39;est dessinée lors de l&#39;inclusion de ce composant.
+* `@prop cq:noDecoration` - Si la valeur est true, aucune `div` balise décorative n&#39;est tracée lors de l&#39;inclusion de ce composant.
 * `@node cq:editConfig` - Configuration qui définit les paramètres de la barre d&#39;édition.
 * `@node cq:childEditConfig` - La configuration de modification héritée par les composants enfants.
 * `@node cq:htmlTag` - Définit des attributs de balise supplémentaires qui sont ajoutés à la balise &quot;environnante&quot; `div` lorsque le composant est inclus.
@@ -346,7 +346,7 @@ Définit un composant CQ virtuel. Actuellement, ces options sont uniquement util
 * `@node icon.png` - Fichier contenant une icône caractéristique.
 * `@node thumbnail.png` - Fichier contenant une miniature de caractéristique.
 * `@prop allowedParents` -  Schémas d’expressions régulières utilisés pour déterminer le(s) chemin(s) d’accès des composants autorisés en tant que composants parents.
-* `@prop allowedChildren` - Des schémas d&#39;expression réguliers pour déterminer le ou les chemins d&#39;accès des composants autorisés en tant que composants enfants.
+* `@prop allowedChildren` - Modèles d&#39;expression réguliers pour déterminer le ou les chemins d&#39;accès des composants autorisés en tant que composants enfants.
 * `@prop componentGroup` - Nom du groupe de composants pour le glisser-déposer du composant.
 
 **Définition**
@@ -472,7 +472,7 @@ Le type de nœud `cq:contentPage` contient les définitions de propriété et de
 
 The items in a `cq:Cq4ContentPage` are:
 
-* `@prop cq:csd` - Le CSD ContentBus de la page.
+* `@prop cq:csd` - CSD ContentBus de la page.
 * `@node cq:content` - Contenu de la page. Ce nœud enfant n’existe pas si l’état du nœud de page est défini sur « Existant sans contenu » ou « Supprimé ».
 * `@node cq:attributes` - Liste d’attributs de page, connus précédemment sous le nom de balises de version. Ce nœud est obligatoire pour le type cq:contentPage. Le noeud d’attributs est versionné lorsque la page est un noeud est versionné.
 
@@ -553,7 +553,7 @@ Types de nœuds MailerService (Service mailer). Le mailer utilise des nœuds con
 
 **Description**
 
-Définit un mixin LiveRelationship (Relation en direct). Un noeud source principal (de contrôle) et un noeud de copie dynamique (contrôlé) peuvent être virtuellement liés via LiveRelationship.
+Définit un mixin LiveRelationship (Relation en direct). Un noeud source Principal (de contrôle) et un noeud de copie dynamique (contrôlé) peuvent être virtuellement liés via LiveRelationship.
 
 **Définition**
 
@@ -566,9 +566,9 @@ Définit un mixin LiveRelationship (Relation en direct). Un noeud source princip
 
 **Description**
 
-Définit un mixin LiveSync (Synchronisation en direct). Si un noeud est impliqué dans une LiveRelationship avec un noeud source principal (contrôle) et un noeud de copie dynamique (contrôlé), il est marqué comme LiveSync.
+Définit un mixin LiveSync (Synchronisation en direct). Si un noeud est impliqué dans une LiveRelationship avec un noeud Principal (de contrôle) et un noeud de copie dynamique (contrôlé), il est marqué comme LiveSync.
 
-* `@prop cq:master` - Chemin d&#39;accès de la source principale (contrôle) de LiveRelationship.
+* `@prop cq:master` - Chemin d&#39;accès de la source Principale (contrôle) de LiveRelationship.
 * `@prop cq:isDeep` - Définit si la relation est disponible pour les enfants.
 * `@prop cq:syncTrigger` - Définit quand est déclenché la synchronisation.
 * `@node * LiveSyncAction` - Actions à effectuer lors de la synchronisation
@@ -618,7 +618,7 @@ Configuration de la synchronisation en direct.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Pour AEM 5.4, ajoutez à la fin de la liste :
+Pour AEM 5.4, ajouter à la fin de la liste :
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
