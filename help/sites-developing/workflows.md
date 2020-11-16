@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 75%
 
 ---
 
@@ -38,10 +41,11 @@ Les aspects clés sont présentés ci-dessous, tandis que les pages suivantes ab
 >
 >* Participating in workflows, see [Using Workflows](/help/sites-authoring/workflows.md).
 >* l’administration des processus et des instances de processus, voir [Administration des workflows](/help/sites-administering/workflows.md).
->* For an end-to-end Community Article see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+>* For an end-to-end Community Article see [Modifying Digital Assets using Adobe Experience Manager Workflows.](https://helpx.adobe.com/fr/experience-manager/using/modify_asset_workflow.html)
 >* See the [Ask the AEM Experts Webinar on Workflows](https://bit.ly/ATACE218).
->* For an end-to-end Community Article see [Creating a custom Adobe Experience Manager 6.3 Dynamic Participant step](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html).
+>* For an end-to-end Community Article see [Creating a custom Adobe Experience Manager 6.3 Dynamic Participant step](https://helpx.adobe.com/fr/experience-manager/using/dynamic-steps-aem63.html).
 >* les modifications apportées aux emplacements des informations, voir [Restructuration de référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) et [Meilleures pratiques relatives aux workflows – emplacements](/help/sites-developing/workflows-best-practices.md#locations).
+
 >
 
 
@@ -123,17 +127,17 @@ Il existe différents types de workflow comme indiqué dans la console Modèles 
 
 ![wf-upgrade-03](assets/wf-upgraded-03.png)
 
-* **Default**
+* **Valeur par défaut**
 
-   Il s’agit des processus prêts à l’emploi inclus dans une instance AEM standard.
+   Il s’agit des workflows prêts à l’emploi inclus dans une instance AEM standard.
 
-* Processus personnalisés (aucun indicateur dans la console)
+* Workflows personnalisés (aucun indicateur dans la console)
 
-   Il s’agit de processus créés en tant que nouveaux ou à partir de processus prêts à l’emploi qui ont été superposés à des personnalisations.
+   Il s’agit de workflows qui ont été créés comme nouveaux ou à partir de workflows prêts à l’emploi qui ont été superposés à des personnalisations.
 
 * **Legacy**
 
-   Processus créés dans une version antérieure d’AEM. Ils peuvent être conservés lors d’une mise à niveau, ou exportés en tant que module de workflow à partir de la version antérieure, puis importés dans la nouvelle version.
+   Workflows créés dans une version antérieure d’AEM. Ils peuvent être conservés lors d’une mise à niveau, ou exportés en tant que module de workflow à partir de la version antérieure, puis importés dans la nouvelle version.
 
 ### workflows transitoires {#transient-workflows}
 
@@ -157,6 +161,7 @@ Les workflows transitoires ont été introduits pour charger un grand nombre de 
 >* Le type de charge utile (par exemple, vidéo) nécessite des étapes externes pour le traitement. Dans ce cas, l’historique d’exécution est nécessaire pour la confirmation de l’état.
 >* Le workflow entre en **Division ET**. Dans ce cas, l’historique d’exécution est nécessaire pour la confirmation de l’état.
 >* Lorsque le workflow transitoire entre dans une étape de participant, il modifie le mode (à l’exécution) en non transitoire, car la tâche est transmise à une personne, l’historique doit persister.
+
 >
 
 
@@ -187,7 +192,7 @@ Si la **prise en charge multi-ressource** n’est pas activée pour votre modèl
 
 Les phases de processus permettent de visualiser la progression d’un workflow lors de la gestion des tâches. Elles peuvent être utilisées pour fournir un aperçu de la progression du workflow dans le traitement. Lors de l’exécution du workflow, l’utilisateur peut ainsi afficher la progression décrite par la **phase** (par opposition à l’étape individuelle).
 
-Les noms d’étape individuels pouvant être spécifiques et techniques, il est possible de définir les noms d’étape pour obtenir une vue conceptuelle de la progression du flux de travail.
+Les noms d’étape individuels pouvant être spécifiques et techniques, ils peuvent être définis afin de fournir une vue conceptuelle de la progression du processus.
 
 Par exemple, pour un workflow avec six étapes et quatre phases :
 
@@ -195,6 +200,7 @@ Par exemple, pour un workflow avec six étapes et quatre phases :
 
    * Plusieurs noms de phases peuvent être créés.
    * Un nom de phase individuel est ensuite attribué à chaque étape (un nom de phase peut être attribué à une ou plusieurs étapes).
+
    | **Nom de l’étape** | **Phase (affectée à l’étape)** |
    |---|---|
    | Étape 1 | Créer |
