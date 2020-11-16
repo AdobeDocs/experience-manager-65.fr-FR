@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -29,6 +32,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >
 >* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
 >* Mac : maintenez la touche Cmd enfoncée tout en cliquant sur les composants requis.
+
 >
 
 
@@ -166,7 +170,7 @@ Des raccourcis clavier supplémentaires sont disponibles pour les développeurs 
   </tr>
   <tr>
    <td>Mode d’édition</td>
-   <td><br /> Définissez le suffixe suivant dans l’URL : Utilisez <code>?debugClientLibs=true</code><br /> ensuite :<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Afficher les statistiques de synchronisation pour le chargement de page.</td>
   </tr>
  </tbody>
