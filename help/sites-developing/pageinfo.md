@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 81%
 
 ---
 
@@ -29,9 +32,10 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >
 >Si vous avez besoin d’informations sur la page au format JSON pour assurer la diffusion de contenu vers des canaux qui ne sont pas des pages web AEM classiques, telles que :
 >
->* Applications sur une seule page (SPA)
->* des applications mobiles natives
->* Autres canaux et points de contact externes à AEM
+>* des applications sur une seule page ;
+>* des applications mobiles natives ;
+>* Autres canaux et points de contact externes aux AEM
+
 >
 >
 Consultez le document [Exportateur JSON pour les services de contenu](/help/sites-developing/json-exporter.md).
@@ -470,7 +474,7 @@ For example, the PageInfo servlet returns the following JSON response for the `/
 
 ## Filtrage des informations sur le module de processus {#filtering-workflow-package-information}
 
-Configurez le service Day CQ WCM Workflow Package Info Provider de sorte qu’il renvoie des informations uniquement sur les packages de processus qui vous intéressent. Par défaut, le service Fournisseur d’informations sur les packages de processus renvoie des informations sur chaque package de processus dans le référentiel. Itérer sur un sous-ensemble de modules de processus utilise moins de ressources du serveur.
+Configurez le service Day CQ WCM Workflow Package Info Provider de sorte qu’il renvoie des informations uniquement sur les packages de processus qui vous intéressent. Par défaut, le service Fournisseur d’informations de package de flux de travaux renvoie des informations sur chaque package de processus dans le référentiel. Itérer sur un sous-ensemble de modules de processus utilise moins de ressources du serveur.
 
 >[!NOTE]
 >
@@ -501,13 +505,13 @@ Par exemple, pour configurer le service à l’aide de CRXDE Lite :
 1. Ouvrez CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Créez un nœud dans le dossier de configuration de votre application :
 
-   * Nom: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
-   * Type: `sling:OsgiConfig`
+   * Nom : `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
+   * Type : `sling:OsgiConfig`
 
 1. Sélectionnez le nœud et ajoutez une propriété :
 
-   * Nom: `workflowpackageinfoprovider.filter`
-   * Type: `String[]`
+   * Nom : `workflowpackageinfoprovider.filter`
+   * Type : `String[]`
    * Valeur : chemin d’accès au module de processus en utilisant le format correct.
 
 1. Cliquez sur Enregistrer tout.
@@ -516,7 +520,7 @@ Pour configurer le service dans la source de votre projet, procédez comme suit�
 
 1. Recherchez ou créez le dossier de configuration de votre application AEM dans la source du projet.
 
-   Par exemple, si vous avez utilisé l’archétype multimodule du module externe expert du package de contenu pour créer votre projet, le chemin d’accès au dossier est `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin d’accès au dossier est `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Dans le dossier de configuration, créez un fichier texte nommé com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Copiez le texte suivant dans le fichier :
 
