@@ -12,6 +12,9 @@ discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 translation-type: tm+mt
 source-git-commit: 328e13eb2ce034b0b1ec7e5e0fb184de9435d1bc
+workflow-type: tm+mt
+source-wordcount: '733'
+ht-degree: 86%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 328e13eb2ce034b0b1ec7e5e0fb184de9435d1bc
 >
 >Cette page contient des liens vers le site web d’Hybris. Pour certaines pages, vous devrez disposer d’un compte pour vous connecter.
 
-## Déploiement du commerce électronique avec SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
+## Déploiement du commerce électronique avec le Commerce Cloud SAP {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -50,6 +53,7 @@ The hybris extension of the eCommerce Integration Framework has been updated to 
 >* Prend en charge les versions 18.11 et ultérieures.
 >* Pour exécuter le [serveur Hybris 5](https://www.hybris.com/en/architecture-technology), vous devez disposer de Java 7.
 >* Le module complémentaire Hybris, [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), n’est pas pris en charge par l’extension AEM.
+
 >
 
 
@@ -202,7 +206,7 @@ Cette procédure permet de transférer et de configurer le magasin de démonstra
 
    Utilisez les informations d’identification suivantes :
    * username : admin
-   * password : nimda
+   * password: nimda
 
 1. À partir de la navigation de la barre latérale, développez **Système** (System) et **Outils** (Tools). Ensuite, sélectionnez **Importer** (Import) pour ouvrir la fenêtre **Assistant : Importation d’un fichier CSV** (Wizard: CSV Import).
 1. Dans l’onglet **Configuration**, **transférez** le **fichier d’importation** suivant :
