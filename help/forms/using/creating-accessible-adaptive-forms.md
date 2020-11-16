@@ -21,7 +21,7 @@ ht-degree: 42%
 
 ## Présentation {#introduction}
 
-Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Les formulaires adaptatifs comprennent un certain nombre de fonctions et de fonctionnalités qui améliorent la convivialité pour les utilisateurs ayant des capacités différentes. L’intégration d’options d’accessibilité dans des formulaires adaptatifs ne permet pas seulement d’élargir l’audience. Il s’agit en effet d’une exigence lors de la diffusion de documents dans des régions où le respect des normes d’accessibilité constitue une obligation. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
+Un formulaire accessible est un formulaire utilisable par tout le monde, y compris par les utilisateurs souffrant de handicaps. Adaptive Forms comprend plusieurs fonctionnalités qui améliorent la convivialité des utilisateurs dotés de capacités différentes. L’intégration d’options d’accessibilité dans des formulaires adaptatifs ne permet pas seulement d’élargir l’audience. Il s’agit en effet d’une exigence lors de la diffusion de documents dans des régions où le respect des normes d’accessibilité constitue une obligation. AEM Forms aide les développeurs à se conformer à ces normes d’accessibilité.
 
 Lors de la création d’un formulaire adaptatif, l’auteur doit tenir compte des points suivants pour créer un formulaire adaptatif accessible :
 
@@ -48,7 +48,7 @@ ANDI fonctionne avec tous les principaux navigateurs Internet. Consultez la docu
 
 ### Téléchargement et installation du thème Ultramarine accessible
 
-Le thème Ultramarine-Accessible est un thème de référence. Il permet de démontrer comment corriger le contraste de couleur et d’autres problèmes liés à l’accessibilité dans un formulaire adaptatif. Adobe recommande de créer un thème personnalisé pour l’environnement de production en fonction des styles approuvés par votre organisation. Effectuez les étapes suivantes pour télécharger le thème vers votre instance AEM :
+Le thème Ultramarine-Accessible est un thème de référence. Il permet de démontrer comment corriger le contraste de couleur et d’autres problèmes liés à l’accessibilité dans un formulaire adaptatif. L’Adobe recommande de créer un thème personnalisé pour l’environnement de production en fonction des styles approuvés par votre organisation. Effectuez les étapes suivantes pour télécharger le thème sur votre instance AEM :
 
 1. Téléchargez le module thématique.
 1. Accédez à **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms sur votre instance AEM.]**
@@ -95,7 +95,7 @@ Après avoir appliqué un thème accessible, effectuez les correctifs supplémen
 
 1. Ajoutez du texte d’accessibilité personnalisé à toutes les cellules en lecture seule des tableaux. Désactivez également toutes les cellules de tableaux en lecture seule.
 
-1. Supprimez les champs de signature tactile, le cas échéant, dans le formulaire adaptatif. Configurez le formulaire adaptatif pour qu’il utilise Adobe Sign pour une expérience de signature numérique transparente.
+1. Supprimez les champs de signature tactile, le cas échéant, dans le formulaire adaptatif. Configurez le formulaire adaptatif pour qu’il utilise l’Adobe Sign pour une expérience de signature numérique transparente.
 
 ### 2. Provide proper labels for form controls {#provide-proper-labels-for-form-controls}
 
@@ -116,7 +116,7 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 
 **Description** courte Pour la majorité des composants, la description courte s’affiche au moment de l’exécution lorsque l’utilisateur place le pointeur de la souris sur le composant. Vous pouvez définir cette option dans le champ approprié, sous l’option du contenu d’aide.
 
-**Titre** Utilisez cette option pour permettre aux AEM Forms d’utiliser le libellé visuel associé au champ de formulaire comme texte de lecteur d’écran.
+**Titre** Utilisez cette option pour permettre à l’AEM Forms d’utiliser le libellé visuel associé au champ de formulaire comme texte de lecteur d’écran.
 
 **Nom** Vous pouvez spécifier une valeur dans le champ Nom de l’onglet Liaison. Le nom ne peut pas contenir d’espaces.
 
