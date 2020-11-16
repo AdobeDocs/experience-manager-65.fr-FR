@@ -129,7 +129,7 @@ L’instance Application OAuth et Fournisseur [Granite](#adobe-granite-oauth-app
    >Les groupes peuvent être ajoutés ou supprimés à tout moment. Mais les adhésions des utilisateurs existants ne seront pas affectées. L’abonnement automatique s’applique uniquement aux nouveaux utilisateurs créés après la mise à jour de ce champ. Pour les sites où les utilisateurs anonymes sont désactivés, choisissez d’ajouter des utilisateurs au groupe de membres de la communauté correspondant destiné à ce site communautaire fermé.
 
    * Select **[!UICONTROL SAVE]**.
-   * **[!UICONTROL Publier]**.
+   * **[!UICONTROL Publication]**.
 
 
 
