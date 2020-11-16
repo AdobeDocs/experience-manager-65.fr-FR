@@ -1,8 +1,8 @@
 ---
 title: Fonction Forum Q&R
 seo-title: Fonction Forum Q&R
-description: ajouter la fonction de forum QnA à une page
-seo-description: ajouter la fonction de forum QnA à une page
+description: Ajouter la fonction de forum QnA à une page
+seo-description: Ajouter la fonction de forum QnA à une page
 uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -26,7 +26,7 @@ ht-degree: 19%
 La fonction de forum QnA (questions et réponses) offre aux membres de la communauté un espace où poser des questions et y répondre. Il permet aux membres :
 
 * Créer de nouvelles questions
-* ajouter des images en ligne (avec prise en charge du glisser-déposer)
+* Ajouter des images en ligne (avec prise en charge du glisser-déposer)
 * Vue et réponses aux questions
 * Rechercher une question
 * Aider à modérer le contenu de QnA
@@ -35,7 +35,7 @@ La fonction de forum QnA (questions et réponses) offre aux membres de la commun
 
 La documentation décrit :
 
-* ajouter la fonction de forum QnA à un site AEM.
+* Ajouter la fonction de forum QnA à un site AEM.
 * Configuration settings for the `QnA`component.
 
 ## Ajout d’un forum Q&amp;R à une page {#adding-a-q-a-forum-to-a-page}
@@ -130,7 +130,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser le vote**
 
-   Si cette case est cochée, incluez la fonction de vote avec une question. La valeur par défaut est désélectionnée.
+   Si cette option est cochée, incluez la fonction de vote avec une question. La valeur par défaut est désélectionnée.
 
 * **Autoriser les utilisateurs à supprimer les commentaires et sujets**
 
