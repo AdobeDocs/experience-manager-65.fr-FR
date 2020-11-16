@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 80%
 
 ---
 
@@ -28,10 +31,10 @@ Pour personnaliser le stockage des données utilisateur, vous devez implémenter
 
 ## Conditions préalables {#prerequisites}
 
-* Activation des composants [Forms Portal](/help/forms/using/enabling-forms-portal-components.md)
+* Activation des composants du portail [Forms](/help/forms/using/enabling-forms-portal-components.md)
 * Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
-* Activation des formulaires [adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
-* Découvrez les détails [d&#39;implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Activation des formulaires [adaptatifs pour le portail de formulaires](/help/forms/using/draft-submission-component.md)
+* Découvrez les détails de [mise en oeuvre de l’enregistrement personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
