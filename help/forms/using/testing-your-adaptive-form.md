@@ -83,7 +83,7 @@ Les suites de tests comportent un ensemble de cas de test. Vous pouvez avoir plu
     init.js
    ```
 
-1. Créez un fichier, init.js, dans le `WeRetailFormTestCases`noeud. ajoutez le code ci-dessous dans le fichier et appuyez sur **[!UICONTROL Enregistrer tout]**.
+1. Créez un fichier, init.js, dans le `WeRetailFormTestCases`noeud. Ajoutez le code ci-dessous dans le fichier et appuyez sur **[!UICONTROL Enregistrer tout]**.
 
    ```javascript
    (function(window, hobs) {
@@ -166,7 +166,7 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
      </tbody>
    </table>
 
-1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]** . ajoutez les éléments suivants dans le fichier :
+1. Créez un fichier, js.txt, dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajoutez les éléments suivants dans le fichier :
 
    ```shell
    #base=.
@@ -175,7 +175,7 @@ Une action est une activité spécifique sur un formulaire adaptatif, telle qu�
 
    Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
-1. Créez un fichier, `prefillTest.js`,dans le noeud **[!UICONTROL WeRetailFormTests]** . ajoutez le code ci-dessous dans le fichier. Le code crée un cas de test. Le cas de test préremplit tous les champs d’un formulaire et valide certains champs pour s’assurer que les valeurs sont saisies correctement.
+1. Créez un fichier, `prefillTest.js`,dans le noeud **[!UICONTROL WeRetailFormTests]** . Ajoutez le code ci-dessous dans le fichier. Le code crée un cas de test. Le cas de test préremplit tous les champs d’un formulaire et valide certains champs pour s’assurer que les valeurs sont saisies correctement.
 
    ```javascript
    (function (window, hobs) {
