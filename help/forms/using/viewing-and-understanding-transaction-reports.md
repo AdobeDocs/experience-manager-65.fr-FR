@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Affichage et compréhension des rapports de transactions{#viewing-and-understanding-transaction-reports}
 
-Les rapports de transactions vous permettent de capturer et de suivre le nombre de formulaires envoyés, de documents traités et de documents rendus. L&#39;objectif du suivi de ces transactions est de prendre une décision éclairée sur l&#39;utilisation des produits et de rééquilibrer les investissements en matériel et en logiciels. Pour plus d&#39;informations, consultez Présentation [des rapports sur les transactions](../../forms/using/transaction-reports-overview.md)AEM Forms.
+Les rapports de transactions vous permettent de capturer et de suivre le nombre de formulaires envoyés, de documents traités et de documents rendus. L&#39;objectif du suivi de ces transactions est de prendre une décision éclairée sur l&#39;utilisation des produits et de rééquilibrer les investissements en matériel et en logiciels. Pour plus d’informations, voir Présentation [des rapports sur les transactions](../../forms/using/transaction-reports-overview.md)AEM Forms.
 
 ## Configuration des rapports de transactions  {#setting-up-transaction-reports}
 
-La fonctionnalité de rapports de transactions est disponible dans le module complémentaire AEM Forms. Pour plus d’informations sur l’installation du module complémentaire sur toutes les instances d’auteur et de publication, voir [Installation et configuration d’AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Une fois le module complémentaire AEM Forms installé, procédez comme suit :
+La fonctionnalité de rapports de transactions est disponible dans le module complémentaire de formulaires AEM. Pour plus d’informations sur l’installation du module complémentaire sur toutes les instances d’auteur et de publication, voir [Installation et configuration des formulaires](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM. Une fois le module complémentaire de formulaires AEM installé, procédez comme suit :
 
 * Activation de la réplication inverse sur toutes les instances de publication
 * Activer les rapports de transaction
@@ -46,30 +46,30 @@ Les rapports de transactions utilisent la réplication inverse pour consolider l
 
 ### Activer les rapports de transaction {#enable-transaction-reports}
 
-Les rapports de transactions sont désactivés par défaut. Vous pouvez activer les rapports à partir de la console Web AEM. pour activer les rapports de transactions dans un environnement AEM Forms, effectuez les étapes suivantes sur toutes les instances d’auteur et de publication :
+Les rapports de transactions sont désactivés par défaut. Vous pouvez activer les rapports à partir de AEM Console Web. pour activer les rapports de transactions dans un environnement AEM Forms, effectuez les étapes suivantes sur toutes les instances d’auteur et de publication :
 
 1. Connectez-vous à une instance AEM en tant qu’administrateur. Accédez à **Outils** > **Opérations** > Console **** Web.
-1. Recherchez et ouvrez le service de Rapports **de transactions de** formulaires.
-1. Cochez la case Enregistrer les transactions. Cliquez sur **Enregistrer**.
+1. Recherchez et ouvrez le service de Rapports **de transaction** Forms.
+1. Cochez la case Enregistrer les transactions. Cliquez sur **Save**.
 
    Répétez les étapes 1 à 3 sur toutes les instances d’auteur et de publication.
 
 ### Attribuer des droits à la vue d&#39;un rapport de transaction {#provide-rights-to-view-a-transaction-report}
 
-Seuls les membres du groupe fd-administrator peuvent vue des rapports de transactions. Pour permettre à un utilisateur de vue des rapports de transactions, faites en sorte que les utilisateurs soient membres du groupe fd-administrator. Pour plus d’informations sur la façon de faire d’un utilisateur un membre d’un groupe AEM, voir Administration [des droits d’accès, d’](/help/sites-administering/user-group-ac-admin.md)utilisateur et de groupe.
+Seuls les membres du groupe fd-administrator peuvent vue des rapports de transactions. Pour permettre à un utilisateur de vue des rapports de transactions, faites en sorte que les utilisateurs soient membres du groupe fd-administrator. Pour plus d’informations sur la façon de faire d’un utilisateur un membre d’un groupe AEM, voir Administration [des droits](/help/sites-administering/user-group-ac-admin.md)utilisateur, de groupe et d’accès.
 
 ### (Facultatif) Configuration de la période de vidage des transactions et des boîtes d&#39;envoi {#optional-configure-transaction-flush-period-and-outboxes}
 
 Les transactions sont mises en cache en mémoire avant d’être stockées dans le référentiel. Par défaut, la période de mise en cache (période de vidage des transactions) est définie sur 60 secondes. Effectuez les étapes suivantes pour modifier la période de mise en cache par défaut :
 
 1. Connectez-vous aux instances d’auteur en tant qu’administrateur. Accédez à **Outils** > **Opérations** > Console **** Web.
-1. Recherchez et ouvrez le service Fournisseur **d’Enregistrement de référentiel de transactions de** formulaires.
-1. Indiquez le nombre de secondes dans le champ Période **de vidage des** mouvements. Cliquez sur **Enregistrer**.
+1. Recherchez et ouvrez le service Fournisseur **d’Enregistrement du référentiel de transactions** Forms.
+1. Indiquez le nombre de secondes dans le champ Période **de vidage des** mouvements. Cliquez sur **Save**.
 
 La réplication inverse copie les données de transaction dans la boîte d&#39;envoi par défaut des instances d&#39;auteur. Vous pouvez placer les données de transaction dans une boîte d’envoi personnalisée. Effectuez les étapes suivantes pour spécifier une boîte d’envoi personnalisée :
 
 1. Connectez-vous aux instances d’auteur en tant qu’administrateur. Accédez à **Outils** > **Opérations** > Console **** Web.
-1. Recherchez et ouvrez le service Fournisseur **d’Enregistrement de référentiel de transactions de** formulaires.
+1. Recherchez et ouvrez le service Fournisseur **d’Enregistrement du référentiel de transactions** Forms.
 1. Spécifiez le nom de la boîte d&#39;envoi personnalisée dans le champ **Boîtes** d&#39;envoi. Cliquez sur **Enregistrer**. Une boîte d’envoi portant le nom spécifié est créée sur toutes les instances d’auteur.
 
 ## Affichage de l&#39;état des transactions {#viewing-the-transaction-report}
@@ -77,21 +77,21 @@ La réplication inverse copie les données de transaction dans la boîte d&#39;e
 Vous pouvez vue des rapports de transactions sur les instances d’auteur ou de publication. Le rapport de transaction sur l’instance d’auteur fournit une somme agrégée de toutes les transactions qui ont lieu sur les instances d’auteur et de publication configurées. Le rapport de transaction sur l’instance de publication fournit un décompte des transactions qui ont lieu uniquement sur l’instance de publication sous-jacente. Effectuez les étapes suivantes pour vue du rapport :
 
 1. Log in to the AEM Forms server at `https://[hostname]:'port'`.
-1. Accédez à **Outils** > **Formulaires**>**Rapport** de transactions de Vue.
+1. Accédez à **Outils** > **Forms**>**Rapport** de transactions de Vue.
 
 ## Présentation du rapport {#understanding-the-report}
 
-Les AEM Forms affichent les rapports de transactions depuis la date configurée, comme le montre un rapport récapitulatif ci-dessous :
+AEM Forms affiche les rapports de transactions depuis la date configurée, comme illustré dans un rapport récapitulatif ci-dessous :
 
 ![exemple-transaction-rapport-auteur](assets/sample-transaction-report-author.png)
 
 * Utilisez les options **Réinitialiser la date à aujourd&#39;hui** pour réinitialiser les enregistrements de transaction. Lorsque vous réinitialisez la date à aujourd’hui, tous les enregistrements de transaction précédents sont perdus. Lorsque vous réinitialisez la date sur une instance d’auteur, la modification n’affecte pas les rapports de transaction sur les instances de publication et à l’inverse.
 * Utilisez l’option **Afficher les transactions des instances** Publier uniquement pour vue toutes les transactions qui se sont produites uniquement sur l’instance de publication ou la batterie de publication configurée.
-* Utilisez les catégories : **Document traité**, **Documents rendus** et **formulaires envoyés** à la vue des transactions correspondantes. Pour connaître le type de transactions comptabilisées dans ces catégories, voir API [de rapports de transactions](../../forms/using/transaction-reports-billable-apis.md)facturables.
+* Utilisez les catégories : **Document traité**, **Documents rendu** et **Forms envoyé** à vue des transactions correspondantes. Pour connaître le type de transactions comptabilisées dans ces catégories, voir API [de rapports de transactions](../../forms/using/transaction-reports-billable-apis.md)facturables.
 
-## Journaux des rapports de transactions de Vue {#view-transaction-reporting-logs}
+## Journaux des rapports de transactions de vue {#view-transaction-reporting-logs}
 
-Le rapports des transactions place toutes les informations affichées dans le rapport et d’autres informations dans les journaux. Les informations fournies dans les journaux sont utiles aux utilisateurs avancés. Par exemple, les journaux divisent les transactions en plusieurs catégories granulaires par rapport à trois catégories consolidées affichées dans l&#39;état. Les journaux sont disponibles dans le `error.log` fichier situé dans le `/crx-repository/logs/` répertoire. Les journaux sont disponibles même si vous n’activez pas les rapports de transaction à partir de la console Web AEM.
+Le rapports de transactions place toutes les informations affichées dans le rapport et d’autres informations dans les journaux. Les informations fournies dans les journaux sont utiles aux utilisateurs avancés. Par exemple, les journaux divisent les transactions en plusieurs catégories granulaires par rapport à trois catégories consolidées affichées dans l&#39;état. Les journaux sont disponibles dans le `error.log` fichier situé dans le `/crx-repository/logs/` répertoire. Les journaux sont disponibles même si vous n&#39;activez pas les rapports de transaction à partir de AEM console Web.
 
 ## Related Articles {#related-articles}
 
