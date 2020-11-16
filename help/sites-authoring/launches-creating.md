@@ -12,25 +12,28 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 98%
 
 ---
 
 
 # Création de lancements{#creating-launches}
 
-Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source:
+Créez un lancement pour permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future. Lors de la création d’un lancement, vous devez spécifier un titre et la page source :
 
-* The title appears in the [References](/help/sites-authoring/author-environment-tools.md#references) rail, from where authors can access them to work on them.
-* Les pages enfants de la page source sont incluses, par défaut, dans le lancement. Si vous le souhaitez, vous pouvez n’utiliser que la page source
-* Par défaut, [Live Copy](/help/sites-administering/msm.md) met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique est créée afin d’empêcher les modifications automatiques.
+* Le titre apparaît dans le rail [Références](/help/sites-authoring/author-environment-tools.md#references), à partir duquel les auteurs peuvent accéder aux références afin de les modifier.
+* Les pages enfants de la page source sont incluses, par défaut, dans le lancement. Si vous le souhaitez, vous pouvez n’utiliser que la page source.
+* Par défaut, [Live Copy](/help/sites-administering/msm.md) met automatiquement à jour les pages de lancement à mesure que les pages source changent. Vous pouvez spécifier qu’une copie statique soit créée afin d’empêcher les modifications automatiques.
 
-Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pour définir le moment auquel les pages de lancement doivent être converties et activées. However the **Launch Date** only operates in combination with the **Production Ready** flag (see [Editing a Launch Configuration](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); for the actions to actually occur automatically, both must be set.
+Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pour définir le moment auquel les pages de lancement doivent être promues et activées. Toutefois, la **date de lancement** fonctionne uniquement en conjonction avec l’indicateur **Prêt pour la production** (voir [Modification d’une configuration de lancement](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)). Pour que les actions se produisent automatiquement, les deux doivent être définis.
 
 ## Création d’un lancement {#creating-a-launch}
 
 Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
-1. Ouvrez la console **Sites** ou **Lancements**. 
+1. Ouvrez la console **Sites** ou **Lancements**.
 
    >[!NOTE]
    >
@@ -38,23 +41,25 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
 1. Selon la console que vous utilisez :
 
-   * **Lancements**:
+   * **Lancements** :
 
       1. Sélectionnez **Créer un lancement** dans la barre d’outils pour ouvrir l’assistant.
-   * **Sites**:
+   * **Sites** :
 
-      1. Sélectionnez **Créer** dans la barre d’outils pour ouvrir la zone de sélection. 
+      1. Sélectionnez **Créer** dans la barre d’outils pour ouvrir la zone de sélection.
       1. Dans cette zone, sélectionnez **Créer un lancement** pour ouvrir l’assistant.
+
    >[!NOTE]
    >
-   >Dans la console **Sites**, vous pouvez également utiliser le [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) pour sélectionner une page avant de sélectionner **Créer**.
+   >Dans la console **Sites**, vous pouvez également utiliser le [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) pour choisir une page avant de sélectionner **Créer**.
    >
    >La page sélectionnée sera alors utilisée comme page source initiale.
 
-1. À l’étape **Sélectionner la source**, vous devez **Ajouter des pages**. Vous pouvez sélectionner plusieurs pages en spécifiant un chemin pour chacune d’elles : 
+1. À l’étape **Sélectionner la source**, vous devez **Ajouter des pages**. Vous pouvez sélectionner plusieurs pages en spécifiant un chemin pour chacune d’elles :
 
-   * Naviguez jusqu’à l’emplacement qui vous intéresse.
+   * Accédez à l’emplacement qui vous intéresse.
    * Sélectionnez la page source et confirmez (case avec coche).
+
    Recommencez l’étape selon vos besoins.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,30 +75,32 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Inclure les sous-pages**:
 
       * Indiquez si vous souhaitez créer le lancement avec ou sans les pages enfants.  Par défaut, ces sous-pages sont intégrées.
-   Poursuivez en cliquant sur **Suivant**. 
+
+   Poursuivez en cliquant sur **Suivant**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. À l’étape **Propriétés** de l’assistant, vous pouvez définir les paramètres suivants : 
+1. À l’étape **Propriétés** de l’assistant, vous pouvez définir les paramètres suivants :
 
    * **Titre du lancement **: nom du lancement. Ce nom doit être explicite pour les auteurs.
-   * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement. 
-   * **Utiliser un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails. 
+   * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
+   * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
    * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. This option achieves this by making the launch a [live copy](/help/sites-administering/msm.md).
 
       Par défaut, cette option est sélectionnée.
 
    * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Cliquez sur **Créer** pour terminer le processus et créer le lancement. La boîte de dialogue de confirmation vous invite à ouvrir le lancement immédiatement :
 
    Si vous revenez à la console (en cliquant sur **Terminé**) vous pouvez afficher (et accéder à) votre lancement à partir de :
 
-   * la console [**Lancements **](/help/sites-authoring/launches.md#the-launches-console)
-   * les [**références **de la console** Sites **](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * la console [**Lancements**](/help/sites-authoring/launches.md#the-launches-console)
+   * les [**références** de la console **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
-### Create Launch with New Template {#create-launch-with-new-template}
+### Création d’un lancement avec un nouveau modèle {#create-launch-with-new-template}
 
 Lors de la [création d’un lancement](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), vous pouvez utiliser un nouveau modèle :
 
@@ -101,7 +108,7 @@ Lors de la [création d’un lancement](/help/sites-authoring/launches-creating.
 
 >[!CAUTION]
 >
->Cette option est uniquement disponible lors de la création d’un lancement à partir de **Sites**. Elle n’est pas disponible lors de la création d’un lancement depuis la console **Lancements**.
+>Cette option est uniquement disponible lors de la création d’un lancement à partir de la console **Sites**. Elle n’est pas disponible lors de la création d’un lancement depuis la console **Lancements**.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -118,7 +125,7 @@ La sélection de cette option va :
 >
 >Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-authoring/managing-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
 
-### Création d’un lancement imbriqué {#creating-a-nested-launch}
+### Création d’un lancement imbriqué   {#creating-a-nested-launch}
 
 La création d’un lancement imbriqué (lancement dans un lancement) vous permet de créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
 
@@ -128,10 +135,10 @@ La création d’un lancement imbriqué (lancement dans un lancement) vous perme
 
 #### Création d’un lancement imbriqué - Console de lancements {#creating-a-nested-launch-launches-console}
 
-Creating a nested launch from the **Launches** console is basically the same as creating any other form of launch, with the exception that you need to navigate to the launches branch `/content/launches`:
+La création d’un lancement imbriqué à partir de la console **Lancements** est similaire à la création de tout autre type de lancement, si ce n’est que vous devez accéder à la branche de lancements `/content/launches` :
 
 1. Dans la console **Lancements**, sélectionnez **Créer**.
-1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Sélectionnez la branche requise et confirmez avec **Sélectionner** :
+1. Sélectionnez **Ajouter des pages**, puis accédez à la branche de lancements en spécifiant `/content/launches` dans le filtre. Sélectionnez la branche requise et confirmez avec **Sélectionner** :
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
@@ -139,18 +146,18 @@ Creating a nested launch from the **Launches** console is basically the same as 
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-#### Création d’un lancement imbriqué - Console de sites {#creating-a-nested-launch-sites-console}
+#### Création d’un lancement imbriqué - Console Sites {#creating-a-nested-launch-sites-console}
 
-Pour créer un lancement imbriqué à partir de la console de **sites**, sur la base d’un lancement existant : 
+Pour créer un lancement imbriqué à partir de la console **Sites**, sur la base d’un lancement existant :
 
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles.
-1. Sélectionnez **Créer un lancement** pour ouvrir l’assistant (puisque la source a déjà été sélectionnée, l’assistant ignore l’étape **Sélectionner la source**). 
+1. Sélectionnez **Créer un lancement** pour ouvrir l’assistant (puisque la source a déjà été sélectionnée, l’assistant ignore l’étape **Sélectionner la source**).
 
-1. Entrez le **titre du lancement** et tous les autres détails demandés (comme s’il s’agissait d’un lancement normal). 
+1. Entrez le **titre du lancement** et tous les autres détails demandés (comme s’il s’agissait d’un lancement normal).
 
 1. Cliquez sur **Créer** pour terminer le processus et créer le lancement. La boîte de dialogue de confirmation vous invite à ouvrir le lancement immédiatement :
 
-   If you select **Done**, you are returned to the **References** rail of the **Sites** console, if you select the appropriate page your new launch is shown.
+   Si vous sélectionnez **Terminé**, vous revenez au rail **Références** de la console **Sites**. Si vous sélectionnez la page appropriée, votre nouveau lancement est affiché.
 
 ### Suppression d’un lancement {#deleting-a-launch}
 
