@@ -195,7 +195,7 @@ L’exemple de code Java suivant fusionne deux documents source PDF nommés *map
 
 ## Début rapide (mode SOAP) : Démontage d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du document DDX est *shell_disassemble.xml*. Le nom de chaque document PDF déassemblé est `ResultPDF[Number].pdf`. En d’autres termes, le premier document PDF désassemblé s’appelle *ResultPDF1.pdf.* Pour plus d’informations sur le document DDX *shell_disassemble.xml* utilisé dans cet exemple de code, voir Démontage [programmatique de Documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
+L’exemple de code Java suivant démonte un document PDF nommé *AssemblerResultPDF.pdf*. Notez que le nom du document DDX est *shell_disassemble.xml*. Le nom de chaque document PDF déassemblé est `ResultPDF[Number].pdf`. En d’autres termes, le premier document PDF déassemblé s’appelle *ResultPDF1.pdf.* Pour plus d’informations sur le document DDX *shell_disassemble.xml* utilisé dans cet exemple de code, voir Démontage [programmatique de Documents](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents)PDF.
 
 ```java
  /*
