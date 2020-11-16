@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 88%
 
 ---
 
@@ -53,7 +56,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>filterSelected – modèle tasklist</p></li>
@@ -97,7 +100,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>submitComplete – modèle task</p></li>
@@ -136,7 +139,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>N/A</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>fetched – modèle tasklist </p></li>
@@ -208,7 +211,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>N/A</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>fetched – modèle tasklist </p></li>
@@ -296,7 +299,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>forwarded – modèle task</p> </li>
@@ -350,7 +353,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>allStartpointsFetched – modèle categorylist </p></li>
@@ -393,7 +396,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>changed - modèle category </p></li>
@@ -441,7 +444,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>category:selected – modèle categorylist </p></li>
@@ -480,7 +483,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>Modèle task</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td><p>change – modèle startpoint </p></td>
   </tr>
  </tbody>
@@ -524,7 +527,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>category:selected – modèle categorylist</p> </li>
@@ -574,7 +577,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>Modèle processname</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>add – modèle processnamelist </p></li>
@@ -614,7 +617,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>Modèle processinstancelist</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td><p>change – modèle processname </p></td>
   </tr>
  </tbody>
@@ -645,7 +648,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>Modèle processname</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>processname:selected – modèle processnamelist </p></li>
@@ -684,7 +687,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>Modèle tasklist</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td><p>change – modèle processinstance </p></td>
   </tr>
  </tbody>
@@ -719,7 +722,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
     </ul></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>processname:selected – modèle processnamelist </p></li>
@@ -759,7 +762,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>Vue usersearch</p> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>outOfOfficeSettingsFetched – modèle outofoffice</p> </li>
@@ -800,7 +803,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>Vue usersearch</p> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>queueAccessGranted - modèle sharequeue</p> </li>
@@ -844,7 +847,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>N/A</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>preferencesFetched – modèle uisettings </p></li>
@@ -918,7 +921,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>N/A</p> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td>
     <ul>
      <li>userImageUrlFetched – modèle userinfo</li>
@@ -958,7 +961,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>N/A</p></td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p></td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p></td>
    <td><p>newWsError – modèle wserror </p></td>
   </tr>
  </tbody>
@@ -989,7 +992,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>N/A</p> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td>
     <ul>
      <li>principalSearched - modèle principalsearch</li>
@@ -1024,7 +1027,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>N/A</p> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td><p>templateFetched- modèle searchtemplate</p> </td>
   </tr>
  </tbody>
@@ -1055,7 +1058,7 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td><p>modèle searchtemplate</p> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
    <td><p>change - modèle searchtemplatelist</p> </td>
   </tr>
  </tbody>
@@ -1086,8 +1089,8 @@ AEM Forms workspace is composed of [reusable](/help/forms/using/integrating-html
    <td>N/A<br /> </td>
   </tr>
   <tr>
-   <td><p> écoutée (nom  du - Trigger)</p> </td>
-   <td><p>searchTemplate:selected - modèle search</p> </td>
+   <td><p>Événements écoutés (nom du Événement - Déclencheur)</p> </td>
+   <td><p>searchTemplate:selected - modèle de recherche</p> </td>
   </tr>
  </tbody>
 </table>
