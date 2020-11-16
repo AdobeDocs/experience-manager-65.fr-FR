@@ -11,6 +11,9 @@ discoiquuid: fb2b7ff6-6b29-425b-a86e-d1f80faab9e0
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 93%
 
 ---
 
@@ -32,7 +35,7 @@ Lorsque vous démarrez l’application AEM Forms, vous devez d’abord indiquer 
    >    * Vous pouvez alors sélectionner une URL de serveur AEM Forms pour vous connecter à via l’application.
 
 
-Lorsque vous vous connectez à l’application, vous êtes dirigé vers l’[**écran **d’accueil](../../forms/using/home-screen.md).
+Lorsque vous vous connectez à l’application, vous êtes dirigé vers l’[**écran** d’accueil](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >
