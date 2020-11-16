@@ -12,6 +12,9 @@ discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '4952'
+ht-degree: 73%
 
 ---
 
@@ -102,7 +105,7 @@ Exemple de fichier et d’images static.css
 
 1. Si l’élément mywebsite n’apparaît pas dans le tableau, actualisez l’arborescence ou le tableau.
 
-1. [A l’aide de l’accès WebDAV](/help/sites-administering/webdav-access.md) à l’URL à l’adresse https://localhost:4502, copiez le fichier d’exemple `static.css` et le `images` dossier du fichier monsite Web.zip téléchargé dans le `/etc/designs/mywebsite` dossier.
+1. [A l’aide de l’accès WebDAV](/help/sites-administering/webdav-access.md) à l’URL à l’adresse https://localhost:4502, copiez l’exemple de `static.css` fichier et `images` dossier du fichier mysite.zip téléchargé dans le `/etc/designs/mywebsite` dossier.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -127,7 +130,8 @@ Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web 
    * **Libellé** : contentpage
    * **Titre** : My Website Content Page Template (Modèle de page de contenu de mon site web)
    * **Description** : This is my Website Content Page Template (Il s’agit du modèle de page de contenu de mon site web)
-   * **** Type de ressource : monsite Web/composants/contentpage
+   * **Type de ressource :** monsite Web/composants/contentpage
+
    Utilisez la valeur par défaut pour la propriété Classement.
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
@@ -156,6 +160,7 @@ Créez le *composant* qui définit le contenu et effectue le rendu des pages qui
    * **Libellé** : contentpage
    * **Titre** : My Website Content Page Component (Composant de page de contenu de mon site web)
    * **Description** : This is My Website Content Page Component (Il s’agit du composant de page de contenu de mon site web)
+
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
    The location of the new component is `/apps/mywebsite/components/contentpage`. This path corresponds with the resource type of the contentpage template (minus the initial **`/apps/`** part of the path).
@@ -221,8 +226,9 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le mod�
 1. Dans la fenêtre **Créer une page**, saisissez les informations suivantes :
 
    * Titre: `My Website`
-   * Nom: `mywebsite`
+   * Nom (name) : `mywebsite`
    * Sélectionnez l’événement `My Website Content Page Template`
+
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
 1. Cliquez sur **Créer**. In the folder tree, select the **/Websites/My Website** page and click **New** > **New Page**.
@@ -249,6 +255,7 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le mod�
 
    * Titre : Clients
    * Sélectionnez My Website Content Page Template (Modèle de page de contenu de mon site web).
+
    La structure se présente comme suit :
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
@@ -258,6 +265,7 @@ Dans cette section, vous créez les pages suivantes qui utilisent toutes le mod�
    * Nom : cq:designPath
    * Type : Chaîne
    * Valeur : /etc/designs/mywebsite
+
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
 1. In a new wb browser tab or window, open [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) to see the Products page:
@@ -285,7 +293,7 @@ Par exemple, dans le code JSP de votre composant, vous pouvez référencer les s
 
       * **Nom :** sling:resourceSuperType
       * **Type :** Chaîne
-      * **** Valeur : fondation/composants/page
+      * **Valeur :** fondation/composants/page
    1. Cliquez sur Enregistrer tout.
 
 
@@ -413,7 +421,7 @@ Votre navigation supérieure se présente alors comme suit :
 1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **Create**, then **Create Component**.
 1. Dans la fenêtre **Créer un composant**, saisissez les informations suivantes :
 
-   * **Étiquette**: `topnav`
+   * **Libellé**: `topnav`
 
    * **Titre**: `My Top Navigation Component`
 
@@ -497,7 +505,7 @@ Par exemple, la source du lien de l’image vers la page Produits peut être htt
 
 Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/mywebsite/components/contentpage/navimage.png.java que vous créez.
 
-1. Dans CRXDE Lite, ouvrez le `topnav.jsp` sous `/apps/mywebsite/components/topnav.`Localiser le contenu de l’élément d’ancrage (ligne 14) :
+1. En CRXDE Lite, ouvrez le `topnav.jsp` sous `/apps/mywebsite/components/topnav.`Localisez le contenu de l’élément d’ancrage (ligne 14) :
 
    ```xml
    <%=child.getTitle() %>
@@ -513,7 +521,7 @@ Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/m
 1. Right-click the `/apps/mywebsite/components/contentpage` node and click **Create** > **Create File**.
 1. Dans la fenêtre **Créer un fichier**, dans le champ **Nom**, saisissez `navimage.png.java`.
 
-   L’extension de nom de fichier .java indique à Sling que la prise en charge Java de script Apache Sling doit être utilisée pour compiler le script et créer une servlet.
+   L&#39;extension de nom de fichier .java indique à Sling que la prise en charge Java de script Apache Sling doit être utilisée pour compiler le script et créer une servlet.
 
 1. Copiez le code suivant dans `navimage.png.java.`Le code étend la classe AbstractImageServlet :
 
@@ -669,9 +677,9 @@ Créez deux pages situées sous la page Produits. Pour chaque page décrivant de
    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
    1. Dans l’onglet **Propriétés**, entrez les valeurs suivantes :
 
-      * Nom: `jcr:description`
-      * Type: `String`
-      * Valeur: `This is a description of the Product 1!.`
+      * Nom : `jcr:description`
+      * Type : `String`
+      * Valeur : `This is a description of the Product 1!.`
    1. Cliquez sur **Ajouter**.
    1. Dans l’onglet **Propriétés**, créez une autre propriété à l’aide des valeurs suivantes :
 
@@ -690,7 +698,7 @@ Créez deux pages situées sous la page Produits. Pour chaque page décrivant de
 
       * Nom : jcr:description
       * Type : Chaîne
-      * Valeur : Ceci est une description du Produit 2!.
+      * Valeur : Voici une description du produit 2 ! .
    1. Cliquez sur **Ajouter**.
    1. Dans les mêmes zones de texte, remplacez les valeurs précédentes par les valeurs suivantes :
 
@@ -710,8 +718,8 @@ Pour créer le composant listchildren, procédez comme suit :
 1. Dans la boîte de dialogue, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur Suivant :
 
    * Libellé : listchildren.
-   * Titre : Composant Mes Fils D&#39;Enfants.
-   * Description : Voici le composant Mes enfants de liste.
+   * Titre : Composant Mes Listchildren.
+   * Description : Voici le composant My Listchildren.
 
 1. Continuez à cliquer sur Suivant jusqu’à ce que le panneau Enfants autorisés s’affiche. Cliquez ensuite sur OK.
 
@@ -758,9 +766,10 @@ Créez la boîte de dialogue utilisée pour configurer les propriétés du compo
 
    1. Dans la boîte de dialogue, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur OK.
 
-      * **Étiquette**: `dialog`
+      * **Libellé**: `dialog`
 
       * **Titre**: `Edit Component` et cliquez sur **OK**.
+
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
    Avec les propriétés suivantes :
@@ -776,20 +785,22 @@ Créez la boîte de dialogue utilisée pour configurer les propriétés du compo
 
    * Nom : items
    * Type : cq:WidgetCollection
+
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. Créez un nœud sous le nœud des éléments à l’aide des valeurs de propriété suivantes :
 
    * Nom : listroot
    * Type : cq:Widget
+
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Ajoutez des propriétés pour le noeud listroot afin de le configurer en tant que champ de texte. Chaque ligne du tableau suivant représente une propriété. Lorsque vous avez terminé, cliquez sur Enregistrer tout.
+1. Ajoutez les propriétés du noeud listroot pour le configurer en tant que champ de texte. Chaque ligne du tableau suivant représente une propriété. Lorsque vous avez terminé, cliquez sur Enregistrer tout.
 
    | Nom | Type | Valeur |
    |---|---|---|
    | fieldLabel | Chaîne | Chemin d’accès de la liste racine |
-   | nom est | Chaîne | ./listroot |
+   | name | Chaîne | ./listroot |
    | xtype | Chaîne | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
@@ -908,7 +919,7 @@ Créez la boîte de dialogue pour configurer votre composant Logo en mode Créat
 
    1. Saisissez les valeurs de propriété ci-dessous, puis cliquez sur OK :
 
-      * **** Libellé : `design_dialog`
+      * **Libellé :** `design_dialog`
 
       * **Titre:** `Logo (Design)`
 
@@ -919,7 +930,7 @@ Créez la boîte de dialogue pour configurer votre composant Logo en mode Créat
    |---|---|---|
    | fileNameParameter | Chaîne | ./imageName |
    | fileReferenceParameter | Chaîne | ./imageReference |
-   | nom est | Chaîne | ./image |
+   | name | Chaîne | ./image |
    | titre | Chaîne | Image |
    | xtype | Chaîne | html5smartimage |
 
@@ -1121,7 +1132,7 @@ Créez un composant qui affiche une image dans le système de paragraphes. Pour 
 1. Sélectionnez le nœud du composant `image` et modifiez les valeurs de propriété suivantes :
 
    * `jcr:title:` Composant Mon image.
-   * `jcr:description`: Voici le composant Mon image.
+   * `jcr:description`: Voici le composant My Image Component.
 
 1. Ajoutez une propriété au nœud `image` avec les valeurs de propriété suivantes :
 
@@ -1269,11 +1280,11 @@ Votre zone de saisie des termes de recherche se présentera comme suit sur la pa
 
       * Libellé : rechercher
       * Titre : Mon composant de recherche
-      * Description : Ceci est le composant de recherche
-      * Groupe : Mon site Web
+      * Description : Ceci est mon composant de recherche
+      * Groupe : MonSite Web
    1. Cliquez sur suivant, puis à nouveau sur Suivant.
    1. On the Allowed Parents panel, click the + button and type `*/parsys`.
-   1. Cliquez sur Suivant, puis sur OK.
+   1. Cliquez sur Next, puis sur OK.
 
 
 1. Cliquez sur Enregistrer tout.
@@ -1288,7 +1299,7 @@ Votre zone de saisie des termes de recherche se présentera comme suit sur la pa
 
 #### Création du script de recherche {#creating-the-search-script}
 
-Cette section décrit la création du script de recherche :
+Cette section décrit comment créer le script de recherche :
 
 1. Open the `/apps/mywebsite/components/search/search.jsp` file.
 1. Copiez le code suivant dans `search.jsp` :
