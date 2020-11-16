@@ -11,6 +11,9 @@ topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
 
 ## Présentation {#overview}
 
-Cette fonction permet à toutes les propriétés de configuration OSGi d’être stockées sous une forme chiffrée et protégée, préférable au texte en clair. Le formulaire de l’interface utilisateur de la console Web est utilisé pour créer du texte chiffré à partir de texte clair à l’aide de la clé principale de chiffrement à l’échelle du système.
+Cette fonction permet à toutes les propriétés de configuration OSGi d’être stockées sous une forme chiffrée et protégée, préférable au texte en clair. Le formulaire de l&#39;interface utilisateur de la console Web est utilisé pour créer du texte chiffré à partir de texte clair à l&#39;aide de la clé principale de chiffrement à l&#39;échelle du système.
 
 La prise en charge du module de configuration OSGi a été ajoutée afin de déchiffrer la propriété avant qu’elle ne soit utilisée par un service.
 
