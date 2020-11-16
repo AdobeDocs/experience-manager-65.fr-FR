@@ -27,7 +27,7 @@ Microsoft Dynamics est un logiciel de gestion de la relation client (CRM, Custo
 * Écrire des données dans Microsoft Dynamics lors de l&#39;envoi du formulaire adaptatif
 * Ecrire des données dans Microsoft Dynamics par le biais d&#39;entités personnalisées définies dans le modèle de données de formulaire et vice versa
 
-Le module complémentaire AEM Forms inclut également la configuration OData de référence que vous pouvez exploiter pour intégrer rapidement Microsoft Dynamics aux AEM Forms.
+Le module complémentaire AEM Forms inclut également la configuration OData de référence que vous pouvez exploiter pour intégrer rapidement Microsoft Dynamics à AEM Forms.
 
 Lorsque le package est installé, les entités et services suivants sont déployés sur votre instance AEM Forms :
 
@@ -46,7 +46,7 @@ Avant de commencer à installer et configurer Microsoft Dynamics, vérifiez que
    * Microsoft Dynamics 365 sur site
    * Microsoft Dynamics 2016 sur site
 
-* [Enregistrement de l&#39;application pour le service en ligne Microsoft Dynamics avec Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Prenez note des valeurs de l’ID client (également appelé ID de l&#39;application) et du secret client pour le service enregistré. Ces valeurs sont utilisées lors de l’utilisation de la [configuration du service cloud pour votre service Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Enregistrement de l&#39;application pour le service en ligne Microsoft Dynamics avec Microsoft Azure Principale Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Prenez note des valeurs de l’ID client (également appelé ID de l&#39;application) et du secret client pour le service enregistré. Ces valeurs sont utilisées lors de l’utilisation de la [configuration du service cloud pour votre service Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Définition de l’URL de réponse pour l’application Microsoft Dynamics enregistrée {#set-reply-url-for-registered-microsoft-dynamics-application}
 
