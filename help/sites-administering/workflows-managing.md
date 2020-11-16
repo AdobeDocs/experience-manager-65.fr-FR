@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 90%
 
 ---
 
@@ -63,9 +66,10 @@ If the workflow model is stored within `/var/workflow/models` then you can assig
 1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, ajoutez une nouvelle entrée de contrôle d’accès avec les propriétés suivantes :
 
    * **Principal**: `content-authors`
-   * **Type**: `Deny`
+   * **Type** : `Deny`
    * **Privilèges**: `jcr:read`
    * **Rep:glob** : référence au workflow spécifique
+
    ![wf-108](assets/wf-108.png)
 
    Le tableau **Liste de contrôle d’accès** comprend maintenant la restriction pour `content-authors` dans le modèle de workflow `prototype-wfm-01`.
@@ -99,8 +103,9 @@ Vous pouvez alors ajouter une liste de contrôle d’accès dans le dossier prop
 1. Dans la boîte de dialogue **Ajouter une nouvelle entrée**, ajoutez une nouvelle entrée de contrôle d’accès avec les propriétés suivantes :
 
    * **Principal**: `content-authors`
-   * **Type**: `Deny`
+   * **Type** : `Deny`
    * **Privilèges**: `jcr:read`
+
    >[!NOTE]
    >
    >Comme lors de l’[application d’une liste de contrôle d’accès pour le modèle de workflow spécifique à /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models), vous pouvez inclure une propriété rep:glob pour limiter l’accès à un workflow spécifique.
