@@ -26,7 +26,7 @@ Si vous êtes un client d’Adobe Marketing Cloud, vous pouvez synchroniser vo
 Le workflow pour configurer cette intégration est le suivant :
 
 1. Créez une authentification dans Adobe I/O à l’aide d’une passerelle publique et obtenez un ID d’application.
-1. Créez un profil sur votre instance de AEM Assets à l’aide du ID de l&#39;application.
+1. Créez un profil sur votre instance AEM Assets à l’aide du ID de l&#39;application.
 1. Utilisez cette configuration pour synchroniser vos ressources dans AEM Assets avec Creative Cloud.
 
 En arrière-plan, le serveur AEM authentifie votre profil avec la passerelle, puis synchronise les données entre AEM Assets et Marketing Cloud.
@@ -45,7 +45,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 
 >[!CAUTION]
 >
->L&#39;Adobe Marketing Cloud a été rebaptisé Adobe Experience Cloud. Les procédures ci-dessous mentionnent toujours Marketing Cloud afin de refléter l’interface actuelle. Ces mentions seront modifiées ultérieurement.
+>Adobe Marketing Cloud a été rebaptisé Adobe Experience Cloud. Les procédures ci-dessous mentionnent toujours Marketing Cloud afin de refléter l’interface actuelle. Ces mentions seront modifiées ultérieurement.
 
 ## Création d’une application {#create-an-application}
 
@@ -123,7 +123,7 @@ Flux des données lorsque AEM Assets et Creative Cloud sont intégrés
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Cliquez sur **[!UICONTROL Mettre à jour]**. Synchronisez maintenant vos ressources avec l’instance AEM Assets.
+1. Cliquez sur **[!UICONTROL Mettre à jour]**. Synchronisez vos ressources avec l’instance AEM Assets maintenant.
 
 ## Test de la synchronisation {#test-the-synchronization}
 
