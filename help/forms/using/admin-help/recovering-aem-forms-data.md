@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1174'
+ht-degree: 95%
 
 ---
 
@@ -106,7 +109,7 @@ Si un nœud unique d’une grappe multinœud a échoué et si les nœuds restant
       Pour la restauration dans un environnement organisé en grappes, consultez la section [Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Supprimez tous les fichiers temporaires AEM forms créés dans le répertoire java.io.temp ou dans le répertoire temporaire Adobe.
-1. d’AEM Forms (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Début AEM formulaires (voir [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Modification de l’emplacement du stockage global de documents durant la récupération {#changing-the-gds-location-during-recovery}
 
