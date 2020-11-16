@@ -6,12 +6,12 @@ translation-type: tm+mt
 source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 45%
+ht-degree: 47%
 
 ---
 
 
-# Configuration de RTE pour la création de pages Web et de sites accessibles {#configure-rte-for-accessibility}
+# Configure RTE to create accessible webpages and sites {#configure-rte-for-accessibility}
 
 Adobe Experience Manager prend en charge de nombreuses fonctions d&#39;accessibilité standard, conformément à diverses normes d&#39;accessibilité. En outre, les développeurs peuvent personnaliser ou étendre les fonctionnalités afin de créer du contenu accessible à l’aide de composants Experience Manager qui utilisent l’éditeur de texte enrichi (RTE).
 
@@ -19,7 +19,7 @@ Lors de la conception de pages Web et de l’ajout de contenu aux pages, les dé
 
 Pour configurer et personnaliser ces fonctionnalités, [configurez les modules externes](#configure-the-plugin-features) RTE pour le composant. For example, the `paraformat` plugin lets you add additional block level semantic elements, including extending the number of heading levels supported beyond the basic `H1`, `H2`, and `H3` provided by default.
 
-Le RTE est disponible dans divers composants pour l’interface utilisateur tactile et l’interface utilisateur classique. Cependant, le composant principal à utiliser le RTE est le composant **Texte** disponible pour les deux interfaces. The following images show the RTE with a range of plugins enabled, including `paraformat`:
+Le RTE est disponible dans divers composants pour l’interface utilisateur tactile et l’interface utilisateur classique. Cependant, le composant Principal à utiliser RTE est le composant **Texte** disponible pour les deux interfaces. The following images show the RTE with a range of plugins enabled, including `paraformat`:
 
 ![Composant de texte (RTE) en mode plein écran dans l’interface utilisateur tactile.](assets/chlimage_1-206.png)
 
@@ -31,18 +31,18 @@ Le RTE est disponible dans divers composants pour l’interface utilisateur tact
 
 Pour connaître les différences entre les fonctionnalités RTE disponibles dans les différentes interfaces, voir [Plugins et leurs fonctionnalités](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
-## Configuration des fonctionnalités du module externe {#configure-the-plugin-features}
+## Configuration des fonctionnalités de module externe {#configure-the-plugin-features}
 
-Pour obtenir des instructions complètes sur la configuration du RTE, voir [Configuration de la page Editeur](/help/sites-administering/rich-text-editor.md) de texte enrichi. Ceci couvre tous les problèmes, y compris les étapes principales :
+For the complete instructions to configure the RTE, see [configure the Rich Text Editor](/help/sites-administering/rich-text-editor.md) page. Ceci couvre tous les problèmes, y compris les étapes principales :
 
 * [Modules externes et fonctionnalités](/help/sites-administering/rich-text-editor.md#aboutplugins).
-* [Emplacements](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)de configuration.
-* [Activez un module externe et configurez la propriété](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)features.
-* [Configurez d’autres fonctionnalités du RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+* [Emplacements de configuration](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+* [Activation d’un module externe et configuration de la propriété features](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+* [Configuration d’autres fonctionnalités de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
 
 By configuring a plugin within the appropriate `rtePlugins` sub-branch in CRXDE Lite, you can activate either all or specific features for that plugin.
 
-![CRXDE Lite présentant un exemple de sous-branche rtePlugin.](assets/chlimage_1-208.png)
+![CRXDE Lite présentant un exemple de rtePlugin.](assets/chlimage_1-208.png)
 
 ### Example - specify paragraph formats available in RTE selection field {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
@@ -64,7 +64,7 @@ Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d
 
 >[!CAUTION]
 >
->Use the `sourceedit` feature carefully. Les fautes de frappe et/ou les fonctions non prises en charge peuvent entraîner d’autres problèmes.
+>Utilisez la fonction `sourceedit` avec prudence. Les fautes de frappe et/ou les fonctions non prises en charge peuvent entraîner d’autres problèmes.
 
 ## Ajouter la prise en charge d’un plus grand nombre d’éléments et d’attributs HTML {#add-support-for-more-html-elements-and-attributes}
 
@@ -99,7 +99,7 @@ RTE peut utiliser `strong` des balises et `em` à la place de `b` et `i`. Ajoute
 </htmlRules>
 ```
 
-### Instructions pas à pas {#step-by-step-instructions}
+### Instructions détaillées {#step-by-step-instructions}
 
 1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copier :
