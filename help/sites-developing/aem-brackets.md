@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 55%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
 
 ## Présentation {#overview}
 
-L’extension AEM Brackets offre un workflow fluide pour modifier les composants AEM et les bibliothèques clientes. Elle tire parti de la puissance de l’éditeur de code [Brackets](https://brackets.io/) qui donne accès aux fichiers et calques Photoshop depuis l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. This extension also provides some support for the [HTML Template Language (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), which takes away the complexity of JSP to make component development easier and more secure.
+L’extension AEM Brackets offre un workflow fluide pour modifier les composants AEM et les bibliothèques clientes. Elle tire parti de la puissance de l’éditeur de code [Brackets](https://brackets.io/) qui donne accès aux fichiers et calques Photoshop depuis l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. This extension also provides some support for the [HTML Template Language (HTL)](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html), which takes away the complexity of JSP to make component development easier and more secure.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -29,7 +32,7 @@ Les principales fonctionnalités de l’extension AEM Brackets sont les suivant
 
 * Synchronisation automatisée des fichiers modifiés vers l’instance de développement AEM.
 * Synchronisation bidirectionnelle manuelle des fichiers et des dossiers.
-* Synchronisation complète du contenu-package du projet.
+* Synchronisation complète des packages de contenu du projet.
 * HTL code completion for expressions and `data-sly-*` block statements.
 
 En outre, Brackets propose de nombreuses fonctionnalités utiles pour les développeurs de front-end AEM :
@@ -88,7 +91,7 @@ Pour synchroniser le contenu avec une instance de développement AEM dans les de
 Les paramètres du projet permettent de définir :
 
 1. The server URL (e.g. `http://localhost:4502`)
-1. Tolérer les serveurs qui ne possèdent pas de certificat HTTPS valide (ne cochez pas, sauf si nécessaire)
+1. Permet de tolérer les serveurs ne disposant pas d&#39;un certificat HTTPS valide (ne cochez pas cette case, sauf si nécessaire).
 1. Le nom d’utilisateur qui a servi à synchroniser le contenu (par exemple `admin`)
 1. The user&#39;s password (e.g. `admin`)
 
