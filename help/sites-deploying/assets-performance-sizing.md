@@ -11,13 +11,16 @@ topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
 source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 78%
 
 ---
 
 
 # Guide de performances des ressources{#assets-performance-guide}
 
-La gestion des ressources numériques est souvent utilisée lorsque les performances sont importantes ; toutefois, la configuration DAM type contient un certain nombre de composants matériels et logiciels qui peuvent affecter les performances. Ce document contient les éléments suivants :
+La gestion des ressources numériques est souvent utilisée lorsque les performances sont importantes ; toutefois, la configuration DAM standard contient un certain nombre de composants matériels et logiciels qui peuvent affecter les performances. Ce document contient les éléments suivants :
 
 * Informations destinées aux administrateurs système lors de la détermination des dimensions optimales du matériel pour une nouvelle configuration de gestion des actifs numériques
 * Informations destinées aux développeurs de logiciels cherchant à résoudre les problèmes de performances concernant des instances de gestion des actifs numériques
@@ -68,19 +71,19 @@ Une configuration de gestion des actifs numériques comprend généralement des 
 
 La légende ci-dessous décrit les écueils potentiels en matière de performances avec quelques solutions, au besoin.
 
-**Connexion réseau à l’utilisateur** final Une connexion réseau lente peut entraîner des problèmes de débit, parfois aussi des problèmes de latence. La connexion que le fournisseur d’accès Internet fournit à l’utilisateur est parfois lente, en particulier pour ce qui est des intranets. C’est un signe de topologie de réseau inappropriée.
+**Connexion réseau à l&#39;utilisateur** final Une connexion réseau lente peut provoquer des problèmes de débit, parfois aussi des problèmes de latence. La connexion que le fournisseur d’accès Internet fournit à l’utilisateur est parfois lente, en particulier pour ce qui est des intranets. C’est un signe de topologie de réseau inappropriée.
 
-**Système** de fichiers temporaires Un système de fichiers local lent peut entraîner des problèmes de performances interactives, surtout en ce qui concerne la recherche, car les index de recherche sont stockés sur le disque local. Cela peut, par ailleurs, entraîner des problèmes de traitement des ressources si le processus de ligne de commande est utilisé.
+**Système** de fichiers temporaires Un système de fichiers local lent peut provoquer des problèmes de performances interactives, notamment en ce qui concerne la recherche, car les index de recherche sont stockés sur le disque local. Cela peut, par ailleurs, entraîner des problèmes de traitement des ressources si le processus de ligne de commande est utilisé.
 
-**AEM DAM Finder** Les problèmes de performances interactifs, souvent rencontrés dans les recherches, sont dus à une utilisation élevée du processeur en raison de nombreux utilisateurs simultanés ou d’autres processus gourmands en ressources sur la même instance. Pour améliorer les performances, passez des machines virtuelles à des ordinateurs dédiés et assurez-vous qu’il n’y a pas d’autres services exécutés sur l’ordinateur. En cas de charge élevée sur le processeur, causée par le traitement des ressources et un nombre important d’utilisateurs simultanés, Day recommande d’ajouter des nœuds de cluster supplémentaires.
+**aem DAM Finder** Les problèmes de performances interactives, souvent rencontrés dans les recherches, sont dus à une utilisation élevée du processeur en raison de nombreux utilisateurs simultanés ou d&#39;autres processus consommateurs de processeur sur la même instance. Pour améliorer les performances, passez des machines virtuelles à des ordinateurs dédiés et assurez-vous qu’il n’y a pas d’autres services exécutés sur l’ordinateur. En cas de charge élevée sur le processeur, causée par le traitement des ressources et un nombre important d’utilisateurs simultanés, Day recommande d’ajouter des nœuds de cluster supplémentaires.
 
-**Processus** de gestion des actifs numériques AEM Les processus de gestion des actifs qui s’exécutent de longue date lors de l’assimilation des actifs provoquent des problèmes de performances de traitement des actifs. En fonction du type de ressources traitées, cela peut indiquer une surutilisation du processeur. Day recommande de réduire le nombre des autres processus exécutés sur le système et d’augmenter le nombre de processeurs disponibles en ajoutant des nœuds de cluster.
+**aem processus** de gestion des actifs numériques Les processus de gestion des actifs qui s’exécutent de longue date pendant l’assimilation des actifs provoquent des problèmes de performances de traitement des actifs. En fonction du type de ressources traitées, cela peut indiquer une surutilisation du processeur. Day recommande de réduire le nombre des autres processus exécutés sur le système et d’augmenter le nombre de processeurs disponibles en ajoutant des nœuds de cluster.
 
-**Connectivité** NAS Une connectivité réseau faible au NAS entraîne des problèmes de performances interactives, car l&#39;accès aux nouveaux noeuds pendant le traitement des ressources est ralenti en raison de la latence du réseau. De plus, un débit réseau lent affecte négativement le débit, mais également les performances de traitement des ressources, car le chargement et l’enregistrement des rendus sont ralentis.
+**Connectivité** NAS La faible connectivité réseau au NAS entraîne des problèmes de performances interactives, car l&#39;accès à de nouveaux noeuds pendant le traitement des ressources est ralenti en raison de la latence du réseau. De plus, un débit réseau lent affecte négativement le débit, mais également les performances de traitement des ressources, car le chargement et l’enregistrement des rendus sont ralentis.
 
 Les raisons de la latence et du débit insatisfaisants dans un stockage NAS résident généralement dans la topologie de réseau ou la surutilisation du stockage NAS par d’autres services.
 
-**en réseau rattaché** Les systèmes de en réseau rattaché à un réseau trop utilisé peuvent causer toute une gamme de problèmes :
+**Enregistrement** relié au réseau Les systèmes d&#39;enregistrement reliés au réseau surutilisés peuvent causer toute une gamme de problèmes :
 
 * Un espace disque faible est un problème rencontré fréquemment, qui peut être résolu en dimensionnant correctement un projet de gestion des actifs numériques. 
 * Une latence de disque élevée se traduit par des temps d’accès lents pour CRX et peut entraîner des problèmes de performances des interactions.
