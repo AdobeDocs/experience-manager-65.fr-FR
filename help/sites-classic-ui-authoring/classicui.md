@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
 
-L’interface utilisateur classique est l’interface utilisateur orientée bureau qui était disponible depuis CQ5 (l’ancienne version d’AEM). La documentation suivante relative à la création est axée sur cette interface. 
+L’interface utilisateur classique est l’interface utilisateur orientée bureau qui était disponible depuis CQ5 (l’interface précédente à AEM). La documentation suivante relative à la création est axée sur cette interface. 
 
 L’IU tactile est la nouvelle interface utilisateur standard pour AEM. Elle est conçue pour être utilisée à la fois sur les appareils à écran tactile et les ordinateurs de bureau. Pour plus d’informations, consultez la [documentation de création standard.](/help/sites-authoring/author.md)
 
