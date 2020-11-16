@@ -2,7 +2,7 @@
 title: Modèles
 seo-title: Modèles
 description: Les modèles sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
-seo-description: Modèles sont utilisées lors de la création d’une page qui sera utilisée comme base pour la nouvelle page.
+seo-description: Modèles sont utilisés lors de la création d'une page qui sera utilisée comme base pour la nouvelle page.
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,6 +12,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: 2fc35bfd93585a586cb1d4e3299261611db49ba6
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 54%
 
 ---
 
@@ -41,7 +44,7 @@ AEM propose désormais deux types de modèles de base pour la création de page
 
 ### Modèles modifiables {#editable-templates}
 
-Les modèles modifiables sont désormais considérés comme des bonnes pratiques pour le développement avec AEM.
+Les modèles modifiables sont maintenant considérés comme les meilleures pratiques pour le développement avec AEM.
 
 Avantages des modèles modifiables :
 
@@ -67,7 +70,7 @@ Avantages des modèles modifiables :
 Les modèles statiques :
 
 * Doivent être définis et configurés par vos développeurs.
-* Il s’agissait du système de modèle d’origine d’AEM et il était disponible pour de nombreuses versions.
+* Il s&#39;agissait du système de modèle d&#39;AEM d&#39;origine et a été disponible pour de nombreuses versions.
 * Un modèle statique est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
 * Sont copiés pour créer la nouvelle page, aucune connexion dynamique n’existe après cela.
 * Utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
@@ -76,19 +79,19 @@ Les modèles statiques :
 
 >[!NOTE]
 >
->Depuis AEM 6.5, l’utilisation de modèles statiques n’est plus considérée comme une bonne pratique. Privilégiez les modèles modifiables à la place.
+>À l&#39;AEM 6.5, l&#39;utilisation de modèles statiques n&#39;est pas considérée comme une bonne pratique. Privilégiez les modèles modifiables à la place.
 >
->[Les outils de modernisation](modernization-tools.md) d’AEM peuvent vous aider à migrer des modèles statiques vers des modèles modifiables.
+>[Les outils de modernisation](modernization-tools.md) des AEM peuvent vous aider à migrer des modèles statiques aux modèles modifiables.
 
 ### Disponibilité des modèles {#template-availability}
 
 >[!CAUTION]
 >
->AEM offre plusieurs propriétés pour contrôler les modèles autorisés sous **Sites**. Toutefois, leur combinaison peut conduire à des règles très complexes, difficiles à suivre et à gérer.
+>aem offre plusieurs propriétés pour contrôler les modèles autorisés sous **Sites**. Cependant, leur combinaison peut conduire à des règles très complexes, difficiles à suivre et à gérer.
 >
->Par conséquent, Adobe recommande de commencer par la simplicité en définissant :
+>Par conséquent, l’Adobe vous recommande de début simple en définissant :
 >
->* seule la `cq:allowedTemplates` propriété
+>* uniquement la `cq:allowedTemplates` propriété
    >
    >
 * uniquement sur la racine du site
@@ -96,9 +99,9 @@ Les modèles statiques :
 >
 For an example, see We.Retail: `/content/we-retail/jcr:content`
 >
->Les propriétés `allowedPaths`, `allowedParents`et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus complexes. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d’autres `cq:allowedTemplates` propriétés sur des sous-sections du site s’il est nécessaire de restreindre davantage les modèles autorisés.
+>Les propriétés `allowedPaths`, `allowedParents`et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d&#39;autres `cq:allowedTemplates` propriétés sur des sous-sections du site si des restrictions supplémentaires s&#39;imposent pour les modèles autorisés.
 >
->Un autre avantage est que les `cq:allowedTemplates` propriétés peuvent être mises à jour par un auteur dans l’onglet **Avancé** des Propriétés **de la** page. Les autres propriétés de modèle ne peuvent pas être mises à jour à l’aide de l’interface utilisateur (standard). Un développeur doit donc gérer les règles et le déploiement du code pour chaque modification.
+>Un autre avantage est que les `cq:allowedTemplates` propriétés peuvent être mises à jour par un auteur dans l’onglet **Avancé** des Propriétés **de la** page. Les autres propriétés de modèle ne peuvent pas être mises à jour à l’aide de l’interface utilisateur (standard). Il faudrait donc qu’un développeur conserve les règles et qu’un déploiement du code soit effectué pour chaque modification.
 
 Lors de la création d’une page dans l’interface admin du site, la liste des modèles disponibles dépend de l’emplacement de la nouvelle page et des restrictions de positionnement spécifiées dans chaque modèle.
 
