@@ -75,7 +75,7 @@ Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une con
 
 **Arborescence de MBean**
 
-**Nom de domaine Adobe :** Dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
+**Nom de domaine de l&#39;Adobe :** Dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
 
 **ServiceType :** AdobeService est le nom utilisé pour la liste de tous les services.
 
