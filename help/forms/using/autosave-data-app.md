@@ -12,6 +12,9 @@ discoiquuid: 2c71cc28-b7c8-4785-9fc2-b47fa80cbd70
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 75%
 
 ---
 
@@ -41,5 +44,5 @@ Suivez les étapes ci-après pour utiliser la fonction d’enregistrement automa
 1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Click **OK** in the Recover Unsaved Task dialog to resume working with the saved task. Vous pouvez cliquer sur **Annuler** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
 
    Si vous cliquez sur **OK**, la tâche est restaurée avec les données correspondant au dernier enregistrement automatique déclenché avant que l’application ne s’arrête. Il comprend les données du formulaire et toutes les pièces jointes associées à la tâche.
-   [![](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)****** Obtention d’une tâche **récupéréeA. Formulaire de travail en cours** B. Application fermée avec force **C.** L’application a redémarré avec la boîte de dialogue Récupérer la tâche non enregistrée **D. Formulaire restauré avec les données d’origine
+   [ ![Obtention d&#39;une tâche ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.** Un formulaire de travail en cours **B.** L&#39;application s&#39;est fermée de manière forcée **C.** L&#39;application a redémarré avec la boîte de dialogue de récupération des Tâches non enregistrées **D.** Formulaire restauré avec les données d&#39;origine
 
