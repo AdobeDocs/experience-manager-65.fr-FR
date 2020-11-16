@@ -10,6 +10,9 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
 
 [Un fragment de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) est un groupe de champs ou un panneau contenant un groupe de champs que vous pouvez utiliser lors de la création d’un formulaire. Il vous permet de créer un formulaire facilement et rapidement. Vous pouvez glisser-déposer un fragment de formulaire adaptatif dans un formulaire à l’aide du navigateur de ressources de la barre latérale, et vous pouvez le modifier dans l’éditeur de formulaire.
 
-Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le package AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Il inclut les configurations suivantes :
+Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fournis dans le package AEM Forms [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/fr/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Il inclut les configurations suivantes :
 
 * Adresse
 * Coordonnées
