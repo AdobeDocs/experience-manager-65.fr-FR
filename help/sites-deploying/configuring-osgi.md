@@ -1,8 +1,8 @@
 ---
 title: Configuration d’OSGi
 seo-title: Configuration d’OSGi
-description: OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration. Cet article détaille le mode de gestion des paramètres de configuration de ces lots.
-seo-description: OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration. Cet article détaille le mode de gestion des paramètres de configuration de ces lots.
+description: Le framework OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration. Cet article détaille le mode de gestion des paramètres de configuration de ces lots.
+seo-description: Le framework OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration. Cet article détaille le mode de gestion des paramètres de configuration de ces lots.
 uuid: b39059a5-dd61-486a-869a-0d7a732c3a47
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 73%
 
 ---
 
 
 # Configuration d’OSGi{#configuring-osgi}
 
-[OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). ](https://www.osgi.org/) Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+Le framework [OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
-OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés* ».
+OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés*&quot;.
 
-Cela permet une gestion conviviale des lots car ils peuvent être arrêtés, installés, démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (voir la [spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots.
+Cela permet une gestion conviviale des lots , car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (voir la [spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots.
 
 Vous pouvez gérer les paramètres de configuration de ces lots en :
 
@@ -85,7 +88,7 @@ Pour mettre à jour une configuration avec la console web :
 
       **les lots OSGi >**
 
-   * L&#39;URL directe; par exemple :
+   * L&#39;URL directe ; par exemple :
 
       `http://localhost:4502/system/console/configMgr`
    Une liste s’affiche.
@@ -103,7 +106,7 @@ Pour mettre à jour une configuration avec la console web :
    >
    >Les mises à jour sont enregistrées dans le référentiel sous la forme de [fichiers de configuration](#osgi-configuration-with-configuration-files). To locate these afterwards, (e.g. to include in a content package for use on another instance) you should make a note of the persistent identity ( `PID`).
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur **Save**.
 
    Les modifications sont immédiatement appliquées à la configuration OSGi correspondante du système en cours d’exécution. Aucun redémarrage n’est requis.
 
@@ -189,7 +192,7 @@ Pour ajouter une nouvelle configuration au référentiel, vous devez connaître 
 1. Whether a specific [run mode](/help/sites-deploying/configure-runmodes.md) is required. Créez le dossier :
 
    * `config` - pour tous les modes d&#39;exécution
-   * `config.author` - pour l&#39;environnement de création
+   * `config.author` - pour l&#39;environnement auteur
    * `config.publish` - pour l&#39;environnement de publication
    * `config.<run-mode>` - le cas échéant
 
@@ -199,7 +202,7 @@ Pour ajouter une nouvelle configuration au référentiel, vous devez connaître 
    Référencez le champ des paramètres individuels dans la console web. Le nom s’affiche entre parenthèses pour chaque paramètre.
 
    Par exemple, créez une propriété.
-   `versionmanager.createVersionOnActivation` pour configurer **Créer une version lors de l’activation**.
+   `versionmanager.createVersionOnActivation` pour configurer **Créer une version sur Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -207,7 +210,7 @@ Pour ajouter une nouvelle configuration au référentiel, vous devez connaître 
 
    `select * from sling:OsgiConfig`
 
-   Si tel est le cas, cette configuration peut être copiée ` /apps/<yourProject>/`, puis personnalisée au nouvel emplacement.
+   Si tel est le cas, cette configuration peut être copiée dans ` /apps/<yourProject>/`, puis personnalisée dans le nouvel emplacement.
 
 #### Création de la configuration dans le référentiel {#creating-the-configuration-in-the-repository}
 
@@ -224,10 +227,10 @@ Pour ajouter la nouvelle configuration au référentiel :
 
 1. Sous ce dossier; créez un nœud :
 
-   * Type: `sling:OsgiConfig`
-   * Nom : l&#39;identité persistante;
+   * Type : `sling:OsgiConfig`
+   * Nom : l&#39;identité persistante (PID);
 
-      par exemple, pour AEM WCM Version Manager, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      par exemple pour AEM WCM Version Manager utilisé `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
    >When making a Factory Configuration append `-<identifier>` to the name.
@@ -240,9 +243,10 @@ Pour ajouter la nouvelle configuration au référentiel :
 
 1. Pour chaque paramètre que vous souhaitez configurer, créez une propriété sur ce nœud :
 
-   * Nom : nom du paramètre tel qu’il apparaît dans la console web. Il est indiqué entre parenthèses à la fin de la description du champ. Par exemple, pour `Create Version on Activation` utilisation `versionmanager.createVersionOnActivation`
+   * Nom : nom du paramètre tel qu’il apparaît dans la console web. Il est indiqué entre parenthèses à la fin de la description du champ. Par exemple, pour une `Create Version on Activation` utilisation `versionmanager.createVersionOnActivation`
    * Type : selon le cas.
    * Valeur : selon les besoins.
+
    Il vous suffit de créer des propriétés pour les paramètres que vous voulez configurer. Les autres prendront toujours les valeurs par défaut définies par AEM.
 
 1. Enregistrez toutes les modifications.
@@ -251,7 +255,7 @@ Pour ajouter la nouvelle configuration au référentiel :
 
 >[!CAUTION]
 >
->You must not change anything in the `/libs` path.
+>Vous ne devez rien modifier dans le chemin `/libs`.
 
 >[!CAUTION]
 >
@@ -304,11 +308,11 @@ La configuration comportant le nombre le plus élevé de modes d’exécution co
 
 La liste suivante présente une petite sélection de configurations disponibles dans le référentiel (pour une installation standard) :
 
-* Auteur - Filtre WCM AEM :
+* Auteur - AEM filtre WCM :
 
    `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publier - Filtre WCM AEM :
+* Publier - AEM Filtre WCM :
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
@@ -326,19 +330,19 @@ Pour répertorier tous les nœuds de configuration de votre instance, utilisez l
 
 ### Persistance de la configuration {#configuration-persistence}
 
-* Si vous modifiez une configuration via la console Web, elle est (généralement) écrite dans le référentiel à l’adresse suivante :
+* Si vous modifiez une configuration via la console Web, elle est (généralement) consignée dans le référentiel à l&#39;adresse suivante :
 
    `/apps/{somewhere}`
 
-   * Par défaut, `{somewhere}` est `system/config` définie sur
+   * Par défaut `{somewhere}` est `system/config` ainsi écrit pour la configuration
 
       `/apps/system/config`
 
-   * Cependant, si vous modifiez une configuration qui est initialement venue d’un autre emplacement du référentiel : par exemple :
+   * Cependant, si vous modifiez une configuration qui venait initialement d’un autre emplacement du référentiel : par exemple :
 
       /libs/foo/config/someconfig
 
-      La configuration mise à jour est ensuite écrite sous l’emplacement d’origine ; par exemple :
+      Ensuite, la configuration mise à jour est écrite sous l&#39;emplacement d&#39;origine ; par exemple :
 
       `/apps/foo/config/someconfig`
 
