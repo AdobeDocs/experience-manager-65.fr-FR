@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 Les formulaires HTML5 proposent de nombreuses fonctionnalités compatibles avec les périphériques mobiles. Cette application vous permet d’étendre vos solutions et flux actuels aux tablettes ou smartphones équipés de navigateurs HTML5. Exemple de fonctionnalités disponibles :
 
-* **Rendu au format HTML5 des modèles de formulaire XFA :** Outre les formulaires PDF standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plate-forme cliente sur les périphériques mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. For more information about HTML5-based rendering capability, see [Introduction to HTML5 forms](/help/forms/using/introduction.md).
+* **Rendu au format HTML5 des modèles de formulaires XFA :** Outre les PDF forms standard, vous pouvez désormais générer vos formulaires XFA existants au format HTML5. Cette fonctionnalité vous aide à développer votre plate-forme cliente sur les périphériques mobiles (iPad d’Apple, tablettes Android, smartphones, etc.) qui prennent en charge le format HTML5 et ne prennent pas en charge les formulaires XFA sous Adobe Reader. For more information about HTML5-based rendering capability, see [Introduction to HTML5 forms](/help/forms/using/introduction.md).
 
 * **Gestion des formulaires :** en outre, AEM comprend de nouvelles fonctionnalités pour simplifier le processus d’organisation et de gestion des formulaires. Vous pouvez activer, désactiver, modifier, et prévisualiser des formulaires. Pour en savoir plus, voir [Présentation de la gestion des formulaires](/help/forms/using/introduction-managing-forms.md).
 
