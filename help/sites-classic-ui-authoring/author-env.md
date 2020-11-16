@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 87%
 
 ---
 
@@ -36,6 +39,7 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
    * Elle a été conçue pour les appareils de bureau.
    * Elle n’est plus gérée.
    * La documentation suivante porte sur cette IU classique. Pour plus d’informations sur la création dans l’interface moderne destinée aux écrans tactiles, consultez la [documentation de création standard](/help/sites-authoring/author.md).
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Interface utilisateur optimisée pour les écrans tactiles
@@ -46,8 +50,10 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
    * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. La documentation suivante porte sur l’IU classique.
 
    * Bureau :
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Tablettes (ou bureau de moins de 1024 pixels de large) :
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
