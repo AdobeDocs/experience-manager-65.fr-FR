@@ -12,6 +12,9 @@ discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 61%
 
 ---
 
@@ -26,9 +29,9 @@ L’outil de comparaison des pages permet à un utilisateur de comparer la page 
 
 ## Détails de l&#39;opération {#operation-details}
 
-Lors de la comparaison de versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée par AEM en arrière-plan afin de faciliter la comparaison. Cela est nécessaire pour pouvoir rendre le contenu [pour une comparaison](/help/sites-developing/pagediff.md#operation-details)côte à côte.
+Lors de la comparaison de versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée par AEM en arrière-plan afin de faciliter la comparaison. Ceci est nécessaire pour pouvoir générer le contenu [pour une comparaison](/help/sites-developing/pagediff.md#operation-details)côte à côte.
 
-Cette opération de récréation est effectuée par AEM en interne et est transparente pour l’utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel, par exemple dans CRX DE Lite, verrait ces versions recréées dans la structure de contenu.
+Cette opération de loisirs est réalisée par AEM en interne et est transparente pour l&#39;utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel par exemple dans CRX DE Lite voit ces versions recréées dans la structure de contenu.
 
 Lors de la comparaison du contenu, l’arborescence entière jusqu’à la page à comparer est recréée à l’emplacement suivant :
 
@@ -54,5 +57,5 @@ Cependant, il subsiste un certain nombre de restrictions qui doivent être prise
 * Étant donné que la comparaison s’effectue du côté client et s’exécute au chargement de la page, les réglages apportés au DOM après l’exécution de ce service de comparaison ne sont pas pris en compte. Cela peut avoir une incidence sur éléments suivants :
 
    * Composants qui utilisent AJAX pour intégrer du contenu
-   * Applications sur une seule page (SPA)
+   * des applications sur une seule page ;
    * Composants basés sur JavaScript qui manipulent le DOM lors d’une interaction de l’utilisateur
