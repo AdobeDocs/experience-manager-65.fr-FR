@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 translation-type: tm+mt
 source-git-commit: 6d216e7521432468a01a29ad2879f8708110d970
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 60%
 
 ---
 
@@ -33,7 +36,7 @@ Vous pouvez modifier, par programmation, les nœuds et propriétés situés dans
 
 ## Création d’une instance de référentiel {#create-a-repository-instance}
 
-Cet article de développement fait appel à une méthode statique appartenant à la classe `org.apache.jackrabbit.commons.JcrUtils` pour se connecter à un référentiel et établir une connexion. Il existe cependant d’autres modus operandi. Cette méthode se nomme `getRepository`. Dans ce cas, un paramètre de chaîne est utilisé, qui représente l’URL du serveur Adobe CQ. Par exemple `http://localhost:4503/crx/server`.
+Cet article de développement fait appel à une méthode statique appartenant à la classe `org.apache.jackrabbit.commons.JcrUtils` pour se connecter à un référentiel et établir une connexion. Il existe cependant d’autres modus operandi. Cette méthode se nomme `getRepository`. Dans ce cas, un paramètre de chaîne est utilisé, qui représente l’URL du serveur Adobe CQ. Par exemple, `http://localhost:4503/crx/server`.
 
 La méthode `getRepository` renvoie une instance `Repository`, comme le montre l’exemple de code ci-dessous.
 
