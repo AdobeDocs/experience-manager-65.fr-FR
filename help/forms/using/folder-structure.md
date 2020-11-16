@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 66%
 
 ---
 
@@ -27,12 +30,12 @@ Les actifs de tous les composants sont placés dans la structure de dossiers dé
 
 **models** contient des modèles Backbone.
 
-**** de contient le Backbone .
+**vues** contient des vues Backbone.
 
 **templates** Contient uniquement les modèles HTML pour les composants.
 
 **routes** Contient des routes universelles. Le dossier Templates figurant dans routes contient le code HTML et les références aux composants.
 
-**services** contient l’interface de service permettant d’appeler les API du serveur Adobe Experience Manager sur le point de fin REST.
+**services** Contient l’interface de service permettant d’appeler les API du serveur Adobe Experience Manager sur le point de terminaison REST.
 
-**util** contient des utilitaires génériques utilisables par plusieurs composants.
+**util** Contient des utilitaires génériques utilisables par plusieurs composants.
