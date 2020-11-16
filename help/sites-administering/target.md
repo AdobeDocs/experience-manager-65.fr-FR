@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos 
 
 Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
-1. [Effectuez les tâches préalables nécessaires](/help/sites-administering/target-requirements.md) : inscrivez-vous auprès d’Adobe Target et configurez certains aspects de l’instance de création AEM. Votre compte d’Adobe Target doit disposer au minimum d’autorisations **approbateur **niveau. En outre, vous devez sécuriser les paramètres d’activité sur le nœud de publication afin que celui-ci ne soit pas accessible par les utilisateurs.
+1. [Effectuez les tâches préalables nécessaires](/help/sites-administering/target-requirements.md) : inscrivez-vous auprès d’Adobe Target et configurez certains aspects de l’instance de création AEM. Votre compte Adobe Target doit disposer au minimum d’autorisations **approbateur **niveau. En outre, vous devez sécuriser les paramètres d’activité sur le nœud de publication afin que celui-ci ne soit pas accessible par les utilisateurs.
 
 1. Procédez de l’une des manières suivantes :
 
@@ -50,6 +50,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -70,7 +71,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/hel
 
 Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des publics AEM. Vous devez connaître les éléments suivants :
 
-* Adobe Target (consultez la [documentation sur Adobe Target](https://docs.adobe.com/content/help/en/target/using/target-home.html)).
+* Adobe Target (consultez la [documentation sur Adobe Target](https://docs.adobe.com/content/help/fr-FR/target/using/target-home.html)).
 * Console des activités AEM (consultez [Gestion des activités](/help/sites-authoring/activitylib.md)).
 * Audiences AEM (voir [Gestion des audiences](/help/sites-authoring/managing-audiences.md)).
 
@@ -82,6 +83,7 @@ Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la 
 >* 2 000 expériences
 >* 50 mesures
 >* 50 segments de création de rapports
+
 >
 
 
