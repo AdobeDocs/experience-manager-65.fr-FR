@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 translation-type: tm+mt
 source-git-commit: 66f46a34832254af74c72da16ec8ebe3eb8cd46d
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 79%
 
 ---
 
@@ -19,11 +22,11 @@ Le composant AEM Assets prend en charge les rendus statiques et dynamiques (ren
 
 Les rendus statiques sont générés en mode natif à l’aide de FFMPEG (installé et disponible sur le chemin système) et stockés dans le référentiel de contenu.
 
-Les rendus codés DM sont stockés dans le serveur proxy et diffusés au moment de l’exécution.
+Les rendus avec codage DM sont stockés dans le serveur proxy et diffusés au moment de l’exécution.
 
 Les ressources AEM fournissent une prise en charge de lecture pour ces rendus du côté client.
 
-Pour afficher les rendus d’une ressource vidéo particulière, ouvrez sa page de ressources, puis appuyez sur l’icône Navigation globale. Then, choose **[!UICONTROL Renditions]** from the list.
+Pour afficher les rendus d’une ressource vidéo spécifique, ouvrez sa page de ressource, puis appuyez sur l’icône de navigation globale. Choisissez ensuite **[!UICONTROL Rendus]** dans la liste.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
