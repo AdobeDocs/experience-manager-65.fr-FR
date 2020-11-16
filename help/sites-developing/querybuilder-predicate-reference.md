@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '2323'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 ## Général {#general}
 
 * [root](#root)
-* [group](#group)
+* [groupe](#group)
 * [orderby](#orderby)
 
 ## Prédicats {#predicates}
@@ -58,9 +61,11 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque vale
 
 #### Propriétés {#properties}
 
-* **boolproperty** chemin relatif à la propriété, par exemple `myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
+* **boolproperty** relatif path to property, par exemple 
+`myFeatureEnabled` ou `jcr:content/myFeatureEnabled`
 
-* **valeur**&#x200B;à vérifier pour la propriété, &quot; `true`&quot; ou &quot; `false`&quot;
+* **valeur** pour laquelle vérifier la propriété, &quot; 
+`true`&quot; ou &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -88,7 +93,7 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 * **property2**
 
-   chemin d’accès à la propriété de deuxième date
+   chemin d’accès à la deuxième propriété de date
 
 * **operation**
 
@@ -117,7 +122,7 @@ Ne prend pas en charge le filtrage.
 
 * **lowerOperation**
 
-   &quot; `>`&quot; (newer) or &quot; `>=`&quot; (at or newer), applies to the `lowerBound`. La valeur par défaut est &quot; `>`&quot;.
+   &quot; `>`&quot; (newer) or &quot; `>=`&quot; (at or newer), applies to the `lowerBound`. La valeur par défaut est de &quot; `>`&quot;.
 
 * **upperBound**
 
@@ -125,7 +130,7 @@ Ne prend pas en charge le filtrage.
 
 * **upperOperation**
 
-   &quot; `<`&quot; (older) or &quot; `<=`&quot; (at or older), applies to the `upperBound`. La valeur par défaut est &quot; `<`&quot;.
+   &quot; `<`&quot; (older) or &quot; `<=`&quot; (at or older), applies to the `upperBound`. La valeur par défaut est de &quot; `<`&quot;.
 
 * **timeZone**
 
@@ -157,13 +162,13 @@ Ne prend pas en charge l’extraction de facettes.
 
 * **fulltext**
 
-   terme(s) de recherche en texte intégral
+   le ou les termes de recherche de texte intégral
 
 * **relPath**
 
    Chemin d’accès relatif devant faire l’objet d’une recherche dans la propriété ou le sous-nœud. Cette propriété est facultative.
 
-### group {#group}
+### groupe {#group}
 
 Permet de créer des conditions imbriquées. Les groupes peuvent contenir des groupes imbriqués. Tout le contenu d’une requête Query Builder se trouve implicitement dans un groupe racine qui peut également posséder des paramètres `p.or` et `p.not`.
 
@@ -208,7 +213,7 @@ C&#39;est conceptuellement `fulltext AND ( (path AND type) OR (path AND type) )`
 
    ajoute des prédicats imbriqués
 
-* **N_&lt;prédicate>**
+* **N_&lt;prédicat>**
 
    ajoute plusieurs prédicats imbriqués simultanément, comme `1_property, 2_property, ...`
 
@@ -274,7 +279,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque nom 
 
 * **nodename**
 
-   modèle de nom de noeud qui autorise les caractères génériques : `*` = n’importe quel caractère ou pas, `?` = n’importe quel caractère, `[abc]` = uniquement les caractères entre crochets
+   modèle de nom de noeud qui autorise les caractères génériques : `*` = n’importe quel ou aucun caractère, `?` = n’importe quel caractère, `[abc]` = uniquement les caractères entre crochets
 
 ### notexpired {#notexpired}
 
@@ -366,7 +371,7 @@ Prend en charge l’extraction de facettes. Fournit des buckets pour chaque vale
 
 * **profondeur**
 
-   nombre de niveaux génériques sous lesquels la propriété/le chemin relatif peut exister (par exemple, `property=size depth=2` vérifie noeud/taille, noeud/&amp;ast;/taille et noeud/&amp;ast;/&amp;ast;/&amp;ast;/size)
+   nombre de niveaux de caractères génériques sous lesquels la propriété/le chemin relatif peut exister (par exemple, `property=size depth=2` vérifiera le noeud/taille, noeud/&amp;amp ; ast ;/size et node/&amp;amp ; ast ;/&amp;amp ; ast ;/size)
 
 ### rangeproperty {#rangeproperty}
 
@@ -408,11 +413,11 @@ Fait correspondre les propriétés `JCR DATE` par rapport à un intervalle de da
 
 Par exemple :
 
-* `upperBound=1h` (et non `lowerBound`) sélectionnerait n’importe quoi dans l’heure suivante
-* `lowerBound=-1d` (et non `upperBound`) sélectionnerait n’importe quoi au cours des dernières 24 heures
-* `lowerBound=-6M` et `upperBound=-3M` choisirait n&#39;importe quoi de 6 mois à 3 mois
+* `upperBound=1h` (et aucun `lowerBound`) ne sélectionnerait quoi que ce soit dans l’heure suivante
+* `lowerBound=-1d` (et aucun `upperBound`) ne sélectionnerait quoi que ce soit au cours des dernières 24 heures.
+* `lowerBound=-6M` et `upperBound=-3M` choisirait n&#39;importe quelle période de 6 mois à 3 mois.
 * `lowerBound=-1500` et `upperBound=5500` sélectionner n’importe quoi entre 1 500 millisecondes dans le passé et 5 500 millisecondes dans le futur
-* `lowerBound=1d` et `upperBound=2d` choisirait n&#39;importe quoi après-demain
+* `lowerBound=1d` et `upperBound=2d` sélectionnerait n&#39;importe quoi après-demain
 
 Notez que ce prédicat ne tient pas compte des années bissextiles et que tous les mois comptent 30 jours.
 
@@ -444,9 +449,9 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 
 * **p.limit**
 
-   nombre indiquant la taille de la page
+   nombre indiquant le format de page
 
-* **p.devinTotal**
+* **p.devinezTotal**
 
    Recommandé : évite de calculer le total des résultats, une opération qui peut s’avérer fastidieuse ; il s’agit soit d’un nombre qui indique la limite de comptage maximale (par exemple 1000, un nombre qui offre aux utilisateurs suffisamment d’informations sur la taille approximative et des valeurs exactes pour des résultats plus petits), soit de « `true` » pour compter seulement jusqu’au minimum requis `p.offset` + `p.limit`
 
@@ -496,7 +501,8 @@ Ne prend pas en charge le filtrage. Ne prend pas en charge l’extraction de fac
 
 * **similar** Chemin d’accès absolu au nœud pour lequel des nœuds similaires sont recherchés
 
-* **local** un chemin relatif vers un noeud descendant ou `.` pour le noeud actuel (facultatif, la valeur par défaut est &quot; `.`&quot;)
+* **local** Chemin d’accès relatif à un nœud descendant ou 
+`.` pour le noeud actif (facultatif, la valeur par défaut est &quot; `.`&quot;)
 
 ### tag {#tag}
 
