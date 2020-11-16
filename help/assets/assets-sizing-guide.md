@@ -1,11 +1,11 @@
 ---
-title: Guide de dimensionnement de [ ! Ressources DNL]
+title: '[!DNL Assets] guide de dimensionnement'
 description: Meilleures pratiques pour déterminer des mesures efficaces afin d’estimer l’infrastructure et les ressources nécessaires au déploiement [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1614'
 ht-degree: 68%
 
 ---
