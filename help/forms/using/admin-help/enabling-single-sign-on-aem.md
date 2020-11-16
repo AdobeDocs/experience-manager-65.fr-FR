@@ -102,7 +102,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 1. Procurez-vous l’utilitaire KtPass. Cet utilitaire sert au mappage d’un SPN sur un DOMAINE. Vous pouvez obtenir l’utilitaire KtPass dans le pack d’outils ou dans le Kit de ressources techniques de Windows Server (Voir [Outils de support de Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
 1. Dans une invite de commande, exécutez `ktpass` à l’aide des arguments suivants :
 
-   `ktpass -princ HTTP/`*hôte *`@`** REALM `-mapuser`*utilisateur *
+   `ktpass -princ HTTP/`*hôte* `@`** REALM `-mapuser`*utilisateur*
 
    Par exemple, saisissez le texte suivant :
 
