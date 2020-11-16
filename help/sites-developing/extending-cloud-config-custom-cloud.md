@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 62%
 
 ---
 
@@ -25,27 +28,28 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
 
 1. In CRXDE Lite, ceate a new node under `/apps`:
 
-   * **Nom**: `acs`
-   * **Type**: `nt:folder`
+   * **Nom** : `acs`
+   * **Type** : `nt:folder`
 
 1. Create a new node under `/apps/acs`:
 
-   * **Nom**: `analytics`
-   * **Type**: `sling:Folder`
+   * **Nom** : `analytics`
+   * **Type** : `sling:Folder`
 
 1. Create 2 new nodes under `/apps/acs/analytics`:
 
    * **Nom**: composants
-   * **Type**: `sling:Folder`
+   * **Type** : `sling:Folder`
+
    et
 
    * **Nom**: templates
-   * **Type**: `sling:Folder`
+   * **Type** : `sling:Folder`
 
 
-1. Cliquez avec le bouton droit `/apps/acs/analytics/components`. Sélectionnez **Créer**, suivi de **Créer un composant**. La boîte de dialogue qui s’ouvre alors vous permet de spécifier ce qui suit :
+1. Cliquez avec le bouton droit sur `/apps/acs/analytics/components`. Sélectionnez **Créer**, suivi de **Créer un composant**. La boîte de dialogue qui s’ouvre alors vous permet de spécifier ce qui suit :
 
-   * **Étiquette**: `googleanalyticspage`
+   * **Libellé**: `googleanalyticspage`
    * **Titre**: `Google Analytics Page`
    * **Super Type**: `cq/cloudserviceconfigs/components/configpage`
    * **Groupe**: `.hidden`
@@ -53,6 +57,7 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
 1. Click **Next** twice and specify:
 
    * **Parents autorisés:** `acs/analytics/templates/googleanalytics`
+
    Click **Next** twice and click **OK**.
 
 1. Add a property to `googleanalyticspage`:
@@ -77,78 +82,78 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
 
 1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/`:
 
-   * **Nom**: `dialog`
-   * **Type**: `cq:Dialog`
-   * **Propriétés**:
+   * **Nom** : `dialog`
+   * **Type** : `cq:Dialog`
+   * **Propriétés** :
 
-      * **Nom**: `title`
-      * **Type**: `String`
+      * **Nom** : `title`
+      * **Type** : `String`
       * **Valeur**: `Google Analytics Config`
-      * **Nom**: `xtype`
-      * **Type**: `String`
+      * **Nom** : `xtype`
+      * **Type** : `String`
       * **Valeur**: `dialog`
 
 1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
-   * **Nom**: `items`
-   * **Type**: `cq:Widget`
-   * **Propriétés**:
+   * **Nom** : `items`
+   * **Type** : `cq:Widget`
+   * **Propriétés** :
 
-      * **Nom**: `xtype`
-      * **Type**: `String`
+      * **Nom** : `xtype`
+      * **Type** : `String`
       * **Valeur**: `tabpanel`
 
 1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
-   * **Nom**: `items`
-   * **Type**: `cq:WidgetCollection`
+   * **Nom** : `items`
+   * **Type** : `cq:WidgetCollection`
 
 1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
    * **Nom** : tab1
-   * **Type**: `cq:Panel`
-   * **Propriétés**:
+   * **Type** : `cq:Panel`
+   * **Propriétés** :
 
-      * **Nom**: `title`
-      * **Type**: `String`
+      * **Nom** : `title`
+      * **Type** : `String`
       * **Valeur**: `Config`
 
 1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
    * **Nom** : items
-   * **Type**: `nt:unstructured`
-   * **Propriétés**:
+   * **Type** : `nt:unstructured`
+   * **Propriétés** :
 
-      * **Nom**: `fieldLabel`
+      * **Nom** : `fieldLabel`
       * **Type** : String
       * **Valeur** : ID de compte
 
-      * **Nom**: `fieldDescription`
-      * **Type**: `String`
+      * **Nom** : `fieldDescription`
+      * **Type** : `String`
       * **Valeur**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **Nom**: `name`
-      * **Type**: `String`
+      * **Nom** : `name`
+      * **Type** : `String`
       * **Valeur**: `./accountID`
-      * **Nom**: `validateOnBlur`
-      * **Type**: `String`
+      * **Nom** : `validateOnBlur`
+      * **Type** : `String`
       * **Valeur**: `true`
-      * **Nom**: `xtype`
-      * **Type**: `String`
+      * **Nom** : `xtype`
+      * **Type** : `String`
       * **Valeur**: `textfield`
 
 1. Copy `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` to `/apps/acs/analytics/components/googleanalyticspage/body.jsp` and change `libs` to `apps` on line 34 and make the script reference on line 79 a fully qualified path.
 1. Create a new template under `/apps/acs/analytics/templates/`:
 
    * avec le type **de** ressource = `acs/analytics/components/googleanalyticspage`
-   * avec **Label** = `googleanalytics`
+   * avec **Étiquette** = `googleanalytics`
    * avec **Title**= `Google Analytics Configuration`
    * avec **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
-   * with **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
+   * avec **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
    * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (on template node, not the jcr:content node)
    * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (on jcr:content)
 
-1. Créer un composant : `/apps/acs/analytics/components/googleanalytics`.
+1. Créer un nouveau composant : `/apps/acs/analytics/components/googleanalytics`.
 
    Ajoutez le contenu suivant à `googleanalytics.jsp` :
 
@@ -194,11 +199,12 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
 1. Navigate to `http://localhost:4502/miscadmin#/etc/cloudservices` and create a new page:
 
    * **Titre**: `Google Analytics`
-   * **Nom**: `googleanalytics`
+   * **Nom** : `googleanalytics`
+
    Go back in CRXDE Lite, and under `/etc/cloudservices/googleanalytics`, add the following property to `jcr:content`:
 
-   * **Nom**: `componentReference`
-   * **Type**: `String`
+   * **Nom** : `componentReference`
+   * **Type** : `String`
    * **Valeur**: `acs/analytics/components/googleanalytics`
 
 
@@ -206,6 +212,7 @@ L’ensemble de services cloud par défaut peut être étendu à l’aide de typ
 
    * **Configuration du parent**: `/etc/cloudservices/googleanalytics`
    * **Titre:**  `My First GA Config`
+
    Sélectionnez **Google Analytics Configuration**, puis cliquez sur **Créer**.
 
 1. Saisissez un **ID de compte** ; par exemple, `AA-11111111-1`. Cliquez sur **OK**.
