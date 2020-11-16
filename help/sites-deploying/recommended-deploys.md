@@ -12,6 +12,9 @@ discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '1802'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 >
 >Cette page se rapporte aux topologies recommandées pour AEM. Pour plus d’informations sur les fonctionnalités de mise en cluster et sur leur configuration, reportez-vous[ à la documentation sur les API Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html). 
 
-MicroKernels agit comme gestionnaires de persistance à partir d’AEM 6.2. Le choix d’une instance en fonction de vos besoins dépend de l’objectif de votre instance et du type de déploiement envisagé.
+MicroKernels agit en tant que gestionnaires de persistance à partir de AEM 6.2. Le choix de l&#39;un d&#39;eux en fonction de vos besoins dépend de l&#39;objectif de votre instance et du type de déploiement que vous envisagez.
 
 Les exemples ci-dessous ont pour objectif de vous donner une indication des utilisations recommandées pour les configurations d’AEM les plus courantes.
 
@@ -59,7 +62,7 @@ Les avantages :
 
 * Simplicité 
 * Maintenabilité
-* Performance
+* Performances
 * Basculement
 
 Les inconvénients :
@@ -74,7 +77,7 @@ Les inconvénients :
 
 >[!NOTE]
 >
->Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. For more information about licensing, please consult the [Adobe General Licensing Terms](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>Le déploiement du mécanisme Cold Standby dans cet exemple de TarMK exige que les instances principales et de secours disposent de licences distinctes, en raison de la réplication constante vers le serveur de basculement. For more information about licensing, please consult the [Adobe General Licensing Terms](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
 ### La ferme TarMK {#tarmk-farm}
 
@@ -90,7 +93,7 @@ Pour AEM Communities, le contenu généré par l’utilisateur (CGU) n’est ja
 
 Les avantages :
 
-* Performance
+* Performances
 * Évolutivité pour l’accès en lecture
 * Basculement
 
@@ -143,7 +146,7 @@ La raison principale pour choisir la persistance MongoMK plutôt que TarMK est s
 Il est pratiquement impossible de prévoir quel sera le modèle exact de concurrence après le lancement du nouveau site. Par conséquent, Adobe vous recommande de tenir compte des critères suivants lorsque vous considérez d’utiliser MongoMK et au moins deux nœuds actifs d’auteur :
 
 1. Nombre d’utilisateurs nommés connectés au cours de la journée : des milliers ou plus.
-1. Nombre d’utilisateurs simultanés : par centaines ou plus.
+1. Nombre d&#39;utilisateurs simultanés : par centaines ou plus.
 1. Volume d’assimilation de ressources par jour : des centaines de milliers, voire plus.
 1. Volume de modifications de pages par jour : des centaines de milliers (y compris les mises à jour automatisées via le gestionnaire multi-site ou des assimilations de flux d’actualité, par exemple).
 1. Volume de recherches par jour : des dizaines de milliers, voire plus.
@@ -181,7 +184,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 1. Les architectures et infrastructures d’ensemble d’AEM et de MongoDB doivent être correctement configurées et validées par un architecte Adobe AEM ; 
 1. Vous devez passer en revue le modèle de prise en charge des déploiements AEM qui incluent MongoDB.
 
-**Recommandations fortes pour les déploiements MongoDB :**
+**Recommandations strictes pour les déploiements de MongoDB :**
 
 * Consultez l’article sur MongoDB pour [Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager) ;
 * Passez en revue la liste de contrôle de production [MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/) ;
@@ -189,7 +192,7 @@ Certaines conditions préalables et des recommandations sont disponibles si vous
 
 >[!NOTE]
 >
->Pour toute question supplémentaire concernant les consignes, les conditions préalables et les recommandations, veuillez contacter le [service cientèle d’Adobe](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Pour toute question supplémentaire concernant les consignes, les conditions préalables et les recommandations, veuillez contacter le [service cientèle d’Adobe](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
 
 ### Remarques pour AEM Communities {#considerations-for-aem-communities}
 
