@@ -101,7 +101,7 @@ Le tableau suivant répertorie les fichiers situés dans le dossier enfant CSS.
   </tr>
   <tr>
    <td>bootstrap.css</td>
-   <td>Styles courants, définis par Twitter Bootstrap.</td>
+   <td>Styles courants, définis par le Bootstrap Twitter.</td>
    <td>N/A</td>
   </tr>
   <tr>
@@ -346,10 +346,10 @@ Par exemple, le JSP du composant Image génère l’élément HTML suivant :
 
 Lorsque la navigateur charge la page, il demande l’image en utilisant la valeur de l’attribut src en tant qu’URL. Sling décompose l’URL :
 
-* Ressource: `/content/mywebsite/en/_jcr_content/par/image_0`
+* Resource: `/content/mywebsite/en/_jcr_content/par/image_0`
 * File name extension: `.jpg`
 * Sélecteur: `img`
-* Suffix: `1358372073597.jpg`
+* Suffixe: `1358372073597.jpg`
 
 Le `image_0` noeud a la `jcr:resourceType` valeur `foundation/components/image`, qui a la `sling:resourceSuperType` valeur `foundation/components/parbase`. Le composant parbase contient le script img.GET.java qui correspond au sélecteur et à l’extension de nom de fichier de l’URL de demande. CQ utilise ce script (servlet) pour effectuer le rendu de l’image.
 
@@ -488,11 +488,11 @@ Pour plus d’informations sur la configuration des services AEM, voir [Configu
   </tr>
   <tr>
    <th>Nom du service ou du noeud</th>
-   <td>Le nom du service sur l’onglet Configuration est Adobe CQ Adaptive Image Component Servlet (Servlet de composant d’image adaptative CQ).</td>
+   <td>Le nom du service sur l’onglet Configuration est Adobe CQ Adaptive Image Component Servlet (Servlet de composant d’image adaptative).</td>
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td>
   </tr>
   <tr>
-   <th>Propriétés</th>
+   <th>Propriété</th>
    <td><p>Largeurs prises en charge</p>
     <ul>
      <li>Pour ajouter une largeur prise en charge, cliquez sur un bouton + et saisissez un entier positif.</li>
