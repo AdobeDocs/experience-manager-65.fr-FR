@@ -43,7 +43,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
 **Modèle de données de formulaire :** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Fragments de Document :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Fragments de document :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
 **Fragments de mise en page :** [table_lf](../../forms/using/create-templates-print-web.md)
 
@@ -73,7 +73,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    | bill_summary_first_ic | BillSummary |
    | summary_charges_first_interactive_communication | Frais |
 
-   ![Fragments de Document pour les communications interactives](assets/create_first_ic_doc_fragments_new.png)
+   ![Fragments de document pour les communications interactives](assets/create_first_ic_doc_fragments_new.png)
 
 1. Appuyez sur **Graphiques** dans la zone cible et appuyez sur **+** pour ajouter un composant **Graphique.**
 1. Tap the Chart component and select ![configure_icon](assets/configure_icon.png) (Configure). Les propriétés du graphique s’affichent dans le volet gauche :
@@ -108,7 +108,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 
 **Modèle de données de formulaire :** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**Fragments de Document :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Fragments de document :** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
 **Images :** PayNowWeb et ValueAddedServicesWeb
 
