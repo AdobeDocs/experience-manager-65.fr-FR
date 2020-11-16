@@ -12,6 +12,9 @@ discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '325'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +45,7 @@ Pour rediriger la sortie de la journalisation vers un fichier journal distinct, 
    * **Fichier journal :** logs/useraudit.log
    * **Modèle de message :** conservez la valeur par défaut
    * **Enregistreur :** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    Pour afficher les deux enregistreurs dans le champ **Enregistreur**, vous devez saisir le nom du premier enregistreur, puis créer un autre champ en cliquant sur le bouton « + » et en entrant le nom du second enregistreur.
 
 ## Exemple de sortie {#example-output}
