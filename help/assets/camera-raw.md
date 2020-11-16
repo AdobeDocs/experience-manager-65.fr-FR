@@ -1,12 +1,12 @@
 ---
-title: Prise en charge de [ ! DNL Adobe Camera Raw].
+title: '[!DNL Adobe Camera Raw] support.'
 description: Découvrez comment [!DNL Adobe Camera Raw] activer la prise en charge dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 23%
+source-wordcount: '375'
+ht-degree: 35%
 
 ---
 
@@ -21,7 +21,7 @@ Vous pouvez activer la [!DNL Adobe Camera Raw] prise en charge pour traiter les 
 
 Pour activer la [!DNL Camera Raw] prise en charge dans [!DNL Experience Manager Assets], procédez comme suit :
 
-1. Téléchargez le package [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Camera Raw à partir de Software Distribution.
+1. Download the [Camera Raw package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from Software Distribution.
 1. Accédez à l’adresse `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Open the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
@@ -48,7 +48,7 @@ Pour activer la [!DNL Camera Raw] prise en charge dans [!DNL Experience Manager 
 
    ![chlimage_1-130](assets/chlimage_1-336.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
