@@ -12,6 +12,9 @@ discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+workflow-type: tm+mt
+source-wordcount: '2854'
+ht-degree: 82%
 
 ---
 
@@ -22,13 +25,13 @@ Lorsque vous procédez à l’intégration à Adobe Campaign, des composants son
 
 >[!CAUTION]
 >
->Les composants de courrier électronique AEM sont obsolètes. En raison de la nature de l’e-mail, qui fusionne le contenu et le style, les composants de l’e-mail fournis prêts à l’emploi par AEM deviennent de réutilisation limitée pour les clients, en raison de la nécessité d’implémenter des styles personnalisés dans les composants requis pour les projets.
+>Les composants de messagerie AEM ont été abandonnés. En raison de la nature de l’e-mail, qui fusionne le contenu et le style, les composants de l’e-mail fournis de manière standard par AEM deviennent de réutilisation limitée pour les clients en raison de la nécessité d’implémenter des styles personnalisés dans les composants requis pour les projets.
 >
->Les composants de courrier électronique peuvent être implémentés au niveau du projet et les composants de courrier électronique AEM obsolètes illustrent la manière dont cela peut être réalisé. Toutefois, ces composants obsolètes ne doivent pas être utilisés sur les projets.
+>Les composants de courrier électronique peuvent être implémentés au niveau du projet et les composants de courrier électronique AEM obsolètes illustrent comment cela peut être réalisé. Cependant, ces composants obsolètes ne doivent pas être utilisés sur les projets.
 
 ## Composant Newsletter Adobe Campaign {#adobe-campaign-newsletter-components}
 
-Tous les composants d’Adobe Campaign appliquent les méthodes recommandées décrites dans les [bonnes pratiques pour les modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md) et dépendent du langage de balisage [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html) d’Adobe.
+Tous les composants d’Adobe Campaign appliquent les méthodes recommandées décrites dans les [bonnes pratiques pour les modèles de courrier électronique](/help/sites-administering/best-practices-for-email-templates.md) et dépendent du langage de balisage [HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/overview.html) d’Adobe.
 
 Lorsque vous ouvrez une newsletter/un courrier électronique configuré de manière à être intégré à Adobe Campaign, les composants ci-dessous doivent s’afficher dans la section **Newsletter Adobe Campaign** :
 
@@ -146,7 +149,8 @@ Vous pouvez configurer les éléments ci-dessous sur les onglets **Affichage**, 
 
 * **Info-bulle du lien** Ajoute des informations supplémentaires sur l’utilisation du lien.
 
-* **Type de lien** Dans la liste déroulante, sélectionnez **URL personnalisée** ou **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez l’URL personnalisée, vous pouvez indiquer l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez préciser le chemin d’accès au document.
+* **Type de lien** Dans la liste déroulante, sélectionnez entre un 
+**URL** personnalisée et Document **** adaptatif. Ce champ est obligatoire. Si vous sélectionnez l’URL personnalisée, vous pouvez indiquer l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez préciser le chemin d’accès au document.
 
 * **Paramètre d’URL supplémentaire** Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
 
@@ -161,7 +165,7 @@ L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
 ### Modèle d’image Scene7 (Campaign) {#scene-image-template-campaign}
 
-[Les modèles](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) d’image Scene7 sont des fichiers d’images superposés, dans lesquels le contenu et les propriétés peuvent être paramétrés en fonction de la variabilité. Le composant **Modèle d’image** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser les variables de métadonnées d’Adobe Campaign dans les paramètres, de sorte que chaque utilisateur expérimente l’image de manière personnalisée.
+[Les modèles](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) d’image Scene7 sont des fichiers d’image superposés où le contenu et les propriétés peuvent être paramétrés en fonction de la variabilité. Le composant **Modèle d’image** permet d’utiliser des modèles Scene7 dans des newsletters et de modifier les valeurs des paramètres de modèle. En outre, vous pouvez utiliser des variables de métadonnées Adobe Campaign à l’intérieur des paramètres, de sorte que chaque utilisateur expérimente l’image d’une manière personnalisée.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -283,7 +287,7 @@ Le tableau ci-dessous décrit les composants disponibles pour afficher et modifi
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Component</strong></p> </td>
+   <td><p><strong>Composant</strong></p> </td>
    <td><p><strong>Type de données d’un champ Adobe Campaign </strong></p> </td>
    <td><p><strong>Exemple de champ</strong></p> </td>
   </tr>
@@ -373,10 +377,10 @@ Utilisez le champ de date pour permettre aux destinataires d’indiquer une date
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* **Contraintes - Liste déroulante Contrainte** Vous pouvez sélectionner - **Aucune** ou **Date -** pour ajouter la contrainte d&#39;une date ou aucune contrainte. Si vous sélectionnez la date, la réponse que les utilisateurs renseignent dans le champ doit correspondre à un format de date.
+* **Contraintes - Liste déroulante Contrainte** Vous pouvez sélectionner - **Aucune** ou **** Date - pour ajouter la contrainte d&#39;une date ou aucune contrainte. Si vous sélectionnez la date, la réponse que les utilisateurs renseignent dans le champ doit correspondre à un format de date.
 
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
-* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les **+** et **-** icônes ou en saisissant un nombre.
+* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes **+** et **-** ou en entrant un nombre.
 
 L’exemple ci-dessous présente le composant Champ de date (Campaign), dont la largeur ajustée, affiché.
 
@@ -424,10 +428,10 @@ Utilisez le champ numérique pour permettre aux destinataires de saisir des nomb
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* **Contraintes - Liste déroulante Contrainte** Vous pouvez sélectionner - **Aucun** ou **Numérique -** pour ajouter la contrainte d&#39;un nombre ou d&#39;aucune contrainte. Si vous sélectionnez Nombre, la réponse saisie par les utilisateurs dans le champ doit être numérique.
+* **Contraintes - Liste déroulante Contrainte** Vous pouvez sélectionner - **Aucun** ou **** Numérique - pour ajouter la contrainte d&#39;un nombre ou d&#39;aucune contrainte. Si vous sélectionnez Nombre, la réponse saisie par les utilisateurs dans le champ doit être numérique.
 
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
-* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les **+** et **-** icônes ou en saisissant un nombre.
+* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes **+** et **-** ou en entrant un nombre.
 
 L’exemple ci-dessous présente le composant Champ numérique (Campaign), dont la largeur est configurée, affiché.
 
@@ -466,10 +470,10 @@ Le composant Champ de texte (Campaign) qui vous permet de saisir des données de
 
 Outre les [paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components), vous pouvez configurer les éléments suivants :
 
-* **Contraintes - Liste déroulante Contrainte** Vous pouvez sélectionner - **Aucun,** Courriel **ou** Nom **** (aucun nombre) - pour ajouter la contrainte d’une adresse électronique, d’un nom ou d’une absence de contrainte. Si vous sélectionnez l’option Courrier électronique, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agit d’un nom (les trémas ne sont pas autorisés).
+* **Contraintes - Liste déroulante Contrainte** Vous pouvez sélectionner - **Aucun,** Courrier électronique **ou** Nom **** (sans nombre) - pour ajouter la contrainte d’une adresse électronique, d’un nom ou d’une absence de contrainte. Si vous sélectionnez l’option Courrier électronique, la réponse saisie par les utilisateurs dans le champ doit correspondre à une adresse électronique. Si vous sélectionnez Nom, il doit s’agit d’un nom (les trémas ne sont pas autorisés).
 
 * **Message de contrainte** De plus, vous pouvez ajouter un message de contrainte afin que les utilisateurs sachent quel format suivre pour leur réponse.
-* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les **+** et **-** icônes ou en saisissant un nombre.
+* **Style - Largeur** Ajustez la largeur du champ en cliquant ou en appuyant sur les icônes **+** et **-** ou en entrant un nombre.
 
 L’exemple ci-dessous présente le composant Champ de texte (Campaign) affiché.
 
