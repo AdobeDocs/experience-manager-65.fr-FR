@@ -12,6 +12,9 @@ discoiquuid: 2de88b55-dda9-4ccf-ad4d-dd67943ef610
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 27%
 
 ---
 
@@ -26,6 +29,6 @@ From the [Getting Started with AEM Communities for Enablement](/help/communities
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d&#39;informations, consultez la page [Assignments Essentials](/help/communities/essentials-assignments.md) pour les développeurs.
+Pour plus d’informations, voir la page [Assignments Essentials](/help/communities/essentials-assignments.md) pour les développeurs.
 
 The [assignments function](/help/communities/functions.md#assignments-function) is available while creating a [community site](/help/communities/sites-console.md).
