@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 91%
 
 ---
 
@@ -62,7 +65,7 @@ N’écrit pas la sortie dans la fenêtre de la console. Utilisez cette option s
 
 Si vous recherchez des combinaisons de bits spécifiques dans le trafic, activez le mode binaire. La sortie contient alors la sortie sous forme hexadécimale et de caractères.
 
-`-t` (entrées du journal des horodatages)
+`-t` (horodatage des entrées du journal)
 
 Ajoute un horodatage à chaque sortie du journal. L’horodatage est en secondes. Il n’est donc peut-être pas adapté à la recherche de demandes uniques. Utilisez cette option pour rechercher des événements qui se sont produits à une heure spécifique si vous utilisez le serveur proxy pendant une longue période.
 
@@ -86,7 +89,7 @@ Une demande de page web peut par exemple ressembler à cette entrée :
 
 * C signifie que cette entrée provient du client (il s’agit d’une demande de page web).
 * 0 correspond au nombre de connexions (le nombre de connexions commence à 0).
-* &#x200B;# 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
+* # 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
 * `[GET <?>]` correspond au contenu de la demande. Dans cet exemple, il s’agit de l’un des en-têtes HTTP (url).
 
 Lorsqu’une connexion se ferme, les informations suivantes sont consignées :
