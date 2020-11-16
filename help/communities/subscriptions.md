@@ -44,7 +44,7 @@ Pour obtenir des instructions sur la configuration du courrier électronique, vo
 
 Les composants doivent être configurés pour activer les abonnements *et les* éléments suivants. Les fonctionnalités qui permettent aux abonnements sont [blog](blog-feature.md), [forum](forum.md) et [QnA](working-with-qna.md).
 
-## abonnements de suivi {#subscriptions-from-following}
+## Abonnements de suivi {#subscriptions-from-following}
 
 ![abonnement suivant](assets/subscription-following.png)
 
