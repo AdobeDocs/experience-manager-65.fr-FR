@@ -1,8 +1,8 @@
 ---
 title: Content Insight
 seo-title: 'Content Insight '
-description: Content Insight fournit des informations sur les performances des pages à l’aide des analyses Web et des recommandations d’optimisation du référencement
-seo-description: Content Insight fournit des informations sur les performances des pages à l’aide des analyses Web et des recommandations d’optimisation du référencement
+description: Content Insight fournit des informations sur les performances des pages à l’aide des analyses Web et des recommandations d’optimisation du référencement.
+seo-description: Content Insight fournit des informations sur les performances des pages à l’aide des analyses Web et des recommandations d’optimisation du référencement.
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 92%
 
 ---
 
