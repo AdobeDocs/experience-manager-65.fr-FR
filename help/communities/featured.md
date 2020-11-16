@@ -22,7 +22,7 @@ ht-degree: 10%
 
 ## Présentation {#introduction}
 
-La fonctionnalité de contenu incitatif fournit une zone pour les visiteurs de site connectés (membres de la communauté) dans l’environnement de publication afin de mettre en évidence le contenu pour :
+La fonctionnalité de contenu incitatif fournit une zone pour les visiteurs du site connectés (membres de la communauté) dans l’environnement de publication afin de mettre en évidence le contenu pour :
 
 * [Blogs](blog-feature.md)
 * [Calendriers](calendar.md)
