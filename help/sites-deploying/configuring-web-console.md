@@ -1,6 +1,6 @@
 ---
-title: Console Web
-seo-title: Console Web
+title: Console web
+seo-title: Console web
 description: Découvrez comment utiliser la console web dans AEM.
 seo-description: Découvrez comment utiliser la console web dans AEM.
 uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
@@ -10,11 +10,14 @@ content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 72%
 
 ---
 
 
-# Console Web{#web-console}
+# Console web{#web-console}
 
 Le console web d’AEM est basée sur la [Console de gestion web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est une initiative communautaire pour mettre en œuvre le plateforme de service OSGi R4 qui comprend la structure et les services standards OSGi.
 
@@ -36,7 +39,7 @@ The console can be accessed from `../system/console`; for example:
 
 `http://localhost:4502/system/console/components`
 
-## Configuration{#configuration}
+## Configuration {#configuration}
 
 L’onglet **Configuration** est utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres du système AEM.
 
@@ -50,7 +53,7 @@ L’onglet **Configuration** est accessible soit via :
 
    **les lots OSGi >**
 
-* L&#39;URL; par exemple :
+* L&#39;URL ; par exemple :
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -67,7 +70,7 @@ Il existe deux types de configurations disponibles à partir des listes déroula
    * standard et intégrales pa rapport à AEM ; elles sont nécessaires, car si on les supprime, leurs valeurs sont renvoyées aux paramètres par défaut.
    * des instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur. Leur suppression entraîne la suppression de l’instance. 
 
-* **Configurations d’usine**
+* **Configurations en usine**
 
    Permet de créer une instance de l’objet de fonctionnalité requis.
 
@@ -87,7 +90,7 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Réinitialiser**
 
-   Réinitialisez les paramètres affichés à l’écran aux derniers enregistrés.
+   Réinitialisez les paramètres affichés à l&#39;écran à ceux enregistrés en dernier.
 
 * **Supprimer**
 
@@ -109,13 +112,13 @@ The **Bundles** tab is the mechanism for installing the OSGi bundles required fo
 
    **les lots OSGi >**
 
-* L&#39;URL; par exemple :
+* L&#39;URL ; par exemple :
 
    `http://localhost:4502/system/console/bundles`
 
 Une liste de lots s’affiche :
 
-![screen_shot_2012-02-15at44740pm-13](assets/screen_shot_2012-02-15at44740pm-1.png)
+![screen_shot_2012-02-15at44740pm-1](assets/screen_shot_2012-02-15at44740pm-1.png)
 
 En utilisant cet onglet vous pouvez :
 
@@ -135,7 +138,7 @@ En utilisant cet onglet vous pouvez :
 
 * **Début**
 
-   Commence un lot selon le niveau de début spécifié.
+   Début un lot en fonction du niveau de début spécifié.
 
 * **Arrêter**
 
@@ -147,7 +150,7 @@ En utilisant cet onglet vous pouvez :
 
 * **voir le statut**
 
-   La liste spécifie l’état actuel du lot ; cliquez sur le nom d&#39;un lot spécifique et affichez d&#39;autres informations.
+   La liste spécifie l&#39;état actuel de l&#39;offre groupée ; cliquez sur le nom d&#39;un lot spécifique et affichez d&#39;autres informations.
 
 >[!NOTE]
 >
@@ -161,13 +164,13 @@ The **Components** tab allows you to Enable and/or Disable the various component
 
    **Principal >**
 
-* L&#39;URL; par exemple :
+* L&#39;URL ; par exemple :
 
    `http://localhost:4502/system/console/components`
 
 Une liste de composants s’affiche. Plusieurs icônes sont disponibles pour vous permettre d’activer, de désactiver ou (le cas échéant) d’ouvrir les détails de la configuration pour un composant spécifique. 
 
-![screen_shot_2012-02-15at52144pm-13](assets/screen_shot_2012-02-15at52144pm-1.png)
+![screen_shot_2012-02-15at52144pm-1](assets/screen_shot_2012-02-15at52144pm-1.png)
 
 En cliquant sur le nom d’un composant spécifique, vous obtenez plus d’informations sur son état. Cela vous permet également d’activer, de désactiver ou de recharger le composant.
 
