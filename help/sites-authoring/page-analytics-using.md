@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 translation-type: tm+mt
 source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 86%
 
 ---
 
@@ -89,4 +92,4 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
