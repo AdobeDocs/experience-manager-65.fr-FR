@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 59%
 
 ---
 
@@ -32,10 +35,11 @@ Lors de l’administration des workflows, vous pouvez les démarrer selon diffé
 >
 >D’autres méthodes sont également disponibles pour les créateurs. Pour plus d’informations, voir :
 >
->* [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md)
->* [Application de workflows à des ressources de gestion des actifs numériques](/help/assets/assets-workflow.md)
+>* [Application de workflows aux pages ](/help/sites-authoring/workflows-applying.md)
+>* [Application de workflows à des ressources de gestion des ressources numériques](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Projets de traduction](/help/sites-administering/tc-manage.md)
+
 >
 
 
@@ -93,14 +97,14 @@ Un module de workflow :
 
    >[!NOTE]
    >
-   >The **[Transient](/help/sites-developing/workflows.md#transient-workflows)**indicator shows workflows for which the workflow history will not be persisted.
+   >The **[Transient](/help/sites-developing/workflows.md#transient-workflows)** indicator shows workflows for which the workflow history will not be persisted.
 
 1. Select **Start Workflow** from the toolbar.
 1. La boîte de dialogue Exécuter le workflow s’ouvre, d’où vous pouvez spécifier les éléments suivants :
 
    * **Charge utile**
 
-      Il peut s’agir d’une page, d’un noeud, d’un fichier, d’un package, etc.
+      Il peut s’agir d’une page, d’un noeud, d’une ressource, d’un package, entre autres ressources.
 
    * **Titre**
 
@@ -108,7 +112,7 @@ Un module de workflow :
 
    * **Commentaire**
 
-      Un commentaire facultatif pour indiquer les détails de cette instance.
+      Un commentaire facultatif pour aider à indiquer les détails de cette instance.
    ![wf-104](assets/wf-104.png)
 
 ## Création d’une configuration de lanceur {#creating-a-launcher-configuration}
@@ -120,14 +124,14 @@ Un module de workflow :
 
    * **Type d&#39;évmt**
 
-      Type d’événement qui lancera le processus :
+      Type d&#39;événement qui lancera le processus :
 
       * Créé
       * Modifié
       * Supprimé
    * **Notetype**
 
-      Type de noeud auquel s’applique le lanceur de processus.
+      Type de noeud auquel le lanceur de processus s’applique.
 
    * **Chemin**
 
@@ -135,24 +139,25 @@ Un module de workflow :
 
    * **Mode(s) d’exécution**
 
-      Type de serveur auquel s’applique le lanceur de processus. Sélectionnez **Auteur**, **Publication** ou **Créer et publier**.
+      Type de serveur auquel s&#39;applique le lanceur de processus. Sélectionnez **Auteur**, **Publication** ou **Créer et publier**.
 
    * **Conditions**
 
-      Liste de conditions pour les valeurs de noeud qui, lorsqu’elles sont évaluées, déterminent si le processus est lancé. Par exemple, la condition suivante entraîne le lancement du processus lorsque le noeud a un nom de propriété avec la valeur Utilisateur :
+      Liste de conditions pour les valeurs de noeud qui, lorsqu’elles sont évaluées, déterminent si le processus est lancé. Par exemple, la condition suivante entraîne le lancement du processus lorsque le noeud porte un nom de propriété avec la valeur Utilisateur :
 
       name==User
 
    * **Fonctionnalités**
 
-      Liste des fonctionnalités à activer. Sélectionnez les fonctions nécessaires à l’aide du sélecteur de liste déroulante.
+      Liste de fonctionnalités à activer. Sélectionnez les fonctions nécessaires à l’aide du sélecteur de liste déroulante.
 
    * **Fonctions désactivées**
-   Liste des fonctionnalités à désactiver. Sélectionnez les fonctions nécessaires à l’aide du sélecteur de liste déroulante.
+
+   Liste de fonctionnalités à désactiver. Sélectionnez les fonctions nécessaires à l’aide du sélecteur de liste déroulante.
 
    * **Modèle de processus**
 
-      Flux de travaux à lancer lorsque le type d’événement se produit sur Nodetype et/ou Path sous la condition définie.
+      Flux de travaux à lancer lorsque le Type d&#39;événement se produit sur le Nodetype et/ou le Chemin sous la condition définie.
 
    * **Description**
 
@@ -166,17 +171,18 @@ Un module de workflow :
       * Sélectionnez **Désactiver** lorsque le workflow ne doit pas être exécuté (pas même lorsque les propriétés de configuration sont satisfaites).
    * **Exclure la liste**
 
-      Ceci spécifie les événements JCR à exclure (c.-à-d. ignorer) lors de la détermination du déclenchement d’un flux de travail.
+      Ceci spécifie les événements JCR à exclure (c’est-à-dire ignorer) lors de la détermination du déclenchement d’un processus.
 
-      Cette propriété de lanceur est une liste d’éléments séparés par des virgules : &quot;
+      Cette propriété de lancement est une liste d&#39;éléments séparés par des virgules : &quot;
 
       * `property-name` ignore les événements `jcr` déclenchés avec le nom de propriété spécifié. ``
       * `event-user-data:<*someValue*>` ignore tout événement qui contient le `*<someValue*`> `user-data` défini via l’ [ API `ObservationManager`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+
       Par exemple :
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
-      Cette fonctionnalité permet d’ignorer les modifications déclenchées par un autre processus de flux de travail en ajoutant l’élément d’exclusion :
+      Cette fonction peut être utilisée pour ignorer les modifications déclenchées par un autre processus de workflow en ajoutant l’élément d’exclusion :
 
       `event-user-data:changedByWorkflowProcess`
 
