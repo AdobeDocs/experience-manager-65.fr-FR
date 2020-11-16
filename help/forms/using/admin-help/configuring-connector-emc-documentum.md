@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 93%
 
 ---
 
@@ -59,9 +62,9 @@ Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect, vous obti
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec Documentum. Les appels des services de référentiel sont délégués au fournisseur que vous configurez. Les options suivantes sont disponibles :
 
-**Nom du du référentiel actuel :** Nom du de référentiel actuel
+**Nom du Prestataire du référentiel actuel :** Nom du prestataire de référentiel actuel
 
-**Fournisseur de référentiel ECM Documentum :** Fait du fournisseur de référentiel Documentum le fournisseur du référentiel pour le référentiel. Cette option est obsolète.
+**Fournisseur du référentiel EMC Documentum :** Fait du fournisseur de référentiel Documentum le fournisseur du référentiel. Cette option est obsolète.
 
 **fournisseur de référentiel :** Fait du fournisseur de référentiel natif le fournisseur du référentiel
 
