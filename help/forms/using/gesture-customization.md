@@ -11,19 +11,22 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 42%
 
 ---
 
 
 # Personnalisation de mouvement {#gesture-customization}
 
-Vous pouvez personnaliser les mouvements de l’application AEM Forms afin de fournir une méthode distincte d’interaction avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
+Vous pouvez personnaliser les mouvements de l’application AEM Forms pour offrir une méthode distincte d’interaction avec l’application. Par exemple, vous pouvez ajouter de nouveaux mouvements pour ouvrir/fermer une tâche ou un point de départ.
 
 ## Personnalisation des mouvements dans l’application AEM Forms {#to-customize-gestures-in-aem-forms-app}
 
-Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir une nouvelle tâche ou un nouveau point de départ, tandis qu’un glissement vers la droite n’active aucune commande. L’exemple suivant décrit la procédure à suivre pour ouvrir un nouveau  ou point de départ sur l’exécution de mouvements de glissement vers la droite dans l’application AEM Forms.
+Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir une nouvelle tâche ou un nouveau point de départ, tandis qu’un glissement vers la droite n’active aucune commande. L’exemple suivant montre comment ouvrir une nouvelle tâche ou un nouveau point de départ en effectuant un glissement vers la droite dans l’application AEM Forms.
 
-1. Ouvrez votre projet.
+1. Ouvrez le projet.
 
    * For iOS, open `Capture.xcodeproj` in Xcode
    * Pour Android, ouvrez le projet Android dans Eclipse.
@@ -34,13 +37,14 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
    * In Xcode, navigate to the **Capture > www > wsmobile > js > runtime > views** folder.
    * In Eclipse, navigate to the **assets > www > wsmobile > js > runtime > views** folder.
    * In Visual Studio, navigate to the **MWSWindows > www > wsmobile > js > runtime > views** folder.
+
    >[!NOTE]
    >
    >Le fichier task.js contient la vue Backbone associée à chaque tâche ou point de départ, tel que répertorié dans les listes de tâches ou de points de départ.
 
 1. In the `task.js` file, search for the events property of the view.
 
-   La propriété  est un mappage avec chaque entrée au format :
+   La propriété événements est un mappage avec chaque entrée au format :
 
    `"EventName Selector": "Function"`
 
@@ -52,18 +56,18 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
       &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;appuyez sur .-content&quot; : &quot;onTaskClick&quot;,
+      &quot;tap.tâche-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap.last_empty_div&quot; : &quot;onTaskClick&quot;,
+      &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
    et remplacer par
 
-   * &quot;swipe.taskContentArea&quot; : &quot;onTaskClick&quot;,
+   * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
       &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .-content&quot; : &quot;onTaskClick&quot;,
+      &quot;swipe .tâche-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe.last_empty_div&quot; : &quot;onTaskClick&quot;,
+      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 
 1. Save and close the `task.js` file.
