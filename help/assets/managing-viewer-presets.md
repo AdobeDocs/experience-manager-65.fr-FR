@@ -418,7 +418,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
 **Pour créer un paramètre prédéfini de visionneuse**
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis]**.
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres de visionneuse prédéfinis]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -542,7 +542,7 @@ Les paramètres de visionneuse prédéfinis qui sont disponibles dans l’interf
 
 **Pour activer ou désactiver les paramètres prédéfinis de visionneuse**
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis.]**
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres de visionneuse prédéfinis.]**
 1. Dans la page Paramètre de visionneuse prédéfini, sous l’en-tête de colonne **[!UICONTROL État]**, appuyez sur le curseur pour activer ou désactiver un paramètre de visionneuse prédéfini.
 
    Le curseur des paramètres de visionneuse prédéfinis activés se situe à droite, dans une boîte bleue ; le curseur des paramètres de visionneuse prédéfinis désactivés se situe à gauche, dans une boîte gris clair.
@@ -559,13 +559,13 @@ Voir aussi [Prévisualisation de ressources](/help/assets/previewing-assets.md).
 
 **Pour publier les paramètres prédéfinis de visionneuse**
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis.]**
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres de visionneuse prédéfinis.]**
 1. Sélectionnez un ou plusieurs paramètres de visionneuse prédéfinis que vous souhaitez publier.
 1. Appuyez sur l’icône **[!UICONTROL Publier]** de la barre d’outils.
 
 ## Tri des paramètres de visionneuse prédéfinis   {#sorting-viewer-presets}
 
-1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] >[!UICONTROL Paramètres de visionneuse prédéfinis.]**
+1. Dans le coin supérieur gauche d’AEM, appuyez sur le logo AEM, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres de visionneuse prédéfinis.]**
 1. Cliquez sur **[!UICONTROL Titre prédéfini]**, **[!UICONTROL Type]**, **[!UICONTROL Publié]** ou **[!UICONTROL État]** afin de trier en fonction de cette colonne. Cliquez par exemple sur **[!UICONTROL Type]** pour trier les types de paramètres prédéfinis de visionneuse dans l’ordre alphabétique standard ou inversé.
 
 ## Modification d’un paramètre prédéfini de visionneuse {#editing-viewer-presets}
@@ -574,7 +574,7 @@ Notez que la modification des *paramètres prédéfinis de visionneuse prêts à
 
 **Pour modifier les paramètres prédéfinis de visionneuse**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets.]**
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Asset] > [!UICONTROL Viewer Presets.]**
 1. Sélectionnez un paramètre prédéfini en cochant la case à gauche du titre du paramètre prédéfini de la visionneuse.
 1. Dans la barre d’outils, appuyez sur **[!UICONTROL Modifier.]**
 1. Sur la page **[!UICONTROL Éditeur de paramètres prédéfinis de la visionneuse]**, apportez les modifications souhaitées au paramètre prédéfini de la visionneuse à l’aide des options disponibles dans les onglets **[!UICONTROL Apparence]** et **[!UICONTROL Comportement]**.
