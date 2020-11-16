@@ -12,6 +12,9 @@ discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 100%
 
 ---
 
@@ -41,14 +44,17 @@ Une fois un élément positionné sur la page, vous pouvez ouvrir une boîte de 
 * **Édition statique**
 Vous pouvez modifier les composants Texte et Image directement sur la page web sans ouvrir de boîte de dialogue ni procéder à un enregistrement explicite.
 
-* **[Explorateur de composants](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des composants sur la page, puis les modifier.
+* **[Explorateur de composants](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
+Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des composants sur la page, puis les modifier.
 
-* **[Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des ressources sur la page, par exemple placer des ressources ou créer des liens vers d’autres pages.
+* **[Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
+Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des ressources sur la page, par exemple placer des ressources ou créer des liens vers d’autres pages.
 
 * **Barre d’outils de composants**
 Cliquez ou appuyez une fois ou lentement deux fois pour afficher la barre d’outils appropriée (une fois pour la barre d’outils du mode d’édition statique, deux fois lentement pour la barre d’outils complète).
 
-* **[Mise en page réactive](/help/sites-authoring/responsive-layout.md)**Cette fonction fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive.
+* **[Mise en page réactive](/help/sites-authoring/responsive-layout.md)**
+Cette fonction fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive.
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.
