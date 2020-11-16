@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 82%
 
 ---
 
@@ -84,7 +87,7 @@ Une connaissance du code source vous permet de déterminer la solution à utilis
 
 Les liens suivants ouvrent les pages de téléchargement pour certaines solutions de base de données courantes :
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
