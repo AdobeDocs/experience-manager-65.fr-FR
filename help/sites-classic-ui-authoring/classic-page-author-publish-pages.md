@@ -12,6 +12,9 @@ discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1069'
+ht-degree: 82%
 
 ---
 
@@ -28,16 +31,16 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 >
 >Certains termes relatifs à la publication peuvent prêter à confusion :
 >
->* **Publier / Annuler la publication**
-   >  Il s’agit des principaux termes des actions qui rendent votre contenu public dans votre environnement de publication (ou pas).
+>* **Publier/Annuler la publication**
+   >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
    >
    >
-* **Activer / désactiver**
-   >  Ces termes sont synonymes de publication/annulation de publication.
+* **Activer/Désactiver**
+   >  Ces termes sont synonymes de publication/annulation de la publication.
    >
    >
-* **Répliquer / Réplication**
-   >  Il s’agit des termes techniques décrivant le mouvement des données (contenu de page, fichiers, code, commentaires utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires utilisateur.
+* **Répliquer/Réplication**
+   >  Il s’agit des termes techniques décrivant le déplacement des données (par exemple, contenu de page, fichiers, code, commentaires d’utilisateur) d’un environnement à l’autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
 >
 
 
@@ -48,6 +51,7 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 >
 >* Un workflow est déclenché afin d’aviser la personne concernée de votre demande de publication.
 >* Un message s’affiche (pendant un bref laps de temps) pour vous en informer.
+
 >
 
 
@@ -70,7 +74,7 @@ Vous pouvez activer des pages dans la console Sites web. Après avoir ouvert une
 1. Dans la console Sites web, sélectionnez la page à activer.
 1. Sélectionnez **Activer** dans le menu supérieur ou dans le menu déroulant de l’élément de page sélectionné. 
 
-   Pour activer le contenu de la page et toutes ses pages secondaires, utilisez la console [**Outils **](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
+   Pour activer le contenu de la page et toutes ses pages secondaires, utilisez la console [**Outils**](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
