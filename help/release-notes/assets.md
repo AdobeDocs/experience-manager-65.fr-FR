@@ -1,5 +1,5 @@
 ---
-title: Notes de mise à jour de [!DNL Adobe Experience Manager Assets] 6.5.
+title: Release Notes of [!DNL Adobe Experience Manager Assets] 6.5.
 description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
 source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
@@ -38,11 +38,11 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 ![Image et licence d’prévisualisation Adobe Stock depuis les ressources Experience Manager](assets/stock_image_preview_license_options.png)
 
-*Figure : Prévisualisation[!DNL Adobe Stock]image et licence depuis[!DNL Experience Manager Assets].*
+*Figure : Prévisualisation [!DNL Adobe Stock] image et licence depuis [!DNL Experience Manager Assets].*
 
 ![Recherche et filtrage des images Adobe Stock sous licence dans le Experience Manager](assets/aem-search-filters2.jpg)
 
-*Figure : Recherchez et filtrez les[!DNL Adobe Stock]images sous licence dans[!DNL Experience Manager].*
+*Figure : Recherchez et filtrez les [!DNL Adobe Stock] images sous licence dans [!DNL Experience Manager].*
 
 ### Dynamic references in [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
 
@@ -62,7 +62,7 @@ Dans les grandes entreprises, l’infrastructure requise pour créer des sites w
 
 ![Faire glisser un fichier d’un [!DNL Experience Manager] déploiement sur une [!DNL Sites] page d’un autre [!DNL Experience Manager] déploiement](assets/connected-assets-drag-and-drop-only.gif)
 
-*Figure : Faites glisser un fichier d’un[!DNL Experience Manager]déploiement sur une[!DNL Sites]page d’un autre[!DNL Experience Manager]déploiement.*
+*Figure : Faites glisser un fichier d’un [!DNL Experience Manager] déploiement sur une [!DNL Sites] page d’un autre [!DNL Experience Manager] déploiement.*
 
 ## Dynamic Media {#dynamic-media}
 
