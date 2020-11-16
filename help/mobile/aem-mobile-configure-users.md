@@ -1,8 +1,8 @@
 ---
 title: Configuration d’utilisateurs et de groupes d’utilisateurs
 seo-title: Configuration d’utilisateurs et de groupes d’utilisateurs
-description: Suivez cette page pour comprendre les rôles utilisateur et comment configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de votre application de services à la demande mobile.
-seo-description: Suivez cette page pour comprendre les rôles utilisateur et comment configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de votre application de services à la demande mobile.
+description: Suivez cette page pour comprendre les rôles d'utilisateur et comment configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de votre application de services à la demande mobile.
+seo-description: Suivez cette page pour comprendre les rôles d'utilisateur et comment configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de votre application de services à la demande mobile.
 uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: administering-on-demand-services-app
 discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 53%
 
 ---
 
@@ -23,11 +26,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Ce chapitre décrit les rôles utilisateur et comment configurer vos utilisateurs et groupes pour qu’ils prennent en charge la création et la gestion de vos applications mobiles.
 
-## Utilisateurs des applications AEM Mobile et administration des groupes {#aem-mobile-application-users-and-group-administration}
+## Utilisateurs de l’application AEM Mobile et administration des groupes {#aem-mobile-application-users-and-group-administration}
 
 ### Développeurs de contenu d’application AEM Mobile (groupe app-author) {#aem-mobile-application-content-authors-app-author-group}
 
-Les membres du groupe app-author sont responsables de la création de contenu d&#39;application AEM Mobile, y compris des pages, du texte, des images et des vidéos.
+Les membres du groupe d’auteurs d’applications sont chargés de créer AEM contenu d’applications mobiles, y compris des pages, du texte, des images et des vidéos.
 
 #### Configuration du groupe - app-authors {#group-configuration-app-authors}
 
@@ -47,9 +50,9 @@ Les membres du groupe app-author sont responsables de la création de contenu d&
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Les éléments suivants vous permettent d’ajouter des éléments au groupe d’auteurs de contenu d’AEM :
+1. Les éléments suivants vous permettent d’ajouter AEM groupe d’auteurs de contenu :
 
-   (Lecture) activé
+   (Lecture) sur
 
    * /propriétés d’objet
    * /etc/clientlibs
@@ -75,6 +78,7 @@ Members of the app-admins group can author application content with the same per
 
    * content-authors
    * workflow-users
+
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
    >[!NOTE]
@@ -89,6 +93,7 @@ Members of the app-admins group can author application content with the same per
 
    * (lire, modifier, créer, supprimer, répliquer) sur /etc/packages/mobileapp
    * (lire) sur /var/contentsync
+
    >[!NOTE]
    >
    >La réplication de package sert à publier des mises à jour d’application de l’instance de création vers l’instance de publication
@@ -102,13 +107,13 @@ Members of the app-admins group can author application content with the same per
 1. Ajoutez des membres à ce groupe selon les besoins
 1. Pour exporter du contenu ou le télécharger
 
-   * (Lecture) sur /etc/contentsync pour accéder aux modèles d’exportation
+   * (Lecture) sur /etc/contentsync pour accéder aux modèles d&#39;exportation
    * (Lecture) sur /var à pour la traversée de chemin en lecture
-   * (Lecture, écriture, modification, suppression) sur /var/contentsync pour écrire, lire et nettoyer le contenuSynchronisation du contenu d’exportation mis en cache
+   * (Lu, Écrire, Modifier, Supprimer) sur /var/contentsync pour écrire, lire et nettoyer le contenu d’exportation en mémoire cache de ContentSync
 
 ### Ressources supplémentaires {#additional-resources}
 
-Pour en savoir plus sur les deux autres rôles et responsabilités de création d&#39;une application de services à la demande AEM Mobile, reportez-vous aux ressources suivantes :
+Pour en savoir plus sur les deux autres rôles et responsabilités de création d’une application AEM Mobile On-demand Services, consultez les ressources suivantes :
 
-* [Développement de contenu AEM pour les services à la demande AEM Mobile](/help/mobile/aem-mobile-on-demand.md)
-* [Création de contenu AEM pour l&#39;application AEM Mobile On-Demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Développement de contenu AEM pour AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Création de contenu AEM pour une application AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
