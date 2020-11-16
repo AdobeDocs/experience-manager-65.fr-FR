@@ -12,6 +12,9 @@ discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +27,7 @@ La création de versions permet de créer un « instantané » d’une page à
 * Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
 * Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
 
-## Création d’une version {#creating-a-new-version}
+## Création d’une version   {#creating-a-new-version}
 
 Pour créer une version d’une page :
 
@@ -95,11 +98,12 @@ Pour comparer la version actuelle de la page avec une version précédente :
    * Le texte qui a été supprimé apparaît en rouge et est barré.
    * Le texte qui été ajouté apparaît en vert et est souligné.
    * Une image qui a été ajoutée ou supprimée apparaît dans un cadre vert.
+
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
 1. Dans le sidekick, sélectionnez le sous-onglet **Restaurer la version**, puis cliquez sur le bouton **&lt;&lt;Précédent** pour afficher la version actuelle.
 
-## Timewarp {#timewarp}
+## Timewarp   {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état ***publié*** d’une page à des moments spécifiques dans le passé.
 
@@ -140,12 +144,13 @@ La version Calendrier est utilisée si vous souhaitez visualiser un jour spécif
 
    >[!NOTE]
    >
-   >Vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devrez procéder manuellement à l’aide de la fonction [Restaurer](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick). 
+   >Vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devrez procéder manuellement à l’aide de la fonction [Restaurer](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Une fois la consultation de la page terminée, cliquez sur :
 
    * **Quitter Timewarp** pour quitter la fonctionnalité et revenir à la page de création en cours.
    * [Afficher la frise chronologique](#using-the-timewarp-timeline) pour afficher la frise chronologique.
+
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
 ### Utilisation de la frise chronologique Timewarp {#using-the-timewarp-timeline}
@@ -169,6 +174,7 @@ Pour afficher la frise chronologique du document :
    * Toutes les lignes indiquent les versions publiées.
 Une nouvelle ligne commence lorsqu’une page est activée. Une nouvelle couleur apparaît chaque fois que le document est modifié.
 Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifiée au cours de la période correspondant à la version verte initiale, tandis que la ligne jaune indique qu’elle a été modifiée pendant la version rouge, etc.
+
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Cliquez sur:
@@ -176,18 +182,18 @@ Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifié
    1. **Aller** pour afficher le contenu de la page publiée au moment sélectionné.
    1. **Quitter Timewarp** pour quitter la fonctionnalité et revenir à la page de création en cours.
 
-### Limites de la déformation temporelle {#timewarp-limitations}
+### Limites du mode Timewarp{#timewarp-limitations}
 
-Timewarp s’efforce au mieux de reproduire une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces limites doivent être prises en compte lorsque vous utilisez Timewarp.
+Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutefois, en raison de la complexité de la création continue de contenu dans AEM, cela n’est pas toujours possible. Ces restrictions doivent être prises en compte lors de l’utilisation de Timewarp.
 
-* **Timewarp fonctionne en fonction des pages** publiées : Timewarp ne fonctionne entièrement que si vous avez déjà publié la page. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
-* **Timewarp utilise des versions** de page : si vous accédez à une page qui a été supprimée/supprimée du référentiel, elle est générée correctement si d’anciennes versions de la page sont toujours disponibles dans le référentiel.
-* **Les versions supprimées ont une incidence sur Timewarp** . Si les versions sont supprimées du référentiel, Timewarp ne peut pas afficher la vue correcte.
+* **Timewarp fonctionne sur la base de pages publiées** : toutes les fonctionnalités de Timewarp ne sont disponibles que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
+* **Timewarp utilise des versions de page** : si vous accédez à une page qui a été supprimée du référentiel, elle s’affiche correctement si d’anciennes versions sont toujours disponibles dans le référentiel.
+* **Les versions supprimées affectent Timewarp** : si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte.
 
-* **Minutage en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devrez procéder manuellement à l’aide de la fonction [Restaurer](#main-pars-title-1). 
+* **Timewarp est en lecture seule** : vous ne pouvez pas modifier l’ancienne version de la page. Elle est disponible uniquement à des fins d’affichage. Si vous souhaitez restaurer l’ancienne version, vous devrez procéder manuellement à l’aide de la fonction [Restaurer](#main-pars-title-1).
 
-* **La déformation temporelle est uniquement basée sur le contenu** de la page : si des éléments (tels que le code, le fichier CSS, les ressources/images, etc.) pour le rendu du site Web ont changé, la vue diffère de ce qu’elle était initialement, car ces éléments ne sont pas versionnés dans le référentiel.
+* **Timewarp est basé uniquement sur le contenu de page** : si des éléments destinés au rendu du site web (tels que du code, des feuilles css, des ressources/images, etc.) ont été modifiés, la vue sera différente de ce qu’elle était initialement, étant donné que ces éléments n’ont pas de suivi de version dans le référentiel.
 
 >[!CAUTION]
 >
->Timewarp est un outil conçu pour aider les auteurs à comprendre et à créer leur contenu. Il ne s&#39;agit pas d&#39;un journal de vérification ou à des fins juridiques.
+>Timewarp est conçu comme un outil permettant aux auteurs de comprendre et de créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
