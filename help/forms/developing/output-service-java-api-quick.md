@@ -44,11 +44,11 @@ Le Début rapide des API Java (SOAP) est disponible pour le service Output.
 
 [Début rapide (mode SOAP) : Transformation d’un document PDF à l’aide de l’API Java](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée des AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM Forms fortement typée et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les Débuts rapides situés dans Programmation avec AEM forms reposent sur le système d’exploitation Forms Server. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les Débuts rapides situés dans Programmation avec des formulaires AEM sont basés sur le système d’exploitation Forms Server. Cependant, si vous utilisez un autre système d’exploitation, tel qu’UNIX, remplacez les chemins spécifiques à Windows par les chemins pris en charge par le système d’exploitation concerné. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Début rapide (mode SOAP) : Création d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
@@ -174,7 +174,7 @@ L’exemple de code Java suivant crée un document PDF nommé *Loan.pdf*. Ce doc
 
 >[!NOTE]
 >
->Avant d’exécuter ce début rapide, veillez à créer une application AEM Forms nommée Applications/FormsApplication. Créez un dossier dans l’application nommé FormsFolder et importez le fichier XDP dans le dossier. Pour plus d’informations, voir [Générer un document](/help/forms/developing/creating-document-output-streams.md)*PDF.*
+>Avant d’exécuter ce début rapide, veillez à créer une application AEM Forms nommée Applications/FormsApplication. Créez un dossier dans l’application nommé FormsFolder et importez le fichier XDP dans le dossier. Pour plus d’informations, voir [Générer un document ](/help/forms/developing/creating-document-output-streams.md)*PDF.*
 
 ```java
  /*
@@ -673,7 +673,7 @@ L’exemple de code Java suivant crée un document PDF/A nommé *LoanArchive.pdf
 
 ## Début rapide (mode SOAP) : Transmission de documents au service Output à l’aide de l’API Java {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-Le début rapide Java suivant récupère le fichier *Loan.xdp* de Content Services. Ce fichier XDP se trouve dans le `space /Company Home/Form Designs`. Le fichier XDP est renvoyé dans une `com.adobe.idp.Document` instance. L’ `com.adobe.idp.Document` instance est transmise au service Output. Le formulaire non interactif est enregistré en tant que fichier PDF nommé *Loan.pdf *sur l’ordinateur client. L’option URI du fichier étant définie, le fichier PDF *Loan.pdf *est également enregistré sur le serveur d’applications J2EE hébergeant des AEM Forms. (voir [Transmission de Documents situés dans Content Services ES2 à Output Service](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)).
+Le début rapide Java suivant récupère le fichier *Loan.xdp* de Content Services. Ce fichier XDP se trouve dans le `space /Company Home/Form Designs`. Le fichier XDP est renvoyé dans une `com.adobe.idp.Document` instance. L’ `com.adobe.idp.Document` instance est transmise au service Output. Le formulaire non interactif est enregistré en tant que fichier PDF nommé *Loan.pdf *sur l’ordinateur client. Comme l’option File URI est définie, le fichier PDF *Loan.pdf *est également enregistré sur le serveur d’applications J2EE hébergeant AEM Forms. (voir [Transmission de Documents situés dans Content Services ES2 à Output Service](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)).
 
 ```java
  /*
