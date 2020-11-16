@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 80%
 
 ---
 
@@ -48,20 +51,21 @@ Ils peuvent être utilisés de différentes manières pour étendre la fonctionn
 >* Utilisation et création d’[incrustations](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
+
 >
 >
 Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Vous ne devez ***rien*** modifier dans le chemin `/libs`.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
 >1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
->1. Make any changes within `/apps`
+>1. Apportez les modifications désirées dans `/apps`
 
 
 ## Ajout d’un nouveau calque (mode) {#add-new-layer-mode}
@@ -86,7 +90,7 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-new-layer-mode sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
+* [Ouvrez le projet aem-authoring-new-layer-mode sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip).
 
 ## Ajout d’une nouvelle catégorie de sélection à l’explorateur de ressources {#add-new-selection-category-to-asset-browser}
@@ -108,7 +112,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 Lors de la création de pages, vous êtes souvent amené à faire une sélection dans des ressources (pages, composants, ressources, etc.). Il peut s’agir, par exemple, d’une liste dans laquelle l’auteur doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et faire en sorte qu’elle soit appropriée au scénario d’utilisation, un filtre peut être implémenté sous la forme d’un prédicat personnalisé. Par exemple, si le composant Granite[`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [](/help/sites-developing/touch-ui-concepts.md#granite-ui) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
+Pour maintenir la liste à une taille raisonnable et faire en sorte qu’elle soit appropriée au scénario d’utilisation, un filtre peut être implémenté sous la forme d’un prédicat personnalisé. Par exemple, si le composant [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) [`pathbrowser`](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
 
 * Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
@@ -209,7 +213,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 #### Exemple de code pour créer un éditeur statique {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` est un exemple de package montrant comment créer un éditeur statique dans AEM.
+`aem-authoring-extension-inplace-editor` est un exemple de package qui montre comment créer un éditeur statique dans AEM.
 
 CODE SUR GITHUB
 
@@ -243,7 +247,7 @@ Le workflow prêt à l’emploi **Demander l’activation** se déclenche automa
 
 To have customized behavior upon such activation you can overlay the **Request for Activation** workflow:
 
-1. Dans `/apps` l’assistant **Sites** :
+1. Dans `/apps` l&#39;Assistant **Sites** :
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
