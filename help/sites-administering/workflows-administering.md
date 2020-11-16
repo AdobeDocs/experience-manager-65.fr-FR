@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 87%
 
 ---
 
@@ -76,7 +79,8 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
-* **Détails de l’échec** Ouvre une fenêtre affichant le **Message de l’échec**, l’**Étape** et la **Pile des échecs**.
+* **Détails** d’échec Ouvre une fenêtre pour afficher la variable 
+**Message** d’échec, **étape** et pile **** d’échec.
 
 * **Ouvrir l’historique** Affiche des détails sur l’historique des workflows.
 
@@ -158,5 +162,5 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 
 | Nom de propriété (console Web) | Nom de propriété OSGi |
 |---|---|
-| Taille maximale de requête de boîte de réception | granite.workflow.inboxQuerySize |
+| Taille maximale de la Requête de la boîte de réception | granite.workflow.inboxQuerySize |
 
