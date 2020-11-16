@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour générales pour [!DNL Adobe Experience Manager] la version 6.5
-description: '[ !Adobe Experience Manager DNL] 6.5 note décrivant les informations de mise à jour, les nouveautés, comment installer et les listes de modification détaillées.'
+description: '[!DNL Adobe Experience Manager]Notes relatives à  6.5 décrivant les informations de version, les nouveautés, la procédure d’installation et les listes de modifications détaillées.'
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 65%
+source-wordcount: '2150'
+ht-degree: 66%
 
 ---
 
@@ -91,7 +91,7 @@ L’éditeur de page offre la possibilité de modifier le contenu et la composit
 Fourni d’abord dans le cadre d’AEM 6.4 SP2, la prise en charge de SPA dans AEM 6.5 propose les fonctionnalités suivantes :
 
 * Utilisez l’éditeur de modèles pour modifier et configurer les parties modifiables AEM du SPA.
-* Utilisez la gestion multisite pour créer des expériences d’application monopage ou d’application d’une seule page
+* Utilisez la gestion multisite pour créer des SPA avec mention pays, franchise ou blanche
 
 #### Gestion de contenu en mode sans affichage {#headless-content-management}
 
@@ -132,7 +132,7 @@ AEM 6.5 propose les fonctionnalités et améliorations suivantes pour accroîtr
 
 #### Intégration avec Adobe Creative Cloud {#integration-with-adobe-creative-cloud}
 
-L’ajout d’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html), expérience intégrée pour les créatifs utilisant les applications Adobe Creative Cloud, notamment Photoshop, Illustrator et InDesign, simplifie la collaboration entre créatifs et marketeurs dans le processus de création de contenu. AEM application de bureau continue de prendre en charge les besoins des utilisateurs qui utilisent des ressources d’AEM sur leur bureau, en utilisant n’importe quel type de fichier et n’importe quelle application de bureau.
+L’ajout d’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html), expérience intégrée pour les créatifs utilisant les applications Adobe Creative Cloud, notamment Photoshop, Illustrator et InDesign, simplifie la collaboration entre créatifs et marketeurs dans le processus de création de contenu. aem application de bureau continue de prendre en charge les besoins des utilisateurs qui utilisent des ressources d’AEM sur leur bureau, en utilisant n’importe quel type de fichier et n’importe quelle application de bureau.
 
 De plus, AEM s’intègre à Adobe Stock pour vous aider à rechercher, prévisualiser, concéder sous licence et enregistrer des ressources Adobe Stock directement à partir de l’interface utilisateur web d’AEM.
 
@@ -140,7 +140,7 @@ De plus, AEM s’intègre à Adobe Stock pour vous aider à rechercher, prévisu
 
 #### Ressources connectées {#connected-assets}
 
-La fonctionnalité Ressources connectées est destinée aux déploiements plus importants avec un certain nombre de déploiements AEM Sites qui doivent exploiter les ressources d’un déploiement de gestion des actifs numériques AEM Assets central. Il permet d&#39;améliorer la gouvernance des actifs gérés de façon centralisée tout en permettant une grande efficacité de la fourniture des actifs aux divers déploiements de sites.
+La fonctionnalité Ressources connectées est destinée aux déploiements plus importants avec un certain nombre de déploiements AEM Sites qui doivent exploiter les ressources d’un déploiement central de gestion des actifs numériques AEM Assets. Il permet d&#39;améliorer la gouvernance des actifs gérés de façon centralisée tout en permettant une grande efficacité de la fourniture des actifs aux divers déploiements de sites.
 
 ### Dynamic Media {#dynamic-media}
 
@@ -205,7 +205,7 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées su
 
 * Démarrage rapide autonome : `cq-quickstart-6.5.0.jar`.
 * Application Server Quickstart: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 ou version ultérieure pour les différents serveurs et plates-formes Web. Voir lien [de téléchargement](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)
+* Répartiteur 4.3.2 ou version ultérieure pour les différents serveurs et plates-formes Web. Voir lien [de téléchargement](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)
 * Module externe pour Eclipse IDE ([plus d’infos et téléchargement](/help/sites-developing/aem-eclipse.md))
 
 * Extension pour l’éditeur de code Brackets ([plus d’infos et téléchargement](/help/sites-developing/aem-brackets.md))
@@ -239,7 +239,7 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées su
 **Formulaires**
 
 * [Packages pour les fonctionnalités AEM Forms](https://helpx.adobe.com/fr/aem-forms/kb/aem-forms-releases.html)
-* [SDK client OSGi AEM Forms](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
+* [SDK client AEM Forms OSGi](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
 
 ## Langues {#languages}
 
@@ -250,7 +250,7 @@ L’interface utilisateur est disponible dans les langues suivantes :
 * Français
 * Espagnol
 * Italien
-* Brésilien  Portugais
+* Brésilien Portugais
 * Japonais
 * Chinois simplifié
 * Chinois traditionnel (prise en charge limitée)
