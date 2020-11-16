@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '1124'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +25,7 @@ Ce contenu décrit la façon dont les dossiers de contrôle sont affectés par l
 *Watched Folder* est une application basée sur système de fichiers. Elle appelle des opérations de service configurées qui manipulent le fichier au sein de l’un des dossiers suivants de la hiérarchie du dossier de contrôle :
 
 * Entrée
-* Scène
+* Évaluation
 * Sortie
 * Failure (Echecs)
 * Preserve (Conservés)
@@ -66,7 +69,7 @@ Le tableau suivant décrit la manipulation de cinq exemples de fichier (fichier1
    <td><p>empty</p></td>
   </tr>
   <tr>
-   <td><p>Scène</p></td>
+   <td><p>Évaluation</p></td>
    <td><p>empty</p></td>
    <td><p>fichier1</p></td>
    <td><p>fichier2</p></td>
@@ -153,7 +156,7 @@ Les stratégies suivantes permettent de limiter les pertes de données des dossi
 * Sauvegardez fréquemment les dossiers output et failure (toutes les heures par exemple) pour éviter les pertes de données au niveau des fichiers des dossiers result et failure.
 * Sauvegardez les fichiers du dossier input dans un dossier autre que le dossier de contrôle. Vous assurez ainsi la disponibilité du fichier après la récupération au cas où les fichiers seraient introuvables dans le dossier output ou le dossier failure. Veillez à la cohérence de votre dispositif d’appellation.
 
-   For example, if you are saving the output with `%F.`*extension *, the output file will have the same name as the input file. Cela vous aidera à déterminer les fichiers d’entrée manipulés et ceux qui doivent être soumis à nouveau. Si vous ne voyez qu’un seul fichier fichier1_out dans le dossier result, et non fichier2_out, fichier3_out et fichier4_out, cela signifie que vous devez soumettre fichier2, fichier3 et fichier4 de nouveau.
+   For example, if you are saving the output with `%F.`*extension*, the output file will have the same name as the input file. Cela vous aidera à déterminer les fichiers d’entrée manipulés et ceux qui doivent être soumis à nouveau. Si vous ne voyez qu’un seul fichier fichier1_out dans le dossier result, et non fichier2_out, fichier3_out et fichier4_out, cela signifie que vous devez soumettre fichier2, fichier3 et fichier4 de nouveau.
 
 * Si la sauvegarde du dossier de contrôle disponible est plus ancienne que le temps nécessaire au traitement de la tâche, vous devez autoriser le système à créer un nouveau dossier de contrôle et à placer automatiquement les fichiers dans le dossier input.
 * Si la dernière sauvegarde disponible n’est pas suffisamment récente, que l’heure de la sauvegarde est plus récente que l’heure à laquelle vous parvenez en lançant un nouveau traitement des fichiers et que le dossier de contrôle est restauré, cela signifie que le fichier a été manipulé au cours de l’une des phases suivantes :
@@ -163,6 +166,7 @@ Les stratégies suivantes permettent de limiter les pertes de données des dossi
    * **Phase 3 :** copie effectuée dans le dossier stage et traitement appelé
    * **Phase 4 :** manipulation en cours
    * **Phase 5 :** résultats renvoyés
+
    Si les fichiers se trouvent en Phase 1, ils seront manipulés. Si les fichiers se trouvent en Phase 2 ou 3, placez-les dans le dossier input afin qu’ils soient manipulés à nouveau.
 
    >[!NOTE]
