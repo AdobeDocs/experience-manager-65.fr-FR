@@ -1,6 +1,6 @@
 ---
-title: Console Web
-seo-title: Console Web
+title: Console web
+seo-title: Console web
 description: Apprenez à utiliser le console web d’AEM.
 seo-description: Apprenez à utiliser le console web d’AEM.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
@@ -11,11 +11,14 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 75%
 
 ---
 
 
-# Console Web{#web-console}
+# Console web{#web-console}
 
 Le console web d’AEM est basée sur la [Console de gestion web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est une initiative communautaire pour mettre en œuvre le plateforme de service OSGi R4 qui comprend la structure et les services standards OSGi.
 
@@ -37,7 +40,7 @@ The console can be accessed from `../system/console`; for example:
 
 `http://localhost:4502/system/console/components`
 
-## Configuration{#configuration}
+## Configuration {#configuration}
 
 L’onglet **Configuration** est utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres du système AEM.
 
@@ -51,7 +54,7 @@ L’onglet **Configuration** est accessible soit via :
 
    **les lots OSGi >**
 
-* L&#39;URL; par exemple :
+* L&#39;URL ; par exemple :
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -84,7 +87,7 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Réinitialiser**
 
-   Réinitialisez les paramètres affichés à l’écran aux derniers enregistrés.
+   Réinitialisez les paramètres affichés à l&#39;écran à ceux enregistrés en dernier.
 
 * **Supprimer**
 
@@ -106,7 +109,7 @@ The **Bundles** tab is the mechanism for installing the OSGi bundles required fo
 
    **les lots OSGi >**
 
-* L&#39;URL; par exemple :
+* L&#39;URL ; par exemple :
 
    `http://localhost:4502/system/console/bundles`
 
@@ -132,7 +135,7 @@ En utilisant cet onglet vous pouvez :
 
 * **Début**
 
-   Commence un lot selon le niveau de début spécifié.
+   Début un lot en fonction du niveau de début spécifié.
 
 * **Arrêter**
 
@@ -144,7 +147,7 @@ En utilisant cet onglet vous pouvez :
 
 * **voir le statut**
 
-   La liste spécifie l’état actuel du lot ; cliquez sur le nom d&#39;un lot spécifique et affichez d&#39;autres informations.
+   La liste spécifie l&#39;état actuel de l&#39;offre groupée ; cliquez sur le nom d&#39;un lot spécifique et affichez d&#39;autres informations.
 
 >[!NOTE]
 >
@@ -158,7 +161,7 @@ The **Components** tab allows you to Enable and/or Disable the various component
 
    **Principal >**
 
-* L&#39;URL; par exemple :
+* L&#39;URL ; par exemple :
 
    `http://localhost:4502/system/console/components`
 
