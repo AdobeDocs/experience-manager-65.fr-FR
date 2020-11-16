@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## A propos de JSRP {#about-jsrp}
 
-Lorsque les AEM Communities utilisent JSRP comme option d’enregistrement (par défaut), le contenu de la communauté est stocké dans le JCR et le contenu généré par l’utilisateur (UGC) n’est accessible que depuis l’instance d’auteur ou de publication à laquelle il a été publié.
+Lorsque AEM Communities utilise JSRP comme option d’enregistrement (valeur par défaut), le contenu de la communauté est stocké dans le JCR et le contenu généré par l’utilisateur (UGC) n’est accessible que depuis l’instance d’auteur ou de publication à laquelle il a été publié.
 
 En raison de la simplicité du déploiement, JSRP est généralement mieux adapté aux environnements de démonstration ou de développement d’une instance de publication et d’une instance d’auteur.
 
@@ -70,7 +70,7 @@ Pour plus d’informations sur *les utilisateurs*, les profils ** utilisateur et
 
 Assurez-vous que JSRP a été configuré comme fournisseur par défaut en vérifiant la configuration de l’option enregistrement. Par défaut, le fournisseur de ressources d’enregistrement est JSRP.
 
-Sur toutes les instances d’AEM d’auteur et de publication, consultez de nouveau la console de configuration d’Enregistrement ou vérifiez le référentiel AEM :
+Sur toutes les instances d’AEM création et de publication, revisitez la console de configuration de l’Enregistrement ou vérifiez le référentiel AEM :
 
 * Dans JCR, si [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
