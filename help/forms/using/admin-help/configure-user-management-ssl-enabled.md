@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +26,7 @@ Pour un bon fonctionnement de la synchronisation sur LDAPS, les certificats LDAP
 1. Exportez un certificat client depuis le serveur d’annuaire.
 1. Utilisez le programme Keytool pour importer le fichier du certificat client dans le magasin de certificats de la JVM™ (Java Virtual Machine) par défaut du serveur d’applications AEM Forms. La procédure peut varier selon la version de la JVM installée et les chemins d’installation du client. Ainsi, si vous utilisez BEA WebLogic Server avec le JDK 1.5, ouvrez une invite de commande et saisissez ce texte :
 
-   `keytool -import -alias`*alias *`-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
+   `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. A l’invite, spécifiez votre mot de passe (pour Java, le mot de passe par défaut est `changeit`). Une fois le certificat importé, un message vous confirme la réussite de l’opération.
 1. When prompted, type `Yes` to trust the certificate.
