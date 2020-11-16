@@ -12,6 +12,9 @@ discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 78%
 
 ---
 
@@ -48,14 +51,14 @@ Le tableau ci-dessous contient une présentation des incidents que les administr
   </tr>
   <tr>
    <td><p>Administrateur système</p> </td>
-   <td><p>L’écran de bienvenue d’AEM ne s’affiche pas dans le navigateur après avoir cliqué deux fois sur Quickstart d’AEM CM.</p> </td>
+   <td><p>L’écran de bienvenue AEM ne s’affiche pas dans le navigateur après avoir cliqué sur l’doublon AEM CM Quickstart</p> </td>
   </tr>
   <tr>
-   <td><p>Administrateur système</p> <p>administrateur</p> </td>
+   <td><p>Administrateur système</p> <p>utilisateur admin</p> </td>
    <td><p>Création d’une image mémoire des threads</p> </td>
   </tr>
   <tr>
-   <td><p>Administrateur système</p> <p>administrateur</p> </td>
+   <td><p>Administrateur système</p> <p>utilisateur admin</p> </td>
    <td><p>Contrôle des sessions JCR non fermées</p> </td>
   </tr>
  </tbody>
@@ -107,7 +110,7 @@ Pour plus d’informations, voir [Comment utiliser les images mémoire des threa
 Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ouvrir des sessions JCR (cela s’apparente à l’ouverture d’une connexion de base de données). Si les sessions ouvertes ne sont jamais fermées, votre système peut rencontrer les symptômes suivants :
 
 * Le système est ralenti.
-* Vous pouvez voir beaucoup de CacheManager : resizeToutes les entrées du fichier journal; le nombre suivant (size=&lt;x>) indique le nombre de caches, chaque session ouvre plusieurs caches.
+* Vous pouvez voir beaucoup de CacheManager : resizeToutes les entrées du fichier journal ; le nombre suivant (size=&lt;x>) indique le nombre de caches ; chaque session ouvre plusieurs caches.
 * Parfois, la mémoire du système est saturée (après quelques heures, jours ou semaines, selon la gravité).
 
 Pour analyser les sessions non fermées et découvrir le code qui ne ferme pas une session, consulter l’article [Analyse des sessions non fermées](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html) de la base de connaissances.
