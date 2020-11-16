@@ -12,6 +12,9 @@ discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '2423'
+ht-degree: 73%
 
 ---
 
@@ -22,13 +25,13 @@ L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparenc
 
 >[!NOTE]
 >
->Many aspects of component development are common to both the classic UI and the touch-enabled UI, so **you must read[AEM Components - The Basics](/help/sites-developing/components-basics.md)before** using this page, which deals with the specifics of the classic UI.
+>Many aspects of component development are common to both the classic UI and the touch-enabled UI, so **you must read [AEM Components - The Basics](/help/sites-developing/components-basics.md) before** using this page, which deals with the specifics of the classic UI.
 
 >[!NOTE]
 >
 >Le langage HTL (HTML Template Language) et JSP peuvent tous deux être utilisés pour développer des composants pour l’IU classique. Cependant, cette page illustre le développement avec JSP. Cela est simplement dû au fait que JSP est traditionnellement utilisé dans l’IU classique.
 >
->HTL est désormais le langage de script recommandé pour AEM. See [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) and [Developing AEM Components](/help/sites-developing/developing-components.md) to compare methods.
+>HTL est désormais le langage de script recommandé pour AEM. See [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) and [Developing AEM Components](/help/sites-developing/developing-components.md) to compare methods.
 
 ## Structure {#structure}
 
@@ -67,13 +70,13 @@ Résumé :
    * `resource` - Objet Ressource Sling ( `slingRequest.getResource();`).
    * `resourceResolver` - Objet Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
    * `currentNode` – Nœud JCR résolu pour la requête.
-   * `log` - Le journal par défaut ().
-   * `sling` - L&#39;assistant de script Sling.
+   * `log` - Journalisation par défaut ().
+   * `sling` - Aide de script Sling.
    * `properties` - Les propriétés de la ressource visée ( `resource.adaptTo(ValueMap.class);`).
    * `pageProperties` – Propriétés de la page de la ressource gérée.
-   * `pageManager` - Gestionnaire de pages pour accéder aux pages de contenu AEM ( `resourceResolver.adaptTo(PageManager.class);`).
+   * `pageManager` - Gestionnaire de pages pour l&#39;accès aux pages de contenu AEM ( `resourceResolver.adaptTo(PageManager.class);`).
    * `component` – Objet du composant AEM en cours.
-   * `designer` - Objet designer pour récupérer les informations de conception ( `resourceResolver.adaptTo(Designer.class);`).
+   * `designer` - Objet designer pour la récupération des informations de conception ( `resourceResolver.adaptTo(Designer.class);`).
    * `currentDesign` – Conception de la ressource gérée.
    * `currentStyle` – Style de la ressource gérée.
 
@@ -81,7 +84,7 @@ Résumé :
 
 Il existe trois méthodes pour accéder au contenu dans AEM WCM :
 
-* Via l’objet properties introduit dans `global.jsp`:
+* Par le biais de l’objet properties introduit dans `global.jsp`:
 
    L’objet properties est une instance de ValueMap (voir API [](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)Sling) et contient toutes les propriétés de la ressource active.
 
@@ -95,7 +98,7 @@ Il existe trois méthodes pour accéder au contenu dans AEM WCM :
 
    Exemple: `String pageTitle = currentPage.getTitle();`
 
-* Via `currentNode` un objet introduit dans `global.jsp`:
+* Par l&#39; `currentNode` objet introduit dans `global.jsp`:
 
    L’ `currentNode` objet est une instance d’un noeud (voir API [](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)JCR). The properties of a node can be accessed by the `getProperty()` method.
 
@@ -163,10 +166,11 @@ Pour développer un nouveau composant pour AEM sur la base d’un composant exis
 
    * Ajouter un nouveau champ dans la boîte de dialogue
 
-      * `cq:dialog` - boîte de dialogue de l’interface utilisateur tactile
+      * `cq:dialog` - boîte de dialogue pour l&#39;interface utilisateur tactile
       * `dialog` : boîte de dialogue pour l’interface utilisateur classique
    * replacing the `.jsp` file (name it after your new component)
    * Retravailler complètement le composant, si vous le souhaitez
+
    For example, if you take a copy of the standard Text component, you can add an additional field to the dialog box, then update the `.jsp` to process the input made there.
 
    >[!NOTE]
@@ -187,7 +191,7 @@ Pour développer un nouveau composant pour AEM sur la base d’un composant exis
 
 1. L’un des nœuds suivants doit être présent et correctement initialisé pour que le nouveau composant puisse s’afficher :
 
-   * `cq:dialog` - boîte de dialogue de l’interface utilisateur tactile
+   * `cq:dialog` - boîte de dialogue pour l&#39;interface utilisateur tactile
    * `dialog` : boîte de dialogue pour l’interface utilisateur classique
    * `cq:editConfig` : comportement des composants dans l’environnement de modification (glisser-déposer, par exemple)
    * `design_dialog` - boîte de dialogue pour le mode de conception (interface utilisateur classique uniquement)
@@ -215,6 +219,7 @@ Une fois que le composant a été développé, vous l’ajoutez au système de p
       `<contextPath>/ Test.html?wcmmode=design`
 
    * Cliquez sur Conception dans le sidekick.
+
    Vous êtes maintenant en mode Création et vous pouvez modifier le système de paragraphes.
 
 1. Cliquez sur Modifier.
@@ -263,6 +268,7 @@ Pour créer le nouveau composant, nous utilisons le composant textimage standard
    * dialog definition: `textimage/dialog`
    * script de composant : `textimage/textimage.jsp`
    * edit configuration node (allowing drag-and-drop of assets): `textimage/cq:editConfig`
+
    >[!NOTE]
    >
    >La définition de la boîte de dialogue dépend de l’interface utilisateur :
@@ -279,21 +285,23 @@ Pour créer le nouveau composant, nous utilisons le composant textimage standard
       * Définir `jcr:title` sur `Text Image (Extended)`
    * Groupe, où le composant est répertorié dans le sidekick (laisser tel quel)
 
-      * Laisser `componentGroup` définie sur `General`
+      * Ne pas définir `componentGroup` sur `General`
    * Composant parent pour le nouveau composant (le composant textimage standard)
 
       * Définir `sling:resourceSuperType` sur `foundation/components/textimage`
+
    Après cette étape, le nœud de composant ressemble à ceci :
 
    ![chlimage_1-60](assets/chlimage_1-60a.png)
 
-1. Modifiez la `sling:resourceType` propriété du noeud Modifier la configuration de l’image (propriété : `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) à `geometrixx/components/textimage.`
+1. Modifiez la `sling:resourceType` propriété du noeud modifier la configuration de l’image (propriété : `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) à `geometrixx/components/textimage.`
 
    De cette manière, lorsqu’une image est déposée sur le composant de la page, la propriété `sling:resourceType` du composant textimage étendu est définie sur `geometrixx/components/textimage.`.
 
 1. Modifiez la boîte de dialogue du composant afin d’inclure la nouvelle option. Le nouveau composant hérite des sections de la boîte de dialogue qui sont identiques à l’original. Le seul ajout que nous effectuons consiste à étendre l’onglet **Avancé**, en ajoutant une liste déroulante **Position d’image**, avec les options **Gauche** et **Droite** :
 
    * Leave the `textimage/dialog`properties unchanged.
+
    Notez que `textimage/dialog/items` comporte quatre sous-nœuds, tab1 à tab4, qui représentent les quatre onglets de la boîte de dialogue textimage.
 
    * Pour les deux premiers onglets (tab1 et tab2) :
@@ -315,6 +323,7 @@ Pour créer le nouveau composant, nous utilisons le composant textimage standard
       * For node `position/options/o1` set the properties: `text` to `Left` and `value` to `left.`
       * For node `position/options/o2` set the properties: `text` to `Right` and `value` to `right`.
    * Supprimez tab4.
+
    La position de l’image est conservée dans le contenu en tant que propriété `imagePosition` du nœud représentant le paragraphe `textimage`. Après avoir suivi ces étapes, la boîte de dialogue du composant ressemble à ceci :
 
    ![chlimage_1-61](assets/chlimage_1-61a.png)
@@ -359,7 +368,7 @@ Le composant stocke son contenu dans un paragraphe sur la page Company.
 
 ### Désactivation de la fonctionnalité Téléchargement du composant image {#disable-upload-capability-of-the-image-component}
 
-Pour désactiver cette fonctionnalité, nous utilisons le composant d’image standard comme base et nous le modifions. Nous allons stocker le nouveau composant dans l’exemple d’application Geometrixx.
+Pour désactiver cette fonctionnalité, nous utilisons le composant d&#39;image standard comme base et nous le modifions. Nous allons stocker le nouveau composant dans l’exemple d’application Geometrixx.
 
 1. Copy the standard image component from `/libs/foundation/components/image` into the Geometrixx component folder, `/apps/geometrixx/components`, using image as the target node name.
 
@@ -372,9 +381,10 @@ Pour désactiver cette fonctionnalité, nous utilisons le composant d’image st
 1. Accéder à `/apps/geometrixx/components/image/dialog/items/image`.
 1. Ajouter une nouvelle propriété :
 
-   * **Nom**: `allowUpload`
-   * **Type**: `String`
+   * **Nom** : `allowUpload`
+   * **Type** : `String`
    * **Valeur**: `false`
+
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
 1. Cliquez sur **Enregistrer tout**. Le composant est prêt à être testé.
