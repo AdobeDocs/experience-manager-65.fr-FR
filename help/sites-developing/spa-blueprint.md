@@ -1,8 +1,8 @@
 ---
 title: Plan directeur d’applications sur une seule page (SPA)
 seo-title: Plan directeur d’applications sur une seule page (SPA)
-description: Ce document décrit le contrat général et indépendant du cadre que tout cadre d’application d’une seule page doit respecter pour mettre en oeuvre des composants modifiables d’une application d’une seule page dans AEM.
-seo-description: Ce document décrit le contrat général et indépendant du cadre que tout cadre d’application d’une seule page doit respecter pour mettre en oeuvre des composants modifiables d’une application d’une seule page dans AEM.
+description: Ce document décrit le contrat général et indépendant de la structure que tout cadre SPA devrait respecter pour mettre en oeuvre des composants SPA modifiables au sein de l'AEM.
+seo-description: Ce document décrit le contrat général et indépendant de la structure que tout cadre SPA devrait respecter pour mettre en oeuvre des composants SPA modifiables au sein de l'AEM.
 uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -20,15 +20,15 @@ ht-degree: 13%
 
 # Plan directeur d’applications sur une seule page (SPA){#spa-blueprint}
 
-Pour permettre à l’auteur d’utiliser l’éditeur d’applications monopages AEM pour modifier le contenu d’une application monopages, les exigences que l’application doit respecter sont décrites dans ce document.
+Pour permettre à l’auteur d’utiliser l’AEM SPA Editor pour modifier le contenu d’un SPA, le  doit respecter certaines exigences, qui sont décrites dans ce document.
 
 >[!NOTE]
 >
->L’éditeur d’applications monopages est la solution recommandée pour les projets qui nécessitent un rendu côté client basé sur la structure d’applications monopages (par exemple, Réagir ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent un rendu côté client SPA structure (par exemple, Réagir ou Angulaire).
 
 ## Présentation {#introduction}
 
-Ce document décrit le contrat général que tout cadre d&#39;application d&#39;une seule page doit respecter (c&#39;est-à-dire le type de couche de support AEM) pour mettre en oeuvre des composants d&#39;application d&#39;une seule page modifiables dans AEM.
+Ce document décrit le contrat général que tout cadre SPA doit respecter (c&#39;est-à-dire le type de couche de support AEM) pour mettre en oeuvre des composants de SPA modifiables dans l&#39;.
 
 >[!NOTE]
 >
@@ -38,15 +38,15 @@ Ce document décrit le contrat général que tout cadre d&#39;application d&#39;
 
 >[!CAUTION]
 >
->Bien que les capacités d&#39;application d&#39;une seule page soient indépendantes de la structure, seules les structures React et Angular sont actuellement prises en charge.
+>Bien que les capacités SPA de AEM soient indépendantes de la structure, seules les structures React et Angular sont actuellement prises en charge.
 
 Pour permettre à l’auteur d’utiliser l’Éditeur de page AEM pour modifier les données exposées par une structure d’application d’une seule page, un projet doit être en mesure d’interpréter la structure du modèle représentant la sémantique des données stockées pour une application dans le référentiel AEM. Pour atteindre cet objectif, deux bibliothèques indépendantes du cadre sont fournies : le `PageModelManager` et le `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
-La `PageModelManager` bibliothèque est fournie sous la forme d&#39;un package NPM à utiliser par un projet SPA. Il accompagne l’application sur une seule page et fait office de gestionnaire de modèles de données.
+La `PageModelManager` bibliothèque est fournie sous la forme d&#39;un module de gestion de réseau à utiliser par un projet SPA. Il accompagne l’application sur une seule page et fait office de gestionnaire de modèles de données.
 
-Au nom de l’application sur une seule page, il extrait la récupération et la gestion de la structure JSON qui représente la structure de contenu proprement dite. Il est également responsable de la synchronisation avec l’application d’une seule page pour lui indiquer quand elle doit effectuer un nouveau rendu de ses composants.
+Au nom de l’application sur une seule page, il extrait la récupération et la gestion de la structure JSON qui représente la structure de contenu proprement dite. Il est également responsable de la synchronisation avec le SPA pour lui indiquer quand il doit rendre à nouveau ses composants.
 
 Voir le package NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
@@ -56,13 +56,13 @@ Lors de l’initialisation de l’application `PageModelManager`, la bibliothèq
 
 ### ComponentMapping {#componentmapping}
 
-The `ComponentMapping` module is provided as an NPM package to the front-end project. Il stocke les composants frontaux et permet à l’application d’une seule page d’associer les composants frontaux aux types de ressources AEM. Ceci active une résolution dynamique des composants lors de l’analyse du modèle JSON de l’application.
+The `ComponentMapping` module is provided as an NPM package to the front-end project. Il stocke les composants frontaux et permet aux SPA de mapper les composants frontaux aux types de ressources AEM. Ceci active une résolution dynamique des composants lors de l’analyse du modèle JSON de l’application.
 
 Chaque élément présent dans le modèle contient un `:type` champ qui expose un type de ressource AEM. Une fois monté, le composant frontal peut être rendu à l’aide du fragment de modèle reçu des bibliothèques sous-jacentes.
 
 #### Mappage du modèle dynamique au composant {#dynamic-model-to-component-mapping}
 
-Pour plus d’informations sur la façon dont le mappage du modèle dynamique avec les composants se produit dans le SDK SPA Javascript pour AEM voir l’article Mappage du modèle [dynamique avec les composants pour les applications monopages](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Pour plus d’informations sur la façon dont le mappage du modèle dynamique au composant se produit dans le SDK SPA JavaScript pour AEM, reportez-vous à l’article Modèle [dynamique vers mappage de composants pour SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Couche spécifique au cadre {#framework-specific-layer}
 
@@ -76,7 +76,7 @@ Le reste de ce document décrit les exigences de cette couche spécifique de cad
 
 La structure de contenu de la page est stockée dans AEM. Le modèle de la page est utilisé pour mapper et instancier les composants de l’application d’une seule page (SPA). Les développeurs d’applications d’une seule page créent des composants SPA qu’ils mappent sur des composants AEM. Pour ce faire, ils utilisent le type de ressource (ou le chemin d&#39;accès au composant AEM) comme clé unique.
 
-Les composants de l’application d’une seule page doivent être synchronisés avec le modèle de page et être mis à jour en fonction des modifications apportées à son contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
+Les composants SPA doivent être synchronisés avec le modèle de page et être mis à jour en fonction des modifications apportées au contenu. Un modèle qui a recours à des composants dynamiques doit être utilisé pour instancier des composants à la volée, suivant la structure de modèle de page fournie.
 
 ### Champs Meta {#meta-fields}
 
@@ -281,9 +281,9 @@ La [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager
 
 Les deux entités se rapportent à la notion de routage, mais le ` [ModelRouter](/help/sites-developing/spa-routing.md)` seul responsable du ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` chargement avec un modèle de données structuré en synchronisation avec l&#39;état actuel de l&#39;application.
 
-Pour plus d’informations, consultez l’article Routage [de modèle](/help/sites-developing/spa-routing.md) d’application d’une seule page.
+Consultez l&#39;article [SPA Routage](/help/sites-developing/spa-routing.md) modèle pour plus d&#39;informations.
 
-## Application d’une seule page en action {#spa-in-action}
+## SPA en action {#spa-in-action}
 
 Découvrez le fonctionnement d’une application sur une seule page simple et exercez-vous avec une application de ce type en consultant le document [Prise en main des applications sur une seule page dans AEM](/help/sites-developing/spa-getting-started-react.md).
 
