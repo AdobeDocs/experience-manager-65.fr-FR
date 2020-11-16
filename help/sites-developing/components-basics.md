@@ -61,7 +61,7 @@ Pour cette raison, nous allons aborder les notions de base des deux interfaces
 
 >[!NOTE]
 >
->adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [Les outils](modernization-tools.md) de modernisation AEM peuvent faciliter la migration.
+>Adobe recommande de tirer parti de l’interface utilisateur tactile pour bénéficier des dernières technologies. [Les outils](modernization-tools.md) de modernisation AEM peuvent faciliter la migration.
 
 ### Logique de contenu et balisage de rendu  {#content-logic-and-rendering-markup}
 
@@ -626,27 +626,27 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr>
   <tr>
    <td>-</td>
-   <td>ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td>
+   <td>Ajoute un espaceur.<br /> Uniquement visible dans l’interface utilisateur classique. L’IU tactile n’affiche pas les actions dans un menu contextuel, donc ceci n’est pas applicable.</td>
   </tr>
   <tr>
    <td><code>edit</code></td>
-   <td>ajoute un bouton pour modifier le composant.</td>
+   <td>Ajoute un bouton pour modifier le composant.</td>
   </tr>
       <tr>
     <td><code>editannotate</code></td>
-    <td>ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
+    <td>Ajoute un bouton pour modifier le composant et autoriser les <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
    </tr>
   <tr>
    <td><code>delete</code></td>
-   <td>ajoute un bouton pour supprimer le composant</td>
+   <td>Ajoute un bouton pour supprimer le composant</td>
   </tr>
   <tr>
    <td><code>insert</code></td>
-   <td>ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td>
+   <td>Ajoute un bouton pour insérer un nouveau composant avant le composant actif.</td>
   </tr>
   <tr>
    <td><code>copymove</code></td>
-   <td>ajoute un bouton pour copier et couper le composant.</td>
+   <td>Ajoute un bouton pour copier et couper le composant.</td>
   </tr>
  </tbody>
 </table>
