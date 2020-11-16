@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 71%
 
 ---
 
@@ -39,7 +42,7 @@ HTML5 prend en charge toutes les combinaisons de touches et tous les mouvements 
 
 ## Problèmes connus {#known-issues}
 
-* **(Internet Explorer 9 uniquement)** Dans les formulaires HTML5, les pages sont chargées à la demande (dynamiquement). Le chargement des pages à la demande provoque des problèmes dans le fonctionnement des lecteurs d’écran. Lorsque le lecteur d’écran se concentre sur le dernier champ de la page et que l’utilisateur appuie sur la touche de tabulation, au lieu de se concentrer sur le premier champ de la page suivante, le lecteur d’écran revient au premier champ de la première page du formulaire.
+* **(Internet Explorer 9 uniquement)** Dans les formulaires HTML5, les pages sont chargées à la demande (dynamiquement). Le chargement des pages à la demande provoque des problèmes dans le fonctionnement des lecteurs d’écran. Lorsque le lecteur d’écran se concentre sur le dernier champ de la page et que l’utilisateur appuie sur la touche de tabulation, plutôt que de se concentrer sur le premier champ de la page suivante, le lecteur d’écran retourne au premier champ de la première page du formulaire.
 * **(Internet Explorer 9 uniquement)** La commande Sélecteur de date dans les formulaires HTML5 n’est pas totalement accessible avec le clavier. Dans le contrôle du Sélecteur de date, si vous appuyez sur les touches Haut/Bas plusieurs fois, le contrôle Sélecteur de date se ferme et le point de focalisation passe au prochain/dernier champ.
 
 * VoiceOver ne peut pas détecter les touches de flèches sur le widget de date sur Safari iPad.
