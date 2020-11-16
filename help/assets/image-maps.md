@@ -1,5 +1,5 @@
 ---
-title: ajouter des zones cliquables avec des hyperliens
+title: Ajouter des zones cliquables avec des hyperliens
 description: Découvrez comment ajouter une zone cliquable à l’aide d’hyperliens à une image.
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 13%
 ---
 
 
-# ajouter des zones cliquables {#adding-image-maps}
+# Ajouter des zones cliquables {#adding-image-maps}
 
 Les zones cliquables permettent d’ajouter des zones de lien hypertexte qui fonctionnent comme des liens hypertexte.
 
