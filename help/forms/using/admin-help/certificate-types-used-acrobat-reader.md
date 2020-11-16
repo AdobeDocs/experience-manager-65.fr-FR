@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 86%
 
 ---
 
@@ -32,15 +35,15 @@ ARE Code-barres 2D Complète Production V6.1 P8 0002054
 
 Cette chaîne contient les éléments suivants :
 
-**** Type de certificat : Décrit les modules AEM forms activés par le certificat, ainsi que le niveau d’activation, tel que ARE Code à barres 2D Complet. Pour la liste des types de certificat, reportez-vous à la colonne Type du tableau de la section Profils de certificat.
+**Type de certificat :** Décrit les modules de formulaires AEM activés par le certificat, ainsi que le niveau d’activation, tel que ARE Code à barres 2D Complet. Pour la liste des types de certificat, reportez-vous à la colonne Type du tableau de la section Profils de certificat.
 
-**** Type de déploiement : Indique l’utilisation prévue du certificat, telle que Production. Cette valeur peut être Evaluation ou Production. Pour la liste des types de déploiement associés à chaque type de certificat, reportez-vous à la colonne Type de déploiement du tableau de la section Profils de certificat.
+**Type de déploiement :** Indique l’utilisation prévue du certificat, telle que Production. Cette valeur peut être Evaluation ou Production. Pour la liste des types de déploiement associés à chaque type de certificat, reportez-vous à la colonne Type de déploiement du tableau de la section Profils de certificat.
 
-**** Version des droits d’utilisation : Décrit la version de l’algorithme des droits d’utilisation pour laquelle le certificat peut être utilisé, par exemple V6.1. Cette version ne signifie pas la version d’Acrobat ou des extensions d’Acrobat Reader DC.
+**Version des droits d’utilisation :** Décrit la version de l’algorithme des droits d’utilisation pour laquelle le certificat peut être utilisé, par exemple V6.1. Cette version ne signifie pas la version d’Acrobat ou des extensions Acrobat Reader DC.
 
-**** Code de profil : Le code de profil est une description abrégée des propriétés complètes du certificat, par exemple, P8. Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
+**Code de profil :** Le code de profil est une description abrégée des propriétés complètes du certificat, par exemple, P8. Pour la liste des codes de profil associés à chaque type de fichier, reportez-vous à la colonne Profil du tableau de la section Profils de certificat.
 
-**** Numéro de série : Un numéro de série est attribué à chaque certificat émis par Adobe, par exemple 0002054. Le Support aux entreprises Adobe ou un représentant de compte Adobe Enterprise peut utiliser ce numéro de série pour tracer le certificat vers une commande de produit spécifique ou vers une relation OEM.
+**Numéro de série :** Un numéro de série est attribué à chaque certificat émis par Adobe, par exemple 0002054. Adobe Enterprise Support ou un représentant du compte Enterprise Adobe peut utiliser ce numéro de série pour tracer le certificat à une commande de produit spécifique ou à une relation OEM.
 
 ## Profils du certificat {#certificate-profiles}
 
