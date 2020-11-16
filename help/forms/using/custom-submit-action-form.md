@@ -86,7 +86,7 @@ Si l’action ne fournit pas de chemin de transfert, la servlet Submit redirige 
 >
 >Un auteur fournit l’URL de redirection (à l’aide de la configuration de la page Merci). [Les actions](../../forms/using/configuring-submit-actions.md) Envoyer prêtes à l&#39;emploi utilisent l&#39;URL de redirection pour rediriger le navigateur à partir de la ressource référencée par le chemin de transfert.
 >
->Vous pouvez écrire une action Envoyer personnalisée qui transfère une requête vers une ressource ou une servlet. Adobe recommande que le script qui effectue la gestion des ressources pour le chemin de transfert redirige la requête vers l’URL de redirection une fois le traitement terminé.
+>Vous pouvez écrire une action Envoyer personnalisée qui transfère une requête vers une ressource ou une servlet. L’Adobe recommande que le script qui effectue la gestion des ressources pour le chemin de transfert redirige la requête vers l’URL de redirection une fois le traitement terminé.
 
 ## Action Envoyer {#submit-action}
 
@@ -105,7 +105,7 @@ Une action Envoyer est un sling:Folder qui comprend les éléments suivants :
 
 Pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et envoie ensuite un courrier électronique, suivez la procédure ci-après. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) qui enregistre les données dans le référentiel CRX. In addition, CQ provides a [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring the Mail Service) the Day CQ Mail service through the system console. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
 
-1. Connectez-vous à CRXDE Lite à l’adresse https://&lt;serveur>:&lt;port>/crx/de/index.jsp. Créez un nœud avec la propriété sling:Folder et le nom store_and_mail dans le dossier /apps/custom_submit_action. Créez le dossier custom_submit_action, le cas échéant.
+1. Connectez-vous au CRXDE Lite à l’adresse https://&lt;serveur>:&lt;port>/crx/de/index.jsp. Créez un nœud avec la propriété sling:Folder et le nom store_and_mail dans le dossier /apps/custom_submit_action. Créez le dossier custom_submit_action, le cas échéant.
 
    ![Capture d’écran décrivant la création d’un nœud avec le Sling de propriété:Dossier](assets/step1.png)
 
