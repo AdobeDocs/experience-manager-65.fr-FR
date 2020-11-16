@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 65%
 
 ---
 
@@ -43,7 +46,7 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
    <td> </td>
   </tr>
   <tr>
-   <td><p> Paramètre</p> <p>(nom long / nom court)<br /> </p> </td>
+   <td><p> Paramètre</p> <p>(nom long/nom court)<br /> </p> </td>
    <td> Type <br /> </td>
    <td> Description <br /> </td>
   </tr>
@@ -59,13 +62,13 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
   </tr>
   <tr>
    <td> contentMode / cm<br /> </td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, le mode de contenu est activé<br /> </td>
   </tr>
   <tr>
    <td> colsValue / cv<br /> </td>
    <td> Chaîne[]</td>
-   <td> propriétés recherchées (valeurs cochées dans colsSélection affichées sous forme de cases à cocher)</td>
+   <td> propriétés recherchées (valeurs cochées dans colsSélection affichées sous forme de cases)</td>
   </tr>
   <tr>
    <td> extraCols / ec<br /> </td>
@@ -74,8 +77,8 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
   </tr>
   <tr>
    <td> initialSearch / is<br /> </td>
-   <td> Booléen  </td>
-   <td> lorsque true, la requête est exécutée au chargement de la page<br /> </td>
+   <td> Booléen</td>
+   <td> lorsque la valeur est true, la requête est exécutée au chargement de la page.<br /> </td>
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
@@ -84,77 +87,77 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
   </tr>
   <tr>
    <td> showGridOnly / sgo<br /> </td>
-   <td> Booléen  </td>
-   <td> lorsque la valeur est true, affiche uniquement la grille et non le panneau de recherche <br /> </td>
+   <td> Booléen</td>
+   <td> lorsque la valeur est true, affiche uniquement la grille et non le panneau de recherche. <br /> </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed / spc</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, le panneau de recherche est réduit au chargement</td>
   </tr>
   <tr>
    <td> hideRootPath/hrp</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque le champ de chemin racine</td>
   </tr>
   <tr>
    <td> hideQueryParams / hqp</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque le champ de requête</td>
   </tr>
   <tr>
    <td> hideContentMode / hcm</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque le champ du mode de contenu</td>
   </tr>
   <tr>
    <td> hideColsSelection / hcs</td>
-   <td> Booléen  </td>
-   <td> lorsque true, masque le champ de sélection des colonnes</td>
+   <td> Booléen</td>
+   <td> lorsque la valeur est true, masque le champ de sélection des colonnes.</td>
   </tr>
   <tr>
    <td> hideExtraCols / hec</td>
-   <td> Booléen  </td>
-   <td> lorsque true, masque le champ des colonnes supplémentaires</td>
+   <td> Booléen</td>
+   <td> lorsque true, masque le champ des colonnes supplémentaires.</td>
   </tr>
   <tr>
    <td> hideSearchButton</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque le bouton de recherche</td>
   </tr>
   <tr>
    <td> hideSaveButton / hsavep</td>
-   <td> Booléen  </td>
-   <td> lorsque true, masque le bouton Enregistrer</td>
+   <td> Booléen</td>
+   <td> lorsque true, masque le bouton d’enregistrement</td>
   </tr>
   <tr>
    <td> hideExportButton / hexpb</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque le bouton d’exportation</td>
   </tr>
   <tr>
    <td> hideImportButton / hib</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque le bouton d’importation</td>
   </tr>
   <tr>
    <td> hideResultNumber / hrn</td>
-   <td> Booléen  </td>
-   <td> lorsque la valeur est true, masque le texte du numéro de résultat de la recherche de grille</td>
+   <td> Booléen</td>
+   <td> lorsque la valeur est true, masque le texte du numéro de résultat de la recherche de grille.</td>
   </tr>
   <tr>
    <td> hideInsertButton / hinsertb</td>
-   <td> Booléen  </td>
-   <td> lorsque true, masque le bouton d’insertion de la grille</td>
+   <td> Booléen</td>
+   <td> lorsque true, masque le bouton d’insertion de grille</td>
   </tr>
   <tr>
    <td> hideDeleteButton / hdelb</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque le bouton de suppression de la grille</td>
   </tr>
   <tr>
    <td> hidePathCol / hpc</td>
-   <td> Booléen  </td>
+   <td> Booléen</td>
    <td> lorsque true, masque la colonne "chemin" de la grille</td>
   </tr>
  </tbody>
@@ -168,7 +171,7 @@ Le composant Liste de produits permet aux utilisateurs d’afficher et de modifi
 
 Avec l’éditeur en masse, vous pouvez ajouter, modifier, supprimer, filtrer et exporter les lignes, enregistrer les modifications et importer un ensemble de lignes. Chaque ligne est stockée en tant que nœud sous l’instance du composant Liste de produits elle-même. Chaque cellule est une propriété de chaque nœud. C’est un choix de conception qui peut être facilement modifié. Par exemple, vous pouvez stocker des nœuds ailleurs dans le référentiel. Le rôle du servlet de requête est de renvoyer la liste des nœuds à afficher. Le chemin de recherche est défini comme une instance Liste de produits.
 
-Le code source du composant Liste des produits est disponible dans le référentiel à l’adresse /apps/geometrixx/components/productlist et se compose de plusieurs parties, telles que tous les composants AEM :
+Le code source du composant Liste de produits est disponible dans le référentiel à l’adresse /apps/geometrixx/components/productlist et se compose de plusieurs parties, comme tous les composants AEM :
 
 * Rendu HTML : le rendu est effectué dans un fichier JSP (/apps/geometrixx/components/productlist/productlist.jsp). Le JSP lit les sous-nœuds du composant Liste de produits en cours et affiche chacun d’entre eux sous la forme d’une ligne d’une table HTML.
 * Boîte de dialogue Modifier dans laquelle vous définissez la configuration de l’éditeur en masse. Configurez la boîte de dialogue de sorte à répondre aux besoins du composant : colonnes disponibles et actions possibles effectuées sur la grille ou sur la recherche. Voir [propriétés de configuration de l’éditeur en masse ](#bulk-editor-configuration-properties)pour plus d’informations sur toutes les propriétés de configuration.
@@ -284,7 +287,7 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
   </tr>
   <tr>
    <td>contentMode</td>
-   <td>True pour activer le mode de contenu : les propriétés sont lues sur le noeud jcr:content et non sur le noeud des résultats de recherche</td>
+   <td>True pour activer le mode Contenu : les propriétés sont lues sur le noeud jcr:content et non sur le noeud de résultats de recherche</td>
   </tr>
   <tr>
    <td>colsValue</td>
@@ -296,11 +299,11 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
   </tr>
   <tr>
    <td>initialSearch</td>
-   <td>True pour effectuer une requête au chargement de la page</td>
+   <td>True pour effectuer la requête au chargement de la page</td>
   </tr>
   <tr>
    <td>colsSelection</td>
-   <td>Sélection des propriétés recherchées (affichées sous forme de cases à cocher)</td>
+   <td>Sélection des propriétés recherchées (affichée sous forme de cases à cocher)</td>
   </tr>
   <tr>
    <td>showGridOnly</td>
@@ -328,7 +331,7 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
   </tr>
   <tr>
    <td>hideExtraCols</td>
-   <td>Masquer le champ Colonnes supplémentaires</td>
+   <td>Masquer le champ des protocoles supplémentaires</td>
   </tr>
   <tr>
    <td>hideSearchButton</td>
@@ -364,7 +367,7 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
   </tr>
   <tr>
    <td>queryURL</td>
-   <td>Chemin d’accès à la servlet de requête</td>
+   <td>Chemin d’accès à la servlet requête</td>
   </tr>
   <tr>
    <td>exportURL</td>
@@ -392,7 +395,7 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
   </tr>
   <tr>
    <td>importButton</td>
-   <td>Importer la configuration du widget du bouton</td>
+   <td>Importer la configuration du widget de bouton</td>
   </tr>
   <tr>
    <td>searchPanel</td>
@@ -420,11 +423,11 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
   </tr>
   <tr>
    <td>contentModeInput</td>
-   <td>configuration du widget contentMode</td>
+   <td>config du widget contentMode</td>
   </tr>
   <tr>
    <td>colsSelectionInput</td>
-   <td>colsSélection, configuration du widget</td>
+   <td>colsSélection, widget configuration</td>
   </tr>
   <tr>
    <td>extraColsInput</td>
@@ -570,6 +573,6 @@ Chaque propriété mise à jour est envoyée au servlet au format suivant :
 
 Le servlet doit connaître l’emplacement de stockage de la propriété catalogCode.
 
-Une mise en oeuvre de servlet Save par défaut est disponible à l’adresse /libs/wcm/bulkeditor/save/POST.jsp et est utilisée dans le composant Liste des produits. Il prend tous les paramètres de la requête (avec un format &lt;chemin d’accès au fichier jcr>/&lt;nom de propriété>) et écrit les propriétés sur les noeuds à l’aide de l’API JCR. Il crée également un nœud s’il n’existe pas (lignes insérées dans la grille).
+Une mise en oeuvre de servlet Save par défaut est disponible à l’adresse /libs/wcm/bulkeditor/save/POST.jsp et est utilisée dans le composant Liste de produits. Elle prend tous les paramètres de la requête (avec un format &lt;chemin d’accès jcr>/&lt;nom de propriété>) et écrit les propriétés sur les noeuds à l’aide de l’API JCR. Il crée également un nœud s’il n’existe pas (lignes insérées dans la grille).
 
-Le code par défaut ne doit pas être utilisé tel quel, car il réimplémente ce que le serveur fait en mode natif (un POST sur &lt;chemin d’accès jcr>/&lt;nom de propriété>) et n’est donc qu’un bon point de départ pour la création d’une servlet Save qui gérera un modèle d’héritage de propriétés.
+Le code par défaut ne doit pas être utilisé tel quel car il réimplémente ce que le serveur fait en mode natif (un POST sur &lt;jcr path>/&lt;property name>) et n’est donc qu’un bon point de départ pour créer une servlet Save qui gérera un modèle d’héritage de propriété.
