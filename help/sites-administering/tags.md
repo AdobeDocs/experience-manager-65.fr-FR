@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '1769'
+ht-degree: 61%
 
 ---
 
@@ -72,7 +75,7 @@ Pour accéder à la console Balisage, procédez comme suit :
    * select **`General`**
    * select **`Tagging`**
 
-![managing_tags_usingthetagasationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
+![managing_tags_using_thetagasAdministration Console](assets/managing_tags_usingthetagasministrationconsolea.png)
 
 ### Création d’un espace de noms {#creating-a-namespace}
 
@@ -83,13 +86,15 @@ L’espace de noms est lui-même une balise et ne comporte pas forcément de bal
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
 * **Titre**
-   *(obligatoire)* Titre d’affichage de l’espace de noms.
+
+   *(obligatoire)* Titre d’affichage de l’espace de nommage.
 
 * **Nom**
-   *(facultatif)* Nom de l’espace de noms. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. See [TagID](/help/sites-developing/framework.md#tagid).
+   *(facultatif)* Nom de l’espace de nommage. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. See [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Description**
-   *(facultatif)* Description de l’espace de noms.
+
+   *(facultatif)* Description de l’espace de nommage.
 
 Une fois que les informations nécessaires ont été saisies :
 
@@ -105,7 +110,7 @@ La sélection d’un espace de noms ou d’une autre balise rend les opérations
 * [Modifier](#editing-tags)
 * [Déplacer](#moving-tags)
 * [Fusionner](#merging-tags)
-* [Publier](#publishing-tags)
+* [Publication](#publishing-tags)
 * [Annuler la publication](#unpublishing-tags)
 * [Supprimer](#deleting-tags)
 
@@ -155,11 +160,11 @@ When a namespace or other tag is selected (by selecting the icon next to the tit
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-* **Titre***(obligatoire) *Titre d’affichage de la balise.
+* **Titre*** (obligatoire) *Titre d’affichage de la balise.
 
-* **Nom***(facultatif) *Nom de la balise . Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. See [TagID](/help/sites-developing/framework.md#tagid).
+* **Nom***(facultatif) *Nom de la balise. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. See [TagID](/help/sites-developing/framework.md#tagid).
 
-* **Description***(facultatif) *Description de la balise .
+* **Description***(facultatif) *Description de la balise.
 
 Une fois que les informations nécessaires ont été saisies :
 
@@ -190,11 +195,13 @@ When a namespace or other tag is selected, selecting the **`Move`** icon will al
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Chemin**
+
    *(lecture seule)* Chemin d’accès actuel à la balise sélectionnée.
 
 * **Déplacer vers** Accédez au nouveau chemin d’accès où déplacer la balise.
 
-* **Renommer par** Initialement affiche la valeur actuelle `name`de la balise. A new `name`may be entered.
+* **Renommer sur** Initialement affiche le 
+`name`de la balise . A new `name`may be entered.
 
 * Sélectionnez **Enregistrer**.
 
@@ -209,7 +216,8 @@ When a namespace or other tag is selected, selecting the **Merge** icon will ope
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Chemin**
-   *(lecture seule)* Chemin de la balise sélectionnée pour être fusionnée dans une autre balise.
+
+   *(lecture seule)* Chemin d’accès de la balise sélectionnée pour être fusionnée dans une autre balise.
 
 * **Fusionner dans** Accédez au chemin d’accès de la balise où effectuer la fusion.
 
@@ -250,7 +258,7 @@ Tag permissions are [&#39;secure (by default)&#39;](/help/sites-administering/pr
 
       * Par exemple, http://localhost:4502/useradmin.
    * Dans le volet de gauche, sélectionnez le groupe (ou l’utilisateur) auquel accorder une [autorisation de lecture](/help/sites-administering/security.md#permissions).
-   * dans le volet de droite, recherchez **Path **to the Tag Namespace.
+   * dans le volet de droite, recherchez le **Path **to the Tag Espace de nommage.
 
       * par exemple, `/content/cq:tags/mycommunity`
    * select the `checkbox`in the **Read** column
@@ -264,7 +272,7 @@ Tag permissions are [&#39;secure (by default)&#39;](/help/sites-administering/pr
 
    * Une méthode consiste à [créer un module](/help/sites-administering/package-manager.md#package-manager) de l’espace de noms sur l’instance de création.
 
-      * sur `Advanced` l’onglet, `AC Handling` sélectionnez `Overwrite`
+      * sur `Advanced` l’onglet, pour `AC Handling` sélectionner `Overwrite`
    * Répliquez le module.
 
       * choose `Replicate` from package manager
