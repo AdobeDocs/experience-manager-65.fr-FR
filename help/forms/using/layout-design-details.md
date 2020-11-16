@@ -56,7 +56,7 @@ Une fois que vous avez analysé la disposition requise pour créer votre communi
 
 >[!NOTE]
 >
->ajoutez le contenu au canal d’impression de la communication interactive au lieu d’ajouter le contenu au composant de sous-formulaire du modèle XDP. ajoutez le contenu dans les zones de cible du canal d’impression à l’aide de fragments de [document, de graphiques, d’images](create-interactive-communication.md#step2)et de fragments de mise en page.
+>Ajoutez le contenu au canal d’impression de la communication interactive au lieu d’ajouter le contenu au composant de sous-formulaire du modèle XDP. Ajoutez le contenu dans les zones de cible du canal d’impression à l’aide de fragments de [document, de graphiques, d’images](create-interactive-communication.md#step2)et de fragments de mise en page.
 
 Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
 
@@ -87,7 +87,7 @@ Pour utiliser un sous-formulaire dans un modèle XDP, procédez comme suit :
    1. Indiquez le nom du sous-formulaire dans le champ **Nom** .
    1. Sélectionnez **Aucune liaison de données** dans la liste déroulante **Liaison de données**.
 
-   Répétez les étapes 2 à 5 pour ajouter d’autres sous-formulaires au modèle XDP. ajoutez [du texte, des fragments de document, des images et des graphiques](create-interactive-communication.md#step2) dans les zones de cible uniquement lors de la création de la communication interactive.
+   Répétez les étapes 2 à 5 pour ajouter d’autres sous-formulaires au modèle XDP. Ajoutez [du texte, des fragments de document, des images et des graphiques](create-interactive-communication.md#step2) dans les zones de cible uniquement lors de la création de la communication interactive.
 
 1. Sélectionnez **Fichier** > **Enregistrer sous** pour enregistrer le fichier sur le système de fichiers local :
 
@@ -102,7 +102,7 @@ Utilisez le composant Champ d’image ou Sous-formulaire du modèle XDP et ajout
 
 >[!NOTE]
 >
->ajoutez l’image sur le canal d’impression de la communication interactive au lieu d’ajouter l’image au composant Champ d’image ou Sous-formulaire du modèle XDP. Pour plus d’informations, voir [Ajouter du contenu à la communication](../../forms/using/create-interactive-communication.md#step2)interactive.
+>Ajoutez l’image sur le canal d’impression de la communication interactive au lieu d’ajouter l’image au composant Champ d’image ou Sous-formulaire du modèle XDP. Pour plus d’informations, voir [Ajouter du contenu à la communication](../../forms/using/create-interactive-communication.md#step2)interactive.
 
 Pour utiliser le composant Champ d’image dans un modèle XDP, procédez comme suit :
 
