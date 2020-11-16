@@ -33,9 +33,9 @@ L’espace de travail AEM Forms vous permet d’afficher une page Web de votre c
 1. Configurez le champ URL du résumé de la tâche. Vous pouvez spécifier une valeur littérale, un contrôleur, une variable ou une expression XPath.
 1. Vous trouverez un exemple d’affichage des informations sur la page du résumé de la tâche ci-dessous.
 
-   * Connectez-vous à CRXDE Lite environnement à `https://'[server]:[port]'/lc/crx/de`.
-   * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
-   * `Create a folder`**SampleSummary **sous`/apps`. In the Access Control List of`/apps/SampleSummary`, add an entry for`PERM_WORKSPACE_USER`allowing`jcr:readprivileges`.
+   * Connectez-vous à l&#39;environnement CRXDE Lite à `https://'[server]:[port]'/lc/crx/de`.
+   * `Create a node`**SampleSummary** ` under `/` with type `content:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
+   * `Create a folder`**SampleSummary** sous `/apps`. In the Access Control List of `/apps/SampleSummary`, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
 
    ```html
