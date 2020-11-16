@@ -1,8 +1,8 @@
 ---
 title: Architecture de contenu
 seo-title: Architecture de contenu
-description: Conseils pour l’architecture de votre contenu (conseils - tout est du contenu)
-seo-description: Conseils pour l’architecture de votre contenu dans Adobe Experience Manager (AEM). (indice - tout est contenu)
+description: Conseils pour l’architecture de votre contenu (conseil - tout est du contenu)
+seo-description: Conseils pour l’architecture de votre contenu en Adobe Experience Manager (AEM). (conseil - tout est contenu)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 83%
 
 ---
 
@@ -49,7 +52,7 @@ Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastruc
 
 ### Respectez les conventions d’affectation de noms dans le JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Le respect des conventions d’affectation de noms ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Les conventions suivantes sont utilisées par Adobe dans le développement d’AEM :
+Le respect des conventions d’affectation de noms ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Les conventions ci-après sont utilisées par l&#39;Adobe pour développer l&#39;AEM :
 
 * Noms des nœuds
 
