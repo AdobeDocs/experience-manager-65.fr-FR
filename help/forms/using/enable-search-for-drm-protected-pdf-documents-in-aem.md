@@ -63,6 +63,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
    * **Nom du service** : ajoutez RightsManagementService à la liste des services spécifiés.
    * **Nom d’utilisateur :** indiquez le nom d’utilisateur du compte AEM Forms on JEE à utiliser pour lancer des appels à partir du serveur AEM. Le compte spécifié doit disposer des autorisations pour démarrer Document services sur le serveur AEM Forms on JEE.
    * **Mot de passe** : indiquez le mot de passe du compte AEM Forms on JEE mentionné dans le champ Nom d’utilisateur.
+
    Cliquez sur **Enregistrer**. AEM est activé pour effectuer une recherche de documents PDF protégés par la sécurité documentaire.
 
 #### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
@@ -78,6 +79,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
    * **Mot de passe du KeyStore** : indiquez le mot de passe du fichier de stockage des clés.
    * **Mot de passe TrustStore** : indiquez le mot de passe du fichier de magasin approuvé.
    * **Nom du service** : ajoutez RightsManagementService à la liste des services spécifiés.
+
    Cliquez sur **Enregistrer**. AEM est activé pour effectuer une recherche de documents PDF protégés par la sécurité documentaire.
 
 ### Indexer un document PDF protégé par un exemple de stratégie {#index-a-sample-policy-protected-pdf-document}
