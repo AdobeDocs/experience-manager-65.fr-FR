@@ -165,7 +165,7 @@ Configurez WebLogic pour qu’il utilise les fichiers de stockage des clés d’
 
 ## Configuration de WebLogic pour l’utilisation de SSL {#configure-weblogic-to-use-ssl}
 
-1. Start the WebLogic Server administration console by typing `https://`*[host name ]*`:7001/console`in the URL line of a web browser.
+1. Start the WebLogic Server administration console by typing `https://`*[host name ]*`:7001/console` in the URL line of a web browser.
 1. Under Environment, in Domain Configurations, select **Servers > &#39;server&#39; > Configuration > General**.
 1. Sous General, dans Configuration, assurez-vous que les options **Listen Port Enabled** et **SSL Listen Port Enabled** sont sélectionnées. Si elles ne sont pas activées, effectuez les opérations suivantes :
 
@@ -174,7 +174,7 @@ Configurez WebLogic pour qu’il utilise les fichiers de stockage des clés d’
 
 1. Si le serveur est un serveur géré, indiquez un numéro de port non utilisé dans les champs Listen Port et SSL Listen Port (par exemple, 8001 et 8002). Sur un serveur autonome, le port SSL par défaut est 7002.
 1. Cliquez sur **Release Configuration**.
-1. Under Environment, in Domain Configurations, click **Servers >[*Managed Server*]> Configuration > General**.
+1. Under Environment, in Domain Configurations, click **Servers > [*Managed Server*] > Configuration > General**.
 1. Sous General, dans Configuration, sélectionnez **Keystores**.
 1. Sous Change Center, cliquez sur **Lock &amp; Edit** pour modifier les sélections et leurs valeurs.
 1. Cliquez sur **Change** pour afficher la liste des fichiers de stockage des clés sous forme de liste déroulante et sélectionnez **Custom Identity And Custom Trust**.
