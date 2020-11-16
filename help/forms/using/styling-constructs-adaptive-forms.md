@@ -10,6 +10,9 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+workflow-type: tm+mt
+source-wordcount: '2322'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +25,7 @@ Connaissances en matière de CSS et structure LESS.
 
 ## Eléments personnalisables {#what-can-be-customized}
 
-Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez utiliser ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez exploiter ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
 
 ## Personnalisation des styles dans les formulaires adaptatifs {#customizing-styles-in-adaptive-forms}
 
@@ -37,7 +40,7 @@ Vous pouvez personnaliser les styles des formulaires adaptatifs des manières su
 
 Vous pouvez modifier le thème d’un formulaire adaptatif pour vous assurer que son aspect est cohérent avec les pages Web sur lesquelles le formulaire adaptatif est incorporé.
 
-Les modifications de l’aspect général du formulaire adaptatif via les propriétés CSS font généralement partie des modifications du thème. Les modifications majeures apportées au lo &quot;ok and sense of the adaptive form, telles que les modifications de la disposition et du positionnement des composants, ne sont pas considérées comme des modifications de thème.
+Les modifications de l’aspect général du formulaire adaptatif via les propriétés CSS font généralement partie des modifications du thème. Les modifications majeures apportées au &quot;ok and entiment&quot; du formulaire adaptatif, telles que les modifications de la disposition et du placement des composants, ne sont pas considérées comme des modifications de thème.
 
 Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème d’une page Web :
 
@@ -53,7 +56,7 @@ Actuellement, les variables LESS sont définies uniquement pour ces propriétés
 
 ## Modification du style de composant {#changing-component-style}
 
-Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour ce faire, créez ou mettez à jour vos fichiers .css personnalisés afin d’inclure les éléments de style répertoriés dans cet article.
+Vous pouvez modifier l’apparence, la disposition, le positionnement et la visibilité des éléments. Pour obtenir cette tâche, créez ou mettez à jour vos fichiers .css personnalisés afin d’inclure les éléments de style répertoriés dans cet article.
 
 Pour appliquer un style à un formulaire adaptatif, ouvrez le formulaire adaptatif pour l’édition, ouvrez les propriétés du conteneur de formulaires adaptatifs et spécifiez le chemin du fichier CSS personnalisé dans l’onglet de base. Mises en forme par défaut du formulaire adaptatif remplacé par les mises en forme répertoriées dans le fichier .css personnalisé.
 
@@ -283,7 +286,7 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
 
 ### Restrictions de la définition de style de widget {#limitations-in-widget-styling}
 
-La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être assouplie si l’aspect d’un champ change radicalement, car il se trouve dans l’un des états décrits précédemment.
+La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être assouplie si l’apparence d’un champ change radicalement car elle se trouve dans l’un des états décrits précédemment.
 
 ## Description d’aide {#help-description}
 
@@ -1073,7 +1076,7 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
 
 ## Variable spécifique au thème {#theme-specific-variable}
 
-The **Simple enrollment** theme at /etc/clientlibs/fd/af/guidetheme/simpleEnrollment and the category `guide.theme.simpleEnrollment` also introduce a few variables. Si vous souhaitez créer un thème qui améliore l’inscription simple, vous pouvez utiliser les &quot;variables supplémentaires&quot; suivantes :
+The **Simple enrollment** theme at /etc/clientlibs/fd/af/guidetheme/simpleEnrollment and the category `guide.theme.simpleEnrollment` also introduce a few variables. Si vous souhaitez créer un thème qui améliore l&#39;inscription simple, vous pouvez utiliser les &quot;variables supplémentaires&quot; suivantes :
 
 <table>
  <tbody>
