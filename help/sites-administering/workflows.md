@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 90%
 
 ---
 
 
 # Administration des workflows{#administering-workflows}
 
-Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM). Les workflows :
+Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM). Workflows :
 
 * série d’étapes exécutées dans un ordre donné.
 
@@ -39,6 +42,7 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 >* Applying and participating in workflows: [Working with Workflows](/help/sites-authoring/workflows.md).
 >* Création de modèles de workflows et extension de la fonctionnalité de workflow : [Développement et extension des workflows](/help/sites-developing/workflows.md).
 >* Amélioration des performances des workflows qui utilisent des ressources de serveur significatives : [Traitement de workflows simultanés](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+
 >
 
 
@@ -104,6 +108,6 @@ Les workflows peuvent présenter l’un des statuts suivants :
 En fonction du statut actuel, vous pouvez effectuer des actions sur les instances de workflows en cours d’exécution lorsque vous devez intervenir dans la progression normale d’une instance de workflow :
 
 * **Suspendre** : arrête provisoirement l’exécution du workflow. Cette suspension est utile dans les cas exceptionnels où vous ne souhaitez pas que le workflow se poursuive (par exemple, pour des raisons de maintenance). Suspendre un workflow redéfinit son statut sur SUSPENDU.
-* **Reprendre**: Redémarre un flux de travaux suspendu au même point d’exécution qu’il a été suspendu, en utilisant la même configuration.
+* **Reprendre**: Redémarre un flux de travaux suspendu au même point d’exécution où il a été suspendu, en utilisant la même configuration.
 * **Arrêter**: Met fin à l’exécution du flux de travail et définit l’état sur **ABORTED**. Une instance de workflow abandonnée ne peut pas être redémarrée.
 
