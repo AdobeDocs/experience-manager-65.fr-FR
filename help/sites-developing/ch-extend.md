@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 translation-type: tm+mt
 source-git-commit: ed34f2200f4ff4f407f7b92165685af390f5f7e3
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 75%
 
 ---
 
@@ -64,7 +67,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-Dans la plupart des cas, un seul candidat est nécessaire et la priorité peut être définie `0`, mais si vous êtes intéressé, vous pouvez en savoir plus sur les inscriptions [plus avancées,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) ce qui permet de choisir l’une des quelques implémentations de magasin en fonction de la condition JavaScript (`applies`) et de la priorité du candidat.
+Dans la plupart des cas, un seul candidat est nécessaire et la priorité peut être définie sur `0`, mais si vous êtes intéressé, vous pouvez en apprendre davantage sur les inscriptions [plus avancées,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) ce qui permet à l&#39;une des quelques implémentations de magasins d&#39;être choisie en fonction de la condition javascript (`applies`) et de la priorité candidate.
 
 ## Création de types de modules d’interface utilisateur ContextHub {#creating-contexthub-ui-module-types}
 
