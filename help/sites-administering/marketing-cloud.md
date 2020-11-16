@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
 source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 86%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
 
 [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html) inclut des produits puissants d’analyse web et d’optimisation des sites web qui proposent des données et des statistiques exploitables en temps réel pour mener à bien vos initiatives en ligne. Il constitue une plateforme ouverte et intégrée pour l’optimisation des entreprises en ligne. Le cloud comprend des applications intégrées pour collecter et donner libre cours à la puissance des données client en vue d’optimiser les efforts d’acquisition, de conversion et de rétention des clients, ainsi que la création et la diffusion du contenu.
 
-Avec Adobe Experience Manager (AEM), vous pouvez vous intégrer facilement aux produits suivants d’Adobe Marketing Cloud :
+Avec Adobe Experience Manager (AEM), vous pouvez intégrer aisément les produits Adobe Marketing Cloud suivants :
 
 * Adobe Analytics fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies en ligne et des initiatives marketing.
 * Adobe Target donne aux marketeurs la possibilité d’adapter continuellement leur contenu en ligne à leurs clients de manière à accroître le taux de conversion.
@@ -32,7 +35,7 @@ In addition, you can [integrate AEM with Creative Cloud](/help/assets/aem-cc-fol
 
 ## Intégration à Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) est la solution de pointe du marché qui fournit aux spécialistes du marketing numérique un emplacement unique pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
+[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) est la solution de pointe qui fournit aux spécialistes du marketing numérique un emplacement unique pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Il fournit aux marketeurs des données d’analyse web en temps réel et exploitables au sujet des stratégies numériques et des initiatives marketing. Avec Adobe Analytics, les marketeurs peuvent rapidement identifier les chemins d’accès les plus rentables sur un site web, segmenter le trafic afin de repérer les visiteurs web ayant le plus de valeur, déterminer où se rendent les visiteurs quand ils quittent leur site et identifier les mesures clés de réussite pour les campagnes de marketing en ligne. Adobe Analytics fait partie de la suite d’applications d’optimisation des activités en ligne Adobe Marketing Cloud.
 
 Vous pouvez utiliser Adobe Analytics pour analyser les données de vos sites.
 
@@ -51,7 +54,7 @@ Vous pouvez également utiliser l’[assistant de souscription](/help/sites-admi
 
 ## Intégration à Adobe Target {#integrating-with-adobe-target}
 
-[Adobe Target](https://www.omniture.com/en/products/conversion/test-and-target) est utilisé par les marketeurs pour concevoir et exécuter des tests en ligne, créer des segments de public à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne.
+[Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne.](https://www.omniture.com/en/products/conversion/test-and-target)
 
 Les besoins des cyberconsommateurs sont aujourd’hui en constante évolution et ils attendent des très nombreux sites et sources de contenus qu’ils leur offrent des contenus pertinents, voire personnalisés. Pour séduire ce public, il est essentiel que les marketeurs identifient rapidement les offres et les contenus pertinents et attrayants pour leurs publics. Forts de ce savoir, les marketeurs ont besoin de pouvoir faire évoluer en permanence leurs sites et de cibler le contenu adapté aux différents publics.
 
@@ -81,7 +84,7 @@ En outre, vous pouvez consulter les ressources AEM publiées dans Scene7 dans di
 * Zoom sur la fenêtre déroulante DHTML
 * Zoom sur la fenêtre déroulante Flash
 * Vidéo
-* Modèle  Flash
+* Modèle  Template (Modèle)
 * Modèle d’image
 
 For more information on how AEM integrates with Scene7, see the [Integrating with Scene7 documentation](/help/sites-administering/scene7.md).
