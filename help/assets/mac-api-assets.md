@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Assets] API HTTP.'
+title: API HTTP [!DNL Assets].
 description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 79%
 ---
 
 
-# [!DNL Assets] API HTTP {#assets-http-api}
+# API HTTP [!DNL Assets] {#assets-http-api}
 
 ## Présentation {#overview}
 
