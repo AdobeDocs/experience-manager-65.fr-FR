@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
 source-git-commit: a26bc4e4ea10370dd2fc3403500004b9e378c418
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 95%
 
 ---
 
@@ -105,7 +108,7 @@ Lorsque le contenu du document est en ligne d’entrée (c’est-à-dire qu’il
 
    >[!NOTE]
    >
-   >La valeur de la propriété Taille maximale de la ligne d’entrée de  doit être identique pour l’ AEM Forms sur JEE et le lot AEM Forms sur OSGi inclus led’AEM Forms sur JEE. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
+   >La valeur de la propriété Taille maximale en ligne d’entrée du Document doit être identique pour l’environnement AEM Forms on JEE et AEM Forms sur l’environnement JEE inclus dans le lot OSGi. Cette étape a mis à jour la valeur uniquement pour l’environnement AEM Forms sur JEE et non pour le lot AEM Forms sur OSGi, y compris l’environnement AEM Forms sur JEE.
 
 1. Redémarrez le serveur d’applications à l’aide de la propriété système suivante :
 
@@ -173,7 +176,7 @@ L’utilisation du pool de connexions sur la connexion de recherche peut réduir
 ### Configuration de Windows Server pour le pool de connexion {#configure-your-windows-server-for-connection-pooling}
 
 1. Cliquez sur Démarrer > Exécuter pour lancer l’éditeur de registre, puis dans le champ Ouvrir, tapez `regedit` et cliquez sur OK.
-1. Accéder à la clé de registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+1. Accéder à la clé de Registre `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. Dans le volet droit de l’éditeur de registre, recherchez le nom de valeur TcpTimedWaitDelay. Si ce nom n’apparaît pas, sélectionnez Edition > Nouveau > Valeur DWORD dans la barre de menus pour l’ajouter.
 1. Dans la zone Nom, saisissez `TcpTimedWaitDelay`
 
