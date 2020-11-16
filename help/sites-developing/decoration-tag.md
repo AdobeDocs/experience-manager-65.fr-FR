@@ -37,12 +37,12 @@ Ces quelques recommandations générales vous indiquent à quel moment inclure l
 
 Les propriétés et nœuds suivants peuvent être appliqués aux composants pour contrôler le comportement de leur balise décorative :
 
-* **`cq:noDecoration {boolean}`:**Cette propriété peut être ajoutée à un composant et une valeur réelle force AEM à ne générer aucun élément wrapper sur le composant.
+* **`cq:noDecoration {boolean}`:** Cette propriété peut être ajoutée à un composant et une valeur vraie force AEM à ne générer aucun élément wrapper sur le composant.
 
-* **`cq:htmlTag`Nœud  : :**ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
+* **`cq:htmlTag`Nœud  : :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
 
-   * **`cq:tagName {String}`:**Vous pouvez l’utiliser pour spécifier une balise HTML personnalisée à utiliser pour envelopper les composants au lieu de l’élément DIV par défaut.
-   * **`class {String}`:**Vous pouvez l’utiliser pour spécifier les noms de classe css à ajouter à l’enveloppe.
+   * **`cq:tagName {String}`:** Vous pouvez l’utiliser pour spécifier une balise HTML personnalisée à utiliser pour envelopper les composants au lieu de l’élément DIV par défaut.
+   * **`class {String}`:** This can be used to specify css class names to be added to the wrapper.
    * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
 
 ## Contrôles de script {#script-controls}
@@ -63,7 +63,7 @@ Le comportement de l’élément wrapper peut également faire l’objet d’un 
 
 Il est possible de contrôler entièrement le comportement des balises wrapper à partir de scripts HTL et de la logique qui y est associée.
 
-For further information about developing in HTL see the [HTL documentation](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+For further information about developing in HTL see the [HTL documentation](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html).
 
 #### Arborescence de décision {#decision-tree}
 
