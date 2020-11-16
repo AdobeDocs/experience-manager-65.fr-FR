@@ -12,9 +12,9 @@ ht-degree: 49%
 
 # État des fonctionnalités de l’IU tactile {#touch-ui-feature-status}
 
-AEM version 6.4 ou ultérieure de l’interface utilisateur [classique est obsolète](../release-notes/deprecated-removed-features.md). L’Adobe n’apporte pas d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
+aem version 6.4 ou ultérieure de l’interface utilisateur [classique est obsolète](../release-notes/deprecated-removed-features.md). L’Adobe n’apporte pas d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
 
-Starting with version 6.0, AEM introduced a new user interface referred as the &quot;touch-enabled UI&quot; (simply called &quot;Touch UI&quot;) that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. Avec la quasi parité des fonctionnalités atteinte, cette interface est devenue l’interface standard en AEM avec l’interface héritée et orientée bureau, appelée &quot;interface classique&quot;.
+Starting with version 6.0, AEM introduced a new user interface referred as the &quot;touch-enabled UI&quot; (simply called &quot;Touch UI&quot;) that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. Avec la quasi parité des fonctionnalités atteinte, cette interface est devenue l’interface standard en AEM avec l’interface héritée et orientée sur les ordinateurs de bureau, appelée &quot;interface utilisateur classique&quot;.
 
 Bien que la plupart des fonctionnalités soient déjà présentes dans l’interface utilisateur optimisée pour les écrans tactiles, il en reste certaines à intégrer, qui le seront dans les prochaines mises à jour.
 
@@ -44,7 +44,7 @@ This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and 
 
 | Fonctionnalité | État | Commentaire |
 |--- |--- |--- |
-| Navigation dans l’arborescence du site | Terminer | AEM 6.4 a introduit une vue [d&#39;arborescence de](/help/sites-authoring/basic-handling.md#content-tree)contenu. |
+| Navigation dans l’arborescence du site | Terminer | aem 6.4 a introduit une vue [d&#39;arborescence de](/help/sites-authoring/basic-handling.md#content-tree)contenu. |
 | Démarrer le worfklow | Terminer |  |
 | Créer une page | Complète |  |
 | Créer un site | Complète |  |
@@ -98,7 +98,7 @@ This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the s
 | Ajouter des annotations | Complète |  |
 | Modification des propriétés | Terminer |  |
 | Page de lancement | Terminer |  |
-| Flux de travaux de Début et d&#39;affichage | Terminer |  |
+| Flux de travaux de début et d&#39;affichage | Terminer |  |
 | Gestion des packages de processus | Principalement | Entièrement accessible dans l’interface utilisateur tactile. Plusieurs charges utiles de flux de travail sont toujours présentées dans l’interface utilisateur classique. |
 | Verrouiller/déverrouiller la page | Complète |  |
 | Publier la page | Terminer |  |
@@ -151,7 +151,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
 | Editeur de tableau | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
 | Faire glisser l’image dans la cellule du tableau | Terminer | Utilisation en ligne |
 | Éditeur d’image | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
-| Activation/désactivation des modules externes IPE | Terminer | AEM 6.3 a introduit une interface utilisateur dans l’éditeur [de](/help/sites-authoring/templates.md)modèles. |
+| Activation/désactivation des modules externes IPE | Terminer | aem 6.3 a introduit une interface utilisateur dans l’éditeur [de](/help/sites-authoring/templates.md)modèles. |
 | Module externe IPE : Recadrer | Terminer |  |
 | Module externe IPE : Retourner | Terminer |  |
 | Module externe IPE : Annuler/Rétablir | Terminer |  |
