@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
+source-git-commit: a99c5794cee88d11ca3fb9eeed443c4d0178c7b3
 workflow-type: tm+mt
 source-wordcount: '2731'
 ht-degree: 79%
@@ -211,9 +211,8 @@ Le service peut également être configuré par le biais de la console web, comm
 >[!NOTE]
 >
 >Vous pouvez vérifier le rôle d’une instance à tout moment en vérifiant la présence des modes d’exécution **principaux** ou **de secours** dans la console web des paramètres Sling.
-
->This can be done by going to *https://localhost:4502/system/console/status-slingsettings* and checking the **&quot;Run Modes&quot;** line.
 >
+>This can be done by going to *https://localhost:4502/system/console/status-slingsettings* and checking the **&quot;Run Modes&quot;** line.
 
 ## Première synchronisation {#first-time-synchronization}
 
@@ -287,15 +286,18 @@ Les paramètres OSGi suivants sont disponibles pour le service Cold Standby :
 * **Nettoyage automatique Secondaire (`standby.autoclean`) :** Appelez la méthode de nettoyage si la taille de la banque augmente lors d&#39;un cycle de synchronisation.
 
 >[!NOTE]
-Il est vivement conseillé d’attribuer des ID de référentiel différents aux instances principale et de secours pour pouvoir bien les identifier séparément pour les services comme le déchargement.
-La meilleure façon de procéder est de supprimer le fichier *sling.id* sur l’instance de secours, puis de redémarrer l’instance.
+>
+>Il est vivement conseillé d’attribuer des ID de référentiel différents aux instances principale et de secours pour pouvoir bien les identifier séparément pour les services comme le déchargement.
+>
+>La meilleure façon de procéder est de supprimer le fichier *sling.id* sur l’instance de secours, puis de redémarrer l’instance.
 
 ## Procédures de basculement {#failover-procedures}
 
 Si l’instance principale échoue, vous pouvez choisir l’une des instances de secours pour la remplacer, en modifiant le mode d’exécution de lancement, tel qu’expliqué ci-après :
 
 >[!NOTE]
-Les fichiers de configuration doivent également être modifiés afin qu’ils correspondent aux paramètres utilisés pour une instance principale.
+>
+>Les fichiers de configuration doivent également être modifiés afin qu’ils correspondent aux paramètres utilisés pour une instance principale.
 
 1. Accédez à l’emplacement de l’instance de secours sur votre ordinateur et arrêtez-la. 
 
@@ -372,10 +374,12 @@ Des informations supplémentaires pour jusqu’à 10 clients (instances de seco
 ### Nettoyage des révisions {#revision-clean}
 
 >[!NOTE]
-Si vous exécutez [Nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md) sur l’instance principale, la procédure manuelle présentée ci-dessous n’est pas nécessaire. Additionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
+>
+>Si vous exécutez [Nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md) sur l’instance principale, la procédure manuelle présentée ci-dessous n’est pas nécessaire. Additionally, if you are using Online Revision Cleanup, the `cleanup ()` operation on the standby instance will pe performed automatically.
 
 >[!NOTE]
-N’exécutez pas le nettoyage de révisions hors ligne sur l’instance de secours. Cela n’est pas nécessaire et ne réduit pas la taille de l’entrepôt de segments.
+>
+>N’exécutez pas le nettoyage de révisions hors ligne sur l’instance de secours. Cela n’est pas nécessaire et ne réduit pas la taille de l’entrepôt de segments.
 
 Adobe recommande d&#39;exécuter régulièrement la maintenance afin d&#39;éviter une croissance excessive du référentiel au fil du temps. Pour exécuter manuellement la maintenance du référentiel Cold Standby, procédez comme suit :
 
@@ -403,5 +407,6 @@ Il est important d’exécuter de temps en temps le nettoyage de la mémoire sur
    * On the standby, the data store garbage collection is available only via the **BlobGarbageCollection** MBean - `startBlobGC()`. **RepositoryManagement **MBean n&#39;est pas disponible sur le Secondaire.
 
    >[!NOTE]
-   Si vous n’utilisez pas d’entrepôt de données partagé, le nettoyage de la mémoire doit d’abord être exécuté sur l’instance principale, puis sur l’instance de secours.
+   >
+   >Si vous n’utilisez pas d’entrepôt de données partagé, le nettoyage de la mémoire doit d’abord être exécuté sur l’instance principale, puis sur l’instance de secours.
 
