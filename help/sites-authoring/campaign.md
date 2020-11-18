@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 6853306d217809e05dbef4968c75bfef9d048f1c
+source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
 workflow-type: tm+mt
 source-wordcount: '2780'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -94,7 +94,7 @@ La sélection du service de cloud sur l’onglet **Sites** est l’approche reco
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
 1. Sélectionnez la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante, puis confirmez en cliquant sur **Enregistrer**.
-1. Vous pouvez vue le modèle que le courrier électronique lui a appliqué en cliquant sur l’onglet** Adobe Campaign**. Si vous souhaitez sélectionner un autre modèle, vous pouvez y accéder à partir du courrier électronique en cours de modification.
+1. Vous pouvez afficher le modèle appliqué au courrier électronique en cliquant sur l’onglet **Adobe Campaign**. Si vous souhaitez sélectionner un autre modèle, vous pouvez y accéder à partir du courrier électronique en cours de modification.
 
    If you would like to apply a specific email delivery template (from Adobe Campaign), other than the default mail template, in **Properties**, select the **Adobe Campaign** tab. Entrez le nom interne du modèle de diffusion par courrier électronique dans l’instance Adobe Campaign associée.
 
@@ -322,8 +322,7 @@ Dans AEM, si une newsletter est associée à une diffusion unique, le code de di
 
 >[!NOTE]
 Si le bulletin d’information est lié à plusieurs diffusions, le nombre de diffusions liées (mais pas tous les identifiants).
-
->[!NOTE]
+[!NOTE]
 L’étape du worfklow **Publication dans Adobe Campaign** est obsolète dans AEM 6.1. Cette étape faisait partie de l’intégration d’AEM 6.0 à Adobe Campaign et n’est plus nécessaire.
 
 Pour synchroniser le contenu créé dans AEM avec une diffusion à partir d’Adobe Campaign :
