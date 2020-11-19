@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 188434543403fab48f79be06356b86e132e2888a
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 97%
@@ -74,12 +74,14 @@ Une fois une version créée, vous pouvez y revenir si nécessaire.
 >Lors de la restauration d’une page, la version créée fait partie d’une nouvelle branche.
 >
 >Illustration :
-
+>
 >1. Créez des versions d’une page.
 >1. Les libellés et les noms de nœud de version initiaux sont 1.0, 1.1, 1.2, etc.
-1. Restaurez la première version, soit 1.0.
-1. Recréez des versions.
-1. Les libellés et les noms de nœud générés sont à présent 1.0.0, 1.0.1, 1.0.2, etc.
+>1. Restaurez la première version, soit 1.0.
+>1. Recréez des versions.
+>1. Les libellés et les noms de nœud générés sont à présent 1.0.0, 1.0.1, 1.0.2, etc.
+
+>
 
 
 
@@ -108,8 +110,10 @@ Vous pouvez prévisualiser une version spécifique :
 1. Sélectionnez **Aperçu**. La page sera affichée sous un nouvel onglet.
 
    >[!CAUTION]
-   Si une page a été déplacée, vous ne pouvez plus afficher l’aperçu des versions antérieures au déplacement.
-   * Si vous rencontrez des problèmes avec un aperçu, vérifiez dans la [chronologie](/help/sites-authoring/basic-handling.md#timeline) si la page a été déplacée.
+   >
+   >Si une page a été déplacée, vous ne pouvez plus afficher l’aperçu des versions antérieures au déplacement.
+   >
+   >* Si vous rencontrez des problèmes avec un aperçu, vérifiez dans la [chronologie](/help/sites-authoring/basic-handling.md#timeline) si la page a été déplacée.
 
 
 ## Comparaison d’une ancienne version avec la page actuelle {#comparing-a-version-with-current-page}
@@ -167,4 +171,5 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 * **Timewarp est basé uniquement sur le contenu de page** : si des éléments destinés au rendu du site web (tels que du code, des feuilles css, des ressources/images, etc.) ont été modifiés, la vue sera différente de ce qu’elle était initialement, étant donné que ces éléments n’ont pas de suivi de version dans le référentiel.
 
 >[!CAUTION]
-Timewarp est conçu comme un outil permettant aux auteurs de comprendre et de créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
+>
+>Timewarp est conçu comme un outil permettant aux auteurs de comprendre et de créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
