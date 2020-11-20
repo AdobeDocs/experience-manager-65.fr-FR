@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '1766'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -25,8 +25,8 @@ Il existe différentes méthodes pour assurer le suivi des événements vidéo, 
 
 >[!NOTE]
 >
->Before you continue, make sure** **that you have a** playable video** uploaded within AEM.
-
+>Avant de poursuivre, assurez-vous qu’une **vidéo lisible** est chargée dans AEM.
+>
 >Pour vous assurer que vos vidéos sont lisibles dans la page, consultez **[ce didacticiel](/help/sites-authoring/default-components-foundation.md#video)** pour plus d’informations sur le transcodage de fichiers vidéo dans AEM.
 
 Appliquez la procédure ci-dessous pour configurer une structure pour le suivi des vidéos à l’aide de chaque méthode.
