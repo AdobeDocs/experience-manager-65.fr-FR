@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 90%
@@ -207,12 +207,11 @@ Dans ce mode, vous avez la possibilité de modifier la conception de la page en 
 >[!NOTE]
 >
 >D’autres options sont également disponibles :
-
+>
 >* [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [Contexte client](/help/sites-administering/client-context.md)
-* Sites web - Ouvre la console Sites web.
-* Recharger - Actualise la page.
-
+>* Sites web - Ouvre la console Sites web.
+>* Recharger - Actualise la page.
 
 
 ## Raccourcis clavier {#keyboard-shortcuts}
