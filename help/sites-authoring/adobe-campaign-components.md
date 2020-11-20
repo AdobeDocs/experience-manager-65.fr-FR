@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '2854'
 ht-degree: 82%
@@ -92,9 +92,9 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 >[!NOTE]
 >
 >L’éditeur statique utilise la taille d’origine et les proportions de l’image lors de la modification. Vous pouvez également spécifier les propriétés de hauteur et de largeur. Les restrictions de taille et de format définies dans les propriétés sont appliquées lorsque vous enregistrez vos modifications.
-
->Selon votre instance, des restrictions minimales et maximales peuvent aussi être imposées par la [conception de la page](/help/sites-developing/designer.md). Ces restrictions sont développées lors de la mise en œuvre du projet.
 >
+>Selon votre instance, des restrictions minimales et maximales peuvent aussi être imposées par la [conception de la page](/help/sites-developing/designer.md). Ces restrictions sont développées lors de la mise en œuvre du projet.
+
 Différentes autres options sont disponibles en mode Plein écran. Par exemple, Carte et Zoom :
 
 ![](do-not-localize/chlimage_1-11.png)
@@ -131,8 +131,10 @@ Description de l’image.
 Permet de définir la hauteur et la largeur de l’image.
 
 >[!NOTE]
-Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement** sur l’**onglet Avancé**. Sinon, le message d’erreur ci-dessous s’affiche :
-`Validation failed. Verify the values of the marked fields.`
+>
+>Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement** sur l’**onglet Avancé**. Sinon, le message d’erreur ci-dessous s’affiche :
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 L’exemple ci-dessous présente le composant Image (Campaign) affiché.
@@ -155,8 +157,10 @@ Vous pouvez configurer les éléments ci-dessous sur les onglets **Affichage**, 
 * **Paramètre d’URL supplémentaire** Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
 
 >[!NOTE]
-You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
-`Validation failed. Verify the values of the marked fields.`
+>
+>You must enter information in the **Link Type** field in the **URL Info** tab, or the component cannot save and you see the following error message:
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
@@ -227,8 +231,10 @@ Description de l’image.
 Permet de définir la hauteur et la largeur de l’image.
 
 >[!NOTE]
-Le champ **Texte de remplacement** sur l’onglet **Avancé** est obligatoire. Autrement, vous ne pouvez pas enregistrer le composant, et le message d’erreur ci-dessous s’affiche :
-`Validation failed. Verify the values of the marked fields.`
+>
+>Le champ **Texte de remplacement** sur l’onglet **Avancé** est obligatoire. Autrement, vous ne pouvez pas enregistrer le composant, et le message d’erreur ci-dessous s’affiche :
+>
+>`Validation failed. Verify the values of the marked fields.`
 
 
 L’exemple ci-dessous présente le composant Texte et image (Campaign) affiché.
@@ -246,15 +252,19 @@ Une série d’icônes permet de mettre en forme le texte (attributs de police, 
 Dans l’éditeur statique, vous pouvez ajouter du texte, modifier l’alignement, ajouter et supprimer des liens, ajouter des champs de contexte ou des blocs de personnalisation et passer en mode Plein écran. Une fois que vous avez fini d’ajouter du texte/une personnalisation, sélectionnez la coche pour enregistrer vos modifications (ou cliquez sur « x » pour annuler). See [Inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) for more information.
 
 >[!NOTE]
-* Les champs de personnalisation disponibles dépendent du modèle Adobe Campaign auquel votre newsletter est liée.
-* Après avoir sélectionné un persona dans ContextHub, les champs de personnalisation sont remplacés automatiquement par les données du profil sélectionné.
+>
+>* Les champs de personnalisation disponibles dépendent du modèle Adobe Campaign auquel votre newsletter est liée.
+>* Après avoir sélectionné un persona dans ContextHub, les champs de personnalisation sont remplacés automatiquement par les données du profil sélectionné.
 
+>
+>
 Reportez-vous à la section [Insertion d’une personnalisation](/help/sites-authoring/campaign.md#inserting-personalization).
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 >[!NOTE]
-Seuls les champs définis dans le schéma **nms:seedMember** ou l’une de ses extensions sont pris en compte. Les attributs des tables liés à **nms:seedMember** ne sont pas disponibles.
+>
+>Seuls les champs définis dans le schéma **nms:seedMember** ou l’une de ses extensions sont pris en compte. Les attributs des tables liés à **nms:seedMember** ne sont pas disponibles.
 
 ## Composants Formulaire d’Adobe Campaign {#adobe-campaign-form-components}
 
@@ -456,7 +466,8 @@ Utilisez le composant **Liste de contrôle d’abonnements (Campaign)** pour mod
 Lorsque vous ajoutez ce composant à un formulaire, il affiche tous les abonnements disponibles sous forme de cases à cocher et permet à l’utilisateur de sélectionner les abonnements souhaités. When users submit the form, this component subscribes the user to or unsubscribes the user from the selected services depending on the form action type (**Adobe Campaign: Subscribe to Services** or **Adobe Campaign: Unsubscribe from Services**).
 
 >[!NOTE]
-Le composant ne vérifie pas les services auxquels l’utilisateur est déjà abonné/dont il est désabonné.
+>
+>Le composant ne vérifie pas les services auxquels l’utilisateur est déjà abonné/dont il est désabonné.
 
 Vous pouvez [configurer les paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components) dans le composant Liste de contrôle d’abonnements (Campaign). (Il n’y a pas de configuration Adobe Campaign disponible pour ce composant.)
 
