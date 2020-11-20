@@ -57,7 +57,6 @@ Un site ou une Live Copy présente un lien vers une zone contenant les activité
 >
 >* Lorsque vous utilisez des déploiements ou des Live Copies, une licence MSM est requise.
 >* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
-
 >
 
 
@@ -250,7 +249,6 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
 >* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer de **nouvelles** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, il vous faut suspendre l’héritage.
-
 >
 
 
