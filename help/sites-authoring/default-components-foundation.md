@@ -13,7 +13,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '7287'
 ht-degree: 87%
@@ -389,17 +389,19 @@ Une fois l’image chargée (et pas avant), utilisez la [modification statique](
 >[!NOTE]
 >
 >L’éditeur statique utilise la taille d’origine et les proportions de l’image lors de la modification. Vous pouvez également spécifier les propriétés de hauteur et de largeur. Les restrictions de taille et de format définies dans les propriétés sont appliquées lorsque vous enregistrez vos modifications.
-
->Selon votre instance, des restrictions minimales et maximales peuvent aussi être imposées par la [conception de la page](/help/sites-developing/designer.md). Ces restrictions sont développées lors de la mise en œuvre du projet.
 >
+>Selon votre instance, des restrictions minimales et maximales peuvent aussi être imposées par la [conception de la page](/help/sites-developing/designer.md). Ces restrictions sont développées lors de la mise en œuvre du projet.
+
 Différentes autres options sont disponibles en mode Plein écran. Par exemple, Carte et Zoom :
 
 ![](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
-Internet Explorer ne permet pas de surveiller la progression du téléchargement.
-Les utilisateurs d’Internet Explorer doivent charger l’image, cliquer sur **OK**, puis rouvrir l’image pour afficher le fichier téléchargé dans l’aperçu et être en mesure d’y apporter des modifications (un recadrage, par exemple).
-
+>
+>Internet Explorer ne permet pas de surveiller la progression du téléchargement.
+>
+>Les utilisateurs d’Internet Explorer doivent charger l’image, cliquer sur **OK**, puis rouvrir l’image pour afficher le fichier téléchargé dans l’aperçu et être en mesure d’y apporter des modifications (un recadrage, par exemple).
+>
 >See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
@@ -441,7 +443,8 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
    Permet de définir la hauteur et la largeur de l’image.
 
 >[!NOTE]
-Certaines options sont uniquement disponibles dans l’éditeur plein écran.
+>
+>Certaines options sont uniquement disponibles dans l’éditeur plein écran.
 
 L’image finale (avec **Titre** et **Description**) peut s’afficher comme suit :
 
@@ -454,12 +457,14 @@ Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
 >[!NOTE]
-Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html).
+>
+>Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html).
 
 ### Liste {#list}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Liste](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/list.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Liste](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/list.html).
 
 Le composant Liste vous permet de configurer des critères de recherche pour afficher une liste :
 
@@ -532,7 +537,8 @@ L’exemple suivant illustre un composant **Liste** affichant une liste de pages
 ### Connexion {#login}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Ces options fournissent les champs de nom d’utilisateur et de mot de passe.
 
@@ -589,7 +595,8 @@ Vous pouvez configurer :
 ### Référence  {#reference}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Fragment de contenu](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/content-fragment-component.html).
 
 Le composant **Référence** permet de référencer du texte à partir d’une autre page de votre site web AEM (dans l’instance actuelle). Le contenu du paragraphe référencé s’affiche alors comme s’il faisait partie de la page actuelle. Le contenu est mis à jour lorsque le paragraphe source est modifié (peut nécessiter une actualisation de la page).
 
@@ -622,7 +629,8 @@ Une fois configuré, le contenu s’affiche exactement comme sur la page source.
 ### Recherche {#searching}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Recherche rapide](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/quick-search.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Recherche rapide](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/quick-search.html).
 
 Le composant Rechercher offre des capacités de recherche à votre page.
 
@@ -690,7 +698,8 @@ L&#39;exemple suivant montre un terme de recherche mal orthographié et non disp
 ### Plan du site {#sitemap}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/breadcrumb.html) instead.
+>
+>Ce composant de base est obsolète. Adobe recommends leveraging the [Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html), [Language Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/language-navigation.html), and [Breadcrumb Core Components](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/breadcrumb.html) instead.
 
 Liste automatique du plan du site qui (avec les paramètres par défaut) répertorie toutes les pages (sous forme de liens actifs) du site web actuel. Par exemple (extrait) :
 
@@ -707,7 +716,8 @@ Si nécessaire, vous pouvez configurer l’option suivante :
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html).
 
 Ce composant vous permet de charger une série d’images à afficher sous forme de diaporama dans la page. Vous pouvez ajouter ou supprimer des images et leur attribuer un titre. Sous l’onglet Avancé, vous pouvez également spécifier la taille de la zone d’affichage.
 
@@ -736,10 +746,12 @@ Le composant Diaporama affiche ensuite de façon répétée chaque image en séq
 ### Tableau {#table}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
 
 >[!NOTE]
-Le composant de base **Tableau** repose sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant **[Texte](#text)**.
+>
+>Le composant de base **Tableau** repose sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant **[Texte](#text)**.
 
 Le composant **Tableau** est préconfiguré pour vous permettre de construire, remplir et formater un tableau. Dans la boîte de dialogue, vous pouvez configurer le tableau et créer le contenu comme suit :
 
@@ -783,10 +795,12 @@ Pour plus d’informations sur l’application de balises, consultez la rubrique
 ### Texte {#text}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
 
 >[!NOTE]
-Le composant de base **Texte** repose sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant de base **Tableau**.
+>
+>Le composant de base **Texte** repose sur l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md), tout comme le composant de base **Tableau**.
 
 Le composant Texte vous permet de saisir un bloc de texte à l’aide d’un éditeur WYSIWYG, avec une fonctionnalité fournie par l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). Une série d’icônes vous permettent de mettre le texte en forme (police, alignement, liens, listes et retrait).
 
@@ -810,7 +824,8 @@ Outre le mode d’édition de texte enrichi basé sur la boîte de dialogue, AEM
 ### Texte et Image {#text-image}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du composant principal [Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) et [texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du composant principal [Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html) et [texte](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html).
 
 Le composant Texte et image permet d’ajouter un bloc de texte et une image. Vous pouvez également ajouter et modifier du texte et des images séparément. Pour plus d’informations, reportez-vous aux composants [Texte](#text) et [Image](#image).
 
@@ -857,7 +872,8 @@ L’exemple suivant illustre un composant Texte et image avec l’image alignée
 ### Titre {#title}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du composant principal [Titre](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/list.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du composant principal [Titre](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/list.html).
 
 Le composant Titre permet d’afficher les éléments suivants :
 
@@ -885,7 +901,8 @@ L’exemple suivant montre un composant **Titre** affiché (la conception est d�
 ### Vidéo {#video}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Le composant **Vidéo** permet de placer un élément vidéo prédéfini « prêt à l’emploi » sur une page.
 
@@ -904,10 +921,12 @@ Une fois une instance du composant placée sur la page, vous pouvez configurer l
       La taille native de la vidéo (largeur x hauteur en pixels) s’affiche dans les cases en regard de la Taille (voir ci-dessus). Saisissez ici manuellement la largeur et la hauteur pour remplacer les dimensions natives de la vidéo. Click **OK** to dismiss the dialog.
 
 >[!NOTE]
-Les formats pris en charge sont les suivants :
-* `.mp4`
-* `Ogg`
-* `FLV` (vidéo Flash)
+>
+>Les formats pris en charge sont les suivants :
+>
+>* `.mp4`
+>* `Ogg`
+>* `FLV` (vidéo Flash)
 
 
 ## Columns {#columns}
@@ -939,12 +958,14 @@ Le composant Contrôle de colonne permet aux utilisateurs de sélectionner la ma
 ## Formulaire {#form}
 
 >[!CAUTION]
-Le composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Le composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Les composants Formulaire servent à créer des formulaires permettant aux visiteurs d’envoyer leur saisie. Les formulaires et leurs composants peuvent être utilisés pour recueillir diverses informations, dont les commentaires d’un utilisateur (un questionnaire de satisfaction client, par exemple) et des informations le concernant (un enregistrement d’utilisateur, par exemple).
 
 >[!NOTE]
-Pour plus d’informations sur les formulaires AEM, reportez-vous à la section [Aide – AEM Forms](/help/forms/home.md).
+>
+>Pour plus d’informations sur les formulaires AEM, reportez-vous à la section [Aide – AEM Forms](/help/forms/home.md).
 
 Les formulaires sont constitués de plusieurs composants différents :
 
@@ -965,7 +986,8 @@ Vous trouverez ci-dessous un exemple de formulaire constitué du composant **For
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
-Vous trouverez des informations sur le développement et la personnalisation des formulaires à la [page de développement de formulaires](/help/sites-developing/developing-forms.md). Ces informations concernent l’ajout d’actions, de contraintes, le préchargement de champs et l’utilisation de scripts pour lancer un appel à l’action par un service, entre autres.
+>
+>Vous trouverez des informations sur le développement et la personnalisation des formulaires à la [page de développement de formulaires](/help/sites-developing/developing-forms.md). Ces informations concernent l’ajout d’actions, de contraintes, le préchargement de champs et l’utilisation de scripts pour lancer un appel à l’action par un service, entre autres.
 
 ### Paramètres communs à (de nombreux) composants de formulaire {#settings-common-to-many-form-components}
 
@@ -990,7 +1012,8 @@ Les onglets suivants sont disponibles dans la boîte de dialogue lors de la conf
    Indique la taille et le style des champs.
 
 >[!NOTE]
-Les champs affichés varient grandement en fonction du composant individuel.
+>
+>Les champs affichés varient grandement en fonction du composant individuel.
 
 Ces onglets vous fournissent les paramètres nécessaires ; ceux-ci peuvent dépendre du type de composant individuel, mais peuvent inclure :
 
@@ -1034,7 +1057,7 @@ Il s’agit d’un champ obligatoire qui ne doit contenir que les caractères su
 
    * **Contrainte**
 
-      Les contraintes disponibles pour la sélection dépendent du type de composant de formulaire.
+      The constraints available for selection are dependent on the form component type.
 
    * **Message de contrainte**
 
@@ -1055,7 +1078,8 @@ Il s’agit d’un champ obligatoire qui ne doit contenir que les caractères su
 ### Formulaire (composant) {#form-component}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Conteneur de formulaires](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-container.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Conteneur de formulaires](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-container.html).
 
 Le composant Formulaire définit le début et la fin d’un formulaire à l’aide des éléments **Début du formulaire** et **Fin de formulaire**. Ces deux paragraphes sont toujours utilisés conjointement pour s’assurer que le formulaire est correctement défini.
 
@@ -1064,7 +1088,8 @@ Le composant Formulaire définit le début et la fin d’un formulaire à l’ai
 Entre le début et la fin d’un formulaire, vous pouvez ajouter des composants qui définissent les champs de saisie réels à l’intention des utilisateurs.
 
 >[!NOTE]
-Le composant de formulaire des composants de base ne prend en charge que l’utilisation d’autres composants de base Formulaire (bouton, texte, masqué, etc.). L’utilisation des composants de formulaire des [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) dans un formulaire de composant de base (et vice versa) n’est pas prise en charge.
+>
+>Le composant de formulaire des composants de base ne prend en charge que l’utilisation d’autres composants de base Formulaire (bouton, texte, masqué, etc.). L’utilisation des composants de formulaire des [composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) dans un formulaire de composant de base (et vice versa) n’est pas prise en charge.
 
 #### Début du formulaire {#start-of-form}
 
@@ -1281,7 +1306,8 @@ Ceci marque la fin du formulaire. Vous pouvez configurer les options suivantes 
 ### Nom de compte {#account-name}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-text.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-text.html).
 
 Ce composant permet à l’utilisateur de saisir un nom de compte :
 
@@ -1290,7 +1316,8 @@ Ce composant permet à l’utilisateur de saisir un nom de compte :
 ### Adresse {#address}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-text.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-text.html).
 
 Ce composant permet d’ajouter une adresse internationale au format suivant :
 
@@ -1301,7 +1328,8 @@ Le composant est configuré pour une utilisation immédiate, mais vous pouvez mo
 ### Captcha {#captcha}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Le composant Captcha requiert que l’utilisateur saisisse une chaîne alphanumérique comme affichée à l’écran. La chaîne est modifiée à chaque actualisation.
 
@@ -1312,7 +1340,8 @@ Vous pouvez configurer plusieurs paramètres différents pour ce composant, nota
 ### Groupe de cases à cocher {#checkbox-group}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-options.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-options.html).
 
 Une case à cocher vous permet de créer une liste composée d&#39;une ou de plusieurs cases à cocher (plusieurs d&#39;entre elles peuvent être simultanément cochées).
 
@@ -1321,13 +1350,16 @@ Une case à cocher vous permet de créer une liste composée d&#39;une ou de plu
 Vous pouvez spécifier divers paramètres y compris un titre, une description et un nom d’élément. À l’aide des boutons + et -, vous pouvez ajouter ou supprimer des éléments, puis les positionner à l’aide des flèches pointant vers le haut ou vers le bas.
 
 >[!NOTE]
-L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans la liste de groupes de cases à cocher.
-Voir [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans la liste de groupes de cases à cocher.
+>
+>Voir [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Détails de la carte de crédit {#credit-card-details}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Ce composant vous permet de fournir les champs nécessaires pour saisir les informations de carte de crédit. Vous pouvez le configurer pour spécifier les types de cartes acceptés et les informations requises (par exemple, le code de sécurité).
 
@@ -1336,7 +1368,8 @@ Ce composant vous permet de fournir les champs nécessaires pour saisir les info
 ### Liste déroulante {#dropdown-list}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-options.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-options.html).
 
 Une liste déroulante peut être configurée pour fournir à votre utilisation une plage de valeurs à sélectionner :
 
@@ -1345,38 +1378,46 @@ Une liste déroulante peut être configurée pour fournir à votre utilisation u
 Vous pouvez spécifier un titre et des éléments pour qu’ils apparaissent dans la liste. À l’aide des boutons + et -, vous pouvez ajouter ou supprimer des éléments de la liste, puis les positionner à l’aide des flèches pointant vers le haut ou vers le bas. Spécifiez si les utilisateurs sont autorisés à sélectionner plusieurs éléments de la liste, ainsi que tous les éléments qui doivent être automatiquement sélectionnés la première fois qu’ils ouvrent la liste (valeurs initiales).
 
 >[!NOTE]
-L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans la liste déroulante.
-Voir [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans la liste déroulante.
+>
+>Voir [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Téléchargement du fichier {#file-upload}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Le composant Chargement du fichier fournit à l&#39;utilisateur un moyen pour sélectionner un fichier et le télécharger.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
 >[!NOTE]
-Vous pouvez créer un composant de chargement personnalisé pour charger les fichiers sur un Sling Servlet. Pour plus d’informations, voir [Transfert de fichiers dans Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
+>
+>Vous pouvez créer un composant de chargement personnalisé pour charger les fichiers sur un Sling Servlet. Pour plus d’informations, voir [Transfert de fichiers dans Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
 ### Champ masqué {#hidden-field}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Masqué du formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-hidden.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Masqué du formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-hidden.html).
 
 Ce composant permet de créer un champ masqué. Ceux-ci peuvent être utilisés à diverses fins, par exemple, lorsque vous devez exécuter une action après avoir soumis le formulaire ou lorsque des données masquées sont nécessaires au post-traitement.
 
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
-Vous pouvez également personnaliser votre formulaire de manière à afficher ou masquer des composants de formulaire spécifiques en fonction de la valeur d’autres champs du formulaire. Changer la visibilité d’un champ de formulaire est utile lorsque le champ est requis uniquement dans certaines conditions.
-Voir [Affichage et masquage de composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+>
+>Vous pouvez également personnaliser votre formulaire de manière à afficher ou masquer des composants de formulaire spécifiques en fonction de la valeur d’autres champs du formulaire. Changer la visibilité d’un champ de formulaire est utile lorsque le champ est requis uniquement dans certaines conditions.
+>
+>Voir [Affichage et masquage de composants de formulaire](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### Bouton Image {#image-button}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-button.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-button.html).
 
 Un bouton d’image permet de créer un bouton comportant vos texte et image :
 
@@ -1385,7 +1426,8 @@ Un bouton d’image permet de créer un bouton comportant vos texte et image :
 ### Téléchargement de l’image {#image-upload}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Le composant Chargement de l&#39;image fournit à l&#39;utilisateur un moyen pour sélectionner un fichier image et le télécharger.
 
@@ -1394,7 +1436,8 @@ Le composant Chargement de l&#39;image fournit à l&#39;utilisateur un moyen pou
 ### Champ du lien {#link-field}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Le champ Lien permet à l&#39;utilisateur de spécifier une URL.
 
@@ -1405,7 +1448,8 @@ Ce composant est le plus couramment utilisé pour le formulaire d’événement 
 ### Champ Mot de passe {#password-field}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Ce composant permet à l’utilisateur de saisir son mot de passe :
 
@@ -1414,7 +1458,8 @@ Ce composant permet à l’utilisateur de saisir son mot de passe :
 ### Réinitialisation du mot de passe {#password-reset}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Ce composant fournit à l’utilisateur deux champs pour :
 
@@ -1428,7 +1473,8 @@ Avec les paramètres par défaut, le composant ressemble à celui-ci :
 ### Groupe de cases d’option {#radio-group}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-options.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-options.html).
 
 Un groupe de cases d&#39;option fournit une liste composée d&#39;une ou de plusieurs cases d&#39;option (une seule case peut être sélectionnée à un moment donné).
 
@@ -1437,13 +1483,16 @@ Spécifiez le nom de l’élément avec un titre et une description. À l’aide
 ![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
-L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans les cases d’option.
-Voir [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+>
+>L’option **Chemin de chargement des éléments** permet de précharger des valeurs dans les cases d’option.
+>
+>Voir [Préchargement des champs de formulaire avec de multiples valeurs](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### Bouton Envoyer {#submit-button}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-button.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-button.html).
 
 Ce composant vous permet de créer un bouton Envoyer avec le texte par défaut :
 
@@ -1456,7 +1505,8 @@ Ou votre propre texte :
 ### Champ des balises {#tags-field}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation des composants principaux[.](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 
 Ce champ vous permet de sélectionner des balises :
 
@@ -1482,7 +1532,8 @@ Vous pouvez spécifier plusieurs paramètres, y compris les espaces de noms qui 
 ### Champ de texte {#text-field}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-text.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Texte de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-text.html).
 
 Le champ de texte standard peut être configuré selon la taille et la largeur requises avec votre propre message :
 
@@ -1491,7 +1542,8 @@ Le champ de texte standard peut être configuré selon la taille et la largeur r
 ### Workflow Submit Button(s) {#workflow-submit-button-s}
 
 >[!CAUTION]
-Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-button.html).
+>
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Bouton de formulaire](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/forms/form-button.html).
 
 Permet de créer un bouton Envoyer à utiliser dans un workflow.
 
