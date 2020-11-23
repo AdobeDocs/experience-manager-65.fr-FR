@@ -105,7 +105,7 @@ procédez comme suit pour ajouter une propriété personnalisée à tous les typ
 
    >[!NOTE]
    >
-   >Les propriétés communes à toutes les ressources que vous ajoutez s’affichent dans l’onglet de base des propriétés des ressources. Par défaut, les propriétés communes ajoutées à toutes les ressources sont répertoriés sur la page de propriétés ainsi que sur la page de création de ressources. Pour masquer les propriétés communes, vous devez <!--link to show / hide properties]-->le faire.
+   >Les propriétés communes à toutes les ressources que vous ajoutez s’affichent dans l’onglet de base des propriétés des ressources. Par défaut, les propriétés communes ajoutées à toutes les ressources sont répertoriés sur la page de propriétés ainsi que sur la page de création de ressources. Pour masquer les propriétés communes, vous devez le faire.
 
 ### Scénario : ajout d’une liste déroulante et de valeurs personnalisées à une propriété/un champ personnalisé(e){#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
