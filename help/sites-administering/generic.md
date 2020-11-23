@@ -1,5 +1,5 @@
 ---
-ttitle: Administering generic eCommerce
+title: Administration de la solution eCommerce générique
 seo-title: Administration de la solution eCommerce générique
 description: La solution AEM générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel.
 seo-description: La solution AEM générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel.
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 06d6696a5493f0e166e400bcd9a379b7be062c1e
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3011'
 ht-degree: 86%
 
 ---
