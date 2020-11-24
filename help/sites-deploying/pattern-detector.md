@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
+source-git-commit: ba7ac70858b7b2fd610d63355a22a69c3a7586e3
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 93%
+source-wordcount: '544'
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 ## Méthode de configuration {#how-to-set-up}
 
-L’outil de détection des motifs est publié séparément sous forme de [module](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l&#39;aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md).
+L’outil de détection des motifs est publié séparément sous forme de [module](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l&#39;aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
 ## Utilisation {#how-to-use}
 
