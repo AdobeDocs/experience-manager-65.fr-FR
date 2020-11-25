@@ -7,10 +7,10 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 52%
+source-wordcount: '585'
+ht-degree: 59%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 52%
 + [[!DNL Experience Manager] 6.5 Notes de mise à jour des ressources](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [À propos de DAM](assets.md)
 + [Recommandations relatives aux ressources](best-practices-for-assets.md)
++ [Accessibilité dans [!DNL Assets]](accessibility.md)
 + Utiliser des ressources Experience Manager {#using}
    + [[!DNL Assets] Expérience page d&#39;accueil](assets-home-page.md)
    + [Recherche de ressources numériques](search-assets.md)
@@ -76,9 +77,9 @@ ht-degree: 52%
    + [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md)
    + [Utilisation de jeux de règles de transformation d’URL](using-rulesets-to-transform-urls.md)
    + [Publication de ressources Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Utilisation de la publication sélective dans un média dynamique](selective-publishing.md)
-   + [Invalidation du cache CDN par le biais de Contenu multimédia dynamique](invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidation du cache CDN par le biais de Contenu multimédia dynamique classique](invalidate-cdn-cache-dm-classic.md)
+   + [Utilisation de la publication sélective dans Dynamic Media](selective-publishing.md)
+   + [Invalidation du cache CDN via Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidation du cache CDN via Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Installation de Feature Pack 18912 pour la migration des ressources en vrac](bulk-ingest-migrate.md)
    + [Utilisation des sélecteurs](working-with-selectors.md)
 + Étendre les ressources {#extending}
@@ -89,7 +90,7 @@ ht-degree: 52%
    + [Intégration de ressources dans le flux d’activités](extending-activity-stream.md)
    + [Étendre l’éditeur de fichiers](asseteditorx.md)
    + API HTTP [[!DNL Assets]  ](mac-api-assets.md)
-   + [Prise en charge des fragments de contenu [!DNL Assets] dans l’API HTTP](assets-api-content-fragments.md)
+   + [ [!DNL Assets] Prise en charge des fragments de contenu dans l’API HTTP ](assets-api-content-fragments.md)
    + [[!DNL Assets] développement par proxy](proxy.md)
 + Administration des ressources {#administer}
    + [Formats de fichiers pris en charge](assets-formats.md)
@@ -112,7 +113,7 @@ ht-degree: 52%
    + [Utiliser le pixelliseur PDF](aem-pdf-rasterizer.md)
    + [Configuration des restrictions de transfert](configuring-asset-upload-restrictions.md)
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] intégration](aem-cc-integration-best-practices.md)
-   + [Intégrer à [!DNL InDesign Server]](indesign.md)
+   + [Intégration avec [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management dans les ressources](drm.md)
    + [Utiliser le package de démonstration pour les informations sur les ressources](use-demo-package-for-asset-insights.md)
    + [Meilleures pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
@@ -121,12 +122,12 @@ ht-degree: 52%
    + [Détecter le type MIME de fichiers à l’aide d’Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Bibliothèque de transcodage des images](imaging-transcoding-library.md)
    + [Multiplénitude pour les collections, les fragments et les modèles de fragments de code](multi-tenancy.md)
-   + [Mettre vos fichiers en filigrane](watermarking.md)
+   + [Mise en filigrane de vos ressources](watermarking.md)
    + [Modèles de ressources](asset-templates.md)
    + [Recommandations relatives au partage de dossier avec [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [ [!DNL Assets] Configuration [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
-   + [Publier des fichiers vers [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Configuration d’ [!DNL Assets]  avec  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Publication de ressources sur [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publier des dossiers dans [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publier des collections dans [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Fragments de contenu {#fragments}
@@ -140,7 +141,7 @@ ht-degree: 52%
    + [Fragments de contenu - Markdown](content-fragments/content-fragments-markdown.md)
    + [Création de projets de traduction pour des fragments de contenu](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
-   + [Gestion des éléments numériques](manage-assets.md)
+   + [Gestion des ressources numériques](manage-assets.md)
    + [Gestion des collections](manage-collections.md)
    + [Activation de la détection de doublons](duplicate-detection.md)
    + [Organisation des ressources numériques](organize-assets.md)
