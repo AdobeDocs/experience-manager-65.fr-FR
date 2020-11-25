@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Lorsqu’une structure d’intégration de traduction est configurée en plus du
 
 ## Service de traduction par défaut {#the-default-translation-service}
 
-AEM Communities est livré avec une licence [d’](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) évaluation pour un service [de traduction](../../help/sites-administering/tc-msconf.md) par défaut activé pour plusieurs langues.
+AEM Communities inclut une licence [d’](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) évaluation pour un service [de traduction](../../help/sites-administering/tc-msconf.md) par défaut activé pour plusieurs langues.
 
 Lors de la [création d’un site](sites-console.md)communautaire, le service de traduction par défaut est activé lorsque `Allow Machine Translation` est coché à partir du sous-panneau [TRADUCTION](sites-console.md#translation) .
 
