@@ -1,118 +1,54 @@
 ---
-title: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
-description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 6
+title: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
+description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
 workflow-type: tm+mt
-source-wordcount: '2561'
-ht-degree: 6%
+source-wordcount: '2705'
+ht-degree: 5%
 
 ---
 
 
-# Nouveautés de Adobe Experience Manager 6.5 Service Pack 6 {#aem-whats-new-service-pack-6}
+# Nouveautés de Adobe Experience Manager 6.5 Service Pack 7 {#aem-whats-new-service-pack}
 
-Les Service Packs Adobe Experience Manager 6.5 offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des améliorations des performances, de la stabilité et de la sécurité à tous les trimestres. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
+![Nouveautés](assets/whatsnew.jpeg)
 
-Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et certaines des versions [clés depuis la version 6.5.5.0](#key-releases-since-last-sp) du Experience Manager.
+[!DNL Adobe Experience Manager] Les Service Packs 6.5 offrent de nouvelles fonctionnalités, des améliorations demandées par les clients, ainsi que des améliorations des performances, de la stabilité et de la sécurité à tous les trimestres. La disponibilité trimestrielle facilite l&#39;accès et l&#39;adoption de nouvelles fonctionnalités et innovations.
 
-## Sites d&#39;Adobe [!DNL Experience Manager] {#aem-sites}
+Cet article présente les fonctionnalités incluses dans le dernier Service Pack 6.5, les fonctionnalités [clés incluses dans les Service Packs](#key-features-previous-service-packs)6.5 précédents et les AEM [clés publiées depuis la dernière version du Service Pack](#key-releases-since-last-sp) .
 
-### Disponibilité de l’opération de déplacement de page en mode asynchrone {#page-move-asynchronous}
+## Adobe [!DNL Experience Manager Sites] {#aem-sites}
 
-L’opération de déplacement de page est désormais disponible en mode asynchrone. Outre l’exécution immédiate, vous pouvez également planifier l’opération Déplacement de page pour une exécution ultérieure.
+### Tri des pages Live Copy disponibles pour le déploiement {#sort-livecopy-pages}
 
-## [!DNL Dynamic Media] {#dynamic-media}
+Vous pouvez maintenant trier les pages Live Copy disponibles pour le déploiement à l’aide des propriétés [!UICONTROL Nom], Date [!UICONTROL de la]dernière modification et Date [!UICONTROL de la dernière] mise en oeuvre. La date [!UICONTROL du] dernier déploiement d’une page est une nouvelle propriété introduite dans cette version.
 
-### Invalider le contenu mis en cache du CDN {#invalidate-cdn-cached-content}
+### Disponibilité des déplacements de page et des déploiements MSM en tant qu’opérations asynchrones {#page-moves-msm-asynchronous}
 
-Vous pouvez désormais utiliser l’interface [!DNL Dynamic Media] utilisateur pour invalider le contenu mis en cache du réseau de Diffusion de contenu (CDN). Par conséquent, les ressources mises à jour sont disponibles instantanément au lieu d’attendre l’expiration du cache. Vous pouvez invalider le CDN en procédant comme suit :
-
-* Création d’un modèle d’invalidation CDN : Sélection de fichiers et d’URL associées à des modèles de formulaire
-
-* Sélection de fichiers et de paramètres prédéfinis associés par le biais du sélecteur de fichiers
-
-* Ajouter des URL de fichier complètes
-
-### Publication sélective d’actifs vers [!DNL Experience Manager] et [!DNL Dynamic Media] {#selective-publishing}
-
-Vous pouvez désormais choisir de publier ou d’annuler la publication de fichiers sur [!DNL Experience Manager] ou [!DNL Dynamic Media] à l’aide de l’assistant Publication  rapide ou [!UICONTROL Gérer la publication] . Vous pouvez également définir le mode `Publish` ou `Unpublish` le mode au niveau du dossier.
+Vous pouvez désormais effectuer les déplacements de page et les déploiements MSM en tant qu’opérations asynchrones afin de réduire leur impact sur les performances d’exécution. Vous pouvez planifier les opérations pour une exécution immédiate ou ultérieure. L’état des tâches et étapes de processus associées s’affiche dans une console, ce qui s’avère utile pour surveiller les déploiements MSM à grande échelle.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-### Amélioration de l’accessibilité {#accessibility-assets-6560}
+* Les utilisateurs peuvent trier les fichiers numériques dans les vues Carte et Colonne.
 
-* **Amélioration de la mise au point de l’interface utilisateur lors de la navigation** au clavier, par exemple en mettant l’accent sur :
-
-   * `x` dans la boîte de dialogue Prévisualisation [!UICONTROL de] version d’une ressource dans le [!UICONTROL journal].
-
-   * Options d’interface utilisateur utilisables.
-
-   * Champ Courriel de la boîte de dialogue [!UICONTROL Partager le lien] et champ permettant d’ajouter un groupe d’utilisateurs fermé dans l’onglet [!UICONTROL Autorisation] de [!UICONTROL Propriétés]du dossier.
-
-* **Fonctionnalité améliorée à l’aide des touches du clavier**
-
-   Les utilisateurs peuvent utiliser les touches du clavier pour faire glisser des commandes dans l’éditeur de Schémas de métadonnées en mode de navigation du lecteur d’écran.
-
-* **Amélioration de l’utilisation des lecteurs** d’écran en raison des éléments suivants :
-
-   * Les lecteurs d’écran annoncent l’objectif des lecteurs vidéo et audio.
-
-   * Les lecteurs d’écran annoncent l’objectif des options de l’interface utilisateur pour supprimer les balises sélectionnées à l’aide de la boîte de dialogue [!UICONTROL de sélection] Balises sur les [!UICONTROL propriétés]du fichier.
-
-   * Les lecteurs d’écran annoncent les en-têtes de ligne et les éléments de ligne des tableaux afin que les utilisateurs sachent quelles entrées appartiennent à la même ligne.
-
-   * Titre de page significatif et descriptif de la page de recherche.
-
-   * Les lecteurs d’écran annoncent les options du panneau de filtre de recherche sous forme d’accordéons extensibles.
-
-### Autres améliorations des ressources {#other-enhancements-assets-6560}
-
-* Les groupes d’utilisateurs associés aux dossiers (privés et non privés) sont maintenant supprimés du référentiel lors de la [suppression de ces dossiers](/help/assets/private-folder.md#delete-private-folder). Toutefois, les groupes d’utilisateurs redondants, orphelins, inutilisés et générés automatiquement peuvent être supprimés du référentiel à l’aide de JMX.
+* [!DNL Assets] et [!DNL Dynamic Media] offrent plusieurs améliorations d’accessibilité. Les améliorations ont trait à la navigation au clavier, à l’utilisation de lecteurs d’écran, ainsi qu’à l’utilisation de technologies d’assistance (AT). Voir Améliorations [et](/help/release-notes/sp-release-notes.md#assets-6570) améliorations [[!DNL Dynamic Media] ](/help/release-notes/sp-release-notes.md#dynamic-media-6570)des ressources. <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
-### Préremplir un formulaire adaptatif au niveau du client {#prefill-merge-data-at-client}
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] les packages de modules complémentaires sont rendus disponibles une semaine après la publication du Service Pack [!DNL Experience Manager] programmée. [!DNL Experience Manager] La version 6.5 du Service Pack 7 (6.5.7.0) est prévue pour le 26 novembre 2020.
 
-Lorsque vous préremplissez un formulaire adaptatif, le [!DNL Experience Manager Forms] serveur fusionne les données avec un formulaire adaptatif et vous transmet le formulaire rempli. Par défaut, l’action de fusion des données a lieu sur le serveur.
-Vous pouvez maintenant configurer le [!DNL Experience Manager Forms] serveur pour qu’il [exécute l’action de fusion des données sur le client](../../help/forms/using/prepopulate-adaptive-form-fields.md) plutôt que sur le serveur. Il réduit considérablement le temps nécessaire pour préremplir et générer les formulaires adaptatifs.
+## Principales fonctionnalités des Service Packs [!DNL Experience Manager] 6.5 précédents {#key-features-previous-service-packs}
 
-### Intégration du modèle de données de formulaire avec les API RESTful sur un serveur avec une implémentation SSL bidirectionnelle {#fdm-integration-rest-apis-two-way-ssl}
+### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-[!DNL Experience Manager Forms] Le modèle de données de formulaire peut désormais [s’intégrer aux API RESTful sur un serveur sur lequel un protocole SSL bidirectionnel est implémenté](../../help/forms/using/configure-data-sources.md).
+#### Disponibilité de l’opération de déplacement de page en mode asynchrone (6.5.6.0) {#page-move-asynchronous}
 
-
-### Prise en charge Ajoutée des [!DNL Adobe Sign] balises de texte dans Automated forms conversion Service {#sign-integration-acroform-afcs}
-
-Si un AcroForm inclut des [!DNL Adobe Sign] balises de texte, ces champs sont maintenant reconnus et représentés comme [!DNL Adobe Sign] champs dans le formulaire adaptatif converti à l’aide de [!DNL Automated Forms Conversion service]. Un signataire peut remplir ces champs lors de la signature du formulaire adaptatif.
-
-### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
-
-Vous pouvez utiliser [!DNL Automated Forms Conversion service] pour convertir des PDF forms colorés en formulaires adaptatifs.
-
-### Prise en charge des protocoles SMB 2 et SMB 3 {#smb-support}
-
-[!DNL Experience Manager Forms] prend désormais en charge les protocoles SMB 2 et SMB 3.
-
-### Mise en cache améliorée pour les pages de formulaires adaptatifs converties {#enhanced-caching-translated-adaptive-forms}
-
-Vous pouvez désormais spécifier un [paramètre régional en tant que sélecteur dans l’URL du formulaire adaptatif au lieu d’un argument dans l’URL](../../help/forms/using/supporting-new-language-localization.md)du formulaire adaptatif. Il permet de mettre en cache les formulaires adaptatifs convertis sur [!DNL Experience Manager Dispatcher]. La mise en cache des formulaires adaptatifs traduits n’était pas possible dans les versions précédentes. Pour plus d’informations sur la configuration de la mise en cache pour l’utilisation des paramètres régionaux en tant que sélecteur dans l’URL du formulaire adaptatif, voir [Configurer le cache de formulaire adaptatif sur le répartiteur](../../help/forms/using/configure-adaptive-forms-cache.md).
-
-### Enregistrer la sortie du service de modèle de données de formulaire dans une variable {#save-fdm-service-to-variable}
-
-Le modèle de données de formulaire vous permet d’enregistrer la sortie d’un service de modèle de données de formulaire dans une variable. [!DNL Experience Manager Forms] mappe désormais automatiquement le type du service de modèle de données de formulaire au type de variable.
-
-### Joindre plusieurs fichiers pour le composant Pièce jointe {#attach-multiple-files}
-
-Vous pouvez maintenant [joindre plusieurs fichiers](../../help/forms/using/introduction-forms-authoring.md) au composant [!UICONTROL Pièce jointe] des formulaires adaptatifs.
-
-
-
-## Principales fonctionnalités des Service Packs version 6.5 du Experience Manager précédent {#key-features-previous-service-packs}
-
-### Experience Manager Sites {#aem-sites-previous-service-packs}
+L’opération de déplacement de page est désormais disponible en mode asynchrone. Outre l’exécution immédiate, vous pouvez également planifier l’opération Déplacement de page pour une exécution ultérieure.
 
 #### Améliorations de l&#39;accessibilité (6.5.5.0) {#accessibility-sites}
 
@@ -158,6 +94,36 @@ Vous pouvez désormais sélectionner des styles dans la boîte de dialogue du co
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
 
+#### Accessibility enhancements (6.5.6.0) {#accessibility-assets-6560}
+
+* **Amélioration de la mise au point de l’interface utilisateur lors de la navigation** au clavier, par exemple en mettant l’accent sur :
+
+   * `x` dans la boîte de dialogue Prévisualisation [!UICONTROL de] version d’une ressource dans le [!UICONTROL journal].
+
+   * Options d’interface utilisateur utilisables.
+
+   * Champ Courriel de la boîte de dialogue [!UICONTROL Partager le lien] et champ permettant d’ajouter un groupe d’utilisateurs fermé dans l’onglet [!UICONTROL Autorisation] de [!UICONTROL Propriétés]du dossier.
+
+* **Fonctionnalité améliorée à l’aide des touches du clavier**
+
+   Les utilisateurs peuvent utiliser les touches du clavier pour faire glisser des commandes dans l’éditeur de Schémas de métadonnées en mode de navigation du lecteur d’écran.
+
+* **Amélioration de l’utilisation des lecteurs** d’écran en raison des éléments suivants :
+
+   * Les lecteurs d’écran annoncent l’objectif des lecteurs vidéo et audio.
+
+   * Les lecteurs d’écran annoncent l’objectif des options de l’interface utilisateur pour supprimer les balises sélectionnées à l’aide de la boîte de dialogue [!UICONTROL de sélection] Balises sur les [!UICONTROL propriétés]du fichier.
+
+   * Les lecteurs d’écran annoncent les en-têtes de ligne et les éléments de ligne des tableaux afin que les utilisateurs sachent quelles entrées appartiennent à la même ligne.
+
+   * Titre de page significatif et descriptif de la page de recherche.
+
+   * Les lecteurs d’écran annoncent les options du panneau de filtre de recherche sous forme d’accordéons extensibles.
+
+#### Autres améliorations apportées à [!DNL Assets] (6.5.6.0) {#other-enhancements-assets-6560}
+
+* Les groupes d’utilisateurs associés aux dossiers (privés et non privés) sont maintenant supprimés du référentiel lors de la [suppression de ces dossiers](/help/assets/private-folder.md#delete-private-folder). Toutefois, les groupes d’utilisateurs redondants, orphelins, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de JMX.
+
 #### Améliorations de l’accessibilité dans [!DNL Assets] (6.5.5.0) {#assets-accessibility}
 
 [!DNL Experience Manager Assets] est désormais plus accessible en conformité avec les Web Content Accessibility Guidelines (WCAG). L’accessibilité a été améliorée en raison des améliorations suivantes :
@@ -184,7 +150,7 @@ La prise en charge des images 3D dans [!DNL Dynamic Media] permet aux clients de
 
 * Publiez et vue des ressources 3D courantes sur [!DNL Experience Manager Sites] les pages à l’aide du composant [!DNL Sites] WCM.
 
-#### Configurer [!DNL Experience Manager Assets] avec [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
+#### Configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
 Le canal d&#39;autorisation entre [!DNL Experience Manager Assets] et [!DNL Brand Portal] est modifié. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] est maintenant configuré avec les E/S [!DNL Brand Portal] par Adobe, qui obtiennent un jeton IMS pour l&#39;autorisation de votre [!DNL Brand Portal] locataire.
 
@@ -201,7 +167,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 * Les contraintes de format de date et d’heure sont fournies dans les libellés de champs des champs de date, afin de permettre aux utilisateurs de saisir la date dans le format correct à l’aide du clavier.
 Par exemple, `On Time (MM-DD-YYYY HH:mm)`. Ici MM est le mois en format à deux chiffres, AAAA est l&#39;année, JJ est le jour en format à deux chiffres, HH est l&#39;heure en format militaire à 24 heures et mm est la minute.
 
-* Les lecteurs d’écran annoncent maintenant le `X` symbole pour supprimer les balises sélectionnées ainsi que le nombre de balises sélectionnées.
+* Les lecteurs d’écran annoncent l’option de suppression des balises sélectionnées (`X` symbole) et le nombre de balises sélectionnées.
 
 #### Colonne triable pour la date de création des actifs dans la vue de liste (6.5.3.0) {#sortable-date-created-column}
 
@@ -215,6 +181,20 @@ Une nouvelle colonne pouvant être triée pour la date de création des ressourc
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
+#### Invalider le contenu mis en cache du CDN (6.5.6.0) {#invalidate-cdn-cached-content}
+
+Vous pouvez désormais utiliser l’interface [!DNL Dynamic Media] utilisateur pour invalider le contenu mis en cache du réseau de Diffusion de contenu (CDN). Par conséquent, les ressources mises à jour sont disponibles instantanément au lieu d’attendre l’expiration du cache. Vous pouvez invalider le CDN en procédant comme suit :
+
+* Création d’un modèle d’invalidation CDN : Sélection de fichiers et d’URL associées à des modèles de formulaire
+
+* Sélection de fichiers et de paramètres prédéfinis associés par le biais du sélecteur de fichiers
+
+* Ajouter des URL de fichier complètes
+
+#### Publication sélective d&#39;actifs vers [!DNL Experience Manager] et [!DNL Dynamic Media] (6.5.6.0) {#selective-publishing}
+
+Vous pouvez désormais choisir de publier ou d’annuler la publication de fichiers sur [!DNL Experience Manager] ou [!DNL Dynamic Media] à l’aide de l’assistant Publication  rapide ou [!UICONTROL Gérer la publication] . Vous pouvez également définir le mode `Publish` ou `Unpublish` le mode au niveau du dossier.
+
 #### Smart Imaging for Dynamic Media {#smart-imaging}
 
 L’imagerie intelligente utilise les caractéristiques d’affichage uniques de chaque utilisateur pour fournir automatiquement les images appropriées optimisées pour leur expérience, ce qui se traduit par de meilleures performances et un meilleur engagement. L’imagerie dynamique fonctionne avec vos paramètres d’image prédéfinis et utilise des informations à la dernière milliseconde de la diffusion pour réduire davantage encore la taille du fichier d’image en fonction de la vitesse de connexion du réseau et du navigateur. Voir [Smart Imaging](../assets/imaging-faq.md).
@@ -225,7 +205,40 @@ Le recadrage intelligent pour la vidéo (une fonctionnalité en option dans les 
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### Personnaliser les colonnes de la boîte de réception Adobe Experience Manager (6.5.5.0){#customize-aem-inbox-columns}
+#### Préremplissage d’un formulaire adaptatif au niveau du client (6.5.6.0) {#prefill-merge-data-at-client}
+
+Lorsque vous préremplissez un formulaire adaptatif, le [!DNL Experience Manager Forms] serveur fusionne les données avec un formulaire adaptatif et vous transmet le formulaire rempli. Par défaut, l’action de fusion des données a lieu sur le serveur.
+Vous pouvez maintenant configurer le [!DNL Experience Manager Forms] serveur pour qu’il [exécute l’action de fusion des données sur le client](../../help/forms/using/prepopulate-adaptive-form-fields.md) plutôt que sur le serveur. Il réduit considérablement le temps nécessaire pour préremplir et générer les formulaires adaptatifs.
+
+#### Intégration du modèle de données de formulaire avec les API RESTful sur un serveur avec une implémentation SSL bidirectionnelle (6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}
+
+[!DNL Experience Manager Forms] Le modèle de données de formulaire peut désormais [s’intégrer aux API RESTful sur un serveur sur lequel un protocole SSL bidirectionnel est implémenté](../../help/forms/using/configure-data-sources.md).
+
+#### Prise en charge Ajoutée des [!DNL Adobe Sign] balises de texte dans Automated forms conversion Service (6.5.6.0) {#sign-integration-acroform-afcs}
+
+Si un AcroForm inclut des [!DNL Adobe Sign] balises de texte, ces champs sont maintenant reconnus et représentés comme [!DNL Adobe Sign] champs dans le formulaire adaptatif converti à l’aide de [!DNL Automated Forms Conversion service]. Un signataire peut remplir ces champs lors de la signature du formulaire adaptatif.
+
+#### Support to convert colored PDF forms to adaptive forms (6.5.6.0) {#colored-PDF-forms}
+
+Vous pouvez utiliser [!DNL Automated Forms Conversion service] pour convertir des PDF forms colorés en formulaires adaptatifs.
+
+#### Prise en charge des protocoles SMB 2 et SMB 3 (6.5.6.0) {#smb-support}
+
+[!DNL Experience Manager Forms] prend désormais en charge les protocoles SMB 2 et SMB 3.
+
+#### Mise en cache améliorée pour les pages de formulaires adaptatifs converties (6.5.6.0) {#enhanced-caching-translated-adaptive-forms}
+
+Vous pouvez désormais spécifier un [paramètre régional en tant que sélecteur dans l’URL du formulaire adaptatif au lieu d’un argument dans l’URL](../../help/forms/using/supporting-new-language-localization.md)du formulaire adaptatif. Il permet de mettre en cache les formulaires adaptatifs convertis sur [!DNL Experience Manager Dispatcher]. La mise en cache des formulaires adaptatifs traduits n’était pas possible dans les versions précédentes. Pour plus d’informations sur la configuration de la mise en cache pour l’utilisation des paramètres régionaux en tant que sélecteur dans l’URL du formulaire adaptatif, voir [Configurer le cache de formulaire adaptatif sur le répartiteur](../../help/forms/using/configure-adaptive-forms-cache.md).
+
+#### Enregistrer la sortie du service de modèle de données de formulaire dans une variable (6.5.6.0) {#save-fdm-service-to-variable}
+
+Le modèle de données de formulaire vous permet d’enregistrer la sortie d’un service de modèle de données de formulaire dans une variable. [!DNL Experience Manager Forms] mappe désormais automatiquement le type du service de modèle de données de formulaire au type de variable.
+
+#### Joindre plusieurs fichiers pour le composant Pièce jointe (6.5.6.0) {#attach-multiple-files}
+
+Vous pouvez maintenant [joindre plusieurs fichiers](../../help/forms/using/introduction-forms-authoring.md) au composant [!UICONTROL Pièce jointe] des formulaires adaptatifs.
+
+#### Personnaliser les colonnes de la boîte de réception Adobe Experience Manager (6.5.5.0) {#customize-aem-inbox-columns}
 
 Vous pouvez personnaliser une [!DNL Experience Manager] boîte de réception pour modifier le titre par défaut d&#39;une colonne, réorganiser la position d&#39;une colonne et afficher d&#39;autres colonnes en fonction des données d&#39;un flux de travail. Les membres de `administrators` ou `workflow-administrators` de groupe peuvent personnaliser les colonnes. Pour plus d’informations, voir Contrôle [](../sites-authoring/inbox.md#inbox-admin-control)d’administration.
 
@@ -308,21 +321,23 @@ Vous pouvez spécifier une date et une heure de début, ainsi qu’une date et u
 
 Vous pouvez utiliser l’API de traitement par lots pour produire plusieurs communications interactives à partir d’un modèle. Le modèle est une communication interactive sans données. L’API de traitement par lots combine les données avec un modèle pour produire une communication interactive. L&#39;API est utile pour la production de masse de communications interactives. Par exemple, factures de téléphone, relevés de carte de crédit pour plusieurs clients. Voir [Générer plusieurs communications interactives à l’aide de l’API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md)de traitement par lot.
 
-## Principales versions depuis Adobe Experience Manager 6.5 SP5 {#key-releases-since-last-sp}
+## Principales versions depuis Adobe Experience Manager 6.5 SP6 {#key-releases-since-last-sp}
 
-Entre le 04 juin 2020 et le 03 septembre 2020, Adobe a publié ce qui suit, en plus des Service Packs et des Fix Packs cumulatifs :
+Entre le 3 septembre 2020 et le 26 novembre 2020, Adobe a publié ce qui suit, en plus des Service Packs et des Fix Packs cumulatifs :
 
-* [Le portail](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) de distribution de logiciels permet de télécharger des Service Packs Experience Manager, des packs de correctifs cumulatifs, des correctifs logiciels et des packs de fonctionnalités.
+* [!DNL Adobe Experience Manager] en tant que Cloud Service [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) et [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
 
-* [!DNL Adobe Experience Manager as a cloud service] [2020.7.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) et [2020.8.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+* [[!DNL Experience Manager] application de bureau 2.0 (2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [application de bureau Experience Manager 2.0 (2.0.3.2)](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+* [Site de référence WKND - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
 
-* [Experience Manager Screens : Feature Pack 202008](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
+* [Experience Manager Screens : Feature Pack 202008](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
+
+* [Adobe Asset Link v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >
->* [Documentation de Adobe Experience Manager 6.5](../user-guide/home.md)
->* [Notes de mise à jour générales pour Adobe Experience Manager 6.5](release-notes.md)
->* [Notes de mise à jour du Service Pack pour Adobe Experience Manager 6.5](sp-release-notes.md)
+>* [[!DNL Adobe Experience Manager] 6.5 Documentation](../user-guide/home.md)
+>* [Notes de mise à jour générales pour [!DNL Adobe Experience Manager] la version 6.5](release-notes.md)
+>* [Notes de mise à jour du Service Pack pour [!DNL Adobe Experience Manager] la version 6.5](sp-release-notes.md)
 
