@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1890'
 ht-degree: 4%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 4%
 
 ## Latest Releases {#latest-releases}
 
-aem 6.5 Collectivités GA expédie avec Collectivités package. Pour en savoir plus sur les mises à jour des [communautés](/help/release-notes/release-notes.md#experiencemanagercommunities)AEM 6.5, consultez les Notes [de mise à jour de](/help/release-notes/release-notes.md#communities-release-notes.html)AEM 6.5.
+aem 6.5 Communities GA inclut le package Communities. Pour en savoir plus sur les mises à jour des [communautés](/help/release-notes/release-notes.md#experiencemanagercommunities)AEM 6.5, consultez les Notes [de mise à jour de](/help/release-notes/release-notes.md#communities-release-notes.html)AEM 6.5.
 
 ### Mises à jour de AEM 6.5 {#aem-updates}
 
@@ -123,7 +123,7 @@ Les étapes nécessaires sont les suivantes :
    * Par exemple, https://localhost:4502/system/console/bundles
    * Sélectionner **`Install/Update`**
    * Parcourir... pour sélectionner le lot extrait de l&#39;archive ZIP téléchargée
-   * Vérifiez que le pilote JDBC d&#39; *Oracle Corporation pour MySQLcom.mysql.jdbc* est principal et débuts-le s&#39;il ne l&#39;est pas (ou vérifiez les journaux).
+   * Vérifiez que le pilote JDBC de *Oracle Corporation pour MySQLcom.mysql.jdbc* est principal et début-le s&#39;il n&#39;est pas utilisé (ou vérifiez les journaux).
 
 1. Si vous effectuez l’installation sur un déploiement existant après la configuration de JDBC, regroupez JDBC sur le nouveau connecteur en réenregistrant la configuration JDBC à partir de la console Web :
 
