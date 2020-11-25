@@ -3,10 +3,10 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: c2c0f38d0c8e403264db05064d4423ef46880d9a
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 60%
+source-wordcount: '1634'
+ht-degree: 59%
 
 ---
 
@@ -27,21 +27,21 @@ Reportez-vous à la légende pour comprendre le niveau de prise en charge.
 
 Les formats d’image pixellisée pris en charge [!DNL Assets] sont les suivants :
 
-| Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Modification | Écriture différée des métadonnées | Statistiques |
+| Format | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniatures | Modification | Écriture différée des métadonnées | Statistiques |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
-| PBM | ✓ | ✓ |  |  |  |  | ✓ |
-| PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD ‡ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
-| PICT |  |  |  |  |  |  | ✓ |
-| PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PNM | ✓ | ✓ | − | − | − | − | ✓ |
+| PGM | ✓ | ✓ | − | − | − | − | ✓ |
+| PBM | ✓ | ✓ | − | − | − | − | ✓ |
+| PPM | ✓ | ✓ | − | − | − | − | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
+| PICT | − | − | − | − | − | − | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
@@ -53,10 +53,10 @@ Les formats d’image pixellisée pris en charge [!DNL Dynamic Media] sont les s
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ |  |  |  |  |
-| PSD ‡ | ✓ |  |  |  |  |
+| BMP | ✓ | − | − | − | − |
+| PSD ‡ | ✓ | − | − | − | − |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PICT | ✓ |  |  |  |  |
+| PICT | ✓ | − | − | − | − |
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
@@ -78,12 +78,12 @@ Voir [Utilisation de ressources 3D dans Dynamic Media.](/help/assets/assets-3d.
 
 | Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | − | − |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | − | ✓ | − |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 
 ## Formats d’image pixellisée non pris en charge dans Contenu multimédia dynamique {#unsupported-image-formats-dynamic-media}
 
@@ -144,32 +144,32 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 | Format | Stockage | [Gestion des métadonnées](metadata.md) | Extraction de texte<br> intégral | [Extraction de métadonnées](metadata.md) | Thumbnail<br> generation | [Extraction de sous-ressource](managing-linked-subassets.md) | [Écriture différée des métadonnées](xmp-writeback.md) | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
-| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| ODT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| RTF | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| TXT | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| XLS | ✓ | ✓ | ✓ |  |  |  |  | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |
-| ODS | ✓ | ✓ | ✓ |  |  |  |  |  |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
-| ODP | ✓ | ✓ | ✓ |  |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
-| PS | ✓ | ✓ |  |  |  |  |  |  |
-| QXP | ✓ | ✓ |  |  |  |  |  |  |
-| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
+| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODS | ✓ | ✓ | ✓ | − | − | − | − | − |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| ODP | ✓ | ✓ | ✓ | − | − | − | − | − |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| PS | ✓ | ✓ | − | − | − | − | − | − |
+| QXP | ✓ | ✓ | − | − | − | − | − | − |
+| EPUB | ✓ | ✓ | − | ✓ | ✓ | − | − | − |
 
 ## Formats de document pris en charge dans Contenu multimédia dynamique {#supported-document-formats-dynamic-media}
 
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
 
 Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
@@ -181,47 +181,47 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 ## Formats multimédias pris en charge {#supported-multimedia-formats}
 
-|  | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniature | Transcodage FFmpeg |
+|  | Stockage | Gestion des métadonnées | Extraction de métadonnées | Génération de miniatures | Transcodage FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | − | * |
-| MIDI | ✓ | ✓ |  | − | * |
-| 3GP | ✓ | ✓ |  | − | * |
+| AAC | ✓ | ✓ | − | − | * |
+| MIDI | ✓ | ✓ | − | − | * |
+| 3GP | ✓ | ✓ | − | − | * |
 | MP3 | ✓ | ✓ | ✓ | − | * |
-| MPG | ✓ | ✓ |  | − | * |
-| OGA | ✓ | ✓ |  | − | * |
-| OGG | ✓ | ✓ |  | − | * |
-| RA | ✓ | ✓ |  | − | * |
-| WAV | ✓ | ✓ |  | − | * |
-| WMA | ✓ | ✓ |  | − | * |
-| DVI | ✓ | ✓ |  | * | * |
-| FLV | ✓ | ✓ |  | * | * |
-| M4V | ✓ | ✓ |  | * | * |
-| MPEG | ✓ | ✓ |  | * | * |
-| OGV | ✓ | ✓ |  | * | * |
-| MOV | ✓ | ✓ |  | * | * |
-| WMV | ✓ | ✓ |  | * | * |
-| SWF | ✓ | ✓ |  |  |  |
+| MPG | ✓ | ✓ | − | − | * |
+| OGA | ✓ | ✓ | − | − | * |
+| OGG | ✓ | ✓ | − | − | * |
+| RA | ✓ | ✓ | − | − | * |
+| WAV | ✓ | ✓ | − | − | * |
+| WMA | ✓ | ✓ | − | − | * |
+| DVI | ✓ | ✓ | − | * | * |
+| FLV | ✓ | ✓ | − | * | * |
+| M4V | ✓ | ✓ | − | * | * |
+| MPEG | ✓ | ✓ | − | * | * |
+| OGV | ✓ | ✓ | − | * | * |
+| MOV | ✓ | ✓ | − | * | * |
+| WMV | ✓ | ✓ | − | * | * |
+| SWF | ✓ | ✓ | − | − | − |
 
 ## Supported input video formats in Dynamic Media for transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Extension de fichier vidéo | Conteneur | Codecs vidéo recommandés | Codecs vidéo non pris en charge |
 |---|---|---|---|
-| MP4 | MPEG-4 | H264/AVC (tous les profils) |  |
+| MP4 | MPEG-4 | H264/AVC (tous les profils) | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 et HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (fichiers d’animation vectorielle) |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 |  |
-| M4V | Apple iTunes | H264/AVC |  |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
+| M4V | Apple iTunes | H264/AVC | − |
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
-| WebM | WebM | Google VP8 |  |
-| OGV, OGG | Ogg | Theora, VP3, Dirac |  |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |  |
-| MTS | AVCHD | H264/AVC |  |
-| MKV | Matroska | H264/AVC |  |
-| R3D, RM | Red Raw Video | MJPEG 2000 |  |
+| WebM | WebM | Google VP8 | − |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| MTS | AVCHD | H264/AVC | − |
+| MKV | Matroska | H264/AVC | − |
+| R3D, RM | Red Raw Video | MJPEG 2000 | − |
 | RAM, RM | RealVideo | Non pris en charge | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Native Flac | FLAC (Free Lossless Audio Codec) |  |
-| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 |  |
+| FLAC | Native Flac | FLAC (Free Lossless Audio Codec) | − |
+| MJ2 | Motion JPEG 2000 | Codec Motion JPEG 2000 | − |
 
 ## Formats d’archives pris en charge {#supported-archive-formats}
 
@@ -229,23 +229,23 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 | Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Autres formats pris en charge {#other-supported-formats}
 
-Le tableau ci-dessous décrit l’applicabilité des processus de gestion des actifs numériques courants pour d’autres formats de fichier. La fonctionnalité de gestion des actifs numériques habituelle, telle que l’enregistrement, le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées, à l’exception de la Diffusion Contenu multimédia dynamique, est prise en charge pour tous les fichiers.
+Les fonctionnalités de gestion des actifs numériques habituelles, telles que l’enregistrement, le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées, à l’exception de la [!DNL Dynamic Media] diffusion, sont prises en charge pour de nombreux formats de fichier. L’applicabilité des fonctionnalités à quelques formats de fichier spécifiques est décrite ci-dessous.
 
 | Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript (lorsque configuré avec son propre domaine de diffusion) |  |  |  |  |  | ✓ |
+| JavaScript (lorsque configuré avec son propre domaine de diffusion) | − | − | − | − | − | ✓ |
 
 ## Pris en charge Types MIME {#supported-mime-types}
 
@@ -313,6 +313,6 @@ Une liste de types MIME pris en charge est disponible dans le CRXDE Lite à `/co
 
 >[!MORELIKETHIS]
 >
->* [Activation de la prise en charge du paramètre de tâche de téléchargement Assets/Scene7 basé sur le type MIME](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [Activez la prise en charge](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)des paramètres de tâche de téléchargement des fichiers MIME basés sur le type et de la tâche de téléchargement de contenu Dynamic Media Classic.
 >* [Configurez le type MIME en fonction de la prise en charge](config-dynamic.md)des paramètres de tâche de téléchargement.
 
