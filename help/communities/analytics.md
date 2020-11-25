@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2743'
 ht-degree: 5%
 
 ---
@@ -123,7 +123,11 @@ En vous connectant à [Adobe Experience Cloud](https://docs.adobe.com/content/he
 
 Si vous utilisez une **nouvelle suite** de rapports, sachez qu’une nouvelle suite de rapports ne peut comporter que 4 eVars et 6 variables de événement, tandis que 11 eVar et 7 variables de événement sont requises pour les communautés.
 
-Si vous utilisez une suite **de rapports** existante, il peut être nécessaire de [modifier le mappage](#modifying-analytics-variable-mapping) des variables avant d’activer la structure Analytics pour un site communautaire. Contactez votre gestionnaire de compte pour toute question concernant les variables dédiées aux communautés.
+Si vous utilisez une suite **de rapports** existante, il peut être nécessaire de [modifier le mappage](#modifying-analytics-variable-mapping) des variables avant d’activer la structure Analytics pour un site communautaire.
+
+<!--
+Contact your account representative for any concerns regarding the variables dedicated to Communities.
+-->
 
 >[!CAUTION]
 >
@@ -241,7 +245,6 @@ Pour enregistrer les paramètres :
 
       * Vérifiez que les entrées ne contiennent pas d’espaces de début.
       * Essayez un autre centre de données.
-      * Contactez votre gestionnaire de compte.
 
 * **Cliquez sur OK**.
 
