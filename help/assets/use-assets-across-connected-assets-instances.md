@@ -1,12 +1,12 @@
 ---
-title: Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Sites]
+title: Utilisation des ressources connectées pour partager des ressources DAM dans  [!DNL Sites]
 description: Utilisez des ressources disponibles pour un déploiement  [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites]  à distance.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 916b49572981115f6178c04f260ce63bcfc6d054
+source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
 workflow-type: tm+mt
-source-wordcount: '2251'
-ht-degree: 88%
+source-wordcount: '2263'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ Les utilisateurs peuvent créer des pages web dans [!DNL Experience Manager Site
 
 ## Présentation de la fonction Ressources connectées {#overview-of-connected-assets}
 
-Lors de la publication des pages dans l’[!UICONTROL Éditeur], les auteurs peuvent facilement rechercher, parcourir et intégrer les ressources d’un autre déploiement [!DNL Assets]. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Sites] avec un déploiement différent (distant) de [!DNL Assets].
+Lors de la modification de pages dans l’éditeur [!UICONTROL de] page en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un [!DNL Assets] déploiement différent qui agit comme source de ressources. Les administrateurs créent une intégration ponctuelle d’un déploiement de [!DNL Experience Manager] capacités avec [!DNL Sites] un autre déploiement de [!DNL Experience Manager] capacités avec [!DNL Assets] des capacités.
 
 Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet de rechercher et d’utiliser aisément plusieurs ressources distantes à la fois. Envisagez de migrer en masse de nombreuses ressources distantes pour les rendre disponibles sur le déploiement local [!DNL Sites] en une seule fois. Reportez-vous au guide [de migration des ressources des](/help/assets/assets-migration-guide.md)Experience Manager.
 
@@ -30,11 +30,11 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 * Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
 * Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] en tant que Cloud Service. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager as a Cloud Service], voir Ressources [connectées en Experience Manager en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
 
-   |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
+   |  | [!DNL Sites] as a Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]as a Cloud Service** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] sur AMS** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager]6.5 [!DNL Assets] on-premise** | pas de prise en charge | pas de prise en charge | pas de prise en charge |
+   | **[!DNL Experience Manager] 6.5 [!DNL Assets] sur AMS** | Pris en charge | Pris en charge | Pris en charge |
+   | **[!DNL Experience Manager] 6.5 [!DNL Assets] on-premise** | Pas de prise en charge | Pas de prise en charge | Pas de prise en charge |
 
 ### Formats de fichiers pris en charge {#mimetypes}
 
@@ -77,7 +77,7 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
    1. Identifiants d’un distributeur DAM (utilisateur technique).
    1. Dans le champ **[!UICONTROL Point de montage]**, entrez le chemin local [!DNL Experience Manager] où [!DNL Experience Manager] récupère les ressources. Par exemple, le dossier `remoteassets`.
    1. Ajustez les valeurs du **[!UICONTROL Seuil d’optimisation du transfert du binaire d’origine]** en fonction de votre réseau. Un rendu de ressource dont la taille est supérieure à ce seuil est transféré de façon asynchrone. 
-   1. Sélectionnez **[!UICONTROL Banque de données partagée avec les ressources connectées]** si vous utilisez une banque de données pour stocker vos ressources et qu’elle constitue le support de stockage commun aux deux déploiements. Dans ce cas, la limite de seuil n’a pas d’importance, car les fichiers binaires de ressources se trouvent dans le magasin de données et ne sont pas transférés.
+   1. Sélectionnez **[!UICONTROL Entrepôt de données partagé avec les ressources connectées]** si vous utilisez un entrepôt de données pour stocker vos ressources et qu’elle constitue le support de stockage commun aux deux déploiements. Dans ce cas, la limite de seuil n’a pas d’importance, car les fichiers binaires de ressources se trouvent dans l’entrepôt de données et ne sont pas transférés.
 
    ![Exemple de configuration standard pour les ressources connectées](assets/connected-assets-typical-config.png)
 
@@ -111,7 +111,7 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
 
    1. Dans le champ **[!UICONTROL Origines autorisées]**, entrez l’URL de l’instance locale [!DNL Sites], c’est-à-dire `https://[local_sites]:[port]`. Enregistrez la configuration.
 
-## Utilisation des ressources distantes   {#use-remote-assets}
+## Utilisation des ressources distantes {#use-remote-assets}
 
 Les auteurs de site web utilisent l’outil de recherche de contenu pour se connecter au déploiement DAM. Les auteurs peuvent parcourir, rechercher et faire glisser les ressources distantes dans un composant. Pour vous authentifier sur le système DAM distant, conservez les identifiants de l’utilisateur DAM fournis par votre administrateur.
 
@@ -157,9 +157,9 @@ Utilisez la configuration ci-dessus pour découvrir l’expérience de création
 
 Les ressources récupérées peuvent être utilisées comme n’importe quelle autre ressource locale, à la différence que les métadonnées associées ne peuvent pas être modifiées.
 
-## Limitations and best practices {#tips-and-limitations}
+## Restrictions et bonnes pratiques {#tips-and-limitations}
 
-* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Asset Insight](/help/assets/asset-insights.md) sur l’ [!DNL Sites] instance.
+* Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Asset Insight](/help/assets/asset-insights.md) sur l’instance [!DNL Sites].
 
 ### Autorisations et gestion des ressources {#permissions-and-managing-assets}
 
@@ -167,7 +167,7 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 * Les ressources locales sont des copies en lecture seule. Les composants [!DNL Experience Manager] effectuent des modifications non destructives des ressources. Aucune autre modification n’est autorisée.
 * Les ressources récupérées localement sont disponibles à des fins d’écriture uniquement. Les workflows de mise à jour de ressources ne peuvent pas être appliqués et les métadonnées ne peuvent pas être modifiées.
 * Seules les images et les formats de document répertoriés sont pris en charge. Les ressources [!DNL Dynamic Media], ainsi que les fragments de contenu et d’expérience, ne sont pas pris en charge.
-* [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Cela signifie que toutes les métadonnées extraites peuvent ne pas être affichées. Si le schéma est mis à jour séparément, toutes les propriétés s’affichent.
+* [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Il n’est donc pas possible d’afficher toutes les métadonnées extraites. Si le schéma est mis à jour séparément, toutes les propriétés sont affichées.
 * Tous les auteurs [!DNL Sites] disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
 * Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
@@ -186,9 +186,9 @@ Les ressources récupérées peuvent être utilisées comme n’importe quelle a
 * L’opération de récupération échoue après 5 secondes. Les auteurs peuvent rencontrer des problèmes lors de la récupération des ressources, par exemple en cas de problèmes de réseau. Les auteurs peuvent effectuer une nouvelle tentative et faire glisser la ressource distante de l’[!UICONTROL outil de recherche de contenu] vers l’[!UICONTROL éditeur de page].
 * Les modifications simples non destructives et les modifications prises en charge par le composant `Image` peuvent être effectuées sur les ressources récupérées. Les ressources sont en lecture seule.
 * La seule méthode pour récupérer à nouveau la ressource consiste à la faire glisser sur une page. Il n’existe aucune prise en charge d’API ni aucune autre méthode pour récupérer à nouveau une ressource afin de la mettre à jour.
-* Si des ressources sont désaffectées de la gestion des actifs numériques, elles continuent d’être utilisées sur [!DNL Sites] les pages.
+* Si des ressources sont désaffectées de la gestion des ressources numériques, elles continuent d’être utilisées sur les pages [!DNL Sites].
 
-## Résolution des problèmes   {#troubleshoot}
+## Résolution des problèmes {#troubleshoot}
 
 Pour résoudre le scénario d’erreur courant, procédez comme suit :
 
