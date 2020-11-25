@@ -3,15 +3,373 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes 
 description: Notes de mise à jour des Service Packs de [!DNL Adobe Experience Manager] la version 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 263a25b70fe4a3e7de65b47f07932d2e5f3d0197
+source-git-commit: 62a04c1d9f62a5a5fa6f97f415015001daa94747
 workflow-type: tm+mt
-source-wordcount: '11483'
-ht-degree: 26%
+source-wordcount: '14760'
+ht-degree: 20%
 
 ---
 
 
 # Correctifs et packs de fonctionnalités inclus dans les packs de service précédents {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+
+## [!DNL Adobe Experience Manager] 6.5.6.0 {#experience-manager-6560}
+
+Adobe Experience Manager 6.5.6.0 est une mise à jour importante qui comprend de nouvelles fonctionnalités, des améliorations clés demandées par les clients et des améliorations de performances, de stabilité et de sécurité, publiées depuis la version 6.5 d’ **avril 2019**. Il peut être installé sur Adobe Experience Manager 6.5.
+
+Les principales fonctionnalités et améliorations introduites dans Adobe Experience Manager 6.5.6.0 comprennent :
+
+* Publiez ou annulez sélectivement des fichiers vers [!DNL Experience Manager][!DNL Dynamic Media] ou [!UICONTROL à l’aide de l’assistant de publication] [!UICONTROL rapide ou de l’assistant de] gestion de publication.
+
+* Utilisez l’interface [!DNL Dynamic Media] utilisateur pour invalider le contenu mis en cache du réseau de Diffusion de contenu (CDN).
+
+* La publication des dossiers de contribution des ressources depuis le portail de marque vers les ressources du Experience Manager est désormais également prise en charge par le serveur proxy.
+
+* Les groupes de dossiers privés générés automatiquement sont maintenant nettoyés lors de la suppression du dossier privé dans [!DNL Experience Manager Assets].
+
+* La description des modificateurs dans l’éditeur de paramètres prédéfinis de [!UICONTROL visionneuse] vidéo a été mise à jour dans [!DNL Dynamic Media].
+
+* Un nouveau paramètre de société est fourni pour refléter l’état du [!DNL Dynamic Media] connecteur.
+
+* Les options par défaut pour `test` et `aiprocess` sont mises à jour vers `Thumbnail`, depuis `Rasterize` précédemment dans Contenu multimédia dynamique, afin de garantir que les utilisateurs doivent créer uniquement des vignettes et ignorer l’extraction de page et l’extraction de mot-clé.
+
+* [Préremplissez un formulaire adaptatif sur le client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
+
+* [Intégration du modèle de données de formulaire avec les API RESTful sur un serveur avec une implémentation](../../help/forms/using/configure-data-sources.md)SSL bidirectionnelle.
+
+* [Amélioration de la mise en cache des pages](../../help/forms/using/configure-adaptive-forms-cache.md)de formulaires adaptatifs converties.
+
+* Prise en charge des balises de texte [Adobe Sign dans Automated forms conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+
+* Prise en charge de la [conversion des formulaires colorés en formulaires](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) adaptatifs à l’aide de [!DNL Automated Forms Conversion service].
+
+* Prise en charge des protocoles SMB 2 et SMB 3.
+
+* Le référentiel intégré (Apache Jackrabbit Oak) a été mis à niveau vers la version 1.22.4.
+
+Pour une liste complète des fonctionnalités et améliorations introduites dans Experience Manager 6.5.6.0, voir [Nouveautés de Adobe Experience Manager 6.5 Service Pack 6](new-features-latest-service-pack.md).
+
+Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 6.5.6.0.
+
+### [!DNL Sites] {#sites-6560}
+
+* Dans [!DNL Sites] ou [!DNL Screens], sélectionnez un projet, puis cliquez sur Publications [!UICONTROL de]gestion. Les utilisateurs ne peuvent pas avancer dans l’assistant [!UICONTROL Gérer les publications] en raison d’erreurs d’interface utilisateur. En particulier, l’option [!UICONTROL Publier] ne fonctionne pas (NPR-34099).
+* La position par défaut d’iParsys (système de paragraphes hérité) n’est pas rétablie après avoir désélectionné les options [!UICONTROL Annuler l’héritage] ou [!UICONTROL Désactiver l’héritage] (NPR-34097).
+* Si le `RolloutConfigManagerFactoryImpl` serveur ne peut pas charger une configuration de déploiement, il ne tente pas de charger les configurations manquantes. Elle renvoie les configurations mises en cache (NPR-34092).
+* Dans le composant noyau de texte, après avoir utilisé l’option d’édition HTML source, la classe de la `em` balise est supprimée (NPR-34081).
+* Après la mise à niveau de Experience Manager 6.3.3 vers Experience Manager 6.5.3, le processus de déploiement prend beaucoup plus de temps et le déploiement échoue avec une erreur de dépassement de délai (NPR-34049).
+* Le `htmlwriter` code n&#39;incode pas les valeurs d&#39;attribut. L’annotation présente dans l’annotation XF est exportée avec des valeurs d’attribut décodées (à savoir `"` au lieu de `&#34`). Elle entraîne des problèmes du côté Cible avec le compositeur d’expérience visuelle qui utilise le fichier XF exporté (NPR-34048).
+* Lorsque vous déplacez des pages dans [!DNL Experience Manager Sites], améliorez la journalisation pour capturer l&#39;échec de création de version avec raison (NPR-34014).
+* Dans [!DNL Rich Text Editor] le cas où tout le texte est supprimé, la balise de paragraphe est également supprimée (NPR-33976).
+* Lorsque la `siteadmin` page (dans l’interface utilisateur classique) est ouverte ou actualisée, les options du `New` menu sont désactivées (NPR-33949).
+
+   ![Capture d’écran illustrant le problème du menu manquant dans l’interface utilisateur classique](assets/33949_missing_menu.png)
+
+* Un [!DNL Content Fragment] ne peut pas être utilisé comme un `TemplatedResource` car il échoue `ContentFragmentUsePojo` (NPR-33911).
+* Les opérations de déplacement synchrones et asynchrones peuvent entraîner des erreurs en raison de transferts simultanés. Les opérations de déplacement de page sont limitées au déplacement synchrone. Elle empêche le déplacement simultané des pages (NPR-33875).
+* [!UICONTROL L’opération de gestion de la publication] pour répliquer du contenu de l’instance d’auteur à l’instance de publication échoue et génère une erreur JavaScript (NPR-33872).
+* Lorsque plusieurs pages ou ressources sont sélectionnées pour créer des versions, la nouvelle version est créée uniquement pour la dernière page ou ressource sélectionnée (NPR-33866).
+* Déplacez une page de plan avec des copies dynamiques dans un autre dossier. Lors du déplacement vers le dossier d&#39;origine, l&#39;opération de déplacement échoue sans aucune erreur (NPR-33864).
+* Lorsque l&#39;action de déplacement est utilisée pour renommer une page Web dans la [!DNL Sites] Console, deux boîtes de dialogue se chevauchent à la dernière étape de l&#39;Assistant (NPR-33831).
+
+   ![Capture d&#39;écran illustrant le numéro NPR-33831 d&#39;une boîte de dialogue de déplacement se chevauchant](assets/33831_rename_dialog.png)
+
+* Les `cq:acLinks` propriétés et les `cq:acUUID` propriétés de [!DNL Adobe Campaign] la copie sont supprimées lors de l&#39;opération de copier-coller (NPR-33794).
+* Lors d’une tentative de déploiement sur une page enfant d’une copie dynamique parent détachée, [!DNL Experience Manager] génère une exception de pointeur nulle (NPR-33676).
+* Les [!DNL RTE] composants d’un conteneur de mise en page ne sont pas visibles lorsque le conteneur de mise en page est copié et collé à nouveau sur la page. Les [!DNL RTE] composants ne sont pas modifiables mais s&#39;affichent lors d&#39;une actualisation de page (NPR-33662).
+* Lors du redimensionnement d’un composant de mise en page pour différents points d’arrêt (moyens et grands), la mise en page ne se comporte pas comme prévu (NPR-33608).
+* En mode de modification en ligne dans [!DNL RTE], le fait de faire glisser une image ne fonctionne pas pour le composant Texte (NPR-33602).
+* Il est possible de créer un composant dans une page de plan avec le même nom que le nom de la page. Au cours du déploiement, `_msm_moved` est suffixe pour renommer le composant. Le composant est déplacé à la fin du système [!UICONTROL de] paragraphes (NPR-33535).
+* Lorsque offTime ou onTime est défini sur de nombreuses pages ou ressources, il est gourmand en ressources et ralentit le système au démarrage et à l&#39;arrêt (NPR-33482).
+* Un utilisateur disposant d&#39;autorisations CRUD sur `/content/experience-fragment` ne peut pas supprimer un dossier (NPR-33436).
+* Vous pouvez sélectionner [!UICONTROL HTML et JSON] comme option pour le format [!UICONTROL d’exportation] Adobe Target sur un dossier parent dans [!DNL Experience Fragments] la section. Les mêmes propriétés s’affichent dans l’interface utilisateur tactile pour les sous-dossiers de ce dossier parent. Cependant, dans CRXDE, par exemple, `cq:adobeTargetExportFormat`il affiche uniquement du code HTML au lieu de s’afficher `html,json` (NPR-33423).
+* La fonction Publier ou Annuler la publication à partir d’un alias de page n’est pas prise en charge. Supprimez l&#39;option qui semble prétendre autrement (NPR-33415).
+* Une balise spécifique peut être déplacée d’un emplacement à un autre dans [!DNL Experience Manager]. Il peut également être appliqué à différentes pages avant et après le déplacement. Lors de la modification des propriétés des pages, la balise n’est pas affichée pour modification, même si la balise est identique (NPR-33353).
+* Un modèle de page ne s’affiche pas correctement lorsqu’un conteneur de mise en page est supprimé d’un modèle qui contient plusieurs conteneurs de mise en page (NPR-33347).
+* Dans l’éditeur de modèles, essayez de supprimer un modèle utilisé par plus de 100 000 pages sous `/content/`. Une erreur s&#39;affiche sans message d&#39;erreur (NPR-33312).
+* La redirection vers [!DNL Experience Manager] la page avec ancrage ne fonctionne pas sur l’instance d’auteur, car `PageRedirectServlets` elle place une chaîne de requête après un fragment d’URL ou une ancre (NPR-34288).
+* La création d’une marque sous `/content/campaign` produit une structure qui n’autorise pas la création de campagnes. [!UICONTROL L’option Créer une marque] laisse la nouvelle marque sans possibilité de créer des [!UICONTROL Offres et des Activités] car il n’existe pas d’option [!UICONTROL Créer] (NPR-34113).
+* Vous pouvez suspendre l’affichage [!DNL Live Copy] d’une page et l’héritage est rompu comme dans le mode Editeur. Dans les propriétés de la page, l’icône représentant l’héritage indique à tort que l’héritage existe et n’est pas rompu (NPR-34017).
+* Les pages comportant de nombreuses références ne peuvent pas être déplacées de manière asynchrone et parfois l’opération de déplacement échoue (CQ-4297969).
+* Une page Web comportant `/` un caractère dans l’URL ne répond plus lors de la création. Lorsqu’un composant est ajouté lors de la création, l’utilisation du processeur augmente et le navigateur cesse de répondre (CQ-4295749).
+* En mode Parcourir, NVDA ne décrit pas une valeur sélectionnée dans l’option de menu Type/Taille. La cible d’action visuelle ne se concentre pas sur l’élément sélectionné. Les utilisateurs qui utilisent un lecteur d’écran ne peuvent pas utiliser le mode de navigation (CQ-4294993).
+* Lors de la création d’une page Web, les utilisateurs peuvent sélectionner le modèle Page [!UICONTROL de] contenu. Dans l’onglet Médias  sociaux, les utilisateurs sélectionnent une variante [!UICONTROL XF]préférée. Pour sélectionner un fragment d’expérience en mode de navigation NVDA, les utilisateurs ne peuvent pas utiliser les touches du clavier (CQ-4292669).
+* Mise à jour de la bibliothèque des barres de poignées vers la version 4.7.3 la plus sécurisée (NPR-34484).
+
+### [!DNL Assets] {#assets-6560}
+
+**Améliorations de l’accessibilité dans les ressources des Experience Manager**
+
+* Grâce aux touches du clavier, les utilisateurs peuvent désormais accéder aux options de l’interface utilisateur interactive et se concentrer sur celles-ci dans la liste [!UICONTROL Références] des ressources (NPR-34115).
+
+* Le lecteur d’écran annonce maintenant l’action prévue des prédicats sur la page de recherche (NPR-34104).
+
+* La page de recherche et la page de résultats de recherche ont désormais des titres plus informatifs pour mieux comprendre les utilisateurs de lecteurs d’écran (NPR-34093).
+
+* Les lecteurs d’écran annoncent maintenant les options de suppression des balises sélectionnées dans l’onglet [!UICONTROL Réglages de base] de la page [!UICONTROL Propriétés] de la ressource (NPR-33972).
+
+* Les éléments de chaque ligne de la vue de liste sont maintenant annoncés comme éléments de la même ligne par les lecteurs d’écran (NPR-33932).
+
+* La sélection de l&#39;utilisateur lors de la navigation à l&#39;aide de la `Tab` touche passe maintenant à l&#39;option de fermeture dans la prévisualisation de version (NPR-33863).
+
+* La sélection des utilisateurs se déplace désormais vers l&#39;icône de recherche après la fermeture d&#39;Omnisearch (NPR-33705).
+
+* Les options de l’interface utilisateur exploitables ont désormais un focus visuel plus visible, avec un contraste amélioré lors de la navigation à l’aide des touches du clavier. Les utilisateurs du clavier peuvent identifier les zones ciblées (NPR-33542).
+
+* La fonctionnalité de glisser-déplacer à l’aide du clavier fonctionne désormais dans l’éditeur [!UICONTROL de Schéma de] métadonnées en mode de navigation du lecteur d’écran (CQ-4296326).
+
+* Dans la boîte de dialogue de partage de liens, lors de la navigation en mode de navigation, un lecteur d’écran,
+
+   * Ne décrit pas les informations du tableau dès que la boîte de dialogue est chargée.
+
+   * Peut accéder à toutes les suggestions automatiques répertoriées.
+
+   * Extrait les suggestions automatiques affichées pour l’adresse électronique/recherche  Ajoutée (CQ-4294232).
+
+* L’utilisation de la `Esc` touche pour supprimer les icônes d’action rapide de la vue de carte ne supprime plus la sélection au clavier du dernier élément ciblé (CQ-4293554).
+
+* Pour les options interactives de l’interface utilisateur, le lecteur d’écran annonce maintenant leur objectif plutôt que les noms littéraux des icônes (CQ-4272943).
+
+* Le focus du clavier passe maintenant à [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark, Zoom_light, ZoomVertical_dark et les options ZoomVertical_light lors de la navigation à l&#39;aide de la touche de tabulation du clavier dans les détails de la ressource. Les visiteurs (les visionneuses) CQ-4290605).][!DNL Dynamic Media]
+
+* [!UICONTROL L’option Enregistrer et fermer] de la page [!UICONTROL Propriétés] de la ressource est désormais accessible à l’aide des touches du clavier (NPR-34107).
+
+* Les messages d’erreur dus à des combinaisons de nom d’utilisateur et de mot de passe incorrectes sur la page de connexion sont maintenant annoncés par les lecteurs d’écran chaque fois que l’erreur se produit (NPR-33722).
+
+* Dans [!DNL Experience Manager] la section d’en-tête, lorsque vous naviguez en mode de navigation, le lecteur d’écran annonce maintenant,
+
+   * Modification automatique des suggestions dans [!UICONTROL Type pour effectuer une recherche] dans Omnisearch.
+
+   * Etat développé ou réduit pour les options [!UICONTROL Solutions], [!UICONTROL Aide], [!UICONTROL Boîte de réception]et [!UICONTROL Utilisateur.]
+
+   * Message d’état [!UICONTROL Recherche d’aide] affiché lorsque l’utilisateur entre une chaîne de recherche dans le champ [!UICONTROL Rechercher de l’aide] sous l’option [!UICONTROL Aide] .
+
+   ![Menu Aide de l’en-tête](assets/Help_aem_header.png)
+
+   *Figure : [!UICONTROL Recherchez Aide] dans le menu [!UICONTROL Aide] .*
+
+   * Le message d’erreur si une valeur incorrecte est saisie dans le champ [!UICONTROL Faire passer l’identité comme] sous l’option [!UICONTROL Utilisateur] et que le focus se déplace correctement vers le champ de texte (NPR-33804).
+
+   ![Menu Utilisateur dans l’en-tête](assets/User_aem_header.png)
+
+   *Figure : [!UICONTROL Faire l’emprunt d’identité comme] champ dans le menu [!UICONTROL Utilisateur] de l’en-tête.*
+
+* L’utilisateur peut désormais modifier la cible d’action à l’aide du clavier dans :
+
+   * [!UICONTROL Recherchez/Ajoutez le champ Adresse] de courriel dans la boîte de dialogue Partage [!UICONTROL de] liens.
+
+   * [!UICONTROL Champ Ajouter un utilisateur ou un groupe] sous Groupe [!UICONTROL d’utilisateurs] fermé dans l’onglet [!UICONTROL Autorisations] du dossier [!UICONTROL Propriétés] (NPR-34452).
+
+**Problèmes résolus dans les ressources Experience Manager**
+
+[!DNL Adobe Experience Manager] La version 6.5.6.0 [!DNL Assets] apporte des correctifs aux problèmes suivants :
+
+* Les annotations ne sont pas mises en surbrillance lorsqu’elles sont sélectionnées dans la chronologie de la ressource (CQ-4302422).
+
+* La prévisualisation des actifs collatéraux marketing (tels que Brochure, Brochure et Carte de visite) créés à l’aide d’un [!DNL Adobe InDesign] modèle n’affiche pas les sauts de ligne et les sauts de paragraphe (NPR-34268).
+
+* L’extraction de texte et donc la recherche de texte intégral pour les fichiers PDF téléchargés ne fonctionnent pas (NPR-34164). Pour y remédier, redémarrez le [!DNL sAdobe Experience Manager] déploiement après l’installation du Service Pack 6.
+
+* La chronologie des ressources de plusieurs pages affiche les annotations appliquées à toutes les sous-ressources lors de la navigation dans la ressource dans la vue de chronologie, au lieu d’afficher les annotations spécifiques aux sous-ressources spécifiques (NPR-34100).
+
+* Les dossiers de ressources ne sont pas publiés à l’aide de l’option [!UICONTROL Gérer la publication] si les dossiers contiennent des ressources au format de fichier JavaScript, CSS ou JSON (NPR-34090).
+
+* La désélection ou la suppression des balises ou filtres appliqués dans Omnisearch exécute la requête de recherche plusieurs fois, ce qui entraîne une augmentation du temps de recherche (NPR-34078).
+
+* Dans la vue de carte lorsqu’un processus (sur une ressource d’un dossier) est en cours ou en attente, la page se recharge jusqu’à ce que le processus soit terminé ou terminé. Par conséquent, les auteurs ne peuvent pas travailler sur ces ressources dans le dossier pour lequel ils doivent faire défiler la page vers le bas (NPR-33986).
+
+* Si l’utilisateur déplace un fichier publié vers un nouvel emplacement, le fichier est republié même si l’option [!UICONTROL Republier] est désélectionnée. Ceci conduit à la présence de nombreux actifs orphelins sur l’instance de publication. Cependant, le comportement par défaut est que l’opération de déplacement sur une ressource publiée annule automatiquement sa publication ; cette ressource est republiée si l’auteur sélectionne l’option [!UICONTROL Republier] lors du déplacement de la ressource (NPR-33934).
+
+* La page [!UICONTROL Déplacer des ressources] pour les ressources des collections ne charge pas tout le contenu HTML, par exemple l’option [!UICONTROL Modifier/Republier] . Par conséquent, les utilisateurs ne peuvent pas effectuer l’opération de déplacement (NPR-33860).
+
+* Le déplacement d’une ressource et l’ajout de caractères spéciaux dans le nom et le titre des ressources déplacées crée un dossier supplémentaire (portant le même nom) au nouvel emplacement de la ressource (NPR-33826).
+
+* [!UICONTROL Le bouton Télécharger] pour un fichier est désactivé lorsque l’option [!UICONTROL Courriel] est sélectionnée dans la boîte de dialogue [!UICONTROL Télécharger] (NPR-33730).
+
+* L’erreur &quot;Request-URI too long&quot; est observée lors des opérations en bloc sur des ressources, telles que la modification des métadonnées en masse (NPR-33723).
+
+* Une erreur JavaScript est observée et les utilisateurs ne peuvent pas sélectionner ou supprimer les choix générés dans le champ [!UICONTROL déroulant] par [!UICONTROL Ajoute via la fonctionnalité de chemin] JSON dans l’éditeur [!UICONTROL de formulaire du Schéma de métadonnées du]dossier, si le fichier JSON téléchargé comporte de l’espace ou des caractères spéciaux (NPR-33712).
+
+* Les rendus statiques des ressources ne sont pas mis à jour lorsque la ressource est mise à jour à l’aide de l’option [!UICONTROL Ouvrir] [!DNL desktop app] ou [!DNL Adobe Asset Link] et sont synchronisés de nouveau sur [!DNL Adobe Experience Manager] (CQ-4296279).
+
+* Dans la vue de colonne, l’opération de déplacement sur un ensemble de ressources déplace également les ressources qui ont été sélectionnées avant d’utiliser l’option [!UICONTROL Filtrer] pour elles. Notez que l&#39;utilisation de l&#39;option [!UICONTROL Filtre] désélectionne la sélection précédente (NPR-34018).
+
+* Les barres obliques inverses sont ajoutées avant les caractères spéciaux dans les suggestions de recherche de ressources, qui portent des caractères spéciaux dans leur nom (NPR-33834).
+
+* Lors de la création de règles pour la liste déroulante dans le formulaire [!UICONTROL de Schéma]de métadonnées de [!UICONTROL dossiers, l’utilisateur ne peut pas sélectionner de valeurs dans la colonne Choix] dechamp (CQ-4297530).
+
+* La copie d’exécution du modèle de flux de travaux personnalisé des ressources (créée dans `/var/workflow/models/dam`) est supprimée lorsque vous installez [!DNL Experience Manager] 6.5 Service Pack 5 ou une version précédente sur [!DNL Experience Manager] 6.5 (NPR-34532). Pour récupérer la copie d’exécution, synchronisez la copie d’heure de conception du modèle de processus avec la copie d’exécution à l’aide de l’API HTTP :
+   `<designModelPath>/jcr:content.generate.json`.
+
+**Problèmes résolus dans Contenu multimédia dynamique**
+
+* Si l’utilisateur définit les paramètres de codage dans les modifications après la création du profil vidéo, les paramètres de recadrage intelligent sont supprimés des profils vidéo (CQ-4299177).
+
+* Les ressources clignotent au chargement de la page lorsque l’utilisateur bascule entre les options du rail latéral (par exemple, [!UICONTROL Aperçu], [!UICONTROL Chronologie], [!UICONTROL Visionneuses]) sur la page des détails de la ressource (NPR-34235).
+
+* Les problèmes suivants ont été observés avec le travail de retraitement :
+
+   * L&#39;ID de tâche est manquant dans le descripteur de tâche renvoyé par la tâche de retraitement.
+
+   * Retraiter la tâche pour les journaux vidéo uniquement le nom de fichier et non le chemin d’accès complet.
+
+   * La tâche de retraitement n’a pas d’option permettant de définir le type de ressource comme statique.
+
+   * `ExcludeFromAVS` n’est pas fournie (CQ-4298401).
+
+* La fonctionnalité de recadrage dynamique échoue avec une erreur lorsque le profil d’image est ajouté à un dossier ayant plusieurs proportions (par exemple, 11) (NPR-34082).
+
+* Le processus de mise à jour des actifs de gestion des actifs est déclenché lorsque l’utilisateur fait défiler la page d’archivage [!UICONTROL des] flux de travaux sur l’onglet [!UICONTROL Workflow] dans [!UICONTROL Outils] dans [!DNL Adobe Experience Manager] configuré avec Dynamic Media Scene7 (CQ-4299727).
+
+* Les symboles de l’onglet [!UICONTROL Comportement] de l’éditeur [!UICONTROL de paramètres prédéfinis de la] visionneuse ne sont pas localisés (CQ-4299026).
+
+* La vue principale affiche l’image dans une disposition incorrecte qui ne tient pas dans la visionneuse, si celle-ci est en mode réactif (CQ-4298293).
+
+* Les modifications apportées aux paramètres d’image prédéfinis dans [!UICONTROL Adobe Experience Manager] ne sont pas synchronisées avec Scene7 Publishing System (CQ-4299713).
+
+### [!DNL Commerce] {#commerce-6560}
+
+* Les liens vers les ressources provenant de produits ne sont pas refactorisés lors du déplacement des ressources (NPR-34098).
+
+### Plate-forme {#platform-6560}
+
+* Impossible de télécharger les journaux à l&#39;aide de l&#39;outil Diagnostic sur une instance de Experience Manager mise à niveau (NPR-34336).
+* La mise à niveau échoue avec une erreur en raison des dépendances d’une version spécifique du package `cq-wcm-api` foundation (CQ-4300520).
+* Les valeurs par défaut des paramètres **[!UICONTROL Connect Timeout]** et **[!UICONTROL Socket Timeout]** pour la configuration de l’agent par défaut (publication) ne sont pas spécifiées (NPR-33707).
+* Les mises à jour de la configuration de mappage sous `/etc/map.publish` ne sont pas répercutées sur les pages du site (NPR-34015).
+* [La documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html) de référence d’API n’inclut pas la documentation du `com.day.cq.tagging` package (CQ-4295864).
+
+### Interface utilisateur {#ui-6560}
+
+* L’interface du navigateur de déchargement n’affiche pas toutes les rubriques de tâches (NPR-34308).
+* L&#39;interface [Configuration Browser](/help/sites-administering/configurations.md) n&#39;affiche pas toutes les configurations (NPR-33644).
+* Lorsque vous appuyez sur la `Esc` touche lorsque vous recherchez des utilisateurs à faire passer pour des utilisateurs, la boîte de dialogue **[!UICONTROL Utilisateur]** se ferme à la place de la liste utilisateur (NPR-34084).
+
+### Intégrations {#integrations-6560}
+
+* Les Activités dont le nom est long ne sont pas synchronisées avec [!DNL Adobe Target] (NPR-34254).
+
+* La sélection d&#39;une propriété lors de la création d&#39;une nouvelle configuration de lancement d&#39;Adobe génère le message d&#39;erreur suivant (NPR-33947) :
+
+   ```javascript
+   GET http://hostname:Port/libs/cq/dtm-reactor/content/configurations/createcloudconfigwizard/jcr:content/body/items/form/items/wizard/items/general/items/fixedcolumns/items/container/items/general/items/property/data.html?query=&start=0&end=25&imsConfigurationId=Adobe%20Launch&companyId=&_charset_=utf-8 400 (Bad Request)
+   ```
+
+### Projets de traduction {#translation-6560}
+
+* Un projet de traduction n&#39;est pas créé si l&#39;utilisateur `authorizableID` inclut des caractères spéciaux (NPR-33828).
+
+### Sling {#sling-6560}
+
+* Les fonctionnalités de contrôle d’intégrité et de détection de schémas se chevauchent. Par conséquent, la vérification de la santé est supprimée du produit (NPR-33928).
+
+### WCM {#wcm-6560}
+
+* Composants de base : lorsque vous ajoutez un composant d&#39;image de base à une page et référencez une image, l&#39; `Undo` opération ne fonctionne pas (NPR-34516).
+
+* Impossible d&#39;utiliser l&#39;opération de déplacement de page (CQ-4303028).
+
+### [!DNL Communities] {#communities-6560}
+
+* Le partage d&#39;un billet sur les médias sociaux montre une option obsolète Google+ (NPR-33877).
+
+* Le membre de la communauté ne peut pas modifier le modèle de groupe ou d&#39;autres paramètres de fonction de groupe (NPR-33530).
+
+* Les balises d’hyperlien sur les images ne sont pas générées correctement dans une publication de forum (NPR-33464).
+
+* Les échecs d’accessibilité sont identifiés dans la fonction Affectation de communauté (NPR-33442).
+
+* Les utilisateurs existants d’un groupe de la communauté ajouté via la console d’administration sont supprimés de la liste d’utilisateurs lors de toute modification de la console de groupe de la communauté (NPR-34315).
+
+<!--
+* Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
+-->
+
+### [!DNL Forms] {#forms-6560}
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] Le Service Pack n’inclut pas de correctifs pour [!DNL Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
+
+Après avoir installé le module complémentaire [!DNL Experience Manager Forms] 6.5.6.0 :
+
+* Stop the [!DNL Experience Manager Forms] instance.
+
+* Supprimez `bcpkix-1.51`, `bcmail-1.51`et `bcprov-1.51` les fichiers JAR du `crx-repository\launchpad\ext` répertoire.
+
+* Supprimez` sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider` la propriété du `sling.properties` fichier.
+
+* Restart the [!DNL Experience Manager Forms] instance.
+
+**Formulaires adaptatifs**
+
+* S’il manque un fragment de formulaire adaptatif, le rendu du formulaire adaptatif échoue (NPR-34302).
+
+* La description du contenu d’aide d’un champ de formulaire adaptatif affiche une balise HTML de paragraphe (NPR-34116).
+
+* Lorsque vous sélectionnez la propriété **[!UICONTROL Revalider sur le serveur]** , le formulaire adaptatif ne peut pas être envoyé (NPR-33876).
+
+* L’action d’envoi **[!UICONTROL Envoyer vers le point de terminaison]** REST ne fonctionne pas pour un formulaire adaptatif (CQ-4299044).
+
+* Accessibilité : Lorsque vous tentez d’envoyer un formulaire adaptatif sans télécharger de pièce jointe pour un champ obligatoire, la cible d’action ne se déplace pas automatiquement vers le champ de pièce jointe (CQ-4298065).
+
+* Lorsque vous ajoutez des rangées à un tableau d’un formulaire adaptatif, l’ **[!UICONTROL Ajoute en haut]** et l’ **[!UICONTROL Ajoute en bas]** n’affichent pas les résultats appropriés (CQ-4297511).
+
+* Le script de validation [!UICONTROL de] valeur est déclenché incorrectement, ce qui entraîne une perte de données dans un formulaire adaptatif (CQ-4296874).
+
+* Le sélecteur de dates ne fonctionne pas correctement pour les formulaires adaptatifs localisés (NPR-34333).
+
+* Lorsque le nom de fichier contient un trait de soulignement ou un espace, vous ne pouvez pas joindre le fichier à un formulaire adaptatif (CQ-4301001).
+
+* Lorsqu’un panneau répétable imbriqué comporte plus d’occurrences que son parent, toutes les occurrences de ce panneau répétable imbriqué ne sont pas préremplies (NPR-33666).
+
+* Les formulaires adaptatifs disposent de certains résolveurs de ressources ouverts. Cela entraîne des échecs d’envoi. Le problème se produit par intermittence (CQ-4299407).
+
+* Lors de la première ouverture de la configuration de champ, l’icône de propriétés ne s’affiche pas (CQ-4296284).
+
+**Processus**
+
+* Lorsqu’un approbateur de processus télécharge une pièce jointe, celle-ci est renommée `undefined` (NPR-33699).
+
+* [!DNL Experience Manager] Échec de l&#39;opération de purge du flux de travail et affiche le message d&#39;erreur suivant (NPR-33575) :
+
+   `java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory`
+
+* [!DNL Experience Manager Forms] pour [!DNL Windows] arrêter de répondre après l’envoi d’un formulaire (NPR-34409).
+
+* Lorsque vous installez AEM Service Pack, la liste **Tâches** des éléments ne s’affiche pas sous forme de liens. Le texte des éléments **Tâches** comprend des balises HTML (NPR-34317).
+
+**Communication interactive**
+
+* Lorsque vous incluez un fragment de document de texte avec des composants répétables imbriqués, l’enregistrement de la communication interactive échoue (NPR-34095).
+
+**Correspondence Management**
+
+* Lorsque vous modifiez un fragment de document de texte qui inclut des valeurs de dictionnaire de données, l’interface utilisateur de l’agent ne répond plus (NPR-33930).
+
+* Le fait de copier-coller du contenu d’un [!DNL Microsoft Word] document dans un fragment de document de texte d’une lettre entraîne des problèmes de formatage (NPR-33536).
+
+**Services de documents**
+
+* Lorsque vous générez un fichier PDF à partir d’un fichier XDP à l’aide des services Output et Forms, il manque et le texte se chevauche (NPR-34237, CQ-4299331).
+
+* Lorsque vous convertissez un fichier HTML au format PDF, l’ `MaxReuseCount` attribut n’est pas configurable (NPR-33470).
+
+* Lorsque vous téléchargez un fichier PDF contenant des fonctions interactives Reader Extensions, vous ne pouvez pas ajouter de pièce jointe au fichier PDF à l’aide de [!DNL Adobe Reader] (NPR-33729).
+
+**Document Security**
+
+* Impossible d&#39;exécuter l&#39;opération Sign avec des certificats basés sur HSM dans un fichier PDF après avoir installé [!DNL Experience Manager] Service Pack (NPR-34310).
+
+**Designer**
+
+* Impossible d’ouvrir XForms dans Designer version 6.5.x (CQ-4295322).
+
+* Lorsque vous ouvrez Designer, l’écran de bienvenue affiche une année incorrecte (CQ-4295289).
+
+* Lorsque vous effectuez une installation [!DNL Acrobat DC] sur le serveur, l’option **[!UICONTROL Diffuser le formulaire]** est inactive (CQ-4296304).
+
+Pour plus d&#39;informations sur les mises à jour de sécurité, consultez la page [Bulletins de sécurité des](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager.
 
 ## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
@@ -832,7 +1190,7 @@ Remove one mention of this fix.
 
 #### Forms - Foundation JEE {#forms-foundation-jee-feature}
 
-* [!DNL Experience Manager] Prise en charge Forms pour Oracle 18c (NPR-29155).
+* [!DNL Experience Manager] Prise en charge de Forms pour Oracle 18c (NPR-29155).
 
 ## Adobe Experience Manager 6.5.2.0 {#experience-manager-6520}
 
