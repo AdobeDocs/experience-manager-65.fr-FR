@@ -4,9 +4,9 @@ description: Nouveautés de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2704'
 ht-degree: 5%
 
 ---
@@ -32,9 +32,9 @@ Vous pouvez désormais effectuer les déplacements de page et les déploiements 
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Les utilisateurs peuvent trier les fichiers numériques dans les vues Carte et Colonne.
+* [!DNL Assets] et [!DNL Dynamic Media] offrent plusieurs améliorations d’accessibilité. Les améliorations ont trait à la navigation au clavier, à l’utilisation de lecteurs d’écran, ainsi qu’à l’utilisation de technologies d’assistance (AT). Voir [[!DNL Assets] Améliorations](/help/release-notes/sp-release-notes.md#assets-6570) et [[!DNL Dynamic Media] améliorations](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
 
-* [!DNL Assets] et [!DNL Dynamic Media] offrent plusieurs améliorations d’accessibilité. Les améliorations ont trait à la navigation au clavier, à l’utilisation de lecteurs d’écran, ainsi qu’à l’utilisation de technologies d’assistance (AT). Voir Améliorations [et](/help/release-notes/sp-release-notes.md#assets-6570) améliorations [[!DNL Dynamic Media] ](/help/release-notes/sp-release-notes.md#dynamic-media-6570)des ressources. <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
+* Les utilisateurs peuvent trier les fichiers numériques dans les vues Carte et Colonne.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
