@@ -3,9 +3,9 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c2c0f38d0c8e403264db05064d4423ef46880d9a
+source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1615'
 ht-degree: 59%
 
 ---
@@ -237,7 +237,7 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 ## Autres formats pris en charge {#other-supported-formats}
 
-Les fonctionnalités de gestion des actifs numériques habituelles, telles que l’enregistrement, le contrôle de version, l’ACL, le flux de travail, la publication et la gestion des métadonnées, à l’exception de la [!DNL Dynamic Media] diffusion, sont prises en charge pour de nombreux formats de fichier. L’applicabilité des fonctionnalités à quelques formats de fichier spécifiques est décrite ci-dessous.
+L&#39;applicabilité des fonctionnalités de gestion des actifs numériques habituelles à quelques formats de fichier spécifiques est décrite ci-dessous.
 
 | Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
