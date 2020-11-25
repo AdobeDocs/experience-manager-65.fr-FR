@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
+source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2756'
 ht-degree: 5%
 
 ---
@@ -125,9 +125,7 @@ Si vous utilisez une **nouvelle suite** de rapports, sachez qu’une nouvelle su
 
 Si vous utilisez une suite **de rapports** existante, il peut être nécessaire de [modifier le mappage](#modifying-analytics-variable-mapping) des variables avant d’activer la structure Analytics pour un site communautaire.
 
-<!--
-Contact your account representative for any concerns regarding the variables dedicated to Communities.
--->
+Contactez votre gestionnaire de compte pour toute question concernant les variables dédiées aux communautés.
 
 >[!CAUTION]
 >
@@ -549,7 +547,7 @@ Si les eVars et les événements des communautés remplacent les mappages qui ex
 
 >[!CAUTION]
 >
->Il est important de procéder à une mise en mémoire avant que le site de la communauté ne soit [publié](#publishing-the-community-site) avec Analytics activé, faute de quoi il existe un risque de perte de données.
+>Il est important de procéder à une mise en mémoire avant la [publication](#publishing-the-community-site) du site de la communauté avec Analytics activé, faute de quoi il existe un risque de perte de données.
 
 #### Exemple d’étape 1 : Faire glisser Analytics evar14 dans la table de mappage {#example-step-dragging-analytics-evar-into-mapping-table}
 
