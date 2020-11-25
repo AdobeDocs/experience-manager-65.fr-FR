@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3796'
 ht-degree: 5%
 
 ---
@@ -139,7 +139,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 [!DNL Adobe Experience Manager] La version 6.5.7.0 [!DNL Assets] résout les problèmes suivants et apporte les améliorations suivantes.
 
-* Les améliorations suivantes ont été apportées à l’accessibilité dans [!DNL Experience Manager Assets]:
+* Les améliorations suivantes ont été apportées à l’accessibilité dans [!DNL Experience Manager Assets] cette version. Pour plus d’informations, voir Fonctions [d’accessibilité dans [!DNL Assets]](/help/assets/accessibility.md).
 
    * Lorsque vous naviguez dans la chronologie à l’aide du clavier, la `Esc` touche peut réduire l’option [!UICONTROL Afficher tout] sans perdre la cible d’action (CQ-4293598).
    * Lors de la navigation à l’aide de la touche de tabulation du clavier, après avoir supprimé la dernière balise des balises ajoutées, le champ de balise conserve la cible d’action (NPR-35109).
@@ -193,7 +193,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* Les principales améliorations suivantes ont été apportées à l’accessibilité dans [!DNL Dynamic Media] (CQ-4290306). Pour plus d&#39;informations, reportez-vous à la page Fonctionnalités d&#39;accessibilité dans [!DNL Dynamic Media].  <!-- TBD: link to DM content post GA -->
+* Les améliorations suivantes ont été apportées à l’accessibilité dans [!DNL Dynamic Media] (CQ-4290306). Pour plus d&#39;informations, reportez-vous à la page Fonctionnalités [d&#39;accessibilité dans [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
    * Les lecteurs d’écran (JAWS, Narrateur) indiquent le nom, le rôle et l’état des éléments de menu dans l’option de menu Taille d’incorporation (CQ-4290927).
    * Les utilisateurs peuvent naviguer dans la boîte de dialogue Lien d’adresse électronique à l’aide de la `Tab` touche (CQ-4290926).
