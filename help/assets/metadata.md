@@ -3,7 +3,7 @@ title: Gestion des métadonnées des ressources numériques dans  [!DNL Adobe Ex
 description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par  [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
 workflow-type: tm+mt
 source-wordcount: '2421'
 ht-degree: 56%
@@ -112,7 +112,7 @@ L’importation des métadonnées est asynchrone et n’entrave pas les performa
 1. Navigate to the [!DNL Assets] user interface, and click **[!UICONTROL Create]** from the toolbar.
 1. Dans le menu, sélectionnez **[!UICONTROL Métadonnées]**.
 1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Sélectionnez le fichier CSV contenant les métadonnées.
-1. Spécifiez les paramètres suivants. Consultez un exemple de fichier CSV à l’adresse [metadata-import-sample-file.csv](assets/metadata-import-sample-file.csv).
+1. Spécifiez les paramètres suivants. Consultez un exemple de fichier CSV à l’adresse [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Paramètres d’importation des métadonnées | Description |
    |:---|:---|
