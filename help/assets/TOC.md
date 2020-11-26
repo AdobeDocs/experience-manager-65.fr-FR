@@ -7,9 +7,9 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, diffusez et optimisez des ressources numériques.
 translation-type: tm+mt
-source-git-commit: 3443fe49e7eacbdacf7d21077f920d38b34daeae
+source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '589'
 ht-degree: 59%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 59%
    + [Configuration de Dynamic Media – mode Scene7](config-dms7.md)
    + [Configuration de Dynamic Media – mode hybride](config-dynamic.md)
    + [Dépannage de Dynamic Media – mode Scene7](troubleshoot-dms7.md)
-   + [Fonctionnalités d’accessibilité dans [!DNL Dynamic Media]](accessibility-dm.md)
+   + [Accessibilité dans Contenu multimédia dynamique](accessibility-dm.md)
    + [Migration de Contenu multimédia dynamique - Mode hybride vers Contenu multimédia dynamique - Mode S7](migrate-from-hybrid-to-dms7.md)
    + [Gestion des ressources Dynamic Media](managing-assets.md)
    + [Bonnes pratiques relatives à l’optimisation de la qualité des images](best-practices-for-optimizing-the-quality-of-your-images.md)
