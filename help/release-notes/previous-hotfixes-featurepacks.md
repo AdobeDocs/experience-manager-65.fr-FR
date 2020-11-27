@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notes de mise à jour précédentes 
 description: Notes de mise à jour des Service Packs de [!DNL Adobe Experience Manager] la version 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 62a04c1d9f62a5a5fa6f97f415015001daa94747
+source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
 workflow-type: tm+mt
-source-wordcount: '14760'
+source-wordcount: '14804'
 ht-degree: 20%
 
 ---
@@ -326,6 +326,8 @@ Après avoir installé le module complémentaire [!DNL Experience Manager Forms]
 * Les formulaires adaptatifs disposent de certains résolveurs de ressources ouverts. Cela entraîne des échecs d’envoi. Le problème se produit par intermittence (CQ-4299407).
 
 * Lors de la première ouverture de la configuration de champ, l’icône de propriétés ne s’affiche pas (CQ-4296284).
+
+* Les utilisateurs peuvent modifier les métadonnées d’envoi, telles que `afPath`, `afSubmissionTime` et `signers`, lors de l’envoi d’un formulaire adaptatif. Pour résoudre ce problème, les valeurs de métadonnées sont supprimées des données d’envoi du formulaire côté client. Les utilisateurs peuvent utiliser l’ `FormSubmitInfo` objet pour récupérer ces valeurs auprès du serveur (NPR-33654).
 
 **Processus**
 
@@ -1212,7 +1214,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Une correction a été apportée pour assurer que la vue en colonne de l’interface utilisateur Asset affiche uniquement le contenu spécifique au client.
 * Une correction a été apportée pour permettre aux modifications d’accordéon de style de se refléter dans les résultats de la recherche.
 
-### Ressources
+### Assets
 
 **Améliorations apportées au produit**
 
@@ -1403,7 +1405,7 @@ Les principaux points forts de cette version du Service Pack incluent les élé
 * Included support for the delivery of 360-degree video assets in [!DNL Dynamic Media]–Scene7 mode.
 * Enabled *Japanese Word Wrap* feature via the styles plugin of Rich Text Editor. Pour plus d’informations, voir [Configuration du renvoi à la ligne de mots japonais](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
-### Ressources
+### Assets
 
 * Mise à jour de l&#39;interface DAM DMGGateway pour la prise en charge multipartie S3. NPR-29740 : correctif pour CQ-4226303
 * La prévisualisation Rendus génère `Only empty tenantId is currently supported` une erreur après la mise à niveau vers [!DNL Experience Manager] 6.5. NPR-29986 : Correctif pour CQ-4272353
