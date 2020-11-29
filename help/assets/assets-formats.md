@@ -3,10 +3,10 @@ title: Formats de fichiers et types MIME pris en charge
 description: Formats de fichiers et types MIME pris en charge [!DNL Assets] and [!DNL Dynamic Media] par et fonctionnalités prises en charge pour chaque format.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
+source-git-commit: eaff176bf3ffc197607b8eb39b15c1e945927f8e
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 59%
+source-wordcount: '1639'
+ht-degree: 58%
 
 ---
 
@@ -247,7 +247,11 @@ L&#39;applicabilité des fonctionnalités de gestion des actifs numériques habi
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (lorsque configuré avec son propre domaine de diffusion) | − | − | − | − | − | ✓ |
 
-## Pris en charge Types MIME {#supported-mime-types}
+>[!NOTE]
+>
+>Le téléchargement et la distribution de fichiers JavaScript peuvent être sans danger ou non. Si nécessaire, des incrustations peuvent être utilisées pour empêcher les utilisateurs de télécharger des fichiers JS.
+
+## Types MIME pris en charge {#supported-mime-types}
 
 Par défaut, [!DNL Experience Manager] détecte le type de fichier à l’aide de l’extension de fichier. [!DNL Experience Manager] peut le détecter à partir du contenu des fichiers. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
 
