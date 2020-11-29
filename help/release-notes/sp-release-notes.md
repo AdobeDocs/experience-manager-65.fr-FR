@@ -4,9 +4,9 @@ description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Servi
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
+source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3789'
 ht-degree: 5%
 
 ---
@@ -145,7 +145,7 @@ Voici la liste des correctifs fournis dans la [!DNL Experience Manager] version 
    * Lors de la navigation à l’aide de la touche de tabulation du clavier, après avoir supprimé la dernière balise des balises ajoutées, le champ de balise conserve la cible d’action (NPR-35109).
    * [!DNL Experience Manager] Les composants contiennent désormais les informations appropriées concernant le nom, le rôle et la valeur à utiliser par les lecteurs d’écran (NPR-34255).
    * Après avoir supprimé la zone de liste déroulante Type/Taille, la zone de liste déroulante Lien, la zone de liste déroulante Langue ou la zone d’édition Texte, la cible d’action du clavier revient aux éléments suivants ou précédents de l’interface utilisateur ou à un élément d’interface utilisateur plus pertinent (CQ-4293585).
-   * Lorsque vous placez le pointeur de la souris sur diverses options, les conseils tels que Sélectionner et Télécharger s’affichent. Les utilisateurs qui utilisent un agrandissement de l’écran peuvent avoir des difficultés à afficher les miniatures de fichier en raison du contenu affiché en raison du survol. Il est maintenant possible de conserver la cible d’action, après avoir supprimé l’option à l’aide d’une `Escape` clé (CQ-4293554).
+   * Lorsque vous placez le pointeur de la souris sur des options, des conseils tels que Sélectionner et Télécharger s’affichent. Les utilisateurs qui utilisent une loupe d’écran peuvent ne pas voir les miniatures de fichier en raison de ces conseils. Désormais, il est possible de conserver la cible d’action, après avoir supprimé l’option à l’aide de la `Escape` touche. (CQ-4293554).
    * Lors de la sélection d’une cellule de grille dans la grille présente dans la page, la sélection se déplace vers la barre d’actions qui s’affiche à l’écran (CQ-4282127).
    * Les utilisateurs visuels peuvent faire la différence entre un texte normal et un lien, car des indices visuels (soulignement et icône en chevron) s’affichent pour les liens vers toutes les solutions de la [!DNL Experience Manager] page d&#39;accueil (CQ-4282072).
 
@@ -405,7 +405,7 @@ Vérifiez si vous utilisez une fonction ou une fonctionnalité dans un déploiem
 
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
-| Intégrations | L’écran d’inclusion **[!UICONTROL des services]** AEM Cloud est obsolète. L’intégration des AEM et des Cibles étant mise à jour dans AEM 6.5 pour prendre en charge l’API Target Standard, qui utilise l’authentification via l’Adobe IMS et E/S, et le rôle croissant du lancement d’Adobe pour l’instrumentalisation de pages de données d’analyse et de personnalisation, l’assistant d’inclusion est devenu non pertinent du point de vue fonctionnel. | Configurez les connexions système, l’authentification IMS Adobe et les intégrations d’E/S Adobe via les services cloud AEM correspondants. |
+| Intégrations | L’écran d’inclusion **[!UICONTROL des services]** AEM Cloud est obsolète. L’intégration des AEM et des Cibles étant mise à jour dans AEM 6.5 pour prendre en charge l’API Target Standard, qui utilise l’authentification via l’Adobe IMS et E/S, et le rôle croissant du lancement d’Adobe pour l’instrumentalisation de pages de données d’analyse et de personnalisation, l’assistant d’inclusion est devenu non pertinent du point de vue fonctionnel. | Configurez les connexions système, l’authentification IMS Adobe et les intégrations Adobe I/O via les services cloud AEM respectifs. |
 | Connecteurs | L’Adobe JCR Connector for Microsoft SharePoint 2010 et Microsoft SharePoint 2013 est obsolète pour AEM 6.5. | N/A |
 
 ## Problèmes connus {#known-issues}
