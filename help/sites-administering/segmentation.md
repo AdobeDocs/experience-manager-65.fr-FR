@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: e5e00cc181c2dc3a28e25beb52f9a4c459ee313a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 73%
+source-wordcount: '1779'
+ht-degree: 60%
 
 ---
 
@@ -132,7 +132,9 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
 
 Pour définir votre nouveau segment :
 
-1. Après avoir [accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), appuyez ou cliquez sur le bouton Créer et sélectionnez **Créer un segment ContextHub**.
+1. Après [avoir accédé aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment ou laissez-le à la racine.
+
+1. cliquez ou appuyez sur le bouton Créer et sélectionnez **Créer un segment** ContextHub.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -225,6 +227,75 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Créez un segment ContextHub.
 1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
 1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](/help/sites-administering/segmentation.md#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
+
+## Organisation des segments {#organizing-segments}
+
+Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer en tant que liste plate. Dans ce cas, il peut s’avérer utile de créer des dossiers pour gérer vos segments.
+
+### Create a New Folder {#create-folder}
+
+1. After [accessing the segments](#accessing-segments), click or tap the **Create** button and select **Folder**.
+
+   ![Dossier Ajouter](assets/contexthub-create-segment.png)
+
+1. Indiquez un **titre** et un **nom** pour votre dossier.
+   * Le **titre** doit être descriptif.
+   * Le **nom** deviendra le nom du noeud dans le référentiel.
+      * Elle sera générée automatiquement en fonction du titre et ajustée en fonction des conventions de dénomination [AEM.](/help/sites-developing/naming-conventions.md)
+      * Il peut être ajusté si nécessaire.
+
+   ![Créer un dossier](assets/contexthub-create-folder.png)
+
+1. Appuyez ou cliquez sur **Créer**.
+
+   ![Confirmer le dossier](assets/contexthub-confirm-folder.png)
+
+1. Le dossier s’affiche dans la liste des segments.
+   * La manière dont vous triez vos colonnes aura une incidence sur l&#39;emplacement d&#39;affichage du nouveau dossier dans la liste.
+   * Vous pouvez appuyer ou cliquer sur les en-têtes de colonne pour ajuster votre tri.
+      ![Le nouveau dossier](assets/contexthub-folder.png)
+
+### Modifier les dossiers existants {#modify-folders}
+
+1. Après [avoir accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier que vous souhaitez modifier pour le sélectionner.
+
+   ![Sélectionner un dossier](assets/contexthub-select-folder.png)
+
+1. Appuyez ou cliquez sur **Renommer** dans la barre d’outils pour renommer le dossier.
+
+1. Saisissez un nouveau titre **de** dossier et appuyez ou cliquez sur **Enregistrer**.
+
+   ![Renommer le dossier](assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>Lorsque vous renommez des dossiers, seul le titre peut être modifié. Le nom ne peut pas être modifié.
+
+### Suppression d’un dossier
+
+1. Après [avoir accédé aux segments](#accessing-segments), cliquez ou appuyez sur le dossier que vous souhaitez modifier pour le sélectionner.
+
+   ![Sélectionner un dossier](assets/contexthub-select-folder.png)
+
+1. Appuyez ou cliquez sur **Supprimer** dans la barre d’outils pour supprimer le dossier.
+
+1. Une boîte de dialogue présente une liste de dossiers sélectionnés pour suppression.
+
+   ![Confirmer la suppression](assets/contexthub-confirm-segment-delete.png)
+
+   * Appuyez sur ou sur **Supprimer** pour confirmer.
+   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+
+1. Si l’un des dossiers sélectionnés contient des sous-dossiers ou des segments, leur suppression doit être confirmée.
+
+   ![Confirmer la suppression des enfants](assets/contexthub-confirm-segment-child-delete.png)
+
+   * Appuyez ou cliquez sur **Forcer la suppression** pour confirmer.
+   * Appuyez ou cliquez sur **Annuler** pour abandonner.
+
+>[!NOTE]
+>
+> Il n’est pas possible de déplacer un segment d’un dossier à un autre.
 
 ## Test de l’application d’un segment {#testing-the-application-of-a-segment}
 
