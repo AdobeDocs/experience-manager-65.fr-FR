@@ -28,10 +28,10 @@ Cette section de la documentation AEM Communities s&#39;ajoute aux éléments su
 
 Il existe désormais deux artefacts &quot;uber&quot; qui remplacent des artefacts individuels :
 
-* JAR de l&#39;API [Communautés d&#39;AEM](#communities-api-jar-artifact)
-* JAR de l&#39;API [Uber AEM](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* aem [JAR de l&#39;API Communautés](#communities-api-jar-artifact)
+* aem [JAR de l&#39;API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
-## Artefact JAR de l&#39;API Communautés {#communities-api-jar-artifact}
+## Artefact Jar de l&#39;API Communautés {#communities-api-jar-artifact}
 
 Voici un exemple de GAV pour le fichier JAR de l’API AEM Communities :
 
@@ -47,7 +47,7 @@ Voici un exemple de GAV pour le fichier JAR de l’API AEM Communities :
 Assurez-vous que la version spécifiée correspond à la version du package Communities installée pour AEM Communities. Pour vérifier le numéro de version installé :
 
 1. Connectez-vous avec des privilèges d’administration.
-1. Accédez à [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Accédez à [Package Manager](../../help/sites-administering/package-manager.md). Par exemple, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
 1. Recherchez le package : `cq-socialcommunities-pkg-1.x.xxx`
 1. Extrayez la version du nom du package :
