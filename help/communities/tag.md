@@ -24,15 +24,15 @@ Lorsque les composants AEM Communities sont configurés avec le balisage activé
 
 L’infrastructure sous-jacente pour les balises appliquées dans l’environnement de publication est la même que pour les balises appliquées au contenu dans l’environnement d’auteur, telles que les pages et les ressources :
 
-* See [Administering Tags](../../help/sites-administering/tags.md) and [Tagging User Generated Content](tag-ugc.md) (UGC) for information about creating and managing tags.
+* Pour plus d’informations sur la création et la gestion des balises, voir [Administration des balises](../../help/sites-administering/tags.md) et [Balisage du contenu généré par l’utilisateur](tag-ugc.md) (UGC).
 
-* See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
+* Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d&#39;informations sur la [structure de balisage](../../help/sites-developing/framework.md) ainsi que sur l&#39;inclusion et l&#39;extension de balises dans [les applications personnalisées](../../help/sites-developing/building.md).
 
-* Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour en savoir plus pour les auteurs sur la façon d’ajouter un `social tag cloud` composant à une page afin de mettre en surbrillance les balises appliquées à UGC dans l’environnement de publication.
+* Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour en savoir plus sur la manière d’ajouter un composant `social tag cloud` à une page afin de mettre en surbrillance les balises appliquées à l’UGC dans l’environnement de publication.
 
-* Voir Ressources [d’activation du](tag-resources.md) balisage pour en savoir plus sur les ressources de balisage pour les catalogues.
+* Voir [Ressources d’activation du balisage](tag-resources.md) pour plus d’informations sur les ressources de balisage des catalogues.
 
-Le balisage de l’UGC peut être activé lors de la configuration d’un site [](sites-console.md#tagging) communautaire ou de l’une des fonctionnalités suivantes :
+Le balisage de l&#39;UGC peut être activé lors de la configuration d&#39;un [site communautaire](sites-console.md#tagging) ou de l&#39;une des fonctionnalités suivantes :
 
 * [Blog](blog-feature.md)
 * [Calendrier](calendar.md)
@@ -68,7 +68,7 @@ Le balisage de l’UGC peut être activé lors de la configuration d’un site [
   </tr>
   <tr>
    <td><strong>properties</strong></td>
-   <td>See <a href="tagcloud.md">Using Social Tag Cloud</a></td>
+   <td>Voir <a href="tagcloud.md">Utilisation de Social Tag Cloud</a></td>
   </tr>
  </tbody>
 </table>
@@ -85,6 +85,6 @@ Le balisage de l’UGC peut être activé lors de la configuration d’un site [
 
 ## Recherche de balises {#tag-searching}
 
-A compter de [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1), la recherche de balises est effectuée à l’aide des titres [de](../../help/sites-developing/framework.md#tag-characteristics)balises.
+À partir de [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1), la recherche de balises est effectuée à l’aide de [titres de balises](../../help/sites-developing/framework.md#tag-characteristics).
 
-Avant FP1, la recherche était effectuée à l’aide des identifiants [de](../../help/sites-developing/framework.md#tagid)balise.
+Avant FP1, la recherche était effectuée à l’aide des [identifiants de balise](../../help/sites-developing/framework.md#tagid).
