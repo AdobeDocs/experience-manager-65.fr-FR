@@ -51,9 +51,9 @@ Le tableau suivant répertorie les options d’aperçu disponibles pour les diff
  </tbody>
 </table>
 
-## Prévisualisation d’un formulaire {#previewing-a-form-1}
+## Prévisualisation d’un formulaire  {#previewing-a-form-1}
 
-1. Select an asset you want to preview, and click Preview ![aem6forms_preview](assets/aem6forms_preview.png) in the actions toolbar.
+1. Sélectionnez une ressource à prévisualisation, puis cliquez sur Prévisualisation ![aem6forms_prévisualisation](assets/aem6forms_preview.png) dans la barre d’outils Actions.
 
    >[!NOTE]
    >
@@ -71,6 +71,6 @@ Le tableau suivant répertorie les options d’aperçu disponibles pour les diff
 
 Lorsque vous sélectionnez **Aperçu avec des données**, vous pouvez voir à quoi ressemble le formulaire avec des données réelles saisies. L’option Aperçu avec des données vous permet de télécharger un fichier XML contenant des exemples de données d’utilisateurs. Les exemples de données d’utilisateurs sont utilisées pour renseigner le formulaire d’aperçu au format que vous choisissez.
 
-1. Select an asset, click Preview ![aem6forms_preview](assets/aem6forms_preview.png), and select **Preview with Data**.
+1. Sélectionnez une ressource, cliquez sur Prévisualisation ![aem6forms_prévisualisation](assets/aem6forms_preview.png) et sélectionnez **Prévisualisation avec des données**.
 1. Dans la boîte de dialogue Aperçu du formulaire, fournissez FormData en tant que fichier XML. Cliquez sur Aperçu pour effectuer le rendu du formulaire avec les données fusionnées du fichier XML.
 
