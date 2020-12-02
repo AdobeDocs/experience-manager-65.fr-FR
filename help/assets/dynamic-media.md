@@ -16,7 +16,7 @@ ht-degree: 90%
 ---
 
 
-# Utilisation de Dynamic Media  {#working-with-dynamic-media}
+# Utilisation de Dynamic Media   {#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/fr/marketing/experience-manager-assets/dynamic-media.html) fournit des ressources visuelles de marchandisage et de marketing à la demande, automatiquement dimensionnées pour une utilisation sur le web, les appareils mobiles et les réseaux sociaux. À partir d’un ensemble de ressources de sources originales, Dynamic Media génère et diffuse en temps réel plusieurs variantes d’un même contenu enrichi par le biais de son réseau mondial et évolutif, aux performances optimisées.
 
@@ -26,7 +26,7 @@ Dynamic Media permet un affichage interactif, notamment le zoom, la rotation à
 >
 >Un article de la communauté (en anglais) intitulé [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/fr/experience-manager/using/aem_dynamic_media.html) porte sur l’utilisation d’Adobe Experience Manager et de Dynamic Media.
 
-## Tâches que vous pouvez effectuer avec Dynamic Media  {#what-you-can-do-with-dynamic-media}
+## Tâches que vous pouvez effectuer avec Dynamic Media   {#what-you-can-do-with-dynamic-media}
 
 Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la rubrique [Utilisation de ressources numériques](manage-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
@@ -49,7 +49,7 @@ Voir également [Configuration de Dynamic Media](administering-dynamic-media.md
 
 >[!NOTE]
 >
->Pour comprendre les différences entre l’utilisation de Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique avec AEM, voir Intégration de Contenu multimédia [dynamique classique et Contenu multimédia](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)dynamique.
+>Pour comprendre les différences entre l’utilisation de Contenu multimédia dynamique et l’intégration de Contenu multimédia dynamique classique à l’AEM, voir [Intégration de Contenu multimédia dynamique classique par rapport à Contenu multimédia dynamique](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media activé ou Dynamic Media désactivé {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -59,7 +59,7 @@ Les caractéristiques suivantes permettent de déterminer si Dynamic Media est 
 * Des visionneuses d’images, à 360° et de supports variés sont disponibles.
 * Des rendus PTIFF sont créés.
 
-When you click an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
+Lorsque vous cliquez sur un fichier d’image, la vue du fichier est différente avec Contenu multimédia dynamique [activé](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
 
 ### Rendus dynamiques {#dynamic-renditions}
 
