@@ -24,7 +24,7 @@ Utilisez la page Recherche de processus pour entrer les critères de recherche q
 
 Vous pouvez entrer des critères de base pour effectuer une recherche générale, des attributs spécifiques pour effectuer une recherche détaillée, ou une combinaison de critères de base et d’attributs spécifiques pour effectuer une recherche combinée.
 
-## Exécution d’une recherche générale {#perform-a-general-search}
+## Exécution d’une recherche générale  {#perform-a-general-search}
 
 Si vous souhaitez rechercher un processus, utilisez une recherche générale si vous connaissez l’identificateur de processus de l’instance du processus, si vous recherchez un groupe d’instances de processus liées, ou si seulement quelques instances de processus sont en cours d’exécution.
 
@@ -40,7 +40,7 @@ Pour effectuer une recherche générale, vous entrez des critères de base. Si v
 
 1. Cliquez sur Rechercher. La page Instance du processus s’affiche, répertoriant les instances trouvées.
 
-## Exécution d’une recherche de processus détaillée {#perform-a-detailed-search-for-a-process}
+## Exécution d’une recherche de processus détaillée  {#perform-a-detailed-search-for-a-process}
 
 Vous pouvez entrer des attributs spécifiques pour effectuer une recherche détaillée. Une recherche détaillée est plus appropriée si les instances de processus en cours d’exécution sont nombreuses et que vous souhaitez limiter le nombre d’instances trouvées en utilisant des critères de recherche.
 
@@ -58,7 +58,7 @@ Vous pouvez entrer des attributs spécifiques pour effectuer une recherche déta
 
 [A propos des états d’instances de processus](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Exécution d’une recherche de processus combinée {#perform-a-combined-search-for-a-process}
+## Exécution d’une recherche de processus combinée  {#perform-a-combined-search-for-a-process}
 
 Pour créer une recherche basée à la fois sur une recherche générale et une recherche détaillée, avec un ET implicite entre les champs, entrez vos critères de recherche dans les champs Recherche générale et Recherche détaillée de la page Recherche de processus.
 
