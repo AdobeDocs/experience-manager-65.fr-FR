@@ -30,15 +30,15 @@ Vous devez créer une conception pour votre site web et dans AEM. Pour ce faire,
 >
 >Pour plus d’informations sur l’accessibilité web, voir [AEM et les instructions pour l’accessibilité web](/help/managing/web-accessibility.md).
 
-## Utilisation de Designer {#using-the-designer}
+## Utilisation de Designer  {#using-the-designer}
 
-Your design can be defined in the **designs** section of the **Tools** tab:
+Votre conception peut être définie dans la section **designs** de l&#39;onglet **Outils** :
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
 Ici, vous pouvez créer la structure requise pour stocker la conception, puis stocker les feuilles de style en cascade (CSS) et les images requises.
 
-Designs are stored under `/etc/designs`. Le chemin d’accès à la conception à utiliser pour un site web est spécifié à l’aide de la propriété `cq:designPath` du nœud `jcr:content`.
+Les conceptions sont stockées sous `/etc/designs`. Le chemin d’accès à la conception à utiliser pour un site web est spécifié à l’aide de la propriété `cq:designPath` du nœud `jcr:content`.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
@@ -46,16 +46,16 @@ Designs are stored under `/etc/designs`. Le chemin d’accès à la conception �
 >
 >Toutes les modifications apportées à une page dans le mode Création sont conservées sous le nœud de conception du site et sont automatiquement appliquées à toutes les pages qui présentent la même conception.
 
-## Éléments nécessaires {#what-you-will-need}
+## Éléments nécessaires  {#what-you-will-need}
 
 Pour créer votre conception, vous aurez besoin des éléments suivants :
 
-**CSS** - Les feuilles de style en cascade définissent le format des zones spécifiques de vos pages.
-**Images** - Toutes les images utilisées pour des fonctions telles que les arrière-plans, les boutons.
+**CSS**  - Les feuilles de style en cascade définissent le format des zones spécifiques de vos pages.
+**Images**  - Toutes les images utilisées pour des fonctions telles que les arrière-plans et les boutons.
 
 ### Points à prendre en compte lors de la conception de votre site web {#considerations-when-designing-your-website}
 
-When developing a website, it is highly recommended to store images and CSS files under `/etc/design/<project>` so you can reference your resources based on the current design like described by the following snippet.
+Lors du développement d’un site Web, il est vivement recommandé de stocker des images et des fichiers CSS sous `/etc/design/<project>` afin que vous puissiez référencer vos ressources en fonction de la conception actuelle, comme décrit dans le fragment de code suivant.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -64,7 +64,7 @@ When developing a website, it is highly recommended to store images and CSS file
 L&#39;exemple précédent offre plusieurs avantages :
 
 * Les composants peuvent avoir une apparence différente selon que chaque site utilise un chemin de conception différent.
-* Re-design of the website can be simply done by pointing the design path to a different node at the root of the site from `design/v1` to `design/v2.`
+* Pour reconcevoir le site Web, il suffit de pointer le chemin de conception vers un autre noeud à la racine du site, de `design/v1` à `design/v2.`.
 
-* `/etc/designs` et `/content` sont les seules URL externes que le navigateur voit vous protéger d&#39;un utilisateur externe qui se demande ce qui se trouve sous votre `/apps` arborescence. Les avantages des URL ci-dessus aident également l’administrateur système à mieux configurer la sécurité, dans la mesure où vous limitez l’exposition des ressources à une poignée d’emplacements distincts.
+* `/etc/designs` et  `/content` sont les seules URL externes que le navigateur voit vous protéger d&#39;un utilisateur externe qui se demande ce qui se trouve sous votre  `/apps` arborescence. Les avantages des URL ci-dessus aident également l’administrateur système à mieux configurer la sécurité, dans la mesure où vous limitez l’exposition des ressources à une poignée d’emplacements distincts.
 
