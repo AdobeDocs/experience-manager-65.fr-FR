@@ -140,12 +140,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>Oracle Database 12c version 1</p> </td>
+   <td><p>Base de données Oracle 12c version 1</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
    <tr>
-   <td><p>Oracle Database 12c version 2 (12.2.0.1.0)</p> </td>
+   <td><p>Base de données Oracle 12c version 2 (12.2.0.1.0)</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -211,7 +211,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   <tr>
    <td>Oracle</td>
    <td><p>Pilote JDBC pour Oracle Database 19.3.0.0.0</p> <p>ojdbc8.jar (version 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Télécharger à partir du site Web <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html"></a>Oracle.</p> </td>
+   <td><p>Télécharger à partir du <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">site Web d’Oracle</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -264,7 +264,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</br><b>Remarque :</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> a atteint la phase de fin de maintenance et les transitions à la phase de support du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</br><b>Remarque : </b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> atteint la phase de fin de maintenance et les transitions à la phase de prise en charge du cycle de vie étendu le 30 novembre 2020. Adobe recommande Red Hat Enterprise Linux 7 pour les mises à niveau et les nouvelles installations. Les installations existantes peuvent utiliser Red Hat Enterprise Linux 6 pendant la phase de prise en charge du cycle de vie étendu.</p> </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -328,7 +328,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
 * AEM Forms on JEE ne prend pas en charge TarMK Cold Standby.
 * AEM Forms on JEE ne prend pas en charge la mise en grappe verticale.
 * AEM Forms on JEE ne prend pas en charge la base de données MySQL sur un environnement organisé en grappes.
-* Pour la liste des plateformes supprimées ou mises à jour, voir le document [Forms New Feature Summary](../../forms/using/whats-new.md)  6.5.
+* Pour la liste des plateformes supprimées ou mises à jour, voir le document [AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md).
 
 ### Serveurs LDAP (facultatifs) {#ldap-servers-optional}
 
@@ -371,7 +371,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
   </tr>
   <tr>
    <td>EMC Documentum</td>
-   <td>7.3</td>
+   <td>7,3</td>
   </tr>
   <tr>
    <td>IBM Filenet </td>
@@ -387,7 +387,7 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
   </tr>
   <tr>
    <td>IBM Content Manager Client</td>
-   <td>8.5 </td>
+   <td>8,5 </td>
   </tr>
   <tr>
    <td>Microsoft Sharepoint</td>
@@ -414,7 +414,7 @@ AEM Forms App prend désormais en charge Apache Cordova. Voici les versions spé
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic track</a> Dernière version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 Classic </a> tracklast version</td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
@@ -450,12 +450,12 @@ AEM Forms App prend désormais en charge Apache Cordova. Voici les versions spé
 >
 >En outre :
 >
->* PDF Generator requires 32-bit version of [Acrobat 2017 classic track version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>* PDF Generator requiert la version 32 bits de [Acrobat 2017 classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d&#39;informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([Sur site](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;.
    >
    >
 * Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
@@ -576,7 +576,7 @@ Pour la configuration requise supplémentaire, voir :
 
 >[!NOTE]
 >
->La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». For details and a comparison of the two tracks, see [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+>La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour obtenir des détails et une comparaison des deux pistes, voir [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### Navigateurs {#browsers}
 
@@ -631,9 +631,9 @@ Pour la configuration requise supplémentaire, voir :
 >
 >Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 >
->* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+>* La plupart des navigateurs récents ne prennent plus en charge les modules externes basés sur NPAPI. Pour plus d&#39;informations sur son impact sur les applications et les workflows AEM Forms, voir [Arrêt des modules externes de navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 >* Safari est pris en charge uniquement sous Macintosh OS X.
->* Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. For more information about Safari 5.1 compatibility with Adobe Reader, Acrobat, see [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>* Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. Pour plus d’informations sur la compatibilité de Safari 5.1 avec Adobe Reader, Acrobat, voir [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 >* Administration Console n’est pas prise en charge sur Safari.
 >* Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
 >* Forms Portal prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
@@ -716,13 +716,13 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs 
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels de fournisseurs tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. All documentation can be accessed from [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
+La configuration requise pour l’installation de logiciels de fournisseurs tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Toute la documentation est accessible à partir de [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/Service Pack de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
 Adobe prend en charge les correctifs urgents ou recommandés publiés par des fournisseurs tiers à leur parution en supposant que les fournisseurs tiers garantissent une compatibilité ascendante avec les versions qu’AEM Forms on JEE prend en charge. Adobe ne prend en charge que les correctifs publiés après le niveau minimal de correctif indiqué dans la documentation d’AEM Forms on JEE.
 
-Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui changent des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. For details on the supported updates, see [Supported patch definitions](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) for specific vendor products and the patch types Adobe supports.
+Dans certains cas, Adobe ne prend pas en charge les mises à jour de fournisseurs tiers qui changent des fonctionnalités importantes, et ne permettent donc pas une compatibilité ascendante totale. Pour plus d&#39;informations sur les mises à jour prises en charge, reportez-vous à la section [Définitions de correctif prises en charge](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) pour connaître les produits de fournisseurs spécifiques et les types de correctifs pris en charge par l&#39;Adobe.
 
 Dans des circonstances échappant au contrôle d’Adobe, des correctifs de fournisseurs revendiquant une compatibilité ascendante peuvent avoir un impact négatif sur les produits ou les environnements clients Adobe. Dans ce cas, Adobe recommande que les clients évaluent l’impact de tout correctif urgent d’un fournisseur tiers avant de l’appliquer aux systèmes critiques. Adobe collabore avec des fournisseurs tiers afin de faire le nécessaire pour résoudre ces problèmes, que ce soit au travers des programmes de prise en charge standard d’Adobe ou de fournisseurs tiers rectifiant les problèmes de leurs correctifs. Ceci ne garantit toutefois pas qu’un nouveau correctif récemment publié par un fournisseur tiers et pris en charge par Adobe fonctionne comme documenté par le fournisseur ou avec AEM Forms on JEE.
 
