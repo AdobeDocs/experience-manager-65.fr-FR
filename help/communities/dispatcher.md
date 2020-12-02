@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 9ba00322588326df6fbcc02bdfba88491d39c289
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 8%
 
 ## AEM Communities {#aem-communities}
 
-Pour AEM Communities, il est nécessaire de configurer le Répartiteur pour assurer le bon fonctionnement des sites [](overview.md#community-sites)communautaires. Des configurations supplémentaires sont nécessaires lors de l’inclusion de fonctionnalités telles que l’activation des communautés et la connexion sociale.
+Pour AEM Communities, il est nécessaire de configurer le Répartiteur pour assurer le bon fonctionnement des [sites communautaires](overview.md#community-sites). Des configurations supplémentaires sont nécessaires lors de l’inclusion de fonctionnalités telles que l’activation des communautés et la connexion sociale.
 
 Pour savoir ce qui est nécessaire à votre déploiement et à votre conception de site
 
-* Contact [Customer Care](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
+* Contacter [le service à la clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html)
 
-Consultez également la documentation [principale du](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)répartiteur.
+Voir aussi la documentation principale [Répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## Dispatcher Caching {#dispatcher-caching}
+## Mise en cache du répartiteur {#dispatcher-caching}
 
 ### Présentation {#overview}
 
@@ -52,11 +52,11 @@ Lorsqu’elle est configurée pour prendre en charge la mise en cache du répart
 
 ### Configuration {#configuration}
 
-La configuration OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** définit l&#39;expiration des pages mises en cache qui apparaissent sous un chemin d&#39;accès spécifié.
+La configuration OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** définit l&#39;expiration des pages mises en cache qui apparaissent sous un chemin spécifié.
 
-* From the [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* À partir de la [console Web](../../help/sites-deploying/configuring-osgi.md)
 
-   * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Par exemple, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Localiser `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Sélectionnez l&#39;icône &quot;+&quot; pour créer une nouvelle configuration de connexion.
@@ -69,15 +69,15 @@ La configuration OSGi **ACS AEM Commons - Dispatcher Cache Control Header - Max 
 
 * **Âge max. de contrôle du cache**
 
-   *(obligatoire)* âge maximal (en secondes) à ajouter à l&#39;en-tête de contrôle du cache. La valeur doit être supérieure à zéro (0).
+   *(obligatoire)* Âge maximal (en secondes) à ajouter à l&#39;en-tête de contrôle du cache. La valeur doit être supérieure à zéro (0).
 
 ## En-têtes de client du répartiteur {#dispatcher-client-headers}
 
-Dans la section /clientheaders de `dispatcher.any`, si vous listez un ensemble spécifique d’en-têtes, il est nécessaire d’inclure `"CSRF-Token"` pour que la fonction [](enablement.md) d’activation fonctionne correctement.
+Dans la section /clientheaders de `dispatcher.any`, si vous listez un ensemble spécifique d&#39;en-têtes, il est nécessaire d&#39;inclure `"CSRF-Token"` pour que la fonction d&#39;[Activation](enablement.md) fonctionne correctement.
 
 ## Filtres du répartiteur {#dispatcher-filters}
 
-La section /filter du `dispatcher.any` fichier est documentée dans [Configuration de l&#39;accès au contenu - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+La section /filter du fichier `dispatcher.any` est documentée dans [Configuration de l&#39;accès au contenu - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
 Cette section décrit les entrées qui sont probablement nécessaires au bon fonctionnement des fonctions des communautés.
 
@@ -97,7 +97,7 @@ Voir également :
 
 >[!CAUTION]
 >
->Voir [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) pour en savoir plus sur la limitation de l’accès en utilisant Dispatcher. Lisez également la liste de vérification [de sécurité](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/security-checklist.html) AEM pour plus d’informations sur la sécurité de votre installation AEM.
+>Voir [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) pour en savoir plus sur la limitation de l’accès en utilisant Dispatcher. Consultez également la [liste de vérification de sécurité AEM](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/security-checklist.html) pour plus d&#39;informations sur la sécurité de votre installation AEM.
 
 
 Les entrées suivantes doivent être ajoutées à la fin de la section /filter, en particulier après toutes les entrées de refus.
@@ -172,9 +172,9 @@ Les entrées suivantes doivent être ajoutées à la fin de la section /filter, 
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Règles de répartiteur {#dispatcher-rules}
+## Règles du répartiteur {#dispatcher-rules}
 
-La section Règles de `dispatcher.any` définit les réponses à mettre en cache en fonction de l’URL demandée. Pour les communautés, la section des règles est utilisée pour définir ce qui ne doit jamais être mis en cache.
+La section des règles de `dispatcher.any` définit les réponses à mettre en cache en fonction de l&#39;URL demandée. Pour les communautés, la section des règles est utilisée pour définir ce qui ne doit jamais être mis en cache.
 
 ```shell
 # Never cache the client-side .social.json calls
@@ -195,7 +195,7 @@ La section Règles de `dispatcher.any` définit les réponses à mettre en cache
 /0208 { /type "deny" /glob "/content/usergenerated/*" }
 ```
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
 L’insertion de règles de filtrage sans tenir compte de l’impact sur les règles antérieures est une source majeure de problèmes, en particulier lors de l’ajout d’une règle pour refuser l’accès.
 
@@ -203,7 +203,7 @@ Le tout premier modèle de filtre est souvent utilisé pour tout refuser afin qu
 
 ## Exemple de dispatcher.any {#sample-dispatcher-any}
 
-Vous trouverez ci-dessous un exemple `dispatcher.any` de fichier qui inclut les communautés /filtres et /règles.
+Vous trouverez ci-dessous un exemple de fichier `dispatcher.any` qui inclut les communautés /filtres et /règles.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)
