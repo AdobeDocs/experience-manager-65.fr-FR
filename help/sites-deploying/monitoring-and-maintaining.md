@@ -65,14 +65,14 @@ Une sauvegarde complète est souvent effectuée à intervalles réguliers (par e
 >
 >Pour plus d’informations sur les performances de sauvegarde, consultez la section [Performance de sauvegarde](/help/sites-deploying/configuring-performance.md#backup-performance).
 
-### Prise en charge de votre installation logicielle {#backing-up-your-software-installation}
+### Prise en charge de votre installation logicielle  {#backing-up-your-software-installation}
 
 Après l’installation de votre configuration ou des modifications importantes au sein de celle-ci, effectuez une sauvegarde de votre installation logicielle. 
 
 Pour ce faire, vous devez [sauvegarder entièrement votre référentiel](#backing-up-your-repository), puis :
 
 1. Arrêtez AEM.
-1. Back up the entire `<cq-installation-dir>` from your file system.
+1. Sauvegardez l&#39;intégralité de `<cq-installation-dir>` de votre système de fichiers.
 
 >[!CAUTION]
 >
@@ -86,7 +86,7 @@ Pour ce faire, vous devez [sauvegarder entièrement votre référentiel](#backin
 >
 >La duplication du disque peut également être utilisée comme mécanisme de sauvegarde.
 
-### Sauvegarde de votre référentiel {#backing-up-your-repository}
+### Sauvegarde de votre référentiel  {#backing-up-your-repository}
 
 La section [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md) de la documentation CRX permet de couvrir tous les problèmes liés aux sauvegardes du référentiel CRX.
 
@@ -106,24 +106,24 @@ L’outil **Purge de versions** est disponible dans la console **[Outils](/help/
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Chemin** du début Chemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
+**Début** PathChemin absolu sur lequel la purge doit être effectuée. Vous pouvez sélectionner le chemin de début en cliquant sur le navigateur d’arborescence du référentiel. 
 
-**Récursif** Lors de la purge de données, vous pouvez choisir entre exécuter l’opération sur un noeud ou sur une hiérarchie entière en sélectionnant Recursif.  Dans ce cas, le chemin donné définit le nœud racine de la hiérarchie. 
+**** RecursiveLors de la purge de données, vous pouvez choisir d’effectuer l’opération sur un noeud ou sur une hiérarchie entière en sélectionnant Recursive.  Dans ce cas, le chemin donné définit le nœud racine de la hiérarchie. 
 
-**Nombre maximal de versions à conserver** Nombre maximal de versions à conserver pour un noeud. Lorsque ce nombre dépasse la valeur, les versions les plus anciennes sont purgées.
+**Nombre maximal de versions à** conserverNombre maximal de versions à conserver pour un noeud. Lorsque ce nombre dépasse la valeur, les versions les plus anciennes sont purgées.
 
-**Âge** maximal de la version L’âge maximal de la version d’un noeud. Lorsque l’âge d’une version dépasse cette valeur, elle est purgée. 
+**** âge maximum de la versionÂge maximum de la version d’un noeud. Lorsque l’âge d’une version dépasse cette valeur, elle est purgée. 
 
-**Exécution** à sec Comme la suppression de versions de votre contenu est définitive et ne peut pas être annulée sans restauration d’une sauvegarde, l’outil Purger les versions fournit un mode d’exécution à sec qui vous permet de prévisualisation des versions purgées. Pour lancer le mode Exécution d’essai du processus de purge, cliquez sur Exécution d’essai.
+**Exécution** à secComme la suppression de versions de votre contenu est définitive et ne peut pas être annulée sans restauration d&#39;une sauvegarde, l&#39;outil Purger les versions fournit un mode d&#39;exécution à sec qui vous permet de prévisualisation des versions purgées. Pour lancer le mode Exécution d’essai du processus de purge, cliquez sur Exécution d’essai.
 
-**Purger** Lancez la purge des versions sur le noeud défini par le chemin d’accès au Début.
+**** PurgeLancez la purge des versions sur le noeud défini par le chemin d&#39;accès au Début.
 
 ### Purge des versions d’un site web {#purging-versions-of-a-web-site}
 
 Pour purger les versions d’un site web, procédez comme suit :
 
 1. Accédez à la console **[Outils](/help/sites-administering/tools-consoles.md)******, sélectionnez **Versions** et double-cliquez sur **Purger les versions.**
-1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
+1. Définissez le chemin d’début du contenu à purger (par ex. `/content/geometrixx-outdoors`).
 
    * Si vous souhaitez purger uniquement le nœud défini par le chemin, désélectionner **Récursif**.
    * Si vous souhaitez purger le nœud défini par le chemin et ses descendants, sélectionnez **Récursif**.
@@ -160,7 +160,7 @@ Par ailleurs, la console affiche des informations utiles sur les versions :
 Dans l’exemple suivant :
 
 * Les versions **[!DNL Shirts]** sont purgées parce que leur âge de version est supérieur à 2 jours.
-* The **[!DNL Tonga Fashions!]** versions are purged because their number of versions is greater than 5.
+* Les versions **[!DNL Tonga Fashions!]** sont purgées car leur nombre de versions est supérieur à 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -168,7 +168,7 @@ Dans l’exemple suivant :
 
 Les enregistrements et les fichiers journaux d’audit associés à Adobe Experience Manager (AEM) sont disponibles dans différents emplacements. Ce qui suit vise à vous donner un aperçu de ce que vous pouvez trouver, à quels emplacements.
 
-### Utilisation des journaux {#working-with-logs}
+### Utilisation des journaux  {#working-with-logs}
 
 La gestion du contenu web d’AEM permet d’enregistrer de manière détaillée les journaux. Après avec décompressé et démarré Quickstart, vous pouvez trouver les journaux à l’adresse suivante :
 
@@ -204,13 +204,13 @@ Les actions de modération sont enregistrées ici.
 Les messages d’erreur (de différents niveaux de gravité) sont enregistrés ici.
 
    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
-Ce journal n&#39;est utilisé que si [!DNL Dynamic Media] est activé. Il fournit des statistiques et des informations analytiques utilisées pour analyser le comportement du processus interne ImageServer.
+Ce journal n&#39;est utilisé que si  [!DNL Dynamic Media] est activé. Il fournit des statistiques et des informations analytiques utilisées pour analyser le comportement du processus interne ImageServer.
 
    * `request.log`
 Chaque demande d’accès est enregistrée ici en même temps que la réponse.
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
-Ce journal n&#39;est utilisé que si [!DNL Dynamic Media] est activé. The s7access log records each request made to [!DNL Dynamic Media] through `/is/image` and `/is/content`.
+Ce journal n&#39;est utilisé que si  [!DNL Dynamic Media] est activé. Le journal s7access enregistre chaque requête envoyée à [!DNL Dynamic Media] par `/is/image` et `/is/content`.
 
    * `stderr.log`
 Contient les messages d’erreur, de différents niveaux de gravité, générés lors du démarrage. Par défaut, le niveau de journal est défini sur 
@@ -221,7 +221,7 @@ Contient des messages de journaux indiquant les événements pendant le démarra
 
    * `upgrade.log`
 Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir de la variable 
-`com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor` packages.
+`com.day.compat.codeupgrade` et  `com.adobe.cq.upgradesexecutor` paquets.
 
 * `<cq-installation-dir>/crx-quickstart/repository`
 
@@ -230,13 +230,13 @@ Révision des informations de journalisation.
 
 >[!NOTE]
 >
->Les journaux ImageServer et s7access ne sont pas inclus dans le **Télécharger le **package complet généré à partir de la **page **system/console/status-Bundlelist **page. For support purposes, if you have [!DNL Dynamic Media] issues, please also append the ImageServer and s7access logs when you contact Customer Support.
+>Les journaux ImageServer et s7access ne sont pas inclus dans le **Télécharger le **package complet généré à partir de la **page **system/console/status-Bundlelist **page. Pour obtenir de l’aide, si vous rencontrez des problèmes [!DNL Dynamic Media], veuillez également ajouter les journaux ImageServer et s7access lorsque vous contactez le service clientèle.
 
 ### Activation du niveau de journalisation DEBUG {#activating-the-debug-log-level}
 
 Le niveau de journalisation par défaut ([configuration des journaux Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) consiste en des informations, les messages de débogage n’y sont donc pas consignés.
 
-Pour activer le niveau de journalisation de débogage pour un journal, définissez la propriété `org.apache.sling.commons.log.level` pour le débogage dans le référentiel. For example, on `/libs/sling/config/org.apache.sling.commons.log.LogManager` to configure the [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
+Pour activer le niveau de journalisation de débogage pour un journal, définissez la propriété `org.apache.sling.commons.log.level` pour le débogage dans le référentiel. Par exemple, sur `/libs/sling/config/org.apache.sling.commons.log.LogManager` pour configurer la journalisation [globale Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration).
 
 >[!CAUTION]
 >
@@ -265,7 +265,7 @@ Les niveaux de journalisation sont les suivants :
 Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un niveau de journalisation différent. Vous pouvez le faire depuis le référentiel en procédant comme suit :
 
 1. S’il n’existe pas déjà, créez un dossier de configuration (`sling:Folder`) pour votre projet `/apps/<project-name>/config`.
-1. Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
+1. Sous `/apps/<project-name>/config`, créez un noeud pour la nouvelle [configuration du journal de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration) :
 
    * Nom : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (s’agissant d’un enregistreur)
 
@@ -280,26 +280,26 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
 1. Définissez les propriétés suivantes sur ce nœud :
 
-   * Nom (name) : `org.apache.sling.commons.log.file`
+   * Nom : `org.apache.sling.commons.log.file`
 
-      Type : Chaîne
+      Type : chaîne
 
       Valeur : spécifiez le fichier journal ; par exemple, `logs/myLogFile.log`
 
-   * Nom (name) : `org.apache.sling.commons.log.names`
+   * Nom : `org.apache.sling.commons.log.names`
 
-      Type : Chaîne[] (Chaîne + Multi)
+      Type : chaîne[] (Chaîne + Multi)
 
       Valeur : spécifiez les services OSGi pour lesquels le journal doit enregistrer les messages ; par exemple, tous les éléments suivants :
 
       * `org.apache.sling`
       * `org.apache.felix`
       * `com.day`
-   * Nom (name) : `org.apache.sling.commons.log.level`
+   * Nom : `org.apache.sling.commons.log.level`
 
-      Type : Chaîne
+      Type : chaîne
 
-      Valeur : spécifier le niveau de journal requis ( `debug`, `info`, `warn` ou `error`); par exemple `debug`
+      Valeur : spécifiez le niveau de journal requis ( `debug`, `info`, `warn` ou `error`); par exemple `debug`
 
    * Configurez les autres paramètres en fonction de vos besoins :
 
@@ -334,7 +334,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
    >[!NOTE]
    >
-   >Log writer paths are relative to the `crx-quickstart` location.
+   >Les chemins d&#39;accès de journalisation sont relatifs à l&#39;emplacement `crx-quickstart`.
    >
    >Par conséquent, un fichier journal spécifié en tant que :
    >
@@ -351,7 +351,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >écrit à un répertoire :
    >
    >`<cq-installation-dir>/logs/`\
-   >(c’est-à-dire à côté de `<cq-installation-dir>/crx-quickstart/`)
+   >(c’est-à-dire en regard de `<cq-installation-dir>/crx-quickstart/`)
 
 1. Cette étape est nécessaire uniquement lorsqu’un nouvel auteur est nécessaire (c’est-à-dire avec une configuration différente de l’auteur par défaut).
 
@@ -361,11 +361,11 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >
    >Si aucun auteur explicite n’est configuré, le système génère automatiquement un auteur implicite par défaut.
 
-   Under `/apps/<project-name>/config`, create a node for the new [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
+   Sous `/apps/<project-name>/config`, créez un noeud pour la nouvelle [configuration de l&#39;enregistreur de journalisation Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration) :
 
-   * Name: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (as this is a Writer)
+   * Nom : `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (car il s&#39;agit d&#39;un auteur)
 
-      As with the Logger, `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information). Par exemple, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Comme pour le journal, `<identifier>` est remplacé par du texte libre que vous (devez) saisir pour identifier l&#39;instance (vous ne pouvez pas omettre ces informations). Par exemple, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Type : `sling:OsgiConfig`
    >[!NOTE]
@@ -388,13 +388,13 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
          Type : `Long`
 
-         Value: specify the number of log files you want kept; for example, `5`
+         Valeur : indiquez le nombre de fichiers journaux à conserver ; par exemple, `5`
 
       * Nom : `org.apache.sling.commons.log.file.size`
 
          Type : `String`
 
-         Value: specify as required to control file rotation by size/date; for example, `'.'yyyy-MM-dd`
+         Valeur : spécifier les conditions requises pour contrôler la rotation des fichiers par taille/date ; par exemple, `'.'yyyy-MM-dd`
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` contrôle la rotation du fichier journal en fonction du paramètre suivant :
@@ -405,7 +405,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >
    >pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
    >
-   >* Une taille maximale peut être spécifiée par un nombre. If no size indicator is given, then this is taken as the number of bytes, or you can add one of the size indicators - `KB`, `MB`, or `GB` (case is ignored).
+   >* Une taille maximale peut être spécifiée par un nombre. Si aucun indicateur de taille n&#39;est fourni, il est pris en compte comme nombre d&#39;octets ou vous pouvez ajouter l&#39;un des indicateurs de taille : `KB`, `MB` ou `GB` (la casse est ignorée).
    >* Une planification heure/date peut être spécifiée sous la forme d’un modèle `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
 
    >
@@ -433,15 +433,15 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 
 1. Lisez votre nouveau fichier journal avec l’outil sélectionné.
 
-   The log file created by this example will be `../crx-quickstart/logs/myLogFile.log`.
+   Le fichier journal créé par cet exemple sera `../crx-quickstart/logs/myLogFile.log`.
 
-The Felix Console also provides information about Sling Log Support at `../system/console/slinglog`; for example `https://localhost:4502/system/console/slinglog`.
+La console Felix fournit également des informations sur la prise en charge du journal Sling à l&#39;adresse `../system/console/slinglog`; par exemple `https://localhost:4502/system/console/slinglog`.
 
 ### Recherche des enregistrements d’audit {#finding-the-audit-records}
 
 Les enregistrements d’audit sont effectués pour fournir un registre de qui a fait quoi et quand. Les enregistrements d’audit sont générés pour les événements de gestion du contenu web d’AEM et OSGi. 
 
-#### Enregistrements d’audit de la gestion du contenu web d’AEM affiché lors de la création de page {#aem-wcm-audit-records-shown-when-page-authoring}
+#### Enregistrements d’audit de la gestion du contenu web d’AEM affiché lors de la création de page  {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Ouvrez une page.
 1. Depuis le sidekick, vous pouvez sélectionner l’onglet avec l’icône de verrouillage, puis double-cliquer sur **Journal d’audit…**
@@ -451,13 +451,13 @@ Les enregistrements d’audit sont effectués pour fournir un registre de qui a 
 
 1. Cliquez sur **OK** pour fermer la fenêtre. 
 
-#### Enregistrements d’audit de la gestion du contenu web d’AEM dans le référentiel {#aem-wcm-auditing-records-within-the-repository}
+#### Enregistrements d’audit de la gestion du contenu web d’AEM dans le référentiel  {#aem-wcm-auditing-records-within-the-repository}
 
-Within the `/var/audit` folder, audit records are held according to the resource. Vous pouvez faire défiler la page vers le bas jusqu’à ce que vous puissiez voir les différents enregistrements et les informations qu’ils contiennent. 
+Dans le dossier `/var/audit`, les enregistrements d&#39;audit sont conservés en fonction de la ressource. Vous pouvez faire défiler la page vers le bas jusqu’à ce que vous puissiez voir les différents enregistrements et les informations qu’ils contiennent. 
 
 Ces entrées contiennent les mêmes informations que lors de la modification d’une page.
 
-#### Enregistrements d’audit OSGi dans la console web {#osgi-audit-records-from-the-web-console}
+#### Enregistrements d’audit OSGi dans la console web  {#osgi-audit-records-from-the-web-console}
 
 Les événements OSGi produisent également des enregistrements d’audit pouvant être affichés dans l’onglet **État de la configuration** tab -> **Fichiers journaux** dans la console web Adobe AEM : 
 
@@ -469,7 +469,7 @@ Vous pouvez surveiller vos [files d’attente de réplication](/help/sites-deplo
 
 * toutes les files d’attente requises sont-elles activées ?
 * les files d’attente désactivées sont-elles à nouveau requises ?
-* all `enabled` queues should have the status `idle` or `active`, which indicate normal operation; no queues should be `blocked`, which is often a sign of problems on the receivers side.
+* toutes les files d&#39;attente `enabled` doivent avoir l&#39;état `idle` ou `active`, ce qui indique une opération normale ; aucune file d&#39;attente ne doit être `blocked`, ce qui est souvent le signe de problèmes du côté des récepteurs.
 
 * Si la taille de la file d’attente augmente au fil du temps, cela peut indiquer qu’elle est bloquée.
 
@@ -507,7 +507,7 @@ Pour surveiller un agent de réplication :
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
-Again you can develop a solution to detect all replication agents (located under `/etc/replication/author` or `/etc/replication/publish`), then check the status of the agent ( `enabled`, `disabled`) and the underlying queue ( `active`, `idle`, `blocked`).
+Vous pouvez à nouveau développer une solution pour détecter tous les agents de réplication (situés sous `/etc/replication/author` ou `/etc/replication/publish`), puis vérifier l&#39;état de l&#39;agent ( `enabled`, `disabled`) et la file d&#39;attente sous-jacente ( `active`, `idle`, `blocked`).
 
 ## Surveillance de la performance {#monitoring-performance}
 
@@ -559,7 +559,7 @@ Toutes ces informations doivent être obtenues, classées et analysées avant qu
    * Collectez autant d’informations que possible à comparer à votre connaissance du système dans des circonstances normales :
 
 
-### Outils pour surveiller et analyser les performances {#tools-for-monitoring-and-analyzing-performance}
+### Outils pour surveiller et analyser les performances  {#tools-for-monitoring-and-analyzing-performance}
 
 Les sections suivantes vous offrent un bref aperçu des outils disponibles pour surveiller et analyser les performances.
 
@@ -585,22 +585,22 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Images mémoire de threads</td>
    <td>Observez les threads JVM. Identifiez les contentions, les verrouillages et les exécutions longues.</td>
-   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Dépend du système d’exploitation : <br /> - Unix/Linux : <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (mode console) : Ctrl-Saut<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Vidages de tas</td>
    <td>Problèmes d’insuffisance de mémoire affectant la vitesse de performance.</td>
-   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>Voir le <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Guide de dépannage pour Java SE 6 avec HotSpot VM</a>.</p> </td>
+   <td><p>Ajoutez l’option:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> à l’appel java à l’AEM.</p> <p>Voir le <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Guide de dépannage pour Java SE 6 avec HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Appels système</td>
    <td>Identifier les problèmes de durée.</td>
-   <td><p>Calls to <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing are used to generate timestamps from your code, or via <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Remarque :</strong> ils doivent être mis en place afin de pouvoir être activés/désactivés si nécessaire. Lorsqu’un système fonctionne parfaitement, il n’est pas nécessaire de perdre du temps à collecter des statistiques.</p> </td>
+   <td><p>Les appels à <code>System.currentTimeMillis()</code> ou <code>com.day.util</code>.Timing sont utilisés pour générer des horodatages à partir de votre code, ou via <a href="#html-comments">des commentaires HTML</a>.</p> <p><strong>Remarque :</strong> ils doivent être mis en place afin de pouvoir être activés/désactivés si nécessaire. Lorsqu’un système fonctionne parfaitement, il n’est pas nécessaire de perdre du temps à collecter des statistiques.</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
    <td>Identifier les fuites de mémoire, analyser les temps de réponse de manière sélective.</td>
-   <td><p>L’utilisation de base est :</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td>
+   <td><p>L’utilisation de base est :</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Voir <a href="#apache-bench">Apache Bench</a> et la <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">page man ab</a> pour plus de détails.</p> </td>
   </tr>
   <tr>
    <td>Analyse de la recherche</td>
@@ -635,7 +635,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Statistiques de durée</td>
    <td>Voir les statistiques de durée pour le rendu de page.</td>
-   <td><p>To see timing statistics for page rendering you can use <strong>Ctrl-Shift-U</strong> together with <code>?debugClientLibs=true</code> set in the URL.</p> </td>
+   <td><p>Pour afficher les statistiques de minutage du rendu de page, vous pouvez utiliser <strong>Ctrl-Shift-U</strong> avec <code>?debugClientLibs=true</code> défini dans l’URL.</p> </td>
   </tr>
   <tr>
    <td>Outil de profilage du processeur et de la mémoire<br /> </td>
@@ -650,11 +650,11 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
  </tbody>
 </table>
 
-### Interprétation de request.log {#interpreting-the-request-log}
+### Interprétation de request.log  {#interpreting-the-request-log}
 
 Ce fichier permet d’enregistrer des données de base sur chaque demande envoyée à AEM. Vous pouvez en tirer des conclusions précieuses.
 
-`request.log` fournit une méthode intégrée pour identifier la durée des demandes. For development purposes it is useful to `tail -f` the `request.log` and watch for slow response times. Pour analyser un fichier `request.log`   de plus grande envergure, nous vous recommandons [l’utilisation de `rlog.jar`, qui permet de trier et de filtrer les délais de réponse](#using-rlog-jar-to-find-requests-with-long-duration-times).
+`request.log` fournit une méthode intégrée pour identifier la durée des demandes. À des fins de développement, il est utile de `tail -f` le `request.log` et de surveiller les temps de réponse lents. Pour analyser un fichier `request.log`   de plus grande envergure, nous vous recommandons [l’utilisation de `rlog.jar`, qui permet de trier et de filtrer les délais de réponse](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
 Nous vous recommandons d’isoler les pages « lentes » de `request.log`, puis de les régler individuellement pour une meilleure performance. Cette opération est généralement effectuée en incorporant des mesures de performance par composant, ou en utilisant un outil de profilage des performances tel que ` [yourkit](https://www.yourkit.com/)`.
 
@@ -669,7 +669,7 @@ Le journal des demandes permet d’enregistrer chaque demande effectuée, ainsi 
 
 En totalisant toutes les entrées GET d’une période spécifique (par exemple plus de 24 heures), vous pouvez informer sur le temps moyen passé sur votre site web.
 
-#### Surveillance des délais de réponse avec request.log {#monitoring-response-times-with-the-request-log}
+#### Surveillance des délais de réponse avec request.log  {#monitoring-response-times-with-the-request-log}
 
 Le journal des demande est un point de départ intéressant pour l’analyse de performances :
 
@@ -703,7 +703,7 @@ Ce journal dispose d’une ligne par requête ou réponse :
 
 L’utilisation de petits scripts vous permet d’extraire les informations requises du fichier journal et de compiler les statistiques de votre choix. Par ailleurs, vous pouvez voir quelles pages ou quels types de pages sont lents et si la performance générale est satisfaisante.
 
-#### Surveillance des temps de réponse de la recherche avec request.log {#monitoring-search-response-times-with-the-request-log}
+#### Surveillance des temps de réponse de la recherche avec request.log  {#monitoring-search-response-times-with-the-request-log}
 
 Les requêtes de recherche sont également enregistrées dans le fichier journal :
 
@@ -738,9 +738,9 @@ Des tests doivent être effectués pour déterminer le nombre d’utilisations s
 31/Mar/2009:11:45:44 +0200 [337] <- 304 text/html 0ms
 ```
 
-### Utilisation de rlog.jar pour trouver des demandes avec de longues durées {#using-rlog-jar-to-find-requests-with-long-duration-times}
+### Utilisation de rlog.jar pour trouver des demandes avec de longues durées  {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM includes various helper tools located in:
+aem comprend divers outils d&#39;assistance situés dans :
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 L’un de ces outils, `rlog.jar` , , peut être utilisé pour trier rapidement `request.log` de sorte que les demandes soient affichées selon la durée, c’est-à-dire de la plus longue à la plus courte.
@@ -851,7 +851,7 @@ Percentage of the requests served within a certain time (ms)
 
 Les chiffres ci-dessus sont extraits d’un ordinateur portable standard MacBook Pro (mi-2010) avec accès à la page d’entreprise geometrixx, comme inclus dans une installation d’AEM par défaut. La page est très simple, mais non optimisée pour la performance. 
 
-`apachebench` affiche également le temps par demande comme moyenne, pour toutes les demandes simultanées ; voir `Time per request: 54.595 [ms]` (moyenne, entre toutes les demandes simultanées). You can change the value of the concurrency parameter `-c` (number of multiple requests to perform at a time) to see any effects.
+`apachebench` affiche également le temps par demande comme moyenne, pour toutes les demandes simultanées ; voir  `Time per request: 54.595 [ms]` (moyenne, entre toutes les demandes simultanées). Vous pouvez modifier la valeur du paramètre d’accès simultané `-c` (nombre de requêtes multiples à exécuter à la fois) pour voir tous les effets.
 
 ### Compteurs de demandes {#request-counters}
 
@@ -871,7 +871,7 @@ Les informations collectées peuvent être utilisées pour indiquer :
 
 ### Commentaires HTML {#html-comments}
 
-It is recommended that every project includes `html comments` for server performance. Vous pouvez trouver de nombreux exemples pertinents dans la sphère publique ; sélectionnez une page, ouvrez la source de la page pour l’afficher, faites-la ensuite défiler vers le bas, et le code suivant peut ensuite être consulté :
+Il est recommandé que chaque projet inclut `html comments` pour les performances du serveur. Vous pouvez trouver de nombreux exemples pertinents dans la sphère publique ; sélectionnez une page, ouvrez la source de la page pour l’afficher, faites-la ensuite défiler vers le bas, et le code suivant peut ensuite être consulté :
 
 ```xml
 </body>
@@ -881,7 +881,7 @@ It is recommended that every project includes `html comments` for server perform
          -->
 ```
 
-### Surveillance de la performance à l’aide JConsole {#monitoring-performance-using-jconsole}
+### Surveillance de la performance à l’aide JConsole  {#monitoring-performance-using-jconsole}
 
 La commande d’outil `jconsole` est disponible avec JDK.
 
@@ -889,7 +889,7 @@ La commande d’outil `jconsole` est disponible avec JDK.
 1. Exécuter `jconsole.`
 1. Sélectionnez votre instance AEM et **connectez-vous**.
 
-1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
+1. Dans l&#39;application `Local`, doublon-clic `com.day.crx.quickstart.Main`; l’aperçu s’affiche par défaut :
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -903,14 +903,14 @@ Depuis JDK 1.6, la commande d’outil `jvisualvm` est disponible. Une fois que 
 
    >[!NOTE]
    >
-   >If using Java 5 you can add the `-Dcom.sun.management.jmxremote` argument to the java command line that starts your JVM. JMX est activé par défaut avec Java 6.
+   >Si vous utilisez Java 5, vous pouvez ajouter l’argument `-Dcom.sun.management.jmxremote` à la ligne de commande java qui début votre JVM. JMX est activé par défaut avec Java 6.
 
 1. Exécutez l’une des deux options suivantes :
 
    * `jvisualvm` : dans le dossier bin JDK 1.6 (version testée)
    * `visualvm` : peut être téléchargé à partir de [VisualVM](https://visualvm.dev.java.net/) (la version la plus à la pointe)
 
-1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
+1. Dans l&#39;application `Local`, doublon-clic `com.day.crx.quickstart.Main`; l’aperçu s’affiche par défaut :
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -938,7 +938,7 @@ Les informations suivantes peuvent s’avérer utiles :
 * [Combien de demandes par heure recevez-vous sur le système de création lorsque le niveau d’activité est élevé ?](#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time)
 * [Combien de demandes par heure recevez-vous sur le système de publication lorsque le niveau d’activité est élevé ?](#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time)
 
-#### Combien d’auteurs travaillent avec le système ? {#how-many-authors-are-working-with-the-system}
+#### Combien d’auteurs travaillent avec le système ?  {#how-many-authors-are-working-with-the-system}
 
 Pour afficher le nombre d’auteurs qui ont utilisé le système depuis l’installation, utilisez la ligne de commande :
 
@@ -953,7 +953,7 @@ Pour afficher le nombre d’auteurs à une date spécifique :
 grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 ```
 
-#### Quel est le nombre moyen d’activations de page par jour ? {#what-is-the-average-number-of-page-activations-per-day}
+#### Quel est le nombre moyen d’activations de page par jour ?  {#what-is-the-average-number-of-page-activations-per-day}
 
 Pour voir nombre total d’activation de page depuis l’installation du serveur, utilisez une requête de référentiel ; via CRXDE - Outils - Requête :
 
@@ -1009,7 +1009,7 @@ Pour voir le nombre de ressource de gestion des actifs numériques que vous cons
 
 #### Quelle est la taille moyenne des ressources ?{#what-is-the-average-size-of-the-assets}
 
-To determine the total size of the `/var/dam` folder:
+Pour déterminer la taille totale du dossier `/var/dam` :
 
 1. Utilisez WebDAV pour mapper le référentiel dans le système de fichiers local.
 
@@ -1020,7 +1020,7 @@ To determine the total size of the `/var/dam` folder:
    du -sh dam/
    ```
 
-   To get the average size, divide the global size by the total number of assets in `/var/dam` (obtained above).
+   Pour obtenir la taille moyenne, divisez la taille globale par le nombre total de ressources dans `/var/dam` (obtenu ci-dessus).
 
 ####  Combien de modèles sont actuellement utilisés ?{#how-many-templates-are-currently-used}
 
@@ -1058,7 +1058,7 @@ Pour déterminer le nombre de demandes par heure que vous recevez sur le systèm
 
    Utilisez ces valeurs pour calculer le nombre d’heures qui se sont écoulées depuis l’installation, puis le nombre moyen de demandes par heure. 
 
-#### Combien de demandes par heure recevez-vous sur le système de publication lorsque le niveau d’activité est élevé ? {#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time}
+#### Combien de demandes par heure recevez-vous sur le système de publication lorsque le niveau d’activité est élevé ?  {#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time}
 
 Répétez la procédure ci-dessus sur votre instance de publication.
 
@@ -1079,7 +1079,7 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 
 
 
-### Processeur à 100 % {#cpu-at}
+### Processeur à 100 %  {#cpu-at}
 
 Si le processeur de votre système fonctionne en permanence à 100 %, voir :
 
@@ -1097,12 +1097,12 @@ Si votre système ne dispose pas de suffisamment de mémoire, cela peut vous êt
 
 Dans ce cas, vérifiez :
 
-* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
+* Paramètres JVM utilisés pour [début AEM](/help/sites-deploying/deploy.md#getting-started)
 * La base de connaissances :
 
    * [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 
-### I/O des disques {#disk-i-o}
+### I/O des disques  {#disk-i-o}
 
 Si votre système ne dispose pas de suffisamment d’espace de disque ou que le disque est en train de se détériorer, commencez par voir :
 
@@ -1121,7 +1121,7 @@ Si votre système ne dispose pas de suffisamment d’espace de disque ou que le 
    * [Trop de fichiers ouverts](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
    *  [Le journal consomme trop d’espace disque](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
-### Détérioriation régulière des performances {#regular-performance-degradation}
+### Détérioriation régulière des performances  {#regular-performance-degradation}
 
 Si vous voyez la performance de votre instance se détériorer après chaque réinitialisation (parfois après une semaine ou plus), ce qui suit peut être vérifié :
 
@@ -1130,7 +1130,7 @@ Si vous voyez la performance de votre instance se détériorer après chaque ré
 
    * [Sessions non fermées](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
 
-### Réglage de JVM {#jvm-tuning}
+### Réglage de JVM  {#jvm-tuning}
 
 La capacité de réglage de Java Virtual Machine (JVM) a été considérablement améliorée (surtout depuis Java 7). Pour cette raison, la spécification d’une taille fixe raisonnable de JVM et l’utilisation des paramètres par défaut sera souvent convenable.
 
