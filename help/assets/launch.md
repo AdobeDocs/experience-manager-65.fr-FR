@@ -129,7 +129,7 @@ Lorsqu’un compte Experience Cloud est abonné pour utiliser Adobe Analytics 
 
 Voir [Installation et configuration des extensions](#installing-and-setup-of-extensions).
 
-À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans [Présentation du suivi](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 
 ## Utilisation de l’extension Visionneuses Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -450,7 +450,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://docs.adobe.com/con
 
    Si aucune suite de rapports n’est disponible, votre administrateur Adobe Analytics ou vous-même devez en créer une avant de poursuivre la configuration.
 
-   Voir [Rapports et suites de rapports](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) et [Création d’une suite de rapports](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-console/create-report-suite.html).
+   Voir [Rapports et suites de rapports](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) et [Création d’une suite de rapports](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html).
 
    Dans Adobe Analytics, les suites de rapports sont gérées sous **[!UICONTROL Admin > Suites de rapports]**.
 
@@ -517,7 +517,7 @@ Voir aussi [Création d’une propriété](https://docs.adobe.com/content/help/f
 1. Dans Adobe Launch, cliquez sur **[!UICONTROL Nouvelle propriété]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une propriété]**, dans le champ **[!UICONTROL Nom]**, saisissez un nom descriptif, tel que le titre de votre site web. Par exemple, `DynamicMediaViewersProp.`
 1. Dans le champ **[!UICONTROL Domaines]**, saisissez le domaine de votre site web.
-1. In the **[!UICONTROL Advanced Options]** drop-down, enable **[!UICONTROL Configure for extension development (cannot be modified later)]** in case the extension you want to use--in this case, *Dynamic Media Viewers*--is not yet released.
+1. Dans la liste déroulante **[!UICONTROL Options avancées]**, activez **[!UICONTROL Configurer pour le développement de l&#39;extension (ne peut pas être modifié ultérieurement)]** au cas où l&#39;extension que vous souhaitez utiliser (dans ce cas, *Visionneuses de médias dynamiques*) n&#39;est pas encore disponible.
 
    ![image2019-7-8_16-3-47](assets/image2019-7-8_16-3-47.png)
 
@@ -559,7 +559,7 @@ Cliquez sur **[!UICONTROL Enregistrer]**.
 
 Voir [Extension Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html).
 
-* (Optional; required only if video tracking is needed) *Adobe Media Analytics for Audio and Video* extension
+* (Facultatif) requis uniquement si le suivi vidéo est nécessaire) *Extension Adobe Media Analytics pour l’audio et la vidéo*
 
 Renseignez le champ Serveur de suivi. Le serveur de suivi pour l’extension *Adobe Media Analytics for Audio and Video* est différent du serveur de suivi utilisé pour Adobe Analytics. Il suit le modèle `<trackingNamespace>.hb.omtrdc.net`, où `<trackingNamespace>` représente les informations provenant de l’e-mail de mise en service.
 
@@ -571,7 +571,7 @@ Voir [Adobe Media Analytics for Audio and Video](https://docs.adobe.com/conten
 
 Sélectionnez **[!UICONTROL Activer Adobe Analytics for Video]** pour activer le suivi Video Heartbeat.
 
-Note that--at the time of this writing--the *Dynamic Media Viewers* extension is only available if the Adobe Launch Property is created for development.
+Notez qu’au moment de la rédaction de cet article, l’extension *Visionneuses de médias dynamiques* n’est disponible que si la propriété de lancement d’Adobe est créée pour le développement.
 
 Voir [Création d’une propriété dans Adobe Launch](#creating-a-property-in-adobe-launch).
 
@@ -686,7 +686,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
    ![2019-07-25_12-09-24](assets/2019-07-25_12-09-24.png)
 
-1. Click **[!UICONTROL Download Public Key]** to download a public key file (*.crt) to your local system.
+1. Cliquez sur **[!UICONTROL Télécharger la clé publique]** pour télécharger un fichier de clé publique (*.crt) sur votre système local.
 
    >[!NOTE]
    >
@@ -711,7 +711,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
    * Dans le champ **[!UICONTROL Description]**, saisissez la description de l’intégration.
 
-   * In the **[!UICONTROL Public key certificates]** area, upload your public key file (*.crt) that you downloaded previously in these steps.
+   * Dans la zone **[!UICONTROL Certificats de clé publique]**, téléchargez votre fichier de clé publique (*.crt) que vous avez précédemment téléchargé au cours de ces étapes.
 
    * Sous l’en-tête **[!UICONTROL Sélectionner un rôle pour l’API Experience Platform Launch]**, sélectionnez **[!UICONTROL Admin]**.
 
@@ -724,7 +724,7 @@ La configuration d’AEM comprend les deux étapes principales suivantes :
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. An Integrations details page appears, **** similar to the following:
+1. Une page de détails d&#39;Integrations s&#39;affiche, ****, comme suit :
 
    >[!NOTE]
    >
@@ -763,7 +763,7 @@ Par exemple, `https://ims-na1.adobelogin.com/`
 
 1. **[!UICONTROL Clé API]** : revenez à la page Informations concernant l’intégration. Cliquez sur l’onglet **[!UICONTROL Aperçu]**, puis sur **[!UICONTROL Copier]** à droite du champ **[!UICONTROL Clé API (ID client)]**.
 
-   Return to the **[!UICONTROL Account]** page, then paste the key into the respective ****field.
+   Revenez à la page **[!UICONTROL Compte]**, puis collez la clé dans le champ ****correspondant.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
 
