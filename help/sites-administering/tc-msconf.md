@@ -25,11 +25,11 @@ Créez une configuration pour que le service cloud Microsoft Translator utilise 
 | Propriété | Description |
 |---|---|
 | Libellé de traduction | Nom d’affichage du service de traduction. |
-| Attribution de traduction | (Optional) For user-generated content, the attribution that appears next to translated text, for example `Translations by Microsoft`. |
+| Attribution de traduction | (Facultatif) Pour le contenu généré par l’utilisateur, attribution qui s’affiche en regard du texte traduit, par exemple `Translations by Microsoft`. |
 | ID d’espace de travail | (Facultatif) ID de votre moteur Microsoft Translator personnalisé à utiliser. |
 | Clé d’abonnement | Votre clé d’abonnement Microsoft pour Microsoft Translator. |
 
-After you create the configuration, you need to [activate it](/help/sites-administering/tc-msconf.md#activating-the-translator-service-configurations).
+Après avoir créé la configuration, vous devez [l&#39;activer](/help/sites-administering/tc-msconf.md#activating-the-translator-service-configurations).
 
 La procédure suivante utilise l’interface utilisateur optimisée pour les écrans tactiles afin de créer une configuration Microsoft Translator.
 
@@ -43,7 +43,7 @@ La procédure suivante utilise l’interface utilisateur optimisée pour les éc
 1. Cliquez sur Créer.
 1. Dans la boîte de dialogue qui s’affiche, saisissez les valeurs des propriétés et cliquez sur OK.
 
-## Exemples de configurations du service cloud Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
+## Exemples de configurations du service cloud Microsoft Translator  {#sample-microsoft-translator-cloud-service-configurations}
 
 Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configuration utilisent un compte Microsoft Translation d&#39;évaluation qui permet de traduire gratuitement jusqu&#39;à 2 000 000 caractères par mois.
 
@@ -57,7 +57,7 @@ La configuration Licence d’évaluation de Microsoft Translator – Geometri
 
 Cette configuration de Microsoft Translator est optimisée pour l’utilisation avec le type de contenu de l’exemple de site Geometrixx Outdoors.
 
-### Mise à niveau de la configuration Licence d’évaluation de Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
+### Mise à niveau de la configuration Licence d’évaluation de Microsoft Translator  {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Les pages de configuration Microsoft Traduction fournissent un lien pratique vers le site web Microsoft pour obtenir un abonnement de compte qui est adapté aux systèmes de production.
 
@@ -78,9 +78,9 @@ Les pages de configuration de Microsoft Traduction fournissent un lien pratique
 1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur la configuration que vous souhaitez personnaliser.
 1. Sur la page de configuration, cliquez sur Personnaliser le traducteur. Utilisez la page web de Microsoft qui s’ouvre pour personnaliser votre service.
 
-## Activation des configurations du service de traducteur {#activating-the-translator-service-configurations}
+## Activation des configurations du service de traducteur  {#activating-the-translator-service-configurations}
 
-Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Use the method of [activating a complete section (tree)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) to activate the repository nodes that store the Microsoft Translator or third-party cloud service configurations. Les nœuds se trouvent sous les nœuds parents suivants :
+Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Utilisez la méthode [d&#39;activation d&#39;une section complète (arborescence)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) pour activer les noeuds de référentiel qui stockent les configurations de service cloud tiers ou Microsoft Translator. Les nœuds se trouvent sous les nœuds parents suivants :
 
 * Service de traduction Microsoft : /libs/settings/cloudconfigs/translation/msft-translation
 * Traduction tierce : /etc/cloudservices/machine-translation
