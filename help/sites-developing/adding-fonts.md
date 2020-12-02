@@ -30,7 +30,7 @@ Actuellement, toutes les implémentations de la plate-forme Java prennent en cha
 
    `/apps/<your-project>/`
 
-1. Under `/apps/<your-project>/` create a new node:
+1. Sous `/apps/<your-project>/`, créez un nouveau noeud :
 
    * **Nom** : `fonts`
    * **Type** : `sling:Folder`
@@ -41,11 +41,11 @@ Actuellement, toutes les implémentations de la plate-forme Java prennent en cha
 
    >[!NOTE]
    >
-   >Font files in the repository must have the suffix `*.ttf` or `*.TTF`.
+   >Les fichiers de polices du référentiel doivent avoir le suffixe `*.ttf` ou `*.TTF`.
 
-1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Add the path to your fonts folder; i.e. `/apps/<your-project>/fonts`.
+1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d&#39;accès à votre dossier de polices ; i.e. `/apps/<your-project>/fonts`.
 
-1. Revenez à CRXDE Lite. You should now see a `.fontlist` node in your folder containing the name of the imported fonts.
+1. Revenez à CRXDE Lite. Vous devriez maintenant voir un noeud `.fontlist` dans votre dossier contenant le nom des polices importées.
 
    Ces polices sont désormais prêtes à être déployées dans l’API Java.
 
