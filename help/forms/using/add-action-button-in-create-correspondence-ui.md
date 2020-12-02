@@ -33,7 +33,7 @@ Les éléments suivants sont requis pour terminer ce scénario :
 * Connaissances de CRX et Javascript
 * Serveur LiveCycle
 
-## Scénario : Création du bouton dans l’interface utilisateur de création de correspondance en vue de la révision d’une lettre {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Scénario : Création du bouton dans l’interface utilisateur de création de correspondance en vue de la révision d’une lettre  {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à l’interface utilisateur de création de correspondance comprend :
 
@@ -43,10 +43,10 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
 ### Ajout du bouton à l’interface utilisateur de création de correspondance {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named `defaultApp` with path/structure similar to the defaultApp folder (located in config folder). Procédez comme suit pour créer le dossier :
+1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
+1. Dans le dossier des applications, créez un dossier nommé `defaultApp` avec un chemin/une structure similaires au dossier defaultApp (situé dans le dossier config). Procédez comme suit pour créer le dossier :
 
-   1. Right-click the **defaultApp** folder at the following path and select **Overlay Node**:
+   1. Cliquez avec le bouton droit sur le dossier **defaultApp** à l’emplacement suivant et sélectionnez **Noeud d’incrustation** :
 
       /libs/fd/cm/config/defaultApp/
 
@@ -54,11 +54,11 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/config/defaultApp/
+      **Chemin d’accès:** /libs/fd/cm/config/defaultApp/
 
-      **Emplacement de l’incrustation :** /apps/
+      **Emplacement de l’incrustation:** /apps/
 
-      **Faire correspondre les types de noeud :** Coché
+      **Faire correspondre les types de noeud:** coché
 
       ![Nœud de recouvrement](assets/2_defaultappoverlaynode.png)
 
@@ -69,7 +69,7 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
    1. Accédez à « /libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml ».
 
-   1. Right click the acmExtensionsConfig.xml file and select **Copy**.
+   1. Cliquez avec le bouton droit sur le fichier acmExtensionsConfig.xml et sélectionnez **Copier**.
 
       ![Copie du fichier acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
@@ -124,25 +124,25 @@ L’ajout d’un bouton d’action (ici : envoi de la lettre pour révision) à
 
 1. Cliquez sur **Enregistrer tout**.
 
-#### Création d’un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Création d’un dossier de paramètres régionaux avec le fichier de propriétés dans la branche /apps  {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Le fichier ACMExtensionsMessages.properties contient des libellés et des messages d’info-bulle de divers champs de l’interface utilisateur de création de correspondance. Effectuez une copie de ce fichier dans la branche /apps afin que les actions/boutons personnalisé(e)s fonctionnent.
 
-1. Right-click the **locale** folder at the following path and select **Overlay Node**:
+1. Cliquez avec le bouton droit sur le dossier **locale** à l’emplacement suivant et sélectionnez **Noeud d’incrustation** :
 
    /libs/fd/cm/config/defaultApp/locale
 
 1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-   **Chemin :** /libs/fd/cm/config/defaultApp/locale
+   **Chemin d’accès :** /libs/fd/cm/config/defaultApp/locale
 
-   **Emplacement de l’incrustation :** /apps/
+   **Emplacement de l’incrustation:** /apps/
 
-   **Faire correspondre les types de noeud :** Coché
+   **Faire correspondre les types de noeud:** coché
 
 1. Cliquez sur **OK**.
 1. Cliquez sur **Enregistrer tout**.
-1. Right-click the following file and select **Copy**:
+1. Cliquez avec le bouton droit sur le fichier suivant et sélectionnez **Copier** :
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
@@ -152,7 +152,7 @@ Le fichier ACMExtensionsMessages.properties contient des libellés et des messag
 
    Le fichier ACMExtensionsMessages.properties est copié dans le dossier de paramètres régionaux.
 
-1. To localize the labels of the newly added custom action/button, create the ACMExtensionsMessages.properties file for the relevant locale in `/apps/fd/cm/config/defaultApp/locale/`.
+1. Pour localiser les libellés de l’action/du bouton personnalisé récemment ajouté, créez le fichier ACMExtensionsMessages.properties correspondant au paramètre régional approprié dans `/apps/fd/cm/config/defaultApp/locale/`.
 
    Par exemple, pour localiser l’action/le bouton personnalisé(e) créé(e) dans cet article, créez un fichier nommé ACMExtensionsMessages_fr.properties avec l’entrée suivante :
 
@@ -162,7 +162,7 @@ Le fichier ACMExtensionsMessages.properties contient des libellés et des messag
 
 1. Cliquez sur **Enregistrer tout**.
 
-#### Redémarrage du lot du bloc de création Adobe Asset Composer {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Redémarrage du lot du bloc de création Adobe Asset Composer  {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Après avoir effectué chaque modification côté serveur, redémarrez le lot du bloc de création Adobe Asset Composer. Dans ce scénario, les fichiers acmExtensionsConfig.xml et ACMExtensionsMessages.properties côté serveur sont modifiés. Par conséquent, le lot du bloc de création Asset Composer Adobe nécessite un redémarrage.
 
@@ -178,7 +178,7 @@ Après avoir effectué chaque modification côté serveur, redémarrez le lot du
 
 Après le redémarrage du lot du bloc de création Adobe Asset Composer, le bouton personnalisé s’affiche dans l’interface utilisateur de création de correspondance. Vous pouvez ouvrir une lettre dans l’interface utilisateur de création de correspondance afin de prévisualiser le bouton personnalisé.
 
-### Ajouter un traitement d’action au bouton {#add-action-handling-to-the-button}
+### Ajouter un traitement d’action au bouton  {#add-action-handling-to-the-button}
 
 Par défaut, la classe ActionHandler est intégrée dans le fichier cm.domain.js de l’interface utilisateur de création de correspondance à l’emplacement suivant :
 
@@ -200,24 +200,24 @@ La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton com
 
    Procédez comme suit pour créer le dossier :
 
-   1. Right-click the **js** folder at the following path and select **Overlay Node**:
+   1. Cliquez avec le bouton droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Noeud d’incrustation** :
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    1. Assurez-vous que la boîte de dialogue du nœud de recouvrement possède les valeurs suivantes :
 
-      **Chemin :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **Chemin d’accès :** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **Emplacement de l’incrustation :** /apps/
+      **Emplacement de l’incrustation:** /apps/
 
-      **Faire correspondre les types de noeud :** Coché
+      **Faire correspondre les types de noeud:** coché
 
    1. Cliquez sur **OK**.
    1. Cliquez sur **Enregistrer tout**.
 
 1. Dans le dossier js, créez un fichier nommé ccrcustomization.js avec le code de traitement d’action du bouton en procédant comme suit :
 
-   1. Right-click the **js** folder at the following path and select **Create > Create File**:
+   1. Cliquez avec le bouton droit sur le dossier **js** à l’emplacement suivant et sélectionnez **Créer > Créer un fichier** :
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -323,7 +323,7 @@ La gestion de l’action/du bouton lors d’un clic sur l’action/le bouton com
       '</div>';
       ```
 
-### Ajout d’un processus LiveCycle pour activer le traitement <span class="acrolinxCursorMarker"></code>d’action {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Ajout d’un processus LiveCycle pour activer le traitement <span class="acrolinxCursorMarker"></code>d’action  {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Dans ce scénario, activez les composants suivants, qui font partie du fichier joint components.zip :
 
@@ -333,7 +333,7 @@ Dans ce scénario, activez les composants suivants, qui font partie du fichier j
 Téléchargez et décompressez le fichier components.zip pour obtenir les fichiers DSCSample.jar et SendLetterForReview.lca. Utilisez ces fichiers comme indiqué dans les procédures suivantes.
 components.zip
 
-#### Configuration du serveur LiveCycle pour exécuter le processus LCA {#configure-the-livecycle-server-to-run-the-lca-process}
+#### Configuration du serveur LiveCycle pour exécuter le processus LCA  {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -341,13 +341,13 @@ components.zip
 
 Le processus LCA s’exécute sur le serveur LiveCycle et requiert l’adresse du serveur et les informations d’identification.
 
-1. Go to `https://'[server]:[port]'/system/console/configMgr` and login as Administrator.
+1. Accédez à `https://'[server]:[port]'/system/console/configMgr` et connectez-vous en tant qu’administrateur.
 1. Localisez la configuration du SDK client d’Adobe LiveCycle et cliquez sur **Modifier** (icône de modification). Le panneau de configuration s’ouvre.
 
-1. Enter the following details and click **Save**:
+1. Saisissez les détails suivants et cliquez sur **Enregistrer** :
 
    * **URL** du serveur : URL du serveur LC dont le service Send For Review est utilisé par le code du gestionnaire d’actions.
-   * **Nom d&#39;utilisateur**: Nom d’utilisateur administrateur du serveur LC
+   * **Nom d&#39;utilisateur** : Nom d’utilisateur administrateur du serveur LC
    * **Mot de passe** : mot de passe du nom d’utilisateur de l’administrateur.
 
    ![Configuration du SDK client d’Adobe LiveCycle](assets/3_clientsdkconfiguration.png)
@@ -360,7 +360,7 @@ Processus de LiveCycle requis qui active le processus de service de messagerie.
 >
 >Workbench est requis pour connaître le fonctionnement de ce processus ou créer un processus similaire.
 
-1. Log in as Administrator to Livecycle Server adminui at `https:/[lc server]/:[lc port]/adminui`.
+1. Connectez-vous en tant qu’administrateur à l’administrateur du serveur LiveCycle à l’adresse `https:/[lc server]/:[lc port]/adminui`.
 
 1. Accédez à **Accueil > Services > Applications et services > Gestion des applications**.
 
@@ -370,40 +370,40 @@ Processus de LiveCycle requis qui active le processus de service de messagerie.
 
 1. Cliquez sur **Importer**.
 
-1. Click **Choose File** and select SendLetterForReview.lca.
+1. Cliquez sur **Sélectionner un fichier** et sélectionnez SendLetterForReview.lca.
 
    ![Sélection du fichier SendLetterForReview.lca](assets/14_sendletterforreview_lca.png)
 
 1. Cliquez sur **Aperçu**.  
 
-1. Select **Deploy assets to runtime when import is complete**.
+1. Sélectionnez **Déployer les ressources à l’exécution lorsque l’importation est terminée**.
 
 1. Cliquez sur **Importer**.
 
-#### Adding ServiceName to the Allowlist Service list {#adding-servicename-to-the-allowlist-service-list}
+#### Ajouter ServiceName à la liste Service de Liste autorisée {#adding-servicename-to-the-allowlist-service-list}
 
 Indiquez dans le serveur AEM les services LiveCycle auxquels vous souhaitez qu’il accède.
 
 1. Connectez-vous en tant qu’administrateur à `https:/[host]:'port'/system/console/configMgr`.
 
-1. Locate and click **Adobe LiveCycle Client SDK Configuration**. Le panneau Configuration du SDK client d’Adobe LiveCycle s’affiche.
-1. In the Service Name list, click + icon and add a serviceName **SendLetterForReview/SendLetterForReviewProcess**.
+1. Recherchez **Adobe LiveCycle Client SDK Configuration** et cliquez dessus. Le panneau Configuration du SDK client d’Adobe LiveCycle s’affiche.
+1. Dans la liste de noms de service, cliquez sur l’icône + et ajoutez un serviceName **SendLetterForReview/SendLetterForReviewProcess**.
 
 1. Cliquez sur **Enregistrer**.
 
-#### Configuration du service de courrier électronique {#configure-the-email-service}
+#### Configuration du service de courrier électronique  {#configure-the-email-service}
 
 Dans ce scénario, configurez le service de messagerie dans le serveur LiveCycle afin que Correspondence Management puisse envoyer un courrier électronique.
 
-1. Log in with Admin credentials to Livecycle Server adminui at `https:/[lc server]:[lc port]/adminui`.
+1. Connectez-vous avec les informations d’identification d’administrateur à l’interface administrateur du serveur LiveCycle à l’adresse `https:/[lc server]:[lc port]/adminui`.
 
 1. Accédez à **Accueil > Services > Applications et services > Gestion des services**.
 
 1. Recherchez et cliquez sur **EmailService**.
 
-1. In **SMTP Host**, configure the email service.
+1. Dans **Hôte SMTP**, configurez le service de messagerie.
 
-1. Cliquez sur **Save**.
+1. Cliquez sur **Enregistrer**.
 
 #### Configuration du service DSC {#configure-the-dsc-service}
 
@@ -417,7 +417,7 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
 
 1. Indiquez les paramètres suivants dans le fichier de configuration :
 
-   * **crx.serverUrl**=https:/host:port/[du chemin]de contexte/URL[AEM]
+   * **crx.serverUrl**=https:/host:port/[du chemin] de contexte/URL [AEM]
    * **crx.username**= nom d’utilisateur AEM
    * **crx.password**= mot de passe AEM
    * **crx.appRoot**=/content/apps/cm
@@ -426,19 +426,19 @@ Pour plus d’informations, voir [Connexion d’AEM Forms à Adobe LiveCycle](
    >
    >À chaque modification apportée au côté serveur, redémarrez le serveur LiveCycle. Pour plus d’informations sur la création de votre propre composant LiveCycle, voir [Extension du logiciel LiveCycle ES via le développement d’un DSC personnalisé](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html).
 
-   Le fichier DSCSample.jar utilise l’API renderLetter. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Le fichier DSCSample.jar utilise l’API renderLetter. Pour plus d’informations sur l’API renderLetter, voir [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importer DSC vers LiveCycle {#import-dsc-to-livecyle}
 
-Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu de la lettre en tant qu’octets PDF à partir de données XML que C fournit en entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+Le fichier DSCSample.jar utilise l’API renderLetter pour effectuer le rendu de la lettre en tant qu’octets PDF à partir de données XML que C fournit en entrée. Pour plus d’informations sur l’API renderLetter et les autres API, voir [Service de rendu de lettre](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Démarrer Workbench et connectez-vous.
-1. Select **Window > Show Views > Components**. La vue Composants est ajoutée à Workbench ES2.
+1. Sélectionnez **Fenêtre > Afficher les Vues > Composants**. La vue Composants est ajoutée à Workbench ES2.
 
-1. Right-click **Components** and select **Install Component**.
+1. Cliquez avec le bouton droit de la souris sur **Composants** et sélectionnez **Installer le composant**.
 
-1. Select the **DSCSample.jar** file through the file browser and click **Open**.
-1. Right-click **RenderWrapper** and select **Start Component**. Si le composant démarre, une flèche verte apparaît en regard du nom du composant.
+1. Sélectionnez le fichier **DSCSample.jar** dans l’explorateur de fichiers et cliquez sur **Ouvrir**.
+1. Cliquez avec le bouton droit de la souris sur **RenderWrapper** et sélectionnez **Composant de Début**. Si le composant démarre, une flèche verte apparaît en regard du nom du composant.
 
 ## Envoi de la lettre pour révision {#send-letter-for-review}
 
