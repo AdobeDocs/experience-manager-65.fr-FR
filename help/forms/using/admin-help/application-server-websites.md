@@ -22,8 +22,8 @@ ht-degree: 70%
 
 Cette liste contient des liens pointant vers les sites Web des éditeurs de tous les serveurs d’applications pris en charge.
 
-**JBoss :** https://www.jboss.com/products/platforms/application
+**JBoss:** https://www.jboss.com/products/platforms/application
 
-**Oracle WebLogic :** www.oracle.com/us/products/middleware/application-server/index.html
+**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
-**IBM WebSphere :** www-01.ibm.com/software/websphere/
+**IBM WebSphere:** www-01.ibm.com/software/websphere/
