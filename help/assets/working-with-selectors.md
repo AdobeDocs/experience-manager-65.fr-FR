@@ -16,7 +16,7 @@ ht-degree: 99%
 ---
 
 
-# Utilisation des sélecteurs   {#working-with-selectors}
+# Utilisation des sélecteurs    {#working-with-selectors}
 
 Lorsque vous utilisez une image interactive, une vidéo interactive ou une bannière de carrousel, vous sélectionnez des ressources, ainsi que des sites et des produits auxquels relier les zones réactives et les zones cliquables. Lorsque vous travaillez avec des visionneuses d’images, des visionneuses à 360° et de contenu multimédia, vous devez également sélectionner les ressources à l’aide du sélecteur de ressources.
 
@@ -30,7 +30,7 @@ Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de p
 
 Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes client d’AEM Sites. Le sélecteur de produits nécessite également AEM Commerce.
 
-## Selecting products {#selecting-products}
+## Sélection de produits {#selecting-products}
 
 Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaitez une zone réactive ou une zone cliquable pour proposer l’aperçu rapide d’un produit de votre catalogue de produits.
 
