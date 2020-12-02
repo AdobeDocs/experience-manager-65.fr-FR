@@ -17,7 +17,7 @@ ht-degree: 70%
 ---
 
 
-# Utilisation de l’API sendToPrinter {#using-the-sendtoprinter-api}
+# Utilisation de l’API sendToPrinter  {#using-the-sendtoprinter-api}
 
 ## Présentation {#overview}
 
@@ -30,10 +30,10 @@ Dans AEM Forms, vous pouvez utiliser le service SendToPrinter pour envoyer un do
      Lorsque vous envoyez un document à une imprimante, indiquez l’un des protocoles d’impression suivants : 
 
    * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: Le service Output prend en charge le protocole d’impression CIFS (Common Internet File System).
+   * **CIFS** : Le service Output prend en charge le protocole d’impression CIFS (Common Internet File System).
 
 ## Utilisation du service SendToPrinter {#using-sendtoprinter-service}
 
