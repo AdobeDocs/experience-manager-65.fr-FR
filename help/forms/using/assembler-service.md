@@ -28,7 +28,7 @@ Vous pouvez utiliser le service d’assemblage pour les opérations suivantes :
 
 Vous pouvez utiliser le service Assembler pour assembler deux documents PDF ou plus en un seul document PDF ou portfolio PDF. Vous pouvez également appliquer différentes fonctions au document PDF, afin de faciliter la navigation ou d’optimiser la sécurité. Vous pouvez assembler des documents PDF de différentes manières, dont voici quelques exemples :
 
-### Assemblage dans un document PDF unique {#assemble-a-simple-pdf-document}
+### Assemblage dans un document PDF unique  {#assemble-a-simple-pdf-document}
 
 L’illustration suivante présente la fusion de trois documents source en un seul document cible.
 
@@ -54,7 +54,7 @@ caractéristiques :
 * D’autres caractéristiques adoptées à partir du document de base (Doc1), telles que les métadonnées, les étiquettes de page et la taille des pages ;
 * Le document produit peut inclure une table des matières générée à partir des signets présents dans les documents source (facultatif).
 
-### Création d’un portfolio PDF {#create-a-pdf-portfolio}
+### Création d’un portfolio PDF  {#create-a-pdf-portfolio}
 
 Le service Assembler peut créer des portfolios PDF qui contiennent une collection des documents et une interface d’utilisateur indépendante. Cette interface est appelée Interface de portfolio PDF ou Navigateur de portfolio PDF (navigateur). Les portfolios PDF élargissent les capacités des packages PDF en ajoutant un navigateur, des dossiers et des pages d’accueil. L’interface améliore l’expérience de l’utilisateur, qui peut profiter des chaînes de texte localisées, des schémas de couleurs et des ressources graphiques personnalisées. Le portfolio PDF peut également contenir des dossiers pour organiser les fichiers du portfolio.
 
@@ -75,7 +75,7 @@ Lorsque le service Assembler interprète le document DDX suivant, il regroupe un
 </DDX>
 ```
 
-### Assemblage de documents chiffrés {#assemble-encrypted-documents}
+### Assemblage de documents chiffrés  {#assemble-encrypted-documents}
 
 Lors de l’assemblage d’un document, vous pouvez également chiffrer le document PDF avec un mot de passe. Après le chiffrement d’un document PDF avec un mot de passe, l’utilisateur doit spécifier un mot de passe pour l’afficher dans Adobe Reader ou Acrobat. Pour chiffrer un document PDF avec un mot de passe, le document DDX doit contenir les valeurs d’élément de chiffrement requises.
 
@@ -83,7 +83,7 @@ Il n’est pas nécessaire que le service Encryption fasse partie de votre insta
 
 Si un ou plusieurs des documents d’entrée sont chiffrés, vous devez fournir un mot de passe pour ouvrir ce ou ces documents dans le DDX.
 
-### Assemblage de documents à l’aide de la numérotation Bates {#assemble-documents-using-bates-numbering}
+### Assemblage de documents à l’aide de la numérotation Bates  {#assemble-documents-using-bates-numbering}
 
 Lors de l’assemblage d’un document, vous pouvez utiliser la numérotation Bates pour affecter un identifiant de page unique à chaque page. Avec la numérotation Bates, à chaque page du document (ou de l’ensemble de documents) correspond un numéro qui identifie la page de manière unique. Par exemple, des documents d’entreprise contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. L’ensemble préfixe + valeur numérique + suffixe est appelé modèle Bates.
 
@@ -103,13 +103,13 @@ Lorsque vous créez un document PDF assemblé à partir de documents PDF interac
 >
 >Le service Assembler utilise le service Output pour aplatir les formulaires XFA dynamiques. Si le service Assembler traite un DDX ayant besoin qu’il aplatisse un formulaire XFA dynamique et que le service Output n’est pas disponible, une exception est générée. Le service Assembler peut aplatir un formulaire ou un formulaire XFA statique sans utiliser le service Output.
 
-## Assemblage de documents XDP {#assemble-xdp-documents}
+## Assemblage de documents XDP  {#assemble-xdp-documents}
 
 Vous pouvez utiliser le service Assembler pour assembler un ou plusieurs documents XDP en un document PDF ou XDP unique. Pour les fichiers XDP source incluant des points d’insertion, vous pouvez indiquer les fragments à insérer.
 
 Vous pouvez assembler des documents XDP de différentes manières, dont quelques exemples se présentent ci-dessus :
 
-### Assemblage d’un document XDP unique {#assemble-a-simple-xdp-document}
+### Assemblage d’un document XDP unique  {#assemble-a-simple-xdp-document}
 
 L’illustration suivante présente la fusion de trois documents XDP source en un seul document XDP cible. Le document XDP produit contient les trois documents XDP source, ainsi que les données connexes. Le document cible récupère les attributs de base du document d’origine (premier document XDP source).
 
@@ -129,7 +129,7 @@ Voici le document DDX qui produit le résultat illustré ci-dessus.
 </DDX>
 ```
 
-### Résolution des références pendant l’assemblage {#resolving-references-during-assembly}
+### Résolution des références pendant l’assemblage  {#resolving-references-during-assembly}
 
 Habituellement, les documents XDP peuvent contenir des images référencées par le biais de références absolues ou relatives. Le service Assembler conserve par défaut les références aux images dans le document XDP cible.
 
@@ -142,7 +142,7 @@ Vous pouvez spécifier la manière dont le service Assembler gère les images r�
    <th>Description</th> 
   </tr> 
   <tr> 
-   <td>none</td> 
+   <td>aucune</td> 
    <td>Aucune référence résolue.</td> 
   </tr> 
   <tr> 
@@ -162,7 +162,7 @@ Vous pouvez spécifier la manière dont le service Assembler gère les images r�
 
 Vous pouvez spécifier la valeur de l’attribut resolveAssets dans la balise XDP source ou dans la balise XDP cible parente. Si l’attribut est spécifié pour la balise XDP cible, il est hérité par tous les éléments XDP source qui sont des enfants de la cible XDP. Toutefois, le fait de spécifier de façon explicite l’attribut pour un élément source remplace le paramètre de l’élément cible pour ce document source uniquement.
 
-#### Résolution de toutes les références source dans un document XDP {#resolve-all-source-references-in-an-xdp-document}
+#### Résolution de toutes les références source dans un document XDP  {#resolve-all-source-references-in-an-xdp-document}
 
 Pour résoudre toutes les références dans les documents XDP source, spécifiez l’attribut resolveAssets pour la variable\
 document obtenu pour tous, comme dans l’exemple ci-dessous :
@@ -206,7 +206,7 @@ fragment="myFragment"/>
 </DDX>
 ```
 
-#### Résolution sélective de références absolues ou relatives {#selectively-resolve-absolute-or-relative-references}
+#### Résolution sélective de références absolues ou relatives  {#selectively-resolve-absolute-or-relative-references}
 
 Vous pouvez résoudre de manière sélective les références absolues ou relatives dans tous ou une partie des documents source, comme indiqué dans l’exemple ci-dessous :
 
@@ -246,7 +246,7 @@ source="myFragmentSource"/>
 </DDX
 ```
 
-### Conversion d’un document XDP en document PDF {#package-an-xdp-document-as-pdf}
+### Conversion d’un document XDP en document PDF  {#package-an-xdp-document-as-pdf}
 
 Vous pouvez utiliser le service Assembler pour convertir un document XDP en document PDF, comme le montre ce document DDX.
 
@@ -261,11 +261,11 @@ Vous pouvez utiliser le service Assembler pour convertir un document XDP en docu
 </DDX>
 ```
 
-## Désassemblage de documents PDF {#disassemble-pdf-documents}
+## Désassemblage de documents PDF  {#disassemble-pdf-documents}
 
 Vous pouvez utiliser le service Assembler pour désassembler un document PDF. Ce service peut extraire des pages du document source ou diviser un document source en fonction de signets. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble d’articles.
 
-### Extraction de pages d’un document source {#extract-pages-from-a-source-document}
+### Extraction de pages d’un document source  {#extract-pages-from-a-source-document}
 
 Dans l’illustration qui suit, les pages 1 à 3 sont extraites du document source, puis insérées dans un nouveau document cible.
 
@@ -281,7 +281,7 @@ L’exemple qui suit représente un document DDX utilisé pour désassembler ce 
 </PDF>
 ```
 
-### Division d’un document source en fonction de signets {#divide-a-source-document-based-on-bookmarks}
+### Division d’un document source en fonction de signets  {#divide-a-source-document-based-on-bookmarks}
 
 Dans l’illustration suivante, le document DocA est divisé en plusieurs documents cible. Le signet de niveau 1 d’une page identifie le début d’un nouveau document cible.
 
@@ -297,11 +297,11 @@ L’exemple qui suit représente un document DDX qui utilise des signets pour d�
 </PDFsFromBookmarks>
 ```
 
-## Vérification de la compatibilité PDF / A des documents {#determine-whether-documents-are-pdf-a-compliant}
+## Vérification de la compatibilité PDF / A des documents  {#determine-whether-documents-are-pdf-a-compliant}
 
 Vous pouvez utiliser le service Assembler pour déterminer si un document PDF est compatible PDF / A. PDF / A est un format d’archivage, prévu pour la conservation sur le long terme du contenu d’un document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo.
 
-## Obtention d’informations sur un document PDF {#obtain-information-about-a-pdf-document}
+## Obtention d’informations sur un document PDF  {#obtain-information-about-a-pdf-document}
 
 Vous pouvez utiliser le service Assembler pour obtenir les informations suivantes concernant un document PDF :
 
@@ -320,11 +320,11 @@ Vous pouvez utiliser le service Assembler pour obtenir les informations suivante
 
 * Les fichiers de package, y compris les informations sur les fichiers, dossiers, packages, schémas et données de champ. Vous pouvez exporter ces données à partir d’un document PDF et les importer dans un document PDF.
 
-## Validation de documents DDX {#validate-ddx-documents}
+## Validation de documents DDX  {#validate-ddx-documents}
 
 Vous pouvez utiliser le service Assembler pour déterminer si un document DDX est valide. Par exemple, si vous avez effectué une mise à niveau depuis une version précédente de LiveCycle, vous pouvez vérifier la validité du document DDX par ce biais.
 
-## Appel d’autres services {#call-other-services}
+## Appel d’autres services  {#call-other-services}
 
 Vous pouvez utiliser les document DDX qui cause le service Assembler pour appeler aux services LiveCycle suivantes. Le service Assembler peut uniquement appeler les services installés via LiveCycle.
 
