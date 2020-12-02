@@ -17,7 +17,7 @@ ht-degree: 76%
 ---
 
 
-# Association de réviseurs d’envoi à un formulaire {#associating-submission-reviewers-with-a-form}
+# Association de réviseurs d’envoi à un formulaire  {#associating-submission-reviewers-with-a-form}
 
 Lorsque vous créez un formulaire, vous pouvez spécifier les utilisateurs qui passent en revue les envois du formulaire via le portail de formulaires et qui font part de leur avis. Votre entreprise peut recueillir des avis et retravailler les formulaires envoyés.
 
@@ -43,9 +43,9 @@ Pour modifier le schéma de métadonnées :
     schemalist.html/forms/aem-authored
    ```
 
-1. Select **Adaptive Form** and click **Edit**.
+1. Sélectionnez **Formulaire adaptatif** et cliquez sur **Modifier**.
 1. Dans la page Modifier un formulaire, cliquez sur **Avancé**.
-1. In the Advanced tab, drag-and-drop the **Single Line Text** component available under Build Form.
+1. Dans l’onglet Avancé, faites glisser et déposez le composant **Texte d’une seule ligne** disponible sous Créer un formulaire.
 1. Sélectionnez le composant de texte ajouté pour afficher ses paramètres.
 
    Sous Paramètres, saisissez `./jcr:content/metadata/form-submission-reviewer-group` dans le champ Associer à la propriété.
@@ -59,14 +59,14 @@ Les groupes d’utilisateurs vous permettent d’associer différents ensembles 
 
 Avant d’effectuer les étapes suivantes, reportez-vous à la section [Condition préalable](../../forms/using/adding-reviewers-form.md#prerequisite).
 
-To create a group and add members to it, navigate to **Tools** > **Operations** > **Security** > **Groups**.
-For more information, see [User Administration and Services](/help/sites-administering/security.md).
-Ensure that you add the group you create as a member of the out-of-the-box user group: **forms-submission-reviewers**. Ce groupe d’utilisateurs est fourni avec AEM Forms et garantit que les utilisateurs sont ajoutés en tant que réviseurs d’envoi.
+Pour créer un groupe et y ajouter des membres, accédez à **Outils** > **Opérations** > **Sécurité** > **Groupes**.
+Pour plus d’informations, voir [Administration utilisateur et services](/help/sites-administering/security.md).
+Veillez à ajouter le groupe que vous créez en tant que membre du groupe d’utilisateurs prêt à l’emploi : **forms-submission-reviewers**. Ce groupe d’utilisateurs est fourni avec AEM Forms et garantit que les utilisateurs sont ajoutés en tant que réviseurs d’envoi.
 
 Pour associer des groupes d’utilisateurs à un formulaire adaptatif :
 
 1. En mode création, accédez à **Formulaires** > **Formulaires et documents**.
-1. Use the **Select **option to select an adaptive form, and click **View Properties**.
+1. Utilisez l&#39;option **Sélectionner **pour sélectionner un formulaire adaptatif, puis cliquez sur **Propriétés de la Vue**.
 1. Dans la fenêtre Propriétés du formulaire, cliquez sur **Modifier** puis sur **AVANCE**.
 1. Saisissez le groupe dans le champ de groupe de réviseurs d’envoi, puis cliquez sur **Terminé**.
 
