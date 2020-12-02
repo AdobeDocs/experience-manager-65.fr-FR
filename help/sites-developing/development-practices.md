@@ -35,7 +35,7 @@ Voici un aperçu des critères généralement définis par les équipes :
 
 En l’absence de DoD bien définie, il est facile de se retrouver dans une situation dans laquelle de nombreuses choses sont faites à moitié, mais où rien n’est réellement terminé.
 
-### Définition et respect des conventions de codage et de formatage {#define-and-adhere-to-coding-and-formatting-conventions}
+### Définition et respect des conventions de codage et de formatage  {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Les espaces blancs et les niveaux d’indentation sont des éléments qui peuvent paraître secondaires. Cependant, disposer d’un code bien formaté améliore considérablement la lisibilité et la facilité de maintenance. Les conventions doivent être examinées et adoptées en équipe, puis appliquées dans le code.
 
@@ -47,7 +47,7 @@ Les développeurs doivent recourir au développement piloté par les tests (TDD)
 
 Il existe des structures personnalisées, comme Jackalope et Prosper, pour faciliter la simulation d’API JCR afin de garantir la productivité des développeurs lors de la création de tests unitaires.
 
-### Un système toujours prêt pour la démo {#stay-demo-ready}
+### Un système toujours prêt pour la démo  {#stay-demo-ready}
 
 Le système doit être disponible à des fins de démonstration à la fin de chaque itération. En maintenant le système dans cet état, l’équipe se trouvera toujours à une itération de la mise en production. Cela permettra, en outre, de maintenir la dette technique à un niveau gérable.
 
