@@ -32,7 +32,7 @@ Si les valeurs d’entrée ne répondent pas aux critères de validation et que 
 
 Cet article décrit le format standard des messages d’erreur de validation et les instructions de transformation des messages d’erreur d’un format personnalisé en format standard.
 
-## Format du message d’erreur de validation standard {#standard-validation-message-format}
+## Format de message d’erreur de validation standard {#standard-validation-message-format}
 
 Les formulaires adaptatifs affichent les erreurs au niveau du champ si les messages d’erreur de validation du serveur sont au format standard suivant :
 
@@ -58,33 +58,33 @@ Où :
 * `originCode` contient le code d&#39;erreur renvoyé par le service externe
 * `originMessage` contient les données d&#39;erreur brutes renvoyées par le service externe
 
-## Configuration de l’envoi de formulaire adaptatif pour ajouter des gestionnaires personnalisés {#configure-adaptive-form-submission}
+## Configurez l’envoi de formulaire adaptatif pour ajouter des gestionnaires personnalisés {#configure-adaptive-form-submission}
 
 Si le message d’erreur de validation du serveur ne s’affiche pas dans le format standard, vous pouvez activer l’envoi asynchrone et ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi du formulaire adaptatif pour convertir le message dans un format standard.
 
-### Configure asynchronous adaptive form submission {#configure-asynchronous-adaptive-form-submission}
+### Configuration de l’envoi asynchrone de formulaires adaptatifs {#configure-asynchronous-adaptive-form-submission}
 
 Avant d’ajouter un gestionnaire personnalisé, vous devez configurer le formulaire adaptatif pour un envoi asynchrone. Procédez comme suit :
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
+1. En mode de création de formulaires adaptatifs, sélectionnez l’objet de Conteneur de formulaire et appuyez sur ![propriétés de formulaire adaptatif](assets/configure_icon.png) pour ouvrir ses propriétés.
+1. Dans la section des propriétés **[!UICONTROL Submission]**, activez **[!UICONTROL Utiliser l&#39;envoi asynchrone]**.
 1. Sélectionnez **[!UICONTROL Revalider sur le serveur]** pour valider les valeurs des champs d’entrée sur le serveur avant envoi.
 1. Sélectionnez l’action Envoyer :
 
-   * Sélectionnez **[!UICONTROL Envoyer à l’aide du modèle]** de données de formulaire et sélectionnez le modèle de données approprié si vous utilisez le modèle [de données de](work-with-form-data-model.md) formulaire basé sur le service Web RESTful comme source de données.
-   * Sélectionnez **[!UICONTROL Envoyer vers le point de terminaison]** REST et spécifiez l’URL/le chemin **[!UICONTROL de]** redirection si vous utilisez les services Web RESTful comme source de données.
+   * Sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** et sélectionnez le modèle de données approprié, si vous utilisez le modèle de données de formulaire [basé sur le service Web RESTful&lt;a2/> comme source de données.](work-with-form-data-model.md)
+   * Sélectionnez **[!UICONTROL Envoyer au point de terminaison REST]** et spécifiez l’**[!UICONTROL URL/chemin de redirection]**, si vous utilisez les services Web RESTful comme source de données.
 
    ![propriétés d’envoi de formulaire adaptatif](assets/af_submission_properties.png)
 
 1. Appuyez sur ![Save](assets/save_icon.png) (Enregistrer) pour enregistrer les propriétés.
 
-### Ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi d’un formulaire adaptatif {#add-custom-error-handler-af-submission}
+### Ajouter un gestionnaire d&#39;erreurs personnalisé lors de l&#39;envoi du formulaire adaptatif {#add-custom-error-handler-af-submission}
 
 AEM Forms fournit des gestionnaires de réussite et d’erreur prêts à l’emploi pour les envois de formulaires. Les gestionnaires sont des fonctions côté client qui s’exécutent en fonction de la réponse du serveur. Lorsqu’un formulaire est envoyé, les données sont transmises au serveur pour validation, ce qui renvoie une réponse au client avec des informations sur l’événement de réussite ou d’erreur pour l’envoi. Les informations sont transmises en tant que paramètres au gestionnaire approprié pour exécuter la fonction.
 
 Exécutez les étapes suivantes pour ajouter un gestionnaire d’erreurs personnalisé lors de l’envoi du formulaire adaptatif :
 
-1. Open the adaptive form in authoring mode, select any form object, and tap <!--![Rule Editor](assets/af_edit_rules.png)--> to open the rule editor.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire, puis appuyez sur <!--![Rule Editor](assets/af_edit_rules.png)--> pour ouvrir l’éditeur de règles.
 1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et appuyez sur **[!UICONTROL Créer]**.
 1. Sélectionnez **[!UICONTROL Erreur dans l’envoi]** dans la liste déroulante Événement.
 1. Ecrivez une règle pour convertir la structure d’erreur personnalisée en structure d’erreur standard et appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle.
@@ -129,23 +129,23 @@ if (data) {
 }
 ```
 
-L’ `var som_map` expression SOM des champs de formulaire adaptatif que vous souhaitez transformer en format standard est liste. Vous pouvez vue l’expression SOM de n’importe quel champ d’un formulaire adaptatif en appuyant sur le champ et en sélectionnant l’Expression **[!UICONTROL SOM]** Vue.
+`var som_map` liste l’expression SOM des champs de formulaire adaptatif que vous souhaitez transformer en format standard. Vous pouvez vue l’expression SOM de n’importe quel champ d’un formulaire adaptatif en appuyant sur le champ et en sélectionnant **[!UICONTROL Vue Expression SOM]**.
 
-A l’aide de ce gestionnaire d’erreurs personnalisé, le formulaire adaptatif convertit les champs répertoriés dans `var som_map` le format de message d’erreur standard. En conséquence, les messages d’erreur de validation s’affichent au niveau du champ dans le formulaire adaptatif.
+A l’aide de ce gestionnaire d’erreurs personnalisé, le formulaire adaptatif convertit les champs répertoriés dans `var som_map` au format de message d’erreur standard. En conséquence, les messages d’erreur de validation s’affichent au niveau du champ dans le formulaire adaptatif.
 
 ## Ajouter un gestionnaire personnalisé à l’aide de l’action Service d’appel
 
-Exécutez les étapes suivantes pour ajouter un gestionnaire d’erreurs afin de convertir une structure d’erreurs personnalisée en structure d’erreurs standard à l’aide de l’action Invoke Service de l’éditeur de [règles](rule-editor.md) :
+Exécutez les étapes suivantes pour ajouter un gestionnaire d&#39;erreurs afin de convertir une structure d&#39;erreur personnalisée en structure d&#39;erreur standard à l&#39;aide de l&#39;action [Éditeur de règles](rule-editor.md) Service d&#39;appel :
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![Rule Editor](assets/rule_editor_icon.png) to open the rule editor.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire et appuyez sur ![Éditeur de règles](assets/rule_editor_icon.png) pour ouvrir l’éditeur de règles.
 1. Appuyez sur **[!UICONTROL Créer]**. 
-1. Créez une condition dans la section **[!UICONTROL Lorsque]** de la règle. Par exemple,[WhenName du champ] est modifié. Sélectionnez **[!UICONTROL est modifié]** dans la liste déroulante **[!UICONTROL Sélectionner un état]** pour atteindre cette condition.
+1. Créez une condition dans la section **[!UICONTROL Lorsque]** de la règle. Par exemple, Lorsque[Nom du champ] est modifié. Sélectionnez **[!UICONTROL est modifié]** dans la liste déroulante **[!UICONTROL Sélectionner l’état]** pour obtenir cette condition.
 1. Dans la section **[!UICONTROL Then]** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **[!UICONTROL Select Action]** (Sélectionner une action). 
-1. Sélectionnez un service Post et ses liaisons de données correspondantes dans la section **[!UICONTROL Entrée]** . Par exemple, si vous souhaitez valider les champs **Nom**, **ID** et **État** dans le formulaire adaptatif, sélectionnez un service Post (animal de compagnie) et sélectionnez pet.name, pet.id et pet.status dans la section **[!UICONTROL Input.]**
+1. Sélectionnez un service Post et ses liaisons de données correspondantes dans la section **[!UICONTROL Entrée]**. Par exemple, si vous souhaitez valider les champs **Nom**, **ID** et **État** dans le formulaire adaptatif, sélectionnez un service Post (animal de compagnie) et sélectionnez pet.name, pet.id et pet.status dans la section **[!UICONTROL Input]**.
 
 En conséquence, les valeurs que vous saisissez pour les champs **Nom**, **ID** et **État** sont validées dès que le champ défini à l’étape 2 est modifié et que vous sortez du champ du formulaire.
 
-1. Select **[!UICONTROL Code Editor]** from the mode selection drop-down list.
+1. Sélectionnez **[!UICONTROL Éditeur de code]** dans la liste déroulante de sélection de mode.
 1. Appuyez sur **[!UICONTROL Modifier le code]**.
 1. Supprimez la ligne suivante du code existant :
 
@@ -198,7 +198,7 @@ Par exemple, ajoutez l’exemple de code suivant à la fin pour convertir une st
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   L’ `var som_map` expression SOM des champs de formulaire adaptatif que vous souhaitez transformer en format standard est liste. Vous pouvez vue l’expression SOM de n’importe quel champ d’un formulaire adaptatif en appuyant sur le champ et en sélectionnant Expression **[!UICONTROL SOM]** Vue dans le menu **[!UICONTROL Autres options]** (...).
+   `var som_map` liste l’expression SOM des champs de formulaire adaptatif que vous souhaitez transformer en format standard. Vous pouvez vue l’expression SOM de n’importe quel champ d’un formulaire adaptatif en appuyant sur le champ et en sélectionnant **[!UICONTROL Vue Expression SOM]** dans le menu **[!UICONTROL Autres options]** (...).
 
    Assurez-vous de copier la ligne suivante de l’exemple de code dans le gestionnaire d’erreurs personnalisé :
 
@@ -206,6 +206,6 @@ Par exemple, ajoutez l’exemple de code suivant à la fin pour convertir une st
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   L’API executeOperation inclut les paramètres `null` et `errorHandler` en fonction du nouveau gestionnaire d’erreurs personnalisé.
+   L’API executeOperation comprend les paramètres `null` et `errorHandler` en fonction du nouveau gestionnaire d’erreurs personnalisé.
 
-   A l’aide de ce gestionnaire d’erreurs personnalisé, le formulaire adaptatif convertit les champs répertoriés dans `var som_map` le format de message d’erreur standard. En conséquence, les messages d’erreur de validation s’affichent au niveau du champ dans le formulaire adaptatif.
+   A l’aide de ce gestionnaire d’erreurs personnalisé, le formulaire adaptatif convertit les champs répertoriés dans `var som_map` au format de message d’erreur standard. En conséquence, les messages d’erreur de validation s’affichent au niveau du champ dans le formulaire adaptatif.
