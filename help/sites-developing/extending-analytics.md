@@ -22,13 +22,13 @@ ht-degree: 53%
 
 AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web. En tant que développeur, vous pouvez avoir besoin :
 
-* de suivre la façon dont les visiteurs interagissent avec les composants This can be done with [Custom events.](#custom-events)
+* de suivre la façon dont les visiteurs interagissent avec les composants Pour ce faire, [événements personnalisés.](#custom-events)
 * [Accédez aux valeurs dans ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 * [d’ajouter des rappels d’enregistrement](#adding-record-callbacks).
 
 >[!NOTE]
 >
->This information is basically generic, but it uses [Adobe Analytics](/help/sites-administering/adobeanalytics.md) for specific examples.
+>Ces informations sont essentiellement génériques, mais elles utilisent [Adobe Analytics](/help/sites-administering/adobeanalytics.md) pour des exemples spécifiques.
 >
 >Pour obtenir des informations générales sur le développement de composants et de boîtes de dialogue, voir [Développement de composants](/help/sites-developing/components.md).
 
@@ -36,11 +36,11 @@ AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur s
 
 Les événements personnalisés suivent tout ce qui dépend de la disponibilité d’un élément spécifique sur la page. Cela inclut également les événements spécifiques à un modèle, car le composant de page est traité comme un autre composant.
 
-### Suivi d’événements personnalisés lors du chargement d’une page {#tracking-custom-events-on-page-load}
+### Suivi d’événements personnalisés lors du chargement d’une page  {#tracking-custom-events-on-page-load}
 
-This can be done using the pseudo-attribute `data-tracking` (the older record attribute is still supported for backwards compatibility). Vous pouvez l’ajouter à n’importe quelle balise HTML.
+Cela peut être fait à l&#39;aide du pseudo-attribut `data-tracking` (l&#39;ancien attribut d&#39;enregistrement est toujours pris en charge pour la compatibilité ascendante). Vous pouvez l’ajouter à n’importe quelle balise HTML.
 
-The syntax for `data-tracking` is
+La syntaxe de `data-tracking` est
 
 * `data-tracking="{'event': ['eventName'], 'values': {'key': 'value', 'nextKey': 'nextValue'}, componentPath: 'myapp/component/mycomponent'}"`
 
@@ -61,7 +61,7 @@ En voici un exemple :
 </span>
 ```
 
-At page load, all `data-tracking` attributes will be collected and added to the event store of the ContextHub, where they can be mapped to Adobe Analytics events. Les événements non mappés ne seront pas suivis par Adobe Analytics. See [Connecting to Adobe Analytics](/help/sites-administering/adobeanalytics.md) for more details about mapping events.
+Au chargement de la page, tous les attributs `data-tracking` seront collectés et ajoutés au magasin de événements de ContextHub, où ils peuvent être mappés aux événements Adobe Analytics. Les événements non mappés ne seront pas suivis par Adobe Analytics. Voir [Connexion à Adobe Analytics](/help/sites-administering/adobeanalytics.md) pour plus d’informations sur le mappage des événements.
 
 ### Suivi d’événements personnalisés après le chargement d’une page {#tracking-custom-events-after-page-load}
 
@@ -75,9 +75,9 @@ Où :
 
 * `values` contient toutes les valeurs à suivre.
 * `collect` est facultatif et renvoie un tableau contenant l’événement et l’objet de données.
-* `options` est facultatif et contient des options de suivi de liens telles que l’élément HTML `obj` et ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` est facultatif et contient des options de suivi de liens telles que l’élément HTML  `obj` et  ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
-* `componentPath` est un attribut nécessaire et il est recommandé de le définir sur `<%=resource.getResourceType()%>`
+* `componentPath` est un attribut nécessaire et il est recommandé de le définir sur  `<%=resource.getResourceType()%>`
 
 Par exemple, avec la définition suivante, un utilisateur cliquant sur le lien **Aller en haut** entraîne le déclenchement de deux événements, `jumptop` et `headlineclick` :
 
@@ -89,11 +89,11 @@ Par exemple, avec la définition suivante, un utilisateur cliquant sur le lien *
 
 ## Accès aux valeurs dans ContextHub {#accessing-values-in-the-contexthub}
 
-L’API JavaScript ContextHub possède une `getStore(name)` fonction qui renvoie le magasin spécifié, si disponible. La banque de données a une `getItem(key)` fonction qui renvoie la valeur de la clé spécifiée, si elle est disponible. La `getKeys()` fonction permet de récupérer un tableau de clés définies pour le magasin spécifique.
+L’API JavaScript ContextHub possède une fonction `getStore(name)` qui renvoie le magasin spécifié, le cas échéant. La boutique possède une fonction `getItem(key)` qui renvoie la valeur de la clé spécifiée, si elle est disponible. La fonction `getKeys()` permet de récupérer un tableau de clés définies pour le magasin spécifique.
 
-Vous pouvez être averti des modifications de valeur sur un magasin en liant une fonction à l’aide de la `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` fonction.
+Vous pouvez être averti des modifications de valeur d&#39;un magasin en liant une fonction à l&#39;aide de la fonction `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)`.
 
-The best way to be notified of initial availability of the ContextHub is to use the `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` function.
+Le meilleur moyen d&#39;être informé de la disponibilité initiale de ContextHub est d&#39;utiliser la fonction `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);`.
 
 **Événements supplémentaires pour ContextHub :**
 
@@ -107,7 +107,7 @@ Une boutique spécifique :
 
 >[!NOTE]
 >
->Voir aussi la référence complète de l’API [ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Voir aussi la [Référence API ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) complète
 
 ## Ajout de rappels d’enregistrement {#adding-record-callbacks}
 
