@@ -26,18 +26,18 @@ Lors d’un envoi asynchrone, lorsqu’un utilisateur envoie un formulaire, le d
 
 Lisez la suite pour plus de détails sur l’envoi asynchrone dans les formulaires adaptatifs.
 
-## Configurer l’envoi asynchrone {#configure}
+## Configurer l’envoi asynchrone  {#configure}
 
 Pour configurer la soumission asynchrone pour un formulaire adaptatif :
 
-1. In adaptive form authoring mode, select the Form Container object and tap ![cmppr1](assets/cmppr1.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
+1. En mode de création de formulaires adaptatifs, sélectionnez l’objet de Conteneur de formulaire et appuyez sur ![cmppr1](assets/cmppr1.png) pour ouvrir ses propriétés.
+1. Dans la section des propriétés **[!UICONTROL Submission]**, activez **[!UICONTROL Utiliser l&#39;envoi asynchrone]**.
 1. Dans la section **[!UICONTROL Lors de l’envoi]**, sélectionnez l’une des options suivantes pour effectuer un envoi de formulaire réussi.
 
-   * **[!UICONTROL Rediriger vers l’URL]** : redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. You can specify a URL or browse to choose the path to a page in the **[!UICONTROL Redirect URL/Path]** field.
+   * **[!UICONTROL Rediriger vers l’URL]** : redirige vers l’URL ou la page spécifiée lors de l’envoi du formulaire. Vous pouvez spécifier une URL ou parcourir pour choisir le chemin d’accès à une page dans le champ **[!UICONTROL URL de redirection/Chemin]**.
    * **[!UICONTROL Afficher le message]** : affiche un message lors de l’envoi d’un formulaire. Vous pouvez écrire un message dans le champ de texte situé sous l’option Afficher le message. Le champ de texte prend en charge la mise en forme de texte enrichi.
 
-1. Tap ![check-button1](assets/check-button1.png) to save the properties.
+1. Appuyez sur ![check-button1](assets/check-button1.png) pour enregistrer les propriétés.
 
 ## Fonctionnement de l’envoi asynchrone {#how-asynchronous-submission-works}
 
@@ -69,7 +69,7 @@ La réponse du serveur en cas de réussite de l’envoi du formulaire :
 
 Le gestionnaire de succès lit la réponse du serveur et redirige en conséquence vers l’URL de la page configurée ou affiche un message.
 
-### Réponse du serveur pour l’événement d’erreur d’envoi {#server-response-for-submission-error-event}
+### Réponse du serveur pour l’événement d’erreur d’envoi  {#server-response-for-submission-error-event}
 
 La structure de la réponse du serveur pour l’événement d’erreur d’envoi est la suivante :
 
@@ -93,13 +93,13 @@ La réponse du serveur en cas d’erreur d’envoi du formulaire inclut :
 
 Le gestionnaire d’erreurs lit la réponse du serveur et affiche le message d’erreur en conséquence sur le formulaire.
 
-## Remplacer les gestionnaires par défaut en utilisant des règles {#custom}
+## Remplacer les gestionnaires par défaut en utilisant des règles  {#custom}
 
-Les développeurs et les auteurs de formulaires peuvent écrire des règles, au niveau du formulaire, dans l’éditeur de code pour remplacer les gestionnaires par défaut. The server response for success and error events is exposed at form level, which developers can access using `$event.data` in rules.
+Les développeurs et les auteurs de formulaires peuvent écrire des règles, au niveau du formulaire, dans l’éditeur de code pour remplacer les gestionnaires par défaut. La réponse du serveur aux événements de réussite et d’erreur est exposée au niveau du formulaire, accessible aux développeurs à l’aide de `$event.data` dans les règles.
 
 Effectuez les étapes suivantes pour écrire des règles dans l’éditeur de code afin de gérer les événements de réussite et d’erreur.
 
-1. Open the adaptive form in authoring mode, select any form object, and tap ![edit-rules1](assets/edit-rules1.png) to open the rule editor.
+1. Ouvrez le formulaire adaptatif en mode création, sélectionnez un objet de formulaire et appuyez sur ![edit-rules1](assets/edit-rules1.png) pour ouvrir l’éditeur de règles.
 1. Sélectionnez **[!UICONTROL Formulaire]** dans l’arborescence des objets de formulaire et appuyez sur **[!UICONTROL Créer]**.
 1. Sélectionnez l’**[!UICONTROL éditeur de code]** dans la liste déroulante de sélection de mode.
 1. Dans l’éditeur de code, appuyez sur **[!UICONTROL Modifier le code]**. Appuyez sur **[!UICONTROL Modifier]** dans la boîte de dialogue de confirmation.
