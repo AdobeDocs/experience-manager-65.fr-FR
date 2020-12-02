@@ -41,7 +41,7 @@ A l’aide de la valeur d’identifiant d’appel, vous pouvez suivre l’état 
 
 **Exemple de processus de courte durée**
 
-L’illustration suivante illustre un exemple de processus de courte durée appelé *MyApplication/EncryptDocument*.
+L’illustration suivante illustre un exemple de processus de courte durée nommé *MyApplication/EncryptDocument*.
 
 >[!NOTE]
 >
@@ -50,10 +50,10 @@ L’illustration suivante illustre un exemple de processus de courte durée appe
 Lorsque ce processus de courte durée est appelé, il effectue les actions suivantes :
 
 1. Obtient le document PDF non sécurisé transmis au processus en tant que valeur d’entrée.
-1. Chiffrement du document PDF avec un mot de passe. Le nom du paramètre d’entrée pour ce processus est `inDoc` et le type de données est document.
+1. Chiffrement du document PDF avec un mot de passe. Le nom du paramètre d&#39;entrée pour ce processus est `inDoc` et le type de données est document.
 1. Enregistre le document PDF chiffré par mot de passe sous la forme d’un fichier PDF dans le système de fichiers local. Ce processus renvoie le document PDF chiffré en tant que valeur de sortie. Le nom du paramètre de sortie pour ce processus est `outDoc` et le type de données est document.
 
-   Ce processus est terminé de manière synchrone sur le même thread d’exécution que celui à partir duquel il a été appelé. Le nom de ce processus de courte durée est `MyApplication/EncryptDocument`et son fonctionnement `invoke`est.
+   Ce processus est terminé de manière synchrone sur le même thread d’exécution que celui à partir duquel il a été appelé. Le nom de ce processus de courte durée est `MyApplication/EncryptDocument`et son opération est `invoke`.
 
    >[!NOTE]
    >
@@ -61,21 +61,21 @@ Lorsque ce processus de courte durée est appelé, il effectue les actions suiva
 
    *La programmation avec des* formulaires AEM décrit les manières suivantes d’appeler ce processus de courte durée par programmation :
 
-   * [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide de AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (à l’aide d’une application Flex)
-   * [Appel d’un processus de courte durée à l’aide de l’API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) d’appel (API d’appel Java)
-   * [Appel d’AEM Forms à l’aide de l’encodage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) Base64 (exemple de service Web)
-   * [Appeler AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (exemple de service Web)
-   * [Appeler AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (exemple de service Web)
-   * [Appeler AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (exemple de service Web)
-   * [Appeler AEM Forms à l’aide de DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (exemple de service Web)
+   * [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide de AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)  (à l’aide d’une application Flex)
+   * [Appel d’un processus de courte durée à l’aide de l’API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)  d’appel (API d’appel Java)
+   * [Appel d’AEM Forms à l’aide de l’encodage](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)  Base64 (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)  (exemple de service Web)
+   * [Appel de AEM Forms à l’aide de SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)  (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de données BLOB sur HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)  (exemple de service Web)
+   * [Appeler AEM Forms à l’aide de DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime)  (exemple de service Web)
    * [Appel du processus MyApplication/EncryptDocument à l’aide de REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Exemple de processus de longue durée**
 
 L’illustration suivante illustre un processus de longue durée.
 
-Ce processus est appelé lorsqu’un demandeur envoie un formulaire de prêt. Le processus n&#39;est pas terminé tant qu&#39;un agent de prêt n&#39;a pas approuvé ou rejeté la demande de prêt. Le nom de ce processus de longue durée est *FirstAppSolution/PreLoanProcess* et son fonctionnement est `invoke_Async`activé. Ce processus doit être appelé de manière asynchrone. For information about programmatically invoking this long-lived process, see [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+Ce processus est appelé lorsqu’un demandeur envoie un formulaire de prêt. Le processus n&#39;est pas terminé tant qu&#39;un agent de prêt n&#39;a pas approuvé ou rejeté la demande de prêt. Le nom de ce processus de longue durée est *FirstAppSolution/PreLoanProcess* et son opération est `invoke_Async`. Ce processus doit être appelé de manière asynchrone. Pour plus d’informations sur l’appel programmatique de ce processus de longue durée, voir [Appel de processus de longue durée centrés sur l’homme](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 >[!NOTE]
 >
->Ce processus peut être créé en suivant le didacticiel spécifié dans [Création de votre première application](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)AEM Forms.
+>Ce processus peut être créé en suivant le didacticiel spécifié dans [Création de votre première application AEM Forms](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63).
