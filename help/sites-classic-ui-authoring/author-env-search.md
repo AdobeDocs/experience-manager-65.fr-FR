@@ -82,7 +82,7 @@ Dans la console **Sites web**, l’option de menu **Rechercher et remplacer** pe
    * indiquer si la recherche doit être sensible à la casse ;
    * indiquer si la recherche doit uniquement porter sur des mots entiers (dans le cas contraire, elle porte également sur des sous-chaînes).
 
-   Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
+   Cliquez sur **Prévisualisation** listes où le terme a été trouvé. Vous pouvez sélectionner/effacer des instances spécifiques à remplacer :
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -95,7 +95,7 @@ L’étendue par défaut du servlet de recherche et de remplacement couvre les p
 * `jcr:text`
 * `text`
 
-The scope can be changed using the Apache Felix Web Management Console (for example, at `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` and configure the scope as required.
+La portée peut être modifiée à l&#39;aide de la console de gestion Web Apache Felix (par exemple, à `https://localhost:4502/system/console/configMgr`). Sélectionnez `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` et configurez l’étendue selon les besoins.
 
 >[!NOTE]
 >
