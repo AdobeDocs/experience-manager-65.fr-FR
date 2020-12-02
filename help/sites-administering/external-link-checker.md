@@ -27,7 +27,7 @@ Un vérificateur de lien externe est fourni avec AEM. Le vérificateur de lien 
 * génère une liste de tous les liens valides et non valides ;
 * marque les liens non valides comme rompus in situ dans les différentes pages de contenu.
 
-## Validation des liens externes {#how-to-validate-external-links}
+## Validation des liens externes  {#how-to-validate-external-links}
 
 Pour utiliser le vérificateur de lien externe, procédez comme suit :
 
