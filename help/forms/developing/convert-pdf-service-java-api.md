@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Début rapide sur l’API Java du service Convert PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+# Début rapide de l’API Java du service Convert PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 Les Débuts rapides suivants sont disponibles pour l’API du service Convert PDF.
 
@@ -33,7 +33,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Conversion d’un document PDF en PostScript à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-L’exemple de code suivant convertit un document PDF appelé *Loan.pdf* en document PostScript appelé *Loan.ps*. (voir [Conversion de Documents PDF en PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript)).
+L’exemple de code suivant convertit un document PDF intitulé *Loan.pdf* en document PostScript intitulé *Loan.ps*. (Voir [Conversion de Documents PDF en PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
 ```java
  /*
@@ -148,7 +148,7 @@ L’exemple de code suivant convertit un document PDF appelé *Loan.pdf* en docu
 
 ## Début rapide (mode SOAP) : Conversion d’un document PDF en fichiers JPEG à l’aide de l’API Java {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-L’exemple de code Java suivant convertit un document PDF appelé *Loan.pdf* en un ensemble de fichiers JPEG et les stocke dans le dossier C:\Adobe directory. Chaque fichier est nommé `tempFile[index].jpg`, où le premier fichier image est nommé *tempFile0.jpg*. (voir [Conversion de Documents PDF en formats](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats)d’image).
+L’exemple de code Java suivant convertit un document PDF appelé *Loan.pdf* en un ensemble de fichiers JPEG et les stocke dans le dossier C:\Adobe directory. Chaque fichier est nommé `tempFile[index].jpg`, où le premier fichier image est nommé *tempFile0.jpg*. (Voir [Conversion de Documents PDF en formats d’image](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```java
  /*
