@@ -17,21 +17,21 @@ ht-degree: 51%
 ---
 
 
-# Personnalisation des images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
+# Personnalisation des images utilisées dans les actions d’itinéraire  {#customize-images-used-in-route-actions}
 
 Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez les étapes décrites dans [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis la procédure décrite dans cet article.
 
-## Images pour les actions d’itinéraire {#images-for-route-actions}
+## Images pour les actions d’itinéraire  {#images-for-route-actions}
 
 1. Ajoutez les styles définissant les images dans le CSS à l’emplacement suivant pour les nouvelles actions d’itinéraire :
 
    `/apps/ws/css/newStyle.css`
 
-   For example: Add a new style called `myStyle1`as shown below and upload the image file `myStyleIcon1.png` to the `/apps/ws/image`s folder using a WebDAV client.
+   Par exemple : Ajoutez un nouveau style appelé `myStyle1`comme illustré ci-dessous et téléchargez le fichier image `myStyleIcon1.png` dans le dossier `/apps/ws/image`s à l’aide d’un client WebDAV.
 
    >[!NOTE]
    >
-   >For more information about WebDAV access, see [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Pour plus d’informations sur l’accès WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    >[!NOTE]
    >
@@ -45,13 +45,13 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
        }
    ```
 
-## Menu déroulant de l’action de tâche Liste de tâches {#task-list-task-action-popup}
+## Menu déroulant de l’action de tâche Liste de tâches  {#task-list-task-action-popup}
 
 1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Vous devez utiliser le paquet de développement.
 
 1. Copiez `/libs/ws/js/runtime/templates/task.html` dans `/apps/ws/js/runtime/templates/task.html`.
 
-1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/task.html`:
+1. Si le nom du style CSS est identique à celui de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html` :
 
    ```jsp
    <%if(routeList == null){%>
@@ -81,7 +81,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
                <%}%>
    ```
 
-1. If the name of the CSS style is different from the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/task.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
+1. Si le nom du style CSS est différent du nom de l&#39;action d&#39;itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/task.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
 
 ```jsp
 <%if(routeList == null){%>
@@ -121,7 +121,7 @@ To
 
 1. Copiez `/libs/ws/js/runtime/templates/taskdetails.html` dans `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. If the name of the CSS style is same as the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Si le nom du style CSS est identique à celui de l’action d’itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html` :
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -141,7 +141,7 @@ To
                        <%}%>
    ```
 
-1. If the name of the CSS style is different from the route action name coming from the server, modify the following code in `/apps/ws/js/runtime/templates/taskdetails.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
+1. Si le nom du style CSS est différent du nom de l&#39;action d&#39;itinéraire provenant du serveur, modifiez le code suivant dans `/apps/ws/js/runtime/templates/taskdetails.html`. Il ajoute une pile des conditions de servlet `if-else` pour mapper le style avec le nom de l’action d’itinéraire.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -169,7 +169,7 @@ To
                <%}%>
    ```
 
-1. Open `/apps/ws/js/registry.js` for editing and look for the following text :
+1. Ouvrez `/apps/ws/js/registry.js` pour le modifier et recherchez le texte suivant :
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Remplacez le texte par le texte suivant :
