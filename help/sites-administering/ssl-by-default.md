@@ -23,7 +23,7 @@ ht-degree: 77%
 
 Afin d&#39;améliorer en permanence la sécurité de l&#39;AEM, l&#39;Adobe a introduit une fonctionnalité appelée SSL By Default (SSL par défaut). L’objectif est d’inciter à utiliser le protocole HTTPS pour se connecter aux instances AEM.
 
-## Activation de SSL par défaut {#enabling-ssl-by-default}
+## Activation de SSL par défaut  {#enabling-ssl-by-default}
 
 Vous pouvez commencer à configurer la fonctionnalité SSL par défaut en cliquant sur le message correspondant dans la boîte de réception de l’écran d’accueil d’AEM. Pour accéder à la boîte de réception, appuyez sur l’icône de cloche dans le coin supérieur droit de l’écran. Ensuite, cliquez sur **Afficher tout**. Une liste ordonnée de toutes les alertes s’affiche.
 
@@ -33,11 +33,11 @@ Dans la liste, sélectionnez et ouvrez l’alerte **Configurer HTTPS** :
 
 >[!NOTE]
 >
->If the **Configure HTTPS** alert is not present in the Inbox, you can navigate directly to the HTTPS Wizard by going to *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Si l&#39;alerte **Configurer HTTPS** n&#39;est pas présente dans la boîte de réception, vous pouvez accéder directement à l&#39;Assistant HTTPS en accédant à *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
 Un utilisateur du service appelé « **ssl-service** » a été créé pour cette fonctionnalité. Une fois que vous avez ouvert l&#39;alerte, vous serez guidé dans l&#39;assistant de configuration suivant :
 
-1. Tout d’abord, configurez les informations d’identification du magasin. These are the credentials for the **ssl-service** system user&#39;s key store that will contain the private key and trust store for the HTTPS listener.
+1. Tout d’abord, configurez les informations d’identification du magasin. Il s&#39;agit des informations d&#39;identification du magasin de clés de l&#39;utilisateur système **ssl-service** qui contiendra la clé privée et le Trust Store pour l&#39;écouteur HTTPS.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
@@ -57,7 +57,7 @@ Un utilisateur du service appelé « **ssl-service** » a été créé pour ce
 
 La fonctionnalité SSL par défaut peut être automatisée de trois façons.
 
-### Méthode HTTP POST {#via-http-post}
+### Méthode HTTP POST  {#via-http-post}
 
 La première méthode implique d’utiliser la méthode POST sur le serveur SSLSetup utilisé par l’assistant de configuration :
 
@@ -98,7 +98,7 @@ Le servlet, comme tout servlet POST Sling, répond avec un code de statut 200 O
 
 Voici des exemples de réponse en cas d’opération réussie et en cas d’erreur.
 
-**EXEMPLE** DE RÉUSSITE (état = 200) :
+**EXEMPLE**  DE RÉUSSITE (état = 200) :
 
 ```xml
 <!DOCTYPE html>
@@ -129,7 +129,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**EXEMPLE** D’ERREUR (état = 500) :
+**EXEMPLE**  D’ERREUR (status = 500) :
 
 ```xml
 <!DOCTYPE html>
@@ -156,7 +156,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 Vous pouvez également automatiser la configuration SSL en chargeant un module contenant déjà ces éléments obligatoires :
 
 * KeyStore de l’utilisateur ssl-service. Ce fichier se trouve sous */home/users/system/security/ssl-service/keystore* dans le référentiel.
-* La `GraniteSslConnectorFactory` configuration
+* Configuration de `GraniteSslConnectorFactory`
 
 ### Génération d’une paire clé privée/certificat à utiliser avec l’assistant {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
@@ -193,15 +193,15 @@ openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out loca
 
 Enfin, chargez la clé privée **localhostprivate.der** et le certificat SSL **localhost.crt** lors de l’étape 2 de l’assistant graphique SSL décrite au début de cette page.
 
-### Mise à jour de la configuration SSL à l’aide de cURL {#updating-the-ssl-configuration-via-curl}
+### Mise à jour de la configuration SSL à l’aide de cURL  {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->See [Using cURL with AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) for a centralized list of useful cURL commands in AEM.
+>Voir [Utilisation de cURL avec AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) pour obtenir une liste centralisée de commandes cURL utiles en AEM.
 
 Vous pouvez également automatiser la configuration SSL à l’aide de l’outil cURL. À cet effet, publiez les paramètres de configuration à cette adresse URL :
 
-*https://&lt;adresse du serveur>:&lt;port du serveur>/libs/granite/security/post/sslSetup.html*
+*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
 Voici les paramètres que vous pouvez utiliser pour modifier les différents paramètres de l’assistant de configuration :
 
@@ -224,7 +224,7 @@ Voici les paramètres que vous pouvez utiliser pour modifier les différents par
 >
 >Pour exécuter cURL afin d’automatiser la configuration SSL, le plus rapide est de partir du dossier dans lequel se trouvent les fichiers DER et CRT. Vous pouvez également spécifier le chemin d’accès dans les arguments `privatekeyFile` et certificatFile.
 >
->You also need to be authenticated in order to perform the update, so make sure you append the cURL command with the `-u user:passeword` parameter.
+>Vous devez également être authentifié pour effectuer la mise à jour. Veillez donc à ajouter la commande cURL avec le paramètre `-u user:passeword`.
 >
 >Une commande POST cURL appropriée doit se présenter comme suit :
 
@@ -232,7 +232,7 @@ Voici les paramètres que vous pouvez utiliser pour modifier les différents par
 curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" https://host:port/libs/granite/security/post/sslSetup.html
 ```
 
-#### Certificats multiples à l’aide de cURL {#multiple-certificates-using-curl}
+#### Certificats multiples à l’aide de cURL  {#multiple-certificates-using-curl}
 
 Vous pouvez envoyer au servlet une série de certificats en répétant le paramètre certificateFile comme suit :
 
