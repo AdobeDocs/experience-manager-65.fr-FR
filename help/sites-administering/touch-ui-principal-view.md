@@ -43,7 +43,7 @@ Il existe un filtre permettant à l’utilisateur de sélectionner le type de pr
 
 ![](assets/image2019-3-20_23-52-51.png)
 
-### Affichage des autorisations pour un principal {#viewing-permissions-for-a-principal}
+### Affichage des autorisations pour un principal  {#viewing-permissions-for-a-principal}
 
 Le cadre de gauche permet aux utilisateurs de faire défiler la page vers le bas pour rechercher un principal, un groupe ou un utilisateur selon le filtre sélectionné, comme illustré ci-dessous :
 
@@ -53,7 +53,7 @@ Cliquez sur le nom pour afficher les autorisations attribuées sur la droite. Le
 
 ![](assets/trei-1.png)
 
-### Ajout d’une nouvelle entrée de contrôle d’accès pour un principal {#adding-new-access-control-entry-for-a-principal}
+### Ajout d’une nouvelle entrée de contrôle d’accès pour un principal  {#adding-new-access-control-entry-for-a-principal}
 
 Vous pouvez créer des autorisations supplémentaires en ajoutant un nouvel accès contrôlant l’entrée, en cliquant sur le bouton Ajouter une nouvelle entrée de contrôle d’accès.
 
@@ -67,7 +67,7 @@ Sur cet exemple, nous sélectionnons un chemin pour lequel configurer une autori
 
 ![](assets/sase-1.png)
 
-After the path is selected, the workflow goes back to this screen, where the user can then select one or more of the privileges from the available namespaces (like `jcr`, `rep` or `crx`) as shown i below.
+Une fois le chemin sélectionné, le flux de travail revient à cet écran, où l&#39;utilisateur peut sélectionner un ou plusieurs des privilèges des espaces de nommage disponibles (par exemple `jcr`, `rep` ou `crx`), comme illustré ci-dessous.
 
 Vous pouvez ajouter des privilèges en les recherchant à l’aide du champ de texte, puis en les sélectionnant dans la liste.
 
@@ -81,7 +81,7 @@ Une fois la liste des privilèges constituée, l’utilisateur peut choisir le t
 
 ![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
 
-### Utilisation des restrictions {#using-restrictions}
+### Utilisation des restrictions  {#using-restrictions}
 
 Outre la liste des privilèges et le type d’autorisation pour un chemin d’accès donné, cet écran permet également d’ajouter des restrictions pour un contrôle d’accès plus précis, comme illustré ci-dessous :
 
@@ -93,7 +93,7 @@ Outre la liste des privilèges et le type d’autorisation pour un chemin d’ac
 
 Vous pouvez ajouter des restrictions en sélectionnant le type de restriction, en entrant la valeur et en appuyant sur l’icône **+**, comme on peut voir ci-dessous. ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as its covered under `jcr:write`.
+La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est un privilège d&#39;agrégat qui inclut `jcr:removeNode` qui a été ajouté ci-dessus, mais qui n&#39;est pas affiché ci-dessous comme son nom couvert sous `jcr:write`.
 
 ### Modification des entrées de contrôle d’accès {#editing-aces}
 
@@ -111,7 +111,7 @@ Ici, nous ajoutons l’autorisation `addChildNodes` pour les **utilisateurs DAM*
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Changes can be saved by clicking the **Save** button on top right, and the changes will reflect in the new permissions for **dam-users **as shown below:
+Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite, et les modifications seront répercutées dans les nouvelles autorisations pour **dam-users **comme illustré ci-dessous :
 
 ![](assets/zece-1.png)
 
@@ -121,7 +121,7 @@ Vous pouvez supprimer des entrées de contrôle d’accès pour supprimer l’en
 
 ![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
 
-### Combinaisons d’autorisations de l’interface utilisateur classique {#classic-ui-privilege-combinations}
+### Combinaisons d’autorisations de l’interface utilisateur classique  {#classic-ui-privilege-combinations}
 
 Notez que la nouvelle interface utilisateur d’autorisations utilise explicitement l’ensemble d’autorisations de base plutôt que des combinaisons prédéfinies qui ne reflètent pas réellement les autorisations sous-jacentes qui ont été accordées.
 
