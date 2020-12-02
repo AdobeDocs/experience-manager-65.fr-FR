@@ -19,7 +19,7 @@ ht-degree: 74%
 ---
 
 
-# Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5 {#custom-user-group-mapping-in-aem}
+# Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5  {#custom-user-group-mapping-in-aem}
 
 ## Comparaison du contenu JCR associé aux groupes d’utilisateurs fermés {#comparison-of-jcr-content-related-to-cug}
 
@@ -53,7 +53,7 @@ ht-degree: 74%
  </tbody>
 </table>
 
-## Comparaison des services OSGI {#comparison-of-osgi-services}
+## Comparaison des services OSGI  {#comparison-of-osgi-services}
 
 **Anciennes versions d’AEM**
 
@@ -89,7 +89,7 @@ Service permettant de configurer la liste d’exclusion des entités qui ne doiv
 
    >[!NOTE]
    > 
-   >Si la variable `CugExcludeImpl` n’est pas configurée, la `CugConfiguration` valeur par défaut est rétablie.
+   >Si `CugExcludeImpl` n&#39;est pas configuré, `CugConfiguration` revient à la valeur par défaut.
 
    Il est possible de connecter une implémentation CugExclude personnalisée en cas de besoins spéciaux.
 
