@@ -22,15 +22,15 @@ ht-degree: 88%
 
 Cette page fournit d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section [Gestion des projets : liste de contrôle des meilleures pratiques](/help/managing/best-practices.md).
 
-## AEM – Qu’allez-vous utiliser ? {#aem-what-will-you-be-using}
+## AEM – Qu’allez-vous utiliser ?  {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
 >Les listes de cette sous-section ne sont pas complètes, mais établies comme une introduction.
 
-### Fonctions au sein d’AEM {#features-within-aem}
+### Fonctions au sein d’AEM  {#features-within-aem}
 
-When implementing AEM (particularly for the first time) you will need to review the [capabilites and workflows of AEM](https://www.adobe.com/fr/marketing/experience-manager.html) to be sure of which areas you want/need.
+Lors de la mise en oeuvre de l&#39;AEM (en particulier pour la première fois), vous devrez examiner les [capacités et workflows d&#39;AEM](https://www.adobe.com/fr/marketing/experience-manager.html) pour vous assurer des zones que vous souhaitez ou dont vous avez besoin.
 
 Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votre travail de conception, par exemple :
 
@@ -45,13 +45,13 @@ Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votr
 
 En outre, consultez les [notes de mise à jour](/help/release-notes/release-notes.md) pour les différentes versions d’AEM, afin de savoir quand de nouvelles fonctions ont été ajoutées.
 
-### Intégrations {#integrations}
+### Intégrations  {#integrations}
 
 AEM peut être intégré à d’autres produits Adobe et/ou services tiers. Ceux-ci peuvent augmenter la puissance et les fonctionnalités à votre disposition.
 
 Voir [Intégration de solutions](/help/sites-administering/integration.md) pour obtenir des informations complètes.
 
-## Migration ou mise à niveau ? {#migrate-or-upgrade}
+## Migration ou mise à niveau ?  {#migrate-or-upgrade}
 
 Il est important de déterminer si vous voulez :
 
@@ -63,13 +63,13 @@ Lors du passage d’une version précédente à la version actuelle, il y a deux
 * Utiliser le [Gestionnaire de modules](/help/sites-administering/package-manager.md) pour exporter tous les contenus et le code d’application de l’ancien système vers le nouveau.
 * [Mettre à niveau](/help/sites-deploying/upgrade.md) l’ancien système en place. Il s’agit de l’option recommandée dans la plupart des cas.
 
-## Règles de base {#basic-ground-rules}
+## Règles de base  {#basic-ground-rules}
 
 Comme dans tout projet, il est essentiel d’établir des règles de base dès que possible. Celles-ci comprennent :
 
 >[!NOTE]
 >
->These points are generic, the [Best Practices Checklist](/help/managing/best-practices.md) deals with specifics in relation to AEM.
+>Ces points sont génériques, la [liste de vérification des meilleures pratiques](/help/managing/best-practices.md) traite des détails relatifs à l&#39;AEM.
 
 * **Rôles**
 
@@ -133,7 +133,7 @@ Ces informations peuvent être définies dans un manuel de projet ; l’utilisa
 * Les informations doivent être communiquées clairement à toutes les personnes impliquées. Bien qu’il s’agisse d’une pratique standard de gestion de projet, on ne répétera jamais assez qu’une définition claire des rôles et une bonne communication peuvent déterminer la réussite ou l’échec d’un projet.
 * Une seule version de toutes les informations suivies est conservée, par exemple, le suivi des bogues et des problèmes, etc.
 
-## Indicateurs de performances clés et mesures cibles {#key-performance-indicators-and-target-metrics}
+## Indicateurs de performances clés et mesures cibles  {#key-performance-indicators-and-target-metrics}
 
 Les organisations utilisent des indicateurs de performances clés (IPC) pour évaluer leur capacité à atteindre des cibles. Ces indicateurs sont des valeurs mesurables qui peuvent être utilisées pour montrer si les objectifs spécifiés sont satisfaits.
 
@@ -188,7 +188,7 @@ Si elles sont correctement utilisées, ces mesures peuvent fournir un outil util
 >
 >Cette section aborde les principes de base et les problèmes à prendre en compte. Chaque installation est différente, c’est pourquoi les valeurs à mesurer diffèrent.
 
-### Tout repose sur la conception du projet {#everything-rests-on-your-project-design}
+### Tout repose sur la conception du projet  {#everything-rests-on-your-project-design}
 
 Toutes les mesures sont, d’une manière ou d’une autre, affectées par la conception du projet. À l’inverse, le meilleur moyen de résoudre de nombreux problèmes consiste à modifier la conception.
 
@@ -205,7 +205,7 @@ Lorsque vous créez la structure du site web, suivez la structure recommandée p
 
 Si vous estimez que votre conception ne suit pas les consignes ou si vous n’êtes pas sûr de certaines des implications, clarifiez ces questions avant de débuter la phase de programmation ou d’ajouter le contenu.
 
-### Infrastructure  {#infrastructure}
+### Infrastructure   {#infrastructure}
 
 Pour définir ou évaluer l’infrastructure, il est utile de définir des valeurs cibles telles que :
 
@@ -230,7 +230,7 @@ Il existe plusieurs facteurs de performance pouvant être évalués :
 
 * Temps de réponse pour les requêtes de recherche
 
-This section can be read in conjunction with [Performance Optimization](/help/sites-deploying/configuring-performance.md) that expands the technical details of actually measuring the performance.
+Cette section peut être lue conjointement avec [Optimisation des performances](/help/sites-deploying/configuring-performance.md) qui développe les détails techniques de la mesure réelle des performances.
 
 #### Temps de réponse pour les pages individuelles {#response-times-for-individual-pages}
 
@@ -259,7 +259,7 @@ Les temps de réponse que vous ciblerez seront différents sur les environnement
       * le contenu est mis en cache ;
       * l’équilibrage de charge est appliqué.
 
-#### Définition des temps de réponse cibles {#setting-target-response-times}
+#### Définition des temps de réponse cibles  {#setting-target-response-times}
 
 Comment puis-je décider des temps de réponse (moyens) atteignables ? Il s’agit souvent d’une question d’expérience :
 
@@ -325,7 +325,7 @@ Elles doivent être planifiées et intégrées dès le tout début du projet. Le
 
    Pour personnaliser les informations que vous collectez sur les requêtes de recherche et leur performance, il est recommandé d’inclure la collecte d’informations dans le code source du projet ; voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
 
-### Concurrence {#concurrency}
+### Concurrence  {#concurrency}
 
 Votre site web sera disponible pour un certain nombre d’utilisateurs/de visiteurs, dans les environnements de création et de publication. Les numéros sont souvent plus élevés que ceux utilisés lors du test, mais ils sont également fluctuants et difficiles à prévoir. Votre site web doit avoir été conçu pour qu’un nombre moyen d’utilisateurs/de visiteurs simultanés ne remarquent pas d’impact négatif sur les performances. Là encore, le fichier `request.log` peut être utilisé pour effectuer des tests d’accès simultané ; voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
 
@@ -340,7 +340,7 @@ Les cibles pour le nombre d’utilisateurs simultanés dépendent du type d’en
    * Il est plus difficile de prévoir, vous devez donc sélectionner une valeur cible. Ici encore, cela doit être basé sur les statistiques d’utilisation de votre site web en cours, ainsi que sur des attentes réalistes concernant votre nouveau site web.
    * Les événements spéciaux (par exemple, lorsque vous publiez du nouveau contenu très populaire) peuvent dépasser les attentes, voire même les capacités (comme lorsque les médias parlent des affolements lors la mise en vente des entrées pour certains événements).
 
-### Capacité et volume {#capacity-and-volume}
+### Capacité et volume  {#capacity-and-volume}
 
 Avant de discuter des mesures relatives, une définition rapide des termes :
 
@@ -362,7 +362,7 @@ Avant de discuter des mesures relatives, une définition rapide des termes :
    | Cache du répartiteur | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur Web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
    | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages du cache de sortie, nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
    | Serveur web | Puissance de calcul du serveur Web. | Nombre de demandes. La mise en cache réduit ce volume. |
-   | Template (Modèle) | Puissance de calcul du serveur Web. | Complexité des modèles. |
+   | Template | Puissance de calcul du serveur Web. | Complexité des modèles. |
    | Référentiel | Performances du référentiel. | Nombre de pages chargées à partir du référentiel. |
 
 ### Autres mesures {#other-metrics}
@@ -377,7 +377,7 @@ Cependant, il est préférable de garder un ensemble réduit de mesures essentie
 
 La sécurité est cruciale et présente un défi toujours plus grand. Elle ***doit*** être considérée et planifiée dès les premières étapes de votre projet.
 
-La [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) décrit les mesures à prendre pour s’assurer que votre installation d’AEM est sécurisée lors de son déploiement. Other security aspects are covered under [Security (when developing)](/help/sites-developing/security.md) and [User Administration and Security](/help/sites-administering/security.md).
+La [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) décrit les mesures à prendre pour s’assurer que votre installation d’AEM est sécurisée lors de son déploiement. D&#39;autres aspects de la sécurité sont couverts par [Sécurité (lors de son développement)](/help/sites-developing/security.md) et [Administration utilisateur et sécurité](/help/sites-administering/security.md).
 
 ## Tâches en parallèle et itératives {#parallel-and-iterative-tasks}
 
@@ -385,7 +385,7 @@ La [liste de contrôle de sécurité](/help/sites-administering/security-checkli
 >
 >Notez les points suivants :
 >
->* Offers an overview related to the *first* implemention of an AEM project.
+>* Offre un aperçu de la mise en oeuvre *première* d&#39;un projet AEM.
 >* Il s’agit d’une présentation abstraite ; voir la [liste de contrôle de projet](/help/managing/best-practices.md) pour les phases/jalons/tâches spécifiques.
 >* Toute échelle temporelle est théorique.
 
@@ -471,7 +471,7 @@ Voici quelques points à noter pour chaque catégorie :
    * Planifiez la migration en cours de sprint après la refactorisation.
    * Planifiez l’avancement du contenu (plan de site pour le contenu publié).
 
-## Estimation du temps et des efforts {#estimating-time-and-effort}
+## Estimation du temps et des efforts  {#estimating-time-and-effort}
 
 Selon la liste de tâches obtenue, vous pouvez établir des estimations initiales de temps et d’efforts pour les définitions (de haut niveau) des tâches. Celles-ci doivent inclure une indication de qui, du client ou du partenaire, fera quoi et à quel moment.
 
@@ -530,10 +530,10 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
    <td><p>aem fournit une gamme de mécanismes pour vous aider à surveiller, tester, rechercher et déboguer votre application ; y compris :</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Mode Développeur</a></li>
-     <li>La console <a href="/help/sites-developing/hobbes.md">Tests</a></li>
+     <li><a href="/help/sites-developing/hobbes.md">Console de test</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">Tableau de bord des opérations</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">Content Insight </a></li>
-     <li>L'arborescence <a href="/help/sites-authoring/author-environment-tools.md#content-tree">de contenu</a></li>
+     <li>L'<a href="/help/sites-authoring/author-environment-tools.md#content-tree">arborescence de contenu</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -542,7 +542,7 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/">Le sélénium</a> est un outil de test Open Source. Les tests s’exécutent directement dans le navigateur en émulant la façon dont les utilisateurs travaillent.</td>
+   <td><a href="https://docs.seleniumhq.org/"></a> Seleniumis est un outil de test Open Source. Les tests s’exécutent directement dans le navigateur en émulant la façon dont les utilisateurs travaillent.</td>
   </tr>
   <tr>
    <td>Microsoft Project</td>
@@ -550,11 +550,11 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira">Jira</a> est un outil Open Source pour le suivi et la gestion des détails de vos bogues logiciels. Des workflows peuvent être imposés sur les détails des bogues selon vos besoins.</td>
+   <td><a href="https://www.atlassian.com/software/jira"></a> Jirais est un outil Open Source pour le suivi et la gestion des détails de vos bogues logiciels. Des workflows peuvent être imposés sur les détails des bogues selon vos besoins.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/">Git</a> est un logiciel de contrôle de révision.</td>
+   <td><a href="https://git-scm.com/"></a> Gitis est un logiciel de contrôle de révision.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
@@ -566,7 +566,7 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/">Maven</a> est un outil de gestion de projet logiciel et de compréhension qui peut gérer le processus de création d'un projet (logiciel et documentation).</td>
+   <td><a href="https://maven.apache.org/"></a> Mavenis est un outil de gestion de projet logiciel et de compréhension qui peut gérer le processus de construction d'un projet (logiciel et documentation).</td>
   </tr>
  </tbody>
 </table>
