@@ -10,15 +10,15 @@ translation-type: tm+mt
 source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 80%
+ht-degree: 87%
 
 ---
 
 
-# Guide de l’utilisateur pour le développement d’AEM 6.5 {#developing}
+# Guide de l’utilisateur pour le développement d’AEM 6.5  {#developing}
 
 + [Présentation du guide de développement d’utilisateur](home.md)
-+ Présentation pour les développeurs{#introduction}
++ Introduction pour les développeurs{#introduction}
    + [Prise en main du développement d’AEM Sites – Tutoriel WKND](getting-started.md)
    + [Concepts de base d’AEM](the-basics.md)
    + [Structure de l’interface utilisateur tactile d’AEM](touch-ui-structure.md)
@@ -75,7 +75,7 @@ ht-degree: 80%
 + Composants{#components}
    + [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
    + [Système de style](/help/sites-authoring/style-system.md)
-   + [Présentation des composants](components.md)
+   + [Aperçu des composants](components.md)
    + [Composants AEM – Principes de base](components-basics.md)
    + [Développement de composants AEM](developing-components.md)
    + [Développement de composants AEM – Échantillons de code](developing-components-samples.md)
@@ -100,24 +100,24 @@ ht-degree: 80%
       + [Utilisation de xtypes (IU classique)](xtypes.md)
       + [Développement de formulaires (IU classique)](developing-forms.md)
 + Gestion de l’expérience sans tête{#headless}
-   + [Sans tête et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Sans affichage et hybride avec AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activation de l’exportateur JSON pour un composant](json-exporter-components.md) 
-   + des applications sur une seule page ;{#spas}
-      + [SPA Introduction et présentation](spa-walkthrough.md)
-      + [Didacticiel sur SPA WKND](spa-wknd.md)
+   + Applications sur une seule page{#spas}
+      + [Introduction et présentation des SPA](spa-walkthrough.md)
+      + [Tutoriel sur SPA WKND](spa-wknd.md)
       + [Prise en main des SPA dans AEM - Réagir](spa-getting-started-react.md)
       + [Prise en main des SPA en AEM - Angular](spa-getting-started-angular.md)
       + [Mise en oeuvre d’un composant de réaction pour SPA](spa-implementing-react-component.md)
-      + [SPA Deep Dives](spa-deep-dives.md)
-      + [Aperçu de l’éditeur d’application d’une seule page](spa-overview.md)
-      + [Développement de SPA pour l&#39;AEM](spa-architecture.md)
+      + [Immersion dans les SPA](spa-deep-dives.md)
+      + [Présentation de l’éditeur de SPA](spa-overview.md)
+      + [Développement de SPA pour AEM](spa-architecture.md)
       + [Plan directeur d’applications sur une seule page (SPA)](spa-blueprint.md)
       + [Composant de page SPA](spa-page-component.md)
-      + [Mappage entre le modèle dynamique et le composant pour SPA](spa-dynamic-model-to-component-mapping.md)
-      + [routage de modèle SPA](spa-routing.md)
-      + [Intégration SPA et Adobe Experience Platform Launch](spa-launch.md)
+      + [Mappage du modèle dynamique avec les composants pour les SPA](spa-dynamic-model-to-component-mapping.md)
+      + [Routage du modèle de SPA ](spa-routing.md)
+      + [Intégration de SPA et d’Adobe Experience Platform Launch](spa-launch.md)
       + [Rendu SPA et côté serveur](spa-ssr.md)
-      + [SPA Documents de référence](spa-reference-materials.md)
+      + [Documents de référence SPA](spa-reference-materials.md)
    + API HTTP [ ](/help/assets/mac-api-assets.md)
    + [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
    + [Fragments d’expérience](/help/sites-authoring/experience-fragments.md)
@@ -137,16 +137,16 @@ ht-degree: 80%
    + [Extension AEM Brackets](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation  {#personlization}
++ Personnalisation {#personlization}
    + [ContextHub](contexthub.md)
    + [Configuration de Context Hub](ch-configuring.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
    + [Extension de ContextHub](ch-extend.md)
-   + [Exemples de magasins candidats ContextHub](ch-samplestores.md)
+   + [Exemples de magasins candidats ContextHub ](ch-samplestores.md)
    + [Exemples de types de module d’IU ContextHub](ch-samplemodules.md)
    + [Diagnostic ContextHub](ch-diagnostics.md)
    + [Développement de composants pour du contenu ciblé](target.md)
-   + [Guide de référence pour l’API Javascript ContextHub](contexthub-api.md)
+   + [Guide de référence pour l’API JavaScript ContextHub](contexthub-api.md)
    + ClientContext{#client-context}
       + [Présentation détaillée de ClientContext](client-context.md)
       + [API Javascript pour ClientContext](ccjsapi.md)
