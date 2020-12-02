@@ -26,7 +26,7 @@ L’authentification unique est activée sur l’espace de travail AEM Forms. Si
 
 Le délai d’expiration d’une session utilisateur peut être configuré dans Administration Console.
 
-To set the timeout, login to `https://'[server]:[port]'/adminui`, navigate to **Settings > User Management > Configuration > Configure Advanced System Attributes**, and make the desired settings.
+Pour définir le délai d’attente, connectez-vous à `https://'[server]:[port]'/adminui`, accédez à **Paramètres > User Management > Configuration > Configurer les attributs système avancés**, puis définissez les paramètres souhaités.
 
 En AEM Forms, le délai d’expiration de l’espace de travail est géré comme suit :
 
