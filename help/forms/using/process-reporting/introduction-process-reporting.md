@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Présentation du Rapports de processus{#introduction-to-process-reporting}
+# Présentation du Rapports de processus {#introduction-to-process-reporting}
 
 ![processus-rapports](assets/process-reporting.png)
 
@@ -28,7 +28,7 @@ Le Rapports de processus fournit un ensemble de rapports prêts à l’emploi qu
 
 De plus, Process Rapports fournit une interface permettant d’exécuter des requêtes ad hoc et d’intégrer des vues de rapports personnalisées dans l’interface utilisateur de Process Rapports.
 
-Pour la liste des navigateurs pris en charge, voir Plateformes [prises en charge par](/help/forms/using/aem-forms-jee-supported-platforms.md)AEM Forms.
+Pour la liste des navigateurs pris en charge, voir [Plateformes prises en charge par AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Le Rapports de processus repose sur des modules qui :
 
@@ -36,7 +36,7 @@ Le Rapports de processus repose sur des modules qui :
 * Publier les données de processus dans un référentiel de Rapports de processus incorporé
 * Fournit une interface utilisateur basée sur un navigateur pour les rapports de vue
 
-## Key Capabilities {#key-capabilities}
+## Fonctionnalités clés {#key-capabilities}
 
 ### Rapports permanent {#always-on-reporting}
 
