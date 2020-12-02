@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Début rapide sur l’API Java du service d’informations d’identification (SOAP) {#credential-service-java-api-quickstart-soap}
+# Début rapide de l’API Java du service d’informations d’identification (SOAP) {#credential-service-java-api-quickstart-soap}
 
 Le Début rapide des API Java (SOAP) est disponible pour le service d’informations d’identification.
 
@@ -37,7 +37,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Importation des informations d’identification à l’aide de l’API Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-L’exemple de code suivant importe des informations d’identification basées sur un fichier nommé *cred.p12*. La valeur d’alias utilisée pour importer les informations d’identification est `Secure`. (Voir [Importation des informations d’identification à l’aide de l’API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)Trust Manager.)
+L’exemple de code suivant importe des informations d’identification basées sur un fichier nommé *cred.p12*. La valeur d’alias utilisée pour importer les informations d’identification est `Secure`. (Voir [Importation des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -138,7 +138,7 @@ L’exemple de code suivant importe des informations d’identification basées 
 
 ## Début rapide (mode SOAP) : Suppression des informations d’identification à l’aide de l’API Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-L&#39;exemple de code suivant supprime des informations d&#39;identification basées sur une valeur d&#39;alias *secure*. (Voir [Suppression des informations d’identification à l’aide de l’API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)Trust Manager.)
+L’exemple de code suivant supprime des informations d’identification basées sur une valeur d’alias *secure*. (Voir [Suppression des informations d’identification à l’aide de l’API Trust Manager](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
