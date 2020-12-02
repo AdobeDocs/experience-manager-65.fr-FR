@@ -24,9 +24,9 @@ Le filtre de disposition du contenu est une fonctionnalité de sécurité permet
 
 Une fois installé, le filtre bloque l’accès à toutes les ressources. Par exemple, il vous a été impossible d’afficher un PDF en ligne. Cette section explique comment configurer ce filtre en fonction de vos besoins.
 
-## Configuration du filtre de disposition du contenu {#configure-content-disposition-filter}
+## Configuration du filtre de disposition du contenu  {#configure-content-disposition-filter}
 
-You can view the [Apache Sling Content Disposition Filter in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Vous pouvez vue le [filtre Apache Sling Content Disposition Filter dans GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
 
 Les options Filtre de disposition du contenu offrent les fonctionnalités suivantes :
 
