@@ -21,7 +21,7 @@ ht-degree: 89%
 
 # Concepts de l’interface utilisateur (IU) tactile d’AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-aem dispose d’une interface utilisateur tactile avec une conception [](/help/sites-authoring/responsive-layout.md) adaptée à l’environnement d’auteur, conçue pour fonctionner à la fois sur les périphériques tactiles et de bureau.
+aem dispose d&#39;une interface utilisateur tactile [adaptée](/help/sites-authoring/responsive-layout.md) pour l&#39;environnement auteur, conçue pour fonctionner à la fois sur les périphériques tactiles et de bureau.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Les principes de base dans l’IU tactile sont les suivants :
 * Inclure des tests intégrés
 * Approche ascendante pour garantir l’application de ces principes à tous les éléments et composants
 
-Pour un aperçu plus complet de la structure de l’interface utilisateur tactile, voir l’article [Structure de l’interface utilisateur](/help/sites-developing/touch-ui-structure.md)tactile AEM.
+Pour un aperçu plus complet de la structure de l’interface utilisateur tactile, voir l’article [Structure de l’interface utilisateur tactile AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pile technologique AEM {#aem-technology-stack}
 
@@ -110,9 +110,11 @@ Ces objectifs sont conformes aux exigences suivantes :
 * Être extensible
 * Être facile à remplacer
 
-![chlimage_1-81](assets/chlimage_1-81.png)GraniteUI.pdf
+![chlimage_1-81](assets/chlimage_1-81.png)
+GraniteUI.pdf
 
-[Obtenir le fichier](assets/graniteui.pdf)L&#39;interface utilisateur Granite :
+[Get ](assets/graniteui.pdf)
+FileThe Granite UI :
 
 * utilise l’architecture RESTful de Sling,
 * implémente des bibliothèques de composants destinées à la création d’applications web axées sur le contenu,
@@ -127,7 +129,7 @@ Ces objectifs sont conformes aux exigences suivantes :
 * [Composants de base de l’IU Granite](#granite-ui-foundation-components) Cette bibliothèque de composants de base (Foundation) peut être utilisée ou étendue par d’autres bibliothèques.
 * [Composants d’administration de l’IU Granite](#granite-ui-administration-components)
 
-### Côté client / côté serveur {#client-side-vs-server-side}
+### Côté client / côté serveur  {#client-side-vs-server-side}
 
 La communication client-serveur au sein de l’IU Granite est constituée d’éléments hypertexte, et non d’objets. Il n’est donc pas nécessaire pour le client de comprendre la logique métier.
 
@@ -272,11 +274,12 @@ Mise en œuvre:
 * Composants prédéfinis à l’aide des composants de base.
 * Les composants peuvent être personnalisés.
 
-## IU Coral {#coral-ui}
+## IU Coral  {#coral-ui}
 
 CoralUI.pdf
 
-[L’interface utilisateur Get File](assets/coralui.pdf)Coral (CUI) est une implémentation du style visuel de l’Adobe pour l’interface utilisateur tactile, conçue pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
+[L’interface utilisateur Get ](assets/coralui.pdf)
+FileCoral (CUI) est une implémentation du style visuel de l’Adobe pour l’interface utilisateur tactile, conçue pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
 
 >[!CAUTION]
 >
@@ -311,7 +314,7 @@ Conçu dès le début dans une optique de modularité, chaque module forme une c
 
 L’IU Coral n’exige pas l’utilisation d’un modèle, ni d’une plate-forme de développement spécifique. L’objectif principal de Coral est de fournir un balisage HTML5 net et unifié, indépendant de la méthode utilisée pour émettre les balises. Ce balisage peut être utilisé pour le rendu côté client ou serveur, les modèles, JSP, PHP ou encore les applications RIA Adobe Flash, pour ne citer que quelques exemples.
 
-### Éléments HTML – Calque de balisage {#html-elements-the-markup-layer}
+### Éléments HTML – Calque de balisage  {#html-elements-the-markup-layer}
 
 Les éléments HTML offrent une apparence commune pour tous les éléments d’interface de base (y compris la barre de navigation, les boutons, les menus, le rail, etc.).
 
@@ -367,20 +370,20 @@ Plusieurs des éléments HTML devront se comporter de façon dynamique ; en ouv
 
 Un module externe est soit :
 
-* Conçu pour fonctionner sur un élément DOM spécifique. For example, a dialog plugin expects to find `DIV class=dialog`
+* Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe dialog s’attend à trouver `DIV class=dialog`
 * Générique par nature. Par exemple, un gestionnaire de mises en page fournit la disposition pour toute liste d’éléments `DIV` ou `LI`.
 
 Le comportement du module externe peut être personnalisé en utilisant l’une des méthodes suivantes :
 
 * Transmission des paramètres via un appel JavaScript
-* Using dedicated `data-*` attributes tied to the HTML markup
+* Utilisation d’attributs `data-*` dédiés liés aux balises HTML
 
 Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser :
 
 * `data-*` pour les options liées à la mise en page HTML. pour indiquer le nombre de colonnes, par exemple.
 * Des options/classes API pour les fonctionnalités liées aux données ; pour créer la liste des éléments à afficher, par exemple.
 
-Le même concept est utilisé pour implémenter la validation de formulaire. For an element that you want validated, you must specify the required input form as a custom `data-*` attribute. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
+Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire d’entrée requis sous la forme d’un attribut personnalisé `data-*`. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
 
 >[!NOTE]
 >
@@ -396,7 +399,7 @@ Objectif:
 Mise en œuvre:
 
 * Module externe jQuery, lié à un ou plusieurs éléments DOM spécifiques.
-* Using `data-*` attributes to customize behavior
+* Utilisation des attributs `data-*` pour personnaliser le comportement
 
 Extrait de l’exemple de balisage (notez les options spécifiées sous la forme d’attributs data-*) :
 
