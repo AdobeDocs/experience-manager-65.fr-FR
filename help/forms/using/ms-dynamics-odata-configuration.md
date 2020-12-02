@@ -48,7 +48,7 @@ Avant de commencer à installer et configurer Microsoft Dynamics, vérifiez que
 
 * [Enregistrement de l&#39;application pour le service en ligne Microsoft Dynamics avec Microsoft Azure Principale Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Prenez note des valeurs de l’ID client (également appelé ID de l&#39;application) et du secret client pour le service enregistré. Ces valeurs sont utilisées lors de l’utilisation de la [configuration du service cloud pour votre service Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
-## Définition de l’URL de réponse pour l’application Microsoft Dynamics enregistrée {#set-reply-url-for-registered-microsoft-dynamics-application}
+## Définition de l’URL de réponse pour l’application Microsoft Dynamics enregistrée  {#set-reply-url-for-registered-microsoft-dynamics-application}
 
 Procédez comme suit pour définir l’URL de réponse de l’application Microsoft Dynamics enregistrée :
 
@@ -64,7 +64,7 @@ Procédez comme suit pour définir l’URL de réponse de l’application Micros
 
 1. Enregistrez la configuration.
 
-## Configuration de Microsoft Dynamics pour IFD {#configure-microsoft-dynamics-for-ifd}
+## Configuration de Microsoft Dynamics pour IFD  {#configure-microsoft-dynamics-for-ifd}
 
 Microsoft Dynamics utilise l’authentification basée sur les réclamations pour fournir l’accès aux données sur le serveur Microsoft Dynamics CRM aux utilisateurs externes. Pour ce faire, procédez comme suit pour configurer Microsoft Dynamics pour le déploiement par Internet (IFD) et configurer les paramètres de réclamation.
 
