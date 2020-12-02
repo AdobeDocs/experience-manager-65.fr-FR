@@ -21,7 +21,7 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->AEM Forms fournit la fonctionnalité Editeur [de](/help/forms/using/themes.md) thème pour créer et modifier des [thèmes](/help/forms/using/themes.md)de formulaires adaptatifs. Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne comporte pas d’éditeur [de](/help/forms/using/themes.md) thème et si vous avez déjà investi dans des thèmes créés à l’aide de fichiers Less/CSS (méthode d’éditeur de thème préalable).
+>AEM Forms fournit la fonctionnalité [Éditeur de thème](/help/forms/using/themes.md) permettant de créer et de modifier des formulaires adaptatifs [thèmes](/help/forms/using/themes.md). Exécutez les étapes répertoriées dans cet article, uniquement si vous avez effectué une mise à niveau à partir d’une version qui ne comporte pas [Éditeur de thème](/help/forms/using/themes.md) et si vous disposez d’un investissement existant dans des thèmes créés à l’aide de fichiers Less/CSS (méthode d’éditeur de pré-thème).
 
 ## Conditions préalables {#prerequisites}
 
@@ -29,7 +29,7 @@ ht-degree: 82%
 * Comment créer une bibliothèque cliente dans Adobe Experience Manager
 * [Création d’un modèle de formulaire adaptatif](/help/forms/using/custom-adaptive-forms-templates.md) pour utiliser le thème que vous créez
 
-## Thème de formulaire adaptatif {#adaptive-form-theme}
+## Thème de formulaire adaptatif  {#adaptive-form-theme}
 
 Un **thème de formulaire adaptatif** est une bibliothèque cliente AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif.
 
@@ -45,9 +45,10 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 >
 >Si vous procédez comme suit en utilisant les noms, le modèle résultant ressemble normalement à l’instantané suivant : 
 
-![Instantané](assets/thumbnail.png)**de formulaire adaptatif sur le thème Forêt Figure :** *Exemple de thème de forêt*
+![Exemple de ](assets/thumbnail.png)
+**capture d&#39;écran d&#39;un formulaire adaptatif sur le thème ForêtFigure:Modèle de thème** *Forêt*
 
-1. Create a node of type `cq:ClientLibraryFolder` under the `/apps`node.
+1. Créez un noeud de type `cq:ClientLibraryFolder` sous le noeud `/apps`.
 
    Par exemple, créez le nœud suivant :
 
@@ -59,9 +60,9 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
 
    ![Instantané du référentiel CRX](assets/3-2.png)
 
-1. Add two folders, `less` and `css`, and a file `css.txt` to the node created in step 1:
+1. Ajoutez deux dossiers, `less` et `css`, et un fichier `css.txt` au noeud créé à l’étape 1 :
 
-   * `less` folder: Contient les fichiers `less` variables dans lesquels vous définissez les `less` variables et `less mixins` qui sont utilisées pour gérer les styles .css.
+   * `less` folder: Contient les fichiers de  `less` variables dans lesquels vous définissez les  `less` variables et  `less mixins` qui sont utilisées pour gérer les styles .css.
 
       Ce dossier se compose de fichiers de variables `less`, de fichiers mixin `less` et de fichiers `less` de définition utilisant les mixins et les variables. Et tous ces fichiers less sont ensuite importés dans styles.less.
 
@@ -94,7 +95,7 @@ Vous créez un **modèle adaptatif** et vous appliquez le thème au modèle. Ens
    @button-font-color: #ffffff;
    ```
 
-   To override the `less`variables:
+   Pour remplacer les variables `less`:
 
    1. Importer les variables de formulaire adaptatif par défaut :
 
@@ -212,7 +213,7 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
 
    Par exemple, `/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. Add a `sling:resourceSuperType` property and set its value as `fd/af/components/page/base`.
+   1. Ajoutez une propriété `sling:resourceSuperType` et définissez sa valeur sur `fd/af/components/page/base`.
 
       ![Instantané du référentiel CRX](assets/1-2.png)
 
@@ -229,7 +230,7 @@ Après avoir créé un thème de formulaire adaptatif, effectuez les étapes sui
 
    1. **Facultatif** : dans la page personnalisée, remplacez les fichiers header.jsp, footer.jsp, et body.jsp le cas échéant.
 
-1. Create a cutom template (for example: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) whose the jcr:content points to custom page created in the previous step (for example: `myAfCustomizations/myAfPages/forestPage)`.
+1. Créez un modèle personnalisé (par exemple : `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) dont le jcr:content pointe vers la page personnalisée créée à l’étape précédente (par exemple : `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Instantané du référentiel CRX](assets/2-1.png)
 
