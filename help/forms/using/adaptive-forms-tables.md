@@ -33,7 +33,7 @@ AEM Forms fournit un composant Tableau dans l’explorateur de composants de la 
 * Prise en charge de l’ajout de lignes ou de cellules à l’aide d’éléments complexes de type XSD
 * Fusion des données à partir d’un fichier XML
 
-## Création d’un tableau {#create-a-table}
+## Création d’un tableau  {#create-a-table}
 
 Pour créer un tableau, faites glisser un composant Tableau à partir de l’explorateur de composants du panneau latéral d’un formulaire adaptatif. Par défaut, le tableau contient deux colonnes et trois lignes, dont la ligne d’en-tête.
 
@@ -51,7 +51,7 @@ Par exemple, la première rangée du corps du tableau ci-dessous inclut les comp
 
 Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellules que vous souhaitez fusionner, puis en cliquant avec le bouton droit et en choisissant la commande **Fusionner**. Vous pouvez aussi diviser une cellule fusionnée en cliquant sur celle-ci et en sélectionnant **Fractionner les cellules**.
 
-### Ajout, suppression et déplacement de lignes et de colonnes {#add-delete-move-rows-and-columns}
+### Ajout, suppression et déplacement de lignes et de colonnes  {#add-delete-move-rows-and-columns}
 
 Vous pouvez ajouter et supprimer une ligne ou une colonne, ou encore déplacer une ligne vers le haut et vers le bas dans un tableau.
 
@@ -69,15 +69,15 @@ Le menu déroulant pour la ligne propose également l’opération Modifier pour
 >
 >Alors qu’il est possible d’ajouter un nombre quelconque de lignes à un tableau, le nombre maximal de colonnes que vous pouvez ajouter est de six. En outre, vous ne pouvez pas supprimer la ligne d’en-tête du tableau.
 
-### Ajouter une description de tableau {#add-table-description}
+### Ajouter une description de tableau  {#add-table-description}
 
 Vous pouvez ajouter une description au tableau pour expliquer comment il organise les informations que les lecteurs peuvent interpréter et lire. Pour ajouter la description :
 
-1. Select the table and tap ![cmppr](assets/cmppr.png) to see its properties in the sidebar.
+1. Sélectionnez le tableau et appuyez sur ![cmppr](assets/cmppr.png) pour afficher ses propriétés dans la barre latérale.
 1. Spécifiez le résumé dans l’onglet Accessibilité.
 1. Cliquez sur **Terminé**.
 
-### Tri des colonnes d’un tableau {#sortcolumnstable}
+### Trier les colonnes d&#39;un tableau {#sortcolumnstable}
 
 Vous pouvez trier les données en fonction de n’importe quelle colonne d’un tableau dans le formulaire adaptatif. Les valeurs de la colonne peuvent être triées par ordre croissant ou décroissant.
 
@@ -91,13 +91,13 @@ Pour appliquer le tri sur les colonnes du tableau, les cellules des colonnes du 
 
 Pour activer le tri :
 
-1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide de l’explorateur de **contenu** dans le panneau latéral de la communication interactive.
+1. Sélectionnez le tableau et appuyez sur ![configure_icon](assets/configure_icon.png) (Configurer). Vous pouvez également sélectionner le tableau à l’aide du navigateur **Contenu** dans le panneau latéral de la communication interactive.
 1. Sélectionnez **Activer le tri**.
-1. Tap ![done_icon](assets/done_icon.png) to save the table properties. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
+1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du tableau. Les icônes de tri, les flèches vers le haut et vers le bas, dans les en-têtes de colonnes, indiquent que le tri a été activé.
 
    ![Activer le tri](assets/enable_sorting_new.png)
 
-1. Passez en mode **Prévisualisation** à la vue de la sortie. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
+1. Passez au mode **Prévisualisation** pour vue de la sortie. Le tableau est automatiquement trié en fonction de la première colonne du tableau.
 1. Cliquez sur l’en-tête de colonne pour trier les valeurs en fonction de la colonne.
 
    Un en-tête de colonne avec une flèche vers le haut indique que le tableau est trié en fonction de cette colonne. En outre, les valeurs de la colonne s’affichent dans l’ordre croissant.
@@ -112,9 +112,9 @@ Pour activer le tri :
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style dans la barre d’outils de la page. Exécutez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
 
-1. In the page toolbar, before Preview, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre d’outils de la page, avant la Prévisualisation, appuyez sur ![menu déroulant Zone de travail](assets/canvas-drop-down.png) > **Style**.
 
-1. In the sidebar select table and tap the edit button ![edit-button](assets/edit-button.png).
+1. Dans la barre latérale, sélectionnez le tableau et appuyez sur le bouton Modifier ![modifier-button](assets/edit-button.png).
 Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 ![Propriétés de style d’un tableau](assets/style-table.png)
@@ -127,7 +127,7 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou la suppression dynamique de lignes au moment de l’exécution.
 
-1. Select a table row and tap ![cmppr](assets/cmppr.png).
+1. Sélectionnez une ligne de tableau et appuyez sur ![cmppr](assets/cmppr.png).
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes du tableau.
 1. Cliquez sur **Terminé**.
 
@@ -139,14 +139,14 @@ Lors de l’exécution, vous verrez les boutons **+** et *-* pour ajouter ou sup
 >
 >L’ajout ou la suppression dynamique d’une ligne n’est pas prise en charge dans les en-têtes à gauche de la disposition des tableaux mobiles.
 
-## Expressions dans un tableau {#expressions-in-a-table}
+## Expressions dans un tableau  {#expressions-in-a-table}
 
 Les tableaux des formulaires adaptatifs permettent d’écrire des expressions en JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, ajouter tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider une entrée utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
 
 Alors que les tableaux et les lignes ne prennent en charge que les expressions de visibilité pour contrôler leur visibilité en fonction de la valeur renvoyée par une expression, les cellules prennent en charge les expressions suivantes :
 
 * **Script d’initialisation** : pour effectuer une action à l’initialisation d’un champ.
-* **Script de validation de valeur :** pour modifier les composants d’un formulaire après la modification de la valeur d’un champ.
+* **Script de validation de valeur :** pour modifier les composants d’un formulaire après modification de la valeur d’un champ.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Les tableaux des formulaires adaptatifs fournissent une expérience sans précé
 
 Vous pouvez configurer une disposition de tableau pour périphériques mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
-### Disposition En-têtes à gauche {#headers-on-left}
+### Disposition En-têtes à gauche  {#headers-on-left}
 
 Dans la disposition En-têtes à gauche, les en-têtes du tableau sont transposés à gauche. Une seule cellule apparaît pour un en-tête. Chaque ligne dans cette disposition s’affiche en tant que partie distincte. Les images suivantes comparent un tableau sur un bureau et le même tableau sur un périphérique mobile.
 
@@ -197,7 +197,7 @@ Colonnes réduites d’un tableau comportant uniquement deux colonnes, apparaiss
 
 Colonne développée d’un tableau sur un périphérique mobile
 
-## Fusion de données dans un tableau {#merge-data-in-a-table}
+## Fusion de données dans un tableau  {#merge-data-in-a-table}
 
 Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms est exécuté ou dans le référentiel CRX.
 
@@ -271,9 +271,9 @@ Le fichier XML contenant les données au format suivant :
 </afData>
 ```
 
-In the sample XML, the data for a row is defined by the `<Row1>` tags, which is the element name for the row in the table. Within the `<Row1>` tag, the data for each cell is defined within the tag for its element name, such as `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, and `<type>`.
+Dans l’exemple XML, les données d’une ligne sont définies par les balises `<Row1>`, qui est le nom de l’élément pour la ligne du tableau. Dans la balise `<Row1>`, les données de chaque cellule sont définies dans la balise pour son nom d’élément, tel que `<tableItem1>`, `<tableItem2>`, `<tableItem3>` et `<type>`.
 
-Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. For example, if the adaptive form is at *https://localhost:4502/myForms/bankTransaction.html* and the data XML file is saved at *C:/myTransactions/bankSummary.xml*, you can view the table with data at the following URL:
+Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve à l’emplacement *https://localhost:4502/myForms/bankTransaction.html* et que le fichier XML de données est enregistré à l’emplacement *C:/myTransactions/bankSummary.xml*, vous pouvez vue le tableau avec des données à l’adresse URL suivante :
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
