@@ -36,7 +36,7 @@ Vous pouvez utiliser les documents protégés par une stratégie que vous receve
 >
 >si vous recevez un document protégé par une stratégie sans recevoir d’invitation d’enregistrement par messagerie électronique, contactez son expéditeur afin d’obtenir plus de détails.
 
-## Enregistrement en tant qu’utilisateur invité {#register-as-an-invited-user}
+## Enregistrement en tant qu’utilisateur invité  {#register-as-an-invited-user}
 
 Si vous êtes utilisateur invité et recevez un message d’enregistrement par messagerie électronique de Document security, vous pouvez vous enregistrer en cliquant sur l’URL contenue dans le message pour ouvrir la page d’enregistrement en ligne. Après l’enregistrement, vous recevez un second avis sur l’activation de votre compte.
 
@@ -45,7 +45,7 @@ Si vous êtes utilisateur invité et recevez un message d’enregistrement par m
 1. Dans les zones appropriées, saisissez vos nom, numéro de téléphone, adresse, société et mot de passe, puis saisissez à nouveau votre mot de passe dans le champ Confirmer le mot de passe. Votre mot de passe peut être n’importe quelle combinaison de huit caractères.
 1. Cliquez sur Enregistrer. Un message de remerciement s’affiche vous demandant de vérifier votre adresse électronique en vue d’envoyer un message électronique d’activation. Vous devez maintenant activer votre compte pour terminer le processus d’enregistrement.
 
-## Activation de votre compte d’utilisateur invité {#activate-your-invited-user-account}
+## Activation de votre compte d’utilisateur invité  {#activate-your-invited-user-account}
 
 Une fois que vous êtes enregistré, Document security vous envoie un message électronique d’activation. Vous devez activer votre compte en cliquant sur l’URL du message. Vous pouvez ensuite vous connecter à Document security pour utiliser les documents protégés par une stratégie auxquels vous avez accès. Selon les fonctions activées par l’administrateur pour les utilisateurs externes, vous pouvez également créer des stratégies, en appliquer aux documents et ajouter d’autres utilisateurs externes à vos stratégies.
 
@@ -57,7 +57,7 @@ Votre compte reste actif jusqu’à ce que l’administrateur le désactive ou l
 1. Dans la zone Nom d’utilisateur, saisissez l’adresse électronique à l’aide de laquelle vous vous êtes enregistré auprès de Document security. Cette adresse correspond à votre nom d’utilisateur de Document security par défaut.
 1. Dans la zone Mot de passe, saisissez le mot de passe que vous avez créé lors de votre enregistrement, puis cliquez sur Ouverture de session.
 
-## Réinitialisation du mot de passe {#reset-your-password}
+## Réinitialisation du mot de passe  {#reset-your-password}
 
 Si vous oubliez votre mot de passe, l’administrateur de stratégie peut le réinitialiser à votre place. La réinitialisation d’un mot de passe génère un message électronique qui vous invite à vous connecter en utilisant un mot de passe temporaire. Vous pouvez ensuite créer un mot de passe.
 
