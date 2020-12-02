@@ -40,17 +40,17 @@ Adobe Experience Manager Forms peut utiliser les informations d’identification
 >
 >Sous Microsoft Windows, les clients à 32 bits uniquement de LunaSA ou EToken sont pris en charge.
 
-## Activer le service DocAssurance {#configuredocassurance}
+## Activer le service DocAssurance  {#configuredocassurance}
 
 Par défaut, le service DocAssurance n’est pas activé. Effectuez les étapes suivantes pour activer le service :
 
 1. Arrêtez l’instance auteur de votre environnement AEM Forms. 
 
-1. Open the [AEM_root]\crx-quickstart\conf\sling.properties file for editing.
+1. Ouvrez le fichier [AEM_root]\crx-quickstart\conf\sling.properties pour le modifier.
 
    >[!NOTE]
    >
-   >If you have used the [AEM_root]\crx-quickstart\bin\start.bat file to start the AEM instance, then open the [AEM_root]\crx-quickstart\sling.properties file for editing.
+   >Si vous avez utilisé le fichier [AEM_root]\crx-quickstart\bin\start.bat pour début de l’instance AEM, ouvrez le fichier [AEM_root]\crx-quickstart\sling.properties pour le modifier.
 
 1. Ajoutez ou remplacez les propriétés suivantes au fichier sling.properties :
 
@@ -75,13 +75,13 @@ Effectuez les étapes suivantes pour configurer des certificats :
 
 1. Sur la page **Modifier les paramètres utilisateur**, cliquez sur **Gérer le KeyStore**.
 
-1. On KeyStore Management dialog, expand the **Add Private Key from Key Store file** option and provide an alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
-1. To upload the certificate file, click **Select Key Store File** and upload a `.pfx` file.
+1. Dans la boîte de dialogue Gestion du KeyStore, développez l&#39;option **Ajouter la clé privée à partir du fichier Key Store** et fournissez un alias. L’alias est utilisé pour effectuer l’opération Reader Extensions.
+1. Pour télécharger le fichier de certificat, cliquez sur **Sélectionner le fichier de stockage de clés** et téléchargez un fichier `.pfx`.
 1. Ajoutez les **mot de passe du magasin de clés**, **mot de passe de la clé privée** et **alias de la clé privée** associés au certificat dans les champs respectifs. Cliquez sur **Envoyer**.
 
    >[!NOTE]
    >
-   >To determine the P **rivate Key Alias** of a certificate, you can use the Java keytool command: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >Pour déterminer l&#39;alias de clé privée P **d&#39;un certificat, vous pouvez utiliser la commande Java keytool : `keytool -list -v -keystore [keystore-file] -storetype pkcs12`**
 
    >[!NOTE]
    >
@@ -116,7 +116,7 @@ L’alias contient l’ensemble des paramètres dont a besoin un périphérique 
 
    Cliquez sur **Enregistrer**. Le module de sécurité matérielle est configuré pour AEM Forms. Désormais, vous pouvez utiliser le module de sécurité matérielle avec AEM Forms pour signer ou certifier des documents.
 
-## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module  {#programatically}
+## Utiliser les API du service DocAssurance pour signer ou certifier un document avec des clés numériques stockées sur le module   {#programatically}
 
 L’exemple de code suivant utilise HSM ou etoken pour signer ou certifier un document.
 
