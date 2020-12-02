@@ -24,7 +24,7 @@ Le [service OSGI](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM Undo C
 
 ## Configuration par défaut {#default-configuration}
 
-In a standard installation the default settings are defined as properties on the `sling:OsgiConfig`node:
+Dans une installation standard, les paramètres par défaut sont définis comme des propriétés sur le `sling:OsgiConfig`noeud :
 
 `/libs/wcm/core/config.author/com.day.cq.wcm.undo.UndoConfig`
 
@@ -51,7 +51,7 @@ Les listes suivantes indiquent les propriétés affichées dans la console Web, 
 `cq.wcm.undo.enabled`)
 
    * **Description** : détermine si les auteurs de page peuvent annuler et rétablir les modifications.
-   * **Par défaut**: `Selected`
+   * **Par défaut** :  `Selected`
    * **Type** : `Boolean`
 
 * **Chemin**
@@ -59,63 +59,66 @@ Les listes suivantes indiquent les propriétés affichées dans la console Web, 
 `cq.wcm.undo.path`)
 
    * **Description :** chemin d’accès du référentiel pour conserver les données d’annulation binaires. Lorsque les auteurs modifient les données binaires telles que les images, la version originale des données est conservée ici. Lorsque les modifications apportées aux données binaires sont annulées, ces données d’annulation binaires sont restaurées sur la page.
-   * **Par défaut**: `/var/undo`
+   * **Par défaut** :  `/var/undo`
    * **Type** : `String`
 
    >[!NOTE]
    >
-   >By default, only administrators can access the `/var/undo` node. Les auteurs peuvent effectuer des opérations d’annulation et de restauration sur du contenu binaire uniquement lorsqu’ils sont dotés de droits d’accès aux données d’annulation binaires.
+   >Par défaut, seuls les administrateurs peuvent accéder au noeud `/var/undo`. Les auteurs peuvent effectuer des opérations d’annulation et de restauration sur du contenu binaire uniquement lorsqu’ils sont dotés de droits d’accès aux données d’annulation binaires.
 
 * **Min. validity**
 ( 
 `cq.wcm.undo.validity`)
 
-   * **Description**: durée minimale de stockage des données d’annulation binaires, en heures. Après cette période, les données binaires peuvent être supprimées, pour préserver l’espace disque.
-   * **Par défaut**: `10`
+   * **Description** : durée minimale de stockage des données d’annulation binaires, en heures. Après cette période, les données binaires peuvent être supprimées, pour préserver l’espace disque.
+   * **Par défaut** :  `10`
    * **Type** : `Integer`
 
 * **Étapes**
 ( 
 `cq.wcm.undo.steps`)
 
-   * **Description**: Nombre maximal d’actions de page stockées dans l’historique des annulations.
-   * **Par défaut**: `20`
+   * **Description** : Nombre maximal d’actions de page stockées dans l’historique des annulations.
+   * **Par défaut** :  `20`
    * **Type** : `Integer`
 
 * **Persistance**
 ( 
 `cq.wcm.undo.persistence`)
 
-   * **Description**: La classe qui persiste annule l&#39;historique. Deux classes de persistance sont disponibles :
+   * **Description** : La classe qui persiste annule l&#39;historique. Deux classes de persistance sont disponibles :
 
       * `CQ.undo.persistence.WindowNamePersistence` : conserve l’historique à l’aide de la propriété window.name.
       * `CQ.undo.persistence.CookiePersistance`: Persiste l’historique à l’aide de cookies.
-   * **Par défaut**: `CQ.undo.persistence.WindowNamePersistence`
+   * **Par défaut** :  `CQ.undo.persistence.WindowNamePersistence`
    * **Type** : `String`
 
 
-* **Mode** de persistance( 
+* **Mode**
+ de persistance( 
 `cq.wcm.undo.persistence.mode`)
 
-   * **Description**: Détermine à quel moment l’historique des annulations est conservé. Sélectionnez cette option pour conserver un historique d’annulation après chaque modification de page. Désactivez cette option pour conserver uniquement lorsqu’un rechargement de page se produit (par exemple, l’utilisateur accède à une autre page).
+   * **Description** : Détermine à quel moment l’historique des annulations est conservé. Sélectionnez cette option pour conserver un historique d’annulation après chaque modification de page. Désactivez cette option pour conserver uniquement lorsqu’un rechargement de page se produit (par exemple, l’utilisateur accède à une autre page).
 
         La conservation de l’historique d’annulation utilise les ressources du navigateur web. Si le navigateur de vos utilisateurs réagit lentement aux modifications de la page, essayez de conserver l’historique d’annulation lors du rechargement de la page.
 
-   * **Par défaut**: `Selected`
+   * **Par défaut** :  `Selected`
    * **Type** : `Boolean`
 
-* **Mode** Marque( 
+* **Mode**
+ Marque( 
 `cq.wcm.undo.markermode`)
 
-   * **Description**: Indique le repère visuel à utiliser pour indiquer quels paragraphes sont affectés lors d’une annulation ou d’un rétablissement. Les valeurs suivantes sont valides :
+   * **Description** : Indique le repère visuel à utiliser pour indiquer quels paragraphes sont affectés lors d’une annulation ou d’un rétablissement. Les valeurs suivantes sont valides :
 
       * Clignotement : l’indicateur de sélection de paragraphe clignote temporairement.
       * Sélection : le paragraphe est sélectionné.
-   * **Par défaut**: `flash`
+   * **Par défaut** :  `flash`
    * **Type** : `String`
 
 
-* **Bons composants**( 
+* **Bons composants**
+( 
 `cq.wcm.undo.whitelist`)
 
    * **Description** : liste des composants qui doivent être affectés par les opérations d’annulation et de restauration. Ajoutez les chemins d’accès de composant à cette liste lorsqu’ils fonctionnent correctement avec les commandes d’annulation/de restauration. Ajoutez un astérisque (&amp;ast;) pour spécifier un groupe de composants :
@@ -129,17 +132,18 @@ Les listes suivantes indiquent les propriétés affichées dans la console Web, 
          `foundation/components/*`
    * Lorsqu’une commande d’annulation ou de restauration est émise sur un composant qui ne figure pas dans cette liste, un message s’affiche indiquant que la commande peut s’avérer non fiable.
 
-   * **Par défaut**: La propriété est renseignée avec de nombreux composants que AEM fournit.
+   * **Par défaut** : La propriété est renseignée avec de nombreux composants que AEM fournit.
    * **Type** : `String[]`
 
 
-* **Composants** incorrects( 
+* **Composants**
+ incorrects( 
 `cq.wcm.undo.blacklist`)
 
-   * **Description**: Liste de composants et/ou d&#39;opérations de composants que vous ne souhaitez pas voir affectés par la commande Annuler. Ajoutez les composants et les opérations de composant qui ne fonctionnent pas correctement avec la commande d’annulation :
+   * **Description** : Liste de composants et/ou d&#39;opérations de composants que vous ne souhaitez pas voir affectés par la commande Annuler. Ajoutez les composants et les opérations de composant qui ne fonctionnent pas correctement avec la commande d’annulation :
 
       * Ajoutez un chemin d’accès de composant lorsque vous ne souhaitez aucune des opérations du composant dans l’historique d’annulation ; par exemple, `collab/forum/components/post`
-      * Append a colon (:) and an operation to the path when you want that specific operation to be omitted from the undo history (other operations function correctly), for example `collab/forum/components/post:insertParagraph.`
+      * Ajoutez un deux-points (:) et une opération au chemin d&#39;accès lorsque vous souhaitez que cette opération spécifique soit omise dans l&#39;historique d&#39;annulation (d&#39;autres opérations fonctionnent correctement), par exemple `collab/forum/components/post:insertParagraph.`
 
    >[!NOTE]
    >
