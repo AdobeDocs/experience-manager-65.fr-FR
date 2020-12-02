@@ -22,7 +22,7 @@ ht-degree: 91%
 
 We.Retail a été conçu avec une structure de site globalisée qui offre des gabarits de langue pouvant être copiés de manière dynamique (Lice Copy) sur des sites web spécifiques à un pays. Tous les éléments sont configurés en standard pour vous permettre d’expérimenter cette structure et les fonctionnalités de traduction intégrées.
 
-## Test {#trying-it-out}
+## Test  {#trying-it-out}
 
 1. Ouvrez la console Sites à partir de **Navigation globale -> Sites**.
 1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l&#39;exemple de structure de pays avec la Suisse, les Etats-Unis, la France, etc., au côté des Principal linguistiques.
@@ -73,4 +73,4 @@ We.Retail a été conçu avec une structure de site globalisée qui offre des ga
 
 ## Informations supplémentaires {#further-information}
 
-For further information, refer to the authoring document [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for complete technical details.
+Pour plus d&#39;informations, consultez le document de création [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir des détails techniques complets.
