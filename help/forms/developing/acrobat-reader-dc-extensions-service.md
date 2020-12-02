@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# début rapide de l&#39;API ServiceJava d&#39;extensions Acrobat Reader DC (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# début rapide de l’API ServiceJava d’extensions Acrobat Reader DC (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 Les Débuts rapides suivants sont disponibles pour le service Acrobat Reader DC Extensions.
 
@@ -34,7 +34,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : application de droits d’utilisation à l’aide de l’API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-L’exemple de code Java suivant applique des droits d’utilisation à un document PDF nommé *Loan.pdf*. Le document PDF dont les droits sont activés est enregistré en tant que fichier PDF nommé *LoanUsageRights.pdf*. Les droits d’utilisation suivants sont appliqués à ce document PDF : `enabledComments`, `enabledFormFillIn`et `enabledDigitalSignatures`. (See [Applying Usage Rights to PDF Documents](/help/forms/developing/assigning-usage-rights.md).)
+L’exemple de code Java suivant applique des droits d’utilisation à un document PDF nommé *Loan.pdf*. Le document PDF dont les droits sont activés est enregistré en tant que fichier PDF nommé *LoanUsageRights.pdf*. Les droits d’utilisation suivants sont appliqués à ce document PDF : `enabledComments`, `enabledFormFillIn` et `enabledDigitalSignatures`. (Voir [Application des droits d’utilisation aux Documents PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
@@ -146,7 +146,7 @@ L’exemple de code Java suivant applique des droits d’utilisation à un docum
 
 ## Début rapide (mode SOAP) : Suppression des droits d’utilisation d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant supprime les droits d’utilisation d’un document PDF dont les droits sont activés et intitulé *LoanUsageRights.pdf*. (voir [Suppression des droits d’utilisation des Documents](/help/forms/developing/assigning-usage-rights.md)PDF).
+L’exemple de code Java suivant supprime les droits d’utilisation d’un document PDF dont les droits sont activés et intitulé *LoanUsageRights.pdf*. (Voir [Suppression des droits d’utilisation des Documents PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -246,7 +246,7 @@ L’exemple de code Java suivant supprime les droits d’utilisation d’un docu
 
 ## Début rapide (mode SOAP) : Récupération des informations d’identification à l’aide de l’API Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-L’exemple de code Java suivant récupère des informations sur les informations d’identification utilisées pour appliquer des droits d’utilisation à un document PDF dont les droits sont activés et intitulé *LoanUsageRights.pdf*. (voir [Récupération des informations](/help/forms/developing/assigning-usage-rights.md)d’identification).
+L’exemple de code Java suivant récupère des informations sur les informations d’identification utilisées pour appliquer des droits d’utilisation à un document PDF dont les droits sont activés et intitulé *LoanUsageRights.pdf*. (Voir [Récupération des informations d’identification](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
