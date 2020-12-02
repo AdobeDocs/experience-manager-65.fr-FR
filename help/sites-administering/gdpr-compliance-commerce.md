@@ -31,7 +31,7 @@ Le règlement général sur la protection des données (RGPD) de l’Union europ
 
 Dans nos intégrations Commerce prêtes à l’emploi, AEM représente la couche d’expérience, utilisant des services et renvoyant des données vers la plate-forme commerciale du client qui s’exécute sans interface utilisateur.
 
-For some commerce platforms, we store profile information ( `/home/users`) and commerce tokens (to login in the commerce platform) in AEM. Pour ces cas d’utilisation, consultez [Traitement des demandes RGPD pour la plate-forme AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Pour certaines plateformes commerciales, nous stockons les informations de profil ( `/home/users`) et les jetons de commerce (pour vous connecter à la plateforme commerciale) dans AEM. Pour ces cas d’utilisation, consultez [Traitement des demandes RGPD pour la plate-forme AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ![screen_shot_2018-03-22at111621](assets/screen_shot_2018-03-22at111621.jpg)
 
