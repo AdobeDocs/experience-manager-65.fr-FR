@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Début rapide de l’API Java de Signature Service (SOAP) {#signature-service-java-api-quickstart-soap}
+# Début rapide de l’API Java du service Signature (SOAP) {#signature-service-java-api-quickstart-soap}
 
 Le Début rapide de l’API Java (SOAP) est disponible pour le service Signature :
 
@@ -48,7 +48,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Ajouter un champ de signature à un document PDF à l’aide de l’API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant ajoute un champ de signature nommé *SignatureField1* à un document PDF basé sur un fichier PDF *nomméLoan.pdf*. Le document PDF qui contient le nouveau champ de signature est enregistré en tant que fichier PDF nommé *LoanSig.pdf*. (Voir [Ajouter des champs](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)de signature.)
+L’exemple de code Java suivant ajoute un champ de signature nommé *SignatureField1* à un document PDF basé sur un fichier PDF nommé&#x200B;*Loan.pdf*. Le document PDF qui contient le nouveau champ de signature est enregistré en tant que fichier PDF nommé *LoanSig.pdf*. (Voir [Ajouter les champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
 ```java
  /*
@@ -164,7 +164,7 @@ L’exemple de code Java suivant ajoute un champ de signature nommé *SignatureF
 
 ## Début rapide (mode SOAP) : Récupération des noms de champs de signature à l’aide de l’API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-The following Java code example retrieves the names of signature fields located in a PDF document named *LoanSig.pdf*. (Voir [Récupération des noms des champs](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names)de signature.)
+L’exemple de code Java suivant récupère les noms des champs de signature situés dans un document PDF nommé *LoanSig.pdf*. (Voir [Récupération des noms des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
 ```java
  /*
@@ -270,7 +270,7 @@ The following Java code example retrieves the names of signature fields located 
 
 ## Début rapide (mode SOAP) : Modification d’un champ de signature à l’aide de l’API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-L’exemple de code Java suivant modifie un champ de signature nommé SignatureField1 en verrouillant tous les champs du formulaire lorsqu’une signature est appliquée au champ de signature et en veillant à ce qu’aucune modification ne soit autorisée. Une fois que le service Signature a renvoyé le document PDF contenant le champ de signature modifié, le document PDF est enregistré en tant que fichier PDF nommé LoanSig.pdf. (Cet exemple remplace le fichier PDF transmis au service Signature.) (Voir [Modification de champs](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields)de signature.)
+L’exemple de code Java suivant modifie un champ de signature nommé SignatureField1 en verrouillant tous les champs du formulaire lorsqu’une signature est appliquée au champ de signature et en veillant à ce qu’aucune modification ne soit autorisée. Une fois que le service Signature a renvoyé le document PDF contenant le champ de signature modifié, le document PDF est enregistré en tant que fichier PDF nommé LoanSig.pdf. (Cet exemple remplace le fichier PDF transmis au service Signature.) (Voir [Modification des champs de signature](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*
@@ -398,7 +398,7 @@ L’exemple de code Java suivant modifie un champ de signature nommé SignatureF
 
 ## Début rapide (mode SOAP) : Signature numérique d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-L’exemple de code Java suivant montre comment signer numériquement un document PDF basé sur un fichier PDF nommé *LoanSig.pdf*. L’alias spécifié pour les informations d’identification de sécurité est sécurisé et la vérification de révocation est effectuée. Comme aucune liste de révocation des certificats ou aucune information sur le serveur OCSP n’est spécifiée, les informations sur le serveur sont obtenues à partir du certificat utilisé pour signer numériquement le document PDF. Le document signé est enregistré en tant que fichier PDF nommé *LoanSigned.pdf*. (See [Digitally Signing PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+L’exemple de code Java suivant montre comment signer numériquement un document PDF basé sur un fichier PDF nommé *LoanSig.pdf*. L’alias spécifié pour les informations d’identification de sécurité est sécurisé et la vérification de révocation est effectuée. Comme aucune liste de révocation des certificats ou aucune information sur le serveur OCSP n’est spécifiée, les informations sur le serveur sont obtenues à partir du certificat utilisé pour signer numériquement le document PDF. Le document signé est enregistré en tant que fichier PDF nommé *LoanSigned.pdf*. (Voir [Signature numérique de Documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ```java
  /*
@@ -547,7 +547,7 @@ L’exemple de code Java suivant montre comment signer numériquement un documen
 
 ## Début rapide (mode SOAP) : Signature numérique d’un formulaire XFA à l’aide de l’API Java {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-L’exemple de code Java suivant montre comment signer un formulaire interactif rendu par le service Forms. L’ `com.adobe.idp.Document` instance renvoyée par le service Forms est transmise au service Signature. Le formulaire interactif signé est enregistré en tant que fichier PDF nommé *LoanXFASigned.pdf*.
+L’exemple de code Java suivant montre comment signer un formulaire interactif rendu par le service Forms. L&#39;instance `com.adobe.idp.Document` renvoyée par le service Forms est transmise au service Signature. Le formulaire interactif signé est enregistré au format PDF *LoanXFASigned.pdf*.
 
 ```java
  /*
@@ -759,7 +759,7 @@ L’exemple de code Java suivant montre comment signer un formulaire interactif 
 
 ## Début rapide (mode SOAP) : Certification d’un document PDF à l’aide de l’API Java {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-The following Java code example certifies a PDF document that is based on a PDF file named *LoanSig.pdf*. L’alias spécifié pour les informations d’identification de sécurité est sécurisé et la vérification de révocation n’est pas effectuée. Le document certifié est enregistré en tant que fichier PDF nommé *LoanCertified.pdf*. (See [Certifying PDF Documents](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+L’exemple de code Java suivant certifie un document PDF basé sur un fichier PDF nommé *LoanSig.pdf*. L’alias spécifié pour les informations d’identification de sécurité est sécurisé et la vérification de révocation n’est pas effectuée. Le document certifié est enregistré en tant que fichier PDF nommé *LoanCertified.pdf*. (Voir [Certification de Documents PDF](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
 ```java
  /*
@@ -908,7 +908,7 @@ The following Java code example certifies a PDF document that is based on a PDF 
 
 ## Début rapide (mode SOAP) : Vérification d’une signature numérique à l’aide de l’API Java {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-L’exemple de code Java suivant vérifie une signature numérique qui se trouve dans un document PDF signé basé sur un fichier PDF nommé LoanSigned.pdf. L’heure de vérification est définie sur l’heure actuelle et l’option de vérification de révocation est définie sur la meilleure opération. (voir [Vérification des signatures](#verifying-digital-signatures)numériques).
+L’exemple de code Java suivant vérifie une signature numérique qui se trouve dans un document PDF signé basé sur un fichier PDF nommé LoanSigned.pdf. L’heure de vérification est définie sur l’heure actuelle et l’option de vérification de révocation est définie sur la meilleure opération. (Voir [Vérification des signatures numériques](#verifying-digital-signatures).)
 
 ```java
  /*
@@ -1072,7 +1072,7 @@ L’exemple de code Java suivant vérifie une signature numérique qui se trouve
 
 ## Début rapide (mode SOAP) : Vérification de plusieurs signatures numériques à l’aide de l’API Java {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-L’exemple de code Java suivant vérifie plusieurs signatures numériques qui se trouvent dans un document PDF signé basé sur un fichier PDF nommé LoanAllSigs.pdf. L’heure de vérification est définie sur l’heure actuelle et l’option de vérification de révocation est définie sur la meilleure opération. (See [Verifying Multiple Digital Signatures](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
+L’exemple de code Java suivant vérifie plusieurs signatures numériques qui se trouvent dans un document PDF signé basé sur un fichier PDF nommé LoanAllSigs.pdf. L’heure de vérification est définie sur l’heure actuelle et l’option de vérification de révocation est définie sur la meilleure opération. (Voir [Vérification de plusieurs signatures numériques](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
 ```java
  /*
@@ -1234,7 +1234,7 @@ L’exemple de code Java suivant vérifie plusieurs signatures numériques qui s
 
 ## Début rapide (mode SOAP) : Suppression d’une signature numérique à l’aide de l’API Java {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
-The following Java code example removes a digital signature from a signature field named *SignatureField1*. Le nom du fichier PDF qui contient le champ de signature est *LoanSigned.pdf*. (Voir [Suppression de signatures](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures)numériques.)
+L’exemple de code Java suivant supprime une signature numérique d’un champ de signature nommé *SignatureField1*. Le nom du fichier PDF qui contient le champ de signature est *LoanSigned.pdf*. (Voir [Suppression des signatures numériques](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 ```java
  /*
