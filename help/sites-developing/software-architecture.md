@@ -44,7 +44,7 @@ SOLID est un acronyme qui décrit cinq principes architecturaux qu’il convient
 
 Vous devez vous efforcer de respecter ces cinq principes pour élaborer un système offrant une stricte séparation des préoccupations.
 
-### Observation du principe de robustesse {#follow-the-robustness-principle}
+### Observation du principe de robustesse  {#follow-the-robustness-principle}
 
 Le principe de robustesse stipule qu’il faut être tolérant dans ce que l’on accepte, et pointilleux dans ce que l’on envoie. En d’autres termes, lors de l’envoi de messages à un tiers, il convient de respecter scrupuleusement les spécifications. Cependant, lors de la réception de messages envoyés par un tiers, on doit accepter des messages non conformes, pour autant que leur signification soit claire.
 
@@ -58,4 +58,4 @@ En règle générale, les scripts de migration de données, bien qu’il s’agi
 
 ### Respect des conventions Maven publiées dans les fichiers POM {#follow-published-maven-conventions-in-pom-files}
 
-Apache has published style conventions at [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). Il est conseillé de suivre ces conventions, dans la mesure où elles permettent une mise en route rapide de nouvelles ressources.
+Apache a publié des conventions de style à l’adresse [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). Il est conseillé de suivre ces conventions, dans la mesure où elles permettent une mise en route rapide de nouvelles ressources.
