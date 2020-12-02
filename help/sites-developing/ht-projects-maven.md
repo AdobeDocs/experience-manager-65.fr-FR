@@ -10,7 +10,7 @@ ht-degree: 32%
 ---
 
 
-# Création de projets AEM à l’aide d’Apache Maven {#how-to-build-aem-projects-using-apache-maven}
+# Création de projets AEM à l’aide d’Apache Maven  {#how-to-build-aem-projects-using-apache-maven}
 
 aem 6.5 respecte les meilleures pratiques en matière de gestion des paquets et de structure des projets, telles qu&#39;elles sont mises en oeuvre par le dernier AEM Project Archetype pour les mises en oeuvre sur site et AMS.
 
@@ -18,9 +18,9 @@ aem 6.5 respecte les meilleures pratiques en matière de gestion des paquets et 
 >
 >Pour plus de détails, voir :
 >
->* L&#39;article [AEM Project Structure](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) de l&#39;AEM en tant que documentation Cloud Service sur la façon de structurer les projets d&#39;AEM modernes.
->* La documentation [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) pour comment début d&#39;un nouveau projet AEM à l&#39;aide de l&#39;archétype.
->* L’article Plug-in [Maven pour le module de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) Adobe de l’AEM en tant que documentation Cloud Service sur la manière de déployer des applications AEM.
+>* L&#39;article [AEM Project Structure](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) de l&#39;AEM en tant que documentation Cloud Service sur la structure des projets d&#39;AEM modernes.
+>* La documentation [AEM Project Archetype](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html) explique comment début d&#39;un nouveau projet AEM à l&#39;aide de l&#39;archétype.
+>* L&#39;article [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) de l&#39;AEM en tant que documentation Cloud Service pour savoir comment déployer AEM applications.
 
 >
 >
