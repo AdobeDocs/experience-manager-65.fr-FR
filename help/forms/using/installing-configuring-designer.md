@@ -23,7 +23,7 @@ ht-degree: 83%
 
 ## Conditions préalables {#pre-requisites}
 
-AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
+Le programme d’installation d’AEM Forms Designer requiert la version 32 bits du [package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) et du [package d’exécution redistribuable Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
 
 ## Installer Designer {#install-designer}
 
@@ -38,6 +38,6 @@ Designer est disponible sous la forme d’un programme autonome et est égalemen
 1. Lancez le programme d’installation de Designer en cliquant deux fois sur setup.exe.
 1. Continuez et fournissez vos détails ainsi que le numéro de série dans la boîte de dialogue Personnalisation.
 1. Si vous acceptez les termes du contrat de licence, cliquez sur Suivant pour continuer.
-1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Suivant.
+1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Next (Suivant).
 1. Cliquez sur Précédent pour modifier les préférences. Pour installer Designer, cliquez sur Installer.
 1. Cliquez sur Terminer à la fin de l’installation.
