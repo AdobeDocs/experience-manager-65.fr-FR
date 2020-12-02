@@ -27,7 +27,7 @@ Vous pouvez configurer l’utilitaire de journalisation pour créer des journaux
 
 Effectuez les étapes suivantes pour configurer les journaux côté serveur :
 
-1. Accédez à `https://'[server]:[port]'/system/console/configMgr`. Locate and open the *Apace Sling logging logger configuration* option. Une boîte de dialogue s’affiche:
+1. Accédez à `https://'[server]:[port]'/system/console/configMgr`. Recherchez et ouvrez l’option *Apache Sling logging logger configuration*. Une boîte de dialogue s’affiche:
 
    ![ Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
 
@@ -41,7 +41,7 @@ Effectuez les étapes suivantes pour configurer les journaux côté serveur :
    >
    >Pour générer des journaux dans le répertoire de formulaires HTML5, ajoutez ../logs/ avant le nom de fichier.
 
-1. Modifiez **Logger** en **HTMLFormsPerfLogger**. Cliquez sur **Save**.
+1. Modifiez **Logger** en **HTMLFormsPerfLogger**. Cliquez sur **Enregistrer**.
 
 ## Configuration de la journalisation du client {#configuring-client-logging}
 
@@ -50,7 +50,7 @@ Vous pouvez utiliser les méthodes suivantes pour activer la journalisation côt
 * A l’aide du paramètre de requête nommé `log`
 * A l’aide de CQ Configuration Manager
 
-### Activation de la journalisation à l’aide du paramètre de requête {#enabling-logging-using-request-parameter}
+### Activation de la journalisation à l’aide du paramètre de requête  {#enabling-logging-using-request-parameter}
 
 Grâce à cette méthode, vous pouvez générer les journaux d’une requête particulière. Le nom du paramètre de requête est `log. L’URL du journal est la suivante :
 
@@ -81,7 +81,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
  </tbody>
 </table>
 
-#### Niveaux de journalisation {#log-levels}
+#### Niveaux de journalisation  {#log-levels}
 
 <table>
  <tbody>
@@ -99,7 +99,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
   </tr>
   <tr>
    <td>2</td>
-   <td>ERREUR<br type="_moz" /> </td>
+   <td>ERROR<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>3</td>
@@ -147,7 +147,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
  </tbody>
 </table>
 
-#### Configuration de la journalisation {#log-configuration}
+#### Configuration de la journalisation  {#log-configuration}
 
 Dans l’URL du journal, le paramètre de chaîne de requête de configuration de la journalisation est défini comme suit :
 
@@ -189,23 +189,23 @@ Si vous utilisez Configuration Manager pour activer la journalisation, des journ
 
 ## Téléchargement des journaux {#uploading-logs}
 
-Si la destination est définie sur 1, tous les messages du journal de script du client sont dirigés vers la console. Si un administrateur a besoin de ces journaux avec les journaux du serveur, définissez le niveau de destination sur 2. At this level, all logs are collected in a JS object on client side and if form is rendered with default Profile then a **Send Logs** button appears to the left of **Highlight Existing Fields** button in toolbar. Lorsque l’utilisateur clique sur le lien, tous les journaux collectés sont publiés sur le serveur et consignés dans le fichier journal des erreurs configuré sur le serveur.
+Si la destination est définie sur 1, tous les messages du journal de script du client sont dirigés vers la console. Si un administrateur a besoin de ces journaux avec les journaux du serveur, définissez le niveau de destination sur 2. À ce niveau, tous les journaux sont collectés dans un objet JS côté client et si le formulaire est généré avec le Profil par défaut, un bouton **Envoyer les journaux** apparaît à gauche du bouton **Mettre en surbrillance les champs existants** dans la barre d’outils. Lorsque l’utilisateur clique sur le lien, tous les journaux collectés sont publiés sur le serveur et consignés dans le fichier journal des erreurs configuré sur le serveur.
 
 Par défaut, toutes les informations sont ajoutées dans le fichier error.log du répertoire /crx-repository/logs/.
 
 Pour modifier l’emplacement et le nom du fichier journal :
 
-1. Connectez-vous à Configuration Manager en tant qu’administrateur. The default URL of Configuration Manager is `https://'[server]:[port]'/system/console/configMgr`.
+1. Connectez-vous à Configuration Manager en tant qu’administrateur. L’URL par défaut de Configuration Manager est `https://'[server]:[port]'/system/console/configMgr`.
 1. Cliquez sur **Configuration des journaux de journalisation Sling d’Apache** Une boîte de dialogue s’affiche.
 
    ![logconfig-1](assets/logconfig-1.png)
 
 1. Remplacez le **Niveau de journal** par Débogage.
 
-1. Specify path and name of the **Log File**.
+1. Spécifiez le chemin et le nom du **fichier journal**.
 
    >[!NOTE]
    >
    >Pour créer des journaux dans le répertoire où les autres fichiers journaux sont conservés, spécifiez ../logs/&lt;nom_fichier> dans la propriété Fichiers journaux.
 
-1. Change the **Logger** to **HTMLFormsPerfLogger** and click **Save**.
+1. Remplacez **Logger** par **HTMLFormsPerfLogger** et cliquez sur **Enregistrer**.
