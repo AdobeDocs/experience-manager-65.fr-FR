@@ -18,7 +18,7 @@ ht-degree: 88%
 ---
 
 
-# Configuration d’une page pour la modification en masse des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configuration d’une page pour la modification en masse des propriétés de page  {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 La [modification des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) vous permet de modifier les propriétés de plusieurs pages à la fois.
 
@@ -43,7 +43,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 
 >[!NOTE]
 >
->La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/metadata.md) You can customize the fields in the Bulk Metadata editor for Assets using the [Schema editor](/help/assets/metadata-schemas.md).
+>La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/metadata.md) Vous pouvez personnaliser les champs de l’éditeur de métadonnées en bloc pour les ressources à l’aide de l’[éditeur de Schéma](/help/assets/metadata-schemas.md).
 
 ## Activation d’un champ {#enabling-a-field}
 
@@ -72,7 +72,7 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
    >
    >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour plus d’informations, voir la [documentation relative aux composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html).
 
-1. Navigate to the required field within the `cq:dialog` definition.
+1. Accédez au champ requis dans la définition `cq:dialog`.
 1. Définissez la propriété suivante sur le nœud de champ :
 
    * **Nom** : `allowBulkEdit`
@@ -95,7 +95,7 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
    >
    >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   >    1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >    1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    >    1. Apportez les modifications désirées dans `/apps`
 
 
