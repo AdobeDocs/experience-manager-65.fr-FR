@@ -31,14 +31,14 @@ Le contenu est ajouté à l’aide de [composants](/help/sites-classic-ui-author
 >
 >En cas de problèmes, contactez votre administrateur système.
 
-## Sidekick {#sidekick}
+## Sidekick  {#sidekick}
 
 Le sidekick est un outil clé lors de la création de pages. Il est toujours visible (dans une fenêtre flottante) pendant la création d’une page.
 
 Plusieurs onglets et icônes sont disponibles, notamment :
 
 * Composants
-* Page  
+* Page 
 * Informations
 * Contrôle de version
 * Workflow
@@ -88,7 +88,7 @@ Pour insérer un nouveau composant :
 
 1. Insérez le composant de votre choix sur la page. Double-cliquez ensuite sur le paragraphe. Une fenêtre s’ouvre alors pour vous permettre de configurer votre paragraphe et d’ajouter du contenu.
 
-### Insertion d’un composant à l’aide de l’Outil de recherche de contenu {#inserting-a-component-using-the-content-finder}
+### Insertion d’un composant à l’aide de l’Outil de recherche de contenu  {#inserting-a-component-using-the-content-finder}
 
 Vous pouvez également ajouter un nouveau composant sur la page en faisant glisser un élément à partir de l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
@@ -115,7 +115,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
 1. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
 
-## Modification d’un composant (contenu et propriétés) {#editing-a-component-content-and-properties}
+## Modification d’un composant (contenu et propriétés)  {#editing-a-component-content-and-properties}
 
 Pour modifier un paragraphe existant, procédez comme suit :
 
@@ -206,7 +206,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Les [Annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages    {#previewing-pages}
+## Aperçu des pages     {#previewing-pages}
 
 Deux icônes disponibles dans la bordure inférieure du sidekick sont importantes pour afficher un aperçu des pages :
 
