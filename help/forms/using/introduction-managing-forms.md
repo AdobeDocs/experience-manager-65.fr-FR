@@ -18,11 +18,11 @@ ht-degree: 69%
 ---
 
 
-# Présentation de la gestion des formulaires {#introduction-to-managing-forms}
+# Présentation de la gestion des formulaires  {#introduction-to-managing-forms}
 
-AEM [!DNL Forms] provides simplified yet powerful user interface to create and manage forms, documents, themes, letters, document fragments, data dictionaries, and related assets. Cela leur permet de gérer le cycle de vie complet des formulaires, des documents et des ressources associées, depuis le bureau du développeur jusqu’à sa publication sur un serveur de portail pour les utilisateurs finaux. You can use the AEM [!DNL Forms] user interface to:
+aem [!DNL Forms] offre une interface utilisateur simplifiée mais puissante pour créer et gérer des formulaires, des documents, des thèmes, des lettres, des fragments de document, des dictionnaires de données et des ressources connexes. Cela leur permet de gérer le cycle de vie complet des formulaires, des documents et des ressources associées, depuis le bureau du développeur jusqu’à sa publication sur un serveur de portail pour les utilisateurs finaux. Vous pouvez utiliser l&#39;interface utilisateur AEM [!DNL Forms] pour :
 
-* Access AEM [!DNL Forms] components
+* Accéder aux composants [!DNL Forms] AEM
 * Accéder aux configurations AEM [!DNL Forms]
 
 >[!NOTE]
@@ -31,7 +31,7 @@ AEM [!DNL Forms] provides simplified yet powerful user interface to create and m
 
 ## Accéder aux composants AEM Forms {#access-aem-forms-components}
 
-Outre des options permettant de créer des formulaires, des documents et des ressources associées, AEM fournit des options qui permettent de créer des sites, des ressources, de gérer une instance AEM, etc. You can click the ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager logo to navigate to all the available tools. Outre des liens donnant accès aux consoles d’autres composants, il contient également des liens pour AEM [!DNL Forms]. To navigate to AEM [!DNL Forms], click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > navigation ![compass](assets/compass.png) > **[!UICONTROL Forms]**. Les liens des consoles suivantes sont affichés :
+Outre des options permettant de créer des formulaires, des documents et des ressources associées, AEM fournit des options qui permettent de créer des sites, des ressources, de gérer une instance AEM, etc. Vous pouvez cliquer sur le logo du Experience Manager ![adobeexperience emanager](assets/adobeexperiencemanager.png) pour accéder à tous les outils disponibles. Outre des liens donnant accès aux consoles d’autres composants, il contient également des liens pour AEM [!DNL Forms]. Pour accéder à AEM [!DNL Forms], cliquez sur le logo du Experience Manager ![adobeexperience emanager](assets/adobeexperiencemanager.png) > navigation ![comass](assets/compass.png) > **[!UICONTROL Forms]**. Les liens des consoles suivantes sont affichés :
 
 * Formulaires et documents
 * Thèmes
@@ -43,9 +43,9 @@ Outre des options permettant de créer des formulaires, des documents et des res
 
 ### Formulaires et documents  {#forms-documents}
 
-Formulaires et documents fournit des options permettant de créer une communication interactive, un formulaire adaptatif, un fragment de formulaire adaptatif et un ensemble de formulaires. Only for AEM [!DNL Forms] on JEE, Forms &amp; Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.
+Formulaires et documents fournit des options permettant de créer une communication interactive, un formulaire adaptatif, un fragment de formulaire adaptatif et un ensemble de formulaires. Uniquement pour l’AEM [!DNL Forms] sur JEE, Forms &amp; Documents offre une option permettant d’importer des fichiers à partir d’un enregistrement local et de synchroniser AEM ressources [!DNL Forms] avec Workbench.
 
-The create button is the starting point of the process of creating or uploading AEM [!DNL Forms] asset. Vous disposez des options de création suivantes :
+Le bouton de création est le point de départ du processus de création ou de téléchargement d’AEM [!DNL Forms] fichier. Vous disposez des options de création suivantes :
 
 * **Communication** interactive : Une communication interactive est une correspondance, un relevé ou un document numérique HTML personnalisé, interactif et compatible avec les périphériques. Réactives par nature, les communications interactives modifient automatiquement leur mise en forme et leur conception en fonction du périphérique et des paramètres de l’utilisateur. Pour en savoir plus, consultez la section [Aperçu des communications interactives](/help/forms/using/interactive-communications-overview.md)
 
@@ -62,22 +62,22 @@ The create button is the starting point of the process of creating or uploading 
 
    ![dossiers](assets/folders.png)
 
-   **A.** Dossier Général **B.** Dossier Forms Workflow
+   **Dossier A.** General,  **B.** Forms Workflow
 
 Le panneau Formulaires et document fournit également des options pour effectuer les actions suivantes :
 
 * **importer des fichiers à partir du stockage local :** vous pouvez importer des formulaires et des documents PDF, des modèles de formulaire (formulaires XFA) et d’autre ressources (schéma image et XML pour les fichiers XSD). Pour des instructions détaillées, voir [Importation et exportation des ressources dans AEM Forms](../../forms/using/import-export-forms-templates.md).
-* **synchroniser les ressources AEM Forms avec Workbench :** vous pouvez utiliser l’option Fichiers de Workbench pour synchroniser les ressources entre l’interface utilisateur d’AEM Forms et Workbench. It ensures all the assets are available in AEM [!DNL Forms] user interface and Workbench&#39;s crx-repository assets selection.
+* **synchroniser les ressources AEM Forms avec Workbench :** vous pouvez utiliser l’option Fichiers de Workbench pour synchroniser les ressources entre l’interface utilisateur d’AEM Forms et Workbench. Il s’assure que tous les actifs sont disponibles dans l’interface utilisateur AEM [!DNL Forms] et que Workbench sélectionne les actifs crx-repository.
 
 ### Thèmes  {#themes}
 
-Un thème contient des détails de style pour les composants et les panneaux. Les thèmes possèdent une identité indépendante. Ainsi, vous pouvez réutiliser un thème dans plusieurs formulaires adaptatifs. Vous pouvez définir des styles pour un composant ou modifier les propriétés CSS des différents composants utilisés dans l’ensemble de vos formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence et la taille. Vous pouvez enregistrer les personnalisations dans un thème et les déplacer sur les composants de votre formulaire sous la forme d’un paramètre prédéfini. Lorsque vous ajoutez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. With AEM 6.2 [!DNL Forms], you can create themes and apply them to your forms.
+Un thème contient des détails de style pour les composants et les panneaux. Les thèmes possèdent une identité indépendante. Ainsi, vous pouvez réutiliser un thème dans plusieurs formulaires adaptatifs. Vous pouvez définir des styles pour un composant ou modifier les propriétés CSS des différents composants utilisés dans l’ensemble de vos formulaires. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence et la taille. Vous pouvez enregistrer les personnalisations dans un thème et les déplacer sur les composants de votre formulaire sous la forme d’un paramètre prédéfini. Lorsque vous ajoutez un thème à votre formulaire, le style spécifié se reflète sur des composants correspondants de votre formulaire. Avec AEM 6.2 [!DNL Forms], vous pouvez créer des thèmes et les appliquer à vos formulaires.
 
 Pour plus d’informations sur la création et l’utilisation des thèmes, voir [Thèmes dans AEM Forms](../../forms/using/themes.md).
 
-### Lettres  {#letters}
+### Lettres   {#letters}
 
-An AEM [!DNL Forms] letter is a secure, personalized, and interactive correspondence. You can use AEM [!DNL Forms] to quickly assemble letters (also known as correspondences) from both pre-approved and custom-authored content in a streamlined process.
+Une lettre [!DNL Forms] AEM est une correspondance sécurisée, personnalisée et interactive. Vous pouvez utiliser AEM [!DNL Forms] pour assembler rapidement des lettres (également appelées correspondances) à partir de contenu préapprouvé et personnalisé dans le cadre d’un processus simplifié.
 
 Pour plus d’informations sur la création et l’utilisation de lettres, voir [Créer une lettre](../../forms/using/create-letter.md).
 
@@ -87,33 +87,33 @@ Les fragments de document sont des éléments ou composants réutilisables d’u
 
 ### Dictionnaires de données {#data-dictionaries}
 
-En règle générale, les utilisateurs professionnels n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions. AEM [!DNL Forms] uses data dictionary that enables business users to use information from back-end data sources without knowing technical details about their underlying data models.
+En règle générale, les utilisateurs professionnels n’ont pas besoin de connaître les représentations de métadonnées telles que le schéma XSD (schéma XML) et les classes Java. Cependant, ils ont le plus souvent besoin de l’accès à ces structures de données et à leurs attributs dans le but de créer des solutions. aem [!DNL Forms] utilise un dictionnaire de données qui permet aux utilisateurs professionnels d’utiliser des informations provenant de sources de données dorsales sans connaître les détails techniques de leurs modèles de données sous-jacents.
 
 Pour plus d’informations sur la création et l’utilisation de dictionnaires de données, voir l’article [Créer un dictionnaire de données](../../forms/using/data-dictionary.md).
 
-## Accessing AEM [!DNL Forms] Configurations {#accessing-aem-forms-configurations}
+## Accès à AEM [!DNL Forms] Configurations {#accessing-aem-forms-configurations}
 
-Le panneau d’outils AEM contient des outils pour divers composants. To navigate to AEM Forms-specific tools, click the Experience Manager logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > tools ![hammer](assets/hammer.png) > **[!UICONTROL Forms]**. Les outils affichés permettent d’effectuer les opérations suivantes :
+Le panneau d’outils AEM contient des outils pour divers composants. Pour accéder aux outils spécifiques à AEM Forms, cliquez sur le logo du Experience Manager ![adobeexperience emanager](assets/adobeexperiencemanager.png) > outils ![marteau](assets/hammer.png) > **[!UICONTROL Forms]**. Les outils affichés permettent d’effectuer les opérations suivantes :
 
 * **Configurer le dossier de contrôle :** un administrateur peut configurer un dossier réseau, appelé dossier de contrôle, de sorte que lorsqu’un utilisateur y place un fichier (par exemple un fichier PDF), une opération pré-configurée est lancée et manipule le fichier. Pour de plus amples informations, voir [Créer et configurer un dossier de contrôle](/help/forms/using/creating-configure-watched-folder.md).
-* **Configuration du service hors ligne de l’application Forms :** Le service hors ligne de l’AEMapplication met en cache les chemins ou URL des ressources utilisées dans un formulaire. [!DNL Forms] La mise en cache des chemins ou des URL des ressources utilisées dans un formulaire améliore les performances côté serveur. To configure the server-side offline component of AEM Forms app, see [Working in the offline mode](/help/forms/using/work-offline-mode.md).
+* **Configuration du service hors ligne de l’application Forms :** le service hors ligne de l’ [!DNL Forms] application AEM met en cache les chemins ou les URL des ressources utilisées dans un formulaire. La mise en cache des chemins ou des URL des ressources utilisées dans un formulaire améliore les performances côté serveur. Pour configurer le composant hors ligne côté serveur de l’application AEM Forms, voir [Utilisation en mode hors ligne](/help/forms/using/work-offline-mode.md).
 
    ![Outils AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configurer PDF Generator :**[!DNL Forms] un administrateur peut configurer les paramètres PDF AEM , ajouter des comptes utilisateur, et importer ou exporter la configuration dans PDF Generator.
-* **Publier les actifs de gestion de correspondance :**[!DNL Forms] AEM  permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance d’auteur simultanément. Les éléments publiés comportent tous les actifs de Correspondence Management et dépendances connexes. For detailed information, see [Publishing and unpublishing forms &amp; documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Publier les actifs de gestion de correspondance :**[!DNL Forms] AEM  permet de publier l’ensemble des lettres, des fragments de document et des dictionnaires de données et les dépendances associées d’une instance d’auteur simultanément. Les éléments publiés comportent tous les actifs de Correspondence Management et dépendances connexes. Pour plus d’informations, voir [Publication et annulation de publication de formulaires et de documents](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **Exporter les actifs de gestion de correspondance :**[!DNL Forms] vous pouvez télécharger tous les actifs Correspondence Management et les dépendances connexes sous la forme d’un package depuis une instance AEM  Pour la procédure détaillée, voir [Importation et exportation des actifs dans AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## Éléments courants de l’interface utilisateur {#commonelements}
 
-* **Rail de gauche :** Vous pouvez cliquer sur l’icône de rail de gauche ![rail-ftpng](assets/railleftpng.png) pour afficher les fonctionnalités Chronologie et Références de AEM [!DNL Forms].
+* **Rail de gauche :** vous pouvez cliquer sur l’icône de rail de gauche  ![](assets/railleftpng.png) rail ftpngpour afficher les fonctionnalités Chronologie et Références de l’AEM  [!DNL Forms].
 
    * **Montage :** vous pouvez ajouter et afficher un commentaire sur un actif qui est disponible à des fins d’examen dans le montage. Pour des instructions détaillées, voir [Création et gestion de révisions des actifs d’un formulaire](../../forms/using/create-reviews-forms.md).
    * **Références :**[!DNL Forms] un actif AEM peut être utilisé dans plusieurs actifs AEM [!DNL Forms] Par exemple, un fragment de document peut être utilisé dans plusieurs lettres. Les références sont une liste des actifs (d’autres formulaires ou ressources) dans lesquels l’actif sélectionné est utilisé et également la liste des autres actifs que l’actif sélectionné utilise.
 
 * **Chemins de navigation :** un chemin de navigation représente le titre de la console ou du dossier actif. Vous pouvez cliquer sur l’option Chemin de navigation pour naviguer entre le niveau des dossiers qui sont plus élevés dans la hiérarchie.
-* **Commutateur de vue :** Vous pouvez cliquer sur la ![liste](assets/viewlist.png) d’affichage de l’icône de permutation de Vues ou sur la carte de ![visionneuse](assets/viewcard.png) pour basculer rapidement entre la vue de la liste et celle de la carte. Pour plus d’informations sur les composants d’interface utilisateur courants, voir [Création](/help/sites-authoring/author.md).
-* **Rechercher :** L&#39;option de recherche ![de la recherche](assets/search.png) permet de trouver rapidement le contenu et les outils dont vous avez besoin et d&#39;y accéder rapidement. Type the name of content or product capability and select from the suggestions, for example, type &quot;Documents&quot; to quickly find and navigate to **[!UICONTROL Forms &amp; Documents]** or Document Fragments console. Pour plus de détails sur la recherche, voir l’article sur la [recherche](/help/sites-authoring/search.md) AEM 6.2.
+* **Navigateur de vues :** vous pouvez cliquer sur l’icône de permutation de Vues  ![](assets/viewlist.png) de la visionneuse de liste  ![](assets/viewcard.png) de visionneuses pour basculer rapidement entre la liste et la vue de cartes. Pour plus d’informations sur les composants d’interface utilisateur courants, voir [Création](/help/sites-authoring/author.md).
+* **Recherche :** l&#39;option de recherche  ![](assets/search.png) recherche permet de rechercher rapidement le contenu et les outils dont vous avez besoin et d&#39;y accéder. Tapez le nom du contenu ou de la fonctionnalité du produit et sélectionnez une option parmi les suggestions, par exemple, tapez &quot;Documents&quot; pour rechercher rapidement **[!UICONTROL Forms &amp; Documents]** ou la console Fragments de Document. Pour plus de détails sur la recherche, voir l’article sur la [recherche](/help/sites-authoring/search.md) AEM 6.2.
 
 * **Barre d’outils Actions** : lors de la sélection d’un actif, la barre d’outils des actions s’affiche au-dessus de la liste des actifs. Elle contient tous les outils de gestion pour l’actif sélectionné. Vous pouvez placer votre curseur sur l’icône d’outil pour afficher l’info-bulle qui en décrit la fonctionnalité
 
