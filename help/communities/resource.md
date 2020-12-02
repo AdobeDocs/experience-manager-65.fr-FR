@@ -25,15 +25,15 @@ ht-degree: 7%
 Pour ajouter une ressource d’activation au nouveau site de la communauté :
 
 * Connectez-vous en tant qu’administrateur système sur l’instance d’auteur :
-   * For example, [http://localhost:4502/](http://localhost:4503/)
-* Dans la navigation globale, sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Ressources.]**
+   * Par exemple, [http://localhost:4502/](http://localhost:4503/)
+* Dans la navigation globale, sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Ressources]**
 
    ![resources](assets/resources.png)
 
    ![activation-ressource](assets/enablement-resource.png)
 * Sélectionnez le site de la communauté sur lequel les ressources d&#39;activation sont ajoutées :
-   * Sélectionnez **[!UICONTROL Activer le didacticiel]**.
-* From the menu, select **[!UICONTROL Create]**.
+   * Sélectionnez **[!UICONTROL Didacticiel d’activation]**.
+* Dans le menu, sélectionnez **[!UICONTROL Créer]**.
 * Sélectionnez **[!UICONTROL Ressource]**.
 
 ![create-resource](assets/create-enablement-resource.png)
@@ -46,7 +46,7 @@ Renseignez les informations de base de la ressource :
 
    Définissez sur le nom du site communautaire sélectionné : Didacticiel d’activation
 
-* **[!UICONTROL Resource Name&amp;ast;]**
+* **[!UICONTROL Nom et diffusion de la ressource ;]**
 
    Leçon de ski 1
 
@@ -56,7 +56,7 @@ Renseignez les informations de base de la ressource :
 
 * **[!UICONTROL Afficher dans le catalogue]**
 
-   Définissez-la sur **Activé**.
+   Définissez-la sur **On**.
 
 * **[!UICONTROL Description]**
 
@@ -74,7 +74,7 @@ Renseignez les informations de base de la ressource :
 
 Bien qu&#39;il semble que plusieurs ressources puissent être sélectionnées, une seule est autorisée.
 
-Sélectionnez la ressource `'+' icon`, dans le coin supérieur droit, pour commencer le processus de sélection de la ressource en identifiant la source.
+Sélectionnez `'+' icon`, dans le coin supérieur droit, pour commencer le processus de sélection de la ressource en identifiant la source.
 
 ![ajouter du contenu](assets/add-content.png)
 
@@ -94,21 +94,21 @@ Téléchargez une ressource. Si une ressource vidéo, téléchargez une image pe
 
 * **[!UICONTROL Échéance]**
 
-   *(Facultatif)* Une date à laquelle l&#39;affectation doit être terminée peut être sélectionnée.
+   *(Facultatif)* Une date de fin de l&#39;affectation peut être sélectionnée.
 
 * **[!UICONTROL Auteur de la ressource]**
 
    *(Facultatif)* Laissez ce champ vide.
 
-* **[!UICONTROL Resource Contact&amp;amp ; ast;]**
+* **[!UICONTROL Contact&amp;ast de la ressource ;]**
 
-   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner le membre `Quinn Harper`.
+   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner un membre  `Quinn Harper`.
 
 * **[!UICONTROL Expert de la ressource]**
 
    *(Facultatif)* Laissez ce champ vide.
 
-   **Remarque**: Si les utilisateurs ou les groupes ne sont pas visibles, vérifiez qu’ils ont été ajoutés au `Community Enable Members` groupe et *enregistrés* sur l’instance de publication.
+   **Remarque** : Si les utilisateurs ou les groupes ne sont pas visibles, vérifiez qu’ils ont été ajoutés au  `Community Enable Members` groupe et  ** enregistrés sur l’instance de publication.
 
    ![activation-paramètres](assets/enablement-settings.png)
 
@@ -130,11 +130,11 @@ La création réussie de la Ressource retourne à la console Ressources avec la 
 
 Pour télécharger une nouvelle version de la ressource d&#39;activation, il est recommandé de créer une nouvelle ressource, puis d&#39;annuler l&#39;inscription des membres de l&#39;ancienne version et de les inscrire dans la nouvelle version.
 
-### Publication de la ressource {#publish-the-resource}
+### Publier la ressource {#publish-the-resource}
 
 Pour que les inscrits puissent voir les ressources affectées, elles doivent être publiées :
 
-* Sélectionner l’ `Publish` icône mondiale
+* Sélectionner l&#39;icône `Publish` mondiale
 
 L’Activation est confirmée par un message de réussite :
 
@@ -146,7 +146,7 @@ Répétez les étapes ci-dessus pour créer et publier une seconde ressource d�
 
 ![ressource ajoutée](assets/add-resource.png)
 
-**Publiez** la seconde ressource.
+**** Publier la seconde ressource.
 
 Revenez à la liste des ressources du didacticiel d&#39;activation.
 
@@ -159,11 +159,11 @@ Revenez à la liste des ressources du didacticiel d&#39;activation.
 Un parcours d&#39;apprentissage est un regroupement logique de ressources d&#39;activation qui forment un cours.
 
 * Dans la console Ressources, sélectionnez `+ Create`
-* Select **[!UICONTROL Learning Path]**
+* Sélectionner **[!UICONTROL Chemin d&#39;apprentissage]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-Ajoutez les informations **** de base :
+Ajoutez **[!UICONTROL Informations de base]** :
 
 * **[!UICONTROL Nom du cursus de formation]**
 
@@ -193,7 +193,7 @@ Dans le panneau Ajouter les ressources :
 
 * Sélectionnez `+ Add Resources` pour sélectionner les 2 ressources de ski lessions à ajouter au parcours d&#39;apprentissage.
 
-   Remarque : Seules les ressources **publiées** peuvent être sélectionnées.
+   Remarque : Seules les ressources **publiées** seront sélectionnables.
 
 >[!NOTE]
 >
@@ -211,11 +211,11 @@ Dans le panneau Ajouter les ressources :
 
 * **[!UICONTROL Ajouter des cessionnaires]**
 
-   Utilisez le menu déroulant pour sélectionner le `Community Ski Class` groupe, qui doit inclure des membres `Riley Taylor` et `Sidney Croft.`
+   Utilisez le menu déroulant pour sélectionner le groupe `Community Ski Class`, qui doit inclure les membres `Riley Taylor` et `Sidney Croft.`.
 
-* **[!UICONTROL Learning Path Contact&amp;amp ; ast ;]**
+* **[!UICONTROL Contact&amp;ast du parcours d&#39;apprentissage ;]**
 
-   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner le membre `Quinn Harper`.
+   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner un membre  `Quinn Harper`.
 
 * Sélectionnez **[!UICONTROL Créer]**.
 
@@ -223,5 +223,5 @@ Dans le panneau Ajouter les ressources :
 
 La création réussie du chemin d’apprentissage revient à la console Ressources avec le nouveau chemin d’apprentissage sélectionné. A partir de cette console, il est possible de publier, d’ajouter des apprenants et de modifier d’autres paramètres.
 
-**Publiez** le chemin d’apprentissage.
+**** Publiez le chemin d’apprentissage.
 
