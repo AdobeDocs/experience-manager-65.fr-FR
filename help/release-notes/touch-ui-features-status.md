@@ -1,26 +1,26 @@
 ---
 title: État des fonctionnalités de l’IU tactile
-description: Notes de mise à jour spécifiques [!DNL Adobe Experience Manager] à l’interface utilisateur tactile.
+description: Notes de mise à jour spécifiques à  [!DNL Adobe Experience Manager] IU tactile.
 translation-type: tm+mt
 source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 49%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # État des fonctionnalités de l’IU tactile {#touch-ui-feature-status}
 
-aem version 6.4 ou ultérieure de l’interface utilisateur [classique est obsolète](../release-notes/deprecated-removed-features.md). L’Adobe n’apporte pas d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
+aem version 6.4 ou ultérieure [L’interface utilisateur classique est obsolète](../release-notes/deprecated-removed-features.md). L’Adobe n’apporte pas d’autres améliorations à l’interface utilisateur classique et les utilisateurs sont invités à tirer parti des nouvelles fonctionnalités puissantes disponibles dans l’interface utilisateur tactile.
 
-Starting with version 6.0, AEM introduced a new user interface referred as the &quot;touch-enabled UI&quot; (simply called &quot;Touch UI&quot;) that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. Avec la quasi parité des fonctionnalités atteinte, cette interface est devenue l’interface standard en AEM avec l’interface héritée et orientée sur les ordinateurs de bureau, appelée &quot;interface utilisateur classique&quot;.
+À partir de la version 6.0, AEM a introduit une nouvelle interface utilisateur appelée &quot;interface utilisateur tactile&quot; (simplement appelée &quot;interface utilisateur tactile&quot;) qui est alignée sur [!DNL Adobe Experience Cloud] et sur les directives générales relatives à l’interface utilisateur de l’Adobe. Avec la quasi parité des fonctionnalités atteinte, cette interface est devenue l’interface standard en AEM avec l’interface héritée et orientée sur les ordinateurs de bureau, appelée &quot;interface utilisateur classique&quot;.
 
 Bien que la plupart des fonctionnalités soient déjà présentes dans l’interface utilisateur optimisée pour les écrans tactiles, il en reste certaines à intégrer, qui le seront dans les prochaines mises à jour.
 
 La liste suivante présente l&#39;état actuel des capacités mises en oeuvre dans l&#39;AEM 6.5.
 
-For recommendations for customers that upgrade to AEM 6.5, see [User interface recommendations for customers](/help/sites-deploying/ui-recommendations.md).
+Pour obtenir des recommandations pour les clients qui effectuent la mise à niveau vers AEM 6.5, voir [Recommandations relatives à l’interface utilisateur pour les clients](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -32,19 +32,19 @@ For recommendations for customers that upgrade to AEM 6.5, see [User interface r
 
 ## Légende {#legend}
 
-* **Terminé**: Cette fonction est entièrement disponible dans l’interface utilisateur tactile.
-* **Principalement**: Cette fonction est principalement disponible dans l’interface utilisateur tactile.
+* **Terminé** : Cette fonction est entièrement disponible dans l’interface utilisateur tactile.
+* **Principalement** : Cette fonction est principalement disponible dans l’interface utilisateur tactile.
 * **Absente :** la fonctionnalité n’est pas disponible dans l’IU optimisée pour les écrans tactiles. L’IU classique doit être utilisée pour exécuter cette action.
 * **Remplacée :** la fonctionnalité a été remplacée par une nouvelle implémentation qui fonctionne différemment.
 * **Supprimée :** la fonctionnalité n’existe plus dans l’IU optimisée pour les écrans tactiles et elle ne sera pas remplacée.
 
 ## État des fonctionnalités : Administration de sites {#feature-status-sites-admin}
 
-This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and the status in the touch-enabled UI (`/sites.html`).
+Il s’agit d’une liste de fonctionnalités dont dispose l’administrateur classique du site de l’interface utilisateur (`/siteadmin`) et de l’état dans l’interface utilisateur tactile (`/sites.html`).
 
 | Fonctionnalité | État | Commentaire |
 |--- |--- |--- |
-| Navigation dans l’arborescence du site | Terminer | aem 6.4 a introduit une vue [d&#39;arborescence de](/help/sites-authoring/basic-handling.md#content-tree)contenu. |
+| Navigation dans l’arborescence du site | Terminer | aem 6.4 a introduit une vue d&#39;arborescence de contenu [](/help/sites-authoring/basic-handling.md#content-tree). |
 | Démarrer le worfklow | Terminer |  |
 | Créer une page | Complète |  |
 | Créer un site | Complète |  |
@@ -78,7 +78,7 @@ This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and 
 
 ## État des fonctionnalités : éditeur de page {#feature-status-page-editor}
 
-This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the status in the touch-enabled (`/editor.html`).
+Il s’agit d’une liste de fonctionnalités que possède l’éditeur de page classique de l’interface utilisateur (`/cf#`) et de l’état dans l’application tactile (`/editor.html`).
 
 | Fonctionnalité | État | Commentaire |
 |--- |--- |--- |
@@ -106,7 +106,7 @@ This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the s
 | Copie de la page | Supprimé | Utilisez Administration de sites pour [copier les pages](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
 | Déplacer la page | Supprimé | Utilisez Administration de sites pour [déplacer les pages](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | Supprimer la page | Supprimé | Utilisez Administration de sites pour [supprimer les pages](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| Afficher les références | Supprimé | Use Site Admin to see the [detailed reference list](/help/sites-authoring/author-environment-tools.md#references). |
+| Afficher les références | Supprimé | Utilisez l’administrateur du site pour afficher la [liste de référence détaillée](/help/sites-authoring/author-environment-tools.md#references). |
 | Journal d’audit | Supprimé | Utilisez Administration de sites et [ouvrez le rail d’activité](/help/sites-authoring/author-environment-tools.md#events-timeline). |
 | Créer la version | Supprimé | Utilisez Administration de sites pour [créer de nouvelles versions](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
 | Restaurer la version | Supprimé | Utilisez Administration de sites pour [restaurer des versions ](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
@@ -130,7 +130,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
 | Fonctionnalité | État | Commentaire |
 |--- |--- |--- |
 | Éditeur de texte enrichi | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
-| Activation/désactivation des modules externes RTE | Terminer | Vous pouvez utiliser l’éditeur [de](/help/sites-authoring/templates.md)modèles. |
+| Activation/désactivation des modules externes RTE | Terminer | Vous pouvez utiliser l&#39;[éditeur de modèles](/help/sites-authoring/templates.md). |
 | Utiliser RTE pour le texte brut | Terminer |  |
 | Module externe RTE : Liens et ancre | Terminer |  |
 | Module externe RTE : Zone cliquable | Terminer |  |
@@ -151,7 +151,7 @@ Il s’agit d’une liste des fonctionnalités de l’interface utilisateur clas
 | Editeur de tableau | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
 | Faire glisser l’image dans la cellule du tableau | Terminer | Utilisation en ligne |
 | Éditeur d’image | Terminer | Cette option est utilisable en place, dans la boîte de dialogue et en plein écran. |
-| Activation/désactivation des modules externes IPE | Terminer | aem 6.3 a introduit une interface utilisateur dans l’éditeur [de](/help/sites-authoring/templates.md)modèles. |
+| Activation/désactivation des modules externes IPE | Terminer | aem 6.3 a introduit une interface utilisateur dans l&#39;[éditeur de modèles](/help/sites-authoring/templates.md). |
 | Module externe IPE : Recadrer | Terminer |  |
 | Module externe IPE : Retourner | Terminer |  |
 | Module externe IPE : Annuler/Rétablir | Terminer |  |
@@ -175,5 +175,5 @@ La liste ci-dessous répertorie divers outils proposés dans l’IU classique et
 | IU des utilisateurs, groupes et autorisations | Principalement terminé | Pour modifier des autorisations avancées, utilisez l’interface utilisateur classique. |
 | Purger des versions (`/etc/versioning/purge.html`) | Absente | Utiliser l’IU classique. |
 | Vérificateur de lien externe (`/etc/linkchecker.html`) | Absente | Utiliser l’IU classique. |
-| Editeur en bloc (`/etc/importers/bulkeditor.html`) | Absente | Utiliser l’IU classique. |
+| Éditeur en bloc (`/etc/importers/bulkeditor.html`) | Absente | Utiliser l’IU classique. |
 | Télécharger des miniatures pour les ajouter ou les remplacer | Absente | Utiliser l’IU classique. |
