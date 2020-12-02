@@ -19,7 +19,7 @@ ht-degree: 82%
 ---
 
 
-# Création de rapports {#reporting}
+# Création de rapports  {#reporting}
 
 Pour vous aider à analyser et surveiller l’état de votre instance, AEM propose une sélection de rapports par défaut, qui peuvent être configurés en fonction de vos besoins :
 
@@ -40,7 +40,7 @@ De nouvelles instances d’un rapport peuvent également être créées à parti
 >
 >Outre les rapports AEM standard disponibles clé en main, vous pouvez [développer vos propres rapports (entièrement nouveaux)](/help/sites-developing/dev-reports.md).
 
-## Principes de base de la personnalisation des rapports {#the-basics-of-report-customization}
+## Principes de base de la personnalisation des rapports  {#the-basics-of-report-customization}
 
 Divers formats de rapport sont disponibles. Les rapports suivants utilisent tous des colonnes qui peuvent être personnalisées comme indiqué dans les sections suivantes :
 
@@ -63,7 +63,7 @@ Divers formats de rapport sont disponibles. Les rapports suivants utilisent tous
 >
 Les procédures suivantes concernant la configuration de colonne ne sont donc pas appropriées. Voir la description des différents rapports pour en connaître les détails.
 
-### Sélection et positionnement des colonnes de données {#selecting-and-positioning-the-data-columns}
+### Sélection et positionnement des colonnes de données  {#selecting-and-positioning-the-data-columns}
 
 Vous pouvez ajouter des colonnes, les repositionner ou les supprimer à partir de n’importe lequel des rapports, standard ou personnalisés.
 
@@ -79,7 +79,7 @@ Pour modifier la sélection de données :
 * Pour déplacer une colonne, cliquez sur l’en-tête, puis faites-le glisser vers la nouvelle position.
 * Pour supprimer une colonne, cliquez sur le titre de la colonne, faites-le glisser et déposez-le sur la zone d’en-tête de rapport (un signe moins rouge indique que la position est valide). Relâchez le bouton de la souris, et la boîte de dialogue Supprimer le(s) composant(s) vous demande de confirmer que vous souhaitez vraiment supprimer la colonne.
 
-### Menu déroulant de colonne {#column-drop-down-menu}
+### Menu déroulant de colonne  {#column-drop-down-menu}
 
 Chaque colonne du rapport comprend un menu déroulant. Ce menu apparaît lorsque le curseur de la souris se trouve au-dessus de la cellule du titre de colonne.
 
@@ -96,7 +96,7 @@ Les données peuvent être triées selon une colonne en procédant comme suit, a
 * Cliquez sur l’en-tête de colonne voulu. Le tri bascule entre l’ordre croissant et décroissant, indiqué par une flèche immédiatement en regard du texte de titre.
 * Utilisez le [menu déroulant de la colonne](#column-drop-down-menu) pour sélectionner spécifiquement **Trier par ordre croissant** ou **Trier par ordre décroissant**. De même, cette option est indiquée par une flèche immédiatement en regard du texte du titre.
 
-### Groupes et graphique des données actuelles {#groups-and-the-current-data-chart}
+### Groupes et graphique des données actuelles  {#groups-and-the-current-data-chart}
 
 Sur les colonnes appropriées, vous pouvez sélectionner **Groupe par cette colonne** dans le [menu déroulant de la colonne](#column-drop-down-menu). Ceci a pour effet de regrouper les données selon chaque valeur distincte dans cette colonne. Vous pouvez sélectionner plusieurs colonnes à regrouper. Cette option est grisée lorsque les données de la colonne ne sont pas appropriées : chaque entrée est distincte et unique et aucun groupe ne peut donc être formé. Par exemple, la colonne ID de l’utilisateur du rapport d’utilisateur.
 
@@ -110,7 +110,7 @@ Placez le pointeur de la souris au-dessus du diagramme circulaire pour afficher 
 
 Sur les colonnes appropriées, vous pouvez également configurer des **Paramètres du filtre** et/ou des **Agrégats** dans le [menu déroulant de la colonne](#column-drop-down-menu).
 
-#### Filtres {#filters}
+#### Filtres  {#filters}
 
 Les paramètres de filtre vous permettent de spécifier les critères des entrées à afficher. Les opérateurs disponibles sont :
 
@@ -130,7 +130,7 @@ Pour désactiver le filtre :
 1. Supprimez le texte du filtre.
 1. Cliquez sur **Appliquer**.
 
-#### Agrégats {#aggregates}
+#### Agrégats  {#aggregates}
 
 Vous pouvez également sélectionner une méthode d’agrégation (elle peut varier en fonction de la colonne sélectionnée) :
 
@@ -173,8 +173,8 @@ Une fois la collecte de données commencée, vous pouvez sélectionner les optio
 
     Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
 
-   * If the interval is set to `Day`, each snapshot is shown as a single value in the chart.
-   * If the interval is set to `Month`, all snapshots for February are aggregated into a single value (displayed as a single &quot;dot&quot; in the chart).
+   * Si l&#39;intervalle est défini sur `Day`, chaque instantané est présenté comme une valeur unique dans le graphique.
+   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont agrégés en une seule valeur (affichés sous la forme d’un &quot;point&quot; unique dans le graphique).
 
 Faites vos choix selon vos besoins, puis cliquez sur **Aller** pour les appliquer au rapport. Pour mettre à jour l’affichage après la création d’autres instantanés, cliquez de nouveau sur **OK**.
 
@@ -192,14 +192,14 @@ Lorsque des instantanés sont en cours de collecte, vous pouvez :
 
 >[!NOTE]
 >
->Snapshots are stored under `/var/reports/...` where the remainder of the path mirrors the path of the respective report and ID created when the report was finished.
+>Les instantanés sont stockés sous `/var/reports/...` où le reste du chemin reflète le chemin d&#39;accès du rapport et de l&#39;identifiant respectifs créés lorsque le rapport est terminé.
 >
 >
 >Les anciens instantanés peuvent être manuellement purgés, si vous êtes absolument certain de ne plus en avoir besoin.
 
 >[!NOTE]
 >
->Les rapports préconfigurés n&#39;exigent pas beaucoup de performances, mais il est toujours recommandé d&#39;utiliser des instantanés quotidiens sur un environnement de production. If possible run these daily snapshots at a time of day when there is not much activity on your website; this can be defined with the `Daily snapshots (repconf.hourofday)` parameter for **Day CQ Reporting Configuration**; see [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) for more details on how to configure this.
+>Les rapports préconfigurés n&#39;exigent pas beaucoup de performances, mais il est toujours recommandé d&#39;utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à une heure où l&#39;activité sur votre site Web est faible ; cela peut être défini avec le paramètre `Daily snapshots (repconf.hourofday)` pour **Configuration du Rapports Day CQ**; voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d&#39;informations sur la façon de configurer ceci.
 
 #### Limites d’affichage {#display-limits}
 
@@ -244,7 +244,7 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
    Vous pouvez définir votre propre description.
 
-* **Chemin** racine (*principal uniquement pour certains rapports*)
+* **Chemin**  racine (*principal uniquement pour certains rapports*)
 
    Utilisez cette option pour limiter le rapport à une sous-section du référentiel.
 
@@ -280,7 +280,7 @@ Choisir d’actualiser manuellement les données signifie que :
 
 1. Si vous souhaitez réafficher les données du rapport, vous devez cliquer sur **Charger les données** pour recharger les données.
 
-### Terminer (rapport) {#finish-report}
+### Terminer (rapport)  {#finish-report}
 
 Lorsque vous avez **terminé** le rapport :
 
@@ -304,7 +304,7 @@ Le rapport de composants fournit des informations sur la façon dont votre site 
 * Chemin de composant
 * Type de composant
 * Dernière modification
-* Page  
+* Page 
 
 Signifient que vous pouvez voir, par exemple :
 
@@ -321,7 +321,7 @@ Signifient que vous pouvez voir, par exemple :
 
 Tous les composants sont inclus, ceux standard produit comme ceux spécifiques aux projets. Avec la boîte de dialogue **Modifier**, l’utilisateur peut également définir un **Chemin racine** qui définit le point de départ du rapport. Tous les composants sous cette racine sont pris en compte pour le rapport.
 
-![reportcomponent](assets/reportcomponent.png) ![reportcompent](assets/reportcompentall.png)
+![](assets/reportcomponent.png) ![reportcomponent entreportcompentall](assets/reportcompentall.png)
 
 ### Utilisation du disque {#disk-usage}
 
@@ -356,7 +356,7 @@ Pour générer le rapport, vous pouvez spécifier :
 
    Nombre maximal de demandes à analyser.
 
-   Default: `-1` (all)
+   Par défaut : `-1` (tous)
 
 * **Adresse électronique**
 
@@ -378,7 +378,7 @@ Le rapport d’activité de la page répertorie les pages et les actions effectu
 
 [Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
 
-* Page  
+* Page 
 * Heure
 * Type
 * User
@@ -391,7 +391,7 @@ Signifie que vous pouvez surveiller :
 * Les pages les plus/moins fréquemment modifiées
 * Les utilisateurs les plus/moins actifs
 
-Le rapport d’activité de la page récupère toutes ses informations dans le journal d’audit. By default the root path is configured to the audit log at `/var/audit/com.day.cq.wcm.core.page`.
+Le rapport d’activité de la page récupère toutes ses informations dans le journal d’audit. Par défaut, le chemin d&#39;accès racine est configuré sur le journal d&#39;audit à `/var/audit/com.day.cq.wcm.core.page`.
 
 ![reportpageactivité](assets/reportpageactivity.png)
 
@@ -403,7 +403,7 @@ Ce rapport fournit des informations sur le contenu généré par l’utilisateur
 
 * Date
 * Adresse IP
-* Page  
+* Page 
 * Référent
 * Type
 * Identifiant de l’utilisateur
@@ -466,17 +466,17 @@ Dans l’onglet **Définitions**, vous pouvez définir :
 
 * **Chemin**
 
-   Usually the property is taken from the `profile`.
+   En règle générale, la propriété est prise à partir de `profile`.
 
 * **Type**
 
-   Sélectionnez le type de champ `String`, `Number`, `Integer`, `Date`.
+   Sélectionnez le type de champ à partir de `String`, `Number`, `Integer`, `Date`.
 
 * **Agrégat par défaut**
 
-   Ceci définit l&#39;agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l’agrégat requis dans `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Ceci définit l&#39;agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l&#39;agrégat requis à partir de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   For example, *Count* for a `String` field means that the number of distinct `String` values is displayed for the column in the aggregated state.
+   Par exemple, *Count* pour un champ `String` signifie que le nombre de valeurs `String` distinctes est affiché pour la colonne à l’état agrégé.
 
 Dans l’onglet **Étendu**, vous pouvez également définir les agrégats et les filtres disponibles :
 
@@ -532,7 +532,7 @@ Puisqu’aucune configuration de rapport n’est autorisée dans l’environneme
 
 >[!CAUTION]
 >
->Access to these reports may be a security issue; therefore we recommend you configure the Dispatcher so that `/etc/reports` is not available to external visitors. Voir la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
+>L&#39;accès à ces rapports peut poser un problème de sécurité; par conséquent, nous vous recommandons de configurer le répartiteur de sorte que `/etc/reports` ne soit pas disponible pour les visiteurs externes. Voir la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
 
 ## Autorisations requises pour exécuter des rapports {#permissions-needed-for-running-reports}
 
@@ -563,4 +563,4 @@ Dans une installation AEM standard, les autorisations suivantes sont prédéfini
 
    `workflow-users` - lecture et écriture
 
-All members of the `administrators` group have the necessary rights to create new reports.
+Tous les membres du groupe `administrators` ont les droits nécessaires pour créer de nouveaux rapports.
