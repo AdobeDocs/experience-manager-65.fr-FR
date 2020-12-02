@@ -43,7 +43,7 @@ La création d&#39;une application AEM Mobile On-demand Services diffère de la 
 
    * Par exemple, veillez à attendre la fonction *deviceready* avant de tenter d’accéder à l’API d’un module externe.
 
-## Conseils à l’intention des développeurs AEM {#guidelines-for-aem-developers}
+## Directives à l&#39;intention des développeurs d&#39;AEM {#guidelines-for-aem-developers}
 
 Les recommandations suivantes s’adressent aux développeurs chevronnés AEM sites qui souhaitent créer des modèles et des composants d’applications mobiles :
 
@@ -75,20 +75,20 @@ Les recommandations suivantes s’adressent aux développeurs chevronnés AEM si
 
 >[!NOTE]
 >
->Pour en savoir plus sur jQuery Mobile, cliquez [ici](https://jquerymobile.com/browser-support/1.4/).
+>Pour en savoir plus sur jQuery mobile, cliquez [ici](https://jquerymobile.com/browser-support/1.4/).
 
 **Préférer les micro-bibliothèques à la pile complète**
 
 * Le temps nécessaire pour que votre contenu soit visible sur le périphérique sera ralenti par chaque bibliothèque dont dépendent vos articles. Ce ralentissement est aggravé lorsqu’une nouvelle vue Web est utilisée pour générer chaque article. Par conséquent, chaque bibliothèque doit être à nouveau initialisée à partir de zéro.
 * Si vos articles ne sont pas créés en tant qu’SPA (applications d’une seule page), il n’est probablement pas nécessaire d’inclure une bibliothèque de piles complète, telle que Angular.
-* Préférez des bibliothèques à fonction unique plus petites pour vous aider à ajouter l’interactivité dont votre page a besoin, telle que [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js.](https://velocityjs.org)
+* Préférez des bibliothèques à fonction unique plus petites pour vous aider à ajouter l’interactivité dont votre page a besoin, telle que [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
 
 **Réduire la taille de la charge utile d’article**
 
 * Utilisez les ressources les plus réduites possible qui peuvent efficacement couvrir la plus grande fenêtre d’affichage que vous allez prendre en charge, à une résolution raisonnable
 * Utilisez un outil tel que *ImageOptim* sur vos images pour supprimer les métadonnées en excès.
 
-## Pour avancer {#getting-ahead}
+## Aller de l&#39;avant {#getting-ahead}
 
 Pour en savoir plus sur les deux autres rôles et responsabilités, voir les ressources ci-dessous :
 
