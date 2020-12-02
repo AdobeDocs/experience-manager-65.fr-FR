@@ -24,7 +24,7 @@ Des conflits peuvent survenir si de nouvelles pages portant le même nom de page
 
 Ces conflits doivent être gérés et résolus lors du déploiement.
 
-## Gestion des conflits {#conflict-handling}
+## Gestion des conflits  {#conflict-handling}
 
 Lorsqu’il y a des pages en conflit (dans les branches Plan directeur et Live Copy), MSM permet de définir comment elles doivent être gérées (voire si elles doivent l’être).
 
@@ -38,19 +38,19 @@ Pour vous assurer que le déploiement n’est pas bloqué, les définitions poss
 
 Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés peuvent être ajoutés pour mettre en œuvre différentes règles. Elles peuvent également permettre des actions de publication sous forme de processus individuel.
 
-### Exemple de scénario {#example-scenario}
+### Exemple de scénario  {#example-scenario}
 
 Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b`, créée dans les branches Plan directeur et Live Copy (créée manuellement) pour illustrer les différentes méthodes de résolution des conflits :
 
-* blueprint: `/b`
+* plan directeur : `/b`
 
    Un gabarit ; avec 1 page enfant, bp-level-1.
 
-* live copy: `/b`
+* copie en direct : `/b`
 
-   A page manually created in the live copy branch; with 1 child page, `lc-level-1`.
+   Une page créée manuellement dans la branche de la copie dynamique ; avec une page enfant, `lc-level-1`.
 
-   * Activated on publish as `/b`, together with the child page.
+   * Activé lors de la publication en tant que `/b`, avec la page enfant.
 
 **Avant le déploiement**
 
@@ -69,7 +69,7 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code> <br /> (créé manuellement dans une branche de copie dynamique)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page<br /> child-level-1 créée manuellement dans la branche de la copie dynamique)</td>
+   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page<br /> enfant-level-1 créée manuellement dans la branche de la copie dynamique)</td>
   </tr>
  </tbody>
 </table>
@@ -108,19 +108,19 @@ Le gestionnaire de conflits par défaut :
 * Est appelé `ResourceNameRolloutConflictHandler`
 
 * Avec ce gestionnaire, la page du plan directeur prévaut.
-* The service ranking for this handler is set low ( ``i.e. below the default value for the `service.ranking` property) as the assumption is that customized handlers will need a higher ranking. Cependant, le classement n’est pas le minimum absolu pour s’assurer de la flexibilité lorsque cela est nécessaire.
+* Le classement des services pour ce gestionnaire est défini sur faible ( &quot;i.e. sous la valeur par défaut de la propriété `service.ranking`), car l’hypothèse est que les gestionnaires personnalisés auront besoin d’un classement plus élevé. Cependant, le classement n’est pas le minimum absolu pour s’assurer de la flexibilité lorsque cela est nécessaire.
 
-Ce gestionnaire de conflits donne la priorité au plan directeur. The live copy page `/b` is moved (within the live copy branch) to `/b_msm_moved`.
+Ce gestionnaire de conflits donne la priorité au plan directeur. La page de la copie dynamique `/b` est déplacée (dans la branche de la copie dynamique) vers `/b_msm_moved`.
 
-* live copy: `/b`
+* copie en direct : `/b`
 
-   Is moved (within the live copy) to `/b_msm_moved`. Cela fait office de sauvegarde et permet de s’assurer qu’aucun contenu n’est perdu.
+   Est déplacé (dans la copie dynamique) vers `/b_msm_moved`. Cela fait office de sauvegarde et permet de s’assurer qu’aucun contenu n’est perdu.
 
    * `lc-level-1` n’est pas déplacé.
 
-* blueprint: `/b`
+* plan directeur : `/b`
 
-   Is rolled out to the live copy page `/b`.
+   Est déployé sur la page de copie dynamique `/b`.
 
    * `bp-level-1` est déployé dans la Live Copy.
 
@@ -176,13 +176,13 @@ Si vous [désactivez manuellement la gestion des conflits](#rollout-manager-and-
 >
 >AEM ne fournit pas d’indication lorsque des conflits sont ignorés, car ce comportement doit être configuré explicitement. Il est donc considéré comme le comportement exigé.
 
-Dans ce cas, la Live Copy prévaut effectivement. The blueprint page `/b` is not copied and the live copy page `/b` is left untouched.
+Dans ce cas, la Live Copy prévaut effectivement. La page du plan directeur `/b` n&#39;est pas copiée et la page de la copie dynamique `/b` n&#39;est pas touchée.
 
-* blueprint: `/b`
+* plan directeur : `/b`
 
    N’est pas copié du tout, mais est ignoré.
 
-* live copy: `/b`
+* copie en direct : `/b`
 
    Reste le même.
 
