@@ -26,19 +26,19 @@ Le modèle de David a été élaboré par David Nuescheler il y a quelques ann�
 
 * Les données arrivent en premier, la structure plus tard. Normalement…
 * Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger.
-* Les espaces de travail sont réservés `clone()`, `merge()`et `update()`.
+* Les espaces de travail sont pour `clone()`, `merge()` et `update()`.
 * Méfiez-vous des SNS (Same Name Siblings).
 * Les références sont considérées comme dangereuses.
 * Les fichiers sont des fichiers, et rien d’autre.
 * Les papiers d&#39;identité sont mauvais.
 
-David’s Model can be found on the Jackrabbit wiki at [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+David’s Model se trouve sur le wiki de Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tout est contenu {#everything-is-content}
 
 Vous devez tout stocker dans le référentiel plutôt que dans des sources de données tierces, telles que des bases de données. Cela s’applique aussi bien au contenu généré qu’aux données binaires comme les images, le code, les configurations, etc. Il nous est ainsi possible d’utiliser un seul ensemble d’API pour gérer tout le contenu, ainsi que pour gérer la promotion de ce contenu par le biais de la réplication. Nous disposons également d’une source unique de sauvegarde, de journalisation, etc.
 
-### Utilisez le principe de conception « Le modèle de contenu d’abord » {#use-the-content-model-first-design-principle}
+### Utilisez le principe de conception « Le modèle de contenu d’abord »  {#use-the-content-model-first-design-principle}
 
 Lors de la mise au point d’une fonctionnalité, commencez toujours par concevoir la structure du contenu JCR, puis tâchez de lire et d’écrire votre contenu à l’aide des servlets Sling par défaut. Vous pouvez ainsi vous assurer que votre implémentation fonctionne bien avec des mécanismes de contrôle d’accès standard. Cela vous évite également de générer des servlets de type CRUD inutiles.
 
