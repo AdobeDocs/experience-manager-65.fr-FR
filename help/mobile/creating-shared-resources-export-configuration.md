@@ -28,7 +28,7 @@ ht-degree: 6%
 >
 >**Condition requise**:
 >
->Avant d’en savoir plus sur la création et la modification de ressources partagées, voir Synchronisation [du](/help/mobile/mobile-ondemand-contentsync.md) contenu pour comprendre les concepts de base.
+>Avant d&#39;en savoir plus sur la création et la modification de ressources partagées, consultez [Content Sync](/help/mobile/mobile-ondemand-contentsync.md) pour comprendre les concepts de base.
 
 Les utilisateurs AEM Mobile utilisent la synchronisation de contenu pour exporter du contenu en direct vers du contenu statique en vue de l’utiliser dans les applications mobiles. Cette exportation survient lorsque le contenu est téléchargé vers Mobile On-Demand Services à partir d’AEM Mobile.
 
@@ -38,7 +38,7 @@ Les ressources suivantes décrivent l’exportation de ressources partagées à 
 
 Les ressources HTML partagées permettent aux articles de partager des ressources HTML qui, autrement, auraient besoin d’être dupliquées pour tous les articles et peuvent inclure des icônes, des polices, des javascript et des CSS.
 
-La configuration de synchronisation de contenu trouvée dans **&lt;dps-exportTemplate>/dps-HTMLResources>** doit être configurée pour exporter tout le contenu et l’article requis pour le rendu statique des propriétés sur le périphérique.
+La configuration de synchronisation de contenu trouvée dans **&lt;dps-exportTemplate>/dps-HTMLResources>** doit être configurée pour exporter tout le contenu et un article requis pour le rendu statique de propriété sur le périphérique.
 
 >[!CAUTION]
 >
@@ -55,7 +55,7 @@ La configuration de synchronisation de contenu trouvée dans **&lt;dps-exportTem
 Pour vue des exemples de ressources partagées, procédez comme suit :
 
 1. Ouvrez le CRXDE Lite sur votre serveur AEM.
-1. Accédez à ce chemin d’accès *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*, pour vue des exemples de ressources partagées.
+1. Accédez à ce chemin *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* pour vue aux exemples de ressources partagées.
 
    Vous pouvez vue toutes les propriétés requises pour la création de vos ressources partagées, comme le montre la figure ci-dessous :
 
