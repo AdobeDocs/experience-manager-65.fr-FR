@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Calendrier essentiel {#calendar-essentials}
+# Calendrier Essentials {#calendar-essentials}
 
 Cette page fournit des informations essentielles sur l&#39;utilisation de la fonction Calendrier.
 
@@ -49,7 +49,7 @@ Cette page fournit des informations essentielles sur l&#39;utilisation de la fon
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>voir <a href="calendar.md">Utilisation de calendriers</a></td>
+   <td>voir <a href="calendar.md">Utilisation des calendriers</a></td>
   </tr>
  </tbody>
 </table>
@@ -66,18 +66,18 @@ Cette page fournit des informations essentielles sur l&#39;utilisation de la fon
 
 ### Fonction Calendrier {#calendar-function}
 
-Une structure de site communautaire qui inclut la fonction [](functions.md#calendar-function) Calendar aura un `calendar` composant configuré. La fonction Calendar prend en charge l&#39;identification d&#39;un groupe [d&#39;utilisateurs membres](users.md#privileged-members-group)privilégiés.
+Une structure de site communautaire qui inclut la fonction [Calendrier](functions.md#calendar-function) aura un composant `calendar` configuré. La fonction Calendar prend en charge l&#39;identification d&#39;un [groupe d&#39;utilisateurs de membres privilégiés](users.md#privileged-members-group).
 
 ### Accès aux publications de calendrier (UGC) {#accessing-calendar-posts-ugc}
 
-AEM 6.1 Collectivités, l&#39;utilisation d&#39;un magasin [](working-with-srp.md) commun pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communautés, l&#39;utilisation d&#39;un [magasin commun](working-with-srp.md) pour l&#39;UGC comprend l&#39;accès programmatique à l&#39;UGC, quelle que soit l&#39;option d&#39;enregistrement choisie (comme ASRP, MSRP ou JSRP).
 
 **L&#39;emplacement et le format de l&#39;UGC dans le référentiel peuvent être modifiés sans avertissement**.
 
 Voir :
 
-* [Présentation](srp.md) du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel
-* [SRP et UGC Essentials](srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP
-* [Accès à l&#39;UGC avec SRP](accessing-ugc-with-srp.md) - directives de codage
-* [SocialUtils Refactoring](socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
+* [Présentation](srp.md)  du fournisseur de ressources d&#39;Enregistrement - présentation et utilisation du référentiel
+* [SRP et UGC Essentials](srp-and-ugc.md)  - Exemples et méthodes d&#39;utilitaire SRP
+* [Accès à l&#39;UGC avec des directives de codage SRP](accessing-ugc-with-srp.md) 
+* [SocialUtils Refactoring](socialutils.md)  - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
 
