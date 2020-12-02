@@ -28,7 +28,7 @@ En mode de sauvegarde sécurisé, AEM forms fonctionne normalement, mais sans su
 >
 >la définition de cette option ne sauvegarde pas le système, mais le prépare à cette opération.
 
-## Activation du mode de sauvegarde sécurisé {#enable-safe-backup-mode}
+## Activation du mode de sauvegarde sécurisé  {#enable-safe-backup-mode}
 
 1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core System > Paramètres de sauvegarde.
 1. Dans la page Paramètres de sauvegarde, sélectionnez Fonctionner en mode de sauvegarde sécurisé et cliquez sur OK.
@@ -37,7 +37,7 @@ En mode de sauvegarde sécurisé, AEM forms fonctionne normalement, mais sans su
 >
 >si le système fonctionne déjà en mode de sauvegarde sécurisé, aucune réservation n’est créée lorsque vous cliquez sur OK.
 
-## Désactivation du mode de sauvegarde sécurisé {#disable-safe-backup-mode}
+## Désactivation du mode de sauvegarde sécurisé  {#disable-safe-backup-mode}
 
 1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core System > Paramètres de sauvegarde.
 1. Dans la page Paramètres de sauvegarde, désélectionnez Fonctionner en mode de sauvegarde sécurisé et cliquez sur OK.
