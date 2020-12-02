@@ -22,8 +22,8 @@ ht-degree: 78%
 
 Les balises sont un moyen simple et rapide de classer le contenu de votre site web. Les balises sont en quelque sorte des mots-clés ou des libellés qu’il est possible d’associer à une page, à une ressource ou à tout autre type de contenu, pour permettre aux fonctions de recherche de retrouver le contenu en question et son contenu associé.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Tagging for Developers](/help/sites-developing/tags.md) for information about the tagging framework as well as including and extending tags in custom applications.
+* Voir [Administration des balises](/help/sites-administering/tags.md) pour plus d&#39;informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+* Voir [Balisage pour les développeurs](/help/sites-developing/tags.md) pour plus d’informations sur la structure de balisage ainsi que sur l’inclusion et l’extension de balises dans les applications personnalisées.
 
 ## Dix raisons d’utiliser les balises {#ten-reasons-to-use-tagging}
 
@@ -40,11 +40,11 @@ Les balises sont un moyen simple et rapide de classer le contenu de votre site w
 
 Lors de la conception de la structure du contenu d’un site et du schéma de métadonnées des ressources, pensez à l’approche légère et accessible qu’offre le balisage.
 
-## Application de balises   {#applying-tags}
+## Application de balises    {#applying-tags}
 
 Dans l’environnement de développement de contenu, les auteurs peuvent appliquer des balises en accédant aux propriétés de la page et en entrant une ou plusieurs balises dans le champ **Balises/Mots-clés**.
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the `Tags/Keywords` field pull-down to select from the list of tags permitted for the page. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
+Pour appliquer des balises [prédéfinies](/help/sites-administering/tags.md), dans la fenêtre **Propriétés de la page**, utilisez le champ déroulant `Tags/Keywords` pour sélectionner une balise dans la liste de balises autorisée pour la page. L&#39;onglet **Balises standard** est l&#39;espace de nommage par défaut, ce qui signifie qu&#39;il n&#39;y a pas de préfixe `namespace-string:` à la taxonomie.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -64,7 +64,7 @@ Comme c’est le cas avec les pages, vous pouvez effectuer les opérations suiva
 
 **Désactiver**
 
-* Désactivez les tags sélectionnés.
+* Désactivez les balises sélectionnées.
 
 ## Nuages de tags {#tag-clouds}
 
@@ -72,13 +72,13 @@ Les nuages de balises affichent un nuage de balises, soit pour la page active, s
 
 Le composant [Nuage de tags](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (groupe de composants Général) sert à ajouter un nuage de tags à une page.
 
-## Recherche sur des balises {#searching-on-tags}
+## Recherche sur des balises  {#searching-on-tags}
 
 Vous pouvez rechercher des tags dans les environnements de création et de publication.
 
-### Utilisation d’un composant de recherche {#using-search-component}
+### Utilisation d’un composant de recherche  {#using-search-component}
 
-Adding a [Search component](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) to a page provides a search capability which includes tags and can be used in both the author and publish environments.
+L&#39;Ajoute d&#39;un [composant de recherche](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) à une page fournit une fonctionnalité de recherche qui inclut des balises et peut être utilisée dans les environnements d&#39;auteur et de publication.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
