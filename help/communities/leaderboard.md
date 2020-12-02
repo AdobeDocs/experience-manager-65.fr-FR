@@ -18,11 +18,11 @@ ht-degree: 8%
 ---
 
 
-# Leaderboard Essentials {#leaderboard-essentials}
+# Leadboard Essentials {#leaderboard-essentials}
 
 Cette page fournit les informations essentielles pour travailler avec la fonction de classement.
 
-Avant d’inclure le composant de tableau de bord dans une page, il est nécessaire de configurer le score et les badges [des communautés](implementing-scoring.md).
+Avant d’inclure le composant Leadboard sur une page, il est nécessaire de configurer [le score des communautés et les badges](implementing-scoring.md).
 
 Voir [Scoring and Badges Essentials](configure-scoring.md).
 
@@ -52,7 +52,7 @@ Voir [Scoring and Badges Essentials](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Fonctionnalité <a href="enabling-leaderboard.md">du tableau de bord</a></td>
+   <td>Voir <a href="enabling-leaderboard.md">Fonctionnalité du tableau de bord</a></td>
   </tr>
  </tbody>
 </table>
@@ -61,4 +61,4 @@ Voir [Scoring and Badges Essentials](configure-scoring.md).
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site communautaire qui comprend la fonction [](functions.md#leaderboard-function)Leaderboard, comprend un `leaderboard` composant configuré.
+Une structure de site communautaire qui comprend la fonction [Leaderboard](functions.md#leaderboard-function), comprend un composant `leaderboard` configuré.
