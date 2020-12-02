@@ -18,7 +18,7 @@ ht-degree: 82%
 ---
 
 
-# Modification du logo de l’organisation pour l’identité graphique {#changing-the-organization-logo-for-branding}
+# Modification du logo de l’organisation pour l’identité graphique  {#changing-the-organization-logo-for-branding}
 
 Le logo de l’entreprise est affiché dans l’angle supérieur gauche de l’espace de travail d’AEM Forms. Pour mettre le logo à jour, suivez les instructions de la section [Étapes génériques de la configuration de l’espace de travail d’AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization), puis les étapes suivantes.
 
@@ -30,7 +30,7 @@ Le logo de l’entreprise est affiché dans l’angle supérieur gauche de l’e
 
    >[!NOTE]
    >
-   >For more information about WebDAV access, see [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Pour plus d’informations sur l’accès WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
 1. Reportez-vous à l’image du nouveau logo dans la feuille de style sous /apps/ws/css/newStyle.css en ajoutant le style suivant.
 
