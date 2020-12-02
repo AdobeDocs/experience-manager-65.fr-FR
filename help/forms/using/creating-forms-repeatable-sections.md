@@ -16,7 +16,7 @@ ht-degree: 78%
 ---
 
 
-# Création de formulaires avec des sections répétables {#creating-forms-with-repeatable-sections}
+# Création de formulaires avec des sections répétables  {#creating-forms-with-repeatable-sections}
 
 Les sections répétables sont des panneaux qui peuvent être ajoutés ou supprimés dynamiquement dans un formulaire.
 
@@ -24,9 +24,9 @@ Par exemple, lorsqu’elle dépose sa candidature pour un poste, la personne à 
 
 Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthodes suivantes :
 
-## Utilisation du gestionnaire d’instances via des scripts  {#using-instance-manager-via-scripts-nbsp}
+## Utilisation du gestionnaire d’instances via des scripts   {#using-instance-manager-via-scripts-nbsp}
 
-1. In the edit mode, select a panel, then tap ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **Activer la répétition du panneau**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
+1. En mode d’édition, sélectionnez un panneau, puis appuyez sur ![cmppr](assets/cmppr.png). Dans la barre latérale, sous Propriétés, activez **Activer la répétition du panneau**. Spécifiez des valeurs pour les champs **[!UICONTROL Maximum]** et **[!UICONTROL Minimum.]**
 
    Le champ Maximum spécifie le nombre maximal de fois qu’un panneau peut s’afficher sur la page. Vous pouvez spécifier la valeur -1 dans le champ Nombre maximum pour que le panneau s’affiche un nombre illimité de fois.
 
@@ -38,7 +38,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 1. Le parent du panneau à répéter doit contenir des boutons d’ajout et de suppression pour gérer les instances des panneaux répétables. Pour insérer des boutons dans le parent et activer des scripts sur les boutons, procédez comme suit :
 
-   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Select the component and tap ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
+   1. A partir de la barre latérale, faites glisser un composant Bouton jusqu’au parent du panneau. Sélectionnez le composant et appuyez sur ![edit-rules](assets/edit-rules.png). Les règles du bouton s’ouvrent dans l’éditeur de règles.
    1. Dans la fenêtre Éditeur de règles Les règles, cliquez sur **créer**.
 
       Sélectionnez **Éditeur visuel** dans la ligne Objets et fonctions de formulaire.
@@ -46,19 +46,19 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
       1. Dans la zone de la règle, sous QUAND, sélectionnez l’état **est cliqué**.
       1. Sous PUIS :
 
-         * To create an add panel button, select **Add Instance**, and drag-drop the panel using ![toggle-side-panel](assets/toggle-side-panel.png) or select it using **Drop object or select here.**
-         * To create a delete panel button, select **Remove Instance**, and drag-drop the panel using ![toggle-side-panel](assets/toggle-side-panel.png) or select it using **Drop object or select here.**
+         * Pour créer un bouton d’ajout de panneau, sélectionnez **Ajouter l’instance**, puis faites glisser et déposez le panneau à l’aide de ![toggle-side-panel](assets/toggle-side-panel.png) ou sélectionnez-le à l’aide de **Déposez l’objet ou sélectionnez ici.**
+         * Pour créer un bouton de suppression de panneau, sélectionnez **Supprimer l&#39;instance**, puis faites glisser et déposez le panneau à l&#39;aide de ![toggle-side-panel](assets/toggle-side-panel.png) ou sélectionnez-le à l&#39;aide de **Déposez l&#39;objet ou sélectionnez ici.**
 
       Sélectionnez **Éditeur de code** dans la ligne Objets et fonctions de formulaire. Cliquez sur **Modifier les règles** et dans la zone de code :
 
       * Pour créer un bouton d’ajout de panneau, spécifiez `this.panel.instanceManager.addInstance()`.
-      * To create a delete panel button, specify `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+      * Pour créer un bouton de suppression de panneau, spécifiez `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
       Cliquez sur **Terminé**.
 
       >[!NOTE]
       >
-      >Si un champ appartient à un panneau répétable, vous ne pouvez pas y accéder directement via son nom dans vos scripts. To access the field, specify the repeatable instance to which the field belongs using the `instances` API in `InstanceManager`. The syntax to use the `instances` API in `InstanceManager` is:
+      >Si un champ appartient à un panneau répétable, vous ne pouvez pas y accéder directement via son nom dans vos scripts. Pour accéder au champ, spécifiez l&#39;instance répétable à laquelle le champ appartient à l&#39;aide de l&#39;API `instances` dans `InstanceManager`. La syntaxe à utiliser pour l&#39;API `instances` dans `InstanceManager` est la suivante :
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -112,10 +112,10 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 Un panneau possède différentes options de mise en forme. La mise en page de l’option de conception en accordéon prend en charge les panneaux répétables. Pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon, procédez comme suit : 
 
-1. On the parent of panel to be repeated, tap ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
-1. On a panel, which is to be repeated, tap ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez l’onglet **Activer la répétition du panneau** et spécifiez des valeurs pour les champs **Maximum** et **Minimum**.
+1. Sur le parent du panneau à répéter, appuyez sur ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Dans le menu déroulant **Disposition**, sélectionnez **Accordéon**.
+1. Dans un panneau à répéter, appuyez sur ![cmppr](assets/cmppr.png). Vous pouvez afficher les propriétés dans la barre latérale. Activez l’onglet **Activer la répétition du panneau** et spécifiez des valeurs pour les champs **Maximum** et **Minimum**.
 
-   Now, you can use the plus (+) and delete ( ![delete-panel](assets/delete-panel.png)) buttons to add and remove the panels.
+   Vous pouvez désormais utiliser les boutons plus (+) et supprimer ( ![delete-panel](assets/delete-panel.png)) pour ajouter et supprimer les panneaux.
 
 ## Utilisation des sous-formulaires qui se répètent du modèle de formulaire (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
