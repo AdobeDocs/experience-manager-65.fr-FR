@@ -23,7 +23,7 @@ ht-degree: 12%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Le contenu AEM peut facilement être rendu via les servlets [](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) par défaut Sling pour effectuer le rendu de [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) et d’autres formats.
+Le contenu AEM peut facilement être rendu via [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) pour générer [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) et d’autres formats.
 
 Ces rendus prêts à l’emploi parcourent généralement le référentiel et renvoient le contenu tel quel.
 
@@ -37,7 +37,7 @@ Le diagramme suivant affiche le rendu des services de contenu.
 
 ## Demande de JSON {#requesting-json}
 
-Utilisez **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** pour demander JSON.
+Utilisez **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto demande JSON.**
 
 <table>
  <tbody>
@@ -47,16 +47,16 @@ Utilisez **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** pour
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>FACULTATIF</strong><br /> </p> <p>une configuration d'exportation a été trouvée sous /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /><br /> Si la configuration d'exportation par défaut est omise, elle sera appliquée. </p> </td>
+   <td><p><strong>FACULTATIF</strong><br /> </p> <p>une configuration d'exportation trouvée sous /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Si elle est omise, la configuration d'exportation par défaut sera appliquée. </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>Récursion de profondeur facultative</strong><br /><br /> pour le rendu des enfants, comme utilisé dans le rendu Sling</td>
+   <td><strong>Récursion </strong><br /> <br /> FACULTATIVEdepth pour le rendu des enfants, comme utilisé dans le rendu Sling</td>
   </tr>
  </tbody>
 </table>
 
-## Création de configurations d’exportation {#creating-export-configs}
+## Création de configurations d&#39;exportation {#creating-export-configs}
 
 Vous pouvez créer des configurations d’exportation pour personnaliser le rendu JSON.
 
@@ -110,7 +110,7 @@ Le tableau suivant présente les propriétés des configurations d’exportation
    <td>Chaîne[]</td>
    <td>inclure tout</td>
    <td>Noms des propriétés</td>
-   <td><p>if excludePropertyPrefixes set<br /> this inclut des propriétés spécifiées, même si le préfixe correspondant a été exclu,</p> <p>else (exclure les propriétés ignorées) n’inclut que ces propriétés</p> </td>
+   <td><p>si excludePropertyPrefixes set<br />, cela inclut les propriétés spécifiées même si le préfixe correspondant a été exclu,</p> <p>else (exclure les propriétés ignorées) n’inclut que ces propriétés</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -130,7 +130,7 @@ Le tableau suivant présente les propriétés des configurations d’exportation
    <td>renameProperties</td>
    <td>Chaîne[]<br /> <br /> </td>
    <td>renommer rien</td>
-   <td>&lt;nom_propriété_réelle&gt;, &lt;nom_propriété_de_remplacement&gt;</td>
+   <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>renommer les propriétés à l’aide de remplacements</td>
   </tr>
  </tbody>
@@ -156,27 +156,27 @@ Le tableau suivant présente les propriétés :
    <td><strong>Description</strong></td>
   </tr>
   <tr>
-   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>&lt;selector_to_inc&gt;</td>
    <td>Chaîne[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Pour les types de ressource sling suivants, ne renvoyez pas l’exportation Json CaaS par défaut.<br /> Renvoyer une exportation json client en restituant la ressource en tant que ;<br /> &lt;RESSOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Pour les types de ressource sling suivants, ne renvoyez pas l’exportation Json CaaS par défaut.<br /> Retournez une exportation json client en affichant la ressource comme;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
 
-### Configurations d’exportation Content Services existantes {#existing-content-services-export-configs}
+### Configurations d’exportation existantes de Content Services {#existing-content-services-export-configs}
 
 Content Services comprend deux configurations d’exportation :
 
 * default (aucune configuration spécifiée)
 * (pour rendre les pages du site)
 
-#### Configuration de l’exportation par défaut {#default-export-configuration}
+#### Configuration d&#39;exportation par défaut {#default-export-configuration}
 
 La configuration d’exportation par défaut de Content Services est appliquée si une configuration est spécifiée dans l’URI requis.
 
-&lt;RESOURCE>.cas[.&lt;DEPTH-INT>].json
+&lt;resource>.caas[.&lt;depth-int>].json
 
 <table>
  <tbody>
@@ -194,7 +194,7 @@ La configuration d’exportation par défaut de Content Services est appliquée 
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified cq:tags,tags<br /><br /> cq:lastModified,lastModified</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -219,11 +219,11 @@ La configuration d’exportation par défaut de Content Services est appliquée 
  </tbody>
 </table>
 
-#### Configuration de l’exportation de page {#page-export-configuration}
+#### Configuration de l&#39;exportation de page {#page-export-configuration}
 
 Cette configuration étend la valeur par défaut pour inclure le regroupement d’enfants sous un noeud enfant.
 
-&lt;PAGE_SITE>.cas.page[.&lt;DEPTH-INT>].json
+&lt;site_page>.cas.page[.&lt;depth-int>].json
 
 ### Ressources supplémentaires {#additional-resources}
 
