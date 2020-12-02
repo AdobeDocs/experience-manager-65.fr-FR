@@ -34,7 +34,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 ## Début rapide (mode SOAP) : Importation de données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML appelé *Loan_data.xml* et le formulaire PDF est enregistré en tant que fichier PDF appelé *ResultLoanForm.pdf*. (Voir [Importation de données](/help/forms/developing/importing-exporting-data.md#importing-form-data)de formulaire.)
+L’exemple de code Java suivant importe des données dans un formulaire PDF. Les données se trouvent dans un fichier XML nommé *Loan_data.xml* et le formulaire PDF est enregistré en tant que fichier PDF nommé *ResultLoanForm.pdf*. (Voir [Importation de données de formulaire](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -136,7 +136,7 @@ L’exemple de code Java suivant importe des données dans un formulaire PDF. Le
 
 ## Début rapide (mode SOAP) : Exportation des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-L’exemple de code Java suivant exporte des données d’un formulaire PDF. Les données du formulaire sont enregistrées dans un fichier XML appelé *Loan_data.xml*. (Voir [Exportation de données](/help/forms/developing/importing-exporting-data.md#exporting-form-data)de formulaire.)
+L’exemple de code Java suivant exporte des données d’un formulaire PDF. Les données du formulaire sont enregistrées sous la forme d’un fichier XML nommé *Loan_data.xml*. (Voir [Exportation des données de formulaire](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*
