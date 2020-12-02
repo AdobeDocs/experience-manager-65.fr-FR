@@ -17,7 +17,7 @@ ht-degree: 82%
 ---
 
 
-# Utilisation en mode hors ligne {#working-in-the-offline-mode}
+# Utilisation en mode hors ligne  {#working-in-the-offline-mode}
 
 Le mode hors ligne de l’application AEM Forms vous permet de travailler en toute transparence, même si l’application est hors ligne. Vous pouvez ouvrir, mettre à jour et même envoyer un formulaire sans avoir besoin d’une connexion réseau.
 
@@ -25,13 +25,13 @@ Vous débuts travailler sur l’application AEM Forms en synchronisant votre app
 
 Pour plus de d’informations sur la synchronisation de l’application, consultez la section [Synchronisation de l’application](/help/forms/using/sync-app.md).
 
-## Disponibilité des formulaires en mode hors ligne {#making-forms-available-offline}
+## Disponibilité des formulaires en mode hors ligne  {#making-forms-available-offline}
 
 Lorsque vous synchronisez votre application avec le serveur AEM Forms, les formulaires sont téléchargés sur votre périphérique mobile. Cependant, par défaut, les pièces jointes associées avec le formulaire ne sont pas téléchargées. Cela signifie que si vous êtes en ligne, vous pouvez afficher les pièces jointes. Toutefois, pour pouvoir afficher la pièce jointe en mode hors ligne, modifiez les paramètres par défaut de votre application.
 
 Pour vous assurer que les pièces jointes associées sont téléchargées avec chaque formulaire, activez l’option de récupération des pièces jointes. Pour plus d’informations, consultez [Mise à jour des paramètres généraux](/help/forms/using/update-general-settings.md).
 
-Le téléchargement de données sur le périphérique mobile pouvant affecter ses performances, l’option de récupération des pièces jointes est désactivée par défaut. Les pièces jointes sont récupérées sur le périphérique pour toutes les tâches téléchargées à partir du serveur après le réglage de ce paramètre sur ON (Activé). In the offline mode, a user can then work on all tasks that are downloaded to device after setting the **Fetch attachments** options to ON.
+Le téléchargement de données sur le périphérique mobile pouvant affecter ses performances, l’option de récupération des pièces jointes est désactivée par défaut. Les pièces jointes sont récupérées sur le périphérique pour toutes les tâches téléchargées à partir du serveur après le réglage de ce paramètre sur ON (Activé). En mode hors connexion, un utilisateur peut alors travailler sur toutes les tâches téléchargées sur le périphérique après avoir défini les options **Récupérer les pièces jointes** sur ON.
 
 ## Configuration du service hors ligne pour l’application AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
 
@@ -39,14 +39,14 @@ Le service hors ligne de l’application AEM Forms identifie les ressources util
 
 Pour configurer le composant hors ligne côté serveur de l’application AEM Forms :
 
-1. In the author instance, navigate to **Adobe Experience Manager** >**Tools** > **Forms** > **Configure Forms App Offline Service**.
+1. Dans l’instance d’auteur, accédez à **Adobe Experience Manager** >**Outils** > **Forms** > **Configurer Forms App Offline Service**.
 
    URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 
 1. Sous Paramètres généraux, vous pouvez effectuer les opérations suivantes :
 
    * **Effacer le cache** : efface le cache côté serveur des dépendances de formulaires.
-   * **Réinitialiser la configuration**: Réinitialise la configuration hors ligne de l’application AEM Forms.
+   * **Réinitialiser la configuration** : Réinitialise la configuration hors ligne de l’application AEM Forms.
    * **Période de validité du cache** : indique la période de validité du cache hors ligne côté serveur.
    * **Chemins d’observation des ressources** : indique les chemins où le service hors connexion assure le suivi des modifications de ressources. Si des modifications apparaissent dans les chemins indiqués, le cache hors ligne de tous les formulaires dépendants est mis à jour. Par exemple, `/etc/clientlibs/fd,/content/dam/images`.
 
