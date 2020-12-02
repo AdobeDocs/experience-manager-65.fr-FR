@@ -26,5 +26,5 @@ En mode Génération de modèles automatique, vous pouvez créer un formulaire (
 
 >[!NOTE]
 >
->Although there is a Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) available, the maintenance and creation of scaffolds as well as creating new pages from scaffolds is done in the classic UI. Pour plus d’informations, voir [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.
+>Bien qu&#39;il existe un Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, la maintenance et la création des échafaudages ainsi que la création de nouvelles pages à partir des échafaudages sont effectuées dans l&#39;interface utilisateur classique. Pour plus d’informations, voir [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) dans la documentation de création de l’IU classique.
 
