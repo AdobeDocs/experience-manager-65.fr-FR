@@ -23,7 +23,7 @@ ht-degree: 79%
 
 Ce chapitre décrit comment configurer et gérer l’autorisation de l’utilisateur et décrit également la théorie sous-jacente au fonctionnement de l’authentification et des autorisations dans AEM.
 
-## Utilisateurs et groupes dans AEM {#users-and-groups-in-aem}
+## Utilisateurs et groupes dans AEM  {#users-and-groups-in-aem}
 
 Cette section traite des différentes entités et des concepts associés plus en détail pour vous aider à définir un concept de gestion des utilisateurs simple.
 
@@ -46,7 +46,7 @@ Par conséquent, les groupes ont tendance à demeurer stables, tandis que les ut
 
 Avec une planification et une structure saine, l’utilisation des groupes peut refléter votre structure, ce qui vous apporte une vue d’ensemble claire et un mécanisme efficace pour les mises à jour.
 
-### Utilisateurs et groupes intégrés {#built-in-users-and-groups}
+### Utilisateurs et groupes intégrés  {#built-in-users-and-groups}
 
 AEM WCM installe un certain nombre d’utilisateurs et de groupes. Ces informations sont visibles lorsque vous accédez pour la première fois à la console de sécurité après l’installation.
 
@@ -73,13 +73,13 @@ Les tableaux suivants répertorient chaque élément avec :
   </tr>
   <tr>
    <td><p>anonymous</p> <p> </p> </td>
-   <td>User</td>
+   <td>Utilisateur</td>
    <td><p>Détient les droits par défaut pour l’accès non authentifié à une instance. Par défaut, il s’agit des droits d’accès minimum.</p> <p>Si vous supprimez ce compte par erreur, il sera recréé au redémarrage. Il ne peut pas être supprimé définitivement, mais peut être désactivé.</p> </td>
    <td>Évitez de supprimer ou de désactiver ce compte, car cela aura une incidence négative sur le fonctionnement des instances d’auteur. S’il existe des exigences de sécurité qui vous obligent à le supprimer, assurez-vous d’abord de tester correctement les effets qu’il a sur vos systèmes.</td>
   </tr>
   <tr>
    <td><p>Auteur </p> <p>Mot de passe par défaut : author</p> </td>
-   <td>User</td>
+   <td>Utilisateur</td>
    <td><p>Un compte d’auteur autorisé à écrire dans /content. Comprend les autorisations de contributeur et de surfeur.</p> <p>Peut être utilisé comme webmaster, car il dispose de l’accès à toute l’arborescence /content.</p> <p>Ce n’est pas un utilisateur intégré, mais un autre utilisateur de démonstration Geometrixx</p> </td>
    <td><p>Adobe vous recommande de supprimer complètement le compte ou de modifier le mot de passe par défaut.</p> <p>De préférence à l’issue de l’installation, bien que ceci puisse s’effectuer par la suite.</p> </td>
   </tr>
@@ -147,13 +147,13 @@ AEM utilise des listes de contrôle d’accès pour déterminer quelles sont les
 
 Les autorisations définissent les personnes autorisées à effectuer des actions sur une ressource. Les autorisations sont le résultat d’évaluations de [contrôle d’accès](#access-control-lists-and-how-they-are-evaluated).
 
-You can change the permissions granted/denied to a given user by selecting or clearing the checkboxes for the individual AEM [actions](security.md#actions). Une coche indique que l’action est autorisée. L’absence de coche indique que l’action est refusée.
+Vous pouvez modifier les autorisations accordées/refusées à un utilisateur donné en cochant ou en désactivant les cases des AEM [actions](security.md#actions) individuelles. Une coche indique que l’action est autorisée. L’absence de coche indique que l’action est refusée.
 
 L’emplacement de la coche sur la grille indique également de quelles autorisations les utilisateurs disposent et à quels endroits dans AEM (c’est-à-dire, les chemins d’accès).
 
-### Actions  {#actions}
+### Actions   {#actions}
 
-Les actions peuvent être effectuées sur une page (ressource). Pour chaque page dans la hiérarchie, vous pouvez spécifier quelle action l’utilisateur est autorisé à effectuer sur cette page. [Les autorisations](#permissions-and-acls) vous permettent d’autoriser ou de refuser une action.
+Les actions peuvent être effectuées sur une page (ressource). Pour chaque page dans la hiérarchie, vous pouvez spécifier quelle action l’utilisateur est autorisé à effectuer sur cette page. [Vous pouvez ](#permissions-and-acls) autoriser ou refuser une action.
 
 <table>
  <tbody>
@@ -178,7 +178,7 @@ Les actions peuvent être effectuées sur une page (ressource). Pour chaque page
    <td><p>L’utilisateur peut :</p>
     <ul>
      <li>créez une page ou une page enfant.</li>
-    </ul> <p>If <strong>modify</strong> is denied the subtrees below jcr:content are specifically excluded because the creation of jcr:content and its child nodes are considered a page modification. Ceci s’applique uniquement aux nœuds définissant un nœud enfant jcr:content.</p> </td>
+    </ul> <p>Si <strong>modify</strong> est refusé, les sous-arbres situés sous jcr:content sont spécifiquement exclus car la création de jcr:content et de ses noeuds enfants est considérée comme une modification de page. Ceci s’applique uniquement aux nœuds définissant un nœud enfant jcr:content.</p> </td>
   </tr>
   <tr>
    <td>Supprimer</td>
@@ -186,7 +186,7 @@ Les actions peuvent être effectuées sur une page (ressource). Pour chaque page
     <ul>
      <li>supprimer des paragraphes existants de la page ou de toute page enfant.</li>
      <li>supprimer une page ou une page enfant.</li>
-    </ul> <p>If <strong>modify</strong> is denied any subtrees below jcr:content are specifically excluded as removing jcr:content and its child nodes is considered a page modification. Ceci s’applique uniquement aux nœuds définissant un nœud enfant jcr:content.</p> </td>
+    </ul> <p>Si <strong>modify</strong> est refusé, les sous-arbres situés sous jcr:content sont spécifiquement exclus car la suppression de jcr:content et de ses noeuds enfants est considérée comme une modification de page. Ceci s’applique uniquement aux nœuds définissant un nœud enfant jcr:content.</p> </td>
   </tr>
   <tr>
    <td>Lire l’ACL</td>
@@ -205,9 +205,9 @@ Les actions peuvent être effectuées sur une page (ressource). Pour chaque page
 
 >[!NOTE]
 >
->AEM automatically generates user groups for role-assignment (Owner, Editor, Viewer) in [Collections](/help/assets/manage-collections.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
+>aem génère automatiquement des groupes d’utilisateurs pour l’affectation de rôles (propriétaire, éditeur, visionneuse) dans [Collections](/help/assets/manage-collections.md). Cependant, ajouter manuellement des listes de contrôle d’accès pour ces groupes peut introduire des vulnérabilités en matière de sécurité dans AEM. Adobe recommande d’éviter d’ajouter des listes de contrôle d’accès manuellement.
 
-### Listes de contrôle d’accès et leur méthode d’évaluation {#access-control-lists-and-how-they-are-evaluated}
+### Listes de contrôle d’accès et leur méthode d’évaluation  {#access-control-lists-and-how-they-are-evaluated}
 
 AEM WCM utilise des listes de contrôle d’accès (ACL, ou Access Control List) pour organiser les autorisations appliquées aux différentes pages.
 
@@ -215,16 +215,16 @@ Les listes de contrôle d’accès sont composées d’autorisations spécifique
 
 >[!NOTE]
 >
->Des listes de contrôle d’accès sont fournies avec les échantillons. Il est recommandé d’examiner et de déterminer ce qui convient à vos applications. To review the ACLs that are included, go to **CRXDE **and select the **Access Control** tab for the following nodes:
+>Des listes de contrôle d’accès sont fournies avec les échantillons. Il est recommandé d’examiner et de déterminer ce qui convient à vos applications. Pour consulter les listes de contrôle d&#39;accès incluses, accédez à **CRXDE **et sélectionnez l&#39;onglet **Contrôle d&#39;accès** pour les noeuds suivants :
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Permet à tout le monde de lire l&#39;accès.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Permet à tout le monde de lire l&#39;accès.
->`/home/users/geometrixx-outdoors`: Permet à tout le monde d’accéder en lecture pour `*/profile*` et
+>`/home/users/geometrixx-outdoors`: Permet à tous les utilisateurs de lire l’accès pour `*/profile*` et
 >`*/social/relationships/following/*`.
 >
->Your custom application may set access for other relationships, such as `*/social/relationships/friend/*` or `*/social/relationships/pending-following/*`.
+>Votre application personnalisée peut définir l&#39;accès pour d&#39;autres relations, telles que `*/social/relationships/friend/*` ou `*/social/relationships/pending-following/*`.
 >
->  Lorsque vous créez des listes de contrôle d’accès spécifiques aux communautés, les membres rejoignant ces communautés peuvent se voir accorder des autorisations supplémentaires. For example, this could be the case when users join the communities at `/content/geometrixx-outdoors/en/community/hiking` or `/content/geometrixx-outdoors/en/community/winter-sports`.
+>  Lorsque vous créez des listes de contrôle d’accès spécifiques aux communautés, les membres rejoignant ces communautés peuvent se voir accorder des autorisations supplémentaires. Par exemple, cela peut être le cas lorsque des utilisateurs rejoignent les communautés à `/content/geometrixx-outdoors/en/community/hiking` ou `/content/geometrixx-outdoors/en/community/winter-sports`.
 
 ### États d’autorisation {#permission-states}
 
@@ -310,7 +310,7 @@ Vous autorisez ou refusez les autorisations en cochant ou en décochant les case
 
 Outre le mode Grille, AEM fournit une vue détaillée des autorisations pour un utilisateur/groupe sélectionné dans un chemin d’accès donné. L’affichage des détails fournit des informations supplémentaires.
 
-Outre l’affichage des informations, vous pouvez également inclure ou exclure l’utilisateur ou le groupe actuel d’un groupe. See [Adding Users or Groups while Adding Permissions](#adding-users-or-groups-while-adding-permissions). Les modifications apportées ici sont immédiatement répercutées dans la portion supérieure de la vue détaillée.
+Outre l’affichage des informations, vous pouvez également inclure ou exclure l’utilisateur ou le groupe actuel d’un groupe. Voir [Ajouter des utilisateurs ou des groupes tout en Ajoutant des autorisations](#adding-users-or-groups-while-adding-permissions). Les modifications apportées ici sont immédiatement répercutées dans la portion supérieure de la vue détaillée.
 
 Pour accéder à la vue détaillée, dans l’onglet **Autorisations**, cliquez sur **Détails** pour le groupe/l’utilisateur et le chemin d’accès.
 
@@ -350,7 +350,7 @@ Cela permet aux comptes d’emprunteurs d’identité d’exécuter des tâches 
 
 >[!NOTE]
 >
->In order for impersonating to work for non-admin users, the impersonator (in the above case user-B) is required to have READ permissions in the `/home/users` path.
+>Pour que l’emprunt d’identité fonctionne pour les utilisateurs non-administrateurs, l’usurpateur (dans le cas ci-dessus, user-B) doit disposer des autorisations READ dans le chemin `/home/users`.
 >
 >Pour plus d’informations sur la marche à suivre, voir [Autorisations dans AEM](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -384,7 +384,7 @@ Un groupe est un ensemble d’utilisateurs.
 
 Les utilisateurs et les groupes peuvent être configurés à l’aide de la fonctionnalité Administration utilisateur de la console de sécurité.
 
-### Accès à la fonctionnalité d’administration des utilisateurs avec la console de sécurité {#accessing-user-administration-with-the-security-console}
+### Accès à la fonctionnalité d’administration des utilisateurs avec la console de sécurité  {#accessing-user-administration-with-the-security-console}
 
 Vous pouvez accéder à tous les utilisateurs, groupes et autorisations associées à l’aide de la console de sécurité. Toutes les procédures décrites dans cette section sont exécutées dans cette fenêtre.
 
@@ -410,20 +410,20 @@ Les onglets permettent d’accéder à diverses configurations :
 
 | Tab | Description |
 |--- |--- |
-| Zone de filtre | Mécanisme de filtrage des utilisateurs et/ou groupes répertoriés. See [Filtering Users and Groups](#filtering-users-and-groups). |
-| Masquer les utilisateurs | Bascule qui masquera tous les utilisateurs répertoriés, en ne laissant que les groupes. See [Hiding Users and Groups](#hiding-users-and-groups). |
-| Masquer Groupes | Bascule qui masquera tous les groupes répertoriés, laissant uniquement les utilisateurs. See [Hiding Users and Groups](#hiding-users-and-groups). |
+| Zone de filtre | Mécanisme de filtrage des utilisateurs et/ou groupes répertoriés. Voir [Filtrage des utilisateurs et des groupes](#filtering-users-and-groups). |
+| Masquer les utilisateurs | Bascule qui masquera tous les utilisateurs répertoriés, en ne laissant que les groupes. Voir [Masquage des utilisateurs et des groupes](#hiding-users-and-groups). |
+| Masquer Groupes | Bascule qui masquera tous les groupes répertoriés, laissant uniquement les utilisateurs. Voir [Masquage des utilisateurs et des groupes](#hiding-users-and-groups). |
 | Modifier | Un menu vous permettant de créer et de supprimer, d’activer et de désactiver des utilisateurs ou des groupes. Voir [Création d’utilisateurs et de groupes](#creating-users-and-groups) et [Suppression d’utilisateurs et de groupes](#deleting-users-and-groups). |
-| Propriétés | Liste des informations sur l’utilisateur ou le groupe qui peuvent inclure des informations par courrier électronique, une description et des informations de nom. Vous permet également de modifier le mot de passe d’un utilisateur. Voir [Création d’utilisateurs et de groupes](#creating-users-and-groups), [Modification des propriétés](#modifying-user-and-group-properties) d’utilisateur et de groupe et [Modification du mot de passe](#changing-a-user-password)d’utilisateur. |
+| Propriétés | Liste des informations sur l’utilisateur ou le groupe qui peuvent inclure des informations par courrier électronique, une description et des informations de nom. Vous permet également de modifier le mot de passe d’un utilisateur. Voir [Création d’utilisateurs et de groupes](#creating-users-and-groups), [Modification des propriétés d’utilisateur et de groupe](#modifying-user-and-group-properties) et [Modification du mot de passe d’un utilisateur](#changing-a-user-password). |
 | Groupes | Liste tous les groupes auxquels appartient l’utilisateur ou le groupe sélectionné. Vous pouvez affecter l’utilisateur ou le groupe sélectionné à d’autres groupes ou les supprimer des groupes. Voir [Groupes](#adding-users-or-groups-to-a-group). |
 | Membres | Disponible uniquement pour les groupes. Répertorie les membres d’un groupe spécifique. Voir [Membres](#members-adding-users-or-groups-to-a-group). |
-| Autorisations | Vous pouvez attribuer des autorisations à un utilisateur ou à un groupe. Permet de contrôler les éléments suivants :<ul><li>Autorisations liées à des pages/noeuds spécifiques. See [Setting Permissions](#setting-permissions). </li><li>Autorisations liées à la création et la suppression de pages et à la modification de la hiérarchie. ? ? ? vous permet d&#39; [allouer des privilèges](#settingprivileges), tels que la modification de hiérarchie, ce qui vous permet de créer et de supprimer des pages,</li><li>Autorisations liées aux privilèges [de](#setting-replication-privileges) réplication (généralement de l’auteur à la publication) selon un chemin d’accès.</li></ul> |
-| Emprunteurs d’identité | Permet à un autre utilisateur d’emprunter l’identité du compte. Utile lorsque vous avez besoin qu’un utilisateur agisse au nom d’un autre utilisateur. Voir [Personnalisation des utilisateurs](#impersonating-another-user). |
-| Preferences | Définit les [préférences du groupe ou de l’utilisateur](#setting-user-and-group-preferences). Par exemple, les préférences de langue. |
+| Autorisations | Vous pouvez attribuer des autorisations à un utilisateur ou à un groupe. Permet de contrôler les éléments suivants :<ul><li>Autorisations liées à des pages/noeuds spécifiques. Voir [Définition des autorisations](#setting-permissions). </li><li>Autorisations liées à la création et la suppression de pages et à la modification de la hiérarchie. ? ? ? vous permet [d&#39;allouer des privilèges](#settingprivileges), tels que la modification de la hiérarchie, qui vous permet de créer et de supprimer des pages,</li><li>Autorisations liées aux [privilèges de réplication](#setting-replication-privileges) (généralement de l’auteur à la publication) selon un chemin d’accès.</li></ul> |
+| Emprunteurs d’identité | Permet à un autre utilisateur d’emprunter l’identité du compte. Utile lorsque vous avez besoin qu’un utilisateur agisse au nom d’un autre utilisateur. Voir [Utilisateurs qui s’identifient](#impersonating-another-user). |
+| Preferences | Définit les [préférences du groupe ou de l&#39;utilisateur](#setting-user-and-group-preferences). Par exemple, les préférences de langue. |
 
 ### Filtrage des utilisateurs et des groupes {#filtering-users-and-groups}
 
-Vous pouvez filtrer la liste en entrant une expression de filtre, qui masque tous les utilisateurs et les groupes qui ne correspondent pas à l’expression. You can also hide users and groups by using the [Hide User and Hide Group](#hiding-users-and-groups) buttons.
+Vous pouvez filtrer la liste en entrant une expression de filtre, qui masque tous les utilisateurs et les groupes qui ne correspondent pas à l’expression. Vous pouvez également masquer des utilisateurs et des groupes à l’aide des boutons [Masquer l’utilisateur et Masquer le groupe](#hiding-users-and-groups).
 
 Pour filtrer les utilisateurs ou les groupes :
 
@@ -466,7 +466,7 @@ Pour créer un groupe ou un utilisateur :
 
 1. Cliquez sur **Créer**. L’utilisateur ou le groupe que vous avez créé apparaît dans l’arborescence.
 
-### Suppression d’utilisateurs et de groupes {#deleting-users-and-groups}
+### Suppression d’utilisateurs et de groupes  {#deleting-users-and-groups}
 
 Pour supprimer un utilisateur ou un groupe :
 
@@ -494,7 +494,7 @@ Utilisez la procédure suivante pour modifier le mot de passe d’un utilisateur
 
 >[!NOTE]
 >
->Vous ne pouvez pas utiliser la console de sécurité pour modifier le mot de passe d’administrateur. To change the password for the admin account, use the [Users console](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) that Granite Operations provides.
+>Vous ne pouvez pas utiliser la console de sécurité pour modifier le mot de passe d’administrateur. Pour modifier le mot de passe du compte d’administration, utilisez la [console Utilisateurs](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) fournie par Granite Operations.
 >
 >Si vous utilisez AEM Forms on JEE, n’utilisez pas les instructions ci-dessous pour modifier le mot de passe, mais utilisez la console d’administration AEM Forms on JEE (/adminui) pour modifier le mot de passe.
 
@@ -507,7 +507,7 @@ Utilisez la procédure suivante pour modifier le mot de passe d’un utilisateur
 1. Saisissez le nouveau mot de passe deux fois. En effet, comme il ne s’affiche pas en texte clair, il vous est demandé de le confirmer. Si les deux mots de passe entrés ne correspondent pas, le système affiche un message d’erreur.
 1. Cliquez sur **Définir** afin d’activer le nouveau mot de passe du compte.
 
-### Ajout d’utilisateurs ou de groupes à un groupe {#adding-users-or-groups-to-a-group}
+### Ajout d’utilisateurs ou de groupes à un groupe  {#adding-users-or-groups-to-a-group}
 
 AEM propose trois manières différentes d’ajouter des utilisateurs ou des groupes à un groupe existant :
 
@@ -515,7 +515,7 @@ AEM propose trois manières différentes d’ajouter des utilisateurs ou des gro
 * Lorsque vous vous trouvez dans le membre, vous pouvez ajouter des membres à des groupes.
 * Lorsque vous travaillez sur les autorisations, vous pouvez ajouter des membres à des groupes.
 
-### Groupes - Ajout d’utilisateurs ou de groupes à un groupe {#groups-adding-users-or-groups-to-a-group}
+### Groupes - Ajout d’utilisateurs ou de groupes à un groupe  {#groups-adding-users-or-groups-to-a-group}
 
 L’onglet **Groupes** indique à quels groupes le compte actuel appartient. Vous pouvez l’utiliser pour ajouter le compte sélectionné à un groupe :
 
@@ -603,11 +603,11 @@ Pour supprimer des membres d’un groupe dans un chemin d’accès spécifique 
 
 ### Synchronisation des utilisateurs {#user-synchronization}
 
-When the deployment is a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), users and groups need to be synchronized among all publish nodes.
+Lorsque le déploiement est une [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm), les utilisateurs et les groupes doivent être synchronisés entre tous les noeuds de publication.
 
 Pour en savoir plus sur la synchronisation des utilisateurs et son activation, voir [Synchronisation des utilisateurs](/help/sites-administering/sync.md).
 
-## Gestion des autorisations {#managing-permissions}
+## Gestion des autorisations  {#managing-permissions}
 
 >[!NOTE]
 >
@@ -639,7 +639,7 @@ L’autorisation de réplication est le droit de publier du contenu, et elle peu
 >
 >* Un droit de réplication appliqué à un groupe s’applique à tous les utilisateurs figurant dans ce groupe.
 >* Les autorisations de réplication de l’utilisateur remplacent les autorisations de réplication du groupe.
->* Les droits de réplication Autoriser ont une priorité supérieure aux droits de réplication Refuser. See [Permissions in AEM](#permissions-in-aem) for more information.
+>* Les droits de réplication Autoriser ont une priorité supérieure aux droits de réplication Refuser. Voir [Permissions dans AEM](#permissions-in-aem) pour plus d&#39;informations.
 
 >
 
@@ -656,7 +656,7 @@ Pour définir des autorisations de réplication :
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.
 
-### Recherche de nœuds {#searching-for-nodes}
+### Recherche de nœuds  {#searching-for-nodes}
 
 Lors de l’ajout ou de la suppression d’autorisations, vous pouvez parcourir le nœud ou le rechercher.
 
@@ -703,7 +703,7 @@ Pour emprunter l’identité d’un utilisateur existant :
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Cliquez sur **Save**.
+1. Cliquez sur **Enregistrer**.
 
 ### Définition de préférences d’utilisateur et de groupe {#setting-user-and-group-preferences}
 
@@ -716,7 +716,7 @@ Pour définir des préférences d’utilisateur et de groupe, y compris la langu
 
 1. Apportez les modifications nécessaires aux préférences d’utilisateur ou de groupe et cliquez sur **Enregistrer** lorsque vous avez terminé.
 
-### Attribution de l’autorisation de gérer d’autres utilisateurs à des utilisateurs ou administrateurs {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
+### Attribution de l’autorisation de gérer d’autres utilisateurs à des utilisateurs ou administrateurs  {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
 
 Pour attribuer à des utilisateurs ou administrateurs l’autorisation de supprimer/activer/désactiver d’autres utilisateurs :
 
@@ -730,17 +730,17 @@ Pour attribuer à des utilisateurs ou administrateurs l’autorisation de suppri
 
    L’utilisateur sélectionné a désormais la possibilité de désactiver, d’activer, de supprimer et de créer des utilisateurs.
 
-### Extension d’autorisations au niveau du projet {#extending-privileges-on-a-project-level}
+### Extension d’autorisations au niveau du projet  {#extending-privileges-on-a-project-level}
 
 Si vous envisagez d’implémenter des autorisations spécifiques à l’application, voici ce qu’il faut savoir pour implémenter une application personnalisée, ainsi que la méthode à suivre pour appliquer cette autorisation dans CQ :
 
-Le privilège hierarchy-modification est couvert par une combinaison de privilèges jcr. The replication privilege is named **crx:replicate** that is stored/evaluated along with other privileges on the jcr repository. Il n’est toutefois pas appliqué au niveau jcr.
+Le privilège hierarchy-modification est couvert par une combinaison de privilèges jcr. Le privilège de réplication est nommé **crx:replicate** qui est stocké/évalué avec d&#39;autres privilèges sur le référentiel jcr. Il n’est toutefois pas appliqué au niveau jcr.
 
-The definition and registration of custom privileges is officially part of the [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) as of version 2.4 (see also [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Further usage is covered by JCR Access Control Management such as definedby [JSR 283](https://jcp.org/en/jsr/detail?id=283) (section 16). En outre, l’API Jackrabbit définit quelques extensions.
+La définition et l&#39;enregistrement des privilèges personnalisés font officiellement partie de l&#39;[API Jackrabbit](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) à partir de la version 2.4 (voir aussi [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Les autres utilisations sont couvertes par la gestion de Contrôle d&#39;accès JCR, telle que définie par [JSR 283](https://jcp.org/en/jsr/detail?id=283) (section 16). En outre, l’API Jackrabbit définit quelques extensions.
 
-The privilege registration mechanism is reflected in the UI under **Repository Configuration**.
+Le mécanisme d&#39;enregistrement des privilèges est reflété dans l&#39;interface utilisateur sous **Configuration du référentiel**.
 
-L’enregistrement de nouveaux privilèges (personnalisés) est lui-même protégé par un privilège intégré qui doit être accordé au niveau du référentiel (dans JCR : transmission de &quot;null&quot; en tant que paramètre &quot;absPath&quot; dans l’api mgt ac, voir jsr 333 pour plus d’informations). By default, **admin** and all members of administrators have that privilege granted.
+L’enregistrement de nouveaux privilèges (personnalisés) est lui-même protégé par un privilège intégré qui doit être accordé au niveau du référentiel (dans JCR : transmission de &quot;null&quot; en tant que paramètre &quot;absPath&quot; dans l’api mgt ac, voir jsr 333 pour plus d’informations). Par défaut, **admin** et tous les membres des administrateurs disposent de ce privilège.
 
 >[!NOTE]
 >
