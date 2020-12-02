@@ -42,13 +42,13 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
    [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Go to AEM package manager at https://[*host*]:[*port*]/crx/packmgr/.
+1. Accédez à AEM gestionnaire de packages à l’adresse https://[*host*]:[*port*]/crx/packmgr/.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
 
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Installer]** en regard du package pour installer le package. 
-1. Go to **[!UICONTROL AEM Web Console Configuration]**
-page at https://[*host*]:[*port*]/system/console/configMgr.
+1. Accédez à **[!UICONTROL AEM Configuration de la console Web]**
+à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
 1. Cliquez pour ouvrir **[!UICONTROL Forms Portal Draft and Submission Configuration]** (Configuration des brouillons et des envois du portail Forms) en mode d’édition.
 
 1. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
@@ -343,9 +343,9 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
     util.js
    ```
 
-   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. The `util` folder and `util.js` file are created in suceeeding steps.
+   Dans le code ci-dessus, `util` est le nom du dossier et`util.js` est le nom du fichier dans le dossier `util`. Le dossier `util` et le fichier `util.js` sont créés lors des étapes suivantes.
 
-1. Cliquez avec le bouton droit sur le nœud `cq:ClientLibraryFolder` créé à l’étape 2 et sélectionnez Créer > Créer un dossier. Create a folder named `util`. Cliquez sur **[!UICONTROL Enregistrer tout]**. Cliquez avec le bouton droit sur le dossier `util` et sélectionnez Créer > Créer un fichier. Create a file named `util.js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Cliquez avec le bouton droit sur le nœud `cq:ClientLibraryFolder` créé à l’étape 2 et sélectionnez Créer > Créer un dossier. Créez un dossier nommé `util`. Cliquez sur **[!UICONTROL Enregistrer tout]**. Cliquez avec le bouton droit sur le dossier `util` et sélectionnez Créer > Créer un fichier. Créez un fichier nommé `util.js`. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 
 1. Ajoutez le code suivant au fichier util.js et cliquez sur **[!UICONTROL Enregistrer tout]**. Le code valide la longueur du nom de fichier.
 
@@ -408,15 +408,15 @@ Effectuez les étapes suivantes pour créer [une bibliothèque cliente](/help/si
 
    * **[!UICONTROL Nom :]** catégories
 
-   * **[!UICONTROL Type :]** Chaîne
+   * **[!UICONTROL Type :]** chaîne
 
    * **[!UICONTROL Valeur :]** fp.validation
 
    * **[!UICONTROL Option multiple :]** Activé 
 
-1. Navigate to `/libs/fd/af/runtime/clientlibs/guideRuntime`and append the `fp.validation` value to the embed property.
+1. Accédez à `/libs/fd/af/runtime/clientlibs/guideRuntime`et ajoutez la valeur `fp.validation` à la propriété embed.
 
-1. Navigate to /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA and append the `fp.validation` value to embed property.
+1. Accédez à /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA et ajoutez la valeur `fp.validation` à la propriété embed.
 
    >[!NOTE]
    >
