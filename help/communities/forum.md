@@ -35,25 +35,25 @@ La fonction Forum offre un espace aux visiteurs connectés (membres de la commun
 Cette section de la documentation décrit:
 
 * Ajouter la fonction du forum à un site AEM.
-* Configuration settings for the `Forum` component.
+* Paramètres de configuration du composant `Forum`.
 
 ### Ajout d’un forum à une page {#adding-a-forum-to-a-page}
 
-To add a `Forum` component to a page in author mode, use the component browser to locate
+Pour ajouter un composant `Forum` à une page en mode création, utilisez l’explorateur de composants pour localiser
 
 * `Communities / Forum`
 
 et faites glisser le composant sur la page où le forum doit être visible.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-forum.md#essentials-for-client-side) are included, this is how the `Forum` component will appear:
+Lorsque les [bibliothèques client requises](/help/communities/essentials-forum.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Forum` apparaîtra :
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Configuration d’un forum {#configuring-a-forum}
 
-Select the placed `Forum` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Forum` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -94,7 +94,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser le balisage**
 
-   If checked, allow members to add tag labels to their post (see **Tag field** tab). Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à ajouter des étiquettes de balise à leur publication (voir **onglet Champ de balise**). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les transferts de fichiers**
 
@@ -102,7 +102,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser abonnement**
 
-   Si cette option est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [avertis](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Autoriser l’épinglage**
 
@@ -110,21 +110,22 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)phare. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, l’idée peut être identifiée comme [contenu incitatif](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` la vérification et la configuration [du](/help/communities/email.md)courrier électronique. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, autorisez les membres à être informés des nouvelles publications par courriel ([abonnement](/help/communities/subscriptions.md)). `Allow Following` doit être vérifié et [e-mail configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
 
 * **Taille maximale du fichier**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. 
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
-* **Taille** de fichier d’image de pièce jointe maximale adaptée uniquement si l’option Autoriser les téléchargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+* **Taille maximale du fichier image jointPertinente uniquement si l’option Autoriser les téléchargements de fichiers est cochée.**
+Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **Autoriser les réponses à thème**
 
@@ -144,7 +145,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Afficher les badges**
 
-   Si cette option est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, afficher les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les membres privilégiés**
 
@@ -172,11 +173,11 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 >[!NOTE]
 >
->Il peut être nécessaire de vérifier à la fois `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` d&#39;activer les commentaires sur un sujet.
+>Il peut être nécessaire de vérifier `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` pour activer les commentaires sur un sujet.
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
-Under the **User Moderation** tab, specify how the posted topics and replies (user generated content) are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous l’onglet **Modération utilisateur**, spécifiez comment les rubriques publiées et les réponses (contenu généré par l’utilisateur) sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 * **Refuser les publications**
 
@@ -216,7 +217,7 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Espaces de noms autorisés**
 
-   Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **Paramètres**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **Limite de suggestions**
 
@@ -232,7 +233,7 @@ Sous l’onglet **Traduction**, si la traduction est activée pour le site de la
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet Paramètres **de** tri, indiquez comment les commentaires publiés sont triés lorsqu’ils s’affichent.
+Sous l’onglet **Paramètres de tri**, spécifiez le mode de tri des commentaires publiés lorsqu’ils s’affichent.
 
 * **Trier par**
 
