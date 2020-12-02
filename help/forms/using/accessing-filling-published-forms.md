@@ -30,7 +30,7 @@ Pour plus d’informations sur le portail des formulaires et ses fonctions, repo
 
 ## Prise en main de Forms Portal {#getting-started-with-forms-portal}
 
-Accédez à la page du portail des formulaires publiés. For more information about creating a forms portal page, see [Creating a forms portal page](../../forms/using/creating-form-portal-page.md).
+Accédez à la page du portail des formulaires publiés. Pour plus d’informations sur la création d’une page Forms Portal, voir [Création d’une page Forms Portal](../../forms/using/creating-form-portal-page.md).
 
 Le composant Search and Lister de Forms Portal affiche les formulaires disponibles sur l’instance de publication du serveur AEM. Cette liste comprend tous les formulaires ou les formulaires définis dans le filtre au moment de la création de la page Forms Portal. Une page de Forms Portal est similaire à celle illustrée à la figure suivante :
 
@@ -65,7 +65,7 @@ La recherche avancée vous permet de rechercher des formulaires en fonction de p
 
 Le composant Lister affiche des formulaires en fonction de paramètres de recherche. Chaque formulaire dans le résultat de la recherche est signalé par une icône, qui est liée au formulaire associé. Pour ouvrir et utiliser le formulaire associé, cliquez sur l’icône.
 
-### Remplissage d’un formulaire {#filling-a-form}
+### Remplissage d’un formulaire  {#filling-a-form}
 
 ![Exemple de formulaire adaptatif](assets/filling_a_form.png)
 
@@ -75,7 +75,7 @@ L’accès aux formulaires peut s’effectuer par le biais du lien fourni avec c
 
 Chaque formulaire contient des informations d’aide qui permettent à l’utilisateur de le remplir.
 
-#### Drafts &amp; Submission {#drafts-and-submission}
+#### Drafts &amp; Submission  {#drafts-and-submission}
 
 L’utilisateur a la possibilité d’enregistrer un brouillon de formulaire en cliquant sur le bouton Enregistrer. Il peut ainsi travailler sur un formulaire pendant un certain temps avant de l’envoyer.
 
