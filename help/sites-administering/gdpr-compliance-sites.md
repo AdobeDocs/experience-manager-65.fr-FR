@@ -46,7 +46,7 @@ Par défaut, les composants AEM Sites ne stockent pas les données de formulair
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
-AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md) that can be used for managing the opt-in/opt-out for users.
+aem dispose d’un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -54,7 +54,7 @@ AEM Sites comprend une intégration facultative à Enhanced Insights by Analytic
 
 Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Analytics, voir [Adobe Analytics et RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-## Enhanced Personalization by Target {#enhanced-personalization-by-target}
+## Enhanced Personalization by Target  {#enhanced-personalization-by-target}
 
 AEM Sites comprend une intégration facultative à Enhanced Personalization by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
 
@@ -62,7 +62,7 @@ Pour plus d’informations sur la gestion des requêtes RGPD des personnes titul
 
 ## ContextHub {#contexthub}
 
-AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md). Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
+aem fournit une couche de données facultative avec [ContextHub](/help/sites-developing/contexthub.md). Cette option conserve les données spécifiques aux visiteurs dans le navigateur, afin qu’elles soient utilisées pour la personnalisation basée sur des règles.
 
 Par défaut, ces données sur les visiteurs ne sont pas stockées dans AEM ; AEM envoie des règles à la couche de données de façon à prendre des décisions de personnalisation dans le navigateur.
 
@@ -72,7 +72,7 @@ Par défaut, ces données sur les visiteurs ne sont pas stockées dans AEM ; AE
 >
 >Les versions 5.5 et antérieures d’Adobe CQ sont désormais en fin de vie et ne sont pas abordées dans cette documentation.
 
-### Mise en œuvre de la souscription/l’exclusion {#implementing-opt-in-opt-out}
+### Mise en œuvre de la souscription/l’exclusion  {#implementing-opt-in-opt-out}
 
 Le propriétaire du site doit mettre en œuvre un composant d’exclusion en suivant les instructions ci-après.
 
@@ -104,7 +104,7 @@ Ces instructions mettent en œuvre la souscription comme valeur par défaut. Ain
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### Aperçu de la persistance de ContextHub {#previewing-persistence-of-contexthub}
+### Aperçu de la persistance de ContextHub  {#previewing-persistence-of-contexthub}
 
 Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisateur peut :
 
@@ -192,7 +192,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### Effacement de la persistance de ContextHub {#clearing-persistence-of-contexthub}
+### Effacement de la persistance de ContextHub  {#clearing-persistence-of-contexthub}
 
 Pour effacer la persistance de ContextHub :
 
