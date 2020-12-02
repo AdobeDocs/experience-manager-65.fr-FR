@@ -24,7 +24,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->In the following tables, for the key combinations in the **Shortcut** column, both Ctrl and Command keys work on macOS.
+>Dans les tableaux suivants, pour les combinaisons de touches de la colonne **Raccourci**, les touches Ctrl et Commande fonctionnent sur macOS.
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 Lors de l’utilisation des [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md), plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau.
 
-## Raccourcis clavier pour les développeurs {#keyboard-shortcuts-for-development}
+## Raccourcis clavier pour les développeurs  {#keyboard-shortcuts-for-development}
 
 Des raccourcis clavier supplémentaires sont disponibles pour les développeurs qui utilisent l’éditeur de page.
 
@@ -170,7 +170,7 @@ Des raccourcis clavier supplémentaires sont disponibles pour les développeurs 
   </tr>
   <tr>
    <td>Mode d’édition</td>
-   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Définissez le suffixe suivant dans l’URL : <br /> <code>?debugClientLibs=true</code><br /> Puis utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Afficher les statistiques de synchronisation pour le chargement de page.</td>
   </tr>
  </tbody>
