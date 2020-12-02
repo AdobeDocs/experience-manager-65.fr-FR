@@ -24,6 +24,6 @@ Utilisez la page Gestion des domaines pour désigner un domaine comme obsolète.
 
 Si vous créez un domaine portant le même nom qu’un domaine supprimé, ce dernier est restauré avec ses informations. Il est impossible de supprimer le domaine par défaut (DefaultDom).
 
-1. In administration console, click **[!UICONTROL Settings > User Management > Domain Management]**.
-1. Select the check box for the domain to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Paramètres > User Management > Gestion des domaines]**.
+1. Cochez la case correspondant au domaine à supprimer, cliquez sur **[!UICONTROL Supprimer]**, puis sur **[!UICONTROL OK]**.
 
