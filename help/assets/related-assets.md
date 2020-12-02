@@ -23,11 +23,11 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
 ## Lier les ressources {#relating-assets}
 
-1. From the [!DNL Experience Manager] interface, open the **[!UICONTROL Properties]** page for an asset that you want to relate.
+1. Dans l&#39;interface [!DNL Experience Manager], ouvrez la page **[!UICONTROL Propriétés]** pour une ressource à relier.
 
    ![ouvrir la page Propriétés d’une ressource pour établir une relation avec la ressource](assets/asset-properties-relate-assets.png)
 
-   *Figure : [!DNL Assets] [!UICONTROL Page de propriétés] pour associer des ressources.*
+   *Figure :  [!DNL Assets]  Propriétés pour associer des ressources.*
 
    Vous pouvez également sélectionner la ressource en mode Liste.
 
@@ -37,7 +37,7 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. To relate another asset with the asset you selected, click **[!UICONTROL Relate]** ![relate assets](assets/do-not-localize/link-relate.png) from the toolbar.
+1. Pour établir une relation entre un autre fichier et le fichier sélectionné, cliquez sur **[!UICONTROL Reler]** ![relier les ressources](assets/do-not-localize/link-relate.png) dans la barre d’outils.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour mettre en relation le fichier source avec la ressource, sélectionnez **[!UICONTROL Source]** dans la liste.
@@ -49,25 +49,25 @@ Cette fonctionnalité vous permet de partager un fichier PDF ou JPG basse résol
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Cliquez sur **[!UICONTROL Confirmer]**.
-1. Click **[!UICONTROL OK]** to close the dialog. En fonction de la relation que vous avez choisie à l’étape 3, la ressource associée apparaît sous une catégorie appropriée dans la section **[!UICONTROL En relation]**. Par exemple, si la ressource que vous avez mise en relation est le fichier source de la ressource actuelle, elle apparaît sous **[!UICONTROL Source]**.
+1. Cliquez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. En fonction de la relation que vous avez choisie à l’étape 3, la ressource associée apparaît sous une catégorie appropriée dans la section **[!UICONTROL En relation]**. Par exemple, si la ressource que vous avez mise en relation est le fichier source de la ressource actuelle, elle apparaît sous **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Pour annuler la relation entre un élément, cliquez sur **[!UICONTROL Annuler la relation]** des éléments ![](assets/do-not-localize/link-unrelate-icon.png) non liés dans la barre d’outils.
+1. Pour annuler la relation entre un élément, cliquez sur **[!UICONTROL Annuler la relation]** ![dissocier les éléments](assets/do-not-localize/link-unrelate-icon.png) dans la barre d’outils.
 
-1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
+1. Sélectionnez les ressources que vous souhaitez annuler la relation dans la boîte de dialogue **[!UICONTROL Supprimer les relations]**, puis cliquez sur **[!UICONTROL Annuler la relation]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Click **[!UICONTROL OK]** to close the dialog. Les ressources pour lesquelles vous avez supprimé des relations sont supprimées de la liste des ressources mises en relation dans la section **[!UICONTROL En relation]**.
+1. Cliquez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Les ressources pour lesquelles vous avez supprimé des relations sont supprimées de la liste des ressources mises en relation dans la section **[!UICONTROL En relation]**.
 
 ## Traduire les éléments connexes {#translating-related-assets}
 
-La création de relations source/dérivée entre les ressources à l’aide de la fonction ressources connexes s’avère également utile dans les workflows de traduction. When you run a translation workflow on a derived asset, [!DNL Experience Manager Assets] automatically fetches any asset that the source file references and includes it for translation. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
+La création de relations source/dérivée entre les ressources à l’aide de la fonction ressources connexes s’avère également utile dans les workflows de traduction. Lorsque vous exécutez un processus de traduction sur une ressource dérivée, [!DNL Experience Manager Assets] récupère automatiquement toute ressource référencée par le fichier source et l’inclut pour la traduction. De cette manière, la ressource référencée par la ressource source est traduite avec les ressources source et dérivées. Par exemple, supposons que votre copie de langue anglaise inclut une ressource dérivée et son fichier source, comme indiqué sur l’image ci-dessous.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-If the source file is related to another asset, [!DNL Experience Manager Assets] fetches the referenced asset and includes it for translation.
+Si le fichier source est associé à un autre fichier, [!DNL Experience Manager Assets] récupère l’actif référencé et l’inclut pour traduction.
 
 ![la page Propriétés du fichier affiche le fichier source du fichier associé à inclure pour la traduction.](assets/asset-properties-source-asset.png)
 
@@ -75,7 +75,7 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
 1. Traduisez les ressources du dossier source dans une langue cible en suivant les étapes de la section [Créer un projet de traduction](translation-projects.md#create-a-new-translation-project). Par exemple, dans ce cas, traduisez vos ressources en français.
 
-1. From the [!UICONTROL Projects] page, open the translation folder.
+1. Dans la page [!UICONTROL Projets], ouvrez le dossier de traduction.
 
 1. Cliquez sur la mosaïque du projet pour ouvrir la page de détails.
 
@@ -85,10 +85,10 @@ If the source file is related to another asset, [!DNL Experience Manager Assets]
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Select the asset and then click **[!UICONTROL Reveal in Assets]** from the toolbar to view the translation status for the asset.
+1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Afficher dans les ressources]** dans la barre d’outils pour vue l’état de traduction de la ressource.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
 1. Pour vérifier si les fichiers associés à la source ont été traduits, cliquez sur le fichier source.
 
-1. Select the asset that is related to the source, and then click **[!UICONTROL Reveal in Assets]**. La ressource associée traduite s’affiche.
+1. Sélectionnez la ressource associée à la source, puis cliquez sur **[!UICONTROL Afficher dans les ressources]**. La ressource associée traduite s’affiche.
