@@ -18,7 +18,7 @@ ht-degree: 79%
 ---
 
 
-# Adding Search&amp;Promote features to your page{#adding-search-promote-features-to-your-page}
+# Ajouter des fonctionnalités de Search &amp; Promote à votre page{#adding-search-promote-features-to-your-page}
 
 Pour intégrer des fonctionnalités Search&amp;Promote à votre site web, utilisez les composants Search&amp;Promote afin d’ajouter les fonctions suivantes dans vos pages :
 
@@ -31,5 +31,5 @@ Notez que vous pouvez utiliser les fonctionnalités Search&amp;Promote uniquemen
 
 >[!NOTE]
 >
->Des informations détaillées sur l’ajout des fonctionnalités Search&amp;Promote à votre page sont disponibles dans la documentation sur la création dans l’IU classique. See [Adding Search &amp; Promote features to your page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) for more information.
+>Des informations détaillées sur l’ajout des fonctionnalités Search&amp;Promote à votre page sont disponibles dans la documentation sur la création dans l’IU classique. Voir [Ajouter les fonctionnalités de Search &amp; Promote à votre page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) pour plus d’informations.
 
