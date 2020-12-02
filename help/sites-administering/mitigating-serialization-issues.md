@@ -30,7 +30,7 @@ Le fichier JAR d’agent inclus dans ce module est la distribution de NotSoSeria
 
 Par défaut, l&#39;agent effectue une vérification de liste bloquée des classes vulnérables connues actuelles. Cette liste bloquée est destinée à vous protéger de la liste actuelle d&#39;exploits qui utilisent ce type de vulnérabilité.
 
-The block list and allow list can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
+La liste bloquée et la liste autorisée peuvent être configurées en suivant les instructions de la section [Configuration de l&#39;agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) de cet article.
 
 L’agent est conçu pour vous aider à limiter les dernières classes vulnérables connues. Si votre projet désérialise des données non approuvées, il peut être vulnérable aux attaques par déni de service, aux attaques de mémoire insuffisante et aux futures attaques inconnues de désérialisation.
 
@@ -47,7 +47,7 @@ Adobe prend officiellement en charge Java 6, 7 et 8, toutefois, il semble que N
 1. Accédez à la console Web du lot à l&#39;adresse `https://server:port/system/console/bundles`
 1. Recherchez le lot de sérialisation et démarrez-le. Cela devrait charger automatiquement et dynamiquement l’agent NotSoSerial.
 
-## Installation de l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}
+## Installation de l’agent sur les serveurs d’applications  {#installing-the-agent-on-application-servers}
 
 L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM pour les serveurs d’applications. Cependant, vous pouvez l’extraire du fichier de distribution JAR d’AEM et l’utiliser avec la configuration de votre serveur d’applications :
 
@@ -57,9 +57,9 @@ L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM p
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Go to the location of the newly unzipped AEM quickstart, and copy the `crx-quickstart/opt/notsoserial/` folder to the `crx-quickstart` folder of the AEM application server installation.
+1. Accédez à l’emplacement de l’AEM décompressé de démarrage rapide et copiez le dossier `crx-quickstart/opt/notsoserial/` dans le dossier `crx-quickstart` de l’installation AEM du serveur d’applications.
 
-1. Change the ownership of `/opt` to the user running the server:
+1. Remplacez la propriété de `/opt` par l’utilisateur exécutant le serveur :
 
    ```shell
    chown -R opt <user running the server>
@@ -67,13 +67,13 @@ L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM p
 
 1. Configurez l’agent et vérifiez qu’il a été correctement activé, comme indiqué dans les sections suivantes de cet article.
 
-## Configuration de l’agent {#configuring-the-agent}
+## Configuration de l’agent  {#configuring-the-agent}
 
 La configuration par défaut est appropriée pour la plupart des installations. Cela inclut une liste bloquée de classes vulnérables connues d&#39;exécution à distance et une liste autorisée de paquets où la désérialisation de données fiables devrait être relativement sûre.
 
    La configuration de pare-feu est dynamique et peut être changée à tout moment en :
 
-1. Going to the Web Console at `https://server:port/system/console/configMgr`
+1. Accéder à la console Web à `https://server:port/system/console/configMgr`
 1. recherchant **Configuration du pare-feu de désérialisation** et en cliquant dessus.
 
    >[!NOTE]
@@ -113,7 +113,7 @@ Pour plus d’informations sur la résolution des incidents avec l’agent, voir
 
 >[!NOTE]
 >
->If you add `org.apache.commons.collections.functors` to the allow list, the health check will always fail.
+>Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, la vérification d&#39;intégrité échoue toujours.
 
 ## Gestion des erreurs lors du chargement dynamique de l’agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -133,12 +133,12 @@ Pour charger l’agent manuellement, suivez les instructions ci-dessous :
 
    >[!NOTE]
    >
-   >The Adobe distribution of the NotSoSerial agent jar can be found in the `crx-quickstart/opt/notsoserial/` folder of your AEM installation.
+   >La distribution par Adobe du fichier jar de l&#39;agent NotSoSerial se trouve dans le dossier `crx-quickstart/opt/notsoserial/` de votre installation AEM.
 
 1. Arrêtez et redémarrez la JVM.
 
 1. Vérifiez à nouveau l’activation de l’agent en suivant les étapes décrites ci-dessus dans [Vérification de l’activation de l’agent](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation).
 
-## Autres considérations {#other-considerations}
+## Autres considérations  {#other-considerations}
 
 Si vous exécutez sur une JVM IBM, voir la documentation sur la prise en charge de l’API Attach Java à cet [emplacement](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
