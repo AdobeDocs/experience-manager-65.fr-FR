@@ -30,7 +30,7 @@ Vous pouvez gérer les paramètres de configuration de ces lots en :
 
 * utilisant la [console web Adobe CQ](#osgi-configuration-with-the-web-console) ;
 * utilisant les [fichiers de configuration](#osgi-configuration-with-configuration-files) ;
-* configuring [content-nodes ( `sling:OsgiConfig`) in the repository](#osgi-configuration-in-the-repository)
+* configuration de [content-nodes ( `sling:OsgiConfig`) dans le référentiel](#osgi-configuration-in-the-repository)
 
 L’une ou l’autre des méthodes peut être utilisée bien qu’il existe des différences subtiles, principalement en relation avec les [modes d’exécution](/help/sites-deploying/configure-runmodes.md) :
 
@@ -72,7 +72,7 @@ Toute modification apportée est immédiatement appliquée à la configuration 
 
 >[!NOTE]
 >
->Changes made in the web console are saved in the repository as [configuration files](#osgi-configuration-with-configuration-files). Ceux-ci peuvent être inclus dans les modules de contenu pour être réutilisés dans d’autres installations.
+>Les modifications effectuées dans la console Web sont enregistrées dans le référentiel sous la forme de [fichiers de configuration](#osgi-configuration-with-configuration-files). Ceux-ci peuvent être inclus dans les modules de contenu pour être réutilisés dans d’autres installations.
 
 >[!NOTE]
 >
@@ -104,19 +104,19 @@ Pour mettre à jour une configuration avec la console web :
 
    >[!NOTE]
    >
-   >Les mises à jour sont enregistrées dans le référentiel sous la forme de [fichiers de configuration](#osgi-configuration-with-configuration-files). To locate these afterwards, (e.g. to include in a content package for use on another instance) you should make a note of the persistent identity ( `PID`).
+   >Les mises à jour sont enregistrées dans le référentiel sous la forme de [fichiers de configuration](#osgi-configuration-with-configuration-files). Pour les localiser ultérieurement (par exemple, pour inclure dans un package de contenu à utiliser sur une autre instance), vous devez faire une remarque sur l&#39;identité persistante ( `PID`).
 
-1. Cliquez sur **Save**.
+1. Cliquez sur **Enregistrer**.
 
    Les modifications sont immédiatement appliquées à la configuration OSGi correspondante du système en cours d’exécution. Aucun redémarrage n’est requis.
 
    >[!NOTE]
    >
-   >You can now locate the related [configuration file(s)](#osgi-configuration-with-configuration-files); for example, to include in a content package for use on another instance.
+   >Vous pouvez maintenant localiser le ou les fichiers de configuration [associés](#osgi-configuration-with-configuration-files); par exemple, pour inclure dans un package de contenu destiné à être utilisé sur une autre instance.
 
 ## Configuration OSGi avec les fichiers de configuration {#osgi-configuration-with-configuration-files}
 
-Configuration changes made using the Web Console are persisted in the repository as configuration files ( `.config`) under:
+Les modifications de configuration effectuées à l&#39;aide de la console Web sont conservées dans le référentiel sous forme de fichiers de configuration ( `.config`) sous :
 
 `/apps`
 
@@ -157,17 +157,17 @@ La console web n’indique pas à quel emplacement les modifications ont été e
 
 1. Vous pouvez maintenant créer un module de contenu comportant ce nœud et l’utiliser comme requis dans vos autres instances.
 
-## Configuration OSGi dans le référentiel {#osgi-configuration-in-the-repository}
+## Configuration OSGi dans le référentiel  {#osgi-configuration-in-the-repository}
 
 Outre l’utilisation de la console web, vous pouvez également définir des détails de la configuration dans le référentiel. Vous pouvez ainsi configurer facilement les différents modes d’exécution.
 
 Vous réalisez ces configurations en créant des nœuds `sling:OsgiConfig` dans le référentiel à titre de références dans le système. Ces nœuds reflètent les configurations OSGi et forment une interface utilisateur permettant d’y accéder. Pour mettre à jour les données de configuration, mettez à jour les propriétés du nœud.
 
-Si vous modifiez les données de configuration dans le référentiel, les modifications sont immédiatement appliquées à la configuration OSGi appropriée, comme si les modifications avaient été effectuées à l’aide de la console web, avec les vérifications de validation et de cohérence adéquates. This also applies to the action of copying a configuration from `/libs/` to `/apps/`.
+Si vous modifiez les données de configuration dans le référentiel, les modifications sont immédiatement appliquées à la configuration OSGi appropriée, comme si les modifications avaient été effectuées à l’aide de la console web, avec les vérifications de validation et de cohérence adéquates. Cela s&#39;applique également à l&#39;action de copie d&#39;une configuration de `/libs/` à `/apps/`.
 
 Comme le même paramètre de configuration peut être situé à plusieurs endroits, le système :
 
-* searches for all nodes of type `sling:OsgiConfig`
+* recherche tous les noeuds de type `sling:OsgiConfig`
 * filtre selon le nom du service ;
 * filtre selon le mode d’exécution.
 
@@ -175,38 +175,38 @@ Comme le même paramètre de configuration peut être situé à plusieurs endroi
 >
 >Lisez aussi [comment définir une configuration basée sur le référentiel pour une instance spécifique uniquement](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html).
 
-### Ajout d’une nouvelle configuration au référentiel {#adding-a-new-configuration-to-the-repository}
+### Ajout d’une nouvelle configuration au référentiel  {#adding-a-new-configuration-to-the-repository}
 
 #### Ce que vous devez savoir {#what-you-need-to-know}
 
 Pour ajouter une nouvelle configuration au référentiel, vous devez connaître ou savoir ce qui suit :
 
-1. The **Persistent Identity** (PID) of the service.
+1. **Identité persistante** (PID) du service.
 
-   Reference the **Configurations** field in the Web console. The name is shown in brackets after the bundle name (or in the **Configuration Information** towards the bottom of the page).
+   Référencez le champ **Configurations** dans la console Web. Le nom est indiqué entre crochets après le nom du lot (ou dans **Informations de configuration** en bas de la page).
 
    Par exemple, créez un noeud `com.day.cq.wcm.core.impl.VersionManagerImpl.` pour configurer **AEM WCM Version Manager**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Whether a specific [run mode](/help/sites-deploying/configure-runmodes.md) is required. Créez le dossier :
+1. Indique si un [mode d&#39;exécution](/help/sites-deploying/configure-runmodes.md) spécifique est requis. Créez le dossier :
 
    * `config` - pour tous les modes d&#39;exécution
    * `config.author` - pour l&#39;environnement auteur
    * `config.publish` - pour l&#39;environnement de publication
    * `config.<run-mode>` - le cas échéant
 
-1. Whether a **Configuration** or **Factory Configuration** is necessary.
+1. Si une **configuration** ou **configuration d&#39;usine** est nécessaire.
 1. Les paramètres individuels à configurer y compris les définitions de paramètres existantes qui devront être recréées.
 
    Référencez le champ des paramètres individuels dans la console web. Le nom s’affiche entre parenthèses pour chaque paramètre.
 
    Par exemple, créez une propriété.
-   `versionmanager.createVersionOnActivation` pour configurer **Créer une version sur Activation**.
+   `versionmanager.createVersionOnActivation` pour configurer  **Créer une version sur Activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
+1. Existe-t-il déjà une configuration dans `/libs` ? Pour liste à toutes les configurations de votre instance, utilisez l&#39;outil **Requête** en CRXDE Lite pour envoyer la requête SQL suivante :
 
    `select * from sling:OsgiConfig`
 
@@ -220,7 +220,7 @@ Pour ajouter la nouvelle configuration au référentiel :
 
    ` /apps/<yourProject>`
 
-1. If not already existing, create the `config` folder ( `sling:Folder`):
+1. S’il n’existe pas déjà, créez le dossier `config` ( `sling:Folder`) :
 
    * `config` : applicable à tous les modes d’exécution
    * `config.<run-mode>` - spécifique à un mode d&#39;exécution particulier
@@ -230,20 +230,20 @@ Pour ajouter la nouvelle configuration au référentiel :
    * Type : `sling:OsgiConfig`
    * Nom : l&#39;identité persistante (PID);
 
-      par exemple pour AEM WCM Version Manager utilisé `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      par exemple pour AEM WCM Version Manager, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >When making a Factory Configuration append `-<identifier>` to the name.
+   >Lors de la création d&#39;une configuration d&#39;usine, ajoutez `-<identifier>` au nom.
    >
    >Comme dans : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >Where `<identifier>` is replaced by free text that you (must) enter to identify the instance (you cannot omit this information); for example:
+   >où `<identifier>` est remplacé par du texte libre que vous (devez) saisissez pour identifier l&#39;instance (vous ne pouvez pas omettre ces informations); par exemple :
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. Pour chaque paramètre que vous souhaitez configurer, créez une propriété sur ce nœud :
 
-   * Nom : nom du paramètre tel qu’il apparaît dans la console web. Il est indiqué entre parenthèses à la fin de la description du champ. Par exemple, pour une `Create Version on Activation` utilisation `versionmanager.createVersionOnActivation`
+   * Nom : nom du paramètre tel qu’il apparaît dans la console web. Il est indiqué entre parenthèses à la fin de la description du champ. Par exemple, pour `Create Version on Activation`, utilisez `versionmanager.createVersionOnActivation`
    * Type : selon le cas.
    * Valeur : selon les besoins.
 
@@ -261,19 +261,19 @@ Pour ajouter la nouvelle configuration au référentiel :
 >
 >Le chemin complet d’une configuration doit être correct pour être lu au démarrage.
 
-## Détails de la configuration {#configuration-details}
+## Détails de la configuration  {#configuration-details}
 
 ### Séquence de résolution au démarrage {#resolution-order-at-startup}
 
 L’ordre de priorité suivant est utilisé :
 
-1. Repository nodes under `/apps/*/config...`.either with type `sling:OsgiConfig` or property files.
+1. Noeuds de référentiel sous `/apps/*/config...`.soit avec un type `sling:OsgiConfig` ou des fichiers de propriétés.
 
-1. Repository nodes with type `sling:OsgiConfig` under `/libs/*/config...`. (définitions prêtes à l’emploi).
+1. Noeuds de référentiel de type `sling:OsgiConfig` sous `/libs/*/config...`. (définitions prêtes à l’emploi).
 
-1. Tout `.config` fichier de `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. sur le système de fichiers local.
+1. Tout fichier `.config` de `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. sur le système de fichiers local.
 
-This means that a generic configuration in `/libs` can be masked by a project specific configuration in `/apps`.
+Cela signifie qu&#39;une configuration générique de `/libs` peut être masquée par une configuration spécifique à un projet dans `/apps`.
 
 ### Séquence de résolution lors de l’exécution {#resolution-order-at-runtime}
 
@@ -282,8 +282,8 @@ Les modifications de la configuration apportées pendant l’exécution du syst�
 Puis, l’ordre de priorité suivant s’applique :
 
 1. La modification d’une configuration dans la console web prend effet immédiatement car elle a priorité lors de l’exécution.
-1. Modifying a configuration in `/apps` will take immediate effect.
-1. Modifying a configuration in `/libs` will take immediate effect, unless it is masked by a configuration in `/apps`.
+1. La modification d&#39;une configuration dans `/apps` prendra effet immédiatement.
+1. La modification d&#39;une configuration dans `/libs` prendra effet immédiatement, sauf si elle est masquée par une configuration dans `/apps`.
 
 ### Résolution de plusieurs modes d’exécution {#resolution-of-multiple-run-modes}
 
@@ -293,15 +293,15 @@ Pour les configurations spécifiques au mode d’exécution, plusieurs modes d�
 
 Les configurations de ces dossiers sont appliquées si tous les modes d’exécution correspondent à un mode d’exécution défini au démarrage.
 
-For example, if an instance was started with the run modes `author,dev,emea`, configuration nodes in `/apps/*/config.emea`, `/apps/*/config.author.dev/` and `/apps/*/config.author.emea.dev/` will be applied, while configuration nodes in `/apps/*/config.author.asean/` and `/config/author.dev.emea.noldap/` will not be applied.
+Par exemple, si une instance a été lancée avec les modes d&#39;exécution `author,dev,emea`, les noeuds de configuration dans `/apps/*/config.emea`, `/apps/*/config.author.dev/` et `/apps/*/config.author.emea.dev/` seront appliqués, tandis que les noeuds de configuration dans `/apps/*/config.author.asean/` et `/config/author.dev.emea.noldap/` ne seront pas appliqués.
 
 Si plusieurs configurations correspondant au même PID sont applicables, la configuration comportant le nombre le plus élevé de modes d’exécution correspondants est appliquée.
 
-For example, if an instance was started with the run modes `author,dev,emea`, and both `/apps/*/config.author/` and `/apps/*/config.emea.author/` define a configuration for
-`com.day.cq.wcm.core.impl.VersionManagerImpl`, the configuration in `/apps/*/config.emea.author/` will be applied.
+Par exemple, si une instance a été démarrée avec les modes d’exécution `author,dev,emea` et que `/apps/*/config.author/` et `/apps/*/config.emea.author/` définissent tous deux une configuration pour
+`com.day.cq.wcm.core.impl.VersionManagerImpl`, la configuration dans `/apps/*/config.emea.author/` sera appliquée.
 
 La granularité de cette règle se trouve au niveau du PID.
-You cannot define some properties for the same PID in `/apps/*/config.author/` and more specific ones in `/apps/*/config.emea.author/` for the same PID.
+Vous ne pouvez pas définir certaines propriétés pour le même PID dans `/apps/*/config.author/` et d&#39;autres dans `/apps/*/config.emea.author/` pour le même PID.
 La configuration comportant le nombre le plus élevé de modes d’exécution correspondants est effective pour tout le PID.
 
 ### Configurations standard {#standard-configurations}
@@ -322,7 +322,7 @@ La liste suivante présente une petite sélection de configurations disponibles 
 
 >[!NOTE]
 >
->As these configurations reside in `/libs` they must not be edited directly, but copied to your application area ( `/apps`) before customization.
+>Ces configurations résidant dans `/libs`, elles ne doivent pas être modifiées directement, mais copiées dans votre zone d&#39;application ( `/apps`) avant la personnalisation.
 
 Pour répertorier tous les nœuds de configuration de votre instance, utilisez la fonctionnalité **Requête** de CRXDE Lite pour envoyer la requête SQL suivante :
 
@@ -334,7 +334,7 @@ Pour répertorier tous les nœuds de configuration de votre instance, utilisez l
 
    `/apps/{somewhere}`
 
-   * Par défaut `{somewhere}` est `system/config` ainsi écrit pour la configuration
+   * Par défaut, `{somewhere}` est `system/config`, la configuration est donc écrite dans
 
       `/apps/system/config`
 
@@ -346,7 +346,7 @@ Pour répertorier tous les nœuds de configuration de votre instance, utilisez l
 
       `/apps/foo/config/someconfig`
 
-* Settings that are changed by `admin` are saved in `*.config` files under:
+* Les paramètres modifiés par `admin` sont enregistrés dans des fichiers `*.config` sous :
 
    ```
       /crx-quickstart/launchpad/config
