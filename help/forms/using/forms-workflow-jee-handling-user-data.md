@@ -25,13 +25,13 @@ Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gé
 * Utilisation d’un dossier de contrôle
 * Utilisation du courrier électronique
 
-For more information about creating AEM Forms JEE workflow process, see [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65_fr).
+Pour plus d’informations sur la création du processus de flux de travaux AEM Forms JEE, voir [Aide de Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65_fr).
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
 Lorsqu’un processus est déclenché et tout au long de sa progression, il capture des données sur les participants, les données qu’ils ont saisies dans le formulaire associé au processus et les pièces jointes ajoutées au formulaire. Les données sont stockées dans la base de données du serveur AEM Forms JEE et, si elles sont configurées, certaines données telles que les pièces jointes sont stockées dans le répertoire de stockage global de documents (GDS). Le répertoire GDS peut être configuré sur un système de fichiers partagé ou une base de données.
 
-## Accès et suppression des données utilisateur {#access-and-delete-user-data}
+## Accès et suppression des données utilisateur  {#access-and-delete-user-data}
 
 Lorsqu’un processus est déclenché, un ID d’instance de processus unique et un ID d’appel de longue durée sont générés et associés à l’instance de processus. Vous pouvez accéder et supprimer des données pour une instance de processus en fonction de l’ID d’appel de longue durée. Vous pouvez déduire l’ID d’appel de longue durée d’une instance de processus avec le nom d’utilisateur de l’initiateur du processus ou des participants au processus qui ont soumis leurs tâches.
 
@@ -39,13 +39,13 @@ Vous ne pouvez toutefois pas identifier l’ID de l’instance de processus pour
 
 * **Processus déclenché par un dossier de contrôle** : une instance de processus ne peut pas être identifiée à l’aide de son initiateur si le processus est déclenché par un dossier de contrôle. Dans ce cas, les informations de l’utilisateur sont codées dans les données stockées.
 * **Processus lancé à partir d’une instance de publication AEM** : toutes les instances de processus déclenchées depuis une instance de publication AEM ne capturent pas d’informations sur l’initiateur. Toutefois, les données utilisateur peuvent être capturées dans le formulaire associé au processus qui est stocké dans des variables de flux de travail.
-* **Processus initié par courrier électronique**: L&#39;ID d&#39;adresse électronique de l&#39;expéditeur est capturé en tant que propriété dans une colonne blob opaque de la table de la `tb_job_instance` base de données, qui ne peut pas être interrogée directement.
+* **Processus initié par courrier électronique** : L&#39;ID d&#39;adresse électronique de l&#39;expéditeur est capturé en tant que propriété dans une colonne blob opaque de la table de la  `tb_job_instance` base de données, qui ne peut pas être interrogée directement.
 
 ### Identification des ID de l’instance de processus lorsque l’initiateur ou le participant de flux de travail est connu {#initiator-participant}
 
 Suivez les étapes ci-dessous pour identifier les ID de l’instance de processus pour un initiateur ou un participant de flux de travail :
 
-1. Execute the following command in AEM Forms server database to retrieve the principal ID for workflow initiator or participant from the `edcprincipalentity` database table.
+1. Exécutez la commande suivante dans la base de données du serveur AEM Forms pour récupérer l&#39;ID principal de l&#39;initiateur ou du participant du flux de travail dans la table de base de données `edcprincipalentity`.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -59,12 +59,12 @@ Suivez les étapes ci-dessous pour identifier les ID de l’instance de processu
    select * from tb_task where start_task = 1 and create_user_id= 'initiator_principal_id'
    ```
 
-   The query returns tasks initiated by the specified `initiator`_ `principal_id`. Il existe deux types de tâche :
+   La requête renvoie les tâches initiées par le `initiator`_ `principal_id` spécifié. Il existe deux types de tâche :
 
-   * **Tâches** terminées : Ces tâches ont été envoyées et affichent une valeur alphanumérique dans le `process_instance_id` champ. Notez tous les ID d’instance de processus pour les tâches envoyées et suivez les étapes.
-   * **Tâches lancées mais non terminées** : ces tâches sont lancées mais n’ont pas encore été envoyées. The value in the `process_instance_id` field for these tasks is **0** (zero). Dans ce cas, notez les ID de tâche correspondants et consultez l’article [Utilisation de tâches orphelines](#orphan).
+   * **Tâches** terminées : Ces tâches ont été envoyées et affichent une valeur alphanumérique dans le  `process_instance_id` champ. Notez tous les ID d’instance de processus pour les tâches envoyées et suivez les étapes.
+   * **Tâches lancées mais non terminées** : ces tâches sont lancées mais n’ont pas encore été envoyées. La valeur du champ `process_instance_id` pour ces tâches est **0** (zéro). Dans ce cas, notez les ID de tâche correspondants et consultez l’article [Utilisation de tâches orphelines](#orphan).
 
-1. (**For workflow participants**) Execute the following command to retrieve process instance IDs associated with the principal ID of the process participant for the initiator from the `tb_assignment` database table.
+1. (**Pour les participants au processus**) Exécutez la commande suivante pour récupérer les ID d&#39;instance de processus associés à l&#39;ID principal du participant au processus pour l&#39;initiateur dans la table de base de données `tb_assignment`.
 
    ```sql
    select distinct a.process_instance_id from tb_assignment a join tb_queue q on a.queue_id = q.id where q.workflow_user_id='participant_principal_id'
@@ -74,9 +74,9 @@ Suivez les étapes ci-dessous pour identifier les ID de l’instance de processu
 
    Notez tous les ID d’instance de processus pour les tâches envoyées et suivez les étapes.
 
-   For orphan tasks or tasks where the `process_instance_id` is 0 (zero), take note of the corresponding task IDs and see [Work with orphan tasks](#orphan).
+   Pour les tâches orphelines ou les tâches où `process_instance_id` est égal à 0 (zéro), notez les identifiants de tâche correspondants et consultez [Travailler avec des tâches orphelines](#orphan).
 
-1. Follow the instructions in [Purge user data from workflow instances based on process instance IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) section to delete user data for identified process instance IDs.
+1. Suivez les instructions de la section [Purger les données utilisateur des instances de processus en fonction des ID d’instance de processus](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) pour supprimer les données utilisateur des ID d’instance de processus identifiés.
 
 ### Identification des ID de l’instance de processus lorsque les données utilisateur sont stockées dans des variables de type primitif {#primitive}
 
@@ -94,13 +94,13 @@ Effectuez les étapes suivantes pour déterminer si un flux de travail qui stock
    select database_table from omd_object_type where name='pt_<app_name>/<workflow_name>'
    ```
 
-   The query returns a table name in `tb_<number>` format for the specified application ( `app_name`) and workflow ( `workflow_name`).
+   La requête renvoie un nom de table au format `tb_<number>` pour l&#39;application spécifiée ( `app_name`) et le flux de travail ( `workflow_name`).
 
    >[!NOTE]
    >
    >La valeur de la propriété `name` peut être complexe si le flux de travail est imbriqué dans des sous-dossiers au sein de l’application. Assurez-vous d’indiquer le chemin d’accès complet et exact du flux de travail. Vous pouvez l’obtenir à partir de la table de base de données `omd_object_type`.
 
-1. Review the `tb_<number>` table schema. La table contient des variables qui stockent les données utilisateur pour le flux de travail spécifié. Les variables de la table correspondent aux variables du flux de travail.
+1. Examinez le schéma de table `tb_<number>`. La table contient des variables qui stockent les données utilisateur pour le flux de travail spécifié. Les variables de la table correspondent aux variables du flux de travail.
 
    Identifiez et notez la variable correspondant à la variable de flux de travail contenant l’ID utilisateur. Si la variable identifiée est de type primitif, vous pouvez exécuter une requête pour déterminer les instances de flux de travail associées à un ID utilisateur.
 
@@ -112,21 +112,21 @@ Effectuez les étapes suivantes pour déterminer si un flux de travail qui stock
 
    La requête renvoie tous les ID d’instance de processus associés à l’ID `user_ID` spécifié.
 
-1. Follow the instructions in [Purge user data from workflow instances based on process instance IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) section to delete user data for identified process instance IDs.
+1. Suivez les instructions de la section [Purger les données utilisateur des instances de processus en fonction des ID d’instance de processus](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) pour supprimer les données utilisateur des ID d’instance de processus identifiés.
 
 ### Purger les données utilisateur à partir des instances de flux de travail en fonction des ID de l’instance de processus {#purge}
 
 Après avoir identifié les ID de l’instance de processus associés à un utilisateur, procédez comme suit pour supprimer les données utilisateur des instances de processus respectives.
 
-1. Execute the following command to retrieve long-lived invocation ID and status for a process instance from the `tb_process_instance` table.
+1. Exécutez la commande suivante pour récupérer l’ID et l’état d’appel de longue durée d’une instance de processus à partir de la table `tb_process_instance`.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
    ```
 
-   The query returns the long-lived invocation ID and status for the specified `process_instance_id`.
+   La requête renvoie l’ID d’appel et l’état de longue durée pour le `process_instance_id` spécifié.
 
-1. Create an instance of the public `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) using a `ServiceClientFactory` instance with the correct connection settings.
+1. Créez une instance du client `ProcessManager` public ( `com.adobe.idp.workflow.client.ProcessManager`) en utilisant une instance `ServiceClientFactory` avec les paramètres de connexion corrects.
 
    Pour plus d’informations, consultez [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html) dans la référence de l’API Java.
 
@@ -142,7 +142,7 @@ Après avoir identifié les ID de l’instance de processus associés à un util
 
 ### Utilisation des tâches orphelines {#orphan}
 
-Les tâches orphelines sont les tâches dont le processus de conteneur a été initié mais pas encore envoyé. in this case, the `process_instance_id` is **0** (zero). Vous ne pouvez donc pas effectuer le suivi des données utilisateur stockées pour les tâches orphelines à l’aide des ID d’instance de processus. Vous pouvez toutefois les suivre à l’aide de l’ID de tâche d’une tâche orpheline. Vous pouvez identifier les ID de tâches pour un utilisateur dans la table `tb_task` comme décrit dans la section [Identification des ID de l’instance de processus lorsque l’initiateur ou le participant de flux de travail est connu](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Les tâches orphelines sont les tâches dont le processus de conteneur a été initié mais pas encore envoyé. dans ce cas, `process_instance_id` est **0** (zéro). Vous ne pouvez donc pas effectuer le suivi des données utilisateur stockées pour les tâches orphelines à l’aide des ID d’instance de processus. Vous pouvez toutefois les suivre à l’aide de l’ID de tâche d’une tâche orpheline. Vous pouvez identifier les ID de tâches pour un utilisateur dans la table `tb_task` comme décrit dans la section [Identification des ID de l’instance de processus lorsque l’initiateur ou le participant de flux de travail est connu](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Une fois les ID de tâche obtenus, procédez comme suit pour purger les fichiers et les données associés à une tâche orpheline à partir du stockage global de documents et de la base de données.
 
@@ -173,7 +173,7 @@ Une fois les ID de tâche obtenus, procédez comme suit pour purger les fichiers
 
       `<file_name_guid>.session<session_id_string>`
 
-      1. Delete all marker files and other files with the exact filename as `<file_name_guid>` from the file system.
+      1. Supprimez tous les fichiers de marqueurs et autres fichiers dont le nom de fichier est `<file_name_guid>` du système de fichiers.
    1. **Stockage global de document dans la base de données** 
 
       Exécutez les commandes suivantes pour chaque ID de session :
