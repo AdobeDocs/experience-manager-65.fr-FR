@@ -36,7 +36,7 @@ Tout composant associé à la dépendance `granite.jquery` bénéficie automatiq
 
 ### Réplication de la clé de chiffrement {#replicating-crypto-keys}
 
-In order to make use of the tokens, you need to replicate the `/etc/keys/hmac` binary to all of the instances in your deployment. Un moyen pratique de copier la clé HMAC sur toutes les instances consiste à créer un module contenant la clé et à l’installer via le gestionnaire de modules sur toutes les instances.
+Pour utiliser les jetons, vous devez répliquer le binaire `/etc/keys/hmac` sur toutes les instances de votre déploiement. Un moyen pratique de copier la clé HMAC sur toutes les instances consiste à créer un module contenant la clé et à l’installer via le gestionnaire de modules sur toutes les instances.
 
 >[!NOTE]
 >
@@ -44,6 +44,6 @@ In order to make use of the tokens, you need to replicate the `/etc/keys/hmac` b
 
 >[!NOTE]
 >
->If you use the manifest cache with your web application, make sure you add &quot;**&amp;ast;**&quot; to the manifest in order to make sure the token does not take the CSRF token generation call offline. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-webapps/).
+>Si vous utilisez le cache de manifeste avec votre application Web, veillez à ajouter &quot;**&amp;ast;**&quot; au manifeste afin de vous assurer que le jeton n’effectue pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-webapps/).
 >
 >Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).
