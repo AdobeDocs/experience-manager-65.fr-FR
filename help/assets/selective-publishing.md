@@ -1,6 +1,6 @@
 ---
-title: Utilisation de la publication sélective dans un média dynamique
-description: Informations relatives à l’utilisation de la publication sélective dans les médias dynamiques.
+title: Utilisation de la publication sélective dans Dynamic Media
+description: Informations relatives à l’utilisation de la publication sélective dans Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -10,16 +10,16 @@ translation-type: tm+mt
 source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 6%
+ht-degree: 98%
 
 ---
 
 
-# Configuration de la publication sélective au niveau des dossiers dans Contenu multimédia dynamique {#selective-publish-configure-folder}
+# Configuration de la publication sélective au niveau des dossiers dans Dynamic Media {#selective-publish-configure-folder}
 
-Vous pouvez choisir de publier ou d’annuler la publication de fichiers dans AEM ou dans Contenu multimédia dynamique au niveau du dossier, à l’aide de **[!UICONTROL Gérer la publication]** ou Publication **** rapide, plutôt que de vous reposer uniquement sur la configuration **[!UICONTROL du contenu multimédia]** dynamique dont les paramètres sont globaux pour tous les dossiers de votre instance Contenu multimédia dynamique.
+Vous pouvez choisir de publier ou d’annuler la publication de ressources dans AEM ou Dynamic Media au niveau du dossier, à l’aide de **[!UICONTROL Gérer la publication]** ou de **[!UICONTROL Publication rapide]**, plutôt que de vous reposer uniquement sur la **[!UICONTROL configuration de Dynamic Media]** dont les paramètres sont globaux pour tous les dossiers de votre instance Dynamic Media.
 
-Par exemple, avec la publication sélective, vous pouvez travailler sur des ressources pour des produits qui ne sont pas encore en ligne. Dans ce cas, une équipe marketing peut accéder à des images de recadrage intelligent et à des rendus dynamiques synchronisés dans Contenu multimédia dynamique afin de pouvoir créer du matériel promotionnel, sans avoir à publier ces ressources dans Contenu multimédia dynamique pour une diffusion globale.
+Par exemple, avec la publication sélective, vous pouvez travailler sur des ressources pour des produits qui ne sont pas encore en ligne. Dans ce cas, une équipe marketing peut accéder à des images de recadrage intelligent et à des rendus dynamiques synchronisés dans Dynamic Media afin de pouvoir créer du matériel promotionnel, le tout sans avoir à publier ces ressources dans Dynamic Media pour une diffusion globale.
 
 >[!IMPORTANT]
 >
@@ -27,57 +27,57 @@ Par exemple, avec la publication sélective, vous pouvez travailler sur des ress
 
 >[!NOTE]
 >
->*La copie* de fichiers vers et depuis des dossiers efface l’état de publication de ces fichiers. Cependant, lorsque vous *déplacez* des fichiers vers et depuis des dossiers dont la propriété de dossier est définie sur Publication **** sélective, l’état de publication de ces fichiers est conservé.
+>La *copie* de ressources vers et depuis des dossiers efface l’état de publication de ces ressources. Cependant, lorsque vous *déplacez* des ressources vers et depuis des dossiers dont la propriété de dossier est définie sur **[!UICONTROL Publication sélective]**, l’état de publication de ces ressources est conservé.
 
-Si vous décidez ultérieurement de modifier les paramètres de publication **** sélective dans un dossier, ces modifications n’affectent que les nouveaux fichiers que vous téléchargez vers ce dossier à partir de ce moment. L’état de publication des fichiers existants dans le dossier reste tel quel jusqu’à ce que vous les modifiiez manuellement à partir de la boîte de dialogue Publication **** rapide ou **[!UICONTROL Gérer la publication]** .
+Si vous décidez ultérieurement de modifier les paramètres **[!UICONTROL Publication sélective]** dans un dossier, ces modifications n’affectent que les nouvelles ressources que vous chargez vers ce dossier à partir de ce moment. L’état de publication des ressources existantes dans le dossier reste tel quel jusqu’à ce que vous modifiiez manuellement ces ressources à partir de la boîte de dialogue **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**.
 
-L’option Mode **[!UICONTROL de publication de médias]** dynamiques au niveau du dossier utilise toujours la valeur par défaut du paramètre **[!UICONTROL Publier les ressources]** de votre configuration de médias **[!UICONTROL dynamiques.]** Les étapes suivantes de cette rubrique vous montrent toutefois comment modifier manuellement cette valeur par défaut au niveau du dossier (comme décrit dans les étapes suivantes) pour remplacer la valeur Configuration **[!UICONTROL de média]** dynamique.
+L’option **[!UICONTROL Mode de publication Dynamic Media]** de niveau dossier utilise toujours par défaut la valeur du paramètre **[!UICONTROL Publier les ressources]** de votre **[!UICONTROL configuration de Dynamic Media.]** Les étapes suivantes de cette rubrique vous montrent toutefois comment modifier manuellement cette valeur par défaut au niveau du dossier (comme décrit dans les étapes suivantes) pour remplacer la valeur **[!UICONTROL Configuration de Dynamic Media]**.
 
-Que vous utilisiez la valeur **[!UICONTROL Publier les ressources]** définie dans Configuration **** dynamique des médias ou la valeur du mode **[!UICONTROL Publication de médias]** dynamique définie dans les propriétés au niveau du dossier, vous pouvez toujours choisir l’option **[!UICONTROL Immédiatement, A l’Activation ou Publier de manière sélective.]********** Par exemple, vous pouvez définir la valeur **[!UICONTROL Publier les ressources]** dans votre configuration **[!UICONTROL de médias]** dynamiques sur **[!UICONTROL À l’Activation]**, mais définissez la valeur du mode Publication de médias **[!UICONTROL dynamiques au niveau du dossier sur Publication sélective, inversement, etc.]******
+Que vous utilisiez la valeur **[!UICONTROL Publier les ressources]** définie dans **[!UICONTROL Configuration de Dynamic Media]** ou la valeur **[!UICONTROL Mode de publication Dynamic Media]** définie dans les propriétés de niveau dossier, vous pouvez toujours choisir **[!UICONTROL Immédiatement]**, **[!UICONTROL Lors de l’activation]** ou **[!UICONTROL Publication sélective.]** Par exemple, vous pouvez définir la valeur **[!UICONTROL Publier les ressources]** dans votre **[!UICONTROL Configuration de Dynamic Media]** sur **[!UICONTROL Lors de l’activation]**, mais définir la valeur **[!UICONTROL Mode de publication Dynamic Media]** au niveau du dossier sur **[!UICONTROL Publication sélective]**, et vice-versa, etc.
 
-Après avoir configuré la publication sélective dans un dossier, vous pouvez effectuer l’une des opérations suivantes :
+Après avoir configuré la publication sélective dans un dossier, vous pouvez effectuer l’une des opérations suivantes :
 
-* [Publiez sélectivement des fichiers dans Contenu multimédia dynamique ou AEM à l’aide de la fonction Gérer la publication.](#selective-publish-manage-publication)
-* [Annulation sélective de la publication de fichiers issus de Contenu multimédia dynamique ou d’AEM à l’aide de la fonction Gérer la publication.](#selective-unpublish-manage-publication)
-* [Publication de fichiers dans Contenu multimédia dynamique ou AEM à l’aide de la publication rapide.](#quick-publish-aem-dm)
-* [Publiez ou annulez sélectivement des fichiers au moyen des résultats de la recherche.](#selective-publish-unpublish-search-results)
+* [Publier sélectivement des ressources dans Dynamic Media ou AEM à l’aide de la fonction Gérer la publication.](#selective-publish-manage-publication)
+* [Annuler sélectivement la publication de ressources dans Dynamic Media ou AEM à l’aide de la fonction Gérer la publication.](#selective-unpublish-manage-publication)
+* [Publier des ressources dans Dynamic Media ou AEM à l’aide de la publication rapide.](#quick-publish-aem-dm)
+* [Publier des ressources ou en annuler la publication de manière sélective au moyen des résultats de recherche.](#selective-publish-unpublish-search-results)
 
-**Pour configurer la publication sélective au niveau des dossiers dans Contenu multimédia dynamique**
+**Configurer la publication sélective au niveau des dossiers dans Dynamic Media**
 
-1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers.]**
+1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers]**.
 1. Utilisez l’une des méthodes suivantes :
-   * Modifiez les propriétés d&#39;un dossier existant. Dans la Vue **[!UICONTROL de]** carte, la Vue **[!UICONTROL de]** colonne ou la Vue **[!UICONTROL de]** Liste, accédez à un dossier dont vous souhaitez modifier les propriétés. Sélectionnez le dossier, puis sur la barre d’outils, appuyez sur **[!UICONTROL Propriétés.]**
-   * Modifiez les propriétés d’un nouveau dossier - Dans la Vue **[!UICONTROL de]** carte, la Vue **[!UICONTROL de]** colonne ou la Vue **[!UICONTROL de]** Liste, près du coin supérieur droit de la page, appuyez sur **[!UICONTROL Créer > Dossier.]** Dans la boîte de dialogue **[!UICONTROL Créer un dossier]** , saisissez un titre (obligatoire) pour le dossier, puis appuyez sur **[!UICONTROL Créer.]** Sélectionnez le dossier, puis sur la barre d’outils, appuyez sur **[!UICONTROL Propriétés.]**
+   * Modifiez les propriétés d’un dossier existant. Dans **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]**, accédez à un dossier dont vous souhaitez modifier les propriétés. Sélectionnez le dossier puis, sur la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**.
+   * Modifiez les propriétés d’un nouveau dossier : en **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]**, près du coin supérieur droit de la page, appuyez sur **[!UICONTROL Créer > Dossier.]** Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez un titre (obligatoire) pour le dossier, puis appuyez sur **[!UICONTROL Créer.]** Sélectionnez le dossier puis, sur la barre d’outils, appuyez sur **[!UICONTROL Propriétés]**.
 
-1. Dans la liste déroulante Mode **[!UICONTROL de]** synchronisation, sélectionnez l’une des options suivantes :
+1. Dans la liste déroulante **[!UICONTROL Mode de synchronisation]**, sélectionnez l’une des options suivantes :
 
    | Mode de synchronisation | Description |
    | --- | --- |
-   | **[!UICONTROL Hérité]** | No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode set in your **[!UICONTROL Dynamic Media Configuration.]** L’état détaillé de l’état **[!UICONTROL hérité]** s’affiche au moyen d’une info-bulle. |
-   | **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossiers]** | Pour que la publication sur Contenu multimédia dynamique réussisse, les ressources doivent être synchronisées sur Contenu multimédia dynamique. La sélection de cette option inclura tous les actifs de cette sous-arborescence pour la synchronisation avec Contenu multimédia dynamique. Les paramètres propres au dossier remplacent le paramètre par défaut dans la configuration **[!UICONTROL dynamique des médias.]** |
-   | **[!UICONTROL Exclure tout ce qui se trouve dans cette sous-arborescence de dossiers de la synchronisation dynamique des médias]** | Exclure la synchronisation de tous les fichiers de cette sous-arborescence vers Contenu multimédia dynamique. |
+   | **[!UICONTROL Hérité]** | Aucune valeur de synchronisation explicite sur le dossier ; au lieu de cela, le dossier hérite de la valeur de synchronisation de l’un de ses dossiers ancêtres ou du mode par défaut défini dans votre **[!UICONTROL Configuration de Dynamic Media.]** Le statut détaillé de l’**[!UICONTROL héritage]** s’affiche par le biais d’une info-bulle. |
+   | **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossiers]** | Pour que la publication dans Dynamic Media réussisse, les ressources doivent être synchronisées dans Dynamic Media. La sélection de cette option inclue toutes les ressources de cette sous-arborescence pour la synchronisation dans Dynamic Media. Les paramètres propres au dossier remplacent le paramètre par défaut dans la **[!UICONTROL Configuration de Dynamic Media.]** |
+   | **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossiers]** | Excluez de la synchronisation dans Dynamic Media toutes les ressources de cette sous-arborescence. |
 
    ![Publication sélective au niveau du dossier](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. Dans la liste déroulante Mode **[!UICONTROL de publication de médias]** dynamiques, sélectionnez une option. Gardez à l’esprit que l’option Mode **[!UICONTROL de publication de médias]** dynamiques utilise toujours par défaut la valeur définie dans la configuration de médias **[!UICONTROL dynamiques.]** Vous pouvez toutefois remplacer manuellement cette valeur de configuration **[!UICONTROL de média]** dynamique par défaut à l’aide de l’une des options suivantes.
+1. Dans la liste déroulante **[!UICONTROL Mode de publication Dynamic Media]**, sélectionnez une option. Gardez à l’esprit que l’option **[!UICONTROL Mode de publication Dynamic Media]** utilise toujours par défaut la valeur définie dans la **[!UICONTROL Configuration de Dynamic Media.]** Vous pouvez toutefois remplacer manuellement cette valeur **[!UICONTROL Configuration de Dynamic Media]** par défaut à l’aide de l’une des options suivantes.
 
    >[!IMPORTANT]
    >
-   >Gardez à l’esprit que, quelle que soit l’option de mode de publication de contenu multimédia dynamique sélectionnée, les mises à jour apportées ultérieurement à un fichier *déjà* publié sont immédiatement publiées sans autre action de l’utilisateur.
+   >Gardez à l’esprit que, quelle que soit l’option Mode de publication Dynamic Media sélectionnée, les mises à jour apportées ultérieurement à une ressource *déjà* publiée sont immédiatement publiées sans autre action de l’utilisateur.
 
-   | Mode de publication de médias dynamiques, option | Description |
+   | Option Mode de publication de média dynamique | Description |
    | --- | --- |
-   | **[!UICONTROL Immédiatement]** | Lorsque des fichiers sont téléchargés dans ce dossier, le système les ingère dans AEM et fournit instantanément l’URL/l’incorporation. Cette option est liée à AEM publication uniquement et aucune intervention de l’utilisateur n’est nécessaire pour publier des fichiers.<br>Cette option *n’est pas* disponible si vous avez sélectionné **[!UICONTROL Exclure tout ce qui se trouve dans cette sous-arborescence de dossiers de la synchronisation]** dynamique des médias en mode **** Sync à l’étape précédente. |
-   | **[!UICONTROL Lors de l’activation]** | Lorsque des fichiers sont téléchargés dans ce dossier, vous devez d’abord publier explicitement le fichier avant de fournir un lien URL/incorporé. Cette option est liée à AEM publication uniquement.<br>Cette option *n’est pas* disponible si vous avez sélectionné **[!UICONTROL Exclure tout ce qui se trouve dans cette sous-arborescence de dossiers de la synchronisation]** dynamique des médias en mode **** Sync à l’étape précédente. |
-   | **[!UICONTROL Publication sélective]** | Les fichiers sont publiés à votre choix, AEM ou Contenu multimédia dynamique, pour diffusion dans le domaine public. Les deux méthodes de publication s’excluent mutuellement.  En d’autres termes, vous pouvez publier des fichiers dans DMS7 afin d’utiliser des fonctionnalités telles que Recadrage dynamique ou Rendus dynamiques. Or, you can publish assets exclusively to AEM for secure previewing; those same assets are *not* published to DMS7 for delivery in the public domain. Cette option n’est pas disponible si vous avez sélectionné **[!UICONTROL Exclure tout ce qui se trouve dans cette sous-arborescence de dossiers de la synchronisation]** dynamique des médias en mode **** synchronisation à l’étape précédente. |
+   | **[!UICONTROL Immédiatement]** | Lorsque des ressources sont chargées dans ce dossier, le système les ingère dans AEM et fournit instantanément le lien d’URL/d’incorporation. Cette option est uniquement liée à la publication AEM et aucune intervention de l’utilisateur n’est nécessaire pour publier des ressources.<br>Cette option n’est *pas* disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossiers]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
+   | **[!UICONTROL Lors de l’activation]** | Lorsque des ressources sont chargées dans ce dossier, vous devez d’abord les publier explicitement avant de fournir un lien d’URL/d’incorporation. Cette option est uniquement liée à la publication AEM.<br>Cette option n’est *pas* disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossiers]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
+   | **[!UICONTROL Publication sélective]** | Les ressources sont publiées, au choix, dans AEM ou Dynamic Media, pour diffusion dans le domaine public. Les deux méthodes de publication s’excluent mutuellement.  En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des ressources exclusivement dans AEM pour un aperçu sécurisé ; ces mêmes ressources ne sont *pas* publiées dans DMS7 pour diffusion dans le domaine public. Cette option n’est pas disponible si vous avez sélectionné **[!UICONTROL Exclure de la synchronisation Dynamic Media tout le contenu de cette sous-arborescence de dossiers]** dans **[!UICONTROL Mode de synchronisation]** à l’étape précédente. |
 
 1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer et fermer]**, puis sur **[!UICONTROL OK]** pour revenir à AEM Assets.
 
-## Publication sélective de fichiers dans un média dynamique ou AEM à l’aide de la fonction Gérer la publication{#selective-publish-manage-publication}
+## Publier sélectivement des ressources dans Dynamic Media ou AEM à l’aide de la fonction Gérer la publication{#selective-publish-manage-publication}
 
-Avant de pouvoir utiliser **[!UICONTROL Gérer la publication]** pour publier des fichiers de manière sélective dans Contenu multimédia dynamique ou AEM, assurez-vous d’avoir défini l’option **[!UICONTROL Publier les ressources]** dans Configuration **[!UICONTROL de Contenu multimédia]** **[!UICONTROL dynamique sur Publication sélective ou configuré la publication sélective au niveau du dossier.]**
+Pour pouvoir utiliser la fonction **[!UICONTROL Gérer la publication]** afin de publier sélectivement des ressources dans Dynamic Media ou AEM, assurez-vous d’avoir défini l’option **[!UICONTROL Publier des ressources]** dans **[!UICONTROL Configuration de Dynamic Media]** sur **[!UICONTROL Publication sélective]** ou d’avoir configuré la publication sélective au niveau du dossier.
 
-Voir [Création d’une configuration](#configuring-dynamic-media-cloud-services) de contenu multimédia dynamique ou [Configuration d’une publication sélective au niveau des dossiers dans Contenu multimédia dynamique.](#selective-publish-configure-folder)
+Reportez-vous à [Création d’une configuration de Dynamic Media](#configuring-dynamic-media-cloud-services) ou [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](#selective-publish-configure-folder).
 
 >[!IMPORTANT]
 >
@@ -85,182 +85,182 @@ Voir [Création d’une configuration](#configuring-dynamic-media-cloud-services
 
 >[!NOTE]
 >
->*La copie* de fichiers vers et depuis des dossiers efface l’état de publication de ces fichiers. Cependant, lorsque vous *déplacez* des fichiers vers et depuis des dossiers dont la propriété de dossier est définie sur Publication **** sélective, l’état de publication de ces fichiers est conservé.
+>La *copie* de ressources vers et depuis des dossiers efface l’état de publication de ces ressources. Cependant, lorsque vous *déplacez* des ressources vers et depuis des dossiers dont la propriété de dossier est définie sur **[!UICONTROL Publication sélective]**, l’état de publication de ces ressources est conservé.
 
 **Pour publier de manière sélective des fichiers dans un média dynamique ou AEM à l’aide de la commande Gérer la publication**
 
-1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers.]**
-1. Dans la Vue **[!UICONTROL de]** carte, la Vue **[!UICONTROL de]** colonnes ou la Vue **[!UICONTROL de]** Liste, effectuez l’une des opérations suivantes :
-   * Accédez à un dossier dont vous souhaitez publier les fichiers. Sélectionnez le dossier, puis sur la barre d’outils, appuyez sur **[!UICONTROL Gérer la publication.]**  Il peut s’avérer utile d’utiliser la Vue **[!UICONTROL de]** Liste pour vérifier plus facilement l’état de publication d’un dossier particulier.
-   * Accédez à un dossier dont vous souhaitez publier les fichiers. Ouvrez le dossier, puis sélectionnez un ou plusieurs fichiers. On the toolbar, tap **[!UICONTROL Manage Publication.]** Il peut s’avérer utile d’utiliser la Vue **[!UICONTROL de]** Liste afin de vérifier plus facilement l’état de publication d’un fichier particulier.
+1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers]**.
+1. En **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]**, effectuez l’une des opérations suivantes :
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, appuyez sur **[!UICONTROL Gérer la publication.]** Il peut s’avérer utile d’utiliser le **[!UICONTROL Mode Liste]** afin de pouvoir vérifier plus facilement l’état de publication d’un dossier particulier.
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, appuyez sur **[!UICONTROL Gérer la publication.]** Il peut s’avérer utile d’utiliser le **[!UICONTROL Mode Liste]** afin de pouvoir vérifier plus facilement l’état de publication d’une ressource particulière.
 
       >[!NOTE]
       >
-      >Si **[!UICONTROL Gérer la publication]** n’est pas visible dans la barre d’outils, appuyez sur le bouton d’ellipse à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu liste.
+      >Si l’option **[!UICONTROL Gérer la publication]** n’est pas visible sur la barre d’outils, appuyez sur le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu de liste.
 
-1. Dans la page **[!UICONTROL Gérer la publication - Options]** , sous **[!UICONTROL Action]**, sélectionnez le type d’activation souhaité.
+1. Sur la page **[!UICONTROL Gérer la publication – Options]**, sous **[!UICONTROL Action]**, sélectionnez le type d’activation souhaité.
 
    | Action | Description |
    | --- | --- |
-   | **[!UICONTROL Publier]** (vers AEM) | Sélectionnez cette option pour publier des fichiers sur AEM pour une prévisualisation sécurisée. |
-   | **[!UICONTROL Publier vers Dynamic Media]** | Sélectionnez cette option pour publier des fichiers dans Contenu multimédia dynamique pour diffusion dans le domaine public ou pour utiliser des fonctionnalités telles que Recadrage dynamique ou Rendus dynamiques.<br>Cette option est disponible uniquement si le mode **[!UICONTROL Publication de médias]** dynamiques est défini sur Publication **** sélective dans les propriétés du dossier. |
+   | **[!UICONTROL Publier]** (vers AEM) | Sélectionnez cette option pour publier des ressources dans AEM en vue d’une prévisualisation sécurisée. |
+   | **[!UICONTROL Publier vers Dynamic Media]** | Sélectionnez cette option pour publier des ressources dans Dynamic Media pour diffusion dans le domaine public ou pour pouvoir utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques.<br>Cette option n’est disponible que si l’option **[!UICONTROL Mode de publication Dynamic Media]** est définie sur **[!UICONTROL Publication sélective]** dans les propriétés du dossier. |
 
 1. Sous **[!UICONTROL Planification]**, définissez le calendrier de publication.
 
    | Planification | Description |
    | --- | --- |
-   | **[!UICONTROL Maintenant]** | Sélectionnez cette option pour publier immédiatement les fichiers. |
-   | **[!UICONTROL Plus tard]** | Sélectionnez cette option pour publier les fichiers à une date et une heure données. |
+   | **[!UICONTROL Maintenant]** | Sélectionnez cette option pour publier immédiatement les ressources. |
+   | **[!UICONTROL Plus tard]** | Sélectionnez cette option pour publier les ressources à une date et une heure spécifiques. |
 
-1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
-1. Dans la page **[!UICONTROL Gérer la publication - Portée]** , effectuez l’une des opérations suivantes :
+1. Dans le coin supérieur droit de la page **[!UICONTROL Gestion de la publication]**, appuyez sur **[!UICONTROL Suivant]**.
+1. Sur la page **[!UICONTROL Gestion de la publication – Portée]**, effectuez l’une des opérations suivantes :
 
-   * Si nécessaire, sélectionnez un ou plusieurs fichiers à supprimer de la publication.
-   * Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication - Portée]** , appuyez sur **[!UICONTROL Publier]** ou **[!UICONTROL Publier dans le contenu multimédia dynamique.]**
+   * Si nécessaire, sélectionnez une ou plusieurs ressources à supprimer de la publication.
+   * Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication – Portée]**, appuyez sur **[!UICONTROL Publier]** ou **[!UICONTROL Publier vers Dynamic Media]**.
 1. Appuyez sur **[!UICONTROL OK.]**
 
-### Annulation sélective de la publication de fichiers issus de Contenu multimédia dynamique ou d’AEM à l’aide de la fonction Gérer la publication {#selective-unpublish-manage-publication}
+### Annuler sélectivement la publication de ressources dans Dynamic Media ou AEM à l’aide de la fonction Gérer la publication.{#selective-unpublish-manage-publication}
 
-1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers.]**
-1. Dans la Vue **[!UICONTROL de]** carte, la Vue **[!UICONTROL de]** colonnes ou la Vue **[!UICONTROL de]** Liste, effectuez l’une des opérations suivantes :
-   * Accédez au dossier dont vous souhaitez annuler la publication. Sélectionnez le dossier, puis sur la barre d’outils, appuyez sur **[!UICONTROL Gérer la publication.]**  Il peut s’avérer utile d’utiliser la Vue **[!UICONTROL de]** Liste pour vérifier plus facilement l’état de publication d’un dossier particulier.
-   * Accédez au dossier dont vous souhaitez annuler la publication. Ouvrez le dossier, puis sélectionnez un ou plusieurs fichiers. On the toolbar, tap **[!UICONTROL Manage Publication.]** Il peut s’avérer utile d’utiliser la Vue **[!UICONTROL de]** Liste afin de vérifier plus facilement l’état de publication d’un fichier particulier.
+1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers]**.
+1. En **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]**, effectuez l’une des opérations suivantes :
+   * Accédez à un dossier dont vous souhaitez annuler la publication des ressources. Sélectionnez le dossier puis, sur la barre d’outils, appuyez sur **[!UICONTROL Gérer la publication.]** Il peut s’avérer utile d’utiliser le **[!UICONTROL Mode Liste]** afin de pouvoir vérifier plus facilement l’état de publication d’un dossier particulier.
+   * Accédez à un dossier dont vous souhaitez annuler la publication des ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, appuyez sur **[!UICONTROL Gérer la publication.]** Il peut s’avérer utile d’utiliser le **[!UICONTROL Mode Liste]** afin de pouvoir vérifier plus facilement l’état de publication d’une ressource particulière.
 
       >[!NOTE]
       >
-      >Si **[!UICONTROL Gérer la publication]** n’est pas visible dans la barre d’outils, appuyez sur le bouton d’ellipse à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu liste.
+      >Si l’option **[!UICONTROL Gérer la publication]** n’est pas visible sur la barre d’outils, appuyez sur le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Gérer la publication]** dans le menu de liste.
 
-1. Dans la page **[!UICONTROL Gérer la publication - Options]** , sous **[!UICONTROL Action]**, sélectionnez le type de désactivation souhaité.
+1. Sur la page **[!UICONTROL Gérer la publication – Options]**, sous **[!UICONTROL Action]**, sélectionnez le type de désactivation souhaité.
 
    | Action | Description |
    | --- | --- |
-   | **[!UICONTROL Annuler la publication]** (à partir de AEM) | Sélectionnez cette option pour annuler la publication des fichiers AEM. |
-   | **[!UICONTROL Annuler la publication à partir de Dynamic Media]** | Sélectionnez cette option pour annuler la publication de fichiers dans Contenu multimédia dynamique.<br>Cette option est disponible uniquement si le mode **[!UICONTROL Publication de médias]** dynamiques est défini sur Publication **** sélective dans les propriétés du dossier. |
+   | **[!UICONTROL Annuler la publication]** (à partir d’AEM) | Sélectionnez cette option pour annuler la publication de ressources à partir d’AEM. |
+   | **[!UICONTROL Annuler la publication à partir de Dynamic Media]** | Sélectionnez cette option pour annuler la publication de ressources à partir de Dynamic Media.<br>Cette option n’est disponible que si l’option **[!UICONTROL Mode de publication Dynamic Media]** est définie sur **[!UICONTROL Publication sélective]** dans les propriétés du dossier. |
 
-1. Sous **[!UICONTROL Planification]**, définissez le moment de la désactivation.
+1. Sous **[!UICONTROL Planning]**, définissez le calendrier de la désactivation.
 
    | Planification | Description |
    | --- | --- |
-   | **[!UICONTROL Maintenant]** | Sélectionnez cette option pour annuler immédiatement la publication des fichiers. |
-   | **[!UICONTROL Plus tard]** | Sélectionnez cette option pour annuler la publication des fichiers à une date et une heure données. |
+   | **[!UICONTROL Maintenant]** | Sélectionnez cette option pour annuler immédiatement la publication des ressources. |
+   | **[!UICONTROL Plus tard]** | Sélectionnez cette option pour annuler la publication des ressources à une date et une heure spécifiques. |
 
-1. In the upper-right corner of the **[!UICONTROL Manage Publication]** page, tap **[!UICONTROL Next.]**
-1. Dans la page **[!UICONTROL Gérer la publication - Portée]** , effectuez l’une des opérations suivantes :
-   * Sélectionnez un ou plusieurs fichiers à supprimer de l’annulation de publication.
-   * Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication - Portée]** , appuyez sur **[!UICONTROL Annuler la publication]** ou **[!UICONTROL Annuler la publication dans Contenu multimédia dynamique.]**
+1. Dans le coin supérieur droit de la page **[!UICONTROL Gestion de la publication]**, appuyez sur **[!UICONTROL Suivant]**.
+1. Sur la page **[!UICONTROL Gestion de la publication – Portée]**, effectuez l’une des opérations suivantes :
+   * Sélectionnez une ou plusieurs ressources à supprimer de l’annulation de publication.
+   * Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication – Portée]**, appuyez sur **[!UICONTROL Annuler la publication]** ou **[!UICONTROL Annuler la publication à partir de Dynamic Media.]**
 1. Appuyez sur **[!UICONTROL OK.]**
 
-## Publication de fichiers dans Contenu multimédia dynamique ou AEM à l’aide de la publication rapide {#quick-publish-aem-dm}
+## Publication de ressources dans Dynamic Media ou AEM à l’aide de la publication rapide {#quick-publish-aem-dm}
 
-Vous pouvez utiliser la fonction Publication **** rapide pour des cas d’activation de ressources simples. **[!UICONTROL Quick Publish]** publie immédiatement les ressources sélectionnées sans autre interaction de l’utilisateur. Par conséquent, toutes les références non publiées sont également publiées automatiquement.
+Vous pouvez utiliser la fonction **[!UICONTROL Publication rapide]** dans les cas d’activation de ressources simples. La fonction **[!UICONTROL Publication rapide]** publie immédiatement les ressources sélectionnées sans autre interaction de l’utilisateur. Pour cette raison, les références non publiées sont également publiées automatiquement.
 
 >[!NOTE]
 >
->Pour utiliser la publication **** rapide pour publier des fichiers dans Contenu multimédia dynamique ou AEM, veillez à ce que la publication **** sélective soit activée dans votre configuration **[!UICONTROL de Contenu multimédia]** dynamique ou dans les propriétés de dossier du dossier sélectionné.
+>Pour utiliser la **[!UICONTROL publication rapide]** afin de publier des ressources dans Dynamic Media ou AEM, assurez-vous que la fonction **[!UICONTROL Publication sélective]** est activée dans votre **[!UICONTROL Configuration de Dynamic Media]** ou dans les propriétés de dossier du dossier sélectionné.
 
-**Pour publier des fichiers dans Contenu multimédia dynamique ou AEM à l’aide de la fonction Publication rapide**
+**Pour publier des ressources dans Dynamic Media ou AEM à l’aide de la publication rapide**
 
-1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche de la page, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis sur le côté droit de la page, appuyez sur **[!UICONTROL Ressources > Fichiers.]**
-1. Dans la Vue **[!UICONTROL de]** carte, la Vue **[!UICONTROL de]** colonnes ou la Vue **[!UICONTROL de]** Liste, effectuez l’une des opérations suivantes :
-   * Accédez à un dossier dont vous souhaitez publier les fichiers. Sélectionnez le dossier, puis sur la barre d’outils, appuyez sur Publication **[!UICONTROL rapide.]**  Il peut s’avérer utile d’utiliser la Vue **[!UICONTROL de]** Liste pour vérifier plus facilement l’état de publication d’un dossier particulier.
-   * Accédez à un dossier dont vous souhaitez publier les fichiers. Ouvrez le dossier, puis sélectionnez un ou plusieurs fichiers. Dans la barre d’outils, appuyez sur **[!UICONTROL Publication rapide.]** Il peut s’avérer utile d’utiliser la Vue **[!UICONTROL de]** Liste afin de vérifier plus facilement l’état de publication d’un fichier particulier.
+1. Dans AEM, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche de la page, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils) puis, sur le côté droit de la page, appuyez sur **[!UICONTROL Ressources > Fichiers]**.
+1. En **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]**, effectuez l’une des opérations suivantes :
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Sélectionnez le dossier puis, sur la barre d’outils, appuyez sur **[!UICONTROL Publication rapide.]** Il peut s’avérer utile d’utiliser le **[!UICONTROL Mode Liste]** afin de pouvoir vérifier plus facilement l’état de publication d’un dossier particulier.
+   * Accédez à un dossier dont vous souhaitez publier les ressources. Ouvrez le dossier, puis sélectionnez une ou plusieurs ressources. Dans la barre d’outils, appuyez sur **[!UICONTROL Publication rapide.]** Il peut s’avérer utile d’utiliser le **[!UICONTROL Mode Liste]** afin de pouvoir vérifier plus facilement l’état de publication d’une ressource particulière.
 
       >[!NOTE]
       >
-      >Si Publication **** rapide n’est pas visible dans la barre d’outils, appuyez sur le bouton d’ellipse à la place, puis sélectionnez Publication **** rapide dans le menu liste.
+      >Si l’option **[!UICONTROL Publication rapide]** n’est pas visible sur la barre d’outils, appuyez sur le bouton avec les points de suspension à la place, puis sélectionnez **[!UICONTROL Publication rapide]** dans le menu de liste.
 
-      ![Publication rapide au niveau du dossier dans un média dynamique](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+      ![Publication rapide au niveau du dossier dans Dynamic Media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
 
-1. Sélectionnez l’une des options suivantes dans la liste de menu Publication **** rapide.
+1. Sélectionnez l’une des options suivantes dans la liste de menu **[!UICONTROL Publication rapide]**.
 
-   | Publication rapide, option | Effets |
+   | Option Publication rapide | Effets |
    | --- | --- | 
-   | Publier sur AEM | Publie immédiatement les fichiers sélectionnés sur AEM. |
-   | Publier sur Brand Portal | Publie immédiatement les fichiers sélectionnés sur le portail **[!UICONTROL de marques.]**<br>Cette option n’est disponible que si votre instance AEM Assets dispose déjà de**[!UICONTROL  Brand Portal ]**configuré. |
-   | Publier vers Dynamic Media | Publie immédiatement les fichiers sélectionnés dans Contenu multimédia dynamique.<br>Un fichier doit déjà être synchronisé dans Contenu multimédia dynamique. Si nécessaire, assurez-vous que le mode **** Sync des propriétés d’un dossier est déjà défini pour **[!UICONTROL synchroniser tout ce qui se trouve dans cette sous-arborescence de dossiers sur dynamicmedia.]** |
+   | Publier sur AEM | Publie immédiatement les ressources sélectionnées dans AEM. |
+   | Publier sur Brand Portal | Publie immédiatement les ressources sélectionnées dans **[!UICONTROL Brand Portal.]**<br>Cette option n’est disponible que si votre instance AEM Assets dispose déjà de**[!UICONTROL  Brand Portal ]**configuré. |
+   | Publier vers Dynamic Media | Publie immédiatement les ressources sélectionnées dans Dynamic Media.<br>Une ressource doit déjà être synchronisée dans Dynamic Media. Si nécessaire, assurez-vous que le **[!UICONTROL mode de synchronisation]** dans les propriétés d’un dossier est déjà défini sur **[!UICONTROL Synchroniser avec Dynamic Media tout le contenu de cette sous-arborescence de dossiers]**. |
 
 1. Appuyez sur **[!UICONTROL OK]**, puis sur **[!UICONTROL Fermer.]**
 
-## Publier ou annuler la publication sélective des fichiers au moyen des résultats de la recherche {#selective-publish-unpublish-search-results}
+## Publier des ressources ou en annuler la publication de manière sélective au moyen des résultats de recherche {#selective-publish-unpublish-search-results}
 
-Les résultats de la recherche peuvent afficher des fichiers provenant de différents dossiers de fichiers dont les paramètres de publication dans Contenu multimédia dynamique sont différents. Lorsque vous avez sélectionné un ou plusieurs fichiers à partir des résultats de la recherche et que les fichiers ont des paramètres de mode de publication de Contenu multimédia dynamique différents, vous pouvez déclencher la publication **** Gérer la publication à partir de la barre d’outils, afin de publier ou d’annuler la publication.
+Les résultats de recherche peuvent afficher des ressources provenant de dossiers de ressources dont les paramètres de publication de Dynamic Media diffèrent. Lorsque vous avez sélectionné une ou plusieurs ressources à partir des résultats de la recherche et que les ressources comportent des paramètres de mode de publication Dynamic Media différents, vous pouvez déclencher la fonction **[!UICONTROL Gérer la publication]** à partir de la barre d’outils afin de publier ou d’annuler la publication.
 
 Voir aussi [Rechercher des ressources dans AEM.](/help/assets/search-assets.md)
 
-**Pour publier ou annuler la publication sélective de fichiers au moyen des résultats de la recherche**
+**Pour publier des ressources ou en annuler la publication de manière sélective au moyen des résultats de recherche**
 
-1. En AEM, dans le coin supérieur gauche de la page, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche de la page, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers.]**
-1. Dans la barre d’outils, près du coin supérieur droit de la page, appuyez sur l’icône Rechercher (loupe).
-1. Dans le champ **[!UICONTROL Type à rechercher]** , entrez un mot-clé, puis appuyez sur **[!UICONTROL Entrée.]**
-1. Près du coin supérieur droit de la page, appuyez sur l’icône de Vue **[!UICONTROL de]** Liste.
-1. Near the upper-left corner of the page, tap the **[!UICONTROL Filters]** icon.
+1. En AEM, dans le coin supérieur gauche de la page, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche de la page, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers]**.
+1. Dans la barre d’outils, dans le coin supérieur droit de la page, appuyez sur l’icône Rechercher (loupe).
+1. Dans le champ **[!UICONTROL Texte à rechercher]**, entrez un mot-clé, puis appuyez sur **[!UICONTROL Entrée.]**
+1. Dans le coin supérieur droit de la page, appuyez sur l’icône **[!UICONTROL Mode Liste]**.
+1. Dans le coin supérieur gauche de la page, appuyez sur l’icône **[!UICONTROL Filtres]**.
 
-   ![Vue de liste et Filtres dans les résultats de la recherche](/help/assets/assets-dm/select-publish-search-result.png)
+   ![Mode Liste et Filtres dans les résultats de recherche](/help/assets/assets-dm/select-publish-search-result.png)
 
-1. Dans le panneau de gauche, développez **[!UICONTROL Etat]**, puis développez le prédicat de recherche **[!UICONTROL Contenu multimédia]** dynamique.
-1. Utilisez les cases à cocher **[!UICONTROL Publié]** et **[!UICONTROL Non publié]** pour affiner davantage les résultats de recherche en fonction de l’état publié des ressources Contenu multimédia dynamique.
-Vous pouvez éventuellement utiliser ces cases à cocher conjointement avec le prédicat de recherche **[!UICONTROL Publier]** pour affiner les résultats de recherche des ressources AEM **[!UICONTROL publiées]** et **[!UICONTROL non publiées]** .
+1. Dans le panneau de gauche, développez **[!UICONTROL Statut]**, puis développez le prédicat de recherche **[!UICONTROL Dynamic Media]**.
+1. Utilisez les cases à cocher **[!UICONTROL Publiée]** et **[!UICONTROL Publication annulée]** pour affiner davantage les résultats de recherche en fonction de l’état de publication des ressources Dynamic Media.
+Vous pouvez éventuellement utiliser ces cases à cocher conjointement avec le prédicat de recherche **[!UICONTROL Publier]** pour affiner les résultats de recherche des ressources AEM dont le statut est **[!UICONTROL Publiée]** et **[!UICONTROL Publication annulée]**.
 1. Utilisez l’une des méthodes suivantes :
-   * Sélectionnez un ou plusieurs fichiers que vous souhaitez publier ou annuler la publication.
-   * Près du coin supérieur droit de la page Résultats **[!UICONTROL de la]** recherche, appuyez sur **[!UICONTROL Sélectionner tout.]**
-1. On the toolbar, tap **[!UICONTROL Manage Publication.]** Vous devrez peut-être appuyer sur l’icône représentant des points de suspension dans la barre d’outils pour afficher **[!UICONTROL Gérer la publication.]**
-1. Sur la page **[!UICONTROL Gérer la publication - Options]** , sélectionnez l’action de votre choix.
+   * Sélectionnez une ou plusieurs ressources que vous souhaitez publier ou dont vous souhaitez annuler la publication.
+   * Dans le coin supérieur droit de la page **[!UICONTROL Résultats de la recherche]**, appuyez sur **[!UICONTROL Tout sélectionner]**.
+1. Dans la barre d’outils, appuyez sur **[!UICONTROL Gérer la publication.]** Vous devrez peut-être appuyer sur l’icône de points de suspension de la barre d’outils pour afficher l’option **[!UICONTROL Gérer la publication]**.
+1. Sur la page **[!UICONTROL Gérer la publication – Options]**, sélectionnez l’action de votre choix.
 
-   | Action sélectionnée | Paramètre Publier les ressources dans la configuration de Contenu multimédia dynamique | Les ressources sont |
+   | Action sélectionnée | Paramètre Publier les ressources dans la configuration de Dynamic Media | Les ressources sont |
    | --- | --- | --- |
-   | Publication | Immédiatement ou A l&#39;Activation | Publié sur AEM et Contenu multimédia dynamique. |
-   | Publication | Publication sélective | Publié sur AEM uniquement. |
-   | Annuler la publication | Immédiatement ou A l&#39;Activation | Non publié à partir d’AEM et de Contenu multimédia dynamique. |
-   | Annuler la publication | Publication sélective | Non publié à partir d&#39;AEM uniquement. |
-   | Publier vers Dynamic Media | Immédiatement ou A l&#39;Activation | Non publié sur AEM, Contenu multimédia dynamique ou les deux. |
-   | Publier vers Dynamic Media | Publication sélective | Publié dans Contenu multimédia dynamique uniquement. |
-   | Annuler la publication à partir de Dynamic Media | Immédiatement ou A l&#39;Activation | Non annulé de la publication à partir d’AEM, de Contenu multimédia dynamique ou des deux. |
-   | Annuler la publication à partir de Dynamic Media | Publication sélective | Annulation de la publication à partir de Contenu multimédia dynamique uniquement. |
+   | Publier | Immédiatement ou Lors de l’activation | Publiées dans AEM et Dynamic Media. |
+   | Publier | Publication sélective | Publiées sur AEM uniquement. |
+   | Annuler la publication | Immédiatement ou Lors de l’activation | Publication annulée à partir d’AEM et de Dynamic Media. |
+   | Annuler la publication | Publication sélective | Publication annulée à partir d’AEM uniquement. |
+   | Publier vers Dynamic Media | Immédiatement ou Lors de l’activation | Non publiées sur AEM, Dynamic Media ou les deux. |
+   | Publier vers Dynamic Media | Publication sélective | Publiées sur Dynamic Media uniquement. |
+   | Annuler la publication à partir de Dynamic Media | Immédiatement ou Lors de l’activation | Publication non annulée à partir d’AEM, de Dynamic Media ou des deux. |
+   | Annuler la publication à partir de Dynamic Media | Publication sélective | Publication annulée à partir de Dynamic Media uniquement. |
 
-1. Sous **[!UICONTROL Planification]**, définissez le moment de la désactivation.
+1. Sous **[!UICONTROL Planning]**, définissez le calendrier de la désactivation.
 
-   | Calendrier sélectionné | Ce qui se produit |
+   | Planification sélectionnée | Ce qui se produit |
    | --- | --- |
    | Maintenant | L’action sélectionnée est exécutée immédiatement. |
-   | Plus tard | L&#39;action sélectionnée est exécutée à la date et à l&#39;heure particulières sélectionnées. |
+   | Plus tard | L’action sélectionnée est exécutée à la date et à l’heure particulières sélectionnées. |
 
-1. Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication - Options]** , appuyez sur **[!UICONTROL Suivant.]**
-1. (Facultatif) Dans la page **[!UICONTROL Gérer la publication - Portée]** , passez en revue la colonne **[!UICONTROL Publier la Cible]** du tableau pour les ressources sélectionnées.
+1. Dans le coin supérieur droit de la page **[!UICONTROL Gestion de la publication – Options]**, appuyez sur **[!UICONTROL Suivant]**.
+1. (Facultatif) Sur la page **[!UICONTROL Gestion de la publication – Portée]**, passez en revue la colonne **[!UICONTROL Cible de publication]** du tableau correspondant aux ressources sélectionnées.
 
-   | Paramètre Publier les ressources dans la configuration de Contenu multimédia dynamique | Action sélectionnée | Cible de publication |
+   | Paramètre Publier les ressources dans la configuration de Dynamic Media | Action sélectionnée | Cible de publication |
    | --- | --- | --- |
-   | Immédiatement ou <br>à l&#39;Activation | Publication | aem et contenu multimédia dynamique |
-   | Immédiatement ou <br>à l&#39;Activation | Publier vers Dynamic Media | Aucune |
-   | Publication sélective | Publication | AEM |
+   | Immédiatement ou <br>Lors de l’activation | Publier | AEM et Dynamic Media |
+   | Immédiatement ou <br>Lors de l’activation | Publier vers Dynamic Media | Aucune |
+   | Publication sélective | Publier | AEM |
    | Publication sélective | Publier vers Dynamic Media | Dynamic Media |
-   | Immédiatement ou <br>à l&#39;Activation | Annuler la publication | aem et contenu multimédia dynamique |
-   | Immédiatement ou <br>à l&#39;Activation | Annuler la publication à partir de Dynamic Media | Aucune |
-   | Publication sélective | Annuler la publication | AEM |
+   | Immédiatement ou <br>Lors de l’activation | Annuler la publication | AEM et Dynamic Media |
+   | Immédiatement ou <br>Lors de l’activation | Annuler la publication à partir de Dynamic Media | Aucune |
+   | Publication sélective | Annuler la publication | aem |
    | Publication sélective | Annuler la publication à partir de Dynamic Media | Dynamic Media |
 
-1. Dans la page **[!UICONTROL Gérer la publication - Portée]** , effectuez l’une des opérations suivantes :
-   * Sélectionnez un ou plusieurs fichiers à supprimer de la publication ou de l’annulation de publication.
-   * Dans le coin supérieur droit de la page **[!UICONTROL Gérer la publication - Portée]** , appuyez sur **[!UICONTROL Publier]** ou **[!UICONTROL Annuler la publication]** pour lancer l’action.
+1. Sur la page **[!UICONTROL Gestion de la publication – Portée]**, effectuez l’une des opérations suivantes :
+   * Sélectionnez une ou plusieurs ressources à supprimer de la publication ou de l’annulation de la publication.
+   * Dans le coin supérieur droit de la page **[!UICONTROL Gestion de la publication – Portée]**, appuyez sur **[!UICONTROL Publier]** ou **[!UICONTROL Annuler la publication]** pour lancer l’action.
 1. Appuyez sur **[!UICONTROL OK.]**
 
-## Vérification de l’état de publication d’un fichier {#check-publish-status-of-asset}
+## Vérification du statut de publication d’une ressource {#check-publish-status-of-asset}
 
-Vous pouvez utiliser le **[!UICONTROL journal]** avec la vue **[!UICONTROL de]** carte, la Vue **[!UICONTROL de]** colonne ou la Vue de **[!UICONTROL Liste dans AEM pour vérifier rapidement l’état de publication d’un fichier.]**
+Vous pouvez utiliser **[!UICONTROL Chronologie]** avec **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]** dans AEM pour vérifier rapidement l’état de publication d’une ressource.
 
-**Pour vérifier l’état de publication d’un fichier**
+**Pour vérifier l’état de publication d’une ressource**
 
-1. En AEM, dans le coin supérieur gauche de la page, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche de la page, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers.]**
-1. Dans la Vue **[!UICONTROL de]** carte, la Vue **[!UICONTROL de]** colonnes ou la Vue **[!UICONTROL de]** Liste (capture d’écran ci-dessous montre la Vue de **[!UICONTROL Liste), ouvrez un dossier contenant les fichiers que vous avez publiés ou non publiés.]**
-1. Sélectionnez un fichier pour qu’il s’affiche avec une coche. Voir la capture d’écran ci-dessous, par exemple.
-1. Near the upper-left corner of the page, from the drop-down menu, select **[!UICONTROL Timeline.]** La région **[!UICONTROL Etat]** du panneau de gauche affiche l’état de publication de la ressource sélectionnée.
-Lorsque vous utilisez la Vue **[!UICONTROL de]** Liste, une colonne supplémentaire pour l’état de publication **[!UICONTROL Contenu multimédia]** dynamique s’affiche.
-   * Un dossier configuré pour la synchronisation avec Contenu multimédia dynamique affiche la colonne Contenu multimédia **** dynamique par défaut.
-   * Un dossier *non* configuré pour la synchronisation avec Contenu multimédia dynamique n’affiche pas la colonne Contenu multimédia dynamique.
-      ![Vue de liste et chronologie](/help/assets/assets-dm/selective-publish-status-timeline.png)
+1. En AEM, dans le coin supérieur gauche de la page, appuyez sur le logo AEM pour accéder à la console de navigation globale. Sur le côté gauche de la page, appuyez sur l’icône Navigation (juste au-dessus de l’icône Outils), puis appuyez sur **[!UICONTROL Ressources > Fichiers]**.
+1. En **[!UICONTROL Mode Carte]**, **[!UICONTROL Mode Colonnes]** ou **[!UICONTROL Mode Liste]** (la capture d’écran ci-dessous présente le **[!UICONTROL Mode Liste]**), ouvrez un dossier contenant les ressources que vous avez publiées ou dont vous avez annulé la publication.
+1. Sélectionnez une ressource pour qu’elle s’affiche avec une coche. Voir la capture d’écran ci-dessous, par exemple.
+1. Dans le menu déroulant situé dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Chronologie.]** La section **[!UICONTROL État]** du panneau de gauche affiche l’état de publication de la ressource sélectionnée.
+Lorsque vous utilisez l’option **[!UICONTROL Mode Liste]**, une colonne supplémentaire pour l’état de publication de **[!UICONTROL Dynamic Media]** s’affiche.
+   * Un dossier configuré pour la synchronisation avec Dynamic Media affiche la colonne **[!UICONTROL Dynamic Media]** par défaut.
+   * Un dossier *non* configuré pour la synchronisation avec Dynamic Media n’affiche pas la colonne Dynamic Media.
+      ![Mode Liste et Chronologie](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
-## Dépannage de la publication sélective {#selective-publish-troubleshoot}
+## Résolution des problèmes de publication sélective {#selective-publish-troubleshoot}
 
-Une ressource qui n’est pas synchronisée avec Contenu multimédia dynamique mais dont l’action de publication Contenu multimédia dynamique est déclenchée déclenche le message d’erreur et la solution suivante :
+Une ressource qui n’est pas synchronisée avec Dynamic Media mais au niveau de laquelle une action de publication de Dynamic Media est déclenchée se traduit par le message d’erreur suivant et sa solution :
 
 ![Erreur de publication sélective](/help/assets/assets-dm/selective-publish-error.png)
 
