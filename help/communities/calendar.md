@@ -28,25 +28,25 @@ La fonction Calendrier offre des informations relatives aux événements de la c
 Cette section de la documentation décrit :
 
 * Ajouter la fonction Calendrier à un site AEM
-* Configuration settings for `Calendar` components
+* Paramètres de configuration des composants `Calendar`
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
 
-To add a `Calendar` component to a page in author mode, use the component browser to locate
+Pour ajouter un composant `Calendar` à une page en mode création, utilisez l’explorateur de composants pour localiser
 
 * `Communities / Calendar`
 
 et faites glisser le composant sur une page, par exemple à un endroit relatif à la fonction, pour permettre aux utilisateurs de le consulter.
 
-For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez [Community Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) are included, this is how the `Calendar` component will appear.
+Lorsque les [bibliothèques client requises](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) sont incluses, c&#39;est ainsi que le composant `Calendar` s&#39;affiche.
 
 ![calendar-component](assets/calendar-component.png)
 
 ### Configuration du calendrier {#configuring-calendar}
 
-Select the placed `Calendar` component to access and select the `Configure` icon which opens the edit dialog.
+Sélectionnez le composant `Calendar` placé auquel accéder et sélectionnez l&#39;icône `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configurer](assets/configure-new.png)
 
@@ -54,7 +54,7 @@ Select the placed `Calendar` component to access and select the `Configure` icon
 
 #### Onglet Settings {#settings-tab}
 
-Under the **Settings** tab, specify whether or not to allow tags to be applied to calendar entries.
+Sous l&#39;onglet **Paramètres**, indiquez si les balises doivent être appliquées ou non aux entrées de calendrier.
 
 * **Événements par page**
 
@@ -74,7 +74,7 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Autoriser le balisage**
 
-   If checked, allow members to add tag labels to the events they post (see **Tag field** tab). Cette option est cochée par défaut.
+   Si cette option est cochée, autorisez les membres à ajouter des étiquettes de balise aux événements qu’ils publient (voir l’onglet **Champ de balise**). Cette option est cochée par défaut.
 
 * **Autoriser les transferts de fichiers**
 
@@ -86,11 +86,11 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Taille maximale du fichier**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Ne s’applique que si `Allow File Uploads` la vérification est effectuée. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
+   Ne s&#39;applique que si `Allow File Uploads` est coché. Liste séparée par des virgules d’extensions de fichiers avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichier sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être téléchargés. Par défaut, aucun type de fichier n’est spécifié, de sorte que tous les types de fichier soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -122,9 +122,9 @@ Under the **Settings** tab, specify whether or not to allow tags to be applied t
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée comme contenu [](/help/communities/featured.md)phare. Cette option n’est pas cochée par défaut.
+   Si cette option est cochée, l’idée peut être identifiée comme [contenu incitatif](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
 
-Under the **User Moderation** tab, specify how the posted topics and replies (user generated content) are managed. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous l’onglet **Modération utilisateur**, spécifiez comment les rubriques publiées et les réponses (contenu généré par l’utilisateur) sont gérées. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 #### Onglet Modération utilisateur {#user-moderation-tab}
 
@@ -162,7 +162,7 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Espaces de noms autorisés**
 
-   Pertinent si `Allow Tagging` est coché sous l’onglet **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous l&#39;onglet **Paramètres**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de nommage inclut &quot;Balises standard&quot; (l’espace de nommage par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de nommage sont autorisés.
 
 * **Limite de suggestions**
 
@@ -188,7 +188,7 @@ Lorsqu’un événement de calendrier est sélectionné, ses détails, sa descri
 
 Les autres choix varient selon que le visiteur est modérateur, administrateur, membre de la communauté, membre privilégié ou anonyme.
 
-### Modérateurs et administrateurs {#moderators-and-administrators}
+### Modérateurs et administrateurs  {#moderators-and-administrators}
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’[activités de modération](/help/communities/moderate-ugc.md) (autorisées par la configuration du composant) pour tous les événements et commentaires de calendrier publiés pour un événement.
 
@@ -196,7 +196,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 #### Membres {#members}
 
-When the signed in user is a community member or [privileged member](/help/communities/users.md#privileged-members-group) (depending on configuration), they are able to select `New Event` to create and post a new calendar event.
+Lorsque l&#39;utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Event` pour créer et publier un nouveau événement de calendrier.
 
 Plus précisément, il est autorisé à:
 
@@ -218,10 +218,10 @@ Les visiteurs non inscrits peuvent lire les événements de calendrier et les tr
 
 ## Informations supplémentaires {#additional-information}
 
-More information may be found on the [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) page for developers.
+Pour plus d&#39;informations, consultez la page [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) destinée aux développeurs.
 
 Pour des informations sur la modération des événements et des commentaires de calendrier, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
-For tagging calendar events and comments, see [Tagging User Generated Content](/help/communities/tag-ugc.md).
+Pour baliser les événements calendaires et les commentaires, voir [Balisage du contenu généré par l&#39;utilisateur](/help/communities/tag-ugc.md).
 
-For translation of calendar events and comments, see [Translating User Generated Content](/help/communities/translate-ugc.md).
+Pour la traduction des événements calendaires et des commentaires, voir [Traduction du contenu généré par l&#39;utilisateur](/help/communities/translate-ugc.md).
