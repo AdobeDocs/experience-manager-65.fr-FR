@@ -23,19 +23,19 @@ Les formulaires localisés permettent de servir un public plus large dans plusie
 
 Cet article décrit le processus d’utilisation du processus de traduction AEM avec des formulaires adaptatifs et des documents d’enregistrement.
 
-## Localisation d’un formulaire adaptatif et d’un document d’enregistrement à l’aide de la traduction automatique {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
+## Localisation d’un formulaire adaptatif et d’un document d’enregistrement à l’aide de la traduction automatique  {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
 Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et document d’enregistrement. AEM Forms est préconfiguré pour utiliser une version d’évaluation de Microsoft Translator pour la traduction automatique. Procédez comme suit pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement :
 
 1. Sur l’interface utilisateur AEM Forms, sélectionnez un formulaire, puis appuyez sur l’option **Ajouter un dictionnaire**.
 1. Dans l’écran **Ajouter un dictionnaire au projet de traduction**, sélectionnez l’option **Créer un nouveau projet de traduction** ou **Ajouter à un projet de traduction existant**.
 1. Dans le champ **Titre du projet**, indiquez le titre. Par exemple, `Government Reference Site - German locale.`
-1. In the **Target Languages** field, specify a locale (For example, `German(de)`), and click **Done**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.
+1. Dans le champ **Langues de la Cible**, spécifiez un paramètre régional (par exemple, `German(de)`), puis cliquez sur **Terminé**. Vous pouvez spécifier plusieurs paramètres régionaux. Le formulaire est traduit dans tous les paramètres régionaux spécifiés dans le champ **Langues cibles**.
 1. Dans la boîte de dialogue Dictionnaire ajouté, cliquez sur **Ouvrir des projets**. Dans l’écran Projets, ouvrez le nouveau projet.
 1. Cliquez sur les **points de suspension** situés au bas du volet **Résumé de traduction**. L’écran Résumé de traduction apparaît.
 1. Cliquez sur l’icône **Modifier** en haut de l’écran **Résumé de traduction**. Ouvrez l’onglet **Traduction** et sélectionnez Traduction automatique sur l’écran **Méthode de traduction.** Sélectionnez le **fournisseur de traduction** approprié et la **configuration de cloud**. Cliquez sur l’icône **Terminé** en haut de l’écran.
-1. On the **Translation Job** tile, click the ![aem62forms_downarrow](assets/aem62forms_downarrow.png) icon, and click **Start**. Le statut du volet passe à Brouillon. À la fin de la traduction, le statut passe à **Prêt pour la révision**. Actualisez la page après quelques minutes et vérifiez l’état.
-1. After the status changes to **Ready for review** on the **Translation Job** tile, open the form in a browser window. Une version localisée du formulaire s’affiche.
+1. Dans la mosaïque **Tâche de traduction**, cliquez sur l’icône ![flèche de téléchargement ](assets/aem62forms_downarrow.png) d’aem62forms, puis sur **Début**. Le statut du volet passe à Brouillon. À la fin de la traduction, le statut passe à **Prêt pour la révision**. Actualisez la page après quelques minutes et vérifiez l’état.
+1. Une fois l’état défini sur **Prêt pour révision** sur la mosaïque **Tâche de traduction**, ouvrez le formulaire dans une fenêtre de navigateur. Une version localisée du formulaire s’affiche.
 
    >[!NOTE]
    >
@@ -66,11 +66,11 @@ Effectuez les étapes suivantes pour localiser un formulaire et son document d�
 
 1. [Associer les pages de votre gabarit de langue](/help/sites-administering/tc-tic.md) au service de traduction et aux configurations de structure.
 
-1. [Identifiez le type de contenu](/help/sites-administering/tc-rules.md) à traduire.
+1. [Identifiez le type de ](/help/sites-administering/tc-rules.md) contenu à traduire.
 
 1. [Préparez le contenu à traduire](/help/sites-administering/tc-prep.md) en créant le gabarit de langue et les pages racine des copies de langue.
 
-1. [Créez des projets](/help/sites-administering/tc-manage.md) de traduction pour rassembler le contenu à traduire et préparer le processus de traduction.
+1. [Créez des ](/help/sites-administering/tc-manage.md) projets de traduction pour rassembler le contenu à traduire et préparer le processus de traduction.
 
 1. Utiliser les projets de translation pour [gérer le processus de traduction du contenu](/help/sites-administering/tc-manage.md).
 
