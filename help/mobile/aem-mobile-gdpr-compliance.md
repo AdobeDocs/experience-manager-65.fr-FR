@@ -27,7 +27,7 @@ AEM Mobile est prêt à aider les clients avec les obligations de conformité a
 
 [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html)
 
-## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
+## Adobe Digital Publishing Suite  {#adobe-digital-publishing-suite}
 
 Le produit de publication digitale d’Adobe (qui précède AEM Mobile) prend en charge les initiatives d’Adobe pour se préparer au RGPD. Voir [https://www.adobe.com/fr/privacy/general-data-protection-regulation.html](https://www.adobe.com/fr/privacy/general-data-protection-regulation.html). Vous trouverez ci-dessous des explications sur la prise en charge des fonctions associées au RGPD dans le produit Digital Publishing Suite, notamment sur la façon de travailler avec Adobe afin de présenter des demandes RGPD.
 
@@ -51,7 +51,7 @@ Fournissez au moins une des informations suivantes :
 * Pour les utilisateurs d’applications Windows, l’ID de la boutique d’applications de l’utilisateur final : *dpsc-windowsAppStoreId*
 * L’adresse électronique de utilisateur final utilisée pour interagir avec l’application DPS : *email*
 
-### Frequently Asked Questions (FAQ) {#frequently-asked-questions-faq}
+### Questions fréquentes (FAQ) {#frequently-asked-questions-faq}
 
 **L’Adobe va-t-il supprimer mes achats de boutique d’applications lors du lancement d’une demande de DELETE ?**
 
@@ -73,7 +73,7 @@ Adobe dispose de très peu d’informations associées directement à un utilisa
 
 Aucune. Des données sont suivies, mais au niveau de l’application (et pas au niveau personnel). Il s’agit notamment des événements comme les lancements, les blocages, les fermetures, les activités, les achats ou les incrustations de folio. Les emplacements géographiques, les noms, les ID d’appareils et les adresses IP ne sont pas suivis.
 
-**L’utilisateur final a fourni ses informations, mais rien n’a été trouvé. Why not?**
+**L’utilisateur final a fourni ses informations, mais rien n’a été trouvé. Pourquoi pas ?**
 
 Au fil de l’évolution du produit Digital Publishing Suite, les mises en œuvre de services ont été modifiées, et davantage de données ont été obscurcies. Si aucune donnée n’a été trouvée en utilisant les données fournies par l’utilisateur, cela signifie que les données utilisateur ne permettent pas d’identifier cette personne.
 
@@ -83,7 +83,7 @@ Veuillez contacter l’assistance clientèle d’Adobe pour présenter une deman
 
 Voici un exemple des entrées et des sorties résultantes d’une demande de RDPR Digital Publishing Suite :
 
-#### Inputs: {#inputs}
+#### Entrées : {#inputs}
 
 ```
 dpsc-contractId = “12345-1234-12416234” 
