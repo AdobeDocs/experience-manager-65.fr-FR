@@ -33,15 +33,15 @@ Chaque modèle présente une sélection de composants disponibles.
 
 >[!NOTE]
 >
->Pour savoir comment développer votre application AEM à l’aide de CRXDE Lite, voir [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Pour savoir comment développer votre application AEM à l’aide du CRXDE Lite, voir [Développement avec le CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Un modèle sert de fondement pour une page.
 
-To create a page, the template must be copied (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) to the corresponding position in the site-tree: this is what happens if a page is created using the **Websites** tab.
+Pour créer une page, le modèle doit être copié (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c&#39;est ce qui se produit si une page est créée à l&#39;aide de l&#39;onglet **Sites Web**.
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling: resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
-## Structure of a Template {#structure-of-a-template}
+## Structure d&#39;un modèle {#structure-of-a-template}
 
 Il y a deux aspects à considérer :
 
@@ -55,7 +55,7 @@ Différentes propriétés peuvent être définies, en particulier :
 * **jcr:title**- titre du modèle. Apparaît dans la boîte de dialogue lors de la création d’une page.
 * **jcr:description**- description du modèle. Apparaît dans la boîte de dialogue lors de la création d’une page.
 
-This node contains *a jcr:content (cq:PageContent)* node which be used as the basis for the content node of resulting pages; this references, using *sling:resourceType*, the component to be used for rendering the actual content of a new page.
+Ce noeud contient *un noeud jcr:content (cq:PageContent)* qui doit être utilisé comme base pour le noeud de contenu des pages résultantes ; cette référence, à l’aide de *sling:resourceType*, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 
 >[!NOTE]
 >
