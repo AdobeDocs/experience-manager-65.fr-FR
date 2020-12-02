@@ -102,7 +102,7 @@ La console Sites propose deux options de publication :
 * [Publication rapide](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [Gérer la publication](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### Publication rapide  {#quick-publish}
+#### Publication rapide   {#quick-publish}
 
 L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. De ce fait, toute autre référence non publiée l’est aussi automatiquement.
 
@@ -112,7 +112,7 @@ Pour publier une page avec l’option Publication rapide :
 
    ![pp-02](assets/pp-02.png)
 
-1. In the Quick Publish dialogue, confirm the publication by clicking on **Publish** or cancel by clicking on **Cancel**. Pour rappel, toute référence non publiée sera également publiée automatiquement.
+1. Dans la boîte de dialogue Publication rapide, confirmez la publication en cliquant sur **Publier** ou annulez en cliquant sur **Annuler**. Pour rappel, toute référence non publiée sera également publiée automatiquement.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -122,7 +122,7 @@ Pour publier une page avec l’option Publication rapide :
 >
 >L’option de publication rapide est dite superficielle ; en d’autres termes, seules la ou les pages sélectionnées sont publiées (les éventuelles pages enfants ne le sont pas).
 
-#### Gérer la publication  {#manage-publication}
+#### Gérer la publication   {#manage-publication}
 
 La méthode **Gérer la publication** propose plus d’options que Publication rapide, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
 
@@ -145,7 +145,7 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    Cliquez sur **Suivant** pour continuer.
 
-1. In the next step of the Manage Publication wizard, **Scope**, you can define the scope of the publication/unpublication such as including to include child pages and/or including references.
+1. À l’étape suivante de l’assistant de gestion des publications, **Scope**, vous pouvez définir la portée de la publication/annulation de publication, par exemple inclure des pages enfants et/ou inclure des références.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -179,9 +179,9 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    ![pp-04](assets/pp-04.png)
 
-   The **Published References** dialogue displayes the references for the selected content. Par défaut, elles sont toutes sélectionnées. Dès lors, elles seront toutes publiées ou leur publication sera annulée. Vous pouvez toutefois les désélectionner pour qu’elles ne soient pas incluses dans l’opération.
+   La boîte de dialogue **Références publiées** affiche les références du contenu sélectionné. Par défaut, elles sont toutes sélectionnées. Dès lors, elles seront toutes publiées ou leur publication sera annulée. Vous pouvez toutefois les désélectionner pour qu’elles ne soient pas incluses dans l’opération.
 
-   Click **Done** to save your changes or **Cancel** to cancel the selction and return to the wizard.
+   Cliquez sur **Terminé** pour enregistrer vos modifications ou sur **Annuler** pour annuler la sélection et revenir à l&#39;Assistant.
 
    De retour dans l’assistant, la colonne **Références** est mise à jour afin de tenir compte des références que vous avez choisi de publier ou dont la publication doit être annulée.
 
@@ -195,12 +195,12 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
    >[!NOTE]
    >
-   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur. See the [previous note on this page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) for details.
+   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur. Pour plus d&#39;informations, consultez la [note précédente sur cette page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) concernant les privilèges de publication ainsi que [Gestion de l&#39;accès aux Workflows](/help/sites-administering/workflows-managing.md) et [Application de Workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
    Les ressources sont regroupées en fonction des workflows déclenchés et de chaque option proposée pour :
 
    * définir le titre du workflow ;
-   * Keep the workflow package, provided that the workflow has [multi-resource support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+   * Conservez le package de flux de travaux, à condition que le flux de travaux prenne [en charge plusieurs ressources](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * définir le titre du module de workflow, si l’option de conservation du module de workflow a été sélectionnée.
 
    Cliquez sur **Publier** ou **Publier ultérieurement** pour terminer la publication.
@@ -216,11 +216,11 @@ Vous pouvez annuler la publication d’une ou de plusieurs pages [en procédant 
 * [À partir de l’éditeur de page](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [À partir de la console Sites](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Annulation de la publication à partir de l’éditeur  {#unpublishing-from-the-editor}
+### Annulation de la publication à partir de l’éditeur   {#unpublishing-from-the-editor}
 
 Lors de la modification d’une page, si vous souhaitez annuler sa publication, sélectionnez **Annuler la publication de la page** dans le menu **Informations sur la page**, comme vous le feriez pour [publier la page](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor).
 
-### Annulation de la publication à partir de la console  {#unpublishing-from-the-console}
+### Annulation de la publication à partir de la console   {#unpublishing-from-the-console}
 
 De la même façon que vous [utilisez l’option Gérer la publication pour publier une page](/help/sites-authoring/publishing-pages.md#manage-publication), vous pouvez l’utiliser pour annuler la publication.
 
@@ -262,7 +262,7 @@ Pour ce faire, vous pouvez utiliser l’option [Gérer la publication](/help/sit
 
    N’oubliez pas que vous pouvez également passer en revue les références à publier au moyen de l’option **Références publiées**.
 
-1. [Continuez l’assistant Gérer la publication comme normal](#manage-publication) pour terminer la publication ou l’annulation de publication de l’arborescence.
+1. [Continuez l’assistant Gérer la publication comme ](#manage-publication) normal pour terminer la publication ou la déspublication de l’arborescence.
 
 ## Définition de l’état de publication {#determining-publication-status}
 
