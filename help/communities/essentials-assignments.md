@@ -21,7 +21,7 @@ ht-degree: 13%
 
 # Affectations Essentials {#assignments-essentials}
 
-Lisez ce qui suit pour en savoir plus sur les informations essentielles pour travailler avec les fonctions d&#39;assignation des sites de la communauté [d&#39;](/help/communities/overview.md#enablement-community) activation.
+Lisez ce qui suit pour en savoir plus sur les informations essentielles pour travailler avec les fonctions d&#39;attribution des sites [communauté d&#39;activation](/help/communities/overview.md#enablement-community).
 
 La fonction des affectations permet d’affecter des ressources d’activation et des chemins d’apprentissage aux membres des communautés d’activation.
 
@@ -39,7 +39,7 @@ La fonction des affectations permet d’affecter des ressources d’activation e
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigné<br /><br /> cq.social.enablement.hbs.resource cq.social.enablement.hbs.learnpath</td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigné<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learnpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -51,12 +51,12 @@ La fonction des affectations permet d’affecter des ressources d’activation e
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Fonction <a href="/help/communities/assignments.md">Affectations</a></td>
+   <td>Voir <a href="/help/communities/assignments.md">Fonction Affectations</a></td>
   </tr>
  </tbody>
 </table>
 
-### État d’achèvement et de réussite {#completion-and-success-status}
+### État d&#39;achèvement et de réussite {#completion-and-success-status}
 
 Les états d’achèvement et de réussite sont utilisés dans les rapports et les bannières d’état sur les affectations.
 
@@ -86,7 +86,7 @@ Les seules combinaisons possibles d’achèvement et d’état de réussite sont
 
 ### Fonction Affectations {#assignments-function}
 
-Une structure de site communautaire qui comprend la fonction [](/help/communities/functions.md#assignments-function)Affectations, comprend un ` [assignments](/help/communities/assignments.md)` composant configuré.
+Une structure de site communautaire qui comprend la fonction [Affectations](/help/communities/functions.md#assignments-function), comprend un composant ` [assignments](/help/communities/assignments.md)` configuré.
 
 ### API de référence {#reference-apis}
 
