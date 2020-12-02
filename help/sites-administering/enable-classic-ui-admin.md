@@ -23,7 +23,7 @@ ht-degree: 69%
 
 Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lors du survol du curseur sur certaines icônes de la console, et qui permettaient d’accéder à l’IU classique, ne sont plus affichées.
 
-Every console that has a Classic UI version in `/libs/cq/core/content/nav` can be re-enabled individually so that the **Classic UI** option once again pops up over the console icon when it is moused over.
+Chaque console disposant d’une version d’interface utilisateur classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche de nouveau sur l’icône de console lorsqu’elle est remplacée.
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
@@ -31,7 +31,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav`
 
-   Par exemple, 
+   Par exemple :
 
    [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
@@ -39,7 +39,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Create an overlay using the **Overlay Node** option; for example:
+1. Créez une incrustation à l’aide de l’option **Noeud d’incrustation** ; par exemple :
 
    * **Chemin**: `/apps/cq/core/content/nav/sites`
    * **Emplacement du recouvrement**: `/apps/`
