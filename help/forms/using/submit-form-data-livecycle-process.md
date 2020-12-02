@@ -26,7 +26,7 @@ Les formulaires adaptatifs prennent en charge l’envoi de données à un proces
 
 Effectuez les étapes suivantes pour permettre à votre serveur AEM Forms d’envoyer des données à un serveur AEM Forms sur JEE :
 
-1. Go to AEM web configuration console at https://[*host*]:[*port*]/system/console/configMgr.
+1. Accédez à AEM console de configuration Web à l’adresse https://[*host*]:[*port*]/system/console/configMgr.
 
 1. Recherchez et cliquez sur le composant **Configuration du SDK client d’Adobe LiveCycle**.
 1. Cliquer pour modifier l’URL du serveur de configuration, le nom d’utilisateur et le mot de passe du serveur AEM Forms sur JEE.
@@ -41,7 +41,7 @@ Une fois que votre AEM Forms est configuré, associez les données XML et les p
 1. Dans la console de configuration web d’AEM, cliquez pour modifier la configuration **Localisateur et invocateur du processus Guide LiveCycle**.
 1. Spécifiez les paramètres suivants :
 
-   * **Nom du paramètre** xml de données (obligatoire) : Spécifiez le fichier de propriétés XML du processus AEM Forms on JEE qui doit traiter les données envoyées. La valeur par défaut est **dataxml**.
+   * **Nom du paramètre**  xml de données (obligatoire) : Spécifiez le fichier de propriétés XML du processus AEM Forms on JEE qui doit traiter les données envoyées. La valeur par défaut est **dataxml**.
 
    * **Nom du paramètre de pièces jointes**(facultatif) : spécifiez la liste d’objets de document que le processus AEM Forms sur JEE doit traiter. La valeur par défaut est **fileAttachmentsList**.
 
