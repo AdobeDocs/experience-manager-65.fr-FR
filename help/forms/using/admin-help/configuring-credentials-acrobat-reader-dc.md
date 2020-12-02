@@ -37,7 +37,7 @@ Le Trust Store peut comporter plusieurs jeux d’informations d’identification
 >
 >vous pouvez également importer et supprimer des informations d’identification automatiquement (Voir [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63)).
 
-## Importation des données d’identification des extensions d’Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
+## Importation des données d’identification des extensions d’Acrobat Reader DC  {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Cliquez sur Importer, puis sous Type de Trust Store, sélectionnez Informations d’identification des extensions d’Acrobat Reader DC.
@@ -52,12 +52,12 @@ Le Trust Store peut comporter plusieurs jeux d’informations d’identification
 
    Si le message d’erreur « Echec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
 
-## Suppression des informations d’identification des extensions d’Acrobat Reader DC {#remove-a-acrobat-reader-dc-extensions-credential}
+## Suppression des informations d’identification des extensions d’Acrobat Reader DC  {#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Sélectionnez les informations d’identification, puis cliquez sur Supprimer.
 
-## Remplacement des informations d’identification des extensions d’Acrobat Reader DC {#replace-a-acrobat-reader-dc-extensions-credential}
+## Remplacement des informations d’identification des extensions d’Acrobat Reader DC  {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Notez l’alias existant des informations d’identification, sélectionnez-le, puis cliquez sur Supprimer.
