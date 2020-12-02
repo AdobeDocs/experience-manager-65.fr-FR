@@ -25,10 +25,10 @@ Le mappage de ressource permet de définir des redirections, des URL Vanity et d
 
 Par exemple, vous pouvez utiliser ces mappages pour :
 
-* Prefix all requests with `/content` so that the internal structure is hidden from the visitors to your website.
-* Define a redirect so that all requests to the `/content/en/gateway` page of your website are redirected to `https://gbiv.com/`.
+* Ajoutez un préfixe `/content` à toutes les requêtes afin que la structure interne soit masquée des visiteurs vers votre site Web.
+* Définissez une redirection de sorte que toutes les requêtes envoyées à la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
 
-One possible HTTP mapping prefixes all requests to `localhost:4503` with `/content`. Un mappage de ce type peut être utilisé pour masquer la structure interne vis-à-vis des visiteurs du site web, car il rend :
+Un mappage HTTP possible préfixe toutes les requêtes à `localhost:4503` avec `/content`. Un mappage de ce type peut être utilisé pour masquer la structure interne vis-à-vis des visiteurs du site web, car il rend :
 
 `localhost:4503/content/we-retail/en/products.html`
 
@@ -36,7 +36,7 @@ accessible à l’aide de :
 
 `localhost:4503/we-retail/en/products.html`
 
-as the mapping will automatically add the prefix `/content` to `/we-retail/en/products.html`.
+car le mappage ajoute automatiquement le préfixe `/content` à `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -50,7 +50,7 @@ as the mapping will automatically add the prefix `/content` to `/we-retail/en/pr
 
 Les mappages forment deux listes que le résolveur de ressources JCR analyse (du haut vers le bas) pour trouver une correspondance.
 
-These lists can be viewed (together with configuration information) under the **JCR ResourceResolver** option of the Felix console; for example, `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Ces listes peuvent être visualisées (avec les informations de configuration) sous l&#39;option **JCR ResourceResolver** de la console Felix ; par exemple, `https://<*host*>:<*port*>/system/console/jcrresolver` :
 
 * Configuration indique la configuration actuelle (telle que définie pour [le résolveur de ressource Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)). 
 
@@ -74,7 +74,7 @@ déclenche :
 
 pour rediriger une requête :
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &quot;
 
 vers :
 
@@ -84,7 +84,7 @@ De nouvelles définitions de mappage sont créées dans le référentiel.
 
 >[!NOTE]
 >
->There are many resources available that help explain how to define regular expressions; for example [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Il existe de nombreuses ressources qui permettent d&#39;expliquer comment définir les expressions ordinaires ; par exemple [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Création des définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
 
@@ -92,13 +92,13 @@ Dans une installation d’AEM standard, vous pouvez trouver le dossier :
 
 `/etc/map/http`
 
-Il s’agit de la structure utilisée lors de la définition des mappages pour le protocole HTTP. Other folders ( `sling:Folder`) can be created under `/etc/map` for any other protocols that you want to map.
+Il s’agit de la structure utilisée lors de la définition des mappages pour le protocole HTTP. D&#39;autres dossiers ( `sling:Folder`) peuvent être créés sous `/etc/map` pour tout autre protocole que vous souhaitez mapper.
 
 #### Configuration d’une redirection interne vers /content {#configuring-an-internal-redirect-to-content}
 
-To create the mapping that prefixes any request to https://localhost:4503/ with `/content`:
+Pour créer le mappage qui préfixe toute requête à https://localhost:4503/ avec `/content` :
 
-1. Using CRXDE navigate to `/etc/map/http`.
+1. A l’aide de CRXDE, accédez à `/etc/map/http`.
 
 1. Créez un nœud :
 
@@ -106,7 +106,7 @@ To create the mapping that prefixes any request to https://localhost:4503/ with 
 
    * **Nom** `localhost_any`
 
-1. Cliquez sur **Tout enregistrer**.
+1. Cliquez sur **Enregistrer tout**.
 1. **Ajoutez** les propriétés suivantes à ce nœud :
 
    * **Nom** `sling:match`
@@ -123,11 +123,11 @@ To create the mapping that prefixes any request to https://localhost:4503/ with 
 
 1. Cliquez sur **Enregistrer tout**.
 
-This will handle a request such as:
+Cela permettra de traiter une demande telle que :
 `localhost:4503/geometrixx/en/products.html`
-as if:
+comme si :
 `localhost:4503/content/geometrixx/en/products.html`
-had been requested.
+avait été demandé.
 
 >[!NOTE]
 >
@@ -135,5 +135,5 @@ had been requested.
 
 >[!NOTE]
 >
->You can use `/etc/map.publish` to hold the configurations for the publish environment. These must then be replicated, and the new location ( `/etc/map.publish`) configured for the **Mapping Location** of the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) of the publish environment.
+>Vous pouvez utiliser `/etc/map.publish` pour conserver les configurations de l’environnement de publication. Ils doivent ensuite être répliqués et le nouvel emplacement ( `/etc/map.publish`) configuré pour l&#39;**emplacement de mappage** de l&#39;[Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) de l&#39;environnement de publication.
 
