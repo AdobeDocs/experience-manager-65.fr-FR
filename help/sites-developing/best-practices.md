@@ -73,22 +73,22 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Explique comment étendre la création de pages pour l’IU tactile.</td>
   </tr>
   <tr>
-   <td>Workflows   </td>
+   <td>Workflows</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">Développement et extension des workflows</a></td>
    <td><p>Les processus vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement effectué dans un environnement AEM. Il est donc vivement recommandé de planifier soigneusement les implémentations de vos processus.</p> </td>
   </tr>
  </tbody>
 </table>
 
-## Communities {#communities}
+## Communities  {#communities}
 
-[AEM Communities](/help/communities/overview.md) simplifie la création et la gestion de communautés sur site.
+[aem ](/help/communities/overview.md) Collectivités simplifie la création et la gestion de communautés sur site.
 
 Les bonnes pratiques pour AEM Communities sont présentées ici :
 
 |  |  |  |
 |---|---|---|
-| Recommandations relatives à l’utilisation du contenu généré par l’utilisateur (UGC) | [Consignes de codage](/help/communities/code-guide.md) | Lignes directrices pour le développement de code flexible et portable pour le cadre [des composants](/help/communities/scf.md) sociaux (SCF). |
+| Recommandations relatives à l’utilisation du contenu généré par l’utilisateur (UGC) | [Consignes de codage](/help/communities/code-guide.md) | Directives pour le développement de code flexible et portable pour le cadre de composants sociaux [a1/> (SCF).](/help/communities/scf.md) |
 | Exemple d’utilisation des composants Communities | [Guide de composants de communauté](/help/communities/components-guide.md) | Un outil de développement interactif. |
 
 ## Outillage/HTL {#tooling-htl}
