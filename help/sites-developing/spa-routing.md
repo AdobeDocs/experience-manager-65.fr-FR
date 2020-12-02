@@ -1,8 +1,8 @@
 ---
-title: routage de modèle SPA
-seo-title: routage de modèle SPA
-description: Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
-seo-description: Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+title: Routage du modèle de SPA
+seo-title: Routage du modèle de SPA
+description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+seo-description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 uuid: 93b4f85a-a240-42d4-95e2-e8b790df7723
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 4ea1bad1fb76142be7f6d564ecf30ed85a6da694
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 4%
+ht-degree: 90%
 
 ---
 
 
-# routage de modèle SPA{#spa-model-routing}
+# Routage du modèle de SPA {#spa-model-routing}
 
-Pour les applications d’une seule page en AEM, l’application est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
+Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 
 >[!NOTE]
 >
@@ -28,19 +28,19 @@ Pour les applications d’une seule page en AEM, l’application est responsable
 
 ## Routage du projet {#project-routing}
 
-L’application est propriétaire du routage et est ensuite implémentée par les développeurs frontaux du projet. Ce document décrit le routage spécifique au modèle renvoyé par le serveur AEM. La structure des données du modèle de page expose l&#39;URL de la ressource sous-jacente. Le projet frontal peut utiliser toute bibliothèque personnalisée ou tierce fournissant des fonctionnalités de routage. Une fois qu&#39;un itinéraire attend un fragment de modèle, un appel à la `PageModelManager.getData()` fonction peut être effectué. Lorsqu’un itinéraire de modèle a été modifié, un événement doit être déclenché pour avertir les bibliothèques d’écoute telles que l’éditeur de page.
+L’application est responsable du routage et est ensuite implémentée par les développeurs front-end du projet. Ce document décrit le routage spécifique au modèle renvoyé par le serveur AEM. La structure des données du modèle de page expose l’URL de la ressource sous-jacente. Le projet front-end peut utiliser n’importe quelle bibliothèque ou personnalisée fournissant des fonctionnalités de routage. Si un itinéraire attend un fragment de modèle, il est possible d’effectuer un appel à la fonction `PageModelManager.getData()`. Lorsqu’un itinéraire de modèle a été modifié, il est nécessaire de déclencher un événement pour avertir les bibliothèques d’écoute, notamment l’éditeur de page.
 
 ## Architecture {#architecture}
 
-Pour obtenir une description détaillée, consultez la section [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) du document de schéma directeur SPA.
+Pour obtenir une description détaillée, consultez la section [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) du Plan directeur d’applications sur une seule page (SPA).
 
 ## ModelRouter {#modelrouter}
 
-Lorsque cette option est activée, `ModelRouter` - encapsule les fonctions de l’API d’historique HTML5 `pushState` et `replaceState` garantit qu’un fragment donné du modèle est prérécupéré et accessible. Il informe ensuite le composant frontal enregistré que le modèle a été modifié.
+Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’historique HTML5 `pushState` et `replaceState` sont encapsulées pour garantir qu’un fragment donné du modèle a été récupéré au préalable et est accessible. Le composant front-end enregistré est ensuite informé que le modèle a été modifié.
 
-## Routage de modèle manuel ou automatique {#manual-vs-automatic-model-routing}
+## Routage manuel ou automatique {#manual-vs-automatic-model-routing}
 
-Le `ModelRouter` système automatise la récupération des fragments du modèle. Mais comme tout outil automatisé vient avec des limites. Si nécessaire, `ModelRouter` vous pouvez désactiver ou configurer le paramètre pour ignorer les chemins à l&#39;aide des propriétés de métadonnées (voir la section Meta Properties du document de composants [de page](/help/sites-developing/spa-page-component.md) SPA). Les développeurs frontaux peuvent alors mettre en oeuvre leur propre couche de routage de modèle en demandant `PageModelManager` à la fonction de charger tout fragment de modèle donné à l&#39;aide de la `getData()` fonction.
+`ModelRouter` automatise la récupération des fragments du modèle. Cependant, comme tout outil automatisé, il comporte des restrictions. Si nécessaire, il est possible de désactiver ou de configurer `ModelRouter` pour ignorer les chemins d’accès à l’aide des propriétés des métadonnées (voir la section Propriétés des métadonnées dans le document [Composant de page SPA ](/help/sites-developing/spa-page-component.md)). Les développeurs front-end peuvent alors mettre en œuvre leur propre couche de routage de modèle en demandant à la fonction `PageModelManager` de charger tout fragment de modèle donné à l’aide de la fonction `getData()`.
 
 >[!NOTE]
 >
@@ -48,15 +48,15 @@ Le `ModelRouter` système automatise la récupération des fragments du modèle.
 
 >[!CAUTION]
 >
->La version actuelle du modèle `ModelRouter` ne prend en charge que l&#39;utilisation d&#39;URL pointant vers le chemin de ressource réel des points d&#39;entrée du modèle Sling. Il ne prend pas en charge l&#39;utilisation d&#39;URL ou d&#39;alias Vanity.
+>La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée de Sling Model. Elle ne prend pas en charge l’utilisation de Vanity URL ni d’alias.
 
 ## Contrat de routage {#routing-contract}
 
-L’implémentation actuelle repose sur l’hypothèse que le projet SPA utilise l’API d’historique HTML5 pour le routage sur les différentes pages de l’application.
+L’implémentation actuelle repose sur l’hypothèse que le projet SPA utilise l’API d’historique HTML5 pour le routage vers les différentes pages de l’application.
 
 ### Configuration {#configuration}
 
-Le `ModelRouter` prend en charge le concept de routage de modèle lorsqu’il écoute `pushState` et `replaceState` appelle à prérécupérer les fragments de modèle. En interne, il déclenche le chargement `PageModelManager` du modèle correspondant à une URL donnée et déclenche un `cq-pagemodel-route-changed` événement que d’autres modules peuvent écouter.
+`ModelRouter` prend en charge le concept de routage de modèle en écoutant les appels `pushState` et `replaceState` pour récupérer au préalable les fragments de modèle. En interne, il déclenche le chargement de `PageModelManager` pour charger le modèle correspondant à une URL donnée, et lance un `cq-pagemodel-route-changed` que d’autres modules peuvent écouter.
 
 Par défaut, ce comportement est automatiquement activé. Pour le désactiver, l’application sur une seule page doit effectuer le rendu de la propriété meta suivante :
 
@@ -64,7 +64,7 @@ Par défaut, ce comportement est automatiquement activé. Pour le désactiver, l
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Note that every route of the SPA should correspond to an accessible resource in AEM (e.g., &quot; `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a &quot;block list&quot; of routes that should be ignored by the `PageModelManager`:
+Notez que chaque route de la SPA doit correspondre à une ressource accessible dans AEM (par exemple, `/content/mysite/mypage"`), étant donné que `PageModelManager` essaie automatiquement de charger le modèle de page correspondant une fois la route sélectionnée. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
