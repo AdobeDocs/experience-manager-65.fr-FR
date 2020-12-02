@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 844d42ed50da153077423190684aa85265bce12f
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 75%
+ht-degree: 94%
 
 ---
 
@@ -22,39 +22,39 @@ ht-degree: 75%
 
 L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions lorsque cela s’avère possible.
 
-## Limites fonctionnelles {#functional-limitations}
+## Limites fonctionnelles   {#functional-limitations}
 
 Un auteur peut être confronté aux limites fonctionnelles suivantes lors de l’utilisation de l’éditeur pour créer des pages.
 
-### Liens inactifs {#links-not-active}
+### Liens inactifs   {#links-not-active}
 
-When [editing a page](/help/sites-authoring/editing-content.md), links are not active.
+Lors de la [modification d’une page](/help/sites-authoring/editing-content.md), les liens ne sont pas actifs.
 
-* [Passez en mode **** Prévisualisation](/help/sites-authoring/editing-content.md#preview-mode) pour naviguer à l’aide des liens de votre contenu.
+* [Basculez vers le mode **Aperçu**](/help/sites-authoring/editing-content.md#preview-mode) pour naviguer à l’aide des liens de votre contenu.
 
 ### Pages de structure {#structure-pages}
 
-Impossible de nommer les pages `structure`. Les pages nommées `structure` ne seront pas modifiables dans l’éditeur de pages.
+Les pages ne peuvent pas être nommées `structure`. Les pages nommées `structure` ne seront pas modifiables dans l’éditeur de page.
 
 ## Limitations CSS {#css-limitations}
 
 Un développeur peut être confronté aux limites suivantes concernant les interactions de l’éditeur avec CSS.
 
-### Éléments à positionnement absolu {#absolutely-positioned-elements}
+### Éléments à positionnement absolu   {#absolutely-positioned-elements}
 
 Les éléments à positionnement absolu peuvent occasionner des problèmes au niveau de la position de leur incrustation.
 
 * Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur créera une incrustation ayant exactement les mêmes dimensions.
 
-### Unités vh {#vh-units}
+### Unités vh   {#vh-units}
 
-`vh` ne sont pas prises en charge, car la hauteur de l&#39;iframe doit être automatiquement ajustée par AEM.
+Les unités `vh` ne sont pas prises en charge, car la hauteur de l’iFrame doit être réglée automatiquement par AEM.
 
 ### Images d’arrière-plan fixes {#fixed-background-images}
 
 Il est possible que les images d’arrière-plan fixes ne puissent pas être affichées en mode fixe lors du défilement, étant donné qu’elles sont incorporées dans un iFrame.
 
-* Selecting **View Page as Published** in the header bar actions displays the page properly.
+* Sélectionnez **Afficher la page comme publiée** dans les actions de la barre d’en-tête pour afficher correctement la page.
 
 ### Hauteur de 100 %{#height}
 
