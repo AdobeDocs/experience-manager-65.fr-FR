@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 workflow-type: tm+mt
 source-wordcount: '1648'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -30,7 +30,7 @@ Chaque modèle présente une sélection de composants disponibles.
 
 >[!NOTE]
 >
->[Les modèles](/help/sites-developing/page-templates-editable.md) modifiables sont également disponibles et sont le type recommandé pour la plus grande flexibilité et les fonctionnalités les plus récentes.
+>[Les ](/help/sites-developing/page-templates-editable.md) modèles modifiables sont également disponibles et sont le type recommandé pour la plus grande flexibilité et les nouvelles fonctionnalités.
 
 ## Propriétés et nœuds enfants d’un modèle {#properties-and-child-nodes-of-a-template}
 
@@ -51,32 +51,32 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
   <tr>
    <td> allowChildren </td>
    <td> Chaîne[]</td>
-   <td>Path of a template that is allowed to be a child of this template.<br /> </td>
+   <td>Chemin d'accès d'un modèle autorisé pour être un enfant de ce modèle.<br /> </td>
   </tr>
   <tr>
    <td> allowParents</td>
    <td> Chaîne[]</td>
-   <td>Path of a template that is allowed to be a parent of this template.<br /> </td>
+   <td>Chemin d'accès d'un modèle autorisé à être un parent de ce modèle.<br /> </td>
   </tr>
   <tr>
    <td> allowPaths</td>
    <td> Chaîne[]</td>
-   <td>Chemin d’accès d’une page autorisée à être basée sur ce modèle.<br /> </td>
+   <td>Chemin d'accès d'une page autorisée à être basée sur ce modèle.<br /> </td>
   </tr>
   <tr>
    <td> jcr:created</td>
    <td> Date</td>
-   <td>Date of creation of the template.<br /> </td>
+   <td>Date de création du modèle.<br /> </td>
   </tr>
   <tr>
    <td> jcr:description</td>
    <td> Chaîne</td>
-   <td>Description of the template.<br /> </td>
+   <td>Description du modèle.<br /> </td>
   </tr>
   <tr>
    <td> jcr:title</td>
    <td> Chaîne</td>
-   <td>Title of the template.<br /> </td>
+   <td>Titre du modèle.<br /> </td>
   </tr>
   <tr>
    <td> classement</td>
@@ -103,18 +103,18 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
 
 Un modèle sert de fondement pour une page.
 
-To create a page, the template must be copied (node-tree `/apps/<myapp>/template/<mytemplate>`) to the corresponding position in the site-tree: this is what happens if a page is created using the **Websites** tab.
+Pour créer une page, le modèle doit être copié (node-tree `/apps/<myapp>/template/<mytemplate>`) à la position correspondante dans l&#39;arborescence du site : c&#39;est ce qui se produit si une page est créée à l&#39;aide de l&#39;onglet **Sites Web**.
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling: resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
-## Structuration des modèles {#how-templates-are-structured}
+## Structuration des modèles  {#how-templates-are-structured}
 
 Il y a deux aspects à considérer :
 
 * la structure du modèle lui-même
 * la structure du contenu produit lorsqu’un modèle est utilisé
 
-### Structure d’un modèle {#the-structure-of-a-template}
+### Structure d’un modèle  {#the-structure-of-a-template}
 
 Un modèle est créé sous un nœud de type **cq:Template**.
 
@@ -135,7 +135,7 @@ Ce composant est utilisé pour définir la structure et la conception du contenu
 
 ### Contenu produit par un modèle {#the-content-produced-by-a-template}
 
-Les modèles servent à créer des pages de type `cq:Page`(comme mentionné précédemment, une page est un type spécial de composant). Each AEM Page has a structured node `jcr:content`. Cela :
+Les modèles servent à créer des pages de type `cq:Page`(comme mentionné précédemment, une page est un type spécial de composant). Chaque page AEM a un noeud structuré `jcr:content`. Cela :
 
 * est de type cq:PageContent
 * est un type de nœud structuré contenant une définition de contenu définie
@@ -168,19 +168,19 @@ Pour voir la liste de tous les modèles disponibles dans le référentiel, proc�
 
 Dans la plupart des cas, c’est à partir d’un modèle existant que vous élaborerez un nouveau modèle pour votre usage personnel. Pour plus d’informations, voir [Développement de modèles de page](#developing-page-templates).
 
-To enable an existing template for your website and you want it to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the allowedPaths property of the template node to: **/content(/.*)?**
+Pour activer un modèle existant pour votre site Web et l&#39;afficher dans la boîte de dialogue **Créer une page** lors de la création d&#39;une page juste sous **Sites Web** à partir de la console **Sites Web**, définissez la propriété allowedPaths du noeud de modèle sur : **/content(/.*) ?**
 
 ## Application des conceptions de modèle {#how-template-designs-are-applied}
 
-Lorsque des styles sont définis dans l’interface utilisateur à l’aide du mode [de](/help/sites-authoring/default-components-designmode.md)conception, la conception est conservée à l’emplacement exact du noeud de contenu pour lequel le style est défini.
+Lorsque des styles sont définis dans l’interface utilisateur à l’aide de [Mode de conception](/help/sites-authoring/default-components-designmode.md), la conception est conservée à l’emplacement exact du noeud de contenu pour lequel le style est défini.
 
 >[!CAUTION]
 >
->Adobe recommande uniquement d’appliquer des conceptions en mode [](/help/sites-authoring/default-components-designmode.md)Design.
+>L’Adobe recommande de n’appliquer que les conceptions en [Mode de conception](/help/sites-authoring/default-components-designmode.md).
 >
 >La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu.
 
-Si les conceptions sont appliquées uniquement en mode Création, les sections suivantes, Résolution [du chemin de](/help/sites-developing/page-templates-static.md#design-path-resolution)conception, Arborescence [de](/help/sites-developing/page-templates-static.md#decision-tree)décision et [Exemple](/help/sites-developing/page-templates-static.md#example) ne sont pas applicables.
+Si les conceptions sont appliquées uniquement en mode Création, les sections suivantes, [Résolution du chemin de conception](/help/sites-developing/page-templates-static.md#design-path-resolution), [Arbre de décision](/help/sites-developing/page-templates-static.md#decision-tree) et [Exemple](/help/sites-developing/page-templates-static.md#example) ne sont pas applicables.
 
 ### Résolution du chemin de conception {#design-path-resolution}
 
@@ -196,7 +196,7 @@ Dans les deux derniers cas, s’il existe plusieurs conceptions applicables, uti
 
 ### Arborescence de décision {#decision-tree}
 
-Il s’agit d’une représentation graphique de la logique de résolution [des chemins de](/help/sites-developing/page-templates-static.md#design-path-resolution) conception.
+Il s’agit d’une représentation graphique de la logique [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution).
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
@@ -269,7 +269,7 @@ Le tableau suivant décrit comment AEM choisira une conception.
 
 Les modèles de pages AEM sont simplement des modèles utilisés pour créer des pages. Ils peuvent contenir autant de contenu initial que nécessaire, leur rôle étant de créer des structures de nœuds correctes avec les propriétés requises (principalement sling:resourceType) définies pour permettre la modification et le rendu.
 
-### Création d’un modèle (basé sur un modèle existant) {#creating-a-new-template-based-on-an-existing-template}
+### Création d’un modèle (basé sur un modèle existant)  {#creating-a-new-template-based-on-an-existing-template}
 
 Inutile de dire qu’un nouveau modèle peut être entièrement créé de toutes pièces, mais en pratique un modèle existant est copié et modifié pour faire gagner du temps. Par exemple, les modèles Geometrixx peuvent servir de point de départ.
 
@@ -287,7 +287,7 @@ Pour créer un modèle d’après un modèle existant :
 
    >[!NOTE]
    >
-   >If you want your template to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the `allowedPaths` property of the template node to: `/content(/.*)?`
+   >Si vous souhaitez que votre modèle s’affiche dans la boîte de dialogue **Créer une page** lors de la création d’une page juste sous **Sites Web** à partir de la console **Sites Web**, définissez la propriété `allowedPaths` du noeud de modèle sur : `/content(/.*)?`
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -308,15 +308,15 @@ Pour créer un modèle d’après un modèle existant :
    Vous pouvez à présent créer une page sur votre site Web en vous servant du nouveau modèle.
 
 >[!NOTE]
-The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
+La bibliothèque cliente de l’éditeur suppose que l’espace de noms `cq.shared` existe dans les pages de contenu. Si cet élément est absent, l’erreur JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` est renvoyée.
 `cq.shared` est inclus dans tous les exemples de pages de contenu. Par conséquent, tout contenu basé sur ces pages inclut automatiquement `cq.shared`. Toutefois, si vous décidez de créer vos propres pages de contenu à partir de zéro, sans vous servir de l’exemple de contenu, vous devez veiller à inclure l’espace de noms `cq.shared`.
 Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
 
 ## Mise à disposition d’un modèle existant {#making-an-existing-template-available}
 
-Cet exemple illustre comment autoriser l’utilisation d’un modèle pour certains chemins de contenu. The templates that are available to the page author when creating new pages are determined by the logic defined in [Template Availability](/help/sites-developing/templates.md#template-availability).
+Cet exemple illustre comment autoriser l’utilisation d’un modèle pour certains chemins de contenu. Les modèles disponibles pour l&#39;auteur de la page lors de la création de nouvelles pages sont déterminés par la logique définie dans [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
 
 1. Dans CRXDE Lite, accédez au modèle que vous souhaitez utiliser pour votre page, par exemple, le modèle Newsletter.
-1. Modifiez la propriété `allowedPaths` et les autres propriétés utilisées pour la [disponibilité du modèle](/help/sites-developing/templates.md#template-availability). For example, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` means that this template is allowed in any path under `/content/geometrixx-outdoors`.
+1. Modifiez la propriété `allowedPaths` et les autres propriétés utilisées pour la [disponibilité du modèle](/help/sites-developing/templates.md#template-availability). Par exemple, `allowedPaths` : `/content/geometrixx-outdoors/[^/]+(/.*)?` signifie que ce modèle est autorisé dans n&#39;importe quel chemin sous `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
