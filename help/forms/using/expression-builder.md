@@ -28,7 +28,7 @@ Le créateur d’Expressions utilise en interne les bibliothèques EL JSP. L’e
 
 ![Générateur d’expression](assets/expressionbuilder.png)
 
-### Opérateurs   {#operators}
+### Opérateurs    {#operators}
 
 Les opérateurs pouvant être utilisées dans les expressions sont disponibles dans la barre supérieure du Générateur d’expression.
 
@@ -42,7 +42,7 @@ Vous trouverez ci-dessous quelques exemples d’EL JSP couramment utilisés que 
 
 Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Le gestionnaire d’expression côté client ne prend pas en charge certaines variables et fonctions de la spécification de l’EL JSP, plus précisément :
 
-* Collection indexes and map keys (using the [] notation) are not supported in variable names for expressions evaluated on the client-side.
+* Les index de collection et les clés de mappage (utilisant la notation []) ne sont pas pris en charge dans les noms de variable pour les expressions évaluées côté client.
 * Voici une liste des types de paramètre ou types de retour de fonctions utilisées dans les expressions :
 
    * java.lang.String
@@ -110,7 +110,7 @@ Vous pouvez créer un regroupement personnalisé pour exporter vos propres fonct
    * java.lang.Byte
    * byte
    * java.lang.Double
-   * Double
+   * Doublon
    * java.lang.Long
    * Long
    * java.lang.Float
@@ -157,7 +157,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Voici des exemples d’échantillons à utiliser :
 
-* **GoodFunctions.jar.zip** est le fichier jar avec un lot contenant un exemple de définition de fonction distante. Téléchargez le fichier GoodFunctions.jar.zip et décompressez-le pour obtenir le fichier jar.
+* **GoodFunctions.jar.** zipis est le fichier jar avec un lot contenant un exemple de définition de fonction distante. Téléchargez le fichier GoodFunctions.jar.zip et décompressez-le pour obtenir le fichier jar.
 * **GoodFunctions.zip** est le package de code source pour définir une fonction distante personnalisée et créer un lot pour elle.
 
 GoodFunctions.jar.zip
