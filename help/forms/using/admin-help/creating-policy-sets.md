@@ -44,7 +44,7 @@ Lorsque vous créez des jeux de stratégies, vous affectez à des utilisateurs l
 
 L’installation de Document Security crée un jeu de stratégies par défaut, appelé *Jeu de stratégies global*. Ce jeu de stratégies est géré par l’administrateur ayant installé le logiciel ou par le coordinateur de jeux de stratégies désigné pour ce jeu de stratégies.
 
-## Création d’un jeu de stratégies {#create-a-policy-set}
+## Création d’un jeu de stratégies  {#create-a-policy-set}
 
 Le Jeu de stratégies global est le seul jeu de stratégies par défaut créé lors de l’installation. Vous pouvez créer d’autres jeux de stratégies et ajouter des stratégies, des utilisateurs, des coordinateurs de jeux de stratégies et des éditeurs. Après avoir créé un jeu de stratégies, vous pouvez créer des stratégies à l’intérieur du jeu.
 
@@ -89,7 +89,7 @@ Lors de la création d’un jeu de stratégies, cliquez sur le bouton Précéden
 
 Vous pouvez maintenant ajouter des stratégies à votre jeu de stratégies (voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)).
 
-## Modification d’un jeu de stratégies {#edit-a-policy-set}
+## Modification d’un jeu de stratégies  {#edit-a-policy-set}
 
 1. Dans la page Document Security, cliquez sur Stratégies, sur l’onglet Jeux de stratégies, puis sur le jeu de stratégies à modifier.
 1. Cliquez sur l’onglet approprié, puis effectuez les modifications souhaitées :
@@ -107,7 +107,7 @@ Vous pouvez maintenant ajouter des stratégies à votre jeu de stratégies (voir
    * Pour rechercher une stratégie, sélectionnez ID de la stratégie ou Nom de la stratégie, saisissez la valeur correspondante, sélectionnez le nombre d’éléments à afficher et cliquez sur Rechercher.
    * Pour plus d’informations sur la création d’une nouvelle stratégie, voir [Création et modification de stratégies](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
-## Suppression d’un jeu de stratégies {#delete-a-policy-set}
+## Suppression d’un jeu de stratégies  {#delete-a-policy-set}
 
 Lorsque vous supprimez un jeu de stratégies, les stratégies qui faisaient partie de ce jeu ne peuvent pas être appliquées aux nouveaux documents. Cependant, vous pouvez afficher les informations de stratégie dans Administration Console et dans les pages Web destinées aux utilisateurs finaux, correspondant aux stratégies toujours utilisées. Vous pouvez afficher les informations de stratégie dans la page Détails du document pour tout document protégé par la stratégie. Les stratégies encore utilisées peuvent être modifiées.
 
