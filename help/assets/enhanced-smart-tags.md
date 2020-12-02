@@ -25,7 +25,7 @@ Une fois une balise entraînée et prête, le service peut appliquer ces balises
 
 En arrière-plan, Smart Content Service utilise la structure Adobe Sensei AI pour former son algorithme de reconnaissance d’image à la structure des balises et à la taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes.
 
-Smart Content Service is a cloud service that is hosted on Adobe I/O. To use it in [!DNL Adobe Experience Manager], the system administrator must integrate your [!DNL Experience Manager] deployment with Adobe I/O.
+Smart Content Service est un service cloud hébergé sur Adobe I/O. Pour l&#39;utiliser dans [!DNL Adobe Experience Manager], l&#39;administrateur système doit intégrer votre déploiement [!DNL Experience Manager] à Adobe I/O.
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
@@ -42,21 +42,21 @@ Avant de pouvoir utiliser le service de contenu dynamique, assurez-vous de respe
 
 * L’organisation doit disposer d’un compte Adobe ID pourvu de droits d’administrateur.
 * Le service de contenu dynamique est activé pour votre organisation.
-* Le package de base de Content Services Smart ne peut être ajouté qu’à un déploiement pour lequel un package de [!DNL Sites] [!DNL Assets] base et un module complémentaire ont reçu une licence.
+* Le package de base Smart Content Services ne peut être ajouté qu’à un déploiement pour lequel un package de base [!DNL Sites] et un module complémentaire [!DNL Assets] ont reçu une licence.
 
 ## Intégration {#onboarding}
 
-The Smart Content Service is available for purchase as an add-on to [!DNL Experience Manager]. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers les E/S d’Adobe.
+Smart Content Service est disponible à l&#39;achat en tant que module complémentaire de [!DNL Experience Manager]. Après l’achat, un courrier électronique est envoyé à l’administrateur de votre organisation avec un lien vers Adobe I/O.
 
-L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. To integrate the service with [!DNL Experience Manager Assets], see [Configure Smart Tags](config-smart-tagging.md).
+L’administrateur peut suivre le lien pour intégrer le service de contenu dynamique à [!DNL Experience Manager]. Pour intégrer le service à [!DNL Experience Manager Assets], voir [Configurer des balises actives](config-smart-tagging.md).
 
 Le processus d’intégration est terminé lorsque l’administrateur configure le service et ajoute des utilisateurs dans [!DNL Experience Manager].
 
 >[!NOTE]
 >
->Si vous utilisez la version [!DNL Experience Manager] 6.3 ou antérieure et que vous avez besoin du service de balisage pour vos ressources, reportez-vous à la section Balises [](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)dynamiques. Les balises actives n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service amélioré de balisage intelligent.
+>Si vous utilisez la version [!DNL Experience Manager] 6.3 ou antérieure et que vous avez besoin du service de balisage pour vos ressources, voir [Balises dynamiques](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Les balises actives n’utilisent pas les dernières fonctionnalités d’IA et sont donc moins précises que le service amélioré de balisage intelligent.
 
-## Vérification des ressources et balises {#reviewing-assets-and-tags}
+## Vérifier les actifs et les balises {#reviewing-assets-and-tags}
 
 Une fois que vous êtes à bord, la première chose à faire est d’identifier un ensemble de balises qui décrivent le mieux ces images dans le contexte de votre entreprise.
 
@@ -67,15 +67,15 @@ Ajoutez les ressources à un dossier, puis appliquez les balises à chaque resso
 >[!NOTE]
 >
 >1. L’entraînement est un processus irrévocable. Adobe recommande de bien passer en revue les balises dans la série de ressources sélectionnée bien avant d’entraîner le service de contenu dynamique sur les balises.
->1. Avant de suivre une formation sur une balise, consultez les instructions [de formation relatives à](/help/assets/config-smart-tagging.md#training-the-smart-content-service)Smart Content Service.
+>1. Avant de suivre une formation pour une balise, consultez les [directives de formation de Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Lorsque vous entraînez le service de contenu dynamique pour la première fois, Adobe recommande de réaliser l’entraînement sur au moins deux balises distinctes.
 
 
-## Understand [!DNL Experience Manager] search results with smart tags {#understandsearch}
+## Comprendre les résultats de la recherche [!DNL Experience Manager] avec des balises actives {#understandsearch}
 
-By default, [!DNL Experience Manager] search combines the search terms with an `AND` clause. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de
+Par défaut, la recherche [!DNL Experience Manager] combine les termes recherchés avec une clause `AND`. L’utilisation de balises intelligentes ne modifie pas ce comportement par défaut. Elle ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche dans les balises intelligentes. Par exemple, pour la recherche de `woman running`. Les ressources avec les mots-clés `woman` ou `running` uniquement dans les métadonnées n’apparaissent pas dans les résultats de recherche par défaut. Toutefois, une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
-* ressources avec les mots-clés `woman` et `running` dans les métadonnées.
+* ressources avec les mots-clés `woman` et `running` dans les métadonnées ;
 
 * ressources avec balise dynamique avec l’un des mots-clés.
 
@@ -87,9 +87,9 @@ Les résultats de recherche qui correspondent à tous les termes de recherche da
 
 >[!CAUTION]
 >
->Si l’indexation Lucene est désactivée, [!DNL Adobe Experience Manager] la recherche basée sur les balises actives ne fonctionne pas comme prévu.
+>Si l&#39;indexation Lucene est effectuée à partir de [!DNL Adobe Experience Manager], la recherche basée sur les balises actives ne fonctionne pas comme prévu.
 
-## Baliser automatiquement les fichiers {#tagging-assets-automatically}
+## Marquer automatiquement les actifs {#tagging-assets-automatically}
 
 Après avoir entraîné le service de contenu dynamique, vous pouvez déclencher le workflow de balisage pour appliquer automatiquement les balises appropriées sur une autre série de ressources similaire.
 
@@ -99,9 +99,9 @@ Vous pouvez exécuter le workflow de balisage périodiquement ou au besoin.
 >
 >Le workflow de balisage s’exécute sur les ressources et les dossiers.
 
-### Balisage périodique {#periodic-tagging}
+### Balisage périodique  {#periodic-tagging}
 
-Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Open the properties page of your asset folder, select **[!UICONTROL Enable Smart Tags]** under the **[!UICONTROL Details]** tab, and save the changes.
+Vous pouvez activer le service de contenu dynamique de façon à ce qu’il balise périodiquement les ressources au sein d’un dossier. Ouvrez la page de propriétés de votre dossier de ressources, sélectionnez **[!UICONTROL Activer les balises actives]** sous l&#39;onglet **[!UICONTROL Détails]**, puis enregistrez les modifications.
 
 Une fois cette option sélectionnée pour un dossier, Smart Content Service balise automatiquement les fichiers qu’il contient. Par défaut, le processus de balisage s’exécute tous les jours à 12h00.
 
@@ -115,7 +115,7 @@ Vous pouvez déclencher le processus de balisage à partir de la console de proc
 
 #### Balisage des ressources à l’aide de la console de workflow {#tagging-assets-from-the-workflow-console}
 
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Dans l&#39;interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de processus]**, sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]**, puis appuyez/cliquez sur **[!UICONTROL Démarrer le processus]** dans la barre d’outils.
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
@@ -129,14 +129,14 @@ Vous pouvez déclencher le processus de balisage à partir de la console de proc
 
 #### Balisage des ressources à partir de la chronologie {#tagging-assets-from-the-timeline}
 
-1. From the [!DNL Assets] user interface, select the folder containing assets or specific assets to which you want to apply smart tags.
+1. Dans l&#39;interface utilisateur [!DNL Assets], sélectionnez le dossier contenant des ressources ou des ressources spécifiques auxquelles vous souhaitez appliquer des balises actives.
 1. Dans le coin supérieur gauche, ouvrez la **[!UICONTROL Chronologie]**.
 1. Ouvrez les actions dans la partie inférieure de la barre latérale gauche et cliquez sur **[!UICONTROL Démarrer le processus]**.
 
    ![start_workflow](assets/start_workflow.png)
 
 1. Sélectionnez le workflow **[!UICONTROL Balisage intelligent des ressources (gestion des actifs numériques)]** et spécifiez un titre pour le workflow.
-1. Cliquez sur **[!UICONTROL Démarrer]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources.
+1. Cliquez sur **[!UICONTROL Début]**. Le workflow applique vos balises aux ressources. Accédez au dossier de ressources et passez en revue les balises pour vérifier que le service de contenu dynamique a correctement balisé vos ressources.
 
 >[!NOTE]
 >
@@ -152,11 +152,11 @@ Vous pouvez également attribuer un rang supérieur à une balise afin d’accro
 
 1. Dans l’encadré Omnisearch, recherchez des ressources sur la base d’une balise.
 1. Examinez les résultats de la recherche pour identifier une image que vous ne trouvez pas pertinente.
-1. Select the image, and click **[!UICONTROL Manage Tags]** from the toolbar.
-1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. If you don&#39;t want the image to be searched based on a specific tag, select the tag and then click **[!UICONTROL Delete]** from the toolbar. Vous pouvez également cliquer sur `x` un symbole qui s’affiche en regard d’une balise .
-1. Optionally, to assign a higher rank to a tag, select the tag and click **[!UICONTROL Promote]** from the toolbar. La balise objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
-1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
-1. Navigate to the **[!UICONTROL Properties]** page for the image. Observez que la balise que vous avez promue se voit attribuer plus de pertinence et apparaît plus tôt dans les résultats de la recherche.
+1. Sélectionnez l’image, puis cliquez sur **[!UICONTROL Gérer les balises]** dans la barre d’outils.
+1. Examinez les balises sur la page **[!UICONTROL Gérer les balises]**. Si vous ne souhaitez pas que l’image soit recherchée en fonction d’une balise spécifique, sélectionnez la balise, puis cliquez sur **[!UICONTROL Supprimer]** dans la barre d’outils. Vous pouvez également cliquer sur le symbole `x` qui s’affiche en regard d’une balise .
+1. Si vous le souhaitez, sélectionnez la balise et cliquez sur **[!UICONTROL Promouvoir]** dans la barre d’outils. La balise objet d’une conversion est déplacée dans la section **[!UICONTROL Balises]**.
+1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]**.
+1. Accédez à la page **[!UICONTROL Propriétés]** de l&#39;image. Observez que la balise que vous avez promue se voit attribuer plus de pertinence et apparaît plus tôt dans les résultats de la recherche.
 
 ## Conseils et restrictions {#tips-best-practices-limitations}
 
