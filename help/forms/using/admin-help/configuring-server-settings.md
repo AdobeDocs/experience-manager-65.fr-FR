@@ -26,7 +26,7 @@ La page Paramètres du serveur donne accès aux différents paramètres du proce
 * Les **Paramètres de notification de tâche** permettent d’activer, de désactiver ou de modifier les messages envoyés dans les notifications électroniques aux utilisateurs finaux et aux groupes concernant leurs tâches (voir [Configuration des notifications destinées aux utilisateurs et aux groupes](configuring-server-settings.md#configuring-notifications-for-users-and-groups)).
 * Les **Paramètres de notification de l’administrateur** permettent d’activer, de désactiver ou de modifier les messages envoyés dans les notifications électroniques pour les tâches administratives (voir [Configuration des notifications destinées aux administrateurs](configuring-server-settings.md#configuring-notifications-for-administrators)).
 
-## Configuration des paramètres de courrier électronique {#configuring-email-settings}
+## Configuration des paramètres de courrier électronique  {#configuring-email-settings}
 
 Vous pouvez indiquer un compte de courrier électronique pour le serveur Forms, par l’intermédiaire duquel il envoie des courriers électroniques aux utilisateurs et aux administrateurs et en reçoit de la part de ces mêmes utilisateurs et administrateurs. Ces courriers électroniques sont utilisés pour notifier aux utilisateurs les tâches qu’ils sont tenus d’exécuter, les leur rappeler, les notifier lorsque les tâches arrivées à échéance et notifier à l’administrateur toute erreur de processus survenue.
 
@@ -36,7 +36,7 @@ Pour qu’AEM forms reçoive et traite le courrier électronique entrant envoyé
 
 Si les processus que vous utilisez sont conçus et implémentés sans avoir à utiliser le courrier électronique, il est inutile de configurer les options de la page Paramètres du courrier électronique.
 
-### Configuration des paramètres du courrier électronique sortant {#configure-outgoing-email-settings}
+### Configuration des paramètres du courrier électronique sortant  {#configure-outgoing-email-settings}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Paramètres du serveur > Paramètres du courrier électronique.
 1. Sélectionnez Activer les messages sortants.
@@ -54,7 +54,7 @@ Si les processus que vous utilisez sont conçus et implémentés sans avoir à u
 >
 >si les informations que vous entrez sont incorrectes, vous pouvez cliquer sur Annuler pour revenir à la page précédente.
 
-### Configuration de modèles de courrier électronique pour utiliser l’espace de travail AEM Forms {#configuring-email-templates-to-use-html-workspace}
+### Configuration de modèles de courrier électronique pour utiliser l’espace de travail AEM Forms  {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Par défaut, les courriers électroniques envoyés par AEM forms contiennent des
 
 1. Dans Administration Console, cliquez sur Accueil > Services > Processus des formulaires > Paramètres du serveur > Notifications de tâche.
 1. Ouvrez un modèle d’affectation des tâches.
-1. Définissez le modèle dans les notifications de tâche à l’adresse suivante : `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
+1. Définissez le modèle dans les notifications de tâche à l’adresse suivante :  `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
    ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
@@ -86,7 +86,7 @@ Pour générer des notifications électroniques pour un groupe, spécifiez une a
 >
 >Flex Workspace est obsolète pour la version d’AEM forms.
 
-### Configuration des rappels pour les utilisateurs ou les groupes {#configure-reminders-for-users-or-groups}
+### Configuration des rappels pour les utilisateurs ou les groupes  {#configure-reminders-for-users-or-groups}
 
 Vous pouvez choisir d’envoyer des notifications de rappel à l’utilisateur ou au groupe affecté à une tâche lorsque le délai d’exécution de cette tâche se rapproche. Les règles déterminant exactement quand une notification de rappel est envoyée sont décidées par le développeur du processus.
 
@@ -100,7 +100,7 @@ Vous pouvez choisir d’envoyer des notifications de rappel à l’utilisateur o
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Configuration des notifications d’affectation de tâche pour des utilisateurs ou des groupes {#configure-task-assignment-notifications-for-users-or-groups}
+### Configuration des notifications d’affectation de tâche pour des utilisateurs ou des groupes  {#configure-task-assignment-notifications-for-users-or-groups}
 
 Vous pouvez envoyer des notifications d’affectation de tâche à un utilisateur ou à un groupe lorsqu’une tâche lui est affectée.
 
@@ -114,7 +114,7 @@ Vous pouvez envoyer des notifications d’affectation de tâche à un utilisateu
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Configuration des notifications d’échéance pour des utilisateurs ou des groupes {#configure-deadline-notifications-for-users-or-groups}
+### Configuration des notifications d’échéance pour des utilisateurs ou des groupes  {#configure-deadline-notifications-for-users-or-groups}
 
 Vous pouvez choisir d’envoyer des notifications d’échéance à des utilisateurs et à des groupes pour les informer que le délai d’exécution d’une tâche affectée est dépassé. En règle générale, une notification d’échéance n’est envoyée qu’à titre d’information, car l’utilisateur ne peut plus agir sur la tâche affectée.
 
@@ -127,11 +127,11 @@ Vous pouvez choisir d’envoyer des notifications d’échéance à des utilisat
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Masquage de la balise DO NOT DELETE pour tous les courriers électroniques {#hide-the-do-not-delete-tag-for-all-emails}
+### Masquage de la balise DO NOT DELETE pour tous les courriers électroniques  {#hide-the-do-not-delete-tag-for-all-emails}
 
 Vous pouvez configurer le service de messagerie de façon à masquer la balise de suivi DO NOT DELETE dans tous les courriers électroniques envoyés par le biais d’un processus pour des intervenants humains. Pour plus d’informations, voir [Masquage des balises DO-NOT-DELETE en CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
-## Configuration des notifications destinées aux administrateurs {#configuring-notifications-for-administrators}
+## Configuration des notifications destinées aux administrateurs  {#configuring-notifications-for-administrators}
 
 Vous pouvez configurer les modèles auxquels le processus des formulaires fait appel pour générer les notifications électroniques envoyées aux administrateurs.
 
@@ -140,7 +140,7 @@ Vous pouvez configurer les types de notifications suivants pour les administrate
 * branche bloquée
 * opération bloquée
 
-### Configuration de notifications de branche bloquée {#configure-stalled-branch-notifications}
+### Configuration de notifications de branche bloquée  {#configure-stalled-branch-notifications}
 
 Si une branche bloque (l’exécution d’une opération est interrompue délibérément ou suite à une erreur), une notification peut être envoyée à un administrateur ou à un autre utilisateur, capable d’étudier le problème.
 
@@ -154,7 +154,7 @@ Si une branche bloque (l’exécution d’une opération est interrompue délib�
 1. Dans la liste Encodage du courrier électronique, sélectionnez le format d’encodage à utiliser pour le message électronique. Le format par défaut UTF-8 est utilisé par la plupart des utilisateurs, exception faite du Japon. Les utilisateurs japonais sélectionnent généralement le format ISO2022-JP.
 1. Cliquez sur Enregistrer.
 
-### Configuration de notifications d’opération bloquée {#configure-stalled-operation-notifications}
+### Configuration de notifications d’opération bloquée  {#configure-stalled-operation-notifications}
 
 Si une opération bloque (l’exécution d’une opération est interrompue délibérément ou suite à une erreur), une notification peut être envoyée à un administrateur ou à un autre utilisateur, capable d’étudier le problème.
 
@@ -166,7 +166,7 @@ Si une opération bloque (l’exécution d’une opération est interrompue dél
 1. Dans le champ Modèle de notification, saisissez le texte du corps du courrier électronique. Ce champ est prérenseigné avec un texte par défaut. Pour plus d’informations sur la personnalisation de ce champ, voir [Personnalisation du contenu des notifications](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Cliquez sur Enregistrer.
 
-## Personnalisation du contenu des notifications {#customizing-the-content-of-notifications}
+## Personnalisation du contenu des notifications  {#customizing-the-content-of-notifications}
 
 Les pages Notifications de tâche et Notifications de l’administrateur offrent différentes fonctionnalités qui permettent de personnaliser les messages de notification :
 
@@ -174,7 +174,7 @@ Les pages Notifications de tâche et Notifications de l’administrateur offrent
 * sélecteur de variables
 * Génération d’URL
 
-### Editeur de texte enrichi {#rich-text-editor}
+### Editeur de texte enrichi  {#rich-text-editor}
 
 La zone Modèle de notification est un éditeur de texte enrichi qui vous permet de générer des pages HTML pour les messages de notification électronique. Elle offre des options de mise en forme des polices et des paragraphes, accessibles sous le champ Modèle de notification. Ces options permettent notamment d’intervenir sur le type, la taille, le style et la couleur des polices ainsi que sur les puces et l’alignement des paragraphes.
 
@@ -194,45 +194,45 @@ Pour les notifications de tâche uniquement, le processus des formulaires inclut
 >
 >Flex Workspace est obsolète pour la version d’AEM Forms.
 
-If your solution is deployed in a clustered environment, replace `@@notification-host@@` with the cluster address.
+Si votre solution est déployée dans un environnement organisé en grappes, remplacez `@@notification-host@@` par l’adresse du cluster.
 
-`<`*PORT* `>` est le numéro de port de l’écouteur HTTP pour le serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
+`<`** `>` PORTest le numéro de port de l’écouteur HTTP pour le serveur d’applications. Les ports d’écouteur HTTP par défaut pour les serveurs d’applications pris en charge sont les suivants :
 
 **JBoss :** 8080
 
-**Oracle WebLogic Server :** 7001
+**Oracle WebLogic Server:** 7001
 
-**IBM WebSphere :** 9080
+**IBM WebSphere:** 9080
 
-To make these URLs function correctly, replace `<`*PORT* `>` with the port number that is appropriate for your environment.
+Pour que ces URL fonctionnent correctement, remplacez `<`*PORT* `>` par le numéro de port approprié pour votre environnement.
 
 >[!NOTE]
 >
 >si vous utilisez une application Web personnalisée autre que Forms pour permettre aux utilisateurs d’accéder aux tâches, vous devez utiliser le format d’URL approprié pour votre application personnalisée.
 
-### Sélecteur de variables {#variable-picker}
+### Sélecteur de variables  {#variable-picker}
 
-La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. When you drop a variable in the Subject or Notification Template boxes, it changes to the actual forms workflow variable name with two @ symbols on either side of it, for example, `@@taskid@@`.
+La liste Sélectionneur de variables fournit des variables utiles que vous pouvez faire glisser vers les champs Objet ou Modèle de notification. Lorsque vous déposez une variable dans les zones Objet ou Modèle de notification, elle se transforme en nom de variable de processus des formulaires réel avec deux symboles @ de chaque côté, par exemple `@@taskid@@`.
 
 Pour les rappels, affectations de tâche et échéances des utilisateurs et des groupes, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**description** Contenu de la propriété Description, tel que défini dans l’étape utilisateur (point de début, opération d’affectation de Tâche ou opération d’affectation de plusieurs Tâches) du processus dans Workbench.
+**** descriptionContenu de la propriété Description, tel que défini dans l’étape utilisateur (point de début, opération d’affectation de Tâche ou opération d’affectation de plusieurs Tâches) du processus dans Workbench.
 
-**instructions** Contenu de la propriété Instructions de la Tâche, tel que défini dans l’étape utilisateur du processus dans Workbench.
+**** instructionsContenu de la propriété Instructions de la Tâche, tel que défini dans l’étape utilisateur du processus dans Workbench.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms.
+**notification-** hostNom d’hôte du serveur d’applications AEM forms.
 
-**process-name** Nom du processus.
+**process-** nameNom du processus.
 
-**operation-name** Nom de l’étape.
+**operation-** nameNom de l’étape.
 
-**taskid** Identifiant unique de la tâche active.
+**** taskidIdentificateur unique de la tâche active.
 
-**actions** Génère une liste numérotée de routes valides (par exemple, Approuver, Rejeter) sur lesquelles le destinataire peut cliquer.
+**** actionsGénère une liste numérotée de routes valides (par exemple, Approuver, Rejeter) sur lesquelles le destinataire peut cliquer.
 
 De plus, pour les rappels, affectations de tâche et échéances de groupe, vous pouvez aussi utiliser les variables suivantes :
 
-**nom** du groupe Nom du groupe auquel est affectée la tâche.
+**group-** nameNom du groupe auquel est affectée la tâche.
 
 >[!NOTE]
 >
@@ -240,21 +240,21 @@ De plus, pour les rappels, affectations de tâche et échéances de groupe, vous
 
 Pour les branches bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**id** -branche Identifiant de branche.
+**branch-** idIdentifiant de branche.
 
-**process-id** Identifiant de l’instance de processus.
+**process-** idIdentifiant de l’instance de processus.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms.
+**notification-** hostNom d’hôte du serveur d’applications AEM forms.
 
 Pour les opérations bloquées, vous pouvez utiliser les variables suivantes dans les champs Objet et Modèle de notification :
 
-**action-id** Identifiant de l&#39;opération.
+**action-** idIdentifiant de l&#39;opération.
 
-**id** -branche Identifiant de branche.
+**branch-** idIdentifiant de branche.
 
-**process-id** Identifiant de l’instance de processus.
+**process-** idIdentifiant de l’instance de processus.
 
-**notification-host** Nom d’hôte du serveur d’applications AEM forms.
+**notification-** hostNom d’hôte du serveur d’applications AEM forms.
 
 ### Utilisation d’une variable dans la zone Objet {#using-a-variable-in-the-subject-box}
 
@@ -272,7 +272,7 @@ Si vous saisissez le texte suivant dans le champ Modèle de notification pour de
 
 `Branch @@branch-id@@ has stalled! You have received this notification from @@notification-host@@.`
 
-The administrator receives an email message that contains the following content if the branch number is 4868 and the server name is `ServerXYZ`:
+L’administrateur reçoit un courrier électronique contenant le contenu suivant si le numéro de la branche est 4868 et que le nom du serveur est `ServerXYZ` :
 
 `Branch 4868 has stalled! You have received this notification from ServerXYZ.`
 
