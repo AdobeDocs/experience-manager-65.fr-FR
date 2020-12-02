@@ -40,11 +40,12 @@ Vous pouvez en outre créer une mise en page de barre d’outils personnalisée.
 
 La procédure suivante décrit les étapes pour créer une barre d’outils personnalisée qui affiche trois actions dans la barre d’outils et d’autres actions dans une liste déroulante de la barre d’outils.
 
-Le module de contenu joint contient le code complet décrit ci-dessous. After installing the content package, open `/content/forms/af/CustomLayoutDemo.html` to view the custom toolbar layout demo.
+Le module de contenu joint contient le code complet décrit ci-dessous. Après avoir installé le package de contenu, ouvrez `/content/forms/af/CustomLayoutDemo.html` pour vue à la démonstration de mise en page de barre d’outils personnalisée.
 
 CustomToolbarLayoutDemo.zip
 
-[Obtenir la mise en page de barre d&#39;outils personnalisée de la démonstration de fichier](assets/customtoolbarlayoutdemo.zip)
+[Obtenir la mise en page de barre d&#39;outils personnalisée ](assets/customtoolbarlayoutdemo.zip)
+FileDemo
 
 ## Création d’une mise en page de barre d’outils personnalisée {#layout-1}
 
@@ -56,15 +57,15 @@ CustomToolbarLayoutDemo.zip
 
    `/libs/fd/af/layouts/toolbar`
 
-   For example, copy the `mobileFixedToolbarLayout` node from the `/libs/fd/af/layouts/toolbar` folder to the `/apps/customlayout/toolbar` folder.
+   Par exemple, copiez le noeud `mobileFixedToolbarLayout` du dossier `/libs/fd/af/layouts/toolbar` dans le dossier `/apps/customlayout/toolbar`.
 
-   Also, copy the toolbarCommon.jsp to the `/apps/customlayout/toolbar` folder.
+   Copiez également toolbarCommon.jsp dans le dossier `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
    >Le dossier que vous créez pour stocker les mises en page personnalisées peut être créé avec le dossier `apps`.
 
-1. Rename the copied node, `mobileFixedToolbarLayout`, to `customToolbarLayout.`
+1. Renommez le noeud copié, `mobileFixedToolbarLayout`, en `customToolbarLayout.`.
 
    Fournissez également une description appropriée pour le nœud. Par exemple, remplacez le jcr:description du nœud par **Mise en page personnalisée pour la barre d’outils.**
 
@@ -86,7 +87,7 @@ CustomToolbarLayoutDemo.zip
 
 1. Sélectionnez cette mise en page de barre d’outils personnalisée, puis cliquez sur OK.
 
-   Add clientlib (javascript and css) in the `/etc/customlayout` node and include the reference of the clientlib in the `customToolbarLayout.jsp`.
+   Ajoutez clientlib (javascript et css) dans le noeud `/etc/customlayout` et incluez la référence de clientlib dans le `customToolbarLayout.jsp`.
 
    ![Chemin d’accès au fichier customToolbarLayout.css](assets/toolbar_3.png)
 
