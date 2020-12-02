@@ -20,7 +20,7 @@ ht-degree: 48%
 
 # Intégration des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM has integrated the landing pages solution with [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) by using the following call-to-action (CTA) components:
+aem a intégré la solution landings page avec [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants d&#39;appel à l&#39;action suivants :
 
 1. Composant Lien des clics publicitaires
 1. Composant Lien graphique
@@ -29,11 +29,11 @@ Ces composants exposent certains attributs qui peuvent être mappés via des var
 
 ## Conditions préalables {#prerequisites}
 
-Adobe recommends that you go through the [existing AEM-Adobe Analytics integration](/help/sites-administering/adobeanalytics.md) to understand how this integration works.
+L’Adobe vous recommande de passer par l’[intégration existante AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) pour comprendre comment cette intégration fonctionne.
 
 ## Composants disponibles pour le mappage {#components-available-for-mapping}
 
-In AEM, the **Call to Action** components - **ClickThroughLink** and **GraphicalLink** - displayed here in the sidekick, can be mapped to Adobe Analytics variables.
+En AEM, les composants **Appel à l&#39;action** - **ClickThroughLink** et **GraphicalLink** - affichés ici dans le sidekick, peuvent être associés à des variables Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -90,7 +90,7 @@ Pour mapper des composants de page d’entrée sur Adobe Analytics :
 </table>
 
 1. Mappez ces attributs exposés avec toute variable Adobe Analytics issue du Content Finder. La structure est maintenant prête à être utilisée.
-1. You can now create a new landing page or open an existing landing page with existing CTA components and click **Cloud Services** tab in **Page Properties** from the sidekick (in the touch-optimized UI, select **Open Properties** and click **Cloud Services**) and configure the framework to use with landing page. Sélectionnez la structure dans la liste déroulante.
+1. Vous pouvez maintenant créer un landing page ou ouvrir un landing page existant avec des composants CTA existants et cliquer sur **Cloud Services** dans **Propriétés de la page** dans le panneau latéral (dans l&#39;IU optimisée pour les écrans tactiles, sélectionnez **Ouvrir les propriétés**, puis cliquez sur **Cloud Services**) et configurer la structure à utiliser avec le landing page. Sélectionnez la structure dans la liste déroulante.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
