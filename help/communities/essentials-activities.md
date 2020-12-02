@@ -25,17 +25,17 @@ Les activités d&#39;un membre de la communauté connecté, comme la publication
 
 La capacité de suivre ajoute un autre ensemble d&#39;activités lorsque les membres de la communauté suivent des messages d&#39;intérêt ou d&#39;autres membres de la communauté.
 
-Tous les sites [de la](/help/communities/overview.md#communitiessites) communauté incluent une page de profil d’utilisateur pour le membre connecté qui affiche les activités du membre de la même manière.
+Tous les [sites de la communauté](/help/communities/overview.md#communitiessites) incluent une page de profil utilisateur pour le membre connecté qui affichera les activités du membre de la même manière.
 
 ## Concepts {#concepts}
 
-Un flux *d&#39;* activités est la liste des activités récentes effectuées par un membre ou une liste d&#39;activités récentes sur un fil de contenu unique, tel qu&#39;un sujet de forum ou un blog.
+Un *flux d&#39;activité* est la liste des activités récentes effectuées par un membre ou une liste d&#39;activités récentes sur un seul fil de contenu, tel qu&#39;un sujet de forum ou un blog.
 
 Un membre peut suivre un flux d&#39;activités, soit en suivant un autre individu, soit en suivant un autre contenu.
 
-Un flux *d&#39;* information est une fusion des flux d&#39;activités suivis par un membre dans un flux unique.
+Un *fil d&#39;actualité* est une fusion des flux d&#39;activités suivis par un membre dans un seul flux.
 
-Un graphique *[](/help/communities/essentials-socialgraph.md)* social capture les relations suivantes d’un membre à un autre.
+Un *[graphique social](/help/communities/essentials-socialgraph.md)* capture les relations suivantes entre un membre et un autre.
 
 ## Essentials for Client-Side {#essentials-for-client-side}
 
@@ -63,7 +63,7 @@ Un graphique *[](/help/communities/essentials-socialgraph.md)* social capture le
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir Fonction Flux <a href="/help/communities/activities.md">d’Activité</a></td>
+   <td>Voir <a href="/help/communities/activities.md">Fonctionnalité des flux d’Activité</a></td>
   </tr>
  </tbody>
 </table>
@@ -80,4 +80,4 @@ Un graphique *[](/help/communities/essentials-socialgraph.md)* social capture le
 
 ### Fonction Flux d&#39;activités {#activity-stream-function}
 
-Une structure de site communautaire qui comprend la fonction [de flux d’](/help/communities/functions.md#activity-stream-function)Activité, comprend un `activity streams` composant configuré.
+Une structure de site communautaire qui comprend la fonction [Activité Stream](/help/communities/functions.md#activity-stream-function), comprend un composant `activity streams` configuré.
