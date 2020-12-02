@@ -24,13 +24,13 @@ ht-degree: 9%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Les applications sont représentées sous la forme *cq:Pages* dans AEM.
+Les applications sont représentées par *cq:Pages* en AEM.
 
-Ils partagent les mêmes propriétés communes que celles de n’importe quel *cq:Page* , en plus des autres propriétés présentées ci-dessous qui représentent les propriétés de prise en charge de l’intégration.
+Ils partagent les mêmes propriétés communes que celles qui se trouvent dans tout *cq:Page* en plus des autres indiquées ci-dessous qui représentent les propriétés de prise en charge de l&#39;intégration.
 
 ## Propriétés d’application {#app-properties}
 
-Le tableau suivant présente les propriétés de l’ **application et les noeuds**.
+Le tableau suivant affiche **Propriétés de l’application et Noeuds**.
 
 <table>
  <tbody>
@@ -47,7 +47,7 @@ Le tableau suivant présente les propriétés de l’ **application et les noeud
   <tr>
    <td>dps-exportTemplate</td>
    <td>Chaîne:Chemin</td>
-   <td><p>Chemin d’accès aux configurations d’exportation de l’application. La configuration d'exportation est un dossier contenant 2 modèles enfants de configuration d'exportation ContentSync ;</p> <p><i>dps-article</i>: Configuration de l’exportation ContentSync pour exporter le contenu d’un article</p> <p><i>dps-HTMLResources</i>: Configuration de l’exportation ContentSync pour exporter des ressources partagées d’application/d’article</p> </td>
+   <td><p>Chemin d’accès aux configurations d’exportation de l’application. La configuration d'exportation est un dossier contenant 2 modèles enfants de configuration d'exportation ContentSync ;</p> <p><i>dps-article</i> : Configuration de l’exportation ContentSync pour exporter le contenu d’un article</p> <p><i>dps-HTMLResources</i> : Configuration de l’exportation ContentSync pour exporter des ressources partagées d’application/d’article</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -82,12 +82,12 @@ Le tableau suivant présente les propriétés de l’ **application et les noeud
   <tr>
    <td>sling:resourceType</td>
    <td>Chaîne:Chemin</td>
-   <td><p>Chemin d’accès à un composant cq:Component qui est ou étend <i>mobileapps/core/components/instance.</i></p> <p>Ceci permet d’assurer la présence et le rendu dans le catalogue d’applications.</p> </td>
+   <td><p>Chemin d'accès à un cq:Component qui est ou étend <i>mobileapps/core/components/instance.</i></p> <p>Ceci permet d’assurer la présence et le rendu dans le catalogue d’applications.</p> </td>
   </tr>
  </tbody>
 </table>
 
-Vous pouvez utiliser les propriétés ****** de contenu pour créer du contenu. Consultez les ressources suivantes pour créer et exporter des articles et des ressources partagées :
+Vous pouvez utiliser ***Propriétés du contenu*** pour créer du contenu. Consultez les ressources suivantes pour créer et exporter des articles et des ressources partagées :
 
 * [Propriétés du contenu](/help/mobile/content-properties.md)
 * [Création de la configuration d’exportation d’article](/help/mobile/creating-article-export-configuration.md)
