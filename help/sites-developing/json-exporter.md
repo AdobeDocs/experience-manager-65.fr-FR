@@ -24,7 +24,7 @@ Les services de contenu AEM sont conçus pour généraliser la description et la
 
 Ils assurent la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
-* [des applications sur une seule page ;](spa-walkthrough.md)
+* [Applications sur une seule page](spa-walkthrough.md)
 * des applications mobiles natives ;
 * d’autres canaux et points de contact externes à AEM.
 
@@ -32,13 +32,13 @@ Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez f
 
 >[!NOTE]
 >
->The functionality described here is available for all Core Components since [release 1.1.0 of the Core Components](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
+>La fonctionnalité décrite ici est disponible pour tous les composants principaux depuis la version [1.1.0 des composants principaux](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
 
 ## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
 
 Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
-AEM la diffusion est réalisée à l&#39;aide du sélecteur `model` et de l&#39; `.json` extension.
+AEM la diffusion est réalisée à l&#39;aide de l&#39;extension de sélecteur `model` et `.json`.
 
 `.model.json`
 
@@ -104,5 +104,5 @@ Pour plus d’informations, voir :
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
 * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md) 
 
-* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) et [Composant Fragment de contenu](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
