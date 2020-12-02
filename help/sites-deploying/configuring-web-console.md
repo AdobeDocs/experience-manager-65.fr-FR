@@ -35,7 +35,7 @@ Le console web offre une sélection d’onglets pour le maintien les lots OSGi d
 
 Toutes les modifications apportées sont immédiatement appliquées au système en cours d’exécution. Le redémarrage n’est pas requis.
 
-The console can be accessed from `../system/console`; for example:
+La console est accessible à partir de `../system/console`; par exemple :
 
 `http://localhost:4502/system/console/components`
 
@@ -106,7 +106,7 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 ## Lots {#bundles}
 
-The **Bundles** tab is the mechanism for installing the OSGi bundles required for AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
+L&#39;onglet **Bundles** est le mécanisme d&#39;installation des lots OSGi requis pour l&#39;AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
 
 * Le menu déroulant :
 
@@ -124,7 +124,7 @@ En utilisant cet onglet vous pouvez :
 
 * **Installation ou mise à jour**
 
-   You can **Browse** to find the file containing your bundle and specify whether it should **Start** immediately and at which **Start Level**.
+   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et indiquer s&#39;il doit **Début** immédiatement et à quel **niveau de Début**.
 
 * **Recharger**
 
@@ -158,7 +158,7 @@ En utilisant cet onglet vous pouvez :
 
 ## Composants {#components}
 
-The **Components** tab allows you to Enable and/or Disable the various components. Il est accessible soit par :
+L&#39;onglet **Composants** vous permet d&#39;activer et/ou de désactiver les différents composants. Il est accessible soit par :
 
 * Le menu déroulant :
 
