@@ -173,7 +173,7 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 
 >
 >
-For example, if you add the `userFirstName` schema element, the caption generated in the adaptive form is `User First Name`.
+Par exemple, si vous ajoutez l’élément de schéma `userFirstName`, la légende générée dans le formulaire adaptatif est `User First Name`.
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -293,15 +293,15 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
-When you double-click an element in Content Finder, a pop-up displays a field name and a property called `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
+Lorsque vous cliquez sur un élément dans l’Outil de recherche de contenu en maintenant la touche doublon enfoncée, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
-The bindRef</code> field shows the association between a tree element and an element or attribute in a schema.
+Le champ bindRef</code> affiche l’association entre un élément d’arborescence et un élément ou attribut d’un schéma.
 
 >[!NOTE]
 >
->Attributes have an `@` symbol in their `bindRef`value to distinguish them from elements. Par exemple, `/config/projectDetails/@duration`.
+>Les attributs comportent un symbole `@` dans leur valeur `bindRef`pour les distinguer des éléments. Par exemple, `/config/projectDetails/@duration`.
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 
