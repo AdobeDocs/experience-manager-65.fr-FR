@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Utilisez les données d’analyse de page pour mesurer l’efficacité du contenu de page.
 
-## Les données d’analyse sont visibles à partir de la console {#analytics-visible-from-the-console}
+## Les données d’analyse sont visibles à partir de la console  {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
@@ -63,7 +63,7 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 >
 >Lorsqu’une arborescence de pages contient des enfants associés à différentes configurations de cloud d’Adobe Analytics, vous ne pouvez pas configurer les colonnes de données disponibles pour les pages.
 
-1. In List View, use the view selectors (right of toolbar), select **View Settings** and then **Add Custom Analytics Data**.
+1. Dans Liste Vue, utilisez les sélecteurs de vue (à droite de la barre d’outils), sélectionnez **Paramètres de Vue**, puis **Ajouter les données Analytics personnalisées**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -75,14 +75,14 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l&#39;efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité) {#analytics-visible-from-the-page-editor-activity-map}
+## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité)  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
