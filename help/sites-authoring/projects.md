@@ -25,7 +25,7 @@ Les projets permettent de regrouper des ressources dans une seule entité. Un en
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and**/home/groups**.
+>Pour que les utilisateurs des projets voient d’autres utilisateurs/groupes lors de l’utilisation de la fonctionnalité Projets, comme la création de projets, la création de tâches/workflows, la consultation et la gestion de l’équipe, ces utilisateurs doivent avoir accès en lecture à **/home/users** et **/home/groups**. Le moyen le plus simple de mettre en oeuvre cette stratégie consiste à donner au groupe **projects-users** l’accès en lecture à **/home/users** et**/home/groups**.
 
 En tant qu’utilisateur, vous pouvez effectuer les opérations suivantes :
 
@@ -53,20 +53,20 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 * L’option **Activer/désactiver les projets actifs** vous permet de basculer entre tous les projets et uniquement ceux qui sont actifs.
 * L’option **Afficher la vue Statistiques** permet d’afficher les statistiques de projet relatives à la réalisation de tâches.
 
-## Mosaïques de projet   {#project-tiles}
+## Mosaïques de projet  {#project-tiles}
 
 Dans la console Projets, vous devez associer différents types d’informations à vos projets. Elles sont connues sous le nom de **mosaïques**. Toutes les mosaïques, ainsi que le type d’informations qu’elles contiennent, sont décrites dans cette section.
 
 Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections ci-après :
 
 * Ressources et collections de ressources
-* Expériences  
+* Expériences
 * Liens
 * Informations sur le projet
 * Équipe
 * Pages d’entrée
 * Courriels
-* Workflows   
+* Workflows
 * Lancements
 * Tâches
 
@@ -76,13 +76,13 @@ Dans la mosaïque **Ressources**, vous pouvez regrouper tous les éléments dont
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
-Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez créer des visionneuses d’images, des visionneuses à 360° ou des visionneuses de médias mixtes si vous avez installé le complément Médias dynamiques.
+Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez créer des visionneuses d’images, des visionneuses à 360° ou des visionneuses de médias mixtes si vous avez installé le complément Dynamic Media.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
 ### Collections de ressources {#asset-collections}
 
-Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans AEM Assets.
+Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -148,7 +148,7 @@ La mosaïque **Pages d’entrée** vous permet de demander une nouvelle page d�
 
 Ce workflow est décrit à la section [Création d’un workflow de page d’entrée](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
-### Courriels {#emails}
+### Courriels  {#emails}
 
 La mosaïque **Courriels** permet de gérer les demandes de courrier électronique. Elle lance le workflow de demande de courrier électronique.
 
@@ -184,7 +184,7 @@ AEM est fourni avec trois modèles prêts à l’emploi :
 
 * Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
 * Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il comprend également deux workflows liés au contenu multimédia : Demander la copie (pour demander et réviser du texte) et Projet de séance photo du produit (pour gérer des photos relatives à des produits).
-* [Projet](/help/sites-authoring/managing-product-information.md) de prise de vue de photos de produit - Un échantillon de référence pour la gestion de la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
+* [Projet](/help/sites-authoring/managing-product-information.md)  de prise de vue de photos de produit - Un échantillon de référence pour la gestion de la photographie de produit liée au commerce électronique. Il comprend les rôles suivants : photographes, éditeurs, retoucheurs de photos, propriétaires, directeurs créatifs, marketeurs de réseaux sociaux, directeurs marketing, réviseurs et observateurs.
 * [Un projet de traduction](/help/sites-administering/translation.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 
 En fonction du modèle sélectionné, plusieurs options s’offrent à vous, notamment en termes de rôles utilisateur et de workflows.
@@ -210,11 +210,11 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
    <td><p>Observateur</p> </td>
    <td><p>Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son état.</p> </td>
    <td><p>Droits en lecture seule sur un projet</p> </td>
-   <td><p>groupe workflow-users</p> </td>
+   <td><p>Groupe workflow-users</p> </td>
   </tr>
   <tr>
    <td><p>Éditeur</p> </td>
-   <td><p>Un utilisateur disposant de ce rôle peut télécharger et modifier le contenu d’un projet.</p> <p> </p> </td>
+   <td><p>Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet.</p> <p> </p> </td>
    <td>
     <ul>
      <li>Accès en lecture et écriture sur un projet, les métadonnées correspondantes et les ressources connexes.</li>
@@ -222,7 +222,7 @@ Pour vous permettre de gérer les autorisations de sécurité et de contrôle, t
      <li>Droits en écriture sur /etc/commerce</li>
      <li>Droits de modification sur un projet spécifique</li>
     </ul> </td>
-   <td><p>groupe workflow-users</p> </td>
+   <td><p>Groupe workflow-users</p> </td>
   </tr>
   <tr>
    <td><p>Propriétaire</p> </td>
