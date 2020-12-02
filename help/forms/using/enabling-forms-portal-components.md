@@ -17,7 +17,7 @@ ht-degree: 47%
 ---
 
 
-# Activation des composants de Forms Portal {#enabling-forms-portal-components}
+# Activation des composants de Forms Portal  {#enabling-forms-portal-components}
 
 Les composants Forms Portal ne sont pas disponibles pour une utilisation immédiate. Pour faire apparaître les composants dans la liste des composants disponibles dans AEM sidekick, effectuez les étapes suivantes :
 
@@ -25,15 +25,15 @@ Les composants Forms Portal ne sont pas disponibles pour une utilisation imméd
 
 1. Pour les pages utilisant un modèle statique, effectuez les étapes suivantes :
 
-   1. In the page header, tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Design** to open the page in Design mode.
-   1. Tap any component (with a blue border) and then tap ![field-level](assets/field-level.png) to select the paragraph system containing the current component.
-   1. In the paragraph system, tap ![settings_icon](assets/settings_icon.png) to open the Edit dialog for the paragraph system.
+   1. Dans l’en-tête de la page, appuyez sur ![liste déroulante Zone de travail](assets/canvas-drop-down.png) > **Conception** pour ouvrir la page en mode Conception.
+   1. Appuyez sur n’importe quel composant (avec une bordure bleue), puis sur ![niveau champ](assets/field-level.png) pour sélectionner le système de paragraphes contenant le composant actif.
+   1. Dans le système de paragraphes, appuyez sur ![settings_icon](assets/settings_icon.png) pour ouvrir la boîte de dialogue Modifier du système de paragraphes.
    1. Dans la liste **[!UICONTROL Composants autorisés]**, cochez les cases des composants **[!UICONTROL Services de document]** et **[!UICONTROL Prédicats de services de document]**. Appuyez sur **[!UICONTROL OK]**.
 
 1. Pour les pages qui utilisent un modèle dynamique, effectuez les étapes suivantes :
 
-   1. In the page header, tap ![properties](assets/properties.png) > **Edit Template** to open the template of the page.
-   1. Appuyez sur Conteneur **de** mise en page et appuyez sur ![Gestion](/help/forms/using/assets/feedmanagement.png)des flux. In the **Allowed Components** tab, enable the **Document Services and Document Services Predicates** options, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Dans l’en-tête de la page, appuyez sur ![properties](assets/properties.png) > **Modifier le modèle** pour ouvrir le modèle de la page.
+   1. Appuyez sur **Conteneur de mise en page** et sur ![Gestion des flux](/help/forms/using/assets/feedmanagement.png). Dans l&#39;onglet **Composants autorisés**, activez les options **Prédicats de services de Document et de services de Document**, puis appuyez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >
