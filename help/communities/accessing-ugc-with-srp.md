@@ -19,27 +19,27 @@ ht-degree: 0%
 ---
 
 
-# Accès à l&#39;UGC avec SRP {#accessing-ugc-with-srp}
+# Accès à UGC avec SRP {#accessing-ugc-with-srp}
 
 ## À propos de SRP {#about-srp}
 
-Tous les composants et fonctionnalités AEM Communities sont construits sur la structure des composants [sociaux (SCF)](/help/communities/scf.md), qui appelle l’API SocialResourceProvider pour accéder à tout le contenu généré par l’utilisateur (UGC).
+Tous les composants et fonctionnalités AEM Communities sont construits sur la structure de composants sociaux [SCF (Social Component Framework)](/help/communities/scf.md), qui appelle l’API SocialResourceProvider pour accéder à tout le contenu généré par l’utilisateur (UGC).
 
-Avant la création d’un site communautaire, le fournisseur de ressources [d’enregistrement (SRP)](/help/communities/working-with-srp.md) doit être configuré pour sélectionner une mise en oeuvre compatible avec la [topologie](/help/communities/topologies.md)sous-jacente. Les mises en oeuvre du PSR reposent sur trois options d’enregistrement :
+Avant la création d&#39;un site communautaire, le [fournisseur de ressources d&#39;enregistrement (SRP)](/help/communities/working-with-srp.md) doit être configuré pour sélectionner une implémentation compatible avec la [topologie sous-jacente](/help/communities/topologies.md). Les mises en oeuvre du PSR reposent sur trois options d’enregistrement :
 
-1. [ASRP](/help/communities/asrp.md) - enregistrement à la demande Adobe
+1. [ASRP](/help/communities/asrp.md)  - enregistrement à la demande Adobe
 1. [MSRP](/help/communities/msrp.md) - MongoDB
-1. [JSRP](/help/communities/jsrp.md) - JCR
+1. [JSRP](/help/communities/jsrp.md)  - JCR
 
 ## À propos de l&#39;Enregistrement UGC {#about-ugc-storage}
 
-Ce qui est important à savoir sur l’enregistrement de l’UGC, c’est que lorsqu’un site est configuré pour utiliser ASRP ou MSRP, l’UGC réel n’est pas stocké dans AEM magasin [de](/help/sites-deploying/data-store-config.md) noeuds (JCR).
+Ce qui est important à savoir sur l&#39;enregistrement de l&#39;UGC, c&#39;est que lorsqu&#39;un site est configuré pour utiliser ASRP ou MSRP, l&#39;UGC réel n&#39;est pas stocké dans AEM [Node store](/help/sites-deploying/data-store-config.md) (JCR).
 
 Bien qu’il puisse y avoir des noeuds dans le JCR qui cachent l’UGC pour fournir des métadonnées utiles, ces noeuds ne doivent pas être confondus avec l’UGC réel.
 
-Voir Présentation des fournisseurs de ressources [d&#39;Enregistrement.](/help/communities/srp.md)
+Voir [Présentation du fournisseur de ressources d&#39;Enregistrement.](/help/communities/srp.md)
 
-## Best Practice {#best-practice}
+## Meilleure pratique {#best-practice}
 
 Lors du développement de composants personnalisés, les développeurs doivent veiller à coder indépendamment de la topologie actuelle choisie, en conservant ainsi la flexibilité nécessaire pour passer à une nouvelle topologie à l’avenir.
 
@@ -68,15 +68,15 @@ Méthodes à éviter :
 
 ### Utiliser les collections de recherche {#use-search-collections}
 
-Différents fournisseurs de services de gestion des ressources peuvent avoir différentes langues de requête natives. Il est recommandé d’utiliser les méthodes du [package com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter la langue de requête appropriée.
+Différents fournisseurs de services de gestion des ressources peuvent avoir différentes langues de requête natives. Il est recommandé d’utiliser les méthodes du package [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pour exécuter la langue de requête appropriée.
 
-For more information, see [Search Essentials](/help/communities/search-implementation.md).
+Pour plus d&#39;informations, consultez la section [Essentials de recherche](/help/communities/search-implementation.md).
 
 ## Ressources {#resources}
 
-* [Enregistrement](/help/communities/working-with-srp.md) de contenu de la communauté - aborde les options SRP disponibles pour un magasin commun UGC.
-* [Présentation](/help/communities/srp.md) du fournisseur de ressources d&#39;Enregistrement - présentation et présentation de l&#39;utilisation du référentiel
-* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md) - Exemples et méthodes d&#39;utilitaire SRP
-* [Essentials](/help/communities/search-implementation.md) de recherche - informations essentielles pour rechercher l&#39;UGC
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
+* [Enregistrement](/help/communities/working-with-srp.md)  de contenu de la communauté - aborde les options SRP disponibles pour un magasin commun UGC.
+* [Présentation](/help/communities/srp.md)  du fournisseur de ressources d&#39;Enregistrement - présentation et utilisation du référentiel
+* [SRP et UGC Essentials](/help/communities/srp-and-ugc.md)  - Exemples et méthodes d&#39;utilitaire SRP
+* [Essentials](/help/communities/search-implementation.md)  de recherche - informations essentielles pour rechercher l&#39;UGC
+* [SocialUtils Refactoring](/help/communities/socialutils.md)  - mappage des méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles
 
