@@ -34,7 +34,7 @@ Vous devez sauvegarder les éléments suivants du système AEM Forms pour récup
 >
 >Vous devez sauvegarder toutes les autres données qui sont utilisées par votre configuration d’AEM Forms, telles que les polices du client, les données des connecteurs, etc.
 
-## Sauvegarde d’un environnement organisé en grappes {#back-up-a-clustered-environment}
+## Sauvegarde d’un environnement organisé en grappes  {#back-up-a-clustered-environment}
 
 Cette rubrique présente les stratégies suivantes pour sauvegarder tout environnement organisé en grappes d’AEM Forms :
 
@@ -43,7 +43,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 * Sauvegarde en ligne sans temps d’interruption, mais un retard de réponse
 * Sauvegarde du fichier de propriétés de démarrage
 
-### Sauvegarde hors connexion avec temps d’interruption {#offline-backup-with-downtime}
+### Sauvegarde hors connexion avec temps d’interruption  {#offline-backup-with-downtime}
 
 1. Arrêtez l’ensemble de la grappe et des services connexes. (Voir la section [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Sur n’importe quel nœud, sauvegardez la base de données, le stockage global de documents et les connecteurs. (Voir [Fichiers à sauvegarder et à récupérer](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover).)
@@ -58,7 +58,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 1. Le cas échéant, sauvegardez toutes les autres données, telles que les polices du client.
 1. Redémarrez la grappe.
 
-### Sauvegarde hors connexion sans temps d’interruption {#offline-backup-with-no-downtime}
+### Sauvegarde hors connexion sans temps d’interruption  {#offline-backup-with-no-downtime}
 
 1. Passez en mode de sauvegarde restauration. (Voir [Passage en mode de sauvegarde](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes).)
 
@@ -77,7 +77,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 1. Le cas échéant, sauvegardez toutes les autres données, telles que les polices du client.
 1. Redémarrez la grappe.
 
-### Sauvegarde en ligne sans temps d’interruption, mais un retard de réponse {#online-backup-with-no-downtime-but-delay-in-response}
+### Sauvegarde en ligne sans temps d’interruption, mais un retard de réponse  {#online-backup-with-no-downtime-but-delay-in-response}
 
 1. Passez en mode de sauvegarde restauration. (Voir [Passage en mode de sauvegarde](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes).)
 
@@ -94,7 +94,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
 1. Le cas échéant, sauvegardez toutes les autres données, telles que les polices du client.
 1. Redémarrez la grappe.
 
-### Sauvegarde du fichier de propriétés de démarrage {#back-up-the-bootstrap-properties-file}
+### Sauvegarde du fichier de propriétés de démarrage  {#back-up-the-bootstrap-properties-file}
 
 Lorsque nous créons une grappe AEM, un fichier de propriétés est créé dans le serveur d’applications pour tous les noeuds secondaires. Il est conseillé de sauvegarder le fichier de propriétés de démarrage. Vous pouvez trouver le fichier à l’emplacement suivant sur votre serveur d’applications :
 
@@ -112,7 +112,7 @@ Pour la récupération d’un nœud unique, il vous suffit d’arrêter le nœud
 
 Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tels qu’une panne de base de données, vous devez effectuer les étapes suivantes. La restauration dépend de la méthode de sauvegarde utilisée.
 
-### Restauration d’un nœud unique {#restoring-a-single-node}
+### Restauration d’un nœud unique  {#restoring-a-single-node}
 
 1. Arrêtez le nœud corrompu.
 
@@ -180,7 +180,7 @@ Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tel
 
 Le noeud d’éditeur n’a aucune relation Principale-secondaire dans un environnement organisé en grappes. Vous pouvez réaliser une sauvegarde de tout nœud d’éditeur en suivant le document [Sauvegarde et restauration](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
-### Récupération d’un seul nœud d’éditeur {#recover-a-single-publisher-node}
+### Récupération d’un seul nœud d’éditeur  {#recover-a-single-publisher-node}
 
 1. Arrêtez le nœud qui doit être récupéré et ne réalisez aucune activité de publication avant que le nœud fonctionne à nouveau.
 1. Restaurez le noeud de publication à l’aide de [Restauration de la sauvegarde](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring la sauvegarde).
