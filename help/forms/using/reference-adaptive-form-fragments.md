@@ -34,7 +34,7 @@ Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fo
 * Conditions générales
 * Conditions générales avec Scribble
 
-Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Comment utiliser les packages](/help/sites-administering/package-manager.md).
 
 ![Tous les fragments répertoriés](assets/ootb-frags.png)
 
