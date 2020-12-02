@@ -51,7 +51,7 @@ Voir [Modification de la période de création de rapports](/help/sites-authorin
 
 >[!NOTE]
 >
->Les rapports Content Insights nécessitent que votre administrateur ait intégré AEM à SiteCatalyst, Target et BrightEdge. See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>Les rapports Content Insights nécessitent que votre administrateur ait intégré AEM à SiteCatalyst, Target et BrightEdge. Voir [Intégration à SightCatalyst](/help/sites-administering/adobeanalytics.md), [Intégration à Adobe Target](/help/sites-administering/target.md) et [Intégration à BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Rapport Vues {#the-views-report}
 
