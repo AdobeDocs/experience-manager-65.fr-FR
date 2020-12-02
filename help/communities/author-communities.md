@@ -33,17 +33,17 @@ Pour en savoir plus sur la création d’un site de communauté, voir :
 
 >[!NOTE]
 >
->If not familiar with the authoring environment, view the documentation on [basic handling](/help/sites-authoring/basic-handling.md) and a [quick guide to authoring pages](/help/sites-authoring/qg-page-authoring.md).
+>Si l’environnement de création ne vous est pas familier, vue la documentation sur la [gestion de base](/help/sites-authoring/basic-handling.md) et un [guide rapide de création de pages](/help/sites-authoring/qg-page-authoring.md).
 
 ## Composants d’AEM Communities disponibles {#available-communities-components}
 
 Le tableau suivant répertorie les composants de communauté visibles pour les auteurs s’ils sont activés dans le navigateur de composants (sidekick).
 
-See also the interactive [Community Components guide](/help/communities/components-guide.md).
+Voir aussi le [Guide des composants de la communauté](/help/communities/components-guide.md) interactif.
 
 >[!NOTE]
 >
->Read [Communities Components Basics](/help/communities/basics.md) as it contains information necessary for authoring with Communities components.
+>Lisez [Community Components Basics](/help/communities/basics.md) car il contient les informations nécessaires à la création avec les composants Communities.
 
 | **Libellé du composant**  | **Fonctionnalité** |
 |---|---|
@@ -84,9 +84,9 @@ See also the interactive [Community Components guide](/help/communities/componen
 
 ## Documentation sur les communautés associée {#related-communities-documentation}
 
-* Visit [Deploying Communities](/help/communities/deploy-communities.md) to learn about recommended deployments.
+* Visitez [Déploiement de communautés](/help/communities/deploy-communities.md) pour en savoir plus sur les déploiements recommandés.
 
 * Reportez-vous à la section [Administration des sites de communauté](/help/communities/administer-landing.md) pour en savoir plus sur la création d’un site de communauté, la configuration de modèles de sites de communauté, la modération du contenu de communauté, la gestion des membres et la configuration de la messagerie.
 
-* Visit [Developing Communities](/help/communities/communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
+* Visitez [Communautés en développement](/help/communities/communities.md) pour en savoir plus sur le cadre des composants sociaux (SCF) et sur la personnalisation des composants et fonctionnalités des communautés.
 
