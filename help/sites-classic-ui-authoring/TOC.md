@@ -14,7 +14,7 @@ ht-degree: 84%
 ---
 
 
-# AEM 6.5 Classic UI Authoring User Guide {#classic-ui}
+# aem 6.5 Classic UI Authoring User Guide {#classic-ui}
 
 + [Présentation du guide de création d’interface utilisateur classique](home.md)
 + Présentation de la création d’interface utilisateur classique {#introduction}
@@ -78,7 +78,7 @@ ht-degree: 84%
    + [Composants d’Adobe Campaign](classic-personalization-ac-components.md)
    + [Ciblage de votre Adobe Campaign](classic-personalization-ac-target.md)
    + [Création de formulaires Adobe Campaign dans AEM](classic-personalization-ac-forms.md)
-+ Création de fichiers dans l’interface utilisateur classique {#assets}
++ Création de ressources dans l’interface utilisateur classique {#assets}
    + [Utilisation des ressources](classicui-assets.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media-assets-delivering.md)
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
