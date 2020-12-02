@@ -58,8 +58,8 @@ Vous pouvez apporter les modifications suivantes aux paramètres de votre applic
 
 * **Catégorie par défaut** : permet de sélectionner une catégorie de formulaires à afficher dans l’écran d’accueil. La sélection Tous affiche tous les formulaires dans l’écran d’accueil. Les catégories sont renseignées en fonction des formulaires chargés dans l’application. Les formulaires sont disponibles dans l’application en fonction des paramètres spécifiés dans le serveur AEM Forms.
 
-* **Fréquence** d&#39;enregistrement automatique : Pour définir la fréquence à laquelle votre application [mobile enregistre les données](../../forms/using/autosave-data-app.md) de formulaire localement.
-* **Fréquence** de synchronisation : Pour définir la fréquence de synchronisation [de votre application](../../forms/using/sync-app.md) mobile avec le serveur AEM Forms en mode en ligne.
+* **Fréquence** d&#39;enregistrement automatique : Pour définir la fréquence à laquelle votre application  [mobile enregistre les formulaires de ](../../forms/using/autosave-data-app.md) manière locale.
+* **Fréquence** de synchronisation : Pour définir la fréquence de  [synchronisation de votre application ](../../forms/using/sync-app.md) mobile avec le serveur AEM Forms en mode en ligne.
    **Effacer les données locales** : effacer la base de données, y compris les paramètres et données locales pour tous les utilisateurs et le stockage des fichiers du périphérique.
 
 >[!NOTE]
