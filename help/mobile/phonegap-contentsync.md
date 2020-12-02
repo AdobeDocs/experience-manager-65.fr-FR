@@ -27,7 +27,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->This document is part of the [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, a recommended starting point for AEM Mobile reference.
+>Ce document fait partie du [Guide de prise en main de AEM Mobile](/help/mobile/getting-started-aem-mobile.md), point de départ recommandé pour la référence à AEM Mobile.
 
 Utilisez la synchronisation de contenu pour regrouper le contenu afin de l’utiliser dans des applications mobiles natives. Les pages créées dans AEM peuvent être utilisées comme contenu d’application, même lorsque l’appareil est hors ligne. De plus, comme les pages AEM sont basées sur des normes Web, elles fonctionnent sur plusieurs plates-formes et vous permettent de les incorporer dans n’importe quel wrapper natif. Cette stratégie réduit les efforts de développement et vous permet de mettre facilement à jour le contenu de l’application.
 
@@ -48,13 +48,13 @@ La séquence d’étapes suivante illustre un cas d’utilisation typique de la 
 
 >[!NOTE]
 >
->Pour plus d’informations sur les instructions relatives au développement des gestionnaires de synchronisation de contenu, reportez-vous à la section [Développement de gestionnaires](/help/mobile/contentsync-app-handlers.md)de synchronisation de contenu.
+>Pour plus d&#39;informations sur les instructions relatives au développement des gestionnaires de synchronisation de contenu, reportez-vous à la section [Développement de gestionnaires de synchronisation de contenu](/help/mobile/contentsync-app-handlers.md).
 
 ## Configuration du contenu de synchronisation de contenu {#configuring-the-content-sync-content}
 
 Créez une configuration Content Sync pour spécifier le contenu du fichier ZIP distribué au client. Vous pouvez créer autant de configurations Content Sync que vous le souhaitez. Chaque configuration a un nom à des fins d’identification.
 
-Pour créer une configuration Content Sync, ajoutez un `cq:ContentSyncConfig` noeud au référentiel, avec la `sling:resourceType` propriété définie sur `contentsync/config`. Le `cq:ContentSyncConfig` noeud peut être situé n’importe où dans le référentiel, mais il doit être accessible aux utilisateurs de l’instance de publication AEM. Par conséquent, vous devez ajouter le noeud ci-dessous `/content`.
+Pour créer une configuration Content Sync, ajoutez un noeud `cq:ContentSyncConfig` au référentiel, avec la propriété `sling:resourceType` définie sur `contentsync/config`. Le noeud `cq:ContentSyncConfig` peut se trouver n’importe où dans le référentiel, mais il doit être accessible aux utilisateurs de l’instance de publication AEM. Par conséquent, vous devez ajouter le noeud sous `/content`.
 
 Pour spécifier le contenu du fichier ZIP Content Sync, ajoutez des noeuds enfants au noeud cq:ContentSyncConfig. Les propriétés suivantes de chaque noeud enfant identifient un élément de contenu à inclure et comment il est traité lors de son ajout :
 
@@ -79,24 +79,24 @@ Une fois l’AEM installé, les membres du groupe d’administrateurs peuvent, p
 
 Le service Day CQ Content Sync Manager contrôle l’accès à Content Sync. Configurez ce service pour spécifier l’utilisateur ou le groupe qui peut télécharger à partir de Content Sync par défaut.
 
-Si vous [configurez le service à l’aide de la console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Web, entrez le nom de l’utilisateur ou du groupe comme valeur de la propriété Autorisation du cache de secours.
+Si vous configurez [le service à l&#39;aide de la console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), entrez le nom de l&#39;utilisateur ou du groupe comme valeur de la propriété Autorisation du cache de secours.
 
-Si vous effectuez une [configuration dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), utilisez les informations suivantes sur le service :
+Si vous configurez [dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), utilisez les informations suivantes sur le service :
 
 * PID : com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * Nom de la propriété : contentsync.fallback.authizable
 
 #### Remplacement de l’accès au téléchargement pour un cache de synchronisation de contenu {#overriding-download-access-for-a-content-sync-cache}
 
-Pour configurer l’accès au téléchargement pour une configuration Content Sync spécifique, ajoutez la propriété suivante au `cq:ContentSyncConfig` noeud :
+Pour configurer l’accès au téléchargement pour une configuration Content Sync spécifique, ajoutez la propriété suivante au noeud `cq:ContentSyncConfig` :
 
 * Nom : autorisé
-* Type : Chaîne
+* Type : chaîne
 * Valeur : Nom de l’utilisateur ou du groupe qui peut télécharger.
 
 Par exemple, votre application permet aux utilisateurs d’installer des mises à jour directement à partir de Content Sync. Pour permettre à tous les utilisateurs de télécharger la mise à jour, définissez la valeur de la propriété autorisée sur `everyone`.
 
-Si le `cq:ContentSyncConfig` noeud ne possède pas de propriété autorisée, l’utilisateur ou le groupe par défaut configuré pour la propriété Autorisable du cache de secours du service Day CQ Content Sync Manager détermine qui peut télécharger.
+Si le noeud `cq:ContentSyncConfig` ne possède aucune propriété autorisée, l’utilisateur ou le groupe par défaut configuré pour la propriété Autorisable du cache de secours du service Day CQ Content Sync Manager détermine qui peut télécharger.
 
 ### Configuration de l’utilisateur pour la mise à jour d’un cache de synchronisation de contenu {#configuring-the-user-for-updating-a-content-sync-cache}
 
@@ -107,7 +107,7 @@ Vous pouvez remplacer l’utilisateur par défaut et spécifier un utilisateur o
 Pour remplacer l’utilisateur par défaut, spécifiez un utilisateur ou un groupe qui effectue des mises à jour pour une configuration Content Sync spécifique en ajoutant la propriété suivante au noeud cq:ContentSyncConfig :
 
 * Nom : updateuser
-* Type : Chaîne
+* Type : chaîne
 * Valeur : Nom de l’utilisateur ou du groupe qui peut effectuer les mises à jour.
 
 Si le noeud cq:ContentSyncConfig n’a pas de propriété updateuser, l’utilisateur anonyme par défaut met à jour le cache.
@@ -116,30 +116,30 @@ Si le noeud cq:ContentSyncConfig n’a pas de propriété updateuser, l’utilis
 
 Le traitement peut aller du rendu JSON simple au rendu complet des pages, y compris leurs ressources référencées. Cette section liste les types de configuration disponibles et leurs paramètres spécifiques :
 
-**copier** Copier simplement des fichiers et des dossiers.
+**** copyCopiez simplement les fichiers et les dossiers.
 
-* **chemin** - Si le chemin d&#39;accès pointe vers un seul fichier, seul le fichier est copié. S’il pointe vers un dossier (y compris les noeuds de page), tous les fichiers et dossiers ci-dessous seront copiés.
+* **chemin**  - Si le chemin d&#39;accès pointe vers un seul fichier, seul le fichier est copié. S’il pointe vers un dossier (y compris les noeuds de page), tous les fichiers et dossiers ci-dessous seront copiés.
 
-**contenu** Générer le contenu à l’aide du traitement de requête Sling standard.
+**** contentRender le contenu à l’aide du traitement de requête Sling standard.
 
-* **chemin** - Chemin d&#39;accès à la ressource qui doit être sortie.
-* **extension** - extension qui doit être utilisée dans la demande. Les exemples courants sont *html* et *json*, mais toute autre extension est possible.
+* **chemin**  - chemin d&#39;accès à la ressource qui doit être sortie.
+* **extension**  - extension qui doit être utilisée dans la demande. Les exemples courants sont *html* et *json*, mais toute autre extension est possible.
 
-* **sélecteur** - Sélecteurs facultatifs séparés par un point. Les exemples courants sont *touch* pour le rendu des versions mobiles d’une page ou l’ *infini* pour la sortie JSON.
+* **sélecteur**  : sélecteurs facultatifs séparés par un point. Les exemples courants sont *touch* pour le rendu des versions mobiles d’une page ou *infinity* pour la sortie JSON.
 
-**clientlib** Assemblage d’une bibliothèque cliente JavaScript ou CSS.
+**** clientlibPackage d’une bibliothèque cliente JavaScript ou CSS.
 
-* **path** - Chemin d&#39;accès à la racine de la bibliothèque cliente.
-* **extension** - Type de bibliothèque cliente. Il doit être défini sur *js* ou *css* pour le moment.
+* **chemin**  : chemin d&#39;accès à la racine de la bibliothèque cliente.
+* **extension**  - Type de bibliothèque cliente. Il doit être défini sur *js* ou *css* pour le moment.
 
-* **includeFolders** - Le type est un tableau de chaînes, qui permet à l&#39;utilisateur de spécifier des dossiers supplémentaires à analyser dans la bibliothèque cliente pour récupérer des fichiers (tels que des polices personnalisées).
+* **includeFolders**  - Le type est un tableau de chaînes, qui permet à l&#39;utilisateur de spécifier des dossiers supplémentaires à analyser dans la bibliothèque cliente pour récupérer des fichiers (tels que des polices personnalisées).
 
 **ressources**
 
 Collecte des rendus originaux de ressources.
 
-* **chemin** - Chemin d’accès à un dossier de ressources situé sous /content/dam.
-* **Rendus** - Type est un tableau de chaînes qui permet à l&#39;utilisateur de spécifier les rendus à utiliser à la place de l&#39;image par défaut. La liste suivante résume certains rendus prêts à l’emploi, mais vous pouvez également utiliser tout rendu créé par le flux de travaux :
+* **chemin**  - Chemin d&#39;accès à un dossier de ressources situé sous /content/dam.
+* **Rendus**  - Le type est un tableau de chaînes qui permet à l&#39;utilisateur de spécifier les rendus à utiliser à la place de l&#39;image par défaut. La liste suivante résume certains rendus prêts à l’emploi, mais vous pouvez également utiliser tout rendu créé par le flux de travaux :
 
    * *l’image originale*
    * *cq5dam.thumbnail.48.48.png*
@@ -147,29 +147,29 @@ Collecte des rendus originaux de ressources.
    * *cq5dam.thumbnail.140.100.png*
    * *cq5dam.web.1280.1280.png*
 
-**image** Collecte d’une image.
+**** imageCollecte d’une image.
 
-* **chemin** - Chemin d&#39;accès à une ressource d&#39;image.
+* **chemin**  - Chemin d&#39;accès à une ressource d&#39;image.
 
 Le type d’image est utilisé pour inclure le logo We.Retail dans le fichier zip.
 
-**pages** Générer des pages AEM et collecter des ressources référencées.
+**** pagesGénérer des pages AEM et collecter des ressources référencées.
 
-* **chemin** - Chemin d&#39;accès à une page.
-* **extension** - extension qui doit être utilisée dans la demande. Pour les pages, c&#39;est presque toujours du *html*, mais d&#39;autres sont toujours possibles.
+* **chemin**  - Chemin d&#39;accès à une page.
+* **extension**  - extension qui doit être utilisée dans la demande. Pour les pages, il s’agit presque toujours de *html*, mais d’autres sont encore possibles.
 
-* **sélecteur** - Sélecteurs facultatifs séparés par un point. Les exemples courants sont *tactiles* pour le rendu des versions mobiles d’une page.
+* **sélecteur**  : sélecteurs facultatifs séparés par un point. Les exemples courants sont *touch* pour le rendu des versions mobiles d’une page.
 
-* **deep** - Propriété booléenne facultative déterminant si les pages enfants doivent également être incluses. La valeur par défaut est *true.*
+* **deep**  - Propriété booléenne facultative déterminant si les pages enfants doivent également être incluses. La valeur par défaut est *true.*
 
-* **includeImages** - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.
-Par défaut, seuls les composants d’image avec un type de ressource de fondation/composants/image sont pris en compte pour l’inclusion. Vous pouvez ajouter d’autres types de ressources en configurant le gestionnaire **de mise à jour des pages WCM** Day CQ dans la console Web.
+* **includeImages**  - Propriété booléenne facultative déterminant si les images doivent être incluses. La valeur par défaut est *true*.
+Par défaut, seuls les composants d’image avec un type de ressource de fondation/composants/image sont pris en compte pour l’inclusion. Vous pouvez ajouter d&#39;autres types de ressources en configurant le gestionnaire de mise à jour des pages WCM de **Day CQ** dans la console Web.
 
-**réécriture** Le noeud réécriture définit la manière dont les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
+**** rewriteLe noeud rewrite définit comment les liens sont réécrits dans la page exportée. Les liens réécrits peuvent pointer vers les fichiers inclus dans le fichier compressé ou vers les ressources sur le serveur.
 
-Le `rewrite` noeud doit être situé sous le `page` noeud.
+Le noeud `rewrite` doit être situé sous le noeud `page`.
 
-Le `rewrite` noeud peut avoir une ou plusieurs des propriétés suivantes :
+Le noeud `rewrite` peut avoir une ou plusieurs des propriétés suivantes :
 
 * `clientlibs`: réécrit les chemins clientlibs.
 
@@ -180,9 +180,9 @@ Chaque propriété peut avoir l’une des valeurs suivantes :
 
 * `REWRITE_RELATIVE`: réécrit le chemin d’accès avec une position relative par rapport au fichier page.html sur le système de fichiers.
 
-* `REWRITE_EXTERNAL`: réécrit le chemin en pointant vers la ressource sur le serveur, à l’aide du service [Externalizer AEM](/help/sites-developing/externalizer.md)Externalizer.
+* `REWRITE_EXTERNAL`: réécrit le chemin en pointant vers la ressource sur le serveur, à l’aide du service [ Externalizer AEM ](/help/sites-developing/externalizer.md)Externalizer.
 
-Le service AEM appelé **PathRewriterTransformerFactory** vous permet de configurer les attributs html spécifiques qui seront réécrits. Le service peut être configuré dans la console Web et dispose d’une configuration pour chaque propriété du `rewrite` noeud : `clientlibs`, `images` et `links`.
+Le service AEM appelé **PathRewriterTransformerFactory** vous permet de configurer les attributs html spécifiques qui seront réécrits. Le service peut être configuré dans la console Web et possède une configuration pour chaque propriété du noeud `rewrite` : `clientlibs`, `images` et `links`.
 
 Cette fonctionnalité a été ajoutée à AEM 5.5.
 
@@ -224,21 +224,21 @@ La liste ci-dessous présente un exemple de configuration de Content Sync.
   + ...
 ```
 
-**etc.designs.default et etc.designs.mobile** Les deux premières entrées de la configuration doivent être assez évidentes. Comme nous allons inclure un certain nombre de pages mobiles, nous avons besoin des fichiers de conception associés sous /etc/designs. Et comme aucun traitement supplémentaire n&#39;est nécessaire, la copie est suffisante.
+**etc.designs.default et etc.designs.** mobileLes deux premières entrées de la configuration doivent être assez évidentes. Comme nous allons inclure un certain nombre de pages mobiles, nous avons besoin des fichiers de conception associés sous /etc/designs. Et comme aucun traitement supplémentaire n&#39;est nécessaire, la copie est suffisante.
 
-**événements.plist** Cette entrée est un peu spéciale. Comme indiqué dans l&#39;introduction, l&#39;application devrait fournir une vue cartographique avec les marqueurs des emplacements des événements. Nous allons fournir les renseignements nécessaires sur l&#39;emplacement sous la forme d&#39;un fichier distinct au format PLIST. Pour que cela fonctionne, le composant événement liste utilisé sur la page d’index dispose d’un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l&#39;extension .plist. Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content, car nous voulons exploiter le traitement des requêtes Sling.
+**événements.** plistCette entrée est un peu spéciale. Comme indiqué dans l&#39;introduction, l&#39;application devrait fournir une vue cartographique avec les marqueurs des emplacements des événements. Nous allons fournir les renseignements nécessaires sur l&#39;emplacement sous la forme d&#39;un fichier distinct au format PLIST. Pour que cela fonctionne, le composant événement liste utilisé sur la page d’index dispose d’un script appelé plist.jsp. Ce script est exécuté lorsque la ressource du composant est demandée avec l&#39;extension .plist. Comme d’habitude, le chemin d’accès aux composants est indiqué dans la propriété path et le type est défini sur content, car nous voulons exploiter le traitement des requêtes Sling.
 
-**événements.touch.html** Ensuite, les pages réelles qui s’afficheront dans l’application sont affichées. La propriété path est définie sur la page racine des événements. Toutes les pages de événement situées en dessous de cette page seront également incluses, car la propriété deep est définie par défaut sur true. Nous utilisons les pages comme type de configuration, de sorte que toute image ou tout autre fichier qui peut être référencé à partir d&#39;une image ou d&#39;un composant de téléchargement sur une page, soit incluse. En outre, la définition du sélecteur tactile nous donne une version mobile des pages. La configuration du Feature Pack contient plus d&#39;entrées de ce type, mais elles sont laissées pour compte ici pour la simplicité.
+**événements.touch.** htmlEnsuite, les pages réelles qui s’afficheront dans l’application sont affichées. La propriété path est définie sur la page racine des événements. Toutes les pages de événement situées en dessous de cette page seront également incluses, car la propriété deep est définie par défaut sur true. Nous utilisons les pages comme type de configuration, de sorte que toute image ou tout autre fichier qui peut être référencé à partir d&#39;une image ou d&#39;un composant de téléchargement sur une page, soit incluse. En outre, la définition du sélecteur tactile nous donne une version mobile des pages. La configuration du Feature Pack contient plus d&#39;entrées de ce type, mais elles sont laissées pour compte ici pour la simplicité.
 
-**logo** Le type de configuration du logo n&#39;a pas été mentionné jusqu&#39;à présent et il ne s&#39;agit pas de l&#39;un des types d&#39;intégration. Cependant, la structure Content Sync est extensible dans une certaine mesure et c’est un exemple de cette structure, qui sera traité dans la section suivante.
+**** logoLe type de configuration du logo n&#39;a pas été mentionné jusqu&#39;à présent et il ne s&#39;agit pas des types de connexion. Cependant, la structure Content Sync est extensible dans une certaine mesure et c’est un exemple de cette structure, qui sera traité dans la section suivante.
 
-**manifeste** Il est souvent souhaitable d’inclure certaines métadonnées dans le fichier zip, comme la page de début de votre contenu, par exemple. Cependant, le codage en dur de ces informations vous empêche de facilement les modifier ultérieurement. La structure Content Sync prend en charge cette utilisation en recherchant un noeud manifeste dans la configuration, qui est simplement identifié par son nom et ne nécessite pas de type de configuration. Chaque propriété définie sur ce noeud particulier est ajoutée à un fichier, également appelé manifest et se trouve à la racine du fichier zip.
+**** manifestIl est souvent souhaitable que certaines métadonnées soient incluses dans le fichier zip, comme la page de début de votre contenu, par exemple. Cependant, le codage en dur de ces informations vous empêche de facilement les modifier ultérieurement. La structure Content Sync prend en charge cette utilisation en recherchant un noeud manifeste dans la configuration, qui est simplement identifié par son nom et ne nécessite pas de type de configuration. Chaque propriété définie sur ce noeud particulier est ajoutée à un fichier, également appelé manifest et se trouve à la racine du fichier zip.
 
-Dans cet exemple, la page de liste des événements est censée être la page initiale. Ces informations sont fournies dans la propriété **indexPage** et peuvent donc être facilement modifiées à tout moment. Une seconde propriété définit le chemin d’accès du fichier *événements.plist* . Comme nous le verrons plus tard, l’application cliente peut maintenant lire le manifeste et agir en fonction de celui-ci.
+Dans cet exemple, la page de liste des événements est censée être la page initiale. Ces informations sont fournies dans la propriété **indexPage** et peuvent donc être facilement modifiées à tout moment. Une seconde propriété définit le chemin d’accès du fichier *événements.plist*. Comme nous le verrons plus tard, l’application cliente peut maintenant lire le manifeste et agir en fonction de celui-ci.
 
-Dès que la configuration est configurée, le contenu peut être téléchargé avec un navigateur ou tout autre client HTTP, ou si vous développez pour iOS, vous pouvez utiliser la bibliothèque cliente WppKitSync dédiée. L’emplacement de téléchargement est constitué du chemin d’accès de la configuration et de l’extension *.zip* , par exemple lorsque vous travaillez avec une instance d’AEM locale : *https://localhost:4502/content/weretail_go.zip*
+Dès que la configuration est configurée, le contenu peut être téléchargé avec un navigateur ou tout autre client HTTP, ou si vous développez pour iOS, vous pouvez utiliser la bibliothèque cliente WppKitSync dédiée. L’emplacement de téléchargement est constitué du chemin d’accès de la configuration et de l’extension *.zip*, par exemple lorsque vous travaillez avec une instance d’AEM locale : *https://localhost:4502/content/weretail_go.zip*
 
-### La console de synchronisation du contenu {#the-content-sync-console}
+### Console de synchronisation du contenu {#the-content-sync-console}
 
 La console Content Sync liste toutes les configurations Content Sync du référentiel (tous les noeuds de type `cq:ContentSyncConfig`) et pour chaque configuration, vous permet d’effectuer les opérations suivantes :
 
@@ -261,12 +261,12 @@ Elle se présente comme suit :
 
 Bien que le nombre d&#39;options de configuration soit déjà assez important, il peut ne pas couvrir toutes les exigences de votre cas d&#39;utilisation spécifique. Cette section décrit les points d’extension de la structure Content Sync et comment créer des types de configuration personnalisés.
 
-Pour chaque type de configuration, il existe un gestionnaire *de mise à jour de* contenu, qui est une fabrique de composants OSGi enregistrée pour ce type spécifique. Ces gestionnaires collectent le contenu, le traitent et l’ajoutent à un cache qui est conservé par la structure Content Sync. Implémentez l’interface ou la classe de base abstraite suivante :
+Pour chaque type de configuration, il existe un *gestionnaire de mise à jour de contenu*, qui est une fabrique de composants OSGi enregistrée pour ce type spécifique. Ces gestionnaires collectent le contenu, le traitent et l’ajoutent à un cache qui est conservé par la structure Content Sync. Implémentez l’interface ou la classe de base abstraite suivante :
 
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface que tous les gestionnaires de mise à jour doivent implémenter
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Une classe abstraite qui simplifie le rendu des ressources à l&#39;aide de Sling
 
-Enregistrez votre classe en tant que fabrique de composants OSGi et déployez-la dans le conteneur OSGi dans un lot. Pour ce faire, vous pouvez utiliser le module externe [SCR](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) Maven à l’aide de balises JavaDoc ou d’annotations. L’exemple suivant montre la version de JavaDoc :
+Enregistrez votre classe en tant que fabrique de composants OSGi et déployez-la dans le conteneur OSGi dans un lot. Pour ce faire, vous pouvez utiliser le [module externe SCR Maven](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) en utilisant des balises JavaDoc ou des annotations. L’exemple suivant montre la version de JavaDoc :
 
 ```java
 /*
@@ -286,15 +286,15 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 }
 ```
 
-Notez que la définition de *fabrique* contient l’interface commune et le type personnalisé séparé par une barre oblique. Cette stratégie permet à la structure Content Sync de trouver et de créer une instance de votre classe personnalisée, car elle reconnaît le type personnalisé dans une entrée de configuration. La section suivante donne un exemple concret de gestionnaire de mise à jour personnalisé.
+Notez que la définition *usine* contient l’interface commune et le type personnalisé séparé par une barre oblique. Cette stratégie permet à la structure Content Sync de trouver et de créer une instance de votre classe personnalisée, car elle reconnaît le type personnalisé dans une entrée de configuration. La section suivante donne un exemple concret de gestionnaire de mise à jour personnalisé.
 
 >[!CAUTION]
 >
->Lors de la création sur la classe de base AbstractSlingResourceUpdateHandler, vous devez ajouter la définition *héritée* . Sinon, le conteneur OSGi ne définira pas les références requises qui sont déclarées dans la classe de base.
+>Lors de la création sur la classe de base AbstractSlingResourceUpdateHandler, vous devez ajouter la définition *héritage*. Sinon, le conteneur OSGi ne définira pas les références requises qui sont déclarées dans la classe de base.
 
 ### Implémentation d’un gestionnaire de mise à jour personnalisé {#implementing-a-custom-update-handler}
 
-Chaque page Web Web.Retail Mobile contient un logo dans le coin supérieur gauche que nous aimerions inclure dans le fichier zip, bien sûr. Toutefois, pour l&#39;optimisation du cache, AEM ne fait pas référence à l&#39;emplacement réel du fichier image dans le référentiel, ce qui nous empêche d&#39;utiliser simplement le type de configuration de la **copie** . Ce que nous devons faire à la place, c&#39;est fournir notre propre type de configuration de **logo** qui rend l&#39;image disponible à l&#39;emplacement demandé par AEM. La liste de code suivante indique la mise en oeuvre complète du gestionnaire de mise à jour du logo :
+Chaque page Web Web.Retail Mobile contient un logo dans le coin supérieur gauche que nous aimerions inclure dans le fichier zip, bien sûr. Toutefois, pour l&#39;optimisation du cache, AEM ne fait pas référence à l&#39;emplacement réel du fichier image dans le référentiel, ce qui nous empêche d&#39;utiliser simplement le type de configuration **copy**. Nous devons plutôt fournir notre propre type de configuration **logo** qui rend l&#39;image disponible à l&#39;emplacement demandé par AEM. La liste de code suivante indique la mise en oeuvre complète du gestionnaire de mise à jour du logo :
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -360,11 +360,11 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-La `LogoUpdateHandler` classe implémente la `ContentUpdateHandler` méthode de l&#39; `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` interface, qui prend plusieurs arguments :
+La classe `LogoUpdateHandler` implémente la méthode `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` de l&#39;interface `ContentUpdateHandler`, qui prend plusieurs arguments :
 
-* Une `ConfigEntry` instance qui donne accès à l’entrée de configuration, pour laquelle ce gestionnaire est appelé, et à ses propriétés.
+* Une instance `ConfigEntry` qui permet d&#39;accéder à l&#39;entrée de configuration, pour laquelle ce gestionnaire est appelé, et à ses propriétés.
 * Horodatage `lastUpdated` indiquant la dernière fois que Content Sync a mis à jour son cache. Le contenu qui n’a pas été modifié après cet horodatage ne doit pas être mis à jour par le gestionnaire.
-* Argument `configCacheRoot` spécifiant le chemin d’accès racine du cache. Tous les fichiers mis à jour doivent être stockés sous ce chemin pour être ajoutés au fichier zip.
+* Argument `configCacheRoot` spécifiant le chemin d&#39;accès racine du cache. Tous les fichiers mis à jour doivent être stockés sous ce chemin pour être ajoutés au fichier zip.
 * Session d’administration qui doit être utilisée pour toutes les opérations de référentiel liées au cache.
 * Session utilisateur pouvant être utilisée pour mettre à jour le contenu dans le contexte d’un utilisateur donné et, par conséquent, pour fournir un type de contenu personnalisé.
 
@@ -390,7 +390,7 @@ Chemin d’exécution standard d’une application AEM Mobile basée sur iOS :
 
 Si une connexion n&#39;a pas pu être établie, les données précédemment téléchargées s&#39;affichent.
 
-### Pour avancer {#getting-ahead}
+### Aller de l&#39;avant {#getting-ahead}
 
 Pour en savoir plus sur les rôles et les responsabilités d’un administrateur et d’un développeur, consultez les ressources ci-dessous :
 
