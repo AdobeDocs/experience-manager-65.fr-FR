@@ -26,7 +26,7 @@ Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes q
 * Fichiers sources JavaScript
 * Représentations XML de ressources SVN (nœuds JCR)
 
-## Configuration de l’extraction de chaînes {#configuring-string-extraction}
+## Configuration de l’extraction de chaînes  {#configuring-string-extraction}
 
 Configurez la manière dont l’outil xgettext-maven-plugin extrait des chaînes pour votre projet.
 
@@ -69,7 +69,7 @@ La partie « pattern » d’une règle est utilisée pour faire correspondre l
 |---|---|
 | / | Indique un chemin JCR. Par conséquent, ce préfixe correspond aux fichiers situés dans le répertoire jcr_root. |
 | &amp;ast; | Indique un fichier normal sur le système de fichiers. |
-| none | Aucun préfixe, ou modèle commençant par un nom de dossier ou de fichier, n’indique un fichier normal sur le système de fichiers. |
+| aucune | Aucun préfixe, ou modèle commençant par un nom de dossier ou de fichier, n’indique un fichier normal sur le système de fichiers. |
 
 Lorsqu&#39;il est utilisé dans un modèle, le caractère / indique un sous-répertoire et &amp;ast; correspond à all. Le tableau suivant répertorie plusieurs exemples de règles.
 
@@ -137,7 +137,7 @@ mvn xgettext:extract
 ### Fichiers de sortie {#output-files}
 
 * `raw.xliff`: chaînes extraites
-* `warn.log`: avertissements (le cas échéant), si `CQ.I18n.getMessage()` l’API est utilisée de manière incorrecte. Une correction est toujours nécessaire, suivie d’une nouvelle exécution.
+* `warn.log`: avertissements (le cas échéant), si  `CQ.I18n.getMessage()` l’API est utilisée de manière incorrecte. Une correction est toujours nécessaire, suivie d’une nouvelle exécution.
 
 * `parserwarn.log` : avertissements de l’analyseur (le cas échéant) ; problèmes de l’analyseur js, par exemple
 * `potentials.xliff` : candidats « potentiels » qui ne sont pas extraits, mais il peut s’agir de chaînes lisibles qui doivent être traduites (peuvent être ignorées ; produisent toujours un grand nombre de faux positifs)
