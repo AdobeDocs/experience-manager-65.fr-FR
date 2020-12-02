@@ -26,13 +26,13 @@ Par défaut, la liste des tâches de l’espace de travail AEM Forms affiche le 
 
 Cet article décrit les étapes à suivre pour ajouter les informations à afficher pour chaque tâche dans la liste Tâches.
 
-## Informations pouvant être ajoutées {#what-can-be-added}
+## Informations pouvant être ajoutées  {#what-can-be-added}
 
 Vous pouvez ajouter les informations disponibles dans `task.json` envoyées par le serveur. Les informations peuvent être ajoutées sous la forme de texte brut ou vous pouvez utiliser des styles pour formater les informations.
 
 Pour plus d’informations sur la description de l’objet JSON, voir [cet](/help/forms/using/html-workspace-json-object-description.md) article.
 
-## Affichage des informations relatives à une tâche {#displaying-information-on-a-task}
+## Affichage des informations relatives à une tâche  {#displaying-information-on-a-task}
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Pour afficher des informations supplémentaires pour une tâche, les paires clé-valeur correspondantes doivent être ajoutées dans le bloc de tâche de `translation.json`.
@@ -122,9 +122,9 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
    }
    ```
 
-## Définition de CSS pour la nouvelle propriété {#defining-css-for-the-new-property}
+## Définition de CSS pour la nouvelle propriété  {#defining-css-for-the-new-property}
 
-1. Vous pouvez appliquer un style aux informations (propriété) ajoutées à une tâche. To do this, you need to add style information for the new property added to `/apps/ws/css/newStyle.css`.
+1. Vous pouvez appliquer un style aux informations (propriété) ajoutées à une tâche. Pour ce faire, vous devez ajouter des informations de style pour la nouvelle propriété ajoutée à `/apps/ws/css/newStyle.css`.
 
    Par exemple, ajoutez :
 
@@ -136,7 +136,7 @@ Pour plus d’informations sur la description de l’objet JSON, voir [cet](/hel
    }
    ```
 
-## Ajout d’une entrée dans le modèle HTML {#adding-entry-in-the-html-template}
+## Ajout d’une entrée dans le modèle HTML  {#adding-entry-in-the-html-template}
 
 Enfin, vous devez inclure une entrée dans le package de développement pour chaque propriété que vous souhaitez ajouter à la tâche. Pour créer une référence vers Génération du code de l’espace de travail AEM Forms.
 
@@ -147,7 +147,7 @@ Enfin, vous devez inclure une entrée dans le package de développement pour cha
 
 1. Ajoutez les nouvelles informations à `/apps/ws/js/runtime/templates/task.html`.
 
-   For example, add under `div class="taskProperties"`:
+   Par exemple, ajoutez sous `div class="taskProperties"` :
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
