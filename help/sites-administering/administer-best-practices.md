@@ -101,7 +101,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Décrit les meilleures pratiques lorsque vous travaillez avec des autorisations et droits d’accès </td>
   </tr>
   <tr>
-   <td>Workflows   </td>
+   <td>Workflows</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Meilleures pratiques de workflows : Configuration</a></td>
    <td>Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement qui se produit dans un environnement AEM. Il est donc hautement recommandé de planifier et de configurer avec soin les implémentations de workflows.</td>
   </tr>
