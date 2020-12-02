@@ -38,11 +38,11 @@ Vous pouvez spécifier les intervalles auxquels l’application enregistre les d
 Suivez les étapes ci-après pour utiliser la fonction d’enregistrement automatique de l’application AEM Forms :
 
 1. Connectez-vous à l’application et accédez à **Paramètres > Général**.
-1. In the General screen, use the **Autosave Frequency** option to select the intervals at which you want the app to save the entered data.
+1. Dans l’écran Général, utilisez l’option **Fréquence d’enregistrement automatique** pour sélectionner les intervalles auxquels l’application doit enregistrer les données saisies.
    [ ![Définition de la fréquence d’enregistrement automatique](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Click **OK** in the Recover Unsaved Task dialog to resume working with the saved task. Vous pouvez cliquer sur **Annuler** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
+1. Lorsque vous redémarrez l’application et que vous vous connectez avec le même nom d’utilisateur, vous êtes invité à restaurer votre tâche à l’aide de la boîte de dialogue de récupération de la tâche non enregistrée. Cliquez sur **OK** dans la boîte de dialogue Récupérer la Tâche non enregistrée pour reprendre l&#39;utilisation de la tâche enregistrée. Vous pouvez cliquer sur **Annuler** pour supprimer les données enregistrées correspondant au dernier enregistrement automatique déclenché et commencer à travailler sur une nouvelle tâche.
 
    Si vous cliquez sur **OK**, la tâche est restaurée avec les données correspondant au dernier enregistrement automatique déclenché avant que l’application ne s’arrête. Il comprend les données du formulaire et toutes les pièces jointes associées à la tâche.
-   [ ![Obtention d&#39;une tâche ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.** Un formulaire de travail en cours **B.** L&#39;application s&#39;est fermée de manière forcée **C.** L&#39;application a redémarré avec la boîte de dialogue de récupération des Tâches non enregistrées **D.** Formulaire restauré avec les données d&#39;origine
+   [ ![Obtention d&#39;une tâche ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**récupéréeA.** Un formulaire de travail en cours  **B.** App fermé avec force  **C.** App redémarré avec la boîte de dialogue Récupérer une Tâche non enregistrée  **D.Formulaire restauré avec les données d&#39;origine**
 
