@@ -17,7 +17,7 @@ ht-degree: 81%
 ---
 
 
-# Création de dossiers pour classer les formulaires {#create-new-folders-to-categorize-forms}
+# Création de dossiers pour classer les formulaires  {#create-new-folders-to-categorize-forms}
 
 Vous pouvez mieux organiser vos ressources à l’aide de dossiers. Dans la mesure où AEM Forms prend en charge plusieurs types de ressources (modèles de formulaire, fichiers PDF, documents, ressources et formulaires adaptatifs) avec différentes métadonnées, vous pouvez utiliser des dossiers pour classer vos formulaires selon les critères de votre choix.
 
@@ -31,13 +31,13 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 
 * Création d’un dossier vide
 
-1. Log in to the AEM Forms user interface at `https://<server>:<port>/aem/forms.html`.
+1. Connectez-vous à l’interface utilisateur AEM Forms à l’adresse `https://<server>:<port>/aem/forms.html`.
 1. Accédez à l’emplacement où vous souhaitez créer un dossier.
-1. Click the ![aem6forms_add](assets/aem6forms_add.png) icon in the toolbar and then select **[!UICONTROL Create Folder]**.
+1. Cliquez sur l&#39;icône ![aem6forms_add](assets/aem6forms_add.png) dans la barre d&#39;outils, puis sélectionnez **[!UICONTROL Créer un dossier]**.
 
 1. Saisissez les informations suivantes :
 
-   * **Titre :** Nom d’affichage du dossier
+   * **Titre : nom** d’affichage du dossier
    * **Nom :** *(Obligatoire)* nom du nœud sous lequel vous souhaitez stocker le dossier dans le référentiel.
 
    >[!NOTE]
@@ -48,12 +48,12 @@ Vous pouvez créer un dossier dans AEM Forms à l’aide de l’une des méthode
 
    Un nouveau dossier avec le titre que vous avez défini s’affiche à l’emplacement spécifié dans la liste des ressources.
 
-   Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. You can view the error message by hovering over the error ![aem6forms_error_alert](assets/aem6forms_error_alert.png) icon that appears beside the name field.
+   Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. Vous pouvez vue le message d’erreur en passant la souris sur l’icône ![aem6forms_error_alert](assets/aem6forms_error_alert.png) qui s’affiche en regard du champ de nom.
 
 ### Modification du titre d’un dossier {#edit-the-folder-title-br}
 
 1. Sélectionnez le dossier dont vous souhaitez modifier le titre.
-1. Cliquez sur l’icône Modifier ![aem6forms_edit](assets/aem6forms_edit.png) dans la barre d’outils.
+1. Cliquez sur l’icône de modification ![aem6forms_edit](assets/aem6forms_edit.png) dans la barre d’outils.
 1. Entrez le nouveau titre. Le champ de texte est prérenseigné avec la valeur actuelle du titre du dossier. Vous pouvez remplacer cette valeur.
 1. Cliquez sur **[!UICONTROL Envoyer].**
 
