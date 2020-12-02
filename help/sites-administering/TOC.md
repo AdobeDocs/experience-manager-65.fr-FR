@@ -15,7 +15,7 @@ ht-degree: 97%
 ---
 
 
-# Guide de l’utilisateur pour l’administration dans AEM 6.5 {#administering}
+# Guide de l’utilisateur pour l’administration dans AEM 6.5  {#administering}
 
 + [Présentation de l’administration du Guide de l’utilisateur](home.md)
 + Fonctionnalités des sites {#introduction}
@@ -50,7 +50,7 @@ ht-degree: 97%
    + [Configuration de l’éditeur de texte enrichi](rich-text-editor.md)
    + [Configuration de l’éditeur de texte enrichi pour produire des sites accessibles](rte-accessible-content.md)
    + [Configuration de la commande Annuler pour la modification des pages](config-undo.md)
-   + [Configuration des modules externes d’éditeur de texte enrichi ](configure-rich-text-editor-plug-ins.md)
+   + [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
    + [Configuration du composant vidéo](config-video.md)
    + [Éditeur en bloc](bulk-editor.md)
    + [Configuration des notifications électroniques](notification.md)
@@ -76,7 +76,7 @@ ht-degree: 97%
    + [Liste de contrôle de sécurité](security-checklist.md)
    + [10 plus grands risques OWASP](owasp-top10.md)
    + [Exécution d’AEM en mode Prêt pour la production](production-ready.md)
-   + [Gestion d’identité](identity-management.md)
+   + [Identity Management](identity-management.md)
    + [Authentification Adobe IMS et prise en charge de l’Admin Console pour AEM Managed Services](ims-config-and-admin-console.md)
    + [Création d’un groupe d’utilisateurs fermé](cug.md)
    + [Réduction des problèmes de sérialisation dans AEM](mitigating-serialization-issues.md)
@@ -98,7 +98,7 @@ ht-degree: 97%
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
 + Personnalisation   {#personalization}
-   + [Personnalisation  ](personalization.md)
+   + [Personnalisation ](personalization.md)
    + [Configuration de ContextHub](/help/sites-developing/ch-configuring.md)
    + [Contexte client](client-context.md)
    + [Campagnes](campaigns.md)
