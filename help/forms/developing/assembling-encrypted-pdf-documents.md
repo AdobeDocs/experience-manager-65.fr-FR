@@ -37,19 +37,19 @@ Aux fins de cette discussion, supposons que le document DDX suivant soit utilis�
  </DDX>
 ```
 
-Dans ce document DDX, notez que la valeur est affectée à l’attribut source `inDoc`. Dans les cas où un seul document PDF d’entrée est transmis au service Assembler et où un document PDF est renvoyé et où vous appelez l’ `invokeOneDocument` opération, affectez la valeur `inDoc` à l’attribut source PDF. Lors de l’appel de l’ `invokeOneDocument` opération, la `inDoc` valeur est une clé prédéfinie qui doit être spécifiée dans le document DDX.
+Dans ce document DDX, notez que la valeur `inDoc` est affectée à l’attribut source. Dans les cas où un seul document PDF d’entrée est transmis au service Assembler et où un document PDF est renvoyé et où vous appelez l’opération `invokeOneDocument`, affectez la valeur `inDoc` à l’attribut source PDF. Lors de l’appel de l’opération `invokeOneDocument`, la valeur `inDoc` est une clé prédéfinie qui doit être spécifiée dans le document DDX.
 
-En revanche, lorsque vous transmettez deux ou plusieurs documents PDF d’entrée au service Assembler, vous pouvez appeler l’ `invokeDDX` opération. Dans ce cas, attribuez le nom de fichier du document PDF d’entrée à l’ `source` attribut.
+En revanche, lorsque vous transmettez deux ou plusieurs documents PDF d’entrée au service Assembler, vous pouvez appeler l’opération `invokeDDX`. Dans ce cas, attribuez le nom de fichier du document PDF d’entrée à l’attribut `source`.
 
-Le service Encryption n’a pas besoin de faire partie de votre installation AEM forms pour chiffrer un document PDF avec un mot de passe. Voir [Chiffrement et déchiffrement des Documents](/help/forms/developing/encrypting-decrypting-pdf-documents.md)PDF.
-
->[!NOTE]
->
->For more information about the Assembler service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Le service Encryption n’a pas besoin de faire partie de votre installation AEM forms pour chiffrer un document PDF avec un mot de passe. Voir [Chiffrement et déchiffrement des Documents PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [Service Assembler et Référence](https://www.adobe.com/go/learn_aemforms_ddx_63)DDX.
+>Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
+>[!NOTE]
+>
+>Pour plus d’informations sur un document DDX, voir [Service Assembler et Référence DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -75,7 +75,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin de classe de votre pr
 * adobe-utilities.jar (requis si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (requis si AEM Forms est déployé sur JBoss)
 
-si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. For information about the location of all AEM Forms JAR files, see [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+si AEM Forms est déployé sur un serveur d’applications J2EE pris en charge autre que JBoss, vous devez remplacer les fichiers adobe-utilities.jar et jbossall-client.jar par des fichiers JAR spécifiques au serveur d’applications J2EE sur lequel AEM Forms est déployé. Pour plus d’informations sur l’emplacement de tous les fichiers JAR AEM Forms, voir [Inclusion de fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Création d’un client Assembler**
 
@@ -83,7 +83,7 @@ Avant de pouvoir exécuter une opération Assembler par programmation, vous deve
 
 **Référencer un document DDX existant**
 
-Un document DDX doit être référencé pour assembler un document PDF. Prenons l’exemple du document DDX introduit dans cette section. Pour chiffrer un document PDF, le document DDX doit contenir l’ `PasswordEncryptionProfile` élément.
+Un document DDX doit être référencé pour assembler un document PDF. Prenons l’exemple du document DDX introduit dans cette section. Pour chiffrer un document PDF, le document DDX doit contenir l’élément `PasswordEncryptionProfile`.
 
 **Référence à un document PDF non sécurisé**
 
@@ -91,15 +91,15 @@ Un document PDF non sécurisé doit être référencé et transmis au service As
 
 **Définition des options d’exécution**
 
-Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d’informations sur les options d’exécution que vous pouvez définir, voir la référence de `AssemblerOptionSpec` classe dans Référence [de l’API](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM Forms.
+Vous pouvez définir des options d’exécution qui contrôlent le comportement du service Assembler lorsqu’il effectue une tâche. Par exemple, vous pouvez définir une option qui indique au service Assembler de continuer à traiter une tâche en cas d’erreur. Pour plus d&#39;informations sur les options d&#39;exécution que vous pouvez définir, consultez la référence de classe `AssemblerOptionSpec` dans [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Chiffrer le document**
 
-Après avoir créé le client de service Assembler, fait référence au document DDX qui contient des informations de chiffrement, fait référence à un document PDF non sécurisé et défini les options d’exécution, vous pouvez appeler l’ `invokeOneDocument` opération. Comme un seul document PDF d’entrée est transmis au service Assembler (et qu’un document est renvoyé), vous pouvez utiliser l’ `invokeOneDocument` opération au lieu de l’ `invokeDDX` opération.
+Après avoir créé le client de service Assembler, référencez le document DDX contenant des informations de chiffrement, référencez un document PDF non sécurisé et définissez les options d’exécution, vous pouvez appeler l’opération `invokeOneDocument`. Comme un seul document PDF d’entrée est transmis au service Assembler (et qu’un document est renvoyé), vous pouvez utiliser l’opération `invokeOneDocument` au lieu de l’opération `invokeDDX`.
 
 **Enregistrer le document PDF chiffré**
 
-Si un seul document PDF est transmis au service Assembler, le service Assembler renvoie un seul document au lieu d’un objet de collection. En d’autres termes, lors de l’appel de l’ `invokeOneDocument` opération, un seul document est renvoyé. Comme le document DDX référencé dans cette section contient des informations de chiffrement, le service Assembler renvoie un document PDF chiffré avec un mot de passe.
+Si un seul document PDF est transmis au service Assembler, le service Assembler renvoie un seul document au lieu d’un objet de collection. En d’autres termes, lors de l’appel de l’opération `invokeOneDocument`, un seul document est renvoyé. Comme le document DDX référencé dans cette section contient des informations de chiffrement, le service Assembler renvoie un document PDF chiffré avec un mot de passe.
 
 **Voir également**
 
@@ -118,37 +118,37 @@ Si un seul document PDF est transmis au service Assembler, le service Assembler 
 1. Créez un client Assembler.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion.
-   * Create an `AssemblerServiceClient` object by using its constructor and passing the `ServiceClientFactory` object.
+   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur et en transmettant l&#39;objet `ServiceClientFactory`.
 
 1. Référencez un document DDX existant.
 
-   * Créez un `java.io.FileInputStream` objet qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
+   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Référencez un document PDF non sécurisé.
 
-   * Créez un `java.io.FileInputStream` objet en utilisant son constructeur et en transmettant l’emplacement d’un document PDF non sécurisé.
-   * Créez un `com.adobe.idp.Document` objet et transmettez l’ `java.io.FileInputStream` objet contenant le document PDF. Cet `com.adobe.idp.Document` objet est transmis à la `invokeOneDocument` méthode.
+   * Créez un objet `java.io.FileInputStream` en utilisant son constructeur et en transmettant l’emplacement d’un document PDF non sécurisé.
+   * Créez un objet `com.adobe.idp.Document` et transmettez l’objet `java.io.FileInputStream` contenant le document PDF. Cet objet `com.adobe.idp.Document` est transmis à la méthode `invokeOneDocument`.
 
 1. Définissez les options d’exécution.
 
-   * Créez un `AssemblerOptionSpec` objet qui stocke les options d’exécution à l’aide de son constructeur.
-   * Définissez des options d’exécution pour répondre aux besoins de votre entreprise en appelant une méthode qui appartient à l’ `AssemblerOptionSpec` objet. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la `AssemblerOptionSpec` méthode de l’ `setFailOnError` objet et passez `false`.
+   * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution à l’aide de son constructeur.
+   * Définissez des options d&#39;exécution pour répondre aux besoins de votre entreprise en appelant une méthode appartenant à l&#39;objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `AssemblerOptionSpec` de l’objet `setFailOnError` et transmettez `false`.
 
 1. Chiffrez le document.
 
-   Appelez la méthode `AssemblerServiceClient` de l’ `invokeOneDocument` objet et transmettez les valeurs suivantes :
+   Appelez la méthode `invokeOneDocument` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` représentant le document DDX. Assurez-vous que ce document DDX contient la valeur `inDoc` de l’élément source PDF.
    * Objet `com.adobe.idp.Document` contenant le document PDF non sécurisé.
-   * Objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, y compris la police par défaut et le niveau de journal des tâches.
+   * Objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, y compris la police par défaut et le niveau de journal de tâches.
 
-   La `invokeOneDocument` méthode renvoie un `com.adobe.idp.Document` objet contenant un document PDF chiffré par mot de passe.
+   La méthode `invokeOneDocument` renvoie un objet `com.adobe.idp.Document` contenant un document PDF chiffré par mot de passe.
 
 1. Enregistrez le document PDF chiffré.
 
-   * Create a `java.io.File` object and ensure that the file name extension is .pdf.
-   * Invoke the `Document` object’s `copyToFile` method to copy the contents of the `Document` object to the file. Assurez-vous d’utiliser l’ `Document` objet renvoyé par la `invokeOneDocument` méthode.
+   * Créez un objet `java.io.File` et assurez-vous que l’extension de nom de fichier est .pdf.
+   * Appelez la méthode `Document` de l&#39;objet `copyToFile` pour copier le contenu de l&#39;objet `Document` dans le fichier. Assurez-vous d’utiliser l’objet `Document` renvoyé par la méthode `invokeOneDocument`.
 
 **Voir également**
 
@@ -166,54 +166,54 @@ Si un seul document PDF est transmis au service Assembler, le service Assembler 
 
 1. Créez un client Assembler.
 
-   * Créez un `AssemblerServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un `AssemblerServiceClient.Endpoint.Address` objet en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’ `lc_version` attribut. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un `System.ServiceModel.BasicHttpBinding` objet en obtenant la valeur du `AssemblerServiceClient.Endpoint.Binding` champ. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le `System.ServiceModel.BasicHttpBinding` champ de l’ `MessageEncoding` objet sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n&#39;avez pas besoin d&#39;utiliser l&#39;attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en exécutant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Référencez un document DDX existant.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker le document DDX.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document DDX.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Référencez un document PDF non sécurisé.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’ `BLOB` objet est utilisé pour stocker le document PDF d’entrée. Cet `BLOB` objet est transmis à l’ `invokeOneDocument` objet en tant qu’argument.
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `System.IO.FileStream` objet. Vous pouvez déterminer la taille du tableau d’octets en obtenant la `System.IO.FileStream` `Length` propriété de l’objet.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la `System.IO.FileStream` `Read` méthode de l’objet et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’ `BLOB` objet en affectant son `MTOM` champ au contenu du tableau d’octets.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document PDF d’entrée. Cet objet `BLOB` est transmis à `invokeOneDocument` en tant qu&#39;argument.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF d’entrée et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `System.IO.FileStream` de l’objet `Length`.
+   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `System.IO.FileStream` de l’objet `Read` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez l’objet `BLOB` en attribuant son champ `MTOM` au contenu du tableau d’octets.
 
 1. Définissez les options d’exécution.
 
-   * Créez un `AssemblerOptionSpec` objet qui stocke les options d’exécution à l’aide de son constructeur.
-   * Définissez des options d’exécution pour répondre aux besoins de votre entreprise en attribuant une valeur à un membre de données qui appartient à l’ `AssemblerOptionSpec` objet. Par exemple, pour demander au service Assembler de poursuivre le traitement d’une tâche en cas d’erreur, affectez-lui `false` le membre `AssemblerOptionSpec` de données de l’ `failOnError` objet.
+   * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution à l’aide de son constructeur.
+   * Définissez des options d&#39;exécution pour répondre aux besoins de votre entreprise en attribuant une valeur à un membre de données qui appartient à l&#39;objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, affectez `false` au membre de données `failOnError` de l’objet `AssemblerOptionSpec`.
 
 1. Chiffrez le document.
 
-   Appelez la méthode `AssemblerServiceClient` de l’ `invokeOneDocument` objet et transmettez les valeurs suivantes :
+   Appelez la méthode `invokeOneDocument` de l’objet `AssemblerServiceClient` et transmettez les valeurs suivantes :
 
-   * Objet `BLOB` représentant le document DDX
-   * A `BLOB` object that represents the unsecured PDF document
-   * Objet `AssemblerOptionSpec` spécifiant les options d’exécution
+   * Un objet `BLOB` qui représente le document DDX
+   * Un objet `BLOB` représentant le document PDF non sécurisé
+   * Objet `AssemblerOptionSpec` qui spécifie les options d’exécution
 
-   La `invokeOneDocument` méthode renvoie un `BLOB` objet contenant un document PDF chiffré.
+   La méthode `invokeOneDocument` renvoie un objet `BLOB` contenant un document PDF chiffré.
 
 1. Enregistrez le document PDF chiffré.
 
-   * Créez un `System.IO.FileStream` objet en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF chiffré et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’ `BLOB` objet renvoyé par la `invokeOneDocument` méthode. Renseignez le tableau d’octets en obtenant la valeur du membre `BLOB` de données de l’ `MTOM` objet.
-   * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `System.IO.BinaryWriter` `Write` de l’objet et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF chiffré et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` renvoyé par la méthode `invokeOneDocument`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l&#39;objet `System.IO.FileStream`.
+   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `System.IO.BinaryWriter` de l’objet `Write` et en transmettant le tableau d’octets.
 
 **Voir également**
 
