@@ -17,19 +17,19 @@ ht-degree: 68%
 ---
 
 
-# Activation des pièces jointes à un formulaire HTML5 {#enabling-attachments-for-an-html-form}
+# Activation des pièces jointes à un formulaire HTML5  {#enabling-attachments-for-an-html-form}
 
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
 1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec la propriété de chaîne à choix multiple `mfAttachmentOptions`.
-1. In the custom profile, specify properties `fileSizeLimit`, `multiSelect`, and `buttonTex`t to configure options of the file attachment widget. Si nécessaire, vous pouvez également spécifier davantage de propriétés personnalisées.
+1. Dans le profil personnalisé, spécifiez les propriétés `fileSizeLimit`, `multiSelect` et `buttonTex`t pour configurer les options du widget de pièce jointe du fichier. Si nécessaire, vous pouvez également spécifier davantage de propriétés personnalisées.
 
 1. Dans le profil personnalisé, utilisez les configurations suivantes :
 
    * **multiSelect**-> vrai ou faux (vrai par défaut)
    * **fileSizeLimit** -> value_in_mb (par exemple 5) (2 Mo par défaut)
    * **buttonText** -> Texte du bouton pour la fenêtre contextuelle (&quot;Joindre&quot; par défaut)
-   * **accept** -> types de fichiers à accepter (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; par défaut)
+   * **accept** -> types de fichiers à accepter (&quot;audio/&amp;ast ;, video/&amp;ast ;, image/&amp;ast ;, text/&amp;ast ;, .pdf&quot; par défaut)
 
    >[!NOTE]
    >
@@ -54,10 +54,10 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
 
 ## Format d’envoi de pièce jointe {#attachment-submission-format}
 
-Lorsque les pièces jointes sont activées, le formulaire HTML5 envoie des données multipartie. The multi-part submission data has two parts **dataXml** and **attachments**.
+Lorsque les pièces jointes sont activées, le formulaire HTML5 envoie des données multipartie. Les données d’envoi en plusieurs parties comportent deux parties **dataXml** et **pièces jointes**.
 
 >[!NOTE]
 >
->For backward compatibility, if `mfAllowAttachments` option is turned off, then the HTML5 forms does not send the multi-part data. It sends simple data xml in **application/xml** format.
+>Pour une compatibilité ascendante, si l’option `mfAllowAttachments` est désactivée, les formulaires HTML5 n’envoient pas les données à parties multiples. Il envoie un fichier XML de données simples au format **application/xml**.
 
 Si l’indicateur mfAllowAttachments est activé, le [service proxy du service d’envoi](/help/forms/using/service-proxy.md) traite également les données multipartie avec les données Xml et les pièces jointes.
