@@ -4,8 +4,8 @@ description: Notes de mise à jour spécifiques à Adobe Experience Manager 6.5 
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 66%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -52,13 +52,13 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
    * Création et modification de modèles pour les applications monopages qui utilisent le SDK JS (également appelé éditeur de SPA)
 
 * Pour le site de référence We.Retail 4.0, accédez à [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
-* Toolkit to upgrade existing sites to leverage the latest editor capabilities, see [Github repository](https://github.com/adobe/aem-modernize-tools)
+* Toolkit pour mettre à niveau des sites existants afin d’exploiter les dernières fonctionnalités d’éditeur, voir [Référentiel Github](https://github.com/adobe/aem-modernize-tools)
 
 >[!CAUTION]
 >
 >aem inclut la version 1.12.4 de la bibliothèque jQuery afin de fournir une compatibilité maximale avec le code personnalisé existant. Adobe a procédé à des modifications de façon à résoudre les problèmes de sécurité connus.
 
-## Administration de sites {#site-administration}
+## Administration de sites  {#site-administration}
 
 * Le rail [Référence](/help/sites-authoring/author-environment-tools.md#references) comporte une nouvelle section permettant de répertorier les liens internes pointant vers la page sélectionnée. Cela s’avère utile lorsque vous envisagez de supprimer une page hors ligne ou de la supprimer, pour voir quelles pages doivent être ajustées avant de les mettre hors ligne.
 * La [vue de liste](/help/sites-authoring/basic-handling.md#list-view) comporte une nouvelle colonne de workflow indiquant le statut de la page dans un workflow.
@@ -69,10 +69,10 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 * Autorisez l’édition en contexte et la composition d’expériences d’application monopage avec des composants côté client React et Angular utilisant le SDK JS (également appelé éditeur de SPA)
 * Le mode Génération de modèles automatique s’affiche uniquement si la page possède une page de modèle automatique configurée.
 
-## Fragments de contenu et éditeur {#content-fragments-amp-editor}
+## Fragments de contenu et éditeur  {#content-fragments-amp-editor}
 
 * Nouveau rail [Annotations](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) dans l’éditeur de fragment de contenu permettant de faire des commentaires généraux et d’afficher des commentaires dans le texte (à afficher également dans le rail de la chronologie)
-* Ability to set the default content type of a multi-line text element in a [Content Fragment model](/help/assets/content-fragments/content-fragments-models.md) to simple text, rich text or markdown
+* Possibilité de définir le type de contenu par défaut d’un élément de texte multiligne dans un modèle de fragment de contenu [Content Fragment](/help/assets/content-fragments/content-fragments-models.md) sur du texte simple, du texte enrichi ou un balisage
 * Ajoutez des [commentaire/annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) en sélectionnant le texte dans l’éditeur de texte enrichi (vue plein écran)
 * [Comparaison des différentes versions](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) d’un fragment de contenu côte à côte via le rail Référence
 * Le rapport sur le téléchargement des ressources affiche désormais des fragments de contenu en conséquence
@@ -83,7 +83,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 * Amélioration de l’indexation des [fragments d’expérience](/help/sites-authoring/experience-fragments.md) afin que leur contenu soit trouvé dans la recherche des pages où ils sont utilisés.
 * L’option [Exporter vers la cible](/help/sites-administering/experience-fragments-target.md) permet désormais d’envoyer le fragment d’expérience sous forme de fichier JSON (HTML par défaut), ou les deux.
 
-## Traduction {#translation}
+## Traduction  {#translation}
 
 * Simplifiez la création de projets de traduction à l’aide de Project Masters
 * Simplifiez l’exécution des projets de traduction en définissant les tâches de traduction sur l’état approuvé par défaut.
@@ -102,7 +102,7 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 * Nouveau workflow de révision et d’approbation pour les lancements et possibilité de promouvoir uniquement les pages de lancement approuvées
 * Ajout d’une [ option dans l’interface utilisateur permettant de choisir la suppression du lancement juste après l’étape de promotion](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
-## Ciblage et simulation de contenu {#content-targeting-simulation}
+## Ciblage et simulation de contenu  {#content-targeting-simulation}
 
 * Le code JavaScript de la couche de données ContextHub et du moteur de règles côté client a été mis à jour pour utiliser jQuery 3 par défaut.
 
@@ -113,26 +113,26 @@ Lisez ce qui suit pour une description détaillée des améliorations d’AEM S
 >at.js 2.x n’est pas pris en charge avec AEM au moment de la publication de la version AEM 6.5. Utilisez la version la plus récente de at.js 1.x
 
 * L’intégration Adobe Target peut désormais utiliser l’API Target Standard. Les versions antérieures d’AEM utilisent l’API HTTP Cible Classic, qui est désormais obsolète.
-* Adobe Target `mbox.js` version 63 is included. Adobe strongly recommends to switch implementation to `at.js` v1.x.
-* `at.js` la version 1.5.0 est désormais incluse. Adobe recommends that you use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision `at.js` v1.x into the site.
+* Adobe Target `mbox.js` version 63 est incluse. L’Adobe recommande vivement de basculer l’implémentation vers `at.js` v1.x.
+* `at.js` la version 1.5.0 est désormais incluse. Adobe vous recommande d’utiliser [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) pour configurer `at.js` v1.x dans le site.
 
 ## aem et Adobe Analytics {#aem-amp-adobe-analytics}
 
-* `s_code.js` H.27.5 est inclus. Adobe vous recommande de basculer l’implémentation sur `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 est inclus. Adobe recommends to use [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) to provision AppMeasurement.js into the site.
+* `s_code.js` H.27.5 est inclus. Adobe vous recommande de passer à l’implémentation `AppMeasurement.js`
+* `AppMeasurement.js` v1.8.0 est inclus. L’Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) pour configurer AppMeasurement.js dans le site.
 
-## aem et commerce {#aem-commerce}
+## aem et Commerce {#aem-commerce}
 
-Improvements to the Commerce Integration Framework are on a faster release cycle since AEM 6.4. [Learn more here](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
+Les améliorations apportées à la structure d&#39;intégration commerciale ont été accélérées depuis AEM 6.4. [En savoir plus ici](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
 ## Module complémentaire Communities {#communities-add-on}
 
 Voir la [page de notes de mise à jour sur Communities](../release-notes/communities-release-notes.md)
 
-## Module complémentaire Screens {#screens-add-on}
+## Module complémentaire Screens  {#screens-add-on}
 
 * Utilisation des lancements pour planifier les modifications futures du contenu de la signalisation
 * Lecture mesurée dans un canal de séquence
 * Création automatique d’une structure de projet à l’aide d’un fichier source, une feuille de calcul Excel par exemple.
 
-For more details on changes to AEM Screens - see the Release Notes in the [AEM Screens User Guide](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Pour plus d&#39;informations sur les modifications apportées à AEM Screens, consultez les Notes de mise à jour du [Guide de l&#39;utilisateur de AEM Screens](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html).
