@@ -53,7 +53,7 @@ Une fois connecté, vous accédez au [panneau de navigation](#navigation-panel).
 >
 >Cliquez ou appuyez sur **Sites** pour commencer.
 
-### Navigation dans le produit  {#product-navigation}
+### Navigation dans le produit   {#product-navigation}
 
 La première fois que vous accédez à une console, un didacticiel de navigation du produit démarre. Prenez quelques instants pour cliquer ou appuyer sur divers éléments afin de vous familiariser avec le fonctionnement de base d’AEM.
 
@@ -82,7 +82,7 @@ La navigation globale se compose de deux panneaux, représentés par des icônes
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
-### Panneau de navigation  {#navigation-panel}
+### Panneau de navigation   {#navigation-panel}
 
 Le panneau de navigation donne accès aux AEM consoles :
 
@@ -119,7 +119,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/home.md">formulaires et documents</a>.</td>
   </tr>
   <tr>
-   <td>Personnalisation  </td>
+   <td>Personnalisation </td>
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ Chaque option du panneau latéral Outils comporte une plage de sous-menus. Les [
 
 L’en-tête est toujours affiché en haut de l’écran. La plupart des options de l’en-tête restent les mêmes où que vous soyez dans le système. Cependant, certaines d’entre elles dépendent du contexte.
 
-![bh-03](assets/bh-03.png)
+![bh-05](assets/bh-03.png)
 
 * [Navigation globale](#navigatingconsolesandtools)
 
@@ -193,7 +193,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Chemin de navigation
 
-   ![bh-05](assets/bh-05.png)
+   ![bh-03](assets/bh-05.png)
 
    Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site web.
 
@@ -205,7 +205,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. See [list view](#list-view) for more information.
+   Cet élément est disponible en mode Liste uniquement. Voir [liste vue](#list-view) pour plus d&#39;informations.
 
 * Bouton **Créer**
 
@@ -225,9 +225,9 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Navigation au clavier
 
-   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*.
+   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Cela utilise la fonctionnalité de navigateur standard de la clé **TAB** (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page qui sont *activables*.
 
-   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
+   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cela devient visible lorsque vous *tab* utilisez les options d&#39;en-tête et accélère votre navigation en vous permettant d&#39;ignorer les éléments standard de la barre d&#39;outils (produit) et de vous diriger directement vers le contenu principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -294,7 +294,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 >
 >Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides  {#quick-actions}
+## Actions rapides   {#quick-actions}
 
 Dans le [mode Carte](#cardviewquickactions), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -317,7 +317,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 >
 >Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources  {#selecting-resources}
+### Sélection de ressources   {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -345,13 +345,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
+     <li>Bureau :<br /> Pointez sur, puis utilisez la coche action rapide</li>
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Click the card</li>
-     <li>Mobile device:<br /> Tap the card</li>
+     <li>Bureau : <br /> Cliquez sur la carte</li>
+     <li>Périphérique mobile : <br /> Appuyez sur la carte</li>
     </ul> </td>
   </tr>
   <tr>
@@ -398,7 +398,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Par exemple, en mode Carte :
 
-   ![bh-15](assets/bh-15.png)
+   ![bh-17](assets/bh-15.png)
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actionstoolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
