@@ -32,27 +32,27 @@ Ce document répond aux questions suivantes :
 
 L’architecture du portail AEM comporte des définitions des portails et des portlets.
 
-### Qu’est-ce qu’un portail ? {#what-is-a-portal}
+### Qu’est-ce qu’un portail ?  {#what-is-a-portal}
 
 Un portail est une application web qui permet la personnalisation, la connexion unique et l’intégration du contenu provenant de sources différentes et héberge la couche de présentation des systèmes d’information.
 
 Vous pouvez exécuter des portlets conformes à la norme JSR 286 dans AEM. Le composant Portlet permet également d’incorporer un portlet dans la page. Voir [Administration du portlet de contenu AEM](#administeringthecqcontentportlet).
 
-### What is a portlet? {#what-is-a-portlet}
+### Qu&#39;est-ce qu&#39;un portlet ? {#what-is-a-portlet}
 
 Les portlets sont des composants web déployés dans un conteneur, qui proposent du contenu dynamique. L’interface du portlet est regroupée et déployée sous forme de fichier WAR dans un conteneur de portlet. Si vous exécutez AEM en tant que portail, vous avez besoin du fichier WAR du portlet pour exécuter le portlet.
 
 Pour configurer le contenu d’AEM de sorte qu’il s’affiche sur un portail, voir [Installation, configuration et utilisation d’AEM dans un portlet](#installingconfiguringandusingcqinaportlet).
 
-### AEM Portal Director {#aem-portal-director}
+### AEM Portal Director  {#aem-portal-director}
 
 >[!CAUTION]
 >
 >AEM Portal Director est obsolète depuis la version AEM 6.4. Voir [Fonctionnalités obsolètes et supprimées](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
-## Administration du portlet de contenu AEM {#administering-the-aem-content-portlet}
+## Administration du portlet de contenu AEM  {#administering-the-aem-content-portlet}
 
-Le portlet de contenu AEM permet d’afficher du contenu AEM sur un portail. The portlet is available at `/crx-quickstart/opt/portal`, and can be customized in various ways. Par exemple, vous pouvez personnaliser la gestion SSO/de l’authentification en déployant votre propre service d’authentification générant les informations d’authentification nécessaires pour qu’AEM remplace le comportement par défaut. Les modules externes utilisent une API définie, qui permet d’ajouter votre propre fonctionnalité en créant le module externe contre les API. Le module externe peut être déployé dans le portlet exécuté. Pour qu’il fonctionne correctement, une instance de création et de publication AEM doit être configurée avec le chemin d’accès au contenu à afficher au démarrage.
+Le portlet de contenu AEM permet d’afficher du contenu AEM sur un portail. Le portlet est disponible à l&#39;adresse `/crx-quickstart/opt/portal` et peut être personnalisé de différentes manières. Par exemple, vous pouvez personnaliser la gestion SSO/de l’authentification en déployant votre propre service d’authentification générant les informations d’authentification nécessaires pour qu’AEM remplace le comportement par défaut. Les modules externes utilisent une API définie, qui permet d’ajouter votre propre fonctionnalité en créant le module externe contre les API. Le module externe peut être déployé dans le portlet exécuté. Pour qu’il fonctionne correctement, une instance de création et de publication AEM doit être configurée avec le chemin d’accès au contenu à afficher au démarrage.
 
 Certaines des configurations sont modifiables par le biais des préférences de portlet et d’autres par le biais des configurations de service OSGI. Vous pouvez modifier ces configurations à l’aide des fichiers **config** ou de la console web OSGi.
 
@@ -111,11 +111,11 @@ Le portlet peut être configuré avec les préférences suivantes :
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Il s’agit du chemin d’accès de début du portlet : il définit le contenu affiché initialement.</p> <p><strong>Important</strong>: Si le portlet est configuré pour se connecter à AEM instances d'auteur et de publication qui s'exécutent sur un chemin de contexte différent<strong> de /</strong>, vous devez activer la force <strong>CQUrlInfo</strong> dans la configuration du gestionnaire de bibliothèque Html de ces instances d'AEM (par exemple via Felix Webconsole) ou la modification ne fonctionnera pas et la boîte de dialogue des préférences n'apparaîtra pas.</p> </td>
+   <td><p>Il s’agit du chemin d’accès de début du portlet : il définit le contenu affiché initialement.</p> <p><strong>Important</strong> : Si le portlet est configuré pour se connecter à AEM instances d'auteur et de publication qui s'exécutent sur un chemin de contexte différent de<strong> /</strong>, vous devez activer la force  <strong></strong> CQUrlInfoin dans la configuration du gestionnaire de bibliothèques Html de ces instances d'AEM (par exemple via Felix Webconsole) ou la modification ne fonctionnera pas et la boîte de dialogue des préférences n'apparaîtra pas.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
-   <td>Sélecteur ajouté à chaque adresse URL. By default this is <strong>portlet</strong>, so all requests to html pages use urls ending in <strong>.portlet.html.</strong> Cela permet d’utiliser des scripts personnalisés dans AEM pour le rendu du portlet.</td>
+   <td>Sélecteur ajouté à chaque adresse URL. Par défaut, il s’agit de <strong>portlet</strong>, de sorte que toutes les requêtes de pages html utilisent des url se terminant par <strong>.portlet.html.</strong> Cela permet d’utiliser des scripts personnalisés dans AEM pour le rendu du portlet.</td>
   </tr>
   <tr>
    <td>addCssToPortalHeader</td>
@@ -140,7 +140,7 @@ Le portlet peut être configuré avec les préférences suivantes :
  </tbody>
 </table>
 
-#### Console web OSGi {#osgi-web-console}
+#### Console web OSGi  {#osgi-web-console}
 
 Si le serveur est exécuté sur localhost, port , et que l’application web du portlet AEM est montée dans le contexte de l’application web *cqportlet*, l’adresse URL de la console web est `https://localhost:8080/cqportlet/cqbridge/system/console`:8080/. Le nom d’utilisateur et le mot de passe par défaut sont **admin**.
 
@@ -150,19 +150,19 @@ Ouvrez l’onglet **Configurations** et sélectionnez **Configuration du serveur
 >
 >La console web OSGi n’est destinée qu’à la modification des configurations en phase de développement (ou de test). Veillez à bloquer les demandes de la console pour les systèmes de production.
 
-### Fourniture de fonctionnalités {#providing-configurations}
+### Fourniture de fonctionnalités  {#providing-configurations}
 
 Pour prendre en charge les déploiements automatisés et la mise en service des configurations, le portlet de contenu AEM comporte une prise en charge des configurations intégrée, qui tente de lire les configurations au chemin d’accès aux classes indiqué à l’application du portlet.
 
 Au démarrage, la propriété système **com.day.cq.po rtet.config** est lue pour détecter l’environnement actif. En règle générale, la valeur de cette propriété est du type **dev**, **prod**, **test** et ainsi de suite. Si aucun environnement n’est défini, aucune configuration n’est lue.
 
-If an environment is set, a config file is searched in the classpath at* ***com/day/cq/portlet/{env}.config** where **env** is replaced with the actual value for the environment. Ce fichier doit répertorier tous les fichiers de configuration pour cet environnement. Ces fichiers sont recherchés par rapport à l’emplacement du fichier .config. Par exemple, si le fichier contient une ligne, `my.service.xml,` ce fichier est lu à partir du chemin de classe à l’adresse `com/day/cq/portlet/my.service.config.` Le nom du fichier comprend l’identifiant de persistance du service, suivi de **.config**. Dans l’exemple précédent, l’ID de persistance est **my.service**. Le format du fichier de configuration est le format utilisé par le programme d’installation OSGi Apache Sling.
+Si un environnement est défini, un fichier de configuration est recherché dans le chemin de classe à l’adresse* ***com/day/cq/portlet/{env}.config** où **env** est remplacé par la valeur réelle de l’environnement. Ce fichier doit répertorier tous les fichiers de configuration pour cet environnement. Ces fichiers sont recherchés par rapport à l’emplacement du fichier .config. Par exemple, si le fichier contient une ligne `my.service.xml,`, ce fichier est lu à partir du chemin de classe `com/day/cq/portlet/my.service.config.`. Le nom du fichier comprend l’identifiant de persistance du service, suivi de **.config**. Dans l’exemple précédent, l’ID de persistance est **my.service**. Le format du fichier de configuration est le format utilisé par le programme d’installation OSGi Apache Sling.
 
 Cela signifie qu’un fichier .config correspondant doit être ajouté pour chaque environnement. Une configuration qui doit être appliquée à tous les environnements doit être indiquée dans tous ces fichiers. Si un seul environnement est concerné, elle est simplement indiquée dans ce fichier. Ce mécanisme permet de s’assurer d’un contrôle total sur la configuration lue dans un environnement déterminé.
 
 Il est possible d’utiliser une autre propriété système pour détecter l’environnement. Spécifiez la propriété système **com.day.cq.po rtet.configproperty** contenant le nom de la propriété système à utiliser à la place de **com.day.cq.portet.config**.
 
-#### Mise en cache et annulation de la mise en cache {#caching-and-caching-invalidation}
+#### Mise en cache et annulation de la mise en cache  {#caching-and-caching-invalidation}
 
 Le portlet, dans sa configuration par défaut, met en cache les réponses qu’il reçoit d’AEM WCM dans un cache spécifique à l’utilisateur. Les caches doivent être annulés si des modifications sont apportées au contenu de l’instance de publication. À cet effet, un agent de réplication doit être configuré dans l’instance de création AEM WCM. Le cache peut également être vidé manuellement. Cette section décrit ces deux procédures.
 
@@ -173,7 +173,7 @@ Vous pouvez déployer ce lot lors de l’exécution ou l’ajouter à l’applic
 Une fois le cache déployé, le portlet met en cache le contenu de l’instance de publication. Le cache du portlet peut être annulé en vidant le Dispatcher d’AEM. Pour configurer le portlet de manière à utiliser son propre cache :
 
 1. Configurez un agent de réplication dans l’instance de création qui cible le serveur du portail.
-1. Assuming that the portal server runs on host **localhost**, **port 8080 **and the AEM portlet web application is mounted in the context **cqportlet**, the url to flush the cache is `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilisez la méthode GET.
+1. En supposant que le serveur de portail s&#39;exécute sur l&#39;hôte **localhost**, **port 8080 **et que l&#39;application Web du portlet AEM soit montée dans le contexte **cqportlet**, l&#39;URL pour vider le cache est `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilisez la méthode GET.
    **Remarque :** au lieu d’utiliser un paramètre de demande, vous pouvez envoyer un en-tête HTTP appelé **Path**.
 
 #### Vidage du cache par un agent de réplication {#flushing-the-cache-via-replication-agent}
@@ -185,12 +185,12 @@ Si vous gérez plusieurs nœuds du portail exécutant le portlet AEM, vous devez
 Pour configurer un agent de réplication pour le portail :
 
 1. Connectez-vous à l’instance de création.
-1. In the Websites tab, click the *Tools* tab.
-1. Click **New Page...** in the replication agents **New...** menu.
+1. Dans l&#39;onglet Sites Web, cliquez sur l&#39;onglet *Outils*.
+1. Cliquez sur **Nouvelle page...** dans les agents de réplication **Nouveau...**.
 
    ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
 
-1. In *Template*, select *Replication Agent*, and enter a name for the agent. Cliquez sur *Créer*.
+1. Dans *Modèle*, sélectionnez *Agent de réplication*, puis saisissez le nom de l&#39;agent. Cliquez sur *Créer*.
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
@@ -199,12 +199,12 @@ Pour configurer un agent de réplication pour le portail :
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
 1. Cliquez sur **Modifier** (Edit).
-1. In the **Settings** tab, select the **Enabled** check box, select **Dispatcher Flush** as the serialization type, and enter a retry timeout (for example, 60000).
+1. Dans l&#39;onglet **Paramètres**, activez la case à cocher **Activé**, sélectionnez **Flush du répartiteur** comme type de sérialisation et saisissez un délai d&#39;attente de nouvelle tentative (par exemple, 60000).
 
    ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)
 
-1. Click the **Transport** tab.
-1. In the **URI** field, enter the flush URI (URL) of the portlet. L’URI est au format suivant :
+1. Cliquez sur l&#39;onglet **Transport**.
+1. Dans le champ **URI**, saisissez l&#39;URL de vidage du portlet. L’URI est au format suivant :
 
    ```xml
    https://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache
@@ -212,15 +212,15 @@ Pour configurer un agent de réplication pour le portail :
 
    ![screen_shot_2012-02-15at42322pm](assets/screen_shot_2012-02-15at42322pm.png)
 
-1. Click the **Extended** tab.
+1. Cliquez sur l&#39;onglet **Étendu**.
 
    ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
-1. In the **HTTP Method** field, type **GET**.
-1. In the **HTTP Headers** field, click **+** to add a new entry and type **Path: {path}**.
-1. If necessary, click the **Proxy** tab and enter proxy information to the agent.
-1. Click **OK** to save changes.
-1. To test the connection, click the **Test Connection** link. Un message du journal s’affiche et indique si le test de réplication a réussi. Par exemple :
+1. Dans le champ **Méthode HTTP**, saisissez **GET**.
+1. Dans le champ **En-têtes HTTP**, cliquez sur **+** pour ajouter une nouvelle entrée et tapez **Chemin : {path}**.
+1. Si nécessaire, cliquez sur l&#39;onglet **Proxy** et entrez les informations du proxy à l&#39;agent.
+1. Cliquez sur **OK** pour enregistrer les modifications.
+1. Pour tester la connexion, cliquez sur le lien **Tester la connexion**. Un message du journal s’affiche et indique si le test de réplication a réussi. Par exemple :
 
    ![screen_shot_2012-02-15at42639pm](assets/screen_shot_2012-02-15at42639pm.png)
 
@@ -230,19 +230,19 @@ Vous pouvez vider manuellement le cache du portlet en accédant à l’adresse 
 
 Par exemple :
 
-`https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*` vire le cache complet. `https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz` vire `/content/mypage/xyz` du cache.
+`https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*` vire le cache complet. `https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz` vire  `/content/mypage/xyz` du cache.
 
 ### Sécurité du portail {#portal-security}
 
 Le portail est le mécanisme d’authentification principal. Vous pouvez vous connecter à AEM avec un utilisateur technique, un utilisateur du portail, un groupe et ainsi de suite. Le portlet n’a pas accès au mot de passe de l’utilisateur du portail. Par conséquent, si le portlet ne connaît pas toutes les informations d’identification pour connecter correctement un utilisateur, une solution de connexion unique doit être utilisée. Dans ce cas, le portlet AEM transfère toutes les informations nécessaires à AEM, qui les transfère à son tour au référentiel AEM sous-jacent. Ce comportement est enfichable et peut être personnalisé.
 
-### Authentification lors de la publication {#authentication-on-publish}
+### Authentification lors de la publication  {#authentication-on-publish}
 
 Cette section décrit les modes d’authentification disponibles que le portlet peut utiliser pour communiquer avec les instances AEM WCM sous-jacentes.
 
 Par défaut, aucune information de l’utilisateur n’est envoyée à l’instance de publication d’AEM. Le contenu s’affiche toujours en tant qu’utilisateur anonyme. Si des informations spécifiques à l’utilisateur sont fournies par AEM ou si l’utilisateur doit s’authentifier pour la publication, cette option doit être activée.
 
-#### Accès à la configuration de l’authentification du portlet {#accessing-the-portlet-s-authentication-configuration}
+#### Accès à la configuration de l’authentification du portlet  {#accessing-the-portlet-s-authentication-configuration}
 
 Les options de configuration de l’authentification utilisées par le portlet dans des instances AEM WCM sont disponibles dans la console web (configuration OSGi).
 
@@ -262,32 +262,32 @@ Pour accéder à la configuration de l’authentification du portlet :
 
    `https://wps-host:10040/wps/PA_CQ5_Portlet/cqbridge/system/console`
 
-1. Connectez-vous à la console web. The default credentials are `admin/admin`.
+1. Connectez-vous à la console web. Les informations d’identification par défaut sont `admin/admin`.
 1. Dans la console, sélectionnez **Configuration**.
-1. In the **Configuration** menu, select a particular service to configure. Les services sont fournis par le portlet dans la structure OSGi.
+1. Dans le menu **Configuration**, sélectionnez un service particulier à configurer. Les services sont fournis par le portlet dans la structure OSGi.
 
    | Nom du service | Description |
    |---|---|
    | Day Portal Director Authenticator | Configurer le mode d’authentification utilisé pour les instances AEM WCM. En fonction du mode sélectionné, vous pouvez spécifier un utilisateur technique ou le nom du cookie de connexion unique. De plus, il est possible d’activer l’authentification pour les instances de publication d’AEM WCM. |
    | Day Portal Director File Cache | Configurer les paramètres déterminant la façon dont le portlet met en cache les réponses qu’il reçoit des instances AEM WCM. |
    | Day Portal Director HTTP Client Service | Configurer la façon dont le portlet se connecte aux instances AEM WCM sous-jacentes via HTTP. Vous pouvez, par exemple, spécifier un serveur proxy. |
-   | Day Portal Director Locale Handler | Configurer les paramètres régionaux pris en charge par le portlet. Requests to AEM WCM instances are based on the user locale; for example, user language *German *would request `/content/geometrixx/de/`.... |
+   | Day Portal Director Locale Handler | Configurer les paramètres régionaux pris en charge par le portlet. Les requêtes d’AEM instances WCM sont basées sur les paramètres régionaux de l’utilisateur ; par exemple, la langue d’utilisateur *German *demanderait `/content/geometrixx/de/`.... |
    | Day Portal Director Privilege Manager | Indiquer si le portlet doit tester l’onglet Sites web en fonction de l’utilisateur actuellement connecté. |
    | Day Portal Director Toolbar Renderer | Personnaliser le rendu de la barre d’outils du portlet. |
 
 1. Vous pouvez également configurer la console web et le service de journalisation. Par exemple, vous pouvez modifier les informations d’identification de l’administrateur pour la console web en cliquant sur le lien Console de gestion OSGi Apache Felix.
 
-#### Mode Utilisateur technique {#technical-user-mode}
+#### Mode Utilisateur technique  {#technical-user-mode}
 
 Dans le mode par défaut, toutes les demandes émises par le portlet pour l’instance de création AEM WCM sont authentifiées à l’aide du même utilisateur technique, indépendamment de l’utilisateur actuel du portail. Le mode Utilisateur technique est activé par défaut. Vous activez/désactivez ce mode dans l’écran de configuration approprié dans la console de gestion OSGi :
 
-The technical user specified must exist on the AEM WCM author instance and on the publish instance if **Authenticate on Publish** is enabled. Veillez à attribuer à l’utilisateur des autorisations suffisantes pour la tâche de création.
+L’utilisateur technique spécifié doit exister sur l’instance d’auteur AEM WCM et sur l’instance de publication si **Authentification sur publication** est activé. Veillez à attribuer à l’utilisateur des autorisations suffisantes pour la tâche de création.
 
-#### Connexion unique (SSO) {#sso}
+#### Connexion unique (SSO)  {#sso}
 
 Le portlet prend en charge la connexion unique avec la version commerciale d’AEM. Le service d’authentification peut être configuré de manière à utiliser la connexion unique et transmettre à AEM l’utilisateur actuel du portail au format **De base** sous forme de cookie appelé « `cqpsso` ». AEM doit être configuré de manière à utiliser le gestionnaire d’authentification SSO pour le chemin d’accès /. Le nom du cookie doit également être configuré ici.
 
-The `crx-quickstart/repository/repository.xml` for AEM repository needs to be configured accordingly:
+Le référentiel `crx-quickstart/repository/repository.xml` pour AEM doit être configuré en conséquence :
 
 ```xml
 <LoginModule class="com.day.crx.security.authentication.CRXLoginModule">
@@ -299,7 +299,7 @@ The `crx-quickstart/repository/repository.xml` for AEM repository needs to be co
 
 #### Mode Authentification SSO {#sso-authentication-mode}
 
-Le portlet peut s’authentifier pour AEM WCM à l’aide du schéma de connexion unique (SSO). Dans ce mode, l’utilisateur actuellement connecté au portail est transféré à AEM WCM sous forme de cookie de connexion unique. Si le mode SSO est utilisé, tous les utilisateurs du portail ayant accès au portlet AEM doivent être connus au niveau des instances AEM WCM sous-jacentes, le plus souvent sous forme d’AEM WCM connecté au LDAP ou en ayant créé manuellement les utilisateurs à l’avance. Also, before enabling SSO in the portlet, the underlying AEM WCM author instance (and the publish instance, if **Authenticate on Publish** is enabled) needs to be configured to accept SSO-based requests.
+Le portlet peut s’authentifier pour AEM WCM à l’aide du schéma de connexion unique (SSO). Dans ce mode, l’utilisateur actuellement connecté au portail est transféré à AEM WCM sous forme de cookie de connexion unique. Si le mode SSO est utilisé, tous les utilisateurs du portail ayant accès au portlet AEM doivent être connus au niveau des instances AEM WCM sous-jacentes, le plus souvent sous forme d’AEM WCM connecté au LDAP ou en ayant créé manuellement les utilisateurs à l’avance. En outre, avant d’activer l’authentification unique dans le portlet, l’instance d’auteur WCM sous-jacente (et l’instance de publication, si **Authentifier sur Publier** est activée) doit être configurée pour accepter les requêtes SSO.
 
 Pour configurer le portlet de manière à utiliser le mode d’authentification SSO, exécutez cette procédure (décrite en détail dans les sections suivantes) :
 
@@ -307,7 +307,7 @@ Pour configurer le portlet de manière à utiliser le mode d’authentification�
 * Activer l’authentification SSO dans AEM WCM.
 * Activer l’authentification SSO dans le portlet AEM.
 
-#### Activation du référentiel d’AEM WCM pour accepter les informations d’identification approuvées {#enabling-aem-wcm-s-repository-to-accept-trusted-credentials}
+#### Activation du référentiel d’AEM WCM pour accepter les informations d’identification approuvées  {#enabling-aem-wcm-s-repository-to-accept-trusted-credentials}
 
 Avant de pouvoir activer la connexion unique pour AEM WCM, le référentiel sous-jacent doit être configuré de manière à accepter les informations d’identification approuvées fournies par AEM WCM. À cet effet, configurez le fichier repository.xml d’AEM.
 
@@ -327,7 +327,7 @@ Avant de pouvoir activer la connexion unique pour AEM WCM, le référentiel sous
 
 1. Redémarrez AEM WCM pour que les modifications soient appliquées.
 
-#### Activation de l’authentification SSO dans AEM WCM {#enabling-sso-authentication-in-the-aem-wcm}
+#### Activation de l’authentification SSO dans AEM WCM  {#enabling-sso-authentication-in-the-aem-wcm}
 
 Pour activer la connexion unique dans AEM WCM, accédez à l’entrée de configuration appropriée dans la Console de gestion web Apache Felix (OSGi) d’AEM WCM :
 
@@ -342,9 +342,9 @@ Pour activer la connexion unique dans AEM WCM, accédez à l’entrée de config
 
 Pour chaque demande que reçoit AEM WCM, l’authentification SSO est tentée en premier. En cas d’échec, un système de secours du schéma d’authentification de base habituel est exécuté. En tant que telles, les connexions normales à AEM WCM sans connexion unique restent possibles.
 
-#### Activation de l’authentification SSO dans un portlet AEM {#enabling-sso-authentication-in-a-aem-portlet}
+#### Activation de l’authentification SSO dans un portlet AEM  {#enabling-sso-authentication-in-a-aem-portlet}
 
-In order for the underlying AEM WCM instance to accept SSO requests, the portlet’s authentication mode has to be switched from **Technical** to **SSO**.
+Pour que l’instance WCM sous-jacente AEM accepte les demandes d’authentification unique, le mode d’authentification du portlet doit être passé de **Technical** à **SSO**.
 
 Pour activer l’authentification SSO dans un portlet AEM :
 
@@ -376,7 +376,7 @@ C-12-#002238 -> [Cookie: $Version=0; cqpsso=Basic+d3BhZG1pbg%3D%3D ]
 C-12-#002289 -> [ ]
 ```
 
-### Activation de l’authentification par code personnel {#enabling-pin-authentication}
+### Activation de l’authentification par code personnel  {#enabling-pin-authentication}
 
 Si vous n’utilisez pas les fonctionnalités de modification en ligne par défaut du portlet de contenu AEM, mais que vous souhaitez que la création et l’administration fassent partie du portlet en dehors du portail directement dans l’instance de création AEM, vous devez activer l’authentification par code personnel. Vous devez également modifier la configuration des boutons de gestion.
 
@@ -391,10 +391,10 @@ Pour afficher la page d’administration du site web ou modifier une page du por
    </LoginModule>
    ```
 
-1. In the OSGi configuration console, by default located at https://localhost:4502/system/console/configMgr, select **CQ PIN Authentication Handler** from the drop-down menu.
+1. Dans la console de configuration OSGi, située par défaut à l’adresse https://localhost:4502/system/console/configMgr, sélectionnez **CQ PIN Authentication Handler** dans le menu déroulant.
 1. Modifiez le paramètre **Chemin d’accès racine de l’adresse URL** afin qu’il ne contienne que la valeur unique **/**.
 
-### Autorisations {#privileges}
+### Autorisations  {#privileges}
 
 Certaines fonctions du portlet sont protégées par des autorisations. L’utilisateur actuel doit disposer de cette autorisation pour pouvoir accéder à cette fonction. Les autorisations ci-dessous sont prédéfinies :
 
@@ -416,7 +416,7 @@ L’application du portlet AEM indiquée lance un conteneur OSGi dans l’applic
 * Fourniture de mises à jour dynamiques dans le portlet sans intervention du serveur du portail
 * Facilité de personnalisation du portlet
 
-### Boutons de la barre d’outils {#toolbar-buttons}
+### Boutons de la barre d’outils  {#toolbar-buttons}
 
 La barre d’outils et ses boutons peuvent être configurés et personnalisés. Vous pouvez ajouter vos propres boutons à la barre d’outils ou définir les boutons affichés dans les différents modes. Chaque bouton correspond à un service OSGi configurable par le biais d’une configuration OSGi.
 
@@ -426,7 +426,7 @@ Par défaut, le portlet de contenu AEM utilise la fonctionnalité de modificatio
 
 La disposition de la barre d’outils du portlet peut être personnalisée en installant un lot par le biais de la console web Felix du portlet, qui contient du code CSS/HTML personnalisé à un emplacement prédéfini.
 
-#### Structure des lots {#bundle-structure}
+#### Structure des lots  {#bundle-structure}
 
 Voici un exemple de structure de lots :
 
@@ -469,7 +469,7 @@ La présence du répertoire HTML/CSS/images dans le dossier /com/day/cq/portlet/
 
 Vous pouvez le créer à l’aide d’un outil comme maven ou manuellement, comme un fichier JAR avec l’en-tête approprié défini, comme indiqué dans cette section.
 
-#### Affichages de la barre d’outils du portlet {#portlet-toolbar-views}
+#### Affichages de la barre d’outils du portlet  {#portlet-toolbar-views}
 
 La barre d’outils du portlet comporte deux états d’affichage. Chaque affichage et les boutons associés peuvent être personnalisés avec un fichier HTML correspondant.
 
@@ -477,17 +477,17 @@ La barre d’outils du portlet comporte deux états d’affichage. Chaque affich
 
 L’affichage Publication ne comporte qu’un seul bouton, qui permet d’afficher/de masquer la barre d’outils dans l’affichage Gestion. L’affichage Publication est représenté par le fichier publish.html dans le [lot précédent](/help/sites-deploying/configuring-osgi.md#bundles). Dans le code HTML, vous pouvez utiliser les espaces réservés ci-dessous, que le portlet remplace par le contenu approprié lors du rendu :
 
-#### Espaces réservés de l’affichage Publication {#publish-view-placeholders}
+#### Espaces réservés de l’affichage Publication  {#publish-view-placeholders}
 
 | Chaîne d’espace réservé | Description |
 |---|---|
-| {buttonManage} | L&#39;espace réservé est remplacé par le bouton **Gérer** , qui bascule l&#39;état du portlet en état de gestion. |
+| {buttonManage} | L&#39;espace réservé est remplacé par le bouton **Gérer**, qui bascule l&#39;état du portlet en état de gestion. |
 
 #### Affichage Gestion {#manage-view}
 
 L’affichage Gestion comporte quatre boutons : Modifier, onglet Sites web, Actualiser et Précédent. L’affichage Gestion est représenté par le fichier manage.html dans le [lot précédent](/help/sites-deploying/configuring-osgi.md#bundles). Dans le code HTML, vous pouvez utiliser les espaces réservés ci-dessous, que le portlet remplace par le contenu approprié lors du rendu :
 
-#### Espaces réservés de l’affichage Gestion {#manage-view-placeholders}
+#### Espaces réservés de l’affichage Gestion  {#manage-view-placeholders}
 
 | Chaîne d’espace réservé | Description |
 |---|---|
@@ -496,13 +496,13 @@ L’affichage Gestion comporte quatre boutons : Modifier, onglet Sites web, Act
 | {buttonRefresh} | Actualise l’affichage actif. |
 | {buttonBack} | Remet le portlet en mode de publication. |
 
-#### Boutons {#buttons}
+#### Boutons  {#buttons}
 
 Les boutons, indépendamment de l’affichage dans lequel ils figurent, utilisent le même code HTML commun, défini dans le fichier button.html.
 
 Dans le code HTML, vous pouvez utiliser les espaces réservés ci-dessous, que le portlet remplace par le contenu approprié lors du rendu :
 
-#### Boutons des affichages Gestion et Publication {#manage-and-publish-view-buttons}
+#### Boutons des affichages Gestion et Publication  {#manage-and-publish-view-buttons}
 
 | Chaîne d’espace réservé | Description |
 |---|---|
@@ -510,7 +510,7 @@ Dans le code HTML, vous pouvez utiliser les espaces réservés ci-dessous, que l
 | {id} | ID CSS du bouton. |
 | {url} | URL de la cible du bouton. |
 | {text} | Étiquette du bouton. |
-| {onclick} | Fonction **onclick** JavaScript (contient {url}). |
+| {onclick} | Fonction JavaScript **onclick** (contient {url}). |
 
 Exemple de fichier button.html :
 
@@ -526,7 +526,7 @@ title="{text}"/>
 </div>
 ```
 
-#### Installation d’une mise en page personnalisée {#installing-a-custom-layout}
+#### Installation d’une mise en page personnalisée  {#installing-a-custom-layout}
 
 Pour installer une disposition personnalisée, accédez à la console Web OSGI du portlet **Bundles **section et téléchargez le lot.
 
@@ -549,9 +549,9 @@ Le portlet de contenu AEM possède une fonctionnalité de localisation intégré
 Cette opération s’effectue en deux étapes :
 
 1. Le service Portal Directory Locale Detector détecte les paramètres régionaux du portail en extrayant le paramètre des paramètres régionaux du portail. Ce service doit être configuré avec la liste des langues disponibles dans AEM.
-1. Le service Portal Director Locale Handler gère la localisation de la demande actuelle. It takes the path of the requested content, for example `/content/geometrixx/en/company.html`and according to the configuration, it rewrites the **en** with the actual locale of the user.
+1. Le service Portal Director Locale Handler gère la localisation de la demande actuelle. Il suit le chemin du contenu demandé, par exemple `/content/geometrixx/en/company.html`et selon la configuration, il réécrit **en** avec le paramètre régional réel de l’utilisateur.
 
-The Portal Director Locale Handler can be configured with the paths to check for locale information - usually this includes everything under `/content` and with the position of the locale information in the path. Par défaut, le gestionnaire des paramètres régionaux suit la recommandation de structurer les sites multilingues dans AEM.
+Le Gestionnaire de paramètres régionaux de Portal Director peut être configuré avec les chemins d’accès pour rechercher des informations sur les paramètres régionaux. En règle générale, cela inclut tout ce qui se trouve sous `/content` et la position des informations sur les paramètres régionaux dans le chemin d’accès. Par défaut, le gestionnaire des paramètres régionaux suit la recommandation de structurer les sites multilingues dans AEM.
 
 Si votre site ne comporte pas de règle absolue pour gérer les informations des paramètres régionaux avec le chemin d’accès, il est possible de remplacer le gestionnaire des paramètres régionaux par votre propre mise en œuvre.
 
@@ -608,7 +608,7 @@ Des services OSGi facultatifs peuvent être mis en œuvre pour personnaliser dif
  </tbody>
 </table>
 
-#### Remplacement des services par défaut {#replacing-default-services}
+#### Remplacement des services par défaut  {#replacing-default-services}
 
 Les services ci-dessous possèdent une mise en œuvre par défaut dans le portlet de contenu (grâce à une interface Java correspondante). Pour la personnalisation, un lot contenant la nouvelle mise en œuvre du service doit être déployé dans l’application du portlet.
 
@@ -624,7 +624,7 @@ En mettant en œuvre ce service, veillez à définir la propriété **service.ra
 | PrivilegeManager | Vérifie les droits d’utilisateur | Vérifie l’accès à instance de création si l’utilisateur a l’autorisation de modifier le contenu |
 | ToolbarRenderer | Effectue le rendu de la barre d’outils. | Ajoute une fonctionnalité à la barre d’outils |
 
-### Événements de portlet {#portlet-events}
+### Événements de portlet  {#portlet-events}
 
 L’API de portlet (JSR-286) spécifie les événements de portlet. Le portlet de contenu AEM comporte une passerelle intégrée, répartissant les événements pour le portlet AEM sous forme d’événements OSGi : la gestion des événements de portlet devient enfichable.
 
@@ -647,7 +647,7 @@ Pour utiliser AEM comme portail, procédez comme suit :
 >
 >Vous ne pouvez utiliser le composant Portlet que lorsque AEM est déployé comme application web. (Voir [Installation d’AEM avec un serveur d’applications](/help/sites-deploying/application-server-install.md).)
 
-### Installation du composant Portlet {#installing-the-portlet-component}
+### Installation du composant Portlet  {#installing-the-portlet-component}
 
 Le fichier JAR d’AEM Quickstart contient les fichiers du composant Portlet. Pour obtenir les fichiers (cq-portlet-components.zip), vous pouvez exécuter Quickstart ou extrayez le contenu.
 
@@ -656,9 +656,9 @@ Le fichier JAR d’AEM Quickstart contient les fichiers du composant Portlet. P
    * Exécutez Quickstart : crx-quickstart/opt/portal
    * Extrayez le contenu de Quickstart : static/opt/portal
 
-1. Ouvrez le Gestionnaire de modules de l’instance de création CQ5 déployée sur le serveur d’applications. (https://*appserverhost*:*port*/cq5author/crx/packmgr)
+1. Ouvrez le Gestionnaire de modules de l’instance de création CQ5 déployée sur le serveur d’applications. (https://*hôte du serveur d’applications*:*port*/cq5author/crx/packmgr)
 
-1. Use Package Manager to [Upload and install](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) the cq-portlets-components.zip package.
+1. Utilisez Package Manager pour [télécharger et installer](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) le package cq-portlets-components.zip.
 
    Le package installe cq-portlet-Director-sharedlibs-x.x.x.jar dans le dossier /libs/portal/Director du référentiel.
 
@@ -670,7 +670,7 @@ Le fichier JAR d’AEM Quickstart contient les fichiers du composant Portlet. P
 Ajoutez le composant Portlet au système de paragraphes afin qu’il soit disponible pour les auteurs.
 
 1. Dans le Sidekick, cliquez sur l’icône en forme de règle pour accéder au mode Conception.
-1. Beside the `Design of par` heading above the first paragraph, click **Edit**.
+1. En regard de l’en-tête `Design of par` au-dessus du premier paragraphe, cliquez sur **Modifier**.
 
 1. Dans la catégorie de composants **Général**, cochez la case en regard du composant Portlet et cliquez sur OK.
 
@@ -682,7 +682,7 @@ Déployez les portlets dans le conteneur web du serveur d’applications afin qu
 
 1. Extrayez le contenu du fichier WAR de l&#39;application de portlet.
 
-   **Conseil :** La commande jar xf *nameofapp*.war extrait les fichiers.
+   **Conseil :** La commande jar xf  *name*.war extrait les fichiers.
 
 1. Ouvrez le fichier web.xml dans un éditeur de texte.
 1. Ajoutez la configuration de servlet suivante dans l’élément web-app :
@@ -701,11 +701,11 @@ Déployez les portlets dans le conteneur web du serveur d’applications afin qu
 
 1. Enregistrez le fichier web.xml et recompressez le fichier WAR.
 
-   **Conseil :** La `jar cvf nameofapp.war *` commande ajoute le contenu du répertoire actuel au fichier name.war.
+   **Conseil :** La  `jar cvf nameofapp.war *` commande ajoute le contenu du répertoire actuel au fichier name.war.
 
 1. Déployez l’application de portlet sur le serveur d’applications. Pour plus d’informations, reportez-vous à la documentation de votre serveur d’applications.
 
-### Ajout de portlets à votre page AEM {#adding-portlets-to-your-aem-page}
+### Ajout de portlets à votre page AEM  {#adding-portlets-to-your-aem-page}
 
 Utilisez le composant Portail pour ajouter une fenêtre du portlet à votre page web. Spécifiez le portlet à afficher à l’aide des propriétés du composant.
 
@@ -744,7 +744,7 @@ Par défaut, le portlet se connecte à l’instance de publication sur localhost
 >
 >Ces procédures utilisent le portail WebSphere à titre d’exemple même si elles sont aussi génériques que possible. N’oubliez pas que les procédures varient pour les autres portails web. Même si la procédure est identique, pour l’essentiel, pour tous les portails web, vous devez adapter les étapes à votre portail web spécifique.
 
-#### Installation du portlet {#installing-the-portlet}
+#### Installation du portlet  {#installing-the-portlet}
 
 Pour installer le portlet :
 
@@ -756,7 +756,7 @@ Pour installer le portlet :
 
 1. Assurez-vous que l’application de portlet démarre automatiquement en sélectionnant cette option ou en cochant la case, puis enregistrez vos modifications. Un message indiquant que l’installation a été effectuée correctement s’affiche.
 
-#### Configuration du portlet {#configuring-the-portlet}
+#### Configuration du portlet  {#configuring-the-portlet}
 
 Une fois que vous avez installé le portlet, vous devez le configurer afin qu’il connaisse les adresses URL des instances AEM sous-jacentes (création et publication). Vous pouvez également configurer d’autres options.
 
@@ -767,11 +767,11 @@ Pour configurer le portlet :
 
    >[!NOTE]
    >
-   >If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than** /**, you need to enable the force **CQUrlInfo** in the Html Library Manager configuration of these AEM instances (e.g. via Felix Webconsole) or editing will not work and the preferences dialog will not appear.
+   >Si le portlet est configuré pour se connecter à AEM instances d&#39;auteur et de publication qui s&#39;exécutent sur un chemin de contexte différent de** /**, vous devez activer la force **CQUrlInfo** dans la configuration du gestionnaire de bibliothèque Html de ces instances AEM (par exemple via Felix Webconsole) ou la modification ne fonctionnera pas et la boîte de dialogue des préférences n&#39;apparaîtra pas.
 
 1. Enregistrez les modifications apportées à la configuration sur le serveur d’applications.
 
-1. Accédez à la console d’administration OSGi pour le portlet. The default location is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. La paire nom d’utilisateur/mot de passe est par défaut **admin/admin**.
+1. Accédez à la console d’administration OSGi pour le portlet. L’emplacement par défaut est `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. La paire nom d’utilisateur/mot de passe est par défaut **admin/admin**.
 
 1. Sélectionnez la configuration **Day Portal Director CQ Server Configuration** et modifiez les valeurs suivantes :
 
@@ -785,17 +785,17 @@ Pour configurer le portlet :
 
 ### URL de contenu {#content-urls}
 
-Lorsque le contenu est demandé à partir d’AEM, le portlet utilise le mode d’affichage actuel (publication ou création) et le chemin d’accès actuel pour assembler une adresse URL complète. With the default values, the first url is `https://localhost:4503/content/geometrixx/en.portlet.html`. La valeur de la propriété `htmlSelector` est ajoutée automatiquement à l’adresse URL avant l’extension.
+Lorsque le contenu est demandé à partir d’AEM, le portlet utilise le mode d’affichage actuel (publication ou création) et le chemin d’accès actuel pour assembler une adresse URL complète. Avec les valeurs par défaut, la première url est `https://localhost:4503/content/geometrixx/en.portlet.html`. La valeur de la propriété `htmlSelector` est ajoutée automatiquement à l’adresse URL avant l’extension.
 
-If the portlet switches to the help mode and the `appendHelpViewModeAsSelector` is selected, then the `help` selector is appended as well, for example, `https://localhost:4503/content/geometrixx/en.portlet.html.help`. If the portlet window is maximized and the `appendMaxWindowStateAsSelector` is selected, then the selector is appended as well, for example, `https://localhost:4503/content/geometrixx/en.portlet.max.help`.
+Si le portlet passe en mode d&#39;aide et que `appendHelpViewModeAsSelector` est sélectionné, le sélecteur `help` est également ajouté, par exemple `https://localhost:4503/content/geometrixx/en.portlet.html.help`. Si la fenêtre du portlet est agrandie et que `appendMaxWindowStateAsSelector` est sélectionné, le sélecteur est également ajouté, par exemple `https://localhost:4503/content/geometrixx/en.portlet.max.help`.
 
 Les sélecteurs peuvent être évalués dans AEM, et un autre modèle peut être utilisé pour différents sélecteurs.
 
-### Utilisation d’une correspondance d’adresses URL de contenu dans AEM {#using-a-content-url-map-in-aem}
+### Utilisation d’une correspondance d’adresses URL de contenu dans AEM  {#using-a-content-url-map-in-aem}
 
-Généralement, le chemin d’accès de début pointe directement vers le contenu dans AEM. However if you want to maintain start paths in AEM rather than in the portlet preferences, you can point the start path to a content map in AEM, like `/var/portlets`. Dans ce cas, un script exécuté dans AEM peut utiliser les informations envoyées à partir du portlet pour déterminer l’adresse URL qui est l’adresse URL de début. Il doit exécuter une redirection vers l’adresse URL appropriée.
+Généralement, le chemin d’accès de début pointe directement vers le contenu dans AEM. Cependant, si vous souhaitez conserver les chemins d&#39;début en AEM plutôt que dans les préférences de portlet, vous pouvez pointer le chemin d&#39;début vers un mappage de contenu en AEM, par exemple `/var/portlets`. Dans ce cas, un script exécuté dans AEM peut utiliser les informations envoyées à partir du portlet pour déterminer l’adresse URL qui est l’adresse URL de début. Il doit exécuter une redirection vers l’adresse URL appropriée.
 
-#### Ajout du portlet à la page Portail {#adding-the-portlet-to-the-portal-page}
+#### Ajout du portlet à la page Portail  {#adding-the-portlet-to-the-portal-page}
 
 Pour ajouter le portlet à la page Portal :
 
@@ -805,7 +805,7 @@ Pour ajouter le portlet à la page Portal :
 1. Sélectionnez le portlet et ajoutez-le à un conteneur.
 1. Enregistrez les modifications.
 
-#### Utilisation du portlet {#using-the-portlet}
+#### Utilisation du portlet  {#using-the-portlet}
 
 Pour accéder à la page que vous avez ajoutée au portlet :
 
