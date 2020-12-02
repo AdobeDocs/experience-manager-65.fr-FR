@@ -23,7 +23,7 @@ ContextHub est une structure pour stocker, manipuler et présenter des données 
 
 Configurez la barre d’outils [ContextHub](/help/sites-developing/contexthub.md) pour contrôler si elle apparaît dans le mode d’aperçu, afin de créer des magasins ContextHub et d’ajouter des modules d’IU à l’aide de l’IU optimisée pour les écrans tactiles.
 
-## Désactivation de ContextHub {#disabling-contexthub}
+## Désactivation de ContextHub  {#disabling-contexthub}
 
 Par défaut, ContextHub est activé dans une installation AEM. ContextHub peut être désactivé pour éviter qu’il charge js/css et s’initialise. Il existe deux options pour désactiver ContextHub :
 
@@ -36,11 +36,11 @@ Par défaut, ContextHub est activé dans une installation AEM. ContextHub peut �
 
 ou
 
-* Use CRXDE Lite to set the property `disabled` to **true** under `/libs/settings/cloudsettings`
+* Utilisez CRXDE Lite pour définir la propriété `disabled` sur **true** sous `/libs/settings/cloudsettings`.
 
 >[!NOTE]
 >
->[En raison de la restructuration du référentiel dans AEM 6.4,](/help/sites-deploying/repository-restructuring.md) l’emplacement des configurations ContextHub a été remplacé par `/etc/cloudsettings` :
+>[En raison de la restructuration du référentiel dans AEM 6.4,](/help/sites-deploying/repository-restructuring.md) l’emplacement des configurations ContextHub a été remplacé  `/etc/cloudsettings` par :
 >
 > * `/libs/settings/cloudsettings`
 > * `/conf/global/settings/cloudsettings`
@@ -49,16 +49,16 @@ ou
 
 ## Affichage et masquage de l’IU ContextHub {#showing-and-hiding-the-contexthub-ui}
 
-Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l’[IU ContextHub](/help/sites-authoring/ch-previewing.md) sur vos pages. The PID of this service is `com.adobe.granite.contexthub.impl.ContextHubImpl.`
+Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l’[IU ContextHub](/help/sites-authoring/ch-previewing.md) sur vos pages. Le PID de ce service est `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
-To configure the service you can either use the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or use a [JCR node in the repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
+Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un noeud [JCR dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
 * **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’IU, désélectionnez la propriété Masquer l’IU.
-* **Noeud JCR :** Pour afficher l’interface utilisateur, définissez la `com.adobe.granite.contexthub.show_ui` propriété booléenne sur `true`. To hide the UI, set the property to `false`.
+* **Noeud JCR :** pour afficher l’interface utilisateur, définissez la  `com.adobe.granite.contexthub.show_ui` propriété booléenne sur  `true`. Pour masquer l’interface utilisateur, définissez la propriété sur `false`.
 
 Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’IU ne s’affiche pas sur les pages des instances de publication.
 
-## Ajout des modes et des modules d’IU ContextHub {#adding-contexthub-ui-modes-and-modules}
+## Ajout des modes et des modules d’IU ContextHub  {#adding-contexthub-ui-modes-and-modules}
 
 Configurez les modes et les modules d’IU qui apparaissent dans la barre d’outils ContextHub en mode d’aperçu :
 
@@ -71,7 +71,7 @@ Les modes d’IU s’affichent sous forme d’une série d’icônes dans la par
 
 Les icônes sont des références de la [bibliothèque d’icônes CoralUI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons).
 
-### Ajout d’un mode d’IU {#adding-a-ui-mode}
+### Ajout d’un mode d’IU  {#adding-a-ui-mode}
 
 Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsque vous créez le mode d’IU, vous fournissez le titre et l’icône figurant dans la barre d’outils ContextHub.
 
@@ -85,12 +85,12 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
 1. Saisissez les valeurs pour les propriétés suivantes :
 
    * Titre du mode IU : Titre qui identifie le mode d’interface utilisateur
-   * Mode Icon: The selector for the [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) to use, for example `coral-Icon--user`
+   * Icône Mode : Sélecteur de l&#39;icône [IU Coral](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser, par exemple `coral-Icon--user`
    * Activé : sélectionnez cette option pour afficher le mode d’IU dans la barre d’outils ContextHub.
 
 1. Cliquez ou appuyez sur Enregistrer.
 
-### Ajout d’un module d’IU {#adding-a-ui-module}
+### Ajout d’un module d’IU  {#adding-a-ui-module}
 
 Ajoutez un module d’IU ContextHub à un mode d’IU afin qu’il s’affiche dans la barre d’outils ContextHub pour prévisualiser le contenu d’une page. Lorsque vous ajoutez un module d’IU, vous créez une instance d’un type de module qui est enregistré auprès de ContextHub. Pour ajouter un module d’IU, vous devez connaître le nom du type de module associé.
 
@@ -126,11 +126,11 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 1. (Facultatif) Pour désactiver la configuration de magasin par défaut, saisissez un objet JSON afin de configurer le module d’IU.
 1. Cliquez ou appuyez sur Enregistrer.
 
-## Création d’un magasin ContextHub {#creating-a-contexthub-store}
+## Création d’un magasin ContextHub  {#creating-a-contexthub-store}
 
 Créez un magasin ContextHub pour conserver les données utilisateur et accéder aux données selon vos besoins. Les magasins ContextHub sont basés sur des candidats de magasins enregistrés. Lorsque vous créez le magasin, vous avez besoin de la valeur du paramètre storeType avec lequel le candidat de magasin a été enregistré. (Voir [Création de candidats de magasins personnalisés](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).)
 
-### Configuration de magasin détaillée {#detailed-store-configuration}
+### Configuration de magasin détaillée  {#detailed-store-configuration}
 
 Lorsque vous configurez un magasin, la propriété Configuration de détails·vous permet de fournir des valeurs pour les propriétés spécifiques au magasin. La valeur est basée sur le paramètre `config` de la fonction `init` du magasin. Par conséquent, la nécessité de fournir ou non cette valeur et son format dépend du magasin.
 
@@ -169,11 +169,11 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la case Configuration des détails (JSON).
 1. Cliquez ou appuyez sur Enregistrer.
 
-## Exemple : en utilisant un service JSONP  {#example-using-a-jsonp-service}
+## Exemple : en utilisant un service JSONP   {#example-using-a-jsonp-service}
 
 Cet exemple illustre comment configurer un magasin et afficher les données dans un module d’IU. Dans cet exemple, le service MD5 du site jsontest.com est utilisé comme source de données pour un magasin. Le service renvoie le code de hachage MD5 d’une chaîne donnée, au format JSON.
 
-A contexthub.generic-jsonp store is configured so that it stores data for the service call `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. Le service renvoie les données suivantes qui s’affichent dans un module d’IU :
+Un magasin contexthub.generic-jsonp est configuré de sorte qu’il stocke les données pour l’appel de service `https://md5.jsontest.com/?text=%22text%20to%20md5%22`. Le service renvoie les données suivantes qui s’affichent dans un module d’IU :
 
 ```xml
 {
@@ -182,18 +182,18 @@ A contexthub.generic-jsonp store is configured so that it stores data for the se
 }
 ```
 
-### Création d’un magasin contexthub.generic-jsonp {#creating-a-contexthub-generic-jsonp-store}
+### Création d’un magasin contexthub.generic-jsonp  {#creating-a-contexthub-generic-jsonp-store}
 
 L’exemple de candidat de magasin contexthub.generic-jsonp vous permet de récupérer les données d’un service JSONP ou web qui renvoie des données JSON. Pour ce candidat de magasin, utilisez la configuration de magasin afin de fournir les détails du service JSONP à utiliser.
 
-The [init](/help/sites-developing/contexthub-api.md#init-name-config) function of the `ContextHub.Store.JSONPStore` Javascript class defines a `config` object that initializes this store candidate. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
+La fonction [init](/help/sites-developing/contexthub-api.md#init-name-config) de la classe Javascript `ContextHub.Store.JSONPStore` définit un objet `config` qui initialise ce candidat de stockage. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
 
 Pour enregistrer les données à partir du service MD5 du site jsontest.com, suivez la procédure décrite dans [Création d’un magasin ContextHub](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) à l’aide des propriétés suivantes :
 
 * **Titre de la configuration :** md5
 * **Type de stockage :** contexthub.generic-jsonp
 * **Obligatoire :** sélectionnez cette option.
-* **Activé :** Sélectionner
+* **Activé:** Sélectionner
 * **Configuration des détails (JSON):**
 
    ```xml
@@ -218,10 +218,10 @@ Ajoutez un module d’IU à la barre d’outils ContextHub pour afficher les don
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Use the procedure in [Adding a UI Module](#adding-a-ui-module) to add the UI module to an existing UI Mode, such as the sample Perona UI Mode. Pour le module d’IU, utilisez les valeurs de propriétés suivantes :
+Suivez la procédure décrite dans [Ajouter un module d&#39;interface utilisateur](#adding-a-ui-module) pour ajouter le module d&#39;interface à un mode d&#39;interface utilisateur existant, tel que l&#39;exemple de mode d&#39;interface utilisateur Perona. Pour le module d’IU, utilisez les valeurs de propriétés suivantes :
 
 * **Titre du module d’IU :** MD5.
-* **Type de module :** contexthub.base
+* **Type de module:** contexthub.base
 * **Configuration des détails (JSON):**
 
    ```xml
@@ -238,25 +238,25 @@ Use the procedure in [Adding a UI Module](#adding-a-ui-module) to add the UI mod
 
 Une procédure de débogage pour ContextHub peut être activée afin de permettre la résolution des incidents. Le mode de débogage peut être activé via la configuration de ContextHub ou CRXDE.
 
-### Via la configuration {#via-the-configuration}
+### Via la configuration  {#via-the-configuration}
 
-Edit the ContextHub&#39;s configuration and check the option **Debug**
+Modifiez la configuration de ContextHub et cochez l’option **Déboguer**.
 
 1. Sur le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**.
 1. Cliquez ou appuyez sur le **conteneur de configurations** par défaut.
 1. Sélectionnez la **configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**.
-1. Click or tap **Debug** and click or tap **Save**
+1. Cliquez ou appuyez sur **Débogage** et cliquez ou appuyez sur **Enregistrer**.
 
 ### Via CRXDE {#via-crxde}
 
-Use CRXDE Lite to set the property `debug` to **true** under:
+Utilisez CRXDE Lite pour définir la propriété `debug` sur **true** sous :
 
 * `/conf/global/settings/cloudsettings` ou
 * `/conf/<tenant>/settings/cloudsettings`
 
 >[!NOTE]
 >
->Pour les configurations ContextHub toujours situées sous leurs chemins d’accès hérités, l’emplacement où définir le `debug property` est est `/libs/settings/cloudsettings/legacy/contexthub`.
+>Pour les configurations ContextHub toujours situées sous leurs chemins d’accès hérités, l’emplacement où définir `debug property` est `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Mode silencieux {#silent-mode}
 
@@ -264,12 +264,12 @@ Le mode silencieux supprime toutes les informations de débogage. Contrairement 
 
 Cela s’avère utile pour votre instance de publication, où vous ne souhaitez aucune information de débogage. Puisqu’il s’agit d’un paramètre global, il est activé via OSGi.
 
-1. Open the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
-1. Search for **Adobe Granite ContextHub**
-1. Click the configuration **Adobe Granite ContextHub** to edit its properties
+1. Ouvrez **Adobe Experience Manager Web Console Configuration** à l’adresse `http://<host>:<port>/system/console/configMgr`.
+1. Rechercher **Adobe Granite ContextHub**
+1. Cliquez sur la configuration **Adobe Granite ContextHub** pour modifier ses propriétés.
 1. Cochez l’option **Mode silencieux** et cliquez sur **Enregistrer**.
 
-## Récupération des configurations de ContextHub après une mise à niveau {#recovering-contexthub-configurations-after-upgrading}
+## Récupération des configurations de ContextHub après une mise à niveau  {#recovering-contexthub-configurations-after-upgrading}
 
 Lors d’une [mise à niveau vers AEM](/help/sites-deploying/upgrade.md), les configurations de ContextHub sont sauvegardées et stockées dans un emplacement sécurisé. Lors de la mise à niveau, les configurations de ContextHub par défaut sont installées et remplacent les configurations existantes. La sauvegarde est nécessaire pour conserver tous les changements ou ajouts que vous avez effectués.
 
@@ -283,9 +283,9 @@ Après une mise à niveau, la sauvegarde est stockée dans un dossier nommé `co
 `/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` ou
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
-The `yyyymmdd` portion of the node name is the date when the upgrade was performed.
+La partie `yyyymmdd` du nom du noeud est la date à laquelle la mise à niveau a été effectuée.
 
-To recover your ContextHub configurations, use CRXDE Lite to copy the nodes that represent your stores, UI modes, and UI modules from below the `default-pre-upgrade_yyyymmdd_xxxxxx` node to below:
+Pour récupérer vos configurations ContextHub, utilisez le CRXDE Lite pour copier les noeuds qui représentent vos magasins, modes d’interface utilisateur et modules d’interface utilisateur de sous le noeud `default-pre-upgrade_yyyymmdd_xxxxxx` vers le bas :
 
 * `/conf/global/settings/cloudsettings` ou
 * `/conf/<tenant>/settings/cloudsettings`
