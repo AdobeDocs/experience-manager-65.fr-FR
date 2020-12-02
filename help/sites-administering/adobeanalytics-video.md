@@ -39,9 +39,9 @@ Appliquez la procédure ci-dessous pour configurer une structure pour le suivi d
 
 1. Configurez une page web en faisant glisser un **composant vidéo** à partir du sidekick et en ajoutant une **vidéo comme ressource** lisible pour le composant.
 
-1. [Créez une configuration et une structure](/help/sites-administering/adobeanalytics.md)Adobe Analytics.
+1. [Créez une configuration et une structure](/help/sites-administering/adobeanalytics.md) Adobe Analytics.
 
-   * The examples in the sections that follow use the name **my-sc-configuration** for the configuration and **videofw** for the framework.
+   * Les exemples des sections suivantes utilisent le nom **my-sc-configuration** pour la configuration et **videofw** pour la structure.
 
 1. Sur la page de structure, sélectionnez un RSID et définissez l’utilisation sur tous. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. Dans la catégorie Général du sidekick, faites glisser le composant vidéo dans la structure.
@@ -82,7 +82,7 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>Les variables mises en correspondance contiennent le nom convivial <strong>(</strong> Titre<strong></strong>) de la vidéo si elles sont définies dans le DAM ; si cette option n’est pas définie, le nom <strong>de</strong> fichier de la vidéo est envoyé à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.</td>
+   <td>Les variables mappées à cet élément contiendront le <strong>nom convivial</strong> (<strong>Titre</strong>) de la vidéo si défini dans le DAM ; si cette option n’est pas définie, le <strong>nom de fichier</strong> de la vidéo sera envoyé à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -106,15 +106,15 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>Envoyé lorsque la lecture de la vidéo est terminée<br /> </td>
+   <td>Envoyé lorsque la lecture de la vidéo est terminée <br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
-   <td>Envoyé lorsque le jalon donné est franchi, X correspond à la seconde où le jalon est déclenché.<br /> </td>
+   <td>Envoyé lorsque le jalon donné est franchi, X correspond à la seconde où le jalon est déclenché à <br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Envoyé à chaque jalon ; apparaît sous la forme pev3 dans l’appel Adobe Analytics, généralement envoyé sous la forme "vidéo".<br /> </td>
+   <td>Envoyé à chaque jalon ; apparaît sous la forme pev3 dans l’appel Adobe Analytics, généralement envoyé sous la forme "video"<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -129,7 +129,7 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
 
 >[!NOTE]
 >
->You can set a video&#39;s **user-friendly** name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name.
+>Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour modification dans la gestion des actifs numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix.
 
 1. Après avoir sélectionné les jalons comme méthode de suivi, dans la boîte de dialogue des décalages de suivi, saisissez une liste de décalages de suivi, exprimés en secondes, séparés par des virgules. Par exemple, la valeur ci-dessous définit des jalons 4, 8, 16, 20 et 28 secondes après le début de la vidéo :
 
@@ -141,10 +141,10 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
 
 1. Pour mapper les variables CQ aux propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics depuis ContentFinder en regard de la variable CQ sur le composant.
 
-   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   Pour plus d’informations sur l’optimisation des mappages, voir le guide [Mesure vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
-1. [Ajoutez la structure](/help/sites-administering/adobeanalytics.md) à la page.
-1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
+1. [Ajoutez le ](/help/sites-administering/adobeanalytics.md) cadre sur la page.
+1. Pour tester la configuration en **mode de Prévisualisation**, lisez la vidéo pour obtenir les appels Adobe Analytics à déclencher.
 
 Les exemples de données de suivi Adobe Analytics qui suivent s’appliquent au suivi par jalon à l’aide de décalages de suivi de 4,8,16,20 et 24, et les mappages suivants pour les variables CQ :
 
@@ -180,7 +180,7 @@ Les exemples de données de suivi Adobe Analytics qui suivent s’appliquent au 
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>event4<br /> </td>
+   <td>événement4<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestone4</td>
@@ -229,7 +229,7 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent ressembl
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Il s’agit du **premier appel**effectué à Adobe Analytics contenant les valeurs suivantes :*
+*Il s’agit du **premier**appel envoyé à Adobe Analytics contenant les valeurs suivantes :*
 
 * *prop1 et eVar1 pour eventdata.a.media.name,*
 * *props2-4, avec eVar2 et eVar3 contenant contentType (vidéo) et segment (1:O:1-4)*
@@ -250,7 +250,7 @@ Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent ressembl
 La méthode Jalons non hérités est similaire à la méthode Jalons, excepté que les jalons sont définis à l’aide de pourcentages de la durée du suivi. Les points communs sont les suivants :
 
 * Lorsqu’une lecture vidéo franchit un jalon, la page appelle Adobe Analytics pour effectuer le suivi du événement.
-* The [static set of CQ variables](#cqvars) that are defined for mapping with Adobe Analytics properties.
+* Ensemble [statique de variables CQ](#cqvars) définies pour le mappage avec les propriétés Adobe Analytics.
 * Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
 
 Le format du nom de ces variables CQ est le suivant :
@@ -276,10 +276,10 @@ eventdata.events.milestoneXX
 
 1. Pour mapper les variables CQ aux propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics depuis ContentFinder en regard de la variable CQ sur le composant.
 
-   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   Pour plus d’informations sur l’optimisation des mappages, voir le guide [Mesure vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html).
 
-1. [Ajoutez la structure](/help/sites-administering/adobeanalytics.md) à la page.
-1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
+1. [Ajoutez le ](/help/sites-administering/adobeanalytics.md) cadre sur la page.
+1. Pour tester la configuration en **mode de Prévisualisation**, lisez la vidéo pour obtenir les appels Adobe Analytics à déclencher.
 
 ## Jalons hérités {#legacy-milestones}
 
@@ -299,7 +299,7 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Les variables mises en correspondance contiennent le nom convivial <strong>(</strong> Titre<strong></strong>) de la vidéo si elles sont définies dans le DAM ; si le titre n’est pas défini, le nom <strong>de</strong> fichier de la vidéo est envoyé à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
+   <td>Les variables mappées à cet élément contiendront le <strong>nom convivial</strong> (<strong>Titre</strong>) de la vidéo si défini dans le DAM ; si le titre n’est pas défini, le <strong>nom de fichier</strong> de la vidéo est envoyé à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -314,31 +314,31 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
 
 >[!NOTE]
 >
->You can set a video&#39;s **user-friendly** name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
+>Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour modification dans la gestion des actifs numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
 
 1. Mappez ces variables aux variables props 1 à 3.
 
-   The **rest of the relevant information** in the call will be sent concatenated into **one** variable named **pev3**.
+   Le **reste des informations pertinentes** dans l&#39;appel sera envoyé concaténé dans **une** variable nommée **pev3**.
 
-   **Les exemples d’appels** vers Adobe Analytics à l’aide de l’exemple fourni doivent ressembler à celui-ci lors de l’affichage avec le débogueur DigitalPulse :
+   **Les exemples d’** appels vers Adobe Analytics utilisant l’exemple fourni doivent ressembler à celui-ci lors de l’affichage avec le débogueur DigitalPulse :
 
    ![lmilestones1](assets/lmilestones1.png)
 
    *La variable **pev3**envoyée dans l’appel contient les informations suivantes :*
 
-   * *Nom* - Nom du fichier vidéo (*film.avi*)
+   * *Nom*  : nom du fichier vidéo (*film.avi*)
 
-   * *Longueur* - Durée du fichier vidéo, en secondes (*100*)
+   * *Longueur*  : longueur du fichier vidéo, en secondes (*100*)
 
-   * *Nom* du lecteur : lecteur vidéo utilisé pour lire le fichier vidéo (vidéo ** HTML5)
+   * *Nom*  du lecteur : lecteur vidéo utilisé pour lire le fichier vidéo (vidéo ** HTML5)
 
-   * *Total des secondes de lecture* : nombre total de secondes de lecture de la vidéo (*25*)
+   * *Total des secondes de lecture*  : nombre total de secondes de lecture de la vidéo (*25*)
 
-   * *Horodatage* début - Horodatage qui identifie le moment où la lecture de la vidéo a commencé (*1331035567*)
+   * *Horodatage*  début - Horodatage qui identifie le moment où la lecture de la vidéo a commencé (*1331035567*)
 
-   * *Play Session* - Détails de la session de lecture. Ce champ indique comment l’utilisateur a interagi avec la vidéo. This might include data such as where they started playing the video, whether they used the video slider to advance the video, and where they stopped playing the video (*L10E24S58L58 - video was stopped at sec. 25 de la section L10, puis avance rapide jusqu’à la seconde 48*)
+   * *Session*  de lecture : détails de la session de lecture. Ce champ indique comment l’utilisateur a interagi avec la vidéo. Cela peut inclure des données telles que l&#39;endroit où ils ont commencé à lire la vidéo, s&#39;ils ont utilisé la réglette de la vidéo pour faire avancer la vidéo, et l&#39;endroit où ils ont arrêté de lire la vidéo (*L10E24S58L58 - la vidéo a été arrêtée à la seconde. 25 de la section L10, puis avance rapide jusqu’à la seconde 48*)
 
-## Secondes héritées {#legacy-seconds}
+## Secondes héritées  {#legacy-seconds}
 
 Lors de l’utilisation de la méthode** legacy seconds**, les appels Adobe Analytics sont déclenchés toutes les N-e secondes, où N est spécifié dans le champ de décalage de suivi.
 
@@ -355,7 +355,7 @@ Lors de l’utilisation de la méthode** legacy seconds**, les appels Adobe Anal
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Les variables mises en correspondance contiennent le nom convivial <strong>(</strong> Titre<strong></strong>) de la vidéo si elles sont définies dans le DAM ; si le titre n’est pas défini, le nom <strong>de</strong> fichier de la vidéo est envoyé à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
+   <td>Les variables mappées à cet élément contiendront le <strong>nom convivial</strong> (<strong>Titre</strong>) de la vidéo si défini dans le DAM ; si le titre n’est pas défini, le <strong>nom de fichier</strong> de la vidéo est envoyé à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -370,7 +370,7 @@ Lors de l’utilisation de la méthode** legacy seconds**, les appels Adobe Anal
 
 >[!NOTE]
 >
->You can set a video&#39;s **user-friendly** name by opening the video for editing in the DAM, and setting the **Title** metadata field to the desired name. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
+>Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour modification dans la gestion des actifs numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
 
 1. Mappez ces variables à prop1, prop2 et prop3.
 
