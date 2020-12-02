@@ -24,7 +24,7 @@ La fonction d’absence du bureau permet aux utilisateurs ou aux administrateurs
 
 Lors de la création d’un processus, l’utilisateur de Workbench peut spécifier si une tâche peut être redirigée en fonction de paramètres d’absence du bureau.
 
-## Affichage des informations d’absence du bureau d’un utilisateur {#view-a-user-s-out-of-office-information}
+## Affichage des informations d’absence du bureau d’un utilisateur  {#view-a-user-s-out-of-office-information}
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Absence du bureau.
 1. Dans la zone adjacente à la page Absence du bureau, vous pouvez effectuer l’une des actions suivantes :
@@ -39,14 +39,14 @@ Lors de la création d’un processus, l’utilisateur de Workbench peut spécif
 
 1. Cliquez sur le nom d’un utilisateur pour afficher ses informations d’absence du bureau au-dessous de la liste des utilisateurs.
 
-## Modification de l’état d’absence du bureau d’un utilisateur {#change-a-user-s-out-of-office-status}
+## Modification de l’état d’absence du bureau d’un utilisateur  {#change-a-user-s-out-of-office-status}
 
 1. Recherchez l’utilisateur, comme indiqué dans [Affichage des informations d’absence du bureau d’un utilisateur](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Cliquez sur le nom de l’utilisateur voulu.
 1. Dans la liste *Nom d’utilisateur* est actuellement, sélectionnez Au bureau ou Absence du bureau.
 1. Cliquez sur Enregistrer.
 
-## Ajout d’une plage de dates d’absence du bureau d’un utilisateur {#add-an-out-of-office-date-range-for-a-user}
+## Ajout d’une plage de dates d’absence du bureau d’un utilisateur  {#add-an-out-of-office-date-range-for-a-user}
 
 1. Recherchez l’utilisateur, comme indiqué dans [Affichage des informations d’absence du bureau d’un utilisateur](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Cliquez sur le nom de l’utilisateur voulu.
@@ -54,7 +54,7 @@ Lors de la création d’un processus, l’utilisateur de Workbench peut spécif
 1. Saisissez une heure de début et une heure de fin. Vous pouvez cliquer sur l’icône du calendrier pour sélectionner une date. Si vous ne spécifiez pas d’heure de fin, l’utilisateur est considéré comme étant indéfiniment absent du bureau.
 1. Cliquez sur Enregistrer.
 
-## Affectation d’un utilisateur aux tâches d’absence du bureau {#assign-a-user-for-out-of-office-tasks}
+## Affectation d’un utilisateur aux tâches d’absence du bureau  {#assign-a-user-for-out-of-office-tasks}
 
 Vous pouvez affecter l’exécution des tâches d’un utilisateur absent du bureau à un ou plusieurs autres utilisateurs. Vous pouvez définir les configurations suivantes :
 
