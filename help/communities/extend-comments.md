@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Étendre le composant Commentaires  {#extend-comments-component}
+# Étendre le composant Commentaires {#extend-comments-component}
 
-L’intention d’ [étendre](client-customize.md#extensions) un composant par défaut est de modifier l’aspect ou le comportement d’un composant pour des utilisations spécifiques.
+[extension](client-customize.md#extensions) d&#39;un composant par défaut a pour but de modifier l&#39;apparence ou le comportement d&#39;un composant pour des utilisations spécifiques.
 
 Le chemin d&#39;accès au composant est unique et référence le composant par défaut comme un type de super-ressource. Il y a moins de risques, car la portée est limitée par rapport à la portée globale d’une incrustation de composant.
 
@@ -34,7 +34,7 @@ Supposons que l’en-tête du composant de commentaire s’affiche avec un autre
 
 Pour mettre en oeuvre cette solution, créez un nouveau composant qui étend (remplace) le composant existant et modifiez le script Handlebars. La zone du site qui utilise les nouveaux commentaires peut utiliser le commentaire étendu, tandis que les sites qui utilisent l&#39;apparence par défaut restent inchangés.
 
-Le composant de commentaire est en fait l&#39;un des deux composants qui composent le système de commentaires. Il y a donc deux composantes à étendre : *commentaires* et *commentaires*. Le script à modifier se trouve dans le *fichier du composant de* commentaire `header.hbs` , tandis que le composant de commentaires ** parent (le système de commentaires) est ce qu’un auteur ajoute effectivement à la page.
+Le composant de commentaire est en fait l&#39;un des deux composants qui composent le système de commentaires. Il y a donc deux composantes à étendre : *commentaires* et *commentaire*. Le script à modifier se trouve dans le fichier `header.hbs` du composant *comment*, tandis que le composant parent *commentaires* (le système de commentaires) est ce qu’un auteur ajoute à la page.
 
 Pour ajouter des commentaires, vous devez :
 
