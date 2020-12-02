@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Le package `com.adobe.cq.social.ugcbase.SocialUtils` a été abandonné dans AEM 6.1.
 
-Les tableaux suivants liste les méthodes à utiliser à la place des `SocialUtils` méthodes.
+Les tableaux suivants liste les méthodes à utiliser à la place des méthodes `SocialUtils`.
 
-## Package SocialResourceUtilities  {#socialresourceutilities-package}
+## Package SocialResourceUtilities {#socialresourceutilities-package}
 
 | Méthodes de com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -44,13 +44,13 @@ Les tableaux suivants liste les méthodes à utiliser à la place des `SocialUti
 | String UGCToResourcePath(String ugcPath) | signature de méthode modifiée |
 | Chaîne UGCToResourcePath(chaîne ugcPath, résolveur ResourceResolver) | new |
 
-| Méthodes dans `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
+| Méthodes de `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
 | SocialResourceProvider getSocialResourceProvider(Ressource de ressource) | Remplace SocialResourceProvider getConficonfiguredProvider(Ressource de ressource) |
 
 ## Package SCFUtilities {#scfutilities-package}
 
-| Méthodes dans `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
+| Méthodes de `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
 | String getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, int size) |
@@ -60,7 +60,7 @@ Les tableaux suivants liste les méthodes à utiliser à la place des `SocialUti
 | Chaîne getSocialProfileURL(nom d’utilisateur de chaîne, résolveur ResourceResolver, page) |
 | UserProperties getUserProperties(ResourceResolver resolver, String userId) |
 
-## For Internal Use Only {#for-internal-use-only}
+## Pour un usage interne uniquement {#for-internal-use-only}
 
 | booléen canAddNode(session, chemin d’accès de chaîne) |
 |---|
@@ -79,7 +79,7 @@ Les tableaux suivants liste les méthodes à utiliser à la place des `SocialUti
 | booléen mayPost(résolveur ResourceResolver, ressource Resource) |
 | String prepareUserGeneratedContent(ResourceResolver resolver, chemin d&#39;accès de chaîne) |
 
-## Les méthodes ne sont plus disponibles {#methods-no-longer-available}
+## Méthodes indisponibles {#methods-no-longer-available}
 
 | Node createNode(ResourceResolver resolver, String path, String nodeType) |
 |---|
