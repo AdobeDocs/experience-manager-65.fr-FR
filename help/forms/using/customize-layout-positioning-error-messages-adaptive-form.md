@@ -27,16 +27,16 @@ Vous pouvez personnaliser la disposition et la position des messages d’erreur 
 * Personnalisation du contenu d’un indicateur d’aide dynamique
 * Personnaliser la position des composants de champ (légende, widget, brève description, longue description et composants d’indicateur d’aide) sans apporter de modifications aux propriétés CSS correspondantes
 
-## Personnalisation de la disposition des champs {#customize-layout-of-fields}
+## Personnalisation de la disposition des champs  {#customize-layout-of-fields}
 
 Vous pouvez personnaliser la disposition d’un champ spécifique ou de tous les champs pour modifier la position de la légende et des messages d’erreur. Effectuez les étapes suivantes pour appliquer une disposition personnalisée à un champ :
 
-### Personnalisation de la disposition d’un champ spécifique {#customize-layout-of-a-single-field}
+### Personnalisation de la disposition d’un champ spécifique  {#customize-layout-of-a-single-field}
 
 Effectuez les étapes suivantes pour appliquer une disposition personnalisée à un champ spécifique :
 
-1. Ouvrez le formulaire en mode **Style**. To open the form in style mode, in the page toolbar tap ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. In the sidebar, under **Form Objects**, select the field and tap the edit button ![edit-button](assets/edit-button.png).
+1. Ouvrez le formulaire en mode **Style**. Pour ouvrir le formulaire en mode style, dans la barre d’outils de la page, appuyez sur ![liste déroulante de trame](assets/canvas-drop-down.png) > **Style**.
+1. Dans la barre latérale, sous **Objets de formulaire**, sélectionnez le champ et appuyez sur le bouton Modifier ![bouton-modifier](assets/edit-button.png).
 1. Sélectionnez l’état du champ que vous souhaitez personnaliser, puis spécifiez le style de cet état.
 
    ![Spécification du style intégré d’un champ](assets/edit-error-state.png)
@@ -48,12 +48,12 @@ Avec AEM Forms, vous pouvez désormais créer un thème et l’appliquer à votr
 Créez un thème à l’aide de l’éditeur de thèmes pour personnaliser la mise en forme de tous les champs du formulaire. Après avoir créé un thème, effectuez les étapes suivantes pour l’appliquer à un formulaire :
 
 1. Ouvrez votre formulaire en mode d’édition.
-1. In the edit mode, select a component, then tap ![field-level](assets/field-level.png) > **Adaptive Form Container**, and then tap ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis appuyez sur ![niveau champ](assets/field-level.png) > **Conteneur de formulaire adaptatif**, puis sur ![cmppr](assets/cmppr.png).
 1. Dans la barre latérale, sous Thème de formulaire adaptatif, sélectionnez le thème que vous avez créé à l’aide de l’éditeur de thèmes.
 
-## Création d’une disposition de champ personnalisée {#create-a-custom-field-layout}
+## Création d’une disposition de champ personnalisée  {#create-a-custom-field-layout}
 
-1. Ouvrez CRXDE Lite. The default URL is https://&#39;[server]:[port]&#39;/crx/de.
+1. Ouvrez CRXDE Lite. L’URL par défaut est https://&#39;[server]:[port]&#39;/crx/de.
 1. Copiez une disposition de champ du nœud /libs/fd/af/layouts/field (par exemple, defaultFieldLayout) vers le nœud /apps (par exemple, /apps/af-field-layout).
 1. Renommez le nœud copié et le fichier defaultFieldLayout.jsp. Par exemple, errorOnRight.jsp.
 
