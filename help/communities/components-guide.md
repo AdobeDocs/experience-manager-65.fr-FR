@@ -20,11 +20,11 @@ ht-degree: 3%
 
 # Guide de composants de communauté  {#community-components-guide}
 
-Le guide des composants communautaires est un outil de développement interactif pour le cadre des composants [sociaux (SCF)](scf.md). Il fournit une liste des composants AEM Communities disponibles ou des fonctionnalités plus complexes construites à partir de plusieurs composants.
+Le guide Composants communautaires est un outil de développement interactif pour le [cadre de composants sociaux (SCF)](scf.md). Il fournit une liste des composants AEM Communities disponibles ou des fonctionnalités plus complexes construites à partir de plusieurs composants.
 
 En plus des informations de base pour chaque composant, le guide permet d&#39;expérimenter comment fonctionnent les composants/fonctionnalités SCF et comment ils peuvent être configurés ou personnalisés.
 
-Pour plus d&#39;informations sur les fondamentaux de développement liés à chaque composant, consultez [Fonctionnalités et composants essentiels](essentials.md).
+Pour plus d&#39;informations sur les fondamentaux de développement relatifs à chaque composant, voir [Caractéristiques et composants essentiels](essentials.md).
 
 ## Prise en main {#getting-started}
 
@@ -32,7 +32,7 @@ Ce guide est destiné aux installations de développement des instances d’aute
 
 Le site Composants de la communauté est accessible en accédant à
 
-* [https://&lt;serveur>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
+* [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
 Les interactions avec les composantes Communautés varient selon :
 
@@ -41,15 +41,15 @@ Les interactions avec les composantes Communautés varient selon :
 * S&#39;il est connecté, les privilèges affectés au membre.
 * Indique si le SRP par défaut, [JSRP](jsrp.md), est utilisé ou non.
 
-Sur l’auteur, pour passer en mode d’édition, insérez soit `editor.html` , soit `cf#` comme premier segment de chemin après le nom du serveur :
+Sur l’auteur, pour passer en mode d’édition, insérez `editor.html` ou `cf#` comme premier segment de chemin après le nom du serveur :
 
 * Interface utilisateur standard:
 
-   [https://&lt;serveur>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * IU classique :
 
-   [https://&lt;serveur>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -59,9 +59,9 @@ Sur l’auteur, pour passer en mode d’édition, insérez soit `editor.html` , 
 >
 >La page du composant s’affichant dans le navigateur, revenez en mode d’édition afin d’ouvrir la boîte de dialogue de modification du composant.
 >
->For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
+>Pour obtenir des informations générales sur la création, vue le [guide rapide de création de pages](../../help/sites-authoring/qg-page-authoring.md).
 >
->If not familiar with AEM, view the documentation on [basic handling](../../help/sites-authoring/basic-handling.md).
+>Si l’AEM n’est pas familière, vue la documentation sur la [gestion de base](../../help/sites-authoring/basic-handling.md).
 
 ### Page d’accueil {#home-page}
 
@@ -80,8 +80,8 @@ Sélectionnez un composant dans la liste située le long du côté gauche de la 
 Le corps principal du guide s’affiche :
 
 1. Titre : Nom du composant sélectionné
-1. [Bibliothèques](#client-side-libraries)côté client : Liste d’une ou de plusieurs catégories obligatoires
-1. [Inclus](scf.md#add-or-include-a-communities-component): Si le composant peut être inclus dynamiquement, l’état peut être basculé en mode d’édition de l’auteur :
+1. [Bibliothèques](#client-side-libraries) côté client : Liste d’une ou de plusieurs catégories obligatoires
+1. [Inclus](scf.md#add-or-include-a-communities-component) : Si le composant peut être inclus dynamiquement, l’état peut être basculé en mode d’édition de l’auteur :
 
    * S’il est ajouté, le texte affiché est le suivant : &quot;Ce composant est inclus via son noeud par.&quot;
    * Si inclus, le texte affiché est : &quot;Ce composant est inclus dynamiquement.&quot;
@@ -95,13 +95,13 @@ Le corps principal du guide s’affiche :
 
 ### Interactions de l’auteur {#author-interactions}
 
-Lors de l’utilisation du guide sur une instance d’auteur, il est possible de configurer un composant en ouvrant sa boîte de dialogue. Les informations destinées aux développeurs sont fournies dans la section [Composant et caractéristiques essentielles](essentials.md) de la documentation, tandis que les paramètres des boîtes de dialogue sont décrits dans la section Composants [](author-communities.md) communautés pour les auteurs.
+Lors de l’utilisation du guide sur une instance d’auteur, il est possible de configurer un composant en ouvrant sa boîte de dialogue. Les informations pour les développeurs sont fournies dans la section [Composants et caractéristiques essentielles](essentials.md) de la documentation, tandis que les paramètres de la boîte de dialogue sont décrits dans la section [Composants des communautés](author-communities.md) pour les auteurs.
 
-Pour le guide Composants de la communauté, certains paramètres de la boîte de dialogue des composants sont superposés avec l’état de bascule [Inclusible](scf.md#add-or-include-a-communities-component) . Pour basculer entre l&#39;utilisation de la ressource existante ou d&#39;une ressource incluse de manière dynamique, en mode d&#39;édition, sélectionnez le composant et le texte inclus et cliquez sur le doublon pour ouvrir la boîte de dialogue d&#39;édition :
+Pour le guide des composants de la communauté, certains paramètres de la boîte de dialogue des composants sont superposés avec l’état de bascule [Incluable](scf.md#add-or-include-a-communities-component). Pour basculer entre l&#39;utilisation de la ressource existante ou d&#39;une ressource incluse de manière dynamique, en mode d&#39;édition, sélectionnez le composant et le texte inclus et cliquez sur le doublon pour ouvrir la boîte de dialogue d&#39;édition :
 
 ![community-component3](assets/community-component3.png)
 
-Sous l’onglet **Modèles** :
+Sous l&#39;onglet **Modèles** :
 
 ![community-component4](assets/community-component4.png)
 
@@ -123,19 +123,19 @@ Lors de l’utilisation du guide sur une instance de publication, il est possibl
 
 >[!NOTE]
 >
->Notez que si le SRP est laissé par défaut à [JSRP](jsrp.md), l’UGC saisi sur l’instance de publication n’est visible que lors de la publication et *ne sera pas* visible à partir de la console de [modération](moderate-ugc.md) sur l’instance d’auteur.
+>Gardez à l’esprit que si le SRP est laissé par défaut à [JSRP](jsrp.md), l’UGC saisi sur l’instance de publication n’est visible que lors de la publication et *n’est pas* visible depuis la console [modération](moderate-ugc.md) de l’instance d’auteur.
 
 ## Bibliothèques côté client {#client-side-libraries}
 
-Les bibliothèques côté client (clientlibs) répertoriées pour chaque composant sont celles *requises* pour être référencées lorsque le composant est placé sur une page. Les clientlibs offrent un moyen de gérer et d’optimiser le téléchargement du code JavaScript et du code CSS utilisés pour rendre le composant dans le navigateur.
+Les bibliothèques côté client (clientlibs) répertoriées pour chaque composant sont celles *requises* à référencer lorsque le composant est placé sur une page. Les clientlibs offrent un moyen de gérer et d’optimiser le téléchargement du code JavaScript et du code CSS utilisés pour rendre le composant dans le navigateur.
 
-Pour plus d’informations, consultez [Clientlibs for Communities Components](clientlibs.md)(en anglais).
+Pour plus d&#39;informations, consultez [Clientlibs for Communities Components](clientlibs.md).
 
 ## Emprunt d’identité {#impersonation}
 
-Sur l’instance d’auteur, où un utilisateur est souvent connecté en tant qu’administrateur ou développeur, pour expérimenter le composant connecté en tant qu’autre utilisateur, utilisez la zone de texte à gauche du bouton **[!UICONTROL d’emprunt d’identité]** pour saisir le nom d’utilisateur ou sélectionnez-le dans la liste déroulante, puis cliquez sur le bouton. Cliquez sur Rétablir pour vous déconnecter et terminer l’emprunt d’identité.
+Sur l’instance d’auteur, où un utilisateur est souvent connecté en tant qu’administrateur ou développeur, pour expérimenter le composant connecté en tant qu’autre utilisateur, utilisez la zone de texte située à gauche du bouton **[!UICONTROL Impersonate]** pour saisir le nom d’utilisateur ou sélectionnez dans la liste déroulante, puis cliquez sur le bouton. Cliquez sur Rétablir pour vous déconnecter et terminer l’emprunt d’identité.
 
-L’instance de publication n’a pas besoin de s’emprunt d’identité. Il vous suffit d’utiliser le lien Connexion/Déconnexion pour vous faire passer pour des utilisateurs différents, tels que les utilisateurs [de la](tutorials.md#demo-users)démonstration.
+L’instance de publication n’a pas besoin de s’emprunt d’identité. Il vous suffit d’utiliser le lien Connexion/Déconnexion pour vous faire passer pour différents utilisateurs, tels que les [utilisateurs de démonstration](tutorials.md#demo-users).
 
 ## Personnalisation {#customization}
 
@@ -147,15 +147,15 @@ Une fois activé, chaque composant SCF est disponible pour le prototypage d’é
 >
 >**Cet outil est en lecture seule**. Aucune des modifications apportées aux modèles, CSS ou données n’est enregistrée dans le référentiel.
 
-Pour tester rapidement les personnalisations, la `scg:showIde`propriété doit être ajoutée au noeud JCR de contenu de la page de composant et définie sur true.
+Pour tester rapidement les personnalisations, la propriété `scg:showIde`doit être ajoutée au noeud JCR de contenu de la page de composant et définie sur true.
 
 Utilisation du composant de commentaires comme exemple, sur l’instance d’auteur ou de publication, connecté avec des droits d’administrateur :
 
-1. Accéder au [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Accédez à [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   For example, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
+   Par exemple, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. Sélectionner le `jcr:content` noeud du composant
+1. Sélectionnez le noeud `jcr:content` du composant.
 
    Par exemple, `/content/community-components/en/comments/jcr:content`
 
@@ -165,7 +165,7 @@ Utilisation du composant de commentaires comme exemple, sur l’instance d’aut
    * **Type** `String`
    * **Valeur** `true`
 
-1. Select **[!UICONTROL Save All]**
+1. Sélectionner **[!UICONTROL Enregistrer tout]**
 1. Rechargement de la page Commentaires dans le guide
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
