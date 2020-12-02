@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Les processus de longue durée stockent des données de processus dans la base de données AEM Forms. La croissance de la base de données AEM forms peut être minimisée grâce à quelques stratégies simples de configuration de produit et de conception de processus.
 
-## Conseils pour la conception de processus {#process-design-tips}
+## Conseils pour la conception de processus  {#process-design-tips}
 
 Dans la mesure du possible, utilisez des processus de longue durée. Les processus de courte durée ne stockent pas de données le concernant dans la base de données. L’inconvénient des processus de courte durée réside dans le fait que leur statut et leur état ne font pas l’objet d’un suivi dans Administration Console et que le système ne stocke aucun historique.
 
@@ -32,7 +32,7 @@ Utilisez les variables avec parcimonie. Si vous exploitez des processus de longu
 
 Préférez les types de variable simples (par exemple, string ou int) aux types de variable complexes. La base de données alloue un espace aux variables même lorsque celles-ci ne contiennent aucune valeur. En général, les variables complexes requièrent davantage d’espace que les variables simples.
 
-## Conseils pour l’administration du produit {#product-administration-tips}
+## Conseils pour l’administration du produit  {#product-administration-tips}
 
 Utilisez efficacement le stockage global de documents. Le répertoire de stockage global de documents sur le serveur Forms permet de stocker, entre autres, les fichiers qui sont transmis aux services AEM Forms dans les processus. Pour améliorer les performances, les documents plus petits sont stockés en mémoire et conservés dans la base de données.
 
