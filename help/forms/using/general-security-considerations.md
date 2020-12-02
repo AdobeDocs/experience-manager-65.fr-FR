@@ -28,7 +28,7 @@ Cette section contient des informations sur la sécurité des systèmes d’expl
 
 Utilisez les liens proposés dans cette section pour accéder à des informations de sécurité spécifiques au revendeur de votre système d’exploitation, de votre base de données et de votre serveur d’applications.
 
-### Informations sur la sécurité des systèmes d’exploitation {#operating-system-security-information}
+### Informations sur la sécurité des systèmes d’exploitation  {#operating-system-security-information}
 
 Lorsque vous sécurisez votre système d&#39;exploitation, réfléchissez soigneusement à la mise en oeuvre des mesures décrites par le fournisseur de votre système d&#39;exploitation, notamment :
 
@@ -98,7 +98,7 @@ Pour plus de détails sur la sécurité des serveurs d’applications pris en ch
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Search for Understanding WebLogic Security at <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Recherchez Understanding WebLogic Security à l’adresse <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM WebSphere®</p> </td>
@@ -212,13 +212,13 @@ Le serveur d’applications JBoss utilise 8080 en tant que port HTTP par défaut
 
 1. Ouvrez le fichier suivant pour le modifier :
 
-   Installation sur serveur unique : [racine]JBoss /standalone/configuration/standalone.xml
+   Installation sur serveur unique : [racine JBoss]/standalone/configuration/standalone.xml
 
-   Installations de cluster : [racine]JBoss /domain/configuration/domain.xml
+   Installations de cluster : [racine JBoss]/domain/configuration/domain.xml
 
-1. Remplacez la valeur de l’attribut **port** de la balise **&lt;socket-binding>** par un numéro de port personnalisé. Par exemple, le code suivant utilise le port 8090 :
+1. Modifiez la valeur de l’attribut **port** de la balise **&lt;socket-binding>** en numéro de port personnalisé. Par exemple, le code suivant utilise le port 8090 :
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
 
 1. Enregistrez et fermez le fichier 
 1. Redémarrez le serveur d’applications JBoss.
@@ -227,15 +227,15 @@ Le serveur d’applications JBoss utilise 8080 en tant que port HTTP par défaut
 
 Cette section décrit certains problèmes de sécurité d’AEM Forms sur JEE que vous devez connaître.
 
-### Informations d’identification de courrier électronique non chiffrées dans la base de données {#email-credentials-not-encrypted-in-database}
+### Informations d’identification de courrier électronique non chiffrées dans la base de données  {#email-credentials-not-encrypted-in-database}
 
 Les informations d’identification stockées par les applications ne sont pas chiffrées avant d’être enregistrées dans la base de données d’AEM Forms sur JEE. Lorsque vous configurez un point de fin de service pour utiliser le courrier électronique, les informations de mot de passe utilisées pour configurer ce point de fin ne sont pas chiffrées lorsqu’elles sont enregistrées dans la base de données.
 
-### Contenu sensible pour Rights Management dans la base de données {#sensitive-content-for-rights-management-in-the-database}
+### Contenu sensible pour Rights Management dans la base de données  {#sensitive-content-for-rights-management-in-the-database}
 
 AEM Forms on JEE utilise la base de données AEM Forms on JEE pour stocker des informations de clé de document sensibles et d’autres données cryptographiques utilisées pour les documents de stratégie. Le fait de sécuriser la base de données contre les intrusions contribue à la protection de ces informations sensibles.
 
-### Mot de passe dans un formulaire en texte clair {#password-in-clear-text-format-in-adobe-ds-xml}
+### Mot de passe en clair {#password-in-clear-text-format-in-adobe-ds-xml}
 
 Le serveur d’applications utilisé pour exécuter AEM Forms sur JEE nécessite sa propre configuration pour accéder à votre base de données via une source de données configurée sur le serveur d’applications. Assurez-vous que votre serveur d’applications n’expose pas le mot de passe de votre base de données en texte clair dans son fichier de configuration de source de données.
 
