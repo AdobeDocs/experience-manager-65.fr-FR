@@ -34,7 +34,7 @@ ht-degree: 94%
 >
 La mise en œuvre actuelle de l’API HTTP AEM Assets est REST.
 
-The Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) allows developers to access content (stored in AEM) directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete).
+L’API REST Adobe Experience Manager (AEM) [Assets ](/help/assets/mac-api-assets.md) permet aux développeurs d’accéder au contenu (stocké dans AEM) directement via l’API HTTP, via des opérations CRUD (Créer, Lire, Mettre à jour, Supprimer).
 
 L’API permet d’utiliser AEM en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
@@ -98,8 +98,8 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   </tr>
   <tr>
    <td>Accès</td>
-   <td><p>Accessible directement.</p> <p>Utilise le point d’entrée <code>/api/assets </code>, mappé sur <code>/content/dam</code> (dans le référentiel).</p> <p>For example, to access:<code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> request:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>Accessible directement.</p> <p>Utilise le point d’entrée <code>/api/assets </code>, mappé sur <code>/content/dam</code> (dans le référentiel).</p> <p>Par exemple, pour accéder à la demande :<code class="code">
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> :<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
    <td><p>Doit être référencé via un composant AEM sur une page AEM.</p> <p>Utilise le sélecteur <code>.model</code> pour créer la représentation JSON.</p> <p>Voici un exemple d’URL :<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
   </tr>
   <tr>
@@ -203,7 +203,7 @@ Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) es
 
 Comme il existe plusieurs différences au sein des ressources *standard* (telles que les images ou le son), certaines règles supplémentaires s’appliquent pour les gérer.
 
-#### Représentation   {#representation}
+#### Représentation    {#representation}
 
 Les fragments de contenu :
 
@@ -212,7 +212,7 @@ Les fragments de contenu :
 
 * Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
 
-#### Modèles et fragments de contenu   {#content-models-and-content-fragments}
+#### Modèles et fragments de contenu    {#content-models-and-content-fragments}
 
 Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
 
@@ -273,7 +273,7 @@ Mode d’utilisation :
 
 Le corps doit contenir une représentation JSON de ce qui doit être mis à jour pour le fragment de contenu donné.
 
-Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs et/ou métadonnées d’un élément. It is also mandatory to provide a valid `cq:model` property for updates.
+Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs et/ou métadonnées d’un élément. Il est également obligatoire de fournir une propriété `cq:model` valide pour les mises à jour.
 
 ### Supprimer {#delete}
 
@@ -363,7 +363,7 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
    }
    ```
 
-## Référence d’API   {#api-reference}
+## Référence d’API    {#api-reference}
 
 Pour accéder aux références d’API détaillées :
 
