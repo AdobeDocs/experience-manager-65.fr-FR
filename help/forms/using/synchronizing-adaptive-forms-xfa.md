@@ -21,7 +21,7 @@ ht-degree: 83%
 
 ## Présentation {#introduction}
 
-You can create an adaptive form based on an XFA form template ( `*.XDP` file). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. For information on how to use an XFA form template for creating an adaptive form, [Create an Adaptive Form based on a template](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour la création d’un formulaire adaptatif, [Créez un formulaire adaptatif basé sur un modèle](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (comme les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 
@@ -39,7 +39,7 @@ Pour utiliser les informations fournies dans cet article, il est recommandé de 
 
 * XFA (XML Forms Architecture)
 
-To use the assets provides for the example in the article, download the sample package as explained in the next section, [Sample package](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+Pour utiliser les ressources fournies pour l’exemple de l’article, téléchargez l’exemple de package, comme expliqué dans la section suivante, [Exemple de package](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
 
 ## Exemple de module {#sample-package}
 
@@ -47,7 +47,7 @@ Cet article utilise un exemple pour montrer comment synchroniser le formulaire a
 
 Une fois le module téléchargé, vous pouvez afficher ces ressources dans l’interface utilisateur d’AEM Forms.
 
-Install the package using the package manager: `https://<server>:<port>/crx/packmgr/index.jsp`
+Installez le package à l’aide du gestionnaire de packages : `https://<server>:<port>/crx/packmgr/index.jsp`
 
 Le module contient les ressources suivantes :
 
@@ -60,7 +60,7 @@ Le module contient les ressources suivantes :
 1. Accédez à https://&lt;serveur>:&lt;port>/aem/forms.html. Entrez vos informations d’identification si nécessaire.
 1. Ouvrez le fichier sample-af-xfa pour le modifier en mode création.
 1. Dans le navigateur de contenu dans la barre latérale, sélectionnez l’onglet Objets de modèle de données. Faites glisser NumericField1 et TextField1 jusqu’au formulaire adaptatif.
-1. Change the Title of the NumericField1 from **Numeric Field** to **AF Numeric Field.**
+1. Remplacez le titre de NumericField1 de **Numeric Field** par **AF Numeric Field.**
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Après la mise à jour d’un fichier XDP, vous devez le télécharger à nouvea
 
 1. Accédez à `https://<server>:<port>/projects.html.` Entrez vos informations d’identification si vous y êtes invité.
 1. Cliquez sur l’onglet Formulaires à gauche.
-1. Téléchargez le fichier `sample-form.xdp` sur votre ordinateur local. The XDP file is downloaded as a `.zip` file, which can be extracted using any file decompression utility.
+1. Téléchargez le fichier `sample-form.xdp` sur votre ordinateur local. Le fichier XDP est téléchargé en tant que fichier `.zip`, qui peut être extrait à l’aide de n’importe quel utilitaire de décompression de fichier.
 
 1. Ouvrez le fichier `sample-form.xdp` et remplacez le titre du champ TextField1 de **Text Field** par **My Text Field**.
 
@@ -100,13 +100,13 @@ Pour l’exemple utilisé dans cet article, ouvrez le fichier `sample-xfa-af` en
 
 Toutes les propriétés qui ont été copiées du fichier XDP dans le formulaire adaptatif sont mises à jour, à l’exception des propriétés qui ont été explicitement remplacées dans le formulaire adaptatif (dans la boîte de dialogue Composant) par l’auteur. La liste des propriétés qui ont été mises à jour est disponible dans les journaux du serveur.
 
-To update the properties in the example adaptive form, click the link (labeled `"Click Here"`) in the message. Le titre de TextField1 change de **Text Field** en **My Text Field**.
+Pour mettre à jour les propriétés dans l’exemple de formulaire adaptatif, cliquez sur le lien (intitulé `"Click Here"`) dans le message. Le titre de TextField1 change de **Text Field** en **My Text Field**.
 
 ![update-property](assets/update-property.png)
 
 >[!NOTE]
 >
->The label AF Numeric Field did not get changed because you had overridden this property from the component properties dialog, as described in [Add content to adaptive forms](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
+>Le libellé AF Numeric Field n’a pas été modifié car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans [Ajouter le contenu aux formulaires adaptatifs](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
 
 ### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
@@ -124,7 +124,7 @@ Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l�
 1. Téléchargez le fichier `sample-form.xdp` dans l’interface utilisateur d’AEM Forms.
 1. Ouvrez le formulaire adaptatif `sample-xfa-af`   en vue de sa création. Le message d’erreur suivant s’affiche : Le schéma/modèle de formulaire pour le formulaire adaptatif a été mis à jour. `Click Here` pour la rebaser sur la nouvelle version.
 
-1. Click the link (labeled &quot; `Click Here`&quot;) in the message. Un message d’erreur s’affiche indiquant que le champ n’existe plus dans le fichier XDP.
+1. Cliquez sur le lien (intitulé &quot; `Click Here`&quot;) dans le message. Un message d’erreur s’affiche indiquant que le champ n’existe plus dans le fichier XDP.
 
 ![Erreur apparaissant lorsque vous supprimez un élément dans le fichier XDP](assets/no-element-xdp.png)
 
