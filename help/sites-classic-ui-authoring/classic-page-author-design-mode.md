@@ -50,7 +50,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. Cliquez sur **Modifier** dans le système Paragraphe (**Conception de par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -64,7 +64,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Configuration de la conception d’un composant {#configuring-the-design-of-a-component}
+## Configuration de la conception d’un composant  {#configuring-the-design-of-a-component}
 
 En mode de conception, vous pouvez également configurer des attributs pour les différents composants. Chaque composant possède ses propres paramètres. L’exemple suivant illustre le composant **Image** :
 
@@ -74,7 +74,7 @@ En mode de conception, vous pouvez également configurer des attributs pour les 
 
 1. Vous pouvez configurer la conception des composants.
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   Par exemple, si vous cliquez sur **Modifier** sur le composant Image (**Conception de l’image**), vous pouvez configurer les paramètres spécifiques au composant :
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
