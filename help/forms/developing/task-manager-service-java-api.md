@@ -40,7 +40,7 @@ Les opérations AEM Forms peuvent être effectuées à l’aide de l’API AEM F
 
 >[!NOTE]
 >
->Vous ne pouvez pas rechercher de tâches attribuées aux utilisateurs à l’aide de l’API du service Web. La raison en est que vous ne pouvez pas appeler la `taskList` méthode, qui est un appel de méthode nécessaire pour exécuter cette tâche.
+>Vous ne pouvez pas rechercher de tâches attribuées aux utilisateurs à l’aide de l’API du service Web. La raison en est que vous ne pouvez pas appeler la méthode `taskList`, qui est un appel de méthode nécessaire pour exécuter cette tâche.
 
 >[!NOTE]
 >
@@ -270,7 +270,7 @@ L&#39;exemple de code Java suivant verrouille une tâche qui correspond à la va
 
 ## Début rapide (mode SOAP) : Récupération des tâches affectées aux utilisateurs à l’aide de l’API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-L&#39;exemple de code Java suivant récupère toutes les tâches attribuées à un utilisateur nommé *tony blue*. Notez que cet utilisateur est spécifié dans les propriétés de connexion. Les informations sur les tâches renvoyées, telles que la valeur d’identifiant et la description, s’affichent.
+L’exemple de code Java suivant récupère toutes les tâches attribuées à un utilisateur nommé *tony blue*. Notez que cet utilisateur est spécifié dans les propriétés de connexion. Les informations sur les tâches renvoyées, telles que la valeur d’identifiant et la description, s’affichent.
 
 ```java
  /*
@@ -396,7 +396,7 @@ L&#39;exemple de code Java suivant récupère toutes les tâches attribuées à 
 
 ## Début rapide (mode SOAP) : Récupération des données de formulaire à partir de tâches à l’aide de l’API Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-L’exemple de code Java suivant récupère les données de formulaire d’une tâche dont la valeur d’identificateur est 304. Les données de formulaire sont écrites dans un fichier XML appelé *FormData.xml* situé à l’adresse C:\Adobe.
+L’exemple de code Java suivant récupère les données de formulaire d’une tâche dont la valeur d’identificateur est 304. Les données de formulaire sont écrites dans un fichier XML nommé *FormData.xml* situé à l’adresse C:\Adobe.
 
 ```java
  /*
@@ -502,7 +502,7 @@ L’exemple de code Java suivant récupère les données de formulaire d’une t
 
 ## Début rapide (mode SOAP) : Modification des données de formulaire à l’aide de l’API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-L’exemple de code Java suivant met à jour un formulaire avec des données se trouvant dans le fichier *FormData.xml* .
+L’exemple de code Java suivant met à jour un formulaire avec des données se trouvant dans le fichier *FormData.xml*.
 
 ```java
  /*
@@ -716,7 +716,7 @@ L&#39;exemple de code Java suivant récupère les pièces jointes. Chaque pièce
 
 ## Début rapide (mode SOAP) : Récupération des informations de tâche à l’aide de l’API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-L’exemple de code Java suivant récupère toutes les tâches qui sont basées sur un processus appelé *PrêtPrêtPrêtPrêtPrêtPrêtPrêt* Pré. L’état de chaque tâche renvoyée est vérifié pour s’assurer qu’elle est une tâche terminée. Des informations telles que le nom de l’utilisateur qui a terminé la tâche et la date de fin de la tâche sont récupérées et affichées.
+L’exemple de code Java suivant récupère toutes les tâches basées sur un processus nommé *PrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPrêtPré*. L’état de chaque tâche renvoyée est vérifié pour s’assurer qu’elle est une tâche terminée. Des informations telles que le nom de l’utilisateur qui a terminé la tâche et la date de fin de la tâche sont récupérées et affichées.
 
 ```java
  /*
