@@ -18,7 +18,7 @@ ht-degree: 81%
 ---
 
 
-# Architecture de l’espace de travail AEM Forms {#aem-forms-workspace-architecture}
+# Architecture de l’espace de travail AEM Forms  {#aem-forms-workspace-architecture}
 
 L’espace de travail AEM Forms est une application Web hébergée sur CRX™. Lorsque l’espace de travail est ouvert dans un navigateur, une ressource CRX est appelée et l’application est rendue en tant que page HTML dans le navigateur.
 
