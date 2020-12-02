@@ -28,7 +28,7 @@ Vous pouvez préciser les paramètres régionaux utilisés au moment de effectue
 1. Dans la liste de langues, dans l’onglet Internationalisation, sélectionnez les paramètres régionaux utilisés pour effectuer le rendu d’un formulaire. La valeur par défaut Anglais (Etats-Unis).
 1. Cliquez sur Enregistrer.
 
-## Définition du jeu de caractères utilisé pour encoder le flux de sortie {#specify-the-character-set-used-to-encode-the-output-stream}
+## Définition du jeu de caractères utilisé pour encoder le flux de sortie  {#specify-the-character-set-used-to-encode-the-output-stream}
 
 1. Sous Internationalisation, dans la liste Jeu de caractères, sélectionnez un jeu de caractères. Ce paramètre dépend de l’API utilisée, à savoir renderHTMLForm ou renderPDFForm. Pour spécifier un jeu de caractères ne figurant pas dans la liste, sélectionnez Personnalisé et spécifiez la valeur d’encodage dans la zone qui s’affiche.
 
