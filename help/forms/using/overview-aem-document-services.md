@@ -45,7 +45,7 @@ Les quatre opérations du service Output mentionnées ci-dessous sont disponible
 * **generatePrintedOutput** : fusionne une conception de formulaire avec des données pour générer un document à envoyer à une imprimante laser ou une imprimante d’étiquettes réseau.
 
 * **generatePDFOutputBatch** : Fusionne en un seul appel plusieurs modèles avec plusieurs enregistrements de données pour générer un lot de fichiers PDF. Il existe également une option pour générer un fichier PDF unique en combinant tous les fichiers PDF
-* **generatePrintedOutputBatch**: Fusionne plusieurs modèles avec plusieurs enregistrements de données dans un seul appel pour générer un lot de documents d’impression (PS, PCL, ZPL, DPL, IPL, TPCL). Il existe également une option pour générer un document d’impression unique.
+* **generatePrintedOutputBatch** : Fusionne plusieurs modèles avec plusieurs enregistrements de données dans un seul appel pour générer un lot de documents d’impression (PS, PCL, ZPL, DPL, IPL, TPCL). Il existe également une option pour générer un document d’impression unique.
 
 ## Incohérence affectant le service {#assembler-service}
 
@@ -92,7 +92,7 @@ Vous pouvez utiliser une simple mise en correspondance des entrées pour indique
 * FTP
 * HTTP/HTTPS
 
-## Service Doc Assurance {#doc-assurance-service}
+## Service Doc Assurance  {#doc-assurance-service}
 
 Le service Doc Assurance vous permet de chiffrer et de déchiffrer des documents, d’ajouter des droits d’utilisation aux fonctionnalités d’Adobe Reader ou encore d’ajouter des signatures numériques à vos documents. Vos utilisateurs peuvent facilement interagir avec les documents et formulaires PDF, tandis que votre entreprise améliore la sécurité, l’archivage et la conformité.
 
@@ -108,11 +108,11 @@ Le service Signature vous permet d’utiliser des documents et des signatures nu
 
 Le service Signature accède aux certificats et aux informations d’identification stockées dans le Trust Store.
 
-### Service Encryption {#encryption-service}
+### Service Encryption  {#encryption-service}
 
 Le service Encryption permet de chiffrer et de déchiffrer des documents. Lorsqu’un document est chiffré, son contenu devient illisible. Vous pouvez chiffrer l’intégralité d’un document PDF (contenu, métadonnées et pièces jointes), tous les éléments autres que ses métadonnées ou uniquement les pièces jointes. Un utilisateur autorisé peut déchiffrer le document pour pouvoir accéder à son contenu. Si un document PDF est chiffré avec un mot de passe, l’utilisateur doit spécifier le mot de passe d’ouverture pour pouvoir visualiser le document dans Adobe Reader ou Acrobat. Si un document PDF est chiffré avec un certificat, l’utilisateur doit déchiffrer ce document avec une clé privée (certificat). Cette clé doit correspondre à la clé publique utilisée pour le chiffrement.
 
-### Service Reader Extensions {#reader-extension-service}
+### Service Reader Extensions  {#reader-extension-service}
 
 Le service Reader Extensions permet à votre entreprise de partager facilement des documents PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service Reader Extensions fonctionne avec Adobe Reader 7.0 et versions ultérieures. Ce service ajoute des droits d’utilisation dans un document PDF. Cela active des fonctionnalités généralement indisponibles à l’ouverture d’un document PDF dans Adobe Reader, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents définis avec des droits d’utilisation.
 
@@ -129,7 +129,7 @@ Lorsque les droits d’utilisation appropriés sont ajoutés aux documents PDF, 
 
 Ces fonctions d’utilisateur spéciales sont automatiquement activées lorsqu’un utilisateur ouvre un document PDF défini avec les droits d’utilisation appropriés dans Adobe Reader. Dès que l’utilisateur a fini de travailler sur un document défini avec ces droits d’utilisation, ces fonctions sont de nouveau désactivées dans Adobe Reader, jusqu’à ce que l’utilisateur reçoive un autre document PDF doté des mêmes droits.
 
-Le service Doc Assurance ne peut pas être utilisé immédiatement. To configure the DocAssurance service, see [Installing and Configuring Configuring Document Services](../../forms/using/install-configure-document-services.md).
+Le service Doc Assurance ne peut pas être utilisé immédiatement. Pour configurer le service DocAssurance, voir [Installation et configuration de Document Services](../../forms/using/install-configure-document-services.md).
 
 ## Service SendToPrinter {#send-to-printer-service}
 
