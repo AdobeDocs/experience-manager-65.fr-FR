@@ -24,7 +24,7 @@ Les informations d’identification contiennent des données décrivant leur uti
 
 1. Ouvrez un navigateur Web, puis saisissez l’URL suivante :
 
-   http://localhost:port/ReaderExtensions (where *port* is your application server’s port number)
+   http://localhost:port/ReaderExtensions (où *port* correspond au numéro de port de votre serveur d’applications)
 
 1. Connectez-vous à l’aide du nom d’utilisateur et du mot de passe par défaut :
 
