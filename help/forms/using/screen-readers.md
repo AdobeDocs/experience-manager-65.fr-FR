@@ -17,7 +17,7 @@ ht-degree: 71%
 ---
 
 
-# Lecteurs d’écran pour les formulaires HTML5 {#screen-readers-for-html-forms}
+# Lecteurs d’écran pour les formulaires HTML5  {#screen-readers-for-html-forms}
 
 Les composants de formulaires HTML5 rendent des modèles de formulaires XFA au format HTML5. Tous les navigateurs standard supportant le format HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire entre les formulaires PDF et HTML5, la mise en page des formulaires PDF est conservée dans les formulaires au format HTML5.
 
@@ -27,18 +27,18 @@ Les formulaires HTML5 utilisent des constructions HTML standard, ce qui permet 
 
 Les formulaires HTML5 sont conformes à la section 508 concernant l’accessibilité avec des exceptions connues. Voir [VPAT pour les formulaires HTML5](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) pour obtenir des détails.
 
-## Lecteurs d’écran certifiés pour les formulaires HTML5 {#certified-screen-readers-for-html-forms}
+## Lecteurs d’écran certifiés pour les formulaires HTML5  {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 sous Microsoft Windows
 * Voix off sous Mac OS X et iPad
 
-### JAWS {#jaws}
+### JAWS  {#jaws}
 
-Toutes les combinaisons de touches et tous les raccourcis par défaut fonctionnent pour les formulaires HTML5. For more information on using JAWS, visit [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
+Toutes les combinaisons de touches et tous les raccourcis par défaut fonctionnent pour les formulaires HTML5. Pour plus d’informations sur l’utilisation de JAWS, consultez le site [https://www.freedomscientific.com/jaws-hq.asp](https://www.freedomscientific.com/jaws-hq.asp).
 
 ### Voix off {#voiceover}
 
-HTML5 prend en charge toutes les combinaisons de touches et tous les mouvements par défaut de la voix off. For more information on setting up and using VoiceOver, see [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
+HTML5 prend en charge toutes les combinaisons de touches et tous les mouvements par défaut de la voix off. Pour plus d’informations sur la configuration et l’utilisation de VoiceOver, voir [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
 
 ## Problèmes connus {#known-issues}
 
