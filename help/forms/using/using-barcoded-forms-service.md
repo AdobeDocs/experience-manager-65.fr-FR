@@ -92,7 +92,7 @@ Après le décodage des codes à barres, le service Barcoded Forms renvoie le do
 </xb:scanned_image>
 ```
 
-## Remarques sur le service {#considerations}
+## Remarques sur le service  {#considerations}
 
 ### Flux de production utilisant des formulaires à code à barres {#workflows-that-use-barcoded-forms}
 
@@ -102,13 +102,13 @@ Le service Barcoded Forms permet de convertir dans un format électronique des d
 
 Des points de fin Watched Folder sont généralement utilisés pour lancer des applications qui utilisent le service Barcoded Forms. Par exemple, les scanners de documents peuvent enregistrer les images TIFF ou PDF de formulaires à code à barres dans un dossier de contrôle. Le point de fin du dossier de contrôle transmet ces images au service, à des fins de décodage.
 
-### Formats de codage et décodage recommandés {#recommended-encoding-and-decoding-formats}
+### Formats de codage et décodage recommandés  {#recommended-encoding-and-decoding-formats}
 
 Les auteurs de formulaires à code à barres sont encouragés à utiliser un format simple et délimité (des tabulations, par exemple) lors de l’encodage des données dans les codes à barres. Évitez également d’utiliser le retour chariot comme délimiteur de champ. Designer propose une sélection de codages délimités qui génèrent automatiquement du script JavaScript pour le codage de code à barres. Les données décodées présentent les noms de champ sur la première ligne et leurs valeurs sur la seconde ligne, avec des tabulations entre chacun des champs.
 
 Lors du décodage de code à barres, vous devez indiquer le caractère utilisé pour délimiter les champs. Le caractère spécifié pour le décodage du code à barres doit être identique à celui utilisé pour son codage. Par exemple, lors de l’utilisation du format délimité par des tabulations recommandé, l’opération d’extraction vers XML doit utiliser la valeur par défaut de tabulation comme délimiteur de champ.
 
-### Jeux de caractères définis par l’utilisateur {#user-specified-character-sets}
+### Jeux de caractères définis par l’utilisateur  {#user-specified-character-sets}
 
 Lorsque les auteurs de formulaires ajoutent des objets codes à barres à leurs formulaires à l’aide de Designer, ils peuvent spécifier un codage de caractères. Les codages reconnus sont les suivants : UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16. Par défaut, toutes les données sont codées dans les codes à barres au format UTF-8.
 
@@ -133,7 +133,7 @@ En outre, le service peut décoder tout code à barres qui utilise une symbologi
 
 ## Configurer les propriétés du service   {#configureproperties}
 
-Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pour configurer les propriétés de ce service. The default URL of AEM console is `https://[host]:'port'/system/console/configMgr`.
+Vous pouvez utiliser le **service AEMFD Barcoded Forms** dans la console AEM pour configurer les propriétés de ce service. L’URL par défaut de la console AEM est `https://[host]:'port'/system/console/configMgr`.
 
 ## Utilisation du service {#using}
 
@@ -143,7 +143,7 @@ Le service Barcoded Forms fournit les deux API suivantes :
 
 * **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)** : convertissez des données décodées en données XML à l’aide de l’API de décodage. Ces données XML peuvent être fusionnées avec un formulaire XFA. Elle renvoie une liste des documents XML, un pour chaque code à barres.
 
-### Utilisation du service BCF avec un JSP ou des servlets {#using-bcf-service-with-a-jsp-or-servlets}
+### Utilisation du service BCF avec un JSP ou des servlets  {#using-bcf-service-with-a-jsp-or-servlets}
 
 L’exemple de code suivant décode un code à barres dans un document et enregistre le code XML de sortie sur le disque.
 
