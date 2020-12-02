@@ -22,11 +22,11 @@ ht-degree: 33%
 
 Le balisage permet de catégoriser et d’organiser le contenu. Les balises peuvent être classées par un espace de noms et par une taxonomie.
 
-* See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.
-* See [Using Tags](/help/sites-authoring/tags.md) for information about tagging content.
+* Voir [Administration des balises](/help/sites-administering/tags.md) pour plus d&#39;informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
+* Voir [Utilisation des balises](/help/sites-authoring/tags.md) pour plus d’informations sur le balisage du contenu.
 
 Les informations suivantes sont disponibles pour les développeurs :
 
-* [Cadre](/help/sites-developing/framework.md) de balisage AEM - Description des noeuds et des propriétés utilisés pour le balisage
+* [Cadre](/help/sites-developing/framework.md)  de balisage AEM - Description des noeuds et des propriétés utilisés pour le balisage
 
-* [Création du balisage dans une application](/help/sites-developing/building.md) AEM - Description des API qui fonctionnent avec la structure de balisage à partir du code côté client et côté serveur
+* [Création d&#39;un balisage dans une application](/help/sites-developing/building.md)  AEM - Description des API qui fonctionnent avec la structure de balisage à partir du code côté client et côté serveur
