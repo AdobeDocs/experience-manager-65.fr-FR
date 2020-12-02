@@ -1,6 +1,6 @@
 ---
-title: des applications sur une seule page ;
-seo-title: des applications sur une seule page ;
+title: Applications sur une seule page
+seo-title: Applications sur une seule page
 description: Suivez cette page pour en savoir plus sur les applications d’une seule page, c’est-à-dire que vous pouvez créer une application qui fonctionne de manière identique à une application de bureau ou mobile.
 seo-description: Suivez cette page pour en savoir plus sur les applications d’une seule page, c’est-à-dire que vous pouvez créer une application qui fonctionne de manière identique à une application de bureau ou mobile.
 uuid: d1865e79-6e7c-4149-95c0-556e61478b01
@@ -18,17 +18,17 @@ ht-degree: 3%
 ---
 
 
-# des applications sur une seule page ;{#single-page-applications}
+# Applications sur une seule page{#single-page-applications}
 
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-[Les applications](https://en.wikipedia.org/wiki/Single-page_application) à page unique (SPA) ont atteint une masse critique, largement considérée comme le modèle le plus efficace pour créer des expériences homogènes avec la technologie Web. En suivant un modèle de SPA, vous pouvez créer une application qui fonctionne de manière identique à une application de bureau ou mobile, mais qui atteint une multitude de plates-formes de périphériques et de facteurs de formulaire en raison de sa création dans les normes Web ouvertes.
+[Les applications](https://en.wikipedia.org/wiki/Single-page_application)  à page unique (SPA) ont atteint une masse critique, largement considérée comme le modèle le plus efficace pour créer des expériences homogènes avec la technologie Web. En suivant un modèle de SPA, vous pouvez créer une application qui fonctionne de manière identique à une application de bureau ou mobile, mais qui atteint une multitude de plates-formes de périphériques et de facteurs de formulaire en raison de sa création dans les normes Web ouvertes.
 
-En règle générale, SPA semblent plus performants que les sites Web traditionnels basés sur des pages, car ils chargent généralement une page HTML complète **une seule fois** (y compris CSS, JS et le contenu des polices prises en charge), puis ne chargent que ce qui est nécessaire chaque fois qu’un changement d’état se produit dans l’application. Les éléments nécessaires à ce changement d&#39;état peuvent varier en fonction de l&#39;ensemble de technologies choisi, mais incluent généralement un fragment HTML unique pour remplacer la &quot;vue&quot; existante, et l&#39;exécution d&#39;un bloc de code JS pour câbler la nouvelle vue et effectuer tout rendu de modèle côté client nécessaire. La vitesse de ce changement d’état peut être améliorée encore davantage en prenant en charge les mécanismes de mise en cache des modèles, ou même l’accès hors ligne au contenu des modèles si Adobe PhoneGap est utilisé.
+En règle générale, SPA semblent plus performants que les sites Web traditionnels basés sur des pages, car ils ne chargent généralement une page HTML complète **qu&#39;une seule fois** (y compris CSS, JS et le contenu des polices prises en charge), puis ne chargent que ce qui est nécessaire chaque fois qu&#39;un changement d&#39;état se produit dans l&#39;application. Les éléments nécessaires à ce changement d&#39;état peuvent varier en fonction de l&#39;ensemble de technologies choisi, mais incluent généralement un fragment HTML unique pour remplacer la &quot;vue&quot; existante, et l&#39;exécution d&#39;un bloc de code JS pour câbler la nouvelle vue et effectuer tout rendu de modèle côté client nécessaire. La vitesse de ce changement d’état peut être améliorée encore davantage en prenant en charge les mécanismes de mise en cache des modèles, ou même l’accès hors ligne au contenu des modèles si Adobe PhoneGap est utilisé.
 
-aem 6.1 prend en charge la création et la gestion de SPA par l&#39;intermédiaire d&#39; Apps. Cet article présente les concepts qui sous-tendent le SPA et explique comment ils utilisent [AngularJS](https://angularjs.org/) pour amener votre marque sur l’App Store et Google Play.
+aem 6.1 prend en charge la création et la gestion de SPA par l&#39;intermédiaire d&#39; Apps. Cet article présente les concepts qui sous-tendent la SPA et explique comment ils utilisent [AngularJS](https://angularjs.org/) pour amener votre marque sur l’App Store et Google Play.
 
 ## SPA dans les applications AEM {#spa-in-aem-apps}
 
@@ -58,7 +58,7 @@ Le modèle à charger lorsque cet itinéraire est demandé est spécifié par la
 
 ## Contrôleurs de page {#page-controllers}
 
-Selon les propres termes d&#39;Angular, &quot;un contrôleur est une fonction constructeur JavaScript utilisée pour augmenter l&#39;étendue angulaire.&quot; ([source](https://docs.angularjs.org/guide/controller)) Chaque page d’une application AEM est automatiquement connectée à un contrôleur qui peut être augmenté par tout contrôleur qui spécifie un `frameworkType` de `angular`. Examinez le composant ng-text comme exemple (/libs/mobileapps/components/angular/ng-text), y compris le noeud cq:template qui s&#39;assure que chaque fois que ce composant est ajouté à une page, il inclut cette propriété importante.
+Selon les propres termes d&#39;Angular, &quot;un contrôleur est une fonction constructeur JavaScript utilisée pour augmenter l&#39;étendue angulaire.&quot; ([source](https://docs.angularjs.org/guide/controller)) Chaque page d&#39;une application AEM est automatiquement connectée à un contrôleur qui peut être augmenté par tout contrôleur qui spécifie `frameworkType` de `angular`. Examinez le composant ng-text comme exemple (/libs/mobileapps/components/angular/ng-text), y compris le noeud cq:template qui s&#39;assure que chaque fois que ce composant est ajouté à une page, il inclut cette propriété importante.
 
 Pour un exemple de contrôleur plus complexe, ouvrez le script ng-template-page Controller.jsp (situé dans /apps/geometrixx-outdoors-app/components/angular/ng-template-page). Le code javascript généré lors de l’exécution est particulièrement intéressant. Il s’agit du rendu suivant :
 
@@ -83,10 +83,10 @@ Pour un exemple de contrôleur plus complexe, ouvrez le script ng-template-page 
 ])
 ```
 
-Dans l’exemple ci-dessus, vous remarquerez que nous prenons un paramètre du `$routeParams` service et le massons ensuite dans la structure de répertoires dans laquelle sont stockées nos données JSON. En traitant le sku `id` de cette manière, nous sommes en mesure de fournir un modèle de produit unique qui peut générer les données de produit pour des milliers de produits distincts. Il s&#39;agit d&#39;un modèle beaucoup plus évolutif qui nécessite un itinéraire individuel pour chaque élément d&#39;une base de données de produits (potentiellement) massive.
+Dans l’exemple ci-dessus, vous noterez que nous prenons un paramètre du service `$routeParams`, puis nous le massons dans la structure de répertoires dans laquelle sont stockées nos données JSON. En traitant le sku `id` de cette manière, nous sommes en mesure de fournir un modèle de produit unique qui peut générer les données de produit pour des milliers de produits distincts. Il s&#39;agit d&#39;un modèle beaucoup plus évolutif qui nécessite un itinéraire individuel pour chaque élément d&#39;une base de données de produits (potentiellement) massive.
 
-Il y a deux éléments à l&#39;oeuvre ici : ng-product augmente la portée avec les données qu&#39;il extrait de l&#39; `$http` appel ci-dessus. Il y a aussi une ng-image sur cette page qui à son tour augmente également la portée avec la valeur qu&#39;elle récupère de la réponse. En vertu du `$http` service d&#39;Angular, chaque composant attendra patiemment jusqu&#39;à ce que la demande soit terminée et que la promesse qu&#39;il a créée soit tenue.
+Il y a deux éléments à l&#39;oeuvre ici : ng-product augmente la portée avec les données qu&#39;il extrait de l&#39;appel `$http` ci-dessus. Il y a aussi une ng-image sur cette page qui à son tour augmente également la portée avec la valeur qu&#39;elle récupère de la réponse. En vertu du service `$http` d&#39;Angular, chaque composant attend patiemment jusqu&#39;à ce que la demande soit terminée et que la promesse qu&#39;il a créée soit tenue.
 
 ## Étapes suivantes {#the-next-steps}
 
-Une fois que vous avez pris connaissance des applications d’une seule page, voir [Développement d’applications avec l’interface de ligne de commande PhoneGap](/help/mobile/phonegap-apps-pg-cli.md).
+Une fois que vous avez pris connaissance des applications d&#39;une seule page, voir [Développement d&#39;applications avec PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md).
