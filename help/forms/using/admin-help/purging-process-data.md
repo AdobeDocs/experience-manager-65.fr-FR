@@ -24,5 +24,5 @@ Les données générées lors de l’appel d’un processus de longue durée peu
 
 * Vous pouvez utiliser Administration Console pour effectuer une purge individuelle des enregistrements obsolètes liés à des processus de longue durée ou planifier des purges automatiques régulières (voir [Purge d’enregistrements de la base de données de Job Manager](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)).
 * Vous pouvez utiliser l’API Java AEM forms et l’API du service Web pour purger automatiquement les données liées à des processus de longue durée (Consultez la section « Purge des données de processus » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
-* Utilisez l’outil approprié pour purger les processus basés sur le nom du processus et d’autres paramètres. For details, see the process purge tool readme file, located in *[aem_forms root]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt.
+* Utilisez l’outil approprié pour purger les processus basés sur le nom du processus et d’autres paramètres. Pour plus d’informations, reportez-vous au fichier lisez-moi de l’outil de purge de processus, situé dans *[racine aem_forms]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt.
 
