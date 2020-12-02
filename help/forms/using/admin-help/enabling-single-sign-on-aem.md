@@ -26,7 +26,7 @@ Lorsque la fonction SSO est implémentée, les pages d’ouverture de session ut
 
 Si AEM forms n’est pas en mesure d’authentifier un utilisateur à l’aide de l’une de ces méthodes, l’utilisateur est redirigé vers une page d’ouverture de session.
 
-## Activation de la fonction SSO à l’aide d’en-têtes HTTP {#enable-sso-using-http-headers}
+## Activation de la fonction SSO à l’aide d’en-têtes HTTP  {#enable-sso-using-http-headers}
 
 La page Configuration du portail permet d’activer l’authentification unique (SSO) entre les applications et les applications prenant en charge l’acheminement de l’identité via l’en-tête HTTP. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
 
@@ -50,11 +50,11 @@ Vous pouvez également activer la fonction SSO via SPNEGO (voir [Activation de l
 
       domain3=UMdomain3
 
-### Configuration des référents autorisés {#configure-allowed-referers}
+### Configuration des référents autorisés  {#configure-allowed-referers}
 
 Pour connaître la procédure de configuration des référents autorisés, voir [Configuration des référents autorisés](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
 
-## Activation de la fonction SSO à l’aide de SPNEGO {#enable-sso-using-spnego}
+## Activation de la fonction SSO à l’aide de SPNEGO  {#enable-sso-using-spnego}
 
 Vous pouvez recourir au mécanisme SPNEGO (Simple and Protected GSSAPI Negotiation Mechanism) pour activer l’authentification unique (SSO) lors de l’utilisation d’Active Directory sur votre serveur LDAP dans un environnement Windows. Lorsque la fonction SSO est activée, les pages de connexion d’utilisateur AEM forms ne sont pas requises et n’apparaissent pas.
 
@@ -84,7 +84,7 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 
 1. Configurez les paramètres du navigateur client SPNEGO (voir [Configuration des paramètres du navigateur client SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings)).
 
-### Création d’un compte utilisateur {#create-a-user-account}
+### Création d’un compte utilisateur  {#create-a-user-account}
 
 1. Dans SPNEGO, enregistrez un service en tant qu’utilisateur dans Active Directory sur le contrôleur de domaine pour représenter AEM forms. Dans le contrôleur de domaine, sélectionnez Démarrer > Outils d’administration > Utilisateurs et ordinateurs Active Directory. Si les Outils d’administration ne figurent pas dans le menu Démarrer, utilisez le Panneau de configuration.
 1. Cliquez sur le dossier Utilisateurs pour afficher une liste des utilisateurs.
@@ -97,12 +97,12 @@ Vous pouvez également activer la fonction SSO à l’aide d’en-têtes HTTP (v
 1. Saisissez un mot de passe. Saisissez par exemple *password*. Veillez à ce que la seule option activée soit Le mot de passe n’expire jamais.
 1. Cliquez sur Suivant, puis sur Terminer.
 
-### Mappage d’un nom principal de service (SPN) {#map-a-service-principal-name-spn}
+### Mappage d’un nom principal de service (SPN)  {#map-a-service-principal-name-spn}
 
 1. Procurez-vous l’utilitaire KtPass. Cet utilitaire sert au mappage d’un SPN sur un DOMAINE. Vous pouvez obtenir l’utilitaire KtPass dans le pack d’outils ou dans le Kit de ressources techniques de Windows Server (Voir [Outils de support de Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
 1. Dans une invite de commande, exécutez `ktpass` à l’aide des arguments suivants :
 
-   `ktpass -princ HTTP/`*hôte* `@`** REALM `-mapuser`*utilisateur*
+   `ktpass -princ HTTP/`** `@`** `-mapuser`*hostREALMuser*
 
    Par exemple, saisissez le texte suivant :
 
@@ -132,7 +132,7 @@ Essayez de spécifier l’utilisateur comme étant spnegodemo@um.lc.com :
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
-### Prévention des échecs de contrôle d’intégrité de Kerberos {#prevent-kerberos-integrity-check-failures}
+### Prévention des échecs de contrôle d’intégrité de Kerberos  {#prevent-kerberos-integrity-check-failures}
 
 1. Dans le contrôleur de domaine, sélectionnez Démarrer > Outils d’administration > Utilisateurs et ordinateurs Active Directory. Si les Outils d’administration ne figurent pas dans le menu Démarrer, utilisez le Panneau de configuration.
 1. Cliquez sur le dossier Utilisateurs pour afficher une liste des utilisateurs.
@@ -141,7 +141,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 1. Saisissez puis confirmez le mot de passe saisi précédemment. Dans notre exemple, il s’agit de `password`.
 1. Désélectionnez la case à cocher Modifier le mot de passe à la prochaine ouverture de session, puis cliquez sur OK.
 
-### Configuration des paramètres du navigateur client SPNEGO {#configuring-spnego-client-browser-settings}
+### Configuration des paramètres du navigateur client SPNEGO  {#configuring-spnego-client-browser-settings}
 
 Pour que l’authentification SPNEGO fonctionne, l’ordinateur client doit faire partie du domaine dans lequel le compte utilisateur a été créé. Vous devez également configurer le navigateur client pour autoriser l’authentification SPNEGO. De même, le site exigeant une authentification SPNEGO doit être un site de confiance.
 
@@ -153,11 +153,11 @@ Si le serveur est accessible à l’aide du nom de l’ordinateur, par exemple h
 1. Cliquez sur l’icône Intranet local, puis sur Sites.
 1. Cliquez sur Avancé et dans le champ Ajouter ce site Web à la zone, saisissez l’URL du serveur Forms. Par exemple, saisissez `https://lcserver.um.lc.com`
 1. Cliquez plusieurs fois sur OK pour fermer toutes les boîtes de dialogue.
-1. Testez la configuration en accédant à l’URL du serveur AEM forms. Par exemple, dans la zone URL du navigateur, saisissez `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Testez la configuration en accédant à l’URL du serveur AEM forms. Par exemple, dans la zone URL du navigateur, saisissez `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`.
 
 **Configuration de Mozilla Firefox**
 
-1. In the browser URL box, type `about:config`
+1. Dans la zone URL du navigateur, saisissez `about:config`.
 
    La boîte de dialogue about:config - Mozilla Firefox s’ouvre.
 
