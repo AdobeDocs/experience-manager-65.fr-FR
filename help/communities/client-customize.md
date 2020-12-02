@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Personnalisation côté client  {#client-side-customization}
+# Personnalisation côté client {#client-side-customization}
 
 | **[⇐ Fonctionnalités Essentials](essentials.md)** | **[Personnalisation côté serveur](server-customize.md)** |
 |---|---|
@@ -28,37 +28,37 @@ Pour personnaliser l’aspect et/ou le comportement d’un composant AEM Communi
 
 Deux approches principales consistent à superposer ou à étendre un composant.
 
-[Le fait de superposer](#overlays) un composant modifie le composant par défaut et affecte chaque référence au composant.
+[La ](#overlays) superposition d’un composant modifie le composant par défaut et affecte chaque référence au composant.
 
-[L’extension](#extensions) d’un composant, dont le nom est unique, limite la portée des modifications. Le terme &quot;extension&quot; est utilisé de manière interchangeable avec &quot;override&quot;.
+[L’](#extensions) extension d’un composant, dont le nom est unique, limite la portée des modifications. Le terme &quot;extension&quot; est utilisé de manière interchangeable avec &quot;override&quot;.
 
 ## Recouvrements {#overlays}
 
 Le chevauchement d’un composant est une méthode permettant d’apporter des modifications à un composant par défaut et d’affecter toutes les instances qui utilisent le composant par défaut.
 
-L&#39;incrustation s&#39;effectue en modifiant une copie du composant par défaut dans le répertoire /**apps** , plutôt que de modifier le composant d&#39;origine dans le répertoire /**libs** . Le composant est construit avec un chemin relatif identique, sauf que &#39;libs&#39; est remplacé par &#39;apps&#39;.
+L’incrustation est réalisée en modifiant une copie du composant par défaut dans le répertoire /**apps**, plutôt que de modifier le composant d’origine dans le répertoire /**libs**. Le composant est construit avec un chemin relatif identique, sauf que &#39;libs&#39; est remplacé par &#39;apps&#39;.
 
 Le répertoire /apps est le premier répertoire recherché pour résoudre les requêtes. S&#39;il n&#39;est pas trouvé, la version par défaut située dans le répertoire /libs est utilisée.
 
 Le composant par défaut du répertoire /libs ne doit jamais être modifié car les correctifs et mises à niveau futurs sont libres de modifier le répertoire /libs de toute manière nécessaire tout en conservant les interfaces publiques.
 
-Cela diffère de l&#39; [extension](#extensions) d&#39;un composant par défaut où le désir est d&#39;apporter des modifications pour une utilisation spécifique, en créant un chemin d&#39;accès unique au composant et en se basant sur le référencement du composant par défaut d&#39;origine dans le répertoire /libs comme type de super ressource.
+Il est différent de [extension](#extensions) un composant par défaut où le désir est d&#39;apporter des modifications pour une utilisation spécifique, en créant un chemin d&#39;accès unique au composant et en se basant sur le référencement du composant par défaut d&#39;origine dans le répertoire /libs comme type de super ressource.
 
-Pour un exemple rapide de superposition du composant de commentaires, essayez le didacticiel [](overlay-comments.md)Incrustation du composant de commentaires.
+Pour un exemple rapide de superposition du composant de commentaires, consultez le [didacticiel sur le composant de commentaires d’incrustation](overlay-comments.md).
 
 ## Extensions {#extensions}
 
 L’extension (remplacement) d’un composant est une méthode permettant d’apporter des modifications à une utilisation spécifique sans affecter toutes les instances qui utilisent la valeur par défaut. Le composant étendu porte un nom unique dans le dossier /apps et fait référence au composant par défaut dans le dossier /libs. Par conséquent, la conception et le comportement par défaut d&#39;un composant ne sont pas modifiés.
 
-Il s’agit d’une différence par rapport au fait de [superposer](#overlays) le composant par défaut dans lequel la nature de Sling résout les références relatives aux applications/ dossiers avant de rechercher dans le dossier libs/, de sorte que la conception ou le comportement d’un composant est modifié globalement.
+Ceci diffère de [l&#39;incrustation](#overlays) du composant par défaut dans lequel la nature de Sling résout des références relatives aux applications/ dossiers avant de rechercher dans le dossier libs/, de sorte que la conception ou le comportement d&#39;un composant est modifié globalement.
 
-Pour un exemple rapide d&#39;extension du composant de commentaires, essayez le didacticiel [](extend-comments.md)Étendre le composant de commentaires.
+Pour un exemple rapide d&#39;extension du composant de commentaires, consultez le [didacticiel Étendre le composant de commentaires](extend-comments.md).
 
 ## Liaison JavaScript {#javascript-binding}
 
 Le script HBS pour le composant doit être lié aux objets, modèles et vues JavaScript qui implémentent cette fonctionnalité.
 
-La valeur de l’ `data-scf-component` attribut peut être la valeur par défaut, telle que **`social/tally/components/hbs/rating`** ou un composant étendu (personnalisé) pour des fonctionnalités personnalisées, telles que **weretail/components/hbs/rating**.
+La valeur de l&#39;attribut `data-scf-component` peut être la valeur par défaut, telle que **`social/tally/components/hbs/rating`**, ou un composant étendu (personnalisé) pour des fonctionnalités personnalisées, telles que **weretail/components/hbs/rating**.
 
 Pour lier un composant, le script de composant entier doit être inclus dans un élément &lt;div> avec les attributs suivants :
 
@@ -68,7 +68,7 @@ Pour lier un composant, le script de composant entier doit être inclus dans un 
 
 * `data-scf-component`=&quot;*&lt;resourceType>*
 
-Par exemple, de `/apps/weretail/components/hbs/rating/rating.hbs`:
+Par exemple, de `/apps/weretail/components/hbs/rating/rating.hbs` :
 
 ```xml
 <div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
@@ -97,7 +97,7 @@ Pour habiller un composant :
 1. Identifiez les éléments que vous souhaitez modifier (par exemple, zone de compositeur, boutons de barre d’outils, police du message, etc.).
 1. Identifiez la classe/les règles CSS qui affectent ces éléments.
 1. Créez un fichier de feuille de style (.css).
-1. Incluez la feuille de style dans un dossier de bibliothèque client ([clientlibs](#clientlibs-for-scf)) pour votre site et assurez-vous qu’elle est incluse dans vos modèles et pages avec [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Incluez la feuille de style dans un dossier de bibliothèque client ([clientlibs](#clientlibs-for-scf)) pour votre site et assurez-vous qu&#39;elle est incluse dans vos modèles et pages avec [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Redéfinissez les classes CSS et les règles que vous avez identifiées (#2) dans votre feuille de style et ajoutez des styles.
 
@@ -105,9 +105,9 @@ Les styles personnalisés remplacent désormais les styles de cadre par défaut 
 
 >[!CAUTION]
 >
->Tout nom de classe CSS précédé du préfixe `scf-js` a une utilisation spécifique dans le code JavaScript. Ces classes affectent l’état d’un composant (par exemple, bascule de masqué à visible) et ne doivent ni être remplacées ni supprimées.
+>Tout nom de classe CSS précédé du préfixe `scf-js` a une utilisation spécifique dans le code javascript. Ces classes affectent l’état d’un composant (par exemple, bascule de masqué à visible) et ne doivent ni être remplacées ni supprimées.
 >
->Bien que les `scf-js` classes n&#39;affectent pas les styles, les noms de classe peuvent être utilisés dans les feuilles de style avec la mise en garde que, dans la mesure où ils contrôlent l&#39;état des éléments, il peut y avoir des effets secondaires.
+>Bien que les classes `scf-js` n&#39;affectent pas les styles, les noms de classe peuvent être utilisés dans les feuilles de style avec la mise en garde que, puisqu&#39;elles contrôlent l&#39;état des éléments, il peut y avoir des effets secondaires.
 
 ## Extension de JavaScript {#extending-javascript}
 
@@ -119,7 +119,7 @@ Pour étendre une implémentation JavaScript de composants, vous devez :
 1. Étendez la méthode.
 1. Utilisez SCF.registerComponent() pour enregistrer toutes les méthodes avec les valeurs par défaut ou les objets et vues personnalisés.
 
-### forum.js : Exemple d&#39;extension du forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js : Exemple d&#39;extension du forum - HBS {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -152,14 +152,14 @@ Les balises de script dans les scripts SCF ne doivent pas être supprimées lors
 
 ## Clientlibs pour SCF {#clientlibs-for-scf}
 
-L’utilisation de bibliothèques [côté](../../help/sites-developing/clientlibs.md) client (clientlibs) permet d’organiser et d’optimiser le code JavaScript et le code CSS utilisés pour générer le contenu sur le client.
+L’utilisation de [bibliothèques côté client](../../help/sites-developing/clientlibs.md) (clientlibs) permet d’organiser et d’optimiser le code JavaScript et le code CSS utilisés pour générer le contenu sur le client.
 
 Les clientlibs pour SCF suivent un modèle de dénomination très spécifique pour deux variantes, qui varie uniquement en fonction de la présence de &quot;author&quot; dans le nom de la catégorie :
 
 | Variante Clientlib | Modèle pour la propriété Catégories |
 |--- |--- |
-| complete clientlib | cq.social.hbs.&lt;nom du composant> |
-| auteur clientlib | cq.social.author.hbs.&lt;nom du composant> |
+| complete clientlib | cq.social.hbs.&lt;component name=&quot;&quot;> |
+| auteur clientlib | cq.social.author.hbs.&lt;component name=&quot;&quot;> |
 
 ### Compléter les bibliothèques clientes {#complete-clientlibs}
 
@@ -174,11 +174,11 @@ Par exemple :
 * Noeud de dossier client : `/etc/clientlibs/social/hbs/forum`
 * Catégories, propriété : `cq.social.hbs.forum`
 
-Les composants [de la communauté guident](components-guide.md) les clientlibs complets requis pour chaque composant SCF.
+Le guide [Composants de la communauté](components-guide.md) liste les clientlibs complets requis pour chaque composant SCF.
 
-[Clientlibs for Communities Components](clientlibs.md) décrit comment ajouter des clientlibs à une page.
+[Clientlibs for Communities ](clientlibs.md) Components décrit comment ajouter des clientlibs à une page.
 
-### Clientlibs Auteur {#author-clientlibs}
+### Clientlibs d’auteur {#author-clientlibs}
 
 Les clientlibs de version d’auteur sont réduits au minimum JavaScript nécessaire pour implémenter le composant.
 
@@ -195,9 +195,9 @@ Par exemple :
 
 Remarque : bien que les clientlibs d&#39;auteur n&#39;intègrent jamais d&#39;autres bibliothèques, ils font liste à leurs dépendances. Lorsqu’elles sont incorporées dans d’autres bibliothèques, les dépendances ne sont pas automatiquement extraites et doivent également être incorporées.
 
-Les clientlibs d’auteur requis peuvent être identifiés en insérant &quot;author&quot; dans les clientlibs répertoriées pour chaque composant SCF dans le guide [Composants de la](components-guide.md)communauté.
+Les clientlibs d&#39;auteur requis peuvent être identifiés en insérant &quot;author&quot; dans les clientlibs répertoriées pour chaque composant SCF dans le [Guide des composants de la communauté](components-guide.md).
 
-### Considérations sur l’utilisation {#usage-considerations}
+### Considérations d’utilisation {#usage-considerations}
 
 Chaque site est différent dans la manière dont il gère les bibliothèques client. Divers facteurs sont à prendre en compte :
 
