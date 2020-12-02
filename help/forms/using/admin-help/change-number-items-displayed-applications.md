@@ -22,6 +22,6 @@ ht-degree: 73%
 
 La page Préférences vous permet de contrôler le nombre de services, points de fin, catégories et archives affichés sur chacune des pages Web de l’outil Applications et services.
 
-1. In administration console, **[!UICONTROL click Services > Applications and Services > Preferences]**.
-1. On the Preferences page, type the number of services, endpoints, categories, and archives that can be displayed on each page, and then click **[!UICONTROL Save]**.
+1. Dans Administration Console, **[!UICONTROL cliquez sur Services > Applications et services > Préférences]**.
+1. Sur la page Préférences, entrez le nombre de services, de points de terminaison, de catégories et d’archives qui peuvent être affichés sur chaque page, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
