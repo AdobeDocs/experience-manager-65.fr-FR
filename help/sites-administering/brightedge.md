@@ -36,7 +36,7 @@ Lorsque vous créez la configuration, vous spécifiez un titre. Le titre doit ê
 1. Saisissez un titre pour la configuration. Éventuellement, saisissez un nom pour le nœud utilisé afin de stocker la configuration dans le référentiel. Cliquez sur Créer.
 1. Dans la boîte de dialogue Configuration de BrightEdge Content Optimizer, saisissez le nom d’utilisateur et le mot de passe du compte BrightEdge, puis cliquez sur OK.
 
-## Modification d’une configuration BrightEdge {#editing-a-brightedge-configuration}
+## Modification d’une configuration BrightEdge  {#editing-a-brightedge-configuration}
 
 Modifiez le nom d’utilisateur et le mot de passe d’une configuration BrightEdge, au besoin. Les modifications affectent toutes les pages qui utilisent la configuration.
 
@@ -48,7 +48,7 @@ Modifiez le nom d’utilisateur et le mot de passe d’une configuration BrightE
 1. Cliquez sur le nom de la configuration à modifier.
 1. Cliquez sur Modifier, modifiez les valeurs des propriétés, puis cliquez sur OK.
 
-## Association de pages à une configuration BrightEdge {#associating-pages-with-a-brightedge-configuration}
+## Association de pages à une configuration BrightEdge  {#associating-pages-with-a-brightedge-configuration}
 
 Associez des pages à une configuration BrightEdge pour envoyer des données de page au service BrightEdge pour analyse. Lorsque vous associez une page à une configuration, les pages enfants héritent de l’association. En général, vous associez la page d’accueil du site afin que les données de toutes les pages soient envoyées à BrightEdge.
 
