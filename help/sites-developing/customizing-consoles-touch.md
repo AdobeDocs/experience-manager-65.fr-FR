@@ -19,7 +19,7 @@ ht-degree: 77%
 ---
 
 
-# Personnalisation des consoles {#customizing-the-consoles}
+# Personnalisation des consoles  {#customizing-the-consoles}
 
 >[!CAUTION]
 >
@@ -29,8 +29,8 @@ AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les cons
 
 * Clientlibs Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
 
-* Overlays
-Overlays are based on node definitions and allow you to overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
+* Incrustations
+Les incrustations sont basées sur les définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec votre propre fonctionnalité personnalisée (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre les consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -54,7 +54,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recréer l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    >
    >
 1. Apportez les modifications désirées dans `/apps`
@@ -63,7 +63,7 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 
 
 
-For example, the following location within the `/libs` structure can be overlaid:
+Par exemple, l’emplacement suivant dans la structure `/libs` peut être superposé :
 
 * Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
 
@@ -133,13 +133,13 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Using properties on this node you can define the `groups` allowed to perform the specific action; for example, `administrators`
+   En utilisant les propriétés de ce noeud, vous pouvez définir l&#39;`groups` autorisé à exécuter l&#39;action spécifique ; par exemple, `administrators`
 
 ### Personnalisation des colonnes en mode Liste {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->This feature is optimized for columns of text fields; for other data types it is possible to overlay `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Cette fonction est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
 
 Pour personnaliser les colonnes en mode Liste :
 
@@ -156,14 +156,14 @@ Pour personnaliser les colonnes en mode Liste :
 
 1. Si vous le souhaitez :
 
-   * If you want to plug additional data, you need to write a [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) with a
+   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec un
       `pageInfoProviderType`.
 
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
 
 1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes du mode Liste.
 
-### Filtrage des ressources {#filtering-resources}
+### Filtrage des ressources  {#filtering-resources}
 
 Lorsqu’une console est utilisée, un cas d’utilisation fréquent est la nécessité pour l’utilisateur de choisir des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste dans laquelle l’auteur doit sélectionner un élément.
 
