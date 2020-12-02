@@ -42,16 +42,16 @@ Pour plus d’informations sur l’installation d’applications web, sur les co
 
 ## Description générale {#general-description}
 
-### Default behavior when installing AEM in an Application Server {#default-behaviour-when-installing-aem-in-an-application-server}
+### Comportement par défaut lors de l’installation de AEM dans un serveur d’applications {#default-behaviour-when-installing-aem-in-an-application-server}
 
 AEM se présente sous la forme d’un seul fichier war à déployer.
 
 En cas de déploiement, le comportement par défaut est le suivant :
 
-* the run mode is `author`
-* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installé dans `${user.dir}/crx-quickstart`où `${user.dir}` se trouve le répertoire de travail actuel, ce chemin vers crx-quickstart est appelé `sling.home`
+* le mode d&#39;exécution est `author`
+* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installé dans `${user.dir}/crx-quickstart`où `${user.dir}` est le répertoire de travail actuel, ce chemin d&#39;accès à crx-quickstart est appelé `sling.home`
 
-* the context root is the war file name e.g : `aem-6`
+* la racine du contexte est le nom du fichier de guerre, par exemple : `aem-6`
 
 #### Configuration {#configuration}
 
@@ -77,7 +77,7 @@ Pour qu’une instance de publication soit déployée, vous devez définir le mo
 Pour vérifier que tous les éléments ont été installés, vous pouvez :
 
 * parcourir le fichier `error.log` jusqu’à la fin pour vous assurer que tout le contenu est installé ;
-* look in `/system/console` that all bundles are installed
+* vérifiez dans `/system/console` que tous les lots sont installés.
 
 #### Deux instances sur le même serveur d’applications {#two-instances-on-the-same-application-server}
 
@@ -95,7 +95,7 @@ Pour vérifier que tous les éléments ont été installés, vous pouvez :
 1. Dans les instances d’auteur et de publication, assurez-vous que dans les fichiers sling.properties, la propriété felix.service.urlhandlers=false est définie sur false (par défaut, elle est définie sur true).
 1. Redémarrez les deux applications web.
 
-## Procédures d’installation des serveurs d’applications {#application-servers-installation-procedures}
+## Procédures d’installation des serveurs d’applications  {#application-servers-installation-procedures}
 
 ### /WebSphere 8.5{#websphere}
 
@@ -126,17 +126,17 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 * Démarrez l’application web AEM.
 
-#### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
+#### JBoss EAP 6.3.0/6.4.0  {#jboss-eap}
 
 Avant de procéder à un déploiement, lisez la [Description générale](#general-description) ci-dessus.
 
 **Préparation du serveur JBoss**
 
-Set Memory arguments in your conf file(e.g. `standalone.conf`)
+Définissez des arguments de mémoire dans votre fichier conf (ex. `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-if you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (e.g `configuration/standalone.xml)`:
+si vous utilisez l&#39;analyseur de déploiement pour installer l&#39;application Web AEM, il peut être utile d&#39;augmenter l&#39;attribut `deployment-timeout,` pour ce jeu d&#39;attributs `deployment-timeout` dans le fichier xml de votre instance (par exemple `configuration/standalone.xml)` :
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -158,22 +158,22 @@ Dans ce cas, une simple disposition serveur est utilisée avec uniquement un ser
 
 **Préparation de WebLogic Server**
 
-* In `${myDomain}/config/config.xml`add to the security-configuration section:
+* Dans `${myDomain}/config/config.xml`ajouter à la section security-configuration :
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` voir sur [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) pour connaître la position correcte (par défaut, la position à la fin de la section est ok).
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` voir sur  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdpour connaître la position correcte (par défaut, la position à la fin de la section est ok).
 
 * Augmentez les paramètres mémoire de la machine virtuelle :
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) recherchez WLS_MEM_ARGS, définissez par exemple set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * redémarrage de WebLogic Server
 
-* Create in `${myDomain}` a packages folder and inside a cq folder and in it a Plan folder
+* Créer dans `${myDomain}` un dossier de packages et dans un dossier cq et y créer un dossier Plan
 
 **Déploiement de l’application web AEM**
 
 * Téléchargez le fichier war AEM.
 * Placez le fichier d&#39;AEM guerre dans le dossier ${myDomain}/packages/cq.
-* Make your configurations In `WEB-INF/web.xml` if needed (see above in the General Description)
+* Effectuez vos configurations dans `WEB-INF/web.xml` si nécessaire (voir ci-dessus dans la Description générale).
 
    * Décompresser le `WEB-INF/web.xml`fichier
    * modifier le paramètre sling.run.modes pour publier
@@ -183,7 +183,7 @@ Dans ce cas, une simple disposition serveur est utilisée avec uniquement un ser
 * Déployez le fichier war AEM en tant qu’application (pour les autres paramètres, utilisez les valeurs par défaut).
 * L’installation peut prendre un certain temps.
 * Vérifiez que l’installation est bien terminée, comme indiqué ci-dessus dans la section Description générale (par exemple, en parcourant le fichier error.log jusqu’à la fin).
-* You can change the context root in the Configuration tab of the web application in the WebLogic `/console`
+* Vous pouvez modifier la racine de contexte dans l’onglet Configuration de l’application Web dans WebLogic `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
 
@@ -193,7 +193,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
    * Augmentez les paramètres mémoire de la machine virtuelle :
 
-      * In `bin/catalina.bat` (resp `catalina.sh` on unix) add the following setting:
+      * Dans `bin/catalina.bat` (resp `catalina.sh` sur unix), ajoutez le paramètre suivant :
       * `set "JAVA_OPTS= -Xmx2048m`
    * Tomcat n’active aucun accès de type administrateur ou gestionnaire au niveau de l’installation. Vous devez donc modifier manuellement le fichier `tomcat-users.xml` si vous souhaitez autoriser l’accès pour ces comptes :
 
@@ -222,7 +222,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
       `webapps/manager/WEB-INF/web.xml`
 
-      and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file.
+      et augmentez la taille maximale des fichiers et la taille maximale des requêtes à au moins 500 Mo, voir l&#39;exemple `multipart-config` suivant d&#39;un tel fichier `web.xml`.
 
       ```xml
       <multipart-config>
@@ -250,7 +250,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
    * Attendez que l’application AEM soit installée.
 
 
-## Résolution des incidents {#troubleshooting}
+## Dépannage {#troubleshooting}
 
 Pour plus d’informations sur la résolution des problèmes qui peuvent survenir en cours d’installation, voir :
 
