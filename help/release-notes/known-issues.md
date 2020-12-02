@@ -4,8 +4,8 @@ description: Notes de mise à jour spécifiques aux problèmes connus dans Adobe
 translation-type: tm+mt
 source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 49%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +20,13 @@ Cette page contient la liste des problèmes connus dans la version Adobe Experi
 
 * Un problème est signalé lorsque CRX-Quickstart et son contenu sont supprimés.
 
-   Pour chacune de ces actions, assurez-vous que la propriété `htmllibmanager.fileSystemOutputCacheLocation` n’est pas une chaîne vide :
+   Pour chacune de ces actions, assurez-vous que la propriété `htmllibmanager.fileSystemOutputCacheLocation` n&#39;est pas une chaîne vide :
 
    1. L’appel de la fonction `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Mise à niveau vers AEM 6.5.
    3. Exécution de la &quot;migration de contenu différée&quot; sur AEM 6.5.
 
-   Un article de la Base [de](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) connaissances est disponible avec des détails supplémentaires et la solution à ce problème.
+   Un article [Base de connaissances](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) est disponible avec des détails supplémentaires et la solution à ce problème.
 
 * Si vous utilisez JDK 11 avec l’instance AEM 6.5, certaines pages peuvent s’afficher comme vides après le déploiement de certains packs. Le message d’erreur suivant s’affiche dans le fichier journal :
 
@@ -37,9 +37,9 @@ Cette page contient la liste des problèmes connus dans la version Adobe Experi
 
 Pour résoudre cette erreur :
 
-1. Désactivez l’instance AEM. Accédez à `<aem_server_path_on_server>crx-quickstart\conf` et ouvrez le `sling.properties` fichier. Adobe recommande de sauvegarder ce fichier.
+1. Désactivez l’instance AEM. Accédez à `<aem_server_path_on_server>crx-quickstart\conf` et ouvrez le fichier `sling.properties`. Adobe recommande de sauvegarder ce fichier.
 
-1. Recherchez `org.osgi.framework.bootdelegation=`. Ajoutez `jdk.internal.reflect,jdk.internal.reflect.*` les propriétés pour afficher le résultat.
+1. Recherchez `org.osgi.framework.bootdelegation=`. Ajoutez les propriétés `jdk.internal.reflect,jdk.internal.reflect.*` pour afficher le résultat.
 
 ```java
 org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.internal.reflect.*
@@ -49,25 +49,25 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 ## Ressources {#assets}
 
-* **Rechercher :** La recherche n’entraîne aucune valeur renvoyée si la chaîne de recherche contient des espaces de début ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)).
-* **Schéma de métadonnées des dossiers** : après l’ajout d’un bouton de choix, les champs ID et Valeur ne sont pas restitués comme prévu et la fonctionnalité de suppression ne fonctionne pas. (CQ-4261144).
-* Lors de l’attribution d’un nouveau nom à une ressource, il n’est pas possible d’utiliser un espace dans le nom. (CQ-4266403).
+* **Search:** Search ne renvoie aucune valeur si la chaîne de recherche contient des espaces de début ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)).
+* **Schéma de métadonnées des dossiers** : après l’ajout d’un bouton de choix, les champs ID et Valeur ne sont pas restitués comme prévu et la fonctionnalité de suppression ne fonctionne pas. (CQ-4261144)
+* Lors de l’attribution d’un nouveau nom à une ressource, il n’est pas possible d’utiliser un espace dans le nom. (CQ-4266403)
 
 ## Formulaires {#forms}
 
-* Lorsque AEM Forms est installé sur un système d’exploitation Linux, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721).
-* (AEM Forms sur WebSphere uniquement) L’option **Forms Workflow**> **Recherche de tâche** ne renvoie aucun résultat si vous recherchez un **Administrateur** avec un **Nom d’utilisateur** comme critère de recherche. (CQ-4266457).
+* Lorsque AEM Forms est installé sur un système d’exploitation Linux, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721)
+* (AEM Forms sur WebSphere uniquement) L’option **Forms Workflow**> **Recherche de tâche** ne renvoie aucun résultat si vous recherchez un **Administrateur** avec un **Nom d’utilisateur** comme critère de recherche. (CQ-4266457)
 
-* AEM Forms ne parvient pas à convertir les fichiers TIF et TIFF avec compression JPEG en Documents PDF. (CQ-4265972).
-* Les options **Analyseur de ressources AEM Forms** et **Migration de la correspondance vers la communication interactive** ne fonctionnent pas sur la page **Migration d’AEM Forms**. (CQ-4266572).
+* AEM Forms ne parvient pas à convertir les fichiers TIF et TIFF avec compression JPEG en Documents PDF. (CQ-4265972)
+* Les options **Analyseur de ressources AEM Forms** et **Migration de la correspondance vers la communication interactive** ne fonctionnent pas sur la page **Migration d’AEM Forms**. (CQ-4266572)
 
-* (JBoss 7 uniquement) Lorsque vous effectuez une mise à niveau d’une version précédente vers AEM 6.5 Forms et que la version précédente contenait des processus (.lca) qui créaient et utilisaient une copie du processus d’envoi ou de rendu par défaut, HTML5 Forms utilisant de tels processus (.lca) n’effectue pas les actions requises. (CQ-4243928).
-* Dans une version adaptative, lorsqu’un service de modèle de données de formulaire est appelé à partir de l’éditeur de règle pour mettre à jour de manière dynamique les valeurs du composant de choix d’image, les valeurs du composant de choix d’image ne sont pas mises à jour. (CQ-4254754).
-* AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668).
+* (JBoss 7 uniquement) Lorsque vous effectuez une mise à niveau d’une version précédente vers AEM 6.5 Forms et que la version précédente contenait des processus (.lca) qui créaient et utilisaient une copie du processus d’envoi ou de rendu par défaut, HTML5 Forms utilisant de tels processus (.lca) n’effectue pas les actions requises. (CQ-4243928)
+* Dans une version adaptative, lorsqu’un service de modèle de données de formulaire est appelé à partir de l’éditeur de règle pour mettre à jour de manière dynamique les valeurs du composant de choix d’image, les valeurs du composant de choix d’image ne sont pas mises à jour. (CQ-4254754)
+* Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits du [package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) et des [packages d’exécution redistribuables Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668)
 
 * PDF Generator ne prend pas en charge l’authentification par carte à puce.  Lorsqu’un administrateur active la stratégie de groupe `Interactive Logon: Require Smart card` sur un serveur Windows, tous les utilisateurs existants de PDF Generator sont invalidés.
 
-* Lorsqu’un formulaire adaptatif est configuré pour mettre à jour de manière dynamique les valeurs d’un composant et que l’instance de publication hébergeant le formulaire est accessible via le dispatcher, la fonctionnalité permettant de mettre à jour de manière dynamique les valeurs d’un champ cesse de fonctionner. To resolve the issue, on the publish instance, open CRXDE, navigate to `/libs/fd/af/runtime/clientlibs/guideChartReducer`, and create the property listed in below.
+* Lorsqu’un formulaire adaptatif est configuré pour mettre à jour de manière dynamique les valeurs d’un composant et que l’instance de publication hébergeant le formulaire est accessible via le dispatcher, la fonctionnalité permettant de mettre à jour de manière dynamique les valeurs d’un champ cesse de fonctionner. Pour résoudre le problème, sur l’instance de publication, ouvrez CRXDE, accédez à `/libs/fd/af/runtime/clientlibs/guideChartReducer`, puis créez la propriété répertoriée ci-dessous.
 
    * Nom : allowProxy
    * Type : booléen
@@ -77,6 +77,6 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Multiple : faux
    * Création automatique : False
 
-   La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679).
+   La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679)
 
-* Lorsque AEM Forms est démarré, l’ `SAX Security Manager could not be setup` avertissement s’affiche.
+* Lorsque AEM Forms est démarré, l&#39;avertissement `SAX Security Manager could not be setup` s&#39;affiche.
