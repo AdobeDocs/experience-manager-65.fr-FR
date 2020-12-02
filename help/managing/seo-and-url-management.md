@@ -25,11 +25,11 @@ L’optimisation pour les moteurs de recherche est devenue une préoccupation es
 
 Le présent document commence par décrire certaines [bonnes pratiques relatives à l’optimisation pour les moteurs de recherche](#seo-best-practices) et explique comment les suivre lors d’une mise en œuvre d’AEM Il approfondit ensuite certaines des [étapes de mise en œuvre plus complexes](#aem-configurations) abordées dans la première section.
 
-## Bonnes pratiques relatives à l’optimisation pour les moteurs de recherche  {#seo-best-practices}
+## Bonnes pratiques relatives à l’optimisation pour les moteurs de recherche   {#seo-best-practices}
 
 Cette section décrit certaines bonnes pratiques générales d’optimisation pour les moteurs de recherche.
 
-### URL  {#urls}
+### URL   {#urls}
 
 Il existe des meilleures pratiques généralement acceptées en ce qui concerne les URL.
 
@@ -118,7 +118,7 @@ La tendance ces dernières années a été de les supprimer afin de rendre les U
 * permettent de mettre les pages en cache sur le Dispatcher et améliorent souvent la sécurité ;
 * permettent de traiter le contenu directement, plutôt que de disposer d’une servlet générique qui récupère le contenu. Vous pouvez ainsi profiter des avantages des listes ACL que vous appliquez au référentiel et des filtres que vous appliquez sur le Dispatcher.
 
-#### Utilisation de sélecteurs pour les servlets  {#using-selectors-for-servlets}
+#### Utilisation de sélecteurs pour les servlets   {#using-selectors-for-servlets}
 
 AEM offre deux options lors de la rédaction de servlets :
 
@@ -127,7 +127,7 @@ AEM offre deux options lors de la rédaction de servlets :
 
 Les exemples suivants illustrent comment enregistrer des servlets qui suivent ces deux schémas, ainsi que l’avantage obtenu grâce à l’utilisation des servlets Sling.
 
-#### Servlets bin (un niveau vers le bas)  {#bin-servlets-one-level-down}
+#### Servlets bin (un niveau vers le bas)   {#bin-servlets-one-level-down}
 
 Les servlets **bin** suivent le schéma issu de la programmation J2EE auquel nombre de développeurs sont habitués. La servlet est enregistrée à un chemin spécifique qui, dans le cas d’AEM, se trouve généralement sous `/bin`, et vous extrayez les paramètres de requête nécessaires dans la chaîne de requête.
 
@@ -187,7 +187,7 @@ Dans AEM, toutes les pages web sont stockées sous `/content/my-brand/my-content
 
 Cette section décrit les options disponibles dans AEM pour gérer ces URL et les présenter aux utilisateurs d’une manière plus lisible et tenant davantage compte de l’optimisation pour les moteurs de recherche.
 
-#### URL de redirection vers un microsite  {#vanity-urls}
+#### URL de redirection vers un microsite   {#vanity-urls}
 
 Si un auteur souhaite qu’une page soit accessible depuis un autre emplacement à des fins publicitaires, les URL de redirection vers un microsite d’AEM, définies page par page, peuvent être utiles. Afin d’ajouter une URL de redirection vers un microsite pour une page, accédez à la console **Sites** et modifiez les propriétés de la page. Au bas de l’onglet **Basique** se trouve une section dans laquelle peuvent être ajoutées les URL de redirection vers un microsite. Gardez à l’esprit que le fait que la page soit accessible via plusieurs URL réduit la valeur d’optimisation pour les moteurs de recherche de la page en question. Par conséquent, une balise d’URL canonique doit être ajoutée à la page afin d’éviter ce problème.
 
@@ -294,7 +294,7 @@ Toutefois, il existe également une manière plus simple de gérer cela :
    }
    ```
 
-#### Apache HTTP Server mod_rewrite  {#apache-http-server-mod-rewrite}
+#### Apache HTTP Server mod_rewrite   {#apache-http-server-mod-rewrite}
 
 Jusqu’à présent, vous avez mis en œuvre des mappages avec la logique dans vos composants pour utiliser ces mappages lors de la génération des URL sur les pages.
 
@@ -311,7 +311,7 @@ Pour mettre en œuvre ces règles, vous pouvez ajouter des éléments `RewriteRu
 </VirtualHost>
 ```
 
-### Balises d’URL canoniques  {#canonical-url-tags}
+### Balises d’URL canoniques   {#canonical-url-tags}
 
 Les balises d’URL réglementaires sont des balises de lien placées dans l’en-tête d’un document HTML pour savoir comment les moteurs de recherche doivent traiter une page au cours de l’indexation du contenu. Elles présentent l’avantage de s’assurer qu’une page (et ses différentes versions) sera indexée comme étant la même, même si l’URL menant vers la page peut contenir des différences.
 
@@ -363,7 +363,7 @@ Sur un environnement de production, vous pouvez également choisir de désactive
 
 Lorsque vous placez le fichier `robots.txt` à la racine du site, il est possible que les requêtes de vidage du Dispatcher effacent ce fichier ; les mappages d’URL placeront alors probablement la racine du site à un emplacement différent du `DOCROOT`, comme défini dans la configuration Apache HTTP Server. Pour cette raison, il est courant de placer ce fichier sur l’instance de création à la racine du site et de le répliquer dans l’instance de publication.
 
-### Création d’un plan de site XML sur AEM  {#building-an-xml-sitemap-on-aem}
+### Création d’un plan de site XML sur AEM   {#building-an-xml-sitemap-on-aem}
 
 Les robots d’indexation utilisent les plans de site XML pour mieux comprendre la structure des sites web. Bien que le fait de fournir un plan de site ne garantisse pas un meilleur référencement sur les moteurs de recherche, c’est une pratique recommandée. Vous pouvez conserver manuellement un fichier XML sur le serveur web afin qu’il soit utilisé comme plan de site, mais il est conseillé de le générer par programmation, ce qui garantit que, lorsque les auteurs créent du contenu, le plan de site reflète automatiquement leurs modifications.
 
@@ -373,8 +373,8 @@ Pour générer un plan de site par programmation, enregistrez une servlet Sling 
 >
 >Vous pouvez enregistrer une servlet Sling pour écouter le sélecteur `sitemap` avec l’extension `xml`. Ainsi, la servlet traite la requête à chaque fois qu’une URL demandée se termine par :
 >    `/<path-to>/page.sitemap.xml`
->Vous pouvez alors obtenir la ressource demandée par la requête et générer un plan de site à partir de ce point dans l’arborescence de contenu à l’aide des API JCR.
->L’avantage d’une telle approche se révèle lorsque plusieurs sites sont diffusés à partir d’une même instance. Une requête `/content/siteA.sitemap.xml` génère un plan de site pour `siteA`, tandis que la requête `/content/siteB.sitemap.xml` génère un plan de site pour `siteB` sans devoir écrire du code supplémentaire.
+Vous pouvez alors obtenir la ressource demandée par la requête et générer un plan de site à partir de ce point dans l’arborescence de contenu à l’aide des API JCR.
+L’avantage d’une telle approche se révèle lorsque plusieurs sites sont diffusés à partir d’une même instance. Une requête `/content/siteA.sitemap.xml` génère un plan de site pour `siteA`, tandis que la requête `/content/siteB.sitemap.xml` génère un plan de site pour `siteB` sans devoir écrire du code supplémentaire.
 
 ### Création de redirections 301 pour les URL héritées {#creating-redirects-for-legacy-urls}
 
