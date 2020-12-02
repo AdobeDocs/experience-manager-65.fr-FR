@@ -26,7 +26,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
 * [Outils – IU classique](#tools-classic-ui)
 
-## Outils – IU optimisée pour les écrans tactiles {#tools-touch-optimized-ui}
+## Outils – IU optimisée pour les écrans tactiles  {#tools-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -328,7 +328,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Configuration du stockage</td>
+   <td>Stockage   Configuration</td>
   </tr>
   <tr>
    <td> </td>
@@ -394,7 +394,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet d’accéder aux importateurs et aux différentes données de produit.</td>
   </tr>
   <tr>
-   <td>Gestion des actifs numériques </td>
+   <td>Gestion des ressources numériques </td>
    <td>Permet d’accéder à différentes options.</td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet de configurer les messages électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td>
   </tr>
   <tr>
-   <td>Segmentation</td>
+   <td>Segmentation </td>
    <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en caractérisant les détails d’un visiteur.<br /> </td>
   </tr>
   <tr>
