@@ -27,7 +27,7 @@ Le texte d’espace réservé représente un mot ou un groupe de mots court. Il 
 
 ![Un composant de date avec et sans le texte d’espace réservé](assets/dat-picker-place-holder-text.png)
 
-**A.** Composant Date avec texte d’espace réservé **B.** Composant Date sans texte d’espace réservé
+**Composant A.** Date avec le texte d’espace réservé  **B.** Date sans texte d’espace réservé
 
 AEM Forms prend en charge le texte d’espace réservé pour la zone Mot de passe, le sélecteur de date, la zone numérique et les champs de zone de texte.\
 Les textes d’espace réservé ne sont pas pris en charge pour le widget natif de date en HTML5. Pour spécifier un texte d’espace réservé :
