@@ -22,12 +22,12 @@ ht-degree: 96%
 
 Vous pouvez indiquer le jeu de caractères utilisé pour encoder le flux de sortie.
 
-1. In administration console, click **[!UICONTROL Services > output]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Services > output]**.
 1. Sous Internationalisation, dans la liste Jeu de caractères, sélectionnez un jeu de caractères. Ce paramètre dépend des paramètres `TransformationFormat` et `PrintFormat` spécifiés via l’API. Pour spécifier un jeu de caractères ne figurant pas dans la liste, sélectionnez Personnalisé et spécifiez la valeur d’encodage dans la zone qui s’affiche.
 
    Si le paramètre `TransformationFormat` prend la valeur PDF et PDF/A ou que le paramètre `PrintFormat` prend la valeur PCL, PostScript, Zebra label, IPL, DPL, TPCL, GenericColorPCL ou GenericPSLevel3, seuls des jeux de caractères spécifiques sont pris en charge.
 
    Le nom du jeu de caractères doit être un nom canonique valide. La valeur par défaut est ISO-8859-1.
 
-1. Cliquez sur **[!UICONTROL Save]**.
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
