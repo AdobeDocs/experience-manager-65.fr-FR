@@ -33,7 +33,7 @@ AEM Forms prend en charge CAPTCHA dans les formulaires adaptatifs. Vous pouvez u
 
 
 
-## Configurer le service ReCAPTCHA par Google {#google-recaptcha}
+## Configurer le service ReCAPTCHA par Google  {#google-recaptcha}
 
 Les auteurs du formulaire peuvent utiliser le service reCAPTCHA de Google pour mettre en place CAPTCHA dans les formulaires adaptatifs. Il offre des fonctionnalités CAPTCHA avancées pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, voir [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
@@ -44,8 +44,8 @@ Pour mettre en place le service reCAPTCHA dans AEM Forms :
 1. Obtenez la [paire de clés API reCAPTCHA](https://www.google.com/recaptcha/admin) auprès de Google. Elle comprend une clé de site et une clé secrète.
 1. Créez un conteneur de configurations pour les services cloud.
 
-   1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
-      * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+   1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
+      * Pour plus d’informations, consultez la documentation de [Navigateur de configuration](/help/sites-administering/configurations.md).
    1. Procédez comme suit pour activer le dossier global pour les configurations cloud ou ignorez cette étape pour créer et configurer un autre dossier pour les configurations de service cloud.
 
       1. Dans le navigateur de configuration, sélectionnez le dossier **[!UICONTROL global]** et appuyez sur **[!UICONTROL Propriétés]**.
@@ -54,19 +54,19 @@ Pour mettre en place le service reCAPTCHA dans AEM Forms :
       1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
    1. Dans le navigateur de configuration, appuyez sur **[!UICONTROL Créer]**.
    1. Dans la boîte de dialogue Créer une configuration, indiquez un titre pour le dossier et activez **[!UICONTROL Configurations cloud]**.
-   1. Tap **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
+   1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
 
 
 1. Configurez le service cloud pour reCAPTCHA.
 
-   1. On your AEM author instance, go to ![tools-1](assets/tools-1.png) > **Cloud Services**.
+   1. Sur votre instance d’auteur AEM, accédez à ![tools-1](assets/tools-1.png) > **Cloud Services**.
    1. Appuyez sur **[!UICONTROL reCAPTCHA]**. La page Configurations s’ouvre. Sélectionnez le conteneur de configurations créé à l’étape précédente et appuyez sur **[!UICONTROL Créer]**.
-   1. Specify Name, Site key, and Secret Key for reCAPTCHA service and tap **[!UICONTROL Create]** to create the cloud service configuration.
-   1. Dans cette boîte, spécifiez le site et les clés de site et secrète obtenues à l’étape 1. Tap **Save Settings** and then tap **OK** to complete the configuration.
+   1. Spécifiez le nom, la clé du site et la clé secrète pour le service reCAPTCHA et appuyez sur **[!UICONTROL Créer]** pour créer la configuration du service cloud.
+   1. Dans cette boîte, spécifiez le site et les clés de site et secrète obtenues à l’étape 1. Appuyez sur **Enregistrer les paramètres**, puis sur **OK** pour terminer la configuration.
 
    Une fois que le service reCAPTCHA est configuré, il peut être utilisé dans les formulaires adaptatifs. Pour plus d’informations, voir [Utilisation de CAPTCHA dans les formulaires adaptatifs](#using-captcha).
 
-## Utiliser CAPTCHA dans les formulaires adaptatifs {#using-captcha}
+## Utiliser CAPTCHA dans les formulaires adaptatifs  {#using-captcha}
 
 Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 
@@ -86,9 +86,9 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
    >
    >Captcha est sensible au facteur temps et expire dans la minute. Par conséquent, il est recommandé de placer le composant Captcha juste avant le bouton Envoyer dans le formulaire adaptatif.
 
-1. Select the Captcha component you added and tap ![cmppr](assets/cmppr.png) to edit its properties.
-1. Indiquez un titre pour le widget CAPTCHA. The default value is **Captcha**. Sélectionnez **Masquer le titre** si vous ne voulez pas que le titre apparaisse.
-1. From the **Captcha service** drop-down, select **reCaptcha** to enable reCAPTCHA service if you configured it as described in [ReCAPTCHA service by Google](#google-recaptcha). Sélectionnez une configuration dans la liste déroulante Paramètres. En outre, sélectionnez la taille **Normal** ou **Compact** pour le widget reCAPTCHA.
+1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/cmppr.png) pour modifier ses propriétés.
+1. Indiquez un titre pour le widget CAPTCHA. La valeur par défaut est **Captcha**. Sélectionnez **Masquer le titre** si vous ne voulez pas que le titre apparaisse.
+1. Dans la liste déroulante **Service Captcha**, sélectionnez **reCaptcha** pour activer le service reCAPTCHA si vous l&#39;avez configuré comme décrit dans le service [ReCAPTCHA de Google](#google-recaptcha). Sélectionnez une configuration dans la liste déroulante Paramètres. En outre, sélectionnez la taille **Normal** ou **Compact** pour le widget reCAPTCHA.
 
    >[!NOTE]
    >
