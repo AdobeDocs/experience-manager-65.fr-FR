@@ -17,9 +17,9 @@ ht-degree: 62%
 ---
 
 
-# Création d’un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
+# Création d’un profil personnalisé pour HTML5 forms  {#creating-a-custom-profile-for-html-forms}
 
-A profile is a resource node in [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 forms pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. A profile node exists in the `/content` folder in the JCR repository. You can place the node directly under the `/content` folder or any subfolder of the `/content` folder.
+Un profil est un noeud de ressources dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 forms pour personnaliser l’apparence, le comportement et les interactions des formulaires HTML5. Un noeud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez placer le noeud directement sous le dossier `/content` ou tout sous-dossier du dossier `/content`.
 
 Le nœud de profil présente la propriété **sling:resourceSuperType** et la valeur par défaut est **xfaforms/profile**. Le script de rendu du noeud se trouve dans /libs/xfaforms/profil.
 
@@ -41,7 +41,7 @@ Le module config.jsp contient les différentes configurations telles que les ser
 
 Le fichier toolbar.jsp contient le code permettant de créer une barre d’outils colorée. Pour supprimer la barre d’outils, supprimez toolbar.jsp du module HTML.jsp
 
-## formBody.jsp {#formbody-jsp}
+## formBody.jsp  {#formbody-jsp}
 
 Le module formBody.jsp sert à la représentation HTML du formulaire XFA.
 
@@ -59,7 +59,7 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 ### Créez un nœud de profil {#create-profile-node}
 
-1. Navigate to the CRX DE interface at the URL: `https://'[server]:[port]'/crx/de` and log in to the interface with administrator credentials.
+1. Accédez à l’interface CRX DE à l’adresse URL : `https://'[server]:[port]'/crx/de` et connectez-vous à l’interface avec les informations d’identification de l’administrateur.
 
 1. Dans le panneau de gauche, rendez-vous à l’emplacement suivant : */content/xfaforms/profiles*.
 
@@ -73,12 +73,12 @@ Pour créer un profil personnalisé, procédez comme suit :
 
 Après la création d’un profil personnalisé, ajoutez les informations de rendu à ce profil. Lorsqu’il reçoit une demande pour le nouveau profil, CRX vérifie l’existence du dossier/apps pour la page JSP à générer. Créez la page JSP dans le dossier /apps.
 
-1. In the left pane, navigate to the `/apps` folder.
-1. Right-click on the `/apps` folder and choose to create a folder with name **hrform**.
-1. Insider the **hrform** folder create a folder named **demo**.
+1. Dans le volet de gauche, accédez au dossier `/apps`.
+1. Cliquez avec le bouton droit sur le dossier `/apps` et choisissez de créer un dossier nommé **hrform**.
+1. Dans le dossier **hrform**, créez un dossier nommé **demo**.
 1. Cliquez sur le bouton **Enregistrer tout**.
-1. Accédez au noeud `/libs/xfaforms/profile/html.jsp` html.jsp **** et copiez-le.
-1. Paste **html.jsp** node into the `/apps/hrform/demo` folder created above with same name **html.jsp** and click **Save**.
+1. Accédez à `/libs/xfaforms/profile/html.jsp` et copiez le noeud **html.jsp**.
+1. Collez le noeud **html.jsp** dans le dossier `/apps/hrform/demo` créé ci-dessus avec le même nom **html.jsp**, puis cliquez sur **Enregistrer**.
 1. Si vous rencontrez d’autres composants du script de profil, suivez les étapes 1 à 6 pour copier les composants dans le dossier /apps/hrform/demo.
 
 1. Pour vérifier que le profil est créé, ouvrez l’URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
