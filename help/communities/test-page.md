@@ -18,5 +18,5 @@ ht-degree: 8%
 
 # Page de test {#test-page}
 
-![screen_shot_2018-03-21at084300](assets/screen_shot_2018-03-21at084300.png) ![screen_shot_2018-03-21at0844428](assets/screen_shot_2018-03-21at084428.png) screen_shot_2018-03-21at084727 ![](assets/screen_shot_2018-03-21at084727.png) screen_shot_2018-03-21at084508 ![](assets/screen_shot_2018-03-21at084508.png) screen_shot_2018-03-21at084830![](assets/screen_shot_2018-03-21at084830.png)
+![screen_shot_2018-03-21at084300](assets/screen_shot_2018-03-21at084300.png) ![screen_shot_2018-03-21at0844428](assets/screen_shot_2018-03-21at084428.png) ![screen_shot_2018-03-21at08477](assets/screen_shot_2018-03-21at084727.png) ![screen_shot_2018-03-21at084508](assets/screen_shot_2018-03-21at084508.png) ![screen_shot_2018-03-21at084830](assets/screen_shot_2018-03-21at084830.png)
 
