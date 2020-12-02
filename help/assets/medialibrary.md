@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Assets] Comparaison des offres de la bibliothèque de supports'
-description: Comparaison [!DNL Experience Manager Assets] des offres de la bibliothèque de médias et connaissance des différences.
+title: Comparaison [!DNL Assets] des offres de la bibliothèque multimédia
+description: Comparez  [!DNL Experience Manager Assets] les offres de la bibliothèque multimédia et connaissez les différences.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
@@ -11,60 +11,60 @@ ht-degree: 24%
 ---
 
 
-# [!DNL Experience Manager Assets] versus [!DNL Experience Manager] Media Library {#aem-assets-vs-aem-medialibrary}
+# [!DNL Experience Manager Assets] versus  [!DNL Experience Manager] Media Library  {#aem-assets-vs-aem-medialibrary}
 
-[!DNL Adobe Experience Manager Assets] fait partie intégrante de la [!DNL Experience Manager] plateforme. This smooth integration is seen as a major advantage of [!DNL Experience Manager] and ensures consistency in content management and high productivity for content authors.
+[!DNL Adobe Experience Manager Assets] fait partie intégrante de la  [!DNL Experience Manager] plateforme. Cette intégration harmonieuse est considérée comme un avantage majeur de [!DNL Experience Manager] et garantit la cohérence de la gestion de contenu et une productivité élevée pour les auteurs de contenu.
 
 ## Forum aux questions {#frequently-asked-questions}
 
-### What is [!DNL Assets]? {#what-is-aem-assets}
+### Qu&#39;est-ce que [!DNL Assets] ? {#what-is-aem-assets}
 
-[!DNL Assets] est une fonctionnalité de [!DNL Experience Manager] qui permet aux utilisateurs de gérer leurs ressources numériques (images, vidéos, documents et clips audio) dans un référentiel Web. [!DNL Assets] inclut la prise en charge des métadonnées, les rendus, l’outil de recherche et l’interface d’administration.
+[!DNL Assets] est une fonctionnalité  [!DNL Experience Manager] qui permet aux utilisateurs de gérer leurs ressources numériques (images, vidéos, documents et clips audio) dans un référentiel Web. [!DNL Assets] inclut la prise en charge des métadonnées, les rendus, l’outil de recherche et l’interface d’administration.
 
-### What is the [!DNL Experience Manager] Media Library? {#what-is-the-aem-media-library}
+### Qu&#39;est-ce que la [!DNL Experience Manager] bibliothèque de médias ? {#what-is-the-aem-media-library}
 
-The [!DNL Experience Manager] Media Library is a designated part of the [!DNL Experience Manager] WCM content repository where images and other shared resources are stored. La bibliothèque de supports fournit des fonctionnalités de base de gestion des ressources numériques à WCM.
+La [!DNL Experience Manager] bibliothèque de médias est une partie désignée du référentiel de contenu WCM [!DNL Experience Manager] dans lequel les images et les autres ressources partagées sont stockées. La bibliothèque de supports fournit des fonctionnalités de base de gestion des ressources numériques à WCM.
 
-### What do I get from [!DNL Assets] that is not part of WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+### Qu&#39;est-ce que je reçois de [!DNL Assets] qui ne fait pas partie de WCM ? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
-Unique features that are only available to customers of [!DNL Assets] are:
+Les fonctionnalités uniques disponibles uniquement pour les clients de [!DNL Assets] sont les suivantes :
 
 * La possibilité d’extraire et de modifier des métadonnées autres que le titre, les balises et la description
-* l’ [!DNL Assets] administrateur, disponible à partir de l’écran de bienvenue.
+* l&#39;administrateur [!DNL Assets], disponible à partir de l&#39;écran de bienvenue.
 * toutes les étapes du processus liées à Digital Asset Management, telles que l’assimilation, la suppression de ressources, la gestion des sous-ressources, l’extraction des métadonnées.
-* bibliothèques, y compris `dam` dans l’espace du package.
+* y compris `dam` dans l’espace package.
 
-Using these features requires a valid license of [!DNL Assets].
+L&#39;utilisation de ces fonctionnalités requiert une licence valide de [!DNL Assets].
 
-### Is [!DNL Assets] available as a separate Package? {#is-aem-assets-available-as-a-separate-package}
+### [!DNL Assets] est-il disponible en tant que package distinct ? {#is-aem-assets-available-as-a-separate-package}
 
-Non. To ease installation and deployment, all [!DNL Experience Manager] applications and add-ons are delivered in one single package with all functionality included. Cela ne signifie pas que vous avez le droit d’utiliser toutes les fonctionnalités incluses dans le module.
+Non. Pour faciliter l&#39;installation et le déploiement, toutes les applications [!DNL Experience Manager] et les modules complémentaires sont fournis dans un seul pack avec toutes les fonctionnalités incluses. Cela ne signifie pas que vous avez le droit d’utiliser toutes les fonctionnalités incluses dans le module.
 
-### Je souhaite modifier les métadonnées des ressources numériques. Ai-je besoin [!DNL Assets]? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+### Je souhaite modifier les métadonnées des ressources numériques. Ai-je besoin de [!DNL Assets] ? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
 Si vous prévoyez de modifier les métadonnées autres que le titre, la description et les balises, vous aurez besoin d’une licence [!DNL Assets].
 
-### Je souhaite utiliser le prédicat de catégorie sur mon site web. Ai-je besoin [!DNL Assets]? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+### Je souhaite utiliser le prédicat de catégorie sur mon site web. Ai-je besoin de [!DNL Assets] ? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Oui, le prédicat de la catégorie fait partie de [!DNL Assets] et nécessite une [!DNL Assets] licence.
+Oui, le prédicat de catégorie fait partie de [!DNL Assets] et nécessite une licence [!DNL Assets].
 
-### Je souhaite redimensionner automatiquement les images lors de l’importation. Ai-je besoin [!DNL Assets]? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+### Je souhaite redimensionner automatiquement les images lors de l’importation. Ai-je besoin de [!DNL Assets] ? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Non. Resizing and automatic workflow-driven transformation of static images as well as the ability to manage renditions are part of [!DNL Experience Manager] Media Library. These features do not require an [!DNL Assets] license.
+Non. Le redimensionnement et la transformation automatique des images statiques, pilotées par le flux de travail, ainsi que la capacité de gérer les rendus font partie de [!DNL Experience Manager] Media Library. Ces fonctionnalités ne nécessitent pas de licence [!DNL Assets].
 
-### Je souhaite redimensionner des images à l’aide d’un composant image personnalisé. Ai-je besoin [!DNL Assets]? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+### Je souhaite redimensionner des images à l’aide d’un composant image personnalisé. Ai-je besoin de [!DNL Assets] ? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
-Le composant d’image fait partie de WCM. The graphics library that is being used by the image component (but also by [!DNL Assets]) is part of the [!DNL Experience Manager] platform and does not require an [!DNL Assets] license.
+Le composant d’image fait partie de WCM. La bibliothèque graphique utilisée par le composant d&#39;image (mais également par [!DNL Assets]) fait partie de la plate-forme [!DNL Experience Manager] et ne nécessite pas de licence [!DNL Assets].
 
-### How can I prevent my users from using [!DNL Assets] if I did not license [!DNL Assets]? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+### Comment puis-je empêcher mes utilisateurs d’utiliser [!DNL Assets] si je n’avais pas de licence [!DNL Assets] ? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-You can remove all [!DNL Assets]-specific workflows, components, taxonomies, options and the [!DNL Assets] admin from [!DNL Experience Manager]. Doing so prevents your users from accidentally using [!DNL Assets] features that you did not license.
+Vous pouvez supprimer tous les workflows, composants, taxonomies, options spécifiques à [!DNL Assets] et l&#39;administrateur [!DNL Assets] de [!DNL Experience Manager]. Cela empêche vos utilisateurs d&#39;utiliser accidentellement des fonctionnalités [!DNL Assets] que vous n&#39;aviez pas sous licence.
 
-### Je souhaite ajouter des images à une page et recadrer ou redimensionner ces images. Do I need Assets? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+### Je souhaite ajouter des images à une page et recadrer ou redimensionner ces images. Ai-je besoin de ressources ? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-For this use case it is not required to buy [!DNL Assets], even the use of the Media Library is not required to use images on a website as the smart image component allows uploading images directly into the page.
+Dans ce cas d’utilisation, il n’est pas nécessaire d’acheter [!DNL Assets], même l’utilisation de la bibliothèque de médias n’est pas nécessaire pour utiliser des images sur un site Web car le composant d’image dynamique permet de télécharger directement des images dans la page.
 
-### A detailed list of features available in [!DNL Assets] vs Media Library {#listoffeatures}
+### Liste détaillée des fonctionnalités disponibles dans [!DNL Assets] par rapport à la bibliothèque de médias {#listoffeatures}
 
 **Experience Manager Assets**
 
@@ -75,7 +75,7 @@ For this use case it is not required to buy [!DNL Assets], even the use of the M
 * Profils de traitement
 * [!DNL Adobe InDesign Server] intégration
 * Modèles d’actifs et structure de production de catalogue
-* [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]et [!DNL Adobe InDesign] intégration
+* [!DNL Adobe Photoshop],  [!DNL Adobe Illustrator]et  [!DNL Adobe InDesign] intégration
 * Gestion des ressources multilingues
 * Intégration PIM
 * Gestion des droits
@@ -85,7 +85,7 @@ For this use case it is not required to buy [!DNL Assets], even the use of the M
 * Rapports et analyses des ressources appelés statistiques
 * Gestion des ressources 3D
 * Ressources connectées
-* Brand Portal
+* Brand Portal
 * Accès en libre-service
 * Parcourir, rechercher et télécharger
 * Collections et partage de dossiers
