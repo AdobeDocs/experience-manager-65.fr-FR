@@ -20,11 +20,11 @@ ht-degree: 4%
 
 # Modèles de site {#site-templates}
 
-La console Modèles de site est très similaire à la console Modèles [de](tools-groups.md) groupe, qui est axée sur des fonctions présentant un intérêt pour les groupes communautaires.
+La console Modèles de site est très similaire à la console [Modèles de groupe](tools-groups.md), qui se concentre sur des fonctions présentant un intérêt pour les groupes communautaires.
 
 >[!NOTE]
 >
->Les consoles pour la création de sites [](sites-console.md)communautaires, de modèles [de sites](sites.md)communautaires, de modèles de groupes de [communautés et de fonctions de](tools-groups.md) [communauté ne sont utilisées que dans l&#39;environnement d&#39;auteur.](functions.md)
+>Les consoles pour la création de [sites communautaires](sites-console.md), [modèles de sites communautaires](sites.md), [modèles de groupes communautaires](tools-groups.md) et [fonctions communautaires](functions.md) ne sont utilisées que dans l&#39;environnement d&#39;auteur.
 
 ## Console Modèles de site {#site-templates-console}
 
@@ -32,7 +32,7 @@ Dans l’environnement de l’auteur, pour accéder à la console des sites comm
 
 * A partir de la navigation globale : **[!UICONTROL Outils > Communautés > Modèles de site]**
 
-Cette console affiche les modèles à partir desquels un site [](sites-console.md) communautaire peut être créé et permet de créer de nouveaux modèles de site.
+Cette console affiche les modèles à partir desquels un [site communautaire](sites-console.md) peut être créé et permet de créer de nouveaux modèles de site.
 
 ![site-template](assets/site-template.png)
 
@@ -42,7 +42,7 @@ Pour commencer à créer un modèle de site, sélectionnez `Create`.
 
 Le panneau Editeur de site qui contient 3 sous-panneaux s’affiche alors :
 
-### Basic info {#basic-info}
+### Informations de base {#basic-info}
 
 ![site-template-basicinfo](assets/site-template-basicinfo.png)
 
@@ -60,7 +60,7 @@ Dans le panneau Informations de base, un nom, une description et si le modèle e
 
    Bascule permettant de contrôler si le modèle est référencé.
 
-### Miniature  {#thumbnail}
+### Miniature   {#thumbnail}
 
 ![site-miniature](assets/site-thumbnail.png)
 
@@ -72,7 +72,7 @@ Dans le panneau Informations de base, un nom, une description et si le modèle e
 
 Pour ajouter des fonctions de communauté, faites glisser le curseur de droite vers la gauche dans l&#39;ordre d&#39;affichage des liens du menu du site. Les styles seront appliqués au modèle lors de la création du site.
 
-Par exemple, si vous souhaitez une page d&#39;accueil, faites glisser la fonction Page de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration de la page s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la console [](functions.md) fonctions.
+Par exemple, si vous souhaitez une page d&#39;accueil, faites glisser la fonction Page de la bibliothèque et déposez-la sous le créateur de modèles. La boîte de dialogue de configuration de la page s’ouvre alors. Pour plus d&#39;informations sur les boîtes de dialogue de configuration, consultez la [console des fonctions](functions.md).
 
 Continuez à faire glisser et à déposer toutes les autres fonctions de la communauté souhaitées pour un site communautaire en fonction de ce modèle.
 
@@ -80,9 +80,9 @@ La fonction page fournit une page vide. La fonction de groupes permet de créer 
 
 >[!CAUTION]
 >
->La fonction de groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
+>La fonction groups doit *ne pas* être la *première fonction ou la seule* fonction dans la structure du site.
 >
->Toute autre fonction, telle que la fonction [de](functions.md#page-function)page, doit être incluse et répertoriée en premier.
+>Toute autre fonction, telle que la fonction de page [page](functions.md#page-function), doit être incluse et répertoriée en premier.
 
 ![éditeur de site](assets/site-editor.png)
 
@@ -92,7 +92,7 @@ Lorsque vous incluez une fonction de groupes dans le modèle de site, la configu
 
 >[!CAUTION]
 >
->La fonction Groupes *ne doit pas* être la *première ou la seule* fonction de la structure du site.
+>La fonction Groups doit *ne pas* être la première fonction *ni la seule fonction* dans la structure du site.
 
 ![fonction de site](assets/site-functions.png)
 
@@ -102,6 +102,6 @@ En sélectionnant au moins deux modèles de groupe de communauté, un choix est 
 
 ## Modifier le modèle de site{#edit-site-template}
 
-Lorsque vous consultez des modèles de site dans la console [](#site-templates-console)principale Modèles de site, il est possible de sélectionner un modèle de site existant à modifier.
+Lorsque vous consultez des modèles de site dans la console principale [Modèles de site](#site-templates-console), il est possible de sélectionner un modèle de site existant à modifier.
 
-Ce processus fournit les mêmes panneaux que la [création d’un modèle](#create-site-template)de site.
+Ce processus fournit les mêmes panneaux que [la création d&#39;un modèle de site](#create-site-template).
