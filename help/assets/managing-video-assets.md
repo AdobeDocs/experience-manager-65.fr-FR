@@ -1,79 +1,79 @@
 ---
 title: 'Gestion des ressources vidéo '
-description: Téléchargez, prévisualisation, annotez et publiez des fichiers vidéo dans [!DNL Adobe Experience Manager].
+description: Charger, prévisualiser, annoter et publier des ressources vidéo dans [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 36%
+ht-degree: 58%
 
 ---
 
 
-# Gestion des ressources vidéo  {#manage-video-assets}
+# Gestion des ressources vidéo   {#manage-video-assets}
 
-Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] Les offres développent des offres et des fonctionnalités pour gérer tout le cycle de vie des ressources vidéo après leur création.
+Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] propose des solutions et des fonctionnalités matures pour gérer l’ensemble du cycle de vie de vos ressources vidéo après leur création.
 
-Learn how to manage and edit the video assets in [!DNL Adobe Experience Manager Assets]. Le codage et le transcodage vidéo, par exemple, le transcodage FFmpeg, sont possibles à l’aide de [!DNL Dynamic Media] l’intégration.
+Découvrez comment gérer et modifier les ressources vidéo dans [!DNL Adobe Experience Manager Assets]. Le codage et le transcodage vidéo, par exemple, le transcodage FFmpeg, sont possibles à l’aide de l’intégration [!DNL Dynamic Media].
 
 ## Chargement et prévisualisation des ressources vidéo {#upload-and-preview-video-assets}
 
-[!DNL Adobe Experience Manager Assets] génère des prévisualisations pour les fichiers vidéo avec l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualisation les rendus dans l’interface [!DNL Assets] utilisateur.
+[!DNL Adobe Experience Manager Assets] génère des aperçus pour les contenus vidéo dotés de l’extension MP4. Si le format de la ressource n’est pas MP4, installez le pack FFmpeg pour générer une prévisualisation. FFmpeg crée des rendus vidéo de type OGG et MP4. Vous pouvez prévisualiser les rendus dans l’interface utilisateur [!DNL Assets].
 
-1. Dans le dossier ou les sous-dossiers des ressources numériques, accédez à l’emplacement où vous souhaitez ajouter des ressources numériques.
-1. To upload the asset, click **[!UICONTROL Create]** from the toolbar and choose **[!UICONTROL Files]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](manage-assets.md#uploading-assets) pour plus d’informations.
-1. To preview a video in the Card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
+1. Dans le dossier Ressources numériques ou ses sous-dossiers, accédez à l’emplacement où vous souhaitez ajouter les ressources numériques.
+1. Pour charger le contenu, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](manage-assets.md#uploading-assets) pour plus d’informations.
+1. Pour prévisualisation d’une vidéo dans la vue Carte, cliquez sur l’option **[!UICONTROL Lecture]** ![lecture](assets/do-not-localize/play.png) de la ressource vidéo. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les options [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue de liste.
 
-1. To preview the video in the asset details page, click **[!UICONTROL Edit]** on the card. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
+1. Pour prévisualisation de la vidéo dans la page des détails de la ressource, cliquez sur **[!UICONTROL Modifier]** sur la carte. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
 
    ![Commandes de lecture vidéo](assets/video-playback-controls.png)
 
 ## Configuration pour télécharger des ressources d’une taille supérieure à 2 Go {#configuration-to-upload-assets-that-are-larger-than-gb}
 
-By default, [!DNL Assets] does not let you upload any assets that are larger than 2 GB because of a file size limit. Néanmoins, vous pouvez contourner cette limite en accédant à CRXDE Lite et en créant un nœud dans le répertoire `/apps`. Le nœud doit comporter le même nom, la même structure de répertoire et des propriétés comparables.
+Par défaut, [!DNL Assets] ne vous permet pas de télécharger des fichiers de plus de 2 Go en raison d’une taille de fichier limitée. Néanmoins, vous pouvez contourner cette limite en accédant à CRXDE Lite et en créant un nœud dans le répertoire `/apps`. Le nœud doit comporter le même nom, la même structure de répertoire et des propriétés comparables.
 
-In addition to [!DNL Assets] configuration, change the following configurations to upload large assets:
+Outre la configuration [!DNL Assets], modifiez les configurations suivantes pour télécharger des fichiers volumineux :
 
-* Augmentez le délai d’expiration du jeton. Voir Servlet [!UICONTROL CSRF] Granite Adobe dans la console Web à l’adresse `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir Protection [](/help/sites-developing/csrf-protection.md)CSRF.
+* Augmentez le délai d’expiration du jeton. Voir [!UICONTROL Adobe Granite CSRF Servlet] dans Web Console à `https://[aem_server]:[port]/system/console/configMgr`. Pour plus d’informations, voir [Protection CSRF](/help/sites-developing/csrf-protection.md).
 * Augmentez la configuration `receiveTimeout` du répartiteur. Pour plus d’informations, voir [Configuration du répartiteur Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
->The [!DNL Experience Manager] Classic user interface does not have a 2-GB file size limit restriction. Par ailleurs, le processus de bout en bout pour des vidéos volumineuses n’est pas entièrement pris en charge.
+>L&#39;interface utilisateur de [!DNL Experience Manager] Classic ne contient pas de limite de taille de fichier de 2 Go. Par ailleurs, le processus de bout en bout pour des vidéos volumineuses n’est pas entièrement pris en charge.
 
 Pour configurer une limite de taille de fichier supérieure, procédez comme suit dans le répertoire `/apps`.
 
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
-1. Dans CRXDE Lite, accédez à `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. To see the directory window, click the `>>`.
-1. From the toolbar, click the **[!UICONTROL Overlay Node]**. Vous pouvez également sélectionner **[!UICONTROL Nœud de recouvrement]** dans le menu contextuel.
-1. In the **[!UICONTROL Overlay Node]** dialog, click **[!UICONTROL OK]**.
+1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Dans CRXDE Lite, accédez à `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Pour afficher la fenêtre d&#39;annuaire, cliquez sur `>>`.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Noeud d’incrustation]**. Vous pouvez également sélectionner **[!UICONTROL Nœud de recouvrement]** dans le menu contextuel.
+1. Dans la boîte de dialogue **[!UICONTROL Noeud d’incrustation]**, cliquez sur **[!UICONTROL OK]**.
 
    ![Nœud de recouvrement](assets/overlay-node-path.png)
 
 1. Actualisez le navigateur. Le nœud de recouvrement `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` est sélectionné.
 1. Dans l’onglet **[!UICONTROL Propriétés]**, saisissez la valeur appropriée en octets pour définir la taille maximale souhaitée. Par exemple, pour augmenter la taille limite à 30 Go, entrez la valeur `32212254720`.
 
-1. From the toolbar, click **[!UICONTROL Save All]**.
-1. In [!DNL Experience Manager], click **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. On the [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles] page, under the Name column of the table, locate and click **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
-1. On the [!UICONTROL Adobe Granite Workflow External Process Job Handler] page, set the seconds for both **[!UICONTROL Default Timeout]** and **[!UICONTROL Max Timeout]** fields to `18000` (five hours). Cliquez sur **[!UICONTROL Save]**.
-1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**.
-1. On the Workflow Models page, select **[!UICONTROL Dynamic Media Encode Video]**, then click **[!UICONTROL Edit]**.
-1. On the workflow page, double-click the **[!UICONTROL Dynamic Media Video Service Process]** component.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Enregistrer tout]**.
+1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
+1. Dans la page [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles], sous la colonne Nom du tableau, recherchez **[!UICONTROL Adobe Granite Workflow External Process Handler]**, puis cliquez sur &lt;a3/> Granite Workflow External Process Handler.
+1. Sur la page [!UICONTROL Adobe Granite Workflow External Process Handler], définissez les secondes pour les champs **[!UICONTROL Default Timeout]** et **[!UICONTROL Max Timeout]** sur `18000` (cinq heures). Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Dans [!DNL Experience Manager], cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
+1. Sur la page Modèles de processus, sélectionnez **[!UICONTROL Dynamic Media Encode Video]**, puis cliquez sur **[!UICONTROL Modifier]**.
+1. Dans la page de flux de travaux, cliquez sur le composant **[!UICONTROL Processus du service de vidéo multimédia dynamique]** en appuyant sur le doublon.
 1. Dans la boîte de dialogue [!UICONTROL Propriétés des étapes], sous l’onglet **[!UICONTROL Commun]**, développez **Paramètres avancés**.
-1. In the **[!UICONTROL Timeout]** field, specify a value of `18000`, then click **[!UICONTROL OK]** to return to the **[!UICONTROL Dynamic Media Encode Video]** workflow page.
-1. Near the top of the page, below the [!UICONTROL Dynamic Media Encode Video] page title, click **[!UICONTROL Save]**.
+1. Dans le champ **[!UICONTROL Délai d’expiration]**, spécifiez la valeur `18000`, puis cliquez sur **[!UICONTROL OK]** pour revenir à la page de flux de travaux **[!UICONTROL Dynamic Media Encode Video]**.
+1. Près du haut de la page, sous le titre de la page [!UICONTROL Dynamic Media Encode Video], cliquez sur **[!UICONTROL Enregistrer]**.
 
 ## Publication de ressources vidéo {#publish-video-assets}
 
-Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web sous la forme d’une URL ou les incorporer directement. Pour plus d’informations, voir [Publication de fichiers](/help/assets/publishing-dynamicmedia-assets.md)Contenu multimédia dynamique.
+Après la publication, vous pouvez inclure les ressources vidéo dans une page web sous la forme d’une URL ou les intégrer directement. Pour plus d’informations, voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Annotation de ressources vidéo {#annotate-video-assets}
 
-1. Dans la [!DNL Assets] console, sélectionnez **[!UICONTROL Modifier]** sur la carte de ressources pour afficher la page des détails de la ressource.
-1. Pour lire la vidéo, cliquez sur **[!UICONTROL Prévisualisation]**.
-1. To annotate the video, click **[!UICONTROL Annotate]**. Une annotation est ajoutée au moment (image) particulier de la vidéo. Lorsque vous annotez, vous pouvez dessiner sur le canevas et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés. Pour quitter l’assistant d’annotation, cliquez sur **[!UICONTROL Fermer]**.
+1. Dans la console [!DNL Assets], sélectionnez **[!UICONTROL Modifier]** sur la carte de ressources pour afficher la page de détails de la ressource.
+1. Pour lire la vidéo, cliquez sur **[!UICONTROL Aperçu]**.
+1. Pour annoter la vidéo, cliquez sur **[!UICONTROL Annoter]**. Une annotation est ajoutée à ce moment de la vidéo. Lorsque vous annotez, vous pouvez dessiner sur le canevas et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés. Pour quitter l’assistant d’annotation, cliquez sur **[!UICONTROL Fermer]**.
 
    ![Dessin et annotation sur une image vidéo](assets/annotate-video.png)
 
@@ -89,5 +89,5 @@ Après la publication, vous pouvez inclure les fichiers vidéo dans une page Web
 >
 >* [Gestion des ressources numériques dans les ressources Experience Manager](/help/assets/manage-assets.md)
 >* [Gestion des collections dans les ressources Experience Manager](/help/assets/manage-collections.md)
->* [Documentation](/help/assets/video.md)vidéo sur les médias dynamiques.
+>* [Documentation vidéo de Dynamic Media](/help/assets/video.md).
 
