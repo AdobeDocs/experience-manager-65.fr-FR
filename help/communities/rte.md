@@ -24,15 +24,15 @@ ht-degree: 3%
 
 Un éditeur de texte enrichi (RTE) permet de saisir du texte avec des annotations.
 
-Pour les composants Communities, bien que semblables à l’éditeur de texte [enrichi dans l’environnement](../../help/sites-authoring/rich-text-editor.md)d’auteur, elles affectent le texte saisi dans l’environnement de publication.
+Pour les composants Communities, bien que semblable à l’éditeur de texte enrichi [dans l’environnement d’auteur](../../help/sites-authoring/rich-text-editor.md), il affecte le texte saisi dans l’environnement de publication.
 
 ![éditeur de texte enrichi](assets/rich-text-editor.png)
 
 ## Activation de l’éditeur de texte enrichi {#enabling-rich-text-editor}
 
-Les composants de communautés qui autorisent le contenu généré par l’utilisateur (UGC) peuvent être activés pour autoriser RTE. Selon que le composant a été ajouté à une page ou inclus dans une [fonction](functions.md), RTE peut être activé ou non par défaut.
+Les composants de communautés qui autorisent le contenu généré par l’utilisateur (UGC) peuvent être activés pour autoriser RTE. Selon que le composant a été ajouté à une page ou inclus dans une fonction [](functions.md), RTE peut être activé ou non par défaut.
 
-Si elle n’est pas activée, il vous suffit de passer en mode [d’édition](sites-console.md#authoring-site-content)Auteur, de sélectionner le composant à modifier et de cocher la `Rich Text Editor` case.
+Si cette option n’est pas activée, il vous suffit d’entrer [le mode d’édition de l’auteur](sites-console.md#authoring-site-content), de sélectionner le composant à modifier et de cocher la case `Rich Text Editor`.
 
 RTE est disponible pour les composants de communautés suivants :
 
@@ -47,9 +47,9 @@ RTE est disponible pour les composants de communautés suivants :
 
 ## Personnalisation {#customization}
 
-La personnalisation de l&#39;éditeur de texte enrichi est possible car l&#39;implémentation est basée sur [CKEEditor](https://www.ckeditor.com/).
+La personnalisation de l’éditeur de texte enrichi est possible car l’implémentation est basée sur [CKEEditor](https://www.ckeditor.com/).
 
-La configuration actuelle pour les composants Communautés se trouve dans le `cq.social.  scf   clientlib`, situé dans le référentiel à l’emplacement
+La configuration actuelle des composants Communities se trouve dans le `cq.social.  scf   clientlib`, situé dans le référentiel à l’adresse
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -63,7 +63,7 @@ Pour ajouter les options d’hyperlien à la barre d’outils :
 
 * Ajouter une barre d&#39;outils nommée &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Select **[!UICONTROL Save All]**
+* Sélectionner **[!UICONTROL Enregistrer tout]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 
