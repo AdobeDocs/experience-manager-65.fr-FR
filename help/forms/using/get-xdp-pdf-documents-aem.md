@@ -28,13 +28,13 @@ Vous pouvez importer vos formulaires depuis votre système de fichiers local ver
 * Formulaires PDF
 * Document (documents PDF aplatis)
 
-Vous pouvez transférer les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. You can upload an asset of the type `Resource`, only alongside an XFA form in a ZIP archive.
+Vous pouvez transférer les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger un fichier de type `Resource`, uniquement en regard d’un formulaire XFA dans une archive ZIP.
 
 >[!NOTE]
 >
 >Assurez-vous d’être membre du groupe `form-power-users` pour pouvoir télécharger des fichiers XDP. Contactez votre administrateur pour devenir membre du groupe.
 
-## Chargement de formulaires {#uploading-forms}
+## Chargement de formulaires  {#uploading-forms}
 
 1. Connectez-vous à l’interface utilisateur AEM Forms en accédant à `https://'[server]:[port]'/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
@@ -62,13 +62,13 @@ Vous pouvez transférer les types de ressource pris en charge individuellement o
 
 Une fois le transfert terminé, un processus d’arrière-plan génère des vignettes pour chaque ressource, en fonction de l’aperçu de cette dernière. Les nouvelles versions des ressources, si elles ont été transférées, écrasent les ressources existantes.
 
-### Mode Protégé {#protected-mode}
+### Mode Protégé  {#protected-mode}
 
 Le serveur AEM Forms vous permet d’exécuter du code JavaScript. Du code JavaScript malveillant peut endommager un environnement AEM Forms. Le mode Protégé restreint AEM Forms afin d’exécuter les fichiers XDP uniquement à partir de ressources et d’emplacements approuvés. Tous les XDP disponibles dans l’interface utilisateur d’AEM Forms sont considérés comme des ressources approuvées.
 
 Le mode Protégé est activé par défaut. Si nécessaire, vous pouvez désactiver le mode Protégé :
 
-1. Connectez-vous à la console Web AEM en tant qu’administrateur. The URL is https://&#39;[server]:[port]&#39;/system/console/configMgr
+1. Connectez-vous à la console Web AEM en tant qu’administrateur. L’URL est https://&#39;[server]:[port]&#39;/system/console/configMgr
 1. Ouvrez les configurations de Mobile Forms pour l’édition.
 1. Désélectionnez l’option Mode Protégé et cliquez sur **Enregistrer**. Le mode Protégé est désactivé.
 
@@ -85,7 +85,7 @@ La suppression d’un modèle de formulaire altère le formulaire adaptatif ou l
 
 ![Avertissement de formulaire adaptatif désynchronisé après la mise à jour du formulaire DFA associé](assets/dirtyaf.png)
 
-Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Only for dirty adaptive forms, a metadata property `Model Refresh` displays `Recommended` value.
+Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Uniquement pour les formulaires adaptatifs non conformes, une propriété de métadonnées `Model Refresh` affiche la valeur `Recommended`.
 
 ![Indication d’un formulaire adaptatif désynchronisé par rapport au modèle XFA](assets/model-refresh.png)
 
