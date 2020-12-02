@@ -36,7 +36,7 @@ La solution consiste à configurer des connexions persistantes au niveau de l’
 
 Si une instance de publication devient inaccessible, tous les utilisateurs authentifiés sur cette instance perdent leur session, puisque pour valider le cookie d’authentification, il est nécessaire d’accéder au référentiel.
 
-## Authentification sans état avec le jeton encapsulé {#stateless-authentication-with-the-encapsulated-token}
+## Authentification sans état avec le jeton encapsulé  {#stateless-authentication-with-the-encapsulated-token}
 
 Pour permettre une évolutivité horizontale, la solution consiste à recourir à une authentification sans état grâce à la nouvelle prise en charge des jetons encapsulés dans AEM.
 
@@ -53,7 +53,7 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 >Par exemple, si un nouvel utilisateur est créé sur l’instance de publication 1, en raison du fonctionnement du jeton encapsulé, il est authentifié correctement sur l’instance de publication 2. Si l’utilisateur n’existe pas sur la deuxième instance de publication, la demande ne réussit toujours pas.
 
 
-## Configuration du jeton encapsulé {#configuring-the-encapsulated-token}
+## Configuration du jeton encapsulé  {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >Tous les gestionnaires d’authentification qui synchronisent les utilisateurs et reposent sur l’authentification par jeton (tels que SAML et OAuth) ne fonctionnent qu’avec des jetons encapsulés si :
@@ -61,7 +61,7 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 >* Les sessions bascules sont activées ou
    >
    >
-* Les utilisateurs sont déjà créés dans AEM lors du début de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les situations où les gestionnaires **créent** des utilisateurs pendant le processus de synchronisation.
+* Les utilisateurs sont déjà créés dans AEM lors du début de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **créent** des utilisateurs pendant le processus de synchronisation.
 
 
 Lors de la configuration du jeton encapsulé, différents éléments doivent être pris en compte :
@@ -69,9 +69,9 @@ Lors de la configuration du jeton encapsulé, différents éléments doivent êt
 1. Compte tenu du chiffrement impliqué, toutes les instances doivent posséder la même clé HMAC. À compter d’AEM 6.3, le matériel de la clé n’est plus stocké dans le référentiel, mais sur le système de fichiers réel. Ainsi, la meilleure façon de répliquer les clés consiste à les copier du système de fichiers de l’instance source vers celle des instances cibles sur lesquelles vous souhaitez répliquer les clés. Consultez les informations supplémentaires dans la section « Réplication de la clé HMAC » ci-dessous.
 1. Le jeton encapsulé doit être activé. Cette opération peut être effectuée à l’aide de la console web.
 
-### Réplication de la clé HMAC {#replicating-the-hmac-key}
+### Réplication de la clé HMAC  {#replicating-the-hmac-key}
 
-The HMAC key is present as a binary property of `/etc/key` in the repository. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en regard :
+La clé HMAC est présente comme une propriété binaire de `/etc/key` dans le référentiel. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en regard :
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
