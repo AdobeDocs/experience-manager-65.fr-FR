@@ -24,7 +24,7 @@ ht-degree: 85%
 
 Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification apportée, comme lors du déploiement d’un nouveau groupe de correctifs ou de la modification d’une règle dans le formulaire. Cependant, les formulaires adaptatifs de test fonctionnel et tous les champs qu’ils contiennent peuvent s’avérer fastidieux.
 
-Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web. Calvin utilizes [Hobbes](/help/sites-developing/hobbes.md)&#39;s user interface for running the tests and provides the following tools:
+Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web. Calvin utilise l&#39;interface utilisateur de [Hobbes](/help/sites-developing/hobbes.md) pour exécuter les tests et fournit les outils suivants :
 
 * Une API JavaScript pour créer des tests.
 * Une interface utilisateur pour exécuter des tests.
@@ -89,15 +89,15 @@ En utilisant Calvin, vous pouvez créer des cas de test dans CRXDE et exécuter 
 
 Avant d’utiliser cet article pour créer vos cas de test, vous devez savoir ce qui suit :
 
-* Creating test suites and executing test cases using [Hobbes](https://docs.adobe.com/docs/fr/aem/6-3/develop/components/hobbes.html)
+* Création de suites de tests et exécution de tests à l&#39;aide de [Hobbes](https://docs.adobe.com/docs/fr/aem/6-3/develop/components/hobbes.html)
 * [API JavaScript Hobbes](https://docs.adobe.com/docs/fr/aem/6-2/develop/ref/test-api/index.html)
 * [API JavaScript Calvin](https://helpx.adobe.com/fr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test  {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 L’exemple suivant vous guide dans la création d’une suite de tests pour tester plusieurs formulaires adaptatifs. Vous devez créer un cas de test distinct pour chaque formulaire que vous souhaitez tester. En effectuant des étapes similaires à celles ci-dessous et en modifiant le code JavaScript à l’étape 11, vous pouvez créer votre propre suite de tests pour tester vos formulaires adaptatifs.
 
-1. Go to CRXDE Lite in your web browser: `https://'[server]:[port]'/crx/de`.
+1. Accédez au CRXDE Lite dans votre navigateur Web : `https://'[server]:[port]'/crx/de`.
 1. Cliquez avec le bouton droit sur le sous-dossier /etc/clientlibs et sélectionnez **Créer** > **Créer un nœud**. Saisissez un nom (ici afTestRegistration), spécifiez le type de nœud en tant que cq:ClientLibraryFolder, puis cliquez sur **OK**.
 
    Le dossier clientlibs contient l’aspect enregistrement de votre application (JS et Init). Il est recommandé d’enregistrer tous les objets de suites de tests Hobbes spécifiques à un formulaire dans le dossier clientlibs.
@@ -130,7 +130,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
 ![1_aftestRegistration](assets/1_aftestregistration.png)
 
-1. Right-click the test node (here **afTestRegistration)** and then click **Create** > **Create File**. Nommez le fichier js.txt et cliquez sur **OK**.
+1. Cliquez avec le bouton droit sur le noeud de test (ici **afTestRegistration)**, puis cliquez sur **Créer** > **Créer un fichier**. Nommez le fichier js.txt et cliquez sur **OK**.
 1. Dans le fichier js.txt, ajoutez le texte suivant :
 
    ```javascript
@@ -139,8 +139,8 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
    ```
 
 1. Cliquez sur **Enregistrer tout** et fermez le fichier js.txt.
-1. Right-click the test node (here **afTestRegistration)** and click **Create** > **Create File**. Nommez le fichier init.js et cliquez sur **OK**.
-1. Copy the following code to the init.js file and click **Save All**:
+1. Cliquez avec le bouton droit sur le noeud de test (ici **afTestRegistration)** et cliquez sur **Créer** > **Créer un fichier**. Nommez le fichier init.js et cliquez sur **OK**.
+1. Copiez le code suivant dans le fichier init.js et cliquez sur **Enregistrer tout** :
 
    ```javascript
    (function(window, hobs) {
@@ -167,8 +167,8 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
    | **Propriété** | **Type** | **Valeur** |
    |---|---|---|
-   | categories | Chaîne[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.test.testForm |
-   | dependencies | Chaîne[] | granite.testing.calvin.tests |
+   | catégories | Chaîne[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.test.testForm |
+   | dépendances | Chaîne[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -178,7 +178,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
 
 1. Cliquez avec le bouton droit sur le dossier que vous avez créé pour le formulaire de test (ici testForm) et sélectionnez **Créer** > **Créer un fichier**. Nommez le fichier scriptingTest.js et ajoutez le code suivant au fichier, puis cliquez sur **Enregistrer tout.**
 
-   Pour utiliser le code suivant afin de tester un autre formulaire adaptatif, modifiez le chemin et le nom du formulaire dans **navigateTo** (lignes 11, 36 et 62) et dans les cas de test respectifs. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/fr/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Pour utiliser le code suivant afin de tester un autre formulaire adaptatif, modifiez le chemin et le nom du formulaire dans **navigateTo** (lignes 11, 36 et 62) et dans les cas de test respectifs. Pour plus d’informations sur les API pour tester différents aspects des formulaires et des objets de formulaire, voir [API Calvin](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```javascript
    (function(window, hobs) {
@@ -272,7 +272,7 @@ L’exemple suivant vous guide dans la création d’une suite de tests pour tes
     }(window, window.hobs));
    ```
 
-   Le cas de test est créé. Passez à l’exécution du test pour tester les formulaires adaptatifs via Hobbes. For steps for running the test cases, see [Executing Tests in Testing Your UI Using Automated Tests](/help/sites-developing/hobbes.md).
+   Le cas de test est créé. Passez à l’exécution du test pour tester les formulaires adaptatifs via Hobbes. Pour connaître les étapes d&#39;exécution des cas de test, voir [Exécution de tests dans Test de votre interface utilisateur à l&#39;aide de tests automatisés](/help/sites-developing/hobbes.md).
 
 Vous pouvez également installer le package dans le fichier joint SampleTestPackage.zip pour obtenir les mêmes résultats qu’avec les étapes expliquées dans Exemple : créer une suite de tests pour un formulaire adaptatif en utilisant Hobbes comme cadre de test.
 
@@ -286,7 +286,7 @@ Les suites de tests peuvent être exécutées séparément. Lorsque vous lancez 
 
 Une coche indique un test réussi : ![checkmark](assets/checkmark.png)
 
-An &quot;X&quot; icon indicates a failed test: ![cross](assets/cross.png)
+Une icône &quot;X&quot; indique un test qui a échoué : ![cross](assets/cross.png)
 
 Pour exécuter une suite de tests :
 
@@ -311,7 +311,7 @@ Les étapes de test de vos formulaires adaptatifs AEM sont similaires aux étape
 * Affichage de suites de tests
 * Exécution de plusieurs tests
 
-## Glossaire  {#glossary}
+## Glossaire   {#glossary}
 
 <table>
  <tbody>
