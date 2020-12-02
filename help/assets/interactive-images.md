@@ -73,7 +73,7 @@ Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégre
 >Cette tâche n’est nécessaire que si les conditions ci-dessous sont vraies :
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
->* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
+>* Votre mise en œuvre d’AEM n’utilise *pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans AEM à partir d’une solution de commerce électronique, comme IBM WebSphere Commerce, Elastic Path, Hybris ou Intershop. Reportez-vous à la section [Concepts de commerce électronique dans AEM Assets](/help/sites-administering/concepts.md).
 
 >
 >
@@ -81,7 +81,7 @@ Si votre mise en œuvre d’AEM utilise eCommerce, vous pouvez ignorer cette tâ
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre de l’aperçu rapide existant afin de pouvoir entrer les données de zone réactive pour créer l’image interactive.
 
-Lorsque vous ajoutez des zones réactives à une image de bannière dans AEM Assets, vous devez affecter un SKU (unité de gestion des stocks ; un identifiant unique pour chaque produit ou service distinct que vous fournissez) et des variables supplémentaires facultatives à chaque zone réactive. Ces variables de zones réactives sont utilisées ultérieurement pour faire corresponde des zones réactives avec du contenu d’aperçu rapide.
+Lorsque vous ajoutez des zones réactives à une image de bannière dans AEM Assets, vous devez affecter un SKU (unité de gestion des stocks ; un identifiant unique pour chaque produit ou service distinct que vous fournissez) et des variables supplémentaires facultatives à chaque zone réactive. Ces variables de zones réactives sont utilisées ultérieurement pour faire correspondre ces zones réactives avec du contenu d’aperçu rapide.
 
 Il est important d’identifier correctement le nombre et le type de variables à associer aux données de zone réactive. Chaque zone réactive ajoutée à une image de bannière doit comporter suffisamment d’informations pour identifier clairement le produit sur le système principal existant.
 
@@ -182,7 +182,7 @@ Sur la base de cette analyse, vous utiliseriez `categoryId` et `SKU` pour les zo
 
 Vous êtes à présent prêt à charger une bannière d’image et à y ajouter des zones réactives à l’aide de la fonctionnalité d’images interactives Shoppable d’AEM Assets.
 
-## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives    {#optional-creating-an-interactive-image-viewer-preset}
+## (Facultatif) Création d’un paramètre prédéfini de visionneuse d’images interactives   {#optional-creating-an-interactive-image-viewer-preset}
 
 Vous pouvez choisir d’utiliser la valeur par défaut, le paramètre prédéfini de visionneuse d’images interactives, appelé « `Shoppable_Banner` », qui est fourni avec AEM Assets. Vous pouvez également créer votre propre paramètre prédéfini de visionneuse personnalisé à utiliser avec les images interactives.
 
@@ -214,7 +214,7 @@ Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il 
 
    Vous êtes désormais prêt à charger une bannière d’image.
 
-## Chargement d’une bannière d’image    {#uploading-an-image-banner}
+## Chargement d’une bannière d’image   {#uploading-an-image-banner}
 
 Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l’étape suivante [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
 
@@ -226,7 +226,7 @@ Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l�
 
    Vous êtes maintenant prêt à ajouter des zones réactives à la bannière d’image. Reportez-vous à la tâche suivante ci-dessous.
 
-## Ajout de zones réactives à une bannière d’image    {#adding-hotspots-to-an-image-banner}
+## Ajout de zones réactives à une bannière d’image   {#adding-hotspots-to-an-image-banner}
 
 Vous pouvez ajouter des zones réactives à une bannière d’image à l’aide de l’éditeur dans la page Gestion des zones réactives.
 
@@ -236,8 +236,8 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience.
-Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+>N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience.
+Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.
 
@@ -294,7 +294,7 @@ Reportez-vous à la section [(Facultatif) Aperçu des images interactives ](#opt
 
    Veillez à spécifier si vous souhaitez ouvrir le lien dans un nouvel onglet du navigateur (paramètre par défaut recommandé) ou dans le même onglet.
 
-   Pour plus d’informations, reportez-vous à la section [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
+   Pour plus d’informations, voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
    * Appuyez sur **[!UICONTROL Fragment d’expérience.]**
 
@@ -305,8 +305,8 @@ Voir [Fragments d’expérience](/help/sites-authoring/experience-fragments.md).
 
          >[!NOTE]
          >
-         >N’oubliez pas que les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience.
-Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+         >N’oubliez pas que les outils de partage sur les médias sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience.
+Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres prédéfinis de visionneuse qui ne disposent pas d’outils de partage sur les médias sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 
 
@@ -323,13 +323,13 @@ Pour contourner ce problème, vous pouvez utiliser ou créer des paramètres pr�
    >
    >Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
-### (Facultatif) Aperçu des images interactives    {#optional-previewing-interactive-images}
+### (Facultatif) Aperçu des images interactives   {#optional-previewing-interactive-images}
 
 Vous pouvez utiliser la prévisualisation pour afficher une représentation de votre image interactive, telle qu’elle s’affichera pour les clients, et tester les zones réactives de l’image pour vous assurer qu’elles se comportent de la façon escomptée.
 
 Lorsque vous êtes satisfait de l’image interactive, vous pouvez la publier.
 Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
+Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). Notez que la méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages AEM Sites.
 Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 **Pour prévisualiser des images interactives**
@@ -379,13 +379,13 @@ L’intégration revient simplement à supprimer la balise `IMG` et à la rempla
 
 Pour appliquer un « recadrage » à une image interactive Shoppable pour un environnement réactif, vous pouvez inclure l’attribut de configuration de l’image interactive `ZoomView.iscommand` au chemin d’accès, où `ZoomView` correspond au composant à appeler et `iscommand` correspond à la commande de service d’images « crop » que vous appliquez.
 
-Voir l’attribut de configuration [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
+Voir l’attribut de configuration [ZoomView.iscommand](https://docs.adobe.com/content/help/fr/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html).
 
-Voir la commande de service d’images [crop](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)
+Voir la commande de service d’images [crop](https://docs.adobe.com/content/help/fr/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html).
 
 Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rapide existant de votre site web.
 
-## Intégration d’une image interactive dans un aperçu rapide existant    {#integrating-an-interactive-image-with-an-existing-quickview}
+## Intégration d’une image interactive dans un aperçu rapide existant   {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
@@ -401,7 +401,7 @@ L’implémentation d’aperçus rapides existante représente normalement une c
 1. La logique du serveur principal renvoie les données ou le contenu de l’aperçu rapide correspondant au code frontal.
 1. Le code frontal charge les données ou le contenu de l’aperçu rapide.
 1. Le code frontal convertit éventuellement les données téléchargées de l’aperçu rapide en une représentation HTML.
-1. Le code frontal affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur final.
+1. Le code en front-end affiche une boîte de dialogue ou un panneau modal et effectue le rendu du contenu HTML à l’écran pour l’utilisateur final.
 
 Ces appels peuvent ne pas représenter des appels d’API publiques indépendants qui peuvent être appelés par la logique de la page web depuis une étape arbitraire. À la place, il s’agit d’un appel chaîné où chaque étape suivante est masquée dans la dernière phase (rappel) de l’étape précédente.
 
