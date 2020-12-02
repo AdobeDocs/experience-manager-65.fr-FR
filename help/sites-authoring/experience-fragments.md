@@ -46,7 +46,7 @@ Vous pouvez utiliser des fragments d’expérience :
 >    `experience-fragments-editors`
 Si vous rencontrez des problèmes, contactez votre administrateur système.
 
-## Quand utiliser les fragments d’expérience ?   {#when-should-you-use-experience-fragments}
+## Quand utiliser les fragments d’expérience ?    {#when-should-you-use-experience-fragments}
 
 Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
@@ -160,7 +160,7 @@ Pour créer un fragment d’expérience :
 
    ![xf-01](assets/xf-01.png)
 
-1. Navigate to the required folder and select **Create**.
+1. Accédez au dossier requis et sélectionnez **Créer**.
 
    ![xf-02](assets/xf-02.png)
 
@@ -218,13 +218,13 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
 1. Définissez les propriétés requises :
 
-   * **Template (Modèle)**
+   * **Template**
    * **Titre**
    * **Nom** ; si rien n’est indiqué dans ce champ, le nom est déduit du titre
    * **Description**
    * **Balises de variation**
 
-   ![xf-06](assets/xf-06.png)
+   ![xf-08](assets/xf-06.png)
 
 1. Confirmez en cliquant sur **Terminé** (icône représentant une coche). La nouvelle variation est alors affichée dans le panneau :
 
@@ -236,7 +236,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 1. Ouvrez une page à modifier.
 
-   For example: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Par exemple : [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Créez une instance du composant Fragment d’expérience. Pour ce faire, faites glisser le composant sur le système de paragraphes de la page depuis l’explorateur de composants :
 
@@ -345,7 +345,7 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 >[!NOTE]
 Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Exportation de fragments d’expérience   {#exporting-experience-fragments}
+## Exportation de fragments d’expérience    {#exporting-experience-fragments}
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
