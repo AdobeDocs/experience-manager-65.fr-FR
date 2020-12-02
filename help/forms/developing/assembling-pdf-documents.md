@@ -29,5 +29,5 @@ A partir de LiveCycle ES 8.0 et versions ultérieures, la prise en charge des pa
 
 >[!NOTE]
 >
->For more information about the Assembler service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Assembler, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
