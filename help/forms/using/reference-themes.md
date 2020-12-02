@@ -19,7 +19,7 @@ ht-degree: 81%
 
 # Thèmes de référence{#reference-themes}
 
-Les [thèmes](../../forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. In addition to the default theme, you can get the following themes by installing the [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) package:
+Les [thèmes](../../forms/using/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Outre le thème par défaut, vous pouvez obtenir les thèmes suivants en installant le package [AEM-FORMS-REFERENCE-THÈMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
 
 * Beryl
 * Exec
@@ -36,7 +36,7 @@ Chaque thème comporte un style unique et élégant que vous pouvez utiliser pou
 
 Les thèmes inclus dans ce package sont réactifs et le style de ces thèmes est défini pour des affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents périphériques peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
 
-For more information on installing the package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
+Pour plus d’informations sur l’installation du package, voir [Comment utiliser les packages](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
