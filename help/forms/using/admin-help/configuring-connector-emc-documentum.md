@@ -28,7 +28,7 @@ La configuration de Connector for EMC Documentum requiert de configurer la conne
 >
 >Dans les versions précédentes, il était possible de stocker des actifs dans un référentiel ECM. Dans la version actuelle, les actifs sont stockés dans le référentiel natif d’AEM forms et les services du fournisseur de référentiel sont ignorés. La migration d’actifs d’un référentiel ECM vers le référentiel AEM forms s’effectue lors de la mise à niveau vers AEM forms. Pour plus d’informations, consultez le guide de mise à niveau d’AEM forms correspondant à votre serveur d’applications.
 
-## Configuration de la connexion au serveur {#configuring-the-server-connection}
+## Configuration de la connexion au serveur  {#configuring-the-server-connection}
 
 Cette rubrique décrit les tâches de Connector for EMC Documentum que vous pouvez effectuer à partir de la page Paramètres de configuration.
 
@@ -36,7 +36,7 @@ Cette rubrique décrit les tâches de Connector for EMC Documentum que vous pouv
 >
 >Si vous configurez tous les paramètres simultanément, vous ne devez cliquer sur Enregistrer qu’une seule fois.
 
-### Configuration du serveur {#configure-the-server}
+### Configuration du serveur  {#configure-the-server}
 
 Vous devez configurer les informations du serveur courtier de connexions. Ces informations sont nécessaires pour établir une connexion avec les référentiels de contenu Documentum et lancer le composant Connector for EMC Documentum.
 
@@ -44,7 +44,7 @@ Vous devez configurer les informations du serveur courtier de connexions. Ces in
 1. Dans la zone Informations de configuration de Documentum, entrez le nom d’hôte ou l’adresse IP ainsi que le numéro de port du courtier de connexions. Il doit s’agir d’un nombre entier positif (par exemple 1489).
 1. Cliquez sur Enregistrer.
 
-### Configuration des informations d’identification principales {#configure-principal-credentials}
+### Configuration des informations d’identification principales  {#configure-principal-credentials}
 
 Lors de la configuration des informations d’identification principales, le nom du référentiel que vous indiquez dépend du nom de référentiel explicite fourni lors de la connexion.
 
@@ -58,29 +58,29 @@ Si vous saisissez un nom d’utilisateur ou un mot de passe incorrect, vous obti
 1. Si aucun nom de référentiel explicite n’est fourni lors de la connexion, entrez le nom du référentiel auquel les informations d’identification sont associées.
 1. Cliquez sur Enregistrer.
 
-### Modification du fournisseur de services de référentiel {#change-the-repository-service-provider}
+### Modification du fournisseur de services de référentiel  {#change-the-repository-service-provider}
 
 Vous pouvez configurer le fournisseur de services de référentiel à utiliser avec Documentum. Les appels des services de référentiel sont délégués au fournisseur que vous configurez. Les options suivantes sont disponibles :
 
-**Nom du Prestataire du référentiel actuel :** Nom du prestataire de référentiel actuel
+**Nom du Prestataire de référentiel actuel :** nom du prestataire de référentiel actuel
 
-**Fournisseur du référentiel EMC Documentum :** Fait du fournisseur de référentiel Documentum le fournisseur du référentiel. Cette option est obsolète.
+**Fournisseur de référentiel ECM Documentum :** fait du fournisseur de référentiel Documentum le fournisseur de référentiel pour le référentiel. Cette option est obsolète.
 
-**fournisseur de référentiel :** Fait du fournisseur de référentiel natif le fournisseur du référentiel
+**fournisseur de référentiel :** fait du fournisseur de référentiel natif le fournisseur de référentiel pour le référentiel
 
 >[!NOTE]
 >
->To select a repository service provider other than those listed, configure RepositoryService in Applications and Services > Service Management. <!-- Fix broken link (See Managing Services) -->.
+>Pour sélectionner un prestataire de référentiel autre que ceux répertoriés, configurez RepositoryService dans Applications et services > Gestion des services. <!-- Fix broken link (See Managing Services) -->.
 
 1. Dans Administration Console, cliquez sur Services > Connecteur pour EMC Documentum > Paramètres de configuration.
 1. Dans la zone Informations sur les fournisseurs de services de référentiel, sélectionnez un autre fournisseur de services de référentiel.
 1. Cliquez sur Enregistrer.
 
-## Configuration des informations d’identification du référentiel {#configuring-repository-credentials}
+## Configuration des informations d’identification du référentiel  {#configuring-repository-credentials}
 
 Les informations d’identification de Documentum sont utilisées dans le contexte du système AEM forms. Les informations d’identification de référentiel sont propres aux référentiels particuliers de Documentum. Vous pouvez fournir des informations d’identification pour un nombre quelconque de référentiels, mais vous ne pouvez en spécifier qu’un ensemble par référentiel.
 
-### Ajout d’informations d’identification de référentiel {#add-a-repository-credential}
+### Ajout d’informations d’identification de référentiel  {#add-a-repository-credential}
 
 1. Dans Administration Console, cliquez sur Services > Connector for EMC Documentum > Paramètres d’identification du référentiel.
 1. Cliquez sur Ajouter. La page Informations d’identification du système Documentum s’affiche.
@@ -90,12 +90,12 @@ Les informations d’identification de Documentum sont utilisées dans le contex
 
 Si les services Content Repository Connector for EMC Documentum et/ou Repository for EMC Documentum sont en cours d’exécution, les informations d’identification sont vérifiées par rapport au référentiel spécifié avant d’être stockées dans la base de données. Si elles sont incorrectes ou existent déjà, un message d’erreur s’affiche.
 
-### Suppression d’informations d’identification de référentiel {#remove-a-repository-credential}
+### Suppression d’informations d’identification de référentiel  {#remove-a-repository-credential}
 
 1. Dans Administration Console, cliquez sur Services > Connecteur pour EMC Documentum > Paramètres de configuration.
 1. Cochez la case en regard du référentiel pour lequel supprimer les informations d’identification et cliquez sur Supprimer. Les informations d’identification du référentiel sélectionné sont supprimées de la base de données.
 
-### Modification du nom d’utilisateur et du mot de passe des informations d’identification de référentiel {#change-the-user-name-and-password-for-a-repository-credential}
+### Modification du nom d’utilisateur et du mot de passe des informations d’identification de référentiel  {#change-the-user-name-and-password-for-a-repository-credential}
 
 1. Dans Administration Console, cliquez sur Services > Connecteur pour EMC Documentum > Paramètres de configuration.
 1. Cliquez sur le nom du référentiel pour lequel modifier les informations d’identification.
@@ -104,7 +104,7 @@ Si les services Content Repository Connector for EMC Documentum et/ou Repository
 
 Si les services Content Repository Connector for EMC Documentum et/ou Repository for EMC Documentum sont en cours d’exécution, les informations d’identification sont vérifiées par rapport au référentiel spécifié avant d’être stockées dans la base de données. Si elles sont incorrectes ou existent déjà, un message d’erreur s’affiche.
 
-## Activation de la demande pour le partage des files d’attente de Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Activation de la demande pour le partage des files d’attente de Workspace  {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 Certaines tâches manuelles sont requises pour vérifier que la fonction de demande de partage d’une file d’attente de tâches dans Workspace fonctionne correctement avec Connector for EMC Documentum.
 
