@@ -22,7 +22,7 @@ ht-degree: 91%
 
 Vous pouvez utiliser les pages Web de PDF Generator pour convertir des fichiers.
 
-## Création d’un fichier PDF {#create-a-pdf-file}
+## Création d’un fichier PDF  {#create-a-pdf-file}
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > Créer un fichier PDF.
 1. Cliquez sur Parcourir pour rechercher et sélectionner le fichier.
@@ -43,7 +43,7 @@ Vous pouvez utiliser les pages Web de PDF Generator pour convertir des fichiers.
 1. Cliquez sur Créer. Lorsque le fichier est créé, un lien vers celui-ci s’affiche. Si une erreur survient lors de la conversion, un avertissement s’affiche. Si vous créez un fichier Postscript, cet avertissement contient également un lien vers le fichier journal.
 1. Cliquez sur le lien correspondant au fichier PDF. Le fichier s’ouvre dans Acrobat.
 
-### A propos des fichiers XMP {#about-xmp-files}
+### A propos des fichiers XMP  {#about-xmp-files}
 
 Les documents créés par PDF Generator dans Acrobat 5.0 ou versions ultérieures contiennent les métadonnées de ceux-ci au format XML. Les *métadonnées* comprennent des informations relatives au document et à son contenu, comme le nom de l’auteur, les mots-clés et les droits d’auteurs, que les utilitaires de recherche peuvent utiliser.
 
@@ -53,7 +53,7 @@ La plateforme XMP (Extensible Metadata Platform, plateforme de métadonnées ext
 
 Vous pouvez créer des fichiers XMP dans Acrobat.
 
-## Conversion d’un fichier HTML ou ZIP au format PDF {#convert-an-html-file-or-zip-file-to-pdf}
+## Conversion d’un fichier HTML ou ZIP au format PDF  {#convert-an-html-file-or-zip-file-to-pdf}
 
 PDF Generator permet de convertir les types de fichiers suivants au format Adobe PDF :
 
@@ -108,7 +108,7 @@ Si le fichier ZIP contient plusieurs fichiers HTML au niveau le plus bas de son 
 1. Cliquez sur Créer. Lorsque le fichier est créé, un lien vers le fichier PDF s’affiche.
 1. Cliquez sur le lien pour afficher le document PDF dans Acrobat.
 
-## Exportation d’un fichier PDF dans un autre format de fichier (Windows uniquement) {#export-a-pdf-file-to-another-file-format-windows-only}
+## Exportation d’un fichier PDF dans un autre format de fichier (Windows uniquement)  {#export-a-pdf-file-to-another-file-format-windows-only}
 
 Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comme décrit dans le chapitre consacré au service Generate PDF du [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_63).
 
@@ -119,11 +119,11 @@ Vous pouvez exporter des fichiers PDF dans différents formats de fichiers, comm
 
    La durée de conversion affichée une fois le fichier converti peut être supérieure à la valeur spécifiée ici. En effet, elle inclut le temps passé à attendre le thread ou le processus, la durée de conversion du fichier et le temps pris par le convertisseur de secours (le cas échéant). time. La valeur du paramètre Spécifier un délai d’expiration ne reflète que le temps de conversion du fichier.
 
-1. (Optional) In the **Specify custom Preflight profile** option, click Browse, and select a [custom Preflight profile](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
+1. (Facultatif) Dans l’option **Spécifier le profil de contrôle en amont personnalisé**, cliquez sur Parcourir et sélectionnez un [profil de contrôle en amont personnalisé](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Les profils de contrôle en amont ne sont utilisés que lors de la conversion de documents au format d’archive PDF (PDF/A).
 1. Cliquez sur Exporter. Lorsque la conversion est terminée, un lien renvoyant au fichier exporté s’affiche.
 1. Cliquez sur ce lien pour afficher le fichier converti.
 
-## Optimisation d’un fichier PDF (Windows Only) {#optimize-a-pdf}
+## Optimisation d’un fichier PDF (Windows uniquement) {#optimize-a-pdf}
 
 PDF Generator permet de réduire la taille des fichiers PDF.
 
