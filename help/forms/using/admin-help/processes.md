@@ -24,31 +24,31 @@ La page Liste de processus répertorie les processus initiés par un utilisateur
 
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. La Liste de processus présente les informations suivantes :
 
-   **Nom du processus - Version :** Nom du processus, tel que défini dans Workbench.
+   **Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
 
-   **Application :** Application à laquelle appartient le processus, telle que définie dans Workbench.
+   **Application :** application à laquelle appartient le processus, telle que définie dans Workbench.
 
-   **État :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
+   **Etat :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
 
-   **Date de création :** date et heure auxquelles le processus a été déployé.
+   **Date de création : date et heure** du déploiement du processus.
 
 1. Cliquez sur le nom d’un processus pour afficher les instances de ce processus dans la page Instance du processus.
 
-## Utilisation d’instances de processus {#working-with-process-instances}
+## Utilisation d’instances de processus  {#working-with-process-instances}
 
 Si vous accédez à la page Instance du processus à partir de la page Liste de processus, toutes les instances de processus que vous avez sélectionnées sont répertoriées. Si vous accédez à la page Instance du processus après avoir exécuté une recherche, seules les instances de processus trouvées sont répertoriées.
 
 Pour chaque instance de processus, la liste présente les informations suivantes :
 
-**ID du processus :** Identifiant attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**ID de processus :** identifiant attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance un processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version :** Nom du processus, tel que défini dans Workbench.
+**Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
 
-**État :** Indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
+**Etat :** indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
 
-**Date de création :** date et heure auxquelles l’instance de processus a été créée.
+**Date de création :** date et heure de création de l’instance de processus.
 
-**Date de mise à jour :** Date et heure de la dernière modification de l’état de l’instance de processus.
+**Date de mise à jour : date et heure** de la dernière modification de l’état de l’instance de processus.
 
 Dans la page Instance du processus, vous pouvez exécuter les tâches suivantes :
 
@@ -56,25 +56,25 @@ Dans la page Instance du processus, vous pouvez exécuter les tâches suivantes�
 * Suspendre ou arrêter des instances de processus, ou encore en annuler la suspension.
 * Rechercher une instance de processus. Pour lancer une recherche, cliquez sur Rechercher.
 
-### A propos des états d’instances de processus {#about-process-instance-statuses}
+### A propos des états d’instances de processus  {#about-process-instance-statuses}
 
 Une instance de processus, y compris ses processus secondaires, peut présenter les états suivants :
 
-**TERMINÉ :** Toutes les branches et opérations de l&#39;instance de processus sont terminées. ACHEVE est l’état final d’une instance de processus.
+**TERMINÉ :** toutes les branches et opérations de l’instance de processus sont terminées. ACHEVE est l’état final d’une instance de processus.
 
-**TERMINÉ :** L’état de l’instance de processus est sur le point de passer à COMPLETE.
+**TERMINE :** l’état de l’instance de processus est sur le point de passer à TERMINE.
 
 **INITIÉ :** L’instance de processus a été créée mais n’est pas encore en cours d’exécution. INITIE est le premier état d’une instance de processus.
 
-**EN COURS :** L’instance de processus s’exécute normalement. Il est possible qu’une étape automatique soit en cours, ou que l’instance de processus reçoive des entrées utilisateur ou qu’elle soit en attente d’une interaction utilisateur.
+**EXÉCUTION :** L’instance de processus s’exécute normalement. Il est possible qu’une étape automatique soit en cours, ou que l’instance de processus reçoive des entrées utilisateur ou qu’elle soit en attente d’une interaction utilisateur.
 
-**SUSPENDU :** L’instance de processus a été suspendue par un administrateur ou par une étape du processus. Aucune opération supplémentaire ne sera exécutée jusqu’au changement de l’état.
+**SUSPENDU :** l’instance de processus a été suspendue par un administrateur ou par une étape du processus. Aucune opération supplémentaire ne sera exécutée jusqu’au changement de l’état.
 
-**SUSPENSION :** L’état est sur le point de devenir SUSPENDU. Si une opération a été conçue pour ignorer les requêtes de suspension et n’est pas encore achevée, cette opération doit s’achever avant que l’instance de processus soit suspendue.
+**SUSPENSION :** l’état est sur le point de devenir SUSPENDU. Si une opération a été conçue pour ignorer les requêtes de suspension et n’est pas encore achevée, cette opération doit s’achever avant que l’instance de processus soit suspendue.
 
-**TERMINÉ :** L’instance de processus a été arrêtée par un administrateur.
+**TERMINÉ :** l’instance de processus a été arrêtée par un administrateur.
 
-**TERMINE :** L&#39;état est sur le point de devenir TERMINÉ. Si une opération a été conçue pour ignorer les requêtes d’arrêt et n’est pas encore achevée, cette opération doit s’achever avant que l’instance de processus soit arrêtée.
+**TERMINE :** l’état est sur le point de devenir TERMINÉ. Si une opération a été conçue pour ignorer les requêtes d’arrêt et n’est pas encore achevée, cette opération doit s’achever avant que l’instance de processus soit arrêtée.
 
 **SUSPENSION :** L’état est sur le point de devenir EN COURS après avoir été SUSPENDU.
 
@@ -82,7 +82,7 @@ Une instance de processus, y compris ses processus secondaires, peut présenter 
 >
 >Si une demande est envoyée pour changer l’état d’une instance de processus (par exemple, pour suspendre ou arrêter l’instance), la demande entre dans la file d’attente des commandes du processus des formulaires. Selon la taille de la file d’attente et la vitesse de traitement globale, il est possible que l’état affiché ne change pas avant que la page ait été rechargée une ou plusieurs fois.
 
-### Suspension ou annulation de la suspension des instances de processus {#suspend-or-unsuspend-process-instances}
+### Suspension ou annulation de la suspension des instances de processus  {#suspend-or-unsuspend-process-instances}
 
 Si vous devez dépanner un problème ou si vous savez qu’une instance de processus rencontrera un problème lors d’une étape ultérieure en raison d’une condition externe, vous pouvez suspendre temporairement l’instance de processus.
 
@@ -99,7 +99,7 @@ Lorsque vous suspendez une instance de processus qui a appelé d’autres proces
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. 
 1. Dans la page Instance du processus, sélectionnez le processus, puis cliquez sur Suspendre ou Non suspendu.
 
-### Arrêt d’une instance de processus {#terminate-a-process-instances}
+### Arrêt d’une instance de processus  {#terminate-a-process-instances}
 
 Si une opération d’une instance de processus a bloqué ou a rencontré une autre condition d’erreur, ou si vous avez besoin de forcer l’arrêt de l’exécution d’une instance de processus, vous pouvez arrêter l’instance de processus.
 
@@ -110,7 +110,7 @@ Une fois que vous avez terminé une instance de processus, son état devient PRE
 1. Dans Administration Console, cliquez sur Services > Processus des formulaires > Processus des formulaires. 
 1. Dans la page Instance du processus, sélectionnez le processus, puis cliquez sur Arrêter.
 
-## Utilisation de détails d’instances de processus {#working-with-process-instance-details}
+## Utilisation de détails d’instances de processus  {#working-with-process-instance-details}
 
 La page Détails de l’instance du processus affiche l’historique d’une instance de processus.
 
@@ -118,27 +118,27 @@ La zone Résumé présente des informations de base sur l’instance de processu
 
 Sur l’onglet Opérations, les opérations de l’instance de processus sont affichées dans l’ordre dans lequel elles se sont achevées, avec les informations suivantes :
 
-**Nom de l&#39;opération :** Nom de l’opération, tel que défini dans Workbench.
+**Nom de l’opération :** nom de l’opération, tel que défini dans Workbench.
 
-**État :** Indique si l’opération s’exécute normalement ou s’est arrêtée. (voir A propos des états d’instances de processus).
+**Etat :** indique si l’opération s’exécute normalement ou s’est arrêtée. (voir A propos des états d’instances de processus).
 
-**Nom de la branche :** Nom de la branche, tel que défini dans Workbench.
+**Nom de branche :** nom de la branche, tel que défini dans Workbench.
 
-**Date de début :** date et heure auxquelles l’opération a commencé.
+**Date de début : date et heure** de début de l’opération.
 
-**Date de fin :** Date et heure auxquelles l’opération s’est terminée.
+**Date de fin : date et heure** de fin de l’opération.
 
 Un processus secondaire est une instance de processus qui a été démarrée par un autre processus et qui s’exécute indépendamment de cet autre processus. Des processus secondaires ne sont affichés que s’ils ont été conçus comme faisant partie du processus dans Workbench. Sur l’onglet Processus secondaires, chaque processus secondaire est affiché avec les informations suivantes :
 
-**ID du processus :** entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance le processus). Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
+**ID de processus : entier positif attribué par le processus des formulaires lorsque le processus est instancié (c’est-à-dire lorsqu’un utilisateur ou une étape automatisée lance le processus).** Vous pouvez utiliser cet identificateur pour assurer le suivi de l’instance du processus sur l’ensemble de son cycle de vie.
 
-**Nom du processus - Version :** Nom du processus, tel que défini dans Designer.
+**Nom du processus - Version :** nom du processus, tel que défini dans Designer.
 
-**État :** Indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
+**Etat :** indique si l’instance de processus s’exécute normalement, change d’état ou s’est arrêtée. (voir A propos des états d’instances de processus).
 
 **Date de création :** date et heure auxquelles le processus secondaire a été créé.
 
-**Date de mise à jour :** Date et heure de la dernière modification de l’état du processus secondaire.
+**Date de mise à jour : date et heure** de la dernière modification de l’état du processus secondaire.
 
 Dans la page Détails de l’instance du processus, vous pouvez exécuter les tâches suivantes :
 
@@ -146,17 +146,17 @@ Dans la page Détails de l’instance du processus, vous pouvez exécuter les t�
 * Sélectionner un processus secondaire pour afficher des informations détaillées sur ce processus secondaire. Lorsque vous sélectionnez un processus secondaire, la page Détails de l’instance du processus s’affiche.
 * Arrêter ou essayer de relancer des opérations ou des processus secondaires, selon leur état.
 
-### A propos des états d’opérations {#about-operation-statuses}
+### A propos des états d’opérations  {#about-operation-statuses}
 
 Une opération (une étape dans un processus) peut présenter les états suivants :
 
-**TERMINÉ :** L&#39;opération s&#39;est terminée.
+**TERMINÉ :** l&#39;opération est terminée.
 
-**EN COURS :** L&#39;opération s&#39;exécute normalement. Il est possible qu’elle reçoive des entrées utilisateur ou qu’elle attende une interaction utilisateur, ou encore qu’une étape automatisée soit en cours.
+**EXÉCUTION :** L’opération s’exécute normalement. Il est possible qu’elle reçoive des entrées utilisateur ou qu’elle attende une interaction utilisateur, ou encore qu’une étape automatisée soit en cours.
 
-**BLOQUE :** Un problème s&#39;est produit pendant le traitement de l&#39;opération. Recherchez l’erreur ou l’exception dans la page Opérations bloquées.
+**BLOQUE :** un problème s&#39;est produit pendant le traitement de l&#39;opération. Recherchez l’erreur ou l’exception dans la page Opérations bloquées.
 
-**TERMINÉ :** L&#39;opération a été arrêtée par un administrateur.
+**TERMINÉ :** l&#39;opération a été arrêtée par un administrateur.
 
 ### Arrêt d’opérations ou de processus secondaires {#terminate-operations-or-subprocesses}
 
@@ -175,7 +175,7 @@ Vous ne pouvez pas arrêter des processus dont le schéma de processus contient 
 1. Dans la page Détails de l’instance du processus, cliquez sur l’onglet Opérations ou Processus secondaires.
 1. Sélectionnez l’opération ou le processus secondaire, puis cliquez sur Arrêter.
 
-### Tentative de redémarrage d’une opération {#retry-an-operation}
+### Tentative de redémarrage d’une opération  {#retry-an-operation}
 
 Vous pouvez essayer de relancer une opération dont l’état est BLOQUE.
 
@@ -184,7 +184,7 @@ Lorsque vous essayez de relancer une opération, une requête est envoyée au pr
 1. Dans la page Détails de l’instance du processus, cliquez sur l’onglet Opérations.
 1. Sélectionnez l’opération, puis cliquez sur Nouvel essai.
 
-## Utilisation d’opérations {#working-with-operations}
+## Utilisation d’opérations  {#working-with-operations}
 
 La page Détails de l’opération affiche le résumé d’une opération dans un processus et ses affectations d’utilisateurs actuelles.
 
@@ -193,11 +193,11 @@ La page Détails de l’opération affiche le résumé d’une opération dans u
 
    Pour chaque tâche, la liste présente les informations suivantes :
 
-   **Nom du processus - Version :** Nom du processus, tel que défini dans Workbench.
+   **Nom du processus - Version :** nom du processus, tel que défini dans Workbench.
 
-   **Application :** Application à laquelle appartient le processus, telle que définie dans Workbench.
+   **Application :** application à laquelle appartient le processus, telle que définie dans Workbench.
 
-   **État :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
+   **Etat :** Principal signifie que le processus est celui qui est activé pour la version du processus. Inactif signifie que le processus est une ancienne version qui comporte toujours des instances de processus.
 
-   **Date de création :** date et heure auxquelles le processus a été déployé.
+   **Date de création : date et heure** du déploiement du processus.
 
