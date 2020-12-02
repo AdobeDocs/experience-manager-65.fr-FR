@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## Modèles de page pour les applications mobiles {#page-templates-for-mobile-apps-1}
 
-Les composants de page que vous créez pour votre application sont basés sur le composant /libs/mobileapps/components/angular/ng-page ([ouvert en CRXDE Lite sur un serveur](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)local). Ce composant contient les scripts JSP suivants que votre composant hérite ou remplace :
+Les composants de page que vous créez pour votre application sont basés sur le composant /libs/mobileapps/components/angular/ng-page ([ouvert en CRXDE Lite sur un serveur local](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Ce composant contient les scripts JSP suivants que votre composant hérite ou remplace :
 
 * ng-page.jsp
 * head.jsp
@@ -44,17 +44,17 @@ Les composants de page que vous créez pour votre application sont basés sur le
 
 ### ng-page.jsp {#ng-page-jsp}
 
-Détermine le nom de l’application à l’aide de la `applicationName` propriété et l’expose au moyen de pageContext.
+Détermine le nom de l’application à l’aide de la propriété `applicationName` et l’expose au moyen de pageContext.
 
 Inclut head.jsp et body.jsp.
 
 ### head.jsp {#head-jsp}
 
-Écrit l’ `<head>` élément de la page de l’application.
+Écrit l’élément `<head>` de la page de l’application.
 
 Si vous souhaitez remplacer la propriété meta de viewport de l’application, il s’agit du fichier que vous remplacez.
 
-Selon les meilleures pratiques, l’application inclut la partie CSS des bibliothèques clientes dans l’en-tête, tandis que la partie JS est incluse dans l’élément &lt; `body>` de fermeture.
+Selon les meilleures pratiques, l’application inclut la partie CSS des bibliothèques clientes dans l’en-tête, tandis que la JS est incluse dans l’élément `body>` de fermeture.
 
 ### body.jsp {#body-jsp}
 
@@ -62,11 +62,11 @@ Le corps d’une page angulaire est rendu différemment selon que wcmMode est d�
 
 **Mode Auteur**
 
-En mode création, chaque page individuelle est générée séparément. Angular ne gère pas le routage entre les pages, pas plus qu&#39;une vue ng n&#39;est utilisée pour charger un modèle partiel qui contient les composants de la page. En revanche, le contenu du modèle de page (template.jsp) est inclus côté serveur via la `cq:include` balise .
+En mode création, chaque page individuelle est générée séparément. Angular ne gère pas le routage entre les pages, pas plus qu&#39;une vue ng n&#39;est utilisée pour charger un modèle partiel qui contient les composants de la page. En revanche, le contenu du modèle de page (template.jsp) est inclus côté serveur via la balise `cq:include`.
 
 Cette stratégie active les fonctions d’auteur (telles que l’ajout et la modification de composants dans le système de paragraphe, le Sidekick, le mode de conception, etc.) pour fonctionner sans modification. Les pages reposant sur le rendu côté client, telles que celles des applications, ne fonctionnent pas correctement en mode AEM création.
 
-Notez que l’inclusion template.jsp est encapsulée dans un `div` élément qui contient la `ng-controller` directive. Cette structure permet de lier le contenu DOM au contrôleur. Par conséquent, bien que les pages qui se rendent elles-mêmes côté client échouent, les composants individuels qui le font fonctionnent correctement (voir la section sur Composants ci-dessous).
+Notez que l’inclusion template.jsp est encapsulée dans un élément `div` qui contient la directive `ng-controller`. Cette structure permet de lier le contenu DOM au contrôleur. Par conséquent, bien que les pages qui se rendent elles-mêmes côté client échouent, les composants individuels qui le font fonctionnent correctement (voir la section sur Composants ci-dessous).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -78,7 +78,7 @@ Notez que l’inclusion template.jsp est encapsulée dans un `div` élément qui
 
 En mode de publication (par exemple, lorsque l’application est exportée à l’aide de la synchronisation de contenu), toutes les pages deviennent une application d’une seule page (SPA). (Pour en savoir plus sur SPA, utilisez le didacticiel Angular, en particulier [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
 
-Il n&#39;y a qu&#39;une seule page HTML dans un SPA (une page qui contient l&#39; `<html>` élément). Cette page est connue sous le nom de &quot;modèle de mise en page&quot;. En termes angulaires, il s&#39;agit &quot; d&#39;un groupe d&#39;individus qui ne sont pas membres de l&#39;Armée de terre ou de l&#39;Armée de terre.un modèle commun à toutes les vues de notre application.&quot; Considérez cette page comme la &quot;page d’application de niveau supérieur&quot;. Par convention, la page de l’application de niveau supérieur est le `cq:Page` noeud de l’application le plus proche de la racine (et n’est pas une redirection).
+Il n&#39;y a qu&#39;une seule page HTML dans un SPA (une page qui contient l&#39;élément `<html>`). Cette page est connue sous le nom de &quot;modèle de mise en page&quot;. En termes angulaires, il s&#39;agit &quot; d&#39;un groupe d&#39;individus qui ne sont pas membres de l&#39;Armée de terre ou de l&#39;Armée de terre.un modèle commun à toutes les vues de notre application.&quot; Considérez cette page comme la &quot;page d’application de niveau supérieur&quot;. Par convention, la page de l’application de niveau supérieur est le noeud `cq:Page` de votre application le plus proche de la racine (et n’est pas une redirection).
 
 Puisque l’URI réel de votre application ne change pas en mode de publication, les références aux ressources externes de cette page doivent utiliser des chemins d’accès relatifs. Par conséquent, un composant d’image spécial est fourni qui prend en compte cette page de niveau supérieur lors du rendu des images pour l’exportation.
 
@@ -92,11 +92,11 @@ Le service d’itinéraire angulaire utilise cet élément pour afficher le cont
 
 Le fichier body.jsp comprend header.jsp et footer.jsp qui sont vides. Si vous souhaitez fournir du contenu statique sur chaque page, vous pouvez remplacer ces scripts dans votre application.
 
-Enfin, les clientlibs javascript sont inclus au bas de l’élément &lt;body>, y compris deux fichiers JS spéciaux qui sont générés sur le serveur : *&lt;page name>*.angular-app-module.js et *&lt;page name>*.angular-app-contrôleurs.js.
+Enfin, les clientlibs javascript sont inclus au bas de l’élément &lt;body>, y compris deux fichiers JS spéciaux qui sont générés sur le serveur : *&lt;nom de la page>*.angular-app-module.js et *&lt;nom de la page>*.angular-app-contrôleurs.js.
 
 ### angular-app-module.js.jsp {#angular-app-module-js-jsp}
 
-Ce script définit le module angulaire de l’application. La sortie de ce script est liée au balisage généré par le reste du composant du modèle via l’ `html` élément de ng-page.jsp, qui contient l’attribut suivant :
+Ce script définit le module angulaire de l’application. La sortie de ce script est liée à l’annotation que le reste du composant du modèle génère via l’élément `html` de ng-page.jsp, qui contient l’attribut suivant :
 
 ```xml
 ng-app="<c:out value='${applicationName}'/>"
@@ -104,7 +104,7 @@ ng-app="<c:out value='${applicationName}'/>"
 
 Cet attribut indique à Angular que le contenu de cet élément DOM doit être lié au module suivant. Ce module relie les vues (en AEM il s&#39;agit des ressources cq:Page) aux contrôleurs correspondants.
 
-Ce module définit également un contrôleur de niveau supérieur nommé `AppController` qui expose la `wcmMode` variable à la portée et configure l&#39;URI à partir duquel récupérer les charges de mise à jour de Content Sync.
+Ce module définit également un contrôleur de niveau supérieur nommé `AppController` qui expose la variable `wcmMode` à l&#39;étendue et configure l&#39;URI à partir duquel récupérer les charges de mise à jour de Content Sync.
 
 Enfin, ce module effectue une itération sur chaque page descendante (y compris elle-même) et effectue le rendu du contenu de la frange de route de chaque page (via le sélecteur et l&#39;extension angulaire-route-fragment.js), y compris en tant qu&#39;entrée de configuration de \$routeProvider d&#39;Angular. En d&#39;autres termes, le \$routeProvider indique à l&#39;application le contenu à rendre lorsqu&#39;un chemin d&#39;accès donné est demandé.
 
@@ -119,7 +119,7 @@ Ce script génère un fragment JavaScript qui doit se présenter comme suit :
 })
 ```
 
-Ce code indique à $routeProvider (défini dans angular-app-module.js.jsp) que &#39;/&lt;chemin>&#39; doit être géré par la ressource à l&#39; `templateUrl`adresse et câblé par `controller` (nous allons passer à la suivante).
+Ce code indique à $routeProvider (défini dans angular-app-module.js.jsp) que &#39;/&lt;chemin>&#39; doit être géré par la ressource à l&#39;adresse `templateUrl` et câblé par `controller` (ce que nous allons passer à la suivante).
 
 Si nécessaire, vous pouvez remplacer ce script pour gérer des chemins plus complexes, y compris ceux contenant des variables. Vous trouverez un exemple dans le script /apps/geometrixx-outdoors-app/components/angular/ng-template-page/angular-route-fragment.js.jsp installé avec AEM :
 
@@ -149,9 +149,9 @@ Le script controller.js.jsp génère le fragment de contrôleur pour chaque page
 ])
 ```
 
-Notez que la `data` variable se voit attribuer la promesse renvoyée par la `$http.get` méthode Angular. Chaque composant inclus dans cette page peut, si nécessaire, rendre un certain contenu .json disponible (via son script angular.json.jsp) et agir sur le contenu de cette requête lorsqu’elle est résolue. La demande est très rapide sur les périphériques mobiles, car elle accède simplement au système de fichiers.
+Notez que la variable `data` se voit attribuer la promesse renvoyée par la méthode Angular `$http.get`. Chaque composant inclus dans cette page peut, si nécessaire, rendre un certain contenu .json disponible (via son script angular.json.jsp) et agir sur le contenu de cette requête lorsqu’elle est résolue. La demande est très rapide sur les périphériques mobiles, car elle accède simplement au système de fichiers.
 
-Pour qu&#39;un composant fasse partie du contrôleur de cette manière, il doit étendre le composant /libs/mobileapps/components/angular/ng-component et inclure la `frameworkType: angular` propriété.
+Pour qu&#39;un composant fasse partie du contrôleur de cette manière, il doit étendre le composant /libs/mobileapps/components/angular/ng-component et inclure la propriété `frameworkType: angular`.
 
 ### template.jsp {#template-jsp}
 
@@ -196,7 +196,7 @@ Notez le GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; dans le chemin.
 
 En tant que développeur PhoneGap, le contenu qui vous préoccupe se trouve sous le répertoire www. Pour accéder aux ressources de l’application, utilisez des chemins d’accès relatifs.
 
-Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application d’une seule page (SPA) de sorte que l’URI de base (à l’exception du hachage) ne change jamais. Par conséquent, chaque fichier, modèle ou script référencé **doit être relatif à votre page de niveau supérieur.** La page de niveau supérieur initialise le routage angulaire et les contrôleurs en vertu de `*<name>*.angular-app-module.js` et `*<name>*.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui *n’étend pas une redirection sling:redirect.
+Pour aggraver le problème, votre application PhoneGap utilise le modèle d’application d’une seule page (SPA) de sorte que l’URI de base (à l’exception du hachage) ne change jamais. Par conséquent, chaque fichier, modèle ou script référencé **doit être relatif à votre page de niveau supérieur.** La page de niveau supérieur initialise le routage angulaire et les contrôleurs en vertu de  `*<name>*.angular-app-module.js` et  `*<name>*.angular-app-controllers.js`. Cette page doit être la page la plus proche de la racine du référentiel qui *n’étend pas une redirection sling:redirect.
 
 Plusieurs méthodes d’assistance sont disponibles pour traiter les chemins relatifs :
 
@@ -208,7 +208,7 @@ Pour afficher des exemples de leur utilisation, ouvrez la source mobileapps situ
 
 ### Liens {#links}
 
-Les liens doivent utiliser la `ng-click="go('/path')"` fonction pour prendre en charge tous les modes WCM. Cette fonction dépend de la valeur d’une variable d’étendue pour déterminer correctement l’action de lien :
+Les liens doivent utiliser la fonction `ng-click="go('/path')"` pour prendre en charge tous les modes WCM. Cette fonction dépend de la valeur d’une variable d’étendue pour déterminer correctement l’action de lien :
 
 ```xml
 <c:choose><c:when test="${wcmMode}">
@@ -220,9 +220,9 @@ Les liens doivent utiliser la `ng-click="go('/path')"` fonction pour prendre en 
 </c:otherwise></c:choose>
 ```
 
-Lorsque `$scope.wcmMode == true` nous traitons chaque événement de navigation de la manière habituelle, de telle sorte que le résultat soit une modification du chemin et/ou de la partie de page de l’URL.
+Lorsque `$scope.wcmMode == true` nous traitons chaque événement de navigation de la manière habituelle, de telle sorte que le résultat soit un changement du chemin et/ou de la partie de page de l’URL.
 
-Sinon, si `$scope.wcmMode == false`chaque événement de navigation entraîne un changement de la partie hachée de l&#39;URL qui est résolue en interne par le module ngRoute d&#39;Angular.
+Sinon, si `$scope.wcmMode == false`, chaque événement de navigation provoque un changement de la partie hachage de l&#39;URL qui est résolue en interne par le module ngRoute d&#39;Angular.
 
 ### Détails du script de composant {#component-script-details}
 
@@ -238,13 +238,13 @@ Le script template.jsp effectue le rendu du balisage du composant. Si le composa
 
 Cependant, les exigences de performances exigent parfois qu’aucun modèle côté client (c’est-à-dire la liaison de données) ne soit effectué. Dans ce cas, il vous suffit de rendre l’annotation du composant côté serveur et de l’inclure dans le contenu du modèle de page.
 
-#### surcharge.jsp {#overhead-jsp}
+#### frais généraux.jsp {#overhead-jsp}
 
 Dans les composants pilotés par des données JSON (telles que &#39;ng-text&#39;) : /libs/mobileapps/components/angular/ng-text), over.jsp peut être utilisé pour supprimer tout le code Java de template.jsp. Il est ensuite référencé à partir de template.jsp et toutes les variables qu’il expose sur la requête sont disponibles pour utilisation. Cette stratégie encourage la séparation de la logique et de la présentation et limite la quantité de code à copier et coller lorsqu&#39;un nouveau composant est dérivé d&#39;un composant existant.
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
-Comme décrit dans AEM Modèles de page, chaque composant peut générer un fragment JavaScript pour consommer le contenu JSON exposé par la `data` promesse. Conformément aux conventions angulaire, un contrôleur ne doit être utilisé que pour affecter des variables à l&#39;étendue.
+Comme décrit dans AEM Modèles de page, chaque composant peut générer un fragment JavaScript afin de consommer le contenu JSON exposé par la promesse `data`. Conformément aux conventions angulaire, un contrôleur ne doit être utilisé que pour affecter des variables à l&#39;étendue.
 
 #### angular.json.jsp {#angular-json-jsp}
 
@@ -283,7 +283,7 @@ Le composant produit de l’application de Geometrixx en plein air est un exempl
 }
 ```
 
-## Contenu du téléchargement des ressources de l’interface de ligne de commande {#contents-of-the-cli-assets-download}
+## Contenu du téléchargement des ressources de l&#39;interface de ligne de commande {#contents-of-the-cli-assets-download}
 
 Téléchargez les ressources de l’interface de ligne de commande à partir de la console Apps pour les optimiser pour une plateforme spécifique, puis créez l’application à l’aide de l’API d’intégration de ligne de commande PhoneGap (CLI). Le contenu du fichier ZIP que vous enregistrez sur le système de fichiers local possède la structure suivante :
 
@@ -311,23 +311,23 @@ Il s’agit d’un répertoire masqué que vous ne verrez peut-être pas en fonc
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-Ce répertoire contient les crochets [de l’](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/)interface de ligne de commande. Les dossiers du répertoire des crochets contiennent des scripts node.js exécutés exactement à des moments précis au cours de la génération.
+Ce répertoire contient les crochets [CLI](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). Les dossiers du répertoire des crochets contiennent des scripts node.js exécutés exactement à des moments précis au cours de la génération.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-Le répertoire after-platform_add contient le `copy_AMS_Conifg.js` fichier. Ce script copie un fichier de configuration pour prendre en charge la collecte des analyses Adobe Mobile Services.
+Le répertoire after-platform_add contient le fichier `copy_AMS_Conifg.js`. Ce script copie un fichier de configuration pour prendre en charge la collecte des analyses Adobe Mobile Services.
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-Le répertoire after-prepare contient le `copy_resource_files.js` fichier. Ce script copie un certain nombre d’images d’icône et d’écran de démarrage dans des emplacements spécifiques à la plate-forme.
+Le répertoire after-prepare contient le fichier `copy_resource_files.js`. Ce script copie un certain nombre d’images d’icône et d’écran de démarrage dans des emplacements spécifiques à la plate-forme.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
-Le répertoire before_platform_add contient le `install_plugins.js` fichier. Ce script effectue une itération à travers une liste d&#39;identificateurs de plug-ins Cordova, en installant ceux qu&#39;il détecte ne sont pas déjà disponibles.
+Le répertoire before_platform_add contient le fichier `install_plugins.js`. Ce script effectue une itération à travers une liste d&#39;identificateurs de plug-ins Cordova, en installant ceux qu&#39;il détecte ne sont pas déjà disponibles.
 
-Cette stratégie ne nécessite pas que vous assembliez et installiez les modules externes pour AEM chaque exécution de la commande Maven `content-package:install` . L&#39;autre stratégie de vérification des fichiers dans votre système SCM nécessite l&#39;assemblage et l&#39;installation répétitifs d&#39;activités.
+Cette stratégie ne nécessite pas que vous assembliez et installiez les modules externes pour AEM chaque exécution de la commande Maven `content-package:install`. L&#39;autre stratégie de vérification des fichiers dans votre système SCM nécessite l&#39;assemblage et l&#39;installation répétitifs d&#39;activités.
 
-#### .cordova/Hooks/Autres Hooks {#cordova-hooks-other-hooks}
+#### .cordova/Hooks/Autres crochets {#cordova-hooks-other-hooks}
 
 Insérez d’autres crochets selon les besoins. Les crochets suivants sont disponibles (comme fourni par l&#39;exemple d&#39;application Phonegap hello world) :
 
@@ -356,15 +356,15 @@ Insérez d’autres crochets selon les besoins. Les crochets suivants sont dispo
 * after_run
 * before_run
 
-#### platforms/ {#platforms}
+#### plateformes/ {#platforms}
 
-Ce répertoire est vide jusqu&#39;à ce que vous exécutiez la `phonegap run <platform>` commande sur le projet. Actuellement, `<platform>` peut être soit `ios` soit `android`.
+Ce répertoire est vide jusqu&#39;à ce que vous exécutiez la commande `phonegap run <platform>` sur le projet. Actuellement, `<platform>` peut être `ios` ou `android`.
 
 Après avoir créé l’application pour une plateforme spécifique, le répertoire correspondant est créé et contient le code de l’application spécifique à la plate-forme.
 
 #### plugins/ {#plugins}
 
-Le répertoire des modules externes est renseigné par chaque module externe répertorié dans le `.cordova/hooks/before_platform_add/install_plugins.js` fichier après l’exécution de la `phonegap run <platform>` commande. Le répertoire est initialement vide.
+Le répertoire des modules externes est renseigné par chaque module externe répertorié dans le fichier `.cordova/hooks/before_platform_add/install_plugins.js` après avoir exécuté la commande `phonegap run <platform>`. Le répertoire est initialement vide.
 
 #### www/ {#www}
 
@@ -372,7 +372,7 @@ Le répertoire www contient l’ensemble du contenu Web (fichiers HTML, JS et CS
 
 #### www/config.xml {#www-config-xml}
 
-La documentation [de](https://docs.phonegap.com) PhoneGap fait référence à ce fichier en tant que &quot;fichier de configuration global&quot;. Le fichier config.xml contient de nombreuses propriétés d’application, telles que le nom de l’application, les &quot;préférences&quot; de l’application (par exemple, si une vue Web iOS autorise le surdéfilement) et les dépendances de plug-ins qui sont *uniquement* utilisées par PhoneGap build.
+La [documentation PhoneGap](https://docs.phonegap.com) fait référence à ce fichier en tant que &quot;fichier de configuration global&quot;. Le fichier config.xml contient de nombreuses propriétés d’application, telles que le nom de l’application, les &quot;préférences&quot; de l’application (par exemple, si une vue Web iOS autorise le survol) et les dépendances de plug-in qui sont *uniquement* consommées par la compilation PhoneGap.
 
 Le fichier config.xml est un fichier statique dans AEM et il est exporté en l’état au moyen de Content Sync.
 
@@ -380,17 +380,17 @@ Le fichier config.xml est un fichier statique dans AEM et il est exporté en l�
 
 Le fichier index.html redirige vers la page de démarrage de l’application.
 
-Le fichier config.xml contient l’ `content` élément :
+Le fichier config.xml contient l’élément `content` :
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-Dans [la documentation](https://docs.phonegap.com)PhoneGap, cet élément est décrit comme &quot;L’élément facultatif &lt;content> définit la page de démarrage de l’application dans le répertoire des ressources Web de niveau supérieur. La valeur par défaut est index.html, qui s’affiche habituellement dans le répertoire www supérieur d’un projet.&quot;
+Dans [la documentation PhoneGap](https://docs.phonegap.com), cet élément est décrit comme &quot;L’élément facultatif &lt;content> définit la page de démarrage de l’application dans le répertoire des ressources Web de niveau supérieur. La valeur par défaut est index.html, qui s’affiche habituellement dans le répertoire www supérieur d’un projet.&quot;
 
 La création de PhoneGap échoue si un fichier index.html n’est pas présent. Par conséquent, ce fichier est inclus.
 
 #### www/res {#www-res}
 
-Le répertoire res contient des images et des icônes d’écran de démarrage. Le `copy_resource_files.js` script copie les fichiers vers leurs emplacements spécifiques à la plate-forme pendant la phase de `after_prepare` création.
+Le répertoire res contient des images et des icônes d’écran de démarrage. Le script `copy_resource_files.js` copie les fichiers vers leurs emplacements spécifiques à la plate-forme pendant la phase de création de `after_prepare`.
 
 #### www/etc {#www-etc}
 
@@ -411,10 +411,10 @@ Le répertoire de contenu contient le reste du contenu Web de l’application. L
 
 #### www/package.json {#www-package-json}
 
-Le fichier package.json est un fichier manifeste qui liste les fichiers qu’un téléchargement **complet** de synchronisation de contenu inclut. Ce fichier contient également l’horodatage auquel la charge utile de synchronisation de contenu a été générée (`lastModified`). Cette propriété est utilisée lors de la demande de mises à jour partielles de l’application auprès d’AEM.
+Le fichier package.json est un fichier manifeste qui liste les fichiers qu’un **full** téléchargement Content Sync inclut. Ce fichier contient également l’horodatage auquel la charge utile Content Sync a été générée (`lastModified`). Cette propriété est utilisée lors de la demande de mises à jour partielles de l’application auprès d’AEM.
 
 #### www/package-update.json {#www-package-update-json}
 
-Si cette charge utile est un téléchargement de l’application entière, ce manifeste contient la liste exacte des fichiers sous `package.json`forme de.
+Si cette charge utile est un téléchargement de l’application entière, ce manifeste contient la liste exacte des fichiers sous la forme `package.json`.
 
-Cependant, si cette charge utile est une mise à jour partielle, `package-update.json` ne contient que les fichiers inclus dans cette charge utile particulière.
+Cependant, si cette charge utile est une mise à jour partielle, `package-update.json` contient uniquement les fichiers inclus dans cette charge utile particulière.
