@@ -18,11 +18,11 @@ ht-degree: 74%
 ---
 
 
-# Intégration des composants de l’espace de travail AEM Forms dans des applications Web {#integrating-aem-forms-workspace-components-in-web-applications}
+# Intégration des composants de l’espace de travail AEM Forms dans des applications Web  {#integrating-aem-forms-workspace-components-in-web-applications}
 
-Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-components.md) de l’espace de travail AEM Forms dans votre propre application Web. L’exemple d’implémentation suivant utilise des composants d’un paquet de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application Web. Personnalisez la solution ci-dessous en fonction de vos besoins. The sample implementation reuses `UserInfo`, `FilterList`, and `TaskList`components inside a web portal.
+Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-components.md) de l’espace de travail AEM Forms dans votre propre application Web. L’exemple d’implémentation suivant utilise des composants d’un paquet de développement d’espace de travail AEM Forms installé sur une instance CRX™ pour créer une application Web. Personnalisez la solution ci-dessous en fonction de vos besoins. L’exemple d’implémentation réutilise les composants `UserInfo`, `FilterList` et `TaskList`dans un portail Web.
 
-1. Connectez-vous à l&#39;environnement CRXDE Lite à `https://'[server]:[port]'/lc/crx/de/`. Assurez-vous que vous avez installé un package de développement d’espace de travail AEM Forms.
+1. Connectez-vous à l’environnement CRXDE Lite à `https://'[server]:[port]'/lc/crx/de/`. Assurez-vous que vous avez installé un package de développement d’espace de travail AEM Forms.
 1. Créez un chemin `/apps/sampleApplication/wscomponents`.
 1. Copiez css, images, js/libs, js/runtime et js/registry.js
 
@@ -43,9 +43,9 @@ Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-com
        });
    ```
 
-1. Create a node under /content by name `sampleApplication` and type `nt:unstructured`. In the properties of this node add `sling:resourceType` of type String and value `sampleApplication`. Dans la liste de contrôle d’accès de ce nœud, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant des privilèges jcr:read. Also, in the Access Control List of `/apps/sampleApplication` add an entry for `PERM_WORKSPACE_USER` allowing jcr:read privileges.
-1. Dans `/apps/sampleApplication/wscomponents/js/registry.js` la mise à jour des chemins d’accès de `/lc/libs/ws/` à `/lc/apps/sampleApplication/wscomponents/` pour les valeurs de modèle.
-1. In your portal home page JSP file at `/apps/sampleApplication/GET.jsp`, add the following code to include the required components inside the portal.
+1. Créez un noeud sous /content par nom `sampleApplication` et tapez `nt:unstructured`. Dans les propriétés de ce noeud, ajoutez `sling:resourceType` de type String et la valeur `sampleApplication`. Dans la liste de contrôle d’accès de ce nœud, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant des privilèges jcr:read. En outre, dans l&#39;Contrôle d&#39;accès Liste de `/apps/sampleApplication`, ajoutez une entrée pour `PERM_WORKSPACE_USER` autorisant les privilèges jcr:read.
+1. Dans `/apps/sampleApplication/wscomponents/js/registry.js`, mettez à jour les chemins d&#39;accès de `/lc/libs/ws/` à `/lc/apps/sampleApplication/wscomponents/` pour les valeurs de modèle.
+1. Dans le fichier JSP de votre page d&#39;accueil de portail à l’adresse `/apps/sampleApplication/GET.jsp`, ajoutez le code suivant pour inclure les composants requis dans le portail.
 
    ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -82,7 +82,7 @@ Vous pouvez utiliser les [composants](/help/forms/using/description-reusable-com
    });
    ```
 
-1. Modifiez le portail CSS pour configurer la mise en page, le positionnement et le style des composants souhaités sur votre portail. Par exemple, vous souhaitez garder la couleur d’arrière-plan en noir pour ce portail pour afficher correctement le composant userInfo. You can do this by changing background color in `/apps/sampleApplication/wscomponents/css/style.css` as follows:
+1. Modifiez le portail CSS pour configurer la mise en page, le positionnement et le style des composants souhaités sur votre portail. Par exemple, vous souhaitez garder la couleur d’arrière-plan en noir pour ce portail pour afficher correctement le composant userInfo. Pour ce faire, modifiez la couleur d’arrière-plan dans `/apps/sampleApplication/wscomponents/css/style.css` comme suit :
 
    ```css
    body {
