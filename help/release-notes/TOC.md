@@ -8,13 +8,13 @@ user-guide-description: Découvrez les nouvelles fonctionnalités les plus réce
 translation-type: tm+mt
 source-git-commit: 56551f31e87188cebc2754f6a2c756ae96164ed1
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 45%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Adobe Experience Manager 6.5 Release Notes {#release-notes}
+# Notes de mise à jour de Adobe Experience Manager 6.5 {#release-notes}
 
 + [Présentation de AEM 6.5](home.md)
 + [Notes de mise à jour générales](release-notes.md)
