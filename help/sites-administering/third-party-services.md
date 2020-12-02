@@ -34,7 +34,7 @@ Avec AEM, vous pouvez intégrer clé en main les produits non Adobe suivants :
 * Twitter - Réseaux sociaux
 * YouTube - Partage de vidéos
 
-In addition, you can integrate AEM with the [marketing cloud](/help/sites-administering/marketing-cloud.md) and with the [Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md).
+De plus, vous pouvez intégrer AEM à [marketing cloud](/help/sites-administering/marketing-cloud.md) et au [Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md).
 
 ## Intégration à Salesforce {#integrating-with-salesforce}
 
@@ -42,7 +42,7 @@ Salesforce.com est une société de cloud computing d’entreprise leader dans l
 
 Pour plus d’informations sur l’intégration de votre site AEM et de Salesforce, voir la section [Intégration à Salesforce](/help/sites-administering/salesforce.md).
 
-## Intégration à Silverpop Engage {#integrating-with-silverpop-engage}
+## Intégration à Silverpop Engage  {#integrating-with-silverpop-engage}
 
 >[!NOTE]
 >
@@ -52,17 +52,17 @@ Silverpop Engage assure l’automatisation du marketing, les courriers électron
 
 Pour plus d’informations sur l’intégration de votre site AEM et d’ExactTarget, voir la section [Intégration à Silverpop Engage](/help/sites-administering/silverpop.md).
 
-## Intégration à ExactTarget {#integrating-with-exacttarget}
+## Intégration à ExactTarget  {#integrating-with-exacttarget}
 
 Grâce aux solutions de marketing par courrier électronique d’ExactTarget, les entreprises de toutes tailles peuvent concevoir et distribuer des campagnes par courrier électronique fortement ciblées, essentielles et entièrement intégrées.
 
 Pour plus d’informations sur l’intégration de votre site AEM et d’ExactTarget, voir la section [Configuration d’ExactTarget](/help/sites-administering/exacttarget.md).
 
-## Intégration à Facebook et Twitter {#integrating-with-facebook-and-twitter}
+## Intégration à Facebook et Twitter  {#integrating-with-facebook-and-twitter}
 
 Facebook et Twitter sont des services de réseau social populaires. L’intégration AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion Facebook ou Twitter sur les propriétés numériques détenues, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
 
-See [Social Login](/help/communities/social-login.md) for more information.
+Voir [Connexion sociale](/help/communities/social-login.md) pour plus d’informations.
 
 ## Intégration à d’autres fournisseurs {#integrating-with-other-providers}
 
