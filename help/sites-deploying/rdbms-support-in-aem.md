@@ -49,7 +49,7 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
 
 1. Assurez-vous que la base de données daemon est lancée et que votre base de données est active et prête à être utilisée avec AEM.
 1. Copiez le jar AEM 6.3 dans le répertoire de l’installation.
-1. Create a folder called `crx-quickstart\install` in the installation directory.
+1. Créez un dossier appelé `crx-quickstart\install` dans le répertoire d’installation.
 1. Configurez l’entrepôt de nœud de document en créant un fichier de configuration avec le nom suivante dans le répertoire `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
@@ -63,11 +63,11 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
 
 1. Ensuite, préparez les lots OSGi JDBC à utiliser avec AEM :
 
-   1. In the `crx-quickstart/install` folder, create a folder named `9`.
+   1. Dans le dossier `crx-quickstart/install`, créez un dossier nommé `9`.
 
    1. Placez le jar JDBC dans le nouveau dossier. 
 
-1. Finally, start AEM with the `crx3` and `crx3rdb` runmodes:
+1. Enfin, début AEM avec les modes d’exécution `crx3` et `crx3rdb` :
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -89,7 +89,7 @@ Les options de configuration suivantes sont disponibles :
    * `com.ibm.db2.jcc.DB2Driver` pour DB2 ;
    * `oracle.jdbc.OracleDriver` pour Oracle ;
    *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (expérimentaux) ;
-   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server (experimental).
+   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (expérimental).
 
 * `username:` Nom d&#39;utilisateur sous lequel s&#39;exécute la base de données.
 
