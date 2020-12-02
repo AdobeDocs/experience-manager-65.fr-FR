@@ -21,15 +21,15 @@ ht-degree: 83%
 
 Vous pouvez utiliser le composant **Signature tactile** et le composant **Étape de signature** pour tracer la signature (saisie tactile) sur un formulaire adaptatif. Le composant Étape de signature affiche une version PDF du formulaire adaptatif. Vous avez besoin de l’option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour utiliser le composant Étape de signature.
 
-Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour signer un formulaire. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
+Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour signer un formulaire. Vous pouvez également cliquer sur l’icône de géolocalisation ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) pour ajouter la géolocalisation à la signature.
 
 ![Boîte de dialogue de signature tactile](assets/scribble-signature.png)
 
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Créez une option Document d’enregistrement activée ou un formulaire adaptatif basé sur modèle de formulaire. Pour obtenir des informations détaillées, voir [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
-1. Drag-and-drop the **Scribble Signature** component from component browser to the adaptive form.
-1. Tap the **Configure** ![configure](assets/configure.png) icon. Vous ouvrez ainsi le navigateur de propriétés et affiche les propriétés du composant Signature tactile. Configurez les propriétés du composant Signature tactile.
+1. Faites glisser et déposez le composant **Scribble Signature** de l’explorateur de composants vers le formulaire adaptatif.
+1. Appuyez sur l&#39;icône **Configurer** ![configurer](assets/configure.png). Vous ouvrez ainsi le navigateur de propriétés et affiche les propriétés du composant Signature tactile. Configurez les propriétés du composant Signature tactile.
 1. Faites glisser le composant Signature Step de l’explorateur de composants vers le formulaire adaptatif.
 
    >[!NOTE]
@@ -42,7 +42,7 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
    >
    >Lorsque vous ajoutez un composant Étape de signature à un formulaire adaptatif, l’option Activer Adobe Sign est sélectionnée automatiquement.
 
-1. Tap the **Configure** ![configure](assets/configure.png) icon. Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
+1. Appuyez sur l&#39;icône **Configurer** ![configurer](assets/configure.png). Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
 
    * **Nom de l’élément** : spécifiez le nom du composant.
 
@@ -62,7 +62,7 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
 
    ![Écran de signature de la page EchoSign](assets/esignscribblesign.jpg)
 
-1. Cliquez sur **[!UICONTROL Signer]**. La boîte de dialogue de signature tactile apparaît. Sign the form and click the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the signature.
+1. Cliquez sur **[!UICONTROL Signer]**. La boîte de dialogue de signature tactile apparaît. Signez le formulaire et cliquez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer la signature.
 
    ![Boîte de dialogue de signature tactile](assets/scribblewidget.jpg)
 
