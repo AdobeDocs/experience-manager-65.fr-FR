@@ -19,7 +19,7 @@ ht-degree: 97%
 
 # Propriétés de configuration de Correspondence Management {#correspondence-management-configuration-properties}
 
-Pour configurer ces propriétés, ouvrez l’URL suivante dans un navigateur : `https://<server>:<port>/<contextPath>/system/console/configMgr` et sélectionnez Configurations **de** Correspondence Management.
+Pour configurer ces propriétés, ouvrez l’URL suivante dans un navigateur : `https://<server>:<port>/<contextPath>/system/console/configMgr` et sélectionnez **Configurations de Correspondence Management**.
 
 Correspondence Management possède les propriétés de configuration suivantes :
 
@@ -155,13 +155,13 @@ Correspondence Management possède les propriétés de configuration suivantes 
    <td><p>Data Display Formats</p> </td>
    <td><p>Spécifie le format d’affichage des données spécifique des paramètres régionaux.</p> </td>
    <td><p>locale=en_US ; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=de_DE ; dateFormat=dd-MM-yyyy; numberDecimalSeparator= ; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>Data Edit Format</p> </td>
    <td><p>Format de modification des données. Cette propriété est utilisée lors de l’écriture de données en tant que chaîne ou de l’analyse des données à partir d’une chaîne.</p> </td>
    <td><p>locale=en_US ; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Manage Letter Instances on Publish</p> </td>
@@ -244,7 +244,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
   <tr>
    <td><p>CM User Root</p> </td>
    <td><p>URL du dossier contenant tous les actifs utilisateur de Correspondence Management</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Emplacement de dossier valide</p> </td>
   </tr>
   <tr>
@@ -255,7 +255,7 @@ Correspondence Management possède les propriétés de configuration suivantes 
   </tr>
   <tr>
    <td><p>Enable Letter Cache</p> </td>
-   <td><p>Active/désactive le cache de lettres.</p> <p>La modification de cette valeur entraînera le nettoyage du cache en  <code>in-memory </code> cache.</p> </td>
+   <td><p>Active/désactive le cache de lettres.</p> <p>La modification de cette valeur entraînera le nettoyage du cache en   <code>in-memory </code> cache.</p> </td>
    <td><p>true</p> </td>
    <td><p>true/false</p> </td>
   </tr>
