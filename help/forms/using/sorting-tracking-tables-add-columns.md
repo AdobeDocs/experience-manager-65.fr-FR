@@ -116,7 +116,7 @@ Les attributs restants dans le modèle de tâche disponibles à l’affichage da
  </tbody>
 </table>
 
-Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. See [Introduction to Customizing AEM Forms workspace](/help/forms/using/introduction-customizing-html-workspace.md) fo how you can make semantic changes using workspace SDK and build a minified package from the changed source.
+Pour les personnalisations suivantes dans le tableau de la tâche, vous devez effectuer des modifications sémantiques dans le code source. Voir [Introduction à la personnalisation de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) pour savoir comment effectuer des modifications sémantiques à l’aide du SDK de l’espace de travail et créer un package minifié à partir de la source modifiée.
 
 ## Modification des colonnes du tableau et de leur tri {#changing-table-columns-and-their-order}
 
@@ -154,11 +154,11 @@ Pour les personnalisations suivantes dans le tableau de la tâche, vous devez ef
    </table>
    ```
 
-## Tri d’un tableau de suivi {#sorting-a-tracking-table}
+## Tri d’un tableau de suivi  {#sorting-a-tracking-table}
 
 Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tête de la colonne :
 
-1. Register a click handler for `.fixedTaskTableHeader th` in the file `js/runtime/views/processinstancehistory.js`.
+1. Enregistrez un gestionnaire de clics pour `.fixedTaskTableHeader th` dans le fichier `js/runtime/views/processinstancehistory.js`.
 
    ```javascript
    events: {
@@ -168,7 +168,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
    }
    ```
 
-   In the handler, invoke the `onTaskTableHeaderClick` function of `js/runtime/util/history.js`.
+   Dans le gestionnaire, appelez la fonction `onTaskTableHeaderClick` de `js/runtime/util/history.js`.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -176,7 +176,7 @@ Pour trier le tableau de la liste de tâches lorsque vous cliquez sur l’en-tê
    }
    ```
 
-1. Exposez la `TaskTableHeaderClick` méthode dans `js/runtime/util/history.js`.
+1. Exposez la méthode `TaskTableHeaderClick` dans `js/runtime/util/history.js`.
 
    La méthode recherche l’attribut de tâche dans l’événement de clic, trie la liste des tâches en fonction de cet attribut, et rend le tableau de la tâche avec la liste des tâches triée.
 
